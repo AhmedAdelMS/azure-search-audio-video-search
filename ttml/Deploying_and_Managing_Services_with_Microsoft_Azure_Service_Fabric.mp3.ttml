@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.877</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.300" end="00:00:09.840">...thank you for thank you all for coming to the because session...checkered annual I am</p>
+      <p begin="00:00:09.840" end="00:00:13.250">...to program manager with the hyper scale compute team.</p>
+      <p begin="00:00:13.250" end="00:00:17.730">Imagine so then the session ...going over</p>
+      <p begin="00:00:17.730" end="00:00:22.240">...the...capabilities of service fabric in terms of</p>
+      <p begin="00:00:22.240" end="00:00:26.170">managing your services a...services...</p>
+      <p begin="00:00:27.230" end="00:00:33.300">Configurations so forth so in this new world as a developer you have multiple</p>
+      <p begin="00:00:33.300" end="00:00:33.690">had to</p>
+      <p begin="00:00:33.690" end="00:00:40.400">wear one of those things which is a norman this point is your service has to be up</p>
+      <p begin="00:00:40.400" end="00:00:44.960">...this five-days-a-year and in...in that in that</p>
+      <p begin="00:00:44.960" end="00:00:49.230">duration you also awfully have to add new features but also</p>
+      <p begin="00:00:49.230" end="00:00:53.510">have to make sure that you are you have the ability to deploy</p>
+      <p begin="00:00:53.510" end="00:00:59.280">newm deploy new features monitor troubleshooting diagnose fix rios</p>
+      <p begin="00:00:59.280" end="00:01:02.250">fix issues in real-time you cannot afford a.</p>
+      <p begin="00:01:03.260" end="00:01:05.900">Downtime at all so the architecture</p>
+      <p begin="00:01:05.900" end="00:01:10.890">...in place the first-time you have...deploying</p>
+      <p begin="00:01:10.890" end="00:01:15.850">to introduction has to be working and should meet the needs of even</p>
+      <p begin="00:01:15.850" end="00:01:24.940">after five years and that actually is the key thing which will help you do?</p>
+      <p begin="00:01:24.940" end="00:01:29.190">So, let me first give you a quick overview of the platform so I'll keep it brief since</p>
+      <p begin="00:01:29.190" end="00:01:33.600">I'm sure most of you guys are...mobile sessions architecture talk on</p>
+      <p begin="00:01:33.600" end="00:01:38.100">this service fabric and also ...session which visual</p>
+      <p begin="00:01:38.100" end="00:01:43.510">on lake on the other room about the service of the programming model so I'll just</p>
+      <p begin="00:01:43.510" end="00:01:48.510">quickly go into what this particular big big-picture is out here.</p>
+      <p begin="00:01:48.510" end="00:01:52.460">The microsoft sourced fabric has been a key ingredient in taking all of</p>
+      <p begin="00:01:52.460" end="00:01:56.760">a tier one box products like sequel link and other like</p>
+      <p begin="00:01:56.760" end="00:02:01.480">...transforming them into running as cloud services.</p>
+      <p begin="00:02:01.480" end="00:02:02.180">Micro service</p>
+      <p begin="00:02:02.180" end="00:02:06.770">...a proven distribute platform that makes it easy to build.</p>
+      <p begin="00:02:06.770" end="00:02:09.880">Scalable and reliable services allows you to keep</p>
+      <p begin="00:02:09.880" end="00:02:14.090">compute ad associates state together to achieve high throughput</p>
+      <p begin="00:02:14.090" end="00:02:19.400">and low latency allows you to manage the full application lifecycle deploys</p>
+      <p begin="00:02:19.400" end="00:02:25.980">...monitor trouble shoot and am great applications easily without any downtime.</p>
+      <p begin="00:02:25.980" end="00:02:28.100">The call-you develop and test on your and on your</p>
+      <p begin="00:02:28.100" end="00:02:32.910">...is the one wichita which deploy onto the cloud...</p>
+      <p begin="00:02:32.910" end="00:02:36.280">including the including...private clubs you may have.</p>
+      <p begin="00:02:37.520" end="00:02:40.260">For example, in terms of schiel is</p>
+      <p begin="00:02:40.260" end="00:02:46.200">...talk about sequel leisure...is one of the largest in the complex users of this application</p>
+      <p begin="00:02:46.200" end="00:02:50.900">lifecycle management features of the service fabric the</p>
+      <p begin="00:02:50.900" end="00:02:54.930">regularly kick-off close to forty thousand application of...in each of</p>
+      <p begin="00:02:54.930" end="00:02:59.930">the clusters worldwide and the platform handles this without any issues.</p>
+      <p begin="00:02:59.930" end="00:03:02.350">So, you're getting at platform that is</p>
+      <p begin="00:03:02.350" end="00:03:07.950">...for it seems on a daily basis so anyway that's the big introduction</p>
+      <p begin="00:03:07.950" end="00:03:21.940">to the platform that's...into the management an application lifecycle capabilities.</p>
+      <p begin="00:03:21.940" end="00:03:27.220">So, one of those things which...may have been so in back of the mind is what are the</p>
+      <p begin="00:03:27.220" end="00:03:32.560">challenges for managing distributed applications that scale.</p>
+      <p begin="00:03:32.560" end="00:03:35.650">Actually I remember reading everything is study which said.</p>
+      <p begin="00:03:35.650" end="00:03:38.950">On average a single downtime.</p>
+      <p begin="00:03:38.950" end="00:03:41.050">For an hour costs around three hundred</p>
+      <p begin="00:03:41.050" end="00:03:46.950">thousand dollars so of course no, customer wants to take that kind of</p>
+      <p begin="00:03:46.950" end="00:03:52.180">hit so you absolutely need some reliable optics ensure</p>
+      <p begin="00:03:52.180" end="00:03:53.830">Of your application so that,</p>
+      <p begin="00:03:53.830" end="00:03:59.820">you know, if there is some partitions running hot all...these need to skill my application up</p>
+      <p begin="00:03:59.820" end="00:04:03.990">or skill the environment node...said that say,</p>
+      <p begin="00:04:03.990" end="00:04:05.110">for example,</p>
+      <p begin="00:04:05.110" end="00:04:11.910">how many times its happen that you will...just add some capacity to your environment?</p>
+      <p begin="00:04:11.910" end="00:04:16.740">So, you would opts of course like to have a have a have a platform which is does</p>
+      <p begin="00:04:16.740" end="00:04:21.680">it for you so that is actually service fabric.</p>
+      <p begin="00:04:21.680" end="00:04:26.610">And, while the platform is doing some of some of the scale...why doesn't it</p>
+      <p begin="00:04:26.610" end="00:04:31.390">also do some of the self healing and repairs based on some policies that say, for example,</p>
+      <p begin="00:04:31.390" end="00:04:32.080">you could say</p>
+      <p begin="00:04:32.080" end="00:04:36.940">if my application service comes down for some reason just restarted...on</p>
+      <p begin="00:04:36.940" end="00:04:42.380">the don't make me up but if it's recital doesn't come back then there is a to help threshold</p>
+      <p begin="00:04:42.380" end="00:04:47.960">...admitted ok then life is good don't call me but if it really becomes a crisis then of</p>
+      <p begin="00:04:47.960" end="00:04:54.300">course call me I'm always available battery and the other thing which is interesting is I don't know-how many</p>
+      <p begin="00:04:54.300" end="00:04:58.600">people have taken production support call when you're invocation and just to just</p>
+      <p begin="00:04:58.600" end="00:05:03.080">to figure just to just find out that all there was a false alarm value</p>
+      <p begin="00:05:03.080" end="00:05:09.250">of distribute family you've done all those things and just to get a false alarm on something so you don't want</p>
+      <p begin="00:05:09.250" end="00:05:12.600">...happen so the key would be?</p>
+      <p begin="00:05:12.600" end="00:05:16.250">A key would be that you want to have...want to have a system which actually</p>
+      <p begin="00:05:16.250" end="00:05:21.360">will accurately describe to you what's going on in the clusters...it is not</p>
+      <p begin="00:05:21.360" end="00:05:26.150">...thing has to be something which...will give a deep insights into application out it's</p>
+      <p begin="00:05:26.150" end="00:05:30.430">helped its performance what stresses running.</p>
+      <p begin="00:05:30.430" end="00:05:37.230">So, these are the things which the management stack of service fabric provides for you.</p>
+      <p begin="00:05:37.230" end="00:05:40.830">So, the other thing what the other thing was interesting here...I</p>
+      <p begin="00:05:40.830" end="00:05:45.080">...talking about the tested...of it so.</p>
+      <p begin="00:05:45.080" end="00:05:49.700">Think about a scenario where you have now been call into a into a</p>
+      <p begin="00:05:49.700" end="00:05:55.170">...sites and incident you figure out what the fixes and then you just want to have</p>
+      <p begin="00:05:55.170" end="00:06:00.940">some more guarantees history...right fix and you need that need a platform which actually allows you to</p>
+      <p begin="00:06:00.940" end="00:06:05.670">...some scenarios which can happen very regularly and production system public provides you</p>
+      <p begin="00:06:05.670" end="00:06:10.480">a disability framework for it which you can plug into and...other thing is the configuration</p>
+      <p begin="00:06:10.480" end="00:06:17.390">manager is another one of the big topics rich people keep talking about and, for example,</p>
+      <p begin="00:06:17.390" end="00:06:21.930">how is it how...how easy was...deploy of fix confident</p>
+      <p begin="00:06:21.930" end="00:06:26.870">...production without being on pins and needles worried if I messed up some configuration</p>
+      <p begin="00:06:26.870" end="00:06:31.770">out and...by the right version into the right cluster and those are</p>
+      <p begin="00:06:31.770" end="00:06:37.660">the things which actually or are very easy to do in service fabric so let</p>
+      <p begin="00:06:37.660" end="00:06:42.430">me know go into some of the details are...of the each of these</p>
+      <p begin="00:06:42.430" end="00:06:48.210">but point listed and then I can give you some more some more interesting?</p>
+      <p begin="00:06:48.210" end="00:06:53.090">...feature, feature descriptions so before I get into it and,</p>
+      <p begin="00:06:53.090" end="00:06:55.780">I'm sure you guys have seen this diagram multiple times by now.</p>
+      <p begin="00:06:56.830" end="00:07:02.340">But, this basically this is a is a list is actually a collection of machines and they're</p>
+      <p begin="00:07:02.340" end="00:07:05.740">only as reliable as and falter as the individual</p>
+      <p begin="00:07:05.740" end="00:07:10.680">units so now let me introduce you to the system fabric cluster.</p>
+      <p begin="00:07:10.680" end="00:07:14.240">System of fabrics clusters basically a is</p>
+      <p begin="00:07:14.240" end="00:07:16.720">...set of machines which could be physical</p>
+      <p begin="00:07:16.720" end="00:07:20.830">...on friend on prim scenarios or virtual in as...or any of</p>
+      <p begin="00:07:20.830" end="00:07:24.050">the cloud provider you may have and then stitches and</p>
+      <p begin="00:07:24.050" end="00:07:28.680">this is together to form a reliable...a fault...unit</p>
+      <p begin="00:07:28.680" end="00:07:34.620">kuala cluster these clusters of course can be as smallest five nodes</p>
+      <p begin="00:07:34.620" end="00:07:39.100">do pollens of nodes machine total...of nodes?</p>
+      <p begin="00:07:39.100" end="00:07:43.780">...for example, in almost every region they have they have clusters</p>
+      <p begin="00:07:43.780" end="00:07:49.980">which use up close to thousands of machine thousands of machines and the other thing which is unique about was</p>
+      <p begin="00:07:49.980" end="00:07:54.630">...fabric is that you...setting of...your clustered</p>
+      <p begin="00:07:54.630" end="00:07:58.720">...specify the failures the...for example,</p>
+      <p begin="00:07:58.720" end="00:08:02.810">you can choose to set of a cluster that spans more than one...datacenter</p>
+      <p begin="00:08:02.810" end="00:08:07.040">us than the reason why you would do that is a encase I'm so paranoid that if the</p>
+      <p begin="00:08:07.040" end="00:08:11.830">...if one of validate...a does has an impact it a my service not</p>
+      <p begin="00:08:11.830" end="00:08:16.410">be affected so, for example, like one of for until services called</p>
+      <p begin="00:08:16.410" end="00:08:21.070">a bingproton they actually they have clusters the spanned</p>
+      <p begin="00:08:21.070" end="00:08:26.920">three datacenters so only last year one of one of the sets of the</p>
+      <p begin="00:08:26.920" end="00:08:30.740">...machines in one of the regions went down and they didn't even see</p>
+      <p begin="00:08:30.740" end="00:08:35.780">them feel that it went on because there was no impact...the service so subject just...like</p>
+      <p begin="00:08:35.780" end="00:08:40.530">...them over to the other two and then after a while and when they got all these</p>
+      <p begin="00:08:40.530" end="00:08:43.640">...so many machines that then that's when the...all?</p>
+      <p begin="00:08:43.640" end="00:08:47.870">Apparently...machines in one region went down so...</p>
+      <p begin="00:08:47.870" end="00:08:52.860">kudos scenery up is really works so this is the same the same software and will</p>
+      <p begin="00:08:52.860" end="00:08:59.370">...in terms of sdk which was like yesterday so I actually go through a little</p>
+      <p begin="00:08:59.370" end="00:09:05.330">more detail about how to plan for reproduction...later on in the session?</p>
+      <p begin="00:09:05.330" end="00:09:10.320">So, quickly let me also touch on what applications</p>
+      <p begin="00:09:10.320" end="00:09:14.110">...service applications made up of course alice service</p>
+      <p begin="00:09:14.110" end="00:09:17.410">...supports bobble the creation of</p>
+      <p begin="00:09:17.410" end="00:09:21.050">...stateless and stateful microsoft...</p>
+      <p begin="00:09:21.050" end="00:09:25.160">So, each of these services of course contains a code.</p>
+      <p begin="00:09:25.160" end="00:09:27.020">An associated confirmation to</p>
+      <p begin="00:09:27.020" end="00:09:33.630">...service package...the service packet is the one which...to server to</p>
+      <p begin="00:09:33.630" end="00:09:38.430">...fabric see the data is my service-type and that actually easily unit of</p>
+      <p begin="00:09:38.430" end="00:09:42.950">deployment activation so the how the way to think about this service packages are</p>
+      <p begin="00:09:42.950" end="00:09:44.300">they are actually</p>
+      <p begin="00:09:44.300" end="00:09:49.260">a you could think in terms of it provides you complete functionality...standalone it</p>
+      <p begin="00:09:49.260" end="00:09:54.150">...can actually be deployed independently can start on independently that's how you should think in terms</p>
+      <p begin="00:09:54.150" end="00:09:58.120">of service package and then each of these service packages of course</p>
+      <p begin="00:09:58.120" end="00:10:03.330">has to be contained in something and that containers goal for us it's got it's one of the</p>
+      <p begin="00:10:03.330" end="00:10:07.500">containers is called the as called application package this application</p>
+      <p begin="00:10:07.500" end="00:10:15.280">packet is actually the unit of lifetime versioning and isolation.</p>
+      <p begin="00:10:15.280" end="00:10:20.860">Let me give you a simplesimple example, for example,</p>
+      <p begin="00:10:20.860" end="00:10:26.710">an online ticketing application may contain and inventory management...service and opinion</p>
+      <p begin="00:10:26.710" end="00:10:29.300">...service all these three actually can</p>
+      <p begin="00:10:29.300" end="00:10:34.690">be independently upgraded can be deployed so these can actually be...packages of their</p>
+      <p begin="00:10:34.690" end="00:10:39.210">own so in this particularschematic avant-garde...if you look at one of the</p>
+      <p begin="00:10:39.210" end="00:10:42.490">packages hundred mb...other one is to gigs.</p>
+      <p begin="00:10:42.490" end="00:10:47.660">The reason iec to be the extreme examples is because a lot of times you don't want to touch</p>
+      <p begin="00:10:47.660" end="00:10:49.170">...gig version of</p>
+      <p begin="00:10:49.170" end="00:10:53.360">...big application package because for the service package because.</p>
+      <p begin="00:10:53.360" end="00:10:59.120">I have problems filling them over...problems making sure that are everything in that</p>
+      <p begin="00:10:59.120" end="00:11:02.610">...all I have to fixes small package</p>
+      <p begin="00:11:02.610" end="00:11:05.550">...a and that I can I should be able to do that so that is</p>
+      <p begin="00:11:05.550" end="00:11:10.480">the unit of deployment activation whereas application packets of is actually</p>
+      <p begin="00:11:10.480" end="00:11:13.790">the isolation guarantees...get...the versioning so hopefully those</p>
+      <p begin="00:11:13.790" end="00:11:22.060">are two things I want to make sure that you guys remember and will uses don's over and over?</p>
+      <p begin="00:11:22.060" end="00:11:25.460">...quickly go through and instantiation of this application</p>
+      <p begin="00:11:25.460" end="00:11:32.230">...microsoft voices of a services as the put packages talked about.</p>
+      <p begin="00:11:32.230" end="00:11:36.850">Like, for example, you...you have application for which is which is ready to go</p>
+      <p begin="00:11:36.850" end="00:11:41.110">and it has to services service types and services</p>
+      <p begin="00:11:41.110" end="00:11:45.540">...subgroup figure out from...given</p>
+      <p begin="00:11:46.730" end="00:11:52.110">...all these all these instances of this service-type a</p>
+      <p begin="00:11:52.110" end="00:11:56.530">...I be and if you look at look at the rates listed now...this particular thing</p>
+      <p begin="00:11:56.530" end="00:12:02.310">is if you look at be it has actually make sure that you each of these instances</p>
+      <p begin="00:12:02.310" end="00:12:06.290">...do get a unique of fall domain</p>
+      <p begin="00:12:06.290" end="00:12:08.770">...the you these this actually is</p>
+      <p begin="00:12:08.770" end="00:12:16.570">the key to making sure that you're actually on a reliable reliable placement.</p>
+      <p begin="00:12:16.570" end="00:12:20.260">So, there is also the concepts of scaling up and partitioning which I'll</p>
+      <p begin="00:12:20.260" end="00:12:28.870">talk about later so let me show you how these are done.</p>
+      <p begin="00:12:28.870" end="00:12:32.870">One of the top one other thing which agreements this one basically is</p>
+      <p begin="00:12:32.870" end="00:12:36.540">...wanted specifically call out every service instance has a unique name the</p>
+      <p begin="00:12:36.540" end="00:12:41.110">needs of application that is actually how you address those instead...</p>
+      <p begin="00:12:41.110" end="00:12:46.540">Response service types which...just instantiated.</p>
+      <p begin="00:12:46.540" end="00:12:51.550">So, devil.</p>
+      <p begin="00:12:51.550" end="00:12:59.630">Moi number inc.</p>
+      <p begin="00:12:59.630" end="00:13:04.520">So, in this demo actually I will show you a couple of things whereas before I go in there I sort of make sure I</p>
+      <p begin="00:13:04.520" end="00:13:08.645">want to show you a preview into our portal this is a service which I</p>
+      <p begin="00:13:08.645" end="00:13:13.800">think gopal mentioned also mark mention...there will be a previous service which will actually be in</p>
+      <p begin="00:13:13.800" end="00:13:18.500">...actually request for these things so I'm going to give you a preview to that.</p>
+      <p begin="00:13:18.500" end="00:13:20.370">Ok.</p>
+      <p begin="00:13:20.370" end="00:13:23.120">So, like all.</p>
+      <p begin="00:13:23.120" end="00:13:27.720">Like all...a poodle just good new and</p>
+      <p begin="00:13:29.030" end="00:13:31.590">Since I've already pairwise showing a...in</p>
+      <p begin="00:13:31.590" end="00:13:36.580">this scenario will show up show up in a little more</p>
+      <p begin="00:13:36.580" end="00:13:42.040">prominently but...it's actually preview is just give you a quick audio how</p>
+      <p begin="00:13:42.040" end="00:13:58.420">it's going to be so I'm going to set up a cluster so, this is...this is how it will it'll work.</p>
+      <p begin="00:13:58.420" end="00:14:01.850">What's going on for this right all right so you select your own</p>
+      <p begin="00:14:01.850" end="00:14:09.350">...name it's up to you what you want to do so...just say service.</p>
+      <p begin="00:14:09.350" end="00:14:13.610">Fabric demo on stage.</p>
+      <p begin="00:14:13.610" end="00:14:18.190">One just because...hopefully doesn't go through for all right so.</p>
+      <p begin="00:14:18.190" end="00:14:22.460">So, then actually if you look at look at what's the right below web basically synthesis</p>
+      <p begin="00:14:22.460" end="00:14:26.600">...this location divest us actually you get a rescues address if you change</p>
+      <p begin="00:14:26.600" end="00:14:32.740">...to...us...you get so...a dotting new in terms of service fabric itself is</p>
+      <p begin="00:14:32.740" end="00:14:35.050">actually property of the off the portal and</p>
+      <p begin="00:14:35.050" end="00:14:40.910">...site itself so...create a new resource group since...am one of those people</p>
+      <p begin="00:14:40.910" end="00:14:44.620">...all these names...the same thing.</p>
+      <p begin="00:14:44.620" end="00:14:48.690">So,...russ actually talk about resource group I don't know-how many people...this basically any</p>
+      <p begin="00:14:48.690" end="00:14:51.300">...social create has to be resource group</p>
+      <p begin="00:14:51.300" end="00:14:56.200">actually allows you to thanks at least for this for me it's a good way to see...what</p>
+      <p begin="00:14:56.200" end="00:15:01.230">did take to create this cluster so I'll show you what...resource group will end up containing</p>
+      <p begin="00:15:01.230" end="00:15:05.920">...you just...in terms of basically I created this service group now and</p>
+      <p begin="00:15:05.920" end="00:15:13.440">then the subscription suppose has all subscriptions which you which you haveaccess to.</p>
+      <p begin="00:15:13.440" end="00:15:18.600">Location of course today at least for the for this trial run we actually</p>
+      <p begin="00:15:18.600" end="00:15:23.420">...liam for regions and m which is vests use at this point then...where actually you</p>
+      <p begin="00:15:23.420" end="00:15:27.320">...make some decisions some decisions basically is what kind of</p>
+      <p begin="00:15:27.320" end="00:15:33.000">...m do you want this particular cluster to have so in this scenario</p>
+      <p begin="00:15:33.000" end="00:15:35.310">...just going to say okay I'll need</p>
+      <p begin="00:15:35.310" end="00:15:40.100">...of these lms the you actually choose any number I just have...ten fifteen</p>
+      <p begin="00:15:40.100" end="00:15:46.590">fifty actually choose one-two-three-four fire so forth so anything about five is the right number...</p>
+      <p begin="00:15:46.590" end="00:15:50.520">So, the name of name of the...you can just say this is the</p>
+      <p begin="00:15:50.520" end="00:15:53.280">...stage.</p>
+      <p begin="00:15:53.280" end="00:15:58.100">So, this particular prefix actually all dvs used for is name each of the m so we actually</p>
+      <p begin="00:15:58.100" end="00:16:01.400">generate names by the one thing which you have to enter for a since</p>
+      <p begin="00:16:01.400" end="00:16:04.770">is actually built this service fabric is built on will be</p>
+      <p begin="00:16:04.770" end="00:16:11.680">...inside I svm you actually have to give some.</p>
+      <p begin="00:16:11.680" end="00:16:15.700">...you are choose a.</p>
+      <p begin="00:16:15.700" end="00:16:19.660">Username...password this actually is for our dipping into the into the cluster into the</p>
+      <p begin="00:16:19.660" end="00:16:31.860">into the ibm's...</p>
+      <p begin="00:16:31.860" end="00:16:33.120">Ok.</p>
+      <p begin="00:16:33.120" end="00:16:36.460">So, at this point and basically.</p>
+      <p begin="00:16:36.460" end="00:16:39.870">There's a couple more options ok so.</p>
+      <p begin="00:16:39.870" end="00:16:42.950">You of course if it's if it's something which your which if...a cluster which</p>
+      <p begin="00:16:42.950" end="00:16:46.380">...using for your development purposes most likely you don't want to be secure</p>
+      <p begin="00:16:46.380" end="00:16:49.910">and it's easier but is a person plus...want to</p>
+      <p begin="00:16:49.910" end="00:16:54.090">...and I and I always suggest that even if it's a development clustered</p>
+      <p begin="00:16:54.090" end="00:16:57.420">it's always good to security because you don't want to be das by someone else</p>
+      <p begin="00:16:57.420" end="00:17:03.140">...do it so we allow you what is options one.</p>
+      <p begin="00:17:03.140" end="00:17:08.070">So, basically, basically can choose to say might have...security the other one is you can actually</p>
+      <p begin="00:17:08.070" end="00:17:12.350">give us certificate and then it'll look selective vessel...options</p>
+      <p begin="00:17:12.350" end="00:17:18.100">in here talking about okay whatvery reckoned find this certificate so this so</p>
+      <p begin="00:17:18.100" end="00:17:23.040">...you should have provision into the key management store already so you just giving the url of the</p>
+      <p begin="00:17:23.040" end="00:17:28.150">key one source and that's outcomes so anyway so for this purpose is I just make it make it the</p>
+      <p begin="00:17:28.150" end="00:17:33.590">...secure and this go on.</p>
+      <p begin="00:17:33.590" end="00:17:37.100">Can create?</p>
+      <p begin="00:17:37.100" end="00:17:41.450">So, it's great it's so since it's...like...fire-fighting minutes</p>
+      <p begin="00:17:41.450" end="00:17:48.480">...going to go and...take cluster which I already have.</p>
+      <p begin="00:17:48.480" end="00:17:55.300">The...clusters.</p>
+      <p begin="00:17:55.300" end="00:17:58.670">Let me take this one this actually is the cluster which I want to use</p>
+      <p begin="00:17:58.670" end="00:18:04.260">...demos today so if you look at.</p>
+      <p begin="00:18:04.260" end="00:18:07.920">In this blade basically couple of things which are interesting here in terms of essential</p>
+      <p begin="00:18:07.920" end="00:18:14.270">...which you which you have.</p>
+      <p begin="00:18:14.270" end="00:18:23.580">So, this basically...here is actually your collect ip address which would use</p>
+      <p begin="00:18:23.580" end="00:18:29.420">the...initial used to connect to this cluster and then here there are</p>
+      <p begin="00:18:29.420" end="00:18:33.400">some of the few other things here load monitor</p>
+      <p begin="00:18:33.400" end="00:18:37.840">...actually just gives you real-time as to what's going on with your</p>
+      <p begin="00:18:37.840" end="00:18:42.750">...and we have actually three states which are more and more interesting so</p>
+      <p begin="00:18:42.750" end="00:18:45.670">for node you...you either...node is</p>
+      <p begin="00:18:45.670" end="00:18:50.620">...or it could be get everything is good it's reacting rel...unknown,</p>
+      <p begin="00:18:50.620" end="00:18:53.240">unknown comes and only if...if</p>
+      <p begin="00:18:53.240" end="00:18:57.900">we just barely join and we don't know it state and then warning is when something is really</p>
+      <p begin="00:18:57.900" end="00:19:05.290">going on so basically that's the health state directly from the system.</p>
+      <p begin="00:19:05.290" end="00:19:08.450">...application actually here I have deployed to applications in it</p>
+      <p begin="00:19:08.450" end="00:19:13.200">so just says that there are two of them okay and then there are not and warning so I'll</p>
+      <p begin="00:19:13.200" end="00:19:19.120">quickly go into the into the reason why I...split this into the different states</p>
+      <p begin="00:19:19.120" end="00:19:22.880">most of them are not if it's okay you actually have no real reason to go in and see if</p>
+      <p begin="00:19:22.880" end="00:19:27.210">...notice okay because we should respect the system but in the scenarios go in and say okay</p>
+      <p begin="00:19:27.210" end="00:19:32.790">here's a here's a here's a cluster of nine nodes and I have</p>
+      <p begin="00:19:32.790" end="00:19:37.590">a and all of them are okay and then if you look at basically we of</p>
+      <p begin="00:19:37.590" end="00:19:41.480">...strived across safety's and you these combination so there are</p>
+      <p begin="00:19:41.480" end="00:19:48.880">three of these and then there are five a great domains.</p>
+      <p begin="00:19:48.880" end="00:19:52.280">And,...actually go through if you have the time we actually can talk about</p>
+      <p begin="00:19:52.280" end="00:19:56.600">the domain concept a little bit later so basically this is used</p>
+      <p begin="00:19:56.600" end="00:20:00.000">...your upgrading your applications that's the that's when...domains</p>
+      <p begin="00:20:00.000" end="00:20:04.940">...used all right so then let's go into quickly into a few more things which are which we just</p>
+      <p begin="00:20:04.940" end="00:20:12.120">talked about so application margin that...applications I have in here so let's just look at the.</p>
+      <p begin="00:20:12.120" end="00:20:13.560">One of these.</p>
+      <p begin="00:20:13.560" end="00:20:18.600">So, in this...says that health...okay and.</p>
+      <p begin="00:20:18.600" end="00:20:23.210">And, here's a version of these applications.</p>
+      <p begin="00:20:23.210" end="00:20:27.080">This is that the address of the application and the in this is where</p>
+      <p begin="00:20:27.080" end="00:20:32.030">...the name space under which the rest of the services will be will be under</p>
+      <p begin="00:20:32.030" end="00:20:36.340">and in this particular particular application...there</p>
+      <p begin="00:20:36.340" end="00:20:41.280">are services and there are two services...them the one of them is.</p>
+      <p begin="00:20:41.280" end="00:20:45.080">Is a...little bit one of them is</p>
+      <p begin="00:20:45.080" end="00:20:50.350">...stateful one as a stateless one and then so the key here is now what event</p>
+      <p begin="00:20:50.350" end="00:20:52.850">...from a from the cluster you went</p>
+      <p begin="00:20:52.850" end="00:20:57.810">...applications and applications down to services and here is now</p>
+      <p begin="00:20:57.810" end="00:21:02.670">...actually let's go into a stateful application...you look at so that actually go</p>
+      <p begin="00:21:02.670" end="00:21:06.160">into it actually gets into?</p>
+      <p begin="00:21:06.160" end="00:21:10.580">How many partitions it has and then if you go to the partition that's when you see this</p>
+      <p begin="00:21:10.580" end="00:21:14.150">...running a single partition and it's healthy</p>
+      <p begin="00:21:14.150" end="00:21:17.350">...state now if you step back and think about the report</p>
+      <p begin="00:21:17.350" end="00:21:22.100">help them different levels one of the class level are used at the application-level</p>
+      <p begin="00:21:22.100" end="00:21:24.670">...the service level...the partition level at...</p>
+      <p begin="00:21:24.670" end="00:21:29.480">level we actually do all the way all the way down and then each of these are well-defined in terms of health</p>
+      <p begin="00:21:29.480" end="00:21:34.440">...can how...errors warning and then there'sthere's of unknown just because there</p>
+      <p begin="00:21:34.440" end="00:21:35.960">maybe scenarios where</p>
+      <p begin="00:21:35.960" end="00:21:41.770">...systems system itself is waiting for ...to come up and that's very rare state</p>
+      <p begin="00:21:41.770" end="00:21:47.560">to happen so it's still there and what's interesting about all these things all these</p>
+      <p begin="00:21:47.560" end="00:21:49.990">...health framework is we'll talk about more will help</p>
+      <p begin="00:21:49.990" end="00:21:55.160">...but is that you can also report help if you actually have</p>
+      <p begin="00:21:55.160" end="00:21:59.850">...you if you have an external service which actually is going to report help on behalf of your</p>
+      <p begin="00:21:59.850" end="00:22:04.110">application you can you can still use that uses framework...and this will also open the</p>
+      <p begin="00:22:04.110" end="00:22:09.410">...so, anyway, so, that?</p>
+      <p begin="00:22:09.410" end="00:22:13.140">So, now that we have seen this let me-let me now do one thing...I</p>
+      <p begin="00:22:13.140" end="00:22:16.100">...also introduce you to this</p>
+      <p begin="00:22:16.100" end="00:22:21.640">particular tool which actually you can use till you have access to the</p>
+      <p begin="00:22:21.640" end="00:22:27.000">...of course comes in only probably until then this is the tool which we have</p>
+      <p begin="00:22:27.000" end="00:22:34.000">...as a part of sdk so in this particular cluster?</p>
+      <p begin="00:22:34.000" end="00:22:37.400">Is here so not this one this was when I was playing with</p>
+      <p begin="00:22:37.400" end="00:22:41.610">so this one basically has the chaos does app</p>
+      <p begin="00:22:41.610" end="00:22:44.610">...minor to the things you just saw it has...is</p>
+      <p begin="00:22:44.610" end="00:22:51.200">...versioning as well so we just for this demo...I'll do is let me just?</p>
+      <p begin="00:22:51.200" end="00:22:52.920">Bring up one of the</p>
+      <p begin="00:22:52.920" end="00:22:57.900">one ofthe applications I have here is actually use the application which has</p>
+      <p begin="00:22:57.900" end="00:23:03.110">...bouncing pyramids which I'm sure...the other demos so now I'm...get into the details</p>
+      <p begin="00:23:03.110" end="00:23:07.880">of what each of these how do you define it in terms of management of the versioning</p>
+      <p begin="00:23:07.880" end="00:23:10.960">redefine...application to service fabric</p>
+      <p begin="00:23:10.960" end="00:23:15.310">so application type itself is defined by the application...</p>
+      <p begin="00:23:16.560" end="00:23:19.870">In this manifest in this thing actually I have to</p>
+      <p begin="00:23:19.870" end="00:23:25.530">...services one of them is...stateful visual object service package another...objects</p>
+      <p begin="00:23:26.660" end="00:23:30.050">Each of them have a version of.</p>
+      <p begin="00:23:30.050" end="00:23:33.000">What...washroom one?</p>
+      <p begin="00:23:33.000" end="00:23:34.250">And, then.</p>
+      <p begin="00:23:34.250" end="00:23:36.730">Basically says is the services are</p>
+      <p begin="00:23:36.730" end="00:23:41.290">...version one and then it says that application is also version one</p>
+      <p begin="00:23:42.480" end="00:23:47.290">okay and then very you define these two so this would be defining this service</p>
+      <p begin="00:23:47.290" end="00:23:52.640">...so for each of...service types you actually have a</p>
+      <p begin="00:23:52.640" end="00:23:56.660">manifests which actually describes that for you so each of</p>
+      <p begin="00:23:56.660" end="00:24:00.810">these have a code which has which is the version one and then...a</p>
+      <p begin="00:24:00.810" end="00:24:07.070">...can't think of version one and then we also then in turn.</p>
+      <p begin="00:24:07.070" end="00:24:11.550">Also...the service manifests which actually is referred to in the application manifests look at the</p>
+      <p begin="00:24:11.550" end="00:24:16.590">with here the and the service fabric itself does not care about</p>
+      <p begin="00:24:16.590" end="00:24:20.280">what scheme you use you can actually squalid version aviation be</p>
+      <p begin="00:24:20.280" end="00:24:25.210">...c doesn't matter so...makes sense to you lot-of...even call it</p>
+      <p begin="00:24:25.210" end="00:24:29.380">okay this is the version number like total and seventeen</p>
+      <p begin="00:24:29.380" end="00:24:34.180">dot something because that's how it makes sense for them so that's there's no wishing...just basically,</p>
+      <p begin="00:24:34.180" end="00:24:39.220">basically string and all we care about is when you go to deploy it and,</p>
+      <p begin="00:24:39.220" end="00:24:43.960">then a braided later we just...make sure that this actually is different from what what's already running</p>
+      <p begin="00:24:43.960" end="00:24:48.760">as long as you are making sure that you have a way of methodology...and...go</p>
+      <p begin="00:24:48.760" end="00:24:57.110">with it in this scenario is taken this for part wishing scheme that's...it is.</p>
+      <p begin="00:24:57.110" end="00:25:02.240">All right so visual...I'm sort of.</p>
+      <p begin="00:25:02.240" end="00:25:16.310">They will solution that's going to be here quickly.</p>
+      <p begin="00:25:16.310" end="00:25:20.120">...that is packaged so I have to options, you know,</p>
+      <p begin="00:25:20.120" end="00:25:25.060">one silicon connector may cluster from here from visual studio and then deployed so</p>
+      <p begin="00:25:25.060" end="00:25:30.510">that...that portion of it was a talk which you like it was last...you guys...land and</p>
+      <p begin="00:25:30.510" end="00:25:34.950">...talk about so I'm re-use partial because that's since to be the operational</p>
+      <p begin="00:25:34.950" end="00:25:39.800">tomost of the most of the time you'll be using that once you once you have stuff and production so let me just</p>
+      <p begin="00:25:39.800" end="00:25:44.540">use that so a couple of things which is very interesting so very first thing which you which...</p>
+      <p begin="00:25:44.540" end="00:25:51.010">this scenario is like you have to define you have to copy this packages created.</p>
+      <p begin="00:25:51.010" end="00:25:54.440">Created into the...store which is...running of</p>
+      <p begin="00:25:54.440" end="00:25:59.390">...so I already copied once and certainly when I agree I...I show you a blade...</p>
+      <p begin="00:25:59.390" end="00:26:04.310">certainly copy the so just for the sake of time I was copied now so then the next thing you do is</p>
+      <p begin="00:26:04.310" end="00:26:14.810">telecast...the cluster that yes I have actually a new application type.</p>
+      <p begin="00:26:14.810" end="00:26:20.360">And, then all you're doing is instantiate one copy of this.</p>
+      <p begin="00:26:20.360" end="00:26:27.980">And, that's new so if you now look at look at...should be running this.</p>
+      <p begin="00:26:27.980" end="00:26:28.380">Look, at</p>
+      <p begin="00:26:28.380" end="00:26:31.870">...is actually there you see widget visual objects application</p>
+      <p begin="00:26:33.000" end="00:26:39.720">...says yes I understand these things and now you would see that is actually deployed.</p>
+      <p begin="00:26:39.720" end="00:26:44.650">And, I have actually...and these are these are actually has have nine partitions...since I</p>
+      <p begin="00:26:44.650" end="00:26:49.290">said that actually has to be on all the machines and that's what happened</p>
+      <p begin="00:26:49.290" end="00:27:17.710">so let's look at look at the output of this per secondbecause that's going to be the...award.</p>
+      <p begin="00:27:17.710" end="00:27:33.220">So,...can see it relevant.</p>
+      <p begin="00:27:33.220" end="00:27:35.180">And, what's going on here.</p>
+      <p begin="00:27:35.180" end="00:27:57.310">All right so amazing...on another one here.</p>
+      <p begin="00:27:57.310" end="00:28:01.480">Okay, so, we now have...filaments so let's do a</p>
+      <p begin="00:28:01.480" end="00:28:05.080">quick upgrade and that actually or maybe it's all okay let's come to the</p>
+      <p begin="00:28:05.080" end="00:28:17.690">grid later so let's go back to my the rest of the stuff which I want to talk about.</p>
+      <p begin="00:28:17.690" end="00:28:23.220">All right so then the other thing other concept which I want also talk about...the ability</p>
+      <p begin="00:28:23.220" end="00:28:28.190">for you to make sure you can...a single...package in this scenario what I would do is</p>
+      <p begin="00:28:28.190" end="00:28:31.790">basically upgrade a grid esri one of the service</p>
+      <p begin="00:28:31.790" end="00:28:35.790">packages I have so in this particular schematic I have here I'm just going a</p>
+      <p begin="00:28:35.790" end="00:28:38.900">...the yellow, yellow hexagons with the green ones</p>
+      <p begin="00:28:38.900" end="00:28:42.220">and then basically this is basically the system takes care of</p>
+      <p begin="00:28:42.220" end="00:28:48.040">...it one you...time is actually walk through basically what happens is</p>
+      <p begin="00:28:48.040" end="00:28:53.000">...updates progresses from one-at-a-time...sequence actually is chosen by</p>
+      <p begin="00:28:53.000" end="00:28:56.600">system fabric so you don't get...which you...go first but the</p>
+      <p begin="00:28:56.600" end="00:29:02.910">...done by system fabric but it always do what you...so that you don't lose any availability?</p>
+      <p begin="00:29:02.910" end="00:29:07.210">The...xr also performed at the beginning of these upgrade and then</p>
+      <p begin="00:29:07.210" end="00:29:12.060">add up end of each...the so that if they have...are not met the</p>
+      <p begin="00:29:12.060" end="00:29:17.150">...either rollback automatically or is...the application developer can</p>
+      <p begin="00:29:17.150" end="00:29:21.290">and debug the...and then the one of the via</p>
+      <p begin="00:29:21.290" end="00:29:26.150">booster for the application developer can then either restart doubly saying that okay</p>
+      <p begin="00:29:26.150" end="00:29:29.770">I think it was a false alarm...is go on...or...system</p>
+      <p begin="00:29:29.770" end="00:29:35.310">too to rollback or role forward so...those three are the options you</p>
+      <p begin="00:29:35.310" end="00:29:39.520">...breed you can...forward or just rollback?</p>
+      <p begin="00:29:39.520" end="00:29:41.690">At any no-point is the service</p>
+      <p begin="00:29:41.690" end="00:29:46.150">...be lost so the question I'm sure people are you guys are thinking about</p>
+      <p begin="00:29:46.150" end="00:29:51.770">...what kind of help policies can define the to levels you can defines...that one</p>
+      <p begin="00:29:51.770" end="00:29:57.230">of the class level you can say that of the nine machines I've got as long as...</p>
+      <p begin="00:29:57.230" end="00:30:02.730">doesn't impact more than two or I'm okay so you can say okay ten percent of my</p>
+      <p begin="00:30:02.730" end="00:30:08.030">nodes or twenty percent of nodes can be down it's all...there's no need to rollback but</p>
+      <p begin="00:30:08.030" end="00:30:12.110">...also specify that application you don't want to lose availability offered at all so</p>
+      <p begin="00:30:12.110" end="00:30:16.860">...none of my applications...availability if it does then you just</p>
+      <p begin="00:30:16.860" end="00:30:22.360">have a policy can choose to say I do you do now...role forward or</p>
+      <p begin="00:30:22.360" end="00:30:33.700">...so these are things which can do so let me show you this an action.</p>
+      <p begin="00:30:33.700" end="00:30:38.390">...so number.</p>
+      <p begin="00:30:38.390" end="00:30:42.800">So, I'm back here.</p>
+      <p begin="00:30:42.800" end="00:30:47.790">So, what I'm going to do very simply is?</p>
+      <p begin="00:30:47.790" end="00:30:49.800">I'll go to go to my</p>
+      <p begin="00:30:49.800" end="00:30:55.830">stateful objects actor dot cs which is actually...one of my.</p>
+      <p begin="00:30:55.830" end="00:30:59.180">It's actually in one of my service packages here</p>
+      <p begin="00:30:59.180" end="00:31:03.100">it's actually in this analysis...just make a small change here</p>
+      <p begin="00:31:03.100" end="00:31:11.040">...vacancy...mechanistic...a little bit.</p>
+      <p begin="00:31:11.040" end="00:31:20.960">...make just make the moment to be true so that's basically all it does is.</p>
+      <p begin="00:31:20.960" end="00:31:30.720">The payments rotate that's all it does so I'm going to use visual studio to compile it.</p>
+      <p begin="00:31:30.720" end="00:31:42.170">And, then package...package.</p>
+      <p begin="00:31:42.170" end="00:31:45.720">Once packaged...I can deploy from here but I...to go through</p>
+      <p begin="00:31:46.760" end="00:31:51.700">a like I want to show you specifically what are the few things which you actually have a</p>
+      <p begin="00:31:51.700" end="00:31:55.190">can for in this...scenario only the only.</p>
+      <p begin="00:31:56.340" end="00:32:01.460">Thing which we change was one of one of the packages so let's go to that go to the package at</p>
+      <p begin="00:32:01.460" end="00:32:06.540">this point is release so since you see the see the...actually generated</p>
+      <p begin="00:32:06.540" end="00:32:11.310">two of them so we suddenly not machines this guy so I'm going to remove that packages the</p>
+      <p begin="00:32:11.310" end="00:32:12.660">remove that so</p>
+      <p begin="00:32:12.660" end="00:32:26.630">here's this is the one which I change so I just go in I edits in my service manifests.</p>
+      <p begin="00:32:26.630" end="00:32:28.410">And, then I'm all I'm going to do is make</p>
+      <p begin="00:32:28.410" end="00:32:32.520">...changes so this version number two and then I</p>
+      <p begin="00:32:32.520" end="00:32:37.230">see okay I m going I...change the code a little bit and then</p>
+      <p begin="00:32:37.230" end="00:32:49.270">I'm also going to chains associated conflict for it and then just...back.</p>
+      <p begin="00:32:49.270" end="00:32:55.880">And, then you go back and then define the same thing same thing in...application manifest.</p>
+      <p begin="00:32:55.880" end="00:33:01.090">So, that now...the to the system that yes I actually</p>
+      <p begin="00:33:01.090" end="00:33:06.690">machines this visual object service package to version number two.</p>
+      <p begin="00:33:06.690" end="00:33:13.230">I did not change the visual objects...the web package are not...it's...just fine.</p>
+      <p begin="00:33:13.230" end="00:33:17.440">And, then I just change the application version here.</p>
+      <p begin="00:33:17.440" end="00:33:20.350">That's it and the save it.</p>
+      <p begin="00:33:20.350" end="00:33:27.580">And, then the next thing which you do what the partial.</p>
+      <p begin="00:33:28.710" end="00:33:36.290">...copy...mario copying that package into...</p>
+      <p begin="00:33:36.290" end="00:33:45.360">So, it says that it's copied.</p>
+      <p begin="00:33:45.360" end="00:33:52.250">...register this new one.</p>
+      <p begin="00:33:52.250" end="00:33:56.100">So, once you register...is go back to quickly to this thing and say</p>
+      <p begin="00:33:56.100" end="00:34:01.180">...saw there were actually this one version of application sitting in there this is the view to</p>
+      <p begin="00:34:01.180" end="00:34:04.910">your emit store so let me quickly.</p>
+      <p begin="00:34:04.910" end="00:34:10.640">Refreshed.</p>
+      <p begin="00:34:10.640" end="00:34:14.640">...me go back to the application here.</p>
+      <p begin="00:34:14.640" end="00:34:17.870">And, you see there is actually now a second,</p>
+      <p begin="00:34:17.870" end="00:34:22.930">second version of your application registered in this very clearly the only one of the</p>
+      <p begin="00:34:22.930" end="00:34:28.820">packages has changed the second one has not changed so the system itself now understands that it doesn't need</p>
+      <p begin="00:34:28.820" end="00:34:32.470">...visual objects web service that all the only thing is going to</p>
+      <p begin="00:34:32.470" end="00:34:36.880">...the stateful visual...social...one.</p>
+      <p begin="00:34:36.880" end="00:34:44.879">So, now let's quickly go and initiate the they're great they're great.</p>
+      <p begin="00:34:44.879" end="00:34:49.199">Someone this is that this is the partial command starts...service rogue</p>
+      <p begin="00:34:49.199" end="00:34:54.199">application run it and then you can actually go back and we also</p>
+      <p begin="00:34:54.199" end="00:34:55.839">bring my.</p>
+      <p begin="00:34:55.839" end="00:35:11.890">By this thing here.</p>
+      <p begin="00:35:11.890" end="00:35:14.580">So,...celebrating so shortly</p>
+      <p begin="00:35:16.130" end="00:35:21.230">...see...like...this blue one basically sort...</p>
+      <p begin="00:35:21.230" end="00:35:29.760">And, then let me just do...fresh air.</p>
+      <p begin="00:35:29.760" end="00:35:38.650">So, as progress...you can actually see it to...here.</p>
+      <p begin="00:35:38.650" end="00:35:44.400">So, basically what you're what you're saying is the is that each one of them slowly</p>
+      <p begin="00:35:44.400" end="00:35:47.800">...starts to as though you these progress as the</p>
+      <p begin="00:35:47.800" end="00:35:51.810">...progress is through the grid domains each of these little</p>
+      <p begin="00:35:51.810" end="00:36:00.090">bouncing pyramid starts to have rotation...in them?</p>
+      <p begin="00:36:00.090" end="00:36:04.820">And, now it says that is completed...these so should have at least two of them which</p>
+      <p begin="00:36:04.820" end="00:36:13.330">of which is now...of them have rotations insert in addition to.</p>
+      <p begin="00:36:13.330" end="00:36:30.120">So, I let this go...let me just go on to a and we'll come back to this.</p>
+      <p begin="00:36:30.120" end="00:36:34.840">So, here's an interesting one so now that you have an application I showed you that it can be it can be a</p>
+      <p begin="00:36:34.840" end="00:36:38.990">grated so, I want-to talk to-you about what are all the all</p>
+      <p begin="00:36:38.990" end="00:36:46.330">the key aspects which are features which are built into...fabric that will help you</p>
+      <p begin="00:36:46.330" end="00:36:50.870">deploy your application into production with conference one security</p>
+      <p begin="00:36:50.870" end="00:36:53.920">...a very big thing for...I and in</p>
+      <p begin="00:36:53.920" end="00:36:58.390">fact microsoft so it's even bigger deal so security was build-up built</p>
+      <p begin="00:36:58.390" end="00:37:03.340">ground-up from the...into the platform we support...access control the you can use certificates</p>
+      <p begin="00:37:03.340" end="00:37:08.680">to secure application and the cluster all the system logs and events</p>
+      <p begin="00:37:08.680" end="00:37:12.950">...blog application logs and traces are retained per the customer policies</p>
+      <p begin="00:37:12.950" end="00:37:17.270">...so...something which you can say okay I need to have seven weeks of</p>
+      <p begin="00:37:17.270" end="00:37:20.810">often logs and that's what what's what you can actually choose to indicate</p>
+      <p begin="00:37:20.810" end="00:37:25.270">jon system and that's what we'll that's what you would keep?</p>
+      <p begin="00:37:25.270" end="00:37:28.080">Application scale-up so when you're a small</p>
+      <p begin="00:37:28.080" end="00:37:30.910">start-up or testing the market out.</p>
+      <p begin="00:37:30.910" end="00:37:34.180">There is...strongly to be are able to offer the service with minimal</p>
+      <p begin="00:37:34.180" end="00:37:38.040">expense but the ability to scaled if needed so...</p>
+      <p begin="00:37:38.040" end="00:37:43.260">there's no telling as to when you have a spike in the need and that's when you want</p>
+      <p begin="00:37:43.260" end="00:37:48.010">to go and deploy...new set of applications...point I'll service...allows you to just do that</p>
+      <p begin="00:37:48.010" end="00:37:54.110">...allowing you to partition your application you can choose a very large portion</p>
+      <p begin="00:37:54.110" end="00:37:59.160"> as plus-minus in sixty-four partitions and deploy to a small cluster and that's</p>
+      <p begin="00:37:59.160" end="00:38:02.930">...so you'll bing only if only for the expenses</p>
+      <p begin="00:38:02.930" end="00:38:07.490">...that particular cluster right so that actually would mean that your clogs are lower to</p>
+      <p begin="00:38:07.490" end="00:38:10.340">...and then as the demand increases you can actually say</p>
+      <p begin="00:38:10.340" end="00:38:14.190">okay verifiable increase it to whatever it needs to be maybe go from nine to say</p>
+      <p begin="00:38:14.190" end="00:38:18.720">...so that's exactly what can what can happen?</p>
+      <p begin="00:38:18.720" end="00:38:24.200">So, then the next topic would be application reliability so,</p>
+      <p begin="00:38:24.200" end="00:38:29.230">what kind of...failures do-you want-to survive what's your isolate how many replicas</p>
+      <p begin="00:38:29.230" end="00:38:36.710">does your service and these other questions you need to ask about when...you when you think in terms of?</p>
+      <p begin="00:38:36.710" end="00:38:40.690">...think in terms of reliability which you need...also think in terms of okay do I</p>
+      <p begin="00:38:40.690" end="00:38:44.320">want to survive like an added datacenter going on so those are the</p>
+      <p begin="00:38:44.320" end="00:38:47.760">think times when you spanned added datacenters so these are the</p>
+      <p begin="00:38:47.760" end="00:38:52.720">...you have ask yourself and the system fabric of course allows you do not</p>
+      <p begin="00:38:52.720" end="00:38:57.940">...think about these things but also make sure that...implemented the rightly and then</p>
+      <p begin="00:38:59.080" end="00:39:03.920">...us...more things will be a disability services that actually is a is a</p>
+      <p begin="00:39:03.920" end="00:39:07.620">service which actually allows you to test your applications width</p>
+      <p begin="00:39:07.620" end="00:39:12.230">real-life scenarios which can happen in production no</p>
+      <p begin="00:39:12.230" end="00:39:15.990">one wants addresses test the limits of...this service and production supreme</p>
+      <p begin="00:39:15.990" end="00:39:20.960">...customers customer data all your sat with them at risk so this</p>
+      <p begin="00:39:20.960" end="00:39:24.000">...service can be used assimilate simulate</p>
+      <p begin="00:39:25.880" end="00:39:35.690">...available scenarios which may happen in...time...in terms of ours.</p>
+      <p begin="00:39:35.690" end="00:39:40.830">all you need to do is simply, simply enable this particular service in your</p>
+      <p begin="00:39:40.830" end="00:39:46.530">...cluster and then basically it will do it'll put the application your application to</p>
+      <p begin="00:39:46.530" end="00:39:49.100">spaces synthesis...this</p>
+      <p begin="00:39:49.100" end="00:39:54.260">...also integrator where they are with your health system it'll pauses test if the application</p>
+      <p begin="00:39:54.260" end="00:39:58.110">fields so this is very important so...as soon as the application has a</p>
+      <p begin="00:39:58.110" end="00:40:03.750">...pauses so you can attaching debug and fix the issue and then you get to restart applications</p>
+      <p begin="00:40:03.750" end="00:40:08.190">the possibly service at that point.</p>
+      <p begin="00:40:08.190" end="00:40:13.830">So, then the let me go on to the last topic which is actually the ...marketing and diagnostics and that</p>
+      <p begin="00:40:13.830" end="00:40:16.550">...actually uncover offer the demo I can let me just give you</p>
+      <p begin="00:40:16.550" end="00:40:41.060">a demo off of this that the disability services.</p>
+      <p begin="00:40:41.060" end="00:40:45.820">I want to introduce you to a this cluster monitor which we have which I'm sure</p>
+      <p begin="00:40:45.820" end="00:40:48.780">you've...seen this before.</p>
+      <p begin="00:40:48.780" end="00:40:54.230">So, now I have.</p>
+      <p begin="00:40:54.230" end="00:40:56.800">I have a nice ui out here</p>
+      <p begin="00:40:57.840" end="00:41:04.620">which is which indicates the nine nodes which I have here?</p>
+      <p begin="00:41:04.620" end="00:41:08.550">And, then I have a lot of applications apply...</p>
+      <p begin="00:41:08.550" end="00:41:16.840">So, I just wanted-to talk to-you about a couple of things so we have not talked about</p>
+      <p begin="00:41:16.840" end="00:41:19.660">Let me show you a couple of interesting things here</p>
+      <p begin="00:41:19.660" end="00:41:24.480">in terms of reliability what does it what does it give you so let me take just this particular</p>
+      <p begin="00:41:24.480" end="00:41:30.310">satisfy the service fabric explorer and then just kill often node.</p>
+      <p begin="00:41:30.310" end="00:41:33.190">Say, for example, let me just take this.</p>
+      <p begin="00:41:33.190" end="00:41:37.070">...one five suffice seven.</p>
+      <p begin="00:41:37.070" end="00:41:43.500">So, you would see something very interesting in here so to...</p>
+      <p begin="00:41:43.500" end="00:41:46.570">And, it's...asking can restart.</p>
+      <p begin="00:41:46.570" end="00:41:51.150">So, when do it so you would see that does?</p>
+      <p begin="00:41:51.150" end="00:41:55.780">The system fabric actually moved all those replicas office offers into something else so basically</p>
+      <p begin="00:41:55.780" end="00:41:59.380">there's actually simulating a scenario where you actually lost</p>
+      <p begin="00:41:59.380" end="00:42:04.890">in a particular known in production.</p>
+      <p begin="00:42:04.890" end="00:42:11.540">And, then when it comes back?</p>
+      <p begin="00:42:11.540" end="00:42:17.730">...services that...replicas and...back so that's...that's.</p>
+      <p begin="00:42:17.730" end="00:42:20.740">See that...</p>
+      <p begin="00:42:20.740" end="00:42:21.520">Ok,</p>
+      <p begin="00:42:21.520" end="00:42:26.620">so, this is something which of course you can sit on also...and try to do this once in awhile and</p>
+      <p begin="00:42:26.620" end="00:42:54.620">directories not very scalable so...let's see if began.</p>
+      <p begin="00:42:54.620" end="00:43:19.040">Let me just bring up my in...services...me a second.</p>
+      <p begin="00:43:19.040" end="00:43:29.220">All right I'd say to nowhere.</p>
+      <p begin="00:43:29.220" end="00:43:33.000">So, anyway, so,...the lack of time actually...one and</p>
+      <p begin="00:43:33.000" end="00:43:35.930">...show you guys the disability service some of the time it gets.</p>
+      <p begin="00:43:37.800" end="00:43:45.210">So, let me...back.</p>
+      <p begin="00:43:45.210" end="00:43:49.110">So, what...this point is basically?</p>
+      <p begin="00:43:49.110" end="00:43:53.500">Service...a...what containers...service...allows you to specify rules</p>
+      <p begin="00:43:53.500" end="00:43:58.030">of on placement resource balancing...resource consumption is</p>
+      <p begin="00:43:58.030" end="00:44:02.160">not capacity and...them...real...hedges these on a</p>
+      <p begin="00:44:02.160" end="00:44:06.900">on running cluster and the system and manage resources resource balancing for you,</p>
+      <p begin="00:44:06.900" end="00:44:07.670">for example,</p>
+      <p begin="00:44:09.010" end="00:44:15.880">for example,...uses this...basically they offer three kinds of databases say, for example,</p>
+      <p begin="00:44:15.880" end="00:44:19.400">and, they have standard free in...premium</p>
+      <p begin="00:44:19.400" end="00:44:24.930">...capacity such that the premium database reports its load as that...that the</p>
+      <p begin="00:44:24.930" end="00:44:29.320">...of the whole complete machine so then what happens is since</p>
+      <p begin="00:44:29.320" end="00:44:34.300">the premium database is already taken up the whole machine...we this...fabric actually knows that</p>
+      <p begin="00:44:34.300" end="00:44:39.510">...place any of the free skews out there so these rules are expected</p>
+      <p begin="00:44:39.510" end="00:44:43.730">even...performing the...application of great or rollback?</p>
+      <p begin="00:44:43.730" end="00:44:47.160">So, let me quickly show you.</p>
+      <p begin="00:44:47.160" end="00:44:51.590">How easy it is the for you to define?</p>
+      <p begin="00:44:51.590" end="00:44:56.030">Define the...capacity and, reports...loads.</p>
+      <p begin="00:44:56.030" end="00:45:04.430">So, I have an application out here so this particular this then and this.</p>
+      <p begin="00:45:04.430" end="00:45:07.820">There is a manifests...the plus manifest actually nothing it's nothing but</p>
+      <p begin="00:45:07.820" end="00:45:11.260">which defines the cluster which...just deployed and</p>
+      <p begin="00:45:11.260" end="00:45:16.400">then in this in this basically the to there is in each of these no types...the vm</p>
+      <p begin="00:45:16.400" end="00:45:21.100">...see...the capacity of the vm is just this...you just add this particular segment</p>
+      <p begin="00:45:21.100" end="00:45:25.690">...then the system knows here's a capacity for that.</p>
+      <p begin="00:45:25.690" end="00:45:30.440">And, then add and from your service all you're doing is you just have</p>
+      <p begin="00:45:30.440" end="00:45:36.620">...make a call.</p>
+      <p begin="00:45:36.620" end="00:45:41.910">And, this report the load and based on the load system react reactivated and figure out</p>
+      <p begin="00:45:41.910" end="00:45:44.380">...particular one is taking up of...of the</p>
+      <p begin="00:45:44.380" end="00:45:48.690">...and then it'll react to it and make sure that</p>
+      <p begin="00:45:48.690" end="00:45:53.150">...it...indifference conservation how much of the capacity of this one this one just</p>
+      <p begin="00:45:53.150" end="00:45:58.190">talks about hundred so it can place only five of them in there so if it hits more</p>
+      <p begin="00:45:58.190" end="00:46:02.690">...if there is a six-one then basically and it actually will deport that either there's no</p>
+      <p begin="00:46:02.690" end="00:46:08.010">...or it will this place it in a...which has</p>
+      <p begin="00:46:08.010" end="00:46:22.390">...space so it's very easy for you to report load of from an application.</p>
+      <p begin="00:46:22.390" end="00:46:28.520">All right now let's just go into the topic the very last topic which I had I</p>
+      <p begin="00:46:28.520" end="00:46:32.940">talked about is monitoring your services while running you're running your service</p>
+      <p begin="00:46:32.940" end="00:46:37.380">in productions critical that you have visibility and your application sort of what services what your</p>
+      <p begin="00:46:37.380" end="00:46:41.900">application and services are doing and I...categorize them into three one is</p>
+      <p begin="00:46:41.900" end="00:46:47.460">performance stress response service alta status collection of elementary dataon</p>
+      <p begin="00:46:47.460" end="00:46:53.240">your service microsoft so subscribe enables you to do all of these with these.</p>
+      <p begin="00:46:53.240" end="00:46:57.640">For performance monitoring the emit detailed platform metrics for both the</p>
+      <p begin="00:46:57.640" end="00:47:02.950">program models the program models which mark and, ripple talked about what for both of them we actually</p>
+      <p begin="00:47:02.950" end="00:47:04.680">in emit and detailed.</p>
+      <p begin="00:47:05.960" end="00:47:09.880">...platform metrics you can combine them with your own custom metrics to</p>
+      <p begin="00:47:09.880" end="00:47:13.950">understand as to how we are application is handling spikes and surges of</p>
+      <p begin="00:47:13.950" end="00:47:16.580">custom load figure out what's the lowest the slowest</p>
+      <p begin="00:47:16.580" end="00:47:24.530">...calls and also...and, those things you can use...</p>
+      <p begin="00:47:24.530" end="00:47:32.420">So, are maybe...understand what the...a data...load?</p>
+      <p begin="00:47:32.420" end="00:47:36.860">Since we emit standard dw events you can use any tool of which you want which</p>
+      <p begin="00:47:36.860" end="00:47:40.390">of your choice and then you can visualize this?</p>
+      <p begin="00:47:40.390" end="00:47:45.100">And, the second topic was what was the health status monitoring for help-wanted</p>
+      <p begin="00:47:45.100" end="00:47:46.740">...build a flexible and extensible</p>
+      <p begin="00:47:46.740" end="00:47:50.880">...store that provides reports of reports of helpful the cluster</p>
+      <p begin="00:47:50.880" end="00:47:55.680">the applications the system services running...it and you can easily ad records for</p>
+      <p begin="00:47:55.680" end="00:47:59.500">...services you right you can check the health</p>
+      <p begin="00:47:59.500" end="00:48:04.480">...reports on the portal which I just showed you in the service fabric that's the other thing and the service</p>
+      <p begin="00:48:04.480" end="00:48:10.570">web...some the other tool which is also...for you and sdk.</p>
+      <p begin="00:48:10.570" end="00:48:12.070">And, then you can certainly</p>
+      <p begin="00:48:13.460" end="00:48:21.290">plumb this into any other any other tool of your choices you many.</p>
+      <p begin="00:48:21.290" end="00:48:23.540">The platform uses this health store for many of</p>
+      <p begin="00:48:23.540" end="00:48:28.400">...actions including monitor application...and,</p>
+      <p begin="00:48:28.400" end="00:48:32.430">basically it actuallyuses that to safely rollback of</p>
+      <p begin="00:48:32.430" end="00:48:36.010">as a new version of application which is destabilizing your production</p>
+      <p begin="00:48:36.010" end="00:48:39.390">...the last one which is also a part of your</p>
+      <p begin="00:48:39.390" end="00:48:43.510">...actually the business telemetry in this day and age</p>
+      <p begin="00:48:43.510" end="00:48:48.010">of data-driven decision-making we enable you to collect...</p>
+      <p begin="00:48:48.010" end="00:48:52.660">drive-in sites from your customer interaction your application and</p>
+      <p begin="00:48:52.660" end="00:48:57.270">...let me quickly show you an example of how you can use app insights to</p>
+      <p begin="00:48:57.270" end="00:49:02.800">surface the system generated counters along with any system any of the</p>
+      <p begin="00:49:02.800" end="00:49:33.760">custom counters you may have created in your in your application.</p>
+      <p begin="00:49:33.760" end="00:49:45.910">That's...look at.</p>
+      <p begin="00:49:45.910" end="00:49:50.710">I have I have actually a.</p>
+      <p begin="00:49:50.710" end="00:50:02.160">One of the app insights already treated out here.</p>
+      <p begin="00:50:02.160" end="00:50:13.990">...favorite crazier...on.</p>
+      <p begin="00:50:13.990" end="00:50:20.430">Okay, there you are so...demo...</p>
+      <p begin="00:50:20.430" end="00:50:25.520">So, if you would see something which is interesting out here.</p>
+      <p begin="00:50:25.520" end="00:50:30.480">So, what does give you...basically a is list of the...system generated,</p>
+      <p begin="00:50:30.480" end="00:50:35.470">generated counters so there's basically says that's all the number of</p>
+      <p begin="00:50:35.470" end="00:50:39.780">...actors I have theme in this...lackluster ...the over the past twenty four</p>
+      <p begin="00:50:41.570" end="00:50:45.580">...for two-point-five speakeasy the number of a</p>
+      <p begin="00:50:45.580" end="00:51:01.280">eisenhower of it is the number of facing calls the get...is the set?</p>
+      <p begin="00:51:01.280" end="00:51:06.280">So, all the key here is you can actually have your own custom metrics or you can actually,</p>
+      <p begin="00:51:06.280" end="00:51:11.770">actually look at look, at the look at the ones which system generates</p>
+      <p begin="00:51:11.770" end="00:51:16.440">for you and then of course use all the powers of app</p>
+      <p begin="00:51:16.440" end="00:51:34.520">...to make sense of what is going on with...application.</p>
+      <p begin="00:51:34.520" end="00:51:39.050">All right so let's look at the look at the one more interesting things we talked about</p>
+      <p begin="00:51:39.050" end="00:51:43.520">monitoring we talked about health now it's interesting to see what are the all</p>
+      <p begin="00:51:43.520" end="00:51:49.150">...order one of the tools which...systems sorry service fabric provides</p>
+      <p begin="00:51:49.150" end="00:51:52.560">you for diagnoses and, troubleshooting</p>
+      <p begin="00:51:53.630" end="00:51:58.520">...broken them into three buckets because of that is the easier way for me to understand this or details</p>
+      <p begin="00:51:58.520" end="00:52:03.500">...mopix this actually allows you to know what service...was doing at the time of incident</p>
+      <p begin="00:52:03.500" end="00:52:09.830">...latest typically it's very helpful the helpful for you to know what the system,</p>
+      <p begin="00:52:09.830" end="00:52:13.120">system was doing so that you actually do the system as an issue of</p>
+      <p begin="00:52:13.120" end="00:52:18.340">...bambi more focused on what exactly happened at that point based</p>
+      <p begin="00:52:18.340" end="00:52:22.860">on the system movement and the application thing so, for example,</p>
+      <p begin="00:52:22.860" end="00:52:27.750">the system operates include all...of important system events such as applications</p>
+      <p begin="00:52:27.750" end="00:52:31.730">...applicants service deployment the upgrades the...creation save</p>
+      <p begin="00:52:31.730" end="00:52:38.270">...loads...calls or exploiting cancellations run icing</p>
+      <p begin="00:52:38.270" end="00:52:40.890">calls better failing so forth?</p>
+      <p begin="00:52:40.890" end="00:52:43.430">The second piece of it is the second bucket which I have</p>
+      <p begin="00:52:43.430" end="00:52:47.400">...a custom application training this is the only way for you to make sure that you can extend</p>
+      <p begin="00:52:47.400" end="00:52:50.940">...functionality which is which service fabric provides you</p>
+      <p begin="00:52:50.940" end="00:52:55.610">out-of-the-box so you can combine your own application traces with the system traces together</p>
+      <p begin="00:52:55.610" end="00:52:59.920">holistic address signing for you to troubleshooting problem and</p>
+      <p begin="00:52:59.920" end="00:53:04.970">...use each w so...custom tracing code...added in the on</p>
+      <p begin="00:53:04.970" end="00:53:10.130">local one box actually works exactly the same way when you when you</p>
+      <p begin="00:53:10.130" end="00:53:15.120">deploy into the cloud so you don't have to related you can certainly use any tool of your choice visualize the</p>
+      <p begin="00:53:15.120" end="00:53:20.240">street these traces I'm sure people like bonneville you like lashes search</p>
+      <p begin="00:53:20.240" end="00:53:25.730">you can use a operational insights...or...the</p>
+      <p begin="00:53:25.730" end="00:53:32.460">via is diagnostics even viewer which actually is a part of a sticky which you get?</p>
+      <p begin="00:53:32.460" end="00:53:38.200">So, in the program we'll talk I'm suremark and...actually use the visual studio diagnosis even</p>
+      <p begin="00:53:38.200" end="00:53:41.300">...you are by pressing a fly so I will not show you that I'll</p>
+      <p begin="00:53:41.300" end="00:54:00.480">just show you how these can be done in the...operational insights?</p>
+      <p begin="00:54:00.480" end="00:54:05.680">Okay, so, let...get too so I don't know-how many how many folks have actually played with operation</p>
+      <p begin="00:54:05.680" end="00:54:09.820">...so I will not actually get into the details of what</p>
+      <p begin="00:54:09.820" end="00:54:13.630">a operation insights itself is because that's another talk by itself so</p>
+      <p begin="00:54:13.630" end="00:54:18.220">they just go through very quickly I want to understand I've known make sure that</p>
+      <p begin="00:54:18.220" end="00:54:22.240">I've actually routed all my all my traces and all the</p>
+      <p begin="00:54:22.240" end="00:54:27.770">all the evens which I have over the course of some time into a next-door</p>
+      <p begin="00:54:27.770" end="00:54:32.590">...and then basically option insights actually is the one which I'm using to create</p>
+      <p begin="00:54:32.590" end="00:54:33.610">...let me find</p>
+      <p begin="00:54:33.610" end="00:54:40.690">outbasically give me all the system events that the notifying that an application that we...started.</p>
+      <p begin="00:54:40.690" end="00:54:45.400">So, like you say...here is and then just says ...in</p>
+      <p begin="00:54:45.400" end="00:54:49.920">...on a on sunday twenty-six there was something which happened and then if you just look</p>
+      <p begin="00:54:49.920" end="00:54:55.910">at actually will tell you that yes there was something which happened there and it was...</p>
+      <p begin="00:54:55.910" end="00:55:00.470">Give-me all the events which for which the</p>
+      <p begin="00:55:00.470" end="00:55:05.530">...application was created and here's a here's the complete list for it so this</p>
+      <p begin="00:55:05.530" end="00:55:10.030">one what I'm trying to steiner indicate here is the searches you create</p>
+      <p begin="00:55:10.030" end="00:55:15.040">...something which you can leverage using the keywords which we ve will</p>
+      <p begin="00:55:15.040" end="00:55:19.340">...okay you can actually search for created application created application of</p>
+      <p begin="00:55:19.340" end="00:55:24.680">...started application...deleted the application of...and</p>
+      <p begin="00:55:24.680" end="00:55:31.500">...completed so forth so that's about the thing I want to show you in terms of</p>
+      <p begin="00:55:33.750" end="00:55:36.440">...the option sites.</p>
+      <p begin="00:55:36.440" end="00:55:44.120">So, this actually can be used for figuring out what actually exactly...your cluster.</p>
+      <p begin="00:55:44.120" end="00:55:49.010">Ok, let's go back to my powerpoint...quickly.</p>
+      <p begin="00:55:49.010" end="00:55:52.460">...three minutes okay so they must</p>
+      <p begin="00:55:52.460" end="00:55:56.590">...actually is a high-level workflow of...does</p>
+      <p begin="00:55:56.590" end="00:55:58.550">...truly work in a descrip</p>
+      <p begin="00:55:58.550" end="00:56:01.830">...form which has which has like hundreds of</p>
+      <p begin="00:56:01.830" end="00:56:06.160">...there's certainly you can't actually expect expect all</p>
+      <p begin="00:56:06.160" end="00:56:11.370">events to flow of one of the time so you actually we allow you to</p>
+      <p begin="00:56:11.370" end="00:56:16.140">use of windows agile diagnostics and that actually intern bumped into</p>
+      <p begin="00:56:16.140" end="00:56:22.320">...people and then opt...that's exactly what...use...example office mopix of course</p>
+      <p begin="00:56:22.320" end="00:56:30.040">...includes the like...load calls so forth.</p>
+      <p begin="00:56:30.040" end="00:56:32.340">All right so now we come to the</p>
+      <p begin="00:56:32.340" end="00:56:37.630">enough my talk so I'm just going to recap as to what we just talk about subscribe</p>
+      <p begin="00:56:37.630" end="00:56:41.440">management capabilities of that'll enable...the services,</p>
+      <p begin="00:56:42.480" end="00:56:46.120">services your services without downtime twenty-four seventies five-days-a-year</p>
+      <p begin="00:56:47.430" end="00:56:51.330">so subject can manage clusters small and large.</p>
+      <p begin="00:56:51.330" end="00:56:54.550">Handle failures machines or applications automatically and is an</p>
+      <p begin="00:56:54.550" end="00:57:00.750">effected by hardware software communication failures makes application lifecycle easy</p>
+      <p begin="00:57:00.750" end="00:57:07.430">supports automated monitored uprolling upgrades with tool back since actually is</p>
+      <p begin="00:57:07.430" end="00:57:08.850">...store?</p>
+      <p begin="00:57:08.850" end="00:57:12.440">It gives you a container...automatic</p>
+      <p begin="00:57:12.440" end="00:57:16.500">...balancing governance based on rules and shows efficiency,</p>
+      <p begin="00:57:16.500" end="00:57:20.430">efficiency performance scale density resulting in better</p>
+      <p begin="00:57:20.430" end="00:57:24.620">...and provides extensible help diagnostics and marking edges</p>
+      <p begin="00:57:24.620" end="00:57:29.190">...just showed you those.</p>
+      <p begin="00:57:29.190" end="00:57:34.740">I've come to the end of my talk thank you for listening and I have something for you just try that</p>
+      <p begin="00:57:34.740" end="00:57:38.210">...key today media feedback thank you very much.</p>
+
+    </div>
+  </body>
+</tt>

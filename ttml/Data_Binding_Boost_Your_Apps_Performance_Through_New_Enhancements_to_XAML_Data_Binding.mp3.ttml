@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.884</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.159" end="00:00:08.249">All right it's like ten forget started</p>
+      <p begin="00:00:08.249" end="00:00:13.809">I'd like to introduce myself my name is sam spencer I'm a program manager on the simultaneous</p>
+      <p begin="00:00:13.809" end="00:00:18.729">a microsoft so when I talk about today is the next evolution we've</p>
+      <p begin="00:00:18.729" end="00:00:23.689">added in...windows ten, for example, data binding so the big thing</p>
+      <p begin="00:00:23.689" end="00:00:28.859">that's driven kind requirements into the simultaneous for this release is we picked up some large</p>
+      <p begin="00:00:28.859" end="00:00:34.509">internal clients specifically office and windows shell but those teams one thing that really hard-core</p>
+      <p begin="00:00:34.509" end="00:00:36.979">...is performance...</p>
+      <p begin="00:00:38.169" end="00:00:40.439">Basically the office guys they can that hey if I</p>
+      <p begin="00:00:40.439" end="00:00:44.169">...a property through code versus sitting at three data binding</p>
+      <p begin="00:00:44.169" end="00:00:48.849">then that's orders of magnitude faster like okay,</p>
+      <p begin="00:00:48.849" end="00:00:53.379">let's see we fix that for you and then the...guys came along I said hey we need to kind of reduce the memory,</p>
+      <p begin="00:00:53.379" end="00:00:55.059">memory consumption...back kind of</p>
+      <p begin="00:00:55.059" end="00:01:01.000">...splash but with them so it's like okay that's a look at as well so what</p>
+      <p begin="00:01:01.000" end="00:01:06.070">we've come up with for this release is a new version</p>
+      <p begin="00:01:06.070" end="00:01:08.640">of data binding</p>
+      <p begin="00:01:08.640" end="00:01:13.500">calling compile binding and the big difference between this and what you've...</p>
+      <p begin="00:01:13.500" end="00:01:18.610">binding before is the heavy lifting which is kind of reflection work is now</p>
+      <p begin="00:01:18.610" end="00:01:22.250">done...build time rather than at runtime?</p>
+      <p begin="00:01:22.250" end="00:01:27.450">So, we classic binding ...create binding, binding objects binding path objects</p>
+      <p begin="00:01:27.450" end="00:01:32.110">...could reflection or other api is to figure out what are those types and,</p>
+      <p begin="00:01:32.110" end="00:01:33.820">...go kind of hooked together all</p>
+      <p begin="00:01:33.820" end="00:01:38.970">...what we do now is we do that at design-time we generate codes</p>
+      <p begin="00:01:38.970" end="00:01:45.130">...behind that means you can actually go inspect the code look at...it there's no magic going</p>
+      <p begin="00:01:45.130" end="00:01:49.580">on in data mining...also means we validation of the bindings so if you miss</p>
+      <p begin="00:01:49.580" end="00:01:58.910">type or the object models and public or whatever you get a compiler for it...build time.</p>
+      <p begin="00:01:58.910" end="00:02:04.890">So, at the end of the session what I...like what is compile binding you know-how do using</p>
+      <p begin="00:02:04.890" end="00:02:13.920">applications the pros and cons and have a brief understanding of what kind of going on the hood?</p>
+      <p begin="00:02:13.920" end="00:02:16.380">So, first we do is start off with the demo and.</p>
+      <p begin="00:02:22.480" end="00:02:28.050">this is a micro benchmark application of written ...this does...demonstrate differences between</p>
+      <p begin="00:02:28.050" end="00:02:31.670">...so I've got a series of user controls in here each of which</p>
+      <p begin="00:02:31.670" end="00:02:35.400">then has a stack panels with effectively grid</p>
+      <p begin="00:02:35.400" end="00:02:39.860">...forty border elements and each is boarder elements has background color a set with</p>
+      <p begin="00:02:39.860" end="00:02:48.590">a data binding in this case I'm using classic finding she that we boost up a bit?</p>
+      <p begin="00:02:48.590" end="00:02:53.140">Using classic...but I can also do it with x bind.</p>
+      <p begin="00:02:53.140" end="00:02:58.430">By doing this with a forty grid we're doing sixteen hundred elements it gives us something kind of measurable</p>
+      <p begin="00:02:58.430" end="00:03:03.650">to tracker performance so I flip back flip over to the runtime of this...see</p>
+      <p begin="00:03:03.650" end="00:03:09.650">the application action...new but nobody links we get a tyne...here this is kind of from</p>
+      <p begin="00:03:09.650" end="00:03:13.370">...to create use control till the frame is submitted to be rendered</p>
+      <p begin="00:03:14.410" end="00:03:17.660">...relatively...pretty good time but like what does it take to do</p>
+      <p begin="00:03:17.660" end="00:03:23.600">the tree operations get that page ready so no bindings we're talking about twenty-seven milliseconds.</p>
+      <p begin="00:03:23.600" end="00:03:28.770">One-time binding we're looking at eighty-one milliseconds...a little bit since we</p>
+      <p begin="00:03:28.770" end="00:03:29.630">...one seventy.</p>
+      <p begin="00:03:30.860" end="00:03:35.500">Sixty-eight each time I do it...different results subtext bind</p>
+      <p begin="00:03:35.500" end="00:03:40.370">...the seventy millisecond range comparing that with classic binding that's in the five</p>
+      <p begin="00:03:40.370" end="00:03:46.640">hundred millisecond range thanks...substantially faster in these kind of micro benchmarks</p>
+      <p begin="00:03:46.640" end="00:03:51.320">those are one-time bindings if I do one-way will see x</p>
+      <p begin="00:03:51.320" end="00:03:53.340">bind similarly about seventy milliseconds to give</p>
+      <p begin="00:03:53.340" end="00:03:58.240">...model when I hit the change color button what that does is changes change the data model and</p>
+      <p begin="00:03:58.240" end="00:04:04.010">changes all colors to random so that's taking can fifteen milliseconds.</p>
+      <p begin="00:04:04.010" end="00:04:06.100">Minding one-way...large</p>
+      <p begin="00:04:06.100" end="00:04:16.110">to create and change the color it takes more time.</p>
+      <p begin="00:04:16.110" end="00:04:21.420">I switch back to powerpoint what I've got here is a screenshot from</p>
+      <p begin="00:04:21.420" end="00:04:26.570">a tool we call wk windows performance analyzer...you guys familiar with</p>
+      <p begin="00:04:28.920" end="00:04:31.820">...we generally use internally to track performance into sample</p>
+      <p begin="00:04:31.820" end="00:04:36.770">base profiler so every millisecond it got a samples and that's what we're seeing for the top part of</p>
+      <p begin="00:04:36.770" end="00:04:40.500">this graph so this section is for classic binding this</p>
+      <p begin="00:04:40.500" end="00:04:45.990">...compile binding we can see I put in customer tw markers...</p>
+      <p begin="00:04:45.990" end="00:04:52.590">kind of the begin and end some compare that and you can see the cpu is basically pegged</p>
+      <p begin="00:04:52.590" end="00:04:57.260">twenty-five percent for the entire the entire time the reason it's twenty five percent of</p>
+      <p begin="00:04:57.260" end="00:05:03.730">hundred-percent...a for core machine and therefore...thread...picking one of...</p>
+      <p begin="00:05:03.730" end="00:05:07.750">Looking at the second part...generic events these are each w markers</p>
+      <p begin="00:05:07.750" end="00:05:11.940">...by example each one is represented as a little</p>
+      <p begin="00:05:11.940" end="00:05:15.720">diamond but if you get a whole bunch very close together that's where you end up with a bar.</p>
+      <p begin="00:05:16.920" end="00:05:21.610">So, what...showing is we do a whole bunch of element creation and then there's a lot of other</p>
+      <p begin="00:05:21.610" end="00:05:26.870">worked isn't can involving example tree we look at the same thing in compiled binding are</p>
+      <p begin="00:05:26.870" end="00:05:34.020">element creation is smaller and then the second section is substantially smaller?</p>
+      <p begin="00:05:34.020" end="00:05:38.320">So, I can do is...in the call stack to see what's kinda going on with this and we</p>
+      <p begin="00:05:38.320" end="00:05:42.100">see during the first part what we're doing is we're creating are binding objects.</p>
+      <p begin="00:05:43.200" end="00:05:44.930">That's why it takes more times</p>
+      <p begin="00:05:44.930" end="00:05:51.320">...elements and then the second part this whole gap...activity</p>
+      <p begin="00:05:51.320" end="00:05:56.120">really didn't seem to be going on that's where we get the data context changed notification and each those binding</p>
+      <p begin="00:05:56.120" end="00:05:58.030">expressions is now being parsed...understood</p>
+      <p begin="00:05:58.030" end="00:06:02.950">reflection what have you age-wise taking kind of so much longer.</p>
+      <p begin="00:06:02.950" end="00:06:10.210">So,...buying what we've done is move that work to compile-time rather than runtime.</p>
+      <p begin="00:06:10.210" end="00:06:13.500">So, that was a cpu from a memory</p>
+      <p begin="00:06:13.500" end="00:06:17.420">...compile binding because we don't have the binding object is also substantially</p>
+      <p begin="00:06:17.420" end="00:06:22.670">small so we can see here is example no bindings one-time with x</p>
+      <p begin="00:06:22.670" end="00:06:27.080">...a little bit higher classic binding substantially higher</p>
+      <p begin="00:06:27.080" end="00:06:29.970">explain one-way is a little bit higher than the one-time</p>
+      <p begin="00:06:29.970" end="00:06:36.260">...listener objects and then finding one-way is substantially larger that again.</p>
+      <p begin="00:06:36.260" end="00:06:39.160">So, this was a micro benchmark kind of</p>
+      <p begin="00:06:39.160" end="00:06:43.240">accentuate the differences between binding but</p>
+      <p begin="00:06:43.240" end="00:06:47.560">...context of real applications start recently moved to</p>
+      <p begin="00:06:47.560" end="00:06:52.010">exponent they...overall reduction in a heap ten percent</p>
+      <p begin="00:06:52.010" end="00:06:54.810">...percent if you just look at memory district attributable those</p>
+      <p begin="00:06:54.810" end="00:07:01.460">...that's quite a good...quite good reduction in memory just by...binding expressions.</p>
+      <p begin="00:07:01.460" end="00:07:06.210">The people lap on the phone they just switched over.</p>
+      <p begin="00:07:06.210" end="00:07:09.830">...csharp their startup is down eleven percent</p>
+      <p begin="00:07:09.830" end="00:07:15.290">...thirty-two heap is down twenty one percent just by changing to expand.</p>
+      <p begin="00:07:15.290" end="00:07:20.390">So, some good performance kind of...in the technology.</p>
+      <p begin="00:07:20.390" end="00:07:24.810">So, how do I use compile binding well the simplest view is you take the</p>
+      <p begin="00:07:24.810" end="00:07:29.040">school binding expression and replace it with x columbine?</p>
+      <p begin="00:07:29.040" end="00:07:34.770">But,...a bit more to it than that we look to see could we convert this technology and</p>
+      <p begin="00:07:34.770" end="00:07:39.730">use it put that kind of place...the bindings...is the traditional bindings used</p>
+      <p begin="00:07:39.730" end="00:07:44.110">...use the same expression problems we couldn't do it will while being</p>
+      <p begin="00:07:44.110" end="00:07:50.080">...compatible and we need extra typing information isn't available to</p>
+      <p begin="00:07:50.080" end="00:07:53.810">...traditional binding so with classic binding it</p>
+      <p begin="00:07:53.810" end="00:07:58.310">turns use data context or a source property set on the binding object.</p>
+      <p begin="00:07:58.310" end="00:08:02.640">Both of those are object type so we don't have the type information we need to go</p>
+      <p begin="00:08:02.640" end="00:08:07.340">decode generation so for ex bind do code generation we need that type</p>
+      <p begin="00:08:07.340" end="00:08:11.340">information so strongly typed so for bindings inside a page or</p>
+      <p begin="00:08:11.340" end="00:08:17.760">user control we use that pager user control itself as the context for the bindings?</p>
+      <p begin="00:08:17.760" end="00:08:21.920">The other big changes made is because we want to pay for playful performance</p>
+      <p begin="00:08:22.980" end="00:08:26.740">change the default...the binding from being one way to one-time you</p>
+      <p begin="00:08:26.740" end="00:08:34.600">still use one-way just need to be explicit opt into the to work is going to go on for that.</p>
+      <p begin="00:08:34.600" end="00:08:42.490">Let's take a look at what it takes to use text bind in my in your...</p>
+      <p begin="00:08:42.490" end="00:08:46.610">Should switch...</p>
+      <p begin="00:08:46.610" end="00:08:50.420">So, what I've got here is?</p>
+      <p begin="00:08:50.420" end="00:08:55.120">A very simple application I've got a page with text blocking it and</p>
+      <p begin="00:08:55.120" end="00:08:58.270">...behind I've got to fields</p>
+      <p begin="00:08:58.270" end="00:09:03.570">...code data and a model field ...model.</p>
+      <p begin="00:09:03.570" end="00:09:08.760">Not model has a bunch of different properties over here it's the same...using the</p>
+      <p begin="00:09:08.760" end="00:09:11.160">...sample.</p>
+      <p begin="00:09:11.160" end="00:09:15.920">So, to actually use x bind what I can do is just do.</p>
+      <p begin="00:09:15.920" end="00:09:23.200">X combined.</p>
+      <p begin="00:09:23.200" end="00:09:26.660">If I run it that's now going to find that data field and</p>
+      <p begin="00:09:26.660" end="00:09:33.510">...combine to that also means you combine to fields.</p>
+      <p begin="00:09:33.510" end="00:09:37.150">Very simple kind of instance data mining we support all</p>
+      <p begin="00:09:37.150" end="00:09:50.680">the same expression types pretty much you can do and classic binding so I could do.</p>
+      <p begin="00:09:50.680" end="00:09:54.790">If I do string proper line pc and now build.</p>
+      <p begin="00:09:54.790" end="00:09:58.430">What I'm actually getting is a compiler here saying</p>
+      <p begin="00:09:58.430" end="00:10:01.960">...confines string pepperdine pc that's because I</p>
+      <p begin="00:10:01.960" end="00:10:09.040">misspell the w so capitalized again build?</p>
+      <p begin="00:10:09.040" end="00:10:13.410">So, that's an instance of the...validation we do is...compilers note</p>
+      <p begin="00:10:13.410" end="00:10:16.390">...that...time rather than at runtime.</p>
+      <p begin="00:10:17.440" end="00:10:22.940">Chance of you running into problems runtime now significantly less.</p>
+      <p begin="00:10:22.940" end="00:10:27.750">...here is a demo app this is an early drop off</p>
+      <p begin="00:10:27.750" end="00:10:31.460">demolition sdk those got published today about to pm</p>
+      <p begin="00:10:31.460" end="00:10:38.330">so you go download it will be black is grossly different menu but all the rest of is exactly the same.</p>
+      <p begin="00:10:38.330" end="00:10:45.150">So, what I've got in here is a set of different bindings so one-time binding pretty obvious</p>
+      <p begin="00:10:45.150" end="00:10:50.130">we'll read the field...fields properties dependency properties he said</p>
+      <p begin="00:10:50.130" end="00:10:54.050">one-time we don't do any change detection kind of works pretty much...</p>
+      <p begin="00:10:55.100" end="00:10:58.180">One-way binding I can still trying to one-way binding</p>
+      <p begin="00:10:58.180" end="00:11:02.000">...field or a property that doesn't have I and pc on</p>
+      <p begin="00:11:02.000" end="00:11:07.530">...class and in those cases were not going to get the changes will get the changes if you</p>
+      <p begin="00:11:07.530" end="00:11:12.890">implement identify property changed or ...property so...have here is</p>
+      <p begin="00:11:12.890" end="00:11:20.050">...fields as I update the data model my ui updates respectively.</p>
+      <p begin="00:11:20.050" end="00:11:24.110">We also support index path bindings so this if you want to bind to a particular</p>
+      <p begin="00:11:24.110" end="00:11:27.010">member of a collection it's not so much for list scenarios but like hey I</p>
+      <p begin="00:11:27.010" end="00:11:32.670">...find that's the first customer or those kind of scenarios then I can use.</p>
+      <p begin="00:11:32.670" end="00:11:41.660">Square brackets and integer to index into that particular collection.</p>
+      <p begin="00:11:41.660" end="00:11:46.340">...a recent values binding to.</p>
+      <p begin="00:11:46.340" end="00:11:49.550">Textbooks little bit boring combine just about any control in a</p>
+      <p begin="00:11:49.550" end="00:11:53.790">...anyway so, what I have here is an to a bindings these</p>
+      <p begin="00:11:53.790" end="00:11:57.030">...to the model as I just this slider</p>
+      <p begin="00:11:57.030" end="00:12:03.080">it will adjust the other one that's bound to the same model property similarly for this guy</p>
+      <p begin="00:12:04.320" end="00:12:07.610">...also got like other elements down here the bound to the same thing</p>
+      <p begin="00:12:07.610" end="00:12:09.800">...bindings pretty much the same syntax</p>
+      <p begin="00:12:09.800" end="00:12:14.540">...before so I have a toggle switch here it's...property and then I'm</p>
+      <p begin="00:12:14.540" end="00:12:28.080">binding the visibility ...this property to that so if I go to?</p>
+      <p begin="00:12:28.080" end="00:12:30.690">...basic tests sorry...moi.</p>
+      <p begin="00:12:36.650" end="00:12:40.240">So, we can look at this I have a toggle switch...bound</p>
+      <p begin="00:12:40.240" end="00:12:46.390">...boolean property with change educational model you don't...mpc whatever is just kind of</p>
+      <p begin="00:12:46.390" end="00:12:52.520">...purposes name that way so each binding the visibility same</p>
+      <p begin="00:12:52.520" end="00:12:56.840">...kind of do before same problem that the model</p>
+      <p begin="00:12:56.840" end="00:13:00.890">is boolean property visibility is em type how do I get</p>
+      <p begin="00:13:00.890" end="00:13:05.990">...to in them so you need to converter so we support exactly the same converters using I</p>
+      <p begin="00:13:05.990" end="00:13:12.400">value converter...classic binding if you're familiar with...data binding...nothing here that's kind of really</p>
+      <p begin="00:13:12.400" end="00:13:20.110">new and revolutionary just a different squiggles just a different pining expression the beginning.</p>
+      <p begin="00:13:20.110" end="00:13:24.530">Showing some other stuff in this markup.</p>
+      <p begin="00:13:24.530" end="00:13:26.350">If I want to binds to</p>
+      <p begin="00:13:26.350" end="00:13:30.700">another element in my page with classic binding you would</p>
+      <p begin="00:13:31.980" end="00:13:36.190">...and binding and specify the particular element length.</p>
+      <p begin="00:13:36.190" end="00:13:40.400">Compile binding because we using the page or can</p>
+      <p begin="00:13:40.400" end="00:13:43.870">use control has a data context if you name</p>
+      <p begin="00:13:43.870" end="00:13:50.090">and element as a field generated in there you could bind directly to element...field so in this case I</p>
+      <p begin="00:13:50.090" end="00:13:55.150">combine...one just because that's actually a great on that's named it gets field</p>
+      <p begin="00:13:55.150" end="00:14:03.240">...my page...buying directly to it so here's an example using index...property?</p>
+      <p begin="00:14:03.240" end="00:14:07.650">I've got a local textbooks I bind a bunch of other things to that so</p>
+      <p begin="00:14:07.650" end="00:14:12.320">for instance this expression...csharp doesn't work with cplus-plus could</p>
+      <p begin="00:14:12.320" end="00:14:18.820">...links isn't a property there but in this case when it</p>
+      <p begin="00:14:18.820" end="00:14:24.650">My hello world text you'll see the counter down...change along with it.</p>
+      <p begin="00:14:24.650" end="00:14:27.830">And, how that's working is that's bound to text property of</p>
+      <p begin="00:14:27.830" end="00:14:31.870">that local textbooks in using the link property?</p>
+      <p begin="00:14:31.870" end="00:14:34.050">And, because the text is a</p>
+      <p begin="00:14:34.050" end="00:14:41.000">...property that...change notification ...causes to evaluate the rest expression as well.</p>
+      <p begin="00:14:41.000" end="00:14:47.890">So, it's kind of simple bindings we can also buying things like a...column attach properties we</p>
+      <p begin="00:14:47.890" end="00:14:51.830">...to attach properties so in this case this is actually</p>
+      <p begin="00:14:51.830" end="00:14:56.090">...a grid with ten columns defined and as I just</p>
+      <p begin="00:14:56.090" end="00:14:59.620">...sliders adjusting the ...for</p>
+      <p begin="00:14:59.620" end="00:15:05.190">those elements this image has...to transform on it so,</p>
+      <p begin="00:15:05.190" end="00:15:10.290">I combinedproperties with inside the...the rent...</p>
+      <p begin="00:15:10.290" end="00:15:13.500">...translate a rotating translate</p>
+      <p begin="00:15:13.500" end="00:15:19.090">...to update values you'll see that moves...that moves.</p>
+      <p begin="00:15:19.090" end="00:15:24.650">We also do target null value and fullback value target</p>
+      <p begin="00:15:24.650" end="00:15:29.560">...value is when the leaf node of...binding expression is null so in this case</p>
+      <p begin="00:15:29.560" end="00:15:35.000">if first name was null than and specified a target no value that</p>
+      <p begin="00:15:35.000" end="00:15:40.990">would get used in place for the binding fullback value is used in other parts of the binding</p>
+      <p begin="00:15:40.990" end="00:15:45.010">...return null were little bit more sensitive to errors</p>
+      <p begin="00:15:45.010" end="00:15:47.510">and classic binding you'll...get exception</p>
+      <p begin="00:15:47.510" end="00:15:53.710">you can breakthroughs see the code step through and figure out what happens were little bit more.</p>
+      <p begin="00:15:53.710" end="00:15:59.640">Debug...I should say is probably...putting.</p>
+      <p begin="00:15:59.640" end="00:16:13.950">All right I think that's something I wanted to show there.</p>
+      <p begin="00:16:13.950" end="00:16:18.340">So, considerations for data binding using x bind.</p>
+      <p begin="00:16:18.340" end="00:16:20.780">Data conversion.</p>
+      <p begin="00:16:20.780" end="00:16:26.480">Will implicitly converts to and from string so, if you're binding to binding a text</p>
+      <p begin="00:16:26.480" end="00:16:31.930">block ...by not to ensure failed automatic cool to string for you?</p>
+      <p begin="00:16:31.930" end="00:16:36.640">And, the other direction we have...and api to use assemble parsers logic</p>
+      <p begin="00:16:36.640" end="00:16:41.570">...to objects...target...value fullback value</p>
+      <p begin="00:16:41.570" end="00:16:45.030">and using those on say a background property which needs to be a brush.</p>
+      <p begin="00:16:46.100" end="00:16:50.590">Then on...specify...but how do I do that...string the parser already supports</p>
+      <p begin="00:16:50.590" end="00:16:56.490">that that's how I can say my background is read so I can simply use read in the value here for x</p>
+      <p begin="00:16:56.490" end="00:17:00.610">buying fullback value...use that same...logic to translate that into solid color brush</p>
+      <p begin="00:17:00.610" end="00:17:05.890">for sagan you pound faa...whatever.</p>
+      <p begin="00:17:05.890" end="00:17:10.900">The case where you converters is when you can't do...directing code so we can do</p>
+      <p begin="00:17:10.900" end="00:17:15.270">widening conversions automatically or implicitly so you're binding and integer</p>
+      <p begin="00:17:15.270" end="00:17:19.270">to a value on the slider which is double that</p>
+      <p begin="00:17:19.270" end="00:17:23.699">...conversion...happens automatically...versa doesn't if</p>
+      <p begin="00:17:23.699" end="00:17:37.540">you want to use converter then you implement I value converter just as you would in classifying today.</p>
+      <p begin="00:17:37.540" end="00:17:40.650">For one-way and two-way bindings.</p>
+      <p begin="00:17:40.650" end="00:17:44.270">We listens change notifications if it's a property</p>
+      <p begin="00:17:44.270" end="00:17:48.340">in supports identify poppy change search parent class implements that.</p>
+      <p begin="00:17:48.340" end="00:17:52.650">Or if it's dependency property...one of the piece of infrastructure</p>
+      <p begin="00:17:52.650" end="00:17:57.740">...added in windows ten is a new api that you can register on object</p>
+      <p begin="00:17:57.740" end="00:18:01.640">...prepare for change certifications on any dependency property</p>
+      <p begin="00:18:01.640" end="00:18:05.540">...not just limited to once you define...go register for the</p>
+      <p begin="00:18:05.540" end="00:18:11.950">textbook text whatever that basically how we...due to a binding as well and,</p>
+      <p begin="00:18:11.950" end="00:18:15.340">if you're doing a index paths minding which binding into the collection</p>
+      <p begin="00:18:15.340" end="00:18:18.700">using square brackets will look for identify collection changed</p>
+      <p begin="00:18:18.700" end="00:18:22.720">...or items...vector.</p>
+      <p begin="00:18:22.720" end="00:18:29.430">So, if there's...collection changeswe'll go and redo the bindings that point.</p>
+      <p begin="00:18:29.430" end="00:18:34.290">Two-way binding the limitation there is that the property only you why I never was</p>
+      <p begin="00:18:34.290" end="00:18:35.860">...source of the target as long as for</p>
+      <p begin="00:18:35.860" end="00:18:40.610">confused that binding but he why property needs depend needs to be a dp</p>
+      <p begin="00:18:40.610" end="00:18:45.680">depends property we don't listen for events we just use the same depends property</p>
+      <p begin="00:18:45.680" end="00:18:50.680">change replication mechanism hook this up the one exception that we special case</p>
+      <p begin="00:18:50.680" end="00:18:55.310">...is the text property on textbooks in which case to keep the case kinda</p>
+      <p begin="00:18:55.310" end="00:19:00.240">same kind behaviors before we now listen to lost focus wait for that to occur before</p>
+      <p begin="00:19:00.240" end="00:19:10.690">...text property other than that it's very similar to classic binding.</p>
+      <p begin="00:19:10.690" end="00:19:16.060">another place words really common to do data binding is inside data template.</p>
+      <p begin="00:19:16.060" end="00:19:21.280">With pages and use controls we can use the type of the page...control as a basis</p>
+      <p begin="00:19:21.280" end="00:19:25.990">for our bindings for data template we need to know what type of item is data this</p>
+      <p begin="00:19:25.990" end="00:19:30.850">...going to be used with so what we've done is we've added a new attribute x</p>
+      <p begin="00:19:30.850" end="00:19:36.230">...data type on the...the template you can specify that data type</p>
+      <p begin="00:19:36.230" end="00:19:45.610">using the stand kind of xml name space decode name space mapping so in this case.</p>
+      <p begin="00:19:45.610" end="00:19:50.350">It's model maps to...maximal...map</p>
+      <p begin="00:19:50.350" end="00:19:56.240">...of...model ...just use I employee here it doesn't have to be</p>
+      <p begin="00:19:56.240" end="00:19:59.550">...interface component a type uone.</p>
+      <p begin="00:19:59.550" end="00:20:01.650">So, employees have a name so I can just now</p>
+      <p begin="00:20:01.650" end="00:20:10.110">...the name property in here and that's bound to the name of the employee.</p>
+      <p begin="00:20:10.110" end="00:20:14.020">It's pretty common with data templates to want to put them inside</p>
+      <p begin="00:20:14.020" end="00:20:17.180">...resource dictionary so I can be used in multiple places</p>
+      <p begin="00:20:17.180" end="00:20:21.490">in your application if you do that we need to have a place to go</p>
+      <p begin="00:20:21.490" end="00:20:24.570">stick the code jan for that data template.</p>
+      <p begin="00:20:24.570" end="00:20:27.380">So, this maxus that you need to do if you're using</p>
+      <p begin="00:20:27.380" end="00:20:30.200">the x bind inside of a data template inside</p>
+      <p begin="00:20:30.200" end="00:20:38.130">...resource dictionary first change is you need to give it a class in this case...my templates.</p>
+      <p begin="00:20:38.130" end="00:20:41.500">Just by adding excludes definition to.</p>
+      <p begin="00:20:41.500" end="00:20:43.210">Encode you need to create a</p>
+      <p begin="00:20:43.210" end="00:20:47.760">...class for that and then in the constructor that class</p>
+      <p begin="00:20:47.760" end="00:20:54.130">...into initialized component if you forget to do this ...happen is...runtime is not</p>
+      <p begin="00:20:54.130" end="00:20:56.630">...actually loaded the resource</p>
+      <p begin="00:20:56.630" end="00:20:59.510">...been one of quite a while trying to figure why is my part</p>
+      <p begin="00:20:59.510" end="00:21:04.290">my example blowing up at initialize component every time is because you haven't necessarily</p>
+      <p begin="00:21:04.290" end="00:21:11.670">...resources...speaking from experience of finding those problems.</p>
+      <p begin="00:21:11.670" end="00:21:14.070">Final thing is we need to have that</p>
+      <p begin="00:21:14.070" end="00:21:18.140">...cold so rather than loading the resource dictionary with a</p>
+      <p begin="00:21:18.140" end="00:21:19.490">source.</p>
+      <p begin="00:21:19.490" end="00:21:21.290">The filename I need to specify</p>
+      <p begin="00:21:21.290" end="00:21:23.800">...class so in this case my templates.</p>
+      <p begin="00:21:24.960" end="00:21:27.050">That...course...get called that</p>
+      <p begin="00:21:27.050" end="00:21:34.450">...initialize component...load resources and dual hookup force.</p>
+      <p begin="00:21:34.450" end="00:21:38.240">So, flipping back let's take a look at some examples.</p>
+      <p begin="00:21:39.410" end="00:21:49.930">Of data templates.</p>
+      <p begin="00:21:49.930" end="00:21:54.630">So, what have in this case is a series of different</p>
+      <p begin="00:21:54.630" end="00:21:56.630">list scenarios so I've got a list</p>
+      <p begin="00:21:56.630" end="00:22:00.430">...with a data temple inline the only thing I need to change</p>
+      <p begin="00:22:00.430" end="00:22:04.100">...classic binding is adding the x data type</p>
+      <p begin="00:22:05.180" end="00:22:14.370">...work-up my slide demo from and I combine to name property?</p>
+      <p begin="00:22:14.370" end="00:22:22.340">For...a bit yes...better.</p>
+      <p begin="00:22:22.340" end="00:22:28.050">If I want to do a data template inline I can.</p>
+      <p begin="00:22:28.050" end="00:22:32.820">...to add the data type there I can also refer to</p>
+      <p begin="00:22:32.820" end="00:22:40.160">...and that's used in here.</p>
+      <p begin="00:22:40.160" end="00:22:43.580">Diverge...will static resources I would normally</p>
+      <p begin="00:22:43.580" end="00:22:48.400">...resource I can also do it to...resources defined a template file</p>
+      <p begin="00:22:48.400" end="00:22:53.710">...my template example looks almost exactly the same as always just have now</p>
+      <p begin="00:22:53.710" end="00:22:57.980">got x class statement and now using explained in here.</p>
+      <p begin="00:22:57.980" end="00:23:20.680">My...behind for it all I have is that partial class definition calling into initialized component.</p>
+      <p begin="00:23:20.680" end="00:23:25.230">Listen this...templates kind of all those list views hooked together you'd expect</p>
+      <p begin="00:23:26.880" end="00:23:29.780">...collection changes the bindings links will update.</p>
+      <p begin="00:23:30.940" end="00:23:39.330">One of the thing to dimension I'll show you actually encode.</p>
+      <p begin="00:23:39.330" end="00:23:42.070">Data templates are not just used in list scenarios you can also</p>
+      <p begin="00:23:42.070" end="00:23:46.920">use them as a content template so in this case I've got a button and I</p>
+      <p begin="00:23:46.920" end="00:23:53.450">specify that content template to be the same a template those using...list...</p>
+      <p begin="00:23:53.450" end="00:23:55.330">And, now forts content I have an index</p>
+      <p begin="00:23:55.330" end="00:24:00.070">...binding into the employees collection so that is yielding</p>
+      <p begin="00:24:00.070" end="00:24:01.860">and I employee and.</p>
+      <p begin="00:24:03.270" end="00:24:18.360">That's being used as the content template for the control.</p>
+      <p begin="00:24:18.360" end="00:24:23.520">So, far we've talked about is functionality kinds is brings us up to parity between</p>
+      <p begin="00:24:23.520" end="00:24:26.440">x...what I can do in classic binding.</p>
+      <p begin="00:24:26.440" end="00:24:30.360">But, we...to go further than that so the first thing I won't talk about</p>
+      <p begin="00:24:30.360" end="00:24:32.940">is x face.</p>
+      <p begin="00:24:32.940" end="00:24:39.120">So, if you developing applications for a tablet or something kind of slow like this guy</p>
+      <p begin="00:24:39.120" end="00:24:47.430">just turned off...have to...again.</p>
+      <p begin="00:24:47.430" end="00:24:53.580">Sure, the second then for a list scenarios what we have what we do is we</p>
+      <p begin="00:24:53.580" end="00:24:56.980">...window over a much larger surface so when you</p>
+      <p begin="00:24:56.980" end="00:25:01.820">...with touch we moving that surface that happens kind of lower-level the</p>
+      <p begin="00:25:01.820" end="00:25:06.700">...manipulative...the application is responsible for is rendering items on</p>
+      <p begin="00:25:06.700" end="00:25:11.130">that surface...of...like a conveyor belt and window is going to put the items on that</p>
+      <p begin="00:25:11.130" end="00:25:15.820">...fast enough that when it comes past window indivisible everything is there in the</p>
+      <p begin="00:25:15.820" end="00:25:21.750">right place however if your machine is kind of slow than as we recycle elements</p>
+      <p begin="00:25:21.750" end="00:25:26.670">and taken from one-off kind of from the and that's no longer used on to the end is used</p>
+      <p begin="00:25:26.670" end="00:25:29.720">we'll do that fast enough to keep up with the speex depending.</p>
+      <p begin="00:25:30.770" end="00:25:33.980">On the machines we can't necessarily do that.</p>
+      <p begin="00:25:33.980" end="00:25:38.120">So, in windows three-point-one we introduced a feature called the can-you container</p>
+      <p begin="00:25:38.120" end="00:25:44.250">content changing event this is an event on list view you get called back for each</p>
+      <p begin="00:25:44.250" end="00:25:50.420">item allows you to progressively...the...item templates.</p>
+      <p begin="00:25:50.420" end="00:25:55.170">Really powerful feature...solves use a problem...do it you have to write code</p>
+      <p begin="00:25:55.170" end="00:25:59.020">...code...concludes the use of data binding.</p>
+      <p begin="00:25:59.020" end="00:26:02.890">So, what we do what we've done with x bind and...new feature of x</p>
+      <p begin="00:26:02.890" end="00:26:15.240">phase this allows us to do it declarative lee rather than implicitly through code?</p>
+      <p begin="00:26:15.240" end="00:26:17.450">So,...here is.</p>
+      <p begin="00:26:17.450" end="00:26:20.180">...template.</p>
+      <p begin="00:26:20.180" end="00:26:22.010">Couple textbooks and textbooks,</p>
+      <p begin="00:26:22.010" end="00:26:27.450">textbooks and it is a small example ability demo shown...and</p>
+      <p begin="00:26:27.450" end="00:26:31.290">...is prioritize what I show in order so I want to display</p>
+      <p begin="00:26:31.290" end="00:26:35.150">name to all we show so I'm not given...face of left that</p>
+      <p begin="00:26:35.150" end="00:26:41.730">is implicit ...it phase zero...zero automatically get bound automatically</p>
+      <p begin="00:26:41.730" end="00:26:45.270">shown but showing the date is less important impending fast</p>
+      <p begin="00:26:45.270" end="00:26:49.970">...filename is what really what I care about so I can delay that...what I've done is</p>
+      <p begin="00:26:49.970" end="00:26:54.790">I've specified when additional attribute...convene phase one.</p>
+      <p begin="00:26:54.790" end="00:27:00.050">What that means is that field or that control will be hidden until the</p>
+      <p begin="00:27:00.050" end="00:27:04.210">phase comes into play...we updated we hide it so</p>
+      <p begin="00:27:04.210" end="00:27:09.700">...we're recycling elements we don't have stale data shown interview...</p>
+      <p begin="00:27:09.700" end="00:27:13.270">It's probably best illustrated when example.</p>
+      <p begin="00:27:13.270" end="00:27:18.130">You switch to the calmer.</p>
+      <p begin="00:27:18.130" end="00:27:31.490">...to login again.</p>
+      <p begin="00:27:31.490" end="00:27:36.850">So, this will be is a to...on core to is a betrayal atom device</p>
+      <p begin="00:27:36.850" end="00:27:42.030">optimize...battery life rather than cpu performance so what I have here</p>
+      <p begin="00:27:42.030" end="00:27:44.200">is running yes.</p>
+      <p begin="00:27:44.200" end="00:27:49.630">We...what I have here is a list view with a bunch of pictures</p>
+      <p begin="00:27:49.630" end="00:27:53.330">of downloaded...</p>
+      <p begin="00:27:53.330" end="00:27:57.520">Each the item has a couple different textbooks in there and the image</p>
+      <p begin="00:27:57.520" end="00:28:00.580">...using classic bindings of append fast.</p>
+      <p begin="00:28:00.580" end="00:28:07.500">...see is we quite quickly end up in a situation where can't keep up and we kind of end up in white?</p>
+      <p begin="00:28:07.500" end="00:28:10.680">Not the best user experience.</p>
+      <p begin="00:28:10.680" end="00:28:13.010">We can change that using x bind.</p>
+      <p begin="00:28:13.010" end="00:28:16.410">A little bit little bit betterwould say well hang on to make</p>
+      <p begin="00:28:16.410" end="00:28:19.670">...so much faster isn't going to solve all</p>
+      <p begin="00:28:19.670" end="00:28:25.800">...all...hunger will piece it makes the binding part faster but it doesn't make the setting a</p>
+      <p begin="00:28:25.800" end="00:28:30.340">...faster and that's the part is actually really slow here you would think setting</p>
+      <p begin="00:28:30.340" end="00:28:35.280">...is actually pretty easy once you start having all international everything else and text is a lot more work</p>
+      <p begin="00:28:35.280" end="00:28:40.310">...is quite slow so what I can do is switch over to x</p>
+      <p begin="00:28:40.310" end="00:28:44.940">buying the next phase if I pan in this example again what you'll see is when</p>
+      <p begin="00:28:44.940" end="00:28:49.670">I go-fast we end up just showing the first-line of the item?</p>
+      <p begin="00:28:49.670" end="00:28:53.910">Which is its title and then if we have time we'll go...the other pieces so</p>
+      <p begin="00:28:53.910" end="00:28:58.950">...progressively come in...have...one item their...sometimes</p>
+      <p begin="00:28:58.950" end="00:29:05.580">...two-a-three...image is the final piece of that puzzle so that's</p>
+      <p begin="00:29:05.580" end="00:29:14.600">although and...device you can find the same kind of thing on phones?</p>
+      <p begin="00:29:14.600" end="00:29:18.000">...like...so x phase is</p>
+      <p begin="00:29:18.000" end="00:29:25.150">what allows me to delay progressively incrementally...the item template.</p>
+      <p begin="00:29:25.150" end="00:29:29.380">Some guidance for this technically there is no limit on how many faces you could use</p>
+      <p begin="00:29:29.380" end="00:29:32.750">but I recommend keeping it to handful if you do more than that it's</p>
+      <p begin="00:29:32.750" end="00:29:38.730">...good generally spend more work figuring out the phases and actually doing work.</p>
+      <p begin="00:29:38.730" end="00:29:42.100">We still...ccc event so if you want you can hook</p>
+      <p begin="00:29:42.100" end="00:29:47.830">...up as well into your logic in addition to the binding work.</p>
+      <p begin="00:29:47.830" end="00:29:53.200">And, the ccc...hooked up will fired of first for each phase so you get called for</p>
+      <p begin="00:29:53.200" end="00:29:56.710">...zero then phase one the phrase to...</p>
+      <p begin="00:29:56.710" end="00:30:01.290">The phase numbers in use with...can't phase don't need to be</p>
+      <p begin="00:30:01.290" end="00:30:07.550">continuous I could have won ten thousand but, again, keep it...handful but,</p>
+      <p begin="00:30:07.550" end="00:30:11.490">it can it doesn't mean that you can leave adapt one or two if you need to ccc</p>
+      <p begin="00:30:11.490" end="00:30:16.170">working between for instance between a particular phases.</p>
+      <p begin="00:30:16.170" end="00:30:18.150">In terms of how many faces you need for your</p>
+      <p begin="00:30:18.150" end="00:30:21.810">app that's really going to come down to your app what you're kind</p>
+      <p begin="00:30:21.810" end="00:30:25.770">...binding to pixel density to kind of control amount...work</p>
+      <p begin="00:30:25.770" end="00:30:30.680">...to...those different pieces so really what...need to do is try it get your</p>
+      <p begin="00:30:30.680" end="00:30:37.040">hands-on a slow device the sixty...a great for that kind of thing and try it</p>
+      <p begin="00:30:37.040" end="00:30:39.390">...profile it used to...use</p>
+      <p begin="00:30:39.390" end="00:30:45.040">...profiling capabilities visual studio to figure out what's actually taking time and</p>
+      <p begin="00:30:45.040" end="00:30:50.180">optimize that.</p>
+      <p begin="00:30:50.180" end="00:30:53.520">The other big feature we've added for x combines</p>
+      <p begin="00:30:53.520" end="00:30:59.830">which is new is the ability to bind events...why we haven't done this before.</p>
+      <p begin="00:30:59.830" end="00:31:04.580">Traditionally with events if I have a button here with...method...employee needs to</p>
+      <p begin="00:31:04.580" end="00:31:09.480">be method on my code behind...we can now do with x combined is instead</p>
+      <p begin="00:31:09.480" end="00:31:10.730">...complex combined and</p>
+      <p begin="00:31:10.730" end="00:31:17.050">then a binding expression and now bind to wherever that expression the needs to.</p>
+      <p begin="00:31:17.050" end="00:31:22.620">So, whatever method that is inside model will if it doesn't need to have any parameters</p>
+      <p begin="00:31:22.620" end="00:31:27.120">if we'll get a parameter will bind parameters functions or it needs to match the</p>
+      <p begin="00:31:27.120" end="00:31:33.950">...signature this cases button click so it's sender and routed</p>
+      <p begin="00:31:33.950" end="00:31:38.890">Alternative you can also use a signature that has base types of the event</p>
+      <p begin="00:31:38.890" end="00:31:42.990">we can call that directly so in this case of may...used object rather</p>
+      <p begin="00:31:42.990" end="00:31:48.640">...event...you can use whatever base or interface classes you need.</p>
+      <p begin="00:31:48.640" end="00:31:53.430">A couple, couple limitations here we don't support overloaded methods try to figure out</p>
+      <p begin="00:31:53.430" end="00:31:58.270">from...of admit methods which is the right one for event we say pay which can look for poke</p>
+      <p begin="00:31:58.270" end="00:32:02.500">...one version of poker.</p>
+      <p begin="00:32:02.500" end="00:32:05.810">I can do this all events not just click.</p>
+      <p begin="00:32:05.810" end="00:32:09.610">And, if you're...mgm developer it can replace some of the instances</p>
+      <p begin="00:32:09.610" end="00:32:14.870">the uses of I command and event command behavior.</p>
+      <p begin="00:32:14.870" end="00:32:17.220">I can use on any event...to use and</p>
+      <p begin="00:32:17.220" end="00:32:22.870">event command the one thing to consider is if you're using I command buttons.</p>
+      <p begin="00:32:22.870" end="00:32:26.550">That will look at the can execute decide whether to enable</p>
+      <p begin="00:32:26.550" end="00:32:30.530">...button you can just do...as a separate binding instead if you</p>
+      <p begin="00:32:30.530" end="00:32:36.160">need that we also don't have a command parameter but we passing the object you can use</p>
+      <p begin="00:32:36.160" end="00:32:40.850">...tag of other touch properties on there if you need data for that particular item</p>
+      <p begin="00:32:46.190" end="00:33:06.200">So, taking a quick the switch over to my demo for this.</p>
+      <p begin="00:33:06.200" end="00:33:10.190">So,...my event bindings what I have here is actually it's</p>
+      <p begin="00:33:10.190" end="00:33:15.720">...the code first.</p>
+      <p begin="00:33:15.720" end="00:33:17.240">What I have is a</p>
+      <p begin="00:33:17.240" end="00:33:21.740">...kind of a click with regular arguments no arguments base</p>
+      <p begin="00:33:21.740" end="00:33:28.130">arguments these are just methods on my page it's not kind-of so exciting that way?</p>
+      <p begin="00:33:28.130" end="00:33:32.920">But, I can...buying to them the using x bind as I expect</p>
+      <p begin="00:33:32.920" end="00:33:37.000">not limited to methods on my page I combine to any</p>
+      <p begin="00:33:37.000" end="00:33:43.090">...model properties I want in this case index path into a collection.</p>
+      <p begin="00:33:43.090" end="00:33:47.230">What is becomes particularly interesting useful is in</p>
+      <p begin="00:33:47.230" end="00:33:53.010">...scenarios so in this case I have my data template for employee and,</p>
+      <p begin="00:33:53.010" end="00:33:57.550">my...a button here...going to call...this defined on</p>
+      <p begin="00:33:57.550" end="00:34:07.360">...employee so if I run this guy?</p>
+      <p begin="00:34:07.360" end="00:34:09.060">...binding what we'll see is</p>
+      <p begin="00:34:09.060" end="00:34:13.510">...set of different employees some are individual contributors and some</p>
+      <p begin="00:34:13.510" end="00:34:18.430">...I think ryan is an individual...says he's been poked</p>
+      <p begin="00:34:18.430" end="00:34:23.090">...implementation on employee was have classes that are manager also</p>
+      <p begin="00:34:23.090" end="00:34:25.980">and implements employee so in this case quentin is</p>
+      <p begin="00:34:25.980" end="00:34:30.670">...manager...employees of quentin rather than just quentin itself so that's two different</p>
+      <p begin="00:34:30.670" end="00:34:37.160">...methods depending on which item and binding to in the collection id</p>
+      <p begin="00:34:37.160" end="00:34:38.770">...because I was trying to figure out what</p>
+      <p begin="00:34:38.770" end="00:34:58.760">...the words to use but they all kind of ended up being a hr violations or problem?</p>
+      <p begin="00:34:58.760" end="00:35:05.280">X...code generation the initialization...bindings is going to be different from</p>
+      <p begin="00:35:05.280" end="00:35:11.420">...classic...what we've done is we've created a new event called loading was already</p>
+      <p begin="00:35:11.420" end="00:35:16.040">loaded...event but loaded occurs after the initial measure and</p>
+      <p begin="00:35:16.040" end="00:35:19.980">arrange passes occurred loading occurs before that and we use</p>
+      <p begin="00:35:19.980" end="00:35:23.640">...kind of lost best point to go and in</p>
+      <p begin="00:35:23.640" end="00:35:28.190">update a bindings without having to go redo the measurement</p>
+      <p begin="00:35:28.190" end="00:35:34.010">would occur if I did afterwards again so implicitly we'll call bindings initialize as part of</p>
+      <p begin="00:35:34.010" end="00:35:39.600">loading event if you have your own data and you you-can call initialize yourself initialize</p>
+      <p begin="00:35:39.600" end="00:35:43.580">is guarded...call...as many times you want it...you actually do the work once?</p>
+      <p begin="00:35:44.590" end="00:35:46.820">Now if I'm making asynchronous</p>
+      <p begin="00:35:46.820" end="00:35:51.580">calls the file system or pulling down data from the web icon guarantees I'm going to</p>
+      <p begin="00:35:51.580" end="00:35:57.400">get a data in time before that loading event occurs so instead what I can do is I can use a method off</p>
+      <p begin="00:35:57.400" end="00:36:02.530">the bindings object bindings property that we...to your code that has a method that has the</p>
+      <p begin="00:36:02.530" end="00:36:07.060">initialize update and stop tracking if I call update that will update</p>
+      <p begin="00:36:07.060" end="00:36:12.220">...bindings including one-time bindings so after the</p>
+      <p begin="00:36:12.220" end="00:36:17.590">...data you can call update and that will refresh...bindings for that particular scope.</p>
+      <p begin="00:36:17.590" end="00:36:20.860">If you if for some unknown reason you're doing a whole bunch of work you could change a whole bunch of</p>
+      <p begin="00:36:20.860" end="00:36:25.370">properties and you don't want the two-way the one-time.</p>
+      <p begin="00:36:26.660" end="00:36:31.920">One way and two-way bindings to...that point you kind of want to delay the binding work you</p>
+      <p begin="00:36:31.920" end="00:36:35.690">can call stop tracking on the bindings object that will pours...tracking.</p>
+      <p begin="00:36:36.820" end="00:36:37.550">...when you're ready</p>
+      <p begin="00:36:37.550" end="00:36:49.810">...bindings update again and that will force...forcefully updates all bindings and page.</p>
+      <p begin="00:36:49.810" end="00:36:55.120">Another thing to consider is one-way binding is more expensive than one-time but we have to</p>
+      <p begin="00:36:55.120" end="00:36:59.830">create listener objects and hook up to line...</p>
+      <p begin="00:36:59.830" end="00:37:06.810">If you-know-who say...you could use...displays all the stuff for an employee if, you know,</p>
+      <p begin="00:37:06.810" end="00:37:11.330">the data is going to change the employee then what you could do is do one-time bindings</p>
+      <p begin="00:37:11.330" end="00:37:16.540">all throughout that and if the data has changed...bindings...that point...all</p>
+      <p begin="00:37:16.540" end="00:37:20.830">...scripting...so sometimes that can be actually more efficient than</p>
+      <p begin="00:37:20.830" end="00:37:24.420">having a whole bunch of change listeners listening and poking around and every time</p>
+      <p begin="00:37:24.420" end="00:37:32.060">...past changes you can actually...update in one particular place similarly for lists?</p>
+      <p begin="00:37:32.060" end="00:37:37.120">If I if I was doing...with the files and point of the file system.</p>
+      <p begin="00:37:37.120" end="00:37:40.050">File system doesn't change very much...unlikely that the</p>
+      <p begin="00:37:40.050" end="00:37:44.310">...will changes more likely if something happens...going to deleted I'm going</p>
+      <p begin="00:37:44.310" end="00:37:50.400">...we need to replace more than one binding on that if I...buying if I doone-way binding</p>
+      <p begin="00:37:50.400" end="00:37:54.920">...listening to every property...every item there that's an awful lot of change list is going on</p>
+      <p begin="00:37:54.920" end="00:37:58.720">something is going to happen very frequently the other thing you could consider there is</p>
+      <p begin="00:37:58.720" end="00:38:03.560">rather firing granular changes for individual properties fire change for the item</p>
+      <p begin="00:38:03.560" end="00:38:08.080">as a whole using identify collection changed and then refresh</p>
+      <p begin="00:38:08.080" end="00:38:14.710">that will enforce refresher the entire object.</p>
+      <p begin="00:38:14.710" end="00:38:18.280">Not all the binding paths need to support change notifications survivor one-time but</p>
+      <p begin="00:38:18.280" end="00:38:22.350">...one-way binding for every node in that we will look to see</p>
+      <p begin="00:38:22.350" end="00:38:24.840">whether to dependency property or implements</p>
+      <p begin="00:38:24.840" end="00:38:29.670">identify property changed it does great will register if we don't it</p>
+      <p begin="00:38:29.670" end="00:38:37.710">doesn't matter as long as one part does and that's where that's what you care about the listening.</p>
+      <p begin="00:38:37.710" end="00:38:44.040">Final one is a little bit kind of complicates explain.</p>
+      <p begin="00:38:44.040" end="00:38:48.970">We have the binding scopes that's like a page use control data template.</p>
+      <p begin="00:38:48.970" end="00:38:51.860">As...processing this...we do is we build-up a graph of</p>
+      <p begin="00:38:51.860" end="00:38:56.100">all binding expressions and we process those as a whole so if I</p>
+      <p begin="00:38:56.100" end="00:39:01.720">in this case I have two control if I to controls one bound to first in property one down to lasting</p>
+      <p begin="00:39:01.720" end="00:39:06.450">property and both share along complex finding path then for the model</p>
+      <p begin="00:39:06.450" end="00:39:11.500">the manager prop the reports oc...index into that those are shared and common</p>
+      <p begin="00:39:11.500" end="00:39:15.840">between them soldier generate one function for each of those steps and then it's only with</p>
+      <p begin="00:39:15.840" end="00:39:19.550">things divergent where you actually get extra code generated a pretty</p>
+      <p begin="00:39:19.550" end="00:39:29.530">efficient sharing the binding expressions between multiple bindings within that same scope.</p>
+      <p begin="00:39:29.530" end="00:39:41.300">So, let's have a look at what we're doing under the hood ...</p>
+      <p begin="00:39:53.780" end="00:40:08.710">If I go back and I taint change this just to be say hello world.</p>
+      <p begin="00:40:08.710" end="00:40:13.980">And, I build this guy.</p>
+      <p begin="00:40:13.980" end="00:40:17.320">We now do is drill into the code that's generated</p>
+      <p begin="00:40:17.320" end="00:40:22.630">for that so we generate to files a gps energy to</p>
+      <p begin="00:40:22.630" end="00:40:29.160">icy doi happens in the first phase of compilation that's generally different teller sense if</p>
+      <p begin="00:40:29.160" end="00:40:33.290">you're apt compile the geo cs we can build the second phase of</p>
+      <p begin="00:40:33.290" end="00:40:38.820">the compilation and that relies on being able...data that you creating the first</p>
+      <p begin="00:40:38.820" end="00:40:45.430">...public data from the first phase and reflector so in this case it looks very similar</p>
+      <p begin="00:40:45.430" end="00:40:50.240">...did before one change we've made for windows ten is we used to use just</p>
+      <p begin="00:40:50.240" end="00:40:55.160">...connect method for hooking up events we now use it for hooking up names so previously we used</p>
+      <p begin="00:40:55.160" end="00:40:59.480">...inside of initialize component will be fine names</p>
+      <p begin="00:40:59.480" end="00:41:04.250">...controls with change that to using a connect and connection id because find name</p>
+      <p begin="00:41:04.250" end="00:41:07.300">volta tree walk that's expensive example it's much faster</p>
+      <p begin="00:41:07.300" end="00:41:13.640">have the runtime call back into the code and say hey here's a textbook...and slider here's whatever.</p>
+      <p begin="00:41:13.640" end="00:41:17.380">So, that's kind of what's going on in the most basic case now if I change this</p>
+      <p begin="00:41:17.380" end="00:41:24.490">to being x combined.</p>
+      <p begin="00:41:33.350" end="00:41:38.420">I just named I just change name sorry.</p>
+      <p begin="00:41:38.420" end="00:41:46.400">Yeah, no, I hate typing onstage during demos.</p>
+      <p begin="00:41:46.400" end="00:41:49.960">Thank you.</p>
+      <p begin="00:42:06.320" end="00:42:07.580">Yes.</p>
+      <p begin="00:42:07.580" end="00:42:11.540">We should now see when I expand this guy...main page</p>
+      <p begin="00:42:11.540" end="00:42:18.250">...quite a bit more stuff so we've now got a property in your</p>
+      <p begin="00:42:18.250" end="00:42:22.980">page that's fine ...to do-do-do-do bindings.</p>
+      <p begin="00:42:25.000" end="00:42:28.660">That's bindings object you-can call initialize everything else off</p>
+      <p begin="00:42:28.660" end="00:42:33.500">...type of this interface we then generate a class here the</p>
+      <p begin="00:42:33.500" end="00:42:38.810">implements the interface this is where all the logic for...</p>
+      <p begin="00:42:38.810" end="00:42:44.200">occurs so in this class what we'll see is here's our initialize</p>
+      <p begin="00:42:44.200" end="00:42:49.720">...update are stop tracking methods we have a field for each control within a bank buying</p>
+      <p begin="00:42:49.720" end="00:42:55.410">...and then we have a series of update methods so for each.</p>
+      <p begin="00:42:55.410" end="00:43:00.320">Binding path node in that binding scope will great create and update method so</p>
+      <p begin="00:43:00.320" end="00:43:04.850">...underscores for the...and all I used was data in this case so it</p>
+      <p begin="00:43:04.850" end="00:43:07.260">...an update data method that intern</p>
+      <p begin="00:43:07.260" end="00:43:14.170">...into some static set of functions we have to go and update the text property that</p>
+      <p begin="00:43:14.170" end="00:43:18.950">So, that's just for kind-of hell the simple data case if I make this</p>
+      <p begin="00:43:18.950" end="00:43:21.810">more complex binding expressions so.</p>
+      <p begin="00:43:21.810" end="00:43:29.610">We say make this model.</p>
+      <p begin="00:43:29.610" end="00:43:35.690">...explicit.</p>
+      <p begin="00:43:35.690" end="00:43:38.020">If...what we should see is that</p>
+      <p begin="00:43:38.020" end="00:43:42.990">the update data message goes away instead we now have an update model method and that intern</p>
+      <p begin="00:43:42.990" end="00:43:46.960">...into update model the string...pc.</p>
+      <p begin="00:43:46.960" end="00:43:49.940">So, it's walking is binding paths generating appropriate,</p>
+      <p begin="00:43:49.940" end="00:43:57.150">appropriate methods and you can actually go step into this code separate points as you need to.</p>
+      <p begin="00:43:57.150" end="00:44:01.240">If I copy this.</p>
+      <p begin="00:44:01.240" end="00:44:06.760">And, remove the name.</p>
+      <p begin="00:44:06.760" end="00:44:07.260">Rebuild.</p>
+      <p begin="00:44:08.500" end="00:44:13.000">What...see is we should see no additional functions because we've got to bindings using that same</p>
+      <p begin="00:44:13.000" end="00:44:18.450">method so, that same path but now we havethat final node that's</p>
+      <p begin="00:44:18.450" end="00:44:25.010">calling into to setters one for object two-one for object three there's...textbooks?</p>
+      <p begin="00:44:25.010" end="00:44:28.560">If I change this guide to say...</p>
+      <p begin="00:44:28.560" end="00:44:36.500">...instead.</p>
+      <p begin="00:44:36.500" end="00:44:37.850">Which now see over here?</p>
+      <p begin="00:44:39.320" end="00:44:44.580">As we still have a model we the model method now calls into</p>
+      <p begin="00:44:44.580" end="00:44:49.920">two children one for the string property one for the entity property.</p>
+      <p begin="00:44:49.920" end="00:44:55.870">So, kind of this pattern is what we do to build-up the logic for...bindings if I</p>
+      <p begin="00:44:55.870" end="00:45:01.450">change this from one-time to one-way what we're now going to do is</p>
+      <p begin="00:45:01.450" end="00:45:05.960">look to see page that classes support identify property changed it does I've</p>
+      <p begin="00:45:05.960" end="00:45:14.880">got one binding the is dependent on that let-me generate some code for that.</p>
+      <p begin="00:45:14.880" end="00:45:18.450">What...now see is we've got additional objects around and we've</p>
+      <p begin="00:45:18.450" end="00:45:23.640">gotten additional class this is the bindings tracking object?</p>
+      <p begin="00:45:23.640" end="00:45:24.370">And, this</p>
+      <p begin="00:45:24.370" end="00:45:29.210">...has a property change methods what we've done here who created a separate</p>
+      <p begin="00:45:29.210" end="00:45:34.250">class to listen to the event handlers and the reason for that is because the can-we</p>
+      <p begin="00:45:34.250" end="00:45:39.020">...event handle patten in the</p>
+      <p begin="00:45:39.020" end="00:45:45.880">example when you handle one of those events were handing over is an object and</p>
+      <p begin="00:45:45.880" end="00:45:50.420">...method and several keepsthe model will keep the object alive</p>
+      <p begin="00:45:50.420" end="00:45:54.030">so rather than having the object be something that's tied to the...in keep</p>
+      <p begin="00:45:54.030" end="00:45:58.370">...or alive we've done what we've done is create a small little objects that can listen to</p>
+      <p begin="00:45:58.370" end="00:46:02.330">those change invocations and that then has a week reference</p>
+      <p begin="00:46:02.330" end="00:46:06.830">backer to a binding object so we do get a leak...just leaking a very small</p>
+      <p begin="00:46:06.830" end="00:46:13.720">object that...that's just the kind of tracking rather than leaking all...so</p>
+      <p begin="00:46:13.720" end="00:46:17.900">in this guy we have a property change method that's doing a pretty standards kind of</p>
+      <p begin="00:46:17.900" end="00:46:23.510">...pc lookup if it's empty it'll update that property otherwise it'll go to switch</p>
+      <p begin="00:46:23.510" end="00:46:29.040">on which property name is used...things respectively it also has</p>
+      <p begin="00:46:29.040" end="00:46:35.040">an update childless method and this is what will actually go...that change detection so</p>
+      <p begin="00:46:35.040" end="00:46:38.750">...of really rocket science in the code...generating here is taking</p>
+      <p begin="00:46:38.750" end="00:46:42.890">a binding expressions parsing them spitting out of a bunch of code?</p>
+      <p begin="00:46:42.890" end="00:46:45.670">The only thing we really needed from the framework was</p>
+      <p begin="00:46:45.670" end="00:46:51.460">depends property changed capability that we using here you can use</p>
+      <p begin="00:46:51.460" end="00:46:54.690">...in theory you could go if you're masochist you could</p>
+      <p begin="00:46:54.690" end="00:47:00.980">...all this code by hand there's nothing framework special specific that we're doing here but,</p>
+      <p begin="00:47:00.980" end="00:47:05.020">it's much easier to have something go and generate that particularly when you end up with long</p>
+      <p begin="00:47:05.020" end="00:47:09.400">binding expressions we need to listen to changes on every single node</p>
+      <p begin="00:47:09.400" end="00:47:18.020">as that goes on.</p>
+      <p begin="00:47:20.030" end="00:47:25.200">there are some differences between compile binding and classic finding we don't support relative</p>
+      <p begin="00:47:25.200" end="00:47:29.670">source equal self or element name equivalence next bind is just to give those</p>
+      <p begin="00:47:29.670" end="00:47:37.230">guys name the total creative field you can buy into that field oppressed everything works.</p>
+      <p begin="00:47:37.230" end="00:47:38.270">We don't support</p>
+      <p begin="00:47:38.270" end="00:47:41.670">...relative source is template parent for...expressions.</p>
+      <p begin="00:47:42.860" end="00:47:46.150">Are generally in a control template you want use a template binding</p>
+      <p begin="00:47:46.150" end="00:47:51.040">anyway the documentation says a template binding and classic binding with</p>
+      <p begin="00:47:51.040" end="00:47:54.620">...relative source...of the same utilize the not?</p>
+      <p begin="00:47:55.840" end="00:47:59.420">Classic...a lot more expensive than template binding</p>
+      <p begin="00:47:59.420" end="00:48:04.150">...use template binding the cases where you need to useother binding</p>
+      <p begin="00:48:04.150" end="00:48:07.060">their use classic binding unique cases</p>
+      <p begin="00:48:07.060" end="00:48:15.200">...if you need converter or you need to binding to be other than one-way.</p>
+      <p begin="00:48:15.200" end="00:48:19.480">Finally with classic binding it relies on</p>
+      <p begin="00:48:19.480" end="00:48:21.190">...source property or data</p>
+      <p begin="00:48:21.190" end="00:48:28.120">context to be set compile binding we need that type information that's not available there.</p>
+      <p begin="00:48:28.120" end="00:48:32.840">You content dynamically...that point options are user kind of...path to get the data</p>
+      <p begin="00:48:32.840" end="00:48:35.800">quite efficient dealing with those alternative just add another</p>
+      <p begin="00:48:35.800" end="00:48:45.490">...your page...into that we combine to fields...you need to.</p>
+      <p begin="00:48:45.490" end="00:48:48.210">...would not deprecated classic binding it's still there we need</p>
+      <p begin="00:48:48.210" end="00:48:51.470">it there are cases that we can't handle in compile</p>
+      <p begin="00:48:51.470" end="00:48:57.050">bindingclassifying is much better for...typing is one.</p>
+      <p begin="00:48:57.050" end="00:49:00.950">I thought the name description architect but apparently this is a common phrase it comes</p>
+      <p begin="00:49:00.950" end="00:49:06.750">...basis of it walks like a dot...like a duck taste like duck...treated as a doug.</p>
+      <p begin="00:49:06.750" end="00:49:10.660">So, what that means for classic finding is kind of person object and the</p>
+      <p begin="00:49:10.660" end="00:49:13.770">...object to completely independent objects</p>
+      <p begin="00:49:13.770" end="00:49:17.490">...based class or interface...between them</p>
+      <p begin="00:49:17.490" end="00:49:22.950">...have an each property as far as classic bindings concerned runtime...page of an age</p>
+      <p begin="00:49:22.950" end="00:49:29.300">...page community so it can work with those with x bind we need to know what</p>
+      <p begin="00:49:29.300" end="00:49:31.640">type that is now we do allow you to use</p>
+      <p begin="00:49:31.640" end="00:49:35.640">...expression to specify data type?</p>
+      <p begin="00:49:35.640" end="00:49:41.070">But, as can be a lot of work and isn't necessarily appropriate...scenarios?</p>
+      <p begin="00:49:41.070" end="00:49:46.060">Which case continues classic binding pictionary graphs similarly if I</p>
+      <p begin="00:49:46.060" end="00:49:52.540">...blob of...download...of...object whatever?</p>
+      <p begin="00:49:52.540" end="00:49:55.630">We don't know from that if I...serialized</p>
+      <p begin="00:49:55.630" end="00:50:00.800">...classes what the types are expo a classic binding works better if you</p>
+      <p begin="00:50:00.800" end="00:50:06.210">...kind of dot into those type of objects.</p>
+      <p begin="00:50:06.210" end="00:50:12.790">Finally we don't support programmatic binding creation everything has to be the compile-time.</p>
+      <p begin="00:50:12.790" end="00:50:15.610">That you can still do with classic binding one</p>
+      <p begin="00:50:15.610" end="00:50:20.240">of the primary case though I've seen in our internal apps...actually using</p>
+      <p begin="00:50:20.240" end="00:50:25.000">...binding is primarily to get kind of notifications of dependency properties</p>
+      <p begin="00:50:25.000" end="00:50:29.160">so now we have an easier way of doing that so if that's what you're trying to do just register for</p>
+      <p begin="00:50:29.160" end="00:50:39.780">...the change all that depends property rousing creating a binding together.</p>
+      <p begin="00:50:39.780" end="00:50:43.860">Yes, sorry I didn't.</p>
+      <p begin="00:50:43.860" end="00:50:47.600">Yes.</p>
+      <p begin="00:50:47.600" end="00:50:53.880">...pull up an example.</p>
+      <p begin="00:50:53.880" end="00:51:00.520">...can switch back over here.</p>
+      <p begin="00:51:00.520" end="00:51:02.820">...others, others other...</p>
+      <p begin="00:51:04.010" end="00:51:12.010">...a casing...</p>
+      <p begin="00:51:12.010" end="00:51:15.580">...here's...example so,</p>
+      <p begin="00:51:15.580" end="00:51:20.340">...this case and binding to the background property on the page the background that type the</p>
+      <p begin="00:51:20.340" end="00:51:26.430">properties of type brush or reviews...I think ...really want to get</p>
+      <p begin="00:51:26.430" end="00:51:37.630">too is the color of a solid color brush if I just left that...actually remove this.</p>
+      <p begin="00:51:37.630" end="00:51:42.080">...do live events?</p>
+      <p begin="00:51:42.080" end="00:51:46.400">What I should get from that case is a compiler because it'll say?</p>
+      <p begin="00:51:46.400" end="00:51:52.720">Come on.</p>
+      <p begin="00:51:52.720" end="00:51:57.580">Yes, invalid binding...it can't find color off the brush.</p>
+      <p begin="00:51:57.580" end="00:51:59.700">If I go back in here.</p>
+      <p begin="00:51:59.700" end="00:52:00.440">We do is use</p>
+      <p begin="00:52:00.440" end="00:52:05.120">...attach property syntax cassette to solid color brush and say hey I want to access</p>
+      <p begin="00:52:05.120" end="00:52:11.990">the color property of this feature is actually available in classic binding.</p>
+      <p begin="00:52:11.990" end="00:52:17.870">We found it...it's vaguely documented.</p>
+      <p begin="00:52:17.870" end="00:52:23.170">It is mentioned kind of in...piece you can do...you can do this retype properties own</p>
+      <p begin="00:52:23.170" end="00:52:27.730">...like udp so,...is there is</p>
+      <p begin="00:52:27.730" end="00:52:33.900">...needed in classifying because invariably.</p>
+      <p begin="00:52:33.900" end="00:52:37.810">Unless the objects implementing separate interfaces and the exposing the functionality the interface</p>
+      <p begin="00:52:37.810" end="00:52:42.360">you can normally find the property there but with x buying we need that kind of capability so you can</p>
+      <p begin="00:52:42.360" end="00:52:52.470">...there ...it that way.</p>
+      <p begin="00:52:52.470" end="00:52:58.500">So, that's kind of the functionality we've got in this release of x</p>
+      <p begin="00:52:58.500" end="00:53:04.230">bind and sample it's a new feature this time we...coming hot I'm sure when you try</p>
+      <p begin="00:53:04.230" end="00:53:10.240">you'll find bugs if so please tell us ...fix them but,...this further that we</p>
+      <p begin="00:53:10.240" end="00:53:15.240">want to go ...we've implemented so far so I'm not giving any promises but if you see</p>
+      <p begin="00:53:15.240" end="00:53:21.270">joe segmental tim...given...kick and say hey can you do this feature please seems...much more...</p>
+      <p begin="00:53:21.270" end="00:53:28.310">weight played on customer request internal of things we're thinking about in future ability to</p>
+      <p begin="00:53:28.310" end="00:53:33.410">buying to a function so every don't like converters they're...web doing it...</p>
+      <p begin="00:53:33.410" end="00:53:39.190">buying to a function instead and specify the function parameters the binding paths ...of</p>
+      <p begin="00:53:39.190" end="00:53:44.140">...prototypes of it I think I think that one will end up doing but it can also solve</p>
+      <p begin="00:53:44.140" end="00:53:49.790">the multiplying...solution as well because I can now buying to multiple expressions at the same time together is</p>
+      <p begin="00:53:49.790" end="00:53:52.450">...function.</p>
+      <p begin="00:53:52.450" end="00:53:56.200">Other things we think amount so for data templates we kind of create this code behind for</p>
+      <p begin="00:53:56.200" end="00:53:59.440">a class for it but it's not really truly</p>
+      <p begin="00:53:59.440" end="00:54:04.810">combine class that you as a developer can go play with your data templates so, we're looking at</p>
+      <p begin="00:54:04.810" end="00:54:08.720">been thinking at there is how do I enable you to specify your own class of</p>
+      <p begin="00:54:08.720" end="00:54:13.520">...data template and have your own logic ties together with function binding...functions in</p>
+      <p begin="00:54:13.520" end="00:54:19.430">their and users with inside that the binding...data template and also how could I then scope</p>
+      <p begin="00:54:19.430" end="00:54:23.360">and access...stuff from...data object from</p>
+      <p begin="00:54:23.360" end="00:54:30.340">my class or larger scope we don't have a solution for find ancestor?</p>
+      <p begin="00:54:30.340" end="00:54:33.000">...so far I think that would solve the most</p>
+      <p begin="00:54:33.000" end="00:54:40.760">common need the most common cases for it something that we're thinking about looking at.</p>
+      <p begin="00:54:40.760" end="00:54:43.460">Phasing right now is only support in data templates</p>
+      <p begin="00:54:44.610" end="00:54:49.370">...make sense there but if you step back a bit and say hey we could I enable</p>
+      <p begin="00:54:49.370" end="00:54:54.460">this start-up as well...how do we pass that...down the tree so if</p>
+      <p begin="00:54:54.460" end="00:54:59.250">we're going to use control inside...data template right now that use control...have one phase but we don't</p>
+      <p begin="00:54:59.250" end="00:55:03.330">unable kind of sub phases with inside that...use control to be defined</p>
+      <p begin="00:55:03.330" end="00:55:08.260">...of bubble up and then if I do some phases...make that work with the rest of kind of the phasing</p>
+      <p begin="00:55:08.260" end="00:55:14.130">...so some work to do that to think about it but,...that's one of the other features</p>
+      <p begin="00:55:14.130" end="00:55:20.530">we're looking at for expand finally can we have a better solution for unknown object graphs like</p>
+      <p begin="00:55:20.530" end="00:55:24.670">jason or xml data.</p>
+      <p begin="00:55:24.670" end="00:55:28.320">So, wrapping up we introduced a new form</p>
+      <p begin="00:55:28.320" end="00:55:32.040">...binding in windows ten compile binding.</p>
+      <p begin="00:55:32.040" end="00:55:35.320">Generally replaces most the functionality classic running and is faster and</p>
+      <p begin="00:55:35.320" end="00:55:40.780">uses less memory if you find bugs please a or got feedback</p>
+      <p begin="00:55:40.780" end="00:55:44.360">...the feedback...or not talk to us here?</p>
+      <p begin="00:55:44.360" end="00:55:51.220">In terms of extra sessions there's another one today five p.</p>
+      <p begin="00:55:51.220" end="00:55:56.730">And, then on friday really interesting is a talk by.</p>
+      <p begin="00:55:56.730" end="00:56:01.530">Andrew inco from the office team on their uses animal in office so the</p>
+      <p begin="00:56:01.530" end="00:56:06.210">modern offices actually built on top...they...make sure infrastructure work</p>
+      <p begin="00:56:06.210" end="00:56:10.520">the during a talk on...of how they've used...xhtml.</p>
+      <p begin="00:56:10.520" end="00:56:16.760">Together with office the demo apple they're showing that's just early drop all of the</p>
+      <p begin="00:56:16.760" end="00:56:20.790">demo...sdk...go online...to pm today so-if you</p>
+      <p begin="00:56:20.790" end="00:56:25.110">...you want to go play with phasing whatever download the sample.</p>
+      <p begin="00:56:25.110" end="00:56:33.830">And, play with your much.</p>
+      <p begin="00:56:33.830" end="00:56:38.510">I should say fill out evaluation form it's really good for us it's really</p>
+      <p begin="00:56:38.510" end="00:56:40.300">good for the session planners thank you.</p>
+
+    </div>
+  </body>
+</tt>

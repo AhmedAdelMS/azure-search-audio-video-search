@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.870</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.720" end="00:00:07.040">Right it's almost too so I think we shouldget...</p>
+      <p begin="00:00:07.040" end="00:00:11.600">could often everyone on...would thank you guys for being here.</p>
+      <p begin="00:00:11.600" end="00:00:16.620">Because you see it's a friday afternoon post lunch.</p>
+      <p begin="00:00:17.670" end="00:00:20.890">Last session of the conference going to be talking about troubleshooting</p>
+      <p begin="00:00:22.150" end="00:00:26.380">...work in my favor so I really appreciate I've been here thank you very much</p>
+      <p begin="00:00:26.380" end="00:00:32.130">bye so with that say no we're going to talk about today well,</p>
+      <p begin="00:00:32.130" end="00:00:35.320">first of all my name is...sheI'm a program manager larger</p>
+      <p begin="00:00:35.320" end="00:00:41.310">app service theme I focus on building features from a bats the...spend the</p>
+      <p begin="00:00:41.310" end="00:00:46.070">...my career with microsoft the working as a support...so I've seen the</p>
+      <p begin="00:00:46.070" end="00:00:51.380">...customers go through when things don't work out very well and the one of the things that</p>
+      <p begin="00:00:51.380" end="00:00:56.330">I decided when I took this job to try and do things where?</p>
+      <p begin="00:00:56.330" end="00:01:01.450">I can help improve the situations for the scenarios where you have deploy the</p>
+      <p begin="00:01:01.450" end="00:01:04.530">sites...productions running full-blown and something's</p>
+      <p begin="00:01:04.530" end="00:01:09.340">bads happening right and now you really want to find out what's going on what can I do</p>
+      <p begin="00:01:09.340" end="00:01:14.300">troubleshooting and things along those lines because the tons and tons of solutions out there that basically go</p>
+      <p begin="00:01:14.300" end="00:01:19.900">and say no I'm going to give you alerting...this...for-you I'll let, you know, when something goes wrong</p>
+      <p begin="00:01:19.900" end="00:01:24.470">...you get a phone call you get a pager what's next right that's one stop people,</p>
+      <p begin="00:01:24.470" end="00:01:30.090">people start usually freaking out the pages loading slow of what to do next?</p>
+      <p begin="00:01:30.090" end="00:01:34.350">So, what we've done here and...with the...web app service?</p>
+      <p begin="00:01:34.350" end="00:01:38.800">Is an attend the to try and automate the diagnostics to a</p>
+      <p begin="00:01:38.800" end="00:01:40.070">point?</p>
+      <p begin="00:01:40.070" end="00:01:41.630">Where we can start?</p>
+      <p begin="00:01:41.630" end="00:01:43.770">Trying to give you a snapshot of what is happening in</p>
+      <p begin="00:01:43.770" end="00:01:48.690">...production site at any given time along the side with the prescriptive</p>
+      <p begin="00:01:48.690" end="00:01:54.780">guidance on what we think is going draw because most of the time for the developer you don't have</p>
+      <p begin="00:01:54.780" end="00:01:58.800">to...what...and how to fix it you just telling what has been screwed up</p>
+      <p begin="00:01:58.800" end="00:02:03.920">and he or she knows what to fix it right so that said we're?</p>
+      <p begin="00:02:03.920" end="00:02:07.620">Going-to go ahead...the start this session.</p>
+      <p begin="00:02:07.620" end="00:02:15.160">...this you guys know the usual drill ...and submit the valve there because it helps improve.</p>
+      <p begin="00:02:15.160" end="00:02:21.170">the agenda basically for this and the key take away I want you guys to go away from there has to understand</p>
+      <p begin="00:02:21.170" end="00:02:26.070">the tools and the best practices available to trouble shoot either web apps roger websites</p>
+      <p begin="00:02:26.070" end="00:02:30.330">or apps of is focusing on the performance and availability</p>
+      <p begin="00:02:30.330" end="00:02:34.540">...and the reason it's very important because the larger ad services</p>
+      <p begin="00:02:35.680" end="00:02:39.610">...fully manage fast solution where we don't allow you to artie p don't</p>
+      <p begin="00:02:39.610" end="00:02:44.330">...to install bunch of tools...and things along those lines so that makes troubleshooting a little bit of a</p>
+      <p begin="00:02:44.330" end="00:02:48.680">challengeand, basically what you should be</p>
+      <p begin="00:02:48.680" end="00:02:56.750">do when all the tools and everything else doesn't work what the next options are right?</p>
+      <p begin="00:02:56.750" end="00:03:00.500">Okay, so, we'll just...a fortify tops the at</p>
+      <p begin="00:03:00.500" end="00:03:05.040">...what could possibly go wrong...see all the situations are different kinds of issues we try and</p>
+      <p begin="00:03:05.040" end="00:03:08.160">...and...issues before we</p>
+      <p begin="00:03:08.160" end="00:03:12.710">start diving into how to use and tools because it's important to understand what kind of</p>
+      <p begin="00:03:12.710" end="00:03:17.530">issue your seen before you start using different tools...and you don't really don't use</p>
+      <p begin="00:03:17.530" end="00:03:22.840">this sledgehammer to try and put enable the to fans and things along those lines</p>
+      <p begin="00:03:22.840" end="00:03:25.430">...will to the tools that are available</p>
+      <p begin="00:03:25.430" end="00:03:31.120">...and lots of demos in a demo I'm going to start with the something very simple</p>
+      <p begin="00:03:31.120" end="00:03:35.480">...to how you start peeling the orleans-and fill in the final demos we'll start</p>
+      <p begin="00:03:35.480" end="00:03:40.000">look into some really, really advanced of...see how we can...helping so we should</p>
+      <p begin="00:03:40.000" end="00:03:46.370">live performance the issues with websites it's not going to be like I'm going to</p>
+      <p begin="00:03:46.370" end="00:03:51.050">open a visual studio and attaching debug and put a break point my prediction site...we want to</p>
+      <p begin="00:03:51.050" end="00:03:55.330">...show you what do you do in a situation when all those</p>
+      <p begin="00:03:55.330" end="00:04:02.080">known tools available to you don't work...take a lot of questions hopefully we'll have enough time for them.</p>
+      <p begin="00:04:02.080" end="00:04:05.260">So, what could possibly go wrong right?</p>
+      <p begin="00:04:05.260" end="00:04:08.540">It's...always a question on everyone's mind when you're</p>
+      <p begin="00:04:08.540" end="00:04:13.060">...under a very tight a deadline of...product if...a</p>
+      <p begin="00:04:13.060" end="00:04:18.010">...things along those lines I experience that every single time and when I was making this presentation last week,</p>
+      <p begin="00:04:18.010" end="00:04:20.180">you know, what my wife came and told</p>
+      <p begin="00:04:20.180" end="00:04:25.410">me a little my story about the my two-year-old and what happened and I thought it</p>
+      <p begin="00:04:25.410" end="00:04:29.170">was fantastic to show...you guys because it helps you</p>
+      <p begin="00:04:29.170" end="00:04:33.860">...helps us understand different kinds of issues whatnot here's what happened last week my</p>
+      <p begin="00:04:33.860" end="00:04:38.970">two-year-oldthat is the preschool had a session to take a picture was classmate</p>
+      <p begin="00:04:38.970" end="00:04:43.810">right so my wife is all excited like any whether she wants the picture-perfect my kid to</p>
+      <p begin="00:04:43.810" end="00:04:49.140">look very fantastic righty...up and she's she has a picture in our mind</p>
+      <p begin="00:04:49.140" end="00:04:54.390">...that's what this picture look like right so this...preparing for the one in the head is my little</p>
+      <p begin="00:04:54.390" end="00:04:59.600">...she's...this how it's going to be I'm going to prepare this thing in</p>
+      <p begin="00:04:59.600" end="00:05:04.290">a nice way and it's usually very nice kid like I'll think of them is a very...app</p>
+      <p begin="00:05:04.290" end="00:05:09.230">...is the good...my wife is trying to go through this process of getting this picture that</p>
+      <p begin="00:05:09.230" end="00:05:13.560">...suffused running late although...the kids started crying</p>
+      <p begin="00:05:13.560" end="00:05:18.510">and cheese freaking out she's like my god the pictures not going to look like this these crying right this is typical thing on...ship</p>
+      <p begin="00:05:18.510" end="00:05:22.240">...product I'm running out of time search cheated sites, you know,</p>
+      <p begin="00:05:22.240" end="00:05:25.140">what in the car?</p>
+      <p begin="00:05:25.140" end="00:05:28.560">I'm going to give mechanic it always works</p>
+      <p begin="00:05:28.560" end="00:05:31.400">...one can easily the heavy but he's using situation</p>
+      <p begin="00:05:31.400" end="00:05:35.440">...is advantages...one more she goes like</p>
+      <p begin="00:05:35.440" end="00:05:40.000">...give another candy...can possibly go wrong it's just a candy right so she gives</p>
+      <p begin="00:05:40.000" end="00:05:44.470">...candy third one right the kids all happy results talked up</p>
+      <p begin="00:05:44.470" end="00:05:47.630">...ready for the picture right it's all good.</p>
+      <p begin="00:05:47.630" end="00:05:50.520">You should the product.</p>
+      <p begin="00:05:50.520" end="00:05:57.520">And, this is what the picture turns out to be you see the...one here sitting next is best friend.</p>
+      <p begin="00:05:57.520" end="00:06:01.750">In the next and both of...on the floor right so this is how we turn out to be</p>
+      <p begin="00:06:01.750" end="00:06:04.530">...in that situation I...is very</p>
+      <p begin="00:06:04.530" end="00:06:09.190">the similar to how we do development and how we do a job development start</p>
+      <p begin="00:06:09.190" end="00:06:14.160">pushing things into production and things along those lines right at the industry astra what</p>
+      <p begin="00:06:14.160" end="00:06:19.110">...would you...the root class she was obviously the sugar right given too much of its</p>
+      <p begin="00:06:19.110" end="00:06:22.830">such a nice-guy of able web app I give...too much sugar that's what causes</p>
+      <p begin="00:06:22.830" end="00:06:28.050">...if I were to ask the same question to the victim's mother she's going to know</p>
+      <p begin="00:06:28.050" end="00:06:32.280">is that boy manny's is a very not evoke the...that to my</p>
+      <p begin="00:06:32.280" end="00:06:38.020">...if I were to ask my boss near what's the root causes...is a teacher they should never</p>
+      <p begin="00:06:38.020" end="00:06:42.520">make them sit together for the picture right so it's all different perspective and how you how</p>
+      <p begin="00:06:42.520" end="00:06:46.150">...troubleshooting things...put things into perspective right so it's very</p>
+      <p begin="00:06:46.150" end="00:06:50.980">important the to understand the type of the issue before we start jumping of</p>
+      <p begin="00:06:50.980" end="00:06:56.970">...into the...so every time you call into micros</p>
+      <p begin="00:06:56.970" end="00:06:59.690">...any live service support or any company</p>
+      <p begin="00:06:59.690" end="00:07:04.490">...at highly at high-level there are three different kinds of issues that we go through right so here,</p>
+      <p begin="00:07:04.490" end="00:07:07.590">you know, you perform...got a problem right?</p>
+      <p begin="00:07:07.590" end="00:07:11.640">First one is the most easy one it's a generic advocacy right or you want</p>
+      <p begin="00:07:11.640" end="00:07:16.160">to do something like subscription migration I want to move my acid from the subscript another one there's no</p>
+      <p begin="00:07:16.160" end="00:07:20.600">low-impact everything's happy it pick up the phone is...man how are you how's the weather</p>
+      <p begin="00:07:20.600" end="00:07:27.940">...to do this everything answer very happy most the time right.</p>
+      <p begin="00:07:27.940" end="00:07:32.390">The second one is you notice something crazy happening with website you</p>
+      <p begin="00:07:32.390" end="00:07:37.150">go like hey man this is weird in a...to do about this so you pick up a</p>
+      <p begin="00:07:37.150" end="00:07:41.710">phone...support and you report...with incident right</p>
+      <p begin="00:07:41.710" end="00:07:46.100">and this category has two kinds of issues the first one.</p>
+      <p begin="00:07:46.100" end="00:07:50.430">Is usually...issue but it's very difficult to isolate is an application issue</p>
+      <p begin="00:07:50.430" end="00:07:56.300">or a platform but right so you basically go through a whole cycle of working with the...trying to get the data try and</p>
+      <p begin="00:07:56.300" end="00:08:01.510">...at the end of the where's my day...to fix this right and...cycles</p>
+      <p begin="00:08:01.510" end="00:08:06.870">...brand...back...specific...</p>
+      <p begin="00:08:06.870" end="00:08:11.020">The other category here you repeat the whole cycle you call you go through process</p>
+      <p begin="00:08:11.020" end="00:08:15.390">...the support that tells you what we found out there's a bug in the platform</p>
+      <p begin="00:08:15.390" end="00:08:20.300">is impacting you maybe tens of other customers the entire services not dom</p>
+      <p begin="00:08:20.300" end="00:08:26.420">and then customer usually goes like a...suffix...going to ship it and things on those lines.</p>
+      <p begin="00:08:26.420" end="00:08:28.030">This is the second caddy that you see...</p>
+      <p begin="00:08:28.030" end="00:08:33.000">the major is the majority of the issues that support or any service usually goes through.</p>
+      <p begin="00:08:33.000" end="00:08:36.620">The third in the big one is my god there's a platform</p>
+      <p begin="00:08:36.620" end="00:08:41.460">...and usually the my god is coming from the service...itself is not the...usually</p>
+      <p begin="00:08:41.460" end="00:08:46.310">the customer because we have tons and tons of allergic and monitoring place where we</p>
+      <p begin="00:08:46.310" end="00:08:50.890">...sites there's a canary siphoning every single gm will try and see what the response time</p>
+      <p begin="00:08:50.890" end="00:08:55.320">is and the...and things along those lines we get the alert and we start freaking out when we get</p>
+      <p begin="00:08:55.320" end="00:08:59.120">dealer from any given stampa region and have...engineers up and</p>
+      <p begin="00:08:59.120" end="00:09:04.420">running usually doesn't come from customer but there are situations where this might be</p>
+      <p begin="00:09:04.420" end="00:09:09.610">...from customer because our monitoring catching nobody's, nobody's perfect and that's a learning process</p>
+      <p begin="00:09:09.610" end="00:09:16.090">we can we try and incorporate that into a learning process this...category there</p>
+      <p begin="00:09:16.090" end="00:09:21.000">isn't much you as a customer can do to actually resolve the issue in</p>
+      <p begin="00:09:21.000" end="00:09:25.010">most cases you're basically at the mercy of service owner to try and fix</p>
+      <p begin="00:09:25.010" end="00:09:29.630">issued all you need at that point...just tell me what's going on how long as going-to-take to fix</p>
+      <p begin="00:09:29.630" end="00:09:33.330">the issue and there's that?</p>
+      <p begin="00:09:33.330" end="00:09:37.140">Let's core what causes usually the platform issues</p>
+      <p begin="00:09:37.140" end="00:09:43.360">...specific dodger apps services because were built very uniquely write-in like</p>
+      <p begin="00:09:43.360" end="00:09:47.960">...likes to say right he when he talks about these two different compute</p>
+      <p begin="00:09:47.960" end="00:09:51.700">...in all I as is like a building your own house.</p>
+      <p begin="00:09:51.700" end="00:09:54.740">Has like a renting the house?</p>
+      <p begin="00:09:54.740" end="00:09:57.750">And, app service of the sites it's more like</p>
+      <p begin="00:09:57.750" end="00:10:01.960">a ranking luxury hotel right I mean basically everything...for use...using</p>
+      <p begin="00:10:01.960" end="00:10:06.830">it you'll get and things along those lines so when we build this large results always</p>
+      <p begin="00:10:06.830" end="00:10:11.560">been and basically using all the core services like...equalizer</p>
+      <p begin="00:10:11.560" end="00:10:16.030">...depend on network depend on cloud services where actually the largest</p>
+      <p begin="00:10:16.030" end="00:10:21.630">cloud service out there on microsoft roger platform right so you can see any of those component can</p>
+      <p begin="00:10:21.630" end="00:10:26.280">...or have an issue and devil impact...service we do have</p>
+      <p begin="00:10:26.280" end="00:10:29.380">...bunch of?</p>
+      <p begin="00:10:29.380" end="00:10:33.890">In all abstraction level on our...system to basically stay aware and try</p>
+      <p begin="00:10:33.890" end="00:10:38.530">and avoid this issues but, you know, things can go wrong...globally it can be any</p>
+      <p begin="00:10:38.530" end="00:10:43.840">stampa another that could be random bucks right so these are...things that could cause the platform issues</p>
+      <p begin="00:10:43.840" end="00:10:46.860">and there isn't much you can do unless.</p>
+      <p begin="00:10:47.930" end="00:10:48.970">Except for just one of the</p>
+      <p begin="00:10:48.970" end="00:10:53.840">...dashboard and try and see what the statuses in I'll be honest with you guys...right now</p>
+      <p begin="00:10:53.840" end="00:10:58.300">this dashboard updated is performed by humans right so you saw that</p>
+      <p begin="00:10:58.300" end="00:11:03.290">the large charles platform issue where we get dealer somebody says my god freaking out he gets</p>
+      <p begin="00:11:03.290" end="00:11:05.510">...start looking...and the next thing does</p>
+      <p begin="00:11:05.510" end="00:11:09.870">he calls the dashboard dicey update this basically see I'm having</p>
+      <p begin="00:11:09.870" end="00:11:14.460">xyz for right and...working towards automating this whole experience but that's what it</p>
+      <p begin="00:11:14.460" end="00:11:20.010">is sometimes when you see...site you come to dashboard you don't see anything and you go like why isn't there and</p>
+      <p begin="00:11:20.010" end="00:11:24.840">then half an hour fifteen minutes or whatever time it takes you probably have seen all there's no there is</p>
+      <p begin="00:11:24.840" end="00:11:29.930">this thing but it's usually up to date and is the only source?</p>
+      <p begin="00:11:29.930" end="00:11:35.110">Of information at this point to understand what's going on when the platform issue...</p>
+      <p begin="00:11:35.110" end="00:11:39.940">So, to this session we're going to focus on the second the middle category where,</p>
+      <p begin="00:11:39.940" end="00:11:44.300">you know, the self-help is possible this is where you can do something yourself</p>
+      <p begin="00:11:44.300" end="00:11:52.180">and trying to figure out what the could be the...and things along those lines.</p>
+      <p begin="00:11:52.180" end="00:11:55.050">So, what you can do today with address services you cannot</p>
+      <p begin="00:11:55.050" end="00:11:57.650">...the vm for?</p>
+      <p begin="00:11:57.650" end="00:12:01.770">Obvious design reasons the your application cannot...</p>
+      <p begin="00:12:02.880" end="00:12:07.160">The...have access to vm or a site uw or you can't...in the</p>
+      <p begin="00:12:07.160" end="00:12:11.930">...indeed pretty much makes you feel like cripple.</p>
+      <p begin="00:12:11.930" end="00:12:14.600">...experience working as a board, you know,</p>
+      <p begin="00:12:14.600" end="00:12:18.780">I always ask this question when things are not working well.</p>
+      <p begin="00:12:18.780" end="00:12:22.720">Even if I give you the artie p what are you going to do next.</p>
+      <p begin="00:12:22.720" end="00:12:24.840">Right are you...bunch of...burgers...got</p>
+      <p begin="00:12:24.840" end="00:12:29.200">...memory dumps and what's next...going to make sense out of it right so just giving already</p>
+      <p begin="00:12:29.200" end="00:12:33.450">p is not all visit enough and we thought we should try and do a</p>
+      <p begin="00:12:33.450" end="00:12:38.390">prototype of trying to build intelligence around this data-gathering and</p>
+      <p begin="00:12:38.390" end="00:12:41.590">the parse data based on the experience that we've</p>
+      <p begin="00:12:41.590" end="00:12:46.510">gained of supporting our customers for over multiple years and provides an prescriptive guidance</p>
+      <p begin="00:12:46.510" end="00:12:52.570">instead of just here's the article figure out yourself right and that's what this project basically started</p>
+      <p begin="00:12:52.570" end="00:12:57.670">with we started this project calling that as a...db project?</p>
+      <p begin="00:12:57.670" end="00:13:02.560">it is...preview the but we're trying to make an attempt to where we want to take</p>
+      <p begin="00:13:02.560" end="00:13:06.610">...next steps when and alert comes in what you do next</p>
+      <p begin="00:13:06.610" end="00:13:12.480">without just the restarting or engaging somebody or collins...</p>
+      <p begin="00:13:12.480" end="00:13:18.550">Okay, so, ...all tools available everybody knows what...should be logs.</p>
+      <p begin="00:13:18.550" end="00:13:22.860">Event...dot net dieter message...request tracing.</p>
+      <p begin="00:13:22.860" end="00:13:25.940">Application logs php logs management for app</p>
+      <p begin="00:13:25.940" end="00:13:29.200">inside could...how many of you are very...portal.</p>
+      <p begin="00:13:30.450" end="00:13:36.860">Call how many of used...or any of the other troubleshooting tools...backs.</p>
+      <p begin="00:13:36.860" end="00:13:39.800">I think there's quite a bit...</p>
+      <p begin="00:13:39.800" end="00:13:43.590">And, then we are partner solutions like neurologic...the z zero which we announced</p>
+      <p begin="00:13:43.590" end="00:13:49.190">...this week for profiling phd.</p>
+      <p begin="00:13:49.190" end="00:13:54.150">I'm not going to go through the most obvious ones today because it doesn't really help like in hb...for example,</p>
+      <p begin="00:13:54.150" end="00:13:58.510">...science not performing will getting exception it tells you here's the page five hundred this</p>
+      <p begin="00:13:58.510" end="00:14:02.320">...status code done what's next right I mean.</p>
+      <p begin="00:14:02.320" end="00:14:06.890">...trying to tell me right so...a good start is good started tells here's the pay that</p>
+      <p begin="00:14:06.890" end="00:14:08.650">...congo to...saying here's the</p>
+      <p begin="00:14:08.650" end="00:14:13.270">...five hundred is going to like what right so.</p>
+      <p begin="00:14:13.270" end="00:14:17.000">We're going to focus on this little part is what we call...aboard...</p>
+      <p begin="00:14:17.000" end="00:14:22.000">support site extension where we try to automate some part of it all right so.</p>
+      <p begin="00:14:22.000" end="00:14:27.570">This...start jumping to demos we'll spend the rest of assertion dune demos from</p>
+      <p begin="00:14:27.570" end="00:14:33.640">...okay so number eight area</p>
+      <p begin="00:14:33.640" end="00:14:39.160">okay this my management portal...this nice little site called</p>
+      <p begin="00:14:39.160" end="00:14:43.890">...buggy bakery which are nicely...application...to sell cakes</p>
+      <p begin="00:14:43.890" end="00:14:48.720">...like cakes...the if the resembles that the troubleshooting should be</p>
+      <p begin="00:14:48.720" end="00:14:52.610">...right and we'll try and find out how that works?</p>
+      <p begin="00:14:52.610" end="00:14:56.330">Okay, so, let's see what the...looks like a for those who are not the</p>
+      <p begin="00:14:56.330" end="00:15:01.410">are off every single website has a special endpoint.</p>
+      <p begin="00:15:01.410" end="00:15:03.850">Call...and that can be...by the</p>
+      <p begin="00:15:03.850" end="00:15:09.910">...name dot acm dot larger websites dot net.</p>
+      <p begin="00:15:09.910" end="00:15:14.270">When...teaches beautiful portal which is sort of your</p>
+      <p begin="00:15:14.270" end="00:15:16.590">...p into the machine right it gives you</p>
+      <p begin="00:15:16.590" end="00:15:20.910">...one available et cetera...when I go to the but consul when icc</p>
+      <p begin="00:15:20.910" end="00:15:25.180">and the or partial image you feel like home like now this is where I feel like I'm in a</p>
+      <p begin="00:15:25.180" end="00:15:28.390">server core windows I can do xyz?</p>
+      <p begin="00:15:28.390" end="00:15:35.450">You're still running in a sandbox but ...is...at least he gives you something to work with.</p>
+      <p begin="00:15:35.450" end="00:15:38.400">...you got a process explorer which is like</p>
+      <p begin="00:15:38.400" end="00:15:44.760">a task manager and you'll notice they're not too many processes appear right just wb and then there's another</p>
+      <p begin="00:15:44.760" end="00:15:48.730">...for the clue site which runs in a separate process that we...the one that</p>
+      <p begin="00:15:48.730" end="00:15:52.170">...your application...not many processes now because</p>
+      <p begin="00:15:52.170" end="00:15:56.800">the not many process running on the vm is because you're running inside a sandbox this</p>
+      <p begin="00:15:56.800" end="00:16:01.690">vm can be hosting hundreds of sites but each site cannot see any other</p>
+      <p begin="00:16:01.690" end="00:16:05.570">...of the only thing that you can see because you can to the could...of this bakery</p>
+      <p begin="00:16:05.570" end="00:16:10.900">...can only see what it owns in all the chide processes from that point on</p>
+      <p begin="00:16:10.900" end="00:16:15.310">...this is typically similar to task manager into a bunch of cool things look at the</p>
+      <p begin="00:16:15.310" end="00:16:17.920">modules look at the handles threads.</p>
+      <p begin="00:16:17.920" end="00:16:22.120">Environment even giving this is usually not enough and I can see cpu our memory going</p>
+      <p begin="00:16:22.120" end="00:16:24.360">...at what's next...</p>
+      <p begin="00:16:24.360" end="00:16:26.110">Is always...</p>
+      <p begin="00:16:26.110" end="00:16:32.560">Kill the process you can download the memory dump...locally, you know, what you need to do with it and,</p>
+      <p begin="00:16:32.560" end="00:16:37.150">then a bunch of...extensions...allows you to play with right so this is</p>
+      <p begin="00:16:37.150" end="00:16:40.640">clue in journal there is one...set</p>
+      <p begin="00:16:40.640" end="00:16:46.100">extension that I want to talk about so let's just as which...here?</p>
+      <p begin="00:16:46.100" end="00:16:50.470">And, switch to are...real demos from this point like, you know,</p>
+      <p begin="00:16:50.470" end="00:16:55.190">there's always a situation like, you know, your...going to a really big event...want to have...</p>
+      <p begin="00:16:55.190" end="00:17:00.840">insight into what is going on right a monitor...traffic that can be moved every few seconds</p>
+      <p begin="00:17:00.840" end="00:17:04.770">...first start...the any keeping an eye on your website</p>
+      <p begin="00:17:04.770" end="00:17:11.009">so for this the scenario let's go back ...see...built.</p>
+      <p begin="00:17:11.009" end="00:17:13.839">So, from...portal if you click on tools.</p>
+      <p begin="00:17:13.839" end="00:17:18.870">And, if you click on support it will do a re-direct.</p>
+      <p begin="00:17:18.870" end="00:17:21.990">With a single sign on for your site.</p>
+      <p begin="00:17:21.990" end="00:17:23.810">Little-bitty should come up to this aboard</p>
+      <p begin="00:17:23.810" end="00:17:27.930">...behalf variable list of all the sites that you have under the account</p>
+      <p begin="00:17:27.930" end="00:17:32.320">...logged in right all the subscription all the sites...and the first thing that you see right</p>
+      <p begin="00:17:32.320" end="00:17:35.070">of the backer is.</p>
+      <p begin="00:17:35.070" end="00:17:36.530">Observe.</p>
+      <p begin="00:17:36.530" end="00:17:38.600">What is...observe is basically</p>
+      <p begin="00:17:40.640" end="00:17:46.030">sulphur bigger solution that you guys build where v analyze your logs?</p>
+      <p begin="00:17:46.030" end="00:17:48.680">Every few seconds and then</p>
+      <p begin="00:17:48.680" end="00:17:52.580">...and categorize what success what is failure...coming</p>
+      <p begin="00:17:52.580" end="00:17:55.500">...some differences aggregate them together and start</p>
+      <p begin="00:17:55.500" end="00:18:00.430">displaying them life right and just to show you how that looks like I'm going to go and</p>
+      <p begin="00:18:02.750" end="00:18:07.040">...cancel out of from here in a start a low test.</p>
+      <p begin="00:18:07.040" end="00:18:11.710">On a site.</p>
+      <p begin="00:18:11.710" end="00:18:13.980">So, we just started...test I'm going to going switch to</p>
+      <p begin="00:18:13.980" end="00:18:17.190">that site from here and I think that site is in this subscription.</p>
+      <p begin="00:18:18.790" end="00:18:20.610">I'll switch to, yeah,</p>
+      <p begin="00:18:20.610" end="00:18:25.790">this is a specific...just basically switch the should switch the process to that guy</p>
+      <p begin="00:18:25.790" end="00:18:31.550">say...load the data and little-bitty we so the...load tessa...</p>
+      <p begin="00:18:31.550" end="00:18:36.400">...about ten seconds you will should start seeing the traffic that is coming to</p>
+      <p begin="00:18:36.400" end="00:18:41.130">...and...medium ride that rights within ten seconds whatever's happening</p>
+      <p begin="00:18:41.130" end="00:18:44.400">...aggregating what the...coming and you basically showing</p>
+      <p begin="00:18:44.400" end="00:18:48.720">...is getting three percent per second ramping up slowly andout of that were failing</p>
+      <p begin="00:18:48.720" end="00:18:54.950">...eighty-six twenty-five the...pbr office can monitoring the</p>
+      <p begin="00:18:54.950" end="00:18:58.590">libraries happening is a great start to start putting in something</p>
+      <p begin="00:18:58.590" end="00:19:02.920">bad wind right and then you can start using what you need to the beautiful</p>
+      <p begin="00:19:02.920" end="00:19:07.330">thing about this is like I said we do the aggregation across different gm's and all this stuff for you don't have</p>
+      <p begin="00:19:07.330" end="00:19:09.770">to do yourself you can switch.</p>
+      <p begin="00:19:09.770" end="00:19:13.160">By different host names so you see...is a different process</p>
+      <p begin="00:19:14.190" end="00:19:18.990">...that I've been sending to the clue site are...track here if I go to the actual site</p>
+      <p begin="00:19:18.990" end="00:19:25.540">...here if the site where to be a traffic...traffic manager I'll show you a little bit I have a</p>
+      <p begin="00:19:25.540" end="00:19:30.490">site where there's some load going on here these two site level to north and south.</p>
+      <p begin="00:19:30.490" end="00:19:34.630">Are behind the traffic manager I'll switch to that?</p>
+      <p begin="00:19:34.630" end="00:19:37.610">I...north and running a load test to a traffic manager</p>
+      <p begin="00:19:37.610" end="00:19:43.340">endpoints which is here already and you can see...it's everything seems to be go...</p>
+      <p begin="00:19:43.340" end="00:19:48.300">road is getting...forty-four requests per second now I can monitor the traffic</p>
+      <p begin="00:19:48.300" end="00:19:50.450">...the host names if my side</p>
+      <p begin="00:19:50.450" end="00:19:53.940">is multiple host names and I want to module for a given hosting</p>
+      <p begin="00:19:53.940" end="00:19:59.840">...the traffic coming from I can pick and choose if I choose this nothing's going to show up if I choose this</p>
+      <p begin="00:19:59.840" end="00:20:04.950">...and I...because no one's browsing with that the only thing that's been browsers this host name that's what my</p>
+      <p begin="00:20:04.950" end="00:20:07.350">...right and it's.</p>
+      <p begin="00:20:07.350" end="00:20:12.600">It's fantastic right...I go to level...right now been a assigned to this</p>
+      <p begin="00:20:12.600" end="00:20:18.950">...probably will be any...the point from their...so, yeah.</p>
+      <p begin="00:20:18.950" end="00:20:22.660">Like to...to the...can go through all...right so that's a good startso,</p>
+      <p begin="00:20:22.660" end="00:20:26.140">first the first step...observing we can do</p>
+      <p begin="00:20:26.140" end="00:20:31.180">as you can see there'sobvious transition from observe to analyze and to mitigate right so</p>
+      <p begin="00:20:31.180" end="00:20:40.150">to see what analyze can do let's move on...talk about a scenario.</p>
+      <p begin="00:20:40.150" end="00:20:41.220">Right.</p>
+      <p begin="00:20:41.220" end="00:20:46.220">...you basically now you...your website is all of a sudden performing slower...exceptions giving</p>
+      <p begin="00:20:46.220" end="00:20:50.160">error so what do I do next and how to...you will have available for that</p>
+      <p begin="00:20:50.160" end="00:20:53.310">...the specific thing?</p>
+      <p begin="00:20:53.310" end="00:20:57.300">I'm going to go back to my buggy big recite and let's change the</p>
+      <p begin="00:20:57.300" end="00:21:02.550">scope here again and to that guy.</p>
+      <p begin="00:21:02.550" end="00:21:04.560">You see and once you log in with</p>
+      <p begin="00:21:04.560" end="00:21:09.510">...all the subscription all the sites is one single place for you do start monitoring stuff from your</p>
+      <p begin="00:21:09.510" end="00:21:14.940">on here's the buggy...said I'm going to browse through it.</p>
+      <p begin="00:21:14.940" end="00:21:17.540">Looks fantastic and I'll try and order</p>
+      <p begin="00:21:17.540" end="00:21:21.280">...right...you see...spinning.</p>
+      <p begin="00:21:22.450" end="00:21:27.220">...to find out what's going on why this is spinning that's the next step to try and</p>
+      <p begin="00:21:27.220" end="00:21:30.190">...tools like frame how</p>
+      <p begin="00:21:30.190" end="00:21:33.300">...forever field request even tracing.</p>
+      <p begin="00:21:33.300" end="00:21:37.070">Okay, cool so I'll show you one little tricks it took fifteen</p>
+      <p begin="00:21:37.070" end="00:21:41.710">...up vogel my site through all settings.</p>
+      <p begin="00:21:41.710" end="00:21:47.950">Answer diagnostics the.</p>
+      <p begin="00:21:47.950" end="00:21:52.650">And, you'll see this little thing vehicle field request raising that have turned on the for</p>
+      <p begin="00:21:52.650" end="00:21:56.700">...one site turn that on I can actually go and set</p>
+      <p begin="00:21:56.700" end="00:22:02.780">up a good rules in other...I go to the clue endpoints by the way...you click on a...</p>
+      <p begin="00:22:02.780" end="00:22:07.580">where it's what more is running it location is and then go...from here on.</p>
+      <p begin="00:22:07.580" end="00:22:09.330">So, I'll go to my include endpoint</p>
+      <p begin="00:22:09.330" end="00:22:12.160">...command prompt sites ww.</p>
+      <p begin="00:22:13.420" end="00:22:17.160">And, I'll open of the web content file.</p>
+      <p begin="00:22:17.160" end="00:22:19.030">And, you'll see advert rules</p>
+      <p begin="00:22:19.030" end="00:22:24.900">that basically pace the to say in all trace everything in order one path.</p>
+      <p begin="00:22:24.900" end="00:22:28.100">Put all the providers trace all the providers and the</p>
+      <p begin="00:22:28.100" end="00:22:32.800">...definition status go-to hundred you can...a field a definition of a time taken you can say</p>
+      <p begin="00:22:32.800" end="00:22:37.320">...page takes more than twenty seconds then only traces</p>
+      <p begin="00:22:37.320" end="00:22:42.530">on tracing right now for every single requests in that and then there's another rule that basically...for five</p>
+      <p begin="00:22:42.530" end="00:22:48.310">...whatnot so since I had this...and...tracing the order one-page which</p>
+      <p begin="00:22:48.310" end="00:22:51.260">...to be this specific get order one</p>
+      <p begin="00:22:51.260" end="00:22:58.000">...cake I can go to my...a board site.</p>
+      <p begin="00:22:58.000" end="00:23:00.680">And, I see a fair blog here.</p>
+      <p begin="00:23:00.680" end="00:23:03.810">I will refresh and...a little bit to get the</p>
+      <p begin="00:23:03.810" end="00:23:06.500">logs back but he came up right away right here and when</p>
+      <p begin="00:23:06.500" end="00:23:10.630">...this guy you'll see the bunch of information your the tyne the try...</p>
+      <p begin="00:23:10.630" end="00:23:15.570">generated what was the url what was the work with the status quo and the time</p>
+      <p begin="00:23:15.570" end="00:23:21.450">...I can filter them...url time taken which...that alike if I look at this guy</p>
+      <p begin="00:23:21.450" end="00:23:26.250">...school down here...report that I got...here's the page that I was tracing?</p>
+      <p begin="00:23:26.250" end="00:23:30.650">For status...wondered that was a trigger status it was five...will give...five hundred...time thinking</p>
+      <p begin="00:23:30.650" end="00:23:33.770">...it says it took about fifteen seconds</p>
+      <p begin="00:23:33.770" end="00:23:38.630">to respond great if I go...you...will see the entire pipeline of dot</p>
+      <p begin="00:23:38.630" end="00:23:44.060">net what happened to that requests which all module tested what was the...body was</p>
+      <p begin="00:23:44.060" end="00:23:48.870">request headers right in things along those lines and I can start looking to</p>
+      <p begin="00:23:48.870" end="00:23:52.570">words spend most of the time from the time taken but I can do a little</p>
+      <p begin="00:23:52.570" end="00:23:59.930">trickier request detail and the different views...performance view and...</p>
+      <p begin="00:23:59.930" end="00:24:04.690">It took fifteen seconds inside the eight-minute pipeline leave right so it was</p>
+      <p begin="00:24:04.690" end="00:24:09.560">spending some time inside the...net biplanes processing if I click on view trace.</p>
+      <p begin="00:24:09.560" end="00:24:11.490">...me up I spend.</p>
+      <p begin="00:24:11.490" end="00:24:14.680">Time...lazy module right it's great it's a</p>
+      <p begin="00:24:14.680" end="00:24:17.460">...modular...but it's a good structured...like I said, you know,</p>
+      <p begin="00:24:17.460" end="00:24:22.360">you don't have to tell you the how to fix things...pointing to right direction and he and she will know what</p>
+      <p begin="00:24:22.360" end="00:24:26.860">he's changers...will know from the point I'm simply in this</p>
+      <p begin="00:24:26.860" end="00:24:31.580">...module under sleeping for fifteen seconds and</p>
+      <p begin="00:24:31.580" end="00:24:36.490">that's does that right it's a really simple situation here where on the order one-page</p>
+      <p begin="00:24:36.490" end="00:24:40.930">nicely just to prove points and now we purely any into one more layer</p>
+      <p begin="00:24:40.930" end="00:24:43.650">...see what's going wrong over here we can start</p>
+      <p begin="00:24:43.650" end="00:24:48.990">pone more layer and then there are other things and tricks situ and...when you want to trouble</p>
+      <p begin="00:24:48.990" end="00:24:53.970">...even more deeper and I'll get to that in a different scenarios one multi want to show you guys</p>
+      <p begin="00:24:53.970" end="00:24:58.090">is the event viewer how many of you didn't know that we have we had event your</p>
+      <p begin="00:24:58.090" end="00:25:04.380">roger but services there is event you're right it's just not visible in the portal</p>
+      <p begin="00:25:04.380" end="00:25:10.390">and is not there but I'll show you what it looks like and how to get there again support mortal aggravate</p>
+      <p begin="00:25:10.390" end="00:25:14.880">...here that's what I do here is basically grab the event</p>
+      <p begin="00:25:14.880" end="00:25:20.060">...that emitted from the application within this ambox across different</p>
+      <p begin="00:25:20.060" end="00:25:24.740">instances combine them together and present in one single you here you can</p>
+      <p begin="00:25:24.740" end="00:25:29.600">final filter I'm just like your windows the event your that you use to event</p>
+      <p begin="00:25:29.600" end="00:25:33.610">idea what not, you know, here's a another example?</p>
+      <p begin="00:25:33.610" end="00:25:43.810">Really early something the stupid that I'm doing with the...order that it feels.</p>
+      <p begin="00:25:43.810" end="00:25:48.040">Refresher and I should a little bit I should get the event here right this is the</p>
+      <p begin="00:25:48.040" end="00:25:51.140">event that happened...tells me and exception...dot and</p>
+      <p begin="00:25:51.140" end="00:25:56.120">because dot and logging is beautiful and it tells me here's where the game...misspelled</p>
+      <p begin="00:25:56.120" end="00:26:00.850">stack I call that stock which is fine but he I...on a...because I was doing...</p>
+      <p begin="00:26:00.850" end="00:26:07.110">devin wrong-way...gives you call...your typical dot net event that you want to goal</p>
+      <p begin="00:26:07.110" end="00:26:11.450">...so event yours present for every single side of all do the</p>
+      <p begin="00:26:11.450" end="00:26:14.890">aggregation from all the...</p>
+      <p begin="00:26:14.890" end="00:26:17.900">All right simple.</p>
+      <p begin="00:26:17.900" end="00:26:21.780">Stuff.</p>
+      <p begin="00:26:21.780" end="00:26:24.670">Let's move and see what's next</p>
+      <p begin="00:26:24.670" end="00:26:28.220">ok here's always million-dollar question I know why sites</p>
+      <p begin="00:26:28.220" end="00:26:32.930">being usually support for a huge click on one-page and...been spending spinning.</p>
+      <p begin="00:26:32.930" end="00:26:35.610">Some customer reports say hey I'm trying to</p>
+      <p begin="00:26:35.610" end="00:26:41.090">axes application of this part spinning you get on the machine you...and...the same</p>
+      <p begin="00:26:41.090" end="00:26:46.910">...you is already talking about right how do...solution that is always...always...unless,</p>
+      <p begin="00:26:46.910" end="00:26:51.810">you know, what exactly is happening inside that process that is serving this</p>
+      <p begin="00:26:51.810" end="00:26:56.630">...ad that given time...having that lightweight snapshot...</p>
+      <p begin="00:26:56.630" end="00:27:01.440">always helping can really...the...you can do a...debug none of that works</p>
+      <p begin="00:27:01.440" end="00:27:06.010">right the only thing...to get in the situation is probably some large cummings engaging there's a slow</p>
+      <p begin="00:27:06.010" end="00:27:14.020">...so page for x number of people and does that all right let's see we can do about that?</p>
+      <p begin="00:27:14.020" end="00:27:20.100">So, over here and I'm right now going to go and manually starreda</p>
+      <p begin="00:27:20.100" end="00:27:22.920">...some part of it but here's this is diagnostics...this is</p>
+      <p begin="00:27:22.920" end="00:27:27.040">the be for all the things that we've been talking about right now we're starting to get</p>
+      <p begin="00:27:28.380" end="00:27:33.490">Something more aggressiveon a diagnostic...diagnostics</p>
+      <p begin="00:27:33.490" end="00:27:38.580">...also recalled that as a...service where rightnow movie allow</p>
+      <p begin="00:27:38.580" end="00:27:42.560">you to do is configure what is important to you for that application</p>
+      <p begin="00:27:42.560" end="00:27:45.330">...locks memory dumps which is the</p>
+      <p begin="00:27:45.330" end="00:27:49.100">ww process that is hosting application http</p>
+      <p begin="00:27:49.100" end="00:27:53.670">log or php this might be phd application you don't care about the dot net in...can be</p>
+      <p begin="00:27:53.670" end="00:27:59.230">...for this was the absolute I go instead the configuration to memory dump.</p>
+      <p begin="00:27:59.230" end="00:28:03.240">This the...the service is nothing but</p>
+      <p begin="00:28:03.240" end="00:28:09.210">...little web job me call as a...runner is it is a little</p>
+      <p begin="00:28:09.210" end="00:28:14.460">warrior...this guy does that a knows based on a setting</p>
+      <p begin="00:28:14.460" end="00:28:16.880">...asking into collect.</p>
+      <p begin="00:28:16.880" end="00:28:18.310">...knows what to do with the</p>
+      <p begin="00:28:18.310" end="00:28:23.200">...just collected and build...report and try and make sense out of it right the reason I call him</p>
+      <p begin="00:28:23.200" end="00:28:27.900">a lawyer because this is feature that you use under really hostile situation</p>
+      <p begin="00:28:27.900" end="00:28:32.760">right when things are not working well in the vm is not something configuring this nice feature exit</p>
+      <p begin="00:28:32.760" end="00:28:37.730">...setting this guy in there when the memory spiking...abused biking the situation is really</p>
+      <p begin="00:28:37.730" end="00:28:42.320">bad entomol okay all right I'm going to go send you in there...the memory done</p>
+      <p begin="00:28:42.320" end="00:28:47.290">...this law...them over here...kill everything out there come back and tell me what</p>
+      <p begin="00:28:47.290" end="00:28:52.240">happened right fantastic most the time it works great.</p>
+      <p begin="00:28:52.240" end="00:28:57.050">But, there are situations where there's warrior will need help and if the if the wharf</p>
+      <p begin="00:28:57.050" end="00:29:02.580">...on is really, really bad you might not work, you know, eventually I do blind to make this guy</p>
+      <p begin="00:29:02.580" end="00:29:08.110">...democracy for a will get there but he's not there yet so.</p>
+      <p begin="00:29:08.110" end="00:29:11.620">This runner basically right now I'm coming in to go and collect the memory</p>
+      <p begin="00:29:11.620" end="00:29:15.330">...because that's what I care about...on a throughout this.</p>
+      <p begin="00:29:15.330" end="00:29:19.540">Infrastructure is completely extensible...I'll let me talk about</p>
+      <p begin="00:29:19.540" end="00:29:24.190">...after I show you what I mean so it makes more sense ok so let's see</p>
+      <p begin="00:29:24.190" end="00:29:27.840">...apps spinning slow I'm going to go back.</p>
+      <p begin="00:29:27.840" end="00:29:32.990">And, I'm going to reproduces situation I really hate chocolate cake right so that's why named...as</p>
+      <p begin="00:29:32.990" end="00:29:39.170">a deadlock cakes and I'm going to try and order the chocolate cake twice.</p>
+      <p begin="00:29:39.170" end="00:29:42.050">Here which...this once.</p>
+      <p begin="00:29:42.050" end="00:29:47.610">Now let me just try and get this guy here one more time.</p>
+      <p begin="00:29:47.610" end="00:29:50.890">Really quick before the situation here.</p>
+      <p begin="00:29:50.890" end="00:29:54.290">Ok, the seems to be spinning right.</p>
+      <p begin="00:29:54.290" end="00:29:57.170">And, now you...wiser spinning for whatever</p>
+      <p begin="00:29:57.170" end="00:30:01.940">reason if somebody else goes to different side the different...people working what</p>
+      <p begin="00:30:01.940" end="00:30:05.230">...do institute this situation you can come back here.</p>
+      <p begin="00:30:05.230" end="00:30:09.850">And, this site and this click on a single button that says something is</p>
+      <p begin="00:30:09.850" end="00:30:11.170">wrong diagnose now.</p>
+      <p begin="00:30:12.180" end="00:30:17.120">This is going out there and the submitted a session based on the settings that you provided</p>
+      <p begin="00:30:17.120" end="00:30:19.670">...static collecting the dumps right.</p>
+      <p begin="00:30:19.670" end="00:30:24.040">If you click on a diagnose number from this point on a basically going to go through all the</p>
+      <p begin="00:30:24.040" end="00:30:26.340">...that you have inside your sites if your</p>
+      <p begin="00:30:26.340" end="00:30:31.130">site scale to three or four or five is going to make a wrong number one number two number three</p>
+      <p begin="00:30:31.130" end="00:30:35.800">...before and just go get the data and try and make sense out of it</p>
+      <p begin="00:30:35.800" end="00:30:40.800">is eventually when it runs right so here you see...did finish generating the memory dumps and</p>
+      <p begin="00:30:40.800" end="00:30:45.740">...analyzing at this point if I were to go back to the diagnosis consul and the process</p>
+      <p begin="00:30:45.740" end="00:30:49.990">explorer I should be able to show you what I meant by extensibility you see</p>
+      <p begin="00:30:49.990" end="00:30:54.170">it's calling a dump analyzer javascript and this host</p>
+      <p begin="00:30:55.700" end="00:30:59.550">...has been running all of them is running...the chide with jobs right.</p>
+      <p begin="00:30:59.550" end="00:31:03.890">So, they should finish and a little bit while</p>
+      <p begin="00:31:03.890" end="00:31:07.460">...and it's done right so I can basically now expand this.</p>
+      <p begin="00:31:07.460" end="00:31:10.940">This is basically the whole memory number of the process and I can be built the</p>
+      <p begin="00:31:10.940" end="00:31:12.350">report based on.</p>
+      <p begin="00:31:13.490" end="00:31:17.980">What...found in that process that I'm going to go and click on that?</p>
+      <p begin="00:31:17.980" end="00:31:22.640">And, you'll see it found bunch of things and has a recommendations on top of...before I</p>
+      <p begin="00:31:22.640" end="00:31:27.530">started them why change the configuration on the...so I it knows that there was</p>
+      <p begin="00:31:27.530" end="00:31:32.030">the configured...that heck...the shutdown of the app domain which is fine</p>
+      <p begin="00:31:32.030" end="00:31:36.870">but here if I start reading into all the recommendations giving here and it tells,</p>
+      <p begin="00:31:36.870" end="00:31:39.370">you know, and, whatever possible gives you a link the</p>
+      <p begin="00:31:39.370" end="00:31:43.750">to an external location very talks about what happens one these sort</p>
+      <p begin="00:31:43.750" end="00:31:48.460">of situation occur and how you troubleshooting over here you can see is</p>
+      <p begin="00:31:48.460" end="00:31:52.590">...of the to...are basically waiting to enter a dot net</p>
+      <p begin="00:31:52.590" end="00:31:57.130">...has been held by thirty-four and a bunch of guys are trying to get into it into</p>
+      <p begin="00:31:57.130" end="00:32:00.490">...connections have been running for a long-time if I click on that will tell me which</p>
+      <p begin="00:32:00.490" end="00:32:02.660">connections yes I've been trying water?</p>
+      <p begin="00:32:03.760" end="00:32:05.190">The some</p>
+      <p begin="00:32:05.190" end="00:32:11.100">chocolate cake if I go back here again and click on the third thirty-four this holding the</p>
+      <p begin="00:32:11.100" end="00:32:15.950">lock it gives me a native call stack of what is happening on that...alongside with the</p>
+      <p begin="00:32:15.950" end="00:32:20.930">...right...tells me method be is holding some...channel enter</p>
+      <p begin="00:32:20.930" end="00:32:25.230">...and then other guys are basically.</p>
+      <p begin="00:32:25.230" end="00:32:28.080">Waiting on that.</p>
+      <p begin="00:32:28.080" end="00:32:31.440">Right and twenty-eight so if I go back into my code.</p>
+      <p begin="00:32:31.440" end="00:32:38.440">And, try and see where the lobbies...common here...method is basically rabin</p>
+      <p begin="00:32:38.440" end="00:32:43.370">...a...for an treasure...the b</p>
+      <p begin="00:32:43.370" end="00:32:46.950">...long the and...right...basically</p>
+      <p begin="00:32:46.950" end="00:32:51.200">...classing deadlock situation here but and even though it looks very</p>
+      <p begin="00:32:51.200" end="00:32:55.200">...the code perspective but e the tool has an ability to look at these</p>
+      <p begin="00:32:55.200" end="00:32:56.780">...read the call stacks and</p>
+      <p begin="00:32:56.780" end="00:33:01.900">identify the situations and start pointing you guys and what you need to do right if you were to show this</p>
+      <p begin="00:33:01.900" end="00:33:06.730">board to the developer wrote the code windows...you will exactly know what is wrong and how to fix</p>
+      <p begin="00:33:06.730" end="00:33:11.370">it right besides thosethe situations you so I showed you the</p>
+      <p begin="00:33:11.370" end="00:33:16.310">request is the work in-flight how long they've been running for the gc usage and all the other cool</p>
+      <p begin="00:33:16.310" end="00:33:21.340">...I'll go through the report one by one slowly here...the name of the...</p>
+      <p begin="00:33:21.340" end="00:33:25.600">what the architecture is what your top cpu threads are what...with through the</p>
+      <p begin="00:33:25.600" end="00:33:31.800">...cpu what you clr information is the how what threads in that situation</p>
+      <p begin="00:33:31.800" end="00:33:35.660">just a plot...what is to be context available</p>
+      <p begin="00:33:35.660" end="00:33:40.430">is pages been running on thread twenty-fourth is thirty-six if you click on...the cost act</p>
+      <p begin="00:33:40.430" end="00:33:46.060">...this is very...what has happened the situation is basically you just dumped...the</p>
+      <p begin="00:33:46.060" end="00:33:50.970">...given time and process was broken for that moment and as soon as the doubles</p>
+      <p begin="00:33:50.970" end="00:33:53.360">finish history...be executions from the client</p>
+      <p begin="00:33:53.360" end="00:33:58.040">perspective he or she just experienced of very slow delay and loading the page which</p>
+      <p begin="00:33:58.040" end="00:34:01.810">was not loading to begin with right so here, you know,</p>
+      <p begin="00:34:01.810" end="00:34:06.180">and, then it gives you all the dot net exceptions that are knob...garbage collector yet and,</p>
+      <p begin="00:34:06.180" end="00:34:10.710">things along those lines ucdavis connection strains?</p>
+      <p begin="00:34:10.710" end="00:34:14.510">...beautiful things...the at the height high-level it tries to tell you what</p>
+      <p begin="00:34:14.510" end="00:34:18.720">it following and what can be done to try and...specific issue from this point</p>
+      <p begin="00:34:18.720" end="00:34:23.260">on right and this all knowledge information is been build based on years and years</p>
+      <p begin="00:34:23.260" end="00:34:28.020">of troubleshooting with the actual customers when we understand and identify</p>
+      <p begin="00:34:28.020" end="00:34:32.880">...specific issue we try and automate the role into the engine and deploy inside this</p>
+      <p begin="00:34:32.880" end="00:34:37.610">a next time somebody else sees it he or she can basically try and figure out what</p>
+      <p begin="00:34:37.610" end="00:34:41.090">went wrong right so we this is a constant journey we keep updating...rules</p>
+      <p begin="00:34:41.090" end="00:34:45.990">...final patents keep on pushing them into...eventually...get...every</p>
+      <p begin="00:34:45.990" end="00:34:50.640">address ninety percent of the issues that are specific to app service but?</p>
+      <p begin="00:34:50.640" end="00:34:54.200">But,...a great start ok to this page finally field which is</p>
+      <p begin="00:34:54.200" end="00:35:01.300">timed afterwards so...scenario right if I go here and the...</p>
+      <p begin="00:35:01.300" end="00:35:05.110">...these are my sessions of this point great.</p>
+      <p begin="00:35:05.110" end="00:35:10.580">Let's see what's next we can do.</p>
+      <p begin="00:35:10.580" end="00:35:14.010">Right so this...great dougherty only works...with a dot length.</p>
+      <p begin="00:35:14.010" end="00:35:14.900">What if...phd</p>
+      <p begin="00:35:14.900" end="00:35:19.510">...can I use the same tool for phd?</p>
+      <p begin="00:35:19.510" end="00:35:24.500">So, let's try and see the what is the if I have I have a php</p>
+      <p begin="00:35:26.680" end="00:35:29.940">...to go...basically change the context.</p>
+      <p begin="00:35:29.940" end="00:35:36.540">...that specific guy.</p>
+      <p begin="00:35:36.540" end="00:35:41.570">it's a very simple wordpress like the flight's it right...browse...it's spinning,</p>
+      <p begin="00:35:41.570" end="00:35:45.970">spinning, spinning...wordpress...I can understand wide</p>
+      <p begin="00:35:45.970" end="00:35:49.690">...write-in amtrack I'll try and use the same technique that I</p>
+      <p begin="00:35:49.690" end="00:35:54.020">did in basically get the data for that too right so we'll just go</p>
+      <p begin="00:35:54.020" end="00:36:00.960">...the browse to a couple of times.</p>
+      <p begin="00:36:00.960" end="00:36:08.080">Okay, and, I come back...analyze...the settings I should have this page because I</p>
+      <p begin="00:36:08.080" end="00:36:12.430">...for this before yes it's just phd so you can see it setting is per</p>
+      <p begin="00:36:12.430" end="00:36:17.310">site is not tied to...said any of that again I can come here and</p>
+      <p begin="00:36:17.310" end="00:36:22.330">this click on diagnose...I can go to metrics...tab and I'll talk about...a little bit</p>
+      <p begin="00:36:22.330" end="00:36:26.480">...exactly is but I can see there's a specific instance only run</p>
+      <p begin="00:36:26.480" end="00:36:30.930">on a one instance right now so I'm...go and diagnose from here when I click submit</p>
+      <p begin="00:36:30.930" end="00:36:35.580">diagnosis from this point what I'm doing at this point is basically saying don't cry</p>
+      <p begin="00:36:35.580" end="00:36:38.390">...the session on all the instances that</p>
+      <p begin="00:36:38.390" end="00:36:43.620">I might have on the website just I just care about the specific guy because it doesn't look right</p>
+      <p begin="00:36:43.620" end="00:36:48.690">so I'm going to go initiate on that into taking the whole site downright I'll show you what looks like when we...too</p>
+      <p begin="00:36:48.690" end="00:36:55.620">often but they should have kicked off the session here for phd it's done and php</p>
+      <p begin="00:36:55.620" end="00:37:00.950">Fortunately is a very lightweight the process so for us in a debugging</p>
+      <p begin="00:37:00.950" end="00:37:04.850">is what we do not trying dump the phd process up because</p>
+      <p begin="00:37:04.850" end="00:37:09.240">we realize that on a given side they can be hundreds of phd running and dumping</p>
+      <p begin="00:37:09.240" end="00:37:13.110">...all-out is insane so we in-flight basically grab the</p>
+      <p begin="00:37:13.110" end="00:37:16.920">snapshot of the process and run the analyzer almost php and build</p>
+      <p begin="00:37:16.920" end="00:37:22.000">...right so let's see if this guy caught...</p>
+      <p begin="00:37:22.000" end="00:37:24.880">So, if I click on this...spicy...for</p>
+      <p begin="00:37:24.880" end="00:37:30.300">process running right already...were running the index esp page and</p>
+      <p begin="00:37:30.300" end="00:37:34.480">we can go to them one by one so I'll click on this guy...</p>
+      <p begin="00:37:34.480" end="00:37:36.870">Tells me again the environment variable with system up time</p>
+      <p begin="00:37:36.870" end="00:37:41.500">the process of time debug session it gives me a native call...the php with this trying</p>
+      <p begin="00:37:41.500" end="00:37:45.970">...do it seems like...trying to do some...file unlink</p>
+      <p begin="00:37:45.970" end="00:37:49.750">a operation trying to remove some file and delete a file.</p>
+      <p begin="00:37:49.750" end="00:37:54.510">Okay, that's interesting it tells me all modules unload inside the process right even this</p>
+      <p begin="00:37:54.510" end="00:37:57.490">...stop wordpress people usually have modules install.</p>
+      <p begin="00:37:58.590" end="00:38:04.580">...also tells me the handle information the cpu time here's the money part</p>
+      <p begin="00:38:04.580" end="00:38:07.310">...phd call...it tells me what happened to the page</p>
+      <p begin="00:38:07.310" end="00:38:11.400">...executed twice years line of code to action.</p>
+      <p begin="00:38:11.400" end="00:38:14.390">Capture hot there's a plugging...captures</p>
+      <p begin="00:38:14.390" end="00:38:18.450">...a clean-up right so that could be part of the reason why the</p>
+      <p begin="00:38:18.450" end="00:38:22.200">...slow so what I can do from this point on is just</p>
+      <p begin="00:38:22.200" end="00:38:31.650">go to this site the...could win point.</p>
+      <p begin="00:38:31.650" end="00:38:36.000">Ok,...sites...</p>
+      <p begin="00:38:36.000" end="00:38:37.500">Think...the wb content.</p>
+      <p begin="00:38:38.540" end="00:38:41.400">Uploads capture and just because I know</p>
+      <p begin="00:38:41.400" end="00:38:45.960">...plugging this is basically this guides highs to create...and take find everything that</p>
+      <p begin="00:38:45.960" end="00:38:50.900">was a comes in entice...and parceled on everything that was a...if I go into the</p>
+      <p begin="00:38:50.900" end="00:38:56.590">lead all these files because I don't needham delete star p and d.</p>
+      <p begin="00:38:56.590" end="00:39:12.380">...take a little because the tons and tons of...</p>
+      <p begin="00:39:12.380" end="00:39:17.770">But,...get...point I'm on a cohen refresh this and trying to leave that one more time off</p>
+      <p begin="00:39:17.770" end="00:39:21.660">And, once I deleted the performance of the page issued improve dramatically right</p>
+      <p begin="00:39:21.660" end="00:39:29.280">so let's try one more time because there's just way too many files in...the bp content.</p>
+      <p begin="00:39:29.280" end="00:39:43.090">Uploads capture.</p>
+      <p begin="00:39:43.090" end="00:39:47.800">All right let's to the leads...</p>
+      <p begin="00:39:47.800" end="00:39:52.150">The process running system might...use okay I'm going to go now and trying to control of five and see if</p>
+      <p begin="00:39:52.150" end="00:40:00.780">it performance improves a little bit.</p>
+      <p begin="00:40:00.780" end="00:40:05.230">And, it...was much better than previously I can go...the list that is that</p>
+      <p begin="00:40:05.230" end="00:40:09.700">...get the point right so it's usually helpful the not only...a dot net...of</p>
+      <p begin="00:40:09.700" end="00:40:14.820">spacey this it does a good...on troubleshooting phd as well.</p>
+      <p begin="00:40:14.820" end="00:40:19.470">...going to go enclose all the stuff out here before we move on to the next one</p>
+      <p begin="00:40:19.470" end="00:40:23.840">and also gives opc request information for that specific time the</p>
+      <p begin="00:40:23.840" end="00:40:30.000">...global variables if there was any lost error that was happening the permission...was trying to</p>
+      <p begin="00:40:30.000" end="00:40:38.320">...the processor itself was...permission...also...you guys give the...all right.</p>
+      <p begin="00:40:38.320" end="00:40:41.470">...want to show role quick.</p>
+      <p begin="00:40:41.470" end="00:40:42.860">...just the time...nondescript</p>
+      <p begin="00:40:42.860" end="00:40:47.940">...but I can show the there's a if your subscription or</p>
+      <p begin="00:40:47.940" end="00:40:52.730">...that you running has a my sequel database you can go to analyze seven we have a integration with</p>
+      <p begin="00:40:52.730" end="00:40:56.290">your db see if you click on is clearly b tab it tries</p>
+      <p begin="00:40:56.290" end="00:41:01.670">and calls the clearly be database and tells you what connections that are running I don't have a little...anything going</p>
+      <p begin="00:41:01.670" end="00:41:07.120">...you open connections if you've done any...nations...slow log entry size of a databases how much has been</p>
+      <p begin="00:41:07.120" end="00:41:11.480">...usually useful...well.</p>
+      <p begin="00:41:11.480" end="00:41:17.170">All right this one.</p>
+      <p begin="00:41:17.170" end="00:41:21.720">Ok, so, this is all great right now I can do bunch of things</p>
+      <p begin="00:41:21.720" end="00:41:24.960">when sites...or slow availability or exception.</p>
+      <p begin="00:41:26.060" end="00:41:30.980">But,...what if this things are happening in the middle-of-the-night what if it's happening to wanted-to</p>
+      <p begin="00:41:30.980" end="00:41:36.280">customers not everybody right when I come and get a...I try and see the sites up</p>
+      <p begin="00:41:36.280" end="00:41:41.380">...but some go customers complaining, you know, I don't want to do this I want you to automate this automatically</p>
+      <p begin="00:41:41.380" end="00:41:43.800">...some sort of customers who really don't care about</p>
+      <p begin="00:41:43.800" end="00:41:48.330">...find out what was going wrong as long as you can fix it right you just like just restarting</p>
+      <p begin="00:41:48.330" end="00:41:51.630">...restart just...to the automatically right.</p>
+      <p begin="00:41:51.630" end="00:41:54.300">And, that's where the mitigate the comes into picture</p>
+      <p begin="00:41:54.300" end="00:41:57.050">...is a feature called arguing.</p>
+      <p begin="00:41:57.050" end="00:42:01.140">And, I'm going to show you the ux the...for that recently.</p>
+      <p begin="00:42:02.350" end="00:42:06.610">This feature did not have a ux up until a few days ago.</p>
+      <p begin="00:42:06.610" end="00:42:11.330">It was only configured why ...file?</p>
+      <p begin="00:42:11.330" end="00:42:15.180">But, now...does which is good.</p>
+      <p begin="00:42:15.180" end="00:42:21.950">So, we just go back and...wife favorite...dn.</p>
+      <p begin="00:42:21.950" end="00:42:26.710">All right and the mitigate over here I can</p>
+      <p begin="00:42:26.710" end="00:42:30.300">set...rule-based on certain conditions right so now</p>
+      <p begin="00:42:30.300" end="00:42:34.180">I know that things when things are not working all I want to kick-off</p>
+      <p begin="00:42:34.180" end="00:42:38.800">of workflow instead of me come in and trying to get data automatically right so I'm</p>
+      <p begin="00:42:38.800" end="00:42:42.650">...to say...</p>
+      <p begin="00:42:42.650" end="00:42:48.780">And, when I do you'll see a bunch of situations like that I can capture I can see max...and</p>
+      <p begin="00:42:48.780" end="00:42:52.330">...for that and...number of requests</p>
+      <p begin="00:42:52.330" end="00:42:56.850">...taken action this is a vanilla scenario, you know,</p>
+      <p begin="00:42:56.850" end="00:43:01.120">you app after serving thousand requests is going to be crashing or doin'</p>
+      <p begin="00:43:01.120" end="00:43:03.110">memory legal whatever might as well just,</p>
+      <p begin="00:43:03.110" end="00:43:09.880">you know, if it serves thousand requests is in thirty seconds the setter rule antigen action?</p>
+      <p begin="00:43:09.880" end="00:43:12.150">So, let me just go back to this again slow</p>
+      <p begin="00:43:12.150" end="00:43:16.420">...a second one second scenario you can define number of</p>
+      <p begin="00:43:16.420" end="00:43:21.040">...classes in a given amount of timeframe in a given time in trouble</p>
+      <p begin="00:43:21.040" end="00:43:22.410">...if arm getting.</p>
+      <p begin="00:43:24.440" end="00:43:29.730">...the...is taken more than thirty seconds to serve in the last two minutes</p>
+      <p begin="00:43:29.730" end="00:43:34.400">there is definitely something raw help me out right so I can go and say like set of rules</p>
+      <p begin="00:43:34.400" end="00:43:39.170">in thirty-two courses take sixty seconds we serve last hundred-twenty</p>
+      <p begin="00:43:39.170" end="00:43:40.500">seconds.</p>
+      <p begin="00:43:40.500" end="00:43:44.380">Or something on the moment added...tells me coincide you action okay what all the actions we</p>
+      <p begin="00:43:44.380" end="00:43:51.740">support you can login event you can recycle or you can run a custom action.</p>
+      <p begin="00:43:51.740" end="00:43:56.960">The default custom action is you can run the...runner that we talked about that consul and...this guidance</p>
+      <p begin="00:43:56.960" end="00:44:01.860">is one of my favorite ones and we'll see the demo for...a little bit but what this guy this is,</p>
+      <p begin="00:44:01.860" end="00:44:05.930">you know, what when this condition is hit owned the vm</p>
+      <p begin="00:44:05.930" end="00:44:10.040">...the entire site right so you can have five workers running and one of them is</p>
+      <p begin="00:44:10.040" end="00:44:13.410">...acting bad and...worker is the one that's going to</p>
+      <p begin="00:44:13.410" end="00:44:18.040">...send a signal that I'm the one that's hitting this trigger you want tunica some actual</p>
+      <p begin="00:44:18.040" end="00:44:20.390">...consul with collect kill</p>
+      <p begin="00:44:20.390" end="00:44:24.990">and analyze right so let me just show you here what this guy does...I'm going to go</p>
+      <p begin="00:44:24.990" end="00:44:28.950">...data I'm going to kill the bad process and recover</p>
+      <p begin="00:44:28.950" end="00:44:33.770">...situation and then I'll analyze...this situation happened the middle-of-the-night</p>
+      <p begin="00:44:33.770" end="00:44:38.960">...you basically collect the data recovered yourself automatically and in the morning you read</p>
+      <p begin="00:44:38.960" end="00:44:45.450">you have the report...to help you understand what...wrong right so we'll see how this works...action real quick?</p>
+      <p begin="00:44:45.450" end="00:44:47.910">So, that's a slow requests going to</p>
+      <p begin="00:44:47.910" end="00:44:52.570">go on it and then status code again you can do number of requests is that give the hb</p>
+      <p begin="00:44:52.570" end="00:44:57.530">five hundred subset...status goes in this interval taken action which is</p>
+      <p begin="00:44:57.530" end="00:45:02.340">again very useful bunch of customer use...situation is well the majority of them really like</p>
+      <p begin="00:45:02.340" end="00:45:04.910">...request because it's a good way to understand or</p>
+      <p begin="00:45:04.910" end="00:45:10.150">to take the situation then there's one final one which is a my favorite one</p>
+      <p begin="00:45:10.150" end="00:45:17.060">...now I'm going to go and say that...memory of a products it right...bite so?</p>
+      <p begin="00:45:17.060" end="00:45:21.930">Most of time you end up getting customers right...you when you get a website in of the and the...to put as many</p>
+      <p begin="00:45:21.930" end="00:45:26.910">web says they can and there's always one bag I that takes of all the memory and a fix-all the other</p>
+      <p begin="00:45:26.910" end="00:45:32.460">guys right so it's hard to do basically go and ...come out but</p>
+      <p begin="00:45:32.460" end="00:45:37.860">you could basically use...tool to your advantage and the see if I can</p>
+      <p begin="00:45:37.860" end="00:45:41.420">reproduce issues I'm going to go and see if this guy five hundred</p>
+      <p begin="00:45:43.050" end="00:45:47.900">it goes about five hundred megabytes and once you take a custom action of</p>
+      <p begin="00:45:47.900" end="00:45:54.380">doing this right I'm going to go and the...just basically see update?</p>
+      <p begin="00:45:54.380" end="00:45:58.410">The rules been updated its and make sure it...anymore rules the only rule that I have is of</p>
+      <p begin="00:45:58.410" end="00:46:02.090">the process goes about five hundred megabytes take a custom action</p>
+      <p begin="00:46:02.090" end="00:46:03.410">...kill analyze.</p>
+      <p begin="00:46:04.420" end="00:46:11.980">All right so we go back to our famous back bakery application...this up.</p>
+      <p begin="00:46:11.980" end="00:46:15.780">And, I'll keep this keep this.</p>
+      <p begin="00:46:15.780" end="00:46:17.820">...doesn't hurt okay.</p>
+      <p begin="00:46:17.820" end="00:46:23.170">So, browser this application and I'm going to load test one specific page</p>
+      <p begin="00:46:23.170" end="00:46:27.660">...created...leak and all...what it looks like.</p>
+      <p begin="00:46:27.660" end="00:46:29.660">So, before we...we just go back here</p>
+      <p begin="00:46:29.660" end="00:46:33.590">in process explore try and show you what looks like.</p>
+      <p begin="00:46:33.590" end="00:46:36.750">This is our guide that within the bp right he's sitting</p>
+      <p begin="00:46:36.750" end="00:46:42.640">...megabytes forty-one thread count everything looks good go back here trying reproduce</p>
+      <p begin="00:46:42.640" end="00:46:47.480">setting about a thousand requests using tiny get to an order three-page and</p>
+      <p begin="00:46:47.480" end="00:46:50.430">...you should see a little bit if I go to analyze.</p>
+      <p begin="00:46:51.490" end="00:46:54.180">And, refresh.</p>
+      <p begin="00:46:54.180" end="00:46:58.170">Couple times probably bash in the load...already triggered the</p>
+      <p begin="00:46:58.170" end="00:47:02.890">...to find megabyte it started the collect workflow for me I don't have to do anything at this point</p>
+      <p begin="00:47:02.890" end="00:47:05.710">it's everything's working automatically...I go here</p>
+      <p begin="00:47:05.710" end="00:47:10.270">professes and I'll see this...probably gone bad really,</p>
+      <p begin="00:47:10.270" end="00:47:13.050">really bad...one-point-five gigabyte the</p>
+      <p begin="00:47:13.050" end="00:47:18.050">...consul kicked off in knowsley needs to do is going to go and collect the data</p>
+      <p begin="00:47:18.050" end="00:47:22.310">as soon...done collecting is going to call killed the process so the next</p>
+      <p begin="00:47:22.310" end="00:47:25.920">...experience from this will build a...and tell you exactly</p>
+      <p begin="00:47:25.920" end="00:47:32.550">what went wrong in the morning or whenever you...look at it and trying to fix it.</p>
+      <p begin="00:47:32.550" end="00:47:32.870">Okay,</p>
+      <p begin="00:47:32.870" end="00:47:39.790">so, it takes a little bit right because...what it's trying to dump one-point-one some gigabyte of data.</p>
+      <p begin="00:47:39.790" end="00:47:44.770">that's why I say it's a little...right does it does wonders even in the hostile situations but when things got really,</p>
+      <p begin="00:47:44.770" end="00:47:47.620">really bad is a to gigabyte right now it you might need some help</p>
+      <p begin="00:47:47.620" end="00:47:51.050">...and I'll show you how to help them out a little bit while that's</p>
+      <p begin="00:47:51.050" end="00:47:56.190">work in all show you the one that I had already created hopefully this is all now this is</p>
+      <p begin="00:47:56.190" end="00:48:00.170">...just now...this is it.</p>
+      <p begin="00:48:00.170" end="00:48:03.280">Let me see if this is it, yeah, had previously</p>
+      <p begin="00:48:03.280" end="00:48:07.540">ran this and while waiting for this to finish...go and show you what this looks like</p>
+      <p begin="00:48:07.540" end="00:48:12.230">...so here tells me thread twenty-nine skit of garbage collection fantastic, you know,</p>
+      <p begin="00:48:12.230" end="00:48:16.940">it's a tells...of us are looking to manage code source me on the context here right</p>
+      <p begin="00:48:16.940" end="00:48:22.460">as medien to a really, really bad point very has to kick-off garbage collection the cpu should be</p>
+      <p begin="00:48:22.460" end="00:48:27.420">eighty-one percent because uses kicked off here's a beautiful part again it tells you what you should be dawn how you</p>
+      <p begin="00:48:27.420" end="00:48:32.310">should halogen beautiful links wherever possible here I want to see what this consuming the most memory</p>
+      <p begin="00:48:32.310" end="00:48:37.310">at click on that until the system that web buddies to be context is taken that...thinking about</p>
+      <p begin="00:48:37.310" end="00:48:43.060">one-point-three gigabytes...six objects of those arrays here and it tells you again what</p>
+      <p begin="00:48:43.060" end="00:48:45.290">...finalizing q what is a large object</p>
+      <p begin="00:48:45.290" end="00:48:49.410">...those guys around a large job keep right so the only way...going to...on the</p>
+      <p begin="00:48:49.410" end="00:48:53.170">...to...and...to will only collect that guy</p>
+      <p begin="00:48:53.170" end="00:48:57.670">...not rooted right it doesn't seem like it has been collecting because it seems like it's been</p>
+      <p begin="00:48:57.670" end="00:49:00.340">...if I go back to my code and try and</p>
+      <p begin="00:49:00.340" end="00:49:09.970">...what exactly I'm trying to do here the...context.</p>
+      <p begin="00:49:09.970" end="00:49:16.420">We context let's go to the definition for this guy.</p>
+      <p begin="00:49:16.420" end="00:49:20.350">Yeah, I'm trying to add the context of every single-issue</p>
+      <p begin="00:49:20.350" end="00:49:24.910">request five hundred times into history object right.</p>
+      <p begin="00:49:24.910" end="00:49:29.310">Now...that's done I go to the definition for that here and see this</p>
+      <p begin="00:49:29.310" end="00:49:34.270">is static right is going to be routed it will never be collected right but people end up doing this</p>
+      <p begin="00:49:34.270" end="00:49:37.390">...mistakes right but...the point is if you show your</p>
+      <p begin="00:49:37.390" end="00:49:42.270">dev this specifics information is enough for them to...from that point on</p>
+      <p begin="00:49:42.270" end="00:49:47.290">right imagine trying to do all the stuff when the things...working well and production...debugged</p>
+      <p begin="00:49:47.290" end="00:49:52.440">...man it's usually not going to work and if it's if it's been you bring the devil and...what's happening is</p>
+      <p begin="00:49:52.440" end="00:49:58.980">...seattle right...our writing the...when you shown this, you know,</p>
+      <p begin="00:49:58.980" end="00:50:03.860">exactly what's going on but it gives you all the beautiful information possible those you should be storing of this thing</p>
+      <p begin="00:50:03.860" end="00:50:08.050">...not when trying to automate things as much as we can so we should go</p>
+      <p begin="00:50:08.050" end="00:50:13.500">back here to the process...here.</p>
+      <p begin="00:50:13.500" end="00:50:18.300">This bagged should've been gone by now yes it is I don't have the all...on turned on</p>
+      <p begin="00:50:18.300" end="00:50:23.380">so the new process hasn't kicked off and this should have finished it</p>
+      <p begin="00:50:23.380" end="00:50:27.250">has if I...click on this depending on wanted triggered</p>
+      <p begin="00:50:27.250" end="00:50:33.150">...I was lucky here to sign in third...the...a bunch of things and it's</p>
+      <p begin="00:50:33.150" end="00:50:37.230">highly because you've been...and the same exact same thing.</p>
+      <p begin="00:50:37.230" end="00:50:41.550">Right so it works every single time and I recommend you guys try this out the on</p>
+      <p begin="00:50:41.550" end="00:50:46.560">the different situations wherever possible lights and the water out into the vm...wonderland works</p>
+      <p begin="00:50:46.560" end="00:50:51.190">when it doesn't I'll show you how to recover from that situation as well because you probably</p>
+      <p begin="00:50:51.190" end="00:50:53.830">...hostile place to begin with</p>
+      <p begin="00:50:53.830" end="00:50:58.330">ok so let's go back here and let me show role quick how do you how you</p>
+      <p begin="00:50:58.330" end="00:51:04.700">...or get rid of that situation so you go back here and not to this guy.</p>
+      <p begin="00:51:04.700" end="00:51:07.440">...this close this close this.</p>
+      <p begin="00:51:07.440" end="00:51:12.730">This is a guy here.</p>
+      <p begin="00:51:12.730" end="00:51:16.110">...data folder.</p>
+      <p begin="00:51:16.110" end="00:51:20.990">And,...very logs reports and sessions are right I can go to...folder.</p>
+      <p begin="00:51:20.990" end="00:51:26.490">And, based on a date and time and I was executed I can download whatever I can go delete from your.</p>
+      <p begin="00:51:26.490" end="00:51:30.880">Yes, I have a feedback for myself as well I'm going to put the delete and right next to</p>
+      <p begin="00:51:30.880" end="00:51:34.470">...so you can get rid of it from that point on and yeah,</p>
+      <p begin="00:51:34.470" end="00:51:39.410">before now you can just basically delete these guys from here on and the moment</p>
+      <p begin="00:51:39.410" end="00:51:43.430">...a...session which...active complete and collect logs only collect</p>
+      <p begin="00:51:43.430" end="00:51:47.710">...one will all will be only activated when the das consul</p>
+      <p begin="00:51:47.710" end="00:51:52.800">...in active will have the sessions that are running right now completed the one that</p>
+      <p begin="00:51:52.800" end="00:51:56.930">...done you-can delete all the sections in one of the moment you do that</p>
+      <p begin="00:51:56.930" end="00:52:00.660">...not list into your the.</p>
+      <p begin="00:52:00.660" end="00:52:03.490">Session if you ever see that as a</p>
+      <p begin="00:52:03.490" end="00:52:05.900">...or the collection spinning,</p>
+      <p begin="00:52:05.900" end="00:52:10.240">spinning, spinning that never comes back because usually a very fascinating to watch that spinning because it's about tell</p>
+      <p begin="00:52:10.240" end="00:52:13.250">...something sometimes you might not because like I</p>
+      <p begin="00:52:13.250" end="00:52:18.320">...situation was back you can always go back in scale-up endow and the</p>
+      <p begin="00:52:18.320" end="00:52:22.030">...and will restart the thing and that's when you survived</p>
+      <p begin="00:52:22.030" end="00:52:26.800">or basically saved and from a bad situation ok</p>
+      <p begin="00:52:26.800" end="00:52:32.110">real quick and the matrix that I'll show you guys but I if I go back here to buggy bits</p>
+      <p begin="00:52:32.110" end="00:52:44.630">...basically say scale?</p>
+      <p begin="00:52:44.630" end="00:52:47.420">In...that's done I'm going to stop and start just</p>
+      <p begin="00:52:47.420" end="00:52:53.390">force tandy because the scaling takes a little bit yahoo this.</p>
+      <p begin="00:52:53.390" end="00:52:58.450">On down here.</p>
+      <p begin="00:52:58.450" end="00:52:59.670">Start.</p>
+      <p begin="00:52:59.670" end="00:53:04.400">...ok so that's coming up so now I should have for instances but if I get a metrics stabbing trying</p>
+      <p begin="00:53:04.400" end="00:53:07.780">...this guy.</p>
+      <p begin="00:53:07.780" end="00:53:10.290">A little bit I should be able to see</p>
+      <p begin="00:53:10.290" end="00:53:13.810">...for gm's that comes up this is different from the actual</p>
+      <p begin="00:53:13.810" end="00:53:16.720">...because now what you seen up here is that</p>
+      <p begin="00:53:16.720" end="00:53:21.570">site specific cpu memory on that instance what you see on the algebra</p>
+      <p begin="00:53:21.570" end="00:53:24.700">...is your combine cpu memory usage for that given</p>
+      <p begin="00:53:24.700" end="00:53:28.590">site over here you can come in and see what is specific to the given site</p>
+      <p begin="00:53:28.590" end="00:53:32.640">write the cpu memory every http statics again this will give you</p>
+      <p begin="00:53:32.640" end="00:53:36.840">...research will give you how many request has been served failed on the</p>
+      <p begin="00:53:36.840" end="00:53:41.560">ibm for that site instead of the entire aggregation is a great way to find out which</p>
+      <p begin="00:53:41.560" end="00:53:45.730">re m is busted which is taking how much traffic which is not doing develop and</p>
+      <p begin="00:53:45.730" end="00:53:50.590">...to invests most right it gives a network traffic and all the good seventy-four instances</p>
+      <p begin="00:53:50.590" end="00:53:54.770">there you...the short by one-hour twenty four hours.</p>
+      <p begin="00:53:54.770" end="00:53:59.720">Five minutes whatever tickles fancy over here and also we give you ability to reach</p>
+      <p begin="00:53:59.720" end="00:54:04.520">...wwe on that via right because when you go to the portal and try and start the</p>
+      <p begin="00:54:04.520" end="00:54:07.700">site is...take everything down and restart all the</p>
+      <p begin="00:54:07.700" end="00:54:12.570">...over here you can just say in what I want to restart just the bad guy on the end.</p>
+      <p begin="00:54:12.570" end="00:54:16.830">...that gives you five-second change...mind.</p>
+      <p begin="00:54:16.830" end="00:54:21.630">To wait and we'll call the wb and you'll start...great fantastic so that's how</p>
+      <p begin="00:54:21.630" end="00:54:26.300">we can do par vm you can diagnose per vm as well by looking at the memory cpu</p>
+      <p begin="00:54:26.300" end="00:54:31.540">...sets you get a good idea which is bad instead of doing a hammer of all the...take one out and,</p>
+      <p begin="00:54:31.540" end="00:54:36.520">...from that point on...so we how're running a little bit...a time I want</p>
+      <p begin="00:54:36.520" end="00:54:42.450">to touched...long-lasting we code that situation and the last thing is</p>
+      <p begin="00:54:42.450" end="00:54:49.690">this basically this...is what you do when all of this...we talk about we are top of</p>
+      <p begin="00:54:49.690" end="00:54:52.370">...and you tried all these things and you still is</p>
+      <p begin="00:54:52.370" end="00:54:56.720">...help we do in the situation right how many of you don't mind paying for the board</p>
+      <p begin="00:54:56.720" end="00:55:03.160">...support should be free...one...I denied this how do you think is ridiculous to</p>
+      <p begin="00:55:03.160" end="00:55:07.550">...reporting issue for live site or service issue the everyone pretty much,</p>
+      <p begin="00:55:07.550" end="00:55:11.230">yeah, we try to solve the...and we're working on the...eventually</p>
+      <p begin="00:55:11.230" end="00:55:16.200">yet that we try to solve the second part there's a live set issue and you really do want to</p>
+      <p begin="00:55:16.200" end="00:55:20.710">...don't have a simple contract you really want report something to somebody who's listening or</p>
+      <p begin="00:55:20.710" end="00:55:26.910">...compressible borrow click on need help right so like the subscription that has</p>
+      <p begin="00:55:26.910" end="00:55:30.800">issue like the side the seven issue.</p>
+      <p begin="00:55:30.800" end="00:55:36.280">What category...that your scene?</p>
+      <p begin="00:55:36.280" end="00:55:38.400">Will be more descriptive and help me</p>
+      <p begin="00:55:38.400" end="00:55:43.360">for us get an idea of any sense?</p>
+      <p begin="00:55:43.360" end="00:55:47.080">...sent an email alternative and we'll give you this little nine-one-one disclaimer of</p>
+      <p begin="00:55:47.080" end="00:55:50.750">...emergency please called the bohr I don't wait on us whatever right but,</p>
+      <p begin="00:55:50.750" end="00:55:55.200">at least when you do this there is and I'm going to show you got my inbox...just to prove that</p>
+      <p begin="00:55:55.200" end="00:55:57.560">...it works.</p>
+      <p begin="00:55:57.560" end="00:56:00.270">The...get sense out...my servicing team</p>
+      <p begin="00:56:00.270" end="00:56:07.260">...people who are actually monitoring the service whatnot in a little bit you'll see that here the</p>
+      <p begin="00:56:07.260" end="00:56:10.110">And, there are a bunch of people monitoring it...reply</p>
+      <p begin="00:56:10.110" end="00:56:14.960">are basically start working on the issue right away...available replies...five ten minutes</p>
+      <p begin="00:56:14.960" end="00:56:20.970">and to see if anybody wants to see and...so let me see go back here but, yeah,</p>
+      <p begin="00:56:20.970" end="00:56:25.310">that one way to report issue and, you know, we take that very seriously the services you will work on</p>
+      <p begin="00:56:25.310" end="00:56:29.890">it right away but if somebody asked me...I code this...and we're going to nicely tell you</p>
+      <p begin="00:56:31.090" end="00:56:36.110">...you work on that and part of to make the work.</p>
+      <p begin="00:56:36.110" end="00:56:40.920">So, I think, you know, I have covered the majority of the scenarios that I want to talk about there's more</p>
+      <p begin="00:56:40.920" end="00:56:43.180">...building but at this point in</p>
+      <p begin="00:56:43.180" end="00:56:46.920">...me just go back and make sure there's no more slight.</p>
+      <p begin="00:56:46.920" end="00:56:51.690">Yet there's an...brow than the we recommend...please give us feedback tell us what you like to see</p>
+      <p begin="00:56:51.690" end="00:56:58.500">will like to build that...whenever possible in a does that.</p>
+      <p begin="00:57:03.790" end="00:57:05.100">Yes.</p>
+      <p begin="00:57:05.100" end="00:57:23.750">I'll repeat the question.</p>
+      <p begin="00:57:23.750" end="00:57:27.390">Next question the question is sorry.</p>
+      <p begin="00:57:27.390" end="00:57:30.860">...excellent question the question was how does this diagnosis</p>
+      <p begin="00:57:30.860" end="00:57:34.370">servicecompare against things like app inside and things along those lines</p>
+      <p begin="00:57:34.370" end="00:57:38.920">...the app inside it basically something that you work into.</p>
+      <p begin="00:57:38.920" end="00:57:42.950">This basically on the other its...app insight right.</p>
+      <p begin="00:57:42.950" end="00:57:46.490">Not every customer will have app inside or any of that</p>
+      <p begin="00:57:46.490" end="00:57:52.330">the instrumentation running for the code from giggle even officially might not be completely</p>
+      <p begin="00:57:52.330" end="00:57:59.770">...truly optimized to basically capture all different situations...try to solve here is this</p>
+      <p begin="00:57:59.770" end="00:58:04.550">there's one very specific situation for everything's running...a production and you want to have</p>
+      <p begin="00:58:04.550" end="00:58:09.630">a very lightweight snapshot of what is exactly...without installing any tools without</p>
+      <p begin="00:58:09.630" end="00:58:14.750">...any the tracing anything...your the application just to</p>
+      <p begin="00:58:14.750" end="00:58:19.020">go at that specific time right so the app inside and everything works great</p>
+      <p begin="00:58:19.020" end="00:58:23.590">on the p the zen the profiling everything works create when you</p>
+      <p begin="00:58:23.590" end="00:58:28.820">tuna part request atroubleshooting and trying to find out what the...is</p>
+      <p begin="00:58:28.820" end="00:58:33.670">request and things along those lines the perfect question is how does work with multi the</p>
+      <p begin="00:58:33.670" end="00:58:37.950">...applications and we're trying to solve that one by one because what this does</p>
+      <p begin="00:58:37.950" end="00:58:43.310">...gives you snapshot of a web processes it ted culture to a point that if you're stuck on</p>
+      <p begin="00:58:43.310" end="00:58:47.260">top of database will say I'm making a...to database and I'm waiting to get</p>
+      <p begin="00:58:47.260" end="00:58:52.050">response back you will not tell you what exactly is wrong at this point on</p>
+      <p begin="00:58:52.050" end="00:58:55.880">...database on your query we try to solve that step by taking</p>
+      <p begin="00:58:55.880" end="00:58:59.830">a further collaboration with the clear...that you saw where they have</p>
+      <p begin="00:58:59.830" end="00:59:04.310">...diagnosis epa recall that does a connection test that does that tell you how many</p>
+      <p begin="00:59:04.310" end="00:59:08.650">connections open if anyone nation what not so the...information but we rely on</p>
+      <p begin="00:59:08.650" end="00:59:15.350">all the other environment to basically help us participate into this.</p>
+      <p begin="00:59:15.350" end="00:59:36.400">This project eventually have the full end-to-end the solutions like...optimal.</p>
+      <p begin="00:59:36.400" end="00:59:41.250">Now...at this is basically whatever's on the machine that you taken to take a</p>
+      <p begin="00:59:41.250" end="00:59:45.110">...if it happens I...the agent rights and the scripting on</p>
+      <p begin="00:59:45.110" end="00:59:52.780">a client-side browser and then get the data and then instrument from this on oct.</p>
+      <p begin="00:59:52.780" end="00:59:59.330">...and revolving.</p>
+      <p begin="00:59:59.330" end="01:00:04.050">That's correct...the all the other absolutes that are all then are basically using the same platform right so</p>
+      <p begin="01:00:04.050" end="01:00:08.590">they what like I said aboutbriefly touch to a point that this these framework</p>
+      <p begin="01:00:08.590" end="01:00:14.180">is extensible today if you have an application...application you...your own</p>
+      <p begin="01:00:14.180" end="01:00:19.300">locks and, you know, what exactly...to do with the law if some error happen in the log you can</p>
+      <p begin="01:00:19.300" end="01:00:24.140">want to tell your client do xyz you just write the collector you...the parser you</p>
+      <p begin="01:00:24.140" end="01:00:30.430">uploaded...I don't have a us to show how...can be file and you are part of the system now right so now</p>
+      <p begin="01:00:30.430" end="01:00:34.420">...basically participating in this framework in the all you have to decide the collector,</p>
+      <p begin="01:00:34.420" end="01:00:38.840">you know, where you log one, you know, what the engine log means write the collector write the partial</p>
+      <p begin="01:00:38.840" end="01:00:42.310">...report and you can pretty much plug-and-play in this?</p>
+      <p begin="01:00:42.310" end="01:00:47.130">...every mobile app or anybody else, you know,...able eventually they want to the can</p>
+      <p begin="01:00:47.130" end="01:00:53.550">part participate into it right a node collector node parser there's nothing stopping you from doing that.</p>
+      <p begin="01:00:53.550" end="01:00:56.750">And, then you can take advantage of this auto healing triggers that we talked about and</p>
+      <p begin="01:00:56.750" end="01:01:04.880">then trigger your analyzers and collector instead of the one that I in the box.</p>
+      <p begin="01:01:04.880" end="01:01:07.590">Hra questions thanks.</p>
+      <p begin="01:01:07.590" end="01:01:10.430">All right thanks lawson moi.</p>
+      <p begin="01:01:24.160" end="01:01:28.320">So, it's a good question the question was the...holding rule that I was setting up do they go instead of a</p>
+      <p begin="01:01:28.320" end="01:01:29.770">...the answer</p>
+      <p begin="01:01:29.770" end="01:01:34.530">is no actually previously when we didn't have the ux via large you to put those rules</p>
+      <p begin="01:01:34.530" end="01:01:39.200">...other convict when you do this from the ux it goes inside the application</p>
+      <p begin="01:01:39.200" end="01:01:44.230">...can pick file so if you...said the role using the ux and also set one with the</p>
+      <p begin="01:01:44.230" end="01:01:49.690">...the one in the web configures going-to-take the president's right so this actually large</p>
+      <p begin="01:01:49.690" end="01:01:51.910">...flexibility of running multiple</p>
+      <p begin="01:01:51.910" end="01:01:55.700">custom actions today with arguing if you were just in a web</p>
+      <p begin="01:01:55.700" end="01:02:00.290">...app is you can only on one custom action for multiple triggers but now you can</p>
+      <p begin="01:02:00.290" end="01:02:05.410">...few triggers and...matching apples and the one that's important you</p>
+      <p begin="01:02:05.410" end="01:02:10.300">can have...web convicts and algal monitor both of them and you get a flexibility of doing more advanced</p>
+      <p begin="01:02:10.300" end="01:02:12.710">...if you need to moi.</p>
+      <p begin="01:02:20.660" end="01:02:24.730">...the question...do does clue work with the are back the answer to is today</p>
+      <p begin="01:02:24.730" end="01:02:28.090">...you need to be aside administrator to log on to the</p>
+      <p begin="01:02:28.090" end="01:02:33.120">...the to perform xyz but like I said this feature that we building</p>
+      <p begin="01:02:33.120" end="01:02:36.330">...to called the...a prototype is an preview but</p>
+      <p begin="01:02:36.330" end="01:02:39.300">...eventually move this into portal and when we do that the</p>
+      <p begin="01:02:39.300" end="01:02:49.920">our backs scenario will command and where you allow people to do this for the...</p>
+      <p begin="01:02:49.920" end="01:03:06.450">Sorry can you please repeat the question.</p>
+      <p begin="01:03:06.450" end="01:03:10.550">Excellent question so yes there are there are api...available and I'll show you the</p>
+      <p begin="01:03:10.550" end="01:03:14.340">command-line available for certain scenarios especially for the as one of</p>
+      <p begin="01:03:14.340" end="01:03:18.450">the diagnostics ones so if I go to see.</p>
+      <p begin="01:03:18.450" end="01:03:21.820">The mitigate in the...</p>
+      <p begin="01:03:21.820" end="01:03:27.370">Will...my blog...the talks about the command-line...that is available right now I include</p>
+      <p begin="01:03:27.370" end="01:03:31.140">...for bunch of api things that you can do restarting the process and calling things</p>
+      <p begin="01:03:31.140" end="01:03:35.460">along those lines but here there's a canal...that you can do use and, you know,</p>
+      <p begin="01:03:35.460" end="01:03:39.550">and, that's what I've been using for custom action in custom actually would choose to run...only</p>
+      <p begin="01:03:39.550" end="01:03:46.500">...if you lighted...something that we prebuilt...</p>
+      <p begin="01:03:46.500" end="01:03:51.530">All right cool thanks thank you.</p>
+
+    </div>
+  </body>
+</tt>

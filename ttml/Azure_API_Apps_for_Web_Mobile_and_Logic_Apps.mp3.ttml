@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.923</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.450" end="00:00:04.860">All right so without further ado today what I'm going to talk about is</p>
+      <p begin="00:00:04.860" end="00:00:10.020">a newer service that we brought to the measure platform called as your api</p>
+      <p begin="00:00:10.020" end="00:00:14.820">apps and in particular I'm going to focus on a lot of different scenarios which you can</p>
+      <p begin="00:00:14.820" end="00:00:19.620">use as your api apps when you're building web apps mobile apps as well as logic</p>
+      <p begin="00:00:19.620" end="00:00:27.240">apps so we're going to look at all these today I do want to remind everyone to please scan at the</p>
+      <p begin="00:00:27.240" end="00:00:32.470">end of the session and submit feedback would love to learn some of your impressions about this new</p>
+      <p begin="00:00:32.470" end="00:00:37.220">service that were bringing of course love feedback in terms of how we articulated how we</p>
+      <p begin="00:00:37.220" end="00:00:45.490">presented and those sorts of things that helps the...teachers quite a bit.</p>
+      <p begin="00:00:45.490" end="00:00:48.990">I see okay so today here's the</p>
+      <p begin="00:00:48.990" end="00:00:53.350">...ways...going to walk through so we're going to talk about some of the challenges</p>
+      <p begin="00:00:53.350" end="00:00:56.290">that you've told us that you face when</p>
+      <p begin="00:00:56.290" end="00:01:01.560">authoring as well as consuming apis we're going to talk a little bit about the architecture</p>
+      <p begin="00:01:01.560" end="00:01:06.050">of api apps...and spend time focus authentication we'll look at all</p>
+      <p begin="00:01:06.050" end="00:01:10.720">...different languages and tools and decays that you can use in order to interact with the</p>
+      <p begin="00:01:10.720" end="00:01:15.600">measure api apps we're going to try to talk to some on premises services as well we'll give</p>
+      <p begin="00:01:15.600" end="00:01:20.760">...a try and, then of course we've got sas connectors and are going to look at logic apps</p>
+      <p begin="00:01:20.760" end="00:01:24.120">...so a whole bunch of different things in fact what this I think</p>
+      <p begin="00:01:24.120" end="00:01:27.450">...to reinforces that these as your api apps</p>
+      <p begin="00:01:27.450" end="00:01:32.870">of foundational piece of some of the app services technology that live within,</p>
+      <p begin="00:01:32.870" end="00:01:38.730">within manager now the last couple of days I've spent a lot of time at the booth I probably spoken do a lot of you</p>
+      <p begin="00:01:38.730" end="00:01:43.900">and even in the weeks before the conference we spent a lot of time talking to developers</p>
+      <p begin="00:01:43.900" end="00:01:48.950">about some of the challenges faced when interacting with apis and here's just</p>
+      <p begin="00:01:48.950" end="00:01:53.310">and enumeration of some of these all the manual plumbing that you end up having to</p>
+      <p begin="00:01:53.310" end="00:01:58.530">write when building out new apis whether deals with logging or authentication or</p>
+      <p begin="00:01:58.530" end="00:02:03.510">single sign on interacting with secret stores or configuration</p>
+      <p begin="00:02:03.510" end="00:02:09.410">and a lot heard a lot about versioning and updating of the apis as well?</p>
+      <p begin="00:02:09.410" end="00:02:14.020">Integrating into on premises services is a key need felt by a lot of people</p>
+      <p begin="00:02:14.020" end="00:02:17.160">...on that as well today so that was one of the difficulties</p>
+      <p begin="00:02:17.160" end="00:02:21.200">as well in terms of authoring api apps being able to connect to the</p>
+      <p begin="00:02:21.200" end="00:02:25.940">data that you have in the enterprise that does not live within the cloud.</p>
+      <p begin="00:02:25.940" end="00:02:30.270">As well as connecting to sas investments whether that's office three sixty five or sales</p>
+      <p begin="00:02:30.270" end="00:02:34.670">force drop box or some other api that you end up consuming is part of your</p>
+      <p begin="00:02:34.670" end="00:02:40.460">enterprise governance and monitoring of apis understanding how people are using your apis</p>
+      <p begin="00:02:40.460" end="00:02:45.340">and having control over it as well as just some of the complexity around the existing</p>
+      <p begin="00:02:45.340" end="00:02:48.400">...are making making providing</p>
+      <p begin="00:02:48.400" end="00:02:51.880">some impedance and preventing you from being able to connect to these apis.</p>
+      <p begin="00:02:53.020" end="00:02:56.020">Is anyone fuel or which agree with some of these challenges</p>
+      <p begin="00:02:57.220" end="00:03:02.540">...I'm seeing a lot of nodding heads I heard some yeses so now on the other side when it comes</p>
+      <p begin="00:03:02.540" end="00:03:08.760">to consuming apis yet again a lot of feedback that we received you know,</p>
+      <p begin="00:03:08.760" end="00:03:13.080">we all-consuming we all author apis but that's not to say it isn't difficult and</p>
+      <p begin="00:03:13.080" end="00:03:17.950">then it couldn't be made easier and as you start looking at providing apis to support</p>
+      <p begin="00:03:17.950" end="00:03:22.970">the business and support your customers and your companies</p>
+      <p begin="00:03:22.970" end="00:03:27.430">that's almost next to impossible to expose some of these apis in a way that makes</p>
+      <p begin="00:03:27.430" end="00:03:32.920">it consumable for them...all over-the-board when it comes to metadata in how we</p>
+      <p begin="00:03:32.920" end="00:03:36.440">describer apis as well as authentication</p>
+      <p begin="00:03:36.440" end="00:03:41.020">and over we hear about this lack of being able to scope apis</p>
+      <p begin="00:03:41.020" end="00:03:45.710">...organizational level being able to describe a set of apis that are important to this</p>
+      <p begin="00:03:45.710" end="00:03:50.530">organization versus another one to another organization and of course at the end and I don't know that</p>
+      <p begin="00:03:50.530" end="00:03:53.830">we'll solve this today but always a lack of</p>
+      <p begin="00:03:53.830" end="00:03:59.550">good api documentation so this is one of the these issues that we enumerate</p>
+      <p begin="00:03:59.550" end="00:04:04.520">...these couple slides are some of the drivers for why we started looking at creating</p>
+      <p begin="00:04:04.520" end="00:04:07.070">we've called as your api apps so what as</p>
+      <p begin="00:04:07.070" end="00:04:11.760">...api apps aspires to be as a platform and ecosystem and I'll talk about that</p>
+      <p begin="00:04:11.760" end="00:04:14.060">...that makes it easier for you to build</p>
+      <p begin="00:04:14.060" end="00:04:20.010">and consuming distribute apis in the cloud and on premises so why</p>
+      <p begin="00:04:20.010" end="00:04:25.200">...your api apps and what is that were accomplishing so I actually standing in the hallway before</p>
+      <p begin="00:04:25.200" end="00:04:31.590">the talk I was speaking to a gentleman that asked me before the before hand,</p>
+      <p begin="00:04:31.590" end="00:04:36.150">you know, why as your api up's instead of just web apps, you know, what's the difference I think that's a very good</p>
+      <p begin="00:04:36.150" end="00:04:39.670">question and something that I want to spend a little time talking about here before we go any</p>
+      <p begin="00:04:39.670" end="00:04:44.870">further on the left side you're going to see a bunch of benefits that come with the as your app</p>
+      <p begin="00:04:44.870" end="00:04:50.130">servicesplatform so that includes web apps as well as api</p>
+      <p begin="00:04:50.130" end="00:04:55.460">apps being a part of that platform means that these services automatically get</p>
+      <p begin="00:04:55.460" end="00:05:00.090">and to take the advantage of things like automatic...a patching enterprise</p>
+      <p begin="00:05:00.090" end="00:05:04.410">grade security high availability in all the other things enumerated that list so</p>
+      <p begin="00:05:04.410" end="00:05:09.390">api apps in a sense is built on web apps and built on app of the</p>
+      <p begin="00:05:09.390" end="00:05:13.810">app service which means that it gets inherently all these advantages but there's a</p>
+      <p begin="00:05:13.810" end="00:05:17.670">few other things that come with api apps that we think bring value to</p>
+      <p begin="00:05:17.670" end="00:05:22.250">api app developers as well as consumers so these are some of the things listed on the right side</p>
+      <p begin="00:05:22.250" end="00:05:27.030">here so bring your api as it is...don't have to rewrite your api if</p>
+      <p begin="00:05:27.030" end="00:05:30.110">you're dot net developer in your authoring your api web api</p>
+      <p begin="00:05:30.110" end="00:05:34.940">...fantastic...work fantastically on as your api apps if you're writing and</p>
+      <p begin="00:05:34.940" end="00:05:39.860">go or node you can still use those apis the way that you've authored</p>
+      <p begin="00:05:39.860" end="00:05:45.470">them within measure api apps we're not asking you to change how you build your apis we</p>
+      <p begin="00:05:45.470" end="00:05:50.330">provide mechanisms for simpler access control and we're going to spend a lot of time looking at authentication</p>
+      <p begin="00:05:50.330" end="00:05:55.740">here connectivity to sas platforms having access to connectors which</p>
+      <p begin="00:05:55.740" end="00:06:00.070">...also show you and talk about here makes it easier for you to connect to the</p>
+      <p begin="00:06:00.070" end="00:06:05.670">sas services that you care about we've taken a hard look at</p>
+      <p begin="00:06:05.670" end="00:06:10.070">...different metadata formats and I have really started to pivot</p>
+      <p begin="00:06:10.070" end="00:06:14.860">around swagger I'm not sure if you're familiar with swagger it's a way of describing</p>
+      <p begin="00:06:14.860" end="00:06:18.470">rest apis and one of the things that asher api</p>
+      <p begin="00:06:18.470" end="00:06:23.340">abs does really well is helps you describe your apis with swagger</p>
+      <p begin="00:06:23.340" end="00:06:27.180">...becomes easier to use your apis elsewhere whether it's consuming it from your</p>
+      <p begin="00:06:27.180" end="00:06:33.090">web apps or interacting with it via logic apps as well?</p>
+      <p begin="00:06:33.090" end="00:06:34.680">We've got some very specific</p>
+      <p begin="00:06:34.680" end="00:06:39.490">...visual studio tooling support which I'll show you here shortly and we do have a</p>
+      <p begin="00:06:39.490" end="00:06:44.060">public marketplace today where you can go and get third-party</p>
+      <p begin="00:06:44.060" end="00:06:46.630">...first party being microsoft as</p>
+      <p begin="00:06:46.630" end="00:06:51.510">your api apps that already exist so you can very easily instantiate them and I'll show you that now I do</p>
+      <p begin="00:06:51.510" end="00:06:55.570">list private marketplace there as well and that is something that will be bringing in the future</p>
+      <p begin="00:06:55.570" end="00:06:58.370">...talk...the into the talk but the idea that you</p>
+      <p begin="00:06:58.370" end="00:07:03.450">can also create and then have in a private organizational gallery</p>
+      <p begin="00:07:03.450" end="00:07:10.240">the api apps that you care about verses having to make them public to the world?</p>
+      <p begin="00:07:10.240" end="00:07:14.890">Now to other things listed here which are also things that...bring the platform are just like</p>
+      <p begin="00:07:14.890" end="00:07:19.860">new get has a way of managing dependencies between libraries...</p>
+      <p begin="00:07:19.860" end="00:07:23.440">Some of the run times that you use also with as your api apps you</p>
+      <p begin="00:07:23.440" end="00:07:28.180">can describe dependencies across as your api apps as well so that if you're using it as</p>
+      <p begin="00:07:28.180" end="00:07:31.950">your api app within your custom as your api app you can</p>
+      <p begin="00:07:31.950" end="00:07:33.810">describe that dependency and when it gets</p>
+      <p begin="00:07:33.810" end="00:07:38.290">deployed in manage it will end up using that dependent measure api up</p>
+      <p begin="00:07:38.290" end="00:07:43.730">then the last thing which we think is really exciting as well is we use semantic versioning on the</p>
+      <p begin="00:07:43.730" end="00:07:48.240">as your api apps as a way to manage version and you can opt into having</p>
+      <p begin="00:07:48.240" end="00:07:51.060">measure api apps automatically updated when the</p>
+      <p begin="00:07:51.060" end="00:07:55.470">package is updated as well so these are a bunch of different things that we brought with as</p>
+      <p begin="00:07:55.470" end="00:07:59.390">your api apps that we think help to solve some of those challenges so</p>
+      <p begin="00:07:59.390" end="00:08:05.020">what I want to do is with that show...first demo of how you can build</p>
+      <p begin="00:08:05.020" end="00:08:10.340">in interact with these as your api apps I'm going to switch over here now I'm going to</p>
+      <p begin="00:08:10.340" end="00:08:16.100">start here at the new the been x the as report all I'm assuming most of</p>
+      <p begin="00:08:16.100" end="00:08:21.950">you have seen this by now and you know, there's the first-class experience for creating new as your</p>
+      <p begin="00:08:21.950" end="00:08:27.090">api app we can go new choose web plus mobile and you'll see there's a whole bunch of different you know,</p>
+      <p begin="00:08:27.090" end="00:08:32.430">apps available of course we care here about the api app now when you create</p>
+      <p begin="00:08:32.430" end="00:08:34.410">...api appI'll</p>
+      <p begin="00:08:34.410" end="00:08:38.550">...talk about the architecture here...little bits of reinforce some of these things but a</p>
+      <p begin="00:08:38.550" end="00:08:43.390">couple of different pieces of infrastructure actually get deployed the first-time and they're going to it's what's,</p>
+      <p begin="00:08:43.390" end="00:08:47.840">what's also important to be cognizant of is some of the choices you make one building</p>
+      <p begin="00:08:47.840" end="00:08:51.450">your api app so for instance here I can give it a name I can choose</p>
+      <p begin="00:08:51.450" end="00:08:56.450">a service plan now service plan for leisure api up is just the same concept</p>
+      <p begin="00:08:56.450" end="00:09:01.320">as it is with the web app when you choose your service plan you're actually choosing the infrastructure</p>
+      <p begin="00:09:01.320" end="00:09:06.360">that's hosting your api app so the actual machine the virtual machine so,</p>
+      <p begin="00:09:06.360" end="00:09:11.170">you can have multiple api apps deployed and running on the same infrastructure...</p>
+      <p begin="00:09:11.170" end="00:09:16.620">by choosing to by choosing the exact same service plan so here I could choose a service</p>
+      <p begin="00:09:16.620" end="00:09:20.360">...already exists of course pricing...and resource group which becomes</p>
+      <p begin="00:09:20.360" end="00:09:24.890">a logical container for the resources that I'm deploying and subscription and I can</p>
+      <p begin="00:09:24.890" end="00:09:28.780">deploy so I'm just going to go ahead and deploy that now what's happening when</p>
+      <p begin="00:09:28.780" end="00:09:33.110">I when I created is it's going to use the measure resource manager to</p>
+      <p begin="00:09:33.110" end="00:09:37.680">instantiating create some infrastructure it takes about a minute-and-a-half to create but</p>
+      <p begin="00:09:37.680" end="00:09:42.210">once they're in your resource group you'll have a gateway which we'll talk a little bit more</p>
+      <p begin="00:09:42.210" end="00:09:46.110">...as well as the api app now just for the sake of</p>
+      <p begin="00:09:46.110" end="00:09:50.840">time I have one already created and I haven't done anything to it and,</p>
+      <p begin="00:09:50.840" end="00:09:55.620">it right here it's called the face detection api apps I'm going to go ahead so like that and</p>
+      <p begin="00:09:55.620" end="00:09:58.000">...I open it up you'll see here the as your api</p>
+      <p begin="00:09:58.000" end="00:10:01.700">...blade and in this blade we have a bunch of information</p>
+      <p begin="00:10:01.700" end="00:10:06.180">pertinent to this api app I'm going to spend a little bit time talking about some of</p>
+      <p begin="00:10:06.180" end="00:10:11.270">it for instance if you look here you can see that I've got a couple things, you know,</p>
+      <p begin="00:10:11.270" end="00:10:15.820">some of the resource group that we showed before subscription but I also have this api</p>
+      <p begin="00:10:15.820" end="00:10:20.520">outpost and gateway now the api...host is the actual web app that</p>
+      <p begin="00:10:20.520" end="00:10:23.600">the api up is running on so-if you want-to get to the web</p>
+      <p begin="00:10:23.600" end="00:10:26.870">apt to do some certain to do different things like maybe</p>
+      <p begin="00:10:26.870" end="00:10:30.710">...continuous integration which I'll shown a moment...change</p>
+      <p begin="00:10:30.710" end="00:10:34.530">...way in which scales you can select the apa</p>
+      <p begin="00:10:34.530" end="00:10:39.800">post actually go to the underlying web app and make those changes similarly if you want to</p>
+      <p begin="00:10:39.800" end="00:10:44.100">make changes to the gateway which runs in its own web app post you can</p>
+      <p begin="00:10:44.100" end="00:10:48.010">selectively gateway there and start making changes to it I'm</p>
+      <p begin="00:10:48.010" end="00:10:52.870">...some time later talking a little bit more about things like api definition so what I want to do is</p>
+      <p begin="00:10:52.870" end="00:10:55.460">first just go to all settings and</p>
+      <p begin="00:10:55.460" end="00:10:59.860">to application settings and just talk a little bit here about what</p>
+      <p begin="00:10:59.860" end="00:11:06.400">...end up seeing so you seeup automatic updates so you can automatically in</p>
+      <p begin="00:11:06.400" end="00:11:11.010">list into updates for api apps but you can also specify access levels</p>
+      <p begin="00:11:11.010" end="00:11:15.960">so what and access level is controlling who can get access to your apis by</p>
+      <p begin="00:11:15.960" end="00:11:20.200">default there's three different levels or but there are three different axis levels there's</p>
+      <p begin="00:11:21.410" end="00:11:24.580">...to internal meaning that only other as</p>
+      <p begin="00:11:24.580" end="00:11:29.240">your api apps running in the resource group the same resource group can talk to this</p>
+      <p begin="00:11:29.240" end="00:11:34.310">api of this api app so by default...up with...constrained</p>
+      <p begin="00:11:34.310" end="00:11:39.230">access levels you can change that to public authenticated which means that you</p>
+      <p begin="00:11:39.230" end="00:11:43.360">cantalk to this api up from outside of the resource group</p>
+      <p begin="00:11:43.360" end="00:11:47.040">which you have to do so with some sort of authentication or you can make</p>
+      <p begin="00:11:47.040" end="00:11:51.420">it anonymous so for this first demo what I'm going to do is just simply make this public anonymous</p>
+      <p begin="00:11:51.420" end="00:11:56.500">...becomes very easy for us to talk to it...saved that change?</p>
+      <p begin="00:11:56.500" end="00:12:01.360">And, now our api post is ready to go there's no coding it yet so...going to do is switch</p>
+      <p begin="00:12:01.360" end="00:12:05.970">over to visual studio will start building the app that will deploy into it now the...I've</p>
+      <p begin="00:12:05.970" end="00:12:11.180">decided to build is I think a fairly representative app of the kind of things that</p>
+      <p begin="00:12:11.180" end="00:12:16.610">you'll use api outposts for in this case I'm going to talk to a third-party third parties</p>
+      <p begin="00:12:16.610" end="00:12:21.630">...provider by the name of alchemy api...going to use is there</p>
+      <p begin="00:12:21.630" end="00:12:27.290">a facial detection service so that I can submit the image to their service</p>
+      <p begin="00:12:27.290" end="00:12:30.560">...returns...information back they do</p>
+      <p begin="00:12:30.560" end="00:12:34.900">they determine the gender based on the picture they'll make a guess on</p>
+      <p begin="00:12:34.900" end="00:12:40.930">age and then also if they have a public repository of well-known</p>
+      <p begin="00:12:40.930" end="00:12:45.480">famous people and they'll actually scan that repository to see if the picture is someone famous or</p>
+      <p begin="00:12:45.480" end="00:12:51.790">with the likelihood is that they are that person so what's go ahead and build it now the first thing I'm going to do is actually</p>
+      <p begin="00:12:51.790" end="00:12:58.460">create a class now I'm going to do a multi part form post to this api so I'm just going</p>
+      <p begin="00:12:58.460" end="00:13:01.480">...first create a provider that can make it easier for me to keep this</p>
+      <p begin="00:13:01.480" end="00:13:04.360">image and memory this is particularly important for the demo</p>
+      <p begin="00:13:04.360" end="00:13:14.970">but it does it I do need in order for to work so let me go ahead and create this provider?</p>
+      <p begin="00:13:14.970" end="00:13:18.850">Because I can never type well I've got a couple snippets here to go ahead and get this</p>
+      <p begin="00:13:18.850" end="00:13:21.190">goin' so this is basically</p>
+      <p begin="00:13:21.190" end="00:13:26.530">it's multi-stream provider that's going to allow me to post the image to this web api</p>
+      <p begin="00:13:26.530" end="00:13:32.100">and then grab the streams that I can do something with the stream and what I'm going to do is pass</p>
+      <p begin="00:13:32.100" end="00:13:37.830">it to the alchemy api...so I'm going to come the controller and here we've got</p>
+      <p begin="00:13:37.830" end="00:13:48.980">the values controller...just go ahead and rename this to facial?</p>
+      <p begin="00:13:48.980" end="00:13:52.130">And, not going to use of these defaults but instead.</p>
+      <p begin="00:13:53.630" end="00:13:57.330">Let me add a couple different things.</p>
+      <p begin="00:13:57.330" end="00:14:02.120">The first things I'm going to add...just a couple keys so there's an api key that are used in order to access</p>
+      <p begin="00:14:02.120" end="00:14:07.190">as well as the url for alchemy and then.</p>
+      <p begin="00:14:07.190" end="00:14:14.950">Let's add the api itself so here I've got a method that's going to allow me to</p>
+      <p begin="00:14:14.950" end="00:14:21.020">post to it ...to check to see if it's a multi part post if not it's going to send back a message saying it's</p>
+      <p begin="00:14:21.020" end="00:14:24.370">about request and, then it's using that provider to</p>
+      <p begin="00:14:24.370" end="00:14:29.200">essentially down here take the information that was posted up to intern</p>
+      <p begin="00:14:29.200" end="00:14:35.730">...file stream another I have the file stream I can go ahead and.</p>
+      <p begin="00:14:35.730" end="00:14:41.430">Creating new http...posted...to url</p>
+      <p begin="00:14:41.430" end="00:14:45.500">check the status code and then essentially take the response and the serialized</p>
+      <p begin="00:14:45.500" end="00:14:48.580">...and then return it back so essentially</p>
+      <p begin="00:14:48.580" end="00:14:53.890">this is just really a wrapper around the alchemy api.</p>
+      <p begin="00:14:53.890" end="00:14:58.460">The alchemy apis...detection service so let's go ahead and give run</p>
+      <p begin="00:14:58.460" end="00:15:03.430">this and check it out and see it make sure that it's running locally.</p>
+      <p begin="00:15:03.430" end="00:15:09.090">So, actually one thing before I do that one thing to be aware of is I didn't really point this out</p>
+      <p begin="00:15:09.090" end="00:15:13.620">...forgot to apologies you'll notice that the project template for an api app</p>
+      <p begin="00:15:13.620" end="00:15:17.280">doesn't have everything you might see in, you know, traditional nbc or even a web</p>
+      <p begin="00:15:17.280" end="00:15:21.810">pr app so a lot of the views...lot of things have been removed because the assumption is that you're</p>
+      <p begin="00:15:21.810" end="00:15:26.720">going to be focusing on building your apis but they're actually are a couple of interesting things that have been added to this</p>
+      <p begin="00:15:26.720" end="00:15:32.810">as well probably the most important is by default we've got</p>
+      <p begin="00:15:32.810" end="00:15:38.050">that's really interesting we've got swashbuckling right here so you can see swashbuckling is a new get</p>
+      <p begin="00:15:38.050" end="00:15:44.440">package that's been added what swashbuckling is...it's a library in...set of?</p>
+      <p begin="00:15:44.440" end="00:15:48.880">And, some code that will interrogate the api that you build in</p>
+      <p begin="00:15:48.880" end="00:15:51.440">your api controllers and generate the swagger</p>
+      <p begin="00:15:51.440" end="00:15:55.740">for-you so it'll describe your api using swagger meta</p>
+      <p begin="00:15:55.740" end="00:16:02.070">data and we can demonstrate that pretty easily by coming in here to the swagger configured and</p>
+      <p begin="00:16:02.070" end="00:16:07.150">...little bit down here there's a whole bunch of commented but there's a piece of code here that's</p>
+      <p begin="00:16:07.150" end="00:16:08.850">...called enable swagger you</p>
+      <p begin="00:16:08.850" end="00:16:12.520">...so if we uncommon this and run.</p>
+      <p begin="00:16:12.520" end="00:16:13.890">You know, there is no home</p>
+      <p begin="00:16:13.890" end="00:16:18.490">controller or initial view but we can do now is types swagger</p>
+      <p begin="00:16:18.490" end="00:16:22.660">and a using with swashbuckling swagger what it's doing is creating a little</p>
+      <p begin="00:16:22.660" end="00:16:27.550">harness for me to interact with the api so I can take a look at it and, you know,</p>
+      <p begin="00:16:27.550" end="00:16:31.800">see the descriptions and in some cases very easily, you know, collar get or a</p>
+      <p begin="00:16:31.800" end="00:16:36.930">post against you can also then take this string here and</p>
+      <p begin="00:16:36.930" end="00:16:39.770">...that in and see the actual swagger</p>
+      <p begin="00:16:39.770" end="00:16:43.580">jason that describes the apis as well we'll talk more about this later because</p>
+      <p begin="00:16:43.580" end="00:16:50.650">it comes very important when it comes to how you interact with the api apps you build so,</p>
+      <p begin="00:16:50.650" end="00:16:55.870">I've got it running let's go to post man and we just grab the url here and</p>
+      <p begin="00:16:55.870" end="00:17:00.990">...man we're going to do is a posts...to the endpoints api slash</p>
+      <p begin="00:17:02.100" end="00:17:08.370">Detection is what I call that no facial detection.</p>
+      <p begin="00:17:08.370" end="00:17:14.220">And, I'm going to do is...a file.</p>
+      <p begin="00:17:14.220" end="00:17:17.610">And, I've got a couple files here so.</p>
+      <p begin="00:17:17.610" end="00:17:20.010">Here's a...I actually did this earlier to see if it</p>
+      <p begin="00:17:20.010" end="00:17:26.310">...detective as a famous person and we'll see what the results are.</p>
+      <p begin="00:17:26.310" end="00:17:29.370">So, what comes back is some</p>
+      <p begin="00:17:29.370" end="00:17:33.920">coherence you'll see it comes back we've got an age range predicted of thirty five to</p>
+      <p begin="00:17:33.920" end="00:17:39.350">forty four I assume that's somewhere in the ballpark male so pretty,</p>
+      <p begin="00:17:39.350" end="00:17:43.980">pretty, pretty strongly scores mail and it is not actually detect...as scott guthrie</p>
+      <p begin="00:17:43.980" end="00:17:48.930">so if it did it would return back some additional information describing you-know-who it thinks that</p>
+      <p begin="00:17:48.930" end="00:17:55.030">the person is interestingly enough I took a picture myself and,</p>
+      <p begin="00:17:55.030" end="00:18:00.060">let me go ahead and add that and I'll send it to the service?</p>
+      <p begin="00:18:00.060" end="00:18:10.120">And, it makes some interesting predictions let's see what the result is.</p>
+      <p begin="00:18:10.120" end="00:18:17.880">So, actually turns out so first of all age range eighteen twenty four which I'm okay with.</p>
+      <p begin="00:18:17.880" end="00:18:22.840">Male which is correct and it's interesting it fines in this repository</p>
+      <p begin="00:18:22.840" end="00:18:27.520">of public images a gentleman name mikhail coder...skier</p>
+      <p begin="00:18:27.520" end="00:18:34.040">...very well so I of course I had to take a look to see...this was and.</p>
+      <p begin="00:18:34.040" end="00:18:39.240">...you guys tell me.</p>
+      <p begin="00:18:40.310" end="00:18:44.030">They say everyone has a twins I must maybe I found my twin.</p>
+      <p begin="00:18:44.030" end="00:18:48.800">...right it's an interesting service there's a whole bunch of other stuff but kind of fun to play with but so</p>
+      <p begin="00:18:48.800" end="00:18:52.860">...running locally let's go ahead and see what we can do not to</p>
+      <p begin="00:18:52.860" end="00:18:59.210">...so I'm going to go to my project right click and say publish and...familiar with</p>
+      <p begin="00:18:59.210" end="00:19:04.440">this published dialogue web apps you can import custom etc and you'll notice that</p>
+      <p begin="00:19:04.440" end="00:19:08.160">we also have now as your api apps in preview so I'm going-to go ahead</p>
+      <p begin="00:19:08.160" end="00:19:12.440">so like this and it's going to take a look at my subscription and see if I have</p>
+      <p begin="00:19:12.440" end="00:19:14.520">any existing api apps and,</p>
+      <p begin="00:19:14.520" end="00:19:17.710">of course I do some...select the face detection api app now</p>
+      <p begin="00:19:17.710" end="00:19:22.630">you could also select new instead of going through the portal you can create your...api out from</p>
+      <p begin="00:19:22.630" end="00:19:28.380">bs I want-to make sure you guys...the portal experience so ones like that and it</p>
+      <p begin="00:19:28.380" end="00:19:33.370">sets it up just like web apps is going to use publish settings file and it's going to end up doing a</p>
+      <p begin="00:19:33.370" end="00:19:40.060">web deploying push that so it's just take a moment.</p>
+      <p begin="00:19:40.060" end="00:19:45.860">Visual...not responding this take a moment to deploy.</p>
+      <p begin="00:19:45.860" end="00:19:48.580">Since already running it should be very quick so publishes...</p>
+      <p begin="00:19:48.580" end="00:19:53.400">is succeeded and that's restarting the gateway now this is important if you end up making</p>
+      <p begin="00:19:53.400" end="00:19:58.380">changes and we're going to show us an area where we're going to use continuous integration to make changes</p>
+      <p begin="00:19:58.380" end="00:20:02.110">us you need to restart the gateway so that recognizes</p>
+      <p begin="00:20:02.110" end="00:20:06.620">the swagger metadata that's been a attached to it so if you ever change the swagger</p>
+      <p begin="00:20:06.620" end="00:20:11.630">need to make sure that gateway has been reset so I'm going to grab that url.</p>
+      <p begin="00:20:11.630" end="00:20:16.140">And, come back here to postman instead of posting locally that's go ahead and switch that to</p>
+      <p begin="00:20:16.140" end="00:20:21.110">my api app and we'll just go ahead well here I'll choose a different images time my</p>
+      <p begin="00:20:21.110" end="00:20:25.460">friend adam and I and will...send and we'll see now we're talking to</p>
+      <p begin="00:20:25.460" end="00:20:29.180">our publicly anonymous as your api app that we've got</p>
+      <p begin="00:20:29.180" end="00:20:34.970">...we should see...response coming back here momentarily?</p>
+      <p begin="00:20:34.970" end="00:20:37.060">And, there isthis time we got</p>
+      <p begin="00:20:37.060" end="00:20:41.330">information about both of us so that's a very simple look at you know,</p>
+      <p begin="00:20:41.330" end="00:20:45.940">first-ever api app built-in visual studio of created from the</p>
+      <p begin="00:20:45.940" end="00:20:54.070">portal ...it further in a moment but let me go ahead and come back here to the presentation.</p>
+      <p begin="00:20:54.070" end="00:20:56.790">So, I mentioned a bunch of this stuff already but just maybe</p>
+      <p begin="00:20:56.790" end="00:21:02.100">...mentioning again as your api apps built on web apps</p>
+      <p begin="00:21:02.100" end="00:21:06.530">but provides a bunch of additional capabilities as well makes it easy to do access control</p>
+      <p begin="00:21:06.530" end="00:21:10.510">iso the metadata contracts provided by swagger it is</p>
+      <p begin="00:21:10.510" end="00:21:15.730">micros service styleone of the things that we really felt inspired by from microsoft mrs was</p>
+      <p begin="00:21:15.730" end="00:21:20.420">the idea of single purpose apis and being able to...package</p>
+      <p begin="00:21:20.420" end="00:21:24.870">...apis in a way where they're focused on the purpose of api so that they're more compose</p>
+      <p begin="00:21:24.870" end="00:21:30.170">...so we believe that the way in which you create and packages measure apis helps</p>
+      <p begin="00:21:30.170" end="00:21:35.480">you to deliver on that micros service style of single purpose compose</p>
+      <p begin="00:21:35.480" end="00:21:39.060">...apis as well and I'm going to</p>
+      <p begin="00:21:39.060" end="00:21:44.220">...bit here on premises and some of the other publishing pieces so now</p>
+      <p begin="00:21:44.220" end="00:21:50.320">here is diagram to hopefully hope to make sense of what's actually</p>
+      <p begin="00:21:50.320" end="00:21:55.970">...happening underneath, underneath the scenes so when you employer measure api</p>
+      <p begin="00:21:55.970" end="00:22:00.330">at for the first-time into let's say a new resource group are two things will be</p>
+      <p begin="00:22:00.330" end="00:22:05.060">provisions one is the gateway so you see on the left side here there's an as</p>
+      <p begin="00:22:05.060" end="00:22:09.100">your at gateway and when you when you're communicating with your as your api</p>
+      <p begin="00:22:09.100" end="00:22:11.960">you're actually communicating to via this app gateway and</p>
+      <p begin="00:22:11.960" end="00:22:17.800">there's a number of reasons for it going back to the discussion around challenges for apis</p>
+      <p begin="00:22:17.800" end="00:22:23.200">and some of the things that we're trying to make easier without your api apps one of the things is providing a</p>
+      <p begin="00:22:23.200" end="00:22:28.110">token store so if you're communicating to a sas api that has you know,</p>
+      <p begin="00:22:28.110" end="00:22:33.240">...client secret or something that's used to authenticate to it rather than doing what I</p>
+      <p begin="00:22:33.240" end="00:22:37.890">did in the first demo which is I put it right into my as your api app you can actually pull that from a</p>
+      <p begin="00:22:37.890" end="00:22:45.220">secure token store this provided as part of the platform...available via the gateway?</p>
+      <p begin="00:22:45.220" end="00:22:49.030">The other thing that helps with this too isit takes advantage of a consent</p>
+      <p begin="00:22:49.030" end="00:22:54.420">server which will facilitate some of the things that are needed as part of communicating with sas</p>
+      <p begin="00:22:54.420" end="00:22:59.540">api such as refreshing tokens I'm storing the tokens as they come back so forth</p>
+      <p begin="00:22:59.540" end="00:23:05.530">so that consent server it helps to facilitate some of the interactions the</p>
+      <p begin="00:23:05.530" end="00:23:10.640">login interactions that might occur otherwise and we'll see this in effect in logic apps here</p>
+      <p begin="00:23:10.640" end="00:23:15.620">...now behind the gateway is all the additional things that are</p>
+      <p begin="00:23:15.620" end="00:23:20.580">...that you've deployed so all the api apps so, you can deploy one or more as</p>
+      <p begin="00:23:20.580" end="00:23:25.490">your api apps into a resource group all of which will then use that application gateway that as</p>
+      <p begin="00:23:25.490" end="00:23:30.160">your api gateway so in this example here you'll see that there's a bunch of connectors like</p>
+      <p begin="00:23:30.160" end="00:23:33.520">a sales force connector ...sixty-five connector tool</p>
+      <p begin="00:23:33.520" end="00:23:38.430">your connector these are as your api apps that are facilitating connections to</p>
+      <p begin="00:23:38.430" end="00:23:41.510">sas providers but then you can also deploy custom</p>
+      <p begin="00:23:41.510" end="00:23:45.040">...api apps just like the one that I wrote for the facial</p>
+      <p begin="00:23:45.040" end="00:23:51.830">recognition at the same time to there are logic apps...talk a little bit more about them later but,</p>
+      <p begin="00:23:51.830" end="00:23:56.380">hopefully this helps to just describe a little bit of how these things are organized</p>
+      <p begin="00:23:56.380" end="00:24:01.400">in some of the different resources that are now going a little bit and more detail when it comes</p>
+      <p begin="00:24:01.400" end="00:24:05.900">to the gateway there's a lot happening in the gateway and over time even more will be happening in</p>
+      <p begin="00:24:05.900" end="00:24:10.870">the gateway...is what manages a not only access levels so</p>
+      <p begin="00:24:10.870" end="00:24:15.730">you saw how we can set things to internal or public anonymous or public-private</p>
+      <p begin="00:24:15.730" end="00:24:19.630">public authenticated but it also helps to do things like</p>
+      <p begin="00:24:19.630" end="00:24:24.510">...resolution being able to resolve how you can communicate to other is your api</p>
+      <p begin="00:24:24.510" end="00:24:29.170">...that's where it's through the gateway that you get access to isolated storage and shared</p>
+      <p begin="00:24:29.170" end="00:24:33.410">configure and, one of the things I'll show you in the portal in a moment</p>
+      <p begin="00:24:33.410" end="00:24:38.020">is the kind of api logging that's also available to you via the gateway so</p>
+      <p begin="00:24:38.020" end="00:24:40.880">you can see you know-how many requests are coming in how</p>
+      <p begin="00:24:40.880" end="00:24:46.120">many failed one of the responses that have been being sent to so forth?</p>
+      <p begin="00:24:46.120" end="00:24:51.250">So, talking a little bit more...authentication hopefully the three levels of access makes</p>
+      <p begin="00:24:51.250" end="00:24:56.410">sense so public anonymous so anyone can access...public authenticated which I'll talk a little bit more</p>
+      <p begin="00:24:56.410" end="00:25:00.580">one moment and then internal again internal being only other as</p>
+      <p begin="00:25:00.580" end="00:25:04.130">your api apps being able to talk to it and I do mean only other as</p>
+      <p begin="00:25:04.130" end="00:25:07.770">...api apps you might expect a web app deployed in</p>
+      <p begin="00:25:07.770" end="00:25:12.490">side a resource group to be able to talk to an internal as your api...but that's not the case</p>
+      <p begin="00:25:12.490" end="00:25:16.090">we decided to when it is markers internal is only other as</p>
+      <p begin="00:25:16.090" end="00:25:21.940">your api apps that can communicate to it now public authenticated is</p>
+      <p begin="00:25:21.940" end="00:25:25.300">...work it's interesting because there's a lot of different ways that you might want</p>
+      <p begin="00:25:25.300" end="00:25:30.370">to facilitate access to your as your api app so there's a number of ways that we provide</p>
+      <p begin="00:25:30.370" end="00:25:33.340">today and overtime this will continue to grow.</p>
+      <p begin="00:25:33.340" end="00:25:37.970">The first...the most important is as...active directory and I'll show you how this functions in a moment</p>
+      <p begin="00:25:37.970" end="00:25:42.200">how we can set it up and then authentic and then the secure our as</p>
+      <p begin="00:25:42.200" end="00:25:46.990">your apis using adjective directory you can use...nsa or microsoft account</p>
+      <p begin="00:25:46.990" end="00:25:52.470">...live id as well as some social identity providers such as facebook google</p>
+      <p begin="00:25:52.470" end="00:25:54.110">on twitter.</p>
+      <p begin="00:25:54.110" end="00:26:00.270">So, I believe design...slide I apologize about that</p>
+      <p begin="00:26:00.270" end="00:26:05.490">...all screwed up here so this is what I just discussed now what I want to do is show how you</p>
+      <p begin="00:26:05.490" end="00:26:09.070">can add eighty support to your api apps.</p>
+      <p begin="00:26:09.070" end="00:26:12.090">So, I'll switch over so I'm going to do is the same map</p>
+      <p begin="00:26:12.090" end="00:26:16.770">that we just built that was set as a public anonymous we're going to set to</p>
+      <p begin="00:26:16.770" end="00:26:24.630">public-private and show how we can...such that we can communicate to it so we'll start often portal.</p>
+      <p begin="00:26:24.630" end="00:26:29.170">And, I'm going to go to the as your api up again and this time set the</p>
+      <p begin="00:26:29.170" end="00:26:33.840">app setting instead of being public anonymous...set to public authenticated and save</p>
+      <p begin="00:26:33.840" end="00:26:38.680">that so we've set the access level but we haven't actually define</p>
+      <p begin="00:26:38.680" end="00:26:43.540">what identity provider we want to use if you recall from the architecture slide we do that</p>
+      <p begin="00:26:43.540" end="00:26:48.610">on a gateway somebody go ahead and select the gateway which is right here in the</p>
+      <p begin="00:26:48.610" end="00:26:51.840">blade and then...set the...settings.</p>
+      <p begin="00:26:52.980" end="00:26:58.180">And, one of the things that you'll seewhen you...settings for the gateway is identity and</p>
+      <p begin="00:26:58.180" end="00:27:03.050">it will list out the identity providers that are available today now each one of the requires</p>
+      <p begin="00:27:03.050" end="00:27:08.140">a somewhat some configuration I found with customers the most questions with</p>
+      <p begin="00:27:08.140" end="00:27:12.550">...active directory so I'm going to demonstrate how we can use adjective directory to secure this</p>
+      <p begin="00:27:12.550" end="00:27:17.440">...now a couple things are provided for you when you select this including</p>
+      <p begin="00:27:17.440" end="00:27:22.380">app url and a reply url and this is important in setting up with your id piece</p>
+      <p begin="00:27:22.380" end="00:27:27.660">that, you know, how to facilitate the communication back and forth you also need to specify with the client id</p>
+      <p begin="00:27:27.660" end="00:27:32.660">is for the identity provider using and in the case of measure active directory we want to</p>
+      <p begin="00:27:32.660" end="00:27:37.310">specify which tenant which active directory tenant that we want to</p>
+      <p begin="00:27:37.310" end="00:27:42.750">allow access to so we're going to go ahead and do that I'm going to copy this ...app url</p>
+      <p begin="00:27:42.750" end="00:27:47.510">because I'm going to use it quite a bit here I'm going to flip over to the...current</p>
+      <p begin="00:27:47.510" end="00:27:52.120">portal management managed...dot windows measure dot com and that's because as</p>
+      <p begin="00:27:52.120" end="00:27:56.520">you're active directory only surfaces up-to-date in this portal so here are</p>
+      <p begin="00:27:56.520" end="00:28:00.150">selected active directory and I have a...here called</p>
+      <p begin="00:28:00.150" end="00:28:06.120">...wagner now this is actually...all of you that have an nsa or microsoft account</p>
+      <p begin="00:28:06.120" end="00:28:09.010">...you also have a ad</p>
+      <p begin="00:28:09.010" end="00:28:14.210">tenant in this case might this is automatically created for my m...it's called</p>
+      <p begin="00:28:14.210" end="00:28:19.535">...wagner gmail dot on microsoft-dot-com so you guys can take a look and, you</p>
+      <p begin="00:28:19.535" end="00:28:25.200">know, take a look at the that for yourself as well once I selected I can come here to applications that I'm going to create</p>
+      <p begin="00:28:25.200" end="00:28:28.440">and application specific to the surface that I'm</p>
+      <p begin="00:28:28.440" end="00:28:31.640">...services that I'm securing summers says application</p>
+      <p begin="00:28:31.640" end="00:28:35.520">...organizations developing call whatever call</p>
+      <p begin="00:28:35.520" end="00:28:37.960">it build demo and it's a web</p>
+      <p begin="00:28:37.960" end="00:28:41.660">...whether api...asking for the single sign on</p>
+      <p begin="00:28:41.660" end="00:28:45.630">...url and the api app...so in this case we're going to</p>
+      <p begin="00:28:45.630" end="00:28:50.750">...that first url that we got from the ep settings</p>
+      <p begin="00:28:50.750" end="00:28:55.420">page so that it points to essentially our gateway slash login slash</p>
+      <p begin="00:28:55.420" end="00:29:00.680">ad and save that it'll create the appnow there's a couple of the things that will need</p>
+      <p begin="00:29:00.680" end="00:29:05.370">to do what we're going to have to specify with the reply url is so that it knows where to</p>
+      <p begin="00:29:05.370" end="00:29:10.570">...as after we've authenticated some...to copy that reply url?</p>
+      <p begin="00:29:10.570" end="00:29:14.160">And, come to configure.</p>
+      <p begin="00:29:14.160" end="00:29:15.760">Instead of having it...reply</p>
+      <p begin="00:29:15.760" end="00:29:21.030">back to the login instead we're going to do is put the reply url</p>
+      <p begin="00:29:21.030" end="00:29:24.980">and here and...I'm actually going to also put in a http</p>
+      <p begin="00:29:26.540" end="00:29:32.160">go ahead and save this so now it knows where to send back and authenticated user.</p>
+      <p begin="00:29:32.160" end="00:29:36.060">And, I'm also going to grab this client id because I need to specify the client id in the</p>
+      <p begin="00:29:36.060" end="00:29:40.190">id p settings on the previous page...copy that</p>
+      <p begin="00:29:40.190" end="00:29:44.000">...id put in here and then specify my</p>
+      <p begin="00:29:44.000" end="00:29:45.680">allowed tenants so that is in this case</p>
+      <p begin="00:29:45.680" end="00:29:48.390">...wagner gmail dot on microsoft-dot-com.</p>
+      <p begin="00:29:50.450" end="00:29:52.620">And, save that.</p>
+      <p begin="00:29:52.620" end="00:29:56.110">So, at this point what we've done is we've...specify that are as</p>
+      <p begin="00:29:56.110" end="00:30:00.300">...api app is public authenticated and we've now configured</p>
+      <p begin="00:30:00.300" end="00:30:05.770">...id...so let's go ahead and try to give it a let's try to interact with it so,</p>
+      <p begin="00:30:05.770" end="00:30:07.800">actually first let me just go ahead and</p>
+      <p begin="00:30:07.800" end="00:30:12.750">...demonstrate that it's no longer underwater able to talk to...all go</p>
+      <p begin="00:30:12.750" end="00:30:18.360">ahead and,...request and I shouldn't getting back a failure message here and,</p>
+      <p begin="00:30:18.360" end="00:30:25.150">it could not authenticate to it.</p>
+      <p begin="00:30:25.150" end="00:30:28.210">Taking a little longer than I would...too.</p>
+      <p begin="00:30:28.210" end="00:30:32.810">So, I'm going-to go ahead and grab this log in url while we're waiting for that and see here the exception</p>
+      <p begin="00:30:32.810" end="00:30:37.640">is not the best I know we are still working on a sending back</p>
+      <p begin="00:30:37.640" end="00:30:43.290">appropriate responses when there's an error of this isn't preview still so but,</p>
+      <p begin="00:30:43.290" end="00:30:48.560">what I want to do is demonstrate pretty easily how I can now authenticate with</p>
+      <p begin="00:30:48.560" end="00:30:54.530">...and actually specify the gateway log in ...that's going to do is so,</p>
+      <p begin="00:30:54.530" end="00:31:04.860">I have a cookie issue let me go ahead and just reset my cookies?</p>
+      <p begin="00:31:04.860" end="00:31:11.430">So, one of the things that was going to talk about moment I'll explain now since I'm doing this is as</p>
+      <p begin="00:31:11.430" end="00:31:16.420">your api apps actually uses the same authentication technology that mobile apps</p>
+      <p begin="00:31:16.420" end="00:31:21.050">...mobile services you so using zero tokens zoom</p>
+      <p begin="00:31:21.050" end="00:31:24.600">...bt tokens are dots.</p>
+      <p begin="00:31:24.600" end="00:31:27.870">So, when the things that it does it will take a do more token and</p>
+      <p begin="00:31:27.870" end="00:31:33.400">put it in a cookie and I just had a still cookie that I had to remove so now I'm going</p>
+      <p begin="00:31:33.400" end="00:31:37.060">to go ahead and log in now this isn't going to be the same user that I log into</p>
+      <p begin="00:31:37.060" end="00:31:42.590">the portals since this is actually my ...wagner gmail tenant some</p>
+      <p begin="00:31:42.590" end="00:31:47.490">log in with waited at...wagner gmail dot on microsoft-dot-com so it's an actual</p>
+      <p begin="00:31:47.490" end="00:31:50.650">user in that tenant and go ahead and login?</p>
+      <p begin="00:31:52.220" end="00:31:56.000">...sign-in and.</p>
+      <p begin="00:31:56.000" end="00:32:06.170">Invalid zero header.</p>
+      <p begin="00:32:06.170" end="00:32:09.150">So, let me see if I can just delete this their.</p>
+      <p begin="00:32:10.310" end="00:32:12.890">Try that again.</p>
+      <p begin="00:32:12.890" end="00:32:16.830">...login complete fantastic all right so now what I'm</p>
+      <p begin="00:32:16.830" end="00:32:22.210">...is since it should have logged in hopefully...created actual so,</p>
+      <p begin="00:32:22.210" end="00:32:26.240">apology so again I what I needed to do is remove, remove a</p>
+      <p begin="00:32:26.240" end="00:32:31.900">stale cookie and, what's happened is now I've authenticated with the</p>
+      <p begin="00:32:31.900" end="00:32:36.320">eighty provider and its created a cookiethat I can</p>
+      <p begin="00:32:36.320" end="00:32:41.030">...using for authenticated now this is great...interactive web apps where</p>
+      <p begin="00:32:41.030" end="00:32:44.120">you've authenticated redirected back and now that cookies available can</p>
+      <p begin="00:32:44.120" end="00:32:48.130">...within your application you can also programmatic...get this token</p>
+      <p begin="00:32:48.130" end="00:32:52.980">using sdk and what it's going to get you is this token right here which is a...</p>
+      <p begin="00:32:52.980" end="00:33:22.990">token mcbride and copy this and ...that's not the full token let me try again?</p>
+      <p begin="00:33:22.990" end="00:33:25.300">There we go I've no idea why it takes so many copy</p>
+      <p begin="00:33:25.300" end="00:33:31.840">...this is the full token so this is what stored within the cookie so when we authenticate</p>
+      <p begin="00:33:31.840" end="00:33:36.730">...this token now what I'm going to do is just a demonstrate that I can authenticate now to this I'm</p>
+      <p begin="00:33:36.730" end="00:33:41.600">going to go open up post...and.</p>
+      <p begin="00:33:41.600" end="00:33:46.490">This time I'm going to attach a header to the call that I made before called x</p>
+      <p begin="00:33:46.490" end="00:33:47.520">dash zero.</p>
+      <p begin="00:33:50.310" end="00:33:55.220">...in that token select an image again and</p>
+      <p begin="00:33:55.220" end="00:33:59.440">send so now when I'm interacting with its passing in the token</p>
+      <p begin="00:33:59.440" end="00:34:05.740">and it will get through the gateway as a result and I'll be able to interact my api.</p>
+      <p begin="00:34:05.740" end="00:34:13.560">And, you can see the response comes back so apologies for the difficulties there but we got through it so thank you.</p>
+      <p begin="00:34:13.560" end="00:34:15.630">All right I appreciate that thank you.</p>
+      <p begin="00:34:17.340" end="00:34:20.710">All right so that's just one example of course there's a bunch</p>
+      <p begin="00:34:20.710" end="00:34:26.520">great tutorials and showing essays and facebook so forth but, we made it through</p>
+      <p begin="00:34:26.520" end="00:34:31.530">...so fantastic now a little bit more about languages so,</p>
+      <p begin="00:34:31.530" end="00:34:36.230">one of the nice things about being built on web apps is api apps can take advantage of</p>
+      <p begin="00:34:36.230" end="00:34:41.200">any languages supported by the as...web app and as</p>
+      <p begin="00:34:41.200" end="00:34:46.050">result you can end up writing your as your apis api apps in dot net</p>
+      <p begin="00:34:46.050" end="00:34:51.430">java php node and yes even go so I'm going to demonstrate here</p>
+      <p begin="00:34:51.430" end="00:34:55.250">...in fact I got some cool things are on that but I'll get...the</p>
+      <p begin="00:34:55.250" end="00:35:01.050">...we have first-class tooling support today in visual studio but one of the things coming</p>
+      <p begin="00:35:01.050" end="00:35:05.730">very soon I mean very soon is we're going to be adding as your api apps to the</p>
+      <p begin="00:35:05.730" end="00:35:10.320">cross platform cy tool which would be great ...you know,</p>
+      <p begin="00:35:10.320" end="00:35:14.520">if you're like me I actually don't always like having to go to the portal and clicking a whole bunch</p>
+      <p begin="00:35:14.520" end="00:35:19.270">...much rather right some scripts and run description of the things that I want...so very soon we'll have the</p>
+      <p begin="00:35:19.270" end="00:35:24.340">cross platforms...tool which can run not only on windows but it can run on</p>
+      <p begin="00:35:24.340" end="00:35:28.220">...as well as licks.</p>
+      <p begin="00:35:28.220" end="00:35:32.300">Now in terms of sdk is there is a new get package for dot net that</p>
+      <p begin="00:35:32.300" end="00:35:35.770">makes it easier for you to interact with things like isolated storage</p>
+      <p begin="00:35:35.770" end="00:35:39.840">and getting access to tokens and basically managing simplifying a lot of...for</p>
+      <p begin="00:35:39.840" end="00:35:44.710">you and we're going to be bringing more us decays over time as well for other languages but</p>
+      <p begin="00:35:44.710" end="00:35:49.680">in reality you can do anything and everything the http client everything's accessible the gateway</p>
+      <p begin="00:35:49.680" end="00:35:54.410">veer as your api apps so I'm using the documentation you can you can</p>
+      <p begin="00:35:54.410" end="00:35:59.840">pull from isolated storage from any language that you want to one thing I'm not going to demonstrate though</p>
+      <p begin="00:35:59.840" end="00:36:05.070">that is really neat is given the fact that we have swagger support for all</p>
+      <p begin="00:36:05.070" end="00:36:08.600">these api apps you can use tools like auto rests</p>
+      <p begin="00:36:08.600" end="00:36:12.930">to generate client libraries how many of you here heard of auto rest.</p>
+      <p begin="00:36:12.930" end="00:36:17.700">Few hands of take a look at it it's all open-source...upon get hub</p>
+      <p begin="00:36:17.700" end="00:36:23.290">there's a tool...that you can get through chocolate he you can also get through new get and what it</p>
+      <p begin="00:36:23.290" end="00:36:27.930">allows you to do is essentially run against a swagger jason file</p>
+      <p begin="00:36:27.930" end="00:36:31.990">it will generate class libraries that you can use for interacting with that rest api</p>
+      <p begin="00:36:31.990" end="00:36:38.700">...very handy very nice tool to use in addition to as your api apps?</p>
+      <p begin="00:36:38.700" end="00:36:43.680">So, what I want to demonstrate here real quick now is how we can do very much the same thing but we can do it with</p>
+      <p begin="00:36:43.680" end="00:36:50.010">go now one of the reasons that this works today isjust</p>
+      <p begin="00:36:50.010" end="00:36:53.320">...close my browser well you can take a look I just recently</p>
+      <p begin="00:36:53.320" end="00:36:58.520">theweb apps team that creates...do which is a technology that</p>
+      <p begin="00:36:58.520" end="00:37:05.670">manages a whole bunch of the management of web apps in terms...integration and</p>
+      <p begin="00:37:05.670" end="00:37:11.340">all sorts of different things are committed a bunch of code that will take go</p>
+      <p begin="00:37:11.340" end="00:37:16.660">...language files and actually compile...and host them so what that means</p>
+      <p begin="00:37:16.660" end="00:37:23.700">is I can now basically grab some go code so I'm going to actually grab go code that I have</p>
+      <p begin="00:37:23.700" end="00:37:28.620">up and get hub so let me go to the repository and there's a</p>
+      <p begin="00:37:28.620" end="00:37:32.750">...go where you can do a go get against a uri</p>
+      <p begin="00:37:32.750" end="00:37:34.580">...defines where the code is</p>
+      <p begin="00:37:34.580" end="00:37:39.670">going to grab this here and I can come into the command line say go get and</p>
+      <p begin="00:37:39.670" end="00:37:45.640">the project name and what that's going to do is grab all that code from</p>
+      <p begin="00:37:45.640" end="00:37:49.120">a get hub and then let's go into that folder?</p>
+      <p begin="00:37:50.160" end="00:37:54.430">And, you can see here here's the...code...spend a lot of time and here since</p>
+      <p begin="00:37:54.430" end="00:37:59.010">this isn't the point of the talk but you can see here is the main function and</p>
+      <p begin="00:37:59.010" end="00:38:03.390">it checks to see if there's a platform port because once running up and as your it has a different port...</p>
+      <p begin="00:38:03.390" end="00:38:08.540">would locally so on that thing I want to point out though is go does not have support</p>
+      <p begin="00:38:08.540" end="00:38:14.140">for...generating swagger to donald like dot net does with swashbuckling so one of the things that I</p>
+      <p begin="00:38:14.140" end="00:38:18.300">think valuable in this demo is we still can provide our swagger,</p>
+      <p begin="00:38:18.300" end="00:38:20.480">swagger meta data through a convention</p>
+      <p begin="00:38:20.480" end="00:38:25.440">and that convention is to create a metadata folder and that metadata folder</p>
+      <p begin="00:38:25.440" end="00:38:28.910">provide adjacent file called api...dot swagger not jason</p>
+      <p begin="00:38:28.910" end="00:38:34.150">if you look at that this is just swagger data that I created actually using the swagger dot io</p>
+      <p begin="00:38:34.150" end="00:38:37.470">...that describes my api and basically shows</p>
+      <p begin="00:38:37.470" end="00:38:42.050">a to do index and some other things so by putting this in this folder this means that when I go to</p>
+      <p begin="00:38:42.050" end="00:38:47.210">deploy disco app I'll still end up getting access to that swagger metadata which means that I can in</p>
+      <p begin="00:38:47.210" end="00:38:53.020">the then consuming...as your api very easily from different clients so in order to</p>
+      <p begin="00:38:53.020" end="00:38:56.630">write to get this to work what I'm going to do is go to the api</p>
+      <p begin="00:38:56.630" end="00:38:59.830">apt I have deployed for it and me</p>
+      <p begin="00:38:59.830" end="00:39:03.660">go ahead and select that one so I've got an api up that I'd</p>
+      <p begin="00:39:03.660" end="00:39:08.110">provision already calledgo to do api app and I</p>
+      <p begin="00:39:08.110" end="00:39:13.170">mention that this is running out a web app so as a result we can take advantage of all of the web...capability</p>
+      <p begin="00:39:13.170" end="00:39:17.920">so I'm going to go into the web app...and some of you're probably familiar with the ability to set up</p>
+      <p begin="00:39:17.920" end="00:39:22.050">continuous integration so if I slide down here to our deployment.</p>
+      <p begin="00:39:23.330" end="00:39:26.630">Once it loads I can selected and choose to enable a</p>
+      <p begin="00:39:26.630" end="00:39:31.720">local get repository so this becomes a great way in order to deploy a code into</p>
+      <p begin="00:39:31.720" end="00:39:36.620">our api app some choose the source...choose local get repository</p>
+      <p begin="00:39:36.620" end="00:39:40.640">click okay and what's going to do is set up on my api app api app</p>
+      <p begin="00:39:40.640" end="00:39:45.100">outpost...get repository they'll be able to commit code into now</p>
+      <p begin="00:39:45.100" end="00:39:48.780">it's created it if I selected what it's going to do...give me some</p>
+      <p begin="00:39:48.780" end="00:39:53.760">helpful urls here like the get url there is a bug here right now and I'll show you what that is</p>
+      <p begin="00:39:53.760" end="00:39:58.680">...remember this is preview...fix you can see here is actually sending the wrong name back this is not</p>
+      <p begin="00:39:58.680" end="00:40:02.590">by might deployment username so if I just switch this to</p>
+      <p begin="00:40:02.590" end="00:40:07.710">...wagner which is what it is the rest of this get uri here is correct...ahead and grab that</p>
+      <p begin="00:40:07.710" end="00:40:14.160">...right now that I fixed it and I'm going to initialize this folder and I'll</p>
+      <p begin="00:40:14.160" end="00:40:19.560">do get remote ad as your and I'll pasting that get</p>
+      <p begin="00:40:19.560" end="00:40:23.980">uri and now I can just ...my code I can</p>
+      <p begin="00:40:23.980" end="00:40:29.710">commits initial and get push measure master</p>
+      <p begin="00:40:29.710" end="00:40:34.610">and this is where a lot of cool stuff happens...site login is given the updates to</p>
+      <p begin="00:40:34.610" end="00:40:38.720">...do what it's going to do is it's going to discover that I'm committing a bunch of dot</p>
+      <p begin="00:40:38.720" end="00:40:43.640">go files and it's going to compile all those go files down into a binary</p>
+      <p begin="00:40:43.640" end="00:40:48.200">update the web dot configure using the http web what are the http platform handler</p>
+      <p begin="00:40:48.200" end="00:40:52.960">...that binary and then my api app is going to start actually</p>
+      <p begin="00:40:52.960" end="00:40:54.940">accepting requests and responses using this</p>
+      <p begin="00:40:54.940" end="00:41:01.340">go code so you can see all this is happening on my as...api up</p>
+      <p begin="00:41:01.340" end="00:41:05.820">...should take a moment to finish.</p>
+      <p begin="00:41:05.820" end="00:41:11.480">And, when it does we can end up calling into our go as your api app so there</p>
+      <p begin="00:41:11.480" end="00:41:15.230">is finished one thing I need to do is by default this is</p>
+      <p begin="00:41:15.230" end="00:41:18.900">set to internal so let's go ahead before I?</p>
+      <p begin="00:41:18.900" end="00:41:20.970">Failed is demo and switch this to.</p>
+      <p begin="00:41:22.410" end="00:41:27.160">To public anonymous.</p>
+      <p begin="00:41:27.160" end="00:41:28.350">All right.</p>
+      <p begin="00:41:28.350" end="00:41:34.440">And, then in post man actually no I don't even need postman for this I'm going-to go ahead and just</p>
+      <p begin="00:41:34.440" end="00:41:37.550">call directly to.</p>
+      <p begin="00:41:37.550" end="00:41:42.190">It says welcome not very cool but watch this is an api upright</p>
+      <p begin="00:41:42.190" end="00:41:48.190">...website so to dues there we go I get my jason back I can also</p>
+      <p begin="00:41:48.190" end="00:41:52.920">then say to do slash one so on so forth so you can see here you can</p>
+      <p begin="00:41:52.920" end="00:41:57.190">author using any language and then using continuous integration via get thirty</p>
+      <p begin="00:41:57.190" end="00:42:03.750">fs or whatever you might want...abusing in order to get your code into that as your api out.</p>
+      <p begin="00:42:03.750" end="00:42:10.440">Thanks.</p>
+      <p begin="00:42:10.440" end="00:42:15.600">connecting the on premises data this is something that we've been told is very critical to our customers</p>
+      <p begin="00:42:15.600" end="00:42:16.940">and there's a lot of there's actually a</p>
+      <p begin="00:42:16.940" end="00:42:22.620">number of different solutions for doing this today we have inside of web apps</p>
+      <p begin="00:42:22.620" end="00:42:27.090">...a something that's been around for a little while called hybrid connections so what hybrids</p>
+      <p begin="00:42:27.090" end="00:42:29.670">connections does it uses the service</p>
+      <p begin="00:42:29.670" end="00:42:34.730">...relay capabilities in order to establish a site a port</p>
+      <p begin="00:42:34.730" end="00:42:39.440">it basically establish a tcp connection to a port that you define on</p>
+      <p begin="00:42:39.440" end="00:42:43.660">your local machine so I can install some software here specify what the</p>
+      <p begin="00:42:43.660" end="00:42:46.530">port is and this define the service</p>
+      <p begin="00:42:46.530" end="00:42:50.020">...and once it comes online it'll then</p>
+      <p begin="00:42:50.020" end="00:42:55.140">facilitated point-to-pointconnection between a resource up in the cloud as well as</p>
+      <p begin="00:42:55.140" end="00:42:58.460">resource I have running locally this is fantastic for</p>
+      <p begin="00:42:58.460" end="00:43:03.060">developers it's also very good if you have something like sequel server</p>
+      <p begin="00:43:03.060" end="00:43:08.020">my sequel or something that runs on a machine and you don't want to expose the entire machine</p>
+      <p begin="00:43:08.020" end="00:43:12.970">to your resources running up in the cloud so it's very surgical</p>
+      <p begin="00:43:12.970" end="00:43:16.530">innocence you can be very specific in terms of what you want to open</p>
+      <p begin="00:43:16.530" end="00:43:21.420">up on premises at the same time we have a technology called virtual networks which provides a lot</p>
+      <p begin="00:43:21.420" end="00:43:26.200">of very strong enterprise capabilities for doing things such as establishing</p>
+      <p begin="00:43:26.200" end="00:43:28.640">...site or site the point</p>
+      <p begin="00:43:28.640" end="00:43:34.060">...we're opening up your network and actually actually exposing your</p>
+      <p begin="00:43:34.060" end="00:43:39.160">network and essentially allowing you to extend your network...your</p>
+      <p begin="00:43:39.160" end="00:43:44.450">resources in the cloud both of these are very goodvery good options I think earlier</p>
+      <p begin="00:43:44.450" end="00:43:48.270">...yo high give a talk on the app service</p>
+      <p begin="00:43:48.270" end="00:43:53.780">which they described the ability to establish these cite this site vp</p>
+      <p begin="00:43:53.780" end="00:43:58.200">...network virtual networks which was just enabled recently in the platform</p>
+      <p begin="00:43:58.200" end="00:44:02.840">is one of the announcements earlier this week so these are very good ways in which you</p>
+      <p begin="00:44:02.840" end="00:44:09.060">can try to connect to resources local now I'm going to attempt here</p>
+      <p begin="00:44:09.060" end="00:44:12.920">to give a demonstration with the caveat that earlier today</p>
+      <p begin="00:44:12.920" end="00:44:18.790">we did have some issues with the base...services enabling it so hopefully this</p>
+      <p begin="00:44:18.790" end="00:44:24.900">...up going falsely it's a fantastic demos I really hope it works?</p>
+      <p begin="00:44:24.900" end="00:44:29.160">But, the reason I'm going to still going through that knowing that it could actually fail</p>
+      <p begin="00:44:29.160" end="00:44:33.380">is I think it's valuable to least go through it and it's only the end part that may and failing</p>
+      <p begin="00:44:33.380" end="00:44:37.910">...you'll still see how you can do-it-yourself go ahead and create</p>
+      <p begin="00:44:37.910" end="00:44:43.550">a new project and I still going to be and api measure api app and</p>
+      <p begin="00:44:43.550" end="00:44:49.030">what I'm going to do in this measure api app is connect to a local database so well,</p>
+      <p begin="00:44:49.030" end="00:44:55.590">that's opening let-me open up the ...sequel server studio management studio?</p>
+      <p begin="00:44:55.590" end="00:45:01.840">And, I'm going to in the controller here go ahead and rename this and we're going to call this</p>
+      <p begin="00:45:01.840" end="00:45:08.770">a product products controller.</p>
+      <p begin="00:45:08.770" end="00:45:13.800">And, I can use any of this.</p>
+      <p begin="00:45:13.800" end="00:45:17.955">I'm going to use this instead so what you see here is code that I</p>
+      <p begin="00:45:17.955" end="00:45:23.150">think is very representative of a lot of the code that you know, you maybe writing others right</p>
+      <p begin="00:45:23.150" end="00:45:36.030">and I'm going to get some I get a product let me go ahead and create that product here real quick.</p>
+      <p begin="00:45:36.030" end="00:45:39.960">And, the product kind of product id a name and a price.</p>
+      <p begin="00:45:39.960" end="00:45:41.770">And, here.</p>
+      <p begin="00:45:41.770" end="00:45:45.940">...to do is I'm a select the top hundred products...did just want-to make sure mice</p>
+      <p begin="00:45:45.940" end="00:45:50.800">...my connection string is a secure but what you can see here</p>
+      <p begin="00:45:50.800" end="00:45:59.170">is if I run it locally it's going to talk to this database?</p>
+      <p begin="00:45:59.170" end="00:46:08.570">And, it's going to return back...this data so you can see there...now let's go ahead and run it.</p>
+      <p begin="00:46:08.570" end="00:46:12.060">...one thing I want to do first is we're going to use</p>
+      <p begin="00:46:12.060" end="00:46:16.820">the swagger you why in order to access it so let me go ahead and update</p>
+      <p begin="00:46:16.820" end="00:46:21.520">this setting here so that we turn on this wire ui.</p>
+      <p begin="00:46:21.520" end="00:46:25.030">Which was higher up in the file?</p>
+      <p begin="00:46:25.030" end="00:46:28.100">Yes, like at the top.</p>
+      <p begin="00:46:28.100" end="00:46:30.060">All right so.</p>
+      <p begin="00:46:30.060" end="00:46:34.090">That's going grab that...post man reset this.</p>
+      <p begin="00:46:34.090" end="00:46:37.800">And, api slash products.</p>
+      <p begin="00:46:37.800" end="00:46:42.780">send requests and you can see here I get product id one just...just a just a</p>
+      <p begin="00:46:42.780" end="00:46:46.510">...believed...edit this.</p>
+      <p begin="00:46:46.510" end="00:46:55.860">Edit top two hundred rows it's just change this price to five dollars.</p>
+      <p begin="00:46:57.040" end="00:46:58.740">Execute this again so you can</p>
+      <p begin="00:46:58.740" end="00:47:02.640">...the five all right so let's go ahead and deploy this.</p>
+      <p begin="00:47:02.640" end="00:47:10.410">Up into our api app which I prefer vision but I haven't done anything to it so as...api apps.</p>
+      <p begin="00:47:10.410" end="00:47:12.960">...deploy it to.</p>
+      <p begin="00:47:12.960" end="00:47:19.480">This one here on premises sales db api app...kind of a mouthful and</p>
+      <p begin="00:47:19.480" end="00:47:24.140">while this is publishing let's go back to the portal and this is where I'm hoping that the problems I had</p>
+      <p begin="00:47:24.140" end="00:47:29.120">earlier resolved what we want to do is go to the app post enable</p>
+      <p begin="00:47:29.120" end="00:47:33.670">the hybrid connection so all right so here's running.</p>
+      <p begin="00:47:33.670" end="00:47:35.790">...outlook.</p>
+      <p begin="00:47:35.790" end="00:47:40.330">And, believe this is the right api app yep</p>
+      <p begin="00:47:40.330" end="00:47:43.900">...the first thing first let's go ahead and just make sure that we</p>
+      <p begin="00:47:43.900" end="00:47:48.480">said this to public anonymous because it's easier that way for the demo.</p>
+      <p begin="00:47:48.480" end="00:47:51.090">And, now I'm going to go the app posts.</p>
+      <p begin="00:47:51.090" end="00:47:55.370">And, again, this app post blade here is really the same thing as a web app</p>
+      <p begin="00:47:55.370" end="00:47:59.070">...so if you slide down you'll note that we have hybrid connection</p>
+      <p begin="00:47:59.070" end="00:48:02.820">once that loads available as a tile.</p>
+      <p begin="00:48:02.820" end="00:48:07.820">So,...like hybrid connection now hybrid connections use biztalk</p>
+      <p begin="00:48:07.820" end="00:48:12.660">services and the service...relay in order to establish that connection so you'll see I don't have</p>
+      <p begin="00:48:12.660" end="00:48:17.910">any hybrid connections in this resource groups I'm going to add one and I'm going to create a new</p>
+      <p begin="00:48:17.910" end="00:48:22.970">...connection this will be called on premises sales</p>
+      <p begin="00:48:22.970" end="00:48:27.180">db and the host name as my computer name</p>
+      <p begin="00:48:27.180" end="00:48:33.450">and port so one of the things that you didn't see because I encoded</p>
+      <p begin="00:48:33.450" end="00:48:37.240">...string but it's communicating to my database using</p>
+      <p begin="00:48:37.240" end="00:48:41.130">tcp connection string goes to the server name</p>
+      <p begin="00:48:41.130" end="00:48:44.020">comma fourteen thirty three so if we established</p>
+      <p begin="00:48:44.020" end="00:48:49.120">a hybrid connection and if it's enabled and if it's if everything's flowing</p>
+      <p begin="00:48:49.120" end="00:48:53.290">then from the...I can still call to my machine...tcp port fourteen</p>
+      <p begin="00:48:53.290" end="00:48:58.290">thirty-three and it will be able to talk my database so in order to do this I need to use</p>
+      <p begin="00:48:58.290" end="00:49:01.490">the best...service and this is the part that may</p>
+      <p begin="00:49:01.490" end="00:49:06.400">...right now so let's see I will say this is also still in preview</p>
+      <p begin="00:49:06.400" end="00:49:08.850">so click...</p>
+      <p begin="00:49:08.850" end="00:49:12.810">So, let me describe what should happen so when you click</p>
+      <p begin="00:49:12.810" end="00:49:17.440">okay what it'll do is...create the biztalk service which essentially creates the service</p>
+      <p begin="00:49:17.440" end="00:49:19.890">...really in the background and allow you to create</p>
+      <p begin="00:49:19.890" end="00:49:24.540">...hybrid connection once you've created the hybrid connection you'll get another blade</p>
+      <p begin="00:49:24.540" end="00:49:29.400">they'll open up...let-you download and emma side that you can install which facilitates the</p>
+      <p begin="00:49:29.400" end="00:49:34.950">client-side connectivity to the service...relay when that's established this</p>
+      <p begin="00:49:34.950" end="00:49:39.710">light or you can't see it right now because it's I can't open up a existing every connection but</p>
+      <p begin="00:49:39.710" end="00:49:44.110">basically a light turns on saying that you're pipe is available and</p>
+      <p begin="00:49:44.110" end="00:49:48.730">when we deploy we should be able to run the same api up in the cloud using the same</p>
+      <p begin="00:49:48.730" end="00:49:52.130">connection string that we did locally in order to talk for database</p>
+      <p begin="00:49:52.130" end="00:50:01.340">it's a fantastic demo maybe sometime I'll get an opportunity to give it again so?</p>
+      <p begin="00:50:01.340" end="00:50:03.970">All right so how we doing on time</p>
+      <p begin="00:50:03.970" end="00:50:07.340">...a few minutes left so one of the things I'll talk about before</p>
+      <p begin="00:50:07.340" end="00:50:12.340">we're done is connectors so there's a lot of connectors that we made available when we</p>
+      <p begin="00:50:12.340" end="00:50:16.340">launched app service and api apps and you can see here everything</p>
+      <p begin="00:50:16.340" end="00:50:22.480">from chatter to drop box to measure media services are all available</p>
+      <p begin="00:50:22.480" end="00:50:27.090">...as connectors now these connectors are really nothing more than</p>
+      <p begin="00:50:27.090" end="00:50:31.810">...measure api apps that have been set up such that they make it very easy for you to</p>
+      <p begin="00:50:31.810" end="00:50:36.640">connect to these sas providers...they also do is facilitate a lot of different types of</p>
+      <p begin="00:50:36.640" end="00:50:41.230">protocol and protocol communications so you'll find adapters for connecting to</p>
+      <p begin="00:50:41.230" end="00:50:45.130">at via ftp...pop three so,</p>
+      <p begin="00:50:45.130" end="00:50:50.400">the...team that a lot of work in order to take these capabilities and bring them...connectors</p>
+      <p begin="00:50:50.400" end="00:50:55.190">and even some of the services that is talk services provides around,</p>
+      <p begin="00:50:55.190" end="00:50:58.560">you know,...validation and, you know, all the better</p>
+      <p begin="00:50:58.560" end="00:51:02.180">type operations are also available as process connectors.</p>
+      <p begin="00:51:03.340" end="00:51:10.270">Now the...connectors today really are designed to facilitate logic apps.</p>
+      <p begin="00:51:10.270" end="00:51:13.070">This talk is not a logic apps as a fantastic talk tomorrow</p>
+      <p begin="00:51:13.070" end="00:51:15.450">by steven and ilya and</p>
+      <p begin="00:51:15.450" end="00:51:20.470">...describe logic apps and show all kinds of amazing things because that's what they do but,</p>
+      <p begin="00:51:20.470" end="00:51:24.210">I'm going to show a little bit of it because I do want to demonstrate that.</p>
+      <p begin="00:51:24.210" end="00:51:27.220">The api apps that you build can also play in</p>
+      <p begin="00:51:27.220" end="00:51:30.520">...ecosystem of logic apps so you can build api apps</p>
+      <p begin="00:51:30.520" end="00:51:35.880">that then get because the because the fact that we're using swagger and swagger toyou can end</p>
+      <p begin="00:51:35.880" end="00:51:41.150">up using them as part of these logic apps that you build so,</p>
+      <p begin="00:51:41.150" end="00:51:48.460">let me go ahead and just show some of these things and action wrongs place.</p>
+      <p begin="00:51:48.460" end="00:51:53.320">So, again, for the sake a time when I did is ...deployed a few of these api apps I</p>
+      <p begin="00:51:53.320" end="00:51:55.860">had of time so thatwe could use them</p>
+      <p begin="00:51:55.860" end="00:52:01.410">...show you the experience here if you go new web plus mobile.</p>
+      <p begin="00:52:01.410" end="00:52:02.420">And, then as your marketplace</p>
+      <p begin="00:52:03.650" end="00:52:07.930">you can come here there's a lot of different things available measure marketplace if you select as</p>
+      <p begin="00:52:07.930" end="00:52:13.010">your api apps...see our of pretty much all the different connectors that</p>
+      <p begin="00:52:13.010" end="00:52:18.050">are available so you can select one of these connectors decide to create.</p>
+      <p begin="00:52:18.050" end="00:52:21.150">And, in some cases...can deploying right away</p>
+      <p begin="00:52:21.150" end="00:52:26.430">in other cases you may have to provide some credentials are keys or something that helps</p>
+      <p begin="00:52:26.430" end="00:52:31.530">...delineates you from other consumers of that...provider...when you don't it's</p>
+      <p begin="00:52:31.530" end="00:52:34.890">...typically because logic apps are using their own</p>
+      <p begin="00:52:34.890" end="00:52:40.960">are credentials to facilitate some of the consent and, authorization pieces with that</p>
+      <p begin="00:52:40.960" end="00:52:47.170">sas provider so I mean I'll go ahead and...create justthe fact that it will create will take</p>
+      <p begin="00:52:47.170" end="00:52:49.740">a couple minutes but what you'll see here is I already have a tool</p>
+      <p begin="00:52:49.740" end="00:52:55.010">eo connector and ar twitter connector so what I'm going to do is</p>
+      <p begin="00:52:55.010" end="00:53:02.470">especially for the sake of time...coming here to our web...mobile...create a logic app?</p>
+      <p begin="00:53:02.470" end="00:53:08.570">...called will demo and created now the thing to note is make sure that you create your logic</p>
+      <p begin="00:53:08.570" end="00:53:15.110">app in the same resource group is the api apps you want to use so that you have access to them.</p>
+      <p begin="00:53:15.110" end="00:53:19.160">And, this creates we're going to try to...very quickly since...have a few minutes left is</p>
+      <p begin="00:53:19.160" end="00:53:24.150">creates logic app that will ...from twitter</p>
+      <p begin="00:53:24.150" end="00:53:29.280">...keyword and then send...message so very simple demonstration but,</p>
+      <p begin="00:53:29.280" end="00:53:34.150">hopefully we'll reinforce you know, the capabilities</p>
+      <p begin="00:53:34.150" end="00:53:40.290">and ways in which you can use connectors measure api apps within the platform.</p>
+      <p begin="00:53:40.290" end="00:53:43.610">So, all right good usually doesn't take very long to</p>
+      <p begin="00:53:43.610" end="00:53:50.170">...a logic...so let's go ahead and open this up now I'm going to select</p>
+      <p begin="00:53:50.170" end="00:53:56.490">twittersince it has a built-in triggers...can actually.</p>
+      <p begin="00:53:56.490" end="00:54:00.640">Pole for different keyword so authorize it and that</p>
+      <p begin="00:54:00.640" end="00:54:05.660">is authorizing micro initials and we'll say look for new tweets not</p>
+      <p begin="00:54:05.660" end="00:54:10.640">...wagner notice I put to...signs in there that's because at is a special character</p>
+      <p begin="00:54:10.640" end="00:54:16.790">so we're skipping it save that and then I'm going to add julio so you probably</p>
+      <p begin="00:54:16.790" end="00:54:21.190">...I'm going with this...any of you have a twitter account you can participate so I'm</p>
+      <p begin="00:54:21.190" end="00:54:26.470">going-to send message now one of the things that's nice is with swagger we can detect</p>
+      <p begin="00:54:26.470" end="00:54:29.810">the outputs of one connector and use them as inputs and other so I</p>
+      <p begin="00:54:29.810" end="00:54:34.760">can say text and I can say tweet text and then here let's see.</p>
+      <p begin="00:54:34.760" end="00:54:39.390">I have my truly ode number I can pieced in here and then</p>
+      <p begin="00:54:39.390" end="00:54:48.170">yes this is my actual numbers so you can all call me and tell me how well I did.</p>
+      <p begin="00:54:48.170" end="00:54:52.270">All right so with that I'm going to save it.</p>
+      <p begin="00:54:52.270" end="00:54:55.620">All right my phone here somewhere.</p>
+      <p begin="00:54:55.620" end="00:55:00.840">So, now go ahead and run it now and at some point if someone ends</p>
+      <p begin="00:55:00.840" end="00:55:04.650">up tweaking anything with my name...I can see steve's on</p>
+      <p begin="00:55:04.650" end="00:55:09.830">...maybe he's helping out the demo but at any rate this workflow should start</p>
+      <p begin="00:55:09.830" end="00:55:14.720">running and presumably any time the twitter connector</p>
+      <p begin="00:55:14.720" end="00:55:20.240">...something...wagner it will end up sitting in sms message so</p>
+      <p begin="00:55:21.950" end="00:55:27.320">without the...my messages so...there's a quota so</p>
+      <p begin="00:55:27.320" end="00:55:32.850">generate hopefully this will start doing but that should demonstrate at least how</p>
+      <p begin="00:55:32.850" end="00:55:35.710">digesting here comes?</p>
+      <p begin="00:55:36.870" end="00:55:41.650">demonstrates how you can use connectors as part of building...logic gaps.</p>
+      <p begin="00:55:41.650" end="00:55:44.650">Right so to wrap it up I'm going to turn the sound off moi.</p>
+      <p begin="00:55:47.770" end="00:55:49.970">All right so.</p>
+      <p begin="00:55:49.970" end="00:55:55.440">In summary you know, one of these things you know, the measure api apps providing a number</p>
+      <p begin="00:55:55.440" end="00:55:59.670">of benefits here ways to make it easier for you to authenticate and authorize users</p>
+      <p begin="00:55:59.670" end="00:56:03.350">in the platform the metadata alone I think is very compelling in terms of</p>
+      <p begin="00:56:03.350" end="00:56:07.410">consuming interacting with these api apps the</p>
+      <p begin="00:56:07.410" end="00:56:12.070">on premises connectivity is fantastic I promise you and then being</p>
+      <p begin="00:56:12.070" end="00:56:16.430">able to create connectors and participate in these logic apps I think is also</p>
+      <p begin="00:56:16.430" end="00:56:20.090">a very compelling thing now a couple things that I want to mention things that are coming</p>
+      <p begin="00:56:20.090" end="00:56:26.070">in the hopefully in the near future but things that we are working on today we have a public gallery but,</p>
+      <p begin="00:56:26.070" end="00:56:30.640">for you to get your api apps...the public gallery you need to be working with us manually so we are</p>
+      <p begin="00:56:30.640" end="00:56:33.660">...you one of the things that...be bringing very soon is self-service</p>
+      <p begin="00:56:33.660" end="00:56:38.620">on boarding into our public gallery so just as we have new...and you can create</p>
+      <p begin="00:56:38.620" end="00:56:42.900">new packages and upload those new get packages and everyone can benefit from</p>
+      <p begin="00:56:42.900" end="00:56:47.360">in the near future you'll be able to create your own...api apps package them up</p>
+      <p begin="00:56:47.360" end="00:56:51.180">and submit them into a public gallery where people can then go in deploy</p>
+      <p begin="00:56:51.180" end="00:56:56.540">and instantiate your as your api apps so watch for that we're also going to be</p>
+      <p begin="00:56:56.540" end="00:57:00.520">bringing private organizational galleries in the future so that if you're</p>
+      <p begin="00:57:00.520" end="00:57:05.460">in enterprising have a bunch of ip and you want to make it very easy so that you can deploy and update</p>
+      <p begin="00:57:05.460" end="00:57:09.270">...manage are those as...api apps you'll be able to put a</p>
+      <p begin="00:57:09.270" end="00:57:14.130">package them up and put them in a private organizational gallery we are bringing</p>
+      <p begin="00:57:14.130" end="00:57:18.400">modernization the...the...as well and I moment I'm going to give you a link</p>
+      <p begin="00:57:18.400" end="00:57:23.360">to a user voice form where we'd love your feedback we want to know how you want to monetize are as</p>
+      <p begin="00:57:23.360" end="00:57:28.130">your api apps we fully intend to give you the ability to create some compelling as</p>
+      <p begin="00:57:28.130" end="00:57:29.900">your api apps put them into</p>
+      <p begin="00:57:29.900" end="00:57:34.080">the community and find ways in which you can make some money on them and,</p>
+      <p begin="00:57:34.080" end="00:57:39.030">then lastly and I put this here because a lot of the questions that we get our will how do what</p>
+      <p begin="00:57:39.030" end="00:57:44.020">what's the story between as your api management and measure api apps it seems like there's a lot</p>
+      <p begin="00:57:44.020" end="00:57:48.890">of overlap in two-degree there is...one of the things that you're going to see in the near future is these</p>
+      <p begin="00:57:48.890" end="00:57:53.410">two technologies converging, converging rather and a lot of the capabilities of the</p>
+      <p begin="00:57:53.410" end="00:57:57.170">as your api manned api management coming to as</p>
+      <p begin="00:57:57.170" end="00:58:04.000">...apps and vice versa so they'll be a lot of better together scenarios with those</p>
+      <p begin="00:58:04.000" end="00:58:09.320">two technologies and with that here are some of these resources where you can learn more there's a bunch</p>
+      <p begin="00:58:09.320" end="00:58:14.250">of fantastic documentation we'd love to get your feedback it's a very active user voice</p>
+      <p begin="00:58:14.250" end="00:58:20.350">forum and, there's also a form where you can ask questions if you get blocked of course</p>
+      <p begin="00:58:20.350" end="00:58:24.070">for those of you that participated in the logic app you already have my twitter</p>
+      <p begin="00:58:24.070" end="00:58:28.920">...name but there is if you want to reach me on twitter of course my email address as well and</p>
+      <p begin="00:58:28.920" end="00:58:33.170">thank you guys very much I'm going-to go ahead and load this thank you.</p>
+
+    </div>
+  </body>
+</tt>

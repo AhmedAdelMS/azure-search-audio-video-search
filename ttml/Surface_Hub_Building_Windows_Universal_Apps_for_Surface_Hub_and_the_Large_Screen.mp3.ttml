@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.909</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.420" end="00:00:05.470">Hello, my name's eric flow.</p>
+      <p begin="00:00:05.470" end="00:00:09.390">I am a software engineer on the surface hub team.</p>
+      <p begin="00:00:09.390" end="00:00:14.070">And, I have...for microsoft for over twenty five years on operating systems</p>
+      <p begin="00:00:14.070" end="00:00:17.830">in my opinion this is the coolest project I've ever</p>
+      <p begin="00:00:17.830" end="00:00:22.810">worked on this is the surface hub this presentation today is going to be</p>
+      <p begin="00:00:22.810" end="00:00:26.460">all about writing applications to run on the surface</p>
+      <p begin="00:00:26.460" end="00:00:30.670">up little housekeeping first ...appreciate your</p>
+      <p begin="00:00:30.670" end="00:00:35.370">...so I'll show the slide again at the very end but if you could scan</p>
+      <p begin="00:00:35.370" end="00:00:40.660">...r code...send us feedback we would really appreciate it.</p>
+      <p begin="00:00:40.660" end="00:00:42.120">So,...talk about today</p>
+      <p begin="00:00:42.120" end="00:00:47.050">...give you a brief overview of the surface hub and then invite roberto to</p>
+      <p begin="00:00:47.050" end="00:00:51.970">come up and show you how to build some apps for it and then he's</p>
+      <p begin="00:00:51.970" end="00:00:56.570">got a ticket to the next level is going to show you how to tailor your app so it's</p>
+      <p begin="00:00:56.570" end="00:01:01.070">optimized to run on the surface hub we should have</p>
+      <p begin="00:01:01.070" end="00:01:12.240">time for qa at the end so you guys could hold your questions the end we really appreciate it.</p>
+      <p begin="00:01:12.240" end="00:01:15.720">bill gates bounded microsoft he had a vision?</p>
+      <p begin="00:01:16.900" end="00:01:20.820">His vision was a pc on every desk</p>
+      <p begin="00:01:20.820" end="00:01:25.380">and every home writing microsoft software that vision</p>
+      <p begin="00:01:25.380" end="00:01:30.220">empowered individuals...very little for groups.</p>
+      <p begin="00:01:30.220" end="00:01:34.800">The surface hub is here to fill that space the surface hub</p>
+      <p begin="00:01:34.800" end="00:01:40.430">is all about empowering groups it will be as...to the</p>
+      <p begin="00:01:40.430" end="00:01:50.740">space as the pc was to the individual and to the desk.</p>
+      <p begin="00:01:50.740" end="00:01:52.500">As I mentioned the...subs all</p>
+      <p begin="00:01:52.500" end="00:01:56.980">about empowering groups it can be used in a lot of different places,</p>
+      <p begin="00:01:56.980" end="00:02:01.720">for example, you could put in a conference room you can put in a boardroom you could put</p>
+      <p begin="00:02:01.720" end="00:02:04.020">in a small meeting space.</p>
+      <p begin="00:02:04.020" end="00:02:08.360">The goal of this device is to bring together people that</p>
+      <p begin="00:02:08.360" end="00:02:12.630">are both local and remote so they can collaborate so</p>
+      <p begin="00:02:12.630" end="00:02:17.210">they can brainstorm so they can run apps that you guys are going to write.</p>
+      <p begin="00:02:17.210" end="00:02:22.770">So, they can be more productive.</p>
+      <p begin="00:02:22.770" end="00:02:25.890">The surface hub is an integrated computing</p>
+      <p begin="00:02:25.890" end="00:02:30.130">device that has everything that you need for standard copper</p>
+      <p begin="00:02:30.130" end="00:02:35.320">shown built into it across the top of it...a...it's</p>
+      <p begin="00:02:35.320" end="00:02:40.310">gotten dual...p cameras in it it's got sensors for</p>
+      <p begin="00:02:40.310" end="00:02:45.050">light and promotion it has wi-fi support bluetooth</p>
+      <p begin="00:02:45.050" end="00:02:47.660">...has dual pans</p>
+      <p begin="00:02:47.660" end="00:02:52.410">and dual charging stations on it built-in speakers.</p>
+      <p begin="00:02:52.410" end="00:02:54.180">It also has support for nfc.</p>
+      <p begin="00:02:55.250" end="00:02:59.460">The screen lcd with anti-nuclear cody knowledge is supports</p>
+      <p begin="00:02:59.460" end="00:03:00.790">...input</p>
+      <p begin="00:03:00.790" end="00:03:06.990">and touch inputthis particular one here look at here is the eighty four-inch model runs</p>
+      <p begin="00:03:06.990" end="00:03:11.920">...the four-k resolution on it we also have a fifty five-inch version runs</p>
+      <p begin="00:03:11.920" end="00:03:15.090">attend adp both of them are on display over the quarter</p>
+      <p begin="00:03:15.090" end="00:03:16.670">...the solution showcase this.</p>
+      <p begin="00:03:17.730" end="00:03:22.670">Integrated device has everything that you need for typical conference room all</p>
+      <p begin="00:03:22.670" end="00:03:31.520">you need to dude is role in their and supply one...our to it has everything else...need.</p>
+      <p begin="00:03:31.520" end="00:03:35.500">So, because it's such a large-screen and its communal</p>
+      <p begin="00:03:35.500" end="00:03:39.950">...collaborative actually can be used in unique ways this is not your typical</p>
+      <p begin="00:03:39.950" end="00:03:44.740">pc they just go...log onto it can be used.</p>
+      <p begin="00:03:44.740" end="00:03:49.570">In some of the pictures you see here, for example,...lower right it could be used in a media scenario it</p>
+      <p begin="00:03:49.570" end="00:03:53.020">could be used in a conference room absolutely it could be used on a factory</p>
+      <p begin="00:03:53.020" end="00:03:58.430">floor so there's unique opportunities for you guys to write apps that</p>
+      <p begin="00:03:58.430" end="00:04:01.230">leveraged this device so.</p>
+      <p begin="00:04:01.230" end="00:04:04.690">Imagine that you're writing and app that presents</p>
+      <p begin="00:04:04.690" end="00:04:07.890">like pages of information a story.</p>
+      <p begin="00:04:07.890" end="00:04:10.620">Or their reports okay.</p>
+      <p begin="00:04:10.620" end="00:04:15.440">Because you have so much real-estate to work with when you present this information to</p>
+      <p begin="00:04:15.440" end="00:04:20.910">the users you can do it in a way that makes sense for them to collaborate you could have all the pages</p>
+      <p begin="00:04:20.910" end="00:04:25.680">stacked up and then the user could flip through them or they could take the</p>
+      <p begin="00:04:25.680" end="00:04:30.530">pages...could...them out across the large-screen or they may zoom in</p>
+      <p begin="00:04:30.530" end="00:04:35.460">...the zoom out right it gives them the ability to customize the information to the way that</p>
+      <p begin="00:04:35.460" end="00:04:40.650">makes sense for them to work together so another area</p>
+      <p begin="00:04:40.650" end="00:04:45.700">is remote collaboration this device is wonderful for</p>
+      <p begin="00:04:45.700" end="00:04:50.610">remote collaboration, you know, why because I personally</p>
+      <p begin="00:04:50.610" end="00:04:55.170">work remotely three days a week with my team and microsoft and I actually</p>
+      <p begin="00:04:55.170" end="00:04:59.330">call-in and I have...on this device is amazes the audio is great the</p>
+      <p begin="00:04:59.330" end="00:05:04.010">video is great also if you go to the solution</p>
+      <p begin="00:05:04.010" end="00:05:08.910">showcase over here on the second-floor...to of the set-up there's a couple of</p>
+      <p begin="00:05:08.910" end="00:05:12.570">isv are showing their remote collaboration</p>
+      <p begin="00:05:12.570" end="00:05:19.370">applications over there they're great examples please you get some time go see them okay?</p>
+      <p begin="00:05:19.370" end="00:05:24.220">The surface have though is also more than bringing people together it can bring people and</p>
+      <p begin="00:05:24.220" end="00:05:28.230">...devices together multiple devices can hook up to</p>
+      <p begin="00:05:28.230" end="00:05:32.950">it allows for better information sharing.</p>
+      <p begin="00:05:32.950" end="00:05:36.190">Let's talk about market size for little bit worldwide.</p>
+      <p begin="00:05:37.240" end="00:05:40.730">Fifty million meeting spaces.</p>
+      <p begin="00:05:40.730" end="00:05:45.270">Of which about twenty million of them are the typical large conference</p>
+      <p begin="00:05:45.270" end="00:05:50.330">room but the fastest-growing segment is the sm space some people call...space</p>
+      <p begin="00:05:50.330" end="00:05:56.580">some component open space thirty million and growing corporations are spending</p>
+      <p begin="00:05:56.580" end="00:06:01.250">a lot of money on these meeting spaces so for a conference room</p>
+      <p begin="00:06:01.250" end="00:06:05.580">some are spending up to fifty thousand dollars to buy all the peripherals that</p>
+      <p begin="00:06:05.580" end="00:06:11.030">they need to outfit this conference room to work for their situation and for</p>
+      <p begin="00:06:11.030" end="00:06:16.510">the small ones are...up to ten thousand-dollars to buy profiles...so guys</p>
+      <p begin="00:06:16.510" end="00:06:22.980">here's an opportunity here for you guys to make money okay.</p>
+      <p begin="00:06:22.980" end="00:06:26.880">Now I would like to do a brief demo of the surface</p>
+      <p begin="00:06:26.880" end="00:06:32.660">hub and I'm going to ask murrow to come up here in hell.</p>
+      <p begin="00:06:32.660" end="00:06:37.620">We're going to pretend to be a software developer house okay...we're going to make</p>
+      <p begin="00:06:37.620" end="00:06:39.940">it out and we're going to they can</p>
+      <p begin="00:06:39.940" end="00:06:44.360">...you can review cheers you can flip through pictures of chairs and you can reviewand,</p>
+      <p begin="00:06:44.360" end="00:06:49.310">give your opinions autumn now we're not having a scheduled meeting we're going to have</p>
+      <p begin="00:06:49.310" end="00:06:53.530">and ad-hoc meeting okay so when you saw the welcome screen</p>
+      <p begin="00:06:53.530" end="00:06:56.510">...screen that was just up here it offers three big</p>
+      <p begin="00:06:56.510" end="00:07:01.440">buttons audit these are the primary tasks right...the most common things we</p>
+      <p begin="00:07:01.440" end="00:07:06.330">have a meeting it's like you want-to call somebody or you want to use the white board or you want</p>
+      <p begin="00:07:06.330" end="00:07:12.100">...connect to it with your phone or your laptop it also it offered a</p>
+      <p begin="00:07:12.100" end="00:07:12.660">short-cut</p>
+      <p begin="00:07:12.660" end="00:07:17.420">the start menu so that you guys when you write apps they can get your apps easily</p>
+      <p begin="00:07:17.420" end="00:07:21.330">...this particular example okay you saw that when I lifted the</p>
+      <p begin="00:07:21.330" end="00:07:24.990">...devices smart enough to know a...I want to</p>
+      <p begin="00:07:24.990" end="00:07:27.950">...words that automatically started the white board so now we're</p>
+      <p begin="00:07:27.950" end="00:07:31.950">...I were going to draw out a couple of pages of our app</p>
+      <p begin="00:07:31.950" end="00:07:35.440">ok so if I take the first page would you be willing to draw the second page of</p>
+      <p begin="00:07:35.440" end="00:07:40.950">our sure so let's go on a drawn black on</p>
+      <p begin="00:07:40.950" end="00:07:42.370">Yeah, this is a non</p>
+      <p begin="00:07:42.370" end="00:07:47.780">...tm software so let's try it again ...close one node here.</p>
+      <p begin="00:07:47.780" end="00:07:50.520">And, once again we're very excited to be able to bring this</p>
+      <p begin="00:07:50.520" end="00:07:56.510">trait from like where it's made and bring here to you guys okay, there</p>
+      <p begin="00:07:56.510" end="00:08:01.450">...so here I have my notes and we're drawing here are pages</p>
+      <p begin="00:08:01.450" end="00:08:04.960">...our app have some menus and well that's a pretty</p>
+      <p begin="00:08:04.960" end="00:08:08.960">chair sorural ...you and I being</p>
+      <p begin="00:08:08.960" end="00:08:14.090">...we're probably not the best designers right and my little stick man probably not</p>
+      <p begin="00:08:14.090" end="00:08:17.900">...here but the surface hub gives us the ability to bring</p>
+      <p begin="00:08:17.900" end="00:08:22.280">...content from other things one of the things that we could do is we could loop in</p>
+      <p begin="00:08:22.280" end="00:08:27.070">james he's a great designer ok so if we want to loop...we could push the</p>
+      <p begin="00:08:27.070" end="00:08:31.820">...for business button we could punch and...this number and he would show up here is a</p>
+      <p begin="00:08:31.820" end="00:08:37.440">remote tandy and then we could share this with him...us feedback right but there's</p>
+      <p begin="00:08:37.440" end="00:08:42.650">other ways that we can get feedback here so another example maybe</p>
+      <p begin="00:08:42.650" end="00:08:47.230">...a phone right and he happened to have some great pictures a chairs audit, yeah,</p>
+      <p begin="00:08:47.230" end="00:08:51.100">he could wirelessly project and then he could put pictures</p>
+      <p begin="00:08:51.100" end="00:08:55.840">up here we could then capture...from his device and</p>
+      <p begin="00:08:55.840" end="00:09:01.210">paste them right here into one node and the size of course third-party apps like the ones you can build so</p>
+      <p begin="00:09:01.210" end="00:09:05.490">this is the start menu and you can bring content from other apps into your collaboration</p>
+      <p begin="00:09:05.490" end="00:09:10.010">...meeting or even just use the app by itself that's right so we have many ways</p>
+      <p begin="00:09:10.010" end="00:09:14.450">to gather information into this one note share we can annotate</p>
+      <p begin="00:09:14.450" end="00:09:18.610">on it the best part is...I bet you I bet you a whole bunch</p>
+      <p begin="00:09:18.610" end="00:09:22.970">of you have done this okay how many of you have gone to the white board and you drawn all over</p>
+      <p begin="00:09:22.970" end="00:09:26.680">...get your cell...you take a picture of it right and then</p>
+      <p begin="00:09:26.680" end="00:09:31.390">...yourself all right so it worked okay but you'd never go back and</p>
+      <p begin="00:09:31.390" end="00:09:36.660">...picture again digit this solves the problem okay right down</p>
+      <p begin="00:09:36.660" end="00:09:39.540">here little email icon you can</p>
+      <p begin="00:09:39.540" end="00:09:42.910">save this entire canvas into a one</p>
+      <p begin="00:09:42.910" end="00:09:47.540">node file and then have it email to everybody that you're working with so then you can continue</p>
+      <p begin="00:09:47.540" end="00:09:53.000">on with your project after you have left this...you can drop it on your own one node</p>
+      <p begin="00:09:53.000" end="00:09:55.910">...nodes together with your...nodes so on so</p>
+      <p begin="00:09:55.910" end="00:10:00.890">then let's pretend that we're all done okay what we would normally do is say I'm all done we'll</p>
+      <p begin="00:10:00.890" end="00:10:05.640">walk away so you would push the armed and...here now since we're</p>
+      <p begin="00:10:05.640" end="00:10:10.550">...to use...I'm not actually going to end okay but if I were to push the yes button it</p>
+      <p begin="00:10:10.550" end="00:10:15.390">will reset the device it will return back to the big blue welcome screen you saw</p>
+      <p begin="00:10:15.390" end="00:10:20.230">is ready for the next meeting okay, yeah, so, at this point?</p>
+      <p begin="00:10:20.230" end="00:10:24.410">I'm going to ask for...take-over and he's going to talk about building some applications</p>
+      <p begin="00:10:24.410" end="00:10:28.580">...for userthank you so much so let's move over to the</p>
+      <p begin="00:10:28.580" end="00:10:32.470">...little bit and I'll talk a little bit about developing for the surface</p>
+      <p begin="00:10:32.470" end="00:10:37.830">...and many present myself I'm roberta I'm also sausage in the service...team and</p>
+      <p begin="00:10:37.830" end="00:10:42.990">is really exciting to be here and show this beautiful device it's really are</p>
+      <p begin="00:10:42.990" end="00:10:47.250">we're very proud to be able to display and have you played at the showcase</p>
+      <p begin="00:10:47.250" end="00:10:52.900">...so let's talk about developing for surface hub and here you can see this beautiful three-d</p>
+      <p begin="00:10:52.900" end="00:10:56.710">mapped app so this is like just to give you a little bit of a glimpse of what can you do</p>
+      <p begin="00:10:56.710" end="00:10:58.910">...such a big-screen and,</p>
+      <p begin="00:10:58.910" end="00:11:04.030">we notice that people on the showcase love finding their home...the three-d mapping oy but it's something called</p>
+      <p begin="00:11:04.030" end="00:11:09.140">to do ...just a beautiful screen and you have to think differently when...develop</p>
+      <p begin="00:11:09.140" end="00:11:14.820">apps rate but actually developing apps it's not hard at all it's very easy so</p>
+      <p begin="00:11:14.820" end="00:11:17.090">let's talk a little bit about that?</p>
+      <p begin="00:11:17.090" end="00:11:19.250">Building apps for surface hub</p>
+      <p begin="00:11:19.250" end="00:11:22.370">service hub is a member of the windows</p>
+      <p begin="00:11:22.370" end="00:11:27.050">...device family we have devices all the way from the smallest</p>
+      <p begin="00:11:27.050" end="00:11:31.250">internet things device imbedded device although way to</p>
+      <p begin="00:11:31.250" end="00:11:36.170">our giant screens passing through xbox...all of those run universal</p>
+      <p begin="00:11:36.170" end="00:11:41.880">windows apps and you heard about them about a thousand times is conference and I'll say a few more</p>
+      <p begin="00:11:41.880" end="00:11:47.250">service have runs the universal windows apps and that's the main thing you have to remember you</p>
+      <p begin="00:11:47.250" end="00:11:51.590">maker app run on all devices if you think about screen sizes you will</p>
+      <p begin="00:11:51.590" end="00:11:56.560">scale-up to the surface hub but also you can tweak...you can make a little bit better you can use some</p>
+      <p begin="00:11:56.560" end="00:12:00.880">of the unique capabilities of this device to improve your app even more even though it's to a</p>
+      <p begin="00:12:00.880" end="00:12:06.330">universal windows app so let's talk a little bit about the device families so, you know,</p>
+      <p begin="00:12:06.330" end="00:12:10.450">that windows categorize their devices into family so you have, for example,</p>
+      <p begin="00:12:10.450" end="00:12:14.310">the mobile family includes the sm tablets in the phones and have the best</p>
+      <p begin="00:12:14.310" end="00:12:16.980">of family xbox follow...so on</p>
+      <p begin="00:12:16.980" end="00:12:22.800">and the surface hub it's running windows stand but it's part of the windows</p>
+      <p begin="00:12:22.800" end="00:12:27.340">...family were called the windows team family why you need to know that you need to</p>
+      <p begin="00:12:27.340" end="00:12:31.110">know that if you want to code our make some customization of your app</p>
+      <p begin="00:12:31.110" end="00:12:36.340">...specific for the surface hub because if you just use screen size you wouldn't be able to differentiate</p>
+      <p begin="00:12:36.340" end="00:12:41.130">between any four-k desktop and the surface of the resolutions the same</p>
+      <p begin="00:12:41.130" end="00:12:45.220">you india which are...for the fifty-five...she wouldn't be able to differentiate between</p>
+      <p begin="00:12:45.220" end="00:12:49.360">...phone and...surface...because they're both nntp</p>
+      <p begin="00:12:49.360" end="00:12:56.000">resolutions not enough to know where your running resolution scaling it's not enough?</p>
+      <p begin="00:12:56.000" end="00:13:00.710">you need to know your part of the windows team...family I'll show you how to customize for that device family</p>
+      <p begin="00:13:00.710" end="00:13:05.240">in a...so I talk about apps building apps it's easy</p>
+      <p begin="00:13:05.240" end="00:13:09.710">...it will take all your skills from universal at develop because surface</p>
+      <p begin="00:13:09.710" end="00:13:14.020">...runs the universal apps they scale automatically if you</p>
+      <p begin="00:13:14.020" end="00:13:18.460">think about large-screen this is a large-screen you will work if you think about four-k or tended</p>
+      <p begin="00:13:18.460" end="00:13:21.220">to be if you think about how your control should be place you</p>
+      <p begin="00:13:21.220" end="00:13:25.090">...very well also if you don't have a service qubit you want to see</p>
+      <p begin="00:13:25.090" end="00:13:29.550">...would look like to design and app specially example visual</p>
+      <p begin="00:13:29.550" end="00:13:34.350">studio twenty fifteen has a preview on this...designer that is the surface hub eighty</p>
+      <p begin="00:13:34.350" end="00:13:39.410">four-inch so together with phones and tablets you can switch...designer to show...service have</p>
+      <p begin="00:13:39.410" end="00:13:45.370">...four-inchalso remember the resolution that's the key to remember farce screen</p>
+      <p begin="00:13:45.370" end="00:13:47.980">...this one is four-k running</p>
+      <p begin="00:13:47.980" end="00:13:52.000">...hundred-fifty percent and fifty five-inch is</p>
+      <p begin="00:13:52.000" end="00:13:55.930">...running at a hundred-percent scaling so...fifty percent</p>
+      <p begin="00:13:55.930" end="00:14:01.080">...scaling nab four-k not that complicated to remember and also all this information</p>
+      <p begin="00:14:01.080" end="00:14:04.270">...on the documentation to.</p>
+      <p begin="00:14:04.270" end="00:14:06.580">Of course you can create a neutral x eighty-six</p>
+      <p begin="00:14:06.580" end="00:14:11.110">...sixty-four package we don't spar arm because all...processors are executed</p>
+      <p begin="00:14:11.110" end="00:14:17.700">for and star submission you have to think about two things remember to a key points when you</p>
+      <p begin="00:14:17.700" end="00:14:21.270">submit...start first...make sure windows team</p>
+      <p begin="00:14:21.270" end="00:14:26.490">are windows universal are included in your platforms because you can submit apps that</p>
+      <p begin="00:14:26.490" end="00:14:30.900">go only to phone are only to desktop if you want habit on the surface...</p>
+      <p begin="00:14:30.900" end="00:14:36.210">its windows team and second one is the seat licensees...because this</p>
+      <p begin="00:14:36.210" end="00:14:40.860">device is going to be for enterprises we expect that it pros and admins</p>
+      <p begin="00:14:40.860" end="00:14:45.210">we'll go and buy apps in the business store or just download apps</p>
+      <p begin="00:14:45.210" end="00:14:49.780">...the business store and then...the company so-if you want to be part of that you want</p>
+      <p begin="00:14:49.780" end="00:14:53.040">...plight to the business store you need to opting to</p>
+      <p begin="00:14:53.040" end="00:14:58.460">...so that the admins can do that so that's great.</p>
+      <p begin="00:14:58.460" end="00:15:03.340">Let's move on now to design and let's get our hands libm are dirty with the</p>
+      <p begin="00:15:03.340" end="00:15:07.850">designing...thinking about an effort...surface hub what do you have to think about as</p>
+      <p begin="00:15:07.850" end="00:15:12.560">your developing your app so first thing you have to think about when you are</p>
+      <p begin="00:15:12.560" end="00:15:17.290">tailoring once again you're app just runs but you can do things to improve there's a lot of design tips</p>
+      <p begin="00:15:17.290" end="00:15:21.690">I'm going to give herefirst one is that the session</p>
+      <p begin="00:15:21.690" end="00:15:26.660">conserve office session so like here we were in the welcome screen and then we</p>
+      <p begin="00:15:26.660" end="00:15:30.610">enter the session and then we did stuff and then we finish the session and everything was</p>
+      <p begin="00:15:30.610" end="00:15:36.260">gone this is what's going to happen every time...user enters a conference room and tries to do something</p>
+      <p begin="00:15:36.260" end="00:15:40.430">with the surface up so they will do that they'll be productive</p>
+      <p begin="00:15:40.430" end="00:15:44.970">...get stuff done and as they are finishing we're going to erase all</p>
+      <p begin="00:15:44.970" end="00:15:49.940">their contents why do we do that because the next people are going to come into the conference room and we don't want</p>
+      <p begin="00:15:49.940" end="00:15:53.980">them to see that content so it's very much about trusts</p>
+      <p begin="00:15:53.980" end="00:15:58.770">it's we want people to go to conference rooms and get out and trust their data safe</p>
+      <p begin="00:15:58.770" end="00:16:03.050">so in each of as a developer make sure to not save anything on the device because</p>
+      <p begin="00:16:03.050" end="00:16:06.110">...will be erased optimized for</p>
+      <p begin="00:16:06.110" end="00:16:09.380">...touch...key.</p>
+      <p begin="00:16:09.380" end="00:16:12.420">When you're talking about otherwise this big it's so visual is</p>
+      <p begin="00:16:12.420" end="00:16:16.490">so tactile you really want to be on the screen you don't want to be a</p>
+      <p begin="00:16:16.490" end="00:16:21.280">mouse or keyboard for sure and, you want to make sure that you use all the capabilities that are</p>
+      <p begin="00:16:21.280" end="00:16:26.640">sensors give you can use multiple touches in-band at the same time which is something very unique and you</p>
+      <p begin="00:16:26.640" end="00:16:30.290">can also differentiate between...touch you can make sure that dutch will</p>
+      <p begin="00:16:30.290" end="00:16:35.560">...the content while...will...on the content so you want</p>
+      <p begin="00:16:35.560" end="00:16:40.250">to make sure to use those true to your advantage of course the size of the</p>
+      <p begin="00:16:40.250" end="00:16:44.880">...important if you are making a presentation...you want to make sure things are full-screen and</p>
+      <p begin="00:16:44.880" end="00:16:49.840">use all the resolution because we want everyone in the room to see...the same time if you're close to</p>
+      <p begin="00:16:49.840" end="00:16:54.650">the screen if things are too big I can't even see the whole screen when I'm</p>
+      <p begin="00:16:54.650" end="00:17:00.320">like just to give an example and I'm right here I can't even see the whole screen only see like an</p>
+      <p begin="00:17:00.320" end="00:17:04.710">...in the middle so you can use that also sure advantage you can put the important things in the</p>
+      <p begin="00:17:04.710" end="00:17:09.230">center and put the secondary controls on the sides so interesting things that</p>
+      <p begin="00:17:09.230" end="00:17:15.290">you can think about when you...size...I'm going to go into each of response pointing more...</p>
+      <p begin="00:17:15.290" end="00:17:17.300">So, I thought about cleanup.</p>
+      <p begin="00:17:17.300" end="00:17:21.770">Why am I talking so much about cleaner because this is very unique to the surface hub not many</p>
+      <p begin="00:17:21.770" end="00:17:26.650">devices have this concept of cleaning up and resetting everything when you're done with your</p>
+      <p begin="00:17:26.650" end="00:17:30.290">at the service have does because it's a communal device</p>
+      <p begin="00:17:30.290" end="00:17:33.640">...will be just hanging out there in the hubble space and conference room</p>
+      <p begin="00:17:33.640" end="00:17:39.880">people go use it and get out that's how it's going to operate during the day and because of that at the end of</p>
+      <p begin="00:17:39.880" end="00:17:44.110">every session we want to be sure to not leave anything so we're going to</p>
+      <p begin="00:17:44.110" end="00:17:47.840">erase all application data documents pictures media temporary files</p>
+      <p begin="00:17:47.840" end="00:17:52.740">that settings everything and the key for-you developers app settings</p>
+      <p begin="00:17:52.740" end="00:17:57.660">app data gone so you don't want to save anything locally you want to make sure that all</p>
+      <p begin="00:17:57.660" end="00:18:02.190">your data is saved either on the cloud or on a personal device like a phone</p>
+      <p begin="00:18:02.190" end="00:18:05.320">...tablet that is...should...remember we have so many</p>
+      <p begin="00:18:05.320" end="00:18:08.860">sensors you can actually use that your advantage you can use nfc and</p>
+      <p begin="00:18:08.860" end="00:18:13.450">...the phone should download your content or you can use the phone to login you can this</p>
+      <p begin="00:18:13.450" end="00:18:17.930">some equal things so that the user can start fresh and make sure that the data</p>
+      <p begin="00:18:17.930" end="00:18:22.410">that goes with them instead of being the lead so far for the most</p>
+      <p begin="00:18:22.410" end="00:18:27.250">common one which is the white where we had a solution...sending the notes by email but you could imagine,</p>
+      <p begin="00:18:27.250" end="00:18:32.000">for example, pairing with the phone and doing a lot of cool things like that are unique to this</p>
+      <p begin="00:18:32.000" end="00:18:38.360">big form factor it's a divisor invites you to come and...and connect?</p>
+      <p begin="00:18:38.360" end="00:18:41.370">Also think about first-run experiences you're probably</p>
+      <p begin="00:18:41.370" end="00:18:46.280">everyone has seen apps that when you get in the app it says welcome</p>
+      <p begin="00:18:46.280" end="00:18:50.620">to the app let's take a tour let's do a tutorial endpoint</p>
+      <p begin="00:18:50.620" end="00:18:53.720">aerosmith thing saying this is how you do things so this is</p>
+      <p begin="00:18:53.720" end="00:18:57.050">...very useful for mobile apps but,</p>
+      <p begin="00:18:57.050" end="00:19:01.170">it's in the surface how because you're...doesn't know if it's the first run</p>
+      <p begin="00:19:01.170" end="00:19:06.940">...second-round instagram because they don't have local data you need to be aware that first-run experience</p>
+      <p begin="00:19:06.940" end="00:19:11.630">two-run every time so you'll have that and considered reducing</p>
+      <p begin="00:19:11.630" end="00:19:15.890">...first-run experience or even removing completely because on the first-time you be great</p>
+      <p begin="00:19:15.890" end="00:19:20.610">on the third-time...be really annoying and after the fifth time they mites really avoid</p>
+      <p begin="00:19:20.610" end="00:19:27.130">your app so you don't want to be putting those little tutorials every single time?</p>
+      <p begin="00:19:27.130" end="00:19:29.330">So, let's talk about the design and</p>
+      <p begin="00:19:29.330" end="00:19:33.540">scale and how close you are to the device so...are user research</p>
+      <p begin="00:19:33.540" end="00:19:37.490">wi-fi very useful to divide the interaction to choose</p>
+      <p begin="00:19:37.490" end="00:19:40.560">...of engagement so we calls on one is own</p>
+      <p begin="00:19:40.560" end="00:19:45.790">to zone one is when you're close to the device it's about up to one arm's length of the</p>
+      <p begin="00:19:45.790" end="00:19:49.290">device person that...on one is really touching the device</p>
+      <p begin="00:19:49.290" end="00:19:53.730">...out writing on the devices really close to the device sometimes they are not sometimes they're</p>
+      <p begin="00:19:53.730" end="00:19:58.670">just like discussing with someone else but they're that close and that's the only have to be aware</p>
+      <p begin="00:19:58.670" end="00:20:02.550">that they don't see the whole screen they probably have a limited a</p>
+      <p begin="00:20:02.550" end="00:20:08.130">awareness a cone of awareness in front of them that's the area they can see and</p>
+      <p begin="00:20:09.400" end="00:20:13.700">...when you are further away from the device then they could be watching presentation they could</p>
+      <p begin="00:20:13.700" end="00:20:18.810">be just hanging around the device and talking about some content they could be</p>
+      <p begin="00:20:18.810" end="00:20:23.600">...could have other devices in their hands might maybe...phone maybe a tablet you want to make sure you</p>
+      <p begin="00:20:23.600" end="00:20:26.830">...that they might be...in a conference room so you want you</p>
+      <p begin="00:20:26.830" end="00:20:29.930">...make sure that when you're tailing for zone...you and</p>
+      <p begin="00:20:29.930" end="00:20:34.790">make sure that everything is big and readable invisible so, for example, this map is great on zone</p>
+      <p begin="00:20:34.790" end="00:20:39.540">too because you guys can see the map is very visual but at the same time I have a little bit of zone one</p>
+      <p begin="00:20:39.540" end="00:20:44.500">controls here the smaller menus which are for me the presenter so you can</p>
+      <p begin="00:20:44.500" end="00:20:50.270">...mix and match them as your scenario both so with...zones in...are also let me</p>
+      <p begin="00:20:50.270" end="00:20:55.850">tell you about the size of...of course so...goes more or less up to for meters</p>
+      <p begin="00:20:55.850" end="00:20:59.210">...device and up to six meters with an eighty</p>
+      <p begin="00:20:59.210" end="00:21:05.920">four-inch device off-course bigger devices give you a bigger zone through a bigger engagements?</p>
+      <p begin="00:21:05.920" end="00:21:10.810">Even though here in this conference room I believe people although in the back which would be outside...onto</p>
+      <p begin="00:21:10.810" end="00:21:17.380">...to see...part of this presentation so you can adapt that your scenario but nobody does</p>
+      <p begin="00:21:17.380" end="00:21:22.410">...shoe is on one's own...this concepts off engagement zones there's a lot of</p>
+      <p begin="00:21:22.410" end="00:21:27.060">things you can do to improve your apps to twitter apps let's talk about positioning</p>
+      <p begin="00:21:27.060" end="00:21:31.870">...about the users context in basra if they're sitting down if there standing up and they have</p>
+      <p begin="00:21:31.870" end="00:21:37.180">another device if what where are the user in the relationship with the</p>
+      <p begin="00:21:37.180" end="00:21:43.580">space and the device make controls reachable and that might sound ...</p>
+      <p begin="00:21:43.580" end="00:21:48.760">sound redundant but you need to make sure people can actually thatcher your controls here the control</p>
+      <p begin="00:21:48.760" end="00:21:52.370">there on the top are hard to reach unless you are</p>
+      <p begin="00:21:52.370" end="00:21:58.740">...eric they're hard to reachif the on the talk so you should be aware that some people have access</p>
+      <p begin="00:21:58.740" end="00:22:04.110">to be requirements they might have a wheelchair or might have difficulties moving their arms</p>
+      <p begin="00:22:04.110" end="00:22:08.860">...make sure that the main controls should be on the bottom and you</p>
+      <p begin="00:22:08.860" end="00:22:14.150">should think about which controls you put in the center and on the sites I</p>
+      <p begin="00:22:14.150" end="00:22:18.170">give the example here off-the-shelf of the surface of...so here we have the</p>
+      <p begin="00:22:18.170" end="00:22:22.930">...buttons on the right side and on the left...why do we do that on both sides because</p>
+      <p begin="00:22:22.930" end="00:22:25.920">there secondary control they're not like here in the middle</p>
+      <p begin="00:22:25.920" end="00:22:30.850">but also I don't want people to go and walk all the way across to start...I want them to be able to</p>
+      <p begin="00:22:30.850" end="00:22:34.640">...from either side I don't want them to also as a presenter...to</p>
+      <p begin="00:22:34.640" end="00:22:39.260">...the content should start immediately so you think about that like think about</p>
+      <p begin="00:22:39.260" end="00:22:43.440">occlusion think about how do...the size of the device because we have all</p>
+      <p begin="00:22:43.440" end="00:22:48.790">the space we can afford to have a controls always there?</p>
+      <p begin="00:22:48.790" end="00:22:53.530">I also think abouts the brightness and proximity to the screen so when you make your</p>
+      <p begin="00:22:53.530" end="00:22:57.840">...very bright like white's...be uncomfortable after a while for the user</p>
+      <p begin="00:22:57.840" end="00:23:02.010">...be close to the screen...own one at the same timezone to</p>
+      <p begin="00:23:02.010" end="00:23:06.870">...image might pop out better and they might be able to redid better so consider how you're going to apply</p>
+      <p begin="00:23:06.870" end="00:23:13.130">...an change that...in relationship to the to the proximity.</p>
+      <p begin="00:23:13.130" end="00:23:17.880">of course scale contents and controls appropriately so if you this is this</p>
+      <p begin="00:23:17.880" end="00:23:21.770">control is about the size of my failure and that's great but if I took a phone app imagine</p>
+      <p begin="00:23:21.770" end="00:23:24.590">...took a phone app where the controls the size of my finger and</p>
+      <p begin="00:23:24.590" end="00:23:29.200">just proportionally scaled up and then the control now is about the size of my hand so</p>
+      <p begin="00:23:29.200" end="00:23:33.810">you've gotta be careful when you do scaling be smart about... about where the controls are in</p>
+      <p begin="00:23:33.810" end="00:23:38.670">the screen sometimes a control...here it's here on the bottom it's not exactly comfortable to be</p>
+      <p begin="00:23:38.670" end="00:23:42.850">hitting all the time so this controls they don't have them all the time it's fine</p>
+      <p begin="00:23:42.850" end="00:23:49.330">but you probably want to optimize to the zone that's going to be most convertible.</p>
+      <p begin="00:23:49.330" end="00:23:54.100">So, now let's go and move on to actual decode part which is my favorite part</p>
+      <p begin="00:23:54.100" end="00:23:58.150">...english is not my first language as you can notice but actually code is my</p>
+      <p begin="00:23:58.150" end="00:24:03.200">first language I imagine you all speex code with me let's go...speak a little bit of</p>
+      <p begin="00:24:03.200" end="00:24:08.410">zeppelin csharp so why do they choose demo in csharp I believe most of you</p>
+      <p begin="00:24:08.410" end="00:24:13.190">are familiar with it...is those are the technologies that we have been demoing all over and it's really</p>
+      <p begin="00:24:13.190" end="00:24:17.760">easy-to-read and understand you can use other universal universal apt</p>
+      <p begin="00:24:17.760" end="00:24:22.180">languages like cplus-plus like visual basic andfrom yesterday now we</p>
+      <p begin="00:24:22.180" end="00:24:26.180">know that java and objective see and everything is coming together is really</p>
+      <p begin="00:24:26.180" end="00:24:31.670">awesome I'm excited to be a microsoft right now let's talk a little bit about this</p>
+      <p begin="00:24:31.670" end="00:24:35.900">...so here I'm going to be the part of</p>
+      <p begin="00:24:35.900" end="00:24:39.900">a software developer on a design firm so my design</p>
+      <p begin="00:24:39.900" end="00:24:44.790">firm has an app that allows people...their phones to review</p>
+      <p begin="00:24:44.790" end="00:24:49.690">design that were saying each of them so the clients can receive the...and say I like or I don't like the</p>
+      <p begin="00:24:49.690" end="00:24:54.330">app...like the design so let's take a look at that</p>
+      <p begin="00:24:54.330" end="00:24:57.470">...to move onto my display.</p>
+      <p begin="00:24:58.670" end="00:25:03.490">...seizure your favorite friend.</p>
+      <p begin="00:25:03.490" end="00:25:08.880">So, here we just show you this app that we have running onphone form</p>
+      <p begin="00:25:08.880" end="00:25:14.270">...small tab with form factor so here this is a universal app that we</p>
+      <p begin="00:25:14.270" end="00:25:16.820">develop before and this app is for clients</p>
+      <p begin="00:25:16.820" end="00:25:21.140">to go and say if they like or if they don't like their designs</p>
+      <p begin="00:25:21.140" end="00:25:25.410">on the goal the client can go in quickly swipe and say well, you know,</p>
+      <p begin="00:25:25.410" end="00:25:29.510">I really like this so far I like this.</p>
+      <p begin="00:25:29.510" end="00:25:31.680">And, you can say I like this and you can goes...</p>
+      <p begin="00:25:31.680" end="00:25:37.320">I dome once this one I do very fast very optimized for that on-the-go if you</p>
+      <p begin="00:25:37.320" end="00:25:44.200">recognise furniture we actually took the pictures here in the conference so.</p>
+      <p begin="00:25:44.200" end="00:25:46.700">It's a it's a...that's very interesting</p>
+      <p begin="00:25:46.700" end="00:25:52.180">in conference furniture they're, they're probably trying to make a conferences cools do so,</p>
+      <p begin="00:25:52.180" end="00:25:57.260">here I'm going to open the menu and it's navin global navigation menu so it's an app</p>
+      <p begin="00:25:57.260" end="00:26:01.750">it's working very well it's...for mobile it uses the patterns that mobile</p>
+      <p begin="00:26:01.750" end="00:26:06.600">...expect has bright blue-collar it pops out well on the phone I can</p>
+      <p begin="00:26:06.600" end="00:26:09.550">recognise quickly so it works great I can type the</p>
+      <p begin="00:26:09.550" end="00:26:15.470">common with the virtual keyboard and my clients...they take the app they walk around</p>
+      <p begin="00:26:15.470" end="00:26:18.600">...can...very quickly be...</p>
+      <p begin="00:26:18.600" end="00:26:23.980">But, now my...dot this amazing device about this giant touch-screen on</p>
+      <p begin="00:26:23.980" end="00:26:28.650">...conference rooms and nodding they ask me well why don't we tried putting that app on</p>
+      <p begin="00:26:28.650" end="00:26:32.370">the surface hub and I said that's cool because now we can invite the</p>
+      <p begin="00:26:32.370" end="00:26:35.040">clients over and they can discuss with us</p>
+      <p begin="00:26:35.040" end="00:26:40.870">they can discuss on the conference room instead of doing that just on the goal and I</p>
+      <p begin="00:26:40.870" end="00:26:45.440">said sure let's try that out so I'm going to just run this app on the surfaceand,</p>
+      <p begin="00:26:45.440" end="00:26:51.830">let's see what it looks like so I'm going to change here to...machine we're using the regular</p>
+      <p begin="00:26:51.830" end="00:26:56.380">...no magic here you guys know it very well let's see</p>
+      <p begin="00:26:56.380" end="00:26:59.330">if the remote is up the checkbook.</p>
+      <p begin="00:27:00.500" end="00:27:02.390">I think it is I think it is I got to deployments.</p>
+      <p begin="00:27:03.480" end="00:27:08.000">Although the remote operations taking longer so the wrote the bagger has some flaking as with</p>
+      <p begin="00:27:08.000" end="00:27:15.640">the network let's just open it again okay there it is...retry.</p>
+      <p begin="00:27:15.640" end="00:27:21.500">So, yeah, I'm just going to apply to the remote...the...let's try that again.</p>
+      <p begin="00:27:21.500" end="00:27:24.080">They this so...same app</p>
+      <p begin="00:27:24.080" end="00:27:28.190">...windows app so no magic here we can apply the app</p>
+      <p begin="00:27:28.190" end="00:27:32.550">any will show up on every device but you can see that like I really tailored</p>
+      <p begin="00:27:32.550" end="00:27:37.220">...phones and small screens I didn't make a layout for large-screen</p>
+      <p begin="00:27:38.650" end="00:27:44.380">so this is a little bit of...example if I had like a desktop layout you would definitely look</p>
+      <p begin="00:27:44.380" end="00:27:50.120">better...looks so, much like the phone stretched up you could actually go and think about the screen</p>
+      <p begin="00:27:50.120" end="00:27:54.430">size but here I just had my phone and I my phone app and I want to run that universe</p>
+      <p begin="00:27:54.430" end="00:27:58.210">...any runs I can do all the same passe can swipe up I</p>
+      <p begin="00:27:58.210" end="00:28:01.220">...come here and typed we using the virtual</p>
+      <p begin="00:28:01.220" end="00:28:06.420">keyboard because see the virtual keyboard is a little bit less convertible to type on this vertical surface so</p>
+      <p begin="00:28:06.420" end="00:28:11.030">you have to we have to improve that also can see that the app</p>
+      <p begin="00:28:11.030" end="00:28:15.520">it works ok but the pictures a little bit large because remember my...of</p>
+      <p begin="00:28:15.520" end="00:28:20.240">awareness is about here so I can see this but I can't really see the</p>
+      <p begin="00:28:20.240" end="00:28:25.180">whole picture when I'm at zone one interacting with the device so I need to make the picture</p>
+      <p begin="00:28:25.180" end="00:28:30.560">be a little smaller more censored also the background is headed pops very much on the phone</p>
+      <p begin="00:28:30.560" end="00:28:34.060">...cool I like the...blue-collar but here I one is something</p>
+      <p begin="00:28:34.060" end="00:28:39.190">...muted because it's...bright it...that from the main content and</p>
+      <p begin="00:28:39.190" end="00:28:42.920">...the menu the many works and I can I can</p>
+      <p begin="00:28:42.920" end="00:28:47.070">through open it up but this menu is not using the real-estate that</p>
+      <p begin="00:28:47.070" end="00:28:52.100">I have available why do I had to click the button...every time so we could improve</p>
+      <p begin="00:28:52.100" end="00:28:57.350">there's a lot more by having the may be always open so let's go</p>
+      <p begin="00:28:57.350" end="00:29:01.970">to make those tweaks and I'm going to show you how to make those tweaks specifically for the surface</p>
+      <p begin="00:29:01.970" end="00:29:06.680">hub again I'm going to make tweaks based on the screen size there's a lot of things you can do based on the screen</p>
+      <p begin="00:29:06.680" end="00:29:08.390">size but here I'm going to make</p>
+      <p begin="00:29:08.390" end="00:29:13.540">it based on the surface hub itself which is a very unique device.</p>
+      <p begin="00:29:13.540" end="00:29:19.390">So, let's go over to visual studio back again so here you guys can see my code</p>
+      <p begin="00:29:19.390" end="00:29:23.730">...what I'm going to do here is I'm going to creates a new set of visual</p>
+      <p begin="00:29:23.730" end="00:29:27.490">states to change between surface hub</p>
+      <p begin="00:29:27.490" end="00:29:31.580">and other devices so if you don't know visual states...visual</p>
+      <p begin="00:29:31.580" end="00:29:36.470">states is how you changer layout based on some property</p>
+      <p begin="00:29:36.470" end="00:29:42.200">or some state of your app so you can create visual states for sizes for different screen</p>
+      <p begin="00:29:42.200" end="00:29:46.290">...can create visual states for I don't know if you have an error you can creative</p>
+      <p begin="00:29:46.290" end="00:29:50.770">...for the errors so there's a lot of things you can do visual states but here we're going to really</p>
+      <p begin="00:29:50.770" end="00:29:55.140">create visual stage for the surface hub so that I can make tweaks and</p>
+      <p begin="00:29:55.140" end="00:30:01.070">change properties when I'm running on that device so let me show you how I...going to do that let's open here are</p>
+      <p begin="00:30:01.070" end="00:30:07.630">main page this is just a regular demo page and here I have my split view it's the ...</p>
+      <p begin="00:30:07.630" end="00:30:12.440">of my page and I'm going to add a visual states group the same way I would</p>
+      <p begin="00:30:12.440" end="00:30:15.640">for anything else so here I have to visual</p>
+      <p begin="00:30:15.640" end="00:30:20.180">states the default and windows team so I'm going to create a visual state</p>
+      <p begin="00:30:20.180" end="00:30:25.370">...windows thing family now the first thing is how do I...the</p>
+      <p begin="00:30:25.370" end="00:30:31.460">design for that state after I have the state up what I like to do is go to blend and</p>
+      <p begin="00:30:31.460" end="00:30:33.580">...is really my favorite...for this</p>
+      <p begin="00:30:33.580" end="00:30:38.020">I really love it and I've been using it since he was called acrylic.</p>
+      <p begin="00:30:38.020" end="00:30:41.800">Expression interactive designer was...a very cool it's been a very cool</p>
+      <p begin="00:30:43.300" end="00:30:47.560">too and it's now it's like just amazing I love the features that we have here</p>
+      <p begin="00:30:47.560" end="00:30:52.410">for designing so here have on blend I'm running the designer I can see my</p>
+      <p begin="00:30:52.410" end="00:30:57.310">...five-inch phone you can see what it looks like when I'm design for the full as I said</p>
+      <p begin="00:30:57.310" end="00:31:00.800">...as well as users to have eighty</p>
+      <p begin="00:31:00.800" end="00:31:04.680">...surface hub as an option here so without having the</p>
+      <p begin="00:31:04.680" end="00:31:09.730">surface hub you can have an idea of what the layout will look like you can compare with the real one</p>
+      <p begin="00:31:09.730" end="00:31:15.970">...very similar...to the real one on the device so I'm going-to leave this one and the surface</p>
+      <p begin="00:31:15.970" end="00:31:21.440">...and I'm going to use visual states that I created to change my design for windows</p>
+      <p begin="00:31:21.440" end="00:31:24.850">...do that you click the state here so usually you're going to be</p>
+      <p begin="00:31:24.850" end="00:31:27.910">in the solution explore tab you just click the...stab?</p>
+      <p begin="00:31:27.910" end="00:31:32.950">And, then I have my to visual...windows t when you click it you can see here windows</p>
+      <p begin="00:31:32.950" end="00:31:37.750">...state recordings on and then I'm going-to go over I'm going to change some stuff</p>
+      <p begin="00:31:37.750" end="00:31:42.530">here on my app...do is I'm going to take the menu and make sure</p>
+      <p begin="00:31:42.530" end="00:31:46.810">it's always open so let's take the menu here I love this property filter</p>
+      <p begin="00:31:46.810" end="00:31:51.440">it's my it's my favorite feature on the properties designer in</p>
+      <p begin="00:31:51.440" end="00:31:54.410">...so I'm going to come here and type</p>
+      <p begin="00:31:54.410" end="00:31:59.550">in spain open through and change display mode to inline so</p>
+      <p begin="00:31:59.550" end="00:32:04.640">they'll make the menu be always open so let's see what it what it looks like to know</p>
+      <p begin="00:32:04.640" end="00:32:08.330">menu...menu great let's keep...</p>
+      <p begin="00:32:08.330" end="00:32:12.320">So, now that I have my menu here I don't need my button anymore I don't need this</p>
+      <p begin="00:32:12.320" end="00:32:15.110">button to be visible because the...is always there so</p>
+      <p begin="00:32:15.110" end="00:32:21.470">let's just collapses this button visibility collapse...gone.</p>
+      <p begin="00:32:21.470" end="00:32:27.380">Now let's talk about the main contents the main content I said the background it's a little bit...bright I'm going to</p>
+      <p begin="00:32:27.380" end="00:32:32.340">make a little bit more discrete and the way I'm going to do that is a click the main content</p>
+      <p begin="00:32:32.340" end="00:32:37.170">here animation change the background to menu background brush so I like it looks</p>
+      <p begin="00:32:37.170" end="00:32:42.060">...looks flush with the...darker more focus on the main content</p>
+      <p begin="00:32:42.060" end="00:32:47.410">and center also you can see that when I open the menu everything got little bit nudged the</p>
+      <p begin="00:32:47.410" end="00:32:51.950">...so I'm going to nudge everything back ...do that going-to-take the</p>
+      <p begin="00:32:51.950" end="00:32:56.780">...there's several ways to do it I'm going to a very quick one going to put a margin on my main</p>
+      <p begin="00:32:56.780" end="00:33:01.100">contents of minus three twenty...back...great.</p>
+      <p begin="00:33:01.100" end="00:33:05.490">Now let's talk about the picture itself the flip view so...is where I can go in flipped</p>
+      <p begin="00:33:05.490" end="00:33:10.630">...text with the comments right I'm going to go over and I said it was a</p>
+      <p begin="00:33:10.630" end="00:33:14.050">...wide like here it's nice for presentation I like</p>
+      <p begin="00:33:14.050" end="00:33:18.160">...presentation but for collaboration productivity it's not great remember this is</p>
+      <p begin="00:33:18.160" end="00:33:22.000">...ad for me to show you the designs a good...for that would be powerpoint,</p>
+      <p begin="00:33:22.000" end="00:33:26.950">for example, this is a good...for me to go and...the designs and comment on...</p>
+      <p begin="00:33:26.950" end="00:33:31.880">designs and for that I need to be able to see the whole thing when I'm actually right here in the middle of the</p>
+      <p begin="00:33:31.880" end="00:33:36.070">...so I'm going to make the image smaller so that I can I can appreciate</p>
+      <p begin="00:33:36.070" end="00:33:42.400">the whole design so, I'm going to do that by taking that picture and changing the max with</p>
+      <p begin="00:33:42.400" end="00:33:47.040">...again thousands of ways you can think about going that there are lots of talks here</p>
+      <p begin="00:33:47.040" end="00:33:50.930">...build that talk about that specifically talk about tailoring or app</p>
+      <p begin="00:33:50.930" end="00:33:56.230">for different screen sizes but I'm just going to use a simple method here I'm going to put a</p>
+      <p begin="00:33:56.230" end="00:34:01.710">macs with and I'm going to put a margin on each side so that.</p>
+      <p begin="00:34:01.710" end="00:34:05.280">So, that the flip few doesn't interfere with the menu on the left so I'm just going</p>
+      <p begin="00:34:05.280" end="00:34:09.150">...three twenty margin on each side there...now we got the pictures</p>
+      <p begin="00:34:09.150" end="00:34:13.860">...be centered and it's going to be not full-screen you guys can see over</p>
+      <p begin="00:34:13.860" end="00:34:18.320">...designer this is what I got so I'm going to save this.</p>
+      <p begin="00:34:18.320" end="00:34:20.530">And, let's just run this on the device and see what</p>
+      <p begin="00:34:20.530" end="00:34:26.600">looks like of course I'm forgetting something very important I didn't make the</p>
+      <p begin="00:34:26.600" end="00:34:31.210">states change withwhen...that advice I just created</p>
+      <p begin="00:34:31.210" end="00:34:35.660">...states but I didn't change the windows team state so how do I do that</p>
+      <p begin="00:34:35.660" end="00:34:40.500">actually I could even go and run just to show that you won't change anything just by having that</p>
+      <p begin="00:34:40.500" end="00:34:44.540">to state there so...building I'm going to talk about</p>
+      <p begin="00:34:44.540" end="00:34:48.130">...you can see it's exactly the same even though I...those streaks I didn't change</p>
+      <p begin="00:34:48.130" end="00:34:52.660">that visual state the question here is how do you change to a different visual state</p>
+      <p begin="00:34:52.660" end="00:34:57.670">when you are in a different advice and that's the key to the whole thing so, there's a concept</p>
+      <p begin="00:34:57.670" end="00:35:02.570">we introducing windows then that's...state triggers and there's one state trigger that</p>
+      <p begin="00:35:02.570" end="00:35:07.870">comes with the sdk which is really cool it's called the adaptive state trigger and with that</p>
+      <p begin="00:35:07.870" end="00:35:12.760">trigger you can take a set of visual states and change them when with our</p>
+      <p begin="00:35:12.760" end="00:35:17.450">...change on the your window so you can go and say if the with is higher</p>
+      <p begin="00:35:17.450" end="00:35:23.800">than like if there is bigger than a thousand pixels then change the state, for example, and,</p>
+      <p begin="00:35:23.800" end="00:35:29.310">that's a very common technique web developers having doing that for ages and,...great that we introduced that</p>
+      <p begin="00:35:29.310" end="00:35:31.170">...should sdk?</p>
+      <p begin="00:35:31.170" end="00:35:36.400">But, the interesting thing here is that we don't want to trigger on the with our heights are size</p>
+      <p begin="00:35:36.400" end="00:35:41.380">...trigger on the particular device family which is the windows team family once again we don't want to</p>
+      <p begin="00:35:41.380" end="00:35:46.630">confuse a four-k screen with...arcade desktop monitor we really don't want to do that we wanted to</p>
+      <p begin="00:35:46.630" end="00:35:50.040">optimize for this so how do you do that you create you can create</p>
+      <p begin="00:35:50.040" end="00:35:53.260">your own state triggers and that's what I did.</p>
+      <p begin="00:35:53.260" end="00:35:56.220">Have my own device family state trigger and just want</p>
+      <p begin="00:35:56.220" end="00:36:03.310">to show you how simple the code is really like there's two lines of actual code?</p>
+      <p begin="00:36:03.310" end="00:36:08.650">to create a state trigger you just arrived from state trigger base so here you can see I'm implementing the</p>
+      <p begin="00:36:08.650" end="00:36:11.580">...from states trigger base and state</p>
+      <p begin="00:36:11.580" end="00:36:15.850">trigger base is it only has one important method which is</p>
+      <p begin="00:36:15.850" end="00:36:20.790">sad active so the idea is when you create a trigger you-can call sat active</p>
+      <p begin="00:36:20.790" end="00:36:25.350">with true or false if you call it through that means this trigger should be activated</p>
+      <p begin="00:36:25.350" end="00:36:30.630">...the state should be activated if it's false means that triggers not active so you can</p>
+      <p begin="00:36:30.630" end="00:36:36.140">create state triggers to change between states and that's really, really easy so, this</p>
+      <p begin="00:36:36.140" end="00:36:41.500">state trigger it's pretty simple it has one property called device family any</p>
+      <p begin="00:36:41.500" end="00:36:45.870">...to active when the device family is equal to</p>
+      <p begin="00:36:45.870" end="00:36:50.460">the device family of the device I'm running now so this class analytics info</p>
+      <p begin="00:36:50.460" end="00:36:56.270">is part of windows system profile once again everything is documented you can get the version info dot</p>
+      <p begin="00:36:56.270" end="00:37:01.060">device family and you can compare that with the device family that I created when a</p>
+      <p begin="00:37:01.060" end="00:37:04.420">stance the instantiated this trigger</p>
+      <p begin="00:37:04.420" end="00:37:09.000">...how do I use it let's go to the main page and let's add a state trigger here</p>
+      <p begin="00:37:09.000" end="00:37:15.200">to my windows team states so visual states...even bigger for you guys on the</p>
+      <p begin="00:37:15.200" end="00:37:19.930">back visual state dot state triggers and then I'm going to go in here and say</p>
+      <p begin="00:37:21.340" end="00:37:25.400">...see adapted trigger comes...the adaptive trigger is the one about</p>
+      <p begin="00:37:25.400" end="00:37:31.430">size but I'm going to use my own that's the local device family state trigger and I'm going to say</p>
+      <p begin="00:37:31.430" end="00:37:36.200">the device family is windows dots team as I said</p>
+      <p begin="00:37:36.200" end="00:37:40.810">that's the thing to remember when you're talking about device family so with this trigger</p>
+      <p begin="00:37:40.810" end="00:37:45.770">I I'm sure now that when we run on the windows team device...look different and that's</p>
+      <p begin="00:37:45.770" end="00:37:52.510">I had to do it will go and apply all those changes that I made let's see if that's true.</p>
+      <p begin="00:37:52.510" end="00:37:58.840">Seeing is believing I only believe my code when it's running on the...so,</p>
+      <p begin="00:37:58.840" end="00:38:03.180">...trick that we make the main is always open the pictures in the center now I can</p>
+      <p begin="00:38:03.180" end="00:38:08.530">finally see the whole thing it's great I love those cubes that are in the theater over that and,</p>
+      <p begin="00:38:08.530" end="00:38:12.620">now I can go and say wow I like...I don't like this I can swipe through the</p>
+      <p begin="00:38:12.620" end="00:38:15.480">...always visible which means I'm using a libm are the</p>
+      <p begin="00:38:15.480" end="00:38:20.330">real-estate you can go further you could put the may on both sides you can make the menu lower you could put many</p>
+      <p begin="00:38:20.330" end="00:38:24.540">in the center you could go crazy with this I did like in just about ten minutes I did</p>
+      <p begin="00:38:24.540" end="00:38:29.110">tweaks that improve my experience quite a lot but I'm going to...last week which is</p>
+      <p begin="00:38:29.110" end="00:38:34.260">...xbox this is really my biggest gripe with anything on the surface hub that</p>
+      <p begin="00:38:34.260" end="00:38:38.920">grows from a small form factor to a large so here I have a text box and typing</p>
+      <p begin="00:38:38.920" end="00:38:44.330">here it's uncomfortable is really uncomfortable...start typing here and it works and even has the</p>
+      <p begin="00:38:44.330" end="00:38:49.010">...completion but he's really not the best...form factor for typing you can</p>
+      <p begin="00:38:49.010" end="00:38:53.240">use an external keyboard as well but you can get this so much better if you just use the</p>
+      <p begin="00:38:53.240" end="00:38:57.950">...so I'm going to make a change now is I'm going to remove that xbox and I'm going to add</p>
+      <p begin="00:38:57.950" end="00:39:02.810">...support and I'm going to keep the...in touch differentiated so they can</p>
+      <p begin="00:39:02.810" end="00:39:07.750">...the pen and swipe through the pictures with touch...show that how to do that.</p>
+      <p begin="00:39:07.750" end="00:39:14.060">Let's go back to our code once again so...to do that what you have to do is you need to change the data</p>
+      <p begin="00:39:14.060" end="00:39:18.870">template...that...view because...will be flipping through and each template has an image</p>
+      <p begin="00:39:18.870" end="00:39:22.510">...xbox me show you what it looks like now.</p>
+      <p begin="00:39:22.510" end="00:39:26.160">So, I got my flip view here...amounts you can see the whole thing so</p>
+      <p begin="00:39:26.160" end="00:39:30.430">the flip view and the data template as I said has</p>
+      <p begin="00:39:30.430" end="00:39:33.760">an image and attacks box and what I need to do is</p>
+      <p begin="00:39:33.760" end="00:39:37.390">...a new data template and I need to switch...that...the template when I</p>
+      <p begin="00:39:37.390" end="00:39:41.650">m on the windows team device so how do you do that?</p>
+      <p begin="00:39:41.650" end="00:39:46.630">So, I have created a different data template up here in my resources so</p>
+      <p begin="00:39:46.630" end="00:39:50.540">...here this is even simpler than the one that I had</p>
+      <p begin="00:39:50.540" end="00:39:51.880">...the xbox.</p>
+      <p begin="00:39:51.880" end="00:39:54.660">...a different data template that has an image within in</p>
+      <p begin="00:39:54.660" end="00:40:00.290">cameras on top and I'm going to zooming very much so you can all see in...is the word to</p>
+      <p begin="00:40:00.290" end="00:40:04.880">remember in canvas is the key to unlocking...support just by adding and in</p>
+      <p begin="00:40:04.880" end="00:40:09.310">...element you can make any control incapable with the</p>
+      <p begin="00:40:09.310" end="00:40:12.960">...support for from windows stand from direct inc all those cool</p>
+      <p begin="00:40:12.960" end="00:40:17.380">things that you'll learn about inc is just you put in canvas control...and the cool thing is that in</p>
+      <p begin="00:40:17.380" end="00:40:22.200">...by default only support spend it doesn't support the touch you can go</p>
+      <p begin="00:40:22.200" end="00:40:25.720">...change the properties to make is part painting with the dutch are</p>
+      <p begin="00:40:25.720" end="00:40:30.520">...the mouse but by the fault it only support spend which is what we want because you want</p>
+      <p begin="00:40:30.520" end="00:40:36.580">...to...and touch choose to swipe so let's see what that looks like so I'm</p>
+      <p begin="00:40:36.580" end="00:40:40.600">going to go and apply that data template which again is the same picture view</p>
+      <p begin="00:40:40.600" end="00:40:45.990">...the same data is the same of your model that a feeding this view I'm going</p>
+      <p begin="00:40:45.990" end="00:40:51.740">to go over to blends I'm going to choose once again my windows team states and</p>
+      <p begin="00:40:51.740" end="00:40:55.630">...going to go to the flip view and say when you...make</p>
+      <p begin="00:40:55.630" end="00:40:59.110">sure true changer item templates here</p>
+      <p begin="00:40:59.110" end="00:41:02.990">item template to be the inc template that I created.</p>
+      <p begin="00:41:04.010" end="00:41:09.170">And, then if I just save this and go back tvs and the...</p>
+      <p begin="00:41:09.170" end="00:41:13.120">So, it's going to build and even see that we just that change of data</p>
+      <p begin="00:41:13.120" end="00:41:17.980">template that xbox gone and now I can take my pen.</p>
+      <p begin="00:41:17.980" end="00:41:21.990">And,...I can take my pen and rights.</p>
+      <p begin="00:41:23.060" end="00:41:26.040">On the screen and also I can</p>
+      <p begin="00:41:26.040" end="00:41:29.870">continuous swiping and writing independently I can use the our of</p>
+      <p begin="00:41:29.870" end="00:41:40.080">...in touch separately I think...spent better result maybe I'm going to try the other one.</p>
+      <p begin="00:41:40.080" end="00:41:44.710">this is not any in canvas it's a step up from anything we had before you go to</p>
+      <p begin="00:41:44.710" end="00:41:48.440">direct in talk the talk all about how this is the best in</p>
+      <p begin="00:41:48.440" end="00:41:50.690">canvas microsoft has ever shipped because</p>
+      <p begin="00:41:50.690" end="00:41:56.320">...has by the fault pressure sensitive been and he has.</p>
+      <p begin="00:41:56.320" end="00:41:58.630">You can look like how the inc follows my</p>
+      <p begin="00:41:58.630" end="00:42:02.010">...very closely so he has super low latency by the</p>
+      <p begin="00:42:02.010" end="00:42:05.010">for out-of-the-box example so if you go to their</p>
+      <p begin="00:42:05.010" end="00:42:08.550">...the directing talk the talk tell-all about how this is the best</p>
+      <p begin="00:42:08.550" end="00:42:11.770">...we ever shipped out-of-the-box with one-line of them</p>
+      <p begin="00:42:12.940" end="00:42:18.200">and that's great and let's say now that I put this app on our conference rooms and people like</p>
+      <p begin="00:42:18.200" end="00:42:22.500">...people can...the bacon inc and they can use the menus they can swipe</p>
+      <p begin="00:42:22.500" end="00:42:26.050">in evaluate and say I liked picture that's great.</p>
+      <p begin="00:42:26.050" end="00:42:30.880">But, the thing is we realize that when we put this on a conference room what people really want to do is they don't want to</p>
+      <p begin="00:42:30.880" end="00:42:35.140">display by themselves they want to collaborate they want to bringing our people they</p>
+      <p begin="00:42:35.140" end="00:42:39.980">want to discuss the picture and this is a good at for one person it does the same thing</p>
+      <p begin="00:42:39.980" end="00:42:44.190">...the phone but if...bring more people how can we improve</p>
+      <p begin="00:42:44.190" end="00:42:47.860">the app even more how can we think about collaboration how can</p>
+      <p begin="00:42:47.860" end="00:42:54.400">we optimize from the ground-up for the surface hub and that's what I just did I created</p>
+      <p begin="00:42:54.400" end="00:42:58.220">a different view for this app...how to switch the views and</p>
+      <p begin="00:42:58.220" end="00:43:03.740">...do different view instead of just taking the user interface elements with visual</p>
+      <p begin="00:43:03.740" end="00:43:06.270">states create a whole new from scratch.</p>
+      <p begin="00:43:07.280" end="00:43:12.210">And, that new view is being read imagine for the conference room for the surface hub for</p>
+      <p begin="00:43:12.210" end="00:43:18.200">collaborating and I'm going to show you what that looks like right now it took me about a day to go a</p>
+      <p begin="00:43:18.200" end="00:43:22.030">day's work to go from that you to the other one of the show so that, you know,</p>
+      <p begin="00:43:22.030" end="00:43:28.210">that it's also not magic it's not crazy complicatedbecause the data is the same the code behind the</p>
+      <p begin="00:43:28.210" end="00:43:33.820">same...creating a new view so here I'm going to go back to my...cs and let me</p>
+      <p begin="00:43:33.820" end="00:43:38.740">...solution explore...have the main page is the page we were working on</p>
+      <p begin="00:43:38.740" end="00:43:44.150">and I created before another page called the surface hub page and I want to make sure that when</p>
+      <p begin="00:43:44.150" end="00:43:48.180">I...on the windows team device you should go to the service hub page so how does</p>
+      <p begin="00:43:48.180" end="00:43:52.170">that look like there's several ways of doing that once again I'm just choosing one</p>
+      <p begin="00:43:52.170" end="00:43:57.430">that's very simple which is I can use...framed...navigate on apps</p>
+      <p begin="00:43:57.430" end="00:44:02.230">...on the on launched method so here we are online ced we can navigate</p>
+      <p begin="00:44:02.230" end="00:44:05.890">through a different page according to the device type device</p>
+      <p begin="00:44:05.890" end="00:44:09.190">family sorry so here we this is the one that comes out-of-the-box with</p>
+      <p begin="00:44:09.190" end="00:44:12.340">the template I'm going to commented out and I'm going to</p>
+      <p begin="00:44:12.340" end="00:44:16.290">use the one that will do slightly different thing which</p>
+      <p begin="00:44:16.290" end="00:44:21.130">is when my device family is the windows team go to the surface</p>
+      <p begin="00:44:21.130" end="00:44:25.950">hub page otherwise go to the main page so very simple I just</p>
+      <p begin="00:44:25.950" end="00:44:34.290">change the whole page out of that and now let's take a look and see what this will look like?</p>
+      <p begin="00:44:34.290" end="00:44:39.570">So, let me run this one and ...</p>
+      <p begin="00:44:39.570" end="00:44:44.570">And, this is how we re imagine this app for the conference room and let me...a little bit of a few of the</p>
+      <p begin="00:44:44.570" end="00:44:50.440">features that I was thinking about when I was developing this one with the help of with the helping feedback of</p>
+      <p begin="00:44:50.440" end="00:44:55.280">our team backing redman so this is a screen that it's a lot more</p>
+      <p begin="00:44:55.280" end="00:45:00.120">optimized for the conference room and for the surface...form factor because</p>
+      <p begin="00:45:00.120" end="00:45:04.670">...uses the whole area of the device I put the manual on the topic is not</p>
+      <p begin="00:45:04.670" end="00:45:08.750">very important for me I maybe horizontal and is more symmetrical</p>
+      <p begin="00:45:08.750" end="00:45:14.890">the likens like buttons are bigger and I have space now to include the...but they...just to say and,</p>
+      <p begin="00:45:14.890" end="00:45:18.780">also now you can see I had this three-d carousel where</p>
+      <p begin="00:45:18.780" end="00:45:20.200">...the picture instead of the...</p>
+      <p begin="00:45:20.200" end="00:45:25.120">view because now not constrained by the space on the phone and I'm also not constrained by the battery</p>
+      <p begin="00:45:25.120" end="00:45:30.140">a memory performance of the phone so now I have a better</p>
+      <p begin="00:45:30.140" end="00:45:35.190">graphics card I can abuse the...a little bit and also I can make sure to give a</p>
+      <p begin="00:45:35.190" end="00:45:39.940">little bit of context because I have that space can give a little bit of convex to the user this is what</p>
+      <p begin="00:45:39.940" end="00:45:43.580">came this is what's coming next and I can use that just because I have this large-screen</p>
+      <p begin="00:45:44.970" end="00:45:49.640">of course I'm through optimizing for the cone of awareness I'm in the middle but I'm adding this</p>
+      <p begin="00:45:49.640" end="00:45:53.300">background and you can see the background cross fades when I</p>
+      <p begin="00:45:53.300" end="00:45:58.620">swipe actually let me put the...guys can see better?</p>
+      <p begin="00:45:58.620" end="00:46:00.840">So, you can see the background</p>
+      <p begin="00:46:00.840" end="00:46:06.320">across fades when I swipe between the pictures and then even though my awareness in the</p>
+      <p begin="00:46:06.320" end="00:46:09.500">...immersed in that design so you can make like the</p>
+      <p begin="00:46:09.500" end="00:46:14.690">designed to be immersive inclusive put the user in the context and</p>
+      <p begin="00:46:14.690" end="00:46:19.070">of course...works let me go here and eric which</p>
+      <p begin="00:46:19.070" end="00:46:22.840">...let-me know what-you think of this share?</p>
+      <p begin="00:46:22.840" end="00:46:24.000">Well, you know,</p>
+      <p begin="00:46:24.000" end="00:46:28.060">I like this chair I really like this part.</p>
+      <p begin="00:46:28.060" end="00:46:32.550">Right here ...that's an interesting part so eric</p>
+      <p begin="00:46:32.550" end="00:46:38.590">likes the chair but the thing is I don't think it goes very well with our living room, you know,</p>
+      <p begin="00:46:38.590" end="00:46:40.040">I think the</p>
+      <p begin="00:46:40.040" end="00:46:44.960">...not great so I can go here and say I don't like it and as</p>
+      <p begin="00:46:44.960" end="00:46:46.020">you notice the</p>
+      <p begin="00:46:46.020" end="00:46:50.700">application seems the transition from a one person uses two-a-two person</p>
+      <p begin="00:46:50.700" end="00:46:55.380">usage...the menu into the center and I got the buttons likens like</p>
+      <p begin="00:46:55.380" end="00:47:00.190">came I say I don't like it and now we have our own collections and now we can have a</p>
+      <p begin="00:47:00.190" end="00:47:05.230">much richer record off what happened in that discussion and I can say,</p>
+      <p begin="00:47:05.230" end="00:47:09.010">you know, tell me tell me about this one what you think this</p>
+      <p begin="00:47:09.010" end="00:47:14.540">...I really like the leather on it but the shiny steel I didn't really like that one yeah,</p>
+      <p begin="00:47:14.540" end="00:47:19.730">I think it doesn't match the table very well I don't like it either and we can keep</p>
+      <p begin="00:47:19.730" end="00:47:23.710">johan have a good record of the discussion again each one of us has</p>
+      <p begin="00:47:23.710" end="00:47:28.690">pressure sensitive band and...identification so each...has a different caller</p>
+      <p begin="00:47:28.690" end="00:47:33.340">and is associated with differ user the coolest thing you can do is imagine</p>
+      <p begin="00:47:33.340" end="00:47:38.030">what you what you're going to do when you can take this wireless...spend id</p>
+      <p begin="00:47:38.030" end="00:47:41.780">...associate with something like a credential are token and then you can</p>
+      <p begin="00:47:41.780" end="00:47:44.690">...that actually green was roberto and</p>
+      <p begin="00:47:44.690" end="00:47:49.030">blue was eric imagine that for review for collaboration for braced</p>
+      <p begin="00:47:49.030" end="00:47:54.020">army so who actually wrote this do remember that and this is super easy with the surface of the</p>
+      <p begin="00:47:54.020" end="00:47:57.340">scenario is like unleash with the surface hope?</p>
+      <p begin="00:47:57.340" end="00:47:58.560">Another over the does</p>
+      <p begin="00:47:58.560" end="00:48:03.410">...design because this...it's not magic I will point over to like some open-source</p>
+      <p begin="00:48:03.410" end="00:48:08.400">...like this cardoso is an open-source control I'll tell you how to get there it's really not</p>
+      <p begin="00:48:08.400" end="00:48:13.880">magic but the cool thing that I'm going to show in terms of code is where how do</p>
+      <p begin="00:48:13.880" end="00:48:15.950">...id how do you identify which</p>
+      <p begin="00:48:15.950" end="00:48:24.200">...is which and that's the last thing I want to demo it's going to move on to the code machine please absolutely?</p>
+      <p begin="00:48:24.200" end="00:48:28.970">There we go so that's the last thing I would like to show is how do I do the</p>
+      <p begin="00:48:28.970" end="00:48:33.850">...id and this is the surface hub page them cs and here I have the</p>
+      <p begin="00:48:33.850" end="00:48:38.570">method that does depend identification is really five lines of code super simple to do so</p>
+      <p begin="00:48:38.570" end="00:48:42.930">one cool thing about the service...is that each...has a unique wireless id and</p>
+      <p begin="00:48:42.930" end="00:48:47.730">unique wireless id will be a unique for the lifetime of your session, you know,</p>
+      <p begin="00:48:47.730" end="00:48:52.710">that each that...for all the apps that you're going to use is going to be the same so all</p>
+      <p begin="00:48:52.710" end="00:48:58.300">have to do is take the pointer point properties you can get one of those every time you click...time you</p>
+      <p begin="00:48:58.300" end="00:49:02.290">...dutch...or...this is the property you can get out of the event</p>
+      <p begin="00:49:02.290" end="00:49:06.160">arts so you can get a point-to-point and...the properties and from the point</p>
+      <p begin="00:49:06.160" end="00:49:09.680">...properties you can go in query for the wireless id usage</p>
+      <p begin="00:49:09.680" end="00:49:12.500">and the wireless id page so</p>
+      <p begin="00:49:13.650" end="00:49:18.300">those magic constance you need to know they're going to be documented and you can find that this code is on the</p>
+      <p begin="00:49:18.300" end="00:49:24.480">...you can download the slides in the website...build website and he has that piece of code?</p>
+      <p begin="00:49:24.480" end="00:49:30.000">And, of course I need to make sure that I return and notable...because if it doesn't have an</p>
+      <p begin="00:49:30.000" end="00:49:34.970">...have to return no because zero is a valid id zero could be about a or minus one</p>
+      <p begin="00:49:34.970" end="00:49:39.730">we don't know which ideas going to come out of the...so we need to return something else when it does not have an id,</p>
+      <p begin="00:49:39.730" end="00:49:45.230">... touch doesn't have an idmouse doesn't have an id but append us</p>
+      <p begin="00:49:45.230" end="00:49:50.260">...surface hub does so this is how you go in identify and then you can take that id</p>
+      <p begin="00:49:50.260" end="00:49:52.960">...with the token a credential and go crazy so.</p>
+      <p begin="00:49:54.000" end="00:50:02.690">That was it for the demo I'm going to move back to the powerpoint and finish up the...</p>
+      <p begin="00:50:02.690" end="00:50:04.850">...out of.</p>
+      <p begin="00:50:04.850" end="00:50:10.800">This...inverter I'm just going to...fargo glowed so,</p>
+      <p begin="00:50:10.800" end="00:50:16.640">let's talk about...components I just want to shot out the both work at microsoft those people sebastian</p>
+      <p begin="00:50:16.640" end="00:50:22.870">picture and...cracker and they created the carousel and we...eml</p>
+      <p begin="00:50:22.870" end="00:50:28.020">toolkit I use that only on the...demo to the cross fading the...ninety-two</p>
+      <p begin="00:50:28.020" end="00:50:32.890">...I use it should across fading so you can go and get them open-source they both work</p>
+      <p begin="00:50:32.890" end="00:50:35.730">at microsoft and those products are really coolthey have</p>
+      <p begin="00:50:35.730" end="00:50:40.130">all diversions you can get that on the slide on the website as well and finally in</p>
+      <p begin="00:50:40.130" end="00:50:44.770">summary of surface runs universal windows apps and universe</p>
+      <p begin="00:50:44.770" end="00:50:47.400">...apps are amazing their own from your hollow...</p>
+      <p begin="00:50:47.400" end="00:50:52.800">to your xbox surface...is not out of that it's exactly the same it's part of the windows</p>
+      <p begin="00:50:52.800" end="00:50:56.020">...family and that's the keyword when you want to tailored for the service</p>
+      <p begin="00:50:56.020" end="00:50:57.950">...as opposed to just any large-screen.</p>
+      <p begin="00:50:59.070" end="00:51:04.500">Up plan for session cleanup session clean-up is very important you it's going to</p>
+      <p begin="00:51:04.500" end="00:51:09.390">happen whether you want to are not and information your data is safe you need to make sure data is</p>
+      <p begin="00:51:09.390" end="00:51:14.640">start on the cloud...personal device and again use the sensors to events you can go</p>
+      <p begin="00:51:14.640" end="00:51:18.140">...a phone and download the data you can be sure that</p>
+      <p begin="00:51:18.140" end="00:51:21.760">that's going to keep the data safe optimized for</p>
+      <p begin="00:51:21.760" end="00:51:26.100">...touch-screen size once again giant screen which means lots of</p>
+      <p begin="00:51:26.100" end="00:51:31.210">opportunities to interact with it think about how you depend in touch differentiate,</p>
+      <p begin="00:51:31.210" end="00:51:35.970">differentiate between them like...for writing dutch for swiping touch for interact with the</p>
+      <p begin="00:51:35.970" end="00:51:39.800">buttons this is how people have been doing it...like and</p>
+      <p begin="00:51:39.800" end="00:51:46.780">xing times like since...writing was invented so you should...adventure that.</p>
+      <p begin="00:51:46.780" end="00:51:51.610">Think about collaboration scenarios so here I took an application that was</p>
+      <p begin="00:51:51.610" end="00:51:56.570">for an individual on the phone and I took it up for to the large-screen animated collaborative and</p>
+      <p begin="00:51:56.570" end="00:52:00.890">you can see the big difference between application for one person for two people and of course you can</p>
+      <p begin="00:52:00.890" end="00:52:05.110">think of applications for multiple people for remote people what if I</p>
+      <p begin="00:52:05.110" end="00:52:09.790">had to surface hubs one here and one in china and the</p>
+      <p begin="00:52:09.790" end="00:52:14.550">surface have been china has more people writing on this and they have different...callers and can</p>
+      <p begin="00:52:14.550" end="00:52:18.860">...see the likens like together because service hub does that across</p>
+      <p begin="00:52:18.860" end="00:52:23.740">...across remote as well so you think about the collaboration snares think about</p>
+      <p begin="00:52:24.830" end="00:52:26.820">...discussing this?</p>
+      <p begin="00:52:26.820" end="00:52:30.100">As if we were in the same room but we could be a separate size of the</p>
+      <p begin="00:52:30.100" end="00:52:36.480">world so it's really about optimizing for the groups for collaboration.</p>
+      <p begin="00:52:36.480" end="00:52:41.670">So, let's talk a little bit of relational...sessions the session was</p>
+      <p begin="00:52:41.670" end="00:52:47.190">very introductory and in the sense that we showed you the surface hub in showed you how to</p>
+      <p begin="00:52:47.190" end="00:52:51.810">...apps but if you want to go deeper on inc you should take a look at the...sessions from the</p>
+      <p begin="00:52:51.810" end="00:52:56.910">direct in team the introductory one and advanced one they talk about multiple</p>
+      <p begin="00:52:56.910" end="00:53:00.710">...the same time we talk about in recognition they talk about</p>
+      <p begin="00:53:00.710" end="00:53:07.680">advanced processing and they would just show you how amazing this inc a</p>
+      <p begin="00:53:07.680" end="00:53:11.590">also from the small-screen to the big-screen this is a talk that goes and talks</p>
+      <p begin="00:53:11.590" end="00:53:17.090">about design based on screen size how do you do the adaptive design</p>
+      <p begin="00:53:17.090" end="00:53:22.180">and of course they're going to talk a little bit about design device families but you can take those</p>
+      <p begin="00:53:22.180" end="00:53:27.440">...form from large-screen...small-screen and apply here too.</p>
+      <p begin="00:53:27.440" end="00:53:32.240">So, thank you very much for coming and would like to open for...of course if you want to try</p>
+      <p begin="00:53:32.240" end="00:53:35.760">out the device we invited to come over to the showcase we invited</p>
+      <p begin="00:53:35.760" end="00:53:39.970">...download the sdk try it out play with the latest</p>
+      <p begin="00:53:39.970" end="00:53:45.220">bits and of course there's more information on surface hub dot com also...surface have dot</p>
+      <p begin="00:53:45.220" end="00:53:50.130">com so you can go and try it out and we're going to be available in the insider</p>
+      <p begin="00:53:50.130" end="00:53:55.280">...the showcase area for the whole afternoon you going to be able to find us but,</p>
+      <p begin="00:53:55.280" end="00:53:59.990">if you have questions please the mikes are open?</p>
+      <p begin="00:53:59.990" end="00:54:02.750">Could you please go to the mike I'm sorry because we have remote</p>
+      <p begin="00:54:02.750" end="00:54:06.330">...these and we need to make sure they can listen to?</p>
+      <p begin="00:54:06.330" end="00:54:14.720">Thank you very much for coming.</p>
+      <p begin="00:54:14.720" end="00:54:17.210">...hello, yeah,</p>
+      <p begin="00:54:17.210" end="00:54:21.040">I'm just wondering I've notice the seems natural...like you...</p>
+      <p begin="00:54:21.040" end="00:54:26.560">summing that you've drawn erroneously what kind of capabilities...</p>
+      <p begin="00:54:26.560" end="00:54:31.380">append have...terms of being able to...or...actions</p>
+      <p begin="00:54:31.380" end="00:54:37.720">...I'm glad you talk about it because actually the pen has an eraser and,</p>
+      <p begin="00:54:37.720" end="00:54:42.880">you can arrays...depend by default I didn't have to write encode for this so it</p>
+      <p begin="00:54:42.880" end="00:54:50.370">hasn't...a button on the back supernatural you...in the front erase the back lovett?</p>
+      <p begin="00:54:50.370" end="00:54:55.840">...have some existing applications for the ppi fifty-five and eighty is this hardware device</p>
+      <p begin="00:54:55.840" end="00:55:00.180">still support like having...pc plugged into...with usb connection for touch</p>
+      <p begin="00:55:00.180" end="00:55:03.910">input yes it does it has a...hookup secondary pc to it</p>
+      <p begin="00:55:03.910" end="00:55:07.700">and the imbedded pc and here have the ability to...have the normal...windows so</p>
+      <p begin="00:55:07.700" end="00:55:12.730">doesn't have kind of the discussions system this hardware is designed to run windows team</p>
+      <p begin="00:55:12.730" end="00:55:17.890">...okay, yeah, that you can plug replacement pc if you need to go beyond</p>
+      <p begin="00:55:17.890" end="00:55:21.860">the collaboration scenarios but it's really optimize for the</p>
+      <p begin="00:55:21.860" end="00:55:25.030">...appliance on the conference room you put in there and it's easy to</p>
+      <p begin="00:55:25.030" end="00:55:29.340">manage it's just going to be easy to keep it...</p>
+      <p begin="00:55:30.830" end="00:55:33.630">Thank you a is the...always</p>
+      <p begin="00:55:33.630" end="00:55:38.770">...it's ninety only when you touch you can get the pointer properties from</p>
+      <p begin="00:55:38.770" end="00:55:40.700">...to item...</p>
+      <p begin="00:55:41.980" end="00:55:46.440">So, if I want to make a pen...I touched it and I said okay this is my pen and I'm going to</p>
+      <p begin="00:55:46.440" end="00:55:50.560">changed pink and he's going to changes...blew it has to be touching no</p>
+      <p begin="00:55:50.560" end="00:55:55.540">let me explain how that works so when you touch when you do any</p>
+      <p begin="00:55:55.540" end="00:55:59.310">...events so drag move?</p>
+      <p begin="00:55:59.310" end="00:56:04.030">Touch releases actually even the touch over...can see...a mouse over</p>
+      <p begin="00:56:04.030" end="00:56:09.090">a little dot...shows up maybe we'll...the camera so they can see</p>
+      <p begin="00:56:09.090" end="00:56:13.540">...be able to see but there's a little dot that shows...when you over...that already gives you</p>
+      <p begin="00:56:13.540" end="00:56:18.260">pointer events everything every events touchy erasing everything will give you</p>
+      <p begin="00:56:18.260" end="00:56:20.640">...events...the...events who have that</p>
+      <p begin="00:56:20.640" end="00:56:25.420">...properties object and you can query the pointer id wireless id from any point-to-point</p>
+      <p begin="00:56:25.420" end="00:56:29.470">object so you can go and say if the...one taps the</p>
+      <p begin="00:56:29.470" end="00:56:33.550">read caller we associate...next time it goes down painted</p>
+      <p begin="00:56:33.550" end="00:56:39.060">red you can do that so that's what I did hear like I did that depend ideas associated with the color of</p>
+      <p begin="00:56:39.060" end="00:56:43.490">the inc so it becomes green...blue depending on the ten-ninety did you know-how many</p>
+      <p begin="00:56:43.490" end="00:56:49.060">...pointer id would be available concurrently so the you can simultaneously</p>
+      <p begin="00:56:49.060" end="00:56:53.470">...up to three paints simon things like all...this through the same time the</p>
+      <p begin="00:56:53.470" end="00:56:59.120">...these are unique so you can get a...as long as it on...more than three at</p>
+      <p begin="00:56:59.120" end="00:57:09.430">the same time you can get a different ideas for each of them and all of them will have unique ideas.</p>
+      <p begin="00:57:09.430" end="00:57:12.930">Any other questions please...can you I'm sorry</p>
+      <p begin="00:57:12.930" end="00:57:17.290">...please ask because remote that in these are going to...hear your question</p>
+      <p begin="00:57:17.290" end="00:57:22.410">to how do say the changes that we've just so we didn't show ced</p>
+      <p begin="00:57:22.410" end="00:57:26.760">savy and can collecting so on but...direct inc...about that</p>
+      <p begin="00:57:26.760" end="00:57:31.290">he talks about how to save and how to store also there's a cool sample on direct</p>
+      <p begin="00:57:31.290" end="00:57:34.290">aac available...get tub part of the</p>
+      <p begin="00:57:34.290" end="00:57:38.690">inc team samples so you should take a look at that it's all documented</p>
+      <p begin="00:57:38.690" end="00:57:41.670">their samples savy and collecting you can save with the</p>
+      <p begin="00:57:41.670" end="00:57:47.060">caller save with the metadata you can do all those things?</p>
+      <p begin="00:57:47.060" end="00:57:52.050">Any other questions once again if you are...shy or if you...just trial device</p>
+      <p begin="00:57:52.050" end="00:57:57.910">we're...be at the surface hub showcase right there in the middle area over there where there's</p>
+      <p begin="00:57:57.910" end="00:58:01.830">a windows demos will be over there like five-minute ourselves as we get up here are just</p>
+      <p begin="00:58:01.830" end="00:58:06.160">...up and go but we thank you very much for participation and it's been great to</p>
+      <p begin="00:58:06.160" end="00:58:09.090">present you guys thank you for...</p>
+
+    </div>
+  </body>
+</tt>

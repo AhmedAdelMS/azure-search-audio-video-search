@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.917</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.970" end="00:00:07.200">Hi, I'm michael lewis number program manager on...team.</p>
+      <p begin="00:00:07.200" end="00:00:11.780">this is a pre-recorded session for build and I'll be talking about navigation commanding,</p>
+      <p begin="00:00:11.780" end="00:00:13.610">for example,</p>
+      <p begin="00:00:13.610" end="00:00:18.580">so, since you'll be watching this online I want to give you brief overview some stuff that I'll be talking about so you have a</p>
+      <p begin="00:00:18.580" end="00:00:21.990">good idea of what you'll be getting over the next forty five minutes to an</p>
+      <p begin="00:00:21.990" end="00:00:27.500">hour what you want to skip ahead come back later watch it over again or just go lot</p>
+      <p begin="00:00:27.500" end="00:00:32.300">watch smother sessions and then later come back to this one so I'll start by talking about navigation</p>
+      <p begin="00:00:32.300" end="00:00:36.730">briefly touch on some patterns and what controls we have that will</p>
+      <p begin="00:00:36.730" end="00:00:42.150">help if you want implement some of those patterns be talking about commanding as well and,</p>
+      <p begin="00:00:42.150" end="00:00:46.570">really understanding the changes of happened commanding area will look at some of the history of how</p>
+      <p begin="00:00:46.570" end="00:00:50.660">...evolved and where we are now with windows...and</p>
+      <p begin="00:00:50.660" end="00:00:55.040">look at what's new and if you have an existing app and you're going</p>
+      <p begin="00:00:55.040" end="00:00:59.930">to upgrade it what you should consider or if you're building a new app and there's just some things you need to understand the</p>
+      <p begin="00:00:59.930" end="00:01:04.850">about the controls for commanding navigation patterns to start there's</p>
+      <p begin="00:01:04.850" end="00:01:09.300">no required pattern you can you can really use whatever pattern</p>
+      <p begin="00:01:09.300" end="00:01:14.460">fits best for your app we're not we're not telling you have to do one thing or the other</p>
+      <p begin="00:01:14.460" end="00:01:16.540">we we've looked at some of the patterns that we</p>
+      <p begin="00:01:16.540" end="00:01:21.860">...platform and other platforms to try and make sure that if there's an experience that you</p>
+      <p begin="00:01:21.860" end="00:01:28.830">need to provide that you can do that so some of the common patterns that we do</p>
+      <p begin="00:01:28.830" end="00:01:33.270">R pivot pattern if you're familiar with windows phone you see this on a number of</p>
+      <p begin="00:01:33.270" end="00:01:37.090">apps like the mail app where you have these individual pivots and you can swipe through</p>
+      <p begin="00:01:37.090" end="00:01:40.430">room move between the different pivot items</p>
+      <p begin="00:01:40.430" end="00:01:44.400">there's tabs where images have a bar with some buttons and you can tap on the barn quickly</p>
+      <p begin="00:01:44.400" end="00:01:49.150">jumped to an area of your app there's the hub and spoke where it's nice</p>
+      <p begin="00:01:49.150" end="00:01:54.780">big landing page area and you can quickly move between different areas of your app.</p>
+      <p begin="00:01:54.780" end="00:01:58.310">There's master detail ...you like the mail out,</p>
+      <p begin="00:01:58.310" end="00:02:03.010">for example, if...folders and you can click on one of those you can see the details</p>
+      <p begin="00:02:03.010" end="00:02:09.120">for that item and then we've got hamburger which is one that you may not have</p>
+      <p begin="00:02:09.120" end="00:02:12.630">seen a lot on windows but</p>
+      <p begin="00:02:12.630" end="00:02:16.060">it's prevalent on a number of other platforms and this is</p>
+      <p begin="00:02:16.060" end="00:02:21.060">a pattern that if it's the right experience for your app you can use it and we're going to</p>
+      <p begin="00:02:21.060" end="00:02:25.150">talk briefly about how you might build that on windows and so.</p>
+      <p begin="00:02:26.730" end="00:02:30.510">Some of the controls are useful if you wanted to build some of these experiences</p>
+      <p begin="00:02:30.510" end="00:02:34.350">are these navigation experiences are the hub control</p>
+      <p begin="00:02:34.350" end="00:02:38.810">the pivot the app...and split view which is new so how</p>
+      <p begin="00:02:38.810" end="00:02:44.690">...previously converged on both windows phone and windows and we've updated</p>
+      <p begin="00:02:44.690" end="00:02:50.970">it's still present you can use it for your app pivot was previously only available on the phone.</p>
+      <p begin="00:02:50.970" end="00:02:55.600">And, now it's there on windows as well so you can you can use a pivot and...experience</p>
+      <p begin="00:02:55.600" end="00:03:02.210">that spans from the large-screen from small-screen the large-screen app...was really only</p>
+      <p begin="00:03:02.210" end="00:03:06.850">their on windows and...often used at the top as a navigation menu</p>
+      <p begin="00:03:06.850" end="00:03:11.730">...still there you can continue...it we've made available on the phone as well.</p>
+      <p begin="00:03:11.730" end="00:03:17.060">Split use new control that...talk about more detail.</p>
+      <p begin="00:03:17.060" end="00:03:21.460">Split view is this control has really to content areas you can see the</p>
+      <p begin="00:03:21.460" end="00:03:26.300">...on the left and the content...on the right...that's we think of</p>
+      <p begin="00:03:26.300" end="00:03:30.510">as a building-block it's not just for navigation so it's not even</p>
+      <p begin="00:03:30.510" end="00:03:35.510">...into the navigation framework it's a building-block you can use</p>
+      <p begin="00:03:35.510" end="00:03:40.480">to create and navigation experience but you don't have to user for navigation if there's other places where you</p>
+      <p begin="00:03:40.480" end="00:03:43.850">feel that split use a control that will help you provide experience your app</p>
+      <p begin="00:03:43.850" end="00:03:48.650">...provide you can use this but you control.</p>
+      <p begin="00:03:48.650" end="00:03:53.080">So, as a basic...building-block we don't have this built-in button the might see</p>
+      <p begin="00:03:53.080" end="00:03:57.810">on another frameworks this hamburger button there is an icon you can use so if you</p>
+      <p begin="00:03:57.810" end="00:04:01.640">...want to provide this experience and you don't want to create your own icon</p>
+      <p begin="00:04:01.640" end="00:04:07.270">you-can use this icon from the...amd ltwo assets font.</p>
+      <p begin="00:04:07.270" end="00:04:14.630">one-click...this...this is a new font that are asses seems provided it's a great...all these icons</p>
+      <p begin="00:04:14.630" end="00:04:20.330">...been designed...on the m square which makes it easier use these as an asset</p>
+      <p begin="00:04:20.330" end="00:04:24.900">your app so in the past if you're familiar with the citgo ui symbol font</p>
+      <p begin="00:04:24.900" end="00:04:29.450">you there's a bunch of icons you can choose from sometimes are duplicate icons and they</p>
+      <p begin="00:04:29.450" end="00:04:34.130">had different sizes and wasn't clear which was the right one in this new font the icons</p>
+      <p begin="00:04:34.130" end="00:04:37.370">are easy to pick up a assigned to an area</p>
+      <p begin="00:04:37.370" end="00:04:40.800">...say use text blocking give font-size of twenty-four</p>
+      <p begin="00:04:40.800" end="00:04:47.620">thirty-two and icons roughly going to fill that space so, it's just</p>
+      <p begin="00:04:47.620" end="00:04:52.620">much easier for you...to use...across your app now one</p>
+      <p begin="00:04:52.620" end="00:04:55.490">thing you should understand is that this new font the</p>
+      <p begin="00:04:55.490" end="00:04:58.620">...to assets font is not a one-to-one mapping with...cigar</p>
+      <p begin="00:04:58.620" end="00:05:03.370">...symbol so-if you have a bunch of...places where you're using fontein</p>
+      <p begin="00:05:03.370" end="00:05:09.170">icon and you don't specified...family...a symbol</p>
+      <p begin="00:05:09.170" end="00:05:13.780">...you just upgrade your app...you may find some of these...using</p>
+      <p begin="00:05:13.780" end="00:05:20.730">before aren't there I'll have a note about that later in the slide as well.</p>
+      <p begin="00:05:20.730" end="00:05:25.970">Look, at split view here's the api that's really relevant to split view</p>
+      <p begin="00:05:25.970" end="00:05:28.850">as control inherits a lot of things but these are the properties that</p>
+      <p begin="00:05:28.850" end="00:05:31.600">your most commonly going to want to use.</p>
+      <p begin="00:05:31.600" end="00:05:32.900">So, this is a demo of the split</p>
+      <p begin="00:05:32.900" end="00:05:37.280">you control where you can see I have the control here with the</p>
+      <p begin="00:05:37.280" end="00:05:42.280">...on the left content on the write up above I have a number of controls that are</p>
+      <p begin="00:05:42.280" end="00:05:47.100">bounds to the different properties of the split you control so to</p>
+      <p begin="00:05:47.100" end="00:05:51.870">...one...understands...right now...the inline mode and what this</p>
+      <p begin="00:05:51.870" end="00:05:55.790">...that the pain is affecting the layout so the content is</p>
+      <p begin="00:05:55.790" end="00:05:59.910">...fit...that remaining areas on the right side?</p>
+      <p begin="00:05:59.910" end="00:06:01.900">Now if I switch the placement of the</p>
+      <p begin="00:06:01.900" end="00:06:07.090">...to be on the right side you just see it switch over.</p>
+      <p begin="00:06:07.090" end="00:06:11.270">...also set the alpha channel on the background for my pain.</p>
+      <p begin="00:06:11.270" end="00:06:16.430">To be something that's semi transparent you can see what...that will have as we switch to some of the other</p>
+      <p begin="00:06:16.430" end="00:06:21.120">modes right now there's nothing behind the...so...appears to be opaque if I</p>
+      <p begin="00:06:21.120" end="00:06:25.130">close this pane you'll notice that the content resize is</p>
+      <p begin="00:06:25.130" end="00:06:29.780">so-if you have some really rich content in here this is not the mode you want to use of</p>
+      <p begin="00:06:29.780" end="00:06:34.050">...going to be turning opening and closing it regularly because it's going to cause your</p>
+      <p begin="00:06:34.050" end="00:06:38.990">content to be a laid out over and over again which could affect the perf of your</p>
+      <p begin="00:06:38.990" end="00:06:42.030">app so let's switch to one of the other</p>
+      <p begin="00:06:42.030" end="00:06:46.390">modes compact inline this is very similar the inline mode</p>
+      <p begin="00:06:46.390" end="00:06:51.760">the difference being that you now have this compact area that you can put some ui</p>
+      <p begin="00:06:51.760" end="00:06:53.980">...a bit of a hint to the user and also</p>
+      <p begin="00:06:53.980" end="00:06:58.260">...can interact with while it's still in the closed state.</p>
+      <p begin="00:06:58.260" end="00:07:04.540">If it opens you'll see again it pushes that content over.</p>
+      <p begin="00:07:04.540" end="00:07:09.330">Overlay mode you now see that it it's just sizes says</p>
+      <p begin="00:07:09.330" end="00:07:13.490">it's an overlay the pain is over top of the content when it's open as</p>
+      <p begin="00:07:13.490" end="00:07:16.810">a opens and closes it does not affect layout we have this animation that</p>
+      <p begin="00:07:16.810" end="00:07:21.460">plays with it one thing to be aware of in this mode as well as it does have some light</p>
+      <p begin="00:07:21.460" end="00:07:28.720">dismiss behavior so if I tap out or click outside of the...it closes.</p>
+      <p begin="00:07:28.720" end="00:07:31.910">Compact overlay is very similar</p>
+      <p begin="00:07:31.910" end="00:07:36.250">to compact inline of course being overlay it's still going to</p>
+      <p begin="00:07:36.250" end="00:07:41.080">overlay the rest of the content so it does affect layout by that compact amount but when it</p>
+      <p begin="00:07:41.080" end="00:07:46.910">opens and closes you can see it just goes over top of the content.</p>
+      <p begin="00:07:46.910" end="00:07:47.880">Again, you can switch the</p>
+      <p begin="00:07:47.880" end="00:07:53.220">sides you can change the size of that pain</p>
+      <p begin="00:07:53.220" end="00:07:57.930">when it opens so let's make it something bigger you can see it to</p>
+      <p begin="00:07:57.930" end="00:08:03.080">...right over when singly compact size phi one that compact</p>
+      <p begin="00:08:03.080" end="00:08:04.030">hint be larger?</p>
+      <p begin="00:08:05.100" end="00:08:08.600">I could set that and, have it start from</p>
+      <p begin="00:08:08.600" end="00:08:11.320">...from a larger hand?</p>
+      <p begin="00:08:11.320" end="00:08:16.810">And, then open to be the full width.</p>
+      <p begin="00:08:16.810" end="00:08:19.850">So, we talk about how you might uses control if you're trying to build</p>
+      <p begin="00:08:19.850" end="00:08:24.760">a hamburger type experience is if you think you should consider so</p>
+      <p begin="00:08:24.760" end="00:08:29.050">one is the structure of how you want to set up your app I'm going to show you what I've done</p>
+      <p begin="00:08:29.050" end="00:08:33.940">in a demo app and one of the things that you should see you'll notice is that I have</p>
+      <p begin="00:08:33.940" end="00:08:37.830">this top-level app...it's really just a page the reviews</p>
+      <p begin="00:08:37.830" end="00:08:42.750">and on the content of the page I have the split you control within the content of the split view</p>
+      <p begin="00:08:42.750" end="00:08:48.630">I've place the frame and then it's in there that I'm navigating between different pages.</p>
+      <p begin="00:08:48.630" end="00:08:53.090">...I have app shows a page a provides nice design-time experience</p>
+      <p begin="00:08:53.090" end="00:08:57.770">it's also it takes into account the visible bounds so it...the content so,</p>
+      <p begin="00:08:57.770" end="00:09:02.450">for example, if I want to run this exact same app on the phone you'll know that on</p>
+      <p begin="00:09:02.450" end="00:09:05.780">the phone that there's a system trade has the clock...other things that</p>
+      <p begin="00:09:05.780" end="00:09:10.580">appears the top and by default that would go over your app and</p>
+      <p begin="00:09:10.580" end="00:09:13.310">if you by using a page it takes that into</p>
+      <p begin="00:09:13.310" end="00:09:19.490">...pushes it down so there's no visual collision there for the menu items on my hamburger</p>
+      <p begin="00:09:19.490" end="00:09:23.810">...I've style radio buttons I could have chosen...subclass am</p>
+      <p begin="00:09:23.810" end="00:09:29.200">...styling works it's nice because they have a check state so as you</p>
+      <p begin="00:09:29.200" end="00:09:34.760">select one of those items that's one that shows up is the user knows that's the area</p>
+      <p begin="00:09:34.760" end="00:09:36.560">...in of your app.</p>
+      <p begin="00:09:36.560" end="00:09:41.440">And, then you can see thatI've put frame as the content for the split view and</p>
+      <p begin="00:09:41.440" end="00:09:45.890">noticing considers where you put the hamburger button itself you'll see what I've done</p>
+      <p begin="00:09:45.890" end="00:09:51.370">in my absolutely switch over and show you that now.</p>
+      <p begin="00:09:51.370" end="00:09:53.480">So, here we have the app and you can</p>
+      <p begin="00:09:53.480" end="00:09:58.670">see how I've set up and start off and we have the app shell.</p>
+      <p begin="00:09:58.670" end="00:10:02.310">That really taking a place of the frame.</p>
+      <p begin="00:10:02.310" end="00:10:06.800">The app shell has a frame within it that employing out and hooking up to the different events</p>
+      <p begin="00:10:06.800" end="00:10:11.730">for navigation failed as well as when I call the navigate event the sequence here</p>
+      <p begin="00:10:11.730" end="00:10:15.000">is very similar to what you get with the basic app when you</p>
+      <p begin="00:10:15.000" end="00:10:19.720">start load it by default from visual studio.</p>
+      <p begin="00:10:19.720" end="00:10:41.520">Now if we look at the app running.</p>
+      <p begin="00:10:41.520" end="00:10:45.880">Okay, here we can see the app running and you can see on the left I've got this...</p>
+      <p begin="00:10:45.880" end="00:10:50.440">that I set the inline and I've got a number of items that as</p>
+      <p begin="00:10:50.440" end="00:10:55.650">a click on them will navigate to different areas of the app.</p>
+      <p begin="00:10:55.650" end="00:10:56.580">Here's that same split</p>
+      <p begin="00:10:56.580" end="00:11:01.380">...demo again now what I've done is these buttons you can</p>
+      <p begin="00:11:01.380" end="00:11:05.920">see these radio buttons so as I check them you can see which one is</p>
+      <p begin="00:11:05.920" end="00:11:10.810">selected and where you are in the app if I?</p>
+      <p begin="00:11:10.810" end="00:11:14.610">Go on a page go deeper into that area of the page I can drill</p>
+      <p begin="00:11:14.610" end="00:11:20.350">...and then I can jump to other areas of the app and I see where I'm at any point I've had my</p>
+      <p begin="00:11:20.350" end="00:11:25.060">own back button to the app so that as I'm going back through the stack.</p>
+      <p begin="00:11:25.060" end="00:11:28.720">It'll highlight which area I'm in and I've</p>
+      <p begin="00:11:28.720" end="00:11:35.080">added these animation so that you get the smooth experience as you transitioning from one area to the other.</p>
+      <p begin="00:11:35.080" end="00:11:40.500">As I resize the app itself you'll see what happens I'm going to switch</p>
+      <p begin="00:11:40.500" end="00:11:45.280">down to the compact size I can still navigate around.</p>
+      <p begin="00:11:46.390" end="00:11:50.900">And, then as I go even further let's assume this was on a phone size screen.</p>
+      <p begin="00:11:50.900" end="00:11:54.820">Drops...entirely and I still have just the hamburger button</p>
+      <p begin="00:11:54.820" end="00:12:01.590">where I can open the pain and then move quickly between different areas of my app.</p>
+      <p begin="00:12:01.590" end="00:12:07.330">Now how this what's happening here in the code.</p>
+      <p begin="00:12:07.330" end="00:12:09.700">On the...itself.</p>
+      <p begin="00:12:09.700" end="00:12:12.410">Have declared my split view?</p>
+      <p begin="00:12:12.410" end="00:12:15.350">Have said a few properties?</p>
+      <p begin="00:12:15.350" end="00:12:19.530">And,...above I'm using these adaptive triggers that a different break points</p>
+      <p begin="00:12:19.530" end="00:12:24.450">and screen size we'll switch from the properties so you can...setting the root split view</p>
+      <p begin="00:12:24.450" end="00:12:31.130">display mode to be compact overlay when the size of the screen is</p>
+      <p begin="00:12:31.130" end="00:12:33.100">between...greater than five twenty?</p>
+      <p begin="00:12:34.140" end="00:12:37.810">But, less than six hundred forty one as it gets down to the</p>
+      <p begin="00:12:37.810" end="00:12:44.520">smaller size between zero and five twenty I'm just switching it to be in the overlay mode.</p>
+      <p begin="00:12:44.520" end="00:12:49.490">Within the...itself I have my stack panel radio buttons you can see I've style</p>
+      <p begin="00:12:49.490" end="00:12:50.740">these.</p>
+      <p begin="00:12:50.740" end="00:12:57.000">So, that they get that look and feel of that's appropriate for this pattern.</p>
+      <p begin="00:12:57.000" end="00:13:01.760">And, then here I have the frame on the frame itself I've set of content transition this</p>
+      <p begin="00:13:01.760" end="00:13:03.080">...those nice animations</p>
+      <p begin="00:13:03.080" end="00:13:06.970">...I'm transition from one for one-page to the next page.</p>
+      <p begin="00:13:06.970" end="00:13:10.620">And, I've added this entrance navigation transition info so</p>
+      <p begin="00:13:10.620" end="00:13:17.470">is each page comes in it's getting that nice animation that plays.</p>
+      <p begin="00:13:17.470" end="00:13:20.150">Now on the very first page.</p>
+      <p begin="00:13:20.150" end="00:13:24.570">When I navigate this is my app loading...initially want...animation</p>
+      <p begin="00:13:24.570" end="00:13:29.720">we playing so what I've done on the navigate method itself?</p>
+      <p begin="00:13:29.720" end="00:13:33.410">Is you can see that I've given it normal pages should go to the arguments</p>
+      <p begin="00:13:33.410" end="00:13:38.110">have uses extra parameter to say suppress navigation</p>
+      <p begin="00:13:38.110" end="00:13:46.970">transition info on this first-time so in the app first loads there's no animation?</p>
+      <p begin="00:13:46.970" end="00:13:50.420">Ok, so, now we're going take a look at commanding will do a bit of a deep dive on</p>
+      <p begin="00:13:50.420" end="00:13:53.500">some things of change here in the commanding area.</p>
+      <p begin="00:13:53.500" end="00:13:57.680">So, first look at what's happened and where we came from so windows a we</p>
+      <p begin="00:13:57.680" end="00:14:02.010">have the app bar and then in a one we introduce the command bar?</p>
+      <p begin="00:14:02.010" end="00:14:06.020">And, if you if you go back there was a slide in</p>
+      <p begin="00:14:06.020" end="00:14:10.770">the last build conference that you may have seen this where we had</p>
+      <p begin="00:14:10.770" end="00:14:16.010">windows eight one we had windows phone aone and what happened was there's a lot of conversions happen</p>
+      <p begin="00:14:16.010" end="00:14:21.350">...a lot of the api is that were really the same but...still some things that</p>
+      <p begin="00:14:21.350" end="00:14:25.300">...only on one platform or only on the other</p>
+      <p begin="00:14:25.300" end="00:14:30.100">and there's some areas where they were conversion had different behaviors</p>
+      <p begin="00:14:30.100" end="00:14:34.830">in the area of commanding this is this was true?</p>
+      <p begin="00:14:34.830" end="00:14:39.670">What we had was mostly the same api but we had separate binary is and we had some</p>
+      <p begin="00:14:39.670" end="00:14:42.330">taylor behavior?</p>
+      <p begin="00:14:42.330" end="00:14:45.210">More specifically if we look at the app are the app</p>
+      <p begin="00:14:45.210" end="00:14:48.650">are wasn't supported on the phone at all like you couldn't use it if you try to</p>
+      <p begin="00:14:48.650" end="00:14:54.010">you get exception runtime on windows the app...was there.</p>
+      <p begin="00:14:54.010" end="00:14:56.700">...responding what we call edgy events so someone's</p>
+      <p begin="00:14:56.700" end="00:15:00.140">...from the top and bottom of the screen it would appear if</p>
+      <p begin="00:15:00.140" end="00:15:04.020">they write clicked or if they use the windows z keyboard shortcut</p>
+      <p begin="00:15:05.170" end="00:15:11.920">...the keyboard appear on-screen it also always appear above the keyboard.</p>
+      <p begin="00:15:11.920" end="00:15:16.470">And, it was always horizontal so if I had...device and I rotated it</p>
+      <p begin="00:15:16.470" end="00:15:22.030">that app or would always appear at the logical bottom or top of the screen?</p>
+      <p begin="00:15:22.030" end="00:15:25.740">Now if we look at the command bar which came later and a one.</p>
+      <p begin="00:15:25.740" end="00:15:31.240">It was a...parcel lot of the same things on windows...had but it had</p>
+      <p begin="00:15:31.240" end="00:15:34.400">a little more structured had...set of primary commands</p>
+      <p begin="00:15:34.400" end="00:15:39.380">if you're on the right side and...the secondary commands that appeared on the left side.</p>
+      <p begin="00:15:39.380" end="00:15:43.760">Otherwise you see very similar behaviors responded to the edgy gesture</p>
+      <p begin="00:15:43.760" end="00:15:49.190">...above the keyboard and it was more</p>
+      <p begin="00:15:49.190" end="00:15:54.810">optimized for that experience in windows...on the phone we had</p>
+      <p begin="00:15:54.810" end="00:15:59.330">that same api but some different behavior so you can see the primary</p>
+      <p begin="00:15:59.330" end="00:16:04.190">commands were this set of commands appear the top.</p>
+      <p begin="00:16:04.190" end="00:16:08.260">And, the set of secondary commands appear in this menu that would come up as a</p>
+      <p begin="00:16:08.260" end="00:16:12.980">user taped on that dot-dot-dot you see there was no edgy gesture support</p>
+      <p begin="00:16:12.980" end="00:16:18.010">...you couldn't...from the top of on the screen causes to appear obviously right click on the</p>
+      <p begin="00:16:18.010" end="00:16:22.980">phone wouldn't do anything you couldn't really do it and, the api itself was</p>
+      <p begin="00:16:22.980" end="00:16:27.800">wrapping the systems akbar so it wasn't appears</p>
+      <p begin="00:16:27.800" end="00:16:32.290">example implementation were surfacing that systems the system app</p>
+      <p begin="00:16:32.290" end="00:16:36.960">are up through so you can use in your app and part that was</p>
+      <p begin="00:16:36.960" end="00:16:42.060">...the implication was that the page top are was not supports...couldn't use that property</p>
+      <p begin="00:16:42.060" end="00:16:46.930">...top of the page on your app and in terms orientation as</p>
+      <p begin="00:16:46.930" end="00:16:51.360">you rotate the device rather than always been to logical bottom of the screen the app</p>
+      <p begin="00:16:51.360" end="00:16:55.970">...stick to that shortage...always near those hardware buttons for the back</p>
+      <p begin="00:16:55.970" end="00:17:00.620">and search in the that go back to the start screen.</p>
+      <p begin="00:17:00.620" end="00:17:02.900">Furthermore on the phone had this minimize</p>
+      <p begin="00:17:02.900" end="00:17:06.570">mode so being a small-screen if you really want to maximize</p>
+      <p begin="00:17:06.570" end="00:17:11.140">the space for the content of your app you could put in this minimize mode and,</p>
+      <p begin="00:17:11.140" end="00:17:14.080">just it's still there for the user but not interface</p>
+      <p begin="00:17:15.370" end="00:17:19.730">when keyboard appeared if it was in portrait the app are would be</p>
+      <p begin="00:17:19.730" end="00:17:24.570">below the keyboard but as you rotate the device again could because</p>
+      <p begin="00:17:24.570" end="00:17:28.530">...that side you would...see it appear on the side.</p>
+      <p begin="00:17:29.570" end="00:17:34.360">Adjacent to the keyboard.</p>
+      <p begin="00:17:34.360" end="00:17:34.850">So, now what</p>
+      <p begin="00:17:34.850" end="00:17:39.640">do we have we have one code base one api but we still have this</p>
+      <p begin="00:17:39.640" end="00:17:43.140">taylor behavior who we're talking about command bar.</p>
+      <p begin="00:17:43.140" end="00:17:48.100">What do I mean by that so to give you a quick look here again we have windows phone</p>
+      <p begin="00:17:48.100" end="00:17:50.660">aone the app are experience on the left when</p>
+      <p begin="00:17:50.660" end="00:17:54.760">it was opened on the desktop and then what we</p>
+      <p begin="00:17:54.760" end="00:18:01.750">...windows ten you'll see a lot of similarities but there's some differences that you should understand?</p>
+      <p begin="00:18:01.750" end="00:18:03.000">So, we look at the api.</p>
+      <p begin="00:18:04.120" end="00:18:04.790">Here's,</p>
+      <p begin="00:18:04.790" end="00:18:11.810">here's that conversion api it was the same between a one-in-ten.</p>
+      <p begin="00:18:11.810" end="00:18:13.400">The second of secondary commands.</p>
+      <p begin="00:18:14.640" end="00:18:18.030">You'll notice has shifted so before.</p>
+      <p begin="00:18:19.050" end="00:18:24.410">These are the secondary commands.</p>
+      <p begin="00:18:24.410" end="00:18:29.470">In windows ten they appear here I have to screen shots.</p>
+      <p begin="00:18:29.470" end="00:18:34.190">what this is the exact same control the only thing that's different between these two is the</p>
+      <p begin="00:18:34.190" end="00:18:39.130">size of the window so...a smaller window size you'll see that menu snaps</p>
+      <p begin="00:18:39.130" end="00:18:42.380">be the full width but on a larger screen it</p>
+      <p begin="00:18:42.380" end="00:18:46.740">...to the content...contains so the implications</p>
+      <p begin="00:18:46.740" end="00:18:51.090">are should be apparent for those of you who have windows aone app you'll see</p>
+      <p begin="00:18:51.090" end="00:18:54.620">...was previously the secondary...now move into this menu?</p>
+      <p begin="00:18:55.770" end="00:18:59.400">The...is still the same that the command</p>
+      <p begin="00:18:59.400" end="00:19:03.760">bar is in a close state and when it's opened it reveals all</p>
+      <p begin="00:19:03.760" end="00:19:08.490">of its content which would be both the labels for the primary commands as well as any secondary commands</p>
+      <p begin="00:19:08.490" end="00:19:13.360">are now there now what about the app are the app</p>
+      <p begin="00:19:13.360" end="00:19:18.140">are you could say is exactly the same as the commander except that it</p>
+      <p begin="00:19:18.140" end="00:19:22.970">doesn't have this menu for the app are we're talking about just the bar and the app</p>
+      <p begin="00:19:22.970" end="00:19:26.320">...is really an area where you...whatever custom content</p>
+      <p begin="00:19:26.320" end="00:19:32.560">you want to the left of this dot-dot-dot now this button itself is</p>
+      <p begin="00:19:32.560" end="00:19:37.700">there and present because users need a way interact with this control?</p>
+      <p begin="00:19:37.700" end="00:19:40.930">So, if we look at the app...for a moment.</p>
+      <p begin="00:19:40.930" end="00:19:44.710">By default windows ten it's going to be visible and minimal size.</p>
+      <p begin="00:19:44.710" end="00:19:48.460">In the past it was hidden and someone had to do...gesture to</p>
+      <p begin="00:19:48.460" end="00:19:53.600">...to appear or pragmatically you invoke it because that gestures no longer</p>
+      <p begin="00:19:53.600" end="00:19:56.890">there for windows ten apps what.</p>
+      <p begin="00:19:56.890" end="00:20:01.500">We provide in this minimal...by default and making it easy for your app to move forward</p>
+      <p begin="00:20:01.500" end="00:20:07.020">so that the that experience is still very similar users can get to the</p>
+      <p begin="00:20:07.020" end="00:20:10.800">commands of your app it also has this dot-dot-dot</p>
+      <p begin="00:20:10.800" end="00:20:14.250">button which is basically the replacement for that gesture.</p>
+      <p begin="00:20:15.390" end="00:20:20.040">And, one of the things that...still true for the app...is if someone does a right click and it's not</p>
+      <p begin="00:20:20.040" end="00:20:25.680">hand-held elsewhere in your app then it'll cause the app rtwo appear.</p>
+      <p begin="00:20:25.680" end="00:20:30.130">When you have an app...that's at the top obama screen on a page...pages really the root</p>
+      <p begin="00:20:30.130" end="00:20:34.620">of your app so it also affects visual bounds when it</p>
+      <p begin="00:20:34.620" end="00:20:38.680">sets through so-if you have a frame in a page using a top-to-bottom app</p>
+      <p begin="00:20:38.680" end="00:20:43.610">...what's new for windows ten that was previously there on the phone is</p>
+      <p begin="00:20:43.610" end="00:20:48.750">that the content of your page will be pushed up or down slightly</p>
+      <p begin="00:20:48.750" end="00:20:55.420">based on the size of that app...when it's in that close state of minimal?</p>
+      <p begin="00:20:55.420" end="00:20:59.930">We've also added these api is opening and closing now this</p>
+      <p begin="00:20:59.930" end="00:21:04.720">api the close display...I've mention here was previously available only on the phone</p>
+      <p begin="00:21:04.720" end="00:21:08.590">is now convergence present for the app are...using</p>
+      <p begin="00:21:08.590" end="00:21:11.220">...on windows phone or other devices.</p>
+      <p begin="00:21:12.310" end="00:21:16.140">So, we show you a quick demo of the app or we're</p>
+      <p begin="00:21:16.140" end="00:21:21.640">going to start by looking at windows aone app ok so here's a</p>
+      <p begin="00:21:21.640" end="00:21:26.260">here's a windows ten app that was upgraded from a blank windows</p>
+      <p begin="00:21:26.260" end="00:21:31.440">eight app and all it has is top app are and bottom map are and you can see inside</p>
+      <p begin="00:21:31.440" end="00:21:34.000">I have basically the same app...I've copied.</p>
+      <p begin="00:21:35.110" end="00:21:39.960">With just some controls on the left and right side so that when it runs you get that</p>
+      <p begin="00:21:39.960" end="00:21:53.580">experience...may be familiar with on windows ten.</p>
+      <p begin="00:21:53.580" end="00:21:56.750">So, here you can see the app.</p>
+      <p begin="00:21:56.750" end="00:21:58.210">By default.</p>
+      <p begin="00:21:58.210" end="00:22:02.250">I now have this minimal app for both the top-to-bottom in windows</p>
+      <p begin="00:22:02.250" end="00:22:04.060">...those...been off the screen entirely.</p>
+      <p begin="00:22:05.310" end="00:22:06.960">If I write click you see</p>
+      <p begin="00:22:06.960" end="00:22:11.340">they both open but I could also just click on.</p>
+      <p begin="00:22:11.340" end="00:22:15.320">Each of these a quick anywhere on the bar or the more buttoned caused</p>
+      <p begin="00:22:15.320" end="00:22:18.350">...close sounds talk about the commander.</p>
+      <p begin="00:22:19.440" end="00:22:24.830">Member as I said before is really the app are plus more.</p>
+      <p begin="00:22:24.830" end="00:22:29.160">Instead of being minimal size by default its compact.</p>
+      <p begin="00:22:29.160" end="00:22:30.920">So, you'll see a hand you'll</p>
+      <p begin="00:22:30.920" end="00:22:34.810">...the icons for those primary commands but you won't get labels</p>
+      <p begin="00:22:34.810" end="00:22:40.720">until you open it doesn't respond to write click this is a change that we've made so,</p>
+      <p begin="00:22:40.720" end="00:22:44.160">that the command...gives back the right click for you to</p>
+      <p begin="00:22:44.160" end="00:22:49.450">use we encourage you to use other things where it's appropriate, for example, context menu</p>
+      <p begin="00:22:49.450" end="00:22:55.220">users familiar with that pattern and you can certainly use in your app.</p>
+      <p begin="00:22:55.220" end="00:22:59.730">Memoir we've also given...ability to host custom content so</p>
+      <p begin="00:22:59.730" end="00:23:03.360">the passes really...you got the app are button...talk about the</p>
+      <p begin="00:23:03.360" end="00:23:07.810">separator and that was pretty much it but now you can put whatever you want inside the command</p>
+      <p begin="00:23:07.810" end="00:23:14.420">...I'll show you where that goes member has this menu of commands that's</p>
+      <p begin="00:23:14.420" end="00:23:19.370">different than the app are now on...already had this before as before but for</p>
+      <p begin="00:23:19.370" end="00:23:25.690">windows that's new and as you saw those commands of move another thing to be a to be aware of is</p>
+      <p begin="00:23:25.690" end="00:23:29.920">that the implementations one hundred-percent animal so on phone where we were previously</p>
+      <p begin="00:23:29.920" end="00:23:34.840">rapping systems app are now it's alls animal so there may have</p>
+      <p begin="00:23:34.840" end="00:23:40.910">been some...issues are things that you ran into and those are all the should all be gone.</p>
+      <p begin="00:23:40.910" end="00:23:44.420">Now being one control we still want to give this taylor experience.</p>
+      <p begin="00:23:45.550" end="00:23:50.470">And, that's why you'll see...based on the windows size that menu may be</p>
+      <p begin="00:23:50.470" end="00:23:57.140">going to the...size or it may be just size into the content.</p>
+      <p begin="00:23:57.140" end="00:23:59.790">Another thing to note with the command bars it's no longer limited</p>
+      <p begin="00:23:59.790" end="00:24:03.950">...being the top or the bottom of your screen you can now</p>
+      <p begin="00:24:03.950" end="00:24:07.280">...inline in your page you'll see what I mean</p>
+      <p begin="00:24:07.280" end="00:24:12.270">here we look at one of the apps the people app and on the desktop you can</p>
+      <p begin="00:24:12.270" end="00:24:16.050">see they have to command bars they have this one in the</p>
+      <p begin="00:24:16.050" end="00:24:18.460">...over here and have one over</p>
+      <p begin="00:24:18.460" end="00:24:22.940">the right side and they go down to a mobile device drop down to one</p>
+      <p begin="00:24:24.320" end="00:24:28.380">note these do not have to be using the page top-to-bottom</p>
+      <p begin="00:24:28.380" end="00:24:31.720">app are properties these could be just placed inline adjacent</p>
+      <p begin="00:24:31.720" end="00:24:36.630">other content there's a lot more flexibility jan you should know that</p>
+      <p begin="00:24:36.630" end="00:24:40.200">...inline will affect layout but only for that close</p>
+      <p begin="00:24:40.200" end="00:24:44.400">size once you tap that more button to open it will not cause...you</p>
+      <p begin="00:24:44.400" end="00:24:51.480">...to move around you don't have anything special to get that behaviors just built into the control?</p>
+      <p begin="00:24:51.480" end="00:24:52.580">So, if we look at the api.</p>
+      <p begin="00:24:53.840" end="00:24:57.220">Here's what's really new for the command...the part this</p>
+      <p begin="00:24:57.220" end="00:24:59.580">gray was stuff those converge before.</p>
+      <p begin="00:25:00.750" end="00:25:04.640">This is now what we have the close display mode it's present</p>
+      <p begin="00:25:04.640" end="00:25:09.460">everywhere you can set one of these nodes...hidden the minimal compact.</p>
+      <p begin="00:25:09.460" end="00:25:12.830">And, without an opening and closing property so if you take some action before</p>
+      <p begin="00:25:12.830" end="00:25:16.930">it opens then you have a way to hook into that.</p>
+      <p begin="00:25:16.930" end="00:25:19.260">We have this member content property is a property</p>
+      <p begin="00:25:19.260" end="00:25:22.940">that previously existed but didn't do anything now when</p>
+      <p begin="00:25:22.940" end="00:25:26.940">you set content that content will appear to the left</p>
+      <p begin="00:25:26.940" end="00:25:31.610">of the primary commands so-if you have no primary commands and you put stuff in the content</p>
+      <p begin="00:25:31.610" end="00:25:36.150">...equivalent to the app are you can put whatever you need inside that area.</p>
+      <p begin="00:25:36.150" end="00:25:39.910">Now because it supports all...the you can combine them as best needs to the</p>
+      <p begin="00:25:39.910" end="00:25:46.090">needs of your app and then...have this overflow presenter style that allows you to get</p>
+      <p begin="00:25:46.090" end="00:25:54.120">at this menu here and do some things like change the background color if you need to?</p>
+      <p begin="00:25:54.120" end="00:25:56.070">So, let's take a quick look.</p>
+      <p begin="00:25:56.070" end="00:26:02.420">At a demo ok so here I have the app that you saw earlier were</p>
+      <p begin="00:26:02.420" end="00:26:07.590">to look at the command bar for a moment I have a number of command bars I've placed in</p>
+      <p begin="00:26:07.590" end="00:26:09.740">the page here these are all inline.</p>
+      <p begin="00:26:10.910" end="00:26:13.580">Now as I mentioned when they open they don't affect</p>
+      <p begin="00:26:13.580" end="00:26:17.310">...layout of other control so here I have a button</p>
+      <p begin="00:26:17.310" end="00:26:21.160">...itself...a toggle switch they're in a stack panel...</p>
+      <p begin="00:26:21.160" end="00:26:27.950">you'll notice that it goes over the button doesn't cause to shift around.</p>
+      <p begin="00:26:27.950" end="00:26:30.860">Here the bottom you can still play some align the</p>
+      <p begin="00:26:30.860" end="00:26:37.200">top-to-bottom as you see fit having a inline makes it easy for you to move around if you need</p>
+      <p begin="00:26:37.200" end="00:26:42.020">to make your app more adaptive and you still get this great experience now</p>
+      <p begin="00:26:42.020" end="00:26:45.910">notice that the menu is sizing the content.</p>
+      <p begin="00:26:45.910" end="00:26:49.260">If this window size were much smaller sales a phones</p>
+      <p begin="00:26:49.260" end="00:26:53.870">...screen than that menu and opens with span the full width and it's more</p>
+      <p begin="00:26:53.870" end="00:27:01.770">optimize for someone who's holding the device with their hand they can just touch easily on those different commands.</p>
+      <p begin="00:27:01.770" end="00:27:03.120">Now on the app</p>
+      <p begin="00:27:03.120" end="00:27:08.720">are itself you can see we've got a toggle button</p>
+      <p begin="00:27:08.720" end="00:27:13.940">that appears menu so that's indicated by this with the check mark.</p>
+      <p begin="00:27:13.940" end="00:27:17.910">We have flout attached to the buttons if you have more commands you need to share surface</p>
+      <p begin="00:27:17.910" end="00:27:22.800">to the user and you can see buttons are</p>
+      <p begin="00:27:22.800" end="00:27:27.290">...toggle that's indicated by the...color.</p>
+      <p begin="00:27:27.290" end="00:27:31.570">So, if we look at the code here we can see one of the command bars and</p>
+      <p begin="00:27:31.570" end="00:27:33.420">...setting the presenter style.</p>
+      <p begin="00:27:34.550" end="00:27:36.740">I'm doing style and targeting that command</p>
+      <p begin="00:27:36.740" end="00:27:40.630">...overflow presenter and I'm just setting the background to be a like gray.</p>
+      <p begin="00:27:41.670" end="00:27:46.440">So, if we go back to the app you can see which one that's this one here now</p>
+      <p begin="00:27:46.440" end="00:27:51.360">another thing to note is the behavior of this of this menu</p>
+      <p begin="00:27:51.360" end="00:27:56.030">it's going up over everything else when it opens and again it's</p>
+      <p begin="00:27:56.030" end="00:28:00.690">...the content so I obviously...in a not a great spot being here on</p>
+      <p begin="00:28:00.690" end="00:28:06.480">the left side but if we drop this down so that screen sizes smaller</p>
+      <p begin="00:28:06.480" end="00:28:13.200">you'll see that if...space on...switches...to the left edge.</p>
+      <p begin="00:28:13.200" end="00:28:17.700">If you need to override some things again like the color maybe the</p>
+      <p begin="00:28:17.700" end="00:28:23.460">...you can you can get to that through this camaro overflow presenter.</p>
+      <p begin="00:28:23.460" end="00:28:28.140">So, just to recap this is the command...behavior where you notice the layout was only</p>
+      <p begin="00:28:28.140" end="00:28:32.770">effected by the size of when the close state the</p>
+      <p begin="00:28:32.770" end="00:28:37.750">menu is based on the size the window less than or equal to four hundred and</p>
+      <p begin="00:28:37.750" end="00:28:41.270">eighty it...be the full-size the window optimized for</p>
+      <p begin="00:28:41.270" end="00:28:47.160">the small-screen devices greater than four-eighty is going to size of the content.</p>
+      <p begin="00:28:47.160" end="00:28:50.700">Now if you may not assume this ...the demo but</p>
+      <p begin="00:28:50.700" end="00:28:55.680">those commands don't automatically move so as you re sizing the window</p>
+      <p begin="00:28:55.680" end="00:29:00.150">those commands will remain but you can programmatic remove them if you need to from</p>
+      <p begin="00:29:00.150" end="00:29:07.560">being primary...secondary command and the right visual change will happen for you.</p>
+      <p begin="00:29:07.560" end="00:29:11.810">So, when we look at which one...use app are versus the command are?</p>
+      <p begin="00:29:11.810" end="00:29:13.770">Use the command bar the app</p>
+      <p begin="00:29:13.770" end="00:29:17.890">...we've done work to try and ease the transition for people who have these</p>
+      <p begin="00:29:17.890" end="00:29:22.760">legacy apps and you're trying to update them to work well for windows ten.</p>
+      <p begin="00:29:22.760" end="00:29:25.150">So, the behaviors there as much as possible</p>
+      <p begin="00:29:25.150" end="00:29:29.950">try to keep it the same as it was with some minimal changes we</p>
+      <p begin="00:29:29.950" end="00:29:34.930">encourage the switch to the command bar improvise the capabilities the flexibility that I think you'll</p>
+      <p begin="00:29:34.930" end="00:29:39.850">need for your app and provides with additional options.</p>
+      <p begin="00:29:39.850" end="00:29:44.700">Now when you're upgrading your absolute things you should consider first again recommend you</p>
+      <p begin="00:29:44.700" end="00:29:49.890">move to the commander it's not...click automatically so if that's something you're</p>
+      <p begin="00:29:49.890" end="00:29:55.870">users will become a custom do then you may need to add that functionality yourself.</p>
+      <p begin="00:29:55.870" end="00:29:59.530">When the when the keyboard appears on the screen?</p>
+      <p begin="00:30:00.550" end="00:30:05.150">...is not going to a it's not going to move up</p>
+      <p begin="00:30:05.150" end="00:30:11.160">with the keyboard unless you have says that page bottom app...property.</p>
+      <p begin="00:30:11.160" end="00:30:15.860">Now question to ask is if that's critical for your app do you need to have your commands visible while the</p>
+      <p begin="00:30:15.860" end="00:30:19.040">keyboard is...consider scenarios where like on a mobile</p>
+      <p begin="00:30:19.040" end="00:30:23.960">device you have it and landscape and the...trying-to type that</p>
+      <p begin="00:30:23.960" end="00:30:29.030">keyboards already consuming quite a bit of space and having having those commands</p>
+      <p begin="00:30:29.030" end="00:30:35.030">also present how much is that helping the user so,</p>
+      <p begin="00:30:35.030" end="00:30:37.540">if you need to you can hide it or just not</p>
+      <p begin="00:30:37.540" end="00:30:42.810">show it put in the minimal sizes well other things to be aware of?</p>
+      <p begin="00:30:42.810" end="00:30:47.290">The app are...button and app are button has</p>
+      <p begin="00:30:47.290" end="00:30:51.130">a different size than it did before they were different between phone</p>
+      <p begin="00:30:51.130" end="00:30:54.640">...windows...now converge size.</p>
+      <p begin="00:30:54.640" end="00:30:58.330">It's closer to the phone size so if you have an apps localize</p>
+      <p begin="00:30:58.330" end="00:31:04.710">and just be aware that may affect where those words are going to wrap you can use a soft...from character in</p>
+      <p begin="00:31:04.710" end="00:31:09.630">the string will act as a hint of the indicate where that word should break.</p>
+      <p begin="00:31:09.630" end="00:31:12.770">And, if you really need the button to be to be larger we recommend</p>
+      <p begin="00:31:12.770" end="00:31:17.605">...use septa min width and not the width and the reason being that if you if you want</p>
+      <p begin="00:31:17.605" end="00:31:22.710">to start moving those commands from the primary commands...commands using...what is going to give you the right</p>
+      <p begin="00:31:22.710" end="00:31:29.220">behavior using width is not going to give you the experience that you users really want to see.</p>
+      <p begin="00:31:29.220" end="00:31:34.090">Now I mention much earlier about this new font...deal to assets phone.</p>
+      <p begin="00:31:34.090" end="00:31:37.600">The symbol icon find icon front icon now use</p>
+      <p begin="00:31:37.600" end="00:31:41.760">fone by default so if you have for using</p>
+      <p begin="00:31:41.760" end="00:31:45.790">fond icon and you didn't set the font family specifically</p>
+      <p begin="00:31:45.790" end="00:31:49.390">when you upgrade you may find that there's a number of places where there's no</p>
+      <p begin="00:31:49.390" end="00:31:55.150">glare for you get the blank rectangle now simple icon.</p>
+      <p begin="00:31:55.150" end="00:31:59.350">Those all those are just moves right forwards so as you upgrade your</p>
+      <p begin="00:31:59.350" end="00:32:05.700">app it's going to switch and you're going to get new looking...the icons now those icons themselves</p>
+      <p begin="00:32:05.700" end="00:32:11.350">in the buttons they have a smaller space is now twenty by twenty box?</p>
+      <p begin="00:32:11.350" end="00:32:12.960">So-if...a path</p>
+      <p begin="00:32:12.960" end="00:32:17.570">icon on windows which or phone which assumed to forty by forty you may find that now</p>
+      <p begin="00:32:17.570" end="00:32:22.160">your icons getting clipped so one of the things you can do is just take that path</p>
+      <p begin="00:32:22.160" end="00:32:25.800">icon and you can assign is the content of the button and</p>
+      <p begin="00:32:25.800" end="00:32:33.640">...that interview box and they won't be the same-size...she won't get your icon being clipped.</p>
+      <p begin="00:32:33.640" end="00:32:35.440">So, like to thank you for watching help</p>
+      <p begin="00:32:35.440" end="00:32:39.630">...formative they'll be some sessions...done live</p>
+      <p begin="00:32:39.630" end="00:32:44.580">...build you should definitely go check out there related to some of the concept I've talked about here</p>
+      <p begin="00:32:44.580" end="00:32:49.360">geoff arnold and...will be giving a talk talking about the user experience</p>
+      <p begin="00:32:49.360" end="00:32:51.410">different models...and controls and</p>
+      <p begin="00:32:51.410" end="00:32:56.330">things should consider the to learn more about navigation window ing in windows</p>
+      <p begin="00:32:56.330" end="00:33:02.520">...go see this talk...robbers and if you have legacy app and you</p>
+      <p begin="00:33:02.520" end="00:33:07.080">...sams...one's going to talk more about that and what it means when you're moving</p>
+      <p begin="00:33:07.080" end="00:33:11.830">from whether silverlight or windows aone to the to be a windows</p>
+      <p begin="00:33:11.830" end="00:33:13.350">tenure ap and?</p>
+      <p begin="00:33:14.570" end="00:33:19.080">Then last of all when you start thinking about building at that's going to scale across all these different screen</p>
+      <p begin="00:33:19.080" end="00:33:24.420">sizesthere's newer things you have to think about and tim...her rainier</p>
+      <p begin="00:33:24.420" end="00:33:30.630">going to give a talk on that they should definitely go and check out again, thanks for watching</p>
+      <p begin="00:33:30.630" end="00:33:35.430">I look forward to getting your feedback in your comments and answering questions you may have.</p>
+
+    </div>
+  </body>
+</tt>

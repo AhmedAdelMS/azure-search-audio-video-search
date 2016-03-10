@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.912</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:07.050" end="00:00:11.940">...at least you wait you wake up.</p>
+      <p begin="00:00:11.940" end="00:00:13.650">However, jan.</p>
+      <p begin="00:00:13.650" end="00:00:18.830">My name is...guiding and today will talk about up</p>
+      <p begin="00:00:18.830" end="00:00:22.090">...and how to?</p>
+      <p begin="00:00:22.090" end="00:00:28.120">Use up insight for the diagnostic purposes I hope you having a great</p>
+      <p begin="00:00:28.120" end="00:00:30.710">shall I certainly enjoy all</p>
+      <p begin="00:00:30.710" end="00:00:36.510">the innovations that we presented this week and today we'll talk about the up</p>
+      <p begin="00:00:36.510" end="00:00:42.730">...which is yet another service that we release in</p>
+      <p begin="00:00:42.730" end="00:00:50.270">public preview which means that you all can go and start using it?</p>
+      <p begin="00:00:50.270" end="00:00:58.680">First of all it is important to evaluate this presentation</p>
+      <p begin="00:00:58.680" end="00:01:04.400">we welcome your feedback it is important...</p>
+      <p begin="00:01:04.400" end="00:01:08.420">Now better okay thank you.</p>
+      <p begin="00:01:08.420" end="00:01:15.640">please evaluate...thistalk and you can start with...mike problems.</p>
+      <p begin="00:01:15.640" end="00:01:19.010">I will be talking about ...insight.</p>
+      <p begin="00:01:19.010" end="00:01:25.410">And, how to use it to troubleshooting diagnose your servicehow many of you have seen</p>
+      <p begin="00:01:25.410" end="00:01:30.110">previous stock which was like a half an hour an hour earlier by dale</p>
+      <p begin="00:01:30.110" end="00:01:33.040">...ok so I'll try to minimize</p>
+      <p begin="00:01:33.040" end="00:01:39.440">the overlap and I think my job will be two-d mystified what up insight how up</p>
+      <p begin="00:01:39.440" end="00:01:48.550">...is actually working and that's what I will spend most of my time today?</p>
+      <p begin="00:01:48.550" end="00:01:52.590">Running a successful app is hard.</p>
+      <p begin="00:01:52.590" end="00:01:57.250">And, we believe that every business these days is a software business I have a scale</p>
+      <p begin="00:01:57.250" end="00:02:01.960">thatsends the might wait up into the cloud...can track whether</p>
+      <p begin="00:02:01.960" end="00:02:07.570">I'm improving mike api or declining and, in many cases success</p>
+      <p begin="00:02:07.570" end="00:02:12.470">...the businesses directly related to the successor fehler we software and unless you</p>
+      <p begin="00:02:12.470" end="00:02:16.870">can measure it you can't control it requirements...changing</p>
+      <p begin="00:02:16.870" end="00:02:23.020">computation is stiff is very important for you to actually know what's going on I</p>
+      <p begin="00:02:23.020" end="00:02:28.050">would break these scenarios of knowing what's going on into</p>
+      <p begin="00:02:28.050" end="00:02:33.680">two fundamentally different buckets one is I would say find fix release</p>
+      <p begin="00:02:33.680" end="00:02:38.590">where we're trying to maintain the health of our service</p>
+      <p begin="00:02:38.590" end="00:02:43.060">and another bucket is usage knowing your users how you</p>
+      <p begin="00:02:43.060" end="00:02:48.220">...engage with the application that I would say bucket like build measure</p>
+      <p begin="00:02:48.220" end="00:02:52.010">learning today specifically I'll be focusing mostly</p>
+      <p begin="00:02:52.010" end="00:02:56.900">...find fix release type of scenarios where you need to</p>
+      <p begin="00:02:56.900" end="00:02:59.950">instrumented application for a trouble shoot to</p>
+      <p begin="00:02:59.950" end="00:03:05.180">the simplify troubleshooting purposes.</p>
+      <p begin="00:03:05.180" end="00:03:09.930">You running business and you have pra you have lots of questions.</p>
+      <p begin="00:03:09.930" end="00:03:14.940">Whether my application is up or down and I would say that</p>
+      <p begin="00:03:14.940" end="00:03:17.890">those are availability questions whether</p>
+      <p begin="00:03:19.130" end="00:03:23.600">I'm failing with certain requests and if the amount</p>
+      <p begin="00:03:23.600" end="00:03:28.330">of failures number of failures exceeding certain threshold and I need to jump</p>
+      <p begin="00:03:28.330" end="00:03:32.860">...start fixing my site you also have...performance</p>
+      <p begin="00:03:32.860" end="00:03:40.080">questions and performance questions I would put into two different buckets one is.</p>
+      <p begin="00:03:40.080" end="00:03:45.230">Responsiveness of your obligation which means that what</p>
+      <p begin="00:05:03.570" end="00:05:10.490">This is you hear me okay good so this is a more</p>
+      <p begin="00:05:10.490" end="00:05:15.030">than at a job methodology I would say and this is not a any particular</p>
+      <p begin="00:05:15.030" end="00:05:17.190">tool this is a culture</p>
+      <p begin="00:05:17.190" end="00:05:21.340">...and the collaboration between development and</p>
+      <p begin="00:05:21.340" end="00:05:27.420">operations while we look at this collaboration there are lots of friction points,</p>
+      <p begin="00:05:27.420" end="00:05:33.310">for example, when you releases application and production</p>
+      <p begin="00:05:33.310" end="00:05:39.120">sometimes you don't know what's going on there how many customers are accessing particular feature</p>
+      <p begin="00:05:39.120" end="00:05:43.230">...applications up and running when you known?</p>
+      <p begin="00:05:43.230" end="00:05:48.000">Based on a twitter feed that...application is down sometimes it's not enough</p>
+      <p begin="00:05:48.000" end="00:05:52.910">the data that you have is not enough to reproduce the issue and</p>
+      <p begin="00:05:52.910" end="00:05:57.820">the fix the problem and the type of systems that</p>
+      <p begin="00:05:57.820" end="00:06:00.580">developers and operations use don't talk</p>
+      <p begin="00:06:00.580" end="00:06:04.940">to each other and then once you prioritize issues on</p>
+      <p begin="00:06:04.940" end="00:06:09.580">war when you trying to understand the impact of an issue</p>
+      <p begin="00:06:11.110" end="00:06:15.400">sometimes you don't have information whether I need to fix this particular issue or that</p>
+      <p begin="00:06:15.400" end="00:06:20.520">because you don't know the impact you don't know-how many users actually have been affected by</p>
+      <p begin="00:06:20.520" end="00:06:25.710">this particular fehler versus in other how many of you running production</p>
+      <p begin="00:06:25.710" end="00:06:34.090">sites awesome do have in your organizations the notion of ls</p>
+      <p begin="00:06:34.090" end="00:06:37.630">...light site incident type process where you have</p>
+      <p begin="00:06:37.630" end="00:06:41.100">...call in the middle-of-the-night and you have a bridge and people</p>
+      <p begin="00:06:41.100" end="00:06:45.270">wake up and ok so few of you.</p>
+      <p begin="00:06:45.270" end="00:06:52.170">That's where the rule.</p>
+      <p begin="00:06:52.170" end="00:06:57.280">Keeps me on my...that's where these type of for tooling</p>
+      <p begin="00:06:57.280" end="00:07:02.240">in this type of information is very important because typically the process works like this you have</p>
+      <p begin="00:07:02.240" end="00:07:06.210">a issue potentially automatically detected by you</p>
+      <p begin="00:07:06.210" end="00:07:11.250">or monitoring system and therule of thumb eighty percent of</p>
+      <p begin="00:07:11.250" end="00:07:14.820">issues should be automatically detected and,</p>
+      <p begin="00:07:14.820" end="00:07:18.580">the rest twenty issues is pretty much based on</p>
+      <p begin="00:07:18.580" end="00:07:23.350">the user feedback or somebody in the not browsing and suddenly seeing some</p>
+      <p begin="00:07:23.350" end="00:07:28.220">anomalies so when the issues detected then there is a triage process happening where you</p>
+      <p begin="00:07:28.220" end="00:07:33.910">need to identify whether this is a real problem that you</p>
+      <p begin="00:07:33.910" end="00:07:42.620">need to investigate or this is a bug thatcan be</p>
+      <p begin="00:07:42.620" end="00:07:47.510">fix later and this early triage significantly</p>
+      <p begin="00:07:47.510" end="00:07:52.290">impact the cost you either wake-up people in the middle-of-the-night and people are under the</p>
+      <p begin="00:07:52.290" end="00:07:57.320">gun or you basically creates fthree incident and</p>
+      <p begin="00:07:57.320" end="00:08:02.810">their managers at their leisure decide how to prioritize that particular bug</p>
+      <p begin="00:08:02.810" end="00:08:07.830">versus some other backlog items so it is very important to provide a</p>
+      <p begin="00:08:07.830" end="00:08:11.950">...comprehensive wvu on your telemetry</p>
+      <p begin="00:08:11.950" end="00:08:15.080">to speedup meantime</p>
+      <p begin="00:08:15.080" end="00:08:19.810">to detect meantime and meantime to resolve?</p>
+      <p begin="00:08:19.810" end="00:08:23.460">Or mitigate now what is up...</p>
+      <p begin="00:08:23.460" end="00:08:29.800">Up...is a application plays an application performance management space</p>
+      <p begin="00:08:29.800" end="00:08:35.200">so we collect telemetry from all applications out there and</p>
+      <p begin="00:08:35.200" end="00:08:40.240">devices so whether it's you have ios and lloyd windows phone</p>
+      <p begin="00:08:40.240" end="00:08:44.260">or...applications whether it's a dot net java</p>
+      <p begin="00:08:44.260" end="00:08:47.810">each be python node you name it we collect</p>
+      <p begin="00:08:47.810" end="00:08:52.100">all the telemetry we send that telemetry into the cloud.</p>
+      <p begin="00:08:52.100" end="00:08:55.050">Within reach that telemetry and,</p>
+      <p begin="00:08:55.050" end="00:08:59.940">...slice and dice we create indexes of that telemetry and then we provide powerful</p>
+      <p begin="00:08:59.940" end="00:09:06.880">inside so you cananalyze your telemetry over the web the point I want to make and I will</p>
+      <p begin="00:09:06.880" end="00:09:12.100">be keep reiterating this point over and over because we had lots and lots of questions</p>
+      <p begin="00:09:12.100" end="00:09:14.310">...and site.</p>
+      <p begin="00:09:14.310" end="00:09:17.440">Works for any application running anywhere whether</p>
+      <p begin="00:09:17.440" end="00:09:21.870">it'samazon cloud google cloud as a cloud on</p>
+      <p begin="00:09:21.870" end="00:09:25.010">...public you name it works.</p>
+      <p begin="00:09:25.010" end="00:09:31.480">The analytical ux user experience is part of</p>
+      <p begin="00:09:31.480" end="00:09:35.490">...so, you need to login to adjective view the data however</p>
+      <p begin="00:09:35.490" end="00:09:41.810">your application can run anywhere now if you look at what up in...consist</p>
+      <p begin="00:09:41.810" end="00:09:47.500">off if you think about applications the way we treat application,</p>
+      <p begin="00:09:47.500" end="00:09:48.990">application is an essentially</p>
+      <p begin="00:09:48.990" end="00:09:54.710">a bucket of telemetry uniquely identify by ip?</p>
+      <p begin="00:09:54.710" end="00:09:59.930">And, what we are doing with this bucket of telemetry we send to you</p>
+      <p begin="00:09:59.930" end="00:10:04.790">can send telemetry their first of all you can look at your front-end application</p>
+      <p begin="00:10:04.790" end="00:10:08.230">...you-can ping it from outside and we have eighteen points</p>
+      <p begin="00:10:08.230" end="00:10:11.970">a presence around the globe that you canexecute</p>
+      <p begin="00:10:11.970" end="00:10:16.260">...paying if you familiar with let's say keynote...as</p>
+      <p begin="00:10:16.260" end="00:10:22.320">setting them that would be the similar scenario what we do however</p>
+      <p begin="00:10:22.320" end="00:10:26.480">re-execute not just simple thing we execute the</p>
+      <p begin="00:10:26.480" end="00:10:30.170">visual studio web tests so you can record multi-step transactions?</p>
+      <p begin="00:10:31.860" end="00:10:36.990">And, run it from multiple...presence in this case</p>
+      <p begin="00:10:36.990" end="00:10:41.700">you can detect not only that your site is up or down but also you</p>
+      <p begin="00:10:41.700" end="00:10:47.620">could detect that you have you resources are up, for example,</p>
+      <p begin="00:10:47.620" end="00:10:52.480">you can record a simple let's say you have a calmer site and you have a search you</p>
+      <p begin="00:10:52.480" end="00:10:56.160">can record...session that does the typical search.</p>
+      <p begin="00:10:56.160" end="00:11:00.600">And, if you get the results back, you know, for a fact that actually this search</p>
+      <p begin="00:11:00.600" end="00:11:05.920">you all your search subsystem is up so we do not recommend to record</p>
+      <p begin="00:11:05.920" end="00:11:10.470">web test for every possible use case scenario instead</p>
+      <p begin="00:11:10.470" end="00:11:14.690">...critical scenarios that validate resource availability and</p>
+      <p begin="00:11:14.690" end="00:11:20.050">that's how you can test that your site not only are but all your</p>
+      <p begin="00:11:20.050" end="00:11:26.690">important resources pieces of technologies are up however it does not.</p>
+      <p begin="00:11:26.690" end="00:11:32.050">Replace the real user monitoring and we monitor</p>
+      <p begin="00:11:32.050" end="00:11:37.060">real users from the client-side where you can</p>
+      <p begin="00:11:37.060" end="00:11:41.970">...install...sdk on the ios device android device windows</p>
+      <p begin="00:11:41.970" end="00:11:47.280">phone device or you can add are javascript snippet into your browser</p>
+      <p begin="00:11:47.280" end="00:11:53.790">which will give you the actual responsiveness and performance</p>
+      <p begin="00:11:53.790" end="00:11:58.880">all of your end-users we also monitor it from the</p>
+      <p begin="00:11:58.880" end="00:12:02.360">server-side where we can detect failures before</p>
+      <p begin="00:12:02.360" end="00:12:06.890">...degradation and when we detect those performance degradation if you think what a server</p>
+      <p begin="00:12:06.890" end="00:12:11.780">application does when it runs when it receives the request it relies</p>
+      <p begin="00:12:11.780" end="00:12:16.910">on external services let's say I can call the sequel database</p>
+      <p begin="00:12:16.910" end="00:12:22.480">right I can call I can query blob storage ki can rely on some other</p>
+      <p begin="00:12:22.480" end="00:12:25.000">...cf services so forth so we would</p>
+      <p begin="00:12:25.000" end="00:12:31.700">automatically monitor that andwe would correlate all that technology</p>
+      <p begin="00:12:31.700" end="00:12:37.560">together and that's later on that something that I will show you and,</p>
+      <p begin="00:12:37.560" end="00:12:41.710">the last but not least is the infrastructure so,</p>
+      <p begin="00:12:41.710" end="00:12:48.050">we've talked about clients we've talked about the server the you application code that's</p>
+      <p begin="00:12:48.050" end="00:12:54.060">running on the server and then you run on the actual boxer</p>
+      <p begin="00:12:54.060" end="00:12:58.850">...a doctor and in many cases you need to know the health of</p>
+      <p begin="00:12:58.850" end="00:13:02.110">that box itself especially if you running on</p>
+      <p begin="00:13:02.110" end="00:13:06.990">param high-density environment where multiple let's say websites are sharing</p>
+      <p begin="00:13:06.990" end="00:13:11.700">the same machine you want to know about the cpu memory io thread</p>
+      <p begin="00:13:11.700" end="00:13:17.100">starvation so forth we collect that as well so what I'm going to do right now I'm</p>
+      <p begin="00:13:17.100" end="00:13:25.580">going to quickly show you how we do that?</p>
+      <p begin="00:13:25.580" end="00:13:31.240">To do so I'm going to start with visual studio.</p>
+      <p begin="00:13:31.240" end="00:13:33.910">And, I will go quickly through a similar</p>
+      <p begin="00:13:33.910" end="00:13:38.520">flow that dale showed but I will talk a little bit more what are we</p>
+      <p begin="00:13:38.520" end="00:13:42.640">doing behind-the-scene so what I'm going to do is I'm going to</p>
+      <p begin="00:13:42.640" end="00:13:46.080">create a web project.</p>
+      <p begin="00:13:46.080" end="00:13:47.880">And, let's.</p>
+      <p begin="00:13:47.880" end="00:13:50.070">Let's call it the.</p>
+      <p begin="00:13:50.070" end="00:13:56.280">Build demo.</p>
+      <p begin="00:13:56.280" end="00:14:00.950">One-two-three just to make sure that I want clash with anybody.</p>
+      <p begin="00:14:00.950" end="00:14:03.520">I also want to do one more thing I</p>
+      <p begin="00:14:03.520" end="00:14:08.350">want to create a resource group how many of you have heard about resource group.</p>
+      <p begin="00:14:08.350" end="00:14:14.710">Awesome so resource group is...hosting containment relationship where I can</p>
+      <p begin="00:14:14.710" end="00:14:19.470">creator resource group and then put multiple resources into that resource group currently</p>
+      <p begin="00:14:19.470" end="00:14:22.980">imagine resource do gives you three.</p>
+      <p begin="00:14:22.980" end="00:14:26.800">Value-added it gives you it's a single point of</p>
+      <p begin="00:14:26.800" end="00:14:30.580">our back so if you create a resource group for your staging</p>
+      <p begin="00:14:30.580" end="00:14:35.470">versus production you can said different permissions for your staging resources versus production</p>
+      <p begin="00:14:35.470" end="00:14:40.250">resources that's one second you can see billing for</p>
+      <p begin="00:14:40.250" end="00:14:44.780">that resource group and you'll be able to see how much you pay for your staging resources</p>
+      <p begin="00:14:44.780" end="00:14:49.500">versus production resources and third all the issues all the alerts</p>
+      <p begin="00:14:49.500" end="00:14:54.330">will be aggregated on the level of resource group so by looking at the resource group you</p>
+      <p begin="00:14:54.330" end="00:14:58.340">can kind of cc toll and I don't know-how many of you have</p>
+      <p begin="00:14:58.340" end="00:15:00.720">seen gallery as...gallery.</p>
+      <p begin="00:15:01.900" end="00:15:07.620">The sorry customization for blades through the gallery okay...</p>
+      <p begin="00:15:07.620" end="00:15:13.330">show you that because that's very cool feature that apparently not many people have seen and,</p>
+      <p begin="00:15:13.330" end="00:15:19.990">what I'm going to do is I'm going to create this resource group with my application</p>
+      <p begin="00:15:19.990" end="00:15:30.090">and in this particular case I will host ...to be...will hosted and measure?</p>
+      <p begin="00:15:30.090" end="00:15:32.060">I'll pick my a</p>
+      <p begin="00:15:32.060" end="00:15:39.080">prototype subscription I'll pick my region.</p>
+      <p begin="00:15:39.080" end="00:15:43.300">And, while visual studios going through motions let me explain what will just</p>
+      <p begin="00:15:43.300" end="00:15:47.550">what will happenfirst of all we will create a resource group called</p>
+      <p begin="00:15:47.550" end="00:15:52.520">...demo one-two-three second will create up insight resource called</p>
+      <p begin="00:15:52.520" end="00:15:57.260">...demo one-two-three and...place it into that resource group third</p>
+      <p begin="00:15:57.260" end="00:16:02.520">will create web site called...one-two-three I didn't check that and</p>
+      <p begin="00:16:02.520" end="00:16:07.280">put it into the into that resource group so what I would expect is that at the end</p>
+      <p begin="00:16:07.280" end="00:16:11.800">...have resource group with two resources in it up insight and the</p>
+      <p begin="00:16:11.800" end="00:16:18.050">website ok now also what you see here is hopefully</p>
+      <p begin="00:16:18.050" end="00:16:24.100">we'll get will cooperate with me the visual studio.</p>
+      <p begin="00:16:25.140" end="00:16:26.910">Will upload all the</p>
+      <p begin="00:16:26.910" end="00:16:35.010">new get packages to my machine so, I'll get latest and greatest?</p>
+      <p begin="00:16:35.010" end="00:16:39.440">New gets from the from the web.</p>
+      <p begin="00:16:39.440" end="00:16:42.450">Also we it will create up...</p>
+      <p begin="00:16:43.500" end="00:16:49.140">configure which basically contains configuration for</p>
+      <p begin="00:16:49.140" end="00:16:53.880">application and site and it will put their application</p>
+      <p begin="00:16:53.880" end="00:16:58.200">...id...we call it instrumentation key into that up and</p>
+      <p begin="00:16:58.200" end="00:17:02.290">...and it looks like it's there so let me run it and then we'll</p>
+      <p begin="00:17:02.290" end="00:17:13.450">talk what how we've collected all these telemetry so I want?</p>
+      <p begin="00:17:13.450" end="00:17:18.810">And, actually even event this way.</p>
+      <p begin="00:17:18.810" end="00:17:27.240">Is the points I want to make...here?</p>
+      <p begin="00:17:27.240" end="00:17:33.190">So, what I want you to notice that every time when I click there</p>
+      <p begin="00:17:33.190" end="00:17:37.090">is something happening in the output window and right now we're in debug</p>
+      <p begin="00:17:37.090" end="00:17:44.720">mode and let me talk about a little bit about what's happening in visual studio at this time?</p>
+      <p begin="00:17:44.720" end="00:17:49.710">Posit first of all you notice that there is a toast and this toast would allow me</p>
+      <p begin="00:17:49.710" end="00:17:53.950">to jump into...as a portal to see telemetry that we</p>
+      <p begin="00:17:53.950" end="00:17:58.810">just collected also I want to point out that we are showing</p>
+      <p begin="00:17:58.810" end="00:18:05.220">you the telemetry that we are collecting right now and as you've seen that</p>
+      <p begin="00:18:05.220" end="00:18:09.950">...in the debug mode in visual studio we...to limit tree out...magically like</p>
+      <p begin="00:18:09.950" end="00:18:14.160">the automatically every time when I click there's something going into the wire</p>
+      <p begin="00:18:14.160" end="00:18:16.870">in production settings that's not feasible so we have a</p>
+      <p begin="00:18:16.870" end="00:18:21.640">mechanism to batch it and we send it every thirty seconds.</p>
+      <p begin="00:18:21.640" end="00:18:27.460">So, that is done for you automatically now as you see as part of this telemetry</p>
+      <p begin="00:18:27.460" end="00:18:32.060">we collect lots of information and let me talk a little bit about how</p>
+      <p begin="00:18:32.060" end="00:18:37.040">...is actually...first of all we have what we call.</p>
+      <p begin="00:18:37.040" end="00:18:41.790">Up and site core which is a essentially shame over rj</p>
+      <p begin="00:18:41.790" end="00:18:48.130">song and point public endpoint and this low-level api</p>
+      <p begin="00:18:48.130" end="00:18:52.050">...us number of functions</p>
+      <p begin="00:18:52.050" end="00:18:55.790">of functions that define our domain model earlier I</p>
+      <p begin="00:18:55.790" end="00:19:00.660">was talking about the notion of application which is essentially a bucket and this guy bucket of telemetry</p>
+      <p begin="00:19:00.660" end="00:19:06.300">this guy and we believe that application accepts request it spits</p>
+      <p begin="00:19:06.300" end="00:19:12.140">out exceptions and the traces and logs it also</p>
+      <p begin="00:19:12.140" end="00:19:16.890">can be instrumented for usage events over control flow events and metrics and it</p>
+      <p begin="00:19:16.890" end="00:19:21.430">relies on dependencies and coincidentally we have</p>
+      <p begin="00:19:21.430" end="00:19:26.360">api surface that covers exactly that we have truck exception track metric</p>
+      <p begin="00:19:26.360" end="00:19:31.250">track request drug dependency...page views so forth so our core is</p>
+      <p begin="00:19:31.250" end="00:19:33.980">decayed provides that.</p>
+      <p begin="00:19:33.980" end="00:19:37.350">On top of that we have logging framework so if you guys</p>
+      <p begin="00:19:37.350" end="00:19:42.090">already instrumented applications with some kind of instrumentation so how many of</p>
+      <p begin="00:19:42.090" end="00:19:46.720">you've already instrumented apps with let's say log format...log.</p>
+      <p begin="00:19:46.720" end="00:19:50.020">Awesome so if...already instrumented your application</p>
+      <p begin="00:19:50.020" end="00:19:56.190">withsome code we want to preserve that instrumentation and we want to</p>
+      <p begin="00:19:56.190" end="00:19:58.930">operation allies it so we have our</p>
+      <p begin="00:19:58.930" end="00:20:04.330">own listeners a pander subscribers you name it for</p>
+      <p begin="00:20:04.330" end="00:20:09.100">most popular logging framework and what you can do is you can basically</p>
+      <p begin="00:20:09.100" end="00:20:14.190">channel your logging information up into the cloud and you'll get to</p>
+      <p begin="00:20:14.190" end="00:20:19.910">benefits with that we will first of all provide a ui</p>
+      <p begin="00:20:19.910" end="00:20:24.890">user experience that would allow you to slice and dice information and very</p>
+      <p begin="00:20:24.890" end="00:20:30.730">often I've seen with instrumentation framework implementation people dumping to do</p>
+      <p begin="00:20:30.730" end="00:20:35.820">...and then duty sequel to minute so?</p>
+      <p begin="00:20:35.820" end="00:20:41.840">We do much better than that we have a full-blown you why analytical you why that would</p>
+      <p begin="00:20:41.840" end="00:20:47.000">allow you to understand what's going on in your log but we also correlate</p>
+      <p begin="00:20:47.000" end="00:20:51.960">those logs with our request so you'd be able to see that while processing this particular</p>
+      <p begin="00:20:51.960" end="00:20:56.280">request these this is the telemetry that was</p>
+      <p begin="00:20:56.280" end="00:21:03.910">that this request was ...processing so that's our second layer</p>
+      <p begin="00:21:03.910" end="00:21:09.570">soft-core logging and the third layer is our</p>
+      <p begin="00:21:09.570" end="00:21:15.490">automatic where without you writing any line of code we</p>
+      <p begin="00:21:15.490" end="00:21:19.800">would collect data as you've seen what I just...by virtue of</p>
+      <p begin="00:21:19.800" end="00:21:24.840">meet checking well, keeping that check box for web applications we are a meeting</p>
+      <p begin="00:21:24.840" end="00:21:29.820">...elementary and I'll show you that telemetry in a second but that's...</p>
+      <p begin="00:21:29.820" end="00:21:36.040">That's our to instrumentation layer and it consists of two pieces first of all</p>
+      <p begin="00:21:36.040" end="00:21:39.050">...to a standard let's say requests or</p>
+      <p begin="00:21:39.050" end="00:21:44.060">we collect automatically exceptions but we also collect standard properties and if</p>
+      <p begin="00:21:44.060" end="00:21:51.020">you look here I don't know if it is well, it's.</p>
+      <p begin="00:21:51.020" end="00:21:54.180">You can see this but...we're collecting windows version</p>
+      <p begin="00:21:54.180" end="00:21:59.360">we're collecting device model we collect a lot ofip address obviously so forth we</p>
+      <p begin="00:21:59.360" end="00:22:05.030">collect out-of-the-box a lot of properties that you would need for...</p>
+      <p begin="00:22:05.030" end="00:22:12.900">troubleshooting analytical purposes ok nowlet me go into the.</p>
+      <p begin="00:22:12.900" end="00:22:16.190">Into my application in.</p>
+      <p begin="00:22:16.190" end="00:22:20.250">To look at the data that we've sent.</p>
+      <p begin="00:22:20.250" end="00:22:26.490">So, what I did I just click on a deeply...and?</p>
+      <p begin="00:22:26.490" end="00:22:32.990">Hopefully what you'll see is you will see the.</p>
+      <p begin="00:22:35.650" end="00:22:41.270">For...demo one-two-three.</p>
+      <p begin="00:22:41.270" end="00:22:46.170">Okay, so, I clicked and, this is my browser data.</p>
+      <p begin="00:22:46.170" end="00:22:48.380">So, again,</p>
+      <p begin="00:22:48.380" end="00:22:55.900">this is we've done we've collected all this data with no...no.</p>
+      <p begin="00:22:55.900" end="00:22:58.640">...instrumentation...</p>
+      <p begin="00:22:58.640" end="00:23:04.020">Now what I'd like to do is I'd like to.</p>
+      <p begin="00:23:04.020" end="00:23:08.730">...little bit and I'll show you.</p>
+      <p begin="00:23:08.730" end="00:23:13.590">The typical typical before I do I</p>
+      <p begin="00:23:13.590" end="00:23:19.030">promised to show you how we've where's the magic and</p>
+      <p begin="00:23:19.030" end="00:23:26.740">...is here we added...a cv module.</p>
+      <p begin="00:23:26.740" end="00:23:27.570">Okay,</p>
+      <p begin="00:23:27.570" end="00:23:33.890">so, we can collect all the traffic that's going in and out.</p>
+      <p begin="00:23:33.890" end="00:23:38.210">From your website ok that's how we attach to all</p>
+      <p begin="00:23:38.210" end="00:23:42.900">your request processing if you need to attached to the tracing</p>
+      <p begin="00:23:42.900" end="00:23:49.310">what you can do is let's say you using system that diagnostics you can go to manage</p>
+      <p begin="00:23:49.310" end="00:23:59.370">know get packages.</p>
+      <p begin="00:23:59.370" end="00:24:03.450">And, if you look at the application.</p>
+      <p begin="00:24:03.450" end="00:24:06.820">Insights listener you would be able to see essentially</p>
+      <p begin="00:24:06.820" end="00:24:13.690">...clip trace listener you'll be able to see other the up...so there is</p>
+      <p begin="00:24:13.690" end="00:24:15.660">...log...format you'd be able to</p>
+      <p begin="00:24:15.660" end="00:24:20.340">the see all those the trace listeners and the only thing you have to do is add that trace</p>
+      <p begin="00:24:20.340" end="00:24:25.590">listener to your application and we will do everything for you we would put our trace listener as</p>
+      <p begin="00:24:25.590" end="00:24:31.530">...let's say in a pander in the configuration or a listener in the configuration for</p>
+      <p begin="00:24:31.530" end="00:24:36.390">...system diagnostics okay and that's how you'd be able to collect</p>
+      <p begin="00:24:36.390" end="00:24:40.840">now let me show you piece of code that you most likely</p>
+      <p begin="00:24:40.840" end="00:24:44.920">...most likely would do.</p>
+      <p begin="00:24:44.920" end="00:24:48.450">So, this is my empty controller.</p>
+      <p begin="00:24:48.450" end="00:24:53.030">What I'm going to do is I'm going to?</p>
+      <p begin="00:24:53.030" end="00:24:53.530">Cut-and-paste.</p>
+      <p begin="00:24:55.130" end="00:24:59.260">Code we'll talk about it and then I'll fast-forward and I'll show you what</p>
+      <p begin="00:24:59.260" end="00:25:05.480">are we collecting usually.</p>
+      <p begin="00:25:05.480" end="00:25:12.560">So, I'm replacing my.</p>
+      <p begin="00:25:12.560" end="00:25:17.790">My code and this is a very typical typical code</p>
+      <p begin="00:25:17.790" end="00:25:19.320">...me fix-all the.</p>
+      <p begin="00:25:20.340" end="00:25:24.060">Issues.</p>
+      <p begin="00:25:25.200" end="00:25:27.600">So, I'm with a help.</p>
+      <p begin="00:25:27.600" end="00:25:29.880">Visual studio I believe that.</p>
+      <p begin="00:25:33.400" end="00:25:34.860">This one.</p>
+      <p begin="00:25:34.860" end="00:25:39.550">We will be golden and then I'll describe what this code does.</p>
+      <p begin="00:25:39.550" end="00:25:43.000">So, first of all I have I decided to use</p>
+      <p begin="00:25:43.000" end="00:25:49.000">this external service that geo code my idea address you basically pass</p>
+      <p begin="00:25:49.000" end="00:25:52.350">id before as a result you get various properties</p>
+      <p begin="00:25:53.410" end="00:25:59.570">like city state so forth what you see here is the</p>
+      <p begin="00:25:59.570" end="00:26:05.120">...getting the ap address a visitor and I'm calling a very simple</p>
+      <p begin="00:26:08.760" end="00:26:14.170">Using my helper function and then I'm...</p>
+      <p begin="00:26:14.170" end="00:26:18.850">Outputting and on my page the ip address and the city</p>
+      <p begin="00:26:18.850" end="00:26:24.820">okay that's very typical straightforwardcall to external</p>
+      <p begin="00:26:24.820" end="00:26:31.050">service right and I also did here I decided to do some tracing</p>
+      <p begin="00:26:31.050" end="00:26:34.290">I wrote some tracing information so,</p>
+      <p begin="00:26:34.290" end="00:26:39.890">far you don't see any up in site in this in this code right.</p>
+      <p begin="00:26:39.890" end="00:26:42.310">Which is good?</p>
+      <p begin="00:26:42.310" end="00:26:47.500">And, another piece of code is typically fairly standardmy</p>
+      <p begin="00:26:47.500" end="00:26:53.740">sequel my sequel calls to database to thatch some data</p>
+      <p begin="00:26:53.740" end="00:26:59.440">...with some exception handling so forth so what I want to point out that</p>
+      <p begin="00:27:00.890" end="00:27:05.870">in this particular piece of code I didn't write anything specific to</p>
+      <p begin="00:27:05.870" end="00:27:07.530">up and site.</p>
+      <p begin="00:27:07.530" end="00:27:21.320">Now let's say fast-forward and we go into the cloud.</p>
+      <p begin="00:27:21.320" end="00:27:25.400">Thing what I have I have this app running</p>
+      <p begin="00:27:25.400" end="00:27:31.410">in the cloud and I want to show you what data...were able to collect.</p>
+      <p begin="00:27:31.410" end="00:27:35.620">For that particular piece of code now I've been kind of clicking on this</p>
+      <p begin="00:27:35.620" end="00:27:39.090">...yesterday so that's why you see this data here and,</p>
+      <p begin="00:27:39.090" end="00:27:42.250">what I can do is I can go into the performance and</p>
+      <p begin="00:27:42.250" end="00:27:47.230">see the performance for every page that I clicked but,</p>
+      <p begin="00:27:47.230" end="00:27:53.640">also which is very important is I was able to see all</p>
+      <p begin="00:27:53.640" end="00:27:58.580">the ...again I did not as a developer</p>
+      <p begin="00:27:58.580" end="00:28:03.290">decorate any...to the dependency and yet I was able to collect</p>
+      <p begin="00:28:03.290" end="00:28:07.570">dependency to in this particular case web service</p>
+      <p begin="00:28:07.570" end="00:28:14.630">...http call and the database we have the ability to</p>
+      <p begin="00:28:14.630" end="00:28:19.330">kind of a and automatically collect all your http</p>
+      <p begin="00:28:19.330" end="00:28:21.000">...an sql</p>
+      <p begin="00:28:21.000" end="00:28:25.600">calls both synchronous and asynchronous and associate them</p>
+      <p begin="00:28:25.600" end="00:28:30.450">with an application and with the with the function and, for example,</p>
+      <p begin="00:28:30.450" end="00:28:35.080">I can go to about function and what you see is</p>
+      <p begin="00:28:35.080" end="00:28:41.480">ic a list of executions of that of that function?</p>
+      <p begin="00:28:41.480" end="00:28:48.580">And, if I look at this request.</p>
+      <p begin="00:28:48.580" end="00:28:54.560">What you will see is that my...igni at info</p>
+      <p begin="00:28:54.560" end="00:28:55.900">Is there?</p>
+      <p begin="00:28:55.900" end="00:29:00.880">And, as a developer I just want to point out that as a developer</p>
+      <p begin="00:29:00.880" end="00:29:07.130">I did not do I did not write any line of code this is my code.</p>
+      <p begin="00:29:07.130" end="00:29:10.970">And, yet we were able to associate request</p>
+      <p begin="00:29:10.970" end="00:29:17.100">with dependency and from our experience majority of performance problems</p>
+      <p begin="00:29:18.230" end="00:29:23.170">somewhere downstream...say you're you rely on sequel and</p>
+      <p begin="00:29:23.170" end="00:29:27.600">...slow you rely on some external service and that services slow</p>
+      <p begin="00:29:27.600" end="00:29:32.940">so this would help you out of magically see all the</p>
+      <p begin="00:29:32.940" end="00:29:39.620">...problem performance problems related to dependencies.</p>
+      <p begin="00:29:39.620" end="00:29:43.910">While I'm on the code you see that there is a some piece of diagnostic code</p>
+      <p begin="00:29:43.910" end="00:29:50.880">that I wrote right line message now if I go here.</p>
+      <p begin="00:29:50.880" end="00:29:54.030">And, if I click and I</p>
+      <p begin="00:29:54.030" end="00:29:59.890">see this telemetry for this request I see there are two pieces.</p>
+      <p begin="00:29:59.890" end="00:30:05.580">And, this is very important we have the ability to do to</p>
+      <p begin="00:30:05.580" end="00:30:12.160">automatically correlate that telemetry with your logging instrumentation that request with</p>
+      <p begin="00:30:12.160" end="00:30:17.130">your logging instrumentation and what you see here is this is my request and this</p>
+      <p begin="00:30:17.130" end="00:30:22.830">is the trace that was originated from that request that's again very</p>
+      <p begin="00:30:22.830" end="00:30:28.280">importantfeature and pretty significant value that sometimes all</p>
+      <p begin="00:30:28.280" end="00:30:33.260">your logging information...the context and sometimes you have to do some strange</p>
+      <p begin="00:30:33.260" end="00:30:38.480">correlation between pieces of technology especially in big enterprise organizations</p>
+      <p begin="00:30:38.480" end="00:30:43.280">where different teams instrument and then you do your integration</p>
+      <p begin="00:30:43.280" end="00:30:49.060">and sometimes it's very hard to understand what's going on I have a...I have</p>
+      <p begin="00:30:50.870" end="00:30:52.690">...company that</p>
+      <p begin="00:30:52.690" end="00:30:57.310">with the team of hundred-fifty people created over two</p>
+      <p begin="00:30:57.310" end="00:31:02.870">thousand three hundred different tables for telemetry now imagine life site process</p>
+      <p begin="00:31:02.870" end="00:31:08.140">...you somebody woke me up in the middle-of-the-night angry to goal in search this stable and switch to another table</p>
+      <p begin="00:31:08.140" end="00:31:13.100">switch to another table what you see here is in a single place you see</p>
+      <p begin="00:31:13.100" end="00:31:18.270">all the telemetry any can slice and dice it now how can you slice and dice let's...take</p>
+      <p begin="00:31:18.270" end="00:31:26.630">I take this trace that was associate the request we've collect lots of?</p>
+      <p begin="00:31:26.630" end="00:31:34.630">...for this and, one of the properties that we've we did collect is.</p>
+      <p begin="00:31:34.630" end="00:31:36.850">The session id so what I can do</p>
+      <p begin="00:31:36.850" end="00:31:41.830">is I can click and run the diagnostic search.</p>
+      <p begin="00:31:41.830" end="00:31:45.800">For that particular session id and what you see here well this is not</p>
+      <p begin="00:31:45.800" end="00:31:46.930">...as impressive</p>
+      <p begin="00:31:46.930" end="00:31:52.100">but what you be able to see here is essentially every</p>
+      <p begin="00:31:52.100" end="00:31:58.130">interaction that particular user had during that session in that list so</p>
+      <p begin="00:31:58.130" end="00:32:03.430">you would be able to essentially mentally replay the</p>
+      <p begin="00:32:03.430" end="00:32:17.080">walk through through your site but that user did?</p>
+      <p begin="00:32:17.080" end="00:32:23.220">also I want to a point out that I don't know I've seen a lot of implementation...</p>
+      <p begin="00:32:23.220" end="00:32:28.170">custom home-grown...searching over logs.</p>
+      <p begin="00:32:28.170" end="00:32:31.020">...typically there are lots of limitations here and</p>
+      <p begin="00:32:31.020" end="00:32:36.110">there this allows you to kind of centralize all that searching</p>
+      <p begin="00:32:36.110" end="00:32:39.710">your of on top of your log so...</p>
+      <p begin="00:32:39.710" end="00:32:44.380">the idea that I mention that we would operational lice your telemetry you've already</p>
+      <p begin="00:32:44.380" end="00:32:48.340">invested a lot you thought through it we can operation lies</p>
+      <p begin="00:32:48.340" end="00:32:57.030">it making it easier and simply to support your application production.</p>
+      <p begin="00:32:57.030" end="00:32:58.630">I was going to show you</p>
+      <p begin="00:32:58.630" end="00:33:02.410">an hopefully it will work out the</p>
+      <p begin="00:33:02.410" end="00:33:07.710">...other important thing.</p>
+      <p begin="00:33:07.710" end="00:33:14.020">I was going to show you in real-life how the domain model and</p>
+      <p begin="00:33:14.020" end="00:33:19.620">for that alice and planning to use a?</p>
+      <p begin="00:33:19.620" end="00:33:24.300">Consul...</p>
+      <p begin="00:33:24.300" end="00:33:34.440">And, I will open up...consulate.</p>
+      <p begin="00:33:34.440" end="00:33:39.870">...demo consul up and we will code together.</p>
+      <p begin="00:33:39.870" end="00:33:44.740">before I do this I want to show you another way to create up and</p>
+      <p begin="00:33:44.740" end="00:33:46.550">site resource.</p>
+      <p begin="00:33:46.550" end="00:33:51.510">And, let me for that go to.</p>
+      <p begin="00:33:51.510" end="00:33:57.770">To ed experience sorry...experience.</p>
+      <p begin="00:33:57.770" end="00:34:00.600">And, I'm going to create a.</p>
+      <p begin="00:34:01.670" end="00:34:09.010">Up insight.</p>
+      <p begin="00:34:09.010" end="00:34:14.259">Sorry.</p>
+      <p begin="00:34:14.259" end="00:34:17.279">Consul up I'm creating the</p>
+      <p begin="00:34:19.399" end="00:34:24.359">I am selecting application type and this is again I want to point out</p>
+      <p begin="00:34:24.359" end="00:34:28.159">that we support multiple application we</p>
+      <p begin="00:34:28.159" end="00:34:32.769">support the server-side application...we support java</p>
+      <p begin="00:34:32.769" end="00:34:39.699">we support ios android we support it all we'll get we'll</p>
+      <p begin="00:34:39.699" end="00:34:44.609">got you covered now let me pick other because this is clearly this</p>
+      <p begin="00:34:44.609" end="00:34:56.299">consul app is not a typical application now I want to create a resource group.</p>
+      <p begin="00:34:56.299" end="00:35:02.029">So, I have lots of resource group in my a subscriptions so</p>
+      <p begin="00:35:02.029" end="00:35:11.510">...I'm going to create a new resource group.</p>
+      <p begin="00:35:11.510" end="00:35:17.340">And, I'll call it the same way the same name I'll call it the...</p>
+      <p begin="00:35:17.340" end="00:35:18.970">Which is the ultimate answer?</p>
+      <p begin="00:35:20.130" end="00:35:25.260">I will.</p>
+      <p begin="00:35:25.260" end="00:35:30.290">Ok, and, in subscription prototype so what I just did</p>
+      <p begin="00:35:30.290" end="00:35:33.110">...I created up...resource.</p>
+      <p begin="00:35:33.110" end="00:35:36.510">This bucket of telemetry and it</p>
+      <p begin="00:35:36.510" end="00:35:43.010">will be creating and pretty soon I will get</p>
+      <p begin="00:35:43.010" end="00:35:47.600">one thing that I need from that resource at this point I need and ip instrumentation</p>
+      <p begin="00:35:47.600" end="00:35:52.020">key because any piece...telemetry that I'm sending should be identified by</p>
+      <p begin="00:35:52.020" end="00:36:03.210">...while it's creating let me right some actually cut-and-paste some code.</p>
+      <p begin="00:36:03.210" end="00:36:08.630">We'll talk about the code.</p>
+      <p begin="00:36:08.630" end="00:36:16.460">So, let me add...get.</p>
+      <p begin="00:36:16.460" end="00:36:22.720">Remember all of our no, gets ...all of our is decays</p>
+      <p begin="00:36:22.720" end="00:36:26.590">a dot net is decays are...get so you can search.</p>
+      <p begin="00:36:31.270" end="00:36:32.070">And, sites.</p>
+      <p begin="00:36:33.400" end="00:36:39.030">And, you would need to get this core api remember this core api</p>
+      <p begin="00:36:39.030" end="00:36:43.510">provides the core set of.</p>
+      <p begin="00:36:43.510" end="00:36:50.050">...track request track exceptions track metric so forth.</p>
+      <p begin="00:36:50.050" end="00:36:57.210">So, I'm going to install it.</p>
+      <p begin="00:36:57.210" end="00:36:59.820">...install it and now I can again,</p>
+      <p begin="00:36:59.820" end="00:37:04.770">I can fix my usage.</p>
+      <p begin="00:37:04.770" end="00:37:10.790">I need to supporters.</p>
+      <p begin="00:37:10.790" end="00:37:21.360">I believe that I am up's thread is not.</p>
+      <p begin="00:37:21.360" end="00:37:22.970">...now as you see that</p>
+      <p begin="00:37:22.970" end="00:37:34.670">...were still missing this I keep let me get the...let me get the ip.</p>
+      <p begin="00:37:34.670" end="00:37:38.640">But, you know, what it does not matter remember we were talking about</p>
+      <p begin="00:37:40.160" end="00:37:44.710">we're talking about that I key is very arbitrary what I'm going to</p>
+      <p begin="00:37:44.710" end="00:37:50.380">do I'm going to go to my demo that I just showed you the application</p>
+      <p begin="00:37:50.380" end="00:37:54.610">up inside demo and I will grab that ip which means that I will send</p>
+      <p begin="00:37:54.610" end="00:38:02.560">my telemetry data into that into that demo that bucket?</p>
+      <p begin="00:38:02.560" end="00:38:05.200">Actually...think.</p>
+      <p begin="00:38:05.200" end="00:38:06.860">Thing now I'm thinking there's.</p>
+      <p begin="00:38:07.870" end="00:38:12.350">There was another.</p>
+      <p begin="00:38:12.350" end="00:38:20.920">Let me see for can get this...demo...</p>
+      <p begin="00:38:20.920" end="00:38:27.450">So, let me grab this I keen.</p>
+      <p begin="00:38:27.450" end="00:38:32.430">this is a...key uniquely identify piece...telemetry in the cloud</p>
+      <p begin="00:38:32.430" end="00:38:37.830">and what I'm going to do is I'm going to put this achy here?</p>
+      <p begin="00:38:37.830" end="00:38:41.260">So, now let's talk about what do I have here I have</p>
+      <p begin="00:38:41.260" end="00:38:46.210">a consul application that's in the loop asks a ask</p>
+      <p begin="00:38:46.210" end="00:38:51.120">very existential question should they use up...yes or no.</p>
+      <p begin="00:38:51.120" end="00:38:55.810">And, unless you answer yes,</p>
+      <p begin="00:38:55.810" end="00:39:01.560">exclamation point you will not leave that loop.</p>
+      <p begin="00:39:01.560" end="00:39:06.550">And, while we do that we will do couple things first of all we will time.</p>
+      <p begin="00:39:06.550" end="00:39:11.890">How much how much time do...take you to guests that a simple?</p>
+      <p begin="00:39:11.890" end="00:39:15.940">Answer that first thing and we will treat that</p>
+      <p begin="00:39:15.940" end="00:39:20.260">...will call it.</p>
+      <p begin="00:39:21.390" end="00:39:28.670">For this and that's what I'm going to demonstrate very simple thing.</p>
+      <p begin="00:39:28.670" end="00:39:38.420">Now let's run it hopes let's run it.</p>
+      <p begin="00:39:38.420" end="00:39:44.610">First answer wiring.</p>
+      <p begin="00:39:44.610" end="00:39:53.070">Any other suggestion I'm kind of maybe.</p>
+      <p begin="00:39:53.070" end="00:39:54.290">All the time ogg.</p>
+      <p begin="00:40:00.140" end="00:40:03.560">Forty-two good so we are creative let me ...out.</p>
+      <p begin="00:40:09.520" end="00:40:13.400">So, what will happen and you've seen right while we were answering</p>
+      <p begin="00:40:13.400" end="00:40:18.360">the below you've seen all those all those requests although</p>
+      <p begin="00:40:18.360" end="00:40:22.760">...all the telemetry being pumped into the cloud</p>
+      <p begin="00:40:22.760" end="00:40:24.100">ok?</p>
+      <p begin="00:40:24.100" end="00:40:32.590">And, the api is very simple it's literally I can.</p>
+      <p begin="00:40:32.590" end="00:40:36.280">She tx dot and.</p>
+      <p begin="00:40:36.280" end="00:40:39.190">This is the api track events track exception</p>
+      <p begin="00:40:39.190" end="00:40:43.520">track metric page you track trace so forth.</p>
+      <p begin="00:40:43.520" end="00:40:46.080">Ok, super simple.</p>
+      <p begin="00:40:46.080" end="00:40:55.260">Now let's take a look at hopefully the data will show up.</p>
+      <p begin="00:40:55.260" end="00:41:09.110">And, let's take a look at what we've got?</p>
+      <p begin="00:41:09.110" end="00:41:12.930">Sorry.</p>
+      <p begin="00:41:12.930" end="00:41:16.620">What you see here is a list of urls?</p>
+      <p begin="00:41:17.890" end="00:41:21.070">As you notice the way I'm using the</p>
+      <p begin="00:41:21.070" end="00:41:24.020">track request it's essentially a hacking way.</p>
+      <p begin="00:41:25.060" end="00:41:31.080">If you look at the signature it starts with</p>
+      <p begin="00:41:31.080" end="00:41:35.340">So, clearly since we were sending not a url we're sending our answers</p>
+      <p begin="00:41:35.340" end="00:41:39.540">as a url in the grid that I just showed you don't see those euros</p>
+      <p begin="00:41:39.540" end="00:41:42.770">there okay then you see the dayton</p>
+      <p begin="00:41:42.770" end="00:41:48.040">time you see the elapsed time you see the status code incorrect answer</p>
+      <p begin="00:41:48.040" end="00:41:53.520">and boolean so now if I go here this is another pretty powerful</p>
+      <p begin="00:41:53.520" end="00:41:58.290">thing what I can do I can modify this particular you</p>
+      <p begin="00:41:58.290" end="00:42:04.070">wait you why and shows something different I can show.</p>
+      <p begin="00:42:04.070" end="00:42:06.640">Requesting.</p>
+      <p begin="00:42:06.640" end="00:42:14.630">And, look, what will happen?</p>
+      <p begin="00:42:14.630" end="00:42:15.740">This is our</p>
+      <p begin="00:42:15.740" end="00:42:20.600">guys this is our data that we just sent all the cs exclamation point</p>
+      <p begin="00:42:20.600" end="00:42:23.240">...so the point I'm making here</p>
+      <p begin="00:42:23.240" end="00:42:28.060">is that api super extensible as long as you...using</p>
+      <p begin="00:42:28.060" end="00:42:33.400">our domain kind ofmodel where application accepts request</p>
+      <p begin="00:42:33.400" end="00:42:39.470">spits out exceptions and logs emit usage trace information usage</p>
+      <p begin="00:42:39.470" end="00:42:44.470">...control flow information emits metrics and rely on dependencies</p>
+      <p begin="00:42:44.470" end="00:42:48.490">you...pretty much take any applications and</p>
+      <p begin="00:42:49.590" end="00:42:53.840">use up insight to support it okay.</p>
+      <p begin="00:42:53.840" end="00:42:58.020">With no problem.</p>
+      <p begin="00:42:58.020" end="00:43:05.130">Now let me switch to the powerpoint we have fifteen minutes left.</p>
+      <p begin="00:43:05.130" end="00:43:10.090">So, just to summarize key capabilities what you've</p>
+      <p begin="00:43:10.090" end="00:43:15.180">seen we provideessentially three sixty wvu on your</p>
+      <p begin="00:43:15.180" end="00:43:20.010">applications we support multiple platforms we support devices</p>
+      <p begin="00:43:20.010" end="00:43:24.630">browsers with support servers and we put all that telemetry into</p>
+      <p begin="00:43:24.630" end="00:43:30.830">a single place so you can correlate your performance will usage data so forth.</p>
+      <p begin="00:43:30.830" end="00:43:36.700">Second since we provide a...of out-of-the-box</p>
+      <p begin="00:43:36.700" end="00:43:42.380">...collection we will correlate your logs with our...telemetry let's say</p>
+      <p begin="00:43:42.380" end="00:43:47.280">request it will help you identify and slice and dice your logs more meaningfully</p>
+      <p begin="00:43:47.280" end="00:43:52.250">in much faster we automatically collect exceptions we automatically collect the performance</p>
+      <p begin="00:43:52.250" end="00:43:56.950">...related to dependencies that significantly improve and</p>
+      <p begin="00:43:56.950" end="00:44:03.310">speedup diagnostics and user usage analysis and the last</p>
+      <p begin="00:44:03.310" end="00:44:07.710">...is you've seen how easy it was to integrate</p>
+      <p begin="00:44:07.710" end="00:44:12.540">up insight into your dot net application essentially you didn't have</p>
+      <p begin="00:44:12.540" end="00:44:15.860">to do anything to kind of fall...and</p>
+      <p begin="00:44:15.860" end="00:44:21.260">...was a check box and we've done all the our wiring</p>
+      <p begin="00:44:21.260" end="00:44:27.210">for you were doing the same thing for other platforms we have java</p>
+      <p begin="00:44:27.210" end="00:44:32.770">eclipse plug-in that allow you to do pretty much the same thing for your java</p>
+      <p begin="00:44:32.770" end="00:44:39.040">applications we have companion application for x code for android</p>
+      <p begin="00:44:39.040" end="00:44:44.070">studio so forth so you'd be able to essentially fall...and site from</p>
+      <p begin="00:44:44.070" end="00:44:52.060">...id any platform ...that you have?</p>
+      <p begin="00:44:52.060" end="00:44:56.140">We publish...as decays open-source so you guys</p>
+      <p begin="00:44:56.140" end="00:45:00.180">can see how we build those is the case.</p>
+      <p begin="00:45:00.180" end="00:45:05.430">Their on get hub you can search for application sites home and</p>
+      <p begin="00:45:05.430" end="00:45:07.780">you find are as decays</p>
+      <p begin="00:45:07.780" end="00:45:13.070">there as I mentioned we do support logging frameworks and this is the</p>
+      <p begin="00:45:13.070" end="00:45:17.840">list that we support however there are community contributions so</p>
+      <p begin="00:45:17.840" end="00:45:24.440">we have framework called sari log I didn't even know that such thing...somebody</p>
+      <p begin="00:45:24.440" end="00:45:31.760">wrote integration with sari log we have folks that wrote the integration with</p>
+      <p begin="00:45:31.760" end="00:45:36.670">end lead with slab so forth so, I would highly recommend you</p>
+      <p begin="00:45:36.670" end="00:45:46.990">to join us and together we can definitely make it better?</p>
+      <p begin="00:45:46.990" end="00:45:52.080">As I mentioned earlier we are in public preview</p>
+      <p begin="00:45:52.080" end="00:45:57.150">which means that we'll start charging you for the</p>
+      <p begin="00:45:57.150" end="00:46:00.610">for the service we support</p>
+      <p begin="00:46:00.610" end="00:46:06.600">...both free version as well as tiers of paid the version</p>
+      <p begin="00:46:06.600" end="00:46:10.560">...for the most part we believe that the free version</p>
+      <p begin="00:46:10.560" end="00:46:15.330">would cover you dev needs okay as you application mature and</p>
+      <p begin="00:46:15.330" end="00:46:19.830">grow you have a choice between basic and standard pricing</p>
+      <p begin="00:46:19.830" end="00:46:26.470">...that would allow you to essentially ...me for enough</p>
+      <p begin="00:46:26.470" end="00:46:34.930">information to cover your analytical needs okay but it's starting.</p>
+      <p begin="00:46:34.930" end="00:46:41.680">Now services in public preview we announced on wednesday.</p>
+      <p begin="00:46:41.680" end="00:46:45.960">So, you can try application...today and go to</p>
+      <p begin="00:46:47.680" end="00:46:51.710">...and sites again three things that you I want you</p>
+      <p begin="00:46:51.710" end="00:46:53.750">to remember it's a three sixty</p>
+      <p begin="00:46:53.750" end="00:46:57.610">view for your applications regardless whether you are where</p>
+      <p begin="00:46:57.610" end="00:47:01.040">...application runs...amazon google klout</p>
+      <p begin="00:47:01.040" end="00:47:05.350">...space yuan cram servers we've got you covered devices</p>
+      <p begin="00:47:05.350" end="00:47:15.330">and ios android windows phone store it's all there we provide the.</p>
+      <p begin="00:47:15.330" end="00:47:20.220">Fast and pretty powerful analytical capabilities that would</p>
+      <p begin="00:47:20.220" end="00:47:26.450">significantly simplify your troubleshooting process diagnostics</p>
+      <p begin="00:47:26.450" end="00:47:31.650">triage and detection process and.</p>
+      <p begin="00:47:31.650" end="00:47:35.110">We also provide visibility into</p>
+      <p begin="00:47:35.110" end="00:47:41.420">the usage you'd be able to see how many customers using particular particular feature of</p>
+      <p begin="00:47:41.420" end="00:47:43.430">the app we provide</p>
+      <p begin="00:47:43.430" end="00:47:49.410">pretty extensible custom the venting into api that allow you to emit</p>
+      <p begin="00:47:49.410" end="00:47:54.680">custom events and more importantly we provide metrics and those metrics are</p>
+      <p begin="00:47:54.680" end="00:48:00.230">not standard let's say pef counters that you would do that you would use or let's say</p>
+      <p begin="00:48:00.230" end="00:48:04.530">...a stats d metric that you could have used our metric</p>
+      <p begin="00:48:04.530" end="00:48:10.050">are multi-dimensional which means that you can...metric withx number of parameters</p>
+      <p begin="00:48:10.050" end="00:48:15.720">let's say five parameters and then you can slice and dice that particular metric the way you want it,</p>
+      <p begin="00:48:15.720" end="00:48:18.840">for example, you mayas one of the parameter put</p>
+      <p begin="00:48:18.840" end="00:48:23.680">...geo and this case you can slices sense standard metric</p>
+      <p begin="00:48:23.680" end="00:48:27.670">based on your geo distribution or like somebody in</p>
+      <p begin="00:48:27.670" end="00:48:33.210">the previous talk ask a question if I'm running cluster a versus cluster</p>
+      <p begin="00:48:33.210" end="00:48:38.930">...I want to see my all up performance but also I like to understand</p>
+      <p begin="00:48:38.930" end="00:48:41.310">...going on this cluster versus</p>
+      <p begin="00:48:41.310" end="00:48:46.160">glasses that cluster again you would be able to a annotate</p>
+      <p begin="00:48:46.160" end="00:48:51.700">our telemetry all telemetry that's coming from cluster a with the tag</p>
+      <p begin="00:48:51.700" end="00:48:56.920">a cluster eight and telemetry coming from cluster b with tag...</p>
+      <p begin="00:48:56.920" end="00:49:02.340">until cluster be and that you'd be able to later on not only see the</p>
+      <p begin="00:49:02.340" end="00:49:07.230">overall performance of the application across multiple plaster but also would be able to slice and</p>
+      <p begin="00:49:07.230" end="00:49:14.410">dice that performance any telemetry as a matter-of-fact by a particular stamp?</p>
+      <p begin="00:49:14.410" end="00:49:17.730">So, do you have any questions...</p>
+      <p begin="00:49:17.730" end="00:49:32.560">Sometime okay go ahead.</p>
+      <p begin="00:49:32.560" end="00:49:36.630">Yeah, so, the question is if it's.</p>
+      <p begin="00:49:36.630" end="00:49:37.580">Simple site.</p>
+      <p begin="00:49:38.610" end="00:49:40.170">Deployed in asher</p>
+      <p begin="00:49:40.170" end="00:49:48.530">let me go to simple sites deployed in measure and.</p>
+      <p begin="00:49:48.530" end="00:49:50.900">Let's say a...web apps.</p>
+      <p begin="00:49:51.920" end="00:49:54.330">And, I can see.</p>
+      <p begin="00:49:54.330" end="00:50:04.610">All my web apps.</p>
+      <p begin="00:50:04.610" end="00:50:08.970">Okay, and, I pick hopefully like this website.</p>
+      <p begin="00:50:08.970" end="00:50:10.940">What you'll see here?</p>
+      <p begin="00:50:10.940" end="00:50:17.620">Is the?</p>
+      <p begin="00:50:17.620" end="00:50:23.600">...extensions...</p>
+      <p begin="00:50:23.600" end="00:50:28.270">...going to show you the this part this is basically</p>
+      <p begin="00:50:28.270" end="00:50:33.300">a application monitoring part that would allow you to enable up and</p>
+      <p begin="00:50:33.300" end="00:50:39.330">site from the asher and the way you get this part in I remember I mention that</p>
+      <p begin="00:50:39.330" end="00:50:43.950">I will talk about gallery if you customize the blade you can</p>
+      <p begin="00:50:43.950" end="00:50:48.900">...a from the gallery any parts and if you click on the monitoring you'll</p>
+      <p begin="00:50:48.900" end="00:50:55.880">see this as if you click on the monitoring you'll see this application</p>
+      <p begin="00:50:55.880" end="00:50:59.270">...application summary part and</p>
+      <p begin="00:50:59.270" end="00:51:00.650">it just a matter of drag-and-drop.</p>
+      <p begin="00:51:02.100" end="00:51:06.740">How many of you have seen this functionality?</p>
+      <p begin="00:51:06.740" end="00:51:12.110">Have you okay some this is pretty powerful functionality and recommend you to play</p>
+      <p begin="00:51:12.110" end="00:51:16.110">with the gallery and, customize your blades because in this case</p>
+      <p begin="00:51:16.110" end="00:51:20.340">what you can do on the resource level you can pick and choose</p>
+      <p begin="00:51:20.340" end="00:51:24.450">...metrics you want to put under-resourced so you can see holistic view of</p>
+      <p begin="00:51:24.450" end="00:51:28.800">all different resources that you put in the resource group okay?</p>
+      <p begin="00:51:29.810" end="00:51:33.680">So, that the point is that you would be able to essentially.</p>
+      <p begin="00:51:35.470" end="00:51:43.910">Get to the application monitoring from here ok.</p>
+      <p begin="00:51:43.910" end="00:51:54.750">...this is basically enables...that's correct that's internal go ahead.</p>
+      <p begin="00:51:54.750" end="00:52:02.520">Okay, so, the question is was the performance impact this is a very.</p>
+      <p begin="00:52:02.520" end="00:52:06.270">Simple and yet tricky question so the way we measure performance</p>
+      <p begin="00:52:06.270" end="00:52:10.300">we measure performance in terms of degradation for art yeses so let's say</p>
+      <p begin="00:52:10.300" end="00:52:16.750">you can process with your fully pegged.</p>
+      <p begin="00:52:16.750" end="00:52:19.530">Site cpu bound</p>
+      <p begin="00:52:19.530" end="00:52:24.610">sitehundred requests per second with our monitoring our</p>
+      <p begin="00:52:24.610" end="00:52:29.430">goals are targets rtwo to enable you to process no less than</p>
+      <p begin="00:52:29.430" end="00:52:31.040">ninety nine.</p>
+      <p begin="00:52:31.040" end="00:52:37.150">So, we're not necessarily measuring cpu or a memory footprint however it is very</p>
+      <p begin="00:52:37.150" end="00:52:42.560">important but as a all up goal for us is to be less than one</p>
+      <p begin="00:52:42.560" end="00:52:47.400">percent on our ps as...in most cases you're not running your site</p>
+      <p begin="00:52:47.400" end="00:52:55.620">with hundred-percent cpu which means that in most cases you won't even notice it.</p>
+      <p begin="00:52:55.620" end="00:52:59.910">So, couple questions you showed the sequel stuff monitoring stuff.</p>
+      <p begin="00:52:59.910" end="00:53:04.980">Which...desktop output what kind of information you catch like we have problems deadlocks occasion</p>
+      <p begin="00:53:04.980" end="00:53:09.870">you get more information than just the deadlock is what's copy on that level and then</p>
+      <p begin="00:53:09.870" end="00:53:15.190">...a tech team how you limit like our tech team be able see this thank you present that session</p>
+      <p begin="00:53:15.190" end="00:53:19.900">id...the client so that when they work would call back in you could link back call to this</p>
+      <p begin="00:53:19.900" end="00:53:24.260">insight information so they could use it okay...two</p>
+      <p begin="00:53:24.260" end="00:53:28.050">...first of all when you said that there is a...</p>
+      <p begin="00:53:29.100" end="00:53:33.820">Typically deadlock happens on the deadlock on</p>
+      <p begin="00:53:33.820" end="00:53:36.110">...sql...okay deadlock on</p>
+      <p begin="00:53:36.110" end="00:53:40.430">...sql we ourselves we would not detect because we look at the</p>
+      <p begin="00:53:40.430" end="00:53:44.910">sequel as observed here so typically what happens during the</p>
+      <p begin="00:53:44.910" end="00:53:47.960">...your thread...your particular execution became a victim of a</p>
+      <p begin="00:53:47.960" end="00:53:52.480">...you've been killed on from our standpoint we would just get the exception</p>
+      <p begin="00:53:52.480" end="00:53:56.180">...we would not necessarily know what was what was going on if somebody</p>
+      <p begin="00:53:56.180" end="00:53:59.730">...match and you escalated a table...and that's why you got</p>
+      <p begin="00:53:59.730" end="00:54:04.930">curate so we won't detect we won't help you essentially</p>
+      <p begin="00:54:04.930" end="00:54:10.550">troublesome that particular thing will help you detective the same as a standard world that day there was</p>
+      <p begin="00:54:10.550" end="00:54:14.320">...problem there was an exception that will...today.</p>
+      <p begin="00:54:14.320" end="00:54:17.020">And, the other one is how to limit</p>
+      <p begin="00:54:17.020" end="00:54:25.090">emissions I would recommend limiting limit permissions using built-in feature.</p>
+      <p begin="00:54:25.090" end="00:54:30.740">...done so any blade including my let's</p>
+      <p begin="00:54:30.740" end="00:54:35.670">say my resource du-rable that's what I would that's where I would recommend this is</p>
+      <p begin="00:54:35.670" end="00:54:38.770">...resource group where I have my website and</p>
+      <p begin="00:54:38.770" end="00:54:42.540">...either website and up...component I would recommend you to use</p>
+      <p begin="00:54:42.540" end="00:54:48.500">the feature where I can essentiallyput a</p>
+      <p begin="00:54:49.560" end="00:54:53.990">...the admin rights to the resource in this case you would be able</p>
+      <p begin="00:54:53.990" end="00:54:57.690">to control who can see to...</p>
+      <p begin="00:54:57.690" end="00:55:04.180">For which app which research group so can-you display that?</p>
+      <p begin="00:55:04.180" end="00:55:06.740">That session id to the customers they...like when they</p>
+      <p begin="00:55:06.740" end="00:55:11.010">...for tech support called say I'm having problems here's my thing.</p>
+      <p begin="00:55:11.010" end="00:55:15.610">I outside this is interesting you can it would be your code because this is</p>
+      <p begin="00:55:15.610" end="00:55:20.110">our brand session id if you display that's an interesting</p>
+      <p begin="00:55:20.110" end="00:55:27.240">scenario basically display that session id somewhere in your site...when customer</p>
+      <p begin="00:55:27.240" end="00:55:31.390">...help-desk they'd be able to refer to that session id this is a pretty</p>
+      <p begin="00:55:31.390" end="00:55:35.440">cool scenario if you want...yourself you</p>
+      <p begin="00:55:35.440" end="00:55:40.560">...because now I have the reproduction that...development side close the loop and solve the</p>
+      <p begin="00:55:40.560" end="00:55:45.430">problem, yeah, but, you could display that you can access that to clients I we just have to write the...yeah,</p>
+      <p begin="00:55:45.430" end="00:55:50.290">okay, cool.</p>
+      <p begin="00:55:50.290" end="00:55:52.710">Here in the client-side.</p>
+      <p begin="00:55:53.720" end="00:55:58.090">Type of implementation like your consulate or like</p>
+      <p begin="00:55:58.090" end="00:56:02.440">...rpf app what happens in that scenario for like us</p>
+      <p begin="00:56:02.440" end="00:56:07.380">sometimes connected state like you're not always connected to add your</p>
+      <p begin="00:56:07.380" end="00:56:10.430">...so the question is essentially</p>
+      <p begin="00:56:10.430" end="00:56:16.360">disconnected scenario this is a very typical, for example, for phone could be</p>
+      <p begin="00:56:16.360" end="00:56:21.130">a and for desktop apps currently we support number of what we call channel for that</p>
+      <p begin="00:56:21.130" end="00:56:26.620">...decayed because the core the hides the complexity of follower?</p>
+      <p begin="00:56:26.620" end="00:56:31.400">...interaction with the service and one of the channel that we support is</p>
+      <p begin="00:56:31.400" end="00:56:37.070">for system channel where we willstore data locally and then we</p>
+      <p begin="00:56:37.070" end="00:56:43.250">pump it out so we do support that scenario so windows that pump out</p>
+      <p begin="00:56:43.250" end="00:56:48.160">...just visit check for...only next time ...application</p>
+      <p begin="00:56:48.160" end="00:56:53.730">...it will be first-time currently next are...of...check a...there</p>
+      <p begin="00:56:53.730" end="00:56:58.050">and...it's there it will start pumping it is there</p>
+      <p begin="00:56:58.050" end="00:57:02.640">a means to collect that data and take it like off the client in</p>
+      <p begin="00:57:02.640" end="00:57:04.190">...potentially on</p>
+      <p begin="00:57:04.190" end="00:57:09.790">...to direct where that local storage goes rather than sitting on the client</p>
+      <p begin="00:57:09.790" end="00:57:14.030">sell like to holding network share something like that we can in</p>
+      <p begin="00:57:14.030" end="00:57:18.270">...up at a different time from somewhere other than the client out-of-the-box we don't support</p>
+      <p begin="00:57:18.270" end="00:57:23.220">that functionality however in this case we can take it offline in this</p>
+      <p begin="00:57:23.220" end="00:57:28.460">case what I would do is I would just put your instrumentation somewhere like right now</p>
+      <p begin="00:57:28.460" end="00:57:32.570">you can put it locally and then offline have a little</p>
+      <p begin="00:57:32.570" end="00:57:37.470">app that read that instrumentation and basically pull are track trace...</p>
+      <p begin="00:57:37.470" end="00:57:44.730">whatever a method to pom that out but out-of-the-box we don't support the support</p>
+      <p begin="00:57:44.730" end="00:57:50.200">kind of functionality it's all we do it for ourselves but it's right now not</p>
+      <p begin="00:57:50.200" end="00:57:55.030">...okay thank you...I think typical scenario where</p>
+      <p begin="00:57:55.030" end="00:58:00.290">we put data ...in the web api to the q and then the reasons worker</p>
+      <p begin="00:58:00.290" end="00:58:04.320">role that gets from the...how would we measure and when you</p>
+      <p begin="00:58:04.320" end="00:58:09.270">tour of these and,...and processing, yeah,</p>
+      <p begin="00:58:09.270" end="00:58:16.560">this is a very...because...a scenario is if I have front-end placing some...say</p>
+      <p begin="00:58:16.560" end="00:58:21.260">...through a q and then I have a worker that we that you exacting?</p>
+      <p begin="00:58:21.260" end="00:58:26.060">...apple insight we have three different methods to measure that</p>
+      <p begin="00:58:27.190" end="00:58:32.530">Yet result basically what we're doing it it's pretty complicated and you</p>
+      <p begin="00:58:32.530" end="00:58:37.480">...to thing because in simple scenario when you actually it when it's a one-to-one when</p>
+      <p begin="00:58:37.480" end="00:58:42.510">you put one and you retrieve one but once you have more complicates</p>
+      <p begin="00:58:42.510" end="00:58:46.430">...batch it you put it then you shredded and then put in another</p>
+      <p begin="00:58:46.430" end="00:58:52.760">q it's more complicated and the way we've done it we've done it through</p>
+      <p begin="00:58:52.760" end="00:58:58.240">use of custom custer metrics where we are which you may basic</p>
+      <p begin="00:58:58.240" end="00:59:00.890">...which checking how many</p>
+      <p begin="00:59:00.890" end="00:59:05.560">...put in the q and then how many request we retrieved from the q and...and then</p>
+      <p begin="00:59:05.560" end="00:59:10.520">...graphics and if there's any difference like you eyeball it or you...</p>
+      <p begin="00:59:10.520" end="00:59:18.660">alert if there's any difference there's a problem so that's one we also</p>
+      <p begin="00:59:18.660" end="00:59:23.450">time...at least for our own implementations we time...html tree and the</p>
+      <p begin="00:59:23.450" end="00:59:27.760">at the end what we do we basically since we time step we</p>
+      <p begin="00:59:27.760" end="00:59:33.440">know start time we again emits emit custom metric that</p>
+      <p begin="00:59:33.440" end="00:59:38.270">lead drive all of our latency monitoring I suited so...heavily ourselves</p>
+      <p begin="00:59:38.270" end="00:59:43.060">we line-up inside actually monitor we heavily rely on custom instrumentation</p>
+      <p begin="00:59:43.060" end="00:59:48.000">...no like magic...so you measure it yourself and then</p>
+      <p begin="00:59:48.000" end="00:59:51.560">...of...on output site print, yeah,</p>
+      <p begin="00:59:51.560" end="00:59:54.610">we emitted as a custom metric and,</p>
+      <p begin="00:59:54.610" end="00:59:58.140">then we basically blue-like but one of</p>
+      <p begin="00:59:58.140" end="01:00:04.030">...problems we want to when you...it's completely broken it's for example,</p>
+      <p begin="01:00:04.030" end="01:00:07.270">that works but what if data...in?</p>
+      <p begin="01:00:08.660" end="01:00:11.360">...and...the problem can be they don't come</p>
+      <p begin="01:00:11.360" end="01:00:15.950">...that's why there is not...on the outside's what</p>
+      <p begin="01:00:15.950" end="01:00:21.890">...is...it ...believe me we live through this because we have</p>
+      <p begin="01:00:21.890" end="01:00:27.210">multiple regional centers then that channel data</p>
+      <p begin="01:00:27.210" end="01:00:31.830">to central location so we've lived through that I don't think that there is in reality I don't</p>
+      <p begin="01:00:31.830" end="01:00:37.090">think there's a kind of...we've got we've sold it for ourselves</p>
+      <p begin="01:00:37.090" end="01:00:42.180">through instrumentation and what we give you...give you all the means to solve</p>
+      <p begin="01:00:42.180" end="01:00:45.400">...because at the end of the day we are very</p>
+      <p begin="01:00:45.400" end="01:00:49.190">dependent on latency because an as I mentioned before performance there are</p>
+      <p begin="01:00:49.190" end="01:00:53.800">two things responsiveness for if you look at scribe type of operation...your search and</p>
+      <p begin="01:00:53.800" end="01:00:58.690">read typically...responsiveness of all the create update delete that's</p>
+      <p begin="01:00:58.690" end="01:01:04.700">your eventual consistency that's your latency measures and we are measuring</p>
+      <p begin="01:01:04.700" end="01:01:13.510">it and we've done it through through instrumentation again later talk about...visit thing it can?</p>
+      <p begin="01:01:13.510" end="01:01:18.290">So, after question the first one it's so, we have the typical website that clips and</p>
+      <p begin="01:01:18.290" end="01:01:22.600">information with from the user these type of the data than...</p>
+      <p begin="01:01:22.600" end="01:01:27.350">request a as part of the out-of-the-box of telemetry...includes</p>
+      <p begin="01:01:27.350" end="01:01:32.600">the...data what the...of what the client sending to the server to</p>
+      <p begin="01:01:32.600" end="01:01:37.500">...we don't do it ok however,</p>
+      <p begin="01:01:37.500" end="01:01:40.970">you can you're in you can do it we have again,</p>
+      <p begin="01:01:40.970" end="01:01:45.880">we kinda going deep we have a couple things we have what we called context initialize</p>
+      <p begin="01:01:45.880" end="01:01:48.420">are that would allow you to</p>
+      <p begin="01:01:48.420" end="01:01:54.830">add static tags for each request and that's typically your configurationremember</p>
+      <p begin="01:01:54.830" end="01:02:00.240">I mentioning stamp one were systems...versus we have what's called telemetry initialize</p>
+      <p begin="01:02:00.240" end="01:02:05.560">or where every time...process telemetry if you want to add some payload</p>
+      <p begin="01:02:05.560" end="01:02:09.720">...say it would automatically be edit so if you want?</p>
+      <p begin="01:02:09.720" end="01:02:12.900">By all means that this is a pi data...it's up to you</p>
+      <p begin="01:02:13.930" end="01:02:19.420">...our it's towe have a process...but...</p>
+      <p begin="01:02:19.420" end="01:02:23.290">...anytime...the send the data to...that every sequel server</p>
+      <p begin="01:02:23.290" end="01:02:28.270">...something and then come by with the resolve on does</p>
+      <p begin="01:02:28.270" end="01:02:30.410">...couple seconds to do that processing</p>
+      <p begin="01:02:30.410" end="01:02:34.990">...for the few times so thanks longer...to add telemetry from the</p>
+      <p begin="01:02:34.990" end="01:02:40.050">...today from sequel server database to know if...a process...seo</p>
+      <p begin="01:02:40.050" end="01:02:46.240">to half tennis taps to know the time between these steps between to database?</p>
+      <p begin="01:02:46.240" end="01:02:49.580">So, what you see is on</p>
+      <p begin="01:02:49.580" end="01:02:54.320">the client you see that it took two seconds and you'd like to understand what was going on</p>
+      <p begin="01:02:54.320" end="01:02:58.250">in the databases yes the question that's</p>
+      <p begin="01:02:58.250" end="01:03:01.530">a very good question and I would say in</p>
+      <p begin="01:03:01.530" end="01:03:09.250">the diagnostic scenario that's the next step when you trying to...diagnose the problem?</p>
+      <p begin="01:03:09.250" end="01:03:11.380">Currently we would not help you</p>
+      <p begin="01:03:11.380" end="01:03:16.850">with that however there are some ideas that potentially</p>
+      <p begin="01:03:16.850" end="01:03:23.570">query plan would help you understand the execution and if you see that's a bio-tech table</p>
+      <p begin="01:03:23.570" end="01:03:28.900">scan or you don't use indexes the that would, yeah,</p>
+      <p begin="01:03:28.900" end="01:03:33.590">but, it's basically taking the same information...right now from application</p>
+      <p begin="01:03:33.590" end="01:03:38.690">with applications running and then trying to start the same information of what's happening on the database</p>
+      <p begin="01:03:38.690" end="01:03:44.230">...time...and knowing what's was the work...debbie's...section of</p>
+      <p begin="01:03:44.230" end="01:03:48.830">them oman occurring users and everything so basically put it all that together,</p>
+      <p begin="01:03:48.830" end="01:03:53.730">together, yeah, because both if you running measure that's the beauty</p>
+      <p begin="01:03:53.730" end="01:03:59.760">ofessentially running measure and having a single portal what we will</p>
+      <p begin="01:03:59.760" end="01:04:07.130">do eventually is we would correlate this call?</p>
+      <p begin="01:04:07.130" end="01:04:11.180">With the...database so you'd be able to</p>
+      <p begin="01:04:11.180" end="01:04:19.060">...go back in time and while you see this particular call.</p>
+      <p begin="01:04:19.060" end="01:04:21.220">Let's say my about.</p>
+      <p begin="01:04:23.180" end="01:04:27.640">When you look at this particular call-you would be able to essentially go further and</p>
+      <p begin="01:04:27.640" end="01:04:37.490">see what was going on a sql box let's say this is my request?</p>
+      <p begin="01:04:37.490" end="01:04:41.700">A at least that's how...isthis was not</p>
+      <p begin="01:04:41.700" end="01:04:46.340">...but anyway the idea is the same basically...you can</p>
+      <p begin="01:04:46.340" end="01:04:51.590">goal further and you would seewhat was going on with the sequel if you</p>
+      <p begin="01:04:51.590" end="01:04:56.230">running everything and...that resource would be and asher and you'd be able to see currently that's</p>
+      <p begin="01:04:56.230" end="01:05:01.930">not there but this is something these are the...that we keep hearing and at some point</p>
+      <p begin="01:05:01.930" end="01:05:07.430">we'll definitely implemented and that's the value of having all your resources</p>
+      <p begin="01:05:07.430" end="01:05:14.050">kinda in address book but if they're not...it also like?</p>
+      <p begin="01:05:14.050" end="01:05:17.470">Do you...more information on pricing and in the</p>
+      <p begin="01:05:17.470" end="01:05:22.650">...yes actually it's a public on the web if</p>
+      <p begin="01:05:22.650" end="01:05:27.610">I remember correctly we have five million data points remember</p>
+      <p begin="01:05:27.610" end="01:05:32.180">that big json that you've seen is free</p>
+      <p begin="01:05:32.180" end="01:05:37.620">then we have another I think the last one is fifty million for</p>
+      <p begin="01:05:37.620" end="01:05:40.020">ninety nine dollars with some averages</p>
+      <p begin="01:05:41.240" end="01:05:46.430">and the basic I'm not sure it's like fifteen million data points</p>
+      <p begin="01:05:46.430" end="01:05:53.170">something don't hold me but it's all for twenty five twenty four dollars...but,</p>
+      <p begin="01:05:53.170" end="01:05:56.350">it's all on the web so you could you...see...you can always</p>
+      <p begin="01:05:56.350" end="01:06:02.810">...multiple of these...top which are...application noisy?</p>
+      <p begin="01:06:02.810" end="01:06:07.810">instead I would recommend each developer...and overlap...with</p>
+      <p begin="01:06:07.810" end="01:06:16.470">dual...production would have to consolidated you also have to make my.</p>
+      <p begin="01:06:16.470" end="01:06:17.620">Okay,</p>
+      <p begin="01:06:17.620" end="01:06:23.410">so, we were me this...very cool we've already made</p>
+      <p begin="01:06:23.410" end="01:06:28.470">some investments in another product that looks very similar which is new relic I don't know if</p>
+      <p begin="01:06:28.470" end="01:06:32.220">...product so if.</p>
+      <p begin="01:06:32.220" end="01:06:34.240">If you if you could compare, you know,</p>
+      <p begin="01:06:34.240" end="01:06:39.430">this to that easy equal is more powerful in some science because it's</p>
+      <p begin="01:06:39.430" end="01:06:42.290">...you're going to be correlated with the other things that are happening in</p>
+      <p begin="01:06:42.290" end="01:06:47.680">as you're like if I were to make the decision, you know,...want to switch to application</p>
+      <p begin="01:06:47.680" end="01:06:51.410">insights what would be the wvu reason for that.</p>
+      <p begin="01:06:51.410" end="01:06:56.550">Very good question so, the question was how it compares to...relic and</p>
+      <p begin="01:06:56.550" end="01:07:01.390">let me generalize it how it compares to every other atm</p>
+      <p begin="01:07:01.390" end="01:07:05.550">...out there that...a relic of dynamics dina...name</p>
+      <p begin="01:07:05.550" end="01:07:11.400">...and this is a philosophical and because in reality we all</p>
+      <p begin="01:07:11.400" end="01:07:18.750">play in the seeing in the same space however I would say that.</p>
+      <p begin="01:07:18.750" end="01:07:19.890">There is a</p>
+      <p begin="01:07:19.890" end="01:07:25.300">fundamental difference and way back when I had a company that was acquired by microsoft called</p>
+      <p begin="01:07:25.300" end="01:07:29.330">...we're doing pretty much the same thing by code instrumentation were</p>
+      <p begin="01:07:29.330" end="01:07:35.830">shelling miracles you just drop are agent and suddenly you see magic all</p>
+      <p begin="01:07:35.830" end="01:07:38.710">the years running with big enterprises I</p>
+      <p begin="01:07:38.710" end="01:07:43.270">...that it's great at a certain maturity of the project but,</p>
+      <p begin="01:07:43.270" end="01:07:48.480">as you go further this agentdoesn't give you much so what we</p>
+      <p begin="01:07:48.480" end="01:07:53.310">do we fundamentally we say that hey this is the key and it's an idea if we</p>
+      <p begin="01:07:53.310" end="01:07:57.210">can do automatic will do it so we're doing out a magic through basically</p>
+      <p begin="01:07:58.580" end="01:08:02.270">...middleware like for dot net html module</p>
+      <p begin="01:08:02.270" end="01:08:07.040">for the java that's filter for python ws gi for ruby</p>
+      <p begin="01:08:07.040" end="01:08:13.000">that's rate iraq so that's what we do but then what we're trying to do</p>
+      <p begin="01:08:13.000" end="01:08:17.800">we're trying to invest into a platform to make it easy we</p>
+      <p begin="01:08:17.800" end="01:08:24.370">trying to democratize atm so platform would emit useful</p>
+      <p begin="01:08:24.370" end="01:08:29.230">telemetry so you don't have to deploy an agent because agent means that you when you</p>
+      <p begin="01:08:29.230" end="01:08:34.160">deploy application you need to ask you ops to deploy the agent and then...that agent</p>
+      <p begin="01:08:34.160" end="01:08:38.530">attach that agent to your process right so we're trying to say</p>
+      <p begin="01:08:38.530" end="01:08:42.310">...save you from that's...now if you look at the maturity of your</p>
+      <p begin="01:08:42.310" end="01:08:46.140">application when you start you have an architect and debbie...you have to</p>
+      <p begin="01:08:46.140" end="01:08:51.550">...in the garage they have build...system they have source control defect</p>
+      <p begin="01:08:51.550" end="01:08:56.430">tracking type system and then they have their own instrumentation because that's what they do to</p>
+      <p begin="01:08:56.430" end="01:08:58.600">for day-to-day debugging once they go in</p>
+      <p begin="01:08:58.600" end="01:09:02.720">prods that's where sweet spot for tools current tools like you relic</p>
+      <p begin="01:09:02.720" end="01:09:05.560">...dynamics so forth because they want</p>
+      <p begin="01:09:05.560" end="01:09:09.730">...analytics they want to know what's going on what a customers actually came and click</p>
+      <p begin="01:09:09.730" end="01:09:14.020">the button the simplest and cheapest way to do that is to</p>
+      <p begin="01:09:14.020" end="01:09:19.700">blob java google extracts or put the ...agent but then</p>
+      <p begin="01:09:19.700" end="01:09:24.690">project mature and then suddenly you care about things called desolate,</p>
+      <p begin="01:09:24.690" end="01:09:30.190">desolate believe me I've seen all flavors and permutation what...actually</p>
+      <p begin="01:09:30.190" end="01:09:35.890">means what customer the final actually means and</p>
+      <p begin="01:09:35.890" end="01:09:41.160">...you find yourself that you writing a lot more code to</p>
+      <p begin="01:09:41.160" end="01:09:45.160">alteration allies your infrastructure and</p>
+      <p begin="01:09:45.160" end="01:09:52.310">the initial kind of return that-you got from the agent</p>
+      <p begin="01:09:52.310" end="01:09:57.170">based technology quickly diminish by the amount of custom code that you need to</p>
+      <p begin="01:09:57.170" end="01:10:01.970">...for your custom tape for your customer availability...so,</p>
+      <p begin="01:10:01.970" end="01:10:07.680">forth so I believe that this time we're trying to do something different</p>
+      <p begin="01:10:07.680" end="01:10:10.500">we trying to tell developer story</p>
+      <p begin="01:10:10.500" end="01:10:15.900">where developers are in control and I think you can use our is the key while new relic is</p>
+      <p begin="01:10:15.900" end="01:10:21.570">monitoring your site so basically by embedding our as</p>
+      <p begin="01:10:21.570" end="01:10:25.990">...key into the code and lend that code travel with the if</p>
+      <p begin="01:10:25.990" end="01:10:32.800">you will agents inside we decoupling essentially the this</p>
+      <p begin="01:10:32.800" end="01:10:39.420">step from installing the agent and we decoupling this</p>
+      <p begin="01:10:39.420" end="01:10:44.610">...from developer because you're in control ok so</p>
+      <p begin="01:10:44.610" end="01:10:50.430">that's the idea so our emphasis is on developer we do automatic as well we</p>
+      <p begin="01:10:50.430" end="01:10:55.220">have the agent also that you can go to web apiif you're familiar with like</p>
+      <p begin="01:10:55.220" end="01:10:58.480">...and download what's called status monitor and I would recommend</p>
+      <p begin="01:10:58.480" end="01:11:02.980">...download that status monitor but long-term we're trying to make sure</p>
+      <p begin="01:11:02.980" end="01:11:08.490">that the platform is in meeting a...telemetry, for example,</p>
+      <p begin="01:11:08.490" end="01:11:11.440">in the next version of...dot net all the telemetry all</p>
+      <p begin="01:11:11.440" end="01:11:16.670">the magic that I was showing right now with dependencies will be emitted by system dot</p>
+      <p begin="01:11:16.670" end="01:11:20.830">net system...data it's going to be democratize anybody can read that</p>
+      <p begin="01:11:20.830" end="01:11:23.820">it's going to be exposed as a events source?</p>
+      <p begin="01:11:23.820" end="01:11:30.110">So, that's the idea thanks very long-winded.</p>
+      <p begin="01:11:30.110" end="01:11:35.020">Height understood...session id concept you can search for all messages</p>
+      <p begin="01:11:35.020" end="01:11:39.830">within the seeing request now if we go back to that scenario where an</p>
+      <p begin="01:11:39.830" end="01:11:43.360">orders submitted and goes into a q and the network role picks it up</p>
+      <p begin="01:11:43.360" end="01:11:47.230">...do you provide any help and tracing</p>
+      <p begin="01:11:47.230" end="01:11:52.420">the messages related to that order across processes and machines would be</p>
+      <p begin="01:11:52.420" end="01:11:52.920">nicer.</p>
+      <p begin="01:11:55.610" end="01:12:00.150">As I mentioned this is something that we are looking because and,</p>
+      <p begin="01:12:00.150" end="01:12:02.380">there is there.</p>
+      <p begin="01:12:03.460" end="01:12:10.100">There's a lot of thoughts going on as we speak and, we'll see.</p>
+      <p begin="01:12:10.100" end="01:12:10.380">Okay,</p>
+      <p begin="01:12:10.380" end="01:12:15.190">so, I have to do that myself right now right now yes you have to do-it-yourself</p>
+      <p begin="01:12:15.190" end="01:12:19.120">thank you...</p>
+      <p begin="01:12:19.120" end="01:12:24.030">So, we have very lean team so on the questions I have is...around alerts</p>
+      <p begin="01:12:24.030" end="01:12:30.520">...my email alerts and what have you know, what can we do the trigger those for example,</p>
+      <p begin="01:12:30.520" end="01:12:35.100">things are up and down another thing is basically...monitoring like thresholds</p>
+      <p begin="01:12:35.100" end="01:12:40.960">...whether they build-up and napping emptied things like that just to kind of signal</p>
+      <p begin="01:12:40.960" end="01:12:45.100">wants to tell us something...wrong to some look into?</p>
+      <p begin="01:12:45.100" end="01:12:53.050">So, what you see is basically the alert the ability to add the</p>
+      <p begin="01:12:53.050" end="01:12:58.970">alert and, now you have?</p>
+      <p begin="01:12:58.970" end="01:13:04.630">Okay, you have lots of lots of metrics so.</p>
+      <p begin="01:13:04.630" end="01:13:20.570">you basically will be covered with respect to url arts and.</p>
+      <p begin="01:13:20.570" end="01:13:21.070">Processor.</p>
+      <p begin="01:13:22.670" end="01:13:23.710">There is standard</p>
+      <p begin="01:13:23.710" end="01:13:30.910">set afar custom pef counters there is a standard set of you can also</p>
+      <p begin="01:13:30.910" end="01:13:36.210">image metrics and you'll be able to raise...alert on top of that that's how I would</p>
+      <p begin="01:13:36.210" end="01:13:42.190">...lies the data and if you have q length as a metric just</p>
+      <p begin="01:13:42.190" end="01:13:55.330">will be able to capture it and...alert...thank you okay.</p>
+      <p begin="01:13:55.330" end="01:14:15.500">Ok, so, let's let me do couple thanks.</p>
+      <p begin="01:14:15.500" end="01:14:20.390">...so, I would recommend to go to our documentation and</p>
+      <p begin="01:14:22.090" end="01:14:28.130">I would recommend look, at other platforms.</p>
+      <p begin="01:14:28.130" end="01:14:32.330">That would give you a list of hopefully everything, yeah, so, that would give you a</p>
+      <p begin="01:14:32.330" end="01:14:38.200">list than if you want to understand how javascript instrumented this is the</p>
+      <p begin="01:14:38.200" end="01:14:46.140">resource that you can look up so...me see if...is a javascript so?</p>
+      <p begin="01:14:46.140" end="01:14:50.670">Well, there's this is what you would do in java.</p>
+      <p begin="01:14:50.670" end="01:14:51.780">Script.</p>
+      <p begin="01:14:51.780" end="01:14:59.780">Okay.</p>
+      <p begin="01:14:59.780" end="01:15:02.760">Basically yes I would you know,</p>
+      <p begin="01:15:02.760" end="01:15:07.070">what I would even make a point that I would run google analytics and,</p>
+      <p begin="01:15:07.070" end="01:15:09.730">up...site the same time because google analytics</p>
+      <p begin="01:15:09.730" end="01:15:14.960">typically purchase stand used by marketing folks?</p>
+      <p begin="01:15:14.960" end="01:15:19.100">And, google...more marketing kind of flavor where up</p>
+      <p begin="01:15:19.100" end="01:15:24.160">insight provides similar concept of a...that you put on a page but</p>
+      <p begin="01:15:24.160" end="01:15:30.020">we're focused on mostly kind development development time ...</p>
+      <p begin="01:15:30.020" end="01:15:32.550">so, that's google.</p>
+      <p begin="01:15:32.550" end="01:15:34.910">In many cases let's say for us</p>
+      <p begin="01:15:34.910" end="01:15:42.690">when we shipping feature there's there's a certain path that we want track?</p>
+      <p begin="01:15:42.690" end="01:15:47.210">It's interesting debate whether you don't see the conversion</p>
+      <p begin="01:15:47.210" end="01:15:53.070">because this features not...useful or the...presented is not useful or</p>
+      <p begin="01:15:53.070" end="01:15:58.240">are marketing...it's useful for developers to be able to actually</p>
+      <p begin="01:15:59.440" end="01:16:04.210">...what they want to know what type of hypothesis they want to run so that's</p>
+      <p begin="01:16:04.210" end="01:16:09.140">why we would focus would let marketing folks use g and we would</p>
+      <p begin="01:16:11.060" end="01:16:17.480">...there's another similar product but we still instrument</p>
+      <p begin="01:16:17.480" end="01:16:22.190">the our stuff with up inside because we're in control and every time we ship and we ship like</p>
+      <p begin="01:16:22.190" end="01:16:28.640">a weekly and, every spent three weeks three weeks we do</p>
+      <p begin="01:16:28.640" end="01:16:34.780">our instrumentation and we don't want to touch any of the metric that the</p>
+      <p begin="01:16:34.780" end="01:16:40.660">...marketing looks?</p>
+      <p begin="01:16:40.660" end="01:16:43.890">Question can this data be consumed by system center indeed</p>
+      <p begin="01:16:43.890" end="01:16:48.190">...currently it's not with one caveat.</p>
+      <p begin="01:16:48.190" end="01:16:51.500">If you use your system center</p>
+      <p begin="01:16:51.500" end="01:16:56.800">as a monitoring in froth for your all on prime.</p>
+      <p begin="01:16:56.800" end="01:17:00.250">And, you let's say integrate system...without with remedy as</p>
+      <p begin="01:17:00.250" end="01:17:05.540">your held desks the solution what you could do you could use</p>
+      <p begin="01:17:05.540" end="01:17:10.850">asher...measure mp pool all error lurks.</p>
+      <p begin="01:17:10.850" end="01:17:15.650">because recreate measure alerts you would be able to see those</p>
+      <p begin="01:17:15.650" end="01:17:18.640">alerts...system center an subsequently in let's say</p>
+      <p begin="01:17:18.640" end="01:17:23.120">remy ok so in that respect I would say would still</p>
+      <p begin="01:17:23.120" end="01:17:28.630">owner all the enterprise can.</p>
+      <p begin="01:17:28.630" end="01:17:33.400">Alertingscenarios but we don't</p>
+      <p begin="01:17:33.400" end="01:17:38.130">have currently anything insistence that are with that said again if you</p>
+      <p begin="01:17:38.130" end="01:17:44.220">wanted you can be you can configure continuous export.</p>
+      <p begin="01:17:44.220" end="01:17:47.200">You can configure continuous export and</p>
+      <p begin="01:17:47.200" end="01:17:49.630">pomp data out.</p>
+      <p begin="01:17:49.630" end="01:17:54.200">That's what I would that's what I would do a goal in</p>
+      <p begin="01:17:54.200" end="01:17:55.790">...click continuous...</p>
+      <p begin="01:17:57.000" end="01:18:00.940">I would pick...</p>
+      <p begin="01:18:02.020" end="01:18:06.590">...export so forth so I would basically configure continuous expert in</p>
+      <p begin="01:18:06.590" end="01:18:14.630">the blob and then do the do everything...</p>
+      <p begin="01:18:14.630" end="01:18:38.030">Okay, yeah, barely can.</p>
+      <p begin="01:18:38.030" end="01:18:43.630">So, the question is whether I can differentiate set of parameters.</p>
+      <p begin="01:18:43.630" end="01:18:50.320">Yes, and, this is a little bit deeper concept we have what we call.</p>
+      <p begin="01:18:50.320" end="01:18:54.620">Context initial laser and telemetry initialize are context initialize</p>
+      <p begin="01:18:54.620" end="01:18:57.040">...the starts once</p>
+      <p begin="01:18:57.040" end="01:19:02.890">when we initialize the context and typically you at that time</p>
+      <p begin="01:19:02.890" end="01:19:08.250">read your configuration and that telemetry will be shared across the mall</p>
+      <p begin="01:19:08.250" end="01:19:13.160">regardless then you have telemetry analyzer that we call that</p>
+      <p begin="01:19:13.160" end="01:19:16.800">called back every time when you emit new telemetry</p>
+      <p begin="01:19:16.800" end="01:19:21.410">item and add that in that inside...call back you can do pretty much whatever you want</p>
+      <p begin="01:19:21.410" end="01:19:24.660">use you can even put the runtime not only can</p>
+      <p begin="01:19:24.660" end="01:19:29.300">differentiate by different types of telemetry but you also can put some runtime earlier,</p>
+      <p begin="01:19:29.300" end="01:19:34.500">for example, if you have I don't know account id for user that's how that's</p>
+      <p begin="01:19:34.500" end="01:19:40.510">where I would put it if you have a particular user name that you web pass it through your</p>
+      <p begin="01:19:40.510" end="01:19:52.960">...that's the place where I would put it because the changes with every request?</p>
+      <p begin="01:19:52.960" end="01:19:58.210">Okay, so, the...is again it's all here.</p>
+      <p begin="01:19:58.210" end="01:20:06.480">Let me go to.</p>
+      <p begin="01:20:06.480" end="01:20:08.040">The same.</p>
+      <p begin="01:20:08.040" end="01:20:10.640">The same ui.</p>
+      <p begin="01:20:10.640" end="01:20:16.130">I would be able to.</p>
+      <p begin="01:20:16.130" end="01:20:18.540">Whatever...explore...</p>
+      <p begin="01:20:20.010" end="01:20:28.290">Metric explore and if I...chart.</p>
+      <p begin="01:20:28.290" end="01:20:31.360">I can pick the metric and.</p>
+      <p begin="01:20:31.360" end="01:20:36.200">Right now.</p>
+      <p begin="01:20:36.200" end="01:20:39.320">She discussed the metric.</p>
+      <p begin="01:20:39.320" end="01:20:43.610">So, first of all I don't know if I will see anything but first of</p>
+      <p begin="01:20:43.610" end="01:20:48.470">...all your custom metrics would be there in addition to that.</p>
+      <p begin="01:20:48.470" end="01:20:51.270">...of is nothing in addition to that</p>
+      <p begin="01:20:52.440" end="01:20:55.850">...would be able to essentially slice and dice.</p>
+      <p begin="01:20:55.850" end="01:20:59.570">Here when you...grouping.</p>
+      <p begin="01:20:59.570" end="01:21:01.290">And, you would be able to see.</p>
+      <p begin="01:21:06.310" end="01:21:16.800">Yourattribute here.</p>
+      <p begin="01:21:16.800" end="01:21:20.960">That's correct as long as long as some of the schema and we we've seen it in the schema</p>
+      <p begin="01:21:20.960" end="01:21:28.980">will do it it's a no, sequel db fuel.</p>
+      <p begin="01:21:28.980" end="01:21:32.730">It is a simple question.</p>
+      <p begin="01:21:32.730" end="01:21:38.080">Very fair question we are working on it this is this was abandoned the</p>
+      <p begin="01:21:38.080" end="01:21:40.640">clear.</p>
+      <p begin="01:21:40.640" end="01:21:44.730">For us that.</p>
+      <p begin="01:21:44.730" end="01:21:46.990">We need to.</p>
+      <p begin="01:21:46.990" end="01:21:50.610">Do something like that we have native</p>
+      <p begin="01:21:50.610" end="01:21:56.440">...android we don't have natives out native natives...if you will</p>
+      <p begin="01:21:56.440" end="01:22:02.750">with that said you still can use our...but it's a agree that it's</p>
+      <p begin="01:22:02.750" end="01:22:07.590">if it's not...will work on it?</p>
+      <p begin="01:22:07.590" end="01:22:11.140">Okay, yeah.</p>
+      <p begin="01:22:13.360" end="01:22:18.210">Okay, guys thank you and I think we.</p>
+      <p begin="01:22:18.210" end="01:22:22.670">...put evaluation forms because we.</p>
+      <p begin="01:22:22.670" end="01:22:26.910">We need to know what you think okay please.</p>
+      <p begin="01:22:26.910" end="01:22:27.230">Thanks.</p>
+
+    </div>
+  </body>
+</tt>

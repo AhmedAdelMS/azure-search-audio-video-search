@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.872</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.550" end="00:00:08.710">Hi,let's start the welcome to build to those and fifteen.</p>
+      <p begin="00:00:08.710" end="00:00:15.620">...gopal...why I'm a corporate vice president of microsoft today I'm really</p>
+      <p begin="00:00:15.620" end="00:00:21.580">excited to talk to you guys abode the service fabric and its architecture for a</p>
+      <p begin="00:00:21.580" end="00:00:24.650">great part of my creative microsoft I've been working on this technology</p>
+      <p begin="00:00:26.070" end="00:00:30.350">...lead the conception incubation realization and the product position</p>
+      <p begin="00:00:30.350" end="00:00:34.590">of this technology we initially build this technology for use by or first</p>
+      <p begin="00:00:34.590" end="00:00:38.940">...services as...first by...of uses became successful be</p>
+      <p begin="00:00:38.940" end="00:00:42.980">...it's a good idea for to make it available to external</p>
+      <p begin="00:00:42.980" end="00:00:46.550">...as...and that actually brings us to this day where we...announcing</p>
+      <p begin="00:00:46.550" end="00:00:52.200">the job and availability of this technology when we actually started working on this</p>
+      <p begin="00:00:52.200" end="00:00:54.250">...that many of for first...for</p>
+      <p begin="00:00:54.250" end="00:01:00.060">reese's for repeatedly solving the same pod distributed systems problems and,</p>
+      <p begin="00:01:00.060" end="00:01:04.950">they in the process I think there was not only a bunch of needless</p>
+      <p begin="00:01:04.950" end="00:01:10.210">...was getting done but also that in the bugs are stuff that was done in</p>
+      <p begin="00:01:10.210" end="00:01:15.100">once of resource not getting leverage and of the service so we realized that we have an opportunity to</p>
+      <p begin="00:01:15.100" end="00:01:19.710">...foundation of distributed systems platform on which many of the</p>
+      <p begin="00:01:19.710" end="00:01:25.320">...services could build...that the...low-rate and build and that's all</p>
+      <p begin="00:01:26.340" end="00:01:30.090">...this technology?</p>
+      <p begin="00:01:30.090" end="00:01:33.860">This technology now I think is being made available to a</p>
+      <p begin="00:01:33.860" end="00:01:37.950">and third parties ...you know, this and stiki that is available if you go to the download</p>
+      <p begin="00:01:37.950" end="00:01:42.200">...you can actually download the sdk you can you know, create the</p>
+      <p begin="00:01:42.200" end="00:01:48.530">service fabric obligations ...scale minimized a single box</p>
+      <p begin="00:01:48.530" end="00:01:53.270">setup you can take those same applications that you actually develop on your box</p>
+      <p begin="00:01:53.270" end="00:01:59.110">and, move them to run as these in...when we actually offer this as a hosted</p>
+      <p begin="00:01:59.110" end="00:02:04.430">...offering and measure and couple of months you can also take the same obligations are</p>
+      <p begin="00:02:04.430" end="00:02:08.470">you're running a and move them on premises because we're going to ship this technology and</p>
+      <p begin="00:02:08.470" end="00:02:13.070">upcoming release of ...and sixteen so,</p>
+      <p begin="00:02:13.070" end="00:02:17.040">this is I mean this is a great moment and,</p>
+      <p begin="00:02:17.040" end="00:02:20.360">how also one of my colleagues and teammate who's actually go would,</p>
+      <p begin="00:02:20.360" end="00:02:24.050">come on,...come up and then do so presentations site</p>
+      <p begin="00:02:24.050" end="00:02:28.960">...us to do some demos us they come up and here is</p>
+      <p begin="00:02:28.960" end="00:02:30.950">the valuation slide?</p>
+      <p begin="00:02:30.950" end="00:02:36.740">What is...of my talk usually going to talk about how the application development</p>
+      <p begin="00:02:36.740" end="00:02:42.400">...the glowed...and, how...service fabric actually helps you build</p>
+      <p begin="00:02:42.400" end="00:02:45.710">...native applications based on the microsoft...architecture</p>
+      <p begin="00:02:46.840" end="00:02:51.220">...it and I'm going to talk briefly...how you can build scalable reliable and easily</p>
+      <p begin="00:02:51.220" end="00:02:56.740">manage microsoft uses using service fabric talk a little bit about you</p>
+      <p begin="00:02:56.740" end="00:02:59.770">...the system has been put together I...be kind of the</p>
+      <p begin="00:02:59.770" end="00:03:04.680">...little bit...I'll tell you...the...subsystems which are internally running within...service</p>
+      <p begin="00:03:04.680" end="00:03:08.870">...cluster and how they come together nicely to solve</p>
+      <p begin="00:03:08.870" end="00:03:11.870">...distributed systems problems so that</p>
+      <p begin="00:03:11.870" end="00:03:16.690">...can focus on the of the...logic and sort of...you know,</p>
+      <p begin="00:03:16.690" end="00:03:23.180">platform aspects and I will...summarize...the...</p>
+      <p begin="00:03:23.180" end="00:03:29.560">If not long ago ...for me it was true for many of my colleagues like, for example,</p>
+      <p begin="00:03:29.560" end="00:03:34.760">sequels or guys...I also worked...work in a your but it was</p>
+      <p begin="00:03:34.760" end="00:03:39.690">not long ago the interviewer actually happily developing a bunch of features we would</p>
+      <p begin="00:03:39.690" end="00:03:44.500">should these features every two years in a box product and then cycle used to big and what that</p>
+      <p begin="00:03:44.500" end="00:03:48.740">...with...rental...cloud because now not only are required invited school without</p>
+      <p begin="00:03:48.740" end="00:03:51.590">...developers today we are required to not only did</p>
+      <p begin="00:03:51.590" end="00:03:56.560">...features but also we have to take...off a whole bunch of stuff on that identified of this...like you have to think</p>
+      <p begin="00:03:56.560" end="00:04:01.700">...how do you billy also be useful...always the scalable from the sdp from the</p>
+      <p begin="00:04:01.700" end="00:04:06.690">get-go how do you actually solve and make sure that the...remains available</p>
+      <p begin="00:04:06.690" end="00:04:13.180">even in the presence of machine previews...for more importantly when you're patching that service?</p>
+      <p begin="00:04:13.180" end="00:04:18.100">How you actually think aboard how to build?</p>
+      <p begin="00:04:18.100" end="00:04:22.540">How do build scalable...do ...low latency</p>
+      <p begin="00:04:22.540" end="00:04:27.640">high throughput applications and all of these problem and think about data...data</p>
+      <p begin="00:04:27.640" end="00:04:33.150">...up you have to think about all these problems and, unfortunately you know,</p>
+      <p begin="00:04:33.150" end="00:04:37.630">if you start with the bid michael machines these problems of right in-your-face</p>
+      <p begin="00:04:37.630" end="00:04:41.550">so, what do not be nice for a platform to actually help you with solving</p>
+      <p begin="00:04:41.550" end="00:04:45.420">these problems so that we all can go to get back to actually developing features are</p>
+      <p begin="00:04:45.420" end="00:04:50.590">service specific logic that at a faster pace and help...the</p>
+      <p begin="00:04:50.590" end="00:04:56.820">...julia's and provide business value?</p>
+      <p begin="00:04:56.820" end="00:04:58.290">The globe.</p>
+      <p begin="00:04:58.290" end="00:05:02.570">Another thing that's actually changed for us is the flagged you know,</p>
+      <p begin="00:05:02.570" end="00:05:07.420">the architecture that via so used to in the past is not the architecture that you use for building</p>
+      <p begin="00:05:07.420" end="00:05:12.690">flowed native applications if you actually go and pecan to meet any of our workloads like</p>
+      <p begin="00:05:12.690" end="00:05:17.360">...br...bb ...on you actually see that they're not actually built in a tiered</p>
+      <p begin="00:05:17.360" end="00:05:22.450">we at all they're built...different way and the advantage of actually</p>
+      <p begin="00:05:22.450" end="00:05:26.380">building and adhered we are disadvantages you actually think...is that,</p>
+      <p begin="00:05:26.380" end="00:05:31.380">you know, you had you know, you could build all of these things...would put all of them in</p>
+      <p begin="00:05:31.380" end="00:05:36.110">...sort of machines and you actually depended on machines to provide the liability you typically random</p>
+      <p begin="00:05:36.110" end="00:05:40.750">on begun machinesyou actually could afford to take some</p>
+      <p begin="00:05:40.750" end="00:05:45.530">maintenance windows maybe order beak and where you could actually...on all the pieces of the software and</p>
+      <p begin="00:05:45.530" end="00:05:50.060">...them up and get them ready for the following monday but in the code world it's</p>
+      <p begin="00:05:50.060" end="00:05:54.370">not it's no longer that's not something that you can do because if you do that your customers will</p>
+      <p begin="00:05:54.370" end="00:05:56.090">...free from your business</p>
+      <p begin="00:05:56.090" end="00:06:00.720">are from your service so it is important for you to really think about the right-hand side of</p>
+      <p begin="00:06:00.720" end="00:06:05.880">this slide unfortunately so,...you know,</p>
+      <p begin="00:06:05.880" end="00:06:10.610">...start you build in a different way so that you can you get the benefits of that</p>
+      <p begin="00:06:10.610" end="00:06:14.410">and side by building on top of a platform and the way you actually think we're building</p>
+      <p begin="00:06:14.410" end="00:06:17.130">polled native apps in the modern base-two really</p>
+      <p begin="00:06:17.130" end="00:06:23.090">decompose the service components I into a lose me</p>
+      <p begin="00:06:23.090" end="00:06:28.160">a lou's be...in...interactive or standard protocol micro services</p>
+      <p begin="00:06:28.160" end="00:06:30.900">and again in a would it would be great if,</p>
+      <p begin="00:06:30.900" end="00:06:40.350">... the platform actually help you without and that's exactly where...fabric comes n?</p>
+      <p begin="00:06:40.350" end="00:06:45.460">So, when you areinvite this is true for us this is going to be</p>
+      <p begin="00:06:45.460" end="00:06:51.750">true for everybody who's thinking able buildinghigh skills are reese's when you're building a high</p>
+      <p begin="00:06:51.750" end="00:06:55.390">...you really need to think deeply able to scale reliability</p>
+      <p begin="00:06:55.390" end="00:07:00.520">and cost it is important that you design for scale from the get goals so you</p>
+      <p begin="00:07:00.520" end="00:07:05.270">want because the demand for your service is going to be variable...start off small and suddenly</p>
+      <p begin="00:07:05.270" end="00:07:10.120">...you know, pick up steam and then become very popular so you want to really design your</p>
+      <p begin="00:07:10.120" end="00:07:13.940">...such that you can run on a small...and to a large</p>
+      <p begin="00:07:13.940" end="00:07:17.940">...without actually you have to heavy having you go back and revisit</p>
+      <p begin="00:07:17.940" end="00:07:22.210">the architecture rebuild the service from scratch again so how do you do that I</p>
+      <p begin="00:07:22.210" end="00:07:27.080">think is something that you have to pay attention...at the beginning and not think about it as an afterthought after the</p>
+      <p begin="00:07:27.080" end="00:07:32.010">...being...deployed you also have to think aboard reliability, you know,</p>
+      <p begin="00:07:32.010" end="00:07:36.480">you really want to keep your service up and running you can't afford to have any maintenance windows</p>
+      <p begin="00:07:36.480" end="00:07:41.590">you really how to keep the service available even in the presence of failure</p>
+      <p begin="00:07:41.590" end="00:07:46.480">machine problem in the presence of machine failures but also when you're doing...patching of</p>
+      <p begin="00:07:46.480" end="00:07:50.920">the service an obvious whipping cost is very important again,</p>
+      <p begin="00:07:50.920" end="00:07:55.620">you know, as via is developers not long ago we thought ...developing code and</p>
+      <p begin="00:07:55.620" end="00:08:00.240">...features but that's no longer true because every...every piece of code that you</p>
+      <p begin="00:08:00.240" end="00:08:04.300">ride if it is more expensive to run that piece of code</p>
+      <p begin="00:08:04.300" end="00:08:08.330">...doing a good job so again you really need to think about how we can use</p>
+      <p begin="00:08:08.330" end="00:08:11.370">smart software on top of commodity hardware as opposed</p>
+      <p begin="00:08:11.370" end="00:08:16.370">to...hardware on top of a...machines to actually</p>
+      <p begin="00:08:16.370" end="00:08:20.350">...what...elaborately and scalability at the best</p>
+      <p begin="00:08:20.350" end="00:08:24.860">a economical value and these are the problems</p>
+      <p begin="00:08:24.860" end="00:08:27.780">dot vr for squad use of feast and</p>
+      <p begin="00:08:27.780" end="00:08:32.180">...be delivered a bunch of technologies for these people and that's where service</p>
+      <p begin="00:08:32.180" end="00:08:36.170">public came in and it actually I'm going to talk a little bit about some of the features</p>
+      <p begin="00:08:36.170" end="00:08:40.330">that's obvious fabric provides but...for building a</p>
+      <p begin="00:08:40.330" end="00:08:45.030">...used for doing the heavy lifting that is necessary for you to really build your services so that</p>
+      <p begin="00:08:45.030" end="00:08:50.050">they are from get goal in a scalable reliable and run at the best</p>
+      <p begin="00:08:50.050" end="00:08:52.680">prize that you can think of because</p>
+      <p begin="00:08:52.680" end="00:08:58.710">...of the things that we actually take pride in this particular system is that we have shaved</p>
+      <p begin="00:08:58.710" end="00:09:04.270">every possible I...every possible message in the system from so, that, you know, you get the best</p>
+      <p begin="00:09:04.270" end="00:09:09.390">cannot best price obviously, you know, if you build on top of this service you know, we are</p>
+      <p begin="00:09:09.390" end="00:09:15.170">shipping on windows today you can actually use seep cplus-plus of csharp apis</p>
+      <p begin="00:09:15.170" end="00:09:20.210">we're going to make this technology available online...and, you can and,</p>
+      <p begin="00:09:20.210" end="00:09:25.370">also expose them while they're programming models like java javascript so that,</p>
+      <p begin="00:09:25.370" end="00:09:30.180">you know, you have the choice of actually on running on the platform of your choice</p>
+      <p begin="00:09:30.180" end="00:09:34.340">of ways of your choice and you can also deployed?</p>
+      <p begin="00:09:34.340" end="00:09:38.130">On...your are on premises...third-party</p>
+      <p begin="00:09:38.130" end="00:09:42.810">uploads so by actually running on top of this platform you are, you know,</p>
+      <p begin="00:09:42.810" end="00:09:51.000">you have some choice in...you want to deploy your app or your service.</p>
+      <p begin="00:09:51.000" end="00:09:55.800">This particle slightly showing the number offor spotty services that are running on top</p>
+      <p begin="00:09:55.800" end="00:10:01.020">of leisure on...service fabric it is not that we, you know,</p>
+      <p begin="00:10:01.020" end="00:10:04.270">be conceived this technology are we build this technology last year and</p>
+      <p begin="00:10:04.270" end="00:10:08.870">they're giving you this technology this year we have I mean this</p>
+      <p begin="00:10:08.870" end="00:10:12.070">...more than a decade ago on this has been running and</p>
+      <p begin="00:10:12.070" end="00:10:18.260">...all of these services for the last five years more importantly</p>
+      <p begin="00:10:18.260" end="00:10:23.620">we're not actually we are giving you the exact same bits that are and</p>
+      <p begin="00:10:23.620" end="00:10:30.190">...so reese's in this sdk I'll talk about where it is different in a minute</p>
+      <p begin="00:10:30.190" end="00:10:34.560">...are not giving you a different washroom... less functional washroom</p>
+      <p begin="00:10:35.950" end="00:10:40.820">...diff and a call-in different copy of...core br...you guys you know,</p>
+      <p begin="00:10:40.820" end="00:10:47.770">...bunch of visual infrastructure itself runs on top of thisif</p>
+      <p begin="00:10:47.770" end="00:10:51.090">this service fabric doesn't do its job...bunch of a your its of goals</p>
+      <p begin="00:10:51.090" end="00:10:54.960">...similarly if the becomes most transactional</p>
+      <p begin="00:10:54.960" end="00:11:00.100">consistent databases are running on top of visual fabric we are the people so...fabric is the one which is doing all the</p>
+      <p begin="00:11:00.100" end="00:11:04.070">heavy lifting of replication reconfiguration managing the</p>
+      <p begin="00:11:04.070" end="00:11:09.180">lifecycle of every individual database dot actually you have running in...the on tens of thousands of</p>
+      <p begin="00:11:09.180" end="00:11:14.210">machines it actually is running consumer gates of reese's feature</p>
+      <p begin="00:11:14.210" end="00:11:18.580">...processing huge amounts...in a subscriptions and bingo...and,</p>
+      <p begin="00:11:18.580" end="00:11:22.970">it actually scales across three datacenters and recently they had...</p>
+      <p begin="00:11:22.970" end="00:11:27.520">outage of an entire datacenter and the soviets kept running and that's because of this</p>
+      <p begin="00:11:27.520" end="00:11:31.710">technology that there leveraging.</p>
+      <p begin="00:11:31.710" end="00:11:33.410">In the next.</p>
+      <p begin="00:11:33.410" end="00:11:40.610">Of...the rest of my talk I'm going to talk aboard whole.</p>
+      <p begin="00:11:40.610" end="00:11:43.590">Full-service fabric.</p>
+      <p begin="00:11:43.590" end="00:11:46.840">You know, that I'll pick a little bit under the...so,</p>
+      <p begin="00:11:46.840" end="00:11:52.690">that you guys can see...sorry I don't know why this.</p>
+      <p begin="00:11:52.690" end="00:12:02.470">This thing keeps moving I'm just going to keep going back and forth.</p>
+      <p begin="00:12:02.470" end="00:12:07.040">...basically I'm going to talk aboard hold...service...been put together</p>
+      <p begin="00:12:07.040" end="00:12:11.570">it's major subsystems so, that you get a little bit of an understanding of</p>
+      <p begin="00:12:11.570" end="00:12:15.000">hole the system works and,</p>
+      <p begin="00:12:15.000" end="00:12:19.510">along the way I'm actually going to talk aboard the exact problems that this these</p>
+      <p begin="00:12:19.510" end="00:12:24.780">different subsystems are going to solve and... hopefully motivate you on the role</p>
+      <p begin="00:12:24.780" end="00:12:31.340">...subsystems play in the system before I actually start talking aboard on</p>
+      <p begin="00:12:31.340" end="00:12:34.070">...parts of the system let me first actually talk</p>
+      <p begin="00:12:34.070" end="00:12:39.730">...precisely what we mean by a micro service if I'm asked to actually go and design</p>
+      <p begin="00:12:39.730" end="00:12:43.460">...internet scale surveys I'm actually going to...think aboard the</p>
+      <p begin="00:12:43.460" end="00:12:48.070">machines I'm going to think aboard my problem I'm going to think about what exact scenarios my</p>
+      <p begin="00:12:48.070" end="00:12:52.240">...is meant to solve and actually decompose the problem into a</p>
+      <p begin="00:12:52.240" end="00:12:56.710">sort of entities and then how those entities then I would think</p>
+      <p begin="00:12:56.710" end="00:13:01.470">...what is the scale characteristics of my service and I say this particular entity I want to scale</p>
+      <p begin="00:13:01.470" end="00:13:04.730">differently than this other entity so,</p>
+      <p begin="00:13:04.730" end="00:13:09.050">this decomposition...at the core of microsoft resource architecture you really</p>
+      <p begin="00:13:09.050" end="00:13:12.980">networking aboard machines unlike if you start from</p>
+      <p begin="00:13:12.980" end="00:13:16.520">...machines are virtual machines here you're thinking more at the</p>
+      <p begin="00:13:16.520" end="00:13:20.040">app layer and you're thinking about the app logical grady composer...</p>
+      <p begin="00:13:20.040" end="00:13:26.590">like make it run in such a way that I can upgrade different parts of the app</p>
+      <p begin="00:13:26.590" end="00:13:29.830">...actually anybody noticing that I'm...doing</p>
+      <p begin="00:13:29.830" end="00:13:34.890">and upgrade if you actually go and take a...the...you db that like sell-out eight</p>
+      <p begin="00:13:34.890" end="00:13:39.330">services that are microsoft...that are running obviously the biggest microsoft is there that's running</p>
+      <p begin="00:13:39.330" end="00:13:44.290">...the database service but there is a protocol gateway which is terminating tedious connections that</p>
+      <p begin="00:13:44.290" end="00:13:50.480">...a management endpoint which is actually...and ask for a database...the system it is the one</p>
+      <p begin="00:13:50.480" end="00:13:55.680">which actually goes on-call service fabric a I want...database...database for me so all these</p>
+      <p begin="00:13:55.680" end="00:13:59.510">...abuses that are running in the system they're all interacting with one another</p>
+      <p begin="00:13:59.510" end="00:14:02.540">...well-defined protocol so what exactly is a...service</p>
+      <p begin="00:14:02.540" end="00:14:07.660">...services...is a piece of code are piece of logic would also and,</p>
+      <p begin="00:14:07.660" end="00:14:12.290">its associated state and every...always in the system faster have</p>
+      <p begin="00:14:12.290" end="00:14:17.550">...so that you actually know portable...where exactly is my microsoft's my microsoft</p>
+      <p begin="00:14:17.550" end="00:14:21.680">reese's running you...tagger which machine it's running you talk about...my microsoft</p>
+      <p begin="00:14:21.680" end="00:14:26.480">ways so the naming system in service fabric actually use the</p>
+      <p begin="00:14:26.480" end="00:14:30.820">at responsible for actually determining...exactly a given instance of a microsoft</p>
+      <p begin="00:14:30.820" end="00:14:36.730">michael services running so that, you know, so, that you can go and talk to...so?</p>
+      <p begin="00:14:36.730" end="00:14:42.510">These micro services ...consistent a database obviously cannot lose</p>
+      <p begin="00:14:42.510" end="00:14:47.630">it stayed are not lose its transactional integrity because...a bunch of machines for</p>
+      <p begin="00:14:47.630" end="00:14:52.490">a task to remain consistent all the time and despite machine...</p>
+      <p begin="00:14:52.490" end="00:14:58.370">inside this despite a bunch...you actually find end up doing and at microsoft we</p>
+      <p begin="00:14:58.370" end="00:15:02.640">...obviously...doesn't actually appear in...you actually write a bunch of</p>
+      <p begin="00:15:02.640" end="00:15:07.940">cord and you say here is the code that is backing this or...and I want you to go...particular core and dot</p>
+      <p begin="00:15:07.940" end="00:15:10.890">...use what we actually put inside...container</p>
+      <p begin="00:15:10.890" end="00:15:16.200">...mean container here it's more general than the...all...and understand</p>
+      <p begin="00:15:16.200" end="00:15:20.900">...animal recently if you could be a process group inside running a job object</p>
+      <p begin="00:15:20.900" end="00:15:23.530">in many cases it's a bunch of processes, you know,</p>
+      <p begin="00:15:23.530" end="00:15:27.220">there's a sequels overwrought...watchdog process there's a bunch</p>
+      <p begin="00:15:27.220" end="00:15:31.440">...supporting processes and there's a full text indexing engine behind that sequels overwrought</p>
+      <p begin="00:15:31.440" end="00:15:35.700">eggs all these processes are manage as a single entity and they all maybe running</p>
+      <p begin="00:15:35.700" end="00:15:37.640">inside a container and</p>
+      <p begin="00:15:37.640" end="00:15:41.660">...typically each microsoft...you want to have a small team of developers</p>
+      <p begin="00:15:41.660" end="00:15:46.600">are responsible for it and they can move independent of other developers building others of uses in</p>
+      <p begin="00:15:46.600" end="00:15:51.330">the larger internet scale service so that's why this architectural entered</p>
+      <p begin="00:15:51.330" end="00:15:55.760">solve to increase...better reliability and by the scaleability because you can scale independent</p>
+      <p begin="00:15:55.760" end="00:16:00.630">...you can actually move independent and you get...our downgrade independent</p>
+      <p begin="00:16:00.630" end="00:16:05.550">...parts it...affecting other parts that are dependent on them because</p>
+      <p begin="00:16:05.550" end="00:16:09.310">if they're...well-defined protocols.</p>
+      <p begin="00:16:09.310" end="00:16:14.830">Obviously on...to types of microsoft reese's microsoft is which</p>
+      <p begin="00:16:14.830" end="00:16:19.270">...stateless and, microsoft...you...what exactly the stateless</p>
+      <p begin="00:16:20.500" end="00:16:24.910">...microsoft with obviously does not maintain any state are important</p>
+      <p begin="00:16:24.910" end="00:16:28.800">...micacious...that actually uses last beyond</p>
+      <p begin="00:16:28.800" end="00:16:33.740">...request on the responds that protocol service receives in the case of and, previous protocol</p>
+      <p begin="00:16:33.740" end="00:16:41.320">...some protocols which are which are stateful in the sense of, you know, they have some session</p>
+      <p begin="00:16:41.320" end="00:16:45.980">stayed but most of these protocols most of the protocols that you actually typically</p>
+      <p begin="00:16:45.980" end="00:16:49.070">...of the web...are protocol gateway substrate</p>
+      <p begin="00:16:49.070" end="00:16:53.620">...because...create and the way you actually...reliability for stateless services</p>
+      <p begin="00:16:53.620" end="00:16:58.110">...by maintaining and copies of them actually this is not that there's a hard problem</p>
+      <p begin="00:16:58.110" end="00:17:01.840">here from a distributed systems point of view but this is what actually everybody tells you</p>
+      <p begin="00:17:01.840" end="00:17:04.610">...in order to achieve scale just-born</p>
+      <p begin="00:17:04.610" end="00:17:09.560">build stateless services but who's going to solve the stateful, stateful problem obviously I think</p>
+      <p begin="00:17:09.560" end="00:17:15.030">...andwhen we were building this system we were actually thinking that this particular problem has to</p>
+      <p begin="00:17:15.030" end="00:17:20.900">be solved by us because we are the people who are actually supporting the database technology videos stateful</p>
+      <p begin="00:17:20.900" end="00:17:24.990">at the core so for stateful microsoft...on the other hand, you know,</p>
+      <p begin="00:17:24.990" end="00:17:30.070">you have speed that actually...at a...that...is</p>
+      <p begin="00:17:30.070" end="00:17:35.200">...you cannot afford to lose that state ...has to be a kernel of truth somewhere because if everything in the</p>
+      <p begin="00:17:35.200" end="00:17:40.740">entire woolly stateless you have nothing in the world because you have to have, you know,...waddle</p>
+      <p begin="00:17:40.740" end="00:17:43.040">...laying...somewhere so who's maintaining that</p>
+      <p begin="00:17:43.040" end="00:17:47.040">...that's where the stateful microsoft resource actually come into play and the way you</p>
+      <p begin="00:17:47.040" end="00:17:51.410">actually achieved reliability for state for microsoft resources by maintaining and copies of that</p>
+      <p begin="00:17:51.410" end="00:17:54.670">...obviously you want to maintain those and copies of the state</p>
+      <p begin="00:17:54.670" end="00:17:58.850">and a consistent manner because you really have to think about how your updating</p>
+      <p begin="00:17:58.850" end="00:18:03.500">...mutating that...and the system has to give you those guarantees that the and copies of</p>
+      <p begin="00:18:03.500" end="00:18:04.810">state your maintaining</p>
+      <p begin="00:18:04.810" end="00:18:11.750">...indeed consistent...you be attribute I'll talk a little bit about how we achieve that consistency?</p>
+      <p begin="00:18:11.750" end="00:18:18.350">And, you know, example stateful microsoft...are...or databases and, you know,</p>
+      <p begin="00:18:18.350" end="00:18:20.930">documents and, you know, user state user...tools</p>
+      <p begin="00:18:20.930" end="00:18:26.690">on other things so with that in mind I'm going to invite my friend my teammate to,</p>
+      <p begin="00:18:26.690" end="00:18:30.950">come on, board and actually talk...statefull stateless michael service because I'm now</p>
+      <p begin="00:18:30.950" end="00:18:34.710">...guys on a journey of making the sys...the system</p>
+      <p begin="00:18:34.710" end="00:18:40.470">starts with a simple thing and how it becomes complex as you go down ...on the</p>
+      <p begin="00:18:40.470" end="00:18:45.200">...on the path in this particular case...stateless microsoft ways it's nothing</p>
+      <p begin="00:18:45.200" end="00:18:50.230">but a visual object we just really moving in space it does have state and,</p>
+      <p begin="00:18:50.230" end="00:18:58.320">that's date...is a location eighties and, the past ten locations baited had</p>
+      <p begin="00:18:58.320" end="00:19:02.870">beam and we will show you how that state ...state stables microsoft reese's</p>
+      <p begin="00:19:02.870" end="00:19:16.710">and other shoulder-to-shoulder running I really do some failures and see...it goes?</p>
+      <p begin="00:19:16.710" end="00:19:21.060">What we want so, here's an example of a stateless</p>
+      <p begin="00:19:21.060" end="00:19:26.070">micros service in this case the micro services an object floating around in this</p>
+      <p begin="00:19:26.070" end="00:19:31.760">space this state of the art is represented by the current position as well</p>
+      <p begin="00:19:31.760" end="00:19:38.940">as the history which is represented by...the tail saw here is a</p>
+      <p begin="00:19:38.940" end="00:19:43.240">...explorer this is a tool that we offer as part of the sdk which allows you to</p>
+      <p begin="00:19:43.240" end="00:19:48.740">visualized manage and monitor your cluster so,</p>
+      <p begin="00:19:48.740" end="00:19:52.140">what I'm going to do is that here I have that</p>
+      <p begin="00:19:52.140" end="00:19:57.830">service which is the stateless service that stateless service</p>
+      <p begin="00:19:57.830" end="00:20:01.880">has one instance and it is running on node three as you can see here</p>
+      <p begin="00:20:02.990" end="00:20:09.250">some more input this to auto refresh so we have one instance of that service running on</p>
+      <p begin="00:20:09.250" end="00:20:17.120">node three and what I'm going to do is basically restart node three?</p>
+      <p begin="00:20:17.120" end="00:20:21.830">So,...what happens to the instance</p>
+      <p begin="00:20:21.830" end="00:20:25.850">that is here as well as the object so,</p>
+      <p begin="00:20:25.850" end="00:20:27.760">as you can see that.</p>
+      <p begin="00:20:27.760" end="00:20:31.920">The as a so in this particular case actually what ripple data is</p>
+      <p begin="00:20:31.920" end="00:20:36.630">...just to give a machine think of it like that and that machine on a</p>
+      <p begin="00:20:36.630" end="00:20:41.090">...the system actually dictated the...landed actually is going to and,</p>
+      <p begin="00:20:41.090" end="00:20:43.670">figure out where to place a realize that this particle microsoft</p>
+      <p begin="00:20:43.670" end="00:20:52.970">...fail and it's going to restart...the ...on a different machine ...and.</p>
+      <p begin="00:20:52.970" end="00:20:55.840">...see it, come on, you can see that it actually came</p>
+      <p begin="00:20:55.840" end="00:21:01.770">back but unfortunately I had to put on my glasses because I'm getting old.</p>
+      <p begin="00:21:01.770" end="00:21:06.480">The what I think maybe you guys didn't notice is that when it actually started on</p>
+      <p begin="00:21:06.480" end="00:21:11.550">a machine this particular microsoft has lost its state embossed</p>
+      <p begin="00:21:11.550" end="00:21:17.060">...position it had been and, the last and positions...being in so don't actually went back to some,</p>
+      <p begin="00:21:17.060" end="00:21:22.930">you know, of the position rated actually to apply for to...because...</p>
+      <p begin="00:21:23.960" end="00:21:27.180">Because.</p>
+      <p begin="00:21:27.180" end="00:21:36.660">...go back to my slides.</p>
+      <p begin="00:21:36.660" end="00:21:40.670">But, the system did solve the problem of detecting that the machine has gone</p>
+      <p begin="00:21:40.670" end="00:21:43.320">...and actually figuring out a particular instance of a</p>
+      <p begin="00:21:43.320" end="00:21:47.550">...uses fade and...it somewhere else audited do dot and,</p>
+      <p begin="00:21:47.550" end="00:21:52.010">that's where the failure detection problem for the system can't even for stateless microsoft</p>
+      <p begin="00:21:52.010" end="00:21:56.100">...which we think are the easy ones compared to the stateful ones</p>
+      <p begin="00:21:56.100" end="00:22:02.080">there is a hard distributed systems problem which is a failure detection problem and that's what you know,</p>
+      <p begin="00:22:02.080" end="00:22:05.330">these to subsystems actually provide in-service</p>
+      <p begin="00:22:05.330" end="00:22:11.350">fabric obviously we have a transport...you know, if you're building...distributed system you have to have</p>
+      <p begin="00:22:11.350" end="00:22:16.810">machines talking to one another all of this is not running on a single machine so,</p>
+      <p begin="00:22:16.810" end="00:22:20.690">how do we actually have these communication establish between machines we</p>
+      <p begin="00:22:20.690" end="00:22:25.380">obviously use this thing called transport it certainly does lots of security it</p>
+      <p begin="00:22:25.380" end="00:22:30.240">does a bunch of stuff but and...the date that's actually not that hard other than making sure but, you know,</p>
+      <p begin="00:22:30.240" end="00:22:32.020">it is...you'll?</p>
+      <p begin="00:22:32.020" end="00:22:36.430">Scope rules and a bunch of other staff the more important characteristic it has is</p>
+      <p begin="00:22:36.430" end="00:22:38.150">...best effort it doesn't</p>
+      <p begin="00:22:38.150" end="00:22:44.150">actually any give you any guarantee to layers of over but it is going to deliver the message.</p>
+      <p begin="00:22:44.150" end="00:22:48.580">We can be could have easily use tcp you'll be...use...tcp...our in</p>
+      <p begin="00:22:48.580" end="00:22:53.700">our in-service fabric at the moment that is a...because we get the fragmentation...be assembly</p>
+      <p begin="00:22:53.700" end="00:22:59.840">easily because...that for us...more importantly...the tcp...whether you as realize that the</p>
+      <p begin="00:22:59.840" end="00:23:04.900">modern chips particularly under the messages are very small that you can actually fit in a single frame</p>
+      <p begin="00:23:04.900" end="00:23:09.960">it is actually more faster...more perform interact with them tcp that...of course,</p>
+      <p begin="00:23:09.960" end="00:23:12.540">you know, the special cases like broadcast of other things</p>
+      <p begin="00:23:12.540" end="00:23:16.410">where are you reviews useful all but in a typical</p>
+      <p begin="00:23:16.410" end="00:23:21.720">...datacenter network tcp actually performed very well because you have to...offload</p>
+      <p begin="00:23:21.720" end="00:23:27.150">...and, a bunch of stuff that you actually can benefit from on top of dot</p>
+      <p begin="00:23:27.150" end="00:23:31.300">...the best effort layer is what we call the federation this is where you</p>
+      <p begin="00:23:31.300" end="00:23:36.230">know, I will introduce the notion of a cluster so in absence of the federation</p>
+      <p begin="00:23:36.230" end="00:23:41.330">what you see in a datacenter invite if you don't have...fabric this is what you get so</p>
+      <p begin="00:23:41.330" end="00:23:44.890">...for...map of any other data...you go and ask for a bunch of machines you</p>
+      <p begin="00:23:44.890" end="00:23:49.970">get a bunch of machines what do what can you do with this machines...or let me</p>
+      <p begin="00:23:49.970" end="00:23:54.230">start and we build this or how do I know about this machine being part of the sister all...</p>
+      <p begin="00:23:54.230" end="00:23:59.470">did this machine fail I mean all of these problems are in front of you and you know,</p>
+      <p begin="00:23:59.470" end="00:24:04.020">we don't know-how to solve and every...starts ...from the from the bottom of this bag and</p>
+      <p begin="00:24:04.020" end="00:24:08.120">...so in other words just having a bunch of machines with the great always</p>
+      <p begin="00:24:08.120" end="00:24:13.810">that you law is not enough to build a service you really need higher-level</p>
+      <p begin="00:24:13.810" end="00:24:17.230">...higher-level platforms on which you can actually</p>
+      <p begin="00:24:17.230" end="00:24:20.580">...your service specific logic so that you do not</p>
+      <p begin="00:24:20.580" end="00:24:25.220">...solve any of these problems not only that you actually network plank in</p>
+      <p begin="00:24:25.220" end="00:24:28.620">...of our developers do not think it would machines but think about their</p>
+      <p begin="00:24:28.620" end="00:24:34.000">...their packages...of the...and how to...maintain</p>
+      <p begin="00:24:34.000" end="00:24:40.470">...elaborately and that's...reese's user that four-bit meeting available so what happens is</p>
+      <p begin="00:24:40.470" end="00:24:44.970">...service fabric cluster comes up you know, it basically goals are determines what machines are part of</p>
+      <p begin="00:24:44.970" end="00:24:48.670">the clusterand, then at this point of time</p>
+      <p begin="00:24:48.670" end="00:24:53.790">it knows what machines are in the system and what machines of...information is fairly</p>
+      <p begin="00:24:53.790" end="00:24:58.230">...that machine as for this is exactly the layer at which the failure of the...as microsoft</p>
+      <p begin="00:24:58.230" end="00:25:03.070">resource determined by the system so that you could determine all machine died</p>
+      <p begin="00:25:03.070" end="00:25:08.150">so I need to really figure out something to do have to...to do something with it and that's all we figured it</p>
+      <p begin="00:25:08.150" end="00:25:13.940">order mood at obviously that's not enoughfor state fall by that useful stable that's good</p>
+      <p begin="00:25:13.940" end="00:25:18.980">enough how does the system actually detect these failures I think in our system I'm</p>
+      <p begin="00:25:18.980" end="00:25:23.870">giving it a fairly high-level every machine as an identity and there's a bunch of machines because</p>
+      <p begin="00:25:23.870" end="00:25:27.010">every mission as an identity that some...sort of machine that are considered</p>
+      <p begin="00:25:27.010" end="00:25:31.620">libraries in this particular slider time pi-zerowe have</p>
+      <p begin="00:25:31.620" end="00:25:35.440">...for machines five machines reduced...the...or eighty-three</p>
+      <p begin="00:25:35.440" end="00:25:40.490">...sixty-four for p and forty-six at time?</p>
+      <p begin="00:25:40.490" end="00:25:43.040">T...few things happen in the system is</p>
+      <p begin="00:25:43.040" end="00:25:47.890">...is very dynamic I'm there is nothing that you can control here...nodes for a...of this</p>
+      <p begin="00:25:47.890" end="00:25:52.240">...sixty-four and sixty-one arrived I can show you</p>
+      <p begin="00:25:52.240" end="00:25:55.460">that as this thing is happening the system is are the...and it</p>
+      <p begin="00:25:55.460" end="00:26:00.220">is not that-you there is no static knowledge in the system the system doesn't</p>
+      <p begin="00:26:00.220" end="00:26:04.010">have, you know, this one place where it is maintaining membership...all</p>
+      <p begin="00:26:04.010" end="00:26:08.830">...distributed system...the you cannot you can go and asses mission tell me,</p>
+      <p begin="00:26:08.830" end="00:26:11.920">you know, whether this machine is...comes back and answered by not</p>
+      <p begin="00:26:11.920" end="00:26:16.250">doing a lookup table on something but I by actually doing some distributed systems work</p>
+      <p begin="00:26:16.250" end="00:26:22.130">...needs to go and tell you...that machine doesn't does exist and...indeed up so,</p>
+      <p begin="00:26:22.130" end="00:26:26.550">after by a bunch of you know, protocols which is modern protocols it actually comes back and</p>
+      <p begin="00:26:26.550" end="00:26:31.280">...of, you know, I have no figured out that machine...and sixty-four</p>
+      <p begin="00:26:31.280" end="00:26:36.120">...and new machine sixty-one...and there may be...noone looking for this</p>
+      <p begin="00:26:36.120" end="00:26:39.480">...assuming that they're already the activated because I'll</p>
+      <p begin="00:26:39.480" end="00:26:44.960">talk aboutan machine lifecycle management in our system but this is</p>
+      <p begin="00:26:44.960" end="00:26:49.940">...if these machines have failed like...of stateless michael service...here is the layer</p>
+      <p begin="00:26:49.940" end="00:26:58.890">...which we detected...machine prelude...and, that's...the system reacted.</p>
+      <p begin="00:26:58.890" end="00:27:04.120">Okay, so, what exactly running in our foster obviously, you know, the services that</p>
+      <p begin="00:27:04.120" end="00:27:09.610">are users of...or customers...of rhythm but there's a bunch of</p>
+      <p begin="00:27:09.610" end="00:27:15.420">system services also running and many of these of stateful...all of them are stateful there's a</p>
+      <p begin="00:27:15.420" end="00:27:22.710">...manager service which is actually watching every state?</p>
+      <p begin="00:27:22.710" end="00:27:26.210">Which is watching everymicrosoft</p>
+      <p begin="00:27:26.210" end="00:27:31.020">is that has been provision and running in the cluster and seeing...user...up user running...it</p>
+      <p begin="00:27:31.020" end="00:27:36.220">...and, when it detects failure to...the one which is causing trade-offs to happen</p>
+      <p begin="00:27:36.220" end="00:27:41.220">there's a cluster manager service which is watching we just doing lifecycle management operations</p>
+      <p begin="00:27:41.220" end="00:27:46.900">...you want obligated a cluster manager is the one that comes into play and says</p>
+      <p begin="00:27:46.900" end="00:27:52.560">okay it is one that carries or those lifecycle management operations naming I already talked</p>
+      <p begin="00:27:52.560" end="00:27:55.710">...every microsoft...a name and you want to really</p>
+      <p begin="00:27:55.710" end="00:28:00.870">locate its and point dynamically at runtime you...that I'm going to scale because this</p>
+      <p begin="00:28:00.870" end="00:28:06.160">soulmate across coming in the system that, you know, the naming is the one web those things are happening</p>
+      <p begin="00:28:06.160" end="00:28:09.840">...image stories where every time you provision piece of code</p>
+      <p begin="00:28:09.840" end="00:28:12.190">...configured data into the system</p>
+      <p begin="00:28:12.190" end="00:28:17.120">image store services where we actuallystore all that data it's all the all these services</p>
+      <p begin="00:28:17.120" end="00:28:20.570">...if that all the...never lost?</p>
+      <p begin="00:28:20.570" end="00:28:24.200">Unless, you know, the and lackluster was gone and I said in the case of</p>
+      <p begin="00:28:24.200" end="00:28:29.400">...these clusters...actually spanning tree datacenters...datacenters that you want in</p>
+      <p begin="00:28:29.400" end="00:28:39.080">the encoder like...the...three data servers and, I can...</p>
+      <p begin="00:28:48.470" end="00:28:51.520">You can actually...and just to show you guys that, you know,</p>
+      <p begin="00:28:51.520" end="00:28:54.290">these services are indeed running on your scale</p>
+      <p begin="00:28:54.290" end="00:28:59.180">minimize development box you can see that is available...services running...</p>
+      <p begin="00:28:59.180" end="00:29:04.060">a cluster manager this an image store a bunch of naming service by the way because naming</p>
+      <p begin="00:29:04.060" end="00:29:07.330">serviceis also partition I'll I'm going to talk</p>
+      <p begin="00:29:07.330" end="00:29:10.160">...for scaling old partitions so you can actually take microsoft</p>
+      <p begin="00:29:10.160" end="00:29:14.650">...are not only can you say I want and copies of that running you can also say I want to partition it so that</p>
+      <p begin="00:29:14.650" end="00:29:18.900">the partition it by range partitioned by name or whatever you whatever scheme that you</p>
+      <p begin="00:29:18.900" end="00:29:22.320">...so that it gives of naming service you can see that</p>
+      <p begin="00:29:22.320" end="00:29:35.140">...multiple partitions in this case...three partitions that are actually running?</p>
+      <p begin="00:29:35.140" end="00:29:38.340">So, that's basically the I wanted to show you guys, you know,</p>
+      <p begin="00:29:38.340" end="00:29:43.300">the service fabric explore that's actually part of the system...trips as part of the as the case so you</p>
+      <p begin="00:29:43.300" end="00:29:46.710">guys confided up and you know, visualize your clusters.</p>
+      <p begin="00:29:46.710" end="00:29:50.740">Okay, so, far we talked about failures we talked about stateless</p>
+      <p begin="00:29:50.740" end="00:29:54.900">micro services...the time for us to really think about how do we do state and,</p>
+      <p begin="00:29:54.900" end="00:30:01.490">that's where the elaborately subsystem comes and it is the one that is you know, taking...of the state</p>
+      <p begin="00:30:01.490" end="00:30:06.820">aspects of the system why are statefull microsoft resource important and,</p>
+      <p begin="00:30:06.820" end="00:30:10.250">I'm pretty sure I think many of us you-know-who are</p>
+      <p begin="00:30:10.250" end="00:30:15.160">...in the past I've seen this particular pattern repeated multiple times, you know,</p>
+      <p begin="00:30:15.160" end="00:30:20.080">you basically start off you know, you take your app...you capability</p>
+      <p begin="00:30:20.080" end="00:30:24.710">and peers you start with the front and then you go and put all your business logic in this</p>
+      <p begin="00:30:24.710" end="00:30:30.100">...and, you say stateless and because these media can collapse any time you</p>
+      <p begin="00:30:30.100" end="00:30:35.270">go and put all your hard and...in back...databases then you start thinking well,</p>
+      <p begin="00:30:35.270" end="00:30:39.540">what happens if I want reliable communication between my front-end</p>
+      <p begin="00:30:39.540" end="00:30:44.100">and my meteor what do I do I will introduce a bunch of q so I put it in the</p>
+      <p begin="00:30:44.100" end="00:30:47.050">...on the front and I retrieved from the...on the on the</p>
+      <p begin="00:30:47.050" end="00:30:52.420">mid-air now you say I want communication reliable communication between might between components and</p>
+      <p begin="00:30:52.420" end="00:30:57.020">...now let me go and...between those guys then come back and say</p>
+      <p begin="00:30:57.020" end="00:31:02.040">all I really need to think...my databases cannot really performyou know,</p>
+      <p begin="00:31:02.040" end="00:31:04.540">my...slow my rights...that we would</p>
+      <p begin="00:31:04.540" end="00:31:08.990">...layer...how you put your caching layer now...all</p>
+      <p begin="00:31:08.990" end="00:31:14.080">...partition system how caching layers I can't think about transactions let me actually</p>
+      <p begin="00:31:14.080" end="00:31:18.250">...to manage all these transactions on some ahold that my transactions my system</p>
+      <p begin="00:31:18.250" end="00:31:21.870">is consistent and this is what we all phased...</p>
+      <p begin="00:31:21.870" end="00:31:26.630">this is where this system comes into play and...a very complex system I can't even</p>
+      <p begin="00:31:26.630" end="00:31:31.890">reason...the correctness of this system if you go and ask in any computer science guy would</p>
+      <p begin="00:31:31.890" end="00:31:37.820">...is transactions consist you know, maybe...failure doesn't happen that failure doesn't happen it's...</p>
+      <p begin="00:31:37.820" end="00:31:42.630">been but that is never the case and datacenter bad things happen and we assume awful things</p>
+      <p begin="00:31:42.630" end="00:31:48.070">happen to us in many times so it is important for us to really paying how</p>
+      <p begin="00:31:48.070" end="00:31:52.870">can be simplify this, you know, architecture via all familiar with your all grew up with</p>
+      <p begin="00:31:52.870" end="00:31:57.770">something that is more cogent most a simple are and easy-to-understand at the</p>
+      <p begin="00:31:57.770" end="00:32:06.620">same time guarantees the correctness that we all want to have?</p>
+      <p begin="00:32:06.620" end="00:32:11.370">And, there comes in stateful michael services in this world I...you can see that the</p>
+      <p begin="00:32:11.370" end="00:32:15.930">...the becomes much simpler you basically have your front-end invite in some cases you get our the</p>
+      <p begin="00:32:15.930" end="00:32:18.900">front-end but...you don't need that you can your stateful</p>
+      <p begin="00:32:18.900" end="00:32:24.290">...obvious can actually terminate implement because itself but let's assume that you...a state</p>
+      <p begin="00:32:24.290" end="00:32:30.050">...a...internet protocols and then it goes and talks to</p>
+      <p begin="00:32:30.050" end="00:32:34.390">is statefull michael service in this particular case you're</p>
+      <p begin="00:32:34.390" end="00:32:39.120">...right next to that state of course your partitioned it and, you know, I'll talk about this...transactions</p>
+      <p begin="00:32:39.120" end="00:32:43.860">down the line but not in this dog but the point I'm trying to say is that now you</p>
+      <p begin="00:32:43.860" end="00:32:49.850">...stayed...dykstra your cord and you can now use a.</p>
+      <p begin="00:32:49.850" end="00:32:54.710">All you leads are highly have very low latency sorry and,</p>
+      <p begin="00:32:54.710" end="00:32:56.940">your rights are very fast.</p>
+      <p begin="00:32:56.940" end="00:32:59.290">And, partitions or first-class.</p>
+      <p begin="00:32:59.290" end="00:33:03.720">And, I don't know-how many of you guys have actually gone and see I mean I'm sure you guys have seen what mark actually</p>
+      <p begin="00:33:03.720" end="00:33:07.280">...we have transactions built into the system you can actually fault</p>
+      <p begin="00:33:07.280" end="00:33:10.030">in different data structures in our system</p>
+      <p begin="00:33:10.030" end="00:33:14.590">...actual...transactions to do updates on those transaction so you are really</p>
+      <p begin="00:33:14.590" end="00:33:22.080">writing code that you're familiar with when you're writing any...omit...</p>
+      <p begin="00:33:22.080" end="00:33:26.920">State of what we what used to called business logic core where you...a bunch of data structures and</p>
+      <p begin="00:33:26.920" end="00:33:30.910">you go and do a bunch of updates and then you go and put it in the database now, you know,</p>
+      <p begin="00:33:30.910" end="00:33:35.860">longer have to think about it like that you just say hey I want to...ina...a bunch of data structures</p>
+      <p begin="00:33:35.860" end="00:33:40.860">let me use my transaction update all these data structures and then if I come it will</p>
+      <p begin="00:33:40.860" end="00:33:46.100">always stay committed if I'm if I aborted...what if I do...the system automatically takes care of the</p>
+      <p begin="00:33:46.100" end="00:33:51.300">...for you and then the system proceeds with this architecture becomes very simple,</p>
+      <p begin="00:33:51.300" end="00:33:55.320">you know, longer have so many moving parts you are now</p>
+      <p begin="00:33:55.320" end="00:33:58.890">...loyalty be pod the most important cuticle internet</p>
+      <p begin="00:33:58.890" end="00:34:04.110">...part of your system has best performance lowest</p>
+      <p begin="00:34:04.110" end="00:34:08.010">low...throughput and low latency and</p>
+      <p begin="00:34:08.010" end="00:34:12.200">...analytics parts of the system where you actually periodically...data to go into</p>
+      <p begin="00:34:13.330" end="00:34:17.610">...store so-and-so that you can do other analytical jobs on it like map reduce jobs you</p>
+      <p begin="00:34:17.610" end="00:34:22.510">...do that later this is all I think the modern told native</p>
+      <p begin="00:34:22.510" end="00:34:27.610">...development happens this is what we believe...fabric</p>
+      <p begin="00:34:27.610" end="00:34:34.919">...will happened on the line if not knowledge will happen as...</p>
+      <p begin="00:34:34.919" end="00:34:35.979">Okay, so,</p>
+      <p begin="00:34:35.979" end="00:34:40.969">we actually already talked about the stateless and we showed the visual object which</p>
+      <p begin="00:34:40.969" end="00:34:46.679">is moving in this space which has stayed but, that state got lost and be</p>
+      <p begin="00:34:46.679" end="00:34:50.989">...machine on...running now...make the same stateless object stateful and</p>
+      <p begin="00:34:50.989" end="00:34:53.649">...see how the states or wise if we...</p>
+      <p begin="00:34:54.709" end="00:34:59.899">Throw...particle is represented by a statefull</p>
+      <p begin="00:34:59.899" end="00:35:04.529">application you can see that it has a primary and secondary which gopal</p>
+      <p begin="00:35:04.529" end="00:35:15.640">...talk ...all sorry use five.</p>
+      <p begin="00:35:15.640" end="00:35:19.850">Ok, so, this four-star was the one that we saw the stateless this</p>
+      <p begin="00:35:19.850" end="00:35:23.030">is the statefull ...</p>
+      <p begin="00:35:23.030" end="00:35:27.620">micros service the stateful micros service you can see that the primary of this</p>
+      <p begin="00:35:27.620" end="00:35:33.020">services running on node one and,</p>
+      <p begin="00:35:33.020" end="00:35:43.520">what I'm going to do is that all go look at...the...one?</p>
+      <p begin="00:35:43.520" end="00:35:46.760">Going-to...service figure out which...just</p>
+      <p begin="00:35:46.760" end="00:35:52.020">...posit so you can you guys can see that this is all you know, the code gets run in the system, you know,</p>
+      <p begin="00:35:52.020" end="00:35:54.650">all the code all microsoft...a school you sipping and a bunch of</p>
+      <p begin="00:35:54.650" end="00:35:57.560">...packages which maybe running inside job objects</p>
+      <p begin="00:35:57.560" end="00:36:01.660">are containers but we know exactly which microsoft uses running in which</p>
+      <p begin="00:36:01.660" end="00:36:06.600">...package whether it's...part on the machine on midgets running that...sell the are not so that we can</p>
+      <p begin="00:36:06.600" end="00:36:11.940">do, you know, we can make sure that the system is running how the all the time.</p>
+      <p begin="00:36:11.940" end="00:36:16.590">And, okay, so.</p>
+      <p begin="00:36:16.590" end="00:36:20.470">I'm going-to go ahead and kill the primary process</p>
+      <p begin="00:36:20.470" end="00:36:25.180">...look what happens here in this region as well as look what happens to</p>
+      <p begin="00:36:25.180" end="00:36:33.480">...to the object.</p>
+      <p begin="00:36:33.480" end="00:36:38.390">there you can see that compared to what happened with the stateless microsoft is obviously thing</p>
+      <p begin="00:36:38.390" end="00:36:43.170">...because it was like entire machine going down here the system...door very</p>
+      <p begin="00:36:43.170" end="00:36:48.080">fast because when we're building stateful microsoft reese's we're not actually talking aboard,</p>
+      <p begin="00:36:48.080" end="00:36:52.980">you know,...recovery audio you go...this damping into some</p>
+      <p begin="00:36:52.980" end="00:36:57.610">...stared and you...state somewhere else in some cases of...like...a</p>
+      <p begin="00:36:57.610" end="00:37:01.710">...database you have gigabytes in some cases tens of gigabytes</p>
+      <p begin="00:37:01.710" end="00:37:06.540">our hundreds of gigabytes of data if you do recall you will sit there for thirty minutes before</p>
+      <p begin="00:37:06.540" end="00:37:11.520">this thing happens so in how does...guarantee these things because it as these hot stand</p>
+      <p begin="00:37:11.520" end="00:37:15.220">...you just saw...standby inaction instantaneous</p>
+      <p begin="00:37:15.220" end="00:37:21.040">...lower of the system is because all the other databases are all assist all the data</p>
+      <p begin="00:37:21.040" end="00:37:24.790">up and recovered and running and they're just doing very simple operations</p>
+      <p begin="00:37:24.790" end="00:37:29.540">...just applying mutations so they're not actually consuming that much cpu and,</p>
+      <p begin="00:37:29.540" end="00:37:31.730">they are actually working and when the</p>
+      <p begin="00:37:31.730" end="00:37:35.330">...what happens they just decor and that's all we build</p>
+      <p begin="00:37:35.330" end="00:37:39.960">these systems and that's the beauty of statefull microsoft reese's you get that latency</p>
+      <p begin="00:37:39.960" end="00:37:42.410">characteristics you get this nice figured you know,</p>
+      <p begin="00:37:42.410" end="00:37:53.010">characteristics and you get a whole bunch of simplicity by building at on these concepts?</p>
+      <p begin="00:37:53.010" end="00:37:59.800">So, that's the demo stateful microsoft racedoing time.</p>
+      <p begin="00:37:59.800" end="00:38:04.520">Okay, so, how did we actually do this actually an invite you have seen</p>
+      <p begin="00:38:04.520" end="00:38:09.150">in vibe explores...service fabric explorer?</p>
+      <p begin="00:38:09.150" end="00:38:14.020">You know, we maintain replica us of every statefulmichael...we maintain</p>
+      <p begin="00:38:14.020" end="00:38:18.790">a replicas and, we have this distinguish the replica called the primary</p>
+      <p begin="00:38:18.790" end="00:38:24.530">replica which is actually the one which is receiving client operations and,</p>
+      <p begin="00:38:24.530" end="00:38:26.790">it is the one which is figuring if</p>
+      <p begin="00:38:26.790" end="00:38:32.640">...a lead I'll talk about...the one which is applying these state mutations it is realizing</p>
+      <p begin="00:38:32.640" end="00:38:35.550">...mutations for you guys who...computer</p>
+      <p begin="00:38:35.550" end="00:38:40.880">...of the and applying them in order on other places and we</p>
+      <p begin="00:38:40.880" end="00:38:41.380">actually?</p>
+      <p begin="00:38:43.070" end="00:38:48.130">Maintain rewrite...on so it is are extremely...tolerant I'm in.</p>
+      <p begin="00:38:48.130" end="00:38:52.840">This other aspect of statefull microsoft is I don't know but I have time to go through itissue is</p>
+      <p begin="00:38:52.840" end="00:38:55.090">...tolerance you know-how many of your requests</p>
+      <p begin="00:38:55.090" end="00:38:58.190">...ninety nine-point nine percent bile are actually terminating</p>
+      <p begin="00:38:58.190" end="00:39:03.210">...an extremely low latency and you really need to really think about if</p>
+      <p begin="00:39:03.210" end="00:39:08.410">...in the treated architecture I...every request us to go and...even if individual</p>
+      <p begin="00:39:08.410" end="00:39:12.800">...intuitive components of those layers actually have ninety nine-point nine</p>
+      <p begin="00:39:12.800" end="00:39:17.610">reliability the war all system if you compose them together in</p>
+      <p begin="00:39:17.610" end="00:39:22.560">...ninety nine-point nine three times you get ninety nine-point some...something like that so</p>
+      <p begin="00:39:22.560" end="00:39:28.530">...less people think that I have a really great system but you really have to build...</p>
+      <p begin="00:39:28.530" end="00:39:33.450">systems in order to build dale...system again it goes back to building these...and,</p>
+      <p begin="00:39:33.450" end="00:39:36.700">the system is actually doing all of this...work.</p>
+      <p begin="00:39:36.700" end="00:39:41.130">Under the for you when you just basically did hey I...my data structure</p>
+      <p begin="00:39:41.130" end="00:39:44.960">...transaction and all of this stuff is right in your...you know,</p>
+      <p begin="00:39:44.960" end="00:39:50.180">regular...complete...it could be...cplus-plus code csharp or java</p>
+      <p begin="00:39:50.180" end="00:39:53.580">court or whatever we think we can come up at but,</p>
+      <p begin="00:39:53.580" end="00:39:58.490">you're right including complete logic in your favorite language using your favorite framework and the</p>
+      <p begin="00:39:58.490" end="00:40:06.680">system is doing the underlying grunge work to take care of in the your needs.</p>
+      <p begin="00:40:06.680" end="00:40:11.430">This is a straight-a stateful microsoft within...action,</p>
+      <p begin="00:40:11.430" end="00:40:16.060">... the system has obviously so far in this in this talk</p>
+      <p begin="00:40:16.060" end="00:40:19.300">I talked about single instance microsoft uses the best</p>
+      <p begin="00:40:19.300" end="00:40:24.080">stateless of straightforward obviously the system...much higher density than</p>
+      <p begin="00:40:24.080" end="00:40:30.370">...so, if you go back and sequel has one-point-two million databases</p>
+      <p begin="00:40:30.370" end="00:40:34.230">running on hundreds of thousands of machines and pencil those...machines you know,</p>
+      <p begin="00:40:34.230" end="00:40:38.090">the hundreds of thousands of processes running on those machines and the system</p>
+      <p begin="00:40:38.090" end="00:40:41.290">is watching carrying are looking at taken care of</p>
+      <p begin="00:40:41.290" end="00:40:46.000">...every individual database with the ninety nine-point nine latency that</p>
+      <p begin="00:40:46.000" end="00:40:49.870">...problem and reliability...promised or customize</p>
+      <p begin="00:40:49.870" end="00:40:57.110">the system is built to go and deal at that level now.</p>
+      <p begin="00:40:57.110" end="00:40:58.190">As you can see the in</p>
+      <p begin="00:40:58.190" end="00:41:05.100">their multiple replica as just like...in the gives a state a system services where you know,</p>
+      <p begin="00:41:05.100" end="00:41:09.740">at the cluster has multiple stateful microsoft uses and...all replicating to</p>
+      <p begin="00:41:09.740" end="00:41:15.310">their cohorts in some otherpart of the cluster this is all the system works I mean I'm giving</p>
+      <p begin="00:41:15.310" end="00:41:19.550">this little baby but I will also show you something else on hold the cluster actually</p>
+      <p begin="00:41:19.550" end="00:41:24.050">gets visualized so what happens when a primary replica receives</p>
+      <p begin="00:41:24.050" end="00:41:29.790">...from the cost from its clive if let's assume that...only doing it and, they read but it's going</p>
+      <p begin="00:41:29.790" end="00:41:34.710">...read it just can service attributes it doesn't even talk to...replicas</p>
+      <p begin="00:41:34.710" end="00:41:39.710">...people will talk about...there is primary secondary quorum so what we are building these replicated state missions</p>
+      <p begin="00:41:39.710" end="00:41:44.470">...length a slightly different from what you would know about axles machines are</p>
+      <p begin="00:41:44.470" end="00:41:49.180">because these...here there's a distinguish replica because we want leads to dominate gets</p>
+      <p begin="00:41:49.180" end="00:41:54.060">...dominate in any michael service compared to rights and you want leads</p>
+      <p begin="00:41:54.060" end="00:41:57.740">...you have eighty percent...seventy percent...fifty puts on read uone those</p>
+      <p begin="00:41:57.740" end="00:42:00.880">...to be satisfiability fast and you want to pay the cost</p>
+      <p begin="00:42:00.880" end="00:42:04.840">invite and if you're not careful and you don't have distinguish replica...you know,</p>
+      <p begin="00:42:04.840" end="00:42:07.450">you will not be able to of user</p>
+      <p begin="00:42:07.450" end="00:42:13.270">...so that's what the system actually guarantee there's a whole bunch of details here but when</p>
+      <p begin="00:42:13.270" end="00:42:17.130">...write happens as opposed to a...the primary actually figures,</p>
+      <p begin="00:42:17.130" end="00:42:21.550">you know, the transaction come...and we figure out what has all been updated we update the</p>
+      <p begin="00:42:21.550" end="00:42:24.860">...those rights...is...second movies come back and the acknowledge</p>
+      <p begin="00:42:24.860" end="00:42:28.810">...of them we actually commit the transaction on the primary and then</p>
+      <p begin="00:42:28.810" end="00:42:33.850">we respond bag and then the client generates and...the some...generates and activities</p>
+      <p begin="00:42:33.850" end="00:42:39.630">...if one of the...slow...later the system</p>
+      <p begin="00:42:39.630" end="00:42:44.750">...transactions already...will do nothing with that so this is also you know,</p>
+      <p begin="00:42:44.750" end="00:42:49.690">the system is very...with its...doing the bested...on the rights and, it's</p>
+      <p begin="00:42:49.690" end="00:42:53.370">...dollar and it's extremely scalable now?</p>
+      <p begin="00:42:54.500" end="00:42:56.510">In this thing this is all wonderful and</p>
+      <p begin="00:42:56.510" end="00:43:02.040">great and if I give you a probability of machine failures and if you don't do anything with this replica</p>
+      <p begin="00:43:02.040" end="00:43:06.400">set all these replicas will die so it's not enough for you to just do core alms</p>
+      <p begin="00:43:06.400" end="00:43:09.960">...or replication and other things you need to really take care of failures that</p>
+      <p begin="00:43:09.960" end="00:43:14.300">...and while these things are happening and that is this slide we have to</p>
+      <p begin="00:43:14.300" end="00:43:19.910">reconfigure these replica sets,... just like you know, we showed in the case of statefull michael service we can</p>
+      <p begin="00:43:19.910" end="00:43:24.930">be primary and the system actually reacted and promoted one of the second</p>
+      <p begin="00:43:24.930" end="00:43:29.340">...as a primary the way...build is your...the primary</p>
+      <p begin="00:43:29.340" end="00:43:33.550">...allocate a new primary and white-out the system is up and running</p>
+      <p begin="00:43:33.550" end="00:43:36.320">...at the lead use replication factor in this public is we</p>
+      <p begin="00:43:37.330" end="00:43:41.080">...running with for and what happens is that in all let's say that</p>
+      <p begin="00:43:41.080" end="00:43:45.540">pay replica that died, you know,...you know, it became back ical while it's happening and</p>
+      <p begin="00:43:45.540" end="00:43:51.680">of secondary diedthen the systems at all it's a secondly that died it again don't shifts to...reduce</p>
+      <p begin="00:43:51.680" end="00:43:56.400">replication factor for a temporary thing I mean the this reconfigurable knobs in the system</p>
+      <p begin="00:43:56.400" end="00:43:59.820">...starts running in the meantime one of the primary that</p>
+      <p begin="00:43:59.820" end="00:44:03.780">...comes back into the system we detect that all the system the system detects</p>
+      <p begin="00:44:03.780" end="00:44:06.420">...this particular replica was a primary?</p>
+      <p begin="00:44:06.420" end="00:44:07.470">But, deduce fairly</p>
+      <p begin="00:44:08.740" end="00:44:14.660">...if it's fairly, you know, close to what is the stayed in the current system and without this</p>
+      <p begin="00:44:14.660" end="00:44:20.360">prior when it before he died it catches up whatever state updates that particular</p>
+      <p begin="00:44:20.360" end="00:44:23.980">...primary fade and makes it the secondary now we're back to</p>
+      <p begin="00:44:23.980" end="00:44:28.600">for replication factor and if it ought to if it sees that...something called replica</p>
+      <p begin="00:44:28.600" end="00:44:33.240">restart we duration and...the...passes which is configure rubble the</p>
+      <p begin="00:44:33.240" end="00:44:37.830">...ok I'm not going to get another replica into the system let me go and build a new brand-new replica guide</p>
+      <p begin="00:44:37.830" end="00:44:41.410">...on the side catches that guy up?</p>
+      <p begin="00:44:41.410" end="00:44:46.360">then when it's fairly caught...brings it into the...set now we're back to five replication</p>
+      <p begin="00:44:46.360" end="00:44:51.430">factor...and obviously all of these things, you know, I'm showing a nice animation</p>
+      <p begin="00:44:51.430" end="00:44:54.920">...real system these things while you're doing a primary election</p>
+      <p begin="00:44:54.920" end="00:45:00.010">the new primary may die while you're doing a secondary and of the primary made by the lots of bad things, you know,</p>
+      <p begin="00:45:00.010" end="00:45:02.630">...can have can happen in the system so</p>
+      <p begin="00:45:02.630" end="00:45:07.080">building this thing is not for faint of the hard you really think and,</p>
+      <p begin="00:45:07.080" end="00:45:10.990">it's not it's not the annoyed these are harp and obviously if you put our mind</p>
+      <p begin="00:45:10.990" end="00:45:15.050">...anything we can go and solve this problem but do we really need to solve this problem</p>
+      <p begin="00:45:15.050" end="00:45:20.910">repeatedly do we really can't be leverage andstand on the shoulders of the jade whether it's</p>
+      <p begin="00:45:20.910" end="00:45:26.410">other whether somebody else so this is how we belt has a don't want to...have every</p>
+      <p begin="00:45:26.410" end="00:45:32.670">the first...going build these things I'm even though we...on?</p>
+      <p begin="00:45:32.670" end="00:45:37.580">Trust me I think we...build...of all these things and, many of them are bugs.</p>
+      <p begin="00:45:37.580" end="00:45:42.370">They don't...on you bug fixed in one service doesn't make it to the other...so we actually ended up</p>
+      <p begin="00:45:42.370" end="00:45:46.570">building service fabric to go and solve these problems ones for all and we have been running</p>
+      <p begin="00:45:46.570" end="00:45:54.190">...for five years and now we the time for us to really make it broadly available.</p>
+      <p begin="00:45:54.190" end="00:45:58.980">I remember I talked about a single services stateful microsoft resource...michael service and again</p>
+      <p begin="00:45:58.980" end="00:46:00.300">...statefull rs</p>
+      <p begin="00:46:00.300" end="00:46:05.190">...can be partition in this particular case I'm actually showing you guys...of</p>
+      <p begin="00:46:05.190" end="00:46:11.140">...so, when the system says I will need to create a service you can say I want a</p>
+      <p begin="00:46:11.140" end="00:46:16.040">...stateful microsoft ways of ten partitions each replicated three-time</p>
+      <p begin="00:46:16.040" end="00:46:20.330">...replication and...the system will take care of all of that in this popular case it's creating a</p>
+      <p begin="00:46:20.330" end="00:46:25.550">four-bit replicated partition of the state-to-state</p>
+      <p begin="00:46:25.550" end="00:46:31.430">...michael service ...the firstpartition...a second</p>
+      <p begin="00:46:31.430" end="00:46:37.080">...third partition...some point it...the partition that you need while and then</p>
+      <p begin="00:46:37.080" end="00:46:41.900">...this...doing this one of the machine fails remember what's between the two</p>
+      <p begin="00:46:41.900" end="00:46:46.520">...look, at the green partition the green partitions primary</p>
+      <p begin="00:46:46.520" end="00:46:49.490">walls on-the-field machine the system react fast?</p>
+      <p begin="00:46:50.510" end="00:46:53.240">...in on the federation comes and says okay this machine</p>
+      <p begin="00:46:53.240" end="00:46:56.320">...the system heals itself and,</p>
+      <p begin="00:46:56.320" end="00:47:01.150">then comes back and says there was a primary partition green primary partition that was living on this</p>
+      <p begin="00:47:01.150" end="00:47:05.290">...machine let me go and alec one of the secondary...the primary so-you</p>
+      <p begin="00:47:05.290" end="00:47:10.220">does done that and now says all there...some bunch of second is that we're running on</p>
+      <p begin="00:47:10.220" end="00:47:13.780">...machine and these orange partition...partition</p>
+      <p begin="00:47:13.780" end="00:47:18.700">are actually sending replicated operations which are going into mapping the remember the</p>
+      <p begin="00:47:18.700" end="00:47:23.330">added now says let me stop those things and now the system is actually fairly record</p>
+      <p begin="00:47:23.330" end="00:47:28.140">although...running with...replication factor in the case of, you know,...of these</p>
+      <p begin="00:47:28.140" end="00:47:33.310">a partitions now we realizes that all its...and it starts building new replicas assuming that we got</p>
+      <p begin="00:47:33.310" end="00:47:38.040">...probably duration of fast and then it goes back and now the system</p>
+      <p begin="00:47:38.040" end="00:47:40.810">has completely heal from this machine failure and</p>
+      <p begin="00:47:40.810" end="00:47:44.780">...actually drive home the point we will actually show you a cluster monitor</p>
+      <p begin="00:47:46.550" end="00:47:57.150">...this thing running in the system which is what...eight yes.</p>
+      <p begin="00:47:57.150" end="00:48:04.460">You can see on the right-hand side on the left side.</p>
+      <p begin="00:48:04.460" end="00:48:07.180">So, here is a stateful partition micros</p>
+      <p begin="00:48:07.180" end="00:48:13.570">service which has multiple partitions and this is the visualization of it.</p>
+      <p begin="00:48:13.570" end="00:48:18.740">Here is the cluster monitor that issuing where the primaries and</p>
+      <p begin="00:48:18.740" end="00:48:22.220">secondary...pleased so, you can see here</p>
+      <p begin="00:48:22.220" end="00:48:27.220">for this particular partition the primary is here and the two-x two-second...</p>
+      <p begin="00:48:27.220" end="00:48:32.550">notify and node...on this one the primaries on node three and the</p>
+      <p begin="00:48:32.550" end="00:48:38.420">secondary on this as well as the secondary on the on another node?</p>
+      <p begin="00:48:38.420" end="00:48:44.500">So, you can see that all of these things are...war in the system and</p>
+      <p begin="00:48:44.500" end="00:48:48.640">you can visualize these things you can, you know, we have explorers we have some</p>
+      <p begin="00:48:48.640" end="00:48:57.770">on some built-inservices that will tell you what is running where and.</p>
+      <p begin="00:48:57.770" end="00:49:02.380">Which...</p>
+      <p begin="00:49:02.380" end="00:49:07.730">Now you know, so, far I talked about stateless...single instance stateless michael servicing instance</p>
+      <p begin="00:49:07.730" end="00:49:11.070">...micro...and then I talked about how you can partition them so that you get a</p>
+      <p begin="00:49:11.070" end="00:49:14.500">large number of instances and now you actually</p>
+      <p begin="00:49:14.500" end="00:49:19.690">your application assayactually describe right at the beginning is not a single michael...a bunch of</p>
+      <p begin="00:49:19.690" end="00:49:22.560">...services that you put together and</p>
+      <p begin="00:49:22.560" end="00:49:27.720">deploy them together into the cluster and that's what this particular slide is actually showing</p>
+      <p begin="00:49:27.720" end="00:49:31.910">...animation so-if</p>
+      <p begin="00:49:31.910" end="00:49:38.120">...those containers and places those microsoft uses and this and more importantly</p>
+      <p begin="00:49:38.120" end="00:49:44.590">you can create multiple instances of this state this a</p>
+      <p begin="00:49:44.590" end="00:49:48.190">application learning in the cluster and you can do ab testing you can have your</p>
+      <p begin="00:49:48.190" end="00:49:53.230">goal customers go-to one instance of the application and which is more a</p>
+      <p begin="00:49:53.230" end="00:49:57.660">...a ...a lower twitch than, you know, bleeding edge</p>
+      <p begin="00:49:57.660" end="00:50:01.200">...where you really are doing no more features</p>
+      <p begin="00:50:01.200" end="00:50:06.240">...in updating them faster and you without affecting your goal customer so you can actually</p>
+      <p begin="00:50:06.240" end="00:50:12.080">...instances of these applications running in the</p>
+      <p begin="00:50:12.080" end="00:50:14.390">...in the cluster inside if you actually go and ask for</p>
+      <p begin="00:50:14.390" end="00:50:18.520">...visual database we give you a set of databases those databases...really</p>
+      <p begin="00:50:18.520" end="00:50:23.970">district from the databases in a more in the new...you db you go-go compared to the databases</p>
+      <p begin="00:50:23.970" end="00:50:28.040">...customer each customer can say I want update my database to the later</p>
+      <p begin="00:50:28.040" end="00:50:32.310">...also reese's sequels or...the customer...I...back on my got my</p>
+      <p begin="00:50:32.310" end="00:50:37.220">...base so we are giving all these flexibility we build all these things so that,</p>
+      <p begin="00:50:37.220" end="00:50:46.580">you know, you again once again can take these things can be taken care of for-you?</p>
+      <p begin="00:50:46.580" end="00:50:50.360">Comes the application lifecycle so we talked about how we provide a bunch of</p>
+      <p begin="00:50:50.360" end="00:50:53.400">reach runtime capabilities to microsoft reese's and,</p>
+      <p begin="00:50:53.400" end="00:50:56.560">this particular case that's right I mean obviously that's great that's</p>
+      <p begin="00:50:56.560" end="00:51:01.690">useful but we also need to provide additional capabilities so that are in a for...workloads</p>
+      <p begin="00:51:01.690" end="00:51:09.550">...for the null unless you guys will be able to go and.</p>
+      <p begin="00:51:09.550" end="00:51:13.430">I know do lifecycle management operations on your microsoft...you want to really</p>
+      <p begin="00:51:13.430" end="00:51:17.720">provision and apply in all contribute michael services you really want to upgrade</p>
+      <p begin="00:51:17.720" end="00:51:22.530">michael services without affecting without affecting other microsoft reese's and,</p>
+      <p begin="00:51:22.530" end="00:51:27.890">without losing any availability you want to met...michael services, you know, whether that how the are not</p>
+      <p begin="00:51:27.890" end="00:51:33.650">there's a built-in health system in the system and you want more importantly you want to</p>
+      <p begin="00:51:33.650" end="00:51:38.770">do have guarantees in the system...many times you actually know this by now we</p>
+      <p begin="00:51:38.770" end="00:51:42.890">...you guys are probably realize that this is a highly consistent system you can</p>
+      <p begin="00:51:42.890" end="00:51:46.010">relaxes consistency but by the by default you get a</p>
+      <p begin="00:51:46.010" end="00:51:50.110">highly consistent system because without consistency is very hard to</p>
+      <p begin="00:51:50.110" end="00:51:55.860">reason the correctness let's say you're trying to upgrade the protocol that a particularmicrosoft</p>
+      <p begin="00:51:55.860" end="00:52:01.950">is implements in order to do that upgrade you need to go and make sure...that a</p>
+      <p begin="00:52:01.950" end="00:52:06.760">microsoft used to support...protocol in the new protocol as well as you know,</p>
+      <p begin="00:52:06.760" end="00:52:12.800">upgraded it's blind so that this start talking new protocols but you cannot go and removal</p>
+      <p begin="00:52:14.120" end="00:52:17.280">that support for the word protocol until all its clients</p>
+      <p begin="00:52:17.280" end="00:52:21.760">...are ...services and also...also been...how you get</p>
+      <p begin="00:52:21.760" end="00:52:26.440">the guarantee in the system again the system comes back and says one through those finish the guaranteed</p>
+      <p begin="00:52:26.440" end="00:52:31.420">says there is no war code running in the system so what you do or what we do is do a two-face</p>
+      <p begin="00:52:31.420" end="00:52:36.640">upgrade you actually have the war protocol implement the new protocol how the service...support</p>
+      <p begin="00:52:36.640" end="00:52:43.510">both those protocols and then go back and do other configure</p>
+      <p begin="00:52:43.510" end="00:52:49.260">...switch to using only the new protocol and it...you actually remove that</p>
+      <p begin="00:52:49.260" end="00:52:52.730">...so that so you actually can manage</p>
+      <p begin="00:52:52.730" end="00:52:56.390">in the life-cycle of...as</p>
+      <p begin="00:52:56.390" end="00:53:00.880">...lasting for years in some cases tens of years and you still want to be able to reason</p>
+      <p begin="00:53:00.880" end="00:53:05.880">about this system all I know that this particular version of the code is running in the system and I know that</p>
+      <p begin="00:53:05.880" end="00:53:10.790">the system is guaranteed to me that no waller version of the code that is running I mean if you have</p>
+      <p begin="00:53:10.790" end="00:53:15.490">...hundreds of thousands of machines...keep track of these things all of these things</p>
+      <p begin="00:53:15.490" end="00:53:26.240">are to be automated so next I'm going to show you guys?</p>
+      <p begin="00:53:26.240" end="00:53:26.880">The actual</p>
+      <p begin="00:53:26.880" end="00:53:32.520">...behind these services you can actually see that this visual objectis actually</p>
+      <p begin="00:53:32.520" end="00:53:37.590">a...an actor and it doesn't on activate method it starts it takes</p>
+      <p begin="00:53:37.590" end="00:53:41.030">...life...and the...and we just a</p>
+      <p begin="00:53:41.030" end="00:53:46.580">...the timer...it actually goals and moves itself here is a</p>
+      <p begin="00:53:46.580" end="00:53:52.450">...more remember in vone core...saying...to rotate so we</p>
+      <p begin="00:53:52.450" end="00:53:56.280">be and the...status...ball I mean in the case of I mean</p>
+      <p begin="00:53:56.280" end="00:54:00.870">there's transaction pieces reliable services and there's another api called reliable object is</p>
+      <p begin="00:54:00.870" end="00:54:05.120">...objects api you can think...in terms of objects</p>
+      <p begin="00:54:05.120" end="00:54:09.590">...virtual actors and you can actually go and build your</p>
+      <p begin="00:54:09.590" end="00:54:13.160">...programming model you like you can be your code on top of it and,</p>
+      <p begin="00:54:13.160" end="00:54:15.630">the aps...simple you know,</p>
+      <p begin="00:54:15.630" end="00:54:21.520">you get activated you get the activated you have a bunch of timers that you can actually</p>
+      <p begin="00:54:21.520" end="00:54:25.880">...as needed...you can actually...for find reckless...you're done and here in this</p>
+      <p begin="00:54:25.880" end="00:54:30.610">public is the primary speaking and actually updating the location of the object and if</p>
+      <p begin="00:54:30.610" end="00:54:35.390">you go to the movement...you can see that?</p>
+      <p begin="00:54:35.390" end="00:54:38.610">The at the end if the rotate these true it's adding</p>
+      <p begin="00:54:38.610" end="00:54:52.190">attend degree rotation to the object and if you go back and.</p>
+      <p begin="00:54:52.190" end="00:54:56.110">You can see that all these things are actually not rotating so these are all running</p>
+      <p begin="00:54:56.110" end="00:55:04.310">version one of the code we are now going to go to washington to of the code.</p>
+      <p begin="00:55:04.310" end="00:55:07.080">This is...rotate is falls</p>
+      <p begin="00:55:07.080" end="00:55:09.650">...to rotate this group.</p>
+      <p begin="00:55:09.650" end="00:55:12.770">And, we'll do an upgrade and you will see that the system will go</p>
+      <p begin="00:55:12.770" end="00:55:20.480">through the upgrade without losing availability and...of the...you'll see these objects rotator.</p>
+      <p begin="00:55:20.480" end="00:55:24.410">Some gloom the start the grid we can watch the</p>
+      <p begin="00:55:24.410" end="00:55:30.720">of grid progress in the cluster monitor as well as in the explore</p>
+      <p begin="00:55:30.720" end="00:55:35.280">solve keep both of these here and as gopal mention are wild</p>
+      <p begin="00:55:35.280" end="00:55:38.900">...grid is happening you will see that the system doesn't lose</p>
+      <p begin="00:55:38.900" end="00:55:42.870">this state which means that this objects that are there they will</p>
+      <p begin="00:55:42.870" end="00:55:47.340">...momentarily and restart from the same position remember the state of the object was</p>
+      <p begin="00:55:47.340" end="00:55:52.200">its current location and the history if the system where to lose the state</p>
+      <p begin="00:55:52.200" end="00:55:56.850">you can you would you would see the object jumping all...all you can see that it actually went through</p>
+      <p begin="00:55:56.850" end="00:56:02.560">a bunch of updated actually took a bunch of code packages...and to the upgrade</p>
+      <p begin="00:56:02.560" end="00:56:07.810">...switch to the other one and I'll will come back to this no,</p>
+      <p begin="00:56:07.810" end="00:56:09.600">this is where?</p>
+      <p begin="00:56:09.600" end="00:56:11.220">You know, this is what is happening in the</p>
+      <p begin="00:56:11.220" end="00:56:16.930">system you have a as a package which is already running if...</p>
+      <p begin="00:56:16.930" end="00:56:21.570">is already running and we want to sorry?</p>
+      <p begin="00:56:21.570" end="00:56:24.460">So, this was this is the my...of microsoft</p>
+      <p begin="00:56:24.460" end="00:56:29.440">is running on the system and we decided to convert the yellow one from</p>
+      <p begin="00:56:29.440" end="00:56:34.330">...blue one which is...and now we want to...what the system is does is it</p>
+      <p begin="00:56:34.330" end="00:56:39.260">goes and carefully orchestrated upgrading each of those yellow one without actually</p>
+      <p begin="00:56:39.260" end="00:56:44.220">...losing availability always maintaining core alms so all the time the rights are going</p>
+      <p begin="00:56:44.220" end="00:56:48.460">through and the system...up all the time and,</p>
+      <p begin="00:56:48.460" end="00:57:01.060">it also monitors all these...so that if anything goes bad...back.</p>
+      <p begin="00:57:01.060" end="00:57:06.430">They, yeah, so.</p>
+      <p begin="00:57:06.430" end="00:57:10.510">So, now you can see that...some of these objects are rotating you can see that one of them is</p>
+      <p begin="00:57:10.510" end="00:57:16.360">actually rotating if you can see that as update is going through obviously these</p>
+      <p begin="00:57:16.360" end="00:57:22.130">update your be very careful...these are not willy-nilly...create and instances</p>
+      <p begin="00:57:22.130" end="00:57:25.950">...I can do that very easily...stateless I can easily created liked</p>
+      <p begin="00:57:25.950" end="00:57:30.700">hundreds of instances when you're dealing with statefull staff you really have to make sure</p>
+      <p begin="00:57:30.700" end="00:57:35.410">...there in some cases obviously these objects are simple objects but in some cases like databases</p>
+      <p begin="00:57:35.410" end="00:57:40.190">your gigabytes of speed you really need to think of old how you carefully</p>
+      <p begin="00:57:40.190" end="00:57:46.020">orchestrate these things so that you never lose availability this is not in a real-world you know,</p>
+      <p begin="00:57:46.020" end="00:57:50.550">you this stateful objects are very complex objects and they have lots of state</p>
+      <p begin="00:57:50.550" end="00:57:57.320">it's not a demo thing that I can go...has been of like hundred instances...instances you know,</p>
+      <p begin="00:57:57.320" end="00:58:02.510">when the system is balancing them it's actually doing it very carefully we told you actually losing</p>
+      <p begin="00:58:02.510" end="00:58:07.180">availability, you know, but, I...I'm doing upgraded it's not that the most important thing for</p>
+      <p begin="00:58:07.180" end="00:58:11.700">me use forty-two really complete and I want to completed in an automatic way...told me...</p>
+      <p begin="00:58:11.700" end="00:58:16.500">holding it but I want to do it in a very easy way so now you can see that</p>
+      <p begin="00:58:16.500" end="00:58:18.120">this...the cost update</p>
+      <p begin="00:58:18.120" end="00:58:23.100">is going through and it bringing on more and more the thing what are the last ud and,</p>
+      <p begin="00:58:23.100" end="00:58:28.610">you can see that it's got remember I told you how it's going...time or update domain at a time</p>
+      <p begin="00:58:28.610" end="00:58:33.630">...failure domain you can see that it's computed...one...and then it's actually and,</p>
+      <p begin="00:58:33.630" end="00:58:38.770">I'll actually it's done is that...so</p>
+      <p begin="00:58:40.090" end="00:58:47.750">yeah, it's completed so now you would see that all of them are actually rotating?</p>
+      <p begin="00:58:47.750" end="00:58:54.970">So, this is what we are build the system and, there's one other thing which.</p>
+      <p begin="00:58:54.970" end="00:58:59.480">I want to talk abode which is the test ability all of this is wonderful but,</p>
+      <p begin="00:58:59.480" end="00:59:02.130">you know, that...will always of bugs</p>
+      <p begin="00:59:02.130" end="00:59:06.510">...you write code you want to have some amount of failures</p>
+      <p begin="00:59:06.510" end="00:59:11.170">happening in the system all the time and you can actually dial-up or dialed</p>
+      <p begin="00:59:11.170" end="00:59:15.530">...those the rate of those failure so the system actually comes with the prebuilt</p>
+      <p begin="00:59:15.530" end="00:59:18.210">cure-all service which is actually</p>
+      <p begin="00:59:18.210" end="00:59:21.880">...own and killing processes killing machines</p>
+      <p begin="00:59:21.880" end="00:59:27.080">...machines all...very bad things and...dial on a variety of</p>
+      <p begin="00:59:27.080" end="00:59:31.250">...disease-causing and you can dial them up...them...and</p>
+      <p begin="00:59:31.250" end="00:59:36.420">ensure that you know, your services running bug free most of the time so this is all you</p>
+      <p begin="00:59:36.420" end="00:59:41.580">vetoed the bugs before, you know,...hate your customers...there will be some bugs that will be</p>
+      <p begin="00:59:41.580" end="00:59:46.640">there and production systems but hopefully by the time it hits the production your</p>
+      <p begin="00:59:46.640" end="00:59:50.970">redid or most of the bug and you also have the key also is running in your production system so that</p>
+      <p begin="00:59:50.970" end="00:59:53.310">...reading...bug as the appear you rather</p>
+      <p begin="00:59:53.310" end="00:59:57.780">...them sooner than later so you can actually deployed the service on by the way</p>
+      <p begin="00:59:57.780" end="01:00:02.300">...lowered also uses...and you can actually go and</p>
+      <p begin="01:00:02.300" end="01:00:05.760">deploy and in this particular slide you can see that...stability</p>
+      <p begin="01:00:05.760" end="01:00:11.190">use actually causing a bunch of failure modes and as those failures are happening</p>
+      <p begin="01:00:11.190" end="01:00:19.060">...let me see what had to put all my glasses the problem of for...</p>
+      <p begin="01:00:19.060" end="01:00:23.760">The agency...activated code packages it is killing machines that clearly it's</p>
+      <p begin="01:00:23.760" end="01:00:28.330">...processes and then as it's doing its job you know,</p>
+      <p begin="01:00:28.330" end="01:00:33.080">the cluster in the cluster visualize...what's happening in the system so</p>
+      <p begin="01:00:33.080" end="01:00:37.210">again the system comes with a bunch of prebuilt services you can choose to build in</p>
+      <p begin="01:00:37.210" end="01:00:44.550">a deploy them like you...this putting together looks like...and...and then the system continues to operate.</p>
+      <p begin="01:00:44.550" end="01:00:47.400">That brings me to.</p>
+      <p begin="01:00:47.400" end="01:00:52.580">And, obviously there's a lot more interesting stuff here.</p>
+      <p begin="01:00:53.680" end="01:00:59.940">You know, brings me to look and of my talk you know, this.</p>
+      <p begin="01:00:59.940" end="01:01:03.500">We built this service ...that we build this</p>
+      <p begin="01:01:03.500" end="01:01:08.950">platform this distributed systems platform primarily for force parties ...us</p>
+      <p begin="01:01:08.950" end="01:01:13.940">parties you use a bunch of low-level apis in our system.</p>
+      <p begin="01:01:13.940" end="01:01:18.740">We realize that, you know, some of those aps most of them are native apis...have a bunch of</p>
+      <p begin="01:01:18.740" end="01:01:23.130">...more...a bunch of code in the system if you actually downloadable installed a bunch of</p>
+      <p begin="01:01:23.130" end="01:01:29.350">...as well so the amount of code that these guys...using the aps...but using</p>
+      <p begin="01:01:29.350" end="01:01:34.320">the low-level apis we thought that we actually in order to make the system more approachable we started working</p>
+      <p begin="01:01:34.320" end="01:01:39.070">...a year-ago building higher-level programming models and higher-level apis on</p>
+      <p begin="01:01:39.070" end="01:01:40.460">...the system.</p>
+      <p begin="01:01:40.460" end="01:01:44.590">The core has been bigger long long-time but the stuff that viet building on</p>
+      <p begin="01:01:44.590" end="01:01:46.570">top these approachable programming models</p>
+      <p begin="01:01:46.570" end="01:01:52.010">are approachable apis and the visual studio integration you still...maybe some</p>
+      <p begin="01:01:52.010" end="01:01:56.960">rough edges that you guys will encounter as you guys are using but we are going to fix all of them and,</p>
+      <p begin="01:01:56.960" end="01:02:00.360">you know, and, the qualities bait so it is all this, you know,</p>
+      <p begin="01:02:00.360" end="01:02:03.640">higher-level little things or these this parameter name dried</p>
+      <p begin="01:02:03.640" end="01:02:07.620">...confusing or did actually do that I'd thing and maybe there's a bug</p>
+      <p begin="01:02:07.620" end="01:02:11.970">...also so the key is that we big the core we're giving you</p>
+      <p begin="01:02:11.970" end="01:02:16.110">theaccess to these tobits with the much...more approachable</p>
+      <p begin="01:02:16.110" end="01:02:20.450">...programming model as well as tooling integrations where you may see some</p>
+      <p begin="01:02:20.450" end="01:02:24.810">...ridges but, you know, if you guys user providers feedback via</p>
+      <p begin="01:02:24.810" end="01:02:28.890">our and we are going to ship this even on a weekly with them</p>
+      <p begin="01:02:28.890" end="01:02:34.700">and we will want to take you guys to production by the end of this year if plausible so,</p>
+      <p begin="01:02:34.700" end="01:02:39.370">please go download the...bill apps on top of this and,</p>
+      <p begin="01:02:39.370" end="01:02:42.880">give us feedback and that will help us make the system better?</p>
+
+    </div>
+  </body>
+</tt>

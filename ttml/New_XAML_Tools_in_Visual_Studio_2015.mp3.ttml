@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.912</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.209" end="00:00:08.919">All right it's about time to get started thank you everyone for taking the time to</p>
+      <p begin="00:00:08.919" end="00:00:12.219">attend the session I...I mean they're not in I</p>
+      <p begin="00:00:12.219" end="00:00:16.649">am a program manager working on visual studio today and I'm</p>
+      <p begin="00:00:16.649" end="00:00:20.569">going-to be taking you on a tour of some of the new salmon tools we have build and visual</p>
+      <p begin="00:00:20.569" end="00:00:26.289">studio twenty fifteen I'm really excited to show what we have today by the way I'd like to extend a</p>
+      <p begin="00:00:26.289" end="00:00:35.080">special welcome to everyone that's watching online to channel line welcome to the session as well.</p>
+      <p begin="00:00:35.080" end="00:00:36.700">So, today we're going to be doing</p>
+      <p begin="00:00:36.700" end="00:00:40.970">a doer of a bunch of new experiences in visual studio and,</p>
+      <p begin="00:00:40.970" end="00:00:45.760">in the interest of time I'm going to try to go through this as fast as I can but</p>
+      <p begin="00:00:45.760" end="00:00:50.090">I'd really appreciate if you have any questions about anything that we're going to see today</p>
+      <p begin="00:00:50.090" end="00:00:54.770">just raise your hand don't need to wait till the very...the presentation feel free to ask the</p>
+      <p begin="00:00:54.770" end="00:00:59.030">question I'll make my best...addressing itwe're</p>
+      <p begin="00:00:59.030" end="00:01:03.750">going to look at the news animal language service...that we are build and</p>
+      <p begin="00:01:03.750" end="00:01:08.140">...twenty fifteen primarily to address a bunch of feedback that we have</p>
+      <p begin="00:01:08.140" end="00:01:12.060">heard from you guys we're going to take a tour of the new blend</p>
+      <p begin="00:01:12.060" end="00:01:16.570">of build blend from the ground-up to addresssome of the key feedback</p>
+      <p begin="00:01:16.570" end="00:01:19.850">vote from you and then I'm going to take you two-a-two</p>
+      <p begin="00:01:19.850" end="00:01:24.330">...of my favorite new feature and registry twenty fifteen the ui debugging tools,</p>
+      <p begin="00:01:24.330" end="00:01:28.580">for example, I'm going to show you what you can do these tools where we are today and where</p>
+      <p begin="00:01:28.580" end="00:01:32.570">...be going forward I'm going to show you some of the profiling tools</p>
+      <p begin="00:01:32.570" end="00:01:38.110">in particular we have added a couple of new cool twentytwenty fifteen profiling tools</p>
+      <p begin="00:01:38.110" end="00:01:43.400">namely the timeline tool...helps you understand ui responsiveness issues</p>
+      <p begin="00:01:43.400" end="00:01:48.160">in your application and then finally I'm going to switch gears a little bit and talk a little bit about</p>
+      <p begin="00:01:48.160" end="00:01:51.300">form factor adaptive apps for universal windows platform</p>
+      <p begin="00:01:51.300" end="00:01:56.270">maps now the one thing I should make very clear as for most of these demos I'm</p>
+      <p begin="00:01:56.270" end="00:01:59.430">going to be doing it in the context of...but</p>
+      <p begin="00:01:59.430" end="00:02:04.230">experiences are equally applicable to any example applications you may be building a windows a</p>
+      <p begin="00:02:04.230" end="00:02:07.440">...one application...windows...universal</p>
+      <p begin="00:02:07.440" end="00:02:13.400">...you'll notice that all of these experiences were pretty consistently across</p>
+      <p begin="00:02:13.400" end="00:02:19.200">...labs the only exception is the last one the form factor adaptive apps I'm going to</p>
+      <p begin="00:02:19.200" end="00:02:22.240">do a demo in the context of you know,</p>
+      <p begin="00:02:22.240" end="00:02:27.090">...universal windows app before I get started I'm just curious what percentage</p>
+      <p begin="00:02:27.090" end="00:02:30.910">of how many of you actually build a jpf app today?</p>
+      <p begin="00:02:30.910" end="00:02:31.880">Okay, so, that's.</p>
+      <p begin="00:02:32.990" end="00:02:37.000">Almost...audience how many of you build a windows a dot one application</p>
+      <p begin="00:02:38.090" end="00:02:41.910">okay that's actually pretty good number so that's good to know that, you know, there's an interest that's</p>
+      <p begin="00:02:41.910" end="00:02:46.290">...fairly evenly split so I'll that demos that I'm going to show</p>
+      <p begin="00:02:46.290" end="00:02:51.270">are primarily jpf but I'll call out any differences that you might want to know when it comes to a windows</p>
+      <p begin="00:02:51.270" end="00:02:55.610">...application...windows a dot when application.</p>
+      <p begin="00:02:55.610" end="00:02:59.430">So, let's get started the first experience I'm going to demonstrate today is the</p>
+      <p begin="00:02:59.430" end="00:03:03.110">news animal editor inverter studio we have actually</p>
+      <p begin="00:03:03.110" end="00:03:06.100">rebuilt and from the ground-up using</p>
+      <p begin="00:03:07.630" end="00:03:11.340">...platform technologythat we that we affectionately</p>
+      <p begin="00:03:11.340" end="00:03:14.930">knew as roslyn because we were to provide a very seamless fully</p>
+      <p begin="00:03:14.930" end="00:03:20.770">integrated experience between example and your csharp code we...you know,</p>
+      <p begin="00:03:20.770" end="00:03:24.970">everyone should like, you know, the example is just sort of like an extension...you know,</p>
+      <p begin="00:03:24.970" end="00:03:28.880">the way you write code and it doesn't make sense to have like a despaired experience we tried to</p>
+      <p begin="00:03:28.880" end="00:03:33.830">marry these together and this first...we have added a few new features but the</p>
+      <p begin="00:03:33.830" end="00:03:38.760">key here is we have built the foundation to start adding significant new</p>
+      <p begin="00:03:38.760" end="00:03:44.930">experience as we evolve you know, future versions of the studio the one thing I should mention</p>
+      <p begin="00:03:44.930" end="00:03:49.650">...studios now completely the couple from the designer what really means is</p>
+      <p begin="00:03:49.650" end="00:03:54.300">...designer may not work let's say it's writing it's running some of your code and</p>
+      <p begin="00:03:54.300" end="00:03:55.490">there's an exception but</p>
+      <p begin="00:03:55.490" end="00:04:00.200">...analytical never stop working going forward...be fast and fluid and that's a promise you</p>
+      <p begin="00:04:00.200" end="00:04:04.470">...delaware this version of visual studio because...loud and clear you know,</p>
+      <p begin="00:04:04.470" end="00:04:08.910">we cannot miss that part up and then finally like I said we want</p>
+      <p begin="00:04:08.910" end="00:04:13.890">...the and what we have now is the foundation for experience where you</p>
+      <p begin="00:04:13.890" end="00:04:17.370">can start bringing newer new your experiences for editing</p>
+      <p begin="00:04:17.370" end="00:04:20.460">example to-you quickly and this is sort of like the first</p>
+      <p begin="00:04:20.460" end="00:04:25.450">iteration so let's get started by the way I'm going to primarily do demos so I might,</p>
+      <p begin="00:04:25.450" end="00:04:28.910">you know, go a little fast so please,</p>
+      <p begin="00:04:28.910" end="00:04:36.240">please...feel free to correct at any point so let me switch do my demo machine?</p>
+      <p begin="00:04:36.240" end="00:04:38.930">Which is six all right so</p>
+      <p begin="00:04:38.930" end="00:04:44.490">on-screen here I have a simple wpf application it's justan extremely basic</p>
+      <p begin="00:04:44.490" end="00:04:50.120">...project management style application but that's besides the point the very first thing you'll</p>
+      <p begin="00:04:50.120" end="00:04:55.010">notice as we still have a...designer inverse video and you're doing a lot of work in various</p>
+      <p begin="00:04:55.010" end="00:04:57.150">...twenty fifteen to make the</p>
+      <p begin="00:04:57.150" end="00:05:03.030">designer more reliable and perform and that's something that we're doing anyway but that said</p>
+      <p begin="00:05:03.030" end="00:05:08.530">we fully acknowledge that are a number of you out there that think of visual studio as a coding and</p>
+      <p begin="00:05:08.530" end="00:05:13.410">one-minute and want to have the best full-screen coding experience out there so you</p>
+      <p begin="00:05:13.410" end="00:05:17.750">guys we are adding a couple of new capabilities to visual studiothat I want</p>
+      <p begin="00:05:17.750" end="00:05:22.630">...demonstrate to start with the very first capability inverter studio that you can choose to do if</p>
+      <p begin="00:05:22.630" end="00:05:27.080">you're workflow is as such as you can go to the example designer...and you now have</p>
+      <p begin="00:05:27.080" end="00:05:32.050">a very clean check box that lets you turn of the designer if that's your workflow?</p>
+      <p begin="00:05:32.050" end="00:05:35.670">Whoops I probably should not have twitter running but we'll</p>
+      <p begin="00:05:35.670" end="00:05:42.140">...that so let's go...the designer hid okay and it requires the restart</p>
+      <p begin="00:05:42.140" end="00:05:45.380">of visual studio...just going to go and do that and,</p>
+      <p begin="00:05:45.380" end="00:05:50.500">now you'll notice that when the solution loads back in visual studio it should have</p>
+      <p begin="00:05:50.500" end="00:05:51.990">a full-screen you know,</p>
+      <p begin="00:05:51.990" end="00:05:56.790">example editor experience that should give you the best possible experience for editing code?</p>
+      <p begin="00:05:56.790" end="00:06:01.390">So, that's one part of the workflow but now what have you done on</p>
+      <p begin="00:06:01.390" end="00:06:05.290">job to improve your productivity the first feature I want to show you example</p>
+      <p begin="00:06:05.290" end="00:06:10.600">...download link allows you to take your content no matter where it's coming from it could be csharp</p>
+      <p begin="00:06:10.600" end="00:06:15.070">code...it could be even that will styles and resources that are coming from anywhere</p>
+      <p begin="00:06:15.070" end="00:06:18.910">...project we bring that write-in place where you want</p>
+      <p begin="00:06:18.910" end="00:06:23.300">edit that provides you with a very seamless editing experience, for example, so,</p>
+      <p begin="00:06:23.300" end="00:06:27.850">let's take a log in this particular case I have a window and the window has a</p>
+      <p begin="00:06:27.850" end="00:06:32.480">particular code behind...backing it in this case main window let me go</p>
+      <p begin="00:06:32.480" end="00:06:36.580">...the main window code historically what I'd have to do is after open</p>
+      <p begin="00:06:36.580" end="00:06:39.520">main window example in the solution explore</p>
+      <p begin="00:06:39.520" end="00:06:44.400">double-click and then start making changes here but what if I want to make a really quick and it</p>
+      <p begin="00:06:44.400" end="00:06:49.130">...my csharp code what's the workflow...twenty fifteen you can just</p>
+      <p begin="00:06:49.130" end="00:06:54.100">write click on anywhere in your example...definition and</p>
+      <p begin="00:06:54.100" end="00:07:02.900">will bring the csharp code from wherever it is...again editor?</p>
+      <p begin="00:07:02.900" end="00:07:07.900">like you would expect all of the editing operations are fully supported here so in this case let me</p>
+      <p begin="00:07:07.900" end="00:07:12.430">go...rename this particular class so, I'm going to say rename this to</p>
+      <p begin="00:07:12.430" end="00:07:17.070">let's say project tracker main window</p>
+      <p begin="00:07:17.070" end="00:07:22.100">...the...you'll notice that...go rename yours, you know,example</p>
+      <p begin="00:07:22.100" end="00:07:28.330">as well and everything is very seamlessly integrated...right inside...literature yeah,</p>
+      <p begin="00:07:28.330" end="00:07:33.250">just a quick another example of this exact experience let's go and open up yet another</p>
+      <p begin="00:07:33.250" end="00:07:38.230">example file in this case it's and even handler that I have here let's say I want to added the even</p>
+      <p begin="00:07:38.230" end="00:07:43.190">...code I just...a small tweak to it I can go ahead and say big definition and started in</p>
+      <p begin="00:07:43.190" end="00:07:46.050">the even handler from here as well of course the</p>
+      <p begin="00:07:46.050" end="00:07:51.050">expectation is that this is great for doing simple things like a week but of course if you...to make, you know,</p>
+      <p begin="00:07:51.050" end="00:07:52.560">large-scale...you can just</p>
+      <p begin="00:07:52.560" end="00:07:58.630">...that beak window by clicking this guy and then you can start editing your code</p>
+      <p begin="00:07:58.630" end="00:08:04.730">...a more full-fledged fashion ok let me show you another experience that we've added</p>
+      <p begin="00:08:04.730" end="00:08:09.670">...redistribute twenty fifteen to show that for I mean if you're csharp developer kind of,</p>
+      <p begin="00:08:09.670" end="00:08:14.070">you know, there's a bread-and-butter which is the notion of region's if you want to logically think about</p>
+      <p begin="00:08:14.070" end="00:08:19.020">your code as organized into different sections...usually, usually go back to your code</p>
+      <p begin="00:08:19.020" end="00:08:23.270">an ad...let's go take a look in this case I'm just going to just to show you</p>
+      <p begin="00:08:23.270" end="00:08:27.970">the some simple csharp experience first so you can relate to it I can go and type</p>
+      <p begin="00:08:27.970" end="00:08:33.290">region say call this is my region as constructors and then</p>
+      <p begin="00:08:33.290" end="00:08:36.930">...region here.</p>
+      <p begin="00:08:36.930" end="00:08:41.580">But, what so that's, you know, what...and you've been doing all this file but what if you</p>
+      <p begin="00:08:41.580" end="00:08:47.250">had to do the same thing example I mean you know, you essentially end up having these really large</p>
+      <p begin="00:08:47.250" end="00:08:51.380">example files with a lot of content...sort of logically organize them</p>
+      <p begin="00:08:51.380" end="00:08:56.360">so if you don't really care about a particular section of...you can just hide that away and work with</p>
+      <p begin="00:08:56.360" end="00:09:01.500">rested example document so...twenty fifteen we have added...to those...</p>
+      <p begin="00:09:01.500" end="00:09:06.440">as well to show that an action let's go ahead and bring up intelligence and just</p>
+      <p begin="00:09:06.440" end="00:09:11.320">...the word region you'll see that are a couple of new entries for adding regions to...</p>
+      <p begin="00:09:11.320" end="00:09:16.700">an added regions and, then give it a names in this case I'm going to call it my tab control</p>
+      <p begin="00:09:16.700" end="00:09:21.110">because that's what I really want to sort of isolate out and then I'm going to go to the end of the</p>
+      <p begin="00:09:21.110" end="00:09:24.880">dab control and this particular region yet again</p>
+      <p begin="00:09:24.880" end="00:09:29.900">I'll just type and region when I do that is emulator now just like my csharp</p>
+      <p begin="00:09:29.900" end="00:09:35.140">better lets me collapse of a particular...</p>
+      <p begin="00:09:35.140" end="00:09:39.900">Thank you and...database I can continue to focus on the part that I</p>
+      <p begin="00:09:39.900" end="00:09:44.740">...now when...designing here's an anecdotal story...designing this feature</p>
+      <p begin="00:09:44.740" end="00:09:48.820">we asked our in the pi-zero...guys like this or not actually surprisingly a</p>
+      <p begin="00:09:48.820" end="00:09:56.010">lot of people actually don't like it you don't know why I love it but you never go.</p>
+      <p begin="00:09:56.010" end="00:10:01.000">But,...if it fits...workflow and your...workflow good and use it you know,</p>
+      <p begin="00:10:01.000" end="00:10:06.670">it's it could be useful for some people okay so that's my quick overview of the last</p>
+      <p begin="00:10:06.670" end="00:10:11.010">example language service inversely that...a few more small things we have added but, you know,</p>
+      <p begin="00:10:11.010" end="00:10:17.170">I'm not in the interest of time going-to skip...those and go to my next section of the demo.</p>
+      <p begin="00:10:17.170" end="00:10:19.190">But, before I switch.</p>
+      <p begin="00:10:19.190" end="00:10:21.190">I want to detail.</p>
+      <p begin="00:10:21.190" end="00:10:23.560">Some back story about</p>
+      <p begin="00:10:23.560" end="00:10:28.670">the end blend for video studio has been a cornerstone,</p>
+      <p begin="00:10:28.670" end="00:10:32.940">for example, development ever since that came into existence about I'd say</p>
+      <p begin="00:10:32.940" end="00:10:39.160">...something like that like about ten years ago over time we have added a</p>
+      <p begin="00:10:39.160" end="00:10:43.580">bunch of new capabilities to blend and of course we're studios well but the gap between</p>
+      <p begin="00:10:43.580" end="00:10:47.770">lenders studio when it comes to doing certain to activities has, you know,</p>
+      <p begin="00:10:47.770" end="00:10:51.680">kind of broadened there are there are things that you just</p>
+      <p begin="00:10:51.680" end="00:10:54.470">...you could just do this extra bit and either visual studio and</p>
+      <p begin="00:10:54.470" end="00:10:59.130">blend but you can't because that capability doesn't exist you</p>
+      <p begin="00:10:59.130" end="00:11:03.580">want to go address that we still believe visual studio is the place where you</p>
+      <p begin="00:11:03.580" end="00:11:08.120">...go and energy example code debug your application profiler application that's the best</p>
+      <p begin="00:11:08.120" end="00:11:13.550">environment out there but there is the need for home for activities that you typically</p>
+      <p begin="00:11:13.550" end="00:11:18.520">associate with you I design and development and we still believe that blends the right place for that we want to</p>
+      <p begin="00:11:18.520" end="00:11:22.820">expose capabilities that help you build amazing user experiences so,</p>
+      <p begin="00:11:22.820" end="00:11:27.930">in this release we have redesign blend from the ground-up</p>
+      <p begin="00:11:27.930" end="00:11:32.050">but, before I talk about that let me just quickly talk about some of the themes of feedback that</p>
+      <p begin="00:11:32.050" end="00:11:35.390">...from you guys are users things like example</p>
+      <p begin="00:11:35.390" end="00:11:39.880">intelligence ever since the first version of...blend if you think about the trajectory for</p>
+      <p begin="00:11:39.880" end="00:11:44.140">...sends it has kinda gone down like to the point where it's barely usable and</p>
+      <p begin="00:11:44.140" end="00:11:49.020">...for video studio twenty thirteen it's very common for people to use video studio and</p>
+      <p begin="00:11:49.020" end="00:11:54.420">...on different monitors or even on the same monitor and switch back and forth moving</p>
+      <p begin="00:11:55.700" end="00:11:57.780">...sort of like change the same file and both the</p>
+      <p begin="00:11:57.780" end="00:12:02.500">aidid's move things around it's actually pretty cumbersome you get the series of reload</p>
+      <p begin="00:12:02.500" end="00:12:07.720">dialogues and you're kind of confuse and you don't really know why is variously asking means this question</p>
+      <p begin="00:12:07.720" end="00:12:12.080">...asking this question that's an experience that's pretty frustrating for</p>
+      <p begin="00:12:12.080" end="00:12:17.620">...people out there and then simple lead trivial things like, you know, being able to expand</p>
+      <p begin="00:12:17.620" end="00:12:22.440">and collapse nodes in the solution explore are get support registry added get</p>
+      <p begin="00:12:22.440" end="00:12:27.280">where what like a year or two ago and...just and doesn't have that</p>
+      <p begin="00:12:27.280" end="00:12:32.050">we want to take this released address some of these limitations and make</p>
+      <p begin="00:12:32.050" end="00:12:36.900">...such a productive and...that was historically designed to be?</p>
+      <p begin="00:12:36.900" end="00:12:38.440">So, we're having to...like</p>
+      <p begin="00:12:38.440" end="00:12:43.260">...of esri twenty fifteen which is actually build from the ground-up leveraging a number of</p>
+      <p begin="00:12:43.260" end="00:12:48.070">...studio technologieswe wanted to bring sort of like the best of video studio that is</p>
+      <p begin="00:12:48.070" end="00:12:52.540">out there and the blind capabilities and marry them together and that's where</p>
+      <p begin="00:12:52.540" end="00:12:57.210">you see in the demo today we have worked hard to retain almost all of</p>
+      <p begin="00:12:57.210" end="00:13:02.250">the unique capabilities...blend with a few exceptions some of those are still on</p>
+      <p begin="00:13:02.250" end="00:13:05.340">...backlog we just haven't been able to get to them in the current</p>
+      <p begin="00:13:05.340" end="00:13:10.270">rc that was released on about a couple days ago but the way we think about this</p>
+      <p begin="00:13:10.270" end="00:13:15.840">...it's again the start of a journey just like this amr language service have build a foundation</p>
+      <p begin="00:13:15.840" end="00:13:18.510">... allowing our team to bring the best</p>
+      <p begin="00:13:18.510" end="00:13:23.100">in class design tools to you guys on top of what we are starting here so</p>
+      <p begin="00:13:23.100" end="00:13:30.970">that said let's take a tour of the new blind.</p>
+      <p begin="00:13:30.970" end="00:13:36.630">here's the project that I was editing let me go and save all these files now historically if you think about</p>
+      <p begin="00:13:36.630" end="00:13:39.460">visual studio and being able to interoperate with</p>
+      <p begin="00:13:39.460" end="00:13:44.480">...you that one of the ways we floated this was right click on a particulars</p>
+      <p begin="00:13:44.480" end="00:13:49.110">ammo file and choose to edit in blend we have brought that capability...now all of</p>
+      <p begin="00:13:49.110" end="00:13:53.740">download projects including...so what you can now do is you can write click on any</p>
+      <p begin="00:13:53.740" end="00:13:58.950">sample file in this case let me just go and take a look at main window example and we</p>
+      <p begin="00:13:58.950" end="00:14:05.920">have a context menu command available called design and blend let's go and open up...</p>
+      <p begin="00:14:05.920" end="00:14:09.990">Because I chose to invoked on a particular example file in this case</p>
+      <p begin="00:14:09.990" end="00:14:13.820">main window example...try to retain the</p>
+      <p begin="00:14:13.820" end="00:14:17.490">...context inside...so it's a fairly seamless shift between</p>
+      <p begin="00:14:17.490" end="00:14:22.030">...studio just show you another example let's go back to visual studio and</p>
+      <p begin="00:14:22.030" end="00:14:26.540">...click on yet...file let's say dashboard and the design and</p>
+      <p begin="00:14:26.540" end="00:14:30.680">...we'll figure out that the solution is already loaded in a</p>
+      <p begin="00:14:30.680" end="00:14:34.040">...existing instance of...and then like seamlessly switch over</p>
+      <p begin="00:14:34.040" end="00:14:39.570">...file due to sort of open up there so</p>
+      <p begin="00:14:39.570" end="00:14:43.730">what's new in blend for redistribute twenty fifteen off the bat and the</p>
+      <p begin="00:14:43.730" end="00:14:48.200">monitor probably of the projected probably doesn't make it very obvious you'll notice that we've</p>
+      <p begin="00:14:48.200" end="00:14:52.560">introduced a new theme it's actually based on the...studio darting</p>
+      <p begin="00:14:52.560" end="00:14:57.010">we're just made a number of tweaks to make a little bit more friendly to people who are you doing you</p>
+      <p begin="00:14:57.010" end="00:15:01.820">are development it slightly darker than the...studio team that exists in</p>
+      <p begin="00:15:01.820" end="00:15:06.540">...today so if you take a look at tools options you will see that there's a new theme</p>
+      <p begin="00:15:06.540" end="00:15:11.480">that's only available online which is the blending in addition to the visual studio teams as well</p>
+      <p begin="00:15:11.480" end="00:15:16.620">so if you are work if you think you're a big fan of ...theme of the blue team you can do that as well but</p>
+      <p begin="00:15:16.620" end="00:15:21.630">we have added a theme that is unique to blend...cancel out of this dialog and,</p>
+      <p begin="00:15:21.630" end="00:15:26.780">walking through the rest of the product we have only brought in features and from various video</p>
+      <p begin="00:15:26.780" end="00:15:31.940">...makes sense like...control and projects...solution explorer and things like that we</p>
+      <p begin="00:15:31.940" end="00:15:35.710">...brought in tools like unit testing and architecture and all these things because</p>
+      <p begin="00:15:35.710" end="00:15:40.820">we're studio still the place you would go to do all of these activities let's take a tour of some of the new</p>
+      <p begin="00:15:40.820" end="00:15:45.810">panels inside blend the solution explore is the exact same solution explorer that you'd find in</p>
+      <p begin="00:15:45.810" end="00:15:49.330">visual studio and as a result of that all of the feedback</p>
+      <p begin="00:15:49.330" end="00:15:52.040">...had the lack of solution folders</p>
+      <p begin="00:15:52.040" end="00:15:56.410">are the ability to expand and collapse nodes all of that is now available</p>
+      <p begin="00:15:56.410" end="00:16:01.140">...across...video studio in this case let's say I just want to collapse all the nodes I</p>
+      <p begin="00:16:01.140" end="00:16:06.210">understood something I mean this is trivial right but people...since two thousand six</p>
+      <p begin="00:16:06.210" end="00:16:11.220">...for this feature I mean people have asking where's studio for...many years before...about</p>
+      <p begin="00:16:11.220" end="00:16:17.350">that as well so anyways the point is we wanted to bring all of these to the blind customer as well.</p>
+      <p begin="00:16:17.350" end="00:16:22.070">The...spain and blend as is the place you would go to create assets and,</p>
+      <p begin="00:16:22.070" end="00:16:26.700">add them to your project have retainedthe old experience and not moved over to the</p>
+      <p begin="00:16:26.700" end="00:16:31.620">...studio...because the blood experience actually very powerful you can see things like</p>
+      <p begin="00:16:31.620" end="00:16:35.370">behaviors which are ways to add no code interactivity to</p>
+      <p begin="00:16:35.370" end="00:16:40.610">your application things like stiles that...and various kinds of media like,</p>
+      <p begin="00:16:40.610" end="00:16:45.310">for example, in this case...have kept all of the blind capabilities, for example,</p>
+      <p begin="00:16:45.310" end="00:16:50.040">you can drag-and-drop images to your design surface and so-and-so forth all of that has been</p>
+      <p begin="00:16:50.040" end="00:16:54.720">maintained ...to allow you to sort of like focus on...integration and creation</p>
+      <p begin="00:16:54.720" end="00:16:59.940">off good-looking...you know, content and experiences inside bland the</p>
+      <p begin="00:16:59.940" end="00:17:04.870">...is very would go to create an added...sm states there's really no change here...</p>
+      <p begin="00:17:04.870" end="00:17:09.760">we have been retained exact same functionality and hopefully we'll make it better in the future...the</p>
+      <p begin="00:17:09.760" end="00:17:16.360">triggers...rw of developer you kinda know what triggers are you get the same capability in</p>
+      <p begin="00:17:16.360" end="00:17:21.260">...for studio twenty fifteen as well and then data...this is where you'd go to create</p>
+      <p begin="00:17:21.260" end="00:17:25.660">an...sample data so you can effectively visualizing design and...and make</p>
+      <p begin="00:17:25.660" end="00:17:30.920">changes we still have broughtwe have...brought in all of the sample data features</p>
+      <p begin="00:17:30.920" end="00:17:37.200">...blend for registry twenty fifteen as well the object and timeline tree of course like...expect is the place where</p>
+      <p begin="00:17:37.200" end="00:17:42.180">you'd go and make changes like animations we support that as well so let's go to</p>
+      <p begin="00:17:42.180" end="00:17:46.810">create...animation the panel comes up and you can start recording animation so all of</p>
+      <p begin="00:17:46.810" end="00:17:52.110">that capabilities I've been reading and in some cases we have made improvements which I'll discuss in a second as</p>
+      <p begin="00:17:52.110" end="00:17:57.060">...the properties window I'm not going to talk much about it is just a listing of properties that you can go in edit</p>
+      <p begin="00:17:57.060" end="00:18:01.830">the resources spain ...is there as well so you can visualize all of the resources</p>
+      <p begin="00:18:01.830" end="00:18:05.700">in your application and make changes to them so in this case I can see all of</p>
+      <p begin="00:18:05.700" end="00:18:10.680">the resources that are coming from my app dubs animal and they changes as well as a team</p>
+      <p begin="00:18:10.680" end="00:18:13.980">explore there's a place you would go to do your source control and</p>
+      <p begin="00:18:13.980" end="00:18:18.880">...related management activities like creating work items and things like that.</p>
+      <p begin="00:18:18.880" end="00:18:22.540">So,...said you might have a few questions like,</p>
+      <p begin="00:18:22.540" end="00:18:28.430">you know, what are the kinds of things that are different between...of redistribute twenty thirteen and</p>
+      <p begin="00:18:28.430" end="00:18:33.020">...fifteen one of the big difference as...spaces then you</p>
+      <p begin="00:18:33.020" end="00:18:37.400">...you historically is to have to work spaces one for design and one for animation</p>
+      <p begin="00:18:37.400" end="00:18:42.510">well-versed area has an even better workspace management system and...fifteen and we thought</p>
+      <p begin="00:18:42.510" end="00:18:47.560">why just not leverage that so what you can do in registry twenty fifteen and you guys probably have seen this and</p>
+      <p begin="00:18:47.560" end="00:18:52.550">in a different session is go and create a workspace layouts in this case my</p>
+      <p begin="00:18:52.550" end="00:18:59.080">default layout is the one that I use for most activities so I'm just going to...off as default?</p>
+      <p begin="00:18:59.080" end="00:19:03.770">But, then I really like my animation view to be like a much broader view than</p>
+      <p begin="00:19:03.770" end="00:19:08.010">what's available by default and that constrained three hundred pixel window</p>
+      <p begin="00:19:08.010" end="00:19:13.530">...drag-and-drop my object and timeline tree to the bottom of the panel...bottom of</p>
+      <p begin="00:19:13.530" end="00:19:18.790">...plan and then go in saved this workspace as a different layouts in this case I'm</p>
+      <p begin="00:19:18.790" end="00:19:24.580">going to say let's let me go and say this as my animation layout and once you do that you can</p>
+      <p begin="00:19:24.580" end="00:19:28.180">now quickly switch between these two layouts by just going back to the window</p>
+      <p begin="00:19:28.180" end="00:19:32.990">menu and seeing those options there so let's say you want to reward back to the default just</p>
+      <p begin="00:19:32.990" end="00:19:37.430">...default so on so forth so in some ways just because of the</p>
+      <p begin="00:19:37.430" end="00:19:41.690">using registry sl...you get a better workspace management a</p>
+      <p begin="00:19:41.690" end="00:19:47.680">set of capabilities in blend as a result of that as well now let's look at some of</p>
+      <p begin="00:19:47.680" end="00:19:53.260">...score experiences which comes out comes to editing example let's go</p>
+      <p begin="00:19:53.260" end="00:19:57.930">and select a particular element by the way I should say that duals trip which is the way you will</p>
+      <p begin="00:19:57.930" end="00:20:02.460">go and create select elements and...design surface so, for example, you want to move</p>
+      <p begin="00:20:02.460" end="00:20:07.210">design surface around has been broad closer to the design surface so you don't have to</p>
+      <p begin="00:20:07.210" end="00:20:12.710">move your...march if you reach out the controls for selection and things like that let's go and select</p>
+      <p begin="00:20:12.710" end="00:20:15.660">...dab control here so in this case I'm going to select</p>
+      <p begin="00:20:15.660" end="00:20:20.710">dashboard and my goal is to edit the look and feel of the stab</p>
+      <p begin="00:20:20.710" end="00:20:25.370">item which is coming from as a style that is applied that tab...</p>
+      <p begin="00:20:25.370" end="00:20:30.240">blends graded styling activities and we continue to bigger that you can write click on</p>
+      <p begin="00:20:30.240" end="00:20:35.470">a particular style ...can edits template and we'll sort of bring</p>
+      <p begin="00:20:35.470" end="00:20:39.080">...into another noun the unique thing here is the</p>
+      <p begin="00:20:39.080" end="00:20:44.260">style is actually coming from a completely different...document right it's coming...example but you</p>
+      <p begin="00:20:44.260" end="00:20:49.250">design experience hasn't really changed it's almost as if you...editing main page...animal but</p>
+      <p begin="00:20:49.250" end="00:20:54.210">...content is actually coming from...downsample how's that obvious let's bring up the</p>
+      <p begin="00:20:54.210" end="00:20:59.850">...editor using...we are able to bring in the style that's existing</p>
+      <p begin="00:20:59.850" end="00:21:03.600">in anywhere near...style as and russia reese's or anything</p>
+      <p begin="00:21:03.600" end="00:21:07.990">and bring a dryden place so you can edited in the context of the larger</p>
+      <p begin="00:21:07.990" end="00:21:14.950">the document that your editing in this case in this case your main windowed on sample?</p>
+      <p begin="00:21:14.950" end="00:21:20.470">...experience also allows users to sort of focus on the content that</p>
+      <p begin="00:21:20.470" end="00:21:24.390">...editing immediately and not you know, the rest of the</p>
+      <p begin="00:21:24.390" end="00:21:30.030">...the rest of example that exists in the document in this case I</p>
+      <p begin="00:21:30.030" end="00:21:34.910">want to make a change I want to change the foreground of this tab item so I'm going to</p>
+      <p begin="00:21:34.910" end="00:21:39.160">select the value property and I'm going to get the change the</p>
+      <p begin="00:21:39.160" end="00:21:44.190">read by the way you get full in dallas...like video studio for all example platforms including</p>
+      <p begin="00:21:44.190" end="00:21:49.040">...windows...applications so I'm going to go to make a change...note that as</p>
+      <p begin="00:21:49.040" end="00:21:52.820">...as I made the change my design surface updated over here you see</p>
+      <p begin="00:21:52.820" end="00:21:58.030">...and, I did it all of that without actually leaving my a</p>
+      <p begin="00:21:58.030" end="00:22:02.470">context that I was just editing at and the thing is if you notice</p>
+      <p begin="00:22:02.470" end="00:22:05.750">...based on the asterisk on...the</p>
+      <p begin="00:22:05.750" end="00:22:10.370">actual edit was committed to a different document submitted possible for-you to seamlessly</p>
+      <p begin="00:22:10.370" end="00:22:15.190">an example no matter where it's coming from right in the context of your application</p>
+      <p begin="00:22:15.190" end="00:22:19.410">without switching documents and moving things around hopefully...should, you know,</p>
+      <p begin="00:22:19.410" end="00:22:23.570">improve productivity of using land as well now.</p>
+      <p begin="00:22:24.640" end="00:22:44.400">Let me go and save all these changes let me close let me close these files.</p>
+      <p begin="00:22:44.400" end="00:22:46.900">If you I could actually hear you very well</p>
+      <p begin="00:22:46.900" end="00:22:51.530">if you don't mind coming to the mike and asking the question I'd really appreciate it thank you and by the way</p>
+      <p begin="00:22:51.530" end="00:22:56.430">folks in the webcast can also hear you better if you asked why the mike.</p>
+      <p begin="00:22:56.430" end="00:23:02.830">I liked the feature quite well it's pretty cool but doesn't only work...</p>
+      <p begin="00:23:02.830" end="00:23:08.090">doesn't work on the property panel as well as the question is cnn writing on the</p>
+      <p begin="00:23:08.090" end="00:23:12.770">proper the question is we edited...style in this case coming from</p>
+      <p begin="00:23:12.770" end="00:23:17.740">abdullah mammal value and editing your main window does that really work in the properties</p>
+      <p begin="00:23:17.740" end="00:23:21.810">of resources as well yes and it does so you should be able to go and</p>
+      <p begin="00:23:21.810" end="00:23:26.560">editor brush resource using the resource panel and it should reflect itself in the</p>
+      <p begin="00:23:26.560" end="00:23:32.080">designer without you having to switch to am downsample okay thanks no problem thank you so,</p>
+      <p begin="00:23:32.080" end="00:23:36.970">let's go out and save all these changes here?</p>
+      <p begin="00:23:36.970" end="00:23:37.820">Sorry about that</p>
+      <p begin="00:23:37.820" end="00:23:45.400">sable let-me open up my main window back up again to show you the next experience.</p>
+      <p begin="00:23:45.400" end="00:23:48.360">Ok, so, now I...along and</p>
+      <p begin="00:23:48.360" end="00:23:54.870">...using various studio you go back to visual studio and start making some changes.</p>
+      <p begin="00:23:54.870" end="00:23:59.930">Whoops right here so what I want to do isand, this is</p>
+      <p begin="00:23:59.930" end="00:24:05.190">the dialogue and we're going to address in a second I won't let's say we want to go and make some changes in this case</p>
+      <p begin="00:24:05.190" end="00:24:10.110">I want to change the dialogue application from project tracker to my project tracker</p>
+      <p begin="00:24:10.110" end="00:24:14.310">rights I go and make a change now knows notice what happens if I switch back to blend if I want</p>
+      <p begin="00:24:14.310" end="00:24:18.340">to do something else you'll get a dialogue that says,</p>
+      <p begin="00:24:18.340" end="00:24:23.470">you know, what should I do should I reload all the files...not in...twenty fifteen for both</p>
+      <p begin="00:24:23.470" end="00:24:27.400">lenders studio have added the option to reload files automatically</p>
+      <p begin="00:24:27.400" end="00:24:31.410">if you haven't really made any changes in either product so you can just</p>
+      <p begin="00:24:31.410" end="00:24:36.180">write click on that and say yes to all and we'll just seamlessly reload the changes in</p>
+      <p begin="00:24:36.180" end="00:24:41.400">...tointo...in this...in a little bit so you can see what I'm saying the</p>
+      <p begin="00:24:41.400" end="00:24:45.230">...has been updated just to prove this one more time that's back go back</p>
+      <p begin="00:24:45.230" end="00:24:49.290">to visual studio and make yet another change this case I'm going to type the</p>
+      <p begin="00:24:49.290" end="00:24:52.860">word updated save it come back to blend</p>
+      <p begin="00:24:52.860" end="00:25:00.620">...seamlessly update without any dialogues are warnings or anything like that?</p>
+      <p begin="00:25:00.620" end="00:25:03.270">Thank you now.</p>
+      <p begin="00:25:03.270" end="00:25:07.340">One...capability and before we switch gears into some of the other tools that I want</p>
+      <p begin="00:25:07.340" end="00:25:12.810">to demonstrate is ui debug is ...accessibility, accessibility</p>
+      <p begin="00:25:12.810" end="00:25:17.420">is actually a really important on experience for all of us and you've done a lot of work in</p>
+      <p begin="00:25:17.420" end="00:25:21.040">...for...two-twenty fifteen to make the product more accessible so</p>
+      <p begin="00:25:21.040" end="00:25:26.090">uses with disabilities can use blend actually can get a lot done pretty much everything and</p>
+      <p begin="00:25:26.090" end="00:25:30.960">...accessible to show this point let me actually just move away from using the mouse and</p>
+      <p begin="00:25:30.960" end="00:25:34.680">just use the keyboard I can just use control dab switch</p>
+      <p begin="00:25:34.680" end="00:25:40.810">over to let's say the resources spain and we bring it back to...to the front and</p>
+      <p begin="00:25:40.810" end="00:25:45.280">then you can tab around and start selecting and editing contents in this case I want to navigate the tree</p>
+      <p begin="00:25:45.280" end="00:25:49.950">...without using the mouse I can just move things around let's say I want to go rename</p>
+      <p begin="00:25:49.950" end="00:25:54.280">a particular resource...just go...key and then I can initiate</p>
+      <p begin="00:25:54.280" end="00:25:58.050">the user rename as well even though this is an</p>
+      <p begin="00:25:58.050" end="00:26:02.240">access ability feature I know most developers are really, really you know,</p>
+      <p begin="00:26:02.240" end="00:26:07.330">keyboard focused and some of the work that...here should help you as well so all of the blind can now be</p>
+      <p begin="00:26:07.330" end="00:26:14.700">keep navigated with the keyboard everything is like you expect, you know, fully keyboard accessible?</p>
+      <p begin="00:26:14.700" end="00:26:19.320">Ok, thank you yes.</p>
+      <p begin="00:26:19.320" end="00:26:26.940">in the states panel for universe...there's the newstate triggers</p>
+      <p begin="00:26:26.940" end="00:26:31.240">yet in are those support yet or what is the plan for those, yeah,</p>
+      <p begin="00:26:31.240" end="00:26:35.930">so, the question is are state triggers which is a new feature for a windows standing was</p>
+      <p begin="00:26:35.930" end="00:26:39.100">...will they be supported are not in today's various</p>
+      <p begin="00:26:39.100" end="00:26:43.080">studio twenty fifteen rc build but it will be supported in the final</p>
+      <p begin="00:26:43.080" end="00:26:47.060">...training fifteen...so we will allow you to select</p>
+      <p begin="00:26:47.060" end="00:26:52.250">states when you make a change...serialized edit</p>
+      <p begin="00:26:52.250" end="00:26:55.920">back into the center syntax that they've added in this</p>
+      <p begin="00:26:55.920" end="00:27:00.620">ample platform and will also allow you to create adaptive triggers as well as less preview</p>
+      <p begin="00:27:00.620" end="00:27:07.080">those on the designer so all of that is coming in the near future just not in today's rc build?</p>
+      <p begin="00:27:07.080" end="00:27:11.970">Good question though so ok, let's switch back to.</p>
+      <p begin="00:27:11.970" end="00:27:15.440">The slides first second and.</p>
+      <p begin="00:27:15.440" end="00:27:20.590">Talk about my favorite feature adversary twenty fifteen ui debugging,</p>
+      <p begin="00:27:20.590" end="00:27:25.720">for example, applications we have integrated a live visual tree and a property</p>
+      <p begin="00:27:25.720" end="00:27:30.670">explore fully into the debugging experience so you can quickly inspect the visual tree of</p>
+      <p begin="00:27:30.670" end="00:27:32.630">your application as your debugging</p>
+      <p begin="00:27:32.630" end="00:27:37.500">...you can see the properties for different elements and you can do a lot more that I'll show</p>
+      <p begin="00:27:37.500" end="00:27:43.260">wire demos the one thing that's worked reiterating is we see this as a debugging</p>
+      <p begin="00:27:43.260" end="00:27:47.880">feature but more importantly the also see this as a foundation for building edit and continue,</p>
+      <p begin="00:27:47.880" end="00:27:52.200">for example, we don't want you to restart your debugging session just because</p>
+      <p begin="00:27:52.200" end="00:27:57.190">he made a simple example change we want to sort of make it possible that begin pushed edit back-end is</p>
+      <p begin="00:27:57.190" end="00:28:02.330">...if you so desire and, sort of get to the point where we can support editing and</p>
+      <p begin="00:28:02.330" end="00:28:09.160">continuing example but right now we are is a debugging tool and let me show this an action.</p>
+      <p begin="00:28:09.160" end="00:28:15.040">So, let me switch back to.</p>
+      <p begin="00:28:15.040" end="00:28:18.590">My display...here.</p>
+      <p begin="00:28:18.590" end="00:28:23.640">Show this in the context of the project that we're currently building nowcapabilities available and lenders</p>
+      <p begin="00:28:23.640" end="00:28:26.580">enabled but I'm going to do mime demos inverse studio.</p>
+      <p begin="00:28:27.590" end="00:28:31.470">Just because the light team is slightly better to</p>
+      <p begin="00:28:31.470" end="00:28:39.600">view online so let me go and ...five on this application.</p>
+      <p begin="00:28:39.600" end="00:28:44.730">And, start making some changes.</p>
+      <p begin="00:28:44.730" end="00:28:49.360">The application launches into the debug are just like you would expect and,</p>
+      <p begin="00:28:49.360" end="00:28:54.970">before I talk about the tools themselves a quicknavigation through the application because we're going to be making</p>
+      <p begin="00:28:54.970" end="00:28:59.740">some changes to this is a simple dab control like you have dashboard with you know,</p>
+      <p begin="00:28:59.740" end="00:29:04.720">it's like a project management style application there's a dashboard with like a map control and</p>
+      <p begin="00:29:04.720" end="00:29:09.560">panel for seeing some data the reason I just want to show this is going to fix some of the problems that you're seeing here,</p>
+      <p begin="00:29:09.560" end="00:29:12.750">for example, there's nothing showing up in this job down</p>
+      <p begin="00:29:12.750" end="00:29:17.970">okay so switch back to visual studio and as soon as you start debugging you will</p>
+      <p begin="00:29:17.970" end="00:29:22.700">see a new window that is pinned on the left-hand side called the live visual free if you</p>
+      <p begin="00:29:22.700" end="00:29:27.620">...bennett you'll see that it's tracking visual tree of the application</p>
+      <p begin="00:29:27.620" end="00:29:32.600">as you're making changes to it so in this case the treat has nine hundred ninety nine</p>
+      <p begin="00:29:32.600" end="00:29:37.390">elements by default and that's the case because that's the view of currently you know,</p>
+      <p begin="00:29:37.390" end="00:29:42.570">brought up in my application now notice what happens if I change to a different views let's say</p>
+      <p begin="00:29:42.570" end="00:29:46.870">...time entry visual see automatically dynamically updates and</p>
+      <p begin="00:29:46.870" end="00:29:51.060">shows you the updated visual tree without you having to press the refresh</p>
+      <p begin="00:29:51.060" end="00:29:55.960">button in the rare case where the tree gets out of synchronization have given you</p>
+      <p begin="00:29:55.960" end="00:29:59.470">the fallback refresh button but we really hope you don't have to ever use it because</p>
+      <p begin="00:29:59.470" end="00:30:05.730">it's truly live and tracking all of that it's as you making them in...</p>
+      <p begin="00:30:05.730" end="00:30:10.490">What are some of the characteristics of course you would you should be able to select and search for a</p>
+      <p begin="00:30:10.490" end="00:30:16.830">particular elements you can just say that control and you should be able to see the</p>
+      <p begin="00:30:16.830" end="00:30:21.460">adapt controls in this particular example file on this particular view but,</p>
+      <p begin="00:30:21.460" end="00:30:26.000">that's not important enough for this demo let's take a look at a couple of other</p>
+      <p begin="00:30:26.000" end="00:30:31.260">capabilities over here on the top left out...live visual tree is a is a</p>
+      <p begin="00:30:31.260" end="00:30:35.650">tools for enabling selection in your running application so let's go...turn that</p>
+      <p begin="00:30:35.650" end="00:30:41.100">down and go back and interact with application you can no longer interact with application per</p>
+      <p begin="00:30:41.100" end="00:30:46.100">say that is you can't drive the application but you can drive selection for the library</p>
+      <p begin="00:30:46.100" end="00:30:50.960">in this case let's say I want to select dashboard so that I want to make a change and see how it looks like</p>
+      <p begin="00:30:50.960" end="00:30:54.520">...can just click and, will synchronized back into the</p>
+      <p begin="00:30:54.520" end="00:31:00.710">...so you can start pushing some changes we also have the capacity to show layout and</p>
+      <p begin="00:31:00.710" end="00:31:04.410">earners in your area running applications so let's go and select</p>
+      <p begin="00:31:04.410" end="00:31:09.090">that and switch back to the running application you should be able to see things like</p>
+      <p begin="00:31:09.090" end="00:31:14.320">...adding and margin communicated via those yellow lines and your normal</p>
+      <p begin="00:31:14.320" end="00:31:19.200">alignment communicated by those blue lines so you can diagnose those nasty</p>
+      <p begin="00:31:19.200" end="00:31:29.920">issues where your own things don't correctly align and you're trying to figure out what's really happening so on?</p>
+      <p begin="00:31:29.920" end="00:31:32.350">And, one final thing before we switch over to</p>
+      <p begin="00:31:32.350" end="00:31:37.180">making some changes is this section here for previewing a selection what that really</p>
+      <p begin="00:31:37.180" end="00:31:42.390">is selection synchronization these iphones if you if you notice them if you just</p>
+      <p begin="00:31:42.390" end="00:31:46.070">also them we're tracking the source, for example, no,</p>
+      <p begin="00:31:46.070" end="00:31:51.230">matter where it comes from and that gives us the ability to synchronize when you want to do so,</p>
+      <p begin="00:31:51.230" end="00:31:56.650">let's go ahead and write click on let's say the dab control and hit</p>
+      <p begin="00:31:56.650" end="00:32:01.720">...will automatically take you to the location in your source code where the type control</p>
+      <p begin="00:32:01.720" end="00:32:05.950">...defined so you can start making...animal and, you know,</p>
+      <p begin="00:32:05.950" end="00:32:11.310">get them reflected...application but, if you are workflow is such that you want you</p>
+      <p begin="00:32:11.310" end="00:32:15.760">want this to happen automatically just make sure you turn on the preview selection and</p>
+      <p begin="00:32:15.760" end="00:32:20.550">start looking around so will automatically synchronize in this case I just selected dab item and</p>
+      <p begin="00:32:20.550" end="00:32:25.530">we automatically synchronized selection to the tab item my workflow is I want to do it manually</p>
+      <p begin="00:32:25.530" end="00:32:29.400">...I...it off but that really depends on you so let me go to internal the</p>
+      <p begin="00:32:29.400" end="00:32:34.670">...these options off and then talk about the next experience which is the property</p>
+      <p begin="00:32:34.670" end="00:32:40.650">explore...of the properties explorer you can just click the show propertiesbutton over here and</p>
+      <p begin="00:32:40.650" end="00:32:46.590">that brings up the properties explorer on the right-hand side now the way we have categorize these</p>
+      <p begin="00:32:46.590" end="00:32:50.710">...appear a little confusing up-front but once you understand what's going on I think it's going to</p>
+      <p begin="00:32:50.710" end="00:32:54.850">add a lot of value we categorize these properties by the way they</p>
+      <p begin="00:32:54.850" end="00:32:57.260">are applied by the running application if,</p>
+      <p begin="00:32:57.260" end="00:33:02.590">you know, that...local properties are first applied overridden by</p>
+      <p begin="00:33:02.590" end="00:33:06.620">...override properties that are coming from the style that then they override the</p>
+      <p begin="00:33:06.620" end="00:33:09.970">...properties are coming from the platform by default that's really</p>
+      <p begin="00:33:09.970" end="00:33:14.830">...that's really the vision that we're trying to communicate here with life properties explore</p>
+      <p begin="00:33:14.830" end="00:33:18.880">...properties that are local...my element followed by properties that are coming from</p>
+      <p begin="00:33:18.880" end="00:33:22.680">the style followed by properties are coming from the system style and</p>
+      <p begin="00:33:22.680" end="00:33:28.130">then everything else that's thrown after that now what this allows us to do is if you take a look at</p>
+      <p begin="00:33:28.130" end="00:33:32.410">if you expand...of these categories you'll see that some of these properties have a strike through,</p>
+      <p begin="00:33:32.410" end="00:33:37.300">through them what really means is just like we have tools and...twelve for</p>
+      <p begin="00:33:37.300" end="00:33:40.620">...to help you understand when a properties</p>
+      <p begin="00:33:40.620" end="00:33:45.320">set but not getting used that's when the strike through is in this case is</p>
+      <p begin="00:33:45.320" end="00:33:49.270">...through because the value send via coercion</p>
+      <p begin="00:33:49.270" end="00:33:51.920">...runtime and the values actually coming from really</p>
+      <p begin="00:33:51.920" end="00:33:56.590">code in this case we can't really show you the source of that operation but</p>
+      <p begin="00:33:56.590" end="00:34:02.390">for places where we can show you the source we will and let's take a look at that demo now that I've selected</p>
+      <p begin="00:34:02.390" end="00:34:07.250">the dab item the first thing I want to do is make some changes to it right so let's go to the running,</p>
+      <p begin="00:34:07.250" end="00:34:10.200">running application real quick and what...selected here is the stab</p>
+      <p begin="00:34:10.200" end="00:34:14.280">items so notice that everything is blue and that's fine let's go and open</p>
+      <p begin="00:34:14.280" end="00:34:17.940">the style you'll see that the background is of this particular</p>
+      <p begin="00:34:17.940" end="00:34:23.010">...item which is a blue is coming from the style let's go to make a change if I make</p>
+      <p begin="00:34:23.010" end="00:34:27.720">it read and switch back to the running application both the dab items we find</p>
+      <p begin="00:34:27.720" end="00:34:32.420">out all the styles no matter where they are and we apply the edit to the running application so</p>
+      <p begin="00:34:32.420" end="00:34:36.510">...application now reflects the real style that you just changed or</p>
+      <p begin="00:34:36.510" end="00:34:39.690">...temporarily changed...to preview how it looks like</p>
+      <p begin="00:34:39.690" end="00:34:45.730">against running application so that said how do you send a</p>
+      <p begin="00:34:45.730" end="00:34:50.550">property that was never said before so in this case what I want to do is there are two...items both the read</p>
+      <p begin="00:34:50.550" end="00:34:55.440">...one red...the green what do I do I like the tab item that I care about in</p>
+      <p begin="00:34:55.440" end="00:35:00.520">this case it's already selected and I can just start setting any random properties that I want in this case</p>
+      <p begin="00:35:00.520" end="00:35:03.150">...the background property local to the style</p>
+      <p begin="00:35:03.150" end="00:35:08.770">...to...the data item just like the background property?</p>
+      <p begin="00:35:08.770" end="00:35:10.370">And, make it let's say bing.</p>
+      <p begin="00:35:11.960" end="00:35:17.100">You will see that when you did that operation the...the property that came from</p>
+      <p begin="00:35:17.100" end="00:35:22.090">the style now is struct through which means is no longer applicable and the property that</p>
+      <p begin="00:35:22.090" end="00:35:26.610">ascent locally is the one that's going to win so if I switch back you'll</p>
+      <p begin="00:35:26.610" end="00:35:29.890">see that, you know, the one of the dab item styles is now</p>
+      <p begin="00:35:29.890" end="00:35:34.570">set dipping whereas the other one and there's only two of them here is said to read because</p>
+      <p begin="00:35:34.570" end="00:35:41.700">...coming from the style let's go and make I did this operation I realized that I</p>
+      <p begin="00:35:41.700" end="00:35:46.670">made a mistake how do I come out of it you can...reset any property that you want</p>
+      <p begin="00:35:46.670" end="00:35:52.730">...case I'm going to go and reset the pink property that I just set and I go back to</p>
+      <p begin="00:35:52.730" end="00:35:54.080">the running application</p>
+      <p begin="00:35:54.080" end="00:35:58.640">it's all updated and let's say I made a mistake on the entire style and I want to</p>
+      <p begin="00:35:58.640" end="00:36:03.050">sort of tested as to how it looks like without the property being set I can even go to a property</p>
+      <p begin="00:36:03.050" end="00:36:06.410">...a style and reset as well.</p>
+      <p begin="00:36:06.410" end="00:36:12.080">Given a second and then the property should be reset across the application as well so,</p>
+      <p begin="00:36:12.080" end="00:36:15.470">we have done a lot of work to push edits that you care about</p>
+      <p begin="00:36:15.470" end="00:36:19.820">your quickly test as to what how the application is going to react if you make a small change,</p>
+      <p begin="00:36:19.820" end="00:36:24.230">you know, longer have to go to the download make the change run the application realized that</p>
+      <p begin="00:36:24.230" end="00:36:28.040">you made a mistake come back...make a change again so on so forth</p>
+      <p begin="00:36:28.040" end="00:36:35.240">...really productive for you to sort of quickly push visual tree...running application...</p>
+      <p begin="00:36:35.240" end="00:36:40.120">Logging of those changes so the question is there any way to do logging of the</p>
+      <p begin="00:36:40.120" end="00:36:44.820">changes the answer is not today but this is where we</p>
+      <p begin="00:36:44.820" end="00:36:50.190">are going actually we're going is every time you make the change...to push that back</p>
+      <p begin="00:36:50.190" end="00:36:55.180">and do example and then that's your log so you can choose to sort of close all the documents and</p>
+      <p begin="00:36:55.180" end="00:36:59.840">say save all unknown save all because I made a mistake or you can choose to sort of like, you know,</p>
+      <p begin="00:36:59.840" end="00:37:04.490">specifically save certain files that you care about you have some more advanced capabilities that</p>
+      <p begin="00:37:04.490" end="00:37:11.090">we are thinking about it but in this release it's just approach that we making to the running application?</p>
+      <p begin="00:37:11.090" end="00:37:15.640">Okay, let me show you a couple more experiences that actually need</p>
+      <p begin="00:37:15.640" end="00:37:18.830">...when we talk about debugging your application</p>
+      <p begin="00:37:18.830" end="00:37:23.760">...the first thing is...collections like if you think about</p>
+      <p begin="00:37:23.760" end="00:37:28.820">jpf or are universe...a lot of things that are that are collections like</p>
+      <p begin="00:37:28.820" end="00:37:33.430">...definitions and column definitions and even gradients for a particular brush</p>
+      <p begin="00:37:33.430" end="00:37:35.920">resource we have the ability to</p>
+      <p begin="00:37:35.920" end="00:37:41.610">...collections in this case I'm going to select this grid and for this grid are actually this</p>
+      <p begin="00:37:41.610" end="00:37:46.540">grid and for this...you can see that the road definition...isset locally and it</p>
+      <p begin="00:37:46.540" end="00:37:51.440">has a couple of entries associated with it I can go and start making changes to these collections</p>
+      <p begin="00:37:51.440" end="00:37:56.310">as well so this case let's go to the second row definition and say my in</p>
+      <p begin="00:37:56.310" end="00:38:01.060">let's say my a height is not auto anymore but it's hard coded</p>
+      <p begin="00:38:01.060" end="00:38:06.080">to four hundred switch back to the running application and now it's kind of weird but you can see like,</p>
+      <p begin="00:38:06.080" end="00:38:07.560">you know, we have enabled you to</p>
+      <p begin="00:38:07.560" end="00:38:12.710">...collections as well if I make a mistake and I don't really like what I'm doing I can just type it</p>
+      <p begin="00:38:12.710" end="00:38:17.990">back to audio go back to the application and everything is resend back again?</p>
+      <p begin="00:38:17.990" end="00:38:20.970">Now one of the things that folks have been asking for</p>
+      <p begin="00:38:20.970" end="00:38:25.090">a long-time is debugging data bindings and that's really.</p>
+      <p begin="00:38:25.090" end="00:38:30.640">Hard because often something goes wrong you don't get enough information and,</p>
+      <p begin="00:38:30.640" end="00:38:34.600">you know, what can you do about it now there are two experiences when we think about data</p>
+      <p begin="00:38:34.600" end="00:38:39.560">binding one is like your typical break points experience where you just want to set of break point and break and,</p>
+      <p begin="00:38:39.560" end="00:38:43.800">you know, figure out what went wrong that's an experience that we care about we just...the</p>
+      <p begin="00:38:43.800" end="00:38:48.620">...twenty fifteen but let me show you another quick way of like hopefully</p>
+      <p begin="00:38:48.620" end="00:38:53.870">you debugging a particular data binding in this case I have an issue in my second</p>
+      <p begin="00:38:53.870" end="00:38:57.750">dab and, without actually turning off the selection to icon navigate</p>
+      <p begin="00:38:57.750" end="00:39:03.540">to the second dab so let me go and turn off the selection do and navigate ...second</p>
+      <p begin="00:39:03.540" end="00:39:08.400">tab and application...a couple of combo boxes that don't have any entries</p>
+      <p begin="00:39:08.400" end="00:39:11.340">and them and I'm wondering why that's the case how</p>
+      <p begin="00:39:11.340" end="00:39:17.000">...this issue one option would be you select the combo box?</p>
+      <p begin="00:39:17.000" end="00:39:21.210">And, say hey...exactly this combo box coming from this actually pretty hard if you don't actually on</p>
+      <p begin="00:39:21.210" end="00:39:25.350">...animal so, the selection do is actually useful just to get there but,</p>
+      <p begin="00:39:25.350" end="00:39:29.800">you can then go to the combo box itself and view the source.</p>
+      <p begin="00:39:29.800" end="00:39:32.080">And, you can't you can see in this case, you know,</p>
+      <p begin="00:39:32.080" end="00:39:36.250">it's an obvious mistake to a binding but let's say...was not as obvious how</p>
+      <p begin="00:39:36.250" end="00:39:41.020">...debug this issue one way of doing this would be just look at the data context and figure out where the</p>
+      <p begin="00:39:41.020" end="00:39:45.640">data context is coming from in the visual tree and then figure out where you're binding</p>
+      <p begin="00:39:45.640" end="00:39:51.190">...sort of breaking...search for the data context property.</p>
+      <p begin="00:39:51.190" end="00:39:55.210">We allow you to sort of explore search for it but at the same time in this case you can see</p>
+      <p begin="00:39:55.210" end="00:39:59.650">that is said to my view model but you can also expanded and look at all of the</p>
+      <p begin="00:39:59.650" end="00:40:03.670">properties and values that it's coming from in this case I know that ours is</p>
+      <p begin="00:40:03.670" end="00:40:08.610">observable collection and expanded and all of the values are there as well so I know that, you know,</p>
+      <p begin="00:40:08.610" end="00:40:13.310">the data model itself is correct I just did a mistake in my binding that way you can sort</p>
+      <p begin="00:40:13.310" end="00:40:16.810">of just by traversing the visual tree and taking a look at the data context you</p>
+      <p begin="00:40:16.810" end="00:40:20.870">can fairly effectively diagonal certain class of binding issues I'm not saying</p>
+      <p begin="00:40:20.870" end="00:40:26.020">that's equality putting a break point I think there is value in both propositions this is one of</p>
+      <p begin="00:40:26.020" end="00:40:30.950">experiences that we are the that we want to delaware...twenty fifteen.</p>
+      <p begin="00:40:30.950" end="00:40:34.560">So, that's my click dude...ui debugging tools,</p>
+      <p begin="00:40:34.560" end="00:40:40.770">for example, any specific questions so far before I switch gears.</p>
+      <p begin="00:40:40.770" end="00:40:49.340">Okay, so, let me switch back to slides for a second.</p>
+      <p begin="00:40:49.340" end="00:40:53.940">Like I said, you know, the big things we want to do going forward is pushing the edge that you just</p>
+      <p begin="00:40:53.940" end="00:40:58.750">made bacterias animal that's a feature that you really want to do and then eventually like build some</p>
+      <p begin="00:40:58.750" end="00:41:04.180">more richer visualizations for debugging data bindings and things like that.</p>
+      <p begin="00:41:04.180" end="00:41:07.010">Let's switch gears to profiling tools</p>
+      <p begin="00:41:07.010" end="00:41:11.650">...fifteen we have introduces the field new profiling tools in particular the</p>
+      <p begin="00:41:11.650" end="00:41:15.370">timeline tool that allows you to understand ui responsiveness issues</p>
+      <p begin="00:41:15.370" end="00:41:19.950">...my application not really starting up fast wire their issues...working with</p>
+      <p begin="00:41:19.950" end="00:41:25.980">application have a network tool that allows you to monitor network requests and things like that we</p>
+      <p begin="00:41:25.980" end="00:41:30.710">do support vpf and windows universal...with all of these tools but,</p>
+      <p begin="00:41:30.710" end="00:41:33.630">today I'm going to demo in the context of vpf they</p>
+      <p begin="00:41:33.630" end="00:41:38.370">do work for all scenarios and the other thing to notice these tools only work if you're running on windows</p>
+      <p begin="00:41:38.370" end="00:41:42.830">...today but we are working for inversely twenty fifteen they will also work if you're running on</p>
+      <p begin="00:41:42.830" end="00:41:47.390">windows seven so that's really not an issue is just a point in time thing</p>
+      <p begin="00:41:47.390" end="00:41:58.360">what are these tools capable off let's go and take a quick look at those.</p>
+      <p begin="00:41:58.360" end="00:42:03.660">Let me close the solution and open up yet another solution that helps me diagnose show</p>
+      <p begin="00:42:03.660" end="00:42:06.710">...performance issue diagonals and fix it in this case</p>
+      <p begin="00:42:06.710" end="00:42:12.000">I have a simple stockcar application let me go and run it the first thing you'll notice</p>
+      <p begin="00:42:12.000" end="00:42:16.790">is when the app starts up it takes some time it takes about five to seven seconds</p>
+      <p begin="00:42:16.790" end="00:42:21.550">...let's just let me just give it about five seconds so five seconds later the abstracts</p>
+      <p begin="00:42:21.550" end="00:42:26.900">and that's not good because you're...and...very happy so let's go and take a look at</p>
+      <p begin="00:42:26.900" end="00:42:31.080">what went wrong in terms of...and wide slow.</p>
+      <p begin="00:42:31.080" end="00:42:36.670">In registry twenty fifteen you can also run profiling tools just like you'd</p>
+      <p begin="00:42:36.670" end="00:42:40.660">expect you can in this case I'm going to select the cpu usage</p>
+      <p begin="00:42:40.660" end="00:42:42.030">...which is,</p>
+      <p begin="00:42:42.030" end="00:42:46.410">you know, one potential reason why map could be slow but I'm going to select this new</p>
+      <p begin="00:42:46.410" end="00:42:51.810">tool that we've introduced which is the timeline...this allows you to visualize what's really happening</p>
+      <p begin="00:42:51.810" end="00:42:57.050">...by the way this is a...application that I'm demonstrating?</p>
+      <p begin="00:42:57.050" end="00:43:00.680">So, let's go ahead yes and start you know,</p>
+      <p begin="00:43:00.680" end="00:43:03.660">a profiling session I don't really have to do anything we are visual</p>
+      <p begin="00:43:03.660" end="00:43:09.220">...collecting all the dw data and, it's should just take a second and,</p>
+      <p begin="00:43:09.220" end="00:43:14.050">let me go...stop the collection give it a couple seconds</p>
+      <p begin="00:43:14.050" end="00:43:18.800">...analyze all that...w data aggregated and presented in the form of...report that</p>
+      <p begin="00:43:18.800" end="00:43:25.700">...can act on.</p>
+      <p begin="00:43:25.700" end="00:43:28.210">So, once that's happened you'll get a report with</p>
+      <p begin="00:43:28.210" end="00:43:33.180">a graph that sort of gives you a high-level overview of what really as happened all these blue</p>
+      <p begin="00:43:33.180" end="00:43:37.280">bars over here some sort of parsing is happening you're trying to create some sort</p>
+      <p begin="00:43:37.280" end="00:43:42.010">of example element and that's taking a bunch of time all these orange</p>
+      <p begin="00:43:42.010" end="00:43:46.220">bars over here some significant layout operation is happening as you can see that application</p>
+      <p begin="00:43:46.220" end="00:43:51.470">...a lot of elements and hence you should expect quite a bit of layout to happen in that case now</p>
+      <p begin="00:43:51.470" end="00:43:53.250">...twenty fifteen</p>
+      <p begin="00:43:53.250" end="00:43:58.220">we have added notion of grouping certain kinds of logical...that</p>
+      <p begin="00:43:58.220" end="00:44:03.280">makes sense to you so in this case we have logical group of events that the bucket together</p>
+      <p begin="00:44:03.280" end="00:44:07.290">application startup and that's really the problem I'm trying to diagnose at this point</p>
+      <p begin="00:44:07.290" end="00:44:11.100">why is my application not starting up quickly I can is right click on</p>
+      <p begin="00:44:11.100" end="00:44:16.620">and evened and say I want to investigate this event and I don't really care about anything else I can</p>
+      <p begin="00:44:16.620" end="00:44:21.800">...what...now done...captured all of the evens that only correspond</p>
+      <p begin="00:44:21.800" end="00:44:28.880">...contributed...delay and group them together to show them under application</p>
+      <p begin="00:44:28.880" end="00:44:33.620">startup and now I can start looking at and issues there is some garbage collection happening but that's</p>
+      <p begin="00:44:33.620" end="00:44:38.570">not really significant majority of the work seems to be still happening in parsing main window</p>
+      <p begin="00:44:38.570" end="00:44:42.640">I can expanded I can see exactly what happened...some of the</p>
+      <p begin="00:44:42.640" end="00:44:47.330">...main window but really like the problem is once when I look at all of this code I kinda know</p>
+      <p begin="00:44:47.330" end="00:44:51.800">that applications database slow and it's constructing main window that's causing</p>
+      <p begin="00:44:51.800" end="00:44:54.760">...but what do I do next that's where</p>
+      <p begin="00:44:54.760" end="00:44:59.580">...profile languages the which is the ability to run to tools together could</p>
+      <p begin="00:44:59.580" end="00:45:04.200">come to help in this case I'm going to switch over to the cpu usage tool and I'm</p>
+      <p begin="00:45:04.200" end="00:45:08.640">going to look at what exactly happened when I look at my cpu usage let's go and</p>
+      <p begin="00:45:08.640" end="00:45:14.260">...plate and say in this case I know that fifty-seven person...the dime has been</p>
+      <p begin="00:45:14.260" end="00:45:18.810">send in spend and this one function I can keep drilling down to say okay</p>
+      <p begin="00:45:18.810" end="00:45:21.160">where is that most of the work is</p>
+      <p begin="00:45:21.160" end="00:45:25.500">happening again to this point where that's my code and beyond out as platform</p>
+      <p begin="00:45:25.500" end="00:45:30.350">...it's the get data function that's doing something that's going to take a look at what's</p>
+      <p begin="00:45:30.350" end="00:45:34.990">happening I can just like you...and start inspecting as to what my</p>
+      <p begin="00:45:34.990" end="00:45:39.720">...is doing in this case just because I...my code and fetching data synchronous</p>
+      <p begin="00:45:39.720" end="00:45:44.350">...and that's causing my ui to pause the fixes pretty simple just do</p>
+      <p begin="00:45:44.350" end="00:45:51.350">a task dot run when I'm calling that particular function rapid in.</p>
+      <p begin="00:45:51.350" end="00:45:57.920">Anonymous delegate here.</p>
+      <p begin="00:45:57.920" end="00:46:02.890">that's pretty much it...to do to fix this particular function have zeroed in on the problem in this case it's</p>
+      <p begin="00:46:02.890" end="00:46:07.310">a fairly simple issue...zeroed in the problem of fixed...and now when I run</p>
+      <p begin="00:46:07.310" end="00:46:12.840">...nap should hopefully if everything works startup faster and everything should get</p>
+      <p begin="00:46:12.840" end="00:46:18.020">...are like populated asynchronous...as well as you know,...a today on synchronous</p>
+      <p begin="00:46:18.020" end="00:46:27.320">...on the right thread let me actually switch gears to show the memory profiler for a second.</p>
+      <p begin="00:46:27.320" end="00:46:32.600">go back to my old project tracking application and there is a memorization this application</p>
+      <p begin="00:46:32.600" end="00:46:37.540">it's using a lot of memory how do I know what's going on you can again use the profiling tools</p>
+      <p begin="00:46:37.540" end="00:46:42.150">inverse studio and you can you can turn on the memory usage tool</p>
+      <p begin="00:46:42.150" end="00:46:45.960">...usage tool by the way one of the unique capabilities as a helps you</p>
+      <p begin="00:46:45.960" end="00:46:50.570">track both native and manage...case your application as...a lot of</p>
+      <p begin="00:46:50.570" end="00:46:54.540">native memory allocations going on you can choose to do that as well but in this case it's appear</p>
+      <p begin="00:46:54.540" end="00:47:01.510">managed application and I don't really have to worry about native code so let's go and start profiling.</p>
+      <p begin="00:47:01.510" end="00:47:06.460">And, what you can do is the way you do memory profiling usually is you would</p>
+      <p begin="00:47:06.460" end="00:47:12.850">take a snapshot before your operation that you just did wait for a second for that</p>
+      <p begin="00:47:12.850" end="00:47:17.510">snapshot to complete now do your memory intensive operation in this case might when I</p>
+      <p begin="00:47:17.510" end="00:47:19.850">...like my time entry and I select my report</p>
+      <p begin="00:47:19.850" end="00:47:24.650">view it's actually causing a bunch of allocations...the snapshot and starred</p>
+      <p begin="00:47:24.650" end="00:47:30.090">differing the due to figure out what extra objects...created why they were created so on so forth so,</p>
+      <p begin="00:47:30.090" end="00:47:32.610">let me stop the profiling session and lead</p>
+      <p begin="00:47:32.610" end="00:47:41.190">give registry a second to analyze the data and take a look at what exactly went wrong?</p>
+      <p begin="00:47:41.190" end="00:47:44.700">Just one second hopefully should come through there we go</p>
+      <p begin="00:47:44.700" end="00:47:48.490">and you can see like between these two snapshots there was a growth of about three</p>
+      <p begin="00:47:48.490" end="00:47:52.780">md the question is why and that's the question you're trying to answer and a bunch of objects</p>
+      <p begin="00:47:52.780" end="00:47:58.560">...allocated as...registration give you a detailed report of what objects</p>
+      <p begin="00:47:58.560" end="00:48:03.020">...created who's holding onto those objects and things like that in this case</p>
+      <p begin="00:48:03.020" end="00:48:06.480">...new data grades were created and they sort of if you look at if you</p>
+      <p begin="00:48:06.480" end="00:48:10.930">expand these they together almost out up to like three md so that's where most of</p>
+      <p begin="00:48:10.930" end="00:48:15.500">your allocations is coming from using things like what they are referencing</p>
+      <p begin="00:48:15.500" end="00:48:20.080">and things like that you can narrow down to the actual root cause of who's doing</p>
+      <p begin="00:48:20.080" end="00:48:31.240">the instantiation and then go and fix the problem using the memory tools and...studio.</p>
+      <p begin="00:48:31.240" end="00:48:42.340">I'm going to switch gears to show my last experience any question about the profiling tools.</p>
+      <p begin="00:48:42.340" end="00:48:47.300">...the question is what versions averse studio have this experience the memory tool is available</p>
+      <p begin="00:48:47.300" end="00:48:50.060">...to your twenty thirteen but, it only works</p>
+      <p begin="00:48:50.060" end="00:48:54.860">on windows a dot one right now the memory and timeline tools are both available in</p>
+      <p begin="00:48:54.860" end="00:48:59.560">...studio twenty fifteen and they should by the time you're done work on windows seven or</p>
+      <p begin="00:48:59.560" end="00:49:03.580">higher.</p>
+      <p begin="00:49:03.580" end="00:49:05.840">Okay.</p>
+      <p begin="00:49:05.840" end="00:49:09.010">Since we're running out of time I'm going to be able to do just one of the three experience</p>
+      <p begin="00:49:09.010" end="00:49:15.600">I want to do all three this is an experience that is very specific to windows universal windows</p>
+      <p begin="00:49:15.600" end="00:49:20.410">apps and that's about how do you do adaptive ui which is how do you sort of make</p>
+      <p begin="00:49:20.410" end="00:49:23.510">...great when it's running on a bunch of, you know,</p>
+      <p begin="00:49:23.510" end="00:49:25.900">...I'm out there</p>
+      <p begin="00:49:25.900" end="00:49:30.880">...multitude of approaches that you can take all the way from controls that just do,</p>
+      <p begin="00:49:30.880" end="00:49:35.660">you know, smart things you don't really have to do anything just make sure that you using the right controls and they will do the right</p>
+      <p begin="00:49:35.660" end="00:49:41.360">thing for you can like the gentleman was asking you can use state triggers so you can you can switch to a</p>
+      <p begin="00:49:41.360" end="00:49:46.260">visual state that's all fine but what if you really wanted to do like a completely tailored</p>
+      <p begin="00:49:46.260" end="00:49:51.200">view for a device right what if...xbox you I was so different than your phone ui</p>
+      <p begin="00:49:51.200" end="00:49:52.850">...a desktop ui that you really</p>
+      <p begin="00:49:52.850" end="00:49:57.870">wanted to do something different that's the experience what I'm going to show because the other two were already covered in some</p>
+      <p begin="00:49:57.870" end="00:50:02.840">of the sessions and in particular there is some really interesting developer tricks that you can do for this</p>
+      <p begin="00:50:02.840" end="00:50:07.270">last experience let me show that an action by opening</p>
+      <p begin="00:50:07.270" end="00:50:12.650">up universal windows application I'm going to run this application first ad design</p>
+      <p begin="00:50:12.650" end="00:50:20.520">...application to run on my mobile device and let me go and run it.</p>
+      <p begin="00:50:20.520" end="00:50:25.380">When I run this application...feel about this bill quality good question</p>
+      <p begin="00:50:25.380" end="00:50:30.740">let me go and select ...category and look at certain appetizers you'll see that the</p>
+      <p begin="00:50:30.740" end="00:50:32.500">view looks great?</p>
+      <p begin="00:50:32.500" end="00:50:33.710">Oebps.</p>
+      <p begin="00:50:33.710" end="00:50:38.350">Great question sorry about that.</p>
+      <p begin="00:50:38.350" end="00:50:41.750">Terrago sorry.</p>
+      <p begin="00:50:41.750" end="00:50:45.510">The application looks great like you can just navigate around and,</p>
+      <p begin="00:50:45.510" end="00:50:49.460">the ux is actually fairly optimized for the mobile device.</p>
+      <p begin="00:50:49.460" end="00:50:54.320">Now I'm ready to bring desktop into the makes and I want to run this application on my machine right let's go</p>
+      <p begin="00:50:54.320" end="00:50:57.910">and run this app.</p>
+      <p begin="00:50:57.910" end="00:51:01.940">And, see how it looks like on my own machine.</p>
+      <p begin="00:51:01.940" end="00:51:06.470">...simulator if I so...given a second.</p>
+      <p begin="00:51:06.470" end="00:51:10.880">The app boots up you can select a particular appetizer you can...you know,</p>
+      <p begin="00:51:10.880" end="00:51:12.580">something out there but see the</p>
+      <p begin="00:51:12.580" end="00:51:16.480">...doesn't really low-grade because it's optimized for mobile and I'm really running it</p>
+      <p begin="00:51:16.480" end="00:51:19.760">...full-screen desktop mode in this particular scenario so we're going</p>
+      <p begin="00:51:19.760" end="00:51:25.000">to do about it the reason I'm showing this experiences inversely twenty fifteen</p>
+      <p begin="00:51:25.000" end="00:51:29.930">...doing bunch of work so you can share code across mammal files as well and,</p>
+      <p begin="00:51:29.930" end="00:51:35.080">the way you do that is to just...view to your application let's go and do that let's go and</p>
+      <p begin="00:51:35.080" end="00:51:41.280">create a new folder in this case I'm going to call itdevice family?</p>
+      <p begin="00:51:41.280" end="00:51:46.320">Does desktop and I'm going to go out and add a new example view to</p>
+      <p begin="00:51:46.320" end="00:51:51.310">it in this case I can just do and add new item and because ample view and type of whole bunch of</p>
+      <p begin="00:51:51.310" end="00:51:56.260">...that optimizes for that user experience but I'm going to do that because that's going to take a bunch of time let</p>
+      <p begin="00:51:56.260" end="00:52:00.440">me just go and add...existing file that I already created before and I'll open</p>
+      <p begin="00:52:00.440" end="00:52:08.560">...showed what it is just as...file with the user experience that's optimize for you know,</p>
+      <p begin="00:52:09.700" end="00:52:14.080">the desktop form factor nothing really fancy but the thing to note here is</p>
+      <p begin="00:52:14.080" end="00:52:19.450">it does not have a code behind that is if you look at the x...class</p>
+      <p begin="00:52:19.450" end="00:52:24.660">it doesn't have any code behind it that's because all of the code is shared with</p>
+      <p begin="00:52:24.660" end="00:52:29.360">the generate file that already exists in which case it is recipe instructions</p>
+      <p begin="00:52:29.360" end="00:52:32.860">...seos...you...to do is to give multiples</p>
+      <p begin="00:52:32.860" end="00:52:36.770">...the same code behind so you can reuse code across these</p>
+      <p begin="00:52:36.770" end="00:52:41.340">...files and do everything else like you're even handlers are shared on your everything</p>
+      <p begin="00:52:41.340" end="00:52:47.780">else shared except your examples different right what does that mean for us...I build and run?</p>
+      <p begin="00:52:47.780" end="00:52:48.600">That's going to build and run</p>
+      <p begin="00:52:48.600" end="00:52:54.440">this application and take a look at how it looks like?</p>
+      <p begin="00:52:54.440" end="00:52:58.040">Hopefully should fix the problem.</p>
+      <p begin="00:52:58.040" end="00:52:58.730">Now if I go</p>
+      <p begin="00:52:58.730" end="00:53:03.580">and select my appetizer an ice like this thing it looks pretty.</p>
+      <p begin="00:53:03.580" end="00:53:08.720">Good I guess so, we've done a lot of work to tailor this particular view now you could have done this using any</p>
+      <p begin="00:53:08.720" end="00:53:11.160">other techniques as well that's really up to you but</p>
+      <p begin="00:53:11.160" end="00:53:16.600">...dramatically different user experiences this is one of the techniques that you can consider to make sure</p>
+      <p begin="00:53:16.600" end="00:53:22.200">that your app looks great on certain form factors one thing I wanted to talk about this particular</p>
+      <p begin="00:53:22.200" end="00:53:27.240">experience let me go and are you guys know what initialize component is which is the way</p>
+      <p begin="00:53:27.240" end="00:53:31.680">we load this animal but one thing about universal windows</p>
+      <p begin="00:53:31.680" end="00:53:35.810">...I go to the do go to my initialize component we now have</p>
+      <p begin="00:53:35.810" end="00:53:40.300">...override for the initialize component very can bastion any example uri and</p>
+      <p begin="00:53:40.300" end="00:53:45.170">we load that uri as a part of part of the part of the instantiation of</p>
+      <p begin="00:53:45.170" end="00:53:50.060">the control so you could write some really complex business logic that sort of calculates</p>
+      <p begin="00:53:50.060" end="00:53:53.750">what's that what's the best possible ui that can potentially so</p>
+      <p begin="00:53:53.750" end="00:53:57.790">your customer and then just call into initialize component that</p>
+      <p begin="00:53:57.790" end="00:54:02.420">...loaded and displayed this allows you to create are really tailored user</p>
+      <p begin="00:54:02.420" end="00:54:09.490">experiences for your customers for the form factors that you care about most?</p>
+      <p begin="00:54:09.490" end="00:54:15.520">So, let's quickly switch back to slides and.</p>
+      <p begin="00:54:15.520" end="00:54:20.070">Summarize so we have seen a number of new experiences...twenty fifteen, for example,</p>
+      <p begin="00:54:20.070" end="00:54:26.760">tools and, you know, you can get a little bit more of the details on various sessions and things like</p>
+      <p begin="00:54:26.760" end="00:54:32.000">that in particular I mean now it's kind of like you know, you can go to msdn and view these if you have missed some of</p>
+      <p begin="00:54:32.000" end="00:54:36.930">the sessions there are a couple of sessions that are specifically dedicated to creating great-great</p>
+      <p begin="00:54:36.930" end="00:54:40.620">user experiences that will great across devices I just want to show</p>
+      <p begin="00:54:40.620" end="00:54:45.730">one technique because that's primarily a code reuse technique more than anything else but,</p>
+      <p begin="00:54:45.730" end="00:54:49.080">you can use a number of these techniques to build a great user experiences</p>
+      <p begin="00:54:50.270" end="00:54:54.810">please don't forget to complete evaluation form for some reason I don't have that you know,</p>
+      <p begin="00:54:54.810" end="00:54:58.920">barcode scanner thingy but I'd really appreciate...help us improve</p>
+      <p begin="00:54:58.920" end="00:55:04.710">and bring better content you in the future and...saidopen up the question</p>
+      <p begin="00:55:04.710" end="00:55:17.060">...any questions thanks-a-lot for taking the time to attend I really appreciate.</p>
+      <p begin="00:55:17.060" end="00:55:22.540">...for the lives animal editing is it a compatible with</p>
+      <p begin="00:55:22.540" end="00:55:27.010">like windows phone is like the simulator can devices doo-doo,...</p>
+      <p begin="00:55:27.010" end="00:55:30.290">so, the question is my you call it the ui debugging to,</p>
+      <p begin="00:55:30.290" end="00:55:33.920">for example, but, I get reducing is the united are the ui debugging tools,</p>
+      <p begin="00:55:33.920" end="00:55:37.280">for example, compatible with devices and absolutelyno,</p>
+      <p begin="00:55:37.280" end="00:55:41.370">matter where your app is running...could be an xbox that could be windows phone</p>
+      <p begin="00:55:41.370" end="00:55:47.830">we should be able to lead to select and edited and push standards as well...like thank you.</p>
+      <p begin="00:55:47.830" end="00:55:52.050">For the tailored view this switching that was happening there</p>
+      <p begin="00:55:52.050" end="00:55:55.530">was that automatic based on...the solder name,</p>
+      <p begin="00:55:55.530" end="00:55:58.650">yeah, so, the question I'll just...be a just in case</p>
+      <p begin="00:55:58.650" end="00:56:03.270">... mike is actually...is the is the is the feature for tailored views</p>
+      <p begin="00:56:03.270" end="00:56:07.020">the switching happen automatically in this particular case yes because</p>
+      <p begin="00:56:07.020" end="00:56:09.920">...basically using the resource manager and windows</p>
+      <p begin="00:56:09.920" end="00:56:14.910">direct load the right resource but like the reason I wanted to show this experience particularly</p>
+      <p begin="00:56:14.910" end="00:56:18.480">is because you have full control over that you ideal in the most</p>
+      <p begin="00:56:18.480" end="00:56:23.480">...you should not just depend on the name of the device family because it's</p>
+      <p begin="00:56:23.480" end="00:56:28.740">sometimes hard to make that distinction if you want to do it that's fine but you can also choose to sort of like</p>
+      <p begin="00:56:28.740" end="00:56:33.080">...custom code and figure out what's the best possible view and call</p>
+      <p begin="00:56:33.080" end="00:56:35.450">...initialize component that particulars</p>
+      <p begin="00:56:35.450" end="00:56:38.650">...load the view but yes the answer short answer is yes okay,</p>
+      <p begin="00:56:38.650" end="00:56:44.540">yeah, it's you sort...some similarities to wpf themes...like they're, they're</p>
+      <p begin="00:56:44.540" end="00:56:49.500">...names that match-up with exactly what device family that's...specific, you know,</p>
+      <p begin="00:56:49.500" end="00:56:52.510">exactly thank you.</p>
+      <p begin="00:56:52.510" end="00:56:54.330">That's ...the</p>
+      <p begin="00:56:54.330" end="00:56:59.260">profiler actually available as a service.</p>
+      <p begin="00:56:59.260" end="00:57:01.280">Is the profiler available as a service</p>
+      <p begin="00:57:01.280" end="00:57:05.790">my by this question I'm guessing you're asking can you run it from a command-line or something like that</p>
+      <p begin="00:57:05.790" end="00:57:11.710">...if...my applet someplace else that I...to profile it like we don't</p>
+      <p begin="00:57:11.710" end="00:57:16.460">supposed so the question is if it's a remote scenario can be profiler don't supports today</p>
+      <p begin="00:57:16.460" end="00:57:21.350">...don't support launching app remotely for profiling that's something that we want to address</p>
+      <p begin="00:57:21.350" end="00:57:24.520">in the future but today task to be run locally</p>
+      <p begin="00:57:24.520" end="00:57:29.180">...you can run it on the device and you can profile against it but you can run it across using</p>
+      <p begin="00:57:29.180" end="00:57:34.160">...ip address or something like that and then profile and there you can certainly do it for devices that</p>
+      <p begin="00:57:34.160" end="00:57:39.190">...connective dresser for the live properties if</p>
+      <p begin="00:57:39.190" end="00:57:43.760">you examine the data context is that cause lazy loader properties again on lazy</p>
+      <p begin="00:57:43.760" end="00:57:51.730">loaded like to get their value that's a good question so the...</p>
+      <p begin="00:57:51.730" end="00:57:54.240">I actually...math.</p>
+      <p begin="00:57:54.240" end="00:57:57.810">I would say we don't do anything specific but because we are querying the</p>
+      <p begin="00:57:57.810" end="00:57:59.780">data context property</p>
+      <p begin="00:57:59.780" end="00:58:04.780">whether something special happens that's a good question we don't do anything...</p>
+      <p begin="00:58:04.780" end="00:58:09.770">we just query...runtime for the data context show it and, do</p>
+      <p begin="00:58:09.770" end="00:58:13.350">it but as a part of the...if you do something smarter?</p>
+      <p begin="00:58:14.540" end="00:58:16.920">Then, yeah, that dial execute as well.</p>
+      <p begin="00:58:18.440" end="00:58:23.560">Thank you yes...easily needs...support the and,</p>
+      <p begin="00:58:23.560" end="00:58:27.960">you...with...forms I'm...ortiz something out of the question</p>
+      <p begin="00:58:27.960" end="00:58:34.870">the question is do we want to support examine from something that's an example...informs.</p>
+      <p begin="00:58:34.870" end="00:58:39.520">The...have been built with an architecture that's very agnostic and we can plug-in anything</p>
+      <p begin="00:58:40.590" end="00:58:45.420">in our first iteration...still be optimize for windows client applications</p>
+      <p begin="00:58:45.420" end="00:58:55.010">but that's...that's something that, you know, is interesting to us as well thank you very much no problem?</p>
+      <p begin="00:58:55.010" end="00:58:59.010">Will there be a blend version for universal...</p>
+      <p begin="00:58:59.010" end="00:59:05.730">Malaria blend version for universe...actually lenders therefore all example platforms there is no,</p>
+      <p begin="00:59:05.730" end="00:59:07.050">such thing as...for universe</p>
+      <p begin="00:59:07.050" end="00:59:11.980">...if you if you get visual studio twenty fifteen community which is our free edition you'll get</p>
+      <p begin="00:59:11.980" end="00:59:19.890">blend and...support for all kinds of...including windows universe...</p>
+      <p begin="00:59:19.890" end="00:59:23.800">Any other questions.</p>
+      <p begin="00:59:23.800" end="00:59:28.620">Okay, all right thanks everyone I'm happy to answer your question zero as well.</p>
+
+    </div>
+  </body>
+</tt>

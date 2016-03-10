@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.857</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.730" end="00:00:07.090">All right so we're back in build two thousand fifteen lightbulb</p>
+      <p begin="00:00:07.090" end="00:00:14.070">...back in may have thousand good...rector peter tour of the windows...you</p>
+      <p begin="00:00:14.070" end="00:00:18.710">learned today about the wind universal windows platform so we want to</p>
+      <p begin="00:00:18.710" end="00:00:23.260">talk today of a couple of the program managers who were sort of leading the designer for their</p>
+      <p begin="00:00:23.260" end="00:00:28.590">for that api set to talk about the api set and what actually means so the first question I would</p>
+      <p begin="00:00:28.590" end="00:00:33.470">ask essentially how did you arrive at a universal windows api</p>
+      <p begin="00:00:33.470" end="00:00:38.320">...how did...work...off that on</p>
+      <p begin="00:00:38.320" end="00:00:45.090">...sowhat we did was we had windows...a one they had a</p>
+      <p begin="00:00:45.090" end="00:00:49.650">survey...available to them and we...windows phone a major one...belgium</p>
+      <p begin="00:00:51.140" end="00:00:56.550">...available...to do was basically bring the best of all these things together</p>
+      <p begin="00:00:56.550" end="00:00:59.370">and expand on it so that we could add more capabilities to</p>
+      <p begin="00:00:59.370" end="00:01:06.050">...so we ...will tell us a little bit about how what percentage of</p>
+      <p begin="00:01:06.050" end="00:01:10.970">...functionality taught inside universe windows platform we started with these three divest platforms</p>
+      <p begin="00:01:10.970" end="00:01:15.140">brought them together into one and then we listen to a lot of customer feedback about things</p>
+      <p begin="00:01:15.140" end="00:01:20.630">or missing...so there's many examples one out...for example,</p>
+      <p begin="00:01:20.630" end="00:01:23.790">threads in windows eight one windows finite</p>
+      <p begin="00:01:23.790" end="00:01:27.660">...those were not to thread pool but we didn't use the traditional</p>
+      <p begin="00:01:27.660" end="00:01:33.030">...thirty-two api like create...etc with a lot of customer feedback about that which</p>
+      <p begin="00:01:33.030" end="00:01:37.750">...that so when you have this windows platform...windows ten now includes a lot more</p>
+      <p begin="00:01:37.750" end="00:01:42.030">...like threading on more...who want to but based</p>
+      <p begin="00:01:42.030" end="00:01:44.740">...customer feedback and relapse we had people building</p>
+      <p begin="00:01:44.740" end="00:01:47.070">a windows virtually expanded that</p>
+      <p begin="00:01:47.070" end="00:01:51.560">...just what was interesting platforms lowest common denominator like this tiny little lump</p>
+      <p begin="00:01:51.560" end="00:01:53.470">of functionality was take what's in</p>
+      <p begin="00:01:53.470" end="00:01:58.040">these in these three different platforms bring the boca together and</p>
+      <p begin="00:01:58.040" end="00:02:03.360">expanded all-out...feedback awesome and one thing that I wanted to</p>
+      <p begin="00:02:03.360" end="00:02:08.340">highlight is the default policy going forward is new api</p>
+      <p begin="00:02:08.340" end="00:02:14.380">...part of the universal plan so we're trying not to fragment the api and say this is</p>
+      <p begin="00:02:14.380" end="00:02:18.890">an xbox api sort only ends up on the xbox device or</p>
+      <p begin="00:02:18.890" end="00:02:24.750">...phone api the default policy is to put the api everyone?</p>
+      <p begin="00:02:24.750" end="00:02:28.800">Now there's some subtleties there like, for example.</p>
+      <p begin="00:02:28.800" end="00:02:33.530">Making up a scanner...probably will never have a scanner on...</p>
+      <p begin="00:02:33.530" end="00:02:38.420">xbox just doesn't make a lot of sense the api is there.</p>
+      <p begin="00:02:38.420" end="00:02:42.920">Because so if I...app that wants to use of scanner...the natural api and</p>
+      <p begin="00:02:42.920" end="00:02:46.840">say give me...the scanners on this device and the api</p>
+      <p begin="00:02:46.840" end="00:02:49.300">...works on xbox they'll say well they're</p>
+      <p begin="00:02:49.300" end="00:02:54.600">...here just like on desktop if you didn't have any plugged in so</p>
+      <p begin="00:02:54.600" end="00:03:00.100">developers are not going to have to the...I can help whichhave to</p>
+      <p begin="00:03:00.100" end="00:03:04.530">write different code for different devices which they had to do traditionally</p>
+      <p begin="00:03:04.530" end="00:03:09.210">...universal windows platform is really to the extent we can humanly make</p>
+      <p begin="00:03:09.210" end="00:03:11.650">...universal?</p>
+      <p begin="00:03:11.650" end="00:03:15.950">And, I think just building...said in the past again with windows,</p>
+      <p begin="00:03:15.950" end="00:03:20.190">windows phone...xbox you could have a similar source code base but</p>
+      <p begin="00:03:20.190" end="00:03:26.100">...would if that's if that photon...that in the new world even where there</p>
+      <p begin="00:03:26.100" end="00:03:30.180">are cases where maybe there is an api for legacy reasons only actually</p>
+      <p begin="00:03:30.180" end="00:03:33.840">exists on xbox needed...anymore you can actually seems</p>
+      <p begin="00:03:33.840" end="00:03:38.360">...so runtime this...be talking about on friday you...friday</p>
+      <p begin="00:03:38.360" end="00:03:43.060">friday's at runtime you can detect ocean I...scanner api should I</p>
+      <p begin="00:03:43.060" end="00:03:47.640">called up the windows...back but maybe I should I call this api know if</p>
+      <p begin="00:03:47.640" end="00:03:53.670">...a single qubits truly a single code base so before we get to question of</p>
+      <p begin="00:03:53.670" end="00:03:59.050">...thank you man...niners been asking questions for years.</p>
+      <p begin="00:03:59.050" end="00:04:03.460">How does universal apps work on io...surely not required</p>
+      <p begin="00:04:03.460" end="00:04:10.150">dubious so how does universal apps on t work?</p>
+      <p begin="00:04:10.150" end="00:04:14.850">Surely they don't require you to...from the store out where</p>
+      <p begin="00:04:14.850" end="00:04:20.300">...you asking...so...the first question so</p>
+      <p begin="00:04:20.300" end="00:04:24.170">...to platform is part of the universe windows platform so you can</p>
+      <p begin="00:04:24.170" end="00:04:28.180">rights universal windows epsilon io...hire to epsy right</p>
+      <p begin="00:04:28.180" end="00:04:34.200">...windows absolute work on phone xbox...et cetera et cetera</p>
+      <p begin="00:04:34.200" end="00:04:38.900">the distribution of apps on I...can be different I'm not an expert on that.</p>
+      <p begin="00:04:38.900" end="00:04:40.990">So, I correct answer that the</p>
+      <p begin="00:04:40.990" end="00:04:45.160">school part of it but yes they are universe windows apps they have the same api</p>
+      <p begin="00:04:45.160" end="00:04:48.870">...every other universe windows up has is just a windows...</p>
+      <p begin="00:04:50.360" end="00:04:57.040">the only thing I would add is there are differences between devices for you so you want</p>
+      <p begin="00:04:57.040" end="00:05:02.020">to think about that when we talk about universe lap you can write one code base compile it</p>
+      <p begin="00:05:02.020" end="00:05:06.850">deployed all these devices same api is for all practical purposes</p>
+      <p begin="00:05:06.850" end="00:05:10.650">...available everywhere but if you projecting to a</p>
+      <p begin="00:05:10.650" end="00:05:12.350">ten foot screen or</p>
+      <p begin="00:05:12.350" end="00:05:16.770">...hollow lens on a fitness band or some future device</p>
+      <p begin="00:05:16.770" end="00:05:22.170">and you probably want to have different uri but you can either there's something called adaptive</p>
+      <p begin="00:05:22.170" end="00:05:26.910">...of you online those animal team has a presentation today</p>
+      <p begin="00:05:26.910" end="00:05:30.460">and multiple about...and,</p>
+      <p begin="00:05:30.460" end="00:05:35.460">that's not actually might area of expertise mine is more the actual api itself so</p>
+      <p begin="00:05:35.460" end="00:05:40.730">if I were writing...an app for io t have the choice it'll run on everywhere</p>
+      <p begin="00:05:40.730" end="00:05:45.600">I want the same ui everywhere probably not so you'd customize so</p>
+      <p begin="00:05:45.600" end="00:05:49.560">...for io t you probably have a customize ui for a</p>
+      <p begin="00:05:49.560" end="00:05:56.950">desktop for laptop or tablet but that can all be in one...can be...minor.</p>
+      <p begin="00:05:56.950" end="00:06:00.050">...wants to know now that dot net...ported to linux</p>
+      <p begin="00:06:00.050" end="00:06:06.400">...macro...which is an excellent taking on rightdo you see universal apps running on</p>
+      <p begin="00:06:06.400" end="00:06:12.020">android ios and universal out?</p>
+      <p begin="00:06:12.020" end="00:06:17.830">So, taking...the rt if you will and moving on different platforms.</p>
+      <p begin="00:06:17.830" end="00:06:21.390">We haven't discussed...anything like that</p>
+      <p begin="00:06:21.390" end="00:06:27.310">founder question get past security great question so the</p>
+      <p begin="00:06:27.310" end="00:06:35.020">...also wants to know does this universal philosophy apply...windows servers.</p>
+      <p begin="00:06:35.020" end="00:06:38.290">It does.</p>
+      <p begin="00:06:38.290" end="00:06:42.370">There's a deploying apps to the server means most servers may not want to</p>
+      <p begin="00:06:42.370" end="00:06:46.880">...apps from the store so ignoring the deployment aspect because you can always</p>
+      <p begin="00:06:46.880" end="00:06:52.100">side loader and stall them yourself the...rt and</p>
+      <p begin="00:06:52.100" end="00:06:56.230">...thirty-two subset of the api is role their present on the</p>
+      <p begin="00:06:56.230" end="00:07:00.680">servers skew we actually have a model and this is more of an internal</p>
+      <p begin="00:07:00.680" end="00:07:04.360">detailed...may be interesting of one core</p>
+      <p begin="00:07:04.360" end="00:07:09.380">platform it's the universal operating system if you will is made up</p>
+      <p begin="00:07:09.380" end="00:07:12.020">the term marketing has not approved...</p>
+      <p begin="00:07:13.310" end="00:07:16.730">...core platform is common to all</p>
+      <p begin="00:07:16.730" end="00:07:21.020">the devices including server including client including...</p>
+      <p begin="00:07:21.020" end="00:07:23.940">Including phone so the majority.</p>
+      <p begin="00:07:25.140" end="00:07:29.560">To the extent that we make an api universal which is like I said the default we</p>
+      <p begin="00:07:29.560" end="00:07:35.540">...do we put it on one core and becomes available on all platform.</p>
+      <p begin="00:07:35.540" end="00:07:38.230">But, of course servers habit sorbet different workload</p>
+      <p begin="00:07:38.230" end="00:07:42.070">...so you're not going to necessarily need to have we...jeffries</p>
+      <p begin="00:07:42.070" end="00:07:46.710">...talking about...nano...being a really small footprint</p>
+      <p begin="00:07:46.710" end="00:07:52.450">...right obviously don't have any of the...staff or any of that...right.</p>
+      <p begin="00:07:52.450" end="00:07:56.790">...let's see locust wants to...windows ten universal</p>
+      <p begin="00:07:56.790" end="00:08:01.780">out provide pdf api support phone devices I believe they do we had to</p>
+      <p begin="00:08:01.780" end="00:08:07.410">...windows I don't want I believe...been...universal ...off the top of my</p>
+      <p begin="00:08:07.410" end="00:08:12.370">head without looking and I'm very I'm very...show I can't tell you...I question</p>
+      <p begin="00:08:12.370" end="00:08:17.140">very show that...became universal now great are responsible</p>
+      <p begin="00:08:17.140" end="00:08:22.820">...still be differences such as those the bluetooth api that's actually a great question...a number problems</p>
+      <p begin="00:08:22.820" end="00:08:27.710">...you myself if not can be expected do sdk for microsoft</p>
+      <p begin="00:08:27.710" end="00:08:30.420">pantsuits possum work ok so there's</p>
+      <p begin="00:08:30.420" end="00:08:36.040">an interesting thing here where in windows I don't want to windows phone</p>
+      <p begin="00:08:36.040" end="00:08:40.230">...one we each had a large to if commonality amongst</p>
+      <p begin="00:08:40.230" end="00:08:44.980">...service area but we had vema with...we had a lot of the devices the same we</p>
+      <p begin="00:08:44.980" end="00:08:50.720">had the at models...guys with the...but...underlying implementation...quite different right so</p>
+      <p begin="00:08:50.720" end="00:08:55.480">...the kernel with the...and api...the top...time the stuff in the middle is not</p>
+      <p begin="00:08:55.480" end="00:09:00.130">necessarily the same...these differences in whether...which is stack</p>
+      <p begin="00:09:00.130" end="00:09:04.890">...in audio whether it's in something else where look the same...differently</p>
+      <p begin="00:09:04.890" end="00:09:10.890">as...saying with this move to one...one...we can this thing in the</p>
+      <p begin="00:09:10.890" end="00:09:16.760">...not the same kind of...so yes you should see all those differences between phone and windows</p>
+      <p begin="00:09:16.760" end="00:09:19.780">...xbox...away great and fundamentally</p>
+      <p begin="00:09:19.780" end="00:09:24.470">...type things universal windows platform was</p>
+      <p begin="00:09:24.470" end="00:09:25.190">envision to</p>
+      <p begin="00:09:25.190" end="00:09:30.000">...sarin have to go I can't do this bluetooth operations on the phone but I can</p>
+      <p begin="00:09:30.000" end="00:09:34.900">on a tablet we wanted...unify those to make...a common behavior</p>
+      <p begin="00:09:34.900" end="00:09:40.590">...common programming surface...the extent humanly possible I think we</p>
+      <p begin="00:09:40.590" end="00:09:44.980">get a really good job of getting there and we'll tell me people are going to start using you'll get</p>
+      <p begin="00:09:44.980" end="00:09:46.900">feedback any tools that</p>
+      <p begin="00:09:46.900" end="00:09:52.950">will help converting kurt windows phone windows store apps into universal?</p>
+      <p begin="00:09:52.950" end="00:09:56.740">Sadly the answer is no there I</p>
+      <p begin="00:09:56.740" end="00:09:59.260">...community and,</p>
+      <p begin="00:09:59.260" end="00:10:03.960">potentially even microsoft's as well to do that but today if you have a windows</p>
+      <p begin="00:10:03.960" end="00:10:08.810">...one app the migration is pretty much a manual process with the current visual</p>
+      <p begin="00:10:08.810" end="00:10:13.470">studio tools that we just-released it's actually quite straightforward having</p>
+      <p begin="00:10:13.470" end="00:10:19.370">done it probably twenty five times the last two weeks I but,</p>
+      <p begin="00:10:19.370" end="00:10:20.480">maybe it's only straightforward</p>
+      <p begin="00:10:20.480" end="00:10:24.540">...for the twenty-fifth time but really what...will can write man pages or</p>
+      <p begin="00:10:24.540" end="00:10:30.300">...on that and it's really pretty the tricky one would be if you had</p>
+      <p begin="00:10:30.300" end="00:10:37.220">a silverlight...overload lehrer another chemical, you know, so,</p>
+      <p begin="00:10:37.220" end="00:10:39.720">...silverlight...app universal</p>
+      <p begin="00:10:39.720" end="00:10:45.080">...more challenging because of course...not towards downloads windows animal</p>
+      <p begin="00:10:45.080" end="00:10:49.790">...set of api of our different sub-set but from a well-used to be called universal</p>
+      <p begin="00:10:49.790" end="00:10:56.360">at last year whether to windows or phone version should be much closer to and</p>
+      <p begin="00:10:56.360" end="00:11:00.580">...upright...project yet we just dragging all of your files and</p>
+      <p begin="00:11:00.580" end="00:11:05.680">...doesn't mean that model you had a shared core...you have to have</p>
+      <p begin="00:11:05.680" end="00:11:10.080">...for...can actually do that then add a universal head...references the other stuff</p>
+      <p begin="00:11:10.080" end="00:11:14.320">and drag stuff down of time...noted do them doing that the</p>
+      <p begin="00:11:14.320" end="00:11:18.350">math use the new windows ten universe lapped you have one</p>
+      <p begin="00:11:18.350" end="00:11:21.870">head it's just universal out...much simpler and</p>
+      <p begin="00:11:21.870" end="00:11:27.400">one sample yes right which is what you're alluding to...like five or six versions of our</p>
+      <p begin="00:11:27.400" end="00:11:31.480">...the at so congratulations on...them yone</p>
+      <p begin="00:11:31.480" end="00:11:38.370">everything that's the exes to be for active member the...yes right...just go one everything.</p>
+      <p begin="00:11:38.370" end="00:11:39.180">Well, universal out</p>
+      <p begin="00:11:39.180" end="00:11:43.900">...csharp be able to take advantage of dot net...compile a native code.</p>
+      <p begin="00:11:43.900" end="00:11:47.020">So, I can get a performance...yes.</p>
+      <p begin="00:11:47.020" end="00:11:52.970">And, it's not just take advantage of but they're all going to be gone basically when you build a managed</p>
+      <p begin="00:11:52.970" end="00:11:58.730">...manage universal...compile the...the native code great for all platforms</p>
+      <p begin="00:11:58.730" end="00:12:03.670">and the I'll and then you get links on install time on the phone.</p>
+      <p begin="00:12:03.670" end="00:12:06.780">Right that's and implementation detail may happen</p>
+      <p begin="00:12:06.780" end="00:12:09.900">...store great get length as well but the</p>
+      <p begin="00:12:09.900" end="00:12:14.550">net result is you compile csharp you'll get native as</p>
+      <p begin="00:12:14.550" end="00:12:21.490">on arm code one-thirty to attributes are whatever the...and that's all taken care of</p>
+      <p begin="00:12:21.490" end="00:12:26.460">Of how windows...able to publish apps on the xbox store they have to get through</p>
+      <p begin="00:12:26.460" end="00:12:30.980">ideas xbox or something similar.</p>
+      <p begin="00:12:30.980" end="00:12:33.480">It's not...windows...</p>
+      <p begin="00:12:33.480" end="00:12:36.360">A lot actually that's a great question we'll ask the people who</p>
+      <p begin="00:12:36.360" end="00:12:41.080">know where I can answer that I don't know the answer so there's a universal platform mean that there's a</p>
+      <p begin="00:12:41.080" end="00:12:46.310">security risk there's a bug within the windows universal base...surprises taken</p>
+      <p begin="00:12:46.310" end="00:12:52.900">so long for this question to be...nice job thomas I was an interesting question right the</p>
+      <p begin="00:12:52.900" end="00:12:58.730">vector now much larger you have the same code...on this issue.</p>
+      <p begin="00:12:58.730" end="00:13:03.480">While I'm not going through it because I'm that way I mean it's the same on any</p>
+      <p begin="00:13:03.480" end="00:13:05.660">kernel if there's a bug in a colonel</p>
+      <p begin="00:13:05.660" end="00:13:10.570">...being used on multiple devices then you have that</p>
+      <p begin="00:13:10.570" end="00:13:15.250">risk everywhere but it's also much simpler...because you forensic once and</p>
+      <p begin="00:13:15.250" end="00:13:19.410">you fix that everywhere too so I don't think that's unique to the universal flash</p>
+      <p begin="00:13:19.410" end="00:13:24.190">...all definitely not...it's a worthy question.</p>
+      <p begin="00:13:24.190" end="00:13:29.310">Is a direct x twelve api...universal windows phone...form and windows phone</p>
+      <p begin="00:13:29.310" end="00:13:35.150">ten direct...and I don't know about that</p>
+      <p begin="00:13:35.150" end="00:13:40.880">...certainly is there but, I don't know...of the hardware on phone can do it</p>
+      <p begin="00:13:40.880" end="00:13:46.150">all features...not the graphics...understood so what is the small-screen size requirement for you</p>
+      <p begin="00:13:46.150" end="00:13:51.740">ab ui uw p...development count io</p>
+      <p begin="00:13:51.740" end="00:13:54.350">...pretty darn small...</p>
+      <p begin="00:13:55.870" end="00:13:59.460">...in ranges there's...</p>
+      <p begin="00:13:59.460" end="00:14:02.870">I think we have guidelines for smaller than this...here's how</p>
+      <p begin="00:14:02.870" end="00:14:07.100">your ui should look and feel and probably interact what's the interaction model with</p>
+      <p begin="00:14:07.100" end="00:14:10.190">touch bigger screens like tv's there's a different</p>
+      <p begin="00:14:10.190" end="00:14:15.100">...by universal technically you don't need any screen role to be</p>
+      <p begin="00:14:15.100" end="00:14:16.790">universe.</p>
+      <p begin="00:14:16.790" end="00:14:21.750">But, there are that we published the minimum screen sizes release</p>
+      <p begin="00:14:21.750" end="00:14:27.330">...phone devices...windows ...resize windows you can actually</p>
+      <p begin="00:14:27.330" end="00:14:32.270">said preferences now so you can say I prefer to be the size and if we can give that gee</p>
+      <p begin="00:14:32.270" end="00:14:37.470">we'll give you that size...sizing is actually a lot richer in windows ten but, yeah,</p>
+      <p begin="00:14:37.470" end="00:14:41.670">there's really no minimum because it could be no system...</p>
+      <p begin="00:14:41.670" end="00:14:47.310">So, abstract said silverlight so talking about silverlight for windows phone...the universal</p>
+      <p begin="00:14:47.310" end="00:14:50.100">...api available in windows</p>
+      <p begin="00:14:50.100" end="00:14:56.810">...that one I'm not sure about.</p>
+      <p begin="00:14:56.810" end="00:15:00.770">Next question hra exist on the and without looking again</p>
+      <p begin="00:15:00.770" end="00:15:05.450">...about twelve thousand api is just in the winter to universals surface or</p>
+      <p begin="00:15:05.450" end="00:15:10.270">...which is something I really want to talk about some point was how you kind of rapture</p>
+      <p begin="00:15:10.270" end="00:15:13.640">heads around making decisions that this api makes</p>
+      <p begin="00:15:13.640" end="00:15:16.340">...api doesn't make it obviously a partners</p>
+      <p begin="00:15:16.340" end="00:15:19.990">...api...app or skylight team, for example, for,</p>
+      <p begin="00:15:19.990" end="00:15:25.540">yeah,...kind of make sense...move that across but there's so many...that, you know,</p>
+      <p begin="00:15:25.540" end="00:15:32.850">the one api the code name fumes...no,...story...you</p>
+      <p begin="00:15:32.850" end="00:15:37.490">know-how you kind of came across as a group of api designers to develop a really,</p>
+      <p begin="00:15:37.490" end="00:15:41.470">really large api stuff...sure that you nailed we</p>
+      <p begin="00:15:41.470" end="00:15:46.040">have course we have the business constraint we have so much time.</p>
+      <p begin="00:15:46.040" end="00:15:50.110">So, the pot more apps that you want to use and api or want to use the functionality</p>
+      <p begin="00:15:51.120" end="00:15:56.160">...that like any developer team...and if they were there on</p>
+      <p begin="00:15:56.160" end="00:16:00.550">the phone and on windows on desktop before</p>
+      <p begin="00:16:00.550" end="00:16:04.700">we said are they identical that's no-brainer than months</p>
+      <p begin="00:16:04.700" end="00:16:09.400">...that and universal the harder ones were they were different and I could go in</p>
+      <p begin="00:16:09.400" end="00:16:13.590">...lots of details on some of the ways they were different and unpleasant</p>
+      <p begin="00:16:13.590" end="00:16:19.090">...discover manner and we had the unify those which was a harder,</p>
+      <p begin="00:16:19.090" end="00:16:23.730">harder problem but it was really driven about how many developers would</p>
+      <p begin="00:16:23.730" end="00:16:26.510">use of...the features that</p>
+      <p begin="00:16:26.510" end="00:16:31.440">a niche feature that three of my friends would use but nobody else in the world</p>
+      <p begin="00:16:31.440" end="00:16:37.630">would then I would get out voted just...my friends they didn't get the rank and</p>
+      <p begin="00:16:37.630" end="00:16:44.960">...terms of...windows platform...the...a dot net started things we...a lot with</p>
+      <p begin="00:16:44.960" end="00:16:52.110">...dot net team who working on...mentioned...the...working on different platforms</p>
+      <p begin="00:16:52.110" end="00:16:59.330">...there's a bunch of core dot net api that we want to have a...on windows universal again in windows,</p>
+      <p begin="00:16:59.330" end="00:17:04.580">windows I and I don't want that dot net...relatively small because one of kind of</p>
+      <p begin="00:17:04.580" end="00:17:09.890">...was minimized duplication I...be...bone yes what kind of</p>
+      <p begin="00:17:09.890" end="00:17:14.890">...back a bit...to three ways a great if it helps people limited...code</p>
+      <p begin="00:17:14.890" end="00:17:19.720">so we worked with a dot net team to bring back the most common dot...api...file system, for example,</p>
+      <p begin="00:17:19.720" end="00:17:24.610">is one that people really wanted...didn't like two-ninety asynchronous...code they did more rewrite</p>
+      <p begin="00:17:24.610" end="00:17:30.400">digesting apps...existing dot net system that io...right you can do that now</p>
+      <p begin="00:17:30.400" end="00:17:35.940">...did a good partnership with dot net on that for the wintry to sort of things there</p>
+      <p begin="00:17:35.940" end="00:17:40.930">was a there's basically to buckets of feedback of the came into</p>
+      <p begin="00:17:40.930" end="00:17:43.930">the winters are things we?</p>
+      <p begin="00:17:43.930" end="00:17:47.010">Would hear from partners lot-of game developers, for example, and,</p>
+      <p begin="00:17:47.010" end="00:17:50.800">some enterprise customers about what...they really wanted</p>
+      <p begin="00:17:50.800" end="00:17:55.580">...create thread before comps the notion of virtual</p>
+      <p begin="00:17:55.580" end="00:18:00.640">...semantic...memory that is...some that is now back you graduates judge</p>
+      <p begin="00:18:00.640" end="00:18:07.490">...store right now which is pretty good there is winsoft is back there's a bunch of other</p>
+      <p begin="00:18:07.490" end="00:18:11.690">function...come back from people that told us we want to come to windows but you what</p>
+      <p begin="00:18:11.690" end="00:18:16.120">does we've unlocked those people now we also had a lot of things in windows eight and</p>
+      <p begin="00:18:16.120" end="00:18:20.950">I one where again because the duplication thing we kind of said well if there's...a unicode</p>
+      <p begin="00:18:20.950" end="00:18:25.630">...api what only the ansi one...that affected a lot of</p>
+      <p begin="00:18:25.630" end="00:18:29.230">customers and...the ansi api where make sense let's bring back the</p>
+      <p begin="00:18:29.230" end="00:18:34.480">non eecs versions of api that makes sense and really as...said it was already like on the</p>
+      <p begin="00:18:34.480" end="00:18:39.950">...not wasting disk space and it doesn't have security...never?</p>
+      <p begin="00:18:39.950" end="00:18:45.230">An issue without business model for the stored cetera villages things like...</p>
+      <p begin="00:18:45.230" end="00:18:49.210">Really amazing...great thanks for ask your questions keep on asking</p>
+      <p begin="00:18:49.210" end="00:18:53.400">...are there any api some windows universal platform for integration of</p>
+      <p begin="00:18:53.400" end="00:18:54.730">...sixty-five microsoft?</p>
+      <p begin="00:18:56.120" end="00:19:00.990">Hartman I would imagine the role rest based in as a bunch of talk share this week</p>
+      <p begin="00:19:00.990" end="00:19:04.070">...I don't know of any specifically so</p>
+      <p begin="00:19:04.070" end="00:19:06.360">...heinz rang wants to know universal</p>
+      <p begin="00:19:06.360" end="00:19:11.100">laps only in csharp and vb dot net what about cplus-plus.</p>
+      <p begin="00:19:11.100" end="00:19:13.570">Cplus-plus fully supported for universe lapped</p>
+      <p begin="00:19:13.570" end="00:19:19.870">...javascript to exact like just like the old model right sure so I also</p>
+      <p begin="00:19:19.870" end="00:19:25.770">will...wandering around earlier...big fan of moderncp</p>
+      <p begin="00:19:25.770" end="00:19:30.630">alright so...wants to know which mapping api is a new universal mapping standardize ing on</p>
+      <p begin="00:19:31.850" end="00:19:38.020">we'll support everything bing maps api supported well there was a tool about mapping</p>
+      <p begin="00:19:38.020" end="00:19:42.220">your build as well that's interesting because it...and this service</p>
+      <p begin="00:19:42.220" end="00:19:45.240">...underpinning on phone we had the nokia imap</p>
+      <p begin="00:19:45.240" end="00:19:50.170">...or windows had being I actually don't know where they've kind of mingled</p>
+      <p begin="00:19:50.170" end="00:19:55.120">had worked out but there is a common api that's universal exactly</p>
+      <p begin="00:19:55.120" end="00:20:00.150">whose engine it is I actually don't know well how much universal apps</p>
+      <p begin="00:20:00.150" end="00:20:05.720">we already so cplus-plus is fully supported on windows platform...great yes,</p>
+      <p begin="00:20:05.720" end="00:20:09.070">you have to use eecs...don't you don't use when</p>
+      <p begin="00:20:09.070" end="00:20:11.040">...url it's a lot harder?</p>
+      <p begin="00:20:12.050" end="00:20:14.530">Like I said you convert plus eecs all</p>
+      <p begin="00:20:14.530" end="00:20:20.240">...or modern are highly recommend model yeses ship that yet and,</p>
+      <p begin="00:20:20.240" end="00:20:23.710">I only mention that because I had to do that recently and I would have preferred</p>
+      <p begin="00:20:23.710" end="00:20:29.610">...get this done standard cplus-plus ...a new api ad you profiles the portable</p>
+      <p begin="00:20:29.610" end="00:20:32.190">...libraries.</p>
+      <p begin="00:20:32.190" end="00:20:36.930">Do not know that as internet questions are no problem so these guys are the</p>
+      <p begin="00:20:36.930" end="00:20:40.920">universe windows api program managers designers mccall</p>
+      <p begin="00:20:40.920" end="00:20:43.430">...sure were involved in</p>
+      <p begin="00:20:43.430" end="00:20:50.160">...I did make some decisions...at?</p>
+      <p begin="00:20:50.160" end="00:20:56.660">The let's see out someone go about building tools for creation of universal apps</p>
+      <p begin="00:20:56.660" end="00:20:59.340">ie game images.</p>
+      <p begin="00:20:59.340" end="00:21:03.120">Well, that...would be relatively easy I think you can</p>
+      <p begin="00:21:03.120" end="00:21:05.770">pick your language manage code cplus-plus.</p>
+      <p begin="00:21:06.860" end="00:21:09.250">You write to the universal api</p>
+      <p begin="00:21:09.250" end="00:21:14.270">set and now you have a library that any universal api</p>
+      <p begin="00:21:14.270" end="00:21:16.270">...can't it's just like you would</p>
+      <p begin="00:21:16.270" end="00:21:20.600">...a long as...library only uses api is common</p>
+      <p begin="00:21:20.600" end="00:21:24.190">to all platforms and right now we've got this universal</p>
+      <p begin="00:21:24.190" end="00:21:28.720">api set which is common to all platform you write a library</p>
+      <p begin="00:21:28.720" end="00:21:31.900">that now your app can be used by are your library can be used by</p>
+      <p begin="00:21:31.900" end="00:21:36.990">...the and universe lap it's a lot easier now acts totally you mentioned...</p>
+      <p begin="00:21:36.990" end="00:21:41.810">the know how shall I say the resuscitation of virtual all</p>
+      <p begin="00:21:41.810" end="00:21:45.840">...yes so you can write jets and maybe even a garbage collector</p>
+      <p begin="00:21:45.840" end="00:21:50.760">tonight so you don't want to mention...you talk about games another thing...out windows...and I</p>
+      <p begin="00:21:50.760" end="00:21:55.920">don't want to fund was thread affinity hartman affinity used a lot by</p>
+      <p begin="00:21:55.920" end="00:22:00.950">games there is in windows ten they'll be a way not to do exactly the same</p>
+      <p begin="00:22:00.950" end="00:22:06.200">...affinity because it's very hard for us to do that on a device like a phone...as a</p>
+      <p begin="00:22:06.200" end="00:22:12.440">...but they will be a way to do the notion of this workload goes here this</p>
+      <p begin="00:22:12.440" end="00:22:17.820">...negotiator wanna-be...share casual that kind of stuff and on devices where we can</p>
+      <p begin="00:22:17.820" end="00:22:20.660">...that like a pc with fan.</p>
+      <p begin="00:22:20.660" end="00:22:25.370">Will on that on a device like a phone or tablet that doesn't have a fan...yeah,</p>
+      <p begin="00:22:25.370" end="00:22:30.240">we might move workloads around a little bit about the affinity is another big one that came back to</p>
+      <p begin="00:22:30.240" end="00:22:32.510">...getting sockets virtual</p>
+      <p begin="00:22:32.510" end="00:22:37.180">alec threads did amazing thank you...</p>
+      <p begin="00:22:37.180" end="00:22:41.440">So, is there a way for you...an external</p>
+      <p begin="00:22:41.440" end="00:22:46.540">...like for...launcher or like through a manage broker?</p>
+      <p begin="00:22:46.540" end="00:22:50.440">...can't...excuse directly that you can use the launch your</p>
+      <p begin="00:22:50.440" end="00:22:55.560">...english file extensions...can launch registered schemes what</p>
+      <p begin="00:22:55.560" end="00:23:01.310">...to backhoe on...you can't say create process social exec sure because you might running a</p>
+      <p begin="00:23:01.310" end="00:23:06.110">...of support...you get the effect of that even though the actual mechanics</p>
+      <p begin="00:23:06.110" end="00:23:12.840">or slightly different so uw pita size matter...build media</p>
+      <p begin="00:23:12.840" end="00:23:18.520">...and select while developing so I want to have underwrite...windows platform out I'm going to</p>
+      <p begin="00:23:18.520" end="00:23:21.770">run on a pin number inverting like that</p>
+      <p begin="00:23:21.770" end="00:23:25.680">so your code size becomes an issue for me binary...</p>
+      <p begin="00:23:25.680" end="00:23:30.580">So, yes, so, we still have to be an engineer with wb sure you're not going to be able to run on</p>
+      <p begin="00:23:30.580" end="00:23:35.540">the one gigabyte device of your app takes ten...</p>
+      <p begin="00:23:35.540" end="00:23:38.770">Physics still apply we worked on that but we were not</p>
+      <p begin="00:23:38.770" end="00:23:43.270">successful we do have resource...so even windows through eight-point one</p>
+      <p begin="00:23:43.270" end="00:23:44.980">...this where you could have,</p>
+      <p begin="00:23:44.980" end="00:23:50.150">for example, your core code which goes everywhere and then you can have let's say</p>
+      <p begin="00:23:50.150" end="00:23:53.310">...again have some assets you have some levers asset you have some highrise assets.</p>
+      <p begin="00:23:54.370" end="00:23:59.900">And, we pulled the...the right one depending on the device in your own so you want...your</p>
+      <p begin="00:23:59.900" end="00:24:04.780">...with a tiny screen and,... or the bandwidth level of an...about the bambi</p>
+      <p begin="00:24:04.780" end="00:24:09.410">of high-rate small low-risk screen you...bring down the assets for like a four-k tv</p>
+      <p begin="00:24:09.410" end="00:24:14.690">...on that axle...that's one of...benefits of a smart sort of</p>
+      <p begin="00:24:14.690" end="00:24:17.340">...right one source</p>
+      <p begin="00:24:17.340" end="00:24:21.050">...bit bender will silo to get easier more liberal for windows</p>
+      <p begin="00:24:21.050" end="00:24:27.140">...universal windows...restrictions and silencing is allowed currently is a huge reason</p>
+      <p begin="00:24:27.140" end="00:24:32.160">...projects not even consider you a...so there...a talk here buckley</p>
+      <p begin="00:24:32.160" end="00:24:36.970">...giving a talk I think it's on this day...deployment arm...</p>
+      <p begin="00:24:36.970" end="00:24:42.070">begin because I don't know what we can say...that cut-rate answer but we feel the pain</p>
+      <p begin="00:24:42.070" end="00:24:47.070">I personally hate that...the...of every few months and says...expired yes I hate that</p>
+      <p begin="00:24:47.070" end="00:24:53.550">would passion yet so that feedback is noted yes souniversal apps for</p>
+      <p begin="00:24:53.550" end="00:25:00.370">...sharp I mean why not it's...know anything specific but.</p>
+      <p begin="00:25:00.370" end="00:25:01.980">And, I should even say this...</p>
+      <p begin="00:25:03.460" end="00:25:04.890">...know anything...so if you don't</p>
+      <p begin="00:25:04.890" end="00:25:11.810">know I'll see why not but I guess I can understand why not all right so how about wpf.</p>
+      <p begin="00:25:11.810" end="00:25:15.800">Is the gap between wpf your laps or not really...as a</p>
+      <p begin="00:25:15.800" end="00:25:20.900">desktop technology only we're going to wrap it up thank you guys were coming...sort of we're</p>
+      <p begin="00:25:20.900" end="00:25:25.830">able...mainly about the api design experience you guys...come back to channel nine</p>
+      <p begin="00:25:25.830" end="00:25:37.220">again...deeper into the whole process and thank you for your wonderful questions?</p>
+
+    </div>
+  </body>
+</tt>

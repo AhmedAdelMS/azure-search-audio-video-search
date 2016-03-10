@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.947</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.950" end="00:00:09.440">my name is jim hindu and today I'll be talking about how you can discover devices</p>
+      <p begin="00:00:09.440" end="00:00:14.370">are services on your local network using your windows ten device.</p>
+      <p begin="00:00:14.370" end="00:00:17.900">We'll be taking a look at what is the...and what it takes to create</p>
+      <p begin="00:00:17.900" end="00:00:22.160">nap using the dns as the api also be providing some resources</p>
+      <p begin="00:00:22.160" end="00:00:28.090">at the end so you can create an app on your own and provide feedback to us?</p>
+      <p begin="00:00:28.090" end="00:00:30.490">The iness...works hand-in-hand with md</p>
+      <p begin="00:00:30.490" end="00:00:34.810">and which is a multi-cast protocol that prevents the need for unicast</p>
+      <p begin="00:00:34.810" end="00:00:39.300">server by letting devices communicate with each other directly?</p>
+      <p begin="00:00:39.300" end="00:00:43.190">Let's go ahead and take a look at what it takes to build an end-to-end dns as</p>
+      <p begin="00:00:43.190" end="00:00:45.140">...app when creating a dns</p>
+      <p begin="00:00:45.140" end="00:00:49.830">...up the first thing you need to do is to register yourself by registering</p>
+      <p begin="00:00:49.830" end="00:00:53.530">your app other apps will be able to discovery you on the local network.</p>
+      <p begin="00:00:54.640" end="00:00:58.890">When registering the app you need to provide a service name which is broken down</p>
+      <p begin="00:00:58.890" end="00:01:02.440">into three individual parameters the instance name</p>
+      <p begin="00:01:02.440" end="00:01:07.400">is what the apple show when you put it up on the app store is a human readable name</p>
+      <p begin="00:01:07.400" end="00:01:12.340">if you're making a simple chat application over the local network we can give it an instance name</p>
+      <p begin="00:01:12.340" end="00:01:17.450">such as simple chat app...service-type is what your apps protocol</p>
+      <p begin="00:01:17.450" end="00:01:21.950">name is this is what other apps will be searching for when they try to look</p>
+      <p begin="00:01:21.950" end="00:01:26.890">your app up on the local network, for example, if you're trying to discover printers using the</p>
+      <p begin="00:01:26.890" end="00:01:31.580">iness as the their service-type is dot ip?</p>
+      <p begin="00:01:31.580" end="00:01:32.380">For the chat app</p>
+      <p begin="00:01:32.380" end="00:01:37.300">...creating we can give it a service-type of sca dot underscore tcp</p>
+      <p begin="00:01:37.300" end="00:01:40.660">which means we'll be looking for that app or the tcp protocol.</p>
+      <p begin="00:01:41.860" end="00:01:46.780">Domain name is standard dns domain such as microsoft-dot-com on the</p>
+      <p begin="00:01:46.780" end="00:01:49.920">local network you can simply use the keyword dot local.</p>
+      <p begin="00:01:50.940" end="00:01:55.870">...up you can also specified text attributes that other apps can parse</p>
+      <p begin="00:01:55.870" end="00:02:00.410">these are things that might be important to other apps or instances of your own app,</p>
+      <p begin="00:02:00.410" end="00:02:01.200">for example,</p>
+      <p begin="00:02:01.200" end="00:02:06.200">if you're building a simple chat application other apps may want to know what is the maximum number of</p>
+      <p begin="00:02:06.200" end="00:02:10.930">content users that the app can handle you may also want to specify the locale,</p>
+      <p begin="00:02:10.930" end="00:02:16.540">for example, english us the next thing the next important thing for building your</p>
+      <p begin="00:02:16.540" end="00:02:19.570">app is discovery and resolution this is how other</p>
+      <p begin="00:02:19.570" end="00:02:25.220">apps will discover and get information to be able to connect your app.</p>
+      <p begin="00:02:25.220" end="00:02:28.100">To do a discovery all the app has to do is do</p>
+      <p begin="00:02:28.100" end="00:02:33.070">a search query on the service-type buffer up in this case we look for services of</p>
+      <p begin="00:02:33.070" end="00:02:37.960">the type sca or the tcp protocol in this example</p>
+      <p begin="00:02:37.960" end="00:02:42.540">we see that are api has discovered two instances of the sca</p>
+      <p begin="00:02:42.540" end="00:02:47.480">up on the local network once we have the instance names we can resolve them to</p>
+      <p begin="00:02:47.480" end="00:02:51.960">get more important information such as the ip address and the port number</p>
+      <p begin="00:02:51.960" end="00:02:57.000">...also get the text attributes that we put in during registration time once we</p>
+      <p begin="00:02:57.000" end="00:03:01.570">have the ip address and port number we can use a number of resources to connect to the</p>
+      <p begin="00:03:01.570" end="00:03:07.580">other app instance the most common one being the martin sockets api.</p>
+      <p begin="00:03:07.580" end="00:03:09.250">Now that we have covered how to create</p>
+      <p begin="00:03:09.250" end="00:03:14.890">...sd app let's go ahead and take a look at some code once we have registered</p>
+      <p begin="00:03:14.890" end="00:03:17.090">...application will be using the windows</p>
+      <p begin="00:03:17.090" end="00:03:23.060">...devices that enumeration api to discover instances of it.</p>
+      <p begin="00:03:23.060" end="00:03:26.590">The windows dot devices done enumeration api requires unique</p>
+      <p begin="00:03:26.590" end="00:03:30.170">...for each discovery type...looking for...dns</p>
+      <p begin="00:03:30.170" end="00:03:36.190">st are bluetooth the unique do it for dns st shown on-screen.</p>
+      <p begin="00:03:36.190" end="00:03:39.920">Next up will create a query string for all apps using</p>
+      <p begin="00:03:39.920" end="00:03:43.870">...protocol along with their service-type once we have created the</p>
+      <p begin="00:03:43.870" end="00:03:48.850">query string we can add a call back to the watcher and started.</p>
+      <p begin="00:03:48.850" end="00:03:52.880">Once we have discovered instances a for application on the local network</p>
+      <p begin="00:03:52.880" end="00:03:56.460">will retrieve information...us to connect to those instances.</p>
+      <p begin="00:03:57.790" end="00:03:59.910">Will be retrieving information such as the ip</p>
+      <p begin="00:03:59.910" end="00:04:06.180">address the port number and optional text attributes using the ip address</p>
+      <p begin="00:04:06.180" end="00:04:12.160">and the port number we can go ahead and create the socket connection once we have the ip address</p>
+      <p begin="00:04:12.160" end="00:04:17.770">and the port number we can go ahead and start to socket connection I don't have a demo</p>
+      <p begin="00:04:17.770" end="00:04:24.460">for-you today but please take a look at...st documentation and sample up?</p>
+      <p begin="00:04:24.460" end="00:04:26.360">I hope you had fun learning about the</p>
+      <p begin="00:04:26.360" end="00:04:30.760">dns st api please take a look at the msdn documentation and</p>
+      <p begin="00:04:30.760" end="00:04:36.350">the sample app thank you for watching and I hope you'll be creating your very own...app.</p>
+
+    </div>
+  </body>
+</tt>

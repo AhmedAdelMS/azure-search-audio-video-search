@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.930</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.500" end="00:00:01.860">...and welcome to build</p>
+      <p begin="00:00:01.860" end="00:00:06.660">twenty fifteen today we're going to talk about how you can build faster and</p>
+      <p begin="00:00:06.660" end="00:00:11.280">more powerful cloud our apps with the windows ten app platform I'm so</p>
+      <p begin="00:00:11.280" end="00:00:15.690">dark I'm a program manager on the windows networking api team and this is</p>
+      <p begin="00:00:15.690" end="00:00:19.790">marjorie he's also member of our team and our team basically</p>
+      <p begin="00:00:19.790" end="00:00:25.150">bills all the apis that are app needs to talk to the network and to the cloud so</p>
+      <p begin="00:00:25.150" end="00:00:30.630">let's start this talk by understanding what we mean by cloud our apps.</p>
+      <p begin="00:00:30.630" end="00:00:35.240">Cloud our app is really any app that...content either from the internet or from</p>
+      <p begin="00:00:35.240" end="00:00:38.100">peer devices so you can think of these abs as</p>
+      <p begin="00:00:38.100" end="00:00:43.030">your news app your sports score apps or even things like book peer-to-peer chat</p>
+      <p begin="00:00:43.030" end="00:00:46.190">...peer-to-peer game and these are typically</p>
+      <p begin="00:00:46.190" end="00:00:50.870">build using networking apis that we provide in the windows platform, for example,</p>
+      <p begin="00:00:50.870" end="00:00:55.780">a peer-to-peer app...typically you sockets if you wanted to talk to a web service in the</p>
+      <p begin="00:00:55.780" end="00:01:00.150">cloud your typically use http.</p>
+      <p begin="00:01:00.150" end="00:01:04.070">Now what do we mean by we're making it faster and more capable.</p>
+      <p begin="00:01:04.070" end="00:01:09.460">So, we're going to provide higher performance sockets apis that led to do much faster</p>
+      <p begin="00:01:09.460" end="00:01:14.440">peer-to-peer communication we are also providing faster http.</p>
+      <p begin="00:01:14.440" end="00:01:18.750">And, this will help you improve the performance of your web services code.</p>
+      <p begin="00:01:18.750" end="00:01:20.860">And, finally we're adding new capabilities to</p>
+      <p begin="00:01:20.860" end="00:01:24.840">our background data transfer apis so in this talk we'll go</p>
+      <p begin="00:01:24.840" end="00:01:29.510">through these one by one going up the stack so we'll start with sockets will</p>
+      <p begin="00:01:29.510" end="00:01:31.460">then go over to http.</p>
+      <p begin="00:01:31.460" end="00:01:34.430">Then we'll talk about background transfer and finally</p>
+      <p begin="00:01:34.430" end="00:01:39.600">will hit a summary of some of the other improvements we have in this area.</p>
+      <p begin="00:01:39.600" end="00:01:42.660">So, first let's start with sockets so, you know,</p>
+      <p begin="00:01:42.660" end="00:01:46.930">that most apps will use sockets only when...the foreground</p>
+      <p begin="00:01:46.930" end="00:01:51.850">and that's because having sockets in the background is really expensive for the system.</p>
+      <p begin="00:01:51.850" end="00:01:56.110">In windows...we have taken steps to solve this problem what you can</p>
+      <p begin="00:01:56.110" end="00:02:01.060">now do is have your socket listening in the background even...is not</p>
+      <p begin="00:02:01.060" end="00:02:07.340">running and this enables really powerful scenarios so what let's look at what is happening your</p>
+      <p begin="00:02:07.340" end="00:02:12.120">app would create a socket when it's in the foreground and you will also</p>
+      <p begin="00:02:12.120" end="00:02:16.880">associated with the background tasks that you yourself have define.</p>
+      <p begin="00:02:16.880" end="00:02:21.380">Now...the...get suspended so when the user navigate away you would transfer the</p>
+      <p begin="00:02:21.380" end="00:02:24.470">ownership of the socket to a socket broker</p>
+      <p begin="00:02:24.470" end="00:02:28.810">socket broker is basically the name of...os component that's always a</p>
+      <p begin="00:02:28.810" end="00:02:33.750">live and listening to sockets even when...ad does not alone.</p>
+      <p begin="00:02:33.750" end="00:02:36.500">Now when there is activity on your socket, for example,</p>
+      <p begin="00:02:36.500" end="00:02:41.050">it gets closed or gets and incoming message the socket brokered detects that</p>
+      <p begin="00:02:41.050" end="00:02:43.210">...to launch the task that</p>
+      <p begin="00:02:43.210" end="00:02:48.040">you had associated with the socket the task and now access the socket</p>
+      <p begin="00:02:48.040" end="00:02:54.090">get ownership back do stuff on the socket and then return ownership to the broker.</p>
+      <p begin="00:02:54.090" end="00:02:59.710">Finally window foreground app is launched again or it resumes you can</p>
+      <p begin="00:02:59.710" end="00:03:04.500">get the ownership of the socket back and use...just like you were earlier and</p>
+      <p begin="00:03:04.500" end="00:03:09.420">they're really cool part is when you get the ownership from this of the socket back.</p>
+      <p begin="00:03:09.420" end="00:03:13.950">The data is still on the socket and the socket distill connect.</p>
+      <p begin="00:03:13.950" end="00:03:18.020">So, let's look at some code samples.</p>
+      <p begin="00:03:18.020" end="00:03:20.040">Let me use append.</p>
+      <p begin="00:03:20.040" end="00:03:22.760">So, you'd basically define a trigger that's a socket</p>
+      <p begin="00:03:22.760" end="00:03:27.520">activity trigger and this is a new class that we are defining in windows stand.</p>
+      <p begin="00:03:27.520" end="00:03:33.060">You would then build a background tasks that subscribes to this trigger.</p>
+      <p begin="00:03:33.060" end="00:03:35.640">Now when you create your socket you also</p>
+      <p begin="00:03:35.640" end="00:03:39.370">enable transfer ownership on that socket this basically tells</p>
+      <p begin="00:03:39.370" end="00:03:43.880">a system that hey you can let the ownership of my socket go from the foreground</p>
+      <p begin="00:03:43.880" end="00:03:49.390">...to the broker and to this background tasks that's named</p>
+      <p begin="00:03:49.390" end="00:03:56.300">Finally you would of course connector socket to the remote endpoint.</p>
+      <p begin="00:03:56.300" end="00:04:00.180">Now when the app is being suspended we are familiar with</p>
+      <p begin="00:04:00.180" end="00:04:05.150">the on suspending method that gets called when app is being suspended you'd basically</p>
+      <p begin="00:04:05.150" end="00:04:08.480">define a socket id which is a simple string.</p>
+      <p begin="00:04:09.560" end="00:04:14.980">And, you would then cancel all the tending io operations on the</p>
+      <p begin="00:04:14.980" end="00:04:18.980">socket this step is really important because if there are pending</p>
+      <p begin="00:04:18.980" end="00:04:24.150">io operations the ownership transfer to the socket broker will fail so</p>
+      <p begin="00:04:24.150" end="00:04:29.130">usually need to cancel all the pending ios and then transfer ownership to the socket</p>
+      <p begin="00:04:29.130" end="00:04:31.170">program now at this point</p>
+      <p begin="00:04:31.170" end="00:04:37.120">your apa suspended and the socket broker has ownership of your socket now assuming there's some</p>
+      <p begin="00:04:37.120" end="00:04:41.800">activity on the socket your background task gets launched so this is the code you would</p>
+      <p begin="00:04:41.800" end="00:04:45.310">...in the background task you'd basically...</p>
+      <p begin="00:04:45.310" end="00:04:50.810">the triggered details from the socket activity trigger.</p>
+      <p begin="00:04:50.810" end="00:04:56.560">And, then the socket information object in the details.</p>
+      <p begin="00:04:56.560" end="00:05:00.990">We'll tell you the reason...background task</p>
+      <p begin="00:05:00.990" end="00:05:05.110">...triggered so it could be that there was activity on the socket it could be that</p>
+      <p begin="00:05:05.110" end="00:05:10.840">...keep...so on and the background task you would have to handy each of these</p>
+      <p begin="00:05:10.840" end="00:05:16.370">cases...important to note that after you have handle.</p>
+      <p begin="00:05:16.370" end="00:05:18.060">The case you need to</p>
+      <p begin="00:05:18.060" end="00:05:22.900">transfer the ownership back to the broker and this is important because when</p>
+      <p begin="00:05:22.900" end="00:05:27.810">the aggregates resume it wants to find the socket with the broker so it can get</p>
+      <p begin="00:05:27.810" end="00:05:32.000">...back so here's how you do that encode once...foreground</p>
+      <p begin="00:05:32.000" end="00:05:34.840">...resumes you.</p>
+      <p begin="00:05:34.840" end="00:05:35.830">Basically access</p>
+      <p begin="00:05:35.830" end="00:05:40.260">this static apis socket activity information with the socket id that</p>
+      <p begin="00:05:40.260" end="00:05:44.210">...defined earlier this basically tells the socket broker that</p>
+      <p begin="00:05:44.210" end="00:05:47.310">...of all the sockets that you have ownership off give</p>
+      <p begin="00:05:47.310" end="00:05:53.190">me back the socket that has my socket id and then again once you get the socket</p>
+      <p begin="00:05:53.190" end="00:06:02.050">it's already connected it already has the data on it for you to read and you're good to go.</p>
+      <p begin="00:06:02.050" end="00:06:06.110">That was about the socket broker and how you can run sockets in the background...windows</p>
+      <p begin="00:06:06.110" end="00:06:10.910">...so we hope that this will enable many cools scenarios especially</p>
+      <p begin="00:06:10.910" end="00:06:15.800">for peer-to-peer chat...incoming call notification kind of apps?</p>
+      <p begin="00:06:15.800" end="00:06:17.100">Next let's look at</p>
+      <p begin="00:06:17.100" end="00:06:23.750">a new low overhead path that we have enabled for both tty sockets.</p>
+      <p begin="00:06:23.750" end="00:06:27.570">So, when we look at the right...operation on a socket which is when you're</p>
+      <p begin="00:06:27.570" end="00:06:32.460">sending data out each riot incurs a transition to kernel</p>
+      <p begin="00:06:32.460" end="00:06:36.050">mode core and back into user mode and this?</p>
+      <p begin="00:06:37.780" end="00:06:41.650">Sort of creates a lot of overhead in that right path and that's</p>
+      <p begin="00:06:41.650" end="00:06:44.040">...apps such as vp n apps for</p>
+      <p begin="00:06:44.040" end="00:06:48.820">void maps that have many such data buffers being passed out in</p>
+      <p begin="00:06:48.820" end="00:06:53.310">...a lot of overhead because of this now in windows stand we have enable a</p>
+      <p begin="00:06:53.310" end="00:06:57.230">new pattern that optimizes this frequency of...transitions.</p>
+      <p begin="00:06:58.300" end="00:07:00.640">Let's see how we do that.</p>
+      <p begin="00:07:00.640" end="00:07:02.250">So, if you're...beginner</p>
+      <p begin="00:07:02.250" end="00:07:07.410">programmer or if networking is not really the focus of your</p>
+      <p begin="00:07:07.410" end="00:07:12.340">app if you just wanted to write a few data packets out on the socket you will presumably</p>
+      <p begin="00:07:12.340" end="00:07:16.920">use a pattern like this you will have a list of buffers that are the package that-you</p>
+      <p begin="00:07:16.920" end="00:07:18.830">want-to send out you will</p>
+      <p begin="00:07:18.830" end="00:07:23.640">...output stream and then for each of your packets...simply do...is</p>
+      <p begin="00:07:23.640" end="00:07:29.070">saying and this is simple and easy to debug it does the job and</p>
+      <p begin="00:07:29.070" end="00:07:33.630">you can send the data out however as we noted earlier this leads to a</p>
+      <p begin="00:07:33.630" end="00:07:37.970">kernel transition and back for each of your light operations and hence who suffered</p>
+      <p begin="00:07:37.970" end="00:07:43.940">...performance a higher performance pattern that exist even back in windows</p>
+      <p begin="00:07:43.940" end="00:07:49.050">eight-point one is that you can create and...of your tasks.</p>
+      <p begin="00:07:49.050" end="00:07:52.160">And, then for each of your packet you basically</p>
+      <p begin="00:07:52.160" end="00:07:56.620">track the right operation as a task but don't wait for the previous</p>
+      <p begin="00:07:56.620" end="00:07:59.750">one to complete before issuing the next one that</p>
+      <p begin="00:07:59.750" end="00:08:04.480">way let's say you have hundred packets you could just issue all the hundred rights and</p>
+      <p begin="00:08:04.480" end="00:08:10.070">then wait on all of them at once and this pattern really helps us in</p>
+      <p begin="00:08:10.070" end="00:08:14.520">the operating system to manager packet buffers and do the</p>
+      <p begin="00:08:14.520" end="00:08:19.030">kernel transitions in an optimal way so this pattern we have made</p>
+      <p begin="00:08:19.030" end="00:08:23.950">even more efficient in windows stand will soon see a demo of how fast how</p>
+      <p begin="00:08:23.950" end="00:08:30.220">fast that is an windows...but, note that this pattern only exists for csharp</p>
+      <p begin="00:08:30.220" end="00:08:34.070">developers because it uses tasks?</p>
+      <p begin="00:08:34.070" end="00:08:37.190">Now there's yet another pattern that we have enable</p>
+      <p begin="00:08:37.190" end="00:08:41.990">in windows stand which is using the operation of flush a...</p>
+      <p begin="00:08:41.990" end="00:08:45.100">So, essentially you're doing a very similar kind of pattern</p>
+      <p begin="00:08:45.100" end="00:08:49.070">your creating all your write operations but instead of using a</p>
+      <p begin="00:08:49.070" end="00:08:53.480">task you use and I facing operation with progress.</p>
+      <p begin="00:08:53.480" end="00:08:57.650">Now again you have this area of buffers you simply.</p>
+      <p begin="00:08:57.650" end="00:08:58.450">Issue all the</p>
+      <p begin="00:08:58.450" end="00:09:03.480">...and then finally you call flash facing the behaviour of</p>
+      <p begin="00:09:03.480" end="00:09:08.440">flash facing api has changed from windows eight or eight point one to windows</p>
+      <p begin="00:09:08.440" end="00:09:13.140">stand in windows eight-point one flush is include return to you immediately</p>
+      <p begin="00:09:13.140" end="00:09:17.240">and not guarantee that all your rights have completed whereas in windows</p>
+      <p begin="00:09:17.240" end="00:09:20.760">stand the behaviors changed to guarantee that all your rights</p>
+      <p begin="00:09:20.760" end="00:09:26.950">have completed and then you can look at whether the status was a success or failure so</p>
+      <p begin="00:09:26.950" end="00:09:30.450">the these two patterns that task start...all and</p>
+      <p begin="00:09:30.450" end="00:09:35.850">...really enable...much faster performance on sockets.</p>
+      <p begin="00:09:35.850" end="00:09:40.670">Some important considerations to node though is that once you have issued all the rights</p>
+      <p begin="00:09:40.670" end="00:09:45.070">should be careful not to modify the buffers until all the right</p>
+      <p begin="00:09:45.070" end="00:09:50.050">operations of completed because you should sort of think of the operating system</p>
+      <p begin="00:09:50.050" end="00:09:54.570">as having ownership of that before for that one and as I mentioned the...</p>
+      <p begin="00:09:54.570" end="00:09:59.780">facing pattern only works in windows ten onwards and it only works for certain</p>
+      <p begin="00:09:59.780" end="00:10:04.640">classes of sockets so...only works for stream socket and for a connected data</p>
+      <p begin="00:10:04.640" end="00:10:09.130">...socket of course for either previous versions of windows</p>
+      <p begin="00:10:09.130" end="00:10:16.270">...for other types of sockets can continue to use the tasks dot rate all better.</p>
+      <p begin="00:10:16.270" end="00:10:19.920">So, now let's quickly jump into a demo and see how much faster.</p>
+      <p begin="00:10:21.110" end="00:10:22.760">So, here I have.</p>
+      <p begin="00:10:22.760" end="00:10:27.070">An app that basically compares the sending speed with the batch</p>
+      <p begin="00:10:27.070" end="00:10:31.950">sense and without descends and you can of course said the remote address and remote</p>
+      <p begin="00:10:31.950" end="00:10:36.970">and point so on the data buffer sizes considerable so let's quickly start the</p>
+      <p begin="00:10:36.970" end="00:10:42.340">demo and we observe that the...sense gets done much faster in fact it's four</p>
+      <p begin="00:10:42.340" end="00:10:48.020">times as fast as without the bat sense we can also see that even if</p>
+      <p begin="00:10:48.020" end="00:10:52.420">increase the data before size which means we are now sending larger packets</p>
+      <p begin="00:10:52.420" end="00:10:56.310">it still significantly faster than without the bat sends.</p>
+      <p begin="00:10:56.310" end="00:11:02.760">So, you clearly see how much faster...new...enables your code to be.</p>
+      <p begin="00:11:02.760" end="00:11:04.400">And, italy empowers.</p>
+      <p begin="00:11:05.540" end="00:11:10.930">Void and vp...apps to be much faster on windows...</p>
+      <p begin="00:11:10.930" end="00:11:12.580">So, that was an overview of the improvement</p>
+      <p begin="00:11:12.580" end="00:11:16.450">...making in the sockets api let's now move over a layer</p>
+      <p begin="00:11:16.450" end="00:11:21.410">higher to http and see what improvements we have for you so you might</p>
+      <p begin="00:11:21.410" end="00:11:26.410">be familiar with the windows dot web dot http api which has been available since windows and</p>
+      <p begin="00:11:26.410" end="00:11:31.130">windows phone eight-point one this is essentially an api that we provide to</p>
+      <p begin="00:11:31.130" end="00:11:36.730">implement the http client role on the devices it was design very similar to the</p>
+      <p begin="00:11:36.730" end="00:11:41.140">dot net api which has been around for a little while longer and this helps us</p>
+      <p begin="00:11:41.140" end="00:11:44.730">minimize the learning curve for developers who are adopting this api.</p>
+      <p begin="00:11:45.940" end="00:11:50.710">So, the basic pattern is that you create a single client object and then you can use it to</p>
+      <p begin="00:11:50.710" end="00:11:54.230">issue multiple requests to multiple servers.</p>
+      <p begin="00:11:54.230" end="00:11:57.300">You can also optional e customize</p>
+      <p begin="00:11:57.300" end="00:12:02.290">...object called the http base protocol filter so you can think of the</p>
+      <p begin="00:12:02.290" end="00:12:06.670">base protocol filter as being underneath the client empowering the http</p>
+      <p begin="00:12:06.670" end="00:12:11.570">communication when you create a client we create a filter underneath</p>
+      <p begin="00:12:11.570" end="00:12:17.060">by default and give it to you but you can option the also customize the behaviour of that filter</p>
+      <p begin="00:12:17.060" end="00:12:21.440">...you can just create your own filter and completely bypass the os</p>
+      <p begin="00:12:21.440" end="00:12:26.110">provider filter and finally you can chain multiple filters so that you can</p>
+      <p begin="00:12:26.110" end="00:12:28.720">process...as it's going out</p>
+      <p begin="00:12:28.720" end="00:12:33.680">or response as it's coming in for more discussion on the...of multiple</p>
+      <p begin="00:12:33.680" end="00:12:38.240">filters of I would point...the windows dot web dot http dot</p>
+      <p begin="00:12:38.240" end="00:12:40.960">filters name space documentation msdn</p>
+      <p begin="00:12:40.960" end="00:12:46.940">...a really good description of how you can do this...and what is useful...</p>
+      <p begin="00:12:46.940" end="00:12:49.770">So, the big news now is that the apis</p>
+      <p begin="00:12:49.770" end="00:12:55.930">of windows web http gets http to support starting in windows stan.</p>
+      <p begin="00:12:55.930" end="00:13:00.600">So, what is http too I'm sure a lot of you are familiar with this storm as it</p>
+      <p begin="00:13:00.600" end="00:13:05.380">is the new evolving standard for http and the next version of</p>
+      <p begin="00:13:05.380" end="00:13:07.750">...http one-point-one so</p>
+      <p begin="00:13:07.750" end="00:13:11.590">essentially what http to does is that it multiplex is</p>
+      <p begin="00:13:11.590" end="00:13:15.650">multiples streams or request response...</p>
+      <p begin="00:13:15.650" end="00:13:20.470">In a single tcb connection now why is this faster.</p>
+      <p begin="00:13:20.470" end="00:13:24.980">Using the see a single tcp connection means that you incur much fewer</p>
+      <p begin="00:13:24.980" end="00:13:29.930">round-trip time to set up a connection every time you need one.</p>
+      <p begin="00:13:29.930" end="00:13:33.740">Also there are fewer bites being sent on the wire because http to</p>
+      <p begin="00:13:33.740" end="00:13:37.960">uses what is called header compression to minimize the number of header</p>
+      <p begin="00:13:37.960" end="00:13:42.430">bites it sending for every request.</p>
+      <p begin="00:13:42.430" end="00:13:47.350">finally I would like to point out that http to is no longer something in the distant future</p>
+      <p begin="00:13:47.350" end="00:13:52.310">and you can think about it later it's really her a lot of the big players</p>
+      <p begin="00:13:52.310" end="00:13:56.820">on the web microsoft google facebook twitter akamai are</p>
+      <p begin="00:13:56.820" end="00:14:01.800">already starting to design the web services and upgrade them to http...so this</p>
+      <p begin="00:14:01.800" end="00:14:06.630">is really something that's here that's now and we generally need to start developing apps to</p>
+      <p begin="00:14:06.630" end="00:14:12.030">take advantage of this if you're more interested in http...there's another talk in</p>
+      <p begin="00:14:12.030" end="00:14:17.950">build by rob trace which discusses all of http...in windows stan.</p>
+      <p begin="00:14:17.950" end="00:14:21.110">So, let's look at how we enable this...api the best</p>
+      <p begin="00:14:21.110" end="00:14:24.530">parties on by default so whether you have an existing</p>
+      <p begin="00:14:24.530" end="00:14:27.460">app in the store or if you're writing a new you ap</p>
+      <p begin="00:14:27.460" end="00:14:32.140">app you get this for free without any code taint.</p>
+      <p begin="00:14:32.140" end="00:14:36.550">We have also built-in negotiations so if let's say the client</p>
+      <p begin="00:14:36.550" end="00:14:41.330">...http to the server but the server does not understand http</p>
+      <p begin="00:14:41.330" end="00:14:45.040">to it's still http one-point-one the client will automatically</p>
+      <p begin="00:14:45.040" end="00:14:51.090">fall back to http one-point-one and your app would never be affected.</p>
+      <p begin="00:14:51.090" end="00:14:55.020">However, we do understand that there might be times when the http to</p>
+      <p begin="00:14:55.020" end="00:14:59.850">...of the server has a bug or you're just trying to bring of both...and service</p>
+      <p begin="00:14:59.850" end="00:15:04.670">endpoints and you're still working through your debugging so it's a single</p>
+      <p begin="00:15:04.670" end="00:15:09.270">line of code change to explicitly switch back to http one-point-one will</p>
+      <p begin="00:15:09.270" end="00:15:14.090">soon see a code fragment of how to do that and finally we're also working</p>
+      <p begin="00:15:14.090" end="00:15:18.890">on enabling http to support in the dot net api so that no matter which</p>
+      <p begin="00:15:18.890" end="00:15:25.550">api you choose to write your you ap app you would get http to support built-in.</p>
+      <p begin="00:15:25.550" end="00:15:29.630">So, let's quickly look at...code sample as I mentioned before</p>
+      <p begin="00:15:29.630" end="00:15:33.170">...is the http base protocol filter that essentially</p>
+      <p begin="00:15:33.170" end="00:15:38.110">...all of your http communication after you create that filter</p>
+      <p begin="00:15:38.110" end="00:15:42.730">there's a property called max version on that filter and again as I</p>
+      <p begin="00:15:42.730" end="00:15:46.010">mention the default value in windows stand is http</p>
+      <p begin="00:15:46.010" end="00:15:51.930">tool but you can go ahead and set it to whatever value you like.</p>
+      <p begin="00:15:51.930" end="00:15:56.690">Now this max version basically says what the client prefers as</p>
+      <p begin="00:15:56.690" end="00:16:01.690">the http version so now you create the new client object you send a request</p>
+      <p begin="00:16:01.690" end="00:16:06.230">to the server and now when the server sense you back the response.</p>
+      <p begin="00:16:06.230" end="00:16:12.550">You can query the version property often response to understand.</p>
+      <p begin="00:16:12.550" end="00:16:17.540">...that you can query the version property of the response to understand what protocol the server</p>
+      <p begin="00:16:17.540" end="00:16:22.330">is using and it's very important to note here that even if you specify http</p>
+      <p begin="00:16:22.330" end="00:16:24.040">...for the client preference.</p>
+      <p begin="00:16:25.100" end="00:16:28.760">Depending on the proxies that are between you and the server and the</p>
+      <p begin="00:16:28.760" end="00:16:35.210">server support itself you may not really be talking http tool.</p>
+      <p begin="00:16:35.210" end="00:16:40.040">So, let's quickly switch to a demo and see how this works so here I have the</p>
+      <p begin="00:16:40.040" end="00:16:41.720">app for http dual.</p>
+      <p begin="00:16:42.790" end="00:16:47.260">Let's go ahead and run it.</p>
+      <p begin="00:16:47.260" end="00:16:50.760">So, we see like for http one-point-one we are in this</p>
+      <p begin="00:16:50.760" end="00:16:54.170">...are basically downloading a set of thumbnail images from</p>
+      <p begin="00:16:54.170" end="00:16:56.430">as your website first will use</p>
+      <p begin="00:16:56.430" end="00:17:00.980">http one-point-one and we'll see how much time it takes.</p>
+      <p begin="00:17:00.980" end="00:17:04.860">Still notice how all the images are coming down in cities that coming</p>
+      <p begin="00:17:04.860" end="00:17:13.769">...one by one and that's the typical nature of...one-point-one if I switch to a cb</p>
+      <p begin="00:17:13.769" end="00:17:16.979">It just comes on what faster.</p>
+      <p begin="00:17:16.979" end="00:17:21.729">I'm making sure not took dash any resources so we can look at it again.</p>
+      <p begin="00:17:21.729" end="00:17:24.539">If I downloaded again it takes two-point-three seconds.</p>
+      <p begin="00:17:25.569" end="00:17:31.410">But, should...one again?</p>
+      <p begin="00:17:31.410" end="00:17:34.300">Index much longer.</p>
+      <p begin="00:17:34.300" end="00:17:36.820">Looking at the code as I mentioned before.</p>
+      <p begin="00:17:38.030" end="00:17:42.230">There's only this one-line of change where you can simply switch between</p>
+      <p begin="00:17:42.230" end="00:17:43.330">...versions being</p>
+      <p begin="00:17:44.530" end="00:17:50.880">...one-one and that's it you get http dual...app.</p>
+      <p begin="00:17:50.880" end="00:17:54.300">You switch back to...</p>
+      <p begin="00:17:54.300" end="00:18:00.030">So, that's all we have for the http api we are really looking forward to</p>
+      <p begin="00:18:00.030" end="00:18:03.370">Grace scenarios that developers enable with http</p>
+      <p begin="00:18:03.370" end="00:18:08.240">...and we would love to your feedback on how we can improve the api even further to</p>
+      <p begin="00:18:08.240" end="00:18:11.230">lead to take advantage of http to.</p>
+      <p begin="00:18:11.230" end="00:18:16.410">Next him other we will now go over the improvements and background transfer api thanks</p>
+      <p begin="00:18:16.410" end="00:18:21.340">said that was really exciting to see so many improvements in socket</p>
+      <p begin="00:18:21.340" end="00:18:24.110">...http now ...</p>
+      <p begin="00:18:24.110" end="00:18:28.720">I'm sure you are in all developers are going to use those apis embedded interesting</p>
+      <p begin="00:18:28.720" end="00:18:33.610">scenarios but we haven't stopped there we had moved ahead and also</p>
+      <p begin="00:18:33.610" end="00:18:39.430">added bunch of new features in the windows networking background transfer</p>
+      <p begin="00:18:39.430" end="00:18:42.500">...background transfer as, you know,</p>
+      <p begin="00:18:42.500" end="00:18:45.430">it is not new api this is from windows</p>
+      <p begin="00:18:45.430" end="00:18:50.590">eight windows eight-point one-time frame the basic api pattern is very simple</p>
+      <p begin="00:18:50.590" end="00:18:54.740">you create a background downloaded object and you can you know,</p>
+      <p begin="00:18:54.740" end="00:18:56.780">schedule a bunch of background downloads</p>
+      <p begin="00:18:56.780" end="00:19:02.040">...uploads using that download object just passing on the uri and the file with</p>
+      <p begin="00:19:02.040" end="00:19:04.780">...the cool part is that you know,</p>
+      <p begin="00:19:04.780" end="00:19:09.500">this api is network resilient like if you if you if</p>
+      <p begin="00:19:09.500" end="00:19:13.020">you're wi-fi connection goes on and off that transfers doesn't fail, you know,</p>
+      <p begin="00:19:13.020" end="00:19:17.230">the automatically resume and lets you download large content</p>
+      <p begin="00:19:17.230" end="00:19:20.520">like music or video or podcast in the</p>
+      <p begin="00:19:20.520" end="00:19:25.020">background a lot of apps like one drive and you know,</p>
+      <p begin="00:19:25.020" end="00:19:29.250">music and video apps broadcast apps use this api to download the</p>
+      <p begin="00:19:29.250" end="00:19:34.510">content the other piece which is very interesting is the api has in</p>
+      <p begin="00:19:34.510" end="00:19:38.970">...intelligence in terms of you know, how much data</p>
+      <p begin="00:19:40.170" end="00:19:45.860">... data do you...cellular network has, you know,...ortiz are data plan and,</p>
+      <p begin="00:19:45.860" end="00:19:52.190">you know,...data sense and battery's sense of where so we have taken a huge step forward</p>
+      <p begin="00:19:52.190" end="00:19:57.220">and added of feature called post-processing in the background transfer</p>
+      <p begin="00:19:57.220" end="00:20:02.150">api now what is post-processing it's basically a</p>
+      <p begin="00:20:02.150" end="00:20:07.060">and the ability of two-run your application code even when the</p>
+      <p begin="00:20:07.060" end="00:20:11.390">user is not able to not using your application at the end of</p>
+      <p begin="00:20:11.390" end="00:20:15.640">...transfer so say you have huge</p>
+      <p begin="00:20:15.640" end="00:20:19.250">movie which you are downloading at the end of the download the</p>
+      <p begin="00:20:19.250" end="00:20:24.400">app wants to do something which earlier it has to do only when the user is</p>
+      <p begin="00:20:24.400" end="00:20:29.600">going is using the app now they can do it at the right at the end of the transfered</p>
+      <p begin="00:20:29.600" end="00:20:35.140">...end of the download how do we do that we are actually building upon the background</p>
+      <p begin="00:20:35.140" end="00:20:40.800">task infrastructure and I will delve a little bit more on that in the future slides</p>
+      <p begin="00:20:40.800" end="00:20:47.240">...so what are the scenarios which background post-processing enables one of</p>
+      <p begin="00:20:47.240" end="00:20:52.240">the interesting thing which it enables is that it...it gives the</p>
+      <p begin="00:20:52.240" end="00:20:56.690">app ability to run automatic processing of the downloaded</p>
+      <p begin="00:20:56.690" end="00:21:01.200">files like after the download happened you can process</p>
+      <p begin="00:21:01.200" end="00:21:06.040">the file automatically you don't have to wait for the user to come back to your application to</p>
+      <p begin="00:21:06.040" end="00:21:10.980">process those files a lot of times a lot of apps have server-side</p>
+      <p begin="00:21:10.980" end="00:21:14.970">transaction logic at the end of the download like you purchase</p>
+      <p begin="00:21:14.970" end="00:21:18.280">...the music download happens and then you want to send</p>
+      <p begin="00:21:18.280" end="00:21:21.100">...acknowledgement to the server to complete</p>
+      <p begin="00:21:21.100" end="00:21:26.300">the transaction now it can be done right at the end of the download</p>
+      <p begin="00:21:26.300" end="00:21:31.020">you can also add a, you know, customized...</p>
+      <p begin="00:21:31.020" end="00:21:36.320">failed transfer retrace background transfer does some amount of retry is forty on your</p>
+      <p begin="00:21:36.320" end="00:21:41.290">behalf but if you want to have more control and do some more interesting</p>
+      <p begin="00:21:41.290" end="00:21:45.300">teens, you know, during after the download has failed you can do that</p>
+      <p begin="00:21:45.300" end="00:21:50.230">using this feature so let's look at what is the programming pattern, you know,</p>
+      <p begin="00:21:50.230" end="00:21:55.190">in windows eight-point one the pattern is that was very</p>
+      <p begin="00:21:55.190" end="00:21:59.140">simpleyou create a background transfer and then you</p>
+      <p begin="00:21:59.140" end="00:22:03.750">have to start those transfers while from your app once the</p>
+      <p begin="00:22:03.750" end="00:22:08.430">transfers get started from your app the background process takes over and</p>
+      <p begin="00:22:08.430" end="00:22:12.130">transfer the data in the background for your app at the</p>
+      <p begin="00:22:12.130" end="00:22:17.910">...what it does is it sendscompletionhandler call back to your</p>
+      <p begin="00:22:17.910" end="00:22:23.430">app right now in windows ten what we have done is using</p>
+      <p begin="00:22:23.430" end="00:22:28.030">three steps three additional steps you can add a support for</p>
+      <p begin="00:22:28.030" end="00:22:34.260">a background post-processing the first step is after you create the background transfers you</p>
+      <p begin="00:22:34.260" end="00:22:38.560">have you can create and a background task and completion</p>
+      <p begin="00:22:38.560" end="00:22:43.560">trigger and then link the background...can the completion trigger to the transfer before</p>
+      <p begin="00:22:43.560" end="00:22:47.850">starting the transfers so in that case what will happen is after the transfer is complete</p>
+      <p begin="00:22:49.060" end="00:22:51.080">...will take care of launching</p>
+      <p begin="00:22:51.080" end="00:22:57.470">of your completion handler task at the end of the transfer</p>
+      <p begin="00:22:57.470" end="00:23:01.670">...the background and you also have a option to handle the completion</p>
+      <p begin="00:23:01.670" end="00:23:06.260">...the foreground if you're app is running so that's pretty powerful now let's look at each</p>
+      <p begin="00:23:06.260" end="00:23:11.390">and every each of these three steps in little bit more detail with code samples and how do</p>
+      <p begin="00:23:11.390" end="00:23:16.390">you do that so the first step is to create a background task completion</p>
+      <p begin="00:23:16.390" end="00:23:22.860">triggers so for this what we have done is we have we have introduced a new</p>
+      <p begin="00:23:22.860" end="00:23:26.950">a class called background transfer completion group</p>
+      <p begin="00:23:26.950" end="00:23:31.340">now doze...people who are familiar with background transfer</p>
+      <p begin="00:23:31.340" end="00:23:34.920">epa might to remember that there is something called background</p>
+      <p begin="00:23:34.920" end="00:23:41.220">transfer group but this is different from that because it gives it gives</p>
+      <p begin="00:23:41.220" end="00:23:46.010">a ability to batch a set of transfers after which a task should be</p>
+      <p begin="00:23:46.010" end="00:23:48.960">...so what we do is in this case we</p>
+      <p begin="00:23:48.960" end="00:23:52.920">creative simple background transfer completion group then we, you know,</p>
+      <p begin="00:23:52.920" end="00:23:56.370">the usual background task apis we create</p>
+      <p begin="00:23:56.370" end="00:24:01.560">...the background task but the interesting thing is that we have to set the</p>
+      <p begin="00:24:01.560" end="00:24:07.360">trigger of the task to the completion groups trigger so you know,</p>
+      <p begin="00:24:07.360" end="00:24:12.210">that's how you will create the task create the completion group and said the tasks</p>
+      <p begin="00:24:12.210" end="00:24:16.680">trigger to the completion groups figure the next step would be do</p>
+      <p begin="00:24:16.680" end="00:24:20.390">...the background tasks to the transfers</p>
+      <p begin="00:24:20.390" end="00:24:25.820">now for that that's also very simple piece of code as usual</p>
+      <p begin="00:24:25.820" end="00:24:28.220">we where we usually created download</p>
+      <p begin="00:24:28.220" end="00:24:33.760">...do you add the transfers now in the background download</p>
+      <p begin="00:24:33.760" end="00:24:38.870">the constructor you can pass on the completion group which it belongs then</p>
+      <p begin="00:24:38.870" end="00:24:42.480">you add as usual all the download operation to the to</p>
+      <p begin="00:24:42.480" end="00:24:47.880">the downloaded and at the end after adding all the transfers</p>
+      <p begin="00:24:47.880" end="00:24:52.570">what we do what you have to do is you have to say completion group dot enable what</p>
+      <p begin="00:24:52.570" end="00:24:57.300">this means is really a transaction commit kind of thing so you are indicating</p>
+      <p begin="00:24:57.300" end="00:25:03.690">the indicating thatusing after all these transfer...done?</p>
+      <p begin="00:25:03.690" end="00:25:10.800">Then only you know,and, respond the tasks...the background tasks.</p>
+      <p begin="00:25:10.800" end="00:25:14.830">So, now what do...the task code</p>
+      <p begin="00:25:14.830" end="00:25:18.990">...to like one that when the task is launched in the background how do, you know,</p>
+      <p begin="00:25:18.990" end="00:25:24.570">which downloads have completed for that you need to just check on</p>
+      <p begin="00:25:24.570" end="00:25:28.550">the check on the background transfer completion</p>
+      <p begin="00:25:28.550" end="00:25:34.010">...triggersthe trigger details contains the list of downloads there</p>
+      <p begin="00:25:34.010" end="00:25:38.860">...completed the similarly if it's upload the trigger details will have a list</p>
+      <p begin="00:25:38.860" end="00:25:44.170">of uploads which has competed so using that you can you can now have</p>
+      <p begin="00:25:44.170" end="00:25:47.060">control of the downloads which you had</p>
+      <p begin="00:25:47.060" end="00:25:52.140">earlier started now you can do interesting post-processing work with a downloads you</p>
+      <p begin="00:25:52.140" end="00:25:57.450">want to access the file or you want to send a server acknowledgment you can do all those</p>
+      <p begin="00:25:57.450" end="00:26:05.140">all those activities no with some important points to note that?</p>
+      <p begin="00:26:05.140" end="00:26:09.660">...the background task which is launched...is a regular background task it is</p>
+      <p begin="00:26:09.660" end="00:26:15.110">not something special it isit will be part of the</p>
+      <p begin="00:26:15.110" end="00:26:20.140">pool of background tasks which are running in the system so the subject to same</p>
+      <p begin="00:26:20.140" end="00:26:25.480">...network court are and it will it will be part of the</p>
+      <p begin="00:26:25.480" end="00:26:29.970">...so it can be if there are a lot of background task already runningit</p>
+      <p begin="00:26:29.970" end="00:26:33.930">there can be a snot...before that task</p>
+      <p begin="00:26:33.930" end="00:26:38.820">...run so we need to we need to the take</p>
+      <p begin="00:26:38.820" end="00:26:43.710">the note of that and it also doesn't replace your foreground completion handler</p>
+      <p begin="00:26:43.710" end="00:26:48.180">your foreground completion handler still can be run if the</p>
+      <p begin="00:26:48.180" end="00:26:53.010">app is running so this just gives an additional option for you to process</p>
+      <p begin="00:26:53.010" end="00:26:59.270">your transfers right at the end of in the end of the transfer?</p>
+      <p begin="00:26:59.270" end="00:27:01.970">So, let's now quickly look at the demo...</p>
+      <p begin="00:27:03.080" end="00:27:08.090">Background transfer post-processing so here in this sample app I</p>
+      <p begin="00:27:08.090" end="00:27:13.150">have got three projects as you can see this is the background transfer</p>
+      <p begin="00:27:13.150" end="00:27:20.620">the up app which is the foreground app this one is my background transfer</p>
+      <p begin="00:27:20.620" end="00:27:25.230">this is a web service which is hosted in as your this is my own web service which</p>
+      <p begin="00:27:25.230" end="00:27:31.530">I've written what is the service data is does is it it'sit</p>
+      <p begin="00:27:31.530" end="00:27:36.160">...failure in the download so say you say you ask the web service to download</p>
+      <p begin="00:27:36.160" end="00:27:41.400">five files from the web service it will induce random failure and,</p>
+      <p begin="00:27:41.400" end="00:27:46.480">this is the background task to you know, a process that transfer so if you look at</p>
+      <p begin="00:27:46.480" end="00:27:52.380">term so let me run the app ok so in my?</p>
+      <p begin="00:27:53.450" end="00:28:01.850">In my background transfer I start ten downloads and...completion group.</p>
+      <p begin="00:28:01.850" end="00:28:04.740">And, what it does is it randomly fails and...</p>
+      <p begin="00:28:05.810" end="00:28:10.820">...sends toast messages on how many of failed but interestingly as you</p>
+      <p begin="00:28:10.820" end="00:28:14.980">could see the download the getting failed but there automatically</p>
+      <p begin="00:28:16.350" end="00:28:21.310">Retried and getting succeeded so ultimately all the downloads</p>
+      <p begin="00:28:21.310" end="00:28:29.420">are succeeded so how do we do that is through this background task?</p>
+      <p begin="00:28:29.420" end="00:28:34.910">So, if you see in this background task what we do is we actually get the</p>
+      <p begin="00:28:34.910" end="00:28:38.860">failed downloads and then you know,</p>
+      <p begin="00:28:38.860" end="00:28:42.000">retry all the downloads in the background.</p>
+      <p begin="00:28:42.000" end="00:28:46.340">So, coming back to the presentation.</p>
+      <p begin="00:28:46.340" end="00:28:48.110">So, this is all about the background</p>
+      <p begin="00:28:48.110" end="00:28:53.050">...but in addition to that we have done a lot ofother</p>
+      <p begin="00:28:53.050" end="00:28:58.050">improvements in other networking apis which are very popular like windows dot</p>
+      <p begin="00:28:58.050" end="00:29:01.750">...jason now in this api we had improve</p>
+      <p begin="00:29:01.750" end="00:29:06.580">the debugging experience of this api on in visual studio earlier in a</p>
+      <p begin="00:29:06.580" end="00:29:10.510">...object you there was no...to see the individual</p>
+      <p begin="00:29:10.510" end="00:29:15.300">members while debugging in the watch window now we have added support in the visual</p>
+      <p begin="00:29:15.300" end="00:29:19.550">studio to get a access to individual members of the</p>
+      <p begin="00:29:19.550" end="00:29:23.710">jayson objects we also have added a new api</p>
+      <p begin="00:29:23.710" end="00:29:28.650">for easy serialized...in dc realizing of null values now</p>
+      <p begin="00:29:28.650" end="00:29:31.870">the that will help developers too, you know,</p>
+      <p begin="00:29:31.870" end="00:29:34.370">process null values much faster and easier</p>
+      <p begin="00:29:35.510" end="00:29:40.150">the second thing what we have done in network background transfer epa is that</p>
+      <p begin="00:29:40.150" end="00:29:45.240">we have added improved support for removable media</p>
+      <p begin="00:29:45.240" end="00:29:49.290">...downloads...is descartes downloads what happens is that we have made</p>
+      <p begin="00:29:49.290" end="00:29:54.290">the api intelligent enough to...that the download is happening on</p>
+      <p begin="00:29:54.290" end="00:29:58.660">a removal media and then move the temporary files to the</p>
+      <p begin="00:29:58.660" end="00:30:05.960">destination location so that...download is faster and completes quicker we have done</p>
+      <p begin="00:30:05.960" end="00:30:11.220">some more improvements in the sockets api one of the key improvement which</p>
+      <p begin="00:30:11.220" end="00:30:15.200">...have done is now at the socket api levelyou-can</p>
+      <p begin="00:30:16.330" end="00:30:20.520">id you can indicate a client certificate for authentication</p>
+      <p begin="00:30:20.520" end="00:30:25.060">of the socket this was a huge developer ask and we have added it into</p>
+      <p begin="00:30:25.060" end="00:30:28.030">...api so in the stream socket you can now</p>
+      <p begin="00:30:28.030" end="00:30:33.350">setup client certificate for authentication also we have added support</p>
+      <p begin="00:30:33.350" end="00:30:37.410">...sharing in the data...circuit which is also a very powerful,</p>
+      <p begin="00:30:37.410" end="00:30:41.270">powerful feature so with that we would</p>
+      <p begin="00:30:41.270" end="00:30:46.030">appreciate your feedback and requests for new features on the networking api</p>
+      <p begin="00:30:46.030" end="00:30:49.990">...you can send that to comments on this channel</p>
+      <p begin="00:30:49.990" end="00:30:55.000">online video or you can blog your ideas in wb dev user</p>
+      <p begin="00:30:55.000" end="00:31:00.720">...dot com also you can voice...feedback and...and, your request</p>
+      <p begin="00:31:00.720" end="00:31:05.960">...new feature in the windows insider program that we are done for today the good-bye.</p>
+
+    </div>
+  </body>
+</tt>

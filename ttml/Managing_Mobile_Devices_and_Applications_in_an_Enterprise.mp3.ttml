@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.921</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:07.170" end="00:00:10.530">Greening everyone.</p>
+      <p begin="00:00:10.530" end="00:00:17.400">Warm welcome to my session I know it's the last session of the day.</p>
+      <p begin="00:00:17.400" end="00:00:19.690">You...now I have at least.</p>
+      <p begin="00:00:19.690" end="00:00:22.460">One thing in common.</p>
+      <p begin="00:00:22.460" end="00:00:26.760">We all carry just one mobile phones...laptop.</p>
+      <p begin="00:00:26.760" end="00:00:29.990">And, we want to check both our facebook...and work</p>
+      <p begin="00:00:29.990" end="00:00:40.740">e-mail and reproductive on the same device how many of you do that here.</p>
+      <p begin="00:00:40.740" end="00:00:46.330">So, this poses a challenge or responsibility rather.</p>
+      <p begin="00:00:46.330" end="00:00:50.240">To those managing id and enterprises.</p>
+      <p begin="00:00:50.240" end="00:00:54.870">You need to ensure that...is like you and me.</p>
+      <p begin="00:00:54.870" end="00:00:58.460">Productivity and they can seamlessly use</p>
+      <p begin="00:00:58.460" end="00:00:59.110">...devices.</p>
+      <p begin="00:01:00.250" end="00:01:04.670">Whether they're at home or at work.</p>
+      <p begin="00:01:04.670" end="00:01:11.310">Ensuring that these devices do not compromise the security of your enterprise.</p>
+      <p begin="00:01:11.310" end="00:01:17.030">This is exactly why we need management of devices.</p>
+      <p begin="00:01:17.030" end="00:01:18.780">Mobile device management</p>
+      <p begin="00:01:18.780" end="00:01:23.470">is particularly useful when you need to manage users</p>
+      <p begin="00:01:23.470" end="00:01:28.330">that are mobile not just mobile devices so what do I mean by that</p>
+      <p begin="00:01:29.380" end="00:01:33.780">users who use their personal devices but also those who use</p>
+      <p begin="00:01:33.780" end="00:01:39.900">corporate devices and...mobile and are hardly connected to the corporate network?</p>
+      <p begin="00:01:39.900" end="00:01:42.480">Or if you are looking to move to the cloud.</p>
+      <p begin="00:01:42.480" end="00:01:50.040">...cloud-based management solution then mgm is your answer.</p>
+      <p begin="00:01:50.040" end="00:01:54.110">Still in a typical enterprise there are different kinds of devices we</p>
+      <p begin="00:01:54.110" end="00:01:59.940">have iowa's devices iphones android tablets windows stand tablets and</p>
+      <p begin="00:01:59.940" end="00:02:00.440">phones.</p>
+      <p begin="00:02:01.700" end="00:02:06.530">in this in this particular session I'm going to cover the tools that you require</p>
+      <p begin="00:02:06.530" end="00:02:11.270">the enterprise features that we're adding...that you can use to manage windows</p>
+      <p begin="00:02:11.270" end="00:02:17.910">ten devices and applications in your enterprise.</p>
+      <p begin="00:02:17.910" end="00:02:21.600">...by the amgen any lots of even and if you have any questions that</p>
+      <p begin="00:02:21.600" end="00:02:25.910">...not able to answer during the session are later in inside...you can fee for</p>
+      <p begin="00:02:25.910" end="00:02:35.400">...question to my twitter account and I'll make sure that I get back to you.</p>
+      <p begin="00:02:35.400" end="00:02:37.900">So, what...some of the challenges that we face</p>
+      <p begin="00:02:37.900" end="00:02:42.570">today...you face today when you management those devices?</p>
+      <p begin="00:02:42.570" end="00:02:43.720">We asked some</p>
+      <p begin="00:02:43.720" end="00:02:51.360">of the it pros and fortune hundred companies and this is what we heard.</p>
+      <p begin="00:02:51.360" end="00:02:56.240">You need more control to manage these mobile devices more and</p>
+      <p begin="00:02:56.240" end="00:02:59.380">more of these devices that are coming into the enterprise today</p>
+      <p begin="00:02:59.380" end="00:03:03.800">are mobile devices and why windows eight-point one</p>
+      <p begin="00:03:03.800" end="00:03:07.950">does have a rich level of mgm capabilities the</p>
+      <p begin="00:03:07.950" end="00:03:11.920">...of control that you need is much more and</p>
+      <p begin="00:03:11.920" end="00:03:20.310">something that's closer to group policy that that's available today for you for...</p>
+      <p begin="00:03:20.310" end="00:03:23.070">Second when managing windows devices</p>
+      <p begin="00:03:23.070" end="00:03:25.870">an enterprise today you have to</p>
+      <p begin="00:03:25.870" end="00:03:32.150">use different tools to manage different kinds of devices why do I mean by this.</p>
+      <p begin="00:03:32.150" end="00:03:35.820">During that windows phone eight-point when you can set a policies say</p>
+      <p begin="00:03:35.820" end="00:03:39.620">to disable camera to...and you can enforce this on the</p>
+      <p begin="00:03:39.620" end="00:03:43.930">windows phone devices however you cannot use the same</p>
+      <p begin="00:03:43.930" end="00:03:45.490">...policy to enforced.</p>
+      <p begin="00:03:46.630" end="00:03:50.540">Or disabling the camera on windows species so.</p>
+      <p begin="00:03:50.540" end="00:03:53.650">You would have to resort to a different tool like group policy</p>
+      <p begin="00:03:53.650" end="00:03:57.610">...system center configuration manager for the same.</p>
+      <p begin="00:03:57.610" end="00:04:04.130">Is an inconvenience to you because you now have to use different tools for different windows devices?</p>
+      <p begin="00:04:04.130" end="00:04:08.570">...because of this need to use different management tools for different</p>
+      <p begin="00:04:08.570" end="00:04:15.710">windows devices always a chance for policy conflict let's say the system center configuration</p>
+      <p begin="00:04:15.710" end="00:04:21.740">admin set the policy to disable the camera for pc's and</p>
+      <p begin="00:04:21.740" end="00:04:26.090">...exchange active...admin did not said the policy.</p>
+      <p begin="00:04:26.090" end="00:04:30.210">...ends up adding...exchange account...and up-and-up adding</p>
+      <p begin="00:04:30.210" end="00:04:34.190">...exchange account of my pc and it gets manage by both exchange active</p>
+      <p begin="00:04:34.190" end="00:04:38.650">...and also by system center configuration manager the</p>
+      <p begin="00:04:38.650" end="00:04:42.890">...are...expected the policy may not be enforced correctly</p>
+      <p begin="00:04:42.890" end="00:04:50.660">so now you have to have these...sync up with each other before the policies rolled out.</p>
+      <p begin="00:04:50.660" end="00:04:51.160">Finally.</p>
+      <p begin="00:04:52.460" end="00:04:56.680">Let's say you were able to figure out what tools to use for which windows device</p>
+      <p begin="00:04:56.680" end="00:05:00.000">...able to configure the policies without conflict.</p>
+      <p begin="00:05:01.340" end="00:05:05.730">...a user still...inconsistent user experience when I</p>
+      <p begin="00:05:05.730" end="00:05:10.600">try to launch the camera up on the phone I see a different error message and then I try to launch</p>
+      <p begin="00:05:10.600" end="00:05:14.630">camera on my pc I see something different when the admin has blocked the</p>
+      <p begin="00:05:14.630" end="00:05:23.130">use of camera so how are we moving to...the direction of addressing these challenges between</p>
+      <p begin="00:05:23.130" end="00:05:27.680">First of all we are expanding the mobile device management capabilities</p>
+      <p begin="00:05:27.680" end="00:05:32.510">beyond what already existed with windows, windows phone eight-point one</p>
+      <p begin="00:05:32.510" end="00:05:37.190">these mobile device management capabilities can be leverage by all</p>
+      <p begin="00:05:37.190" end="00:05:40.580">mgm servers and also existing tools like</p>
+      <p begin="00:05:40.580" end="00:05:46.510">system center configuration manager will see that in a minute how that's possible.</p>
+      <p begin="00:05:46.510" end="00:05:51.310">While the level of control we provide for windows stan will not be exactly the same as</p>
+      <p begin="00:05:51.310" end="00:05:52.450">...policy provides</p>
+      <p begin="00:05:52.450" end="00:05:59.160">for pc's today we are looking to what closing that gap moving forward.</p>
+      <p begin="00:05:59.160" end="00:06:03.340">Second all controls are all policies that</p>
+      <p begin="00:06:03.340" end="00:06:06.060">you set to m d n for windows</p>
+      <p begin="00:06:06.060" end="00:06:10.420">...will be converged they will and apply to all windows devices</p>
+      <p begin="00:06:10.420" end="00:06:13.620">in your enterprise if you can disable camera through</p>
+      <p begin="00:06:13.620" end="00:06:18.560">an emblem policy that will apply to all phones tablets or</p>
+      <p begin="00:06:18.560" end="00:06:23.890">...that are in your in your into price so it makes it much easier for the admin to</p>
+      <p begin="00:06:23.890" end="00:06:34.510">enforce one policy and see that applied...a quick...of that later.</p>
+      <p begin="00:06:34.510" end="00:06:34.720">Still</p>
+      <p begin="00:06:34.720" end="00:06:39.610">...be a case when you how you need to have multiple management tools managing your device</p>
+      <p begin="00:06:39.610" end="00:06:41.490">and this case the windows</p>
+      <p begin="00:06:41.490" end="00:06:46.080">stent device automatically resolve conflicts and picks the most</p>
+      <p begin="00:06:46.080" end="00:06:50.870">secure configuration when it is managed by more than one management to</p>
+      <p begin="00:06:50.870" end="00:06:54.990">so in the previous example that we saw even if the exchange active</p>
+      <p begin="00:06:54.990" end="00:06:59.520">...admin had disable the head...not...use of camera the more stricter</p>
+      <p begin="00:06:59.520" end="00:07:04.470">configuration that the system center configuration admin applied would take effect on</p>
+      <p begin="00:07:04.470" end="00:07:09.280">the device and finally because windows stand is a converse platform.</p>
+      <p begin="00:07:10.370" end="00:07:11.630">I now have a consistent</p>
+      <p begin="00:07:11.630" end="00:07:17.710">experience when a policies enforced on any of my windows device sign</p>
+      <p begin="00:07:17.710" end="00:07:22.140">summary all of these benefits put together make it easy to manage windows</p>
+      <p begin="00:07:22.140" end="00:07:26.540">...devices in the enterprise for the rest of this lights people</p>
+      <p begin="00:07:26.540" end="00:07:33.260">...keep an eye on all of these benefits and see what each of the features provides.</p>
+      <p begin="00:07:33.260" end="00:07:35.150">Windows hobby windows devices have</p>
+      <p begin="00:07:35.150" end="00:07:39.210">...enterprise for a really long-time so we understand that there are</p>
+      <p begin="00:07:39.210" end="00:07:44.150">lot of tools are management options that you already used today.</p>
+      <p begin="00:07:44.150" end="00:07:48.490">And, windows...makes management easy not just by expanding</p>
+      <p begin="00:07:48.490" end="00:07:53.190">mobile device management capabilities but also...by making sure that we</p>
+      <p begin="00:07:53.190" end="00:07:58.190">continue to support and enhance these existing management tools.</p>
+      <p begin="00:07:58.190" end="00:07:59.910">For example.</p>
+      <p begin="00:07:59.910" end="00:08:03.010">Today use active directory...on users to be</p>
+      <p begin="00:08:03.010" end="00:08:07.080">...species...you can continue to do the same between a</p>
+      <p begin="00:08:08.130" end="00:08:12.920">...will also be able to use agile active directory for the st.</p>
+      <p begin="00:08:12.920" end="00:08:17.500">Talking about management...of...still use group policies to manage</p>
+      <p begin="00:08:17.500" end="00:08:22.490">pc's you can continue to use that for windows stand devices and we</p>
+      <p begin="00:08:22.490" end="00:08:27.350">will be adding new group policies to support new windows...features for those</p>
+      <p begin="00:08:27.350" end="00:08:31.010">of you who use advanced group policy management or adpcm.</p>
+      <p begin="00:08:32.070" end="00:08:36.690">It will support windows stan and we're adding new publishable command let's that make</p>
+      <p begin="00:08:36.690" end="00:08:42.090">...and scripting easier for you.</p>
+      <p begin="00:08:42.090" end="00:08:44.110">Talking about system center configuration</p>
+      <p begin="00:08:44.110" end="00:08:49.010">manager its vitally used across enterprises for managing</p>
+      <p begin="00:08:49.010" end="00:08:52.570">pc's you can continue to manage pc's windows</p>
+      <p begin="00:08:52.570" end="00:08:55.460">...pc's using system center configuration manager</p>
+      <p begin="00:08:56.510" end="00:09:02.130">in addition all of the new mgm policies that we...for windows</p>
+      <p begin="00:09:02.130" end="00:09:06.890">stan the now also be available or can be leverage through</p>
+      <p begin="00:09:06.890" end="00:09:15.330">system center configuration manager I'll come to that...the next slide I promise?</p>
+      <p begin="00:09:15.330" end="00:09:16.960">For mgm.</p>
+      <p begin="00:09:16.960" end="00:09:21.550">In addition to the expanded...capabilities that I've been talking about there</p>
+      <p begin="00:09:21.550" end="00:09:26.500">is also support for initial provisioning of the devices which is going to make it easier</p>
+      <p begin="00:09:26.500" end="00:09:33.000">for you to...devices and bulk for your organization and other management providers like</p>
+      <p begin="00:09:33.000" end="00:09:36.050">exchange active saying bother shell or windows management</p>
+      <p begin="00:09:37.100" end="00:09:41.530">...continue to work for windows stent as the to do today.</p>
+      <p begin="00:09:41.530" end="00:09:45.500">So,...of these benefits possible how is the emblem</p>
+      <p begin="00:09:45.500" end="00:09:49.480">...designed let's take a quick.</p>
+      <p begin="00:09:49.480" end="00:09:55.780">I know this is kind of a busy...but I really want to highlight two key points here.</p>
+      <p begin="00:09:55.780" end="00:09:59.610">First any management tool that you pick for windows</p>
+      <p begin="00:09:59.610" end="00:10:03.380">...meet system center configuration manager or exchange active</p>
+      <p begin="00:10:03.380" end="00:10:07.500">...or mgm all of the configuration goes through</p>
+      <p begin="00:10:07.500" end="00:10:11.980">a common management layer of the bottom and so.</p>
+      <p begin="00:10:11.980" end="00:10:15.710">What happens is any configuration that you apply because of</p>
+      <p begin="00:10:15.710" end="00:10:17.470">...going through that common layer</p>
+      <p begin="00:10:17.470" end="00:10:26.940">the device itself is able to automatically result and pick the most secure configuration of the same?</p>
+      <p begin="00:10:26.940" end="00:10:32.300">Some center configuration manager uses windows management instrumentation</p>
+      <p begin="00:10:32.300" end="00:10:37.860">...to configure settings on a device and all of the new ambient features that we are</p>
+      <p begin="00:10:37.860" end="00:10:42.250">adding is added through configuration service providers that you see at the</p>
+      <p begin="00:10:42.250" end="00:10:47.770">bottom what we did was we added layer call the w my bridge to</p>
+      <p begin="00:10:47.770" end="00:10:50.460">our emblem stack so that we</p>
+      <p begin="00:10:50.460" end="00:10:54.590">could bridge the configuration service providers through doubly a</p>
+      <p begin="00:10:54.590" end="00:10:57.410">...and we're working very closely with the system</p>
+      <p begin="00:10:57.410" end="00:11:02.390">center configuration manager team so that they can leverage and configure all of</p>
+      <p begin="00:11:02.390" end="00:11:09.160">the settings that we're adding to mgm to system center configuration manager also.</p>
+      <p begin="00:11:09.160" end="00:11:14.390">So, what are these new features that we're adding to...n?</p>
+      <p begin="00:11:14.390" end="00:11:17.960">To illustrate this I would like to walk you through a story</p>
+      <p begin="00:11:17.960" end="00:11:20.850">r something that you go through every day in your</p>
+      <p begin="00:11:20.850" end="00:11:24.970">in your company so let's say I'm...new implying that's joining</p>
+      <p begin="00:11:24.970" end="00:11:29.750">your company you either make sure that you give me devices for me to work</p>
+      <p begin="00:11:29.750" end="00:11:35.290">...bring in my own devices which is actually becoming more popular nowadays.</p>
+      <p begin="00:11:35.290" end="00:11:38.990">You make sure that I have all the required things all the</p>
+      <p begin="00:11:38.990" end="00:11:43.130">require configuration to be productive at work.</p>
+      <p begin="00:11:43.130" end="00:11:47.450">And, at home or wherever I am and all this</p>
+      <p begin="00:11:47.450" end="00:11:52.270">time you ensure that my devices secular and the device the security of the</p>
+      <p begin="00:11:52.270" end="00:11:56.350">...also not compromised during the course of using the</p>
+      <p begin="00:11:56.350" end="00:11:57.820">...I'm going to have sometimes</p>
+      <p begin="00:11:57.820" end="00:12:01.700">...will have issues where I can call you and you'll be able to trouble</p>
+      <p begin="00:12:01.700" end="00:12:05.510">should those issues and finally...it's my last</p>
+      <p begin="00:12:05.510" end="00:12:09.950">data company you want to make sure that I no longer have access to any</p>
+      <p begin="00:12:09.950" end="00:12:16.460">of the corporate data or corporate resources that I had access to as an...</p>
+      <p begin="00:12:16.460" end="00:12:20.660">So, the first step that I did when I got these devices was</p>
+      <p begin="00:12:20.660" end="00:12:22.740">...to work and try and connected</p>
+      <p begin="00:12:22.740" end="00:12:27.400">to corporate wi-fi but I realized I couldn't do that.</p>
+      <p begin="00:12:27.400" end="00:12:31.570">It is because you require that I in...my device in</p>
+      <p begin="00:12:31.570" end="00:12:36.680">...n before I can...corporate wi-fi so that was really</p>
+      <p begin="00:12:36.680" end="00:12:42.070">the first step that I did I took my phone followed your instructions enrolled</p>
+      <p begin="00:12:42.070" end="00:12:45.890">...mgm server and picked up my laptop and</p>
+      <p begin="00:12:45.890" end="00:12:47.580">...back to look for the instructions.</p>
+      <p begin="00:12:48.710" end="00:12:53.370">But, what I find there was just one set of instructions for enrolling any windows</p>
+      <p begin="00:12:53.370" end="00:12:54.170">stan device?</p>
+      <p begin="00:12:55.230" end="00:12:58.530">This single enrollment experience for any windows</p>
+      <p begin="00:12:58.530" end="00:13:03.140">stand device really has to benefits one to me as</p>
+      <p begin="00:13:03.140" end="00:13:06.460">a user I just have to learn one way of doing it and</p>
+      <p begin="00:13:06.460" end="00:13:10.930">to-you as admins you just have to publish one set of instructions for any windows</p>
+      <p begin="00:13:10.930" end="00:13:12.650">...device.</p>
+      <p begin="00:13:12.650" end="00:13:17.580">...a hidden benefit here for...server vendors out there that they need to</p>
+      <p begin="00:13:17.580" end="00:13:23.200">implement against only one enrollment protocol for any windows...device.</p>
+      <p begin="00:13:23.200" end="00:13:29.730">So, let me show you a quick demo of how I enjoy my pc ensure...server.</p>
+      <p begin="00:13:29.730" end="00:13:36.860">And, by virtue of the experience being the same you would know-how to do that on the phone too.</p>
+      <p begin="00:13:36.860" end="00:13:42.440">So, here I have my device and based on instructions I navigate to settings</p>
+      <p begin="00:13:42.440" end="00:13:47.050">which is where our connect workplace setting is now and under</p>
+      <p begin="00:13:47.050" end="00:13:51.860">...ic work or school.</p>
+      <p begin="00:13:51.860" end="00:14:01.270">And, I see the connect but and I'm just going to click on it and enter the credentials that...has given me.</p>
+      <p begin="00:14:01.270" end="00:14:03.330">So, what happens when I</p>
+      <p begin="00:14:03.330" end="00:14:08.010">hidden continue here is my enrollment services auto discovered</p>
+      <p begin="00:14:08.010" end="00:14:12.980">based on the credentials that I enter for those a few that are using windows eight-point...a want</p>
+      <p begin="00:14:12.980" end="00:14:17.880">eight-point one this is similar to that and once my services discovered I see</p>
+      <p begin="00:14:17.880" end="00:14:23.520">the authentication page and this page is customizable for your enterprise if you want</p>
+      <p begin="00:14:23.520" end="00:14:28.100">to use multi factor authentication you could do the same or if you want to use one-time passwords</p>
+      <p begin="00:14:28.100" end="00:14:32.990">you could use that for instance microsoft we actually use a phone to</p>
+      <p begin="00:14:32.990" end="00:14:37.960">factor authentication so every time I sign in I have to verify that it's me on my phone before I</p>
+      <p begin="00:14:37.960" end="00:14:43.820">sign in for this demo it's basically just a password?</p>
+      <p begin="00:14:43.820" end="00:14:47.150">So, I entered the password and.</p>
+      <p begin="00:14:47.150" end="00:14:50.650">That's it so it was basically for</p>
+      <p begin="00:14:50.650" end="00:14:56.850">clicks and I'm and role within...server.</p>
+      <p begin="00:14:56.850" end="00:15:00.040">The...really simple and this is the same thing that we</p>
+      <p begin="00:15:00.040" end="00:15:05.800">have across all windows devices I'll show you a little bit later about how some of the policies are</p>
+      <p begin="00:15:05.800" end="00:15:10.090">applied to so I showed you how I enrolling to</p>
+      <p begin="00:15:10.090" end="00:15:14.930">...level but windows stand you have more options.</p>
+      <p begin="00:15:14.930" end="00:15:16.850">We talked...this at the beginning that</p>
+      <p begin="00:15:16.850" end="00:15:21.140">...stand you have the option to use agile active directory to log on users to your</p>
+      <p begin="00:15:21.140" end="00:15:26.030">...so you as my admin could mandate that I</p>
+      <p begin="00:15:26.030" end="00:15:29.950">...my device to agile active directory when I initially set up</p>
+      <p begin="00:15:29.950" end="00:15:34.800">the device because it's a corporate own device or I is</p>
+      <p begin="00:15:34.800" end="00:15:38.970">a user could choose to add and adjective directory account to</p>
+      <p begin="00:15:38.970" end="00:15:43.990">my pc after I set it up initially with my personal account.</p>
+      <p begin="00:15:43.990" end="00:15:47.600">That's going to give me single sign on to my corporate resources which is why am I</p>
+      <p begin="00:15:47.600" end="00:15:51.710">...add that so in both of these cases.</p>
+      <p begin="00:15:51.710" end="00:15:56.870">What happens with windows stan is that your device can be automatically and...with</p>
+      <p begin="00:15:56.870" end="00:15:59.210">...n when I connect to</p>
+      <p begin="00:15:59.210" end="00:16:02.920">agile active directory this is great because</p>
+      <p begin="00:16:02.920" end="00:16:07.630">india has the primary channel of management for agile active directory manage</p>
+      <p begin="00:16:07.630" end="00:16:12.770">devices just like group policy is for active directory manage devices so</p>
+      <p begin="00:16:12.770" end="00:16:17.400">you can ensure that my devices managed at the same time that I connect to</p>
+      <p begin="00:16:17.400" end="00:16:24.020">adjective directory plus I don't have to do these two steps separately?</p>
+      <p begin="00:16:24.020" end="00:16:28.810">Some of you also have the need to prepare or...provision devices for</p>
+      <p begin="00:16:28.810" end="00:16:33.420">...say...your financial group you want to make sure that they get their laptops</p>
+      <p begin="00:16:33.420" end="00:16:36.780">or they phones and when the unlocked phones are log</p>
+      <p begin="00:16:36.780" end="00:16:41.490">on to their laptops the system is already provision with the settings that you desire</p>
+      <p begin="00:16:41.490" end="00:16:46.870">...devices automatically enrolled with...server?</p>
+      <p begin="00:16:46.870" end="00:16:50.540">This is possible for windows stan using the bulk provisioning</p>
+      <p begin="00:16:50.540" end="00:16:54.920">feature where you can ensure that the devices automatically</p>
+      <p begin="00:16:54.920" end="00:16:59.890">enrolled without requiring user intervention and this is possible</p>
+      <p begin="00:16:59.890" end="00:17:04.590">by using certificate based authentication for the enrollment process itself</p>
+      <p begin="00:17:04.590" end="00:17:08.250">if you're interested to know more about bile provisioning and how we can help you</p>
+      <p begin="00:17:08.250" end="00:17:13.220">save initial setup time I would highly recommend reference session</p>
+      <p begin="00:17:13.220" end="00:17:17.950">this happens at ignite which is microsoft enterprise focus conference that happens next week</p>
+      <p begin="00:17:17.950" end="00:17:20.110">and chicago don't worry if you're</p>
+      <p begin="00:17:20.110" end="00:17:26.540">...all of the session recordings will be available online?</p>
+      <p begin="00:17:26.540" end="00:17:31.310">So, why did why did you ask me to enroll my device before I could</p>
+      <p begin="00:17:31.310" end="00:17:32.600">connective corporate wi-fi?</p>
+      <p begin="00:17:33.620" end="00:17:38.340">Because you could manage my device and ensure that I have all the things that I need</p>
+      <p begin="00:17:38.340" end="00:17:43.230">to be productive and the same time that my devices secure.</p>
+      <p begin="00:17:43.230" end="00:17:48.480">Windows...helps you do this to mgm by adding on to all</p>
+      <p begin="00:17:48.480" end="00:17:53.910">the rich features that we already had for windows and windows eight-point one through</p>
+      <p begin="00:17:55.020" end="00:17:56.750">All of the policies and all</p>
+      <p begin="00:17:56.750" end="00:18:03.430">of the configuration that existed will continue to move forward for windows stan.</p>
+      <p begin="00:18:03.430" end="00:18:07.500">Was available only on phones will now also be brought to pc's</p>
+      <p begin="00:18:07.500" end="00:18:12.390">wherever applicable in a quick recap of the windows eight-point one</p>
+      <p begin="00:18:12.390" end="00:18:17.070">...features I would suggest looking at the reference video here which is from the last</p>
+      <p begin="00:18:17.070" end="00:18:20.160">year's build.</p>
+      <p begin="00:18:20.160" end="00:18:25.150">The first thing that I saw when I...my phone was a message asking me to</p>
+      <p begin="00:18:25.150" end="00:18:28.490">set...for the device...</p>
+      <p begin="00:18:28.490" end="00:18:33.180">like this been policy you can now configure a lot of different policies</p>
+      <p begin="00:18:33.180" end="00:18:38.890">to mgm in each of these categories one notable addition that I want</p>
+      <p begin="00:18:38.890" end="00:18:43.250">to call out...the microsoft passport...</p>
+      <p begin="00:18:43.250" end="00:18:46.880">Some of you might have attended the session just before this where they talked about</p>
+      <p begin="00:18:46.880" end="00:18:51.470">passport microsoft passport is a feature in windows stan that</p>
+      <p begin="00:18:51.470" end="00:18:56.440">allows your users to move away from username and passwords to more secure and</p>
+      <p begin="00:18:56.440" end="00:19:02.910">easy and unlock procedures like fingerprint scanning or...bins and all of that.</p>
+      <p begin="00:19:02.910" end="00:19:06.680">You can also configure defender and...security through</p>
+      <p begin="00:19:06.680" end="00:19:12.370">mgm for pc's just like you could do it...group policy.</p>
+      <p begin="00:19:12.370" end="00:19:17.190">Here are some examples of policies that are available to mgm but this is</p>
+      <p begin="00:19:17.190" end="00:19:22.080">only a small sample set I couldn't put all the policies on here there are</p>
+      <p begin="00:19:22.080" end="00:19:27.160">over hundred new policies...adding for windows stand to...and this</p>
+      <p begin="00:19:27.160" end="00:19:33.690">is over the fifty policies that already existed for windows eight-point one.</p>
+      <p begin="00:19:33.690" end="00:19:36.430">So, let me show you a quick demo of how</p>
+      <p begin="00:19:36.430" end="00:19:39.340">icon figure the policy in one place</p>
+      <p begin="00:19:39.340" end="00:19:52.680">and the policies applied in a consistent manner on both my bc and...</p>
+      <p begin="00:19:52.680" end="00:19:57.500">So, here I have my pc that...and...with...</p>
+      <p begin="00:19:57.500" end="00:20:01.860">I going to settings just as I did before.</p>
+      <p begin="00:20:01.860" end="00:20:03.430">And, I see that it is enrolled.</p>
+      <p begin="00:20:04.510" end="00:20:06.470">With...observer</p>
+      <p begin="00:20:06.470" end="00:20:11.390">so my admin has set a few policies and let's see what those are</p>
+      <p begin="00:20:11.390" end="00:20:16.050">the first thing is...make sure that I'm not able to</p>
+      <p begin="00:20:16.050" end="00:20:19.690">...settings on the device that I useful work.</p>
+      <p begin="00:20:19.690" end="00:20:24.120">To my personal id so my divide my settings do not...across on</p>
+      <p begin="00:20:24.120" end="00:20:30.600">...species and I also c that madmen has.</p>
+      <p begin="00:20:30.600" end="00:20:35.120">Prevented me from removing my and role meant...I cannot on...my device this</p>
+      <p begin="00:20:35.120" end="00:20:39.890">is especially useful for corporate on devices where you do not want to users to</p>
+      <p begin="00:20:39.890" end="00:20:47.160">remove themselves from management and the other thing that I talk did that I just mentioned to you about.</p>
+      <p begin="00:20:47.160" end="00:20:49.000">Windows defender windows</p>
+      <p begin="00:20:49.000" end="00:20:55.350">defender is available on all on windows devices in-box the at my admin has</p>
+      <p begin="00:20:55.350" end="00:21:00.080">made sure that I cannot turnoff real-time protection because that would put my system</p>
+      <p begin="00:21:00.080" end="00:21:03.590">...so now let's move to my phone.</p>
+      <p begin="00:21:04.640" end="00:21:30.560">Which is...the exact same...observer?</p>
+      <p begin="00:21:30.560" end="00:21:37.580">That always has to happen during a demo.</p>
+      <p begin="00:21:37.580" end="00:21:40.120">So, I have my phone your and.</p>
+      <p begin="00:21:40.120" end="00:21:44.080">I'm going to navigate to the same place and look how the you why is</p>
+      <p begin="00:21:44.080" end="00:21:48.800">very consistent so I going to settings accounts worker school and I</p>
+      <p begin="00:21:48.800" end="00:21:55.150">see my device android I'm going-to try and then role its prevented.</p>
+      <p begin="00:21:55.150" end="00:21:56.590">I try to look at the</p>
+      <p begin="00:21:56.590" end="00:22:01.580">...my settings option that is also disabled so</p>
+      <p begin="00:22:03.220" end="00:22:07.790">...quickly also show you how...so I'm using microsoft into</p>
+      <p begin="00:22:07.790" end="00:22:11.120">...mgm server right now and you can see that</p>
+      <p begin="00:22:11.120" end="00:22:15.560">I've configured these policies and configured it as an windows</p>
+      <p begin="00:22:15.560" end="00:22:19.330">...policy not as a form or windows policy.</p>
+      <p begin="00:22:19.330" end="00:22:22.080">What has happened is the admin has been able to</p>
+      <p begin="00:22:22.080" end="00:22:27.030">configure the policy at once just for all windows devices and</p>
+      <p begin="00:22:27.030" end="00:22:31.760">it's in it's enforced on the devices on both my phone and the pc the</p>
+      <p begin="00:22:31.760" end="00:22:37.700">exact same way so this is what the converge platform and</p>
+      <p begin="00:22:37.700" end="00:22:43.660">one mgm solution is going to provide is going to give you for windows stent?</p>
+      <p begin="00:22:43.660" end="00:22:48.120">So, I finally android my device and I was able to connect to the</p>
+      <p begin="00:22:48.120" end="00:22:51.140">corporate wi-fi network which I wanted to but I</p>
+      <p begin="00:22:51.140" end="00:22:57.670">notice that when I connected to wi-fi I was not asked for my username and password.</p>
+      <p begin="00:22:57.670" end="00:23:01.480">My admin...provision the certificate for me to use for my by</p>
+      <p begin="00:23:01.480" end="00:23:06.020">phi authentication in windows eight-point one through n</p>
+      <p begin="00:23:06.020" end="00:23:08.720">...you could provision a certificate</p>
+      <p begin="00:23:08.720" end="00:23:13.650">using simple certificate enrollment protocol or skip as we call it so the</p>
+      <p begin="00:23:13.650" end="00:23:17.720">...server indicates to the device that it needs to go</p>
+      <p begin="00:23:17.720" end="00:23:19.690">unsaid get a certificate and the</p>
+      <p begin="00:23:19.690" end="00:23:23.420">...goes and gets a certificate from a skips of.</p>
+      <p begin="00:23:23.420" end="00:23:27.430">With windows stan in addition to this you will also be able to</p>
+      <p begin="00:23:27.430" end="00:23:31.590">installer certificate directly from...server by sending</p>
+      <p begin="00:23:31.590" end="00:23:38.630">the certificate along with the private key to the device without requiring the...</p>
+      <p begin="00:23:38.630" end="00:23:43.330">you may say that I want you to make sure I want you to strongly authenticate</p>
+      <p begin="00:23:43.330" end="00:23:47.660">before you use the certificate that is you want me to prove that it is actually</p>
+      <p begin="00:23:47.660" end="00:23:52.020">...who is using the certificate you can do this by</p>
+      <p begin="00:23:52.020" end="00:23:52.970">installing</p>
+      <p begin="00:23:52.970" end="00:23:58.480">a microsoft passport certificate devices through mgm.</p>
+      <p begin="00:23:58.480" end="00:24:02.150">So, now when I try to use my certificate I'm going to be</p>
+      <p begin="00:24:02.150" end="00:24:06.760">...shown the passport...need to enter the...or swipe my finger,</p>
+      <p begin="00:24:06.760" end="00:24:12.010">finger before I use it so you have to factor authentication there.</p>
+      <p begin="00:24:12.010" end="00:24:14.760">So, about two months back I was able to</p>
+      <p begin="00:24:14.760" end="00:24:19.560">connect wife evidence suddenly I was not the first thing that the admin</p>
+      <p begin="00:24:19.560" end="00:24:22.120">ask me to do was to check if my certificates</p>
+      <p begin="00:24:22.120" end="00:24:27.120">where installed properly I was able to do that on the pc with my certificate</p>
+      <p begin="00:24:27.120" end="00:24:32.960">manager app however how do I do this on the phone the certificate app that</p>
+      <p begin="00:24:32.960" end="00:24:37.200">is now available on the windows phone store allows you to do this</p>
+      <p begin="00:24:37.200" end="00:24:41.730">is extremely useful for troubleshooting issues and helps you view personal</p>
+      <p begin="00:24:41.730" end="00:24:46.330">...and intermediate certificates that are installed on your phone and it works both</p>
+      <p begin="00:24:46.330" end="00:24:52.700">with windows phone eight-point one and windows content.</p>
+      <p begin="00:24:52.700" end="00:24:54.990">I was able to connect to wi-fi and was</p>
+      <p begin="00:24:54.990" end="00:25:00.300">productive at work and it was though that time of the your when the</p>
+      <p begin="00:25:00.300" end="00:25:04.460">...great cloudy skies and redman got to me so I took a break and</p>
+      <p begin="00:25:04.460" end="00:25:09.130">hawaii as...was lying down in the be checking my email on my phone I</p>
+      <p begin="00:25:09.130" end="00:25:12.820">noticed a mail that asking me if I wanted to sign up for a</p>
+      <p begin="00:25:12.820" end="00:25:19.000">usability study of poland's I sure wanted-to and immediately click to the link but then I</p>
+      <p begin="00:25:19.000" end="00:25:23.410">thought this is an internet link it's probably not going to work.</p>
+      <p begin="00:25:23.410" end="00:25:27.480">But, it worked and I was able to successfully sign up for this study.</p>
+      <p begin="00:25:27.480" end="00:25:32.000">So, what my admin had done was...configured</p>
+      <p begin="00:25:32.000" end="00:25:37.160">or to connect and always on vp information so the minute I logged on to</p>
+      <p begin="00:25:37.160" end="00:25:41.080">might be laptop or unlock my phone there was a vp and connection may</p>
+      <p begin="00:25:41.080" end="00:25:44.490">to my enterprise and now I had access to all of the</p>
+      <p begin="00:25:44.490" end="00:25:50.670">internet resources just as I had when I was connected to corporate wifi?</p>
+      <p begin="00:25:50.670" end="00:25:53.050">The one difference with the windows always on</p>
+      <p begin="00:25:53.050" end="00:25:58.940">weepy and is that the users can decide to disconnected if they do not want to?</p>
+      <p begin="00:25:58.940" end="00:26:02.590">I closely looked at the car the vp and connections that my admin had</p>
+      <p begin="00:26:02.590" end="00:26:05.730">configured I notice that the at...different</p>
+      <p begin="00:26:05.730" end="00:26:10.170">...connection...was configured in such a way that only traffic from</p>
+      <p begin="00:26:10.170" end="00:26:15.020">...outlook one node and powerpoint could use that connection</p>
+      <p begin="00:26:15.020" end="00:26:19.660">so if I try to connect...over internet explorer it wouldn't use that</p>
+      <p begin="00:26:19.660" end="00:26:24.800">...and connection so what they had effectively done what's isolate</p>
+      <p begin="00:26:24.800" end="00:26:29.610">network traffic from certain enterprise applications over that</p>
+      <p begin="00:26:29.610" end="00:26:34.240">...and connection without me seeing anything any</p>
+      <p begin="00:26:34.240" end="00:26:39.940">I still had a seamless experience without me noticing any of that so with windows</p>
+      <p begin="00:26:39.940" end="00:26:43.910">...you can configure both and always...connect</p>
+      <p begin="00:26:43.910" end="00:26:48.490">bbn aspen is vp and traffic filters through mgm.</p>
+      <p begin="00:26:48.490" end="00:26:52.490">Furthermore the...and platform is completely...and it's</p>
+      <p begin="00:26:52.490" end="00:26:56.450">now open to third-party plugins for more information on windows...</p>
+      <p begin="00:26:56.450" end="00:27:02.830">vp and referenced video session from build is something that I would highly recommend.</p>
+      <p begin="00:27:02.830" end="00:27:07.680">So, we saw how we were able to control my access to both vp and,</p>
+      <p begin="00:27:07.680" end="00:27:12.590">corporate wi-fi based on if I was...with mgm or not but</p>
+      <p begin="00:27:12.590" end="00:27:16.750">wouldn't it be great if you can control access to corporate resources based on the</p>
+      <p begin="00:27:16.750" end="00:27:22.510">compliance state of my device let's say if it was not j broken.</p>
+      <p begin="00:27:22.510" end="00:27:24.450">So, with windows stan.</p>
+      <p begin="00:27:24.450" end="00:27:29.070">Going forward with conditional axis you will be able to control</p>
+      <p begin="00:27:29.070" end="00:27:30.070">access</p>
+      <p begin="00:27:30.070" end="00:27:34.450">to corporate resources based on the compliance state of the device the</p>
+      <p begin="00:27:34.450" end="00:27:39.060">...syllable can calculate...evaluate the compliance state of the device</p>
+      <p begin="00:27:39.060" end="00:27:45.020">based on a set of device attributes one key attribute that we're adding for windows</p>
+      <p begin="00:27:45.020" end="00:27:49.580">ten is the hardware attested device...state.</p>
+      <p begin="00:27:49.580" end="00:27:53.880">Think of this as something similar to j break detection that is available today</p>
+      <p begin="00:27:53.880" end="00:27:58.190">...non windows devices but provable in hardware using the</p>
+      <p begin="00:27:58.190" end="00:28:02.810">...we already have a cloud-based windows held at a</p>
+      <p begin="00:28:02.810" end="00:28:07.250">...service that is up and running for windows...devices to talk to</p>
+      <p begin="00:28:07.250" end="00:28:14.600">anime servers to rely on to know if a devices healthy or not.</p>
+      <p begin="00:28:14.600" end="00:28:16.560">But, windows...</p>
+      <p begin="00:28:16.560" end="00:28:18.690">Users device is going to be kept up to</p>
+      <p begin="00:28:18.690" end="00:28:22.150">date and current but for certain</p>
+      <p begin="00:28:22.150" end="00:28:28.630">enterprise devices you can manage how the devices are updated.</p>
+      <p begin="00:28:28.630" end="00:28:31.570">Just like you could do through group policy you can do this</p>
+      <p begin="00:28:31.570" end="00:28:36.320">through mgm now you can control when I scan and download</p>
+      <p begin="00:28:36.320" end="00:28:41.210">for updates and if I is the user should be notified about restart</p>
+      <p begin="00:28:41.210" end="00:28:46.020">just before dumped update completes you can also or to approve a set</p>
+      <p begin="00:28:46.020" end="00:28:51.020">of updates so that when I install the update I'm not asked to sign up</p>
+      <p begin="00:28:51.020" end="00:28:57.230">...assign on sign-off on the...or I don't see any user intervention at all.</p>
+      <p begin="00:28:57.230" end="00:28:59.610">Online devices that I've enjoyed I'm connected</p>
+      <p begin="00:28:59.610" end="00:29:04.580">to corporate wi-fi most of the time but a lot of the other times I made the connected to home</p>
+      <p begin="00:29:04.580" end="00:29:07.610">wi-fi or I'm on the goal so you can actually</p>
+      <p begin="00:29:07.610" end="00:29:12.240">configure how why install updates from do I hate the microsoft update</p>
+      <p begin="00:29:12.240" end="00:29:16.920">server over internet or do I install from the company update server or do</p>
+      <p begin="00:29:16.920" end="00:29:21.740">you want me to fallback if one is not available are the other?</p>
+      <p begin="00:29:21.740" end="00:29:26.430">We saw about update compliance...resolver compliance...the previous slide and</p>
+      <p begin="00:29:26.430" end="00:29:30.950">one key aspect that you want to use is update compliance.</p>
+      <p begin="00:29:30.950" end="00:29:33.720">Basically what that means is if a devices patched</p>
+      <p begin="00:29:33.720" end="00:29:38.700">...up-to-date with all of the updates that you want...device to be updated with.</p>
+      <p begin="00:29:38.700" end="00:29:43.220">For instance microsoft ensures that all security updates</p>
+      <p begin="00:29:43.220" end="00:29:48.000">been start on my device within seventy two...of release if not the devices</p>
+      <p begin="00:29:48.000" end="00:29:52.030">...non compliant so all of the information that you need to</p>
+      <p begin="00:29:52.030" end="00:29:56.280">make this decision about update compliance will be available through</p>
+      <p begin="00:29:56.280" end="00:30:01.000">mgm you can query which updates for successfully installed you can query which</p>
+      <p begin="00:30:01.000" end="00:30:07.930">of them failed or which of them are just spending a restart to complete installation?</p>
+      <p begin="00:30:07.930" end="00:30:13.110">So, do you see how all of these things so I enjoy my device I had to</p>
+      <p begin="00:30:13.110" end="00:30:16.650">...and igor of...and wi-fi connection certificates</p>
+      <p begin="00:30:16.650" end="00:30:21.120">to authenticate using and managing updates all of these are</p>
+      <p begin="00:30:21.120" end="00:30:24.710">designed to make me more productive but secure</p>
+      <p begin="00:30:24.710" end="00:30:29.210">the device but some of you may want to also make sure</p>
+      <p begin="00:30:29.210" end="00:30:33.730">the enterprise data on the devices secular in addition to the device been</p>
+      <p begin="00:30:33.730" end="00:30:39.570">secure I think of this as putting a log on your front door?</p>
+      <p begin="00:30:39.570" end="00:30:41.800">Vs locking every room in your house when</p>
+      <p begin="00:30:41.800" end="00:30:45.710">...avi so even if the devices compromised my</p>
+      <p begin="00:30:45.710" end="00:30:49.470">co data stay secure.</p>
+      <p begin="00:30:49.470" end="00:30:52.170">Enterprise data protection is a windows</p>
+      <p begin="00:30:52.170" end="00:30:54.970">...operating system feature.</p>
+      <p begin="00:30:54.970" end="00:30:56.340">That...markets</p>
+      <p begin="00:30:56.340" end="00:31:02.100">with personal and what data and keeps the work data secure?</p>
+      <p begin="00:31:02.100" end="00:31:06.340">Management of enterprise data protection is possible.</p>
+      <p begin="00:31:06.340" end="00:31:10.480">Through mgm and you can designate which data should</p>
+      <p begin="00:31:10.480" end="00:31:14.320">be considered as enterprise data that is which of the apps should be</p>
+      <p begin="00:31:14.320" end="00:31:19.310">considered as enterprise apps and how the data can be shared can-you copy</p>
+      <p begin="00:31:19.310" end="00:31:24.040">based content from a work document to a person document or do I have to</p>
+      <p begin="00:31:24.040" end="00:31:26.130">want the user are completely blocked them and</p>
+      <p begin="00:31:26.130" end="00:31:32.780">...doing this all of this can be configured through mgm?</p>
+      <p begin="00:31:32.780" end="00:31:37.300">I is the user over audio warning and still copied content from my work</p>
+      <p begin="00:31:37.300" end="00:31:42.060">...official well-documented facebook you can audit that and generate</p>
+      <p begin="00:31:42.060" end="00:31:47.890">reports of intentional data disclosure talking about apps.</p>
+      <p begin="00:31:47.890" end="00:31:51.850">Enterprise apps in the context of enterprise data protection you</p>
+      <p begin="00:31:51.850" end="00:31:56.200">can write apps that are aware of personal and work data.</p>
+      <p begin="00:31:56.200" end="00:31:59.820">To know more about how you can write enterprise data protection of</p>
+      <p begin="00:31:59.820" end="00:32:01.360">where applications</p>
+      <p begin="00:32:01.360" end="00:32:08.410">...a session tomorrow here at build that would be extremely useful for you.</p>
+      <p begin="00:32:08.410" end="00:32:11.270">So, we saw how my admin was able to</p>
+      <p begin="00:32:11.270" end="00:32:15.840">secular my device and keep my data secure but at the start of the top</p>
+      <p begin="00:32:15.840" end="00:32:18.570">...we said that the responsibility of the</p>
+      <p begin="00:32:18.570" end="00:32:21.720">...to prom and the second thing is that the</p>
+      <p begin="00:32:21.720" end="00:32:26.700">...the admin has to make sure that the users have a great ongoing experience</p>
+      <p begin="00:32:26.700" end="00:32:32.100">so windows stand has features that helps you do this effectively.</p>
+      <p begin="00:32:32.100" end="00:32:36.600">About a month back I lost my phone that was enrolled I looked for</p>
+      <p begin="00:32:36.600" end="00:32:39.960">it everywhere couldn't find anywhere I didn't set hadn't</p>
+      <p begin="00:32:39.960" end="00:32:42.390">...find my phone so I couldn't use that</p>
+      <p begin="00:32:42.390" end="00:32:48.310">to so I called up my ip they were able to remotely</p>
+      <p begin="00:32:48.310" end="00:32:52.480">find the location of my device through mgm.</p>
+      <p begin="00:32:52.480" end="00:32:58.980">Because it was somewhere in my work building I was able to look closer and find it.</p>
+      <p begin="00:32:58.980" end="00:33:03.390">Found that my...was...unfamiliar location they could have completely</p>
+      <p begin="00:33:03.390" end="00:33:08.030">wipe my device to prevent misuse of data.</p>
+      <p begin="00:33:08.030" end="00:33:12.860">This ability to completely vita device is now also available for</p>
+      <p begin="00:33:12.860" end="00:33:18.320">pc's especially for corporate own devices.</p>
+      <p begin="00:33:18.320" end="00:33:22.180">Some of you have the need to prepare devices say for</p>
+      <p begin="00:33:22.180" end="00:33:27.170">your marketing organization...use for...and demos it</p>
+      <p begin="00:33:27.170" end="00:33:32.170">is not guaranteed that the same device will be picked up every time so you</p>
+      <p begin="00:33:32.170" end="00:33:38.340">need to make sure that all of these devices have a familiar ui and consistent.</p>
+      <p begin="00:33:38.340" end="00:33:42.190">We know stent allows you to do this through mgm by manipulating the</p>
+      <p begin="00:33:42.190" end="00:33:44.700">...or changing this...screen the</p>
+      <p begin="00:33:44.700" end="00:33:55.090">start manual and also filtering out which apps can be used versus not.</p>
+      <p begin="00:33:55.090" end="00:33:59.660">Sometime after I enjoyed my phone iphone application called campus</p>
+      <p begin="00:33:59.660" end="00:34:04.230">experience that I had not instagram my admin had</p>
+      <p begin="00:34:04.230" end="00:34:09.660">install the application of my device michaela because they...it would be helpful for</p>
+      <p begin="00:34:09.660" end="00:34:14.170">...was helpful it helped me navigate through the confusing campus and</p>
+      <p begin="00:34:14.170" end="00:34:19.850">...sell applications are really backbone of any device I use one</p>
+      <p begin="00:34:19.850" end="00:34:23.710">node to take notes I use outlook to check my email I use the browser</p>
+      <p begin="00:34:23.710" end="00:34:28.449">app to stay up-to-date with current...with windows stan.</p>
+      <p begin="00:34:28.449" end="00:34:36.070">You can manage different kinds of applications through mgm.</p>
+      <p begin="00:34:36.070" end="00:34:40.170">The first thing to mention is that the app manageability platform for windows</p>
+      <p begin="00:34:40.170" end="00:34:44.600">...is converged across different windows devices and you</p>
+      <p begin="00:34:44.600" end="00:34:49.180">can now install delete update or query</p>
+      <p begin="00:34:49.180" end="00:34:56.280">both enterprise line-of-business applications...store applications through...</p>
+      <p begin="00:34:56.280" end="00:35:01.110">You can also install applications that can be used by multiple users</p>
+      <p begin="00:35:01.110" end="00:35:07.480">on a pc...specifically useful for share device scenarios.</p>
+      <p begin="00:35:07.480" end="00:35:10.130">Talking about site loading side noting is</p>
+      <p begin="00:35:10.130" end="00:35:14.000">the process by which you set up the machine for enterprise lb or</p>
+      <p begin="00:35:14.000" end="00:35:18.540">enterprise a line-of-business application install site loading is converged with</p>
+      <p begin="00:35:18.540" end="00:35:23.370">windows stand across all windows devices and I is the user can</p>
+      <p begin="00:35:23.370" end="00:35:29.660">unlocked the device from the why or you can unlock it through mgm.</p>
+      <p begin="00:35:29.660" end="00:35:34.530">The and the other two other things to note is that there's no limit on how many devices you</p>
+      <p begin="00:35:34.530" end="00:35:38.240">...and there's no requirement of internet in</p>
+      <p begin="00:35:38.240" end="00:35:42.590">terms of signing of the enterprise line-of-business application you can either use a</p>
+      <p begin="00:35:42.590" end="00:35:47.740">semantics certificate or specific enterprise signing certificate.</p>
+      <p begin="00:35:47.740" end="00:35:51.370">We talked about store applications but when thirty-two applications</p>
+      <p begin="00:35:51.370" end="00:35:57.430">are still widely used in pc's or I should say classic windows applications.</p>
+      <p begin="00:35:57.430" end="00:35:59.850">...windows...you can install</p>
+      <p begin="00:35:59.850" end="00:36:06.120">and manage msi based classic windows applications through...</p>
+      <p begin="00:36:06.120" end="00:36:10.370">And, apart from all of this life-cycle management you can also</p>
+      <p begin="00:36:10.370" end="00:36:15.010">set application restrictions to mgm so you can say which applications you want to</p>
+      <p begin="00:36:15.010" end="00:36:16.930">block from launching for the use of</p>
+      <p begin="00:36:16.930" end="00:36:21.270">or you can say which applications only should launch for the user.</p>
+      <p begin="00:36:21.270" end="00:36:22.790">And, this uses the family</p>
+      <p begin="00:36:22.790" end="00:36:28.700">our app locker technology that many of you may be aware of that existed on...</p>
+      <p begin="00:36:28.700" end="00:36:31.970">For a lot of deep information about application management</p>
+      <p begin="00:36:31.970" end="00:36:36.090">and enterprises I would highly recommend the session your by john</p>
+      <p begin="00:36:36.090" end="00:36:42.500">vincent which happens in ignite...here too if you have any questions later today.</p>
+      <p begin="00:36:42.500" end="00:36:47.950">So, the enterprise line-of-business applications are written in-house.</p>
+      <p begin="00:36:47.950" end="00:36:52.190">How do you acquire store applications distributed to your users through</p>
+      <p begin="00:36:52.190" end="00:36:57.080">...the business store allows you to do that for windows stent?</p>
+      <p begin="00:36:57.080" end="00:37:02.180">You can license what free and paid applications in bulk and distributed to</p>
+      <p begin="00:37:02.180" end="00:37:06.490">...either through mgm or instruct the user to</p>
+      <p begin="00:37:06.490" end="00:37:12.070">install it from the store using it...active directory account.</p>
+      <p begin="00:37:12.070" end="00:37:16.890">Let's say that you purchase tend licenses to a particular store application and push down the</p>
+      <p begin="00:37:16.890" end="00:37:18.380">aptly.</p>
+      <p begin="00:37:18.380" end="00:37:22.480">When I leave the company you want to make sure that you reclaim that license from</p>
+      <p begin="00:37:22.480" end="00:37:26.930">me and make it make use of it for someone else?</p>
+      <p begin="00:37:26.930" end="00:37:30.690">So, this license management is possible for windows</p>
+      <p begin="00:37:30.690" end="00:37:35.370">ten through mgm again for more information on</p>
+      <p begin="00:37:35.370" end="00:37:44.490">this specific topic reference session at microsoft ignite is a good resource.</p>
+      <p begin="00:37:44.490" end="00:37:46.440">So, you remember the week that I spend</p>
+      <p begin="00:37:46.440" end="00:37:51.960">...hawaii I decided that I just want to stay back so it's my last day in the company.</p>
+      <p begin="00:37:51.960" end="00:37:56.550">And, you is admins now want to make sure that I know longer have access to any of</p>
+      <p begin="00:37:56.550" end="00:38:01.310">the corporate resources that I had access to when I worked for the company.</p>
+      <p begin="00:38:01.310" end="00:38:03.690">Windows stand makes it easy for a</p>
+      <p begin="00:38:03.690" end="00:38:06.370">...the user or the admin to on android</p>
+      <p begin="00:38:06.370" end="00:38:11.290">for management and on enrollment removes all of the data</p>
+      <p begin="00:38:11.290" end="00:38:15.280">that was provision doing the life-cycle off management</p>
+      <p begin="00:38:15.280" end="00:38:20.160">...policies certificates wi-fi...profiles</p>
+      <p begin="00:38:20.160" end="00:38:25.940">or even applications and application data also the data that was tagged as</p>
+      <p begin="00:38:25.940" end="00:38:30.950">...under enterprise data protection is now completely removed</p>
+      <p begin="00:38:30.950" end="00:38:33.020">on enrollment.</p>
+      <p begin="00:38:33.020" end="00:38:35.910">So, we saw...during my demo that madmen had</p>
+      <p begin="00:38:35.910" end="00:38:39.970">...on enrollment right so in this case the admin will be the one</p>
+      <p begin="00:38:39.970" end="00:38:45.820">who controls when and if they...and they can do this remotely through...</p>
+      <p begin="00:38:45.820" end="00:38:50.540">For personal devices typically the users are allowed to unroll and when they do</p>
+      <p begin="00:38:50.540" end="00:38:54.990">unroll the server gets notified about it?</p>
+      <p begin="00:38:54.990" end="00:38:57.510">And, finally like enrollment</p>
+      <p begin="00:38:57.510" end="00:39:03.840">on enrollment also has a consistent experience across all devices.</p>
+      <p begin="00:39:03.840" end="00:39:05.770">So, those were some of the</p>
+      <p begin="00:39:05.770" end="00:39:09.070">...features that we're adding for windows stand.</p>
+      <p begin="00:39:09.070" end="00:39:13.440">And, I would take a moment to put a huge shout out and</p>
+      <p begin="00:39:13.440" end="00:39:17.020">a big-time q to all of our mgm server partners that we</p>
+      <p begin="00:39:17.020" end="00:39:29.020">are partnering width to make windows stand management extremely easy for you.</p>
+      <p begin="00:39:29.020" end="00:39:30.970">And, some next steps.</p>
+      <p begin="00:39:30.970" end="00:39:33.930">Please do download the windows insider preview</p>
+      <p begin="00:39:33.930" end="00:39:38.960">...and evaluate windows stand for your business talk to</p>
+      <p begin="00:39:38.960" end="00:39:44.810">...vendor to see which of these features you can test right now.</p>
+      <p begin="00:39:44.810" end="00:39:46.960">This is the right time for you to start thinking</p>
+      <p begin="00:39:46.960" end="00:39:51.400">about your enterprise application needs and start developing them.</p>
+      <p begin="00:39:51.400" end="00:39:56.380">And, finally please do let...your comments and feedback either rightnow person</p>
+      <p begin="00:39:56.380" end="00:40:02.430">right now in person are you can also use the windows user why sporty for the same.</p>
+      <p begin="00:40:02.430" end="00:40:04.840">Some resources for-you for both sessions</p>
+      <p begin="00:40:04.840" end="00:40:08.850">here and sessions at ignite next week.</p>
+      <p begin="00:40:08.850" end="00:40:13.830">These are all relevant sessions to enterprise that I think will be useful for you to look at</p>
+      <p begin="00:40:13.830" end="00:40:18.820">and are windows stand mgm documentation is available live on msdn</p>
+      <p begin="00:40:18.820" end="00:40:22.950">rightnow this contains all information about the protocols</p>
+      <p begin="00:40:22.950" end="00:40:27.420">configuration service providers that I was talking about the policies all</p>
+      <p begin="00:40:27.420" end="00:40:32.210">...and we are keeping it updated as and then we add new features to the upcoming</p>
+      <p begin="00:40:32.210" end="00:40:35.110">flights?</p>
+      <p begin="00:40:35.110" end="00:40:39.840">And, finally humble request to share your feedback about the session let us know</p>
+      <p begin="00:40:39.840" end="00:40:45.220">if it was useful and what else you would like to your...future sessions?</p>
+      <p begin="00:40:45.220" end="00:40:49.400">Thank you and I'll take some questions now and if in order to get to any of</p>
+      <p begin="00:40:49.400" end="00:40:54.360">the questions because it's the end of the day I will be...windows insider lounge</p>
+      <p begin="00:40:54.360" end="00:41:15.940">the second-floor tomorrow at eleven thirty...drop...you have any questions then to.</p>
+      <p begin="00:41:15.940" end="00:41:26.510">...a degrees.</p>
+      <p begin="00:41:54.320" end="00:42:02.180">So, is a question that can I push apps through the company, company help?</p>
+      <p begin="00:42:20.910" end="00:42:24.500">Yeah, so, domain join devices you can definitely</p>
+      <p begin="00:42:24.500" end="00:42:29.130">...them into...into any mgm so you can and role within mgm</p>
+      <p begin="00:42:29.130" end="00:42:46.690">you get the company portal and you can install...through that if you don't want to use sec and.</p>
+      <p begin="00:42:46.690" end="00:43:00.170">Any other questions.</p>
+      <p begin="00:43:00.170" end="00:43:04.150">That's a very interesting question I mean the question is currently unique only one user</p>
+      <p begin="00:43:04.150" end="00:43:07.570">can cel enrolling to mgm is their plan to support multiple</p>
+      <p begin="00:43:07.570" end="00:43:12.800">users enrolling so one of the things that I mean I didn't have enough time to cover but the whole</p>
+      <p begin="00:43:12.800" end="00:43:17.540">when I joined my device to agile active directory and I said that was the device</p>
+      <p begin="00:43:17.540" end="00:43:22.700">was automatically enrolled that is actually the device getting android so any</p>
+      <p begin="00:43:22.700" end="00:43:27.690">...active directory user that I log...width to that particular device is</p>
+      <p begin="00:43:27.690" end="00:43:31.310">...so...itself is managed so</p>
+      <p begin="00:43:31.310" end="00:43:35.920">that is really a powerful thing because for scenarios where you have you</p>
+      <p begin="00:43:35.920" end="00:43:40.790">need you need multiple users to be manage its typically in a corporate on device</p>
+      <p begin="00:43:40.790" end="00:43:45.340">you can actually managed to device and have every user on that logged in for by</p>
+      <p begin="00:43:45.340" end="00:43:47.950">already case we still think we still have a</p>
+      <p begin="00:43:47.950" end="00:43:51.060">...the limitation that you can have only one user and...</p>
+      <p begin="00:43:51.060" end="00:43:55.810">but that's because that's a typical scenario so it's my personal device and I'm the divine the user</p>
+      <p begin="00:43:55.810" end="00:43:59.810">...enrolling?</p>
+      <p begin="00:43:59.810" end="00:44:17.810">...here does if you have any app questions the deeper questions...</p>
+      <p begin="00:44:17.810" end="00:44:21.240">In that case so the question is if I have a desktop that's</p>
+      <p begin="00:44:21.240" end="00:44:26.060">...domain joiner have multiple users and I setter user level group policy what will</p>
+      <p begin="00:44:26.060" end="00:44:30.040">happen so the policy will apply only to that user so we have a concept</p>
+      <p begin="00:44:30.040" end="00:44:34.980">...device policy...a use...policy and that applies to all configurations like you</p>
+      <p begin="00:44:34.980" end="00:44:39.180">can actually have a vp and profile that is applicable to all users are only a particular</p>
+      <p begin="00:44:39.180" end="00:45:01.860">user and if it's configured as a user policy it only applies to that particular</p>
+      <p begin="00:45:01.860" end="00:45:06.730">if you think of a device like say let's say it's...adjective directly manage device I</p>
+      <p begin="00:45:06.730" end="00:45:10.180">have to users user one user to on it right so I</p>
+      <p begin="00:45:10.180" end="00:45:14.930">login as user one and if a policies applied for user one when I am logged in</p>
+      <p begin="00:45:14.930" end="00:45:19.550">ask that user that policy will applied but if let's say five login as user</p>
+      <p begin="00:45:19.550" end="00:45:24.680">to that user did not get the use...policy let's take the disable camera...easy if the</p>
+      <p begin="00:45:24.680" end="00:45:29.080">cameras disabled it will be disable for user one but it will not be for user</p>
+      <p begin="00:45:29.080" end="00:45:35.350">to but in a typical co-owner device scenario I think usually they want to</p>
+      <p begin="00:45:35.350" end="00:45:38.050">make sure...policies apply to all of the device</p>
+      <p begin="00:45:38.050" end="00:45:42.640">all the whole device and for all the users on that device so this we think is not a</p>
+      <p begin="00:45:42.640" end="00:45:46.460">common scenario but if you think that...there's there is something that you are</p>
+      <p begin="00:45:46.460" end="00:45:53.970">this is something that you use would love to hear about that one make sure that we get the feedback.</p>
+      <p begin="00:45:53.970" end="00:45:54.780">Check moi.</p>
+      <p begin="00:46:06.530" end="00:46:10.410">Excellent question we've done a lot of work for that the question is when you have a windows,</p>
+      <p begin="00:46:10.410" end="00:46:15.150">windows phone water woodwork the same so we have a windows, windows phone device that's</p>
+      <p begin="00:46:15.150" end="00:46:20.280">already...mgm...great windows stent what happens</p>
+      <p begin="00:46:20.280" end="00:46:24.490">the enrollment will be migrated and you will still be able to continue talking to</p>
+      <p begin="00:46:24.490" end="00:46:28.920">...server this is a critical scenario for us because the whole way that</p>
+      <p begin="00:46:28.920" end="00:46:47.980">the your update windows...going to be an upgrade...so we...make sure that this continues to work.</p>
+      <p begin="00:47:19.630" end="00:47:23.160">...see asking if all of this mgm will work without introducing domain</p>
+      <p begin="00:47:23.160" end="00:47:25.780">...group policy yes so this is</p>
+      <p begin="00:47:25.780" end="00:47:28.440">you can completely manager devices using</p>
+      <p begin="00:47:28.440" end="00:47:33.260">...without actually domain joining the device and like I said</p>
+      <p begin="00:47:33.260" end="00:47:38.240">...is becoming important because you still have now corporate devices that are hardly connected</p>
+      <p begin="00:47:38.240" end="00:47:41.330">to corporate network and which may not be able to domain join</p>
+      <p begin="00:47:41.330" end="00:47:54.530">...yes you can continue to manage using ambient without requiring domain...group?</p>
+      <p begin="00:48:02.920" end="00:48:05.790">And, also.</p>
+      <p begin="00:48:05.790" end="00:48:08.390">Is it possible...to?</p>
+      <p begin="00:48:08.390" end="00:48:16.990">Use the same...</p>
+      <p begin="00:48:16.990" end="00:48:21.700">Right and I would highly recommend tomorrow session because saw that's going to be very useful for</p>
+      <p begin="00:48:21.700" end="00:48:25.580">you so enterprise data protection and the question is like how do I is</p>
+      <p begin="00:48:25.580" end="00:48:28.790">it only the data or is it the apps also that's enterprise and</p>
+      <p begin="00:48:28.790" end="00:48:33.660">work for enterprise and personal and can a particular app operating both</p>
+      <p begin="00:48:33.660" end="00:48:37.220">...yes it council what typically happens is through the</p>
+      <p begin="00:48:37.220" end="00:48:42.410">mgm you can actually say this app is completely enterprise or if it's not specify the</p>
+      <p begin="00:48:42.410" end="00:48:46.060">can be completely personal but there are certain apps that</p>
+      <p begin="00:48:46.060" end="00:48:50.590">we call enlightened apps that can operate in both of these small it's like we are</p>
+      <p begin="00:48:50.590" end="00:48:54.680">...working on our...the office and all of that which is...be one of the critical</p>
+      <p begin="00:48:54.680" end="00:48:59.440">things and you can write applications that actually have this and enlightenment</p>
+      <p begin="00:48:59.440" end="00:49:05.520">so-you can we have different scenarios whereyou copy from a site that's mocked</p>
+      <p begin="00:49:05.520" end="00:49:08.010">...enterprise than that data when it comes on your device</p>
+      <p begin="00:49:08.010" end="00:49:12.240">it's going to be treated enterprise or when you generate data on your device that's the</p>
+      <p begin="00:49:12.240" end="00:49:17.390">most challenging part if it's generated from enterprise application it's all these enterprise but</p>
+      <p begin="00:49:17.390" end="00:49:21.360">...generated from and enlightened app I think there's, there's that there's a choice of the</p>
+      <p begin="00:49:21.360" end="00:49:26.130">...say but there is also another different way that you can say you can actually marked that</p>
+      <p begin="00:49:26.130" end="00:49:28.670">data as enterprise versus not so yes</p>
+      <p begin="00:49:28.670" end="00:49:33.010">...it is a critical it's something that we need for making sure that, you know,</p>
+      <p begin="00:49:33.010" end="00:49:38.420">we don't have...kind of completely labeled as enterprise...work so...the middle</p>
+      <p begin="00:49:38.420" end="00:49:44.830">...apps are something that's that will be...</p>
+      <p begin="00:49:44.830" end="00:49:49.370">So, I think it's tomorrow at eightthree thirty and it scarred</p>
+      <p begin="00:49:49.370" end="00:50:00.860">...building enterprise data protection aware applications.</p>
+      <p begin="00:50:19.050" end="00:50:21.810">So, those some of those skew decisions are still go</p>
+      <p begin="00:50:21.810" end="00:50:25.800">I'm going on right now so we don't have the complete information</p>
+      <p begin="00:50:25.800" end="00:50:32.880">right now on what's going to be supported where...that information will come so.</p>
+      <p begin="00:50:32.880" end="00:50:33.880">Any other questions.</p>
+      <p begin="00:50:35.060" end="00:50:56.150">Sure, go ahead.</p>
+      <p begin="00:50:56.150" end="00:51:00.450">Unknown so they will have to authorize that so think of...similar to a</p>
+      <p begin="00:51:00.450" end="00:51:05.020">smart card certificate if you've seen or which...smart card that if you use that so when you</p>
+      <p begin="00:51:05.020" end="00:51:17.010">install the certificate into your microsoft passport the user has to authorize that?</p>
+      <p begin="00:51:17.010" end="00:51:22.000">Any other final questions if not, you know, feel...drop a drop...law, you know,</p>
+      <p begin="00:51:22.000" end="00:51:27.250">if you have any questions...question through twitter...you can find...tomorrow on inside a</p>
+      <p begin="00:51:27.250" end="00:51:28.320">Great.</p>
+      <p begin="00:51:28.320" end="00:51:29.790">Thank everyone so you.</p>
+
+    </div>
+  </body>
+</tt>

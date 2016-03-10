@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.933</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:07.899" end="00:00:08.639">All rights.</p>
+      <p begin="00:00:09.709" end="00:00:12.569">Keep on coming in.</p>
+      <p begin="00:00:12.569" end="00:00:18.239">Thanks-a-lotwelcome the san francisco in our build conference my name's ed</p>
+      <p begin="00:00:18.239" end="00:00:22.589">...I'm a product manager at microsoft for visual studio online</p>
+      <p begin="00:00:22.589" end="00:00:25.039">a lm in our dev ops family...</p>
+      <p begin="00:00:26.169" end="00:00:30.859">in here I'm really glad you could join us I'm actually really excited so this is</p>
+      <p begin="00:00:30.859" end="00:00:35.389">the first alam and dev obsession for the conference so we're going to go through a</p>
+      <p begin="00:00:35.389" end="00:00:40.739">...set of what we're doing and I have a lot of great announcements to let-you know</p>
+      <p begin="00:00:40.739" end="00:00:44.129">about...I'm really actually excited more about showing you all the</p>
+      <p begin="00:00:44.129" end="00:00:49.580">great work that the team is put together to show you today so to get...started and,</p>
+      <p begin="00:00:49.580" end="00:00:54.390">just want to set a little bit of a context as we've gone through the first decade of</p>
+      <p begin="00:00:54.390" end="00:00:59.250">agile what we've really noticed is that we've gotten development teams to get really,</p>
+      <p begin="00:00:59.250" end="00:01:02.540">really efficient at creating software.</p>
+      <p begin="00:01:02.540" end="00:01:05.940">The other thing we saw in the first decade of agile is</p>
+      <p begin="00:01:05.940" end="00:01:10.810">...to distinct life cycles we've got the application development lifecycle and</p>
+      <p begin="00:01:10.810" end="00:01:13.340">the operations lifecycle and they were they</p>
+      <p begin="00:01:13.340" end="00:01:18.250">were very different and now as we move into the second decade of agile</p>
+      <p begin="00:01:18.250" end="00:01:21.920">were noticing is that there's a convergence of those</p>
+      <p begin="00:01:21.920" end="00:01:26.330">two like a life cycles in the one lifecycle which is dev...</p>
+      <p begin="00:01:26.330" end="00:01:29.450">So, today we're going to talk about how do we use dev ops practices</p>
+      <p begin="00:01:30.550" end="00:01:36.430">...as a strategic driver toward business agility.</p>
+      <p begin="00:01:36.430" end="00:01:41.340">Now there's no question doing business is really tough today and we've talked to lots</p>
+      <p begin="00:01:41.340" end="00:01:47.800">of customers across lots of different industries and...three main things that keep coming up.</p>
+      <p begin="00:01:47.800" end="00:01:52.390">Basis is getting faster every day and markets can turn on</p>
+      <p begin="00:01:52.390" end="00:01:57.280">...on a dime and competition is getting stronger as well</p>
+      <p begin="00:01:57.280" end="00:02:00.390">so today's edge that you build becomes tomorrow's mainstream.</p>
+      <p begin="00:02:01.580" end="00:02:05.790">Now the need to go from idea to reality</p>
+      <p begin="00:02:05.790" end="00:02:10.410">erratically shorten timeframe is really putting huge pressure on development teams to deliver more</p>
+      <p begin="00:02:10.410" end="00:02:10.910">quickly.</p>
+      <p begin="00:02:11.930" end="00:02:16.670">And, since every company is a software company those that can deliver software</p>
+      <p begin="00:02:16.670" end="00:02:23.370">more quickly and better high-quality are going to be the ones that end up surviving.</p>
+      <p begin="00:02:23.370" end="00:02:28.370">how is it the some companies like netflix...and...</p>
+      <p begin="00:02:28.370" end="00:02:31.710">And, facebook regularly deliver new features</p>
+      <p begin="00:02:31.710" end="00:02:36.750">...new value their customers well there's other organizations that wait</p>
+      <p begin="00:02:36.750" end="00:02:41.780">weeks and months to deploy those new features so what we end up seeing</p>
+      <p begin="00:02:41.780" end="00:02:46.620">is frustration and all sides so if you think about business and are consumers</p>
+      <p begin="00:02:46.620" end="00:02:51.920">in titty they're really frustrated because they see a lack of collaboration between the development team</p>
+      <p begin="00:02:51.920" end="00:02:53.970">...the operations team?</p>
+      <p begin="00:02:53.970" end="00:02:58.650">Now that just increases time...delay and labor involved</p>
+      <p begin="00:02:58.650" end="00:03:05.070">in actually delivering and maintaining software which isn't a good thing in a world where we actually have to be quicker.</p>
+      <p begin="00:03:05.070" end="00:03:06.530">Now once you add to that</p>
+      <p begin="00:03:06.530" end="00:03:13.060">the problem that much of what we build is based on assumptions instead of our data.</p>
+      <p begin="00:03:13.060" end="00:03:15.560">And, you can see how this easily lead</p>
+      <p begin="00:03:15.560" end="00:03:18.550">...team to end up building the wrong thing.</p>
+      <p begin="00:03:18.550" end="00:03:22.720">As...now the inability of delivering software</p>
+      <p begin="00:03:22.720" end="00:03:27.630">efficiently and react quickly to changes in the market lead to much more than</p>
+      <p begin="00:03:27.630" end="00:03:34.020">just frustration and the long-run this can end up threatening your business now.</p>
+      <p begin="00:03:34.020" end="00:03:37.230">In the real-world they're and they're real consequences if</p>
+      <p begin="00:03:37.230" end="00:03:40.420">you're enable deliver software quickly and efficiently so,</p>
+      <p begin="00:03:40.420" end="00:03:43.430">for example, forty percent of implementations that we</p>
+      <p begin="00:03:43.430" end="00:03:48.290">end of seeing end up failing and have to be reworked because they don't end up meeting users</p>
+      <p begin="00:03:48.290" end="00:03:53.400">original requirements now when you add to that go there we</p>
+      <p begin="00:03:53.400" end="00:03:58.210">go it's really expensive whenever there's downtime are latest estimates about</p>
+      <p begin="00:03:58.210" end="00:04:02.940">one hundred thousand dollars for customer-facing apps for every hour that it's down</p>
+      <p begin="00:04:02.940" end="00:04:06.950">in production and then if you also peer that with how long it</p>
+      <p begin="00:04:06.950" end="00:04:11.560">takes actually fix those problems about two hundred minutes are over two hours?</p>
+      <p begin="00:04:11.560" end="00:04:14.210">Becomes really expensive.</p>
+      <p begin="00:04:14.210" end="00:04:17.160">Now one good thing that we've been seeing is that we've seen</p>
+      <p begin="00:04:17.160" end="00:04:21.270">three-quarters of development teams actually adopting agile methodology</p>
+      <p begin="00:04:21.270" end="00:04:25.850">is that's a great thing especially in twenty fifteen but.</p>
+      <p begin="00:04:25.850" end="00:04:29.230">It doesn't help of a development team is agile.</p>
+      <p begin="00:04:29.230" end="00:04:33.950">But, deployment still takes weeks and months because the...ops team is perceived</p>
+      <p begin="00:04:33.950" end="00:04:41.080">as not being agile now these are just three very-high-level examples of many.</p>
+      <p begin="00:04:41.080" end="00:04:43.790">...of the many data points that all point towards</p>
+      <p begin="00:04:43.790" end="00:04:48.700">the same conclusion and this is more than just about frustration or minor delays</p>
+      <p begin="00:04:48.700" end="00:04:53.290">when you have a lack of collaboration between your development team and operation seem</p>
+      <p begin="00:04:53.290" end="00:04:57.360">...of having a substantial impact on your business let me tell you a little bit</p>
+      <p begin="00:04:57.360" end="00:05:02.390">about our journey in developer divisions so I'm sure,</p>
+      <p begin="00:05:02.390" end="00:05:06.420">you know, the developers in the audience of have seen the visual studio releases</p>
+      <p begin="00:05:06.420" end="00:05:11.520">for many years they used to be every about three years and we had to switch to</p>
+      <p begin="00:05:11.520" end="00:05:16.940">become a lot more quick so we used to have these milestone base releases so, you know,</p>
+      <p begin="00:05:16.940" end="00:05:20.520">beta are crt m and they're just really,</p>
+      <p begin="00:05:20.520" end="00:05:24.370">really long now before I joined microsoft I was a microsoft and vp</p>
+      <p begin="00:05:24.370" end="00:05:29.530">...for many years and I got really good at figuring out windy give feedback to the</p>
+      <p begin="00:05:29.530" end="00:05:35.220">pm so, they can take advantage of the feedback and pivot but,</p>
+      <p begin="00:05:35.220" end="00:05:39.080">when I joined microsoft in engineering?</p>
+      <p begin="00:05:39.080" end="00:05:40.030">As a pm</p>
+      <p begin="00:05:40.030" end="00:05:45.360">remember very well wind up having conversations and depending where those conversations we're having,</p>
+      <p begin="00:05:45.360" end="00:05:48.850">for example, I had one that was at the end of our release cycle towards our</p>
+      <p begin="00:05:48.850" end="00:05:53.380">...is really good feedback from the customer but I couldn't take it I</p>
+      <p begin="00:05:53.380" end="00:05:58.200">had to basically tell them well that's really good feedback but I might be able to get to in</p>
+      <p begin="00:05:58.200" end="00:06:04.410">about three years and that's just absurd so what we've</p>
+      <p begin="00:06:04.410" end="00:06:07.970">Is our organization is actually move to a three-week</p>
+      <p begin="00:06:07.970" end="00:06:12.600">release cadence not only for visual studio online which is our cloud-based service but</p>
+      <p begin="00:06:12.600" end="00:06:18.110">also you get ctp builds of a visual studio every three weeks now...potentially</p>
+      <p begin="00:06:18.110" end="00:06:22.930">separable increments now all of them go out but most of them do and we were able to get feedback a</p>
+      <p begin="00:06:22.930" end="00:06:26.250">lot more quickly and for us the key to success was</p>
+      <p begin="00:06:26.250" end="00:06:31.390">that close collaboration between development and operations we have to be one team?</p>
+      <p begin="00:06:31.390" end="00:06:34.000">So, if you're interested in more about our particular</p>
+      <p begin="00:06:34.000" end="00:06:39.710">...you can go to stories that visual studio dot com to get more details.</p>
+      <p begin="00:06:39.710" end="00:06:44.370">But, based on what we've learned what we've seen in teams in the industry that</p>
+      <p begin="00:06:44.370" end="00:06:48.180">converge step...lifecycle gives you the ability to execute on ideas</p>
+      <p begin="00:06:48.180" end="00:06:54.240">quickly iterate on feedback rapidly so you're building the right products now develops</p>
+      <p begin="00:06:54.240" end="00:06:58.540">practices emphasize three main things you may have heard of this systems thinking</p>
+      <p begin="00:06:59.760" end="00:07:03.930">breaking down of silos and collaboration inflow value note</p>
+      <p begin="00:07:03.930" end="00:07:08.830">develops is not so much about tools it's really round people first.</p>
+      <p begin="00:07:08.830" end="00:07:13.260">And, then process second and the tools are just there to help you facilitate the</p>
+      <p begin="00:07:13.260" end="00:07:18.800">cultural and process changes that you need to make...microsoft the develops investments were making</p>
+      <p begin="00:07:18.800" end="00:07:23.430">...of visual studio visual studio online team foundation server</p>
+      <p begin="00:07:23.430" end="00:07:26.420">and as a reflect on our focus on</p>
+      <p begin="00:07:26.420" end="00:07:31.400">enabling and empowering teams everywhere to get great software and the hands</p>
+      <p begin="00:07:31.400" end="00:07:36.380">of your customers now let's take a look at some of the work that we're doing today so I'm going to</p>
+      <p begin="00:07:36.380" end="00:07:42.410">go to very-high-level we get a lot of great break out sessions coming in so,</p>
+      <p begin="00:07:42.410" end="00:07:46.420">you can get into it deeper but I'm going to give you a whole bunch of stuff right now so</p>
+      <p begin="00:07:46.420" end="00:07:50.350">we'll start with the left side of the cycle which is around plan.</p>
+      <p begin="00:07:50.350" end="00:07:55.300">really plan is all about how to turn your idea into reality in a</p>
+      <p begin="00:07:55.300" end="00:07:58.150">...world is all about hypothesis driven</p>
+      <p begin="00:07:58.150" end="00:08:01.740">in creating experiments so we're building tools to help you</p>
+      <p begin="00:08:01.740" end="00:08:09.870">out with that so let me show you a few things that we've been working on so let me switch over here.</p>
+      <p begin="00:08:09.870" end="00:08:15.270">Okay, the first thing I want to show you is our number-one requested feature</p>
+      <p begin="00:08:15.270" end="00:08:20.060">for many years I remember as an dpi I needed this one as well.</p>
+      <p begin="00:08:20.060" end="00:08:25.550">So, what you can do now some ago the admin portal many</p>
+      <p begin="00:08:25.550" end="00:08:30.500">go to the collection admin view and I can take any one of our team projects and guess what you</p>
+      <p begin="00:08:30.500" end="00:08:34.520">can do today rename?</p>
+      <p begin="00:08:37.490" end="00:08:40.630">It took us a little while they do that but it's there now</p>
+      <p begin="00:08:40.630" end="00:08:46.250">and we've got a much better architecture now after this so this is really</p>
+      <p begin="00:08:46.250" end="00:08:51.260">been great so just a little while ago I don't know-how many how many of you voted</p>
+      <p begin="00:08:51.260" end="00:08:56.840">on in the room but we had over six thousand votes we just flipped it over from plan</p>
+      <p begin="00:08:56.840" end="00:09:00.780">say completed so we shipped out the team foundation server twenty fifteen rc</p>
+      <p begin="00:09:00.780" end="00:09:02.100">...available in visual</p>
+      <p begin="00:09:02.100" end="00:09:08.040">...online as well so I just I bring this up because.</p>
+      <p begin="00:09:08.040" end="00:09:12.460">User voice is actually a really good way to get feedback from your customers we use it</p>
+      <p begin="00:09:12.460" end="00:09:17.440">as well but as we've as we use it I'm going to go into</p>
+      <p begin="00:09:17.440" end="00:09:22.310">our admin experience here user voice happens to have been one of our partners</p>
+      <p begin="00:09:22.310" end="00:09:27.070">...been taken advantage of our extensibility platforms so we've had an open</p>
+      <p begin="00:09:27.070" end="00:09:31.580">alam extensibility platform for visual see online for a while that revolves around</p>
+      <p begin="00:09:31.580" end="00:09:36.530">three main web standard kind of extensibility points which are rest api</p>
+      <p begin="00:09:36.530" end="00:09:42.660">service...and...user voice happens to be one of those so you can see right in here this is the admin</p>
+      <p begin="00:09:42.660" end="00:09:46.680">experiences are visual studio user voice account that's connected to</p>
+      <p begin="00:09:46.680" end="00:09:49.970">our visual see online account you can just link-up user voices</p>
+      <p begin="00:09:49.970" end="00:09:54.870">build some really nice stuff but one thing that they haven't been able to do is something I'm</p>
+      <p begin="00:09:54.870" end="00:09:56.740">...today.</p>
+      <p begin="00:09:56.740" end="00:10:00.490">So, if I hop over here.</p>
+      <p begin="00:10:00.490" end="00:10:02.120">I now have the ability.</p>
+      <p begin="00:10:03.270" end="00:10:08.530">To install visual...online extensions now what is that</p>
+      <p begin="00:10:08.530" end="00:10:12.820">that's what we're announcing today it's basically a way for partners and</p>
+      <p begin="00:10:12.820" end="00:10:17.660">customers to be able to create their own extensions and install them</p>
+      <p begin="00:10:17.660" end="00:10:22.880">into their account and then now start to have ui extensibility so you can</p>
+      <p begin="00:10:22.880" end="00:10:27.790">...yourself right into our ui our partners...and other services are able to</p>
+      <p begin="00:10:27.790" end="00:10:33.550">...they're, they're abilities into our ui now and they show you one of them</p>
+      <p begin="00:10:33.550" end="00:10:37.570">we were able to give our in vp early access you see right here I've got a</p>
+      <p begin="00:10:37.570" end="00:10:41.200">new team calendars based on some collaboration we did with one of those</p>
+      <p begin="00:10:41.200" end="00:10:46.890">...vp so, it's that pull this up really quickly every</p>
+      <p begin="00:10:46.890" end="00:10:52.070">go so what's the nice thing about extensions is that you can load your own extensions</p>
+      <p begin="00:10:52.070" end="00:10:57.790">are get them from partners but this particular one is a ui that's just being drawn and,</p>
+      <p begin="00:10:57.790" end="00:11:01.770">then is pulling data from via so you'll see we've got</p>
+      <p begin="00:11:01.770" end="00:11:05.000">our sprint data here I've got you know,</p>
+      <p begin="00:11:05.000" end="00:11:09.640">personal days off those are coming from our capacity management system as well as</p>
+      <p begin="00:11:09.640" end="00:11:14.280">team days off but I can also add custom data so in this particular one</p>
+      <p begin="00:11:14.280" end="00:11:18.600">...build twenty fifteen we'll make this an events?</p>
+      <p begin="00:11:20.060" end="00:11:25.160">...go so this is custom data from the extension as well</p>
+      <p begin="00:11:25.160" end="00:11:30.080">as our data from via so-and-so now in addition the rest api is in-service folks and o</p>
+      <p begin="00:11:30.080" end="00:11:34.810">off...able now to extend in build your own ui inside of our</p>
+      <p begin="00:11:34.810" end="00:11:39.980">ui and make it really part of the experience so really glad to announce ...visual</p>
+      <p begin="00:11:39.980" end="00:11:45.440">...online extensions today we're going to see a whole lot of great stuff we lots of great</p>
+      <p begin="00:11:45.440" end="00:11:50.340">examples hopefully you'll go out and build your own as well but some of the other...presented</p>
+      <p begin="00:11:50.340" end="00:11:54.790">...creating things like branch visualizations they were able to customize the cards on the</p>
+      <p begin="00:11:54.790" end="00:12:00.640">task boards and...really cool and around...ability of work items and start</p>
+      <p begin="00:12:00.640" end="00:12:05.840">to diagram those even our partner each dev has a baseline a solution so we're</p>
+      <p begin="00:12:05.840" end="00:12:10.750">going to see a whole bunch of these extensions come out now that they're available and we're all going to be</p>
+      <p begin="00:12:10.750" end="00:12:16.650">better for it...one other thing I wanted to show you is a lot of the work that are</p>
+      <p begin="00:12:16.650" end="00:12:22.650">teams have been doing around helping you with implementing agile and can</p>
+      <p begin="00:12:22.650" end="00:12:25.830">...practices so what...</p>
+      <p begin="00:12:25.830" end="00:12:28.090">Me hop back over there.</p>
+      <p begin="00:12:28.090" end="00:12:30.690">So, you're not familiar with got a task</p>
+      <p begin="00:12:30.690" end="00:12:35.470">board and also can been board we've done a lot of really good work here so the first thing you'll</p>
+      <p begin="00:12:35.470" end="00:12:39.420">notice is we've really ramped up the look and feel we made</p>
+      <p begin="00:12:39.420" end="00:12:44.720">it a lot lighter it's a lot more usable in their we've done things like being able</p>
+      <p begin="00:12:44.720" end="00:12:48.250">...inline add new items right from the can</p>
+      <p begin="00:12:48.250" end="00:12:52.840">been board I can edit certain field so I can edit the</p>
+      <p begin="00:12:52.840" end="00:12:57.710">assigned to or the efforts right from there I can also start to</p>
+      <p begin="00:12:57.710" end="00:13:02.420">show additional field so this is something that's brand-new for example,</p>
+      <p begin="00:13:02.420" end="00:13:07.410">bugs I might want to know what their severity and priorities are so we can add any fields that you want on</p>
+      <p begin="00:13:07.410" end="00:13:09.620">there you can customize those.</p>
+      <p begin="00:13:09.620" end="00:13:15.140">Also we've started the pop the avatars for the different team members on your</p>
+      <p begin="00:13:15.140" end="00:13:18.040">team...putting those of their and then also I don't know</p>
+      <p begin="00:13:18.040" end="00:13:22.440">...notices you see how we have several different columns here get new approved</p>
+      <p begin="00:13:22.440" end="00:13:24.590">spec in progress.</p>
+      <p begin="00:13:24.590" end="00:13:26.730">In done well...</p>
+      <p begin="00:13:26.730" end="00:13:31.910">in progress we've actually put split columns so if you're familiar with can band there's</p>
+      <p begin="00:13:31.910" end="00:13:37.500">this notion that teams pool from the stage before</p>
+      <p begin="00:13:37.500" end="00:13:41.890">it can process so we wanted to be able to help you easily distinguish</p>
+      <p begin="00:13:41.890" end="00:13:46.410">this so if you think about devon qa...to know what from dev is ready to</p>
+      <p begin="00:13:46.410" end="00:13:51.780">pool and then when they're ready to pull the pull it over so you can go and you'll notice that the</p>
+      <p begin="00:13:51.780" end="00:13:56.670">done column is what the next team needs to poole from so you can implement can</p>
+      <p begin="00:13:56.670" end="00:14:01.180">...practices that way and also we've got some little things so, for example,</p>
+      <p begin="00:14:01.180" end="00:14:05.610">like definition of done all of these are customizable</p>
+      <p begin="00:14:05.610" end="00:14:11.070">by each teams so each team can define their own sets of definition of</p>
+      <p begin="00:14:11.070" end="00:14:17.310">done for each of the columns in there and you notice we got mark down support so you can get pretty rich</p>
+      <p begin="00:14:17.310" end="00:14:22.590">Now one thing we've been doing a lot of the customization that has been done</p>
+      <p begin="00:14:22.590" end="00:14:27.450">has been done at the process temple level so that means your organization your division</p>
+      <p begin="00:14:27.450" end="00:14:32.720">defines most of the customization that happens in here we've changed our</p>
+      <p begin="00:14:32.720" end="00:14:36.200">mind set on this and that we want to empower individual teams to work</p>
+      <p begin="00:14:36.200" end="00:14:40.790">with the way that they want to instill have guard rails in place for divisional level sets</p>
+      <p begin="00:14:40.790" end="00:14:45.740">a processes so what you're seeing now is we're putting a lot of configuration down at the</p>
+      <p begin="00:14:45.740" end="00:14:51.700">team level so in this particular one you'll notice we can customize the columns so</p>
+      <p begin="00:14:51.700" end="00:14:56.630">every teams allowed to make their own columns move them around define, you know,</p>
+      <p begin="00:14:56.630" end="00:15:01.890">definitions of done whether that's a split column if you're</p>
+      <p begin="00:15:01.890" end="00:15:04.800">using work-in-progress limits you can also do that from can</p>
+      <p begin="00:15:04.800" end="00:15:10.070">...the other part is we can also customize each of the cards so you</p>
+      <p begin="00:15:10.070" end="00:15:14.100">by work item you'll notice I can go in for the bug actually put</p>
+      <p begin="00:15:14.100" end="00:15:17.430">severity and activity on there and show tags you can customize</p>
+      <p begin="00:15:17.430" end="00:15:22.570">...the arts content and you won't be messing up some other team as they go and track their works</p>
+      <p begin="00:15:22.570" end="00:15:27.370">...giving a lot of these kinds of settings another one of those</p>
+      <p begin="00:15:27.370" end="00:15:32.720">sets of team settings that a lot of people like to do differently I</p>
+      <p begin="00:15:32.720" end="00:15:37.490">...when I was process consultant is everyone likes to handle</p>
+      <p begin="00:15:37.490" end="00:15:41.620">their bugs a little bit differently so we're allowing every</p>
+      <p begin="00:15:41.620" end="00:15:46.760">team to define the way that they actually manage bugs whether...treated as pbr's or</p>
+      <p begin="00:15:46.760" end="00:15:50.260">...treated as tasks on the task</p>
+      <p begin="00:15:50.260" end="00:15:54.740">...so we give you a lot of flexibility we're going to just keep continuing in doing that</p>
+      <p begin="00:15:54.740" end="00:16:01.420">for you so, they every team is empowered to do what they need to do?</p>
+      <p begin="00:16:01.420" end="00:16:08.270">Let's switch back over here.</p>
+      <p begin="00:16:08.270" end="00:16:09.800">Ok, so, once we have</p>
+      <p begin="00:16:09.800" end="00:16:15.050">been planning we move into our next phase which is really around letting developers</p>
+      <p begin="00:16:15.050" end="00:16:18.810">and testers do what they do best which is creating software so once</p>
+      <p begin="00:16:18.810" end="00:16:23.760">...iterations of started you want you developers to be able to take those great ideas internal</p>
+      <p begin="00:16:23.760" end="00:16:28.340">...features so there's lots of different activities here around writing code unit testing</p>
+      <p begin="00:16:28.340" end="00:16:32.390">relates around developing quickly and then being really</p>
+      <p begin="00:16:33.690" end="00:16:47.810">keeping that quality level really high so let me show you some of the things that we've been doing in this particular space.</p>
+      <p begin="00:16:47.810" end="00:16:51.590">First thing I'm going to show you is I've got this my...</p>
+      <p begin="00:16:51.590" end="00:16:56.580">applications just a typical enterprise application with...back-end and there's several...so, for example,</p>
+      <p begin="00:16:56.580" end="00:17:01.660">reasons ameri and we've got an ios in android project in windows</p>
+      <p begin="00:17:01.660" end="00:17:07.270">...windows phone app here ...universal...now.</p>
+      <p begin="00:17:07.270" end="00:17:12.800">let me show you a little bit about what we're doing here so one thing that we want to do is we want</p>
+      <p begin="00:17:12.800" end="00:17:17.830">to make sure the developers are able to collaborate a lot better so especially</p>
+      <p begin="00:17:17.830" end="00:17:22.820">as the code base starts to get a lot larger so one of the very common things they end up happening</p>
+      <p begin="00:17:22.820" end="00:17:27.560">is that you as a developer you get something assigned to you have to starts belonging to the code</p>
+      <p begin="00:17:27.560" end="00:17:33.470">...figure out what's going on now how many folks are familiar with our code</p>
+      <p begin="00:17:33.470" end="00:17:36.480">...feature that's available visual seo great</p>
+      <p begin="00:17:36.480" end="00:17:41.230">...so we've got...today we've added of a few new changes in their,</p>
+      <p begin="00:17:41.230" end="00:17:46.220">for example, you know, as I pull up the changes view I start to see</p>
+      <p begin="00:17:46.220" end="00:17:52.010">who's been contributing to this method or this class at whatever level you want</p>
+      <p begin="00:17:52.010" end="00:17:54.850">to go across the many days I can see how many merges of</p>
+      <p begin="00:17:54.850" end="00:17:58.750">commonplace but what this is really nice to do is be able to say hey</p>
+      <p begin="00:17:58.750" end="00:18:02.790">who's that subject matter expert who understands this particular classroom method</p>
+      <p begin="00:18:02.790" end="00:18:08.650">...so you can start to go bother them and their problems and their code so but we've got lots of other</p>
+      <p begin="00:18:08.650" end="00:18:13.480">indicators search start to come in we give you this heads up display so one of the things I wanted</p>
+      <p begin="00:18:13.480" end="00:18:17.790">to mention was that for the longest time-code lens in visual</p>
+      <p begin="00:18:17.790" end="00:18:23.160">...online was one of the very top request that we've gotten so today we're marking</p>
+      <p begin="00:18:23.160" end="00:18:28.330">our general availability of code lens inside...visual...online so one more thing I</p>
+      <p begin="00:18:28.330" end="00:18:31.900">want to make sure they...now is that we...make sure that all of your</p>
+      <p begin="00:18:31.900" end="00:18:36.950">developers have access to it so we've also...lens in visual</p>
+      <p begin="00:18:36.950" end="00:18:41.210">...online are sorry envisaged two-twenty fifteen to be available now</p>
+      <p begin="00:18:41.210" end="00:18:46.990">in visual studio professional...above so...</p>
+      <p begin="00:18:46.990" end="00:18:49.340">As...really hard to do.</p>
+      <p begin="00:18:49.340" end="00:18:53.170">But, I'm glad you like that so,</p>
+      <p begin="00:18:53.170" end="00:18:57.030">now colons is available is really going to help you start to collaborate better across</p>
+      <p begin="00:18:57.030" end="00:19:01.960">or team so it's a big reason why should upgrade visual...fifteen now.</p>
+      <p begin="00:19:01.960" end="00:19:06.100">Not only is collaboration important but also keeping quality</p>
+      <p begin="00:19:06.100" end="00:19:11.940">up so...really, really key thing so automated units has are actually</p>
+      <p begin="00:19:11.940" end="00:19:16.080">your first-line of defense to be able to keep quality especially as you start to</p>
+      <p begin="00:19:16.080" end="00:19:20.180">ship software more quickly with the last thing you really want to do is actually</p>
+      <p begin="00:19:20.180" end="00:19:26.310">shipped bugs more quickly to production so we don't want to do that so, one thing we're</p>
+      <p begin="00:19:26.310" end="00:19:32.280">...visual...twenty fifteen is our new and telecast feature and,...</p>
+      <p begin="00:19:32.280" end="00:19:37.260">click run...here and what it's doing is starting to discover</p>
+      <p begin="00:19:37.260" end="00:19:42.250">all the different ways that a particular method is being called</p>
+      <p begin="00:19:42.250" end="00:19:47.170">now we can talk about code coverage encode coverage just goes in says hr</p>
+      <p begin="00:19:47.170" end="00:19:52.420">my set of tests actually covering the lines of code that are in my application but actually</p>
+      <p begin="00:19:52.420" end="00:19:58.060">getting high code coverage is not going to be sufficient enough because how many times you have</p>
+      <p begin="00:19:58.060" end="00:20:02.980">an if statement and if statement might go and different methods or, you know, every line actually</p>
+      <p begin="00:20:02.980" end="00:20:07.640">could start to go lots of different pass especially as you start to look at the methods that are underneath it</p>
+      <p begin="00:20:07.640" end="00:20:13.110">...is all sorts of things that happen there so really what you...to do is you want to have the minimal amount of unit</p>
+      <p begin="00:20:13.110" end="00:20:19.270">tests that actually cover all the bounds and all the what we call arcs in</p>
+      <p begin="00:20:19.270" end="00:20:24.520">the logic of your application so within tele...we will discover the minimal set of</p>
+      <p begin="00:20:24.520" end="00:20:27.710">test so, for example,...pass in null for the employee</p>
+      <p begin="00:20:27.710" end="00:20:34.270">...the employee class or I might go in and say three sixty and then...</p>
+      <p begin="00:20:34.270" end="00:20:38.930">a complex types...actually start to figure out what are all the combinations that we need to do their</p>
+      <p begin="00:20:38.930" end="00:20:43.400">and now instead of just having height code coverage you're now going to start to have</p>
+      <p begin="00:20:43.400" end="00:20:48.890">...are coverage because at any point in time?</p>
+      <p begin="00:20:48.890" end="00:20:52.330">Save that set of unit test...it's going to create a whole unit test project</p>
+      <p begin="00:20:52.330" end="00:20:56.430">for you and that set of tests ...have a great</p>
+      <p begin="00:20:56.430" end="00:21:00.370">our coverage from that so this is really going to help developers</p>
+      <p begin="00:21:00.370" end="00:21:04.480">starts to get a great sweetie of automated</p>
+      <p begin="00:21:04.480" end="00:21:10.550">tests just to get started with anyone like that...error rate.</p>
+      <p begin="00:21:10.550" end="00:21:14.690">Yeah, it's a great set of stuff and telecast intel tests</p>
+      <p begin="00:21:14.690" end="00:21:19.640">is now available in visual see twenty fifteen...to kick the tires in the release candidate</p>
+      <p begin="00:21:19.640" end="00:21:28.250">so give that attract now let me pop this open here.</p>
+      <p begin="00:21:28.250" end="00:21:34.060">Now the other thing you need to do in order to keep quality up is not only have</p>
+      <p begin="00:21:34.060" end="00:21:38.180">a set of automation but a lot of times you just need to get another set of humanized</p>
+      <p begin="00:21:38.180" end="00:21:40.910">...additional set of humanized on the code that</p>
+      <p begin="00:21:40.910" end="00:21:44.080">...introducing a production so we do that through</p>
+      <p begin="00:21:44.080" end="00:21:48.830">...reviews whether that's through code reviews are...requests so we have a very rich</p>
+      <p begin="00:21:48.830" end="00:21:52.610">pull request system inside...visual...online when you're</p>
+      <p begin="00:21:52.610" end="00:21:56.850">using get or code reviews if you're using team foundation version control but,</p>
+      <p begin="00:21:56.850" end="00:22:00.800">you'll notice interpol request system you're able to see all the poor</p>
+      <p begin="00:22:00.800" end="00:22:07.510">...are coming in I have one assigned here for me and pull it up from sachin?</p>
+      <p begin="00:22:07.510" end="00:22:11.690">All right cool okay so let's take a look at is progress.</p>
+      <p begin="00:22:11.690" end="00:22:12.690">I looks like he has</p>
+      <p begin="00:22:12.690" end="00:22:17.520">...topic branch here and, he's merging a master so actually probably should make sure that</p>
+      <p begin="00:22:17.520" end="00:22:22.780">his code is pretty good you'll notice we've got several different files that are part of this</p>
+      <p begin="00:22:22.780" end="00:22:28.240">poor request there's a discussion going on here that will come back to if I</p>
+      <p begin="00:22:28.240" end="00:22:33.520">go over the code you'll see there's a couple of commits happening here all right that's cool</p>
+      <p begin="00:22:33.520" end="00:22:35.000">...a new line</p>
+      <p begin="00:22:35.000" end="00:22:39.250">their new file is a bunch of changes in here so...to take a look at that</p>
+      <p begin="00:22:39.250" end="00:22:44.090">...also can keep track of what work items so what bugs are tasks are being implemented in this</p>
+      <p begin="00:22:44.090" end="00:22:48.640">pull requests if we want to go take a look at the requirements or details about those we can go do that</p>
+      <p begin="00:22:48.640" end="00:22:51.640">as well better come back to the discussion you'll notice</p>
+      <p begin="00:22:51.640" end="00:22:57.310">a couple different things are checking to make sure there's no merge conflicts if...end up being any</p>
+      <p begin="00:22:57.310" end="00:23:01.960">will keep track of multiple commits but you'll notice we have a discussion going on here</p>
+      <p begin="00:23:01.960" end="00:23:06.530">...odb ranking take a look at the fair calculation logic michael said it looked</p>
+      <p begin="00:23:06.530" end="00:23:14.990">okay photo michael said in do that too okay I think this looks okay so?</p>
+      <p begin="00:23:14.990" end="00:23:16.780">Looks like...</p>
+      <p begin="00:23:16.780" end="00:23:22.850">rate logic okay I'll add that in there.</p>
+      <p begin="00:23:22.850" end="00:23:26.820">And, these are just inline discussions that are happening into the line of code and then we can</p>
+      <p begin="00:23:26.820" end="00:23:31.040">mark each of these threads is being done or not so over time we can actually keep</p>
+      <p begin="00:23:31.040" end="00:23:34.750">track of all the information that were gathering for this but you imagine if you're</p>
+      <p begin="00:23:34.750" end="00:23:39.240">...regulated industry all this great information that you can set your auditors in front of</p>
+      <p begin="00:23:39.240" end="00:23:42.080">...a lot of really good stuff but we can also</p>
+      <p begin="00:23:42.080" end="00:23:46.830">track responses for teams with the reviewer so I can assign a</p>
+      <p begin="00:23:46.830" end="00:23:52.300">...request to the whole team and anyone can pick up and start to review from it or</p>
+      <p begin="00:23:52.300" end="00:23:56.510">consented to specific people so I'm actually</p>
+      <p begin="00:23:56.510" end="00:24:00.780">okay with this change semitic go in I could I could set rejected or waiting for</p>
+      <p begin="00:24:00.780" end="00:24:04.810">...those are always fun when we do that internally but,</p>
+      <p begin="00:24:04.810" end="00:24:10.230">I'm going to say it's approved approved with suggestions and you'll notice I</p>
+      <p begin="00:24:10.230" end="00:24:16.720">...it's now saying that it's ready to go let me the target</p>
+      <p begin="00:24:16.720" end="00:24:22.960">branches updated so let's track...conflicts...not going to be</p>
+      <p begin="00:24:22.960" end="00:24:28.000">able to push that one so that's okay I could just as soon as someone approves it</p>
+      <p begin="00:24:28.000" end="00:24:32.730">is long as there's no like denys we can go in and complete that poor question it will go</p>
+      <p begin="00:24:32.730" end="00:24:37.550">...behind-the-scenes for us so it's a really awesome...system and,</p>
+      <p begin="00:24:37.550" end="00:24:40.760">we're really happy about doing that so that's</p>
+      <p begin="00:24:40.760" end="00:24:45.120">one another way of wvu being able to increase the quality of the code that you're pushing</p>
+      <p begin="00:24:45.120" end="00:24:51.460">through to production now another thing that we have.</p>
+      <p begin="00:24:51.460" end="00:24:56.090">Is how many folks are familiar with sonar cube, yeah,</p>
+      <p begin="00:24:56.090" end="00:25:01.090">right so sonar...is actually really popular solution</p>
+      <p begin="00:25:01.090" end="00:25:05.440">in the dropper world and really it's all around have managing your</p>
+      <p begin="00:25:05.440" end="00:25:10.350">technical debt now technical that all is a set of problems...end up impeding</p>
+      <p begin="00:25:10.350" end="00:25:15.020">forward progress in your ability just to continually put new value to customers</p>
+      <p begin="00:25:15.020" end="00:25:21.640">so that's everything from like code issues in bugs and all sorts of stuff ...</p>
+      <p begin="00:25:21.640" end="00:25:26.590">really you want to be paying that debt off over time you don't want to let it start to snowball because eventually</p>
+      <p begin="00:25:26.590" end="00:25:31.430">you'll end up spending fifty percent of your time on just managing the technical</p>
+      <p begin="00:25:31.430" end="00:25:36.020">...you have so what we've done is we partnered with sonar</p>
+      <p begin="00:25:36.020" end="00:25:37.870">source who's the creator center</p>
+      <p begin="00:25:37.870" end="00:25:42.890">...to actually integrate this is part of the build process for both</p>
+      <p begin="00:25:42.890" end="00:25:48.440">team foundation server visual stew online and the other thing that's really nice is java developers of</p>
+      <p begin="00:25:48.440" end="00:25:51.620">love sonar sort or sonar q for a while?</p>
+      <p begin="00:25:51.620" end="00:25:55.050">Now dot net developers have access to sonar...soon...</p>
+      <p begin="00:25:55.050" end="00:26:01.250">cubes so we're going to now I'm going to show you have got I've got a csharp project in</p>
+      <p begin="00:26:01.250" end="00:26:06.590">here we're starting to get things like lines of code files functions if I</p>
+      <p begin="00:26:06.590" end="00:26:09.060">sort of pop in here I am also</p>
+      <p begin="00:26:09.060" end="00:26:13.920">noticing that I have lots of different issues and if I open up one of these issues</p>
+      <p begin="00:26:13.920" end="00:26:19.000">are actually tell me where in the code that is finding those issues and we can keep track of these</p>
+      <p begin="00:26:19.000" end="00:26:23.590">...the really important things that you want to do is keep track from build...build</p>
+      <p begin="00:26:23.590" end="00:26:28.620">whether creating you debt are paying that debt off so you can do that with sonar</p>
+      <p begin="00:26:28.620" end="00:26:34.040">...today now if you're not familiar with kind of where this...within the overall</p>
+      <p begin="00:26:34.040" end="00:26:38.050">lifecycle you actually do this type of analysis after</p>
+      <p begin="00:26:38.050" end="00:26:42.540">the compiles stage so you turbine areas it goes through and</p>
+      <p begin="00:26:42.540" end="00:26:47.070">...to do this analysis so that's part of the build process forty</p>
+      <p begin="00:26:47.070" end="00:26:51.890">so I'm really happy to have sonar center cube integration now with visual</p>
+      <p begin="00:26:51.890" end="00:26:56.420">...online and team foundation server...is alleviate...here I think you might be up</p>
+      <p begin="00:26:56.420" end="00:27:01.160">at the booth but olivier is the ceo of sonar source and he's here at the</p>
+      <p begin="00:27:01.160" end="00:27:05.690">bil conferences so-if you have any questions you-can come see...up at the visual...online</p>
+      <p begin="00:27:05.690" end="00:27:12.330">booth so all right now the other thing I wanted to talk about is</p>
+      <p begin="00:27:12.330" end="00:27:15.610">our new next generation build system.</p>
+      <p begin="00:27:15.610" end="00:27:21.080">we got into build if you're familiar with our...system...always had a really great</p>
+      <p begin="00:27:21.080" end="00:27:25.590">...system but one thing that we couldn't do was very</p>
+      <p begin="00:27:25.590" end="00:27:30.840">easily was actually compile other types of applications so what I wanted to start</p>
+      <p begin="00:27:30.840" end="00:27:37.050">out with is that we've built a brand new build system and we've</p>
+      <p begin="00:27:37.050" end="00:27:41.960">open-source the agent and the tasks.</p>
+      <p begin="00:27:41.960" end="00:27:46.850">And, I'll show you with us tasks look like in a second but these are all node js space these are</p>
+      <p begin="00:27:46.850" end="00:27:51.130">open-source we wanted to facilitateecosystem and</p>
+      <p begin="00:27:51.130" end="00:27:55.650">have everyone contribute the best build tasks out there in build on top of</p>
+      <p begin="00:27:55.650" end="00:28:00.540">ours in contribute more so the everyone takes advantage of that so those are right up there</p>
+      <p begin="00:28:00.540" end="00:28:06.560">on get have right now and then if I show you are new system?</p>
+      <p begin="00:28:06.560" end="00:28:12.040">All right let's pool this one up now edits.</p>
+      <p begin="00:28:12.040" end="00:28:15.900">The one big thing is now instead of editing your build definitions</p>
+      <p begin="00:28:15.900" end="00:28:18.320">and customizing them in a windows workload</p>
+      <p begin="00:28:18.320" end="00:28:23.210">file we now have that experience up in the web and it's a whole lot easier now to do so,</p>
+      <p begin="00:28:23.210" end="00:28:27.580">for example, is just task base so you say hey this particular</p>
+      <p begin="00:28:27.580" end="00:28:31.440">...is going to go in and build visual studio it'll build my android</p>
+      <p begin="00:28:31.440" end="00:28:37.290">out my ios app zooming components etc and all it is a set</p>
+      <p begin="00:28:37.290" end="00:28:41.790">of build steps so these are those node dspace tasks that run on our</p>
+      <p begin="00:28:41.790" end="00:28:44.760">...js based build agent that can</p>
+      <p begin="00:28:44.760" end="00:28:50.600">then run on windows on linux on...else no</p>
+      <p begin="00:28:50.600" end="00:28:55.820">...will or runs so it's a great new addition to our new generate</p>
+      <p begin="00:28:55.820" end="00:29:00.260">our new build system we've got lots of great stuff to get started great all</p>
+      <p begin="00:29:00.260" end="00:29:06.310">you've got ants you can run x code...all of these and we've got lots of</p>
+      <p begin="00:29:06.310" end="00:29:11.650">different other activities that you can do and I'll talk a little bit about those in a second?</p>
+      <p begin="00:29:11.650" end="00:29:17.160">But, if I go in and I show you a couple of things you'll notice we can</p>
+      <p begin="00:29:17.160" end="00:29:20.410">also decide where our repository is</p>
+      <p begin="00:29:20.410" end="00:29:25.670">so if you're hosting your visual...your...get repo inside</p>
+      <p begin="00:29:25.670" end="00:29:30.460">...visual seo online we can take advantage of that obviously but</p>
+      <p begin="00:29:30.460" end="00:29:35.210">if you're hosting your get repo in another provider like get hub or</p>
+      <p begin="00:29:35.210" end="00:29:38.970">...some other provider you can actually use are build system</p>
+      <p begin="00:29:38.970" end="00:29:45.540">with those providers as well so we're able to do that today too couple of other things,</p>
+      <p begin="00:29:45.540" end="00:29:50.850">things like...can...variables throughout the build tasks that you have going on inside of</p>
+      <p begin="00:29:50.850" end="00:29:55.620">your build process triggers things like continuous...integration if you want to build every</p>
+      <p begin="00:29:55.620" end="00:30:00.390">...we can schedule those so hey I might want to do a nightly build.</p>
+      <p begin="00:30:00.390" end="00:30:03.930">The other thing is if you're if you've been with the</p>
+      <p begin="00:30:03.930" end="00:30:07.270">...build system for a while I know that I used to be a bil guy myself</p>
+      <p begin="00:30:07.270" end="00:30:12.000">and my team we also get used to get really frustrated about this but now we have the ability of</p>
+      <p begin="00:30:12.000" end="00:30:17.140">actually tracking configuration changes to the to your builds so</p>
+      <p begin="00:30:17.140" end="00:30:21.220">we'll keep track of every single one of those and we can also</p>
+      <p begin="00:30:21.220" end="00:30:26.560">...those so we used to like to play who messed up the build process and,</p>
+      <p begin="00:30:26.560" end="00:30:31.590">that was that was awful but, now we're able to do that today so,</p>
+      <p begin="00:30:31.590" end="00:30:37.530">the new...simulate you keep track of all those.</p>
+      <p begin="00:30:37.530" end="00:30:38.760">Okay,</p>
+      <p begin="00:30:38.760" end="00:30:44.050">now last thing I want to do and...kill that one.</p>
+      <p begin="00:30:44.050" end="00:30:47.640">I'm actually going to q a build in this is going to be my ios</p>
+      <p begin="00:30:47.640" end="00:30:55.940">...from that my subtle application and...I think we're good here.</p>
+      <p begin="00:30:55.940" end="00:31:01.090">Let's see so what I'm doing here is I'm actually yet there</p>
+      <p begin="00:31:01.090" end="00:31:05.690">...eight so I'm actually compiling running tests on</p>
+      <p begin="00:31:05.690" end="00:31:10.930">my ios application and this is are no js agent happens to be running on a</p>
+      <p begin="00:31:10.930" end="00:31:16.110">mac and you can bring your own build server or you can whether that's</p>
+      <p begin="00:31:16.110" end="00:31:19.590">...premises or in the cloud or you can use our build</p>
+      <p begin="00:31:19.590" end="00:31:23.010">servers in this particular case I brought my own mac</p>
+      <p begin="00:31:23.010" end="00:31:28.430">...a cloud dot com is a service that you can run max and I</p>
+      <p begin="00:31:28.430" end="00:31:33.570">...agent on there and I just ran and ran have my build</p>
+      <p begin="00:31:33.570" end="00:31:38.430">for my ios application and then at the end of that all those binary skit</p>
+      <p begin="00:31:38.430" end="00:31:41.210">ship back to visual...online and we can we hold your</p>
+      <p begin="00:31:41.210" end="00:31:45.550">...folders you can get to at any time so</p>
+      <p begin="00:31:45.550" end="00:31:50.290">...really nice thing is we won't hide your logs everyone...don't hide my</p>
+      <p begin="00:31:50.290" end="00:31:54.730">logs so we're now giving you live logs that are coming from those build agents and then</p>
+      <p begin="00:31:54.730" end="00:31:57.400">we'll capture those for you to investigate a little bit</p>
+      <p begin="00:31:57.400" end="00:32:02.260">later so it's great stuff we even parallelize things if you want to debugging</p>
+      <p begin="00:32:02.260" end="00:32:07.540">...build will actually do those in parallel a lot of really good stuff in our new build system</p>
+      <p begin="00:32:07.540" end="00:32:14.250">so feel free to take advantage of that will be shipping that very soon for everyone and,</p>
+      <p begin="00:32:14.250" end="00:32:20.350">then now also be and team foundation server twenty...really good...there?</p>
+      <p begin="00:32:20.350" end="00:32:29.770">All right let me switch back over here.</p>
+      <p begin="00:32:29.770" end="00:32:30.980">Right.</p>
+      <p begin="00:32:30.980" end="00:32:35.610">Now that we've gotten our...process done we now have a set of a binary</p>
+      <p begin="00:32:35.610" end="00:32:39.010">...so what we need to do is we actually need to get to production at</p>
+      <p begin="00:32:39.010" end="00:32:43.310">this point but there's usually a few steps to get their...they have to go to devin</p>
+      <p begin="00:32:43.310" end="00:32:48.000">qa pre production and you at and all sorts of other</p>
+      <p begin="00:32:48.000" end="00:32:53.260">environment's and if we're going to speedup...</p>
+      <p begin="00:32:53.260" end="00:32:58.400">that feedback cycle we need to be able to ship a lot more quickly so with this phase</p>
+      <p begin="00:32:58.400" end="00:33:03.160">what we're really trying to do is take all the manual steps out of out of what your...</p>
+      <p begin="00:33:03.160" end="00:33:08.060">release processes and automate those and model those in a way that makes sense</p>
+      <p begin="00:33:08.060" end="00:33:20.300">to your organization so let me show you a little bit of what we're doing here to be able to do that.</p>
+      <p begin="00:33:20.300" end="00:33:21.760">Yes,...that page.</p>
+      <p begin="00:33:23.130" end="00:33:25.690">All right.</p>
+      <p begin="00:33:25.690" end="00:33:28.880">Now first thing we want to do is there's</p>
+      <p begin="00:33:28.880" end="00:33:33.050">...set of tests that they end up running so it's not just automated test but you may end up having</p>
+      <p begin="00:33:33.050" end="00:33:38.030">other build verification tests functional test those kinds of things so, one</p>
+      <p begin="00:33:38.030" end="00:33:43.610">...that we wanted to be able to do is make sure that your developers and testers are able</p>
+      <p begin="00:33:43.610" end="00:33:49.060">to get access to what's happening in the system so if I come over here.</p>
+      <p begin="00:33:49.060" end="00:33:53.090">And, open up one of our builds here it looks like it's failing and,</p>
+      <p begin="00:33:53.090" end="00:33:56.760">we've always been able to capture the actual</p>
+      <p begin="00:33:56.760" end="00:34:01.630">...results of those automated tests so you can hear you splint you can start to look at,</p>
+      <p begin="00:34:01.630" end="00:34:06.110">you know, there's lots of errors in of different tests that are going on but we</p>
+      <p begin="00:34:06.110" end="00:34:10.560">needed to give you a better experience here so if I come up top here we have a</p>
+      <p begin="00:34:10.560" end="00:34:15.240">new test results analyzer that we brought from microsoft</p>
+      <p begin="00:34:15.240" end="00:34:20.600">...manager moved into the web in given you a new web experience</p>
+      <p begin="00:34:20.600" end="00:34:25.420">and now we're able to start to give you a good view of what's happening in</p>
+      <p begin="00:34:25.420" end="00:34:27.110">those test runs now this just</p>
+      <p begin="00:34:27.110" end="00:34:31.590">happens to be a set of automated test but if you are also using exploratory tester</p>
+      <p begin="00:34:31.590" end="00:34:37.040">manual tests any of any the tests that we allow including you can turn your</p>
+      <p begin="00:34:37.040" end="00:34:41.940">j unit test results into test results...get...we're going to aggregate all those</p>
+      <p begin="00:34:41.940" end="00:34:46.700">for you...give you some really good information so you notice I have thirty automated</p>
+      <p begin="00:34:46.700" end="00:34:52.180">test in this particular test run in ten of them look like they're failing and, I can see</p>
+      <p begin="00:34:52.180" end="00:34:57.150">will...by priorities so how many are passing failing by the priority so your ptwo</p>
+      <p begin="00:34:57.150" end="00:34:58.980">...usually has more in</p>
+      <p begin="00:34:58.980" end="00:35:03.420">...kelso track to see and let your tester start to identify the</p>
+      <p begin="00:35:03.420" end="00:35:08.140">failures so in this case we don't need to know...failure take for all of them</p>
+      <p begin="00:35:08.140" end="00:35:12.660">except for these failed ones so we can start to do.</p>
+      <p begin="00:35:12.660" end="00:35:16.680">So, I can come over to the individual test results themselves and let's see if I</p>
+      <p begin="00:35:16.680" end="00:35:21.050">can find on-the-field...do this one.</p>
+      <p begin="00:35:21.050" end="00:35:24.720">All right so we start to get information here this one just happens to</p>
+      <p begin="00:35:24.720" end="00:35:27.940">be really simple test but if you are doing a manual test in the</p>
+      <p begin="00:35:27.940" end="00:35:32.950">test-market failed you can get the recordings of the video logs screen</p>
+      <p begin="00:35:32.950" end="00:35:37.650">shards tele trace browsers all sorts of stuff that will show here and,</p>
+      <p begin="00:35:37.650" end="00:35:41.040">then you can go in and create a bug in it...create a really nice</p>
+      <p begin="00:35:41.040" end="00:35:45.870">...bug with all that data and it ties back to the test results</p>
+      <p begin="00:35:45.870" end="00:35:50.740">are itself here so you get a lot of really good trace ability but I can also after</p>
+      <p begin="00:35:51.910" end="00:35:55.280">...your tester can go in and say hey, yeah, this is regression or to new</p>
+      <p begin="00:35:55.280" end="00:36:02.720">issue we can keep marking those so that when we go back to.</p>
+      <p begin="00:36:02.720" end="00:36:07.190">...see here we go back to here will update that</p>
+      <p begin="00:36:07.190" end="00:36:11.560">...for view so that you can start to see for that particular test</p>
+      <p begin="00:36:11.560" end="00:36:14.940">...what were all the different failure types so we'll whole</p>
+      <p begin="00:36:14.940" end="00:36:22.330">lot better test result experience here so...stuff there.</p>
+      <p begin="00:36:22.330" end="00:36:26.770">Now the other thing that we're doing is based on our based</p>
+      <p begin="00:36:26.770" end="00:36:31.360">on our acquisition of any release which is release management technology we</p>
+      <p begin="00:36:31.360" end="00:36:36.110">spend some time actually moving that experience up into the web and actually making...lot better</p>
+      <p begin="00:36:36.110" end="00:36:43.190">so I'm happy to show you for the first-time our new release management experience.</p>
+      <p begin="00:36:43.190" end="00:36:46.810">So, this is built on top of the build system</p>
+      <p begin="00:36:46.810" end="00:36:50.670">it uses the same exact agents so those are all...dsp base</p>
+      <p begin="00:36:50.670" end="00:36:54.430">...dspace agents they also use the same task infrastructure</p>
+      <p begin="00:36:55.470" end="00:36:59.750">so now we're able to start to model what are released pipeline</p>
+      <p begin="00:36:59.750" end="00:37:04.810">looks like so you can start to create stages that the end up matching your environment's</p>
+      <p begin="00:37:04.810" end="00:37:09.330">we're going to give you a really good view about where releases...different points in time so,</p>
+      <p begin="00:37:09.330" end="00:37:11.560">for example, in this particular one you</p>
+      <p begin="00:37:11.560" end="00:37:16.860">...crm release I can see like what build is actually in the</p>
+      <p begin="00:37:16.860" end="00:37:21.520">dev environment right now and I can see that's been passing for some time so that's a really good thing so</p>
+      <p begin="00:37:21.520" end="00:37:26.090">the two-point-zero builds in dev I've got the one-point-seven building qa and</p>
+      <p begin="00:37:26.090" end="00:37:30.330">...one-point-five...serum but we're going to give you a whole lot better information</p>
+      <p begin="00:37:30.330" end="00:37:35.670">...here now the one thing that we should go and take a look at is I'm going</p>
+      <p begin="00:37:35.670" end="00:37:43.040">to go and take a look at some of the releases that is that...happens.</p>
+      <p begin="00:37:43.040" end="00:37:48.570">Yeah, I haven't done any today so let's bring that up there we go let's go back</p>
+      <p begin="00:37:48.570" end="00:37:53.850">to the one-point-five release we can start to actually get really good data about what</p>
+      <p begin="00:37:53.850" end="00:37:56.780">happen with this release so you say hey when did</p>
+      <p begin="00:37:56.780" end="00:38:02.280">...go out it went to mon actually we were pretty good about sipping that very quickly.</p>
+      <p begin="00:38:02.280" end="00:38:05.340">You see some activity the artifacts this happens to use a very</p>
+      <p begin="00:38:05.340" end="00:38:10.240">specific build or builds from your system we also get the logs so</p>
+      <p begin="00:38:10.240" end="00:38:15.220">for every single one of the activities that we end up defining which I'll show you in a second we can start to check</p>
+      <p begin="00:38:15.220" end="00:38:19.600">...happened there we can get to the raw logs that are from there so we're getting a</p>
+      <p begin="00:38:19.600" end="00:38:24.130">...a lot of great information for you to be able to look back on and especially for</p>
+      <p begin="00:38:24.130" end="00:38:29.360">those of you that are and regulated industries you're going to want to show your auditors these kinds</p>
+      <p begin="00:38:29.360" end="00:38:34.680">of things so now let's take a look at actually editing what</p>
+      <p begin="00:38:34.680" end="00:38:38.620">...release pipeline looks like so if you'll</p>
+      <p begin="00:38:38.620" end="00:38:45.000">many pool this right here?</p>
+      <p begin="00:38:45.000" end="00:38:49.580">See that were getting cut off a little bit there you go so now I can start to define</p>
+      <p begin="00:38:49.580" end="00:38:53.800">the different stages and then what happens inside those stages so, for example,</p>
+      <p begin="00:38:53.800" end="00:38:56.440">in the dev environment I can start to run our shell</p>
+      <p begin="00:38:56.440" end="00:39:01.790">and different machines I can just do a whole lot of different things inside of here including,</p>
+      <p begin="00:39:01.790" end="00:39:05.860">you know, running a set of selenium testify one-two</p>
+      <p begin="00:39:05.860" end="00:39:08.040">...cloud-based</p>
+      <p begin="00:39:08.040" end="00:39:12.260">...tests in that environment to make sure it's okay</p>
+      <p begin="00:39:12.260" end="00:39:16.590">I can do a lot of different things and I can define what we do in each of those</p>
+      <p begin="00:39:16.590" end="00:39:21.410">environment's is really easy to add additional tasks just like our build system we can</p>
+      <p begin="00:39:21.410" end="00:39:26.110">pull from that same task library in these are going to be deployment specific tasks that you do in</p>
+      <p begin="00:39:26.110" end="00:39:29.670">there so imagine I can...as your I can</p>
+      <p begin="00:39:29.670" end="00:39:33.490">deploy to darker containers I can run a chef deployment I</p>
+      <p begin="00:39:33.490" end="00:39:39.090">can do all sorts of different things that happen a maps each of those environments that you have?</p>
+      <p begin="00:39:39.090" end="00:39:44.110">Now it's really easy each of those has their own configuration options I can also go</p>
+      <p begin="00:39:44.110" end="00:39:47.860">in add new environment so if I want to add...</p>
+      <p begin="00:39:47.860" end="00:39:50.070">And, then move that environment up</p>
+      <p begin="00:39:50.070" end="00:39:54.950">...is many stages...as I want into this process and we</p>
+      <p begin="00:39:54.950" end="00:39:59.140">should know also in that world we may not have builds going all the</p>
+      <p begin="00:39:59.140" end="00:40:04.160">way through so we want to catch failures before they move on to the next phase so we'll be able to</p>
+      <p begin="00:40:04.160" end="00:40:08.860">track that there now another thing that you might want to do especially for those of you who</p>
+      <p begin="00:40:08.860" end="00:40:14.580">are in regulated industries is you don't you don't want everything moving</p>
+      <p begin="00:40:14.580" end="00:40:19.290">from stages stage all the way through sometimes what we need is the ability to</p>
+      <p begin="00:40:19.290" end="00:40:25.510">...human approval so we're able to actually track those as</p>
+      <p begin="00:40:25.510" end="00:40:27.880">...come here, you know, our.</p>
+      <p begin="00:40:28.930" end="00:40:33.920">Of vp brain...if I can spill is name...bra in there we go</p>
+      <p begin="00:40:35.000" end="00:40:38.510">will have brian...clemency?</p>
+      <p begin="00:40:38.510" end="00:40:42.950">Be the approvals before it gets deployed out into production so once</p>
+      <p begin="00:40:42.950" end="00:40:47.460">I do that anything that makes...the next point will actually ask each of them</p>
+      <p begin="00:40:47.460" end="00:40:51.330">to prove this before it goes on so typically</p>
+      <p begin="00:40:51.330" end="00:40:56.080">...apps person we'll end up being the person that does those but</p>
+      <p begin="00:40:56.080" end="00:41:00.490">we'll track those approvals as well that gets checked into our database and</p>
+      <p begin="00:41:00.490" end="00:41:03.380">...of having trace ability for all those as well so</p>
+      <p begin="00:41:03.380" end="00:41:07.950">...are new experience for release management really,</p>
+      <p begin="00:41:07.950" end="00:41:12.140">really easy-to-use and, we hope that that's going to be really helpful</p>
+      <p begin="00:41:12.140" end="00:41:20.550">...start...track all of your releases.</p>
+      <p begin="00:41:20.550" end="00:41:22.170">All rights.</p>
+      <p begin="00:41:22.170" end="00:41:27.470">Now may move back over here.</p>
+      <p begin="00:41:27.470" end="00:41:31.640">And, finally we move into the last face so now that we have moved</p>
+      <p begin="00:41:31.640" end="00:41:36.830">our builds into production one of the big challenges that we have in</p>
+      <p begin="00:41:36.830" end="00:41:40.320">dev ops implementing devils practices and making sure that we</p>
+      <p begin="00:41:40.320" end="00:41:44.230">dot only release quickly but we end up learning</p>
+      <p begin="00:41:44.230" end="00:41:48.940">quickly and we need to be able to learn quickly so that we can build the right product</p>
+      <p begin="00:41:48.940" end="00:41:53.680">for our customers so really that's where we are here and we want</p>
+      <p begin="00:41:53.680" end="00:41:57.790">...take advantage of what we can learn from production so we do</p>
+      <p begin="00:41:57.790" end="00:42:03.240">that using a service where providing is application insights as part of visual</p>
+      <p begin="00:42:03.240" end="00:42:06.540">...online and what we're denouncing today is that we're</p>
+      <p begin="00:42:06.540" end="00:42:12.380">moving application insights into being a public preview service so the other thing</p>
+      <p begin="00:42:12.380" end="00:42:16.920">we're announcing is that in december we made...acquisition of hockey app if you're familiar</p>
+      <p begin="00:42:16.920" end="00:42:21.470">with them we're taking the capabilities around ios</p>
+      <p begin="00:42:21.470" end="00:42:25.180">...crash analytics and we've now incorporate that into application</p>
+      <p begin="00:42:25.180" end="00:42:29.290">insights as well so we got pricing details including a free</p>
+      <p begin="00:42:29.290" end="00:42:37.600">...available but let me actually show you what application insights looks like?</p>
+      <p begin="00:42:37.600" end="00:42:43.310">Now there's three main things that you're going to want to think about as we want to learn from</p>
+      <p begin="00:42:43.310" end="00:42:50.100">production so that is my application available is it performing</p>
+      <p begin="00:42:50.100" end="00:42:54.100">And, then ultimately how're my users using my application so first I just</p>
+      <p begin="00:42:54.100" end="00:43:00.390">wanted-to give you a sense of what this is application insights is what is</p>
+      <p begin="00:43:00.390" end="00:43:04.950">are service and you just start to...data of from both your...</p>
+      <p begin="00:43:04.950" end="00:43:10.370">servers and, the server-side as well as your client devices so you think about</p>
+      <p begin="00:43:10.370" end="00:43:16.060">mobile devices in tablets in all of those other devices that could...putting</p>
+      <p begin="00:43:16.060" end="00:43:20.800">up data so I just pulled up our get have repo here that shows you all the different st</p>
+      <p begin="00:43:20.800" end="00:43:23.640">...that we do have available so,</p>
+      <p begin="00:43:23.640" end="00:43:27.550">you can contribute your own as well and we'll just keep adding to this</p>
+      <p begin="00:43:27.550" end="00:43:32.690">list as we have as we keep going on but you can literally send data from</p>
+      <p begin="00:43:32.690" end="00:43:37.440">any part of your application and what we'll do is we'll take all that data and give you a three hundred sixty</p>
+      <p begin="00:43:37.440" end="00:43:43.400">degree view of what this of what your application is doing so if I look at for some</p>
+      <p begin="00:43:43.400" end="00:43:47.600">...look at our back-end set of services so we're getting all sorts of</p>
+      <p begin="00:43:47.600" end="00:43:55.460">really great information so let me...getting cut off again here so I'm in?</p>
+      <p begin="00:43:55.460" end="00:43:58.660">Every...all right cool so if you'll notice I'm</p>
+      <p begin="00:43:58.660" end="00:44:02.550">giving a good overview of what's happening here.</p>
+      <p begin="00:44:02.550" end="00:44:05.050">You'll see hey, you know, that we're getting a really good</p>
+      <p begin="00:44:05.050" end="00:44:09.830">...response time the page loads are pretty good get lots of server</p>
+      <p begin="00:44:09.830" end="00:44:11.450">...that's great</p>
+      <p begin="00:44:11.450" end="00:44:15.750">lots a users only bad thing is we have some failed requests here so we're</p>
+      <p begin="00:44:15.750" end="00:44:20.190">...want divx ended deeper here but how many developers typically have</p>
+      <p begin="00:44:20.190" end="00:44:26.650">access to production to be able to figure this out, yeah, not...</p>
+      <p begin="00:44:26.650" end="00:44:30.440">So, what we're doing is we're trying to give this data into developers hands so the</p>
+      <p begin="00:44:30.440" end="00:44:35.490">first thing that we usually want to know about...is...application available so if I look</p>
+      <p begin="00:44:35.490" end="00:44:40.770">into availability what you'll notice is that we can now start to have</p>
+      <p begin="00:44:40.770" end="00:44:45.850">both simple ping tests as well as complex tests and we'll run those test</p>
+      <p begin="00:44:45.850" end="00:44:50.930">for-you from data centers around the world to let, you know, before your customers</p>
+      <p begin="00:44:50.930" end="00:44:55.270">...when your app is down so I think we're doing pretty good here we can start</p>
+      <p begin="00:44:55.270" end="00:44:59.190">...get some more details about what's going on there we've got a few failures and we can go in</p>
+      <p begin="00:44:59.190" end="00:45:04.620">and dive into the details but pretty much were looking pretty good and whenever there is a problem we'll go ahead and</p>
+      <p begin="00:45:04.620" end="00:45:10.000">email you whenever we notice something so you can get your development team on it as quickly as</p>
+      <p begin="00:45:10.000" end="00:45:14.010">possible now the other thing?</p>
+      <p begin="00:45:14.010" end="00:45:17.500">The other thing that we want to do is we actually want to understand what's happening</p>
+      <p begin="00:45:17.500" end="00:45:22.230">with these failed these failures so if I come over here.</p>
+      <p begin="00:45:22.230" end="00:45:25.090">And, a click on failures we can start</p>
+      <p begin="00:45:25.090" end="00:45:32.530">to understand what's happened so you notice I've got some failed requests here.</p>
+      <p begin="00:45:32.530" end="00:45:35.730">I've got on different, different pages so, for example,</p>
+      <p begin="00:45:35.730" end="00:45:38.700">this is...app so we've got search</p>
+      <p begin="00:45:38.700" end="00:45:43.540">controllers about controllers looks like the search pages getting a lot of hits there I</p>
+      <p begin="00:45:43.540" end="00:45:50.430">can also see the types of exceptions that are happening so if I click on this top one here.</p>
+      <p begin="00:45:50.430" end="00:45:56.400">Let's see let's pull this up array we get an exception here.</p>
+      <p begin="00:45:56.400" end="00:46:00.580">And, now I'm certainly give really rich information about what's happening including</p>
+      <p begin="00:46:00.580" end="00:46:04.860">lines of code the types of applications I can dive in deeper</p>
+      <p begin="00:46:04.860" end="00:46:09.170">...wanted to figure out the call stacks, for example, like</p>
+      <p begin="00:46:09.170" end="00:46:14.080">in filter out just my code or see the whole thing and I can start to understand where</p>
+      <p begin="00:46:14.080" end="00:46:19.850">...exceptions are happening so I can get back to code very quickly so if I want to I can also look at</p>
+      <p begin="00:46:19.850" end="00:46:25.490">the telemetry for that particular user session where happen and I can start to see what they were doing so they</p>
+      <p begin="00:46:25.490" end="00:46:29.200">hit the home page and then they started to get a bunch of exceptions</p>
+      <p begin="00:46:29.200" end="00:46:33.330">...capturing all this great data that's happening on the server-side</p>
+      <p begin="00:46:33.330" end="00:46:37.030">and shipping that back-up so the developers can start to get in</p>
+      <p begin="00:46:37.030" end="00:46:40.650">resolved there problems a lot quicker and get to</p>
+      <p begin="00:46:40.650" end="00:46:45.950">...cause analysis all right so that's one part of it as well?</p>
+      <p begin="00:46:45.950" end="00:46:48.530">The other part about application</p>
+      <p begin="00:46:48.530" end="00:46:52.520">...sizes learning what your customers are doing and how they're using the</p>
+      <p begin="00:46:52.520" end="00:46:58.980">application so we've really...usage analysis you notice...can I</p>
+      <p begin="00:46:58.980" end="00:47:05.070">can take a look at different things like you know, number of users</p>
+      <p begin="00:47:06.210" end="00:47:11.650">the types of events there the types of features that they're using so we can start to see what are</p>
+      <p begin="00:47:11.650" end="00:47:14.020">...most popular features so that we can</p>
+      <p begin="00:47:14.020" end="00:47:18.100">make investment decisions and decide whether to pivot</p>
+      <p begin="00:47:18.100" end="00:47:24.920">or persevere based on the usage so we're getting lots of really great data here but,</p>
+      <p begin="00:47:24.920" end="00:47:29.910">what's really nice is the ability to define your own metrics so these are what we</p>
+      <p begin="00:47:29.910" end="00:47:35.580">call custom events someone open up the coast custom events view?</p>
+      <p begin="00:47:35.580" end="00:47:41.180">And, this is where your developers can start to define different metric</p>
+      <p begin="00:47:41.180" end="00:47:45.930">point so, for example, we've got symmetric points for how features are being used so,</p>
+      <p begin="00:47:45.930" end="00:47:51.130">every time a feature hits a certain point we can ...data...and will aggregate those</p>
+      <p begin="00:47:51.130" end="00:47:57.410">for-you that's a really good thing is we can start to collect all sorts of other information behind-the-scene so,</p>
+      <p begin="00:47:57.410" end="00:48:01.580">for example, in our my shuttle app what ends up happening it's a very much like</p>
+      <p begin="00:48:01.580" end="00:48:05.950">...huber...so that people are searching for cabs and those kinds of things but,</p>
+      <p begin="00:48:05.950" end="00:48:09.320">one thing we might want to know is average trip cost</p>
+      <p begin="00:48:10.620" end="00:48:15.140">so this is a custom event that we've gone in aggregated</p>
+      <p begin="00:48:15.140" end="00:48:21.150">we're going to start to bring that data into the view here?</p>
+      <p begin="00:48:21.150" end="00:48:26.200">There we go so now you're certain a-c overtime the different average trip cost</p>
+      <p begin="00:48:26.200" end="00:48:31.770">per day so these are these custom events for you to be able to set your own hypothesis and,</p>
+      <p begin="00:48:31.770" end="00:48:32.610">understand where</p>
+      <p begin="00:48:32.610" end="00:48:38.290">your customers are using your particulars part of the application so this is a great part</p>
+      <p begin="00:48:38.290" end="00:48:43.490">of application insights and finally the last thing I want to show you is really</p>
+      <p begin="00:48:43.490" end="00:48:49.630">around our new device capabilities so this is understanding</p>
+      <p begin="00:48:49.630" end="00:48:54.460">how your customers are using all the different devices that you have across all the different platforms so you think</p>
+      <p begin="00:48:54.460" end="00:48:59.830">about android ios in as well as windows-based platforms.</p>
+      <p begin="00:48:59.830" end="00:49:02.870">So, what you can...we're starting to get even information from their</p>
+      <p begin="00:49:02.870" end="00:49:08.290">use a got lots of users lots of sessions page views I can search the</p>
+      <p begin="00:49:08.290" end="00:49:12.240">...in deeper you're also getting feature analysis you can understand the</p>
+      <p begin="00:49:12.240" end="00:49:16.490">top features from your customers on your device apps where they are</p>
+      <p begin="00:49:16.490" end="00:49:21.370">around the world so this is really important information the device types</p>
+      <p begin="00:49:21.370" end="00:49:25.570">there's a really great but the other thing...notice is we're actually getting a fair</p>
+      <p begin="00:49:25.570" end="00:49:30.500">number of crashes that are happening so I know that we've released a new</p>
+      <p begin="00:49:31.690" end="00:49:36.550">the new app versions so let's see what's going on here all right so we've got</p>
+      <p begin="00:49:36.550" end="00:49:38.770">a hundred seven users that are impacted so we need</p>
+      <p begin="00:49:38.770" end="00:49:42.960">...taking a look at those so if I started grab here this is actually come</p>
+      <p begin="00:49:42.960" end="00:49:47.540">in again notice that this is coming from swift in my ios</p>
+      <p begin="00:49:47.540" end="00:49:53.170">up and yet sure enough that latest version is causing some</p>
+      <p begin="00:49:53.170" end="00:49:58.110">more problems here so we saw a few times before but we're actually seeing a lot more</p>
+      <p begin="00:49:58.110" end="00:50:01.750">...dive in deeper here concerted take a look</p>
+      <p begin="00:50:01.750" end="00:50:07.130">at the exceptions and we use technology called symbolic education behind-the-scenes to start</p>
+      <p begin="00:50:07.130" end="00:50:11.600">to get to information like the call stack and line</p>
+      <p begin="00:50:11.600" end="00:50:16.380">members and we can figure out devices and we can also start to take a look</p>
+      <p begin="00:50:16.380" end="00:50:22.030">at the customer journey for how they got there so if I look at the telemetry for that</p>
+      <p begin="00:50:22.030" end="00:50:26.720">particular user session I can notice what are the actually doing before they got that</p>
+      <p begin="00:50:26.720" end="00:50:30.140">crash so if I pool this down here?</p>
+      <p begin="00:50:30.140" end="00:50:32.760">Okay, they check the cab status they</p>
+      <p begin="00:50:32.760" end="00:50:37.720">...cabin in the exception happens and that's when we got the data back for that</p>
+      <p begin="00:50:37.720" end="00:50:42.710">so this is already starting to give you a lot better information about helping you get</p>
+      <p begin="00:50:42.710" end="00:50:47.700">to root causes analysis but also we can start to make good decisions and speedup</p>
+      <p begin="00:50:47.700" end="00:50:52.160">are process so that were learning the right thing so that we can build the right things for</p>
+      <p begin="00:50:52.160" end="00:50:57.240">our customers so this is application insights in a nutshell we've got a lot of great stuff you can</p>
+      <p begin="00:50:57.240" end="00:51:02.490">go in and give it a try in the as your portal today so it's rate</p>
+      <p begin="00:51:02.490" end="00:51:08.420">there right alongside your infrastructure and you're going to get a lot of really good stuff out of that.</p>
+      <p begin="00:51:08.420" end="00:51:12.650">Okay, so, let me move back over here.</p>
+      <p begin="00:51:12.650" end="00:51:17.040">Now I really wanted to give you a sense of how microsoft is</p>
+      <p begin="00:51:17.040" end="00:51:22.160">been investing in dev ops across the entire life-cycle in really</p>
+      <p begin="00:51:22.160" end="00:51:26.930">our solution with team foundation server whether you want to run it on premises or use visual</p>
+      <p begin="00:51:26.930" end="00:51:31.330">...online which is our hosted version of...fs and related services we</p>
+      <p begin="00:51:31.330" end="00:51:34.730">want-to make sure that every team is empowered to be able to</p>
+      <p begin="00:51:34.730" end="00:51:38.750">implement abouts practices and get better building software quickly in building</p>
+      <p begin="00:51:38.750" end="00:51:42.320">...right software so we have lots of capabilities here you know,</p>
+      <p begin="00:51:42.320" end="00:51:46.330">for java developers for eclipse developers and x code developers</p>
+      <p begin="00:51:46.330" end="00:51:50.510">...all able to...jump in now with lots of great capabilities in a</p>
+      <p begin="00:51:50.510" end="00:51:54.710">release management service or build service with</p>
+      <p begin="00:51:54.710" end="00:51:59.540">get repost work item tracking all of those things are now available for every developer</p>
+      <p begin="00:51:59.540" end="00:52:03.670">and every team across your organization and so.</p>
+      <p begin="00:52:03.670" end="00:52:07.200">I showed you a lot of what we've already built</p>
+      <p begin="00:52:07.200" end="00:52:12.160">and what's available or things that are soon-to-be available let me tell you a little bit about kind</p>
+      <p begin="00:52:12.160" end="00:52:17.470">of our road map ahead in how're thing about futures and really that surround for key</p>
+      <p begin="00:52:17.470" end="00:52:22.640">themes so the first one being helping...customers</p>
+      <p begin="00:52:22.640" end="00:52:27.630">...customers scale agile so...a few things like</p>
+      <p begin="00:52:27.630" end="00:52:32.360">reporting support the starting with our by with visual studio online we're going to</p>
+      <p begin="00:52:32.360" end="00:52:37.590">lets you customize your work items as well and then if we move forward there's</p>
+      <p begin="00:52:37.590" end="00:52:42.110">another theme around collaborating on code a lot better so there's a couple things in</p>
+      <p begin="00:52:42.110" end="00:52:47.670">here one I like to point out usually is having a hosted packets management service</p>
+      <p begin="00:52:47.670" end="00:52:52.400">we have new get up here but we're also making sure that we cover other very popular</p>
+      <p begin="00:52:52.400" end="00:53:00.320">packets management's solutions like m pm and others and, then if we think about continuous delivery</p>
+      <p begin="00:53:00.320" end="00:53:06.160">is another theme of investments we're wanting to help you out with as part of the</p>
+      <p begin="00:53:06.160" end="00:53:09.240">released pipeline you want to make sure that you can efficiently use</p>
+      <p begin="00:53:09.240" end="00:53:12.350">...part of each stage so we're going to make some</p>
+      <p begin="00:53:12.350" end="00:53:17.740">...test lab management enhancements so that you can provision new</p>
+      <p begin="00:53:17.740" end="00:53:22.370">environment's and d provision them at the end of this at the end of the...</p>
+      <p begin="00:53:22.370" end="00:53:26.870">Can help you efficiently use infrastructure for devon test purposes and,</p>
+      <p begin="00:53:26.870" end="00:53:31.650">then finally as we think about learning from production we're going</p>
+      <p begin="00:53:31.650" end="00:53:35.440">to do things like better dash sporting support and then move application</p>
+      <p begin="00:53:35.440" end="00:53:40.430">insights onto the journey towards general availability so lots a</p>
+      <p begin="00:53:40.430" end="00:53:44.510">great stuff...the teams already done in lots a great stuff that she will continue to</p>
+      <p begin="00:53:44.510" end="00:53:50.540">do we just touched on a several of those but really what I'd like to do is we're going to</p>
+      <p begin="00:53:50.540" end="00:53:54.930">dive in deep onto at each piece of what we showed you today</p>
+      <p begin="00:53:54.930" end="00:53:59.840">...donovan has a session right after this around new release management system but,</p>
+      <p begin="00:53:59.840" end="00:54:01.820">you can go way create your own visual</p>
+      <p begin="00:54:01.820" end="00:54:07.450">...online account for free you can tryout application insights for free as well?</p>
+      <p begin="00:54:07.450" end="00:54:10.290">And, then also be sure to take advantage of downloading the visual</p>
+      <p begin="00:54:10.290" end="00:54:15.370">studio twenty fifteen release candidate as well as...team foundation server twenty fifteen</p>
+      <p begin="00:54:15.370" end="00:54:21.790">release candidate and then finally we've got some giveaways going on apologies</p>
+      <p begin="00:54:21.790" end="00:54:26.690">...have enough time for questions but I'll stay here afterwards and,</p>
+      <p begin="00:54:26.690" end="00:54:31.170">then we are also all going to be working at the...cs at the visual...online in the</p>
+      <p begin="00:54:31.170" end="00:54:34.100">...and dev ops booth so will be there I'd be happy</p>
+      <p begin="00:54:34.100" end="00:54:40.210">to answer some questions for you there and then finally be sure to help the</p>
+      <p begin="00:54:40.210" end="00:54:44.290">...and let us know what you think by evaluating the session and</p>
+      <p begin="00:54:44.290" end="00:54:47.670">...me so I'll be here for it but thank you so much for being</p>
+      <p begin="00:54:47.670" end="00:54:51.040">here are build and go find the other alam sessions as well and</p>
+      <p begin="00:54:51.040" end="00:54:53.730">diving deeper thanks-a-lot moi.</p>
+
+    </div>
+  </body>
+</tt>

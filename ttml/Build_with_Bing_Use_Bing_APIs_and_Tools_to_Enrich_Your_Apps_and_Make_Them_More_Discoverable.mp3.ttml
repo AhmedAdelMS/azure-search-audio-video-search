@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.905</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.050" end="00:00:08.330">Good morning everyone it's friday at nine am that they</p>
+      <p begin="00:00:08.330" end="00:00:13.150">after the build...so many things you all for being early birds here today</p>
+      <p begin="00:00:13.150" end="00:00:17.360">this bing builds with bing please be very welcome im</p>
+      <p begin="00:00:17.360" end="00:00:21.900">...for title I am that product lead for being api...and I'm here today with</p>
+      <p begin="00:00:21.900" end="00:00:25.860">...wherein with the product lead for being webmaster</p>
+      <p begin="00:00:25.860" end="00:00:30.540">experiences and our goal today is only one we</p>
+      <p begin="00:00:30.540" end="00:00:34.460">want you to make awesome apps and we believe you can do</p>
+      <p begin="00:00:34.460" end="00:00:39.230">...by leveraging api isn't tools that being provides so that you can maker</p>
+      <p begin="00:00:39.230" end="00:00:41.460">...much more discoverable and make</p>
+      <p begin="00:00:41.460" end="00:00:45.260">then richer as well now you might rightfully sk</p>
+      <p begin="00:00:45.260" end="00:00:49.590">...can...tell me what credentials being has really to make my</p>
+      <p begin="00:00:49.590" end="00:00:53.810">...awesome you might say I won't be able to answer your evaluation surveyed in</p>
+      <p begin="00:00:53.810" end="00:00:58.390">of the session unless you really can convince me really what are the credentials...being has to make</p>
+      <p begin="00:00:58.390" end="00:01:03.210">corrects awesome well my answer to that is quite brief actually being has increasingly</p>
+      <p begin="00:01:03.210" end="00:01:07.920">become the intelligence engine behind many solutions in the industry</p>
+      <p begin="00:01:07.920" end="00:01:12.710">some of those solutions are actually microsoft products themselves so whenever you use</p>
+      <p begin="00:01:12.710" end="00:01:16.090">...turner office windows xbox you are</p>
+      <p begin="00:01:16.090" end="00:01:21.670">using bing somehow being helps to provide some immersive experience is to those products at some point</p>
+      <p begin="00:01:21.670" end="00:01:26.070">however been also evolved to our...solutions in the industry,</p>
+      <p begin="00:01:26.070" end="00:01:29.640">for example, sweeter four-square amazon and</p>
+      <p begin="00:01:29.640" end="00:01:34.060">...hope today to open up a little bit more of...so that you all...can</p>
+      <p begin="00:01:34.060" end="00:01:38.730">in richer apps engage and reach millions of people.</p>
+      <p begin="00:01:38.730" end="00:01:42.650">We believe that goals really hand-in-hand with the fact that</p>
+      <p begin="00:01:42.650" end="00:01:45.850">...five times more engage and</p>
+      <p begin="00:01:45.850" end="00:01:50.520">...the browser alone and we want to leverage the opportunity to explore</p>
+      <p begin="00:01:50.520" end="00:01:53.760">that opportunity through to fronts vincent</p>
+      <p begin="00:01:53.760" end="00:01:57.460">will tell you how to bring users more often to your</p>
+      <p begin="00:01:57.460" end="00:02:02.190">...and how to bring more users to your app of course is going to talk about some</p>
+      <p begin="00:02:02.190" end="00:02:06.540">really cool technologies related to epics...free and that...or</p>
+      <p begin="00:02:06.540" end="00:02:11.440">mayans I'll tell you once you have your users on your...how you can keep</p>
+      <p begin="00:02:11.440" end="00:02:15.970">them engaged I'm going to talk about some data and resources that being provides,</p>
+      <p begin="00:02:15.970" end="00:02:19.950">for example, use images videos and hopefully</p>
+      <p begin="00:02:19.950" end="00:02:24.950">you can complement that data with order being powered solutions and data...well you're seeing...build,</p>
+      <p begin="00:02:24.950" end="00:02:29.820">for example, maps...and orders as well to really create your all</p>
+      <p begin="00:02:29.820" end="00:02:34.150">...map so that's our plan so basically...briefly go through the being that</p>
+      <p begin="00:02:34.150" end="00:02:39.070">...then...going to explore the being search api in a little bit of more details</p>
+      <p begin="00:02:39.070" end="00:02:43.110">...a bunch of demos then vincent will take on explain epics...that</p>
+      <p begin="00:02:43.110" end="00:02:48.280">linking and finally go to our final conclusions so let's briefly start with bing</p>
+      <p begin="00:02:48.280" end="00:02:53.260">...if there's only one link you should remember from this talk please make that to be</p>
+      <p begin="00:02:53.260" end="00:03:00.230">bev but being dot com let me switch to my machine here for one second?</p>
+      <p begin="00:03:00.230" end="00:03:02.630">The...so that center is your first</p>
+      <p begin="00:03:02.630" end="00:03:07.450">is stop shop for you to know everything about the public being api and tools.</p>
+      <p begin="00:03:07.450" end="00:03:12.440">You might have seen lots of the technologies with display here been presented at build again,</p>
+      <p begin="00:03:12.440" end="00:03:15.070">for example, maps speech perhaps</p>
+      <p begin="00:03:15.070" end="00:03:18.930">ads today like us to talk a little bit more about</p>
+      <p begin="00:03:18.930" end="00:03:24.570">the search api so this search api...concepts sounds quite simple</p>
+      <p begin="00:03:24.570" end="00:03:27.940">...it is an api that enables you to search</p>
+      <p begin="00:03:27.940" end="00:03:30.430">...like you to really see the search api</p>
+      <p begin="00:03:30.430" end="00:03:34.950">as the window through which are at can bring the world's data so...users,</p>
+      <p begin="00:03:34.950" end="00:03:38.880">for example, the most recent news about a given topic or</p>
+      <p begin="00:03:38.880" end="00:03:43.530">the most relevant images about a given text or perhaps you want to just read</p>
+      <p begin="00:03:43.530" end="00:03:48.870">millions of websites or...results and do something with those</p>
+      <p begin="00:03:48.870" end="00:03:52.920">...explains you first a couple things your?</p>
+      <p begin="00:03:52.920" end="00:03:54.540">Which is?</p>
+      <p begin="00:03:54.540" end="00:03:57.620">Through the being search api you have to main scenarios</p>
+      <p begin="00:03:57.620" end="00:04:01.600">...can either embed the search results in our app or you can programmatic</p>
+      <p begin="00:04:01.600" end="00:04:05.950">...consume and do something with them and no payment is required for</p>
+      <p begin="00:04:05.950" end="00:04:10.500">...start using the api is there's a limit of five thousand calls or</p>
+      <p begin="00:04:10.500" end="00:04:15.270">transactions per month you can perform and that's for free so we can just get started today</p>
+      <p begin="00:04:15.270" end="00:04:20.470">to a couple cliques get a key and start consuming to being search api now before we get into our first them</p>
+      <p begin="00:04:20.470" end="00:04:23.930">all let-me highlights to flavors of the search api that we</p>
+      <p begin="00:04:23.930" end="00:04:27.300">have available here you can see the left we have the full-fledged?</p>
+      <p begin="00:04:28.380" end="00:04:32.240">Bing api and that one has seven endpoints you can</p>
+      <p begin="00:04:32.240" end="00:04:37.110">consume each one of the first six endpoints individually get results,</p>
+      <p begin="00:04:37.110" end="00:04:38.340">for example,</p>
+      <p begin="00:04:38.340" end="00:04:43.100">web page results or image results video results news results related</p>
+      <p begin="00:04:43.100" end="00:04:47.570">searches results and finally spell correction results as well by calling those individual</p>
+      <p begin="00:04:47.570" end="00:04:52.270">endpoints you can also called...composite endpoint...to get multiple sourced</p>
+      <p begin="00:04:52.270" end="00:04:56.440">...or multiple types of results through a single call if</p>
+      <p begin="00:04:56.440" end="00:04:58.860">your scenario however is more simple like perhaps</p>
+      <p begin="00:04:58.860" end="00:05:03.180">...just really wants to have web results in my app you can also called the</p>
+      <p begin="00:05:03.180" end="00:05:07.900">being search api the web only version so through that you can actually have</p>
+      <p begin="00:05:07.900" end="00:05:12.310">I smaller payload and also the transaction costs of that one is cheaper</p>
+      <p begin="00:05:12.310" end="00:05:18.350">for you so let me go back here and see how we can explore</p>
+      <p begin="00:05:18.350" end="00:05:21.810">the search api so once I click here in the search api you'll see</p>
+      <p begin="00:05:21.810" end="00:05:27.180">...redirected to the microsoft leisure marketplace that's where the...regulates</p>
+      <p begin="00:05:27.180" end="00:05:32.080">that's where you go to back to get the being search api data then as I mentioned to</p>
+      <p begin="00:05:32.080" end="00:05:38.330">you five thousand transactions per month so you can get started for free slightly click here in sign-in.</p>
+      <p begin="00:05:38.330" end="00:05:43.760">And, I do have a best account can use for this.</p>
+      <p begin="00:05:43.760" end="00:05:47.940">That would be a horrible time for me to forget my passwords.</p>
+      <p begin="00:05:47.940" end="00:05:56.440">And, apparently did...it is builds twenty fifteen demo.</p>
+      <p begin="00:05:56.440" end="00:06:01.370">That looks better now and one of the first things you can do after you sign up for the</p>
+      <p begin="00:06:01.370" end="00:06:02.580">being search api</p>
+      <p begin="00:06:02.580" end="00:06:06.880">...to actually explored the api through a kind of api consul you</p>
+      <p begin="00:06:06.880" end="00:06:12.660">see a link here explore this dataset let's click there and then have a small api consul</p>
+      <p begin="00:06:12.660" end="00:06:16.730">that can play around to get life data from the api so in this case</p>
+      <p begin="00:06:16.730" end="00:06:19.960">year let's assume I want to do a query and I want to search for</p>
+      <p begin="00:06:19.960" end="00:06:24.840">...and...can specifying this sources parameter what are the source</p>
+      <p begin="00:06:24.840" end="00:06:29.450">...the result types I want to get back well in this case let's...and use back from</p>
+      <p begin="00:06:29.450" end="00:06:35.090">ming plus web results and perhaps some video results as well you</p>
+      <p begin="00:06:35.090" end="00:06:36.680">click and apply?</p>
+      <p begin="00:06:36.680" end="00:06:40.760">And, here you have some of information coming back to you live from the api</p>
+      <p begin="00:06:40.760" end="00:06:44.090">that's a total number of web results of the results so on and</p>
+      <p begin="00:06:44.090" end="00:06:48.080">you can expand here one of those results perhaps news.</p>
+      <p begin="00:06:48.080" end="00:06:52.650">Now you can...coming...from being in can our your app with that kind of</p>
+      <p begin="00:06:52.650" end="00:06:57.110">data lots of people like to use the api explorer so that they can see</p>
+      <p begin="00:06:57.110" end="00:07:02.080">have an idea of the data that comes back from the api I myself like to use this</p>
+      <p begin="00:07:02.080" end="00:07:06.020">to also explore the endpoints that I have available and what</p>
+      <p begin="00:07:06.020" end="00:07:10.120">are the response fields or pretty much my api schema for each one of those</p>
+      <p begin="00:07:10.120" end="00:07:16.240">endpoints that helps me to get more familiarized with the api now let's look...here,</p>
+      <p begin="00:07:16.240" end="00:07:20.820">you know, it is...in the morning perhaps you guys have enough coffee let me show to</p>
+      <p begin="00:07:20.820" end="00:07:25.600">you how you can actually consume data from the being search api with</p>
+      <p begin="00:07:25.600" end="00:07:30.450">zero coding required all of the being api...see here are actually all</p>
+      <p begin="00:07:30.450" end="00:07:35.390">data restful api is so that means if you have a tool that understands all data like,</p>
+      <p begin="00:07:35.390" end="00:07:38.380">for example, xcel our...can just</p>
+      <p begin="00:07:38.380" end="00:07:42.640">pull that data and displaying your solution so this is what I want to try to do</p>
+      <p begin="00:07:42.640" end="00:07:47.690">here but just show you a quick screenshot of what I want to achieve so right now I</p>
+      <p begin="00:07:47.690" end="00:07:53.190">have the like to do something like this imagine that you want just to create the list of</p>
+      <p begin="00:07:53.190" end="00:07:57.630">san-francisco bars or something else with like images titles and links</p>
+      <p begin="00:07:57.630" end="00:08:02.470">or perhaps list of articles and news articles about morocco...you do not need to create</p>
+      <p begin="00:08:02.470" end="00:08:06.130">...from scratch for doing something like that you can leverage already</p>
+      <p begin="00:08:06.130" end="00:08:11.100">other tools that just hook into the being search api to collect some data so let's say</p>
+      <p begin="00:08:11.100" end="00:08:16.140">a couple steps how we can do that but moved back here to my machine?</p>
+      <p begin="00:08:16.140" end="00:08:17.900">So, let me start by opening xcel.</p>
+      <p begin="00:08:19.040" end="00:08:24.030">Then you can check this our...to add here in the rhythm and then you can click</p>
+      <p begin="00:08:24.030" end="00:08:28.850">...manage to manager data you can pull some data now into excel now you can</p>
+      <p begin="00:08:28.850" end="00:08:32.440">...like to get some external data from the windows</p>
+      <p begin="00:08:32.440" end="00:08:38.570">leisure marketplace again that's where the being search api...slightly click here.</p>
+      <p begin="00:08:38.570" end="00:08:41.700">Now it's not tell you okay which data from the edge marketplace</p>
+      <p begin="00:08:41.700" end="00:08:49.660">...you want to add here to xcel in my case that's data comes from the being search api.</p>
+      <p begin="00:08:49.660" end="00:09:01.190">It might ask me to sign again...just...really quickly.</p>
+      <p begin="00:09:01.190" end="00:09:07.200">And, after that's complete you'll see and interface really similar to the api explore</p>
+      <p begin="00:09:07.200" end="00:09:11.200">we're just checking awhile ago and in this case let's do this</p>
+      <p begin="00:09:11.200" end="00:09:15.120">...search for images and I'm looking now for</p>
+      <p begin="00:09:15.120" end="00:09:21.760">...recipes so let's try that.</p>
+      <p begin="00:09:21.760" end="00:09:23.750">Let me click and apply.</p>
+      <p begin="00:09:23.750" end="00:09:28.160">You will see again data coming back from the being api that looks good this time now when I click</p>
+      <p begin="00:09:28.160" end="00:09:30.000">...select query.</p>
+      <p begin="00:09:30.000" end="00:09:34.990">Xcel is imports in the data from the being api into our</p>
+      <p begin="00:09:34.990" end="00:09:39.360">...and then you'll see how we can use our view to make some...visualization off</p>
+      <p begin="00:09:39.360" end="00:09:43.530">that data so typically takes a couple seconds I believe very important right now one thousand</p>
+      <p begin="00:09:43.530" end="00:09:47.950">...coming from the being api and I'm going to show you how your users can also</p>
+      <p begin="00:09:47.950" end="00:09:55.080">refresher data to get most updated content...so shouldn't take long just a couple more seconds.</p>
+      <p begin="00:09:55.080" end="00:09:59.650">Assuming the internet cooperates of course the regal.</p>
+      <p begin="00:09:59.650" end="00:10:04.530">So, that's perfect our...populated with data coming from the being api now let me just get</p>
+      <p begin="00:10:04.530" end="00:10:08.770">back to my original excel spreadsheet right here and then I can goal to</p>
+      <p begin="00:10:08.770" end="00:10:13.740">insert menu they can select our view and then the data I got back from the</p>
+      <p begin="00:10:13.740" end="00:10:18.580">being search api will be available in the spain right here in the right side for me</p>
+      <p begin="00:10:18.580" end="00:10:23.030">to start selecting what fields I want to...report</p>
+      <p begin="00:10:23.030" end="00:10:28.080">so let's see here the media url those are all...the fields that the arbitrarily</p>
+      <p begin="00:10:28.080" end="00:10:34.320">the api response so let me select here perhaps the media url that's the actual image.</p>
+      <p begin="00:10:34.320" end="00:10:38.600">In the indeed responses so I can clicking enable content and here in my images will be loading</p>
+      <p begin="00:10:38.600" end="00:10:43.130">a secondary goal...psyched here d title of those images and</p>
+      <p begin="00:10:43.130" end="00:10:47.030">let-me select here perhaps the source url for people to click.</p>
+      <p begin="00:10:47.030" end="00:10:51.120">Okay, that sounds good I have some nice breeder recipes right here then I</p>
+      <p begin="00:10:51.120" end="00:10:54.500">...in the...I can off-course perhaps weed out some results</p>
+      <p begin="00:10:54.500" end="00:10:59.960">...can do some filtering here if I want that's not the case right now so I can just have a name.</p>
+      <p begin="00:10:59.960" end="00:11:01.720">For my reports.</p>
+      <p begin="00:11:01.720" end="00:11:06.390">And, then as you can see here this is a regular excel spreadsheet right so you can</p>
+      <p begin="00:11:06.390" end="00:11:10.280">save that file...someone else that personal can click</p>
+      <p begin="00:11:10.280" end="00:11:14.380">...refresh and get most recent results so that's it</p>
+      <p begin="00:11:14.380" end="00:11:17.430">with zero coding you are able now to just pull some data from</p>
+      <p begin="00:11:17.430" end="00:11:22.940">the being search api and I'll have that added to your app now let's assume you want to do something else</p>
+      <p begin="00:11:22.940" end="00:11:26.810">and you said okay that's great now I just want really to code.</p>
+      <p begin="00:11:26.810" end="00:11:31.430">...for you to code you need to do two things first ensure you get your account</p>
+      <p begin="00:11:31.430" end="00:11:36.010">key from the bing search api page...the microsoft...marketplace and</p>
+      <p begin="00:11:36.010" end="00:11:40.880">off-course register your application...being measure marketplace so that you can start authenticate</p>
+      <p begin="00:11:40.880" end="00:11:45.400">...europe so let's do that what I want to do right now you have a really simple</p>
+      <p begin="00:11:45.400" end="00:11:49.460">...api world demo I want to be able to quickly programmatic</p>
+      <p begin="00:11:49.460" end="00:11:53.230">...search for web results using a command prompt</p>
+      <p begin="00:11:53.230" end="00:11:58.350">...so let's go back to my machine.</p>
+      <p begin="00:11:58.350" end="00:12:02.280">And, if I go to...being search api page</p>
+      <p begin="00:12:02.280" end="00:12:08.760">...like to show you two things folks so the first one is if you click on my account.</p>
+      <p begin="00:12:08.760" end="00:12:13.510">Right here in the account case you can find some keys you can use already to do some</p>
+      <p begin="00:12:13.510" end="00:12:18.450">...really quick development and start pulling being api data search api data into your</p>
+      <p begin="00:12:18.450" end="00:12:21.240">...you can create additional keys if you want perhaps one for each</p>
+      <p begin="00:12:21.240" end="00:12:24.190">app and this will enable you to do some basic</p>
+      <p begin="00:12:24.190" end="00:12:29.050">off bypassing that key both is the user name and password you can read start collecting some data</p>
+      <p begin="00:12:29.050" end="00:12:33.400">mac of course in the real-world you might you really willing to do something more</p>
+      <p begin="00:12:33.400" end="00:12:37.760">...you guys might have heard about off in order authentication</p>
+      <p begin="00:12:37.760" end="00:12:42.510">mechanisms so to use something like that you can click...the developer stab.</p>
+      <p begin="00:12:42.510" end="00:12:45.760">Then you can register replication really similar process</p>
+      <p begin="00:12:45.760" end="00:12:50.540">...creating perhaps like a facebook app or twitter app you register your at first you provide a</p>
+      <p begin="00:12:50.540" end="00:12:55.090">klein's id for that...the name for your app perhaps to provide a...secret which is the</p>
+      <p begin="00:12:55.090" end="00:12:59.810">...now you can use o off providing that information there and then you can</p>
+      <p begin="00:12:59.810" end="00:13:04.970">have more kind of...boost sign up in my case here I'll just stick with the account</p>
+      <p begin="00:13:04.970" end="00:13:11.350">case because as a simple mechanism for you for us...quick...the second thing I want to show you</p>
+      <p begin="00:13:11.350" end="00:13:15.760">is this if you actually check in the search api page in the right it's</p>
+      <p begin="00:13:15.760" end="00:13:20.700">not tell you there is a dot net csharp less library that you can consume</p>
+      <p begin="00:13:20.700" end="00:13:25.460">that is a really easy way for you to start retrieving programmatic...being a data from the</p>
+      <p begin="00:13:25.460" end="00:13:30.530">being search api I already have a solution here in...you that's a simple</p>
+      <p begin="00:13:30.530" end="00:13:35.400">command from solution already downloaded that file right here that's my being search container</p>
+      <p begin="00:13:35.400" end="00:13:41.170">class and let me just do this let me quickly now perhaps tell the user</p>
+      <p begin="00:13:41.170" end="00:13:47.770">answer your query.</p>
+      <p begin="00:13:47.770" end="00:13:51.050">And, then...course read.</p>
+      <p begin="00:13:51.050" end="00:13:54.990">Whatever the user entered.</p>
+      <p begin="00:13:54.990" end="00:13:58.960">All right and final step I'm going to show the results from</p>
+      <p begin="00:13:58.960" end="00:14:02.440">being best in the query is a parameter.</p>
+      <p begin="00:14:02.440" end="00:14:05.840">So, that's live demo here right now let's hope that works.</p>
+      <p begin="00:14:05.840" end="00:14:08.200">For me to...</p>
+      <p begin="00:14:08.200" end="00:14:12.550">small proxy class library that I downloaded from the being search api</p>
+      <p begin="00:14:12.550" end="00:14:17.500">...page just a quick note that you have to other reference to system dot data</p>
+      <p begin="00:14:17.500" end="00:14:20.360">...services of...</p>
+      <p begin="00:14:20.360" end="00:14:26.600">then I need to three simple things first one I have mikey the same one-l showing to</p>
+      <p begin="00:14:26.600" end="00:14:30.470">use seconds ago second step instantiate that</p>
+      <p begin="00:14:30.470" end="00:14:35.190">proxy class which is the being search container it receives as a parameter by</p>
+      <p begin="00:14:35.190" end="00:14:37.980">uri in this case that's the being search api</p>
+      <p begin="00:14:37.980" end="00:14:42.910">...api data market...dot com...beings lash search.</p>
+      <p begin="00:14:42.910" end="00:14:47.960">Now you set the credentials of that proxy class-based...your key as the by as...mentioned</p>
+      <p begin="00:14:47.960" end="00:14:50.080">...the password and finally now</p>
+      <p begin="00:14:50.080" end="00:14:53.510">...proxy class has some methods that you can use to</p>
+      <p begin="00:14:53.510" end="00:14:58.620">create web queries or image queries video queries so on right here I'm creating</p>
+      <p begin="00:14:58.620" end="00:15:02.850">a web query and of course you have all those other methods video to</p>
+      <p begin="00:15:02.850" end="00:15:07.100">create a video query and then the composite method as well which will</p>
+      <p begin="00:15:07.100" end="00:15:11.640">enable you to have multiple sourced types being returned with only one single</p>
+      <p begin="00:15:11.640" end="00:15:17.140">call explored is...upcoming them so I have my web query right here now I just need to</p>
+      <p begin="00:15:17.140" end="00:15:19.800">execute query now and iterated over</p>
+      <p begin="00:15:19.800" end="00:15:24.300">the results displaying title and display url really simple just a couple lines of code cannot</p>
+      <p begin="00:15:24.300" end="00:15:27.600">programmatic consume data from the being search api</p>
+      <p begin="00:15:27.600" end="00:15:34.220">...customized way so let's give this a try so my queries going to be perhaps xbox.</p>
+      <p begin="00:15:34.220" end="00:15:38.460">...I'm getting some results back from the being search api.</p>
+      <p begin="00:15:38.460" end="00:15:43.590">That's great of course...a bunch of parameters that you can explore I'm going to touch them in a while.</p>
+      <p begin="00:15:43.590" end="00:15:48.240">So, that's good now we have a really simple hello world application what else can we do with the being api</p>
+      <p begin="00:15:48.240" end="00:15:52.560">what order more interesting scenarios we can just light up using the being search api</p>
+      <p begin="00:15:52.560" end="00:15:56.560">...let's imagine we are developing a modern app that</p>
+      <p begin="00:15:56.560" end="00:16:00.460">is called shared lists the idea of this app is that</p>
+      <p begin="00:16:00.460" end="00:16:02.950">...more people can actually start collecting and</p>
+      <p begin="00:16:02.950" end="00:16:06.240">...even websites and use images of a given topic that</p>
+      <p begin="00:16:06.240" end="00:16:08.980">...exploring together so in this case here</p>
+      <p begin="00:16:08.980" end="00:16:14.170">imaginative incense and I would like to save some interesting things refining here at the</p>
+      <p begin="00:16:14.170" end="00:16:19.310">...going to explore we're going to create and app powered by being...enables us to achieve that</p>
+      <p begin="00:16:19.310" end="00:16:24.200">scenario in this case I'm actually going to show you how you can use more modern technologies for</p>
+      <p begin="00:16:24.200" end="00:16:24.610">you to</p>
+      <p begin="00:16:24.610" end="00:16:29.450">get negate...data like the web api http client classes doing a</p>
+      <p begin="00:16:29.450" end="00:16:34.210">...calls and then I want to tell you how you can actually choose between serialized...they do get back</p>
+      <p begin="00:16:34.210" end="00:16:39.000">from being either through data contracts or actually just doing some dynamics realization is really up</p>
+      <p begin="00:16:39.000" end="00:16:46.470">to you depending on your scenario so let's explore that let me go back to my machine.</p>
+      <p begin="00:16:46.470" end="00:16:50.000">There you go and I have a second solution right here shared</p>
+      <p begin="00:16:50.000" end="00:16:54.650">lists pretty much empties with some just a couple of event handlers right here.</p>
+      <p begin="00:16:54.650" end="00:16:58.350">And, that's my main page main page has just some,</p>
+      <p begin="00:16:58.350" end="00:17:00.800">you know,...why controls but that's indian and empty</p>
+      <p begin="00:17:00.800" end="00:17:07.049">...has no data let's see how we can hook some being data into that specific...</p>
+      <p begin="00:17:07.049" end="00:17:11.699">So, one of the things I want to highlight you first is as I mentioned all of the being api</p>
+      <p begin="00:17:11.699" end="00:17:15.889">art restful all data feeds so if you go to a tool like post</p>
+      <p begin="00:17:15.889" end="00:17:18.579">...and just call here to being api using a</p>
+      <p begin="00:17:18.579" end="00:17:22.489">really regular simple http get call that's it you get some</p>
+      <p begin="00:17:22.489" end="00:17:27.279">...on data back in this specific case I'm actually calling the web</p>
+      <p begin="00:17:27.279" end="00:17:32.040">endpoints and I'm actually...my query xbox as the parameter</p>
+      <p begin="00:17:32.040" end="00:17:36.980">the percentage twenty-seven is just for me to escape the quote that's required for all</p>
+      <p begin="00:17:36.980" end="00:17:41.720">string parameters and...you can see here baller format equals js and gives me some</p>
+      <p begin="00:17:41.720" end="00:17:46.500">js and data back so if you want perhaps to embed that data into your ios</p>
+      <p begin="00:17:46.500" end="00:17:51.220">...right and that's possible as well right now let's just do this calling</p>
+      <p begin="00:17:51.220" end="00:17:57.010">using modern app it windows store...in csharp so first that</p>
+      <p begin="00:17:57.010" end="00:18:02.530">let me initially actually have define...url that I want to build</p>
+      <p begin="00:18:02.530" end="00:18:06.030">so in this case here I'm calling the composite endpoint</p>
+      <p begin="00:18:06.030" end="00:18:10.470">...to-you and the composite endpoint has a sources parameter that</p>
+      <p begin="00:18:10.470" end="00:18:15.220">tells us what is the kind of data want to get back from the being a see the being search api</p>
+      <p begin="00:18:15.220" end="00:18:20.260">have web plus...scape carter four-plus images</p>
+      <p begin="00:18:20.260" end="00:18:23.890">in use in spell corrections right then I'm</p>
+      <p begin="00:18:23.890" end="00:18:28.440">specifying my query just have a placeholder in here for now and again format equals</p>
+      <p begin="00:18:28.440" end="00:18:32.030">...so that's my query this...url actually and that's my</p>
+      <p begin="00:18:32.030" end="00:18:36.480">...now whenever the user taps in the search button let's see what's going to</p>
+      <p begin="00:18:36.480" end="00:18:41.630">happen like to show some results again this time whatever the user</p>
+      <p begin="00:18:41.630" end="00:18:45.450">had results for whatever the user had...query xbox.</p>
+      <p begin="00:18:46.510" end="00:18:48.420">Perfect you will see now I</p>
+      <p begin="00:18:48.420" end="00:18:52.650">already editor reference to the web api two-point-two clients</p>
+      <p begin="00:18:52.650" end="00:18:56.110">...using nugget so he's right here and then</p>
+      <p begin="00:18:56.110" end="00:19:00.700">...the show results let me just make this to be my query.</p>
+      <p begin="00:19:00.700" end="00:19:05.950">You will see that I can consume that data...really similar way in which I was also consuming</p>
+      <p begin="00:19:05.950" end="00:19:10.300">that through the proxy class so let me now invoke my composite</p>
+      <p begin="00:19:10.300" end="00:19:14.790">call as you can see here and just...a single modifier</p>
+      <p begin="00:19:14.790" end="00:19:18.300">...here having some...calls right now so I use</p>
+      <p begin="00:19:18.300" end="00:19:21.840">my hb client class normally the only difference here is that I'm</p>
+      <p begin="00:19:21.840" end="00:19:26.330">specifying like http client handler that sets my network credentials as I</p>
+      <p begin="00:19:26.330" end="00:19:31.270">did before now I'm calling gets method...the get a</p>
+      <p begin="00:19:31.270" end="00:19:35.410">...method that's a gets http call passing that url</p>
+      <p begin="00:19:35.410" end="00:19:40.110">in my actual queries so this should be my query actually getting receiving as a parameter</p>
+      <p begin="00:19:40.110" end="00:19:44.530">...response I'm just reading that response in this case I'm serialized</p>
+      <p begin="00:19:44.530" end="00:19:45.920">...the response into a data</p>
+      <p begin="00:19:45.920" end="00:19:50.410">...class call being search results which is right here and you might be</p>
+      <p begin="00:19:50.410" end="00:19:52.720">...mihai under how did really builds</p>
+      <p begin="00:19:52.720" end="00:19:57.390">these being search results class well there's a small trick in visual studio might</p>
+      <p begin="00:19:57.390" end="00:20:00.550">know already whenever here we have some...on data</p>
+      <p begin="00:20:00.550" end="00:20:07.250">then get is raw data if you copy that your clipboard then you go back to visual studio.</p>
+      <p begin="00:20:07.250" end="00:20:08.140">You can always.</p>
+      <p begin="00:20:09.150" end="00:20:13.740">Based that data especially mc basis special based my</p>
+      <p begin="00:20:13.740" end="00:20:18.810">...in my clipboard classes and there you go I have a data conflict less for me right here that's</p>
+      <p begin="00:20:18.810" end="00:20:21.820">...can use and that's what I did in this case.</p>
+      <p begin="00:20:21.820" end="00:20:24.700">Slice...that data they receive back from</p>
+      <p begin="00:20:24.700" end="00:20:29.880">being search api into my being search results and again the only difference now is</p>
+      <p begin="00:20:29.880" end="00:20:34.370">that and this time I'm actually just creating a list of all the objects I get back,</p>
+      <p begin="00:20:34.370" end="00:20:37.730">for example, web results image news I just put all those things together in</p>
+      <p begin="00:20:37.730" end="00:20:41.530">a single list and I bind that to my results...which is</p>
+      <p begin="00:20:41.530" end="00:20:46.660">...ui element that I having there and then have of course some code that says how the</p>
+      <p begin="00:20:46.660" end="00:20:50.220">why should be rendered according to the data it receives back?</p>
+      <p begin="00:20:50.220" end="00:20:54.940">...that looks good let's give it a try so let me run this code.</p>
+      <p begin="00:20:54.940" end="00:21:02.830">Hopefully they'll go there with me today unless search for hollow lengths.</p>
+      <p begin="00:21:02.830" end="00:21:04.110">After a couple seconds hopefully</p>
+      <p begin="00:21:04.110" end="00:21:08.850">...we have some data coming back this time I have now web results.</p>
+      <p begin="00:21:08.850" end="00:21:13.620">Images as well and some news results as well so the idea is that</p>
+      <p begin="00:21:13.620" end="00:21:18.510">now I can start click and saving those results and start building my list.</p>
+      <p begin="00:21:18.510" end="00:21:22.940">Now what is really the interesting thing we can do on top of this</p>
+      <p begin="00:21:22.940" end="00:21:26.610">might be the one of the most important slides of this presentation</p>
+      <p begin="00:21:26.610" end="00:21:30.590">right now which shows to-you that by using the being api</p>
+      <p begin="00:21:30.590" end="00:21:35.420">as you can leverage lots of things that bing dot com already has lots of</p>
+      <p begin="00:21:35.420" end="00:21:39.080">...common logic capabilities optimizations we</p>
+      <p begin="00:21:39.080" end="00:21:41.930">...bing dot com you also get that through the api</p>
+      <p begin="00:21:41.930" end="00:21:46.420">...comes with its when you are using the api...for example,...you know,</p>
+      <p begin="00:21:46.420" end="00:21:49.050">that being is global by design right if you're using</p>
+      <p begin="00:21:49.050" end="00:21:53.430">being from a different place like brazil you get results relevant to brazil not relevant</p>
+      <p begin="00:21:53.430" end="00:21:58.750">to the united states if I go back to my code right here.</p>
+      <p begin="00:21:58.750" end="00:22:04.060">You will see something quite similar ...</p>
+      <p begin="00:22:04.060" end="00:22:07.560">Let me launch my...again let me search</p>
+      <p begin="00:22:07.560" end="00:22:12.360">for games and right now you will see a have english us results</p>
+      <p begin="00:22:12.360" end="00:22:15.530">okay united states websites or at least</p>
+      <p begin="00:22:15.530" end="00:22:18.720">...relevant to the united states market if</p>
+      <p begin="00:22:18.720" end="00:22:22.280">...if the...of...takes does that over to brazil and</p>
+      <p begin="00:22:22.280" end="00:22:27.220">runs that same query there is going to get actually brazilian portuguese results that are more</p>
+      <p begin="00:22:27.220" end="00:22:32.140">relevant to them you can off-course override or have some kind of fallback behavior</p>
+      <p begin="00:22:32.140" end="00:22:37.400">through the market parameter so if I really simple modification right here let me just add the new</p>
+      <p begin="00:22:37.400" end="00:22:42.020">...markets to my url and this time pete...which is the market</p>
+      <p begin="00:22:42.020" end="00:22:49.190">called for brazil and let me just escape that again...in single quotes?</p>
+      <p begin="00:22:49.190" end="00:22:55.200">So, if I run that again and I search for the same thing, for example, games.</p>
+      <p begin="00:22:55.200" end="00:22:56.260">This design now I</p>
+      <p begin="00:22:56.260" end="00:23:02.320">get results relevant to the brazilian portuguese market not english market.</p>
+      <p begin="00:23:02.320" end="00:23:06.270">The second thing...get imagination supports of course you might not</p>
+      <p begin="00:23:06.270" end="00:23:10.290">really be willing to display all results at once so we do support counts</p>
+      <p begin="00:23:10.290" end="00:23:13.860">...parameters actually bowler top and...skip parameters that</p>
+      <p begin="00:23:13.860" end="00:23:19.080">you can use as the number of results want to get back and of course as the offset that you</p>
+      <p begin="00:23:19.080" end="00:23:24.820">want to retrieved eureka results from so in this case...me just createanother queries sorry</p>
+      <p begin="00:23:24.820" end="00:23:29.750">another url and let-me specify and bowler top.</p>
+      <p begin="00:23:29.750" end="00:23:34.680">Equals two so just want to get the first to results in here and for simplicity</p>
+      <p begin="00:23:34.680" end="00:23:41.020">let me just retrieve here web and images let's assume I do not want use and spell anymore.</p>
+      <p begin="00:23:41.020" end="00:23:48.160">Let's run it again so this time let-me search for bill gates.</p>
+      <p begin="00:23:48.160" end="00:23:52.410">And, I get only to...only to images because they specify that as a</p>
+      <p begin="00:23:52.410" end="00:23:56.030">...what also having here hits highlight</p>
+      <p begin="00:23:56.030" end="00:24:00.150">...you go to bing of calm or.</p>
+      <p begin="00:24:00.150" end="00:24:01.910">Right here you search for something like</p>
+      <p begin="00:24:01.910" end="00:24:06.540">games again and then the results you get some things which are...that hopefully</p>
+      <p begin="00:24:06.540" end="00:24:11.540">they'll we'll just make users to engage more you can get that...in...from the api as well</p>
+      <p begin="00:24:11.540" end="00:24:15.270">you specify web options equals hits highlight...the...</p>
+      <p begin="00:24:15.270" end="00:24:20.170">will give you back now some special charger can use to bold some specific relevant</p>
+      <p begin="00:24:20.170" end="00:24:24.770">terms of getting the result so that's also something that comes with the api</p>
+      <p begin="00:24:24.770" end="00:24:28.920">...parameters so eventually you might want to change the</p>
+      <p begin="00:24:28.920" end="00:24:31.360">set safe search settings author api so that</p>
+      <p begin="00:24:31.360" end="00:24:36.170">...options are strict moderate and off those are the same as an being dot com you can also</p>
+      <p begin="00:24:36.170" end="00:24:40.130">passive perimeter that changes that and sites that your app as well if that's part of your</p>
+      <p begin="00:24:40.130" end="00:24:43.890">scenario query alteration that's something really interesting so let me go back</p>
+      <p begin="00:24:43.890" end="00:24:49.350">here and run this again let me just do this I do not want the portuguese</p>
+      <p begin="00:24:49.350" end="00:24:57.020">market anymore let me just revert that and I want all the results...</p>
+      <p begin="00:24:57.020" end="00:25:00.430">So, let's imagine the user they just.</p>
+      <p begin="00:25:00.430" end="00:25:06.920">...here...probably did something stupid probably that's still comments...regal.</p>
+      <p begin="00:25:06.920" end="00:25:08.410">So, users they just</p>
+      <p begin="00:25:08.410" end="00:25:12.990">...type things all the time write as a user running feeling my forms and everything and just have a</p>
+      <p begin="00:25:12.990" end="00:25:17.470">lot lots of cycles now and then and if the user actually searches for something like</p>
+      <p begin="00:25:17.470" end="00:25:20.510">billy data set of bill gates we do not wants to</p>
+      <p begin="00:25:20.510" end="00:25:25.510">penalize that user by showing no results for bill gates which very likely was the user</p>
+      <p begin="00:25:25.510" end="00:25:30.140">intent in the first-place so when you go to being...com bing knows that and tells you</p>
+      <p begin="00:25:30.140" end="00:25:34.710">hey actually I think you are meaning bill gates let me show results for bill gates that</p>
+      <p begin="00:25:34.710" end="00:25:38.200">behavior is true for the api as well so if you search for</p>
+      <p begin="00:25:38.200" end="00:25:42.450">...it's going to show you bill gates results...can override that</p>
+      <p begin="00:25:42.450" end="00:25:47.400">behavior if you want and...be getting some...as barbecuing texas somewhere instead of the</p>
+      <p begin="00:25:47.400" end="00:25:52.840">bill gates specific results so the api supports that finally filtering</p>
+      <p begin="00:25:52.840" end="00:25:57.300">you can future api results by.</p>
+      <p begin="00:25:57.300" end="00:25:59.370">You can future web page results...</p>
+      <p begin="00:25:59.370" end="00:26:04.270">type you can see only give me back web results which are off-site pdf or</p>
+      <p begin="00:26:04.270" end="00:26:09.030">...documents you can do that...of...future perimeter perhaps you can want</p>
+      <p begin="00:26:09.030" end="00:26:13.710">to future results free specific domain you could say give me only results</p>
+      <p begin="00:26:13.710" end="00:26:18.630">for specific domain like recipes dot com are not all results of the web you can do that if</p>
+      <p begin="00:26:18.630" end="00:26:23.940">you want as well and have some order kind of filtering behaviors I want to show you what you want to do here as</p>
+      <p begin="00:26:23.940" end="00:26:26.290">...far-left demos which is?</p>
+      <p begin="00:26:26.290" end="00:26:30.910">Imagine you want to get image results however</p>
+      <p begin="00:26:30.910" end="00:26:35.790">only black-and-white image results and let's imagine that you also want to get all</p>
+      <p begin="00:26:35.790" end="00:26:40.630">those in the that all of those image results actually they have faces in them</p>
+      <p begin="00:26:40.630" end="00:26:44.630">to do that you just need to specify in your image futures</p>
+      <p begin="00:26:44.630" end="00:26:48.870">...being monochrome that provides the black-and-white behavior and the</p>
+      <p begin="00:26:48.870" end="00:26:52.680">face equals face the other possible value for faces</p>
+      <p begin="00:26:52.680" end="00:26:56.010">portrait that means the not give my faces...close-up what more</p>
+      <p begin="00:26:56.010" end="00:27:04.630">...of a porches behavior you can specify that let's give that one...right let me move back here.</p>
+      <p begin="00:27:04.630" end="00:27:10.360">And, let me just add a new url.</p>
+      <p begin="00:27:10.360" end="00:27:14.330">This time now that contains an image future.</p>
+      <p begin="00:27:14.330" end="00:27:19.280">Right here same saying the same thing you had...image...is caller monochrome</p>
+      <p begin="00:27:19.280" end="00:27:23.550">...and that's it just by having a really simple parameter you</p>
+      <p begin="00:27:23.550" end="00:27:29.870">can run that again knowledge search for something like music.</p>
+      <p begin="00:27:29.870" end="00:27:34.480">And, this time now you only get black-and-white results that contains faces so you can see</p>
+      <p begin="00:27:34.480" end="00:27:40.660">here frank sinatra you can see john lennon research for science.</p>
+      <p begin="00:27:40.660" end="00:27:43.910">You can see here albert einstein.</p>
+      <p begin="00:27:43.910" end="00:27:47.310">Carl sagan and orders that's pretty cool you can just</p>
+      <p begin="00:27:47.310" end="00:27:51.190">...some parameters to get some specific results in there</p>
+      <p begin="00:27:51.190" end="00:27:56.170">and this light has a reference lots of your results or the other filters that you can...so,</p>
+      <p begin="00:27:56.170" end="00:27:56.690">for example,</p>
+      <p begin="00:27:56.690" end="00:28:01.350">you can also future images by size aspect racial the style you</p>
+      <p begin="00:28:01.350" end="00:28:04.690">can future videos by duration aspect resolution and</p>
+      <p begin="00:28:04.690" end="00:28:08.230">news that's quite interesting you can say only give me back and use which</p>
+      <p begin="00:28:08.230" end="00:28:13.270">are business news or health news world news us new science music</p>
+      <p begin="00:28:13.270" end="00:28:18.890">and specify all of those...part of your future perimeters as well now what about this what about the</p>
+      <p begin="00:28:18.890" end="00:28:21.660">...suggestions in spell corrections and that's not against</p>
+      <p begin="00:28:21.660" end="00:28:26.930">...specific really guys this is something that you can use in any kind of you want really to suggest</p>
+      <p begin="00:28:26.930" end="00:28:31.630">users some spell corrections can you do that yes that's quite simple in my</p>
+      <p begin="00:28:31.630" end="00:28:33.820">...that I have right here.</p>
+      <p begin="00:28:33.820" end="00:28:36.560">Let me move back to my original full.</p>
+      <p begin="00:28:36.560" end="00:28:40.530">Url do not need image one anymore and here when grabbing</p>
+      <p begin="00:28:40.530" end="00:28:45.390">my results I'm just going to inspect if in the api response I get</p>
+      <p begin="00:28:45.390" end="00:28:50.120">any spell suggestions and that's it if we have more than one spell suggestion that can actually</p>
+      <p begin="00:28:50.120" end="00:28:54.990">display that to the user and I'm just right here...just enabling some</p>
+      <p begin="00:28:54.990" end="00:28:59.860">...y component in there that says hey I'm including results for this corrected</p>
+      <p begin="00:28:59.860" end="00:29:06.590">...here you really want results for this thing you just...that a try.</p>
+      <p begin="00:29:06.590" end="00:29:11.010">Let me search again for really get...in this case.</p>
+      <p begin="00:29:11.010" end="00:29:14.350">And, now you can get I spell correction right here telling you hey,</p>
+      <p begin="00:29:14.350" end="00:29:18.260">you know, I really think...something else here is a spell correction for</p>
+      <p begin="00:29:18.260" end="00:29:21.720">you and then you can define what it...trigger here perhaps you can</p>
+      <p begin="00:29:21.720" end="00:29:28.170">redo the search now specifically using that user specific germ that they provide.</p>
+      <p begin="00:29:28.170" end="00:29:31.770">All right...the sparse my less them...before...bring vincent into talk about</p>
+      <p begin="00:29:31.770" end="00:29:35.120">...discovery and...is about how</p>
+      <p begin="00:29:35.120" end="00:29:40.090">well this being api or the search api integrates with...api, for example,</p>
+      <p begin="00:29:40.090" end="00:29:45.130">the translator api in order tools and services you see actually as part of the being that</p>
+      <p begin="00:29:45.130" end="00:29:49.250">center quite easy let's imagine here that in our</p>
+      <p begin="00:29:49.250" end="00:29:53.250">...whenever I move the mouse over a given result I want to...</p>
+      <p begin="00:29:53.250" end="00:29:59.130">small translation of that result and every...result...multiple relation in there so I have some quick</p>
+      <p begin="00:29:59.130" end="00:30:04.100">coding here for the actual translation api and you'll see the way I call that api</p>
+      <p begin="00:30:04.100" end="00:30:08.840">...quite similar to the way you called the being search api the same three steps first you have</p>
+      <p begin="00:30:08.840" end="00:30:13.980">your url so in this case...the endpoint for the translator api is lashing is</p>
+      <p begin="00:30:13.980" end="00:30:18.670">lash microsoft translator then I can specify to and from parameters</p>
+      <p begin="00:30:18.670" end="00:30:24.660">...say from english for instance to spanish getting</p>
+      <p begin="00:30:24.660" end="00:30:30.690">that in...as well and then of course have to provide...retrieved from the user.</p>
+      <p begin="00:30:30.690" end="00:30:34.900">Once I have that actually retrieve what is the actual texture information I want to get that I</p>
+      <p begin="00:30:34.900" end="00:30:39.870">want to translate and then really, really similar thing you have seen before we have an http client</p>
+      <p begin="00:30:39.870" end="00:30:44.810">I just consume best my client handler with my keys and then this</p>
+      <p begin="00:30:44.810" end="00:30:48.340">time now check how interesting when I call my translator api</p>
+      <p begin="00:30:48.340" end="00:30:52.190">and I get my response I'm not serialized...data contract</p>
+      <p begin="00:30:52.190" end="00:30:57.920">class anymore what I'm doing here I'm just doing some dynamics realization and then</p>
+      <p begin="00:30:57.920" end="00:31:02.850">you can in realtime have...field structurally be inspected and that's how you're</p>
+      <p begin="00:31:02.850" end="00:31:08.760">defining the actual value for those fields let's give they want to try as well.</p>
+      <p begin="00:31:08.760" end="00:31:14.410">So, let's do here search for bill gates.</p>
+      <p begin="00:31:14.410" end="00:31:16.690">And, let's choose some...translators</p>
+      <p begin="00:31:16.690" end="00:31:21.650">have some new stuff down here let's see...gates you can help the world</p>
+      <p begin="00:31:21.650" end="00:31:26.760">...million lines let-me click here and then...my translation...is</p>
+      <p begin="00:31:26.760" end="00:31:31.520">...model solver...elastic spanish-speaking portuguese that's my the best spanish over</p>
+      <p begin="00:31:31.520" end="00:31:35.210">here for me that's it that's how you can integrate some of the translate</p>
+      <p begin="00:31:35.210" end="00:31:39.840">...functionality with the search api and hopefully you can also integrates order stuff for learn that</p>
+      <p begin="00:31:39.840" end="00:31:42.440">...maps ads speech and</p>
+      <p begin="00:31:42.440" end="00:31:45.620">...really compelling experience so I just want to</p>
+      <p begin="00:31:45.620" end="00:31:50.260">highlight you folks that indian the being api...the search api</p>
+      <p begin="00:31:50.260" end="00:31:55.070">...they're not really simply widgets that only webmasters can, you know,</p>
+      <p begin="00:31:55.070" end="00:31:59.850">move and dropped in your pages for end-users to see a translation of that page that's</p>
+      <p begin="00:31:59.850" end="00:32:04.100">really a full-fledged api that you can use for all of your scenarios</p>
+      <p begin="00:32:04.100" end="00:32:08.920">the way that you want so again I think the key thing to highlight here is that whatever you</p>
+      <p begin="00:32:08.920" end="00:32:13.640">have already in bing dot com global by design lots of the supports for</p>
+      <p begin="00:32:13.640" end="00:32:18.370">many different futures all of that spell corrections query alterations all of that is made</p>
+      <p begin="00:32:18.370" end="00:32:22.900">available to you through the api as well and again it takes just a couple cliques</p>
+      <p begin="00:32:22.900" end="00:32:26.230">...to get started in start consuming the api is there's no need</p>
+      <p begin="00:32:26.230" end="00:32:30.780">for your really to even have a credit card to start playing around and check that out so please go to</p>
+      <p begin="00:32:30.780" end="00:32:34.350">...have not been dot com explore the...api</p>
+      <p begin="00:32:34.350" end="00:32:38.750">...that I'm just going to call vince in so that he can tell you now once...have your</p>
+      <p begin="00:32:38.750" end="00:32:44.420">...who can make your at much more discoverable and have...users to come back there more often</p>
+      <p begin="00:32:44.420" end="00:32:45.790">...thank you?</p>
+      <p begin="00:32:47.250" end="00:32:49.540">Thank you...</p>
+      <p begin="00:32:49.540" end="00:32:55.370">...thanks factor come out this early morning...is amazing but,</p>
+      <p begin="00:32:55.370" end="00:32:58.050">not of android kinda...how easy it is to make</p>
+      <p begin="00:32:58.050" end="00:33:02.720">or apps that out with smarter experiences using the family of being api</p>
+      <p begin="00:33:02.720" end="00:33:10.500">...I want to switch gears a little bit and talk about you know-how we can make apps more discoverable.</p>
+      <p begin="00:33:10.500" end="00:33:13.940">I want to talk about how you can reach engagement is a peep.</p>
+      <p begin="00:33:13.940" end="00:33:19.250">I want to talk about how we at bing think about.</p>
+      <p begin="00:33:19.250" end="00:33:23.600">Making your apps more discoverable and connect them to the people and get them to hands users</p>
+      <p begin="00:33:23.600" end="00:33:28.570">bing is the key provider intelligence to windows microsoft products as</p>
+      <p begin="00:33:28.570" end="00:33:33.570">a whole and ecbatana and windows and specific want to talk about</p>
+      <p begin="00:33:33.570" end="00:33:37.420">app discover ability and we talk about app discover ability</p>
+      <p begin="00:33:37.420" end="00:33:39.980">really we talk about three things.</p>
+      <p begin="00:33:39.980" end="00:33:46.000">Especially talk about it research we need to think about how people just find</p>
+      <p begin="00:33:46.000" end="00:33:49.380">To searches for an app name or cattle research.</p>
+      <p begin="00:33:49.380" end="00:33:52.990">But,...once more natural and common way for people to search.</p>
+      <p begin="00:33:52.990" end="00:33:58.220">Is the search for content so...want to talk about content discovery apps?</p>
+      <p begin="00:33:59.450" end="00:34:05.420">finally people want to do something with your app they want to completed task</p>
+      <p begin="00:34:05.420" end="00:34:11.530">performing action so we need to talk about app action discovery as well.</p>
+      <p begin="00:34:11.530" end="00:34:15.820">When it comes to app discovery and searching for app names and cattle researches for apps the</p>
+      <p begin="00:34:15.820" end="00:34:19.890">...got you covered very well and as a developer you don't really have to do a whole other</p>
+      <p begin="00:34:19.890" end="00:34:23.540">thing other than publisher app to the store fill...the correct metadata</p>
+      <p begin="00:34:23.540" end="00:34:26.530">...that makes it accessible to the search...</p>
+      <p begin="00:34:26.530" end="00:34:35.399">that's in the store and what's more it is also showing up and universal search box?</p>
+      <p begin="00:34:35.399" end="00:34:40.539">What's new though is that is people engage install your app and review and</p>
+      <p begin="00:34:40.539" end="00:34:45.159">...that intelligence from store is now also plugged in tubing</p>
+      <p begin="00:34:45.159" end="00:34:50.059">dot com intelligence platform and we can start showing app results as hero</p>
+      <p begin="00:34:50.059" end="00:34:51.869">answers and bing dot com not just</p>
+      <p begin="00:34:51.869" end="00:34:58.980">in-store or in the universal search box but on bing dot com in the browser.</p>
+      <p begin="00:34:58.980" end="00:35:03.000">So, that's another canvas where people can find explore</p>
+      <p begin="00:35:03.000" end="00:35:06.890">...out so that's great stuff.</p>
+      <p begin="00:35:06.890" end="00:35:11.610">Naturally the store listings have a web equivalent</p>
+      <p begin="00:35:11.610" end="00:35:15.750">and those web equivalence are index and crawl...the surges...a search engines</p>
+      <p begin="00:35:15.750" end="00:35:19.950">that large including bang google and all the other guys.</p>
+      <p begin="00:35:19.950" end="00:35:23.230">What's great with universals store there's</p>
+      <p begin="00:35:23.230" end="00:35:26.250">...one listing for your up and no more</p>
+      <p begin="00:35:26.250" end="00:35:30.100">that bifurcation of sco ranking our between the different</p>
+      <p begin="00:35:30.100" end="00:35:35.740">stores the distract from you ranking as well as you can.</p>
+      <p begin="00:35:35.740" end="00:35:38.410">However, that's really great if people kind of</p>
+      <p begin="00:35:38.410" end="00:35:43.140">know your app name already order searching...a category where you app</p>
+      <p begin="00:35:43.140" end="00:35:47.130">...kind of a incumbent leader and category leader.</p>
+      <p begin="00:35:47.130" end="00:35:51.260">But, as we said people search differently what they really want to do in a</p>
+      <p begin="00:35:51.260" end="00:35:58.930">more natural ways to search for content and things to do.</p>
+      <p begin="00:35:58.930" end="00:36:03.840">As it turns out today's app model is kind of broken for that search behavior</p>
+      <p begin="00:36:03.840" end="00:36:08.360">there really is an app for everything and people have to go in to the app to kind of</p>
+      <p begin="00:36:08.360" end="00:36:10.420">discovered content they want.</p>
+      <p begin="00:36:10.420" end="00:36:11.400">...the actions that they want to</p>
+      <p begin="00:36:11.400" end="00:36:15.760">...the and often is kind of like a trial-and-error process you need to open up</p>
+      <p begin="00:36:15.760" end="00:36:24.240">and app see if the content that you want is...see if you can do what you one where that watch that movie read that.</p>
+      <p begin="00:36:24.240" end="00:36:29.120">Advancing we think there's a better model...model a better suits the way people search</p>
+      <p begin="00:36:29.120" end="00:36:32.110">that more natural way but also a model.</p>
+      <p begin="00:36:33.140" end="00:36:33.700">That helps</p>
+      <p begin="00:36:33.700" end="00:36:38.540">developers bring their app to the attention of users as the search</p>
+      <p begin="00:36:38.540" end="00:36:42.490">...more natural way so that's why when this ten.</p>
+      <p begin="00:36:42.490" end="00:36:45.230">Were bringing...application</p>
+      <p begin="00:36:45.230" end="00:36:51.520">...action intelligence to...on a and windows...</p>
+      <p begin="00:36:51.520" end="00:36:52.630">And, we're going to make it easy for</p>
+      <p begin="00:36:52.630" end="00:36:57.220">developers like yourself to participate in that new canvas.</p>
+      <p begin="00:36:57.220" end="00:37:00.510">By allowing to-you standardize markup.</p>
+      <p begin="00:37:00.510" end="00:37:06.780">To make the content available to the search engine.</p>
+      <p begin="00:37:06.780" end="00:37:09.540">We're going to allow you to improve your app discovery</p>
+      <p begin="00:37:09.540" end="00:37:13.210">...discover ability by using applicants app links</p>
+      <p begin="00:37:13.210" end="00:37:19.030">...org will allow you to show your app in search results an apple fight</p>
+      <p begin="00:37:19.030" end="00:37:21.540">So, that when people find content they can open it</p>
+      <p begin="00:37:21.540" end="00:37:23.610">in your immersive experience.</p>
+      <p begin="00:37:24.770" end="00:37:29.580">On their windows device.</p>
+      <p begin="00:37:29.580" end="00:37:33.660">And, to find actions and to under bring it in understanding to bing...</p>
+      <p begin="00:37:33.660" end="00:37:38.610">we're going to allow you to...page with schema dot org and use the</p>
+      <p begin="00:37:38.610" end="00:37:47.080">schema that...vocabulary to make those actions known to us.</p>
+      <p begin="00:37:47.080" end="00:37:51.560">Now let's see how we're going to do this.</p>
+      <p begin="00:37:51.560" end="00:37:52.750">Click.</p>
+      <p begin="00:37:52.750" end="00:37:56.800">So, app links the first.</p>
+      <p begin="00:37:56.800" end="00:37:58.150">What are the</p>
+      <p begin="00:37:58.150" end="00:38:02.050">...there you go so when it comes app...it's really</p>
+      <p begin="00:38:02.050" end="00:38:08.500">quite simple protocol if you think about it at length take the known concept the url?</p>
+      <p begin="00:38:08.500" end="00:38:10.780">And, creates a relationship with the you awry.</p>
+      <p begin="00:38:11.940" end="00:38:17.160">That allows us to launch the app.</p>
+      <p begin="00:38:17.160" end="00:38:21.960">This is great because this url is kind of a known concept easy-to-understand that relationships easy to create</p>
+      <p begin="00:38:21.960" end="00:38:25.560">but...especially...is that you can published</p>
+      <p begin="00:38:25.560" end="00:38:32.150">is url share it link to it from other websites link to it from app to app.</p>
+      <p begin="00:38:32.150" end="00:38:36.960">And, we're going to index those relationships and bing and are already being building one of the biggest app linking</p>
+      <p begin="00:38:36.960" end="00:38:43.960">in the...in the industry today?</p>
+      <p begin="00:38:43.960" end="00:38:50.830">Now what's important is the...in which you can enable this.</p>
+      <p begin="00:38:50.830" end="00:38:54.200">It only involves three things one you</p>
+      <p begin="00:38:54.200" end="00:38:59.590">marked up the publish url with app links that art metadata.</p>
+      <p begin="00:38:59.590" end="00:39:03.480">Second you register a protocol hammer free app so that you app can be</p>
+      <p begin="00:39:03.480" end="00:39:08.650">opened by using protocol invocation and finally you</p>
+      <p begin="00:39:08.650" end="00:39:12.700">handle the your I activation event in your app.</p>
+      <p begin="00:39:12.700" end="00:39:19.250">To kind of guide the user to the content that we've just shown in the search results.</p>
+      <p begin="00:39:19.250" end="00:39:20.980">...marking...probably</p>
+      <p begin="00:39:20.980" end="00:39:25.640">...pretty straightforward app links really has only simple couple of meta</p>
+      <p begin="00:39:25.640" end="00:39:31.580">properties that you can add to your web page the corresponds with your app content.</p>
+      <p begin="00:39:31.580" end="00:39:33.340">...show you an example here.</p>
+      <p begin="00:39:34.350" end="00:39:36.500">Where we're doing this for a universal windows</p>
+      <p begin="00:39:36.500" end="00:39:42.290">up you see there's only a couple of handful of properties that you need to add</p>
+      <p begin="00:39:42.290" end="00:39:48.380">a url that point studio ride that you want to open in the app?</p>
+      <p begin="00:39:48.380" end="00:39:53.010">The app id which corresponds to your app store id.</p>
+      <p begin="00:39:53.010" end="00:39:57.270">And, app name which is not required but it is useful to kind of how about in</p>
+      <p begin="00:39:57.270" end="00:40:00.420">their as disambiguation and finally also not</p>
+      <p begin="00:40:00.420" end="00:40:04.450">required but smart to do you can add your package family name so</p>
+      <p begin="00:40:04.450" end="00:40:09.280">we can disambiguation if there's multiple protocol handlers for the same protocol you</p>
+      <p begin="00:40:09.280" end="00:40:16.620">...to...being what understanding create that relationship with your out?</p>
+      <p begin="00:40:16.620" end="00:40:19.910">When you've done that you need to registered protocol handler and</p>
+      <p begin="00:40:19.910" end="00:40:23.610">luckily that's super easy to do as well with store apps</p>
+      <p begin="00:40:23.610" end="00:40:27.380">or really takes is a small extension to your app is</p>
+      <p begin="00:40:27.380" end="00:40:31.980">a application manifests and the similar to this here's an example</p>
+      <p begin="00:40:31.980" end="00:40:41.520">where I'm adding a handler for the can...scheme?</p>
+      <p begin="00:40:41.520" end="00:40:45.740">In visual studio...easier if you open a visual studio and you go</p>
+      <p begin="00:40:45.740" end="00:40:51.600">a open your deployment package basically go to declarations tap.</p>
+      <p begin="00:40:51.600" end="00:41:00.660">Select protocol from the available declarations and fill out the right metadata.</p>
+      <p begin="00:41:00.660" end="00:41:04.800">You know, and, the first-time really when you when you do this and you press</p>
+      <p begin="00:41:04.800" end="00:41:09.130">a five just debug app at that point your app is already</p>
+      <p begin="00:41:09.130" end="00:41:13.670">registered locally so every time somebody installs...the same thing and you can do.</p>
+      <p begin="00:41:13.670" end="00:41:18.520">Windows are something...can...so...on and...</p>
+      <p begin="00:41:18.520" end="00:41:23.720">You can start the app from right there but just arnie app is not going to be enough right because</p>
+      <p begin="00:41:23.720" end="00:41:28.130">you want us to open the app...the same location that.</p>
+      <p begin="00:41:28.130" end="00:41:31.030">Was the location of the content corresponds to</p>
+      <p begin="00:41:31.030" end="00:41:33.150">...corresponding weapons.</p>
+      <p begin="00:41:33.150" end="00:41:37.580">So, finally what you need to do you handle your I activation again</p>
+      <p begin="00:41:37.580" end="00:41:41.860">...pretty a trivial to do.</p>
+      <p begin="00:41:41.860" end="00:41:45.100">Basically all it takes in your in your</p>
+      <p begin="00:41:45.100" end="00:41:49.340">app to override the on activated event handler.</p>
+      <p begin="00:41:49.340" end="00:41:56.180">And, then inspect the arguments to see what the activation...and this cases the protocol.</p>
+      <p begin="00:41:56.180" end="00:42:00.430">At that point basically you can look and inspect the arguments to see what the incoming</p>
+      <p begin="00:42:00.430" end="00:42:04.440">...request was and then you can navigate to</p>
+      <p begin="00:42:04.440" end="00:42:07.220">...view in your app.</p>
+      <p begin="00:42:07.220" end="00:42:14.130">And, your service might look slightly differently but it's very easy to do.</p>
+      <p begin="00:42:14.130" end="00:42:20.380">...debugging tip when you...a debugging this on activated handler.</p>
+      <p begin="00:42:20.380" end="00:42:25.320">Instead of just pressing...debug your app obviously you need to make sure you...open the</p>
+      <p begin="00:42:25.320" end="00:42:29.130">...gets activated that way so...quick to.</p>
+      <p begin="00:42:29.130" end="00:42:32.890">Even go into your options.</p>
+      <p begin="00:42:32.890" end="00:42:36.840">And, go to the start action section and</p>
+      <p begin="00:42:36.840" end="00:42:40.160">...do...lawns with debug my code when it starts.</p>
+      <p begin="00:42:40.160" end="00:42:44.770">Then press f five now launcher app that say from windows are with the...right</p>
+      <p begin="00:42:44.770" end="00:42:46.470">...you wanted to start.</p>
+      <p begin="00:42:46.470" end="00:42:54.240">And, at that point...will...to that app and you can have your break front right in there.</p>
+      <p begin="00:42:54.240" end="00:42:59.780">Yep, you can try this out ...to this very cool.</p>
+      <p begin="00:42:59.780" end="00:43:02.590">Now what's also great and these guys are going to talk about this</p>
+      <p begin="00:43:02.590" end="00:43:06.820">even more detail there's a session later today seven-six five</p>
+      <p begin="00:43:06.820" end="00:43:11.670">where they're talking about not specifically about app linking for search but app linking to create a web</p>
+      <p begin="00:43:11.670" end="00:43:16.520">of apps how apps can link to each other so some of that debugging</p>
+      <p begin="00:43:16.520" end="00:43:26.770">ted's and some of these things that you can do there will be presented in much more detail.</p>
+      <p begin="00:43:26.770" end="00:43:31.100">We so that people like to search for content...that</p>
+      <p begin="00:43:31.100" end="00:43:35.150">...can performance it's...most natural way we know that people search</p>
+      <p begin="00:43:35.150" end="00:43:41.960">for people places things entities and...want to do something with it.</p>
+      <p begin="00:43:41.960" end="00:43:46.380">So, how can we make bing smart enough and</p>
+      <p begin="00:43:46.380" end="00:43:48.480">...on a through bing?</p>
+      <p begin="00:43:48.480" end="00:43:50.060">To expose.</p>
+      <p begin="00:43:50.060" end="00:43:56.470">Actions that are app can performing content.</p>
+      <p begin="00:43:56.470" end="00:44:02.960">...we said we're going to use...arc markup to make that happen.</p>
+      <p begin="00:44:02.960" end="00:44:09.200">But, first before we look at the answer let's look at the questions...somebody might be saying listen to</p>
+      <p begin="00:44:09.200" end="00:44:12.460">...line is a kind of scary</p>
+      <p begin="00:44:12.460" end="00:44:19.270">...story so I want to listen to that before I play that to might kids...way</p>
+      <p begin="00:44:19.270" end="00:44:25.610">to the airport's something like that and clearly we have an action here listen action.</p>
+      <p begin="00:44:25.610" end="00:44:29.410">...entity core line which in this case is a book are in fact it's,</p>
+      <p begin="00:44:29.410" end="00:44:35.280">you know, and, audiobook that I want to listen to.</p>
+      <p begin="00:44:35.280" end="00:44:38.010">So, when you schemer...and if you haven't heard about schemer</p>
+      <p begin="00:44:38.010" end="00:44:41.590">org it's really a standardized way?</p>
+      <p begin="00:44:41.590" end="00:44:45.770">That can be used up to...but there's also a market for</p>
+      <p begin="00:44:45.770" end="00:44:52.050">...to basically bring structured data to the web.</p>
+      <p begin="00:44:52.050" end="00:44:56.160">And, it was really focused on describing entities such as books such as movies</p>
+      <p begin="00:44:56.160" end="00:44:58.730">such as people places and organizations</p>
+      <p begin="00:45:00.350" end="00:45:05.400">but they also understood that people want to do things with those entity and twenty fourteen.</p>
+      <p begin="00:45:05.400" end="00:45:09.610">They added the action vocabulary to schema...and that's</p>
+      <p begin="00:45:09.610" end="00:45:16.010">what I'm going to leverage because it allows us to connect potential actions to entities.</p>
+      <p begin="00:45:16.010" end="00:45:20.120">And, it allows us to specify entry points for those</p>
+      <p begin="00:45:20.120" end="00:45:22.480">action.</p>
+      <p begin="00:45:22.480" end="00:45:25.500">...actions and that includes apps.</p>
+      <p begin="00:45:25.500" end="00:45:31.630">Web pages so on so forth.</p>
+      <p begin="00:45:31.630" end="00:45:34.340">So, let's look at an example.</p>
+      <p begin="00:45:34.340" end="00:45:38.460">Stay with the core line example.</p>
+      <p begin="00:45:38.460" end="00:45:44.400">We need to...pages...can...with app links that...that's no problem.</p>
+      <p begin="00:45:44.400" end="00:45:47.690">Register protocol...for the app and handley</p>
+      <p begin="00:45:47.690" end="00:45:51.690">...activation inside the app and the good news is the first the things we've</p>
+      <p begin="00:45:51.690" end="00:45:58.000">already done right so we don't have to do that again so let's look at what that mark-up looks like.</p>
+      <p begin="00:45:58.000" end="00:45:58.770">Now I'm going to stick with the</p>
+      <p begin="00:45:58.770" end="00:46:03.390">...an example and here's some schemer of mark-up...you can see this is kind of</p>
+      <p begin="00:46:03.390" end="00:46:08.290">sm I've compact that into...ld but it could be microformats</p>
+      <p begin="00:46:08.290" end="00:46:11.890">...as well and...already describes.</p>
+      <p begin="00:46:12.980" end="00:46:17.140">The entity...tells me the type book.</p>
+      <p begin="00:46:17.140" end="00:46:19.500">...an additional type is actually in...</p>
+      <p begin="00:46:20.710" end="00:46:24.640">The author...isdn number for unique identification</p>
+      <p begin="00:46:24.640" end="00:46:27.910">...clearly tells you about all this page is</p>
+      <p begin="00:46:27.910" end="00:46:33.400">about the entity caroline which is...but that doesn't mean a lot and I</p>
+      <p begin="00:46:33.400" end="00:46:38.730">want to do something with that entity so let's look at what.</p>
+      <p begin="00:46:38.730" end="00:46:40.960">Example would be.</p>
+      <p begin="00:46:40.960" end="00:46:45.590">We added potential action so this case we use the potential action</p>
+      <p begin="00:46:45.590" end="00:46:52.420">attribute to added an action type the typist play action.</p>
+      <p begin="00:46:52.420" end="00:46:56.910">You can specify targets for...play action.</p>
+      <p begin="00:46:56.910" end="00:47:00.740">One target could just be the web url itself or you might be able to</p>
+      <p begin="00:47:00.740" end="00:47:05.630">play the audiobook through the web browser or maybe even listen to sampler something like that but the order is</p>
+      <p begin="00:47:05.630" end="00:47:09.900">an entry point that uses a similar way of invocation as app links</p>
+      <p begin="00:47:09.900" end="00:47:14.270">does so url template kind of maps to app links url.</p>
+      <p begin="00:47:14.270" end="00:47:19.650">And, it shows you the url template basically scheme audible and,</p>
+      <p begin="00:47:19.650" end="00:47:23.200">the path that leads to that particular book inside the audible</p>
+      <p begin="00:47:23.200" end="00:47:29.410">app we specified that is a software application and the id is the...</p>
+      <p begin="00:47:29.410" end="00:47:33.670">...is audible operating system...this cases windows phone eight-point one</p>
+      <p begin="00:47:33.670" end="00:47:38.150">...you get the picture we've now successfully connected</p>
+      <p begin="00:47:38.150" end="00:47:42.300">the entity...potential action and bing causes information</p>
+      <p begin="00:47:42.300" end="00:47:47.000">...to the intelligence platform now this is really</p>
+      <p begin="00:47:47.000" end="00:47:51.840">the best way of telling us and letting us know about mapping entities to actions.</p>
+      <p begin="00:47:51.840" end="00:47:53.440">That doesn't mean that we do not understand</p>
+      <p begin="00:47:53.440" end="00:47:58.080">without it but the more you can give us that accurate information the better we will</p>
+      <p begin="00:47:58.080" end="00:48:02.630">...pinpointing the exact relationship between entities and</p>
+      <p begin="00:48:02.630" end="00:48:07.590">actions we try to infer a lot of things and...pretty good at infer</p>
+      <p begin="00:48:07.590" end="00:48:11.970">...entities...out of unstructured data but adding diskette</p>
+      <p begin="00:48:11.970" end="00:48:17.170">structured data really increases your chances of being a candidate for</p>
+      <p begin="00:48:17.170" end="00:48:21.320">...action answer in...</p>
+      <p begin="00:48:21.320" end="00:48:25.370">Now that's all good maybe I can see quickly</p>
+      <p begin="00:48:25.370" end="00:48:29.260">...in here.</p>
+      <p begin="00:48:29.260" end="00:48:30.040">We're in the process of</p>
+      <p begin="00:48:30.040" end="00:48:39.720">role in working on this and rowing this out and we have a prototype.</p>
+      <p begin="00:48:39.720" end="00:48:42.820">For the...cologne.</p>
+      <p begin="00:48:42.820" end="00:48:52.710">Will never make it is a hand model?</p>
+      <p begin="00:48:52.710" end="00:48:57.910">So, let's...big search arlen there you go so now we have</p>
+      <p begin="00:48:57.910" end="00:49:00.520">...entity.</p>
+      <p begin="00:49:00.520" end="00:49:11.530">And, we have an app that can perform the action that the user...so let's see what that looks like.</p>
+      <p begin="00:49:11.530" end="00:49:12.330">You go.</p>
+      <p begin="00:49:17.490" end="00:49:22.030">So, there you see just by have any action...entity and</p>
+      <p begin="00:49:22.030" end="00:49:26.190">not even having to call of the app name in this case we were able to launch the</p>
+      <p begin="00:49:26.190" end="00:49:34.240">audible lab and I want to thank the audible folks the kind of help is build-out this prototype.</p>
+      <p begin="00:49:34.240" end="00:49:36.900">Now a couple take away this.</p>
+      <p begin="00:49:36.900" end="00:49:41.120">Is a really great...to start now both...app links and schemer</p>
+      <p begin="00:49:41.120" end="00:49:44.180">...because we are ready actively...the web</p>
+      <p begin="00:49:44.180" end="00:49:50.560">...extracting that information ahead of windows ten launch?</p>
+      <p begin="00:49:50.560" end="00:49:55.270">The action answer as you just saw the example for audible.</p>
+      <p begin="00:49:55.270" end="00:49:59.910">Will come along with windows stand?</p>
+      <p begin="00:49:59.910" end="00:50:02.980">Okay, gotcha sorry.</p>
+      <p begin="00:50:02.980" end="00:50:06.330">Yeah, so, we want to start now.</p>
+      <p begin="00:50:06.330" end="00:50:10.390">The action answer will come in certain segments we will started our role in</p>
+      <p begin="00:50:10.390" end="00:50:17.660">...out books movies music and we keep expanding on that as windows time progresses.</p>
+      <p begin="00:50:17.660" end="00:50:22.170">And, the time to get an edge there's no pun intended lights of the name</p>
+      <p begin="00:50:22.170" end="00:50:28.250">...yesterday the time to get an edges now so if you on board</p>
+      <p begin="00:50:28.250" end="00:50:33.420">...schemer arc now your chances are much higher of participating in</p>
+      <p begin="00:50:33.420" end="00:50:38.670">...can canvas early on in that windows...cycle.</p>
+      <p begin="00:50:38.670" end="00:50:41.920">With that I want to point out a couple of quick tools to get</p>
+      <p begin="00:50:41.920" end="00:50:46.710">...help you get stuff done first of all webmaster tools not</p>
+      <p begin="00:50:46.710" end="00:50:48.990">...is out just because I own</p>
+      <p begin="00:50:48.990" end="00:50:53.670">the webmaster experiences but webmaster tools really is the free service that allows you to kind</p>
+      <p begin="00:50:53.670" end="00:50:58.570">of monitor how we crawl and index your pages and gives you data back</p>
+      <p begin="00:50:58.570" end="00:51:04.240">...free service all it requires is a microsoft account to sign up but that way you can even submit</p>
+      <p begin="00:51:04.240" end="00:51:11.390">urls so on so forth and finally just to make a little easier to get started...app links</p>
+      <p begin="00:51:11.390" end="00:51:15.660">...published a...test app that allows you to extract</p>
+      <p begin="00:51:15.660" end="00:51:23.430">...links...see if I can just switch.</p>
+      <p begin="00:51:23.430" end="00:51:28.920">Let me show you how this works.</p>
+      <p begin="00:51:28.920" end="00:51:39.140">...again,...put...behind an account.</p>
+      <p begin="00:51:39.140" end="00:51:43.240">Yeah, so, quickly lap links markup tester what</p>
+      <p begin="00:51:43.240" end="00:51:47.640">...do some lightweight validation but it shows you if we can extract successfully the</p>
+      <p begin="00:51:47.640" end="00:51:50.120">...markup on your page.</p>
+      <p begin="00:51:50.120" end="00:51:52.370">Prepared.</p>
+      <p begin="00:51:52.370" end="00:51:53.750">A little website that contains.</p>
+      <p begin="00:51:54.900" end="00:51:58.580">Several examples.</p>
+      <p begin="00:51:58.580" end="00:51:59.840">Let's duty example.</p>
+      <p begin="00:52:00.940" end="00:52:07.460">City example that...hat.</p>
+      <p begin="00:52:07.460" end="00:52:09.170">Right so here.</p>
+      <p begin="00:52:09.170" end="00:52:12.810">You cannot see this one.</p>
+      <p begin="00:52:12.810" end="00:52:15.130">...my apologies,</p>
+      <p begin="00:52:15.130" end="00:52:19.760">yeah, so, I went to aka dot microsoft whack app...</p>
+      <p begin="00:52:19.760" end="00:52:21.940">...could entity url here?</p>
+      <p begin="00:52:21.940" end="00:52:25.040">...as soon as a fetched url.</p>
+      <p begin="00:52:25.040" end="00:52:28.030">We'll see what we can extract obviously this</p>
+      <p begin="00:52:28.030" end="00:52:32.390">...task mark-up you wouldn't have all these things in there but here you can</p>
+      <p begin="00:52:32.390" end="00:52:38.180">...were able to extract windows eight mark-up windows phone market windows universal market from this particular</p>
+      <p begin="00:52:38.180" end="00:52:41.710">...but also ios...because that worked on those platforms</p>
+      <p begin="00:52:41.710" end="00:52:47.400">...and we have some lightweight validation that tells you ...might be a typo and what</p>
+      <p begin="00:52:47.400" end="00:52:53.660">...specified in terms of the in terms of the platform?</p>
+      <p begin="00:52:53.660" end="00:53:00.550">so, very easy to quickly get a look if you want to see what apologies.</p>
+      <p begin="00:53:00.550" end="00:53:05.520">...just quickly see what that looks like on the published page.</p>
+      <p begin="00:53:05.520" end="00:53:10.340">So, basically.</p>
+      <p begin="00:53:10.340" end="00:53:14.080">I exerted might incredible web developer skills to create at the same</p>
+      <p begin="00:53:14.080" end="00:53:18.610">...web corresponding web page to the whole...</p>
+      <p begin="00:53:18.610" end="00:53:19.930">And, if you look into the source.</p>
+      <p begin="00:53:21.100" end="00:53:23.620">You see this kind of.</p>
+      <p begin="00:53:23.620" end="00:53:25.170">App links that art mark-up.</p>
+      <p begin="00:53:26.580" end="00:53:34.550">...re just for example, but, you can see this works...many device platforms.</p>
+      <p begin="00:53:34.550" end="00:53:39.200">Very stream a simple to...great for users now we can link your apps</p>
+      <p begin="00:53:39.200" end="00:53:43.120">or search results and entities to action's.</p>
+      <p begin="00:53:43.120" end="00:53:51.300">All right without what bring andrew back-up.</p>
+      <p begin="00:53:51.300" end="00:53:58.250">And, talk about our call-to-action.</p>
+      <p begin="00:53:58.250" end="00:54:02.340">Thank you vincent that's great so basically it's just some simple markups you can make and now</p>
+      <p begin="00:54:02.340" end="00:54:06.490">you're apps much more discoverable and just point users specifically deeply inside yet to</p>
+      <p begin="00:54:06.490" end="00:54:10.800">...that he wants exactly and the good thing is it's not proprietary so those are</p>
+      <p begin="00:54:10.800" end="00:54:15.780">open standards that we can use everywhere on different device types and we brain windows</p>
+      <p begin="00:54:15.780" end="00:54:19.970">...into this in a big way awesome applicable orig</p>
+      <p begin="00:54:19.970" end="00:54:25.540">signal org great so...thanks again for joining us today I believe</p>
+      <p begin="00:54:25.540" end="00:54:29.910">...link like to leave you with is there but being dot com if you go in</p>
+      <p begin="00:54:29.910" end="00:54:34.680">there you'll find all of the services the api isn't tools we have been exploring</p>
+      <p begin="00:54:34.680" end="00:54:39.350">today and we also released...solutions website for go-to being dot com</p>
+      <p begin="00:54:39.350" end="00:54:43.800">...solutions you find the overall being solutions not only that tech ones but also</p>
+      <p begin="00:54:43.800" end="00:54:48.410">all the business solutions we can provide you directly to check that as well ...</p>
+      <p begin="00:54:48.410" end="00:54:53.300">then if you go to...being...common click on the search api or just go directly to the link you</p>
+      <p begin="00:54:53.300" end="00:54:58.200">can see here in the second bullet in this light you can get more information...search api sign up you</p>
+      <p begin="00:54:58.200" end="00:55:03.100">...just explore you some exploring lots of different parameters of the api</p>
+      <p begin="00:55:03.100" end="00:55:08.240">all the documentation is in there as well and finally some people they really get interested in the</p>
+      <p begin="00:55:08.240" end="00:55:12.780">translation thing I just really scratch the surface with...really quick demo you can explore more</p>
+      <p begin="00:55:12.780" end="00:55:17.640">...microsoft translator hub website that's hub dot microsoft translator</p>
+      <p begin="00:55:17.640" end="00:55:21.880">dot com vincent...the call selection for z at lincoln that discover stuff,</p>
+      <p begin="00:55:21.880" end="00:55:26.210">yeah, so, thank you...and participating incur...and especially action,</p>
+      <p begin="00:55:26.210" end="00:55:29.910">action answer...now we're working on crawling the web</p>
+      <p begin="00:55:29.910" end="00:55:35.580">...creating those relationships enable the applicant...enable schemer</p>
+      <p begin="00:55:35.580" end="00:55:40.600">...protocol handling and your activation we did this for your app actually I major</p>
+      <p begin="00:55:40.600" end="00:55:45.450">do this and what it took us five minutes to actually...to make this happen and</p>
+      <p begin="00:55:45.450" end="00:55:50.440">...entity centric pages that are about entities people places things with that</p>
+      <p begin="00:55:50.440" end="00:55:53.930">...mark-up and, finally...the free</p>
+      <p begin="00:55:53.930" end="00:55:59.040">being tools that we have use the api is use the webmaster tools to stay</p>
+      <p begin="00:55:59.040" end="00:56:02.330">up-to-date about how we crawl and index your website</p>
+      <p begin="00:56:02.330" end="00:56:07.130">...use a little things like the app links a markup tester and we will keep expanding</p>
+      <p begin="00:56:07.130" end="00:56:11.980">that set of capabilities for developers overcoming months?</p>
+      <p begin="00:56:11.980" end="00:56:14.950">With that.</p>
+      <p begin="00:56:14.950" end="00:56:19.860">Yeah, that's great so we do have also these channel for you to provide feedback which is</p>
+      <p begin="00:56:19.860" end="00:56:24.720">...microsoft is lash being that feedback we are opening this website for all</p>
+      <p begin="00:56:24.720" end="00:56:29.390">...tell us what is the direction we should take moving</p>
+      <p begin="00:56:29.390" end="00:56:33.810">...api stools and services so-if you-can drop as a comment in there you can check</p>
+      <p begin="00:56:33.810" end="00:56:38.370">...contribution in their and...on your suggestions as well that would be great like lisa</p>
+      <p begin="00:56:38.370" end="00:56:43.310">...or developer community and be able now to just...steer...api and tools</p>
+      <p begin="00:56:43.310" end="00:56:48.660">the right direction and we also have a both in the third-floor...finishes I think...</p>
+      <p begin="00:56:48.660" end="00:56:53.780">and today so there's always someone there just go-there talk to us explore more demos</p>
+      <p begin="00:56:53.780" end="00:56:57.520">of a bunch of other things to show like the bing developer assistant plug-in so</p>
+      <p begin="00:56:57.520" end="00:57:03.540">visual studio couple of other things in...as well so please...to third-floor will be great...been there.</p>
+      <p begin="00:57:03.540" end="00:57:07.350">Perfect and we hope you like the session please evaluators now</p>
+      <p begin="00:57:07.350" end="00:57:11.490">...small but the lead group here today so please leave your</p>
+      <p begin="00:57:11.490" end="00:57:15.570">feedback we appreciate your coming very much and enjoy the rest</p>
+      <p begin="00:57:15.570" end="00:57:20.930">...and...safe trip home if you're driving home today or...weekend thank you thank you</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.887</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.020" end="00:00:04.720">Where here advil the twenty fifteen addition I'm here with...centers how</p>
+      <p begin="00:00:04.720" end="00:00:10.190">...very good to...shake hands on the zip we should we should because they're totally not</p>
+      <p begin="00:00:10.190" end="00:00:14.430">contrived this right barely just reading just ran into each other right all while...</p>
+      <p begin="00:00:14.430" end="00:00:19.140">beating it's amazing that...both here so tell us...we...mikes what do you</p>
+      <p begin="00:00:19.140" end="00:00:23.950">...microsoft im the ba director program management responsible for...in the asher</p>
+      <p begin="00:00:23.950" end="00:00:28.050">t love the...a...infrastructure the service cloud services these sorts of things...</p>
+      <p begin="00:00:28.050" end="00:00:33.050">myself so what are the announcement that you're most excited about your built twenty fifteen</p>
+      <p begin="00:00:33.050" end="00:00:38.660">maybe have some to show is a laptop happens me hooked...well I brought it here so I might as well use</p>
+      <p begin="00:00:38.660" end="00:00:43.720">...absolutely so I'll start just a little bit of a description of what we did here we announced yesterday actually</p>
+      <p begin="00:00:43.720" end="00:00:48.130">...via blog announcement of a new api actually a template</p>
+      <p begin="00:00:48.130" end="00:00:53.660">based api that will enabled you to deploy many resources virtual</p>
+      <p begin="00:00:53.660" end="00:00:59.110">machine networkingresources neck load balance are all these things you can put them all together</p>
+      <p begin="00:00:59.110" end="00:01:04.430">in a json template now okay and deploy them all as a single unit a single click so it's that</p>
+      <p begin="00:01:04.430" end="00:01:07.660">degrades that's pretty amazing because it is</p>
+      <p begin="00:01:07.660" end="00:01:11.720">days of yours what would happen is I would startedit</p>
+      <p begin="00:01:11.720" end="00:01:16.590">wouldn't work and I would fix it and then it would work and I do the...again radio as I</p>
+      <p begin="00:01:16.590" end="00:01:21.130">still would come...would do the thing...it would work that's right that's right and then</p>
+      <p begin="00:01:21.130" end="00:01:24.960">relate well now when you do it again now you check the whole thing in exactly how we need to do it again</p>
+      <p begin="00:01:24.960" end="00:01:30.340">...fills...I'll get in here right do we have...villains I</p>
+      <p begin="00:01:30.340" end="00:01:35.210">...filled out here so why can't we can't...there's no way we get so we'll do this another that...of it so,</p>
+      <p begin="00:01:35.210" end="00:01:39.480">one of the things that we ended up...yeah, it's all template base now and, deeply integrated and</p>
+      <p begin="00:01:39.480" end="00:01:43.780">...it also deeply integrates with deploying things inside the m as well as you can run</p>
+      <p begin="00:01:43.780" end="00:01:47.880">scripts and silo so it's not just the infrastructure itself you can actually</p>
+      <p begin="00:01:47.880" end="00:01:53.240">setups inside that's the sound washed is it does it make that...does okay you</p>
+      <p begin="00:01:53.240" end="00:01:58.130">...it's really annoying actually you have some you could...I'm not sure if you things it's like open</p>
+      <p begin="00:01:58.130" end="00:02:02.420">...well so I'm here I just to show you how to find this when you're actually when</p>
+      <p begin="00:02:02.420" end="00:02:04.260">...actually going back and saying gosh, that was cool what</p>
+      <p begin="00:02:04.260" end="00:02:09.010">...I do community and templates and this...new section that we've</p>
+      <p begin="00:02:09.010" end="00:02:13.960">got guys so you can see now as...quick start templates...you can go down here you can see this</p>
+      <p begin="00:02:13.960" end="00:02:19.400">really amazing list of content here so you can kind of scroll down and see some examples here, you know,</p>
+      <p begin="00:02:19.400" end="00:02:24.170">here's...elastic...cluster of virtual machines you can look, for example,</p>
+      <p begin="00:02:24.170" end="00:02:28.760">template user beings that agnew ok so...actually go in here and pick one</p>
+      <p begin="00:02:28.760" end="00:02:33.540">scholastic search which...a full cluster...you can see parameters</p>
+      <p begin="00:02:33.540" end="00:02:37.170">...in the descriptions art supplied right now but you can see a set of parameters</p>
+      <p begin="00:02:37.170" end="00:02:41.200">what this is going to enable you to do is you can deploy multiple instances virtual</p>
+      <p begin="00:02:41.200" end="00:02:45.980">machines so on put them all together these parameters will pass out through those resources to</p>
+      <p begin="00:02:45.980" end="00:02:50.340">deploy it okay right so in this case what I'm going to do just to start off is show you a quick</p>
+      <p begin="00:02:50.340" end="00:02:53.980">deployed asher button right launch that up it goes straight into</p>
+      <p begin="00:02:53.980" end="00:02:59.300">the portal experience so it's running that script in the for now it's basically taking that template...the</p>
+      <p begin="00:02:59.300" end="00:03:02.370">...you can see here actually a new experience</p>
+      <p begin="00:03:02.370" end="00:03:06.930">...part of the portal the json template is just there it's just waiting for me now all that I</p>
+      <p begin="00:03:06.930" end="00:03:12.250">...even go in edit this if I want to rights or delete that...won't work now become a back but,</p>
+      <p begin="00:03:12.250" end="00:03:17.440">in fact you see it actually gets mad at...grills...access like that doesn't make sense so you go in here so here,</p>
+      <p begin="00:03:17.440" end="00:03:17.660">you know,</p>
+      <p begin="00:03:17.660" end="00:03:23.270">the parameters...go in and spend some time actually showing you some details on this but you're right here in the portal I can go in</p>
+      <p begin="00:03:23.270" end="00:03:29.960">and edited make updates so on so, this is a json...one actually walk through a little bit of it</p>
+      <p begin="00:03:29.960" end="00:03:35.050">was...and show you a little bit so here the very top section you can see we've got parameters so these are the things that are</p>
+      <p begin="00:03:35.050" end="00:03:40.120">coming in from the user and in this case...you can go put those parameters</p>
+      <p begin="00:03:40.120" end="00:03:45.280">...you can also passive in through the command line experience...so on which all which I'll show you</p>
+      <p begin="00:03:45.280" end="00:03:49.440">here...a bit so let me scroll down a lot of parameters you can choose the os you can choose</p>
+      <p begin="00:03:49.440" end="00:03:53.940">...load balance or type you know,...external so,</p>
+      <p begin="00:03:53.940" end="00:03:58.750">on so this deploys your for elastic search cluster lot of parameters here let's see</p>
+      <p begin="00:03:58.750" end="00:04:02.890">...standing up a whole you're not setting a machine you're setting up like the multiple</p>
+      <p begin="00:04:02.890" end="00:04:07.590">...that's right that's right so here now you go down and now you're into some variables right so this can</p>
+      <p begin="00:04:07.590" end="00:04:11.550">...things together, you know, you can build your variables out by taking some of the parameters</p>
+      <p begin="00:04:11.550" end="00:04:15.840">and building them so you can see here like the...a network settings we're going to</p>
+      <p begin="00:04:15.840" end="00:04:20.660">take some parameters that were passed in like the virtual network name and then you're going to attach the subnet</p>
+      <p begin="00:04:20.660" end="00:04:23.830">values to it so you're going to build-out your virtual network for</p>
+      <p begin="00:04:23.830" end="00:04:26.180">the software defined right you can go in can</p>
+      <p begin="00:04:26.180" end="00:04:29.810">...things so here you can see the template base url</p>
+      <p begin="00:04:29.810" end="00:04:35.050">is going to compact with shared resource that json it just puts out on the end so that you can use that in your template</p>
+      <p begin="00:04:35.050" end="00:04:37.380">...lots of our here to be able to do some really,</p>
+      <p begin="00:04:37.380" end="00:04:40.780">really impressive stuff I think the best thing is like if you're the</p>
+      <p begin="00:04:40.780" end="00:04:44.920">kind of guy or gal as your developing this infrastructure and?</p>
+      <p begin="00:04:44.920" end="00:04:49.770">You're sort of...with things up you could totally put the new adjacent file</p>
+      <p begin="00:04:49.770" end="00:04:54.390">trite check it in and when you...again you just...other thing is...are and someone</p>
+      <p begin="00:04:54.390" end="00:04:59.300">can fiddle on top of your fiddling...right and now you've got multiple fiddling less...look a whole symphony</p>
+      <p begin="00:04:59.300" end="00:05:06.340">...symphony of fiddling which...it was music to my...this one well so,</p>
+      <p begin="00:05:06.340" end="00:05:12.080">this is not as much for this is not rehearses l if it were rehearse this would be going down I think so,</p>
+      <p begin="00:05:12.080" end="00:05:14.900">here you can see as an example, you know, the actual resources that</p>
+      <p begin="00:05:14.900" end="00:05:19.680">we're going to deploy right so let me just kind of scroll down here and pick one that's perhaps an</p>
+      <p begin="00:05:19.680" end="00:05:24.080">interesting one here so let's see what should I pick me scroll down here and,</p>
+      <p begin="00:05:24.080" end="00:05:30.820">find one that's particularly...so ...I want to find the virtual network here so one</p>
+      <p begin="00:05:30.820" end="00:05:35.630">of the interesting things here that you can see being deployed here is this takes sort of the</p>
+      <p begin="00:05:35.630" end="00:05:39.870">username or password...takes a storage account and picks to regions and this is actually going to</p>
+      <p begin="00:05:39.870" end="00:05:44.320">speed up your instances...the other things that you'll see here that we'll talk about a little bit more...the in</p>
+      <p begin="00:05:44.320" end="00:05:49.830">the documentation this thing called copy index so this is a loop so what you can do here is now you can</p>
+      <p begin="00:05:49.830" end="00:05:55.030">...up multiple instances of this of this virtual machine...this node and you can you know,</p>
+      <p begin="00:05:55.030" end="00:06:00.030">first of all you'll say hey it's going to it's going to depend upon some of the shared resources that were deployed earlier and make</p>
+      <p begin="00:06:00.030" end="00:06:04.700">sure that those finish before you start here specify understand your this is like</p>
+      <p begin="00:06:04.700" end="00:06:06.610">work copying multiple instances of</p>
+      <p begin="00:06:06.610" end="00:06:11.550">...yes creating multiple is a vm so the copy indexes the way of saying this is</p>
+      <p begin="00:06:11.550" end="00:06:15.530">a loop right and you can see we name the loop and the count is actually going to</p>
+      <p begin="00:06:15.530" end="00:06:20.380">this came in as a parameter so you get to define as a customer I won ten of these I won five of the</p>
+      <p begin="00:06:20.380" end="00:06:24.900">...so the count comes in here right and then you can actually go down and the actual</p>
+      <p begin="00:06:24.900" end="00:06:29.430">the copy index which is here it's calls into the system and says what number</p>
+      <p begin="00:06:29.430" end="00:06:33.840">among so this is actually the storage account name that's being created takes from</p>
+      <p begin="00:06:33.840" end="00:06:38.830">the loop iso...name now is can carrying the account prefix...adding...number on the</p>
+      <p begin="00:06:38.830" end="00:06:43.470">...to this is a may really powerful as...because remember back of the day when we do</p>
+      <p begin="00:06:43.470" end="00:06:48.560">...more compute we just have to go to the store and buy it's like and then we had...the</p>
+      <p begin="00:06:48.560" end="00:06:53.990">...edit a role right now this is the unbelievable our right so now you can do all these things you put</p>
+      <p begin="00:06:53.990" end="00:06:57.500">them in the same availability said you've got high availability so this is all, you know,</p>
+      <p begin="00:06:57.500" end="00:07:02.330">editing in the portal let's say go savior great now I come in and now my</p>
+      <p begin="00:07:02.330" end="00:07:07.670">parameters options are ready in the portal so now I can deploy so I go in here the parameters</p>
+      <p begin="00:07:07.670" end="00:07:12.340">are ready my username password these are all the parameter just define the template right and now</p>
+      <p begin="00:07:12.340" end="00:07:16.930">they're ready for me to deploys a portsmouth someone else could take my template and just deploy it using</p>
+      <p begin="00:07:16.930" end="00:07:21.900">the parameters and they know that they've got the control tested experience that they that they want...so as a</p>
+      <p begin="00:07:21.900" end="00:07:27.110">software company you could literally build this really good software so as well I don't have</p>
+      <p begin="00:07:27.110" end="00:07:33.100">the machinery stand-up that's okay here's our custom...going-to as...and...put our software on</p>
+      <p begin="00:07:33.100" end="00:07:37.480">that's right so not only now are you able to deploy your software to</p>
+      <p begin="00:07:37.480" end="00:07:41.260">your customer right you can give...entire exact...</p>
+      <p begin="00:07:41.260" end="00:07:46.420">infrastructure right that will just work that's right and the installations that go on to the gm's and we</p>
+      <p begin="00:07:46.420" end="00:07:50.420">...to you can run the scripts on the ibm's and make that all-party a parameters</p>
+      <p begin="00:07:50.420" end="00:07:55.170">...password so now we've gone past the point of here's a cd install it</p>
+      <p begin="00:07:55.170" end="00:07:59.190">...right here here's a file what is stand-up the entire compute</p>
+      <p begin="00:07:59.190" end="00:08:03.240">...right structure and put the software on...that's right...in a preconfigured</p>
+      <p begin="00:08:03.240" end="00:08:06.960">...very cool so let me actually what I'm going to do...I'm actually going to skip over to get</p>
+      <p begin="00:08:06.960" end="00:08:12.540">hum okay because all of these templates that I just showed you actually all the ones that were in that portal</p>
+      <p begin="00:08:12.540" end="00:08:18.510">page that I showed you in...dot com actually let me go back to that time?</p>
+      <p begin="00:08:18.510" end="00:08:22.670">Click over here so here and get how we actually have a repository that we just that</p>
+      <p begin="00:08:22.670" end="00:08:27.500">we've created for this purpose that's called as...quick star templates okay and as</p>
+      <p begin="00:08:27.500" end="00:08:31.750">your dot com the page that I showed you that can had the search mechanism...found the last search</p>
+      <p begin="00:08:31.750" end="00:08:36.070">is actually pulling from this always a little script that we built that polls from the content</p>
+      <p begin="00:08:36.070" end="00:08:40.550">...here so now anyone can go build content and it'll show up in the...content as</p>
+      <p begin="00:08:40.550" end="00:08:45.830">...awesome so-and-so super so now someone as like hey, this is a respite values...a resume you put</p>
+      <p begin="00:08:45.830" end="00:08:51.040">...pork was right show up on...salami actually show ...you know,</p>
+      <p begin="00:08:51.040" end="00:08:56.980">the my favorite since of course I...course I a made it myself...</p>
+      <p begin="00:08:56.980" end="00:09:02.050">I made right so what this one does and I'll actually it's you see it's actually in the repository</p>
+      <p begin="00:09:02.050" end="00:09:07.250">under...as a quick...templates and I can go in and here's the json file so similar</p>
+      <p begin="00:09:07.250" end="00:09:12.180">sort of story set of parameters a pass through right and then of course here's and this only...of</p>
+      <p begin="00:09:12.180" end="00:09:17.200">one vm so it's a little bit less complex size...account public ip virtual network so this is</p>
+      <p begin="00:09:17.200" end="00:09:21.290">...network in the neck so I'm actually spinning up the...here and then...I</p>
+      <p begin="00:09:21.290" end="00:09:26.100">...virtual machine years name and password the interesting thing here what I'm doing this uses the</p>
+      <p begin="00:09:26.100" end="00:09:29.290">doctor extension that we've that we that we build and</p>
+      <p begin="00:09:29.290" end="00:09:32.430">...does it pulls the latest doctor engine down right on this</p>
+      <p begin="00:09:32.430" end="00:09:37.410">...xbox and actually installs these images that are from doctor hub so in this case</p>
+      <p begin="00:09:37.410" end="00:09:42.190">...parameters so you could say, you know, I want, you know, I want and,</p>
+      <p begin="00:09:42.190" end="00:09:47.130">...install I one...is to install right and you'll pass that through as parameters will spin</p>
+      <p begin="00:09:47.130" end="00:09:51.380">up the vm bring down the doctor engine and put those containers on the box in one</p>
+      <p begin="00:09:51.380" end="00:09:56.700">swoop but wait there's more islip I saw...you go back there was a</p>
+      <p begin="00:09:56.700" end="00:10:02.350">deployed as...love to go back, yeah, so, here you can see the parameter the options right so, yeah, so,</p>
+      <p begin="00:10:02.350" end="00:10:07.820">I go back deployed asher and...name experience it goes all the way back you can</p>
+      <p begin="00:10:07.820" end="00:10:11.840">deployed directly from that get hub experience right back into this experience that's from</p>
+      <p begin="00:10:11.840" end="00:10:16.090">...now goes back to the portal right and let's say I'm not going to change I like what I've got here I had</p>
+      <p begin="00:10:16.090" end="00:10:19.490">saved and then you can see my parameters and like I said, you know, and,</p>
+      <p begin="00:10:19.490" end="00:10:22.290">in fact I have the default values there if you want to just use engine</p>
+      <p begin="00:10:22.290" end="00:10:27.480">...read mongolia away you got so if you're if you're the type that likes to experiment</p>
+      <p begin="00:10:27.480" end="00:10:31.770">with new-style absolutely you could totally stand-up like experimental environment</p>
+      <p begin="00:10:31.770" end="00:10:37.820">right of a certain...and do whatever kind of test you want...that's right that's exactly right, yeah,</p>
+      <p begin="00:10:37.820" end="00:10:42.190">that's exactly that's exactly the case so it allows you to sort of build on that and let me actually go back to</p>
+      <p begin="00:10:42.190" end="00:10:48.190">this template thing this page...dot com to sort of show what I meant about this being index so</p>
+      <p begin="00:10:48.190" end="00:10:53.380">all search for doctor here and there there's, you know, there's my might the one that I built-in you can see up here in the</p>
+      <p begin="00:10:53.380" end="00:10:58.100">upper-left pulls from get hub the picture that so there's might...you know, my ugly bug up there</p>
+      <p begin="00:10:58.100" end="00:11:03.480">on the left that's the upper-left so this will make it so people can search...you can find this and,</p>
+      <p begin="00:11:03.480" end="00:11:08.440">you can I go to point later so here's a question, yeah, is it when it's deploying this is a deploying</p>
+      <p begin="00:11:08.440" end="00:11:13.850">into its own resource group or how does that workbecause there's...there's a notion of resource group</p>
+      <p begin="00:11:13.850" end="00:11:17.840">...regroup stuff together...right how does this do this, yeah, great question so when you deployed that</p>
+      <p begin="00:11:17.840" end="00:11:23.200">portal experience it does deploy to a new resource group that's basically generated on your behalf and,</p>
+      <p begin="00:11:23.200" end="00:11:28.630">it all spin up the resources within it right so, for that experience yes it ends up being sort of</p>
+      <p begin="00:11:28.630" end="00:11:32.890">its own dedicated research group through our show or through the</p>
+      <p begin="00:11:32.890" end="00:11:36.660">...alive which I actually can show you now I want to you can actually</p>
+      <p begin="00:11:36.660" end="00:11:40.270">...to other resources you have a lot more control there you can crayon research group you can</p>
+      <p begin="00:11:40.270" end="00:11:42.880">...its other ones so actually maybe I'll take this as</p>
+      <p begin="00:11:42.880" end="00:11:47.620">...there's a computer here...you're here I might as well as do it so let's actually go over here and I'm</p>
+      <p begin="00:11:47.620" end="00:11:53.400">actually I'm running here actually in my in my get hub experience but I do that just because I use</p>
+      <p begin="00:11:53.400" end="00:11:57.090">...right can zoom in a little...let's see or does you know,</p>
+      <p begin="00:11:57.090" end="00:12:02.920">what my zoom it's not on hold on one...you shy install...real...it was...</p>
+      <p begin="00:12:02.920" end="00:12:09.350">the right whereas it I added up here okay should I go all the way here let's go all the</p>
+      <p begin="00:12:09.350" end="00:12:12.130">...man we might as well doing this live here</p>
+      <p begin="00:12:12.130" end="00:12:16.230">...this isn't going to work for me this isn't going to work from you guys?</p>
+      <p begin="00:12:16.230" end="00:12:20.470">All right let's do...says a...that's a better idea, you know, I</p>
+      <p begin="00:12:20.470" end="00:12:24.330">like the way you think sometimes I have a really good thoughts...</p>
+      <p begin="00:12:24.330" end="00:12:28.390">In this house that is that...too big nativity big aren't so great so</p>
+      <p begin="00:12:28.390" end="00:12:33.620">...actually in the get...prompt and the reason why do this is actually the way I do sh so, I'm going to</p>
+      <p begin="00:12:33.620" end="00:12:38.590">actually sh into a...you want to into a exactly, exactly...look at my</p>
+      <p begin="00:12:38.590" end="00:12:45.160">passable...going to actually system research required well let me get this done quickly here what</p>
+      <p begin="00:12:45.160" end="00:12:49.830">I can do is I'm actually running...boxes running in...and the reason why I'm here...I want to show the...</p>
+      <p begin="00:12:49.830" end="00:12:54.590">with which runs cross platform right so well actually do here is I'm going to pull down</p>
+      <p begin="00:12:54.590" end="00:13:00.300">whoops let's see here that is the latest one I'm going to pull down the latest</p>
+      <p begin="00:13:00.300" end="00:13:04.710">...I we...container that makes the super easy to run cool right so I've got the</p>
+      <p begin="00:13:04.710" end="00:13:11.120">...I'm going-to go ahead and log in here oops?</p>
+      <p begin="00:13:11.120" end="00:13:16.780">So, this...it's the latest...and, it pulls down... right away I can go in and use my</p>
+      <p begin="00:13:16.780" end="00:13:18.020">...here to login.</p>
+      <p begin="00:13:19.060" end="00:13:23.910">Okay, abc one-two-three...cat now you can see...</p>
+      <p begin="00:13:23.910" end="00:13:27.500">Okay, yeah, okay, that's it that's it I think I got...so,</p>
+      <p begin="00:13:27.500" end="00:13:32.440">what this does this...into my account so now I'm using the full command line experience right I can do</p>
+      <p begin="00:13:32.440" end="00:13:37.620">any sort of thing I can I do the normal sort of add the m all using the new api but I can actually</p>
+      <p begin="00:13:37.620" end="00:13:42.650">...copy these down a little bit of...your guys no way ...boring gallons</p>
+      <p begin="00:13:42.650" end="00:13:47.430">...copy so I'm going to do here is actually move out of this new mode for the api so,</p>
+      <p begin="00:13:47.430" end="00:13:51.630">this is sort of a new it's arm agile resource manager mode so here like</p>
+      <p begin="00:13:51.630" end="00:13:56.900">you asked now I can actually make it more specific right I mean actually name my resource group so that's</p>
+      <p begin="00:13:56.900" end="00:14:02.030">...rgb right so all name...in west us into a little bit more control now</p>
+      <p begin="00:14:02.030" end="00:14:05.680">...take these templates and apply them to a resource</p>
+      <p begin="00:14:05.680" end="00:14:11.280">invert exif exactly so in this case I've already I'm going to create a resource group so this is calling</p>
+      <p begin="00:14:11.280" end="00:14:15.810">back and hopefully connectivity connectivity works here so while that's coming</p>
+      <p begin="00:14:15.810" end="00:14:19.780">in all actually show you what I'm going to run here so this is also a little bit smaller than</p>
+      <p begin="00:14:19.780" end="00:14:25.605">...let's see here format font let's zoom this...perfect so what I'm actually going</p>
+      <p begin="00:14:25.605" end="00:14:30.690">to do here is I'm actually going to run as a group create so what this does is it will create this deployment is going to</p>
+      <p begin="00:14:30.690" end="00:14:33.960">created in the...argue that I'm that I'm creating right nowand,</p>
+      <p begin="00:14:33.960" end="00:14:37.900">actually can pull straight from get up so it's the same that what the template</p>
+      <p begin="00:14:37.900" end="00:14:42.700">...in get hub it now pulled it down so this...deploys simple linux vm right</p>
+      <p begin="00:14:42.700" end="00:14:48.080">...another...that I built right so, you know, it's good, yeah, it's...be, you know, what I got feeling right and,</p>
+      <p begin="00:14:48.080" end="00:14:52.840">this pulled it straight from there and can deployed right so it's amazing how...just take</p>
+      <p begin="00:14:52.840" end="00:14:57.590">...the group is created all actually launch that and there's going to be some parameters most</p>
+      <p begin="00:14:57.590" end="00:15:02.670">likely right so let me see up there's a parameter requests and those are the same parameters that is</p>
+      <p begin="00:15:02.670" end="00:15:06.480">real-world that's right exactly right so now I can I could also passes in</p>
+      <p begin="00:15:06.480" end="00:15:11.320">a scripting options so I could script the whole thing right in this case all, you know, go and say look</p>
+      <p begin="00:15:11.320" end="00:15:14.130">khoury demo one</p>
+      <p begin="00:15:14.130" end="00:15:19.250">the username or passwordabc...now you...it actually look away</p>
+      <p begin="00:15:19.250" end="00:15:24.230">look away the dns name so this also has to be sort of a unique dns names all say, you know,</p>
+      <p begin="00:15:24.230" end="00:15:28.740">this announce away we go so to actually create those deployments</p>
+      <p begin="00:15:28.740" end="00:15:33.220">...some e-mail clearly ...doing that is right and,</p>
+      <p begin="00:15:33.220" end="00:15:36.390">wait for those complete you can...creating storage going to create a neck</p>
+      <p begin="00:15:36.390" end="00:15:40.990">...vm and then it also...vm for me using the extension model</p>
+      <p begin="00:15:40.990" end="00:15:45.520">...we go that's...story to say look running on linux when it</p>
+      <p begin="00:15:45.520" end="00:15:51.370">comes to computing you can you could work on the software we can stand-up anything you want</p>
+      <p begin="00:15:51.370" end="00:15:55.960">...everyone that's right that's...any other announcements if you want to talk about and closing,</p>
+      <p begin="00:15:55.960" end="00:16:01.510">yeah,...like, you know, this is great and I mean I think the thing that we really love about it's really enable a</p>
+      <p begin="00:16:01.510" end="00:16:04.850">lot of new partnerships as well as so, this new api</p>
+      <p begin="00:16:04.850" end="00:16:09.780">it's so powerful and it's so great what we're seeing a lot of excitement in fact we nancy's as well yesterday</p>
+      <p begin="00:16:09.780" end="00:16:14.910">...new partnership with confounding a who will be building on top of this j elastic who we building on top of this</p>
+      <p begin="00:16:14.910" end="00:16:19.720">...as well that's so, they're building some great stuff we've got working with the</p>
+      <p begin="00:16:19.720" end="00:16:24.840">...we got doo-doo also being a able to deploy on top of this and the scalar as well butand,</p>
+      <p begin="00:16:24.840" end="00:16:28.110">then write scale so we just a ton of partners and really exciting stuff</p>
+      <p begin="00:16:28.110" end="00:16:32.720">...all of really built around this new this new model all json</p>
+      <p begin="00:16:32.720" end="00:16:37.640">base very open very easy-to-use and...my friends can be a...well make your own</p>
+      <p begin="00:16:37.640" end="00:16:41.470">template submit polar question they'll show up as dot as a within as</p>
+      <p begin="00:16:41.470" end="00:16:47.560">...dot com now anyone can find them you can go search for them and, a way you go so...the best</p>
+      <p begin="00:16:47.560" end="00:16:51.830">write make you're the one that people want to use a on top of measure thanks so much for spending some time I</p>
+      <p begin="00:16:51.830" end="00:16:58.080">loaded man it was great...works...what's...I could you ask for so at least take a look at these things</p>
+      <p begin="00:16:58.080" end="00:17:03.150">and, if you have any questions you can always look you up work that's right, yeah, so, you can find me at twitter</p>
+      <p begin="00:17:03.150" end="00:17:10.600">which is at...standards...and make sure...it so it send all the twists...</p>
+      <p begin="00:17:10.600" end="00:17:14.150">Yet and but, no, commons about fiddle that's what we're going to we're not going to</p>
+      <p begin="00:17:14.150" end="00:17:18.690">do any symphonies of fiddling on top of twitter all right it's got super awkward idaho's</p>
+      <p begin="00:17:18.690" end="00:17:23.280">...not to but known...the perfect amount this is really good banter this is</p>
+      <p begin="00:17:23.280" end="00:17:28.350">really this...real we can actually start to show, yeah,the real gentleman</p>
+      <p begin="00:17:28.350" end="00:17:34.370">...so, you're...love it will thanks for watching we'll see you next time guys take care I thanks-a-lot.</p>
+
+    </div>
+  </body>
+</tt>

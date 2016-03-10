@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.943</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.010" end="00:00:08.900">Okay, you guys ready to go you guys all pumped up after the key notes this</p>
+      <p begin="00:00:08.900" end="00:00:12.380">morning some pretty awesome stuff.</p>
+      <p begin="00:00:12.380" end="00:00:17.280">First of all I wanted to thank you guys for coming to build conference today and also thank you for</p>
+      <p begin="00:00:17.280" end="00:00:20.860">coming to this session I will to a little bit of slide's</p>
+      <p begin="00:00:20.860" end="00:00:25.880">up-front but for the most part I have I think let's see nine demos that</p>
+      <p begin="00:00:25.880" end="00:00:31.080">...a each have five or six part so this will be an extremely</p>
+      <p begin="00:00:31.080" end="00:00:35.990">demo filled session...some of my demos were failing this morning and we got a</p>
+      <p begin="00:00:35.990" end="00:00:39.630">backup machine so I'm on the edge of my see to see if</p>
+      <p begin="00:00:39.630" end="00:00:41.680">this'll actually all work we do have some</p>
+      <p begin="00:00:41.680" end="00:00:46.370">...so I don't I don't think you should be worried we will be able to see everything I just might need</p>
+      <p begin="00:00:46.370" end="00:00:51.150">...between machines a little bit so first of all let me introduce</p>
+      <p begin="00:00:51.150" end="00:00:56.060">myself my name is amanda silver I'm the director of program management for the team that</p>
+      <p begin="00:00:56.060" end="00:01:00.090">works on client applications within visual studio so,</p>
+      <p begin="00:01:00.090" end="00:01:04.230">that actually covers all applet any tool for building</p>
+      <p begin="00:01:04.230" end="00:01:08.470">app for windows applications across all of the different windows</p>
+      <p begin="00:01:08.470" end="00:01:13.720">devices the native, nativesample experience things like that ieee.</p>
+      <p begin="00:01:13.720" end="00:01:16.910">So, the...twelve tools that you guys might have used in internet</p>
+      <p begin="00:01:16.910" end="00:01:22.110">explore now edge that is also on my team as well as the type script</p>
+      <p begin="00:01:22.110" end="00:01:26.920">programming language and the tools for patchy cordova I also work very closely with this</p>
+      <p begin="00:01:26.920" end="00:01:31.840">...and team so I will be demo ing some of that stuff for you today so,</p>
+      <p begin="00:01:31.840" end="00:01:35.680">that kind of covers who I am...we will</p>
+      <p begin="00:01:35.680" end="00:01:39.640">...jump right in the please do submit...evaluation</p>
+      <p begin="00:01:39.640" end="00:01:44.620">this actually does help me going forward of for a future talk...I, you know,</p>
+      <p begin="00:01:44.620" end="00:01:46.800">can improve each time?</p>
+      <p begin="00:01:46.800" end="00:01:51.350">But, let's kind of jump right in so the first question is why</p>
+      <p begin="00:01:51.350" end="00:01:56.510">build apps how many of you guys have built a mobile app so far.</p>
+      <p begin="00:01:56.510" end="00:02:00.900">Okay, not everybody in the audience and in fact I have had</p>
+      <p begin="00:02:00.900" end="00:02:05.610">the opportunity to talk to sixty-seven...companies</p>
+      <p begin="00:02:05.610" end="00:02:10.520">in the last three six months having conversations like this about</p>
+      <p begin="00:02:10.520" end="00:02:15.210">different strategies for building mobile applications and one of the things that I'm finding</p>
+      <p begin="00:02:15.210" end="00:02:19.620">across all of the companies that I talked to is that a majority of them are at the</p>
+      <p begin="00:02:19.620" end="00:02:24.410">needy of the curve in terms of embracing mobile technology and building mobile</p>
+      <p begin="00:02:24.410" end="00:02:29.840">solutions and what I mean by that is that they have built one or two</p>
+      <p begin="00:02:29.840" end="00:02:34.770">or maybe three mobile apps thus far and they might have done it by hiring</p>
+      <p begin="00:02:34.770" end="00:02:39.060">a mobile specialist firms so they actually outsource the project to another</p>
+      <p begin="00:02:39.060" end="00:02:42.710">a external company to build this mobile app and</p>
+      <p begin="00:02:42.710" end="00:02:46.010">they're now in the process where they realize that hey, you know, I</p>
+      <p begin="00:02:46.010" end="00:02:50.880">actually think we have ten fifteen in some cases hundreds of mobile apps that we have to</p>
+      <p begin="00:02:50.880" end="00:02:55.880">build now and we actually need to bring this in-house and make it more</p>
+      <p begin="00:02:55.880" end="00:02:59.520">a central part of...of our practice</p>
+      <p begin="00:02:59.520" end="00:03:04.470">does that kind of reflect where you guys are any of you yes no</p>
+      <p begin="00:03:05.740" end="00:03:09.410">...yes okay I see a couple hands in the back of the room the other</p>
+      <p begin="00:03:09.410" end="00:03:13.370">thing that I'm finding as I talked to in particular small isv</p>
+      <p begin="00:03:13.370" end="00:03:18.300">to think about it as startups who are building applications because</p>
+      <p begin="00:03:18.300" end="00:03:23.280">they want to have a mobile app based business and for them they really</p>
+      <p begin="00:03:23.280" end="00:03:27.630">want to get a mobile app out to market as quickly as they possibly can so</p>
+      <p begin="00:03:27.630" end="00:03:32.830">they can basically build a min viable product and test the business model and see if it's</p>
+      <p begin="00:03:32.830" end="00:03:37.280">actually working with customers get that out there and then actually refine so on so</p>
+      <p begin="00:03:37.280" end="00:03:43.170">forth so I think we're finding that there are a lot of companies that are now in this</p>
+      <p begin="00:03:43.170" end="00:03:45.470">me of the curve where they are, you know,</p>
+      <p begin="00:03:45.470" end="00:03:50.190">they might have dabbled mobile development to start or they've even assigned a swat team within</p>
+      <p begin="00:03:50.190" end="00:03:55.180">the organization to go build some mobile apps but they're now starting to make that</p>
+      <p begin="00:03:55.180" end="00:04:01.590">a much larger part of their regular it practice and development practice?</p>
+      <p begin="00:04:01.590" end="00:04:06.180">So, one of the things that I've also seen and I think gartner and forrester and a bunch of the</p>
+      <p begin="00:04:06.180" end="00:04:09.010">analysts also reflect this is that the</p>
+      <p begin="00:04:09.010" end="00:04:13.880">technology is moving much closer to the customer so in terms of, you know,</p>
+      <p begin="00:04:13.880" end="00:04:17.840">what your job is as a developer it might used</p>
+      <p begin="00:04:17.840" end="00:04:22.630">to be that a lot of developers had to just...internally facing employee facing</p>
+      <p begin="00:04:22.630" end="00:04:27.870">applications and they didn't actually really interact with the customer very much I would say that</p>
+      <p begin="00:04:27.870" end="00:04:32.730">...more and more often I'm seeing that actually the internal it departments actually</p>
+      <p begin="00:04:32.730" end="00:04:37.680">have to build mobile applications that are customer-facing and they're much more engaged in</p>
+      <p begin="00:04:37.680" end="00:04:42.500">that in that process now many of you guys have probably</p>
+      <p begin="00:04:42.500" end="00:04:48.200">been in development for many years tens of years...possibly decades and,</p>
+      <p begin="00:04:48.200" end="00:04:52.010">I think that, you know, a lot of us when we started in the industry</p>
+      <p begin="00:04:52.010" end="00:04:56.870">we're very used to the client-server kind of technology and this notion that we had</p>
+      <p begin="00:04:56.870" end="00:05:02.210">a user interface and we had some kind of back-end system that we were pumping all of that data</p>
+      <p begin="00:05:02.210" end="00:05:05.980">...and in fact if I think about governmental agencies,</p>
+      <p begin="00:05:05.980" end="00:05:08.850">for example, a lot of them are still doing that process with</p>
+      <p begin="00:05:08.850" end="00:05:13.090">the paper process you fill out a form and there's somebody who's in the back-office</p>
+      <p begin="00:05:13.090" end="00:05:18.080">is actually uploading that to a server and that goes into a database that we</p>
+      <p begin="00:05:18.080" end="00:05:22.520">would call a system of record so it basically catalogues kind</p>
+      <p begin="00:05:22.520" end="00:05:28.850">of what has happened with that particular employee or customer but,</p>
+      <p begin="00:05:28.850" end="00:05:30.370">there's very little authentic</p>
+      <p begin="00:05:30.370" end="00:05:35.100">...interaction between the developer and what they've built and the customer or</p>
+      <p begin="00:05:35.100" end="00:05:42.060">the person who is interacting with that workflow process?</p>
+      <p begin="00:05:42.060" end="00:05:46.690">What we're certainly seeing is that there's an increasing number of people who have to build these</p>
+      <p begin="00:05:46.690" end="00:05:51.560">systems of engagement and I think about this in with...good</p>
+      <p begin="00:05:51.560" end="00:05:56.410">the app examples one my favorite one is the</p>
+      <p begin="00:05:56.410" end="00:06:00.310">crispy cream hot like app...you guys are familiar with that</p>
+      <p begin="00:06:00.310" end="00:06:04.770">app came out a couple years ago I love this app not because I'm a big</p>
+      <p begin="00:06:04.770" end="00:06:07.290">...reader although I do like my...</p>
+      <p begin="00:06:07.290" end="00:06:12.170">and but because the idea behind this app is that</p>
+      <p begin="00:06:12.170" end="00:06:17.160">if you're trucker driving down the road and you want to get hot</p>
+      <p begin="00:06:17.160" end="00:06:21.310">...this'll actually send the push notification to your</p>
+      <p begin="00:06:21.310" end="00:06:24.400">up to your device to tell you there's a hot</p>
+      <p begin="00:06:24.400" end="00:06:29.610">...nearby come to crispy cream and they didn't initially as a marketing</p>
+      <p begin="00:06:29.610" end="00:06:33.960">exercise to see if they could actually have more interaction engagement with their</p>
+      <p begin="00:06:33.960" end="00:06:34.940">customers</p>
+      <p begin="00:06:34.940" end="00:06:39.710">and but over time they found that this was actually very strategic application for them and that</p>
+      <p begin="00:06:39.710" end="00:06:44.710">it actually was something that they needed to kind of incorporate and improve and they wanted to get</p>
+      <p begin="00:06:44.710" end="00:06:49.530">a lot of that data and how many of you guys are staying in hotels right now those of you who</p>
+      <p begin="00:06:49.530" end="00:06:54.890">are not local so hotels on my way down the web displaying virgin</p>
+      <p begin="00:06:54.890" end="00:06:59.780">america and they have those nice little tv screens and lot-of commercials that come up but, you know,</p>
+      <p begin="00:06:59.780" end="00:07:04.360">in front of you probably three or four of the commercials I was watching</p>
+      <p begin="00:07:04.360" end="00:07:07.730">were commercials for the hotels?</p>
+      <p begin="00:07:07.730" end="00:07:10.640">Now why would the hotel want you to download</p>
+      <p begin="00:07:10.640" end="00:07:14.770">...app the way that they marketed in the, you know,</p>
+      <p begin="00:07:14.770" end="00:07:19.350">commercial was it delivers a much better consumer experience in it does you</p>
+      <p begin="00:07:19.350" end="00:07:23.680">can interact with the concierge you can reserved room service or other things like</p>
+      <p begin="00:07:23.680" end="00:07:28.610">that but the hotel also gets a lot of insight into what you do</p>
+      <p begin="00:07:28.610" end="00:07:34.490">as a customer so increasingly we're seeing that people need to build these systems of engagement so</p>
+      <p begin="00:07:34.490" end="00:07:40.380">that's really what how I think about mobile applications so the first question</p>
+      <p begin="00:07:40.380" end="00:07:45.210">is when you start building a mobile application where you start.</p>
+      <p begin="00:07:45.210" end="00:07:50.600">Now one of the things that I think we've observed is that.</p>
+      <p begin="00:07:50.600" end="00:07:55.550">Basically there are a lot of mobile applications that you're going to end up building if I build something like that hotel</p>
+      <p begin="00:07:55.550" end="00:08:00.160">concierge app there might be a reservation system a room service system, you know,</p>
+      <p begin="00:08:00.160" end="00:08:02.820">all different kinds of workflows and processes</p>
+      <p begin="00:08:02.820" end="00:08:07.780">that I would want to interact with as a customer and each one of those could be an independent app they</p>
+      <p begin="00:08:07.780" end="00:08:12.290">could be consolidated into a single app but the idea is that if you build those</p>
+      <p begin="00:08:12.290" end="00:08:17.420">services and workflows and processes and you basically make that, you know,</p>
+      <p begin="00:08:17.420" end="00:08:21.350">really solid and you get the deb apps practices running very</p>
+      <p begin="00:08:21.350" end="00:08:25.710">well against that then you can actually let a thousand flowers bloom you can actually let a</p>
+      <p begin="00:08:25.710" end="00:08:29.430">lot of websites or mobile apps get built against</p>
+      <p begin="00:08:29.430" end="00:08:34.370">those back-end services so I think a lot of people in the industry are kind</p>
+      <p begin="00:08:34.370" end="00:08:38.730">of recognizing that really starts with the back-end and that's kind</p>
+      <p begin="00:08:38.730" end="00:08:44.340">of where I'm going to start so in terms of building these back-end services we</p>
+      <p begin="00:08:44.340" end="00:08:49.240">call the micros services and in asher as of about you know,</p>
+      <p begin="00:08:49.240" end="00:08:53.360">three or four weeks ago this was basically what we had to offer websites you</p>
+      <p begin="00:08:53.360" end="00:08:57.240">could build mobile services you could build a you could manager api</p>
+      <p begin="00:08:57.240" end="00:09:02.260">...api management services or you could use this talk services and about</p>
+      <p begin="00:09:02.260" end="00:09:06.140">...march twenty third of we basically consolidated all</p>
+      <p begin="00:09:06.140" end="00:09:10.400">of those things into the asher app service so now there's</p>
+      <p begin="00:09:10.400" end="00:09:15.290">one service that will allow you to build a web application mobile application</p>
+      <p begin="00:09:15.290" end="00:09:20.040">and api app...logic app logic...would be for a workflow process</p>
+      <p begin="00:09:20.040" end="00:09:25.970">hidden so now let's get into the front-end they're basically two different strategies that</p>
+      <p begin="00:09:25.970" end="00:09:29.230">we see people taking when it comes to building mobile applications</p>
+      <p begin="00:09:30.330" end="00:09:34.850">number-one they start with building native platform native platform technologies</p>
+      <p begin="00:09:34.850" end="00:09:39.510">native apps using the native tools for each of the devices that</p>
+      <p begin="00:09:39.510" end="00:09:44.160">they target so they get full access advice capabilities they get fantastic</p>
+      <p begin="00:09:44.160" end="00:09:44.920">performance</p>
+      <p begin="00:09:44.920" end="00:09:49.460">...for those apps if they continue to...and it's very</p>
+      <p begin="00:09:49.460" end="00:09:55.210">customized per device on the other end of the spectrum we see people.</p>
+      <p begin="00:09:55.210" end="00:09:59.510">Building from web technology so they start with a website</p>
+      <p begin="00:09:59.510" end="00:10:04.080">maybe and they might optimized that website for mobile</p>
+      <p begin="00:10:04.080" end="00:10:08.440">experiences but still be contained into the browser now the challenge</p>
+      <p begin="00:10:08.440" end="00:10:13.320">with native based solutions is that if I target ios first and</p>
+      <p begin="00:10:13.320" end="00:10:17.780">then have to do a complete port and, you know, building using the native tools</p>
+      <p begin="00:10:17.780" end="00:10:22.650">eighty android studio the to target android and then for windows I</p>
+      <p begin="00:10:22.650" end="00:10:27.250">then have to do it again at the challenge for web technologies is that,</p>
+      <p begin="00:10:27.250" end="00:10:30.580">you know, you're especially if you're building for browser container</p>
+      <p begin="00:10:30.580" end="00:10:35.410">your very much constrains to watch that what that browser container is capable</p>
+      <p begin="00:10:35.410" end="00:10:41.010">of so you can't really access the native device capabilities so from our</p>
+      <p begin="00:10:41.010" end="00:10:45.990">perspective we recognize that this is where a lot of people are coming frombut,</p>
+      <p begin="00:10:45.990" end="00:10:50.950">we don't think that you have to be a limited by those constraints so</p>
+      <p begin="00:10:50.950" end="00:10:55.930">there are a lot of people...starting with reach experiences on windows that starts with dot</p>
+      <p begin="00:10:55.930" end="00:11:00.790">net or cplus-plus you can also build a native of windows application using javascript</p>
+      <p begin="00:11:00.790" end="00:11:07.020">but for desktop applications you would start with wpf or the universal windows apps?</p>
+      <p begin="00:11:07.020" end="00:11:08.400">Windows universal apps</p>
+      <p begin="00:11:08.400" end="00:11:11.660">the and we cplus-plus you could build with when thirty-two.</p>
+      <p begin="00:11:12.710" end="00:11:16.750">But, if you wanted to take those that dot net expertise</p>
+      <p begin="00:11:16.750" end="00:11:21.140">...partnered with a company called...I see many of you guys have them and...</p>
+      <p begin="00:11:21.140" end="00:11:25.620">on in the room that's great how many of you guys have heard of them are and before.</p>
+      <p begin="00:11:25.620" end="00:11:31.070">Most of...ok so I'll show you guys quick demo but some of you still haven't seen it and</p>
+      <p begin="00:11:31.070" end="00:11:34.230">then we've also introduce new tools for visual cplus-plus for</p>
+      <p begin="00:11:34.230" end="00:11:38.390">crush platform development and kid...appear we has it has a session that</p>
+      <p begin="00:11:38.390" end="00:11:43.280">will go deep on this I will show you a number of demos as well on this.</p>
+      <p begin="00:11:43.280" end="00:11:47.910">For the breadth of devices if I start in the web space and it starts with the browser based</p>
+      <p begin="00:11:47.910" end="00:11:52.860">applications but what we have been working on over the past year we announced it</p>
+      <p begin="00:11:52.860" end="00:11:58.030">and...head last year is the very early alpha of the visual</p>
+      <p begin="00:11:58.030" end="00:12:02.910">studio tools for patchy cap cordova I'm very excited to announce that today</p>
+      <p begin="00:12:02.910" end="00:12:07.150">we have reached rc for visual studio twenty fifteen so now we have a</p>
+      <p begin="00:12:07.150" end="00:12:11.190">go live license you can actually go ahead and build production ready apps</p>
+      <p begin="00:12:11.190" end="00:12:15.230">...using the visual studio twenty fifteen rc using the tools for</p>
+      <p begin="00:12:15.230" end="00:12:19.660">...cordova and I will go into a bit of what he tools for patchy</p>
+      <p begin="00:12:19.660" end="00:12:23.560">...but first I'm going to kind of jump into demo so before I show you guys</p>
+      <p begin="00:12:23.560" end="00:12:29.000">...I'm going to show you the measure app service real quick.</p>
+      <p begin="00:12:29.000" end="00:12:36.180">Let me see which machine my own.</p>
+      <p begin="00:12:36.180" end="00:12:40.960">So, this is the asher app service you could you guys can actually go and hit this now and</p>
+      <p begin="00:12:40.960" end="00:12:44.540">try the asher apps service and.</p>
+      <p begin="00:12:44.540" end="00:12:47.090">This starts with just you can actually</p>
+      <p begin="00:12:47.090" end="00:12:50.450">selecting app service were building mobile apps today so I can go ahead and</p>
+      <p begin="00:12:50.450" end="00:12:54.590">create this app now I need to login.</p>
+      <p begin="00:12:54.590" end="00:12:57.750">I didn't do this earlier but.</p>
+      <p begin="00:12:57.750" end="00:12:59.230">I'm signing in with my</p>
+      <p begin="00:13:00.430" end="00:13:04.910">...microsoft account but I can use the other accounts as you could see and then that</p>
+      <p begin="00:13:04.910" end="00:13:09.280">actually just creates and...service on the back-end that I could then</p>
+      <p begin="00:13:09.280" end="00:13:13.880">connects with a mobile application and if we</p>
+      <p begin="00:13:13.880" end="00:13:18.530">go here you can actually see that the app services already up and running</p>
+      <p begin="00:13:18.530" end="00:13:24.150">the absolute I'm going to show you today we've already gone through this process.</p>
+      <p begin="00:13:24.150" end="00:13:26.790">The cool thing about this is.</p>
+      <p begin="00:13:26.790" end="00:13:31.090">I can also the see it and edited</p>
+      <p begin="00:13:31.090" end="00:13:35.380">using visual studio online monaco but this is basically the same</p>
+      <p begin="00:13:35.380" end="00:13:40.380">technology that the visual studio code that we just announced in the keynote a minute ago</p>
+      <p begin="00:13:40.380" end="00:13:43.430">...using the same exact technology to connect to</p>
+      <p begin="00:13:43.430" end="00:13:48.760">this back-end service and show us the code here I'm sure...a lot of people hitting</p>
+      <p begin="00:13:48.760" end="00:13:53.920">this service right now because we just made the announcement so that might be why it's a little bit slow but,</p>
+      <p begin="00:13:53.920" end="00:13:56.610">you can see I can go into the</p>
+      <p begin="00:13:56.610" end="00:14:01.540">controllers and I can look at something like that to do item controller and I can just start,</p>
+      <p begin="00:14:01.540" end="00:14:02.870">you know, author, you know,</p>
+      <p begin="00:14:02.870" end="00:14:06.670">editing this code immediately and start working against the back-end service</p>
+      <p begin="00:14:07.810" end="00:14:12.800">so next thing I'm going to do is jump into the apps itself that I'm going</p>
+      <p begin="00:14:12.800" end="00:14:20.080">to kinda bring you through...is number four.</p>
+      <p begin="00:14:20.080" end="00:14:23.090">You guys see before you multiple.</p>
+      <p begin="00:14:23.090" end="00:14:30.250">Mobile devices yes everybody can see okay, so, the basic scenario going to show you is</p>
+      <p begin="00:14:30.250" end="00:14:35.240">...huber type scenario the idea is that we have a shuttle application that</p>
+      <p begin="00:14:35.240" end="00:14:39.500">is corporate shuttle service and we have two different apps we have</p>
+      <p begin="00:14:39.500" end="00:14:44.460">an app for the consumer and then we have an app for the...now let's just bring up the</p>
+      <p begin="00:14:44.460" end="00:14:50.510">my shuttle dot biz for each one of the apps for each one of the devices.</p>
+      <p begin="00:14:50.510" end="00:14:52.180">And, as you can see</p>
+      <p begin="00:14:52.180" end="00:14:58.620">the layout for each one of these apps is actually distinct per device.</p>
+      <p begin="00:14:58.620" end="00:15:01.400">Now this is a consumer app so I want to make sure that my</p>
+      <p begin="00:15:01.400" end="00:15:04.680">consumers that interact with this app in the app store</p>
+      <p begin="00:15:04.680" end="00:15:09.860">get what feels like a very native experience for their app as you can see for the</p>
+      <p begin="00:15:09.860" end="00:15:14.040">windows device this is windows eight-point one so.</p>
+      <p begin="00:15:14.040" end="00:15:19.220">I will show you guys...windows ten...application in just a second but this one was</p>
+      <p begin="00:15:19.220" end="00:15:24.170">authored using eight-point one...you can see that we have the pivot control if we look</p>
+      <p begin="00:15:24.170" end="00:15:30.140">at the navigations you can see that the navigation looks verywindows</p>
+      <p begin="00:15:30.140" end="00:15:35.070">like if we go to the ip iphone application you can see that the navigation</p>
+      <p begin="00:15:35.070" end="00:15:40.340">is along the bottom which is a very iphone kind of way to do it and,</p>
+      <p begin="00:15:40.340" end="00:15:42.740">for the android application you can see the navigation is</p>
+      <p begin="00:15:42.740" end="00:15:47.600">along the top each of these looks and feels very native for the device if we look at</p>
+      <p begin="00:15:47.600" end="00:15:52.830">the transitions for the ios device and the transitions for the android</p>
+      <p begin="00:15:52.830" end="00:15:57.500">device that comes in from this side for the ios device and it comes in from the bottom for</p>
+      <p begin="00:15:57.500" end="00:16:02.050">the android device so it is a very native look and feel and this is built using</p>
+      <p begin="00:16:02.050" end="00:16:05.110">...this particular application</p>
+      <p begin="00:16:05.110" end="00:16:12.180">next what I'm going to do is go ahead and show you guys the driver version of the application.</p>
+      <p begin="00:16:12.180" end="00:16:15.210">So, let's just bring up the driver version.</p>
+      <p begin="00:16:15.210" end="00:16:18.600">So, this is basically the caddy who's driving a car</p>
+      <p begin="00:16:18.600" end="00:16:21.590">what does he do when he wants the user</p>
+      <p begin="00:16:21.590" end="00:16:25.500">...you know, we started ride so we could go ahead and start a service</p>
+      <p begin="00:16:25.500" end="00:16:30.340">...start arrived and we can finish that and you can see that I get the</p>
+      <p begin="00:16:30.340" end="00:16:34.070">...information I can go to the signature I can go ahead and</p>
+      <p begin="00:16:34.070" end="00:16:39.870">sign this my...my nail was getting the way there but,</p>
+      <p begin="00:16:39.870" end="00:16:42.970">that actually takes that invoice posts it to the office</p>
+      <p begin="00:16:42.970" end="00:16:47.930">three-six five api which there a lot of sessions on a throughout build</p>
+      <p begin="00:16:47.930" end="00:16:52.220">...to sharepoint server in the back back-end now.</p>
+      <p begin="00:16:52.220" end="00:16:56.070">So, what you'll see here is that the app looks and feels exactly the</p>
+      <p begin="00:16:56.070" end="00:17:01.020">same across the different devices now for this app because it's for the</p>
+      <p begin="00:17:01.020" end="00:17:05.650">employees my employees of the my shuttle service I want that</p>
+      <p begin="00:17:05.650" end="00:17:11.930">app to have the same look and feel across the different devices because?</p>
+      <p begin="00:17:11.930" end="00:17:15.980">Of training purposes because of support purposes I actually want to keep</p>
+      <p begin="00:17:15.980" end="00:17:20.240">the costs down for this particular device pick particular app</p>
+      <p begin="00:17:20.240" end="00:17:26.629">so for this one we're using tools for patchy cordova now if I go into the...</p>
+      <p begin="00:17:26.629" end="00:17:33.240">biz the app again and I go ahead and request.</p>
+      <p begin="00:17:33.240" end="00:17:37.890">...you can see that sends a push notification using v adder</p>
+      <p begin="00:17:37.890" end="00:17:42.460">app service the mobile services to my android device if I go ahead</p>
+      <p begin="00:17:42.460" end="00:17:47.000">and accept it you can see that this will actually send another push notification to</p>
+      <p begin="00:17:47.000" end="00:17:51.850">my windows device I could even go ahead and update the</p>
+      <p begin="00:17:51.850" end="00:17:56.830">location so you see the pin on the android device there I can update my location</p>
+      <p begin="00:17:56.830" end="00:17:57.180">you see</p>
+      <p begin="00:17:57.180" end="00:18:03.970">...updates right there is a very kind of live experience.</p>
+      <p begin="00:18:03.970" end="00:18:06.860">That's off-screen but.</p>
+      <p begin="00:18:06.860" end="00:18:08.560">As you can see in just a second it</p>
+      <p begin="00:18:08.560" end="00:18:13.280">should show us the pin being updated so this is using signal</p>
+      <p begin="00:18:13.280" end="00:18:18.630">...which is a part of esp dot net for real-time communications so,</p>
+      <p begin="00:18:18.630" end="00:18:24.710">now let's jump into how this application is being built by notify the client that I'm</p>
+      <p begin="00:18:24.710" end="00:18:29.120">We can see that the vehicle has arrived and then I can go out and get the vehicle</p>
+      <p begin="00:18:29.120" end="00:18:32.980">driver allows me to accepted and then we can go ahead and</p>
+      <p begin="00:18:32.980" end="00:18:37.900">take the ride send the signature except...get sent to the back-end</p>
+      <p begin="00:18:37.900" end="00:18:42.860">within invoice so now I'm going to take this android device</p>
+      <p begin="00:18:42.860" end="00:18:49.570">and I'm going to attach it to this pc that I have here.</p>
+      <p begin="00:18:49.570" end="00:18:52.520">I'm going to show you the applications that we built.</p>
+      <p begin="00:18:52.520" end="00:18:54.680">So, let me close this.</p>
+      <p begin="00:18:54.680" end="00:18:59.860">And, let's jump to seven.</p>
+      <p begin="00:18:59.860" end="00:19:01.250">Ok.</p>
+      <p begin="00:19:01.250" end="00:19:07.030">So, first thing visual...this...little bit dangerous to do in</p>
+      <p begin="00:19:07.030" end="00:19:11.230">a demo but I actually have...running here and the reason I have...</p>
+      <p begin="00:19:11.230" end="00:19:15.990">running is for those of you who have built mobile applications you guys know</p>
+      <p begin="00:19:15.990" end="00:19:20.960">that it's very challenging together get your dev box set up with all of the dependencies that you</p>
+      <p begin="00:19:20.960" end="00:19:25.820">have that you need to build mobile applications, you know, for an android application</p>
+      <p begin="00:19:25.820" end="00:19:30.650">I could end up having twenty-something dependencies that I have to install uniquely what</p>
+      <p begin="00:19:30.650" end="00:19:35.040">we've done is we've actually simplified the acquisition experience and the deb</p>
+      <p begin="00:19:35.040" end="00:19:39.050">setup experience...box...experience into visual studio</p>
+      <p begin="00:19:39.050" end="00:19:42.540">with consolidated it so what you can see here.</p>
+      <p begin="00:19:42.540" end="00:19:47.980">Is that under the cross platform mobile device...mobile development node we have</p>
+      <p begin="00:19:47.980" end="00:19:52.790">...if I want to build...using csharp and salmon we have html javascript if I want to build</p>
+      <p begin="00:19:52.790" end="00:19:57.480">using apache cordova we have the cross platform cplus-plus components and then we</p>
+      <p begin="00:19:57.480" end="00:20:01.270">have common components that are used across all of these the</p>
+      <p begin="00:20:01.270" end="00:20:06.010">different solutions including the visual studio emulator for android which I'll show you guys a</p>
+      <p begin="00:20:06.010" end="00:20:10.680">little bit later but this is just to show you guys that it makes it really easy to get your</p>
+      <p begin="00:20:10.680" end="00:20:13.920">...set-up and to keep that dev box running</p>
+      <p begin="00:20:13.920" end="00:20:17.540">and in good condition so I'm going to?</p>
+      <p begin="00:20:17.540" end="00:20:20.240">Go back and I'm going to.</p>
+      <p begin="00:20:20.240" end="00:20:21.380">Just cancel</p>
+      <p begin="00:20:21.380" end="00:20:26.800">set up so that I don't work my machine further.</p>
+      <p begin="00:20:26.800" end="00:20:29.810">And, now I'm going to jump into the solution so.</p>
+      <p begin="00:20:33.370" end="00:20:38.730">Witness...and...will start with the native applications so the windows</p>
+      <p begin="00:20:38.730" end="00:20:43.920">the android and ios applications that I built using salmon with these</p>
+      <p begin="00:20:43.920" end="00:20:48.250">amin extension for visual studio which is now included as part of the visual studio</p>
+      <p begin="00:20:48.250" end="00:20:52.980">set up so you don't need to go to some other url to go find if you just install</p>
+      <p begin="00:20:52.980" end="00:20:59.020">visual studio as part of setup you'll be able to check examine I now have</p>
+      <p begin="00:20:59.020" end="00:21:03.930">templates for android applications I also have templates for ios applications</p>
+      <p begin="00:21:03.930" end="00:21:10.380">as well so I can target iphone so I've already done that my solution</p>
+      <p begin="00:21:10.380" end="00:21:14.450">now what we start with is at a common core</p>
+      <p begin="00:21:14.450" end="00:21:18.870">of logic for the application that is built-in dot net that works</p>
+      <p begin="00:21:18.870" end="00:21:23.740">across all three of the different mobile operating systems and that is done using portable</p>
+      <p begin="00:21:23.740" end="00:21:28.560">class libraries what you can see here is that things like this service agents can you guys</p>
+      <p begin="00:21:28.560" end="00:21:33.420">will see that...the service agents are defined in a common way so if I think</p>
+      <p begin="00:21:33.420" end="00:21:38.070">about something like a issuing a ride I want to initiate</p>
+      <p begin="00:21:38.070" end="00:21:42.930">a new ride that doesn't need to be different across the different devices that could actually be the</p>
+      <p begin="00:21:42.930" end="00:21:50.440">same exact code running on each of the client's but, it's authored using dot net?</p>
+      <p begin="00:21:50.440" end="00:21:54.250">The other thing that you can see here is that.</p>
+      <p begin="00:21:54.250" end="00:21:59.060">The view models even the view models so if I think about something like the vehicle detail</p>
+      <p begin="00:21:59.060" end="00:22:03.770">...model this is basically defining a common view</p>
+      <p begin="00:22:03.770" end="00:22:08.950">model that is common across all three of the different operating systems and</p>
+      <p begin="00:22:08.950" end="00:22:11.550">then we really have only the finessed presentation</p>
+      <p begin="00:22:11.550" end="00:22:16.840">...that chooses how it should be rendered for each one of the devices and in fact,</p>
+      <p begin="00:22:16.840" end="00:22:19.140">you know, true story.</p>
+      <p begin="00:22:19.140" end="00:22:22.410">As...three days ago we didn't have a version of this</p>
+      <p begin="00:22:22.410" end="00:22:24.660">app for windows ten we built</p>
+      <p begin="00:22:24.660" end="00:22:28.230">it three days ago and the way that we could do that and I'll show you guys this</p>
+      <p begin="00:22:28.230" end="00:22:33.140">and just a second the way we could do that is because most of the logic was defined in these portable</p>
+      <p begin="00:22:33.140" end="00:22:33.960">class libraries.</p>
+      <p begin="00:22:35.090" end="00:22:40.050">So, next thing I'm going to do is just show you guys how you can actually do</p>
+      <p begin="00:22:40.050" end="00:22:44.150">this with the portable class libraries if we go to the properties even see that witness...</p>
+      <p begin="00:22:44.150" end="00:22:48.940">extension I can create a portable class library that can go across all the different windows</p>
+      <p begin="00:22:48.940" end="00:22:53.930">devices as well as a android and ios what's missing there</p>
+      <p begin="00:22:53.930" end="00:22:59.010">is windows ten that does not mean that your portable class library will not work on windows</p>
+      <p begin="00:22:59.010" end="00:23:02.150">...it actually works used to have to check a box to</p>
+      <p begin="00:23:02.150" end="00:23:06.690">get to work we will add the check box just in case, you know,</p>
+      <p begin="00:23:06.690" end="00:23:11.220">between now and when we are tm the product so this is outstanding work for us</p>
+      <p begin="00:23:11.220" end="00:23:14.820">in visual studio but that's basically how I can define a portable</p>
+      <p begin="00:23:14.820" end="00:23:19.680">class library across all of these different solutions so now what I can do is go</p>
+      <p begin="00:23:19.680" end="00:23:24.190">ahead and view that code map for this assembly so this is</p>
+      <p begin="00:23:24.190" end="00:23:29.290">the new tool in visual studio twenty fifteen that allows me to quickly visualize</p>
+      <p begin="00:23:29.290" end="00:23:33.120">what's going on in my application and I can look at the</p>
+      <p begin="00:23:33.120" end="00:23:38.180">assemblies referencing this is actually going to build this up dynamically?</p>
+      <p begin="00:23:39.900" end="00:23:44.730">you will see very quickly that each of the projects that are in the solution</p>
+      <p begin="00:23:44.730" end="00:23:47.750">are referencing this core dl.</p>
+      <p begin="00:23:47.750" end="00:23:58.290">And, it will show it to us in just a second.</p>
+      <p begin="00:23:58.290" end="00:23:58.790">Command.</p>
+      <p begin="00:24:00.100" end="00:24:05.190">Indexing this does take a little bit to compute but once you do it's pretty amazing</p>
+      <p begin="00:24:05.190" end="00:24:15.570">...you can see here.</p>
+      <p begin="00:24:15.570" end="00:24:16.070">Command.</p>
+      <p begin="00:24:17.530" end="00:24:37.410">...faster earlier.</p>
+      <p begin="00:24:37.410" end="00:24:40.270">There is a sub-set but it is pretty broad</p>
+      <p begin="00:24:40.270" end="00:24:43.390">...it's actually.</p>
+      <p begin="00:24:43.390" end="00:24:47.370">Sorry...question was.</p>
+      <p begin="00:24:47.370" end="00:24:52.390">The question was and, we now see it coming up the question was because it's a portable</p>
+      <p begin="00:24:52.390" end="00:24:54.750">classed library do you have to limit the</p>
+      <p begin="00:24:54.750" end="00:24:58.620">api that the portable classed library can access to make it a portable</p>
+      <p begin="00:24:58.620" end="00:25:02.720">class library the answer is yes but it is a very broad subset and</p>
+      <p begin="00:25:02.720" end="00:25:07.700">we're working with the examine community and the opensource dot net community to make sure that</p>
+      <p begin="00:25:07.700" end="00:25:11.360">...as broad as it can be we think it's pretty good but,</p>
+      <p begin="00:25:11.360" end="00:25:13.590">we're always looking for those last few</p>
+      <p begin="00:25:13.590" end="00:25:17.390">...that are kind of important so you have feedback on that feel free to get</p>
+      <p begin="00:25:17.390" end="00:25:23.640">it to me as you can see here I have for the native applications I</p>
+      <p begin="00:25:23.640" end="00:25:27.740">...referencing the my shuttle dot client dot core</p>
+      <p begin="00:25:27.740" end="00:25:32.060">...in the universal app for windows eight and eight-point one I</p>
+      <p begin="00:25:32.060" end="00:25:37.260">mean windows eight-point one phone and windows eight-point...</p>
+      <p begin="00:25:37.260" end="00:25:41.820">forms application the ios and windows ten universal application</p>
+      <p begin="00:25:41.820" end="00:25:44.990">that I also have a wpf client that I've also built against</p>
+      <p begin="00:25:44.990" end="00:25:51.540">this same portable class library I'm not going to talk about the...client today but, that will be</p>
+      <p begin="00:25:51.540" end="00:25:56.760">in the solution that we make a publicly available now if we go</p>
+      <p begin="00:25:56.760" end="00:26:01.620">into the native app mobile applications you can see that for the windows</p>
+      <p begin="00:26:01.620" end="00:26:06.520">...one applications what we've done is we have different projects but we have</p>
+      <p begin="00:26:06.520" end="00:26:11.350">shared projects a shared code across these different projects so</p>
+      <p begin="00:26:11.350" end="00:26:22.470">if I go in here you can actually see that if we look at the about dot example file.</p>
+      <p begin="00:26:22.470" end="00:26:25.700">This will just take one second to load but you can see that I can actually use</p>
+      <p begin="00:26:25.700" end="00:26:30.440">the same exact example file across the windows and</p>
+      <p begin="00:26:30.440" end="00:26:36.340">windows phone device...make this come down so I can actually</p>
+      <p begin="00:26:36.340" end="00:26:40.150">go ahead and change that to be a windows phone</p>
+      <p begin="00:26:40.150" end="00:26:45.500">...rendering and you will see in just a second that will we</p>
+      <p begin="00:26:45.500" end="00:26:49.880">render for the windows phone and you will see that it's basically the same exact</p>
+      <p begin="00:26:49.880" end="00:26:55.310">screen and same exact sample being shown across to the windows phone now let's talk about the</p>
+      <p begin="00:26:55.310" end="00:27:00.300">windows ten application so in the windows ten application we can do</p>
+      <p begin="00:27:00.300" end="00:27:04.480">basically the same mechanism if we go into the views.</p>
+      <p begin="00:27:05.590" end="00:27:15.840">We can look at the vehicle detail page.</p>
+      <p begin="00:27:15.840" end="00:27:19.950">As I'm doing that so as you can see here we are currently rendering this</p>
+      <p begin="00:27:19.950" end="00:27:24.680">for the five-inch phone this is all-new functionality in visual studio</p>
+      <p begin="00:27:24.680" end="00:27:29.250">twenty fifteen and I can then go ahead and change that same</p>
+      <p begin="00:27:29.250" end="00:27:33.110">view to look at the tablet and now this is only at</p>
+      <p begin="00:27:33.110" end="00:27:36.980">thirty three percent so if we increase that a little bit you guys should be</p>
+      <p begin="00:27:36.980" end="00:27:43.960">able to see what it looks like in the tablet view?</p>
+      <p begin="00:27:43.960" end="00:27:49.870">...you can see here what you should be able to see here is that we actually can use</p>
+      <p begin="00:27:49.870" end="00:27:54.360">Various view state triggers to basically initiate this what I'm going to do is just show you</p>
+      <p begin="00:27:54.360" end="00:27:59.800">guys it running in thephone emulator and the windows simulator</p>
+      <p begin="00:27:59.800" end="00:28:05.250">side-by-side so this is that app running side-by-side as you guys have seen</p>
+      <p begin="00:28:05.250" end="00:28:10.070">previously in windows ten all applications including modern applications</p>
+      <p begin="00:28:10.070" end="00:28:15.000">are windowed so this will start initial initially in a windowed mode but I can make</p>
+      <p begin="00:28:15.000" end="00:28:20.620">a go full-screen and as you can see here one of the benefits of developing on a</p>
+      <p begin="00:28:20.620" end="00:28:23.240">...device is I can actually use my</p>
+      <p begin="00:28:23.240" end="00:28:28.160">finger here to the scroll to the bottom of the available cars and I can</p>
+      <p begin="00:28:28.160" end="00:28:33.490">see the my rides tab that is the tablet view it's actually on</p>
+      <p begin="00:28:33.490" end="00:28:38.430">the right-hand side and then you can see if I select this you can see what the vehicle detail</p>
+      <p begin="00:28:38.430" end="00:28:43.260">view looks like and you can see what it looks like in the phone so we built</p>
+      <p begin="00:28:43.260" end="00:28:47.280">this three days ago yes there's we can make the right a little bit better but,</p>
+      <p begin="00:28:47.280" end="00:28:52.250">you know, you can see that were actually using the same kind of technology the for</p>
+      <p begin="00:28:52.250" end="00:28:57.220">the windows devices ok so that's the windows applications</p>
+      <p begin="00:28:57.220" end="00:29:01.350">and they're going to be a lot of sessions and in fact just segment is here and I think</p>
+      <p begin="00:29:01.350" end="00:29:05.190">he will to be talking about this little bit later on how you can actually customize</p>
+      <p begin="00:29:05.190" end="00:29:08.570">your example across the different, different devices.</p>
+      <p begin="00:29:09.640" end="00:29:12.120">So, I'm just going to shut this down.</p>
+      <p begin="00:29:12.120" end="00:29:13.320">Okay,</p>
+      <p begin="00:29:13.320" end="00:29:18.080">now let's jump into these ample port the ...and portions for the android application</p>
+      <p begin="00:29:18.080" end="00:29:23.120">...the ios application so first I'm going to kind of look at the android</p>
+      <p begin="00:29:23.120" end="00:29:27.960">application and if I go into the views.</p>
+      <p begin="00:29:27.960" end="00:29:32.420">Main view and I just start typing.</p>
+      <p begin="00:29:32.420" end="00:29:36.680">You can actually see that I have intel's sense here based on this</p>
+      <p begin="00:29:36.680" end="00:29:41.380">...extension that gets me the latest android capabilities</p>
+      <p begin="00:29:41.380" end="00:29:46.460">so I get all of the same visual studio productive development experiencebut,</p>
+      <p begin="00:29:46.460" end="00:29:49.700">for android and ios applications so that's</p>
+      <p begin="00:29:49.700" end="00:29:54.580">pretty great and next thing I'm going to do is show you the vehicle</p>
+      <p begin="00:29:54.580" end="00:30:03.180">...that same screen that we just looked at in the.</p>
+      <p begin="00:30:03.180" end="00:30:06.620">Windows application and I'm going to bring up...designer.</p>
+      <p begin="00:30:07.870" end="00:30:12.940">Now after this renders in just a second.</p>
+      <p begin="00:30:12.940" end="00:30:19.610">Let's see let's closer than reopen it.</p>
+      <p begin="00:30:19.610" end="00:30:24.840">You can see that this is kind of what the screen looks like for in this case the galaxy</p>
+      <p begin="00:30:24.840" end="00:30:25.960">nexis</p>
+      <p begin="00:30:25.960" end="00:30:34.970">if I went ahead and change this to the let's see...five.</p>
+      <p begin="00:30:34.970" end="00:30:38.630">You will see in just a second that...re render for the...five so I get a</p>
+      <p begin="00:30:38.630" end="00:30:42.230">...wig kind of experience for building these screens</p>
+      <p begin="00:30:42.230" end="00:30:43.670">...android applications.</p>
+      <p begin="00:30:46.470" end="00:30:48.150">I can change the layout,</p>
+      <p begin="00:30:48.150" end="00:30:53.600">for example, change it back you can see that happens same goes for</p>
+      <p begin="00:30:53.600" end="00:31:00.130">the ios applications if I go into the ios application.</p>
+      <p begin="00:31:00.130" end="00:31:02.210">You can see that this is using the.</p>
+      <p begin="00:31:03.300" end="00:31:04.670">My shuttle using</p>
+      <p begin="00:31:04.670" end="00:31:08.990">serious that mgm cross so that's a common the.</p>
+      <p begin="00:31:08.990" end="00:31:10.320">Common.</p>
+      <p begin="00:31:10.320" end="00:31:12.380">You know,...library this</p>
+      <p begin="00:31:12.380" end="00:31:17.940">is using the my shuttle dot client dot core as we talked about earlier.</p>
+      <p begin="00:31:17.940" end="00:31:22.050">And, then if I go into the views.</p>
+      <p begin="00:31:22.050" end="00:31:26.710">Sorry the storyboards view you can actually see that I get the same kind of</p>
+      <p begin="00:31:26.710" end="00:31:30.880">...wig experience we have a full toolbox that I can do, you know,</p>
+      <p begin="00:31:30.880" end="00:31:35.720">drag-and-drop all kinds of controls on to this design experience and in fact</p>
+      <p begin="00:31:35.720" end="00:31:40.510">for ios it's not just a per screen designer this is actually a full</p>
+      <p begin="00:31:40.510" end="00:31:44.180">storyboards designer like what you see...x code so if I</p>
+      <p begin="00:31:44.180" end="00:31:49.510">zoom out you can actually see that I have the full story board of</p>
+      <p begin="00:31:49.510" end="00:31:54.170">for the application defined in this in this in visual</p>
+      <p begin="00:31:54.170" end="00:31:58.680">studio for my ios application so that's pretty cool</p>
+      <p begin="00:32:00.060" end="00:32:05.010">...what you guys were kinda interested in cn ok so the next thing I'm going to show</p>
+      <p begin="00:32:05.010" end="00:32:09.390">you guys is we're going to do a deep dive into the cplus-plus</p>
+      <p begin="00:32:09.390" end="00:32:13.200">stuff before let's see how we do...the.</p>
+      <p begin="00:32:14.300" end="00:32:17.100">How do you guys feel about skip in some slides and just keep demo</p>
+      <p begin="00:32:17.100" end="00:32:21.760">in good with that okay if we have slide's time at the end I'll go back to</p>
+      <p begin="00:32:21.760" end="00:32:27.500">the end ok...next...I'm going to do is just shut down this project?</p>
+      <p begin="00:32:27.500" end="00:32:30.040">And, reopen another one I</p>
+      <p begin="00:32:30.040" end="00:32:40.610">can't have all these things running at the same time unfortunately just gets too.</p>
+      <p begin="00:32:40.610" end="00:32:45.310">Clogged up a little bit if I had a full beefy desktop machine it would be no problem</p>
+      <p begin="00:32:45.310" end="00:32:50.040">that this is a lightweight aces tablet.</p>
+      <p begin="00:32:50.040" end="00:32:53.550">So, next I'm going to open the cplus-plus version of these</p>
+      <p begin="00:32:53.550" end="00:32:57.620">amin project and I'm going to deploy that same applications so I</p>
+      <p begin="00:32:57.620" end="00:33:02.420">talked about earlier how we've also introduced support for</p>
+      <p begin="00:33:02.420" end="00:33:07.450">the across platforms cplus-plus now how many of you...kobe cplus-plus</p>
+      <p begin="00:33:08.850" end="00:33:13.720">...you guys okay and one of the reasons why we did this isn't talking to our</p>
+      <p begin="00:33:13.720" end="00:33:18.590">office team as they were taking their code base twenty fifteen-year code</p>
+      <p begin="00:33:18.590" end="00:33:21.960">...to mobile devices across ios</p>
+      <p begin="00:33:21.960" end="00:33:27.410">and android they basically needed to take that code base mobile so,</p>
+      <p begin="00:33:27.410" end="00:33:32.940">we started building this for the officeteam what you can see here</p>
+      <p begin="00:33:32.940" end="00:33:37.800">if we go we look at this application this is all cplus-plus?</p>
+      <p begin="00:33:37.800" end="00:33:43.350">If we go into the project properties you can see that visual studio supports</p>
+      <p begin="00:33:43.350" end="00:33:49.060">...and it supports gcc this is a new world so,</p>
+      <p begin="00:33:49.060" end="00:33:52.010">this is kind of a big deal for those of you who have</p>
+      <p begin="00:33:52.010" end="00:33:56.270">a coded in cplus-plus before and.</p>
+      <p begin="00:33:56.270" end="00:33:59.000">So, I'm just going to keep that there</p>
+      <p begin="00:33:59.000" end="00:34:05.290">and I'm going to deploy this to the samsung device that is attached here.</p>
+      <p begin="00:34:05.290" end="00:34:09.950">Now what this is doing is it has a common cplus-plus component...</p>
+      <p begin="00:34:09.950" end="00:34:14.870">this case it's an open gl component that I'll show you guys in a second that is being used in this</p>
+      <p begin="00:34:14.870" end="00:34:22.670">application and then it has a front-end that's defined using the cameron so,</p>
+      <p begin="00:34:22.670" end="00:34:27.419">this should be deployed to this device in just a.</p>
+      <p begin="00:34:27.419" end="00:34:33.589">And, it's capping the application to the device I will jump to the...vision.</p>
+      <p begin="00:34:33.589" end="00:34:35.889">As it does the installation</p>
+      <p begin="00:34:36.939" end="00:34:43.240">...it should get loaded in just a second.</p>
+      <p begin="00:34:43.240" end="00:34:46.970">So, we're going to show you guys and just a second is an open gl the.</p>
+      <p begin="00:34:48.080" end="00:34:48.580">Experience.</p>
+      <p begin="00:34:49.640" end="00:34:54.560">It as I request this car you can see that this is actually</p>
+      <p begin="00:34:54.560" end="00:34:59.970">open gl defined in visual studio running on the android device with</p>
+      <p begin="00:34:59.970" end="00:35:03.420">...in front-end so once that vehicles requested we're</p>
+      <p begin="00:35:03.420" end="00:35:08.720">...to go ok so now I can jump back to.</p>
+      <p begin="00:35:08.720" end="00:35:13.560">The demo...to show you another application real quick.</p>
+      <p begin="00:35:13.560" end="00:35:20.170">Let's step debugging.</p>
+      <p begin="00:35:20.170" end="00:35:25.450">And, I'm going to show you the bing maps control so.</p>
+      <p begin="00:35:25.450" end="00:35:27.260">Let me go into here.</p>
+      <p begin="00:35:27.260" end="00:35:28.460">Will debug...maps?</p>
+      <p begin="00:35:29.600" end="00:35:33.940">So, this is the real-life bing maps control that the developers</p>
+      <p begin="00:35:33.940" end="00:35:37.830">...microsoft the have built and,</p>
+      <p begin="00:35:37.830" end="00:35:42.470">I will show you that running on the device in just a second so what we've done here</p>
+      <p begin="00:35:42.470" end="00:35:47.420">is we've taken that application we have not modify it so we really just taken</p>
+      <p begin="00:35:47.420" end="00:35:51.320">...application but we have done is we've created a small</p>
+      <p begin="00:35:51.320" end="00:35:56.490">wrapper which is a visual studio project that is wrapped around that cplus-plus</p>
+      <p begin="00:35:56.490" end="00:36:02.090">project selection launch it and deploy it on to the device and actually attach the debugged.</p>
+      <p begin="00:36:02.090" end="00:36:11.480">So, if I go ahead and just press...we can go ahead and deploy...to the device.</p>
+      <p begin="00:36:11.480" end="00:36:16.270">And, what this is going to do is it's just a tester for the map control</p>
+      <p begin="00:36:16.270" end="00:36:17.610">itself?</p>
+      <p begin="00:36:17.610" end="00:36:21.750">So, if we jump to the will for vision let's see.</p>
+      <p begin="00:36:21.750" end="00:36:27.170">You guys see that on the android...loading now.</p>
+      <p begin="00:36:27.170" end="00:36:30.120">It's in the process of loading.</p>
+      <p begin="00:36:30.120" end="00:36:33.870">And, the its loading symbols here so if we come back to.</p>
+      <p begin="00:36:36.960" end="00:36:41.230">You guys can see that it is set seven still loading</p>
+      <p begin="00:36:41.230" end="00:36:45.550">symbols it's attaching in the debug mode and now we can</p>
+      <p begin="00:36:45.550" end="00:36:49.380">go to the android device and you can see that</p>
+      <p begin="00:36:49.380" end="00:36:55.620">it's loading it's in the process of loading the map.</p>
+      <p begin="00:36:55.620" end="00:36:58.250">If we go to seattle.</p>
+      <p begin="00:36:58.250" end="00:37:01.760">This will take just a second you can actually see the seattle</p>
+      <p begin="00:37:01.760" end="00:37:05.100">map the getting loaded here I</p>
+      <p begin="00:37:05.100" end="00:37:09.400">can pan around you can see I'm going back to seattle so,</p>
+      <p begin="00:37:09.400" end="00:37:12.610">you can actually see that native cplus-plus</p>
+      <p begin="00:37:12.610" end="00:37:16.690">...component is running and debugging now</p>
+      <p begin="00:37:16.690" end="00:37:19.660">if I'm starting to load the raster is</p>
+      <p begin="00:37:19.660" end="00:37:23.470">a shun images for the traffic control and,</p>
+      <p begin="00:37:23.470" end="00:37:32.320">if we go back to seven you can actually see that I have hit a break point here.</p>
+      <p begin="00:37:33.680" end="00:37:43.570">Go ahead and hit...ten a couple times.</p>
+      <p begin="00:37:43.570" end="00:37:48.200">You can see that the stepping is actually pretty fast so we're using gb on the back-end</p>
+      <p begin="00:37:48.200" end="00:37:50.440">...to do this native,</p>
+      <p begin="00:37:50.440" end="00:37:56.780">nativestepping as well all right so now I talked about</p>
+      <p begin="00:37:56.780" end="00:38:00.840">the android emulator before what I'm going to show you next is again</p>
+      <p begin="00:38:00.840" end="00:38:05.750">a cplus-plus component using open gl but in this case.</p>
+      <p begin="00:38:05.750" end="00:38:06.530">Let me just</p>
+      <p begin="00:38:06.530" end="00:38:14.360">the shut this down stop the debugging I'm going to just kill this.</p>
+      <p begin="00:38:14.360" end="00:38:17.810">Okay, so, the android...android emulator</p>
+      <p begin="00:38:17.810" end="00:38:22.570">...any of you guys who have built a mobile application across ios android or windows</p>
+      <p begin="00:38:22.570" end="00:38:27.380">...especially those of you who have done android development are probably familiar with</p>
+      <p begin="00:38:27.380" end="00:38:32.500">the android simulators that are out there for the ones that are available in free</p>
+      <p begin="00:38:32.500" end="00:38:36.160">...pretty slow and for the ones that are</p>
+      <p begin="00:38:36.160" end="00:38:41.020">good they're actually quite expensive so one of the things that we heard from a lot of android developers</p>
+      <p begin="00:38:41.020" end="00:38:45.860">was that we should introduce an android developer and that's actually included as part of visual studio</p>
+      <p begin="00:38:45.860" end="00:38:51.260">twenty fifteen so you can go ahead and just get this now you could do all</p>
+      <p begin="00:38:51.260" end="00:38:56.160">kinds of configurations you can get whatever is the latest api and this runs on</p>
+      <p begin="00:38:56.160" end="00:39:01.090">hyper v so it actually is complimentary to the windows phone emulator used to be that</p>
+      <p begin="00:39:01.090" end="00:39:06.140">you had to do a complete rebootwith your...set reset your biased so that you hat</p>
+      <p begin="00:39:06.140" end="00:39:10.870">...using the other virtualization technologies now this works kind-of</p>
+      <p begin="00:39:10.870" end="00:39:17.260">directlyin your app so what I'm going to do now is I'm just going to</p>
+      <p begin="00:39:17.260" end="00:39:21.350">take as sample and in this case I'm going to take a.</p>
+      <p begin="00:39:21.350" end="00:39:24.560">Cplus-plus component.</p>
+      <p begin="00:39:24.560" end="00:39:26.780">The...eighty-six version of it and I'm just going to</p>
+      <p begin="00:39:26.780" end="00:39:30.970">drag-and-drop and educate directly onto the android</p>
+      <p begin="00:39:30.970" end="00:39:38.390">emulator up I did this before I need to attach the.</p>
+      <p begin="00:39:38.390" end="00:39:46.280">...attached the device I can't have two instances of ab running at the same time.</p>
+      <p begin="00:39:46.280" end="00:39:49.980">Ok, let's restart this.</p>
+      <p begin="00:39:49.980" end="00:39:59.010">...will take just a second.</p>
+      <p begin="00:39:59.010" end="00:40:02.990">Rh once this loads I can actually just go ahead and drag-and-drop the ap</p>
+      <p begin="00:40:02.990" end="00:40:07.910">k directly on to the emulator.</p>
+      <p begin="00:40:07.910" end="00:40:20.820">...pretty cool demo.</p>
+      <p begin="00:40:20.820" end="00:40:21.920">Ok,</p>
+      <p begin="00:40:21.920" end="00:40:26.860">so, now using my touch enabled pc I can go ahead and drag-and-drop this</p>
+      <p begin="00:40:26.860" end="00:40:31.840">onto the device that's installed properly now I just need to go and launch</p>
+      <p begin="00:40:31.840" end="00:40:36.560">it so as you see this is an open gl version of an application</p>
+      <p begin="00:40:36.560" end="00:40:41.770">running the common kind of mighty...an example and if</p>
+      <p begin="00:40:41.770" end="00:40:46.770">I can rotate it and rotated again I can, you know,</p>
+      <p begin="00:40:46.770" end="00:40:51.480">spin that and it's actually pretty responsive so I get a full.</p>
+      <p begin="00:40:51.480" end="00:40:56.500">Experience here I can even.</p>
+      <p begin="00:40:56.500" end="00:41:01.460">Should be able to this might be a little bit warm but I can even do multi touch,</p>
+      <p begin="00:41:01.460" end="00:41:07.620">for example,...zoom in and out?</p>
+      <p begin="00:41:07.620" end="00:41:10.110">Zoom in and out to the application so the</p>
+      <p begin="00:41:10.110" end="00:41:14.070">android emulator is a full image of android running</p>
+      <p begin="00:41:14.070" end="00:41:19.380">on your pc and you can run native applications or.</p>
+      <p begin="00:41:19.380" end="00:41:21.270">Or java base applications</p>
+      <p begin="00:41:21.270" end="00:41:25.670">or examine based applications or apache cordova applications</p>
+      <p begin="00:41:25.670" end="00:41:30.180">...so with that note let's jump to apache</p>
+      <p begin="00:41:30.180" end="00:41:32.900">cordova.</p>
+      <p begin="00:41:32.900" end="00:41:38.380">Now for this I'm going to jump to this other machine.</p>
+      <p begin="00:41:38.380" end="00:41:45.050">This is six I believe.</p>
+      <p begin="00:41:45.050" end="00:41:47.060">So, one of the things that.</p>
+      <p begin="00:41:47.060" end="00:41:57.910">Sorry just need to pull out this...</p>
+      <p begin="00:41:57.910" end="00:42:09.260">...it went to sleep...there we go.</p>
+      <p begin="00:42:09.260" end="00:42:12.420">Shuttle at one and just try that.</p>
+      <p begin="00:42:12.420" end="00:42:16.280">There we go okay.</p>
+      <p begin="00:42:16.280" end="00:42:19.590">One of the things that we're pretty excited about is with the visual</p>
+      <p begin="00:42:19.590" end="00:42:24.070">studio the twenty fifteen extension.</p>
+      <p begin="00:42:24.070" end="00:42:26.140">We now have templates</p>
+      <p begin="00:42:26.140" end="00:42:31.120">for the ironic and...you I have you guys ever heard of</p>
+      <p begin="00:42:31.120" end="00:42:35.740">iconic anybody here...new I okay they're pretty good</p>
+      <p begin="00:42:35.740" end="00:42:40.450">templates for building hybrid applications so I can build a</p>
+      <p begin="00:42:40.450" end="00:42:43.990">...of application using javascript or</p>
+      <p begin="00:42:43.990" end="00:42:47.880">...a...or types script how many you guys have heard of types</p>
+      <p begin="00:42:47.880" end="00:42:51.600">...before great you should definitely go check out anders</p>
+      <p begin="00:42:51.600" end="00:42:56.670">...session tomorrow where he'll be talking about tightrope one-point-five and I don't have the</p>
+      <p begin="00:42:56.670" end="00:43:00.440">templates installed on this machine but if I jump back</p>
+      <p begin="00:43:00.440" end="00:43:07.740">to this machine real quick I can show you them work...</p>
+      <p begin="00:43:07.740" end="00:43:12.720">So, if we go to file.</p>
+      <p begin="00:43:12.720" end="00:43:16.700">New project so these are pretty popular ui frameworks</p>
+      <p begin="00:43:16.700" end="00:43:21.490">for building web-based applications so as you can see here this is</p>
+      <p begin="00:43:21.490" end="00:43:26.230">kind of like a simple to do list style application.</p>
+      <p begin="00:43:26.230" end="00:43:33.630">While I'm doing this I might as well just go ahead and launch it we can ignore that.</p>
+      <p begin="00:43:33.630" end="00:43:38.390">And, you'll see it...in and in the meantime I'll show you the my shuttle application</p>
+      <p begin="00:43:38.390" end="00:43:43.380">as well the driver version of the application and I can</p>
+      <p begin="00:43:43.380" end="00:43:47.400">go ahead and launch this in the ripple emulator which is a version of</p>
+      <p begin="00:43:47.400" end="00:43:55.730">chrome that is optimized for running hybrid applications and.</p>
+      <p begin="00:43:55.730" end="00:44:00.930">The should run in just a second and...we're doing that.</p>
+      <p begin="00:44:00.930" end="00:44:04.280">Let's jump back to this application so for the</p>
+      <p begin="00:44:04.280" end="00:44:08.710">...application for the cordova app as you can see one of the things that we've</p>
+      <p begin="00:44:08.710" end="00:44:14.200">done between the preview that we launched last fall and</p>
+      <p begin="00:44:14.200" end="00:44:20.750">therc that were launching today is we've actually made it a file-based</p>
+      <p begin="00:44:20.750" end="00:44:25.070">project system so that actually mirrors the cordova</p>
+      <p begin="00:44:25.070" end="00:44:29.600">project itself how did you guys have heard of apache cordova before.</p>
+      <p begin="00:44:29.600" end="00:44:33.580">Okay, how many of you guys have heard of phone gap before okay</p>
+      <p begin="00:44:33.580" end="00:44:37.360">they're actually somewhat one in the same thorough few differences if you're really,</p>
+      <p begin="00:44:37.360" end="00:44:39.300">really deeply involved but,</p>
+      <p begin="00:44:39.300" end="00:44:43.880">for the most part they're they refer to the same technology and apache cordova</p>
+      <p begin="00:44:43.880" end="00:44:48.660">is a project that adobe donated to the apache foundation a couple a</p>
+      <p begin="00:44:48.660" end="00:44:52.920">few years ago now and it basically does two things number one</p>
+      <p begin="00:44:52.920" end="00:44:56.480">in abstracts away the notion of the</p>
+      <p begin="00:44:56.480" end="00:45:00.710">platform specific packaging technology across iowa's android</p>
+      <p begin="00:45:00.710" end="00:45:04.400">and windows so that you as a developer don't have to worry about that quite as</p>
+      <p begin="00:45:04.400" end="00:45:09.270">much of the other thing that does is it actually makes it very easy for you to access native</p>
+      <p begin="00:45:09.270" end="00:45:13.880">device capabilities and then it normalize is those native api is across a</p>
+      <p begin="00:45:13.880" end="00:45:19.710">...api front-end so I'll show you guys that just a second but,</p>
+      <p begin="00:45:19.710" end="00:45:23.760">what you can see here is that the way that this is defined is very much like any</p>
+      <p begin="00:45:23.760" end="00:45:28.750">kind of web application but the client portion of that web application so there's a dubbed uproot</p>
+      <p begin="00:45:28.750" end="00:45:32.510">and it I have css I have scripts?</p>
+      <p begin="00:45:32.510" end="00:45:37.980">this is where most of my application is defined and I have in</p>
+      <p begin="00:45:37.980" end="00:45:43.740">the cs as you can see that I'm using less which is a common css preprocessor and,</p>
+      <p begin="00:45:43.740" end="00:45:46.270">if we go to the</p>
+      <p begin="00:45:46.270" end="00:45:50.160">scripts and the type things you can actually see that I'm using angular js</p>
+      <p begin="00:45:50.160" end="00:45:54.780">...app I'm using j query in this app to the point is for cordova</p>
+      <p begin="00:45:54.780" end="00:46:00.840">base applications if you're a web developer this will feel very familiar to you can use the</p>
+      <p begin="00:46:00.840" end="00:46:05.790">same comment web-based frameworks that you are using today you can use the</p>
+      <p begin="00:46:05.790" end="00:46:11.060">same common web-based and experiences for workflow that</p>
+      <p begin="00:46:11.060" end="00:46:16.250">you're using today so that's how we're defining it and the next thing I'll show</p>
+      <p begin="00:46:16.250" end="00:46:20.650">you guys is that for apache cordova applications we have a conflict</p>
+      <p begin="00:46:20.650" end="00:46:25.460">file now this is where you define the application-specific information</p>
+      <p begin="00:46:25.460" end="00:46:30.770">for your app as you can see here there is common information per app but if we go</p>
+      <p begin="00:46:30.770" end="00:46:34.310">into the windows are android or ios there is</p>
+      <p begin="00:46:34.310" end="00:46:39.590">some specific information that you need to specify here but,</p>
+      <p begin="00:46:39.590" end="00:46:43.170">the most important thing is the capability of accessing</p>
+      <p begin="00:46:43.170" end="00:46:47.100">plugins now the plugins are the way that you can access</p>
+      <p begin="00:46:47.100" end="00:46:51.990">native device capabilities per device and then they get normalized so someone</p>
+      <p begin="00:46:51.990" end="00:46:55.520">create the plug-in for ios android and windows</p>
+      <p begin="00:46:55.520" end="00:46:59.530">and then they expose it to this common plug-in repository with a comment</p>
+      <p begin="00:46:59.530" end="00:47:05.470">javascript api surface area now you can get these from</p>
+      <p begin="00:47:05.470" end="00:47:09.350">the common repository in this case a lot are coming from the apache cordova</p>
+      <p begin="00:47:09.350" end="00:47:13.550">plugins but, you can also get some that are define, you know,</p>
+      <p begin="00:47:13.550" end="00:47:18.720">microsoft has contributed some adobe has some to lehrer has some there is</p>
+      <p begin="00:47:18.720" end="00:47:22.090">a wide variety of community contributors that are defining these</p>
+      <p begin="00:47:22.090" end="00:47:26.500">plugins and in addition to the plugins that are available</p>
+      <p begin="00:47:26.500" end="00:47:31.060">to the public I can also define my own plugins so let's say I had my</p>
+      <p begin="00:47:31.060" end="00:47:36.780">...sensor that I wanted to use for my application for my mobile apps</p>
+      <p begin="00:47:36.780" end="00:47:41.620">I could actually define that censor using native code and then be able to access it from</p>
+      <p begin="00:47:41.620" end="00:47:45.720">a...apache cordova application and I can do</p>
+      <p begin="00:47:45.720" end="00:47:52.360">that with the custom I can actually go ahead and get something directly off of get.</p>
+      <p begin="00:47:52.360" end="00:47:58.710">So, next thing I'm going to do is just launch this to the android emulator.</p>
+      <p begin="00:47:58.710" end="00:48:03.860">Which we already have running?</p>
+      <p begin="00:48:03.860" end="00:48:09.020">So, across all of these experiences cplus-plus csharp html</p>
+      <p begin="00:48:09.020" end="00:48:13.800">javascript what we've tried to do is to make sure that there are comments set of</p>
+      <p begin="00:48:13.800" end="00:48:17.680">a characteristics that you guys have come to expect from visual studio that</p>
+      <p begin="00:48:17.680" end="00:48:21.930">are uniform across all of the different technologies depending on which technology</p>
+      <p begin="00:48:21.930" end="00:48:26.730">use so that you don't have to worry about that number one is the acquisition experience the</p>
+      <p begin="00:48:26.730" end="00:48:28.020">...experience is really,</p>
+      <p begin="00:48:28.020" end="00:48:33.450">really simple for your depth box number two the debugging and editing</p>
+      <p begin="00:48:33.450" end="00:48:38.310">experience that you guys are used to having in visual studio for your code or</p>
+      <p begin="00:48:38.310" end="00:48:41.910">against windows applications actually also works against I</p>
+      <p begin="00:48:41.910" end="00:48:45.590">was an android doesn't matter which a.</p>
+      <p begin="00:48:45.590" end="00:48:47.640">Platform your using.</p>
+      <p begin="00:48:47.640" end="00:48:53.420">Now...to do is go to the debug window let's just make it so...you can see these</p>
+      <p begin="00:48:53.420" end="00:48:54.320">two side-by-side.</p>
+      <p begin="00:48:55.650" end="00:49:00.480">And, I'm going to go to the donned explore and look at the index...html.</p>
+      <p begin="00:49:00.480" end="00:49:03.550">And, now I can use this select elements to just</p>
+      <p begin="00:49:03.550" end="00:49:07.440">...element on the screen that has actually updated the dom explore</p>
+      <p begin="00:49:07.440" end="00:49:12.750">lives so I'm attached in this debug mode I can go ahead just that you guys can see it and make</p>
+      <p begin="00:49:12.750" end="00:49:16.920">this a little more obvious and you can see that we have</p>
+      <p begin="00:49:16.920" end="00:49:22.150">updated the application live in the emulator now I can go ahead and just</p>
+      <p begin="00:49:22.150" end="00:49:26.610">edit this html directly and I can just-say-no rides and</p>
+      <p begin="00:49:26.610" end="00:49:31.480">cursor often you actually see that I get that directly updated so this makes that the</p>
+      <p begin="00:49:31.480" end="00:49:36.020">workflow for developing application extremely rapid and iterative</p>
+      <p begin="00:49:36.020" end="00:49:45.880">as you develop your app I can go ahead and start the service.</p>
+      <p begin="00:49:47.130" end="00:49:47.990">I think I forgot to</p>
+      <p begin="00:49:47.990" end="00:49:53.370">celebrate point on this machine but if we go ahead and.</p>
+      <p begin="00:49:54.600" end="00:49:58.350">The solution explore.</p>
+      <p begin="00:49:58.350" end="00:50:00.630">If I go into the.</p>
+      <p begin="00:50:00.630" end="00:50:02.030">Scripts.</p>
+      <p begin="00:50:02.030" end="00:50:06.830">Let's see.</p>
+      <p begin="00:50:06.830" end="00:50:11.960">Well, let's skip...break point for now but,</p>
+      <p begin="00:50:11.960" end="00:50:15.690">anyways the point is that you can actually stop in the debug</p>
+      <p begin="00:50:15.690" end="00:50:18.800">mode and be able to see your break points and</p>
+      <p begin="00:50:18.800" end="00:50:23.410">have the rapid debug experience for that as well?</p>
+      <p begin="00:50:23.410" end="00:50:28.140">Now the other thing that we've done in one of the benefits as you can see were hitting the break...now one</p>
+      <p begin="00:50:28.140" end="00:50:32.350">of the benefits of having a file-based workflow are project system</p>
+      <p begin="00:50:32.350" end="00:50:36.880">for apache cordova projects is that you can use all kinds of,</p>
+      <p begin="00:50:36.880" end="00:50:41.120">you know, and, pm or file-based tools against your patchy</p>
+      <p begin="00:50:41.120" end="00:50:44.070">...project so if you use gulp or</p>
+      <p begin="00:50:44.070" end="00:50:48.870">grunts you can use that in this application and in fact we have a</p>
+      <p begin="00:50:48.870" end="00:50:53.840">...json editor here second bring up the</p>
+      <p begin="00:50:53.840" end="00:50:57.020">json and I can you can actually see here that I</p>
+      <p begin="00:50:57.020" end="00:51:00.960">...you know, the this is using the type script</p>
+      <p begin="00:51:00.960" end="00:51:05.530">alpha but I get statement completion I should get statement</p>
+      <p begin="00:51:05.530" end="00:51:12.520">completion for angular it looks like that is not coming up right now.</p>
+      <p begin="00:51:12.520" end="00:51:14.970">Okay.</p>
+      <p begin="00:51:14.970" end="00:51:16.400">The point is that you</p>
+      <p begin="00:51:16.400" end="00:51:24.270">actually get integration with all of these all of these.</p>
+      <p begin="00:51:24.270" end="00:51:28.340">And,...and file system based experiences if we go to the goal</p>
+      <p begin="00:51:28.340" end="00:51:31.690">file you can see that how many...you guys have ever heard of goal.</p>
+      <p begin="00:51:31.690" end="00:51:35.350">Of those web developer...I can actually use a gulp file to</p>
+      <p begin="00:51:35.350" end="00:51:38.530">...to get the latest packages that</p>
+      <p begin="00:51:38.530" end="00:51:41.410">I have a dependency on in my quart of application.</p>
+      <p begin="00:51:42.710" end="00:51:49.600">And, in fact I can even go to a task runner so if I go to.</p>
+      <p begin="00:51:49.600" end="00:51:52.350">Tools let's see...</p>
+      <p begin="00:51:53.470" end="00:51:57.190">go to other windows I can actually see the task runner explore.</p>
+      <p begin="00:51:58.400" end="00:52:02.590">And, you can see that this is bound to this is a way that I can visualize the task</p>
+      <p begin="00:52:02.590" end="00:52:04.370">runners that are attached to be a my</p>
+      <p begin="00:52:04.370" end="00:52:10.050">...file in visual studio so if I if I build this.</p>
+      <p begin="00:52:10.050" end="00:52:14.680">You can see that it actually runs the before build process so I actually have</p>
+      <p begin="00:52:14.680" end="00:52:18.670">the same workflow across with the frameworks and with the goal</p>
+      <p begin="00:52:18.670" end="00:52:23.080">file or bauer or whatever actually running in the context of visual studious this</p>
+      <p begin="00:52:23.080" end="00:52:29.560">is a very kind of productive environment now the next thing I'm going to do is to show you</p>
+      <p begin="00:52:29.560" end="00:52:32.450">guys the application insights integration and.</p>
+      <p begin="00:52:33.740" end="00:52:38.620">So, if we go back to the can think file here let's just close this</p>
+      <p begin="00:52:38.620" end="00:52:42.190">at one of the things I can do we have been working on a.</p>
+      <p begin="00:52:45.210" end="00:52:47.890">...plug-in for apache</p>
+      <p begin="00:52:47.890" end="00:52:52.840">cordova applications and we have that available as a get on the get repository</p>
+      <p begin="00:52:52.840" end="00:52:57.510">here one of the things I can do is just take this address right here and copy</p>
+      <p begin="00:52:57.510" end="00:53:02.350">it and pasted directly into my visual studio solutions I can go to custom</p>
+      <p begin="00:53:02.350" end="00:53:09.820">go to get and I can go ahead and paste that and hit, you know.</p>
+      <p begin="00:53:09.820" end="00:53:13.950">This is okay I don't need to run the application anymore.</p>
+      <p begin="00:53:13.950" end="00:53:19.210">Let's close thisdoesn't look like the download is working but basically that is</p>
+      <p begin="00:53:19.210" end="00:53:25.180">how I would be able to attached to the get repository to get this app</p>
+      <p begin="00:53:25.180" end="00:53:29.860">insights app now what I'm going to do is show you what that does there's a</p>
+      <p begin="00:53:29.860" end="00:53:34.530">little bit of code that I have to do to create the custom events but,</p>
+      <p begin="00:53:34.530" end="00:53:40.670">everything else that you're going to see here comes automatically so if I go to https?</p>
+      <p begin="00:53:40.670" end="00:53:43.880">The portal.</p>
+      <p begin="00:53:43.880" end="00:53:44.770">That asher.</p>
+      <p begin="00:53:45.780" end="00:53:59.240">Dot com I am not connected to network that's great that would explain a</p>
+      <p begin="00:53:59.240" end="00:54:00.510">Ok.</p>
+      <p begin="00:54:00.510" end="00:54:14.540">Let's try this again.</p>
+      <p begin="00:54:14.540" end="00:54:22.780">I'm just going to continue their.</p>
+      <p begin="00:54:22.780" end="00:54:28.320">The same password.</p>
+      <p begin="00:54:28.320" end="00:54:29.910">So, now we can see the app</p>
+      <p begin="00:54:29.910" end="00:54:34.940">...which we just announced today is available for public beta</p>
+      <p begin="00:54:34.940" end="00:54:38.320">and...appears if you have any questions you-can come up and ask her</p>
+      <p begin="00:54:38.320" end="00:54:43.540">about that and what I'm going to do is go into my asher account and see</p>
+      <p begin="00:54:43.540" end="00:54:48.150">what...data and getting back for this application that's deployed into the wild</p>
+      <p begin="00:54:50.050" end="00:55:02.180">it does not look to be here so I'm going to switch to this machine again?</p>
+      <p begin="00:55:02.180" end="00:55:06.490">Note was working on this machines so we'll bring it up here.</p>
+      <p begin="00:55:06.490" end="00:55:09.550">Okay, you can see that I'm logged in here and we see that the</p>
+      <p begin="00:55:09.550" end="00:55:13.750">...dot cordova application is there now there's a number of things</p>
+      <p begin="00:55:13.750" end="00:55:18.280">that come automatically for mobile applications if you use app insights or application</p>
+      <p begin="00:55:18.280" end="00:55:22.970">insights and first of all sessions page views.</p>
+      <p begin="00:55:22.970" end="00:55:27.230">What we've done some work to integrate crashes here and this is from</p>
+      <p begin="00:55:27.230" end="00:55:31.680">the hockey app acquisition that we did earlier you can also see that I can see the</p>
+      <p begin="00:55:31.680" end="00:55:36.960">top devices so if I go into top devices you can actually see</p>
+      <p begin="00:55:36.960" end="00:55:41.780">that I can see all of the different device models that are using my applications so this is...you know,</p>
+      <p begin="00:55:41.780" end="00:55:44.290">iphone six surface pro</p>
+      <p begin="00:55:44.290" end="00:55:49.180">...the different operating systems that are running my app?</p>
+      <p begin="00:55:49.180" end="00:55:54.130">And, then the other thing I can do is look at custom events so as I mentioned earlier and there will be some deep</p>
+      <p begin="00:55:54.130" end="00:55:59.410">dives on this I can actually create my own custom code to.</p>
+      <p begin="00:55:59.410" end="00:56:01.310">Complete a journey, for example, an</p>
+      <p begin="00:56:01.310" end="00:56:06.270">and track that task and see what happens with that task so,</p>
+      <p begin="00:56:07.660" end="00:56:09.680">in this case you can see that I have</p>
+      <p begin="00:56:09.680" end="00:56:14.310">...hundred and twelve people have completed the journey I actually know at how many</p>
+      <p begin="00:56:14.310" end="00:56:19.190">of them are on which version of the applications one of the things that I heard from a customer just</p>
+      <p begin="00:56:19.190" end="00:56:24.210">the other day was that they just don't have any idea which version of</p>
+      <p begin="00:56:24.210" end="00:56:30.260">the application most of their users are actually running the other thing I can do is actually</p>
+      <p begin="00:56:30.260" end="00:56:32.810">atta chart here so I can come into?</p>
+      <p begin="00:56:33.970" end="00:56:36.350">App insights add a charge.</p>
+      <p begin="00:56:36.350" end="00:56:40.980">And, go down here and just click on the tripped cost.</p>
+      <p begin="00:56:40.980" end="00:56:43.060">And, you can see that in just a second it will</p>
+      <p begin="00:56:43.060" end="00:56:47.400">...to show me what the average trip cost</p>
+      <p begin="00:56:47.400" end="00:56:52.730">was across all of the different users of this application so that's a pretty cool</p>
+      <p begin="00:56:52.730" end="00:56:57.510">feature gives you insight into both the usage what mobile apps</p>
+      <p begin="00:56:57.510" end="00:57:01.190">...mobile devices...running on as well as custom</p>
+      <p begin="00:57:01.190" end="00:57:04.830">insight into the different workflows that they went through in the application</p>
+      <p begin="00:57:05.840" end="00:57:10.300">...right I think that is the end of my demos so I'm going to kind of</p>
+      <p begin="00:57:10.300" end="00:57:15.860">jump back to the slides real quick the powerpoint ok so</p>
+      <p begin="00:57:15.860" end="00:57:20.400">...you can basically build rich native applications across multiple,</p>
+      <p begin="00:57:20.400" end="00:57:24.950">multiple platforms windows ios...android and you can reuse the code across all</p>
+      <p begin="00:57:24.950" end="00:57:29.670">of those different solutions and you share the app logic across</p>
+      <p begin="00:57:29.670" end="00:57:34.300">the different platforms and using a dot net portable classed libraries you can actually</p>
+      <p begin="00:57:34.300" end="00:57:40.150">share the exact same binary as you can do share the unit testing and things like that and,</p>
+      <p begin="00:57:40.150" end="00:57:43.910">one hundred-percent of the api zer...so our good friends ameri</p>
+      <p begin="00:57:43.910" end="00:57:49.610">and are very good about releasing updates to the sdk...soon as the</p>
+      <p begin="00:57:49.610" end="00:57:56.320">...of the operating systems releases updates to their api...</p>
+      <p begin="00:57:56.320" end="00:57:59.400">In terms of you I design as I showed you guys we have</p>
+      <p begin="00:57:59.400" end="00:58:02.390">...way designers directly in visual studio so</p>
+      <p begin="00:58:02.390" end="00:58:09.020">that you can do drag-and-drop kinds of app construction for your app and the way that</p>
+      <p begin="00:58:09.020" end="00:58:12.730">this...apps are produced is that the actually end up</p>
+      <p begin="00:58:12.730" end="00:58:17.150">with new essentially native compact natively compiled applications running ios</p>
+      <p begin="00:58:17.150" end="00:58:21.860">...android so for ios it does ahead of time compilation to produce the</p>
+      <p begin="00:58:21.860" end="00:58:25.090">armed binary which is basically what the ios apps</p>
+      <p begin="00:58:25.090" end="00:58:29.590">do and for android it uses the just-in-time compilation</p>
+      <p begin="00:58:29.590" end="00:58:34.490">...the entry device across the windows universal apps you can share</p>
+      <p begin="00:58:34.490" end="00:58:37.890">...animal across all of the different devices and then</p>
+      <p begin="00:58:37.890" end="00:58:41.310">you can tailor the experience for each of the devices.</p>
+      <p begin="00:58:42.370" end="00:58:47.150">And, for the cross platform cplus-plus components you can actually build</p>
+      <p begin="00:58:47.150" end="00:58:50.450">a shared component or as...will show you later</p>
+      <p begin="00:58:50.450" end="00:58:55.710">today I believe he will show you that you can actually build entirely native activities</p>
+      <p begin="00:58:55.710" end="00:59:00.450">in cplus-plus using visual studio and then you can take</p>
+      <p begin="00:59:00.450" end="00:59:06.090">...share components and build the presentation...in salmon or cordova.</p>
+      <p begin="00:59:06.090" end="00:59:10.500">The visual studio emulator for android is a fast x eighty-six image</p>
+      <p begin="00:59:10.500" end="00:59:14.290">and it runs on hyper v so you don't need to reboot tobias to get this</p>
+      <p begin="00:59:14.290" end="00:59:18.130">to work and it comes with visual studio as you guys know we</p>
+      <p begin="00:59:18.130" end="00:59:22.790">have the visual studio community the version so you can actually get</p>
+      <p begin="00:59:22.790" end="00:59:27.750">that for free and the visual studio emulator is included as part of that it speaks</p>
+      <p begin="00:59:27.750" end="00:59:32.030">...debugging so I don't need to do any kind of custom thing or</p>
+      <p begin="00:59:32.030" end="00:59:36.620">get another tool to be able to attaching the debug are for that and I get all of</p>
+      <p begin="00:59:36.620" end="00:59:42.370">the native device capabilities and sensors in that emulator.</p>
+      <p begin="00:59:42.370" end="00:59:46.520">The patchy cordova tools make it easy to build hybrid html</p>
+      <p begin="00:59:46.520" end="00:59:50.900">base applications so basically this is a javascript html.</p>
+      <p begin="00:59:50.900" end="00:59:57.070">Or...script or...application that you end up building and</p>
+      <p begin="00:59:57.070" end="01:00:01.970">then it gets packaged as a native apps for each one of the different platforms so you can</p>
+      <p begin="01:00:01.970" end="01:00:06.620">send push notifications and you can get all kinds of real-time information from the</p>
+      <p begin="01:00:06.620" end="01:00:11.500">sensors on the device and then with types script which if you haven't if</p>
+      <p begin="01:00:11.500" end="01:00:16.360">you're javascript developer today and you have not heard or tried of type tried</p>
+      <p begin="01:00:16.360" end="01:00:21.610">type script...highly encourage you to go to anders session tomorrowwe introduce</p>
+      <p begin="01:00:21.610" end="01:00:25.310">types script because as we heard from a lot of customers who</p>
+      <p begin="01:00:25.310" end="01:00:29.940">are starting to build very large web applications with</p>
+      <p begin="01:00:29.940" end="01:00:34.920">hundreds of thousands of lines of code was it was hard to manage javascript</p>
+      <p begin="01:00:34.920" end="01:00:40.620">applications that are of that size so, types script ads strong,</p>
+      <p begin="01:00:40.620" end="01:00:46.000">strong typing to javascript so you can get the code productivity</p>
+      <p begin="01:00:46.000" end="01:00:50.920">that you get...csharp but for javascript based applications so that's what type script is</p>
+      <p begin="01:00:50.920" end="01:00:54.340">and the type script experience is throughout</p>
+      <p begin="01:00:54.340" end="01:00:58.950">our cordova tooling so you get gratin tele sense for all of the plug-in</p>
+      <p begin="01:00:58.950" end="01:01:05.050">completion or for any of the native device capabilities with the cordova</p>
+      <p begin="01:01:05.050" end="01:01:10.030">applications and the tooling in visual studio you can get you can use</p>
+      <p begin="01:01:10.030" end="01:01:14.230">any javascript framework that you use in your web development today or</p>
+      <p begin="01:01:14.230" end="01:01:18.470">...common command line tools like and pm grunt gulp, you know,</p>
+      <p begin="01:01:18.470" end="01:01:23.060">bauer all of those kinds of task winner kinds of tools.</p>
+      <p begin="01:01:23.060" end="01:01:29.260">And, you end up building a single hybrid application across ios android and windows.</p>
+      <p begin="01:01:29.260" end="01:01:33.530">Now this was intended to be an overview sessions so that you guys</p>
+      <p begin="01:01:33.530" end="01:01:37.170">could see everything that we had to offer in terms of a</p>
+      <p begin="01:01:37.170" end="01:01:41.630">across platform mobile development.</p>
+      <p begin="01:01:41.630" end="01:01:46.130">What I've done here is I've highlighted a couple of sessions that will go deeper on each</p>
+      <p begin="01:01:46.130" end="01:01:51.300">one of these topics if you...hear more about the app service...a bunch of sessions on that if you want</p>
+      <p begin="01:01:51.300" end="01:01:56.230">to hear more about across platforms cplus-plus more sessions on that cordova more sessions</p>
+      <p begin="01:01:56.230" end="01:02:00.115">...more sessions so this is the overview session if you want</p>
+      <p begin="01:02:00.115" end="01:02:05.800">to go deep on any of these topics I highly encourage you to check that out and, in terms of</p>
+      <p begin="01:02:05.800" end="01:02:10.430">...resources you guys can go get these bits today go try it now so,</p>
+      <p begin="01:02:10.430" end="01:02:11.870">get visual studio twenty fifteen</p>
+      <p begin="01:02:11.870" end="01:02:16.800">rc go try the app service on the website that I showed you guys and,</p>
+      <p begin="01:02:16.800" end="01:02:19.680">definitely try the application insights</p>
+      <p begin="01:02:19.680" end="01:02:25.830">data that wasn't quite public yet so there is no link to send them too but?</p>
+      <p begin="01:02:25.830" end="01:02:28.960">Definitely go check that out as well and again please</p>
+      <p begin="01:02:28.960" end="01:02:34.640">...fill out an email so thank you very much.</p>
+
+    </div>
+  </body>
+</tt>

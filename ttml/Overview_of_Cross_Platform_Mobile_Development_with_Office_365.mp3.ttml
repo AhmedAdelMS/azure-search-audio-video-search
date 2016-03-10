@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.920</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.620" end="00:00:08.990">All right I think we'll go ahead and get started so my name is richard is</p>
+      <p begin="00:00:08.990" end="00:00:12.630">area high work in the dx organization</p>
+      <p begin="00:00:12.630" end="00:00:16.980">within microsoft with those not aren't familiar with that part of...microsoft its</p>
+      <p begin="00:00:16.980" end="00:00:21.630">developer experience so it's working with developers and really try and help developers</p>
+      <p begin="00:00:21.630" end="00:00:26.000">...their use of...developing tech...developer technologies</p>
+      <p begin="00:00:27.570" end="00:00:31.690">...might specialties really around obviously sixty-five although I do a lot of</p>
+      <p begin="00:00:31.690" end="00:00:36.650">things in the mobile space which is kind of what brought me to this session today</p>
+      <p begin="00:00:36.650" end="00:00:42.280">...excited to talk to you guys about this so, this topic is on</p>
+      <p begin="00:00:42.280" end="00:00:46.990">the building cross-platform mobile apps with our office three</p>
+      <p begin="00:00:46.990" end="00:00:48.940">sixty five api is</p>
+      <p begin="00:00:48.940" end="00:00:54.300">so I'll kind of set the ground a little bit in terms of this</p>
+      <p begin="00:00:54.300" end="00:00:59.050">...a introduction to cross-platform development although I'm going</p>
+      <p begin="00:00:59.050" end="00:01:02.900">to start pretty low and build-up I don't think I'll lose anyone</p>
+      <p begin="00:01:02.900" end="00:01:08.910">but I just want-to let-you know that there are more like introductory,</p>
+      <p begin="00:01:08.910" end="00:01:13.310">introductory sessions and I have some links to those later in</p>
+      <p begin="00:01:13.310" end="00:01:18.400">the de presentation today so I'm curious before I get started in and I</p>
+      <p begin="00:01:18.400" end="00:01:24.050">can't see that well out in the audience but I'll do my best to try to see who here</p>
+      <p begin="00:01:24.050" end="00:01:30.810">is came to this because they're interested in maybe cordova development?</p>
+      <p begin="00:01:30.810" end="00:01:34.030">Okay, how about zimmerman?</p>
+      <p begin="00:01:34.030" end="00:01:40.730">...so, a little half-and-half careers is we consider themselves someone that does</p>
+      <p begin="00:01:40.730" end="00:01:44.990">allotted or maybe a lot but has been development...sixty-five and</p>
+      <p begin="00:01:44.990" end="00:01:51.030">...api is interesting okay very cool I like I like that answer</p>
+      <p begin="00:01:51.030" end="00:01:53.560">one of the things that we talk about with</p>
+      <p begin="00:01:53.560" end="00:01:57.480">...sixty-five is the sheer magnitude of users that are using that</p>
+      <p begin="00:01:57.480" end="00:02:02.990">service in as a developer that's building applications you can really maximize on that</p>
+      <p begin="00:02:02.990" end="00:02:05.990">and get a big audience for the applications that you</p>
+      <p begin="00:02:05.990" end="00:02:09.750">right by targeting different services within office through sixty-five there's</p>
+      <p begin="00:02:09.750" end="00:02:14.620">not a great examples out there that you can go and, view that are in, you know,</p>
+      <p begin="00:02:14.620" end="00:02:18.710">all the different types of marketplaces to build do that.</p>
+      <p begin="00:02:18.710" end="00:02:22.420">Now out I have one other question I guess I'm who</p>
+      <p begin="00:02:22.420" end="00:02:28.930">...carries...as...they're kind of everyday phone is a windows phone.</p>
+      <p begin="00:02:28.930" end="00:02:33.410">Okay, about iphone an android.</p>
+      <p begin="00:02:33.410" end="00:02:35.460">All right so we're pretty decent</p>
+      <p begin="00:02:35.460" end="00:02:39.940">sport there so that's really what has driven us to do</p>
+      <p begin="00:02:39.940" end="00:02:45.070">a lot all-round cross-platform development talks you notice that ...doing more and more</p>
+      <p begin="00:02:45.070" end="00:02:48.830">...space investing more in tools to be able to deliver cross-platform</p>
+      <p begin="00:02:50.000" end="00:02:53.710">...you bring your own device movement</p>
+      <p begin="00:02:53.710" end="00:02:59.380">has really pushed organizations to be able to deliver applications on any</p>
+      <p begin="00:02:59.380" end="00:03:03.680">type of device it's very rare it's on occasion I'll talk to an organization where</p>
+      <p begin="00:03:03.680" end="00:03:08.110">they're like well we have a standardin maybe there's a standard your</p>
+      <p begin="00:03:08.110" end="00:03:11.840">orbit it's probably a menu of things like you can have maybe</p>
+      <p begin="00:03:11.840" end="00:03:17.560">an ios device or windows phone so that's what we commonly see and</p>
+      <p begin="00:03:17.560" end="00:03:23.720">that's really what is driving us doing a lot around this I have this kind</p>
+      <p begin="00:03:23.720" end="00:03:26.990">of token evaluation side the beginning and...of</p>
+      <p begin="00:03:26.990" end="00:03:32.040">you guys can win prizes it plus it's very important for us to get feedback on how we're doing in</p>
+      <p begin="00:03:32.040" end="00:03:37.290">the sessions so let's talk a little bit about kind of what we're going to do so the objectives of this</p>
+      <p begin="00:03:37.290" end="00:03:42.260">session our to explore the different options for building cross-platform mobile apps with the</p>
+      <p begin="00:03:42.260" end="00:03:47.440">office three sixty five api is we're going to try to discuss</p>
+      <p begin="00:03:47.440" end="00:03:51.460">how we integrate both office three sixty five and asher</p>
+      <p begin="00:03:51.460" end="00:03:56.220">because as your...as...directory is a dependency on working with</p>
+      <p begin="00:03:56.220" end="00:04:00.050">...sixty-five...going to talk about what are the unique constraints</p>
+      <p begin="00:04:00.050" end="00:04:03.770">of working with those with both cordova and zimmer</p>
+      <p begin="00:04:03.770" end="00:04:09.010">and projects we're also going to try to outline the different software</p>
+      <p begin="00:04:09.010" end="00:04:12.430">and service requirements so that you can build these types</p>
+      <p begin="00:04:12.430" end="00:04:18.320">of applications within visual studio of I know that you can build zebra and,</p>
+      <p begin="00:04:18.320" end="00:04:22.770">cordova apps in other id...this is really going to focus</p>
+      <p begin="00:04:22.770" end="00:04:27.990">...visual studio and that's obviously not the that's not the</p>
+      <p begin="00:04:27.990" end="00:04:32.600">...I guess the important part of this session the session is more about integrating with</p>
+      <p begin="00:04:32.600" end="00:04:37.640">...sixty-five so from a take away standpoint I hope you guys walk away knowing</p>
+      <p begin="00:04:37.640" end="00:04:41.230">that we have a comprehensive set of both...decays in api</p>
+      <p begin="00:04:41.230" end="00:04:45.540">...so that you can build cross-platform applications with</p>
+      <p begin="00:04:45.540" end="00:04:48.800">...sixty five of I mention that there are other id</p>
+      <p begin="00:04:48.800" end="00:04:52.430">easy can work with we do feel like visual studio will provide the</p>
+      <p begin="00:04:52.430" end="00:04:56.580">premier development experience for building especially with</p>
+      <p begin="00:04:56.580" end="00:05:01.500">office three sixty-five...I don't have to jump around to different places the register and app</p>
+      <p begin="00:05:01.500" end="00:05:06.460">and be able to get all the can sit permissions that I need and you'll see how</p>
+      <p begin="00:05:06.460" end="00:05:11.760">that works out and then finally there are pitfalls in building</p>
+      <p begin="00:05:11.760" end="00:05:17.050">...apps with cross-platform apps with the...sixty-five api...</p>
+      <p begin="00:05:17.050" end="00:05:21.710">all hurdles that we can get past...things that for some of the early people that</p>
+      <p begin="00:05:21.710" end="00:05:25.280">...built some cross-platform apps they dealt with those</p>
+      <p begin="00:05:25.280" end="00:05:30.580">in and that's good for you because there's a lot of lessons learned that hopefully</p>
+      <p begin="00:05:30.580" end="00:05:34.610">will reduce any sort of the challenges the...</p>
+      <p begin="00:05:34.610" end="00:05:39.480">run into just a level set I know that it was kind of split between cordova and</p>
+      <p begin="00:05:39.480" end="00:05:44.310">...and let me just a kind of give a little bit of realization this is how I'm going to</p>
+      <p begin="00:05:44.310" end="00:05:49.620">attack those objectivesso, we're going to talk about native applications with the</p>
+      <p begin="00:05:49.620" end="00:05:54.520">office three-six with obviously sixty-five...a little bit different from a traditional application that connects</p>
+      <p begin="00:05:54.520" end="00:05:59.110">office three sixty five...it's been seven point seven five minutes on that there's some</p>
+      <p begin="00:05:59.110" end="00:06:05.320">been pretty exact there but you'll see why we're going to spend thirty minutes on</p>
+      <p begin="00:06:05.320" end="00:06:09.720">cordova and twenty on the cameron so-if that upset</p>
+      <p begin="00:06:09.720" end="00:06:14.490">...I apologize the reason I'm doing it this way is that we actually have</p>
+      <p begin="00:06:14.490" end="00:06:18.910">an entire dedicated session on the...and front for office three sixty five</p>
+      <p begin="00:06:18.910" end="00:06:25.540">it's on friday ...from examine and checks from the one of</p>
+      <p begin="00:06:25.540" end="00:06:30.050">...sixty-five product groups is going to be leading that so we don't have a deeper</p>
+      <p begin="00:06:30.050" end="00:06:34.650">divx specific to cordova so I decided to give it a little bit more love in this session so just</p>
+      <p begin="00:06:34.650" end="00:06:39.000">to set the stage that's kind of what we're going to do for this and, then</p>
+      <p begin="00:06:39.000" end="00:06:42.450">...to...at the...for qa and that should leave</p>
+      <p begin="00:06:42.450" end="00:06:47.820">you with exactly fifteen seconds extra time in this box and,</p>
+      <p begin="00:06:47.820" end="00:06:49.010">you can, you know,</p>
+      <p begin="00:06:49.010" end="00:06:54.790">turn around and give good...based upon that...got fifteen seconds back your day I...</p>
+      <p begin="00:06:54.790" end="00:07:01.170">guys got a laugh lighten up a little bit with me I also have a laser here so I will use it?</p>
+      <p begin="00:07:01.170" end="00:07:06.830">From a developer vision hopefully you guys have seen this slider a</p>
+      <p begin="00:07:06.830" end="00:07:11.040">...deviation of it this is talking about kind of what our vision</p>
+      <p begin="00:07:11.040" end="00:07:15.740">is a of developing applications with office three sixty five we</p>
+      <p begin="00:07:15.740" end="00:07:19.840">...have two approaches one is being able to extend the</p>
+      <p begin="00:07:19.840" end="00:07:24.610">opposite experience and the other is taking office in bringing it into</p>
+      <p begin="00:07:24.610" end="00:07:29.560">my experience that's really what we're concentrating on here right is going to build my application</p>
+      <p begin="00:07:29.560" end="00:07:33.070">a standalone mobile application that might want to connect</p>
+      <p begin="00:07:33.070" end="00:07:37.920">...be able to take advantage ofnot only the great services that...sixty-five</p>
+      <p begin="00:07:37.920" end="00:07:43.540">offers but also being able to take advantage of that large audience that we</p>
+      <p begin="00:07:43.540" end="00:07:49.380">have of subscribers within...sixty-five so that's really kind</p>
+      <p begin="00:07:49.380" end="00:07:52.470">of the vision that we have around this encourage you guys</p>
+      <p begin="00:07:52.470" end="00:07:55.800">too if I know there was not many people that raise their hand on the</p>
+      <p begin="00:07:55.800" end="00:07:59.640">...sixty-five developer front we have some really</p>
+      <p begin="00:07:59.640" end="00:08:04.750">great sessions this week I encourage you to check them out we also some cool swagger have some awesome like</p>
+      <p begin="00:08:04.750" end="00:08:10.800">...if you go down to the to the booth all right.</p>
+      <p begin="00:08:10.800" end="00:08:15.530">So, let's talk a little bit...native office three sixty five apps in as</p>
+      <p begin="00:08:15.530" end="00:08:20.690">you're eighty so I want to start with a little level set around our office three</p>
+      <p begin="00:08:20.690" end="00:08:25.750">sixty five api eyes and I think that's especially fitting for those that might be new to this that</p>
+      <p begin="00:08:25.750" end="00:08:30.740">are that are in the room so first of all we have really standardized on trying to provide</p>
+      <p begin="00:08:30.740" end="00:08:35.470">a comprehensive set of api is that are going to follow technology</p>
+      <p begin="00:08:35.470" end="00:08:38.500">standards so we're going to deliver api is that are</p>
+      <p begin="00:08:38.500" end="00:08:44.260">delivered via restondata they're going to be secured using...from</p>
+      <p begin="00:08:44.260" end="00:08:49.860">...austin point what...leveraging is as...active directory so if</p>
+      <p begin="00:08:49.860" end="00:08:54.060">you didn't know every single user in office three sixty</p>
+      <p begin="00:08:54.060" end="00:08:56.400">five the identity provider for them</p>
+      <p begin="00:08:56.400" end="00:09:00.940">is asher active directory sometimes if you if your organization is in</p>
+      <p begin="00:09:00.940" end="00:09:05.340">...sixty-five that can sometimes be confusing because you get taken to your login</p>
+      <p begin="00:09:05.340" end="00:09:10.130">page that's just a federated login that takes you back and allows us to</p>
+      <p begin="00:09:10.130" end="00:09:15.260">...impersonating you with the user account that's</p>
+      <p begin="00:09:15.260" end="00:09:19.320">been synchronized into the cloud so that's really important is that not only is</p>
+      <p begin="00:09:19.320" end="00:09:23.740">asher id going to be the identity store for users its where we're going</p>
+      <p begin="00:09:23.740" end="00:09:28.210">to register applications and that's going to give us something that we call the as</p>
+      <p begin="00:09:28.210" end="00:09:32.830">you're eighty common consent framework and you may have not heard that term but the idea</p>
+      <p begin="00:09:32.830" end="00:09:37.410">behind this is of authenticate my user one-time and then once</p>
+      <p begin="00:09:37.410" end="00:09:42.270">I authenticate them I can reach into all the different services that leverage as</p>
+      <p begin="00:09:42.270" end="00:09:45.470">you're active directory so those that's all the services of office three</p>
+      <p begin="00:09:45.470" end="00:09:50.850">sixty-five like exchange online and sharepoint online one note but,</p>
+      <p begin="00:09:50.850" end="00:09:54.840">it also extends out to other things we'll talk about that briefly.</p>
+      <p begin="00:09:54.840" end="00:09:59.820">...a little bit we support in abstracted directory the</p>
+      <p begin="00:09:59.820" end="00:10:04.050">concept of a delegated permission and application</p>
+      <p begin="00:10:04.050" end="00:10:08.370">permission so the difference between those two are one is operating as the user</p>
+      <p begin="00:10:08.370" end="00:10:13.380">one is operating at a higher-level as like an application as like a service account</p>
+      <p begin="00:10:13.380" end="00:10:18.520">...has higher-level permissions so when I go and leverage</p>
+      <p begin="00:10:18.520" end="00:10:23.890">and application one of the benefits of using as you're active directory co-op</p>
+      <p begin="00:10:23.890" end="00:10:28.520">is as a mobile developer you don't have to deal with</p>
+      <p begin="00:10:28.520" end="00:10:33.280">login you don't have to store username in passwords you probably are going to</p>
+      <p begin="00:10:33.280" end="00:10:37.190">have to have some concept of the user perhaps but,</p>
+      <p begin="00:10:37.190" end="00:10:42.900">that user can simply mapped to something that you get back from</p>
+      <p begin="00:10:42.900" end="00:10:47.940">an identity...as...active directory so that's a pretty key</p>
+      <p begin="00:10:47.940" end="00:10:51.310">...in a value propped we sayabout</p>
+      <p begin="00:10:51.310" end="00:10:55.590">...is the identity provider for some of the apps that you...</p>
+      <p begin="00:10:55.590" end="00:10:59.430">We support...it all types of apps both native</p>
+      <p begin="00:10:59.430" end="00:11:02.520">at in web applications from</p>
+      <p begin="00:11:02.520" end="00:11:07.420">...protocol standpoint we do provide a lot of fine-grained permissions so you can</p>
+      <p begin="00:11:07.420" end="00:11:10.370">build applications that might just have read access to</p>
+      <p begin="00:11:10.370" end="00:11:14.700">contact or maybe it has for permission to sharepoint to do anything</p>
+      <p begin="00:11:14.700" end="00:11:18.460">any site collection so there's a lot of different granular permissions</p>
+      <p begin="00:11:18.460" end="00:11:23.580">that we can work with within this what you're seeing here is actually</p>
+      <p begin="00:11:23.580" end="00:11:28.150">and authorization dialogue because it's a lot if you've ever done anything with what you've</p>
+      <p begin="00:11:28.150" end="00:11:33.080">seen it probably...dialogue pop-up that says hey this app wants</p>
+      <p begin="00:11:33.080" end="00:11:38.420">to leverage some data that you have in office three sixty five and,</p>
+      <p begin="00:11:38.420" end="00:11:42.510">you see this all over the web if you ever been on facebook in clicked on app in</p>
+      <p begin="00:11:42.510" end="00:11:47.510">there you get that prop that says hey this company wants to be able to post on your behalf</p>
+      <p begin="00:11:47.510" end="00:11:52.040">and get every information that you've ever posted inside...that's the same</p>
+      <p begin="00:11:52.040" end="00:11:58.120">concept here so as we explore the authentication components of this and</p>
+      <p begin="00:11:58.120" end="00:12:03.450">api is that we have we have a pretty comprehensive list of api is that you</p>
+      <p begin="00:12:03.450" end="00:12:08.330">can be able to connect into so this first list these are the what we</p>
+      <p begin="00:12:08.330" end="00:12:12.280">call the launch services these are the services that we are originally made</p>
+      <p begin="00:12:12.280" end="00:12:17.260">available when we introduced the concept of the office three sixty five api</p>
+      <p begin="00:12:17.260" end="00:12:23.080">...is about a year-ago so we have things like my files which is one drive for business we can go to</p>
+      <p begin="00:12:23.080" end="00:12:24.080">sites calendar</p>
+      <p begin="00:12:24.080" end="00:12:28.820">contact we can work with mail we can work what users in groups that are an active</p>
+      <p begin="00:12:28.820" end="00:12:33.310">directory some of the new services and some of these are not even sure</p>
+      <p begin="00:12:33.310" end="00:12:38.060">of been completely announced they're going to be announced this week but there's a number of new services</p>
+      <p begin="00:12:38.060" end="00:12:41.550">I'm not even sure I have the full list here but one note with office three</p>
+      <p begin="00:12:41.550" end="00:12:45.060">sixty five is something that's lining up to where you can go and get one</p>
+      <p begin="00:12:45.060" end="00:12:48.900">note notebooks that might be secured behind corporate locations</p>
+      <p begin="00:12:48.900" end="00:12:52.970">user profiles manage metadata the new video services within</p>
+      <p begin="00:12:52.970" end="00:12:57.930">office three sixty-five modern groups the office grab you've heard a lot about the office</p>
+      <p begin="00:12:57.930" end="00:13:05.570">...and being able to get rich data out of there.</p>
+      <p begin="00:13:05.570" end="00:13:08.020">But, one of the things I want to point out is that idea</p>
+      <p begin="00:13:08.020" end="00:13:12.510">of common consent it goes beyond just the opposite three sixty</p>
+      <p begin="00:13:12.510" end="00:13:17.820">five things there's lots of other applications that connect with as</p>
+      <p begin="00:13:17.820" end="00:13:21.490">you're active directory and we can use those as well.</p>
+      <p begin="00:13:21.490" end="00:13:24.260">You can see over on the right-hand side there's</p>
+      <p begin="00:13:24.260" end="00:13:30.240">other services that I could connect into excusing high-power by I</p>
+      <p begin="00:13:30.240" end="00:13:33.560">connect into dynamic crm.</p>
+      <p begin="00:13:33.560" end="00:13:38.380">There's a number of third-party applications not applications that microsoft</p>
+      <p begin="00:13:38.380" end="00:13:43.180">built but other isv maybe even your own applications</p>
+      <p begin="00:13:43.180" end="00:13:47.750">so you might have multiple applications that you developing and produce for</p>
+      <p begin="00:13:47.750" end="00:13:51.940">either customers or within your organization those can show up here as well and</p>
+      <p begin="00:13:51.940" end="00:13:57.650">get granular permissions so that idea of comic consent is very powerful from that</p>
+      <p begin="00:13:57.650" end="00:14:01.620">standpoint so that's the kind of the groundwork around</p>
+      <p begin="00:14:01.620" end="00:14:05.850">...active directory and how it plays with...sixty-five?</p>
+      <p begin="00:14:05.850" end="00:14:10.830">One important thing to talk about here is what's unique about native apps</p>
+      <p begin="00:14:10.830" end="00:14:15.510">so when you go can create an app inside of asher active directory you have a choice you could</p>
+      <p begin="00:14:15.510" end="00:14:20.680">create what we call web app or native app and, there are some key differences in</p>
+      <p begin="00:14:20.680" end="00:14:24.780">a native app so if you've ever worked with these before there's a few things are going to</p>
+      <p begin="00:14:24.780" end="00:14:29.930">need it no one is a native app is inherently multi</p>
+      <p begin="00:14:29.930" end="00:14:34.970">...so when I go when I build a web app in as</p>
+      <p begin="00:14:34.970" end="00:14:39.520">you're active directory I have a little toggle switch that lets me say I want this to be single tenet for my</p>
+      <p begin="00:14:39.520" end="00:14:44.440">...or I wanted to be...to where anyone can use it mobile apps don't have that</p>
+      <p begin="00:14:44.440" end="00:14:48.820">concept they're allthey all use a what we call the</p>
+      <p begin="00:14:48.820" end="00:14:52.450">common in point which means they can they are inherently multi</p>
+      <p begin="00:14:52.450" end="00:14:57.230">tenet now you could hard code the authority that you use through</p>
+      <p begin="00:14:57.230" end="00:15:06.100">authentication will look at that a little bit but they are inherently multi tenet?</p>
+      <p begin="00:15:06.100" end="00:15:10.460">No, client app or there's no secret so if you worked with</p>
+      <p begin="00:15:10.460" end="00:15:14.680">...before a lot of times you have an app idea nap secret and you use that in</p>
+      <p begin="00:15:14.680" end="00:15:18.980">this little dance is...walk flow in order to get an access token</p>
+      <p begin="00:15:18.980" end="00:15:23.740">ob you don't have the concept of a secret and it's actually a good reason if you think about</p>
+      <p begin="00:15:23.740" end="00:15:28.430">apply built-in app that secret is like my password to the world and if I</p>
+      <p begin="00:15:28.430" end="00:15:32.310">...go in distribute that on every device out there there's going</p>
+      <p begin="00:15:32.310" end="00:15:37.250">to be someone that savvy enough to go and pull down maybe the app package</p>
+      <p begin="00:15:37.250" end="00:15:41.840">dissected and find that secret so we don't actually distribute a secret in</p>
+      <p begin="00:15:41.840" end="00:15:44.400">a native app.</p>
+      <p begin="00:15:44.400" end="00:15:45.300">They're going to use.</p>
+      <p begin="00:15:47.220" end="00:15:50.180">A web authentication broker...handle by</p>
+      <p begin="00:15:50.180" end="00:15:55.430">...which is the...are active directory authentication libraries...look at this but,</p>
+      <p begin="00:15:55.430" end="00:15:58.310">ultimately even though it's a native apps so if it's,</p>
+      <p begin="00:15:58.310" end="00:16:00.540">you know, ios you have a...that</p>
+      <p begin="00:16:00.540" end="00:16:05.660">your ui built-in if it's windows you have example file...android you might have</p>
+      <p begin="00:16:05.660" end="00:16:11.580">an xml file regardless of that when you go to authenticate we're going to launch up</p>
+      <p begin="00:16:11.580" end="00:16:16.250">basically a browser window of it's going to it's going to be the office three</p>
+      <p begin="00:16:16.250" end="00:16:21.260">sixty five login page or if you're the your customers...it would be their</p>
+      <p begin="00:16:21.260" end="00:16:26.250">login page that's an important thing is we don't we want the user to have confidence</p>
+      <p begin="00:16:26.250" end="00:16:34.400">that it is like a legitimate source that's collecting their information?</p>
+      <p begin="00:16:34.400" end="00:16:39.100">We provide a number of api is...we don't provide any sort of controls are</p>
+      <p begin="00:16:39.100" end="00:16:43.200">not yet at least there's talk about maybe building some things</p>
+      <p begin="00:16:43.200" end="00:16:48.610">that people pickers and things like that you can easily dropping your applications but for now it's really just going to</p>
+      <p begin="00:16:48.610" end="00:16:50.950">be in points that you connect...</p>
+      <p begin="00:16:52.150" end="00:16:53.760">...then finally for</p>
+      <p begin="00:16:53.760" end="00:16:57.550">a mobile app you cannot use what we mentioned earlier which</p>
+      <p begin="00:16:57.550" end="00:17:02.390">was app only permissions you could only operate as the user now there are</p>
+      <p begin="00:17:02.390" end="00:17:07.380">ways around this you could have a service that you host that does do app permissions</p>
+      <p begin="00:17:07.380" end="00:17:11.510">that you proxy through so if I wanted to let's say I needed to</p>
+      <p begin="00:17:12.670" end="00:17:17.120">create a new site collection sharepoint and that usually might take a</p>
+      <p begin="00:17:17.120" end="00:17:21.160">...permission why could submit to a service that's running</p>
+      <p begin="00:17:21.160" end="00:17:26.130">apple only and be able to do that so there are ways around that but natively on the device you're only going</p>
+      <p begin="00:17:26.130" end="00:17:30.440">to be able to operate as the user.</p>
+      <p begin="00:17:30.440" end="00:17:33.110">All right so let's jump into.</p>
+      <p begin="00:17:34.270" end="00:17:36.550">A patchy cordova and like I said we'll</p>
+      <p begin="00:17:36.550" end="00:17:41.530">spend a around thirty minutes on this depending on time all kind of monitor the time and then</p>
+      <p begin="00:17:41.530" end="00:17:46.170">we'll move on to the next component so if your brain you</p>
+      <p begin="00:17:46.170" end="00:17:50.800">...again this was an introductory session for cordova</p>
+      <p begin="00:17:50.800" end="00:17:53.190">...I'm also not going to try to debate</p>
+      <p begin="00:17:53.190" end="00:17:58.040">on which one should you use I don't even think it's not a apples to apples</p>
+      <p begin="00:17:58.040" end="00:18:03.470">comparison I think one is really geared towards a web developer and</p>
+      <p begin="00:18:03.470" end="00:18:08.180">...really geared towards a dot net developer I know that sometimes a</p>
+      <p begin="00:18:08.180" end="00:18:13.680">dot net developer can be a web developers that's where you're...have to make those types of decisions but</p>
+      <p begin="00:18:13.680" end="00:18:16.880">...cordova standpoint cordova is the same thing</p>
+      <p begin="00:18:16.880" end="00:18:21.220">is phone gap innocent so if you haven't heard of cordova you probably</p>
+      <p begin="00:18:21.220" end="00:18:25.220">maybe part of phone gap but the idea of this is you're going to build all of</p>
+      <p begin="00:18:25.220" end="00:18:30.030">your mobile app natively in html five javascript</p>
+      <p begin="00:18:30.030" end="00:18:34.740">in css...now you're going to be able to use all kinds of rich plugins to make</p>
+      <p begin="00:18:34.740" end="00:18:39.800">it feel native it doesn't have to feel like a web page you don't see</p>
+      <p begin="00:18:39.800" end="00:18:45.290">the and address bar or anything like that that's all hidden from the user and it can</p>
+      <p begin="00:18:45.290" end="00:18:49.490">it's actually deployed to the device it runs local you can be offline</p>
+      <p begin="00:18:49.490" end="00:18:53.810">and user cordova app in order to work with these with inside</p>
+      <p begin="00:18:53.810" end="00:18:57.600">...visual studio you need at least visual studio twenty thirteen with update</p>
+      <p begin="00:18:57.600" end="00:19:00.180">for and the visual studio tools for</p>
+      <p begin="00:19:00.180" end="00:19:04.120">cordova cp three-point-one you can look at it on the slide</p>
+      <p begin="00:19:04.120" end="00:19:08.880">...down if you want visual studio twenty fifteen it is part of the</p>
+      <p begin="00:19:08.880" end="00:19:13.670">...option when you go to the install wizard to be able...to pull this down I</p>
+      <p begin="00:19:13.670" end="00:19:19.090">warn you that to put the tooling inside of visual studio will put a lot of things on your computer so</p>
+      <p begin="00:19:19.090" end="00:19:24.080">...my primary development machine these days is a surface pro three that run it</p>
+      <p begin="00:19:24.080" end="00:19:27.490">...I five...it's not a super powerful machine and,</p>
+      <p begin="00:19:27.490" end="00:19:31.840">this is going to when you install these tools it's going to do things like activate hyper</p>
+      <p begin="00:19:31.840" end="00:19:33.960">...so that you can run</p>
+      <p begin="00:19:33.960" end="00:19:39.190">...different evaluators you can stop that so I tend to I stops the hyper</p>
+      <p begin="00:19:39.190" end="00:19:43.790">...service and I use devices mainly for a lot of my development there's also some other emulator</p>
+      <p begin="00:19:43.790" end="00:19:51.190">will look at that don't require you to have hyper v at all from</p>
+      <p begin="00:19:51.190" end="00:19:55.150">and, app registration this...gets a little bit interesting if I want to registered app with</p>
+      <p begin="00:19:55.150" end="00:19:57.490">...sixty-five or even have to go</p>
+      <p begin="00:19:57.490" end="00:20:01.330">...I can do it directly from within visual studio through what we call the</p>
+      <p begin="00:20:01.330" end="00:20:08.940">ad connected service wizard that's also how I could pull down the...the...actually</p>
+      <p begin="00:20:08.940" end="00:20:13.940">mentioned this before but for...three sixty five we of all of these rest</p>
+      <p begin="00:20:13.940" end="00:20:18.270">data in points but for a lot of the in points we've wrapped them</p>
+      <p begin="00:20:18.270" end="00:20:22.380">...sdk so you can work with strongly typed objects</p>
+      <p begin="00:20:22.380" end="00:20:27.920">and, it's really up to you which you feel more comfortable with from a dot net standpoint I</p>
+      <p begin="00:20:27.920" end="00:20:32.870">certainly like using the sdk in javascript it's not near is</p>
+      <p begin="00:20:32.870" end="00:20:37.360">...important because it's pretty easy to work with geis on in javascript</p>
+      <p begin="00:20:37.360" end="00:20:42.310">anyway but know that there is st case for both...and</p>
+      <p begin="00:20:42.310" end="00:20:47.230">...and I can pull those in through the ad connected service wizard or I can use new get to pull</p>
+      <p begin="00:20:47.230" end="00:20:53.000">those in when I when I build a cordova project in do the</p>
+      <p begin="00:20:53.000" end="00:20:57.360">add connected service wizard I'm going to get a bunch of assets that are added to my</p>
+      <p begin="00:20:57.360" end="00:21:02.230">project under the services slash office three sixty five folder so it's going to add</p>
+      <p begin="00:21:02.230" end="00:21:07.560">...a number of different script files I don't remember the exact number I think it's like ten</p>
+      <p begin="00:21:07.560" end="00:21:12.470">script files now the interesting thing is I don't have to go ad reference to all of those I just need to</p>
+      <p begin="00:21:12.470" end="00:21:17.430">add reference to one so there's athree sixty five loader dot js and it's going to</p>
+      <p begin="00:21:17.430" end="00:21:23.100">dynamically load all the scripts that you need into your cordova project a</p>
+      <p begin="00:21:23.100" end="00:21:27.610">few and additional tips and gotcha is so first of all in</p>
+      <p begin="00:21:27.610" end="00:21:31.240">cordova at the web authentication broker can be a little</p>
+      <p begin="00:21:31.240" end="00:21:36.140">bit tricky so the it'll automatically launch of window for you...</p>
+      <p begin="00:21:36.140" end="00:21:41.000">and provide a login experience but I've found that what I typically do as soon as I create</p>
+      <p begin="00:21:41.000" end="00:21:45.920">a new project is I go in and I add the browser plug-in again and that</p>
+      <p begin="00:21:45.920" end="00:21:49.920">...to resolve a lot of issues with that I think that the</p>
+      <p begin="00:21:49.920" end="00:21:53.860">original tooling it might be fixed in three-point-one but original tooling</p>
+      <p begin="00:21:53.860" end="00:22:00.630">was a little bit at least on ios it was a little bit flaky in terms of how it</p>
+      <p begin="00:22:00.630" end="00:22:05.340">...that whole login process another tip is the office three</p>
+      <p begin="00:22:05.340" end="00:22:06.800">sixty five loader</p>
+      <p begin="00:22:06.800" end="00:22:11.640">...go lower all these...but it doesn't tell you when that's done so if you are building</p>
+      <p begin="00:22:11.640" end="00:22:16.310">a mobile app that as soon as the mobile app was launch you wanted it to go through</p>
+      <p begin="00:22:16.310" end="00:22:20.870">and logged user in that's a little bit tricky to do</p>
+      <p begin="00:22:20.870" end="00:22:24.960">...certainly achievable I've done a few ways one is I've done like a set</p>
+      <p begin="00:22:24.960" end="00:22:30.090">time-out I've done things where I've change that office three sixty five...so</p>
+      <p begin="00:22:30.090" end="00:22:33.620">...use like a aj query get script so that</p>
+      <p begin="00:22:33.620" end="00:22:37.530">...actually get a call back when it's done loading all of those scripps because if</p>
+      <p begin="00:22:37.530" end="00:22:42.290">we go and try to go and do that whole authentication...</p>
+      <p begin="00:22:42.290" end="00:22:45.330">Before it's actually loaded it will</p>
+      <p begin="00:22:45.330" end="00:22:50.550">calls issues and finally in this is going to be pretty consistent between both cordoba</p>
+      <p begin="00:22:50.550" end="00:22:53.140">...you cannot build</p>
+      <p begin="00:22:53.140" end="00:22:56.020">...a and ios build</p>
+      <p begin="00:22:56.020" end="00:23:00.560">...the and debugged today on windows another some things in</p>
+      <p begin="00:23:00.560" end="00:23:05.290">the keynote this morning about being able to take objective see and being able to compile it but,</p>
+      <p begin="00:23:05.290" end="00:23:09.490">there's no way today on visual studio to actually go and</p>
+      <p begin="00:23:09.490" end="00:23:14.370">debug that on ios device so if you're going to do anything with ios</p>
+      <p begin="00:23:14.370" end="00:23:19.440">where that's iphone you really need a mac near you and that's why I have</p>
+      <p begin="00:23:19.440" end="00:23:23.850">...onstage years that I'm going to remote we connect to this it's going to be basically a</p>
+      <p begin="00:23:23.850" end="00:23:29.050">build box for me and, I can also use the emulator is on it or I can use a physical device but it's going</p>
+      <p begin="00:23:29.050" end="00:23:33.140">to ultimately be my...for that.</p>
+      <p begin="00:23:33.140" end="00:23:35.290">All right so let's do a demo</p>
+      <p begin="00:23:35.290" end="00:23:40.720">...try to make this pretty light on slides are going to spend more time actually building some</p>
+      <p begin="00:23:40.720" end="00:23:45.470">app so let me switch over and I know the first thing in a</p>
+      <p begin="00:23:45.470" end="00:23:50.190">says wow that's tiny...use zoom it I'll do a good job of using zoom</p>
+      <p begin="00:23:50.190" end="00:23:55.370">it so don't worry and I'll also zoom in on my code when we get things created so</p>
+      <p begin="00:23:55.370" end="00:24:00.160">...for now I'll create a new project and the</p>
+      <p begin="00:24:00.160" end="00:24:04.910">app the cordova project templates are actually going to be under javascript because remember</p>
+      <p begin="00:24:04.910" end="00:24:10.730">cordova is actually building a web page basically that's what it is so,</p>
+      <p begin="00:24:10.730" end="00:24:15.040">what I'm going to do is I'm going to create this apache cordoba app as a blank app and we'll</p>
+      <p begin="00:24:15.040" end="00:24:21.880">just call this and I'm going to organize a little bit better?</p>
+      <p begin="00:24:21.880" end="00:24:30.700">We'll call this the.</p>
+      <p begin="00:24:30.700" end="00:24:33.520">Look, up map.</p>
+      <p begin="00:24:33.520" end="00:24:36.100">Algal n create and this going to go off</p>
+      <p begin="00:24:36.100" end="00:24:41.030">...provision this template what you'll notice right off the bat is that it looks like web project</p>
+      <p begin="00:24:41.030" end="00:24:45.160">...because innocents is a web project so I have an</p>
+      <p begin="00:24:45.160" end="00:24:49.450">index dot html file I have a css folder ivan images folder</p>
+      <p begin="00:24:49.450" end="00:24:54.050">...a web project...differences it's going to be installed natively on a</p>
+      <p begin="00:24:54.050" end="00:24:59.130">device and run natively so let's do a few things you really quickly first is</p>
+      <p begin="00:24:59.130" end="00:25:05.110">since this is a native app that's going to run and use a html technologies</p>
+      <p begin="00:25:05.110" end="00:25:11.400">what's going out a few new get packages...add a few popular ones if you're in the web world let's</p>
+      <p begin="00:25:11.400" end="00:25:16.030">aj query is kind of hard to do much at all client-side these days without</p>
+      <p begin="00:25:16.030" end="00:25:18.000">j query that's the other thing if you're new to</p>
+      <p begin="00:25:18.000" end="00:25:22.940">cordoba is it's going to be a hundred-percent client-side there's no server-side component of this there</p>
+      <p begin="00:25:22.940" end="00:25:29.700">actually is in kind of a abstract...we'll talk about here just a moment let's.</p>
+      <p begin="00:25:29.700" end="00:25:32.740">Is finding?</p>
+      <p begin="00:25:32.740" end="00:25:44.180">...results for j query.</p>
+      <p begin="00:25:44.180" end="00:25:51.960">I'm on install your right thank you so much.</p>
+      <p begin="00:25:51.960" end="00:25:54.930">So, we'll just...query maybe bootstrap as well not just,</p>
+      <p begin="00:25:54.930" end="00:26:17.790">you know, the couple popular ones so go ahead jay query here.</p>
+      <p begin="00:26:17.790" end="00:26:21.060">And, now that I have these in here we can simply start putting</p>
+      <p begin="00:26:21.060" end="00:26:24.850">our page together and I'm going to do this really simple at first so</p>
+      <p begin="00:26:24.850" end="00:26:30.260">...index page...all kind of zoom in on is let's go and add references to those script file</p>
+      <p begin="00:26:30.260" end="00:26:32.340">so let's just add are.</p>
+      <p begin="00:26:32.340" end="00:26:36.170">Rj query come on.</p>
+      <p begin="00:26:36.170" end="00:26:37.610">What are reference...query?</p>
+      <p begin="00:26:38.690" end="00:26:42.080">What are reference to bootstrap?</p>
+      <p begin="00:26:42.080" end="00:26:49.150">...add are cs bootstrap css.</p>
+      <p begin="00:26:49.150" end="00:26:52.440">All right the other thing that this gave us automatically is</p>
+      <p begin="00:26:52.440" end="00:26:57.560">an index of page and, actually I probably should but these are the bottom line page you see here a</p>
+      <p begin="00:26:57.560" end="00:27:00.900">...created this index dot js file by look at the</p>
+      <p begin="00:27:00.900" end="00:27:05.270">index dot js file it basically has some device ready events</p>
+      <p begin="00:27:05.270" end="00:27:09.340">or some device based events so it's telling me when all of the things of loaded</p>
+      <p begin="00:27:09.340" end="00:27:14.210">...ready to actually start running my code on this device so you can see that here on this</p>
+      <p begin="00:27:14.210" end="00:27:17.780">document ready there's also...on pause and on resume if I wanted to</p>
+      <p begin="00:27:17.780" end="00:27:22.190">your built a mobile app you need to deal with the sometimes we call it...stoning where you</p>
+      <p begin="00:27:22.190" end="00:27:27.020">save the state maybe refresh that so if someone comes back to the...can keep on</p>
+      <p begin="00:27:27.020" end="00:27:32.010">moving forward so what I'm going to do is before I do anything else I'm going to make this</p>
+      <p begin="00:27:32.010" end="00:27:36.700">...office three sixty five at summer come out your ominously ad connected service and</p>
+      <p begin="00:27:36.700" end="00:27:40.090">...zoom in on this you can see this result easy we make it so just go</p>
+      <p begin="00:27:40.090" end="00:27:45.050">ad connected service and this is going to launch a wizard to pull in and</p>
+      <p begin="00:27:45.050" end="00:27:49.170">register, register app...all of the resources that you need</p>
+      <p begin="00:27:49.170" end="00:27:54.320">...that wizard you can see that I can quick register my app this can actually</p>
+      <p begin="00:27:54.320" end="00:28:00.270">...and sermon a log in with one of my.</p>
+      <p begin="00:28:00.270" end="00:28:08.450">Tenet user accounts.</p>
+      <p begin="00:28:08.450" end="00:28:11.700">And, now it's going to show me all the different services that</p>
+      <p begin="00:28:11.700" end="00:28:16.680">are available to me and actually this is a little bit outdated we haven't updated the to-ing completely there's a</p>
+      <p begin="00:28:16.680" end="00:28:21.480">lot more services that are available I mention some of those like one note user profiles all</p>
+      <p begin="00:28:21.480" end="00:28:26.290">these different things but for now let's just add a few things let's maybe add</p>
+      <p begin="00:28:26.290" end="00:28:31.690">...permission to do single sign on or enable sign on to use to read the</p>
+      <p begin="00:28:31.690" end="00:28:36.440">user's profile but maybe go over to sites and do what's read ride</p>
+      <p begin="00:28:36.440" end="00:28:39.420">...all site collections you can see there's a service and</p>
+      <p begin="00:28:39.420" end="00:28:42.680">...their scopes for the service so if I wanted to maybe read</p>
+      <p begin="00:28:42.680" end="00:28:47.670">contacts I can just do read contact on here all right the next thing that</p>
+      <p begin="00:28:47.670" end="00:28:52.860">we'll do here is you'll see that it adding all of these scripts for me so</p>
+      <p begin="00:28:52.860" end="00:28:57.700">it's going loading all of these into my project and...it's going to give me a little bit of</p>
+      <p begin="00:28:57.700" end="00:28:59.950">...a starter page some like a read me</p>
+      <p begin="00:28:59.950" end="00:29:05.510">to show me how to get working with this so what I'll do is I</p>
+      <p begin="00:29:05.510" end="00:29:08.680">...to go and add reference to that office three</p>
+      <p begin="00:29:08.680" end="00:29:13.570">sixty five loader so if we look over in my solution explore under office</p>
+      <p begin="00:29:13.570" end="00:29:18.340">three sixty five you can see there's a bunch of scripted added so there's a number of different</p>
+      <p begin="00:29:18.340" end="00:29:23.230">scripts that help me deal with different things so there's one for exchange type of things there's</p>
+      <p begin="00:29:23.230" end="00:29:28.680">one for sharepoint because I added services to permissions to both but there's also this</p>
+      <p begin="00:29:28.680" end="00:29:34.350">one but it's called the office three sixty five loader if we look at this</p>
+      <p begin="00:29:34.350" end="00:29:39.600">is where it's basically just something that loops through all the other script files and</p>
+      <p begin="00:29:39.600" end="00:29:43.930">adds those for us so there are to go and at each one individually</p>
+      <p begin="00:29:43.930" end="00:29:48.270">to my index page the other interesting thing that a</p>
+      <p begin="00:29:48.270" end="00:29:53.620">added here is there is actually a settings page or setting script</p>
+      <p begin="00:29:53.620" end="00:29:58.200">file that has things like my app id and how I'm going to go and</p>
+      <p begin="00:29:58.200" end="00:30:03.580">redirect to get an access token so this right</p>
+      <p begin="00:30:03.580" end="00:30:07.430">here if you've worked with adjective director the fact that it says common?</p>
+      <p begin="00:30:08.450" end="00:30:12.930">That's actually indication that this is a multi tenet app so if it wasn't multi tenet</p>
+      <p begin="00:30:12.930" end="00:30:16.880">...you typically specify the tenet here so,</p>
+      <p begin="00:30:16.880" end="00:30:21.850">like microsoft-dot-com or whatever your company is dot com</p>
+      <p begin="00:30:21.850" end="00:30:26.790">so this is multi tenant we have our redirect...going to handle all of that for us we can</p>
+      <p begin="00:30:26.790" end="00:30:32.000">simply startwriting some code so what I'll do is let me just I'm...to just for fun</p>
+      <p begin="00:30:32.000" end="00:30:36.570">...put an ordered list on my page and a button and we'll give them</p>
+      <p begin="00:30:36.570" end="00:30:40.580">...name...give us an idea of.</p>
+      <p begin="00:30:40.580" end="00:30:55.520">The list...put a button here.</p>
+      <p begin="00:30:55.520" end="00:31:01.920">And, we'll give this make a little bit prettier we'll give it a button, button primary.</p>
+      <p begin="00:31:01.920" end="00:31:05.910">And, button block these are just some</p>
+      <p begin="00:31:05.910" end="00:31:14.030">bootstrap values and let's go and just call this get contacts.</p>
+      <p begin="00:31:14.030" end="00:31:17.140">All right so I'll go ahead and say this...really quickly and what we</p>
+      <p begin="00:31:17.140" end="00:31:22.040">...now do is kind of wire that up inside of our index page you can see right here it says</p>
+      <p begin="00:31:22.040" end="00:31:26.210">...as been loaded perform any additional in initialization</p>
+      <p begin="00:31:26.210" end="00:31:35.050">that you need so what I'm going to do is ...just do a quick document ready?</p>
+      <p begin="00:31:35.050" end="00:31:35.940">And, inside of</p>
+      <p begin="00:31:35.940" end="00:31:46.860">...up a quick...so we're going to do are button click which was the button.</p>
+      <p begin="00:31:46.860" end="00:31:52.550">We're do a quick on that.</p>
+      <p begin="00:31:52.550" end="00:31:58.020">All right so now we need to actually connect...and get the users contacts</p>
+      <p begin="00:31:58.020" end="00:32:03.120">so the way we're going to do that is using some of those javascript files that added</p>
+      <p begin="00:32:03.120" end="00:32:07.830">for sets the sdk now I could certainly try to do everything manually but they've</p>
+      <p begin="00:32:07.830" end="00:32:12.110">done a lot of work for you automatically so things like I don't want to get</p>
+      <p begin="00:32:12.110" end="00:32:18.790">too deep on like how often works withyou know, off but one of the things I'm going to get back is something called</p>
+      <p begin="00:32:18.790" end="00:32:21.630">a refresh token refresh token applied if I</p>
+      <p begin="00:32:21.630" end="00:32:26.750">...that on the phone the user will never have to login every time they use the</p>
+      <p begin="00:32:26.750" end="00:32:31.670">...automatically keep them sign in if you choose to implement a pattern like that which I</p>
+      <p begin="00:32:31.670" end="00:32:37.280">think's a good experience you want to user app to type in I hate...on these little keyboards so it's</p>
+      <p begin="00:32:37.280" end="00:32:41.060">...all that for me so let's take a look at out easy it is for us to do that's what I'm going to</p>
+      <p begin="00:32:41.060" end="00:32:45.880">do is first define and...with the cool thing is when we go to</p>
+      <p begin="00:32:45.880" end="00:32:49.980">zimmer and it's going to be almost identical instead of being...javascript I'm</p>
+      <p begin="00:32:49.980" end="00:32:54.540">...be in csharp but you'll see that it's almost identical in how I do this so let's do a</p>
+      <p begin="00:32:54.540" end="00:32:58.220">var and we'll call this off context we're going to make</p>
+      <p begin="00:32:58.220" end="00:33:07.040">the sequel to a new three sixty five...dot context.</p>
+      <p begin="00:33:07.040" end="00:33:08.570">And, from here what I'm going to do</p>
+      <p begin="00:33:08.570" end="00:33:13.310">is initialize this to go and get the first of</p>
+      <p begin="00:33:13.310" end="00:33:17.400">to tokens so if you again if there's something if you're we've worked with a lot</p>
+      <p begin="00:33:17.400" end="00:33:22.330">before usually I get a context token first and it returns for me</p>
+      <p begin="00:33:22.330" end="00:33:25.980">a code and then I go get an access token that I can use to actually perform</p>
+      <p begin="00:33:25.980" end="00:33:32.080">operations so that's what I do year we'll go ahead and get our access token so</p>
+      <p begin="00:33:32.080" end="00:33:35.500">...context token...say.</p>
+      <p begin="00:33:35.500" end="00:33:44.280">Let's see all context ...</p>
+      <p begin="00:33:45.390" end="00:33:46.830">Token.</p>
+      <p begin="00:33:46.830" end="00:33:48.690">...pass this in a service in this case we're going</p>
+      <p begin="00:33:48.690" end="00:33:52.910">to connect to outlook so we're going to say outlook dot office</p>
+      <p begin="00:33:52.910" end="00:33:59.550">...sixty five.</p>
+      <p begin="00:33:59.550" end="00:34:04.280">After that this will return us.</p>
+      <p begin="00:34:04.280" end="00:34:05.800">...token.</p>
+      <p begin="00:34:05.800" end="00:34:08.640">We'll call this the see token this is the context token</p>
+      <p begin="00:34:08.640" end="00:34:13.820">...another token...a moment but...going to be the first one that we work with the second token</p>
+      <p begin="00:34:13.820" end="00:34:18.040">...is the actual access token is...to be them important one that's going to do all</p>
+      <p begin="00:34:18.040" end="00:34:22.400">the work for us that's going to allow us to actually get access to things so we'll call this and,</p>
+      <p begin="00:34:22.400" end="00:34:28.520">this is going to use a special function for this...going to call this are eighty function</p>
+      <p begin="00:34:28.520" end="00:34:33.370">...just our access token function it's going to be the see token.</p>
+      <p begin="00:34:33.370" end="00:34:36.240">Dot get.</p>
+      <p begin="00:34:36.240" end="00:34:40.110">Access token function.</p>
+      <p begin="00:34:40.110" end="00:34:42.270">In the summer do the same...basically</p>
+      <p begin="00:34:42.270" end="00:34:47.920">the same this is what we call resource so everything that I connect to an office three sixty</p>
+      <p begin="00:34:47.920" end="00:34:53.070">five has a resource id they can be different things for one node it's www one</p>
+      <p begin="00:34:53.070" end="00:34:55.200">...dot com for</p>
+      <p begin="00:34:55.200" end="00:34:58.830">...sharepoint it's actually the sharepoint sites it's</p>
+      <p begin="00:34:58.830" end="00:35:03.570">base url is basically saying this is the resource I want to get access to</p>
+      <p begin="00:35:03.570" end="00:35:08.280">so I'm specifying that resource that I want to get access to and then I can actually</p>
+      <p begin="00:35:08.280" end="00:35:13.620">go and us get a client start working with the api so what I'm going to</p>
+      <p begin="00:35:13.620" end="00:35:17.870">say is new microsoft.</p>
+      <p begin="00:35:17.870" end="00:35:25.920">And, for some reason intelligence is ag intelligence usually works with these not sure outlook.</p>
+      <p begin="00:35:25.920" end="00:35:30.470">Services dot client I believe is what I need...in this I need a</p>
+      <p begin="00:35:30.470" end="00:35:33.840">...the in point that I'm going to call into so,</p>
+      <p begin="00:35:33.840" end="00:35:37.950">this is actually going to be I can...data in point so where I'd actually go and make a rest</p>
+      <p begin="00:35:37.950" end="00:35:40.450">call and for this is going to...ws.</p>
+      <p begin="00:35:41.870" end="00:35:44.400">Slashdata so it's basically</p>
+      <p begin="00:35:44.400" end="00:35:49.210">...data in point of exchange web services and then I also need to pass this</p>
+      <p begin="00:35:49.210" end="00:35:52.470">my access token function so I'm going to put in my</p>
+      <p begin="00:35:53.810" end="00:35:57.310">at function so it's basically words and it's initialize</p>
+      <p begin="00:35:57.310" end="00:36:01.990">...this client which is again going to be strongly typed where I can go and work with it but,</p>
+      <p begin="00:36:01.990" end="00:36:05.860">it's going to take that access token function so that it can do it</p>
+      <p begin="00:36:05.860" end="00:36:12.340">needs to now I can simply start working with this so I can say client dot me.</p>
+      <p begin="00:36:12.340" end="00:36:15.950">Dot contracts.</p>
+      <p begin="00:36:15.950" end="00:36:25.680">Dot get contacts.</p>
+      <p begin="00:36:25.680" end="00:36:33.090">And, that will return me call back with my contacts.</p>
+      <p begin="00:36:33.090" end="00:36:36.590">And, for now let's just...break pointing here.</p>
+      <p begin="00:36:36.590" end="00:36:41.390">And, see if we were successful up until this point so there's a few different options I have for debugging</p>
+      <p begin="00:36:41.390" end="00:36:45.950">these one is the visual studio tools for apache code over going to give me something called ripple,</p>
+      <p begin="00:36:45.950" end="00:36:50.950">ripple is an in chrome browser emulator for enjoyed</p>
+      <p begin="00:36:50.950" end="00:36:52.940">it it's not going to help me with ios but</p>
+      <p begin="00:36:52.940" end="00:36:56.980">...helps me with things like android so I'll go ahead and use ripple</p>
+      <p begin="00:36:56.980" end="00:37:02.940">once I find ripples really useful as I'm making quick changes like case</p>
+      <p begin="00:37:02.940" end="00:37:07.780">this didn't quite work I'll try something else because what happens in ripple is as soon as I make a change and I</p>
+      <p begin="00:37:07.780" end="00:37:10.500">...visual studio it automatically</p>
+      <p begin="00:37:10.500" end="00:37:14.720">read innocence refresh is the app so I get a really</p>
+      <p begin="00:37:14.720" end="00:37:19.750">fast way to do development now at some point I probably want to test on real</p>
+      <p begin="00:37:19.750" end="00:37:23.510">device...the second time around when we do this will actually</p>
+      <p begin="00:37:23.510" end="00:37:27.860">use a real device I will tell you that ripple I have</p>
+      <p begin="00:37:27.860" end="00:37:32.630">mixed experience with sometimes it loads immediately like the second I press</p>
+      <p begin="00:37:32.630" end="00:37:36.700">...five sometimes which it looks like we're getting right now because</p>
+      <p begin="00:37:36.700" end="00:37:42.000">obviously demo god's going to be happy with us it's going to wait for a little bit in fact it</p>
+      <p begin="00:37:42.000" end="00:37:46.900">may we might even get a little dialogue that says it's not responding just like that and,</p>
+      <p begin="00:37:46.900" end="00:37:50.330">actually we just say wait the patient it will load</p>
+      <p begin="00:37:50.330" end="00:37:53.420">...is all the additional changes you make</p>
+      <p begin="00:37:53.420" end="00:37:58.960">they update immediately so you might just have to wait the first-time you launch these</p>
+      <p begin="00:37:58.960" end="00:38:12.010">so we'll give this a just another quick second.</p>
+      <p begin="00:38:12.010" end="00:38:16.950">I will say well this is loading because this is html five and javascript you can really use</p>
+      <p begin="00:38:16.950" end="00:38:22.610">any really any type of script you might want to reference so I'm a big fan of angular so I</p>
+      <p begin="00:38:22.610" end="00:38:28.610">build almost all of microbe apps with angular pretty much all those in fact there's a really cool</p>
+      <p begin="00:38:28.610" end="00:38:34.680">framework called iconic that I've gotten really popular but using in these...apps</p>
+      <p begin="00:38:34.680" end="00:38:39.280">...combines some really great mobile ui because that's one thing you'll notice here is</p>
+      <p begin="00:38:39.280" end="00:38:42.520">your kind of in charge of building the...your own user interface</p>
+      <p begin="00:38:42.520" end="00:38:47.440">you get native controls zimmer is going to give me native controls on the device...button is going to</p>
+      <p begin="00:38:47.440" end="00:38:51.870">look like a ios button or an android button whereas here it's going to look</p>
+      <p begin="00:38:51.870" end="00:38:55.450">...bootstrap button because that's the styling that I used...</p>
+      <p begin="00:38:55.450" end="00:38:59.390">going quick get contact this is going to launch into.</p>
+      <p begin="00:39:00.650" end="00:39:04.820">A new window or it should launch...new window...my.</p>
+      <p begin="00:39:04.820" end="00:39:09.070">Id wrong there's a pretty cool thing too is I get a live dom explore in</p>
+      <p begin="00:39:09.070" end="00:39:18.520">...if I wanted coming here and actually change the text to say hello world.</p>
+      <p begin="00:39:18.520" end="00:39:20.410">Immediately changes it so it's pretty,</p>
+      <p begin="00:39:20.410" end="00:39:24.780">pretty cool from that standpoint but for some reason is did not hit</p>
+      <p begin="00:39:24.780" end="00:39:30.810">...its try hitting our...point here?</p>
+      <p begin="00:39:30.810" end="00:39:33.940">What's that you're right thank you gosh you guys are</p>
+      <p begin="00:39:33.940" end="00:39:37.690">...me today forgot a pounded...of my from a selector</p>
+      <p begin="00:39:37.690" end="00:39:42.540">j query so all I did was refresh and it's already refresh the app for me so now if I say</p>
+      <p begin="00:39:42.540" end="00:39:44.080">get contacts.</p>
+      <p begin="00:39:44.080" end="00:39:46.890">There we are break point and now it should...me through</p>
+      <p begin="00:39:46.890" end="00:39:51.100">an overall process now and ripple the way that's going to work is it's going</p>
+      <p begin="00:39:51.100" end="00:40:02.990">to launch into a new window and I think I may have already mystic matured again.</p>
+      <p begin="00:40:02.990" end="00:40:10.200">Three sixty five or.</p>
+      <p begin="00:40:10.200" end="00:40:19.480">I did not load my hello dot js so let's do that here really quickly thank you.</p>
+      <p begin="00:40:19.480" end="00:40:25.720">So, our loader is under a services.</p>
+      <p begin="00:40:25.720" end="00:40:26.850">Slash.</p>
+      <p begin="00:40:26.850" end="00:40:31.330">Office three sixty five.</p>
+      <p begin="00:40:31.330" end="00:40:39.040">And, moi under scripts.</p>
+      <p begin="00:40:39.040" end="00:40:45.350">And, we're duo three sixty five.</p>
+      <p begin="00:40:45.350" end="00:40:50.270">All right last try and then I'm going to pull the completed one out of an so we'll go and</p>
+      <p begin="00:40:50.270" end="00:40:55.550">refresher...refreshed...could ended...probably still not referencing it right</p>
+      <p begin="00:40:55.550" end="00:41:01.420">me jump over to one...that's done just to kinda give you the experience of this one also and,</p>
+      <p begin="00:41:01.420" end="00:41:05.430">the cool thing is this one that I'm going to go jump over to there's</p>
+      <p begin="00:41:05.430" end="00:41:10.290">not this is all of the code for the entire project so I know that small don't worry about it but the</p>
+      <p begin="00:41:10.290" end="00:41:15.680">point is this does a lot with very little code this is actually using</p>
+      <p begin="00:41:15.680" end="00:41:18.720">...you can see I have a function that gets</p>
+      <p begin="00:41:18.720" end="00:41:23.310">an access token I'm using a cool cordova plug-in for barcode</p>
+      <p begin="00:41:23.310" end="00:41:26.190">scanning so actually what I did is this is like a</p>
+      <p begin="00:41:26.190" end="00:41:31.110">physical records management scenario where I have a warehouse of physical records and I want</p>
+      <p begin="00:41:31.110" end="00:41:35.430">to store reference to them and sharepoint so I have a bunch of barcode...that I</p>
+      <p begin="00:41:35.430" end="00:41:41.260">print-out that reference actual list items inside of a sharepoint library so,</p>
+      <p begin="00:41:41.260" end="00:41:46.400">you can see here I'm just doing a simple get in this case so I can use the rest api</p>
+      <p begin="00:41:46.400" end="00:41:52.400">I don't have to use the sdk...then when that basically comes back I'm going to update my</p>
+      <p begin="00:41:52.400" end="00:41:55.750">...model that I'm using here inside of angular</p>
+      <p begin="00:41:55.750" end="00:42:02.340">...go and run this one and see if this will be...to happy with this?</p>
+      <p begin="00:42:02.340" end="00:42:07.690">I will apologized that mile android display app here is refresh is really slowly</p>
+      <p begin="00:42:07.690" end="00:42:11.720">so...this might be a little bit slow to refresh.</p>
+      <p begin="00:42:12.960" end="00:42:18.550">Forcing so it's in the background deploying here if you look at the top here I selected device</p>
+      <p begin="00:42:18.550" end="00:42:24.340">instead of instead of using one of the insulators is actually going to go on to a</p>
+      <p begin="00:42:24.340" end="00:42:27.100">...I can also debug to the</p>
+      <p begin="00:42:27.100" end="00:42:32.080">...unfunny to do that I run a special app over on the</p>
+      <p begin="00:42:32.080" end="00:42:36.810">...that allows me to basically do appearing so that I can do remote debugging</p>
+      <p begin="00:42:36.810" end="00:42:41.340">on that so looks like it is just about deployed year</p>
+      <p begin="00:42:41.340" end="00:42:46.780">...installing app on the device in the app is now launching on the device you can see it's a little</p>
+      <p begin="00:42:46.780" end="00:42:51.670">bit slower refreshing on-screen somebody coming here I get this empty user interface is</p>
+      <p begin="00:42:51.670" end="00:42:56.550">all built using ironic so it helps me do some kind of nice-looking ui but</p>
+      <p begin="00:42:56.550" end="00:43:01.330">...I want to do is let's say I'm out in the warehouse and I need to scan some</p>
+      <p begin="00:43:01.330" end="00:43:05.820">of the different physical records we have so I'm...go and quick scan remember this</p>
+      <p begin="00:43:05.820" end="00:43:10.700">is an html app but it's going to be able to do locally on the device</p>
+      <p begin="00:43:10.700" end="00:43:13.950">...pretty high and stuff so this is a little barcode</p>
+      <p begin="00:43:13.950" end="00:43:17.730">scanner plug-in homage coming here and let's skin this first guy.</p>
+      <p begin="00:43:18.750" end="00:43:23.300">Goes it captured it so it found the url now it's calling out to sharepoint and</p>
+      <p begin="00:43:23.300" end="00:43:27.340">now I can see it pulled all the data so I can see the title of this</p>
+      <p begin="00:43:27.340" end="00:43:32.300">...the category the business unit the building and the location in the building</p>
+      <p begin="00:43:32.300" end="00:43:36.630">I could go scan another one here and.</p>
+      <p begin="00:43:36.630" end="00:43:41.610">Pick it up it's going to go do the search in sharepoint and there goes it</p>
+      <p begin="00:43:41.610" end="00:43:46.560">does my update so open you can see I mean this is I mean that does that's pretty cool I mean that's</p>
+      <p begin="00:43:46.560" end="00:43:51.500">an actual real functioning apps something that could be valuable for an organization as data</p>
+      <p begin="00:43:51.500" end="00:43:55.190">...point and there is not much code this app</p>
+      <p begin="00:43:55.190" end="00:43:58.550">at all that hundred-percent of the code right here</p>
+      <p begin="00:43:58.550" end="00:44:03.620">...hails all the authentication for me university never prompted me to log in this time</p>
+      <p begin="00:44:03.620" end="00:44:08.540">because it stored that now I could clear the cash for that app and it would probably</p>
+      <p begin="00:44:08.540" end="00:44:19.230">...login but pretty powerful stuff what I can do with cordova.</p>
+      <p begin="00:44:19.230" end="00:44:24.210">All right so if you're more if you're interested in...there are some additional sessions you-can</p>
+      <p begin="00:44:24.210" end="00:44:28.780">go-to there's one on general ios android development they're going to</p>
+      <p begin="00:44:28.780" end="00:44:33.290">spend a little bit of time on cordoba...mainly going to be on some of our we have</p>
+      <p begin="00:44:33.290" end="00:44:36.790">...three sixty-five...that are native for things like x code</p>
+      <p begin="00:44:36.790" end="00:44:41.020">...android studio so you could go see those the other one here is</p>
+      <p begin="00:44:41.020" end="00:44:45.430">if you want just a general getting started with cross-platform mobile development with the</p>
+      <p begin="00:44:45.430" end="00:44:49.950">patch cordova there's another session on that has nothing to do top esri sixty-five</p>
+      <p begin="00:44:49.950" end="00:44:55.630">it just kind of the getting started for that high encourage it I've become a huge fan of what you</p>
+      <p begin="00:44:55.630" end="00:44:59.520">can do quickly in cordova all right let's turn our</p>
+      <p begin="00:44:59.520" end="00:45:04.850">attention to examine so if I want to develop a zimmerman again,</p>
+      <p begin="00:45:04.850" end="00:45:08.940">I can either developing visual studio twenty fifteen or twenty thirteen I</p>
+      <p begin="00:45:08.940" end="00:45:13.460">list visual studio twenty thirteen on your just because that is what we have</p>
+      <p begin="00:45:13.460" end="00:45:17.310">...in production today so</p>
+      <p begin="00:45:17.310" end="00:45:21.030">obviously...could go get visual studio twenty fifteen that's in a beta</p>
+      <p begin="00:45:21.030" end="00:45:24.930">...and you can work...as well for me to work with</p>
+      <p begin="00:45:24.930" end="00:45:28.700">...and I'm going to need to install zimmer in-studio</p>
+      <p begin="00:45:28.700" end="00:45:33.700">capital asterisks there because you should know apache cordova</p>
+      <p begin="00:45:33.700" end="00:45:38.630">it's free it is an open-source technology ...and there are</p>
+      <p begin="00:45:38.630" end="00:45:43.510">licensing cost associated with that that's just something to be aware of so zimmer studio if</p>
+      <p begin="00:45:43.510" end="00:45:49.170">you're msdn subscriber I believe that...depending on your...zimmer in</p>
+      <p begin="00:45:49.170" end="00:45:54.160">allows you to have a developer license to where you can you can develop and test apps and if</p>
+      <p begin="00:45:54.160" end="00:45:58.970">you wanted in producing app actually publish it out that's when you want to move up to like</p>
+      <p begin="00:45:58.970" end="00:46:00.930">an enterprise license of a</p>
+      <p begin="00:46:02.340" end="00:46:06.840">...you're going to have the same eds of working with our</p>
+      <p begin="00:46:06.840" end="00:46:11.780">api is inside of...projects you're going to be able to do the app registration through ad connected</p>
+      <p begin="00:46:11.780" end="00:46:16.830">service and, you're going to have the same way of pulling the st...down is to</p>
+      <p begin="00:46:16.830" end="00:46:21.810">add connected service you can also use new get for these obama actually show you</p>
+      <p begin="00:46:21.810" end="00:46:26.450">were going to look at some more...some alpha type things that I can do on released</p>
+      <p begin="00:46:26.450" end="00:46:32.760">things that make it a really good experience examine that use pure new get</p>
+      <p begin="00:46:32.760" end="00:46:37.280">versus using that ad connected service but I just know that it is</p>
+      <p begin="00:46:37.280" end="00:46:42.760">it can be that easy is just saying ad connected service from a solution structure if you are</p>
+      <p begin="00:46:42.760" end="00:46:46.530">...zimmer gives you a couple options you can build</p>
+      <p begin="00:46:46.530" end="00:46:51.160">a platform specific right so let's say your entire organization uses iphones</p>
+      <p begin="00:46:51.160" end="00:46:54.650">or your entire organization use is android devices however</p>
+      <p begin="00:46:54.650" end="00:47:00.230">...dot net shop that's a great scenario for</p>
+      <p begin="00:47:00.230" end="00:47:04.340">examining right you can have your developers that developing dot net</p>
+      <p begin="00:47:04.340" end="00:47:10.110">...platforms and you can build a platform specific app in zimmer</p>
+      <p begin="00:47:10.110" end="00:47:12.430">...visual studio so I can pick this is</p>
+      <p begin="00:47:12.430" end="00:47:17.190">only for ios however there's also what we call a shared project</p>
+      <p begin="00:47:17.190" end="00:47:21.920">...project looks a lot like the first version of</p>
+      <p begin="00:47:21.920" end="00:47:25.280">all windows universal...if you've ever done a windows</p>
+      <p begin="00:47:25.280" end="00:47:29.130">universal lap before you add a windows project</p>
+      <p begin="00:47:29.130" end="00:47:32.930">windows phone project...have a shared projects</p>
+      <p begin="00:47:32.930" end="00:47:37.890">the shared project is retry put all your code because it can be shared across all of those and this</p>
+      <p begin="00:47:37.890" end="00:47:42.630">is exactly what it looks like when you're in a shared project</p>
+      <p begin="00:47:42.630" end="00:47:47.290">...I can have platforms specific code it's going to</p>
+      <p begin="00:47:47.290" end="00:47:52.890">have basically...app forwindows phone app for ios</p>
+      <p begin="00:47:52.890" end="00:47:56.870">and app for android I can put app specific code in</p>
+      <p begin="00:47:56.870" end="00:48:00.180">...but I also can?</p>
+      <p begin="00:48:00.180" end="00:48:01.790">Re-use a lot of code in</p>
+      <p begin="00:48:01.790" end="00:48:07.000">a shared project and that's really the goal that I would I would challenge you on</p>
+      <p begin="00:48:07.000" end="00:48:12.280">is try to have the same code as much as possible when you're building these types</p>
+      <p begin="00:48:12.280" end="00:48:17.250">...projects and if you go to the session on friday that</p>
+      <p begin="00:48:17.250" end="00:48:21.980">james in...are doing they built a really cool application that almost a</p>
+      <p begin="00:48:21.980" end="00:48:25.200">hundred-percent of it is done in the shared project...do a few</p>
+      <p begin="00:48:25.200" end="00:48:30.360">ui specific things they want to take advantage of some of the app specific things and,</p>
+      <p begin="00:48:30.360" end="00:48:36.380">they can do that with semen a few gotcha is to know about so,</p>
+      <p begin="00:48:36.380" end="00:48:39.870">one of those actually one other thing I should note is the another option</p>
+      <p begin="00:48:41.210" end="00:48:46.390">...can use what they call zimmer informs which is their own kind of form</p>
+      <p begin="00:48:46.390" end="00:48:51.250">framework that then gets kind of it gets translated to a device</p>
+      <p begin="00:48:51.250" end="00:48:55.910">specific control so if I put there...zimmer informed button on</p>
+      <p begin="00:48:55.910" end="00:49:00.490">a page...innocence render and iowa's button or an android button so</p>
+      <p begin="00:49:00.490" end="00:49:05.340">...like they're a native control but you also have the ability of leveraging</p>
+      <p begin="00:49:05.340" end="00:49:10.300">native layout so in the new versions of...I can actually work with</p>
+      <p begin="00:49:10.300" end="00:49:15.330">...storyboards and I can work with the actual xml layouts for</p>
+      <p begin="00:49:16.740" end="00:49:19.210">...android app...you got</p>
+      <p begin="00:49:19.210" end="00:49:24.400">...but again if you're going to do anything on...you have to have a</p>
+      <p begin="00:49:24.400" end="00:49:28.530">...to be able to...and debug against you musc.</p>
+      <p begin="00:49:29.680" end="00:49:33.380">Create what we call a binding project if you want</p>
+      <p begin="00:49:33.380" end="00:49:38.380">to use the as our active directory authentication libraries so, that's a</p>
+      <p begin="00:49:38.380" end="00:49:43.130">value hear me say a lot basically what the adjective directory libraries</p>
+      <p begin="00:49:43.130" end="00:49:46.560">are it's basically it makes.</p>
+      <p begin="00:49:46.560" end="00:49:50.070">Authentication against asher disney simple like really,</p>
+      <p begin="00:49:50.070" end="00:49:54.040">really simple where, you know, after bright lines and lines and lines of code you can</p>
+      <p begin="00:49:54.040" end="00:49:58.800">write like three lines of code authenticated handles all of that including the caching of tokens</p>
+      <p begin="00:49:58.800" end="00:50:04.830">now what we've done is we've created native versions of eight-hour on all the major</p>
+      <p begin="00:50:04.830" end="00:50:09.090">mobile platform so we have one for windows we have one for ios we have one for</p>
+      <p begin="00:50:09.090" end="00:50:12.070">androidand, instead of building like</p>
+      <p begin="00:50:12.070" end="00:50:16.860">...special version just for examine what we've done is you can go and</p>
+      <p begin="00:50:16.860" end="00:50:19.430">...in a binding version of those</p>
+      <p begin="00:50:19.430" end="00:50:23.350">secret binding project of those eight...simply is</p>
+      <p begin="00:50:23.350" end="00:50:27.500">...or those eight-hour libraries and bring those into your</p>
+      <p begin="00:50:27.500" end="00:50:32.970">...project so, this is a little bit of a pain I put it in kind of a</p>
+      <p begin="00:50:32.970" end="00:50:37.920">gotcha because it's a little bit of a pain to do now that being said what I'm</p>
+      <p begin="00:50:37.920" end="00:50:42.430">going to demonstrate today is what we call eight-hour version three it's</p>
+      <p begin="00:50:42.430" end="00:50:46.350">and alpha preview so if you go on...victoria's blog he</p>
+      <p begin="00:50:46.350" end="00:50:51.870">has a lot of information on this but this unify...the experience I'm</p>
+      <p begin="00:50:51.870" end="00:50:57.140">going to be able to have a common way that I authenticate and I don't have to build those binding</p>
+      <p begin="00:50:57.140" end="00:51:02.120">...so it is an...so it is subject</p>
+      <p begin="00:51:02.120" end="00:51:07.060">to change but I want to show you how easy it is to use that approach is</p>
+      <p begin="00:51:07.060" end="00:51:10.500">...in project I think maybe james and...are going</p>
+      <p begin="00:51:10.500" end="00:51:15.610">to cover maybe a little bit of both but I'm going to I'm going to cover it that way I put in</p>
+      <p begin="00:51:15.610" end="00:51:19.470">the slides here I'm going to ask for a very specific version of this</p>
+      <p begin="00:51:19.470" end="00:51:24.790">...so the three dot one-dot to in all bunch of other numbers that I'm not going to try to recite</p>
+      <p begin="00:51:24.790" end="00:51:30.020">that one provides the most consistency that I've found across</p>
+      <p begin="00:51:30.020" end="00:51:32.250">bothios and android.</p>
+      <p begin="00:51:33.340" end="00:51:37.850">And, windows types of projects so let us</p>
+      <p begin="00:51:37.850" end="00:51:44.070">jump into a demo.</p>
+      <p begin="00:51:44.070" end="00:51:48.970">I'm going to.</p>
+      <p begin="00:51:48.970" end="00:51:59.790">...new project year in visual studio.</p>
+      <p begin="00:51:59.790" end="00:52:02.390">...a new project and what you'll see if I</p>
+      <p begin="00:52:02.390" end="00:52:06.010">apply explored csharp here...things you see that</p>
+      <p begin="00:52:06.010" end="00:52:10.450">...ios projects if you look in...I can go and create I need</p>
+      <p begin="00:52:10.450" end="00:52:15.360">of ios project these are...templates that allow me to do that I can also target just</p>
+      <p begin="00:52:15.360" end="00:52:20.100">android river so those are those platform specific types of projects that I might</p>
+      <p begin="00:52:20.100" end="00:52:24.180">want to build a here and there's a number of different you know,</p>
+      <p begin="00:52:24.180" end="00:52:29.220">interesting apps that I can do including...have apple watched inputs that I can go...and build</p>
+      <p begin="00:52:29.220" end="00:52:34.730">things and it's amazing now what I'm going to do is actually go to mobile</p>
+      <p begin="00:52:34.730" end="00:52:39.760">apps and this is where I can start creating a shared project</p>
+      <p begin="00:52:39.760" end="00:52:44.280">where I can innocence try to shares much codes I can across all of the different</p>
+      <p begin="00:52:45.370" end="00:52:49.330">...a project for every platform I could remove one if I wanted to out</p>
+      <p begin="00:52:49.330" end="00:52:52.720">...to keep all three but is going to give me windows ios</p>
+      <p begin="00:52:52.720" end="00:52:58.770">...now...you see there's kind of two flavors of each of these there is the</p>
+      <p begin="00:52:58.770" end="00:53:03.280">zoom informs version and then there's the native version so the difference between</p>
+      <p begin="00:53:03.280" end="00:53:08.050">these two is if I want to leverage the native layout so</p>
+      <p begin="00:53:08.050" end="00:53:12.960">fide like working with, you know, iowa storyboards I can use that</p>
+      <p begin="00:53:12.960" end="00:53:17.800">year I can actually mix them if I wanted to but what I'll do is I'll go ahead and do this</p>
+      <p begin="00:53:17.800" end="00:53:29.260">native one and we'll call this my...sample?</p>
+      <p begin="00:53:29.260" end="00:53:33.530">...is going to crank away and what you're going to find is it's going to create a number of</p>
+      <p begin="00:53:33.530" end="00:53:40.200">different projects within my solution we're...for we're going-to have to?</p>
+      <p begin="00:53:40.200" end="00:53:41.790">...where'd fthree.</p>
+      <p begin="00:53:41.790" end="00:53:44.540">Real projects that actually compiled</p>
+      <p begin="00:53:44.540" end="00:53:50.150">...have a shared project the share project you should know doesn't have</p>
+      <p begin="00:53:50.150" end="00:53:54.970">any references of its own it's going to use the references or whatever project your building</p>
+      <p begin="00:53:54.970" end="00:54:10.700">so it's really just class files...you put out here ...did you.</p>
+      <p begin="00:54:10.700" end="00:54:13.650">All right so let's just explore this...quickly what this looks like</p>
+      <p begin="00:54:14.800" end="00:54:19.440">you can see I have a basically a shared project which is just if</p>
+      <p begin="00:54:19.440" end="00:54:24.070">you're looking here notice there's not a references folder I can't do any references year I</p>
+      <p begin="00:54:24.070" end="00:54:29.300">have a android project of an ios project...a windows phone project ...</p>
+      <p begin="00:54:29.300" end="00:54:34.210">I could do now is I could simply go and add a connected service to these projects</p>
+      <p begin="00:54:34.210" end="00:54:39.050">I could go through that whole ad connected services wizard this would pool in all of the different</p>
+      <p begin="00:54:39.050" end="00:54:42.860">...case that I might want to now what I'm going to do for the sake</p>
+      <p begin="00:54:42.860" end="00:54:47.670">of this demo is I'm not going to take that approach the main reason for that is I want</p>
+      <p begin="00:54:47.670" end="00:54:53.070">to I want to use some of those that new eight-hour version three so I'm actually going to</p>
+      <p begin="00:54:53.070" end="00:54:59.440">use new get for that and I copy this in my one note here to make sure I grab the right</p>
+      <p begin="00:54:59.440" end="00:55:00.300">...going grab.</p>
+      <p begin="00:55:01.350" end="00:55:06.260">This m just going to use my package manager consul.</p>
+      <p begin="00:55:06.260" end="00:55:08.280">To go in pool in the specific version</p>
+      <p begin="00:55:08.280" end="00:55:11.270">that I want some of first do that.</p>
+      <p begin="00:55:11.270" end="00:55:14.470">For my ios project if you look here.</p>
+      <p begin="00:55:14.470" end="00:55:19.730">You select the project if you haven't work with new get in a multi project app you basically sucked the</p>
+      <p begin="00:55:19.730" end="00:55:26.160">project you...so it's added to ios now...exact same thing the android here.</p>
+      <p begin="00:55:26.160" end="00:55:29.830">So, now it's going to its added those and I can start taking</p>
+      <p begin="00:55:29.830" end="00:55:34.560">advantage of all the greatness that this new library affords me</p>
+      <p begin="00:55:34.560" end="00:55:39.560">so the first thing I might want to do is let's start putting some common code that</p>
+      <p begin="00:55:39.560" end="00:55:44.030">I'm going to share across all of my projects so the first thing I'm going to do is</p>
+      <p begin="00:55:44.030" end="00:55:48.300">...I didn't do ad connected services wizard one thing that I did do ahead of time</p>
+      <p begin="00:55:48.300" end="00:55:52.090">its at created justice settings helper this is basically where I've</p>
+      <p begin="00:55:52.090" end="00:55:57.450">just put in things like my client id which is a guid that adjective</p>
+      <p begin="00:55:57.450" end="00:56:02.820">directory knows about this has things like some of the resources that I might call it's really just a</p>
+      <p begin="00:56:02.820" end="00:56:09.750">constance file in fact I'll pasting here and I'll just proved that?</p>
+      <p begin="00:56:09.750" end="00:56:13.730">I'm going to change the name space that puts...you can see it's just it's</p>
+      <p begin="00:56:13.730" end="00:56:18.420">constance that's all it is and, this will just make it easy for me to get</p>
+      <p begin="00:56:18.420" end="00:56:23.610">going quicker so, what I'm going to do is just change my namespaces that we can quickly use that</p>
+      <p begin="00:56:23.610" end="00:56:28.420">...the next thing I want to do is I'm going to create and off helper and this is</p>
+      <p begin="00:56:28.420" end="00:56:32.990">really the crux of this demonstration is I'm going to show you how easy it is for us to</p>
+      <p begin="00:56:32.990" end="00:56:39.260">do authentication in-house how similar it's going to be to what we did in</p>
+      <p begin="00:56:39.260" end="00:56:49.150">the cordova project...class here and we'll just call...author helper?</p>
+      <p begin="00:56:49.150" end="00:56:51.180">...the great things that examine does is</p>
+      <p begin="00:56:51.180" end="00:56:56.820">they work really closely with microsoft to do so that when I write</p>
+      <p begin="00:56:56.820" end="00:57:01.980">something and maybe a modern type of syntax inside of dot net is trained</p>
+      <p begin="00:57:01.980" end="00:57:07.470">slates of to when it gets it goes through mono to be deployed to</p>
+      <p begin="00:57:07.470" end="00:57:11.490">...device or to android so,</p>
+      <p begin="00:57:11.490" end="00:57:17.850">I'm going to be able to do all the advance things that they are might want to do...I can do like</p>
+      <p begin="00:57:17.850" end="00:57:22.610">...type of functions so let's do just really quickly the key to getting any data out of</p>
+      <p begin="00:57:22.610" end="00:57:26.800">office three sixty five is working with access token so</p>
+      <p begin="00:57:26.800" end="00:57:31.050">...create a quick in point what do a public a</p>
+      <p begin="00:57:31.050" end="00:57:35.100">...static.</p>
+      <p begin="00:57:35.100" end="00:57:38.760">And, return string which is basically our access token</p>
+      <p begin="00:57:38.760" end="00:57:40.870">...call this get.</p>
+      <p begin="00:57:40.870" end="00:57:42.210">Access.</p>
+      <p begin="00:57:42.210" end="00:57:44.670">Token for resource.</p>
+      <p begin="00:57:46.800" end="00:57:51.700">When I mention common...only I have to authenticate once but I am going to have to go</p>
+      <p begin="00:57:51.700" end="00:57:58.060">and get it's an access token to any resource that I go and talk to now you're never going to get</p>
+      <p begin="00:57:58.060" end="00:58:03.150">...happens all behind-the-scenes but I'm going to go ahead and just put the resource here we're going to</p>
+      <p begin="00:58:03.150" end="00:58:09.640">...for resource if you remember what we did in our first project</p>
+      <p begin="00:58:09.640" end="00:58:14.010">our record look up we got...off context and then from there I started working</p>
+      <p begin="00:58:14.010" end="00:58:22.380">with tokens and that's exactly what I'm going to do here so let's do a...all</p>
+      <p begin="00:58:22.380" end="00:58:25.860">We're going to equal a new authentication</p>
+      <p begin="00:58:27.320" end="00:58:27.820">context.</p>
+      <p begin="00:58:28.940" end="00:58:32.280">And, let's see this resolves and it does</p>
+      <p begin="00:58:32.280" end="00:58:38.020">so we go and actually it looks like I need to in this pass my</p>
+      <p begin="00:58:38.020" end="00:58:41.970">...why create that settings helper so I can coming here and say</p>
+      <p begin="00:58:41.970" end="00:58:46.870">settings helper dot ad authority this is basically if it again</p>
+      <p begin="00:58:46.870" end="00:58:50.450">...authority is important component of this offload</p>
+      <p begin="00:58:50.450" end="00:58:53.880">...basically says where does the user login at so if I were to go into</p>
+      <p begin="00:58:53.880" end="00:58:59.060">this settings helper you'll see that the authority is just...</p>
+      <p begin="00:58:59.060" end="00:59:04.040">this one hard coded I'll change it to common but it can just be</p>
+      <p begin="00:59:04.040" end="00:59:09.350">window or login out windows dot net such common so I can I can simply specify that</p>
+      <p begin="00:59:09.350" end="00:59:11.540">here from here I can start</p>
+      <p begin="00:59:11.540" end="00:59:18.880">requesting access tokens it's really that simple I can say all context dot.</p>
+      <p begin="00:59:18.880" end="00:59:21.420">Acquire access token.</p>
+      <p begin="00:59:21.420" end="00:59:24.150">Silence so there's two different ways</p>
+      <p begin="00:59:24.150" end="00:59:28.540">...and I know that's really hard to see but there is a silent and then there is a</p>
+      <p begin="00:59:28.540" end="00:59:33.850">non silent what this is I should try to get silently first what this will do is</p>
+      <p begin="00:59:33.850" end="00:59:38.230">it'll say hey have you already cash to refresh token to where I don't have to prompt the user</p>
+      <p begin="00:59:38.230" end="00:59:41.240">login and then if that fails as a</p>
+      <p begin="00:59:41.240" end="00:59:46.520">...what I would do is go and get it in the more invasive way where I</p>
+      <p begin="00:59:46.520" end="00:59:51.770">actually prompt the user with a login screen so ultimately to</p>
+      <p begin="00:59:51.770" end="00:59:57.930">go and authenticate and get an access token...go start calling raster go use</p>
+      <p begin="00:59:57.930" end="01:00:01.970">Are just a couple of lines of code...do have a completed</p>
+      <p begin="01:00:01.970" end="01:00:06.590">one here that I just called the sharepoint searcher if we look in my...</p>
+      <p begin="01:00:06.590" end="01:00:12.440">helper that I was starting to build this is exactly what I'm doing is I'm just doing I'm getting that</p>
+      <p begin="01:00:12.440" end="01:00:15.060">of authentication context I'm trying to</p>
+      <p begin="01:00:15.060" end="01:00:18.170">acquire token silently if that fails?</p>
+      <p begin="01:00:18.170" end="01:00:23.240">I just skip and go down to get the access token</p>
+      <p begin="01:00:23.240" end="01:00:28.160">in the loud way if you will what...do for fun here is let's actually</p>
+      <p begin="01:00:28.160" end="01:00:32.390">...to deploys or debug this on and iphone so,</p>
+      <p begin="01:00:32.390" end="01:00:37.410">what I'm going to do...switch over to my other screen here?</p>
+      <p begin="01:00:37.410" end="01:00:40.550">And, in the background you'll notice that I have another</p>
+      <p begin="01:00:40.550" end="01:00:45.150">...tool that allows me to...my pc with my</p>
+      <p begin="01:00:45.150" end="01:00:50.690">mac and its pared here to where when I quick debug.</p>
+      <p begin="01:00:50.690" end="01:00:51.600">It's going to go</p>
+      <p begin="01:00:51.600" end="01:00:56.560">establish a connection we can actually see what's happening behind-the-scene so you can actually this is the</p>
+      <p begin="01:00:56.560" end="01:01:01.240">...the my terminal that shows me what's going on behind the scenes between</p>
+      <p begin="01:01:01.240" end="01:01:02.630">...handshake so it's in the</p>
+      <p begin="01:01:02.630" end="01:01:08.680">process of deploying this out to the device and it's looks like it's just about done.</p>
+      <p begin="01:01:08.680" end="01:01:11.480">And, here...second we should see our app pop-up so it's</p>
+      <p begin="01:01:11.480" end="01:01:15.320">there's the install there's our app popping up and,</p>
+      <p begin="01:01:15.320" end="01:01:26.070">now when this initially loads.</p>
+      <p begin="01:01:26.070" end="01:01:30.200">...a second.</p>
+      <p begin="01:01:30.200" end="01:01:35.260">Actually we'll show you here is even though this is running on my...come back over here I'm</p>
+      <p begin="01:01:35.260" end="01:01:40.000">hitting break points on my pc so we can still have a really good experience of debugging</p>
+      <p begin="01:01:40.000" end="01:01:44.900">these but let me I'll go ahead and let these play through what you'll see here is it's going to</p>
+      <p begin="01:01:44.900" end="01:01:47.400">...me with that office three sixty five sign</p>
+      <p begin="01:01:47.400" end="01:01:51.910">in screen so I could go ahead and provide my credentials and then it would be able to give</p>
+      <p begin="01:01:51.910" end="01:01:57.380">me access to the resources that I wanted so I am out of time</p>
+      <p begin="01:01:57.380" end="01:02:01.020">...want to cover a couple things there are some great sessions if you want the</p>
+      <p begin="01:02:01.020" end="01:02:05.920">indep view of examine with office three sixty five is set-top one right here that</p>
+      <p begin="01:02:05.920" end="01:02:10.460">...and checks are going to be doing on friday highly recommended I've seen what they've built for</p>
+      <p begin="01:02:10.460" end="01:02:15.600">...are they got a great solution on get...be able to pull down and see out was built on there's</p>
+      <p begin="01:02:15.600" end="01:02:20.690">also getting started with zimmerman visual studio...on day three</p>
+      <p begin="01:02:20.690" end="01:02:26.820">as well so check those out here's a few helpful links that you can go grab we have</p>
+      <p begin="01:02:26.820" end="01:02:31.040">...ultimate guide to the eight-hour bindings where you can get that one</p>
+      <p begin="01:02:31.040" end="01:02:39.030">you get that specific new get version so download...if you want these.</p>
+      <p begin="01:02:39.030" end="01:02:39.740">We quickly.</p>
+      <p begin="01:02:41.050" end="01:02:50.520">I will hangout for questions but I did want to jump to just make sure you guys.</p>
+      <p begin="01:02:50.520" end="01:02:54.680">You guys do your valuations this really important for this conference to keep the quality up</p>
+      <p begin="01:02:54.680" end="01:02:59.310">of a presentations we need your feedback on things so make sure you go in and fill</p>
+      <p begin="01:02:59.310" end="01:03:04.230">out your eval's appreciate everyone staying I failed in terms of my time on</p>
+      <p begin="01:03:04.230" end="01:03:08.770">two minutes over I really appreciate you guys coming I'm happy to hang out here at the front</p>
+      <p begin="01:03:08.770" end="01:03:11.870">...answer the question you guys have about this thanks so much.</p>
+
+    </div>
+  </body>
+</tt>

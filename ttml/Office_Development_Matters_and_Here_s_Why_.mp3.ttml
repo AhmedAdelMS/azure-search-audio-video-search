@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.888</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.260" end="00:00:08.870">All right let's get started.</p>
+      <p begin="00:00:08.870" end="00:00:13.030">Good afternoon everyone ...efforts on the general manager for office</p>
+      <p begin="00:00:13.030" end="00:00:17.990">extensibility we're here to drill into some of the things that you heard about this morning in the keynote and cover</p>
+      <p begin="00:00:17.990" end="00:00:23.830">it more broadly my partner in crime jeremy...thank am a technical point manager</p>
+      <p begin="00:00:23.830" end="00:00:27.500">...office...marketing...show...a showing you</p>
+      <p begin="00:00:27.500" end="00:00:32.080">...new announcements kind-of on top of what you saw in the keynote the what would alongside such that I</p>
+      <p begin="00:00:32.080" end="00:00:35.080">...of the share with you what we've kind of introduces we lost</p>
+      <p begin="00:00:35.080" end="00:00:40.560">...a big land kind of six-month so in ...your great and I think</p>
+      <p begin="00:00:40.560" end="00:00:43.700">there's one issue from this morning we wanted to take head-on.</p>
+      <p begin="00:00:44.810" end="00:00:49.060">Of anybody saw this as it was going on during the keynote</p>
+      <p begin="00:00:49.060" end="00:00:53.820">I myself didn't get to see it so I wasn't quite sure what was going on it's just a couple messages</p>
+      <p begin="00:00:53.820" end="00:00:59.530">...communications just a little bit and it was a little bit about drugs and suspect that...seattle has</p>
+      <p begin="00:00:59.530" end="00:01:05.170">...legalized no I think they wanted advil but I...it was a little bit of a...mistaken</p>
+      <p begin="00:01:05.170" end="00:01:10.090">...cj did own up to...backstage...that he should have been</p>
+      <p begin="00:01:10.090" end="00:01:13.360">...the notifications offi had one job and internal.</p>
+      <p begin="00:01:14.600" end="00:01:19.550">So,...get that in...but...record my email is not rob...at build demo one-dot on</p>
+      <p begin="00:01:19.550" end="00:01:23.320">...it's raw...at microsoft-dot-com if you want</p>
+      <p begin="00:01:23.320" end="00:01:35.390">to reach out to me I'd be glad to hear from you so let's dive right in...</p>
+      <p begin="00:01:35.390" end="00:01:39.210">So,...talked about this a bunch this morning and</p>
+      <p begin="00:01:39.210" end="00:01:44.100">just to recap I think he was quite passionate and quite enthusiastic this is actually a quote that we</p>
+      <p begin="00:01:44.100" end="00:01:48.180">have from last fall he truly believes in the future of authors as</p>
+      <p begin="00:01:48.180" end="00:01:51.490">a developer platform and in the opportunity</p>
+      <p begin="00:01:51.490" end="00:01:57.240">that represents for many different kinds of developers both developers working in</p>
+      <p begin="00:01:57.240" end="00:02:01.360">isv are building cloud services but also corporate developers</p>
+      <p begin="00:02:01.360" end="00:02:04.170">trying-to delivered great experiences to</p>
+      <p begin="00:02:04.170" end="00:02:09.150">in-house employees and there's a couple reasons that that's true one is the</p>
+      <p begin="00:02:09.150" end="00:02:14.400">users the office can attract for solutions and...a function in the</p>
+      <p begin="00:02:14.400" end="00:02:16.050">...install base and xtraction</p>
+      <p begin="00:02:16.050" end="00:02:19.740">and office has as well as the massive growth that we see</p>
+      <p begin="00:02:19.740" end="00:02:24.950">in office three sixty five and I know that we've talked about a bunch over the past</p>
+      <p begin="00:02:24.950" end="00:02:29.210">months and year but office three sixty five has this reputation as the</p>
+      <p begin="00:02:29.210" end="00:02:33.170">...business and microsoft history and,</p>
+      <p begin="00:02:33.170" end="00:02:36.810">it is quite an amazing thing to be a part of to really catch that</p>
+      <p begin="00:02:36.810" end="00:02:40.010">wave and actually be part of the catalyst of people moving to</p>
+      <p begin="00:02:40.010" end="00:02:43.720">the cloud and now on top of that to offer a developer</p>
+      <p begin="00:02:43.720" end="00:02:48.270">platform and surface area that people can take advantage of in order to really</p>
+      <p begin="00:02:48.270" end="00:02:55.930">drive home not just solutions but solutions helping people be more productive.</p>
+      <p begin="00:02:55.930" end="00:03:00.090">So, we've got some ...statistics quantifying what</p>
+      <p begin="00:03:00.090" end="00:03:04.600">that actually means just to put a face on what does it mean to be the</p>
+      <p begin="00:03:04.600" end="00:03:07.580">fastest-growing business and microsoft history of</p>
+      <p begin="00:03:07.580" end="00:03:12.530">is itself has one-point-two billion users and that's office all up that is sort of the full</p>
+      <p begin="00:03:12.530" end="00:03:17.240">...area for that actually means is when people when we release new things like</p>
+      <p begin="00:03:17.240" end="00:03:22.210">release office for ios android it gets an immediate great amount of attention</p>
+      <p begin="00:03:22.210" end="00:03:26.850">and as we wire that up for add-in extensibility becomes a great target market for</p>
+      <p begin="00:03:26.850" end="00:03:29.550">you to approach people live in office</p>
+      <p begin="00:03:29.550" end="00:03:34.220">...productive...office and this actually means something about the way that they approach</p>
+      <p begin="00:03:34.220" end="00:03:39.170">solutions inside of office their serious they're doing business and,</p>
+      <p begin="00:03:39.170" end="00:03:43.470">they want to get work done and that actually dramatically changes sort of their profile of</p>
+      <p begin="00:03:43.470" end="00:03:49.190">...willingness to invest there's just a ton of data we talked about the api explore and</p>
+      <p begin="00:03:49.190" end="00:03:54.160">...the graphic gis we'll talk about that a bunch more right here but just to get a size</p>
+      <p begin="00:03:54.160" end="00:03:58.410">for it inside of exchange their over four trillion</p>
+      <p begin="00:03:58.410" end="00:04:01.820">emails and office three sixty five of eight hundred-fifty</p>
+      <p begin="00:04:01.820" end="00:04:06.500">mating million meetings actually means twenty eight points three meeting million</p>
+      <p begin="00:04:06.500" end="00:04:11.130">meetings created every day and this just represents a huge amount of data</p>
+      <p begin="00:04:11.130" end="00:04:15.950">in capability...you can take advantage of.</p>
+      <p begin="00:04:15.950" end="00:04:18.270">And, with that we...of address the fact the you know,</p>
+      <p begin="00:04:18.270" end="00:04:22.190">we have come a long way let me first release the outlook</p>
+      <p begin="00:04:22.190" end="00:04:26.320">...with were powerpoint excel and all of you in the rumah fully built the</p>
+      <p begin="00:04:26.320" end="00:04:31.480">...add-in so you've written...you've written some...scripts in the past and one thing we</p>
+      <p begin="00:04:31.480" end="00:04:36.410">...address was the those things will continue to work in the office clients the we ship on</p>
+      <p begin="00:04:36.410" end="00:04:40.810">the windows desktop as you've seen in the keynote where we demonstrated on various</p>
+      <p begin="00:04:40.810" end="00:04:46.570">of different vices...forward is...be ready to push more with the app model which we're going to</p>
+      <p begin="00:04:46.570" end="00:04:51.510">demonstrate today with the admins for both office and for sharepoint with web apps inside that</p>
+      <p begin="00:04:51.510" end="00:04:54.790">...that's really...for us is the will continue to</p>
+      <p begin="00:04:54.790" end="00:04:59.010">...that in the office client-but also where you've built things...the ws maybe</p>
+      <p begin="00:04:59.010" end="00:05:03.100">...exchangeable full trust code on sharepoint sandbox solutions</p>
+      <p begin="00:05:03.100" end="00:05:08.240">...will continue to work in the on premises versions of sharepoint sandbox...continue to work in the</p>
+      <p begin="00:05:08.240" end="00:05:13.410">...service but we...guys to look forward to the...new...that</p>
+      <p begin="00:05:13.410" end="00:05:18.210">we've push forward with and...where engineering if it is but it will continue to support that</p>
+      <p begin="00:05:18.210" end="00:05:22.700">where your isv or your internal customizations and build on what we what we</p>
+      <p begin="00:05:22.700" end="00:05:28.580">kind of released of the last ten twenty years and that's really where we kind of moving forward here in the</p>
+      <p begin="00:05:28.580" end="00:05:35.440">add-in spice...office sharepoint and with the...as well.</p>
+      <p begin="00:05:35.440" end="00:05:37.580">...great so,</p>
+      <p begin="00:05:39.390" end="00:05:43.270">this morning such you talked about users in data an...and,</p>
+      <p begin="00:05:43.270" end="00:05:48.280">we actually sort of...boiled down even more simply...here's how we talk about the opportunity</p>
+      <p begin="00:05:48.280" end="00:05:53.400">and office and the thing that we want you to go do the action so, the first</p>
+      <p begin="00:05:53.400" end="00:05:58.300">...talk a bunch about all the users of office this creates a great place to sort of</p>
+      <p begin="00:05:58.300" end="00:06:03.590">make your applications discover connect users to your service but, in addition</p>
+      <p begin="00:06:03.590" end="00:06:08.380">it really does provide this cross-platform form experience and surface area that you</p>
+      <p begin="00:06:08.380" end="00:06:12.780">can...to and as we talk about here that's not just about integrating into office that's also</p>
+      <p begin="00:06:12.780" end="00:06:17.260">a building your own apps on top so when we say users the called actions quite clear build</p>
+      <p begin="00:06:17.260" end="00:06:21.730">atoms that plug-in the office and you can do that today a bunch</p>
+      <p begin="00:06:21.730" end="00:06:26.890">of the things that we talked about in the keynote...here is about the ongoing development this is</p>
+      <p begin="00:06:26.890" end="00:06:32.710">an investment area where we were going to keep investing building more and providing more</p>
+      <p begin="00:06:32.710" end="00:06:36.260">capabilities...for-you over time the second thing is about all</p>
+      <p begin="00:06:36.260" end="00:06:39.660">that data inside the unify api and point inside the</p>
+      <p begin="00:06:39.660" end="00:06:44.580">...and making that available so the call the action is actually again quite clear</p>
+      <p begin="00:06:44.580" end="00:06:48.780">its connect to office three sixty five api eyes and you'll be able to build</p>
+      <p begin="00:06:48.780" end="00:06:53.690">solutions running on mobile devices running on websites...just make it really easy</p>
+      <p begin="00:06:53.690" end="00:06:58.120">and great to connect that productivity data one of the things that doesn't show up on this</p>
+      <p begin="00:06:58.120" end="00:07:01.410">slide that we think about as critical to how we want to</p>
+      <p begin="00:07:01.410" end="00:07:05.140">approach this problem is really making sure that we come to the</p>
+      <p begin="00:07:05.140" end="00:07:09.980">developers where they are and we make it super easy for you to do those two things at</p>
+      <p begin="00:07:09.980" end="00:07:14.910">inness and calling...and that's why we've really taken approach of making sure that</p>
+      <p begin="00:07:14.910" end="00:07:19.840">everything we do is built on open standards using...standards where appropriate</p>
+      <p begin="00:07:19.840" end="00:07:24.220">off protocols...author responses are always in json even going a</p>
+      <p begin="00:07:24.220" end="00:07:28.120">step further and saying okay if people are going to call these api</p>
+      <p begin="00:07:28.120" end="00:07:32.210">...and build mobile apps then they'll need...case running on ios</p>
+      <p begin="00:07:32.210" end="00:07:37.470">...so we've built those just little...to make it easy to call the protocol</p>
+      <p begin="00:07:37.470" end="00:07:40.460">api and then we went ahead and open-source them as well just</p>
+      <p begin="00:07:40.460" end="00:07:44.390">to make it that much easier for people to engage with us the same-store</p>
+      <p begin="00:07:44.390" end="00:07:49.210">...story is going to apply to people trying to build more service or server-side</p>
+      <p begin="00:07:49.210" end="00:07:54.240">connections talking...api is so we're investing just as much...sure we provide the</p>
+      <p begin="00:07:54.240" end="00:07:59.350">riches decays there as well and then the last thing we talked about this morning and</p>
+      <p begin="00:07:59.350" end="00:08:04.310">...repeat here is about really going beyond this these are the fundamentals</p>
+      <p begin="00:08:04.310" end="00:08:08.520">...over time will bring more intelligence will bring the smarts of the office</p>
+      <p begin="00:08:08.520" end="00:08:14.050">graphs and we'll bring you the...can super-power your solutions.</p>
+      <p begin="00:08:14.050" end="00:08:19.630">All right let's dive right in and take a look at some office evidence so we'll just stop there a little bit</p>
+      <p begin="00:08:19.630" end="00:08:22.150">...the audience kind of like snickering a little bit around this whole</p>
+      <p begin="00:08:22.150" end="00:08:26.870">...we've talked about the app model a little bit in the past and we've kind of and sharepoint</p>
+      <p begin="00:08:26.870" end="00:08:31.340">apps sharepoint sometimes...ship...apps sometimes...office apps</p>
+      <p begin="00:08:31.340" end="00:08:36.590">...apps office in outlook astrophysics so...stumbling block where</p>
+      <p begin="00:08:36.590" end="00:08:42.230">we had word apps all of with apps in them</p>
+      <p begin="00:08:42.230" end="00:08:47.200">apps enact so access apps so the marketing department sought to stop.</p>
+      <p begin="00:08:47.200" end="00:08:50.090">So, that train and from now on will actually be cooling those</p>
+      <p begin="00:08:50.090" end="00:08:53.290">attitudes very much roles of the time outlook</p>
+      <p begin="00:08:53.290" end="00:08:55.800">...word...so...</p>
+      <p begin="00:08:57.070" end="00:09:03.440">Powerpoint...sharepoint allen's so that's the only...address...just move on forwards</p>
+      <p begin="00:09:03.440" end="00:09:08.840">...cool...is loaded from the screen if I say apps one more time</p>
+      <p begin="00:09:08.840" end="00:09:13.650">...I'm going to get buzzed onstage so robles so we'll see how far we get before we said</p>
+      <p begin="00:09:13.650" end="00:09:18.650">it would acts as this point forward excellence...does turn out that it flows pretty naturally</p>
+      <p begin="00:09:18.650" end="00:09:23.990">of the tongue and I think everybody understands what we mean the things I do want to talk about is that we've</p>
+      <p begin="00:09:23.990" end="00:09:27.670">had...out in the market as I mentioned we started with twenty</p>
+      <p begin="00:09:27.670" end="00:09:32.750">thirteen so people can build these things today and really start going and they are seeing</p>
+      <p begin="00:09:32.750" end="00:09:37.430">traction one of the beautiful things about working in the cloud and working with always</p>
+      <p begin="00:09:37.430" end="00:09:42.210">up-to-date clients is that we really get good rich information about how much</p>
+      <p begin="00:09:42.210" end="00:09:47.530">users in usage we're actually gettingand, how much traction we see so,</p>
+      <p begin="00:09:47.530" end="00:09:52.320">these are just sharing some of the internal statistics that we've got about end-users jumping on top</p>
+      <p begin="00:09:52.320" end="00:09:57.930">of modern at inness ...advantage of it and what we see is ...</p>
+      <p begin="00:09:57.930" end="00:10:02.650">the growth curve is exactly the right say that's exactly the right kind of month on</p>
+      <p begin="00:10:02.650" end="00:10:07.630">...exponential growth that you want to see we've exceeded three million active users in</p>
+      <p begin="00:10:07.630" end="00:10:12.550">a month the growth is an hundred fourteen percent and people are using</p>
+      <p begin="00:10:12.550" end="00:10:17.150">and launching these things on a regular basis so that's just for us data and</p>
+      <p begin="00:10:17.150" end="00:10:22.240">signals the great...on...something we've got the right kind of adoption happening</p>
+      <p begin="00:10:22.240" end="00:10:27.130">now we're just looking for ways to make them even more discoverable and help you is developers plug</p>
+      <p begin="00:10:27.130" end="00:10:31.530">even more interesting invaluable add-ons which is what will really drive people want to use this,</p>
+      <p begin="00:10:32.690" end="00:10:37.140">yeah, and, as a good example of that we worked with annoys for dot com when we first</p>
+      <p begin="00:10:37.140" end="00:10:40.600">...with them on ...web application which we share later on</p>
+      <p begin="00:10:40.600" end="00:10:45.560">and the session but one of the highlight here was the double-a significant works integrate with our as</p>
+      <p begin="00:10:45.560" end="00:10:49.900">...active directory services so that they can be loaded up in that experience and</p>
+      <p begin="00:10:49.900" end="00:10:54.450">we actually put a prototype with...does...who's my car...on the podcast so thank you for</p>
+      <p begin="00:10:54.450" end="00:10:58.100">doing this rigid where we one of...demonstrates a new features that</p>
+      <p begin="00:10:58.100" end="00:11:02.860">we're releasing inside of the outlook add-in that of office outings we move forward since</p>
+      <p begin="00:11:02.860" end="00:11:05.440">I actually release this service with that office...five</p>
+      <p begin="00:11:05.440" end="00:11:10.530">...they've actually had aaround over twenty five percent of the new customers are</p>
+      <p begin="00:11:10.530" end="00:11:14.510">actually coming signing in from those office free...experiences so...is</p>
+      <p begin="00:11:14.510" end="00:11:19.550">...the ecosystems out there is interest from our custom advice to do this now</p>
+      <p begin="00:11:19.550" end="00:11:24.930">...thing that I want to show you here which has been shown before is this notion of an add-in, come on,</p>
+      <p begin="00:11:24.930" end="00:11:28.720">we had a lot of feedback for use voice site which is available...dot com</p>
+      <p begin="00:11:28.720" end="00:11:32.810">...home page and the big thing that we had was when the in the old</p>
+      <p begin="00:11:32.810" end="00:11:37.030">world of building for office with the pim...to or you can actually get these toss</p>
+      <p begin="00:11:37.030" end="00:11:42.540">...directly on the outlook home page of your experience for the user and you could also have</p>
+      <p begin="00:11:42.540" end="00:11:47.490">integration in that ribbon and what you'll notice here is I go through...e-mails in the ribbon here</p>
+      <p begin="00:11:47.490" end="00:11:51.320">...the...when I click on that that's...you launch my tossed by directly on the</p>
+      <p begin="00:11:51.320" end="00:11:55.900">homepage of outlook allows me to load and html page directly into that tossed...</p>
+      <p begin="00:11:55.900" end="00:12:00.740">the has context using the office js javascript api...that email</p>
+      <p begin="00:12:00.740" end="00:12:05.550">that I've selected so you'll see here on the screen that in that tossed...they'll do is...</p>
+      <p begin="00:12:05.550" end="00:12:10.530">created a meeting and it service and storing that data in it service based on the context of</p>
+      <p begin="00:12:10.530" end="00:12:13.840">that email and then the nice thing is and this is the key with all of these</p>
+      <p begin="00:12:13.840" end="00:12:18.770">...is I don't have to leave my experience inside outlook wherever I'm running this on one of a</p>
+      <p begin="00:12:18.770" end="00:12:22.490">platform I can continue to use outlook but now I can actually use do</p>
+      <p begin="00:12:22.490" end="00:12:29.690">the same time in parallel so I can coming here...was that was a little bit of a...of...is</p>
+      <p begin="00:12:29.690" end="00:12:34.340">...I mean here I can start adding agendas and we can talk about speakers that are on stage?</p>
+      <p begin="00:12:34.340" end="00:12:40.340">And, you know, we can plug that in there and that allows me to kind of have that context and,</p>
+      <p begin="00:12:40.340" end="00:12:45.060">jump through now one of the things that was interesting here's what do dot com had some integration</p>
+      <p begin="00:12:45.060" end="00:12:49.650">...google what exactly the same thing and the...exports evan...and what richard</p>
+      <p begin="00:12:49.650" end="00:12:55.220">did very quickly was actually integrate...one no api which work now we've</p>
+      <p begin="00:12:55.220" end="00:12:59.080">office three-six...authentication...means is I can have</p>
+      <p begin="00:12:59.080" end="00:13:04.540">...information stored...dot com...one node because I'm going to scribble some notes</p>
+      <p begin="00:13:04.540" end="00:13:08.660">...one of my surface or whatever kind of tablet device I have when</p>
+      <p begin="00:13:08.660" end="00:13:12.660">I click down here in my one...button here I can go through using the office</p>
+      <p begin="00:13:12.660" end="00:13:17.430">...five api with well-known actually slates were...a...that inside of</p>
+      <p begin="00:13:17.430" end="00:13:22.350">...in the background that's calling the office...exploitive api trading</p>
+      <p begin="00:13:22.350" end="00:13:27.510">that page within my one note that I'm logged into and you'll notice in that corner there's an image...of</p>
+      <p begin="00:13:27.510" end="00:13:32.230">...the top there that's coming from the new exchange profile photo api</p>
+      <p begin="00:13:32.230" end="00:13:37.330">...we...today as well therefore look over to here on that one</p>
+      <p begin="00:13:37.330" end="00:13:39.860">might page for refresh this page?</p>
+      <p begin="00:13:39.860" end="00:13:44.270">Was going to jump...one section come back again in my meeting notes</p>
+      <p begin="00:13:45.630" end="00:13:50.200">you see now that's actually going created that information that directly my one night so</p>
+      <p begin="00:13:50.200" end="00:13:53.430">...that information into yone that pagethe restful</p>
+      <p begin="00:13:53.430" end="00:13:57.730">...really simple to use of this means there is I can kind of use the</p>
+      <p begin="00:13:57.730" end="00:14:01.990">our of one...to do annotations or...things in a way that may</p>
+      <p begin="00:14:01.990" end="00:14:06.700">be is an extension of what I was doing into dot com so this was a prototype...put together</p>
+      <p begin="00:14:06.700" end="00:14:09.300">...content show the our of those outlook</p>
+      <p begin="00:14:09.300" end="00:14:14.320">...in a way that maybe...considered in the past if there's a couple</p>
+      <p begin="00:14:14.320" end="00:14:18.200">...underscore there one is that I'm really excited about this example for combining the two</p>
+      <p begin="00:14:18.200" end="00:14:22.970">things together about building at inness and then calling this service api</p>
+      <p begin="00:14:22.970" end="00:14:28.250">...to talk a little bit more about this at notion of app commands we're</p>
+      <p begin="00:14:28.250" end="00:14:33.210">very excited about going forward we showed you a lot of task...at...</p>
+      <p begin="00:14:33.210" end="00:14:37.760">a ribbon...ends like this one or super exciting later on we'll show you some more</p>
+      <p begin="00:14:37.760" end="00:14:42.710">in content dead-ends but we think that there's a lot of potential for over time as we build and</p>
+      <p begin="00:14:42.710" end="00:14:48.590">invest more in the model for an lighting up new kinds of experiences and types of atoms.</p>
+      <p begin="00:14:48.590" end="00:14:51.220">So, the other one of the shown here I'm going to switch for role</p>
+      <p begin="00:14:53.120" end="00:14:54.920">...having some devices onstage.</p>
+      <p begin="00:14:56.050" end="00:14:57.640">All right so</p>
+      <p begin="00:14:57.640" end="00:15:02.490">this is getting back into the sat demo and I want to talk a little bit more about how it's put together and</p>
+      <p begin="00:15:02.490" end="00:15:07.490">a little bit more about some of the capabilities that you can light up by taking advantage of</p>
+      <p begin="00:15:07.490" end="00:15:12.400">the richer object model that we provide right here and excel and it's just tons of fun to be able to</p>
+      <p begin="00:15:12.400" end="00:15:18.290">do this demo directly from within itself the so again this is an add-in that's talking</p>
+      <p begin="00:15:18.290" end="00:15:22.770">an sat on prime...using sap gateway</p>
+      <p begin="00:15:22.770" end="00:15:27.460">from microsoft really exposes sap data using...and in</p>
+      <p begin="00:15:27.460" end="00:15:32.440">...data which makes it super easy for us to consume inside of the microsoft environment and</p>
+      <p begin="00:15:32.440" end="00:15:35.360">the simple thing that I can do first it which I showed you this morning</p>
+      <p begin="00:15:35.360" end="00:15:42.040">so it's fairly get the data all I'm glad it work this morning.</p>
+      <p begin="00:15:42.040" end="00:15:49.420">...like...that's good.</p>
+      <p begin="00:15:49.420" end="00:15:56.150">To come back that...conductive ellen...program logo...that was all right.</p>
+      <p begin="00:15:56.150" end="00:16:00.990">...so, let's drew back into the sales...demo and show a couple additional things that live</p>
+      <p begin="00:16:00.990" end="00:16:07.820">there so what I talked about this morning and the first thing to call out is now I'm going on a</p>
+      <p begin="00:16:07.820" end="00:16:13.190">...so this is actually inside of outlook for the</p>
+      <p begin="00:16:13.190" end="00:16:15.460">...and we've enabled the same</p>
+      <p begin="00:16:15.460" end="00:16:20.280">...model running there so it hopefully it super clear by now how we think about</p>
+      <p begin="00:16:20.280" end="00:16:24.380">...how we think about making sure that your solutions are really work</p>
+      <p begin="00:16:24.380" end="00:16:28.680">and run everywhere that office runs so let's go ahead and open up the sales</p>
+      <p begin="00:16:28.680" end="00:16:32.870">...tab again it's pulling the to in cc information off of the mail thread</p>
+      <p begin="00:16:32.870" end="00:16:36.550">...using that to look up the company's inside of sales force and</p>
+      <p begin="00:16:36.550" end="00:16:41.640">...opportunities one of the things that I can do that we didn't get to do is really...just</p>
+      <p begin="00:16:41.640" end="00:16:46.500">wanted to drive home this notion of taking action in context because this is</p>
+      <p begin="00:16:46.500" end="00:16:51.020">the whole value propped...is developers and solution builders is that you can make</p>
+      <p begin="00:16:51.020" end="00:16:53.310">sure your users are productive and live-in</p>
+      <p begin="00:16:53.310" end="00:16:57.680">...inside the experiences that they love so here I can go ahead and actually</p>
+      <p begin="00:16:57.680" end="00:17:05.710">just create this contact for this person that didn't previously exist inside of sales force?</p>
+      <p begin="00:17:11.490" end="00:17:12.940">Has gone?</p>
+      <p begin="00:17:12.940" end="00:17:25.970">Way connected okay.</p>
+      <p begin="00:17:25.970" end="00:17:31.500">Yeah, actually they could have done that and, that would be an interesting enhancement to do since you</p>
+      <p begin="00:17:31.500" end="00:17:36.060">are able to refer the to in cc information...excellent look at this.</p>
+      <p begin="00:17:36.060" end="00:17:43.240">Let's push the button...super exciting.</p>
+      <p begin="00:17:43.240" end="00:17:48.360">Ok, the main thing that I want to show you is that you do have more our and this object model</p>
+      <p begin="00:17:48.360" end="00:17:53.330">...detail...a dump some information out of line-of-business system the first thing I might go do is start</p>
+      <p begin="00:17:53.330" end="00:17:57.700">to make some changes and this really is the scenario of the exec</p>
+      <p begin="00:17:57.700" end="00:18:02.130">on-the-go walking on hall working with this information they go ahead and update the age and</p>
+      <p begin="00:18:02.130" end="00:18:07.120">then when they're done with it they can push the compare and save button so now I've been working</p>
+      <p begin="00:18:07.120" end="00:18:11.820">inside their spreadsheet and the question is what I done and I do have a</p>
+      <p begin="00:18:11.820" end="00:18:16.410">push backed sap to save but before I do that I'd like to check and see</p>
+      <p begin="00:18:16.410" end="00:18:21.110">what I did so what we show here is...for nicely formatting the...that I</p>
+      <p begin="00:18:21.110" end="00:18:25.990">...was able to go and scan through the entire table selection find the individual cells</p>
+      <p begin="00:18:25.990" end="00:18:29.880">that actually been updated in on the right-hand side in a task...go</p>
+      <p begin="00:18:29.880" end="00:18:34.840">...notify the users about what was the what was the actual modification</p>
+      <p begin="00:18:34.840" end="00:18:39.650">...we think that kind of rich compelling experience really lit up by this service on the back-end</p>
+      <p begin="00:18:39.650" end="00:18:44.650">really turns excel into this sort of extension of the end-to-end solution that</p>
+      <p begin="00:18:44.650" end="00:18:46.600">...providing</p>
+      <p begin="00:18:46.600" end="00:18:51.480">...in addition to that one of the questions we had quite frequently is what whatever happened to</p>
+      <p begin="00:18:51.480" end="00:18:56.440">...so we're actually show here is that we've actually involved in up</p>
+      <p begin="00:18:56.440" end="00:19:01.800">...realize it was kind of a visual studio browser addition...you to build sharepoint</p>
+      <p begin="00:19:01.800" end="00:19:06.700">...office settings without...visual studio locally on your machine because those</p>
+      <p begin="00:19:06.700" end="00:19:09.080">...an adding inside offices and</p>
+      <p begin="00:19:09.080" end="00:19:13.440">...manifest...that points to website is html and javascript</p>
+      <p begin="00:19:13.440" end="00:19:17.580">...this scenario here we've actually logged into nap</p>
+      <p begin="00:19:17.580" end="00:19:21.640">...dot com with my microsoft account that might be my outlook dot</p>
+      <p begin="00:19:21.640" end="00:19:26.430">...msn dot com for those of you orbit more old-school here and I can log into their</p>
+      <p begin="00:19:26.430" end="00:19:32.100">start building...I've already...is very simple is available developers dot com slash code</p>
+      <p begin="00:19:32.100" end="00:19:37.200">dashed samples the microsoft buildings at and simply I'm doing...I'm calling a</p>
+      <p begin="00:19:37.200" end="00:19:41.390">...a load buildings function if I scroll...the problem I have a</p>
+      <p begin="00:19:41.390" end="00:19:45.630">...service I have hosted in asher?</p>
+      <p begin="00:19:45.630" end="00:19:50.510">it's going to basically...that json service and render a bunch of buildings in a toss</p>
+      <p begin="00:19:50.510" end="00:19:52.510">...my outlook adding and...when I</p>
+      <p begin="00:19:52.510" end="00:19:56.430">...that building from that tossed pain is going to injects building</p>
+      <p begin="00:19:56.430" end="00:20:00.430">out the html directly into the body my email is simple as</p>
+      <p begin="00:20:00.430" end="00:20:04.590">this in javascript I'm grabbing the item of my email that's I'm in context of</p>
+      <p begin="00:20:04.590" end="00:20:09.190">...my compose mode within outlook and I'm just simply doing a</p>
+      <p begin="00:20:09.190" end="00:20:14.380">...item dot...dot set selected I think...the html</p>
+      <p begin="00:20:14.380" end="00:20:19.260">like build-out using the data that's come back from that jason's service...thing about this</p>
+      <p begin="00:20:19.260" end="00:20:23.540">snapper experience now is not tides me having to have napa running inside</p>
+      <p begin="00:20:23.540" end="00:20:28.360">...is tardy detached you don't need to have that experience and</p>
+      <p begin="00:20:28.360" end="00:20:32.470">...I click play here that's going to go encapsulate that website...that forming</p>
+      <p begin="00:20:32.470" end="00:20:37.460">the cloud is going to upload the manifests fall into my exchange instance within office</p>
+      <p begin="00:20:37.460" end="00:20:41.900">three-six five and what andrew...showing his session later in the</p>
+      <p begin="00:20:41.900" end="00:20:46.010">week is how you can actually...outlook home as well as an add-in not</p>
+      <p begin="00:20:46.010" end="00:20:51.260">...to exchange...within the office risks five service now if I launch that app is going to</p>
+      <p begin="00:20:51.260" end="00:20:54.960">...my experience here within side of office three-six five and</p>
+      <p begin="00:20:54.960" end="00:20:59.010">...demonstrate this from the calendar because what this highlights is when I have this</p>
+      <p begin="00:20:59.010" end="00:21:01.530">...I mean debug mode here</p>
+      <p begin="00:21:01.530" end="00:21:11.380">...create that no event within my calendar and I...this application?</p>
+      <p begin="00:21:11.380" end="00:21:16.280">Unload this application here with my...and click on it that's going to go through...that</p>
+      <p begin="00:21:16.280" end="00:21:19.120">...wrestle services running...</p>
+      <p begin="00:21:19.120" end="00:21:22.350">...list of my buildings on the right-hand side.</p>
+      <p begin="00:21:22.350" end="00:21:27.120">And,...get a...buildings obviously all the cool kids within building what yeah.</p>
+      <p begin="00:21:27.120" end="00:21:27.830">Where I live we</p>
+      <p begin="00:21:27.830" end="00:21:32.970">didn't that you're building yet which is what happens and if I click concert here what you'll</p>
+      <p begin="00:21:32.970" end="00:21:37.910">...is the as well as injecting into the body of my email here</p>
+      <p begin="00:21:37.910" end="00:21:42.850">the...the building in the bing map image that we had...a hyperlinked so the top with</p>
+      <p begin="00:21:42.850" end="00:21:44.870">...get directions other top here</p>
+      <p begin="00:21:44.870" end="00:21:48.490">...actually targeted updating location of my meeting event</p>
+      <p begin="00:21:48.490" end="00:21:52.870">...simply dom in the code here if I go back to I'm just checking</p>
+      <p begin="00:21:52.870" end="00:21:55.940">...if the autumn talk is an appointment I'm actually going to go and</p>
+      <p begin="00:21:55.940" end="00:22:00.380">set the location of that meeting invite directly javascript to the building</p>
+      <p begin="00:22:00.380" end="00:22:03.730">nine coming from that json response so it's really, really clean</p>
+      <p begin="00:22:03.730" end="00:22:08.460">...a web developer this is really easy to get hold of and you don't even need visual studio installed</p>
+      <p begin="00:22:08.460" end="00:22:10.970">...machine...damning this from a</p>
+      <p begin="00:22:10.970" end="00:22:16.230">...here running in firefox...I have this will debugging...building my first app</p>
+      <p begin="00:22:16.230" end="00:22:20.100">...outlook so there's been some huge improvements there on that's sort of</p>
+      <p begin="00:22:20.100" end="00:22:24.170">the house to one thing I also one of the points out which we actually did</p>
+      <p begin="00:22:24.170" end="00:22:30.740">preview...in october when I go back to my mail here we scold answer</p>
+      <p begin="00:22:30.740" end="00:22:35.660">...I've been doing some how shopping recently and someone sent me I've</p>
+      <p begin="00:22:35.660" end="00:22:40.490">...myself and email to address and what you'll notice is the we have this outcome</p>
+      <p begin="00:22:40.490" end="00:22:45.070">on ball inside of outlook where I can launch my epsilons we showed that with the sows what's</p>
+      <p begin="00:22:45.070" end="00:22:50.030">force at exchanges recognize that this is an address and I have a</p>
+      <p begin="00:22:50.030" end="00:22:55.340">being maps that is looking if there's...dressy my email I have this concept of a contextual</p>
+      <p begin="00:22:55.340" end="00:22:59.980">a link here that allows me to launch that add-in as a pop-pop within that email this</p>
+      <p begin="00:22:59.980" end="00:23:04.570">is something we experimented with inside this and you'll see more of these contextual highlights as</p>
+      <p begin="00:23:04.570" end="00:23:07.450">we for across our products, yeah, and,</p>
+      <p begin="00:23:07.450" end="00:23:11.890">actually this gets back to this notion of making sure that we leave</p>
+      <p begin="00:23:11.890" end="00:23:17.260">the users to your service into your solution so when we first shipped</p>
+      <p begin="00:23:17.260" end="00:23:23.750">...for outlook...a we call them as relic but this we...them in the</p>
+      <p begin="00:23:23.750" end="00:23:29.360">great toolbar and a lot of people didn't notice they were there now you can build add-in dvs that show up</p>
+      <p begin="00:23:29.360" end="00:23:33.130">...this highlighted way we were able to see the media increase in adoption</p>
+      <p begin="00:23:33.130" end="00:23:38.440">and usage just one thing dimension on that your own contextual</p>
+      <p begin="00:23:38.440" end="00:23:43.330">latins can really be keyed off of content in...thread they can have a full regular expression</p>
+      <p begin="00:23:43.330" end="00:23:47.970">decide whether or not they hit highlight and, then show up in there now one of the</p>
+      <p begin="00:23:47.970" end="00:23:52.860">things that we really want to make sure you walk away from build with is a very clear</p>
+      <p begin="00:23:52.860" end="00:23:57.660">picture about what I can go do today what's coming in preview and</p>
+      <p begin="00:23:57.660" end="00:24:01.960">...are the things that will be coming down the road and hopefully it's clear from the way we're</p>
+      <p begin="00:24:01.960" end="00:24:06.200">having this conversation that we want to be really open about where we're headed and what the future looks</p>
+      <p begin="00:24:06.200" end="00:24:11.120">like so this is our attempt to come super clean make it super clear about the</p>
+      <p begin="00:24:11.120" end="00:24:15.260">add-in model where currently stands where we're making our investments and what's coming</p>
+      <p begin="00:24:15.260" end="00:24:19.710">next so today you can go build these at...they will work across-the-board</p>
+      <p begin="00:24:19.710" end="00:24:23.440">and thirty-two...they will largely work in the online</p>
+      <p begin="00:24:23.440" end="00:24:27.770">a web apps and as we talked about the demo we are now releasing</p>
+      <p begin="00:24:28.970" end="00:24:34.650">...update for excel for that will enable them to run in that environment as well the things</p>
+      <p begin="00:24:34.650" end="00:24:39.460">that teams actively working on our making sure that were consistent across the whole family</p>
+      <p begin="00:24:39.460" end="00:24:43.530">of ios devices so we pushing hard on that and upcoming months and make to</p>
+      <p begin="00:24:43.530" end="00:24:47.110">those updates get into that apple store and in that way</p>
+      <p begin="00:24:47.110" end="00:24:50.680">your solution show up across all the ios devices that</p>
+      <p begin="00:24:50.680" end="00:24:54.210">your users have and then the very next thing after that which</p>
+      <p begin="00:24:54.210" end="00:24:58.810">we're very excited about is really going after the mac and will be able to share some of the framework and infrastructure</p>
+      <p begin="00:24:58.810" end="00:25:03.710">...we firmly believe in the vision that these solutions need to run everywhere</p>
+      <p begin="00:25:03.710" end="00:25:08.430">that office runs and that offices cross-platform productivity experience</p>
+      <p begin="00:25:08.430" end="00:25:12.220">so later this year we'll start work on making sure we get android</p>
+      <p begin="00:25:12.220" end="00:25:15.990">and uw a fully enabled and we'll deliver those out</p>
+      <p begin="00:25:15.990" end="00:25:19.560">...incremental updates as quickly as we can provide them and that so</p>
+      <p begin="00:25:19.560" end="00:25:24.330">that transparent wvu on the how're thinking about the development roadmap?</p>
+      <p begin="00:25:24.330" end="00:25:26.750">Yeah, and, the other thing to kinda talk about is the</p>
+      <p begin="00:25:26.750" end="00:25:31.040">...and spices...refocusing on where we all with the office...with the</p>
+      <p begin="00:25:31.040" end="00:25:35.930">sharepoint...aspect...had a lot of them and...as well as...malicious of others because well, yeah,</p>
+      <p begin="00:25:35.930" end="00:25:39.700">and, actually this is an important context for usoffice</p>
+      <p begin="00:25:39.700" end="00:25:43.740">...actually they do show up inside of office twenty thirteen so you can</p>
+      <p begin="00:25:43.740" end="00:25:48.740">enable them for users that don't actually have office three...sharepoint</p>
+      <p begin="00:25:48.740" end="00:25:53.160">...interconnected office three sixty five or connected to an on prime sharepoint installation</p>
+      <p begin="00:25:53.160" end="00:25:58.120">we've actually seen the same general shape of curve where we have...this</p>
+      <p begin="00:25:58.120" end="00:26:02.490">...growth curve and what we see is were closing in on a billion</p>
+      <p begin="00:26:02.490" end="00:26:06.770">necessary who that would be exciting those one of those things that gets we did a million?</p>
+      <p begin="00:26:07.920" end="00:26:12.990">Active users for...sharepoint we see fourteen million launches</p>
+      <p begin="00:26:12.990" end="00:26:18.060">happening in the month of march and again all of those are driving api calls so these are the</p>
+      <p begin="00:26:18.060" end="00:26:22.900">kind of metrics that we're tracking to make sure that the model is doing what we want and</p>
+      <p begin="00:26:22.900" end="00:26:28.050">delivering the capabilities for use developers to connect to users...one of the call examples we have here from</p>
+      <p begin="00:26:28.050" end="00:26:32.080">a sharepoint perspective is the madison's which you map out about in the past is</p>
+      <p begin="00:26:32.080" end="00:26:36.960">actually a microsoft lc...legal team of build something for a particular scenario that was</p>
+      <p begin="00:26:36.960" end="00:26:41.260">putting those guys spy jump over here too my hap</p>
+      <p begin="00:26:41.260" end="00:26:45.870">...and I launch the medicine or...this is actually using this notion of</p>
+      <p begin="00:26:45.870" end="00:26:50.800">legal teams that have matters where they have to store documents and emails of records around a</p>
+      <p begin="00:26:50.800" end="00:26:55.790">particular legal topic and they consistently have these things flying around and</p>
+      <p begin="00:26:55.790" end="00:26:59.920">...and sharing documents in different ways so what they did was they built this</p>
+      <p begin="00:26:59.920" end="00:27:05.090">...dashboard that allowed them to track exactly what was going on with all</p>
+      <p begin="00:27:05.090" end="00:27:07.790">that matters so they hosted this all inside</p>
+      <p begin="00:27:07.790" end="00:27:11.770">...the leveraging sharepoint is a back-end to store individual matters</p>
+      <p begin="00:27:11.770" end="00:27:16.650">...individual site collections so they're all encapsulated the security trimmed a...that has</p>
+      <p begin="00:27:16.650" end="00:27:21.170">that contain a feedback and the users can go through and start seeing stacks around things</p>
+      <p begin="00:27:21.170" end="00:27:26.490">like what the status of those matters all within the whole organization how much document</p>
+      <p begin="00:27:26.490" end="00:27:31.220">shown is going on within each of those individual matters and...as far as using things like the</p>
+      <p begin="00:27:31.220" end="00:27:36.350">...services and...biif features...map delay gr locations of those...those</p>
+      <p begin="00:27:36.350" end="00:27:41.420">matters are relevance to where they are across the whole of microsoft legal so as an example here of</p>
+      <p begin="00:27:41.420" end="00:27:46.160">kind of crossing the boundaries of not just thinking about me myself as a sharepoint developer by</p>
+      <p begin="00:27:46.160" end="00:27:49.610">...actually created am and outlook add-in so...I</p>
+      <p begin="00:27:49.610" end="00:27:55.320">come into my emails here I have an email where I have an attachment what I launch that add-in what</p>
+      <p begin="00:27:55.320" end="00:27:59.790">is going to do is going to use the office js api to notice the there</p>
+      <p begin="00:27:59.790" end="00:28:04.570">are actually attachments associated with this email and then there are able to go in here</p>
+      <p begin="00:28:04.570" end="00:28:08.430">upload the attachments and decide what matters...</p>
+      <p begin="00:28:08.430" end="00:28:14.340">can pick my matter now take into account this is authenticated back into sharepoint but I'm actually</p>
+      <p begin="00:28:14.340" end="00:28:17.610">...a in sort of outlook</p>
+      <p begin="00:28:17.610" end="00:28:22.350">...indirectly so I...ui...you can see here the with the...on a is pretty</p>
+      <p begin="00:28:22.350" end="00:28:27.810">...out here but that would force me to sign into this particular environment and...upload that pick my</p>
+      <p begin="00:28:27.810" end="00:28:31.650">...so what we're trying to encourage here is...don't think</p>
+      <p begin="00:28:31.650" end="00:28:36.150">these things in silos this demo actually demonstrates lonely and outlook added</p>
+      <p begin="00:28:36.150" end="00:28:40.290">...a sharepoint added but also that notion of a web application that's</p>
+      <p begin="00:28:40.290" end="00:28:44.460">...inside of the apple...that moyers page and this is something</p>
+      <p begin="00:28:44.460" end="00:28:47.140">...actually hosting rightnow internally something</p>
+      <p begin="00:28:47.140" end="00:28:51.430">we're looking to share with everyone here as well, yeah, and, let me take a moment</p>
+      <p begin="00:28:51.430" end="00:28:56.840">to just be clear about what we're really after because I paid for anyone to walk away thinking I</p>
+      <p begin="00:28:56.840" end="00:29:01.680">...that microsoft going into the legal vertical and that's not the goal what we're actually trying to show is that</p>
+      <p begin="00:29:01.680" end="00:29:05.800">we're excited about the model and we're excited about the possibilities so we're holding this up</p>
+      <p begin="00:29:05.800" end="00:29:09.520">is an internal tool that we built that could not to a bunch of scenarios</p>
+      <p begin="00:29:09.520" end="00:29:13.500">...you might have internally but even more importantly as a model for</p>
+      <p begin="00:29:13.500" end="00:29:18.080">the best practices around the kinds of things that you can do with the framework we've</p>
+      <p begin="00:29:18.080" end="00:29:23.080">delivered and we're working with our best partners inside of this space to make sure that</p>
+      <p begin="00:29:23.080" end="00:29:26.930">...light up the same things for them and this really helps,</p>
+      <p begin="00:29:26.930" end="00:29:32.620">you know, crystallizes galvanize we're going for the industry all right so</p>
+      <p begin="00:29:32.620" end="00:29:36.810">let's flip over and talk about a new kind of application expense a bunch of time talking about</p>
+      <p begin="00:29:36.810" end="00:29:41.540">...and how those can connect...sharepoint and sharepoint capabilities but</p>
+      <p begin="00:29:41.540" end="00:29:46.210">let's take a step back and talk about the new kid on the block which is just about three sixty</p>
+      <p begin="00:29:46.210" end="00:29:50.530">five web apps we first started talking about these last fall and what it</p>
+      <p begin="00:29:50.530" end="00:29:54.640">...just a way to easily connect and existing web application that you've</p>
+      <p begin="00:29:54.640" end="00:29:58.490">...into office three sixty five and there's a couple reasons that you'd</p>
+      <p begin="00:29:58.490" end="00:30:03.500">...do that to make it easy for users to find to make it easy for users to</p>
+      <p begin="00:30:03.500" end="00:30:08.460">in and then to use that as a platform that you would want to drive even more</p>
+      <p begin="00:30:08.460" end="00:30:13.000">...three sixty five integration so all you really have to do is register your app</p>
+      <p begin="00:30:13.000" end="00:30:18.720">in ad and then it shows up in this thing that we have a real name or just keep going...the waffles</p>
+      <p begin="00:30:18.720" end="00:30:23.670">...going to...the app...it's the app launcher thank...we have this thing with engineering</p>
+      <p begin="00:30:23.670" end="00:30:28.160">...have...internal names I live with and they can never let go of the that's right we have to force</p>
+      <p begin="00:30:28.160" end="00:30:31.290">them open-to-the-public outbound so the</p>
+      <p begin="00:30:31.290" end="00:30:36.290">easiest way to show up in the app launcher as it says there on the slide is register with active</p>
+      <p begin="00:30:36.290" end="00:30:41.370">directory that gets you instantaneously single sign on and that makes it super easy for you to</p>
+      <p begin="00:30:41.370" end="00:30:43.530">turn right around and call</p>
+      <p begin="00:30:43.530" end="00:30:46.910">...unify api endpoint call...three sixty</p>
+      <p begin="00:30:46.910" end="00:30:54.820">five a gis to get access to file mail calendar contact information?</p>
+      <p begin="00:30:54.820" end="00:30:58.380">And, in addition we make it super easy-to-use put those things into the</p>
+      <p begin="00:30:58.380" end="00:31:02.870">store we continue to invest in not just how do we make the experience great for</p>
+      <p begin="00:31:02.870" end="00:31:07.690">users but how can we help your users discover the application there's a bunch of ways that</p>
+      <p begin="00:31:07.690" end="00:31:11.720">we like this up one of which is the store in addition we of course have</p>
+      <p begin="00:31:11.720" end="00:31:15.840">a corporate catalog where organizations can distribute the own apps that</p>
+      <p begin="00:31:15.840" end="00:31:21.400">they care about a few the things that we've made super easy as around first if I want to</p>
+      <p begin="00:31:21.400" end="00:31:26.120">acquire one of those new web apps we've made it very easy from within office three sixty five a</p>
+      <p begin="00:31:26.120" end="00:31:31.090">ui to go ahead connect to the store find a web app added directly into</p>
+      <p begin="00:31:31.090" end="00:31:35.880">my apple launcher the second thing is we've enabled inside the store</p>
+      <p begin="00:31:35.880" end="00:31:40.530">functionality for previewing your application so if you'd like to have that kind of targeted</p>
+      <p begin="00:31:40.530" end="00:31:45.380">limited audience beta where your producing initial releases...make sure that it works the way you</p>
+      <p begin="00:31:45.380" end="00:31:49.950">want to work before you go broaden public wavelet that up and then the last thing is that</p>
+      <p begin="00:31:49.950" end="00:31:52.980">where you see this across-the-board it's here with the</p>
+      <p begin="00:31:52.980" end="00:31:57.710">stores well really building samples about how we imagine people can do this in this</p>
+      <p begin="00:31:57.710" end="00:32:00.510">case a best practices at the demonstrates and,</p>
+      <p begin="00:32:00.510" end="00:32:05.370">what great store immigration looks like, yeah, I'm one of the just to show that example of</p>
+      <p begin="00:32:05.370" end="00:32:09.430">that store acquisition obviously when you're in office app in the ribbon in the insert</p>
+      <p begin="00:32:09.430" end="00:32:14.720">group you'll see the apps and the app...there so you can guide discover those apps for</p>
+      <p begin="00:32:14.720" end="00:32:19.010">...outlook excel...powerpoint in the future other things like</p>
+      <p begin="00:32:19.010" end="00:32:23.600">...around sway...obviously when you're in the...contents page when you</p>
+      <p begin="00:32:23.600" end="00:32:28.410">...and an added...actually get a see the stalling there on that quick launch now</p>
+      <p begin="00:32:28.410" end="00:32:31.510">inside of here we'll see now we have the stalling inside the moyer</p>
+      <p begin="00:32:31.510" end="00:32:35.910">...so when I'm on the app launch here and I go to my upsetting</p>
+      <p begin="00:32:35.910" end="00:32:40.420">had this notion of...if I had to dot com here for instance I can...</p>
+      <p begin="00:32:40.420" end="00:32:45.370">in that from my app launches so that no matter where I am inside the web experience obvious three-six</p>
+      <p begin="00:32:45.370" end="00:32:49.990">five I can launch those particular apps but now the visibility is a lot</p>
+      <p begin="00:32:49.990" end="00:32:54.410">higher to get over to that store and see what apps are available now the</p>
+      <p begin="00:32:54.410" end="00:32:58.980">store patient we showed...shows the apps that we can add the web</p>
+      <p begin="00:32:58.980" end="00:33:02.640">...we can directly into the...page but also highlights the sharepoint</p>
+      <p begin="00:33:02.640" end="00:33:07.410">admins and the office add-in that are available to so we really believe that this</p>
+      <p begin="00:33:07.410" end="00:33:12.530">...to our customers your work you been doing to release these things in the</p>
+      <p begin="00:33:12.530" end="00:33:14.540">stores wall so for instance</p>
+      <p begin="00:33:14.540" end="00:33:20.020">...here...so the docking sign-out you'll see...same experience we had for</p>
+      <p begin="00:33:20.020" end="00:33:23.740">...and office outings is now available for those web applications so</p>
+      <p begin="00:33:23.740" end="00:33:28.630">if you have a sas service already out there simply add it authenticate with the office</p>
+      <p begin="00:33:28.630" end="00:33:33.260">...education and you'll be able to submit this to the store for the</p>
+      <p begin="00:33:33.260" end="00:33:37.230">...dashboard become available inside the store as well as a great way to</p>
+      <p begin="00:33:37.230" end="00:33:40.150">get exposure into our customer base with</p>
+      <p begin="00:33:40.150" end="00:33:44.890">...web application but can do single soil directly from launching landmarks page all the</p>
+      <p begin="00:33:44.890" end="00:33:50.490">...more ensure we...there's a really compelling story...of organizations out there?</p>
+      <p begin="00:33:50.490" end="00:33:57.260">So, with that I'm going to jump back to the slides.</p>
+      <p begin="00:33:57.260" end="00:34:01.530">I'm going to talk a little bit about component so we talked about part of the office at...the</p>
+      <p begin="00:34:01.530" end="00:34:06.200">...and this notion of web apps that live within the service one of the...things that</p>
+      <p begin="00:34:06.200" end="00:34:10.800">we've started to experience now is this notion of leveraging the sky for business aspects of the</p>
+      <p begin="00:34:10.800" end="00:34:12.020">...exploit services</p>
+      <p begin="00:34:12.020" end="00:34:19.300">...and to do this virtually jump back so that do dot com scenario which is.</p>
+      <p begin="00:34:19.300" end="00:34:23.000">And,...you'll see here is the you may have noticed fewer various</p>
+      <p begin="00:34:23.000" end="00:34:26.300">...I launched to dot com here.</p>
+      <p begin="00:34:26.300" end="00:34:30.070">In the bottom without one the oracle...we also had a sky-high</p>
+      <p begin="00:34:30.070" end="00:34:35.030">...so this...is richer the back to the rumah...me a brand-new e-mail and you'll notice now</p>
+      <p begin="00:34:35.030" end="00:34:38.210">...I'm actually seeing...pulling the title I am this meeting was</p>
+      <p begin="00:34:38.210" end="00:34:43.190">associated with the conversation id that we had...existing inside of exchange and I can go</p>
+      <p begin="00:34:43.190" end="00:34:47.380">through in the meeting options say I want to use scarf as part of this I'll include the</p>
+      <p begin="00:34:47.380" end="00:34:52.120">...of the body and include the attachments in that mail as part of that do dot com...</p>
+      <p begin="00:34:52.120" end="00:34:56.880">that's in that service right if I jumped over to the...launched dot com from that</p>
+      <p begin="00:34:56.880" end="00:35:00.710">...experience I would seal this information but what can actually</p>
+      <p begin="00:35:00.710" end="00:35:05.700">the hurt riches ready for this is if I click here on the sky inside this</p>
+      <p begin="00:35:05.700" end="00:35:10.300">...we've now launch the do dot com experience in a web browser we've actually got the</p>
+      <p begin="00:35:10.300" end="00:35:15.360">...imbed directly inside that...interface that was really neat here</p>
+      <p begin="00:35:15.360" end="00:35:20.090">is the on the right-hand side I have to do dot com experience as well so I can be</p>
+      <p begin="00:35:20.090" end="00:35:24.870">described cohort without clip...having and starts...different things into this</p>
+      <p begin="00:35:24.870" end="00:35:29.940">...again if I just use that experience here of adding my speaker names and,</p>
+      <p begin="00:35:29.940" end="00:35:35.060">going through and having some...that I need to make sure I get my make sure I get</p>
+      <p begin="00:35:36.080" end="00:35:40.160">...is that all we had a see the directly...you know,</p>
+      <p begin="00:35:40.160" end="00:35:44.160">we have both the skylight user interface work and have that communications</p>
+      <p begin="00:35:44.160" end="00:35:48.790">going forward as well as the right-hand side being inside my experience more specification</p>
+      <p begin="00:35:48.790" end="00:35:49.290">side-by-side?</p>
+      <p begin="00:35:50.850" end="00:35:54.650">Now it looks like maybe out wi-fi is not going to</p>
+      <p begin="00:35:54.650" end="00:36:03.290">place is always the high-risk high-tension part of are we getting through on wi-fi?</p>
+      <p begin="00:36:03.290" end="00:36:06.620">Connecting...actually a couple things I want to interject here what</p>
+      <p begin="00:36:06.620" end="00:36:11.550">we're actually using just to make sure everyone gets it such a mentioned briefly this morning</p>
+      <p begin="00:36:11.550" end="00:36:16.830">scope has just announced in preview their scope web</p>
+      <p begin="00:36:16.830" end="00:36:21.610">sdk and that enables a couple things the first is that you get a bunch of restful</p>
+      <p begin="00:36:21.610" end="00:36:26.130">api and javascript...on top of it do basic things like presence</p>
+      <p begin="00:36:26.130" end="00:36:31.100">notifications chat and you can just use that directly within the applications that you</p>
+      <p begin="00:36:31.100" end="00:36:36.030">build the second part is actually shown here is a plug-in which is allowing you</p>
+      <p begin="00:36:36.030" end="00:36:41.050">to embed the sky experience inside of that solution that you build we're</p>
+      <p begin="00:36:41.050" end="00:36:46.000">very excited about this as a model for how people think about delivering rich experiences</p>
+      <p begin="00:36:46.000" end="00:36:49.890">...sort of the inverse of the add-in but we really want to make sure that where</p>
+      <p begin="00:36:49.890" end="00:36:54.570">office has this high-value experience like we have escape that you can use</p>
+      <p begin="00:36:54.570" end="00:36:59.550">that to build the target experience that you want to make sure users can be and,</p>
+      <p begin="00:36:59.550" end="00:37:04.160">productive without having to leave the context of your solution and what you don't realize</p>
+      <p begin="00:37:04.160" end="00:37:08.750">series is that skylight is actually showing richard...a very...without video just doesn't</p>
+      <p begin="00:37:08.750" end="00:37:15.780">picked up so, that just shows you where...guy with the imbed aspect we know that in it doesn't always have to be</p>
+      <p begin="00:37:15.780" end="00:37:20.050">about being inside our user experience qubit you earning that user experiencing embedding</p>
+      <p begin="00:37:20.050" end="00:37:25.430">...stuff in there and that is one example of where we're going with that preview technology...</p>
+      <p begin="00:37:25.430" end="00:37:30.840">think now it's time to get on to your most exciting topic...the office...yeah,...so,</p>
+      <p begin="00:37:30.840" end="00:37:33.070">this really is as we think about the</p>
+      <p begin="00:37:33.070" end="00:37:38.190">...building more momentum lighting up new workloads and having a constant</p>
+      <p begin="00:37:38.190" end="00:37:41.960">...of new capabilities that we expose to developers</p>
+      <p begin="00:37:41.960" end="00:37:45.160">...we think about this surface area driving new</p>
+      <p begin="00:37:45.160" end="00:37:48.730">...and it's great for us because it's very easy for us understand</p>
+      <p begin="00:37:48.730" end="00:37:52.250">...being successful and that's when more and more</p>
+      <p begin="00:37:52.250" end="00:37:54.760">...being called because that means developers</p>
+      <p begin="00:37:54.760" end="00:37:58.640">are building solutions users are enjoying the solutions and getting value out</p>
+      <p begin="00:37:58.640" end="00:38:03.610">of them and we're all having impact we want to have so we are really starting to see that fly</p>
+      <p begin="00:38:03.610" end="00:38:07.840">...go fourteen point four million daily api calls from...when</p>
+      <p begin="00:38:07.840" end="00:38:12.330">...but we're actually seeing is the total up in the billions which means we are really</p>
+      <p begin="00:38:12.330" end="00:38:17.160">starting to drive this getting a lot done using api running against</p>
+      <p begin="00:38:17.160" end="00:38:22.690">office so I want to flip over here...flip this slide?</p>
+      <p begin="00:38:22.690" end="00:38:26.660">Jumping the gun...excited so what we wanted...actually share was that</p>
+      <p begin="00:38:26.660" end="00:38:31.600">...a releasing...new api in...we've talked a lot about mail calendar</p>
+      <p begin="00:38:31.600" end="00:38:36.580">...files we talk about the ipo in the past...you know, there's lots of other products and services</p>
+      <p begin="00:38:36.580" end="00:38:41.410">available office...expired...a demos some other them products</p>
+      <p begin="00:38:41.410" end="00:38:45.540">...which we can now integrate directly into the video puerto api</p>
+      <p begin="00:38:45.540" end="00:38:51.070">the groups api...demo before and preview and also the one that api which we did show</p>
+      <p begin="00:38:51.070" end="00:38:55.060">the do dot com demo earlier on and in the future will actually have</p>
+      <p begin="00:38:55.060" end="00:38:59.510">the tossed api as well which we'll talk a little bit more about ignite timeframes and</p>
+      <p begin="00:38:59.510" end="00:39:04.560">we have added some additional scenarios based on feedback we got from user voice and from the</p>
+      <p begin="00:39:04.560" end="00:39:08.950">...what very closely with to those existing api...released in</p>
+      <p begin="00:39:08.950" end="00:39:13.210">...october timeframes...a juror so we're going to show now is</p>
+      <p begin="00:39:13.210" end="00:39:18.000">...unify...the we demonstrating the keynote and...going to go through a few more scenarios</p>
+      <p begin="00:39:18.000" end="00:39:23.620">...highlight with the api explore which you can actually use...your...</p>
+      <p begin="00:39:23.620" end="00:39:27.950">Yeah, and, actually there's another presentation being given tomorrow I think</p>
+      <p begin="00:39:27.950" end="00:39:30.710">it ten thirty where they're more into the</p>
+      <p begin="00:39:30.710" end="00:39:35.000">unify endpoint and they'll actually using this is a great thing about development</p>
+      <p begin="00:39:35.000" end="00:39:39.250">...they'll be using the production environment version of api explore so you get</p>
+      <p begin="00:39:39.250" end="00:39:41.510">...we did there where they have nice collapse so</p>
+      <p begin="00:39:41.510" end="00:39:46.710">expand on the days on responses and that's pretty cool but, let's take a look we've got here I</p>
+      <p begin="00:39:46.710" end="00:39:51.110">...talk a little bit more about the structure of the url that I'm actually making</p>
+      <p begin="00:39:51.110" end="00:39:56.490">a request with it's pretty straightforward...dot microsoft dot com that is the name of</p>
+      <p begin="00:39:56.490" end="00:40:01.560">unify api endpoints...number in there and as you can see were in previews so it</p>
+      <p begin="00:40:01.560" end="00:40:06.460">just says beta but that's where we'll use vone vtwo etc and from there I just go into my</p>
+      <p begin="00:40:06.460" end="00:40:10.950">tenant or my individual token such as slash me and I can start to</p>
+      <p begin="00:40:10.950" end="00:40:14.660">find entities and drive to edges off of those entities and really navigate the</p>
+      <p begin="00:40:14.660" end="00:40:19.030">graph so the first thing is actually that I can just run a query call users</p>
+      <p begin="00:40:19.030" end="00:40:23.440">in this is actually doing what you would expect which is give-me back all the users in</p>
+      <p begin="00:40:23.440" end="00:40:27.870">my active directory of course it's helping us to page through them since we don't get overwhelmed</p>
+      <p begin="00:40:27.870" end="00:40:31.610">and responses reasonable but the thing I did this morning</p>
+      <p begin="00:40:31.610" end="00:40:34.710">...is exactly corresponds to one</p>
+      <p begin="00:40:34.710" end="00:40:39.860">...common scenarios is...me filter this down help me write a query so we support a notion</p>
+      <p begin="00:40:39.860" end="00:40:45.320">of attributes that you can query on in this case filter equals department and then there's</p>
+      <p begin="00:40:45.320" end="00:40:50.120">filter on where the department is equal to operations so we'll run that get back</p>
+      <p begin="00:40:50.120" end="00:40:54.030">...set of results and then let's just scan down and start to feel pretty</p>
+      <p begin="00:40:54.030" end="00:40:58.970">confident that in fact we're getting back the results that we would want to see their and</p>
+      <p begin="00:40:58.970" end="00:41:01.960">...highlight the graphing this</p>
+      <p begin="00:41:01.960" end="00:41:06.240">...from that collection to an individual user every object in the</p>
+      <p begin="00:41:06.240" end="00:41:10.600">graph actually gets a unique and persistent id so this is a huge advantage</p>
+      <p begin="00:41:10.600" end="00:41:15.600">in terms of thinking about how can I make sure I can get a placeholder so can always get back to that object</p>
+      <p begin="00:41:15.600" end="00:41:19.290">...time even if it moves around so I can take advantage of that</p>
+      <p begin="00:41:19.290" end="00:41:24.130">...this individual user and then from there as we</p>
+      <p begin="00:41:24.130" end="00:41:28.760">talk about this morning super easy to just drill instantaneously in the files</p>
+      <p begin="00:41:29.850" end="00:41:33.820">...ok now again?</p>
+      <p begin="00:41:33.820" end="00:41:37.840">We've got this persistent...idea which I can navigate to get to the file and</p>
+      <p begin="00:41:37.840" end="00:41:43.130">let's just think a look at some of the properties that you find off of there one of the most interesting things is the</p>
+      <p begin="00:41:43.130" end="00:41:48.430">last modified by so again driving home this notion of graphs and</p>
+      <p begin="00:41:48.430" end="00:41:52.490">...navigation going from node edge I can go from the file</p>
+      <p begin="00:41:52.490" end="00:41:56.600">define the last modified by get the...from that username get all</p>
+      <p begin="00:41:56.600" end="00:42:00.570">of their files et cetera et cetera and it's really easy to drive-through</p>
+      <p begin="00:42:00.570" end="00:42:04.420">this experience seamlessly moving back and forth...across.</p>
+      <p begin="00:42:04.420" end="00:42:09.450">Different workloads on the back-end without having to worry about howmicrosoft's running</p>
+      <p begin="00:42:09.450" end="00:42:14.740">...cloud huts...it's workloads another icy with actually work with...smart sheet</p>
+      <p begin="00:42:14.740" end="00:42:19.610">so we started with them with the...the notion of integrating with their web app so that they could have that</p>
+      <p begin="00:42:19.610" end="00:42:22.650">single-source experience directly from the apple join the</p>
+      <p begin="00:42:22.650" end="00:42:27.380">...page and but one of a product they've got...map the work</p>
+      <p begin="00:42:27.380" end="00:42:30.640">...all the kind of agencies...look...within</p>
+      <p begin="00:42:30.640" end="00:42:35.940">narrowness service which is to do with storing all the rows within their own sheets and</p>
+      <p begin="00:42:35.940" end="00:42:40.670">draws it on this beautiful map connecting although sheets that are related as well as</p>
+      <p begin="00:42:40.670" end="00:42:44.440">...people involved in them but I've taken this of step further you</p>
+      <p begin="00:42:44.440" end="00:42:48.020">can actually jump into these individual case studies which are sheets within the smart</p>
+      <p begin="00:42:48.020" end="00:42:53.700">sheets ecosystem world when I click on the sheets a and say get the data from office three-six</p>
+      <p begin="00:42:53.700" end="00:42:57.700">...well that's...she can do is going to map that data.</p>
+      <p begin="00:42:57.700" end="00:43:02.570">Directly from inside their world against the relations of what's inside the office</p>
+      <p begin="00:43:02.570" end="00:43:06.850">three-six five world slushy demonstrate here the we can grab the males</p>
+      <p begin="00:43:06.850" end="00:43:09.180">...related to that particular sheets</p>
+      <p begin="00:43:10.290" end="00:43:14.440">the foils and the contact so if I go in...maybe the</p>
+      <p begin="00:43:14.440" end="00:43:18.350">...summary sheets from the inside this work map here you'll see that</p>
+      <p begin="00:43:18.350" end="00:43:20.250">jaime o'donnell down the bottom here has been</p>
+      <p begin="00:43:20.250" end="00:43:25.150">selected in their work map now the nice part here is...used that unify api</p>
+      <p begin="00:43:25.150" end="00:43:29.550">and point to actually...back through to filter through office</p>
+      <p begin="00:43:29.550" end="00:43:33.070">...five from this uses inbox what...of come from</p>
+      <p begin="00:43:33.070" end="00:43:37.730">jayne o'donnell related to the are...sheet that we have so you can see here all the</p>
+      <p begin="00:43:37.730" end="00:43:42.450">e-mails...to that particular project large selected and if I school over to another</p>
+      <p begin="00:43:42.450" end="00:43:47.320">plane here you actually see it will do the same thing regarding grab all of the related files one</p>
+      <p begin="00:43:47.320" end="00:43:51.600">drive...business...that particular she has been captured inside the sm</p>
+      <p begin="00:43:51.600" end="00:43:55.330">...ecosystem again in a really nice user interface</p>
+      <p begin="00:43:55.330" end="00:43:57.900">...of the covers this is just using that what in point</p>
+      <p begin="00:43:57.900" end="00:44:01.440">...that information through and I can go through further here and scroll</p>
+      <p begin="00:44:01.440" end="00:44:05.140">...the right-hand side here and see that is pulling for those calendar events</p>
+      <p begin="00:44:05.140" end="00:44:09.160">...to...gives me this view...not only of what small</p>
+      <p begin="00:44:09.160" end="00:44:14.590">...data...within their service but also...all that intelligence...we still within office</p>
+      <p begin="00:44:14.590" end="00:44:18.500">...five allowing these business used to be a lot more productive data</p>
+      <p begin="00:44:18.500" end="00:44:23.330">...enjoying that into one single view slave authenticated in one-seat</p>
+      <p begin="00:44:23.330" end="00:44:27.730">...same time smart should on the covers can call through to...unify api and pull</p>
+      <p begin="00:44:27.730" end="00:44:31.470">...information up and use it within their user interface so we're not forcing the use</p>
+      <p begin="00:44:31.470" end="00:44:35.850">of jump between concepts of being inside smart she and then being inside</p>
+      <p begin="00:44:35.850" end="00:44:39.600">of that experience so that's a really cool demo the we going deeper...some of the</p>
+      <p begin="00:44:39.600" end="00:44:45.280">...sessions during the week which will...the session one thing I'd like to call out about that none of the</p>
+      <p begin="00:44:45.280" end="00:44:50.270">smarts you guys are excited about this page you can see this user experience that pulls it all together and the</p>
+      <p begin="00:44:50.270" end="00:44:55.660">user is living in smart sheet and navigating across office three sixty five but,</p>
+      <p begin="00:44:55.660" end="00:44:58.520">because...hits is very high</p>
+      <p begin="00:44:58.520" end="00:45:02.910">bar around compliance and data security is a big deal for smarty to know they don't</p>
+      <p begin="00:45:02.910" end="00:45:07.970">have the persist all that data because at that point they be have to worry about a bunch of issues that office three</p>
+      <p begin="00:45:07.970" end="00:45:12.190">...takes care of so the organizational hierarchy the documents the</p>
+      <p begin="00:45:12.190" end="00:45:17.560">males they all live in office three sixty five another example here is something we...</p>
+      <p begin="00:45:17.560" end="00:45:22.460">in october which was this notion of a property manager property inspector we ship this app</p>
+      <p begin="00:45:22.460" end="00:45:26.160">...a web application we opensource the code on get how but we also actually</p>
+      <p begin="00:45:26.160" end="00:45:30.880">...and ios native application using the...to communicates those office</p>
+      <p begin="00:45:30.880" end="00:45:33.290">...five api in points?</p>
+      <p begin="00:45:33.290" end="00:45:36.690">Later in the year we actually ships accord over mobile application</p>
+      <p begin="00:45:36.690" end="00:45:41.370">...application and I android naive applications so no matter what you one of the right</p>
+      <p begin="00:45:41.370" end="00:45:46.610">a mobile app you can see how we build these things would open-source the whole thing now this connects</p>
+      <p begin="00:45:46.610" end="00:45:51.090">...different endpoints waivers mail calendar contacts and also</p>
+      <p begin="00:45:51.090" end="00:45:54.400">foils one thing that we're announcing today.</p>
+      <p begin="00:45:54.400" end="00:46:00.990">If I go down to need...a look at one of these properties is that what I jump into an individual property</p>
+      <p begin="00:46:00.990" end="00:46:06.250">we've also created this notion now that every single property has a</p>
+      <p begin="00:46:06.250" end="00:46:08.560">...unify group associated with it and</p>
+      <p begin="00:46:08.560" end="00:46:13.260">unify group gets a bunch of agencies around the ingredients are here</p>
+      <p begin="00:46:13.260" end="00:46:18.290">...about it at ignite where it's all about files...all about a shared</p>
+      <p begin="00:46:18.290" end="00:46:23.170">camden for that group is about the members of the group and also the files and also</p>
+      <p begin="00:46:23.170" end="00:46:28.160">things like videos so you can see here on the right-hand side that I have a bunch of members of this property</p>
+      <p begin="00:46:28.160" end="00:46:32.500">that's been driven by this notion of unify group if I click on seymour here</p>
+      <p begin="00:46:32.500" end="00:46:35.700">and launch that when you go over into...experience</p>
+      <p begin="00:46:35.700" end="00:46:40.440">inside outlook we take a look at these groups you'll get a see here these are the members of that</p>
+      <p begin="00:46:40.440" end="00:46:45.430">group and if I go over to firewalls or conversations or calendar in the example</p>
+      <p begin="00:46:45.430" end="00:46:50.490">where in october with a story in the uses calendar was there when we do</p>
+      <p begin="00:46:50.490" end="00:46:55.060">repair as or inspections...storing inspections inside the groups</p>
+      <p begin="00:46:55.060" end="00:46:59.260">caroline's everyone has visibility and you have the ability as an individual</p>
+      <p begin="00:46:59.260" end="00:47:02.700">...subscribe to this calendar which means any events</p>
+      <p begin="00:47:02.700" end="00:47:07.190">...calendar will appear inside your own individual calendar as well</p>
+      <p begin="00:47:07.190" end="00:47:12.470">...gone further than that because obviously we have all the one notes as well so when we one of</p>
+      <p begin="00:47:12.470" end="00:47:17.660">maybe take photos of inspections...want to annotate over maybe the broken pipe or</p>
+      <p begin="00:47:17.660" end="00:47:22.600">...that's been going on you can do that within that one that experience on your surface but also we</p>
+      <p begin="00:47:22.600" end="00:47:27.650">have the video footage so this property for instance has a leaky</p>
+      <p begin="00:47:27.650" end="00:47:32.130">...so on the video portal...you can get noun the iphone and the android someone's</p>
+      <p begin="00:47:32.130" end="00:47:36.290">...the repair guys actually gordon recorded that property had a leaky top</p>
+      <p begin="00:47:36.290" end="00:47:40.940">...into the video portal...adj...media streaming services and that's</p>
+      <p begin="00:47:40.940" end="00:47:44.050">...this notion of unify group within the office</p>
+      <p begin="00:47:44.050" end="00:47:49.230">...five experience but the beauty is that you can be used within the out-of-the-box office</p>
+      <p begin="00:47:49.230" end="00:47:53.000">...five group experience where we have this notion of conversations around</p>
+      <p begin="00:47:53.000" end="00:47:57.990">the properties and follows around the properties and loads around the properties or we</p>
+      <p begin="00:47:57.990" end="00:48:02.890">can have the experience directly inside the...property manager app which is being</p>
+      <p begin="00:48:02.890" end="00:48:07.720">hosted adjthis one for instance...written with...nbc leveraging all those</p>
+      <p begin="00:48:07.720" end="00:48:11.700">library libraries and unify api to bring this up into your own</p>
+      <p begin="00:48:11.700" end="00:48:16.970">...user interface so again it's all about pulling together these all the experiences you</p>
+      <p begin="00:48:16.970" end="00:48:23.910">have an office...five into one and solution and if you guarded depth office dot com.</p>
+      <p begin="00:48:23.910" end="00:48:26.710">And, in the resources section of the top.</p>
+      <p begin="00:48:26.710" end="00:48:31.280">And, you go to code samples here you actually get...go and directly...from get hop so</p>
+      <p begin="00:48:31.280" end="00:48:37.670">if I just wait for this to load up and if I just search for the property inspect.</p>
+      <p begin="00:48:37.670" end="00:48:42.240">For can spell and if I go view here you'll see old instructions on how you can get this</p>
+      <p begin="00:48:42.240" end="00:48:46.840">running your own develop...and if I go seeing get...actually...clone this</p>
+      <p begin="00:48:46.840" end="00:48:51.680">...down here and you'll notice...zoom in here you see that there's that native android app</p>
+      <p begin="00:48:51.680" end="00:48:57.360">there is a called over...napa native ios apps there as well as well as the astra</p>
+      <p begin="00:48:57.360" end="00:49:02.540">...so this is...demo that will do a lot more talking about in top...secession later</p>
+      <p begin="00:49:02.540" end="00:49:06.930">on in the week where...look deeper into how we build those things with</p>
+      <p begin="00:49:06.930" end="00:49:12.720">...mobile apps and that...web application launch from the app launcher.</p>
+      <p begin="00:49:12.720" end="00:49:15.740">There was one lost every one of the show so I'm going to</p>
+      <p begin="00:49:15.740" end="00:49:20.840">...unlock the iphone...you've got the from print...you're going to let my</p>
+      <p begin="00:49:22.180" end="00:49:22.900">Diverges switch</p>
+      <p begin="00:49:22.900" end="00:49:28.950">...up...so this is another quick look at another sample that</p>
+      <p begin="00:49:28.950" end="00:49:33.600">we've written and you can kinda see how our methodology goes at this point we've written</p>
+      <p begin="00:49:33.600" end="00:49:38.010">the code we produced an application and then we're going to go put it up on get hub actually I think they re</p>
+      <p begin="00:49:38.010" end="00:49:42.940">...live this week it's great so, you can download this and see what we did and build</p>
+      <p begin="00:49:42.940" end="00:49:47.650">the exactly the same kind of thing even take these ideas and enhance them the notion here</p>
+      <p begin="00:49:47.650" end="00:49:52.550">is that boy when I'm on the road there's a few key conversations if you keep people I want to keep track</p>
+      <p begin="00:49:52.550" end="00:49:58.870">of...if I open up my mail inbox I am ...to</p>
+      <p begin="00:49:58.870" end="00:50:03.650">a stress and panic about twenty thousand things going on I didn't want to know about so this app is called email</p>
+      <p begin="00:50:03.650" end="00:50:08.410">...and what it does is just give me a filtered view of what's coming on so I can just</p>
+      <p begin="00:50:08.410" end="00:50:13.180">do the writing by the family and only pay attention to a specific set of conversations what you see</p>
+      <p begin="00:50:13.180" end="00:50:19.880">actually...some nice ios ui that we've built ... swiping but,</p>
+      <p begin="00:50:19.880" end="00:50:24.860">the key thing is that this is going against the office three sixty-five api...to get the contents</p>
+      <p begin="00:50:24.860" end="00:50:30.700">my inbox...a bunch of easy-to-use settings like hey let's take a look at</p>
+      <p begin="00:50:30.700" end="00:50:35.620">...that are coming from these particular senders or to drill in on particular conversations that</p>
+      <p begin="00:50:35.620" end="00:50:40.250">I want to look at it makes it easy for me decide whether or not I want to toggle the read on read status</p>
+      <p begin="00:50:40.250" end="00:50:45.070">inside outlook and...just show me the on read messages are justurgent</p>
+      <p begin="00:50:45.070" end="00:50:49.800">messages and you get this kind of rich...experience and it's fairly snappy running against</p>
+      <p begin="00:50:49.800" end="00:50:53.670">...production api so we hope you take a look and go in for more stuff...</p>
+      <p begin="00:50:53.670" end="00:50:58.660">the nice thing here is when you launch that email actually have the ability to do it follows so I can say I want to</p>
+      <p begin="00:50:58.660" end="00:51:03.340">...this particular conversation or maybe because...I'm in a...</p>
+      <p begin="00:51:03.340" end="00:51:08.030">anything coming from jeremy will always show up in my...you...you can see the case the</p>
+      <p begin="00:51:08.030" end="00:51:12.950">...can kind of customize that entitle as you will now let's actually open-source srs native</p>
+      <p begin="00:51:12.950" end="00:51:18.650">application...you get a grab that down there and play with that you will?</p>
+      <p begin="00:51:18.650" end="00:51:22.970">So, lastly as we wrap up for the session here we wanted to talk about was how you</p>
+      <p begin="00:51:22.970" end="00:51:25.950">can get started now you would have seen the office receives five</p>
+      <p begin="00:51:25.950" end="00:51:30.650">...you...into the building today one thing we're actually announcing today is...developer</p>
+      <p begin="00:51:30.650" end="00:51:35.720">program launchwhat this will give you if you go and sign up for this program is you'll</p>
+      <p begin="00:51:35.720" end="00:51:40.340">become a...will be in this kind of network of how will communicate moving forward into</p>
+      <p begin="00:51:40.340" end="00:51:45.110">all the notifications on any new announcements we do around new endpoints all-new</p>
+      <p begin="00:51:45.110" end="00:51:49.880">...and new app commands were released into that feature we had a lot of great feedback from you</p>
+      <p begin="00:51:49.880" end="00:51:55.230">guys the...was quite hard to keep up...of the provided channel you could subscribe to keep up with</p>
+      <p begin="00:51:55.230" end="00:51:58.560">that information will also give you a one-year three office</p>
+      <p begin="00:51:58.560" end="00:52:01.310">...develop attendant which previously you...to</p>
+      <p begin="00:52:01.310" end="00:52:05.990">have paid for as part of that sign up experience as well as being to go and do a lot of free</p>
+      <p begin="00:52:05.990" end="00:52:10.540">...available in-depth office dot com slash training an additional handle labs</p>
+      <p begin="00:52:10.540" end="00:52:15.630">...provide purely for that dedicated program will also provide tools and...got to</p>
+      <p begin="00:52:15.630" end="00:52:20.450">announcements I have some tools will have available to...as part that sign up experience and</p>
+      <p begin="00:52:20.450" end="00:52:25.130">...doing monthly web laws where you get to hear from...out team...here and cj of</p>
+      <p begin="00:52:25.130" end="00:52:30.220">self and...and engineers as well talking about new features where your as part of that</p>
+      <p begin="00:52:30.220" end="00:52:35.150">program will continue that dialogue with the ongoing so you can go and sort of that program now</p>
+      <p begin="00:52:35.150" end="00:52:40.950">...depth office dot com slash...is more information if you want to hear about it on abu</p>
+      <p begin="00:52:40.950" end="00:52:46.410">...the ground full level so the first three tools were actually going to give you as part of that program?</p>
+      <p begin="00:52:46.410" end="00:52:52.060">The first one is the to...ui which...javascript framework which is available</p>
+      <p begin="00:52:52.060" end="00:52:56.900">...give you a one-year three pro license for that as part of the signing up for the...things</p>
+      <p begin="00:52:56.900" end="00:53:01.830">a pretty good through...in addition to that another thing that we hear from isv is the</p>
+      <p begin="00:53:01.830" end="00:53:06.650">we...atta have the same clinic communication with our uses...if you sign up</p>
+      <p begin="00:53:06.650" end="00:53:11.870">...com for instance as a sas author a few days if you're not actually using</p>
+      <p begin="00:53:11.870" end="00:53:15.340">this service the service will actually email your remind you that there's some</p>
+      <p begin="00:53:15.340" end="00:53:20.130">recall features within the sas product and you're probably had that familiar experience of a</p>
+      <p begin="00:53:20.130" end="00:53:24.260">...you signed up for the positive ready forgot...subscribe to them and,</p>
+      <p begin="00:53:24.260" end="00:53:28.730">this thing kind of reminds you and...various different points in time that reaches out</p>
+      <p begin="00:53:28.730" end="00:53:33.730">...dot com provides that services world...going to...a basic one-year subscription</p>
+      <p begin="00:53:33.730" end="00:53:37.920">for-you as part of...experiences audio festive program as well so</p>
+      <p begin="00:53:37.920" end="00:53:41.930">overtime will give additional licenses with different things as we go through we</p>
+      <p begin="00:53:41.930" end="00:53:45.010">...encourage you to kind of jump on board to this their program and,</p>
+      <p begin="00:53:45.010" end="00:53:51.030">take advantage of these three things we're going to give you as part of that experience.</p>
+      <p begin="00:53:51.030" end="00:53:54.260">So, with that one of the clear up as part of this was we have demo</p>
+      <p begin="00:53:54.260" end="00:53:58.900">...today there are some resources sessions the wrestle we're...the print</p>
+      <p begin="00:53:58.900" end="00:54:04.060">some is experiences what role did you want to kind of explain what things we've released today</p>
+      <p begin="00:54:04.060" end="00:54:05.530">...prayer thank you for that</p>
+      <p begin="00:54:05.530" end="00:54:10.210">...this is back to this notion of we wanted to be really clear and really concrete so that, you know,</p>
+      <p begin="00:54:10.210" end="00:54:13.870">what to go do today and which things to play around with so that</p>
+      <p begin="00:54:13.870" end="00:54:19.580">you ready for what's happening tomorrow tomorrow and over coming months so,</p>
+      <p begin="00:54:19.580" end="00:54:21.580">one of the things that I didn't talk about that actually</p>
+      <p begin="00:54:21.580" end="00:54:25.720">...get into tomorrow is this notion of course support so</p>
+      <p begin="00:54:25.720" end="00:54:30.190">it's very common pattern for people writing single page apps and be able to need to get to these api</p>
+      <p begin="00:54:30.190" end="00:54:33.450">...a different domain and we are lighting that up across those three</p>
+      <p begin="00:54:33.450" end="00:54:37.660">sixty five api so now it's really easy to build those bars...</p>
+      <p begin="00:54:37.660" end="00:54:42.380">word extending the notion of app only permissions within our off of flo the</p>
+      <p begin="00:54:42.380" end="00:54:47.700">context highlighting the drive more users into your apps and you can already do today</p>
+      <p begin="00:54:47.700" end="00:54:52.640">add inness inside of word and excel and I think people have seen the demo for turns</p>
+      <p begin="00:54:52.640" end="00:54:57.490">...as well as outlook so really reaching out to that notion of cross-platform</p>
+      <p begin="00:54:57.490" end="00:55:02.840">...the tenet list...jeremy the demoed and we've updated all the</p>
+      <p begin="00:55:02.840" end="00:55:07.370">...to be current with the latest reads of the api is but there's a bunch of stuff coming,</p>
+      <p begin="00:55:07.370" end="00:55:12.180">coming and we really think about this is constant rolling thunder we're not going to hold back we're going to</p>
+      <p begin="00:55:12.180" end="00:55:17.120">get out and engages often as possible...here's what's new here's where we're goingso,</p>
+      <p begin="00:55:17.120" end="00:55:20.670">the unify api is a great tool for developers</p>
+      <p begin="00:55:20.670" end="00:55:25.140">we're very excited to bring that onboard still and...please take a look one of the things</p>
+      <p begin="00:55:25.140" end="00:55:30.040">is really important coming forward is this notion of web wghooks because it's great that you can write apps that</p>
+      <p begin="00:55:30.040" end="00:55:33.670">...services but of course you want to be notified when something interesting is</p>
+      <p begin="00:55:33.670" end="00:55:38.350">happening the first-place will wire that up is inside of the exchange api</p>
+      <p begin="00:55:38.350" end="00:55:43.150">is will be making that available consistently and broadly going up from there</p>
+      <p begin="00:55:43.150" end="00:55:47.730">I talked to this morning in the keynote about the desired to align consumer</p>
+      <p begin="00:55:47.730" end="00:55:52.580">and commercial api is if you saw the recent release of one drive api</p>
+      <p begin="00:55:52.580" end="00:55:56.640">...on the consumer side you'll notice that they're really consistent with how the one</p>
+      <p begin="00:55:56.640" end="00:55:58.430">drive stuff works in one drive for</p>
+      <p begin="00:55:58.430" end="00:56:03.380">business and the goal is that will bring all of those together and as we get the offload</p>
+      <p begin="00:56:03.380" end="00:56:07.930">...into one place it becomes very easy to write apps that works seamlessly across the</p>
+      <p begin="00:56:07.930" end="00:56:14.160">...just...close out a few the others we have file handlers and sharepoint that we've demo</p>
+      <p begin="00:56:14.160" end="00:56:16.600">...couple times and we'll be talking about more this</p>
+      <p begin="00:56:16.600" end="00:56:20.560">week making it easy to...a new kind of add-in that lets it, you know,</p>
+      <p begin="00:56:20.560" end="00:56:25.340">if you have a new file type you can make that edible and actionable for within sharepoint and within outlook</p>
+      <p begin="00:56:25.340" end="00:56:29.570">...big news on consumer commercial convergence is actually making sure you can write</p>
+      <p begin="00:56:29.570" end="00:56:34.860">...that work for outlook dot com so they will show up inside of the consumer</p>
+      <p begin="00:56:34.860" end="00:56:40.410">spaces well we talked about commands in the ribbon more visual studio twenty</p>
+      <p begin="00:56:40.410" end="00:56:45.790">fifteen tooling and again, on enhancements to the java sdk and js</p>
+      <p begin="00:56:45.790" end="00:56:51.210">plugins yes so we...to leave you today is part of this session was really we can go</p>
+      <p begin="00:56:51.210" end="00:56:55.280">away from and...from this session which is essentially the</p>
+      <p begin="00:56:55.280" end="00:56:58.530">...sign up to develop a programme...a lot of business there you get for</p>
+      <p begin="00:56:58.530" end="00:57:01.330">free I would encourage as well as</p>
+      <p begin="00:57:01.330" end="00:57:06.290">...sessions that are available in these major rooms is we're doing a significant amount of expressed</p>
+      <p begin="00:57:06.290" end="00:57:11.150">...color ten-minute nugget talks downstairs all now office...five</p>
+      <p begin="00:57:11.150" end="00:57:16.100">...and leaders in the space of in building...three-six by for...while now and that gives you a bit of</p>
+      <p begin="00:57:16.100" end="00:57:21.240">...an idea of what's going on those programs we go general...booth you gotta go and see the schedules</p>
+      <p begin="00:57:21.240" end="00:57:26.520">there as well which are actually available...slides if you would like one of these qualities</p>
+      <p begin="00:57:26.520" end="00:57:31.730">...you send you doi myself...robles stage here and you should really what...of these</p>
+      <p begin="00:57:31.730" end="00:57:36.250">...you will need to do is going grab that...from downstairs in the both and</p>
+      <p begin="00:57:36.250" end="00:57:39.810">...the back of the room is like wheeling and having those out and if you go</p>
+      <p begin="00:57:39.810" end="00:57:44.260">...stations on the boots and you have follow the hands-on labs and you check out one of those</p>
+      <p begin="00:57:44.260" end="00:57:49.170">expressed sorts will put a stamp in your leaflets and you gotta get a</p>
+      <p begin="00:57:49.170" end="00:57:54.260">who'd is suitable or stickers now in addition to that?</p>
+      <p begin="00:57:54.260" end="00:57:59.280">We do have some really cool sessions this week we were just kind of...on some of the ones that myself</p>
+      <p begin="00:57:59.280" end="00:58:04.840">...most excited about as...movie demo today so that...feed...going to the</p>
+      <p begin="00:58:04.840" end="00:58:09.410">...the tomorrow eleven thirty if you have a chance to go by that would really be the place to get a</p>
+      <p begin="00:58:09.410" end="00:58:14.110">detailed understanding of the whole range of things will be able to do with unify api</p>
+      <p begin="00:58:14.110" end="00:58:15.480">endpoint, yeah, we have topic</p>
+      <p begin="00:58:15.480" end="00:58:20.300">...talking about that property...scenario where who go into the web applications their</p>
+      <p begin="00:58:20.300" end="00:58:25.520">additions that during brand the same sessions me talking about the fall handlers and then and</p>
+      <p begin="00:58:25.520" end="00:58:30.000">...be talking about those...and outlooks who go a lot deeper into those outlook at</p>
+      <p begin="00:58:30.000" end="00:58:33.130">inness a and both on the alamo comment also it</p>
+      <p begin="00:58:33.130" end="00:58:37.990">...exchange ...maps what should be doing a great tool called out how we've</p>
+      <p begin="00:58:37.990" end="00:58:43.060">all the store and how you can get involved in building apps with store both the office adding sharepoint</p>
+      <p begin="00:58:43.060" end="00:58:47.430">...those web applications and, also ...is doing</p>
+      <p begin="00:58:47.430" end="00:58:52.790">...friday talking about angular applications and, how you can build those</p>
+      <p begin="00:58:52.790" end="00:58:58.190">...leverage those inside those office at internship what...and those web applications I can see a lot</p>
+      <p begin="00:58:58.190" end="00:59:03.030">of our speakers in a room pointing at themselves going moi sectional that there are a</p>
+      <p begin="00:59:03.030" end="00:59:07.570">...of other sessions available here I can see...but he's going to have a...parity faceless</p>
+      <p begin="00:59:07.570" end="00:59:12.730">...if I don't mention role powered sessions on the api as well because he doesn't</p>
+      <p begin="00:59:12.730" end="00:59:16.530">...job of...look like a complete fool and fiddler because he makes it</p>
+      <p begin="00:59:16.530" end="00:59:20.820">way too easy so I will just give him...of the head and only express</p>
+      <p begin="00:59:20.820" end="00:59:25.440">talks are available and there's a leaflets will those timing's there...great ones there</p>
+      <p begin="00:59:25.440" end="00:59:30.550">...people like alex more brian harper...a dabbling so if you've ever done...work</p>
+      <p begin="00:59:30.550" end="00:59:35.250">...a great two-column on types...their one-year-olds remember</p>
+      <p begin="00:59:35.250" end="00:59:39.780">...office dot com...one place to go...sort of the program is of eighty hours</p>
+      <p begin="00:59:39.780" end="00:59:44.450">...training if you're not sick of my voice myself a...a...the back of the room</p>
+      <p begin="00:59:44.450" end="00:59:48.970">do a weekly pop cost...available android iphone and windows phone we can go</p>
+      <p begin="00:59:48.970" end="00:59:53.120">...to updates essentially I run around campus and stick a microphone</p>
+      <p begin="00:59:54.160" end="00:59:58.320">...great early questions...another good way of keeping up with that</p>
+      <p begin="00:59:58.320" end="01:00:02.500">...site thanks-very-much and thanks robo your in the key this morning or appreciate onstage</p>
+      <p begin="01:00:02.500" end="01:00:07.560">...is great confusion opportunity and...will be downstairs for the rest of the wakes if you</p>
+      <p begin="01:00:07.560" end="01:00:12.660">have questions please feel free to gravis and getting...dot com thanks</p>
+      <p begin="01:00:12.660" end="01:00:14.550">...thank you?</p>
+
+    </div>
+  </body>
+</tt>

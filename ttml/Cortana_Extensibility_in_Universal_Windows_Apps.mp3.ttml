@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.914</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.370" end="00:00:07.100">Okay, we've got just a few more people coming in please be sure to fill out</p>
+      <p begin="00:00:07.100" end="00:00:10.830">...evaluation the session if you love court on as much as we do</p>
+      <p begin="00:00:10.830" end="00:00:15.270">be sure to do it if you're not so...about...on a grab a cup of coffee</p>
+      <p begin="00:00:15.270" end="00:00:25.920">...walk funny time...</p>
+      <p begin="00:00:25.920" end="00:00:27.290">All right.</p>
+      <p begin="00:00:27.290" end="00:00:30.990">So, for today...going to talk about core...extensibility I'm</p>
+      <p begin="00:00:30.990" end="00:00:35.150">...open by saying thank you it's extraordinarily hard can be with a beautiful sunny day</p>
+      <p begin="00:00:35.150" end="00:00:39.360">and san francisco so thank you very much for coming inside and spending</p>
+      <p begin="00:00:39.360" end="00:00:44.470">...time with us today what's amazing to me is that we just introduced core</p>
+      <p begin="00:00:44.470" end="00:00:47.710">...into the world only about a year-ago and</p>
+      <p begin="00:00:47.710" end="00:00:52.070">it's been a pretty amazing year we spent that time doubling down our technology to make</p>
+      <p begin="00:00:52.070" end="00:00:56.030">or more capable better for the consumer we spend a ton of time</p>
+      <p begin="00:00:56.030" end="00:00:59.710">...consumers to understand what are the most important things core tonic</p>
+      <p begin="00:00:59.710" end="00:01:03.360">...but most interestingly I've been spending a ton of time with</p>
+      <p begin="00:01:03.360" end="00:01:08.110">developers and partners to figure out how together we can create value for the</p>
+      <p begin="00:01:08.110" end="00:01:12.180">customer in fact I've travelled around the world this year meeting</p>
+      <p begin="00:01:12.180" end="00:01:16.350">with developers just like you to talk about what core tonic...do</p>
+      <p begin="00:01:16.350" end="00:01:21.400">so that together we make the customer even happier so today I'm going to talk about</p>
+      <p begin="00:01:21.400" end="00:01:25.510">the two big questions that came out of those discussions first we know core</p>
+      <p begin="00:01:25.510" end="00:01:30.340">...really rapidly evolving what's that product...turn into so we can figure out of</p>
+      <p begin="00:01:30.340" end="00:01:35.470">it makes sense to integrate with core...and second frankly what can court on a</p>
+      <p begin="00:01:35.470" end="00:01:38.660">...for developers and partners what value can</p>
+      <p begin="00:01:38.660" end="00:01:43.770">she provide you so that's what we're going to talk about today my name is</p>
+      <p begin="00:01:43.770" end="00:01:47.840">...planning for core tang I'm here with my friend...amounting and we're going to spend</p>
+      <p begin="00:01:47.840" end="00:01:51.550">the next sixty-minutes talking specifically about the questions that</p>
+      <p begin="00:01:51.550" end="00:01:56.370">you've asked us and hopefully at the end of that time you're going to leave here with</p>
+      <p begin="00:01:56.370" end="00:02:00.700">a really good understanding of the products and really useful tangible tools you can</p>
+      <p begin="00:02:00.700" end="00:02:06.440">use to integrate into core time...that looks like.</p>
+      <p begin="00:02:06.440" end="00:02:09.800">The beginning I'm going to focus on what is</p>
+      <p begin="00:02:09.800" end="00:02:14.230">core time specifically what's the vision for the product where she</p>
+      <p begin="00:02:14.230" end="00:02:19.190">...go over the next couple years and what value she creates for developers</p>
+      <p begin="00:02:19.190" end="00:02:22.800">that I'm going to switch over to...and he's going to dyed strata and talk about what</p>
+      <p begin="00:02:22.800" end="00:02:26.890">are the specific things you can do today to create value with core</p>
+      <p begin="00:02:26.890" end="00:02:30.950">...for your applications to complete tasks and really get</p>
+      <p begin="00:02:30.950" end="00:02:35.630">to things quickly so that's our goal will save a little bit of time at the end for</p>
+      <p begin="00:02:35.630" end="00:02:38.790">some q and a because we want this conversation to be</p>
+      <p begin="00:02:38.790" end="00:02:42.990">ongoing we think the best products come from partnerships so</p>
+      <p begin="00:02:42.990" end="00:02:47.100">we want to continue to me with you and continue to evolve this product</p>
+      <p begin="00:02:47.100" end="00:02:52.720">let's jump right in I remember the first day when we started core time we</p>
+      <p begin="00:02:52.720" end="00:02:57.660">...the table and we talked about what made a really good personal assistant we</p>
+      <p begin="00:02:57.660" end="00:02:59.050">looked at real-world examples?</p>
+      <p begin="00:03:00.330" end="00:03:04.450">And, what we found?</p>
+      <p begin="00:03:04.450" end="00:03:05.870">Networks.</p>
+      <p begin="00:03:05.870" end="00:03:11.670">This is cool I can do a rock star thing and stand in front of the big speaker.</p>
+      <p begin="00:03:11.670" end="00:03:14.330">What we found was really great personal systems had</p>
+      <p begin="00:03:14.330" end="00:03:18.850">to key characteristics one they knew the client better than anybody</p>
+      <p begin="00:03:18.850" end="00:03:23.410">and to the help them get things done so we made massive investments</p>
+      <p begin="00:03:23.410" end="00:03:27.640">and personalization and task completion good assistance</p>
+      <p begin="00:03:27.640" end="00:03:32.180">...to work with an easy to talk to so we've really focused on</p>
+      <p begin="00:03:32.180" end="00:03:37.180">natural language with your typing...talking it's really easy to interact with core</p>
+      <p begin="00:03:37.180" end="00:03:42.820">tonic and as you've heard now we're integrating charts core tonic into windows ten which means</p>
+      <p begin="00:03:42.820" end="00:03:47.520">protons going to be available to millions and millions and</p>
+      <p begin="00:03:47.520" end="00:03:52.420">millions of users across a broad set of devices and on</p>
+      <p begin="00:03:52.420" end="00:03:57.270">those devices should be able to bring you what you need across search device your</p>
+      <p begin="00:03:57.270" end="00:04:02.750">personal cloud so we've got a great start but it's just a start?</p>
+      <p begin="00:04:02.750" end="00:04:05.645">And, started something really interesting because the way I</p>
+      <p begin="00:04:05.645" end="00:04:10.200">think about it it's not just there's millions and millions of users it's not just that</p>
+      <p begin="00:04:10.200" end="00:04:13.600">there's more devices and they're more capable than ever</p>
+      <p begin="00:04:13.600" end="00:04:17.650">it's that how we interact with devices is changing.</p>
+      <p begin="00:04:17.650" end="00:04:20.250">Right member in the beginning we want...the device we</p>
+      <p begin="00:04:20.250" end="00:04:25.970">...a command line some of a still do and then eventually we use the mouse.</p>
+      <p begin="00:04:25.970" end="00:04:29.210">And, then eventually we got other devices we use touch.</p>
+      <p begin="00:04:29.210" end="00:04:32.580">And, now we're evolving into a new way to interact devices</p>
+      <p begin="00:04:32.580" end="00:04:37.000">that's much more natural it's much more contextual and that's</p>
+      <p begin="00:04:37.000" end="00:04:41.540">...is really about how do we connect people with the experiences on</p>
+      <p begin="00:04:41.540" end="00:04:46.450">their devices that they value most in the most natural contextual</p>
+      <p begin="00:04:46.450" end="00:04:49.080">easy and engaging way and that's</p>
+      <p begin="00:04:49.080" end="00:04:52.630">actually an opportunity she creates for developers what</p>
+      <p begin="00:04:52.630" end="00:04:56.660">is that look like if I give you a sneak peek of how we're talking about core tama with</p>
+      <p begin="00:04:56.660" end="00:05:01.360">consumers this is just...adding put together give you a sense of at the time we</p>
+      <p begin="00:05:01.360" end="00:05:06.330">...consumers what they've told this is a really good personal assistant makes you feel like the</p>
+      <p begin="00:05:06.330" end="00:05:11.830">hero of your own life you can get anything done it's all going great and that's what</p>
+      <p begin="00:05:11.830" end="00:05:16.600">core...as about that when you look at those real personal</p>
+      <p begin="00:05:16.600" end="00:05:17.100">assistance?</p>
+      <p begin="00:05:18.220" end="00:05:22.270">They don't do it on their own do they they're smart they're capable they can get</p>
+      <p begin="00:05:22.270" end="00:05:27.040">things done but the hallmark of a great personal assistant is they have this</p>
+      <p begin="00:05:27.040" end="00:05:32.010">network of experts your concierge...you a great place to go to dinner</p>
+      <p begin="00:05:32.010" end="00:05:37.550">because he knows which restaurant...call-in who to talk to your personal system can help you get your</p>
+      <p begin="00:05:37.550" end="00:05:42.550">car fixed because she knows which garage in which mechanic can get that done</p>
+      <p begin="00:05:42.550" end="00:05:47.120">...the same she wants to know the experts that are important</p>
+      <p begin="00:05:47.120" end="00:05:51.490">to the customer and in this world the experts are you.</p>
+      <p begin="00:05:51.490" end="00:05:55.530">She wants to be able to connect the customer in the most natural</p>
+      <p begin="00:05:55.530" end="00:06:00.990">and compelling way to you because you're the experts of what you do</p>
+      <p begin="00:06:00.990" end="00:06:05.640">and that's the opportunity we want to talk about today now let's...that looks like</p>
+      <p begin="00:06:05.640" end="00:06:09.130">...windows...the beautiful thing about core time</p>
+      <p begin="00:06:09.130" end="00:06:12.110">she's right there I'm showing example from a pc issues</p>
+      <p begin="00:06:12.110" end="00:06:16.750">...on the desktop and she's ready to greet you at the sound of your voice</p>
+      <p begin="00:06:16.750" end="00:06:19.620">at the touch of your hand the click your mouse</p>
+      <p begin="00:06:19.620" end="00:06:23.520">...there it's not their generically she's there specifically</p>
+      <p begin="00:06:23.520" end="00:06:28.250">for you she knows what's going on with your life what we've learned is the</p>
+      <p begin="00:06:28.250" end="00:06:32.640">more person why she gets the more engaging that she is</p>
+      <p begin="00:06:32.640" end="00:06:34.970">...that personalization also creates</p>
+      <p begin="00:06:34.970" end="00:06:38.750">a new opportunity when we talk to real personal assistance we found</p>
+      <p begin="00:06:38.750" end="00:06:43.960">a lot of them kept notebooks on their boss literally these were paper bound notebooks</p>
+      <p begin="00:06:43.960" end="00:06:48.070">...write down this is what he likes this is what he doesn't like this the</p>
+      <p begin="00:06:48.070" end="00:06:49.420">stuff he says he doesn't like</p>
+      <p begin="00:06:49.420" end="00:06:54.340">...secretly likes and they keep track of all that stuff well so this core</p>
+      <p begin="00:06:54.340" end="00:06:56.810">tanaka photon has a notebook and in</p>
+      <p begin="00:06:56.810" end="00:07:00.310">...notebook she keeps track of the things that are important</p>
+      <p begin="00:07:00.310" end="00:07:04.110">customer really big things like hey this is when you want to</p>
+      <p begin="00:07:04.110" end="00:07:07.680">breach out and talk to them and this is when he wants to be left alone so you're not</p>
+      <p begin="00:07:07.680" end="00:07:13.080">noisier disturbing people these this is what's happening is...these are the sports teams</p>
+      <p begin="00:07:13.080" end="00:07:17.930">is interested in here's the music he likes here's the places he likes to go here's what's</p>
+      <p begin="00:07:17.930" end="00:07:19.930">happening in his world.</p>
+      <p begin="00:07:19.930" end="00:07:22.670">And, consumers love that because it actually makes that</p>
+      <p begin="00:07:22.670" end="00:07:27.450">much more personal the opportunity for developers is that means core</p>
+      <p begin="00:07:27.450" end="00:07:32.880">...knows when to reach out to someone with the right content at</p>
+      <p begin="00:07:32.880" end="00:07:37.480">the right time on the right device in the right way</p>
+      <p begin="00:07:37.480" end="00:07:41.110">you're cutting through the clutter and...reaching the customer</p>
+      <p begin="00:07:41.110" end="00:07:44.920">very natural useful and compelling way.</p>
+      <p begin="00:07:44.920" end="00:07:49.840">What does that look like unsure if you examples these are examples from windows ten</p>
+      <p begin="00:07:49.840" end="00:07:54.560">from the far-left she can reach our proactively writing a really good assistant</p>
+      <p begin="00:07:54.560" end="00:07:59.490">wouldn't be sitting at their desk just staring off into space right when you saw them they walk up and</p>
+      <p begin="00:07:59.490" end="00:08:04.680">greet you and say here's stuff that you need to know protons the same way here what score here's what's going on</p>
+      <p begin="00:08:04.680" end="00:08:08.730">...your life she can proactively reach you but just like</p>
+      <p begin="00:08:08.730" end="00:08:13.550">a good assistant chicken tournament dime and go get you what you need so she can get it from the</p>
+      <p begin="00:08:13.550" end="00:08:18.670">web...get it from your neighborhood and displayed in a really beautiful way autonomy</p>
+      <p begin="00:08:18.670" end="00:08:23.660">proactively and re actively drives an ongoing dialogue with the</p>
+      <p begin="00:08:23.660" end="00:08:28.900">customer now it's more than just answering questions it's about getting</p>
+      <p begin="00:08:28.900" end="00:08:33.850">things done so she can do a broad variety of things she can help you with your</p>
+      <p begin="00:08:33.850" end="00:08:38.830">device she can help...your real-world this is what you need to do at this time or</p>
+      <p begin="00:08:38.830" end="00:08:43.810">this place so your life goes better but the thing that I'm most excited about is</p>
+      <p begin="00:08:43.810" end="00:08:48.700">she can connect you with those applications she can help you with the experiences that</p>
+      <p begin="00:08:48.700" end="00:08:55.230">are most important to you now we know even in the early days that is</p>
+      <p begin="00:08:55.230" end="00:08:57.920">...there's right now for core tanaka she's helping</p>
+      <p begin="00:08:57.920" end="00:09:02.160">consumers do twenty million high-value...tasks a month?</p>
+      <p begin="00:09:02.160" end="00:09:04.020">And, that's only going to grow.</p>
+      <p begin="00:09:04.020" end="00:09:07.750">With windows time because again you've got millions and millions</p>
+      <p begin="00:09:07.750" end="00:09:13.220">and millions of users across all those devices so the opportunity for</p>
+      <p begin="00:09:13.220" end="00:09:18.190">us today is if you have this deeply personal digital</p>
+      <p begin="00:09:18.190" end="00:09:23.110">...really easy to interact with his building this ongoing conversation and she</p>
+      <p begin="00:09:23.110" end="00:09:25.000">can connect consumers in the right way with</p>
+      <p begin="00:09:25.000" end="00:09:42.830">your applications how do we do it so...let's talk about how we get that done.</p>
+      <p begin="00:09:42.830" end="00:09:45.400">Other...today unfunded build</p>
+      <p begin="00:09:46.590" end="00:09:51.470">great so I'm super excited to be here today to talk to-you about protonextensibility and</p>
+      <p begin="00:09:51.470" end="00:09:55.770">what you can do in windows ten a little bit about what's new and how you can take advantage of</p>
+      <p begin="00:09:55.770" end="00:09:59.330">...capabilities so, specifically</p>
+      <p begin="00:09:59.330" end="00:10:04.370">...going to be talking about three big areas deep linking from...to your</p>
+      <p begin="00:10:04.370" end="00:10:08.370">...scenarios so, if you think about...she's</p>
+      <p begin="00:10:08.370" end="00:10:14.110">...the product provides a very simple intuitive natural way to</p>
+      <p begin="00:10:14.110" end="00:10:19.520">interact with your computer for users so one of the areas...is to help you deep</p>
+      <p begin="00:10:19.520" end="00:10:23.940">...from proton leverage that experience through to your experiences so</p>
+      <p begin="00:10:23.940" end="00:10:30.380">...getting the benefits of that simple natural interface through to your apps the second area we're going to talk</p>
+      <p begin="00:10:30.380" end="00:10:34.520">about is completing tasks directly inside...we have some it really</p>
+      <p begin="00:10:34.520" end="00:10:40.700">exciting announcements to share with you today some new product capabilities and apis to share with you today so,</p>
+      <p begin="00:10:40.700" end="00:10:43.630">if you really if you think about is I was saying that...is really good at</p>
+      <p begin="00:10:43.630" end="00:10:49.280">completing tasks for people things like setting appointments setting reminders you know,</p>
+      <p begin="00:10:49.280" end="00:10:54.160">sending e-mail sending messages were enabling we're opening up parts of that framework to allow</p>
+      <p begin="00:10:54.160" end="00:10:58.610">you to integrate your tasks for your apps directly with an</p>
+      <p begin="00:10:58.610" end="00:11:01.530">...on I'm going to show you how to do that and the third</p>
+      <p begin="00:11:01.530" end="00:11:06.830">we're going to touch ontalk about is finding information quickly so core...has a vast</p>
+      <p begin="00:11:06.830" end="00:11:12.700">...powered through public information right but what about when you want when you have your</p>
+      <p begin="00:11:12.700" end="00:11:16.230">own data that you want to use to help your user base</p>
+      <p begin="00:11:17.240" end="00:11:20.450">get access to very quickly we're going to talk about how ways that you can connect</p>
+      <p begin="00:11:20.450" end="00:11:24.530">court on a to that private information to your own datasets and,</p>
+      <p begin="00:11:24.530" end="00:11:29.830">look, for that and give quick access to users to that information?</p>
+      <p begin="00:11:29.830" end="00:11:34.960">Let's talk about depleting first.</p>
+      <p begin="00:11:34.960" end="00:11:38.470">So, today we're announcing voice commands for the universal windows, windows</p>
+      <p begin="00:11:38.470" end="00:11:43.840">out platform if you're familiar with this feature this was something we had available on phone eight-point one</p>
+      <p begin="00:11:43.840" end="00:11:48.480">bringing that...to the universe...platform today the sdk that you can</p>
+      <p begin="00:11:48.480" end="00:11:53.040">go download right now has this capability we have a number of samples and the and</p>
+      <p begin="00:11:53.040" end="00:11:58.400">...give you some pointers and links to go download those the idea here for those are not familiar with it is the apps</p>
+      <p begin="00:11:58.400" end="00:12:04.010">can effectively register for commands they can author a certain structure command that they want</p>
+      <p begin="00:12:04.010" end="00:12:09.330">users to be able to say to...honor to have them invoked with context and,</p>
+      <p begin="00:12:09.330" end="00:12:12.980">look, at some examples and some demos of that really quick pretty soon and,</p>
+      <p begin="00:12:12.980" end="00:12:19.370">this is available for...and javascript apps?</p>
+      <p begin="00:12:19.370" end="00:12:23.300">Let's take a look at the architectural...to give you...rather than you talking about it I think</p>
+      <p begin="00:12:23.300" end="00:12:27.070">showing you visually how this works is probably the most effective so,</p>
+      <p begin="00:12:27.070" end="00:12:30.430">the very the most important thing the very first thing is you author a voice</p>
+      <p begin="00:12:30.430" end="00:12:35.430">command definition file and you register that with court...</p>
+      <p begin="00:12:35.430" end="00:12:39.440">When that's registered with...that effectively becomes part of the</p>
+      <p begin="00:12:39.440" end="00:12:45.480">...tasks that court on a knows how to do out-of-the-box so things like hauling and text so,</p>
+      <p begin="00:12:45.480" end="00:12:51.380">voice commands something you can author gets registered alongside all of those built-in tasks?</p>
+      <p begin="00:12:51.380" end="00:12:56.080">Ok, so, once that's once you're...runs and registers that vc file that was</p>
+      <p begin="00:12:56.080" end="00:13:03.210">commend definition file with puerto the...goes away and then.</p>
+      <p begin="00:13:03.210" end="00:13:06.540">The user says ...the...now ready to interact with</p>
+      <p begin="00:13:06.540" end="00:13:11.230">...so in this case suppose there's a sample application called adventure works at</p>
+      <p begin="00:13:11.230" end="00:13:15.230">...provides a capability that to show you upcoming trips so this case the user</p>
+      <p begin="00:13:15.230" end="00:13:20.100">says adventure works show my trip to london...takes that.</p>
+      <p begin="00:13:20.100" end="00:13:24.840">Statement or utterance passes it to the windows speech platform which is on device</p>
+      <p begin="00:13:24.840" end="00:13:30.920">which gets routed up to the cloud comes back to arbitrary what is the user sayings we take advantage of the</p>
+      <p begin="00:13:30.920" end="00:13:35.820">cloud and local recognition to help arbitrary what the intent of that of what the</p>
+      <p begin="00:13:35.820" end="00:13:40.160">user side was so once we're trying to has that information</p>
+      <p begin="00:13:40.160" end="00:13:44.060">and says this is a voice command that's triggered for particular application the</p>
+      <p begin="00:13:44.060" end="00:13:49.280">...gets launched or activated essentially with the context so</p>
+      <p begin="00:13:49.280" end="00:13:53.020">this particular case the context was I want to show my trip I want to do</p>
+      <p begin="00:13:53.020" end="00:13:57.940">with adventure works I want to do it for the particular trip to london.</p>
+      <p begin="00:13:57.940" end="00:14:03.170">We're going to look at a lot of demos today that focus on interacting with court author speech one of the things I want to</p>
+      <p begin="00:14:03.170" end="00:14:07.760">call...frame for-you up-front is this is very different from doing things</p>
+      <p begin="00:14:07.760" end="00:14:12.830">using speech capabilities inside of your application so when you interacting with</p>
+      <p begin="00:14:12.830" end="00:14:15.630">this talk is going to focus specifically on how you interact with</p>
+      <p begin="00:14:15.630" end="00:14:18.020">...so that the advantages</p>
+      <p begin="00:14:18.020" end="00:14:23.140">their the simplicity you get the simplicity the easy access right on the start menu that's what we're going</p>
+      <p begin="00:14:23.140" end="00:14:26.810">to talk about today is another talk later this afternoon which is going to talk more</p>
+      <p begin="00:14:26.810" end="00:14:31.850">deeply about using speech defying your applications using the speech platform inside of your</p>
+      <p begin="00:14:31.850" end="00:14:36.260">apps directly so one of the context up-front for...</p>
+      <p begin="00:14:36.260" end="00:14:57.450">Okay, so, that logistical put look at a couple quick demos.</p>
+      <p begin="00:14:57.450" end="00:15:04.270">...chat with mark clover using vibe or.</p>
+      <p begin="00:15:04.270" end="00:15:06.090">Who is...their and</p>
+      <p begin="00:15:06.090" end="00:15:19.570">...started chat with market clover using fiber?</p>
+      <p begin="00:15:19.570" end="00:15:23.190">Jeweler starting a chat with mark clover took a second for</p>
+      <p begin="00:15:23.190" end="00:15:27.600">her to catch up so if you may have seen this during the keynote session with joe</p>
+      <p begin="00:15:27.600" end="00:15:32.210">...what you saw what here as vibrant humming integrated with the core</p>
+      <p begin="00:15:32.210" end="00:15:36.430">...experience in this case the context that vibrant defined is they want to</p>
+      <p begin="00:15:36.430" end="00:15:41.420">allow users to get into a chat very quickly so ...chat and video</p>
+      <p begin="00:15:41.420" end="00:15:47.290">chats in fact so, the idea there the expectation there is that because users have access to</p>
+      <p begin="00:15:47.290" end="00:15:52.320">thatcapability really quickly but they're going to be more deeply engaged with...application</p>
+      <p begin="00:15:52.320" end="00:15:56.490">providing very quick access to the and expectation...because they have quick access user</p>
+      <p begin="00:15:56.490" end="00:16:02.860">based organically can grow using because of...capability so that's a pretty neat one?</p>
+      <p begin="00:16:02.860" end="00:16:07.290">Let's look at a different one take...</p>
+      <p begin="00:16:07.290" end="00:16:12.650">Starter random game on trivia crack.</p>
+      <p begin="00:16:12.650" end="00:16:24.650">Studying random games.</p>
+      <p begin="00:16:24.650" end="00:16:28.450">I love this game I'm not sure if you guys play it but it's a really popular</p>
+      <p begin="00:16:28.450" end="00:16:34.490">...superfund you may have heard terry talk about it during the keynote as well so.</p>
+      <p begin="00:16:34.490" end="00:16:39.930">...max is a company...builds this game they're they took their existing apps</p>
+      <p begin="00:16:39.930" end="00:16:44.690">...which was bit built-in html five and convert it to a windows universal lap and...four times</p>
+      <p begin="00:16:44.690" end="00:16:51.150">more effective doing so then compared to other native platforms out there and,</p>
+      <p begin="00:16:51.150" end="00:16:53.870">because of the time to be the quickness of being able to bring</p>
+      <p begin="00:16:53.870" end="00:16:58.320">...windows the role to take advantage of some of the deeper capabilities inside of windows like</p>
+      <p begin="00:16:58.320" end="00:17:03.410">proton integration so, the expectation years letting users get into the game much quicker by leveraging</p>
+      <p begin="00:17:03.410" end="00:17:06.230">...tunnel users are going to be more deeply engaged that's a</p>
+      <p begin="00:17:06.230" end="00:17:14.220">really cool way to get users quickly into the key scenario in the app let's look at a different one.</p>
+      <p begin="00:17:14.220" end="00:17:21.699">Started game with to travis wilson using trivia crack.</p>
+      <p begin="00:17:21.699" end="00:17:31.900">Studying gain with travis wilson.</p>
+      <p begin="00:17:31.900" end="00:17:38.020">Travis...a friend of mine just pulled up his so the that I can put</p>
+      <p begin="00:17:38.020" end="00:17:41.120">...start playing with so much and actually going</p>
+      <p begin="00:17:41.120" end="00:17:44.670">...show you how quickly it was for me to interact with court on and get into...</p>
+      <p begin="00:17:45.950" end="00:17:51.540">I'm not very good arts...going to spare you spare myself embarrassment the context</p>
+      <p begin="00:17:51.540" end="00:17:55.660">there that we're passing was I wanted to play game with...the very specific context</p>
+      <p begin="00:17:55.660" end="00:18:00.150">...contact I was able to pass that to...tunnel so let's switch</p>
+      <p begin="00:18:00.150" end="00:18:05.050">back and take a look at some of the definitions on how you would do that.</p>
+      <p begin="00:18:05.050" end="00:18:12.380">...define your own voice.</p>
+      <p begin="00:18:12.380" end="00:18:17.520">So, this is an example voice command definition file.</p>
+      <p begin="00:18:17.520" end="00:18:19.620">One of the most important things is or I'm sorry</p>
+      <p begin="00:18:19.620" end="00:18:23.180">one at the top-level is the command such as the commence that think of it as</p>
+      <p begin="00:18:23.180" end="00:18:28.110">it's the container of all commands that you're going to define so in the trivia crack case you saw</p>
+      <p begin="00:18:28.110" end="00:18:34.190">me execute two different...to be the container for those to commits most important thing here is this</p>
+      <p begin="00:18:34.190" end="00:18:39.020">defines the...the language that you're going to find the commands that contains so in this case we're defining</p>
+      <p begin="00:18:39.020" end="00:18:43.560">...commands for the en-us language next up is the</p>
+      <p begin="00:18:43.560" end="00:18:48.230">app name so this is what defines how users are going to identify your</p>
+      <p begin="00:18:48.230" end="00:18:52.310">application so the recommendation...something very specific that users can remember</p>
+      <p begin="00:18:52.310" end="00:18:56.220">that is in fact your app name something directed your brand or...</p>
+      <p begin="00:18:56.220" end="00:19:02.450">name something that's very specific to you and your application so,</p>
+      <p begin="00:19:02.450" end="00:19:06.420">you can if you have a very long application name like let's suppose you're name is</p>
+      <p begin="00:19:06.420" end="00:19:10.660">scape for business two thousand thirteen you can shorten that...and that's</p>
+      <p begin="00:19:10.660" end="00:19:17.170">okay but the idea is that something that users can remember...associate with your application?</p>
+      <p begin="00:19:17.170" end="00:19:20.920">Example...something that...in the...to give users</p>
+      <p begin="00:19:20.920" end="00:19:27.960">...idea of what how they can interact with court...look at what that looks like in a minute?</p>
+      <p begin="00:19:27.960" end="00:19:31.120">We get into the really interesting stuff the command,</p>
+      <p begin="00:19:31.120" end="00:19:36.420">command is essentially the logical unit of atomic unit really of</p>
+      <p begin="00:19:36.420" end="00:19:40.570">the specific thing or intent so, this contains what the user can say</p>
+      <p begin="00:19:40.570" end="00:19:44.840">there's some specific syntax for that also contains what core</p>
+      <p begin="00:19:44.840" end="00:19:48.510">...can say in response to the user executing that command and what</p>
+      <p begin="00:19:48.510" end="00:19:52.940">action portable perform in this case you see the navigate element that effectively as a hint</p>
+      <p begin="00:19:52.940" end="00:20:01.100">...to say I want this commands to launch my app with some context?</p>
+      <p begin="00:20:01.100" end="00:20:05.560">Once you've authored...authoring...the most important part once you've authored</p>
+      <p begin="00:20:05.560" end="00:20:10.090">...you register with the voice command definition manager</p>
+      <p begin="00:20:10.090" end="00:20:14.390">and the activate that's how you register with court on alongside all the built-in tasks</p>
+      <p begin="00:20:14.390" end="00:20:19.330">and then you override your apps on activated and effectively want to voice command comes in for your</p>
+      <p begin="00:20:19.330" end="00:20:20.990">app you get launched</p>
+      <p begin="00:20:20.990" end="00:20:24.960">your scenarios launch you get past a name value per collection of the</p>
+      <p begin="00:20:24.960" end="00:20:29.780">...specifics...of context that you define in your voice...in your voice command file so</p>
+      <p begin="00:20:29.780" end="00:20:34.770">this particular case there is a destination which is part of that context and you'll be</p>
+      <p begin="00:20:34.770" end="00:20:39.360">...that destination as a name value...can have other things are others that</p>
+      <p begin="00:20:39.360" end="00:20:44.700">name about named parts of this command and this particular case there's just...one but you'd be</p>
+      <p begin="00:20:44.700" end="00:20:56.880">past destination as a semantic value that you can then query against to execute document.</p>
+      <p begin="00:20:56.880" end="00:20:59.440">So, maybe thinking right now ok that's.</p>
+      <p begin="00:20:59.440" end="00:21:03.740">Really neat but how...how it...really that simple like how to how difficult</p>
+      <p begin="00:21:03.740" end="00:21:08.390">...to do this so, here's an example voice</p>
+      <p begin="00:21:08.390" end="00:21:13.350">command file so this was you know,...we just talk through the command set the app</p>
+      <p begin="00:21:15.140" end="00:21:20.910">...actually quickly show you the example text and where that shows up so if I go into protons help</p>
+      <p begin="00:21:20.910" end="00:21:25.530">many right here down at the bottom you can see that I have a set of apps registered so if I go</p>
+      <p begin="00:21:25.530" end="00:21:30.570">into adventure works show trip to london that's the top-level command set example text</p>
+      <p begin="00:21:30.570" end="00:21:34.210">...I can see some of the very specific things I'm able to say to</p>
+      <p begin="00:21:34.210" end="00:21:37.380">...so this is a hence of this is a way that user can</p>
+      <p begin="00:21:37.380" end="00:21:43.420">...they forget this is how I can they can go in here and take a look at what how they can interact with</p>
+      <p begin="00:21:43.420" end="00:21:48.230">So, what I want to show you is how quickly how quick and easy to actually author these...</p>
+      <p begin="00:21:48.230" end="00:21:53.050">so let's focus on this area right here what I want to show you is so,</p>
+      <p begin="00:21:53.050" end="00:21:57.870">we looked at the listen for and we know that we can do prefix commands where I can</p>
+      <p begin="00:21:57.870" end="00:22:02.060">say adventure works show my trip to a particular destination orange</p>
+      <p begin="00:22:02.060" end="00:22:07.140">we've introduced one of the biggest...the feedback we've gotten...that's not the most natural way to execute</p>
+      <p begin="00:22:07.140" end="00:22:13.020">a command we've introduced a new capabilities to be able free for you to say require</p>
+      <p begin="00:22:13.020" end="00:22:16.600">...name we have some a few options here</p>
+      <p begin="00:22:16.600" end="00:22:21.580">...show you right now is before after phrase first of all notice that we've integrated</p>
+      <p begin="00:22:21.580" end="00:22:26.260">intel's sense to help you author these there's a ton of help as you walk through...one of these inside</p>
+      <p begin="00:22:26.260" end="00:22:30.770">of visual studio...I'm going to show you right now is before or after phrase</p>
+      <p begin="00:22:30.770" end="00:22:32.250">...this means is the app</p>
+      <p begin="00:22:32.250" end="00:22:37.210">name can appear either before so I can say adventure works show my trip to london or I</p>
+      <p begin="00:22:37.210" end="00:22:44.320">can say show my trip to london on or using or with adventure works?</p>
+      <p begin="00:22:44.320" end="00:22:45.470">Let's compile...</p>
+      <p begin="00:22:52.010" end="00:22:57.020">Nothing fancy about this...it's really just to showcase or a sample of that we have this</p>
+      <p begin="00:22:57.020" end="00:23:00.940">is available you can download it will provide links afterwards but here's my trip to london and I</p>
+      <p begin="00:23:00.940" end="00:23:05.430">have a couple others registered here so now that I've heard used to this command this</p>
+      <p begin="00:23:05.430" end="00:23:12.230">require before after let's see what let me try the phrase take autonomy.</p>
+      <p begin="00:23:12.230" end="00:23:18.330">Show my trip to london using adventure works.</p>
+      <p begin="00:23:18.330" end="00:23:30.610">I'm afraid I couldn't find any events called trip so let me do anything.</p>
+      <p begin="00:23:40.840" end="00:23:46.270">Show my trip to london using adventure works.</p>
+      <p begin="00:23:46.270" end="00:23:52.200">Ok, showing trip to london.</p>
+      <p begin="00:23:52.200" end="00:23:57.650">...so I was able to use the after phrase which was pretty cool.</p>
+      <p begin="00:23:57.650" end="00:24:02.510">Thank you thank you so, what other really...that we've done</p>
+      <p begin="00:24:02.510" end="00:24:07.380">...windows ten which is not just the ability to say before or after but I'm going to copy this listen</p>
+      <p begin="00:24:07.380" end="00:24:10.760">for and I'm going to actually show you the art</p>
+      <p begin="00:24:10.760" end="00:24:16.000">...new capability in addition to this which is?</p>
+      <p begin="00:24:16.000" end="00:24:20.360">The ability to say explicitly specified so...syntactic and actually say where</p>
+      <p begin="00:24:20.360" end="00:24:24.320">in the command aware in the utterance you want the app name to appear</p>
+      <p begin="00:24:24.320" end="00:24:29.120">so in this case actually want to be able to say show my adventure works trip to london that's</p>
+      <p begin="00:24:29.120" end="00:24:45.330">probably the most natural way to express that so here's the syntax for doing...</p>
+      <p begin="00:24:45.330" end="00:24:48.980">So, basically we have this we did we say this is a</p>
+      <p begin="00:24:48.980" end="00:24:54.550">built-in a reference to the app name so...now...part of the command I</p>
+      <p begin="00:24:54.550" end="00:25:01.370">...I want explicitly specified to appear this point in the phrase...when commands match this.</p>
+      <p begin="00:25:01.370" end="00:25:12.100">This...the...gets activated so let's give that a try.</p>
+      <p begin="00:25:12.100" end="00:25:18.600">That's going to register...closely up.</p>
+      <p begin="00:25:18.600" end="00:25:23.550">Show my adventure works trip to london.</p>
+      <p begin="00:25:23.550" end="00:25:32.320">Showing trip to london.</p>
+      <p begin="00:25:32.320" end="00:25:40.690">So, we're pretty excited about that.</p>
+      <p begin="00:25:40.690" end="00:25:43.980">What are the other things we're doing and windows ten or any capability</p>
+      <p begin="00:25:43.980" end="00:25:48.420">we've enabled is the ability for windows web apps to</p>
+      <p begin="00:25:48.420" end="00:25:50.640">...integrate with court tossing may have heard of</p>
+      <p begin="00:25:50.640" end="00:25:54.420">racine during the keynote about windows web apps so this is effectively</p>
+      <p begin="00:25:54.420" end="00:25:58.860">an application that's built for the web accessible through the browser that you can submit through manifest to</p>
+      <p begin="00:25:58.860" end="00:26:04.650">the windows store let's look at an example of that and how that can integrate with court...we've done some work</p>
+      <p begin="00:26:04.650" end="00:26:16.020">...to make that possible for those apps to leverage some of the native capabilities of the device?</p>
+      <p begin="00:26:16.020" end="00:26:16.860">So, here I have</p>
+      <p begin="00:26:16.860" end="00:26:21.800">...application called a group post-its a sample application...me add notes</p>
+      <p begin="00:26:21.800" end="00:26:28.190">and I'm accessing this through the through the browser so I can take notes like pick up the kids.</p>
+      <p begin="00:26:28.190" end="00:26:30.280">Great knowing special.</p>
+      <p begin="00:26:30.280" end="00:26:39.200">...get saved but, we're going to show you that...windows web app as well.</p>
+      <p begin="00:26:39.200" end="00:26:49.080">Show my notes using group post.</p>
+      <p begin="00:26:49.080" end="00:26:51.610">Notice side-by-side this is the windows</p>
+      <p begin="00:26:51.610" end="00:26:56.410">...web application or windows...side-by-side by the with the app the same</p>
+      <p begin="00:26:56.410" end="00:26:59.630">...in the browser so what's interesting about this</p>
+      <p begin="00:26:59.630" end="00:27:02.470">is the web writing as a windows web</p>
+      <p begin="00:27:02.470" end="00:27:06.190">...able to leverage the capabilities of the native device</p>
+      <p begin="00:27:06.190" end="00:27:13.220">...showed you can also do something like this.</p>
+      <p begin="00:27:13.220" end="00:27:20.040">...note clean the garage using group post.</p>
+      <p begin="00:27:20.040" end="00:27:25.750">All right adding clean the garage to group post.</p>
+      <p begin="00:27:25.750" end="00:27:33.540">...that both...web out and.</p>
+      <p begin="00:27:33.540" end="00:27:37.080">So,...really excited about this because for people that are building windows web</p>
+      <p begin="00:27:37.080" end="00:27:39.960">...you already have your existing website you already have, you know,</p>
+      <p begin="00:27:39.960" end="00:27:44.590">that you've invested a ton of time and...of energy into building that making at super easy</p>
+      <p begin="00:27:44.590" end="00:27:48.400">for you to bring that to the windows platform and we're making it easy for you</p>
+      <p begin="00:27:48.400" end="00:28:01.850">to make it to leverage some of the building capabilities with very little effort.</p>
+      <p begin="00:28:01.850" end="00:28:06.220">Specifically all you really need to do to enable that for your windows web apps is to drop...</p>
+      <p begin="00:28:06.220" end="00:28:11.190">vc file on your website and add a meta tag to the html that points to that</p>
+      <p begin="00:28:11.190" end="00:28:13.780">...when...gets pulled out when you're content from the web</p>
+      <p begin="00:28:13.780" end="00:28:19.220">get pulled down to the store following this process you the...post will</p>
+      <p begin="00:28:19.220" end="00:28:25.290">know that your bd is applicable and...execute you just saw.</p>
+      <p begin="00:28:25.290" end="00:28:32.670">We're pretty excited about that...</p>
+      <p begin="00:28:32.670" end="00:28:37.410">Okay, so, we've talked about how you can engage your users through deep linking</p>
+      <p begin="00:28:37.410" end="00:28:42.380">to your scenarios one of the things I'm really excited talking about today is completing tasks</p>
+      <p begin="00:28:42.380" end="00:28:51.250">directly...core tunnels so this is a brand capability...introducing windows type.</p>
+      <p begin="00:28:51.250" end="00:28:54.960">So, this includes the ability to have this includes a</p>
+      <p begin="00:28:54.960" end="00:29:01.530">set of apis the control task workflow inside of the core tonic canvas.</p>
+      <p begin="00:29:01.530" end="00:29:06.400">Is also includes a set of url templates you can use to complete tasks directly inside of that</p>
+      <p begin="00:29:06.400" end="00:29:08.700">cameras?</p>
+      <p begin="00:29:08.700" end="00:29:13.250">And, it's also includes apis for a speech interactivity model so this is what court on a</p>
+      <p begin="00:29:13.250" end="00:29:17.790">...for and...to the user and also what the user can say to</p>
+      <p begin="00:29:17.790" end="00:29:21.430">...within the context of that task or within that context of the</p>
+      <p begin="00:29:21.430" end="00:29:25.770">completing that task so this is an example showing you the types of things that</p>
+      <p begin="00:29:25.770" end="00:29:29.460">you can control so specifically you're able to</p>
+      <p begin="00:29:29.460" end="00:29:33.360">...display your app icon you're able to have.</p>
+      <p begin="00:29:33.360" end="00:29:36.060">Speech that's...that's said or that's</p>
+      <p begin="00:29:36.060" end="00:29:41.060">...bat or that's spoken back to the user input by...on.</p>
+      <p begin="00:29:41.060" end="00:29:45.380">Your able to have a set of content tiles which effectively</p>
+      <p begin="00:29:45.380" end="00:29:48.420">are your content your images and,</p>
+      <p begin="00:29:48.420" end="00:29:50.600">a link to your application if any point</p>
+      <p begin="00:29:50.600" end="00:29:57.110">...more comfortable completing this task inside of your application.</p>
+      <p begin="00:29:57.110" end="00:30:18.090">Let's look at some demos of that.</p>
+      <p begin="00:30:18.090" end="00:30:29.700">Ten more clover I'm having a lot of fun using vibe or.</p>
+      <p begin="00:30:29.700" end="00:30:38.620">I can't connect at the...try again a little bit extra overtime take</p>
+      <p begin="00:30:38.620" end="00:30:50.470">...clover I'm having a lot of fun using fiber.</p>
+      <p begin="00:30:50.470" end="00:30:55.300">Ok, message mark clover on fiber sounds...</p>
+      <p begin="00:30:55.300" end="00:31:00.140">Looks like we have some did looks like we have some internet connectivity issues all skip</p>
+      <p begin="00:31:00.140" end="00:31:21.960">...that one instead I'll show you a different one.</p>
+      <p begin="00:31:21.960" end="00:31:28.810">Creative st for led zeppelin on pandora.</p>
+      <p begin="00:31:28.810" end="00:31:34.050">Looking for st.</p>
+      <p begin="00:31:34.050" end="00:31:39.870">Rich station do you want.</p>
+      <p begin="00:31:39.870" end="00:31:46.220">Do you want to st for led zeppelin rules?</p>
+      <p begin="00:31:46.220" end="00:31:53.890">...so, this nation is ready...</p>
+      <p begin="00:31:53.890" end="00:32:03.090">Give just a complete that so now I can go into the pandora up.</p>
+      <p begin="00:32:03.090" end="00:32:07.460">You see leads up when we're at the top.</p>
+      <p begin="00:32:07.460" end="00:32:09.260">So, the idea there this is</p>
+      <p begin="00:32:09.260" end="00:32:14.220">...early preview how pandora's thinking about leveraging this capability the idea is...by</p>
+      <p begin="00:32:14.220" end="00:32:15.420">...by integrating a</p>
+      <p begin="00:32:15.420" end="00:32:19.870">super-high value task for their application directly into the...</p>
+      <p begin="00:32:19.870" end="00:32:24.770">on experience they're users can be more effective and more productive so they don't need to context which</p>
+      <p begin="00:32:24.770" end="00:32:27.200">when they're already in the middle of doing something thing at that</p>
+      <p begin="00:32:27.200" end="00:32:42.240">...and really quickly and get back to what they were doing super valuable scenario.</p>
+      <p begin="00:32:42.240" end="00:32:53.960">So, let me try that library scenario one more time just to see how it goes?</p>
+      <p begin="00:32:53.960" end="00:33:00.560">Tell...clover I'm having a lot of fun using vibe or.</p>
+      <p begin="00:33:00.560" end="00:33:01.210">Ok,</p>
+      <p begin="00:33:01.210" end="00:33:09.000">message mark clover on vibe or I'm having a lot of fun sounds good.</p>
+      <p begin="00:33:09.000" end="00:33:12.630">Message sent.</p>
+      <p begin="00:33:12.630" end="00:33:17.500">So, this is an example of how fibers integrated a high-value task directly into the core tonic</p>
+      <p begin="00:33:17.500" end="00:33:18.000">experience.</p>
+      <p begin="00:33:19.190" end="00:33:34.130">...click there and there is back into by can vibe...message...</p>
+      <p begin="00:33:34.130" end="00:33:39.790">Let's take a look at the architecture and how we make this happen?</p>
+      <p begin="00:33:39.790" end="00:33:42.590">Just like before you can author vc file.</p>
+      <p begin="00:33:42.590" end="00:33:45.970">Una register that directly with...</p>
+      <p begin="00:33:45.970" end="00:33:56.050">That gets registered alongside all of the other tasks the coronas about.</p>
+      <p begin="00:33:56.050" end="00:34:00.850">When a user says adventure works show my trip to london but suppose in this case the</p>
+      <p begin="00:34:00.850" end="00:34:03.980">...adventure works once that task to be completed in the core</p>
+      <p begin="00:34:03.980" end="00:34:08.370">...canvas let's look at how...happens so when the user</p>
+      <p begin="00:34:08.370" end="00:34:14.070">says that just like before that speech gets routed to the internal speech platform up to the microsoft</p>
+      <p begin="00:34:14.070" end="00:34:19.580">platform speech platform service and back-up...determines that that's a voice command for the</p>
+      <p begin="00:34:19.580" end="00:34:23.930">app but this time instead of activating the app in the foreground with context</p>
+      <p begin="00:34:23.930" end="00:34:28.000">it's going to communicate with a new concept which is a voice commend background</p>
+      <p begin="00:34:28.000" end="00:34:33.380">service so this is like any other background service that runs on windows it actually implements</p>
+      <p begin="00:34:33.380" end="00:34:38.150">...up background...background task and you basically implement the run method on that we've added a</p>
+      <p begin="00:34:38.150" end="00:34:43.410">set of new apis on top of that you can take advantage?</p>
+      <p begin="00:34:43.410" end="00:34:47.090">...the background service...gets the command that service can talk</p>
+      <p begin="00:34:47.090" end="00:34:51.020">...our that background task communicate with its own back-end service you</p>
+      <p begin="00:34:51.020" end="00:34:56.940">can also talk with local isolated storage and, renders animal so</p>
+      <p begin="00:34:56.940" end="00:35:01.730">in the pandora case you saw the round-trip back to that service coming back with results the...that</p>
+      <p begin="00:35:01.730" end="00:35:05.400">...displayed onto the canvas.</p>
+      <p begin="00:35:05.400" end="00:35:07.040">In this case rather than launch the</p>
+      <p begin="00:35:07.040" end="00:35:17.950">...we're showing an icon and some text and some ui back in the back in the screen.</p>
+      <p begin="00:35:17.950" end="00:35:23.970">So, one of the...through a little bit of the workflow steps and how what's the what's the anatomy of a task</p>
+      <p begin="00:35:23.970" end="00:35:28.630">workflow so you've seen kind of the few examples you've seen or the overall architecture let's zoom in a</p>
+      <p begin="00:35:28.630" end="00:35:33.400">little bit suppose someone says cancel my adventure works trip very first stage or the</p>
+      <p begin="00:35:33.400" end="00:35:37.620">very first capability we offer through set of apis is the ability to disambiguation amongst</p>
+      <p begin="00:35:37.620" end="00:35:41.450">the set of options right so if I say cancel my adventure works trip</p>
+      <p begin="00:35:41.450" end="00:35:46.530">...has no idea which...you want to cancel if you have two of them so she can ask just like you saw the</p>
+      <p begin="00:35:46.530" end="00:35:50.920">...example with the list of options the first thing you can do is disambiguation</p>
+      <p begin="00:35:50.920" end="00:35:53.380">monks a set of options so in this case</p>
+      <p begin="00:35:53.380" end="00:35:59.820">adventure works asks which one you want to cancel users can say vegas tech conference one?</p>
+      <p begin="00:35:59.820" end="00:36:05.160">The next stage in the workflow is the ability to confirm and operation so if I'm going to cancel trip if</p>
+      <p begin="00:36:05.160" end="00:36:09.720">...your cancel trip you want to make pretty sure that's exactly what the user wants to do so this is an</p>
+      <p begin="00:36:09.720" end="00:36:13.980">optional part of the workflow where you can confirm and operation so here</p>
+      <p begin="00:36:13.980" end="00:36:19.570">...says do you want to cancel this one that I heard you don't hear you correctly you can say yes.</p>
+      <p begin="00:36:19.570" end="00:36:23.800">And, then is...it's the progress screens the progress screen is we provide the ability for the</p>
+      <p begin="00:36:23.800" end="00:36:26.850">app to provide in progress updates for and</p>
+      <p begin="00:36:26.850" end="00:36:31.780">operational tasks that's ongoing so you have a long-running operation something that's going to take some time</p>
+      <p begin="00:36:31.780" end="00:36:33.430">...ideal is not to leave the user</p>
+      <p begin="00:36:33.430" end="00:36:38.270">waiting so you definitely want to be thinking about the types of interactions are trying to build but</p>
+      <p begin="00:36:38.270" end="00:36:42.950">not keep the user weight but in the case in the scenario where you're sure that the product of the</p>
+      <p begin="00:36:42.950" end="00:36:47.900">task is going to continue and you're making good progress on it you can provide updates to the user</p>
+      <p begin="00:36:47.900" end="00:36:54.340">to tell them and keep them make them feel like they're part of the workflow they know that progress is being made?</p>
+      <p begin="00:36:54.340" end="00:36:57.640">The final phase is...completion phase where you display the results...a</p>
+      <p begin="00:36:57.640" end="00:37:05.610">few examples of that where you can say this...successful this operation completed successfully.</p>
+      <p begin="00:37:05.610" end="00:37:10.190">...spend a little bit of time talking about some of the apis just to give you a feel for the things that are there this is</p>
+      <p begin="00:37:10.190" end="00:37:14.000">only sdk that's the that's available today have some great samples</p>
+      <p begin="00:37:14.000" end="00:37:17.160">and great documentation...take a look at as well.</p>
+      <p begin="00:37:17.160" end="00:37:20.720">The core class here is...service connection to</p>
+      <p begin="00:37:20.720" end="00:37:25.700">request a disambiguation screen like you just saw there's a method to do that the request a</p>
+      <p begin="00:37:25.700" end="00:37:31.540">confirmation screen same thing requesting...launch to complete the tasks at any point during the workflow we didn't show</p>
+      <p begin="00:37:31.540" end="00:37:34.080">...show you this one but at any point during the</p>
+      <p begin="00:37:34.080" end="00:37:38.680">workflow you can choose to say I don't want to continue this in the canvas I just want my...to be</p>
+      <p begin="00:37:38.680" end="00:37:46.900">launched and let the user complete the task there you can you can request that were prosper trying to do that.</p>
+      <p begin="00:37:46.900" end="00:37:52.950">You can also inform...on the status of an in progress task.</p>
+      <p begin="00:37:52.950" end="00:37:56.720">And, you can...proton that a task completed successfully or</p>
+      <p begin="00:37:56.720" end="00:38:00.380">that fails to complete successfully.</p>
+      <p begin="00:38:00.380" end="00:38:07.280">Just want to give you a feel for the types of things that are.</p>
+      <p begin="00:38:07.280" end="00:38:12.390">So, you notice the previous on the previous slide voice command response was a</p>
+      <p begin="00:38:12.390" end="00:38:15.600">key class the gets return to court...a little bit</p>
+      <p begin="00:38:15.600" end="00:38:19.880">of time giving you an idea of the types of things that what that cost contains</p>
+      <p begin="00:38:19.880" end="00:38:25.220">now you can use it so the...command response is made up of.</p>
+      <p begin="00:38:25.220" end="00:38:30.070">Essentially a encompasses the entire tile or what the entire canvas</p>
+      <p begin="00:38:30.070" end="00:38:36.330">...you can control what are the key pieces...the message so the message that you're sending back to</p>
+      <p begin="00:38:36.330" end="00:38:39.430">...effectively both the text...gets displayed to the user</p>
+      <p begin="00:38:39.430" end="00:38:43.480">...user sees but also contains the speech that core</p>
+      <p begin="00:38:43.480" end="00:38:47.320">...speak back to the users lizard...those can be very different things like you don't want to</p>
+      <p begin="00:38:47.320" end="00:38:52.870">keep very long thing you want...on the screen you don't want to notice that there are speaking out to the</p>
+      <p begin="00:38:52.870" end="00:38:55.830">...a long-time so short...can short form the speech that kind of speaks</p>
+      <p begin="00:38:55.830" end="00:39:02.840">...we have a longer string more descriptive string...that you display on...</p>
+      <p begin="00:39:02.840" end="00:39:07.700">The next pieces the repeat message we have the repeat message because sometimes you know,</p>
+      <p begin="00:39:07.700" end="00:39:09.940">...part-time may not here you the speech recommend have</p>
+      <p begin="00:39:09.940" end="00:39:15.030">been not a very high confidence to know for sure that's what the user...those scenarios</p>
+      <p begin="00:39:15.030" end="00:39:19.960">...the ability free to provide a repeat message so...a more interactive experience for the user so it's</p>
+      <p begin="00:39:19.960" end="00:39:26.490">...krause not just sitting there saying exact same thing over and over again.</p>
+      <p begin="00:39:26.490" end="00:39:31.490">you'll notice a list of content tiles the list of content tiles is effectively the core of what you can</p>
+      <p begin="00:39:31.490" end="00:39:39.870">draw...the canvas and look at that more detail on a second.</p>
+      <p begin="00:39:39.870" end="00:39:42.710">The last thing I want to talk about on the response is the apa launch</p>
+      <p begin="00:39:42.710" end="00:39:47.490">argument so again at any point that we built this with the principle...any point of the</p>
+      <p begin="00:39:47.490" end="00:39:51.810">users more comfortable completing this task in the app they can launch the apps</p>
+      <p begin="00:39:51.810" end="00:39:55.290">...provide a and...launch argument that...on a or</p>
+      <p begin="00:39:55.290" end="00:40:00.570">...the user say I want to do this in the app user can tap or user can tap launched</p>
+      <p begin="00:40:00.570" end="00:40:06.760">...application with...you...that context just like we saw the depleting scenarios you can provide</p>
+      <p begin="00:40:06.760" end="00:40:11.100">context for what you pass so.</p>
+      <p begin="00:40:11.100" end="00:40:15.910">In the case of if I was showing my trip to london or I want to cancel it like</p>
+      <p begin="00:40:15.910" end="00:40:25.110">that links could be specific directly to my london trip ...you're able to do that.</p>
+      <p begin="00:40:25.110" end="00:40:29.750">So, let's look at let's begin on the content tile because this was this is what you're providing back the list of content...to</p>
+      <p begin="00:40:29.750" end="00:40:34.300">...so what's, what's the anatomy of that so this is made up of each cut single content</p>
+      <p begin="00:40:34.300" end="00:40:35.380">...public title.</p>
+      <p begin="00:40:37.000" end="00:40:45.440">It's made up of an optional set of optional text lines which you can provide.</p>
+      <p begin="00:40:45.440" end="00:40:50.410">Made up of an icon which you can show on the screen and there's some different template someone go into all the details of the various</p>
+      <p begin="00:40:50.410" end="00:40:53.620">...you can use but they're all documented on the web the</p>
+      <p begin="00:40:53.620" end="00:40:59.570">...we're going to have a little bit later we'll go into a little bit more depth on this.</p>
+      <p begin="00:40:59.570" end="00:41:04.330">There's the...launch arguments were any point of the user clicked the icon or clicked on the</p>
+      <p begin="00:41:04.330" end="00:41:04.830">canvas.</p>
+      <p begin="00:41:06.020" end="00:41:08.420">The apple get launched with...context and this is how you</p>
+      <p begin="00:41:08.420" end="00:41:20.760">...that context that you want to get back to your application of the user taped on that particular tile.</p>
+      <p begin="00:41:20.760" end="00:41:26.130">just provide you give a couple examples of type the types of things that you might use this for so,</p>
+      <p begin="00:41:26.130" end="00:41:32.250">imagine checking in the user says I want to check in on my place.</p>
+      <p begin="00:41:32.250" end="00:41:37.780">Looking for your...in progress screens confirmation screen followed</p>
+      <p begin="00:41:37.780" end="00:41:44.050">by a success message or successfully different example might be</p>
+      <p begin="00:41:44.050" end="00:41:48.250">changing a budget so I say I want to change my budget to</p>
+      <p begin="00:41:48.250" end="00:41:55.830">two hundred-dollars with my budget up confirmation and then a final</p>
+      <p begin="00:41:55.830" end="00:41:58.430">...scenarios we've looked at here are consumer</p>
+      <p begin="00:41:58.430" end="00:42:03.950">focus to want to point out that we're building this as a platform the scenarios...if</p>
+      <p begin="00:42:03.950" end="00:42:07.080">...you're building universal windows apps and the...sense</p>
+      <p begin="00:42:07.080" end="00:42:12.430">...for your workflows for your either institution or small business or</p>
+      <p begin="00:42:12.430" end="00:42:17.780">large business ...build we built this...a platforms...you take that away this is not just</p>
+      <p begin="00:42:17.780" end="00:42:26.740">the consumer focused thing we're building this truly as a platform the...to build on.</p>
+      <p begin="00:42:26.740" end="00:42:30.780">Okay, so, we've talked about integrating deep linking to your scenarios from</p>
+      <p begin="00:42:30.780" end="00:42:34.600">...we've talked about integrating tasks.</p>
+      <p begin="00:42:34.600" end="00:42:40.440">Directly inside a portage the next thing I want to talk about is finding information quickly.</p>
+      <p begin="00:42:40.440" end="00:42:46.600">...time so as, you know,...provides pretty effortless expression of search queries I</p>
+      <p begin="00:42:46.600" end="00:42:54.240">can type I can you speech to interact with corona pretty simple pretty effortless.</p>
+      <p begin="00:42:54.240" end="00:42:59.400">When you're defining things...a very common pattern a very common question for people to have their own</p>
+      <p begin="00:42:59.400" end="00:43:03.370">...defined very large data sets that they need to search over it's</p>
+      <p begin="00:43:03.370" end="00:43:08.690">...compound with voice commands but, it's a hard problem to solve so,</p>
+      <p begin="00:43:08.690" end="00:43:11.050">imagine you're a retailer for shoes and shows</p>
+      <p begin="00:43:11.050" end="00:43:15.880">shoes have colors they have sale prices they have different promotions</p>
+      <p begin="00:43:15.880" end="00:43:20.930">you're trying to offer how do you search sone user says I'm looking for blue shoes that are less than two</p>
+      <p begin="00:43:20.930" end="00:43:25.620">hundred-dollars by the particular manufacture how do you do that effectively quickly you can build voice</p>
+      <p begin="00:43:25.620" end="00:43:30.300">commands to do that but the ability to go and searcher database and return or your service and</p>
+      <p begin="00:43:30.300" end="00:43:34.990">provide back results effectively and efficiently...this is such a common pattern they want to</p>
+      <p begin="00:43:34.990" end="00:43:42.330">spend a little bit of time talking about how you can make that real figures for your service of your apps?</p>
+      <p begin="00:43:42.330" end="00:43:46.720">So, consider in this situation integrating your voice commands with</p>
+      <p begin="00:43:46.720" end="00:43:50.940">a search back-end service to provide easy quick access</p>
+      <p begin="00:43:50.940" end="00:43:55.360">a across those large data stores and return rank results that are relevant to you and</p>
+      <p begin="00:43:55.360" end="00:44:01.210">your own business when you asked a question by default you know, not through</p>
+      <p begin="00:44:01.210" end="00:44:06.080">...voice command she can you can tap into a vast array of information</p>
+      <p begin="00:44:06.080" end="00:44:10.740">that's public but what if you want to use your own small business data or</p>
+      <p begin="00:44:10.740" end="00:44:15.850">data specific to your application like in the pandora case it was music results so</p>
+      <p begin="00:44:15.850" end="00:44:21.580">...a service you can hit that...results how can you do that is that are the reach of it</p>
+      <p begin="00:44:21.580" end="00:44:26.670">most people or how do you do so it turns out that microsoft has a great answer for this we</p>
+      <p begin="00:44:26.670" end="00:44:32.490">...a service called as research and, you can...effectively searches a service on the</p>
+      <p begin="00:44:32.490" end="00:44:36.690">asher platforms...other service and it's really simple...set-up and</p>
+      <p begin="00:44:36.690" end="00:44:42.150">...for steps to...workable...search back-end provision the service on the</p>
+      <p begin="00:44:42.150" end="00:44:45.510">actual portal create...index for the data that you want</p>
+      <p begin="00:44:45.510" end="00:44:50.010">to serve up load the data into it and...</p>
+      <p begin="00:44:50.010" end="00:44:54.620">Through...the...interface for that there's a link their for how you can get started</p>
+      <p begin="00:44:54.620" end="00:44:57.920">...a free option for starting experimentation provides</p>
+      <p begin="00:44:57.920" end="00:45:03.120">really great building blocks for great search experiences.</p>
+      <p begin="00:45:03.120" end="00:45:19.970">Want to show you an example of that.</p>
+      <p begin="00:45:19.970" end="00:45:41.950">Trail finder find trails near me.</p>
+      <p begin="00:45:41.950" end="00:45:43.090">Here are some trails.</p>
+      <p begin="00:45:45.490" end="00:45:47.320">So, what you're seeing here is what</p>
+      <p begin="00:45:47.320" end="00:45:51.870">we've loaded in the as research back-end is the united states geographical survey of</p>
+      <p begin="00:45:51.870" end="00:45:57.120">features within the united states so actually I'm sorry for the state of california specifically in this</p>
+      <p begin="00:45:57.120" end="00:46:02.570">...includes trails mountains hills various features of geographical</p>
+      <p begin="00:46:02.570" end="00:46:06.950">object graphical importance so in this case I'm searching for trails and,</p>
+      <p begin="00:46:06.950" end="00:46:13.490">...task directly into the canvas which shows me trails that are near me...authorized the</p>
+      <p begin="00:46:13.490" end="00:46:17.850">...finder...sample up to access my location</p>
+      <p begin="00:46:17.850" end="00:46:21.700">given my location I'm able to show trails that are nearby?</p>
+      <p begin="00:46:21.700" end="00:46:23.560">So,...also</p>
+      <p begin="00:46:23.560" end="00:46:28.220">shown here the city in which that trail exists and the elevation so this to</p>
+      <p begin="00:46:28.220" end="00:46:32.890">this is what you see this number here is the elevation this is all pulled from the publicly available</p>
+      <p begin="00:46:32.890" end="00:46:36.940">us gs datasets click on that link.</p>
+      <p begin="00:46:36.940" end="00:46:41.500">I'm deep linked into the app mobile to see a map of where that exists where that</p>
+      <p begin="00:46:41.500" end="00:46:45.280">trailers...able to see the state the county the class about</p>
+      <p begin="00:46:45.280" end="00:46:48.700">trail the elevation and some other things.</p>
+      <p begin="00:46:48.700" end="00:46:54.410">Let's look at a different example.</p>
+      <p begin="00:46:54.410" end="00:47:03.070">Travel finder find rattlesnake trail.</p>
+      <p begin="00:47:03.070" end="00:47:07.350">Here are some trails.</p>
+      <p begin="00:47:07.350" end="00:47:10.630">So, in this case...previous example I was searching for things near me using</p>
+      <p begin="00:47:10.630" end="00:47:13.560">my geographic location in this case I'm using a keyword</p>
+      <p begin="00:47:13.560" end="00:47:17.490">...search directly into my and my search back-end coming back with results that are</p>
+      <p begin="00:47:17.490" end="00:47:23.590">ranks their relevant to my experience to my scenario which is finding a trip.</p>
+      <p begin="00:47:23.590" end="00:47:27.180">Just like before...showing the city and the elevation of</p>
+      <p begin="00:47:27.180" end="00:47:29.320">...of like click.</p>
+      <p begin="00:47:29.320" end="00:47:32.420">I can again goin' see...and some of the</p>
+      <p begin="00:47:32.420" end="00:47:37.840">other relevant information so this is a really powerful pattern.</p>
+      <p begin="00:47:37.840" end="00:47:41.900">Your you leveraging this pattern you're essentially able to quickly search</p>
+      <p begin="00:47:41.900" end="00:47:46.190">quickly and you use court on...find information</p>
+      <p begin="00:47:46.190" end="00:47:49.980">...against your own private datasets pretty interesting</p>
+      <p begin="00:47:49.980" end="00:47:55.610">and if you're interested in this there's a talk later today or I'm sorry on friday by the</p>
+      <p begin="00:47:55.610" end="00:48:01.060">...research team I'll give a reference to that a little bit later and, you can you can learn more about how you set up</p>
+      <p begin="00:48:01.060" end="00:48:22.430">...search instance and some of the more detailed things that can do.</p>
+      <p begin="00:48:22.430" end="00:48:24.170">So, one of the.</p>
+      <p begin="00:48:24.170" end="00:48:26.510">Wrap-up by talking about some of the</p>
+      <p begin="00:48:26.510" end="00:48:31.460">...we've looked wrap-up by what we've talked about and look at some very specific cost action for what you can go do</p>
+      <p begin="00:48:31.460" end="00:48:31.960">today.</p>
+      <p begin="00:48:32.970" end="00:48:36.830">...give users quick and easy access to frequently access scenarios in your</p>
+      <p begin="00:48:36.830" end="00:48:40.810">app by deep linking to them this helps engage them more deeply in your apps</p>
+      <p begin="00:48:40.810" end="00:48:44.500">...so think about those few scenarios that are really quarter application you want them</p>
+      <p begin="00:48:44.500" end="00:48:48.830">to get access to and what are those what's that context that you would pass to get them into that</p>
+      <p begin="00:48:48.830" end="00:48:54.910">state the second one is hope to users be more productive by enabling them to complete</p>
+      <p begin="00:48:54.910" end="00:48:58.720">your apps high-value tasks directly and core tunnel this helps them not have to</p>
+      <p begin="00:48:58.720" end="00:49:02.950">context which so frequently so often so again think about those high-value tasks</p>
+      <p begin="00:49:02.950" end="00:49:10.870">...want to help them complete directly in the core tonic canvas leverage the set of apis were offering today?</p>
+      <p begin="00:49:10.870" end="00:49:15.300">The third one as enabler users to access important information by connecting</p>
+      <p begin="00:49:15.300" end="00:49:20.010">your voice commands to a back-end service that supports efficient search over your data so I showed you the</p>
+      <p begin="00:49:20.010" end="00:49:24.930">adverse search example that's an easy one to get set up that's one we have at microsoft you can build your own</p>
+      <p begin="00:49:24.930" end="00:49:29.630">there's a ton of other there's no by no means is this specific what I showed you to</p>
+      <p begin="00:49:29.630" end="00:49:35.140">...research you can connect...search terms to any search back-end or any</p>
+      <p begin="00:49:35.140" end="00:49:39.850">database reservist that's comfortable for you that you're familiar with that you want to use to serve up information</p>
+      <p begin="00:49:39.850" end="00:49:44.430">...provides that really efficient and easy to access model right</p>
+      <p begin="00:49:44.430" end="00:49:48.350">on the windows caspar for users to get access to information so consider how you would</p>
+      <p begin="00:49:48.350" end="00:49:55.840">help your users of your application access that information quickly.</p>
+      <p begin="00:49:55.840" end="00:49:58.920">Complete the hands-on quick start challenges while you're here we have a couple great</p>
+      <p begin="00:49:58.920" end="00:50:04.900">ones this will give you hands-on experience with implementing a lot of what you just saw here.</p>
+      <p begin="00:50:04.900" end="00:50:09.260">And, download the samples...have access to this...linked the adventure work sample</p>
+      <p begin="00:50:09.260" end="00:50:15.410">which you just saw there's also the group post windows web app which you can download and,...track finder</p>
+      <p begin="00:50:15.410" end="00:50:22.720">...we...available for windows phone eight-point one-quarter...coming soon we're going to release that pretty soon for windows ten.</p>
+      <p begin="00:50:22.720" end="00:50:28.880">And, read the...documents for walking you through these things and helping you</p>
+      <p begin="00:50:28.880" end="00:50:34.980">get started ...commands we spend a lot of time on speech interactions in your app this is</p>
+      <p begin="00:50:34.980" end="00:50:38.880">the topic we're going to covering the six thirty session right in this room...bit like a</p>
+      <p begin="00:50:38.880" end="00:50:44.050">...later today this is what I was referring to earlier which is about enabling</p>
+      <p begin="00:50:44.050" end="00:50:49.220">your...speech inside of your applications and then third visit the bing</p>
+      <p begin="00:50:49.220" end="00:50:54.440">developer center some really great features we're introducing to enable so,</p>
+      <p begin="00:50:54.440" end="00:50:56.940">today these capabilities allow your application</p>
+      <p begin="00:50:56.940" end="00:51:01.700">to be served up during search results on...dot com and,</p>
+      <p begin="00:51:01.700" end="00:51:06.110">deep linked into the app through search results on the web that's a capability that</p>
+      <p begin="00:51:06.110" end="00:51:11.990">we're looking to introduced during the windows ten timeframe to core tunnel.</p>
+      <p begin="00:51:11.990" end="00:51:18.350">So, there's a lot more a...great information on that on the thing developer center.</p>
+      <p begin="00:51:18.350" end="00:51:22.630">And,...here I need to...talks related to this one so first</p>
+      <p begin="00:51:22.630" end="00:51:27.180">...indep session on what I was talking about the goes a lot more depth on the how would you build this her</p>
+      <p begin="00:51:27.180" end="00:51:32.080">have some of the implementation details will also go into the details of the</p>
+      <p begin="00:51:32.080" end="00:51:38.600">speech platform apis you can use inside of your app that's right here at six thirty so take a break come</p>
+      <p begin="00:51:40.570" end="00:51:44.740">Building with bing so this is a session that's going to go very deep on the...linking scenarios...</p>
+      <p begin="00:51:44.740" end="00:51:50.240">was just mentioning this is going to talk specifically through the web about the web but they're going to touch on the</p>
+      <p begin="00:51:50.240" end="00:51:54.990">...stuff as well so makes make sure...that's an area of interest being discover discovered through</p>
+      <p begin="00:51:54.990" end="00:51:56.660">...how your</p>
+      <p begin="00:51:56.660" end="00:52:01.570">actions in your applications can get discover through search queries so they can appear in court</p>
+      <p begin="00:52:01.570" end="00:52:04.890">...definitely take a look at that the specific focus of</p>
+      <p begin="00:52:04.890" end="00:52:10.130">was saying this is going to be available the windows ten timeframe there's a few segments that are support that</p>
+      <p begin="00:52:10.130" end="00:52:14.940">this capabilities...support initially which is...movies and,</p>
+      <p begin="00:52:14.940" end="00:52:19.130">books so if you are in the idea is that over time</p>
+      <p begin="00:52:19.130" end="00:52:23.520">that sort of domains that this applicant concept support is going to grow so,</p>
+      <p begin="00:52:23.520" end="00:52:29.440">definitely check that out if that's of...you being more discoverable through core...through the web.</p>
+      <p begin="00:52:29.440" end="00:52:33.590">The third one is tomorrow as research public</p>
+      <p begin="00:52:33.590" end="00:52:36.820">castro excellent speaker wonderful person he</p>
+      <p begin="00:52:36.820" end="00:52:44.940">...was going to go super deep on the...research service.</p>
+      <p begin="00:52:44.940" end="00:52:50.760">Posted web apps and web app platform this talk already has happened but,</p>
+      <p begin="00:52:50.760" end="00:52:59.220">I've listed...to be recorded so you can access this at a later time.</p>
+      <p begin="00:52:59.220" end="00:53:04.270">And, finally the altering session which is already happened this is we there is an example of accord</p>
+      <p begin="00:53:04.270" end="00:53:08.900">...integration for home automation scenario so that's another way you can leverage these ways</p>
+      <p begin="00:53:08.900" end="00:53:12.060">...home automation scenarios again,</p>
+      <p begin="00:53:12.060" end="00:53:16.750">this session is already happened but you can be sure to check that out all the</p>
+      <p begin="00:53:16.750" end="00:53:25.720">recorded session deceit...kind ofhow that would working what they've done to use all join connected...</p>
+      <p begin="00:53:25.720" end="00:53:29.910">All right and...that would love for you to evaluate the session and provide</p>
+      <p begin="00:53:29.910" end="00:53:35.830">your feedback and we're going to take cue in a and then after the sessions we're going-to be heading</p>
+      <p begin="00:53:35.830" end="00:53:41.070">over to the windows insiders lounge both an eye and other members of the team so if you have any questions</p>
+      <p begin="00:53:41.070" end="00:53:51.240">would like some more than happy to talk and, have deeper conversation about things?</p>
+
+    </div>
+  </body>
+</tt>

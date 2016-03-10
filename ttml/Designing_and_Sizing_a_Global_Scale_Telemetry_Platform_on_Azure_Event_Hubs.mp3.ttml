@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.917</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.660" end="00:00:04.290">Hi, my name's generous nova senior program manager in the hyper scale</p>
+      <p begin="00:00:04.290" end="00:00:05.920">...io team and I'm here</p>
+      <p begin="00:00:05.920" end="00:00:13.380">today's talk about designing and sizing a global scale telemetry platform and measure event hubs.</p>
+      <p begin="00:00:13.380" end="00:00:17.990">Today we're going to cover what telemetry really is especially in the cloud context why it's</p>
+      <p begin="00:00:17.990" end="00:00:22.080">so important now however has makes it easy.</p>
+      <p begin="00:00:22.080" end="00:00:26.870">And, how to scale your telemetry for global application...end with how</p>
+      <p begin="00:00:26.870" end="00:00:32.709">...services add to your telemetry pipeline to give you more value?</p>
+      <p begin="00:00:32.709" end="00:00:36.139">...never been more important...it is now especially with cloud</p>
+      <p begin="00:00:36.139" end="00:00:39.869">computing it's more necessary than ever was in the past is also more valuable.</p>
+      <p begin="00:00:40.939" end="00:00:46.760">But, it's also more complex than it's ever been...a greater challenge than it's ever been.</p>
+      <p begin="00:00:46.760" end="00:00:51.500">So, how did telemetry become so complex it's really a simple concept just track what's going on</p>
+      <p begin="00:00:51.500" end="00:00:53.010">and where?</p>
+      <p begin="00:00:53.010" end="00:00:57.850">We really have to go back a little time travel here and see where this came to be if we look in the</p>
+      <p begin="00:00:57.850" end="00:01:02.710">...days we see the main-frame architecture which is common for computer systems</p>
+      <p begin="00:01:02.710" end="00:01:07.640">everything was in one place there was one clock that ruled everything was very easy to make sure everything</p>
+      <p begin="00:01:07.640" end="00:01:12.850">was in order of the terminal screen the green screen here on this was never actually even</p>
+      <p begin="00:01:12.850" end="00:01:16.670">a client itself it had no capabilities of its own wasn't usually even on a</p>
+      <p begin="00:01:16.670" end="00:01:22.660">network so this is a fairly easy system to implement telemetry and tracking.</p>
+      <p begin="00:01:22.660" end="00:01:28.000">After that and...not quite so old dayswe got in the client server architecture and,</p>
+      <p begin="00:01:28.000" end="00:01:32.180">this actually broke the telemetry into two different places client telemetry based on what the user</p>
+      <p begin="00:01:32.180" end="00:01:36.590">was doing what they were experiencing and server telemetry.</p>
+      <p begin="00:01:36.590" end="00:01:40.570">More recently that broke out into three...architecture tiered architecture three</p>
+      <p begin="00:01:40.570" end="00:01:45.360">...being most common and we divided the application server from something like database server the</p>
+      <p begin="00:01:45.360" end="00:01:49.390">most common approach and, now we had a proliferation of logs their</p>
+      <p begin="00:01:49.390" end="00:01:53.670">...in the client their logs on the application server...different logs in the database</p>
+      <p begin="00:01:53.670" end="00:01:58.530">server and, to makes even worse you have many clients each with their own logs and many</p>
+      <p begin="00:01:58.530" end="00:02:03.390">application servers database servers you scale this architecture out which is one of its key points</p>
+      <p begin="00:02:03.390" end="00:02:07.440">...it so useful.</p>
+      <p begin="00:02:07.440" end="00:02:13.140">More recently we've moved and, still very popular...enterprise space and this actually</p>
+      <p begin="00:02:13.140" end="00:02:16.890">compounds...problem even worse we have more of an integration approach</p>
+      <p begin="00:02:16.890" end="00:02:19.660">and many systems tied together through some sort of integration</p>
+      <p begin="00:02:19.660" end="00:02:24.470">platform and each of these systems are usually tiered architecture of their own so now you have</p>
+      <p begin="00:02:24.470" end="00:02:28.460">a logs that you don't even know about in places you don't know about and,</p>
+      <p begin="00:02:28.460" end="00:02:33.180">it's very hard to figure out exactly what's happening when you look for problems in the system</p>
+      <p begin="00:02:33.180" end="00:02:39.070">closest usually get is tracing what's happening integration layer which is only part of the problem.</p>
+      <p begin="00:02:39.070" end="00:02:45.260">Then we...it's cloud now it's not so clear cloud workloads are very</p>
+      <p begin="00:02:45.260" end="00:02:50.850">...you might have scaling up and down automatically in your cloud</p>
+      <p begin="00:02:50.850" end="00:02:54.980">Components can be running in different...might be services that you don't run yourself and</p>
+      <p begin="00:02:54.980" end="00:02:59.220">you use from others are going to...things like paths services</p>
+      <p begin="00:02:59.220" end="00:03:03.740">...service with...service so you have different types of</p>
+      <p begin="00:03:03.740" end="00:03:08.160">logs with different characteristics but they're all still necessary for</p>
+      <p begin="00:03:08.160" end="00:03:12.990">...system undoubtedly...his is improved...computing landscape</p>
+      <p begin="00:03:12.990" end="00:03:17.720">increased our agility...capabilities you look at small companies today can</p>
+      <p begin="00:03:17.720" end="00:03:21.800">go to global scale with very few employees you can think of some of the most famous</p>
+      <p begin="00:03:21.800" end="00:03:25.550">startups in the last few years in that way but,</p>
+      <p begin="00:03:25.550" end="00:03:29.160">visibility measure ability have often come at a price when moving to the</p>
+      <p begin="00:03:29.160" end="00:03:32.160">cloud especially if you don't plan for carefully and,</p>
+      <p begin="00:03:32.160" end="00:03:36.770">this really shows itself in any of these architectures when someone says it's</p>
+      <p begin="00:03:36.770" end="00:03:40.070">...what you do when someone comes to you and says</p>
+      <p begin="00:03:40.070" end="00:03:44.620">...in distributed computing system and cloud...the ultimate edge of distributed</p>
+      <p begin="00:03:44.620" end="00:03:47.780">...it's really hard to see what slow means</p>
+      <p begin="00:03:47.780" end="00:03:52.490">...you have one of extreme which is the user and then one extreme which is individual service</p>
+      <p begin="00:03:52.490" end="00:03:58.450">components or even physical components in that in that system so before I talk about</p>
+      <p begin="00:03:58.450" end="00:04:03.980">that and demise and moment for the day which is that what you can't measure you can't manage</p>
+      <p begin="00:04:03.980" end="00:04:08.820">and really that's about continuous improvement and quality management so,</p>
+      <p begin="00:04:08.820" end="00:04:14.480">you can always see how your systems are reacting the good news is that event...makes telemetry really, really</p>
+      <p begin="00:04:14.480" end="00:04:19.100">easy even a cloud scale it's easy to ploy...scale?</p>
+      <p begin="00:04:20.140" end="00:04:24.750">It's easy to integrate with other services or to write to in read from and</p>
+      <p begin="00:04:24.750" end="00:04:25.900">it's very cost-effective.</p>
+      <p begin="00:04:27.210" end="00:04:29.940">Let's walk through a very simple example let's</p>
+      <p begin="00:04:29.940" end="00:04:35.780">say fictitious company walk about it would be a dog walking service matches</p>
+      <p begin="00:04:35.780" end="00:04:40.190">dog walkers with pet owners in need of walk the walks actually for the</p>
+      <p begin="00:04:40.190" end="00:04:42.730">...not pet owners so, be like</p>
+      <p begin="00:04:42.730" end="00:04:48.020">...for...I...service not too different from this for scheduling</p>
+      <p begin="00:04:48.020" end="00:04:52.000">who watch my diagram out-of-town actually could use this right now so,</p>
+      <p begin="00:04:52.000" end="00:04:54.240">when you look at...typical applet this is going to</p>
+      <p begin="00:04:54.240" end="00:04:58.350">have some sort of mobile component usually there's going to be user so there's a</p>
+      <p begin="00:04:58.350" end="00:05:02.870">user using the system that's why it exists you can have a series of cloud services that</p>
+      <p begin="00:05:02.870" end="00:05:05.990">allows application function...probably...api</p>
+      <p begin="00:05:05.990" end="00:05:10.880">...it some sort of compute layer behind that almost certainly some sort of database</p>
+      <p begin="00:05:10.880" end="00:05:14.620">like...leisure some sort of storage notifications and</p>
+      <p begin="00:05:14.620" end="00:05:20.160">probably some external servicesthat...may not control and they may not be part of</p>
+      <p begin="00:05:20.160" end="00:05:27.400">measure for things like I don't know credit card charges other things like that so,</p>
+      <p begin="00:05:27.400" end="00:05:29.250">let's think about what this system really</p>
+      <p begin="00:05:29.250" end="00:05:33.730">looks like they're actually three different aspects of telemetry going on here?</p>
+      <p begin="00:05:33.730" end="00:05:35.480">The first is user journey this is</p>
+      <p begin="00:05:35.480" end="00:05:40.150">important thing track especially from a sort of a qualitative standpoint in how your users</p>
+      <p begin="00:05:40.150" end="00:05:44.850">are experiencing your application separate from that is client app performance this</p>
+      <p begin="00:05:44.850" end="00:05:48.280">is also really critical you can make a good decisions</p>
+      <p begin="00:05:48.280" end="00:05:53.600">or bad decisions based on how your application is performing...the client and then finally there's</p>
+      <p begin="00:05:53.600" end="00:05:58.610">a service performance which really encapsulates a whole lot of this it's easy to say this is one</p>
+      <p begin="00:05:58.610" end="00:06:02.940">system but they're really three distinct aspects of telemetry and it's very tempting to</p>
+      <p begin="00:06:02.940" end="00:06:06.970">...them in different ways.</p>
+      <p begin="00:06:06.970" end="00:06:10.120">This actually gets even more complicated because you might think that</p>
+      <p begin="00:06:10.120" end="00:06:15.470">well this isn't too much workload this isn't too big of an application it's not going</p>
+      <p begin="00:06:15.470" end="00:06:20.790">to be doing too much but if you think about the user journey so one entry and user</p>
+      <p begin="00:06:20.790" end="00:06:26.170">journey logging would be booking someone to walk my dog to do that I'm probably going to have to</p>
+      <p begin="00:06:26.170" end="00:06:30.460">...client several times I'd say probably six different</p>
+      <p begin="00:06:30.460" end="00:06:35.310">...the app interactions of between sending requests and receiving responses</p>
+      <p begin="00:06:35.310" end="00:06:40.410">presenting menus to the user things like that and...the service back-end for that is probably going to have</p>
+      <p begin="00:06:40.410" end="00:06:44.830">to forty different service operations for those six requests so across</p>
+      <p begin="00:06:44.830" end="00:06:49.770">the six requests so when you look at this you actually start piling up a tremendous</p>
+      <p begin="00:06:49.770" end="00:06:54.230">amount of telemetry already and you've ...more</p>
+      <p begin="00:06:54.230" end="00:06:59.750">complicated by having different aspects of telemetry which are all useful to you but even for a small</p>
+      <p begin="00:06:59.750" end="00:07:04.460">applications like for instance this is app in one big metro area you might have ten</p>
+      <p begin="00:07:04.460" end="00:07:07.970">thousand users who interacts twice today with the application.</p>
+      <p begin="00:07:09.290" end="00:07:12.950">And, really produce forty-seven events per interaction</p>
+      <p begin="00:07:12.950" end="00:07:15.770">you're actually talking about nine hundred forty thousand things to</p>
+      <p begin="00:07:15.770" end="00:07:20.850">...per day so, that's actually get in be a pretty big number, you know,</p>
+      <p begin="00:07:20.850" end="00:07:25.920">this goes from being beyond what you could just figure out really easily and casually to being</p>
+      <p begin="00:07:25.920" end="00:07:30.600">a bit of a challenge and now imagine if you didn't have ten thousand users imagine if you are in a lot of</p>
+      <p begin="00:07:30.600" end="00:07:33.040">markets good million users, you know,</p>
+      <p begin="00:07:33.040" end="00:07:38.400">keep adding...that andyou actually get into this place where your events will actually</p>
+      <p begin="00:07:38.400" end="00:07:42.650">trigger chain reaction of other events...you can see where that's going to</p>
+      <p begin="00:07:42.650" end="00:07:46.950">...not anywhere good actually.</p>
+      <p begin="00:07:46.950" end="00:07:51.080">In the past most the logging in our systems actually I want to see past I'd say</p>
+      <p begin="00:07:51.080" end="00:07:53.920">current currently most logging is done by</p>
+      <p begin="00:07:53.920" end="00:07:58.980">each component separately so you get you to get some sort of move in a while ago to</p>
+      <p begin="00:07:58.980" end="00:08:04.060">use logging frameworks at least on the service side...those are really useful but,</p>
+      <p begin="00:08:04.060" end="00:08:08.860">even when you...it's really independent logging independent on each server in</p>
+      <p begin="00:08:08.860" end="00:08:13.820">the system independent on each service in the system and it's really up to the system</p>
+      <p begin="00:08:13.820" end="00:08:18.680">administrators to collect those logs to shuffle them back together and try and</p>
+      <p begin="00:08:18.680" end="00:08:23.610">make sense out of them to see what's going on and, that can be a big...usually only happens</p>
+      <p begin="00:08:23.610" end="00:08:28.080">when something's gone wrong when someone says it's slow and you have to start figuring out what's going</p>
+      <p begin="00:08:28.080" end="00:08:32.880">wrong so this really makes a telemetry logging in current context viewed</p>
+      <p begin="00:08:32.880" end="00:08:39.260">more as a troubleshooting process...hubs changing this event...provides</p>
+      <p begin="00:08:39.260" end="00:08:44.360">ad centralized logging service that is cloud scale and has</p>
+      <p begin="00:08:44.360" end="00:08:48.680">built-in partitioning semantics which is the key to the scale</p>
+      <p begin="00:08:48.680" end="00:08:50.100">model?</p>
+      <p begin="00:08:50.100" end="00:08:53.730">This is a partition consumer model so what makes something a partition</p>
+      <p begin="00:08:53.730" end="00:08:59.280">consumer model it's a model that removes locks so you're moving away from</p>
+      <p begin="00:08:59.280" end="00:09:02.760">the central locking and contention model which would be can</p>
+      <p begin="00:09:02.760" end="00:09:06.650">competing consumer model into the partition consumer model</p>
+      <p begin="00:09:06.650" end="00:09:11.250">it scales out with more partitions rather than up there's always an upper limit to</p>
+      <p begin="00:09:11.250" end="00:09:13.630">how you can scale something and,</p>
+      <p begin="00:09:13.630" end="00:09:18.580">...cloud scales all about scaling out so,...really it's a logical opposite</p>
+      <p begin="00:09:18.580" end="00:09:23.560">of competing consumers and anything involving locking so databases things like that are going to be</p>
+      <p begin="00:09:23.560" end="00:09:30.390">your examples or your typical competing...they'll have a finite point which...to?</p>
+      <p begin="00:09:30.390" end="00:09:35.050">So, how does partition consumer work how does this work in about how does event hums really enable</p>
+      <p begin="00:09:35.050" end="00:09:39.270">...scale that we claim that it does event</p>
+      <p begin="00:09:39.270" end="00:09:43.030">...is actually made up of a set of partitions in each</p>
+      <p begin="00:09:43.030" end="00:09:48.780">of those partitions actually contains independent buffer of events within it?</p>
+      <p begin="00:09:48.780" end="00:09:50.480">Those events are ordered from oldest</p>
+      <p begin="00:09:50.480" end="00:09:54.500">newest and they really are functioning independently so,</p>
+      <p begin="00:09:54.500" end="00:09:58.460">partition one is unawares events in partition...</p>
+      <p begin="00:09:58.460" end="00:10:04.740">Event producers don't actually see the partitions normally they just send advanced into an event hub.</p>
+      <p begin="00:10:04.740" end="00:10:08.580">A couple choice about how to do that actually two choices they can do three http or</p>
+      <p begin="00:10:08.580" end="00:10:10.210">...qb and.</p>
+      <p begin="00:10:10.210" end="00:10:13.840">They can also have some other features like using a partition key to group</p>
+      <p begin="00:10:13.840" end="00:10:17.210">their events together not they pick which partition those...go-to</p>
+      <p begin="00:10:17.210" end="00:10:21.920">...they'll know that...events are always together for downstream systems to consume this can</p>
+      <p begin="00:10:21.920" end="00:10:27.830">be really useful for data locality so that if you need to do stream processing</p>
+      <p begin="00:10:27.830" end="00:10:33.670">or moving averages or anything like that all the events for a particular publisher in the same place when</p>
+      <p begin="00:10:33.670" end="00:10:38.480">...reading out of events of an...reading works a little bit differently and</p>
+      <p begin="00:10:38.480" end="00:10:43.080">this is where the partition consumer part comes event receivers are all readers</p>
+      <p begin="00:10:43.080" end="00:10:49.060">...consumers and they all access event hubs through a consumer group.</p>
+      <p begin="00:10:49.060" end="00:10:52.310">The collection of readers for each partition...event...is called</p>
+      <p begin="00:10:52.310" end="00:10:57.990">the consumer group and each partition does need...reader in order to read the entire stream.</p>
+      <p begin="00:10:57.990" end="00:11:01.340">This means that none of the readers are competing with each other to read that stream</p>
+      <p begin="00:11:01.340" end="00:11:05.920">...exclusively reading that stream.</p>
+      <p begin="00:11:05.920" end="00:11:07.970">You can actually use consumer groups have multiple</p>
+      <p begin="00:11:07.970" end="00:11:13.360">sat of readers reading the entire stream again each reader reading one partition within</p>
+      <p begin="00:11:13.360" end="00:11:17.710">that consumer group so this enables a sort of a pubs sub semantically for this</p>
+      <p begin="00:11:17.710" end="00:11:22.030">is the responsibility of the readers to keep track of where they are and that stream within</p>
+      <p begin="00:11:22.030" end="00:11:26.880">that consumer group within that partition so each consumer group can have separate offsets</p>
+      <p begin="00:11:26.880" end="00:11:31.120">their reading their streams from.</p>
+      <p begin="00:11:31.120" end="00:11:36.110">Setting events to...is very easy also here's an example of sending http post</p>
+      <p begin="00:11:36.110" end="00:11:39.990">to have a I chose this just because it's the easiest to read and,</p>
+      <p begin="00:11:39.990" end="00:11:44.680">because I don't natively speak in qb although I'm getting close so,</p>
+      <p begin="00:11:44.680" end="00:11:47.850">we do have the to protocols here http or...qb</p>
+      <p begin="00:11:47.850" end="00:11:52.700">...you choose depends on the usage that you're going after and</p>
+      <p begin="00:11:52.700" end="00:11:56.160">wearing your telemetry stack you're going to be if you're going to be on service side</p>
+      <p begin="00:11:56.160" end="00:11:59.390">...lot-of chatty telemetry it's almost always a good</p>
+      <p begin="00:11:59.390" end="00:12:03.060">...using qb it's a very sophisticated protocol</p>
+      <p begin="00:12:03.060" end="00:12:06.850">...message queuing protocol that has things like credit base flow</p>
+      <p begin="00:12:06.850" end="00:12:11.740">control has an open tls sessions you can send multiple events...having to do</p>
+      <p begin="00:12:11.740" end="00:12:17.030">...handshake over again it's really powerful and, we do provide the</p>
+      <p begin="00:12:17.030" end="00:12:20.810">http for in graphically so because a lot of devices and,</p>
+      <p begin="00:12:20.810" end="00:12:23.130">things and, avce use http</p>
+      <p begin="00:12:23.130" end="00:12:27.520">in know http and if you're actually doing very sparse communication like that to</p>
+      <p begin="00:12:27.520" end="00:12:33.050">...day things...the mobile app are you might actually be better off with http here you can see</p>
+      <p begin="00:12:33.050" end="00:12:36.030">the post just goes to a specific address this is</p>
+      <p begin="00:12:36.030" end="00:12:41.000">a mice specific event hub in here I'm setting authorization header which is just a</p>
+      <p begin="00:12:41.000" end="00:12:44.500">...token and a content type</p>
+      <p begin="00:12:44.500" end="00:12:49.270">then I put in some brokered properties so these are header properties for the message you can put</p>
+      <p begin="00:12:49.270" end="00:12:53.580">...under this brokered properties any basic type any primitive typed you like</p>
+      <p begin="00:12:53.580" end="00:12:58.290">and you can see the json message that I've put in here which is the http body</p>
+      <p begin="00:12:58.290" end="00:13:01.480">of...has actually look at the body so we don't do</p>
+      <p begin="00:13:01.480" end="00:13:06.430">any processing with it we never cracking open you can send whatever you want to can be encrypted it doesn't matter it</p>
+      <p begin="00:13:06.430" end="00:13:12.870">won't changer performance that's one of the reasons ...services able scale so well.</p>
+      <p begin="00:13:12.870" end="00:13:18.790">So, when you look at an overall pipeline for processing events measure</p>
+      <p begin="00:13:18.790" end="00:13:21.300">this is sort of the canonical architecture</p>
+      <p begin="00:13:21.300" end="00:13:26.220">...going to look like you can have event producers on one side of these could be applications they</p>
+      <p begin="00:13:26.220" end="00:13:31.000">can be devices they can be other services and,</p>
+      <p begin="00:13:31.000" end="00:13:36.200">they're going to be sending events to some place to be logged this can be through direct</p>
+      <p begin="00:13:36.200" end="00:13:39.250">sense to event...quite common especially for larger devices</p>
+      <p begin="00:13:39.250" end="00:13:43.660">are ip capable devicesthey can use cloud gateways to do some sort of protocol</p>
+      <p begin="00:13:43.660" end="00:13:47.500">translation perhaps a web api or something and,</p>
+      <p begin="00:13:47.500" end="00:13:50.430">then they can also use field gateways for when you get more into io</p>
+      <p begin="00:13:50.430" end="00:13:54.620">t type scenarios which this specific scenario walking through here isn't but</p>
+      <p begin="00:13:54.620" end="00:13:58.890">a lot of our users actually uses for the next stage and that is event</p>
+      <p begin="00:13:58.890" end="00:14:02.910">hubs this is really the in graphs service...is the ingestion</p>
+      <p begin="00:14:02.910" end="00:14:07.470">broker it's going to let the messages flow in and buffer them here to protect</p>
+      <p begin="00:14:07.470" end="00:14:12.180">the downstream components your pipeline which can be other services they might be compute</p>
+      <p begin="00:14:12.180" end="00:14:16.340">...they might be stream analytics which I'll touch on a little bit later</p>
+      <p begin="00:14:16.340" end="00:14:20.960">then after that you're going to get to things like long-term storage and presentation to users</p>
+      <p begin="00:14:20.960" end="00:14:24.940">and, actions you can take on this on this telemetry so,</p>
+      <p begin="00:14:24.940" end="00:14:28.780">the important thing to know when you look at a pipeline for event processing is</p>
+      <p begin="00:14:28.780" end="00:14:33.850">...pipeline is only as strong as the weakest link with it and that is why event</p>
+      <p begin="00:14:33.850" end="00:14:38.330">hubs is so important for building scaleable telemetry pipeline because sense it's a</p>
+      <p begin="00:14:38.330" end="00:14:42.440">buffer disconnects the upstream so the in grafting events from the downstream or</p>
+      <p begin="00:14:42.440" end="00:14:47.730">consumers of those events so if you have a flood of in...over-loaded your?</p>
+      <p begin="00:14:47.730" end="00:14:51.760">...without that if you don't have something that's a buffer</p>
+      <p begin="00:14:51.760" end="00:14:54.710">in-between your publishers of events in your consumers</p>
+      <p begin="00:14:54.710" end="00:14:59.030">...you're very likely going to get some pretty nasty scale problems</p>
+      <p begin="00:14:59.030" end="00:15:06.550">...will break and what's the right way to say in elegant fashion the sort of fall over.</p>
+      <p begin="00:15:06.550" end="00:15:10.590">So, the first-place start thinking about scale is really in the center of this pipeline although it's not</p>
+      <p begin="00:15:10.590" end="00:15:15.420">them the only place you have to think about scale in the entire pipeline so let's talk about how</p>
+      <p begin="00:15:15.420" end="00:15:16.830">...have skills...really</p>
+      <p begin="00:15:16.830" end="00:15:21.190">...mechanisms for this one we've talked about a little bit is partitions,</p>
+      <p begin="00:15:21.190" end="00:15:25.740">partitions are set...have creation time and they're really not so</p>
+      <p begin="00:15:25.740" end="00:15:31.060">much about scale in the event have as scale downstream the event the</p>
+      <p begin="00:15:31.060" end="00:15:35.370">...partitions is really fundamentally about the maximum degree of downstream</p>
+      <p begin="00:15:35.370" end="00:15:39.930">parallelism in more simple terms I guess that means how many active</p>
+      <p begin="00:15:39.930" end="00:15:44.500">readers you're going to have reading from that telemetry stream at one-time recalling</p>
+      <p begin="00:15:44.500" end="00:15:49.550">that each reader needs to be reading from one partition in order for it to be not</p>
+      <p begin="00:15:49.550" end="00:15:53.930">a competing consumer in order for to be a partition consumer model so partitions are really</p>
+      <p begin="00:15:53.930" end="00:15:58.640">more about downstream parallelism than they are about...</p>
+      <p begin="00:15:58.640" end="00:16:04.980">Event...themselves are really governed by throughput units throughput unit is a variable reserved</p>
+      <p begin="00:16:04.980" end="00:16:08.360">capacity it's variable in that it's a available hourly</p>
+      <p begin="00:16:08.360" end="00:16:12.600">you reservist and you're paying for it before so you reserve it for that</p>
+      <p begin="00:16:12.600" end="00:16:16.720">hour or as many hours you want and entitles you to in</p>
+      <p begin="00:16:16.720" end="00:16:21.700">gras one megabytes per second of telemetry or one thousand events per second</p>
+      <p begin="00:16:21.700" end="00:16:29.310">so that's the amount coming in whichever those limits you hit first is going to limit for that throughput unit.</p>
+      <p begin="00:16:29.310" end="00:16:33.530">Also entitles you to egress it to megabytes per second or two thousand events per</p>
+      <p begin="00:16:33.530" end="00:16:37.530">second so, we do throttle on both of these.</p>
+      <p begin="00:16:37.530" end="00:16:42.300">Throughput units are name space wide what really means is that namespaces for the top-level container</p>
+      <p begin="00:16:42.300" end="00:16:45.800">in-service process...is what event...part of</p>
+      <p begin="00:16:45.800" end="00:16:49.450">...so the capacity the reserving throughput</p>
+      <p begin="00:16:49.450" end="00:16:54.370">units is divided among all the event hubs within your name space if you only have one of an have that</p>
+      <p begin="00:16:54.370" end="00:16:58.160">makes...pretty easy just for that one.</p>
+      <p begin="00:16:58.160" end="00:17:02.030">Importantly over edges are throttled and their throttled evenly across event</p>
+      <p begin="00:17:02.030" end="00:17:06.830">...if you have multiple namespaces or multiple...hubs and even if you have multiple</p>
+      <p begin="00:17:06.830" end="00:17:11.170">active readers and writers it's not that whoever got their first gets all</p>
+      <p begin="00:17:11.170" end="00:17:16.950">the capacity it's that when we see that your exceeding your limited of reserve throughput</p>
+      <p begin="00:17:16.950" end="00:17:17.860">...throttle all</p>
+      <p begin="00:17:17.860" end="00:17:23.990">centres or all receivers based on which metric your exceeding so it's a lot fairness built into the</p>
+      <p begin="00:17:23.990" end="00:17:28.650">throttled which is also important for protecting your downstream system and protecting</p>
+      <p begin="00:17:28.650" end="00:17:35.070">your upstream senders in fact so you don't really sort of...yourself with telemetry?</p>
+      <p begin="00:17:35.070" end="00:17:37.250">How you scale throughput units are a couple ways to do</p>
+      <p begin="00:17:37.250" end="00:17:42.060">this one is the hourly way that I mentioned it's through the portal or</p>
+      <p begin="00:17:42.060" end="00:17:46.110">through rest call you can select anywhere between one and twenty throughput</p>
+      <p begin="00:17:46.110" end="00:17:51.120">units this actually enables you to scale-up to</p>
+      <p begin="00:17:51.120" end="00:17:54.670">twenty thousand events per second in graphs that's pretty big, you know,</p>
+      <p begin="00:17:54.670" end="00:18:00.400">one kilobyte twenty megabytes per second regress it's a pretty big though amount of...that comes out</p>
+      <p begin="00:18:00.400" end="00:18:05.070">...one-point-six something billion events per day so,</p>
+      <p begin="00:18:05.070" end="00:18:10.290">you're already started...pretty big numbers if you need more that and we do have customers anymore</p>
+      <p begin="00:18:10.290" end="00:18:15.420">than that we do a grant blocks of twenty throughput units at a time up</p>
+      <p begin="00:18:15.420" end="00:18:20.230">to one hundred you need to do a support ticket to do this rights manager portal but, when you do this</p>
+      <p begin="00:18:20.230" end="00:18:25.410">...no longer variable hourly charge it's a fixed charge all the time one thing keep in mind though</p>
+      <p begin="00:18:25.410" end="00:18:30.110">...the throughput...is only part of the cost of event hubs you also pay for egress in</p>
+      <p begin="00:18:30.110" end="00:18:34.870">graphs actually comes out to be the bigger number so-if you have throughput units...not filling</p>
+      <p begin="00:18:34.870" end="00:18:42.290">them up it's not really that big of a deal because the bigger numbers the actual events your publishing?</p>
+      <p begin="00:18:42.290" end="00:18:45.670">Finally if you need more than that and we do have a couple customers the</p>
+      <p begin="00:18:45.670" end="00:18:48.410">to we have a lot more internally but we have some public</p>
+      <p begin="00:18:48.410" end="00:18:53.090">ones we can talk about options for two hundred fifty megabytes per</p>
+      <p begin="00:18:53.090" end="00:18:57.820">second five hundred megabytes per second her gigabyte per second so if you really need that you need</p>
+      <p begin="00:18:57.820" end="00:19:02.790">to work with us this is not a short-term commitment sort of thing this does require long-term commitments and</p>
+      <p begin="00:19:02.790" end="00:19:07.230">partnership and planning but, we can grant you that capacity.</p>
+      <p begin="00:19:07.230" end="00:19:11.520">So, now that you have the basics of how your skate...scaling a single event</p>
+      <p begin="00:19:11.520" end="00:19:16.020">...single name space let's talk about how you're actually scaling your telemetry</p>
+      <p begin="00:19:16.020" end="00:19:21.390">...again remembering the center that pipeline is about hubs</p>
+      <p begin="00:19:21.390" end="00:19:26.120">Really throughput units are going to be your ultimate capacity cap so that's going to be your limit that</p>
+      <p begin="00:19:26.120" end="00:19:31.800">...be what you'll hit first at least and, it's important remember that you should size</p>
+      <p begin="00:19:31.800" end="00:19:36.760">for reasonable expected mid-term value this is cloud you can change it,</p>
+      <p begin="00:19:36.760" end="00:19:37.480">you know,</p>
+      <p begin="00:19:37.480" end="00:19:41.940">you can't change the number of partitions but you can create another event have nothing stops</p>
+      <p begin="00:19:41.940" end="00:19:43.690">you from that and,</p>
+      <p begin="00:19:43.690" end="00:19:48.610">it's really important not to plan for some sort of maximum optimistic long-term theoretical</p>
+      <p begin="00:19:48.610" end="00:19:54.290">scale limit that you might hit some day if everything goes great because you know,</p>
+      <p begin="00:19:54.290" end="00:19:57.180">why not do that that's kinda how the main framework to,</p>
+      <p begin="00:19:57.180" end="00:20:03.150">you know, that's a mentality...is trying to scale-up rather than out so,</p>
+      <p begin="00:20:03.150" end="00:20:07.100">this really ties you into decisions that you may not may not be happy with the future</p>
+      <p begin="00:20:07.100" end="00:20:12.090">...futures totally unknown to...you're starting out...building your service and you know,</p>
+      <p begin="00:20:12.090" end="00:20:17.320">it will change so important things keep in mind this is software, you know,</p>
+      <p begin="00:20:17.320" end="00:20:23.260">it should be soft each be flexible don't try and think about it like hardware it's kinda one of the dangers of these</p>
+      <p begin="00:20:23.260" end="00:20:27.380">building architectural analogies that people often uses software and,</p>
+      <p begin="00:20:27.380" end="00:20:31.620">then finally let's talk about real scale now I would think about scaling</p>
+      <p begin="00:20:31.620" end="00:20:35.960">your telemetry pipeline and your application general the way that we scale asher</p>
+      <p begin="00:20:35.960" end="00:20:39.180">or at least I can speak pretty confidently to the way we scale service</p>
+      <p begin="00:20:39.180" end="00:20:45.260">...asher and that's the concept of scale unit so what is a scale you it's</p>
+      <p begin="00:20:45.260" end="00:20:50.610">...independent vertical slice...that's built-in designed and tested to</p>
+      <p begin="00:20:50.610" end="00:20:55.130">support...specific...workload so that could be a number of users number devices</p>
+      <p begin="00:20:55.130" end="00:20:56.880">...amount of traffic and it</p>
+      <p begin="00:20:56.880" end="00:21:02.130">is complete vertical independent sliceusing scale...a good idea we do it for a few</p>
+      <p begin="00:21:02.130" end="00:21:07.070">reasons one of them is geo proximity especially if you're doing something like an app that users</p>
+      <p begin="00:21:07.070" end="00:21:11.510">are using interactively you want to have the latency times those users bs as</p>
+      <p begin="00:21:11.510" end="00:21:15.730">low as possible so putting your app in different locations around the world in different</p>
+      <p begin="00:21:15.730" end="00:21:17.900">...your datacenters regions will</p>
+      <p begin="00:21:17.900" end="00:21:23.410">make it much more responsive it also gives you better availability...a disaster</p>
+      <p begin="00:21:23.410" end="00:21:28.800">in one region might bring down...region if it's a big enough disaster something like an earthquake but,</p>
+      <p begin="00:21:28.800" end="00:21:34.070">you actually bison diversification by placing your application around the world</p>
+      <p begin="00:21:34.070" end="00:21:38.990">sort of like investing, you know,...diversification is the only free-lunch and,</p>
+      <p begin="00:21:38.990" end="00:21:43.240">finally you get the ability to...up an out when you use this sort of scale</p>
+      <p begin="00:21:43.240" end="00:21:48.390">unit model you can scale-up by making an individual scale unit bigger giving</p>
+      <p begin="00:21:48.390" end="00:21:53.880">it more throughput units more compute instances whatever your resources your bumping against</p>
+      <p begin="00:21:53.880" end="00:21:58.010">you need and you can scale it out by putting more of those throughput units in the same</p>
+      <p begin="00:21:58.010" end="00:22:04.430">regent or into more and more geographic regions so the what is a soc like when you actually</p>
+      <p begin="00:22:04.430" end="00:22:08.150">deploy this it's pretty easy and it's getting a lot easier now with</p>
+      <p begin="00:22:08.150" end="00:22:14.060">our new arm in a resource providers measure you basically just stamp</p>
+      <p begin="00:22:14.060" end="00:22:19.410">out the exact application exec stack in different places around the worldso,</p>
+      <p begin="00:22:19.410" end="00:22:23.230">this gives you again all those three attributes that I talked about the really useful</p>
+      <p begin="00:22:23.230" end="00:22:29.840">for-you about availability about proximity...about independent scale?</p>
+      <p begin="00:22:29.840" end="00:22:36.340">So, in this case this is exactly what this look like having datacenter spread around the world where users are.</p>
+      <p begin="00:22:36.340" end="00:22:40.650">So, how much can you really scale with this approach let's just not even get in the</p>
+      <p begin="00:22:40.650" end="00:22:46.330">call model let's think about just pure telemetry pipeline stuff we can stuff we've...stuff to work</p>
+      <p begin="00:22:46.330" end="00:22:51.220">in public so you probably don't have to call anyone before you have to call the event...team and,</p>
+      <p begin="00:22:51.220" end="00:22:55.010">let's think about for skill units round-the-world from the previous slide?</p>
+      <p begin="00:22:55.010" end="00:23:00.590">If you to rtwelve throughput units per scale unit so, you're talking about a capacity for up to</p>
+      <p begin="00:23:00.590" end="00:23:05.130">twelve thousand messages a second in each these for...you're dealing with one kilobyte</p>
+      <p begin="00:23:05.130" end="00:23:08.960">events you're going to a two point eight million events per minute as</p>
+      <p begin="00:23:08.960" end="00:23:14.530">your upward limitthat's a pretty big aggregate throughput and,</p>
+      <p begin="00:23:14.530" end="00:23:16.080">that's going to give you four billion events per</p>
+      <p begin="00:23:16.080" end="00:23:20.980">day and change so that's pretty big and if you look at that in data size since these are</p>
+      <p begin="00:23:20.980" end="00:23:25.750">one kilobyte messages four-point-one terabytes of data that's it that's tremendous amount of</p>
+      <p begin="00:23:25.750" end="00:23:30.440">...your very quickly going to reach the point where processing that amount</p>
+      <p begin="00:23:30.440" end="00:23:35.380">of telemetry is actually becoming more of a challenge than actually acquiring that amount of</p>
+      <p begin="00:23:35.380" end="00:23:40.110">the telemetry that's another way the scale unit model is going to help,</p>
+      <p begin="00:23:40.110" end="00:23:40.700">you know,</p>
+      <p begin="00:23:40.700" end="00:23:45.470">it's breaking a big problem down into smaller problems and solving them...you can still</p>
+      <p begin="00:23:45.470" end="00:23:52.410">aggregate things after the first stage but this is really the best model to do this with.</p>
+      <p begin="00:23:52.410" end="00:23:54.680">Next I want to talk a little bit.</p>
+      <p begin="00:23:54.680" end="00:23:58.260">About reading...processing events so the first thing I want covers</p>
+      <p begin="00:23:58.260" end="00:24:01.260">event processor host this is an intelligent agent</p>
+      <p begin="00:24:01.260" end="00:24:05.890">for of reading from event hubs that we've built for a dot net clients or working on other</p>
+      <p begin="00:24:05.890" end="00:24:10.370">languages as well it has some really slick features in it so it has automatic load</p>
+      <p begin="00:24:10.370" end="00:24:16.040">balancing partition management meaning who owns which partition and, the</p>
+      <p begin="00:24:16.040" end="00:24:20.940">client-side checkpoint...client-side cursor capabilities that you require when working with event hubs so</p>
+      <p begin="00:24:20.940" end="00:24:26.470">this framework this agent makes is all very easy to work with ...</p>
+      <p begin="00:24:26.470" end="00:24:29.220">show you how easy I'm actually just can show you the code for this aren't even need</p>
+      <p begin="00:24:29.220" end="00:24:34.110">break individual studio at all actually fits on one side in a fairly</p>
+      <p begin="00:24:34.110" end="00:24:38.680">legible size...what you need to do is implement ivan processor it's a class</p>
+      <p begin="00:24:38.680" end="00:24:41.450">in-service bus library or interface sorry and,</p>
+      <p begin="00:24:41.450" end="00:24:45.480">it has three methods, methods are closing open asic and process</p>
+      <p begin="00:24:45.480" end="00:24:51.280">events asic I think you can gather probably what they mean and that we take a...</p>
+      <p begin="00:24:51.280" end="00:24:57.420">very importantly very seriously because it's really the only way to provide real scale so,</p>
+      <p begin="00:24:57.420" end="00:25:00.960">you can actually see here pretty simple methods pretty simple</p>
+      <p begin="00:25:00.960" end="00:25:06.100">parameters for them and, in a little bit further detail let's actually go look at what</p>
+      <p begin="00:25:06.100" end="00:25:11.100">...more realistic implementation of...events asic might look like so,</p>
+      <p begin="00:25:11.100" end="00:25:16.390">you saw on my http request earlier I was setting a type...type in</p>
+      <p begin="00:25:16.390" end="00:25:21.120">the header called booking I can actually peek into those properties here I mention we don't</p>
+      <p begin="00:25:21.120" end="00:25:25.770">open the message body the event body but you can see in the properties and you can use</p>
+      <p begin="00:25:25.770" end="00:25:30.770">that to drive what sort of logic you're going to implement here so in this case I'm looking for booking</p>
+      <p begin="00:25:30.770" end="00:25:36.010">...I'm actually dc realizing a json object into...class that I know</p>
+      <p begin="00:25:36.010" end="00:25:41.640">...of type booking and, then importantly at the bottom here you can actually see that I'm keeping a dictionary</p>
+      <p begin="00:25:41.640" end="00:25:46.060">of bookings so I'm doing some duplicate detection in here a little bit very primitive</p>
+      <p begin="00:25:46.060" end="00:25:50.350">duplicate detection and, I'm keeping message count and then I'm</p>
+      <p begin="00:25:50.350" end="00:25:53.160">calling that checkpoint asic this thing I talked about before.</p>
+      <p begin="00:25:54.200" end="00:25:59.120">Checkpoint a sink is in this case with no, overload...is just going to</p>
+      <p begin="00:25:59.120" end="00:26:04.820">...the last message in that innumerable of event data that came into this</p>
+      <p begin="00:26:04.820" end="00:26:06.380">call so</p>
+      <p begin="00:26:06.380" end="00:26:11.710">...checkpoint will say to event hubI'm confident...I</p>
+      <p begin="00:26:11.710" end="00:26:15.520">...finish all the data up to this specific point and you don't do it</p>
+      <p begin="00:26:15.520" end="00:26:19.210">every single message because you would quickly run into other limits things like storage</p>
+      <p begin="00:26:19.210" end="00:26:24.150">limits about how quickly your check pointing of recall that we are we are talking about thousands of</p>
+      <p begin="00:26:24.150" end="00:26:27.080">messages per second scaled out even potentially millions</p>
+      <p begin="00:26:27.080" end="00:26:30.790">messages per second so you need to be careful in how you're going to</p>
+      <p begin="00:26:30.790" end="00:26:36.400">checkpoint this does give you a lot flexibility still this is the way that if</p>
+      <p begin="00:26:36.400" end="00:26:43.200">you're processing stopped and restarted it-would...to restart on another node?</p>
+      <p begin="00:26:43.200" end="00:26:46.850">Now that you've got your class you actually...hosted somewhere and this is where the host name</p>
+      <p begin="00:26:46.850" end="00:26:51.550">in event processor host comes in handy of post part of the name</p>
+      <p begin="00:26:51.550" end="00:26:54.580">...and instances classes very simple it takes</p>
+      <p begin="00:26:54.580" end="00:26:59.640">...at five parameters so...be the host naming the name machine it's running on usually good use</p>
+      <p begin="00:26:59.640" end="00:27:03.370">...name or something for that you wanted to be unique value</p>
+      <p begin="00:27:03.370" end="00:27:08.310">...event have name that should be obvious enough the consumer group name so that's just a label for</p>
+      <p begin="00:27:08.310" end="00:27:12.890">...consumer group the connection string for both event have answer storage and I</p>
+      <p begin="00:27:12.890" end="00:27:17.480">mention storage piece earlier because of storage is not only where we're going to save</p>
+      <p begin="00:27:17.480" end="00:27:23.160">that offset for each partition reader it's actually where we're going to use the</p>
+      <p begin="00:27:23.160" end="00:27:28.900">leasing mechanism storage to control who is reading from which partition after</p>
+      <p begin="00:27:28.900" end="00:27:32.060">you instantiated event processor host all you do is call register</p>
+      <p begin="00:27:32.060" end="00:27:36.590">event processor asic and this is going to tell the host that this</p>
+      <p begin="00:27:36.590" end="00:27:40.690">is the class it needs to instantiate for each partition that it's going to</p>
+      <p begin="00:27:40.690" end="00:27:43.830">start reading from and we look at how that works runtime.</p>
+      <p begin="00:27:45.170" end="00:27:49.450">We can see that when something starts up in this case I'll say worker it could be</p>
+      <p begin="00:27:49.450" end="00:27:53.980">...service it could be a command-line application...be anything and it's got an instance of</p>
+      <p begin="00:27:53.980" end="00:27:58.880">event processor host after that register call that event processor</p>
+      <p begin="00:27:58.880" end="00:28:03.500">hosed instances going to look at the event...see how many partitions...and try to get</p>
+      <p begin="00:28:03.500" end="00:28:07.460">...and every single partition and since there's no one else reading right now it's going to</p>
+      <p begin="00:28:07.460" end="00:28:11.140">...for every single partition after requires</p>
+      <p begin="00:28:11.140" end="00:28:16.120">that least it's going to create an instance of your event processor for every</p>
+      <p begin="00:28:16.120" end="00:28:21.650">single partition this is subtle and getting sort of important on this point actually and then after</p>
+      <p begin="00:28:21.650" end="00:28:25.320">it has instantiated those to call open a sank and</p>
+      <p begin="00:28:25.320" end="00:28:29.880">then start calling process events asic so this is the point</p>
+      <p begin="00:28:29.880" end="00:28:33.420">at which the data is coming in you might have noticed earlier in that in</p>
+      <p begin="00:28:33.420" end="00:28:38.410">that code example that I wasn't doing any sort of thread save collections that's because I don't need</p>
+      <p begin="00:28:38.410" end="00:28:43.200">to because this agent is creating affinity between the instances</p>
+      <p begin="00:28:43.200" end="00:28:47.830">...processor and the partitions...reading from for that instance</p>
+      <p begin="00:28:47.830" end="00:28:53.080">so you don't have to do thread safe collections you don't have to do thread management</p>
+      <p begin="00:28:53.080" end="00:28:57.890">you you're really protected from a lot of that in fact by default that process</p>
+      <p begin="00:28:57.890" end="00:29:02.100">events a...won't actually called again until you return from it so this</p>
+      <p begin="00:29:02.100" end="00:29:07.060">q up messages behind it or...up batches behind it to be processed so this is</p>
+      <p begin="00:29:07.060" end="00:29:11.510">a very powerful mechanism and, it helps you keep messages in order it helps you</p>
+      <p begin="00:29:11.510" end="00:29:15.710">by avoiding thread locking...go very fast and,</p>
+      <p begin="00:29:15.710" end="00:29:20.230">then also it scales really well so when you create a second worker instance or</p>
+      <p begin="00:29:20.230" end="00:29:23.660">second command-line programmer whatever it is your reading this or</p>
+      <p begin="00:29:23.660" end="00:29:28.950">hosting this agent in it's going to do the same thing it's...can look at the about</p>
+      <p begin="00:29:28.950" end="00:29:32.800">...to see how many partitions there...try to get elise for every partition it</p>
+      <p begin="00:29:32.800" end="00:29:37.380">...it's going to see that there are no partitions available so it will</p>
+      <p begin="00:29:37.380" end="00:29:41.800">place reservation for some partitions it's a greedy algorithm so it once all the partitions</p>
+      <p begin="00:29:41.800" end="00:29:46.850">...get and, when the first worker comes back and tries to renew its</p>
+      <p begin="00:29:46.850" end="00:29:48.780">lease for all of these partitions</p>
+      <p begin="00:29:48.780" end="00:29:52.700">...leases...see some of them it could not review and</p>
+      <p begin="00:29:52.700" end="00:29:57.800">close a single be called on those and the second worker will now open up on that partition</p>
+      <p begin="00:29:57.800" end="00:30:02.740">and take over the processing so this actually scales up and impressive...to actually</p>
+      <p begin="00:30:02.740" end="00:30:07.900">scales back down so when you step down and go back to just one server the load</p>
+      <p begin="00:30:07.900" end="00:30:13.030">redistribute...over a this will happen pretty quick with only a few servers will happen in</p>
+      <p begin="00:30:13.030" end="00:30:17.150">... the...thirty-minute a thirty second cycle so, it'll be</p>
+      <p begin="00:30:17.150" end="00:30:22.480">couple minutes if you have many readers like thirty-two or something it'll take a few minutes and</p>
+      <p begin="00:30:22.480" end="00:30:29.580">...settle at a prettyreasonable level reasonable distribution between and, to see how well</p>
+      <p begin="00:30:29.580" end="00:30:34.490">this really scales and why this is designed so well for asher...such core adder stuff and I chose</p>
+      <p begin="00:30:34.490" end="00:30:39.840">worker instances for this if you make a service which I did for this?</p>
+      <p begin="00:30:39.840" end="00:30:42.810">Cloud service so worker roles that are processing my event</p>
+      <p begin="00:30:42.810" end="00:30:46.990">stream in deploy it you can go in the scale tab and that service and you can</p>
+      <p begin="00:30:46.990" end="00:30:51.130">...that you actually have some scale capabilities that are going</p>
+      <p begin="00:30:51.130" end="00:30:55.230">to make this even easier for you to use the best one by far so,</p>
+      <p begin="00:30:55.230" end="00:31:00.310">far at least is cpu and when you think about the type of work you're...be doing</p>
+      <p begin="00:31:00.310" end="00:31:05.840">it could bebounded by cpu or memory or network but,</p>
+      <p begin="00:31:05.840" end="00:31:11.240">very likely if you're doing heavy compute type stuff stream processing type stuff it's going to be</p>
+      <p begin="00:31:11.240" end="00:31:16.230">cpu bound and this...scale capability and measure gives you the ability to set</p>
+      <p begin="00:31:16.230" end="00:31:19.930">as you can see here how many instances I want running and,</p>
+      <p begin="00:31:19.930" end="00:31:23.090">then what my target cpu band is so that's both</p>
+      <p begin="00:31:23.090" end="00:31:27.510">a lower band lower limit and upper limit and I can see that I could set of scale-up</p>
+      <p begin="00:31:27.510" end="00:31:32.610">by and the wait time to wait before applying that scale again</p>
+      <p begin="00:31:32.610" end="00:31:34.120">and scale down by</p>
+      <p begin="00:31:34.120" end="00:31:38.930">...really cool about this is that you can actually make very expressive shapes over</p>
+      <p begin="00:31:38.930" end="00:31:43.930">...so that you can ramp up very quickly and ramp down very slowlyif you</p>
+      <p begin="00:31:43.930" end="00:31:46.650">...hiding a process and,</p>
+      <p begin="00:31:46.650" end="00:31:50.760">that's really useful...actually gets...more useful because you can have multiple schedules</p>
+      <p begin="00:31:50.760" end="00:31:55.580">creative for different scale times so for instance in that same portal</p>
+      <p begin="00:31:55.580" end="00:31:58.780">this clicking the schedules button are you can change</p>
+      <p begin="00:31:58.780" end="00:32:03.300">have different scales for day and night and different different</p>
+      <p begin="00:32:03.300" end="00:32:08.300">scale settings for weekends and weekdays so these are pretty...you can even do independent,</p>
+      <p begin="00:32:08.300" end="00:32:12.640">independent specific days so specific holidays or something that you want to have some sort of scale</p>
+      <p begin="00:32:12.640" end="00:32:16.780">for...gives you a really good capability of scaling your</p>
+      <p begin="00:32:16.780" end="00:32:21.160">compute if you're writing your own code using event processor host?</p>
+      <p begin="00:32:21.160" end="00:32:26.640">Which...code I would strong you strongly encourage you to use vent presser host but,</p>
+      <p begin="00:32:26.640" end="00:32:28.710">now I want to talk about something passes something</p>
+      <p begin="00:32:28.710" end="00:32:33.990">past writing coding getting more towards like real cloud...</p>
+      <p begin="00:32:33.990" end="00:32:37.970">...integration actually and that is event hubs and stream analytics</p>
+      <p begin="00:32:37.970" end="00:32:42.180">stream analytics is one of my favorite services actually they just</p>
+      <p begin="00:32:42.180" end="00:32:45.960">the ga recently and it's a stream processing service in the</p>
+      <p begin="00:32:45.960" end="00:32:48.760">...so what's that mean it's that it's true</p>
+      <p begin="00:32:48.760" end="00:32:54.080">...just like event hubs you don't install anything you don't have to</p>
+      <p begin="00:32:54.080" end="00:32:59.000">two-run anything yourself it's got dynamic scale much like about hubs to talk about a little</p>
+      <p begin="00:32:59.000" end="00:33:04.900">bit it has a domain specific language...very elegant based on a sequel and</p>
+      <p begin="00:33:04.900" end="00:33:09.720">makes very easy to make expressive statements about processing streams.</p>
+      <p begin="00:33:09.720" end="00:33:14.610">That language provides...esl prides a number of when doing functions that are very</p>
+      <p begin="00:33:14.610" end="00:33:19.510">useful when doing stream calculations are stream processing specially for things like anomaly</p>
+      <p begin="00:33:19.510" end="00:33:22.600">...alert detection and integrates directly with</p>
+      <p begin="00:33:22.600" end="00:33:25.890">perhaps which is of course my favorite thing it does using</p>
+      <p begin="00:33:25.890" end="00:33:29.900">...everything that...must use...access it and,</p>
+      <p begin="00:33:29.900" end="00:33:35.500">this is because it service to service and that gives is really good performance characteristics.</p>
+      <p begin="00:33:35.500" end="00:33:38.170">So, creating stream analytics job is really, really simple</p>
+      <p begin="00:33:38.170" end="00:33:43.520">they're really just sort of three things you have to...input and output</p>
+      <p begin="00:33:43.520" end="00:33:47.830">and query creating the job is really easy you just go in</p>
+      <p begin="00:33:47.830" end="00:33:54.780">the portal click-throughdata servicesgo through stream analytics</p>
+      <p begin="00:33:54.780" end="00:33:59.060">quick create new just given a name in this case this is where telemetry</p>
+      <p begin="00:33:59.060" end="00:34:02.890">changes from how it has been in the past and this is where becomes</p>
+      <p begin="00:34:04.370" end="00:34:08.540">the switching point from having a telemetry...cost center</p>
+      <p begin="00:34:08.540" end="00:34:14.070">having telemetry ba revenue center or something that makes...service interact,</p>
+      <p begin="00:34:14.070" end="00:34:17.880">you know, of better through a to changes that you can do through the way</p>
+      <p begin="00:34:17.880" end="00:34:22.930">your systems work not just in retrospect so in this case I'm creating a booking</p>
+      <p begin="00:34:22.930" end="00:34:26.860">intervention service so, this would be for if I'm having trouble</p>
+      <p begin="00:34:26.860" end="00:34:32.760">booking or if a lot of booking events come in a short time window and, you know,</p>
+      <p begin="00:34:32.760" end="00:34:36.910">that's either because I'm doing something on expected in the application</p>
+      <p begin="00:34:36.910" end="00:34:39.760">of the applications in my hand the performing away I</p>
+      <p begin="00:34:39.760" end="00:34:45.270">...to...or potentially through some sort of fraud so once you've created your stream</p>
+      <p begin="00:34:45.270" end="00:34:49.750">...job like I said three steps you'll see there's no input for it</p>
+      <p begin="00:34:49.750" end="00:34:54.010">...just click that input button and you get to choose if it's going to be data stream</p>
+      <p begin="00:34:54.010" end="00:34:56.340">...reference data is very simple jobs some</p>
+      <p begin="00:34:56.340" end="00:34:59.610">stick to data stream you'll see the default on there is event</p>
+      <p begin="00:34:59.610" end="00:35:05.790">hub that's what I like it is you can do blob storage as well but, event hubs, you know,</p>
+      <p begin="00:35:05.790" end="00:35:12.840">it's made for speed is me for scale so it's the fault for reason and from there you can actually browse</p>
+      <p begin="00:35:12.840" end="00:35:18.310">two-year has your subscription and pick which event have you want to read from and you can</p>
+      <p begin="00:35:18.310" end="00:35:23.880">actually also provide which policy want to use this case I'm kinda doing a bad example</p>
+      <p begin="00:35:23.880" end="00:35:29.720">...using the really the admin policy you should make a policy just for</p>
+      <p begin="00:35:29.720" end="00:35:35.280">your specific listeners so you can make one that only has rights to listen to your event</p>
+      <p begin="00:35:35.280" end="00:35:38.040">...to read and that way that the stream</p>
+      <p begin="00:35:38.040" end="00:35:40.860">analyst job itself can't actually do anything more to your</p>
+      <p begin="00:35:40.860" end="00:35:45.340">...habit doesn't need admin access and, then finally you get to choose which</p>
+      <p begin="00:35:45.340" end="00:35:50.250">consumer group by default it's going to be one called default surprisingly enough in this poorly can actually</p>
+      <p begin="00:35:50.250" end="00:35:57.950">create new consumer group it's generally good idea to use different consumer groups for each job?</p>
+      <p begin="00:35:57.950" end="00:36:00.970">And, then the last step is that you're going to choose what this input</p>
+      <p begin="00:36:00.970" end="00:36:05.620">sterilization format isyou have a few choices here I'm picking json because that's what we</p>
+      <p begin="00:36:05.620" end="00:36:10.690">saw messages earlier in my encoding...be uta and now the query for the</p>
+      <p begin="00:36:10.690" end="00:36:14.310">asa job again of really quite simple</p>
+      <p begin="00:36:14.310" end="00:36:18.340">there are a few little things left learn about it but not much fear at all comfortable</p>
+      <p begin="00:36:18.340" end="00:36:22.920">...you do a select you can actually see these names are coming</p>
+      <p begin="00:36:22.920" end="00:36:29.140">from like customer name is actually coming from when ...original message...json field in</p>
+      <p begin="00:36:29.140" end="00:36:34.710">...called customer name...my name and, what I'm doing here is I'm grouping these</p>
+      <p begin="00:36:34.710" end="00:36:40.320">in a tumbling window which is a specific type of when doing function over five-minute</p>
+      <p begin="00:36:40.320" end="00:36:44.270">window grouping by customer name and I'm looking for booking events</p>
+      <p begin="00:36:44.270" end="00:36:48.760">they have occurred more than three times in the last five minutes so</p>
+      <p begin="00:36:48.760" end="00:36:53.680">that's just whatever random logic I've...now once you have this here this is actually</p>
+      <p begin="00:36:53.680" end="00:36:58.740">...that part about this ...query and you can actually go back to</p>
+      <p begin="00:36:58.740" end="00:37:01.900">your input you'll notice there's a little,</p>
+      <p begin="00:37:01.900" end="00:37:06.400">little highlighted box I put on there highlights on the portal to sample data</p>
+      <p begin="00:37:06.400" end="00:37:10.810">box this is a way to actually download some of the data in your event...a so</p>
+      <p begin="00:37:10.810" end="00:37:16.360">...can test with this is a feature that stream analytics private because they wanted it and actually</p>
+      <p begin="00:37:16.360" end="00:37:21.670">...of an has quite a bit too do be a little careful this...download a whole lot data so</p>
+      <p begin="00:37:21.670" end="00:37:27.190">pick really what you need not everything in there if you're writing a lot of data the last step is</p>
+      <p begin="00:37:27.190" end="00:37:31.910">...be creating output for stream alex job this is even simpler than the input</p>
+      <p begin="00:37:31.910" end="00:37:37.330">one you can pick a variety of sources here including picking event hubs which is what I'm showing on</p>
+      <p begin="00:37:37.330" end="00:37:42.400">the screen I actually like the idea of picking event hubs because enables sort of a pipes and</p>
+      <p begin="00:37:42.400" end="00:37:47.950">filter's...too many people I think he looked...first sort of the</p>
+      <p begin="00:37:47.950" end="00:37:51.820">centre of everything and it's the big fat pipe...absolutely everything</p>
+      <p begin="00:37:51.820" end="00:37:55.950">and in some cases that's a good pattern in some it's...you might have</p>
+      <p begin="00:37:55.950" end="00:38:00.540">specificprocessors or workloads that just want to read</p>
+      <p begin="00:38:00.540" end="00:38:05.990">...event pipe and that is actually a great thing to use stream analytics for or</p>
+      <p begin="00:38:05.990" end="00:38:10.490">...some sort of filter between the pipes that are event...so,</p>
+      <p begin="00:38:10.490" end="00:38:15.040">that you can have downstream readers just have dedicated a sort of an</p>
+      <p begin="00:38:15.040" end="00:38:20.290">...or stream...that they can read from and, also you</p>
+      <p begin="00:38:20.290" end="00:38:26.380">...cereals...you can change sterilization at this point where you can keep it how it was?</p>
+      <p begin="00:38:26.380" end="00:38:31.280">Then importantly the last sort of peace and talk about for event hubs about scaling</p>
+      <p begin="00:38:31.280" end="00:38:36.760">or for stream analytics is about scaling the scaling model for stream analytics is very much like</p>
+      <p begin="00:38:36.760" end="00:38:40.870">the scaling model for event hubs I don't think that's...and,</p>
+      <p begin="00:38:40.870" end="00:38:46.580">they basically both go through blocks of one megabyte per second throughput so,</p>
+      <p begin="00:38:46.580" end="00:38:51.260">you know, on this on the screen and asher you...that drop down for streaming units</p>
+      <p begin="00:38:51.260" end="00:38:55.900">...that job and, it goes to some big number bigger than the throughput units does</p>
+      <p begin="00:38:55.900" end="00:39:01.780">so forty-something I think is what ice online this morningso, it's pretty slick pretty</p>
+      <p begin="00:39:01.780" end="00:39:06.160">...capability you can make jobs for all sorts of things and like I mentioned,</p>
+      <p begin="00:39:06.160" end="00:39:11.820">you know, this allows you to turn your telemetry from sort of a...sort of</p>
+      <p begin="00:39:11.820" end="00:39:16.730">troubleshootingpiece that you sorta have to have well,</p>
+      <p begin="00:39:16.730" end="00:39:22.140">if you want to stay...at least you have to have into something that you can really provide new services with</p>
+      <p begin="00:39:22.140" end="00:39:27.140">you can really build new things on these could be failure alerts these could be anomaly or</p>
+      <p begin="00:39:27.140" end="00:39:32.210">fraude detections they could be customer interventions really this is whereaddress making</p>
+      <p begin="00:39:32.210" end="00:39:35.380">...easy for you to decide how to do</p>
+      <p begin="00:39:35.380" end="00:39:41.370">...business which is which is probably not writing the cloud platform which is what we're doing so,</p>
+      <p begin="00:39:41.370" end="00:39:45.380">the question is less of more where your to</p>
+      <p begin="00:39:45.380" end="00:39:49.380">...take you then we'll take your telemetry?</p>
+      <p begin="00:39:49.380" end="00:39:51.790">This picture my bike there so,</p>
+      <p begin="00:39:51.790" end="00:39:55.900">I encourage you take a look at are getting started guides both for event</p>
+      <p begin="00:39:55.900" end="00:40:00.880">hubs which your accessible right from the measure portal and for stream analyticsalso</p>
+      <p begin="00:40:00.880" end="00:40:04.930">...here is a link for the blog for...best team we boggle kinds of</p>
+      <p begin="00:40:04.930" end="00:40:11.350">fun stuff on there and finally my twitter handle if you want tofollow all the fun fund</p>
+      <p begin="00:40:11.350" end="00:40:16.490">service...stuff that we do on the team thanks-very-much this...been.</p>
+      <p begin="00:40:16.490" end="00:40:18.650">Cloud scale telemetry processing...</p>
+
+    </div>
+  </body>
+</tt>

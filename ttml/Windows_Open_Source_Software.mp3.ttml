@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.901</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.350" end="00:00:06.570">Good, yeah.</p>
+      <p begin="00:00:06.570" end="00:00:08.620">Welcome.</p>
+      <p begin="00:00:08.620" end="00:00:12.400">Thank you for coming to the session.</p>
+      <p begin="00:00:12.400" end="00:00:14.430">Help via enjoyed the morning...the keynote</p>
+      <p begin="00:00:16.020" end="00:00:20.600">...of dour and I'm here with ism anand...and we are program managers and we</p>
+      <p begin="00:00:20.600" end="00:00:23.520">are passionate about open-source how many of you are using</p>
+      <p begin="00:00:23.520" end="00:00:27.900">open-source libraries and tools in your projects.</p>
+      <p begin="00:00:29.090" end="00:00:29.590">Fantastic.</p>
+      <p begin="00:00:30.760" end="00:00:35.790">So, we work with engineering teams at microsoft on integrating open-source into</p>
+      <p begin="00:00:35.790" end="00:00:36.290">windows.</p>
+      <p begin="00:00:37.700" end="00:00:42.640">contributing to open-source projects that many of us are using to build apps projects like open</p>
+      <p begin="00:00:42.640" end="00:00:43.900">sl and seeming.</p>
+      <p begin="00:00:44.950" end="00:00:48.360">And, we're here to share with you some examples and demos how</p>
+      <p begin="00:00:48.360" end="00:01:00.240">you can use some new ways that you can use open-source when you're building apps for windows.</p>
+      <p begin="00:01:00.240" end="00:01:05.110">We're going to start with an overview of microsoft and open-source what's going on with the microsoft</p>
+      <p begin="00:01:05.110" end="00:01:05.610">culture.</p>
+      <p begin="00:01:06.720" end="00:01:11.110">What is microsoft think about open-source today we're going to dive into the demos and</p>
+      <p begin="00:01:11.110" end="00:01:12.810">...spend most of the time in the demos?</p>
+      <p begin="00:01:13.860" end="00:01:16.820">And,...wrap up with what's happening in visual studio and how visual</p>
+      <p begin="00:01:16.820" end="00:01:27.010">studio is doing more and more to support developing using open-source?</p>
+      <p begin="00:01:27.010" end="00:01:29.900">The start with a question.</p>
+      <p begin="00:01:29.900" end="00:01:31.240">...microsoft embrace</p>
+      <p begin="00:01:31.240" end="00:01:36.320">open-source would love to get your feedback on this is something that there's been an are passionate</p>
+      <p begin="00:01:36.320" end="00:01:45.300">about how many feel like microsoft is doing a great job of embracing open-source.</p>
+      <p begin="00:01:45.300" end="00:01:49.970">So, maybe two so...three-out-of-four stars is that.</p>
+      <p begin="00:01:49.970" end="00:01:52.190">Right that's great I mean we want to get to for</p>
+      <p begin="00:01:52.190" end="00:01:56.800">...working on it so here's how I would answer that question.</p>
+      <p begin="00:01:56.800" end="00:02:01.860">That it's changed over time and I want to roll the clock back to start in two thousand</p>
+      <p begin="00:02:01.860" end="00:02:10.609">one and let's review how microsoft has engage with the open-source community.</p>
+      <p begin="00:02:10.609" end="00:02:14.329">So, what was happening in...one well there are some major</p>
+      <p begin="00:02:14.329" end="00:02:17.599">open-source projects that we're getting a lot of publicity</p>
+      <p begin="00:02:17.599" end="00:02:18.829">...linux?</p>
+      <p begin="00:02:20.139" end="00:02:21.479">Netscape.</p>
+      <p begin="00:02:21.479" end="00:02:29.040">And, it was a time from microsoft to decide how did...want to engage with open-source.</p>
+      <p begin="00:02:29.040" end="00:02:33.920">This was a rough start from microsoft there was a real opportunity here.</p>
+      <p begin="00:02:33.920" end="00:02:36.000">And, it wasn't simple.</p>
+      <p begin="00:02:36.000" end="00:02:39.130">Gps licensing was a curve ball it wasn't just a</p>
+      <p begin="00:02:39.130" end="00:02:43.440">curable from microsoft was for many companies but I like baseball</p>
+      <p begin="00:02:43.440" end="00:02:46.420">I'm going to use a baseball analogy here it's baseball season</p>
+      <p begin="00:02:47.660" end="00:02:52.950">microsoft having a hard time at the plate let's move on...</p>
+      <p begin="00:02:52.950" end="00:02:57.090">So,...twenty-four microsoft made its first contribution to source forge with the</p>
+      <p begin="00:02:57.090" end="00:03:01.250">wicks installer toolkit and from then on we see increasing involvement with the</p>
+      <p begin="00:03:01.250" end="00:03:04.790">...community contributions to linux and...</p>
+      <p begin="00:03:05.840" end="00:03:12.090">And, other projects consumption more teams internally are starting to use open-source.</p>
+      <p begin="00:03:12.090" end="00:03:13.890">Publishing clearly with</p>
+      <p begin="00:03:13.890" end="00:03:18.140">the net foundation when js you're seeing more and more microsoft activity with</p>
+      <p begin="00:03:18.140" end="00:03:22.690">publishing projects into the open-source community and working with the community.</p>
+      <p begin="00:03:23.830" end="00:03:26.780">And, redistributing...a great example of this</p>
+      <p begin="00:03:26.780" end="00:03:31.250">were asher looked at an opportunity to embrace open-source and, you know,</p>
+      <p begin="00:03:31.250" end="00:03:35.660">what they did they did embrace open-source and the result is a much better service</p>
+      <p begin="00:03:35.660" end="00:03:42.200">for you in a much better business for the company so now microsoft getting hits?</p>
+      <p begin="00:03:42.200" end="00:03:44.960">So, what's different about twenty fifteen.</p>
+      <p begin="00:03:44.960" end="00:03:48.440">We've had...we've had some stars you've seen these stars.</p>
+      <p begin="00:03:48.440" end="00:03:51.270">One twenty fifteen the company is adopting</p>
+      <p begin="00:03:51.270" end="00:03:53.760">open-source as a company.</p>
+      <p begin="00:03:53.760" end="00:03:58.880">...now coulda walk around campus and talk about open-source.</p>
+      <p begin="00:03:58.880" end="00:04:01.080">We also embrace the philosophy of transparency.</p>
+      <p begin="00:04:02.300" end="00:04:07.020">Collaborating with the larger community.</p>
+      <p begin="00:04:07.020" end="00:04:11.740">We also embrace those social model so you have your commanders and</p>
+      <p begin="00:04:11.740" end="00:04:16.110">contributors and users and that model works fantastic for open-source project</p>
+      <p begin="00:04:16.110" end="00:04:20.390">also works internally so at some teams are starting</p>
+      <p begin="00:04:20.390" end="00:04:25.680">to apply this and how they're setting up internally so if you're in some</p>
+      <p begin="00:04:25.680" end="00:04:29.760">...microsoft's a big company right if you see a project that you're interested in you</p>
+      <p begin="00:04:29.760" end="00:04:37.450">can get involved even though it's not in your core subject area we use the open-source social models support that?</p>
+      <p begin="00:04:37.450" end="00:04:38.910">And, best practices we've had some</p>
+      <p begin="00:04:38.910" end="00:04:42.880">stars companies learn from what the stars of done.</p>
+      <p begin="00:04:42.880" end="00:04:45.950">And, we've created best practices so that other groups who haven't been</p>
+      <p begin="00:04:45.950" end="00:04:49.170">stars now have a roadmap for how to get there.</p>
+      <p begin="00:04:49.170" end="00:04:53.890">So, this is all in this is where microsoft is that today.</p>
+      <p begin="00:04:53.890" end="00:04:58.940">And, it's fantastic for us who love open-source.</p>
+      <p begin="00:04:58.940" end="00:05:03.650">So, let's talk about house microsoft been involved lately.</p>
+      <p begin="00:05:03.650" end="00:05:06.890">Well, it's across-the-board game middleware</p>
+      <p begin="00:05:06.890" end="00:05:11.680">media services databases tools you name it</p>
+      <p begin="00:05:11.680" end="00:05:15.240">microsoft been involved there's a ton of open-source projects that you</p>
+      <p begin="00:05:15.240" end="00:05:20.140">can use today I'll just touch on a few here open cv.</p>
+      <p begin="00:05:20.140" end="00:05:25.030">So, that's computer vision...a open-source library can use for facial recognition of the features</p>
+      <p begin="00:05:25.030" end="00:05:30.550">like that and microsoft engineers have been working with open singly so that you can use open cv</p>
+      <p begin="00:05:30.550" end="00:05:34.120">in your apps and publish them to the store same thing with coca studio</p>
+      <p begin="00:05:34.120" end="00:05:40.440">access very popular gaming middleware and multiple groups in microsoft working with</p>
+      <p begin="00:05:40.440" end="00:05:44.460">...to dx so that you can have a great experience building coca studio</p>
+      <p begin="00:05:44.460" end="00:05:48.390">x for windows and publishing those games in-store and then dashed</p>
+      <p begin="00:05:48.390" end="00:05:53.330">js is a javascript library.</p>
+      <p begin="00:05:53.330" end="00:05:58.730">That you can use to add dash adaptive streaming protocol which</p>
+      <p begin="00:05:58.730" end="00:06:03.860">is fairly new so teams...microsoft been contributing to the dashed...project so</p>
+      <p begin="00:06:03.860" end="00:06:09.710">you can easily ad that dash player to a web page or...app.</p>
+      <p begin="00:06:09.710" end="00:06:13.020">So, those are some great examples.</p>
+      <p begin="00:06:13.020" end="00:06:17.160">The company adoption of open-source is also showing up in other ways.</p>
+      <p begin="00:06:17.160" end="00:06:20.120">So, now you can become a microsoft mvp.</p>
+      <p begin="00:06:21.180" end="00:06:25.060">Solely based on open-source contributions.</p>
+      <p begin="00:06:25.060" end="00:06:29.700">So, that's fantastic another one is let's look at what the eighteen is doing.</p>
+      <p begin="00:06:29.700" end="00:06:34.050">So, they have a status site is open to everyone and you can see</p>
+      <p begin="00:06:34.050" end="00:06:35.260">...backlog</p>
+      <p begin="00:06:35.260" end="00:06:39.480">and you can go vote and what you want the ie team to work on next?</p>
+      <p begin="00:06:39.480" end="00:06:42.540">So, when I saw this is just fantastic love the transparency?</p>
+      <p begin="00:06:43.640" end="00:06:49.520">And, not only that but you can see wthree-c status of web pep platform status.</p>
+      <p begin="00:06:49.520" end="00:06:52.500">And, people in the community are using this as a</p>
+      <p begin="00:06:52.500" end="00:06:58.090">way to track what's happening across browsers you can see some...logos there so for each feature you can see</p>
+      <p begin="00:06:58.090" end="00:07:02.460">what the statuses with the other browsers and the eighteen put the source for</p>
+      <p begin="00:07:02.460" end="00:07:07.720">this site upon get hub so anyone in the community if they see something they want to</p>
+      <p begin="00:07:07.720" end="00:07:09.420">be done better or something's not</p>
+      <p begin="00:07:09.420" end="00:07:15.360">quite accurate about some certain browser they can go and make this fixes and they're doing that so it's a great</p>
+      <p begin="00:07:15.360" end="00:07:22.480">example of how microsoft as embracing open-source.</p>
+      <p begin="00:07:22.480" end="00:07:24.350">So, back to the question.</p>
+      <p begin="00:07:24.350" end="00:07:27.700">Does microsoft embrace opensource yes absolutely?</p>
+      <p begin="00:07:29.130" end="00:07:33.280">And, we're committed to getting better we know we have work to do.</p>
+      <p begin="00:07:33.280" end="00:07:37.460">And, part of part of our goal with build is to get more</p>
+      <p begin="00:07:37.460" end="00:07:42.220">of your feedback we want to learn about what's working well for you</p>
+      <p begin="00:07:42.220" end="00:07:47.910">and what isn't and what can we do to help so...are going to be around and we're going to want to have</p>
+      <p begin="00:07:47.910" end="00:07:52.050">this conversations with you because your feedback will make a big impact</p>
+      <p begin="00:07:52.050" end="00:07:57.440">on what we work on next we have engineers and teams that are focused on...</p>
+      <p begin="00:07:57.440" end="00:08:00.620">All right so now this one's going to.</p>
+      <p begin="00:08:00.620" end="00:08:03.080">Dive into the next section take it away</p>
+      <p begin="00:08:03.080" end="00:08:08.480">...all right thank you thank you use a for that overview...thank you all for coming out</p>
+      <p begin="00:08:08.480" end="00:08:11.960">to san francisco and to build it's an absolute pleasure to</p>
+      <p begin="00:08:11.960" end="00:08:16.530">...representing before you guys thank you very much.</p>
+      <p begin="00:08:16.530" end="00:08:18.480">So, now we're going to.</p>
+      <p begin="00:08:18.480" end="00:08:23.080">Talk about open-source in windows...</p>
+      <p begin="00:08:23.080" end="00:08:23.480">Upping</p>
+      <p begin="00:08:23.480" end="00:08:28.150">redmond you're spending a lot of time thinking how us developers can</p>
+      <p begin="00:08:28.150" end="00:08:33.090">be more and do more using windows and we think that by leveraging open-source</p>
+      <p begin="00:08:33.090" end="00:08:40.000">technology we can make windows a more powerful platform for your applications?</p>
+      <p begin="00:08:40.000" end="00:08:44.620">Around the company we're saying that we're shipping a new mindset not just new features and</p>
+      <p begin="00:08:44.620" end="00:08:49.040">you api and this mindset involves embracing open-source at each level in are</p>
+      <p begin="00:08:49.040" end="00:08:50.770">stuck.</p>
+      <p begin="00:08:50.770" end="00:08:55.030">We're using open-source and some of our flagship applications says escape</p>
+      <p begin="00:08:55.030" end="00:08:59.370">...dina the photos app many of the msn apps that you get</p>
+      <p begin="00:08:59.370" end="00:09:04.970">out of box then we're...in our sdk all join the internet of</p>
+      <p begin="00:09:04.970" end="00:09:10.990">...software a framework is a great example of that going to get into that with that and then we</p>
+      <p begin="00:09:10.990" end="00:09:15.760">are shipping open-source in our core mission critical os components that</p>
+      <p begin="00:09:15.760" end="00:09:20.730">run across all the devices in the windows...family ranging from small</p>
+      <p begin="00:09:20.730" end="00:09:23.700">io devices to the tablet</p>
+      <p begin="00:09:23.700" end="00:09:28.030">do the xbox and all the way to haul...</p>
+      <p begin="00:09:28.030" end="00:09:33.440">So, let's look at some of the investments that we've made or the last few months.</p>
+      <p begin="00:09:33.440" end="00:09:36.880">You really excited about working closely with...like.</p>
+      <p begin="00:09:36.880" end="00:09:41.140">So, we love your code we know that you love to work with...I</p>
+      <p begin="00:09:41.140" end="00:09:45.760">did thousands of apps in our store today that use this library for data access we</p>
+      <p begin="00:09:45.760" end="00:09:47.610">want to make it run better on windows</p>
+      <p begin="00:09:47.610" end="00:09:51.830">they ever did before and for that we're working very closely with the</p>
+      <p begin="00:09:51.830" end="00:09:57.350">sql like architect richard hip thanks richard for all your help and score development team and</p>
+      <p begin="00:09:57.350" end="00:10:01.000">...core engineers doctor them on how.</p>
+      <p begin="00:10:01.000" end="00:10:05.610">We can...sequel light and what changes we can make the operating system so that when the</p>
+      <p begin="00:10:05.610" end="00:10:11.200">to come together you get better performance as a user and developer?</p>
+      <p begin="00:10:11.200" end="00:10:15.640">Sql it is also a great way to do local data access in your universal windows</p>
+      <p begin="00:10:15.640" end="00:10:20.540">applications it words great on all the devices in the family especially resource constraint</p>
+      <p begin="00:10:20.540" end="00:10:27.420">devices such as mobile phones and the devices that comprise the internet of things.</p>
+      <p begin="00:10:27.420" end="00:10:30.430">For those a few who are coming from the enterprise from the</p>
+      <p begin="00:10:30.430" end="00:10:35.100">dot net world you might be you might have use entity framework</p>
+      <p begin="00:10:35.100" end="00:10:38.000">...so entity framework seven is now going to</p>
+      <p begin="00:10:38.000" end="00:10:40.280">works with universal windows application and</p>
+      <p begin="00:10:40.280" end="00:10:47.030">you'll be able to use it with the local database for local storage which is going to be sequel.</p>
+      <p begin="00:10:47.030" end="00:10:51.400">So, let's get into our force demo which is.</p>
+      <p begin="00:10:51.400" end="00:10:54.250">Lightweight to do list averages tightly coupled with</p>
+      <p begin="00:10:54.250" end="00:10:58.490">...example...cplus-plus application.</p>
+      <p begin="00:10:58.490" end="00:11:08.940">Your own...</p>
+      <p begin="00:11:16.930" end="00:11:52.080">You see...learns find attribution.</p>
+      <p begin="00:11:52.080" end="00:11:53.320">All right.</p>
+      <p begin="00:11:53.320" end="00:11:57.830">So,...have a simple to do list...has basic categories for different type of tasks</p>
+      <p begin="00:11:57.830" end="00:12:00.670">...personal family and,</p>
+      <p begin="00:12:00.670" end="00:12:04.860">they'll start...tasks as a program manager I have to reply</p>
+      <p begin="00:12:04.860" end="00:12:09.200">do a lot of emails that I haven't in a while since I'm here so</p>
+      <p begin="00:12:09.200" end="00:12:15.820">I'll reply...a lot of emails.</p>
+      <p begin="00:12:15.820" end="00:12:21.030">Go ahead add another task right.</p>
+      <p begin="00:12:21.030" end="00:12:22.440">Actually finish all</p>
+      <p begin="00:12:22.440" end="00:12:25.130">...writing it finish this specks.</p>
+      <p begin="00:12:29.600" end="00:12:33.550">And, then I'm going to...up another demo.</p>
+      <p begin="00:12:33.550" end="00:12:36.260">Stepson work tasks here.</p>
+      <p begin="00:12:36.260" end="00:12:39.850">Now in preparation of this talk I haven't really clean-up my apartment in</p>
+      <p begin="00:12:39.850" end="00:12:56.560">a while so I'm going to go out a personal task so...</p>
+      <p begin="00:12:56.560" end="00:13:01.470">...added tasks to each of my categories and this is basically just storing it in a local</p>
+      <p begin="00:13:01.470" end="00:13:06.460">...database according to these categories I can after I'm done with my</p>
+      <p begin="00:13:06.460" end="00:13:10.760">work day I can go get rid of all of these here so they're gone.</p>
+      <p begin="00:13:10.760" end="00:13:15.160">And, I can view the rest in the all category it's fairly simple</p>
+      <p begin="00:13:15.160" end="00:13:17.860">...stab and now we're going to we can start stepping</p>
+      <p begin="00:13:17.860" end="00:13:25.770">through the code and see how it works with sequel...</p>
+      <p begin="00:13:25.770" end="00:13:51.800">The start this off with...</p>
+      <p begin="00:13:51.800" end="00:13:58.850">The launch...the butter.</p>
+      <p begin="00:13:58.850" end="00:14:06.050">So, on launching here I'm just calling the...you sizes so you can actually.</p>
+      <p begin="00:14:06.050" end="00:14:11.970">See what's going on the side.</p>
+      <p begin="00:14:11.970" end="00:14:15.420">Another exciting...so on launching I'm just calling</p>
+      <p begin="00:14:15.420" end="00:14:19.840">sequel light open which if there's a sequel light</p>
+      <p begin="00:14:19.840" end="00:14:24.340">database file already sitting on your in your apps local data for it would just open that</p>
+      <p begin="00:14:24.340" end="00:14:25.020">all-in-one</p>
+      <p begin="00:14:25.020" end="00:14:29.850">...create a new one since we're opening this for the first-time it's going to I</p>
+      <p begin="00:14:29.850" end="00:14:33.960">have this creative function let's see what's going on in there so in this</p>
+      <p begin="00:14:33.960" end="00:14:38.360">creative function once you create a sequel lightbulb file it doesn't</p>
+      <p begin="00:14:38.360" end="00:14:41.740">have cable so here I'm just defining that table and...</p>
+      <p begin="00:14:42.840" end="00:14:47.370">...a create statement heregiving it the columns that I</p>
+      <p begin="00:14:47.370" end="00:14:50.980">...my table then I perform the sequel like prepare</p>
+      <p begin="00:14:50.980" end="00:14:56.560">on it which turns the...statement into byte code I do sequel</p>
+      <p begin="00:14:56.560" end="00:15:01.300">...step which make sure that it's the right sequel statements valid and then it</p>
+      <p begin="00:15:01.300" end="00:15:10.170">call...light finalize and it goes and creates my table.</p>
+      <p begin="00:15:10.170" end="00:15:13.270">And, then I basically just small this...refresh,</p>
+      <p begin="00:15:13.270" end="00:15:16.670">refresh list function which is reads data from the table</p>
+      <p begin="00:15:16.670" end="00:15:21.360">that can display that right now it's an empty table so you don't see anything.</p>
+      <p begin="00:15:21.360" end="00:15:28.850">So, now let's go...ask and see what happens.</p>
+      <p begin="00:15:28.850" end="00:15:32.870">On work it's refreshing the list but now it's telling sequel light that it</p>
+      <p begin="00:15:32.870" end="00:15:37.800">wantsdatajust for the work category which is represented by</p>
+      <p begin="00:15:37.800" end="00:15:56.040">an integer here which we passed through...sql statement.</p>
+      <p begin="00:15:56.040" end="00:15:58.120">So, I did...demo I</p>
+      <p begin="00:15:58.120" end="00:16:04.530">...the add button it took me here where I'm just.</p>
+      <p begin="00:16:04.530" end="00:16:07.950">Calling and...item function let's see what's in there</p>
+      <p begin="00:16:07.950" end="00:16:12.520">I'm in this function I'm just I just have an insert into the</p>
+      <p begin="00:16:12.520" end="00:16:19.470">...database for this particular category which is work.</p>
+      <p begin="00:16:19.470" end="00:16:21.530">And, then I refresh the list</p>
+      <p begin="00:16:21.530" end="00:16:25.730">again to get fresh data from the database and I've just store I</p>
+      <p begin="00:16:25.730" end="00:16:29.910">just stored writer demo in there so you can see that.</p>
+      <p begin="00:16:31.190" end="00:16:36.430">it's a fairly it's fairly easy to use equal light...universal windows applications from a cplus-plus</p>
+      <p begin="00:16:36.430" end="00:16:41.230">up if you're if you will be hacking around with the...later on be getting a lot of</p>
+      <p begin="00:16:41.230" end="00:16:46.090">requests for that you can download the vsix for universal windows application from the</p>
+      <p begin="00:16:46.090" end="00:16:47.030">sequel...website.</p>
+      <p begin="00:16:48.750" end="00:16:51.870">Get-go it.</p>
+      <p begin="00:16:51.870" end="00:16:59.120">Cool so let's...which that presentation...</p>
+      <p begin="00:16:59.120" end="00:17:00.430">So, that was a simple</p>
+      <p begin="00:17:00.430" end="00:17:08.130">lightweight do list demo for the...sequel...</p>
+      <p begin="00:17:08.130" end="00:17:10.500">And, now let's talk about how we're using sequel</p>
+      <p begin="00:17:10.500" end="00:17:15.320">light to do local data access in the operating system we are storing all of windows</p>
+      <p begin="00:17:15.320" end="00:17:18.630">...state data in a sql light database</p>
+      <p begin="00:17:18.630" end="00:17:23.350">so up to windows eight we had multiple data stores across</p>
+      <p begin="00:17:23.350" end="00:17:27.600">are all the devices that we supported in multiple database technologies on the</p>
+      <p begin="00:17:27.600" end="00:17:32.560">same device and...engineers moving forward when...creating a converged operating system wanted a</p>
+      <p begin="00:17:32.560" end="00:17:37.150">single data store that perform well and was easier to up to</p>
+      <p begin="00:17:37.150" end="00:17:42.850">...to maintain so they look at all the...were already using but they also</p>
+      <p begin="00:17:42.850" end="00:17:47.480">look at open-source auctions options outside of microsoft and the value and...also</p>
+      <p begin="00:17:47.480" end="00:17:50.440">...sequel eight in the performance testing we found that</p>
+      <p begin="00:17:50.440" end="00:17:54.780">sql it actually perform great for the read heavy scenarios that are</p>
+      <p begin="00:17:54.780" end="00:18:02.240">...guys...looking for so we adopted that and, we shipping that on all the devices.</p>
+      <p begin="00:18:02.240" end="00:18:04.670">And, then we took...step back and we like we</p>
+      <p begin="00:18:04.670" end="00:18:09.540">realized we did a scan of the windows code base and we realize that there are other things that, you know,</p>
+      <p begin="00:18:09.540" end="00:18:13.530">they want you...as well...like all right let's why not just collect</p>
+      <p begin="00:18:13.530" end="00:18:17.490">device this effort and we come up with some center processes and</p>
+      <p begin="00:18:17.490" end="00:18:22.420">policiesto manage sequel light in the operating system so it's easier for teams</p>
+      <p begin="00:18:22.420" end="00:18:27.530">that are consuming it of want to consumer in the operating system to up...on</p>
+      <p begin="00:18:27.530" end="00:18:32.450">board so right now if you want to use the open-source software in analyst</p>
+      <p begin="00:18:32.450" end="00:18:37.230">...you have to go to legal and you have to do a bunch of stuff like ip scanning so we just centralized</p>
+      <p begin="00:18:37.230" end="00:18:45.070">...so all they have to do is go and...dependency...</p>
+      <p begin="00:18:45.070" end="00:18:46.920">And, we're also working closely with the</p>
+      <p begin="00:18:46.920" end="00:18:54.100">...like...developers to see how this can work a bit of how the library can work better under.</p>
+      <p begin="00:18:54.100" end="00:18:56.770">So, we've delve into deep into favorite of</p>
+      <p begin="00:18:56.770" end="00:19:01.570">detail now let's start talking about abstraction and comes to abstraction a lot of you might</p>
+      <p begin="00:19:01.570" end="00:19:06.420">like rms ...entity framework seven is are preferred or I am for the</p>
+      <p begin="00:19:06.420" end="00:19:10.560">universe windows application platform right now so,</p>
+      <p begin="00:19:10.560" end="00:19:14.470">let's take a look into this some people like to talk to</p>
+      <p begin="00:19:14.470" end="00:19:18.950">the databases directly right...for that which is fine if you're using</p>
+      <p begin="00:19:18.950" end="00:19:21.880">...can help you abstract away a lot of the details</p>
+      <p begin="00:19:21.880" end="00:19:26.310">...can focus on the business logic in the user experience so specially for</p>
+      <p begin="00:19:26.310" end="00:19:32.600">lb apps I when I'm writing my demos I prefer to use that.</p>
+      <p begin="00:19:32.600" end="00:19:36.250">So, here I have a simple.</p>
+      <p begin="00:19:36.250" end="00:19:55.800">...some of the right one.</p>
+      <p begin="00:19:55.800" end="00:19:58.940">So, in have universal windows application</p>
+      <p begin="00:19:58.940" end="00:20:04.190">up its for shipping company it's for the of</p>
+      <p begin="00:20:04.190" end="00:20:11.980">...employees at a retail store and what they can do using this is they</p>
+      <p begin="00:20:11.980" end="00:20:15.620">And, fetch...orders from their companies cloud.</p>
+      <p begin="00:20:15.620" end="00:20:21.470">Then they can assign those orders for themselves if they think they can fulfill it I think we</p>
+      <p begin="00:20:21.470" end="00:20:25.490">can fulfill this...orange...and I'm going one right now so, yeah,</p>
+      <p begin="00:20:25.490" end="00:20:30.420">go for app so let's do this so of</p>
+      <p begin="00:20:30.420" end="00:20:33.630">assigned to myself it has updated that...this assigned to the</p>
+      <p begin="00:20:33.630" end="00:20:37.640">...in the cloud and now I'm going to go around the warehouse</p>
+      <p begin="00:20:37.640" end="00:20:41.810">...packaging this order but I'm going to go offline because I</p>
+      <p begin="00:20:43.120" end="00:20:48.810">...running around...looks and trainees...have spotting connection of</p>
+      <p begin="00:20:48.810" end="00:20:52.960">...minded can internet connection off but all this the</p>
+      <p begin="00:20:52.960" end="00:20:56.320">...assigned to myself a store locally now so I'm going to</p>
+      <p begin="00:20:56.320" end="00:21:04.900">...open this order I'm going around.</p>
+      <p begin="00:21:04.900" end="00:21:23.150">...disable the break points here.</p>
+      <p begin="00:21:23.150" end="00:21:27.330">So, I...both of these...them off...them and I...this order</p>
+      <p begin="00:21:27.330" end="00:21:32.050">is shipped ask for...but now tells me that cannot be march</p>
+      <p begin="00:21:32.050" end="00:21:35.590">shipped in the cloud because I'm not connected to the internet and that I</p>
+      <p begin="00:21:35.590" end="00:21:39.840">showed you pressing button when I'm back online so now I don't have</p>
+      <p begin="00:21:39.840" end="00:21:44.170">any orders anymore but I need to still let the cloud</p>
+      <p begin="00:21:44.170" end="00:21:51.060">...that I've taken care of this I'm going to connect back to the internet.</p>
+      <p begin="00:21:51.060" end="00:21:54.480">I'm going to go...this.</p>
+      <p begin="00:21:54.480" end="00:22:00.450">And, now has updated that state in the cloud...ship and its march shipped</p>
+      <p begin="00:22:00.450" end="00:22:04.760">done your I can do choose orders again now I just have one order new</p>
+      <p begin="00:22:04.760" end="00:22:09.730">...came in less work from possible.</p>
+      <p begin="00:22:09.730" end="00:22:18.020">So, let's step to the scored and I'll show you how simple it is to do this with entity framework and sequel.</p>
+      <p begin="00:22:18.020" end="00:22:24.210">I'm going to...points on.</p>
+      <p begin="00:22:24.210" end="00:22:56.250">Great points.</p>
+      <p begin="00:22:56.250" end="00:22:57.630">So, the first thing that I'm doing</p>
+      <p begin="00:22:57.630" end="00:23:03.970">inherent inside the code a few using entity framework you probably have define models.</p>
+      <p begin="00:23:03.970" end="00:23:09.020">So, I create to models...create the order model that's basically I have</p>
+      <p begin="00:23:09.020" end="00:23:14.070">to classes for them you can see what's in the order model right over here</p>
+      <p begin="00:23:14.070" end="00:23:18.460">is it has a boolean of...shipped are not of it that shipment synched with the</p>
+      <p begin="00:23:18.460" end="00:23:22.480">cloud are not with some other information and this maps exactly to the</p>
+      <p begin="00:23:22.480" end="00:23:26.530">...object that I get from the cloud law so I take...object</p>
+      <p begin="00:23:26.530" end="00:23:32.170">serialized into an object up into an instance of this I have a</p>
+      <p begin="00:23:32.170" end="00:23:38.260">list of items which I call the order lines so shirts the?</p>
+      <p begin="00:23:38.260" end="00:23:43.060">The...that stuff that's required for that particular order...mention in there so</p>
+      <p begin="00:23:43.060" end="00:23:47.980">haven't and then I...order line model whether that orders backdoor...when we were like clicking,</p>
+      <p begin="00:23:47.980" end="00:23:54.220">clicking dates...basically just checking this particular property then I have a</p>
+      <p begin="00:23:54.220" end="00:23:58.930">...simple context where...entity framework that these are the two entities the order and</p>
+      <p begin="00:23:58.930" end="00:24:02.460">the order lines that I needed data store for.</p>
+      <p begin="00:24:02.460" end="00:24:09.380">And, then here is the cool part of this where I ham?</p>
+      <p begin="00:24:09.380" end="00:24:10.590">Basically I'm.</p>
+      <p begin="00:24:12.230" end="00:24:13.710">Creating a local database.</p>
+      <p begin="00:24:14.860" end="00:24:18.050">In my local order form application data and I'm</p>
+      <p begin="00:24:18.050" end="00:24:22.930">...the entity framework here to use...light...passing it the bat</p>
+      <p begin="00:24:22.930" end="00:24:27.780">...where I want and this is the only...encode where you would see a reference to</p>
+      <p begin="00:24:27.780" end="00:24:32.560">...lights abstracted abstracts everything away so,</p>
+      <p begin="00:24:32.560" end="00:24:46.180">let's see what happens when you actually goal and.</p>
+      <p begin="00:24:46.180" end="00:24:50.450">So, when you go and fill in order and you and you click?</p>
+      <p begin="00:24:50.450" end="00:24:54.840">Click on one of the one of the items.</p>
+      <p begin="00:24:54.840" end="00:24:58.920">It changes that state immediately to the database.</p>
+      <p begin="00:24:58.920" end="00:25:00.660">And, then it checks</p>
+      <p begin="00:25:00.660" end="00:25:04.730">...all the items have been back so that it can lead the order</p>
+      <p begin="00:25:04.730" end="00:25:08.270">ship if they're all packed and I click the ship</p>
+      <p begin="00:25:08.270" end="00:25:13.160">button it would ask me to confirm the shipment at the same time and I would confirm</p>
+      <p begin="00:25:13.160" end="00:25:23.850">it would save that state the database then it would try to contact the cloud.</p>
+      <p begin="00:25:23.850" end="00:25:31.030">Yeah, so,...true.</p>
+      <p begin="00:25:31.030" end="00:25:39.030">If it goes through the...call.</p>
+      <p begin="00:25:39.030" end="00:25:44.450">So, yeah, so, here's just marking the order.</p>
+      <p begin="00:25:44.450" end="00:25:46.600">Think that's true if it if it actually</p>
+      <p begin="00:25:46.600" end="00:25:55.100">...back from the cloud and successfully able to save that.</p>
+      <p begin="00:25:55.100" end="00:26:03.950">So, let me show you the...</p>
+      <p begin="00:26:03.950" end="00:26:06.530">Yeah, so.</p>
+      <p begin="00:26:06.530" end="00:26:10.740">So, here's the thing logic where tries to contact unicorns store</p>
+      <p begin="00:26:10.740" end="00:26:17.310">serviceif the order that I'm trying to think is actually shipped</p>
+      <p begin="00:26:17.310" end="00:26:22.630">...can...will update that in the database or...would just show me a dialogue</p>
+      <p begin="00:26:22.630" end="00:26:26.060">...could not connect and that actually practicing later</p>
+      <p begin="00:26:26.060" end="00:26:31.610">so that's a very lightweightdevil of how you can use entity framework this would be online</p>
+      <p begin="00:26:31.610" end="00:26:34.120">...miller's also giving a more detail talk</p>
+      <p begin="00:26:34.120" end="00:26:43.020">on entity framework so you guys check it out of its on thursday?</p>
+      <p begin="00:26:43.020" end="00:26:46.810">So, there's more to entity framework seven how many of</p>
+      <p begin="00:26:46.810" end="00:26:51.770">you are involved in open-source project.</p>
+      <p begin="00:26:51.770" end="00:26:56.220">Are managing in open-source project...to start in open-source project?</p>
+      <p begin="00:26:56.220" end="00:27:01.210">Or some of you so there's some good lessons that we can take away from entity framework</p>
+      <p begin="00:27:01.210" end="00:27:05.820">entity framework has been fully open-source for a while...building entity framework seven on get</p>
+      <p begin="00:27:05.820" end="00:27:12.220">...you can goal see their source more than that...publishing all of their</p>
+      <p begin="00:27:12.220" end="00:27:16.470">...consuming open-source themselves and their publishing all of their engineering nodes</p>
+      <p begin="00:27:16.470" end="00:27:20.270">there design documents they meeting notes on get up so people can...</p>
+      <p begin="00:27:21.400" end="00:27:25.770">What's going in to the framework and lights going in and they have a</p>
+      <p begin="00:27:25.770" end="00:27:30.600">rising number of a contributors and community rounded is growing with people are going in there</p>
+      <p begin="00:27:30.600" end="00:27:35.370">file...fat...finding bugs they're making you design suggestions and</p>
+      <p begin="00:27:35.370" end="00:27:40.850">to these meeting nodes they can see where design suggestions...and the high-level take away from that team we</p>
+      <p begin="00:27:40.850" end="00:27:45.350">were talking the those folks a few weeks earlier was that...if</p>
+      <p begin="00:27:45.350" end="00:27:49.760">...transparent with your open-source project you can really build a community</p>
+      <p begin="00:27:49.760" end="00:27:57.030">...and it helps you develop a better product as...</p>
+      <p begin="00:27:57.030" end="00:27:59.960">So, let's shift gears and talk about the internet of things</p>
+      <p begin="00:27:59.960" end="00:28:03.910">this is a partnership I'm really excited about so, all join as</p>
+      <p begin="00:28:03.910" end="00:28:08.440">you mentioned before is a software framework to talk to connected devices</p>
+      <p begin="00:28:08.440" end="00:28:11.890">a microsoft shipping this as part of the sdk.</p>
+      <p begin="00:28:13.070" end="00:28:17.130">And, microsoft also six up as a is also part of the all</p>
+      <p begin="00:28:17.130" end="00:28:21.210">seen alliance which is a consortium of all the of many</p>
+      <p begin="00:28:21.210" end="00:28:26.480">appliance manufacturers and software companies are working on all join specifically like lg electra</p>
+      <p begin="00:28:26.480" end="00:28:27.970">...those guys are making</p>
+      <p begin="00:28:27.970" end="00:28:31.980">appliances they already have some the market they're making more that</p>
+      <p begin="00:28:31.980" end="00:28:38.570">...join enabled and windows it a fair amount of work on this front are all</p>
+      <p begin="00:28:38.570" end="00:28:43.220">join in the...joint image engineers they work on decor development groups</p>
+      <p begin="00:28:43.220" end="00:28:46.720">...defining the core frameworks...security</p>
+      <p begin="00:28:46.720" end="00:28:51.230">being spent a fair amount of work security testing all</p>
+      <p begin="00:28:51.230" end="00:29:01.070">join defining this design for that and they've contributed that work back to the community?</p>
+      <p begin="00:29:01.070" end="00:29:04.740">All join is a great way to make connected apps.</p>
+      <p begin="00:29:04.740" end="00:29:08.510">Up on the universal using the universal</p>
+      <p begin="00:29:08.510" end="00:29:10.330">up platform.</p>
+      <p begin="00:29:10.330" end="00:29:13.870">You can make abstract can talk to ineligible tv</p>
+      <p begin="00:29:13.870" end="00:29:18.260">...life fix bulbs or you can make your own device up using</p>
+      <p begin="00:29:18.260" end="00:29:24.250">raspy by and then make it...to your app it also come...part of the</p>
+      <p begin="00:29:24.250" end="00:29:31.510">sdk you can also use which...very sport in visual...to learn for it.</p>
+      <p begin="00:29:31.510" end="00:29:39.890">Demo time yet let's do the demo so I'm going to quickly demo.</p>
+      <p begin="00:29:39.890" end="00:29:45.300">Like the all joint concept here of how you can make.</p>
+      <p begin="00:29:45.300" end="00:30:02.010">En-us windows application that...to and all...device.</p>
+      <p begin="00:30:02.010" end="00:30:07.160">So, here I have an application.</p>
+      <p begin="00:30:07.160" end="00:30:17.150">That I will use to control my daughter which is all joined enable.</p>
+      <p begin="00:30:17.150" end="00:30:20.380">Fire up the...as well.</p>
+      <p begin="00:30:20.380" end="00:30:20.880">Samoa.</p>
+      <p begin="00:30:29.840" end="00:30:36.040">...closer...right over here.</p>
+      <p begin="00:30:36.040" end="00:30:38.990">And, now so, ...</p>
+      <p begin="00:30:38.990" end="00:30:44.080">Representing that...device by this by this app that have over here you could deployed on or</p>
+      <p begin="00:30:44.080" end="00:30:48.660">asking by...work elsewhere but essentially...two separate applications</p>
+      <p begin="00:30:48.660" end="00:30:53.160">apl connected to each other...over the all join network that both have joint</p>
+      <p begin="00:30:53.160" end="00:30:58.170">...launched them so I can do start toasting here and then say when the</p>
+      <p begin="00:30:58.170" end="00:31:02.430">...done someone would trigger the...done signal.</p>
+      <p begin="00:31:02.430" end="00:31:06.510">And, then I get a notification my notification center just like I would get a notification from</p>
+      <p begin="00:31:06.510" end="00:31:11.090">my email that...done.</p>
+      <p begin="00:31:11.090" end="00:31:16.450">Let's quickly stepped to the code for this not going to go too much into debt because we have</p>
+      <p begin="00:31:16.450" end="00:31:18.870">an...session going on in parallel you should</p>
+      <p begin="00:31:18.870" end="00:31:22.010">...that online...they will</p>
+      <p begin="00:31:22.010" end="00:31:29.430">get into the details of the architecture but basically here I have.</p>
+      <p begin="00:31:29.430" end="00:31:32.930">My devices represented by.</p>
+      <p begin="00:31:32.930" end="00:31:35.140">And, all join produces like I call they</p>
+      <p begin="00:31:35.140" end="00:31:42.200">call it the producer because it's producing the notification and then it simply registers...</p>
+      <p begin="00:31:42.200" end="00:31:46.510">...network using in all join bus and it starts off</p>
+      <p begin="00:31:46.510" end="00:31:47.470">...service</p>
+      <p begin="00:31:47.470" end="00:31:53.270">...starts...that hey I'm available I can talk to other apps and</p>
+      <p begin="00:31:53.270" end="00:31:58.050">the cool thing to note here is that you don't have to install any additional library to do this</p>
+      <p begin="00:31:58.050" end="00:32:08.790">work you can just start using this name space windows dot devices dot all...and your...</p>
+      <p begin="00:32:08.790" end="00:32:25.290">On my side.</p>
+      <p begin="00:32:25.290" end="00:32:29.510">Samoa.</p>
+      <p begin="00:32:29.510" end="00:32:32.020">So, all...basically starting</p>
+      <p begin="00:32:32.020" end="00:32:37.680">a toaster watcher which would look for this particular device.</p>
+      <p begin="00:32:37.680" end="00:32:43.130">On the network...launch my app the...are added then I launch my all</p>
+      <p begin="00:32:43.130" end="00:32:45.830">join toaster device and it says something</p>
+      <p begin="00:32:45.830" end="00:32:54.170">that says hey I'm available to connectwhich fires off this still...added?</p>
+      <p begin="00:32:54.170" end="00:32:58.740">Added event and then it can start receiving signals here.</p>
+      <p begin="00:32:58.740" end="00:33:02.660">Cool...it's all running off the all join infrastructure</p>
+      <p begin="00:33:02.660" end="00:33:07.740">...wi-fi network that both are...</p>
+      <p begin="00:33:07.740" end="00:33:12.480">So, yeah, that's so...one that's a cool demo.</p>
+      <p begin="00:33:12.480" end="00:33:13.440">But, you know,</p>
+      <p begin="00:33:13.440" end="00:33:18.850">I think there's another cool way we can show all join working and I think you're talking</p>
+      <p begin="00:33:18.850" end="00:33:24.950">...it's you're and you're out...your torch yes let's show them the</p>
+      <p begin="00:33:24.950" end="00:33:30.420">...the shown the torch yet not quite done yet we're working on it so I want</p>
+      <p begin="00:33:30.420" end="00:33:35.570">...torch that I can get a around at my house...</p>
+      <p begin="00:33:35.570" end="00:33:40.410">So, that I can sink the lights on the...my music that I'm playing</p>
+      <p begin="00:33:40.410" end="00:33:45.650">...all join speak that's right so we got this torch app is...the</p>
+      <p begin="00:33:45.650" end="00:33:51.080">...of...going on is this is running on my laptop and...talking to this router and the</p>
+      <p begin="00:33:51.080" end="00:33:56.200">...is also talking to this router so it's an order network right here on stage so that's just the our</p>
+      <p begin="00:33:56.200" end="00:34:00.530">cord yet and basically just a...in...assembles</p>
+      <p begin="00:34:00.530" end="00:34:06.830">...make one so this is a windows app and we got a few things we can.</p>
+      <p begin="00:34:06.830" end="00:34:16.280">...working...networking...</p>
+      <p begin="00:34:16.280" end="00:34:29.460">Okay, maybe we'll have to come back to that demo...it is an alpha.</p>
+      <p begin="00:34:29.460" end="00:34:40.190">...down launch...yeah,...try one more time.</p>
+      <p begin="00:34:40.190" end="00:34:45.409">Or make sure I could see it.</p>
+      <p begin="00:34:45.409" end="00:34:48.299">There's no problem you're not so we went connected to</p>
+      <p begin="00:34:48.299" end="00:34:53.549">...wiser so, ...or homeland...</p>
+      <p begin="00:34:53.549" end="00:34:57.780">Answer yes I want to.</p>
+      <p begin="00:34:57.780" end="00:35:00.700">So, this is a tool that basically when it is</p>
+      <p begin="00:35:00.700" end="00:35:18.000">...other altering devices available just...the...line.</p>
+      <p begin="00:35:18.000" end="00:35:29.020">All right hopefully that works and see if we can see the device whoops.</p>
+      <p begin="00:35:29.020" end="00:35:31.200">Thanks networking ok.</p>
+      <p begin="00:35:31.200" end="00:35:34.850">Let me do the other demo and if we...I was I come back to</p>
+      <p begin="00:35:34.850" end="00:35:45.940">...anyway...it's cool it does work but we are the we are the bleeding at you.</p>
+      <p begin="00:35:45.940" end="00:35:50.570">All right so now I'm going...the next demo.</p>
+      <p begin="00:35:50.570" end="00:35:55.270">And, start with the scenario so let's say you want to build a media...</p>
+      <p begin="00:35:55.270" end="00:35:59.730">And, you want to supporter broad-range of codecs and.</p>
+      <p begin="00:35:59.730" end="00:36:01.690">The first-place...you look at the windows media</p>
+      <p begin="00:36:01.690" end="00:36:06.190">...and the platform support for media and they've done a ton of</p>
+      <p begin="00:36:06.190" end="00:36:10.720">great work there there's another session all the stuff they've been doing and you get a</p>
+      <p begin="00:36:10.720" end="00:36:15.170">lot of great features you get your audio and video sinking and</p>
+      <p begin="00:36:15.170" end="00:36:20.160">the hardware decoder so especially...mobile it's not going to during the battery nearly as fast as software</p>
+      <p begin="00:36:20.160" end="00:36:25.100">...coders so you're looking at that and there's a lot of great popular codecs that are supported</p>
+      <p begin="00:36:25.100" end="00:36:30.100">there but in your app you want you want broader support for different codecs.</p>
+      <p begin="00:36:30.100" end="00:36:32.870">So, in open-source world there's...mpeg and fm</p>
+      <p begin="00:36:32.870" end="00:36:38.030">...is a great open-source library and the team and working...look at</p>
+      <p begin="00:36:38.030" end="00:36:42.290">...and unpack and, said well how can we make it easier to use...of</p>
+      <p begin="00:36:42.290" end="00:36:47.270">...your apps and at the same time how can you leverage in that same</p>
+      <p begin="00:36:47.270" end="00:36:51.540">...the windows media pipelines what they came up with is fm pick interop...this is up</p>
+      <p begin="00:36:51.540" end="00:36:55.440">on get have now and you can come join us make it better</p>
+      <p begin="00:36:55.440" end="00:37:18.910">where it's actively being worked on and me show you how it works.</p>
+      <p begin="00:37:18.910" end="00:37:26.580">Simple app going to pick a local file.</p>
+      <p begin="00:37:26.580" end="00:37:30.090">...and creative.</p>
+      <p begin="00:37:30.090" end="00:37:32.010">Creative commons content this big</p>
+      <p begin="00:37:32.010" end="00:37:34.590">but money because probably seen as if you're working with media.</p>
+      <p begin="00:37:35.670" end="00:37:42.600">Ok, so, there's just playing the app.</p>
+      <p begin="00:37:42.600" end="00:37:46.890">So, here's our open local file all this code is doing is opening a file</p>
+      <p begin="00:37:46.890" end="00:37:50.870">picker identifying the...want to play.</p>
+      <p begin="00:37:50.870" end="00:37:54.820">It creates a file stream to that the passes that file stream into fm</p>
+      <p begin="00:37:54.820" end="00:37:58.470">...interop library what you get back from</p>
+      <p begin="00:37:58.470" end="00:38:01.960">fm pick interop is a media stream source that's a</p>
+      <p begin="00:38:01.960" end="00:38:09.580">generic class that you can use to represent media for...media pipeline.</p>
+      <p begin="00:38:09.580" end="00:38:14.390">You can assign that media stream source to a media element in</p>
+      <p begin="00:38:14.390" end="00:38:22.330">...so it's just a few lines of code...current media player.</p>
+      <p begin="00:38:22.330" end="00:38:31.500">Let me show you a little more let's step in the...this time.</p>
+      <p begin="00:38:31.500" end="00:38:37.560">...that same clip you can just see the code.</p>
+      <p begin="00:38:37.560" end="00:38:42.210">All right so here now we're in that were inside fm...interop and the idea is that when</p>
+      <p begin="00:38:42.210" end="00:38:46.090">you using fm pick interop you don't need to touch this...just going to do the right thing for years</p>
+      <p begin="00:38:46.090" end="00:38:50.940">want to show you what it's doing so here...unpacked that file we gave its</p>
+      <p begin="00:38:50.940" end="00:38:54.250">...container and its...audio stream.</p>
+      <p begin="00:38:54.250" end="00:38:57.140">And, it's just going to look at what's the codec it sees that</p>
+      <p begin="00:38:58.500" end="00:39:05.280">...knows that are media platform has support for ac so it's not going to decompress it.</p>
+      <p begin="00:39:05.280" end="00:39:08.160">...the video stream.</p>
+      <p begin="00:39:08.160" end="00:39:10.540">It...explore.</p>
+      <p begin="00:39:10.540" end="00:39:16.810">And, it says I'm going to leave this compressed and what the windows media pipeline handle this content?</p>
+      <p begin="00:39:16.810" end="00:39:26.770">It all comes back as a media stream sourcing gets...to that media element.</p>
+      <p begin="00:39:26.770" end="00:39:34.270">Now broad codec support.</p>
+      <p begin="00:39:34.270" end="00:39:37.780">And, open a dot org file.</p>
+      <p begin="00:39:37.780" end="00:39:43.030">This you cannot just click and file explore and play in windows.</p>
+      <p begin="00:39:43.030" end="00:39:47.340">Same code going to look at the codec.</p>
+      <p begin="00:39:47.340" end="00:39:48.840">It's going to see that it's...</p>
+      <p begin="00:39:50.000" end="00:39:53.160">...say no I I'm going to have to decompress that</p>
+      <p begin="00:39:53.160" end="00:39:57.920">...software the software...so does that.</p>
+      <p begin="00:39:57.920" end="00:40:04.760">Same thing with the video.</p>
+      <p begin="00:40:04.760" end="00:40:06.630">Codec is your.</p>
+      <p begin="00:40:07.680" end="00:40:13.450">And, it's going to use it's going to create uncompressed with the software...coders.</p>
+      <p begin="00:40:13.450" end="00:40:15.860">But, for the user of this libraries same code</p>
+      <p begin="00:40:15.860" end="00:40:24.350">your applying the resulting media stream source to that media element.</p>
+      <p begin="00:40:24.350" end="00:40:28.440">So, very cool I think this is a great example of microsoft</p>
+      <p begin="00:40:28.440" end="00:40:32.440">engineers being creative about how you can use the best in the windows platform and</p>
+      <p begin="00:40:32.440" end="00:40:37.370">leverage open-source in your projects in a simple way we're still working on this</p>
+      <p begin="00:40:37.370" end="00:40:47.830">we'd love to have people that are interested in this project to get involved...up and get up now.</p>
+      <p begin="00:40:47.830" end="00:40:53.440">All right so that's it for demos.</p>
+      <p begin="00:40:53.440" end="00:40:59.220">And, bummed about the...have to set up the...awareness shown working because it works with</p>
+      <p begin="00:40:59.220" end="00:41:02.400">...and if you want to help us make the lapped better make a cool torch.</p>
+      <p begin="00:41:04.410" end="00:41:08.180">...a parties going...can flash green when you're when you're phone's ringing you can't hear your</p>
+      <p begin="00:41:08.180" end="00:41:21.490">phone and some great ideas right let's look back to the...</p>
+      <p begin="00:41:21.490" end="00:41:26.300">Your favorite id supporting more of the project types that you love.</p>
+      <p begin="00:41:26.300" end="00:41:31.480">So, visual studios always been my favorite id...do you guys feel the same way about visual studio</p>
+      <p begin="00:41:31.480" end="00:41:34.100">...a fantastic id...right.</p>
+      <p begin="00:41:34.100" end="00:41:38.610">And, but, sometimes...had projects in the past perhaps...using a language</p>
+      <p begin="00:41:38.610" end="00:41:44.340">a particular project...well I have to use this other thing over here would be great if you could just stay</p>
+      <p begin="00:41:44.340" end="00:41:51.230">in visual studio the time that's what they're working on so let's give you some examples.</p>
+      <p begin="00:41:51.230" end="00:41:52.740">Get hub.</p>
+      <p begin="00:41:52.740" end="00:41:54.640">You're going to be able to work in visual</p>
+      <p begin="00:41:54.640" end="00:41:58.190">studio and never leave the id e in manager general projects.</p>
+      <p begin="00:41:59.260" end="00:42:01.660">Awesome right.</p>
+      <p begin="00:42:01.660" end="00:42:06.790">So, there a couple open-source projects that are behind this and they're libm get...libm get to</p>
+      <p begin="00:42:06.790" end="00:42:11.500">...these...get help check them out and the great story here is that</p>
+      <p begin="00:42:11.500" end="00:42:14.420">it's microsoft engineers working with get</p>
+      <p begin="00:42:14.420" end="00:42:18.090">...engineers and the community alta pull this together</p>
+      <p begin="00:42:18.090" end="00:42:22.950">integrate way to definitely check this out.</p>
+      <p begin="00:42:22.950" end="00:42:23.970">Cordova if</p>
+      <p begin="00:42:23.970" end="00:42:28.160">...interested or doing cordova app development visual studios</p>
+      <p begin="00:42:28.160" end="00:42:32.980">now bundling more and more of the dependencies that you need with cordova you</p>
+      <p begin="00:42:32.980" end="00:42:36.740">can see some big ones in their node is in the installer now.</p>
+      <p begin="00:42:37.790" end="00:42:39.540">An android sdk.</p>
+      <p begin="00:42:39.540" end="00:42:42.520">Is pretty cool?</p>
+      <p begin="00:42:42.520" end="00:42:44.180">So, cordova if you're not familiar is</p>
+      <p begin="00:42:44.180" end="00:42:49.620">...using web languages to build apps which html javascript and</p>
+      <p begin="00:42:49.620" end="00:42:56.960">...gets package into...that you can just you can a...store.</p>
+      <p begin="00:42:56.960" end="00:43:00.430">Python handsome and as an article on this about how</p>
+      <p begin="00:43:00.430" end="00:43:05.660">this particular tools is fantastic if you're working with python.</p>
+      <p begin="00:43:05.660" end="00:43:10.330">It's on get...microsoft tvs and this is actively continually being work</p>
+      <p begin="00:43:10.330" end="00:43:12.330">tumbles already great.</p>
+      <p begin="00:43:12.330" end="00:43:14.570">So, you get...teller sense you get syntax</p>
+      <p begin="00:43:14.570" end="00:43:23.010">...can step through it all within visual studio to definitely check that out.</p>
+      <p begin="00:43:23.010" end="00:43:26.770">And, node js in visual studio we saw this</p>
+      <p begin="00:43:26.770" end="00:43:33.180">I got so excited because I use node...on my on my own love node but,</p>
+      <p begin="00:43:33.180" end="00:43:37.570">the thought of staying in visual studio and setting break points and even with remote</p>
+      <p begin="00:43:37.570" end="00:43:40.820">servers that you're interacting with a lot on the screen there...</p>
+      <p begin="00:43:40.820" end="00:43:48.570">just let you kind of digest that if you're bigger node this is just fantastic.</p>
+      <p begin="00:43:48.570" end="00:43:51.040">So, this is a great examples of</p>
+      <p begin="00:43:51.040" end="00:43:55.360">how visual studios doing more that and you know, it's just it's</p>
+      <p begin="00:43:55.360" end="00:43:58.870">just great to see all right so now.</p>
+      <p begin="00:43:58.870" end="00:44:02.440">This...going to do the summary go ahead and.</p>
+      <p begin="00:44:02.440" end="00:44:07.910">Thanks users.</p>
+      <p begin="00:44:07.910" end="00:44:08.590">Thank you</p>
+      <p begin="00:44:08.590" end="00:44:22.120">...in visual studio that's available we've talked about up can usage yeah.</p>
+      <p begin="00:44:22.120" end="00:44:26.540">...very hitting...you figure</p>
+      <p begin="00:44:26.540" end="00:44:29.980">that's a good and we have shown you what open-source</p>
+      <p begin="00:44:29.980" end="00:44:34.630">we're supporting better on windows and what's available in the sdk so now what are the decor is what's</p>
+      <p begin="00:44:34.630" end="00:44:36.910">in it for us developer first.</p>
+      <p begin="00:44:38.110" end="00:44:41.110">You can chipper apps faster you can get to the market, market</p>
+      <p begin="00:44:41.110" end="00:44:47.030">faster you have for some of the cutting-edge open-source we have windows api for all</p>
+      <p begin="00:44:47.030" end="00:44:51.580">...so you don't need to go worry about on boarding and open-source project</p>
+      <p begin="00:44:51.580" end="00:44:55.070">into your enterprise up for say like go around</p>
+      <p begin="00:44:55.070" end="00:45:03.380">...all that so we've taken some of that overhead away by providing windows aps or some of these.</p>
+      <p begin="00:45:03.380" end="00:45:08.680">...into the...so again easier to take a dependency on they're</p>
+      <p begin="00:45:08.680" end="00:45:13.620">easier to maintain now because now for a lot of these you can be getting updates from windows you</p>
+      <p begin="00:45:13.620" end="00:45:20.640">need to separately google and update the...that...your app ...easier</p>
+      <p begin="00:45:20.640" end="00:45:25.640">to troubleshooting so you already have this open-source community and forums but now you</p>
+      <p begin="00:45:25.640" end="00:45:32.020">can also get support from the windows development center and we would have samples therefore you guys.</p>
+      <p begin="00:45:32.020" end="00:45:35.940">And, it's easier to...platform apps the with</p>
+      <p begin="00:45:35.940" end="00:45:39.680">...say you're coming to a you want to make</p>
+      <p begin="00:45:39.680" end="00:45:44.310">universal windows application you coming from a different platform you don't need to re architect</p>
+      <p begin="00:45:44.310" end="00:45:51.140">your entire app because a certain database library isn't available doesn't work as well.</p>
+      <p begin="00:45:51.140" end="00:45:54.370">You can also to deliver better user experiences so in the all</p>
+      <p begin="00:45:54.370" end="00:45:59.230">join example that we saw you saw...notification come...when your tools for done.</p>
+      <p begin="00:45:59.230" end="00:46:03.330">So, because it's all supported by the platform not only that more performing</p>
+      <p begin="00:46:03.330" end="00:46:09.770">but it comes with like less permission...user experience this...you</p>
+      <p begin="00:46:09.770" end="00:46:17.250">...to check a button being like yell at this bug doctor meets all hundred by...code.</p>
+      <p begin="00:46:17.250" end="00:46:21.120">And, then because it's supported insidethe operating system</p>
+      <p begin="00:46:21.120" end="00:46:27.030">...done special work you keep the memory footprint...and to make it faster.</p>
+      <p begin="00:46:27.030" end="00:46:31.970">So, this is a big but this was like a big overview of all the different projects</p>
+      <p begin="00:46:31.970" end="00:46:36.610">we've been working on...deep dives happening throughout build and goes you to check</p>
+      <p begin="00:46:36.610" end="00:46:41.650">them out there's a deeper dive into entity framework the all join session already happen you can</p>
+      <p begin="00:46:41.650" end="00:46:46.450">get it online there's one angle the...gs one I'm really excited about</p>
+      <p begin="00:46:46.450" end="00:46:52.010">what do check that out as well so here's a list of ...</p>
+      <p begin="00:46:52.010" end="00:46:56.270">And, then please do follow-up with us we will be hanging around in the quick star...just</p>
+      <p begin="00:46:56.270" end="00:46:59.680">...there's a question answer around right after this we really</p>
+      <p begin="00:46:59.680" end="00:47:03.980">want your feedback up if you have ideas and how we can do this better</p>
+      <p begin="00:47:03.980" end="00:47:08.580">I'll come talk to us if you have complains get them off your...we're here for you guys</p>
+      <p begin="00:47:09.720" end="00:47:15.040">would that thank you very much and thanks for coming enjoy the rest of</p>
+      <p begin="00:47:15.040" end="00:47:19.400">...of build and I hope we could show you the stuff working but anyways</p>
+      <p begin="00:47:19.400" end="00:47:21.990">...that's probably thank you?</p>
+
+    </div>
+  </body>
+</tt>

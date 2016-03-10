@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.915</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.540" end="00:00:07.940">You guys here in there we go you can definitely...out.</p>
+      <p begin="00:00:07.940" end="00:00:10.490">As a thank you guys for coming out today has build</p>
+      <p begin="00:00:10.490" end="00:00:14.150">...so far pretty good pretty good</p>
+      <p begin="00:00:14.150" end="00:00:16.410">has been any other container...</p>
+      <p begin="00:00:20.220" end="00:00:28.290">So, how many you guys when...to talk they were kind...the fence about what level of technical</p>
+      <p begin="00:00:28.290" end="00:00:34.050">nature we should be and here we kind of landed on a somewhere between a two and three hundred level demo typically</p>
+      <p begin="00:00:34.050" end="00:00:40.660">...that means is that we will definitely do some sort of leveling the playing field for folks but,</p>
+      <p begin="00:00:40.660" end="00:00:45.920">we won't we won't shy away from code in fact I had quite a bit of interesting stuff to show</p>
+      <p begin="00:00:45.920" end="00:00:51.150">you before the before the demo...kicked in this afternoon but, I think we should still have quite a bit</p>
+      <p begin="00:00:51.150" end="00:00:55.610">of talk about and we actually might have a little more improv time and we originally scheduled so</p>
+      <p begin="00:00:56.890" end="00:01:02.010">just curious how many you guys obviously if you're here you've probably heard of darker how many</p>
+      <p begin="00:01:02.010" end="00:01:08.500">folks here are actually running darker in production right now?</p>
+      <p begin="00:01:08.500" end="00:01:09.000">Three-and-a-half.</p>
+      <p begin="00:01:10.560" end="00:01:16.940">Ok, that's actually about what we see so this is the title talk</p>
+      <p begin="00:01:16.940" end="00:01:22.310">...containers using...build something on asher I actually joined microsoft</p>
+      <p begin="00:01:23.870" end="00:01:28.550">...offender at microsoft as a full-time...rejoin the team</p>
+      <p begin="00:01:28.550" end="00:01:33.410">in the either linux compute team about four or five months ago now and I came back</p>
+      <p begin="00:01:33.410" end="00:01:38.410">those super excited about how hungry and what the what the appetite was for going after some of</p>
+      <p begin="00:01:38.410" end="00:01:42.760">these bigger open-source and, linux based investments into really,</p>
+      <p begin="00:01:42.760" end="00:01:47.450">really super cool see-saw to get up on stage and say microsoft loves linux which, you know,</p>
+      <p begin="00:01:47.450" end="00:01:53.780">three or four years ago nobody would...even, you know, start to think about honestly?</p>
+      <p begin="00:01:53.780" end="00:01:58.510">So, one of the things I've been working on quite a bit since joining the team is taking a look</p>
+      <p begin="00:01:58.510" end="00:02:03.330">at what the container landscape is what some of the things are</p>
+      <p begin="00:02:03.330" end="00:02:07.960">out there around containers how people are actually using them what the supporting orchestration tools</p>
+      <p begin="00:02:07.960" end="00:02:13.850">are and things like that it's a super interesting space super fast-growing and,</p>
+      <p begin="00:02:13.850" end="00:02:18.610">hopefully we'll cover a bunch but today?</p>
+      <p begin="00:02:18.610" end="00:02:24.070">So, here's the required...I don't know can you have you guys been able to actually scan the q r codes</p>
+      <p begin="00:02:24.070" end="00:02:28.980">...sessions cool...haven't tried one yet.</p>
+      <p begin="00:02:28.980" end="00:02:33.080">So, here is the here was the agenda for today session so, it's going to</p>
+      <p begin="00:02:33.080" end="00:02:37.970">take about ten maybe twelve ...up-front to talk about just</p>
+      <p begin="00:02:37.970" end="00:02:43.830">doctor in the overall container promise that may stretch out a little bit given that some of the</p>
+      <p begin="00:02:43.830" end="00:02:48.970">forty minutes on the back...the demo went down this morning but, we saw</p>
+      <p begin="00:02:48.970" end="00:02:54.510">...some really cool architectural stuff to talk about and I think it actually will open up the</p>
+      <p begin="00:02:54.510" end="00:03:01.350">...for a for a little more interaction between you guys myself.</p>
+      <p begin="00:03:01.350" end="00:03:04.410">So, the first part first thing I want to talk today is about darker in</p>
+      <p begin="00:03:04.410" end="00:03:09.820">the general container promise around it and we'll start off with this joke</p>
+      <p begin="00:03:09.820" end="00:03:13.530">...say for developers around the world developers like yourselves</p>
+      <p begin="00:03:13.530" end="00:03:18.990">in myself develops is always been a whale of a problem I think you can probably</p>
+      <p begin="00:03:18.990" end="00:03:22.360">...going so,</p>
+      <p begin="00:03:22.360" end="00:03:27.020">here's my favorite depiction of dev ops actually in the world and,</p>
+      <p begin="00:03:27.020" end="00:03:31.190">you see you see a bunch of starving developers...trying to</p>
+      <p begin="00:03:31.190" end="00:03:36.130">...the beast and really having a difficult time with it of course moby dick</p>
+      <p begin="00:03:36.130" end="00:03:41.930">butmore popular culture the whale has continued to be a symbol ...dev</p>
+      <p begin="00:03:41.930" end="00:03:48.160">ox excellence and that's the fail well so I don't know-how many you guys...on twitter...the fail</p>
+      <p begin="00:03:48.160" end="00:03:51.860">...was popular I remember seeing a quite a quite a bunch and</p>
+      <p begin="00:03:51.860" end="00:03:56.630">it was really really symbolic actually of you know, company those growing</p>
+      <p begin="00:03:56.630" end="00:04:02.010">super quickly really like the idea of moving quickly picking up a bunch of new users but not having</p>
+      <p begin="00:04:02.010" end="00:04:07.870">the engineering process kind of in place to catch up with that growth I can't say that anybody would have had</p>
+      <p begin="00:04:07.870" end="00:04:13.190">the structure in place to do that because twitter...so-so fasting...but,</p>
+      <p begin="00:04:13.190" end="00:04:18.550">this is something that kind of stuck with us so the reality is everyone here knows</p>
+      <p begin="00:04:18.550" end="00:04:24.000">that when we get into production no matter how well it worked on my personal boxwe get into</p>
+      <p begin="00:04:24.000" end="00:04:28.220">production gm's blow up things go wrong networks go down and things like</p>
+      <p begin="00:04:28.220" end="00:04:31.360">...demo machine...boot-up and you know,</p>
+      <p begin="00:04:31.360" end="00:04:36.340">it's just part of part of being a developer and what we've gotten used to and</p>
+      <p begin="00:04:36.340" end="00:04:41.030">maybe it's because we're, you know, just these type of folks...kind of kind of work through some of</p>
+      <p begin="00:04:41.030" end="00:04:44.690">...stuff but it's really okay I mean that's just a reality like there's,</p>
+      <p begin="00:04:44.690" end="00:04:48.510">there's failure built into the system you're never going to build a completely</p>
+      <p begin="00:04:48.510" end="00:04:54.850">bug free system we joked my startup actually that we spent about ninety percent of</p>
+      <p begin="00:04:54.850" end="00:05:01.900">...fixing bugs...the other ten percent of time writing more?</p>
+      <p begin="00:05:01.900" end="00:05:07.490">But, those actually one of our or highest efficiency points actually but,</p>
+      <p begin="00:05:07.490" end="00:05:12.380">it's okay right so if we if we kind of binary hypothesis that we can in fact</p>
+      <p begin="00:05:12.380" end="00:05:17.470">build better systems without sort of...dev ops expertise doctor becomes</p>
+      <p begin="00:05:17.470" end="00:05:21.900">...a really interesting thing to talk about so to complete</p>
+      <p begin="00:05:21.900" end="00:05:25.880">...metaphor the newest way on the block is this guy</p>
+      <p begin="00:05:25.880" end="00:05:30.870">you've all seen and, this time though ...trying to do is really make the</p>
+      <p begin="00:05:30.870" end="00:05:36.490">...symbol for good particularly from the perspective of ...the individual developer.</p>
+      <p begin="00:05:36.490" end="00:05:41.860">So, over the last two years I've been looking open-source software for a number of years now been involved</p>
+      <p begin="00:05:41.860" end="00:05:46.860">in the startups base-two to quite a degree and I don't know if I can ever remember a</p>
+      <p begin="00:05:46.860" end="00:05:51.020">startup that's really taken off particular on sort of the core.</p>
+      <p begin="00:05:51.020" end="00:05:55.670">Really battle tested infrastructure side of things ...doctor has the last two years</p>
+      <p begin="00:05:55.670" end="00:06:02.210">have been ridiculous super successful microsoft has a really public...great relationship</p>
+      <p begin="00:06:02.210" end="00:06:06.880">with darkerone of the engineers my team I think was actually the top contributor</p>
+      <p begin="00:06:06.880" end="00:06:13.130">...open-source project over the last three or four months and it's a super great product</p>
+      <p begin="00:06:14.170" end="00:06:17.780">...at the same time it's really amazing to me</p>
+      <p begin="00:06:17.780" end="00:06:20.150">that with something that wasn't,</p>
+      <p begin="00:06:20.150" end="00:06:23.720">wasn't really more than and os construct kind of hidden down in the linux</p>
+      <p begin="00:06:23.720" end="00:06:28.380">colonel a couple years ago has as turn so many of us in this room and</p>
+      <p begin="00:06:28.380" end="00:06:32.080">...enterprises that we talked to and...individual developers and startups we</p>
+      <p begin="00:06:32.080" end="00:06:37.530">talk to into doctor believers ...it's...really cool story.</p>
+      <p begin="00:06:37.530" end="00:06:42.100">So, when I talk to customers for the first-time we tend to get a lot of folks</p>
+      <p begin="00:06:42.100" end="00:06:45.930">who come in and say like...have heard about this buzzword like what stocker</p>
+      <p begin="00:06:45.930" end="00:06:53.160">what is containers and we find a lot of time people have a really easy</p>
+      <p begin="00:06:53.160" end="00:06:58.150">sort of rocking the top-level benefits of containers right you get the portability story</p>
+      <p begin="00:06:58.150" end="00:07:03.080">of community driven steps...not to go reinvent the wheel every time a potential cost savings</p>
+      <p begin="00:07:03.080" end="00:07:08.870">...really high scale with sort of been packing better utilization and things they get that part</p>
+      <p begin="00:07:08.870" end="00:07:14.630">but the...that we see from people going from individualsort of understanding</p>
+      <p begin="00:07:14.630" end="00:07:19.220">...what the dot of what the container benefits are the</p>
+      <p begin="00:07:19.220" end="00:07:22.410">...face and making the jump into production is really sort of</p>
+      <p begin="00:07:22.410" end="00:07:27.410">wrapping their head around getting out of this traditional vm model ...we kind of just stuff everything</p>
+      <p begin="00:07:27.410" end="00:07:32.450">...a single box so the really cool thing about doctor that I always try to land</p>
+      <p begin="00:07:32.450" end="00:07:36.670">is a take away is that it helps us build better applications by letting us think</p>
+      <p begin="00:07:36.670" end="00:07:39.620">...smaller parts.</p>
+      <p begin="00:07:39.620" end="00:07:44.390">The whole way of thinking is basically we treat the application</p>
+      <p begin="00:07:44.390" end="00:07:49.790">itself all the components the application as a big single box so at least when I was</p>
+      <p begin="00:07:49.790" end="00:07:55.510">...to build applications ...start with the virtual machine?</p>
+      <p begin="00:07:55.510" end="00:08:01.560">Some fixed amount of resources some static ip address one box I have something called</p>
+      <p begin="00:08:01.560" end="00:08:06.310">an application that was made out of, you know, one or more componentspacket all in their get everything</p>
+      <p begin="00:08:06.310" end="00:08:11.700">...work have some sort of a conditions and checking to make sure processes dating go down and</p>
+      <p begin="00:08:11.700" end="00:08:17.830">...are being over utilized and, you know, what for the most part is okay?</p>
+      <p begin="00:08:17.830" end="00:08:22.660">The problem is that one that system goes down you a have a single</p>
+      <p begin="00:08:22.660" end="00:08:24.840">...failure and when your traffic goes up</p>
+      <p begin="00:08:24.840" end="00:08:29.240">...services more popular it's it really turns into a very quick curse</p>
+      <p begin="00:08:29.240" end="00:08:34.010">...a blessing occurs to have a lot of lot of it attention from</p>
+      <p begin="00:08:34.010" end="00:08:38.910">customers so what do we do in that case well traditionally been given,</p>
+      <p begin="00:08:38.910" end="00:08:40.740">you know, to high-level options</p>
+      <p begin="00:08:40.740" end="00:08:45.480">right we can scale-up which basically means we go out and buy a bigger box and,</p>
+      <p begin="00:08:45.480" end="00:08:47.780">still keep sort of the advantages of</p>
+      <p begin="00:08:47.780" end="00:08:52.610">packing everything into that known model but still having the disadvantages of having that</p>
+      <p begin="00:08:52.610" end="00:08:57.610">...failure or we can scale out and the prevailing the</p>
+      <p begin="00:08:57.610" end="00:09:02.740">prevailing opinion from folks I've been talking to at least over the last eighteen months and two-years-old</p>
+      <p begin="00:09:02.740" end="00:09:07.480">dockers been coming up is scaling out really appears to be sort of the right way of</p>
+      <p begin="00:09:07.480" end="00:09:12.740">doing things or at least the popular opinion for the way to do things right now scaling</p>
+      <p begin="00:09:12.740" end="00:09:17.750">up's...lot of times...for very specific applications it's absolutely the way to go if</p>
+      <p begin="00:09:17.750" end="00:09:22.550">you can live on one box and you're just doing crazy intense compute staff</p>
+      <p begin="00:09:22.550" end="00:09:27.440">super compute kind of stuff and you...seven gazillion...in the box that can be a really,</p>
+      <p begin="00:09:27.440" end="00:09:33.110">really viable thing for-you same thing any...coin minors out there?</p>
+      <p begin="00:09:33.110" end="00:09:37.510">You can do a for you can you can get a lot of big coin out of a godzilla series on</p>
+      <p begin="00:09:37.510" end="00:09:44.210">leisure actually so, there's applications where that makes sense but scaling out is really interesting</p>
+      <p begin="00:09:44.210" end="00:09:49.430">the question is like what does it actually meanness scale out and a very naive approach</p>
+      <p begin="00:09:49.430" end="00:09:52.920">...the top-level is well I just take the existing model that I have and I</p>
+      <p begin="00:09:52.920" end="00:09:58.060">multiply it out across some more resources so in this case you know,</p>
+      <p begin="00:09:58.060" end="00:10:03.230">we actually have three times a number of gm's and what I'm calling annexed</p>
+      <p begin="00:10:03.230" end="00:10:06.100">...ops complexity addition that</p>
+      <p begin="00:10:06.100" end="00:10:10.830">and is different from everybody for me it's about seventeen I would say but I really I really</p>
+      <p begin="00:10:10.830" end="00:10:16.440">prefer being in my editor writing code rather than making sure the boxes are staying</p>
+      <p begin="00:10:16.440" end="00:10:24.240">...so when you start digging into this sort of first-level strategy for scaling out you know,</p>
+      <p begin="00:10:24.240" end="00:10:26.800">it's like well let's start taking a look at what</p>
+      <p begin="00:10:26.800" end="00:10:29.770">my application actually needs and instead of looking at is a</p>
+      <p begin="00:10:29.770" end="00:10:34.350">single black box it's actually made up of several different containers</p>
+      <p begin="00:10:34.350" end="00:10:38.740">...containers might be...the same-size you might have one guy that's, you know,</p>
+      <p begin="00:10:38.740" end="00:10:43.470">cpu bound another guides that's io bound and things like that but,</p>
+      <p begin="00:10:43.470" end="00:10:47.700">let's just...for the sake the discussion say that we have things that</p>
+      <p begin="00:10:47.700" end="00:10:53.760">are different just different functional units right so if I look at the scaling out</p>
+      <p begin="00:10:53.760" end="00:10:58.740">...my main my main goal and scaling out was to go and support the api that</p>
+      <p begin="00:10:58.740" end="00:11:04.070">...that's getting a ton of infrastructure kind of traffic and kind of a growth?</p>
+      <p begin="00:11:04.070" end="00:11:10.010">I actually just sort of not on purpose necessarily scaled out</p>
+      <p begin="00:11:10.010" end="00:11:14.990">and put three times a resources and all the extra manpower and complexity of worrying about keeping the other</p>
+      <p begin="00:11:14.990" end="00:11:17.930">two web servers up as well one maybe the web server from my</p>
+      <p begin="00:11:17.930" end="00:11:22.300">kind of businesses is really cool for just launching my marketing site but,</p>
+      <p begin="00:11:22.300" end="00:11:27.390">the api is really where I want to grow and perform so...start looking at a more...level</p>
+      <p begin="00:11:27.390" end="00:11:35.960">inside the box just scaling ibm's is not necessarily the right way to go.</p>
+      <p begin="00:11:35.960" end="00:11:40.550">So, there's our favorite...again and this is where the doctor guys really made a name for themselves stepping</p>
+      <p begin="00:11:40.550" end="00:11:46.370">in so we look at the doctor...process at a high-level</p>
+      <p begin="00:11:46.370" end="00:11:49.520">the first kind of thing that we talk about is images and</p>
+      <p begin="00:11:49.520" end="00:11:53.950">images is really the you hear a lot of buzz around containers but images are really what</p>
+      <p begin="00:11:53.950" end="00:11:57.500">powers containers right they're starting point think of them as,</p>
+      <p begin="00:11:57.500" end="00:12:04.490">you know, a class or frozen starting point for you do instantiate containers from.</p>
+      <p begin="00:12:04.490" end="00:12:09.600">So, in this case we're saying that we have a sort of a web starting image in api</p>
+      <p begin="00:12:09.600" end="00:12:11.300">...image.</p>
+      <p begin="00:12:11.300" end="00:12:13.430">And, from that a through the darker</p>
+      <p begin="00:12:13.430" end="00:12:18.080">...tools we can actually go take that template for containers and spin up</p>
+      <p begin="00:12:18.080" end="00:12:22.020">in arbitrary amount what's really cool about containers is at a you've already</p>
+      <p begin="00:12:22.020" end="00:12:26.820">got everything sort of everything you need for that very specific function ready to go and</p>
+      <p begin="00:12:26.820" end="00:12:31.920">the image and the boo time is super-fast so if you've ever actually</p>
+      <p begin="00:12:31.920" end="00:12:36.170">played with doctor many folks...actually spun up a doctor container and here and kinda gone</p>
+      <p begin="00:12:36.170" end="00:12:43.060">...a very nice okay cool I guess that makes sense in this talk?</p>
+      <p begin="00:12:43.060" end="00:12:47.850">And, once you've spun up the containers...whole question of okay cool I have these really super</p>
+      <p begin="00:12:47.850" end="00:12:53.520">...fast portable a instruments here how do I get them on</p>
+      <p begin="00:12:53.520" end="00:12:59.400">to the gm's...the infrastructure that I'm sort of more familiar with and</p>
+      <p begin="00:12:59.400" end="00:13:05.150">that's really of sort of the three steps that's really the big open question right now and we're seeing a lot of</p>
+      <p begin="00:13:05.150" end="00:13:10.380">really exciting stuff going on generally refer to that sort of the orchestration family</p>
+      <p begin="00:13:10.380" end="00:13:14.130">of considerations and that's basically like if I have a workload</p>
+      <p begin="00:13:14.130" end="00:13:18.930">that comprise of an arbitrary number of components how do I go and stick it out onto an arbitrary number</p>
+      <p begin="00:13:18.930" end="00:13:21.150">boxes and the way it makes no sense for my</p>
+      <p begin="00:13:21.150" end="00:13:26.260">application my resources and the financials and things like that.</p>
+      <p begin="00:13:26.260" end="00:13:29.920">So, just to sort of finish up...are sort...leveling the playing field</p>
+      <p begin="00:13:29.920" end="00:13:35.600">for folks I like to think of containers is lightweight gm's small footprint really fast</p>
+      <p begin="00:13:35.600" end="00:13:40.420">boo time they have a shared kernel right which is which is fundamentally different from</p>
+      <p begin="00:13:40.420" end="00:13:45.750">a how...traditional virtualization and gm's works where the guessed os</p>
+      <p begin="00:13:45.750" end="00:13:51.690">...basically takes over the kernel resources...</p>
+      <p begin="00:13:51.690" end="00:13:55.700">From the...</p>
+      <p begin="00:13:55.700" end="00:14:00.180">So, containers apps today run anywhere that linux can so I think</p>
+      <p begin="00:14:00.180" end="00:14:05.830">all of the five or six officially supported shows of linux on as</p>
+      <p begin="00:14:05.830" end="00:14:09.650">...currently run containers today you guys have heard a little bit about the fact</p>
+      <p begin="00:14:09.650" end="00:14:17.540">...sure that windows coming out with containers and I think taylor's in here tiller you had your talk</p>
+      <p begin="00:14:17.540" end="00:14:22.120">Sweet okay cool well you guys...a lot more about it...but,</p>
+      <p begin="00:14:22.120" end="00:14:26.810">very soon in windows so.</p>
+      <p begin="00:14:26.810" end="00:14:32.200">We cover this a little bit already I like to think of images being frozen environment's and the things where</p>
+      <p begin="00:14:32.200" end="00:14:37.280">we actually create the containers the other cool element that we talk a lot about with</p>
+      <p begin="00:14:37.280" end="00:14:42.030">people is sort of the what I call like the and pm phenomenon where you know, no,</p>
+      <p begin="00:14:42.030" end="00:14:45.840">jess was this thing that sort of like legitimized this language</p>
+      <p begin="00:14:45.840" end="00:14:48.690">that a lot of people thought it died right...was just sort of this</p>
+      <p begin="00:14:48.690" end="00:14:54.360">kitty scripting language a lot of the a lot of the successful node was obviously you know,</p>
+      <p begin="00:14:54.360" end="00:14:59.290">there's some advantages...and people like some of the asynchronous programming model but a lot of</p>
+      <p begin="00:14:59.290" end="00:15:04.290">the actual success can be attributed to just the how the community...shaped up around it and</p>
+      <p begin="00:15:04.290" end="00:15:08.990">while...didn't necessarily invent a new operating system</p>
+      <p begin="00:15:08.990" end="00:15:11.890">... constructs out like you know,</p>
+      <p begin="00:15:11.890" end="00:15:15.730">they invented this idea of containers asia...virtualization what they've</p>
+      <p begin="00:15:15.730" end="00:15:19.560">been really successful at doing is providing the right layer of abstraction</p>
+      <p begin="00:15:19.560" end="00:15:23.800">for folks like us who don't want to go down and make those direct system calls</p>
+      <p begin="00:15:23.800" end="00:15:29.230">interacting with the with the kernel...and gives just enough abstraction away</p>
+      <p begin="00:15:29.230" end="00:15:34.780">from that where it's like hey I think this is actually reasonable for me to start playing with the other side of that they've</p>
+      <p begin="00:15:34.780" end="00:15:39.700">had just tremendous adoption by the community and folks like you guys so if you ever take a spin around</p>
+      <p begin="00:15:39.700" end="00:15:45.100">...there's I don't even know-how many at this point but hundreds maybe thousands of containers up</p>
+      <p begin="00:15:45.100" end="00:15:48.800">there...images up there to start your containers from and,</p>
+      <p begin="00:15:48.800" end="00:15:52.040">that's really impressive in something one of the reasons why, you know,</p>
+      <p begin="00:15:52.040" end="00:15:56.910">we take a look at...relationship with microsoft are so excited to see</p>
+      <p begin="00:15:56.910" end="00:16:03.380">to be working with them because we see this really, really dedicated sort-of community support around it.</p>
+      <p begin="00:16:03.380" end="00:16:07.020">Last slide...this...the container promise overall</p>
+      <p begin="00:16:07.020" end="00:16:11.740">fastportable more resilient apps scale through components</p>
+      <p begin="00:16:11.740" end="00:16:17.860">...not just by multiplying the number of lms...have at my disposal.</p>
+      <p begin="00:16:17.860" end="00:16:22.560">So, this was the part where we're going to start building something and I'll</p>
+      <p begin="00:16:22.560" end="00:16:27.480">give you guys kind of a caveat before that we're not going to be able to get through quite the whole thing but</p>
+      <p begin="00:16:27.480" end="00:16:32.040">hopefully we can still stand-up one or two things.</p>
+      <p begin="00:16:32.040" end="00:16:38.150">So, how many guys I've ever heard of as your news before?</p>
+      <p begin="00:16:38.150" end="00:16:46.290">Nobody so that's because we're going to build it right now and I made up this morning.</p>
+      <p begin="00:16:46.290" end="00:16:50.630">So,...we're going to try to do is actually build essentially</p>
+      <p begin="00:16:50.630" end="00:16:55.310">the functionality or think about how...be building the functionality of the new page</p>
+      <p begin="00:16:55.310" end="00:17:01.240">and acronyms many folks how many folks here familiar this site probably wow,</p>
+      <p begin="00:17:01.240" end="00:17:04.100">that's actually a little lower than I thought but for those of you</p>
+      <p begin="00:17:04.100" end="00:17:08.610">who don't know this is the this is sort of the startup?</p>
+      <p begin="00:17:08.610" end="00:17:13.230">And, open-source haven it's...essentially news blog that's sponsored by</p>
+      <p begin="00:17:13.230" end="00:17:19.170">...combinators incubator down here lots of people go up there very simple in</p>
+      <p begin="00:17:19.170" end="00:17:24.080">terms of functionality but tons and tons of users and they're actually kind of famous for</p>
+      <p begin="00:17:24.080" end="00:17:29.210">having written in some sort of article once even with the amount of traffic the get which is astronomical a</p>
+      <p begin="00:17:29.210" end="00:17:36.490">day...are running the whole thing on one server which is really interesting?</p>
+      <p begin="00:17:36.490" end="00:17:42.710">So, we're kind of dreaming up like what we might want to do today here's the,</p>
+      <p begin="00:17:42.710" end="00:17:46.320">you know, ten seconds spec of sort of attribution what that's going to</p>
+      <p begin="00:17:46.320" end="00:17:51.130">look like from a product perspective so as you news is going to be basically like, you know,</p>
+      <p begin="00:17:51.130" end="00:17:57.500">the front-page filter of ...news will show the thirty most recent posts</p>
+      <p begin="00:17:57.500" end="00:18:02.180">in this case because I'm not going to be able to generate all this post myself</p>
+      <p begin="00:18:02.180" end="00:18:07.550">one of the elements we're going to try to bringing here is...api server</p>
+      <p begin="00:18:07.550" end="00:18:14.320">dedicated to handling the sm requests from you guys we have a simple mongers db setup which we</p>
+      <p begin="00:18:14.320" end="00:18:20.440">also container eyes and the back-end for persisting the stories are posts we had a local</p>
+      <p begin="00:18:20.440" end="00:18:25.440">caches stories and that was really the big thing that went down I had I had read is all set up and,</p>
+      <p begin="00:18:25.440" end="00:18:27.630">just I cannot figure out some of the</p>
+      <p begin="00:18:27.630" end="00:18:32.520">search issues after moving across a couple different environments but hopefully we can work</p>
+      <p begin="00:18:32.520" end="00:18:35.870">around some of that stuff and no comments are voting today because we've got</p>
+      <p begin="00:18:35.870" end="00:18:41.660">a relatively short amount of time but I will be posting all this stuff and get hub so if</p>
+      <p begin="00:18:41.660" end="00:18:50.560">anybody's like really interested in this for some reason I'd be happy to kinda keep banging on a little bit?</p>
+      <p begin="00:18:50.560" end="00:18:56.030">here's a first sort of what we would call the sort of a or old-school approach</p>
+      <p begin="00:18:56.030" end="00:19:00.430">in the doctor world we do have the option of doing exactly what the folks at</p>
+      <p begin="00:19:00.430" end="00:19:02.160">...combinators done right there's,</p>
+      <p begin="00:19:02.160" end="00:19:07.790">there's actually a lot of just really practical pragmatic benefits this approach eh</p>
+      <p begin="00:19:07.790" end="00:19:09.220">we're familiar with the model</p>
+      <p begin="00:19:09.220" end="00:19:14.410">b when everybody's on the same box and you take away a lot of the networking constraints</p>
+      <p begin="00:19:14.410" end="00:19:19.460">anddifficulties around coordinating those distributed elements of things you get a lot more</p>
+      <p begin="00:19:19.460" end="00:19:24.720">liable experience there's a million prove points out here if you go and look at sort of</p>
+      <p begin="00:19:24.720" end="00:19:30.630">like a canonical rails happen all the tutorials you...when you when you type rails into google</p>
+      <p begin="00:19:30.630" end="00:19:34.580">...bang you know, you can see something like this right people aren't</p>
+      <p begin="00:19:34.580" end="00:19:41.590">thinking about scale out-of-the-box and a lot of those tutorials and you can absolutely get something to work like this?</p>
+      <p begin="00:19:41.590" end="00:19:46.410">But, this diagram was drawn in a very specific way such that we could</p>
+      <p begin="00:19:46.410" end="00:19:51.340">take a look at the actual functional atomic units of the application</p>
+      <p begin="00:19:51.340" end="00:19:56.940">and see how those map back to container in this case what I'm proposing is</p>
+      <p begin="00:19:56.940" end="00:20:01.070">we actually break the application out into four separate containers each with its</p>
+      <p begin="00:20:01.070" end="00:20:05.310">own functional purpose and each of which we can scale in sort of an atomic</p>
+      <p begin="00:20:05.310" end="00:20:09.560">independent fashion of the rest of the application and,</p>
+      <p begin="00:20:09.560" end="00:20:12.240">that gives us the advantage of avoiding what we looked</p>
+      <p begin="00:20:12.240" end="00:20:17.780">at before where just because I needed to scale one particular element</p>
+      <p begin="00:20:17.780" end="00:20:26.060">of my application it doesn't mean I have to go out and...time the resources for everything else?</p>
+      <p begin="00:20:26.060" end="00:20:30.190">So, the way that this really simple example kind of looks like from</p>
+      <p begin="00:20:30.190" end="00:20:35.370">...standpoint is we have that over here on</p>
+      <p begin="00:20:35.370" end="00:20:41.640">the right-hand side we have the sm container sms image whatever and</p>
+      <p begin="00:20:41.640" end="00:20:47.800">there that guy is essentially listening to you guys and taking in input all</p>
+      <p begin="00:20:47.800" end="00:20:52.990">that guy does is receive the input do a little bit of processing on it make sure that you guys aren't</p>
+      <p begin="00:20:52.990" end="00:20:58.960">...going to put us up on...different interesting websites appeared during the show and,</p>
+      <p begin="00:20:58.960" end="00:21:03.870">then...it out to the monitored ...db databasefrom there we</p>
+      <p begin="00:21:03.870" end="00:21:09.310">have a just a web server that's going to be sort of the server that just gives you the</p>
+      <p begin="00:21:09.310" end="00:21:14.730">page in results and also a local cash paired up with that server and,</p>
+      <p begin="00:21:14.730" end="00:21:20.400">I opted have the cashier we could very easily just gone with three containers but the...thing is</p>
+      <p begin="00:21:20.400" end="00:21:25.170">from an architectural standpoint is kind of interesting when you look at the container</p>
+      <p begin="00:21:25.170" end="00:21:30.950">space in general there are schools of thought actually a lot of the</p>
+      <p begin="00:21:30.950" end="00:21:35.820">cooper ninety's project you guys are familiar with that might break this up a little differently</p>
+      <p begin="00:21:35.820" end="00:21:43.160">and in particular they might argue that you could actually stick the</p>
+      <p begin="00:21:43.160" end="00:21:48.460">...cash and the web server in the same image in container and that's because you know,</p>
+      <p begin="00:21:48.460" end="00:21:52.390">if you step back a little bit you don't you...you don't go all the way back and see this big black</p>
+      <p begin="00:21:52.390" end="00:21:57.430">box you step out a little bit you can see that those are probably pretty tightly coupled</p>
+      <p begin="00:21:57.430" end="00:22:02.600">or at least in terms of their benefit to one another they're pretty tightly coupled right, you know,</p>
+      <p begin="00:22:02.600" end="00:22:08.160">if I break these out into separate into separate containers only start instantiating I'm sure I can go</p>
+      <p begin="00:22:08.160" end="00:22:13.850">out and, scaled the caches independently of the web servers but at some point that has, you know,</p>
+      <p begin="00:22:13.850" end="00:22:18.040">very little return...right like if I have eighty-five reddit instances for</p>
+      <p begin="00:22:18.040" end="00:22:22.420">...web server there's not a ton of functional utility right there so just</p>
+      <p begin="00:22:22.420" end="00:22:27.360">because we can be a purist and, really break amount of these atomic units</p>
+      <p begin="00:22:27.360" end="00:22:32.530">...doesn't mean that necessarily it's a hard and fast rules so the...sort-of</p>
+      <p begin="00:22:32.530" end="00:22:38.080">...thought around pods I think personally...I interpret that would...a look at this read</p>
+      <p begin="00:22:38.080" end="00:22:43.700">cash area as a potential for grouping that that's just a demonstrate the fact that there's,</p>
+      <p begin="00:22:43.700" end="00:22:45.580">there's really no, black-and-white</p>
+      <p begin="00:22:45.580" end="00:22:50.390">here the big goal is to get yourself into a position where you think you can have</p>
+      <p begin="00:22:50.390" end="00:22:54.940">...fail over points multiple scale multiple scaled vectors in a</p>
+      <p begin="00:22:54.940" end="00:23:00.990">way of building up the application in a more distributed fashion so with</p>
+      <p begin="00:23:00.990" end="00:23:06.240">this high-level architecture essentially get is this type of flexibility so,</p>
+      <p begin="00:23:06.240" end="00:23:13.290">just to just...back right basically we can just blow-out any single element</p>
+      <p begin="00:23:13.290" end="00:23:18.130">of the application so in this case you say hey you if you need to we had a ton of</p>
+      <p begin="00:23:18.130" end="00:23:23.450">records for some reason or start doing some data workloads we want to multiple copies of data we could</p>
+      <p begin="00:23:23.450" end="00:23:28.330">...those out...if we needed more sms stuff because you guys...cool we</p>
+      <p begin="00:23:28.330" end="00:23:35.640">...and got everybody else calling in which I was I was contemplating a sort of periscope</p>
+      <p begin="00:23:35.640" end="00:23:40.240">in this thing and see how many people we could get banging on the server but we'll see if we can actually get</p>
+      <p begin="00:23:40.240" end="00:23:43.770">...to boot first and, then you know,</p>
+      <p begin="00:23:43.770" end="00:23:50.390">and, then just demonstrating the general scaleability on reticent web in general?</p>
+      <p begin="00:23:50.390" end="00:23:52.390">So, the first thing I'm going to take a look at</p>
+      <p begin="00:23:52.390" end="00:23:58.870">...hop over to computer here is.</p>
+      <p begin="00:23:58.870" end="00:23:59.710">Monitor db.</p>
+      <p begin="00:24:00.780" end="00:24:20.240">Samoa.</p>
+      <p begin="00:24:20.240" end="00:24:25.220">So, for those of you curious this is actually my officially...microsoft issued</p>
+      <p begin="00:24:25.220" end="00:24:30.050">machines so the times are changing in fact.</p>
+      <p begin="00:24:30.050" end="00:24:34.860">Thank you, yeah, I like it a lot ...holds like open-source stickers a</p>
+      <p begin="00:24:34.860" end="00:24:40.230">lot better so this is my second one that I'm going...can you can see that...all</p>
+      <p begin="00:24:40.230" end="00:24:45.060">...of the mce...in the room does anyone know when you're when you're plugged into a eighteen</p>
+      <p begin="00:24:45.060" end="00:24:48.220">k display how to get the?</p>
+      <p begin="00:24:48.220" end="00:24:50.010">Command plus on terminal.</p>
+      <p begin="00:24:52.740" end="00:24:56.910">...I got something...this talk.</p>
+      <p begin="00:24:56.910" end="00:25:03.270">Fantastic okay cool so how many you guys actually when you're playing</p>
+      <p begin="00:25:03.270" end="00:25:08.140">...how many guys actually are on a linux box?</p>
+      <p begin="00:25:08.140" end="00:25:13.120">Parallel forty percent cool anybody's...to darker.</p>
+      <p begin="00:25:13.120" end="00:25:16.000">Anybody been successful using which...doctor.</p>
+      <p begin="00:25:16.000" end="00:25:20.330">Okay, cool, yeah, I mean boots...for those guys you don't know is actually powered by...</p>
+      <p begin="00:25:20.330" end="00:25:27.060">virtual box which is a free virtualization software I actually think it's really handy we actually use</p>
+      <p begin="00:25:27.060" end="00:25:33.100">it internally toroll-out the latest bits of our ...plat...I so,</p>
+      <p begin="00:25:33.100" end="00:25:36.720">whenever we read the version somebody sticks...new doctor image up on.</p>
+      <p begin="00:25:37.920" end="00:25:43.100">The repo so that means you guys can also go...and start banging on...well it's just really,</p>
+      <p begin="00:25:43.100" end="00:25:48.100">really convenient for doing really quick, you know, spin-offs and...downs of development</p>
+      <p begin="00:25:48.100" end="00:25:55.390">environments what I'm doing here actually is I've gone ahead and,</p>
+      <p begin="00:25:55.390" end="00:25:59.420">set up a couple of doctor hosts so all of the machines that...going to be doing</p>
+      <p begin="00:25:59.420" end="00:26:05.220">...operations on today are sitting...part of the as part of the relationship with...</p>
+      <p begin="00:26:05.220" end="00:26:10.710">we've been trying to come up with...many creative ways we can to help people get into</p>
+      <p begin="00:26:10.710" end="00:26:23.460">really solid doctor environment as easily as possible one of those things</p>
+      <p begin="00:26:23.460" end="00:26:26.240">You guys use bing just for the picture that a.</p>
+      <p begin="00:26:26.240" end="00:26:38.380">Pretty good.</p>
+      <p begin="00:26:38.380" end="00:26:42.710">So, if you guys have checked out the new puerto at all and, I know a lot of</p>
+      <p begin="00:26:42.710" end="00:26:47.880">you guys if you're if you're doctor fans are probably live more in the command line but,</p>
+      <p begin="00:26:47.880" end="00:26:51.900">we do actually have the easiest, easiest way to get started with</p>
+      <p begin="00:26:51.900" end="00:26:59.570">...on hatcher is through a marketplace offering...have.</p>
+      <p begin="00:26:59.570" end="00:27:04.750">We have two things I'll just spend two seconds on kinda going over so one of them is just</p>
+      <p begin="00:27:04.750" end="00:27:08.330">...to server that comes with doctor installed so it's just a pre can</p>
+      <p begin="00:27:08.330" end="00:27:13.370">to jakrose come out-of-the-box nothing special we open up, you know,</p>
+      <p begin="00:27:13.370" end="00:27:18.790">the reports...reports in an sh to...just reduces, you know,</p>
+      <p begin="00:27:18.790" end="00:27:23.230">...or ten minutes of set...time so I tend to go to this one...when I need an</p>
+      <p begin="00:27:23.230" end="00:27:27.430">...experimental blocks and...don't have access to my local</p>
+      <p begin="00:27:27.430" end="00:27:33.310">booted dockers solution the other thing too is some of the as part of the whole new crt</p>
+      <p begin="00:27:33.310" end="00:27:38.610">stacked you guys been hearing about this week...new compute resource providers</p>
+      <p begin="00:27:38.610" end="00:27:44.800">and other api is here we also have something called a...extension and,</p>
+      <p begin="00:27:44.800" end="00:27:49.940">the dockers extension just like any other extension that we have in asher</p>
+      <p begin="00:27:49.940" end="00:27:55.390">is something that through those new templates and to our new api in general you can</p>
+      <p begin="00:27:55.390" end="00:27:58.160">...of...it's coming up and,</p>
+      <p begin="00:27:58.160" end="00:28:03.060">you just get whatever that small abstracted piece of functionality is for free right so we have you know,...</p>
+      <p begin="00:28:03.060" end="00:28:07.890">chef extension if you guys have existing...scripts you just want to stick it in pass it off that diskettes,</p>
+      <p begin="00:28:07.890" end="00:28:12.920">you know, seamlessly handled for you guys have a similar sort of thing to get you up and running</p>
+      <p begin="00:28:12.920" end="00:28:16.330">on dockers well but,</p>
+      <p begin="00:28:16.330" end="00:28:21.970">given that we have given that we already have some boxes...in?</p>
+      <p begin="00:28:23.100" end="00:28:32.550">...let's just make sure.</p>
+      <p begin="00:28:32.550" end="00:28:36.420">So, how many guys have played with doctor machine?</p>
+      <p begin="00:28:36.420" end="00:28:38.700">Couple folks ok so,</p>
+      <p begin="00:28:38.700" end="00:28:42.270">...machine is actually part of a three-part wronged approach by</p>
+      <p begin="00:28:42.270" end="00:28:47.780">...kind of provide this whole really cool solution for orchestration and</p>
+      <p begin="00:28:47.780" end="00:28:51.260">the doctor machines job is to just get you boxes...better,</p>
+      <p begin="00:28:51.260" end="00:28:56.310">better doctor host straight they have support for bunch of different clouds local development</p>
+      <p begin="00:28:56.310" end="00:29:01.590">...even but, the idea is to just give you sort of that initial topology to start playing around</p>
+      <p begin="00:29:01.590" end="00:29:06.350">a doctor the next the next element as swarm what</p>
+      <p begin="00:29:06.350" end="00:29:11.030">swarm does is basically axes like a logical load balance or</p>
+      <p begin="00:29:11.030" end="00:29:14.570">...in some ways right so if you have five or six different</p>
+      <p begin="00:29:14.570" end="00:29:20.090">jakrose sitting behind a or a as part of a swarm the</p>
+      <p begin="00:29:20.090" end="00:29:24.590">...client will interact with the entire five or six machines as if it were</p>
+      <p begin="00:29:24.590" end="00:29:29.870">a single box so that gives somebody an opportunity to essentially plug-in</p>
+      <p begin="00:29:29.870" end="00:29:33.650">...swarm and say okay so what are the rules that make most sense for me in</p>
+      <p begin="00:29:33.650" end="00:29:38.850">terms of distributing where those workloads go when I put out-of-the-box and,</p>
+      <p begin="00:29:38.850" end="00:29:45.400">the final pieces compose which will takequick look at today but that's a way of saying hey</p>
+      <p begin="00:29:45.400" end="00:29:49.690">if my app is made up of several these containers what are the</p>
+      <p begin="00:29:49.690" end="00:29:54.480">relationships and dependencies between those guys what sports do I need to open and just give me</p>
+      <p begin="00:29:54.480" end="00:29:57.530">...sort of a definitive template that I can put it in super</p>
+      <p begin="00:29:57.530" end="00:30:01.010">...and, deploy directly as a single sort</p>
+      <p begin="00:30:01.010" end="00:30:07.030">of application thing not just similar to resource groups and that whole concept actually.</p>
+      <p begin="00:30:07.030" end="00:30:14.560">So, couple quick commands...for again for folks haven't been around so right now there's there's a</p>
+      <p begin="00:30:14.560" end="00:30:17.910">cool trick where the doctor klein if you're on a linux box</p>
+      <p begin="00:30:17.910" end="00:30:23.080">you can obviously manage containers that are...box if you're on...box</p>
+      <p begin="00:30:23.080" end="00:30:27.700">...which you make you think that your managing containers on your box but that's actually</p>
+      <p begin="00:30:27.700" end="00:30:32.840">links box underneath and then ...we like to do allies actually spent</p>
+      <p begin="00:30:32.840" end="00:30:38.750">...hosts in the cloud and use these doctor machine environment's to points to</p>
+      <p begin="00:30:38.750" end="00:30:43.960">different individual things at a time so right now I'm pointing at th</p>
+      <p begin="00:30:43.960" end="00:30:50.140">...one and that is just hanging out and west us on rate let's see</p>
+      <p begin="00:30:50.140" end="00:30:56.220">what we've got up I apologize all that's a really good starting point?</p>
+      <p begin="00:30:56.220" end="00:31:00.650">So, we were...jumping around a bunch of these things dying off but so,</p>
+      <p begin="00:31:00.650" end="00:31:16.690">we take a look at mongers db really quick checks.</p>
+      <p begin="00:31:16.690" end="00:31:22.320">So, monetary be is one of the most popular images actually on</p>
+      <p begin="00:31:22.320" end="00:31:24.760">doctor hub there's a really cool company</p>
+      <p begin="00:31:24.760" end="00:31:28.730">...to...that is interested in a orchestration spaces well if you guys have a chance</p>
+      <p begin="00:31:28.730" end="00:31:34.300">that are generally interested in blocker advice checking them out I think they have some really slick</p>
+      <p begin="00:31:34.300" end="00:31:40.880">qi for defining applications better that are container based anyway so this is an example of some of the</p>
+      <p begin="00:31:40.880" end="00:31:44.460">community stuff they were talking about before looks like this says, you know,</p>
+      <p begin="00:31:44.460" end="00:31:49.480">something like ten thousand downloads on it we have a chance to take a look</p>
+      <p begin="00:31:49.480" end="00:31:54.230">at different versions and some help stuff it's very similar to...pm but,</p>
+      <p begin="00:31:54.230" end="00:31:59.110">when we start working with that actually the first thing that we need to do is</p>
+      <p begin="00:31:59.110" end="00:32:03.830">to you get be the base image on the box so they get that we have</p>
+      <p begin="00:32:03.830" end="00:32:14.530">a command called what we can actually do...research so for...db?</p>
+      <p begin="00:32:14.530" end="00:32:16.480">While that sliding out we can actually do</p>
+      <p begin="00:32:16.480" end="00:32:22.890">...pool for the to them among...</p>
+      <p begin="00:32:22.890" end="00:32:35.410">And, then...remember that we're not pointing at the remote server.</p>
+      <p begin="00:32:35.410" end="00:32:39.090">So, here's...results for all the munging to be options</p>
+      <p begin="00:32:39.090" end="00:32:48.470">...there we can get on the box simply by doing...</p>
+      <p begin="00:32:48.470" end="00:32:52.900">It's going to download the box and give me a platform essentially...to start off with our debit</p>
+      <p begin="00:32:52.900" end="00:32:58.810">...the box I've been playing with...a couple of is the best way to get started with it is with</p>
+      <p begin="00:32:58.810" end="00:33:03.700">...run so the doctor run gives you a couple of different options</p>
+      <p begin="00:33:03.700" end="00:33:08.650">...high-level give you basically the decision as to whether you want to be a</p>
+      <p begin="00:33:08.650" end="00:33:13.970">long-running long-term behind-the-scenes process or something that you're currently interacting with it</p>
+      <p begin="00:33:13.970" end="00:33:17.110">is perhaps more short-lived so because</p>
+      <p begin="00:33:17.110" end="00:33:22.620">mongers going-to going to stand-up and be a...long-running process for us as a sort of</p>
+      <p begin="00:33:22.620" end="00:33:29.340">our main database in this case we you will?</p>
+      <p begin="00:33:29.340" end="00:33:31.720">...here so for people</p>
+      <p begin="00:33:31.720" end="00:33:38.430">aren't super familiar with dockers command line so we're doing docket run the name is a way to</p>
+      <p begin="00:33:38.430" end="00:33:43.740">tag our resources if you leave out the name they'll come up with like a crazy adjective</p>
+      <p begin="00:33:43.740" end="00:33:49.020">...a crazy noun and they're really hard to type when you're trying to manage them the default</p>
+      <p begin="00:33:49.020" end="00:33:53.970">tag tells us that it's actually going to run as a demon zero-b in a background process where we're not going</p>
+      <p begin="00:33:53.970" end="00:33:57.360">to be looking at...output and logs directly and,</p>
+      <p begin="00:33:57.360" end="00:34:02.520">then this is probably one of the one of the most interesting things in the</p>
+      <p begin="00:34:02.520" end="00:34:07.440">space around containers right now is how you get containers to talk to things that</p>
+      <p begin="00:34:07.440" end="00:34:13.670">are outside of containers ...specifically...to containers on the same boxes you so,</p>
+      <p begin="00:34:13.670" end="00:34:18.140">one basic primitive the doctor...so the box is the ability to take a</p>
+      <p begin="00:34:18.140" end="00:34:22.090">port that's on the container and map it to a port that's on</p>
+      <p begin="00:34:22.090" end="00:34:26.760">hosts you essentially open up ports and give yourself endpoints so if I'm trying to</p>
+      <p begin="00:34:26.760" end="00:34:32.250">stand-up a web server that's running on...eighty, eighty internally I need to also</p>
+      <p begin="00:34:32.250" end="00:34:40.090">expose thatI need to basically pipe that through to the host so I can get traffic in and out.</p>
+      <p begin="00:34:40.090" end="00:34:59.000">So, you just like adj.</p>
+      <p begin="00:34:59.000" end="00:35:04.130">So, we'll take it off and from scratch to start right that was about like three</p>
+      <p begin="00:35:04.130" end="00:35:08.120">seconds even on a shaky kinda internet connection here to actually make</p>
+      <p begin="00:35:08.120" end="00:35:14.200">the request efficiently that's how quickly were talking about when we look at really fast</p>
+      <p begin="00:35:14.200" end="00:35:17.770">boot and super small footprint so that's a full like</p>
+      <p begin="00:35:17.770" end="00:35:22.930">muggy servers spinning up and ready to go right there in two or three seconds</p>
+      <p begin="00:35:22.930" end="00:35:27.820">and for those folks that have done the process of installing it yourself under local</p>
+      <p begin="00:35:27.820" end="00:35:33.400">box and you linux a or sex it's certainly not that quick and,</p>
+      <p begin="00:35:33.400" end="00:35:38.870">the big take away there is a...in the big scheme of things there's not going to be three-second set kind</p>
+      <p begin="00:35:38.870" end="00:35:44.170">of make-up make-or-break deployment necessarily but it's just a testament</p>
+      <p begin="00:35:44.170" end="00:35:49.960">...of the flexibility if you have to spend multiple hours getting a database setup when you could</p>
+      <p begin="00:35:49.960" end="00:35:54.390">get a container spun up with similar-type of...go kick the tires on it that's</p>
+      <p begin="00:35:54.390" end="00:35:59.670">actually really cool in terms of getting people the to get started on trying new technologies and,</p>
+      <p begin="00:35:59.670" end="00:36:05.190">I think it's a really a really great...darker so we kicked off the darker</p>
+      <p begin="00:36:06.840" end="00:36:11.660">the muggy container so we can check out what's running currently on the box by doing</p>
+      <p begin="00:36:11.660" end="00:36:15.840">doctor ps so it's just, you know, essentially the processes that are being managed by</p>
+      <p begin="00:36:15.840" end="00:36:20.530">doctor you can see that it pulled from the latest</p>
+      <p begin="00:36:20.530" end="00:36:25.680">...that we had for ...db from to them it's been</p>
+      <p begin="00:36:25.680" end="00:36:30.160">...for about a minuteone of the things that you can specify when you're building a</p>
+      <p begin="00:36:30.160" end="00:36:33.740">...image is the command gets run...container actually starts</p>
+      <p begin="00:36:33.740" end="00:36:37.890">...so I can be any sort of arbitrary script can be any executable</p>
+      <p begin="00:36:37.890" end="00:36:42.580">it's already on the boxer...you add installed...part of as part of the image so,</p>
+      <p begin="00:36:42.580" end="00:36:47.830">it gives you the flexibility basically...to do whatever you want there I'm not sure I've</p>
+      <p begin="00:36:47.830" end="00:36:52.840">never tried to do this before but doctor has a</p>
+      <p begin="00:36:52.840" end="00:37:00.050">function called doctor exec which allows us to basically jump inside</p>
+      <p begin="00:37:00.050" end="00:37:05.560">a running container even if they're running as a demon in the background so I can be really helpful when you're</p>
+      <p begin="00:37:05.560" end="00:37:24.190">trying to...figure out what's wrong because the things not sort of front-and-center when it's a displaying a</p>
+      <p begin="00:37:24.190" end="00:37:30.160">Nl db an been bash.</p>
+      <p begin="00:37:30.160" end="00:37:33.740">And, now I'm sitting in...muggy container so,</p>
+      <p begin="00:37:33.740" end="00:37:37.590">I can go...in picket logs or whatever, whatever like to do their so that's a really</p>
+      <p begin="00:37:37.590" end="00:37:41.550">cool thing where even if you've got a bunch of these container spitting out there never really like</p>
+      <p begin="00:37:41.550" end="00:37:46.880">...it's not like you kick it off and you can't get back into them which is sort of</p>
+      <p begin="00:37:46.880" end="00:37:52.390">a misconception we...a lot when people are starting with it so anyway right now we've got ...db</p>
+      <p begin="00:37:52.390" end="00:37:58.490">instance up into prove that that's...for you guys we have so, that we opened up to different</p>
+      <p begin="00:37:58.490" end="00:38:15.580">ports I think twenty-seven seventeen and twenty seventeen?</p>
+      <p begin="00:38:15.580" end="00:38:20.570">So, this is the default beautiful management...ships of muggy these days</p>
+      <p begin="00:38:20.570" end="00:38:25.340">you will see at this point because...actually have no databases</p>
+      <p begin="00:38:25.340" end="00:38:30.880">...sort of the standard admin account holders just a clean box that is fresh from</p>
+      <p begin="00:38:30.880" end="00:38:35.560">boot got that up and that's the first part of the application</p>
+      <p begin="00:38:35.560" end="00:38:36.060">samoa?</p>
+      <p begin="00:38:42.910" end="00:38:45.750">So, the second...second part of the application is actually getting a</p>
+      <p begin="00:38:45.750" end="00:38:53.210">little more into the details around what it takes to create your own image so.</p>
+      <p begin="00:38:53.210" end="00:38:58.150">Among these case we started, you know, somebody down the hard work for us right they took some stripped down version of</p>
+      <p begin="00:38:58.150" end="00:39:02.850">a...to or whatever the base images that all the configuration got into a really nice like secure</p>
+      <p begin="00:39:02.850" end="00:39:08.060">...configuration and we were just able to go to go leverage as a as sort of</p>
+      <p begin="00:39:08.060" end="00:39:10.790">an open-source offering when you want to</p>
+      <p begin="00:39:10.790" end="00:39:15.910">...getting into more complex deployments though it becomes really important that you field</p>
+      <p begin="00:39:15.910" end="00:39:20.420">you get comfortable with building your own images that you can start containers from the way the</p>
+      <p begin="00:39:20.420" end="00:39:25.950">...exposed to do that is to something called the doctor file at a very-high-level</p>
+      <p begin="00:39:25.950" end="00:39:30.850">doctor files are basically just a really restricted set of</p>
+      <p begin="00:39:30.850" end="00:39:35.620">commands that you can think of as applying layers and operations on</p>
+      <p begin="00:39:35.620" end="00:39:40.830">to images start with so when you guys hear things like core os and</p>
+      <p begin="00:39:40.830" end="00:39:45.700">...snappy and things like that those guys are trying to be like the most</p>
+      <p begin="00:39:45.700" end="00:39:50.950">basic image they can be it's like the most stripped down version of linux...reasonably</p>
+      <p begin="00:39:50.950" end="00:39:56.260">safe in performant and, things like that and basically what they're trying to do is give</p>
+      <p begin="00:39:56.260" end="00:40:00.610">use close to a blank canvas as you can get for applying your own custom things on</p>
+      <p begin="00:40:00.610" end="00:40:06.150">today image that's really cool if folks that are out there who are going to</p>
+      <p begin="00:40:06.150" end="00:40:11.730">fans I've been using...for years was not a huge fan of the fact that you know,</p>
+      <p begin="00:40:11.730" end="00:40:16.780">as...became more modern right we started having things like ad...and stuff like that shipping</p>
+      <p begin="00:40:16.780" end="00:40:19.800">...there when you're looking at doing things like fast</p>
+      <p begin="00:40:19.800" end="00:40:26.640">dev ops deployments inconsistent environment's...to start from scratch as much as you possibly can?</p>
+      <p begin="00:40:26.640" end="00:40:35.360">So, ...a look at how that works.</p>
+      <p begin="00:40:35.360" end="00:40:58.270">You guys know the command for e-max as I can do the same thing format.</p>
+      <p begin="00:40:58.270" end="00:41:05.120">...have you guys not even...dessert.</p>
+      <p begin="00:41:18.850" end="00:41:24.570">from what you can see actually I'll do a just a really quick navigation through it we always start with</p>
+      <p begin="00:41:24.570" end="00:41:30.700">a from statement when you're...image so that's typically taking a really a really basic thing or</p>
+      <p begin="00:41:30.700" end="00:41:35.310">maybe a really basic thing plus one-quarter core piece of your of your infrastructure</p>
+      <p begin="00:41:35.310" end="00:41:36.830">...looking to do so in this case</p>
+      <p begin="00:41:36.830" end="00:41:42.010">...looking to stand-up basic express node web server so I just started from the</p>
+      <p begin="00:41:42.010" end="00:41:45.660">base node image that's most popular...had right so it's a</p>
+      <p begin="00:41:45.660" end="00:41:52.100">...two-plus the...installation of node and that's it from their doctor provide some really</p>
+      <p begin="00:41:52.100" end="00:41:58.290">basic operations that you can do have this ad functionality copy</p>
+      <p begin="00:41:58.290" end="00:42:02.900">functionality you can change working directories you can copy things and you can run arbitrary</p>
+      <p begin="00:42:02.900" end="00:42:07.490">scripts and then at the end once you've got everything kind of set...see here that I</p>
+      <p begin="00:42:07.490" end="00:42:11.950">...my package json define the...server and,</p>
+      <p begin="00:42:11.950" end="00:42:17.410">then run and pm install to get all the dependencies in there and then the last thing you do is you have</p>
+      <p begin="00:42:17.410" end="00:42:22.670">an option of doing a...the entry point or...c and d which allows you to run</p>
+      <p begin="00:42:22.670" end="00:42:27.340">in arbitrary script when it's up there you can always override that bypassing in some sort of</p>
+      <p begin="00:42:27.340" end="00:42:30.730">command on the command line when you're starting up the container but,</p>
+      <p begin="00:42:30.730" end="00:42:33.270">by defaults like I know this is my web server got</p>
+      <p begin="00:42:33.270" end="00:42:36.760">...configured exactly the way I want to all the files in there so I just want</p>
+      <p begin="00:42:36.760" end="00:42:41.300">...to startup exactly the same way every time without me having to do anything else in this case you're just you're just</p>
+      <p begin="00:42:41.300" end="00:42:46.760">...up the server so based on that file we can do is what's called the</p>
+      <p begin="00:42:46.760" end="00:42:51.700">doctor build so I'm in the container right...the directory</p>
+      <p begin="00:42:51.700" end="00:42:57.020">right now and to do a doctor build it's just doctor build?</p>
+      <p begin="00:42:57.020" end="00:43:02.120">We have dash t for tag so in this case...just call web and,</p>
+      <p begin="00:43:02.120" end="00:43:10.380">the doctor file is sitting right here in this in this directory so...that off.</p>
+      <p begin="00:43:10.380" end="00:43:15.360">So, basically what it's doing decker tries to be really because people almost never get</p>
+      <p begin="00:43:15.360" end="00:43:18.820">their doctor images right the first-time I think I've</p>
+      <p begin="00:43:18.820" end="00:43:24.760">rebuilt this probably ten or twenty times they try to be really smart in terms of making life efficient for</p>
+      <p begin="00:43:24.760" end="00:43:31.440">you guys so a they do a bunch of caching when they bring down images if...have the basic</p>
+      <p begin="00:43:31.440" end="00:43:37.220">going-to image on the box...do that very smart about doing sort of iterative file</p>
+      <p begin="00:43:37.220" end="00:43:42.610">and layering on top of on top of the image to get a built as quickly as possible but in general, you know,</p>
+      <p begin="00:43:42.610" end="00:43:47.630">for this kind of thing I'm copying over some files I'm doing it remotely some kind of sending up a build context</p>
+      <p begin="00:43:47.630" end="00:43:52.280">into the cloud it might take a couple minutes but certainly extremely,</p>
+      <p begin="00:43:52.280" end="00:43:54.100">extremely quick relative to</p>
+      <p begin="00:43:54.100" end="00:44:08.570">a full powered full-size bhd for instance.</p>
+      <p begin="00:44:08.570" end="00:44:13.020">The last thing that we're going to show today was the was docket compose and</p>
+      <p begin="00:44:13.020" end="00:44:16.330">docking impose was we're talking about before where</p>
+      <p begin="00:44:16.330" end="00:44:21.320">it's sort of the third piece of dockers overall orchestration strategy and it lets you create a</p>
+      <p begin="00:44:21.320" end="00:44:24.970">jpm file which is sort of you know,</p>
+      <p begin="00:44:24.970" end="00:44:30.540">a nice man's json I guess and, define your application...the dependencies</p>
+      <p begin="00:44:30.540" end="00:44:34.320">...relationships between containers in your applicationand, let-you deployed</p>
+      <p begin="00:44:34.320" end="00:44:42.250">very similarly to how we've been talking about resource groups this week with asher so,</p>
+      <p begin="00:44:42.250" end="00:44:47.230">this is where in the process today the structured</p>
+      <p begin="00:44:47.230" end="00:44:54.340">...for me?</p>
+      <p begin="00:44:54.340" end="00:45:03.240">We take a look at what.</p>
+      <p begin="00:45:03.240" end="00:45:05.260">We have here so,</p>
+      <p begin="00:45:05.260" end="00:45:09.640">I've created another sort of working folder for my sms server</p>
+      <p begin="00:45:09.640" end="00:45:14.610">took a similar approach the de actually if we look at the doctor...really quickly</p>
+      <p begin="00:45:14.610" end="00:45:21.570">it's very similar to towards the first server that I made couple different file differences and,</p>
+      <p begin="00:45:21.570" end="00:45:26.010">couple things I want to do in terms of configuration but very straightforward it's really easy to work with</p>
+      <p begin="00:45:26.010" end="00:45:32.310">a doctor files and get...super repeatable thing to work with and, then if we kick this</p>
+      <p begin="00:45:32.310" end="00:45:42.240">...we share the...</p>
+      <p begin="00:45:42.240" end="00:45:54.290">So, right into the context again.</p>
+      <p begin="00:45:54.290" end="00:45:59.100">Another good reason for actually passing in the name variables of containers</p>
+      <p begin="00:45:59.100" end="00:46:06.670">because it's a lot easier to work with three-letter names you can remember my opinion at least.</p>
+      <p begin="00:46:06.670" end="00:46:10.580">...that's well, it's...here you take a look at what is a new feature</p>
+      <p begin="00:46:10.580" end="00:46:15.720">in here that we haven't talked about before which is this link thing and a link this a</p>
+      <p begin="00:46:15.720" end="00:46:19.180">magic stuff similar to the way like rails behind-the-scenes</p>
+      <p begin="00:46:19.180" end="00:46:23.070">will light up a lot of cool stuff for you if you just kind of follow the rules</p>
+      <p begin="00:46:23.070" end="00:46:26.830">...does link does the same thing for doctor containers particular on the same on the same</p>
+      <p begin="00:46:26.830" end="00:46:32.550">host so if you define a link...server and data workload or database</p>
+      <p begin="00:46:32.550" end="00:46:37.800">something like that basically have a really shorthand way of communicating with each other</p>
+      <p begin="00:46:37.800" end="00:46:43.520">...code so in this case we are giving we are linking the</p>
+      <p begin="00:46:43.520" end="00:46:48.230">sm server with the databases got a right to so instead of me having to have like an</p>
+      <p begin="00:46:48.230" end="00:46:53.000">ip address hard coded in the thing I can just refer to the name</p>
+      <p begin="00:46:53.000" end="00:47:04.600">of the database and be able to have a have a connection shrink...essentially.</p>
+      <p begin="00:47:04.600" end="00:47:11.310">So, this is kicking off and while this is kicking off the since we had</p>
+      <p begin="00:47:11.310" end="00:47:16.640">an error on the caching the front-end here this is our new this is going to be our new hacker news right</p>
+      <p begin="00:47:16.640" end="00:47:20.360">here it's command line news apparently and,</p>
+      <p begin="00:47:20.360" end="00:47:22.680">if everything is working right now what's happening</p>
+      <p begin="00:47:22.680" end="00:47:26.720">behind-the-scenes we actually have to doctor hosts we have one container</p>
+      <p begin="00:47:26.720" end="00:47:31.250">...running the sm server which is sitting there waiting for you guys...it and,</p>
+      <p begin="00:47:31.250" end="00:47:34.580">we have one server that as one...running</p>
+      <p begin="00:47:34.580" end="00:47:39.800">...muggy workload those guys are linked with the short so they don't even have to know about where each other</p>
+      <p begin="00:47:39.800" end="00:47:43.200">our that ought to do any sort of discovery they can just reference each other directly</p>
+      <p begin="00:47:43.200" end="00:47:49.670">view link and when the...new sms messages...to dump it in</p>
+      <p begin="00:47:49.670" end="00:47:53.750">...database and,...dismissing sort of...display there but I believe if</p>
+      <p begin="00:47:53.750" end="00:48:08.710">someone wants to do a little data for me here we can?</p>
+      <p begin="00:48:08.710" end="00:48:10.550">...text to.</p>
+      <p begin="00:48:10.550" end="00:48:13.290">This number and,</p>
+      <p begin="00:48:13.290" end="00:48:18.230">just be careful because my messaging rates to apply in this case this is a thing on...I set up</p>
+      <p begin="00:48:18.230" end="00:48:23.880">as if anybody's ever toilet before it's fantastic somebody sends.</p>
+      <p begin="00:48:23.880" end="00:48:27.960">...going from milwaukee what hoosier from las vegas.</p>
+      <p begin="00:48:27.960" end="00:48:32.760">Are very nice...here instead of las vegas?</p>
+      <p begin="00:48:32.760" end="00:48:38.540">...take it back over to guys can see these coming in so, this is a...</p>
+      <p begin="00:48:38.540" end="00:48:43.420">to containers sort of workload...production and real-time you guys are sending us text</p>
+      <p begin="00:48:43.420" end="00:48:48.550">or parsing that getting it sticking at back-up and among go db dot database</p>
+      <p begin="00:48:48.550" end="00:48:54.700">...up there really super solid what's cool about it is that I don't have to take the whole</p>
+      <p begin="00:48:54.700" end="00:48:59.680">system offline right so if I wanted to make a change to the output that was going to be made on</p>
+      <p begin="00:48:59.680" end="00:49:04.100">me ...receiving the...right here I can leave the database container</p>
+      <p begin="00:49:04.100" end="00:49:08.550">...independently is multiple containers I can take down one of the sm servers</p>
+      <p begin="00:49:08.550" end="00:49:14.900">and update that while you get sort of this upgraded fail over zone functionality and,</p>
+      <p begin="00:49:14.900" end="00:49:16.360">they're able to</p>
+      <p begin="00:49:16.360" end="00:49:21.220">work and scale independently of each other in that case so I apologize for</p>
+      <p begin="00:49:21.220" end="00:49:27.220">not getting the point where we had the really cool like hacker news clone up there but you guys can at least see that the</p>
+      <p begin="00:49:27.220" end="00:49:30.840">data is being pipe through container backs and, it's actually really,</p>
+      <p begin="00:49:30.840" end="00:49:37.690">really simple the setup leveraging some of the some of the contract stocker gives you.</p>
+      <p begin="00:49:37.690" end="00:49:43.580">Also thanks for participating that's awesome.</p>
+      <p begin="00:49:43.580" end="00:49:51.500">So, to kind of wrap-up...back side of this here.</p>
+      <p begin="00:49:51.500" end="00:49:56.270">So, dockers really, really cool at least in my opinion I get to work on all the time</p>
+      <p begin="00:49:56.270" end="00:50:01.450">on a team that contributes directly to dockers I think the...guys here and</p>
+      <p begin="00:50:01.450" end="00:50:06.010">in the room at least upstairs and they've got some cool stickers and swagger you guys</p>
+      <p begin="00:50:06.010" end="00:50:10.640">too but if you actually take a look at the people in the space right now there's some really,</p>
+      <p begin="00:50:10.640" end="00:50:14.950">really interesting players in the space doctor obviously is</p>
+      <p begin="00:50:14.950" end="00:50:19.070">...at the front-and-center those guys but one of the people we one of the folks that we</p>
+      <p begin="00:50:19.070" end="00:50:24.350">announce relationship with yesterday actually what are the...sphere guys and</p>
+      <p begin="00:50:24.350" end="00:50:29.850">...sphere is a super cool company that's taking a look at well if I have a</p>
+      <p begin="00:50:29.850" end="00:50:35.180">bunch of its like thousands of nodes thousand hundreds and thousands of computers nodes</p>
+      <p begin="00:50:35.180" end="00:50:39.900">how do I make sense of deploy my workloads on of those and I should be able to tree all of those things</p>
+      <p begin="00:50:39.900" end="00:50:45.740">is a single compute resources similar to the way that swarms approaching sort of the swarming</p>
+      <p begin="00:50:45.740" end="00:50:48.190">compose scenario I should be able to</p>
+      <p begin="00:50:48.190" end="00:50:53.000">put really cool constraints and not have to worry about the develop side of things I should get the monitoring and the ability</p>
+      <p begin="00:50:53.000" end="00:50:58.150">to spin those things...against a predefine definition that I have expert my expected</p>
+      <p begin="00:50:58.150" end="00:51:04.240">aso a naptime cluster hq is also is really cool and you guys should check them out if</p>
+      <p begin="00:51:04.240" end="00:51:09.390">you've been thinking at all about working a...production so we're currently</p>
+      <p begin="00:51:09.390" end="00:51:14.440">...certain work with them to help bring ...storage drive around to algeria's well but these guys are</p>
+      <p begin="00:51:14.440" end="00:51:18.910">doing some really cool stuff in solving one of the really hard problems of containers</p>
+      <p begin="00:51:18.910" end="00:51:23.210">...which is handling stateful workloads and data you can't afford to lose</p>
+      <p begin="00:51:23.210" end="00:51:28.120">so containers just by their natural characteristics fantastic for things like burst</p>
+      <p begin="00:51:28.120" end="00:51:32.840">a workloads and things like that if you don't care about the data and you can lose a couple of things</p>
+      <p begin="00:51:32.840" end="00:51:38.090">the ability to spin up a gazillion of them super quickly is really attractive but as soon as you have</p>
+      <p begin="00:51:38.090" end="00:51:43.420">business critical information and databases and things that need to stay in particular</p>
+      <p begin="00:51:43.420" end="00:51:46.180">regions and things like that without a proper orchestration</p>
+      <p begin="00:51:46.180" end="00:51:52.010">story and mechanisms for maintaining that security instability and, resilience</p>
+      <p begin="00:51:52.010" end="00:51:57.340">...really you it's really hard to convince some people to go...production with containers cluster</p>
+      <p begin="00:51:57.340" end="00:52:02.430">each q as a product called blocker that's really in the early beta stages but is really,</p>
+      <p begin="00:52:02.430" end="00:52:07.690">really cool and promising so I go recommend checking them out as well if you if you're interested in that</p>
+      <p begin="00:52:07.690" end="00:52:12.590">isn't this really cool feature where I can actually move my database containers around and</p>
+      <p begin="00:52:12.590" end="00:52:17.400">within the database network that it knows about it will essentially...sort of like</p>
+      <p begin="00:52:17.400" end="00:52:22.650">a dns proxy for-you and handle all the routing...have to do self discovery you can move</p>
+      <p begin="00:52:22.650" end="00:52:33.240">boxes safely seamlessly up scale-up and things like that ...it's really neat?</p>
+      <p begin="00:52:33.240" end="00:52:38.760">In containers are really just the start were as a company as a developer myself really</p>
+      <p begin="00:52:38.760" end="00:52:44.080">excited to see where the container spaces going I'm seeing more every event we speak</p>
+      <p begin="00:52:44.080" end="00:52:48.260">...seeing more and more people that actually made the jump from sort of the standard bm approach</p>
+      <p begin="00:52:49.580" end="00:52:54.490">to actually going after containers trying to put in production working with more and more startups</p>
+      <p begin="00:52:54.490" end="00:52:59.140">...are running like beta versions of things I core os...versions of things like</p>
+      <p begin="00:52:59.140" end="00:53:04.790">core os...to take advancetake advantage of really the bleeding edge</p>
+      <p begin="00:53:04.790" end="00:53:11.160">...features the dockers offering so wrap-up really quickly.</p>
+      <p begin="00:53:11.160" end="00:53:15.250">I will be posting once we get this working the code for</p>
+      <p begin="00:53:15.250" end="00:53:19.520">the full hacker news clone up on this site you guys are interested in, you know,</p>
+      <p begin="00:53:19.520" end="00:53:23.740">just like how you interact with audio which is what powered some of the smm stuff there</p>
+      <p begin="00:53:23.740" end="00:53:26.380">...you can check out if you've never really played with</p>
+      <p begin="00:53:26.380" end="00:53:31.360">doctor files before or even some of the basic features around doctor compose</p>
+      <p begin="00:53:31.360" end="00:53:38.110">in defining those relationships and links...all be up there so?</p>
+      <p begin="00:53:38.110" end="00:53:43.970">Here's an obligatory slide please check out any this any of this training if</p>
+      <p begin="00:53:43.970" end="00:53:47.780">...it's interesting you guys and...that I think we've got like four or</p>
+      <p begin="00:53:47.780" end="00:53:52.540">five minutes left for open questions what for you guys to keep texan</p>
+      <p begin="00:53:52.540" end="00:53:57.920">...actually anybody still taxing?</p>
+      <p begin="00:53:57.920" end="00:54:00.850">...a pretty cool sample authored upon instagram later.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.884</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:01.120" end="00:00:03.760">What afternoon everyone?</p>
+      <p begin="00:00:03.760" end="00:00:07.540">I'm nervous xml program manager in visual studio team.</p>
+      <p begin="00:00:07.540" end="00:00:11.850">And, today we will talk about developing universal windows app in visual studio two</p>
+      <p begin="00:00:11.850" end="00:00:20.010">...fifty.</p>
+      <p begin="00:00:20.010" end="00:00:24.970">...drawing the draw going on so if you-get-a-chance</p>
+      <p begin="00:00:24.970" end="00:00:29.930">...strongly committed to evaluate this shown your feedback helps us</p>
+      <p begin="00:00:29.930" end="00:00:40.370">...so...please definitely addendum...evaluate and...your feedback.</p>
+      <p begin="00:00:40.370" end="00:00:41.960">And, still.</p>
+      <p begin="00:00:41.960" end="00:00:45.120">Are very for...formal confirmation from seattle</p>
+      <p begin="00:00:45.120" end="00:00:50.030">I'm waiting on of text on my phone but ...new windows tend</p>
+      <p begin="00:00:50.030" end="00:00:54.900">os slide and windows ten tools for universal windows app</p>
+      <p begin="00:00:54.900" end="00:00:59.870">development of will be going live rightnow so at the end of</p>
+      <p begin="00:00:59.870" end="00:01:04.450">this session please go and download your windows ten</p>
+      <p begin="00:01:04.450" end="00:01:09.740">...flight which is ten dot all dot hundred-seventy five-zero this is</p>
+      <p begin="00:01:09.740" end="00:01:13.900">...to...that would be published today...install your visual studio</p>
+      <p begin="00:01:13.900" end="00:01:17.200">...vid windows ten tools which are</p>
+      <p begin="00:01:17.200" end="00:01:22.100">required for developing universal windows app and then build your first universal...</p>
+      <p begin="00:01:22.100" end="00:01:27.350">right so this is going live right now they are in the chain of getting published</p>
+      <p begin="00:01:27.350" end="00:01:34.250">...the end of the...you should be able to go and download all this stuff and start building...application?</p>
+      <p begin="00:01:34.250" end="00:01:40.290">...installing visual studio make sure that you go to the custom set-up and select</p>
+      <p begin="00:01:40.290" end="00:01:45.260">universal windows are development tools and if you're interested in emulator you should select that as</p>
+      <p begin="00:01:45.260" end="00:01:49.780">about everything we're going to talk about today the require you to have universal</p>
+      <p begin="00:01:49.780" end="00:01:55.130">windows app tools installed as part of your studio if you don't have it then windows</p>
+      <p begin="00:01:55.130" end="00:01:58.940">...not be supported so as you installing visual studio go to the custom</p>
+      <p begin="00:01:58.940" end="00:02:04.930">...make sure...that jag to a wide any future surprises.</p>
+      <p begin="00:02:04.930" end="00:02:09.360">So, let's talk about the agenda and...simple.</p>
+      <p begin="00:02:09.360" end="00:02:14.660">I'm going to go and start with the introduction to windows universal platform.</p>
+      <p begin="00:02:14.660" end="00:02:19.070">And, I'm pretty sure most of you have already seen the keynote and,</p>
+      <p begin="00:02:19.070" end="00:02:23.740">...kind of outlined some of the details about us of windows platform some of you must</p>
+      <p begin="00:02:23.740" end="00:02:27.120">...also attended andrew clinics...app model chechen</p>
+      <p begin="00:02:27.120" end="00:02:31.820">he also kind of talks about how application model works and what what's the new in the you with</p>
+      <p begin="00:02:31.820" end="00:02:38.120">windows platform so I will give you a quick overview of that and after that</p>
+      <p begin="00:02:38.120" end="00:02:42.430">...deep dive into some of the visual studio two-lane that we have done to support</p>
+      <p begin="00:02:42.430" end="00:02:47.570">...windows app we have what across many different features so in my</p>
+      <p begin="00:02:47.570" end="00:02:51.610">shun I will be going and try to go as many features as possible and mostly</p>
+      <p begin="00:02:51.610" end="00:02:57.370">we'll be talking giving an overview of these features we have also schedule some deep dive</p>
+      <p begin="00:02:57.370" end="00:03:02.180">into some of the big features which I think...be very which we think we're going to be very interesting from a</p>
+      <p begin="00:03:02.180" end="00:03:06.590">...standpoint so I will be mentioning goshen and you will also find a</p>
+      <p begin="00:03:06.590" end="00:03:11.260">jail for goshen that literature sharon's flied and I recommend you guys to go</p>
+      <p begin="00:03:11.260" end="00:03:13.480">...it and those as well?</p>
+      <p begin="00:03:13.480" end="00:03:19.300">And, in the last ten fifteen minutes we will do and opencreate a and,</p>
+      <p begin="00:03:19.300" end="00:03:23.710">but, as I'm going through my talk if you feel that I'm going to fast or</p>
+      <p begin="00:03:23.710" end="00:03:26.800">to slow or if you want me to ask if you want to</p>
+      <p begin="00:03:26.800" end="00:03:31.180">...specific question about...the features that I'm talking about feel</p>
+      <p begin="00:03:31.180" end="00:03:35.960">free to raise your hand and I will try to answer data itself if not then</p>
+      <p begin="00:03:35.960" end="00:03:43.930">you can definitely hopefully I will be able to on so all the questions to was the end and ...</p>
+      <p begin="00:03:43.930" end="00:03:47.890">Cool so let's talk about you will windows platform.</p>
+      <p begin="00:03:47.890" end="00:03:53.180">Lossywhen I was here at build and we talked about windows forty-eight point one platform</p>
+      <p begin="00:03:53.180" end="00:03:57.980">and shared projects and teddy presented the plan of via he</p>
+      <p begin="00:03:57.980" end="00:04:03.000">...that of windows...device and, you release the next version of windows we'll have a unify</p>
+      <p begin="00:04:03.000" end="00:04:05.150">develop a platform and that's what we</p>
+      <p begin="00:04:05.150" end="00:04:09.980">have today like finally we have a unify developer platform</p>
+      <p begin="00:04:09.980" end="00:04:14.210">that works across all windows ten devices whether it's mobile</p>
+      <p begin="00:04:14.210" end="00:04:17.530">...desktop xbox coyote</p>
+      <p begin="00:04:17.530" end="00:04:21.050">...all the windows and devices all run on windows</p>
+      <p begin="00:04:21.050" end="00:04:25.950">stent and that's the create exciting use for a...because finally he</p>
+      <p begin="00:04:25.950" end="00:04:30.920">didn't need to think about different versions and different platforms running on different windows</p>
+      <p begin="00:04:30.920" end="00:04:35.670">...is a theme when arty platform that runs across all these windows</p>
+      <p begin="00:04:35.670" end="00:04:38.420">...devices?</p>
+      <p begin="00:04:38.420" end="00:04:40.900">For windows forty-point one if you guys remember if you</p>
+      <p begin="00:04:40.900" end="00:04:45.710">have build application the story was that there was a high degree of conversions but</p>
+      <p begin="00:04:45.710" end="00:04:49.360">...developers to build...different application package</p>
+      <p begin="00:04:49.360" end="00:04:53.410">one application package for windows eight-point one another application package for windows</p>
+      <p begin="00:04:53.410" end="00:04:59.410">forty-eight point one and they used to go to...different stores windows to revel of...to...and</p>
+      <p begin="00:04:59.410" end="00:05:04.340">...windows backbone we finally have binary compatibility you can</p>
+      <p begin="00:05:04.340" end="00:05:08.960">now use a single project to create a single application package that</p>
+      <p begin="00:05:08.960" end="00:05:12.490">...across all windows ten device.</p>
+      <p begin="00:05:12.490" end="00:05:14.030">Said that.</p>
+      <p begin="00:05:14.030" end="00:05:17.350">If you have a scenario in mind where you want</p>
+      <p begin="00:05:17.350" end="00:05:21.520">a specific package to go to a specific device family as an example</p>
+      <p begin="00:05:21.520" end="00:05:26.160">if you want a wmv windows mobile package of just say...package should only go</p>
+      <p begin="00:05:26.160" end="00:05:30.510">...windows mobile devices and you can do that as well as part of my</p>
+      <p begin="00:05:30.510" end="00:05:37.250">talk I will show you how you how that can be at on how you can do that in visual studio.</p>
+      <p begin="00:05:37.250" end="00:05:42.660">Finally if you look in the image...diagram they are the centerpiece is the</p>
+      <p begin="00:05:42.660" end="00:05:45.210">...windows platform every</p>
+      <p begin="00:05:45.210" end="00:05:49.800">api that exist in the universe of windows platform you can use</p>
+      <p begin="00:05:49.800" end="00:05:52.460">...and expected to be the on every windows</p>
+      <p begin="00:05:52.460" end="00:05:55.510">ten device right so that's the conversions.</p>
+      <p begin="00:05:56.570" end="00:05:58.900">But,...still some bits and pieces</p>
+      <p begin="00:05:58.900" end="00:06:02.990">via the awesome capabilities which are specific to a device family.</p>
+      <p begin="00:06:04.060" end="00:06:07.540">As an example let's think about mobile right there still</p>
+      <p begin="00:06:07.540" end="00:06:11.460">...phone devices that are running hardware back buttons.</p>
+      <p begin="00:06:11.460" end="00:06:15.960">So, as a developer you need to think about how exactly my application</p>
+      <p begin="00:06:15.960" end="00:06:18.950">will go and use the capabilities that are specific to</p>
+      <p begin="00:06:18.950" end="00:06:24.790">a device family and that does the place...will go in the explore what adaptive</p>
+      <p begin="00:06:24.790" end="00:06:32.550">...how you can write adaptive code and...look at some demos for that as well.</p>
+      <p begin="00:06:32.550" end="00:06:36.550">So, let's now talk about the supported os for universal windows</p>
+      <p begin="00:06:36.550" end="00:06:41.330">the development from visual studio perspective we always</p>
+      <p begin="00:06:41.330" end="00:06:45.260">...developers to be running on the highest version of windows to get the</p>
+      <p begin="00:06:45.260" end="00:06:49.300">best develop experience so-if you want-to go and...universal windows app</p>
+      <p begin="00:06:49.300" end="00:06:54.180">will encourage you to go and use the latest reduced and fly and installed tools and build</p>
+      <p begin="00:06:54.180" end="00:06:58.790">your application when you are running on windows ten you can go and</p>
+      <p begin="00:06:58.790" end="00:07:03.730">use any of these deployment targets...can run your application in a simulator</p>
+      <p begin="00:07:03.730" end="00:07:08.040">you can rugged your application on the local machine you can use the mobile emulator</p>
+      <p begin="00:07:08.040" end="00:07:12.280">...see how your application will work on a phone device you can use the remote</p>
+      <p begin="00:07:12.280" end="00:07:14.730">machine scenario to validate your</p>
+      <p begin="00:07:14.730" end="00:07:18.240">...your application on a remote pc or xbox</p>
+      <p begin="00:07:18.240" end="00:07:22.690">or an i-device and you can also use a connected phone device</p>
+      <p begin="00:07:22.690" end="00:07:26.690">...you do a ipo usb and deploy...application to a hardware</p>
+      <p begin="00:07:26.690" end="00:07:33.640">...device right so when you're running on windows...all these deployment targets are supported.</p>
+      <p begin="00:07:33.640" end="00:07:37.100">If you are...if you are you doing you are design</p>
+      <p begin="00:07:37.100" end="00:07:41.320">...then you can when you're running on windows ten you can use...design out in visual studio and</p>
+      <p begin="00:07:41.320" end="00:07:46.590">lead to actually go and implement...to see how it...application will look lent look,</p>
+      <p begin="00:07:46.590" end="00:07:49.550">at the runtime and...design our feature itself.</p>
+      <p begin="00:07:50.560" end="00:07:51.520">But, for the first-time.</p>
+      <p begin="00:07:52.790" end="00:07:56.640">Visual studio is novel support universal windows</p>
+      <p begin="00:07:56.640" end="00:08:00.420">...development on previously released version of all with as</p>
+      <p begin="00:08:00.420" end="00:08:03.880">...right so you can go and install visual studio</p>
+      <p begin="00:08:03.880" end="00:08:08.670">...thousand fifteen are fee on of windows eight-point one machine and develop</p>
+      <p begin="00:08:08.670" end="00:08:12.670">...universal windows app so if you're running on windows eight-point</p>
+      <p begin="00:08:12.670" end="00:08:17.400">one because the previous version of os the experience will be slightly degraded</p>
+      <p begin="00:08:17.400" end="00:08:21.700">as an example you cannot you will not have simulator and local machine of</p>
+      <p begin="00:08:21.700" end="00:08:26.070">the deployment target because you cannot run of windows ten application on windows eight-point</p>
+      <p begin="00:08:26.070" end="00:08:29.260">...similarly because of download design I have some</p>
+      <p begin="00:08:29.260" end="00:08:32.320">dependency that uses the runtime os to give you the</p>
+      <p begin="00:08:32.320" end="00:08:36.870">...and to render...am application so example design</p>
+      <p begin="00:08:36.870" end="00:08:42.250">...not be of level of any running on a windows eight-point one os</p>
+      <p begin="00:08:42.250" end="00:08:45.720">...will instead give you a full example editor view via example</p>
+      <p begin="00:08:45.720" end="00:08:52.060">intelligence both for platform and question type and you can use that to build your application.</p>
+      <p begin="00:08:52.060" end="00:08:55.720">At...dn will also support building</p>
+      <p begin="00:08:55.720" end="00:08:58.500">universal windows app on windows seven</p>
+      <p begin="00:08:58.500" end="00:09:02.440">right again because it's a windows seven os hyper v</p>
+      <p begin="00:09:02.440" end="00:09:06.920">is not supported so emulator will not work but you will be able to use</p>
+      <p begin="00:09:06.920" end="00:09:12.720">remote machine to actually deploy are application on of endorsed and...xbox</p>
+      <p begin="00:09:12.720" end="00:09:17.480">...and I ot and you can also use the user connected phone device to deploy</p>
+      <p begin="00:09:17.480" end="00:09:23.080">...application onto a for device and...it and debugged.</p>
+      <p begin="00:09:23.080" end="00:09:26.820">And, as I mentioned before you will not have them and design experience</p>
+      <p begin="00:09:26.820" end="00:09:31.360">in windows seven as well but you will be you able to use...right so the</p>
+      <p begin="00:09:31.360" end="00:09:37.480">message which of os you are running on what windows seven windows eight-point one of</p>
+      <p begin="00:09:37.480" end="00:09:42.360">windows server two the ventral rtwo or windows...you can go and download visual studio</p>
+      <p begin="00:09:42.360" end="00:09:50.800">are fee...universe of windows tools and start building...application.</p>
+      <p begin="00:09:50.800" end="00:09:54.690">Now let's talk a little bit about project templates do that let's actually</p>
+      <p begin="00:09:54.690" end="00:09:58.270">...is to do so.</p>
+      <p begin="00:09:58.270" end="00:10:02.870">The search tvs.</p>
+      <p begin="00:10:02.870" end="00:10:06.090">And, if I bring up the new project dialogue here.</p>
+      <p begin="00:10:06.090" end="00:10:10.290">You will see that universal windows project template are located</p>
+      <p begin="00:10:10.290" end="00:10:15.250">and visual csharp windows and windows universal node.</p>
+      <p begin="00:10:15.250" end="00:10:19.330">We have a bank application project template of which you can use</p>
+      <p begin="00:10:19.330" end="00:10:23.750">a starting point for building your application is an applicant generates</p>
+      <p begin="00:10:23.750" end="00:10:28.290">...application package other than that we have a dl</p>
+      <p begin="00:10:28.290" end="00:10:33.510">...of an artery project template...unit test project template.</p>
+      <p begin="00:10:33.510" end="00:10:35.760">You can see that we don't have any</p>
+      <p begin="00:10:35.760" end="00:10:39.560">advanced project template like hub grid a split</p>
+      <p begin="00:10:39.560" end="00:10:43.930">likely used to half of the previous version of windows platform right.</p>
+      <p begin="00:10:43.930" end="00:10:48.010">To mitigate that windows steam have actually relieved a huge</p>
+      <p begin="00:10:48.010" end="00:10:52.090">number of samples so if you want to go and learn a little bit</p>
+      <p begin="00:10:52.090" end="00:10:56.530">more about adaptive code all you want to go a little bit and learn more about</p>
+      <p begin="00:10:56.530" end="00:11:00.690">adaptive ui or if you are encrusted on learning more about...specific api</p>
+      <p begin="00:11:00.690" end="00:11:04.870">...feature you is file and find the right example on get</p>
+      <p begin="00:11:04.870" end="00:11:09.650">...that windows team has published so I'll encourage you guys to go and</p>
+      <p begin="00:11:09.650" end="00:11:13.340">explode this get up repository download the samples and</p>
+      <p begin="00:11:13.340" end="00:11:21.500">...exploring some of the new windows api...that we have added for windows...platform.</p>
+      <p begin="00:11:21.500" end="00:11:23.360">Now once you have created your</p>
+      <p begin="00:11:23.360" end="00:11:26.590">...so let's step back...studio.</p>
+      <p begin="00:11:26.590" end="00:11:31.140">And, I've just use my example application here.</p>
+      <p begin="00:11:31.140" end="00:11:34.340">So, once you have created...project and if you bring up the project</p>
+      <p begin="00:11:34.340" end="00:11:39.170">properties you will see that we have actually added some new properties</p>
+      <p begin="00:11:39.170" end="00:11:43.890">...universal windows up right here you can see that there are two properties</p>
+      <p begin="00:11:43.890" end="00:11:49.510">target version admin version if you click here you see the target version combo</p>
+      <p begin="00:11:49.510" end="00:11:54.630">...showing multiple as the case it showing one zero six nine</p>
+      <p begin="00:11:54.630" end="00:11:59.350">...is zero one zero nine zero right of similarly if you click on a</p>
+      <p begin="00:11:59.350" end="00:12:02.230">...version you will see multiple...listed</p>
+      <p begin="00:12:02.230" end="00:12:08.450">here as well so what are these properties and how a developer should think about it?</p>
+      <p begin="00:12:08.450" end="00:12:13.480">These properties...critical and for-you...up and I will explain</p>
+      <p begin="00:12:13.480" end="00:12:18.420">why let's take a look at what exactly is target what exactly is target</p>
+      <p begin="00:12:18.420" end="00:12:24.070">of version so the target version property that you see in the project properties is</p>
+      <p begin="00:12:24.070" end="00:12:28.500">...by target platform version in your project file if you one of the cs project you will</p>
+      <p begin="00:12:28.500" end="00:12:33.150">see target platform version and that's what being it's displayed in the project property what this target</p>
+      <p begin="00:12:33.150" end="00:12:36.990">platform version means it defines the worsen of universal as</p>
+      <p begin="00:12:36.990" end="00:12:39.560">...your project is being compiled</p>
+      <p begin="00:12:39.560" end="00:12:44.710">against right so it defines the api surface that is</p>
+      <p begin="00:12:44.710" end="00:12:48.310">...to your project and that's what that target version</p>
+      <p begin="00:12:48.310" end="00:12:53.260">indicates think about this as windows good into a servicing model and</p>
+      <p begin="00:12:53.260" end="00:12:58.160">start shipping more and more updates they will be different versions of universal windows</p>
+      <p begin="00:12:58.160" end="00:13:03.510">educate and different versions of universal windows platform...running on a device so-if you</p>
+      <p begin="00:13:03.510" end="00:13:08.330">want-to go and use the latest feature you will go and download the educate once you have installed</p>
+      <p begin="00:13:08.330" end="00:13:13.320">educate in the project properties you will see the educates to be listed there you can go and</p>
+      <p begin="00:13:13.320" end="00:13:18.630">change the target version to the version of...decay you want to use and start using the new</p>
+      <p begin="00:13:18.630" end="00:13:23.130">...right that's what the target version property...</p>
+      <p begin="00:13:23.130" end="00:13:26.660">As part of the build process visual studio will automatically</p>
+      <p begin="00:13:26.660" end="00:13:31.480">take the target version property and stump it into the manifest file so there's</p>
+      <p begin="00:13:31.480" end="00:13:36.110">...property...manifest file which is called target device family which names</p>
+      <p begin="00:13:36.110" end="00:13:40.430">...windows of universal...a universal package and it hasn't been version</p>
+      <p begin="00:13:40.430" end="00:13:45.140">...version tested so the target version property is page...part of the</p>
+      <p begin="00:13:45.140" end="00:13:45.840">...process</p>
+      <p begin="00:13:47.560" end="00:13:52.940">...at the map version tested in the manifest file and this goes to the store as part</p>
+      <p begin="00:13:52.940" end="00:13:56.240">your application package and os these days it uses the</p>
+      <p begin="00:13:56.240" end="00:14:00.100">...version tested to quirk and api behavior the what</p>
+      <p begin="00:14:00.100" end="00:14:03.120">...working me...a very simple statement if windows</p>
+      <p begin="00:14:03.120" end="00:14:07.790">...size to change the behavior often application in the future versions so</p>
+      <p begin="00:14:07.790" end="00:14:12.710">if you say that the version avce tested against is one zero six nine and when the</p>
+      <p begin="00:14:12.710" end="00:14:18.180">...the behavior of the api...so that the application that are running on sixty nine</p>
+      <p begin="00:14:18.180" end="00:14:22.280">davis to get the sixty nine behavior and not the latest one because you have not tested</p>
+      <p begin="00:14:22.280" end="00:14:25.460">...that that's a simple way that working works another part of the</p>
+      <p begin="00:14:25.460" end="00:14:28.270">...process will stand the target back from version as a</p>
+      <p begin="00:14:28.270" end="00:14:34.190">...version tested property in the generated manifest...part of the process?</p>
+      <p begin="00:14:34.190" end="00:14:36.860">So, what is a min version?</p>
+      <p begin="00:14:36.860" end="00:14:40.530">The min version is...by target platform inversion property</p>
+      <p begin="00:14:40.530" end="00:14:44.730">in the project file and what is signifies that minimum version</p>
+      <p begin="00:14:44.730" end="00:14:47.160">...universal windows platform you</p>
+      <p begin="00:14:47.160" end="00:14:51.730">should be running to be able to use...deployed package or run</p>
+      <p begin="00:14:51.730" end="00:14:56.570">this package right so again in the ideal world when</p>
+      <p begin="00:14:56.570" end="00:15:00.960">...shipping multiple version of the universal platform and</p>
+      <p begin="00:15:00.960" end="00:15:05.250">they are different windows ten devices running on different versions of universal</p>
+      <p begin="00:15:05.250" end="00:15:10.620">platform in an ideal world you will keep them in version to be the lowest number a</p>
+      <p begin="00:15:10.620" end="00:15:16.390">devices running...target version should be the highest version of the use of windows decay</p>
+      <p begin="00:15:16.390" end="00:15:18.480">...so that you're using all the latest and greatest</p>
+      <p begin="00:15:18.480" end="00:15:23.300">...right this minute version property as part of the...process will be stand</p>
+      <p begin="00:15:23.300" end="00:15:27.310">adam inversion in your manifest file and when store</p>
+      <p begin="00:15:27.310" end="00:15:30.800">...see this manifest file it will filter the packages based on</p>
+      <p begin="00:15:30.800" end="00:15:35.670">guzman version as an example if I'm running a device which</p>
+      <p begin="00:15:35.670" end="00:15:40.140">is running hundred-fifty version of windows...which is standard zero dot</p>
+      <p begin="00:15:40.140" end="00:15:45.020">hundred-fifty dot zero and I go and try to use this package...will not even</p>
+      <p begin="00:15:45.020" end="00:15:49.980">...that because it will see them inversion required for this package is sixty nine that</p>
+      <p begin="00:15:49.980" end="00:15:52.940">will automatically filter that so when</p>
+      <p begin="00:15:52.940" end="00:15:57.920">you're thinking about universal windows platform when you think about us of windows project and</p>
+      <p begin="00:15:57.920" end="00:16:02.300">the adaptive code these two properties become very interesting if you have developed</p>
+      <p begin="00:16:02.300" end="00:16:07.130">an android app I'm pretty sure you guys...they are they have three different versions but</p>
+      <p begin="00:16:07.130" end="00:16:10.800">he was the stories the same make sure these values of set correctly</p>
+      <p begin="00:16:10.800" end="00:16:18.630">...project file and specify visual the educate that you are using?</p>
+      <p begin="00:16:18.630" end="00:16:23.990">Now let's talk a little bit about windows device family actuation...case.</p>
+      <p begin="00:16:23.990" end="00:16:27.770">So, as I mentioned there is a we have a unify developer platform</p>
+      <p begin="00:16:27.770" end="00:16:31.930">what they are still some capabilities that exist specific to</p>
+      <p begin="00:16:31.930" end="00:16:37.890">work target device family right and we talked about hardware but...unfold.</p>
+      <p begin="00:16:37.890" end="00:16:41.560">For...allow developers to actually use these the api</p>
+      <p begin="00:16:41.560" end="00:16:44.780">...use these capabilities which are specific to a</p>
+      <p begin="00:16:44.780" end="00:16:48.870">device family we have introduce the concept of device family actuation</p>
+      <p begin="00:16:48.870" end="00:16:54.140">...right so let's actually go to...visual studio.</p>
+      <p begin="00:16:54.140" end="00:16:56.930">And, take a look at that.</p>
+      <p begin="00:16:56.930" end="00:16:59.830">So, for this one and just going to use my...</p>
+      <p begin="00:16:59.830" end="00:17:04.770">book application before we a dive into this let's actually just run</p>
+      <p begin="00:17:04.770" end="00:17:09.270">the application see what it does for you guys are familiar with it so I will go</p>
+      <p begin="00:17:09.270" end="00:17:15.990">...this application on local machine.</p>
+      <p begin="00:17:15.990" end="00:17:20.770">Okay, I'll just try to fix it...enough of...so,</p>
+      <p begin="00:17:20.770" end="00:17:25.690">my app is a very simple...application and I can just</p>
+      <p begin="00:17:25.690" end="00:17:29.910">go it's basically showing a set of categories here which of advertisers to some</p>
+      <p begin="00:17:29.910" end="00:17:33.610">...I can go and click on a specific category and if</p>
+      <p begin="00:17:33.610" end="00:17:39.110">we show you a set of recipes for that category and you can click on a recipe and</p>
+      <p begin="00:17:39.110" end="00:17:44.280">...you in instructions and ingredients for preparing that recipe?</p>
+      <p begin="00:17:44.280" end="00:17:47.480">And, you can click on a...into navigate back</p>
+      <p begin="00:17:47.480" end="00:17:52.970">this is actually using adaptive ui so you can go and actually resize the application and you</p>
+      <p begin="00:17:52.970" end="00:18:00.040">see it's actually resize it and shows produce issue the right elements of the right layout.</p>
+      <p begin="00:18:00.040" end="00:18:05.030">And, I can go back and run this same code on emulator the</p>
+      <p begin="00:18:05.030" end="00:18:15.310">same universal single project which I'm not going to go and apply to emulator.</p>
+      <p begin="00:18:15.310" end="00:18:20.280">Just to save some time have kept emulate open already and we have the same application</p>
+      <p begin="00:18:20.280" end="00:18:23.930">are running on a mobile emulator as well again, I can click on</p>
+      <p begin="00:18:23.930" end="00:18:28.150">a category and pretty much works the same way.</p>
+      <p begin="00:18:28.150" end="00:18:30.770">So, it's a seeing universal</p>
+      <p begin="00:18:30.770" end="00:18:34.220">...working on both bc as well as on mobile...</p>
+      <p begin="00:18:34.220" end="00:18:39.150">emulator but now if I go...click on the badminton you will see my application</p>
+      <p begin="00:18:39.150" end="00:18:43.510">...now this is not the best expedia is</p>
+      <p begin="00:18:43.510" end="00:18:48.410">...developer would like to provide it for the application right in the real-world when somebody pass-the-buck</p>
+      <p begin="00:18:48.410" end="00:18:52.640">button you would like the application to navigate back to the previous page.</p>
+      <p begin="00:18:52.640" end="00:18:58.700">...how less...fix that for this application and see how that would work so.</p>
+      <p begin="00:18:58.700" end="00:19:02.460">Let me see if I can increase the font-size.</p>
+      <p begin="00:19:02.460" end="00:19:12.210">Tooth auctions all right industries...that's maybe the.</p>
+      <p begin="00:19:12.210" end="00:19:17.140">...better awesome so animation hardware</p>
+      <p begin="00:19:17.140" end="00:19:21.120">...button are...part of an windows device</p>
+      <p begin="00:19:21.120" end="00:19:26.100">...educate so let's actually go and add reference to that so if I go and rightly on</p>
+      <p begin="00:19:26.100" end="00:19:30.840">...references and bring up the addresses dialogue and go into windows universal</p>
+      <p begin="00:19:30.840" end="00:19:35.020">actuation is decays you will see that they are different windows mobile</p>
+      <p begin="00:19:35.020" end="00:19:39.960">actuation is decay windows desktop...as well as coyote and</p>
+      <p begin="00:19:39.960" end="00:19:42.740">...like all different device family if they have</p>
+      <p begin="00:19:42.740" end="00:19:48.070">some additional capabilities dealership annexation is...for developer to be able to use that so you can go and</p>
+      <p begin="00:19:48.070" end="00:19:50.850">select the...is decay here and click ok.</p>
+      <p begin="00:19:51.930" end="00:19:55.780">And, pretty...exactly works like you have if you have user third-party actuation</p>
+      <p begin="00:19:55.780" end="00:19:58.480">educate the workflow is identical just go and add the</p>
+      <p begin="00:19:58.480" end="00:20:03.460">difference once you have done that visual studio and microsoft...will automatically find the right contract...</p>
+      <p begin="00:20:03.460" end="00:20:10.290">md for you and it's a start using those...is to allow you to...api than...them.</p>
+      <p begin="00:20:10.290" end="00:20:10.630">So, once</p>
+      <p begin="00:20:10.630" end="00:20:15.910">...done added the difference to mobile actuation educate I will go...you wired up my hardware back</p>
+      <p begin="00:20:15.910" end="00:20:20.880">...the right the code windows dot phone.</p>
+      <p begin="00:20:20.880" end="00:20:26.180">Dot ui dot hardware not input</p>
+      <p begin="00:20:26.180" end="00:20:29.590">Hogs impotence dot.</p>
+      <p begin="00:20:29.590" end="00:20:31.040">Blacklist.</p>
+      <p begin="00:20:31.040" end="00:20:35.240">So, as I'm doing it I want to show one of the...features is</p>
+      <p begin="00:20:35.240" end="00:20:39.860">the develop a assistant the as decay that is powered by bing</p>
+      <p begin="00:20:39.860" end="00:20:44.580">and that's recently we have shipped what this develop assistant...if as</p>
+      <p begin="00:20:44.580" end="00:20:49.420">you're writing a using a api it actually uses bing to give you a sample</p>
+      <p begin="00:20:49.420" end="00:20:53.780">cord of how this api should be used so here in the example issuing me that you get</p>
+      <p begin="00:20:53.780" end="00:20:58.460">...up your hardware back buttons and who might want to go and put it in a</p>
+      <p begin="00:20:58.460" end="00:21:06.900">...check and we'll discuss why so I'll just go and what up my?</p>
+      <p begin="00:21:06.900" end="00:21:08.470">And, generate ...</p>
+      <p begin="00:21:09.900" end="00:21:11.850">So, that's pretty much.</p>
+      <p begin="00:21:11.850" end="00:21:12.580">So, if I go</p>
+      <p begin="00:21:12.580" end="00:21:20.110">and run this code rightnow on local machine what will happen anyone.</p>
+      <p begin="00:21:20.110" end="00:21:27.820">It will crash why do crash.</p>
+      <p begin="00:21:27.820" end="00:21:31.440">Exactly so that's what he mention if I run the same code</p>
+      <p begin="00:21:31.440" end="00:21:35.960">on local machine my application will crash right now because.</p>
+      <p begin="00:21:35.960" end="00:21:43.180">Desktop doesn't support hardware badminton let's actually still go and run it.</p>
+      <p begin="00:21:43.180" end="00:21:50.970">So, I still go and run this application and let's see what we expected is correct.</p>
+      <p begin="00:21:50.970" end="00:21:53.460">So, my application...</p>
+      <p begin="00:21:53.460" end="00:21:54.670">Going click on appetizers.</p>
+      <p begin="00:21:56.030" end="00:21:59.490">...application crashed with type node exception</p>
+      <p begin="00:21:59.490" end="00:22:04.930">saying that this type does not exist on desktop if I go and...mobile it will work</p>
+      <p begin="00:22:04.930" end="00:22:08.760">fine right so how we're going to go and</p>
+      <p begin="00:22:08.760" end="00:22:13.790">six this site how we can go and use the hardware...or any other capability which</p>
+      <p begin="00:22:13.790" end="00:22:18.750">are specific to a device family and still maintain a single application package that</p>
+      <p begin="00:22:18.750" end="00:22:23.190">works across all device famine this is we are the concept of adaptive</p>
+      <p begin="00:22:23.190" end="00:22:28.600">...content I'm sure many of...must have already used reflection</p>
+      <p begin="00:22:28.600" end="00:22:31.680">...dot net right and what we have done in windows</p>
+      <p begin="00:22:31.680" end="00:22:36.590">...is essentially implemented reflection like api as part of an</p>
+      <p begin="00:22:36.590" end="00:22:39.460">...platform itself so that these api the</p>
+      <p begin="00:22:39.460" end="00:22:43.780">...on for dotted develop of your csharp and vb for</p>
+      <p begin="00:22:43.780" end="00:22:53.650">cplus-plus and even for javascript right let's go and use these adaptive...</p>
+      <p begin="00:22:53.650" end="00:22:55.950">To do that...and if check and save windows.</p>
+      <p begin="00:22:56.970" end="00:23:01.600">Dot foundation dot metadata on</p>
+      <p begin="00:23:01.600" end="00:23:05.900">dot api information top and here you can see</p>
+      <p begin="00:23:05.900" end="00:23:09.520">they are different methods implemented you can use a to check for</p>
+      <p begin="00:23:09.520" end="00:23:13.620">a particular type of particular...particular property</p>
+      <p begin="00:23:13.620" end="00:23:18.370">on method and this case we're just going to go and use is type present so again</p>
+      <p begin="00:23:18.370" end="00:23:27.830">dot develop...the you need to positive string for the type that you are checking...just do that.</p>
+      <p begin="00:23:27.830" end="00:23:31.530">And, add this into if check.</p>
+      <p begin="00:23:31.530" end="00:23:37.060">And, then.</p>
+      <p begin="00:23:37.060" end="00:23:39.970">And,...striped here.</p>
+      <p begin="00:23:39.970" end="00:23:47.060">And, once you've done...that let's go...set couple of great points.</p>
+      <p begin="00:23:47.060" end="00:23:54.040">And, run this...again...local machine.</p>
+      <p begin="00:23:54.040" end="00:23:59.130">Click on appetizer...big pointers...I go...fn that</p>
+      <p begin="00:23:59.130" end="00:24:02.880">check fields because it tells desktop runtime doesn't support</p>
+      <p begin="00:24:02.880" end="00:24:07.020">harvard on this type does not exist...even does not hold up if I press</p>
+      <p begin="00:24:07.020" end="00:24:11.040">...five again my application is actually working right</p>
+      <p begin="00:24:11.040" end="00:24:13.450">so the application...working because you have written</p>
+      <p begin="00:24:13.450" end="00:24:17.790">a adaptive code to actually check for the presence of a particular type when you're running</p>
+      <p begin="00:24:17.790" end="00:24:23.260">application if I go and run the same application now.</p>
+      <p begin="00:24:23.260" end="00:24:30.470">...emulator.</p>
+      <p begin="00:24:30.470" end="00:24:35.410">Should not take more...couple of seconds to...actually go and run...ok and</p>
+      <p begin="00:24:35.410" end="00:24:40.470">...working emulator I can go...click on appetizer in this case if</p>
+      <p begin="00:24:40.470" end="00:24:44.620">I press fn it returns true so my even handlers</p>
+      <p begin="00:24:44.620" end="00:24:48.250">now hooked up now if I press back?</p>
+      <p begin="00:24:48.250" end="00:24:53.360">...the even call back and now I can go in...couple of lines of code</p>
+      <p begin="00:24:53.360" end="00:24:58.420">...can go back framed...go back and...the navigation.</p>
+      <p begin="00:24:58.420" end="00:25:06.370">So, that's the adaptive code for-you so let's actually...dec.</p>
+      <p begin="00:25:06.370" end="00:25:11.250">So, we talked about actuation is decays we talked about adaptive code and again</p>
+      <p begin="00:25:11.250" end="00:25:12.370">...adaptive api</p>
+      <p begin="00:25:12.370" end="00:25:16.730">...located on the windows foundation metadata dot api information you can go</p>
+      <p begin="00:25:16.730" end="00:25:22.730">in explore and use some of these to actually trial the capabilities which are specific to a...family.</p>
+      <p begin="00:25:22.730" end="00:25:27.920">I'm not going to go and talk about indeed like anything about the adaptive ui but,</p>
+      <p begin="00:25:27.920" end="00:25:32.580">example team has done a lot of...work to allow you to actually go in design the</p>
+      <p begin="00:25:32.580" end="00:25:37.040">you layoff application based on different phone factors right and</p>
+      <p begin="00:25:37.040" end="00:25:41.870">...and how to any are going to do a deep dive on this to model and kind of</p>
+      <p begin="00:25:41.870" end="00:25:46.600">they will explain how we should think about all these devices are we should think about found</p>
+      <p begin="00:25:46.600" end="00:25:49.730">form factors and what a different reasons anal</p>
+      <p begin="00:25:49.730" end="00:25:53.230">...introduced different ways of using adaptive two goes which I integrated</p>
+      <p begin="00:25:53.230" end="00:25:58.320">a part of visual state manager to an extent that you can actually going to create totally different</p>
+      <p begin="00:25:58.320" end="00:26:03.240">download files and load them into a based on the devices that...running on so</p>
+      <p begin="00:26:03.240" end="00:26:07.720">it's a pretty interesting topic and if you are interested in adaptive ui</p>
+      <p begin="00:26:07.720" end="00:26:16.180">the strongly recommend you to go and at...this chechen and they will be covering address in-depth?</p>
+      <p begin="00:26:16.180" end="00:26:22.020">Now let's talk a little bit about card party actuation is decays ex-change and as the case have</p>
+      <p begin="00:26:22.020" end="00:26:26.300">been a critical component for windows platform...</p>
+      <p begin="00:26:26.300" end="00:26:29.680">Windows eight windows eight-point one windows...point one</p>
+      <p begin="00:26:29.680" end="00:26:34.510">the lot-of actuation is decays that...out...of is develop...using and it's a common</p>
+      <p begin="00:26:34.510" end="00:26:39.240">v for developers...coding components with other users and</p>
+      <p begin="00:26:39.240" end="00:26:44.040">developers right flaw university windows platform.</p>
+      <p begin="00:26:44.040" end="00:26:48.790">We will support referencing existing windows eight-point one actuation is educates</p>
+      <p begin="00:26:48.790" end="00:26:53.880">...your universal projects so if you have an existing windows...decay</p>
+      <p begin="00:26:53.880" end="00:26:58.950">...can be a behaviors educate that...microsoft ships...can be at third-party another</p>
+      <p begin="00:26:58.950" end="00:27:04.880">as decay like tolerate dev express and, you can just go and reference the existing windows eight-point</p>
+      <p begin="00:27:04.880" end="00:27:09.340">annexation...in your universal project and use that.</p>
+      <p begin="00:27:09.340" end="00:27:14.250">The windows phone eight-point annexation...decay is currently not supported we did</p>
+      <p begin="00:27:14.250" end="00:27:19.210">some analysis and found that and most of the cases there was a backing identical windows ape on</p>
+      <p begin="00:27:19.210" end="00:27:23.770">one actuation is...so we didn't see a gap in the scenario so we have not supportive windows</p>
+      <p begin="00:27:23.770" end="00:27:26.170">...on one actuation educate but this is</p>
+      <p begin="00:27:26.170" end="00:27:31.600">a point where I would love to get some feedback if you see...ashish...is</p>
+      <p begin="00:27:31.600" end="00:27:36.860">...which is...on windows eight-point one platform that we should think about supporting and please</p>
+      <p begin="00:27:36.860" end="00:27:42.920">send-me the feedback and I would have a contact information and we'll try to look into that.</p>
+      <p begin="00:27:42.920" end="00:27:44.360">So,...for windows a</p>
+      <p begin="00:27:44.360" end="00:27:49.510">...actuation instigate let's go and take a look could do a quick demo for that as well</p>
+      <p begin="00:27:49.510" end="00:27:54.190">as you do that I'm going to go and use blend?</p>
+      <p begin="00:27:54.190" end="00:27:59.810">In blend so, the way of for adding refers to the actuation educate again I</p>
+      <p begin="00:27:59.810" end="00:28:04.670">will go and say...reference if I go to extensions you will see the</p>
+      <p begin="00:28:04.670" end="00:28:09.350">behaviors as detailed studio and I don't know if you can see that behind but...up</p>
+      <p begin="00:28:09.350" end="00:28:14.350">...that's coming from windows eight-point one location so this is actually windows eight-point one actuation as</p>
+      <p begin="00:28:14.350" end="00:28:19.820">decay that are being shown in the context...universal windows platform and you can go and use them</p>
+      <p begin="00:28:19.820" end="00:28:22.680">...will try adding a reference if the show you a small warning</p>
+      <p begin="00:28:22.680" end="00:28:25.900">icon just to indicate that is not targeting universal</p>
+      <p begin="00:28:25.900" end="00:28:31.670">platform but this targeting windows eight-point one...the different platform you can still goal and</p>
+      <p begin="00:28:31.670" end="00:28:34.530">add this once you've added the difference</p>
+      <p begin="00:28:34.530" end="00:28:39.440">...in blend you can see the behaviors right here in the assets panel</p>
+      <p begin="00:28:39.440" end="00:28:42.970">on if...not concept give the concept of behaviors it's a pretty</p>
+      <p begin="00:28:42.970" end="00:28:46.460">good concept it's allows adding interactivity if you</p>
+      <p begin="00:28:46.460" end="00:28:50.030">...used by designers to add interactivity without actually going</p>
+      <p begin="00:28:50.030" end="00:28:53.880">...writing code so let's assume that if I want to go and vid up my</p>
+      <p begin="00:28:53.880" end="00:28:58.790">bad button in my application I can use behaviors to do that without writing</p>
+      <p begin="00:28:58.790" end="00:29:02.340">codes how you can do that is basically...go and use</p>
+      <p begin="00:29:02.340" end="00:29:08.570">even trigger behavior and drag-and-drop it on the...but...my application.</p>
+      <p begin="00:29:08.570" end="00:29:11.760">Once have dragnet if you're going to the properties it tells me</p>
+      <p begin="00:29:11.760" end="00:29:16.580">that the source for this even trigger behavior is button and even</p>
+      <p begin="00:29:16.580" end="00:29:21.220">...says basically dividing up...click event and, that's what the</p>
+      <p begin="00:29:21.220" end="00:29:26.110">behavior is doing behind the...behind-the-scenes and if I go and use</p>
+      <p begin="00:29:26.110" end="00:29:31.600">the navigate page action I can drag-and-drop and action onto my behavior and I</p>
+      <p begin="00:29:31.600" end="00:29:36.340">say the target page is categories right so the recipe page</p>
+      <p begin="00:29:36.340" end="00:29:40.850">go back to category and that's pretty much it right so I'm...any line of code</p>
+      <p begin="00:29:40.850" end="00:29:53.090">but using behaviors I'm adding interactivity if I go and run this application here.</p>
+      <p begin="00:29:53.090" end="00:29:55.590">...appetizerclick on the back but and,</p>
+      <p begin="00:29:55.590" end="00:29:59.860">dates back to categories page right so that's the behaviors actuation</p>
+      <p begin="00:29:59.860" end="00:30:01.670">is decay and if the windows</p>
+      <p begin="00:30:01.670" end="00:30:09.890">...one version that we are using and windows universal application.</p>
+      <p begin="00:30:09.890" end="00:30:13.230">If you are using a cplus-plus version of innovate point</p>
+      <p begin="00:30:13.230" end="00:30:18.170">...actuation instigate some native actuation...then you have to go and explicitly</p>
+      <p begin="00:30:18.170" end="00:30:22.520">...reference to visual studio twenty thirteen cplus-plus the</p>
+      <p begin="00:30:22.520" end="00:30:23.870">...framework</p>
+      <p begin="00:30:23.870" end="00:30:28.110">for universal windows up and I'll give you why.</p>
+      <p begin="00:30:28.110" end="00:30:32.960">The existing crt which was shipped...part of...twenty thirteen doesn't work for</p>
+      <p begin="00:30:32.960" end="00:30:37.480">...windows platform because of the changes in the manifest format the package</p>
+      <p begin="00:30:37.480" end="00:30:40.080">manifests have significantly change in the use of</p>
+      <p begin="00:30:40.080" end="00:30:44.210">windows platform the existing crt does not actually...you...you</p>
+      <p begin="00:30:44.210" end="00:30:47.980">...windows platform what we have done here is</p>
+      <p begin="00:30:47.980" end="00:30:50.600">...twenty thirteen cplus-plus</p>
+      <p begin="00:30:50.600" end="00:30:55.230">crt package it with the new manifest format and then...</p>
+      <p begin="00:30:55.230" end="00:31:00.220">again and that's what you will need if you want to use an existing windows eight-point one cplus-plus</p>
+      <p begin="00:31:00.220" end="00:31:04.690">exhibition...decay if you don't have as a crt and you're using a native component</p>
+      <p begin="00:31:04.690" end="00:31:09.150">you'll get a runtime exception please make sure if you're using any cplus-plus of windows</p>
+      <p begin="00:31:09.150" end="00:31:16.500">...on one components references updated crt to be able to use it.</p>
+      <p begin="00:31:16.500" end="00:31:16.880">Develop</p>
+      <p begin="00:31:16.880" end="00:31:21.760">...can go and build actuation is decays specifically targeting</p>
+      <p begin="00:31:21.760" end="00:31:24.550">...windows platform and they can build</p>
+      <p begin="00:31:24.550" end="00:31:29.360">is actuation educate and use adaptive code for the platform...so</p>
+      <p begin="00:31:29.360" end="00:31:34.140">lot of people here lot of people have authored actualize decays if you're doing that if</p>
+      <p begin="00:31:34.140" end="00:31:38.710">you're creating a new actuation educate for us of windows platform you can actually go and right</p>
+      <p begin="00:31:38.710" end="00:31:43.790">...code so you...different experience on mobile for your api you can</p>
+      <p begin="00:31:43.790" end="00:31:47.360">have a different experience for desktop based on the capabilities that</p>
+      <p begin="00:31:47.360" end="00:31:49.710">...device family support but you can maintain a single</p>
+      <p begin="00:31:49.710" end="00:31:54.780">actually can use adaptive code to do that also you can go and right adaptive</p>
+      <p begin="00:31:54.780" end="00:31:59.100">chord across different versions of universal windows platform right so if they</p>
+      <p begin="00:31:59.100" end="00:32:03.110">are multiple versions of windows us...ship you can go and right adaptive</p>
+      <p begin="00:32:03.110" end="00:32:05.590">...aggies different versions to using the type</p>
+      <p begin="00:32:05.590" end="00:32:12.700">check property checks and everything and still maintain a single actuation is decay that...across all of them.</p>
+      <p begin="00:32:12.700" end="00:32:16.720">The ex-change and educates for...windows platform a located on</p>
+      <p begin="00:32:16.720" end="00:32:20.650">...decays windows gets...educate folder so if</p>
+      <p begin="00:32:20.650" end="00:32:27.860">you're authoring one please make sure you install it in the right location...going to work.</p>
+      <p begin="00:32:27.860" end="00:32:32.020">I will briefly talk about the as...manifest dot xml because we</p>
+      <p begin="00:32:32.020" end="00:32:36.670">have she's thirteen properties here so if you are...actuation educate this will be useful</p>
+      <p begin="00:32:36.670" end="00:32:41.220">to you to mention that target platform is equal to up</p>
+      <p begin="00:32:41.220" end="00:32:44.710">...be stanford universal application platform and that's what the</p>
+      <p begin="00:32:46.080" end="00:32:49.520">...you to make sure the educate type is</p>
+      <p begin="00:32:49.520" end="00:32:54.070">...external the other value for the educate type...platform which</p>
+      <p begin="00:32:54.070" end="00:32:58.440">is used by the device foundation is the gave or framework which is used by</p>
+      <p begin="00:32:58.440" end="00:33:02.720">framework like crt and stuff like that so in ideal case for third-party actuation</p>
+      <p begin="00:33:02.720" end="00:33:05.800">...the...value which...supportive as...type is equal to</p>
+      <p begin="00:33:05.800" end="00:33:10.030">...if you don't mention that...by default assume that if</p>
+      <p begin="00:33:10.030" end="00:33:14.540">...third-party...as dcmp and as I mentioned before if you're...</p>
+      <p begin="00:33:14.540" end="00:33:19.410">actuation is decay these make sure you specify the target platform inversion and the target</p>
+      <p begin="00:33:19.410" end="00:33:24.740">platform version properties the min version here will indicate the minimum version</p>
+      <p begin="00:33:24.740" end="00:33:29.340">...universe of windows project...develop on needs to be running on to be able to reference</p>
+      <p begin="00:33:29.340" end="00:33:34.190">...sdk right and...target platform version means the educate the</p>
+      <p begin="00:33:34.190" end="00:33:37.570">you are basically compiling against so we will use</p>
+      <p begin="00:33:37.570" end="00:33:42.550">the target platform inversion in visual studio to filter out the in appropriate as decays</p>
+      <p begin="00:33:42.550" end="00:33:47.430">for the...as an example if I have a new is...which</p>
+      <p begin="00:33:47.430" end="00:33:51.550">...requirement version hundred sixty nine which is shown in the example</p>
+      <p begin="00:33:51.550" end="00:33:56.930">and if I'm running a project with a previous version of the os...targeting up and running upgrading a project</p>
+      <p begin="00:33:56.930" end="00:34:00.400">which of targeting a previous version of the educate let's say hundred-fifty</p>
+      <p begin="00:34:00.400" end="00:34:05.710">...actuation educate will not be even visible in the...dialogue because...to go with friedrich for you</p>
+      <p begin="00:34:05.710" end="00:34:11.950">...sure these properties...correctly and...manifested xml?</p>
+      <p begin="00:34:11.950" end="00:34:14.260">This is a small fyi.</p>
+      <p begin="00:34:14.260" end="00:34:16.020">If you're using vsix</p>
+      <p begin="00:34:16.020" end="00:34:20.430">...to go and install your actuation is decay and</p>
+      <p begin="00:34:20.430" end="00:34:25.340">you to make sure that you specify the target platform identify and target platform version of windows get</p>
+      <p begin="00:34:25.340" end="00:34:30.270">...because vsix...actually uses this property to install the educates</p>
+      <p begin="00:34:30.270" end="00:34:34.700">in the right location there's a small fyi if you're using vsix make sure these properties</p>
+      <p begin="00:34:34.700" end="00:34:40.230">...set correctly as...installation will not work.</p>
+      <p begin="00:34:40.230" end="00:34:44.170">Now let's talk a little bit about new get.</p>
+      <p begin="00:34:44.170" end="00:34:48.090">You get has been one of the most popular mechanism for</p>
+      <p begin="00:34:48.090" end="00:34:52.830">developers to share their code dealers and components with other developers right</p>
+      <p begin="00:34:52.830" end="00:34:57.220">is very popular for universe...platform.</p>
+      <p begin="00:34:57.220" end="00:34:59.050">With visual studio two thousand fifteen are</p>
+      <p begin="00:34:59.050" end="00:35:03.920">...you get will allow you to go and add refers to an existing windows eight-point</p>
+      <p begin="00:35:03.920" end="00:35:11.270">one you get package and you will be able to use that so let's do that let's again go back to bs.</p>
+      <p begin="00:35:11.270" end="00:35:14.510">And, in this case I...</p>
+      <p begin="00:35:14.510" end="00:35:17.200">Open up simple demo app if I</p>
+      <p begin="00:35:17.200" end="00:35:22.210">rightly gone references and go to magnet manage you get packages.</p>
+      <p begin="00:35:22.210" end="00:35:28.690">And, I can search for any windows eight-point one you get package less search vocalist...</p>
+      <p begin="00:35:28.690" end="00:35:33.220">This is one of the most popular one that's being used right now I can go and install it it's</p>
+      <p begin="00:35:33.220" end="00:35:36.430">...a targets windows eight-point one.</p>
+      <p begin="00:35:36.430" end="00:35:45.220">I can go and install this new get package in my project.</p>
+      <p begin="00:35:45.220" end="00:35:50.590">And, once it's added I can go and build it so if you are if you</p>
+      <p begin="00:35:50.590" end="00:35:54.690">all-in-one of the new get packages just targeting windows eight-point one visit</p>
+      <p begin="00:35:54.690" end="00:35:58.230">issue doesn't fifteen artsy...go and try to use that in the</p>
+      <p begin="00:35:58.230" end="00:36:02.710">context offering universe...windows app and make sure it working appropriately...this totally</p>
+      <p begin="00:36:02.710" end="00:36:07.360">a supported scenario and this get the...works you can now go and use the control for</p>
+      <p begin="00:36:07.360" end="00:36:13.550">...a part of cholesterol and all expected to work.</p>
+      <p begin="00:36:13.550" end="00:36:16.400">At...we will also support</p>
+      <p begin="00:36:16.400" end="00:36:20.400">referencing windows for eight-point one you get packages</p>
+      <p begin="00:36:20.400" end="00:36:25.840">...your universal windows up the still...still working on it it's not fully they are and health</p>
+      <p begin="00:36:25.840" end="00:36:31.200">...not supported as part of your seo to the fifteen...fee but you can</p>
+      <p begin="00:36:31.200" end="00:36:35.800">at our dmv will support referencing of windows phone ape on one you get package as</p>
+      <p begin="00:36:35.800" end="00:36:41.430">...in your us windows platform also develop...will be able to author</p>
+      <p begin="00:36:41.430" end="00:36:47.180">you get packages specifically for the...windows platform at...</p>
+      <p begin="00:36:47.180" end="00:36:50.650">If you are interested in this...trying some early preview</p>
+      <p begin="00:36:50.650" end="00:36:55.760">...for this and if you are want to go and try some windows...when you get packages here's</p>
+      <p begin="00:36:55.760" end="00:37:01.500">my email address send request to me and I will give you the early preview</p>
+      <p begin="00:37:01.500" end="00:37:09.580">...you get that you can go and try and see if the scenario works for you.</p>
+      <p begin="00:37:09.580" end="00:37:14.420">Now let's talk a little bit about...</p>
+      <p begin="00:37:14.420" end="00:37:16.830">As a develop all...as an enterprise.</p>
+      <p begin="00:37:17.930" end="00:37:20.410">What are the biggest thing?</p>
+      <p begin="00:37:20.410" end="00:37:24.200">That is important for the development and deprive is to understand how</p>
+      <p begin="00:37:24.200" end="00:37:28.150">the application of actually being used right which</p>
+      <p begin="00:37:28.150" end="00:37:32.780">features in the application are being used by the...by the</p>
+      <p begin="00:37:32.780" end="00:37:37.210">...site which...the specific features we are developers are spending maximum</p>
+      <p begin="00:37:37.210" end="00:37:43.310">amount of time in the application and these kind of telemetry data hell's</p>
+      <p begin="00:37:43.310" end="00:37:48.380">the enterprise and develop...to actually go and make the right investments...versus the right</p>
+      <p begin="00:37:48.380" end="00:37:53.140">...application they should...focus on to be able to actually get better</p>
+      <p begin="00:37:53.140" end="00:37:57.580">rating and...the ratings and they are different elementary engine that exist</p>
+      <p begin="00:37:57.580" end="00:38:01.130">...and for...up...be using app</p>
+      <p begin="00:38:01.130" end="00:38:06.510">...sites so every university windows app...by default will have an app insight</p>
+      <p begin="00:38:06.510" end="00:38:11.120">experience integrated as part of it and without even writing</p>
+      <p begin="00:38:11.120" end="00:38:13.880">...single-line of additional code.</p>
+      <p begin="00:38:13.880" end="00:38:19.280">That the app insights will tell you the number of users for your application number of</p>
+      <p begin="00:38:19.280" end="00:38:23.640">...for application this specific views of a number the</p>
+      <p begin="00:38:23.640" end="00:38:29.190">...for the different views which are being used in your application if you have crashes in your app</p>
+      <p begin="00:38:29.190" end="00:38:34.030">if we give you this...information about those crashes and all the real-time usage</p>
+      <p begin="00:38:34.030" end="00:38:38.750">...application which country is your application is being used on what kind</p>
+      <p begin="00:38:38.750" end="00:38:43.720">of devices app is running on what are the resolution for these devices all the information you</p>
+      <p begin="00:38:43.720" end="00:38:47.830">will get it for free without even writing a single line of code using app</p>
+      <p begin="00:38:47.830" end="00:38:54.810">insights so that's actually a...a quick demo of that.</p>
+      <p begin="00:38:54.810" end="00:38:57.000">So, for that I'm going to...use</p>
+      <p begin="00:38:57.000" end="00:39:03.000">michael book application again his map the two different ways you could integrate</p>
+      <p begin="00:39:03.000" end="00:39:07.900">up and sites the one-way is when you're creating a project you have a check box</p>
+      <p begin="00:39:07.900" end="00:39:13.120">here which tells you to link your existing as your account</p>
+      <p begin="00:39:13.120" end="00:39:18.030">critical requirement if you don't do that you will still be getting this data but,</p>
+      <p begin="00:39:18.030" end="00:39:23.030">the data will be coming from the store portal you will have to go to store and see</p>
+      <p begin="00:39:23.030" end="00:39:28.380">what kind of data update...how the user data and crashes and stuff like that but if you like a</p>
+      <p begin="00:39:28.380" end="00:39:33.350">much more detailed view about the app and size data you should probably have a as</p>
+      <p begin="00:39:33.350" end="00:39:37.240">...account and use that to automatically link your project with</p>
+      <p begin="00:39:37.240" end="00:39:43.220">...as your account and use up...if you already have an application like I have cycle</p>
+      <p begin="00:39:43.220" end="00:39:48.060">book and you can write click on the project...ad telemetry app</p>
+      <p begin="00:39:48.060" end="00:39:51.740">insights to the project when I click on this?</p>
+      <p begin="00:39:51.740" end="00:40:03.090">Is...basically ask me to...so I'm just going to go and provide measure credentials?</p>
+      <p begin="00:40:03.090" end="00:40:07.730">And, once it added it showing with the list of as your applications I have and I</p>
+      <p begin="00:40:07.730" end="00:40:11.040">will select the...which is the application and go</p>
+      <p begin="00:40:11.040" end="00:40:14.630">and add this up so at this point of your</p>
+      <p begin="00:40:14.630" end="00:40:17.220">...adding a bunch of new get packages for app</p>
+      <p begin="00:40:17.220" end="00:40:25.460">...sites are into the application itself.</p>
+      <p begin="00:40:25.460" end="00:40:30.430">that's pretty much it just to show you what exactly the code we are using for app</p>
+      <p begin="00:40:30.430" end="00:40:34.940">...you can go and open up adverts...cs and you will see a telemetry</p>
+      <p begin="00:40:34.940" end="00:40:38.320">...which is ms-dot app...telemetry</p>
+      <p begin="00:40:38.320" end="00:40:44.540">...and that is just initialized in the application object maps pretty much it now</p>
+      <p begin="00:40:44.540" end="00:40:55.980">let's go and run this application on local machine.</p>
+      <p begin="00:40:55.980" end="00:41:00.280">Let's go and can...need all these?</p>
+      <p begin="00:41:00.280" end="00:41:05.230">Big points.</p>
+      <p begin="00:41:05.230" end="00:41:11.990">...application invokes now if I go back here and, I bring up the output window.</p>
+      <p begin="00:41:11.990" end="00:41:16.540">...the output window you'll see specific app insights event which are</p>
+      <p begin="00:41:16.540" end="00:41:21.120">being sent from my project to the app insights of using</p>
+      <p begin="00:41:21.120" end="00:41:26.750">happens isometrics...also here in visual studio it actually showing</p>
+      <p begin="00:41:26.750" end="00:41:29.670">me that they were three different app insights event which was</p>
+      <p begin="00:41:29.670" end="00:41:34.550">sent for this project in this execution I can go and click on this.</p>
+      <p begin="00:41:34.550" end="00:41:39.480">And, it'll automatically open up the as you...for me.</p>
+      <p begin="00:41:39.480" end="00:41:42.050">So, each a most in should...you open</p>
+      <p begin="00:41:42.050" end="00:41:49.590">up the application if that doesn't happen you can go and browsing open up your application.</p>
+      <p begin="00:41:49.590" end="00:41:54.520">this is a...application v associated with...studio using app and sized</p>
+      <p begin="00:41:54.520" end="00:41:59.450">...conservation and now here...just telling me that they have...user</p>
+      <p begin="00:41:59.450" end="00:42:04.260">from application me and my team who are working on this app there have been fifty-one</p>
+      <p begin="00:42:04.260" end="00:42:09.340">...for this application...a hundred different page views if I</p>
+      <p begin="00:42:09.340" end="00:42:13.170">...specific one it will go and drill down into the data when I click on</p>
+      <p begin="00:42:13.170" end="00:42:20.140">the page views it tells me exactly all the details that they've nineteen unique</p>
+      <p begin="00:42:20.140" end="00:42:25.080">...page and what exactly number...views and everything for each page is directly tells you get</p>
+      <p begin="00:42:25.080" end="00:42:29.680">to that information if you if you run into any crashes you will see the crashes</p>
+      <p begin="00:42:29.680" end="00:42:34.160">...for example, if choose me that they've...argument null exception in</p>
+      <p begin="00:42:34.160" end="00:42:38.870">my code and you can go and see which kind of forces that was running in what kind of devices that</p>
+      <p begin="00:42:38.870" end="00:42:45.480">...is where this crash was happening and get that data directly here using app insights?</p>
+      <p begin="00:42:45.480" end="00:42:46.880">If you go down</p>
+      <p begin="00:42:46.880" end="00:42:51.590">...you'll see the devices...app is running on sort...to forty-four</p>
+      <p begin="00:42:51.590" end="00:42:57.290">and sixty-two is my laptop which I'm using right now and it tells me that I'm running windows ten</p>
+      <p begin="00:42:57.290" end="00:43:02.150">...build and these are the different resolution that I've used for my application</p>
+      <p begin="00:43:02.150" end="00:43:07.010">and also if you goal the below it tells you even</p>
+      <p begin="00:43:07.010" end="00:43:11.760">the diagnostic events so if you click on this delta every event that app</p>
+      <p begin="00:43:11.760" end="00:43:15.600">insight has collected fire application and it'll take a little bit</p>
+      <p begin="00:43:15.600" end="00:43:20.410">...is all the page views and everything it basically collects and kind of shows you how</p>
+      <p begin="00:43:20.410" end="00:43:25.320">exactly this is exactly what we did right now is for twenty-nine to forty-three pm</p>
+      <p begin="00:43:25.320" end="00:43:29.810">just click on the recipe as data is already populated in app and sites</p>
+      <p begin="00:43:29.810" end="00:43:33.770">...so all this information and elementary data...you can get</p>
+      <p begin="00:43:33.770" end="00:43:36.280">...windows app without even writing a</p>
+      <p begin="00:43:36.280" end="00:43:53.580">single line of code using apple sites and using the default project complex if you have a question.</p>
+      <p begin="00:43:53.580" end="00:43:58.570">It uses the data on which...to.</p>
+      <p begin="00:43:58.570" end="00:44:00.690">Yes,or</p>
+      <p begin="00:44:00.690" end="00:44:05.520">...single collections of the data I have to...with that I</p>
+      <p begin="00:44:05.520" end="00:44:14.100">don't know whether you can opt out of that are how that works but I can follow-up that as a follow-up question.</p>
+      <p begin="00:44:14.100" end="00:44:18.110">If it does happen what about if you want to go and you add</p>
+      <p begin="00:44:18.110" end="00:44:22.730">some custom telemetry right if you want to go in say unattractive on event I want to</p>
+      <p begin="00:44:22.730" end="00:44:28.180">track my own telemetry points you can easily do that as well so, for example,</p>
+      <p begin="00:44:28.180" end="00:44:32.170">in this application let's go and...some telemetry even.</p>
+      <p begin="00:44:32.170" end="00:44:38.160">Do that I will go and say ...book?</p>
+      <p begin="00:44:38.160" end="00:44:40.890">Dot up and I've already create digital</p>
+      <p begin="00:44:40.890" end="00:44:47.410">metric lined so I can use that as...dot...event.</p>
+      <p begin="00:44:47.410" end="00:44:49.680">And, the document api...I will possum</p>
+      <p begin="00:44:49.680" end="00:44:57.560">...string of which event I want to go interact so let's say I'm going to track...navigated to.</p>
+      <p begin="00:44:57.560" end="00:45:11.800">then it takes a additionally...possum additional data so I'll path a new dictionary.</p>
+      <p begin="00:45:11.800" end="00:45:15.490">here I would pass the additional data...let's see categories.</p>
+      <p begin="00:45:16.790" end="00:45:21.050">Because we are tracking which specific categories wasp clicked by the u up</p>
+      <p begin="00:45:22.370" end="00:45:26.810">the most popular category and I will positive category that the developer has</p>
+      <p begin="00:45:26.810" end="00:45:33.220">...using parameter dot to...</p>
+      <p begin="00:45:33.220" end="00:45:37.910">Close this I need to...the...and affect.</p>
+      <p begin="00:45:37.910" end="00:45:44.470">Well, I'm probably missing.</p>
+      <p begin="00:45:44.470" end="00:45:54.360">So, that's pretty much it...go and run this application again.</p>
+      <p begin="00:45:54.360" end="00:45:58.590">Now let's go and click on a category let's say let's.</p>
+      <p begin="00:45:58.590" end="00:46:03.970">Convex...individual portal.</p>
+      <p begin="00:46:03.970" end="00:46:13.910">And, go back to the application.</p>
+      <p begin="00:46:13.910" end="00:46:17.560">And, here just telling me all the custom events that I'm tracking</p>
+      <p begin="00:46:17.560" end="00:46:22.400">...using on navigate to for cracking the events.</p>
+      <p begin="00:46:22.400" end="00:46:25.900">And, if I go to the diagnostic search as well it should</p>
+      <p begin="00:46:25.900" end="00:46:32.320">...has populated issued...with...even that rajesh fired and this is</p>
+      <p begin="00:46:32.320" end="00:46:37.150">...to forty-eight pm it tells me the customer event on...to was fired</p>
+      <p begin="00:46:37.150" end="00:46:41.820">...categories was bread and the application development so it's like just</p>
+      <p begin="00:46:41.820" end="00:46:47.330">was a single-line afford I was able to hook up my ...custom event using the app</p>
+      <p begin="00:46:47.330" end="00:46:50.800">...and you can see its get issues in within a thirteen-fifteen</p>
+      <p begin="00:46:50.800" end="00:46:55.070">seconds it gets populated in the...even less than like fifteen twenty seconds get</p>
+      <p begin="00:46:55.070" end="00:47:00.360">...portal so that's one thing I would strongly recommend if you care about adding telemetry</p>
+      <p begin="00:47:00.360" end="00:47:10.090">...app...size and try using this for...us lap.</p>
+      <p begin="00:47:10.090" end="00:47:16.380">So, we...already look at a custom events one final thing I want to go and talk about</p>
+      <p begin="00:47:16.380" end="00:47:21.140">is the how you should think about if you already building and existing windows eight-point one of windows phone</p>
+      <p begin="00:47:21.140" end="00:47:25.540">eight-point one application how you should think about building a new windows universal</p>
+      <p begin="00:47:25.540" end="00:47:30.720">...right and there's a couple of different proposals which I think...develop I can think about</p>
+      <p begin="00:47:31.910" end="00:47:37.570">...first proposal if you already have an existing application I am pretty sure that you want</p>
+      <p begin="00:47:37.570" end="00:47:42.150">to go and maintain those existing applications to target the existing device windows</p>
+      <p begin="00:47:42.150" end="00:47:45.150">...and window...device.</p>
+      <p begin="00:47:45.150" end="00:47:49.670">...you can do is you can go and add a new universal project right and</p>
+      <p begin="00:47:49.670" end="00:47:55.570">this universal project will be for all windows ten divisive that you want to target you can use</p>
+      <p begin="00:47:55.570" end="00:48:00.050">adaptive poured to go and check for device specific capabilities and right</p>
+      <p begin="00:48:00.050" end="00:48:01.840">codec is that.</p>
+      <p begin="00:48:01.840" end="00:48:05.290">You can use adaptive ui that you can go and talk about if you</p>
+      <p begin="00:48:05.290" end="00:48:09.060">...learning one-in-ten chechen but you can use adaptive ui to have the</p>
+      <p begin="00:48:09.060" end="00:48:12.770">form factors and to make sure you have the right design and running on the right form</p>
+      <p begin="00:48:12.770" end="00:48:16.430">facto and you can use shared projects when...components</p>
+      <p begin="00:48:16.430" end="00:48:21.290">portable class libraries and dls...the code between all different versions</p>
+      <p begin="00:48:21.290" end="00:48:26.590">...can use all them to share corbin...that one-one windows phone equal one...universal project</p>
+      <p begin="00:48:26.590" end="00:48:32.300">...this solution you are basically maintaining three different packages...of...that</p>
+      <p begin="00:48:32.300" end="00:48:39.010">...windows forty-eight point one and one for the universal package that target all windows ten device.</p>
+      <p begin="00:48:39.010" end="00:48:43.910">Now if you going care about specifically about creating a package which is</p>
+      <p begin="00:48:43.910" end="00:48:47.800">a specific to of windows ten device family an example</p>
+      <p begin="00:48:47.800" end="00:48:52.950">because some constraints you want a specific package to go form windows mobile...different package</p>
+      <p begin="00:48:52.950" end="00:48:58.050">to go on rest of the devices you can still do that to do it you will go</p>
+      <p begin="00:48:58.050" end="00:49:02.420">and, again, create a new universal project in your value-added</p>
+      <p begin="00:49:02.420" end="00:49:07.040">...is a project your solution you would open up the manifest file and</p>
+      <p begin="00:49:07.040" end="00:49:11.310">chains the target device family from windows dot universal to</p>
+      <p begin="00:49:11.310" end="00:49:16.050">windows dot mobile site and then specify the min version and a</p>
+      <p begin="00:49:16.050" end="00:49:21.010">...tested value for windows dot mobile device family</p>
+      <p begin="00:49:21.010" end="00:49:25.860">and these values will be published by windows on msdn so you will goal</p>
+      <p begin="00:49:25.860" end="00:49:29.140">do msdn and you will see what other current versions of...mobile that are</p>
+      <p begin="00:49:29.140" end="00:49:31.640">...the market use that values and</p>
+      <p begin="00:49:31.640" end="00:49:35.200">...manifest file and then your package which is going to be created</p>
+      <p begin="00:49:35.200" end="00:49:39.900">...only be applicable for windows mobile device family and will not be applicable for</p>
+      <p begin="00:49:39.900" end="00:49:46.190">...like desktop riled unixbox if...going target wrestler devices you can create yet</p>
+      <p begin="00:49:46.190" end="00:49:51.380">another windows universal project which is targeting for rest of the divisive and then you shared projects</p>
+      <p begin="00:49:51.380" end="00:49:55.510">...components and dls to share the code between them so in this case I'm</p>
+      <p begin="00:49:55.510" end="00:49:59.410">building to packages for targeting windows...one of the universal</p>
+      <p begin="00:49:59.410" end="00:50:03.920">...that goes to xbox coyote and every other device and there's one package which</p>
+      <p begin="00:50:03.920" end="00:50:07.040">is specifically being built for windows dot mobile</p>
+      <p begin="00:50:07.040" end="00:50:12.610">devices right so when these packages go to store if a consumers downloading</p>
+      <p begin="00:50:12.610" end="00:50:17.420">our app and he's running mobile the store will automatically push the mobile version of</p>
+      <p begin="00:50:17.420" end="00:50:21.750">your application package if is running on desktop the store will push</p>
+      <p begin="00:50:21.750" end="00:50:26.160">the desktop version other windows are universal version of the application packets to the device the</p>
+      <p begin="00:50:26.160" end="00:50:29.970">...is already capable of doing that that's the way you will be able to</p>
+      <p begin="00:50:29.970" end="00:50:35.420">author package specific to a device family?</p>
+      <p begin="00:50:35.420" end="00:50:35.750">These</p>
+      <p begin="00:50:35.750" end="00:50:40.960">...resources I already talked about windows samples in on the get tab also</p>
+      <p begin="00:50:40.960" end="00:50:45.930">that for developers assistant you can go...downloaded directly from</p>
+      <p begin="00:50:45.930" end="00:50:50.650">...have a dev assistant and go and try it to get some sample code</p>
+      <p begin="00:50:50.650" end="00:50:54.430">...itself and uniting code.</p>
+      <p begin="00:50:54.430" end="00:50:58.020">Finally the registrations one of the key</p>
+      <p begin="00:50:58.020" end="00:51:02.100">...that we're going to we are doing for universe of windows platform</p>
+      <p begin="00:51:02.100" end="00:51:06.430">is using dot net native right and the that making you dot net</p>
+      <p begin="00:51:06.430" end="00:51:11.060">...a default experience for windows than applications they</p>
+      <p begin="00:51:11.060" end="00:51:15.600">are lot-of implications on the developer workflow itself to have a deep dive of how</p>
+      <p begin="00:51:15.600" end="00:51:19.620">exactly dot tentative works only my manager is going to basically</p>
+      <p begin="00:51:19.620" end="00:51:24.580">...tomorrow on ad strongly recommend you guys to go and at</p>
+      <p begin="00:51:24.580" end="00:51:29.860">induction because it's going to...the...exactly should think about dot net native</p>
+      <p begin="00:51:29.860" end="00:51:32.740">...building...up you also have another</p>
+      <p begin="00:51:32.740" end="00:51:37.170">session on sample tools are he's going to talk about more about what I've actually</p>
+      <p begin="00:51:37.170" end="00:51:42.360">got a new tools and new profiling tools that we have enabled...to support</p>
+      <p begin="00:51:42.360" end="00:51:48.140">...platforms a couple of other interesting issues the adaptive you I already talked about which is being done by</p>
+      <p begin="00:51:48.140" end="00:51:53.110">tim and finally the seven forty-one...and the sam jar one on friday</p>
+      <p begin="00:51:53.110" end="00:51:58.200">we'll go and explain what exactly the migration process for windows eight-point one to</p>
+      <p begin="00:51:58.200" end="00:52:00.870">...project we don't have an automatic</p>
+      <p begin="00:52:00.870" end="00:52:04.490">upgrade experience in visual studio for moving our existing windows</p>
+      <p begin="00:52:04.490" end="00:52:09.410">...one of into forty-point one application to universal project so he's going to go and deep</p>
+      <p begin="00:52:09.410" end="00:52:11.630">dive of how exactly what are the api changes one of</p>
+      <p begin="00:52:11.630" end="00:52:16.620">the manifest changes how you structure project and, going to detail of that so</p>
+      <p begin="00:52:16.620" end="00:52:22.340">...definitely commend you to go in it and attrition as well.</p>
+      <p begin="00:52:22.340" end="00:52:26.160">If you have any questions and happy to...right now have</p>
+      <p begin="00:52:26.160" end="00:52:30.960">...handle and email write-up data isd if you have mikes can we get the</p>
+      <p begin="00:52:30.960" end="00:52:32.630">...for the for the questions?</p>
+      <p begin="00:52:33.660" end="00:52:36.830">And, if you half-time please evaluate decision your feedback</p>
+      <p begin="00:52:36.830" end="00:52:41.020">is support important and help us improve thanks for taking time to attend</p>
+      <p begin="00:52:41.020" end="00:52:54.700">...evaluated and now I can answer any questions that people have.</p>
+      <p begin="00:52:54.700" end="00:52:59.510">If you have...for.</p>
+      <p begin="00:53:01.590" end="00:53:12.620">Because...</p>
+      <p begin="00:53:12.620" end="00:53:16.950">Pardons...I would expect them to be continually support average...not heard that</p>
+      <p begin="00:53:16.950" end="00:53:21.520">...this continue prisms butthis is outside my team so I...have to follow of</p>
+      <p begin="00:53:21.520" end="00:53:31.650">...at least not heard the applying to unsupported yep.</p>
+      <p begin="00:53:31.650" end="00:53:34.120">So, the data gets pop so,</p>
+      <p begin="00:53:34.120" end="00:53:38.900">the question is what happens if the app inside...the client is not really connected I think so</p>
+      <p begin="00:53:38.900" end="00:53:43.090">what their mechanism is that the collected and deleted push it and up so I</p>
+      <p begin="00:53:43.090" end="00:53:53.410">that I would expect that to be the...that's the key that...collect the data later on...</p>
+      <p begin="00:53:53.410" end="00:54:00.200">And, references...the source code okay.</p>
+      <p begin="00:54:00.200" end="00:54:07.350">...let's actually going to look at it.</p>
+      <p begin="00:54:07.350" end="00:54:11.480">So, right...using dot net frameworks open five-point-one and the</p>
+      <p begin="00:54:11.480" end="00:54:16.970">...framework itself is kind of evolving right now with all open-source and avi...also thinking about how</p>
+      <p begin="00:54:16.970" end="00:54:21.860">...to actually big dot net framework so that it actually can...a muscle faced a faster</p>
+      <p begin="00:54:21.860" end="00:54:26.980">cadence so there's still a little bit of a evolution going for dot net framework but right now</p>
+      <p begin="00:54:26.980" end="00:54:30.830">it's using four-point-five...one it's possible that at rem we</p>
+      <p begin="00:54:30.830" end="00:54:35.000">baking that into like one...thing that you're looking into is it possible to break the</p>
+      <p begin="00:54:35.000" end="00:54:38.410">...framework into a set of new get packages...can go and</p>
+      <p begin="00:54:38.410" end="00:54:43.140">reference so there's going to be core set but if you want to go and user specific new we are</p>
+      <p begin="00:54:43.140" end="00:54:56.100">...api might have...sununu get packages that actually goes and that's what it.</p>
+      <p begin="00:54:56.100" end="00:54:57.240">This is basically thing</p>
+      <p begin="00:54:57.240" end="00:55:02.120">...application that's what it's a it's basically targeting a dot net framework this is a</p>
+      <p begin="00:55:02.120" end="00:55:06.670">behaviors educate which is a third-party actualize decay that...in my demo for using</p>
+      <p begin="00:55:06.670" end="00:55:11.390">behavior right these are the mobile actually...decay is the platform</p>
+      <p begin="00:55:11.390" end="00:55:16.280">actualize...because I want to use the hardware back but and that's what is being used for</p>
+      <p begin="00:55:16.280" end="00:55:20.020">...and then these are all the new get packages which are being used for app</p>
+      <p begin="00:55:20.020" end="00:55:25.420">and sayce to actually collect the data and...your photos...you these all app insights are the</p>
+      <p begin="00:55:25.420" end="00:55:31.370">you get packages the app insights...used users for collecting...metric.</p>
+      <p begin="00:55:31.370" end="00:55:36.880">And, this is a another you get package that I'm using for parsing my data sample data</p>
+      <p begin="00:55:36.880" end="00:55:40.860">...in the application that the new does jason.</p>
+      <p begin="00:55:40.860" end="00:55:45.450">It's basically...it's a universal application that...that's...yeah,</p>
+      <p begin="00:55:45.450" end="00:56:01.220">this is because it's a universal application that the...showing it think that's on...</p>
+      <p begin="00:56:01.220" end="00:56:01.570">Okay,</p>
+      <p begin="00:56:01.570" end="00:56:06.550">I can give the...answer and when he was going to go...dive into it...give you a short on</p>
+      <p begin="00:56:06.550" end="00:56:12.610">for here if you look into this we actually don't have any cpu any longer</p>
+      <p begin="00:56:12.610" end="00:56:17.220">supported in the managed applications so the only you have to actually go</p>
+      <p begin="00:56:17.220" end="00:56:23.310">and indicate...the manage application there's no any cpu they are going to be exited</p>
+      <p begin="00:56:23.310" end="00:56:28.300">...on which is true for cplus-plus when you ability your application and when you building an application</p>
+      <p begin="00:56:28.300" end="00:56:33.870">packets you have to specifically target...if you're building a library</p>
+      <p begin="00:56:33.870" end="00:56:38.100">because still...any cpu library that...just go and when you get</p>
+      <p begin="00:56:38.100" end="00:56:43.150">a diffusion application package vision the configuration of that application package it will go and build</p>
+      <p begin="00:56:43.150" end="00:56:52.940">...that so yes?</p>
+      <p begin="00:56:52.940" end="00:56:58.230">So, the question is how it works is basically when you go so,</p>
+      <p begin="00:56:58.230" end="00:57:02.820">when you build your...you go and upload your package right...when you upload the package it's</p>
+      <p begin="00:57:02.820" end="00:57:05.510">...beggars dot net native?</p>
+      <p begin="00:57:05.510" end="00:57:07.190">That will get...into cplus-plus</p>
+      <p begin="00:57:07.190" end="00:57:11.470">...issue which is dot net data and you go and upload your package.</p>
+      <p begin="00:57:11.470" end="00:57:16.470">The package we contain all the three configurations when the other part of vegetable process viewed build all the three packages</p>
+      <p begin="00:57:16.470" end="00:57:19.840">for you and you will upload all three to the store and</p>
+      <p begin="00:57:19.840" end="00:57:24.420">...the devices that are running regarding this tool will push the right configuration</p>
+      <p begin="00:57:24.420" end="00:57:27.320">...the device.</p>
+      <p begin="00:57:27.320" end="00:57:30.070">...to you again this is something that</p>
+      <p begin="00:57:30.070" end="00:57:37.090">...tomorrow as part of the content data...</p>
+      <p begin="00:57:37.090" end="00:57:40.770">Samoa...samoa.</p>
+      <p begin="00:57:40.770" end="00:57:44.210">Costs the.</p>
+      <p begin="00:57:44.210" end="00:57:48.930">Universal would be interesting jeopardize a time in a configuration</p>
+      <p begin="00:57:48.930" end="00:57:59.890">...not in...with its own...and the custom.</p>
+      <p begin="00:57:59.890" end="00:58:04.670">...possibility...box I would like to have some of the</p>
+      <p begin="00:58:06.340" end="00:58:09.130">...of going wpf.</p>
+      <p begin="00:58:09.130" end="00:58:16.480">So, it's the death something...so ...</p>
+      <p begin="00:58:16.480" end="00:58:18.140">Note you have you can do</p>
+      <p begin="00:58:18.140" end="00:58:23.610">side loading today as well so for enterprise that I've so if you have to probably</p>
+      <p begin="00:58:23.610" end="00:58:27.200">...better question for...clinic and app model...backside</p>
+      <p begin="00:58:27.200" end="00:58:31.720">loading works today on windows it on one as well and that is going to be supported for you</p>
+      <p begin="00:58:31.720" end="00:58:36.820">...windows platform as well so there's all absolutely is...that you can go inside load and application</p>
+      <p begin="00:58:36.820" end="00:58:41.380">you don't have to use windows store...application of how exactly that will</p>
+      <p begin="00:58:41.380" end="00:58:46.450">...works...something that you shun follow-up with andrew clinic he's how layer and I'm pretty sure</p>
+      <p begin="00:58:46.450" end="00:58:55.160">...talk actually...was the part of it but side loading is different is a...platform?</p>
+      <p begin="00:58:55.160" end="00:59:01.110">Yeah, but, restricts, yeah,...yeah.</p>
+      <p begin="00:59:01.110" end="00:59:05.330">Now...going to be supported and...defer check with underpinning I'm pretty show</p>
+      <p begin="00:59:05.330" end="00:59:16.450">...you often I should be differently work I don't see any...not fights...thank you.</p>
+      <p begin="00:59:17.460" end="00:59:19.700">So, right...it's targeting...</p>
+      <p begin="00:59:19.700" end="00:59:26.270">five-point-one so that's the aps at the stadium but again.</p>
+      <p begin="00:59:26.270" end="00:59:28.760">I can show you something cool which</p>
+      <p begin="00:59:28.760" end="00:59:32.330">if I can do it quickly.</p>
+      <p begin="00:59:32.330" end="00:59:34.080">One thing that we are looking at is that the</p>
+      <p begin="00:59:34.080" end="00:59:38.020">...mentioning is we are looking if when you go so,</p>
+      <p begin="00:59:38.020" end="00:59:42.400">let me actually...create a new project...regardless used as well.</p>
+      <p begin="00:59:42.400" end="00:59:47.470">...one of the things that we are looking at is how the evolution of</p>
+      <p begin="00:59:47.470" end="00:59:52.120">document will happen right so if go darkness...story for dot net as its</p>
+      <p begin="00:59:52.120" end="00:59:55.760">...the part of the os...net runtime...shipment os</p>
+      <p begin="00:59:55.760" end="01:00:00.580">individuals and when you go and device via basically tie up to windows schedule but we</p>
+      <p begin="01:00:00.580" end="01:00:04.890">are looking the way that how we can go in a reader dot net api front-ends keep shipping you</p>
+      <p begin="01:00:04.890" end="01:00:09.650">api without actually being...windows itself right so one of the</p>
+      <p begin="01:00:09.650" end="01:00:14.350">we're looking at is using the new get packages so here if you see when you</p>
+      <p begin="01:00:14.350" end="01:00:19.210">creator demo app and you go to the packages are you see some packages which are</p>
+      <p begin="01:00:19.210" end="01:00:24.060">installed by default one of the packages it-system numeric vector four-point-two this</p>
+      <p begin="01:00:24.060" end="01:00:27.560">is actually dot net api right and you create a project</p>
+      <p begin="01:00:27.560" end="01:00:32.470">...go and...new get package because the expected to be popular enough if we added</p>
+      <p begin="01:00:32.470" end="01:00:37.450">lot-of developers will be using it but think about it if the are more new dot net api</p>
+      <p begin="01:00:37.450" end="01:00:42.870">is you will have and abilities...on the project say manage new...package and go and...</p>
+      <p begin="01:00:42.870" end="01:00:47.750">find that id...you want to goal use addresses to it and start using it because it's new</p>
+      <p begin="01:00:47.750" end="01:00:51.310">good...part of your application itself it's gets</p>
+      <p begin="01:00:51.310" end="01:00:55.640">...part of application it says that if dot net...devices some of</p>
+      <p begin="01:00:55.640" end="01:01:00.350">...you will not be broken right and if you want to use a new appear as you go and...</p>
+      <p begin="01:01:00.350" end="01:01:05.220">the new version of dot net you get package and bailey's that so this is the</p>
+      <p begin="01:01:05.220" end="01:01:09.900">plan that we're still working on it it's not like super concrete that we can go and say yes this is the</p>
+      <p begin="01:01:09.900" end="01:01:14.900">final plan but we have taken the steps to go into that direction and one of the step is basically shipping</p>
+      <p begin="01:01:14.900" end="01:01:19.680">system reflective avenue get package...automatically difference in the part of applicant?</p>
+
+    </div>
+  </body>
+</tt>

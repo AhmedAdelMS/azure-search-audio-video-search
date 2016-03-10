@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.852</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.230" end="00:00:04.440">All right landscapes nor did.</p>
+      <p begin="00:00:04.440" end="00:00:08.490">Hello, I'm the one first of all thank you so much for staying and</p>
+      <p begin="00:00:08.490" end="00:00:12.810">whom the last session of the...conference I suggest we should give a run</p>
+      <p begin="00:00:12.810" end="00:00:19.950">applause to ourselves to sameness lane okay.</p>
+      <p begin="00:00:19.950" end="00:00:23.180">Sell my name is mainstay and how working action media</p>
+      <p begin="00:00:23.180" end="00:00:26.840">...as a program manager and this session as about</p>
+      <p begin="00:00:26.840" end="00:00:31.410">...media services developer data...and we're going to talk allows about</p>
+      <p begin="00:00:31.410" end="00:00:35.790">how to build of media services solution?</p>
+      <p begin="00:00:35.790" end="00:00:40.810">Of course the evaluation remember tools...if you</p>
+      <p begin="00:00:40.810" end="00:00:44.550">...ascension dual-use the advancements if you really</p>
+      <p begin="00:00:44.550" end="00:00:48.400">online ascension come and...to me after the session.</p>
+      <p begin="00:00:48.400" end="00:00:52.270">And, this is today's agenda first of all talk about how</p>
+      <p begin="00:00:52.270" end="00:00:56.980">what is asher media services and then we'll go into detail</p>
+      <p begin="00:00:56.980" end="00:01:01.580">about video-on-demand workflow data we'll talk about the color</p>
+      <p begin="00:01:01.580" end="00:01:06.200">and the title in blue are sounding pretty new some of the</p>
+      <p begin="00:01:06.200" end="00:01:11.490">...encoding feature we added dynamic packaging media intelligence</p>
+      <p begin="00:01:11.490" end="00:01:16.140">and then we'll talk about asher media player how you could build a player from</p>
+      <p begin="00:01:16.140" end="00:01:19.200">...using video scale.</p>
+      <p begin="00:01:19.200" end="00:01:22.300">And, content protection...one approach protection</p>
+      <p begin="00:01:23.740" end="00:01:28.130">...can do it with abs...and then we'll talk about</p>
+      <p begin="00:01:28.130" end="00:01:33.310">lice encoding and screaming workflow how does it work and I'll show you</p>
+      <p begin="00:01:33.310" end="00:01:37.250">guys tamil how you can get started from scratch to</p>
+      <p begin="00:01:37.250" end="00:01:44.480">...screen...this session and generator...audience.</p>
+      <p begin="00:01:44.480" end="00:01:47.910">Before going into technical detail I</p>
+      <p begin="00:01:47.910" end="00:01:50.900">...to spend one-minute of time to talk about</p>
+      <p begin="00:01:50.900" end="00:01:54.690">the digitalmediating daffy we are in now</p>
+      <p begin="00:01:54.690" end="00:01:58.650">...now the landscape is changing rapidly.</p>
+      <p begin="00:01:58.650" end="00:02:03.690">The only thing we mean and, change is to provide a compelling content</p>
+      <p begin="00:02:03.690" end="00:02:08.730">...audience people may not only want to say the living room to watch content</p>
+      <p begin="00:02:08.730" end="00:02:13.350">...tv sat now but also true kinds of the all kinds of</p>
+      <p begin="00:02:13.350" end="00:02:14.550">devices...now</p>
+      <p begin="00:02:14.550" end="00:02:19.120">...in your pocket it...be a found tablet or pc.</p>
+      <p begin="00:02:19.120" end="00:02:24.000">During keynote and denoting day one I believe</p>
+      <p begin="00:02:24.000" end="00:02:28.230">...then give the assay more challenging future fettuccine</p>
+      <p begin="00:02:28.230" end="00:02:31.380">sad can be any size when you manual,</p>
+      <p begin="00:02:31.380" end="00:02:34.000">you know, resize ing at using...hello</p>
+      <p begin="00:02:34.000" end="00:02:39.770">...however...able to deliver satchel complicate</p>
+      <p begin="00:02:39.770" end="00:02:44.590">...solution is never easy given the proliferation of devices</p>
+      <p begin="00:02:44.590" end="00:02:46.410">profound the fragmentation</p>
+      <p begin="00:02:46.410" end="00:02:50.680">...straining quarrel call and all kinds of network conditioned three-d</p>
+      <p begin="00:02:50.680" end="00:02:55.140">...wi-fi being able to build such solution</p>
+      <p begin="00:02:55.140" end="00:02:59.820">it's not that easy for content provider especially as...nation...</p>
+      <p begin="00:02:59.820" end="00:03:04.690">lice events in order to deal with the...traffic...have to</p>
+      <p begin="00:03:04.690" end="00:03:09.410">involve healed capital investments our friends and the in event may not even be</p>
+      <p begin="00:03:09.410" end="00:03:13.430">successful...so as I said we sell.</p>
+      <p begin="00:03:15.540" end="00:03:20.000">...solution could be very helpful in this case to hide</p>
+      <p begin="00:03:20.000" end="00:03:22.790">the complexities from content...</p>
+      <p begin="00:03:22.790" end="00:03:27.580">armenia companies want to build a solution so that you can focus on your</p>
+      <p begin="00:03:27.580" end="00:03:32.780">key strands to deliver better content to audience.</p>
+      <p begin="00:03:32.780" end="00:03:34.130">And, that's why we introduced the</p>
+      <p begin="00:03:34.130" end="00:03:38.260">...media services about four years ago to provide a very</p>
+      <p begin="00:03:39.640" end="00:03:40.990">...media</p>
+      <p begin="00:03:40.990" end="00:03:47.940">...video and demand...lives cantilever from the cloud.</p>
+      <p begin="00:03:47.940" end="00:03:51.670">...media sermons us as a platform as</p>
+      <p begin="00:03:51.670" end="00:03:56.640">...that we build on top of the capability of asher platform</p>
+      <p begin="00:03:56.640" end="00:04:01.120">we leverage on the cloud to storage and the and how're of the platform</p>
+      <p begin="00:04:01.120" end="00:04:05.040">...that to we allows developer to interact</p>
+      <p begin="00:04:05.040" end="00:04:10.120">with the service program magically to rsa api and we allows you to do</p>
+      <p begin="00:04:10.120" end="00:04:15.110">customizable media workflow starting from bringing your media into klaus</p>
+      <p begin="00:04:15.110" end="00:04:19.890">rh transcoder into son and format putting content protection</p>
+      <p begin="00:04:19.890" end="00:04:26.060">is necessary with a yasser the rn making available for screaming.</p>
+      <p begin="00:04:26.060" end="00:04:28.030">The first part of the presentation</p>
+      <p begin="00:04:28.030" end="00:04:34.620">will focus on typical video-on-demand works now how you can do that.</p>
+      <p begin="00:04:34.620" end="00:04:36.130">Usually the first step is to</p>
+      <p begin="00:04:36.130" end="00:04:40.290">...content that you bring a content to us and we</p>
+      <p begin="00:04:40.290" end="00:04:45.110">...video content and clap ...storage</p>
+      <p begin="00:04:45.110" end="00:04:51.060">...virgil format of asset and usually with one asset...will be a</p>
+      <p begin="00:04:51.060" end="00:04:54.560">...associated with...</p>
+      <p begin="00:04:54.560" end="00:04:55.450">However,</p>
+      <p begin="00:04:55.450" end="00:05:00.140">bringing large amount of imagine in...is not a trivial job</p>
+      <p begin="00:05:00.140" end="00:05:03.680">...we allows you to...the fouled before our loading using</p>
+      <p begin="00:05:03.680" end="00:05:08.100">...two-fifty sakes true...so the integrity of</p>
+      <p begin="00:05:08.100" end="00:05:11.870">the our protected during the transmission and if you want something</p>
+      <p begin="00:05:11.870" end="00:05:16.870">faster we do have option of hasty nippy abalone or even in style</p>
+      <p begin="00:05:16.870" end="00:05:22.740">and sparrow client as our partner you can do udp uploaded...and we</p>
+      <p begin="00:05:22.740" end="00:05:27.560">often have customer will have huge amount of mezzanine library that we</p>
+      <p begin="00:05:27.560" end="00:05:31.800">introduce a new feature allows you to attach multiple storage accounts to</p>
+      <p begin="00:05:31.800" end="00:05:38.520">one single media services accounts...easily manage your...content...once that</p>
+      <p begin="00:05:38.520" end="00:05:43.440">fowl as in the system way will allows you to come</p>
+      <p begin="00:05:43.440" end="00:05:48.280">...a encoder processor to doing coding dot for-you after the job is</p>
+      <p begin="00:05:48.280" end="00:05:52.930">...we put it back into action blob storage.</p>
+      <p begin="00:05:52.930" end="00:05:57.650">And, we provide a model...shared encoding pool</p>
+      <p begin="00:05:57.650" end="00:06:03.230">...imagine you're sharing a pool...when fatter customer so new and</p>
+      <p begin="00:06:03.230" end="00:06:08.180">...in our customers stop cannot...if I don't want to</p>
+      <p begin="00:06:08.180" end="00:06:11.150">...there is...option for you</p>
+      <p begin="00:06:11.150" end="00:06:16.290">...call it encoding reserve unit...can...chance and if I</p>
+      <p begin="00:06:16.290" end="00:06:19.790">have three encoding reserve unit and having three</p>
+      <p begin="00:06:19.790" end="00:06:27.100">dedicating holding box running encoding account for only my video assets.</p>
+      <p begin="00:06:27.100" end="00:06:29.520">And, we have.</p>
+      <p begin="00:06:29.520" end="00:06:31.800">Added a new encoder</p>
+      <p begin="00:06:31.800" end="00:06:36.030">...asher premium encoder so right now we have to encoder in</p>
+      <p begin="00:06:36.030" end="00:06:40.200">a system...encoder and the...encoder.</p>
+      <p begin="00:06:41.300" end="00:06:45.150">And, the combination of this tool called take</p>
+      <p begin="00:06:45.150" end="00:06:50.200">...has the or studio quality video format one of the highlight is we add a</p>
+      <p begin="00:06:50.200" end="00:06:55.130">supports agcas and the ascii...april and also encoding into</p>
+      <p begin="00:06:55.130" end="00:06:56.060">...to four-k.</p>
+      <p begin="00:06:57.070" end="00:06:57.940">And, I haitian</p>
+      <p begin="00:06:57.940" end="00:07:02.760">...haste also sixty-five is something on the role map and we only</p>
+      <p begin="00:07:02.760" end="00:07:06.930">pay for...sandwich charge per output gigabytes for your video</p>
+      <p begin="00:07:06.930" end="00:07:09.610">foul any could easily manage true asher</p>
+      <p begin="00:07:09.610" end="00:07:15.330">...api or an explorer tool which algae demonstrating later.</p>
+      <p begin="00:07:15.330" end="00:07:17.660">Sell the...multiple options of</p>
+      <p begin="00:07:17.660" end="00:07:22.870">...that's pretty new that we're given to you could firstly...the</p>
+      <p begin="00:07:22.870" end="00:07:27.820">encoding capability based on your input or output file formats</p>
+      <p begin="00:07:27.820" end="00:07:32.460">...we have encoder as I mentioned and also asher premium encoder</p>
+      <p begin="00:07:32.460" end="00:07:36.830">...starting at one point nine per gigabytes is a waterfall price and</p>
+      <p begin="00:07:36.830" end="00:07:39.970">...you go the cheaper gas...for</p>
+      <p begin="00:07:39.970" end="00:07:45.500">...is...prevail so you might as spend a price to increase one-c...and,</p>
+      <p begin="00:07:45.500" end="00:07:50.650">it takes different encoding formats which you can...on a reference on</p>
+      <p begin="00:07:50.650" end="00:07:54.920">asti and on exactly why supports and also you can true</p>
+      <p begin="00:07:54.920" end="00:07:59.540">...encoding reserve units that which controls how fasting</p>
+      <p begin="00:07:59.540" end="00:08:03.170">holder chavis running a...from a basic scale which</p>
+      <p begin="00:08:03.170" end="00:08:07.670">targets sixty nine per month up to premium scale that target</p>
+      <p begin="00:08:07.670" end="00:08:12.530">three-ninety nine per month which is a higher cpu capability machine are</p>
+      <p begin="00:08:12.530" end="00:08:17.500">...fortify faster than a basis scale but of course you can use shared</p>
+      <p begin="00:08:17.500" end="00:08:20.470">...that you don't pay anything but you don't have that</p>
+      <p begin="00:08:20.470" end="00:08:25.310">...on-the-job processing time.</p>
+      <p begin="00:08:25.310" end="00:08:29.600">After the...guessing held...a last mile is to deliverance that we</p>
+      <p begin="00:08:29.600" end="00:08:34.380">paralyzing manage the streaming service what it means is we gave you</p>
+      <p begin="00:08:34.380" end="00:08:39.310">...that you can have reserve screaming unit guarantee balance starting from</p>
+      <p begin="00:08:39.310" end="00:08:43.760">one...per second...this works you don't have to manage</p>
+      <p begin="00:08:43.760" end="00:08:47.880">...and we manage...for you make sure has algal recovery</p>
+      <p begin="00:08:47.880" end="00:08:50.040">...dens redundancy and cells are</p>
+      <p begin="00:08:50.040" end="00:08:56.850">...and that's the typical media workflow how it works</p>
+      <p begin="00:08:56.850" end="00:09:05.370">from end-to-end and I'm going to show you guys and tamil using the portal?</p>
+      <p begin="00:09:05.370" end="00:09:09.370">So, right now I'm looking at...services accounts in asher</p>
+      <p begin="00:09:09.370" end="00:09:14.290">portal you can quickly setup one yourself as well...hatchet with our</p>
+      <p begin="00:09:14.290" end="00:09:18.370">region we're currently available in a datacenter worldwide and we</p>
+      <p begin="00:09:18.370" end="00:09:20.190">are landing and brazil and india</p>
+      <p begin="00:09:20.190" end="00:09:25.140">...and...when say storage accounts so I'm not going to do</p>
+      <p begin="00:09:25.140" end="00:09:28.030">...sound stage instead I'll use a existing</p>
+      <p begin="00:09:28.030" end="00:09:31.010">media services accounts and I already have a</p>
+      <p begin="00:09:31.010" end="00:09:35.500">...of content available the first thing I would do is to encode</p>
+      <p begin="00:09:35.500" end="00:09:37.250">...media file and you can see</p>
+      <p begin="00:09:37.250" end="00:09:42.530">we give you option of media encoder and encoder premium and</p>
+      <p begin="00:09:42.530" end="00:09:47.760">...shows media encoder and we are doing a adaptive fit rates...</p>
+      <p begin="00:09:47.760" end="00:09:55.050">encoding...give it a more friendly name and clay how ok so now what</p>
+      <p begin="00:09:55.050" end="00:09:58.810">happened and they...be any a processor in a clown</p>
+      <p begin="00:09:58.810" end="00:10:02.600">...the job and bunny encoding for you and once you want to</p>
+      <p begin="00:10:02.600" end="00:10:06.460">...as a portal under encoding tap</p>
+      <p begin="00:10:06.460" end="00:10:09.010">...how you could at-rules your encoding</p>
+      <p begin="00:10:09.010" end="00:10:12.000">...from basic to...and,</p>
+      <p begin="00:10:12.000" end="00:10:17.270">also the encoding units you can have ten box or a hundred machines spin</p>
+      <p begin="00:10:17.270" end="00:10:21.980">...right for you to financial larger amount of encoding job.</p>
+      <p begin="00:10:21.980" end="00:10:22.750">Ok, and,</p>
+      <p begin="00:10:22.750" end="00:10:27.570">while waiting for this to be done so that we can publish the asset</p>
+      <p begin="00:10:27.570" end="00:10:29.100">I'm going to shifting back to the</p>
+      <p begin="00:10:29.100" end="00:10:34.020">...to talk about a feature which is also a feature away...make</p>
+      <p begin="00:10:34.020" end="00:10:39.620">...competitive in...dynamic packaging allows you to radius</p>
+      <p begin="00:10:39.620" end="00:10:45.250">your encoder content and bring it to...format.</p>
+      <p begin="00:10:45.250" end="00:10:49.460">Before talking about dynamic packaging have to talk about how things are done in</p>
+      <p begin="00:10:49.460" end="00:10:54.420">the traditional way traditional packaging that you have a video sauce and</p>
+      <p begin="00:10:54.420" end="00:10:56.770">...into an adaptive</p>
+      <p begin="00:10:56.770" end="00:11:02.360">...time before and after that if you want to deliver and form to</p>
+      <p begin="00:11:02.360" end="00:11:05.950">multiple straining formats you have to statically package</p>
+      <p begin="00:11:05.950" end="00:11:10.060">them and store down in multiple copies and deliver</p>
+      <p begin="00:11:10.060" end="00:11:12.130">...to multiple platform and devices</p>
+      <p begin="00:11:13.140" end="00:11:17.980">...for dynamic packaging here is how things are done you still have</p>
+      <p begin="00:11:17.980" end="00:11:22.760">the video...encoder into adaptive...and pfour.</p>
+      <p begin="00:11:22.760" end="00:11:26.820">And, after that...that...operations server</p>
+      <p begin="00:11:26.820" end="00:11:31.650">...dynamically package the content ask the straining formats you</p>
+      <p begin="00:11:31.650" end="00:11:36.110">want on-the-fly we alternative container formats so that</p>
+      <p begin="00:11:36.110" end="00:11:42.190">encoded being used by multiple platform and devices.</p>
+      <p begin="00:11:42.190" end="00:11:47.320">And, there are two benefit from dynamic packaging the first one is you</p>
+      <p begin="00:11:47.320" end="00:11:51.530">...the time to package the content and secondly is also</p>
+      <p begin="00:11:51.530" end="00:11:53.830">the most importantly that you</p>
+      <p begin="00:11:53.830" end="00:11:58.410">...a lot of storage because for the first one you can see you are</p>
+      <p begin="00:11:58.410" end="00:12:03.790">saving the...into multiple copies because of the container formats difference</p>
+      <p begin="00:12:03.790" end="00:12:06.030">For the second one you only</p>
+      <p begin="00:12:06.030" end="00:12:09.330">...once and as a great saving for a lot</p>
+      <p begin="00:12:09.330" end="00:12:15.120">of media companies we have tons of video assets.</p>
+      <p begin="00:12:15.120" end="00:12:18.260">And, I'm going to show you guys and...how to</p>
+      <p begin="00:12:18.260" end="00:12:23.230">...foul I was dissing held...and also dynamically pancake and</p>
+      <p begin="00:12:23.230" end="00:12:27.810">...out using api so we have media...</p>
+      <p begin="00:12:27.810" end="00:12:33.120">pi for all the platforms...with the service and we also have</p>
+      <p begin="00:12:33.120" end="00:12:37.470">down sdk php java note gas to wrap around</p>
+      <p begin="00:12:37.470" end="00:12:47.550">the functionality as well and I'm going to show you as an tamil using down...</p>
+      <p begin="00:12:47.550" end="00:12:49.410">Any switch...to...machine.</p>
+      <p begin="00:12:50.460" end="00:12:55.990">And, now I'm going to all handle scale.</p>
+      <p begin="00:12:55.990" end="00:13:00.490">So, the first thing is a crucial app using csharp so which I'm going to use</p>
+      <p begin="00:13:00.490" end="00:13:04.560">...sdk and the first thing you need to do is to install</p>
+      <p begin="00:13:04.560" end="00:13:12.280">new that package by searching straying when old-fashioned of media services.</p>
+      <p begin="00:13:12.280" end="00:13:16.930">Cell you can see that you'll be getting two of them the first one is a</p>
+      <p begin="00:13:16.930" end="00:13:21.190">wrapper on rest api endowment...is</p>
+      <p begin="00:13:21.190" end="00:13:26.030">...community contribution to us that provides a lot of helper and utility</p>
+      <p begin="00:13:26.030" end="00:13:33.910">method which hash highly we...to use to get your ...more efficient.</p>
+      <p begin="00:13:33.910" end="00:13:37.670">...the first thing I'm going to deal is to make a connection to</p>
+      <p begin="00:13:37.670" end="00:13:42.730">...media services and the way to do it is to</p>
+      <p begin="00:13:42.730" end="00:13:47.220">...a cloud media contacts bypassing in account name</p>
+      <p begin="00:13:47.220" end="00:13:51.710">...where to get outcome name...can t is from the portal in the</p>
+      <p begin="00:13:51.710" end="00:13:58.120">dashboard there is a manage key pass how you grab the information.</p>
+      <p begin="00:13:58.120" end="00:14:01.160">...an...this going to.</p>
+      <p begin="00:14:01.160" end="00:14:08.030">Plug-in in my program...have my media credentials and</p>
+      <p begin="00:14:08.030" end="00:14:10.170">And, after that.</p>
+      <p begin="00:14:10.170" end="00:14:12.010">I'm going to publish...edges</p>
+      <p begin="00:14:12.010" end="00:14:18.350">encoded so the first thing and I will do is to query the file.</p>
+      <p begin="00:14:18.350" end="00:14:22.440">So, you can see it all the video files are all...as sell</p>
+      <p begin="00:14:24.020" end="00:14:29.370">...our platform and your interact with context for</p>
+      <p begin="00:14:29.370" end="00:14:34.100">any operations on asset and doing a...query here by</p>
+      <p begin="00:14:34.100" end="00:14:38.940">...asset files named...better query might be the id.</p>
+      <p begin="00:14:38.940" end="00:14:44.230">In asset...I'm going...the asset.</p>
+      <p begin="00:14:44.230" end="00:14:49.150">...straining purpose and you can see I'm not doing a packaging here because I'm going to use</p>
+      <p begin="00:14:49.150" end="00:14:54.310">dynamic packaging...to publish a asset is to ask for locate</p>
+      <p begin="00:14:54.310" end="00:14:59.120">her analog haggard...here is a on-demand origin which means the asset</p>
+      <p begin="00:14:59.120" end="00:15:02.910">...to the media server and publishing this</p>
+      <p begin="00:15:02.910" end="00:15:07.690">assets asset name india permission of...and</p>
+      <p begin="00:15:07.690" end="00:15:14.820">a time span of the duration of theurl issues one year from now.</p>
+      <p begin="00:15:14.820" end="00:15:18.710">And, the last step is to ask for the url which is also a</p>
+      <p begin="00:15:18.710" end="00:15:23.200">matter provides in the extension so based on this asset I'm getting a</p>
+      <p begin="00:15:23.200" end="00:15:27.120">small streaming url a hotel sha url</p>
+      <p begin="00:15:27.120" end="00:15:29.450">and a and hash url.</p>
+      <p begin="00:15:29.450" end="00:15:34.990">And, those are...matters to get the...url</p>
+      <p begin="00:15:34.990" end="00:15:41.930">rights in the consul so...just see how star...what happened this...ansi queries</p>
+      <p begin="00:15:41.930" end="00:15:46.370">that asset...go ahead and...the assets in</p>
+      <p begin="00:15:46.370" end="00:15:50.840">differentcontainer format smooth streaming hl as...and had</p>
+      <p begin="00:15:51.920" end="00:15:56.740">...notice wait a second otis low-pay...looks the same.</p>
+      <p begin="00:15:56.740" end="00:16:01.280">And, that's the point of dynamic packaging...the only way to</p>
+      <p begin="00:16:01.280" end="00:16:05.250">...different format is just to a panned a different string</p>
+      <p begin="00:16:05.250" end="00:16:06.580">...of the locating.</p>
+      <p begin="00:16:07.780" end="00:16:12.400">And, if we look at the slide here now.</p>
+      <p begin="00:16:12.400" end="00:16:13.440">That's essentially the</p>
+      <p begin="00:16:13.440" end="00:16:17.530">...syntax you attendant on a low-paid her in order to</p>
+      <p begin="00:16:17.530" end="00:16:19.170">...different manifests</p>
+      <p begin="00:16:19.170" end="00:16:24.690">answer your player so I can show you guys how that looks like.</p>
+      <p begin="00:16:24.690" end="00:16:27.540">So, I am go into copy pace this url.</p>
+      <p begin="00:16:28.590" end="00:16:36.700">The smooth straining one.</p>
+      <p begin="00:16:36.700" end="00:16:40.060">And, I'm going to all ten of ieee.</p>
+      <p begin="00:16:40.060" end="00:16:44.640">Which show you guys how the video looks like?</p>
+      <p begin="00:16:44.640" end="00:16:49.300">What is a pretty friendly version that you can see my meal is not a bit rate</p>
+      <p begin="00:16:49.300" end="00:16:54.350">with all the video track and I have to audio track here and</p>
+      <p begin="00:16:54.350" end="00:16:59.310">...is the same your al...pacing here I can handle</p>
+      <p begin="00:16:59.310" end="00:17:02.870">string format equal two and three you...a...</p>
+      <p begin="00:17:03.900" end="00:17:07.710">Hand-painted...browser.</p>
+      <p begin="00:17:07.710" end="00:17:09.780">And, you'll see the same video now</p>
+      <p begin="00:17:09.780" end="00:17:13.800">gets packaged and a different format and has a</p>
+      <p begin="00:17:13.800" end="00:17:20.049">apple playlist formats usa attendance...</p>
+      <p begin="00:17:20.049" end="00:17:25.260">And, if you are...like made my finance pretty and,</p>
+      <p begin="00:17:25.260" end="00:17:28.140">now we finally get...see the medial.</p>
+      <p begin="00:17:28.140" end="00:17:32.230">Since entail already published...the api you can see</p>
+      <p begin="00:17:32.230" end="00:17:36.410">...as published and...I trails.</p>
+      <p begin="00:17:36.410" end="00:17:42.990">Which is my favorite part of keynote they want and I hope you enjoy?</p>
+      <p begin="00:17:42.990" end="00:17:44.150">...should be able to</p>
+      <p begin="00:17:44.150" end="00:17:51.470">...entertainment preplanned anywhere...as he does it.</p>
+      <p begin="00:17:51.470" end="00:17:56.850">So, all I need to say is...</p>
+      <p begin="00:17:56.850" end="00:17:59.770">Wherever I go...my house my entertainment...moi.</p>
+      <p begin="00:18:01.570" end="00:18:04.780">Antoinette cool feature.</p>
+      <p begin="00:18:04.780" end="00:18:06.960">At least...</p>
+      <p begin="00:18:06.960" end="00:18:13.180">And, I...to share my...anyone in the living.</p>
+      <p begin="00:18:13.180" end="00:18:19.400">now the question...stats while you tell me about this magic player</p>
+      <p begin="00:18:19.400" end="00:18:23.760">...them...can take dynamic packaging and I suppose,</p>
+      <p begin="00:18:23.760" end="00:18:28.050">suppose smooth...into a pc base the web liner and</p>
+      <p begin="00:18:28.050" end="00:18:32.890">...as url into a iphone browser for</p>
+      <p begin="00:18:32.890" end="00:18:37.830">instance so what if there is a player that could magically figure...</p>
+      <p begin="00:18:37.830" end="00:18:43.020">which magic syntax to be...on different browser player and let the</p>
+      <p begin="00:18:43.020" end="00:18:47.770">strained to...plan on different browser and that would be great and that's something we</p>
+      <p begin="00:18:47.770" end="00:18:52.560">jess hook up two weeks ago is cut asher media player it</p>
+      <p begin="00:18:52.560" end="00:18:57.480">is a free to use javascript...player that could ultimately the</p>
+      <p begin="00:18:57.480" end="00:19:02.370">...the platform capabilities...the platform is stan...enabled</p>
+      <p begin="00:19:04.510" end="00:19:07.200">...flash it does all the fallback for-you.</p>
+      <p begin="00:19:08.230" end="00:19:09.250">Any defaults to all</p>
+      <p begin="00:19:09.250" end="00:19:13.770">...stand out where possible and...the different packaging depends on</p>
+      <p begin="00:19:13.770" end="00:19:18.040">the platform any understand dynamic packaging this feature from</p>
+      <p begin="00:19:18.040" end="00:19:25.590">action media services so this is what asher player media player compels off.</p>
+      <p begin="00:19:25.590" end="00:19:30.260">First of all we...you a unify...to control the fuel and</p>
+      <p begin="00:19:30.260" end="00:19:33.610">...of the player and we have a unify</p>
+      <p begin="00:19:33.610" end="00:19:38.580">...javascript api to control the functionality of the player which</p>
+      <p begin="00:19:38.580" end="00:19:42.470">compels for different media player the first one is</p>
+      <p begin="00:19:42.470" end="00:19:46.950">a bash player that we ...utilize</p>
+      <p begin="00:19:46.950" end="00:19:53.190">...ic...api from haitian of...to...and a flash</p>
+      <p begin="00:19:53.190" end="00:19:56.430">player...july player and also...haitian</p>
+      <p begin="00:19:56.430" end="00:20:02.170">...video tag...the player doesn't even implement and...</p>
+      <p begin="00:20:02.170" end="00:20:06.760">And, ocala squared fouls functionality...to firstly.</p>
+      <p begin="00:20:06.760" end="00:20:11.330">...platform and devise capability okay.</p>
+      <p begin="00:20:11.330" end="00:20:14.770">And, you will choose the player based on the tech order</p>
+      <p begin="00:20:14.770" end="00:20:20.430">...so by default this is the...we always paradise standard such</p>
+      <p begin="00:20:20.430" end="00:20:24.740">...player but of course you can say I just don't like silverlight</p>
+      <p begin="00:20:24.740" end="00:20:27.850">hand going-to removed is from the tag order then</p>
+      <p begin="00:20:27.850" end="00:20:33.550">...player will never shoals on your customers browser and...knows how to</p>
+      <p begin="00:20:33.550" end="00:20:36.700">...url from...spy appending the magic</p>
+      <p begin="00:20:36.700" end="00:20:41.560">spring assassinations now any could playback video-on-demand</p>
+      <p begin="00:20:41.560" end="00:20:48.040">life and protect our content to...browsers and devices.</p>
+      <p begin="00:20:48.040" end="00:20:55.840">Now I'm going to show you as a demo how to build...from scratch.</p>
+      <p begin="00:20:55.840" end="00:21:00.390">I am opening a video studio now you can do it anywhere you can be</p>
+      <p begin="00:21:00.390" end="00:21:05.220">...notepad it's just a simple haitian of five...html...</p>
+      <p begin="00:21:05.220" end="00:21:12.300">file and the first thing I'm going to do is to put in reference.</p>
+      <p begin="00:21:12.300" end="00:21:15.470">Which we house...to...esau and javascript</p>
+      <p begin="00:21:15.470" end="00:21:20.000">...adj so you don't have to install reference library...can</p>
+      <p begin="00:21:20.000" end="00:21:25.240">...pointing to this one and now we have a library which</p>
+      <p begin="00:21:25.240" end="00:21:28.600">show seo was the latest version so...I want to get</p>
+      <p begin="00:21:28.600" end="00:21:32.180">zero point two-zero albeit have version you probably don't want to</p>
+      <p begin="00:21:32.180" end="00:21:36.390">...you can just change the version here and even you</p>
+      <p begin="00:21:36.390" end="00:21:44.060">...of late has here which will always...the...library we are available?</p>
+      <p begin="00:21:44.060" end="00:21:47.960">I'm going to put in a...for inserting a</p>
+      <p begin="00:21:47.960" end="00:21:53.590">...and which you can see this is a video tag</p>
+      <p begin="00:21:53.590" end="00:21:59.290">whereas you can put in that ...I we provided the full-scale</p>
+      <p begin="00:21:59.290" end="00:22:03.900">...sell some of the style that you controls as well</p>
+      <p begin="00:22:03.900" end="00:22:09.040">...after thatyou define the with an hype of the player and then</p>
+      <p begin="00:22:09.040" end="00:22:13.080">ascent obvious something I put in specifically so this can be</p>
+      <p begin="00:22:13.080" end="00:22:15.430">hidden by default if you on a chosen default</p>
+      <p begin="00:22:15.430" end="00:22:18.970">...but you can have suddenly change them if you prefer</p>
+      <p begin="00:22:18.970" end="00:22:26.500">silverlight over flash for instance you always fall back on the silverlight before flash?</p>
+      <p begin="00:22:26.500" end="00:22:32.580">here is where you put in the video south and paths where you should put in</p>
+      <p begin="00:22:32.580" end="00:22:36.730">the small...url so I'm just pacing and from just now the medial</p>
+      <p begin="00:22:36.730" end="00:22:44.700">and published and this simply says this your alice...streaming file and lastly</p>
+      <p begin="00:22:44.700" end="00:22:49.370">I'm going to put in a logging which shows you guys</p>
+      <p begin="00:22:49.370" end="00:22:54.180">stats which pocket technology my player is tooling now so this is my</p>
+      <p begin="00:22:54.180" end="00:22:58.660">players technology and also what kind of screen is going to</p>
+      <p begin="00:22:58.660" end="00:23:03.600">...player so you can get some of the...information as well and without</p>
+      <p begin="00:23:03.600" end="00:23:09.370">further say I'm going to large the player in...browser.</p>
+      <p begin="00:23:09.370" end="00:23:12.400">And, you can see moi his pretty cool that</p>
+      <p begin="00:23:12.400" end="00:23:15.910">...support bash this is a dash streaming</p>
+      <p begin="00:23:15.910" end="00:23:22.880">player any peacock bash...stream as well and you can see the...doing.</p>
+      <p begin="00:23:22.880" end="00:23:25.680">The detection and similarly I'm going to</p>
+      <p begin="00:23:25.680" end="00:23:31.800">...is player in fair fox is a trustful player</p>
+      <p begin="00:23:31.800" end="00:23:38.350">...and I'm going to old hand website...firefox?</p>
+      <p begin="00:23:38.350" end="00:23:43.180">So, someplace lifer...support of flash and, you know,</p>
+      <p begin="00:23:43.180" end="00:23:47.150">that fairfax...fully implement and ascii at so</p>
+      <p begin="00:23:47.150" end="00:23:53.410">...tag order which player is going to show up and...firefox.</p>
+      <p begin="00:23:53.410" end="00:23:58.860">Anyone based on the tag order.</p>
+      <p begin="00:23:58.860" end="00:24:03.510">I heard and hopefully a silverlight will show up and now you can tell the player</p>
+      <p begin="00:24:03.510" end="00:24:07.170">...detect the capability of the device any</p>
+      <p begin="00:24:07.170" end="00:24:12.030">...a silverlight...here are the usa.</p>
+      <p begin="00:24:12.030" end="00:24:17.560">With a smooth straining scream.</p>
+      <p begin="00:24:17.560" end="00:24:20.490">Okay, and.</p>
+      <p begin="00:24:20.490" end="00:24:22.540">You guys think.</p>
+      <p begin="00:24:22.540" end="00:24:27.400">That's not cool enough there's one more thing I want to show you guys</p>
+      <p begin="00:24:27.400" end="00:24:31.000">...hysterical so remember a time if you want to</p>
+      <p begin="00:24:31.000" end="00:24:35.390">update your player...and have doing work on for copies of your</p>
+      <p begin="00:24:35.390" end="00:24:39.180">other players right...change annihilation of five's</p>
+      <p begin="00:24:39.180" end="00:24:44.170">still allies and slash so the advantage of actual media player</p>
+      <p begin="00:24:44.170" end="00:24:48.590">...see-change and only one place so I'm going to remove file to</p>
+      <p begin="00:24:48.590" end="00:24:50.070">...my player as</p>
+      <p begin="00:24:50.070" end="00:24:56.350">...and I'm going to add a pell's around my player simple stuff?</p>
+      <p begin="00:24:56.350" end="00:24:59.650">And, I already have a pulsar image there called future</p>
+      <p begin="00:25:01.230" end="00:25:05.380">...player now let me do away with fresh online problem</p>
+      <p begin="00:25:05.380" end="00:25:09.540">...pulsar appear and although play is removed because I</p>
+      <p begin="00:25:09.540" end="00:25:16.970">remove that...if I'm showing here all my firefox browser.</p>
+      <p begin="00:25:16.970" end="00:25:22.190">As a silverlight player and you can see the control also...and you don't need</p>
+      <p begin="00:25:22.190" end="00:25:26.000">to coding silverlight because it's a unify the javascript and</p>
+      <p begin="00:25:26.000" end="00:25:31.100">...as you either controls all the underlying players.</p>
+      <p begin="00:25:35.180" end="00:25:39.250">I allow us to coolers part of the.</p>
+      <p begin="00:25:39.250" end="00:25:42.520">The player because you don't have to code against flash</p>
+      <p begin="00:25:42.520" end="00:25:47.070">...and, I leave with you guys some of the documentation</p>
+      <p begin="00:25:47.070" end="00:25:52.220">its while document an old api...and also in</p>
+      <p begin="00:25:52.220" end="00:25:55.920">the we have a player tamil page which I'll give you a banja</p>
+      <p begin="00:25:55.920" end="00:26:00.610">players with customization the best way to learn is to just write clay can</p>
+      <p begin="00:26:00.610" end="00:26:05.900">view sauce and check out all the ...details yourself.</p>
+      <p begin="00:26:05.900" end="00:26:10.600">So, I mention...of...media player.</p>
+      <p begin="00:26:10.600" end="00:26:12.480">Easing and the how easy</p>
+      <p begin="00:26:12.480" end="00:26:17.390">...in...and here is the second an advantage.</p>
+      <p begin="00:26:17.390" end="00:26:20.300">So, if you work in a player technology spain's.</p>
+      <p begin="00:26:21.450" end="00:26:23.460">And, new relies how messed</p>
+      <p begin="00:26:23.460" end="00:26:27.210">...appliances look at a metrics here that's all</p>
+      <p begin="00:26:27.210" end="00:26:32.170">kinds of browsers and the technology a best...on different browsers devise</p>
+      <p begin="00:26:32.170" end="00:26:34.780">...and also streaming protocols.</p>
+      <p begin="00:26:36.020" end="00:26:38.230">You...start to take note on this</p>
+      <p begin="00:26:38.230" end="00:26:43.700">...or you can start using action media players which...keep</p>
+      <p begin="00:26:43.700" end="00:26:48.890">track on what...of update may come to the next browser so</p>
+      <p begin="00:26:48.890" end="00:26:52.120">let's say safari tomorrow will say it they are</p>
+      <p begin="00:26:52.120" end="00:26:57.010">detain facial as in supporting and hash which probably will never</p>
+      <p begin="00:26:57.010" end="00:27:00.910">happened before asks we'll get to know that and will update</p>
+      <p begin="00:27:00.910" end="00:27:02.300">...media player</p>
+      <p begin="00:27:04.180" end="00:27:10.810">...into a safari so you'll need to worry about all of this?</p>
+      <p begin="00:27:10.810" end="00:27:12.300">And, I will leave the</p>
+      <p begin="00:27:12.300" end="00:27:16.650">...with you upcoming features and there are tool I want to</p>
+      <p begin="00:27:16.650" end="00:27:19.660">highlights which I think all of you guys</p>
+      <p begin="00:27:19.660" end="00:27:23.210">...clients antics you would get to now what</p>
+      <p begin="00:27:23.210" end="00:27:27.380">your player doing what your customers and doing with the player and</p>
+      <p begin="00:27:27.380" end="00:27:31.860">also adds support easily to insert adds into the...and</p>
+      <p begin="00:27:31.860" end="00:27:38.600">stwo features that we have paradise and also will be coming very soon.</p>
+      <p begin="00:27:38.600" end="00:27:41.280">After that.</p>
+      <p begin="00:27:41.280" end="00:27:44.790">Let's shifts in a gear to top about asher media index</p>
+      <p begin="00:27:44.790" end="00:27:50.580">...so we all know the search right now is pretty much</p>
+      <p begin="00:27:50.580" end="00:27:51.320">optimized</p>
+      <p begin="00:27:51.320" end="00:27:55.920">...run tax on the internet if I want to search any information</p>
+      <p begin="00:27:55.920" end="00:28:01.020">and this search...get me articles syntax as well.</p>
+      <p begin="00:28:01.020" end="00:28:04.260">Whence...amount of videos appear online</p>
+      <p begin="00:28:04.260" end="00:28:08.000">...it could be easily search for video and</p>
+      <p begin="00:28:08.000" end="00:28:12.650">...google consing wants it's not that easy right because the internet simply</p>
+      <p begin="00:28:12.650" end="00:28:17.510">don't understand video that well and that's why we have announced a new services</p>
+      <p begin="00:28:17.510" end="00:28:22.300">...me index are...account board microsoft research</p>
+      <p begin="00:28:22.300" end="00:28:27.550">years of our research results...natural language processing that's</p>
+      <p begin="00:28:27.550" end="00:28:32.850">we could be able to analyze the video track and your...video...</p>
+      <p begin="00:28:32.850" end="00:28:37.850">audio tracking...video file and generated time aligned transcripts for</p>
+      <p begin="00:28:37.850" end="00:28:41.740">your video and we support our english and spanish</p>
+      <p begin="00:28:41.740" end="00:28:46.570">...moments which this technology has been using...companies such as</p>
+      <p begin="00:28:46.570" end="00:28:50.480">...hell's nassau the energy of the us department to</p>
+      <p begin="00:28:50.480" end="00:28:52.080">impacts large amount of</p>
+      <p begin="00:28:52.080" end="00:28:56.700">...library that they hasek so that people can search for than companion</p>
+      <p begin="00:28:56.700" end="00:29:00.280">...from the value of the videos.</p>
+      <p begin="00:29:00.280" end="00:29:08.500">Let me show you guys how you can is actually a necks are easily.</p>
+      <p begin="00:29:08.500" end="00:29:13.350">And, I will be using a tool call asher media</p>
+      <p begin="00:29:13.350" end="00:29:18.950">...sense...is freighted download... all of you guys should,</p>
+      <p begin="00:29:18.950" end="00:29:24.340">should use this is really convenience which I will pick up a</p>
+      <p begin="00:29:24.340" end="00:29:31.410">...file is very easy to do...say I want to index asset.</p>
+      <p begin="00:29:31.410" end="00:29:35.160">And, you have given a choice of english or spanish we...</p>
+      <p begin="00:29:35.160" end="00:29:40.670">boarding more language here and give it a asset title and,</p>
+      <p begin="00:29:40.670" end="00:29:44.330">you can just...the indexing job right away.</p>
+      <p begin="00:29:45.340" end="00:29:47.890">So, I'm not going to wait for this index</p>
+      <p begin="00:29:47.890" end="00:29:53.180">...job to finish because it takes some time I want to show you guys what come</p>
+      <p begin="00:29:53.180" end="00:29:58.280">out of index their job so this foul this index results I</p>
+      <p begin="00:29:58.280" end="00:29:59.430">...before</p>
+      <p begin="00:29:59.430" end="00:30:05.920">the event and I can take a look and information here.</p>
+      <p begin="00:30:05.920" end="00:30:09.210">Is a campaigner that content and potential fouls?</p>
+      <p begin="00:30:09.210" end="00:30:13.070">...one of them is a vp foul</p>
+      <p begin="00:30:13.070" end="00:30:18.010">and there is a tm now as well so let's take a look at this meaty</p>
+      <p begin="00:30:18.010" end="00:30:22.820">file some opening this file.</p>
+      <p begin="00:30:22.820" end="00:30:27.170">Essentially gives me.</p>
+      <p begin="00:30:27.170" end="00:30:30.750">Tyne aligned transcript of the video...</p>
+      <p begin="00:30:30.750" end="00:30:35.890">is pretty short say see the reclamation is not that high is high enough</p>
+      <p begin="00:30:35.890" end="00:30:39.820">...almost...point I'll have one and...the content</p>
+      <p begin="00:30:39.820" end="00:30:45.020">here hands-free acid...whenever I go my house my entertainment</p>
+      <p begin="00:30:45.020" end="00:30:50.290">...along this pretty a curate as well and that was the...you can and,</p>
+      <p begin="00:30:50.290" end="00:30:55.210">by the in a player to...as a closed-captioned and also</p>
+      <p begin="00:30:55.210" end="00:31:00.990">if we provide a formatting...and now as well and a index</p>
+      <p begin="00:31:00.990" end="00:31:04.430">...in binary which works with sequel server and</p>
+      <p begin="00:31:04.430" end="00:31:07.750">lastly a keywords I canal which</p>
+      <p begin="00:31:07.750" end="00:31:11.870">...the keywords spoken in a videosuch as a</p>
+      <p begin="00:31:11.870" end="00:31:18.340">...hands-free house analyst things.</p>
+      <p begin="00:31:18.340" end="00:31:22.040">As smartly...in one of his camel now</p>
+      <p begin="00:31:22.040" end="00:31:28.280">was the player aspirants you-can...which you just put in the</p>
+      <p begin="00:31:28.280" end="00:31:32.130">...vented house here even tells you can put in the let</p>
+      <p begin="00:31:32.130" end="00:31:38.930">neatly file here at patchy with the player annual shown along with the player.</p>
+      <p begin="00:31:38.930" end="00:31:46.360">So, that's what I want to show for index...</p>
+      <p begin="00:31:46.360" end="00:31:51.350">And, let's move on to a different part of the presentation</p>
+      <p begin="00:31:51.350" end="00:31:55.650">which...what is you have premium conti want to</p>
+      <p begin="00:31:55.650" end="00:31:59.860">...content...you can do with fashion media services.</p>
+      <p begin="00:31:59.860" end="00:32:04.280">So, first of all we allows you to security...loader foul</p>
+      <p begin="00:32:04.280" end="00:32:09.790">...we can security store your video...while you...and rests.</p>
+      <p begin="00:32:09.790" end="00:32:14.630">And, wait for the straining side of things we can dynamically</p>
+      <p begin="00:32:14.630" end="00:32:16.810">incredible content with either</p>
+      <p begin="00:32:16.810" end="00:32:22.580">abs one-point-eight clear key or microsoft...the rn.</p>
+      <p begin="00:32:22.580" end="00:32:28.830">And, we provide say...a license for the rn or...ascii.</p>
+      <p begin="00:32:28.830" end="00:32:30.980">...easy-to-use our key service</p>
+      <p begin="00:32:30.980" end="00:32:33.650">...in...can authentication module</p>
+      <p begin="00:32:35.040" end="00:32:40.430">...to authorize the key to player and also...you're using a</p>
+      <p begin="00:32:40.430" end="00:32:48.830">...on...system we...very easy integration...content eighty issues.</p>
+      <p begin="00:32:48.830" end="00:32:51.320">Any provides diverse playback option</p>
+      <p begin="00:32:51.320" end="00:32:58.640">...player I showed you guys works on...content as well.</p>
+      <p begin="00:32:58.640" end="00:33:01.360">So, we provides to content protection atis</p>
+      <p begin="00:33:01.360" end="00:33:04.660">in system one is content microsoft clarity</p>
+      <p begin="00:33:04.660" end="00:33:09.500">the rn and the other one is...clear...encryption.</p>
+      <p begin="00:33:09.500" end="00:33:13.820">To microsoft's player nt is one of the well-known</p>
+      <p begin="00:33:13.820" end="00:33:16.700">...and technology in the...that allow</p>
+      <p begin="00:33:16.700" end="00:33:21.590">...into encrypt small-screen content when clarity protection the</p>
+      <p begin="00:33:23.470" end="00:33:27.760">...system and you can...into hotel answer and hash</p>
+      <p begin="00:33:29.110" end="00:33:34.150">already technology is really designed for media business stand</p>
+      <p begin="00:33:34.150" end="00:33:37.620">...to define very comprehensive media rules to</p>
+      <p begin="00:33:37.620" end="00:33:41.220">...the access for video content you can say the</p>
+      <p begin="00:33:41.220" end="00:33:45.160">video can only play backing the next twenty four hours or</p>
+      <p begin="00:33:45.160" end="00:33:49.310">...want my audio impala content they can only watch our laptop</p>
+      <p begin="00:33:49.310" end="00:33:55.510">...screaming to...online you can do...you know, grande way</p>
+      <p begin="00:33:55.510" end="00:34:00.700">...on your media content and one thing very importantly</p>
+      <p begin="00:34:00.700" end="00:34:05.550">that the description of the license which is the key and also</p>
+      <p begin="00:34:05.550" end="00:34:10.360">the content is happening in a protect a memory which means</p>
+      <p begin="00:34:10.360" end="00:34:13.860">...key or the clear content are ever I spells value</p>
+      <p begin="00:34:13.860" end="00:34:16.690">...devices therefore</p>
+      <p begin="00:34:16.690" end="00:34:19.630">...is the ultimate probation for</p>
+      <p begin="00:34:19.630" end="00:34:22.600">piracy which means once gain of</p>
+      <p begin="00:34:22.600" end="00:34:28.390">...cannot be har and dirac revenue loss on studio and that's why all the</p>
+      <p begin="00:34:28.390" end="00:34:31.510">studios for premium content they would require the</p>
+      <p begin="00:34:31.510" end="00:34:36.499">...and protection as critical for the media business.</p>
+      <p begin="00:34:36.499" end="00:34:39.679">Process for a...clear key encryption is a</p>
+      <p begin="00:34:39.679" end="00:34:44.639">...encryption now we introduce is still do all over the wire communication that we do</p>
+      <p begin="00:34:44.639" end="00:34:49.079">a sone twenty-eight for encryption however the...</p>
+      <p begin="00:34:49.079" end="00:34:54.649">key is consider sporting clearer on your...device...to</p>
+      <p begin="00:34:54.649" end="00:34:59.710">...in order to using yes one example is I working microsoft sell</p>
+      <p begin="00:35:00.870" end="00:35:05.850">...and noun allow to this should build my training medial therefore a</p>
+      <p begin="00:35:05.850" end="00:35:10.370">...probably a good solution for enterprise because usually</p>
+      <p begin="00:35:10.370" end="00:35:17.100">...your employee and in that case the video screen is actually pretend</p>
+      <p begin="00:35:17.100" end="00:35:21.240">...the wire from the in the middle attack that's pretty stations.</p>
+      <p begin="00:35:21.240" end="00:35:24.630">In turnoff how to truce each feature is really and</p>
+      <p begin="00:35:24.630" end="00:35:29.540">galloway...sound a bit the needs of your business.</p>
+      <p begin="00:35:29.540" end="00:35:34.460">And, here is how we do dynamic encryption with the sm player</p>
+      <p begin="00:35:34.460" end="00:35:39.400">...as one of the very feel provider in the industry that...you have</p>
+      <p begin="00:35:39.400" end="00:35:44.040">a video content and story at with fasten transcoder into</p>
+      <p begin="00:35:44.040" end="00:35:47.890">adaptive...before and how...</p>
+      <p begin="00:35:47.890" end="00:35:53.160">You will define the following which is...asset you tell us what type of</p>
+      <p begin="00:35:53.160" end="00:35:58.080">key uone asti is to increase your content and a authorization</p>
+      <p begin="00:35:58.080" end="00:36:03.100">policy how do one...the key to your player you can say I want</p>
+      <p begin="00:36:03.100" end="00:36:06.710">total authentication...supplier gave me the right</p>
+      <p begin="00:36:06.710" end="00:36:11.040">...then I will you'll usually key to the player and</p>
+      <p begin="00:36:11.040" end="00:36:13.860">also apply ready license template is also in</p>
+      <p begin="00:36:13.860" end="00:36:19.470">...in the organization policy and also you need to tell asks which</p>
+      <p begin="00:36:20.790" end="00:36:25.080">...applied encryption upon...say I want to do abs with</p>
+      <p begin="00:36:25.080" end="00:36:27.990">...protocol and...player encryption</p>
+      <p begin="00:36:27.990" end="00:36:32.850">small straining you can define that in asset delivery policy.</p>
+      <p begin="00:36:32.850" end="00:36:33.530">And,...that</p>
+      <p begin="00:36:33.530" end="00:36:38.950">that's all configuration you're not doing any encryption yet our streaming and</p>
+      <p begin="00:36:38.950" end="00:36:42.950">...will dynamically encrypt...strain and packaging</p>
+      <p begin="00:36:42.950" end="00:36:47.740">...delivery to all the client and devices.</p>
+      <p begin="00:36:47.740" end="00:36:52.620">After that your client...screen in all had the key tikrit the</p>
+      <p begin="00:36:52.620" end="00:36:56.280">...right and that's usually happened sie log</p>
+      <p begin="00:36:56.280" end="00:37:00.720">in with your all authentication system can be and...likes users</p>
+      <p begin="00:37:00.720" end="00:37:05.390">subscription database and once the customer login they will get a</p>
+      <p begin="00:37:05.390" end="00:37:10.690">...where state coulda requests license...key to asks</p>
+      <p begin="00:37:10.690" end="00:37:13.930">...and we'll look at the toll...and say okay that</p>
+      <p begin="00:37:13.930" end="00:37:17.720">...contract...the player the key and</p>
+      <p begin="00:37:17.720" end="00:37:21.620">...key the player now can...the content and playback on</p>
+      <p begin="00:37:21.620" end="00:37:27.190">a device there are two things I want to mention first of all the encrypt</p>
+      <p begin="00:37:27.190" end="00:37:30.410">...content is delivered to http.</p>
+      <p begin="00:37:30.410" end="00:37:34.220">So, that you can...and in-between...and points and</p>
+      <p begin="00:37:34.220" end="00:37:38.270">...device...works fine because is http.</p>
+      <p begin="00:37:38.270" end="00:37:41.450">And,...key agitating happened...haiti...be</p>
+      <p begin="00:37:41.450" end="00:37:46.440">...which is a secure communication channel which means you're key and license whenever</p>
+      <p begin="00:37:46.440" end="00:37:49.810">I can transposed over the wire.</p>
+      <p begin="00:37:49.810" end="00:37:54.770">And, one of the great thing about dynamic encryption...in all days if...key</p>
+      <p begin="00:37:54.770" end="00:37:59.690">against linked what are going to do you have to decree of your content and re</p>
+      <p begin="00:37:59.690" end="00:38:03.310">...again to put up online for...now is</p>
+      <p begin="00:38:03.310" end="00:38:08.140">a simple configuration change I'm just going to change my concave and</p>
+      <p begin="00:38:08.140" end="00:38:15.670">...streaming server will pick up...new key and delivered encrypt content...away.</p>
+      <p begin="00:38:15.670" end="00:38:20.770">...the biggest problem one...role the services people don't</p>
+      <p begin="00:38:20.770" end="00:38:24.930">...kind so I want to add a tools flies here to tell you guys how</p>
+      <p begin="00:38:24.930" end="00:38:29.800">to composer token we support to token format simple at token and case</p>
+      <p begin="00:38:29.800" end="00:38:34.860">alive token...one of them widely used a token formats</p>
+      <p begin="00:38:34.860" end="00:38:39.190">in the industry...can be generated by anyone you</p>
+      <p begin="00:38:39.190" end="00:38:43.770">can use any library to generate annotation...any compels...</p>
+      <p begin="00:38:43.770" end="00:38:48.650">ensure audience not before and aspiration time and</p>
+      <p begin="00:38:48.650" end="00:38:53.070">you can sign...token using symmetric key or asymmetric key which is</p>
+      <p begin="00:38:53.070" end="00:38:59.840">...five online...and if you are represents...that</p>
+      <p begin="00:39:01.410" end="00:39:06.310">...is your player...means basically not before and aspiration is</p>
+      <p begin="00:39:06.310" end="00:39:11.820">one for how long you want to polk onto the ballot and token looks</p>
+      <p begin="00:39:11.820" end="00:39:16.420">...xml or...foul and you can sign...can which means</p>
+      <p begin="00:39:17.600" end="00:39:20.920">...or rsa...the</p>
+      <p begin="00:39:20.920" end="00:39:25.790">...with your symmetric key or asymmetric key and you...ask that whole kind</p>
+      <p begin="00:39:25.790" end="00:39:31.380">...signature so we know how to verify you and what...would be if I want to ensure</p>
+      <p begin="00:39:31.380" end="00:39:34.540">token...a player to retrace...key?</p>
+      <p begin="00:39:34.540" end="00:39:41.990">Will I am...the token to be shortly as the or long list?</p>
+      <p begin="00:39:41.990" end="00:39:46.690">Shortest awry because I don't want people to...usenet holden and...and may pass</p>
+      <p begin="00:39:46.690" end="00:39:51.700">the token along right and for the total workflow that.</p>
+      <p begin="00:39:51.700" end="00:39:56.690">...have a player and you need to build a backhand to actually I'll</p>
+      <p begin="00:39:56.690" end="00:40:00.190">...your player and...backhand signed jason</p>
+      <p begin="00:40:00.190" end="00:40:05.140">...and once the player against...player knows how to use the</p>
+      <p begin="00:40:05.140" end="00:40:09.130">...can to request key from us...token</p>
+      <p begin="00:40:09.130" end="00:40:14.730">to usthrough either authentication...or a parameterized...append on</p>
+      <p begin="00:40:14.730" end="00:40:19.560">the url and we will return the key to the player and then a player</p>
+      <p begin="00:40:19.560" end="00:40:24.730">complain that the content so let's go to tamil...if you guys</p>
+      <p begin="00:40:24.730" end="00:40:28.790">get lost you can try to understand it through the tamil.</p>
+      <p begin="00:40:28.790" end="00:40:33.180">And,...all of us.</p>
+      <p begin="00:40:33.180" end="00:40:36.520">So, audience the.</p>
+      <p begin="00:40:36.520" end="00:40:38.920">...and floral to.</p>
+      <p begin="00:40:38.920" end="00:40:43.740">The first thing you need to do is to...content.</p>
+      <p begin="00:40:43.740" end="00:40:47.870">...once you...hatcher key to the player you will be a new streaming</p>
+      <p begin="00:40:47.870" end="00:40:53.690">locate her generator because of the caches...to break...and after that</p>
+      <p begin="00:40:53.690" end="00:40:57.920">you can say I want to add a dynamic encryption and key</p>
+      <p begin="00:40:57.920" end="00:41:02.440">deliver policy for this asset so we're going to.</p>
+      <p begin="00:41:02.440" end="00:41:05.900">Large this function and I'm going to do a player</p>
+      <p begin="00:41:05.900" end="00:41:10.810">...common encryption...the delivery protocol that I want to unable</p>
+      <p begin="00:41:10.810" end="00:41:14.160">...encryption if I...and</p>
+      <p begin="00:41:14.160" end="00:41:19.580">...nhl as will be...for streaming a clear content.</p>
+      <p begin="00:41:19.580" end="00:41:23.160">...climax that it will ask you to either</p>
+      <p begin="00:41:23.160" end="00:41:27.570">you can last randomly generated key for you or you can give us</p>
+      <p begin="00:41:27.570" end="00:41:30.650">a key by giving us key aidid...key or tcb.</p>
+      <p begin="00:41:31.780" end="00:41:36.670">And,...xone xtwo configured toll content...which we give</p>
+      <p begin="00:41:36.670" end="00:41:43.870">you the option to do simple...symmetric...and...token with asymmetric</p>
+      <p begin="00:41:43.870" end="00:41:48.710">key so I'm going to do asymmetric key...token and</p>
+      <p begin="00:41:48.710" end="00:41:54.220">...a token property...and audience.</p>
+      <p begin="00:41:54.220" end="00:41:58.740">And, after that and giving the authorization policy and name</p>
+      <p begin="00:41:58.740" end="00:42:01.960">and here is where you can define the play ready template.</p>
+      <p begin="00:42:03.130" end="00:42:07.980">You can do persistent license or noun persistent license and also a bunch of</p>
+      <p begin="00:42:07.980" end="00:42:12.320">...settings...allow the to htm and poured</p>
+      <p begin="00:42:12.320" end="00:42:16.050">...and we can't feel and a.</p>
+      <p begin="00:42:16.050" end="00:42:20.800">I think this is like a hundred-page...status...player any team has for the</p>
+      <p begin="00:42:20.800" end="00:42:27.990">template...how complicated you can define with the rn and.</p>
+      <p begin="00:42:27.990" end="00:42:32.200">After that...tag so the system is going to...the configuration to</p>
+      <p begin="00:42:32.200" end="00:42:36.960">...encrypt the file on behalf and now the next step</p>
+      <p begin="00:42:36.960" end="00:42:41.830">is to create a locate so I'm going to publish this asset cray low-paid or</p>
+      <p begin="00:42:42.900" end="00:42:48.680">...aspiration date lice a year from now for instance.</p>
+      <p begin="00:42:48.680" end="00:42:50.500">...now it's encrypt</p>
+      <p begin="00:42:50.500" end="00:42:54.590">...dynamic encryption cn c and</p>
+      <p begin="00:42:54.590" end="00:43:03.730">it is published that we'll get a screaming locate are here.</p>
+      <p begin="00:43:03.730" end="00:43:08.620">Which you can see from the sally information I have the ssl here and</p>
+      <p begin="00:43:08.620" end="00:43:11.940">have content heat...to this file and also I</p>
+      <p begin="00:43:11.940" end="00:43:15.650">have delivery policy the authorization policy that</p>
+      <p begin="00:43:15.650" end="00:43:19.900">...the token configuration here all the information can backtrack from this</p>
+      <p begin="00:43:19.900" end="00:43:26.340">too and now I'm going to play this foul using...media player?</p>
+      <p begin="00:43:26.340" end="00:43:30.220">The gripping about asher media services has flora as he</p>
+      <p begin="00:43:30.220" end="00:43:35.130">simulate a percents of your token...signage to ensure token to the player</p>
+      <p begin="00:43:35.130" end="00:43:39.830">...says create a task token analysis...give it</p>
+      <p begin="00:43:39.830" end="00:43:44.430">...time by five minutes later and open is has token</p>
+      <p begin="00:43:44.430" end="00:43:47.300">omen is player and now let me</p>
+      <p begin="00:43:47.300" end="00:43:51.690">...myself you can see that it is a small streaming content</p>
+      <p begin="00:43:51.690" end="00:43:56.730">...playback the...silverlight with...because I'm using crawl now</p>
+      <p begin="00:43:56.730" end="00:43:59.850">so if I bring this manifests.</p>
+      <p begin="00:44:00.970" end="00:44:06.390">Open it up I'll show you guys why this is protected.</p>
+      <p begin="00:44:06.390" end="00:44:07.310">A manifests</p>
+      <p begin="00:44:07.310" end="00:44:12.230">...is the same as sapped there is a protection header here is a</p>
+      <p begin="00:44:12.230" end="00:44:17.970">...sixty-four encoder binary which can be read by the player...st.</p>
+      <p begin="00:44:17.970" end="00:44:19.740">It's a license your</p>
+      <p begin="00:44:19.740" end="00:44:23.440">...decoded...the license id that's how the</p>
+      <p begin="00:44:23.440" end="00:44:28.170">licensing information gets carried in the manifests and if I was</p>
+      <p begin="00:44:29.610" end="00:44:34.690">...this url and...because I...implement the</p>
+      <p begin="00:44:34.690" end="00:44:40.610">anywheres play ready supports and now you can see that.</p>
+      <p begin="00:44:40.610" end="00:44:45.250">...player is playing back and telescope the player is playing back</p>
+      <p begin="00:44:45.250" end="00:44:52.630">...content which I think that's really a great implementation that the</p>
+      <p begin="00:44:52.630" end="00:44:55.500">So, I said.</p>
+      <p begin="00:44:55.500" end="00:45:00.320">I want to kung fu online content protection...part of the</p>
+      <p begin="00:45:00.320" end="00:45:05.510">...where she can use...easily to deal with asher as borrow to</p>
+      <p begin="00:45:05.510" end="00:45:10.330">...api...is a pretty complicated and hard area than</p>
+      <p begin="00:45:10.330" end="00:45:16.470">I hope you guys can general idea of how-to-do-it through this...</p>
+      <p begin="00:45:16.470" end="00:45:20.660">And, we'll move on to the most exciting part of the session and also the</p>
+      <p begin="00:45:20.660" end="00:45:23.760">...part of the session now we're going to talk about</p>
+      <p begin="00:45:23.760" end="00:45:29.280">...encoding and straining how you can make a working.</p>
+      <p begin="00:45:29.280" end="00:45:32.020">And, the first...in the system is to</p>
+      <p begin="00:45:32.020" end="00:45:36.960">...something we call life channel so imagine this is like a box with spin-off for</p>
+      <p begin="00:45:36.960" end="00:45:41.140">you to receive...and we expose</p>
+      <p begin="00:45:41.140" end="00:45:45.850">...url allows you to portion...</p>
+      <p begin="00:45:45.850" end="00:45:48.850">And, you...a input...or a on</p>
+      <p begin="00:45:48.850" end="00:45:53.350">premises encoder that push content.</p>
+      <p begin="00:45:53.350" end="00:45:56.880">In...artie p rt npr...</p>
+      <p begin="00:45:58.060" end="00:46:01.460">And, one of the feature...we introduced</p>
+      <p begin="00:46:01.460" end="00:46:06.310">...encoder which allows this enhance point...forward a single</p>
+      <p begin="00:46:06.310" end="00:46:09.440">...rates...and we're going to</p>
+      <p begin="00:46:09.440" end="00:46:15.780">...into...right...function of life encoding and which is never</p>
+      <p begin="00:46:15.780" end="00:46:17.630">...from a to...</p>
+      <p begin="00:46:18.670" end="00:46:20.880">And,...that.</p>
+      <p begin="00:46:20.880" end="00:46:25.540">...forward to preview module and prevail is going transpose a</p>
+      <p begin="00:46:25.540" end="00:46:29.860">premium url which allows you to inspect the health of the</p>
+      <p begin="00:46:29.860" end="00:46:34.490">strain and also for soccer game for instance all the commentary are done</p>
+      <p begin="00:46:34.490" end="00:46:37.280">...watching...url and ness sending</p>
+      <p begin="00:46:37.280" end="00:46:42.890">...tracking again...url...afterwards...nalyze</p>
+      <p begin="00:46:42.890" end="00:46:47.130">...into program because nothing it's actually saved</p>
+      <p begin="00:46:47.130" end="00:46:52.290">...previous module program audio as what to make</p>
+      <p begin="00:46:52.290" end="00:46:54.700">...in your storage</p>
+      <p begin="00:46:54.700" end="00:46:57.860">...calmer data into fragment and pfour and</p>
+      <p begin="00:46:57.860" end="00:47:03.770">...to blob storage for dvr functionality can have illustrating with</p>
+      <p begin="00:47:03.770" end="00:47:09.820">a several ourself dvr window after that...streaming and...will pick have the</p>
+      <p begin="00:47:09.820" end="00:47:14.620">screen and doing panic encryption or dynamic packaging dislike the</p>
+      <p begin="00:47:14.620" end="00:47:16.620">...screen.</p>
+      <p begin="00:47:16.620" end="00:47:20.930">...that it gets delivered for the city and.</p>
+      <p begin="00:47:20.930" end="00:47:22.200">As a program</p>
+      <p begin="00:47:22.200" end="00:47:27.130">your how you use the eventually to inviting a player to play backlash</p>
+      <p begin="00:47:27.130" end="00:47:33.450">...and one of the great thing about life...is really about</p>
+      <p begin="00:47:33.450" end="00:47:37.580">before without this module...one-time multi-band</p>
+      <p begin="00:47:37.580" end="00:47:42.390">...strain your devise or on premises encoder has</p>
+      <p begin="00:47:42.390" end="00:47:44.890">to encoder firstly right it's a pretty</p>
+      <p begin="00:47:44.890" end="00:47:48.370">cbo intensive activity which means you need a hired</p>
+      <p begin="00:47:48.370" end="00:47:53.200">...the capability machine but now since the encoding is shifting to the</p>
+      <p begin="00:47:53.200" end="00:47:57.130">...a lot of devise can do this now because it doesn't require</p>
+      <p begin="00:47:57.130" end="00:47:59.160">high help cpu.</p>
+      <p begin="00:47:59.160" end="00:48:01.240">Another advantage in static is</p>
+      <p begin="00:48:01.240" end="00:48:05.240">...if you bandwidths before you're sending multi res</p>
+      <p begin="00:48:05.240" end="00:48:10.010">strain and now you're only sending the highest bit rate of your straying and</p>
+      <p begin="00:48:10.010" end="00:48:11.890">...the clouded</p>
+      <p begin="00:48:11.890" end="00:48:17.490">...lifting work and that's...a benefit live-streaming case too.</p>
+      <p begin="00:48:17.490" end="00:48:21.130">And, we as suppose arrests api of course allows you to programmatic</p>
+      <p begin="00:48:21.130" end="00:48:25.290">...interact with the service.</p>
+      <p begin="00:48:25.290" end="00:48:26.820">...you wanted to dynamic</p>
+      <p begin="00:48:26.820" end="00:48:32.190">encryption very quickly I will show you the architecture...stream into</p>
+      <p begin="00:48:32.190" end="00:48:36.780">...all program and a...into the storage and</p>
+      <p begin="00:48:36.780" end="00:48:43.410">...we do everything...authorization policy and</p>
+      <p begin="00:48:43.410" end="00:48:47.590">...policy on the assets the streaming and poynter</p>
+      <p begin="00:48:47.590" end="00:48:52.170">...dynamically encrypt your live-streaming on-the-fly and</p>
+      <p begin="00:48:52.170" end="00:48:56.880">...player...player is going to talk to your authentication system.</p>
+      <p begin="00:48:56.880" end="00:49:01.240">Of...and use the toll kind to all panicky and can</p>
+      <p begin="00:49:01.240" end="00:49:05.290">...playback if you follow me for the first part of the</p>
+      <p begin="00:49:05.290" end="00:49:11.620">presentation you may find this architecture very easy-to-understand is the same as...</p>
+      <p begin="00:49:11.620" end="00:49:15.310">And, now let's move on to the most exciting part.</p>
+      <p begin="00:49:15.310" end="00:49:26.030">The demo.</p>
+      <p begin="00:49:26.030" end="00:49:30.570">...less navigate to channel tab.</p>
+      <p begin="00:49:30.570" end="00:49:34.930">We had a new channel analyze say.</p>
+      <p begin="00:49:34.930" end="00:49:36.640">Test handle.</p>
+      <p begin="00:49:36.640" end="00:49:42.480">...and there is a new things coming out call encoding...can</p>
+      <p begin="00:49:42.480" end="00:49:43.310">...standards.</p>
+      <p begin="00:49:46.050" end="00:49:51.970">You allow see the...ingest protocol unless truce...he and he for now.</p>
+      <p begin="00:49:51.970" end="00:49:56.730">...also have something new...signalling so I can say yes let me do at</p>
+      <p begin="00:49:56.730" end="00:49:58.810">...and I'll show you</p>
+      <p begin="00:49:58.810" end="00:50:03.890">...it...in the demo and I can choose a slate which means we can send a</p>
+      <p begin="00:50:03.890" end="00:50:08.600">...into the strain...with this image that say if this</p>
+      <p begin="00:50:08.600" end="00:50:14.370">...break time of the session you hand you can do that after</p>
+      <p begin="00:50:14.370" end="00:50:19.090">that it is feel a encoding preset for your life encoding</p>
+      <p begin="00:50:19.090" end="00:50:23.980">...now we do a...seven twenty pi encoding you can see there are several layers</p>
+      <p begin="00:50:23.980" end="00:50:30.660">hear from a high profile to baseline alice different bit rate.</p>
+      <p begin="00:50:30.660" end="00:50:34.960">And, of course we are will allow you to define your only encoding preset later</p>
+      <p begin="00:50:34.960" end="00:50:39.070">...the service heats avail a publicly available and how</p>
+      <p begin="00:50:39.070" end="00:50:42.020">...add how all...we fiction you</p>
+      <p begin="00:50:42.020" end="00:50:46.930">...the to your current ip and starlight panel now okay and the</p>
+      <p begin="00:50:46.930" end="00:50:53.070">...takes a feel men so I will use one-way...a...</p>
+      <p begin="00:50:53.070" end="00:50:56.220">Is allies encoding channel...there are</p>
+      <p begin="00:50:56.220" end="00:50:59.690">...ingest url now that's...important within state</p>
+      <p begin="00:50:59.690" end="00:51:04.030">...month because, you know, sometime one of the and can three-star that the</p>
+      <p begin="00:51:04.030" end="00:51:07.670">enhance url make it with these connect and that's why we give you a</p>
+      <p begin="00:51:07.670" end="00:51:12.210">...have url which you can also put into encoder in case one</p>
+      <p begin="00:51:12.210" end="00:51:14.850">...the other one can continually in jess</p>
+      <p begin="00:51:14.850" end="00:51:20.730">...that's very useful for a lot of broadcasters?</p>
+      <p begin="00:51:20.730" end="00:51:24.150">And, I'm going to grab the input url and starting</p>
+      <p begin="00:51:24.150" end="00:51:30.090">...tool color cost this is one of our partners solution which are close</p>
+      <p begin="00:51:30.090" end="00:51:34.170">...straying into the cloud.</p>
+      <p begin="00:51:34.170" end="00:51:37.970">And, choosing...media services profile here and clay</p>
+      <p begin="00:51:37.970" end="00:51:42.370">...and pacing the ingest url here.</p>
+      <p begin="00:51:42.370" end="00:51:48.170">...customize the profile a...which I'll show you guys mantel we allow</p>
+      <p begin="00:51:48.170" end="00:51:51.720">...concept...to sixty-four and someone asked protocol</p>
+      <p begin="00:51:51.720" end="00:51:57.090">...now it was size...frames as a key frames</p>
+      <p begin="00:51:57.090" end="00:52:04.390">...also time-code ava thirty frames.</p>
+      <p begin="00:52:04.390" end="00:52:05.350">Click...says.</p>
+      <p begin="00:52:06.400" end="00:52:10.920">And, playing okay and I'm going to...myself.</p>
+      <p begin="00:52:10.920" end="00:52:14.480">...camera here.</p>
+      <p begin="00:52:14.480" end="00:52:20.250">One thing I...you guys now...and actually encoding to only one bit rate is</p>
+      <p begin="00:52:20.250" end="00:52:24.900">seven-point...okay I'm only sending a single bit...and clay</p>
+      <p begin="00:52:24.900" end="00:52:28.910">constraint so now the streaming sending over the wire</p>
+      <p begin="00:52:28.910" end="00:52:31.600">and you can see that I'm having a pretty high...</p>
+      <p begin="00:52:32.620" end="00:52:35.840">...it drops...good.</p>
+      <p begin="00:52:35.840" end="00:52:38.340">Is correlated to the?</p>
+      <p begin="00:52:38.340" end="00:52:42.560">...the demo will succeed and then the stream is going to</p>
+      <p begin="00:52:42.560" end="00:52:47.110">...channel and we can see it...the preview url.</p>
+      <p begin="00:52:47.110" end="00:52:51.850">And, now hopefully this will get...so this is a...because it's telling me my</p>
+      <p begin="00:52:51.850" end="00:52:56.400">...doesn't have enough data...at so all-star...when you have</p>
+      <p begin="00:52:56.400" end="00:52:59.480">...one-in-ten data account site...started again.</p>
+      <p begin="00:53:00.590" end="00:53:05.180">And, which we should see the video shows up here ok good grades and</p>
+      <p begin="00:53:05.180" end="00:53:11.700">why annapolis can...by...here because I'm...and unloading...the same?</p>
+      <p begin="00:53:11.700" end="00:53:17.110">The magic thing I'll show you alliances the preview your...file open it up.</p>
+      <p begin="00:53:17.110" end="00:53:20.460">Remember our only encode my media into seventy page</p>
+      <p begin="00:53:20.460" end="00:53:22.170">...of how open it up here.</p>
+      <p begin="00:53:23.450" end="00:53:28.610">You see all the bit rate up here because the lice encoding simply...into</p>
+      <p begin="00:53:28.610" end="00:53:32.700">...lot of it right I think that's a great thing that you shifting that to have</p>
+      <p begin="00:53:32.700" end="00:53:37.540">a lifting work into the cloud and...very useful.</p>
+      <p begin="00:53:37.540" end="00:53:38.230">...I'm going to</p>
+      <p begin="00:53:38.230" end="00:53:43.330">...sand and create a program tool archive my...and</p>
+      <p begin="00:53:43.330" end="00:53:47.770">I can say this is a clear program with for hours dvr.</p>
+      <p begin="00:53:47.770" end="00:53:51.670">And,publish the...one.</p>
+      <p begin="00:53:51.670" end="00:53:55.870">So, now the last way will be writing into storage...the same</p>
+      <p begin="00:53:55.870" end="00:54:00.000">...saying I want another program I want to encrypted program</p>
+      <p begin="00:54:00.000" end="00:54:03.140">soul others don't see it I can say I want to</p>
+      <p begin="00:54:03.140" end="00:54:07.710">...crypto program I understood the right away and another program</p>
+      <p begin="00:54:07.710" end="00:54:11.860">spin-off with encryption.</p>
+      <p begin="00:54:11.860" end="00:54:23.440">is creating a program now so now if I start this clear program?</p>
+      <p begin="00:54:23.440" end="00:54:29.840">I could be able to see thestray running so I'm going to use the.</p>
+      <p begin="00:54:29.840" end="00:54:32.330">Actual player demo sides.</p>
+      <p begin="00:54:33.450" end="00:54:42.780">Marty...</p>
+      <p begin="00:54:42.780" end="00:54:48.500">And, now you can see the program is running.</p>
+      <p begin="00:54:48.500" end="00:54:51.530">Please lola players.</p>
+      <p begin="00:54:51.530" end="00:54:56.320">All I can try here as well.</p>
+      <p begin="00:54:56.320" end="00:55:08.450">So, that you should see the...now is getting.</p>
+      <p begin="00:55:08.450" end="00:55:12.970">Which limit headline coder gasoline see that's the problem we doesn't as</p>
+      <p begin="00:55:14.160" end="00:55:18.360">...connections that because of the...that a stream</p>
+      <p begin="00:55:18.360" end="00:55:23.200">is not getting pushed into the cloud...it happens in life</p>
+      <p begin="00:55:23.200" end="00:55:28.170">...like this but you guys...appoint right?</p>
+      <p begin="00:55:28.170" end="00:55:32.790">So, unfortunately but that's a great...actually tells me there's something wrong with the encryption</p>
+      <p begin="00:55:32.790" end="00:55:37.560">...the...of the content.</p>
+      <p begin="00:55:37.560" end="00:55:40.180">Which let me switch back to that and</p>
+      <p begin="00:55:40.180" end="00:55:44.930">...this page factors...</p>
+      <p begin="00:55:44.930" end="00:55:49.340">But, at least I showed you the first part of the demo which utilizing coda</p>
+      <p begin="00:55:49.340" end="00:55:56.350">strain and if...could, you know, the bandwidth for extended can see the</p>
+      <p begin="00:55:56.350" end="00:56:00.690">...archiving into the cloud as well and now I want to recapping</p>
+      <p begin="00:56:00.690" end="00:56:05.110">...of features that we allows utilize encoding a single bit rates</p>
+      <p begin="00:56:05.110" end="00:56:09.490">and to adaptive...rates we take our...</p>
+      <p begin="00:56:09.490" end="00:56:15.140">You can send and,...a mpeg transfer strain arty page</p>
+      <p begin="00:56:15.140" end="00:56:19.020">...ansi...protocol and there's one thing I</p>
+      <p begin="00:56:19.020" end="00:56:24.210">...show you guys once the...signaling that...allows the channel to</p>
+      <p begin="00:56:24.210" end="00:56:30.000">send a slight so that a...actually guessing coda</p>
+      <p begin="00:56:30.000" end="00:56:34.950">...with the...and also get a thumbnail preview of the life aid</p>
+      <p begin="00:56:34.950" end="00:56:40.790">and we do dynamic packaging of the live-streaming into hotel as some</p>
+      <p begin="00:56:40.790" end="00:56:49.460">small straining hd and send also dynamically encrypt the straying.</p>
+      <p begin="00:56:49.460" end="00:56:51.290">And, this trying again</p>
+      <p begin="00:56:51.290" end="00:56:58.220">lifeline the identity same the internet is picking up here.</p>
+      <p begin="00:56:58.220" end="00:57:00.820">Yeah, so.</p>
+      <p begin="00:57:00.820" end="00:57:05.990">...quality and spaniels alone time...</p>
+      <p begin="00:57:05.990" end="00:57:09.600">I want to give you guys...key take away that media services are very</p>
+      <p begin="00:57:09.600" end="00:57:13.250">easy flexible and powerful to use and we want you guys</p>
+      <p begin="00:57:13.250" end="00:57:17.680">who really forget about all the complexity in a fragmentation streaming</p>
+      <p begin="00:57:17.680" end="00:57:21.670">protocol now we have the player allows your customer to</p>
+      <p begin="00:57:21.670" end="00:57:25.570">...the content any devising using any protocol and...</p>
+      <p begin="00:57:25.570" end="00:57:30.900">the use easywill have very easy understanding failing and ultimately we wanted to</p>
+      <p begin="00:57:30.900" end="00:57:35.850">delivery or media on any...delivered in the cloud...said</p>
+      <p begin="00:57:35.850" end="00:57:39.870">...you guys with some of the resources which you can check</p>
+      <p begin="00:57:39.870" end="00:57:46.330">on the information and also there is also see content on</p>
+      <p begin="00:57:46.330" end="00:57:51.520">the information about actions platform and also we have two hundred free credit</p>
+      <p begin="00:57:51.520" end="00:57:54.920">...tryout...media services...for</p>
+      <p begin="00:57:54.920" end="00:58:01.480">...the developer the best way to learn is to...your hands dirty and...</p>
+      <p begin="00:58:01.480" end="00:58:01.970">And, also</p>
+      <p begin="00:58:01.970" end="00:58:07.470">the val as I said I will and like presentation here and thank you so my</p>
+      <p begin="00:58:07.470" end="00:58:18.540">...and hope you had a great build conference thank you.</p>
+      <p begin="00:58:18.540" end="00:58:24.020">And, we can take question now so I didn't action actually the as...us in</p>
+      <p begin="00:58:24.020" end="00:58:28.710">a backhand slot in...forming...false.</p>
+      <p begin="00:58:28.710" end="00:58:45.350">...it for the...social media.</p>
+      <p begin="00:58:45.350" end="00:58:49.550">So, that's a good question for enhance...cs</p>
+      <p begin="00:58:49.550" end="00:58:54.090">...four-h elan singly was natively support</p>
+      <p begin="00:58:54.090" end="00:58:56.650">...iphone for player any protect</p>
+      <p begin="00:58:56.650" end="00:59:01.990">...content need for envoy and ios you will need to build app using</p>
+      <p begin="00:59:01.990" end="00:59:06.830">...clients detect way to owned by the...ready team</p>
+      <p begin="00:59:06.830" end="00:59:15.870">...there is no what player that...reading crypto content player.</p>
+      <p begin="00:59:15.870" end="00:59:19.170">...wasnatively support...by</p>
+      <p begin="00:59:19.170" end="00:59:24.610">hl aasl android and if you build you want to build a native application is you know,</p>
+      <p begin="00:59:24.610" end="00:59:28.460">I...sdk it is work from the sdk south.</p>
+      <p begin="00:59:28.460" end="00:59:37.580">And, now if you're using a web...self-support abs description.</p>
+      <p begin="00:59:37.580" end="00:59:38.690">Yes,</p>
+      <p begin="00:59:38.690" end="00:59:46.190">it was in the...is happens within the browser implementation on the phone itself.</p>
+      <p begin="00:59:46.190" end="00:59:51.710">Yeah, it was a supported encryption formants you don't need anything</p>
+      <p begin="00:59:51.710" end="01:00:08.710">astral and for aasl...the...</p>
+      <p begin="01:00:09.730" end="01:00:14.080">Pshaw as I said and takes is one of the things that coming on</p>
+      <p begin="01:00:14.080" end="01:00:19.120">...media player and now was one of the tracking events that you can</p>
+      <p begin="01:00:19.120" end="01:00:23.390">easily get from the...we can send you...</p>
+      <p begin="01:00:23.390" end="01:00:28.660">you can define how often you want a player to...and behaviors to your backhand service and</p>
+      <p begin="01:00:28.660" end="01:00:33.590">...the...it doesn't have it right now on a player but</p>
+      <p begin="01:00:33.590" end="01:00:58.990">...part of the antics framework and iowa's mentioning which is coming...</p>
+      <p begin="01:00:58.990" end="01:01:05.330">For whatever state actually I'll try this my work which you see I'm going to I really</p>
+      <p begin="01:01:05.330" end="01:01:10.170">hate is...fineyou can...and enslaved</p>
+      <p begin="01:01:10.170" end="01:01:14.720">okay so we ascending a...thirty-five signal into</p>
+      <p begin="01:01:14.720" end="01:01:19.770">the manifests it shows that you id and also duration so which</p>
+      <p begin="01:01:19.770" end="01:01:26.590">was...in a feel seconds which...here because my...</p>
+      <p begin="01:01:26.590" end="01:01:31.450">Yeah, it's...buffered here.</p>
+      <p begin="01:01:31.450" end="01:01:36.050">And, network is, yeah, so, you can see I was still...delay</p>
+      <p begin="01:01:36.050" end="01:01:40.860">...from the preview url but how you will show up later and the difference</p>
+      <p begin="01:01:40.860" end="01:01:45.380">between...ads and...the...insert ad is this, yeah,</p>
+      <p begin="01:01:45.380" end="01:01:50.700">so, I had a...prepared which...about thirty seconds and imagine...</p>
+      <p begin="01:01:50.700" end="01:01:56.110">demo found among the gentleman over there can in-service...so we'll see</p>
+      <p begin="01:01:56.110" end="01:02:01.530">the...online...a great time...you're doing some other things</p>
+      <p begin="01:02:01.530" end="01:02:05.860">...advertisements and only thing we don't do now for a moment is to</p>
+      <p begin="01:02:05.860" end="01:02:09.980">...video so you...need to listen to the</p>
+      <p begin="01:02:09.980" end="01:02:14.060">scotty thirty-five signal on a...south and replace it with</p>
+      <p begin="01:02:14.060" end="01:02:19.860">...video and that's how you can speech...even see the...this appear to be has I only</p>
+      <p begin="01:02:19.860" end="01:02:26.020">...a inserted...as signal for thirty seconds.</p>
+      <p begin="01:02:26.020" end="01:02:29.120">...phillip I was actually build into the</p>
+      <p begin="01:02:29.120" end="01:02:44.880">...cells which are we at we only send a signal...</p>
+      <p begin="01:02:44.880" end="01:02:56.340">Yes, it's you can check out alliances...customize...as well.</p>
+      <p begin="01:02:56.340" end="01:02:59.610">You see that's the thing...work conference...and</p>
+      <p begin="01:02:59.610" end="01:03:07.790">...line magically...how...when you to the real them all.</p>
+      <p begin="01:03:07.790" end="01:03:10.880">And, yes.</p>
+      <p begin="01:03:10.880" end="01:03:12.900">But, I don't want...to...anyway.</p>
+      <p begin="01:03:13.980" end="01:03:23.990">Any other questions.</p>
+      <p begin="01:03:23.990" end="01:03:27.320">You can see so...do.</p>
+      <p begin="01:03:27.320" end="01:03:30.020">So, only so for all the ultra dash.</p>
+      <p begin="01:03:30.020" end="01:03:34.120">Which you only have a...stash streaming with...track</p>
+      <p begin="01:03:34.120" end="01:03:40.810">...don't do audio straining that...for the moments we meaningful condyle medial?</p>
+      <p begin="01:03:40.810" end="01:03:49.960">We do have all customer...requests on so we might add...capability later, yeah.</p>
+      <p begin="01:03:49.960" end="01:03:53.020">...well, thank you so much.</p>
+
+    </div>
+  </body>
+</tt>

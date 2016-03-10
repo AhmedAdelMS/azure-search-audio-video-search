@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.881</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.020" end="00:00:03.740">Welcome back to build twenty fifteen this is the internet of things show</p>
+      <p begin="00:00:03.740" end="00:00:08.470">alive and I'm larry larson join hundred-year gavin</p>
+      <p begin="00:00:08.470" end="00:00:10.870">...to share on the...windows of</p>
+      <p begin="00:00:10.870" end="00:00:15.180">...devices peep brown I work on apps for musicians and</p>
+      <p begin="00:00:15.180" end="00:00:21.680">io to devices and...on our...your io together.</p>
+      <p begin="00:00:21.680" end="00:00:26.730">Great so, let's talk about some of the announcements that we've had this week so</p>
+      <p begin="00:00:26.730" end="00:00:30.570">...all join here altering makes it easy to interoperate with</p>
+      <p begin="00:00:30.570" end="00:00:35.160">...devices we built into windows ten and we had some your business</p>
+      <p begin="00:00:35.160" end="00:00:40.630">...onstage announcing...integration for their...to.</p>
+      <p begin="00:00:40.630" end="00:00:44.050">The scoliosis that we...what have.</p>
+      <p begin="00:00:44.050" end="00:00:49.040">Rate...availability of raspberry...windows builds...from...</p>
+      <p begin="00:00:49.040" end="00:00:54.580">max cool stuff we can play with renounce partnerships yesterday with our do we know with raspberry</p>
+      <p begin="00:00:54.580" end="00:01:00.780">...foundation...captured...great and what is the device that you've gotten</p>
+      <p begin="00:01:00.780" end="00:01:05.160">...your...this devices an enterprise quality of</p>
+      <p begin="00:01:05.160" end="00:01:07.620">...industrial robot</p>
+      <p begin="00:01:07.620" end="00:01:13.570">actually used to make automobiles believe it or not what it's got a couple motors inside here it's got</p>
+      <p begin="00:01:13.570" end="00:01:18.320">...reply on top of I have a universal windows application that drives</p>
+      <p begin="00:01:18.320" end="00:01:23.110">this thingthree I opens on my raspberry pi I can make it go forward I can make go back and</p>
+      <p begin="00:01:23.110" end="00:01:27.420">...xbox controller...this thing so we've got it upstairs for folks</p>
+      <p begin="00:01:27.420" end="00:01:31.580">here the conference...of mess around with them learn how to...</p>
+      <p begin="00:01:31.580" end="00:01:36.470">That's all csharp...on that it's all csharp code the apps that we've kind</p>
+      <p begin="00:01:36.470" end="00:01:39.690">...written all csharp code but in fact since it's universal windows</p>
+      <p begin="00:01:39.690" end="00:01:45.560">platform provided cplus-plus...any...language.</p>
+      <p begin="00:01:45.560" end="00:01:50.060">Great so we'll be taking your questions live to so if you go to</p>
+      <p begin="00:01:50.060" end="00:01:56.480">chow mein page scroll download the player and...your questions and...those...</p>
+      <p begin="00:01:56.480" end="00:01:57.910">So, gavin</p>
+      <p begin="00:01:57.910" end="00:02:02.820">tells a little bit more about what went on this week and what other things were going to be talking about</p>
+      <p begin="00:02:04.260" end="00:02:09.180">...perspective on all dryness technology and here to talk about so</p>
+      <p begin="00:02:09.180" end="00:02:13.160">...little...than year-ago microsoft...them all seen alliance</p>
+      <p begin="00:02:13.160" end="00:02:17.850">all seen alliances the organization around all during which is and opensource</p>
+      <p begin="00:02:17.850" end="00:02:22.060">cross-platform device communication framework and it's the largest</p>
+      <p begin="00:02:23.590" end="00:02:27.680">open-source code base that we've built into windows we built into windows ten</p>
+      <p begin="00:02:27.680" end="00:02:31.660">...really easy to write universal windows apps that can connect</p>
+      <p begin="00:02:31.660" end="00:02:36.180">...discover consumer to devices in-home setting something about</p>
+      <p begin="00:02:36.180" end="00:02:41.440">...so that's a little bit about what I've been up to the same even do some</p>
+      <p begin="00:02:41.440" end="00:02:48.450">constant...we haverecently announced not just the...righty services</p>
+      <p begin="00:02:48.450" end="00:02:53.730">but,...upcoming address...sweep is a set of apps that developers can provision</p>
+      <p begin="00:02:53.730" end="00:02:57.700">quickly get started with the proof of concept of for free</p>
+      <p begin="00:02:57.700" end="00:03:04.620">...take that same solution and scale it up to extreme...</p>
+      <p begin="00:03:04.620" end="00:03:06.800">Great so we've got a question from james</p>
+      <p begin="00:03:06.800" end="00:03:14.660">c says if using art window with windows stand especial hardware require.</p>
+      <p begin="00:03:15.680" end="00:03:19.100">Easy enough that's...that's...</p>
+      <p begin="00:03:19.100" end="00:03:24.270">So, what I'll show this a little bit my session...a few hours this afternoon well,</p>
+      <p begin="00:03:24.270" end="00:03:26.010">the way we've implemented this is I can taken</p>
+      <p begin="00:03:26.010" end="00:03:29.350">...we know which typically the microcontroller based</p>
+      <p begin="00:03:29.350" end="00:03:34.140">...so doesn't run windows it doesn't run any operating system in fact and,</p>
+      <p begin="00:03:34.140" end="00:03:39.090">I could take that are tweet on that I compared to windows device and I...get the best of both worlds I can use my</p>
+      <p begin="00:03:39.090" end="00:03:43.710">art...to really drive hardware very deterministic in ...</p>
+      <p begin="00:03:43.710" end="00:03:48.440">secure reliable way...I can use windows offload all the processing if I wanted to speak all</p>
+      <p begin="00:03:48.440" end="00:03:52.900">join from...talk to the cloud I can use windows problem those capabilities and</p>
+      <p begin="00:03:52.900" end="00:03:58.050">we've made a really easy to talk back and forth between...devices...windows device so steve</p>
+      <p begin="00:03:58.050" end="00:04:03.440">if someone is going to write codes can control robot like this tell me about the developer experience</p>
+      <p begin="00:04:03.440" end="00:04:10.240">where would you start assuming in visual studio team being...cool things because that's just?</p>
+      <p begin="00:04:10.240" end="00:04:14.940">Video...start by that building universal application we've got a we've got a</p>
+      <p begin="00:04:14.940" end="00:04:16.710">small some small sdk extensions</p>
+      <p begin="00:04:16.710" end="00:04:21.130">the people can use to get some of the very coyotes specific stuff but,</p>
+      <p begin="00:04:21.130" end="00:04:24.840">the idea is if you...to build the napping windows your now and I ot</p>
+      <p begin="00:04:24.840" end="00:04:29.690">developer you pretty much know which need to know learn a little bit about how to drive the...and how to do</p>
+      <p begin="00:04:29.690" end="00:04:34.980">...of the hardware other than that...windows developer your night?</p>
+      <p begin="00:04:34.980" end="00:04:39.390">Right...another question from our...much online viewer thanks for watching...how does one</p>
+      <p begin="00:04:39.390" end="00:04:44.310">...work with things like dpiwm and fbi.</p>
+      <p begin="00:04:44.310" end="00:04:49.350">...implemented as a universal windows platform api so I</p>
+      <p begin="00:04:49.350" end="00:04:53.800">from within the context of a...a I can I can access</p>
+      <p begin="00:04:53.800" end="00:04:58.050">ppi can access I squared see I can get it all the buses that I would expect to get</p>
+      <p begin="00:04:58.050" end="00:05:02.640">too the other thing that we're working on although we're not releasing this of build...be</p>
+      <p begin="00:05:02.640" end="00:05:07.080">...probably a couple months out is support for art we know wiring within</p>
+      <p begin="00:05:07.080" end="00:05:12.440">mywithin my universal...so if I don't want to use you know,</p>
+      <p begin="00:05:12.440" end="00:05:15.810">w pr want to bring language that I've got community existing are</p>
+      <p begin="00:05:15.810" end="00:05:20.850">...sketch I can easily go do that run that as well that needed supporters really awesome because,</p>
+      <p begin="00:05:20.850" end="00:05:26.040">you know, compared to imbedded linux development on raspberry pie for instance it's really easy to do a</p>
+      <p begin="00:05:26.040" end="00:05:31.360">bunch of stuff but to find dpi or code that would work I had to get some code off the internet and</p>
+      <p begin="00:05:31.360" end="00:05:36.700">had...is...so to have you know, namespaces that you can just enumerating your code...use</p>
+      <p begin="00:05:36.700" end="00:05:41.860">...sense I'm really looking forward to playing with that actually totally fucked, yeah,</p>
+      <p begin="00:05:41.860" end="00:05:46.560">so, one of the things that are one of our partners is working on...it is building upon that</p>
+      <p begin="00:05:46.560" end="00:05:51.580">to add-in support for gadget here on top of those same api so if you're familiar with</p>
+      <p begin="00:05:51.580" end="00:05:56.020">a micro frameworks that...the same shields the same devices the same</p>
+      <p begin="00:05:56.020" end="00:06:00.000">sensors and everything but it shows how complete this api said is that we can build</p>
+      <p begin="00:06:00.000" end="00:06:06.210">oct right on top of that just like we are without...here the show were showing all drawing support</p>
+      <p begin="00:06:06.210" end="00:06:11.700">in core which is the sort of lean and mean version of all joint running on dot net</p>
+      <p begin="00:06:11.700" end="00:06:17.450">...shown early preview at when hack and now they've actually got it running up and move so it's very fully</p>
+      <p begin="00:06:17.450" end="00:06:22.610">features that are team is working on doing the work in dot net micro framework to make sure that the</p>
+      <p begin="00:06:22.610" end="00:06:27.380">...api compatibility between the code I would write for very small microcontroller device</p>
+      <p begin="00:06:27.380" end="00:06:32.240">and dot micro framework and take exactly that same code run it on a larger device</p>
+      <p begin="00:06:32.240" end="00:06:37.100">with a full...cortex a powered cpu great compete what are the where the boards your</p>
+      <p begin="00:06:37.100" end="00:06:39.990">...I brought toys right so now the school as</p>
+      <p begin="00:06:39.990" end="00:06:44.870">the industrial robot over here but so one of the partner secret labs just announced the net we know</p>
+      <p begin="00:06:44.870" end="00:06:50.220">three wi-fi and ethernet this week which are big deal because he specifically looking at you know,</p>
+      <p begin="00:06:50.220" end="00:06:54.980">better asher integration for this so having onboard wi-fi is obviously quite important for doing</p>
+      <p begin="00:06:54.980" end="00:07:00.500">that and having onboard ethernet like a good solid networking stack there is good the other thing I</p>
+      <p begin="00:07:00.500" end="00:07:05.360">...is the prototype shield are prototype hat for of raspberry</p>
+      <p begin="00:07:05.360" end="00:07:10.290">...to the...worked on...let use all you gazetteer stuff and they also did a smaller</p>
+      <p begin="00:07:10.290" end="00:07:11.960">...that they're working on here that has all the</p>
+      <p begin="00:07:11.960" end="00:07:17.950">...built-in so-if you want-to do like an as your coyote demo that has you know,</p>
+      <p begin="00:07:17.950" end="00:07:21.680">temperature and light...and all that stuff just pop this in use the api</p>
+      <p begin="00:07:21.680" end="00:07:26.440">that you guys of written and then you're able to access leisure and, upload all that?</p>
+      <p begin="00:07:26.440" end="00:07:30.010">We've got a bunch of questions...from phillip what are the limitation seizing windows</p>
+      <p begin="00:07:30.010" end="00:07:33.670">...imc device what anti idea...</p>
+      <p begin="00:07:33.670" end="00:07:36.630">Difference between windows...core which is the</p>
+      <p begin="00:07:36.630" end="00:07:40.270">sm version of windows optimized for these devices and windows mobile</p>
+      <p begin="00:07:40.270" end="00:07:44.390">...or the enterprise version of windows for large devices</p>
+      <p begin="00:07:44.390" end="00:07:48.590">...there's no shell so there's no windows experience there's no start menu the</p>
+      <p begin="00:07:48.590" end="00:07:53.130">...from my...in fact I do have ahead I can implement this is a</p>
+      <p begin="00:07:53.130" end="00:07:58.390">...screen as well...I do have ahead the...my app is the app I wrote</p>
+      <p begin="00:07:58.390" end="00:08:03.130">...define the personality for my device things you would expect because there's no</p>
+      <p begin="00:08:03.130" end="00:08:08.010">shelters that in-box applications so I don't get the travel up and I don't get, you know, the mail</p>
+      <p begin="00:08:08.010" end="00:08:13.280">...things like that other than that it's a complete version of windows including,</p>
+      <p begin="00:08:13.280" end="00:08:17.180">you know, I get the identity model I get the security model I get</p>
+      <p begin="00:08:17.180" end="00:08:22.340">the enterprise manageability actually so everything these things can do windows update everything that needs</p>
+      <p begin="00:08:22.340" end="00:08:24.940">...a windows computer is supported by windows</p>
+      <p begin="00:08:24.940" end="00:08:29.490">ten-ninety core because it's built on core there's common platform, you know,</p>
+      <p begin="00:08:29.490" end="00:08:33.860">we showed writing lighting control...that would deployed to guzman</p>
+      <p begin="00:08:33.860" end="00:08:38.440">...max running windows...for small devices same app deployed local in your</p>
+      <p begin="00:08:38.440" end="00:08:42.710">dev box runs the same like you said the shell is the ui</p>
+      <p begin="00:08:42.710" end="00:08:47.260">...app so that the whole universal windows app model with uw</p>
+      <p begin="00:08:47.260" end="00:08:50.960">...is...this is a huge part of that story that's</p>
+      <p begin="00:08:50.960" end="00:08:55.980">right scales across bothwindows additions, you know, I can run on a desktop or phone</p>
+      <p begin="00:08:55.980" end="00:08:59.350">...small...server and xbox a hollow</p>
+      <p begin="00:08:59.350" end="00:09:04.640">...and also different hardware platforms I can target arm...can target x...you know,</p>
+      <p begin="00:09:04.640" end="00:09:10.520">switch back and forth very readily zero changes...literally just change that.</p>
+      <p begin="00:09:10.520" end="00:09:12.350">India audio session yesterday so</p>
+      <p begin="00:09:12.350" end="00:09:17.040">...was able to show taking a regular usb device that uses...new media</p>
+      <p begin="00:09:17.040" end="00:09:21.840">stacked that's in windows ten unplugging from the pc right disco plug it right into the raspberry</p>
+      <p begin="00:09:21.840" end="00:09:26.610">...deploy to the...just ran so I think that's really the our so</p>
+      <p begin="00:09:26.610" end="00:09:33.130">...tells about the video that we saw on the keno...some of the things that were in that video that</p>
+      <p begin="00:09:33.130" end="00:09:37.150">...done that was probably one of my favorite days on campus here we</p>
+      <p begin="00:09:37.150" end="00:09:41.830">spent a couple of days going around ...that you guys work in you know,</p>
+      <p begin="00:09:41.830" end="00:09:43.570">filming all the people that are doing great</p>
+      <p begin="00:09:43.570" end="00:09:48.210">...stuff so we saw lots of offices full of oscilloscope and toys</p>
+      <p begin="00:09:48.210" end="00:09:51.840">and robots and you know, the stuff that went into building...be</p>
+      <p begin="00:09:51.840" end="00:09:57.040">fifteen robot that showed up in the keno yesterday...pollens robot on all the work that</p>
+      <p begin="00:09:57.040" end="00:10:01.110">...was doing on the hardware for that absolutely amazing stuff that we're seeing in</p>
+      <p begin="00:10:01.110" end="00:10:06.040">there and what was really interesting about all those interviews is the building is just full of</p>
+      <p begin="00:10:06.040" end="00:10:10.580">makers like everybody there is not just doing this for their job but it's their passion</p>
+      <p begin="00:10:10.580" end="00:10:13.810">it's something that they do at night when they get home...lose work</p>
+      <p begin="00:10:13.810" end="00:10:16.670">...robots at...a person who you know,</p>
+      <p begin="00:10:16.670" end="00:10:22.080">created the first modern extruded...for three-d printers like...current way that it's</p>
+      <p begin="00:10:22.080" end="00:10:26.710">routing is done there so these are guys that are really, really into this and</p>
+      <p begin="00:10:26.710" end="00:10:31.880">...was a really fun video to record too much to say...too much ari from bill</p>
+      <p begin="00:10:31.880" end="00:10:37.560">...what are some where some places to go to find io tickets to get started with?</p>
+      <p begin="00:10:37.560" end="00:10:43.250">Gosh, lots of options out there so ...for the windows platform worship</p>
+      <p begin="00:10:43.250" end="00:10:48.210">forty-two hardware platforms today one of the raspberry...to the others them...max which</p>
+      <p begin="00:10:48.210" end="00:10:53.620">runs and intel x eighty-six cpu because it's because it's raspberry</p>
+      <p begin="00:10:53.620" end="00:10:58.470">...were trying to support a lot of the existing hardware ecosystem for...so I can</p>
+      <p begin="00:10:58.470" end="00:11:04.680">by whether shields and sensors and I can just use those things our dwindle makes</p>
+      <p begin="00:11:04.680" end="00:11:09.950">...giant...out on so I can use and different kids that I can use to</p>
+      <p begin="00:11:09.950" end="00:11:14.180">...building robots building temperature sensors for my garden...you know,</p>
+      <p begin="00:11:14.180" end="00:11:18.060">lots of crazy applications I was</p>
+      <p begin="00:11:18.060" end="00:11:23.200">I couple days ago I...down I was short on some...this is the other bad thing about being...</p>
+      <p begin="00:11:23.200" end="00:11:28.800">you're like man I don't have wire so you know, whatever across the street there's a radio shack I</p>
+      <p begin="00:11:28.800" end="00:11:34.060">went the bottom parts and I was amazed they have like a whole pile of kits.</p>
+      <p begin="00:11:34.060" end="00:11:41.090">Different kinds of sensors wires are twitter...and it's easy to get.</p>
+      <p begin="00:11:41.090" end="00:11:46.080">All right from dan how many different ot devices well-run windows ten on launch.</p>
+      <p begin="00:11:46.080" end="00:11:50.820">That ...launch so we haven't we haven't disclose the exact number boards</p>
+      <p begin="00:11:50.820" end="00:11:54.960">...support launch today it's raspberry...too and it's been aboard</p>
+      <p begin="00:11:54.960" end="00:11:59.770">...lots of other partners working with working very closely with qualcomm</p>
+      <p begin="00:11:59.770" end="00:12:02.740">...dragon board that's one that we hope to support</p>
+      <p begin="00:12:02.740" end="00:12:07.640">my launch a couple other partners that I can't talk about yet that</p>
+      <p begin="00:12:07.640" end="00:12:12.010">obviously the goal is to maximize the number of...market number of</p>
+      <p begin="00:12:12.010" end="00:12:16.910">...systems on a...and market that will support running windows</p>
+      <p begin="00:12:16.910" end="00:12:20.900">...is a great place to start...you want to get started now from</p>
+      <p begin="00:12:20.900" end="00:12:27.890">chris what cool ioc projects have you guys built at least that you could share with us?</p>
+      <p begin="00:12:27.890" end="00:12:32.180">...look, at up there's something going on there so,</p>
+      <p begin="00:12:32.180" end="00:12:35.700">it's fun stuff so I've started working with using windows on raspberry</p>
+      <p begin="00:12:35.700" end="00:12:38.480">...as the brains of synthesizers, yeah, so,</p>
+      <p begin="00:12:38.480" end="00:12:43.330">that's really not being able to take the type of app that are run on a tablet...being able to</p>
+      <p begin="00:12:43.330" end="00:12:48.690">embed that into a synthesizer the keyboard knobs and all that stuff is what I'm really interested in we</p>
+      <p begin="00:12:48.690" end="00:12:52.170">built some silly projects like I did they I...moisture</p>
+      <p begin="00:12:52.170" end="00:12:57.210">center built a diaper monitor shortly after my kids were born unfortunate it's like two big</p>
+      <p begin="00:12:57.210" end="00:13:04.930">spikes they come through and that doesn't go over too well with like my family when I did that, come on.</p>
+      <p begin="00:13:04.930" end="00:13:09.330">The kids...alarm anyway as I...of...trafficking kick-start,</p>
+      <p begin="00:13:09.330" end="00:13:15.340">yeah, that might be really good for that a good market there maybe the adult version of them so,</p>
+      <p begin="00:13:15.340" end="00:13:20.200">there's those things with lots of robots I think all of us here built umpteen thousand different types of</p>
+      <p begin="00:13:20.200" end="00:13:24.720">robots and stuff but most I'm really interested in like all the things that are existing</p>
+      <p begin="00:13:24.720" end="00:13:30.140">dot net developer community has built in terms of devices like people are doing home automation</p>
+      <p begin="00:13:30.140" end="00:13:35.250">with micro framework or with our...we know and stuff and they're doing, you know, things like garage</p>
+      <p begin="00:13:35.250" end="00:13:39.750">...simple things like garage door openers but they're not limited by what you can go on</p>
+      <p begin="00:13:39.750" end="00:13:44.670">buying a store they just like, you know, what I don't see exactly what I want the store I'm...to go make it and they get</p>
+      <p begin="00:13:44.670" end="00:13:48.990">a done it takes them a day or two to get it done they have that in their house or able to user I think</p>
+      <p begin="00:13:48.990" end="00:13:53.260">...with the stuff that's going on with all join...the stuff that's going on with asher between the two</p>
+      <p begin="00:13:53.260" end="00:13:57.380">of those things and...devices that were coming out with I think people are going to be</p>
+      <p begin="00:13:57.380" end="00:14:00.870">...make some really fantastic stuff over the next six months so really</p>
+      <p begin="00:14:00.870" end="00:14:07.660">excited any other projects on campus that we can talk about?</p>
+      <p begin="00:14:07.660" end="00:14:12.310">...we could talk and...actually it's quite active and build</p>
+      <p begin="00:14:12.310" end="00:14:17.270">...custom...they took one of the...printing platforms apart and</p>
+      <p begin="00:14:17.270" end="00:14:21.230">built the turntable scanner that we're showing here we're using a connect</p>
+      <p begin="00:14:21.230" end="00:14:25.860">me to which that's three-d scanning functionalities actually built into our three-d builder apps</p>
+      <p begin="00:14:25.860" end="00:14:31.800">you can very quickly get full color free model yourself so if you are maker though</p>
+      <p begin="00:14:31.800" end="00:14:36.260">and you're walking through buildings and microsoft there are places where you're just like wow what is</p>
+      <p begin="00:14:36.260" end="00:14:39.610">that what...one of the work and there's so many.</p>
+      <p begin="00:14:39.610" end="00:14:44.140">Different projects it...team we are</p>
+      <p begin="00:14:44.140" end="00:14:49.350">...end up with this stuff and it there was a day where I walk into the bathroomand, I</p>
+      <p begin="00:14:49.350" end="00:14:53.350">...click.</p>
+      <p begin="00:14:54.470" end="00:14:57.690">And, there's this...counting aggressive egress into the</p>
+      <p begin="00:14:57.690" end="00:15:02.180">into the restroom and I think they were just kind of testing sensors and they thought this would</p>
+      <p begin="00:15:02.180" end="00:15:07.520">be anyway I think ultimately after a few days create the team out there</p>
+      <p begin="00:15:07.520" end="00:15:10.140">...cannot the bathroom...kitchen or something</p>
+      <p begin="00:15:10.140" end="00:15:15.860">...that was that was the tools project but it was perhaps was disconcerting project</p>
+      <p begin="00:15:15.860" end="00:15:21.040">fans so larry one of the things that we just did for this keno I is one of the</p>
+      <p begin="00:15:21.040" end="00:15:26.020">makers that says part of the garage...so we have the garage on campus which everybody's able to go in and</p>
+      <p begin="00:15:26.020" end="00:15:32.770">use laser printerslaser cutters and all sorts of cool stuff he built a tesla coil...had to</p>
+      <p begin="00:15:32.770" end="00:15:37.280">...tesla foils we had sort of snippets of it at the end of the video nobody would let us</p>
+      <p begin="00:15:37.280" end="00:15:41.810">...on campus so, we ended up bringing it down to a fire station in the</p>
+      <p begin="00:15:41.810" end="00:15:45.900">middle of redmond they didn't have the right kind of our supply there so we rented</p>
+      <p begin="00:15:45.900" end="00:15:48.750">...big like ten thousand what generators like</p>
+      <p begin="00:15:48.750" end="00:15:52.880">...point twenty-one chick...yes exactly moi.</p>
+      <p begin="00:15:52.880" end="00:15:56.200">So, it so we had those running outside and able to record that and,</p>
+      <p begin="00:15:56.200" end="00:15:59.100">have that going they're probably going to bring it down to summer nam this</p>
+      <p begin="00:15:59.100" end="00:16:03.880">...nashville because they'll let us have it on stage because they don't have anywhere near as much</p>
+      <p begin="00:16:03.880" end="00:16:07.090">of electronics on there but like that's somebody in the</p>
+      <p begin="00:16:07.090" end="00:16:11.160">maker garage on campus that was their...build this thing</p>
+      <p begin="00:16:11.160" end="00:16:15.840">and, creative synthesizer out of it and generally shoot sparks that are eight to ten feet long enough</p>
+      <p begin="00:16:15.840" end="00:16:21.550">...at unsuspecting people on the...on all right for american all</p>
+      <p begin="00:16:21.550" end="00:16:26.470">quote all coyote devices...each other with so many companies work...different products technologies</p>
+      <p begin="00:16:26.470" end="00:16:31.130">and platforms that's probably where all join comes in right definitely, yeah, so,</p>
+      <p begin="00:16:31.130" end="00:16:35.570">all join provides a set of standards device profiles</p>
+      <p begin="00:16:35.570" end="00:16:40.340">...defining what's called introspection xml and that's really the basis of</p>
+      <p begin="00:16:40.340" end="00:16:43.960">interoperability story with all join but as an extension of that</p>
+      <p begin="00:16:43.960" end="00:16:49.020">there's the cross-platform code base so regardless of your running art we know or</p>
+      <p begin="00:16:49.020" end="00:16:51.620">raspberry pie with windows more with embedded</p>
+      <p begin="00:16:51.620" end="00:16:56.740">...ios devices android devices it's a cross-platform</p>
+      <p begin="00:16:56.740" end="00:16:57.750">stories</p>
+      <p begin="00:16:57.750" end="00:17:02.010">...easy to implement producer functionality which be like a devices you're going</p>
+      <p begin="00:17:02.010" end="00:17:05.590">to control or consumer funk functionality which we like and app</p>
+      <p begin="00:17:05.590" end="00:17:10.460">...discovered device so we've been like I said built into windows ten we've got to</p>
+      <p begin="00:17:10.460" end="00:17:12.130">see api we've got a uw</p>
+      <p begin="00:17:12.130" end="00:17:17.350">p api it's a great developer experience on windows ten but we're</p>
+      <p begin="00:17:17.350" end="00:17:18.370">...which platform</p>
+      <p begin="00:17:18.370" end="00:17:22.360">neuron microcontroller full-fledged high-level operating system?</p>
+      <p begin="00:17:22.360" end="00:17:26.790">Those devices can talk to each other and it's not the only technology for interoperability but</p>
+      <p begin="00:17:26.790" end="00:17:31.550">it is a great way to reduce this area that's required when you...apps</p>
+      <p begin="00:17:31.550" end="00:17:37.900">for interoperability so things like thread and I see these technologies complement each other.</p>
+      <p begin="00:17:37.900" end="00:17:42.040">...that on the clouds common pattern that we see is</p>
+      <p begin="00:17:42.040" end="00:17:47.410">customers using cloud rendezvous to communicate with different devices and in fact different sort</p>
+      <p begin="00:17:47.410" end="00:17:51.730">of submits almost if you if you were like might have a feel</p>
+      <p begin="00:17:51.730" end="00:17:57.100">gate gateway speakinga thread and another one speaking all join but,</p>
+      <p begin="00:17:57.100" end="00:18:01.350">you want to interoperate between those or extract value from those with</p>
+      <p begin="00:18:01.350" end="00:18:06.080">analytics...across the entire fleet on those that's where we really see cloud</p>
+      <p begin="00:18:06.080" end="00:18:08.380">...our customers...</p>
+      <p begin="00:18:09.550" end="00:18:14.370">With asher I think there's a shorting...question which is that or was</p>
+      <p begin="00:18:14.370" end="00:18:19.420">...for coherence that all coyote devices don't talk to each.</p>
+      <p begin="00:18:19.420" end="00:18:23.030">You know, you go you buy some ...some home automation...find</p>
+      <p begin="00:18:23.030" end="00:18:26.850">...the z wave thing that's the thing this wi-fi thing like they don't</p>
+      <p begin="00:18:26.850" end="00:18:31.690">...really hard-hit them all the...were operating from a point of view that says you know,</p>
+      <p begin="00:18:31.690" end="00:18:36.240">with our investments that they your teams...altering...devices wanna-be free they want to</p>
+      <p begin="00:18:36.240" end="00:18:39.480">talk to each other they want to talk to the cloud and open ways using</p>
+      <p begin="00:18:39.480" end="00:18:44.290">...so that's the thing we're pushing on well it's not true today that's where you'll see</p>
+      <p begin="00:18:44.290" end="00:18:49.320">as continue to pushes let's get to a place where all devices can just talk to each other</p>
+      <p begin="00:18:49.320" end="00:18:54.230">...all devices can just talk to the...and then let's see what people can build when you get rid of all these</p>
+      <p begin="00:18:54.230" end="00:18:56.950">...and...there's bridging technologies as well</p>
+      <p begin="00:18:56.950" end="00:19:01.640">so it's one thing for every device to be able to talk to every other device directly but,</p>
+      <p begin="00:19:01.640" end="00:19:06.480">there's a couple things that are available now that are really interesting your team is built the devices</p>
+      <p begin="00:19:06.480" end="00:19:10.060">to bridge which is a way that you can take things like non all</p>
+      <p begin="00:19:10.060" end="00:19:14.020">join devices and expose them...as virtual all</p>
+      <p begin="00:19:14.020" end="00:19:19.000">drawing devices ad layers of security, you know, that's sort of thing at credentials but,</p>
+      <p begin="00:19:19.000" end="00:19:23.080">there's also in the all seen alliance what's called the gateway</p>
+      <p begin="00:19:23.080" end="00:19:28.140">...architecture which provides basically away to provide sandbox</p>
+      <p begin="00:19:28.140" end="00:19:33.140">local network environment for things like older devices and then...to provide that bridge</p>
+      <p begin="00:19:33.140" end="00:19:38.260">...whether...asher or other clouds it's that</p>
+      <p begin="00:19:38.260" end="00:19:41.130">...type of scenario where you can access</p>
+      <p begin="00:19:41.130" end="00:19:45.780">...for have cloud centric logic so...jump</p>
+      <p begin="00:19:45.780" end="00:19:51.160">...question are windows crypto api supported on small devices.</p>
+      <p begin="00:19:51.160" end="00:19:56.410">...crypto api is on the device because the devices tend to</p>
+      <p begin="00:19:56.410" end="00:20:01.220">be cortex a powered or x eighty-six powered there's plenty of horsepower there to</p>
+      <p begin="00:20:01.220" end="00:20:07.460">support cryptography stacked full networking stacks there it's not just it's not just</p>
+      <p begin="00:20:07.460" end="00:20:12.830">kind of windows...like literally the same...it's really went.</p>
+      <p begin="00:20:12.830" end="00:20:15.740">All right in from and,</p>
+      <p begin="00:20:15.740" end="00:20:22.310">...which respirator i-devices good to start...prototype...badger?</p>
+      <p begin="00:20:22.310" end="00:20:27.430">...you show this yesterday what did you have up onstage quite a few actually so,</p>
+      <p begin="00:20:27.430" end="00:20:31.230">we had arm embed free...board running arm</p>
+      <p begin="00:20:31.230" end="00:20:36.490">embed three we had a big one black running able to snappy we also had a raspberry</p>
+      <p begin="00:20:36.490" end="00:20:42.010">...running...windows ten-ninety...all those are great how your</p>
+      <p begin="00:20:42.010" end="00:20:46.210">sports standard api or standard protocol http and keep</p>
+      <p begin="00:20:46.210" end="00:20:51.950">the operator operation there's another question that I just want to address...that I saw a</p>
+      <p begin="00:20:51.950" end="00:20:57.490">minute...around whether as your supports bidirectional communication you so,</p>
+      <p begin="00:20:57.490" end="00:21:02.300">today we have our bantam service of this been generally available since beginning of</p>
+      <p begin="00:21:02.300" end="00:21:06.790">the year ...a it's a great high scale telemetry ingestion service</p>
+      <p begin="00:21:06.790" end="00:21:11.250">for doings somewhere north of about eighteen billion messages per day</p>
+      <p begin="00:21:11.250" end="00:21:14.220">worldwide through...terms</p>
+      <p begin="00:21:14.220" end="00:21:18.860">and one of the things I announced yesterday is that as part of the address of</p>
+      <p begin="00:21:18.860" end="00:21:23.990">to suite which is coming out this year ...were also introducing a services part of this week...the</p>
+      <p begin="00:21:23.990" end="00:21:28.940">...which also allows not just telemetry ingestion but also</p>
+      <p begin="00:21:28.940" end="00:21:33.800">command control has a facility for device identity as well as device,</p>
+      <p begin="00:21:33.800" end="00:21:38.650">device registry sequence for device state and then final also...device management</p>
+      <p begin="00:21:38.650" end="00:21:42.580">taken manager...chiefly...across...protocols</p>
+      <p begin="00:21:42.580" end="00:21:46.560">...and I think it's important to point out that we've been focusing a lot on devices</p>
+      <p begin="00:21:46.560" end="00:21:51.310">even so far on this that without the additional support you're talking about without the</p>
+      <p begin="00:21:51.310" end="00:21:55.720">command and control without the ability to do mike remote access</p>
+      <p begin="00:21:55.720" end="00:22:00.170">...without all of that you don't really have a complete io to solution so it's important that they</p>
+      <p begin="00:22:00.170" end="00:22:05.280">...these things all together...when it's great it's great...to start your prototypes sort of</p>
+      <p begin="00:22:05.280" end="00:22:08.630">at the device level and,...at once you get the solution</p>
+      <p begin="00:22:08.630" end="00:22:13.950">what you have that idea then you start to see a lot of the value coming from</p>
+      <p begin="00:22:13.950" end="00:22:18.460">rich analytics across an entire...which is where we see people strategies asher</p>
+      <p begin="00:22:19.550" end="00:22:25.830">there's a good question from...with coyote booming what is being done in terms of security and privacy?</p>
+      <p begin="00:22:25.830" end="00:22:27.990">Great question so I think sheet</p>
+      <p begin="00:22:27.990" end="00:22:32.870">...talk about this on the windows can side I can say from the as your side we have core support all</p>
+      <p begin="00:22:32.870" end="00:22:37.250">the rich industry standards from tls to a shared access</p>
+      <p begin="00:22:37.250" end="00:22:41.790">a tokens per device as well as key</p>
+      <p begin="00:22:41.790" end="00:22:47.390">baltic encryption for encryption all the way through the system we have some strong ideas about some additional</p>
+      <p begin="00:22:47.390" end="00:22:52.510">security at a services that will have announcements later this year or as well</p>
+      <p begin="00:22:52.510" end="00:22:57.570">on the cloud side we think security is certainly in the cloud</p>
+      <p begin="00:22:57.570" end="00:23:01.950">security privacy or absolute tantamount coyote and,</p>
+      <p begin="00:23:01.950" end="00:23:04.710">that is very much table...and,</p>
+      <p begin="00:23:04.710" end="00:23:09.640">you'll cs not only take industry best practices but also sort of drive that</p>
+      <p begin="00:23:09.640" end="00:23:14.080">poured we had a talk yesterday on address ot security fundamentals</p>
+      <p begin="00:23:14.080" end="00:23:19.510">...purge...to check that out talks about all the ways that you need to expand</p>
+      <p begin="00:23:19.510" end="00:23:21.650">your thinking from just, you know,</p>
+      <p begin="00:23:21.650" end="00:23:26.320">devices all the way through software on those devices and bring in the</p>
+      <p begin="00:23:26.320" end="00:23:30.610">...security lifecycle on devices but,</p>
+      <p begin="00:23:30.610" end="00:23:33.190">I think there's some amazing things coming out of windows</p>
+      <p begin="00:23:33.190" end="00:23:37.400">I ot windows coyote definitely adds a lot to the story</p>
+      <p begin="00:23:37.400" end="00:23:42.060">that you don't see another platform on the device side I think you just start with</p>
+      <p begin="00:23:42.060" end="00:23:47.410">...is a windows desktop to for security and if you think about that as a starting point</p>
+      <p begin="00:23:47.410" end="00:23:50.950">...you think about what's in markets they...wow what's</p>
+      <p begin="00:23:50.950" end="00:23:55.670">...market today maybe doesn't quite...desktop computers</p>
+      <p begin="00:23:55.670" end="00:24:01.310">bar for security you know, lots of cases about baby monitors.</p>
+      <p begin="00:24:01.310" end="00:24:05.110">...wi-fi credentials being sent over open...and things, you know,</p>
+      <p begin="00:24:05.110" end="00:24:10.160">just kind of stuff like that it's because people are having fun...going faster trying to, you know,</p>
+      <p begin="00:24:10.160" end="00:24:13.660">server market and come up with great ideas so we kind of as a first</p>
+      <p begin="00:24:13.660" end="00:24:16.890">approximation say okay it's at least as good as a desktop then you kind of</p>
+      <p begin="00:24:16.890" end="00:24:20.600">think about what is coyote need device b that's differently are</p>
+      <p begin="00:24:20.600" end="00:24:25.370">a couple things one is there's often no interactive user so there's nobody going to type</p>
+      <p begin="00:24:25.370" end="00:24:30.390">in username or password...this is a device that...off somewhere so I need a way to securely</p>
+      <p begin="00:24:30.390" end="00:24:34.460">I identified this machine not just...user of this machine and if I'm,</p>
+      <p begin="00:24:34.460" end="00:24:39.350">for example, communicating to cloud service cloud service need to secure...no yeah,</p>
+      <p begin="00:24:39.350" end="00:24:44.580">that really is a message coming from that machine hasn't been spoofs...that software has</p>
+      <p begin="00:24:44.580" end="00:24:47.700">...yeah, and, it's a trustworthy machine and,</p>
+      <p begin="00:24:47.700" end="00:24:50.610">then getting to that kind of trustworthy machine the other interesting thing about I</p>
+      <p begin="00:24:50.610" end="00:24:55.350">...which is different like...laptop up here that maybe I could do interesting things with</p>
+      <p begin="00:24:55.350" end="00:24:58.460">variety devices are often unattended just sitting around</p>
+      <p begin="00:24:58.460" end="00:25:04.270">in the environment you'll find people that enjoyed the practice of...finding those devices</p>
+      <p begin="00:25:04.270" end="00:25:07.930">video popping the plastic off of those devices and going up that's</p>
+      <p begin="00:25:07.930" end="00:25:11.330">...sd...we put that my computer and see what I can do with that</p>
+      <p begin="00:25:11.330" end="00:25:16.500">...and if that depart hasn't been lock-down with bit locker...the computer doesn't support</p>
+      <p begin="00:25:16.500" end="00:25:20.650">...pm it's a real risk...of...so,</p>
+      <p begin="00:25:20.650" end="00:25:24.560">these are kind of the things that we're thinking about on the device side in terms of how do we</p>
+      <p begin="00:25:24.560" end="00:25:29.910">...you a step further than just kind of pc phone-level...that that's going to be one of the biggest barriers to the</p>
+      <p begin="00:25:29.910" end="00:25:35.510">widespread proliferation...devices and...they're not totally</p>
+      <p begin="00:25:35.510" end="00:25:41.190">confident about their data and their privacy they're not going to feel comfortable turning that stuff on, you know,</p>
+      <p begin="00:25:41.190" end="00:25:47.140">the old band-aid over the webcam type scenario.</p>
+      <p begin="00:25:47.140" end="00:25:48.980">I didn't know about...</p>
+      <p begin="00:25:52.740" end="00:26:04.680">I do so that's all the time we have today so we're going to wrap up here and thanks for watching.</p>
+
+    </div>
+  </body>
+</tt>

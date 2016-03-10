@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.895</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.380" end="00:00:09.740">Hi, good afternoon everyone and welcome welcome to the session and my name is bill</p>
+      <p begin="00:00:09.740" end="00:00:14.790">gibsonI'm a program manager...the as...sequel database group.</p>
+      <p begin="00:00:14.790" end="00:00:19.510">And,my colleague...drops I'm also program manager on the other</p>
+      <p begin="00:00:19.510" end="00:00:24.430">...database t and then I have been partners in crime for the last couple of weeks</p>
+      <p begin="00:00:24.430" end="00:00:28.880">preparing this sessionwhich has been a lot of fun so we're looking forward to sharing that with</p>
+      <p begin="00:00:28.880" end="00:00:35.910">...we've got lots of things to talk about so let's dive in the first of all we have to</p>
+      <p begin="00:00:35.910" end="00:00:39.160">Just remind...that evaluations...important</p>
+      <p begin="00:00:39.160" end="00:00:46.140">...we'd love to get your feedback on the session itself so please go ahead and do that?</p>
+      <p begin="00:00:46.140" end="00:00:50.720">So, let's just quickly survey we're going to talk about this afternoon jam-packed session</p>
+      <p begin="00:00:50.720" end="00:00:56.400">...going pretty quickly so I can do a very quick sort of forty thousand foot look,</p>
+      <p begin="00:00:56.400" end="00:01:01.360">at as a...database kind of hoping most of you familiar with the service...shouldn't we</p>
+      <p begin="00:01:01.360" end="00:01:06.670">...be dueling much on the general features of it I'm going to talk particular about the topic of the day</p>
+      <p begin="00:01:06.670" end="00:01:10.410">...which is building sas applications and how</p>
+      <p begin="00:01:10.410" end="00:01:15.410">a characteristics of the database platform a particularly suited to that task</p>
+      <p begin="00:01:15.410" end="00:01:20.300">about application spaceparticularly ...talking about the way we can a</p>
+      <p begin="00:01:20.300" end="00:01:26.200">...you particularly now with new things we're doing with developing a managing large</p>
+      <p begin="00:01:26.200" end="00:01:28.810">...databases which is a characteristic of course of</p>
+      <p begin="00:01:28.810" end="00:01:34.190">sas applications and then handling unpredictable workloads and that's a key</p>
+      <p begin="00:01:34.190" end="00:01:37.790">theme...keep touching on several times during the session and</p>
+      <p begin="00:01:37.790" end="00:01:41.340">...unpredictability that comes from not knowing who your customers</p>
+      <p begin="00:01:41.340" end="00:01:47.080">are your the end-user and quite what the workloads of those people are so</p>
+      <p begin="00:01:47.080" end="00:01:51.810">let's dive in as a...database then this is my forty thousand foot view</p>
+      <p begin="00:01:51.810" end="00:01:58.220">of this so it's a global fully manage databases a service</p>
+      <p begin="00:01:58.220" end="00:02:02.010">...paz model for databases you just gotta buy and</p>
+      <p begin="00:02:02.010" end="00:02:07.420">consume databases create them as you want when you want we think it's think of it is being</p>
+      <p begin="00:02:07.420" end="00:02:11.730">...for sas and enterprise applications...it's built to scale</p>
+      <p begin="00:02:11.730" end="00:02:15.970">...to handle a wide range of workloads and we'll be talking about that</p>
+      <p begin="00:02:15.970" end="00:02:18.940">as we go and a key thing that we've introduced and</p>
+      <p begin="00:02:18.940" end="00:02:25.510">if you listen to the keynote yesterday you would have heard about the elastic database model and we're going</p>
+      <p begin="00:02:25.510" end="00:02:30.890">to be talking about that today particularly focusing on that?</p>
+      <p begin="00:02:30.890" end="00:02:35.660">And, as a service it has...unprecedented availability for</p>
+      <p begin="00:02:35.660" end="00:02:40.630">nines availability across the globe in seventeen regions across the globe and</p>
+      <p begin="00:02:40.630" end="00:02:45.950">we have tremendous a...we have replication model and</p>
+      <p begin="00:02:45.950" end="00:02:51.200">this a local replication model but also in case of disaster recovery scenarios we</p>
+      <p begin="00:02:51.200" end="00:02:56.260">have geographic replication between those regions and the</p>
+      <p begin="00:02:56.260" end="00:03:00.800">ability to restore the databases should that should...be a disaster at anyone region</p>
+      <p begin="00:03:00.800" end="00:03:07.320">so it's important characteristic that of an enterprise class service.</p>
+      <p begin="00:03:07.320" end="00:03:11.670">And, the databases themselves a secure that protected and that compliant with</p>
+      <p begin="00:03:11.670" end="00:03:14.570">a wide range of international standards so</p>
+      <p begin="00:03:14.570" end="00:03:19.030">we've spent a lot of effort making sure this is a platform that you can trust and</p>
+      <p begin="00:03:19.030" end="00:03:24.360">build solid applications on and significantly we've been</p>
+      <p begin="00:03:24.360" end="00:03:28.150">...towards this place but now with release</p>
+      <p begin="00:03:28.150" end="00:03:33.380">of full-text search of this happen now and preview and we can now claim that</p>
+      <p begin="00:03:33.380" end="00:03:37.320">we're fully compatible with sequel server twenty fourteen databases so</p>
+      <p begin="00:03:37.320" end="00:03:41.330">that database level compatibility so effectively sequel that you</p>
+      <p begin="00:03:41.330" end="00:03:46.000">can write to run on premises you can now run the clouds as a tremendous,</p>
+      <p begin="00:03:46.000" end="00:03:50.500">tremendous compatibility that so that's great story helping customers with migration scenarios,</p>
+      <p begin="00:03:50.500" end="00:03:52.290">for example.</p>
+      <p begin="00:03:52.290" end="00:03:56.000">And, throughout the evolution of the</p>
+      <p begin="00:03:56.000" end="00:04:01.490">platform of the service we focus heavily oneasy development and</p>
+      <p begin="00:04:01.490" end="00:04:06.360">easy self-service management so the...that you can take over the service</p>
+      <p begin="00:04:06.360" end="00:04:11.200">you can manager grafting yourself...been a key characteristic of that.</p>
+      <p begin="00:04:11.200" end="00:04:16.980">And, you'll see great evidence of that and in the experiences will show you this afternoon.</p>
+      <p begin="00:04:16.980" end="00:04:22.190">And, then if we think about the way we deliver a service to-you we deliver it in these service</p>
+      <p begin="00:04:22.190" end="00:04:27.520">...we use we have to is for basic standard and premium</p>
+      <p begin="00:04:27.520" end="00:04:32.030">databases so you can buy databases and any one of those tails and</p>
+      <p begin="00:04:32.030" end="00:04:37.260">they differ they differ in terms of the target intend so their intended</p>
+      <p begin="00:04:37.260" end="00:04:42.280">use here basic for like transactional loads standard we think of go to</p>
+      <p begin="00:04:42.280" end="00:04:48.310">the...full terrified for the most business application workloads</p>
+      <p begin="00:04:48.310" end="00:04:51.820">...target into that space and then premium for our</p>
+      <p begin="00:04:51.820" end="00:04:57.830">high and high throughput business critical applications so you can see that one of the key things</p>
+      <p begin="00:04:57.830" end="00:05:00.550">the difference between those two is the performance</p>
+      <p begin="00:05:00.550" end="00:05:05.070">and we'll talk much more about maps we go through so the basic databases have</p>
+      <p begin="00:05:05.070" end="00:05:08.870">effectively that the lowest-level performance so,</p>
+      <p begin="00:05:08.870" end="00:05:10.310">they have a price that's corresponds.</p>
+      <p begin="00:05:11.370" end="00:05:15.060">Then standard...premium we offer increasing levels of performance...</p>
+      <p begin="00:05:15.060" end="00:05:21.980">hoods but perhaps what's most interesting about this image is not what's different about the</p>
+      <p begin="00:05:21.980" end="00:05:27.480">services but what's the same about them so significantly the and,</p>
+      <p begin="00:05:27.480" end="00:05:29.840">relevant to the talk today we have this</p>
+      <p begin="00:05:29.840" end="00:05:34.660">...model of workload elasticity...the fact we can create databases that</p>
+      <p begin="00:05:34.660" end="00:05:38.520">...different levels but also we can create databases and what</p>
+      <p begin="00:05:38.520" end="00:05:43.920">...we've introduced now the elastic database pools and these and,</p>
+      <p begin="00:05:43.920" end="00:05:50.210">we'll be talking about these pools allow database to flex and to show great dynamics</p>
+      <p begin="00:05:50.210" end="00:05:54.100">...you will to changes...workload...rapidly so</p>
+      <p begin="00:05:54.100" end="00:05:58.540">let's very new concept...and significant significantly</p>
+      <p begin="00:05:58.540" end="00:06:02.240">where allowing enabling this across all these...</p>
+      <p begin="00:06:02.240" end="00:06:04.810">The compatibility and the high availability I</p>
+      <p begin="00:06:04.810" end="00:06:07.620">mention again the same across all these two is, you know,</p>
+      <p begin="00:06:07.620" end="00:06:12.750">sacrificing any of those features so on of philosophy is very much now</p>
+      <p begin="00:06:12.750" end="00:06:17.690">that you can build an application once and then skated as you need across these different</p>
+      <p begin="00:06:17.690" end="00:06:22.080">up service here offerings and elasticity of frames.</p>
+      <p begin="00:06:22.080" end="00:06:27.260">So, let's give you a taste we're...take a look quickly at a.</p>
+      <p begin="00:06:27.260" end="00:06:28.770">A demo application</p>
+      <p begin="00:06:28.770" end="00:06:35.480">that we've built and that's going to show some of the characteristics of a</p>
+      <p begin="00:06:35.480" end="00:06:40.460">...application so we switch over to this so this isan application and</p>
+      <p begin="00:06:40.460" end="00:06:44.170">...in the as session earlier today which was a</p>
+      <p begin="00:06:44.170" end="00:06:49.070">wing tip tickets session I have to be say that very carefully but,</p>
+      <p begin="00:06:49.070" end="00:06:51.990">I probably will fail several times and?</p>
+      <p begin="00:06:51.990" end="00:06:55.450">So, we took that application which is designed</p>
+      <p begin="00:06:55.450" end="00:06:59.480">as a global service and we've turned into a sas applications so we've turned</p>
+      <p begin="00:06:59.480" end="00:07:04.450">into an application which can be used by different customers so think of</p>
+      <p begin="00:07:04.450" end="00:07:09.340">asses the sas provider we sell it to different companies who are interested in organizations</p>
+      <p begin="00:07:09.340" end="00:07:13.900">in selling tickets so here we've got a jazz club might be a small</p>
+      <p begin="00:07:13.900" end="00:07:19.930">company that is selling tickets to the customers on another one here</p>
+      <p begin="00:07:19.930" end="00:07:22.660">...and we've got contest so</p>
+      <p begin="00:07:22.660" end="00:07:26.210">concert hall and just if we look down for</p>
+      <p begin="00:07:26.210" end="00:07:31.690">...is this is real application I can move around here and,</p>
+      <p begin="00:07:31.690" end="00:07:35.940">significantly the data for each of these customers is completely separate that's, you know,</p>
+      <p begin="00:07:35.940" end="00:07:41.250">...a key characteristic of us...each customer buying this application</p>
+      <p begin="00:07:41.250" end="00:07:47.430">buying this service application as a service from the...once their data</p>
+      <p begin="00:07:47.430" end="00:07:54.700">to be private and we can open up another one of these and.</p>
+      <p begin="00:07:54.700" end="00:07:59.230">Again,...of assigned before some isa judo school that's</p>
+      <p begin="00:07:59.230" end="00:08:03.690">also selling tickets...tournaments that they posts</p>
+      <p begin="00:08:03.690" end="00:08:07.770">...school here and, you know, I can come in and I can buy tickets here</p>
+      <p begin="00:08:07.770" end="00:08:11.640">and you just sort of actually I need...sign in first-floor I can do that so let me</p>
+      <p begin="00:08:11.640" end="00:08:17.910">...just think about what I'm doing I'm signing in here.</p>
+      <p begin="00:08:17.910" end="00:08:22.330">As a as a user of the dog would doj I'm not a...of when tips wing</p>
+      <p begin="00:08:22.330" end="00:08:26.720">tip tickets global service and...not like ticketmaster something like that this is</p>
+      <p begin="00:08:26.720" end="00:08:30.150">I'm a private custom...private end-user of this particular</p>
+      <p begin="00:08:31.910" end="00:08:35.860">...judo schools application they value may as a customer they</p>
+      <p begin="00:08:35.860" end="00:08:40.390">what my email address that able to share with anybody else they want to sell me tickets that a</p>
+      <p begin="00:08:40.390" end="00:08:43.990">one meet wandering off into some other site and,</p>
+      <p begin="00:08:43.990" end="00:08:48.200">doing something else buying tickets or some other event so it's a private experience the</p>
+      <p begin="00:08:48.200" end="00:08:52.000">customize for me the use a customized by it the customer</p>
+      <p begin="00:08:52.000" end="00:08:54.860">of the wing tip tickets platform</p>
+      <p begin="00:08:54.860" end="00:08:59.410">the science provider right so I can come in here and I could go ahead and,</p>
+      <p begin="00:08:59.410" end="00:09:03.810">buy tickets you can see that experience here I'm</p>
+      <p begin="00:09:03.810" end="00:09:08.410">...go ahead we don't need to do on that one but...I've done</p>
+      <p begin="00:09:08.410" end="00:09:13.170">...back to the other is basically motivate some qualities than</p>
+      <p begin="00:09:13.170" end="00:09:17.540">...are important about this...the next.</p>
+      <p begin="00:09:17.540" end="00:09:22.510">And, about...I describers data intensive sas applications so there are</p>
+      <p begin="00:09:22.510" end="00:09:25.880">sas applications...not so data intensive it wouldn't be so rather</p>
+      <p begin="00:09:25.880" end="00:09:29.770">than what we're talking about the ones that are is</p>
+      <p begin="00:09:29.770" end="00:09:34.640">that whisky notion data isolation and privacy and protection in the</p>
+      <p begin="00:09:34.640" end="00:09:38.150">other one any anyone breaking out of one</p>
+      <p begin="00:09:38.150" end="00:09:43.840">customer space customer data spaces somehow seeing the data from somewhere else</p>
+      <p begin="00:09:43.840" end="00:09:48.860">and there's this notion of scale because a sas provide I want to be able to scale</p>
+      <p begin="00:09:48.860" end="00:09:54.090">...support unlimited customers...start today with only ten or twenty customers and maybe I</p>
+      <p begin="00:09:54.090" end="00:09:58.600">just have one customer but I want to design and applications going to scale?</p>
+      <p begin="00:09:58.600" end="00:10:02.760">So, that's the key quality that I...want and then we're going to come back to this idea</p>
+      <p begin="00:10:02.760" end="00:10:07.290">of unpredictable usage so the dog would though...and the composer concept</p>
+      <p begin="00:10:07.290" end="00:10:12.360">...radically different size customers with potentially very different usage patterns in</p>
+      <p begin="00:10:12.360" end="00:10:17.340">...one has frequent concerts...one has occasional tournaments same sort of requirement</p>
+      <p begin="00:10:17.340" end="00:10:23.570">but very different profiles of usage.</p>
+      <p begin="00:10:23.570" end="00:10:28.470">Traditionally...say that...sort of you know, there's a common...of building</p>
+      <p begin="00:10:28.470" end="00:10:34.410">sas applications multi customer database applications is to is to</p>
+      <p begin="00:10:34.410" end="00:10:38.210">use a...database strategy to put</p>
+      <p begin="00:10:38.210" end="00:10:42.610">have allows database and put all the customer data into that one database and</p>
+      <p begin="00:10:42.610" end="00:10:45.670">key it in some way on the customer id so that you</p>
+      <p begin="00:10:45.670" end="00:10:50.960">oil queries now carefully extract the right customers data from the database unless</p>
+      <p begin="00:10:50.960" end="00:10:55.710">an effective model and it certainly one that's ...work for many people but the obviously</p>
+      <p begin="00:10:55.710" end="00:10:59.190">...a kind of complicated designers shopping</p>
+      <p begin="00:10:59.190" end="00:11:03.780">...design because you're still going to run out of space and even the largest databases</p>
+      <p begin="00:11:03.780" end="00:11:08.510">...introduces...management complexity...happens if a customer</p>
+      <p begin="00:11:08.510" end="00:11:13.040">...error you have to go and pick one customs data app data out of that</p>
+      <p begin="00:11:13.040" end="00:11:20.180">...database and recover it took some earlier point in time it's a complex problem because solve?</p>
+      <p begin="00:11:20.180" end="00:11:25.030">So, why not do a different way why not build each customer each customer</p>
+      <p begin="00:11:25.030" end="00:11:30.870">database so now instead of having twenty two hundred two thousand twenty</p>
+      <p begin="00:11:30.870" end="00:11:35.610">thousand customers and jammed into a small number database want to</p>
+      <p begin="00:11:35.610" end="00:11:39.950">...them all...one reaction to that in the past has</p>
+      <p begin="00:11:39.950" end="00:11:45.380">...an awful lot of databases to manage and, the vast the point that we're really addressing</p>
+      <p begin="00:11:45.380" end="00:11:51.500">with changing the way you can think about managing large numbers of databases...but if you can go with</p>
+      <p begin="00:11:51.500" end="00:11:56.880">...just sort of sustain that for from moment that we...solve these problems</p>
+      <p begin="00:11:56.880" end="00:12:01.080">...database management then and...at this...the, you know, look,</p>
+      <p begin="00:12:01.080" end="00:12:03.500">at the things that the platform brings you because we sell</p>
+      <p begin="00:12:03.500" end="00:12:08.280">you individual databases we focus all our attention on managing databases not</p>
+      <p begin="00:12:08.280" end="00:12:13.700">managing customers inside the database so now managing a database you give one</p>
+      <p begin="00:12:13.700" end="00:12:18.250">customer database is effectively managing the customers if I can monitor and</p>
+      <p begin="00:12:18.250" end="00:12:23.530">secure an audit interactions with a single database I'm watching what that</p>
+      <p begin="00:12:23.530" end="00:12:28.720">customers doing in that database as customers come and go as</p>
+      <p begin="00:12:28.720" end="00:12:31.750">customers needs capacity needs change those</p>
+      <p begin="00:12:31.750" end="00:12:35.610">...there's a equate to the lifecycle of an individual database</p>
+      <p begin="00:12:35.610" end="00:12:42.140">...database when I need one if the dates a customer goes...I can take it out of</p>
+      <p begin="00:12:42.140" end="00:12:46.890">circulation funny to skated up I can skated up so on again this</p>
+      <p begin="00:12:46.890" end="00:12:50.230">...recovery I can recover an individual database now very easy</p>
+      <p begin="00:12:50.230" end="00:12:55.100">...very fast because anyone...data is typically small so I can recover</p>
+      <p begin="00:12:55.100" end="00:13:00.430">...earlier point in time some of...cool thing about this...development</p>
+      <p begin="00:13:00.430" end="00:13:04.980">standpoint is the schemas unchanged by this so it doesn't matter how many</p>
+      <p begin="00:13:04.980" end="00:13:10.540">customers you have you just...the schema for a single customer and,</p>
+      <p begin="00:13:10.540" end="00:13:14.210">that other parts of the system...scale?</p>
+      <p begin="00:13:14.210" end="00:13:19.140">So, I talked...providing tools like a into.</p>
+      <p begin="00:13:19.140" end="00:13:22.930">A system this process so things we're doing now adding to the</p>
+      <p begin="00:13:22.930" end="00:13:27.610">sort of copy of tool obviously we've got a management tools in the form of the as your portal,</p>
+      <p begin="00:13:27.610" end="00:13:29.470">for example, but, also we're adding</p>
+      <p begin="00:13:29.470" end="00:13:34.790">the facility for across database query for reporting analytics and,</p>
+      <p begin="00:13:34.790" end="00:13:39.310">data integration on you to move data between databases so,</p>
+      <p begin="00:13:39.310" end="00:13:43.870">now you better run a query across a large...databases we'll see that in a moment</p>
+      <p begin="00:13:43.870" end="00:13:47.190">also running jobs across large numbers of databases</p>
+      <p begin="00:13:47.190" end="00:13:50.250">and then you can connect with the traditional set of tools</p>
+      <p begin="00:13:51.890" end="00:13:55.800">...no difference here these are especially now that we've ...</p>
+      <p begin="00:13:55.800" end="00:14:00.900">the database compatibility with sequel server twenty fourteen all</p>
+      <p begin="00:14:00.900" end="00:14:05.770">of the tools you're familiar with a programming experience is database programming...you familiar</p>
+      <p begin="00:14:05.770" end="00:14:12.420">with all apply now to these databases there's nothing special I just individual databases.</p>
+      <p begin="00:14:12.420" end="00:14:16.310">Okay, so, we take a look at the application the architecture</p>
+      <p begin="00:14:16.310" end="00:14:21.180">...wing tip tickets the sas application this is the architecture we've</p>
+      <p begin="00:14:21.180" end="00:14:26.240">implemented...really is what we've built here so, it's a cloud service</p>
+      <p begin="00:14:27.330" end="00:14:33.170">...you connect to it through the customer specific endpoints and</p>
+      <p begin="00:14:33.170" end="00:14:38.310">then we use system to grouchy to the correct database based on</p>
+      <p begin="00:14:38.310" end="00:14:43.580">the customer identity's was you identify yourself you come in herewe do that routing</p>
+      <p begin="00:14:43.580" end="00:14:50.190">in fact that's the first of several challenges that we're going to talk to is we...through here so I'm...tossed and,</p>
+      <p begin="00:14:50.190" end="00:14:53.570">...you pick it up have thank you bill.</p>
+      <p begin="00:14:53.570" end="00:14:57.990">So, basically looking at this picture one of the first</p>
+      <p begin="00:14:57.990" end="00:15:05.180">challenges you're probably going to realize soon as a customer connects to</p>
+      <p begin="00:15:05.180" end="00:15:09.040">...endpoint we've chosen traffic manager to implement these and points</p>
+      <p begin="00:15:09.040" end="00:15:12.640">...different urls but you could choose different approaches as well</p>
+      <p begin="00:15:12.640" end="00:15:16.990">imagine a customer and their end-users are starting to use</p>
+      <p begin="00:15:16.990" end="00:15:21.320">...that endpoint...have...to the requests are coming into our cloud</p>
+      <p begin="00:15:21.320" end="00:15:26.170">service we need to find out what's the corresponding database...data...that we need to</p>
+      <p begin="00:15:26.170" end="00:15:29.330">...docked...too and we need to broker the</p>
+      <p begin="00:15:29.330" end="00:15:34.410">appropriate connection the way that we do that...we basically keep the mapping information that maps</p>
+      <p begin="00:15:34.410" end="00:15:37.080">...request a come...through the url to</p>
+      <p begin="00:15:37.080" end="00:15:41.220">...school corresponding databases we copy store that in...database</p>
+      <p begin="00:15:41.220" end="00:15:46.650">...them and how we're actually doing that and based on that then we have the information</p>
+      <p begin="00:15:46.650" end="00:15:52.100">...allows us to get the connection into the right database for that</p>
+      <p begin="00:15:52.100" end="00:15:52.600">tenant?</p>
+      <p begin="00:15:54.890" end="00:16:00.340">that's kind of the first challenge that we have to deal with it most or if not all</p>
+      <p begin="00:16:00.340" end="00:16:04.940">...providers on how to deal with whether using multiple databases and,</p>
+      <p begin="00:16:04.940" end="00:16:09.940">you can obviously go ahead and brides all that code yourself ...basically</p>
+      <p begin="00:16:09.940" end="00:16:14.090">...the mapping store keep track of all of the databases that a participate in your</p>
+      <p begin="00:16:14.090" end="00:16:17.420">...you could implement that yourself however,</p>
+      <p begin="00:16:17.420" end="00:16:22.360">we are providing you a lot of help with the elastic database tools</p>
+      <p begin="00:16:22.360" end="00:16:26.020">...a set of libraries that specifically targeted odp this</p>
+      <p begin="00:16:26.020" end="00:16:30.460">problemthe first one is basically having a data to your that comprises</p>
+      <p begin="00:16:30.460" end="00:16:35.680">many databases how do I define dot a set or group of databases and,</p>
+      <p begin="00:16:35.680" end="00:16:39.180">then how do I store how customers or tenants rb</p>
+      <p begin="00:16:39.180" end="00:16:43.800">knocked maps to individual databases so that's the multi database management aspect</p>
+      <p begin="00:16:43.800" end="00:16:49.220">...covering with the libraries in a lasting database tools the second aspect</p>
+      <p begin="00:16:49.220" end="00:16:53.590">then goes back to the challenges edit just described using the information about</p>
+      <p begin="00:16:53.590" end="00:16:58.010">...different databases and the mapping of customers to databases how</p>
+      <p begin="00:16:58.010" end="00:17:03.010">do you efficiently broker connections for incoming requests to the right databases and</p>
+      <p begin="00:17:03.010" end="00:17:09.550">that's another key aspect in those libraries and ...I want</p>
+      <p begin="00:17:09.550" end="00:17:14.110">to cloud specifically as you can imagine that every incoming request does a round-trip into the</p>
+      <p begin="00:17:14.110" end="00:17:16.300">catalog database to...find the</p>
+      <p begin="00:17:16.300" end="00:17:21.020">mopping that can at some point become very efficiently database...the can become a</p>
+      <p begin="00:17:21.020" end="00:17:27.620">bottlenecks so we havea lot of attention to make sure that we have a very effective caching scheme</p>
+      <p begin="00:17:27.620" end="00:17:32.430">and place so that you are most cases award...actual round-trip institute into the</p>
+      <p begin="00:17:32.430" end="00:17:37.070">catalog database and that's also included as part of the libraries</p>
+      <p begin="00:17:37.070" end="00:17:39.980">and we're very excited this week to</p>
+      <p begin="00:17:39.980" end="00:17:44.540">...we have made these libraries generally available and behold that gives you a lot</p>
+      <p begin="00:17:44.540" end="00:17:49.400">of confidence using these libraries for your applications</p>
+      <p begin="00:17:49.400" end="00:17:53.070">...fairly approachable fairly easy to find so if you go into no,</p>
+      <p begin="00:17:53.070" end="00:17:57.860">good in visual studio and the package manager and search for elastic scale you'll</p>
+      <p begin="00:17:57.860" end="00:18:05.090">find them immediately and it's basically set of kline libraries...new...that you can download there?</p>
+      <p begin="00:18:05.090" end="00:18:10.540">So, what I want to do next is basically walk you through an example of scaling out the data to</p>
+      <p begin="00:18:10.540" end="00:18:15.570">your of our application by adding a new demo customer into the mix and,</p>
+      <p begin="00:18:15.570" end="00:18:20.460">then illustrating how all this data depended routing that connection brokering works</p>
+      <p begin="00:18:20.460" end="00:18:27.880">through through our elastic database tool libraries so let's go ahead with that?</p>
+      <p begin="00:18:27.880" end="00:18:31.100">Just a second.</p>
+      <p begin="00:18:31.100" end="00:18:36.070">To switch over.</p>
+      <p begin="00:18:36.070" end="00:18:41.800">Okay, so, what I've done is I've put together a...shell script?</p>
+      <p begin="00:18:41.800" end="00:18:46.820">Basically abstracts the most important steps and, the first one is</p>
+      <p begin="00:18:46.820" end="00:18:51.900">...just parameters so we're going to create a new customer that's called demo concert hall.</p>
+      <p begin="00:18:51.900" end="00:18:53.720">On the database</p>
+      <p begin="00:18:53.720" end="00:18:58.670">...is going-to be a provision on this survey here...our</p>
+      <p begin="00:18:58.670" end="00:19:05.150">catalog database this is the actual cloud service url as you're behind it and,</p>
+      <p begin="00:19:05.150" end="00:19:17.950">then...a bunch of credentials let me put that in real quick.</p>
+      <p begin="00:19:17.950" end="00:19:20.620">And, then you see the rest of the step's going to walk</p>
+      <p begin="00:19:20.620" end="00:19:25.410">to the is the first one is the one that's going to take a little bit longer and,</p>
+      <p begin="00:19:25.410" end="00:19:31.650">especially calling another partial scripted takes care of creating the ...the underlying database</p>
+      <p begin="00:19:31.650" end="00:19:36.240">for the customer and as your sequel db on that server that we have seen</p>
+      <p begin="00:19:36.240" end="00:19:40.990">will also take initial steps to populate that database with the schema that</p>
+      <p begin="00:19:40.990" end="00:19:43.730">...expecting our customers or tendons to have and</p>
+      <p begin="00:19:43.730" end="00:19:48.460">...application so that's also abstracted behind this call them</p>
+      <p begin="00:19:48.460" end="00:19:53.890">...here all of this using standard partial interfaces to address</p>
+      <p begin="00:19:53.890" end="00:19:59.420">...to create...database in the first-place but also...to run the sequel statements</p>
+      <p begin="00:19:59.420" end="00:20:03.990">...that newly created database that provisions the schema provisions the table</p>
+      <p begin="00:20:05.180" end="00:20:09.020">for our application and while we're waiting for that database to</p>
+      <p begin="00:20:09.020" end="00:20:13.960">get created from the next step that you already see here and there...finished so</p>
+      <p begin="00:20:13.960" end="00:20:18.350">we have a new database the next step is basically taking that database and registering</p>
+      <p begin="00:20:18.350" end="00:20:22.690">at in the customer catalog as a new customer as a new database that</p>
+      <p begin="00:20:22.690" end="00:20:29.820">a soon incoming requests can get routed to so let's run this statement as well.</p>
+      <p begin="00:20:29.820" end="00:20:34.530">And, that behind-the-scenes uses partial dot net integration to call into</p>
+      <p begin="00:20:34.530" end="00:20:40.010">our elastic scale libraries to add the new database into that what we call the</p>
+      <p begin="00:20:40.010" end="00:20:44.540">shark map the catalog and also register the mapping all the new tenant and</p>
+      <p begin="00:20:44.540" end="00:21:01.100">it's id to the database...just provisions let's put in some.</p>
+      <p begin="00:21:01.100" end="00:21:02.440">Right.</p>
+      <p begin="00:21:02.440" end="00:21:09.310">And, the last step is let's put a url through traffic manager on top of that.</p>
+      <p begin="00:21:09.310" end="00:21:12.560">You see...demo concert hall.</p>
+      <p begin="00:21:12.560" end="00:21:16.860">...wtwo peed...traffic manager net provisions for us.</p>
+      <p begin="00:21:16.860" end="00:21:20.640">So, without everything should be...place sasha better use...yeah,</p>
+      <p begin="00:21:20.640" end="00:21:27.110">let me first go into visual studio here and connect to the debug</p>
+      <p begin="00:21:27.110" end="00:21:32.350">rtwo are running cloud services hang on for a second.</p>
+      <p begin="00:21:32.350" end="00:21:38.080">So, here is the cloud service that's implementing...application.</p>
+      <p begin="00:21:38.080" end="00:21:49.120">...attached debug ahead.</p>
+      <p begin="00:21:49.120" end="00:21:54.350">Ok, let's wait for the symbols to load.</p>
+      <p begin="00:21:54.350" end="00:21:59.700">you see asset...break point in an interesting place let's switch over to bill.</p>
+      <p begin="00:21:59.700" end="00:22:04.650">For just a minute...guess what I'm going to do is basically connect to that customer</p>
+      <p begin="00:22:04.650" end="00:22:10.370">...type in the urls...simple scheme here we use the name of the customers the name of</p>
+      <p begin="00:22:10.370" end="00:22:15.520">...database the namely url so I'm going-to go ahead and connective that so, that's me</p>
+      <p begin="00:22:15.520" end="00:22:20.180">sending off the requests and you see the request hangs for an obvious reason we</p>
+      <p begin="00:22:20.180" end="00:22:25.380">had to break point in the debug are...statement here and now let</p>
+      <p begin="00:22:25.380" end="00:22:30.690">me explain what's actually happening with this statement so I have a class or name space</p>
+      <p begin="00:22:30.690" end="00:22:35.440">as charting has a static class basically singleton for the mapping</p>
+      <p begin="00:22:35.440" end="00:22:43.520">and the customer catalog and that's this customer shark map that I'm hovering over right now and,</p>
+      <p begin="00:22:43.520" end="00:22:48.300">that is using our elastic database libraries and the libraries</p>
+      <p begin="00:22:48.300" end="00:22:52.170">expose a call that is called open connection for key which</p>
+      <p begin="00:22:52.170" end="00:22:58.020">returns a regular ado dot net sequel connection but it uses the</p>
+      <p begin="00:22:58.020" end="00:23:01.720">...id or the customer identity if you want as</p>
+      <p begin="00:23:01.720" end="00:23:07.060">an input parameter to identify what is the correct database that this connection should get</p>
+      <p begin="00:23:07.060" end="00:23:10.660">...and all dot is done basically on the information</p>
+      <p begin="00:23:10.660" end="00:23:15.630">that you half provided about the mappings of your customers to the underline databases that</p>
+      <p begin="00:23:15.630" end="00:23:20.880">stored...abstracted behind that customer shark map object that you see here and,</p>
+      <p begin="00:23:20.880" end="00:23:23.190">then as we execute this</p>
+      <p begin="00:23:23.190" end="00:23:28.340">...open a regular sequel connection you see from that point on it's just regular eighty dot net</p>
+      <p begin="00:23:28.340" end="00:23:32.420">sequel, sequel coming onto switch back to me and...run this</p>
+      <p begin="00:23:32.420" end="00:23:39.480">...real quick and...we should save this guy should now return.</p>
+      <p begin="00:23:39.480" end="00:23:44.330">Survivor.</p>
+      <p begin="00:23:44.330" end="00:23:48.760">And, we have so what we've got actually is a customized experience...for</p>
+      <p begin="00:23:48.760" end="00:23:54.070">...customer obviously the...as a customer of I just</p>
+      <p begin="00:23:54.070" end="00:23:57.570">if I...to wing tip tickets and tossed</p>
+      <p begin="00:23:57.570" end="00:24:02.300">...done this provisioning job my problem...will be about...that's not going customize this cisco</p>
+      <p begin="00:24:02.300" end="00:24:05.860">...events and...so this is what I'm saying the experience for a</p>
+      <p begin="00:24:05.860" end="00:24:10.090">new customer so that's why it's different from the experience that</p>
+      <p begin="00:24:10.090" end="00:24:14.640">an existing customize so that's the that's the routing story</p>
+      <p begin="00:24:14.640" end="00:24:19.270">and what this cool if you think about it is all the magic happened...one statement that was one-line you</p>
+      <p begin="00:24:19.270" end="00:24:22.750">and inject into your application there instead of creating</p>
+      <p begin="00:24:22.750" end="00:24:28.830">a normal connection you create this connection through the magic of this ...system that</p>
+      <p begin="00:24:28.830" end="00:24:32.670">...fairly mechanical change so if you have and existing application existing piece of code</p>
+      <p begin="00:24:32.670" end="00:24:38.690">just calls regular...connection constructor and open call on the connection it's</p>
+      <p begin="00:24:38.690" end="00:24:44.430">really easy to change that code and use a new libraries?</p>
+      <p begin="00:24:44.430" end="00:24:49.200">Okay, so, that was that was a demo there so the next challenge</p>
+      <p begin="00:24:49.200" end="00:24:56.360">...talk about is this notion of predictable performance levels so I talked about they.</p>
+      <p begin="00:24:56.360" end="00:25:01.700">The case of different size companies the dog would...small geo school compared to the</p>
+      <p begin="00:25:01.700" end="00:25:06.130">...a concert whole perhaps compared to other companies...different sizes and</p>
+      <p begin="00:25:06.130" end="00:25:12.660">this kind of sense that I can predict that there are can be a busy app is.</p>
+      <p begin="00:25:12.660" end="00:25:17.990">The...will be busy ad they'll be more ticket purchases that cilantro concert hole they have more</p>
+      <p begin="00:25:17.990" end="00:25:23.810">come concerts than the dough has judo events so I consider</p>
+      <p begin="00:25:23.810" end="00:25:29.200">predict that I want to have different performance levels so there's a certain</p>
+      <p begin="00:25:29.200" end="00:25:33.530">amount of predictability as a set amount especially when you're starting out where</p>
+      <p begin="00:25:33.530" end="00:25:37.270">you can get the hang of what's going on and you can manage this</p>
+      <p begin="00:25:37.270" end="00:25:42.530">so let's talk about performance here I've got the idea that there's the arrows sizes that</p>
+      <p begin="00:25:42.530" end="00:25:47.410">reflect the some volume of workload coming in to each of those the different customers</p>
+      <p begin="00:25:47.410" end="00:25:53.600">...customer databases but before we can talk about performance and...to share kind</p>
+      <p begin="00:25:53.600" end="00:25:58.730">of concept with the and share the way we think about performance...on databases in the</p>
+      <p begin="00:25:58.730" end="00:26:03.430">...so we introduce this notion of a database throughput unit think</p>
+      <p begin="00:26:03.430" end="00:26:06.520">...for databases how...you kind of</p>
+      <p begin="00:26:06.520" end="00:26:11.120">put behind a database and this unit it's actually</p>
+      <p begin="00:26:11.120" end="00:26:17.280">a measure of relative measure performance on for dimensions so these</p>
+      <p begin="00:26:17.280" end="00:26:21.990">for dimensions here that of the amount of memory the amount of</p>
+      <p begin="00:26:21.990" end="00:26:28.410">write io log ios amount of compute cpu our and then the amount of</p>
+      <p begin="00:26:28.410" end="00:26:31.300">...capacity that we...read io capacity?</p>
+      <p begin="00:26:32.360" end="00:26:37.040">And, it's a relative measure we don't publish absolute numbers for these because</p>
+      <p begin="00:26:37.040" end="00:26:42.010">we as a platform provider ourselves reserve the right to adjust the hardware just</p>
+      <p begin="00:26:42.010" end="00:26:45.290">the performance and frankly to upgrade the specification of</p>
+      <p begin="00:26:45.290" end="00:26:48.060">our service of the time so this isn't</p>
+      <p begin="00:26:48.060" end="00:26:53.410">but we do is publish this is a relative measure to help you understand the</p>
+      <p begin="00:26:53.410" end="00:26:57.670">...performance of different levels in the service if we look at</p>
+      <p begin="00:26:57.670" end="00:27:00.620">anyone database and we can think of well how much of</p>
+      <p begin="00:27:00.620" end="00:27:04.650">that as a use here so we can think of a du meter here so I have a</p>
+      <p begin="00:27:04.650" end="00:27:09.530">database chugging along a using some amount of that then I might have a workload</p>
+      <p begin="00:27:09.530" end="00:27:13.900">that extends uses more of the memory than the other dimensions</p>
+      <p begin="00:27:13.900" end="00:27:18.480">there and you can see that we measure the du consume the database throughput units</p>
+      <p begin="00:27:18.480" end="00:27:23.470">...consumption...the largest of a dimensions at any moment in time the so in</p>
+      <p begin="00:27:23.470" end="00:27:29.190">terms of what is...you're using most of the moment that is your sort of us they think of...the</p>
+      <p begin="00:27:29.190" end="00:27:34.040">...this moment so we change the size of this you can see that</p>
+      <p begin="00:27:34.040" end="00:27:37.010">...is...access but out the same amounts</p>
+      <p begin="00:27:37.010" end="00:27:41.790">...still twenty this...grown overall so we think of this is xxx</p>
+      <p begin="00:27:41.790" end="00:27:45.840">...and this guy is kind of gone off to the side here</p>
+      <p begin="00:27:45.840" end="00:27:49.800">...further out so that's forty...so this perhaps is a boxes</p>
+      <p begin="00:27:49.800" end="00:27:54.560">...that...use and that's the point the box represents a</p>
+      <p begin="00:27:54.560" end="00:27:59.380">...of capacity were offering to your database so you provision</p>
+      <p begin="00:27:59.380" end="00:28:04.370">...database and can assigned to it amount of capacity so we look at the</p>
+      <p begin="00:28:04.370" end="00:28:09.550">this sort of notion of predictable performance levels you can see that we have I</p>
+      <p begin="00:28:09.550" end="00:28:12.260">...the scaling performance course basic</p>
+      <p begin="00:28:12.260" end="00:28:16.760">standard premium we have this range of performance levels of pricing</p>
+      <p begin="00:28:16.760" end="00:28:21.410">tiers they correspond to a and if we just sort of what to database I can</p>
+      <p begin="00:28:21.410" end="00:28:22.170">...database</p>
+      <p begin="00:28:22.170" end="00:28:27.160">up through any one of these often down I can so as I predict the</p>
+      <p begin="00:28:27.160" end="00:28:31.700">need or I see the need for more performance I can make I can</p>
+      <p begin="00:28:31.700" end="00:28:36.920">scala database to accommodate that so if I see that a particular one-pass</p>
+      <p begin="00:28:36.920" end="00:28:41.200">...being told...a by a custom ...like to have more performance</p>
+      <p begin="00:28:41.200" end="00:28:46.360">...possibly...some top offices coming to some small jazz cub to</p>
+      <p begin="00:28:46.360" end="00:28:49.710">plan unplug session I can anticipate more demand</p>
+      <p begin="00:28:49.710" end="00:28:53.640">and give that database...capacity and I can do that</p>
+      <p begin="00:28:53.640" end="00:28:58.650">in a sort of predictable way so how do how do we do that well</p>
+      <p begin="00:28:58.650" end="00:29:04.760">there this is actually not use...demo this we talk more about the elastic</p>
+      <p begin="00:29:04.760" end="00:29:09.320">...a second but I've got if I use the portal I've got a range these a pricing</p>
+      <p begin="00:29:09.320" end="00:29:14.110">cards which basically ramnik pick the different performance levels or I can do this</p>
+      <p begin="00:29:14.110" end="00:29:18.480">encode I can use a tci equal I can connect to the master database</p>
+      <p begin="00:29:18.480" end="00:29:24.470">an issue a query...can modify the addition here and I can do the same through our</p>
+      <p begin="00:29:24.470" end="00:29:27.980">shell as partial script for doing this and we have...api</p>
+      <p begin="00:29:27.980" end="00:29:32.960">and deed the all of these mechanisms the portal on these of t</p>
+      <p begin="00:29:32.960" end="00:29:36.540">sequel in the partial all end up calling the same apis</p>
+      <p begin="00:29:36.540" end="00:29:41.210">there's no difference in the behavior you issue t sql we pick that up unwrapped backs</p>
+      <p begin="00:29:41.210" end="00:29:45.920">...management service and the operate on the database in the same way so as a range of</p>
+      <p begin="00:29:45.920" end="00:29:53.930">apis a range of partial a features...managing scaling which is?</p>
+      <p begin="00:29:53.930" end="00:29:58.380">...my database going to be...there is indeed has great straight</p>
+      <p begin="00:29:58.380" end="00:30:03.290">...great question so that scaling couple things about the scaling action.</p>
+      <p begin="00:30:03.290" end="00:30:07.820">And, is that ...my game by...they</p>
+      <p begin="00:30:07.820" end="00:30:12.550">...at the scaling action the database stays online throughout this the change the</p>
+      <p begin="00:30:12.550" end="00:30:17.110">changes typically...instantaneous that can be some period of...so</p>
+      <p begin="00:30:17.110" end="00:30:24.090">...is why we say you should think about predictingperformance needs and, skating them</p>
+      <p begin="00:30:24.090" end="00:30:28.890">...of that so if we look here what this means we can think about scaling</p>
+      <p begin="00:30:28.890" end="00:30:35.390">the databases than to support the different loads on each database okay so that was kind of</p>
+      <p begin="00:30:35.390" end="00:30:39.580">easy enough...small was...company I can maybe manage a small</p>
+      <p begin="00:30:39.580" end="00:30:44.310">number databases that way but you can see how that would get increasingly complicated</p>
+      <p begin="00:30:44.310" end="00:30:49.040">to try and predicts the workload needs of...okay for maybe twenty</p>
+      <p begin="00:30:49.040" end="00:30:53.630">...maybe a hundred customers that gets to be a bit more problematic if you've got</p>
+      <p begin="00:30:53.630" end="00:30:59.220">thousands of customers and we have got systems you can write scripts and use</p>
+      <p begin="00:30:59.220" end="00:31:02.290">our apis to write controlling software that would, for example,</p>
+      <p begin="00:31:02.290" end="00:31:07.110">detect workload changes and would scale for you so you can take these actions because the</p>
+      <p begin="00:31:07.110" end="00:31:11.960">whole services programmable so you can kind of accommodate that but you go to work kind of</p>
+      <p begin="00:31:11.960" end="00:31:14.200">...dash problem so what about a</p>
+      <p begin="00:31:14.200" end="00:31:18.740">different way of solving this when we've got hundreds or thousands of</p>
+      <p begin="00:31:18.740" end="00:31:23.310">databases so this is where we introduce the elastic database model so</p>
+      <p begin="00:31:23.310" end="00:31:28.200">...database model introduces the idea of elastic databases and elastic database</p>
+      <p begin="00:31:28.200" end="00:31:34.440">pool so these this is the notion of providing a pool of resources that can be shared</p>
+      <p begin="00:31:34.440" end="00:31:39.070">among many databases particular appropriate for databases anal active</p>
+      <p begin="00:31:39.070" end="00:31:44.030">...time and people on buying concerts every buying tickets to concerts every second of</p>
+      <p begin="00:31:44.030" end="00:31:48.250">every day may have bursts of activity but that, you know, the database is</p>
+      <p begin="00:31:48.250" end="00:31:54.200">not going to be used...time by all those customers so we've got all sorts of a</p>
+      <p begin="00:31:54.200" end="00:31:57.490">opportunity time slice the interactions to basically</p>
+      <p begin="00:31:57.490" end="00:32:02.450">share the resources instead of giving each customer resources and with</p>
+      <p begin="00:32:02.450" end="00:32:07.400">the danger of over provisioning for some all under provisioning others and basically not be able to bounce</p>
+      <p begin="00:32:07.400" end="00:32:11.330">...costs as the...provider whatever I can</p>
+      <p begin="00:32:11.330" end="00:32:15.900">do a better job of predicting the used in aggregate of a set of databases so that's</p>
+      <p begin="00:32:15.900" end="00:32:20.990">what the...database model is all about so we're introducing our where it</p>
+      <p begin="00:32:20.990" end="00:32:25.340">...goes into public preview this at this conference we announced it and</p>
+      <p begin="00:32:25.340" end="00:32:29.410">is now available for use ...indeed we're using it in and indeed</p>
+      <p begin="00:32:29.410" end="00:32:33.100">...demo application is running against a pool of databases</p>
+      <p begin="00:32:33.100" end="00:32:38.300">you've seen here and we have started with in the</p>
+      <p begin="00:32:38.300" end="00:32:44.100">previews just the standard a lasting database and the standard elastic database</p>
+      <p begin="00:32:44.100" end="00:32:47.570">pools that is the...that corresponds to the range</p>
+      <p begin="00:32:47.570" end="00:32:51.380">of performance available to a standard ordinary...database so</p>
+      <p begin="00:32:51.380" end="00:32:56.060">it ranges between tend to use in a hundred dts?</p>
+      <p begin="00:32:56.060" end="00:32:59.270">So, that's what's available we have a pool then with a</p>
+      <p begin="00:32:59.270" end="00:33:04.220">...sizes ranging between two hundred and twelve hundred to use so you can put a large number databases in</p>
+      <p begin="00:33:04.220" end="00:33:08.280">the currently have a limit of a hundred databases but these are just sort of</p>
+      <p begin="00:33:08.280" end="00:33:11.980">like getting started limits we put in place we will have</p>
+      <p begin="00:33:11.980" end="00:33:15.340">smaller pools and much larger pools and they'll be more</p>
+      <p begin="00:33:15.340" end="00:33:20.640">pool sizes in-between photo scaling the pool itself...a more</p>
+      <p begin="00:33:20.640" end="00:33:26.530">...granularity fashion and again you can create and configure...through various means a through</p>
+      <p begin="00:33:26.530" end="00:33:31.530">...rest apis and for the portland I'll show you that just a second and then you can</p>
+      <p begin="00:33:31.530" end="00:33:36.060">move databases...out again databases remain online...the moving them in</p>
+      <p begin="00:33:36.060" end="00:33:39.790">...cel between pools and then we've got monitoring</p>
+      <p begin="00:33:39.790" end="00:33:43.650">...alerting...facilities so you can in the same way today you can monitor</p>
+      <p begin="00:33:43.650" end="00:33:48.210">alert the performance be alerted on changes to the performance of</p>
+      <p begin="00:33:48.210" end="00:33:53.180">an individual database you cannot get the same experience across the pool itself so that's got</p>
+      <p begin="00:33:53.180" end="00:33:59.110">to take ...for that just illustrate a couple of points here one</p>
+      <p begin="00:33:59.110" end="00:34:04.580">is the idea of the database...so I mentioned</p>
+      <p begin="00:34:04.580" end="00:34:08.850">the pool itself supports databases a standard...supports the same</p>
+      <p begin="00:34:08.850" end="00:34:13.960">...performance as a...anda standard database so</p>
+      <p begin="00:34:13.960" end="00:34:18.910">...from ten through one hundred to use so</p>
+      <p begin="00:34:18.910" end="00:34:22.000">...where you've got a burst level as a...so these</p>
+      <p begin="00:34:22.000" end="00:34:26.740">boxes now represent each boxes scale to be the height of the</p>
+      <p begin="00:34:26.740" end="00:34:31.350">pool two hundred four hundred eight hundred twelve hundred which of the initial</p>
+      <p begin="00:34:31.350" end="00:34:34.410">...size offerings then you can see how</p>
+      <p begin="00:34:34.410" end="00:34:39.400">...individual databases aren't going to get to burst all way up to twelve hundred to use but they get to</p>
+      <p begin="00:34:39.400" end="00:34:43.920">pers of this standard level but what can I do this is I can now put into</p>
+      <p begin="00:34:43.920" end="00:34:48.760">this large number databases you can see quite clearly I could put many more databases into a</p>
+      <p begin="00:34:48.760" end="00:34:53.370">larger pool and that's the key of this is having support for large numbers of</p>
+      <p begin="00:34:53.370" end="00:34:58.080">databases we hope to dramatically growth by potentially orders of magnitude the</p>
+      <p begin="00:34:58.080" end="00:35:05.170">size of pools that we support the so...the space on that one so from</p>
+      <p begin="00:35:05.170" end="00:35:07.190">our architecture standpoint what does this mean.</p>
+      <p begin="00:35:08.210" end="00:35:12.530">Means we can put databases into pools we can group them together...give them shared</p>
+      <p begin="00:35:12.530" end="00:35:17.570">resources...can be a different sizes different types I can give different</p>
+      <p begin="00:35:17.570" end="00:35:20.650">...characteristics of different databases in each</p>
+      <p begin="00:35:20.650" end="00:35:25.240">of those pools and I can now support in this way I can scale out</p>
+      <p begin="00:35:25.240" end="00:35:30.010">the to support the performance requirements of a large number databases</p>
+      <p begin="00:35:30.010" end="00:35:35.160">...critical here is this bursting ability between effectively zero and one</p>
+      <p begin="00:35:35.160" end="00:35:40.160">hundred to use is now available to every single database so I haven't got to worry about scaling the databases up</p>
+      <p begin="00:35:40.160" end="00:35:44.680">and down between somewhere between a and zero and sone and stwo</p>
+      <p begin="00:35:44.680" end="00:35:50.100">...sthree I just say...in the pool and now they get...scale up and down I've got more efficient</p>
+      <p begin="00:35:50.100" end="00:35:52.390">du usage because</p>
+      <p begin="00:35:52.390" end="00:35:57.270">each databases in active isn't using the database of his capacity that</p>
+      <p begin="00:35:57.270" end="00:36:01.700">might have been reserved for that is now available for other databases to use and I've got this</p>
+      <p begin="00:36:01.700" end="00:36:12.930">bursting ability ok so let's takea look at this.</p>
+      <p begin="00:36:12.930" end="00:36:17.250">So,...I'm in the portal...to do...this demonstration the portal</p>
+      <p begin="00:36:17.250" end="00:36:23.290">because the portal is just a great way especially when you're handling large numbers of databases</p>
+      <p begin="00:36:23.290" end="00:36:28.160">it's a great way...switch from managing many databases to managing a few a number of</p>
+      <p begin="00:36:28.160" end="00:36:32.260">pool's is a great place that you bail to operate on the so here's</p>
+      <p begin="00:36:32.260" end="00:36:36.630">a server which has got a associated with a set of databases</p>
+      <p begin="00:36:36.630" end="00:36:45.700">...see here these are the databases that correspond to the differentclubs and...</p>
+      <p begin="00:36:45.700" end="00:36:50.770">Sign up for a service so I'm going-to go ahead and...so I'm doing this I</p>
+      <p begin="00:36:50.770" end="00:36:55.200">said the services running into a pool already it is under got another,</p>
+      <p begin="00:36:55.200" end="00:37:00.720">another...set up with the same...show you how...creation works so let's just do</p>
+      <p begin="00:37:00.720" end="00:37:05.810">that so I'm and purses adding a pool...if it's a preview as I</p>
+      <p begin="00:37:05.810" end="00:37:09.910">have to accept the terms that's been done already we only support one to the moment this the standard</p>
+      <p begin="00:37:09.910" end="00:37:15.710">here so I'm going-to go ahead and add the databases we using ...which is going to actually</p>
+      <p begin="00:37:15.710" end="00:37:21.470">analyze the set of databases and analyze they usage profile...pool to be</p>
+      <p begin="00:37:21.470" end="00:37:25.600">compose of appropriately size databases so databases</p>
+      <p begin="00:37:25.600" end="00:37:29.890">...that are bursting beyond...currently active beyond the level of</p>
+      <p begin="00:37:29.890" end="00:37:33.330">...to use wouldn't be good candidates because they would be capped</p>
+      <p begin="00:37:33.330" end="00:37:39.160">norwood databases and, that have a sort of constant usage profiles</p>
+      <p begin="00:37:39.160" end="00:37:43.620">...databases being hammered over time that wouldn't be a good canada put into a pool, you know,</p>
+      <p begin="00:37:43.620" end="00:37:45.920">you want to use databases that are being the have</p>
+      <p begin="00:37:45.920" end="00:37:49.940">...kind of usage profile so let's go ahead and select the ones that</p>
+      <p begin="00:37:49.940" end="00:37:54.460">...and it's actually recommended every database in our in architecture here and</p>
+      <p begin="00:37:54.460" end="00:38:00.300">all customer service because that's the characteristic of...workload that is the infrequently</p>
+      <p begin="00:38:00.300" end="00:38:07.820">uses I've been saying and it's also recommended a pool size which ashes...to...</p>
+      <p begin="00:38:07.820" end="00:38:14.980">The full-size here.</p>
+      <p begin="00:38:14.980" end="00:38:18.220">And, for the first-time in weeks.</p>
+      <p begin="00:38:18.220" end="00:38:21.360">So, what you maybe just...this and if we can</p>
+      <p begin="00:38:21.360" end="00:38:29.000">...artist we have title databases samoa?</p>
+      <p begin="00:38:29.000" end="00:38:30.630">Right so rather sadly one of our</p>
+      <p begin="00:38:30.630" end="00:38:37.700">graphs hasn't shown up of describe what you would have seen so, we have to basically scales</p>
+      <p begin="00:38:37.700" end="00:38:41.920">here to adjustments we can make to a...we can change the size of the pool so I can</p>
+      <p begin="00:38:41.920" end="00:38:46.490">scala database here up and down the pool size up and down it's</p>
+      <p begin="00:38:46.490" end="00:38:52.190">...scaling the access the as I hit these higher levels and,</p>
+      <p begin="00:38:52.190" end="00:38:56.960">I can adjust the amount of that capacity given to each database so we use the same</p>
+      <p begin="00:38:56.960" end="00:39:00.840">amount for every database here...and currently a set of one hundred</p>
+      <p begin="00:39:00.840" end="00:39:04.930">but you can see we've got scale here is the...and average...to use that</p>
+      <p begin="00:39:04.930" end="00:39:11.070">have been analyzed over the last fifteen to thirty days of the databases that</p>
+      <p begin="00:39:11.070" end="00:39:16.030">we're thinking of putting into this pool and it's basically showing me how much</p>
+      <p begin="00:39:16.030" end="00:39:20.660">...in the to-you...how many did use they've been using so it's looking at historical</p>
+      <p begin="00:39:20.660" end="00:39:25.550">performance and saying okay so if I if I were to,</p>
+      <p begin="00:39:25.550" end="00:39:28.170">for example, reduce the bursting from a hundred down</p>
+      <p begin="00:39:28.170" end="00:39:32.970">to fifty you can see we would actually cap some of those databases they would some of that</p>
+      <p begin="00:39:32.970" end="00:39:36.760">...would now not be allowed...not be allowed I mean they would</p>
+      <p begin="00:39:36.760" end="00:39:41.490">...down that's what...would nothing would be terminated that we know connection</p>
+      <p begin="00:39:41.490" end="00:39:47.230">...just slow down the performance to that so that level so we probably what a</p>
+      <p begin="00:39:47.230" end="00:39:51.770">key point...though is to think about what is it that's going on you may be happy to have</p>
+      <p begin="00:39:51.770" end="00:39:57.460">some best important queries capped for the sake of allowing more databases to</p>
+      <p begin="00:39:57.460" end="00:40:02.030">have more capacity to burst more free obviously database that bus...is</p>
+      <p begin="00:40:02.030" end="00:40:06.900">using a capacity that is now available wafts...for other databases</p>
+      <p begin="00:40:06.900" end="00:40:12.370">second of tuning measure that you've got that shooting option you can also set a minimum go</p>
+      <p begin="00:40:12.370" end="00:40:17.030">back to a hundred here...minimum du this will be actually reserving the to</p>
+      <p begin="00:40:17.030" end="00:40:21.160">use reserving capacity for databases as soon as you start doing that you effectively</p>
+      <p begin="00:40:21.160" end="00:40:25.700">start and decreasing the number databases...allowed so...if I have that</p>
+      <p begin="00:40:25.700" end="00:40:31.210">zeroed we actually have...now system limit of one hundred databases pool you can see</p>
+      <p begin="00:40:31.210" end="00:40:35.500">...up...ten that limit comes down to twenty</p>
+      <p begin="00:40:35.500" end="00:40:39.730">that's very simple is the two hundred to use divided by ten...</p>
+      <p begin="00:40:39.730" end="00:40:44.720">guarantee everyone every database and get...gus you can only have twenty database</p>
+      <p begin="00:40:44.720" end="00:40:50.160">and apple so this is an option it's not one we think will be used by many people very</p>
+      <p begin="00:40:50.160" end="00:40:53.130">...people going to have a profile...says</p>
+      <p begin="00:40:53.130" end="00:40:57.730">the suggests they wanna-be of just allow the databases come and go...use zeroed have</p>
+      <p begin="00:40:57.730" end="00:41:01.930">...reserve them when they're not active but it depends entirely on you</p>
+      <p begin="00:41:01.930" end="00:41:05.810">...requirements so then I could go ahead andexcept that</p>
+      <p begin="00:41:05.810" end="00:41:08.710">let me tell you what you didn't say.</p>
+      <p begin="00:41:08.710" end="00:41:13.240">That you will see when you use the services in this...space here we actually</p>
+      <p begin="00:41:13.240" end="00:41:18.500">plot on the aggregate usage of the aggregate storage of databases in the</p>
+      <p begin="00:41:18.500" end="00:41:22.610">pool you're proposing to put into the pool so we actually aggregate basically we're</p>
+      <p begin="00:41:22.610" end="00:41:27.390">looking to see if we would have won the databases you've picked...have been in the pool for</p>
+      <p begin="00:41:27.390" end="00:41:30.770">the last month how much capacity with a of the and</p>
+      <p begin="00:41:30.770" end="00:41:35.910">the what you would have seen is a...a growing trend line of storage space</p>
+      <p begin="00:41:35.910" end="00:41:40.860">here indicating that we will two hundred to use as well size he was a good recommendation and you</p>
+      <p begin="00:41:40.860" end="00:41:45.870">...see that if you scale it up to four hundred you would have had masses of head room so this is a good way</p>
+      <p begin="00:41:45.870" end="00:41:50.980">...to choose the size of pool...of...you want to have.</p>
+      <p begin="00:41:50.980" end="00:41:55.570">See go ahead and select and we would select okay here...back to the stop or</p>
+      <p begin="00:41:55.570" end="00:42:00.900">...it will put up the asti pool here so I can now ...create a...unless</p>
+      <p begin="00:42:00.900" end="00:42:05.590">...created the...start moving the databases into the pool each database remains with</p>
+      <p begin="00:42:05.590" end="00:42:10.230">...current service term pricey and...until it lands in the pool...it subject to</p>
+      <p begin="00:42:10.230" end="00:42:15.930">the performance of the pool ok now like any good...show I have one of these.</p>
+      <p begin="00:42:15.930" end="00:42:30.450">Creative already so we take a quick look at the...using for the demo itself.</p>
+      <p begin="00:42:30.450" end="00:42:34.500">Well, this leads.</p>
+      <p begin="00:42:34.500" end="00:42:37.060">So, we've got the same graf information</p>
+      <p begin="00:42:37.060" end="00:42:41.000">here about the historical performance so these are the same databases running the same test</p>
+      <p begin="00:42:41.000" end="00:42:48.360">...again so we see the same performance profile and what this is telling me here?</p>
+      <p begin="00:42:48.360" end="00:42:54.090">And,...oa data that's the that's the kind of shape...seen so we are running a</p>
+      <p begin="00:42:54.090" end="00:43:00.130">workload against these databases we open up and see that's the databases.</p>
+      <p begin="00:43:00.130" end="00:43:04.700">...and open any one of these here we can open and see the individual workloads we running</p>
+      <p begin="00:43:04.700" end="00:43:08.990">attest workload against...that actually have people buying tickets for</p>
+      <p begin="00:43:08.990" end="00:43:12.000">often tissues and you can see that there's a...</p>
+      <p begin="00:43:12.000" end="00:43:16.910">periodic basically it comes in we buy a bunch of tickets and we go off and these databases</p>
+      <p begin="00:43:16.910" end="00:43:21.280">...different timed kind of pattern here...this going on and,</p>
+      <p begin="00:43:21.280" end="00:43:25.920">you can see here we've got the graf then showing us and we've</p>
+      <p begin="00:43:25.920" end="00:43:31.460">seen a similar graph and the in the earlier display showing the anticipated</p>
+      <p begin="00:43:31.460" end="00:43:40.220">utilization and in the way that you could set this up.</p>
+      <p begin="00:43:40.220" end="00:43:45.660">Beforehand we can come in here and we can scale now the same</p>
+      <p begin="00:43:45.660" end="00:43:50.340">the same qualities we can set scale the size of the pool and we can scale the</p>
+      <p begin="00:43:51.350" end="00:43:56.080">maxima minimum...database to optimize the pool...current workload</p>
+      <p begin="00:43:56.080" end="00:44:02.640">also from here you can we go back to this databases lists you can add and</p>
+      <p begin="00:44:02.640" end="00:44:06.410">remove databases from the pool from here so you can go and add database to the pool</p>
+      <p begin="00:44:06.410" end="00:44:11.460">...on the server but not yet in the pool.</p>
+      <p begin="00:44:11.460" end="00:44:11.950">Okay,</p>
+      <p begin="00:44:11.950" end="00:44:16.760">so, in...time ...of skip the that last piece that's going</p>
+      <p begin="00:44:16.760" end="00:44:25.930">and ...to moi.</p>
+      <p begin="00:44:25.930" end="00:44:29.540">Okay.</p>
+      <p begin="00:44:29.540" end="00:44:34.180">So, the that we talk about handling sort of.</p>
+      <p begin="00:44:34.180" end="00:44:36.420">This unpredictable workload sense of it</p>
+      <p begin="00:44:36.420" end="00:44:40.870">...unpredictability then matches well to the notion of this elastic pool but</p>
+      <p begin="00:44:40.870" end="00:44:44.710">...and then we have that we have and even with a pool</p>
+      <p begin="00:44:44.710" end="00:44:49.550">for a particulate intense workloads how we handle that of course the to models</p>
+      <p begin="00:44:49.550" end="00:44:54.180">...the notion of elastic databases...normal databases with</p>
+      <p begin="00:44:54.180" end="00:44:58.540">...individually scale performance so what we can do is if we if we now</p>
+      <p begin="00:44:58.540" end="00:45:04.730">predictable see that as a intends workload requirement we can take database</p>
+      <p begin="00:45:04.730" end="00:45:10.000">pool we can skated up its can survive in this...can stay as long as</p>
+      <p begin="00:45:10.000" end="00:45:15.070">a likes in this state of being outside the pool of having the being</p>
+      <p begin="00:45:15.070" end="00:45:20.300">assigned the performance that it needs to get the job done and as that workload</p>
+      <p begin="00:45:20.300" end="00:45:24.710">kind of quite asses on...and we see that we don't need that are perhaps this was the this was the</p>
+      <p begin="00:45:24.710" end="00:45:27.600">unplugged concept of the...here and,</p>
+      <p begin="00:45:27.600" end="00:45:32.290">then we can bring it back down to size and drop it in fact you can drop it straight back into the pool and it will it</p>
+      <p begin="00:45:32.290" end="00:45:40.390">will now adjusts itself to the characteristics of a pool let's actually.</p>
+      <p begin="00:45:40.390" end="00:45:43.790">Go on talk about this guy.</p>
+      <p begin="00:45:43.790" end="00:45:49.640">you see now you can put...of databases in the pool now we can very effectively manage</p>
+      <p begin="00:45:49.640" end="00:45:55.320">there are performance characteristics to capacity...resources as a</p>
+      <p begin="00:45:55.320" end="00:45:59.630">sas provider lots of databases the next obvious challenge</p>
+      <p begin="00:45:59.630" end="00:46:01.750">you'll run into is a</p>
+      <p begin="00:46:01.750" end="00:46:04.940">...across that set of databases in your data</p>
+      <p begin="00:46:04.940" end="00:46:09.670">...so imagine you have tens or hundreds of databases how complicated</p>
+      <p begin="00:46:09.670" end="00:46:14.280">would be to manage different connection strains individually to</p>
+      <p begin="00:46:14.280" end="00:46:19.140">...open up the connections programmatic leo throughthrough a script and,</p>
+      <p begin="00:46:19.140" end="00:46:22.820">then putting all the results together in one place</p>
+      <p begin="00:46:22.820" end="00:46:28.190">so you to address these challenges we announced earlier in the</p>
+      <p begin="00:46:28.190" end="00:46:33.240">keynote on wednesday ...database queries which gives you the ability to</p>
+      <p begin="00:46:33.240" end="00:46:38.350">connect into a single...db database and register</p>
+      <p begin="00:46:38.350" end="00:46:43.460">and underlying said of databases the customer databases in this picture here register</p>
+      <p begin="00:46:43.460" end="00:46:47.370">...a set of databases that you can query through a single</p>
+      <p begin="00:46:47.370" end="00:46:51.630">sequel statement from a single database connection and</p>
+      <p begin="00:46:51.630" end="00:46:54.860">...illustrating thissingle database as the elastic</p>
+      <p begin="00:46:54.860" end="00:46:59.200">...database that's living off to the left off the customer databases</p>
+      <p begin="00:46:59.200" end="00:47:03.990">...since it's a single and just regular sequel server database you can use all</p>
+      <p begin="00:47:03.990" end="00:47:07.530">...familiar tools and programming paradigms to connect to the</p>
+      <p begin="00:47:07.530" end="00:47:11.030">odp elastic database query database and then</p>
+      <p begin="00:47:11.030" end="00:47:15.530">you sequel to transparently query across</p>
+      <p begin="00:47:16.640" end="00:47:24.340">your data your with tens hundreds or maybe even thousands of databases so?</p>
+      <p begin="00:47:24.340" end="00:47:28.810">Let me tell you a little bit more about this I mentioned a lot of the these points</p>
+      <p begin="00:47:28.810" end="00:47:33.820">or even talking to the previous slide one key aspect to keep in mind and we'll see that in the demo</p>
+      <p begin="00:47:33.820" end="00:47:39.280">...just a minute is that...leverages dee the capabilities that we saw in the first</p>
+      <p begin="00:47:39.280" end="00:47:42.960">...that I showed where you are using the elastic database tools</p>
+      <p begin="00:47:42.960" end="00:47:47.210">to libraries to store the set of databases and to keep the</p>
+      <p begin="00:47:47.210" end="00:47:51.820">mappings of tenants and customers to these different databases so</p>
+      <p begin="00:47:51.820" end="00:47:55.350">...database query leverages out information that be stored in</p>
+      <p begin="00:47:55.350" end="00:48:00.340">that customer catalog databases leverages dot and can then and</p>
+      <p begin="00:48:00.340" end="00:48:03.380">...virtue of doing that knows what's the set of databases</p>
+      <p begin="00:48:03.380" end="00:48:08.550">that queries should stretch over it's a very straightforward simple experiencethe setup is</p>
+      <p begin="00:48:08.550" end="00:48:12.590">basically just two different new dl statements that were introducing into</p>
+      <p begin="00:48:12.590" end="00:48:14.670">t sequel and from that point on</p>
+      <p begin="00:48:14.670" end="00:48:18.790">...just regular to...queries against what looks like</p>
+      <p begin="00:48:18.790" end="00:48:23.980">tables but essentially a view over databases that are physically...and,</p>
+      <p begin="00:48:23.980" end="00:48:31.020">scale out across your data to you so let me show you that in action?</p>
+      <p begin="00:48:31.020" end="00:48:34.590">...back into visual studio.</p>
+      <p begin="00:48:34.590" end="00:48:39.870">And, what you see here is let me start first illustrating the dl statements that you would needs</p>
+      <p begin="00:48:39.870" end="00:48:44.680">to run and I've done that on the databases we're connected to on the elastic query</p>
+      <p begin="00:48:44.680" end="00:48:49.750">database I've already done that previously the first one is the creation of what we call</p>
+      <p begin="00:48:49.750" end="00:48:53.610">...external data source and it's parameters</p>
+      <p begin="00:48:53.610" end="00:48:57.470">...basically taking the information about the customer</p>
+      <p begin="00:48:57.470" end="00:48:59.280">catalog and the metadata that</p>
+      <p begin="00:48:59.280" end="00:49:04.020">the libraries use to do the connection brokering for us analysis that is</p>
+      <p begin="00:49:04.020" end="00:49:11.450">essential what you see here and, there's a view that we can use?</p>
+      <p begin="00:49:11.450" end="00:49:15.410">The results and we have one that has been pre provision</p>
+      <p begin="00:49:15.410" end="00:49:20.660">...this guy down here we've given it a name.</p>
+      <p begin="00:49:20.660" end="00:49:22.760">And, that's our external data source.</p>
+      <p begin="00:49:23.920" end="00:49:28.400">And, we're using that then in the statements that you see here</p>
+      <p begin="00:49:28.400" end="00:49:33.170">...are creating external tables and these external tables of the look and</p>
+      <p begin="00:49:33.170" end="00:49:38.080">behave like regular tables but they don't hold actual data physically in the database</p>
+      <p begin="00:49:38.080" end="00:49:43.610">...created...basically just a shell on top of the data that's living physically</p>
+      <p begin="00:49:43.610" end="00:49:48.510">distributed in the databases and the underlying data...and they know about these databases</p>
+      <p begin="00:49:49.600" end="00:49:54.470">...dot external data source if we just created in the previous allstate and</p>
+      <p begin="00:49:54.470" end="00:49:59.670">what I've done in this example here's I've created rone table customer configuration</p>
+      <p begin="00:49:59.670" end="00:50:05.110">as one of the tables in the...data...here's a second one country?</p>
+      <p begin="00:50:05.110" end="00:50:10.530">And,...this let me run a few simple queries on top of that here's</p>
+      <p begin="00:50:10.530" end="00:50:16.500">one example going against the external table customer configuration and let's run this</p>
+      <p begin="00:50:16.500" end="00:50:22.540">...takes a second and what the queries basically doing it's showing for us the styles</p>
+      <p begin="00:50:22.540" end="00:50:28.460">of themes and...of the sas application of chosen for their websites</p>
+      <p begin="00:50:28.460" end="00:50:32.360">...make this a little bit larger so you see that we have a lot of fans of</p>
+      <p begin="00:50:32.360" end="00:50:33.990">jackass and a lot of</p>
+      <p begin="00:50:33.990" end="00:50:39.900">theater fans as well so that's kind of the distribution information that we can</p>
+      <p begin="00:50:39.900" end="00:50:45.080">paul very easily and that can be very important information from the as ask provided to see what's the behavior</p>
+      <p begin="00:50:45.080" end="00:50:50.480">of my customer what are the interests and,...can do that with just a simple single</p>
+      <p begin="00:50:50.480" end="00:50:55.270">...statement here is very similar information about what</p>
+      <p begin="00:50:55.270" end="00:51:00.140">countries we're supporting for our customers in that sas application right now we</p>
+      <p begin="00:51:00.140" end="00:51:05.730">are very limited in I just supporting the united states will this change that and yeah,</p>
+      <p begin="00:51:05.730" end="00:51:11.850">that's...we can fix and we're both not from the states?</p>
+      <p begin="00:51:11.850" end="00:51:17.490">So, that basically gives you a quick view into elastic database</p>
+      <p begin="00:51:17.490" end="00:51:22.290">curry's that key take aways are...into a single database...using regular t</p>
+      <p begin="00:51:22.290" end="00:51:27.150">...but essentially happens for you behind-the-scenes...the query runs across tens or</p>
+      <p begin="00:51:27.150" end="00:51:31.370">hundreds of databases and address equal...doing the heavy lifting for you for...</p>
+      <p begin="00:51:31.370" end="00:51:39.000">distant distributed processing that needs to happen for that now we talk about queries and obviously</p>
+      <p begin="00:51:39.000" end="00:51:43.890">the focus will queries as an interactive scenario I come in with the t sql query they want</p>
+      <p begin="00:51:43.890" end="00:51:48.930">to run right away or I'm using a report you can use...connects to the elastic</p>
+      <p begin="00:51:48.930" end="00:51:54.970">query database two-run reports there's another scenario there's a little different that's typically in</p>
+      <p begin="00:51:54.970" end="00:52:00.160">a batch context with...administrative tasks or operational task imagine that in the</p>
+      <p begin="00:52:00.160" end="00:52:04.290">lifecycle of your application on every...provides going to hit that as the walls</p>
+      <p begin="00:52:04.290" end="00:52:08.010">their application over time you have to make schema changes or you have to</p>
+      <p begin="00:52:08.010" end="00:52:12.870">roll-out additional reference data provision new user...or rotate, rotate the</p>
+      <p begin="00:52:12.870" end="00:52:18.050">administrator password so the challenge of your facing as there's a piece of t sequel that</p>
+      <p begin="00:52:18.050" end="00:52:22.450">I need to run against each and every database in my pool or in the set of customer data</p>
+      <p begin="00:52:22.450" end="00:52:28.610">basis for my application and what we also showed as part of the keynote</p>
+      <p begin="00:52:28.610" end="00:52:33.990">and that we started in preview this week is what we call elastic database jobs</p>
+      <p begin="00:52:33.990" end="00:52:37.700">it capability that allows you to submit at</p>
+      <p begin="00:52:37.700" end="00:52:42.550">...statement against the pool...database pool and have address equally</p>
+      <p begin="00:52:42.550" end="00:52:48.390">...take care of running dot statement across ...set of databases and,</p>
+      <p begin="00:52:48.390" end="00:52:52.020">you could think of hey I can do thiswith the for each of loop in</p>
+      <p begin="00:52:52.020" end="00:52:54.330">...as well as their couple of</p>
+      <p begin="00:52:54.330" end="00:53:00.980">...additional capabilities...you get withelastic database jobs so for instance if you're</p>
+      <p begin="00:53:00.980" end="00:53:04.770">...failures for some of the databases along the way as you roll-out</p>
+      <p begin="00:53:04.770" end="00:53:06.400">...sequel statement</p>
+      <p begin="00:53:06.400" end="00:53:10.790">...database jobs will automatically retry your to</p>
+      <p begin="00:53:10.790" end="00:53:17.420">...scripts against those databases in the presence off transient failures and,</p>
+      <p begin="00:53:17.420" end="00:53:20.290">let me show you this</p>
+      <p begin="00:53:20.290" end="00:53:24.170">...action in the demo?</p>
+      <p begin="00:53:24.170" end="00:53:27.510">...switch over.</p>
+      <p begin="00:53:27.510" end="00:53:35.510">I didn't go to the...so...didn't see the nice lights without that's too bad so.</p>
+      <p begin="00:53:35.510" end="00:53:39.900">...of coming out on that are also well-behaved so.</p>
+      <p begin="00:53:39.900" end="00:53:43.630">Let me ...the portal here is.</p>
+      <p begin="00:53:45.160" end="00:53:48.980">The elastic...that we are using for</p>
+      <p begin="00:53:48.980" end="00:53:52.640">...and up here.</p>
+      <p begin="00:53:52.640" end="00:53:58.440">You see the experience to create jobs and.</p>
+      <p begin="00:53:58.440" end="00:53:58.960">Let's</p>
+      <p begin="00:53:58.960" end="00:54:04.890">create a job like this to role reference data.</p>
+      <p begin="00:54:04.890" end="00:54:08.560">And, here you see.</p>
+      <p begin="00:54:08.560" end="00:54:12.920">...fixing the problem that...limited to the united states...</p>
+      <p begin="00:54:12.920" end="00:54:17.450">...from the uk...germany's elise add those countries here.</p>
+      <p begin="00:54:18.590" end="00:54:26.940">It's just a t...statement let's submit this against the pool and see what happens.</p>
+      <p begin="00:54:26.940" end="00:54:27.470">So,...was</p>
+      <p begin="00:54:27.470" end="00:54:32.800">...running this job now so this job is basically running in a cloud service that you</p>
+      <p begin="00:54:32.800" end="00:54:37.870">have provision against your subscription and you manage yourself at this point but,</p>
+      <p begin="00:54:37.870" end="00:54:42.810">it's tightly integrated with the portals as soon as you go through the provisioning experience for</p>
+      <p begin="00:54:42.810" end="00:54:48.630">these cloud services then they basically snap to the elastic database</p>
+      <p begin="00:54:48.630" end="00:54:52.000">pools if you have shell so let's look at the job</p>
+      <p begin="00:54:52.000" end="00:54:56.620">analysis what has happened to it this is the one we just created and you can see</p>
+      <p begin="00:54:56.620" end="00:55:01.760">...already completed and you see that and ran successfully against all</p>
+      <p begin="00:55:01.760" end="00:55:06.360">of these databases now since we have global query we can actually</p>
+      <p begin="00:55:06.360" end="00:55:09.850">or lasting database query we can actually check this out and see that's</p>
+      <p begin="00:55:09.850" end="00:55:16.860">...and the job has really run so let's run this...statement again.</p>
+      <p begin="00:55:16.860" end="00:55:19.180">And, see what countries we have.</p>
+      <p begin="00:55:19.180" end="00:55:21.670">And, yes, very much indeed.</p>
+      <p begin="00:55:21.670" end="00:55:27.360">...are...so, the counts the...databases...have that's the kind of</p>
+      <p begin="00:55:27.360" end="00:55:31.210">various that's countries for the ola databases all thirty-two databases</p>
+      <p begin="00:55:31.210" end="00:55:35.510">that landed and with that change premium awesome</p>
+      <p begin="00:55:35.510" end="00:55:40.360">okay so with that let me jump back to that slide that you</p>
+      <p begin="00:55:40.360" end="00:55:42.800">...which is this one just to</p>
+      <p begin="00:55:42.800" end="00:55:48.030">illustrate the capability that we just have seen basically elastic database jobs rolling out that's</p>
+      <p begin="00:55:48.030" end="00:55:53.780">t sequel statement across your database pool.</p>
+      <p begin="00:55:53.780" end="00:55:54.280">Okay.</p>
+      <p begin="00:55:55.350" end="00:55:58.280">So, with that.</p>
+      <p begin="00:55:58.280" end="00:56:03.690">One hundred back to...was just wrap up here ...let's just summarize and,</p>
+      <p begin="00:56:03.690" end="00:56:09.200">remind ourselves key things so obviously we're talking about as you're single database</p>
+      <p begin="00:56:09.200" end="00:56:13.190">are global databases a service and you've seen today</p>
+      <p begin="00:56:13.190" end="00:56:17.570">...to target a predictable workloads and then most specifically</p>
+      <p begin="00:56:17.570" end="00:56:22.070">and interestingly today we've been seeing and, talking about this use of a</p>
+      <p begin="00:56:22.070" end="00:56:27.040">support for unpredictable workloads with our elastic and elastic database</p>
+      <p begin="00:56:27.040" end="00:56:31.990">model has the use of elastic databases in a lasting database pools</p>
+      <p begin="00:56:31.990" end="00:56:37.910">...pooling story and throughout this thing to remind ourselves is that in a</p>
+      <p begin="00:56:37.910" end="00:56:43.010">sense nothing's changed about the underlying database databases still sequel</p>
+      <p begin="00:56:43.010" end="00:56:48.510">databases that can fully compatible with the sql sequel server twenty</p>
+      <p begin="00:56:48.510" end="00:56:53.670">fourteen databases at the same...execute...you can use the same tools the same</p>
+      <p begin="00:56:53.670" end="00:56:59.060">...experience the same connection management technologies</p>
+      <p begin="00:56:59.060" end="00:57:03.040">platforms and then this simple self-service management and</p>
+      <p begin="00:57:03.040" end="00:57:06.460">...only...various things in the management...backed</p>
+      <p begin="00:57:06.460" end="00:57:11.700">at every stage by a programmable apis partial,</p>
+      <p begin="00:57:11.700" end="00:57:17.450">come on, let's as well as the portal operations so that's the that's the platform</p>
+      <p begin="00:57:17.450" end="00:57:28.310">that's the story thank you very much...attention this afternoon.</p>
+      <p begin="00:57:28.310" end="00:57:32.860">We'd love to do is invite you to try this out to get</p>
+      <p begin="00:57:32.860" end="00:57:38.030">to get started those of you building sas applications to build them on this platform to</p>
+      <p begin="00:57:38.030" end="00:57:43.500">exploit this technology and, ...triad these new elastic features here that</p>
+      <p begin="00:57:43.500" end="00:57:49.270">we've been we've been talking about and we're happy to take questions like...a as a gang of people</p>
+      <p begin="00:57:49.270" end="00:57:50.820">...hunched.</p>
+      <p begin="00:57:50.820" end="00:57:53.890">And,...the forget some resources here</p>
+      <p begin="00:57:53.890" end="00:57:59.800">...so you can connect to these here to look,</p>
+      <p begin="00:57:59.800" end="00:58:03.380">through these and then please I said ...evaluation</p>
+      <p begin="00:58:03.380" end="00:58:09.010">for the session we love to hear what you think about this...love to hear of here of course about what you think about the...</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.903</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.070" end="00:00:03.030">Welcome everybody ...to the session I hope you enjoy</p>
+      <p begin="00:00:03.030" end="00:00:08.180">...keynote think there were some really great an exciting use their about asher</p>
+      <p begin="00:00:08.180" end="00:00:12.450">...about windows ten so I have...unfortunate time flowed</p>
+      <p begin="00:00:12.450" end="00:00:17.440">I'm between you and your...the and today I'm going to talk</p>
+      <p begin="00:00:17.440" end="00:00:20.540">about inverting issues of...applications hosted</p>
+      <p begin="00:00:20.540" end="00:00:25.050">...measure ideas and has using virtual studio so just</p>
+      <p begin="00:00:25.050" end="00:00:29.840">...set expectations I'm not going to talk about how to trouble shoot you</p>
+      <p begin="00:00:29.840" end="00:00:34.300">...not coming up in...it's because...that's a common issues I'm also not</p>
+      <p begin="00:00:34.300" end="00:00:39.840">going to dive into like application insights or operational</p>
+      <p begin="00:00:39.840" end="00:00:44.540">...there's going to be talks this week about application insights and operational</p>
+      <p begin="00:00:44.540" end="00:00:47.720">insights so I'd highly advise you to go to those talks</p>
+      <p begin="00:00:48.740" end="00:00:52.990">...covering websites because there's another talk on friday about</p>
+      <p begin="00:00:52.990" end="00:00:58.580">website so this talk is really about cloud services vone?</p>
+      <p begin="00:00:58.580" end="00:01:03.940">And, ...a service applications running on...a service.</p>
+      <p begin="00:01:03.940" end="00:01:07.820">So, before I get started how many of you are aware of</p>
+      <p begin="00:01:07.820" end="00:01:12.610">...or heavy use as a diagnostics.</p>
+      <p begin="00:01:12.610" end="00:01:16.800">Okay, quite a few so how many of you have use the</p>
+      <p begin="00:01:16.800" end="00:01:20.720">...sdk two-point-five?</p>
+      <p begin="00:01:20.720" end="00:01:21.720">Ok,</p>
+      <p begin="00:01:21.720" end="00:01:30.030">so, today what I'm going to do in is session I'm going to talk about like.</p>
+      <p begin="00:01:30.030" end="00:01:31.420">Sorry.</p>
+      <p begin="00:01:31.420" end="00:01:32.340">Doesn't move...</p>
+      <p begin="00:01:33.680" end="00:01:37.780">So, I'm going to give you a brief introduction about typical issues we're seeing of</p>
+      <p begin="00:01:37.780" end="00:01:39.720">klout application and this is applicable to</p>
+      <p begin="00:01:39.720" end="00:01:43.290">...like cloud services as well as applications running on</p>
+      <p begin="00:01:43.290" end="00:01:47.830">...I'm also going to give you an overview of what kind of...provide</p>
+      <p begin="00:01:47.830" end="00:01:53.260">...virtual studio to help you troubleshooting a huge portion of this talk</p>
+      <p begin="00:01:53.260" end="00:01:56.550">will be focused on measure diagnostics because this is</p>
+      <p begin="00:01:56.550" end="00:02:00.900">our free framework and I'm going to talk about as a diagnostics and I'm going to show you</p>
+      <p begin="00:02:00.900" end="00:02:04.940">how to leverage that framework to implement instrumentation into</p>
+      <p begin="00:02:04.940" end="00:02:10.060">your application and then I also have a bunch of demos I have actually quite a lot of</p>
+      <p begin="00:02:10.060" end="00:02:17.270">...and I hope will work okay, so, what that let's get started?</p>
+      <p begin="00:02:17.270" end="00:02:21.590">So, one of the most common issues hra still see is a lot of</p>
+      <p begin="00:02:21.590" end="00:02:27.210">developers working on cloud services or building cloud services ...with their local</p>
+      <p begin="00:02:27.210" end="00:02:32.090">environment so...basically use the emulator to tester application and then</p>
+      <p begin="00:02:32.090" end="00:02:36.090">deploy the application to asher...all the sudden it doesn't work</p>
+      <p begin="00:02:36.090" end="00:02:40.810">and it's really hard for you to figure out why it's not working because it was working in the</p>
+      <p begin="00:02:40.810" end="00:02:44.630">emulator so we've done quite some work there but,</p>
+      <p begin="00:02:44.630" end="00:02:47.850">it's still a common issue that we're seeing for our support channels</p>
+      <p begin="00:02:47.850" end="00:02:54.550">so does that sound familiar to some of you okay so the next one is start of issues</p>
+      <p begin="00:02:54.550" end="00:02:59.870">with roles if you think about cloud services agile websites has pretty much replace</p>
+      <p begin="00:02:59.870" end="00:03:04.800">like cloud services web roles a lot of people...basically as a websites</p>
+      <p begin="00:03:04.800" end="00:03:09.700">...front-end now but there's a lot of implementations like io t,</p>
+      <p begin="00:03:09.700" end="00:03:13.970">for example, or processing...still running on worker rules and not supposed to be like that</p>
+      <p begin="00:03:15.040" end="00:03:18.120">and for that sometimes people install</p>
+      <p begin="00:03:18.120" end="00:03:21.310">custom software into the cloud service worker</p>
+      <p begin="00:03:21.310" end="00:03:25.270">role and then as a result of that if something goes wrong...boot-up time of</p>
+      <p begin="00:03:25.270" end="00:03:30.090">your application you get this nice little sign...as a role is...a cycling...</p>
+      <p begin="00:03:30.090" end="00:03:35.280">the role doesn't come up and you having issues actually knowing why I'm going to also</p>
+      <p begin="00:03:35.280" end="00:03:40.240">show you today how to trouble shoot those issues the next issues really performance issues I mean we all know</p>
+      <p begin="00:03:40.240" end="00:03:45.660">what...have seen that so you basically deploy application and it</p>
+      <p begin="00:03:45.660" end="00:03:49.680">feels like flow it is kind of slow sometimes it's really giving you</p>
+      <p begin="00:03:49.680" end="00:03:53.920">the performance you expect but then you put some load on it at the performance degrades</p>
+      <p begin="00:03:53.920" end="00:03:59.180">and you want to figure out why the last one is really logical issues</p>
+      <p begin="00:03:59.180" end="00:04:05.460">I know like developers never make any mistakes including myselfjust kidding</p>
+      <p begin="00:04:05.460" end="00:04:10.890">I'm a pm so, there is some logical issues in your application that</p>
+      <p begin="00:04:10.890" end="00:04:14.980">are really hard to like find the root cause of it and</p>
+      <p begin="00:04:14.980" end="00:04:21.530">it's really hard if you think about your application is now running...and you want troubleshooting and the next</p>
+      <p begin="00:04:21.530" end="00:04:26.110">...the last part is really if you use large or if you</p>
+      <p begin="00:04:26.110" end="00:04:29.920">it use instrumentation are tracing frameworks in your cold</p>
+      <p begin="00:04:29.920" end="00:04:34.080">it's really how can you actually look at the data because if you think about a scalable</p>
+      <p begin="00:04:34.080" end="00:04:37.030">...it produces a lot of data arrayed you probably</p>
+      <p begin="00:04:37.030" end="00:04:41.580">print-out like verbose messages and not only...so there's a lot of data you need to</p>
+      <p begin="00:04:41.580" end="00:04:44.090">consume we've also been hearing that</p>
+      <p begin="00:04:44.090" end="00:04:49.470">there's some problems with a I got way too many data</p>
+      <p begin="00:04:49.470" end="00:04:52.590">...service friends are way too many data I don't even know what</p>
+      <p begin="00:04:52.590" end="00:04:57.900">to where to start looking at so with that I'm going to switch the</p>
+      <p begin="00:04:57.900" end="00:05:02.380">slider chose basically where you can use in visual studio.</p>
+      <p begin="00:05:02.380" end="00:05:06.330">So, for difference between local environment measure it's really I know</p>
+      <p begin="00:05:06.330" end="00:05:08.990">it's subtle how many of you have to provide cloud services.</p>
+      <p begin="00:05:10.690" end="00:05:15.660">Okay, so, you may have not even notice it but when you hit the publish button</p>
+      <p begin="00:05:15.660" end="00:05:20.520">and virtual studio we bring up the activity windows but sometimes if</p>
+      <p begin="00:05:20.520" end="00:05:25.010">you go back to the build warnings window you see a build...that says hey</p>
+      <p begin="00:05:25.010" end="00:05:29.980">your deploying repackage...assembly that is not all measure so it's very subtle</p>
+      <p begin="00:05:29.980" end="00:05:35.460">and I just want to bring that to your attention that looking at build warnings offer you</p>
+      <p begin="00:05:35.460" end="00:05:40.290">...is a very good way or first step to diagnose</p>
+      <p begin="00:05:40.290" end="00:05:43.860">studies then obviously are logging</p>
+      <p begin="00:05:43.860" end="00:05:47.800">and tracing using actual diagnostics so implementing ...statements</p>
+      <p begin="00:05:47.800" end="00:05:54.570">there and using intelligence race how many of you have...telly trace?</p>
+      <p begin="00:05:54.570" end="00:05:58.440">How many of you have used...with...</p>
+      <p begin="00:05:58.440" end="00:06:01.700">Ok, so, intelligent...is basically and,</p>
+      <p begin="00:06:01.700" end="00:06:05.270">I'm going to show you that later how you can use intelligence with your...service</p>
+      <p begin="00:06:06.580" end="00:06:10.510">...a pretty good tool to do that so startup issues with roles</p>
+      <p begin="00:06:10.510" end="00:06:16.000">as a little bit trickier because you need to think about like to start of cycle overall so,</p>
+      <p begin="00:06:16.000" end="00:06:21.110">you can do something with logging in tracing if you're familiar with...role,</p>
+      <p begin="00:06:21.110" end="00:06:25.910">for example, you have an on start there which basically puts of your role so you can</p>
+      <p begin="00:06:25.910" end="00:06:30.080">portray statements in there and they would be caught but sometimes as I mentioned you want to</p>
+      <p begin="00:06:30.080" end="00:06:34.830">install software up-front like a real start of task and if that...</p>
+      <p begin="00:06:34.830" end="00:06:41.110">frozen error it's kinda hard to traces I'm going to show you today how to do this how you should properly</p>
+      <p begin="00:06:41.110" end="00:06:41.720">implement</p>
+      <p begin="00:06:41.720" end="00:06:46.610">like custom software your role in order to avoid that the next thing is really</p>
+      <p begin="00:06:46.610" end="00:06:51.610">...again because in telly trace is being...is being applied as a plug-in and</p>
+      <p begin="00:06:51.610" end="00:06:54.940">it's basically there in your machine on your virtual machine</p>
+      <p begin="00:06:54.940" end="00:06:58.140">...as your and can instrument like?</p>
+      <p begin="00:06:58.140" end="00:07:03.670">Your...worker process or uaw a is process.</p>
+      <p begin="00:07:03.670" end="00:07:08.170">And, the other tool it's very powerful is remote desktop</p>
+      <p begin="00:07:08.170" end="00:07:12.320">because everything that happens on the machine is obvious...to event lobsters also</p>
+      <p begin="00:07:12.320" end="00:07:17.360">log directory for...gas station that sits in the machine it also</p>
+      <p begin="00:07:17.360" end="00:07:22.700">knows if some processes failed...voting and then you can basically go in there and, identify</p>
+      <p begin="00:07:22.700" end="00:07:27.640">...performance issues logging in tracing again</p>
+      <p begin="00:07:27.640" end="00:07:32.580">arrow diagnostics visual studio profiler and application...so</p>
+      <p begin="00:07:32.580" end="00:07:37.520">...the talk victors giving three-week...a great tool or...a great service I should</p>
+      <p begin="00:07:37.520" end="00:07:43.120">say for analyzing performance issues logical issues again,</p>
+      <p begin="00:07:43.120" end="00:07:47.890">logging in tracing measure diagnostics we have remote debugging how many of, you know,</p>
+      <p begin="00:07:47.890" end="00:07:53.840">about our motive avi functionality okay quite of...so you can actually do park</p>
+      <p begin="00:07:53.840" end="00:07:58.530">your cloud service although we don't advice to do that or we don't recommend to do that and production</p>
+      <p begin="00:07:58.530" end="00:08:01.080">...and then again application</p>
+      <p begin="00:08:01.080" end="00:08:05.230">insights so as you can see those are like really the typical issues we</p>
+      <p begin="00:08:05.230" end="00:08:09.490">run into in cloud services and there is one common</p>
+      <p begin="00:08:09.490" end="00:08:12.780">...like you can catch most of them for logging</p>
+      <p begin="00:08:12.780" end="00:08:18.000">in tracing and logging in tracing we really try to embrace it and take it to the next</p>
+      <p begin="00:08:18.000" end="00:08:22.940">level because we've seen customers that started like they put in a</p>
+      <p begin="00:08:22.940" end="00:08:26.480">...statement here tray statement...and the service grows and</p>
+      <p begin="00:08:26.480" end="00:08:31.480">grows organically or it's been like very successful and all the sudden you're there and you don't</p>
+      <p begin="00:08:31.480" end="00:08:36.490">have to proper tracing in it and you basically need to rewrite it or add...</p>
+      <p begin="00:08:36.490" end="00:08:44.010">tracing kind of capabilities we deployed so on so forth so that's why I'm going</p>
+      <p begin="00:08:44.010" end="00:08:46.340">to focus most of this talk on really</p>
+      <p begin="00:08:46.340" end="00:08:50.600">...diagnostics because it's the framework the free framework for logging and</p>
+      <p begin="00:08:50.600" end="00:08:55.500">tracing and measure so what allows you to do is.</p>
+      <p begin="00:08:55.500" end="00:08:58.420">You can first and foremost implement application logging</p>
+      <p begin="00:08:58.420" end="00:09:03.620">in tracing so if you're used to traced trays...traced trays information</p>
+      <p begin="00:09:03.620" end="00:09:08.620">using system diagnostics name space you can still use that but if you want</p>
+      <p begin="00:09:08.620" end="00:09:13.030">to go like one step further and you embrace semantic logging, for example, or events</p>
+      <p begin="00:09:13.030" end="00:09:18.210">...gw events source this is also going to be cog or being used</p>
+      <p begin="00:09:18.210" end="00:09:20.730">or I should say the...diagnostics</p>
+      <p begin="00:09:20.730" end="00:09:25.790">...will also collect you tw traces and put them in the</p>
+      <p begin="00:09:25.790" end="00:09:31.290">...so how many of you are aware of each w events...</p>
+      <p begin="00:09:31.290" end="00:09:36.850">Okay, so, besides like your application logging in tracing windows</p>
+      <p begin="00:09:36.850" end="00:09:42.750">are diagnostics or measure diagnostics gives you another could capabilities because it also</p>
+      <p begin="00:09:42.750" end="00:09:46.640">monitors event locks on your virtual machine so-if you have a cloud services</p>
+      <p begin="00:09:46.640" end="00:09:52.120">basically virtual machine on...use all on your ideas machine and it captures the</p>
+      <p begin="00:09:52.120" end="00:09:57.460">...like your typical...logs or...failed request locks it captures the performance</p>
+      <p begin="00:09:57.460" end="00:10:01.360">...in also can deal with custom performance connors that you add to</p>
+      <p begin="00:10:01.360" end="00:10:05.060">your application and I'm going to show you how to do this?</p>
+      <p begin="00:10:05.060" end="00:10:07.260">...collects crash dumps.</p>
+      <p begin="00:10:07.260" end="00:10:10.210">It can collect custom locks and custom</p>
+      <p begin="00:10:10.210" end="00:10:15.060">lots of something that you would set up if you want to install additional software on of...role,</p>
+      <p begin="00:10:15.060" end="00:10:18.660">for example, and, it collects...infrastructure</p>
+      <p begin="00:10:18.660" end="00:10:23.430">...so if you look at this is really a very...plead like</p>
+      <p begin="00:10:23.430" end="00:10:28.830">free framework for getting diagnostics information out of</p>
+      <p begin="00:10:28.830" end="00:10:35.030">you system the other thing is if you think about like a rich tracing and</p>
+      <p begin="00:10:35.030" end="00:10:39.340">...strategy you really want to tested out locally so</p>
+      <p begin="00:10:39.340" end="00:10:44.920">in agile diagnostics we also have on premisesor I should say</p>
+      <p begin="00:10:44.920" end="00:10:49.000">...local...poured through the emulator you can paisley...</p>
+      <p begin="00:10:49.000" end="00:10:53.930">portray statements and your code you hit the emulator you see what...coders basically printing</p>
+      <p begin="00:10:53.930" end="00:10:58.480">out or tray statements of printing out that's actually a very good way of testing</p>
+      <p begin="00:10:58.480" end="00:11:01.990">your diagnostics because sometimes people think about diagnostics</p>
+      <p begin="00:11:01.990" end="00:11:06.100">...just production no but for a really good diagnostic</p>
+      <p begin="00:11:06.100" end="00:11:14.480">strategy you want to tested out so you can do this locally with the emulator.</p>
+      <p begin="00:11:14.480" end="00:11:19.510">how does this h and I was talking about actually gets applied and the reason</p>
+      <p begin="00:11:19.510" end="00:11:23.850">I was asking before whether someone is using address decay two-point-five is</p>
+      <p begin="00:11:23.850" end="00:11:28.570">in two-point-five you made a big switch we actually moved to an extension</p>
+      <p begin="00:11:28.570" end="00:11:33.720">model that means if you think about an average extension there's a piece of</p>
+      <p begin="00:11:33.720" end="00:11:35.350">...software sitting somewhere in</p>
+      <p begin="00:11:35.350" end="00:11:40.680">the cloud and this waiting for command so what's happening here is an</p>
+      <p begin="00:11:40.680" end="00:11:44.480">this is applicable for infrastructures a service...as well as for cloud services</p>
+      <p begin="00:11:44.480" end="00:11:48.670">I should say so you get your already and then you want</p>
+      <p begin="00:11:48.670" end="00:11:52.100">enable diagnostics and you can do it from any kline you can do it from</p>
+      <p begin="00:11:52.100" end="00:11:56.030">herschel studio you can do it from the portland you can to through our shells so as</p>
+      <p begin="00:11:56.030" end="00:12:01.710">an automation step what's happening then is the command or the</p>
+      <p begin="00:12:01.710" end="00:12:05.310">api is called the extensions store and say hey I want to enable</p>
+      <p begin="00:12:05.310" end="00:12:08.070">...diagnostics on a particular machine then</p>
+      <p begin="00:12:08.070" end="00:12:10.690">...is being pulled down and...being applied?</p>
+      <p begin="00:12:11.790" end="00:12:15.030">The good thing about it's really.</p>
+      <p begin="00:12:15.030" end="00:12:19.370">Very dynamics so you can apply the extension at any time before</p>
+      <p begin="00:12:19.370" end="00:12:23.580">like before sdk two-point-five in sdk two-point-four you always</p>
+      <p begin="00:12:23.580" end="00:12:29.410">had to package dh and,...move...the appnow we basically</p>
+      <p begin="00:12:29.410" end="00:12:34.350">...that dependency away so...really flexible of doing that.</p>
+      <p begin="00:12:34.350" end="00:12:37.700">And, when you want to applied the other thing is the extension</p>
+      <p begin="00:12:37.700" end="00:12:42.480">itself takes a configurations so the truth of your configuration for</p>
+      <p begin="00:12:42.480" end="00:12:47.100">...diagnostics is really just one configuration file before they were</p>
+      <p begin="00:12:47.100" end="00:12:52.220">also like api to configure diagnostics which led to a lot of confusion which one as</p>
+      <p begin="00:12:52.220" end="00:12:57.120">a truth like is...configuration fide a declarative one or is it like the</p>
+      <p begin="00:12:57.120" end="00:13:01.640">declarative one at the imperative one in the code so this is</p>
+      <p begin="00:13:01.640" end="00:13:06.170">all been gone away or it's all gone away...just one truth</p>
+      <p begin="00:13:06.170" end="00:13:22.930">is one extension and one configuration so there was a lot of talk let's switch to the first demo?</p>
+      <p begin="00:13:22.930" end="00:13:27.000">So, in here I have.</p>
+      <p begin="00:13:27.000" end="00:13:28.520">Meeting the theme of today I</p>
+      <p begin="00:13:28.520" end="00:13:32.640">...very so I have a very simple application what is actually</p>
+      <p begin="00:13:32.640" end="00:13:38.300">...let me just...through it quickly it's a worker role that wholeness over in</p>
+      <p begin="00:13:38.300" end="00:13:42.050">uncut tama it's basically also web and point and,</p>
+      <p begin="00:13:42.050" end="00:13:46.020">then the webendpoint already api get some messages sensor data</p>
+      <p begin="00:13:46.020" end="00:13:51.390">it's basically mimicking like and io t scenario so if I go</p>
+      <p begin="00:13:51.390" end="00:13:55.710">...controller here what's happening is like any client can basically</p>
+      <p begin="00:13:55.710" end="00:14:00.710">...message and poet sensor data in it and it starts processing</p>
+      <p begin="00:14:00.710" end="00:14:03.910">the data and then it.</p>
+      <p begin="00:14:03.910" end="00:14:34.100">Disconnect from measure.</p>
+      <p begin="00:14:34.100" end="00:14:43.270">Try one more time.</p>
+      <p begin="00:14:43.270" end="00:14:50.850">Now you don't think so.</p>
+      <p begin="00:15:00.680" end="00:15:02.630">Now...coming up.</p>
+      <p begin="00:15:02.630" end="00:15:11.360">...thing is I have a local copy but I might need to switch level.</p>
+      <p begin="00:15:11.360" end="00:15:29.210">All right let's...</p>
+      <p begin="00:15:29.210" end="00:15:35.660">All right.</p>
+      <p begin="00:15:35.660" end="00:15:38.900">I was expecting having trouble finding the right deployed service because I have</p>
+      <p begin="00:15:38.900" end="00:15:43.730">some many but not that I can connect okay so we're back up again so bottom line is</p>
+      <p begin="00:15:43.730" end="00:15:49.500">...it's basically at a web...chosen a worker role and that gets messages from</p>
+      <p begin="00:15:49.500" end="00:15:53.020">...point so if I go to the message</p>
+      <p begin="00:15:53.020" end="00:15:57.210">here stories synthesis where all the magic happens if I look at</p>
+      <p begin="00:15:57.210" end="00:16:02.060">it I basically receive the...information</p>
+      <p begin="00:16:02.060" end="00:16:06.680">...the central sensor information and all the data is being put into a...</p>
+      <p begin="00:16:06.680" end="00:16:12.130">cash while I'm doing that here I have a bunch of tray statements in my code like,</p>
+      <p begin="00:16:12.130" end="00:16:19.280">for example, lunch tracing or I'm putting out trace information statements about</p>
+      <p begin="00:16:19.280" end="00:16:23.790">what the information is that I stored I'm also going to put out like trace information about the</p>
+      <p begin="00:16:23.790" end="00:16:28.790">sends or id so on so forth so it's very typical for developers to put that type of</p>
+      <p begin="00:16:28.790" end="00:16:33.810">code...so let me show you now the as a diagnostics part</p>
+      <p begin="00:16:33.810" end="00:16:38.580">of it so first if I go to the role</p>
+      <p begin="00:16:38.580" end="00:16:44.070">of I...in here and that's what we call the role designer and in here I have my</p>
+      <p begin="00:16:44.070" end="00:16:48.970">service configuration and you may know that and go to all configuration and here I have</p>
+      <p begin="00:16:48.970" end="00:16:53.110">...enable diagnostics a button so by default if you create a new</p>
+      <p begin="00:16:53.110" end="00:16:57.230">cloud service project or if you start from another one by default we always turn on</p>
+      <p begin="00:16:57.230" end="00:17:01.850">as a diagnostics so that basically means when you use social studio to publish will</p>
+      <p begin="00:17:01.850" end="00:17:06.480">apply the ext that's the very first thing that we apply so then in the year.</p>
+      <p begin="00:17:07.500" end="00:17:10.860">I have this nice little dialogue that says okay this is what</p>
+      <p begin="00:17:10.860" end="00:17:15.130">you can configuring measure diagnostics and think about what I was talking before</p>
+      <p begin="00:17:15.130" end="00:17:18.120">...I was talking about before like what can you do</p>
+      <p begin="00:17:18.120" end="00:17:21.780">...diagnostics this is basically the dialogue that's a</p>
+      <p begin="00:17:21.780" end="00:17:26.980">ui over and over and the xml over the configuration file so we thought we make it</p>
+      <p begin="00:17:26.980" end="00:17:33.580">really easy for you to do this so in the application logs here is ...application locks</p>
+      <p begin="00:17:33.580" end="00:17:39.010">and application locks is really your traced...star right so everything that goes</p>
+      <p begin="00:17:39.010" end="00:17:42.810">through the trace listener is being locked into this application</p>
+      <p begin="00:17:42.810" end="00:17:44.160">locks.</p>
+      <p begin="00:17:44.160" end="00:17:47.420">By default we only set it to errors because as I mentioned</p>
+      <p begin="00:17:47.420" end="00:17:51.620">...it on by default so we don't want you to deploy your as</p>
+      <p begin="00:17:51.620" end="00:17:56.560">...your service to...all the sudden nothing start spitting out data because you're tray</p>
+      <p begin="00:17:56.560" end="00:18:02.070">statements are being transferred to storage in here you can also.</p>
+      <p begin="00:18:02.070" end="00:18:02.910">To windows event</p>
+      <p begin="00:18:02.910" end="00:18:08.210">locks performance counters so as you can see here I have custom performance</p>
+      <p begin="00:18:08.210" end="00:18:11.740">...code which is basically get</p>
+      <p begin="00:18:11.740" end="00:18:14.280">the device request get sensor data regress</p>
+      <p begin="00:18:14.280" end="00:18:20.130">...total device regress so on so forth so I can configure my custom performance</p>
+      <p begin="00:18:20.130" end="00:18:25.750">connors infrastructure logs log directories it by default</p>
+      <p begin="00:18:25.750" end="00:18:30.390">...the...and...request locks et w and,</p>
+      <p begin="00:18:30.390" end="00:18:35.360">I'm going to talk about each w later and...crashed...you can...crash dumps that you want to</p>
+      <p begin="00:18:35.360" end="00:18:40.510">collective something goes wrong and here we have like the most important services</p>
+      <p begin="00:18:40.510" end="00:18:47.030">the first one is really...that the host process for wthree w</p>
+      <p begin="00:18:47.030" end="00:18:50.050">...and the second one is remediation work</p>
+      <p begin="00:18:50.050" end="00:18:54.510">...process so something goes in the wrong in their and uni able</p>
+      <p begin="00:18:54.510" end="00:19:02.180">...will catch...so that's the first part of the second part is maybe</p>
+      <p begin="00:19:02.180" end="00:19:05.820">it's worth pointing out if you don't provide a storage</p>
+      <p begin="00:19:05.820" end="00:19:08.860">...in here because as you can see there is aprovide</p>
+      <p begin="00:19:08.860" end="00:19:13.250">storage account information if you don't provide one in here.</p>
+      <p begin="00:19:13.250" end="00:19:18.830">Will take the storage account that you used to publish the package too so because</p>
+      <p begin="00:19:18.830" end="00:19:23.450">as a diagnostics needs to get the data of the...stores it in a storage account</p>
+      <p begin="00:19:23.450" end="00:19:28.210">and what we do is if you don't have enabled we basically uses</p>
+      <p begin="00:19:28.210" end="00:19:33.470">storage accounted useful publish why are we doing that is think back when</p>
+      <p begin="00:19:33.470" end="00:19:38.060">I was saying a lot of people do something in the emulator and then it doesn't work and</p>
+      <p begin="00:19:38.060" end="00:19:41.630">...that's basically your first in a loop test we don't expect you to use</p>
+      <p begin="00:19:41.630" end="00:19:46.060">social students deploy to productions...but usually goes into a...tasks</p>
+      <p begin="00:19:46.060" end="00:19:51.060">...in manager so but then you have at least diagnostics turned on and you could see what's</p>
+      <p begin="00:19:51.060" end="00:19:58.010">going on so let's look at the last piece of how diagnostics as wired</p>
+      <p begin="00:19:58.010" end="00:20:01.980">...so in app dot com fake or in a web dot</p>
+      <p begin="00:20:01.980" end="00:20:05.330">com fake we have the actual diagnostics...we</p>
+      <p begin="00:20:05.330" end="00:20:11.450">...by default as well and this is the reference to it...it's here?</p>
+      <p begin="00:20:11.450" end="00:20:16.820">So, think about by default inspired...the app conflict for web roles of for</p>
+      <p begin="00:20:16.820" end="00:20:22.230">...roles the web dot com fake for web roles has the diagnostics</p>
+      <p begin="00:20:22.230" end="00:20:25.310">...set up the configured by default to collect</p>
+      <p begin="00:20:25.310" end="00:20:30.040">errors and if you don't provide a storage account...use the storage account</p>
+      <p begin="00:20:30.040" end="00:20:33.210">...you useful publish so.</p>
+      <p begin="00:20:33.210" end="00:20:35.130">Let's assume undone I have</p>
+      <p begin="00:20:35.130" end="00:20:39.280">...tracing and I want to see how it works right because I really want to see how to messages</p>
+      <p begin="00:20:39.280" end="00:20:57.780">come out let's fire up.</p>
+      <p begin="00:20:57.780" end="00:21:02.730">So, I should say this is visual studio twenty fifteen rc and</p>
+      <p begin="00:21:02.730" end="00:21:08.120">in cst...two-point-six that we will released this week unfortunately of</p>
+      <p begin="00:21:08.120" end="00:21:20.570">...on this now it's probably going to crash.</p>
+      <p begin="00:21:34.900" end="00:21:51.310">All right let's try it again.</p>
+      <p begin="00:21:51.310" end="00:21:55.370">So,...the output window I'm getting like some information that sets might measure</p>
+      <p begin="00:21:55.370" end="00:22:00.030">...working so on so forth so you get some tracing statements in the output</p>
+      <p begin="00:22:00.030" end="00:22:03.970">...but there's also.</p>
+      <p begin="00:22:03.970" end="00:22:06.660">...emulator ui.</p>
+      <p begin="00:22:06.660" end="00:22:13.980">Which is here and if I open it up?</p>
+      <p begin="00:22:13.980" end="00:22:16.200">This one I see my deployed</p>
+      <p begin="00:22:16.200" end="00:22:21.520">rock-and-roll instance and I see all the output so what I'm going to do now is.</p>
+      <p begin="00:22:21.520" end="00:22:26.760">I have written...nice little simulator app that thing basically simulates a bunch of devices and palms a</p>
+      <p begin="00:22:26.760" end="00:22:31.620">bunch of messages internet service now so I'm going okay so it's connecting to the</p>
+      <p begin="00:22:31.620" end="00:22:34.010">endpoint and it's putting the messages</p>
+      <p begin="00:22:34.010" end="00:22:39.950">into my service so now if I can you guys see that okay.</p>
+      <p begin="00:22:39.950" end="00:22:44.210">So, now if we look at it I get all the tray statements that I have</p>
+      <p begin="00:22:44.210" end="00:22:48.900">...my...and basically says...the sensor data like the pressured</p>
+      <p begin="00:22:48.900" end="00:22:52.920">...temperature sensor idea so on so forth so that's...should give you an</p>
+      <p begin="00:22:52.920" end="00:22:57.860">idea how you can actually use the local experience to test</p>
+      <p begin="00:22:58.870" end="00:23:07.490">your diagnostics features like...traced...trays our information.</p>
+      <p begin="00:23:07.490" end="00:23:12.960">So, the other thing is let's stop debugging here.</p>
+      <p begin="00:23:12.960" end="00:23:19.010">Let's go to the deployment let's say I'm done I tested my</p>
+      <p begin="00:23:19.010" end="00:23:24.040">local experience I have my trace statements ic everything is working as a one so,</p>
+      <p begin="00:23:24.040" end="00:23:27.110">what I want to do now is?</p>
+      <p begin="00:23:27.110" end="00:23:33.930">I want to...service let me just go in here.</p>
+      <p begin="00:23:33.930" end="00:23:37.540">Corrupting...</p>
+      <p begin="00:23:37.540" end="00:23:41.070">What I'm doing here is...I just point?</p>
+      <p begin="00:23:41.070" end="00:23:46.810">Little application internet service.</p>
+      <p begin="00:23:46.810" end="00:23:49.090">Then I'm going...again</p>
+      <p begin="00:23:49.090" end="00:23:54.260">...fast so the way I would publish it I assume you all have seen...</p>
+      <p begin="00:23:54.260" end="00:24:00.910">to publisher cloud service but I go through it very quickly so I would go on.</p>
+      <p begin="00:24:00.910" end="00:24:02.700">...service.</p>
+      <p begin="00:24:02.700" end="00:24:06.910">...publish and...just go in here.</p>
+      <p begin="00:24:06.910" end="00:24:12.920">Starts here I pick my and pick my subscription I see my different slots that I want to have an</p>
+      <p begin="00:24:12.920" end="00:24:17.030">in I pick my configuration picked environment and I basically</p>
+      <p begin="00:24:17.030" end="00:24:18.900">...publish so,</p>
+      <p begin="00:24:18.900" end="00:24:23.730">once a services published you're now in that situation</p>
+      <p begin="00:24:23.730" end="00:24:28.010">that was working locally you had your tray statements working</p>
+      <p begin="00:24:28.010" end="00:24:32.430">...now you want to see what's happening in your life service so</p>
+      <p begin="00:24:32.430" end="00:24:37.000">for that let's switch over to server explorer and.</p>
+      <p begin="00:24:38.190" end="00:24:56.170">Drill into the service.</p>
+      <p begin="00:24:56.170" end="00:25:01.780">this is my simple io t service here I have my staging node.</p>
+      <p begin="00:25:01.780" end="00:25:05.270">And, here I have my role so under role itself I could say</p>
+      <p begin="00:25:05.270" end="00:25:09.950">few diagnostics data which would basically do the following like if you have a</p>
+      <p begin="00:25:09.950" end="00:25:12.370">role of multiple instances you would get</p>
+      <p begin="00:25:12.370" end="00:25:16.700">an aggregated view of your diagnostics data for that particular roles</p>
+      <p begin="00:25:16.700" end="00:25:19.620">...gather all the data all the errors</p>
+      <p begin="00:25:19.620" end="00:25:24.470">from all the instances because I only have one instance here.</p>
+      <p begin="00:25:24.470" end="00:25:29.500">I just say here few diagnostics data and.</p>
+      <p begin="00:25:29.500" end="00:25:33.300">What's happening now is it's basically reaching out treasure and says hey</p>
+      <p begin="00:25:33.300" end="00:25:38.430">...diagnostics...a storage accounted I have defined before.</p>
+      <p begin="00:25:38.430" end="00:25:42.030">And, again, that should bring up.</p>
+      <p begin="00:25:42.030" end="00:25:46.940">The what we call diagnostic summary...so this is the diagnostic summary of in</p>
+      <p begin="00:25:46.940" end="00:25:51.220">...and not getting confused this is not meant to be like your</p>
+      <p begin="00:25:51.220" end="00:25:56.180">diagnostics your for production system because it wouldn't scale right</p>
+      <p begin="00:25:56.180" end="00:26:00.620">this is really meant to be like hey I've done might development locally</p>
+      <p begin="00:26:00.620" end="00:26:05.340">...published a to adj or something went wrong I want to cna or</p>
+      <p begin="00:26:05.340" end="00:26:11.610">...want to see my locks and this is really what of needs so in here I have a.</p>
+      <p begin="00:26:11.610" end="00:26:13.770">What I've done is in the service that are</p>
+      <p begin="00:26:13.770" end="00:26:18.690">published just made a tiny little tweak and every I think every nine...sense</p>
+      <p begin="00:26:18.690" end="00:26:23.300">and errorjust to show you what it does so if there's an error because</p>
+      <p begin="00:26:23.300" end="00:26:27.285">...page only shows your errors to begin with right because we don't want</p>
+      <p begin="00:26:27.285" end="00:26:31.870">to have like you have to deal of all the data that's in there because as you see there's a lot of</p>
+      <p begin="00:26:31.870" end="00:26:35.570">...oggi as well so this one here gives you an</p>
+      <p begin="00:26:35.570" end="00:26:41.060">adj application log error and if you look at it you can hover over...and says</p>
+      <p begin="00:26:41.060" end="00:26:45.350">...five did not submit any data so for us developer</p>
+      <p begin="00:26:45.350" end="00:26:49.600">...now in a positions so you've tested locally you...treasure</p>
+      <p begin="00:26:49.600" end="00:26:54.590">something went wrong you go to the summary page and then in the summary page all the errors</p>
+      <p begin="00:26:54.590" end="00:26:59.350">...listed right away so if you happen to have many of those errors?</p>
+      <p begin="00:26:59.350" end="00:27:01.260">We also have</p>
+      <p begin="00:27:01.260" end="00:27:06.410">...to see as we because that like that summary page doesn't have</p>
+      <p begin="00:27:06.410" end="00:27:11.410">great filtering capabilities but we understand a lot of people use xcel for it so</p>
+      <p begin="00:27:11.410" end="00:27:16.090">we implemented a button you can open-ended...pulls out all the data from that table into</p>
+      <p begin="00:27:16.090" end="00:27:17.780">...and you can use</p>
+      <p begin="00:27:17.780" end="00:27:23.970">excel to analyzer issues there the other thing maybe to talk about you have event...and things like</p>
+      <p begin="00:27:23.970" end="00:27:28.950">that so everything looks good the last thing I want to point out here is.</p>
+      <p begin="00:27:28.950" end="00:27:33.870">Let's say for some reason I head-on checked that enable diagnostics checkbooks</p>
+      <p begin="00:27:33.870" end="00:27:37.670">in my project and now I want to chairs or now I want to collect</p>
+      <p begin="00:27:37.670" end="00:27:40.710">...data I can got I can just go to server</p>
+      <p begin="00:27:40.710" end="00:27:45.600">explore and in year I have update diagnostics if it wasn't</p>
+      <p begin="00:27:45.600" end="00:27:50.790">...say enable diagnostics and if I go to update diagnostics I</p>
+      <p begin="00:27:50.790" end="00:27:55.790">...get the same dialogue that I had locally and I can basically just</p>
+      <p begin="00:27:55.790" end="00:27:59.670">apply...settings so, for example, I could say here my application lot,</p>
+      <p begin="00:27:59.670" end="00:28:03.930">you know, what I not only want to see my errors I really want to see like</p>
+      <p begin="00:28:03.930" end="00:28:09.500">the verbose information and me going to...back...what's happening is all your</p>
+      <p begin="00:28:09.500" end="00:28:14.900">locks are being basically transferred into the storage account any confusion?</p>
+      <p begin="00:28:14.900" end="00:28:18.490">Does that make sense of...ok so?</p>
+      <p begin="00:28:19.550" end="00:28:24.920">Let's switch back to...</p>
+      <p begin="00:28:24.920" end="00:28:30.060">this was really a very-high-level tour of diagnostics all you take of a should be really</p>
+      <p begin="00:28:30.060" end="00:28:32.050">okay if I use system dot diagnostics</p>
+      <p begin="00:28:32.050" end="00:28:36.140">...super easy everything is wired...for me right I can tweak it so</p>
+      <p begin="00:28:36.140" end="00:28:41.490">...studio really has you has your...I should say so let's</p>
+      <p begin="00:28:41.490" end="00:28:48.300">talk about the next issue which is start of issues so how many</p>
+      <p begin="00:28:48.300" end="00:28:55.220">of you have seen that light nice little picture down there where...role...a cycling state?</p>
+      <p begin="00:28:55.220" end="00:28:58.450">Many if you so before I'm</p>
+      <p begin="00:28:58.450" end="00:29:03.170">going to show you how to or before I'm going to tell you how you could actually like diagnose</p>
+      <p begin="00:29:03.170" end="00:29:07.390">it probably going to show you how you should do it right basically</p>
+      <p begin="00:29:07.390" end="00:29:11.990">installing software right so, we had customers I talked to</p>
+      <p begin="00:29:11.990" end="00:29:16.870">a customer recently who actually...on graphics rendering and what they do is</p>
+      <p begin="00:29:16.870" end="00:29:20.760">they basically put the wrong times components on worker...because this</p>
+      <p begin="00:29:20.760" end="00:29:26.210">been of like massive amount of work rules to do this graphics rendering and they were</p>
+      <p begin="00:29:26.210" end="00:29:31.090">really like having issues with those diagnostics startups things because some</p>
+      <p begin="00:29:31.090" end="00:29:36.370">roles just didn't come up so what we've done is we sat down with our</p>
+      <p begin="00:29:36.370" end="00:29:41.280">support team who actually was a great help in showing how to diagnose it but we also thought</p>
+      <p begin="00:29:41.280" end="00:29:44.380">okay what's actually a good way of avoiding that if you want to put</p>
+      <p begin="00:29:44.380" end="00:29:50.770">another software on it and really the way to do it is you should</p>
+      <p begin="00:29:50.770" end="00:29:55.040">setup your cloud service so that the logging of a startup</p>
+      <p begin="00:29:55.040" end="00:29:57.610">...that install something is</p>
+      <p begin="00:29:57.610" end="00:30:00.820">therefore use when you could just see it and I'm going to show you that's</p>
+      <p begin="00:30:00.820" end="00:30:05.410">the next demo I'm going to show you how to do this in a second?</p>
+      <p begin="00:30:05.410" end="00:30:10.920">So, if those steps those are very-high-level steps you need to add a local storage element</p>
+      <p begin="00:30:10.920" end="00:30:16.280">to-you...daffodil you also need to create an environment variable</p>
+      <p begin="00:30:16.280" end="00:30:21.570">that actually contains to have tree...directory and then the last</p>
+      <p begin="00:30:21.570" end="00:30:26.310">of is you need to tell actor.</p>
+      <p begin="00:30:26.310" end="00:30:29.500">To basically collect the...from that directory and</p>
+      <p begin="00:30:29.500" end="00:30:32.890">transferred into storage it's a very.</p>
+      <p begin="00:30:32.890" end="00:30:34.480">Simple three-star rule</p>
+      <p begin="00:30:34.480" end="00:30:39.220">and I can show you how to do this and I think today we're also going to have a blog announcement it goes</p>
+      <p begin="00:30:39.220" end="00:30:45.450">...that shows executives if that didn't help.</p>
+      <p begin="00:30:45.450" end="00:30:49.240">The steps you can do in order to diagonal startup...</p>
+      <p begin="00:30:49.240" end="00:30:49.650">Again,</p>
+      <p begin="00:30:49.650" end="00:30:54.560">check your build warning because sometimes start of tasks are due to missing assembly</p>
+      <p begin="00:30:54.560" end="00:30:59.620">references...virtual studio and even if you don't use it for</p>
+      <p begin="00:30:59.620" end="00:31:04.300">employment you can use the cs pacman right because the cs pacman would also show you a</p>
+      <p begin="00:31:04.300" end="00:31:09.990">difference as the output the other thing is what you need to do next...should do is you already</p>
+      <p begin="00:31:09.990" end="00:31:13.920">p into the machine the good thing about already but he now is.</p>
+      <p begin="00:31:13.920" end="00:31:18.230">The virtual studio...still package it as a plug-in so you need to...</p>
+      <p begin="00:31:18.230" end="00:31:23.110">studio but if you have forgotten to do it or you didn't want to do it like</p>
+      <p begin="00:31:23.110" end="00:31:28.100">to portal now...and extension as well so you can just enable remote desktop one-year-olds at</p>
+      <p begin="00:31:28.100" end="00:31:34.480">any time and then you basically go into your into your instance you</p>
+      <p begin="00:31:34.480" end="00:31:40.140">check the windows of unlocks usually it's a very good source of information especially if something</p>
+      <p begin="00:31:40.140" end="00:31:41.430">...wrong.</p>
+      <p begin="00:31:41.430" end="00:31:47.220">Then you can check...w a host bootstrap...in the</p>
+      <p begin="00:31:47.220" end="00:31:51.740">...resources directory so this is basically like the whole rules set up the</p>
+      <p begin="00:31:51.740" end="00:31:56.220">role start-up because what's happening is there's an h and ron's to cook is a</p>
+      <p begin="00:31:56.220" end="00:32:00.280">...and communicates with the whole stage and then it says hey I have it</p>
+      <p begin="00:32:00.280" end="00:32:04.990">gets the information I have three startup tasks...to run...and then would actually show you</p>
+      <p begin="00:32:04.990" end="00:32:10.990">...it when it breaks down and then if that...have you can go to the app runtime locks</p>
+      <p begin="00:32:10.990" end="00:32:15.260">so usually this is really the only thing what you need to do in order to get a</p>
+      <p begin="00:32:15.260" end="00:32:20.100">rich set of information and this is I would say nine-out-of-ten cases,</p>
+      <p begin="00:32:20.100" end="00:32:24.240">you know, why your role cycling now if you do this however there</p>
+      <p begin="00:32:24.240" end="00:32:29.080">is like this one case that the log stone to anything and</p>
+      <p begin="00:32:29.080" end="00:32:33.470">your only chance really there right now as of now is you need to</p>
+      <p begin="00:32:34.560" end="00:32:41.260">...install...and, attach it to the...or a worker dot actually processes</p>
+      <p begin="00:32:41.260" end="00:32:45.850">and really give up those processes another option is if you have</p>
+      <p begin="00:32:45.850" end="00:32:48.470">...telly trays and you can redeployment</p>
+      <p begin="00:32:48.470" end="00:32:52.610">you can try before you install something on your machine you can try enabling</p>
+      <p begin="00:32:52.610" end="00:32:56.660">in telly trays in your cloud service project and redeployment</p>
+      <p begin="00:32:56.660" end="00:33:01.050">servers and toiletries enabled because...trees will also monitored</p>
+      <p begin="00:33:01.050" end="00:33:05.460">...process and...the on start method but it</p>
+      <p begin="00:33:05.460" end="00:33:12.080">won't catch like things that happened way before so installing software?</p>
+      <p begin="00:33:12.080" end="00:33:16.510">So, let me show you how to do start of locking for</p>
+      <p begin="00:33:16.510" end="00:33:26.520">...need to switch machines now going in here.</p>
+      <p begin="00:33:26.520" end="00:33:39.360">And, let's start a new visual studio on.</p>
+      <p begin="00:33:39.360" end="00:33:45.240">Okay, because...crashed into this.</p>
+      <p begin="00:33:45.240" end="00:33:49.650">in here this is a visual studio project it only has a worker role and if you look at the</p>
+      <p begin="00:33:49.650" end="00:33:52.440">worker role itself doesn't do anything and.</p>
+      <p begin="00:33:53.630" end="00:33:58.510">What...worker role really does is I basically use it as a</p>
+      <p begin="00:33:58.510" end="00:34:03.170">transport object to install dot net four-point-five point-two?</p>
+      <p begin="00:34:03.170" end="00:34:05.130">Because we currently</p>
+      <p begin="00:34:05.130" end="00:34:10.020">don support four-point-five point-two...os so you with the to install it and I thought</p>
+      <p begin="00:34:10.020" end="00:34:13.960">that's a really good opportunity to show you how to install dot net four-point-five</p>
+      <p begin="00:34:13.960" end="00:34:18.220">...tool on a cloud service...and show you how</p>
+      <p begin="00:34:18.220" end="00:34:21.910">to how to implement proper logging so.</p>
+      <p begin="00:34:21.910" end="00:34:27.590">In here the first step I need to do is I go in here in my siesta</p>
+      <p begin="00:34:27.590" end="00:34:32.510">And, as I mentioned I add the local resources here I call</p>
+      <p begin="00:34:32.510" end="00:34:37.650">it local storage install locks and I give it like a size whatever you expect in that case</p>
+      <p begin="00:34:37.650" end="00:34:42.470">it's five megabytes then I'm going to set over...task</p>
+      <p begin="00:34:42.470" end="00:34:48.520">here and, I say okay in that startup task executed install comment</p>
+      <p begin="00:34:48.520" end="00:34:55.250">and install comments basically scripted installs dot net framework four-point-five point-two run</p>
+      <p begin="00:34:55.250" end="00:34:58.500">it elevated and tossed of a simple.</p>
+      <p begin="00:34:58.500" end="00:35:01.990">And, then I basically have environment variable</p>
+      <p begin="00:35:01.990" end="00:35:05.650">depth sets the path to install locks and,</p>
+      <p begin="00:35:05.650" end="00:35:07.630">here's the path that we actually</p>
+      <p begin="00:35:07.630" end="00:35:11.790">...put the locks...so this is the very first step now</p>
+      <p begin="00:35:11.790" end="00:35:20.020">what happened when I add that I should highlighted when I add this piece too.</p>
+      <p begin="00:35:20.020" end="00:35:22.950">When I add this piece to my seo staff?</p>
+      <p begin="00:35:22.950" end="00:35:24.970">Once the service starts provisioning</p>
+      <p begin="00:35:24.970" end="00:35:29.200">it's being told hey I need a local resources storage when you start</p>
+      <p begin="00:35:29.200" end="00:35:33.470">exes when you start of execute that command and then also use</p>
+      <p begin="00:35:33.470" end="00:35:38.210">that directory for...so that point you're pretty good shape if</p>
+      <p begin="00:35:38.210" end="00:35:43.620">you're script rights to...directory what's not happening at</p>
+      <p begin="00:35:43.620" end="00:35:47.600">...point is you your errors are not being transferred into</p>
+      <p begin="00:35:47.600" end="00:35:52.580">storage of point because...diagnostics doesn't know about it so to make</p>
+      <p begin="00:35:52.580" end="00:35:59.200">agile diagnostics aware of it you go in here to the.</p>
+      <p begin="00:35:59.200" end="00:36:03.910">To the role itself but this time you cannot use.</p>
+      <p begin="00:36:03.910" end="00:36:07.540">The nicely ui because honestly we don't have support for</p>
+      <p begin="00:36:07.540" end="00:36:10.020">...you need to go to the xml.</p>
+      <p begin="00:36:10.020" end="00:36:13.740">And, any xml...directories.</p>
+      <p begin="00:36:13.740" end="00:36:16.270">Element and it has the iso</p>
+      <p begin="00:36:16.270" end="00:36:21.880">locks and failed request logs and what you do in air is you basically?</p>
+      <p begin="00:36:21.880" end="00:36:24.520">...you add a new data source and</p>
+      <p begin="00:36:24.520" end="00:36:29.360">the directory configuration and say okay my directory configuration has to</p>
+      <p begin="00:36:29.360" end="00:36:33.850">name contain as a container name and that's basically container name that will show of</p>
+      <p begin="00:36:33.850" end="00:36:35.720">an blob storage.</p>
+      <p begin="00:36:35.720" end="00:36:41.230">And, then the local resource...install...and</p>
+      <p begin="00:36:41.230" end="00:36:47.000">then the last step here is you basically just add the dot net framework installer</p>
+      <p begin="00:36:47.000" end="00:36:52.660">and...command command script to your role so in that</p>
+      <p begin="00:36:52.660" end="00:36:57.760">...command script you see thatrewriting...messages.</p>
+      <p begin="00:36:57.760" end="00:37:01.910">To...directory so this is pretty much and then once you have</p>
+      <p begin="00:37:01.910" end="00:37:03.810">deployed the service.</p>
+      <p begin="00:37:03.810" end="00:37:06.490">When you see is you go in here?</p>
+      <p begin="00:37:06.490" end="00:37:12.640">You go to your cloud service.</p>
+      <p begin="00:37:12.640" end="00:37:18.520">And, going here.</p>
+      <p begin="00:37:18.520" end="00:37:22.480">So, I'm going to go to my cloud service this is a cloud service that I install</p>
+      <p begin="00:37:22.480" end="00:37:24.090">...here you can also say if you</p>
+      <p begin="00:37:24.090" end="00:37:42.740">diagnostics data again so it's opening up the diagnostics data for this cloud service.</p>
+      <p begin="00:37:42.740" end="00:37:44.430">If I go to the directory list of</p>
+      <p begin="00:37:44.430" end="00:37:50.000">...right because I as...failed regress...or this one is being transferred</p>
+      <p begin="00:37:50.000" end="00:37:53.330">...blogs you get this nice little thing here and remembered</p>
+      <p begin="00:37:53.330" end="00:37:59.390">...install was my container name and I can basically click on it.</p>
+      <p begin="00:37:59.390" end="00:38:05.030">It's getting ...data here net installer and then I have my startup</p>
+      <p begin="00:38:05.030" end="00:38:08.280">tasks in the...task...so this</p>
+      <p begin="00:38:08.280" end="00:38:12.200">is really the proper way if you want to install software on a</p>
+      <p begin="00:38:12.200" end="00:38:17.440">role whether it's a web or worker role to implement logging because as I've seen</p>
+      <p begin="00:38:17.440" end="00:38:21.820">is now something goes wrong during your...process you have a very convenient</p>
+      <p begin="00:38:21.820" end="00:38:27.080">...to reach those locks if that's not the case you need to go through all that hassle that I showed</p>
+      <p begin="00:38:27.080" end="00:38:33.420">you before so that's why...highly advise you to do this again we...blog about that so</p>
+      <p begin="00:38:33.420" end="00:38:39.800">you can basically tried yourself and it's really good way to avoid start of issues.</p>
+      <p begin="00:38:39.800" end="00:38:48.140">All right so let's step back to...</p>
+      <p begin="00:38:48.140" end="00:38:52.110">Ok, so, now we've talked about how</p>
+      <p begin="00:38:52.110" end="00:38:57.760">measure diagnostics a set of inertial studio how to use...trace cloth and</p>
+      <p begin="00:38:57.760" end="00:39:02.220">how to basically enable logging for start of issues?</p>
+      <p begin="00:39:02.220" end="00:39:06.290">So, for those of you are familiar with each...</p>
+      <p begin="00:39:06.290" end="00:39:10.420">Event source that's another way of implementing logging</p>
+      <p begin="00:39:10.420" end="00:39:14.380">in the way we think about it is the system diagnostics</p>
+      <p begin="00:39:14.380" end="00:39:19.270">the trace class is really good for scenarios</p>
+      <p begin="00:39:19.270" end="00:39:23.730">where you have like I'd say a predictable size of data coming</p>
+      <p begin="00:39:23.730" end="00:39:26.670">and coming in or when, you know, you don't have a</p>
+      <p begin="00:39:26.670" end="00:39:31.840">lot of super-high scale on your on your machine or on your service so,</p>
+      <p begin="00:39:31.840" end="00:39:35.680">...the more you go into...scale-up art direction</p>
+      <p begin="00:39:35.680" end="00:39:40.160">...more data is getting produce your problem you really want to get some structure in your</p>
+      <p begin="00:39:40.160" end="00:39:45.900">locks because if you look at...the messages of traced trays information</p>
+      <p begin="00:39:45.900" end="00:39:48.980">...traced...star it really just takes a string</p>
+      <p begin="00:39:48.980" end="00:39:53.880">right so everything is pond out as a string you get an object because you use a method that says it's an error</p>
+      <p begin="00:39:53.880" end="00:39:56.870">...but that's pretty much about it</p>
+      <p begin="00:39:56.870" end="00:40:01.860">you could do-it-yourself by implementing keywords but then you have to do a lot of string parsing a lot of</p>
+      <p begin="00:40:01.860" end="00:40:06.990">strain combination so what you really want to do than is you want to get some structure</p>
+      <p begin="00:40:06.990" end="00:40:12.620">...your logging in a way to do this is a using...w events...so,</p>
+      <p begin="00:40:12.620" end="00:40:14.030">you tw events</p>
+      <p begin="00:40:14.030" end="00:40:20.230">...only like a good way to implement structure logging but it's also?</p>
+      <p begin="00:40:20.230" end="00:40:25.120">Really designed for high scale so anything that wrongs like what</p>
+      <p begin="00:40:25.120" end="00:40:28.370">scot-free was mentioning this morning like service fabric our</p>
+      <p begin="00:40:28.370" end="00:40:32.320">super hyper scale framework uses...to</p>
+      <p begin="00:40:32.320" end="00:40:37.510">...events so that goes along...we...pretty much everyone to switch</p>
+      <p begin="00:40:37.510" end="00:40:43.500">...gw events...and I'll show you...give you an example why so, it's designed for high</p>
+      <p begin="00:40:43.500" end="00:40:48.410">scale but more importantly all the operating system components on a windows system</p>
+      <p begin="00:40:48.410" end="00:40:50.580">...using it so now think about</p>
+      <p begin="00:40:50.580" end="00:40:54.090">your run multiple processes and multiple services on your virtual</p>
+      <p begin="00:40:54.090" end="00:40:59.510">...on your machine on your virtual machine or your instance you just want to have one</p>
+      <p begin="00:40:59.510" end="00:41:00.890">...where you get your</p>
+      <p begin="00:41:00.890" end="00:41:05.770">tray statements from because eventually you could even correlate those events and this is what</p>
+      <p begin="00:41:05.770" end="00:41:10.210">...tw events oars gives you a as an offering so with two-point-five</p>
+      <p begin="00:41:10.210" end="00:41:11.640">...the address decay two-point-five.</p>
+      <p begin="00:41:13.100" end="00:41:14.180">We started supporting</p>
+      <p begin="00:41:14.180" end="00:41:20.890">...w when...in measure diagnostics and.</p>
+      <p begin="00:41:20.890" end="00:41:25.460">This is actually something we've been working on to get in with the cat team</p>
+      <p begin="00:41:25.460" end="00:41:30.180">for a while because our cat team custom architecture customer</p>
+      <p begin="00:41:30.180" end="00:41:34.880">...date basically look after all the high skills services and we figured okay traced</p>
+      <p begin="00:41:34.880" end="00:41:36.980">...information or</p>
+      <p begin="00:41:36.980" end="00:41:43.390">...error only get to a certain point but you really want to have...gw so, we</p>
+      <p begin="00:41:43.390" end="00:41:48.340">started partnering with the actual diagnostics teams so we took some ownership of the</p>
+      <p begin="00:41:48.340" end="00:41:53.100">agents we have a very close collaboration together and now we have each w supporting</p>
+      <p begin="00:41:53.100" end="00:42:04.790">the continue...building on that so let me show you what that means free...</p>
+      <p begin="00:42:04.790" end="00:42:09.420">And, let's switch back to this machine...</p>
+      <p begin="00:42:09.420" end="00:42:10.500">Close...is one.</p>
+      <p begin="00:42:11.570" end="00:42:13.660">So, this is our familiar.</p>
+      <p begin="00:42:15.220" end="00:42:22.440">Application here the device controller I was using nothing has changed.</p>
+      <p begin="00:42:22.440" end="00:42:25.310">Except now I have a new...</p>
+      <p begin="00:42:25.310" end="00:42:26.740">If I go to class</p>
+      <p begin="00:42:26.740" end="00:42:30.690">it derives or usesmicrosoft diagnostics tracing.</p>
+      <p begin="00:42:32.640" end="00:42:36.370">And, then it has an event...derives from events...and has</p>
+      <p begin="00:42:36.370" end="00:42:40.850">...attribute in that case because it's my simple io t gateway</p>
+      <p begin="00:42:40.850" end="00:42:46.930">...just I I've just given at the name microsoft build io...gateway but,</p>
+      <p begin="00:42:46.930" end="00:42:51.300">you'll soon see ready advantages so the first thing what I'm going to do is I'm going to</p>
+      <p begin="00:42:51.300" end="00:42:56.100">define some keywords here and say okay because I want to filter</p>
+      <p begin="00:42:56.100" end="00:43:00.490">to data later on I say I know a bunch of keywords that I need to look offer have requests</p>
+      <p begin="00:43:00.490" end="00:43:05.400">aiff information I have errors and I have some sensor information so that's what I define</p>
+      <p begin="00:43:05.400" end="00:43:10.020">...very first step the second step is?</p>
+      <p begin="00:43:10.020" end="00:43:14.010">I implement so-called events in</p>
+      <p begin="00:43:14.010" end="00:43:20.360">...as you can seeI just have...info method and it has an attribute and</p>
+      <p begin="00:43:20.360" end="00:43:25.860">it's to event because it's my very first event I give it an idea of one</p>
+      <p begin="00:43:25.860" end="00:43:28.950">...the level is...most</p>
+      <p begin="00:43:28.950" end="00:43:33.990">of working awesome so the level is event level informational</p>
+      <p begin="00:43:33.990" end="00:43:39.260">but even here you can see I can even set a channel event channel operational.</p>
+      <p begin="00:43:39.260" end="00:43:42.110">And, then if I go.</p>
+      <p begin="00:43:42.110" end="00:43:46.000">Now if I go further down after keywords and say keyword</p>
+      <p begin="00:43:46.000" end="00:43:50.920">...so if I look at my code and I can implement like many</p>
+      <p begin="00:43:50.920" end="00:43:55.660">events like that admittedly this is like more effort you need to put it</p>
+      <p begin="00:43:55.660" end="00:44:00.650">in your development up-front and it seems to be really cumbersome but</p>
+      <p begin="00:44:00.650" end="00:44:05.600">trust me as soon as you go to scale this is worth it and you can see papers from</p>
+      <p begin="00:44:05.600" end="00:44:11.670">...team leveraging that because we really embrace that so let's see how</p>
+      <p begin="00:44:11.670" end="00:44:22.560">a method ...implementer let's go to device store.</p>
+      <p begin="00:44:22.560" end="00:44:24.510">In here I have.</p>
+      <p begin="00:44:24.510" end="00:44:29.320">Is...some all-knowing works again so in here typical saying I'm going</p>
+      <p begin="00:44:29.320" end="00:44:37.360">to basically I reference I'm going to use longer using statement and...referencing</p>
+      <p begin="00:44:37.360" end="00:44:39.190">And, then down here.</p>
+      <p begin="00:44:39.190" end="00:44:44.350">Remember I had before I had the law traced trace information and</p>
+      <p begin="00:44:44.350" end="00:44:49.540">then I put some sensor id in there but this is basically the decrepit</p>
+      <p begin="00:44:49.540" end="00:44:54.290">...of it but it becomes more obvious if I'm going to do this if I'm going to go to the next one so</p>
+      <p begin="00:44:54.290" end="00:44:55.890">here's the entries been created.</p>
+      <p begin="00:44:57.120" end="00:45:00.810">Now if I would use or if I were to use traced</p>
+      <p begin="00:45:00.810" end="00:45:04.770">odp trays information I had to do bunch of string combination</p>
+      <p begin="00:45:04.770" end="00:45:09.270">...it because I would be to say hey this...this was a pressure</p>
+      <p begin="00:45:09.270" end="00:45:12.890">...the temperature right so on so forth so in the</p>
+      <p begin="00:45:12.890" end="00:45:16.550">year as a developer I just need to know hey I created...entry and</p>
+      <p begin="00:45:16.550" end="00:45:20.860">the signature of the method tells me what I need to put in there if I go to this definition.</p>
+      <p begin="00:45:26.690" end="00:45:34.100">Nope, it's got to definition.</p>
+      <p begin="00:45:34.100" end="00:45:35.460">Okay.</p>
+      <p begin="00:45:35.460" end="00:45:38.090">So, if I go to the definition here.</p>
+      <p begin="00:45:38.090" end="00:45:41.960">I can see it it's also it has the of...ninety-seven lovely</p>
+      <p begin="00:45:41.960" end="00:45:47.280">...informational channel operational info and I basically do all</p>
+      <p begin="00:45:47.280" end="00:45:50.640">the string concatenation and stuff like that and methods signature</p>
+      <p begin="00:45:50.640" end="00:45:58.590">so you code is really clean and all the...work is being done in your logging...so.</p>
+      <p begin="00:45:58.590" end="00:46:03.390">Let's try it again I'm going to run is now locally again and</p>
+      <p begin="00:46:03.390" end="00:46:07.550">just to show you what the outcome of those trace messages</p>
+      <p begin="00:46:07.550" end="00:46:10.210">and for that I'm going to go.</p>
+      <p begin="00:46:11.250" end="00:46:12.670">Back here.</p>
+      <p begin="00:46:12.670" end="00:46:14.220">...grab my local.</p>
+      <p begin="00:46:21.530" end="00:46:27.300">...a start my service.</p>
+      <p begin="00:46:27.300" end="00:46:36.490">Okay, I'm going to...the local...here.</p>
+      <p begin="00:46:36.490" end="00:46:38.400">See it's working.</p>
+      <p begin="00:46:38.400" end="00:46:42.990">Khatami app...messages in there.</p>
+      <p begin="00:46:42.990" end="00:46:50.230">...to the local one and then.</p>
+      <p begin="00:46:50.230" end="00:46:55.200">To my storage account I have my development storage which is basically my local</p>
+      <p begin="00:46:55.200" end="00:46:59.830">storage emulator and that mimics the behavior of your storage</p>
+      <p begin="00:46:59.830" end="00:47:03.600">account and production so you would see exactly same thing and,</p>
+      <p begin="00:47:03.600" end="00:47:08.510">that's true for traced trace information as well as for...tw events</p>
+      <p begin="00:47:08.510" end="00:47:12.720">so if I go to the tables emir I see I have a new table which is</p>
+      <p begin="00:47:12.720" end="00:47:18.020">...rat io...gateway and here's...table because I still have some</p>
+      <p begin="00:47:18.020" end="00:47:21.730">...statements and year but if I go to...gateway table.</p>
+      <p begin="00:47:21.730" end="00:47:26.590">You'll see that I have a way richer set of information and</p>
+      <p begin="00:47:26.590" end="00:47:31.390">everything is very well structured and I can even like look for task</p>
+      <p begin="00:47:31.390" end="00:47:37.820">names so I could have or I have really rich filtering capabilities the other thing I want to</p>
+      <p begin="00:47:37.820" end="00:47:41.880">point out is how do I enable that so what I've done in</p>
+      <p begin="00:47:41.880" end="00:47:47.060">here is in my local setting of entry dw tab and</p>
+      <p begin="00:47:47.060" end="00:47:51.990">...here I basically just said my event source to microsoft build io</p>
+      <p begin="00:47:51.990" end="00:47:56.290">...gateway...was the name and the attribute of my class.</p>
+      <p begin="00:47:56.290" end="00:48:03.220">then I gave it a name how we chose should show up in the storage location which is imc gateway.</p>
+      <p begin="00:48:03.220" end="00:48:07.940">And, then basically shows up in your local emulator</p>
+      <p begin="00:48:07.940" end="00:48:12.320">likely development environment as well as in your storage account if you have to service</p>
+      <p begin="00:48:12.320" end="00:48:18.870">deployed so this is a really, really good way so, now switching gears a little</p>
+      <p begin="00:48:18.870" end="00:48:25.470">...case...something funny here.</p>
+      <p begin="00:48:25.470" end="00:48:30.220">Let's go to the simulator and.</p>
+      <p begin="00:48:30.220" end="00:48:34.480">...bob to message...to let's say or let's say we simulate like</p>
+      <p begin="00:48:34.480" end="00:48:39.770">fifteen hundred devices because think about I tested locally and now I want to</p>
+      <p begin="00:48:39.770" end="00:48:42.640">...production that's again my scenario that I had before and now I</p>
+      <p begin="00:48:42.640" end="00:48:46.520">have seen okay it's working now I want to tested and production</p>
+      <p begin="00:48:46.520" end="00:48:52.730">...deployed my service ies save that because it's taking like ten minutes and then I'm going to</p>
+      <p begin="00:48:52.730" end="00:48:58.050">have my simulator fire up I just need to change.</p>
+      <p begin="00:48:58.050" end="00:49:03.830">...going here.</p>
+      <p begin="00:49:03.830" end="00:49:08.220">Can go into the open...and file explore?</p>
+      <p begin="00:49:08.220" end="00:49:14.320">...just to make sure I have to write url in their nope of course not.</p>
+      <p begin="00:49:14.320" end="00:49:18.900">Come back here taking this service.</p>
+      <p begin="00:49:18.900" end="00:49:22.710">That's basically my deployed service that now has e w events</p>
+      <p begin="00:49:22.710" end="00:49:28.260">...and naught traced...statements...</p>
+      <p begin="00:49:28.260" end="00:49:36.000">And, I run it...</p>
+      <p begin="00:49:36.000" end="00:49:38.700">So, this is now like pumping fifteen hundred method</p>
+      <p begin="00:49:38.700" end="00:49:42.690">...a simulating fifteen hundred devices but now you may</p>
+      <p begin="00:49:42.690" end="00:49:45.200">...when we may get a problem</p>
+      <p begin="00:49:45.200" end="00:49:49.080">...because this is just fifteen hundred devices and it you see how</p>
+      <p begin="00:49:49.080" end="00:49:53.990">many like data it's basically producing within a very short period of time</p>
+      <p begin="00:49:53.990" end="00:49:57.520">...constraint now is getting to how do I if you to</p>
+      <p begin="00:49:57.520" end="00:50:03.380">data how can I actually make sense out of the data because I'm getting so much data now into my system</p>
+      <p begin="00:50:03.380" end="00:50:09.180">how can I do that so again we partnered with the catchy and,</p>
+      <p begin="00:50:09.180" end="00:50:15.040">we basically build a connector to...</p>
+      <p begin="00:50:15.040" end="00:50:17.860">Anyone heard about elk.</p>
+      <p begin="00:50:17.860" end="00:50:20.550">So, it's basically a elastic search</p>
+      <p begin="00:50:20.550" end="00:50:25.900">...stash and keep on up so it's an open-source framework built by</p>
+      <p begin="00:50:25.900" end="00:50:30.790">elastic...thing that has that can take huge amounts of data and basically</p>
+      <p begin="00:50:30.790" end="00:50:37.090">visualizing so we partnered with them as an intermediate solution and let me show you</p>
+      <p begin="00:50:37.090" end="00:50:43.120">Going back while this thing is producing it.</p>
+      <p begin="00:50:43.120" end="00:50:44.680">Back here.</p>
+      <p begin="00:50:44.680" end="00:50:50.250">And, I go to my dashboard nsa like the...</p>
+      <p begin="00:50:50.250" end="00:50:55.590">what's happening here is as you can see there's a very rich visualization opportunity now I don't want</p>
+      <p begin="00:50:55.590" end="00:50:59.100">to go...much into detail what the alex...and what you can</p>
+      <p begin="00:50:59.100" end="00:51:03.930">do think the only message that I want to bring a crosses yes,</p>
+      <p begin="00:51:03.930" end="00:51:07.480">we've heard you...working on it to make rad really</p>
+      <p begin="00:51:07.480" end="00:51:12.540">scalable as a first app what we're doing is we partnering or we</p>
+      <p begin="00:51:12.540" end="00:51:18.560">basically build a connector to alec so that you can use out for your visualization and,</p>
+      <p begin="00:51:18.560" end="00:51:23.770">then as a second step we're going to work on the on the agent itself to make the throughput of the</p>
+      <p begin="00:51:23.770" end="00:51:28.360">agent collects data even faster so that's the next...and that's coming shortly often</p>
+      <p begin="00:51:28.360" end="00:51:35.600">build so, let's look at us I think you're a little bit because?</p>
+      <p begin="00:51:35.600" end="00:51:39.320">It's very easy and we'll...of them get</p>
+      <p begin="00:51:39.320" end="00:51:41.220">...soon after the session.</p>
+      <p begin="00:51:42.430" end="00:51:44.080">If I go in here.</p>
+      <p begin="00:51:44.080" end="00:51:48.710">...you get is basically a download from a ripple and we have a bunch of</p>
+      <p begin="00:51:48.710" end="00:51:51.750">sample scripts for you so you don't need to do much...here</p>
+      <p begin="00:51:51.750" end="00:51:56.070">...basically download the...on your local machine this is all you get in</p>
+      <p begin="00:51:56.070" end="00:52:00.860">here you get like you can set up fancy advanced elastic search clusters or you can</p>
+      <p begin="00:52:00.860" end="00:52:05.390">just play around with it we have simple.</p>
+      <p begin="00:52:05.390" end="00:52:07.310">Sample alec instance, for example,</p>
+      <p begin="00:52:07.310" end="00:52:12.100">and, all you need to do is you basically go in here you go to dr</p>
+      <p begin="00:52:12.100" end="00:52:15.450">...stash configuration and you</p>
+      <p begin="00:52:15.450" end="00:52:19.450">...and then this is all provided to you all you need to do...is</p>
+      <p begin="00:52:19.450" end="00:52:22.940">...stash configuration is you need to...to your storage</p>
+      <p begin="00:52:22.940" end="00:52:27.910">...diagnostics data ends up and then you basically...partial script.</p>
+      <p begin="00:52:27.910" end="00:52:31.210">That's in thing and spins of an instance where you and you can</p>
+      <p begin="00:52:31.210" end="00:52:35.630">...so it's a very powerful tool and I think why I wanted</p>
+      <p begin="00:52:35.630" end="00:52:40.460">to share with you is okay we keep investing in it we heard you that we need to work on</p>
+      <p begin="00:52:40.460" end="00:52:45.720">this and this is one solution another one which is along those lines don't get</p>
+      <p begin="00:52:45.720" end="00:52:50.620">...like we also microsoft offers great services like that like application insights again</p>
+      <p begin="00:52:50.620" end="00:52:55.520">there's a great session about it and avocation insights goes a little bit further even with like teller</p>
+      <p begin="00:52:55.520" end="00:52:59.670">...and things like that but if you're used to reallocate stacked that's probably also</p>
+      <p begin="00:52:59.670" end="00:53:13.830">a good solution ok all right let me switch back.</p>
+      <p begin="00:53:13.830" end="00:53:17.340">Now we've seen basically I hope I've shown you and I've</p>
+      <p begin="00:53:17.340" end="00:53:22.260">proven you that like okay as diagnostics for smaller applications that</p>
+      <p begin="00:53:22.260" end="00:53:27.430">...run hyper scale visual studio pro is a really great tool to get you started as a</p>
+      <p begin="00:53:27.430" end="00:53:31.220">diagnostics...recreate from framework to use and,</p>
+      <p begin="00:53:31.220" end="00:53:35.220">then I went like a little bit further and said okay this is how it could look like if you go</p>
+      <p begin="00:53:35.220" end="00:53:38.600">at scale and I was the last part and you could use, for example,</p>
+      <p begin="00:53:38.600" end="00:53:41.520">alec or any other third-party tool that actually is</p>
+      <p begin="00:53:41.520" end="00:53:47.150">...the data so just to summarize on your diagnostics part</p>
+      <p begin="00:53:47.150" end="00:53:52.760">the benefits are really it's a free framework so, you can dh...the</p>
+      <p begin="00:53:52.760" end="00:53:57.280">hn wrongs on as your ideas and paths so I'm going to get to the</p>
+      <p begin="00:53:57.280" end="00:54:02.240">...part in a second because I haven't talked a lot about ins and that's the beauty about</p>
+      <p begin="00:54:02.240" end="00:54:06.620">as a diagnostics it's exactly the same thing and that's the beauty of having</p>
+      <p begin="00:54:06.620" end="00:54:09.160">...extension so everything I've shown you how to</p>
+      <p begin="00:54:09.160" end="00:54:13.680">configured how to get the data from a storage account everything</p>
+      <p begin="00:54:13.680" end="00:54:19.030">is applicable you could even use what I've just shown...the end that you can connect your</p>
+      <p begin="00:54:19.030" end="00:54:24.370">...stash plug-in that search account for you could even do that...that's a really great</p>
+      <p begin="00:54:24.370" end="00:54:29.270">tool so...by default wired of inertial studio and as</p>
+      <p begin="00:54:29.270" end="00:54:35.440">a diagnostics obviously as many third-party tools that support the entire thing.</p>
+      <p begin="00:54:35.440" end="00:54:40.260">So, considerations there is a catch though as I mentioned so</p>
+      <p begin="00:54:40.260" end="00:54:44.970">the problem is currently in this version of...diagnostics it's.</p>
+      <p begin="00:54:44.970" end="00:54:48.130">Because it's a it's tightly coupled to agile tables</p>
+      <p begin="00:54:48.130" end="00:54:52.480">...so all the data you collect this being reading...as a tables</p>
+      <p begin="00:54:52.480" end="00:54:54.910">...actually...constrained by</p>
+      <p begin="00:54:54.910" end="00:55:00.670">the input characteristic of as a tables as well as for</p>
+      <p begin="00:55:00.670" end="00:55:03.810">...so there's some limits...you can hit and</p>
+      <p begin="00:55:03.810" end="00:55:08.450">...can thing if you have a supra hyper scale system that limit will be reach</p>
+      <p begin="00:55:08.450" end="00:55:13.420">or can be reached so there's one catch that's the other thing I said we're working on like making</p>
+      <p begin="00:55:13.420" end="00:55:18.110">that collection better allowing you've directly from the agent to put the data into</p>
+      <p begin="00:55:18.110" end="00:55:23.380">...into otherlike repositories?</p>
+      <p begin="00:55:23.380" end="00:55:28.450">So, this is really it I showed youon dl let's talk about let's spend</p>
+      <p begin="00:55:28.450" end="00:55:32.420">a lost three minutes to talk about virtual machines on</p>
+      <p begin="00:55:32.420" end="00:55:37.070">...as I mentioned I haven't talked about virtual machines at all the reason is it's really</p>
+      <p begin="00:55:37.070" end="00:55:41.840">the same implementation you have an extension model repackage the same...and</p>
+      <p begin="00:55:41.840" end="00:55:47.790">uses the...configuration file and uses as...a storage</p>
+      <p begin="00:55:47.790" end="00:55:52.270">or storing data so everything I was talking about like the last forty five minutes</p>
+      <p begin="00:55:52.270" end="00:55:59.280">as applicable to iso as well let's switch to the last move todayand, then</p>
+      <p begin="00:55:59.280" end="00:56:02.860">so switch over here and open.</p>
+      <p begin="00:56:03.940" end="00:56:08.860">This one because I really want to show you something cools I think so this here is</p>
+      <p begin="00:56:08.860" end="00:56:12.450">a...application and the guesswork application</p>
+      <p begin="00:56:14.270" end="00:56:20.080">very famous it's almost like fabric so, what does the web front-end runs on</p>
+      <p begin="00:56:20.080" end="00:56:25.430">...virtual machine on...and its using a worker role in a...but,</p>
+      <p begin="00:56:25.430" end="00:56:30.010">what I'm doing in here as well as if you go to?</p>
+      <p begin="00:56:30.010" end="00:56:33.770">Home controller I'm using events...go to events</p>
+      <p begin="00:56:33.770" end="00:56:40.340">first definition and here logging all my data so now the first issue.</p>
+      <p begin="00:56:40.340" end="00:56:43.890">That we're having is in a cloud service world.</p>
+      <p begin="00:56:43.890" end="00:56:48.260">I have to is nys emulator it can actually tested I can test my events source data</p>
+      <p begin="00:56:48.260" end="00:56:51.740">...here...until now I couldn't but I'm going to show you</p>
+      <p begin="00:56:51.740" end="00:56:56.290">a trick we haven't fully integrated...yet but there is a way so let's.</p>
+      <p begin="00:56:56.290" end="00:57:00.470">Let's fire up to guesswork.</p>
+      <p begin="00:57:00.470" end="00:57:07.390">Of course use ...</p>
+      <p begin="00:57:07.390" end="00:57:10.550">The district bring it up and...brings it up.</p>
+      <p begin="00:57:10.550" end="00:57:15.750">Let me show you something scot-free announce like service fabric this morning obviously</p>
+      <p begin="00:57:15.750" end="00:57:19.220">...also building truly for it and one part of</p>
+      <p begin="00:57:19.220" end="00:57:23.840">the tooling is you see here it's called service fabric clusters so we have a node</p>
+      <p begin="00:57:23.840" end="00:57:27.720">...here and we will have tooling...that node comes something really,</p>
+      <p begin="00:57:27.720" end="00:57:33.060">really great and I don't have a service fabric application whatsoever but I can go in here and say</p>
+      <p begin="00:57:33.060" end="00:57:37.790">few diagnostics events so now if you diagnostics event we basically have a</p>
+      <p begin="00:57:37.790" end="00:57:38.910">local et w</p>
+      <p begin="00:57:38.910" end="00:57:44.540">...that you can use for any project because if I'm going to go in here and say configure</p>
+      <p begin="00:57:44.540" end="00:57:48.080">ic mike my events sources...and now.</p>
+      <p begin="00:57:49.140" end="00:57:52.110">If I go to my guest book.</p>
+      <p begin="00:57:52.110" end="00:57:56.150">And, I go to my guesswork and save or as</p>
+      <p begin="00:57:57.610" end="00:57:59.650">...samoa.</p>
+      <p begin="00:58:02.050" end="00:58:05.660">I upload...</p>
+      <p begin="00:58:05.660" end="00:58:16.080">...good pictures to use sign guess...</p>
+      <p begin="00:58:16.080" end="00:58:20.640">And, go back here you see those traces are being written out in real-time.</p>
+      <p begin="00:58:20.640" end="00:58:25.470">So, recruit part here is now you see you can see because I instrumented my code using</p>
+      <p begin="00:58:25.470" end="00:58:30.420">events...on of web sided will go into...measure virtual machine and</p>
+      <p begin="00:58:30.420" end="00:58:34.680">now you can see okay what happened exactly and you get the structured information</p>
+      <p begin="00:58:34.680" end="00:58:38.930">that I was talking about before and you can even filter for it and you can see</p>
+      <p begin="00:58:38.930" end="00:58:43.710">things like from nail and sly search so it's a really,</p>
+      <p begin="00:58:43.710" end="00:58:48.210">really good tool and I want to show you that the next thing.</p>
+      <p begin="00:58:48.210" end="00:58:50.180">It's what you would need to do in order</p>
+      <p begin="00:58:50.180" end="00:58:54.800">to make diagnostics work now on adrg.</p>
+      <p begin="00:58:54.800" end="00:58:59.400">...virtual machine is you need to at the.</p>
+      <p begin="00:58:59.400" end="00:59:04.090">The trace listener remember I showed you...file with...trace listen for an app configure</p>
+      <p begin="00:59:04.090" end="00:59:08.210">web dot com fake it's obviously not there because we don't know what kind</p>
+      <p begin="00:59:08.210" end="00:59:12.550">of project your creating so if you just create a simple project that project doesn't know about</p>
+      <p begin="00:59:12.550" end="00:59:17.220">...diagnostics whatsoever so you would need to go in here.</p>
+      <p begin="00:59:17.220" end="00:59:23.230">In your ...fake and you need needed to maybe</p>
+      <p begin="00:59:23.230" end="00:59:27.680">have it you would need to add your trace...here and you can just copy it an any reference</p>
+      <p begin="00:59:27.680" end="00:59:33.610">...assembly and then you publisher to the virtual machine doesn't make sense so,</p>
+      <p begin="00:59:33.610" end="00:59:35.180">let me just show you one more thing and</p>
+      <p begin="00:59:35.180" end="00:59:40.890">then and promotional this is the web this is the virtual machine</p>
+      <p begin="00:59:40.890" end="00:59:46.060">at hosts the website that I was just showing you the way to enable diagnostics</p>
+      <p begin="00:59:46.060" end="00:59:50.610">...of virtual studio is you can go to the configuration part.</p>
+      <p begin="00:59:50.610" end="00:59:55.480">And, then we have to is configuration page in...</p>
+      <p begin="00:59:55.480" end="01:00:01.680">I have extensions and you can basically grab the.</p>
+      <p begin="01:00:01.680" end="01:00:05.400">Windows monitoring agent for diagnostics you</p>
+      <p begin="01:00:05.400" end="01:00:09.260">add it and what's happening is well...you get exactly the same</p>
+      <p begin="01:00:09.260" end="01:00:15.600">dialogue now you could basically just pointed to...</p>
+      <p begin="01:00:15.600" end="01:00:21.680">You could basically pointed to a storage account any n.</p>
+      <p begin="01:00:21.680" end="01:00:23.120">...it let's go</p>
+      <p begin="01:00:23.120" end="01:00:29.670">...this one so I have my everything set up I would need to add my</p>
+      <p begin="01:00:29.670" end="01:00:33.250">...source here as I showed you before and then basically you hit</p>
+      <p begin="01:00:33.250" end="01:00:37.700">okay and then you updated...and then your diagnostics</p>
+      <p begin="01:00:37.700" end="01:00:44.450">is wired up here so this is exactly the same basically the same familiar</p>
+      <p begin="01:00:44.450" end="01:00:50.810">tool same familiar technologies for paths as well as ys?</p>
+      <p begin="01:00:50.810" end="01:00:53.780">And, then a few in part it's.</p>
+      <p begin="01:00:53.780" end="01:00:58.780">We don't have like a nice summary page reviewing like we have four...because we don't know which storage</p>
+      <p begin="01:00:58.780" end="01:01:04.780">...you putting it into...basically need to look up yourself so,</p>
+      <p begin="01:01:04.780" end="01:01:09.650">with that because we'reI really don't want to stand in a way of your.</p>
+      <p begin="01:01:09.650" end="01:01:19.690">Of your lunch so, just let-meskip forward quickly the flights.</p>
+      <p begin="01:01:19.690" end="01:01:24.200">So,...couple other things like as I mentioned application...great</p>
+      <p begin="01:01:24.200" end="01:01:28.800">...analytics diagnostics rufus great dashboards there's going to be a great session</p>
+      <p begin="01:01:28.800" end="01:01:34.540">on friday and I highly encourage you to go there because it's very insightful and,</p>
+      <p begin="01:01:34.540" end="01:01:36.530">see what...this teams up to in</p>
+      <p begin="01:01:36.530" end="01:01:43.190">...they've done really great job there then there's operational...which is also ...</p>
+      <p begin="01:01:43.190" end="01:01:47.850">blocks into as your diagnostics and all that stuff that I've shown you but currently</p>
+      <p begin="01:01:47.850" end="01:01:52.660">read-only transfer state over from windows event locks and rad windows event</p>
+      <p begin="01:01:52.660" end="01:01:56.270">...tables so basically it doesn't take your et</p>
+      <p begin="01:01:56.270" end="01:02:01.840">w data and things like that but they're working on it as...just one to keep that in mind those are the</p>
+      <p begin="01:02:01.840" end="01:02:07.950">...services that we provide recreate so as a summary.</p>
+      <p begin="01:02:07.950" end="01:02:12.400">I hope I showed universal studio tools that are available to trouble shoot</p>
+      <p begin="01:02:12.400" end="01:02:15.730">...an ins I notice talk...mainly focusing on</p>
+      <p begin="01:02:15.730" end="01:02:20.490">...diagnostics but we truly believe if you have a good instrumentation story</p>
+      <p begin="01:02:20.490" end="01:02:25.290">in your code you role avoid a lot of those pitfalls and troubleshooting</p>
+      <p begin="01:02:25.290" end="01:02:32.080">your service once the service scales...get three successful I also give you a deeper</p>
+      <p begin="01:02:33.630" end="01:02:36.380">...outlook what's coming with like we having</p>
+      <p begin="01:02:36.380" end="01:02:41.380">an elk integration will agree integrate more...own services will improve</p>
+      <p begin="01:02:41.380" end="01:02:46.100">the agent so the last part is there a bunch of sessions and I mention some of</p>
+      <p begin="01:02:46.100" end="01:02:52.020">them throughout my session already there is a session today it surviving five gcses</p>
+      <p begin="01:02:52.020" end="01:02:55.460">architect...websites for rapid growth for...during that session</p>
+      <p begin="01:02:55.460" end="01:03:01.780">it's very interesting if you're interested in like larger-scale environments then micros</p>
+      <p begin="01:03:01.780" end="01:03:06.980">...a lessons from scale building applications for measure it's also very interesting goes</p>
+      <p begin="01:03:06.980" end="01:03:11.600">along those lines the mike morton is going to talk about what's new for developers and</p>
+      <p begin="01:03:11.600" end="01:03:14.320">virtual story and address decay tomorrow so he's</p>
+      <p begin="01:03:14.320" end="01:03:19.370">going to give you an overview of everything some of the stuff that I've showed you is a repeat but,</p>
+      <p begin="01:03:19.370" end="01:03:21.110">he's going to give you a diagnostics overviews</p>
+      <p begin="01:03:21.110" end="01:03:26.640">going show you are docket tooling and all that type of stuff really great session and then there's</p>
+      <p begin="01:03:26.640" end="01:03:31.370">this application inside session fasten powerful diagnostics friday highly encourage you to</p>
+      <p begin="01:03:31.370" end="01:03:35.770">...historical debugging and telly trays and then the last one was</p>
+      <p begin="01:03:35.770" end="01:03:40.480">the troubleshooting applications on measure apps service that's basically the website part</p>
+      <p begin="01:03:40.480" end="01:03:44.320">so there are two pointers learn more about...that's the release</p>
+      <p begin="01:03:44.320" end="01:03:50.720">...we should have released by now literally or if not then tomorrow.</p>
+      <p begin="01:03:50.720" end="01:03:56.030">And, as your diagnostics and the alec stack what we've done there that's basically the...to repo if</p>
+      <p begin="01:03:56.030" end="01:04:02.310">you're interested ...that I really thank you for coming here I hope it...for you and you</p>
+      <p begin="01:04:02.310" end="01:04:07.310">session and if you have any questions regarding the topic that we didn't cover or</p>
+      <p begin="01:04:07.310" end="01:04:12.130">we haven't covered like how do I do entirely trays how do I do this debugging stuff I</p>
+      <p begin="01:04:12.130" end="01:04:19.400">just find meta booth more than happy to talk to-you about that and that ...your build?</p>
+
+    </div>
+  </body>
+</tt>

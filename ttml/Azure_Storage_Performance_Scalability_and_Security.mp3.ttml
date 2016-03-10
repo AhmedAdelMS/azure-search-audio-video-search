@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.938</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.790" end="00:00:08.140">Hi, I'm jeff irwin and happy to be doing this talk on channel nine for as</p>
+      <p begin="00:00:08.140" end="00:00:11.710">...storage welcome to the talk we're going to be</p>
+      <p begin="00:00:11.710" end="00:00:18.730">talking about the storage perform performance scaleability and security.</p>
+      <p begin="00:00:18.730" end="00:00:24.540">So, in this talk we're going to be covering just a brief overview storage those of you looking for</p>
+      <p begin="00:00:24.540" end="00:00:30.030">introduction to storage aimee strongly encourage you to check out jason hogs talk that</p>
+      <p begin="00:00:30.030" end="00:00:35.090">will be actually at build checked I'll give you...full overview of</p>
+      <p begin="00:00:35.090" end="00:00:40.780">our service what it can do different data types those of you who are more familiar with the</p>
+      <p begin="00:00:40.780" end="00:00:46.600">stored service already using it familiar with it definitely check out this talk</p>
+      <p begin="00:00:46.600" end="00:00:52.650">follow along this hopefully we'll be productive for you we'll also talk about storage</p>
+      <p begin="00:00:52.650" end="00:00:56.730">internals see understand design principles</p>
+      <p begin="00:00:56.730" end="00:01:01.130">and architecture choices that you can make and then we'll go into just some</p>
+      <p begin="00:01:01.130" end="00:01:06.050">quick five-minute fixes that you can make to your code that should markedly</p>
+      <p begin="00:01:06.050" end="00:01:12.040">improved performance and including one set well where we'll take a code sample</p>
+      <p begin="00:01:12.040" end="00:01:16.500">improve its performance by about ninety nine percent so definitely stick around for</p>
+      <p begin="00:01:16.500" end="00:01:22.120">that and finally will also be talking about...security considerations we've had a lot of</p>
+      <p begin="00:01:22.120" end="00:01:27.730">developers asking us lately about security considerations for as your storage so we</p>
+      <p begin="00:01:27.730" end="00:01:31.430">...make sure we take a few minutes ago...that?</p>
+      <p begin="00:01:31.430" end="00:01:35.040">Says start off with just a few minutes as a reminder about as</p>
+      <p begin="00:01:35.040" end="00:01:35.660">...storage.</p>
+      <p begin="00:01:36.870" end="00:01:41.770">We have it's durable cloud storage really and it comes in a few different</p>
+      <p begin="00:01:41.770" end="00:01:47.240">flavors but that's really our goal is storing all your data</p>
+      <p begin="00:01:47.240" end="00:01:52.700">with high durability in the cloud accessible from anywhere we</p>
+      <p begin="00:01:52.700" end="00:01:56.600">do three strongly consistent copies in one region plus optional</p>
+      <p begin="00:01:56.600" end="00:02:00.720">...with option only with geo redundant storage you can have three more</p>
+      <p begin="00:02:00.720" end="00:02:08.679">copies geo replicated to another region for even more durable storage.</p>
+      <p begin="00:02:08.679" end="00:02:13.649">Really high scale at the moment we're currently serving millions of transactions</p>
+      <p begin="00:02:13.649" end="00:02:18.719">every second and, we already have trillions of...stored so,</p>
+      <p begin="00:02:18.719" end="00:02:21.499">were...very high scale many of the largest</p>
+      <p begin="00:02:21.499" end="00:02:26.399">microsoft services are using as...storage already so,</p>
+      <p begin="00:02:26.399" end="00:02:31.369">that should give you some idea of just how scale we can operate at and,</p>
+      <p begin="00:02:31.369" end="00:02:38.050">how you can use a...your applications...finally flexible we?</p>
+      <p begin="00:02:38.050" end="00:02:42.290">We use rest apis for all interaction with</p>
+      <p begin="00:02:42.290" end="00:02:48.000">the storage platform means you can use it from any platform you can use it from you know,</p>
+      <p begin="00:02:48.000" end="00:02:52.580">any platform you want that's part of your application we have fully supported libraries</p>
+      <p begin="00:02:52.580" end="00:02:57.270">in dot net windows phone windows runtime android java cplus-plus</p>
+      <p begin="00:02:57.270" end="00:03:00.810">node dot js coming more all the time</p>
+      <p begin="00:03:00.810" end="00:03:06.000">...making sure that the cplus-plus.</p>
+      <p begin="00:03:06.000" end="00:03:09.730">And, java libraries work on both windows and linux so,</p>
+      <p begin="00:03:09.730" end="00:03:15.040">we really want to embrace whatever platform works for your application so,</p>
+      <p begin="00:03:15.040" end="00:03:19.390">that you don't have to do anything unnaturally use storage and,</p>
+      <p begin="00:03:19.390" end="00:03:24.110">if we don't have a particular language you need as we said they're just rest apis you can always</p>
+      <p begin="00:03:24.110" end="00:03:28.830">write directly against those.</p>
+      <p begin="00:03:28.830" end="00:03:35.680">Storage types as you storage is really flexible platform first type weeks</p>
+      <p begin="00:03:35.680" end="00:03:40.360">support is called blobs there's really two types of these this block blogs and page</p>
+      <p begin="00:03:40.360" end="00:03:45.960">blobs the block blobs...for just ordinary content...you know,</p>
+      <p begin="00:03:45.960" end="00:03:50.850">any photos or documents logs files anything that</p>
+      <p begin="00:03:50.850" end="00:03:56.740">you would normally read and write all at one-time and ranges</p>
+      <p begin="00:03:56.740" end="00:03:58.540">is well-suited for block clubs</p>
+      <p begin="00:03:58.540" end="00:04:02.430">...page blobs most common scenario for page blobs is going-to be</p>
+      <p begin="00:04:02.430" end="00:04:09.060">disk so anybody who's using as your disks that's all page blob page</p>
+      <p begin="00:04:09.060" end="00:04:13.830">blob data underneath you can also use it in a few other scenarios for random read</p>
+      <p begin="00:04:13.830" end="00:04:16.590">right particularly if you're doing random</p>
+      <p begin="00:04:16.590" end="00:04:21.210">...you may want to aexplore page blobs?</p>
+      <p begin="00:04:21.210" end="00:04:26.530">Next up we have files this is support the sm be protocol</p>
+      <p begin="00:04:26.530" end="00:04:31.430">from the cloud so you can access, access it just like a file share the</p>
+      <p begin="00:04:31.430" end="00:04:36.940">one interesting characteristic as opposed to...as you can access it from many of lms</p>
+      <p begin="00:04:36.940" end="00:04:41.820">...time whereas a disk can only be mounted by a single vm so-if you have data that you need to</p>
+      <p begin="00:04:41.820" end="00:04:44.870">share among multiple of gm's</p>
+      <p begin="00:04:44.870" end="00:04:50.750">and, measure compute you can you can use the measure file service?</p>
+      <p begin="00:04:50.750" end="00:04:56.060">And, we have tables this is a...sequel store most</p>
+      <p begin="00:04:56.060" end="00:05:01.760">frequently used as a key value look up that...for structured data it's,</p>
+      <p begin="00:05:01.760" end="00:05:06.440">you know, grow like data but schema less you don't have to have the same schema</p>
+      <p begin="00:05:06.440" end="00:05:10.810">forever row that will be digging into quite a bit.</p>
+      <p begin="00:05:10.810" end="00:05:15.440">And, then finally we have...which is for durable messaging this is for handing</p>
+      <p begin="00:05:15.440" end="00:05:20.870">off messages between components of your application and making sure that</p>
+      <p begin="00:05:20.870" end="00:05:25.600">app the those messages are never lost they can be resumed and,</p>
+      <p begin="00:05:25.600" end="00:05:29.510">that message always gets fully processed.</p>
+      <p begin="00:05:29.510" end="00:05:34.800">Next we're going to talk about storage internals so why are we starting with internals</p>
+      <p begin="00:05:34.800" end="00:05:35.970">first.</p>
+      <p begin="00:05:35.970" end="00:05:40.810">We really find that developers who understand the internals can make much better design</p>
+      <p begin="00:05:40.810" end="00:05:46.380">choices once you understand how the platform works underneath we find that</p>
+      <p begin="00:05:46.380" end="00:05:50.600">it's much easier to figure out how should I design my application on top of</p>
+      <p begin="00:05:50.600" end="00:05:55.490">it so we're going to spend a lot of time on that the one nice thing about</p>
+      <p begin="00:05:55.490" end="00:06:00.000">this is because all of those different data types are hosted on the same</p>
+      <p begin="00:06:00.000" end="00:06:05.140">platform any of these principles will work for any of those data types</p>
+      <p begin="00:06:05.140" end="00:06:09.880">so understanding the internals will help you make design choices for a blobs tables</p>
+      <p begin="00:06:09.880" end="00:06:13.920">...any of the different data types ...are all hosted on the</p>
+      <p begin="00:06:13.920" end="00:06:18.550">same common platform.</p>
+      <p begin="00:06:18.550" end="00:06:23.820">So, the measure storage architecture really sthree tiers so, the first...the as</p>
+      <p begin="00:06:23.820" end="00:06:29.650">...storage architecture is the from and here is a stateless.</p>
+      <p begin="00:06:29.650" end="00:06:32.710">Stateless layer it's really meant for request handling</p>
+      <p begin="00:06:32.710" end="00:06:37.190">...handles all the request validation it'll do meter</p>
+      <p begin="00:06:37.190" end="00:06:42.840">ing throttle laying off all those things are handle that the front-end layer but,</p>
+      <p begin="00:06:42.840" end="00:06:45.570">it's fully stateless so any request to send</p>
+      <p begin="00:06:45.570" end="00:06:51.010">to storage service could go into any one of the front-ends beneath that we have what</p>
+      <p begin="00:06:51.010" end="00:06:56.320">with what's called the partition layer this is what really serves the</p>
+      <p begin="00:06:56.320" end="00:07:00.360">requests this is what does all the all the heavy lifting a processing</p>
+      <p begin="00:07:00.360" end="00:07:03.180">request determining what data it's four and then</p>
+      <p begin="00:07:03.180" end="00:07:08.270">fetching that data from the data layer this is the existence of this layers what</p>
+      <p begin="00:07:08.270" end="00:07:14.300">enable strong consistency batch transactions will be spending a lot of time on this today?</p>
+      <p begin="00:07:14.300" end="00:07:16.530">And, then finally we have the stream layer the stream</p>
+      <p begin="00:07:16.530" end="00:07:21.780">layer stores multiple replicas of your data again keeps durable and,</p>
+      <p begin="00:07:21.780" end="00:07:26.910">really doesn't know anything about that data logically all it does a store the data and,</p>
+      <p begin="00:07:26.910" end="00:07:31.020">make sure that it's kept...</p>
+      <p begin="00:07:31.020" end="00:07:33.590">So, as...partitions just</p>
+      <p begin="00:07:33.590" end="00:07:39.440">...start there...really the most important concept in designing your data.</p>
+      <p begin="00:07:39.440" end="00:07:45.630">A single partition is served by a single partition server so,</p>
+      <p begin="00:07:45.630" end="00:07:49.860">...it ends up being the scaleability limit and,</p>
+      <p begin="00:07:49.860" end="00:07:55.190">then a single partition server conserve multiple partitions the scale of a partition</p>
+      <p begin="00:07:55.190" end="00:07:58.900">can't exceed what a single partition server can handle so,</p>
+      <p begin="00:07:58.900" end="00:08:05.800">it's really important when designing your data that you allow your data spread across partitions.</p>
+      <p begin="00:08:05.800" end="00:08:10.700">The to kind of design considerations that are kept intention here</p>
+      <p begin="00:08:10.700" end="00:08:16.030">is that data in a single partition can be updated atomically that is it</p>
+      <p begin="00:08:16.030" end="00:08:18.730">sports batch transactions and,</p>
+      <p begin="00:08:18.730" end="00:08:23.140">other atomic operations data in separate partitions can be load</p>
+      <p begin="00:08:23.140" end="00:08:26.680">balanced across different partition servers so,</p>
+      <p begin="00:08:26.680" end="00:08:32.130">that that's you want to allow for that as much as possible there is no limit on the</p>
+      <p begin="00:08:32.130" end="00:08:36.930">number of partitions you can half so, as you start specifying partition case there's</p>
+      <p begin="00:08:36.930" end="00:08:44.980">no need to try and keep the number of partitions low you can use as many as you want?</p>
+      <p begin="00:08:44.980" end="00:08:49.920">For references the partitions are specified differently for each of</p>
+      <p begin="00:08:49.920" end="00:08:54.610">the data types for a blobs the full blob path including the blog</p>
+      <p begin="00:08:54.610" end="00:08:59.120">name is the partition key essentially each blob is its own partition</p>
+      <p begin="00:08:59.120" end="00:09:02.970">for tables the table entities each have a partition key that</p>
+      <p begin="00:09:02.970" end="00:09:08.040">you specify you may have multiple entities within a single partition key but,</p>
+      <p begin="00:09:08.040" end="00:09:12.510">all of those will always be served by the same partition server.</p>
+      <p begin="00:09:12.510" end="00:09:16.020">Then...the...name is the partition key so,</p>
+      <p begin="00:09:16.020" end="00:09:19.160">all messages in a single q will be...by the</p>
+      <p begin="00:09:19.160" end="00:09:26.250">same partition server and then for files a single file share is a partition key.</p>
+      <p begin="00:09:26.250" end="00:09:28.650">So, let's do some examples just walking through r three</p>
+      <p begin="00:09:28.650" end="00:09:35.730">...architecture and see how these requests get process.</p>
+      <p begin="00:09:35.730" end="00:09:40.530">These examples are all going to be based on the table service just in terms of what</p>
+      <p begin="00:09:40.530" end="00:09:44.660">they logically look at but you could imagine this working welfare blobs or</p>
+      <p begin="00:09:44.660" end="00:09:49.180">...or files as well so in this first example we just</p>
+      <p begin="00:09:49.180" end="00:09:53.930">have a single of object a single request for a single object and,</p>
+      <p begin="00:09:53.930" end="00:09:58.650">it's been fully specify the request is specified you know, partition aef and</p>
+      <p begin="00:09:58.650" end="00:10:04.030">...want to this happens to come into front-end number two it could have done any of</p>
+      <p begin="00:10:04.030" end="00:10:08.480">the front-ends partition server three is hosting partitions fthree</p>
+      <p begin="00:10:08.480" end="00:10:13.520">j right now so the request is going to get routed partition threebased on</p>
+      <p begin="00:10:13.520" end="00:10:18.340">it being for partition f then partition server three</p>
+      <p begin="00:10:18.340" end="00:10:22.550">find out the data is actually hosted on stream server too so it's going to rout the data</p>
+      <p begin="00:10:22.550" end="00:10:28.710">stream server to these are very fast and efficient requests.</p>
+      <p begin="00:10:28.710" end="00:10:32.770">Let's look at a second...request this one's also for partition</p>
+      <p begin="00:10:32.770" end="00:10:37.370">f but for different piece of data so you can see the request flow goes through a different</p>
+      <p begin="00:10:37.370" end="00:10:42.090">effie but again the same partition server and this is really important this is</p>
+      <p begin="00:10:42.090" end="00:10:46.850">going to the same partition server as the previous request because again it's for the same partition,</p>
+      <p begin="00:10:46.850" end="00:10:50.550">partition asf and then finally get just goes to another</p>
+      <p begin="00:10:50.550" end="00:10:57.490">stream server the data can be spread all across the stream layer.</p>
+      <p begin="00:10:57.490" end="00:11:03.640">then this is for another request a again simple request single object</p>
+      <p begin="00:11:03.640" end="00:11:08.430">...partition just goes to a different partition server you can see this one's for partition</p>
+      <p begin="00:11:08.430" end="00:11:13.290">t which...to partition server for the data happens to be on the</p>
+      <p begin="00:11:13.290" end="00:11:21.060">same stream layer server that we used in the first request but, that's mere coincidence.</p>
+      <p begin="00:11:21.060" end="00:11:24.680">And, then finally this is just an example of what we call batch request this is a</p>
+      <p begin="00:11:24.680" end="00:11:29.970">request that ask for two pieces of data it's in partition w we get down</p>
+      <p begin="00:11:29.970" end="00:11:34.710">the partition server five that serving that partition but because it needs to pieces of data</p>
+      <p begin="00:11:34.710" end="00:11:39.440">...up having to go to stream servers is a little less efficient because we need multiple</p>
+      <p begin="00:11:39.440" end="00:11:46.210">objects from multiple servers so, overall the key take away here</p>
+      <p begin="00:11:46.210" end="00:11:51.160">is address storage is going to be most efficient for single...single object</p>
+      <p begin="00:11:51.160" end="00:11:55.860">operations single partition operations are going to be much more efficient</p>
+      <p begin="00:11:55.860" end="00:12:02.910">than multi partition operations will look at a multi partition operation in a minute to show why.</p>
+      <p begin="00:12:02.910" end="00:12:10.290">Let's talk about designing your data so just to remind everybody about table server structure this is</p>
+      <p begin="00:12:10.290" end="00:12:14.350">just a sample table here reviews the user ideas the partition</p>
+      <p begin="00:12:14.350" end="00:12:19.240">key just as a side user ideas a great partition key there's no need to use</p>
+      <p begin="00:12:19.240" end="00:12:24.370">the first to characters or anything like that you can just use the user id maybe a</p>
+      <p begin="00:12:24.370" end="00:12:26.930">guid or hash of the user idea if you want to make</p>
+      <p begin="00:12:26.930" end="00:12:34.150">it random that works as a great partition key even if you have millions of them next we have</p>
+      <p begin="00:12:34.150" end="00:12:39.410">...keys that's going to be you know, specifically identifying</p>
+      <p begin="00:12:39.410" end="00:12:43.880">an identity within a partition and then finally with each entity we have a set</p>
+      <p begin="00:12:43.880" end="00:12:48.600">of properties again table storage is scheme unless you can have any</p>
+      <p begin="00:12:48.600" end="00:12:54.820">...properties associated with each entity they don't have to follow all the sameschema.</p>
+      <p begin="00:12:54.820" end="00:12:58.270">So, just to walk through the table structure.</p>
+      <p begin="00:12:58.270" end="00:13:03.460">...this is the kind of key points here you've got entities with the same partition</p>
+      <p begin="00:13:03.460" end="00:13:08.430">key are always...by the same server so all these with user id one are going to be</p>
+      <p begin="00:13:08.430" end="00:13:11.970">served by the same partition server user id to may be</p>
+      <p begin="00:13:11.970" end="00:13:16.270">served by the same partition server it could be served by another one.</p>
+      <p begin="00:13:16.270" end="00:13:17.000">Then we talked about</p>
+      <p begin="00:13:18.710" end="00:13:25.700">...have properties but they can be completely different across different and, this.</p>
+      <p begin="00:13:25.700" end="00:13:31.060">So, let's talk about three different query scenarios.</p>
+      <p begin="00:13:31.060" end="00:13:34.690">We look at a us cities table for an example here so this is</p>
+      <p begin="00:13:34.690" end="00:13:39.490">a table of just some cities in the...of washington so,</p>
+      <p begin="00:13:39.490" end="00:13:44.310">are you will be state as the partition key and then city as the...key and,</p>
+      <p begin="00:13:44.310" end="00:13:46.300">then just as an example property</p>
+      <p begin="00:13:46.300" end="00:13:53.200">with put the population of each city into the in the property values?</p>
+      <p begin="00:13:53.200" end="00:13:58.820">So, as we talked about before this is very similar to what we looked at earlier we're looking at the us</p>
+      <p begin="00:13:58.820" end="00:14:02.090">cities table partition key as washington parochial</p>
+      <p begin="00:14:02.090" end="00:14:06.850">seattle we're going to end up over on partition server five because washington start with</p>
+      <p begin="00:14:06.850" end="00:14:11.820">the w...then going back to stream server to for that object.</p>
+      <p begin="00:14:11.820" end="00:14:13.160">This is really efficient</p>
+      <p begin="00:14:13.160" end="00:14:18.770">that's one object from one partition is really what storage is designed to do</p>
+      <p begin="00:14:18.770" end="00:14:24.410">it's very fast very efficient as you work do this is the second scenario</p>
+      <p begin="00:14:24.410" end="00:14:30.650">second scenario here you have partitions...partition scanned you see that we've</p>
+      <p begin="00:14:30.650" end="00:14:35.230">specified a particular a specific partition key washington still so,</p>
+      <p begin="00:14:35.230" end="00:14:38.060">we're only involving one partition but now we've just put a</p>
+      <p begin="00:14:38.060" end="00:14:42.810">filter on population just said all cities with more than ten thousand people.</p>
+      <p begin="00:14:42.810" end="00:14:46.830">This is still going to be a little less efficient as you see we've involved now</p>
+      <p begin="00:14:46.830" end="00:14:51.430">to data servers we're...have to scan a lot more entities in order to be able to</p>
+      <p begin="00:14:51.430" end="00:14:57.970">...respond with the data and finally we have table scans these are by far the least</p>
+      <p begin="00:14:57.970" end="00:15:03.550">efficient operations in storage because these spanned partitions</p>
+      <p begin="00:15:03.550" end="00:15:08.550">this is similar if you were using the blob service to doing a list blobs operation or</p>
+      <p begin="00:15:08.550" end="00:15:13.490">...doing list...me spanning partitions to do those operations and</p>
+      <p begin="00:15:13.490" end="00:15:18.210">what you see is this kind of fan out as...using multiple partition</p>
+      <p begin="00:15:18.210" end="00:15:23.180">servers multiple stream servers in order to get all the us cities with more than ten</p>
+      <p begin="00:15:23.180" end="00:15:30.220">thousand people these are really efficient we want to avoid...time we can...applications?</p>
+      <p begin="00:15:30.220" end="00:15:33.370">What's the cost of scans...first one for</p>
+      <p begin="00:15:33.370" end="00:15:38.890">...your application...to be slower what you see is that</p>
+      <p begin="00:15:38.890" end="00:15:45.240">...inefficient they're going to take much longer than point queries?</p>
+      <p begin="00:15:45.240" end="00:15:50.470">One of the reasons for that is when you look at scaleability and limits.</p>
+      <p begin="00:15:50.470" end="00:15:55.440">Table stored can handle twenty thousand entities per second that's based on the number of entities scanned</p>
+      <p begin="00:15:55.440" end="00:16:00.260">and written request that scans a thousand entities to return one counts</p>
+      <p begin="00:16:00.260" end="00:16:04.200">...or counts as a thousand not one so,</p>
+      <p begin="00:16:04.200" end="00:16:08.630">you can see how you can quickly pile up the number of entity scan and get to that scaleability</p>
+      <p begin="00:16:08.630" end="00:16:14.140">target actually very quickly what happens when you exceed that scaleability target you'll find</p>
+      <p begin="00:16:14.140" end="00:16:19.440">...stored account starts to get throttled another piece here is when you see this thousand</p>
+      <p begin="00:16:19.440" end="00:16:22.170">and one ratio all that time scanning</p>
+      <p begin="00:16:22.170" end="00:16:26.030">is time not spent returning data which means</p>
+      <p begin="00:16:26.030" end="00:16:31.910">is just going to have a negative impact on the performance...application?</p>
+      <p begin="00:16:31.910" end="00:16:37.010">So, how do we avoid them so, we're going to look at an example right now how to turn...table scan into a</p>
+      <p begin="00:16:37.010" end="00:16:44.630">partition scanned this make a pretty big improvement and application?</p>
+      <p begin="00:16:44.630" end="00:16:48.680">So, just turntable scans in the partition scans or partition scans into</p>
+      <p begin="00:16:48.680" end="00:16:53.800">the point queries we use d normalization this is a</p>
+      <p begin="00:16:53.800" end="00:16:58.800">word that if you're coming from a sequel background probably is not something you been</p>
+      <p begin="00:16:58.800" end="00:17:01.800">...to do over the years but,</p>
+      <p begin="00:17:01.800" end="00:17:05.880">in table...actually a really beneficial approach</p>
+      <p begin="00:17:05.880" end="00:17:10.930">...normal is neat d normalize data allows you to query efficiently get</p>
+      <p begin="00:17:10.930" end="00:17:13.540">exactly the data that you need and,</p>
+      <p begin="00:17:13.540" end="00:17:19.110">unlike relational databases table storage is very cheap and,</p>
+      <p begin="00:17:19.110" end="00:17:24.430">you see the price there it ends up being really cheap to store lots of</p>
+      <p begin="00:17:24.430" end="00:17:30.940">data so duplicating data doesn't have a cost that maybe it in on...and other databases?</p>
+      <p begin="00:17:30.940" end="00:17:34.940">So, again, back to our us cities sample the partition key</p>
+      <p begin="00:17:34.940" end="00:17:40.020">here was state name and queries across states require table scams so when I</p>
+      <p begin="00:17:40.020" end="00:17:44.340">wanted to do a query for all the cities that have more than</p>
+      <p begin="00:17:44.340" end="00:17:49.540">a hundred-thousand people are more than ten thousand people I had to include multiple partition</p>
+      <p begin="00:17:49.540" end="00:17:55.110">servers to complete that operation that's going to be just faria...efficient</p>
+      <p begin="00:17:55.110" end="00:18:01.070">and also what you see here is we will scanned many entities but only returned a few so,</p>
+      <p begin="00:18:01.070" end="00:18:06.550">just the density of results that was return was very low.</p>
+      <p begin="00:18:06.550" end="00:18:11.330">So, now if we try and improve this table we keep all the entities that we</p>
+      <p begin="00:18:11.330" end="00:18:16.260">had before because we may want to perform queries where we say get me the population</p>
+      <p begin="00:18:16.260" end="00:18:21.180">of seattle wa and not-so-nice fast point query so we kept that</p>
+      <p begin="00:18:21.180" end="00:18:26.180">but now we've added additional pop partition...which are population ranges</p>
+      <p begin="00:18:26.180" end="00:18:31.150">...we have a partition that covers cities that are ten thousand two hundred-thousand</p>
+      <p begin="00:18:31.150" end="00:18:35.890">and cities that are hundred-thousand to a million and then we've put the role key is the</p>
+      <p begin="00:18:35.890" end="00:18:40.140">state...and city name so now when we want to do a</p>
+      <p begin="00:18:40.140" end="00:18:46.740">scanned for all the cities that are within a particular partition or within</p>
+      <p begin="00:18:46.740" end="00:18:54.090">a particular population range now we can get that all from one partition?</p>
+      <p begin="00:18:54.090" end="00:18:57.360">And, then this is what you end up for exactly the same query we</p>
+      <p begin="00:18:57.360" end="00:19:00.370">were doing earlier you now see that we only have to</p>
+      <p begin="00:19:00.370" end="00:19:04.710">insult involve one partition server instead of three like</p>
+      <p begin="00:19:04.710" end="00:19:09.580">we did before this is still a partition scanned so it's still going to have to hit multiple data</p>
+      <p begin="00:19:09.580" end="00:19:17.190">...multiple stream servers but we've made it much more efficient than it was before.</p>
+      <p begin="00:19:17.190" end="00:19:19.460">So, you see is we've avoided scans by</p>
+      <p begin="00:19:19.460" end="00:19:24.320">doing the normalization you can use exactly the same principle if you have a lot of</p>
+      <p begin="00:19:24.320" end="00:19:29.380">partitions scans you-can refactoring...data to enable point queries and,</p>
+      <p begin="00:19:29.380" end="00:19:33.870">the cost effectiveness of table storage is really what allows us to work again,</p>
+      <p begin="00:19:33.870" end="00:19:35.790">you can apply this to blobs,</p>
+      <p begin="00:19:35.790" end="00:19:41.110">for example, if you were doing list operations because you're constantly looking for a blob</p>
+      <p begin="00:19:41.110" end="00:19:44.070">based on one particular attribute you may consider</p>
+      <p begin="00:19:44.070" end="00:19:51.380">duplicating that blob with that attribute in the name so you can find it much more quickly.</p>
+      <p begin="00:19:51.380" end="00:19:56.680">Now going to talk a little bit about query first design you saw an example of this in the previous</p>
+      <p begin="00:19:58.130" end="00:20:03.230">...in the us cities that we walk through but really this is the core</p>
+      <p begin="00:20:03.230" end="00:20:09.410">of how we design our data...as your storage that means is start</p>
+      <p begin="00:20:09.410" end="00:20:14.020">...determining what queries you will perform again if you're coming from</p>
+      <p begin="00:20:14.020" end="00:20:18.960">a relational database background you may be more familiar with starting with what</p>
+      <p begin="00:20:18.960" end="00:20:21.570">you're storing starting with the objects and designing your</p>
+      <p begin="00:20:21.570" end="00:20:27.110">data around that in as your storage you really want to start more</p>
+      <p begin="00:20:27.110" end="00:20:32.360">from the queries of saying what will I want to know or what I want to do and,</p>
+      <p begin="00:20:32.360" end="00:20:37.090">then...the data for that...previous example we knew they were to potentially common</p>
+      <p begin="00:20:37.090" end="00:20:43.140">query so we d normalize the data to make both of them more efficient?</p>
+      <p begin="00:20:43.140" end="00:20:48.310">So, for example, we're going to look at a sample here maybe from</p>
+      <p begin="00:20:48.310" end="00:20:53.130">and e-commerce application the example here is if</p>
+      <p begin="00:20:53.130" end="00:20:58.050">we have customer orders with retention policy so we think about customer</p>
+      <p begin="00:20:58.050" end="00:21:02.800">orders one of the things that's going to happen a lot is somebody's going to want to be able to look up</p>
+      <p begin="00:21:02.800" end="00:21:07.380">by a specific customer by a particular order id getting the</p>
+      <p begin="00:21:07.380" end="00:21:13.430">data about those about those customer transactions customer orders you may also want to</p>
+      <p begin="00:21:13.430" end="00:21:18.130">...the whole list of orders that were perform by</p>
+      <p begin="00:21:18.130" end="00:21:21.380">a particular customer but that's much more rare that a customers</p>
+      <p begin="00:21:21.380" end="00:21:25.370">...want their whole history so we don't need to optimize for that</p>
+      <p begin="00:21:25.370" end="00:21:28.840">as heavily and then finally there's an additional requirement</p>
+      <p begin="00:21:28.840" end="00:21:33.230">here which is for privacy and security reasons we said every transaction</p>
+      <p begin="00:21:33.230" end="00:21:36.920">...order from the customer needs to be deleted the record of it needs</p>
+      <p begin="00:21:36.920" end="00:21:41.760">to be deleted after six months we can't hold onto it longer than that</p>
+      <p begin="00:21:41.760" end="00:21:47.880">so we need to make sure that rand-r tables actually enabled that scenario fairly well.</p>
+      <p begin="00:21:47.880" end="00:21:49.740">So, first try here is again,</p>
+      <p begin="00:21:49.740" end="00:21:53.960">what you might do coming from a relational database you have a partition key</p>
+      <p begin="00:21:53.960" end="00:21:59.220">hear from user id that's good then we ad in a row key that's the order idea within</p>
+      <p begin="00:21:59.220" end="00:22:02.320">that user id and, then some metadata about that</p>
+      <p begin="00:22:02.320" end="00:22:07.060">order stables great for finding all the orders for a particular user but,</p>
+      <p begin="00:22:07.060" end="00:22:11.530">we don't do that very often it's also good for finding a specific order</p>
+      <p begin="00:22:11.530" end="00:22:14.450">by a specific user id but,</p>
+      <p begin="00:22:14.450" end="00:22:19.050">one thing that this table won't be good for is finding all the orders to delete</p>
+      <p begin="00:22:19.050" end="00:22:23.410">so if you imagine that every day I want to find everything that's more than six-months-old</p>
+      <p begin="00:22:23.410" end="00:22:27.260">the only way to do that is to scan the entire</p>
+      <p begin="00:22:27.260" end="00:22:37.150">table and find anything that has a partition key...older than six months?</p>
+      <p begin="00:22:37.150" end="00:22:41.730">This set of tables improves on that so what we've done here is now</p>
+      <p begin="00:22:41.730" end="00:22:46.510">we've said because I have this retention policy that's really important to me I'm going</p>
+      <p begin="00:22:46.510" end="00:22:50.670">to be doing it all the time I'm going to do is I'm actually in a split out my orders by</p>
+      <p begin="00:22:50.670" end="00:22:55.660">...you could use a different time range you could use a day or week depending on</p>
+      <p begin="00:22:55.660" end="00:22:59.830">your application needs but we've split out the tables so,</p>
+      <p begin="00:22:59.830" end="00:23:04.830">that each of them captures orders from a particular time range that way as soon as that table</p>
+      <p begin="00:23:04.830" end="00:23:08.910">as more than six-months-old you can simply delete the entire table which is only</p>
+      <p begin="00:23:08.910" end="00:23:14.750">one operation finding all the orders for a particular user you're</p>
+      <p begin="00:23:14.750" end="00:23:19.950">...to have to query multiple tables now maybe six if you're using one per month but,</p>
+      <p begin="00:23:19.950" end="00:23:23.640">we already said that operation is quite rare compared to</p>
+      <p begin="00:23:23.640" end="00:23:27.260">other retention policy and even that would just basic</p>
+      <p begin="00:23:27.260" end="00:23:29.920">partitions scans no table scans involved</p>
+      <p begin="00:23:29.920" end="00:23:34.590">in this so this is going to be much more efficient based on the queries that we have</p>
+      <p begin="00:23:34.590" end="00:23:39.760">...you could imagine a different application with different queries and it would have different means and,</p>
+      <p begin="00:23:39.760" end="00:23:44.140">we might design the tables different differently for that but by starting with what we</p>
+      <p begin="00:23:44.140" end="00:23:48.860">need to know and designing the data for that we've ended up with some tables that are really going to make our</p>
+      <p begin="00:23:48.860" end="00:23:56.020">application performance and not run into the scaleability targets like we would have with the first traffic.</p>
+      <p begin="00:23:56.020" end="00:24:00.590">Next one will look at is hot partitions this can happen in blob storage</p>
+      <p begin="00:24:00.590" end="00:24:04.260">...can happening q storage can happen and table storage can happen in</p>
+      <p begin="00:24:04.260" end="00:24:09.100">any of these and really gets to how do you again how do you efficiently</p>
+      <p begin="00:24:09.100" end="00:24:12.670">the structure data so what is a pop-pop partition</p>
+      <p begin="00:24:12.670" end="00:24:17.730">...one partition in your in your storage account that's</p>
+      <p begin="00:24:17.730" end="00:24:22.730">taking much more of the load than any other partition so you have a single blob that's</p>
+      <p begin="00:24:22.730" end="00:24:27.380">really commonly access or a single partition key that's really commonly</p>
+      <p begin="00:24:27.380" end="00:24:31.670">...what ends up happening is we've talked about before is it presents</p>
+      <p begin="00:24:31.670" end="00:24:36.580">a scale limit because we can't split across multiple partition servers so it can't be</p>
+      <p begin="00:24:36.580" end="00:24:41.100">load balanced which means you'll hit your throughout you'll hit the throttle in limits</p>
+      <p begin="00:24:41.100" end="00:24:46.680">much earlier than you'd like to so we want to avoid those wherever possible so</p>
+      <p begin="00:24:46.680" end="00:24:52.660">this is just kind of an illustration very quickly in terms of how this ends up working we</p>
+      <p begin="00:24:52.660" end="00:24:57.700">say partition start off well...we've got five hundred transactions per second</p>
+      <p begin="00:24:57.700" end="00:25:01.670">happening across all the partition servers only say well what if</p>
+      <p begin="00:25:01.670" end="00:25:06.570">partitioned server d and e start getting more traffic now there's an imbalance</p>
+      <p begin="00:25:06.570" end="00:25:10.080">measure storage is a self load balancing prop platform</p>
+      <p begin="00:25:10.080" end="00:25:14.080">so it'll go ahead and actually automatically split out partition</p>
+      <p begin="00:25:14.080" end="00:25:19.030">servers two and three it'll maybe move partition...to a different partition server</p>
+      <p begin="00:25:19.030" end="00:25:24.030">to the cool things down and get them back out more balanced but what you see here</p>
+      <p begin="00:25:24.030" end="00:25:28.390">is that partition dee can't be load balanced anymore</p>
+      <p begin="00:25:28.390" end="00:25:33.180">it's now stuck there's no ability to split things out so it's doing a thousand</p>
+      <p begin="00:25:33.180" end="00:25:36.350">gps on that server and,</p>
+      <p begin="00:25:36.350" end="00:25:41.070">you know, it may be able to increase a little bit more but at some point it's going to run into</p>
+      <p begin="00:25:41.070" end="00:25:44.110">the limit of what that server can do at that point you'll</p>
+      <p begin="00:25:44.110" end="00:25:50.160">get throttle laying and other...</p>
+      <p begin="00:25:50.160" end="00:25:54.930">So, an example of how partitions we see is logging so,</p>
+      <p begin="00:25:54.930" end="00:25:56.930">...look at that.</p>
+      <p begin="00:25:56.930" end="00:26:01.520">When...logging from multiple servers something people would do all the time</p>
+      <p begin="00:26:01.520" end="00:26:04.650">as that they would use partition...partition key that's just</p>
+      <p begin="00:26:04.650" end="00:26:10.620">the days date it feels natural it was my first try when I did logging</p>
+      <p begin="00:26:10.620" end="00:26:16.510">was to just put in today's date as the partition key the time stamp ends up being the</p>
+      <p begin="00:26:16.510" end="00:26:21.380">...key and then some properties the problem with this is the vast majority of</p>
+      <p begin="00:26:21.380" end="00:26:27.360">inserts in fact all of your inserts will always be hitting one partition my experience</p>
+      <p begin="00:26:27.360" end="00:26:32.790">in a lot of logging situations insert is by far the most common action</p>
+      <p begin="00:26:32.790" end="00:26:36.710">read is far less-common which means the vast majority of operations</p>
+      <p begin="00:26:36.710" end="00:26:41.410">against this table are going to be against a single partition key which means</p>
+      <p begin="00:26:41.410" end="00:26:44.270">that will work right up until the moment that you have too many</p>
+      <p begin="00:26:44.270" end="00:26:51.180">servers to many events and all the sudden you'll be hearing that single partition server limit?</p>
+      <p begin="00:26:51.180" end="00:26:55.960">So, what we've done here is we've improve this by giving each server its...partitions so maybe</p>
+      <p begin="00:26:55.960" end="00:27:00.610">I have eighteen servers are more and, I'll have each server writing to</p>
+      <p begin="00:27:00.610" end="00:27:06.270">its own partition this one represent a little bit of a drawback in the in order to find</p>
+      <p begin="00:27:06.270" end="00:27:11.110">and event I may have to do multiple partition scans but again we said reading</p>
+      <p begin="00:27:11.110" end="00:27:15.640">is much more rare than inserting data and this allows each of the</p>
+      <p begin="00:27:15.640" end="00:27:20.910">servers to be writing to its own partition to avoid hitting any sort of partition</p>
+      <p begin="00:27:20.910" end="00:27:23.970">key scaleability limit?</p>
+      <p begin="00:27:23.970" end="00:27:25.660">The last thing that you might consider</p>
+      <p begin="00:27:25.660" end="00:27:30.720">doing with logging is actually to not use tables at all to use blobs so</p>
+      <p begin="00:27:30.720" end="00:27:34.610">if you use blobs what you find is log data can frequently be written,</p>
+      <p begin="00:27:34.610" end="00:27:40.270">written and batches you can batch it up for a few minutes and then write it out to blobs and,</p>
+      <p begin="00:27:40.270" end="00:27:44.780">then have each of your servers doing this and then also logs are frequently</p>
+      <p begin="00:27:44.780" end="00:27:50.210">read in ranges you may want to retrieve all the logs for a particular our for particular</p>
+      <p begin="00:27:50.210" end="00:27:55.210">five minutes so we've done here is done exactly the same thing but we're using a</p>
+      <p begin="00:27:55.210" end="00:27:57.530">blob container and,</p>
+      <p begin="00:27:57.530" end="00:28:07.900">time range for each of the each of the ranges of time for container?</p>
+      <p begin="00:28:07.900" end="00:28:10.370">So, in summary we're looking at designing</p>
+      <p begin="00:28:10.370" end="00:28:15.000">...data across all the different service servers.</p>
+      <p begin="00:28:15.000" end="00:28:19.770">You want to choose a great partition key I can be the blog path the table keys to</p>
+      <p begin="00:28:19.770" end="00:28:24.650">name it really matters for all the data types because partitions end up being the limiting</p>
+      <p begin="00:28:24.650" end="00:28:29.590">...scalability factor as long as you spread your data across partitions</p>
+      <p begin="00:28:29.590" end="00:28:34.750">you're going to get great scalability out of measure storage as I said before</p>
+      <p begin="00:28:34.750" end="00:28:38.990">...table or blob storage any of these can have</p>
+      <p begin="00:28:38.990" end="00:28:42.910">millions of partition case so don't be afraid to use user id is</p>
+      <p begin="00:28:42.910" end="00:28:46.840">...is anything like that as your partition key allows</p>
+      <p begin="00:28:46.840" end="00:28:53.410">for really even load balancing d normalization is a great way to again,</p>
+      <p begin="00:28:53.410" end="00:28:55.360">improve your query efficiency by</p>
+      <p begin="00:28:55.360" end="00:29:00.730">the duplicating the data making it easier to find the right table entity or</p>
+      <p begin="00:29:00.730" end="00:29:04.870">...finally use the right abstraction sometimes blobs are great.</p>
+      <p begin="00:29:04.870" end="00:29:10.420">The solution even though it's structured data sometimes you may want to use tables</p>
+      <p begin="00:29:10.420" end="00:29:14.660">or files use the right abstraction for your data</p>
+      <p begin="00:29:14.660" end="00:29:19.860">in general blobs are going to be great for data that's written and batches or...and ranges and,</p>
+      <p begin="00:29:19.860" end="00:29:26.040">then tables are going to be great for data that's a key value lookup.</p>
+      <p begin="00:29:26.040" end="00:29:31.020">now we talked about kind of...internals and specific queries and query patterns that</p>
+      <p begin="00:29:31.020" end="00:29:35.970">you can do now we're going to talk a little bit more about designing your application and some patterns that we</p>
+      <p begin="00:29:35.970" end="00:29:39.980">see that can really help your application do well either by using storage</p>
+      <p begin="00:29:39.980" end="00:29:44.220">...using storage more efficiently the first one will talk about this is one that</p>
+      <p begin="00:29:44.220" end="00:29:49.460">...a lot of applications actually doing which is just using cues</p>
+      <p begin="00:29:49.460" end="00:29:55.300">todistribute work to a back-end role so, in this example we've used</p>
+      <p begin="00:29:55.300" end="00:30:02.160">a q front-end takes in a request for maybe some long-running process</p>
+      <p begin="00:30:02.160" end="00:30:04.970">that front-end instead of doing that longing process</p>
+      <p begin="00:30:04.970" end="00:30:10.150">long-running process itself and blocking blocking out cpu resources on that</p>
+      <p begin="00:30:10.150" end="00:30:13.590">...it's going to put that messaging...let the</p>
+      <p begin="00:30:13.590" end="00:30:17.790">back-end workers handle it and, puts maybe store the results back</p>
+      <p begin="00:30:17.790" end="00:30:23.970">...as your storage this allows for asynchronous processing more</p>
+      <p begin="00:30:23.970" end="00:30:28.040">responsive front-ends and then also very importantly</p>
+      <p begin="00:30:28.040" end="00:30:33.640">independent scaling you can have to front-ends while you have a thousand back ends</p>
+      <p begin="00:30:33.640" end="00:30:41.390">or any ratio you need to make sure that you're getting the performance that you</p>
+      <p begin="00:30:41.390" end="00:30:42.520">Another thing that</p>
+      <p begin="00:30:42.520" end="00:30:48.080">we've seen a lot of people doing recently is simple change notifications so,</p>
+      <p begin="00:30:48.080" end="00:30:52.050">some people sometimes you'll say I need to know when a blob</p>
+      <p begin="00:30:52.050" end="00:30:57.320">changed or...the changed so you'll start listing the blobs</p>
+      <p begin="00:30:57.320" end="00:31:02.060">repeatedly or scanning a table repeatedly because we've already talked about those</p>
+      <p begin="00:31:02.060" end="00:31:07.900">lists and scans those are table scans and they're not going to be very efficient so,</p>
+      <p begin="00:31:07.900" end="00:31:12.950">instead of doing that you can see a process here for implementing a very</p>
+      <p begin="00:31:12.950" end="00:31:17.440">simple change notification pattern so basically you have the client making</p>
+      <p begin="00:31:17.440" end="00:31:22.470">the change prior to making that change put...message and, one of your</p>
+      <p begin="00:31:22.470" end="00:31:29.620">cues that describes that chained what object what changed was deleted was</p>
+      <p begin="00:31:29.620" end="00:31:34.640">specifies that then the client making the change makes the change so,</p>
+      <p begin="00:31:34.640" end="00:31:40.270">it does the...message...so that we make sure that the client didn't crash</p>
+      <p begin="00:31:40.270" end="00:31:44.780">right after making the change we want-to make sure that the change was captured and</p>
+      <p begin="00:31:44.780" end="00:31:50.750">then observer watches for the...the...regularly instead of listing blogger</p>
+      <p begin="00:31:50.750" end="00:31:56.360">tables pulling...is very efficient when it gets a message checks to see if the expected</p>
+      <p begin="00:31:56.360" end="00:32:01.710">change happened if it did it process...if not it can let the...message go back to the</p>
+      <p begin="00:32:01.710" end="00:32:06.640">...those of you familiar with queues that's a kind of core concept of using as your</p>
+      <p begin="00:32:06.640" end="00:32:09.950">...and, then, you know,</p>
+      <p begin="00:32:09.950" end="00:32:14.160">you can let it go back to q then try again later on the same message</p>
+      <p begin="00:32:14.160" end="00:32:18.570">q messages have a dq count so you can see when the messages</p>
+      <p begin="00:32:18.570" end="00:32:22.000">...the queued maybe three times once that's happened maybe you can</p>
+      <p begin="00:32:22.000" end="00:32:26.780">assume that the client that was trying to make the change actually failed after it updated the</p>
+      <p begin="00:32:26.780" end="00:32:29.780">...message you can just throw-away the key message and assume</p>
+      <p begin="00:32:29.780" end="00:32:38.140">that the chained was on successful one important thing?</p>
+      <p begin="00:32:38.140" end="00:32:40.990">Here as I said you really need to make sure that the</p>
+      <p begin="00:32:40.990" end="00:32:45.560">...message was created before the changes made otherwise you could lose the</p>
+      <p begin="00:32:45.560" end="00:32:54.280">lose the fact that the changes made and, not perform whatever processing...to.</p>
+      <p begin="00:32:54.280" end="00:32:58.020">Using shared access signatures which we're going to talk about more in a minute and</p>
+      <p begin="00:32:58.020" end="00:33:03.420">cross origin resource sharing you can now actually make direct data access calls</p>
+      <p begin="00:33:03.420" end="00:33:08.700">from your client devices so,...used to be that you would have to proxy all as</p>
+      <p begin="00:33:08.700" end="00:33:14.830">your storage datathrough your front-end front-end web roles that would</p>
+      <p begin="00:33:14.830" end="00:33:18.900">...timor front-end web roles you need to be thinking about</p>
+      <p begin="00:33:18.900" end="00:33:22.990">scalability just as much as the storage platform needs to and,</p>
+      <p begin="00:33:22.990" end="00:33:27.110">now we have shared access signatures which allow for a delegated access</p>
+      <p begin="00:33:27.110" end="00:33:32.620">across origin resource sharing headers which help with browsers security</p>
+      <p begin="00:33:32.620" end="00:33:37.940">features to allow the device to just get minimal amounts of data</p>
+      <p begin="00:33:37.940" end="00:33:43.200">from the front-end and then turn around and send request for additional data</p>
+      <p begin="00:33:43.200" end="00:33:50.610">to add your storage directly not requiring your front-end to scale nearly as much?</p>
+      <p begin="00:33:50.610" end="00:33:56.190">Also let's talk about disks so, with disks your...targets</p>
+      <p begin="00:33:56.190" end="00:34:00.910">...very important here you have five hundred I...per disk twenty thousand I apps per</p>
+      <p begin="00:34:00.910" end="00:34:03.970">...which means you can't have more than forty discs per</p>
+      <p begin="00:34:03.970" end="00:34:08.590">count so, if you're going to have more than forty disks definitely spread those across storage</p>
+      <p begin="00:34:08.590" end="00:34:14.060">accounts you can have up to a hundred storage accounts per subscription avoiding the per</p>
+      <p begin="00:34:14.060" end="00:34:19.440">...scaleability target best practice for that is striving this you can use storage spaces</p>
+      <p begin="00:34:19.440" end="00:34:24.650">to ensure that even load distribution and, you can...up to a</p>
+      <p begin="00:34:24.650" end="00:34:28.780">...easily even using our show you can go even more than that</p>
+      <p begin="00:34:28.780" end="00:34:34.150">so definitely striped ist if you're going to be going anywhere beyond that five hundred I</p>
+      <p begin="00:34:34.150" end="00:34:38.710">opts to make sure that you get good performance.</p>
+      <p begin="00:34:38.710" end="00:34:43.450">We also have a premium disks now generally available ready for your ready for</p>
+      <p begin="00:34:43.450" end="00:34:51.200">your use gets you hire I...per disk and, then additionally.</p>
+      <p begin="00:34:51.200" end="00:34:54.150">In addition to...the higher apps produce also</p>
+      <p begin="00:34:54.150" end="00:35:00.280">hire throughput so, you see the smallest disco p term has five hundred I</p>
+      <p begin="00:35:00.280" end="00:35:05.130">...disco hundred megabytes per second all the way up to a p thirty has a terabyte of data</p>
+      <p begin="00:35:05.130" end="00:35:10.080">five thousand miles and two hundred megabytes per second so much higher</p>
+      <p begin="00:35:10.080" end="00:35:15.380">limits than were available on standard storage this is all as us feedback so,</p>
+      <p begin="00:35:15.380" end="00:35:19.840">you're also going to get much lower latency much more consistent latency then you maybe got</p>
+      <p begin="00:35:19.840" end="00:35:23.090">with standard disk so same best practices</p>
+      <p begin="00:35:24.320" end="00:35:30.260">...all built on similar a similar platforms...best practices apply stripe for more</p>
+      <p begin="00:35:30.260" end="00:35:34.910">apps one note here is to make sure using the appropriate vm size,</p>
+      <p begin="00:35:34.910" end="00:35:40.010">for example, a ds one can only do thirty two hundred I apps so,</p>
+      <p begin="00:35:40.010" end="00:35:43.020">you probably wouldn't want to pair that with a p thirty...that can do</p>
+      <p begin="00:35:43.020" end="00:35:51.710">five thousand you should use at least a ds to make sure that you can get all the app to looking for.</p>
+      <p begin="00:35:51.710" end="00:35:55.730">So, what we're going to look at right now is about ten five-minute fixes each of</p>
+      <p begin="00:35:55.730" end="00:36:00.300">these are really simple for you to go and add your code today and,</p>
+      <p begin="00:36:00.300" end="00:36:05.250">each of them should make a really big difference in your in your applications performance</p>
+      <p begin="00:36:05.250" end="00:36:10.540">starting off with a couple that are that are useful for all the different data types the</p>
+      <p begin="00:36:10.540" end="00:36:16.510">first one's going to be using read from secondary this is usually not thought of as a performance</p>
+      <p begin="00:36:16.510" end="00:36:21.280">fix this is usually thought of as availability or durability change?</p>
+      <p begin="00:36:21.280" end="00:36:26.280">But, from your users' perspective if...requesting data from your service and</p>
+      <p begin="00:36:26.280" end="00:36:29.890">you're trying that request on the primary and the primary for some</p>
+      <p begin="00:36:29.890" end="00:36:34.000">reason is temporarily unavailable you can immediately</p>
+      <p begin="00:36:34.000" end="00:36:37.520">fail back to the secondary to get that data</p>
+      <p begin="00:36:37.520" end="00:36:41.450">...immediately for the user improving their perceive latency actually</p>
+      <p begin="00:36:41.450" end="00:36:47.930">quite a bit couple notes on this one it only takes justand,</p>
+      <p begin="00:36:47.930" end="00:36:53.090">even half of...line of code adding in this location mode for re tries and,</p>
+      <p begin="00:36:53.090" end="00:36:56.770">that supported across again all the data types blobs tables</p>
+      <p begin="00:36:56.770" end="00:36:59.770">...files.</p>
+      <p begin="00:36:59.770" end="00:37:04.430">But, one note here just remember the secondary copy is eventually consistent so</p>
+      <p begin="00:37:04.430" end="00:37:08.690">if it's a very recent write it may not be reflected yet.</p>
+      <p begin="00:37:08.690" end="00:37:12.190">One other one we see I've made this mistake and, we've seen</p>
+      <p begin="00:37:12.190" end="00:37:17.680">...a number of times make sure that this line creative not exists is not in</p>
+      <p begin="00:37:17.680" end="00:37:19.280">your mainline code</p>
+      <p begin="00:37:19.280" end="00:37:25.130">repeatedly this line of code always makes at least one server call and,</p>
+      <p begin="00:37:25.130" end="00:37:29.150">usually isn't...necessary once you've created your applications</p>
+      <p begin="00:37:29.150" end="00:37:33.140">tables so typically a want to pull those out create all your</p>
+      <p begin="00:37:33.140" end="00:37:37.370">tables up-front and then let your mainline code</p>
+      <p begin="00:37:37.370" end="00:37:44.210">just for focus on the operation it's performing not making sure that the table exists?</p>
+      <p begin="00:37:44.210" end="00:37:45.980">With queues you can use update</p>
+      <p begin="00:37:45.980" end="00:37:52.410">message update message allows you to do a couple of different things.</p>
+      <p begin="00:37:52.410" end="00:37:55.710">What this is once I've retrieved a message?</p>
+      <p begin="00:37:55.710" end="00:38:00.440">In...you have to...delete you retrieve and then you delete a message so once you</p>
+      <p begin="00:38:00.440" end="00:38:04.430">retrieved the message you-can call back an update that message</p>
+      <p begin="00:38:04.430" end="00:38:08.680">you-can update both the least time that you have the invisibility time to</p>
+      <p begin="00:38:08.680" end="00:38:13.580">give yourself more time to process the message and you can update the contents of that message</p>
+      <p begin="00:38:13.580" end="00:38:19.940">so in this case what we've done is we've said both I want to update the invisibility</p>
+      <p begin="00:38:19.940" end="00:38:23.480">timeout to give myself more time hanover</p>
+      <p begin="00:38:23.480" end="00:38:28.660">updated the comment the content to say I'm done with some step one</p>
+      <p begin="00:38:28.660" end="00:38:34.180">what this allows is if my worker were to fail?</p>
+      <p begin="00:38:34.180" end="00:38:36.390">If my...word fail.</p>
+      <p begin="00:38:36.390" end="00:38:38.920">Than I can resume.</p>
+      <p begin="00:38:38.920" end="00:38:43.460">On the next worker from step one I don't have to start over all the way from</p>
+      <p begin="00:38:43.460" end="00:38:47.900">the beginning again so this is a really good way to make sure that your application can be</p>
+      <p begin="00:38:47.900" end="00:38:53.360">much more responsive doesn't have to read perform a lot of work that it was doing earlier or</p>
+      <p begin="00:38:53.360" end="00:38:56.780">the had already been done and also allows you to use much shorter</p>
+      <p begin="00:38:56.780" end="00:39:01.430">invisibility time-outs you don't have to make sure that it's the longest possible amount of time</p>
+      <p begin="00:39:01.430" end="00:39:07.050">thatprocess could take because you can kind of...that lease regularly</p>
+      <p begin="00:39:07.050" end="00:39:14.660">and allow another worker to get started more quickly and the event the era worker fails.</p>
+      <p begin="00:39:14.660" end="00:39:20.010">For copying blobs we support asynchronous server-side copy blob</p>
+      <p begin="00:39:20.010" end="00:39:24.520">this really helps your application scale if you're trying to copy a lot of data you can</p>
+      <p begin="00:39:24.520" end="00:39:29.160">actually just call copy blob on our service and then the storage service</p>
+      <p begin="00:39:29.160" end="00:39:33.220">will actually copy that data for you don't have</p>
+      <p begin="00:39:33.220" end="00:39:38.050">to be able to handle that from within your within your clients virtual machines</p>
+      <p begin="00:39:39.280" end="00:39:44.110">...really improve your scale save you a lot of bandwidth there's also a</p>
+      <p begin="00:39:44.110" end="00:39:45.770">...side of this one which is</p>
+      <p begin="00:39:45.770" end="00:39:50.630">there is no guarantee provided on the amount of copy time usually it's fast but,</p>
+      <p begin="00:39:50.630" end="00:39:53.730">it is a queuing mechanism so,</p>
+      <p begin="00:39:53.730" end="00:39:56.630">in some cases it may take some time so if you do have</p>
+      <p begin="00:39:56.630" end="00:39:58.930">...scenario where you need</p>
+      <p begin="00:39:58.930" end="00:40:03.280">to guaranteed amount of time to copy it's definitely</p>
+      <p begin="00:40:03.280" end="00:40:08.290">suggested that you would use of gm somewhere in that in the as</p>
+      <p begin="00:40:08.290" end="00:40:11.820">your region and perform the copy directly to make sure that you</p>
+      <p begin="00:40:11.820" end="00:40:16.530">get a very consistent time to completion.</p>
+      <p begin="00:40:16.530" end="00:40:20.420">Parallel block upload this is just a really simple fix that you can do when</p>
+      <p begin="00:40:20.420" end="00:40:24.440">you're uploading files we don't do it by default in the client</p>
+      <p begin="00:40:24.440" end="00:40:29.290">library because we don't know what device will be running on what else you have going on that device so</p>
+      <p begin="00:40:29.290" end="00:40:32.490">we try and be responsible about the amount of resources</p>
+      <p begin="00:40:32.490" end="00:40:37.490">will consume but if you set up just a couple lines here around the thread count the</p>
+      <p begin="00:40:37.490" end="00:40:41.980">default connection limit this allows one blob the upload much more quickly by</p>
+      <p begin="00:40:41.980" end="00:40:46.510">using multiple connections if your uploading many blobs upload blobs</p>
+      <p begin="00:40:46.510" end="00:40:51.860">in parallel this goes back to the partition limits we were talking about earlier in terms of if</p>
+      <p begin="00:40:51.860" end="00:40:57.030">...uploading many blobs that's sending different request to different partitions and,</p>
+      <p begin="00:40:57.030" end="00:40:58.830">allowing that scale-up scale out</p>
+      <p begin="00:40:58.830" end="00:41:04.590">affect as opposed to putting all of the traffic against a single partition.</p>
+      <p begin="00:41:04.590" end="00:41:10.020">So, better way to do this is to do to specific what we call point queries</p>
+      <p begin="00:41:10.020" end="00:41:12.840">to specific queries for a specific</p>
+      <p begin="00:41:12.840" end="00:41:16.200">...this one feels a little bit less</p>
+      <p begin="00:41:16.200" end="00:41:20.280">efficient because now I'm making to server calls but each of them now is a single</p>
+      <p begin="00:41:20.280" end="00:41:25.540">point query instead of a partition scanned so it's much more efficient just trying it out on my</p>
+      <p begin="00:41:25.540" end="00:41:30.530">deb box no specific optimized environment anything like that I didn't even</p>
+      <p begin="00:41:30.530" end="00:41:35.220">make them in parallel just trying this versus the previous slide consistently</p>
+      <p begin="00:41:35.220" end="00:41:42.390">perform five...faster five times better than the previous solution.</p>
+      <p begin="00:41:42.390" end="00:41:48.480">So, let's talk about inserting...so if I had a thousand entities to answer and,</p>
+      <p begin="00:41:48.480" end="00:41:52.440">you can see my simple entities here or it's just going to be...partition</p>
+      <p begin="00:41:52.440" end="00:41:58.660">key of standard and then just the number zero through</p>
+      <p begin="00:41:58.660" end="00:42:06.100">nine-ninety nine in the ...key this might be one way to insert a</p>
+      <p begin="00:42:06.100" end="00:42:13.970">thousand and it is just loop through loop through the numbers insert each one of them one-at-a-time.</p>
+      <p begin="00:42:13.970" end="00:42:15.360">So, on my machine this</p>
+      <p begin="00:42:15.360" end="00:42:21.950">...one hundred nine seconds to complete not bad but I wanted to do better.</p>
+      <p begin="00:42:21.950" end="00:42:27.430">So, first thing I do is I turn angle off so, nagel goals algorithm</p>
+      <p begin="00:42:27.430" end="00:42:32.850">is an algorithm that can help in certain networks circumstances does not</p>
+      <p begin="00:42:32.850" end="00:42:39.010">help with table storage...storage or any very small operations against the</p>
+      <p begin="00:42:39.010" end="00:42:43.470">storage service so we generally recommend turning it off so,</p>
+      <p begin="00:42:43.470" end="00:42:48.340">you can see using...service point manager...to turn it off for the table service and</p>
+      <p begin="00:42:48.340" end="00:42:51.650">point you could also turn it off globally either</p>
+      <p begin="00:42:51.650" end="00:42:57.050">way but this kind of narrows it down to just the table and point in case you need on</p>
+      <p begin="00:42:57.050" end="00:43:02.870">for something else and then we try exactly the same code as we had before now you can</p>
+      <p begin="00:43:02.870" end="00:43:07.260">see the graphs in terms of the time to complete a number of and,</p>
+      <p begin="00:43:07.260" end="00:43:13.880">the inserts we've now decreased one hundred nine seconds down the forty-two?</p>
+      <p begin="00:43:13.880" end="00:43:17.420">Now let's try making these in parallel so,</p>
+      <p begin="00:43:17.420" end="00:43:22.890">we've now continue to set nagel off but, now we're going to do parallel</p>
+      <p begin="00:43:22.890" end="00:43:28.610">and the inserts allowing for actually up to ten</p>
+      <p begin="00:43:28.610" end="00:43:31.980">...to be...the time just using a dot</p>
+      <p begin="00:43:31.980" end="00:43:37.860">net parallel for each nothing nothing fancy here so now</p>
+      <p begin="00:43:37.860" end="00:43:44.650">we've dropped from forty two seconds down to four seconds by putting this in parallel?</p>
+      <p begin="00:43:44.650" end="00:43:46.470">Table support batch transactions</p>
+      <p begin="00:43:46.470" end="00:43:51.940">that the one part of this that isn't necessarily applicable to blobs are...but,</p>
+      <p begin="00:43:51.940" end="00:43:55.440">for tables we can get even better and,</p>
+      <p begin="00:43:55.440" end="00:44:00.350">that we can say do batch operation so these couple lines of code</p>
+      <p begin="00:44:00.350" end="00:44:04.080">combine with the four loop now has</p>
+      <p begin="00:44:04.080" end="00:44:09.570">multiple batch transactions going on each of them contains a hundred insert</p>
+      <p begin="00:44:09.570" end="00:44:14.540">operations that can be executed in a single batch so this now gets down</p>
+      <p begin="00:44:14.540" end="00:44:18.830">to one-point-seven seconds by making only ten calls instead of a thousand</p>
+      <p begin="00:44:18.830" end="00:44:20.110">calls?</p>
+      <p begin="00:44:20.110" end="00:44:21.460">Then finally of course we can</p>
+      <p begin="00:44:21.460" end="00:44:26.270">make those batch transactions in parallel so, again,</p>
+      <p begin="00:44:26.270" end="00:44:31.180">...depart parallel for each we've created the batches only ten requests</p>
+      <p begin="00:44:31.180" end="00:44:35.900">and finally we've gotten down to about half a second from the original hundred</p>
+      <p begin="00:44:35.900" end="00:44:39.520">nine seconds so about ninety nine-point-five percent faster</p>
+      <p begin="00:44:39.520" end="00:44:45.150">again just a few lines of code here so these are definitely things that you should</p>
+      <p begin="00:44:45.150" end="00:44:50.060">go back to your applications and make sure that you're doing nagel parallelism</p>
+      <p begin="00:44:50.060" end="00:44:55.050">and using batch requests.</p>
+      <p begin="00:44:55.050" end="00:45:00.500">...security what we're going to cover in this in this section as</p>
+      <p begin="00:45:00.500" end="00:45:03.080">...off methods we support shared</p>
+      <p begin="00:45:03.080" end="00:45:10.190">key shared access signatures and public and then encryption methods as well?</p>
+      <p begin="00:45:10.190" end="00:45:12.410">So, in off methods.</p>
+      <p begin="00:45:12.410" end="00:45:16.990">We support to the have been around the for very long</p>
+      <p begin="00:45:16.990" end="00:45:19.980">time shared key which is each account has</p>
+      <p begin="00:45:19.980" end="00:45:25.360">to shared keys that give you access to everything in the account...admin keys you can do</p>
+      <p begin="00:45:25.360" end="00:45:30.160">deletes you can you can do rights you can do are create.</p>
+      <p begin="00:45:30.160" end="00:45:36.870">Read anything on any object and the account can be done with the shared t shared key is used to</p>
+      <p begin="00:45:36.870" end="00:45:41.010">sign requests you can read in our documentation how all of that work how</p>
+      <p begin="00:45:41.010" end="00:45:47.890">that works then we support public access so you can configure blog container to</p>
+      <p begin="00:45:47.890" end="00:45:52.860">be public read access and then this is great for web content all</p>
+      <p begin="00:45:52.860" end="00:46:00.740">reads will succeed rights delete all of that is still all shared key only.</p>
+      <p begin="00:46:00.740" end="00:46:05.510">So, for shared access signatures to talk a little bit about how they work today the one thing</p>
+      <p begin="00:46:05.510" end="00:46:08.180">that's worth remembering about shared access signatures is</p>
+      <p begin="00:46:08.180" end="00:46:12.940">...computed not stored so shared access signatures the account owner</p>
+      <p begin="00:46:12.940" end="00:46:17.840">creates a string that represents the request permissions saying how long</p>
+      <p begin="00:46:17.840" end="00:46:22.910">they're good for what permissions the user can get what objects that they can reference</p>
+      <p begin="00:46:22.910" end="00:46:27.790">...they sign that string with the air with their shared key send the signature and that</p>
+      <p begin="00:46:27.790" end="00:46:31.640">string to the user the user includes those with the request as part</p>
+      <p begin="00:46:31.640" end="00:46:35.720">of the url and, then the user tries to make the request when the server</p>
+      <p begin="00:46:35.720" end="00:46:39.980">receives that request it takes that permission string and tries to sign up with</p>
+      <p begin="00:46:39.980" end="00:46:45.510">the shared key again if that matches the signature that was provided the request</p>
+      <p begin="00:46:45.510" end="00:46:49.810">as loud if not the request we this lab.</p>
+      <p begin="00:46:49.810" end="00:46:53.420">Some notes on this as I said they're not stored</p>
+      <p begin="00:46:53.420" end="00:46:58.330">there computed this means you can have as many as you want there's no limit to the number</p>
+      <p begin="00:46:58.330" end="00:47:02.230">of sas tokens you can use the number of permissions that you can specify.</p>
+      <p begin="00:47:03.240" end="00:47:07.800">You can store what's called a stored access policy on a blog container</p>
+      <p begin="00:47:07.800" end="00:47:11.930">...can be reference by the assess tokens this makes...tokens revoke</p>
+      <p begin="00:47:11.930" end="00:47:16.850">...means that you can remove that stored access policy and all of the sas tokens that</p>
+      <p begin="00:47:16.850" end="00:47:22.190">referenced we'll fail.</p>
+      <p begin="00:47:22.190" end="00:47:27.910">If some sas improvements coming this summer so,...this is just to let, you</p>
+      <p begin="00:47:27.910" end="00:47:31.350">know, they're on their waysome improvements to it that</p>
+      <p begin="00:47:31.350" end="00:47:35.780">actually are in response to a lot of user feedback so, a lot of the</p>
+      <p begin="00:47:35.780" end="00:47:40.610">developers out there and giving us great feedback on shared access signatures so these are</p>
+      <p begin="00:47:40.610" end="00:47:46.190">a few improvements we have this summer to help address that the first of these is account</p>
+      <p begin="00:47:46.190" end="00:47:51.450">...so this is men long requested its the ability to create one</p>
+      <p begin="00:47:51.450" end="00:47:54.160">sas token that applies to an entire account the</p>
+      <p begin="00:47:54.160" end="00:47:59.100">most important capability this gives you can rate one read-only sas token for</p>
+      <p begin="00:47:59.100" end="00:48:03.670">entire account and really give somebody read-only access to your</p>
+      <p begin="00:48:03.670" end="00:48:08.180">...entire storage...you don't have to give out the shared keys</p>
+      <p begin="00:48:08.180" end="00:48:13.010">anymore in fact by the by giving read and write permissions or read write</p>
+      <p begin="00:48:13.010" end="00:48:18.340">and delete even your application in the cloud doesn't need to use the</p>
+      <p begin="00:48:18.340" end="00:48:22.480">shared key anymore with this you really can you share access</p>
+      <p begin="00:48:22.480" end="00:48:28.020">signatures for everything and we definitely recommend using them wherever possible.</p>
+      <p begin="00:48:28.020" end="00:48:31.740">The second one of the one of the pitfalls of</p>
+      <p begin="00:48:31.740" end="00:48:36.210">shared access signature is if it were to be used over http.</p>
+      <p begin="00:48:36.210" end="00:48:41.710">Because anybody who captures that signature can then use it from wherever they</p>
+      <p begin="00:48:41.710" end="00:48:46.560">are say we want to make sure that the user using the shared access signature uses</p>
+      <p begin="00:48:46.560" end="00:48:53.100">it over https so now we actually support putting additional option on the</p>
+      <p begin="00:48:53.100" end="00:48:55.830">sas string saying this</p>
+      <p begin="00:48:55.830" end="00:48:58.440">sas can only be used over https.</p>
+      <p begin="00:48:58.440" end="00:49:03.950">And, that will make sure that token will fail at any applications that we're trying to use it that</p>
+      <p begin="00:49:03.950" end="00:49:09.030">...can be fixed the last one again goes it kind of a similar</p>
+      <p begin="00:49:09.030" end="00:49:14.200">thread of what if somebody gets the sas token and wasn't supposed to this</p>
+      <p begin="00:49:14.200" end="00:49:19.700">is ip act called sas or ip limited sows this allows you to put</p>
+      <p begin="00:49:19.700" end="00:49:23.460">ip address and ip address range on the permission</p>
+      <p begin="00:49:23.460" end="00:49:26.570">string which makes the shared access signature only</p>
+      <p begin="00:49:26.570" end="00:49:30.970">usable from that particular ip address so even if somebody else were to get</p>
+      <p begin="00:49:30.970" end="00:49:39.000">that shared access signature they wouldn't be able to use it unless they were at that ip.</p>
+      <p begin="00:49:39.000" end="00:49:44.500">Also actually during build we're going-to be releasing</p>
+      <p begin="00:49:44.500" end="00:49:48.820">are client-side encryption preview so, a lot of people</p>
+      <p begin="00:49:48.820" end="00:49:53.530">of asking been asking how do I encrypt my data so this is our first step</p>
+      <p begin="00:49:53.530" end="00:49:58.470">at making it much easier to encrypt data stored in as your storage so what</p>
+      <p begin="00:49:58.470" end="00:50:04.280">we've really been aiming for is getting best practices written into our client libraries</p>
+      <p begin="00:50:04.280" end="00:50:08.750">make it really easy to kind of transparently encrypt your data</p>
+      <p begin="00:50:08.750" end="00:50:14.700">as your uploading at...you're reading it also get really good integration with</p>
+      <p begin="00:50:14.700" end="00:50:20.740">as your key vault to make sure that key managements as easy as possible and,</p>
+      <p begin="00:50:20.740" end="00:50:25.730">then also just for a client-side encryption one of the really important things about it</p>
+      <p begin="00:50:25.730" end="00:50:29.450">...it allows you to maintain control of your keys so you could use</p>
+      <p begin="00:50:29.450" end="00:50:34.000">key vault or you could use your own key management service so it's</p>
+      <p begin="00:50:34.000" end="00:50:39.440">really important to give you the option of where you want to the story</p>
+      <p begin="00:50:39.440" end="00:50:42.690">...how you want to manage them and we've tried to make sure that you have</p>
+      <p begin="00:50:42.690" end="00:50:46.860">those options so one of the advantages to that is</p>
+      <p begin="00:50:46.860" end="00:50:51.700">stored service actually never sees the keys that you use again if you choose to use your own</p>
+      <p begin="00:50:51.700" end="00:50:56.580">keys maybe on cram if you're doing a hybrid cloud scenario you can</p>
+      <p begin="00:50:56.580" end="00:51:01.330">encrypted data on your own premises upload it to the stored service the</p>
+      <p begin="00:51:01.330" end="00:51:05.450">...service never actually see the keys that were used and,</p>
+      <p begin="00:51:05.450" end="00:51:08.200">then additionally, you know, you get flexibility</p>
+      <p begin="00:51:08.200" end="00:51:12.820">...in algorithm so we've tried to use industry-standard best practices but,</p>
+      <p begin="00:51:12.820" end="00:51:18.720">if you have other needs for compliance or security then you can use</p>
+      <p begin="00:51:18.720" end="00:51:25.950">your own algorithm or different algorithm for the encryption so when</p>
+      <p begin="00:51:25.950" end="00:51:32.070">...coming as we said it's actually available now it's actually ready for</p>
+      <p begin="00:51:32.070" end="00:51:36.790">you to use or the next month or two we really want your feedback</p>
+      <p begin="00:51:36.790" end="00:51:41.850">what supported now we have full blob upload ranger</p>
+      <p begin="00:51:41.850" end="00:51:47.850">full bob download tables you can do property level encryption so you can</p>
+      <p begin="00:51:47.850" end="00:51:53.140">actually specify which properties on each entity that you want to use and,</p>
+      <p begin="00:51:53.140" end="00:51:56.770">then...each messages encrypted we're using what we</p>
+      <p begin="00:51:56.770" end="00:52:00.310">call a envelope encryption this is again</p>
+      <p begin="00:52:00.310" end="00:52:04.950">an industry best practice for performance we generate</p>
+      <p begin="00:52:04.950" end="00:52:10.020">a symmetric key encrypted data with that symmetric key and, also</p>
+      <p begin="00:52:10.020" end="00:52:15.550">and unique initialization vector for each object and then encrypted data</p>
+      <p begin="00:52:15.550" end="00:52:20.360">what that key then we'll encrypt your key with the asymmetric key</p>
+      <p begin="00:52:20.360" end="00:52:25.370">the you provided the...method that was specified of</p>
+      <p begin="00:52:25.370" end="00:52:29.310">by the developer the nice thing about this is the as</p>
+      <p begin="00:52:29.310" end="00:52:33.920">...storage client library never actually has access to your key we just</p>
+      <p begin="00:52:33.920" end="00:52:39.130">call out to a method that does the wrapping of the a of the symmetric</p>
+      <p begin="00:52:39.130" end="00:52:44.680">...then we store the encrypted symmetric key as metadata on the encrypted</p>
+      <p begin="00:52:44.680" end="00:52:49.890">object you don't have to have any additional data store for this.</p>
+      <p begin="00:52:49.890" end="00:52:53.850">So, just let's go and look at a code sample for how this</p>
+      <p begin="00:52:53.850" end="00:52:59.890">will work so the first thing you're going to do is you're going to create a crypto service provider</p>
+      <p begin="00:52:59.890" end="00:53:04.870">abs key wrapper this is just what's use to or</p>
+      <p begin="00:53:04.870" end="00:53:09.570">...the symmetric case you pass in</p>
+      <p begin="00:53:09.570" end="00:53:15.300">the key again this is all your code this doesn't use the storage client library yet.</p>
+      <p begin="00:53:15.300" end="00:53:19.530">The next pieces as part ofthe blob options we're going to need</p>
+      <p begin="00:53:19.530" end="00:53:23.220">ablob encryption policy this says we're going to encrypt the full</p>
+      <p begin="00:53:23.220" end="00:53:28.400">blob using that wrapper that you already specified.</p>
+      <p begin="00:53:28.400" end="00:53:31.440">And, then set out on the commonly used blog</p>
+      <p begin="00:53:31.440" end="00:53:36.660">request options this was where we set parallelism and things like that earlier so,</p>
+      <p begin="00:53:36.660" end="00:53:41.760">we just set the encryption policy now and then finally we just upload blob and,</p>
+      <p begin="00:53:41.760" end="00:53:47.070">this all happens transparently this upload from stream because it has that</p>
+      <p begin="00:53:47.070" end="00:53:51.830">options provided will result in encrypted</p>
+      <p begin="00:53:51.830" end="00:53:54.240">...being uploaded all the metadata,</p>
+      <p begin="00:53:54.240" end="00:53:58.970">metadata being stored correctly download this blob.</p>
+      <p begin="00:53:58.970" end="00:54:02.850">Knew exactly the same thing on the other and we use the same options</p>
+      <p begin="00:54:02.850" end="00:54:06.410">...that we did before but again all we have to do is download</p>
+      <p begin="00:54:06.410" end="00:54:09.370">stream using that options object and all...</p>
+      <p begin="00:54:09.370" end="00:54:14.210">crips and happens transparently so we hope this makes it much easier for you</p>
+      <p begin="00:54:14.210" end="00:54:19.000">to encrypted data we don't have to have many developers writing their own encryption</p>
+      <p begin="00:54:19.000" end="00:54:25.840">methods to secure their data also we plan on extending this to</p>
+      <p begin="00:54:25.840" end="00:54:28.360">our other languages for example,</p>
+      <p begin="00:54:28.360" end="00:54:32.430">java to make sure that users who are reading and</p>
+      <p begin="00:54:32.430" end="00:54:36.390">writing using multiple client libraries will actually be able to</p>
+      <p begin="00:54:36.390" end="00:54:40.810">read the data written with the other client library and not have to implement</p>
+      <p begin="00:54:40.810" end="00:54:46.310">the different encryption methods on their own how to get started with</p>
+      <p begin="00:54:46.310" end="00:54:49.780">it check out the as your storage blog we've gotten</p>
+      <p begin="00:54:49.780" end="00:54:54.420">into an introduction code samples instructions for how to get started</p>
+      <p begin="00:54:54.420" end="00:55:00.570">...important give us feedback we're in a preview that preview won't last forever so it's</p>
+      <p begin="00:55:00.570" end="00:55:06.210">this limited preview but it's wide open for you to give us feedback we really want to</p>
+      <p begin="00:55:06.210" end="00:55:11.130">make this as great as we can for all your scenarios so, that so,</p>
+      <p begin="00:55:11.130" end="00:55:17.850">you can really secure your data seriously so we have somerelated content as well for you to</p>
+      <p begin="00:55:17.850" end="00:55:22.960">go ahead and take a look at after the after this talk first is the</p>
+      <p begin="00:55:22.960" end="00:55:27.040">adders stored performance and scalability checklist this is on as your dot com</p>
+      <p begin="00:55:27.040" end="00:55:32.120">and goes through all the best practices we just talked about and more again,</p>
+      <p begin="00:55:32.120" end="00:55:37.240">very quick fixes things that you can make changes to your application today</p>
+      <p begin="00:55:37.240" end="00:55:42.190">make it perform much faster we also now have the table design guide that just came</p>
+      <p begin="00:55:42.190" end="00:55:47.000">out recently and has the table design patterns that we just talked about in terms of</p>
+      <p begin="00:55:47.000" end="00:55:48.830">...partitions</p>
+      <p begin="00:55:48.830" end="00:55:53.860">...query first design and many more that are that are great for you to include</p>
+      <p begin="00:55:53.860" end="00:55:59.460">in your applications and finally the as your swords blog definitely you know,</p>
+      <p begin="00:55:59.460" end="00:56:01.130">put that in your favorites make sure that</p>
+      <p begin="00:56:01.130" end="00:56:04.910">you're checking that regularly for any announcements tips and</p>
+      <p begin="00:56:04.910" end="00:56:12.400">tricks things like that you can be aware of great thanks very much for watching I do want to</p>
+      <p begin="00:56:12.400" end="00:56:15.760">...couple other resources definitely take a</p>
+      <p begin="00:56:15.760" end="00:56:21.110">look at the asher the rest of the as your talks on channel nine so,</p>
+      <p begin="00:56:21.110" end="00:56:26.210">you can get more of a picture of the as your platform also make sure if</p>
+      <p begin="00:56:26.210" end="00:56:30.010">you're at build the to ...jason hog stock he's going to be talking</p>
+      <p begin="00:56:30.010" end="00:56:34.300">about an overview of storage but also some new capabilities that were announcing</p>
+      <p begin="00:56:35.670" end="00:56:39.730">so, thank you very much for watching hopefully this...been very informative for you?</p>
+
+    </div>
+  </body>
+</tt>

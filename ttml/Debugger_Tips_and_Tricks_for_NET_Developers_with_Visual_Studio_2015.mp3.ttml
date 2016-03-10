@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.905</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.290" end="00:00:04.380">My name's andrew hall on the program manager for the visual security butter...on</p>
+      <p begin="00:00:04.380" end="00:00:09.380">the broader diagnostics team in visual studio we own debugging perf tools and tele</p>
+      <p begin="00:00:09.380" end="00:00:10.650">trace historical debugging and we</p>
+      <p begin="00:00:10.650" end="00:00:15.840">build the android emulator that you saw in the keynote this morning so a broad range of things that</p>
+      <p begin="00:00:15.840" end="00:00:19.830">we work on today we'll talk about debugging tips and tricks for dot</p>
+      <p begin="00:00:19.830" end="00:00:24.700">net developers envisage and fifteen we're going to hit on a...the new stuff that we've added in the</p>
+      <p begin="00:00:24.700" end="00:00:29.060">...and but a lot of it will be applicable across languages so everything</p>
+      <p begin="00:00:29.060" end="00:00:32.100">...show today is...dot net csharp it all works for</p>
+      <p begin="00:00:32.100" end="00:00:36.300">...as well but much of it would actually work for debugging cplus-plus</p>
+      <p begin="00:00:36.300" end="00:00:40.010">...debugging...ios or android using...or cplus-plus</p>
+      <p begin="00:00:40.010" end="00:00:45.040">...or something like that so little about myself after I graduated from college I went</p>
+      <p begin="00:00:45.040" end="00:00:47.390">wrote line-of-business apps for a couple years in</p>
+      <p begin="00:00:47.390" end="00:00:51.780">...dot net I went back to graduate school got my masters degree in computer</p>
+      <p begin="00:00:51.780" end="00:00:56.690">science and then had the opportunity to join the...team and microsoft I've been using the</p>
+      <p begin="00:00:56.690" end="00:01:00.090">...a vv dot net developer for years love the products as</p>
+      <p begin="00:01:00.090" end="00:01:04.900">an opportunity I couldn't turn down joined microsoft almost seven years ago</p>
+      <p begin="00:01:04.900" end="00:01:09.050">sudden working in this particular team for about seven years so why are we</p>
+      <p begin="00:01:09.050" end="00:01:11.280">all here todaysorry submit a</p>
+      <p begin="00:01:11.280" end="00:01:17.650">evaluation to for each one you tend to get entered to win a prize.</p>
+      <p begin="00:01:17.650" end="00:01:19.240">Where here?</p>
+      <p begin="00:01:19.240" end="00:01:23.230">I'm assuming every single-person in this room is here because you have to...your</p>
+      <p begin="00:01:23.230" end="00:01:27.980">day job and here's to quotes you can read really quickly but it turns out that we</p>
+      <p begin="00:01:27.980" end="00:01:32.530">spend a lot of time debugging problems one-word developer by trade.</p>
+      <p begin="00:01:32.530" end="00:01:37.510">you're not really any value when you're debugging problems right you actually get paid to</p>
+      <p begin="00:01:37.510" end="00:01:42.470">make things work you get paid right you features and functionality your application so any time</p>
+      <p begin="00:01:42.470" end="00:01:46.970">that you can save finding problems is actually time...being a better developer</p>
+      <p begin="00:01:46.970" end="00:01:51.290">so today I hope to show you some tips and tricks for how to get the most out of the debug</p>
+      <p begin="00:01:51.290" end="00:01:56.400">are define problems more quickly I don't think you're going to see anything that's going to</p>
+      <p begin="00:01:56.400" end="00:01:57.660">...your bug for-you we</p>
+      <p begin="00:01:57.660" end="00:02:02.320">...invented that button and we really haven't...the and the fix it for you button yet</p>
+      <p begin="00:02:02.320" end="00:02:05.930">but hopefully you'll come away with something that will help you understand.</p>
+      <p begin="00:02:07.670" end="00:02:12.050">Well, I've never seen that before, yeah, that would save me a lot of time so it's all about time saving tips and</p>
+      <p begin="00:02:12.050" end="00:02:17.460">tricks for the ability to find problems in your code faster.</p>
+      <p begin="00:02:17.460" end="00:02:22.260">So, the agenda I'm going to briefly show you for slides...things these are things</p>
+      <p begin="00:02:22.260" end="00:02:27.050">that I don't have time to talk about but there's a url at the bottom you can go grab the</p>
+      <p begin="00:02:27.050" end="00:02:30.650">slides afterwards you can go investigate them and all the contents going to be covered</p>
+      <p begin="00:02:30.650" end="00:02:35.300">and other talks so you have an opportunity either watch those or go watch them if they've already happened or</p>
+      <p begin="00:02:35.300" end="00:02:39.980">...tandem we're going to try to demo visual studio organize actually spend time in the</p>
+      <p begin="00:02:39.980" end="00:02:44.200">...with the product for about fifteen minutes and then at the end I put together</p>
+      <p begin="00:02:44.200" end="00:02:48.770">some slides of bonus multi-threaded tips if you do multi-threaded debugging these are</p>
+      <p begin="00:02:48.770" end="00:02:53.630">slides again with some call out for features you may or may not be aware of with urls where you can go</p>
+      <p begin="00:02:53.630" end="00:02:58.250">learn more about those...don't think we're going to have time to get to those today by some miracle we</p>
+      <p begin="00:02:58.250" end="00:03:05.890">do and we can take a look at those in the bagger as well as...sound like a good...everybody.</p>
+      <p begin="00:03:05.890" end="00:03:11.010">first thing I talked about new we've added a diagnostic tools window into the</p>
+      <p begin="00:03:11.010" end="00:03:15.340">...you've press f five with visual studio to start debugging the first-time if</p>
+      <p begin="00:03:15.340" end="00:03:18.980">...pick up the rc and download...you're going to see this pop-up off to the right</p>
+      <p begin="00:03:18.980" end="00:03:21.080">includes performance information</p>
+      <p begin="00:03:21.080" end="00:03:25.960">includes some historical information so we record when you break-in any bagger whether...a step</p>
+      <p begin="00:03:25.960" end="00:03:30.250">...break point in the enterprise skew we also pulling</p>
+      <p begin="00:03:30.250" end="00:03:33.370">the output window content and intelligence events if you're familiar</p>
+      <p begin="00:03:33.370" end="00:03:36.500">that feature this will be covered in both the performance</p>
+      <p begin="00:03:36.500" end="00:03:41.370">tools talk that I'm going to be giving tomorrow in conjunction with my colleague</p>
+      <p begin="00:03:41.370" end="00:03:45.920">envelope metropolis who's the program manager for intelligent race and he's giving a talk on</p>
+      <p begin="00:03:45.920" end="00:03:47.570">...on friday</p>
+      <p begin="00:03:47.570" end="00:03:51.760">...also be covering the intelligently specific functionality of this</p>
+      <p begin="00:03:51.760" end="00:03:55.970">so purpose anybody seen this yet and there's...two thousand fifteen.</p>
+      <p begin="00:03:57.000" end="00:04:01.870">Arms nobody so we brought timing information into the butter so as you step and run</p>
+      <p begin="00:04:01.870" end="00:04:06.830">between break points you can do order of magnitude measurements to figure out how longer code</p>
+      <p begin="00:04:06.830" end="00:04:09.780">...executes this is a really light way in the course of normal</p>
+      <p begin="00:04:09.780" end="00:04:13.610">development and debugging just get a ballpark idea for how long things take</p>
+      <p begin="00:04:13.610" end="00:04:18.930">to execute you don't want to use it for, you know, individual milliseconds but if you step over query to</p>
+      <p begin="00:04:18.930" end="00:04:24.000">a database and it takes six seconds it was pretty close to six seconds right so no more</p>
+      <p begin="00:04:24.000" end="00:04:32.800">...stop watches or trying-to time things that way in your.</p>
+      <p begin="00:04:32.800" end="00:04:37.210">And, that will be...the performance tools talk tomorrow evening a ui debugging tools,</p>
+      <p begin="00:04:37.210" end="00:04:38.340">for example,</p>
+      <p begin="00:04:38.340" end="00:04:42.730">these are tools that lets you do for wpf and the windows store apps</p>
+      <p begin="00:04:42.730" end="00:04:47.160">...inspect...visual tree and...properties while the applications running if</p>
+      <p begin="00:04:47.160" end="00:04:50.800">you're familiar with the browser tools you just say click on the element and I'll show you all</p>
+      <p begin="00:04:50.800" end="00:04:56.550">the properties we finally brought that into visual studio and then the last thing which you psychology keynote</p>
+      <p begin="00:04:56.550" end="00:05:01.540">this morning is visual studio has added support for android including csharp we</p>
+      <p begin="00:05:01.540" end="00:05:06.690">are partnership was...a check box in the visual studio two thousand fifteen rc that</p>
+      <p begin="00:05:06.690" end="00:05:11.360">ship today to say jan interested in doing...development...us android and mendoza</p>
+      <p begin="00:05:11.360" end="00:05:16.690">check that click installer go...down those bits install those for you so that's a very</p>
+      <p begin="00:05:16.690" end="00:05:23.340">quirk whirlwind tour of some stuff that's available to you that we're not going to talk about today.</p>
+      <p begin="00:05:23.340" end="00:05:27.070">All right so let's go ahead and jump over...start looking at visual studio as promised and</p>
+      <p begin="00:05:27.070" end="00:05:31.600">...as much time in the product as we possibly can so I have a wpf</p>
+      <p begin="00:05:31.600" end="00:05:36.550">application that I've written can people in the backseat...a big enough...nods</p>
+      <p begin="00:05:36.550" end="00:05:40.950">...and the idea was when it popped up I wanted to say hello</p>
+      <p begin="00:05:40.950" end="00:05:45.940">build because I'm node this is...be everybody's favorite talking build and I'm going to get asked to give</p>
+      <p begin="00:05:45.940" end="00:05:49.120">...again so I want to make sure that I can just via parameter</p>
+      <p begin="00:05:49.120" end="00:05:52.900">passing the application are the name of the menu...don't have to go</p>
+      <p begin="00:05:52.900" end="00:05:58.370">...change...have a command line parameter it says hello whoever I'm talking to but,</p>
+      <p begin="00:05:58.370" end="00:06:00.930">clearly it's telling me that I didn't actually provide the argument</p>
+      <p begin="00:06:00.930" end="00:06:05.510">correctly so what I want to do is I want to configure my project properties</p>
+      <p begin="00:06:05.510" end="00:06:10.480">to passes sand gino that you can configure your project properties in visual studio to set command line parameters</p>
+      <p begin="00:06:10.480" end="00:06:15.910">your applications so I'm going to write click I'm going to say properties and it's going to take</p>
+      <p begin="00:06:15.910" end="00:06:21.230">...project properties page there's quite a few options in here for the...</p>
+      <p begin="00:06:21.230" end="00:06:25.890">I can choose various start options so by default it's going to launch my project but if you have a</p>
+      <p begin="00:06:25.890" end="00:06:30.710">dl or something you can choose to...external program so if you're developing excel plug-in when you</p>
+      <p begin="00:06:30.710" end="00:06:35.520">...project by default it creates a dl and it has start external program and it</p>
+      <p begin="00:06:35.520" end="00:06:41.390">has excel listed here you can obviously start...the url as it says there we</p>
+      <p begin="00:06:41.390" end="00:06:45.850">have command line arguments you can configure working directory for application you can</p>
+      <p begin="00:06:45.850" end="00:06:50.780">set up remote debugging if you want remote of five to work and then you have some debugging options</p>
+      <p begin="00:06:50.780" end="00:06:55.530">here where you can enable native code debugging if you have some cplus-plus libraries that...as well</p>
+      <p begin="00:06:55.530" end="00:07:00.200">...check boxing every debugging your cplus-plus and dot net code...the same time you can even enable</p>
+      <p begin="00:07:00.200" end="00:07:05.250">sequel server debugging if you're doing communicating with see a server that way and</p>
+      <p begin="00:07:05.250" end="00:07:11.290">final option is enable the visual studio hosting process anybody here hosting processes.</p>
+      <p begin="00:07:11.290" end="00:07:15.400">Now okay so hosting process is an optimization the project system</p>
+      <p begin="00:07:15.400" end="00:07:20.390">does where for many dot application types it actually has your application already running</p>
+      <p begin="00:07:20.390" end="00:07:24.700">...loaded all of the framework assemblies that you've reference so you</p>
+      <p begin="00:07:24.700" end="00:07:27.870">press a five we start-up a lot faster every now and</p>
+      <p begin="00:07:27.870" end="00:07:31.910">then so this is going to be a little bit small my apologies</p>
+      <p begin="00:07:31.910" end="00:07:36.160">but you can actually see that there's a photo project archived that</p>
+      <p begin="00:07:36.160" end="00:07:39.620">...host here so my project is actually already running</p>
+      <p begin="00:07:39.620" end="00:07:44.620">if you go to your build output directory you'll see the name of your executable in this case product</p>
+      <p begin="00:07:44.620" end="00:07:49.060">archived that...dot eggs the and project...that if you have to the as host of</p>
+      <p begin="00:07:49.060" end="00:07:51.980">agnes this makes things...faster for you when</p>
+      <p begin="00:07:51.980" end="00:07:58.160">you're debugging enable some interesting scenarios using things like the immediate windows</p>
+      <p begin="00:07:58.160" end="00:08:03.010">...talk about...a little bit so...so I needed at a conference</p>
+      <p begin="00:08:03.010" end="00:08:09.500">flag here so this is build so now I'm expecting that when I</p>
+      <p begin="00:08:09.500" end="00:08:14.760">...this it should say hello bill.</p>
+      <p begin="00:08:14.760" end="00:08:17.630">Unfortunately the teleconference so I made a</p>
+      <p begin="00:08:17.630" end="00:08:22.580">bug somewhere in my applications not doing what I expect you to go in and figure out</p>
+      <p begin="00:08:22.580" end="00:08:27.360">where that particular piece of logic it's unfortunately</p>
+      <p begin="00:08:27.360" end="00:08:31.890">...in the course of coding quickly built up a couple of classes...my projects and set</p>
+      <p begin="00:08:31.890" end="00:08:35.960">a scrolling around and trying to find the right places...the break point my</p>
+      <p begin="00:08:35.960" end="00:08:41.140">project constructor I'm going to start debugging by stepping into my project so step into</p>
+      <p begin="00:08:41.140" end="00:08:44.910">...step overall have the same effect here f ten or eleven for people that are used using</p>
+      <p begin="00:08:44.910" end="00:08:48.510">the keyboard shortcuts so much you step into this</p>
+      <p begin="00:08:48.510" end="00:08:53.110">...bugging and...into the constructor my application so it</p>
+      <p begin="00:08:53.110" end="00:08:56.170">...automatically steps you into the...whatever applications that</p>
+      <p begin="00:08:56.170" end="00:09:00.810">you're next tip that you can start debugging with stepping which can be really,</p>
+      <p begin="00:09:00.810" end="00:09:05.620">really nice if you don't hunt find the break point for the particular entry point your application</p>
+      <p begin="00:09:05.620" end="00:09:10.610">somebody down here and it looks like on this particular line that building</p>
+      <p begin="00:09:10.610" end="00:09:15.060">my greeting string and it's doing a string concatenation it's doing to get</p>
+      <p begin="00:09:15.060" end="00:09:19.270">greeting get conference and get punctuationmethod call now because of</p>
+      <p begin="00:09:19.270" end="00:09:23.430">...method calls I can't just hover over them and get a nice dataset telling me what</p>
+      <p begin="00:09:23.430" end="00:09:28.210">the value is I could debugging each and every one of them or I could go manually type them into</p>
+      <p begin="00:09:28.210" end="00:09:31.440">the watch window but as a visual studio two thousand thirteen</p>
+      <p begin="00:09:31.440" end="00:09:35.490">...visual studio twenty fifteen when I step over that line of code</p>
+      <p begin="00:09:35.490" end="00:09:40.920">the autos window and noun visual...the locals windows well shows me what are called</p>
+      <p begin="00:09:40.920" end="00:09:46.070">return values so I can see all of the methods that I just stepped over the values</p>
+      <p begin="00:09:46.070" end="00:09:49.870">that those returns that's a really useful way to debug code.</p>
+      <p begin="00:09:51.020" end="00:09:55.730">Thank you.</p>
+      <p begin="00:09:55.730" end="00:09:59.770">...really useful feature when you're trying to understand obviously the applause...you see the</p>
+      <p begin="00:09:59.770" end="00:10:04.770">value so the other thing to note is if you're a watch window aficionado they're not going</p>
+      <p begin="00:10:04.770" end="00:10:09.560">to show up there but if you prefer to work in the...window we have something in the...called pseudo variables they</p>
+      <p begin="00:10:09.560" end="00:10:14.550">...dollar sign these are all documented but you can choose return value and...show you</p>
+      <p begin="00:10:14.550" end="00:10:19.810">the return value and it's a return value n so if I want the next return value can</p>
+      <p begin="00:10:19.810" end="00:10:23.330">...return value one and then two three four five</p>
+      <p begin="00:10:23.330" end="00:10:26.170">of thread many return values as their worth their four-month</p>
+      <p begin="00:10:26.170" end="00:10:31.120">...stop evaluates you can always just keep...dicey to variable if you prefer to spend your time and watch</p>
+      <p begin="00:10:31.120" end="00:10:35.450">window and that automatically evaluate for-you as well.</p>
+      <p begin="00:10:35.450" end="00:10:38.880">So, based on my return values here I was able to see that the</p>
+      <p begin="00:10:38.880" end="00:10:42.160">problem is that the get conference functionality</p>
+      <p begin="00:10:42.160" end="00:10:46.660">...the wrong things I want to debug down into that now anybody know</p>
+      <p begin="00:10:46.660" end="00:10:51.570">...statement...next statements a really useful piece of functionality burger that</p>
+      <p begin="00:10:51.570" end="00:10:56.510">let me move my execution context around so I don't have to restart application I've already</p>
+      <p begin="00:10:56.510" end="00:10:59.580">past this point so instead of having to stop</p>
+      <p begin="00:10:59.580" end="00:11:02.800">debugging restart I can simply write click in</p>
+      <p begin="00:11:02.800" end="00:11:08.170">choose set next statement which is down here control shift...the keyboard...</p>
+      <p begin="00:11:08.170" end="00:11:13.090">or I can just drag it in the gutter over here and now execution</p>
+      <p begin="00:11:13.090" end="00:11:18.010">will do that the only thing to note is that this does not change the state of your application it's not</p>
+      <p begin="00:11:18.010" end="00:11:22.320">...truly simply moves the execution stream you'll notice</p>
+      <p begin="00:11:22.320" end="00:11:27.310">that greeting here if I have rover it has a value it's not know because it was assigned last on</p>
+      <p begin="00:11:27.310" end="00:11:30.380">...sine of this line I'm simply going to re-execute the</p>
+      <p begin="00:11:30.380" end="00:11:34.350">...so if you have certain things that can only execute one-time where they have side effects</p>
+      <p begin="00:11:34.350" end="00:11:40.810">...next statement will not undo not avoiding a side effects.</p>
+      <p begin="00:11:40.810" end="00:11:45.780">now I'm here I want to debug into the get conference function I could</p>
+      <p begin="00:11:45.780" end="00:11:49.480">...go navigate down to the definition celebrate point</p>
+      <p begin="00:11:49.480" end="00:11:53.840">f five and down to it that way or I could step into the get...function</p>
+      <p begin="00:11:53.840" end="00:11:58.810">first then come out then step back and the conference but I have another handy feature using any</p>
+      <p begin="00:11:58.810" end="00:12:03.520">...I'm right clicking I'm going to go to this thing that's a step in a specific and this is</p>
+      <p begin="00:12:03.520" end="00:12:09.370">...a one a list of all the method calls on that line so this only works for dot</p>
+      <p begin="00:12:09.370" end="00:12:13.900">net talk but we have list of all not all method calls so I can choose to get conference</p>
+      <p begin="00:12:13.900" end="00:12:14.890">...going to do is</p>
+      <p begin="00:12:14.890" end="00:12:19.640">set a one-time break point on the entry point to that method and it's going to run</p>
+      <p begin="00:12:19.640" end="00:12:24.570">execution to that point stop...me and I...conference it executes to that point</p>
+      <p begin="00:12:24.570" end="00:12:29.630">...out into a specific methods so this is you can see the utility of that</p>
+      <p begin="00:12:29.630" end="00:12:33.950">...you're dealing with align has one method calls on it so now I want to get</p>
+      <p begin="00:12:33.950" end="00:12:38.670">down here I can see that I'm doing a comparison looking for where the parameter equals</p>
+      <p begin="00:12:38.670" end="00:12:43.880">conference so instead of setting break point running down there and deleting it I'm going to use another</p>
+      <p begin="00:12:43.880" end="00:12:48.630">feature to control my execution that's called run to cursor and there's a really useful</p>
+      <p begin="00:12:48.630" end="00:12:52.940">feature raises all the times my favorite features in the butter which learn how to use it and control</p>
+      <p begin="00:12:52.940" end="00:12:58.230">...ten is the keywords...times I just clicking control left-hand rather than...click but when you run</p>
+      <p begin="00:12:58.230" end="00:13:03.350">...cursor it runs execution that point says one-time break point right didn't have</p>
+      <p begin="00:13:03.350" end="00:13:08.100">to celebrate point and then delete the break point and it looks like what I've done here</p>
+      <p begin="00:13:08.100" end="00:13:13.040">is the parameter is conference and there's a space and you get conference name and I really</p>
+      <p begin="00:13:13.040" end="00:13:17.020">want args of x plus one...fixes and I want to</p>
+      <p begin="00:13:17.020" end="00:13:21.860">...and a nice robust way and...use a feature that we call editing continuing the</p>
+      <p begin="00:13:21.860" end="00:13:26.550">bagger which is the ability to edit code while I'm stop...butter</p>
+      <p begin="00:13:26.550" end="00:13:31.370">...five have a continue running mit changes are going to be applied so let's go ahead</p>
+      <p begin="00:13:31.370" end="00:13:35.800">and fix this going to go x plus one and now I'm going to hit</p>
+      <p begin="00:13:35.800" end="00:13:39.550">...debugging step over.</p>
+      <p begin="00:13:39.550" end="00:13:43.470">All right conference here is bill it's exactly what I wanted to be so I</p>
+      <p begin="00:13:43.470" end="00:13:47.440">fix my bug and now what I want to do is I...get back out</p>
+      <p begin="00:13:47.440" end="00:13:52.280">of this particular function and I can do that by using</p>
+      <p begin="00:13:52.280" end="00:13:56.460">the step out features anybody here if you step out and debugging about half the</p>
+      <p begin="00:13:56.460" end="00:13:58.600">...hand if you're not aware that the</p>
+      <p begin="00:13:58.600" end="00:14:03.480">...has a step out feature that's going to bring me back up to.</p>
+      <p begin="00:14:03.480" end="00:14:08.860">Exactly the last instruction that method finished executing so now if I</p>
+      <p begin="00:14:08.860" end="00:14:10.730">two-step in again I'm not going to go past that</p>
+      <p begin="00:14:10.730" end="00:14:14.730">line code because I literally came back out to the point that I entered if I</p>
+      <p begin="00:14:14.730" end="00:14:18.860">...here...actually going to get punctuation function and element</p>
+      <p begin="00:14:18.860" end="00:14:22.980">...eleven I'm going-to be down further down everybody here uses the</p>
+      <p begin="00:14:22.980" end="00:14:27.380">setup feature did, you know, that you can use the run to cursor on-call stacked in deep cost</p>
+      <p begin="00:14:27.380" end="00:14:30.330">...to achieve the same functionality so I'm notice</p>
+      <p begin="00:14:30.330" end="00:14:35.160">...methods down here I'm going to write click on my main window I'm going to choose</p>
+      <p begin="00:14:35.160" end="00:14:39.560">run the cursor and it's going to run back up the call stack to the point that</p>
+      <p begin="00:14:39.560" end="00:14:42.440">entered that so notice I was down to methods step out what</p>
+      <p begin="00:14:42.440" end="00:14:45.630">brought me up one but run to cursor in the context of the call</p>
+      <p begin="00:14:45.630" end="00:14:49.990">stack window will actually bring me all the way back up to wherever I chose to write</p>
+      <p begin="00:14:49.990" end="00:14:59.270">clips that can be a good way if you're in a deep call stacked unwind that quickly.</p>
+      <p begin="00:14:59.270" end="00:15:00.850">All right.</p>
+      <p begin="00:15:00.850" end="00:15:05.660">briefly here's a here's...quicker...things that we talked about that work for people that's kind</p>
+      <p begin="00:15:05.660" end="00:15:13.730">...the thing that we're going to do for about the next forty minutes so hopefully that's useful to you.</p>
+      <p begin="00:15:13.730" end="00:15:19.720">All right so let's go back to the product.</p>
+      <p begin="00:15:19.720" end="00:15:25.050">Right so now we have this particular application up and running...go ahead and restarted to make sure</p>
+      <p begin="00:15:25.050" end="00:15:30.610">...nice fresh start I'm what is jpf applications ultimately going to do</p>
+      <p begin="00:15:30.610" end="00:15:32.500">...connector web server and it's going to</p>
+      <p begin="00:15:32.500" end="00:15:36.300">...some information this is an application that I've been developments colleagues</p>
+      <p begin="00:15:36.300" end="00:15:41.360">...trying to get an inventory of all the sample code that we have from we do events like this the first thing...do...just want</p>
+      <p begin="00:15:41.360" end="00:15:45.630">to test the loading of my data so I have a button here that's going to say</p>
+      <p begin="00:15:45.630" end="00:15:49.830">load data and it's going to go down and it's going to break and it's going to break</p>
+      <p begin="00:15:49.830" end="00:15:55.640">...if you look at the code it said...buttered... you can imbed break points in</p>
+      <p begin="00:15:55.640" end="00:16:00.580">your code using debugged outbreak you don't have to just set them from the</p>
+      <p begin="00:16:00.580" end="00:16:05.900">ide so you can actually hard to break points in there now the interesting thing about hardcopy break point in</p>
+      <p begin="00:16:05.900" end="00:16:12.300">...know what happens is I have a debugged up break-in there are run without any butter.</p>
+      <p begin="00:16:12.300" end="00:16:16.340">It crashes the application so break point is actually a special type</p>
+      <p begin="00:16:16.340" end="00:16:21.290">of exception that's understood to be a break point so without any...attached you</p>
+      <p begin="00:16:21.290" end="00:16:25.540">...exception its on handled the application crashes so I've also wrapped</p>
+      <p begin="00:16:25.540" end="00:16:30.750">inside of this property called...dot is attached so this is something</p>
+      <p begin="00:16:30.750" end="00:16:34.350">...you can do your application where you can actually code</p>
+      <p begin="00:16:34.350" end="00:16:39.210">for debugging where you can say hey if on debugging I want this to happen so in this case from</p>
+      <p begin="00:16:39.210" end="00:16:43.850">debugging I want to break but I don't have a debug attached</p>
+      <p begin="00:16:43.850" end="00:16:48.560">don't execute this steward...breaker don't behave in some other method and actually a lot of the windows store</p>
+      <p begin="00:16:48.560" end="00:16:51.870">up templates have this logic in their in certain places will turn</p>
+      <p begin="00:16:51.870" end="00:16:55.550">on extra diagnostics tracing if you have any if is</p>
+      <p begin="00:16:55.550" end="00:16:59.480">debugged attached turn on some pra additional tracing or if</p>
+      <p begin="00:16:59.480" end="00:17:03.860">debugged attach debugged outbreak in certain failure paths where exception</p>
+      <p begin="00:17:03.860" end="00:17:07.840">...it thrown handled and re from somewhere else...catch</p>
+      <p begin="00:17:07.840" end="00:17:11.650">...they'll actually do this to use your application doesn't just disappear, you know,</p>
+      <p begin="00:17:11.650" end="00:17:14.310">what's going on so that's other</p>
+      <p begin="00:17:14.310" end="00:17:19.210">...for you so I have my data provider up here my data provider looks</p>
+      <p begin="00:17:19.210" end="00:17:24.040">like it's been correctly and initialized well hopefully let's dig in and look at it didn't</p>
+      <p begin="00:17:24.040" end="00:17:28.400">air out and I can see there's quite a bit of data in here so,</p>
+      <p begin="00:17:28.400" end="00:17:32.840">I have some properties...looking at the...property and it looks like</p>
+      <p begin="00:17:32.840" end="00:17:37.250">there's stuff in there but...get a better view of it then I can see here...the data tipper down</p>
+      <p begin="00:17:37.250" end="00:17:41.680">to watch window you'll see this little magnifying glass over here to the right and</p>
+      <p begin="00:17:41.680" end="00:17:44.110">the magnifying glass indicates that we have a visualize</p>
+      <p begin="00:17:44.110" end="00:17:48.670">...cyclic magnifying class it's going to open a different view on top of that data</p>
+      <p begin="00:17:48.670" end="00:17:52.540">as little down arrow so we have four built-in text visualize</p>
+      <p begin="00:17:52.540" end="00:17:56.620">...the product as a visual studio two thousand thirteen update here we have</p>
+      <p begin="00:17:56.620" end="00:18:01.090">a normal text visualize are the just visualize any string you can choose</p>
+      <p begin="00:18:01.090" end="00:18:05.040">rapping or not...it's up to you comment although in this case is</p>
+      <p begin="00:18:05.040" end="00:18:09.840">...data so the string text analyzers going to do me a lot of good so I'm going to</p>
+      <p begin="00:18:09.840" end="00:18:12.230">go ahead and select the json visualize</p>
+      <p begin="00:18:12.230" end="00:18:17.020">are and this is going to pop up and it's going to let me explore my json a nicely formatted</p>
+      <p begin="00:18:17.020" end="00:18:21.730">manner...support search so I can see I have an...type of web so if I want to</p>
+      <p begin="00:18:21.730" end="00:18:27.540">search for all places that I have web you can see that happens and that's going to happen very quickly.</p>
+      <p begin="00:18:27.540" end="00:18:31.930">And, the next time I come back here it's going to remember...room</p>
+      <p begin="00:18:31.930" end="00:18:36.580">...the wrong thing it can actually remember that I had selected the json visualize are so you don't have to</p>
+      <p begin="00:18:36.580" end="00:18:38.570">select the visual a different visualize</p>
+      <p begin="00:18:38.570" end="00:18:43.360">are every time once you selected we're going to remember what you selected for that variable for the lifetime</p>
+      <p begin="00:18:43.360" end="00:18:47.170">that visual studio instance so that was the json visualize</p>
+      <p begin="00:18:47.170" end="00:18:52.060">...so now let's go down...xml data so we have an xml visualize are</p>
+      <p begin="00:18:52.060" end="00:18:55.300">giving sy formatting on the xml.</p>
+      <p begin="00:18:55.300" end="00:18:59.080">We have...html visualize as well so it's going to</p>
+      <p begin="00:18:59.080" end="00:19:03.950">format html for me which makes that a lot more readable and then up here</p>
+      <p begin="00:19:03.950" end="00:19:07.570">it says application dataset so this is a dataset I can</p>
+      <p begin="00:19:07.570" end="00:19:11.930">see system that data dataset the only one visualize available for this the dataset visualize</p>
+      <p begin="00:19:11.930" end="00:19:16.940">...when I open that that's available to me as well so that lets me</p>
+      <p begin="00:19:16.940" end="00:19:23.130">explore all the data in my dataset very useful and dealing with databases and then the last visualized</p>
+      <p begin="00:19:23.130" end="00:19:26.320">...big into the product that I wanted to talk about is the</p>
+      <p begin="00:19:26.320" end="00:19:31.220">...fertilizers if I go down to my autos window I can see that this is here this is</p>
+      <p begin="00:19:31.220" end="00:19:36.610">my wpf name window so we have a...tree visualize are built individual studio for that</p>
+      <p begin="00:19:36.610" end="00:19:40.910">when I open it up I can explore the visual tree down...the bottom left I can see</p>
+      <p begin="00:19:40.910" end="00:19:45.540">a rendering of whatever element I have selected and then over on the right I can</p>
+      <p begin="00:19:45.540" end="00:19:50.410">explore the properties for any of those given elements so those are the six</p>
+      <p begin="00:19:50.410" end="00:19:53.530">...that we bacon by default that are owned by the corgi</p>
+      <p begin="00:19:53.530" end="00:19:58.200">butter team in visual studio you can write your own it's really not that hard</p>
+      <p begin="00:19:58.200" end="00:20:02.840">msdn talks about has documentation how-to-do-it so if you're interested you deal with</p>
+      <p begin="00:20:02.840" end="00:20:07.220">the certain complex data structure frequently it'll take an hour to write a visualize are</p>
+      <p begin="00:20:07.220" end="00:20:10.980">for it maybe well worth your time in terms of debugging think about trying debugged</p>
+      <p begin="00:20:10.980" end="00:20:19.070">dataset using just drilling through data tips versus having a nice visualize are for...</p>
+      <p begin="00:20:19.070" end="00:20:20.300">All right so now I'm</p>
+      <p begin="00:20:20.300" end="00:20:24.930">...explores looks like my data has gotten initialize somewhat correctly but I</p>
+      <p begin="00:20:24.930" end="00:20:29.060">want to look at these apps the list that are coming back that's really important information that's what I'm going to</p>
+      <p begin="00:20:29.060" end="00:20:33.540">be dealing with and my first thing is I've certainly this array as I have this</p>
+      <p begin="00:20:33.540" end="00:20:37.080">thought I really wish that I had some more useful</p>
+      <p begin="00:20:37.080" end="00:20:41.880">...this particular the burgers view of this so I'm going to go in and I'm going to tell the bow</p>
+      <p begin="00:20:41.880" end="00:20:46.800">...the app how to present itself to the butter the classed definition</p>
+      <p begin="00:20:46.800" end="00:20:51.850">instead...navigating I'm going to write click and I'm going to choose peat definition most</p>
+      <p begin="00:20:51.850" end="00:20:56.480">...familiar with...twelve...definition we also have functionality in visual studio called</p>
+      <p begin="00:20:56.480" end="00:21:01.180">...definition that's going to just open this little window in the middle...editor and salami to</p>
+      <p begin="00:21:01.180" end="00:21:06.020">...file without having to have the big context which to jump...particular case I want</p>
+      <p begin="00:21:06.020" end="00:21:10.680">to add a debug are display and I don't have the right</p>
+      <p begin="00:21:10.680" end="00:21:15.550">things of tip most people hopefully know this but if not control dot is going to give median teller</p>
+      <p begin="00:21:15.550" end="00:21:17.830">sense for that so...I hit enter it's</p>
+      <p begin="00:21:17.830" end="00:21:23.010">...go ahead and add the correct using for me and then now when I come in I'm going to specify the</p>
+      <p begin="00:21:23.010" end="00:21:27.260">...display attribute it takes a string as a parameter I can type plain old</p>
+      <p begin="00:21:27.260" end="00:21:32.120">...so in all type app and I'll...just...app to me...I put</p>
+      <p begin="00:21:32.120" end="00:21:36.820">...curly braces is going to evaluate the property on top</p>
+      <p begin="00:21:36.820" end="00:21:41.430">from the particular applications somebody say app type in this case or let's say</p>
+      <p begin="00:21:41.430" end="00:21:47.100">at name and see I have this intelligence dialogue covering stuff up very helpful</p>
+      <p begin="00:21:47.100" end="00:21:53.210">...becomes transparent.</p>
+      <p begin="00:21:53.210" end="00:21:58.020">So, anytime you...have a pop-up in the id if you don't want to go away but you also</p>
+      <p begin="00:21:58.020" end="00:22:00.080">...remember what's under control transparent.</p>
+      <p begin="00:22:01.150" end="00:22:04.370">Let us control and it comes back up right so now I've</p>
+      <p begin="00:22:04.370" end="00:22:09.200">...app name you'll see these little red squiggles that's telling me that I can't actually apply this via</p>
+      <p begin="00:22:09.200" end="00:22:13.630">...continue display attribute has to be rebuilt so that's okay I'm the</p>
+      <p begin="00:22:13.630" end="00:22:17.690">click the restart debugging button you don't have to manually stop-and-go</p>
+      <p begin="00:22:17.690" end="00:22:23.150">click restart we actually have a nice restart debugging button for you I'm going to come back I'm going to</p>
+      <p begin="00:22:23.150" end="00:22:26.550">have over apps and now...expanded by adding</p>
+      <p begin="00:22:26.550" end="00:22:31.250">...display attribute it's telling the...how it should present that data to me so</p>
+      <p begin="00:22:31.250" end="00:22:36.100">seen app abs zero app one at two-out-of-three out for et cetera et cetera so I can put anything I want</p>
+      <p begin="00:22:36.100" end="00:22:39.200">to over display...there's also other debug</p>
+      <p begin="00:22:39.200" end="00:22:42.630">...star attributes that you can go look up on msdn</p>
+      <p begin="00:22:42.630" end="00:22:46.560">...cover them but you actually even go right additional classes that choose how to</p>
+      <p begin="00:22:46.560" end="00:22:53.400">format the class that you're looking at so...that exist for some of the framework types?</p>
+      <p begin="00:22:53.400" end="00:22:55.070">So, now that we're insider</p>
+      <p begin="00:22:55.070" end="00:22:59.830">are data tip I mention this early with the intelligence but works for data tips as well</p>
+      <p begin="00:22:59.830" end="00:23:04.810">as main investment in drilling down and I press control it goes transparent</p>
+      <p begin="00:23:04.810" end="00:23:09.170">marginalize kind of fun doesn't really making more product productive but if you're</p>
+      <p begin="00:23:09.170" end="00:23:12.490">ever city your computer and kind of tired and you just want to play.</p>
+      <p begin="00:23:12.490" end="00:23:17.690">It'll make you happy and then notice that I had this whole...icon over here</p>
+      <p begin="00:23:17.690" end="00:23:22.120">...anybody ever pinned data chipped in visual studio about half the less</p>
+      <p begin="00:23:22.120" end="00:23:26.610">than half the room so you click the...icahn it's going to stick</p>
+      <p begin="00:23:26.610" end="00:23:31.090">...the editor for me so now it's here I can do whatever I want with it someone</p>
+      <p begin="00:23:31.090" end="00:23:36.070">...head down here I'm a set of break point and I'm going to run to this particular break point and I'm going to look at the</p>
+      <p begin="00:23:36.070" end="00:23:40.710">app this is particularly useful the ability to pin these things when you're dealing</p>
+      <p begin="00:23:40.710" end="00:23:45.490">iterative situations I find myself using them and loops a lot so now here is a hit si</p>
+      <p begin="00:23:45.490" end="00:23:47.990">...remembering great point I can just watch the value</p>
+      <p begin="00:23:47.990" end="00:23:52.460">update I can manually add expressions...if I wanted additional stuff</p>
+      <p begin="00:23:52.460" end="00:23:55.490">...expression and I can do app data.</p>
+      <p begin="00:23:58.580" end="00:23:59.080">Display.</p>
+      <p begin="00:24:00.520" end="00:24:04.690">Languages and that'll evaluate for me so I can build-up my own</p>
+      <p begin="00:24:04.690" end="00:24:09.430">little watch inside the editor if I want I can even make comments if I'm trying to</p>
+      <p begin="00:24:09.430" end="00:24:14.270">debugged really hard problem and I'm trying to remember what the previous values where I can say,</p>
+      <p begin="00:24:14.270" end="00:24:19.330">you know, so, this case app...tight equals csharp if that's helpful to</p>
+      <p begin="00:24:19.330" end="00:24:26.010">me and now I hit go out here and I'm going to run to the next break point and now it's going to</p>
+      <p begin="00:24:26.010" end="00:24:29.170">Type equals...can take from looks like that and collapse</p>
+      <p begin="00:24:29.170" end="00:24:33.110">am you can expand them they come back you can even float</p>
+      <p begin="00:24:33.110" end="00:24:39.030">...if you have multiple put them somewhere that they're really out of the way like up here.</p>
+      <p begin="00:24:39.030" end="00:24:42.230">So, the question is...get save with the project they do get save with</p>
+      <p begin="00:24:42.230" end="00:24:47.150">the solution...save the same place...break points at so now I come back</p>
+      <p begin="00:24:47.150" end="00:24:50.960">...show one more thing I can backer the editors I can pin this again when I</p>
+      <p begin="00:24:50.960" end="00:24:55.020">stop debugging you're...to see that it's still remembers that</p>
+      <p begin="00:24:55.020" end="00:24:59.060">they're there and when I hover over it it's going to show me the value from the last</p>
+      <p begin="00:24:59.060" end="00:25:05.690">...sessions this can be kind of handy stop debugging...icon is going to show your previous values?</p>
+      <p begin="00:25:05.690" end="00:25:08.170">So, let's go ahead and.</p>
+      <p begin="00:25:08.170" end="00:25:14.220">Come back right...here.</p>
+      <p begin="00:25:14.220" end="00:25:16.130">Talked about these will go ahead and get rid of that</p>
+      <p begin="00:25:16.130" end="00:25:21.190">now I don't need that so now I'm down here in my watch windows let me say I want to build-up some state</p>
+      <p begin="00:25:21.190" end="00:25:25.600">of my watch window and let's go ahead and drill in on...app, you know,</p>
+      <p begin="00:25:25.600" end="00:25:29.510">that you can add things to the...window from here so I might want to say</p>
+      <p begin="00:25:29.510" end="00:25:33.360">...id and I can say add watch.</p>
+      <p begin="00:25:33.360" end="00:25:38.070">And, then down here I might have app and it can even do that from the watch window</p>
+      <p begin="00:25:38.070" end="00:25:42.620">itself I have state and I'm particularly interested in so owner maybe I just want</p>
+      <p begin="00:25:42.620" end="00:25:47.140">to make this a top-level attribute so I'm going to say</p>
+      <p begin="00:25:48.150" end="00:25:50.350">Scroll up collapse this and now</p>
+      <p begin="00:25:50.350" end="00:25:53.810">...it's nicely there what happens if I need to watch this</p>
+      <p begin="00:25:53.810" end="00:25:58.680">some operating on this app but I'm going to step into...get languages for display what's going to happen everything</p>
+      <p begin="00:25:58.680" end="00:26:03.380">I watch window I'm going to lose the ability to see what its properties</p>
+      <p begin="00:26:03.380" end="00:26:08.230">were windows particular variables are not scope even though they're still in memory and theoretically and</p>
+      <p begin="00:26:09.320" end="00:26:14.050">...step back out of this and I'm going to use a feature that is going to allow me to</p>
+      <p begin="00:26:14.050" end="00:26:18.650">track the object even when the variable name is not and scope so we get</p>
+      <p begin="00:26:18.650" end="00:26:19.410">compiler</p>
+      <p begin="00:26:19.410" end="00:26:24.820">slits track the app id and I'm going to write click on it and I'm going to choose.</p>
+      <p begin="00:26:24.820" end="00:26:25.440">A functionality.</p>
+      <p begin="00:26:27.280" end="00:26:30.970">That is called.</p>
+      <p begin="00:26:30.970" end="00:26:36.140">I can...find it make object id there we go to this particular one...of the one</p>
+      <p begin="00:26:36.140" end="00:26:40.710">...primitive but see if...real object...to make object...notice</p>
+      <p begin="00:26:40.710" end="00:26:44.870">...dollar sign...of the right of it for those of you have you who</p>
+      <p begin="00:26:44.870" end="00:26:49.560">...uses feature prior twenty fifteen...a syntax has changed a little bit we used to use</p>
+      <p begin="00:26:49.560" end="00:26:53.320">a hash tags there's a couple reasons we made that change first of all we</p>
+      <p begin="00:26:53.320" end="00:26:58.010">had inconsistent syntax between visual basic and csharp now both of them use</p>
+      <p begin="00:26:58.010" end="00:27:01.570">the dollar sign number for the object...if I go create more object</p>
+      <p begin="00:27:01.570" end="00:27:05.900">...that will have one-two-three-four five six and the other reason is we talk about</p>
+      <p begin="00:27:05.900" end="00:27:08.810">suitor variables already it was consistent with the debugged concept</p>
+      <p begin="00:27:08.810" end="00:27:13.950">of pseudo variables now I'm going to go down here and I'm going to type dollar sign one and when</p>
+      <p begin="00:27:13.950" end="00:27:22.200">I stepped into this get languages for display helps...a step in and not step over?</p>
+      <p begin="00:27:22.200" end="00:27:26.820">You're going to see that all these other variables are...scope but I can still actually see</p>
+      <p begin="00:27:26.820" end="00:27:31.550">the value of the dollar sign one so make object id is a features allows</p>
+      <p begin="00:27:31.550" end="00:27:36.240">you to track your objects if you want to see their values...in memory, you know,</p>
+      <p begin="00:27:36.240" end="00:27:41.460">...valid but you might be stopped in the...in a place where you can actually access them by.</p>
+      <p begin="00:27:41.460" end="00:27:42.140">So, that's a</p>
+      <p begin="00:27:42.140" end="00:27:50.110">tip for that and then I can write click and I can say delete object id if I'm done with that.</p>
+      <p begin="00:27:50.110" end="00:27:55.210">So,...I have to watch all right so.</p>
+      <p begin="00:27:55.210" end="00:28:01.950">Let's come back over to powerpoint very briefly.</p>
+      <p begin="00:28:01.950" end="00:28:05.290">There's a very brief review of the tips and tricks that talked about in</p>
+      <p begin="00:28:05.290" end="00:28:19.110">this particular context there any questions so far.</p>
+      <p begin="00:28:19.110" end="00:28:23.930">That's the question was why don't you have debugged outbreak only attached when.</p>
+      <p begin="00:28:23.930" end="00:28:28.740">...have the logic to only break when...is actually...about the dot net frameworks I don't</p>
+      <p begin="00:28:28.740" end="00:28:33.050">hundred-percent...speculate but speculative talked to people that actually have found</p>
+      <p begin="00:28:33.050" end="00:28:38.020">...to be a useful thing sometimes to actually crash their application you have a</p>
+      <p begin="00:28:38.020" end="00:28:41.820">code that like it almost...like a not...not implemented exception</p>
+      <p begin="00:28:43.390" end="00:28:53.530">...it's a great question I don't actually know it comes from the system from the runtime...not added by our team.</p>
+      <p begin="00:28:59.640" end="00:29:02.050">Great question...me back to visual studio for that for</p>
+      <p begin="00:29:02.050" end="00:29:05.860">demo number three the question was if I use the</p>
+      <p begin="00:29:05.860" end="00:29:10.120">...dependable data tips that can I share those are just go into</p>
+      <p begin="00:29:10.120" end="00:29:14.990">my solution...answers by default it just goes into your solution</p>
+      <p begin="00:29:14.990" end="00:29:21.050">but on the debug menu you can actually...if</p>
+      <p begin="00:29:21.050" end="00:29:27.080">...down export your pin data tips and share those with a colleague so by</p>
+      <p begin="00:29:27.080" end="00:29:31.970">default they're just save your project but you can take an explicit action so-if you built up some</p>
+      <p begin="00:29:31.970" end="00:29:36.920">interesting debug state and you wanted to export those data tips you can do that with</p>
+      <p begin="00:29:36.920" end="00:29:42.050">your comments and all they can import them...will go to the same source...files</p>
+      <p begin="00:29:42.050" end="00:29:46.790">that you were on you can also export break points that's another thing I wasn't going to show</p>
+      <p begin="00:29:46.790" end="00:29:51.880">...from the...of exporting...can theoretically exporter break point along with the data</p>
+      <p begin="00:29:51.880" end="00:29:56.430">...say hey import this process five you'll hit this and you'll see</p>
+      <p begin="00:29:56.430" end="00:30:02.130">the data tips that I builds up with their state...action required.</p>
+      <p begin="00:30:02.130" end="00:30:08.080">Right so let's go ahead and move on past ...my break point here.</p>
+      <p begin="00:30:08.080" end="00:30:12.540">And, we'll go ahead and restart debugging just to come in a nice clean state.</p>
+      <p begin="00:30:12.540" end="00:30:16.030">So, now we validated the data is getting loaded correctly I've</p>
+      <p begin="00:30:16.030" end="00:30:20.020">written some test to make sure that what I'm going to do is I</p>
+      <p begin="00:30:20.020" end="00:30:24.800">have a secure communication boundary between the client-server so</p>
+      <p begin="00:30:24.800" end="00:30:30.810">my tess are going to encode mine parameters...passing up they're going</p>
+      <p begin="00:30:30.810" end="00:30:35.390">to be decoded on the other side I'm not actually going to make the web...case but I'm going to test</p>
+      <p begin="00:30:35.390" end="00:30:40.450">the libraries themselves and make sure that everything works correctly so when I click my run</p>
+      <p begin="00:30:40.450" end="00:30:45.290">test button I can see that two of them succeeded and one of them failed</p>
+      <p begin="00:30:45.290" end="00:30:50.360">someone jump in and debug this so if I go down here</p>
+      <p begin="00:30:50.360" end="00:30:57.140">have my run tests method so many go ahead and jump into this get apps by</p>
+      <p begin="00:30:57.140" end="00:30:59.430">And, this which is where the codings occurring I know that</p>
+      <p begin="00:30:59.430" end="00:31:03.740">...only failing for desktop remember so I could you have a couple options that I can</p>
+      <p begin="00:31:03.740" end="00:31:07.620">do here option a would be I could celebrate point I could hit</p>
+      <p begin="00:31:07.620" end="00:31:12.820">it I could sort of watch and I can just wait till the value got to...wanted or I can</p>
+      <p begin="00:31:12.820" end="00:31:17.710">...break point I'll ask the bagger to only stop when the value equals what I want</p>
+      <p begin="00:31:17.710" end="00:31:21.180">equal notice I have a disabled break point here that can be</p>
+      <p begin="00:31:21.180" end="00:31:25.580">a nice sort of way to bookmark things if you're not interested in them but,</p>
+      <p begin="00:31:25.580" end="00:31:30.090">notice when I celebrate point now vision fifteen issues...toolbar pop up here</p>
+      <p begin="00:31:30.090" end="00:31:35.160">so to wireless you disable...break point and it also lets you open the</p>
+      <p begin="00:31:35.160" end="00:31:38.750">break point settings which appears and non-verbal...</p>
+      <p begin="00:31:38.750" end="00:31:42.030">We have a couple settings you can apply...apply conditions so we</p>
+      <p begin="00:31:42.030" end="00:31:46.550">have a conditional expression this is conceptually anything you could type in</p>
+      <p begin="00:31:46.550" end="00:31:51.660">if statement so in this particular case actually need to move my break point down one-liner</p>
+      <p begin="00:31:51.660" end="00:31:56.010">...the wrong line so I'm...I can adjust that year I can just do line twenty-three instead of</p>
+      <p begin="00:31:56.010" end="00:32:01.740">having to delete it and it's going to jump there is a cork that doesn't rearrange itself but</p>
+      <p begin="00:32:01.740" end="00:32:06.240">...so you can move a break point and synonymous ignition expression I want to say</p>
+      <p begin="00:32:06.240" end="00:32:11.190">decoded type notice I'm getting intelligence...here just like you would expect.</p>
+      <p begin="00:32:11.190" end="00:32:16.930">And, that's a desktop.</p>
+      <p begin="00:32:16.930" end="00:32:18.390">So, now.</p>
+      <p begin="00:32:18.390" end="00:32:22.570">When I run this again notice that the?</p>
+      <p begin="00:32:22.570" end="00:32:25.330">...mobile execute version and desktop execute</p>
+      <p begin="00:32:25.330" end="00:32:29.770">...click my run test button and when I stop going to see that my decoded type</p>
+      <p begin="00:32:29.770" end="00:32:34.360">...desktop so the conditional break point has stop me only one I asked that</p>
+      <p begin="00:32:34.360" end="00:32:39.350">...so that conditions...satisfied if you're wondering the other conditions available to you</p>
+      <p begin="00:32:39.350" end="00:32:43.540">are we have the concept of hit counts...this is purely based on the number of times of the break points</p>
+      <p begin="00:32:43.540" end="00:32:46.350">and hit you can choose to do it based</p>
+      <p begin="00:32:46.350" end="00:32:52.840">on equals is a multiple of more greater than equal to so sometimes well?</p>
+      <p begin="00:32:52.840" end="00:32:54.990">I find useful in certain situations to go, yeah,</p>
+      <p begin="00:32:54.990" end="00:32:59.260">I know I want to stop the first-time I get here...to be hate taiwan then I'll have to remember delete my</p>
+      <p begin="00:32:59.260" end="00:33:03.380">break point because I'm guessing like many of you I a</p>
+      <p begin="00:33:03.380" end="00:33:07.910">lot of times forget to separate points I want to debugging something I go okay I think at working</p>
+      <p begin="00:33:07.910" end="00:33:12.310">...five let's go tested again...stop it all these very points I forgot I</p>
+      <p begin="00:33:12.310" end="00:33:19.160">headset so ...account can be useful way to make sure you stop once you don't have to remember...the...</p>
+      <p begin="00:33:19.160" end="00:33:24.290">break point often and then we have something on a filter break point which is in my</p>
+      <p begin="00:33:24.290" end="00:33:29.270">slides multi-threaded tips baby about debugging code this running parallel so you can see the conditions are based</p>
+      <p begin="00:33:29.270" end="00:33:34.200">on machine process or thread information and I can combine these so I</p>
+      <p begin="00:33:34.200" end="00:33:39.300">could do a conditional expression in conjunction with the...count and that would work.</p>
+      <p begin="00:33:39.300" end="00:33:44.290">And, then we'll talk about the actions ...a little bit so now that we're in this place</p>
+      <p begin="00:33:44.290" end="00:33:48.850">...stopped the desktop and I can see the...type equals desktop I</p>
+      <p begin="00:33:48.850" end="00:33:53.230">...double-check because I'm pretty sure that there's applications of tag desktop in here</p>
+      <p begin="00:33:53.230" end="00:33:58.100">so one way would be to go drill through this applications list and look</p>
+      <p begin="00:33:58.100" end="00:34:03.660">...be a lot nicer if I could just query this.</p>
+      <p begin="00:34:03.660" end="00:34:05.380">So, what I'm going to do and</p>
+      <p begin="00:34:05.380" end="00:34:10.420">...I actually wanted to do here was not that but that's okay somebody who had</p>
+      <p begin="00:34:10.420" end="00:34:15.160">the immediate window this would work in the wash or the locals or any other windows but I'm going</p>
+      <p begin="00:34:15.160" end="00:34:23.629">to type a...say data dot applications?</p>
+      <p begin="00:34:23.629" end="00:34:24.129">Select.</p>
+      <p begin="00:34:27.319" end="00:34:30.119">A baptized moi.</p>
+      <p begin="00:34:34.920" end="00:34:38.370">...works so as a visual studio two thousand fifteen you can</p>
+      <p begin="00:34:38.370" end="00:34:47.660">now evaluate lambda expressions and all of the butter...windows.</p>
+      <p begin="00:34:47.660" end="00:34:51.900">even better or perhaps just as good I think I see my bug and</p>
+      <p begin="00:34:51.900" end="00:34:56.610">then is desktop as capital d here desktop has a lower-case</p>
+      <p begin="00:34:56.610" end="00:35:01.340">d in this particular case and might equals has not asked to be case invariant now</p>
+      <p begin="00:35:01.340" end="00:35:04.380">wouldn't it be awfully great if I could apply</p>
+      <p begin="00:35:04.380" end="00:35:12.680">edit continue to my lambda expression as a visual studio two thousand fifteen rc...</p>
+      <p begin="00:35:12.680" end="00:35:17.290">Screen comparison dot...case.</p>
+      <p begin="00:35:17.290" end="00:35:21.000">Puts it...five and it best.</p>
+      <p begin="00:35:21.000" end="00:35:24.430">We fix...edit continue for lambda expression lambda expressions in</p>
+      <p begin="00:35:24.430" end="00:35:30.120">...indeo undone thank you.</p>
+      <p begin="00:35:30.120" end="00:35:33.650">All right so now we've got that working.</p>
+      <p begin="00:35:33.650" end="00:35:38.970">I want-to make sure that my I things actually work when I try to query</p>
+      <p begin="00:35:38.970" end="00:35:43.580">the server so I'm going to...this get apps and this is not going to actually make my first call out</p>
+      <p begin="00:35:43.580" end="00:35:47.950">of the server that we've looked at today and it goes and goes and it's between error occurred</p>
+      <p begin="00:35:47.950" end="00:35:52.580">...server that make sense the servers another project that's in my visual studio</p>
+      <p begin="00:35:52.580" end="00:35:58.070">solution and I forgot to started so instead of having to go back and do a lot of brigham rolls,</p>
+      <p begin="00:35:58.070" end="00:36:00.950">you know, that...project I can write click on the project</p>
+      <p begin="00:36:00.950" end="00:36:07.290">say debug start you instance it's now going to use dirt?</p>
+      <p begin="00:36:07.290" end="00:36:11.190">...I know what problem is it this is the...but I just edit</p>
+      <p begin="00:36:11.190" end="00:36:16.370">...shared between the two projects so it wasn't happy with it couldnt rebuild it for the</p>
+      <p begin="00:36:16.370" end="00:36:23.620">web server so sorry that's one of the right so gaps it's going to fail.</p>
+      <p begin="00:36:23.620" end="00:36:27.030">Solutions for number right click now I'm going to say debug</p>
+      <p begin="00:36:27.030" end="00:36:32.410">...vincent's that will work correctly so now I come back here and</p>
+      <p begin="00:36:32.410" end="00:36:37.160">...get apps I can quick start...couple seconds because web server has</p>
+      <p begin="00:36:37.160" end="00:36:41.200">...up and everything work correctly so debug start new</p>
+      <p begin="00:36:41.200" end="00:36:46.020">...a little tip if you're doing working with multiple projects but that's going to be kind of a pain to...</p>
+      <p begin="00:36:46.020" end="00:36:51.020">do frequently so what I'd prefer to happen is I prefer to have a web server launch every time that I</p>
+      <p begin="00:36:51.020" end="00:36:55.070">started debugging so I'm going to go to my project properties and I'm going</p>
+      <p begin="00:36:55.070" end="00:36:58.890">...solution properties now not the into projects and I'm going to go to</p>
+      <p begin="00:36:58.890" end="00:37:02.830">this startup project tab and I can configure multiple projects to</p>
+      <p begin="00:37:02.830" end="00:37:07.450">start-up I can choose to start them with the...or I can choose to start them without</p>
+      <p begin="00:37:07.450" end="00:37:12.060">the butter so if I wasn't particularly interested in the web server but I just</p>
+      <p begin="00:37:12.060" end="00:37:16.810">needed to make sure that started I...they start with...debugging every time I...debugging</p>
+      <p begin="00:37:16.810" end="00:37:21.690">...application it's not going to start debugging the web application that's actually a</p>
+      <p begin="00:37:21.690" end="00:37:25.380">...that's okay I'm okayed debugging it in this particular case</p>
+      <p begin="00:37:25.380" end="00:37:31.780">...go onset this break point now.</p>
+      <p begin="00:37:31.780" end="00:37:36.600">everything's working great up to this point the next piece of functionality that I would like is if you see this</p>
+      <p begin="00:37:36.600" end="00:37:41.750">app type drop down I want-to make sure that I can filter by the various</p>
+      <p begin="00:37:41.750" end="00:37:42.350">...so-if</p>
+      <p begin="00:37:42.350" end="00:37:46.910">...mobile expected to only show me the mobile and I'm doing all of this logic server-side</p>
+      <p begin="00:37:46.910" end="00:37:48.130">let's.</p>
+      <p begin="00:37:48.130" end="00:37:50.980">Go ahead and see what happens when I try desktop.</p>
+      <p begin="00:37:50.980" end="00:37:55.570">Anime getting nothing we just proved...lambda expressions that there are actually applications of</p>
+      <p begin="00:37:55.570" end="00:37:58.770">...desktops what's going on it's go ahead and jump over</p>
+      <p begin="00:37:58.770" end="00:38:05.210">to our server-side code and debugged.</p>
+      <p begin="00:38:05.210" end="00:38:09.930">So, actually...go ahead into this at data provider directly rom decoding it again</p>
+      <p begin="00:38:09.930" end="00:38:14.160">and make sure everything is correct remember this library shared between the two of them and I</p>
+      <p begin="00:38:14.160" end="00:38:18.290">come down here I'm going...break point.</p>
+      <p begin="00:38:18.290" end="00:38:22.590">And,...head appear this and have to use?</p>
+      <p begin="00:38:22.590" end="00:38:25.750">And, then I'm going to go try...hit the desktop again</p>
+      <p begin="00:38:25.750" end="00:38:29.300">...I break I...decoded desktop after I've</p>
+      <p begin="00:38:29.300" end="00:38:32.640">on encrypted it is actually coming through I'm losing the</p>
+      <p begin="00:38:32.640" end="00:38:36.640">p for some reason so that's why I'm not finding anything how do I figure this out I have</p>
+      <p begin="00:38:36.640" end="00:38:41.510">a library that's doing all my encoding for me it's encrypting and decrepit</p>
+      <p begin="00:38:41.510" end="00:38:44.400">...the string.</p>
+      <p begin="00:38:44.400" end="00:38:46.460">...going to tell you that the problems actually down and down</p>
+      <p begin="00:38:46.460" end="00:38:51.580">...that particular layer so we're going to go find are.</p>
+      <p begin="00:38:51.580" end="00:38:54.270">The functions down here that actually are going to do is the</p>
+      <p begin="00:38:54.270" end="00:39:00.590">...shifting on my characters as...encoding them what I want to do is a</p>
+      <p begin="00:39:00.590" end="00:39:04.450">long string I don't want to debug and stop and</p>
+      <p begin="00:39:04.450" end="00:39:08.940">...break point inspect every time I want to just be able to dump all this information so I'm going to go</p>
+      <p begin="00:39:08.940" end="00:39:13.550">...choose actions and I'm going to set what visual studios refer to as a</p>
+      <p begin="00:39:13.550" end="00:39:17.740">trace point where I'm going to print a message to the output window and then</p>
+      <p begin="00:39:17.740" end="00:39:21.160">...resume execution so when it encodes in decode</p>
+      <p begin="00:39:21.160" end="00:39:26.090">the strings and desktop I'm not going to stop at all I'm just going to have a record of everything that</p>
+      <p begin="00:39:26.090" end="00:39:29.440">happened the output window and there's three types of tests that I can</p>
+      <p begin="00:39:29.440" end="00:39:37.130">type I can type plain old text so here I'm going to say shush.</p>
+      <p begin="00:39:37.130" end="00:39:40.760">And, then anything I put in curly braces much like the debugged espy</p>
+      <p begin="00:39:40.760" end="00:39:45.550">...going to be evaluated so I want to say ...to masking</p>
+      <p begin="00:39:45.550" end="00:39:48.830">...intelligence you expect and that's going to go to.</p>
+      <p begin="00:39:49.850" end="00:39:53.580">The value of...and then we have pseudo variables again here</p>
+      <p begin="00:39:53.580" end="00:39:58.110">...sign and I can choose to output relevant information about the</p>
+      <p begin="00:39:58.110" end="00:40:03.310">project you can see what they are call stack is an interesting one sometimes if you don't know-how you're</p>
+      <p begin="00:40:03.310" end="00:40:08.740">getting the various places you said...trace point you can ask it to...the call stack...going to</p>
+      <p begin="00:40:08.740" end="00:40:14.200">dump the function because we can...go ahead and close and then I'm going to set</p>
+      <p begin="00:40:14.200" end="00:40:18.250">an equivalent trace point down here where I'm uninteresting</p>
+      <p begin="00:40:18.250" end="00:40:21.940">the string and I'm going to say decoding.</p>
+      <p begin="00:40:23.130" end="00:40:28.120">we're going to...the same thing we're going to say by eight to unmanned ask.</p>
+      <p begin="00:40:28.120" end="00:40:34.740">Went to.</p>
+      <p begin="00:40:34.740" end="00:40:39.650">Not unchecked on...</p>
+      <p begin="00:40:39.650" end="00:40:44.410">that...work for me so I can either leave this open this is a nice non modal...window if you ever</p>
+      <p begin="00:40:44.410" end="00:40:48.910">uses functionality and prefers visual studio you remember all of the functionality for conditions and</p>
+      <p begin="00:40:48.910" end="00:40:51.940">actions within...completely separate dialogues</p>
+      <p begin="00:40:51.940" end="00:40:56.590">...theoretically combine of all but you had to write click open mobile...couldn't copy</p>
+      <p begin="00:40:56.590" end="00:41:01.940">...editor...interactive my editor if I want I can close if I want now when I go</p>
+      <p begin="00:41:01.940" end="00:41:08.500">ahead and start debugging and I'm going to click the...</p>
+      <p begin="00:41:08.500" end="00:41:11.510">I'm going to choose desktop.</p>
+      <p begin="00:41:11.510" end="00:41:15.210">And, you're going to see the particular string that I had output</p>
+      <p begin="00:41:15.210" end="00:41:19.750">here of my break points set from before but that's okay.</p>
+      <p begin="00:41:19.750" end="00:41:23.950">I have a record of everything that was encoded and decoded so</p>
+      <p begin="00:41:23.950" end="00:41:28.840">...points I find really useful when you iterative things like this and you need to understand is actually really hard</p>
+      <p begin="00:41:28.840" end="00:41:33.520">and given point time to stop and get the full picture and remember I'm dropping the...so I can see that it's</p>
+      <p begin="00:41:33.520" end="00:41:37.170">being encoded the last characters been encoded has been encoded</p>
+      <p begin="00:41:37.170" end="00:41:42.110">one twelve it's been decoded are...from one twelve the</p>
+      <p begin="00:41:42.110" end="00:41:47.080">thirty-eight...actually been decoded from thirty-seven to one eleven so</p>
+      <p begin="00:41:47.080" end="00:41:50.820">...when it's been crossed...across that web boundary</p>
+      <p begin="00:41:50.820" end="00:41:54.740">...modifying the character and if I go look at my</p>
+      <p begin="00:41:54.740" end="00:41:58.070">...table it turns out that character thirty-eight</p>
+      <p begin="00:41:58.070" end="00:42:02.170">is in ampersand which is a special character so it hasn't been</p>
+      <p begin="00:42:02.170" end="00:42:07.830">escape shows the browser actually in process of...making the web request is changing</p>
+      <p begin="00:42:07.830" end="00:42:10.740">...to fix this particular issue and I want</p>
+      <p begin="00:42:10.740" end="00:42:17.180">to fix that down here before actually.</p>
+      <p begin="00:42:17.180" end="00:42:21.750">Without stopping I'm not going...continue in this particular case I</p>
+      <p begin="00:42:21.750" end="00:42:25.240">am going to rather use the ability to</p>
+      <p begin="00:42:25.240" end="00:42:30.710">simply modify variables so it's go ahead and come back out here.</p>
+      <p begin="00:42:31.900" end="00:42:37.570">Desktop and this particular functionality supports</p>
+      <p begin="00:42:37.570" end="00:42:41.630">bass sixty-four which will not have any special characters...</p>
+      <p begin="00:42:41.630" end="00:42:46.760">modify the value of this in the bagger</p>
+      <p begin="00:42:46.760" end="00:42:51.780">...five continue debugging and everything works correctly so it's another feature in the</p>
+      <p begin="00:42:51.780" end="00:42:55.420">bagger is that you had the ability to edit values directly</p>
+      <p begin="00:42:55.420" end="00:42:57.650">in memory which can be a great thing to test</p>
+      <p begin="00:42:57.650" end="00:43:01.730">...hypothesis as opposed to stop change the value right if you</p>
+      <p begin="00:43:01.730" end="00:43:06.320">want to see what happens to this conditional branch...I...this out or make it someone key value</p>
+      <p begin="00:43:06.320" end="00:43:11.830">and you can do that directing the debug or you don't need to stop and modify code every time...</p>
+      <p begin="00:43:11.830" end="00:43:13.600">Any further.</p>
+      <p begin="00:43:13.600" end="00:43:18.530">Questions.</p>
+      <p begin="00:43:30.480" end="00:43:33.210">So, the question if I understand question you're asking I was debugging</p>
+      <p begin="00:43:33.210" end="00:43:40.150">client in server how do I know which one I'm scoping too and I said the...</p>
+      <p begin="00:43:40.150" end="00:43:45.120">So, you all the break point will be hit unless you apply a filter</p>
+      <p begin="00:43:45.120" end="00:43:50.060">any process that hits...are any thread that hits...multi-threaded debugging is going to always stop on the</p>
+      <p begin="00:43:50.060" end="00:43:55.060">break point the watch is going to always evaluate in the context of the</p>
+      <p begin="00:43:55.060" end="00:43:59.950">...that the current is currently...by default...the one that you hit the</p>
+      <p begin="00:43:59.950" end="00:44:05.850">...point honor stepped on so you are able to so,</p>
+      <p begin="00:44:05.850" end="00:44:09.550">go back to the product really quick so it's go ahead and just click another button</p>
+      <p begin="00:44:11.010" end="00:44:15.340">soon by default...I have...what this particular thread</p>
+      <p begin="00:44:15.340" end="00:44:19.720">here's another tip I have the debug location toolbar...visible this comes by</p>
+      <p begin="00:44:19.720" end="00:44:24.720">default the general profile I don't think it was by default in the other ones but I can actually see all the threads that I'm</p>
+      <p begin="00:44:24.720" end="00:44:28.170">on so if I switched to a different thread someone</p>
+      <p begin="00:44:28.170" end="00:44:34.090">main thread if I go to this system events thread you're</p>
+      <p begin="00:44:34.090" end="00:44:36.900">going to actually see in the local</p>
+      <p begin="00:44:36.900" end="00:44:41.060">and watch window that and I can evaluate any of these things because I now</p>
+      <p begin="00:44:41.060" end="00:44:48.200">...the debugged of the context of the different threat that answer questions.</p>
+      <p begin="00:44:48.200" end="00:44:54.680">Array so...go ahead and just move on while we're here.</p>
+      <p begin="00:44:54.680" end="00:44:59.680">And, onto our last demo of the day so.</p>
+      <p begin="00:44:59.680" end="00:45:04.690">Vassar demos so I've gotpretty far along in this app</p>
+      <p begin="00:45:04.690" end="00:45:09.310">building together...now loads correctly my tests all pass seems</p>
+      <p begin="00:45:09.310" end="00:45:13.840">that works correctly across the web boundary via my encryption anti-christian so it's nice</p>
+      <p begin="00:45:13.840" end="00:45:19.160">and secure but what happens if for some reason something goes wrong.</p>
+      <p begin="00:45:19.160" end="00:45:23.380">And, you saw this perform the server wasn't running error occurred contact</p>
+      <p begin="00:45:23.380" end="00:45:28.510">and server what I want...I want to debugged to stop and tom with problem is</p>
+      <p begin="00:45:28.510" end="00:45:33.090">when I first had my first job doing...development I didn't know-how to make the debug</p>
+      <p begin="00:45:33.090" end="00:45:36.830">...stop for me when exceptions occured so it actually go</p>
+      <p begin="00:45:36.830" end="00:45:39.840">into my application and I'd find my try catches and</p>
+      <p begin="00:45:39.840" end="00:45:43.790">...comment them out so I'm guessing everybody here is done that at</p>
+      <p begin="00:45:43.790" end="00:45:49.360">some point fortunately in the bagger we have the ability to</p>
+      <p begin="00:45:49.360" end="00:45:54.070">...exceptions if you have not seen this yet how many people here before</p>
+      <p begin="00:45:54.070" end="00:45:58.920">...use the...exception settings in visual studio how many people here</p>
+      <p begin="00:45:58.920" end="00:46:02.560">...got coffee while the window came up.</p>
+      <p begin="00:46:02.560" end="00:46:06.020">Well, fortunately visual...fifteen we</p>
+      <p begin="00:46:06.020" end="00:46:15.890">...the window is light in fast and it actually has a respectable search.</p>
+      <p begin="00:46:15.890" end="00:46:19.530">So, for those of you who are not familiar with functionality what excuse me ability</p>
+      <p begin="00:46:19.530" end="00:46:24.040">do is I can write click and I can...right like I can checked particular</p>
+      <p begin="00:46:24.040" end="00:46:28.610">...groups of exceptions and I can ask the...to break whenever the exception is</p>
+      <p begin="00:46:28.610" end="00:46:32.720">throne as opposed to...behavior the debug of only break-even exceptions on</p>
+      <p begin="00:46:32.720" end="00:46:38.510">handled so in this particular case now we're running...go I've now</p>
+      <p begin="00:46:38.510" end="00:46:43.310">asti vertebrae can any common language runtime exceptions this is dot net for those who may not</p>
+      <p begin="00:46:43.310" end="00:46:47.700">know we call the dot net runtime the common language runtime of</p>
+      <p begin="00:46:47.700" end="00:46:50.840">...here referred to as both.</p>
+      <p begin="00:46:50.840" end="00:46:55.910">So, when I open my may window and I click my error this time it's going to</p>
+      <p begin="00:46:55.910" end="00:46:59.550">stop me down here where the error actually occurred</p>
+      <p begin="00:46:59.550" end="00:47:03.580">so awesome that's useful functionality to be able to stop without having to go</p>
+      <p begin="00:47:03.580" end="00:47:08.150">in find my trying catchers comment them out and get the debugged actually stop me and this is in</p>
+      <p begin="00:47:08.150" end="00:47:12.980">asic programming it's even more important because how many people here doing</p>
+      <p begin="00:47:12.980" end="00:47:18.570">...programming with await and tasks how many people here may have ever gotten burned</p>
+      <p begin="00:47:18.570" end="00:47:20.700">by this particular</p>
+      <p begin="00:47:20.700" end="00:47:28.260">piece particular problem that even if I don't try catch it?</p>
+      <p begin="00:47:28.260" end="00:47:30.650">Anybody tell me now where</p>
+      <p begin="00:47:30.650" end="00:47:34.140">mine app is going to stop.</p>
+      <p begin="00:47:34.140" end="00:47:38.060">When I hit the exception?</p>
+      <p begin="00:47:38.060" end="00:47:46.790">All right let's look and see what happens.</p>
+      <p begin="00:47:46.790" end="00:47:50.950">A versions exceptions are so on...returns off.</p>
+      <p begin="00:47:50.950" end="00:47:55.530">So, now the and handle exception will actually bring me back up to where</p>
+      <p begin="00:47:55.530" end="00:47:58.830">I'm waiting on the asynchronous call.</p>
+      <p begin="00:47:58.830" end="00:48:02.450">Our apologize in advance for this something I would like to fix</p>
+      <p begin="00:48:02.450" end="00:48:06.340">for-you in future given way...net runtime works...incredibly hard problem to</p>
+      <p begin="00:48:06.340" end="00:48:11.630">solve so for now the appropriate way to diagnose where exceptions are</p>
+      <p begin="00:48:11.630" end="00:48:15.790">current inside of asynchronous message you need to come into the exception settings</p>
+      <p begin="00:48:15.790" end="00:48:20.770">and enable first chance exceptions so let's go ahead and restart</p>
+      <p begin="00:48:20.770" end="00:48:22.610">...one more time.</p>
+      <p begin="00:48:23.810" end="00:48:27.520">Says go ahead and say...one more thing I want to show you a lot of people</p>
+      <p begin="00:48:27.520" end="00:48:34.100">...asynchronous code how many people here...aversion visual so-you older than twenty thirteen.</p>
+      <p begin="00:48:34.100" end="00:48:38.570">Very few people that a couple people so many people here have seen...we</p>
+      <p begin="00:48:38.570" end="00:48:41.910">...thirteen and it's called the asic call stacks.</p>
+      <p begin="00:48:41.910" end="00:48:44.940">So, I'm going to show another quick...you know,...</p>
+      <p begin="00:48:44.940" end="00:48:48.510">the visual studio actually has a third ide mode and it's called the</p>
+      <p begin="00:48:48.510" end="00:48:53.500">full-screen mode of the id and it remembers your window layouts just like</p>
+      <p begin="00:48:53.500" end="00:48:58.370">it does between debugging design-time...I go debug windows fyi already</p>
+      <p begin="00:48:58.370" end="00:49:01.950">...windows are under debug windows we see a lot of people in ux studies</p>
+      <p begin="00:49:01.950" end="00:49:04.580">ago looking for them on the human new and other</p>
+      <p begin="00:49:04.580" end="00:49:10.390">windows a reasonable place to look but it's not very useful because they're not there but,</p>
+      <p begin="00:49:10.390" end="00:49:13.810">now I can open the call stack window and I've haven't</p>
+      <p begin="00:49:13.810" end="00:49:17.480">docked over here I did this before the session...I had these pseudo</p>
+      <p begin="00:49:17.480" end="00:49:22.240">frames call anything that's in square brackets and great out...frame...the cost of</p>
+      <p begin="00:49:22.240" end="00:49:26.770">...asic call and this was we know that and asynchronous call occured</p>
+      <p begin="00:49:26.770" end="00:49:31.240">...awaiting on something is actually running on different task so prior visual studio</p>
+      <p begin="00:49:31.240" end="00:49:36.000">twenty thirteen before introducing this feature the only call stack that I would have seen</p>
+      <p begin="00:49:36.000" end="00:49:40.790">this particular case would have been that what we've done is by</p>
+      <p begin="00:49:40.790" end="00:49:45.480">introducing asic...stacked functionality we...you understand when you stop somewhere</p>
+      <p begin="00:49:45.480" end="00:49:49.030">unexpected or your debugging...how did I did</p>
+      <p begin="00:49:49.030" end="00:49:53.540">...via my code flow not just what's the current call stack of the current</p>
+      <p begin="00:49:53.540" end="00:49:59.080">...that's...think that's a really useful piece of functionality as well and</p>
+      <p begin="00:49:59.080" end="00:50:02.730">...thing on note...we're in the cost ecuador two more things is we have this</p>
+      <p begin="00:50:02.730" end="00:50:07.680">concept external code external code means that visual studios hiding a</p>
+      <p begin="00:50:07.680" end="00:50:12.310">bunch of group from the runtime for-you a feature that we call just my code just my</p>
+      <p begin="00:50:12.310" end="00:50:17.800">code and dot net controls both stepping so if I try to step into this http web</p>
+      <p begin="00:50:17.800" end="00:50:21.070">...is part of the framework it's going to be treated like a step over and then</p>
+      <p begin="00:50:21.070" end="00:50:26.370">the call stack looks much more pleasant if I want to turn that off I can shoot right click and I can say</p>
+      <p begin="00:50:26.370" end="00:50:32.870">show external code and now you understand why we have just my code.</p>
+      <p begin="00:50:32.870" end="00:50:39.490">So, that's what that's what it does for you and that's what that little gray...bracketed square bracket</p>
+      <p begin="00:50:39.490" end="00:50:44.460">thing external code us that means that the burgers hiding framework code from you that we don't think</p>
+      <p begin="00:50:44.460" end="00:50:49.410">is particular useful to-you...note is you can configure other options</p>
+      <p begin="00:50:49.410" end="00:50:53.390">and your call...view you can choose to show parameter values it's</p>
+      <p begin="00:50:53.390" end="00:50:59.900">awfully default I but so, normally would look like this when I choose...on it's going to show</p>
+      <p begin="00:50:59.900" end="00:51:03.550">...if I don't think the parameter names are particularly useful because I</p>
+      <p begin="00:51:03.550" end="00:51:08.980">have my code so I can...like this so I can just have the values the only thing to note</p>
+      <p begin="00:51:08.980" end="00:51:13.890">is we turned values on the reason...off by default you will incur some performance penalty evaluating the</p>
+      <p begin="00:51:13.890" end="00:51:16.420">caustic just like evaluating things in the watch window the</p>
+      <p begin="00:51:16.420" end="00:51:21.270">...has to do work to get the value of that...a lot of parameters or parameters that are expensive to</p>
+      <p begin="00:51:21.270" end="00:51:25.820">evaluate that will slow down every time you stop debugging so either...break</p>
+      <p begin="00:51:25.820" end="00:51:28.240">...step if.</p>
+      <p begin="00:51:28.240" end="00:51:31.960">You have the call segment...visible obviously we don't evaluate them</p>
+      <p begin="00:51:31.960" end="00:51:37.620">if we don't need to so we go ahead and turn off parameter values turn on parameter</p>
+      <p begin="00:51:37.620" end="00:51:40.730">...that's the fault state.</p>
+      <p begin="00:51:40.730" end="00:51:43.410">And, radio now...for screen mode my id</p>
+      <p begin="00:51:43.410" end="00:51:48.230">goes back to the same view that I had for so that's another great tip is the</p>
+      <p begin="00:51:48.230" end="00:51:52.530">view full-screen mode in the debug.</p>
+      <p begin="00:51:52.530" end="00:51:55.960">So, last thing I wanted to talk about lot of people</p>
+      <p begin="00:51:55.960" end="00:52:01.610">...hand they deal with asynchronous codes how many people here are use the tasks window.</p>
+      <p begin="00:52:01.610" end="00:52:06.380">If you few people so the tasks window is will show you all</p>
+      <p begin="00:52:06.380" end="00:52:09.000">...running tasks and implicitly any</p>
+      <p begin="00:52:09.000" end="00:52:12.590">...asynchronous functions are actually tasks</p>
+      <p begin="00:52:12.590" end="00:52:18.460">so-if you have something hong or you're trying to understand the relationship of what the state</p>
+      <p begin="00:52:18.460" end="00:52:23.270">of your tasks are you can open debug windows tasks just like the rest of</p>
+      <p begin="00:52:23.270" end="00:52:27.650">our windows and...show you all the...so in this particular case I'm in the</p>
+      <p begin="00:52:27.650" end="00:52:31.190">task that's doing the web request and then I have my</p>
+      <p begin="00:52:31.190" end="00:52:35.860">to other asynchronous methods are actually awaiting and...tell me which</p>
+      <p begin="00:52:35.860" end="00:52:39.980">tasks awaiting on so in this particular case the...from web a saying is a</p>
+      <p begin="00:52:39.980" end="00:52:44.380">...on task id two seven three which happens to be the active one and</p>
+      <p begin="00:52:44.380" end="00:52:48.480">task to seven-six...to seven-five which is the asynchronous method</p>
+      <p begin="00:52:48.480" end="00:52:53.330">...called so that's a...if you haven't used it but you're dealing with tasks and asynchronous code</p>
+      <p begin="00:52:53.330" end="00:52:57.970">...that's functionality that's also available to you in the butter it's</p>
+      <p begin="00:52:57.970" end="00:53:06.570">another window that are telemetry shows us not many people fine so I'm going to make sure to call that out.</p>
+      <p begin="00:53:06.570" end="00:53:08.550">All right so brief review of the things we</p>
+      <p begin="00:53:08.550" end="00:53:13.090">...that's going to conclude the demo portion of our talk today</p>
+      <p begin="00:53:13.090" end="00:53:31.540">...about five minutes left so other any questions before we move on.</p>
+      <p begin="00:53:31.540" end="00:53:35.090">The question was does make object aidid prevented garbage collector from</p>
+      <p begin="00:53:35.090" end="00:53:39.770">collection variable my recollection is yes it will.</p>
+      <p begin="00:53:39.770" end="00:53:44.680">Prevent the garbage collector from collecting that because we have to ac and additional reference to it so we can</p>
+      <p begin="00:53:44.680" end="00:53:50.120">tracking questioner.</p>
+      <p begin="00:53:50.120" end="00:53:57.220">Lockerbie moi.</p>
+      <p begin="00:53:57.220" end="00:54:02.200">So, the question was endings you fails from a whole lot is...general rule</p>
+      <p begin="00:54:02.200" end="00:54:06.330">or others...exceptions the answer was there were a</p>
+      <p begin="00:54:06.330" end="00:54:10.560">bunch of exceptions as a visual two thousand fifteen rc we have a</p>
+      <p begin="00:54:10.560" end="00:54:15.560">remove the vast majority of those exceptions you'll see the blog post today that talks about</p>
+      <p begin="00:54:15.560" end="00:54:20.500">the lambda support is a blog post when we really see bsix talked about the ability to do it in a</p>
+      <p begin="00:54:20.500" end="00:54:24.280">...all of a new csharp six language features so,</p>
+      <p begin="00:54:24.280" end="00:54:29.130">it's now more of a smallest of exceptions if you have blocking issues definitely let us know</p>
+      <p begin="00:54:29.130" end="00:54:33.730">...so...few limitations like you can't edit inside of catch...still is one limitation,</p>
+      <p begin="00:54:33.730" end="00:54:36.520">for example,...I promise you a few slides</p>
+      <p begin="00:54:36.520" end="00:54:41.180">...tips parallel stacks window url go check it</p>
+      <p begin="00:54:41.180" end="00:54:47.300">out threads window this...offers a lot of interesting functionality for...threads including the ability to</p>
+      <p begin="00:54:47.300" end="00:54:51.870">...improv freeze and thaw threads that will let you for sure threads in</p>
+      <p begin="00:54:51.870" end="00:54:56.200">...particular state so get to a certain point...it's not going to run past that...different</p>
+      <p begin="00:54:56.200" end="00:55:00.500">...different point freezes you can try to simulate what particular race conditions would be</p>
+      <p begin="00:55:00.500" end="00:55:04.300">...that particular way...additional multi-threaded tips share threads</p>
+      <p begin="00:55:04.300" end="00:55:08.120">insource run selected threads to cursor debug location to</p>
+      <p begin="00:55:08.120" end="00:55:11.740">...and I mentioned the filter break point and we briefly discussing</p>
+      <p begin="00:55:11.740" end="00:55:15.540">...toolbar I apologize I realize I forgot one thing off here so</p>
+      <p begin="00:55:15.540" end="00:55:19.580">...verbally inserted we also have a featuring the ide called the parallel watch</p>
+      <p begin="00:55:19.580" end="00:55:24.500">window the parallel watch window allows you to see all of</p>
+      <p begin="00:55:24.500" end="00:55:30.180">your threads that are executing in parallel since we have about four minutes to people</p>
+      <p begin="00:55:30.180" end="00:55:38.470">want to...real quick awesome so let's go back to visual studio.</p>
+      <p begin="00:55:38.470" end="00:55:41.770">Let's close some windows.</p>
+      <p begin="00:55:41.770" end="00:55:50.700">Let's go get the button that will show it to is visible.</p>
+      <p begin="00:55:50.700" end="00:55:55.650">Come down here you should be visible.</p>
+      <p begin="00:55:55.650" end="00:55:59.900">And, then now when I go.</p>
+      <p begin="00:55:59.900" end="00:56:08.400">...I take val example.</p>
+      <p begin="00:56:08.400" end="00:56:09.260">Solution explorer.</p>
+      <p begin="00:56:10.430" end="00:56:15.260">...going on here to never utilities so what I'm going to do in this particular case is I'm going to</p>
+      <p begin="00:56:15.260" end="00:56:19.740">try to calculate some prime numbers and I'm going toparallel because, you know,</p>
+      <p begin="00:56:19.740" end="00:56:24.560">calculating prime numbers can be extremely expensive which is why encryption actually</p>
+      <p begin="00:56:24.560" end="00:56:29.310">works somerset break point and I'm going to talk going-to go ahead and...as a hit</p>
+      <p begin="00:56:29.310" end="00:56:29.730">count</p>
+      <p begin="00:56:29.730" end="00:56:35.080">so the threads can kind of ramp up and get their all the threads can be spun up let's make it equal</p>
+      <p begin="00:56:35.080" end="00:56:40.110">...seven hundred so let's go boom.</p>
+      <p begin="00:56:40.110" end="00:56:44.010">Back here...click my button parallel.</p>
+      <p begin="00:56:44.010" end="00:56:46.690">...tip really quick I mention the conditional expression hit</p>
+      <p begin="00:56:46.690" end="00:56:50.580">...faster than conditional expression because...has to do less work</p>
+      <p begin="00:56:50.580" end="00:56:55.560">to if you're in a situation where you happen to know the count like it's a iteration...x variable, you know,</p>
+      <p begin="00:56:55.560" end="00:57:00.780">for into I...if you can use the hit count...be a little faster than that</p>
+      <p begin="00:57:00.780" end="00:57:05.200">conditional expression I showed you but some...the debug I'm going to go</p>
+      <p begin="00:57:05.200" end="00:57:12.790">open the windows and I'm going to open the parallel stacks first.</p>
+      <p begin="00:57:12.790" end="00:57:17.340">Is going to open up here so this is going to show me all the particular threads and the</p>
+      <p begin="00:57:17.340" end="00:57:22.000">other window that I wanted to show you is I want to show you let's go ahead and run...cursor</p>
+      <p begin="00:57:22.000" end="00:57:23.730">...in here?</p>
+      <p begin="00:57:23.730" end="00:57:28.830">So, I can get inside here the feature called the parallel watch window</p>
+      <p begin="00:57:28.830" end="00:57:32.280">and what this says is going to show me all of the values of objects</p>
+      <p begin="00:57:32.280" end="00:57:35.320">a variable across all of the various threats?</p>
+      <p begin="00:57:35.320" end="00:57:39.890">So, I can see the number of threads that I have running I can see the value of I on all the various</p>
+      <p begin="00:57:39.890" end="00:57:41.280">threats.</p>
+      <p begin="00:57:41.280" end="00:57:44.800">And, one more cool little tip while we actually happen</p>
+      <p begin="00:57:44.800" end="00:57:49.890">to be here is the immediate windowed you-can call random code from the</p>
+      <p begin="00:57:49.890" end="00:57:55.730">...window so stirring utilities and I'm going to call a reverse</p>
+      <p begin="00:57:55.730" end="00:58:02.010">string method that's going to execute recursively and most may say hello.</p>
+      <p begin="00:58:02.010" end="00:58:06.420">It's going to break point so...stop another break point I can debugged other methods we call this</p>
+      <p begin="00:58:06.420" end="00:58:10.630">...debugging and now in this particular case in the case of incursion</p>
+      <p begin="00:58:10.630" end="00:58:14.940">let's run down here I happen to be in the first break point which was a hit...as</p>
+      <p begin="00:58:14.940" end="00:58:19.760">I mentioned before let's run...cursor the end of my recursion if you see my call stack</p>
+      <p begin="00:58:19.760" end="00:58:22.480">...this many threads deep when I open...parallel</p>
+      <p begin="00:58:22.480" end="00:58:25.620">...window...is not a valid expression this</p>
+      <p begin="00:58:25.620" end="00:58:30.710">particular case but tr is I can see the value of the parameter all the way</p>
+      <p begin="00:58:30.710" end="00:58:36.250">up the recursion stack so that is the last</p>
+      <p begin="00:58:36.250" end="00:58:45.860">two bonus tips for you for the for the conference so.</p>
+      <p begin="00:58:45.860" end="00:58:50.740">...conduct me afterwards I want to get through we only have about a minute left but ...answer</p>
+      <p begin="00:58:50.740" end="00:58:55.880">questions afterwards...also get the visual city...boots up on the third-floor immediately after this</p>
+      <p begin="00:58:55.880" end="00:59:00.200">...clear out here's link to our blog...a couple of the related talks</p>
+      <p begin="00:59:00.200" end="00:59:05.090">mentioned all be giving a performance tools talk half of one tomorrow evening and then my</p>
+      <p begin="00:59:05.090" end="00:59:10.510">colleague envelopes will be talking about the historically bugging capabilities and lastly evaluate</p>
+      <p begin="00:59:10.510" end="00:59:15.540">the session have you found it useful please go give me a good reading so they let me come back to future conference.</p>
+
+    </div>
+  </body>
+</tt>

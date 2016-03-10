@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.920</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.560" end="00:00:10.140">Ok, shall we get started us five pm</p>
+      <p begin="00:00:10.140" end="00:00:14.710">session on infrastructure as a service you guys are brave?</p>
+      <p begin="00:00:15.720" end="00:00:20.200">Exciting...big crowd I hope you guys cannot find the seats...need to find</p>
+      <p begin="00:00:20.200" end="00:00:25.100">...so my name's corey sanders...the director program management responsible for</p>
+      <p begin="00:00:25.100" end="00:00:28.450">infrastructures a service and cloud services actually in the</p>
+      <p begin="00:00:28.450" end="00:00:33.770">as your team when I before I get started me just kinda get a show hands how many people have deployed on as</p>
+      <p begin="00:00:33.770" end="00:00:39.160">your before okay how many people deployed...has on atrophy m?</p>
+      <p begin="00:00:39.160" end="00:00:43.360">Okay, a lot of people you guys sure you should be an intersection ...</p>
+      <p begin="00:00:43.360" end="00:00:47.880">will go through the right pace and make sure that we get the right stuff here and make sure to interesting</p>
+      <p begin="00:00:47.880" end="00:00:51.270">and exciting for you the goal of this session is to walk...so what we're trying to do</p>
+      <p begin="00:00:51.270" end="00:00:57.100">here today many give you kind of an overview of the platform like five not</p>
+      <p begin="00:00:57.100" end="00:00:59.810">...ten minutes to talk a little bit about how so</p>
+      <p begin="00:00:59.810" end="00:01:05.140">...all a platform is and we position infrastructures service in that platform</p>
+      <p begin="00:01:05.140" end="00:01:09.430">then we're going to do a drill into a...a service how it works some of</p>
+      <p begin="00:01:09.430" end="00:01:13.370">the components of the different aspects that we have a lot of features that have been shipped of the</p>
+      <p begin="00:01:13.370" end="00:01:18.780">last couple months and we'll be able to talk to those and bridle come up and do that and then I'll end with</p>
+      <p begin="00:01:18.780" end="00:01:22.250">...discussion on templates which we actually just announce support</p>
+      <p begin="00:01:22.250" end="00:01:26.100">...the service literally two hours ago my blog</p>
+      <p begin="00:01:26.100" end="00:01:31.260">went live so we'll be able to talk a little bit about that some of the details on how that works</p>
+      <p begin="00:01:31.260" end="00:01:34.520">...touch a little bit on visual studio integration and then we'll</p>
+      <p begin="00:01:34.520" end="00:01:39.410">be done and we'll get you on your way for the for the rest of your wednesday sound like a good</p>
+      <p begin="00:01:39.410" end="00:01:45.740">...that's basically what people expected what you going to do now I mean you could leave I guess so, ...</p>
+      <p begin="00:01:45.740" end="00:01:50.530">I can't do anything now at this point so, let me judge forward and we'll take it from there so,</p>
+      <p begin="00:01:50.530" end="00:01:53.840">the as...platform overview and this just</p>
+      <p begin="00:01:53.840" end="00:01:56.150">...give you a little touch on sort of what we're looking at</p>
+      <p begin="00:01:56.150" end="00:02:03.550">here we really think about the asher platform...really think of it with these three pictures in mind?</p>
+      <p begin="00:02:03.550" end="00:02:06.450">Very interesting pictures let me actually add some add some description</p>
+      <p begin="00:02:06.450" end="00:02:09.450">...hyper scale and this is just the ability to grow and</p>
+      <p begin="00:02:09.450" end="00:02:14.330">growing growth and I'll give you some examples of sort of what this means to us and how we think it's going to</p>
+      <p begin="00:02:14.330" end="00:02:19.290">apply as we look at the types of services and solutions that you deploy?</p>
+      <p begin="00:02:19.290" end="00:02:24.070">Enterprise grade all explain this as well this is, you know, the security and the ability to scale-up</p>
+      <p begin="00:02:24.070" end="00:02:28.920">to the solutions that you want and then hybrid which is this fun little gecko with</p>
+      <p begin="00:02:28.920" end="00:02:33.570">a ellison head-on it that's that was actually the best picture define which is sort of</p>
+      <p begin="00:02:33.570" end="00:02:37.700">a hybrid story and we'll spend a few minutes on that both how that fits in and</p>
+      <p begin="00:02:37.700" end="00:02:45.510">then we'll talk more about it when we talk about the template story later so that's actually the fun picture there so just</p>
+      <p begin="00:02:45.510" end="00:02:49.170">...microscope effective you saw this a little bit from scott this morning, you know,</p>
+      <p begin="00:02:49.170" end="00:02:54.470">the coverage the global coverage it really the growth has been it really exciting force and we</p>
+      <p begin="00:02:54.470" end="00:02:58.440">have obviously more coming all the time twenty-four team we added the blue dots two</p>
+      <p begin="00:02:58.440" end="00:03:03.600">thousand thirteen where the green dots and you know, the coming soon was the I guess there was two dots their</p>
+      <p begin="00:03:03.600" end="00:03:09.780">meta one big dot for the ones that we've announce already in india?</p>
+      <p begin="00:03:09.780" end="00:03:14.360">For me scaling...perspective excuse me scaling our perspective we really sort of want</p>
+      <p begin="00:03:14.360" end="00:03:18.650">to make sure the platform can handle all forms of scale out in</p>
+      <p begin="00:03:18.650" end="00:03:23.620">this really is some of the aspects of hyper scale that we think of it's not just the fact that</p>
+      <p begin="00:03:23.620" end="00:03:27.960">were in nineteen going on twenty-one regions but is also that those reasons have</p>
+      <p begin="00:03:27.960" end="00:03:33.020">regions have a ton of capacity and we know this because...host the capacity to run</p>
+      <p begin="00:03:33.020" end="00:03:38.700">our other services in them so the ability to scale out and handle that capacities very</p>
+      <p begin="00:03:38.700" end="00:03:44.090">...be important for you as your services grow out now scaling is not all the same thing</p>
+      <p begin="00:03:44.090" end="00:03:47.960">...give you some ideas of some of the things about scale out that we think about,</p>
+      <p begin="00:03:47.960" end="00:03:52.210">you know, this example here on the right lots of scaling up and down being able to</p>
+      <p begin="00:03:52.210" end="00:03:56.770">...massive growth in a very short period of time and then being able to scale back when</p>
+      <p begin="00:03:56.770" end="00:04:01.760">it's not needed some examples of this the asher batch service that we have an http insight which is our</p>
+      <p begin="00:04:01.760" end="00:04:07.010">who dupes service handle this type of frequent and fast scaling one of the things that I'll</p>
+      <p begin="00:04:07.010" end="00:04:12.220">talk about when I spend time on templates later one of the capabilities that we've added with</p>
+      <p begin="00:04:12.220" end="00:04:16.880">templates is fast parallel deployment so for those who have use the platform maybe</p>
+      <p begin="00:04:16.880" end="00:04:20.650">you're using our...written directly to the rest api or the accuracy</p>
+      <p begin="00:04:20.650" end="00:04:24.540">alive you may in the passive hit some locking errors right you</p>
+      <p begin="00:04:24.540" end="00:04:27.890">try to deploy one and then another vm really quickly after it and we said</p>
+      <p begin="00:04:27.890" end="00:04:32.700">hold on we're not done thinking about the first one so, that a lot of that's going to get better</p>
+      <p begin="00:04:32.700" end="00:04:36.930">and change with this type of scenario in mind so html</p>
+      <p begin="00:04:36.930" end="00:04:42.950">...actually is one of our most friendly partners deploying on the platform in that they</p>
+      <p begin="00:04:42.950" end="00:04:47.630">really push as hard to deploy lots and lots of...really quickly if you</p>
+      <p begin="00:04:47.630" end="00:04:52.630">...demo this morning if you were in...session he didn't actually hit the deployed button on the may so</p>
+      <p begin="00:04:52.630" end="00:04:55.850">...cluster but we've been able to deploy in the preview of</p>
+      <p begin="00:04:55.850" end="00:05:00.720">this new api upwards of about five hundred six hundred gm's in about, you know,</p>
+      <p begin="00:05:00.720" end="00:05:05.210">five for five minutes when they're running linux windows it takes a little longer for them to</p>
+      <p begin="00:05:05.210" end="00:05:08.790">start so this is really a big goal of ours is both having the</p>
+      <p begin="00:05:08.790" end="00:05:12.770">...handle this and then having the api to be able to handle the</p>
+      <p begin="00:05:12.770" end="00:05:16.610">calls and request that you have and this is a lot of the passion and goal around this</p>
+      <p begin="00:05:16.610" end="00:05:21.640">new api on top of this other types of scaling solutions things like</p>
+      <p begin="00:05:21.640" end="00:05:27.350">sequel database which ...actually runs on top of service fabric which was announced this morning and,</p>
+      <p begin="00:05:27.350" end="00:05:31.120">of course that runs on top of the same sort of virtual machine infrastructure that we're talking</p>
+      <p begin="00:05:31.120" end="00:05:35.960">about very different scaling pattern right this is much more focused on three maybe</p>
+      <p begin="00:05:35.960" end="00:05:40.650">...instances it ends up doing replication across them typically</p>
+      <p begin="00:05:40.650" end="00:05:45.210">it's mostly growing and rarely shrinking as the data goes up you typically don't</p>
+      <p begin="00:05:45.210" end="00:05:49.050">go back down but the key and critical point for this type</p>
+      <p begin="00:05:49.050" end="00:05:54.000">of scale is to make sure your maintaining quorum right and this is actually feedback we hear from the</p>
+      <p begin="00:05:54.000" end="00:05:59.920">sequel team and feedback we've heard from the excuse me the data...team</p>
+      <p begin="00:05:59.920" end="00:06:04.830">at the guys running cassandra making sure that they can maintain quorum...a critical part of scale</p>
+      <p begin="00:06:04.830" end="00:06:09.050">out so one of the things that we have today this concept and availability</p>
+      <p begin="00:06:09.050" end="00:06:13.710">set you can make sure that you keep this high availability bryan we'll talk about it...</p>
+      <p begin="00:06:13.710" end="00:06:18.540">the big changes with the new api that...announcing we actually have up to three fault domains now not just</p>
+      <p begin="00:06:18.540" end="00:06:23.030">too so it allows you to build these type of quorum systems in a much cleaner and higher</p>
+      <p begin="00:06:23.030" end="00:06:29.110">available way and then sort of the last one which is actually service fabric as a good example which is more of a</p>
+      <p begin="00:06:29.110" end="00:06:33.910">...structure and this ends up scaling based on the replicated</p>
+      <p begin="00:06:33.910" end="00:06:38.660">nature of that of that solution cassandra looks very similar to this where it ends up building these</p>
+      <p begin="00:06:38.660" end="00:06:43.450">...and has to scale out and this is where sort of making sure communication between your instances is going</p>
+      <p begin="00:06:43.450" end="00:06:48.160">to be fast so, for all of these we feel really excited about having the</p>
+      <p begin="00:06:48.160" end="00:06:52.820">iso platform being able to host them to enable these types of solutions that can sit right on</p>
+      <p begin="00:06:52.820" end="00:06:59.360">top and scale as needed with the capacity to grow based on customer demand?</p>
+      <p begin="00:06:59.360" end="00:07:04.190">So, enterprise grade when we think about enterprise great I'll try and I'll try and be quick on this one there's sort of</p>
+      <p begin="00:07:04.190" end="00:07:08.030">two big aspects one is security and,</p>
+      <p begin="00:07:08.030" end="00:07:12.930">the other is scale-up not to be confused with what I just walk through with scale out and the</p>
+      <p begin="00:07:12.930" end="00:07:17.110">ability to deploy whatever types of solutions are applications you may want.</p>
+      <p begin="00:07:17.110" end="00:07:20.410">So, for security...primary mechanism for security</p>
+      <p begin="00:07:20.410" end="00:07:24.870">these this is a data center that we actually have our primary mechanism for security is we</p>
+      <p begin="00:07:24.870" end="00:07:29.220">have one person that pretty much just sits there and watches now...we do</p>
+      <p begin="00:07:30.900" end="00:07:33.870">...there are more people that would've been like a roaring laughter.</p>
+      <p begin="00:07:34.910" end="00:07:40.490">Like...has whoever that was front-row here we gookay,</p>
+      <p begin="00:07:40.490" end="00:07:44.460">so, let me walk you through a little bit of the approach that we have to securityI</p>
+      <p begin="00:07:44.460" end="00:07:49.800">want-to make sure that I touch upon it we won't talk too much about it throughout but I think is really critical sort</p>
+      <p begin="00:07:49.800" end="00:07:54.600">of lay the ground the groundwork for security so the primary aspects</p>
+      <p begin="00:07:54.600" end="00:07:59.520">...we think of this and sort-of for concentric rings in as...all up right this isn't just I</p>
+      <p begin="00:07:59.520" end="00:08:03.980">...but we end up having to think about it a lot since we're sort of the lois layer the</p>
+      <p begin="00:08:03.980" end="00:08:09.040">...physical this is we lock-down data centers we lock-down</p>
+      <p begin="00:08:09.040" end="00:08:14.210">make sure that access has to have to factor off we make sure that we have cameras and,</p>
+      <p begin="00:08:14.210" end="00:08:18.610">barriers so on and this is really an important part...just assumed</p>
+      <p begin="00:08:18.610" end="00:08:23.580">part of the security story that we have when you go in from there the next one is really on our</p>
+      <p begin="00:08:23.580" end="00:08:28.430">ability to secure the software and this is sort of years and years of training</p>
+      <p begin="00:08:28.430" end="00:08:33.960">and learning in app in microsoft to be able to secure software in general so,</p>
+      <p begin="00:08:33.960" end="00:08:35.800">understanding how to do forensics</p>
+      <p begin="00:08:35.800" end="00:08:39.080">...when things are happening that don't look normal</p>
+      <p begin="00:08:39.080" end="00:08:43.680">...how to do penetration testing on our own software one of the things to think about when you look at</p>
+      <p begin="00:08:43.680" end="00:08:45.980">sort of klout and security models of</p>
+      <p begin="00:08:45.980" end="00:08:50.950">cloud the amount of data we have coming in is a gigantic compared to really</p>
+      <p begin="00:08:50.950" end="00:08:55.860">any individual provider of...infrastructure so we can see global trends on attacks</p>
+      <p begin="00:08:55.860" end="00:09:00.410">and viruses so on much quicker and we use that to be able to protect the system and</p>
+      <p begin="00:09:00.410" end="00:09:06.020">protect your applications as they deploy the next...then...security we offer you and brides going</p>
+      <p begin="00:09:06.020" end="00:09:11.020">to go into detail across a few of these areas but just to give you kind of a sense of the things we offer one</p>
+      <p begin="00:09:11.020" end="00:09:16.020">is the ability to have isolated and secure virtual networks and again with the new api to be</p>
+      <p begin="00:09:16.020" end="00:09:20.390">able to completely manage them in a template base format but then also</p>
+      <p begin="00:09:20.390" end="00:09:24.680">manage them in an imperative way using our shown the scripting...</p>
+      <p begin="00:09:24.680" end="00:09:30.470">that we offer so we'll talk a little bit later about that being able to control down access</p>
+      <p begin="00:09:30.470" end="00:09:35.140">across those virtual networks using accolade or security groups which are also part of the new api</p>
+      <p begin="00:09:35.140" end="00:09:39.710">as you can control the security groups and you can make sure that specific only specific ports</p>
+      <p begin="00:09:39.710" end="00:09:44.460">can be access between each other and you can lock-down a different areas to really make sure your</p>
+      <p begin="00:09:44.460" end="00:09:49.310">tears are under control address directory as the primary an primary</p>
+      <p begin="00:09:49.310" end="00:09:54.080">identity story so you can login and make sure that your access to the virtual machines</p>
+      <p begin="00:09:54.080" end="00:09:58.640">is restricted only to those who should get it using...access control and,</p>
+      <p begin="00:09:58.640" end="00:10:03.070">then the last...sort of go together security appliances we have a few of these already in</p>
+      <p begin="00:10:03.070" end="00:10:08.400">place we have a lot more coming down the road things like ...to be able to</p>
+      <p begin="00:10:08.400" end="00:10:12.480">lock-down your network and make sure that your securing it using a virtual appliance that deploys</p>
+      <p begin="00:10:12.480" end="00:10:16.750">...a vm and we see a lot of excitement...interest in that as we see more</p>
+      <p begin="00:10:16.750" end="00:10:22.430">and more enterprises deploying into asher with sort of a connection back home.</p>
+      <p begin="00:10:22.430" end="00:10:23.560">And, then the last of these</p>
+      <p begin="00:10:23.560" end="00:10:28.460">...concentric rings is the virtual machine and we have a few areas here</p>
+      <p begin="00:10:28.460" end="00:10:34.000">that we really like to secure one is we offer anti mahler so we offer free</p>
+      <p begin="00:10:34.000" end="00:10:38.840">...on windows that you can just click and deploy and we'll put that on your box without,</p>
+      <p begin="00:10:38.840" end="00:10:43.590">without asking you any questions we also offer a and ten-hour from partners that you can</p>
+      <p begin="00:10:43.590" end="00:10:48.430">deploy both on windows and on linux and it enables a lot of</p>
+      <p begin="00:10:48.430" end="00:10:50.130">...very easy to configuring</p>
+      <p begin="00:10:50.130" end="00:10:55.680">...and actually bryan will talk about that when he talked about extensions like I mentioned already role</p>
+      <p begin="00:10:55.680" end="00:11:00.630">base access control integrated with abstracted director a and being able to use that to</p>
+      <p begin="00:11:00.630" end="00:11:05.350">lock-down who can access what with the logging in auditing to match that to make sure you can see who</p>
+      <p begin="00:11:05.350" end="00:11:10.350">tried...a and make sure that you're that you're watching that and then the last key point</p>
+      <p begin="00:11:10.350" end="00:11:15.310">here is the key point great pun is key vault and this is a</p>
+      <p begin="00:11:15.310" end="00:11:20.160">service that's in preview right now and what this is both software and hardware</p>
+      <p begin="00:11:20.160" end="00:11:24.090">backed a keys and, secrets that you can put into our</p>
+      <p begin="00:11:24.090" end="00:11:27.360">...our...that allow you to use it for things like</p>
+      <p begin="00:11:27.360" end="00:11:32.560">encryption you can use it for things like passwords I...it offers a lot of control</p>
+      <p begin="00:11:32.560" end="00:11:37.100">their for passwords it ends up just storing it but for keys you can actually put asymmetric</p>
+      <p begin="00:11:37.100" end="00:11:41.690">keys for those who are super passion about keys and security you have...asymmetric</p>
+      <p begin="00:11:41.690" end="00:11:46.480">keys and actually run all your encryption through the system they never leave the box right so they're tied to that</p>
+      <p begin="00:11:46.480" end="00:11:51.140">ager sem they can't get off and it ends up being a very secure solution so</p>
+      <p begin="00:11:51.140" end="00:11:53.170">that's deeply integrated with gm's you can do</p>
+      <p begin="00:11:53.170" end="00:11:58.090">...the sequel server databases on there and encrypted and we'll have more and more integration with</p>
+      <p begin="00:11:58.090" end="00:12:01.540">key...over time okay?</p>
+      <p begin="00:12:01.540" end="00:12:02.260">And, the scale</p>
+      <p begin="00:12:02.260" end="00:12:08.310">options the really the way we look at this is we look at sort of the spectrum of high-value</p>
+      <p begin="00:12:08.310" end="00:12:13.460">and larger-scale up and you so you sort of...two slides one that she gave examples of using</p>
+      <p begin="00:12:13.460" end="00:12:17.600">...for scale...and it scenarios like hd insight and then</p>
+      <p begin="00:12:17.600" end="00:12:21.700">...solutions that required for scale-up scenarios a great one is, you know,</p>
+      <p begin="00:12:21.700" end="00:12:26.600">a big sequel database that you may want to deploy or even a large my sequel box that you want to</p>
+      <p begin="00:12:26.600" end="00:12:29.470">deploy you can use the scale-up sizes the</p>
+      <p begin="00:12:29.470" end="00:12:32.200">...series with four hundred forty eight</p>
+      <p begin="00:12:32.200" end="00:12:37.930">gig of memory on the box and you can use that with premium storage and,</p>
+      <p begin="00:12:37.930" end="00:12:42.870">you can get the fastest speed possible with the largest vm sizes to run those really monde</p>
+      <p begin="00:12:42.870" end="00:12:47.820">...so the overall idea is how do we make sure we can run any workload in any way</p>
+      <p begin="00:12:47.820" end="00:12:52.950">and as you look at some of the enterprise grade lift and shift type scenarios or at least partial</p>
+      <p begin="00:12:52.950" end="00:12:57.380">...or using components from the from the on prim environment into the</p>
+      <p begin="00:12:57.380" end="00:13:00.480">cloud the start becoming really exciting options for you</p>
+      <p begin="00:13:01.710" end="00:13:07.340">okay and then the last one which all...the three to talk about is the connectivity</p>
+      <p begin="00:13:07.340" end="00:13:11.810">side and we sort of really focus on connectivity in three ways like I said</p>
+      <p begin="00:13:11.810" end="00:13:16.430">we have the virtual the virtual network support where you can lock-down and gives</p>
+      <p begin="00:13:16.430" end="00:13:20.640">...actually selected the ip addresses that each one your virtual machines will get in the</p>
+      <p begin="00:13:20.640" end="00:13:25.460">cloud but they need to figure out how to connect and three options we have one is called</p>
+      <p begin="00:13:25.460" end="00:13:29.320">point to site which uses and sl base connectivityand,</p>
+      <p begin="00:13:29.320" end="00:13:33.530">what this enables is you can actually connect just from your local box using a vp</p>
+      <p begin="00:13:33.530" end="00:13:37.470">...environment and be able to treat the entire cloud is just an extension of a vp</p>
+      <p begin="00:13:37.470" end="00:13:41.650">n of your local box and I have a slide...describing that the other two are a</p>
+      <p begin="00:13:41.650" end="00:13:45.610">little bit more involved the next one is a vp and us</p>
+      <p begin="00:13:45.610" end="00:13:50.400">cost site to site and that requires a full vp and physical device to</p>
+      <p begin="00:13:50.400" end="00:13:55.400">becooked up or could be running as actually a virtual device using windows serverbut,</p>
+      <p begin="00:13:55.400" end="00:13:59.480">that requires...of vp and dedicated machine and that exposes both</p>
+      <p begin="00:13:59.480" end="00:14:02.300">sites fully so your entire enterprise site</p>
+      <p begin="00:14:02.300" end="00:14:07.300">...your entire site in as your this typically requires more involvement from the</p>
+      <p begin="00:14:07.300" end="00:14:10.750">ip pro staff right they have to get involved in sort of hooked us up and make sure the</p>
+      <p begin="00:14:10.750" end="00:14:15.990">connectivity is going to work so on it takes a little bit more time to get going ...the point to</p>
+      <p begin="00:14:15.990" end="00:14:20.250">site...express route and I'm not really it's been a lot of time on this but this is the</p>
+      <p begin="00:14:20.250" end="00:14:25.580">ability to work with these togo providers and get this sort of hardline into asher</p>
+      <p begin="00:14:25.580" end="00:14:30.360">it's typically mp less based connectivity folks like eighteen...</p>
+      <p begin="00:14:30.360" end="00:14:35.490">etc you can also hook up your stuff into a carrier hotel god-like equal x and,</p>
+      <p begin="00:14:35.490" end="00:14:38.190">you know, put in your own box in there and use that</p>
+      <p begin="00:14:38.190" end="00:14:43.350">...your connectivity mechanism as well so these obviously have a lot more throughput have dedicated lines</p>
+      <p begin="00:14:43.350" end="00:14:46.070">etc so across these three right you have</p>
+      <p begin="00:14:46.070" end="00:14:49.680">the very simple very fast very dev focused option of the</p>
+      <p begin="00:14:49.680" end="00:14:53.380">...point to site and then much more sort of full enterprise</p>
+      <p begin="00:14:53.380" end="00:14:59.980">full connectivity option dedicated line at the bottom with express route?</p>
+      <p begin="00:14:59.980" end="00:15:03.940">So, just to kinda give you a little bit more details on point...site if you had</p>
+      <p begin="00:15:03.940" end="00:15:08.970">instead of virtual machines running asher you know, front-end and back-end maybe on different subnet</p>
+      <p begin="00:15:08.970" end="00:15:13.670">right you may have just assign them all just relatively random ip addresses but they are running in</p>
+      <p begin="00:15:13.670" end="00:15:18.390">a virtual network and, you want to connect to them and do work on the right but you don't actually</p>
+      <p begin="00:15:18.390" end="00:15:22.750">...open them up to the public internetmaybe they maybe they're just facing internal sites</p>
+      <p begin="00:15:22.750" end="00:15:26.940">or internal solutions so what you can actually do with the bp and connection you</p>
+      <p begin="00:15:26.940" end="00:15:31.160">can treat them all like an extension on your box what this does is it sets a</p>
+      <p begin="00:15:31.160" end="00:15:36.390">...and connection so that it can work with a gateway that sits on our side and actually</p>
+      <p begin="00:15:36.390" end="00:15:40.620">rewrite outs the traffic on your local box to rewrite it through that</p>
+      <p begin="00:15:40.620" end="00:15:45.540">vp and into asher so it does actually restricted just to</p>
+      <p begin="00:15:45.540" end="00:15:50.470">your local box so your entire enterprise doesn't connect to it also just goes to</p>
+      <p begin="00:15:50.470" end="00:15:54.750">...four-three which means that typically no additional porting to be open</p>
+      <p begin="00:15:54.750" end="00:15:59.460">...needs to be called a you typically can make that connection and actually not have any other person</p>
+      <p begin="00:15:59.460" end="00:16:04.860">involved very much a dev friendly dev focus option free to deploy...so,</p>
+      <p begin="00:16:04.860" end="00:16:09.620">there's a few steps you have to install certain make sure the search, you know, it's a secure connection so on</p>
+      <p begin="00:16:09.620" end="00:16:17.320">but, it's a very powerful option for really fast connectivity into...</p>
+      <p begin="00:16:17.320" end="00:16:20.760">And, just kind of extended I'll talk again when I talk about the template</p>
+      <p begin="00:16:20.760" end="00:16:26.180">story later consistency story is a major portion of our overall strategy when it</p>
+      <p begin="00:16:26.180" end="00:16:30.640">comes to hybrid...and the ability to have a single place to deploy all of your</p>
+      <p begin="00:16:30.640" end="00:16:33.230">...excuse me a single platform to deploy all</p>
+      <p begin="00:16:33.230" end="00:16:38.180">your apps the template language that we're going to detail later this is the same template language that</p>
+      <p begin="00:16:38.180" end="00:16:43.500">you will see coming through for our private and hosted cloud stories which is our asher</p>
+      <p begin="00:16:43.500" end="00:16:46.380">...and this is the ability to take effectively</p>
+      <p begin="00:16:46.380" end="00:16:52.070">as your platform and launched onto a set of machines running on prim or in a hosted environment</p>
+      <p begin="00:16:52.070" end="00:16:57.130">so the benefit in our of this is actually really exciting with this new template language you</p>
+      <p begin="00:16:57.130" end="00:17:01.180">can model of fairly involved application which I'll show you an that</p>
+      <p begin="00:17:01.180" end="00:17:05.720">barely involved application will then be able to launch private cloudhostinguk cloud public</p>
+      <p begin="00:17:05.720" end="00:17:09.120">cloud and the exact same...result will come out of it</p>
+      <p begin="00:17:09.120" end="00:17:13.770">...the same solution that works and doesn't typically need to be fully tested again so</p>
+      <p begin="00:17:13.770" end="00:17:17.790">it's a really powerful...multi...option that we're hoping to enable</p>
+      <p begin="00:17:17.790" end="00:17:21.940">as part of this as your...story we actually do have a large set of</p>
+      <p begin="00:17:21.940" end="00:17:26.610">partners so the purple dots that are that are now growing onto the map</p>
+      <p begin="00:17:26.610" end="00:17:31.510">show some of the...os partners that we have in these are the folks that are running the asher</p>
+      <p begin="00:17:31.510" end="00:17:35.170">...today in production so we'll see that</p>
+      <p begin="00:17:35.170" end="00:17:39.840">continue to grow over time you can see sort of at places where maybe we don't have an</p>
+      <p begin="00:17:39.840" end="00:17:44.660">asher environment available a or places that maybe there's additional security requirements</p>
+      <p begin="00:17:44.660" end="00:17:48.060">...requirements these are hosted in private clouds that are</p>
+      <p begin="00:17:48.060" end="00:17:52.780">starting to see the benefit of that asher...again over time we'll see more and more this</p>
+      <p begin="00:17:52.780" end="00:17:57.560">grow we actually already have more than a hundred countries...six hundred local data centers</p>
+      <p begin="00:17:57.560" end="00:18:02.270">...world-class partners and...customers deployed on it every day so it's</p>
+      <p begin="00:18:02.270" end="00:18:06.790">very exciting aspect to our overall story and the template language really should</p>
+      <p begin="00:18:06.790" end="00:18:11.670">tight together ok so that's kind of...overview section I'm going to turn</p>
+      <p begin="00:18:11.670" end="00:18:15.990">...bryant's rossi now who's going to give you some of the foundational infrastructure the</p>
+      <p begin="00:18:15.990" end="00:18:21.200">service content...you how this system works what it does in the back-end when you ask</p>
+      <p begin="00:18:21.200" end="00:18:24.820">...to do things and then all of take back over for what's new so, come on,</p>
+      <p begin="00:18:24.820" end="00:18:31.520">up right great thanks very good thank you very scary...of clicker word clicker?</p>
+      <p begin="00:18:31.520" end="00:18:36.280">Fatherless known so my...as mentioned...bryant's rossi</p>
+      <p begin="00:18:36.280" end="00:18:42.170">...principle program manager on...so the as your computes engineering team</p>
+      <p begin="00:18:42.170" end="00:18:47.120">...next few minutes what I want to do is talk about some of the building blocks that make-up</p>
+      <p begin="00:18:47.120" end="00:18:51.880">infrastructures...service...as your we'll take a look at the things like the</p>
+      <p begin="00:18:51.880" end="00:18:57.040">storagecomponents the compute components as well as networking also</p>
+      <p begin="00:18:57.040" end="00:19:01.340">spend a little bit of time in some...just...highlighting what it is that we're talking about those</p>
+      <p begin="00:19:01.340" end="00:19:05.500">...mentioned all hand-up back over to korea the end who's going to give you some insight</p>
+      <p begin="00:19:05.500" end="00:19:10.290">in some of the new announcements that we've recently made some of the new technologies and where we're kind of</p>
+      <p begin="00:19:10.290" end="00:19:15.500">taking as you're in the future so we thought let's go ahead and delvin?</p>
+      <p begin="00:19:15.500" end="00:19:16.780">Let's start with storage.</p>
+      <p begin="00:19:17.930" end="00:19:20.020">So, I saw mostly...went up and said that</p>
+      <p begin="00:19:20.020" end="00:19:23.570">...created virtual machines in as you're if that is the case that,</p>
+      <p begin="00:19:23.570" end="00:19:27.990">you know, that typically when you create a virtual machine you be assigned to...</p>
+      <p begin="00:19:27.990" end="00:19:32.250">By default...virtual machine if you're running a windows operating system in the via</p>
+      <p begin="00:19:32.250" end="00:19:37.410">...obviously show up as a see drive-in...the drive the see...your system drive</p>
+      <p begin="00:19:37.410" end="00:19:41.960">this is typically where you're going to dropthe windows installation any other application</p>
+      <p begin="00:19:41.960" end="00:19:45.200">installation that you have inside the virtual machine the</p>
+      <p begin="00:19:45.200" end="00:19:50.320">see drive does have the potential for...so for you know,</p>
+      <p begin="00:19:50.320" end="00:19:54.900">both read and write cashthis is based on the as your blob underlining</p>
+      <p begin="00:19:54.900" end="00:20:00.100">stored system in addition we give you a d drive the...drive is a temporary</p>
+      <p begin="00:20:00.100" end="00:20:04.960">disk don't ever get confused by that it is not...a persistent</p>
+      <p begin="00:20:04.960" end="00:20:09.780">disk that comes with no...lays it's not using the same kind of persistent</p>
+      <p begin="00:20:09.780" end="00:20:14.760">storage that the system drive is so this is a great drive to put, you know,</p>
+      <p begin="00:20:14.760" end="00:20:19.540">temporary log files anything that doesn't need to persist anything that doesn't need to</p>
+      <p begin="00:20:19.540" end="00:20:21.800">...continue along with the via</p>
+      <p begin="00:20:21.800" end="00:20:27.780">...life additionally you can add a number of disks as data</p>
+      <p begin="00:20:27.780" end="00:20:30.910">discs so this...obviously...e driver</p>
+      <p begin="00:20:30.910" end="00:20:36.500">f drive based on the size of virtual machine you select we...the ability to</p>
+      <p begin="00:20:36.500" end="00:20:41.320">go up to sixty-four additional...attached to a single virtual machine the</p>
+      <p begin="00:20:41.320" end="00:20:47.620">...running away from me about even clicking and...moving...a move on mover so,</p>
+      <p begin="00:20:47.620" end="00:20:49.140">you can add touch up to sixty-four</p>
+      <p begin="00:20:49.140" end="00:20:53.830">additional data distort running virtual machine and just like the primary system drive it</p>
+      <p begin="00:20:53.830" end="00:21:01.010">is based on the algebra blob storage this is the standard blob storage underneath?</p>
+      <p begin="00:21:01.010" end="00:21:05.300">Now one thing that we get by default here and this is what really you know,</p>
+      <p begin="00:21:05.300" end="00:21:09.020">a data assurance statement is every time you do</p>
+      <p begin="00:21:09.020" end="00:21:12.480">...right so...the system driver one of these data</p>
+      <p begin="00:21:12.480" end="00:21:16.800">...are actually doing it in triple kit so this is ensuring that</p>
+      <p begin="00:21:16.800" end="00:21:22.390">no single drive can you...single drive loss would take down any data</p>
+      <p begin="00:21:22.390" end="00:21:27.130">so every time we do a right before it comes back and says the right as finished we've actually done it</p>
+      <p begin="00:21:27.130" end="00:21:32.310">in triple kit on three separate drives on the system that's...to ensure that no single</p>
+      <p begin="00:21:32.310" end="00:21:37.080">drive failure will take down your data this gives you the high durability that we need this is</p>
+      <p begin="00:21:37.080" end="00:21:41.940">the allay that were kind of promising with the underlining storage as well</p>
+      <p begin="00:21:41.940" end="00:21:44.870">as I mentioned we allow for up to sixty-four terabytes</p>
+      <p begin="00:21:45.940" end="00:21:50.440">...sixty-four single one terabyte drives that can be attach</p>
+      <p begin="00:21:50.440" end="00:21:53.890">...obvious use a storage pool to...the all of these together</p>
+      <p begin="00:21:55.170" end="00:21:59.760">...we're talking about right here we're going to talk about some of the advance storage options...a minute but</p>
+      <p begin="00:21:59.760" end="00:22:05.520">here we're talking about the spinning spindle drugs so we're seeing about five hundred I out</p>
+      <p begin="00:22:05.520" end="00:22:10.490">spur drive so if you were to take all sixty-four of these dries put them in a stripes set</p>
+      <p begin="00:22:10.490" end="00:22:22.300">...be seeing approximately thirty two thousand ...across the drug disk pool.</p>
+      <p begin="00:22:22.300" end="00:22:25.450">Okay, so, we talked about the fact that we're writing everything and triple</p>
+      <p begin="00:22:25.450" end="00:22:29.460">...across three different drives that protects against a single drive failure</p>
+      <p begin="00:22:29.460" end="00:22:34.210">in addition we have ways to protect against a regional disaster</p>
+      <p begin="00:22:34.210" end="00:22:38.710">one datacenter going down this is called geo replication so we have</p>
+      <p begin="00:22:38.710" end="00:22:43.700">the ability to copy your disks and your data in your virtual machines to another local</p>
+      <p begin="00:22:43.700" end="00:22:48.340">...should say regional location datacenter...kind of a balancing act here we're trying to</p>
+      <p begin="00:22:48.340" end="00:22:52.970">do two things the first thing we're trying to do is put far enough away that</p>
+      <p begin="00:22:52.970" end="00:22:57.300">a natural disaster type of event wouldn't take down both the datacenter so typically</p>
+      <p begin="00:22:57.300" end="00:23:01.570">their over four hundred miles away the second thing that we're trying to do is</p>
+      <p begin="00:23:01.570" end="00:23:06.910">...that geopolitical boundaries are still maintained so when you're deploying your virtual machines</p>
+      <p begin="00:23:06.910" end="00:23:11.190">your considering where the...are being deployed you might be under constraints</p>
+      <p begin="00:23:11.190" end="00:23:16.110">regarding geopolitical boundaries you might have compliance boundaries maybe you're in a particular industry</p>
+      <p begin="00:23:16.110" end="00:23:19.400">...vertical that requires you to...data one location so</p>
+      <p begin="00:23:19.400" end="00:23:24.070">we're doing geo replica we're not actually taking something that's in europe and</p>
+      <p begin="00:23:24.070" end="00:23:27.500">...over the united states instead we're trying to keep it</p>
+      <p begin="00:23:27.500" end="00:23:31.920">within those geopolitical boundaries and that's what you see on the map here so</p>
+      <p begin="00:23:31.920" end="00:23:36.270">the common color-coded dots indicate the regional datacenters that</p>
+      <p begin="00:23:36.270" end="00:23:40.740">we're doing geo replication across so you can see there, for example, in europe we have the to</p>
+      <p begin="00:23:40.740" end="00:23:51.560">browned dots again we're not doing a copy across these boundaries.</p>
+      <p begin="00:23:51.560" end="00:23:56.510">So, in addition to the algebra blob storage we also have algebra files</p>
+      <p begin="00:23:56.510" end="00:24:01.450">measure files is currently and preview as your files is basically another way that you</p>
+      <p begin="00:24:01.450" end="00:24:05.810">can attach storage and the...there's you can enable smb.</p>
+      <p begin="00:24:05.810" end="00:24:09.720">So, we're actually using sm btwo dot one so if you wanted if a shared</p>
+      <p begin="00:24:09.720" end="00:24:14.100">of file location or multiple virtual machines are accessing the same file share</p>
+      <p begin="00:24:14.100" end="00:24:18.990">the same time this is the way that you want to do it all actually short briefly in a demo</p>
+      <p begin="00:24:18.990" end="00:24:23.610">in a little bit again, it's currently in preview if you're interested in that feature...go to the</p>
+      <p begin="00:24:23.610" end="00:24:28.780">previous site sign up for it and they'll give you ability to the portal to go ahead and install</p>
+      <p begin="00:24:28.780" end="00:24:31.830">asher files so anything that you want to share, you know,</p>
+      <p begin="00:24:31.830" end="00:24:35.900">if you have shared settings if you have diagnostic information that you want to</p>
+      <p begin="00:24:35.900" end="00:24:38.080">share across multiple virtual machines if you</p>
+      <p begin="00:24:38.080" end="00:24:42.740">have application installation packages that you want...multiple virtual machines</p>
+      <p begin="00:24:42.740" end="00:24:50.060">is a great tool to use for those purposes.</p>
+      <p begin="00:24:50.060" end="00:24:52.380">Either as...mentions we've recently</p>
+      <p begin="00:24:52.380" end="00:24:56.680">announced premium storage with premium storage you can attach up to thirty-two</p>
+      <p begin="00:24:56.680" end="00:25:01.610">terabytes of storage per virtual machine we're seeing over sixty thousand sixty four</p>
+      <p begin="00:25:01.610" end="00:25:04.330">thousand...out per vm and a single</p>
+      <p begin="00:25:04.330" end="00:25:09.300">disc is seeing about fifty thousand audio ops we also and I'll show you in the you why</p>
+      <p begin="00:25:09.300" end="00:25:14.580">where you can enable and disable this but if you enable the cash without the cash</p>
+      <p begin="00:25:14.580" end="00:25:20.430">you're seeing about five milliseconds rewrite time and...with the cache of turned</p>
+      <p begin="00:25:20.430" end="00:25:24.840">...less than one millisecond latency for read operations against</p>
+      <p begin="00:25:24.840" end="00:25:29.170">the virtual machine it's great for dared data warehousing solutions if</p>
+      <p begin="00:25:29.170" end="00:25:32.990">you're building applications and workloads...really require fast</p>
+      <p begin="00:25:32.990" end="00:25:42.670">and scalable storage the premium storage is the way to go.</p>
+      <p begin="00:25:42.670" end="00:25:46.270">So, just visualy depiction again,</p>
+      <p begin="00:25:46.270" end="00:25:51.200">same kind of thing we now have three different locations you can go down...blobs you can go to</p>
+      <p begin="00:25:51.200" end="00:25:55.590">add your files and you can also go down to premium storage and this again applies to</p>
+      <p begin="00:25:55.590" end="00:26:03.210">your system this as well as any additional data...that you want...to the virtual machine.</p>
+      <p begin="00:26:03.210" end="00:26:08.020">The one thing I want to talk about and I'll show you where it is in the ui as well we have the concept of</p>
+      <p begin="00:26:08.020" end="00:26:11.080">virtual machine images so the key here</p>
+      <p begin="00:26:11.080" end="00:26:15.910">is basically taking a snapshot of the virtual machine and all of the attached</p>
+      <p begin="00:26:15.910" end="00:26:19.620">drives let's say I have a vienna has thirty-two attach drives I want to</p>
+      <p begin="00:26:19.620" end="00:26:24.370">go ahead and replicate that image and maybe deploy over and over again this is</p>
+      <p begin="00:26:24.370" end="00:26:27.470">a one-click button you can also obviously also do with the our</p>
+      <p begin="00:26:27.470" end="00:26:32.900">...to basically take a snapshot of that virtual machine that works regardless of</p>
+      <p begin="00:26:32.900" end="00:26:36.900">your using since proper...so a lot of people create a virtual machine</p>
+      <p begin="00:26:36.900" end="00:26:40.650">...sanitize it all censure get ready to be used as</p>
+      <p begin="00:26:40.650" end="00:26:45.610">...image they'll go ahead and do virtual machine image snapshot against that and</p>
+      <p begin="00:26:45.610" end="00:26:50.520">then they can go ahead and deploy over and over again additionally if you have all the configuration</p>
+      <p begin="00:26:50.520" end="00:26:53.410">...not...prepped you can do the same thing now</p>
+      <p begin="00:26:53.410" end="00:26:58.450">as we all know you wouldn't necessarily want to deploy it back out on the same network infrastructure</p>
+      <p begin="00:26:58.450" end="00:27:03.800">you run into a ip conflicts...run...issues licensing several pop up</p>
+      <p begin="00:27:03.800" end="00:27:08.660">so there's duplicate virtual machines but if you want...offload the virtual machine maybe you want</p>
+      <p begin="00:27:08.660" end="00:27:13.840">to know debug something maybe if you want to use in your dev devon test environment is a</p>
+      <p begin="00:27:13.840" end="00:27:24.060">really easy method of...entire vm including all of the attach discs?</p>
+      <p begin="00:27:24.060" end="00:27:28.130">All right so let's move over and talk a little bit about computes so</p>
+      <p begin="00:27:28.130" end="00:27:33.000">...mentionedsome of the new sizes of come the market...touch on just briefly here a</p>
+      <p begin="00:27:33.000" end="00:27:37.530">little more in-depth we have a serious we have a number of acer size</p>
+      <p begin="00:27:37.530" end="00:27:42.280">...out there today the...series is a newer class of...</p>
+      <p begin="00:27:42.280" end="00:27:47.260">based on newer processors so the cpu is about sixty percent faster than we see</p>
+      <p begin="00:27:47.260" end="00:27:50.890">in the existing a serious gm's we go up to one hundred</p>
+      <p begin="00:27:50.890" end="00:27:56.660">and twelve gigabytes of memory so other than the eighty-nine serious are largest</p>
+      <p begin="00:27:56.660" end="00:28:01.090">...does what I think is fifty-six gigs the largest non eighty-nine series</p>
+      <p begin="00:28:01.090" end="00:28:05.810">vm here with the tty sears we can go up to one hundred twelve gigs per vm we</p>
+      <p begin="00:28:05.810" end="00:28:11.990">also use local ss the storage now that's not for persistent stores that's actually for caching.</p>
+      <p begin="00:28:11.990" end="00:28:16.680">But, again, that's giving you much faster read access a lower latency times</p>
+      <p begin="00:28:16.680" end="00:28:22.490">and the d series is available in all regions and available today.</p>
+      <p begin="00:28:22.490" end="00:28:23.860">And, then the...we are</p>
+      <p begin="00:28:23.860" end="00:28:28.790">factual refer to this is the godzilla serious because these virtual machines are absolutely mammoth</p>
+      <p begin="00:28:28.790" end="00:28:35.180">...really optimized for data workloadsup to thirty-two cp cpu</p>
+      <p begin="00:28:35.180" end="00:28:38.410">...the largest virtual...up to four hundred</p>
+      <p begin="00:28:38.410" end="00:28:42.120">forty eight gigabytes of ram six-point-five terabytes of local</p>
+      <p begin="00:28:42.120" end="00:28:46.360">...storage it is using the latest intel processors</p>
+      <p begin="00:28:46.360" end="00:28:50.900">in these virtual machines and again, similarly you can attach up to sixty four</p>
+      <p begin="00:28:50.900" end="00:28:58.580">disks to that single...how many people are thinking they're going to use oggi series virtual machine?</p>
+      <p begin="00:28:58.580" end="00:29:03.570">They're fun they're fun all I can say is I like the fact that I don't have to pay for my</p>
+      <p begin="00:29:03.570" end="00:29:08.100">as your consumption because...since can really start out in the so.</p>
+      <p begin="00:29:08.100" end="00:29:12.300">Anyway, so,...version...but I did anyway itself...</p>
+      <p begin="00:29:12.300" end="00:29:16.540">ok so let's talk a little bit more let's keep going availability sets</p>
+      <p begin="00:29:16.540" end="00:29:20.960">so we talked about some of the data redundancy and protection we do want to disclose...you know,</p>
+      <p begin="00:29:20.960" end="00:29:24.260">with the triple...copy we talked about the fact that we do gl</p>
+      <p begin="00:29:24.260" end="00:29:27.650">of replication to make sure that you know,</p>
+      <p begin="00:29:27.650" end="00:29:31.060">if an entire datacenter goes down you have your data images</p>
+      <p begin="00:29:31.060" end="00:29:36.020">another location availability set is another way and this is really how we guarantee</p>
+      <p begin="00:29:36.020" end="00:29:40.630">rs allay so if you're looking for the three nine...nine point nine five percent of</p>
+      <p begin="00:29:40.630" end="00:29:45.930">time really going to...the deploy your virtual machines and what we refer to as and availability</p>
+      <p begin="00:29:45.930" end="00:29:51.360">set this protects against both hardware and software failure on the infrastructure itself</p>
+      <p begin="00:29:51.360" end="00:29:56.150">...supported for both windows and linux environments so essentially what we're doing</p>
+      <p begin="00:29:56.150" end="00:30:00.980">here with availability sets this is a typical rack and obviously we have multiple physical</p>
+      <p begin="00:30:00.980" end="00:30:05.210">machines...feel like the stage is going to have a natural disaster</p>
+      <p begin="00:30:05.210" end="00:30:10.590">right here on the stage...I don't know if...here but every time I take a step...cracking so,</p>
+      <p begin="00:30:10.590" end="00:30:16.300">those are the physical machines in the rack...obviously we also have the</p>
+      <p begin="00:30:16.300" end="00:30:20.550">racks which, you know, the top of racks which we also have the our units and</p>
+      <p begin="00:30:20.550" end="00:30:25.050">...obviously concerned about is what if to of your virtual machines are</p>
+      <p begin="00:30:25.050" end="00:30:29.860">on or what is what if your virtual machine or to virtual machines are working in appear or set</p>
+      <p begin="00:30:29.860" end="00:30:32.400">...load balance set or on the same physical</p>
+      <p begin="00:30:32.400" end="00:30:37.440">...what happens so what we do with availability sets as we make sure that doesn't happen you</p>
+      <p begin="00:30:37.440" end="00:30:40.820">created availability...you add your virtual machine to that</p>
+      <p begin="00:30:40.820" end="00:30:45.720">...and what algebra automatically does ensure that those virtual machines are deployed on</p>
+      <p begin="00:30:45.720" end="00:30:49.840">to physical physically different...within the same datacenter</p>
+      <p begin="00:30:50.850" end="00:30:55.600">...goes down at the our supply goes down...the networks which goes down you can make sure that</p>
+      <p begin="00:30:55.600" end="00:31:00.350">the other virtual machine that's running out workload is not in the same location so again for</p>
+      <p begin="00:31:00.350" end="00:31:02.710">high availability to get those you know,</p>
+      <p begin="00:31:02.710" end="00:31:06.760">ninety nine-point nine five percent up time desolate guarantees you</p>
+      <p begin="00:31:06.760" end="00:31:15.550">...want to create availability sets nigger one employer virtual machines into those sets?</p>
+      <p begin="00:31:15.550" end="00:31:20.250">All right so let's talk a little bit about networking.</p>
+      <p begin="00:31:20.250" end="00:31:25.860">So, load balancing...the soften times goes hand-in-hand with availability sets as well.</p>
+      <p begin="00:31:25.860" end="00:31:29.500">It asher we have the ability to essentially set up a very easy and</p>
+      <p begin="00:31:29.500" end="00:31:33.700">quick load balancing set and do load balancing in this example here</p>
+      <p begin="00:31:33.700" end="00:31:37.570">...load balancing web traffic across port eighty this works</p>
+      <p begin="00:31:37.570" end="00:31:42.420">for both internal and external environment so if you have customers coming inagain,</p>
+      <p begin="00:31:42.420" end="00:31:46.960">say wanting to hit a web server host inside of...virtual machine or if you have</p>
+      <p begin="00:31:46.960" end="00:31:51.870">internal clients that are coming through your corporate network that would work as well we support both</p>
+      <p begin="00:31:51.870" end="00:31:56.440">to...and udp traffic we also put for</p>
+      <p begin="00:31:56.440" end="00:32:00.170">...across the traffic and also recent addition is</p>
+      <p begin="00:32:00.170" end="00:32:05.070">client affinity so if you do want to clients to continually get access to the</p>
+      <p begin="00:32:05.070" end="00:32:08.400">same load balance node you can set up</p>
+      <p begin="00:32:08.400" end="00:32:12.170">...affinity...ip addresses as well so you can be assured</p>
+      <p begin="00:32:12.170" end="00:32:14.500">...same client assuming that load balance</p>
+      <p begin="00:32:14.500" end="00:32:23.410">node is available the client will continue to get access that single node?</p>
+      <p begin="00:32:23.410" end="00:32:27.480">So, this is just a graphical depiction of the same thing here regardless of</p>
+      <p begin="00:32:27.480" end="00:32:32.480">...coming internal traffic or external traffic here you can see it's a little hard-to-read but we have</p>
+      <p begin="00:32:32.480" end="00:32:36.470">the load balanced system or service running</p>
+      <p begin="00:32:36.470" end="00:32:41.490">there in front of the web front-end or whatever front-end it is that you're running so all equally</p>
+      <p begin="00:32:41.490" end="00:32:46.510">balance across the web servers additionally of course you can use a load</p>
+      <p begin="00:32:46.510" end="00:32:51.140">balance service in the middle to your as well so,</p>
+      <p begin="00:32:51.140" end="00:32:53.940">you know, if it goes off to a back-end sequel database or</p>
+      <p begin="00:32:53.940" end="00:33:04.950">...like you can also put a load balance service in that location as well.</p>
+      <p begin="00:33:04.950" end="00:33:09.900">So, as I mentioned load balancing kind of goes hand-in-hand with availability</p>
+      <p begin="00:33:09.900" end="00:33:14.610">set so in this case the user comes down to load balance or the load bouncers distributing the</p>
+      <p begin="00:33:14.610" end="00:33:19.470">workloads equally across all the load balance nodes and you've set those load balance nodes</p>
+      <p begin="00:33:19.470" end="00:33:24.460">into and availability set to ensure that are on different...within the datacenter so this is</p>
+      <p begin="00:33:24.460" end="00:33:28.760">assuring that you're not only scaling out the workloads that are coming in or the...</p>
+      <p begin="00:33:28.760" end="00:33:39.250">are coming in but you're also protecting against single-point sere failure within the datacenter.</p>
+      <p begin="00:33:39.250" end="00:33:42.610">Ok, so, actually I want to switch over now in show some of these things</p>
+      <p begin="00:33:42.610" end="00:33:53.880">and action that we've been talking about so I think display port.</p>
+      <p begin="00:33:53.880" end="00:33:57.450">Maybe I'm not display port.</p>
+      <p begin="00:33:57.450" end="00:33:59.540">Many display...</p>
+      <p begin="00:33:59.540" end="00:34:00.280">So, close.</p>
+      <p begin="00:34:01.350" end="00:34:05.590">Okay, so, let's go ahead and bring up the portal.</p>
+      <p begin="00:34:05.590" end="00:34:10.460">here's a portal...in as myself you can see we have a number of things going on here</p>
+      <p begin="00:34:10.460" end="00:34:15.400">if I go ahead and browse you can see all the different services that I can deploy I can go into</p>
+      <p begin="00:34:15.400" end="00:34:20.330">deeper here and see my virtual machine images so I have multiple virtual machines currently</p>
+      <p begin="00:34:20.330" end="00:34:24.830">...my...your service or sorry virtual machines not images will get...images</p>
+      <p begin="00:34:24.830" end="00:34:29.450">and just a second there's my various of virtual machines and one thing I want to do is</p>
+      <p begin="00:34:29.450" end="00:34:33.950">to show how easy it is to add a disk to a virtual machine and what</p>
+      <p begin="00:34:33.950" end="00:34:37.140">that persistence side the vm itself so I've</p>
+      <p begin="00:34:37.140" end="00:34:41.360">officially named one of my virtual machines here a lots of discs?</p>
+      <p begin="00:34:41.360" end="00:34:45.740">So, if I click on lots of discs you can see some of the monitoring</p>
+      <p begin="00:34:45.740" end="00:34:50.510">information's popping up here you can see that this is based on at the for size</p>
+      <p begin="00:34:50.510" end="00:34:55.510">virtual machine if I continue to move over into the settings and move over into the</p>
+      <p begin="00:34:55.510" end="00:34:56.810">disks.</p>
+      <p begin="00:34:56.810" end="00:35:01.580">You can see I have what does it for eight is something of a range of twelve data</p>
+      <p begin="00:35:01.580" end="00:35:05.680">disks currently attached to the virtual machine again based on the size of</p>
+      <p begin="00:35:05.680" end="00:35:07.730">...that you start with you can go up to</p>
+      <p begin="00:35:07.730" end="00:35:13.510">sixty-four attach disks what I want to do is I'm going-to go ahead and attach disk.</p>
+      <p begin="00:35:13.510" end="00:35:17.570">And, earlier was talking about the caching here's an option in the you are right here if I want</p>
+      <p begin="00:35:17.570" end="00:35:20.700">to do read-only caching on this disk read write caching on</p>
+      <p begin="00:35:20.700" end="00:35:24.170">...for simplicity sake...not can do any host</p>
+      <p begin="00:35:24.170" end="00:35:31.850">caching and I'm going-to go ahead so we can see what pops up...create this...say new disk.</p>
+      <p begin="00:35:31.850" end="00:35:37.660">New disk one we're going-to go ahead and say okay.</p>
+      <p begin="00:35:37.660" end="00:35:43.090">Solver notifications you can see that's working on creating a new...that's working away</p>
+      <p begin="00:35:43.090" end="00:35:47.550">...I'm going to do is go into the virtual machine itself so this is the lots of</p>
+      <p begin="00:35:47.550" end="00:35:53.190">disk virtual machine is runningwindows server twenty twelve rtwo.</p>
+      <p begin="00:35:53.190" end="00:35:57.920">If we take a look here's the...that we talked about earlier...my see drive which...my system disk here's the</p>
+      <p begin="00:35:57.920" end="00:36:02.330">...which...temporary storage definitely don't put long-term data in there and</p>
+      <p begin="00:36:02.330" end="00:36:07.550">what I've also created here is an disc so...storage pool or stored spaces</p>
+      <p begin="00:36:07.550" end="00:36:12.290">...windows server twenty twelve so far bring it up I don't know if you have a lot of familiarity here but</p>
+      <p begin="00:36:12.290" end="00:36:17.000">what I'm trying to show is how easy it is to create a very large storage pool inside of</p>
+      <p begin="00:36:17.000" end="00:36:21.310">a virtual machine and actively ad disks and increase that storage</p>
+      <p begin="00:36:21.310" end="00:36:26.760">pool on-the-fly so if we take a look here if you're familiar with how storage pooling works and</p>
+      <p begin="00:36:26.760" end="00:36:30.750">how storage spaces works is I've created a virtual disk which is up to</p>
+      <p begin="00:36:30.750" end="00:36:35.200">thirty-two terabytes and size currently these are all the...that we saw in</p>
+      <p begin="00:36:35.200" end="00:36:40.180">as your ui that I've added into the storage pool so I think it's you gain in the looks like</p>
+      <p begin="00:36:40.180" end="00:36:44.420">...levin disks and I know that comes up here...say that I currently have</p>
+      <p begin="00:36:44.420" end="00:36:50.140">capacity for eleven disks and if I come back you can see that are new</p>
+      <p begin="00:36:50.140" end="00:36:52.600">disk has been added and</p>
+      <p begin="00:36:52.600" end="00:36:58.560">I think maybe I wasn't looking but it did look like it just said popped up?</p>
+      <p begin="00:36:58.560" end="00:37:03.310">So, here's an additional disk that came up I love the terminology here the</p>
+      <p begin="00:37:03.310" end="00:37:08.060">...primordial so I mean this is like...existence of a...doing nothing for</p>
+      <p begin="00:37:08.060" end="00:37:12.200">us right now if I come back down to the storage pool.</p>
+      <p begin="00:37:12.200" end="00:37:13.230">I can go in.</p>
+      <p begin="00:37:14.450" end="00:37:18.370">And, I can do tasks and I can add the physical disk and</p>
+      <p begin="00:37:18.370" end="00:37:21.900">I'll go ahead and pick that one terabyte...that we just created in as...you</p>
+      <p begin="00:37:21.900" end="00:37:27.730">are intellect that it doesn't take long if you spay attention up here where my cursor</p>
+      <p begin="00:37:27.730" end="00:37:32.450">isn't just a minute you'll see that are storage space inside of the running virtual machine has gone from eleven</p>
+      <p begin="00:37:32.450" end="00:37:36.930">terabytes...twelve terabytes so again we can go up to sixty-four the</p>
+      <p begin="00:37:36.930" end="00:37:41.940">beautiful thing about storage spaces in storage pooling...windows is the fact that you can add it</p>
+      <p begin="00:37:41.940" end="00:37:45.790">to an existing volume this is...simply a...volume you</p>
+      <p begin="00:37:45.790" end="00:37:51.120">...continue to grow your size inside the virtual machine okay so just in the</p>
+      <p begin="00:37:51.120" end="00:37:56.050">you why let me show you a few of the other things that we can talk about as well.</p>
+      <p begin="00:37:56.050" end="00:37:58.930">So, we'll come back over here.</p>
+      <p begin="00:37:58.930" end="00:38:04.010">And, we'll take a look at some of...or virtual machines.</p>
+      <p begin="00:38:04.010" end="00:38:11.050">Let's go over the browns.</p>
+      <p begin="00:38:11.050" end="00:38:13.840">Okay, so, I have a number of virtual machines running, for example,</p>
+      <p begin="00:38:13.840" end="00:38:20.040">just grab one of my load ballot sets and...work are three way through the settings as well if I go over</p>
+      <p begin="00:38:20.040" end="00:38:26.640">...all settings and if I take a look here's where we set up availability sets.</p>
+      <p begin="00:38:26.640" end="00:38:31.460">Sometimes are goes so you can see...availability set called av set number one</p>
+      <p begin="00:38:31.460" end="00:38:36.800">it's currently in there as a little warning is telling us is that you need to or more virtual machines in this</p>
+      <p begin="00:38:36.800" end="00:38:41.610">set to ensure the ninety nine-point nine five percent of time requirement</p>
+      <p begin="00:38:41.610" end="00:38:46.360">and you can also choose to pull out of the availability set down here's where you choose the</p>
+      <p begin="00:38:46.360" end="00:38:51.620">load balance sets as well so you can go ahead and it's going to say I'm going to do the</p>
+      <p begin="00:38:51.620" end="00:38:56.540">changes you can do a load balance set here and you can see have started to create a load balance set</p>
+      <p begin="00:38:56.540" end="00:39:00.950">number-one so when you...for easy to add availability set add</p>
+      <p begin="00:39:02.080" end="00:39:08.180">eh load balance set and add your virtual machines to that set as well</p>
+      <p begin="00:39:08.180" end="00:39:14.190">...one other thing I want to show here briefly I've to other virtual machines we talked about</p>
+      <p begin="00:39:14.190" end="00:39:17.490">...smb share if I goal</p>
+      <p begin="00:39:17.490" end="00:39:20.610">...go back into the as your portal</p>
+      <p begin="00:39:20.610" end="00:39:29.120">...go ahead and take a look at my services and if I take a look at my.</p>
+      <p begin="00:39:29.120" end="00:39:32.220">Storage accounts oops I...</p>
+      <p begin="00:39:32.220" end="00:39:36.140">Go back please storage counts.</p>
+      <p begin="00:39:36.140" end="00:39:38.900">We created a...several smb storage accounts that</p>
+      <p begin="00:39:38.900" end="00:39:43.080">are actually shared against these virtual machines again so I have to virtual machines</p>
+      <p begin="00:39:43.080" end="00:39:46.650">are actually set up to use the same files a...</p>
+      <p begin="00:39:46.650" end="00:39:50.830">So, we have number one right here and number two over here</p>
+      <p begin="00:39:50.830" end="00:39:56.970">and very simple very...my number one go she is.</p>
+      <p begin="00:39:56.970" end="00:40:01.540">So, here these are both warmly windows server ogg in their content a connected to an as your file</p>
+      <p begin="00:40:01.540" end="00:40:06.200">service which is allowing for smb file share so if I go ahead</p>
+      <p begin="00:40:06.200" end="00:40:11.020">and bring up the file share itself you can see all go ahead and</p>
+      <p begin="00:40:11.020" end="00:40:12.200">create.</p>
+      <p begin="00:40:12.200" end="00:40:14.660">A new file.</p>
+      <p begin="00:40:14.660" end="00:40:19.560">...make a text document say hello.</p>
+      <p begin="00:40:19.560" end="00:40:20.810">World.</p>
+      <p begin="00:40:20.810" end="00:40:24.730">And, right over there on the second virtual machine that's connected to the same file share</p>
+      <p begin="00:40:24.730" end="00:40:26.360">...to be expected it</p>
+      <p begin="00:40:26.360" end="00:40:31.170">shows up so again this is a great way you can have multiple virtual machines connected the same as</p>
+      <p begin="00:40:31.170" end="00:40:37.120">...btwo dot one file share inside of inside of the measure vs.</p>
+      <p begin="00:40:37.120" end="00:40:38.560">Ok.</p>
+      <p begin="00:40:38.560" end="00:40:43.400">So, let's go ahead...switch back.</p>
+      <p begin="00:40:43.400" end="00:40:48.360">...pop-up...good.</p>
+      <p begin="00:40:48.360" end="00:40:54.420">So,...extensions how many people are actually familiar with gm extensions</p>
+      <p begin="00:40:54.420" end="00:40:58.560">...only a few hands so most people are very familiar with the concept of</p>
+      <p begin="00:40:58.560" end="00:41:03.760">a virtual machine image where you know, have a container where you drop down operating system install</p>
+      <p begin="00:41:03.760" end="00:41:08.540">your applications you do all your configuration again a lot of people actually create this is a</p>
+      <p begin="00:41:08.540" end="00:41:13.330">...image than that can deploy over and over again what...extension</p>
+      <p begin="00:41:13.330" end="00:41:18.260">is basically a new method to do real-time configuration of an application</p>
+      <p begin="00:41:18.260" end="00:41:22.790">or package or script inside of the virtual machine and it could be done at</p>
+      <p begin="00:41:22.790" end="00:41:26.410">the time of deployment of the...it could also be done post</p>
+      <p begin="00:41:26.410" end="00:41:31.670">vm deployment so gives you a lot of our because you user management should</p>
+      <p begin="00:41:31.670" end="00:41:36.490">...large partner ecosystem so when you're thinking about your applications and you're thinking about development</p>
+      <p begin="00:41:36.490" end="00:41:41.350">you're thinking about how to get them deployed into casual virtual machines this is an option</p>
+      <p begin="00:41:41.350" end="00:41:46.370">that should be considered so one the key things here is when you think about creating a gold</p>
+      <p begin="00:41:46.370" end="00:41:51.210">image virtual machine usually it's a workload or something...saying I'm building a messaging</p>
+      <p begin="00:41:51.210" end="00:41:56.300">collaboration solution I want to packages a virtual machine and that's the way I want to ship it</p>
+      <p begin="00:41:56.300" end="00:42:00.860">...often times can be something like in anti-virus agent</p>
+      <p begin="00:42:00.860" end="00:42:05.770">are not necessarily going to create a gold image around a...you just one anti-virus and</p>
+      <p begin="00:42:05.770" end="00:42:10.710">anti mal where agent inside of all your virtual machines so by using extensions</p>
+      <p begin="00:42:10.710" end="00:42:15.680">in all shown...minutes we've had a lot of third-party partners build great extensions such</p>
+      <p begin="00:42:15.680" end="00:42:21.140">as anti-virus agents such as encryption options such as client</p>
+      <p begin="00:42:21.140" end="00:42:26.020">access to things like papon chef for dev ops orchestration all of</p>
+      <p begin="00:42:26.020" end="00:42:31.540">these things are easy to inject into the virtual machine so when we take a look here?</p>
+      <p begin="00:42:31.540" end="00:42:33.940">For example, through our shell through the</p>
+      <p begin="00:42:33.940" end="00:42:38.140">agent and here's just a few examples we can actually injected into the vm</p>
+      <p begin="00:42:38.140" end="00:42:42.170">...our...script we can adjust agents like the semantic anti</p>
+      <p begin="00:42:42.170" end="00:42:46.350">...where we could also inject things like the chef</p>
+      <p begin="00:42:46.350" end="00:42:50.110">...agent directly into the virtual machine microsoft</p>
+      <p begin="00:42:50.110" end="00:42:55.140">has made a number of agents or excuse me a number of extensions we've also partnered with a</p>
+      <p begin="00:42:55.140" end="00:43:02.220">number of isv or building extensions as well.</p>
+      <p begin="00:43:02.220" end="00:43:07.060">And, you can also use bash for the linux environments so this is done either through the ui we</p>
+      <p begin="00:43:07.060" end="00:43:11.190">also have additional extensions that can be deployed via bash or via our</p>
+      <p begin="00:43:11.190" end="00:43:15.570">shell directly inside the virtual machine and it just submit all go in and actually show</p>
+      <p begin="00:43:15.570" end="00:43:20.820">you the extensions and show you through the you why how to do deployment.</p>
+      <p begin="00:43:21.940" end="00:43:23.940">So, here's some examples of extensions that</p>
+      <p begin="00:43:23.940" end="00:43:27.790">we have available today we have darker we have you know,</p>
+      <p begin="00:43:27.790" end="00:43:31.170">simple things simple scripts and tools as well such as reset</p>
+      <p begin="00:43:31.170" end="00:43:34.920">passwords so again have a running virtual machine you want...to a simple reset of</p>
+      <p begin="00:43:34.920" end="00:43:39.000">a password you go ahead and inject that script the nice thing again is either through</p>
+      <p begin="00:43:39.000" end="00:43:43.100">the wire through our shell you can put in all your specific parameters</p>
+      <p begin="00:43:43.100" end="00:43:47.180">so as you'll see in the demo when you install something like</p>
+      <p begin="00:43:47.180" end="00:43:50.810">...mel were agent will actually ask you questions...say where's your</p>
+      <p begin="00:43:50.810" end="00:43:55.220">...server you'll...this is the location of my server or this is my license key</p>
+      <p begin="00:43:55.220" end="00:43:59.750">will take that user-defined data and during the injection of the agent itself or the</p>
+      <p begin="00:43:59.750" end="00:44:04.040">extension itself will use that custom user-defined information so</p>
+      <p begin="00:44:04.040" end="00:44:08.740">again all across-the-board here chef and puppet trend micro semantic visual studio</p>
+      <p begin="00:44:08.740" end="00:44:15.460">the script extensions our shell ccs all kinds of things.</p>
+      <p begin="00:44:15.460" end="00:44:19.870">And, then this one is kinda near and dear to my heart kind of injected this in here this is the</p>
+      <p begin="00:44:19.870" end="00:44:25.540">...marketplace as your marketplaces something that we've been focusing on a bit</p>
+      <p begin="00:44:25.540" end="00:44:30.290">as application developers you may be familiar but what we're trying to do is grab great applications both</p>
+      <p begin="00:44:30.290" end="00:44:35.940">first party and from our partners and have a central location both in as ram</p>
+      <p begin="00:44:35.940" end="00:44:38.300">...authenticated on the web where you can</p>
+      <p begin="00:44:38.300" end="00:44:41.480">profiles you can find virtual machines you can deploy</p>
+      <p begin="00:44:41.480" end="00:44:46.820">virtual machines directly into your browser subscription back to tech at a few months ago we</p>
+      <p begin="00:44:46.820" end="00:44:51.900">...that we had over fifty partners that we've worked with the build great new images</p>
+      <p begin="00:44:51.900" end="00:44:57.020">into the asher marketplace sincewe've added dozens and dozens more were really</p>
+      <p begin="00:44:57.020" end="00:45:01.560">starting to engage to build a great ecosystem as you're building your apps is your</p>
+      <p begin="00:45:01.560" end="00:45:06.470">warning to get them out there if there for general use and consumption think about the</p>
+      <p begin="00:45:06.470" end="00:45:11.090">...marketplace we have monitors a shun options as well our partners</p>
+      <p begin="00:45:11.090" end="00:45:14.880">or building applications and putting them into the marketplace or using typically one of</p>
+      <p begin="00:45:14.880" end="00:45:19.250">to methods either number-one hourly building directly to router so</p>
+      <p begin="00:45:19.250" end="00:45:23.540">you actually go through during the publishing process and you identify what you want</p>
+      <p begin="00:45:23.540" end="00:45:28.510">a bill for your application on top of the general algebra consumption</p>
+      <p begin="00:45:28.510" end="00:45:33.320">so you say for a for virtual machine I want to build x cents per hour for you know,</p>
+      <p begin="00:45:33.320" end="00:45:38.640">...for virtual machine I want to build why since per hour additionally we allow</p>
+      <p begin="00:45:38.640" end="00:45:43.370">for the bring what we refer to as by aol are bring...license model</p>
+      <p begin="00:45:43.370" end="00:45:48.680">so if you already have customers who you know,have licensing contracts</p>
+      <p begin="00:45:48.680" end="00:45:53.580">...site licenses with you and all they want to do is basically user licensing</p>
+      <p begin="00:45:53.580" end="00:45:58.220">...application...of asher you can use that as well so a lot of our partners</p>
+      <p begin="00:45:58.220" end="00:46:01.740">and a lot of our app developers are building both bring your own license versions of</p>
+      <p begin="00:46:01.740" end="00:46:06.430">the software as well as leveraging...your...goal with the big, you know,</p>
+      <p begin="00:46:06.430" end="00:46:09.470">with the pages you go the customer basically gets one</p>
+      <p begin="00:46:09.470" end="00:46:15.240">bill from microsoft which includes asher compute and the cost</p>
+      <p begin="00:46:15.240" end="00:46:19.640">for the application from the eyes free...what we do is we gather that money</p>
+      <p begin="00:46:19.640" end="00:46:25.080">and pay back the application developer the iso...for the software?</p>
+      <p begin="00:46:25.080" end="00:46:27.640">Ok, so, let's actually look back in.</p>
+      <p begin="00:46:28.790" end="00:46:34.710">The system looks like a look at some of the u.</p>
+      <p begin="00:46:34.710" end="00:46:39.360">So, if I go back in I just create a new my up I am.</p>
+      <p begin="00:46:39.360" end="00:46:45.400">A new virtual machine...new we're going to compute we're</p>
+      <p begin="00:46:45.400" end="00:46:49.670">going to go down to...marketplace so right here integrated into the portal is the</p>
+      <p begin="00:46:49.670" end="00:46:54.000">marketplaceyou could excuse me you can also go again on</p>
+      <p begin="00:46:54.000" end="00:46:58.750">as your dot com there's a link to the marketplace as well so even if you don't want to be authenticated or</p>
+      <p begin="00:46:58.750" end="00:47:03.000">login as you can see all the different workloads that are available you can see</p>
+      <p begin="00:47:03.000" end="00:47:07.940">has broken up into many different things under virtual machines I can click the more option and</p>
+      <p begin="00:47:07.940" end="00:47:11.490">then it's going to show you lots in theory lots.</p>
+      <p begin="00:47:12.520" end="00:47:15.610">In theory of virtual machines</p>
+      <p begin="00:47:15.610" end="00:47:18.960">five four three two one.</p>
+      <p begin="00:47:20.070" end="00:47:26.860">There's lots they all looks like a popped up and then away.</p>
+      <p begin="00:47:26.860" end="00:47:30.820">Long-running there are wonderful verge very good so these are</p>
+      <p begin="00:47:30.820" end="00:47:36.470">just in alphabetical order you can see solutions all across-the-board from alert larger you know,</p>
+      <p begin="00:47:36.470" end="00:47:40.730">barracuda has solutions and here we have solutions from river bed we have core os which</p>
+      <p begin="00:47:40.730" end="00:47:44.780">is platform images anything that you can possibly want so if we just keep</p>
+      <p begin="00:47:44.780" end="00:47:50.110">it real simple we're going-to go ahead and select one of our virtual machines here this is</p>
+      <p begin="00:47:50.110" end="00:47:55.010">windows server nice and basic let's go twenty twelve rtwo is fine.</p>
+      <p begin="00:47:55.010" end="00:48:01.390">We'll go ahead and say creates...brings...options are given a name if</p>
+      <p begin="00:48:01.390" end="00:48:06.030">...me there goes the scallops bryan.</p>
+      <p begin="00:48:07.150" end="00:48:13.330">User name.</p>
+      <p begin="00:48:13.330" end="00:48:17.450">You know-how hard it is from you actually type my password with...verbally saying</p>
+      <p begin="00:48:17.450" end="00:48:21.170">as I type so I was very good of me not to do that.</p>
+      <p begin="00:48:21.170" end="00:48:27.270">If we keep going on...we go into optional configuration.</p>
+      <p begin="00:48:27.270" end="00:48:32.030">Right here's where we can bring extensions into this virtual machine as I as I mentioned you can do</p>
+      <p begin="00:48:32.030" end="00:48:38.740">...of deployment and you can also do a post deployment as well so if I add extension.</p>
+      <p begin="00:48:38.740" end="00:48:43.820">Here's some of the ones that are in the marketplace right now there's also...lot more that are</p>
+      <p begin="00:48:43.820" end="00:48:49.610">outside of the marketplace that...be bringing in short-order before example we have chef we have</p>
+      <p begin="00:48:49.610" end="00:48:53.030">...if I go in and just select the microsoft anti</p>
+      <p begin="00:48:53.030" end="00:48:56.120">mail where one and if I click create.</p>
+      <p begin="00:48:56.120" end="00:49:01.070">You can see it's going to ask me for some of the parameters so again this is the user parameters that right here in the</p>
+      <p begin="00:49:01.070" end="00:49:04.890">you why or through our shel we can basically set and say</p>
+      <p begin="00:49:04.890" end="00:49:09.800">with the endpoint is what is conducting to with the licensing type is an during vm creation we can go</p>
+      <p begin="00:49:09.800" end="00:49:16.820">ahead and deploy that extension ok.</p>
+      <p begin="00:49:16.820" end="00:49:21.630">So, let's switch back one more time.</p>
+      <p begin="00:49:21.630" end="00:49:23.360">And, actually without...right back to</p>
+      <p begin="00:49:23.360" end="00:49:32.090">...very goal so here's the clicker andthank you very much I think brian.</p>
+      <p begin="00:49:32.090" end="00:49:37.420">All right so I'm going to close out with awith basically...a little bit about what's new and,</p>
+      <p begin="00:49:37.420" end="00:49:42.740">you and open with isowill go through this and,...we've got so just</p>
+      <p begin="00:49:42.740" end="00:49:47.700">to give you a sense of just like how we view the overall compute continuum in the world here</p>
+      <p begin="00:49:47.700" end="00:49:52.490">review it sort of in this ultimate control rapid deployment sort of continuum</p>
+      <p begin="00:49:52.490" end="00:49:56.140">right so vm is always the left and this is sort of complete</p>
+      <p begin="00:49:56.140" end="00:50:01.160">control complete ability to configure every single detail you want them</p>
+      <p begin="00:50:01.160" end="00:50:06.110">extensions a little bit further along right it's going to it's going to do some of configuration for you it's going to</p>
+      <p begin="00:50:06.110" end="00:50:10.740">automate some things for you I makes it easier but it's still sort of that underlying</p>
+      <p begin="00:50:10.740" end="00:50:15.030">vm still underneath then you go further the right and we've got service called asher batch</p>
+      <p begin="00:50:15.030" end="00:50:19.910">in-service fabric which now you've seen or heard of which takes a little bit more...still</p>
+      <p begin="00:50:19.910" end="00:50:24.860">running on a vm you still can sort of log on and it feels like a vm but it's going to it's going to take care</p>
+      <p begin="00:50:24.860" end="00:50:29.780">...for-you and in taking care of those things you're giving it control right you're saying</p>
+      <p begin="00:50:29.780" end="00:50:34.930">you take care of my data replication right you take care of the fact that I have quorum</p>
+      <p begin="00:50:34.930" end="00:50:40.380">on my application so that is sort of what the your handing off when you move</p>
+      <p begin="00:50:40.380" end="00:50:44.960">to service fabric and then all the way to the right some of our higher-level higher-level</p>
+      <p begin="00:50:44.960" end="00:50:49.550">paths services that offer really that fast really fast of deployment</p>
+      <p begin="00:50:49.550" end="00:50:54.770">really easy to go but, then have a little bit less control...you're really giving a lot of</p>
+      <p begin="00:50:54.770" end="00:51:00.390">control the platform when you deploy up service whether be web...mobile whether we logic</p>
+      <p begin="00:51:00.390" end="00:51:06.170">...all of these end up having a lot-a lot of the control sort of given for that rapid deployment</p>
+      <p begin="00:51:06.170" end="00:51:11.620">so how do these things all come together well I'm glad that I ask...to answer so the resource</p>
+      <p begin="00:51:11.620" end="00:51:14.990">...the as a resource manager which is a json</p>
+      <p begin="00:51:14.990" end="00:51:18.390">base template in this was the announcement that we actually just made</p>
+      <p begin="00:51:18.390" end="00:51:23.210">we made this afternoon it wasn't made this morning we save it for the afternoon the afternoon</p>
+      <p begin="00:51:23.210" end="00:51:27.870">wave announcements and this is support actually it's been out for a while to be clear but we</p>
+      <p begin="00:51:27.870" end="00:51:33.300">added support for a virtual machines networking in storage to this so this available today</p>
+      <p begin="00:51:33.300" end="00:51:37.220">in public preview and you can now pieced together in a single template</p>
+      <p begin="00:51:37.220" end="00:51:42.170">virtual machines next load bouncers all these aspects with</p>
+      <p begin="00:51:42.170" end="00:51:45.200">...services as well sequel db web app</p>
+      <p begin="00:51:45.200" end="00:51:50.150">...and have a...large application that puts all these pieces together it also brings</p>
+      <p begin="00:51:50.150" end="00:51:54.280">role base access control on the api today...access control for...</p>
+      <p begin="00:51:54.280" end="00:51:59.100">is only through the portal it now you can be controlled at the api level as well</p>
+      <p begin="00:51:59.100" end="00:52:03.970">you can do tagging on top of that and then of course the whole template languages really some of the benefits</p>
+      <p begin="00:52:03.970" end="00:52:08.410">and I'm going to walk you through a few of those as an example?</p>
+      <p begin="00:52:08.410" end="00:52:11.650">Ok, so, as part of this I'm just going to pull up my blog</p>
+      <p begin="00:52:11.650" end="00:52:14.510">and it's going to have you read it on the screen.</p>
+      <p begin="00:52:14.510" end="00:52:18.580">As we know not okay that's not the real them I...you've got so,</p>
+      <p begin="00:52:18.580" end="00:52:23.690">some of the things for the for the way that you deployed this the new resources that we've just</p>
+      <p begin="00:52:23.690" end="00:52:28.610">expose on the left vietnam's next load bouncer security groups public</p>
+      <p begin="00:52:28.610" end="00:52:33.320">...nets these can now all be defined as json objects as part of</p>
+      <p begin="00:52:33.320" end="00:52:37.040">a template language they could all have dependencies between them right so</p>
+      <p begin="00:52:37.040" end="00:52:41.690">you can in fact you will require dependencies to do some things you want to do like you</p>
+      <p begin="00:52:41.690" end="00:52:46.850">...sub...you probably need the neck to be created first so you'll say create my neck</p>
+      <p begin="00:52:46.850" end="00:52:51.920">then only then can you create my vm so these sorts dependencies can exist other</p>
+      <p begin="00:52:51.920" end="00:52:56.760">through really cool things about this parameters you can pass them all the way through you can pass...all the way down</p>
+      <p begin="00:52:56.760" end="00:53:01.910">to your extensions so even some of the most crude types of examples you put</p>
+      <p begin="00:53:01.910" end="00:53:04.520">a our shell extension that runs on the box you pass</p>
+      <p begin="00:53:04.520" end="00:53:07.660">...parameter down you can do pretty much anything on that virtual</p>
+      <p begin="00:53:07.660" end="00:53:12.430">machines same thing with our bash extension and we're seeing a lot of application developers who</p>
+      <p begin="00:53:12.430" end="00:53:15.300">have typically come in and said I'm going to create an image and I'm going to</p>
+      <p begin="00:53:15.300" end="00:53:19.060">put it in the gallery now saying I'm just actually going to bring down my app</p>
+      <p begin="00:53:19.060" end="00:53:24.220">on-the-fly and install it because now I don't have to patch the os so this brings together a lot</p>
+      <p begin="00:53:24.220" end="00:53:29.170">of that capability with the ability to run those scripts and that extension on the box with</p>
+      <p begin="00:53:29.170" end="00:53:34.250">a template to be able to reuse it over and over again parallel deployment as I mentioned</p>
+      <p begin="00:53:34.250" end="00:53:38.820">deploying ten fifteen twenty virtual machines at once is not a problem</p>
+      <p begin="00:53:38.820" end="00:53:43.000">it's something that actually the system was built to do and, actually can handle</p>
+      <p begin="00:53:43.000" end="00:53:47.560">it very quickly because actually this api is running on top of a service fabric</p>
+      <p begin="00:53:47.560" end="00:53:52.530">ring underneath it which is sort of mind-blowing because service fabric when you run it will run on top of these</p>
+      <p begin="00:53:52.530" end="00:53:53.910">...but these vent the</p>
+      <p begin="00:53:53.910" end="00:53:58.440">...api is actually running as a service on service fabric because of the</p>
+      <p begin="00:53:58.440" end="00:54:04.410">throughput that's required for the api calls that are coming in other things that we have the ability to</p>
+      <p begin="00:54:04.410" end="00:54:08.910">do loops so you actually can go in and put a single vm and you can make</p>
+      <p begin="00:54:08.910" end="00:54:13.450">...deploy two hundred times and will pate will take the loop parameter and</p>
+      <p begin="00:54:13.450" end="00:54:16.340">...attach it onto the names of that resource as</p>
+      <p begin="00:54:16.340" end="00:54:20.510">its deploying and then actual as I mentioned we have three fd so</p>
+      <p begin="00:54:20.510" end="00:54:25.850">...domains you can now deploy so one of the things I'll say I'll say this at the end there's a</p>
+      <p begin="00:54:25.850" end="00:54:30.190">deep dive tomorrow that's going to go through every single example</p>
+      <p begin="00:54:30.190" end="00:54:33.270">and every single resource that I mentioned here and explain how to use</p>
+      <p begin="00:54:33.270" end="00:54:38.170">...pieces together so on I'm just going to give you a few examples and what we've actually released with</p>
+      <p begin="00:54:38.170" end="00:54:42.980">this is we've actually launched a set of templates for you to go get started with or use to</p>
+      <p begin="00:54:42.980" end="00:54:47.960">actually spin of virtual machines that you want to develop on so great example we have we have a</p>
+      <p begin="00:54:47.960" end="00:54:52.470">jenkins deployment among...a couple...dvds the solutions</p>
+      <p begin="00:54:52.470" end="00:54:55.480">...goes you keeper sharepoint apache our</p>
+      <p begin="00:54:55.480" end="00:55:00.310">shell all of these are available in our current is actually in a get help repository that I'll</p>
+      <p begin="00:55:00.310" end="00:55:05.290">show you and index on as your dot com to deploy or learn from</p>
+      <p begin="00:55:05.290" end="00:55:10.130">right is either way you want to use the jenkins box you...just deploy it and play with it or</p>
+      <p begin="00:55:10.130" end="00:55:15.050">you can read how we did it and learn from it to build your own you can even forget straight their and build</p>
+      <p begin="00:55:15.050" end="00:55:18.070">...get help?</p>
+      <p begin="00:55:18.070" end="00:55:22.710">So, this kind of...me into some...got some sort of...additional point here a lot of the examples that I</p>
+      <p begin="00:55:22.710" end="00:55:26.440">gave you why a lot of the rest microsoft hates me is in fact the</p>
+      <p begin="00:55:26.440" end="00:55:30.180">open-source beard we do talk...a lot in the team and</p>
+      <p begin="00:55:30.180" end="00:55:37.720">it's actually amazing because before when I did not have a beard this is what I look like?</p>
+      <p begin="00:55:37.720" end="00:55:43.410">I don't have that tiny more no, but, it is one of the things that we do spend a lot of time</p>
+      <p begin="00:55:43.410" end="00:55:47.150">and the team making sure the open-source solutions work great and it's</p>
+      <p begin="00:55:47.150" end="00:55:51.140">something we're really passion about...so this is a great example this is are</p>
+      <p begin="00:55:51.140" end="00:55:55.940">...integration you've heard a lot about this I'm actually not going to spend too much time on it but,</p>
+      <p begin="00:55:55.940" end="00:55:58.170">we do have a deep...</p>
+      <p begin="00:55:58.170" end="00:56:03.310">relationship in fact one of the temples I will show you is a dockers story we have the ability to</p>
+      <p begin="00:56:03.310" end="00:56:08.040">work deploy a full swarm cluster right now using a template that's one of the temple</p>
+      <p begin="00:56:08.040" end="00:56:11.050">to actually have already including we have the dc os for</p>
+      <p begin="00:56:11.050" end="00:56:14.590">may sphere as well some...things that are coming a deeper integration with</p>
+      <p begin="00:56:14.590" end="00:56:18.900">...hub into the asher gallery you'll be able to deploy straight from doc or hub and a</p>
+      <p begin="00:56:18.900" end="00:56:23.030">couple of container solutions that we've talked about pretty extensively already</p>
+      <p begin="00:56:24.290" end="00:56:29.830">ok and to walk through sort of examples of how these templates really working action brian gave some</p>
+      <p begin="00:56:29.830" end="00:56:34.730">of the details but we're using templates like this to be able to deploy things that you already have in</p>
+      <p begin="00:56:34.730" end="00:56:39.220">the portal today and this kind of gives you an example of some of the our that you have being able to deploy</p>
+      <p begin="00:56:39.220" end="00:56:42.750">...directly out-of-the-box uses this template model...able</p>
+      <p begin="00:56:42.750" end="00:56:47.320">...octopus uses it visual studio released managers already using it to be able to</p>
+      <p begin="00:56:47.320" end="00:56:51.090">deploying manage virtual machines that it's that it's a running inside the</p>
+      <p begin="00:56:51.090" end="00:56:56.390">...inside of asher and of course chef puppet...are all using it to be able to</p>
+      <p begin="00:56:56.390" end="00:57:00.600">configure the virtual machines when you deploy so as brian said the combination of</p>
+      <p begin="00:57:00.600" end="00:57:05.170">the template parameters using extensions makes all this possible.</p>
+      <p begin="00:57:05.170" end="00:57:08.260">The other thing that we announce today that I'm not going to spend too much time on but</p>
+      <p begin="00:57:08.260" end="00:57:12.800">worth talking about this api has opened up an entire additional wave of</p>
+      <p begin="00:57:12.800" end="00:57:17.350">...solutions that can run asher so it's not just service fabric which is a great</p>
+      <p begin="00:57:17.350" end="00:57:21.350">product but we also announced today partnerships with cloud foundries</p>
+      <p begin="00:57:21.350" end="00:57:24.870">a brenda angie elastic to be able to support all</p>
+      <p begin="00:57:24.870" end="00:57:28.590">...solutions on top of asher so there are running on top of this</p>
+      <p begin="00:57:28.590" end="00:57:32.580">new api because of the agility in the flexibility to deploy and</p>
+      <p begin="00:57:32.580" end="00:57:36.200">...very exciting to be able to have again this open story of</p>
+      <p begin="00:57:36.200" end="00:57:39.470">...solutions on as your piecing these things together you could have</p>
+      <p begin="00:57:39.470" end="00:57:43.370">cloud foundries talking to sequel db I mean you can imagine the options</p>
+      <p begin="00:57:43.370" end="00:57:49.190">are really limitless of course service fabric the one that we've that we've announced as well so when you sort of look at</p>
+      <p begin="00:57:49.190" end="00:57:54.600">the overall story for open operating systems a wide variety including freebie</p>
+      <p begin="00:57:54.600" end="00:57:58.340">sd a wide set a linux offers as well.</p>
+      <p begin="00:57:58.340" end="00:57:59.650">Data, you know, the drill</p>
+      <p begin="00:57:59.650" end="00:58:05.310">...db we have oracle support as well as ibm db and,</p>
+      <p begin="00:58:05.310" end="00:58:08.740">my sequel offering and of course sap supported</p>
+      <p begin="00:58:08.740" end="00:58:13.620">...development perspective just across-the-board and this is not necessarily just I as...really asher in</p>
+      <p begin="00:58:13.620" end="00:58:18.570">general the overall mobile story and that language story and even the new</p>
+      <p begin="00:58:18.570" end="00:58:22.170">as support for the api is that we have will be releasing st</p>
+      <p begin="00:58:22.170" end="00:58:25.740">...actually we have one available for node today will be releasing one for</p>
+      <p begin="00:58:25.740" end="00:58:30.050">java very soon to be able to code directly to those and of course the</p>
+      <p begin="00:58:30.050" end="00:58:35.440">...is node as well...of course tooling and I'm going to show you visual studio in</p>
+      <p begin="00:58:35.440" end="00:58:40.340">the two minutes I have left and, walk you through so what that looks like so</p>
+      <p begin="00:58:40.340" end="00:58:46.820">with that let me I'm going to go to my demo here and just show you a few things and, then</p>
+      <p begin="00:58:46.820" end="00:58:56.250">you'll be on your way so let me start here with.</p>
+      <p begin="00:58:56.250" end="00:59:00.300">Sorry...this so.</p>
+      <p begin="00:59:00.300" end="00:59:05.140">Go-to community and go-to templates a new section and</p>
+      <p begin="00:59:05.140" end="00:59:09.630">here you'll see templates that are index directly from get up so you add a template into</p>
+      <p begin="00:59:09.630" end="00:59:14.490">our get have repository it will show up on as your dot com and give you an example of this</p>
+      <p begin="00:59:14.490" end="00:59:20.650">it automatically searches for it so let me go to mine template so you'll see there's my ugly mug here</p>
+      <p begin="00:59:20.650" end="00:59:26.170">at the top it actually pulls the picture of the get have owner who created it will show I thought I</p>
+      <p begin="00:59:26.170" end="00:59:31.010">put description for my parameters that's a shame you can actually put in your parameters of what you're going to deploy here</p>
+      <p begin="00:59:31.010" end="00:59:34.330">and it will automatically update this...the best part about this is you</p>
+      <p begin="00:59:34.330" end="00:59:38.200">...deployed to asher and actually will automatically go in</p>
+      <p begin="00:59:38.200" end="00:59:42.670">into your asher account authenticate you the template shows up in the</p>
+      <p begin="00:59:42.670" end="00:59:46.860">poorly can edit here if you want to if you don't you hit save.</p>
+      <p begin="00:59:46.860" end="00:59:51.070">And, then you go...you put in your parameters and deploy as just amazingly simple to take</p>
+      <p begin="00:59:51.070" end="00:59:56.420">a very complex thing and deploy it within moments.</p>
+      <p begin="00:59:56.420" end="00:59:59.790">And, this is all indexed in get hub like I said so the get hub</p>
+      <p begin="00:59:59.790" end="01:00:04.010">location as your as your quick start templates and you can go in here</p>
+      <p begin="01:00:04.010" end="01:00:07.590">you can fork and learn everything you want to learn.</p>
+      <p begin="01:00:07.590" end="01:00:11.930">So, here you can see if I go to jungle app and going here.</p>
+      <p begin="01:00:11.930" end="01:00:16.060">Click on it and there's the template ready to roll okay and</p>
+      <p begin="01:00:16.060" end="01:00:20.140">the very last thing here is how many actually want to</p>
+      <p begin="01:00:20.140" end="01:00:24.390">...session this morning ok phew well let me just quickly</p>
+      <p begin="01:00:24.390" end="01:00:29.370">show you this whole language noun visual studio is completely available to you go</p>
+      <p begin="01:00:29.370" end="01:00:33.070">in and update and modify and play with and they're going to spend a lot of time</p>
+      <p begin="01:00:33.070" end="01:00:37.820">in this in the deep dive tomorrow but just to kinda give you a few examples here if I want to go</p>
+      <p begin="01:00:37.820" end="01:00:43.520">in and here's the overall template you see here on the right let's see here zoomed...</p>
+      <p begin="01:00:43.520" end="01:00:48.630">here okay so you can see here my parameters are all listed out and,</p>
+      <p begin="01:00:48.630" end="01:00:52.280">I can, you know, go in and actually monitor them and I can go find them in my</p>
+      <p begin="01:00:52.280" end="01:00:56.480">template so let's see virtual machine name that's...that and I'll show you</p>
+      <p begin="01:00:56.480" end="01:01:01.170">...the template...location for that parameter to straying the description that comes</p>
+      <p begin="01:01:01.170" end="01:01:05.630">in that metadata and then I can go in and do plus and I can add all sorts of things</p>
+      <p begin="01:01:05.630" end="01:01:10.850">...a template language I can add a neck right here if I wanted to I can added</p>
+      <p begin="01:01:10.850" end="01:01:15.800">powerful dac extension sequel server virtual network and you go in</p>
+      <p begin="01:01:15.800" end="01:01:21.410">and if you hit this and say yep that's to tests...add it goes in it actually</p>
+      <p begin="01:01:21.410" end="01:01:27.610">drops it right into by into my overall script and I can go in</p>
+      <p begin="01:01:27.610" end="01:01:32.760">...the dependencies here and play with it so the our of visual studio added</p>
+      <p begin="01:01:32.760" end="01:01:37.060">on top of these extensions should really make this a lot of fun to go play with</p>
+      <p begin="01:01:37.060" end="01:01:42.430">...like I said they're going to spend a ton of time on this tamar the deep dive and that's kind of kind of the</p>
+      <p begin="01:01:42.430" end="01:01:46.940">overall the endpoint here so go see the deep dive on thursday guys you know,</p>
+      <p begin="01:01:46.940" end="01:01:50.780">overall I hope this...valuable to...and,</p>
+      <p begin="01:01:50.780" end="01:01:56.030">go sign up if you haven't signed up for msdn that's a great deal great offer for-you and,</p>
+      <p begin="01:01:56.030" end="01:02:01.130">send-me something on twitter as well so they get so much will be here to answer some questions afterwards if you want?</p>
+
+    </div>
+  </body>
+</tt>

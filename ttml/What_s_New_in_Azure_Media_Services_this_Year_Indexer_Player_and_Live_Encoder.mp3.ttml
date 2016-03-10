@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.928</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.160" end="00:00:06.160">All right I have twelve thirty.</p>
+      <p begin="00:00:07.180" end="00:00:11.320">So, given that we are barely on the edge of the end of build twenty fifteen</p>
+      <p begin="00:00:11.320" end="00:00:14.810">...just march forward.</p>
+      <p begin="00:00:14.810" end="00:00:20.090">And, start sothank everybody really appreciate you coming out on friday afternoon to talk</p>
+      <p begin="00:00:20.090" end="00:00:24.810">about as...media services just by show hands of the folks in the room how many of you</p>
+      <p begin="00:00:24.810" end="00:00:30.260">are already very familiar or somewhat familiar with as...media services and the capabilities that we have</p>
+      <p begin="00:00:30.260" end="00:00:33.510">about three-quarters you that's great so you're</p>
+      <p begin="00:00:33.510" end="00:00:37.370">infer tree we have to sessions back-to-back talking about</p>
+      <p begin="00:00:37.370" end="00:00:43.320">are media services platforms part of asher I'm going to talk today about what's new in</p>
+      <p begin="00:00:43.320" end="00:00:48.630">the last several months...that we've added to the platform and then my colleague main</p>
+      <p begin="00:00:48.630" end="00:00:52.390">...after me and the following session about a deep dive on how</p>
+      <p begin="00:00:52.390" end="00:00:58.635">developers can begin quickly to use that so I hope you get to stay from both but if you don't I</p>
+      <p begin="00:00:58.635" end="00:01:03.390">think should be very enjoyable for all of us so let me introduce myself my name is martin wall</p>
+      <p begin="00:01:03.390" end="00:01:07.270">...a principle program manager in the as your media services product engineering</p>
+      <p begin="00:01:07.270" end="00:01:12.140">team and I have the distinct honor of having the role of global engagement manager</p>
+      <p begin="00:01:12.140" end="00:01:16.530">work with our customers and partners around the world trying to help them</p>
+      <p begin="00:01:16.530" end="00:01:20.830">...conundrum of how to use the cloud for streaming video</p>
+      <p begin="00:01:20.830" end="00:01:25.930">and media into their business and everyday applications and we've built</p>
+      <p begin="00:01:25.930" end="00:01:28.830">a pretty extensive and powerful platform that uses</p>
+      <p begin="00:01:28.830" end="00:01:32.690">are cloud infrastructure to deliver video to any device anywhere in the</p>
+      <p begin="00:01:32.690" end="00:01:37.620">world and I'm going to use a session to talk to-you about that capability how you can use that yourselves</p>
+      <p begin="00:01:37.620" end="00:01:41.450">...how you can develop with it I do want as</p>
+      <p begin="00:01:41.450" end="00:01:46.340">always remind everyone that it's always very vital and important for us to get your feedback on each of</p>
+      <p begin="00:01:46.340" end="00:01:49.180">these sessions and certainly...for help helping us to</p>
+      <p begin="00:01:49.180" end="00:01:54.010">plan what is important to you and what's valuable to-you for next year so please take the</p>
+      <p begin="00:01:54.010" end="00:01:58.470">opportunity to submit now evaluation online or after.</p>
+      <p begin="00:01:58.470" end="00:02:02.820">Here's what we're going to talk about in this session I'll give you a brief overview of what is as</p>
+      <p begin="00:02:02.820" end="00:02:06.300">you may services even though I did recognize that many of you raise your hand and</p>
+      <p begin="00:02:06.300" end="00:02:11.700">are and familiar with it I brought with me some great customer examples of some deployments that are already in the</p>
+      <p begin="00:02:11.700" end="00:02:17.060">market today and I'm going to try to show you what I can and,</p>
+      <p begin="00:02:17.060" end="00:02:21.880">walk you through them because the visual I mean this is media after all so if I do-too-much in powerpoint</p>
+      <p begin="00:02:21.880" end="00:02:26.940">...I'll probably...name so I brought that with me and then I'm going to talk about a</p>
+      <p begin="00:02:26.940" end="00:02:31.610">lot of the new stuff and there's been a lot of new stuff on this platform they've been great deal of</p>
+      <p begin="00:02:31.610" end="00:02:36.700">announcements a great deal feature ads and a lot of response and feedback that we've gotten the</p>
+      <p begin="00:02:36.700" end="00:02:40.560">last several years since we deployed this platform from our customers from you</p>
+      <p begin="00:02:40.560" end="00:02:45.160">...as to what we should be adding and how which enhance the platform someone walk through a lot of this</p>
+      <p begin="00:02:45.160" end="00:02:50.130">stuff in the course of the session but let me just back up and do a brief overview as a</p>
+      <p begin="00:02:50.130" end="00:02:55.330">...to what we're talking about here or talking about is the fact that we all know this to be the</p>
+      <p begin="00:02:55.330" end="00:02:59.050">fact that video is the way we all pretty much communicate on a regular basis whether</p>
+      <p begin="00:02:59.050" end="00:03:04.000">we're talking in our regular daily lies in terms of as consumers or whether we're talking about as employees</p>
+      <p begin="00:03:04.000" end="00:03:07.710">...videos the way that we all like to entertain ourselves be</p>
+      <p begin="00:03:07.710" end="00:03:11.910">entertained and communicate with our fellow colleagues and everyone has their</p>
+      <p begin="00:03:11.910" end="00:03:15.900">pocketed device some of you have three or more that are capable of playing</p>
+      <p begin="00:03:15.900" end="00:03:21.070">high motion high-definition video and you use them on a regular basis maybe you use them</p>
+      <p begin="00:03:21.070" end="00:03:25.220">to watching consumer on entertainment content maybe your company uses them to</p>
+      <p begin="00:03:25.220" end="00:03:28.900">entertain or educate and train you but,</p>
+      <p begin="00:03:28.900" end="00:03:33.780">these are these are the way of the world this is how we all work today and every company on the</p>
+      <p begin="00:03:33.780" end="00:03:37.910">planet...advantage of the fact that you can use streaming many media streaming video to</p>
+      <p begin="00:03:37.910" end="00:03:42.820">deliver this content but it's also gotten quite expensive we know that in order to provide</p>
+      <p begin="00:03:42.820" end="00:03:47.630">high-quality video everywhere you've got to have quite infrastructure to</p>
+      <p begin="00:03:47.630" end="00:03:52.920">support and what's more so is that while putting videos up on the internet</p>
+      <p begin="00:03:52.920" end="00:03:57.920">and sharing them with your friends colleagues and customers is not relatively new what is</p>
+      <p begin="00:03:57.920" end="00:04:02.540">becoming more and more new is the fact that we're doing a lot more live-streaming I hope some of you</p>
+      <p begin="00:04:02.540" end="00:04:05.860">...taken advantage of take a seeing that channel nine...been live-streaming this</p>
+      <p begin="00:04:05.860" end="00:04:11.080">conference on their web page and they've been doing that using the technology that we're talking about today in this room</p>
+      <p begin="00:04:11.080" end="00:04:15.600">measurement services as the cloud infrastructure to provide that and doing live-streaming</p>
+      <p begin="00:04:15.600" end="00:04:20.580">that can be challenging that can be hardness certainly can be very expensive but we think and</p>
+      <p begin="00:04:20.580" end="00:04:25.150">microsoft that the cloud infrastructure that we put together is precisely the kind of resource</p>
+      <p begin="00:04:25.150" end="00:04:29.510">that you is developers can use to help you drive new video streaming</p>
+      <p begin="00:04:29.510" end="00:04:34.270">applications whether they be around live or on-demand content so we built this platform called as</p>
+      <p begin="00:04:34.270" end="00:04:35.760">...media services and</p>
+      <p begin="00:04:35.760" end="00:04:40.670">it's based on the premise that you can take any content from any source anywhere whether be</p>
+      <p begin="00:04:40.670" end="00:04:44.410">...stream or would be recorded video that-you edit or create</p>
+      <p begin="00:04:44.410" end="00:04:48.210">a produce move into the cloud process in the cloud and then</p>
+      <p begin="00:04:48.210" end="00:04:52.590">distributed around the world to any device that can play video which for all intents</p>
+      <p begin="00:04:52.590" end="00:04:55.840">and purposes is every device of course you'll notice</p>
+      <p begin="00:04:55.840" end="00:05:00.620">that this is important to say that there are lots of different kinds of devices on</p>
+      <p begin="00:05:00.620" end="00:05:04.770">the planet between phones and tablets television sets and set-top boxes</p>
+      <p begin="00:05:04.770" end="00:05:09.390">pc's and smart tv's nearly everything can receive a stream</p>
+      <p begin="00:05:09.390" end="00:05:14.150">...video and nearly everything can display...so if your goal as a content owner is to</p>
+      <p begin="00:05:14.150" end="00:05:19.020">distribute your content to the widest audience possible and that's precisely what we've tried to do with</p>
+      <p begin="00:05:19.020" end="00:05:22.970">asher media services is to give you a cloud platform can very easily and</p>
+      <p begin="00:05:22.970" end="00:05:27.460">very cost-effectively get your video content anywhere you want without you having to</p>
+      <p begin="00:05:27.460" end="00:05:33.090">have the necessary...have to build the infrastructure yourself?</p>
+      <p begin="00:05:33.090" end="00:05:35.150">Now this platforms pretty broad</p>
+      <p begin="00:05:35.150" end="00:05:39.620">...widespread...not going to do a deep dive into each one of these areas</p>
+      <p begin="00:05:39.620" end="00:05:44.580">I want to point out with of course the entire flow from end-to-end from the point which</p>
+      <p begin="00:05:44.580" end="00:05:48.950">you submit a piece of content again I'm talking about content as</p>
+      <p begin="00:05:48.950" end="00:05:53.920">being both video file-based content or can be...stream content</p>
+      <p begin="00:05:53.920" end="00:05:58.870">...submit that to the cloud to any of the datacenters that are that are being operated around the world and</p>
+      <p begin="00:05:58.870" end="00:06:03.740">...allow the cloud to do the heavy lifting the encoding of that content the protection of that</p>
+      <p begin="00:06:03.740" end="00:06:08.680">content the streaming and distribution of that content and even the play</p>
+      <p begin="00:06:08.680" end="00:06:13.930">back of that content on to the devices that you want to hit this is what we mean when we say asher media</p>
+      <p begin="00:06:13.930" end="00:06:18.520">services this is a collection of resources at your disposal at the</p>
+      <p begin="00:06:18.520" end="00:06:23.090">developers disposal to take advantage of as you would any other resource that's running and</p>
+      <p begin="00:06:23.090" end="00:06:24.190">...today</p>
+      <p begin="00:06:24.190" end="00:06:28.930">...me services is just another part of the...are offering that we do today but</p>
+      <p begin="00:06:28.930" end="00:06:34.410">...specifically focus around video and video delivery now many companies around the planet</p>
+      <p begin="00:06:34.410" end="00:06:37.640">have taken advantage of this and they've developed application some of which you might be</p>
+      <p begin="00:06:37.640" end="00:06:42.310">familiar of using yourself maybe some of which are not but they use the cloud and</p>
+      <p begin="00:06:42.310" end="00:06:45.890">...cloud resources to create really cool applications</p>
+      <p begin="00:06:45.890" end="00:06:50.560">enable them to hit whatever their business needs are...recognize a bunch of these</p>
+      <p begin="00:06:50.560" end="00:06:55.790">but I thought I'd...a couple of...you might find even more recognizable so there</p>
+      <p begin="00:06:55.790" end="00:06:58.970">...little event that happened a couple of months ago let's just call it the</p>
+      <p begin="00:06:58.970" end="00:07:04.690">superbowl any football fans in the audience this year was brought to us by our broadcaster in</p>
+      <p begin="00:07:04.690" end="00:07:09.250">the united states nbc-and nbc sports and...did nbc want to do of course they want to</p>
+      <p begin="00:07:09.250" end="00:07:13.520">maximize the viewing audience and the superbowl now for years of course everyone's been</p>
+      <p begin="00:07:13.520" end="00:07:18.460">watching tv of the superbowl at home or within parties but of course more recently now</p>
+      <p begin="00:07:18.460" end="00:07:21.770">...the broadcasters...content owners have wanted to stream</p>
+      <p begin="00:07:21.770" end="00:07:25.190">...content to provide it to you on a mobile device that</p>
+      <p begin="00:07:25.190" end="00:07:28.150">wherever you are...going to the store to get more beer</p>
+      <p begin="00:07:28.150" end="00:07:32.660">...you going to refrigerator to pick up another beer or even taking a restroom break you don't have to</p>
+      <p begin="00:07:32.660" end="00:07:37.430">miss a single moment of the action so when we worked with nbc</p>
+      <p begin="00:07:37.430" end="00:07:41.680">to look at what could they do what could the cloud due to provide them with</p>
+      <p begin="00:07:41.680" end="00:07:46.480">the streaming platform they were very excited to be able to say hey it sounds to us the as</p>
+      <p begin="00:07:46.480" end="00:07:51.480">you're already has all this built all we have to do is bring the game to the cloud and the cloud</p>
+      <p begin="00:07:51.480" end="00:07:57.050">will bring the game to our viewers and that's precisely what they did nbc during the</p>
+      <p begin="00:07:57.050" end="00:08:01.620">superbowl on february stream the entire game including all of the</p>
+      <p begin="00:08:01.620" end="00:08:05.110">pre-game fun and post game fun and</p>
+      <p begin="00:08:05.110" end="00:08:09.530">streamed to all the devices that anyone can use in their hand</p>
+      <p begin="00:08:09.530" end="00:08:14.230">or at home to two-and-a-half-million people who watched at one point in</p>
+      <p begin="00:08:14.230" end="00:08:18.950">time...might not think that's a really high amount given that we know that the superbowl is one of the most watched</p>
+      <p begin="00:08:18.950" end="00:08:23.910">...events all year-long but last couple years that number of people who have watched</p>
+      <p begin="00:08:23.910" end="00:08:28.790">sporting events on devices has been increasing almost quadruple in year after</p>
+      <p begin="00:08:28.790" end="00:08:33.530">year after year last year it was only around sixty eight hundred-thousand viewers watched the super bowl on a</p>
+      <p begin="00:08:33.530" end="00:08:37.380">device and this year is two-point-five million that's pretty exciting</p>
+      <p begin="00:08:37.380" end="00:08:41.310">what's also exciting for us and microsoft is to notice the bit that said well,</p>
+      <p begin="00:08:41.310" end="00:08:45.790">you know, even though the superbowl...one of the highest most washed events of the year for us</p>
+      <p begin="00:08:45.790" end="00:08:50.410">is just another day at the office of the cloud...that was necessary to deliver the</p>
+      <p begin="00:08:50.410" end="00:08:54.780">superbowl the resources necessary to deliver the superbowl so that not a single-person who</p>
+      <p begin="00:08:54.780" end="00:08:59.090">tune into it would get spinning arrows are black screens or drop frame or bad</p>
+      <p begin="00:08:59.090" end="00:09:04.400">quality didn't even register as a blip on the infrastructure that we provide because this cloud</p>
+      <p begin="00:09:04.400" end="00:09:08.950">is pretty powerful now we don't expect everyone in this room to have a superbowl like</p>
+      <p begin="00:09:08.950" end="00:09:11.420">events on a daily basis but you can just</p>
+      <p begin="00:09:11.420" end="00:09:17.350">imagine the capabilities that are at your disposal if you want to do an event of this magnitude?</p>
+      <p begin="00:09:17.350" end="00:09:21.490">What was another event that we did last year well what is now</p>
+      <p begin="00:09:21.490" end="00:09:26.010">the most watched sporting events in all of a sports history that was</p>
+      <p begin="00:09:26.010" end="00:09:30.210">...four world cup in brazil last summer this event which of course</p>
+      <p begin="00:09:30.210" end="00:09:34.660">...seen by billions of people around the world was also streamed in this case by ten different</p>
+      <p begin="00:09:34.660" end="00:09:39.520">broadcasters around the world who use the asher cloud to also the distribute</p>
+      <p begin="00:09:39.520" end="00:09:44.310">the stream to a variety of different players in client apps that were built using</p>
+      <p begin="00:09:44.310" end="00:09:49.220">...services to deliver what's interesting about this is the broadcasters who did this didn't just want</p>
+      <p begin="00:09:49.220" end="00:09:53.630">to be experience of watching the game as you would on television set...now they want to</p>
+      <p begin="00:09:53.630" end="00:09:57.690">have a different experience they wanted...cloud to enhance the experience to</p>
+      <p begin="00:09:57.690" end="00:10:01.750">innovate so what about providing a synchronous data feed alongside the video</p>
+      <p begin="00:10:01.750" end="00:10:06.400">...feed that's time with the smart client...of pulling things like where are</p>
+      <p begin="00:10:06.400" end="00:10:10.700">the players on-the-field any given time and statistics around them or</p>
+      <p begin="00:10:10.700" end="00:10:15.700">maybe this one which some people love would love to be able to control the camera angles the</p>
+      <p begin="00:10:15.700" end="00:10:20.660">dasi when they're watching the game and watch the coach of the opposing team or the particular</p>
+      <p begin="00:10:20.660" end="00:10:25.410">star player or maybe a particular angle the smart clients</p>
+      <p begin="00:10:25.410" end="00:10:30.400">...viewers the capability of choosing the angle choosing the video stream that</p>
+      <p begin="00:10:30.400" end="00:10:35.370">was all traversing the actual media services cloud...network so</p>
+      <p begin="00:10:35.370" end="00:10:40.280">even though the game was being broadcast on one video stream you with the digital device</p>
+      <p begin="00:10:40.280" end="00:10:47.170">had choice of up to six or eight different have angles camera streams that you can take?</p>
+      <p begin="00:10:47.170" end="00:10:50.020">Now other companies around the world are deciding that, you know,</p>
+      <p begin="00:10:50.020" end="00:10:54.900">what I want to do is be able to deliver new programming to digital devices that I wouldn't be able to</p>
+      <p begin="00:10:54.900" end="00:10:59.850">do if I had to only do it by the cable or over the airwaves...satellite so</p>
+      <p begin="00:10:59.850" end="00:11:04.330">take fuji television network which is one of the largest broadcasters in japan they</p>
+      <p begin="00:11:04.330" end="00:11:08.880">...about two or three different broadcast channels but they have way more</p>
+      <p begin="00:11:08.880" end="00:11:13.810">programming and they can air on those terrestrial channels so what did they decide to do</p>
+      <p begin="00:11:13.810" end="00:11:18.500">what they decided to do was create a channel that stream's only</p>
+      <p begin="00:11:18.500" end="00:11:23.400">digital devices haven't over the top channel only in this case and</p>
+      <p begin="00:11:23.400" end="00:11:27.820">I'll...you bring show you an example of this because I think we can dial into japan</p>
+      <p begin="00:11:27.820" end="00:11:33.470">even while we're waiting here and see if it comes up of course it's around four or five in the morning</p>
+      <p begin="00:11:33.470" end="00:11:38.310">and in japan right now so one never really knows what japan is playing at any given time</p>
+      <p begin="00:11:38.310" end="00:11:41.600">books that they've got some music videos going on</p>
+      <p begin="00:11:41.600" end="00:11:45.970">this is a twenty four-hour channel that exists only out of the...</p>
+      <p begin="00:11:45.970" end="00:11:50.500">And, right-hander you can turn that down...give</p>
+      <p begin="00:11:50.500" end="00:11:56.180">...did...and...you get the idea this is just a broadcast channel but</p>
+      <p begin="00:11:56.180" end="00:12:02.840">it's a cloud broadcast channel and if you think about it I'm going to go ahead and turn that off.</p>
+      <p begin="00:12:02.840" end="00:12:05.200">If you think about it the world of television</p>
+      <p begin="00:12:05.200" end="00:12:10.180">is changing all of us can now be broadcasters all of us can now carry content that the</p>
+      <p begin="00:12:10.180" end="00:12:15.100">cloud distributes digital devices that might be an audience...the millions all around the world</p>
+      <p begin="00:12:15.100" end="00:12:18.870">...the our of cloud and if I told you that it only took five minutes</p>
+      <p begin="00:12:18.870" end="00:12:22.520">...channel like that can be delivered to millions of people</p>
+      <p begin="00:12:22.520" end="00:12:26.970">...might spin especially when you think about someone like oprah winfrey we spent about</p>
+      <p begin="00:12:26.970" end="00:12:31.070">eight hundred fifty million of her precious dollars to create her network and...about eighteen</p>
+      <p begin="00:12:31.070" end="00:12:35.990">months to do it so think about how revolutionary this technology can be in the hands of</p>
+      <p begin="00:12:35.990" end="00:12:40.360">very creative people which I know all of you are of course you to can become</p>
+      <p begin="00:12:40.360" end="00:12:44.790">a broadcaster of channels that are carried like fuji tv does and</p>
+      <p begin="00:12:44.790" end="00:12:49.120">they can be able to hit devices and really expand their audiences if</p>
+      <p begin="00:12:49.120" end="00:12:54.040">you travel to tokyo you talk to the folks and fuji as I have what they say is the whole next</p>
+      <p begin="00:12:54.040" end="00:12:58.680">generation of television watchers don't even watch tv on tv anymore I'm a</p>
+      <p begin="00:12:58.680" end="00:13:04.050">father teenage daughter and I certainly...the fact that I never see my daughter watching tv on the tv</p>
+      <p begin="00:13:04.050" end="00:13:06.740">all she sits in front of the tv with it on</p>
+      <p begin="00:13:06.740" end="00:13:12.190">or watching tv on her tablet I'm not quite sure what's going on there now another type of</p>
+      <p begin="00:13:12.190" end="00:13:17.240">use of this technology is for companies that themselves have content</p>
+      <p begin="00:13:17.240" end="00:13:21.710">rights but they don't have any broadcast or over-the-air rights themselves take a</p>
+      <p begin="00:13:21.710" end="00:13:26.650">company like ngos send this is a great example of a company that just purchased all of the rights to</p>
+      <p begin="00:13:26.650" end="00:13:31.240">...soccer leagues out of south america and europe and stream them to viewers here</p>
+      <p begin="00:13:31.240" end="00:13:35.400">in north america but they're not doing it with any physical infrastructure</p>
+      <p begin="00:13:35.400" end="00:13:39.820">whatsoever this is a entire television network that exists only in the</p>
+      <p begin="00:13:39.820" end="00:13:41.780">cloud...pretty outstanding</p>
+      <p begin="00:13:41.780" end="00:13:47.660">...amazing concept when you think about it and I have a sample of what this looks like to on my laptop here</p>
+      <p begin="00:13:47.660" end="00:13:50.080">...just switch over to that you can see it</p>
+      <p begin="00:13:50.080" end="00:13:54.990">...gsm dot com any of you can go to it and I think if you go soon they're still giving away about</p>
+      <p begin="00:13:54.990" end="00:13:59.600">a ninety-day free subscription so if...big fan of soccer you can watch any</p>
+      <p begin="00:13:59.600" end="00:14:05.620">game that might be happening at any time some of the games are live happening right now.</p>
+      <p begin="00:14:05.620" end="00:14:07.610">If irish fresh the screen.</p>
+      <p begin="00:14:07.610" end="00:14:10.750">We'll see if we can if we can see what's,</p>
+      <p begin="00:14:10.750" end="00:14:13.880">what's playing rate this very moment some of the games are</p>
+      <p begin="00:14:13.880" end="00:14:18.800">live of course some of the games are already in the past but the cool part of</p>
+      <p begin="00:14:18.800" end="00:14:23.610">this technology is you can be a viewer of soccer games even if you</p>
+      <p begin="00:14:23.610" end="00:14:28.940">are five thousand miles away so what you're watching right now is a live broadcast of</p>
+      <p begin="00:14:28.940" end="00:14:34.200">again going on right now being distributed only through the cloud</p>
+      <p begin="00:14:34.200" end="00:14:39.250">you cannot watch this content anywhere else and this technology that's doing</p>
+      <p begin="00:14:39.250" end="00:14:43.250">...of course is using one hundred-percent advertise technology this is very</p>
+      <p begin="00:14:43.250" end="00:14:47.060">exciting for the business owners of this business but it certainly also very</p>
+      <p begin="00:14:47.060" end="00:14:50.430">exciting problems consumers because if you're soccer fan,</p>
+      <p begin="00:14:50.430" end="00:14:55.110">you know, there's very limited ability get a lot of great european and american soccer here</p>
+      <p begin="00:14:55.110" end="00:14:59.080">...the us but here we have a services providing and I said if you</p>
+      <p begin="00:14:59.080" end="00:15:03.870">go right now you'll be able to get a free subscription so that's pretty cool.</p>
+      <p begin="00:15:03.870" end="00:15:07.380">Now how do the how do they do this you might ask.</p>
+      <p begin="00:15:07.380" end="00:15:11.500">Well, I told you they have no physical assets at all therefore everything that</p>
+      <p begin="00:15:11.500" end="00:15:16.120">they're doing is currently running in the cloud and this gives you a sense of the architecture</p>
+      <p begin="00:15:16.120" end="00:15:20.230">that's been used they send their streams from the venues of the soccer</p>
+      <p begin="00:15:20.230" end="00:15:24.380">where soccer's taking place all around the world they send them into the cloud</p>
+      <p begin="00:15:24.380" end="00:15:29.130">they ad commentary they encode them in the cloud they provide them</p>
+      <p begin="00:15:29.130" end="00:15:33.690">...distribute them via the cloud and they...through our content just delivery network or</p>
+      <p begin="00:15:33.690" end="00:15:36.420">...and to...all around</p>
+      <p begin="00:15:36.420" end="00:15:41.330">the us any type of device that you might be having in your pocket of course all the</p>
+      <p begin="00:15:41.330" end="00:15:45.980">other management services like building and subscriber management all being done in the cloud to using a combination of</p>
+      <p begin="00:15:45.980" end="00:15:48.400">technologies are probably already familiar with such as address</p>
+      <p begin="00:15:48.400" end="00:15:52.400">...and asher cash and api is not kind of thing.</p>
+      <p begin="00:15:52.400" end="00:15:57.320">This is an entire business they didn't exist before the cloud and is now hoping to be the next sort-of</p>
+      <p begin="00:15:57.320" end="00:16:03.570">as the ceo of ngos...it I want to be the next netflix of soccer?</p>
+      <p begin="00:16:03.570" end="00:16:08.230">Other types of applications using the cloud are pretty they're pretty numerous you can imagine that there are</p>
+      <p begin="00:16:08.230" end="00:16:12.670">companies around the planet that are doing things like I make digital post-production</p>
+      <p begin="00:16:12.670" end="00:16:16.830">I make commercials I make movies for a living and I'm going to use the clouds and distribute</p>
+      <p begin="00:16:16.830" end="00:16:21.410">and share my videos or maybe I do those hotel entertainment systems at some of us may</p>
+      <p begin="00:16:21.410" end="00:16:26.250">or may not still using these days certainly on cruise ships and other</p>
+      <p begin="00:16:26.250" end="00:16:30.180">...of hospitality industries where streaming video content is the way</p>
+      <p begin="00:16:30.180" end="00:16:35.570">...bring content around...out these days and if you have been an elevator or gas station and...</p>
+      <p begin="00:16:35.570" end="00:16:40.510">video screens that are there are not going to be just there anymore stores around the world</p>
+      <p begin="00:16:40.510" end="00:16:45.320">and outputting digital screens digital signage in their store and they're streaming video content through the</p>
+      <p begin="00:16:45.320" end="00:16:49.030">cloud so they can provide you real-time information about the products that, you know,</p>
+      <p begin="00:16:49.030" end="00:16:53.160">you want to buy a just talk to manufacture...one of those devices and he's added</p>
+      <p begin="00:16:53.160" end="00:16:58.080">motion textures so as you walk down the aisle with your cart at the grocery store video can play</p>
+      <p begin="00:16:58.080" end="00:17:03.440">to-you...that next hot boxes cereal that you really just have to try I know</p>
+      <p begin="00:17:03.440" end="00:17:08.020">the sounds a little minority report but is happening right now and the cloud is making it really easy</p>
+      <p begin="00:17:08.020" end="00:17:12.650">to deploy it and also in the enterprise I certainly no it's true that</p>
+      <p begin="00:17:12.650" end="00:17:16.830">...microsoft make us watch a lot of videos about how to interact with you guys and,</p>
+      <p begin="00:17:16.830" end="00:17:21.310">behave ourselves but companies around the planet use the cloud and streaming video to train</p>
+      <p begin="00:17:21.310" end="00:17:24.690">and educate their employees so...building video portals,</p>
+      <p begin="00:17:24.690" end="00:17:28.360">portals that are just webpages enable you to host videos some of those</p>
+      <p begin="00:17:28.360" end="00:17:33.340">...might be live and some of videos might be pre-recorded...them using the cloud the</p>
+      <p begin="00:17:33.340" end="00:17:38.090">...has so many different applications so many different things that you could be doing with it, for example,</p>
+      <p begin="00:17:38.090" end="00:17:42.540">in the medical field I learned recently about a live-streaming of</p>
+      <p begin="00:17:42.540" end="00:17:45.480">surgeries that took place a big events and medical industry</p>
+      <p begin="00:17:45.480" end="00:17:49.990">where doctors and surgeons around the world from ten different hospitals all put a camera in the</p>
+      <p begin="00:17:49.990" end="00:17:54.310">...or surgery room and shared by surgery so they can train and talk to each other</p>
+      <p begin="00:17:54.310" end="00:17:59.130">via the cloud how quickly wasn't to do this about ten minutes and</p>
+      <p begin="00:17:59.130" end="00:18:02.160">loan miniature camera that they hooked up to their laptop beaming</p>
+      <p begin="00:18:02.160" end="00:18:07.290">...six signal to the cloud allowing the cloud to do all the heavy work all they had to...share</p>
+      <p begin="00:18:07.290" end="00:18:13.290">their colleagues the web page where...could be found and already mentioned the ability for</p>
+      <p begin="00:18:13.290" end="00:18:17.900">you to create your own enterprise solution if you peel underneath that what you see</p>
+      <p begin="00:18:17.900" end="00:18:22.700">is that as I've been talking about all this functionality is exposed to you are developers through</p>
+      <p begin="00:18:22.700" end="00:18:27.520">...api so as companies around the planet try to decide what's the best thing that they can</p>
+      <p begin="00:18:27.520" end="00:18:31.330">do what are their goals objectives that they want to use the cloud for we've provided a</p>
+      <p begin="00:18:31.330" end="00:18:36.200">really powerful api to make it possible very easy and very quickly api</p>
+      <p begin="00:18:36.200" end="00:18:40.560">is enable you to go from a video that sits locally on your desktop to a</p>
+      <p begin="00:18:40.560" end="00:18:45.940">...nappy streamed any device anywhere on the planet so with that</p>
+      <p begin="00:18:45.940" end="00:18:49.710">...idea of some ideas of how some customers and some of our partners</p>
+      <p begin="00:18:49.710" end="00:18:54.070">are using this technology let's look at some of the new stuff that we've added the platform that's made all</p>
+      <p begin="00:18:54.070" end="00:18:55.650">of this possible.</p>
+      <p begin="00:18:55.650" end="00:19:00.310">The first thing I want to show you is the fact that I know many of you are developers and</p>
+      <p begin="00:19:00.310" end="00:19:03.730">newman if you love to code but if you happen to be a kind</p>
+      <p begin="00:19:03.730" end="00:19:08.550">of type who wants to look for a very quick and dirty way to get one of these applications up and</p>
+      <p begin="00:19:08.550" end="00:19:12.620">running what we've created a tool for you that you just gotta half it's called the</p>
+      <p begin="00:19:12.620" end="00:19:17.900">...media services explore and I highly recommend you take a look at this tool because this does</p>
+      <p begin="00:19:17.900" end="00:19:23.980">all the api work that you would otherwise have to do built into the tool going to show you what the</p>
+      <p begin="00:19:23.980" end="00:19:29.420">to looks like...real-time so-you can take a look at it and how it how it works?</p>
+      <p begin="00:19:29.420" end="00:19:31.660">This is the tool running on my windows</p>
+      <p begin="00:19:31.660" end="00:19:35.580">eight laptop here download it from that website and</p>
+      <p begin="00:19:35.580" end="00:19:40.080">what allows me to do is do everything that I've just been talking about every functionality imagine</p>
+      <p begin="00:19:40.080" end="00:19:44.930">...services built into a desktop tool so if I want to say, for example, go up</p>
+      <p begin="00:19:44.930" end="00:19:49.910">here and...piece of video content that's running on might that's I have local...like this</p>
+      <p begin="00:19:49.910" end="00:19:56.190">...hollow lenz video that was just published yesterday which I just picked up</p>
+      <p begin="00:19:56.190" end="00:20:01.140">I go and...locally and now I'm just going to push into the cloud and the tool do that for me</p>
+      <p begin="00:20:01.140" end="00:20:05.900">is writing into my blob storage account forming that's all I had to do very...of course you could</p>
+      <p begin="00:20:05.900" end="00:20:10.890">done that through...api running a visual studio but this tool...the time</p>
+      <p begin="00:20:10.890" end="00:20:15.800">inherit is stored in my in not in my account now once that</p>
+      <p begin="00:20:15.800" end="00:20:20.330">video now exists I might want to encoded might want encoded so that it can</p>
+      <p begin="00:20:20.330" end="00:20:25.170">be pliable on any device in the planet how do I do that of course there's an api for that</p>
+      <p begin="00:20:25.170" end="00:20:29.290">...also use the desktop tool just to go encode the asset with our cloud based</p>
+      <p begin="00:20:29.290" end="00:20:36.160">media encoder once I choose that gives me all the choices for different ways that I might</p>
+      <p begin="00:20:36.160" end="00:20:39.630">want to encoded but I want this to be encoded...adaptive</p>
+      <p begin="00:20:39.630" end="00:20:42.310">...streaming I want to be...with seven twenty</p>
+      <p begin="00:20:42.310" end="00:20:47.140">pi resolution so I'll just go and launch based on the default setting</p>
+      <p begin="00:20:47.140" end="00:20:51.380">and it starts kicking off a job it...jobs in the cloud for me of course using</p>
+      <p begin="00:20:51.380" end="00:20:56.260">api do that the tool takes that place and then job is going to start and I've</p>
+      <p begin="00:20:56.260" end="00:21:00.040">got a cloud based encoder that's running will pick up that encode</p>
+      <p begin="00:21:00.040" end="00:21:03.550">...video file that's going to take about three or four minutes to work</p>
+      <p begin="00:21:03.550" end="00:21:06.930">rather than make you wait around and wait for that I already got one</p>
+      <p begin="00:21:06.930" end="00:21:12.150">...earlier it's right here this is the encoded version now what you'll see of</p>
+      <p begin="00:21:12.150" end="00:21:16.500">courses that I defaults edit so it would create a different bit rates that's different</p>
+      <p begin="00:21:16.500" end="00:21:20.320">but rates for different devices depending on what network you happen to be on?</p>
+      <p begin="00:21:21.360" end="00:21:24.680">And, then once I've encoded I'm just going publish it by creating a</p>
+      <p begin="00:21:24.680" end="00:21:30.690">...a streaming url locate or...try that one more time.</p>
+      <p begin="00:21:30.690" end="00:21:32.180">Publish.</p>
+      <p begin="00:21:32.180" end="00:21:34.910">Create low cuter again.</p>
+      <p begin="00:21:34.910" end="00:21:38.600">So,...care defaults to a year from now that's plenty fine</p>
+      <p begin="00:21:38.600" end="00:21:43.490">...create that what it's doing now is it's pushing, pushing a url out so</p>
+      <p begin="00:21:43.490" end="00:21:46.950">that I can now give that url to anyone I want to...</p>
+      <p begin="00:21:46.950" end="00:21:52.490">url becomes extremely locate or url that anyone can play once that's done all the</p>
+      <p begin="00:21:52.490" end="00:21:56.410">located for all of the things that I've just published are available to</p>
+      <p begin="00:21:56.410" end="00:22:01.070">show you what that looks like what's cool about this measure media services explorer tool</p>
+      <p begin="00:22:01.070" end="00:22:04.220">it's got all this stuff baked in already so all the things that</p>
+      <p begin="00:22:04.220" end="00:22:08.360">you'd want your disposal here I might want to encrypt that file I might not want</p>
+      <p begin="00:22:08.360" end="00:22:12.450">everybody in the world to be able to play it unless they have a license key so I could easily</p>
+      <p begin="00:22:12.450" end="00:22:19.320">encrypted or I can make it clear here are the located is right here.</p>
+      <p begin="00:22:19.320" end="00:22:22.870">Here's the one for smooth streaming here's the one for mpeg dash here's the one for each</p>
+      <p begin="00:22:22.870" end="00:22:26.000">...before here salon for ageless vthree.</p>
+      <p begin="00:22:26.000" end="00:22:27.760">Now you might say great you have to hand</p>
+      <p begin="00:22:27.760" end="00:22:32.210">...all these located to all these people all around the world depending on which device they have</p>
+      <p begin="00:22:32.210" end="00:22:37.210">as long as a quick click the right located on the right devices...playing then I'll get the video and you</p>
+      <p begin="00:22:37.210" end="00:22:42.070">would have to say that that's true until just quite recently when something else really</p>
+      <p begin="00:22:42.070" end="00:22:45.820">magical came out from our development team and that's what we call the</p>
+      <p begin="00:22:45.820" end="00:22:50.490">asher media player as you media player is across platform player</p>
+      <p begin="00:22:50.490" end="00:22:55.150">that automatically detects what you are running it on and pulls down the video</p>
+      <p begin="00:22:55.150" end="00:22:59.450">...format matches your device.</p>
+      <p begin="00:22:59.450" end="00:23:01.480">Don't believe me you can try it for yourself</p>
+      <p begin="00:23:01.480" end="00:23:06.010">there's a website aka dot ms-dot amt demo feel free to go to that</p>
+      <p begin="00:23:06.010" end="00:23:10.330">anytime you like the idea of course with the asher media player is it</p>
+      <p begin="00:23:10.330" end="00:23:15.030">knows what device it's running on so you don't have to do the heavy lifting if you're</p>
+      <p begin="00:23:15.030" end="00:23:19.850">running on an android found will pull down the format android can handle if you're running on</p>
+      <p begin="00:23:19.850" end="00:23:25.450">...iphone are...pull that down so what I can show you is</p>
+      <p begin="00:23:25.450" end="00:23:33.290">...looks like on my laptop here...back?</p>
+      <p begin="00:23:33.290" end="00:23:35.840">So, I'm using the actual media player</p>
+      <p begin="00:23:35.840" end="00:23:39.860">...internet explorer that's I just went</p>
+      <p begin="00:23:39.860" end="00:23:43.690">...played that file that I just published that's what it looks like an...</p>
+      <p begin="00:23:44.790" end="00:23:46.720">I can go full-screen of course.</p>
+      <p begin="00:23:46.720" end="00:23:47.550">This is an adaptive</p>
+      <p begin="00:23:47.550" end="00:23:49.630">...raping question cloud moi.</p>
+      <p begin="00:23:51.800" end="00:23:53.290">That's...it looks like moi.</p>
+      <p begin="00:23:58.190" end="00:24:02.230">This is a demo website of course is the players on website and</p>
+      <p begin="00:24:02.230" end="00:24:07.400">what...I can show you is that I can take the link to this url and I can cut and</p>
+      <p begin="00:24:07.400" end="00:24:10.590">paste and put it into another website?</p>
+      <p begin="00:24:10.590" end="00:24:13.330">And, show you how the player is portable so I've got a</p>
+      <p begin="00:24:13.330" end="00:24:17.370">website running here this is my video collection site is just running and adj</p>
+      <p begin="00:24:17.370" end="00:24:23.820">...it's just a silly callwebsite based on orchard if I go into orchard here and I'm going to go</p>
+      <p begin="00:24:23.820" end="00:24:26.120">...modify this page.</p>
+      <p begin="00:24:26.120" end="00:24:29.220">And, what I'm going to do is I'm going to add</p>
+      <p begin="00:24:29.220" end="00:24:33.020">a link to that video that I just published on this page?</p>
+      <p begin="00:24:34.040" end="00:24:37.690">Something go ahead and do that...go to the page that's running just the homepage I'm</p>
+      <p begin="00:24:37.690" end="00:24:42.450">just going to edit html web page you can always do this on anything here it</p>
+      <p begin="00:24:42.450" end="00:24:48.860">is I'll say this is a cruel hollow...video?</p>
+      <p begin="00:24:48.860" end="00:24:52.350">But, I just put up in the cloud.</p>
+      <p begin="00:24:52.350" end="00:24:54.750">And, at the bottom after that I'm going to cut and</p>
+      <p begin="00:24:54.750" end="00:24:58.230">paste my embed code from the player is going to show up as an</p>
+      <p begin="00:24:58.230" end="00:25:03.200">I frame and I frame that has the player already attached to it so you know-how everybody</p>
+      <p begin="00:25:03.200" end="00:25:07.080">...descending like youtube links around and you email them and you put them on</p>
+      <p begin="00:25:07.080" end="00:25:12.030">your facebook why should youtube have all the functionality and also manage all</p>
+      <p begin="00:25:12.030" end="00:25:17.880">of your content think of this is a way to get that same functionality but it's your website.</p>
+      <p begin="00:25:17.880" end="00:25:21.090">So, now I have my links into my web page and</p>
+      <p begin="00:25:21.090" end="00:25:24.710">it comes with the player because it's a hosted player.</p>
+      <p begin="00:25:24.710" end="00:25:30.690">All right...the save this and publisher.</p>
+      <p begin="00:25:30.690" end="00:25:42.500">Of course that's going to happen right in the middle of my demo.</p>
+      <p begin="00:25:42.500" end="00:25:44.790">Ok, now.</p>
+      <p begin="00:25:44.790" end="00:25:49.280">Let's go and see what looks like when I go to that web page.</p>
+      <p begin="00:25:49.280" end="00:25:53.640">Here's the web page again and now it has the video link.</p>
+      <p begin="00:25:53.640" end="00:25:58.140">...displayable bowman somebody else's website is playing out if you</p>
+      <p begin="00:25:58.140" end="00:26:01.190">...believe may think that there's some sort of...</p>
+      <p begin="00:26:01.190" end="00:26:09.650">doing up my sleeve I've already given you a url so you can try this yourself here this.</p>
+      <p begin="00:26:09.650" end="00:26:14.250">Ak dot microsoft build slash build microsoft feel free to do this...if</p>
+      <p begin="00:26:14.250" end="00:26:19.210">you're devices the idea here is that the player works on</p>
+      <p begin="00:26:19.210" end="00:26:23.240">whatever device you have and you can imbed now videos into all of your</p>
+      <p begin="00:26:23.240" end="00:26:26.480">web pages or your web applications really easy the</p>
+      <p begin="00:26:26.480" end="00:26:31.820">...solves a huge challenge and what is that challenge well it's been</p>
+      <p begin="00:26:31.820" end="00:26:36.540">so hard to be able to put video into your applications because you had to have so many different versions of</p>
+      <p begin="00:26:36.540" end="00:26:42.680">replications...to make sure that ram identify lash version and silverlight version maybe had</p>
+      <p begin="00:26:42.680" end="00:26:46.970">one for ios maybe add one for android, you know, and,</p>
+      <p begin="00:26:46.970" end="00:26:50.190">then your playback was always very complicated but now with the cloud we</p>
+      <p begin="00:26:50.190" end="00:26:54.280">solved the little this two things are happening here one is we've got player for</p>
+      <p begin="00:26:54.280" end="00:26:59.200">you that plays on any device that you tried on one code plays on all</p>
+      <p begin="00:26:59.200" end="00:27:04.150">places html code the second is the cloud auto converts</p>
+      <p begin="00:27:04.150" end="00:27:09.300">the format of the video to match the protocol that your device works on we...dynamic</p>
+      <p begin="00:27:09.300" end="00:27:17.390">packaging now if you remember from the tool...go ahead and go back to my tool here?</p>
+      <p begin="00:27:17.390" end="00:27:21.010">If you notice this but there's a whole lot of urls get...when I</p>
+      <p begin="00:27:21.010" end="00:27:24.450">...publish that video file these located...but this is the one</p>
+      <p begin="00:27:24.450" end="00:27:29.940">here zoom in on it see this one right here.</p>
+      <p begin="00:27:29.940" end="00:27:34.850">This was the only one that I put in that link that length that's the one that I put in</p>
+      <p begin="00:27:34.850" end="00:27:39.720">the link on the web page another words we use the our of the player and what we</p>
+      <p begin="00:27:39.720" end="00:27:44.110">called dynamic packaging from the cloud to have the cloud auto-detects what device were</p>
+      <p begin="00:27:44.110" end="00:27:49.070">playing on and delivery the video in exactly that format this is how you really</p>
+      <p begin="00:27:49.070" end="00:27:53.750">can simplify your development efforts by only publishing your content</p>
+      <p begin="00:27:53.750" end="00:27:57.540">...only encoding your content once?</p>
+      <p begin="00:27:57.540" end="00:28:02.390">And, only creating a client once in other words really make it easy</p>
+      <p begin="00:28:02.390" end="00:28:06.730">to share video now that video file that I just played...which was that hollow</p>
+      <p begin="00:28:06.730" end="00:28:10.660">...video from the from the build show that could have just been</p>
+      <p begin="00:28:10.660" end="00:28:15.300">...as easily alive stream cc I could have done exactly the same thing using the</p>
+      <p begin="00:28:15.300" end="00:28:18.520">exact same player exact same way to do it and just</p>
+      <p begin="00:28:18.520" end="00:28:23.680">...alive video stream into a website that's how easy it is now you gotta do is</p>
+      <p begin="00:28:23.680" end="00:28:28.510">start the camera and start the channel running very powerful but</p>
+      <p begin="00:28:28.510" end="00:28:32.900">that's exactly what we wanted to do for you guys the developer so.</p>
+      <p begin="00:28:32.900" end="00:28:36.840">...switch back to the powerpoint presentation.</p>
+      <p begin="00:28:36.840" end="00:28:41.910">So, it's really is all is easy as taking a better code html.</p>
+      <p begin="00:28:41.910" end="00:28:46.070">Will javascript throw that into your web page?</p>
+      <p begin="00:28:46.070" end="00:28:51.410">And, suddenly giving yourself the our video right away and let the cloud do it all</p>
+      <p begin="00:28:51.410" end="00:28:55.250">...that website one more time...get of what I just</p>
+      <p begin="00:28:55.250" end="00:29:02.560">showed which was my website just playing the video embed that I showed you and you can play around with that if you like.</p>
+      <p begin="00:29:02.560" end="00:29:05.470">And, if you're still looking for that url of the</p>
+      <p begin="00:29:05.470" end="00:29:11.050">...media player demo feel free to visit that site you can get there.</p>
+      <p begin="00:29:11.050" end="00:29:15.750">...features of the player because this is so new are going to grow over time we've got</p>
+      <p begin="00:29:15.750" end="00:29:20.680">quite a lot of things that we're adding now all of these things are coming because of the feedback they were getting from</p>
+      <p begin="00:29:20.680" end="00:29:25.050">our developers and our partners you are telling us what are some of the cool features...the player that you'd</p>
+      <p begin="00:29:25.050" end="00:29:29.810">...to add and...adding that into the into the capabilities so as we move their time</p>
+      <p begin="00:29:29.810" end="00:29:33.460">we just-released this only couple weeks ago is brand-new the player the</p>
+      <p begin="00:29:33.460" end="00:29:37.130">...media player hoping...take advantage of it take a look at it and</p>
+      <p begin="00:29:37.130" end="00:29:42.330">give some feedback...kinds of things you'd like us to add it works on all manner</p>
+      <p begin="00:29:42.330" end="00:29:43.530">of browsers devices.</p>
+      <p begin="00:29:44.700" end="00:29:47.980">And, also supports encrypted content and that's very important</p>
+      <p begin="00:29:47.980" end="00:29:52.390">...as we all know that are content is valuable for some people in the industry,</p>
+      <p begin="00:29:52.390" end="00:29:56.240">you know, the content is the most valuable thing that you have so you don't want to just</p>
+      <p begin="00:29:56.240" end="00:30:01.020">willingly published everywhere you might have business logical rules about who should be able to see it</p>
+      <p begin="00:30:01.020" end="00:30:02.690">and they might want to sell your content</p>
+      <p begin="00:30:02.690" end="00:30:07.760">...the case with some of the sporting events entertainment content that we work with all the time</p>
+      <p begin="00:30:07.760" end="00:30:12.090">the ability to encrypt your content is very important that's part of what we offer</p>
+      <p begin="00:30:12.090" end="00:30:17.520">...services all right let's move on to something else maybe</p>
+      <p begin="00:30:17.520" end="00:30:20.220">you heard about our new media intelligence features within</p>
+      <p begin="00:30:20.220" end="00:30:23.630">measure media services were released approximate faulk of the</p>
+      <p begin="00:30:23.630" end="00:30:27.270">...media index...this is really awesome technology.</p>
+      <p begin="00:30:28.400" end="00:30:32.600">Part of what we've done is taking the same technology that's been built into products like</p>
+      <p begin="00:30:32.600" end="00:30:37.570">the digital assistant core tama or perhaps it connect or maybe you used</p>
+      <p begin="00:30:37.570" end="00:30:42.460">our new bing translate or scribe translate services or taking the our of speech</p>
+      <p begin="00:30:42.460" end="00:30:47.570">or converting into text and that way you can search for your video</p>
+      <p begin="00:30:47.570" end="00:30:53.420">libraries for key words that were spoken in the video and what it will be able to do is help you</p>
+      <p begin="00:30:53.420" end="00:30:56.020">...database so that your application</p>
+      <p begin="00:30:56.020" end="00:31:00.480">your search application can use video assets the same way you might excel spreadsheets are word</p>
+      <p begin="00:31:00.480" end="00:31:02.570">...to find keywords?</p>
+      <p begin="00:31:03.870" end="00:31:07.110">Off-course has to work in multiple languages so we...now</p>
+      <p begin="00:31:07.110" end="00:31:11.010">...english and spanish with...like chinese and</p>
+      <p begin="00:31:11.010" end="00:31:16.840">japanese german italian french portuguese all of them are going to come now what does this look</p>
+      <p begin="00:31:16.840" end="00:31:25.050">like so I'll give you an idea of what this technology looks like as well...switch back.</p>
+      <p begin="00:31:25.050" end="00:31:29.990">So, here we have my friend joe who's doing a hollow...presentation and when I did is I took</p>
+      <p begin="00:31:29.990" end="00:31:34.160">his video and I submitted it to our index are?</p>
+      <p begin="00:31:34.160" end="00:31:36.820">Now how do I do that you might ask</p>
+      <p begin="00:31:36.820" end="00:31:42.840">well before we get too far in the demo wind...show you where that lives.</p>
+      <p begin="00:31:42.840" end="00:31:47.290">Here is the video that I uploaded and look right here index the asset with</p>
+      <p begin="00:31:47.290" end="00:31:50.930">asset media casually index are of course in api for</p>
+      <p begin="00:31:50.930" end="00:31:55.150">its that to when I kick that off it will begin to index that video file right</p>
+      <p begin="00:31:55.150" end="00:32:00.110">away and produce for me the entire transcript of the spoken words that were in a video</p>
+      <p begin="00:32:00.110" end="00:32:04.890">automatically the accuracy is pretty good it's about ninety to ninety five</p>
+      <p begin="00:32:04.890" end="00:32:10.540">percent accurate that's not a hundred-percent perfect that's a pretty far way down the path of</p>
+      <p begin="00:32:10.540" end="00:32:15.840">you transcribing automatically all of the video content.</p>
+      <p begin="00:32:15.840" end="00:32:19.060">So, I'm...play the video file you can see is the index</p>
+      <p begin="00:32:19.060" end="00:32:21.840">or just went through the video file line-by-line.</p>
+      <p begin="00:32:22.960" end="00:32:25.730">And, created the closed captioning track the index</p>
+      <p begin="00:32:25.730" end="00:32:30.350">track with the time-code associated with it and...dumped all of this</p>
+      <p begin="00:32:30.350" end="00:32:36.740">file all...this data into a file that looks like this</p>
+      <p begin="00:32:36.740" end="00:32:41.710">xml file with the track itself which is completely edible so</p>
+      <p begin="00:32:41.710" end="00:32:48.050">if there were words that joe said that we didn't recognize well that's okay because you can go back</p>
+      <p begin="00:32:48.050" end="00:32:51.300">in edit later now you might think well that's really fascinating</p>
+      <p begin="00:32:51.300" end="00:32:55.560">that certainly saving a lot of time I was able to quickly index...create the closed captioning</p>
+      <p begin="00:32:55.560" end="00:33:00.420">track for all my videos but what can I actually do with that you might ask...answer</p>
+      <p begin="00:33:00.420" end="00:33:05.350">for you take science cinema this is run by one of the government science labs</p>
+      <p begin="00:33:05.350" end="00:33:10.770">in the united states they've taken about a thousand or ten thousand videos and they have</p>
+      <p begin="00:33:10.770" end="00:33:15.630">index their entire video content library are all science videos about astronomy</p>
+      <p begin="00:33:15.630" end="00:33:20.710">or astrophysics so they often have a lot of requests from their constituents and the people who</p>
+      <p begin="00:33:20.710" end="00:33:24.660">use the service for particular videos about particular topics make sense</p>
+      <p begin="00:33:24.660" end="00:33:27.880">...research institution we have so many videos how do, you know,</p>
+      <p begin="00:33:27.880" end="00:33:31.030">...in the video those particular topics are let's just say,</p>
+      <p begin="00:33:31.030" end="00:33:35.530">for example, I was interested in looking for all the videos that had the phrase binary pulsar in</p>
+      <p begin="00:33:35.530" end="00:33:38.250">it because I'm doing a paper on</p>
+      <p begin="00:33:38.250" end="00:33:42.110">...I need to find information about that.</p>
+      <p begin="00:33:42.110" end="00:33:45.740">Well, what this does a search for the entire library</p>
+      <p begin="00:33:45.740" end="00:33:50.040">they've got and pulls out for me all of videos that have the word binary pulsar</p>
+      <p begin="00:33:50.040" end="00:33:54.490">in it now that's interesting but then I have to watch the whole video</p>
+      <p begin="00:33:54.490" end="00:33:58.080">no I sure don't because of the way that the index</p>
+      <p begin="00:33:58.080" end="00:34:02.070">are works I can jump right to the part of the video where that person is going to</p>
+      <p begin="00:34:02.070" end="00:34:06.520">speak and say that thing that I'm looking for which is the binary pulsar and</p>
+      <p begin="00:34:06.520" end="00:34:16.830">the player which they've embedded into their website here we'll just play that part of the video?</p>
+      <p begin="00:34:16.830" end="00:34:21.230">So, you get the idea you can build pretty impressive video content</p>
+      <p begin="00:34:21.230" end="00:34:25.850">video applications that search and say exactly what the content with</p>
+      <p begin="00:34:25.850" end="00:34:29.350">the viewer wants you to...really helps you personalize</p>
+      <p begin="00:34:29.350" end="00:34:32.310">your video content library now this technology this</p>
+      <p begin="00:34:32.310" end="00:34:37.220">indexing technology can not only just do words.</p>
+      <p begin="00:34:37.220" end="00:34:39.690">Today but in the future imagine</p>
+      <p begin="00:34:39.690" end="00:34:44.460">what we're adding hopefully...future builds I'll be able to show you this facial detection</p>
+      <p begin="00:34:44.460" end="00:34:49.320">...people inside your video or maybe image detection I want to find a particular</p>
+      <p begin="00:34:49.320" end="00:34:53.660">graphic or logo inside my video or...about sound effects the sound of</p>
+      <p begin="00:34:53.660" end="00:34:57.340">the gun shop or maybe eiffel tower just imagine if</p>
+      <p begin="00:34:57.340" end="00:35:02.300">video is just as easily search through is every other type of document that we keep its share</p>
+      <p begin="00:35:02.300" end="00:35:06.280">and that's precisely what this is really all about bringing media</p>
+      <p begin="00:35:06.280" end="00:35:11.060">intelligence and content enhancements and metadata to the video content that</p>
+      <p begin="00:35:11.060" end="00:35:20.460">...that you use on a regular basis.</p>
+      <p begin="00:35:20.460" end="00:35:24.670">Now live-streaming I talked about that when I open as I said</p>
+      <p begin="00:35:24.670" end="00:35:28.440">...channel nine has been broadcasting and streaming the build</p>
+      <p begin="00:35:28.440" end="00:35:33.150">conference this week and they've been doing actually...services to do it a check out</p>
+      <p begin="00:35:33.150" end="00:35:38.050">their website and you'll see what I'm talking about now what were the necessary components</p>
+      <p begin="00:35:38.050" end="00:35:44.580">in order to make that happen if I walk through that with you so you can get take a look at this.</p>
+      <p begin="00:35:44.580" end="00:35:47.910">The first thing of...you have to get your content to the cloud.</p>
+      <p begin="00:35:47.910" end="00:35:51.570">The your live content to the cloud so we have really enhance the</p>
+      <p begin="00:35:51.570" end="00:35:55.100">attributed services platform this year.</p>
+      <p begin="00:35:55.100" end="00:35:59.590">Today you can now send to us any of the following types of content any live</p>
+      <p begin="00:35:59.590" end="00:36:04.080">streams in these formats and...be able to receive them and process them so</p>
+      <p begin="00:36:04.080" end="00:36:08.700">...very common format for sending live video</p>
+      <p begin="00:36:08.700" end="00:36:13.580">...the cloud or you can create encoded with microsoft's...streaming or what's called</p>
+      <p begin="00:36:13.580" end="00:36:19.580">fragmented mp for or you can take the new approach which we just announced a few</p>
+      <p begin="00:36:19.580" end="00:36:24.210">weeks ago which is our tp or mpeg transport streams of course this is the</p>
+      <p begin="00:36:24.210" end="00:36:28.970">format that most broadcasters use around the world today when they distribute content</p>
+      <p begin="00:36:28.970" end="00:36:33.400">you can now take a live feed in mpeg transport send</p>
+      <p begin="00:36:33.400" end="00:36:38.090">...the cloud and now take advantage of something we just announced which is called</p>
+      <p begin="00:36:38.090" end="00:36:42.130">cloud live encoding this now it takes the ability of</p>
+      <p begin="00:36:42.130" end="00:36:46.840">doing the encoding in the cloud itself instead of...having to have a device</p>
+      <p begin="00:36:46.840" end="00:36:48.710">...outside the cloud.</p>
+      <p begin="00:36:48.710" end="00:36:52.740">Piece of hardware or software that does it for you now this</p>
+      <p begin="00:36:52.740" end="00:36:57.290">is really awesome when you're talking about trying to do lots of channels</p>
+      <p begin="00:36:57.290" end="00:37:02.260">that come and go like the sort of sporting events like I've talked about or</p>
+      <p begin="00:37:02.260" end="00:37:06.960">a medical conference...conference like this so you can easily spin up a</p>
+      <p begin="00:37:06.960" end="00:37:12.120">cloud virtual live encoder run it encoder live-streaming and a</p>
+      <p begin="00:37:12.120" end="00:37:16.570">...over destroy the virtual encoder and it's gone you don't have to</p>
+      <p begin="00:37:16.570" end="00:37:21.540">have physical assets physical encoders that you're carrying around racking and stacking</p>
+      <p begin="00:37:21.540" end="00:37:25.590">is pretty impressive and the capabilities...cloud live encoder</p>
+      <p begin="00:37:25.590" end="00:37:29.820">...exactly what broadcasters and developers like yourself we</p>
+      <p begin="00:37:29.820" end="00:37:34.080">think we really need the...to multiple layers a video multi bit rates the</p>
+      <p begin="00:37:34.080" end="00:37:37.900">ability to audio to...do closed captioning to meet</p>
+      <p begin="00:37:37.900" end="00:37:43.470">compliance standards and government standards and if you're so inclined you can certainly do ad</p>
+      <p begin="00:37:43.470" end="00:37:46.940">...to place advertisements and slates inside your video have</p>
+      <p begin="00:37:46.940" end="00:37:50.250">various ad breaks all of that is capable now through the</p>
+      <p begin="00:37:50.250" end="00:37:54.570">cloud no longer do you have to have a physical device to do this.</p>
+      <p begin="00:37:54.570" end="00:37:58.080">As I mention of course live-streaming wouldn't work so well if you could only</p>
+      <p begin="00:37:58.080" end="00:38:02.850">stream into one kind of device therefore...services cloud supports</p>
+      <p begin="00:38:02.850" end="00:38:07.590">them all four major protocols for streaming video.</p>
+      <p begin="00:38:08.600" end="00:38:10.280">Adaptive...are supported</p>
+      <p begin="00:38:10.280" end="00:38:14.980">by this cloud so appalachia less which also allows you to go to ios</p>
+      <p begin="00:38:14.980" end="00:38:19.550">android devices as well as many smart tv's mpeg dash which of course is the new</p>
+      <p begin="00:38:19.550" end="00:38:24.280">...ts standard for video streaming microsoft smooth streaming</p>
+      <p begin="00:38:24.280" end="00:38:29.670">format is continuous will continue to be supported and even adobe https for flash</p>
+      <p begin="00:38:29.670" end="00:38:33.620">base content so you see we support all of the different methodology</p>
+      <p begin="00:38:33.620" end="00:38:37.930">for streaming so you can have the widest audience possible and then</p>
+      <p begin="00:38:37.930" end="00:38:42.920">of course live wouldn't be as vat valuable if you just always gave it</p>
+      <p begin="00:38:42.920" end="00:38:47.190">away for free therefore you can encrypt your content to protected and</p>
+      <p begin="00:38:47.190" end="00:38:50.170">only enabled allow those people who are authorized to</p>
+      <p begin="00:38:50.170" end="00:38:54.860">...stream to see your content because they require license key to descriptive</p>
+      <p begin="00:38:54.860" end="00:38:58.860">of course we didn't stop there we had to keep enhancing and that's precisely</p>
+      <p begin="00:38:58.860" end="00:39:02.510">what we've done so in addition the fact that we can scale these...</p>
+      <p begin="00:39:02.510" end="00:39:07.280">servers these streaming servers to meet an audience of whatever size audience you can attract</p>
+      <p begin="00:39:07.280" end="00:39:10.380">their content whether you're talking about a small audience of</p>
+      <p begin="00:39:10.380" end="00:39:14.580">a few doctors to millions of people who might be watching the world cup or the</p>
+      <p begin="00:39:14.580" end="00:39:18.650">superbowl or the olympic games which of course we did in so tty russia</p>
+      <p begin="00:39:18.650" end="00:39:23.820">your so ago and will again...but there's also some great features that we think make this really</p>
+      <p begin="00:39:23.820" end="00:39:28.770">exciting compelling as a developer I'm sure you can take you would love to take advantage of them</p>
+      <p begin="00:39:28.770" end="00:39:33.650">...called instantaneous live to vad and cloud dvr how does this work well</p>
+      <p begin="00:39:33.650" end="00:39:37.710">imagine you're broadcasting hockey game now</p>
+      <p begin="00:39:37.710" end="00:39:41.610">...viewer most of us like to try to watch the game and,</p>
+      <p begin="00:39:41.610" end="00:39:46.710">we don't like to enter the game late but...unavoidable sometimes we join life program</p>
+      <p begin="00:39:46.710" end="00:39:52.200">in progress and we've just missed it but, with the our of cloud I want the ability to back</p>
+      <p begin="00:39:52.200" end="00:39:57.120">it up to join in the second-quarter and go back to the first the first period</p>
+      <p begin="00:39:57.120" end="00:40:01.890">of the first-quarter and watch the hockey game from the start I can do this because the cloud</p>
+      <p begin="00:40:01.890" end="00:40:06.870">automatically buffers the stream of your live events and turns it into</p>
+      <p begin="00:40:06.870" end="00:40:09.340">an on-demand asset so that your viewers if you</p>
+      <p begin="00:40:09.340" end="00:40:13.200">want to give it to them can instantly watch it at their pace at their</p>
+      <p begin="00:40:13.200" end="00:40:18.360">schedule including ability to pause live tv now most of you might be thinking the sounds very tivo</p>
+      <p begin="00:40:18.360" end="00:40:23.180">...of course it but there's no tivo involved...using the cloud to do it and you</p>
+      <p begin="00:40:23.180" end="00:40:29.780">have that capability when you use...services to build...takes advantage of...services?</p>
+      <p begin="00:40:29.780" end="00:40:34.270">Now there's another part I want to also demonstrate to you guys today and this is something that</p>
+      <p begin="00:40:34.270" end="00:40:38.930">we called dynamic manifest creation which I kind of affectionately re terms</p>
+      <p begin="00:40:38.930" end="00:40:42.480">...clipping what is this is the ability to take a</p>
+      <p begin="00:40:42.480" end="00:40:47.150">live-streaming that's running and take highlight from a</p>
+      <p begin="00:40:47.150" end="00:40:51.460">really key exciting moment from it and make it available to be</p>
+      <p begin="00:40:51.460" end="00:40:55.600">viewed by somebody else without them having to jump define that moment in your</p>
+      <p begin="00:40:55.600" end="00:41:07.330">life stream in other words I'll give you an example I'll go back to the laptop to do it.</p>
+      <p begin="00:41:07.330" end="00:41:10.980">So, here I have a...clipper tool.</p>
+      <p begin="00:41:10.980" end="00:41:12.480">And,...recognize the same hollow</p>
+      <p begin="00:41:12.480" end="00:41:16.860">...video asset that I've put in here right out just bear</p>
+      <p begin="00:41:16.860" end="00:41:21.110">with me imagine that this wasn't in fact a video asset that I pre-recorded but the</p>
+      <p begin="00:41:21.110" end="00:41:25.760">...stream maybe of the keynote that just happened yesterday the day before</p>
+      <p begin="00:41:25.760" end="00:41:30.240">so this kind of tool will enable need a clip out a moment and send that and</p>
+      <p begin="00:41:30.240" end="00:41:35.740">say that and share that with my friends so live-streaming playing here</p>
+      <p begin="00:41:35.740" end="00:41:39.330">is and then something really awesome happens like I don't</p>
+      <p begin="00:41:39.330" end="00:41:44.300">know this really cool view of...sitting on the table.</p>
+      <p begin="00:41:44.300" end="00:41:47.770">Yeah, I know this is all not so exciting but maybe you want something a little bit</p>
+      <p begin="00:41:47.770" end="00:41:51.490">more exciting irate let's jump out of holland we've probably seen enough of</p>
+      <p begin="00:41:51.490" end="00:41:55.830">...this week let's go to something more exciting like I don't know</p>
+      <p begin="00:41:55.830" end="00:41:57.800">about soccer soccer's</p>
+      <p begin="00:41:57.800" end="00:42:01.840">always very exciting there we go so let's say that this live event is going</p>
+      <p begin="00:42:01.840" end="00:42:06.530">...it's a soccer game and something really awesome happens like wow.</p>
+      <p begin="00:42:06.530" end="00:42:11.170">You know, a goal that goal was so amazing I as the owner of</p>
+      <p begin="00:42:11.170" end="00:42:16.600">the stream want to share this with my friends so I'm going to...that point</p>
+      <p begin="00:42:16.600" end="00:42:20.820">it point in time in my life stream which I'm going to start and let that run for a</p>
+      <p begin="00:42:20.820" end="00:42:25.860">little bit and see when the end of my highlighted moment is.</p>
+      <p begin="00:42:25.860" end="00:42:27.060">...was a great moments that</p>
+      <p begin="00:42:27.060" end="00:42:31.470">...a great moment that was a great moment okay that's good enough.</p>
+      <p begin="00:42:31.470" end="00:42:33.540">Set out what...I done just</p>
+      <p begin="00:42:33.540" end="00:42:38.850">...ten seconds of my life stream or of my video asset that I want to share and now</p>
+      <p begin="00:42:38.850" end="00:42:53.050">what do I do well go down here and just get rid of the a task bar here.</p>
+      <p begin="00:42:53.050" end="00:42:53.370">I'm going to</p>
+      <p begin="00:42:53.370" end="00:42:58.250">go in here and type in great moments in soccer.</p>
+      <p begin="00:42:58.250" end="00:42:59.430">And, I grab and image.</p>
+      <p begin="00:43:00.620" end="00:43:05.540">...thumbnail...publisher.</p>
+      <p begin="00:43:05.540" end="00:43:08.560">Now this tool is just an example of</p>
+      <p begin="00:43:08.560" end="00:43:12.760">how you could create a clip from a live stream.</p>
+      <p begin="00:43:12.760" end="00:43:15.700">And, this clip doesn't really exist</p>
+      <p begin="00:43:15.700" end="00:43:18.870">...creating a virtual clip a virtual</p>
+      <p begin="00:43:18.870" end="00:43:22.900">clip that is completely...here's my clip</p>
+      <p begin="00:43:22.900" end="00:43:27.440">all play my ten second clip right see the time meters now only ten</p>
+      <p begin="00:43:27.440" end="00:43:30.050">seconds the...is a clip</p>
+      <p begin="00:43:30.050" end="00:43:34.990">...live stream might still be happening that soccer game might still be happening but, you know,</p>
+      <p begin="00:43:34.990" end="00:43:38.510">what I can't wait for that live event to be over I want to share this really</p>
+      <p begin="00:43:38.510" end="00:43:43.570">highlighted magic moment with you so I'm going to take this and...to create</p>
+      <p begin="00:43:43.570" end="00:43:49.020">url and...always has been carefully choose and salute...</p>
+      <p begin="00:43:49.020" end="00:43:52.440">All right here's the url of my clip.</p>
+      <p begin="00:43:52.440" end="00:43:55.530">I'm just showing it you can see it now what do you notice</p>
+      <p begin="00:43:55.530" end="00:44:00.390">really interesting about this bit right here zoom in.</p>
+      <p begin="00:44:00.390" end="00:44:05.360">This thing called filter name what I've done is use the cloud to create a dynamic filter a</p>
+      <p begin="00:44:05.360" end="00:44:10.290">dynamic clip of a video acid that still running with the time indicator that tells</p>
+      <p begin="00:44:10.290" end="00:44:15.630">it and when I share this video clip with you I can I can send it</p>
+      <p begin="00:44:15.630" end="00:44:19.610">to-you if I want what I do that go back to my friendly neighborhood</p>
+      <p begin="00:44:19.610" end="00:44:28.020">...media player if I stick the url in the player and play it?</p>
+      <p begin="00:44:28.020" end="00:44:33.480">Here's my clips when except the other clip is still running in the background physical...</p>
+      <p begin="00:44:33.480" end="00:44:36.100">Here you go there's my clip right moi.</p>
+      <p begin="00:44:39.100" end="00:44:43.140">And, now if I go back to the beginning of the demo remember I just can</p>
+      <p begin="00:44:43.140" end="00:44:47.900">could take this and I can send this url to all of you.</p>
+      <p begin="00:44:47.900" end="00:44:49.710">I can email that and now my</p>
+      <p begin="00:44:49.710" end="00:44:54.370">clip is even twice as good...not only a clip of alive image alive stream</p>
+      <p begin="00:44:54.370" end="00:44:59.090">...happen but now it's a player that plays the live clip on any device that I</p>
+      <p begin="00:44:59.090" end="00:45:03.260">scented...if I were to texas all...right now all of you just this one</p>
+      <p begin="00:45:03.260" end="00:45:07.090">clip I don't have to know what device you're using I just sent you a clip from a</p>
+      <p begin="00:45:07.090" end="00:45:10.900">...stream an interest in played on a device any device that's</p>
+      <p begin="00:45:10.900" end="00:45:14.000">...the player gives you so you see what I've combined is all of</p>
+      <p begin="00:45:14.000" end="00:45:18.220">these technologies together to give you the owner of this live stream</p>
+      <p begin="00:45:18.220" end="00:45:23.080">...amazing ability to share highlights of...streams with your audience</p>
+      <p begin="00:45:23.080" end="00:45:27.650">now you can use this from marketing you could...to really promote right or you</p>
+      <p begin="00:45:27.650" end="00:45:30.380">could use it to really build a social environment around,</p>
+      <p begin="00:45:30.380" end="00:45:34.710">around your content imagine what this might mean if you're building</p>
+      <p begin="00:45:34.710" end="00:45:39.580">applications for sharing videos exchanging videos and not just the whole</p>
+      <p begin="00:45:39.580" end="00:45:44.420">video but bits of the video the best parts of video so all of this everything I've just</p>
+      <p begin="00:45:44.420" end="00:45:47.670">show you all available today through developer api</p>
+      <p begin="00:45:47.670" end="00:45:51.460">...or through tools like that some clipper tool that I just showed you which is also</p>
+      <p begin="00:45:51.460" end="00:45:58.350">just using api is just built around a way free to see it.</p>
+      <p begin="00:45:58.350" end="00:46:02.550">Now of course live-streaming wouldn't be good if you could measure it you couldn't distributed around</p>
+      <p begin="00:46:02.550" end="00:46:07.500">the world and that's part of what we...we conclude with so when you when you create</p>
+      <p begin="00:46:07.500" end="00:46:11.560">these live events it doesn't matter where the live event is happening if</p>
+      <p begin="00:46:11.560" end="00:46:16.480">your audiences around the world you can do that what how is it possible why is</p>
+      <p begin="00:46:16.480" end="00:46:19.830">that so easy because very simply I can say I</p>
+      <p begin="00:46:19.830" end="00:46:25.250">want my stream to be made available globally and we have quite literally</p>
+      <p begin="00:46:25.250" end="00:46:30.130">just recently added a small little check box inside a measurement services on the</p>
+      <p begin="00:46:30.130" end="00:46:34.800">...management portal that allows you to add what's called the content delivery network a</p>
+      <p begin="00:46:34.800" end="00:46:39.050">cds and all you have to do is say I want my streams</p>
+      <p begin="00:46:39.050" end="00:46:44.330">to automatically go through...so they can globally distributed and this gives you the</p>
+      <p begin="00:46:44.330" end="00:46:48.510">powered hit all these dots and all the surrounding miles and hundreds of miles</p>
+      <p begin="00:46:48.510" end="00:46:53.180">around the dots that your audiences can grow and grow and grow you</p>
+      <p begin="00:46:53.180" end="00:46:58.120">can hit your...send your content wherever you want and will be adding more and more and</p>
+      <p begin="00:46:58.120" end="00:47:03.050">more these dots as we microsoft continues to do interconnects with third-party</p>
+      <p begin="00:47:03.050" end="00:47:07.800">partners all around the world so that you can stream your video content from</p>
+      <p begin="00:47:07.800" end="00:47:11.980">high high-definition including four-k all the way down to</p>
+      <p begin="00:47:11.980" end="00:47:14.390">low bit rates on cell phones</p>
+      <p begin="00:47:14.390" end="00:47:17.930">...three-g forging networks wherever your viewers happen to be so that's kind</p>
+      <p begin="00:47:17.930" end="00:47:25.200">of the our of using the cloud to distribute your content especially if it's life?</p>
+      <p begin="00:47:25.200" end="00:47:30.230">Now in a little bit my colleague...is going to share with you a little bit more about how to do some</p>
+      <p begin="00:47:30.230" end="00:47:34.180">of these things how the live-streaming data flow works.</p>
+      <p begin="00:47:34.180" end="00:47:37.650">And, the idea of course here is that.</p>
+      <p begin="00:47:38.720" end="00:47:42.200">All the components of the cloud now exists and all the components of the</p>
+      <p begin="00:47:42.200" end="00:47:44.830">...are available for-you so-if you want-to spin up a</p>
+      <p begin="00:47:44.830" end="00:47:49.320">brand-new channel set up a webcam send that webcam up to the</p>
+      <p begin="00:47:49.320" end="00:47:54.230">to the cloud whether that webcam is able to spit out a format that's</p>
+      <p begin="00:47:54.230" end="00:48:00.310">...encoded or maybe it's a camera that's not doing pre encoding you want use the</p>
+      <p begin="00:48:00.310" end="00:48:05.250">cloud to encoded you can now send your content up to the cloud and do the live encoding</p>
+      <p begin="00:48:05.250" end="00:48:10.200">from there you can distribute perhaps by encryption to our streaming endpoints</p>
+      <p begin="00:48:10.200" end="00:48:14.730">and those streaming endpoints will...who or what device</p>
+      <p begin="00:48:14.730" end="00:48:19.930">is watching your content so...convert your content...multitude of different streaming protocols</p>
+      <p begin="00:48:19.930" end="00:48:25.210">...can player content any device that's in the market today of course if you want to</p>
+      <p begin="00:48:25.210" end="00:48:27.160">encrypt that content why shouldn't you</p>
+      <p begin="00:48:27.160" end="00:48:31.710">so you encrypted and you set up a license a</p>
+      <p begin="00:48:31.710" end="00:48:36.260">license delivery mechanism and we do that as well that's already provided as part imagine</p>
+      <p begin="00:48:36.260" end="00:48:41.690">media services...quite a lot of detail around how to use...content protection mechanisms so</p>
+      <p begin="00:48:41.690" end="00:48:46.660">you can encrypt your content and use the cloud to distribute license keys license</p>
+      <p begin="00:48:46.660" end="00:48:52.220">keys that will always be available if the person who's watching and wants to</p>
+      <p begin="00:48:52.220" end="00:48:55.540">watcher content is so authorized to do that and that's critical</p>
+      <p begin="00:48:55.540" end="00:48:59.880">of course because now that means that you have full control and you can integrate with</p>
+      <p begin="00:48:59.880" end="00:49:04.260">...systems are active directory if you want by doing token exchange and our to say to</p>
+      <p begin="00:49:04.260" end="00:49:09.820">someone you should or should not be able to watch my content so part of putting your</p>
+      <p begin="00:49:09.820" end="00:49:13.890">...the cloud is all about protecting the content distributing that</p>
+      <p begin="00:49:13.890" end="00:49:18.800">...but most importantly making that content is easily accessible and viewable and</p>
+      <p begin="00:49:18.800" end="00:49:21.480">...by you...other kind of</p>
+      <p begin="00:49:21.480" end="00:49:26.420">document or file or any kind of mechanism that we use and asher today that's the idea with</p>
+      <p begin="00:49:26.420" end="00:49:32.170">attributed services so I'm going to sort of conclude with that...</p>
+      <p begin="00:49:32.170" end="00:49:38.140">will take some questions at the end but I want to thank you very much for joining</p>
+      <p begin="00:49:38.140" end="00:49:43.290">this overview session today andI would invite you to take a look at any of the different</p>
+      <p begin="00:49:43.290" end="00:49:48.460">asher resources that are that are available about the build conference and certainly</p>
+      <p begin="00:49:48.460" end="00:49:53.420">...in the things that I've just talked about their all available for you to try for free get yourself and asher</p>
+      <p begin="00:49:53.420" end="00:49:58.480">account and just find that button in the management...says as your media services</p>
+      <p begin="00:49:58.480" end="00:50:03.360">creative media services count and off you go and whether you're going to use the developer tool the</p>
+      <p begin="00:50:03.360" end="00:50:06.440">explore tool that I just showed you to upload encode</p>
+      <p begin="00:50:06.440" end="00:50:11.160">encrypt index and publisher content or you want to do all that yourself through dot</p>
+      <p begin="00:50:11.160" end="00:50:15.930">net or java or build an application that really maps to your need if you want to</p>
+      <p begin="00:50:15.930" end="00:50:21.590">incorporate and...player app so that you don't have to build the client app you can do that but if</p>
+      <p begin="00:50:21.590" end="00:50:25.880">you're so inclined we have...case that help you write apps for ios</p>
+      <p begin="00:50:25.880" end="00:50:29.870">android windows as well so hopefully we've got everything</p>
+      <p begin="00:50:29.870" end="00:50:33.330">...you need to really get your video content out there published</p>
+      <p begin="00:50:33.330" end="00:50:35.350">...viewable and really,</p>
+      <p begin="00:50:35.350" end="00:50:39.610">really make the cloud work for your video applications I hope that this</p>
+      <p begin="00:50:39.610" end="00:50:44.870">has been helpful please don't forget to send us your feedback and...and...and,</p>
+      <p begin="00:50:44.870" end="00:50:49.780">some comments on how we've done and I'm very much thank you is there any questions I'd be happy to take them about</p>
+      <p begin="00:50:49.780" end="00:51:05.260">as you media services or any of the things that I've shown...so thank you very much?</p>
+      <p begin="00:51:05.260" end="00:51:07.690">This...image I can</p>
+      <p begin="00:51:07.690" end="00:51:14.710">right I have a question about the live-streaming coding the for a few months ago I try</p>
+      <p begin="00:51:14.710" end="00:51:18.020">...encode with the open...software.</p>
+      <p begin="00:51:19.090" end="00:51:23.130">And, it didn't work because the asher...requires</p>
+      <p begin="00:51:23.130" end="00:51:26.100">a few parameters like did gop.</p>
+      <p begin="00:51:27.120" end="00:51:30.150">Is still error...</p>
+      <p begin="00:51:30.150" end="00:51:33.640">To encode I'm sorry is the...</p>
+      <p begin="00:51:33.640" end="00:51:38.580">our requirement now yes we have all kinds of formats that we can except I think I</p>
+      <p begin="00:51:38.580" end="00:51:43.520">listed the three in one of my previous slides so you send in...</p>
+      <p begin="00:51:43.520" end="00:51:48.650">mp and there's set of configurations that you have to come your...mph stream has to comply with you</p>
+      <p begin="00:51:48.650" end="00:51:53.630">can send...microsoft smooth and...we have that and now the new art cp which of course will do</p>
+      <p begin="00:51:53.630" end="00:51:58.750">the encoding not on your local device but on prime so I'd be happy to show</p>
+      <p begin="00:51:58.750" end="00:52:03.560">you about all this information is available through our after media blog which</p>
+      <p begin="00:52:03.560" end="00:52:08.340">is often measure dot com slash media but all the information need to configure your</p>
+      <p begin="00:52:08.340" end="00:52:13.160">live stream or your stream is there and you just configure and if you're doing your</p>
+      <p begin="00:52:13.160" end="00:52:18.370">pre encoding yourself or you want use...new cloud based encoders you?</p>
+      <p begin="00:52:18.370" end="00:52:21.270">Okay, so,...it does support the will</p>
+      <p begin="00:52:21.270" end="00:52:24.460">...open broadcast software I don't know</p>
+      <p begin="00:52:24.460" end="00:52:29.250">...that one in particular but if the protocol</p>
+      <p begin="00:52:29.250" end="00:52:34.510">supports the three that we supported then we can take that stream from that supports</p>
+      <p begin="00:52:34.510" end="00:52:39.090">...should be good engine will be happy to work with you if...it's not quite work out for</p>
+      <p begin="00:52:39.090" end="00:52:42.610">youanother question from the player.</p>
+      <p begin="00:52:43.790" end="00:52:46.310">Does it support chrome just?</p>
+      <p begin="00:52:46.310" end="00:52:49.140">Doesn't run comcast, yeah, no, I mean like</p>
+      <p begin="00:52:49.140" end="00:52:53.620">...groupm just...question I don't know if that's if that's our list</p>
+      <p begin="00:52:53.620" end="00:52:56.330">...to go back and like the idea of courses that</p>
+      <p begin="00:52:56.330" end="00:53:00.960">it should run on every browser type that's available today and chrome is certainly one of</p>
+      <p begin="00:53:00.960" end="00:53:10.540">them so let's take a look and we'll find out and off the top ahead?</p>
+      <p begin="00:53:10.540" end="00:53:14.120">All hang around for a little bit thank you very much I hope you'll stick around and</p>
+      <p begin="00:53:14.120" end="00:53:17.840">...my colleague in about two five one</p>
+      <p begin="00:53:20.120" end="00:53:21.390">...to, yeah,</p>
+      <p begin="00:53:21.390" end="00:53:26.000">so, please stick around and enjoying her for a deeper divx and take a look at how you can code and</p>
+      <p begin="00:53:26.000" end="00:53:30.520">develop this stuff but...you and enjoy the rest of your build and...safe...</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.884</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.760" end="00:00:10.610">...project astoria building great windows apps from your android code.</p>
+      <p begin="00:00:10.610" end="00:00:15.700">I'm john justice the director program management project astoria with me is rajesh some</p>
+      <p begin="00:00:15.700" end="00:00:20.650">...director of engineering project astoria today we're going to talk about what project</p>
+      <p begin="00:00:20.650" end="00:00:26.350">...it is and show you how you can take advantage of it to bring your applications to windows mobile</p>
+      <p begin="00:00:26.350" end="00:00:30.940">now I just found out that this is starting the exact same time as the nfl</p>
+      <p begin="00:00:30.940" end="00:00:35.530">draft so if any of you follow american football I'm impressed</p>
+      <p begin="00:00:35.530" end="00:00:42.390">with your dedication but you're here...exciting happens please feel free shout.</p>
+      <p begin="00:00:42.390" end="00:00:45.930">All right before you started at the end of this will have this q</p>
+      <p begin="00:00:45.930" end="00:00:50.780">r code up this is the link to our session evaluation...put it up at the end but</p>
+      <p begin="00:00:50.780" end="00:00:54.780">if you have comments for us please do send them along especially if you</p>
+      <p begin="00:00:54.780" end="00:01:00.530">like to talk we do take that's a pretty seriously.</p>
+      <p begin="00:01:00.530" end="00:01:04.900">As you saw in the key notes windows ten represents a significant opportunity for</p>
+      <p begin="00:01:04.900" end="00:01:08.380">use developers it's going to help you building engaging</p>
+      <p begin="00:01:08.380" end="00:01:10.750">and diverse experiences scaling from mobile the</p>
+      <p begin="00:01:10.750" end="00:01:14.370">...you'll be able to reach over a billion users.</p>
+      <p begin="00:01:15.570" end="00:01:21.950">A variety of devices around the world through universal windows apps.</p>
+      <p begin="00:01:21.950" end="00:01:24.900">While universal windows apps will have the best reach and</p>
+      <p begin="00:01:24.900" end="00:01:28.420">the deepest integration with windows many of you have code</p>
+      <p begin="00:01:28.420" end="00:01:31.650">and other places that you'd like to move to windows.</p>
+      <p begin="00:01:31.650" end="00:01:33.370">Of course if you already have universal</p>
+      <p begin="00:01:33.370" end="00:01:37.010">...you are in the best position possible to take advantage of</p>
+      <p begin="00:01:37.010" end="00:01:39.370">...windows platform.</p>
+      <p begin="00:01:39.370" end="00:01:45.030">If you have win thirty-two or dot net apps we welcome them...also head of the game if you have</p>
+      <p begin="00:01:45.030" end="00:01:49.080">code from the web you-can directly target project spartan.</p>
+      <p begin="00:01:49.080" end="00:01:54.110">Ortiz apache cordova or...hosted web apps.</p>
+      <p begin="00:01:54.110" end="00:01:56.740">To seamlessly stay up-to-date with your website</p>
+      <p begin="00:01:56.740" end="00:02:02.140">...native access to the universal windows platform if you have apps based on middleware like</p>
+      <p begin="00:02:02.140" end="00:02:05.650">...or unity welcome those two and finally.</p>
+      <p begin="00:02:06.740" end="00:02:11.590">If you have apps from other mobile platforms including both ios an android we</p>
+      <p begin="00:02:11.590" end="00:02:15.080">welcome them as well windows provides bridges for</p>
+      <p begin="00:02:15.080" end="00:02:21.360">...is developers to bring your code from all these platforms to windows.</p>
+      <p begin="00:02:21.360" end="00:02:25.350">Just a minute we're going to dive into building a windows a story app.</p>
+      <p begin="00:02:25.350" end="00:02:26.040">But, first let's take</p>
+      <p begin="00:02:26.040" end="00:02:29.580">a minute talk about project astoria and project island would side-by-side.</p>
+      <p begin="00:02:30.700" end="00:02:35.490">First both projects are free st...that will be available later this year.</p>
+      <p begin="00:02:35.490" end="00:02:37.380">Project island...that nate</p>
+      <p begin="00:02:37.380" end="00:02:41.240">...user objective c code from your ios applications</p>
+      <p begin="00:02:41.240" end="00:02:45.560">development in visual studio good code reuse.</p>
+      <p begin="00:02:45.560" end="00:02:51.660">And, you get full integration with the universal windows platform a story brings both java</p>
+      <p begin="00:02:51.660" end="00:02:55.060">...android code the windows platform with.</p>
+      <p begin="00:02:55.060" end="00:02:59.730">...user existing id we support equips intelligence</p>
+      <p begin="00:02:59.730" end="00:03:01.940">...android studio.</p>
+      <p begin="00:03:01.940" end="00:03:03.570">With the story...many apps</p>
+      <p begin="00:03:03.570" end="00:03:08.020">...zero or very little modification art</p>
+      <p begin="00:03:08.020" end="00:03:15.410">...project historian.</p>
+      <p begin="00:03:15.410" end="00:03:21.240">...over to the...dame charred will show...preview of a project</p>
+      <p begin="00:03:21.240" end="00:03:25.780">...demo app called timber now we're going to...bit deeper.</p>
+      <p begin="00:03:25.780" end="00:03:30.700">So, timber with...be is a sample...the going to put up on get hub is</p>
+      <p begin="00:03:30.700" end="00:03:33.560">opensource you can check it out yourself in app that</p>
+      <p begin="00:03:33.560" end="00:03:39.360">...hope you find the national park that's rate for you all right so let's start on an android phone</p>
+      <p begin="00:03:39.360" end="00:03:43.570">since ...originally built for built for android.</p>
+      <p begin="00:03:43.570" end="00:03:47.870">I can like parks or passed by swiping left to right.</p>
+      <p begin="00:03:47.870" end="00:03:51.000">They don't like that one...trees.</p>
+      <p begin="00:03:51.000" end="00:03:51.620">Are down with</p>
+      <p begin="00:03:51.620" end="00:03:56.510">...nice and snowing okay we'll take a look at where this park is by clicking on the location</p>
+      <p begin="00:03:56.510" end="00:04:02.020">icon noone rajesh clicked on that called into the google location service of</p>
+      <p begin="00:04:02.020" end="00:04:07.140">course by...windows I would expect us to use the windows location service?</p>
+      <p begin="00:04:07.140" end="00:04:10.060">Okay, now I do like a...click into</p>
+      <p begin="00:04:10.060" end="00:04:13.450">a little bit now I want to share this with some folks.</p>
+      <p begin="00:04:14.610" end="00:04:18.870">So, we click on share here this is the android share intent that pulls up the android share</p>
+      <p begin="00:04:18.870" end="00:04:22.390">...if I...windows of course...windows share contracts.</p>
+      <p begin="00:04:23.420" end="00:04:26.400">Okay, the app also uses google maps to locate the</p>
+      <p begin="00:04:26.400" end="00:04:32.410">...in the windows apps of course I would want being maps.</p>
+      <p begin="00:04:32.410" end="00:04:33.950">If I wanted to add a comment on the</p>
+      <p begin="00:04:33.950" end="00:04:38.940">part timber would use the android keyboard of course on windows and...the excellent</p>
+      <p begin="00:04:38.940" end="00:04:49.320">windows keyboard with its excellent windows emerging l switch over to windows phone.</p>
+      <p begin="00:04:49.320" end="00:04:52.280">...this is timber.</p>
+      <p begin="00:04:52.280" end="00:04:56.560">Repackage as a windows app the app uses a hundred-percent of the</p>
+      <p begin="00:04:56.560" end="00:04:59.810">...code that you just are running on...android phone.</p>
+      <p begin="00:04:59.810" end="00:05:02.060">But, we're just reusing the code.</p>
+      <p begin="00:05:02.060" end="00:05:05.460">...delivering the user experience performance and security</p>
+      <p begin="00:05:05.460" end="00:05:11.440">that windows users expect use of told us time and...they love the windows phone design</p>
+      <p begin="00:05:11.440" end="00:05:13.890">and expect apps to fit into the windows phone experience.</p>
+      <p begin="00:05:14.980" end="00:05:18.280">...windows...like the part that I like.</p>
+      <p begin="00:05:18.280" end="00:05:24.010">All right let's see of our without one is...</p>
+      <p begin="00:05:24.010" end="00:05:31.220">Allocation just works calling into the windows location service let's go over to share.</p>
+      <p begin="00:05:31.220" end="00:05:32.890">Now when we share this is</p>
+      <p begin="00:05:32.890" end="00:05:38.050">...up the window share menu without any code change.</p>
+      <p begin="00:05:38.050" end="00:05:39.480">Ok.</p>
+      <p begin="00:05:39.480" end="00:05:42.910">Now let's go over the maps you can see these maps these are being</p>
+      <p begin="00:05:42.910" end="00:05:50.100">maps that are being added in again there was we'll show you...exactly how to make this change.</p>
+      <p begin="00:05:50.100" end="00:05:52.900">Now let's add a comment.</p>
+      <p begin="00:05:52.900" end="00:05:56.620">...just like I hope the windows keyboard came up was the</p>
+      <p begin="00:05:56.620" end="00:06:01.440">...keyboard the world I think right now ok now I want to do something that the android app</p>
+      <p begin="00:06:01.440" end="00:06:07.460">isn't able to do we're going to go in and this app uses lifestylesso,</p>
+      <p begin="00:06:07.460" end="00:06:12.220">we wrote a few lines of code to do this will show you how in a minute let's go in and take</p>
+      <p begin="00:06:12.220" end="00:06:18.430">...can see the timbers alive tile now to get apps like timber.</p>
+      <p begin="00:06:18.430" end="00:06:18.760">Users</p>
+      <p begin="00:06:18.760" end="00:06:28.280">will get them from the windows store just like any other windows app will show you...just a minute.</p>
+      <p begin="00:06:28.280" end="00:06:32.610">Our but first let's go and build and app.</p>
+      <p begin="00:06:32.610" end="00:06:37.150">You another developers of tolls over the...to reuse your code</p>
+      <p begin="00:06:37.150" end="00:06:41.910">user familiar id and keep your existing workflow in tools.</p>
+      <p begin="00:06:41.910" end="00:06:43.410">So, in this demo</p>
+      <p begin="00:06:43.410" end="00:06:47.700">...going to show you how to how to create a windows app using your android code.</p>
+      <p begin="00:06:47.700" end="00:06:50.460">Reuse it or using your familiar id</p>
+      <p begin="00:06:50.460" end="00:06:55.400">...current developing machine will do some live debugging will integrate with windows services</p>
+      <p begin="00:06:55.400" end="00:07:04.140">and will integrate with windows features all of very little effort now we're...going to take us through this?</p>
+      <p begin="00:07:04.140" end="00:07:06.230">Nobody first step.</p>
+      <p begin="00:07:06.230" end="00:07:11.120">...very first step is to find or more changes...I have to make the app</p>
+      <p begin="00:07:11.120" end="00:07:15.560">also I'm at the project...app analysis page which is part of the</p>
+      <p begin="00:07:15.560" end="00:07:19.900">windows development center I'm going to click on this link and upload the</p>
+      <p begin="00:07:19.900" end="00:07:24.470">ap k of the original android app.</p>
+      <p begin="00:07:24.470" end="00:07:28.500">This web page perform this static analysis of the...</p>
+      <p begin="00:07:28.500" end="00:07:33.270">It identifies all the google place services that are used by the app we</p>
+      <p begin="00:07:33.270" end="00:07:37.770">also take a stab at converting all the android icons into windows tight</p>
+      <p begin="00:07:37.770" end="00:07:42.510">assets and you developers have a choice of using the icons converted by the web</p>
+      <p begin="00:07:42.510" end="00:07:49.540">page or replacing them with your own assets these are the icons that are service converted.</p>
+      <p begin="00:07:49.540" end="00:07:55.050">I'm now going to drill in on google place services.</p>
+      <p begin="00:07:55.050" end="00:07:56.570">To see what the app what the web page</p>
+      <p begin="00:07:56.570" end="00:08:00.490">...web page correctly identified that this app is using three google</p>
+      <p begin="00:08:00.490" end="00:08:07.350">place services google location google maps and google klout messaging.</p>
+      <p begin="00:08:07.350" end="00:08:10.260">We're not going to show you how to convert this app into a windows</p>
+      <p begin="00:08:10.260" end="00:08:12.490">...with no core change.</p>
+      <p begin="00:08:12.490" end="00:08:16.340">To make that possible reorder service interop library this</p>
+      <p begin="00:08:16.340" end="00:08:21.150">service interop library automatically converts all the google calls to microsoft</p>
+      <p begin="00:08:21.150" end="00:08:25.740">equivalents in this in this example google location services converted</p>
+      <p begin="00:08:25.740" end="00:08:28.560">...windows location service google maps as</p>
+      <p begin="00:08:28.560" end="00:08:33.610">converter bing maps and google klout notifications removed google</p>
+      <p begin="00:08:33.610" end="00:08:37.750">...messaging is mapped to windows notifications.</p>
+      <p begin="00:08:37.750" end="00:08:40.290">The next step is to...click on this lincoln download the</p>
+      <p begin="00:08:40.290" end="00:08:45.000">st gave the project astoria sdk this is a one-time operation</p>
+      <p begin="00:08:45.000" end="00:08:48.660">but to save some time you've already done this on this demo machine.</p>
+      <p begin="00:08:48.660" end="00:08:52.010">I'm now going to switch to intelligent.</p>
+      <p begin="00:08:52.010" end="00:08:52.720">The project</p>
+      <p begin="00:08:52.720" end="00:08:58.500">...sdk comes with the tool that automatically...file.</p>
+      <p begin="00:08:58.500" end="00:09:00.560">To allow you to build flavors for both windows</p>
+      <p begin="00:09:00.560" end="00:09:07.440">an android so-you developers do not have to for code.</p>
+      <p begin="00:09:07.440" end="00:09:11.090">It also...it also automatically ads and dependency</p>
+      <p begin="00:09:11.090" end="00:09:15.840">microsoft services sorry windows version of your app can use the microsoft services and</p>
+      <p begin="00:09:15.840" end="00:09:22.720">sort-of google services this...purely optional...welcome to do the step I hand.</p>
+      <p begin="00:09:22.720" end="00:09:26.890">I'm now going to compile the app.</p>
+      <p begin="00:09:26.890" end="00:09:31.870">While the app is compiling I'm going to use a tool called w connect this</p>
+      <p begin="00:09:31.870" end="00:09:35.750">tool also as part of the sdk and the tool w connect takes</p>
+      <p begin="00:09:35.750" end="00:09:40.040">an ip address and connects to be windows emulator...running on this machine.</p>
+      <p begin="00:09:40.040" end="00:09:44.280">In this demo we're going to show you the emulator but we also support debugging and</p>
+      <p begin="00:09:44.280" end="00:09:56.070">applying to real devices both where usb and wi-fi.</p>
+      <p begin="00:09:56.070" end="00:09:59.220">We support that so this tool connectsthe windows</p>
+      <p begin="00:09:59.220" end="00:10:02.070">...android debug bridge also known as eighty.</p>
+      <p begin="00:10:02.070" end="00:10:03.290">We support all the</p>
+      <p begin="00:10:03.290" end="00:10:06.860">...commands that...be familiar with...to give you three examples.</p>
+      <p begin="00:10:08.190" end="00:10:10.950">Ab devices which lists all the</p>
+      <p begin="00:10:10.950" end="00:10:14.940">connector devices as you can see the emulator showed up as a valid device.</p>
+      <p begin="00:10:14.940" end="00:10:17.700">Ab...alice which</p>
+      <p begin="00:10:17.700" end="00:10:22.510">...the directly listing on the emulator and finally</p>
+      <p begin="00:10:23.930" end="00:10:28.930">Which allows you to see the logs generated...application?</p>
+      <p begin="00:10:28.930" end="00:10:31.010">More switch back to intelligent and</p>
+      <p begin="00:10:31.010" end="00:10:34.790">...I'll shows up as a valid deployment target so I'm going to</p>
+      <p begin="00:10:34.790" end="00:10:38.640">click all can deploy the app to the emulator while</p>
+      <p begin="00:10:38.640" end="00:10:43.640">this is happening I want explain what is happening under the colors we take the</p>
+      <p begin="00:10:43.640" end="00:10:47.740">ack and package convert that into a windows app x</p>
+      <p begin="00:10:47.740" end="00:11:00.050">this allows us to run the app as a native windows app in clustered and secure environment.</p>
+      <p begin="00:11:00.050" end="00:11:04.570">The app asks me for my location and I'm going to click yes.</p>
+      <p begin="00:11:04.570" end="00:11:08.010">I click on the location icon and this location information is</p>
+      <p begin="00:11:08.010" end="00:11:12.630">now provided by microsoft location windows location service.</p>
+      <p begin="00:11:12.630" end="00:11:16.370">Going to click on the in click on this park.</p>
+      <p begin="00:11:16.370" end="00:11:19.290">And, you know, this map comes from being map</p>
+      <p begin="00:11:20.840" end="00:11:26.720">... I'm not going to show you everything here but what we saw the consumer demo we just work.</p>
+      <p begin="00:11:26.720" end="00:11:30.430">...navigate back to the main page so,</p>
+      <p begin="00:11:30.430" end="00:11:34.370">you live debugging so I'm going to like this spark.</p>
+      <p begin="00:11:34.370" end="00:11:38.440">Right...a big point in the trigger right function and we support</p>
+      <p begin="00:11:38.440" end="00:11:43.140">your identical debugging workflow you can separate points you can step into</p>
+      <p begin="00:11:43.140" end="00:11:49.580">cody can step over code you can watch variables really the whole thing.</p>
+      <p begin="00:11:49.580" end="00:11:53.100">Now that I have shown you how to convert your.</p>
+      <p begin="00:11:53.100" end="00:11:57.440">Android...into a basic windows app with...core change</p>
+      <p begin="00:11:57.440" end="00:12:02.050">it's time to add of...lines of code to take advantage of some of the features that</p>
+      <p begin="00:12:02.050" end="00:12:06.000">are uniquely available only on windows so we're going to show you two things</p>
+      <p begin="00:12:06.000" end="00:12:11.060">...add some...for lifestyles and,</p>
+      <p begin="00:12:11.060" end="00:12:17.680">then it will show you how to map from google klout messaging to windows notifications.</p>
+      <p begin="00:12:17.680" end="00:12:22.580">So, I'm going to switch to the windows tile updated or java file.</p>
+      <p begin="00:12:22.580" end="00:12:29.490">And, the first thing I'm going to do is add a bunch of imports.</p>
+      <p begin="00:12:29.490" end="00:12:32.280">And, then I'm going to scroll down to the update tile function</p>
+      <p begin="00:12:32.280" end="00:12:41.650">...just a few lines of code for lifestyles.</p>
+      <p begin="00:12:41.650" end="00:12:46.940">...scroll so you can see what I've...just a few lines of code.</p>
+      <p begin="00:12:46.940" end="00:12:51.400">This is the exact same windows live tile api what we have done is</p>
+      <p begin="00:12:51.400" end="00:12:57.430">we've made that api accessible to you in java projections.</p>
+      <p begin="00:12:57.430" end="00:13:02.310">Now I'm going to...and deploy the app.</p>
+      <p begin="00:13:02.310" end="00:13:07.090">To the emulator so why this is happening I wanted...speak a little bit about what happens</p>
+      <p begin="00:13:07.090" end="00:13:11.810">in the real-world the real-world your app so...send...notification to a</p>
+      <p begin="00:13:11.810" end="00:13:17.790">cloud messaging service which will then redirect that onto the device.</p>
+      <p begin="00:13:17.790" end="00:13:22.100">In this demo all we're going to simulate that using fiddler</p>
+      <p begin="00:13:22.100" end="00:13:26.400">...have also made...really easy for you to changer apps...because</p>
+      <p begin="00:13:26.400" end="00:13:31.890">you're, you're you have apps...has to take care of what android apps and windows apps so,</p>
+      <p begin="00:13:31.890" end="00:13:34.520">it's...a one-line url change on the app so</p>
+      <p begin="00:13:34.520" end="00:13:37.790">...code to router message to a windows device.</p>
+      <p begin="00:13:38.840" end="00:13:41.100">Based on a windows prefix.</p>
+      <p begin="00:13:41.100" end="00:13:46.920">So, this app is not deployed on the phone on the emulator.</p>
+      <p begin="00:13:46.920" end="00:14:01.090">So, I'm actually going to win the app back to start so that you can see the lifetime.</p>
+      <p begin="00:14:01.090" end="00:14:06.160">And, I'm going to copy the registration id from lock-out here.</p>
+      <p begin="00:14:06.160" end="00:14:10.980">As you can see the starts with the keyword microsoft this is the...the app so that this is</p>
+      <p begin="00:14:10.980" end="00:14:15.470">this registration id comes from microsoft device and for them to use the</p>
+      <p begin="00:14:15.470" end="00:14:18.690">right url descended back to the microsoft device.</p>
+      <p begin="00:14:18.690" end="00:14:42.450">So, I'm going to copy this url.</p>
+      <p begin="00:14:42.450" end="00:14:46.460">I want to based this in fiddler.</p>
+      <p begin="00:14:46.460" end="00:14:51.310">Now using...ascending and http...of the same attribute request that your apps awards</p>
+      <p begin="00:14:51.310" end="00:14:53.190">...the cloud.</p>
+      <p begin="00:14:53.190" end="00:15:01.120">I'm going to bring the app...the very first thing that I'm going to do ascended...notification.</p>
+      <p begin="00:15:01.120" end="00:15:02.460">And, ...got</p>
+      <p begin="00:15:02.460" end="00:15:07.170">that those and this happened without any code change because we automatically mapped google</p>
+      <p begin="00:15:07.170" end="00:15:11.910">klout messaging of windows notifications I'm not going to make a one-word change the send</p>
+      <p begin="00:15:11.910" end="00:15:17.090">...a...tile update.</p>
+      <p begin="00:15:17.090" end="00:15:27.700">I...tools to...tile and if you a pay attention to the tyler want to see that flip.</p>
+      <p begin="00:15:27.700" end="00:15:38.680">Multiplied once more it flip but...back very quickly.</p>
+      <p begin="00:15:38.680" end="00:15:41.360">Well, the...supposed to flip the school system</p>
+      <p begin="00:15:41.360" end="00:15:45.780">and development so as we used for this is actually a live demo using real</p>
+      <p begin="00:15:45.780" end="00:15:52.370">connectivity before the demo we tried this ten out of ten times and it worked every single time.</p>
+      <p begin="00:15:52.370" end="00:15:56.330">So, now that...built I've shown you how to build a windows</p>
+      <p begin="00:15:56.330" end="00:16:09.380">app using your android code...you to...ingestion process.</p>
+      <p begin="00:16:09.380" end="00:16:14.090">Eleven out of level.</p>
+      <p begin="00:16:14.090" end="00:16:19.650">the windows this is the same develop windows dep center that...use for audio windows apps regardless of</p>
+      <p begin="00:16:19.650" end="00:16:25.010">where it came from so you use this speech to manage of in thirty-two apps project island</p>
+      <p begin="00:16:25.010" end="00:16:30.350">what apps and everything else I'm going to click on this link and upload</p>
+      <p begin="00:16:30.350" end="00:16:36.270">...that we just built...save you some time...to show you how the pages going to look after the upload</p>
+      <p begin="00:16:36.270" end="00:16:40.000">...finished...you can see that a bunch of...your.</p>
+      <p begin="00:16:41.010" end="00:16:45.350">And, now the now you're ready to hit submit as soon as you</p>
+      <p begin="00:16:45.350" end="00:16:48.010">hit submit your the app is now going to be available on the windows</p>
+      <p begin="00:16:48.010" end="00:16:50.980">...after the ingestion still ingestion process concludes.</p>
+      <p begin="00:16:52.980" end="00:16:59.530">So, that's sort of concludes the store ingestion process.</p>
+      <p begin="00:16:59.530" end="00:17:04.160">We know that many of you use amac as your primary development machine and you've thought about</p>
+      <p begin="00:17:04.160" end="00:17:08.460">you as...the entire workflow that I showed you here is also runs on</p>
+      <p begin="00:17:08.460" end="00:17:23.110">...so I'm just going to switch to a amac machine and, show you that.</p>
+      <p begin="00:17:23.110" end="00:17:28.219">So, that's analogy and this is the windows emulator running on a...so,</p>
+      <p begin="00:17:28.219" end="00:17:37.030">that...develop experience demo...okay all right.</p>
+      <p begin="00:17:37.030" end="00:17:41.270">And,...the networking...were playing with...for a little while but...came through</p>
+      <p begin="00:17:41.270" end="00:17:46.270">the end okay well we just saw we took some android code</p>
+      <p begin="00:17:46.270" end="00:17:50.980">we reuse it to build a great windows app...windows...including keyboard and</p>
+      <p begin="00:17:50.980" end="00:17:57.520">window sharing contract which are how to debugged we showed how to...with a...tile.</p>
+      <p begin="00:17:57.520" end="00:18:00.360">Also demonstrated just how easy it is to use the</p>
+      <p begin="00:18:00.360" end="00:18:04.740">project story interop library to redirect your...your google service</p>
+      <p begin="00:18:04.740" end="00:18:09.630">calls to microsoft services...just a simple configuration change and no code.</p>
+      <p begin="00:18:09.630" end="00:18:12.470">And, finally we showed you using the windows developer portal both</p>
+      <p begin="00:18:12.470" end="00:18:19.970">...analyzer app and that german recommended changes and then manage...boarding of europe.</p>
+      <p begin="00:18:19.970" end="00:18:22.440">...how do this actually work.</p>
+      <p begin="00:18:22.440" end="00:18:27.180">As you can imagine there's some pretty significant differences and architecture and design between windows and</p>
+      <p begin="00:18:27.180" end="00:18:31.980">...platforms so to say...is developers a ton of time.</p>
+      <p begin="00:18:31.980" end="00:18:33.770">We've done a lot of work translating</p>
+      <p begin="00:18:33.770" end="00:18:38.400">these concepts and rewrite translate these concepts.</p>
+      <p begin="00:18:38.400" end="00:18:40.940">Doing the heavy lifting for you re mapping the key</p>
+      <p begin="00:18:40.940" end="00:18:50.700">user experiences cloud services and platform api is...into each of these.</p>
+      <p begin="00:18:50.700" end="00:18:53.940">...start with user experience when someone uses a</p>
+      <p begin="00:18:53.940" end="00:18:58.880">project story app they...experience to be the same as any other windows app so windows</p>
+      <p begin="00:18:58.880" end="00:19:01.300">ensures that touch input interaction window</p>
+      <p begin="00:19:01.300" end="00:19:06.520">in notification another aspects experience all work well windows apps</p>
+      <p begin="00:19:06.520" end="00:19:11.080">...with product story will be available for download from the windows store along with any other</p>
+      <p begin="00:19:11.080" end="00:19:15.330">windows apps users don't generally pay a lot of attention to what tech...</p>
+      <p begin="00:19:15.330" end="00:19:21.530">powers and app as long as the app delivers great experience performance quality and security.</p>
+      <p begin="00:19:21.530" end="00:19:25.670">So, this is how timber would show up in the store if I were...meant that if we pulled of its</p>
+      <p begin="00:19:25.670" end="00:19:29.570">project pageit's going to download like any other</p>
+      <p begin="00:19:29.570" end="00:19:37.600">...once...downloaded...available for media use we ought to do anything special here.</p>
+      <p begin="00:19:37.600" end="00:19:38.810">Okay,</p>
+      <p begin="00:19:38.810" end="00:19:44.170">so, we're window...all of the most important experiences for apps built from project</p>
+      <p begin="00:19:44.170" end="00:19:47.620">...project historian we recreated controls</p>
+      <p begin="00:19:47.620" end="00:19:52.090">interactions and experiences to match the windows you...and to eliminate any clashes</p>
+      <p begin="00:19:52.090" end="00:19:56.140">...interface concepts so even though I'm just showing one example this</p>
+      <p begin="00:19:56.140" end="00:20:01.000">mapping of experiences in concepts is the same thing we do all over the system</p>
+      <p begin="00:20:01.000" end="00:20:05.650">...I concepts api mappings or kernel level...calls.</p>
+      <p begin="00:20:05.650" end="00:20:09.390">So, here's one example we're going into copy and paste</p>
+      <p begin="00:20:09.390" end="00:20:12.960">...windows customers expect copy and paste to work like</p>
+      <p begin="00:20:12.960" end="00:20:15.940">it does ever world some windows.</p>
+      <p begin="00:20:15.940" end="00:20:19.700">So, this is our app...project story works.</p>
+      <p begin="00:20:19.700" end="00:20:21.810">When you select text?</p>
+      <p begin="00:20:21.810" end="00:20:25.130">It looks like just like expect that's different from how</p>
+      <p begin="00:20:25.130" end="00:20:29.560">...on android on android it looks like this.</p>
+      <p begin="00:20:29.560" end="00:20:33.880">...the copy button is directly above on</p>
+      <p begin="00:20:33.880" end="00:20:36.900">...floats the top of as a menu looks pretty</p>
+      <p begin="00:20:36.900" end="00:20:43.070">different in a little bit jarring we didn't want those things so we replace them for you automatically.</p>
+      <p begin="00:20:43.070" end="00:20:48.030">Now if I go to paste the paces well on windows I use the keyboard that</p>
+      <p begin="00:20:48.030" end="00:20:52.610">using the pace but...always available...the keyboard on android I have a separate</p>
+      <p begin="00:20:52.610" end="00:21:01.930">pace button it looks pretty difference we removed all these jarring differences.</p>
+      <p begin="00:21:03.780" end="00:21:08.270">...right next up let's talk about services windows apps built</p>
+      <p begin="00:21:08.270" end="00:21:13.330">with project astoria they need to light...engaging user...generating revenue for</p>
+      <p begin="00:21:13.330" end="00:21:17.880">you is developers use a number of cloud services to do this</p>
+      <p begin="00:21:17.880" end="00:21:23.950">...providing a rich sdk for microsoft services in java to meet your needs so you can</p>
+      <p begin="00:21:23.950" end="00:21:28.100">create revenue ad opportunities with microsoft ads and analytics use</p>
+      <p begin="00:21:28.100" end="00:21:31.650">support framingham another popular models within app...</p>
+      <p begin="00:21:31.650" end="00:21:35.480">Powerful services like xbox live windows notification bing maps</p>
+      <p begin="00:21:35.480" end="00:21:41.870">locationsall these enable you to create engaging experiences.</p>
+      <p begin="00:21:41.870" end="00:21:45.240">The platform side when you're at uses low-level or</p>
+      <p begin="00:21:45.240" end="00:21:49.640">core platform capabilities including graphics files sensors</p>
+      <p begin="00:21:49.640" end="00:21:54.520">etc windows takes care of mapping those out too now some of this technically</p>
+      <p begin="00:21:54.520" end="00:21:59.400">...about mapping api is just one call to another but fundamental platform concepts like</p>
+      <p begin="00:21:59.400" end="00:22:04.680">lifecycle when apps...suspended when they're killed etc what apps</p>
+      <p begin="00:22:04.680" end="00:22:07.740">...processes are allowed to run a background or resource</p>
+      <p begin="00:22:07.740" end="00:22:10.770">...attribution and management so the windows knows exactly</p>
+      <p begin="00:22:10.770" end="00:22:15.290">what's executing using system resources if you're app uses sensors</p>
+      <p begin="00:22:15.290" end="00:22:20.220">other local hardware local files or other resources like contacts.</p>
+      <p begin="00:22:20.220" end="00:22:25.670">Project story redirect you to the...windows experience.</p>
+      <p begin="00:22:25.670" end="00:22:29.480">Good performance and long battery life are critical to a</p>
+      <p begin="00:22:29.480" end="00:22:35.380">good user experience we get both of these from...pieces of tech.</p>
+      <p begin="00:22:35.380" end="00:22:40.250">First we run these apps in the universal windows platform container applying the</p>
+      <p begin="00:22:40.250" end="00:22:44.950">same resource management policies that we apply everywhere else is important for performance</p>
+      <p begin="00:22:44.950" end="00:22:49.630">and battery life but also for security which...talk about next the second key</p>
+      <p begin="00:22:49.630" end="00:22:54.200">piece...mapping itself what's important about this is how we do it</p>
+      <p begin="00:22:55.280" end="00:22:58.980">our subsystem does not run a second os we're not running a second</p>
+      <p begin="00:22:58.980" end="00:23:03.460">...instead we've done the harder work of redirecting each of the low-level</p>
+      <p begin="00:23:03.460" end="00:23:06.170">calls you need directly to the windows kernel</p>
+      <p begin="00:23:06.170" end="00:23:14.920">this low-level mapping significantly improves efficiency through close integration with the rest of windows.</p>
+      <p begin="00:23:14.920" end="00:23:19.560">Now switch to how the universal platform sandbox another investments are making make sure your</p>
+      <p begin="00:23:19.560" end="00:23:24.520">users will be confident that all apps that come from the windows store regardless of the code base</p>
+      <p begin="00:23:24.520" end="00:23:29.470">they're built on are safe source security model is designed to protect the user</p>
+      <p begin="00:23:29.470" end="00:23:33.050">in multiple ways against multiple points of threat.</p>
+      <p begin="00:23:33.050" end="00:23:38.790">on the platform side we build the system and the architecture security in mind reducing the chance of</p>
+      <p begin="00:23:38.790" end="00:23:43.670">mahler taking advantage vulnerabilities and system so what does this look like well first we start with the</p>
+      <p begin="00:23:43.670" end="00:23:48.400">universal windows platform sandbox we build this on top of any base security we get</p>
+      <p begin="00:23:48.400" end="00:23:53.040">the android subsystem running in the universal windows platform sandbox results and</p>
+      <p begin="00:23:53.040" end="00:23:57.560">tighter control over app behavior and system resource access this cuts down in the</p>
+      <p begin="00:23:57.560" end="00:24:02.820">...surface area reducing prop possible threats compared to android, for example,</p>
+      <p begin="00:24:02.820" end="00:24:07.340">several common mal were attacks on android use...as a means to...the user or</p>
+      <p begin="00:24:07.340" end="00:24:15.170">the device on windows we tightly control the sm interface only trusted apps can run.</p>
+      <p begin="00:24:15.170" end="00:24:17.480">Next up is security through the store.</p>
+      <p begin="00:24:17.480" end="00:24:22.470">We have a sophisticated store ingestion process that screens developers and apps to ensure that good</p>
+      <p begin="00:24:22.470" end="00:24:27.300">apps from good developers with a good history are available in the windows store.</p>
+      <p begin="00:24:27.300" end="00:24:29.300">Now I'm sure that everyone in this room</p>
+      <p begin="00:24:29.300" end="00:24:33.730">...great apps that are highly trustworthy but for the people outside the room right</p>
+      <p begin="00:24:33.730" end="00:24:38.130">things that may not be we...make sure that we have good screening finally monitoring</p>
+      <p begin="00:24:38.130" end="00:24:44.010">rapid response with user's permission are monitoring services look at the anonymous</p>
+      <p begin="00:24:44.010" end="00:24:49.760">...telemetry and we look for how we can...malicious behavior for maps users</p>
+      <p begin="00:24:49.760" end="00:24:54.670">have direct channel microsoft report malicious or suspicious behavior and any apps and we have a team</p>
+      <p begin="00:24:54.670" end="00:24:58.690">of security research researchers...monitoring are devices and the android</p>
+      <p begin="00:24:58.690" end="00:25:04.390">ecosystem to identify the latest threats and vulnerabilities will provide rapid updates to the system</p>
+      <p begin="00:25:04.390" end="00:25:15.350">...and through the store will act quickly and user reports address potential threats.</p>
+      <p begin="00:25:15.350" end="00:25:18.890">All right what's recap so we just saw</p>
+      <p begin="00:25:18.890" end="00:25:22.360">have windows ten provides a bridge to bring your android code</p>
+      <p begin="00:25:22.360" end="00:25:27.270">windows we releasing this sdk for free later this year.</p>
+      <p begin="00:25:27.270" end="00:25:29.850">...welcoming your android code.</p>
+      <p begin="00:25:29.850" end="00:25:34.150">We support your id...on your deb machine.</p>
+      <p begin="00:25:34.150" end="00:25:39.090">We support integration into windows including live tiles and all this ends up in the windows</p>
+      <p begin="00:25:39.090" end="00:25:44.020">store.</p>
+      <p begin="00:25:44.020" end="00:25:47.830">Now thanks for coming today if you'd like to learn more I encourage you to stop</p>
+      <p begin="00:25:47.830" end="00:25:51.120">...booth tester the sdk...in a hands-on,</p>
+      <p begin="00:25:51.120" end="00:25:53.610">hands-on a quick start challenge.</p>
+      <p begin="00:25:53.610" end="00:25:54.270">If you like to help</p>
+      <p begin="00:25:54.270" end="00:25:59.200">...shape the technology or just follow along sign up for updates on our website.</p>
+      <p begin="00:25:59.200" end="00:26:03.720">Linkedin channel nine videos blog posts and samples over the coming days.</p>
+      <p begin="00:26:03.720" end="00:26:08.360">...if you have any questions we save a good amount of time for qa here at the end and then movie at</p>
+      <p begin="00:26:08.360" end="00:26:13.580">the windows insiders lounge for the next chunk of time to answering more.</p>
+      <p begin="00:26:13.580" end="00:26:18.620">All right so if you have questions please come up the microphones and ask and we'll try</p>
+      <p begin="00:26:18.620" end="00:26:21.410">...the you got.</p>
+      <p begin="00:26:21.410" end="00:26:34.060">Rajesh...come back up the degree.</p>
+      <p begin="00:26:34.060" end="00:26:37.610">So, the few questions my first as we use a</p>
+      <p begin="00:26:37.610" end="00:26:42.610">lot of low-level socket programming api in our cplus-plus</p>
+      <p begin="00:26:42.610" end="00:26:47.340">code for you support like multicast and broadcast and all that stuff.</p>
+      <p begin="00:26:47.340" end="00:26:49.950">...about the general way that we go through supporting</p>
+      <p begin="00:26:49.950" end="00:26:53.390">all stuff we do is we start working folks</p>
+      <p begin="00:26:53.390" end="00:26:59.670">...the folks in our tap programmer or more now we're talking about this we go</p>
+      <p begin="00:26:59.670" end="00:27:04.780">into static analysis over all the app so that compatibility wizard is based on we have</p>
+      <p begin="00:27:04.780" end="00:27:09.720">engine that can go and find out what are all the calls that you make local calls all the remote calls all</p>
+      <p begin="00:27:09.720" end="00:27:14.370">those things and then we go look across all of those api eyes we say okay which ones</p>
+      <p begin="00:27:14.370" end="00:27:19.400">we cluster analysis say what which are the ones that cluster together with the most valuable we prioritize</p>
+      <p begin="00:27:19.400" end="00:27:23.030">...that way so I can tell you that...have the most useful</p>
+      <p begin="00:27:23.030" end="00:27:27.960">calls in that area I can't tell you we have one particular one or another but if you send-me...I can ...you know,</p>
+      <p begin="00:27:27.960" end="00:27:31.280">for the particular thing or if you want to make sure we have coverage for stop</p>
+      <p begin="00:27:31.280" end="00:27:36.160">...both will scan your apple make sure we have the right stuff cool okay and then to really other quick</p>
+      <p begin="00:27:36.160" end="00:27:41.190">question that infers like background services you just kind of ignore those</p>
+      <p begin="00:27:41.190" end="00:27:45.080">unassuming because you can't no actually we're building support for background services in the</p>
+      <p begin="00:27:45.080" end="00:27:50.010">code that were demo ing today we don't have it to show it doesn't work yet but we're working on</p>
+      <p begin="00:27:50.010" end="00:27:54.630">building and right now there's there's some there's some real differences in a way that</p>
+      <p begin="00:27:54.630" end="00:27:58.820">we handle background services and with android handles background services but we've got a mapping</p>
+      <p begin="00:27:58.820" end="00:28:02.420">...we can do school and it's way much on intention to</p>
+      <p begin="00:28:02.420" end="00:28:07.200">the user and control so we want to provide a trustworthy like battery efficient background</p>
+      <p begin="00:28:07.200" end="00:28:12.070">implementation that's the trick their background services on android it's pretty much open</p>
+      <p begin="00:28:12.070" end="00:28:16.150">...season so you can do anything with the background services and just</p>
+      <p begin="00:28:16.150" end="00:28:22.110">draining battery nothing we're trying to make sure that doesn't happen and then lastly did volume keys</p>
+      <p begin="00:28:22.110" end="00:28:27.750">work can I get those...is that still kind of model and.</p>
+      <p begin="00:28:27.750" end="00:28:31.200">Volume keys ...mean a and</p>
+      <p begin="00:28:31.200" end="00:28:35.640">...hardware volume...can I get the key events rhythms.</p>
+      <p begin="00:28:35.640" end="00:28:42.280">The key that's for this to encrypt the android subsystem no, I mean volume keys like to can</p>
+      <p begin="00:28:42.280" end="00:28:44.760">...if the user uses the volume keys and uone overvalued</p>
+      <p begin="00:28:44.760" end="00:28:49.340">...sorry...you're asking a licensing conan techno hardware support</p>
+      <p begin="00:28:49.340" end="00:28:54.740">...yet but yes you should be also for volume keys we-re map those is like</p>
+      <p begin="00:28:54.740" end="00:28:59.550">back button all the rest that kind of stuff so was we'll go inject those arabia's thank you</p>
+      <p begin="00:28:59.550" end="00:29:04.610">sure that let's...over the next one over here...altering back and forth</p>
+      <p begin="00:29:04.610" end="00:29:09.190">...around the feeding and like the system controls...</p>
+      <p begin="00:29:09.190" end="00:29:13.550">One is how much you...transfer...is like how much more can we do to try</p>
+      <p begin="00:29:13.550" end="00:29:16.750">...make it fit within the windows os and...what are the</p>
+      <p begin="00:29:16.750" end="00:29:21.700">...requirements around here if we don't even yes ok so,</p>
+      <p begin="00:29:21.700" end="00:29:27.740">let's start with you saw some stuff we showed here already we showed re mapping some of the</p>
+      <p begin="00:29:27.740" end="00:29:31.600">...system dialogues we-re mapped into all of a system called</p>
+      <p begin="00:29:31.600" end="00:29:34.720">...we're taking care of those one after another to make sure</p>
+      <p begin="00:29:34.720" end="00:29:39.410">those are all feel like windows we can't go in and change the app itself the way</p>
+      <p begin="00:29:39.410" end="00:29:43.680">the app looks internally was not calling intomaking system calls so,</p>
+      <p begin="00:29:43.680" end="00:29:49.700">that's really up to the developer we don't currently have any policies that require</p>
+      <p begin="00:29:49.700" end="00:29:54.310">you make significant changes there were ...be set noses we as we get a little</p>
+      <p begin="00:29:54.310" end="00:29:58.960">closer further on I can tell you that we're trying wherever we can to make it just</p>
+      <p begin="00:29:58.960" end="00:30:03.940">feel natural now there's a bunch of stuff that to be clear if you want to take advantage of things</p>
+      <p begin="00:30:03.940" end="00:30:08.460">like adaptive ey that will help you scale your app across different screen sizes and</p>
+      <p begin="00:30:08.460" end="00:30:12.640">things like that just doesn't exist on android that something you can only get by going and doing</p>
+      <p begin="00:30:12.640" end="00:30:17.380">something universal from the start so you want to go target hollow lens and xbox</p>
+      <p begin="00:30:17.380" end="00:30:23.490">and desktop a mobile and all those things you have to go there you could try to</p>
+      <p begin="00:30:23.490" end="00:30:30.750">code all that stuff manually but I...better patches...start the uwuniversal windows up?</p>
+      <p begin="00:30:30.750" end="00:30:34.220">...there...what if I already have a samurai</p>
+      <p begin="00:30:34.220" end="00:30:37.380">...android application that we want to use here because the development team</p>
+      <p begin="00:30:37.380" end="00:30:42.390">...each are they did it shared code with ios and there's no management</p>
+      <p begin="00:30:42.390" end="00:30:47.190">effort to target windows view so...users...nike case</p>
+      <p begin="00:30:47.190" end="00:30:52.910">...I would use...takers...target windows directly etc what the problem is</p>
+      <p begin="00:30:52.910" end="00:30:57.670">...management has no interest in creating the few level components for that so we have the views done</p>
+      <p begin="00:30:57.670" end="00:31:02.580">...android using the android widgets...android services and get the ip k out</p>
+      <p begin="00:31:02.580" end="00:31:06.650">...just drop this into windows phone how do you I haven't tried I don't know</p>
+      <p begin="00:31:06.650" end="00:31:10.720">that works work-site, you know, the evaluation we</p>
+      <p begin="00:31:10.720" end="00:31:15.010">...out that's a I would expect most...</p>
+      <p begin="00:31:15.010" end="00:31:19.710">...do examine development just...just a target windows...it's pretty straightforward</p>
+      <p begin="00:31:19.710" end="00:31:25.710">...by ibu then if you don't mind operate...can...take a look...</p>
+      <p begin="00:31:25.710" end="00:31:27.350">Okay, that's where</p>
+      <p begin="00:31:27.350" end="00:31:30.780">...height question you...support the system level api</p>
+      <p begin="00:31:30.780" end="00:31:36.320">...to the require just designing...guys.</p>
+      <p begin="00:31:36.320" end="00:31:41.010">In general we're supporting privilege api accessible different across the</p>
+      <p begin="00:31:41.010" end="00:31:45.330">two different platforms most apps that we worked so far</p>
+      <p begin="00:31:45.330" end="00:31:51.540">haven't needed them so we don't have those in the system now except those are called by our own our</p>
+      <p begin="00:31:51.540" end="00:31:55.810">own subsystem components if there's something that you need in particular again come by will take</p>
+      <p begin="00:31:55.810" end="00:32:00.700">...your thing and search...devices...yeah,</p>
+      <p begin="00:32:00.700" end="00:32:05.510">some of those scenarios are going to work and some of them just...to...that we into the limitations of things</p>
+      <p begin="00:32:05.510" end="00:32:10.490">like system utilities system utilities a lot of those they just won't work in this world</p>
+      <p begin="00:32:10.490" end="00:32:15.950">you really...write those just for a single your targeted they're lower-level...anything else</p>
+      <p begin="00:32:15.950" end="00:32:18.230">...consumes so you have differences in</p>
+      <p begin="00:32:18.230" end="00:32:22.890">the security miles platforms like being able to share file system files between applications</p>
+      <p begin="00:32:24.200" end="00:32:29.410">...api study handle as well as there are different things if you talk about so,</p>
+      <p begin="00:32:29.410" end="00:32:32.090">for security itself...do that wrapper we put everything in</p>
+      <p begin="00:32:32.090" end="00:32:37.060">the universal windows platform runtime or sandbox so we get</p>
+      <p begin="00:32:37.060" end="00:32:40.580">that kind of protection that goes around when you're doing sharing between app</p>
+      <p begin="00:32:40.580" end="00:32:44.690">...doing ...and passing something over there...re map the individual</p>
+      <p begin="00:32:44.690" end="00:32:48.960">...and passes over so you still have a way of accessing those just like we showed you</p>
+      <p begin="00:32:48.960" end="00:32:56.360">this share contract you can do similar kinds of things to do what about your shared files and differences?</p>
+      <p begin="00:32:56.360" end="00:33:00.070">Probably more access on android...security.</p>
+      <p begin="00:33:00.070" end="00:33:03.380">...in general when their differences and security like</p>
+      <p begin="00:33:03.380" end="00:33:10.030">there's some there's some places where android we'll let you do interception of basically</p>
+      <p begin="00:33:10.030" end="00:33:14.990">...http stack which is just a fundamentally insecure thing to allow we just don't</p>
+      <p begin="00:33:14.990" end="00:33:18.980">allow it were defaulting to let's protect everybody let's</p>
+      <p begin="00:33:18.980" end="00:33:23.290">...like...to windows, windows that's right, yeah,</p>
+      <p begin="00:33:23.290" end="00:33:28.550">that's right okay so we're not going to compromise security to bring on a apps.</p>
+      <p begin="00:33:28.550" end="00:33:31.500">...from usual these people are reading...</p>
+      <p begin="00:33:31.500" end="00:33:37.390">Please use...middle...does it work...on windows mobile</p>
+      <p begin="00:33:37.390" end="00:33:42.050">...on desktop tablet than this one so it's on mobile today</p>
+      <p begin="00:33:42.050" end="00:33:46.140">that we've been focusing on these are apps that are typically written for mobile</p>
+      <p begin="00:33:46.140" end="00:33:50.220">so mobile and tablets that are running mobile support all</p>
+      <p begin="00:33:50.220" end="00:33:55.360">of those okay and another question do support also...video play</p>
+      <p begin="00:33:55.360" end="00:33:58.990">...for android tv android...like</p>
+      <p begin="00:33:58.990" end="00:34:03.550">...or it's out of school so some of those are some of those certainly</p>
+      <p begin="00:34:03.550" end="00:34:08.670">we don't today there are a new api is like casting and things like</p>
+      <p begin="00:34:08.670" end="00:34:11.950">...but we've looked at and there's very little</p>
+      <p begin="00:34:11.950" end="00:34:17.100">...yet so we looking we don't see a major need for that so we've been focusing on ones</p>
+      <p begin="00:34:17.100" end="00:34:20.390">...apps that we that we see our using a lot more and</p>
+      <p begin="00:34:20.390" end="00:34:26.140">...video...works or people video plays is one of the interesting ones because you want to</p>
+      <p begin="00:34:26.140" end="00:34:31.500">go intercept the video and move it to our hardware accelerated path I</p>
+      <p begin="00:34:31.500" end="00:34:36.250">...and the build we have right now...you know.</p>
+      <p begin="00:34:36.250" end="00:34:41.490">Because...I know in eighteen development I know that work...completely done we may have something that we</p>
+      <p begin="00:34:41.490" end="00:34:46.210">show now but the way we handle...intercept the request to play and we...onto</p>
+      <p begin="00:34:46.210" end="00:34:51.930">...a video...for all of these scenarios we're going to be most optimal back to</p>
+      <p begin="00:34:51.930" end="00:34:56.890">deliver the end-user experience...the optimal path requires to switch over to windows and use the</p>
+      <p begin="00:34:56.890" end="00:35:02.800">...windows...to do that okay that's what we do all the way throughout here we go and take that intercept</p>
+      <p begin="00:35:02.800" end="00:35:06.140">...pass on to our subsystem to go to work</p>
+      <p begin="00:35:06.140" end="00:35:12.320">well go ahead a couple of questions one does...support second</p>
+      <p begin="00:35:13.650" end="00:35:19.080">Secondary tiles yes saying yes easy I think that's actually...the as</p>
+      <p begin="00:35:19.080" end="00:35:23.680">...access to contacts so the address book creating a custom context</p>
+      <p begin="00:35:23.680" end="00:35:27.580">...and context we do support there are when you go down the list of local</p>
+      <p begin="00:35:27.580" end="00:35:31.230">objects we support most local object access there a few things we still have to add</p>
+      <p begin="00:35:31.230" end="00:35:35.290">...context is...on there thank you all go back</p>
+      <p begin="00:35:35.290" end="00:35:39.290">...yet two quick questions first one is what android api level</p>
+      <p begin="00:35:39.290" end="00:35:44.710">...you making you...things sure so,</p>
+      <p begin="00:35:44.710" end="00:35:48.980">looking out...we looked out the wild and...somewhat shocked by the number of</p>
+      <p begin="00:35:48.980" end="00:35:52.440">api levels that are that are out there...so.</p>
+      <p begin="00:35:52.440" end="00:35:57.300">Everyone we work with right now is targeting fairly old api levels so we support</p>
+      <p begin="00:35:57.300" end="00:36:02.830">kit kat so supporting...is actually a lot newer the...almost anybody's targeting today</p>
+      <p begin="00:36:02.830" end="00:36:08.120">they're almost no apps that are targeting lollipops natively today requiring lollipops so-so</p>
+      <p begin="00:36:08.120" end="00:36:13.000">...kitty-cat should cs for a while and the other question was in</p>
+      <p begin="00:36:13.000" end="00:36:16.290">the session yesterday on application lifecycle and windows</p>
+      <p begin="00:36:16.290" end="00:36:19.510">...about these new broken sockets that the application get</p>
+      <p begin="00:36:19.510" end="00:36:23.620">...wake on socket data reception that will at the</p>
+      <p begin="00:36:23.620" end="00:36:28.510">...allowable like methods to these perhaps...I don't know</p>
+      <p begin="00:36:28.510" end="00:36:33.890">...so...should we show you an example of...projection eventually we can</p>
+      <p begin="00:36:33.890" end="00:36:39.180">...other support for other native windows api projection as well so,...our goal is to</p>
+      <p begin="00:36:39.180" end="00:36:45.530">...more of...need a windows api surface why productions?</p>
+      <p begin="00:36:45.530" end="00:36:46.880">A...reviews</p>
+      <p begin="00:36:48.260" end="00:36:51.390">...duplication is targeted to several.</p>
+      <p begin="00:36:52.610" end="00:36:56.620">And, versions...right and the because</p>
+      <p begin="00:36:56.620" end="00:37:01.230">...versions provide different bp and the I...several</p>
+      <p begin="00:37:01.230" end="00:37:10.880">rocco some site to...my application on time chicks the android</p>
+      <p begin="00:37:10.880" end="00:37:15.850">...broker...insight so hollow this problem uses...</p>
+      <p begin="00:37:15.850" end="00:37:19.210">...to be handled in your project.</p>
+      <p begin="00:37:19.210" end="00:37:22.710">So, you showed it...build time you'll be able to detect that you're building for</p>
+      <p begin="00:37:22.710" end="00:37:27.340">...building for...so-if you have to do anything in particular you can go make those updates</p>
+      <p begin="00:37:27.340" end="00:37:32.090">but beyond that will also report back to the api level dislike you would in your you access</p>
+      <p begin="00:37:32.090" end="00:37:40.660">in your code today so you can take a look at that and see...making runtime...you have to...</p>
+      <p begin="00:37:40.660" end="00:37:44.590">I'm not sure our eritrean...on...</p>
+      <p begin="00:37:44.590" end="00:37:49.570">my application chicks and...android version in runtime so as which</p>
+      <p begin="00:37:49.570" end="00:37:53.830">...will be...award turn cat.</p>
+      <p begin="00:37:53.830" end="00:37:57.870">Okay, thank you.</p>
+      <p begin="00:37:57.870" end="00:38:01.120">The for the interop library...guys have for</p>
+      <p begin="00:38:01.120" end="00:38:05.880">...services ...have has versions of that</p>
+      <p begin="00:38:05.880" end="00:38:10.540">...broken out...much smaller components do you support that same.</p>
+      <p begin="00:38:10.540" end="00:38:15.890">Broken out structure broken out structures are...like maps if you only want</p>
+      <p begin="00:38:15.890" end="00:38:20.660">the maps component of google...services you can at that into their without adding, you know,</p>
+      <p begin="00:38:20.660" end="00:38:24.250">another twenty thousand methods which.</p>
+      <p begin="00:38:24.250" end="00:38:28.750">Approaches...working on...today we just showed you that's the simple</p>
+      <p begin="00:38:28.750" end="00:38:33.520">one one-line mapping but we want to work on that scenarios well okay thanks, yeah, today's everything in a single</p>
+      <p begin="00:38:33.520" end="00:38:39.750">gr that when intercepted will go...there.</p>
+      <p begin="00:38:39.750" end="00:38:44.600">So, again,...google...services are you supporting the</p>
+      <p begin="00:38:45.700" end="00:38:58.910">activity detection portions of that as well do you have andyes, there's a...</p>
+      <p begin="00:38:58.910" end="00:39:02.840">Good...regarding the would you services like</p>
+      <p begin="00:39:02.840" end="00:39:06.870">...provide background...all dui api so theories</p>
+      <p begin="00:39:06.870" end="00:39:11.770">and android so background audio that's one of the background services that we're working on adding we don't have</p>
+      <p begin="00:39:11.770" end="00:39:17.070">that yet but that's...mostly...just those differences between the background execution models</p>
+      <p begin="00:39:17.070" end="00:39:21.520">and we have that in background audio I believe will be one of the first backers services that we support</p>
+      <p begin="00:39:22.640" end="00:39:27.220">...regarding all the other api site you...to do foreground</p>
+      <p begin="00:39:27.220" end="00:39:31.800">...there lots of like the media extract...</p>
+      <p begin="00:39:31.800" end="00:39:35.880">Audio tracks...mobiles classes that...are those</p>
+      <p begin="00:39:35.880" end="00:39:39.280">...already supported in projectors to where you</p>
+      <p begin="00:39:39.280" end="00:39:44.100">...to look at individual ones typically if something is popular were a lot more likely to have the support</p>
+      <p begin="00:39:44.100" end="00:39:48.190">...already and we'll just add things as people need so I can't answer</p>
+      <p begin="00:39:48.190" end="00:39:51.920">for particular one there we have to go to scanner thing take a look</p>
+      <p begin="00:39:51.920" end="00:39:56.680">...tons and tons of possible methods there so we can scan it take a look and see</p>
+      <p begin="00:39:56.680" end="00:40:02.170">we have support for become by...both and we'll take a look.</p>
+      <p begin="00:40:02.170" end="00:40:08.640">I have an app which has native code as well as a...we kind of they switch back and forth</p>
+      <p begin="00:40:08.640" end="00:40:13.350">...yet so how does that scenario play out...works just fine we support native code</p>
+      <p begin="00:40:13.350" end="00:40:18.520">we support java code we...web use embedded we all those things together so...very common app</p>
+      <p begin="00:40:18.520" end="00:40:24.250">...pattern so we had a sport that...you get converted to windows...control the web you</p>
+      <p begin="00:40:24.250" end="00:40:29.480">...today is not yet is one of the things that we're looking at would really like to the edge</p>
+      <p begin="00:40:29.480" end="00:40:36.190">engine is pretty cool so, we want to get on that but we're not there today again our approach that</p>
+      <p begin="00:40:36.190" end="00:40:39.060">...take for each of these scenarios are going to take the most optimal</p>
+      <p begin="00:40:39.060" end="00:40:47.380">back that was the best end-user experience without compromising the scenario?</p>
+      <p begin="00:40:47.380" end="00:40:52.710">...specific question you might not be able to answer on windows phone economic sample audio</p>
+      <p begin="00:40:52.710" end="00:40:57.800">forty-eight kilohertz but...you can...lots of different sample rate and I have an...samples</p>
+      <p begin="00:40:57.800" end="00:41:08.250">...twenty-two kilohertz...just wondering...just work on windows phone.</p>
+      <p begin="00:41:08.250" end="00:41:12.190">Let's see...audio version.</p>
+      <p begin="00:41:12.190" end="00:41:14.790">You know, we have not looked at that scenario but I think but,</p>
+      <p begin="00:41:14.790" end="00:41:20.220">you know, but, like he said earlier...look at the cluster map and that's not...is important to ensure we will</p>
+      <p begin="00:41:20.220" end="00:41:24.640">...us we...greatest again stop at the...and</p>
+      <p begin="00:41:24.640" end="00:41:29.190">...definitely one of the quiz question if you have a native ios often...native</p>
+      <p begin="00:41:29.190" end="00:41:34.100">...up and you want to use these...technologies to make a windows phone up which is the best</p>
+      <p begin="00:41:34.100" end="00:41:39.800">...to use ... it's they use have different different approaches so you</p>
+      <p begin="00:41:39.800" end="00:41:42.760">...if you've got both of those things first clearly if you</p>
+      <p begin="00:41:42.760" end="00:41:46.190">have windows code go with windows code...be the best on the platform you</p>
+      <p begin="00:41:46.190" end="00:41:50.570">...the broadest places you can do the most stuff it's clearly the best thing to do with</p>
+      <p begin="00:41:50.570" end="00:41:55.760">the driving all the upgrades and all that it'll be a huge opportunity if</p>
+      <p begin="00:41:55.760" end="00:41:58.900">you got just ios...android code.</p>
+      <p begin="00:41:58.900" end="00:42:00.450">You look at it in one</p>
+      <p begin="00:42:00.450" end="00:42:05.220">questions you ask yourself do is one of the my lead code base do I lead with one of these or do the development</p>
+      <p begin="00:42:05.220" end="00:42:08.450">...this one first importers this one if so that's going to that's going to</p>
+      <p begin="00:42:08.450" end="00:42:11.390">...one direction or another the next thing would be</p>
+      <p begin="00:42:11.390" end="00:42:18.560">you say okay I'm going to do some work on the project island would side</p>
+      <p begin="00:42:18.560" end="00:42:23.460">iranians ios iowa's code there you have to do a little bit more work</p>
+      <p begin="00:42:23.460" end="00:42:28.320">in visual studio but in exchange for that you get full access to the platform you to call</p>
+      <p begin="00:42:28.320" end="00:42:34.970">intothe whole universal windows platform which is which is a valuable so on the on</p>
+      <p begin="00:42:34.970" end="00:42:39.450">the astoria side you don't typically have to do as much work it's usually very little</p>
+      <p begin="00:42:39.450" end="00:42:48.130">overhead but you don't have as much integration available...the system so that's a tradeoff that you have?</p>
+      <p begin="00:42:48.130" end="00:42:53.520">Okay,I have one question for the native code this point, yeah,</p>
+      <p begin="00:42:53.520" end="00:42:57.590">so, if ...force such kind</p>
+      <p begin="00:42:57.590" end="00:43:01.130">...pages say use native...to.</p>
+      <p begin="00:43:02.270" end="00:43:07.100">Develop and, your applications as a use open geo</p>
+      <p begin="00:43:08.220" end="00:43:11.880">...so do...she's kind of replicate</p>
+      <p begin="00:43:11.880" end="00:43:16.210">...if we do now soccer games and in particular so</p>
+      <p begin="00:43:16.210" end="00:43:20.530">games we support open gl we support open...with high framework rate we go and</p>
+      <p begin="00:43:20.530" end="00:43:26.880">...that over using angle nowthe on games a lot of games</p>
+      <p begin="00:43:26.880" end="00:43:32.230">more and more are being built on middleware if you're built on something like unity has great</p>
+      <p begin="00:43:32.230" end="00:43:36.940">native support for windows already your best path there is going to be just using unity and...</p>
+      <p begin="00:43:36.940" end="00:43:41.620">having a windows build target that's very straightforward to do so if you have that</p>
+      <p begin="00:43:41.620" end="00:43:44.880">if you have that kind of middleware the makes it easier go on that path</p>
+      <p begin="00:43:44.880" end="00:43:52.200">you don't have that kind of middleware than this is something you should check out and a...is that to the</p>
+      <p begin="00:43:52.200" end="00:43:56.530">cost for ngos as different kind of hardware api,</p>
+      <p begin="00:43:56.530" end="00:44:01.850">for example, ...</p>
+      <p begin="00:44:01.850" end="00:44:04.230">Eighty-six the eighty-six.</p>
+      <p begin="00:44:04.230" end="00:44:06.120">...maybe...medius.</p>
+      <p begin="00:44:07.320" end="00:44:09.960">...a hardware spec so</p>
+      <p begin="00:44:11.050" end="00:44:14.890">...requirement on the http uploaded to check.</p>
+      <p begin="00:44:14.890" end="00:44:19.910">So,...are you asking about android an x eighty-six or asking about like</p>
+      <p begin="00:44:19.910" end="00:44:22.880">neon optimizations or what kinds of things</p>
+      <p begin="00:44:22.880" end="00:44:27.610">...when I...is that the when I compile?</p>
+      <p begin="00:44:27.610" end="00:44:30.650">And,...with native...</p>
+      <p begin="00:44:30.650" end="00:44:34.390">A I can choose the hardware settings and like choose</p>
+      <p begin="00:44:34.390" end="00:44:36.800">...for arm or choose to the to</p>
+      <p begin="00:44:36.800" end="00:44:41.170">...to be can rather compatible with each rx</p>
+      <p begin="00:44:42.390" end="00:44:48.050">...yep so it's will be...case yes so</p>
+      <p begin="00:44:48.050" end="00:44:53.120">...upload...if you case to be checked with you are solution</p>
+      <p begin="00:44:53.120" end="00:44:53.620">which.</p>
+      <p begin="00:44:56.230" end="00:45:00.610">...which kind of west back we expect will today the most important</p>
+      <p begin="00:45:00.610" end="00:45:06.060">one to move up is arm is the platform that we have soul mobile devices</p>
+      <p begin="00:45:06.060" end="00:45:10.880">...on but we actually want to encourage make it really easy to go submit both</p>
+      <p begin="00:45:10.880" end="00:45:13.220">...both of those flavors up there to make them available the</p>
+      <p begin="00:45:14.380" end="00:45:18.880">...support, you know, I'm devices so you should start with your...version of the</p>
+      <p begin="00:45:18.880" end="00:45:23.820">...going forward we plan to support more hardware platforms ok,</p>
+      <p begin="00:45:24.960" end="00:45:30.230">...these are the last three and then ...pattern over to the insiders launch answer anymore</p>
+      <p begin="00:45:30.230" end="00:45:34.680">...so approach for android widgets and...there do you have in mind</p>
+      <p begin="00:45:34.680" end="00:45:39.510">...maybe convert...to windows...at some point or is this is outside the scope we</p>
+      <p begin="00:45:39.510" end="00:45:45.810">have the...there yet we're focusing more inside traditional apps thanks?</p>
+      <p begin="00:45:45.810" end="00:45:49.870">Hi, android...different layout folders so you could</p>
+      <p begin="00:45:49.870" end="00:45:54.050">target of different screen sizes different densities different accounts of</p>
+      <p begin="00:45:55.250" end="00:45:59.810">...just work on windows phone so what we're trying to do is handle things like the</p>
+      <p begin="00:45:59.810" end="00:46:05.330">you-can query and resolution...and...layout based on that we handle those queries</p>
+      <p begin="00:46:05.330" end="00:46:10.130">by return back the values of course...those windows api so we can drive the same transitions</p>
+      <p begin="00:46:10.130" end="00:46:16.650">...you have things like on rotation you go you will tear down your</p>
+      <p begin="00:46:16.650" end="00:46:22.520">...and rebuild rebuild for your new orientation...the same kind of we pass</p>
+      <p begin="00:46:22.520" end="00:46:27.040">...the same thing when we move around the devices during a demo here but we do that same</p>
+      <p begin="00:46:27.040" end="00:46:32.130">stuff so our goal is to make that seamless we've just been which go through and fixing bugs...we had</p>
+      <p begin="00:46:32.130" end="00:46:37.640">...okay so...from the toads perspective forget query but what about just layout folders</p>
+      <p begin="00:46:37.640" end="00:46:41.080">like happen landscape layout and...such</p>
+      <p begin="00:46:41.080" end="00:46:45.820">as I believe that we do handle both of those because those are pulled into runtime</p>
+      <p begin="00:46:45.820" end="00:46:50.900">...behind-the-scenes and we handle...runtime checks so I do.</p>
+      <p begin="00:46:50.900" end="00:46:58.620">All...stuff that we've done there has worked so far and I believe we...work.</p>
+      <p begin="00:46:58.620" end="00:47:03.150">How about the bluetooth stack support...both bluetooth and</p>
+      <p begin="00:47:03.150" end="00:47:07.470">...so this is something that we don't have a bunch of low-level support</p>
+      <p begin="00:47:07.470" end="00:47:12.300">their bluetooth yet...something that people really want will prioritize it...there I mean this</p>
+      <p begin="00:47:12.300" end="00:47:17.600">...earlier first-time we talked about this yesterday so this is fresh?</p>
+      <p begin="00:47:17.600" end="00:47:26.240">we're going to be we're going to take feedback what about the scenario where you'd want to upgrade</p>
+      <p begin="00:47:26.240" end="00:47:32.570">the app to a native ...and...migrations strategy while you're</p>
+      <p begin="00:47:32.570" end="00:47:36.700">going to be able just replace the replace the app in the store with something that's</p>
+      <p begin="00:47:36.700" end="00:47:41.660">there now beyond that we're trying to give you were looking into some tools what can we do to can make that easy</p>
+      <p begin="00:47:41.660" end="00:47:45.910">because we really want everyone to go build apps that are deeply</p>
+      <p begin="00:47:45.910" end="00:47:50.430">differentiate we want to use all the all the skills that people already have making</p>
+      <p begin="00:47:50.430" end="00:47:55.880">...into the platform we also...reach the broadest number devices so we want to</p>
+      <p begin="00:47:55.880" end="00:48:00.670">make that paths as easy as we possibly can we don't I mean tools and place today you have</p>
+      <p begin="00:48:00.670" end="00:48:05.950">to go and do the work of create a new version then we you it is straightforward</p>
+      <p begin="00:48:05.950" end="00:48:10.010">...store so this is definitely a long-term strategy not just a</p>
+      <p begin="00:48:10.010" end="00:48:13.360">stopgap solution negate happen...</p>
+      <p begin="00:48:13.360" end="00:48:15.730">You know, I think I'd still they pretty clearly</p>
+      <p begin="00:48:15.730" end="00:48:19.490">our primary strategy you probably heard a lot about universal windows asks</p>
+      <p begin="00:48:19.490" end="00:48:22.360">...to days what that is what the question</p>
+      <p begin="00:48:22.360" end="00:48:28.110">stem from like if we wanted to write...windowed or windows app.</p>
+      <p begin="00:48:28.110" end="00:48:31.810">...want to...sooner...happening or...yeah,</p>
+      <p begin="00:48:31.810" end="00:48:33.640">seems like an attractive, yeah,</p>
+      <p begin="00:48:33.640" end="00:48:39.900">this is a it's a great way toprosciutto in the water when you want to do the best experience</p>
+      <p begin="00:48:39.900" end="00:48:47.160">some ofbroadest...broadest update...urinating.</p>
+      <p begin="00:48:47.160" end="00:48:52.360">Tool thanks-very-muchcome...the windows insiders...more questions.</p>
+
+    </div>
+  </body>
+</tt>

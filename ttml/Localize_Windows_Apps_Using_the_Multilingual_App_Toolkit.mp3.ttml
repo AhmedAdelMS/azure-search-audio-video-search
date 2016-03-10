@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.891</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.170" end="00:00:03.190">Welcome to localize in windows you ap apps using</p>
+      <p begin="00:00:03.190" end="00:00:07.910">...toolkit my name's camera alarm and I'm a senior program manager in the windows operating</p>
+      <p begin="00:00:07.910" end="00:00:11.320">system group and my name is frances joel I am a</p>
+      <p begin="00:00:11.320" end="00:00:15.910">senior program manager in the developer ecosystem platform team all right</p>
+      <p begin="00:00:15.910" end="00:00:21.030">...jump right in so the multilingual at toolkit is a program that is</p>
+      <p begin="00:00:21.030" end="00:00:25.240">...with visual studios...extension spin available since windows eight and we've</p>
+      <p begin="00:00:25.240" end="00:00:28.300">...it support the you ap platforms well since</p>
+      <p begin="00:00:28.300" end="00:00:33.340">...the go forward for windows ten the things that really gives you is</p>
+      <p begin="00:00:33.340" end="00:00:37.810">developers need to focus on writing code they don't really care about languages set for the</p>
+      <p begin="00:00:37.810" end="00:00:41.670">fact that the want to be multiple markets so the toolkit allows you to focus on</p>
+      <p begin="00:00:41.670" end="00:00:44.850">a writing your program managing your source language</p>
+      <p begin="00:00:44.850" end="00:00:50.110">...do the synchronization and translation services for you seamlessly works inside</p>
+      <p begin="00:00:50.110" end="00:00:55.340">a visual studio so-you in the environment that you love and your productivity and,</p>
+      <p begin="00:00:55.340" end="00:01:00.080">you also get instant access inside visual studio translation services such</p>
+      <p begin="00:01:00.080" end="00:01:04.910">as microsoft translator and microsoft professionally translated strengths.</p>
+      <p begin="00:01:04.910" end="00:01:08.390">So, you mean I get all...translation service for free</p>
+      <p begin="00:01:08.390" end="00:01:12.610">...developer you absolutely do so microsoft translator is a</p>
+      <p begin="00:01:12.610" end="00:01:16.860">service that microsoft charge for after a small free period and we give</p>
+      <p begin="00:01:16.860" end="00:01:21.870">all-you-can-eat for free with the microsoft translator wow that sounds great so</p>
+      <p begin="00:01:21.870" end="00:01:29.910">I have this application here ok.</p>
+      <p begin="00:01:29.910" end="00:01:33.290">And, this application...simple inc that I</p>
+      <p begin="00:01:33.290" end="00:01:38.190">role to demonstrate handwriting recognition in windows ten</p>
+      <p begin="00:01:38.190" end="00:01:46.110">thief so very nice I can write something lilac hello.</p>
+      <p begin="00:01:46.110" end="00:01:48.860">And, now recognizes into actual english text</p>
+      <p begin="00:01:48.860" end="00:01:53.500">...to say what's this application using the multilingual</p>
+      <p begin="00:01:53.500" end="00:01:58.120">or tool set of a can translate...any language I want for absolutely</p>
+      <p begin="00:01:58.120" end="00:02:03.400">free absolutely yes one hundred-percent free works in expressed addition as well and,</p>
+      <p begin="00:02:03.400" end="00:02:07.050">when you consider the scope of the windows marketplace we have a hundred and ninety</p>
+      <p begin="00:02:07.050" end="00:02:11.460">stores one hundred ninety market you can get into we have over sixty...the last</p>
+      <p begin="00:02:11.460" end="00:02:16.970">...member of payment model so the ability to charge for actually receive money from</p>
+      <p begin="00:02:16.970" end="00:02:22.420">...your customers is all built into the windows ecosystem having that in</p>
+      <p begin="00:02:22.420" end="00:02:27.290">their native language is really important for the value you can provide to the absolutely</p>
+      <p begin="00:02:28.620" end="00:02:33.350">...native...speaker right now let's make this...all right great let's do it all</p>
+      <p begin="00:02:33.350" end="00:02:36.710">...okay so we'll go ahead and...here.</p>
+      <p begin="00:02:36.710" end="00:02:41.110">And, I believe you have this project of already so we're going to switch to this project</p>
+      <p begin="00:02:41.110" end="00:02:45.230">now the toolkit is a free download off of the visitors</p>
+      <p begin="00:02:45.230" end="00:02:48.710">galleries and if you you've probably have a</p>
+      <p begin="00:02:48.710" end="00:02:53.250">...here so if you look we have version...out all right it's a</p>
+      <p begin="00:02:53.250" end="00:02:57.360">technical preview because this is one were review opry architected it so that</p>
+      <p begin="00:02:57.360" end="00:03:02.350">it works better with all the different environments and catch the other video</p>
+      <p begin="00:03:02.350" end="00:03:08.320">...across platforms...as well cool all right so we do have that pre installed active</p>
+      <p begin="00:03:08.320" end="00:03:13.160">installed it all you need to do this lecture project pretty much anywhere in the project that you want</p>
+      <p begin="00:03:13.160" end="00:03:17.670">and code your tools menu multiple up toolkit</p>
+      <p begin="00:03:17.670" end="00:03:21.710">then enabled so what does enable actually do that's a great question</p>
+      <p begin="00:03:21.710" end="00:03:25.730">what it really does enabling...so that the toolkit is</p>
+      <p begin="00:03:25.730" end="00:03:30.730">integrated with your project so now when you have you have your workflow when you run your</p>
+      <p begin="00:03:30.730" end="00:03:35.870">build it knows how to interact with your source resources such as your strings you have</p>
+      <p begin="00:03:35.870" end="00:03:40.750">in english and this and, translate them n pl them into chinese or at least</p>
+      <p begin="00:03:40.750" end="00:03:45.670">soon-to-be chinese gotcha okay so that's the...that really just sets the project</p>
+      <p begin="00:03:45.670" end="00:03:51.900">job now in order to add languages we simply say right click on it and</p>
+      <p begin="00:03:51.900" end="00:03:57.250">we say...toolkit which is your key maneuver everything you'll see there's a couple great out</p>
+      <p begin="00:03:57.250" end="00:04:03.100">once more...those a little bit but we wanted...language.</p>
+      <p begin="00:04:03.100" end="00:04:07.910">...goes off at this point and is query...that windows has available this is</p>
+      <p begin="00:04:07.910" end="00:04:10.540">...superset to what most people are going to use so you</p>
+      <p begin="00:04:10.540" end="00:04:14.960">...have a...like a really long list the...in fact if you have custom cultures</p>
+      <p begin="00:04:14.960" end="00:04:20.780">...cling...sports going on if you do the custom culture...on will show up here</p>
+      <p begin="00:04:20.780" end="00:04:26.330">too that's pretty funny so let's go and do chinese?</p>
+      <p begin="00:04:26.330" end="00:04:29.770">we just search for...here we go here's a chinese simplified.</p>
+      <p begin="00:04:31.090" end="00:04:34.160">Now you also have a couple of icons next to the name,</p>
+      <p begin="00:04:34.160" end="00:04:38.760">yeah,...this up those are the translation providers that are installed with the toolkit</p>
+      <p begin="00:04:38.760" end="00:04:43.990">by default so we provide...once recycling region that uses all of</p>
+      <p begin="00:04:43.990" end="00:04:47.580">microsoft's translations that we've used our products,</p>
+      <p begin="00:04:47.580" end="00:04:52.440">for example, all the translations from localized versions of word in windows</p>
+      <p begin="00:04:52.440" end="00:04:55.490">and exchange the role built-in the other</p>
+      <p begin="00:04:55.490" end="00:05:00.200">icon indicates the microsoft translator service and what does is you</p>
+      <p begin="00:05:00.200" end="00:05:04.610">have multiple translators providers so you can get the best of all</p>
+      <p begin="00:05:04.610" end="00:05:07.760">...so let's go ahead and add that?</p>
+      <p begin="00:05:07.760" end="00:05:11.910">...okay now we could select multiples but for this demo we're just going to pick the one</p>
+      <p begin="00:05:11.910" end="00:05:16.580">all right so I see the added a multilingual resources</p>
+      <p begin="00:05:16.580" end="00:05:21.580">and there's an x all aiff file underneath the folder what is an</p>
+      <p begin="00:05:21.580" end="00:05:26.180">xcel file a great question so...file is stands for ex</p>
+      <p begin="00:05:26.180" end="00:05:31.300">lift...industry-standard localization file reason...one-dot to in</p>
+      <p begin="00:05:31.300" end="00:05:36.640">this particular demo that is a metadata rich file that allows you to synchronized</p>
+      <p begin="00:05:36.640" end="00:05:40.560">source and targets each used by translation houses around the world so</p>
+      <p begin="00:05:40.560" end="00:05:45.720">privacy pretty much any translation vendor that is a real translation better knows how to run with this</p>
+      <p begin="00:05:45.720" end="00:05:51.170">ought to the thing we've done in this is different for role is we've created</p>
+      <p begin="00:05:51.170" end="00:05:56.850">your target res w file as well and this is how the system works is you manage</p>
+      <p begin="00:05:56.850" end="00:06:01.620">the resources in your x the file and we populate to your results file</p>
+      <p begin="00:06:01.620" end="00:06:05.120">...I...that way when you add a new string you never forget to</p>
+      <p begin="00:06:05.120" end="00:06:09.850">...it to the new language dot so I basically don't have to deal with the rest the rest of the following</p>
+      <p begin="00:06:09.850" end="00:06:14.330">...correct now you're just working on your source language in your programs features</p>
+      <p begin="00:06:14.330" end="00:06:17.890">...a convenient...that we think so</p>
+      <p begin="00:06:17.890" end="00:06:23.690">all right so there's many things we can do with this but really we...to do is we simply want to</p>
+      <p begin="00:06:24.750" end="00:06:28.340">So, like most...to do I just want to see what's going to look like chinese so</p>
+      <p begin="00:06:28.340" end="00:06:35.440">what's the finite show me how-to-do-it so simply just right click on your on your...file.</p>
+      <p begin="00:06:35.440" end="00:06:39.730">And, again, there's that multicultural kitten you'll notice a couple of their options are now enabled</p>
+      <p begin="00:06:39.730" end="00:06:41.880">...all enable now so just</p>
+      <p begin="00:06:41.880" end="00:06:51.360">...the generate machine translations sorry because like the right one air.</p>
+      <p begin="00:06:51.360" end="00:06:56.250">You know, it's a real demo when you have a failure like that right...go there we go so now</p>
+      <p begin="00:06:56.250" end="00:06:59.920">...going off to...online has a good things and I was going to have...online</p>
+      <p begin="00:06:59.920" end="00:07:04.470">...services...based upon the search strings in your project saying give me</p>
+      <p begin="00:07:04.470" end="00:07:08.470">the chinese simplified equivalent of these...not looks like is</p>
+      <p begin="00:07:08.470" end="00:07:16.120">doing pretty fast...we must have a good interconnection here today so, that's a good thing.</p>
+      <p begin="00:07:16.120" end="00:07:21.330">So, the green bars...complete you'll have...messy...tell you how many resources have been</p>
+      <p begin="00:07:21.330" end="00:07:26.800">translated in this case we have forty-six they've been translated ok so let's go ahead</p>
+      <p begin="00:07:26.800" end="00:07:30.840">run this project art so juice a deploying</p>
+      <p begin="00:07:30.840" end="00:07:37.120">we'll just we'll just to build and we'll start with a debugging all right there's going around.</p>
+      <p begin="00:07:37.120" end="00:07:41.430">Now notice all's I've done so far is that I want chinese and give you some translations</p>
+      <p begin="00:07:41.430" end="00:07:45.440">right you've already written the program right you've made a localize of all which is</p>
+      <p begin="00:07:45.440" end="00:07:48.980">...you should always make your programs localize well even if</p>
+      <p begin="00:07:48.980" end="00:07:51.180">...the us market think about the</p>
+      <p begin="00:07:51.180" end="00:07:55.070">...diversity for language and new york city</p>
+      <p begin="00:07:55.070" end="00:08:00.470">...several which here in seattle right and in fact the thing less than fifty</p>
+      <p begin="00:08:00.470" end="00:08:06.710">percent of the world's people speak english yes exactly it's</p>
+      <p begin="00:08:06.710" end="00:08:11.910">when you think about your market distribution remember that fifty percent.</p>
+      <p begin="00:08:12.950" end="00:08:16.920">Of the people that are going to run your application or more don't speak</p>
+      <p begin="00:08:16.920" end="00:08:18.880">english.</p>
+      <p begin="00:08:18.880" end="00:08:25.290">if you want them to run it make sure it's available in their language exactly right.</p>
+      <p begin="00:08:25.290" end="00:08:28.100">...building here a little bit.</p>
+      <p begin="00:08:28.100" end="00:08:33.800">Well, it's a pretty big project...the...</p>
+      <p begin="00:08:33.800" end="00:08:37.580">So, the other thing that the toolkit does for-you.</p>
+      <p begin="00:08:37.580" end="00:08:39.150">It makes it so that.</p>
+      <p begin="00:08:40.160" end="00:08:44.700">You really not worrying about translations you can get</p>
+      <p begin="00:08:44.700" end="00:08:47.950">high-end translations you can use the machine level translations</p>
+      <p begin="00:08:47.950" end="00:08:52.530">on using here but it really does get to the point of I</p>
+      <p begin="00:08:52.530" end="00:08:54.550">just need to develop my features</p>
+      <p begin="00:08:54.550" end="00:09:00.030">...have to worry about the rest all right so it's ok, this is english</p>
+      <p begin="00:09:00.030" end="00:09:05.230">...think happened here I'm not sure I guess my system locale ism sufficient chinese</p>
+      <p begin="00:09:05.230" end="00:09:10.210">yes so again windows understands look out your system so we ran the</p>
+      <p begin="00:09:10.210" end="00:09:15.000">program again on english computer we need to tell this computer to pretend that you're chinese</p>
+      <p begin="00:09:15.000" end="00:09:21.120">so...software and then we'll just...a few...locale over.</p>
+      <p begin="00:09:21.120" end="00:09:23.160">So, let's see just go to</p>
+      <p begin="00:09:23.160" end="00:09:28.260">...time and language...to language regions and this</p>
+      <p begin="00:09:28.260" end="00:09:32.330">...so on I change right go ahead and actually this pick are just...language should be find</p>
+      <p begin="00:09:32.330" end="00:09:35.930">...chinese as the default set us default okay.</p>
+      <p begin="00:09:36.950" end="00:09:41.660">And,...you program.</p>
+      <p begin="00:09:41.660" end="00:09:45.430">One of their this.</p>
+      <p begin="00:09:45.430" end="00:09:47.870">...use...didn't you moi.</p>
+      <p begin="00:09:50.920" end="00:09:54.570">Operandsso, okay, so, all the...nursing is</p>
+      <p begin="00:09:54.570" end="00:10:04.310">in chinese I switch my recognition to chinese online too.</p>
+      <p begin="00:10:04.310" end="00:10:08.020">Am great...nice chinese handwriting the up</p>
+      <p begin="00:10:08.020" end="00:10:12.920">so in just a few minutes we've taken a program written for</p>
+      <p begin="00:10:12.920" end="00:10:17.240">english market but that can support...the markets added chinese</p>
+      <p begin="00:10:17.240" end="00:10:21.760">...it enabled the windows handwriting recognition for</p>
+      <p begin="00:10:21.760" end="00:10:26.680">cheney's and now we have the same level function of this app for to markets</p>
+      <p begin="00:10:26.680" end="00:10:31.850">it's just feels like magic it feels like magic as quick as quick so this is the</p>
+      <p begin="00:10:31.850" end="00:10:36.780">value when you think about a hundred ninety markets and how long it took us just to get to</p>
+      <p begin="00:10:36.780" end="00:10:40.870">one additional market what would have taken if you did that manually?</p>
+      <p begin="00:10:40.870" end="00:10:45.850">Item though I probably go have to find song who speaks both english and chinese</p>
+      <p begin="00:10:45.850" end="00:10:50.620">do the translation at all strains the...work...take I've docile</p>
+      <p begin="00:10:50.620" end="00:10:55.340">hassle...I've done it with...of with a friend of mine who speaks russian who's really painful I didn't</p>
+      <p begin="00:10:55.340" end="00:11:02.130">have I hadn't written the...at that point...I had ok so there is some there is a problem here</p>
+      <p begin="00:11:02.130" end="00:11:05.750">that...some of these translation doesn't feel right I</p>
+      <p begin="00:11:05.750" end="00:11:09.940">mean it's okay but it just doesn't quite role author...yeah,</p>
+      <p begin="00:11:09.940" end="00:11:14.650">I'm not sure the spelling of the word clears correct...</p>
+      <p begin="00:11:14.650" end="00:11:19.660">So, let's go ahead and figure out what's going on with this for all right.</p>
+      <p begin="00:11:19.660" end="00:11:23.760">So, again, we are getting machine level translation quality and with machine level</p>
+      <p begin="00:11:23.760" end="00:11:28.680">is going to do its best guess based upon the context which we don't provide much context we</p>
+      <p begin="00:11:28.680" end="00:11:35.140">said...computers program try to match us up so it's not always going to get</p>
+      <p begin="00:11:35.140" end="00:11:39.700">A lot of cases this can be sufficient but you may want to go to a higher-level</p>
+      <p begin="00:11:39.700" end="00:11:41.740">...like since you're</p>
+      <p begin="00:11:41.740" end="00:11:46.610">you're native speaker we can have you just at the sorrell cricket so let's go ahead and coming</p>
+      <p begin="00:11:46.610" end="00:11:52.060">here and also we have to do is open of this file okay and we have a we have</p>
+      <p begin="00:11:52.060" end="00:11:56.840">a and editor that is a standalone editor and the reason why standalone is</p>
+      <p begin="00:11:56.840" end="00:12:01.740">you can send this program which is about a to megabyte download the...to friends and family</p>
+      <p begin="00:12:01.740" end="00:12:05.460">they install it and I'll show you how to do this but they can do the</p>
+      <p begin="00:12:05.460" end="00:12:08.430">...for incentive back for free all</p>
+      <p begin="00:12:08.430" end="00:12:13.150">the translation services the editor and now even your community has free tooling while the</p>
+      <p begin="00:12:13.150" end="00:12:17.980">...and I can bug my russian friends online and say hey</p>
+      <p begin="00:12:17.980" end="00:12:22.550">those some word doesn't seems writing help me...yes actually I know I know</p>
+      <p begin="00:12:22.550" end="00:12:27.640">developers that use twitter just say hey I can speak three languages I need six...help me of</p>
+      <p begin="00:12:27.640" end="00:12:31.720">these outrageous services and they get bombarded with the absolutely may help</p>
+      <p begin="00:12:31.720" end="00:12:37.270">...I can leverage...to this absolutely all right so let's</p>
+      <p begin="00:12:37.270" end="00:12:41.030">fix the were there I see it is right here, yeah,</p>
+      <p begin="00:12:41.030" end="00:12:46.280">how do I am ...what you can either edit directly just by...appear in the field...</p>
+      <p begin="00:12:46.280" end="00:12:51.310">hyping or let's find out if it has a better suggestion for us ok</p>
+      <p begin="00:12:51.310" end="00:12:55.850">so, on the top menu...a pretty is a pretty a streamlined editors on the menu</p>
+      <p begin="00:12:55.850" end="00:13:01.550">...have a translate option and a...you're right here the reason why translate is</p>
+      <p begin="00:13:01.550" end="00:13:06.490">great out is because this is...mark translate right so let's click on suggest?</p>
+      <p begin="00:13:06.490" end="00:13:09.880">And, let's go out and get the different providers so you'll see</p>
+      <p begin="00:13:09.880" end="00:13:14.580">...has these microsoft language portal that's all microsoft professionally translated strings</p>
+      <p begin="00:13:14.580" end="00:13:18.420">...which for some reasons says the word clear.</p>
+      <p begin="00:13:18.420" end="00:13:23.250">somehow in a system that got marked as they write translation all have to talk to someone about that because that</p>
+      <p begin="00:13:23.250" end="00:13:27.480">was actually does...everything else but here's your other...here's an image portals</p>
+      <p begin="00:13:27.480" end="00:13:31.930">...and...some...so you could like this one here...number</p>
+      <p begin="00:13:31.930" end="00:13:35.620">...the right that margaret you just go ahead and double-click</p>
+      <p begin="00:13:35.620" end="00:13:39.950">...chrysler's...suggestion and now we have fixed cool now if you</p>
+      <p begin="00:13:39.950" end="00:13:45.510">...the post edit you could just come up here and start typing again right so if we save this</p>
+      <p begin="00:13:45.510" end="00:13:47.000">okay.</p>
+      <p begin="00:13:47.000" end="00:13:52.500">And, then go ahead and close and this is runner program again.</p>
+      <p begin="00:13:52.500" end="00:13:57.410">what you could do with this also while waiting on this is on these menus</p>
+      <p begin="00:13:57.410" end="00:14:02.330">probably...because we're building media we have the ability to export</p>
+      <p begin="00:14:02.330" end="00:14:06.700">and import the translationsand, we also have a clear which I'll talk about</p>
+      <p begin="00:14:06.700" end="00:14:11.920">...moment what those...is those...ability to send to</p>
+      <p begin="00:14:11.920" end="00:14:15.990">...external party my russian...her this</p>
+      <p begin="00:14:15.990" end="00:14:20.290">x the file should have translated into russian...in the editor</p>
+      <p begin="00:14:20.290" end="00:14:24.970">...sent back and...I would import back in that way she can make that I can machine</p>
+      <p begin="00:14:24.970" end="00:14:29.330">...and she can fix the machine translations so I can continue to</p>
+      <p begin="00:14:29.330" end="00:14:34.000">develop washes localize...this and when they come back and it will match-up the strings</p>
+      <p begin="00:14:34.000" end="00:14:38.850">they have not changed...five change strings I...just...the file that automatically</p>
+      <p begin="00:14:38.850" end="00:14:44.070">mergers...for-you...the chancellors liberal...right exactly and</p>
+      <p begin="00:14:44.070" end="00:14:49.440">always make sure the right thing it has a multiple logic in it about a</p>
+      <p begin="00:14:49.440" end="00:14:54.430">...string is better than one that knees reviewing so always take a translate over that</p>
+      <p begin="00:14:54.430" end="00:14:57.060">so you don't have to worry about that and,</p>
+      <p begin="00:14:57.060" end="00:15:01.330">you just continue...you can do almost like revision review control</p>
+      <p begin="00:15:01.330" end="00:15:06.720">...is...that's really convenient...rather...project</p>
+      <p begin="00:15:06.720" end="00:15:11.550">ok so if I were to do spanish, for example, which is</p>
+      <p begin="00:15:11.550" end="00:15:15.760">...the same process so let's go ahead and do spanish only this time what</p>
+      <p begin="00:15:15.760" end="00:15:19.720">we'll do is we'll go through and will paren like we're going to send it off to</p>
+      <p begin="00:15:19.720" end="00:15:26.000">a spanish-speaking rent so how...that all...program?</p>
+      <p begin="00:15:26.000" end="00:15:30.200">And, we just simply adder languages again and again it's just the right click.</p>
+      <p begin="00:15:30.200" end="00:15:34.590">Multiple up toolkit error language.</p>
+      <p begin="00:15:34.590" end="00:15:39.340">An seizure...type the...since I...is that...to go hunt for it</p>
+      <p begin="00:15:40.390" end="00:15:45.550">...a lot...this is one thing new windows...you'll...is</p>
+      <p begin="00:15:45.550" end="00:15:51.080">the regions of the languages have been...adding extended...that...actually see with</p>
+      <p begin="00:15:51.080" end="00:15:56.640">this a great example you'll see that we have different providers because we don't have a good provider for this one</p>
+      <p begin="00:15:56.640" end="00:16:00.370">and we only have an exact match to spanish for the language runs</p>
+      <p begin="00:16:00.370" end="00:16:02.850">machine translations fallback.</p>
+      <p begin="00:16:02.850" end="00:16:06.740">...ad spanish and.</p>
+      <p begin="00:16:06.740" end="00:16:13.020">And, then we just write click instead of send generate machine...math sorry.</p>
+      <p begin="00:16:14.100" end="00:16:17.820">The such...on the radio instead of generate machine translations.</p>
+      <p begin="00:16:19.060" end="00:16:22.280">We simply just say I want to export them and I can</p>
+      <p begin="00:16:22.280" end="00:16:26.470">select multiple files I could even do it on multiple projects which is a little,</p>
+      <p begin="00:16:26.470" end="00:16:32.940">you know, a lot of data for one person but now simply just one...to an email.</p>
+      <p begin="00:16:32.940" end="00:16:37.910">I want...and exif I could says...common delimited but then our</p>
+      <p begin="00:16:37.910" end="00:16:42.740">...doesn't work for commodore omitted so common...is when...look like...I need in this format</p>
+      <p begin="00:16:42.740" end="00:16:47.460">...it gives you that flexibility I consented...compressed file from</p>
+      <p begin="00:16:47.460" end="00:16:53.690">...multiples make it really easy but here's the following send somebody okay this and this one off...will bring up</p>
+      <p begin="00:16:53.690" end="00:16:58.600">you email client...in this case we have outlook will have the file attached...have</p>
+      <p begin="00:16:58.600" end="00:17:04.290">...description about what you want...so gives me the download location</p>
+      <p begin="00:17:04.290" end="00:17:08.570">for tools that yes so this is the download location for tools...right here?</p>
+      <p begin="00:17:08.570" end="00:17:09.840">And, if they click on this.</p>
+      <p begin="00:17:10.940" end="00:17:15.270">Will take them directly to the visual should galleries cool and</p>
+      <p begin="00:17:15.270" end="00:17:18.480">they download now the key to remember here when you're talking to your</p>
+      <p begin="00:17:18.480" end="00:17:23.240">localized friends they don't need to words that they don't have visual studio even those</p>
+      <p begin="00:17:23.240" end="00:17:27.260">...a visual extension because this is an and I msi install</p>
+      <p begin="00:17:27.260" end="00:17:30.360">...only installed the pieces that it means</p>
+      <p begin="00:17:30.360" end="00:17:33.720">...see they don't have visual studio and not installing those components</p>
+      <p begin="00:17:33.720" end="00:17:38.510">...editor translation services...even was just that the can already at the</p>
+      <p begin="00:17:38.510" end="00:17:42.710">...file and change all the update all the translations they will be able to do</p>
+      <p begin="00:17:42.710" end="00:17:47.500">everything we did here except run in visual studio all I guess I don't need to run...visual</p>
+      <p begin="00:17:47.500" end="00:17:49.700">...that...exactly,</p>
+      <p begin="00:17:49.700" end="00:17:55.120">exactly so okay so I'll go ahead and?</p>
+      <p begin="00:17:55.120" end="00:17:55.520">Go ahead</p>
+      <p begin="00:17:55.520" end="00:18:00.190">...someone...save this file off of me do it this way.</p>
+      <p begin="00:18:00.190" end="00:18:04.960">...want to say these changes were not going to...of.</p>
+      <p begin="00:18:04.960" end="00:18:09.380">So, if I had actually synthesize off to a friend and,</p>
+      <p begin="00:18:09.380" end="00:18:15.430">I don't...prepped to propped the machine for it...do this real quick.</p>
+      <p begin="00:18:15.430" end="00:18:16.970">Quick a quick demo of.</p>
+      <p begin="00:18:18.600" end="00:18:25.840">...so I'll go ahead and copy this file and...going to put upon directory.</p>
+      <p begin="00:18:25.840" end="00:18:28.760">Directors for the sake...just have no place to</p>
+      <p begin="00:18:28.760" end="00:18:33.600">poured in from an open this up as a as my friend would</p>
+      <p begin="00:18:33.600" end="00:18:37.370">...a double-click it just runs the editor yes and I'm just going to</p>
+      <p begin="00:18:37.370" end="00:18:41.630">say translate all and I'm doing this for the demo sake because</p>
+      <p begin="00:18:41.630" end="00:18:46.410">...don't speak spanish so now what I can do is I can pretend that this file will</p>
+      <p begin="00:18:46.410" end="00:18:50.220">...import file and we'll see that I get my spanish translations</p>
+      <p begin="00:18:50.220" end="00:18:55.270">...friend received ...downloads the toolkit</p>
+      <p begin="00:18:55.270" end="00:18:59.020">...even she gets a free translation service you...doesn't want</p>
+      <p begin="00:18:59.020" end="00:19:04.080">to go through everything and...herself that's exactly right it's a great starting point because</p>
+      <p begin="00:19:04.080" end="00:19:08.890">now they can get our best guess and then go hey that was really close</p>
+      <p begin="00:19:08.890" end="00:19:12.820">and this one...change the whole thing the other thing that we're not going to really</p>
+      <p begin="00:19:12.820" end="00:19:17.260">...today is the translation providers are extensible so-if you</p>
+      <p begin="00:19:17.260" end="00:19:22.350">want-to do anything with different providers and like heaven forbid you do get google translate</p>
+      <p begin="00:19:22.350" end="00:19:25.820">right you could write your own provider to work with google...</p>
+      <p begin="00:19:25.820" end="00:19:31.420">yes it's api we've written complex project sure exactly how-to-do-it and,</p>
+      <p begin="00:19:31.420" end="00:19:34.640">it will then show up in your project and if it supports language you</p>
+      <p begin="00:19:34.640" end="00:19:39.620">can icon to represent your support that's very cool it's very clear we tried that we try to make it</p>
+      <p begin="00:19:39.620" end="00:19:44.350">is flexible as possible so if you had your own local db as well it would work just with</p>
+      <p begin="00:19:44.350" end="00:19:50.050">...on the machine would need internet access we're going to...save this.</p>
+      <p begin="00:19:50.050" end="00:19:50.620">And, go back to</p>
+      <p begin="00:19:50.620" end="00:20:01.700">work project and this file here doesn't have any translations in...so I'm go ahead and import these.</p>
+      <p begin="00:20:01.700" end="00:20:03.880">And, I'm going to go up one.</p>
+      <p begin="00:20:03.880" end="00:20:07.500">Where I put that file there is?</p>
+      <p begin="00:20:07.500" end="00:20:11.860">And, now I'm going to import this file into this project</p>
+      <p begin="00:20:11.860" end="00:20:16.250">this option for enable recycling ones or...recycling is</p>
+      <p begin="00:20:16.250" end="00:20:20.630">when it's not an exact match but we think it's a good fit.</p>
+      <p begin="00:20:20.630" end="00:20:22.940">In our case we...strict</p>
+      <p begin="00:20:22.940" end="00:20:27.780">...evaluate...if...want to be but this means that if my languages match in my</p>
+      <p begin="00:20:27.780" end="00:20:32.740">...during matches I don't care about the context don't care if it's the same resource id</p>
+      <p begin="00:20:32.740" end="00:20:37.070">all go ahead and pull...so it gives us the ability to take other projects we've</p>
+      <p begin="00:20:37.070" end="00:20:42.440">had translated and import them into this project that is unrelated as long as we have the same</p>
+      <p begin="00:20:42.440" end="00:20:43.810">...for example,</p>
+      <p begin="00:20:43.810" end="00:20:48.740">how many times you want to really look localize the...cancel...never</p>
+      <p begin="00:20:48.740" end="00:20:54.600">again right so I'm go ahead and import on this and also</p>
+      <p begin="00:20:54.600" end="00:20:57.730">...report that I have forty-six resources that were successful</p>
+      <p begin="00:20:57.730" end="00:21:07.060">in warmed so now if I do a if I do a quick build on this?</p>
+      <p begin="00:21:07.060" end="00:21:11.270">And, you'll see as a build you'll see that actually...are spanish files well</p>
+      <p begin="00:21:12.440" end="00:21:16.900">okay and it will now popular spanish file and we won't run the demo but</p>
+      <p begin="00:21:16.900" end="00:21:21.220">will show the resources now we have spanish cool so all the took</p>
+      <p begin="00:21:21.220" end="00:21:23.810">...what two three minutes</p>
+      <p begin="00:21:23.810" end="00:21:28.280">...better language I like to joked if you give me ten clicks I'll give you ten languages</p>
+      <p begin="00:21:28.280" end="00:21:30.900">...and it's not really joke moi.</p>
+      <p begin="00:21:33.170" end="00:21:35.480">Okay.</p>
+      <p begin="00:21:35.480" end="00:21:40.440">So, that's pretty much it for the for the demo that I love I love the how the</p>
+      <p begin="00:21:40.440" end="00:21:44.820">app just you can just read it and it can get your native language and translated into</p>
+      <p begin="00:21:44.820" end="00:21:50.380">the actual text format that's very useful for any type of application you...right and,</p>
+      <p begin="00:21:50.380" end="00:21:55.320">now you can take that all your markets where all the windows markets all the our windows and the our of</p>
+      <p begin="00:21:55.320" end="00:21:58.970">your language and that's pretty close to the entire world to the entire</p>
+      <p begin="00:21:58.970" end="00:22:04.950">world yes there's a lot of data on I've had developers tell me,</p>
+      <p begin="00:22:04.950" end="00:22:08.970">yeah, I found you...an I localized and for a particular market</p>
+      <p begin="00:22:08.970" end="00:22:14.220">and double my downloads right I love hearing that right if anybody has</p>
+      <p begin="00:22:14.220" end="00:22:17.790">...multi-lingual at microsoft-dot-com email to me I love this type of</p>
+      <p begin="00:22:17.790" end="00:22:21.700">stories because that's what we're trying to trying to make your life easy</p>
+      <p begin="00:22:21.700" end="00:22:26.570">in your translations with so you can get to the markets you want to get too especially since the</p>
+      <p begin="00:22:26.570" end="00:22:30.850">...american now is feud when it comes smart devices absolutely,</p>
+      <p begin="00:22:30.850" end="00:22:35.930">absolutely so here's the here's the rows w file for spanish</p>
+      <p begin="00:22:35.930" end="00:22:40.190">and you see that we have all...spanish translations...so we won't bother</p>
+      <p begin="00:22:40.190" end="00:22:45.460">...demo but, it would just show up in spanish if we set the machine locale like we did chinese</p>
+      <p begin="00:22:45.460" end="00:22:50.150">...do your spanish and recognition as well very cool all right.</p>
+      <p begin="00:22:50.150" end="00:22:54.960">So, I'm going to jump into a couple of questions that I was get developers are always going okay</p>
+      <p begin="00:22:54.960" end="00:22:58.070">...really great but, you know, I don't know anything about localization of</p>
+      <p begin="00:22:58.070" end="00:23:04.930">globalization and I'm like well that's fine because there's a lot of data out there on it.</p>
+      <p begin="00:23:04.930" end="00:23:08.260">So, this jump into that.</p>
+      <p begin="00:23:08.260" end="00:23:13.020">So, I'm going to be mystified some things so one of the things that people always</p>
+      <p begin="00:23:13.020" end="00:23:16.710">say is what I don't understand the globalization api...they're confusing.</p>
+      <p begin="00:23:17.810" end="00:23:23.410">They're actually pretty straightforward if you take a little time...some great examples if you</p>
+      <p begin="00:23:23.410" end="00:23:28.290">...time to look at it...about ensuring that the format of the</p>
+      <p begin="00:23:28.290" end="00:23:32.700">data are represented has the right commas decimal points</p>
+      <p begin="00:23:32.700" end="00:23:36.030">...of currency symbols on like</p>
+      <p begin="00:23:36.030" end="00:23:42.370">example if I show if I show any type of numeric value in france I'm</p>
+      <p begin="00:23:42.370" end="00:23:45.300">...get comma separator and I'm not always of the same location</p>
+      <p begin="00:23:45.300" end="00:23:49.350">english so if you use your decimal for matters your</p>
+      <p begin="00:23:49.350" end="00:23:53.690">...your currencies from the number format api as...just give those</p>
+      <p begin="00:23:53.690" end="00:23:58.180">to for free you pass the number it will do the right thing based upon your locale so</p>
+      <p begin="00:23:58.180" end="00:24:02.830">just call the right api...work for you just called...guys don't hard code</p>
+      <p begin="00:24:02.830" end="00:24:07.510">...code...you know,...dot format because that will just make...so you get bugs and people</p>
+      <p begin="00:24:07.510" end="00:24:13.800">...it doesn't make any sense...thousand should be...hundred because the commas neurons right ...</p>
+      <p begin="00:24:13.800" end="00:24:18.790">day for matters there's so many you so many ways to do time in the wrong</p>
+      <p begin="00:24:18.790" end="00:24:21.130">...the system api you'll get it right because it provides a</p>
+      <p begin="00:24:21.130" end="00:24:26.050">pattern so with the pattern you can say that I want the...the year and the day</p>
+      <p begin="00:24:26.050" end="00:24:31.000">it will based on locale how to order properly so it makes sense for that...</p>
+      <p begin="00:24:31.000" end="00:24:35.480">Instead of hard coding positions you have a pattern and it works really well and,</p>
+      <p begin="00:24:35.480" end="00:24:40.190">of course calendar right you don't ever try to write your own calendar to...it also does you know,</p>
+      <p begin="00:24:40.190" end="00:24:44.650">not everything is a growing calendar not everything starts on sunday as the first...week holier</p>
+      <p begin="00:24:47.110" end="00:24:52.430">...problems right so you use the canada controls on the system definitely some of the things to</p>
+      <p begin="00:24:52.430" end="00:24:57.350">avoid...talked about this a little bit this stream format for months</p>
+      <p begin="00:24:57.350" end="00:25:02.100">a year works really well and almost nowhere.</p>
+      <p begin="00:25:02.100" end="00:25:04.660">So, just don't use it ...you might be</p>
+      <p begin="00:25:04.660" end="00:25:08.500">...go over here in the states but it won't work anywhere else and,</p>
+      <p begin="00:25:08.500" end="00:25:13.540">the formatting this year's going to be wrong currency, you know, the dollar sign up for</p>
+      <p begin="00:25:13.540" end="00:25:18.100">the us dollar would possibly be offensive if you try to go to</p>
+      <p begin="00:25:18.100" end="00:25:22.490">multiple markets and if you event...with...app they're probably not going to run it exactly</p>
+      <p begin="00:25:22.490" end="00:25:28.630">even the diversity the market dover read the users language locale.</p>
+      <p begin="00:25:28.630" end="00:25:32.900">Unless there's a really good reason to and they have opted into it sometimes</p>
+      <p begin="00:25:32.900" end="00:25:37.700">as a valid reason to do it but when you do it remember...permanent they have to</p>
+      <p begin="00:25:37.700" end="00:25:42.490">unstable or you have to manually...back it...stuff ll so</p>
+      <p begin="00:25:42.490" end="00:25:47.280">that looks like a harmless api is a really powerful one but when used incorrectly you're going</p>
+      <p begin="00:25:47.280" end="00:25:52.730">...negative feedback icy and we know how much...your app now they have to screws</p>
+      <p begin="00:25:52.730" end="00:25:57.300">...system exactly, yeah, they well they have no way to undo it...but,</p>
+      <p begin="00:25:57.300" end="00:26:01.680">they can always on install you that's not something that's not what we're trying to promote</p>
+      <p begin="00:26:01.680" end="00:26:06.560">...of uses one with caution if you use it at all and...of course we talked about the</p>
+      <p begin="00:26:06.560" end="00:26:12.340">...controls just use the ones that are built-in you can't go wrong.</p>
+      <p begin="00:26:12.340" end="00:26:14.670">Localization...mystified these are these are some of</p>
+      <p begin="00:26:14.670" end="00:26:18.180">the core questions I get on localization as well.</p>
+      <p begin="00:26:18.180" end="00:26:22.290">Always use localization files for your for your strings.</p>
+      <p begin="00:26:22.290" end="00:26:27.520">Even if you're only going to a targeted market there are several applications I know of that</p>
+      <p begin="00:26:27.520" end="00:26:31.140">are that are centric to a particular market but they've made it look</p>
+      <p begin="00:26:31.140" end="00:26:35.960">liable and they go into other markets just because it might be fun for those markets...they get a high percentage</p>
+      <p begin="00:26:35.960" end="00:26:40.950">...from was markets I hope I have one called finger spell it actually gets a fifty percent download</p>
+      <p begin="00:26:40.950" end="00:26:47.050">...the us and it is an american sign language...it's like a unexpected</p>
+      <p begin="00:26:47.050" end="00:26:49.910">windfall it's and it's a planned windfall overt.</p>
+      <p begin="00:26:51.580" end="00:26:55.970">Four-ten clicks...right exact right.</p>
+      <p begin="00:26:55.970" end="00:26:56.980">Remember your strings are going to</p>
+      <p begin="00:26:56.980" end="00:27:02.700">grow frame a lot of lot of people actually translate source language in german and</p>
+      <p begin="00:27:02.700" end="00:27:07.800">go-to english just for this to avoid this becausegerman...and russian are going to be longer strings</p>
+      <p begin="00:27:07.800" end="00:27:09.650">...halts right and,</p>
+      <p begin="00:27:09.650" end="00:27:13.760">the toolkit orcas that if you want to...german work-related english we support that</p>
+      <p begin="00:27:13.760" end="00:27:18.170">...just great but just remember give growth room if you pack everything really tight</p>
+      <p begin="00:27:18.170" end="00:27:24.510">especially with all the...form factors it's not going to be a good user experience.</p>
+      <p begin="00:27:24.510" end="00:27:28.960">Very simple do your bindings your x you id in your store apps and if you use</p>
+      <p begin="00:27:28.960" end="00:27:35.040">and javascript apps make sure you do your...data...resource that just...up in your good to</p>
+      <p begin="00:27:35.040" end="00:27:40.850">go never...resource string manually by saying I'm just going to use</p>
+      <p begin="00:27:40.850" end="00:27:45.190">...string here because even if an exception go ahead and use the resource</p>
+      <p begin="00:27:45.190" end="00:27:49.770">loader api to get the strength of one note on that this will return</p>
+      <p begin="00:27:49.770" end="00:27:55.000">...string if it's not in your system so right here if resource loader dot</p>
+      <p begin="00:27:55.000" end="00:27:59.600">...string my resources doesn't exist in your rest avi file you could a blank so-if</p>
+      <p begin="00:27:59.600" end="00:28:04.380">you have length...looked here I didn't translate something I didn't create a string that</p>
+      <p begin="00:28:04.380" end="00:28:07.590">a creative ninety-four and then you know,</p>
+      <p begin="00:28:07.590" end="00:28:12.170">in your cultures for your images make sure that if you have images that are specific</p>
+      <p begin="00:28:12.170" end="00:28:17.650">to locale you put them in a path that has the path...image locale</p>
+      <p begin="00:28:17.650" end="00:28:22.340">...image that you want for the name path and that will make the system pick it up automatically so if I was</p>
+      <p begin="00:28:22.340" end="00:28:27.260">in chinese I...a background...showing my chinese image format background instead</p>
+      <p begin="00:28:27.260" end="00:28:32.190">of my us image which gives you that extra feels like it was built here right roaches</p>
+      <p begin="00:28:32.190" end="00:28:36.420">...stars...ratings right localization is not just for strains</p>
+      <p begin="00:28:36.420" end="00:28:41.190">correctness for other resources as well...and globalization is an issue display on the</p>
+      <p begin="00:28:41.190" end="00:28:47.280">...store...neutral display local axle.</p>
+      <p begin="00:28:47.280" end="00:28:51.180">And, a...resources that are available to developers go</p>
+      <p begin="00:28:51.180" end="00:28:56.180">over these pretty quickly so of course the multilingual up toolkit because I think everybody wants at least</p>
+      <p begin="00:28:56.180" end="00:29:01.130">and languages...cliques right now so, that's a real easy download</p>
+      <p begin="00:29:01.130" end="00:29:05.300">...on the link you have provided here we talk about what we do in the toolkit on</p>
+      <p begin="00:29:05.300" end="00:29:10.310">...blog take comments and feedback we also have a user work-site because those</p>
+      <p begin="00:29:10.310" end="00:29:13.020">are so cool I love when people give us feedback and use</p>
+      <p begin="00:29:13.020" end="00:29:18.060">...foresight because it will allow us to modify the product...give what they're looking for</p>
+      <p begin="00:29:18.060" end="00:29:24.110">...translation services these are the two we actually showed in the product so we have the</p>
+      <p begin="00:29:24.110" end="00:29:29.690">microsoft resource are the microsoft translator that is a pay for service unless</p>
+      <p begin="00:29:29.690" end="00:29:34.630">...the multiple up toolkit min which then we give you all-you-can-eat for free but if you want to integrate into a</p>
+      <p begin="00:29:34.630" end="00:29:39.040">website this is a great way to do it for dynamic website transmission and,</p>
+      <p begin="00:29:39.040" end="00:29:41.400">also the language portal is the microsoft professional</p>
+      <p begin="00:29:41.400" end="00:29:47.350">translated strings you can hook into that yourself as well we do it for with the toolkit.</p>
+      <p begin="00:29:47.350" end="00:29:52.280">And, of course localization samples right there you can never get enough localization sample success the</p>
+      <p begin="00:29:52.280" end="00:29:56.940">best way to learn so here's some basic ones that have your date your time formatting that is</p>
+      <p begin="00:29:56.940" end="00:30:00.810">pretty much ninety percent of the issues people hit download some of</p>
+      <p begin="00:30:00.810" end="00:30:06.660">the samples and play with it and you'll figure that out right away got our numbers</p>
+      <p begin="00:30:06.660" end="00:30:11.310">for...for example, you know, you just don't want to do to string on a number...the time you want to build put</p>
+      <p begin="00:30:11.310" end="00:30:14.910">...format and of course there are some...</p>
+      <p begin="00:30:14.910" end="00:30:22.260">samples on a full application for the localization aspect of a such as...with mapped.</p>
+      <p begin="00:30:22.260" end="00:30:25.040">That's our world winter of the multilingual up toolkit</p>
+      <p begin="00:30:25.040" end="00:30:30.100">...thank you very much for you for that app that that's an awesome app thank you and I'm looking for</p>
+      <p begin="00:30:30.100" end="00:30:34.860">dasi and cheney's and...all right thank you very much thank you.</p>
+
+    </div>
+  </body>
+</tt>

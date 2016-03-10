@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.924</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.730" end="00:00:08.690">Okay, they just close the door so I am police apologists I</p>
+      <p begin="00:00:08.690" end="00:00:14.040">amprinciple program manager on the visual studio client team</p>
+      <p begin="00:00:14.040" end="00:00:17.830">...here to talk to-you today about apache cordova</p>
+      <p begin="00:00:17.830" end="00:00:22.840">and a little bit more specifically about some of the things we've done for</p>
+      <p begin="00:00:22.840" end="00:00:27.060">both visual studio tooling and the windows platform for patchy cordova</p>
+      <p begin="00:00:28.220" end="00:00:32.990">as a little bit about my style I like to keep this interactive</p>
+      <p begin="00:00:32.990" end="00:00:37.500">so-if you have questions don't hesitate to interrupt me with questions</p>
+      <p begin="00:00:37.500" end="00:00:43.240">will give me a chance to take a little water break and, listen to the things that you care about make sure</p>
+      <p begin="00:00:43.240" end="00:00:48.620">...covering all this stuff you care about so don't hold your questions to the and just ask me also I'm</p>
+      <p begin="00:00:48.620" end="00:00:51.990">going-to from my demos switch between visual studio in the</p>
+      <p begin="00:00:51.990" end="00:00:58.930">command line if that scares you don't worry we'll get through it together and,</p>
+      <p begin="00:00:58.930" end="00:01:03.930">all my demos are going to be very simple things that we're going to use</p>
+      <p begin="00:01:03.930" end="00:01:08.530">to show concepts so that you guys can build on it I'm not a really complex</p>
+      <p begin="00:01:08.530" end="00:01:13.470">demo person because I think you can kind of tend to get lost in the so</p>
+      <p begin="00:01:13.470" end="00:01:18.020">...do simple stuff and of course you can take it to do more complicated</p>
+      <p begin="00:01:18.020" end="00:01:23.660">stuff as we go further...cover what cordova is how many of you already know</p>
+      <p begin="00:01:23.660" end="00:01:27.090">what cordova or phone gap is.</p>
+      <p begin="00:01:27.090" end="00:01:32.730">Bunch of you how many of you are already cordova developers.</p>
+      <p begin="00:01:32.730" end="00:01:34.830">Maybe fifteen percent</p>
+      <p begin="00:01:34.830" end="00:01:38.120">so great we're going to cover everything from what is creative</p>
+      <p begin="00:01:38.120" end="00:01:41.960">...to heidi's creative a for the.</p>
+      <p begin="00:01:41.960" end="00:01:46.490">Windows platform and for the ios and android platform so there's a little bit of something</p>
+      <p begin="00:01:46.490" end="00:01:51.490">for everybody will also cover how we builders apps and will</p>
+      <p begin="00:01:51.490" end="00:01:55.710">do demo obviously and then we'll talk about if cordova is the right</p>
+      <p begin="00:01:55.710" end="00:02:00.300">path for your app and what microsoft's path with cordova</p>
+      <p begin="00:02:00.300" end="00:02:06.710">is then we'll give you resources to go and learn more?</p>
+      <p begin="00:02:06.710" end="00:02:08.800">Clear that, you know, seven years ago</p>
+      <p begin="00:02:08.800" end="00:02:12.660">weirdness place where the big thing was the mobile web everybody</p>
+      <p begin="00:02:12.660" end="00:02:17.390">was building mobile websites and those were really great because you could get</p>
+      <p begin="00:02:17.390" end="00:02:21.770">him on every device in every browser and you could use your phone.</p>
+      <p begin="00:02:21.770" end="00:02:26.640">But, they had shortcomings he couldn't use offline you couldn't the use</p>
+      <p begin="00:02:26.640" end="00:02:32.010">the capabilities of the phones the devices very well and.</p>
+      <p begin="00:02:32.010" end="00:02:34.530">Is actually quite hard to monetize</p>
+      <p begin="00:02:34.530" end="00:02:39.300">a mobile app so mobile apps for a</p>
+      <p begin="00:02:39.300" end="00:02:44.040">sorry mobile web mobile apps kind of became the preferable thing you</p>
+      <p begin="00:02:44.040" end="00:02:49.030">could use the capabilities of the device itself you could do offline</p>
+      <p begin="00:02:49.030" end="00:02:54.030">and...could monetize these things but putting them in different stores and actually charging money for them</p>
+      <p begin="00:02:54.030" end="00:02:58.290">and users like the experience of being...app a lot better than they like the</p>
+      <p begin="00:02:58.290" end="00:03:02.500">experience of being in a browser and you can see that?</p>
+      <p begin="00:03:02.500" end="00:03:06.520">That developer users want to use those apps and that's</p>
+      <p begin="00:03:06.520" end="00:03:10.510">even increasing further than it was just a few years ago.</p>
+      <p begin="00:03:11.520" end="00:03:15.600">But, building all those apps can be really expensive and</p>
+      <p begin="00:03:15.600" end="00:03:19.770">it's clear that developers who write for mobile if you</p>
+      <p begin="00:03:19.770" end="00:03:24.680">ask them what their languages are that they use the</p>
+      <p begin="00:03:24.680" end="00:03:27.330">most common language that they talk about is html.</p>
+      <p begin="00:03:28.870" end="00:03:33.760">If you ask them what the primary languages the first thing that they use html</p>
+      <p begin="00:03:33.760" end="00:03:38.790">is right there behind java and objective see.</p>
+      <p begin="00:03:38.790" end="00:03:43.760">that kind of confluence of landscape positions means that something like</p>
+      <p begin="00:03:43.760" end="00:03:48.530">apache cordova that allows you to use html to write your mobile app</p>
+      <p begin="00:03:48.530" end="00:03:50.840">...gain traction fairly quickly</p>
+      <p begin="00:03:50.840" end="00:03:55.670">and today we see six percent of apps in-store specifically the google</p>
+      <p begin="00:03:55.670" end="00:04:00.610">...the ios store ability easing cordova and fourteen percent of apps</p>
+      <p begin="00:04:00.610" end="00:04:04.250">the categorize themselves as business apps you'd probably think of these</p>
+      <p begin="00:04:04.250" end="00:04:06.590">is line-of-business apps</p>
+      <p begin="00:04:06.590" end="00:04:11.110">the use cordova to the implemented the numbers beasts</p>
+      <p begin="00:04:11.110" end="00:04:16.430">behind the fire wall of app deployments behind firewall using into</p>
+      <p begin="00:04:16.430" end="00:04:19.420">...and other deployments like that are</p>
+      <p begin="00:04:19.420" end="00:04:22.350">hire and so.</p>
+      <p begin="00:04:22.350" end="00:04:27.300">With that landscape going to talk about what cordova is and how it works</p>
+      <p begin="00:04:27.300" end="00:04:32.130">cordova allows you to have a single code base is html?</p>
+      <p begin="00:04:32.130" end="00:04:37.120">Css and javascript host that inside the native web view</p>
+      <p begin="00:04:37.120" end="00:04:41.890">of the app container and show that inside</p>
+      <p begin="00:04:41.890" end="00:04:46.990">in app that is ios android and windows specific</p>
+      <p begin="00:04:46.990" end="00:04:52.410">...does all of this using in open-source framework.</p>
+      <p begin="00:04:52.410" end="00:04:57.320">you probably want to know how it gets to the device capabilities of each of the devices</p>
+      <p begin="00:04:57.320" end="00:05:01.780">that eases for instance the accelerometer or the camera or</p>
+      <p begin="00:05:01.780" end="00:05:06.640">barcode scanner it uses something called a plug-in api plugins are</p>
+      <p begin="00:05:06.640" end="00:05:11.230">implemented in the native code for each of the platforms.</p>
+      <p begin="00:05:11.230" end="00:05:14.700">And, then they're exposed to a javascript api.</p>
+      <p begin="00:05:14.700" end="00:05:19.360">And, that javascript api is common so if you're writing your html</p>
+      <p begin="00:05:19.360" end="00:05:24.700">and javascript to use these plugins...against one javascript</p>
+      <p begin="00:05:24.700" end="00:05:31.610">api any reach all of the platforms for that specific device capability.</p>
+      <p begin="00:05:31.610" end="00:05:34.000">We're going to focus a bunch today on</p>
+      <p begin="00:05:34.000" end="00:05:40.430">the windows platform but we're also going to talk about the ios...android platforms.</p>
+      <p begin="00:05:40.430" end="00:05:43.150">How does...developers</p>
+      <p begin="00:05:43.150" end="00:05:49.790">shown me how the pieces work when I create a cordova projects?</p>
+      <p begin="00:05:49.790" end="00:05:52.480">What I have...that project is my</p>
+      <p begin="00:05:52.480" end="00:05:57.320">html css and javascript and my assets and those are the things I</p>
+      <p begin="00:05:57.320" end="00:06:02.110">headed highlighted in yellow the things that are specific to the developer</p>
+      <p begin="00:06:02.110" end="00:06:05.010">...developer...brought to the game?</p>
+      <p begin="00:06:05.010" end="00:06:08.760">So, I might have brought some of my html javascript</p>
+      <p begin="00:06:08.760" end="00:06:11.520">and css and assets</p>
+      <p begin="00:06:11.520" end="00:06:16.470">from my website I might have written some of them just for my a creative</p>
+      <p begin="00:06:16.470" end="00:06:21.450">app these all our pieces of what gets built into the</p>
+      <p begin="00:06:21.450" end="00:06:23.290">...a project and</p>
+      <p begin="00:06:23.290" end="00:06:28.200">cordova ads platform code for those platforms that you said you'd like to support</p>
+      <p begin="00:06:28.200" end="00:06:32.970">and plug-in code for the plug-in that you said you'd like in your app and then</p>
+      <p begin="00:06:32.970" end="00:06:37.450">your configuration the things...said that you care about and some</p>
+      <p begin="00:06:37.450" end="00:06:41.810">of that is how my plug inness work in some of that is how</p>
+      <p begin="00:06:41.810" end="00:06:45.750">I'd like the pieces that are platform specific to</p>
+      <p begin="00:06:45.750" end="00:06:49.600">work so there are some settings that are particular to ios in those although not</p>
+      <p begin="00:06:49.600" end="00:06:56.710">configuration when I build that...over projects what I get our</p>
+      <p begin="00:06:56.710" end="00:07:01.640">projects that are specific to each of the platforms for windows I</p>
+      <p begin="00:07:01.640" end="00:07:05.660">...a visual studio project without html css javascript</p>
+      <p begin="00:07:05.660" end="00:07:07.700">and assets that are mine.</p>
+      <p begin="00:07:07.700" end="00:07:10.870">And, then the windows specific runtime and plug-in</p>
+      <p begin="00:07:10.870" end="00:07:15.550">code and the windows specific configuration that's going to look like</p>
+      <p begin="00:07:15.550" end="00:07:20.570">and epics manifest for windows in ios and up</p>
+      <p begin="00:07:20.570" end="00:07:25.470">...x code projects with again that same html css and javascript</p>
+      <p begin="00:07:25.470" end="00:07:29.060">...all of my assets and then the ios specific platform</p>
+      <p begin="00:07:29.060" end="00:07:31.350">plug-in configuration again</p>
+      <p begin="00:07:31.350" end="00:07:36.630">was android same thing and then when we build this we end up with</p>
+      <p begin="00:07:36.630" end="00:07:41.550">...native windows app and native ios app and native</p>
+      <p begin="00:07:41.550" end="00:07:45.360">android app the bills just straight into what you expect to be</p>
+      <p begin="00:07:45.360" end="00:07:47.650">...app and then you can take each of these</p>
+      <p begin="00:07:47.650" end="00:07:54.510">applications and submits into their respective stores?</p>
+      <p begin="00:07:54.510" end="00:07:58.910">Talk a little bit more about how the windows platform works because presumably</p>
+      <p begin="00:07:58.910" end="00:08:03.480">you guys are at least some of viewer windows developers are</p>
+      <p begin="00:08:03.480" end="00:08:08.400">...the windows platform has been on a journey.</p>
+      <p begin="00:08:08.400" end="00:08:11.650">I think of...zero as.</p>
+      <p begin="00:08:11.650" end="00:08:14.840">The place that are platform was</p>
+      <p begin="00:08:14.840" end="00:08:20.880">before about last summer we had a plethora of pieces of our</p>
+      <p begin="00:08:20.880" end="00:08:25.320">...platform there was a windows a platform and that was largely</p>
+      <p begin="00:08:25.320" end="00:08:30.030">...people were using it targeted windows a devices so</p>
+      <p begin="00:08:30.030" end="00:08:34.780">tablets and desktops for dub database so what we call the modern app</p>
+      <p begin="00:08:34.780" end="00:08:36.410">with the time.</p>
+      <p begin="00:08:36.410" end="00:08:40.240">Those also windows seven platform that was no longer</p>
+      <p begin="00:08:40.240" end="00:08:45.200">...and we...everybody was kind of discouraged from using it</p>
+      <p begin="00:08:45.200" end="00:08:49.040">...a windows phone seven-foot seven-point-five platform</p>
+      <p begin="00:08:49.040" end="00:08:53.150">that was deprecated and windows phone...was</p>
+      <p begin="00:08:53.150" end="00:08:57.880">the popular in market windows phone operating system and that was</p>
+      <p begin="00:08:57.880" end="00:09:02.650">really the platform that was very popular that most people were targeting</p>
+      <p begin="00:09:02.650" end="00:09:10.450">for cordova and that created silverlight app with the web view.</p>
+      <p begin="00:09:10.450" end="00:09:12.930">Starting in summer of twenty fourteen.</p>
+      <p begin="00:09:13.980" end="00:09:16.220">We did a bunch of work with the</p>
+      <p begin="00:09:16.220" end="00:09:20.810">cordova open-source community to create the windows platform.</p>
+      <p begin="00:09:20.810" end="00:09:24.260">The windows platform targeted windows eight-point one</p>
+      <p begin="00:09:24.260" end="00:09:27.340">...windows phone eight-point one windows phone</p>
+      <p begin="00:09:27.340" end="00:09:31.090">...windows eight-point one had a united model</p>
+      <p begin="00:09:32.110" end="00:09:38.680">...and that allowed us to really unite the cordova model as</p>
+      <p begin="00:09:38.680" end="00:09:42.530">And, it would created...a local context and you</p>
+      <p begin="00:09:42.530" end="00:09:47.550">could have all of your code can hosted in one place and it would you create actually</p>
+      <p begin="00:09:47.550" end="00:09:52.470">to binary because there was still...phone store and a windows</p>
+      <p begin="00:09:52.470" end="00:09:58.860">store but logically kind of thought of them is one thing because you had one project you</p>
+      <p begin="00:09:58.860" end="00:10:04.430">are working on windows found eight was still a version of windows phone that was in</p>
+      <p begin="00:10:04.430" end="00:10:09.410">market so it's still a very popular platform to target</p>
+      <p begin="00:10:09.410" end="00:10:14.900">the that continues to exist and the next phase what I think of as</p>
+      <p begin="00:10:14.900" end="00:10:19.800">...is after windows ten is finished in</p>
+      <p begin="00:10:19.800" end="00:10:23.190">rt m which is, you know, fairly soon?</p>
+      <p begin="00:10:23.190" end="00:10:27.180">We start the phase of windows of windows</p>
+      <p begin="00:10:27.180" end="00:10:30.850">universal, universal windows platform</p>
+      <p begin="00:10:30.850" end="00:10:35.260">and there's a single platform called windows that.</p>
+      <p begin="00:10:35.260" end="00:10:41.130">Can target those uw...apps and have some of</p>
+      <p begin="00:10:41.130" end="00:10:44.840">...single binary that will target?</p>
+      <p begin="00:10:44.840" end="00:10:48.800">Tablet desktop phone xbox.</p>
+      <p begin="00:10:48.800" end="00:10:52.330">Surface hub all of the great other devices</p>
+      <p begin="00:10:52.330" end="00:10:57.410">and the breadth of universal windows devices.</p>
+      <p begin="00:10:57.410" end="00:11:00.760">Because windows phone eight is still in market that platform</p>
+      <p begin="00:11:00.760" end="00:11:06.860">continues to exist and in accordance with how the</p>
+      <p begin="00:11:06.860" end="00:11:12.180">cordovathe...of a community works until that</p>
+      <p begin="00:11:12.180" end="00:11:17.130">platform has reached a very low usage that will continue to be</p>
+      <p begin="00:11:17.130" end="00:11:23.020">...then when it's very low usage we will deprecated with, you know, lots of</p>
+      <p begin="00:11:23.020" end="00:11:29.720">six months of warning to the community and then we encourage everybody...move over?</p>
+      <p begin="00:11:29.720" end="00:11:32.680">We can with the windows platform.</p>
+      <p begin="00:11:32.680" end="00:11:36.340">Target either deb a in local context or in</p>
+      <p begin="00:11:36.340" end="00:11:41.150">remote context for windows ten and the differences between</p>
+      <p begin="00:11:41.150" end="00:11:44.580">those two are in the security context</p>
+      <p begin="00:11:44.580" end="00:11:49.080">I'm not going to go deeply into the security context differences iness</p>
+      <p begin="00:11:49.080" end="00:11:53.570">...suffice to say that we think remote mode is probably the right thing for your</p>
+      <p begin="00:11:53.570" end="00:11:58.970">...app but there are times when local</p>
+      <p begin="00:11:58.970" end="00:12:02.890">mode might be the right thing so we've...that easily through</p>
+      <p begin="00:12:02.890" end="00:12:06.930">...configuration for cordova and you can switch that.</p>
+      <p begin="00:12:06.930" end="00:12:13.050">Inline script is one difference inline script works only in local</p>
+      <p begin="00:12:13.050" end="00:12:13.610">...not in</p>
+      <p begin="00:12:13.610" end="00:12:20.990">...so if you're in...script advocate you might want to switch.</p>
+      <p begin="00:12:20.990" end="00:12:23.310">And, we have been</p>
+      <p begin="00:12:23.310" end="00:12:28.090">...hard with the community to get windows tends creative a platform</p>
+      <p begin="00:12:28.090" end="00:12:33.050">ready to go and it's now available for public usage</p>
+      <p begin="00:12:33.050" end="00:12:37.270">...the apache cordova site as of the day</p>
+      <p begin="00:12:37.270" end="00:12:42.890">day-and-a-half ago will use it today and you'll see how you can use in your</p>
+      <p begin="00:12:42.890" end="00:12:46.610">app starting today and then as windows ten</p>
+      <p begin="00:12:46.610" end="00:12:52.970">...ends we will take contributions work with community and</p>
+      <p begin="00:12:52.970" end="00:13:02.530">...be rolled into the official windows platform for whatever.</p>
+      <p begin="00:13:02.530" end="00:13:06.370">The windows the cordova windows ten platform has</p>
+      <p begin="00:13:06.370" end="00:13:11.220">...several differences between it and the previous windows</p>
+      <p begin="00:13:11.220" end="00:13:13.960">platform support and other</p>
+      <p begin="00:13:13.960" end="00:13:17.460">the cordova platforms like ios</p>
+      <p begin="00:13:17.460" end="00:13:23.720">...one is part of the windows ten platform.</p>
+      <p begin="00:13:23.720" end="00:13:26.440">Design is that you can access</p>
+      <p begin="00:13:26.440" end="00:13:31.330">...rt from javascript this makes it really easy to</p>
+      <p begin="00:13:31.330" end="00:13:35.930">write platforms specific code for your...of app or if you're</p>
+      <p begin="00:13:35.930" end="00:13:39.950">an author that wants to write new plugins you can write them really easily</p>
+      <p begin="00:13:39.950" end="00:13:44.800">easing javascript or if you really like cplus-plus and csharp the can write</p>
+      <p begin="00:13:44.800" end="00:13:48.320">it in cplus-plus and csharp anything you can write a winner</p>
+      <p begin="00:13:48.320" end="00:13:52.960">t component and you can write a plug-in for cordova</p>
+      <p begin="00:13:52.960" end="00:14:00.420">in so easier to write...and it is for ios and for android.</p>
+      <p begin="00:14:00.420" end="00:14:05.310">Part of...database set of enhancements in windows ten is the</p>
+      <p begin="00:14:05.310" end="00:14:10.610">supported...the hosted content model this means if part</p>
+      <p begin="00:14:10.610" end="00:14:15.880">of your app say a pager to of your appis on</p>
+      <p begin="00:14:15.880" end="00:14:20.860">your website is part of your mobile website and you really just want to</p>
+      <p begin="00:14:20.860" end="00:14:25.790">point out there and tell your app just to get that page and make that</p>
+      <p begin="00:14:25.790" end="00:14:30.270">part of my app because I don't want to updated all the time and risa minute</p>
+      <p begin="00:14:30.270" end="00:14:33.420">to the store you can use the supported</p>
+      <p begin="00:14:33.420" end="00:14:40.340">her hosted content model directly within your...of app?</p>
+      <p begin="00:14:40.340" end="00:14:43.560">Embedded cordova is a pattern that allows</p>
+      <p begin="00:14:43.560" end="00:14:47.890">islands of cordova so imagine instead of a single web</p>
+      <p begin="00:14:47.890" end="00:14:52.210">view within your app you have several</p>
+      <p begin="00:14:52.210" end="00:14:56.940">little islands of web views each pointing to different parts of your</p>
+      <p begin="00:14:56.940" end="00:15:00.750">cordova app you can do the sign windows because of</p>
+      <p begin="00:15:00.750" end="00:15:06.500">a change in the security and when rt model and it's it can</p>
+      <p begin="00:15:06.500" end="00:15:13.890">be very powerful amazon for instances using this within their mobile app?</p>
+      <p begin="00:15:13.890" end="00:15:17.730">And, if you guys use of a and windows</p>
+      <p begin="00:15:17.730" end="00:15:21.680">...or windows eight-point one humane be familiar with some of</p>
+      <p begin="00:15:21.680" end="00:15:25.830">the security restrictions around safe html.</p>
+      <p begin="00:15:25.830" end="00:15:28.790">That kept you from using angular</p>
+      <p begin="00:15:28.790" end="00:15:33.880">and bootstrapping some of the other frameworks well.</p>
+      <p begin="00:15:33.880" end="00:15:38.480">That is no longer an issue we got rid of safety html and</p>
+      <p begin="00:15:38.480" end="00:15:44.510">now you can use all of the libraries you love within your windows html</p>
+      <p begin="00:15:44.510" end="00:15:50.590">app so that's a pretty big thing for windows and we'll make your lives</p>
+      <p begin="00:15:50.590" end="00:15:58.100">easier writing html...either through cordova or natively for windows.</p>
+      <p begin="00:15:58.100" end="00:16:00.240">We are as we are working with</p>
+      <p begin="00:16:00.240" end="00:16:04.030">the community to build the windows platform for</p>
+      <p begin="00:16:04.030" end="00:16:07.780">cordova we're also working to ensure that the top twenty-five</p>
+      <p begin="00:16:07.780" end="00:16:12.550">plugins have great support for the windows platform we</p>
+      <p begin="00:16:12.550" end="00:16:17.590">are mostly there but, we are working throughyou know,</p>
+      <p begin="00:16:17.590" end="00:16:22.070">bugs and issues with the new platform and each day we were getting kind of closer,</p>
+      <p begin="00:16:22.070" end="00:16:26.470">closer to filling out that matrix of all green for the top twenty five</p>
+      <p begin="00:16:26.470" end="00:16:32.440">...watches work in open-source and get closer and closer.</p>
+      <p begin="00:16:32.440" end="00:16:36.170">If you choose to use when js when js in the last</p>
+      <p begin="00:16:36.170" end="00:16:41.300">six months whence open-source and then released when js for</p>
+      <p begin="00:16:41.300" end="00:16:43.420">...that designed for</p>
+      <p begin="00:16:44.580" end="00:16:49.050">web use for mobile devices and you can choose to</p>
+      <p begin="00:16:49.050" end="00:16:53.960">use when js to build a great mobile interface you can she's not</p>
+      <p begin="00:16:53.960" end="00:16:58.950">too is a fully optional framework it offers for windows</p>
+      <p begin="00:16:58.950" end="00:17:03.780">devices great touch and keyboards support one of the shortcomings of</p>
+      <p begin="00:17:03.780" end="00:17:08.130">some of the you are libraries is that they don't have good</p>
+      <p begin="00:17:08.130" end="00:17:10.730">keyboard support and</p>
+      <p begin="00:17:10.730" end="00:17:15.360">...js...natively built this into their designed to have great</p>
+      <p begin="00:17:15.360" end="00:17:20.720">keywords support so that's an option and when js works really well with angular</p>
+      <p begin="00:17:20.720" end="00:17:25.720">and bootstrap and some of your other favorite frameworks?</p>
+      <p begin="00:17:25.720" end="00:17:29.670">So, how do I build a...of app?</p>
+      <p begin="00:17:29.670" end="00:17:33.110">Fantastic question my team the visual studio team</p>
+      <p begin="00:17:33.110" end="00:17:35.410">...a year-ago started on</p>
+      <p begin="00:17:35.410" end="00:17:40.200">a journey of building tools within visual studio to build</p>
+      <p begin="00:17:40.200" end="00:17:44.210">...of applications and we think</p>
+      <p begin="00:17:44.210" end="00:17:48.640">...first release...about a year-ago as an extension to</p>
+      <p begin="00:17:48.640" end="00:17:53.830">visual studio twenty thirteen in visual studio twenty fifteen we are now</p>
+      <p begin="00:17:53.830" end="00:17:55.300">in-box.</p>
+      <p begin="00:17:55.300" end="00:18:00.220">And, we are just an option you can check as you install.</p>
+      <p begin="00:18:00.220" end="00:18:04.010">And, were actually super excited about the work that we've done</p>
+      <p begin="00:18:04.010" end="00:18:08.780">for visual studio cordova you can use visual studio</p>
+      <p begin="00:18:08.780" end="00:18:13.420">to create coded debug all the things that you</p>
+      <p begin="00:18:13.420" end="00:18:16.280">would expect from visual studio on your</p>
+      <p begin="00:18:16.280" end="00:18:19.700">...of app and tell us sense we've got that</p>
+      <p begin="00:18:19.700" end="00:18:26.160">plugins can be are directly supported in the configuration...can you can</p>
+      <p begin="00:18:26.160" end="00:18:30.640">...can debug all of the kinds of things that you expect from visual</p>
+      <p begin="00:18:30.640" end="00:18:33.890">studio we support for cordova applications.</p>
+      <p begin="00:18:35.480" end="00:18:39.630">And, of course not just for windows for ios</p>
+      <p begin="00:18:39.630" end="00:18:44.110">and for android they may be asking ios.</p>
+      <p begin="00:18:44.110" end="00:18:44.940">Visual studio</p>
+      <p begin="00:18:44.940" end="00:18:49.690">...on windows how are you going to do that ios applications</p>
+      <p begin="00:18:49.690" end="00:18:55.670">can only be built on and for both technical and legal reasons</p>
+      <p begin="00:18:55.670" end="00:19:00.480">so while we can build a android apps for ios</p>
+      <p begin="00:19:00.480" end="00:19:04.730">apps what we have is a remote build agent you have your</p>
+      <p begin="00:19:04.730" end="00:19:07.470">...on a part of your network that runs</p>
+      <p begin="00:19:07.470" end="00:19:15.900">remote build agent we can build and the debug on that machine.</p>
+      <p begin="00:19:15.900" end="00:19:20.690">Visual studio gives you all the things you need to get started and this might not sound like a</p>
+      <p begin="00:19:20.690" end="00:19:24.140">big thing but when you start to incurred of a development</p>
+      <p begin="00:19:24.140" end="00:19:29.130">and you look at all of the pieces of open-source that you need to do that</p>
+      <p begin="00:19:29.130" end="00:19:33.790">it can be incredibly overwhelming the screenshot I took.</p>
+      <p begin="00:19:33.790" end="00:19:37.530">...get enough of them into get even halfway down the list of all of the</p>
+      <p begin="00:19:37.530" end="00:19:40.990">open-source tools that you need to get started on</p>
+      <p begin="00:19:40.990" end="00:19:43.940">...a development you can see I got to</p>
+      <p begin="00:19:43.940" end="00:19:48.310">...emulator for android so not even not even</p>
+      <p begin="00:19:48.310" end="00:19:53.820">halfway through the alphabet these pieces apache</p>
+      <p begin="00:19:53.820" end="00:19:58.350">...ripple come from the community but</p>
+      <p begin="00:19:58.350" end="00:20:02.680">she need them all and getting them all on your machine with the right versions that</p>
+      <p begin="00:20:02.680" end="00:20:07.670">work together that aren't broken that don't have security issues is</p>
+      <p begin="00:20:07.670" end="00:20:12.390">huge it's a really big issue one of the things that visual studio</p>
+      <p begin="00:20:12.390" end="00:20:15.070">does is brings them all down</p>
+      <p begin="00:20:15.070" end="00:20:19.610">for you in one single install and then we maintain them</p>
+      <p begin="00:20:19.610" end="00:20:21.660">...if for instance</p>
+      <p begin="00:20:21.660" end="00:20:25.840">get has a security issue like it did two months ago we</p>
+      <p begin="00:20:25.840" end="00:20:30.200">push down to your machine the next time you open your projects...new version of get</p>
+      <p begin="00:20:30.200" end="00:20:35.310">that we verified with this stack of tools if something gets</p>
+      <p begin="00:20:35.310" end="00:20:39.990">an installed and the tool chain isn't going to work anymore we</p>
+      <p begin="00:20:39.990" end="00:20:44.560">checked before next build and we reinstall the pieces</p>
+      <p begin="00:20:44.560" end="00:20:49.010">that you need to make sure that your build is going to work so</p>
+      <p begin="00:20:49.010" end="00:20:53.390">we do that not just when you install but an ongoing basis when</p>
+      <p begin="00:20:53.390" end="00:20:59.570">you build and that lies stream of checking your dependencies is one of our</p>
+      <p begin="00:20:59.570" end="00:21:06.990">big value props for visual studio that we think we can help you with.</p>
+      <p begin="00:21:08.070" end="00:21:12.240">Of course as part of the cordova community</p>
+      <p begin="00:21:12.240" end="00:21:15.830">were contributing everything we do in</p>
+      <p begin="00:21:15.830" end="00:21:20.360">open-source back to that community to make it better for all targets</p>
+      <p begin="00:21:20.360" end="00:21:25.100">not just for our visual studio developers because as part of</p>
+      <p begin="00:21:25.100" end="00:21:28.780">an open-source community that's what you do you help each other</p>
+      <p begin="00:21:28.780" end="00:21:32.340">...when you six-something you send a polar...back</p>
+      <p begin="00:21:32.340" end="00:21:37.770">to that community we have five or seven contributors to</p>
+      <p begin="00:21:37.770" end="00:21:42.750">cordova on the team and then we contribute back to other projects.</p>
+      <p begin="00:21:42.750" end="00:21:46.820">You can see some of the examples of things that we've already contributed I'm not going to read</p>
+      <p begin="00:21:46.820" end="00:21:50.840">them all but significant things that we spent a lot of time making</p>
+      <p begin="00:21:50.840" end="00:21:54.240">sure work well not just for our tools but for</p>
+      <p begin="00:21:54.240" end="00:21:58.750">...tools for people who don't want a tool set they want to just pull the pieces</p>
+      <p begin="00:21:58.750" end="00:22:04.100">together themselves and of course for anything for windows that we can do to</p>
+      <p begin="00:22:04.100" end="00:22:08.430">...windows development work more smoothly with apache whatever</p>
+      <p begin="00:22:09.710" end="00:22:16.240">we ensure that we're doing the right things for the community and contributing this back.</p>
+      <p begin="00:22:16.240" end="00:22:21.480">Great so show me let's see what it looks like.</p>
+      <p begin="00:22:21.480" end="00:22:24.830">As I switch over if anybody has questions so little hard</p>
+      <p begin="00:22:24.830" end="00:22:50.750">...dasi out yet can you actually can get a microphone so we can capture.</p>
+      <p begin="00:22:50.750" end="00:22:55.760">Ask...no repeat.</p>
+      <p begin="00:23:35.200" end="00:23:38.480">Yeah, absolutely the question is what versions of...visual studio</p>
+      <p begin="00:23:38.480" end="00:23:43.180">have these tools the visual studio community addition does have a</p>
+      <p begin="00:23:43.180" end="00:23:47.160">...cordova tools and is a full version visual</p>
+      <p begin="00:23:47.160" end="00:23:51.580">...of they will be right there in the install and you can check</p>
+      <p begin="00:23:51.580" end="00:23:55.770">...and use them visual studio code today does not have support</p>
+      <p begin="00:23:55.770" end="00:24:02.180">for apache...the development in the future will see</p>
+      <p begin="00:24:02.180" end="00:24:07.550">the visual studio code is a pretty new project so...can doing, you know,</p>
+      <p begin="00:24:07.550" end="00:24:11.950">working...the stack for that?</p>
+      <p begin="00:24:11.950" end="00:24:15.540">All right so let's give it a spin I have visual studio</p>
+      <p begin="00:24:15.540" end="00:24:17.100">and this is installed on.</p>
+      <p begin="00:24:18.170" end="00:24:22.280">Last week's build of...ten that you guys can all</p>
+      <p begin="00:24:22.280" end="00:24:28.210">down the today we're going to create a new project just as you would think we would using visual</p>
+      <p begin="00:24:28.210" end="00:24:32.470">...a new project template.</p>
+      <p begin="00:24:32.470" end="00:24:38.790">We'll call this location app I'm going to build a really simple location app.</p>
+      <p begin="00:24:38.790" end="00:24:40.600">The using</p>
+      <p begin="00:24:40.600" end="00:24:46.070">our geo location module inside this laptop.</p>
+      <p begin="00:24:46.070" end="00:24:47.180">And, you may say.</p>
+      <p begin="00:24:48.260" end="00:24:52.540">Geo location big deal you...do that in html five.</p>
+      <p begin="00:24:52.540" end="00:24:57.460">It's a fair point you...going to be using the cordova a plug-in for it</p>
+      <p begin="00:24:57.460" end="00:25:03.150">I could have used another plug-in I just this one was very simple and,</p>
+      <p begin="00:25:03.150" end="00:25:06.990">you guys could follow it as we think about</p>
+      <p begin="00:25:06.990" end="00:25:11.120">cordova was set of plugins that we would think of</p>
+      <p begin="00:25:11.120" end="00:25:15.930">as core like geo location like.</p>
+      <p begin="00:25:15.930" end="00:25:21.230">The camera and web can those api</p>
+      <p begin="00:25:21.230" end="00:25:25.090">service a model for what should move from cordova</p>
+      <p begin="00:25:25.090" end="00:25:30.030">into html five so we try to</p>
+      <p begin="00:25:30.030" end="00:25:34.340">designers api in a way that they can move smoothly from cordova</p>
+      <p begin="00:25:34.340" end="00:25:38.630">to html five often with no api changes and that is already happened for</p>
+      <p begin="00:25:38.630" end="00:25:44.310">geo location and for some of the other api as like camera...plug-in</p>
+      <p begin="00:25:44.310" end="00:25:50.260">continue to exist so for some amount of time you kind of have both.</p>
+      <p begin="00:25:50.260" end="00:25:53.870">But, we'll build a simple location app using the location the</p>
+      <p begin="00:25:53.870" end="00:25:56.340">geo location plug-in and I'm going to use angular.</p>
+      <p begin="00:25:57.650" end="00:26:02.450">For this app but before we get to coding.</p>
+      <p begin="00:26:02.450" end="00:26:05.040">Because our new windows platform.</p>
+      <p begin="00:26:06.130" end="00:26:10.410">Uses the new version of the</p>
+      <p begin="00:26:10.410" end="00:26:14.630">cordova command line interface I'm going to ask for the new version of the</p>
+      <p begin="00:26:14.630" end="00:26:18.040">creative a command line interface and then.</p>
+      <p begin="00:26:18.040" end="00:26:20.320">To ensure I have it I</p>
+      <p begin="00:26:20.320" end="00:26:24.170">build my visual studio does a says you ask for</p>
+      <p begin="00:26:24.170" end="00:26:29.110">...command line interface five data so I'm going to check your machine make sure that you</p>
+      <p begin="00:26:29.110" end="00:26:37.240">have it downloaded if you don't and build great we now have it.</p>
+      <p begin="00:26:38.400" end="00:26:52.940">I'm going to switch over to the command line and let's add a few things to the project.</p>
+      <p begin="00:26:52.940" end="00:26:56.440">The first is that we're going to add the platform</p>
+      <p begin="00:26:56.440" end="00:27:01.230">for windows the new platform so we'll do that using creative</p>
+      <p begin="00:27:01.230" end="00:27:06.140">a platform and windows in the</p>
+      <p begin="00:27:06.140" end="00:27:11.070">future all you need to do is could...a platform ad windows and further</p>
+      <p begin="00:27:11.070" end="00:27:14.030">...actually able to do this from visual studio because</p>
+      <p begin="00:27:15.080" end="00:27:20.020">our platform for windows is changing and it's not</p>
+      <p begin="00:27:20.020" end="00:27:23.520">excepted into the mainline branch yet until it's done.</p>
+      <p begin="00:27:23.520" end="00:27:27.280">We need to point to the right...of for the windows</p>
+      <p begin="00:27:27.280" end="00:27:32.080">...platform...prototype so I'm going to given address</p>
+      <p begin="00:27:32.080" end="00:27:37.780">...platform ad windows at.</p>
+      <p begin="00:28:12.690" end="00:28:17.230">...already.</p>
+      <p begin="00:28:17.230" end="00:28:21.790">But, this is going to do is it's going to go out to where this platform</p>
+      <p begin="00:28:21.790" end="00:28:27.800">lives and pull it down using and pm an added to my projects?</p>
+      <p begin="00:28:27.800" end="00:28:33.690">Fantastic it's always good when you have internet access for your demos and now because I</p>
+      <p begin="00:28:33.690" end="00:28:39.510">want to use a angular in my app let's go and add angular as well.</p>
+      <p begin="00:28:39.510" end="00:28:43.070">...to go into where my source code for this project is</p>
+      <p begin="00:28:43.070" end="00:28:47.440">...look at this in more depth later but we're going to</p>
+      <p begin="00:28:47.440" end="00:28:48.450">in can install.</p>
+      <p begin="00:28:50.290" end="00:28:56.590">Angular.</p>
+      <p begin="00:28:56.590" end="00:29:00.360">Grates and...put that into our project.</p>
+      <p begin="00:29:00.360" end="00:29:04.890">Let's take a look at what we have in solution explore in this project.</p>
+      <p begin="00:29:04.890" end="00:29:09.520">We have on the right side here is all the files the make-up my...</p>
+      <p begin="00:29:09.520" end="00:29:14.260">project we talked about configuration we already looked at the configuration manager</p>
+      <p begin="00:29:14.260" end="00:29:18.930">once please it again this is where I manage all the things for each</p>
+      <p begin="00:29:18.930" end="00:29:22.930">of my platforms plus the platform agnostic</p>
+      <p begin="00:29:22.930" end="00:29:27.420">settings the code from my app is right here in deb.</p>
+      <p begin="00:29:28.590" end="00:29:33.000">And, index html is the html home</p>
+      <p begin="00:29:33.000" end="00:29:35.600">planning page for my app.</p>
+      <p begin="00:29:35.600" end="00:29:41.880">And, then in scripts I have...js file.</p>
+      <p begin="00:29:41.880" end="00:29:43.350">And, let's go into.</p>
+      <p begin="00:29:46.270" end="00:29:50.220">Will add a little bit of code?</p>
+      <p begin="00:29:50.220" end="00:29:53.010">I need to reference my a.</p>
+      <p begin="00:29:53.010" end="00:29:56.570">Angular app a angular source kids so</p>
+      <p begin="00:29:56.570" end="00:30:02.830">...add a reference to.</p>
+      <p begin="00:30:18.500" end="00:30:22.820">...pull out some of the default...</p>
+      <p begin="00:30:22.820" end="00:30:34.920">And, I'm going to add a little bit of html.</p>
+      <p begin="00:30:34.920" end="00:30:39.790">So, that you all don't have to watch type I'm horrible at talking and typing at</p>
+      <p begin="00:30:39.790" end="00:30:44.670">the same time inside this did what we have is very simple</p>
+      <p begin="00:30:44.670" end="00:30:48.180">uyvy with a button that says go get my location and</p>
+      <p begin="00:30:48.180" end="00:30:52.200">...that says my location is lat long.</p>
+      <p begin="00:30:52.200" end="00:30:56.630">What we're pointing to is an angular controller you can see the engine</p>
+      <p begin="00:30:56.630" end="00:31:00.160">control interactive and now I need to go write that angular</p>
+      <p begin="00:31:00.160" end="00:31:05.530">controller all open up my index file and because</p>
+      <p begin="00:31:05.530" end="00:31:10.520">I'm using angular I'm going to pass into my function</p>
+      <p begin="00:31:10.520" end="00:31:14.260">...dot angular?</p>
+      <p begin="00:31:14.260" end="00:31:18.230">If you haven't seen this can before don't worry it's fairly.</p>
+      <p begin="00:31:18.230" end="00:31:19.530">Simple.</p>
+      <p begin="00:31:19.530" end="00:31:25.920">Once we get that angular object we need to...</p>
+      <p begin="00:31:25.920" end="00:31:43.460">Now we need our directive.</p>
+      <p begin="00:31:48.400" end="00:32:14.890">What's the scheck at presuming.</p>
+      <p begin="00:32:14.890" end="00:32:18.250">Okay, what I pasted in here is a very simple</p>
+      <p begin="00:32:18.250" end="00:32:23.540">controller that goes and gets location calls</p>
+      <p begin="00:32:23.540" end="00:32:28.430">...get location method that wethat we called in our html?</p>
+      <p begin="00:32:28.430" end="00:32:30.210">And, it uses navigator</p>
+      <p begin="00:32:30.210" end="00:32:35.110">...dot get current position this is the plug-in for geo location</p>
+      <p begin="00:32:35.110" end="00:32:38.020">and is if you've used html you'll notice</p>
+      <p begin="00:32:38.020" end="00:32:40.520">that it looks a lot like the</p>
+      <p begin="00:32:40.520" end="00:32:45.870">api for a camera for other types of</p>
+      <p begin="00:32:45.870" end="00:32:51.060">device capabilities for html five as I mentioned that by design</p>
+      <p begin="00:32:51.060" end="00:32:55.540">and then I'm going to pass into get current position the method for</p>
+      <p begin="00:32:55.540" end="00:33:00.510">on location found that's my a...call back when the location is found</p>
+      <p begin="00:33:00.510" end="00:33:07.930">I can grab my latin long put into my scope that goes back into my html?</p>
+      <p begin="00:33:07.930" end="00:33:13.750">Because we're using this...location plug-in we need to add to our</p>
+      <p begin="00:33:13.750" end="00:33:16.500">project going to bring up the configure designer.</p>
+      <p begin="00:33:17.560" end="00:33:18.460">And, go to plugins.</p>
+      <p begin="00:33:19.510" end="00:33:24.450">One of the things visual studio does is it provides a list of the plugins that we've tested and</p>
+      <p begin="00:33:24.450" end="00:33:28.150">no work together well you can see that these</p>
+      <p begin="00:33:28.150" end="00:33:35.090">...are all the core plugins and straight from here you can add them to your projects.</p>
+      <p begin="00:33:35.090" end="00:33:36.930">I am going to go to geo location.</p>
+      <p begin="00:33:38.020" end="00:33:41.820">And, add that plug into my projects and you can see it</p>
+      <p begin="00:33:41.820" end="00:33:46.690">pop-up in plugins...location right there.</p>
+      <p begin="00:33:46.690" end="00:33:50.180">And, now we can actually run</p>
+      <p begin="00:33:50.180" end="00:33:55.920">and this thing let's switch to windows any cpu.</p>
+      <p begin="00:33:55.920" end="00:34:06.070">And, we'll run it on a local machine.</p>
+      <p begin="00:34:06.070" end="00:34:10.610">And, what you see is a universal windows at like you kind of expected three</p>
+      <p begin="00:34:10.610" end="00:34:13.710">...and it's got that your control instead of</p>
+      <p begin="00:34:13.710" end="00:34:16.900">the charms thing and when I click find my location?</p>
+      <p begin="00:34:18.000" end="00:34:21.750">I get asked by the windows security system.</p>
+      <p begin="00:34:22.860" end="00:34:25.980">Do I want to let this app access my</p>
+      <p begin="00:34:25.980" end="00:34:31.700">geo location in my app as you would with any other app that's</p>
+      <p begin="00:34:31.700" end="00:34:36.280">needed to windows I can say yes and then it'll asynchronous</p>
+      <p begin="00:34:36.280" end="00:34:38.970">...come back with my location hopefully</p>
+      <p begin="00:34:38.970" end="00:34:44.280">...go and it's on the wi-fi...I...slowed to a to give me back</p>
+      <p begin="00:34:44.280" end="00:34:48.100">a location and because this is running locally?</p>
+      <p begin="00:34:49.180" end="00:34:53.740">Through visual studio I can actually do all of the debugging</p>
+      <p begin="00:34:53.740" end="00:34:58.520">kinds of things that you would expect so I can actually come into body and I</p>
+      <p begin="00:34:58.520" end="00:35:03.250">can say let's give body and new inline style of back</p>
+      <p begin="00:35:03.250" end="00:35:07.030">color.</p>
+      <p begin="00:35:07.030" end="00:35:15.810">And, we'll give it...colorless a orange.</p>
+      <p begin="00:35:15.810" end="00:35:17.450">And, it changes...dynamically</p>
+      <p begin="00:35:17.450" end="00:35:23.030">...so this is pretty powerful I can debug this rate here without going out</p>
+      <p begin="00:35:23.030" end="00:35:27.330">to the device or if I have a device tethered I can actually debug to my</p>
+      <p begin="00:35:27.330" end="00:35:32.310">device that's tethered and you're thinking...windows of course you can we can also</p>
+      <p begin="00:35:32.310" end="00:35:34.900">...as a ripple</p>
+      <p begin="00:35:34.900" end="00:35:41.000">as a built for android apps using.</p>
+      <p begin="00:35:41.000" end="00:35:48.320">The ripple emulator and the ripple emulator comes up in chrome simulates says you guys</p>
+      <p begin="00:35:48.320" end="00:35:52.160">might gas the android environment that's</p>
+      <p begin="00:35:52.160" end="00:35:52.750">of benign.</p>
+      <p begin="00:35:54.540" end="00:35:59.010">Exception with the pass it and then I can find my location</p>
+      <p begin="00:35:59.010" end="00:36:02.570">and again I can debugging change background color for instance.</p>
+      <p begin="00:36:03.630" end="00:36:07.170">So, this is pretty powerful I can change</p>
+      <p begin="00:36:08.240" end="00:36:11.040">...chrome around it and I'll change</p>
+      <p begin="00:36:11.040" end="00:36:15.810">...the resolution in the dimensions and things like that.</p>
+      <p begin="00:36:15.810" end="00:36:19.960">I can do most of my development straight from visual studio</p>
+      <p begin="00:36:19.960" end="00:36:25.010">without ever having to kind of leave the nicecomforting</p>
+      <p begin="00:36:25.010" end="00:36:28.210">...environment that.</p>
+      <p begin="00:36:28.210" end="00:36:32.500">Allows visual studio developers to be pretty productive using</p>
+      <p begin="00:36:32.500" end="00:36:35.490">intel sense of the...however a lot of my final</p>
+      <p begin="00:36:35.490" end="00:36:40.270">...stuff is going to have to be on the device because you guys have probably a set of devices that you care</p>
+      <p begin="00:36:40.270" end="00:36:46.260">about a lot so we can also tether and do the same kinds of things?</p>
+      <p begin="00:36:46.260" end="00:36:49.380">So, let's shut this down.</p>
+      <p begin="00:36:49.380" end="00:36:56.250">let's take a little bit deeper look into what it is that we've created.</p>
+      <p begin="00:36:56.250" end="00:36:58.690">Go back into.</p>
+      <p begin="00:36:58.690" end="00:37:03.470">The command line and.</p>
+      <p begin="00:37:03.470" end="00:37:06.560">Look, at the platforms that we.</p>
+      <p begin="00:37:06.560" end="00:37:07.060">Added.</p>
+      <p begin="00:37:08.180" end="00:37:12.850">And, we see android and windows and windows any cpu and we can</p>
+      <p begin="00:37:12.850" end="00:37:18.930">actually ad here the creative a platform and</p>
+      <p begin="00:37:18.930" end="00:37:21.800">...for instance.</p>
+      <p begin="00:37:21.800" end="00:37:24.850">Just like we added windows...nagging and ios</p>
+      <p begin="00:37:26.390" end="00:37:30.400">folder on platforms and we can see it pop-up here are sheila</p>
+      <p begin="00:37:30.400" end="00:37:35.330">trick early like these show all files in the solution explore</p>
+      <p begin="00:37:35.330" end="00:37:41.300">to see everything in the platforms directory...now we see others platforms.</p>
+      <p begin="00:37:41.300" end="00:37:45.080">If we expand windows.</p>
+      <p begin="00:37:45.080" end="00:37:50.030">We see a bunch of cia is...js project files...project files</p>
+      <p begin="00:37:50.030" end="00:37:55.540">are for the platforms that we're building...and creative app...windows ten</p>
+      <p begin="00:37:55.540" end="00:38:01.480">...is how we build the windows ten app as you guys might</p>
+      <p begin="00:38:01.480" end="00:38:03.860">If we expand out the ios</p>
+      <p begin="00:38:03.860" end="00:38:09.350">...we get is an x code project you can take this project from access</p>
+      <p begin="00:38:09.350" end="00:38:14.180">...right here and actually build it using x code on your</p>
+      <p begin="00:38:14.180" end="00:38:22.340">act which is how we...remote build agent for ios.</p>
+      <p begin="00:38:22.340" end="00:38:28.370">So, let's open it up now...stan.</p>
+      <p begin="00:38:28.370" end="00:38:29.460">We'll go into platforms.</p>
+      <p begin="00:38:30.480" end="00:38:40.620">Windows.</p>
+      <p begin="00:38:40.620" end="00:38:44.260">The windows ten js project.</p>
+      <p begin="00:38:44.260" end="00:38:49.250">...operation never need to do this I'm just showing you what it is we build so that you guys</p>
+      <p begin="00:38:49.250" end="00:38:52.880">have a better understanding of how we create our...of</p>
+      <p begin="00:38:52.880" end="00:38:57.720">...apps and kind of all the pieces that go into it but you will never</p>
+      <p begin="00:38:57.720" end="00:39:01.050">need to worry about the project file for your windows</p>
+      <p begin="00:39:01.050" end="00:39:06.100">...your windows cordova app but it's fun to look around</p>
+      <p begin="00:39:06.100" end="00:39:08.880">so now instead of what we put into</p>
+      <p begin="00:39:08.880" end="00:39:10.250">...dot xml.</p>
+      <p begin="00:39:11.330" end="00:39:15.690">Your settings are in the app manifests.</p>
+      <p begin="00:39:15.690" end="00:39:20.190">We added the geo location so we have a device capability</p>
+      <p begin="00:39:20.190" end="00:39:27.390">for location that came in when we added the plug-in for geo location.</p>
+      <p begin="00:39:27.390" end="00:39:31.140">We...js for a little bit of our initialization code under</p>
+      <p begin="00:39:31.140" end="00:39:36.550">www is are index html that we wrote.</p>
+      <p begin="00:39:36.550" end="00:39:42.240">And, just...pretty this is actually a project that you could do anything you want with</p>
+      <p begin="00:39:42.240" end="00:39:46.210">just like any other windows project we can actually</p>
+      <p begin="00:39:46.210" end="00:39:49.060">deployed this...device.</p>
+      <p begin="00:39:50.090" end="00:39:51.520">And, I have here.</p>
+      <p begin="00:39:53.620" end="00:39:56.980">Switch...minute.</p>
+      <p begin="00:39:56.980" end="00:40:05.530">Unlocking I have here engineering device for windows ten phone.</p>
+      <p begin="00:40:05.530" end="00:40:25.110">To play to the device in all cross our fingers.</p>
+      <p begin="00:40:25.110" end="00:40:28.860">It takes a minute for these engineering devices to connect.</p>
+      <p begin="00:40:28.860" end="00:40:36.350">Wake-up.</p>
+      <p begin="00:40:36.350" end="00:40:40.860">You won't need to deploy from the windows</p>
+      <p begin="00:40:40.860" end="00:40:45.140">project you...do this from the cordova project.</p>
+      <p begin="00:40:45.140" end="00:40:48.930">That's true and might time.</p>
+      <p begin="00:40:48.930" end="00:40:54.300">I'm just showing you that this model has the our to let you actually take</p>
+      <p begin="00:40:54.300" end="00:40:59.150">control of that generated project but of course you're going to want</p>
+      <p begin="00:40:59.150" end="00:41:02.540">to stay in your cordova project.</p>
+      <p begin="00:41:02.540" end="00:41:18.250">Let's see if I actually.</p>
+      <p begin="00:41:18.250" end="00:41:20.540">...us one more try none.</p>
+      <p begin="00:41:20.540" end="00:41:34.150">...move on.</p>
+      <p begin="00:41:34.150" end="00:41:36.650">...so app came up.</p>
+      <p begin="00:41:36.650" end="00:41:41.130">I can click find my location and again windows...am I going to let</p>
+      <p begin="00:41:41.130" end="00:41:46.000">this app actually access my location I'll say yes and in a minute</p>
+      <p begin="00:41:46.000" end="00:41:50.890">it'll come up with my location and were running a little bit long-time so I</p>
+      <p begin="00:41:50.890" end="00:41:53.940">want use divider but I could go in...change the</p>
+      <p begin="00:41:53.940" end="00:41:59.770">background color of this app as it's running directly from visual studio.</p>
+      <p begin="00:41:59.770" end="00:42:08.680">So, great let's switch back.</p>
+      <p begin="00:42:08.680" end="00:42:13.570">Let's talk about what you guys need to be able to do development using visual studio windows,</p>
+      <p begin="00:42:13.570" end="00:42:18.230">windows...developer previous was released yesterday and if you're going to develop for windows</p>
+      <p begin="00:42:18.230" end="00:42:21.760">send me windows...and the visual studio</p>
+      <p begin="00:42:21.760" end="00:42:26.410">twenty fifteen rc is also public the...</p>
+      <p begin="00:42:26.410" end="00:42:32.670">rc is has all the...greatest bits for cordova development you can choose to the</p>
+      <p begin="00:42:32.670" end="00:42:37.390">creative a development also on visual studio twenty thirteen and download the</p>
+      <p begin="00:42:37.390" end="00:42:37.890">extension?</p>
+      <p begin="00:42:38.950" end="00:42:40.030">Either way</p>
+      <p begin="00:42:40.030" end="00:42:51.820">...the windows ten cordova platform repo ...yes.</p>
+      <p begin="00:42:51.820" end="00:42:57.190">The question is it and...of the visual studio cordova</p>
+      <p begin="00:42:57.190" end="00:43:02.190">...the tools on twenty...on visual studio twenty thirteen</p>
+      <p begin="00:43:02.190" end="00:43:08.060">...that is I believe that has...right.</p>
+      <p begin="00:43:08.060" end="00:43:12.580">Visual city twenty thirteen cordova tours.</p>
+      <p begin="00:43:12.580" end="00:43:17.450">If I can...it's...fully supported.</p>
+      <p begin="00:43:17.450" end="00:43:33.190">And, if you're going to use the new windows...go ahead.</p>
+      <p begin="00:43:33.190" end="00:43:47.240">They do actually lets.</p>
+      <p begin="00:43:47.240" end="00:43:49.670">...his question is do my html</p>
+      <p begin="00:43:49.670" end="00:43:53.560">and javascript files get bundled with the application they do they become part of</p>
+      <p begin="00:43:53.560" end="00:43:58.520">the application that is built into the web view that you deploy and then</p>
+      <p begin="00:43:58.520" end="00:44:02.660">you submit to the apple storm.</p>
+      <p begin="00:44:02.660" end="00:44:07.280">If you the change your javascript coder your html code</p>
+      <p begin="00:44:07.280" end="00:44:12.280">you rebuild your app and then you re submit to store there is</p>
+      <p begin="00:44:12.280" end="00:44:16.830">an emerging pattern of being able to use hosted content what</p>
+      <p begin="00:44:16.830" end="00:44:21.820">I think you're kind of getting at is I want real change my code without</p>
+      <p begin="00:44:21.820" end="00:44:26.750">risa meaning me to the store and that's the hosted app content</p>
+      <p begin="00:44:26.750" end="00:44:31.900">model the cordova community is building patterns around this and</p>
+      <p begin="00:44:31.900" end="00:44:35.240">we're working on ways to support well in the visual studio</p>
+      <p begin="00:44:37.550" end="00:44:42.300">...a tool set so yes, you can do this today it's a little bit</p>
+      <p begin="00:44:42.300" end="00:44:51.430">more work but ...it's pretty cool that you can kind of dynamically update your app that's running.</p>
+      <p begin="00:44:51.430" end="00:45:00.730">So, it's really hard...the...</p>
+      <p begin="00:45:00.730" end="00:45:08.870">So,...holding up tablet I think it's an android tablet...</p>
+      <p begin="00:45:08.870" end="00:45:14.600">Okay, would you tether this yes the best way to do that is to</p>
+      <p begin="00:45:14.600" end="00:45:18.900">connected device typically very a usb cable and then you</p>
+      <p begin="00:45:18.900" end="00:45:23.450">can deploy to the device and you can debug directly on the device and you</p>
+      <p begin="00:45:23.450" end="00:45:27.330">can change things as...continue essentially as</p>
+      <p begin="00:45:27.330" end="00:45:31.400">...running and see how renders on that device you also have the</p>
+      <p begin="00:45:31.400" end="00:45:35.470">option of using and emulator to run completely</p>
+      <p begin="00:45:37.020" end="00:45:40.210">on the local machine to kind of</p>
+      <p begin="00:45:40.210" end="00:45:53.140">savy that time of tether in your device and, going back and forth?</p>
+      <p begin="00:45:53.140" end="00:45:57.290">Is there a way to...crosswalk is?</p>
+      <p begin="00:45:57.290" end="00:46:01.120">One of the process of html is that html as rendered on a variety</p>
+      <p begin="00:46:01.120" end="00:46:06.100">of different rendering engines and those rendering engines rather</p>
+      <p begin="00:46:06.100" end="00:46:10.350">render things differently crosswalk is a model that takes web</p>
+      <p begin="00:46:10.350" end="00:46:14.930">kit and packages it up as part of your app and then</p>
+      <p begin="00:46:14.930" end="00:46:19.860">uses just the crosswalk html rendering engine so, you know,</p>
+      <p begin="00:46:19.860" end="00:46:25.040">across all platforms that it's rendering exactly the same he's asking if there's tooling</p>
+      <p begin="00:46:25.040" end="00:46:26.250">...video for</p>
+      <p begin="00:46:26.250" end="00:46:30.520">crosswalk there isn't specific tooling in visual studio for crosswalk</p>
+      <p begin="00:46:30.520" end="00:46:35.960">but you can take your crosswalk platform pieces and use</p>
+      <p begin="00:46:35.960" end="00:46:37.900">them inside a and app just</p>
+      <p begin="00:46:37.900" end="00:46:45.970">...you would in any other app and use it in visual studio tools.</p>
+      <p begin="00:46:45.970" end="00:46:58.510">The through the...visual studios...</p>
+      <p begin="00:47:08.040" end="00:47:08.540">Samoa.</p>
+      <p begin="00:47:15.500" end="00:47:17.190">I think you're asking two questions</p>
+      <p begin="00:47:17.190" end="00:47:24.360">one is how do we manage dependencies on an ongoing basis.</p>
+      <p begin="00:47:24.360" end="00:47:28.160">Where they end up in the file system they end up in the file system where the</p>
+      <p begin="00:47:28.160" end="00:47:37.720">...tools want to be install too so, we?</p>
+      <p begin="00:47:37.720" end="00:47:42.500">I think right now they all go by default into the visual studio path</p>
+      <p begin="00:47:42.500" end="00:47:47.320">that you've chosen so when you install you pick a visual studio drive</p>
+      <p begin="00:47:47.320" end="00:47:52.880">...it gets installed...</p>
+      <p begin="00:47:52.880" end="00:47:55.940">Yeah, so, we test all these and make sure that we're not running into</p>
+      <p begin="00:47:55.940" end="00:48:00.350">...path issues we do know that path issues can be an issue</p>
+      <p begin="00:48:00.350" end="00:48:04.650">and for what we install right now we haven't had</p>
+      <p begin="00:48:04.650" end="00:48:19.810">a issues that...precluded down to users.</p>
+      <p begin="00:48:21.850" end="00:48:27.110">we have a we are working on aasl lie to make sure that are commend linear</p>
+      <p begin="00:48:27.110" end="00:48:32.070">faces really good and that's kind of part of what we're considering we should talk specifically</p>
+      <p begin="00:48:32.070" end="00:48:41.000">about all the passing issues that you have questions on and, we can address...</p>
+      <p begin="00:48:41.000" end="00:48:45.650">And, then so, you'll go to the apache repo for</p>
+      <p begin="00:48:45.650" end="00:48:50.690">the to in progress platform.</p>
+      <p begin="00:48:50.690" end="00:48:55.230">Prototypes that we have for windows and then we just published</p>
+      <p begin="00:48:55.230" end="00:48:59.910">today a blog in visual studio blog with the step-by-step on how to use this</p>
+      <p begin="00:48:59.910" end="00:49:04.870">you can go and try it out for yourself.</p>
+      <p begin="00:49:04.870" end="00:49:06.880">Analogy seen all about</p>
+      <p begin="00:49:06.880" end="00:49:10.810">...the next natural question is window</p>
+      <p begin="00:49:10.810" end="00:49:14.670">...use cordova I have this decision between building</p>
+      <p begin="00:49:14.670" end="00:49:20.480">accord of app in building native apps when do I do one of the other.</p>
+      <p begin="00:49:20.480" end="00:49:23.220">If you want to build and app</p>
+      <p begin="00:49:23.220" end="00:49:27.060">and use your web skills your developers that</p>
+      <p begin="00:49:27.060" end="00:49:31.870">really love html and all of your assets from the web.</p>
+      <p begin="00:49:31.870" end="00:49:36.350">...make a lot of sense for you if you want that one code base</p>
+      <p begin="00:49:36.350" end="00:49:40.500">advantage across all of your devices in your targeting at least two</p>
+      <p begin="00:49:40.500" end="00:49:45.840">platforms maybe three platforms heard of a starts to give you wins.</p>
+      <p begin="00:49:45.840" end="00:49:47.190">And, if you have javascript</p>
+      <p begin="00:49:47.190" end="00:49:51.910">libraries like angular like bootstrap that you have a bunch of invested knowledge</p>
+      <p begin="00:49:51.910" end="00:49:56.230">and you really want to use this is going to be hard to use this from a</p>
+      <p begin="00:49:56.230" end="00:50:01.180">native apps occured of a gives you that ability use them.</p>
+      <p begin="00:50:01.180" end="00:50:02.780">If you have.</p>
+      <p begin="00:50:02.780" end="00:50:05.030">Apps that are.</p>
+      <p begin="00:50:05.030" end="00:50:07.850">Gaming apps for instance where performance is</p>
+      <p begin="00:50:07.850" end="00:50:11.070">v first concern for your app the</p>
+      <p begin="00:50:11.070" end="00:50:15.800">...you move up the stack for any set of frameworks the more performances</p>
+      <p begin="00:50:15.800" end="00:50:20.880">...to...this is true of cordova it's true of.</p>
+      <p begin="00:50:20.880" end="00:50:26.170">Html in general it's true of any high-level stacks so if you're</p>
+      <p begin="00:50:26.170" end="00:50:27.170">thinking,</p>
+      <p begin="00:50:27.170" end="00:50:32.040">you know, I really need every last the processor cycle</p>
+      <p begin="00:50:32.040" end="00:50:35.480">cordova might not be the right choice for your app that for</p>
+      <p begin="00:50:35.480" end="00:50:40.650">attentive apps that are kind of anything from casual gaming to</p>
+      <p begin="00:50:40.650" end="00:50:44.130">...line-of-business apps where performance is not your first</p>
+      <p begin="00:50:44.130" end="00:50:46.050">concern that maybe something a little bit</p>
+      <p begin="00:50:46.050" end="00:50:51.400">further down the line...of...something you would want to consider if you want.</p>
+      <p begin="00:50:51.400" end="00:50:54.630">Apps that do different things and act differently and</p>
+      <p begin="00:50:54.630" end="00:50:56.720">looked differently across different,</p>
+      <p begin="00:50:56.720" end="00:51:01.520">different platforms...of obviously is not what-you want-to do because you don't want that quote</p>
+      <p begin="00:51:01.520" end="00:51:06.200">base you want your ios app to behave differently from your android app</p>
+      <p begin="00:51:06.200" end="00:51:08.830">so you would probably write native ios apps</p>
+      <p begin="00:51:08.830" end="00:51:14.190">and native android apps if you super-duper love java and</p>
+      <p begin="00:51:14.190" end="00:51:19.010">objective see and the direct...then you probably want to</p>
+      <p begin="00:51:19.010" end="00:51:22.580">retinas so go ahead and write native apps and if you</p>
+      <p begin="00:51:22.580" end="00:51:26.250">find yourself saying well actually what I love is example and csharp.</p>
+      <p begin="00:51:27.460" end="00:51:30.990">I would encourage you to take a look at cameron because amr analyze you to do</p>
+      <p begin="00:51:30.990" end="00:51:36.050">cross platform apps using...csharp and sample and with a</p>
+      <p begin="00:51:36.050" end="00:51:41.850">lot of the benefits of cordova with a different programming language.</p>
+      <p begin="00:51:41.850" end="00:51:42.890">And, if you really,</p>
+      <p begin="00:51:42.890" end="00:51:48.690">really have deep integration with the platform things like</p>
+      <p begin="00:51:48.690" end="00:51:49.180">the direct</p>
+      <p begin="00:51:49.180" end="00:51:54.210">...rendering pipeline if you're doing shatters for instance crevices probably not the way, you know,</p>
+      <p begin="00:51:54.210" end="00:52:01.990">...you need to talk directly to the operating system sagan need to go native.</p>
+      <p begin="00:52:01.990" end="00:52:06.240">He is really serious...of us here microsoft</p>
+      <p begin="00:52:06.240" end="00:52:10.440">why do you care well we want developers to have the very</p>
+      <p begin="00:52:10.440" end="00:52:13.540">best experience both in visual studio but also</p>
+      <p begin="00:52:13.540" end="00:52:18.660">for windows we know that people want to build creative apps so we...be</p>
+      <p begin="00:52:18.660" end="00:52:24.710">greater windows and we want all developers to come to visual studio so visual</p>
+      <p begin="00:52:24.710" end="00:52:29.540">studios been investing in this for a year-and-a-half we've been working really closely with</p>
+      <p begin="00:52:29.540" end="00:52:31.250">us g team and the</p>
+      <p begin="00:52:31.250" end="00:52:35.090">...has been investing in cordova for longer they've they were</p>
+      <p begin="00:52:35.090" end="00:52:40.040">very closely tied to the original windows eight in windows platforms.</p>
+      <p begin="00:52:40.040" end="00:52:44.660">And, have been great partners for visual studio in doing all the things we want</p>
+      <p begin="00:52:44.660" end="00:52:50.210">to do to make the creative a platform for windows even better we are working on</p>
+      <p begin="00:52:50.210" end="00:52:54.660">feature investments for visual studio things like improve command</p>
+      <p begin="00:52:54.660" end="00:53:00.680">line interfaces and interop with other command lines for cordova and</p>
+      <p begin="00:53:00.680" end="00:53:03.160">...build path for ios?</p>
+      <p begin="00:53:03.160" end="00:53:05.800">And, more app services</p>
+      <p begin="00:53:05.800" end="00:53:10.260">for things like the three sixty five and app</p>
+      <p begin="00:53:10.260" end="00:53:17.740">insights many of these you can do today we want to make them even smoother for you to build to build.</p>
+      <p begin="00:53:17.740" end="00:53:22.570">things that windows have done over the last year so within windows</p>
+      <p begin="00:53:22.570" end="00:53:26.690">tends to make the creative a platform even better the hosted app</p>
+      <p begin="00:53:26.690" end="00:53:31.490">content model that we talked about where you can kind of dynamically update your</p>
+      <p begin="00:53:31.490" end="00:53:36.820">content is something that we worked really hard in partnership with os...</p>
+      <p begin="00:53:36.820" end="00:53:42.270">any...web...support so that in multiple web</p>
+      <p begin="00:53:42.270" end="00:53:48.060">views you can actually access...rt was a big thing for os</p>
+      <p begin="00:53:48.060" end="00:53:52.610">...and they really did it so that we could do the</p>
+      <p begin="00:53:52.610" end="00:53:58.130">court ofapp model well we re design security model so that things</p>
+      <p begin="00:53:58.130" end="00:54:01.890">like html or no longer an issue for developers</p>
+      <p begin="00:54:01.890" end="00:54:09.390">and then they also are contributing their code back to os...visual studios.</p>
+      <p begin="00:54:09.390" end="00:54:11.740">We are really excited to have sales forces</p>
+      <p begin="00:54:11.740" end="00:54:16.650">a partner building on top of the windows ten platform today you guys probably saw</p>
+      <p begin="00:54:16.650" end="00:54:19.980">in the keynote that sales forces building</p>
+      <p begin="00:54:19.980" end="00:54:24.910">...force one as...that for windows ten some of their</p>
+      <p begin="00:54:24.910" end="00:54:27.920">cordova investments allow their sales</p>
+      <p begin="00:54:27.920" end="00:54:32.740">first sdk to run across windows ten and android</p>
+      <p begin="00:54:32.740" end="00:54:37.650">...and the ios using cordova and they've been great plot the</p>
+      <p begin="00:54:37.650" end="00:54:46.900">partners in helping us...out some of the issues and,being just general early adopters.</p>
+      <p begin="00:54:46.900" end="00:54:51.470">One of the things we hear a lot is that building your uri</p>
+      <p begin="00:54:51.470" end="00:54:56.240">for across platform is difficult there are</p>
+      <p begin="00:54:56.240" end="00:55:00.430">libraries out there that help bridge this specifically for cordova</p>
+      <p begin="00:55:00.430" end="00:55:00.930">applications.</p>
+      <p begin="00:55:02.500" end="00:55:06.000">And, on the racy unseen ui and on the left uci</p>
+      <p begin="00:55:06.000" end="00:55:10.530">enc both of those libraries have created templates for new</p>
+      <p begin="00:55:10.530" end="00:55:12.980">projects which you can get within the visual</p>
+      <p begin="00:55:12.980" end="00:55:17.970">studio gallery today to help you get started using those controls that</p>
+      <p begin="00:55:17.970" end="00:55:23.410">rendell in a platform specific way on each of the apps...each</p>
+      <p begin="00:55:23.410" end="00:55:28.980">...platforms so that dror control for instance that you see on the right in</p>
+      <p begin="00:55:28.980" end="00:55:33.980">the ios simulator is a very popular pattern that is meant to look like</p>
+      <p begin="00:55:33.980" end="00:55:39.020">the ios pattern and will render a little bit differently on android similarly for</p>
+      <p begin="00:55:39.020" end="00:55:42.070">...so encourage if you want to use those</p>
+      <p begin="00:55:43.270" end="00:55:49.190">libraries to use the visual studio templates in the gallery?</p>
+      <p begin="00:55:49.190" end="00:55:52.510">More resources the apache...a website has a</p>
+      <p begin="00:55:52.510" end="00:55:56.740">...of documentation on how cordova works.</p>
+      <p begin="00:55:56.740" end="00:56:01.240">And, the visual studio cordova site has a lot of documentation on how you</p>
+      <p begin="00:56:01.240" end="00:56:03.460">can use it within visual studio</p>
+      <p begin="00:56:03.460" end="00:56:07.460">our blog for visual studio has close to</p>
+      <p begin="00:56:07.460" end="00:56:11.210">weekly updates on things that we're doing with cordova tooling</p>
+      <p begin="00:56:11.210" end="00:56:15.940">...a great resource for how to use and news windows ten</p>
+      <p begin="00:56:15.940" end="00:56:20.880">...center for anything that is windows specific the</p>
+      <p begin="00:56:20.880" end="00:56:25.200">development and information is where you still go you</p>
+      <p begin="00:56:25.200" end="00:56:30.670">guys have probably been to windows...before...learn</p>
+      <p begin="00:56:30.670" end="00:56:35.630">...of a youtube videos is something we have a series of seven videos on youtube</p>
+      <p begin="00:56:35.630" end="00:56:40.760">...help you put together cordova app on visual studio sessions</p>
+      <p begin="00:56:40.760" end="00:56:43.880">a build yes I know wednesday at eleven thirty is coming</p>
+      <p begin="00:56:43.880" end="00:56:48.970">gone but if you guys go online all of the sessions are going to</p>
+      <p begin="00:56:48.970" end="00:56:54.840">be online and one of my colleagues hat did an overview</p>
+      <p begin="00:56:54.840" end="00:56:59.600">on of different types of mobile development across</p>
+      <p begin="00:56:59.600" end="00:57:06.770">platforms so included ...cplus-plus as well tomorrow my</p>
+      <p begin="00:57:06.770" end="00:57:11.540">colleague brian is doing a talk specifically on the performance of</p>
+      <p begin="00:57:11.540" end="00:57:15.270">...apps showing a lot of numbers and a lot of research that</p>
+      <p begin="00:57:15.270" end="00:57:20.620">we've done on how...apps...perform across...encourage you to check</p>
+      <p begin="00:57:20.620" end="00:57:25.390">that that's a really great talk and you can always current financial languages</p>
+      <p begin="00:57:25.390" end="00:57:27.790">booth some of the languages because I'm also a</p>
+      <p begin="00:57:27.790" end="00:57:33.780">take script kristen setup and current find me and ask me stuff.</p>
+      <p begin="00:57:33.780" end="00:57:37.190">And, that's it you guys have questions.</p>
+      <p begin="00:57:38.600" end="00:57:49.840">I'd love to hear them and of course evaluating.</p>
+      <p begin="00:57:49.840" end="00:57:52.240">Thanks every I know...so enjoy the party.</p>
+
+    </div>
+  </body>
+</tt>

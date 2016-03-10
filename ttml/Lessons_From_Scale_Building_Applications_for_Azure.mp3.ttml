@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.927</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.700" end="00:00:11.440">The keynote really got you'll just up...</p>
+      <p begin="00:00:11.440" end="00:00:15.870">...better still not great or the keynote either just exhausted with all</p>
+      <p begin="00:00:15.870" end="00:00:20.540">the cool stuff that we announced and...you how many people have been</p>
+      <p begin="00:00:20.540" end="00:00:23.110">the build before static curiosity</p>
+      <p begin="00:00:23.110" end="00:00:29.540">okay pretty good repeat audience how many people have written application fragile before.</p>
+      <p begin="00:00:29.540" end="00:00:33.450">How many people are writing applications res right now...part of your job?</p>
+      <p begin="00:00:33.450" end="00:00:36.890">Ok, target audience that's good to see welcome to</p>
+      <p begin="00:00:36.890" end="00:00:40.890">lessen building applications rather lessons from scale my name is...image</p>
+      <p begin="00:00:40.890" end="00:00:44.820">...ceo for measure and what I'm going to share with you</p>
+      <p begin="00:00:44.820" end="00:00:48.210">the next sixty-minutes are some?</p>
+      <p begin="00:00:48.210" end="00:00:52.940">Tips on how to...design and application not just roger but just for cloud in</p>
+      <p begin="00:00:52.940" end="00:00:59.040">general of course I'll be focusing on address specific features rather than using other clouds but there's a number of</p>
+      <p begin="00:00:59.040" end="00:01:03.900">lessens a number of best practices that you're probably already familiar with that I'm not going to bore you</p>
+      <p begin="00:01:03.900" end="00:01:08.670">with like automation is great for cloud development and reproducibility</p>
+      <p begin="00:01:08.670" end="00:01:13.040">...great for...them...scaling out we all know that we can't scale-up anymore it's time to</p>
+      <p begin="00:01:13.040" end="00:01:17.670">scale out we've got at...are systems and production it's not good enough to</p>
+      <p begin="00:01:17.670" end="00:01:22.330">tasked in our own environments because what the world throws atis is something that we can't</p>
+      <p begin="00:01:22.330" end="00:01:27.250">simulate especially in the type site the application lifecycle.</p>
+      <p begin="00:01:27.250" end="00:01:31.700">That we've got today a agile development pushing things to the cloud.</p>
+      <p begin="00:01:31.700" end="00:01:33.360">Deploy early deploy often</p>
+      <p begin="00:01:33.360" end="00:01:37.750">this means small incremental updates rather than big monolithic updates every now and</p>
+      <p begin="00:01:37.750" end="00:01:41.720">then and that is great for helping you understand where there's a problem.</p>
+      <p begin="00:01:41.720" end="00:01:44.130">Exactly what it is rather than trying to finish it out of</p>
+      <p begin="00:01:44.130" end="00:01:47.770">a whole massive bunch of features and changes that have gone</p>
+      <p begin="00:01:47.770" end="00:01:53.440">into deployment but there's lots of other rules and that's what I'm going to spend the next sixty-minutes showing</p>
+      <p begin="00:01:53.440" end="00:01:58.420">you with real-world examples these are all actual stories from</p>
+      <p begin="00:01:58.420" end="00:02:03.640">as your customers they're all from the customer</p>
+      <p begin="00:02:03.640" end="00:02:08.400">advisory team this cat it's called the cat team and this is a team that is part of adder</p>
+      <p begin="00:02:08.400" end="00:02:12.530">it's sits in the engineering team but it's really are interface</p>
+      <p begin="00:02:12.530" end="00:02:17.240">with customers if you remember the movie office space they're the guys that</p>
+      <p begin="00:02:17.240" end="00:02:22.240">sit between engineering customers and actually they do a really good</p>
+      <p begin="00:02:22.240" end="00:02:27.080">...server really get purpose in this case which is to work with strategic customers</p>
+      <p begin="00:02:27.080" end="00:02:29.200">and interesting projects.</p>
+      <p begin="00:02:29.200" end="00:02:32.160">To understand how they're using our</p>
+      <p begin="00:02:32.160" end="00:02:37.080">product and how we can make it easier for them to user product in a couple different ways by providing</p>
+      <p begin="00:02:37.080" end="00:02:41.770">architectural guidance like I'm going to be doing here but also coming back to the engineering team and saying hey when they</p>
+      <p begin="00:02:41.770" end="00:02:46.270">try to use this service with this other one okay so that was</p>
+      <p begin="00:02:46.270" end="00:02:51.540">probably msit doing weird things on my system there trying to use this component with</p>
+      <p begin="00:02:51.540" end="00:02:54.520">other component that the there's a big impedance</p>
+      <p begin="00:02:54.520" end="00:03:02.370">...and engineering you guys need to go ad these features and make these connections more seamless?</p>
+      <p begin="00:03:02.370" end="00:03:03.690">The names of the customers on a</p>
+      <p begin="00:03:03.690" end="00:03:07.670">...except for one case that's a public customer that's.</p>
+      <p begin="00:03:07.670" end="00:03:13.440">Actually said it's ok to talk about their name as we go through this but.</p>
+      <p begin="00:03:13.440" end="00:03:19.270">I'm not going to spend time showing you the details of the names I will talk about the scenarios and I'll</p>
+      <p begin="00:03:19.270" end="00:03:24.380">talk about the actual applications that...developed and the</p>
+      <p begin="00:03:24.380" end="00:03:30.890">usage but if you've got a case that you come across yourself and</p>
+      <p begin="00:03:30.890" end="00:03:35.870">you're willing to share your name that be great because everybody likes to see who the real people are behind these kinds of stories I</p>
+      <p begin="00:03:35.870" end="00:03:39.680">want to say that this...been possible without the catching they.</p>
+      <p begin="00:03:39.680" end="00:03:43.610">Provided a tremendous amount of supporting collecting this kinds of cases in working with me</p>
+      <p begin="00:03:43.610" end="00:03:48.250">...digest them into the nuggets that would be interesting for an audience like this and they</p>
+      <p begin="00:03:48.250" end="00:03:53.290">also helped me produce some demonstrations that will show you with synthetic kind</p>
+      <p begin="00:03:53.290" end="00:03:59.320">of representations of the kind of not best practice performance that we saw from these</p>
+      <p begin="00:03:59.320" end="00:04:03.790">customers compared to what you get when you follow best practices so I'll be showing some</p>
+      <p begin="00:04:03.790" end="00:04:06.250">live demonstrations of that as well as we</p>
+      <p begin="00:04:06.250" end="00:04:11.040">go through here so let's get started this first cases a moving streaming company</p>
+      <p begin="00:04:11.040" end="00:04:14.300">that's a pretty big-name although not in the united states</p>
+      <p begin="00:04:14.300" end="00:04:17.350">...streaming company in europe and they started out as a</p>
+      <p begin="00:04:17.350" end="00:04:22.870">startup but five years ago for five years ago and they were one of the first kind</p>
+      <p begin="00:04:22.870" end="00:04:28.560">of interesting startups that showed up on...and we worked closely with them to make them successful</p>
+      <p begin="00:04:28.560" end="00:04:33.480">...the became successful enough that about a year-ago they were acquired by one of the largest</p>
+      <p begin="00:04:33.480" end="00:04:38.010">depart a retail store chains in the world a company called</p>
+      <p begin="00:04:38.010" end="00:04:40.680">...and this company right here is called</p>
+      <p begin="00:04:40.680" end="00:04:45.350">black box which does movie streaming...based out of the uk.</p>
+      <p begin="00:04:45.350" end="00:04:51.150">So, let's talk a little bit about this case they wanted they started up of course...in the</p>
+      <p begin="00:04:51.150" end="00:04:55.900">...so they went full paths and when you go full paths and measure today?</p>
+      <p begin="00:04:55.900" end="00:04:59.280">...means web roles worker roles asher database and</p>
+      <p begin="00:04:59.280" end="00:05:02.030">...storage and the</p>
+      <p begin="00:05:02.030" end="00:05:06.890">struct the architecture that they came up with is that viewers would come to the web role.</p>
+      <p begin="00:05:06.890" end="00:05:10.780">They had w staff protocol between the web role in the work role how many people have used</p>
+      <p begin="00:05:10.780" end="00:05:18.950">...windows communication foundation how many people like wpf.</p>
+      <p begin="00:05:18.950" end="00:05:23.440">Okay, everybody's entitled to their opinion.</p>
+      <p begin="00:05:23.440" end="00:05:26.290">So, they were using...promoting over tcp</p>
+      <p begin="00:05:26.290" end="00:05:31.100">...the web and worker role and they built a custom cash inside the work</p>
+      <p begin="00:05:31.100" end="00:05:34.670">...the cache the movie metadata so when a custom would come and say I want to</p>
+      <p begin="00:05:34.670" end="00:05:39.520">check-up the movies they would know exactly where to go in as your blob storage</p>
+      <p begin="00:05:39.520" end="00:05:42.020">...get the appropriate movie</p>
+      <p begin="00:05:42.020" end="00:05:46.170">and start streaming all that metadata was stored in the database so if there was a</p>
+      <p begin="00:05:46.170" end="00:05:50.870">cash mass than the metadata would be loaded from the database a pretty simple.</p>
+      <p begin="00:05:50.870" end="00:05:55.160">Architecture now the of course designing for cloud you need to</p>
+      <p begin="00:05:55.160" end="00:05:58.410">...for failures and one of the failures that they had designed for</p>
+      <p begin="00:05:58.410" end="00:06:02.870">whiz what happens if the cash query.</p>
+      <p begin="00:06:02.870" end="00:06:08.110">Times out what if it takes too long to query the cash from that front-end well in that</p>
+      <p begin="00:06:08.110" end="00:06:12.970">case they would go right to the database from the...if it took more than two seconds.</p>
+      <p begin="00:06:12.970" end="00:06:16.010">So, let's see what happened.</p>
+      <p begin="00:06:16.010" end="00:06:20.940">Or what kind of problems that kind of architecture produces</p>
+      <p begin="00:06:20.940" end="00:06:25.280">the issue is that there's kind of plan failures as well as unplanned failures in</p>
+      <p begin="00:06:25.280" end="00:06:28.970">...and one of the kinds of plan failures is if all...one of those worker</p>
+      <p begin="00:06:28.970" end="00:06:34.280">roles is getting recycled and now you've got load balance or</p>
+      <p begin="00:06:34.280" end="00:06:36.920">timeout you're moving between one work</p>
+      <p begin="00:06:36.920" end="00:06:41.900">...and that is going down for an update and another one that's healthy and that starts to</p>
+      <p begin="00:06:41.900" end="00:06:45.930">cause the front-ends that...talking to that work role in the cache there to start going directly</p>
+      <p begin="00:06:45.930" end="00:06:50.870">the database and what they found is as they started up and they were doing some</p>
+      <p begin="00:06:50.870" end="00:06:54.850">loads testing and production with real customers is that when</p>
+      <p begin="00:06:54.850" end="00:06:58.120">...activity when they were updating their roles or their host</p>
+      <p begin="00:06:58.120" end="00:07:02.040">...was being up against what is being updated that they would end up</p>
+      <p begin="00:07:02.040" end="00:07:06.320">making the database fall over and customers would start stop?</p>
+      <p begin="00:07:06.320" end="00:07:11.140">Having being able to query the movie information so the solution for this was</p>
+      <p begin="00:07:11.140" end="00:07:16.010">pretty straightforward exactly what you would think they added a cash to the front-ends.</p>
+      <p begin="00:07:16.010" end="00:07:19.500">And, that buffered against this kind of back-end</p>
+      <p begin="00:07:20.980" end="00:07:25.220">...so pretty straightforward case but again one of the things I want</p>
+      <p begin="00:07:25.220" end="00:07:28.640">to emphasize here is that these are real customers these are real</p>
+      <p begin="00:07:28.640" end="00:07:32.080">architects like you that are really making relapse they've</p>
+      <p begin="00:07:32.080" end="00:07:36.980">got the point where the apps are up and running and then they run into problems and at this point.</p>
+      <p begin="00:07:36.980" end="00:07:39.310">They're sitting here saying what is the</p>
+      <p begin="00:07:39.310" end="00:07:43.970">problem how do I make the performance of this thing better how do I work around this and that's when they</p>
+      <p begin="00:07:43.970" end="00:07:47.430">...so these are want cases where it looks obvious</p>
+      <p begin="00:07:47.430" end="00:07:51.330">in retrospect...all of these are going to look obvious and retrospect and that's really the</p>
+      <p begin="00:07:51.330" end="00:07:55.880">way architecture works out when you start with about architecture and you don't understand...</p>
+      <p begin="00:07:55.880" end="00:08:00.640">architecture and then you figure out why it's bad it's like obvious and so.</p>
+      <p begin="00:08:00.640" end="00:08:03.170">Again, you're looking here and I</p>
+      <p begin="00:08:03.170" end="00:08:09.110">think come to the end of this talk and say okay I didn't really learn anything but I hope you do</p>
+      <p begin="00:08:09.110" end="00:08:13.030">learned something here because even just looking at a case like this is</p>
+      <p begin="00:08:13.030" end="00:08:18.100">going to make you think as you go through your architecture design I remember that problem that</p>
+      <p begin="00:08:18.100" end="00:08:22.770">link box ran into where they didn't have caches to buffer against the case...worker roles</p>
+      <p begin="00:08:22.770" end="00:08:27.870">...in the middle of being updated so I need to think about that particular scenario ahead of time</p>
+      <p begin="00:08:27.870" end="00:08:33.530">rather than get the architecture up and running and then run into this in production this next case</p>
+      <p begin="00:08:33.530" end="00:08:40.300">is customer that does election tracking and...hired by the state governments to</p>
+      <p begin="00:08:40.300" end="00:08:46.099">track elections this was back in twenty twelve this particular</p>
+      <p begin="00:08:46.099" end="00:08:51.089">case the customer created a service to track and report the live tally a</p>
+      <p begin="00:08:51.089" end="00:08:55.439">...of the elections at the time across the</p>
+      <p begin="00:08:55.439" end="00:09:00.369">local state and the national level and this was being deployed for a</p>
+      <p begin="00:09:00.369" end="00:09:06.580">very large united states state.</p>
+      <p begin="00:09:06.580" end="00:09:11.360">And, there was...elections and that year one is the september primaries and they serve that</p>
+      <p begin="00:09:11.360" end="00:09:12.880">one just fine but</p>
+      <p begin="00:09:12.880" end="00:09:16.560">...the national action came up they were concerned about whether</p>
+      <p begin="00:09:16.560" end="00:09:21.480">their architecture would survive the load and of course serving the state election results to the</p>
+      <p begin="00:09:21.480" end="00:09:25.240">...with a huge responsibility for them because voters are looking what's</p>
+      <p begin="00:09:25.240" end="00:09:30.100">going on wanting to understand if their candidates are winning and if that election</p>
+      <p begin="00:09:30.100" end="00:09:34.200">site went down that election results site went down then everybody's kind of in</p>
+      <p begin="00:09:34.200" end="00:09:37.330">the dark the presses in the dark as well so</p>
+      <p begin="00:09:37.330" end="00:09:44.720">they wanted to make sure that they absolutely had everything button down for this national election.</p>
+      <p begin="00:09:44.720" end="00:09:48.860">Question was...architecture...that's when they called</p>
+      <p begin="00:09:48.860" end="00:09:53.700">...team just to make sure that it would really scale so the cat team comes in</p>
+      <p begin="00:09:53.700" end="00:09:58.580">and here's the architecture that they found so they've got a whole bunch of precincts that are collection collecting revolts</p>
+      <p begin="00:09:58.580" end="00:10:03.510">...locally and those precincts are uploading...voting results to</p>
+      <p begin="00:10:03.510" end="00:10:08.510">asher blobs and they're partitions so that a number of precincts or uploading</p>
+      <p begin="00:10:08.510" end="00:10:15.660">...blob blobs in different storage accounts and then you've got worker</p>
+      <p begin="00:10:15.660" end="00:10:22.390">...sucking from the blobs and sticking the aggregated results into adrg database.</p>
+      <p begin="00:10:22.390" end="00:10:24.670">...come in from the front through</p>
+      <p begin="00:10:24.670" end="00:10:29.030">a load balance or they hit a web role and the web role is then</p>
+      <p begin="00:10:29.030" end="00:10:33.200">querying the database for the results to show them what the results are that they're interested in so they're</p>
+      <p begin="00:10:33.200" end="00:10:38.960">going and saying hey who's winning in my county, for example.</p>
+      <p begin="00:10:38.960" end="00:10:43.160">They also in this is kind of not material to this particular lesson but should to show you</p>
+      <p begin="00:10:43.160" end="00:10:46.480">what customer like this that is really concerned about being</p>
+      <p begin="00:10:46.480" end="00:10:50.540">resilient through a major event like this and actually just anybody that's got</p>
+      <p begin="00:10:50.540" end="00:10:54.690">emission critical application how you might design your application for disaster</p>
+      <p begin="00:10:54.690" end="00:10:59.810">recovery is that they deployed to versions to instances of that same architecture</p>
+      <p begin="00:10:59.810" end="00:11:01.520">...self-centered us and want</p>
+      <p begin="00:11:01.520" end="00:11:06.460">to north-central us exactly the same deployments that only differences they...they had</p>
+      <p begin="00:11:06.460" end="00:11:11.300">...warm fail over system here where the worker role in the</p>
+      <p begin="00:11:11.300" end="00:11:16.150">primary which was started out as south-central us would not only dump to the local database</p>
+      <p begin="00:11:16.150" end="00:11:20.630">ritz deployment but also...the aggregated results into the database across the</p>
+      <p begin="00:11:20.630" end="00:11:25.140">country into north-central us so if there was a problem they would just simply fail over</p>
+      <p begin="00:11:25.140" end="00:11:31.960">and they used after measure traffic manager do dns fail over.</p>
+      <p begin="00:11:31.960" end="00:11:34.300">So, if measure traffic manager was having trouble talking</p>
+      <p begin="00:11:34.300" end="00:11:39.300">to south-central us it would automatically fail over dns to north-central us the results would still</p>
+      <p begin="00:11:39.300" end="00:11:45.440">would be there and voter results would pick up where they left off.</p>
+      <p begin="00:11:45.440" end="00:11:50.380">Each web request in this architecture as the catching dug in to the code results</p>
+      <p begin="00:11:50.380" end="00:11:54.150">intense equal queries so it's go get the customer go get the</p>
+      <p begin="00:11:54.150" end="00:11:59.620">county go get the voter information go get the county go get the results</p>
+      <p begin="00:11:59.620" end="00:12:02.800">for whatever precinct get the results for the national level</p>
+      <p begin="00:12:02.800" end="00:12:07.590">...a whole bunch of different queries are involved in reporting the results to</p>
+      <p begin="00:12:07.590" end="00:12:13.220">the user so the load estimates for the november election that they came up with</p>
+      <p begin="00:12:13.220" end="00:12:16.210">...an average of.</p>
+      <p begin="00:12:16.210" end="00:12:16.960">Ten million.</p>
+      <p begin="00:12:18.050" end="00:12:21.900">Expected page views on average with a</p>
+      <p begin="00:12:21.900" end="00:12:25.640">...in one-hour of six millionso,</p>
+      <p begin="00:12:25.640" end="00:12:28.920">ten million over the for our time that people would start to look at the results of</p>
+      <p begin="00:12:28.920" end="00:12:33.720">...of six million and just multiplying out the number of database requested see</p>
+      <p begin="00:12:33.720" end="00:12:38.310">they came up with about sixteen thousand seventeen thousand date queries</p>
+      <p begin="00:12:38.310" end="00:12:43.740">per database that they had configure at the peak the problem is that they</p>
+      <p begin="00:12:43.740" end="00:12:48.570">...database that they were using scales only five thousand connections and a</p>
+      <p begin="00:12:48.570" end="00:12:53.420">hundred eighty concurrent requests with a hundred eighty a hundred requests per second.</p>
+      <p begin="00:12:53.420" end="00:12:56.470">A little bit lower than what</p>
+      <p begin="00:12:57.580" end="00:13:02.280">...projection set so they said okay so we've got we do have a problem with this architecture</p>
+      <p begin="00:13:02.280" end="00:13:09.290">we need to drastically change it to be able to handle this kind of...that we're going to see the november election.</p>
+      <p begin="00:13:09.290" end="00:13:13.440">So, the solution again this is another case of caching is let's prakash between the</p>
+      <p begin="00:13:13.440" end="00:13:18.460">front-end and the database and make sure that cash can deliver forty thousand</p>
+      <p begin="00:13:18.460" end="00:13:23.170">request for instance which is how many request they could get off of a web role.</p>
+      <p begin="00:13:23.170" end="00:13:28.460">Talking to a worker role where the worker role is doing local caching.</p>
+      <p begin="00:13:28.460" end="00:13:33.110">So, this at the time was asher cash now they be using...cash as...cash to do</p>
+      <p begin="00:13:33.110" end="00:13:38.100">this kind of caching between the web role in the database so now the voters are</p>
+      <p begin="00:13:38.100" end="00:13:44.450">talking to these caches that are then faltering and from the database when necessary.</p>
+      <p begin="00:13:44.450" end="00:13:47.730">They skin scale it out each one of these worker...and you can see this is the exact</p>
+      <p begin="00:13:47.730" end="00:13:51.340">apology for worker roles times forty thousand requested each can</p>
+      <p begin="00:13:51.340" end="00:13:55.920">handle second hundred sixty thousand requests so how this do that's architecture</p>
+      <p begin="00:13:55.920" end="00:14:00.880">they came up with looked like on paper would meet the election results the</p>
+      <p begin="00:14:00.880" end="00:14:04.670">cat team so this is the actual...the of the traffic's</p>
+      <p begin="00:14:04.670" end="00:14:07.600">...saw on election night you can</p>
+      <p begin="00:14:07.600" end="00:14:14.220">see that for some reason my animations got lost but you can see...that at eight o'clock.</p>
+      <p begin="00:14:14.220" end="00:14:20.310">That was the peak voting time they hit forty five thousand concurrent requests.</p>
+      <p begin="00:14:20.310" end="00:14:23.830">Swf significantly lower than a hundred sixty thousand that</p>
+      <p begin="00:14:23.830" end="00:14:28.420">they budgeted for plenty ahead room so they planned a core okay, but,</p>
+      <p begin="00:14:28.420" end="00:14:33.290">when you go back and look at what how it performed with the original architecture you can</p>
+      <p begin="00:14:33.290" end="00:14:38.160">see the over the course of that election night how many request</p>
+      <p begin="00:14:38.160" end="00:14:40.750">they would not have been able to serve without original architecture</p>
+      <p begin="00:14:40.750" end="00:14:46.360">in the worst-case five hundred-thousand requests would not have been served that's those negatives</p>
+      <p begin="00:14:46.360" end="00:14:49.770">and parentheses and how did it really do with the cash</p>
+      <p begin="00:14:49.770" end="00:14:54.740">...is what they saw everything and green this eight plus ten seconds</p>
+      <p begin="00:14:54.740" end="00:14:59.250">where the negative there that's estimated capacity that's that was estimate that's not what they really stop</p>
+      <p begin="00:14:59.250" end="00:15:05.480">it the results spoke for themselves they were able to handle the load completely so this these</p>
+      <p begin="00:15:05.480" end="00:15:08.390">were the analysis that they did before and after with the</p>
+      <p begin="00:15:08.390" end="00:15:12.380">cash so cashing a great?</p>
+      <p begin="00:15:12.380" end="00:15:17.300">Way to...performance and let's just show you an example of caching</p>
+      <p begin="00:15:17.300" end="00:15:21.890">and I'll show you this example for that will demonstrate the our of caching as well as demonstrates</p>
+      <p begin="00:15:21.890" end="00:15:28.130">...other capabilities that you can take advantage of when you're working on applications.</p>
+      <p begin="00:15:28.130" end="00:15:35.130">Imagine what I've got here...application side-by-side.</p>
+      <p begin="00:15:35.130" end="00:15:42.810">Get the so I can.</p>
+      <p begin="00:15:42.810" end="00:15:46.100">You can see that this is a bunch of database query</p>
+      <p begin="00:15:46.100" end="00:15:50.830">...bunch of queries get customer get employee so the front-ends for this particular application for each</p>
+      <p begin="00:15:50.830" end="00:15:55.250">request comes in from a client is going to perform a number of these different queries like getting a</p>
+      <p begin="00:15:55.250" end="00:15:58.890">custom id getting employee id and.</p>
+      <p begin="00:15:58.890" end="00:16:03.340">This is the...function on the non cash side so this is just a</p>
+      <p begin="00:16:03.340" end="00:16:07.300">straightforward query for into the database to get</p>
+      <p begin="00:16:07.300" end="00:16:14.220">the customer information on this right side we've got a little bit of a different architecture.</p>
+      <p begin="00:16:14.220" end="00:16:18.030">...can't see what I'm doing when I zoom like that.</p>
+      <p begin="00:16:18.030" end="00:16:20.190">Let me show you here this is get</p>
+      <p begin="00:16:20.190" end="00:16:24.480">customer right here and you can see that we've got</p>
+      <p begin="00:16:24.480" end="00:16:29.840">...highlight this code snippet so this is cashed customer</p>
+      <p begin="00:16:29.840" end="00:16:36.060">repository and here we try to get the result from the cash before.</p>
+      <p begin="00:16:36.060" end="00:16:39.760">If they can only...cash is...does it go to the database</p>
+      <p begin="00:16:39.760" end="00:16:43.970">...database hit is then going to result in that query getting cashed</p>
+      <p begin="00:16:43.970" end="00:16:48.850">in the database so this is the side-by-side comparison we're going to perform</p>
+      <p begin="00:16:48.850" end="00:16:52.130">and what I'm going to do for you is exercise?</p>
+      <p begin="00:16:53.450" end="00:16:57.300">This live.</p>
+      <p begin="00:16:57.300" end="00:17:00.960">I've got another vm here.</p>
+      <p begin="00:17:00.960" end="00:17:02.720">And, this vm.</p>
+      <p begin="00:17:02.720" end="00:17:07.010">Has load generator configured it and let me show you how easy it</p>
+      <p begin="00:17:07.010" end="00:17:11.940">is to configure...generator in visual studio so I'm going</p>
+      <p begin="00:17:11.940" end="00:17:12.710">to go to?</p>
+      <p begin="00:17:13.790" end="00:17:19.299">This no cash example I'm going to select...</p>
+      <p begin="00:17:19.299" end="00:17:23.409">Select load test and then there's a little wizard</p>
+      <p begin="00:17:23.409" end="00:17:27.409">...you through the low test and you can see here there's a number of different options</p>
+      <p begin="00:17:27.409" end="00:17:31.629">use recorded thing times use normal distribution on recorded things times do</p>
+      <p begin="00:17:31.629" end="00:17:37.530">not use recorded thing times we're just going to let the normal distribution here.</p>
+      <p begin="00:17:37.530" end="00:17:42.330">There's constant load you can also have step loads if you want to...load ramping up and see</p>
+      <p begin="00:17:42.330" end="00:17:48.730">the behavior of that or constant load you can base the result the test makes modeled on total number</p>
+      <p begin="00:17:48.730" end="00:17:50.390">...on the number of virtual users.</p>
+      <p begin="00:17:51.520" end="00:17:54.240">So, bunch of different options here and then.</p>
+      <p begin="00:17:54.240" end="00:18:01.520">You add one or more task to the...so I'm going to add one here.</p>
+      <p begin="00:18:01.520" end="00:18:04.910">And, that's gives you an idea of I pressed okay we would be just be</p>
+      <p begin="00:18:04.910" end="00:18:09.780">creating a new load test right there that would be able to run against the...I've already can rated a couple of</p>
+      <p begin="00:18:09.780" end="00:18:17.430">...tasks one to that will hit both the...on cashed load set up here.</p>
+      <p begin="00:18:17.430" end="00:18:21.270">And, that is right here and that can cash no cash case we're going to hit the</p>
+      <p begin="00:18:21.270" end="00:18:24.530">no cash apple application with is this scenario right</p>
+      <p begin="00:18:24.530" end="00:18:28.800">here attest mixed that shows us that we're going to do a bunch of those queries</p>
+      <p begin="00:18:28.800" end="00:18:33.210">for simulating the fact that for every user query when I hit every</p>
+      <p begin="00:18:33.210" end="00:18:38.930">one of these methods that's going to end up hitting the database.</p>
+      <p begin="00:18:38.930" end="00:18:43.260">And, one of the things I can show you here is if I say...on.</p>
+      <p begin="00:18:43.260" end="00:18:47.130">...here and select this</p>
+      <p begin="00:18:47.130" end="00:18:49.550">one of the other things that you can do.</p>
+      <p begin="00:18:49.550" end="00:18:52.890">Is you can see that the cashed get customer low test here is hitting</p>
+      <p begin="00:18:52.890" end="00:18:57.830">url so this is where we got the app running and the query</p>
+      <p begin="00:18:57.830" end="00:19:02.640">here is get customer id and then there's an idea here we're going to do?</p>
+      <p begin="00:19:02.640" end="00:19:06.930">Is an whatever he does configure a random?</p>
+      <p begin="00:19:06.930" end="00:19:09.140">Id so you specify in</p>
+      <p begin="00:19:09.140" end="00:19:13.960">this web test plug-in you can specify how you want.</p>
+      <p begin="00:19:13.960" end="00:19:16.000">Values to get plugged into the url.</p>
+      <p begin="00:19:17.260" end="00:19:18.080">So, that id,</p>
+      <p begin="00:19:18.080" end="00:19:23.110">for example, we wanted to be a random aidid selected from our customer database</p>
+      <p begin="00:19:23.110" end="00:19:26.150">...customer database...start eleven thousand go</p>
+      <p begin="00:19:26.150" end="00:19:30.770">up to eleven thousand three hundred seventy six that's the number of ideas that we populate in the database some</p>
+      <p begin="00:19:30.770" end="00:19:35.200">...have the load tasked whenever it generates a query.</p>
+      <p begin="00:19:35.200" end="00:19:40.980">Fill in that id with a random value from that range.</p>
+      <p begin="00:19:40.980" end="00:19:45.110">And, that's how easy it is to general a load test.</p>
+      <p begin="00:19:45.110" end="00:19:55.550">The other thing you can do...you can have.</p>
+      <p begin="00:19:55.550" end="00:20:00.420">You can have visual studio generate the low test or you can...have the local machine generate the</p>
+      <p begin="00:20:00.420" end="00:20:05.700">...test now I'm going to have the local machine generate the load test.</p>
+      <p begin="00:20:05.700" end="00:20:10.730">And, to do that and, this is basically hit run so this is the cash side over here this is the</p>
+      <p begin="00:20:10.730" end="00:20:14.340">cash side over here we're going to fire up this low test.</p>
+      <p begin="00:20:14.340" end="00:20:24.230">Low test on both sides and in a second here graph is going to pop open.</p>
+      <p begin="00:20:24.230" end="00:20:31.370">Haven't seen this...before?</p>
+      <p begin="00:20:31.370" end="00:20:39.650">Let's see if that ...running makes that go away.</p>
+      <p begin="00:20:39.650" end="00:20:45.340">You know, retry is another lesson from the...and there we go networks.</p>
+      <p begin="00:20:45.340" end="00:20:54.760">So,...know what just happened but whatever it is we got it working.</p>
+      <p begin="00:20:54.760" end="00:20:57.860">Now...running I want to show you something really quick and how easy it is to have</p>
+      <p begin="00:20:57.860" end="00:21:01.860">a visual studio generate these loads here you can see that</p>
+      <p begin="00:21:01.860" end="00:21:04.890">when I have the load when I configured...test</p>
+      <p begin="00:21:04.890" end="00:21:09.810">...might local load test configuration says run the load locally so</p>
+      <p begin="00:21:09.810" end="00:21:13.260">this rd svm this one vm hitting both and on</p>
+      <p begin="00:21:13.260" end="00:21:19.070">...and cashed websites with low generated here but you can also easily</p>
+      <p begin="00:21:19.070" end="00:21:22.450">configured to have visual studio generate the load test?</p>
+      <p begin="00:21:22.450" end="00:21:25.830">And, that's going to become interesting here as we look at the output of this</p>
+      <p begin="00:21:25.830" end="00:21:26.740">date result.</p>
+      <p begin="00:21:27.940" end="00:21:32.470">We've got the to loads firing up here and the results which shows us pages per</p>
+      <p begin="00:21:32.470" end="00:21:32.970">second.</p>
+      <p begin="00:21:33.980" end="00:21:38.460">And, the response time as wellboth of the on the left side the non</p>
+      <p begin="00:21:38.460" end="00:21:41.670">...case and...case on the right side.</p>
+      <p begin="00:21:41.670" end="00:21:47.380">They kind of dull looked at dissimilar until you look at the scales.</p>
+      <p begin="00:21:47.380" end="00:21:51.640">Which is something that you gotta watch out for these load test results because the scale here in</p>
+      <p begin="00:21:51.640" end="00:21:56.380">pages per second the range from the top to the...to the bottom as a thousand and over</p>
+      <p begin="00:21:56.380" end="00:21:59.870">here the pages per second the top range from the top-to-bottom as a hundred?</p>
+      <p begin="00:22:00.900" end="00:22:04.670">So, in that is this green-line here so we're hitting close to forty thousand</p>
+      <p begin="00:22:04.670" end="00:22:07.800">requests per second over here on this side were hiding</p>
+      <p begin="00:22:07.800" end="00:22:12.770">around ten you can see the average is ten so this</p>
+      <p begin="00:22:12.770" end="00:22:18.010">is quite a dramatic difference of throughput that we're getting between the</p>
+      <p begin="00:22:18.010" end="00:22:23.820">...in on...case and you can see that the throughput continues to go up as a...gets populated.</p>
+      <p begin="00:22:23.820" end="00:22:26.790">On each of those database...</p>
+      <p begin="00:22:26.790" end="00:22:32.460">So, that's a look at.</p>
+      <p begin="00:22:32.460" end="00:22:36.220">And, the behavior of cashed in on cashed in front of a</p>
+      <p begin="00:22:36.220" end="00:22:41.660">database kind of obvious and...again this is one of those things that on local</p>
+      <p begin="00:22:41.660" end="00:22:45.990">small-scale application you don't typically need to worry about putting a</p>
+      <p begin="00:22:45.990" end="00:22:48.950">...from the database the databases a high-performance database you</p>
+      <p begin="00:22:48.950" end="00:22:53.130">can scale it up to meet your needs and hit as hard as you can now when you're in</p>
+      <p begin="00:22:53.130" end="00:22:57.770">a clouding you're talking to paths database you get a certain amount of throughput your scaling out typically</p>
+      <p begin="00:22:57.770" end="00:23:02.650">...like in a case like this to a larger architecture then you might have design for on</p>
+      <p begin="00:23:02.650" end="00:23:07.450">...so this is where you start to need to worry about caches this next case is a</p>
+      <p begin="00:23:07.450" end="00:23:12.580">customer that was basically lipton...customer they...application architecture that they</p>
+      <p begin="00:23:12.580" end="00:23:18.970">wanted to move the klout and they said well we're moving into the cloud let's modernizing.</p>
+      <p begin="00:23:18.970" end="00:23:19.760">And, this company.</p>
+      <p begin="00:23:20.770" end="00:23:24.930">It's a company that makes plans for buildings</p>
+      <p begin="00:23:24.930" end="00:23:29.090">...basically...civil engineering spatial infrastructure they wanted</p>
+      <p begin="00:23:29.090" end="00:23:33.970">this leverage all the coolest technology dot net sequel password possible and they were</p>
+      <p begin="00:23:33.970" end="00:23:38.200">shooting for the performance of their existing performance a common request and requirement when you're moving</p>
+      <p begin="00:23:38.200" end="00:23:42.890">...cloud is I want at least as good performances and getting on cram.</p>
+      <p begin="00:23:42.890" end="00:23:46.980">So, here's where they started moving...dot net.</p>
+      <p begin="00:23:46.980" end="00:23:49.760">Code to a web role move the application logic</p>
+      <p begin="00:23:49.760" end="00:23:54.680">to worker role move sequel to add your database or sorry and I as</p>
+      <p begin="00:23:54.680" end="00:23:59.990">sql memory so this is a case where they had application compatibility requirements on sequel</p>
+      <p begin="00:23:59.990" end="00:24:05.400">...met at the time by advert database pushing them into this.</p>
+      <p begin="00:24:05.400" end="00:24:08.420">Now what they did they got this.</p>
+      <p begin="00:24:08.420" end="00:24:12.030">Scale results were disappointing.</p>
+      <p begin="00:24:12.030" end="00:24:16.500">On prim thirty thousand thirty three thousand counts for.</p>
+      <p begin="00:24:17.510" end="00:24:20.400">Batch test run total counts on as</p>
+      <p begin="00:24:20.400" end="00:24:23.780">...ten thousand on interactive</p>
+      <p begin="00:24:23.780" end="00:24:28.370">workload hundred fourteen thousand was the throughput forty thousand what is what they got</p>
+      <p begin="00:24:28.370" end="00:24:32.870">a manager so drastic difference in performance that's when</p>
+      <p begin="00:24:32.870" end="00:24:38.290">they called in measure cat and the on...architecture had a combined web</p>
+      <p begin="00:24:38.290" end="00:24:42.580">and app server and this inner role communication that they...when</p>
+      <p begin="00:24:42.580" end="00:24:47.180">...the cloud was causing a lot of round-trip...between the web role in the worker role.</p>
+      <p begin="00:24:47.180" end="00:24:52.070">So, they collapsed the web and worker role at that point in time.</p>
+      <p begin="00:24:52.070" end="00:24:54.420">And, the storage...wasn't really optimized for</p>
+      <p begin="00:24:54.420" end="00:24:59.210">...usage so when what they done it was configure storage</p>
+      <p begin="00:24:59.210" end="00:25:04.590">bases...server two thousand twelve rtwo...use...striking the default</p>
+      <p begin="00:25:04.590" end="00:25:08.690">column that storage places gives you and they put both of the tempt the</p>
+      <p begin="00:25:08.690" end="00:25:11.770">database hd and the tempt...</p>
+      <p begin="00:25:11.770" end="00:25:17.950">Phd on the same storage space volume and that resulted in this...throughput</p>
+      <p begin="00:25:17.950" end="00:25:23.620">that they saw that they got of eighteen hundred...megabytes per second as.</p>
+      <p begin="00:25:23.620" end="00:25:28.640">Your cat came and said there's a better way to scale this out so let's put some more</p>
+      <p begin="00:25:28.640" end="00:25:30.640">disks under this and let's get the column count</p>
+      <p begin="00:25:30.640" end="00:25:36.520">raised on storage spaces and let's put those separate db that separate</p>
+      <p begin="00:25:36.520" end="00:25:37.510">On separate</p>
+      <p begin="00:25:37.510" end="00:25:43.330">...on the same...combine them into one...one volume.</p>
+      <p begin="00:25:43.330" end="00:25:46.150">And, what they got here was fifty three hundred</p>
+      <p begin="00:25:46.150" end="00:25:50.620">apps and three hundred megabytes per second so drastic improvement just by re architect</p>
+      <p begin="00:25:50.620" end="00:25:54.300">...the storage underneath the ins</p>
+      <p begin="00:25:54.300" end="00:25:58.870">disks to better take advantage of the performance characteristics of</p>
+      <p begin="00:25:58.870" end="00:26:03.050">...disks up in adder?</p>
+      <p begin="00:26:03.050" end="00:26:06.920">So, here's the performance test results that they saw at this</p>
+      <p begin="00:26:06.920" end="00:26:11.800">point this is on the far-left what they saw on cram in the middle</p>
+      <p begin="00:26:11.800" end="00:26:16.670">is what they saw and that first architecture with the throughput that I showed you</p>
+      <p begin="00:26:16.670" end="00:26:21.590">in on the right is what they got with this revised architecture collapsing the web</p>
+      <p begin="00:26:21.590" end="00:26:26.360">and worker role making the storage space stripes whiter and putting those to</p>
+      <p begin="00:26:26.360" end="00:26:27.050">...those</p>
+      <p begin="00:26:27.050" end="00:26:32.150">...databases on this to...on the same volume or to databases on the same volume and</p>
+      <p begin="00:26:32.150" end="00:26:37.740">they got this level...performance that actually slightly exceeded what they saw on prom so</p>
+      <p begin="00:26:37.740" end="00:26:41.740">a modern application now with the exception of really the iso role they had web</p>
+      <p begin="00:26:41.740" end="00:26:44.800">role basically in the front...so they were taking advantage of</p>
+      <p begin="00:26:44.800" end="00:26:50.230">...butperformance on a lipton shift application moving the cloud that</p>
+      <p begin="00:26:50.230" end="00:26:55.120">...with this on...</p>
+      <p begin="00:26:55.120" end="00:26:56.830">Is a company?</p>
+      <p begin="00:26:57.920" end="00:27:02.180">That it uses a high a hybrid architecture or</p>
+      <p begin="00:27:02.180" end="00:27:06.400">hybrid paths architecture to pulled data from lots of client</p>
+      <p begin="00:27:06.400" end="00:27:08.880">endpoints mobile devices as well as web</p>
+      <p begin="00:27:08.880" end="00:27:13.730">browsers click activity from users and then feeds that into</p>
+      <p begin="00:27:13.730" end="00:27:18.020">analytics system that does targeted ads for those particular users through</p>
+      <p begin="00:27:18.020" end="00:27:23.360">an at opt in app that those users put on their systems and...one of</p>
+      <p begin="00:27:23.360" end="00:27:25.850">leaders in that space.</p>
+      <p begin="00:27:25.850" end="00:27:29.600">And, the architecture works like this they've got local.</p>
+      <p begin="00:27:30.790" end="00:27:35.490">On prim sources that are pulling this data from devices around the</p>
+      <p begin="00:27:35.490" end="00:27:36.760">world.</p>
+      <p begin="00:27:36.760" end="00:27:41.640">Putting...files and uploading...menagerie blobs.</p>
+      <p begin="00:27:41.640" end="00:27:46.470">And, then they're importing that into asher database within ingestion worker role that's reading from the blogs</p>
+      <p begin="00:27:46.470" end="00:27:48.120">...shredding</p>
+      <p begin="00:27:48.120" end="00:27:53.860">the cthree files and sticking those into the database they also</p>
+      <p begin="00:27:53.860" end="00:27:58.770">needed a severing...trailing aggregate view for analytics so</p>
+      <p begin="00:27:58.770" end="00:28:02.940">that they could understand how they were doing in terms of responsiveness</p>
+      <p begin="00:28:02.940" end="00:28:07.870">...the users clicking on the target ads and for that they used html site</p>
+      <p begin="00:28:07.870" end="00:28:11.810">in cloud ml to analyze the previous seven days.</p>
+      <p begin="00:28:11.810" end="00:28:16.580">So, here's the challenge that they ran into when they started with this architecture the</p>
+      <p begin="00:28:16.580" end="00:28:18.050">sourced data hundred</p>
+      <p begin="00:28:18.050" end="00:28:21.190">csp files coming from the different sites that they had.</p>
+      <p begin="00:28:22.230" end="00:28:29.020">Roughly ten megabytes twelve hundred one-point-four gigabytes and size of each...file.</p>
+      <p begin="00:28:29.020" end="00:28:34.100">...average total ingest per day was around forty gigabytes.</p>
+      <p begin="00:28:34.100" end="00:28:39.070">So, they wrote this is a huge amount of data be ingesting up in adder into the database so they wrote a</p>
+      <p begin="00:28:39.070" end="00:28:42.140">custom et up process using sequel book copy</p>
+      <p begin="00:28:42.140" end="00:28:45.560">and the problem was that even with that the ingest.</p>
+      <p begin="00:28:46.820" end="00:28:49.330">Took thirty seven hours.</p>
+      <p begin="00:28:49.330" end="00:28:55.360">So, if you do the math here it kind of doesn't work out.</p>
+      <p begin="00:28:55.360" end="00:28:59.850">So, what did he...that the asher database is a scale architecture</p>
+      <p begin="00:28:59.850" end="00:29:04.390">not scale-up architecture so the first thing they did was move the database to</p>
+      <p begin="00:29:04.390" end="00:29:08.100">agile premium, premium skew of the database this-is before we</p>
+      <p begin="00:29:08.100" end="00:29:11.340">have the latest skews this-is about a year-and-a-half</p>
+      <p begin="00:29:11.340" end="00:29:15.910">ago and this is actually the golden rule right here</p>
+      <p begin="00:29:15.910" end="00:29:22.940">for getting great performance I'll just pay more money and go up to the next highest?</p>
+      <p begin="00:29:22.940" end="00:29:25.200">I'm just kidding but in some cases it is</p>
+      <p begin="00:29:25.200" end="00:29:29.790">the most efficient way to address the problem is just you might be at the...performance</p>
+      <p begin="00:29:29.790" end="00:29:34.380">of the offering and that's just not enough to cut the what your shooting</p>
+      <p begin="00:29:34.380" end="00:29:39.520">for so you might need to move up or consider moving up rather than trying to</p>
+      <p begin="00:29:39.520" end="00:29:44.070">work around the...performance you're going to get that lower tier and see if you can solve the problem in</p>
+      <p begin="00:29:44.070" end="00:29:49.420">other ways sometimes just throwing money at the problem's going to save in a...term.</p>
+      <p begin="00:29:49.420" end="00:29:53.860">They also paralyze that it upload by scaling up the worker role to...streams instead of just having one worker</p>
+      <p begin="00:29:53.860" end="00:29:58.760">...sucking...up so they partition those blobs...worker role another worker</p>
+      <p begin="00:29:58.760" end="00:30:04.390">roles are independently sucking data up from those blobs and then they also instead of talking things in</p>
+      <p begin="00:30:04.390" end="00:30:07.580">the database they create one table per day</p>
+      <p begin="00:30:08.770" end="00:30:13.330">in different what instead of stick everything into one table</p>
+      <p begin="00:30:13.330" end="00:30:18.110">and one database they created multiple databases one for each day so when they're</p>
+      <p begin="00:30:18.110" end="00:30:22.770">ingesting they just jump into that days database that...sorry table.</p>
+      <p begin="00:30:22.770" end="00:30:26.580">And, then they've got an aggregate or on top that is look that is pulling</p>
+      <p begin="00:30:26.580" end="00:30:31.560">and aggregating across the previous seven days so the next day comes over once they got the pipeline full of</p>
+      <p begin="00:30:31.560" end="00:30:35.060">seven days the next comes in they toss the</p>
+      <p begin="00:30:35.060" end="00:30:39.390">...all this day and then they aggregate a runs over the latest seven days to</p>
+      <p begin="00:30:39.390" end="00:30:45.150">get that aggregated view that they're going to do the html site machine learning on top of and the result is</p>
+      <p begin="00:30:45.150" end="00:30:49.550">that this optimized architecture the upload took less than three hours.</p>
+      <p begin="00:30:49.550" end="00:30:53.350">And, they were able to analyze all of that data and get their daily...</p>
+      <p begin="00:30:54.500" end="00:30:58.270">For those analytics that they needed.</p>
+      <p begin="00:30:58.270" end="00:31:02.290">So, the conclusion on this one paralyzing this is</p>
+      <p begin="00:31:02.290" end="00:31:06.710">kind of another example partitioning the problem</p>
+      <p begin="00:31:06.710" end="00:31:11.340">partitioning the database to partitioning...blah-blah-blah...with those worker roles</p>
+      <p begin="00:31:11.340" end="00:31:16.330">and then instead of just having a one giant table of data and then having to</p>
+      <p begin="00:31:16.330" end="00:31:20.900">go and delete roles that are older than seven days partition that also</p>
+      <p begin="00:31:20.900" end="00:31:24.120">...different tables because that's your problem is really day it's a</p>
+      <p begin="00:31:24.120" end="00:31:29.930">daily problem not a full arbitrary amount of time problem so you can optimize your</p>
+      <p begin="00:31:29.930" end="00:31:33.770">sequel for this kind of solution this next</p>
+      <p begin="00:31:33.770" end="00:31:37.110">cases car company it's a telematics car company.</p>
+      <p begin="00:31:38.180" end="00:31:41.540">That has services where they pull data from cars.</p>
+      <p begin="00:31:42.730" end="00:31:44.790">And, stick it and process...</p>
+      <p begin="00:31:44.790" end="00:31:49.770">and gives users information about the cars give dealers information about the cars and what they</p>
+      <p begin="00:31:49.770" end="00:31:55.400">want to do is create a solution on the agile cloud by leveraging underpass services?</p>
+      <p begin="00:31:55.400" end="00:32:00.010">So, to do this here's the architecture data admin web role and I'm</p>
+      <p begin="00:32:00.010" end="00:32:04.420">showing you the full architecture here there's pieces not involved with the direct promises to give an idea that these are real</p>
+      <p begin="00:32:04.420" end="00:32:09.070">architectures and the pieces that they make-up they've got a user services web role that's where users</p>
+      <p begin="00:32:09.070" end="00:32:13.900">can go get informations about their car they've got the cars themselves the cars are pumping</p>
+      <p begin="00:32:13.900" end="00:32:20.160">data into the cloud using service bus and you can see that there's a bunch of</p>
+      <p begin="00:32:20.160" end="00:32:24.220">worker...here that are processing that data so they've got a message processor worker role that</p>
+      <p begin="00:32:24.220" end="00:32:28.430">pull that's actually reading the data off of the service...notification work</p>
+      <p begin="00:32:28.430" end="00:32:32.020">role that's got rules-based on those messages that are</p>
+      <p begin="00:32:32.020" end="00:32:36.330">...that the message processor is sending it so,</p>
+      <p begin="00:32:36.330" end="00:32:41.100">for example, if the car...low oil maybe that's an alert and that's</p>
+      <p begin="00:32:41.100" end="00:32:44.830">a message that came in through the service plus q and then they've also got a</p>
+      <p begin="00:32:44.830" end="00:32:47.640">cash as well and sitting in front of a database</p>
+      <p begin="00:32:47.640" end="00:32:51.540">...dumping information about what the cars how the</p>
+      <p begin="00:32:51.540" end="00:32:55.380">...performing in its history of notifications so they did have a</p>
+      <p begin="00:32:55.380" end="00:33:01.030">cash but now let's talk about what they saw performance measurements showed that it was</p>
+      <p begin="00:33:01.030" end="00:33:03.780">far less than their target of ten thousand</p>
+      <p begin="00:33:03.780" end="00:33:06.340">requests per second that they wanted come from cars.</p>
+      <p begin="00:33:07.350" end="00:33:09.130">They...a few problems when the captain</p>
+      <p begin="00:33:09.130" end="00:33:13.240">came and they identified with this one is synchronous message processing</p>
+      <p begin="00:33:13.240" end="00:33:17.160">so those if you go back to this architecture that message processor.</p>
+      <p begin="00:33:18.220" end="00:33:22.670">Although scaled out each one of those worker roles with sitting and pulling one message off</p>
+      <p begin="00:33:22.670" end="00:33:28.820">the q processing it and then going back in getting the next one.</p>
+      <p begin="00:33:28.820" end="00:33:33.510">So, you've got the serial flow of messages going into the message processor the</p>
+      <p begin="00:33:33.510" end="00:33:36.860">fix for this one was to have asynchronous are batch</p>
+      <p begin="00:33:36.860" end="00:33:40.930">...so that multiple messages would be delivered in one shot through the</p>
+      <p begin="00:33:40.930" end="00:33:45.620">q to the worker role when data read from the service</p>
+      <p begin="00:33:45.620" end="00:33:50.740">...q we get a several messages rather than just one in one shot.</p>
+      <p begin="00:33:50.740" end="00:33:56.010">The second problem is that processing one by one that they were doing so yes you can batch it</p>
+      <p begin="00:33:56.010" end="00:34:00.590">...that...the round trips to the service...q but if you're going to go</p>
+      <p begin="00:34:00.590" end="00:34:05.820">process those messages serially you still have a bottleneck there.</p>
+      <p begin="00:34:05.820" end="00:34:09.320">So, the thanks for this concurrently process those messages,</p>
+      <p begin="00:34:09.320" end="00:34:13.790">messages come in a batch fire off processing for each one can concurrently</p>
+      <p begin="00:34:13.790" end="00:34:15.750">and asynchronous like.</p>
+      <p begin="00:34:15.750" end="00:34:16.870">And, this</p>
+      <p begin="00:34:18.160" end="00:34:22.880">the solutions these to fix that I showed you here also relatively obvious but a lot of people you service</p>
+      <p begin="00:34:22.880" end="00:34:27.780">plus without thinking about these kinds of challenges in these kind of bottlenecks you can create when you use it</p>
+      <p begin="00:34:27.780" end="00:34:32.170">in...straightforward manner here's a link to guidance on using</p>
+      <p begin="00:34:32.170" end="00:34:36.720">service bus effectively which includes things like using concurrency and using...</p>
+      <p begin="00:34:36.720" end="00:34:41.150">asynchronous processing like I've shown you here and I've got an example</p>
+      <p begin="00:34:41.150" end="00:34:44.670">of how this team dramatically impact processing.</p>
+      <p begin="00:34:46.060" end="00:34:49.059">To show you here.</p>
+      <p begin="00:34:49.059" end="00:34:51.499">By the way.</p>
+      <p begin="00:34:51.499" end="00:34:53.950">Take a look.</p>
+      <p begin="00:34:53.950" end="00:34:59.270">And, this is the serial worker role and this is.</p>
+      <p begin="00:34:59.270" end="00:35:02.410">Asynchronous worker role.</p>
+      <p begin="00:35:02.410" end="00:35:06.280">Sorry patchwork role is what I want here.</p>
+      <p begin="00:35:06.280" end="00:35:11.050">Now in this left side this is reading from the message but the service</p>
+      <p begin="00:35:11.050" end="00:35:13.220">...here one message processing</p>
+      <p begin="00:35:13.220" end="00:35:18.170">the message now this is a synthetic app so the amount of time that it's going to</p>
+      <p begin="00:35:18.170" end="00:35:21.960">take the process that messages actually coming in the message that the load generator sending it's a</p>
+      <p begin="00:35:21.960" end="00:35:26.110">low generative saying hey here's a message spend half a second processing</p>
+      <p begin="00:35:26.110" end="00:35:28.120">...second processing this message...</p>
+      <p begin="00:35:28.120" end="00:35:33.640">simulate that you're actually got real stuff to do on that back-end and then there's progress tracker that</p>
+      <p begin="00:35:33.640" end="00:35:39.000">...see how fast progress this makes churning through the messages that</p>
+      <p begin="00:35:39.000" end="00:35:44.070">...generators going to throw it on this right side...</p>
+      <p begin="00:35:45.290" end="00:35:49.230">The similar loop with one key difference.</p>
+      <p begin="00:35:49.230" end="00:35:52.340">Well, right here there's two one is that</p>
+      <p begin="00:35:52.340" end="00:35:54.510">we're firing off the.</p>
+      <p begin="00:35:55.670" end="00:36:01.920">Message the processing asynchronous lee and the second is that we configured the service</p>
+      <p begin="00:36:01.920" end="00:36:05.570">bus q to give up to fifty messages in each</p>
+      <p begin="00:36:05.570" end="00:36:08.960">shot so batch them up into fifty messages</p>
+      <p begin="00:36:08.960" end="00:36:13.700">each time that we go read from the service plus q now we gets fifty of the</p>
+      <p begin="00:36:13.700" end="00:36:18.620">q and fire them off the processing of them all off asynchronous</p>
+      <p begin="00:36:18.620" end="00:36:23.920">...so now we can have up to fifty being processed at once we're on the left side each one is</p>
+      <p begin="00:36:23.920" end="00:36:29.090">done serially one by one if we take a look at the load of our</p>
+      <p begin="00:36:29.090" end="00:36:35.010">I've already run this the...generator.</p>
+      <p begin="00:36:35.010" end="00:36:41.560">Results loaded.</p>
+      <p begin="00:36:41.560" end="00:36:46.020">Here's the synchronous load test and.</p>
+      <p begin="00:36:46.020" end="00:36:49.530">Usually asynchronous load test.</p>
+      <p begin="00:36:49.530" end="00:36:50.550">And, what we're looking at</p>
+      <p begin="00:36:50.550" end="00:36:55.030">is the performance and again the interesting thing?</p>
+      <p begin="00:36:55.030" end="00:36:59.480">Here to note is...that.</p>
+      <p begin="00:36:59.480" end="00:37:03.710">...to do that...</p>
+      <p begin="00:37:03.710" end="00:37:07.770">Trying to...get so I consuming for you.</p>
+      <p begin="00:37:07.770" end="00:37:09.830">Is that the?</p>
+      <p begin="00:37:09.830" end="00:37:14.670">Scales on these graphs are very different if we take a look at the average response time for the</p>
+      <p begin="00:37:14.670" end="00:37:19.440">serial case you can see that the average is about twenty seconds and that's because load</p>
+      <p begin="00:37:19.440" end="00:37:27.220">...load...saying it's picking random load somewhere between fifteen and twenty.</p>
+      <p begin="00:37:27.220" end="00:37:44.000">Average response time per second.</p>
+      <p begin="00:37:44.000" end="00:37:48.980">...sorry I'm showing...results that would help.</p>
+      <p begin="00:37:48.980" end="00:37:50.200">This is the</p>
+      <p begin="00:37:50.200" end="00:37:54.580">...this is the next test sorry about that I'm showing you her own test.</p>
+      <p begin="00:37:54.580" end="00:37:58.030">That helps getting my demos confused here.</p>
+      <p begin="00:37:58.030" end="00:38:01.380">What I wanted to show you?</p>
+      <p begin="00:38:01.380" end="00:38:12.670">Is I think this is other actually on the other vm?</p>
+      <p begin="00:38:12.670" end="00:38:17.120">Here we go here's the back here is this is actual live...</p>
+      <p begin="00:38:17.120" end="00:38:23.710">start not this the can...which is going to be the next...preview the next results for you.</p>
+      <p begin="00:38:23.710" end="00:38:28.400">But, this one is the service...batch versus...the load</p>
+      <p begin="00:38:28.400" end="00:38:32.590">task is going to generate a hundred messages give it to the one that's doing</p>
+      <p begin="00:38:32.590" end="00:38:37.180">say a serialized request and give it to the one that's doing is asynchronous request</p>
+      <p begin="00:38:37.180" end="00:38:41.190">...just press the button this is...the live production as</p>
+      <p begin="00:38:41.190" end="00:38:56.970">your service and this was just show us the results if it behaves for us.</p>
+      <p begin="00:38:56.970" end="00:39:04.480">So, something's going wrong with the...and try that again.</p>
+      <p begin="00:39:04.480" end="00:39:14.380">...serially one serial one seems to not be responding.</p>
+      <p begin="00:39:14.380" end="00:39:17.690">Let's write one more time this is...risk of doing live demos.</p>
+      <p begin="00:39:18.740" end="00:39:22.830">Is that the...sometimes...on you and punish you?</p>
+      <p begin="00:39:22.830" end="00:39:25.330">And, what...I guess maybe let's just pretend</p>
+      <p begin="00:39:25.330" end="00:39:31.490">ethereal one is going to take forever because it's so inefficient?</p>
+      <p begin="00:39:31.490" end="00:39:34.840">And, that's the lesson...don't do it serially.</p>
+      <p begin="00:39:34.840" end="00:39:38.200">...the actual results here would be that the</p>
+      <p begin="00:39:38.200" end="00:39:40.440">and normal perform behaviors that this one</p>
+      <p begin="00:39:40.440" end="00:39:48.770">tech actually that and take thirty five seconds or something that took like three seconds.</p>
+      <p begin="00:39:48.770" end="00:39:51.180">All right so that...really</p>
+      <p begin="00:39:51.180" end="00:39:55.720">funny is going on with this because that is like three seconds not thirty five seconds</p>
+      <p begin="00:39:55.720" end="00:40:00.720">and over here we should see about ten seconds or twelve seconds rather than three thirty</p>
+      <p begin="00:40:00.720" end="00:40:04.850">five seconds so something funny going on with that demo but.</p>
+      <p begin="00:40:04.850" end="00:40:07.800">You get the idea batching set of perform</p>
+      <p begin="00:40:07.800" end="00:40:14.110">things sequentially this next cases a company that makes thermostat for buildings.</p>
+      <p begin="00:40:15.160" end="00:40:18.560">They got tempt thermometers all over the place</p>
+      <p begin="00:40:18.560" end="00:40:22.530">...buildings not just one per building but obviously on dot lots of different places the</p>
+      <p begin="00:40:22.530" end="00:40:27.110">...the basement in the different rooms in the hallways and they report the temperature these</p>
+      <p begin="00:40:27.110" end="00:40:30.750">...smart thermostat to cloud service now the</p>
+      <p begin="00:40:30.750" end="00:40:35.390">...service is the point where building managers and</p>
+      <p begin="00:40:35.390" end="00:40:39.980">the built the building customers can interact with hvac systems in those buildings</p>
+      <p begin="00:40:39.980" end="00:40:44.740">...the building managers can look at the result of the thermostat the results coming from the</p>
+      <p begin="00:40:44.740" end="00:40:49.710">thermostat and understand...is the building operating efficiently...my paying too much money on cooling</p>
+      <p begin="00:40:49.710" end="00:40:54.920">and when the weather it's nice and cool outside maybe that template the</p>
+      <p begin="00:40:54.920" end="00:40:59.480">air-conditioning up too high and customers can go in there configure where they like the heating</p>
+      <p begin="00:40:59.480" end="00:41:04.290">cooling to be by looking at the building temperatures that are being reported by these thermometers</p>
+      <p begin="00:41:04.290" end="00:41:09.110">...this was a big product launch for...cloud service to do this at massive scale across other</p>
+      <p begin="00:41:09.110" end="00:41:13.860">buildings rather than kind of having the on premises deployments they had all over scattered all over the place</p>
+      <p begin="00:41:13.860" end="00:41:21.130">the initial product failed to reach their goals which was thirty five thousand connected thermostat?</p>
+      <p begin="00:41:21.130" end="00:41:22.580">Their target.</p>
+      <p begin="00:41:22.580" end="00:41:27.180">Was a hundred-thousand...stretch goals hundred-fifty thousand so that's when they brought in the</p>
+      <p begin="00:41:27.180" end="00:41:30.460">...team to help them with the architecture and here's architecture that they had</p>
+      <p begin="00:41:30.460" end="00:41:36.890">course they've got hvac systems and buildings with thermometers they've got a building router.</p>
+      <p begin="00:41:36.890" end="00:41:40.740">That is then collecting information's kind of a local gateway that's</p>
+      <p begin="00:41:40.740" end="00:41:43.460">aggregating is temperature results from the different devices in</p>
+      <p begin="00:41:43.460" end="00:41:48.300">the building and setting them up to a web role using synchronous http.</p>
+      <p begin="00:41:48.300" end="00:41:55.700">Not that that's a warning right there dumping it into a database and then.</p>
+      <p begin="00:41:55.700" end="00:41:59.880">Worker roles all over the web roles also processing the temperatures</p>
+      <p begin="00:41:59.880" end="00:42:01.330">...the other information coming from</p>
+      <p begin="00:42:01.330" end="00:42:04.960">...hvac systems and dumping alerts into asher</p>
+      <p begin="00:42:04.960" end="00:42:06.400">...which would then</p>
+      <p begin="00:42:06.400" end="00:42:10.670">email things alert notifications to the dealers and hra</p>
+      <p begin="00:42:10.670" end="00:42:13.940">...on prom smtp using on that prime smtp</p>
+      <p begin="00:42:13.940" end="00:42:16.930">...they also another web role which was the user interface</p>
+      <p begin="00:42:16.930" end="00:42:21.610">...customers in the building using a devices to go and look at the what's going on</p>
+      <p begin="00:42:21.610" end="00:42:26.500">...building change things and that was also could talking to the agile database to get</p>
+      <p begin="00:42:26.500" end="00:42:30.090">information one of the settings in the building what's the history the what's been going on</p>
+      <p begin="00:42:30.090" end="00:42:34.980">that building and then I mention that they also correlate this with the weather so</p>
+      <p begin="00:42:34.980" end="00:42:39.970">the users can understand the weather and also the hvac systems can respond to the weather ahead of time as well if it</p>
+      <p begin="00:42:39.970" end="00:42:45.210">knows that's going to...ninety degrees...by ten o'clock in the morning let's start to cranked...</p>
+      <p begin="00:42:45.210" end="00:42:49.970">or up at nine o'clock so that it can be still cool when the temperatures rising ahead of</p>
+      <p begin="00:42:49.970" end="00:42:54.730">time so that's a quick look at the architecture and here's the initial performance</p>
+      <p begin="00:42:54.730" end="00:42:59.320">low test results that you can see the read our successful request you can see that</p>
+      <p begin="00:42:59.320" end="00:43:05.800">we're getting up to about a thousand requests per second and then at the...that...an anomaly of the</p>
+      <p begin="00:43:05.800" end="00:43:10.600">...and then at the bottom you also see this low-grade blue line which</p>
+      <p begin="00:43:10.600" end="00:43:13.910">are http five hundreds anybody know...http five hundred...</p>
+      <p begin="00:43:14.970" end="00:43:17.640">...internal server error.</p>
+      <p begin="00:43:17.640" end="00:43:21.970">So, really not scaling well.</p>
+      <p begin="00:43:21.970" end="00:43:26.760">The biggest issue in this architecture was the one that I flag for-you which is the synchronous http handler on the</p>
+      <p begin="00:43:26.760" end="00:43:31.590">front-end talking to those clients systems so they change the catching</p>
+      <p begin="00:43:31.590" end="00:43:34.310">cayman hey let's change this so only the interactive</p>
+      <p begin="00:43:34.310" end="00:43:39.010">cruiser synchronous only the ones were customers are actually clearing or</p>
+      <p begin="00:43:39.010" end="00:43:43.320">what results and back need to be synchronous the ones where they're changing things</p>
+      <p begin="00:43:43.320" end="00:43:46.690">...ones where it's ingest of information those don't need to</p>
+      <p begin="00:43:46.690" end="00:43:50.540">...because nobody's waiting for anything at that point in time just drop it in</p>
+      <p begin="00:43:50.540" end="00:43:56.030">and go and...also doing single role updates...the database of easy fix to this</p>
+      <p begin="00:43:56.030" end="00:44:00.180">is to start doing batch multi role update to the database to minimize the number of round-trip</p>
+      <p begin="00:44:00.180" end="00:44:03.800">...and...also using a single low-end as</p>
+      <p begin="00:44:03.800" end="00:44:08.070">your database so the goal here's another example in this case</p>
+      <p begin="00:44:08.070" end="00:44:12.870">...little bit more cost optimized there's some tables that were hot some tables that</p>
+      <p begin="00:44:12.870" end="00:44:16.910">...like building information that's relatively cold the</p>
+      <p begin="00:44:16.910" end="00:44:21.860">...stuff you're dumping temperatures into well that's going to be a hot table because you're writing into it all the</p>
+      <p begin="00:44:21.860" end="00:44:25.270">time so move that to the premium database and leave the</p>
+      <p begin="00:44:25.270" end="00:44:30.010">...tables in the lower-cost database here to save some money</p>
+      <p begin="00:44:30.010" end="00:44:34.790">they were also preserving xml parameters in the database which caused a lot of extra processing on</p>
+      <p begin="00:44:34.790" end="00:44:40.320">the database queries so they converted those into table value parameters and then they were using a</p>
+      <p begin="00:44:40.320" end="00:44:43.800">single asher q and what they did was...switch to multi</p>
+      <p begin="00:44:43.800" end="00:44:48.520">...service plus q that's another example of guidance you'll find that page which is</p>
+      <p begin="00:44:48.520" end="00:44:52.400">...partition your service plus...again we're in a...world and</p>
+      <p begin="00:44:52.400" end="00:44:57.940">in partitioning will give you better parallelism and throughput?</p>
+      <p begin="00:44:57.940" end="00:45:02.060">And, this is the updated architecture now so hvac system here</p>
+      <p begin="00:45:02.060" end="00:45:05.740">you've got the key differences here are those lines the sink</p>
+      <p begin="00:45:05.740" end="00:45:08.370">...asic results the hvac systems.</p>
+      <p begin="00:45:08.370" end="00:45:12.770">Probe processing mostly asynchronous...mostly asynchronous</p>
+      <p begin="00:45:12.770" end="00:45:16.090">request except for the end-users which are getting synchronous http</p>
+      <p begin="00:45:16.090" end="00:45:20.910">request the synchronous reads are coming from the asher database you</p>
+      <p begin="00:45:20.910" end="00:45:25.070">can ad asynchronous rights going-to from up to the database from the worker</p>
+      <p begin="00:45:25.070" end="00:45:30.200">role which is also doing right leveling at the same time.</p>
+      <p begin="00:45:30.200" end="00:45:33.340">And, that is the key difference there that worker roll over there with the service</p>
+      <p begin="00:45:33.340" end="00:45:39.730">...between the web role in it which is kind of buffering the database.</p>
+      <p begin="00:45:39.730" end="00:45:43.760">And, also servings and immediately on the whether queries in the</p>
+      <p begin="00:45:43.760" end="00:45:45.070">email.</p>
+      <p begin="00:45:45.070" end="00:45:47.220">Pipeline.</p>
+      <p begin="00:45:47.220" end="00:45:50.680">So, let's see the results...the load test they ran after that you can see that</p>
+      <p begin="00:45:50.680" end="00:45:54.820">were scaling up now at the...above twenty-five and requests per second</p>
+      <p begin="00:45:54.820" end="00:45:58.410">...five or threes that you see there those are also just anomalies of the</p>
+      <p begin="00:45:58.410" end="00:46:03.280">...at so they were very happy with this kind of performance they were getting and they're able to hit...</p>
+      <p begin="00:46:03.280" end="00:46:08.120">the stretch goal that they'd set of a hundred-fifty thousand connected thermostat with the kind of performance</p>
+      <p begin="00:46:08.120" end="00:46:11.760">...seeing here after they started scale this out so</p>
+      <p begin="00:46:11.760" end="00:46:22.010">successful case now this is where I'm going to show you synchronous versus a synchronous.</p>
+      <p begin="00:46:22.010" end="00:46:26.140">Response and.</p>
+      <p begin="00:46:26.140" end="00:46:27.300">Okay,</p>
+      <p begin="00:46:27.300" end="00:46:46.520">yeah, okay, maybe the there we go so you can't say that I had a demo failure.</p>
+      <p begin="00:46:46.520" end="00:46:48.760">Here's the synchronous load test and.</p>
+      <p begin="00:46:49.770" end="00:46:53.620">Which you already kind of saw and here's the asynchronous low test and now here?</p>
+      <p begin="00:46:54.660" end="00:46:58.980">I go back to where I was talking about.</p>
+      <p begin="00:46:58.980" end="00:47:07.370">...me to show you the code I guess for the synchronous and asynchronous...tests.</p>
+      <p begin="00:47:07.370" end="00:47:08.300">So, here's the synchronous</p>
+      <p begin="00:47:08.300" end="00:47:17.790">controller and here's the asynchronous controller and.</p>
+      <p begin="00:47:17.790" end="00:47:19.790">...trying to...trying</p>
+      <p begin="00:47:19.790" end="00:47:24.360">...zoom it that I can't do that very well through this internet connection.</p>
+      <p begin="00:47:25.470" end="00:47:32.130">The key difference here is if you look it's fully synchronous, synchronous controller.</p>
+      <p begin="00:47:32.130" end="00:47:36.220">...user profile get your profile this is all done completely synchronous</p>
+      <p begin="00:47:36.220" end="00:47:40.290">...and over...right side you can see that we've got a...here with a</p>
+      <p begin="00:47:40.290" end="00:47:43.920">...await the paralyze all of these requests.</p>
+      <p begin="00:47:45.210" end="00:47:48.830">And, the results of this under load with</p>
+      <p begin="00:47:48.830" end="00:47:52.650">the synthetic load art as what you see here first of all</p>
+      <p begin="00:47:52.650" end="00:47:56.980">...performance you can see that we get a very constant level a performance in this is</p>
+      <p begin="00:47:56.980" end="00:48:03.140">a response time of two seconds so the response time which is the average here</p>
+      <p begin="00:48:03.140" end="00:48:05.790">...two seconds over here you can see that the response time is all</p>
+      <p begin="00:48:05.790" end="00:48:08.920">over the place and it's actually going up and you can see</p>
+      <p begin="00:48:08.920" end="00:48:13.460">the average through the whole run was about twenty seconds so once it started</p>
+      <p begin="00:48:13.460" end="00:48:18.170">to go up it's kept on going up and we had very flaky performance and</p>
+      <p begin="00:48:18.170" end="00:48:23.020">if you take a look at throughput you'll also see another very dramatic difference here's the throughput that</p>
+      <p begin="00:48:23.020" end="00:48:27.490">...load test was able to get again this range here on this graph</p>
+      <p begin="00:48:27.490" end="00:48:31.890">as a thousand operations never hear requests per second thousand so this is</p>
+      <p begin="00:48:31.890" end="00:48:33.140">equivalent scale</p>
+      <p begin="00:48:33.140" end="00:48:38.030">that you can see that this is able to achieve up here on the high into the graph.</p>
+      <p begin="00:48:38.030" end="00:48:41.450">Over around somewhere around nine hundred requests per second</p>
+      <p begin="00:48:41.450" end="00:48:46.090">and over here on the left side you can see that were only able to get around eighty</p>
+      <p begin="00:48:46.090" end="00:48:51.870">requests per second so ten-x the performance difference just based on</p>
+      <p begin="00:48:51.870" end="00:48:56.760">that little change of going from synchronous to asynchronous on that front</p>
+      <p begin="00:48:56.760" end="00:49:01.590">end which is one of the like I said that he highlight</p>
+      <p begin="00:49:01.590" end="00:49:08.760">problem of this architecture was...http response...which is completely synchronous.</p>
+      <p begin="00:49:08.760" end="00:49:12.890">So, this next one smart card application.</p>
+      <p begin="00:49:12.890" end="00:49:14.430">They do smart card</p>
+      <p begin="00:49:14.430" end="00:49:19.080">authentication for e-commerce they had a traditional so what</p>
+      <p begin="00:49:19.080" end="00:49:23.110">...web role cash role as...database...an example where they did have a</p>
+      <p begin="00:49:23.110" end="00:49:27.670">cache the problem was that the web role would randomly crash?</p>
+      <p begin="00:49:27.670" end="00:49:31.770">And, this case I just want this kind of just a general how to write a</p>
+      <p begin="00:49:31.770" end="00:49:36.770">web apps guidance it's not specific...but again</p>
+      <p begin="00:49:36.770" end="00:49:43.330">this interesting case because this company creating this...application.</p>
+      <p begin="00:49:43.330" end="00:49:46.320">Pretty serious company been business for a long-time doing</p>
+      <p begin="00:49:46.320" end="00:49:51.190">...stuff they go to the cloud they create a web role and then they run into this problem with web</p>
+      <p begin="00:49:51.190" end="00:49:53.130">roles randomly crashing.</p>
+      <p begin="00:49:53.130" end="00:49:57.720">And, they can't figure it out and they call the cat team.</p>
+      <p begin="00:49:57.720" end="00:50:02.360">So, these random crashes are hard to reproduce of course let's take a look at what the</p>
+      <p begin="00:50:02.360" end="00:50:06.950">cat team found.</p>
+      <p begin="00:50:06.950" end="00:50:10.510">This is the actual code that they had in their web role I'm just</p>
+      <p begin="00:50:10.510" end="00:50:17.240">kidding I didn't have this code...the web role.</p>
+      <p begin="00:50:17.240" end="00:50:18.830">So, this.</p>
+      <p begin="00:50:18.830" end="00:50:24.170">Big basically on button click from the website split up a new thread on each</p>
+      <p begin="00:50:24.170" end="00:50:29.590">one and the thread would go off and do things and the thread didn't have a global exception</p>
+      <p begin="00:50:29.590" end="00:50:32.430">...around it so exceptions...pop-up they wouldn't be handled</p>
+      <p begin="00:50:32.430" end="00:50:36.720">and now not only does that thread fault but the whole process faults</p>
+      <p begin="00:50:36.720" end="00:50:41.030">in this thing is running inside the same processes the this code the handler so the</p>
+      <p begin="00:50:41.030" end="00:50:47.650">of the web role crashes completely?</p>
+      <p begin="00:50:47.650" end="00:50:51.900">The other problem that they had was that if the back ends went down because this</p>
+      <p begin="00:50:51.900" end="00:50:56.520">synchronous processing on these different threads all the threads get start to get</p>
+      <p begin="00:50:56.520" end="00:51:01.150">piled up you're all busy doing stuff and every one of these request...a new thread.</p>
+      <p begin="00:51:01.150" end="00:51:05.750">And, that also can lead to exceptions because you can run out of memory and you also get</p>
+      <p begin="00:51:05.750" end="00:51:10.050">into resource starvation of the threads all start to wake up at the same time that you get cpu spikes now</p>
+      <p begin="00:51:10.050" end="00:51:13.960">the front-ends becomes completely unresponsive and then it has</p>
+      <p begin="00:51:13.960" end="00:51:18.840">another problem that I mentioned of the exception handler not being there so the resolution of this</p>
+      <p begin="00:51:18.840" end="00:51:19.780">one...they moved.</p>
+      <p begin="00:51:20.870" end="00:51:25.260">...worker logic to...and connected the web role asynchronous...through service</p>
+      <p begin="00:51:25.260" end="00:51:30.320">...q...in this actually this case...storage q to the...so</p>
+      <p begin="00:51:30.320" end="00:51:36.860">de-couple the front-ends in the back ends of course put in some resilience here on these kinds of faults.</p>
+      <p begin="00:51:36.860" end="00:51:40.970">This next cases a company that does contract management software.</p>
+      <p begin="00:51:40.970" end="00:51:45.080">So, kind of contract workflow software.</p>
+      <p begin="00:51:45.080" end="00:51:45.430">This is</p>
+      <p begin="00:51:45.430" end="00:51:50.490">their architecture front-end has a user interface has rest api on</p>
+      <p begin="00:51:50.490" end="00:51:55.130">...middle tier also has an api that the front-end...business logic some workflow</p>
+      <p begin="00:51:55.130" end="00:52:00.090">in it and then work role does batch processing on some of those workflows.</p>
+      <p begin="00:52:00.090" end="00:52:03.490">They've got storage for document where they're putting this contract files and they've</p>
+      <p begin="00:52:03.490" end="00:52:09.770">got metadata and reporting on the contract workflows that they sticking to...database.</p>
+      <p begin="00:52:09.770" end="00:52:15.090">They've got a lot of chatty api is so those api is between front-end the middle</p>
+      <p begin="00:52:15.090" end="00:52:19.500">...that's a chatty interface and they also have a chatty interface to</p>
+      <p begin="00:52:19.500" end="00:52:24.170">the database like we've seen before and some of these other examples.</p>
+      <p begin="00:52:24.170" end="00:52:28.700">And, also a couple of other issues...doing xml processing</p>
+      <p begin="00:52:28.700" end="00:52:33.320">in tc cool as they stick things into the database because they want things to be</p>
+      <p begin="00:52:33.320" end="00:52:36.510">in the database in xml format.</p>
+      <p begin="00:52:36.510" end="00:52:41.570">And, they're doing all tp queries on the database that</p>
+      <p begin="00:52:41.570" end="00:52:45.650">are also dumping those that...those results into so</p>
+      <p begin="00:52:45.650" end="00:52:49.630">few problems that they ran into this chatty database calls it a page load</p>
+      <p begin="00:52:49.630" end="00:52:54.200">at a contract load...tian reporting on the same database interfering with each other so</p>
+      <p begin="00:52:54.200" end="00:52:57.290">these are all tp queries which can be.</p>
+      <p begin="00:52:57.290" end="00:53:00.560">Long kind of long-running those don't have to be instantaneous</p>
+      <p begin="00:53:00.560" end="00:53:05.090">as people are doing these kinds of queries interfering with your more realtime.</p>
+      <p begin="00:53:06.420" end="00:53:08.610">Dumping of data into the database</p>
+      <p begin="00:53:08.610" end="00:53:14.300">...also generating the data at the metadata is xml on the database itself.</p>
+      <p begin="00:53:14.300" end="00:53:18.980">And, then they've also got a stored procedure that's also doing stream processing on those xml queries which</p>
+      <p begin="00:53:18.980" end="00:53:23.710">is also putting more load on the database as well as a whole bunch of problems so let's just avoid the database</p>
+      <p begin="00:53:23.710" end="00:53:28.720">where we can they move the...xml processing on to the middle tier.</p>
+      <p begin="00:53:28.720" end="00:53:31.890">They move the reporting to the geo replica so one of the things you can get with</p>
+      <p begin="00:53:31.890" end="00:53:35.380">...database you get this for just disaster resilience...they</p>
+      <p begin="00:53:35.380" end="00:53:41.620">...is you get copies of the data copy to a second instance</p>
+      <p begin="00:53:41.620" end="00:53:44.050">...another region.</p>
+      <p begin="00:53:44.050" end="00:53:47.720">And, you can redo reads from that so that's a great place to durell to</p>
+      <p begin="00:53:47.720" end="00:53:53.160">...it's a separate instance of the database...your.</p>
+      <p begin="00:53:53.160" end="00:53:57.860">Rights are going into the primary...reads are coming off the secondary not interfering with each other and</p>
+      <p begin="00:53:57.860" end="00:54:01.770">your basically making use of money that you're paying for that second database</p>
+      <p begin="00:54:01.770" end="00:54:06.120">...they change the single change to a single query where they code on the</p>
+      <p begin="00:54:06.120" end="00:54:10.780">front-end those rest api calls that consolidated some of those calls on the back-end</p>
+      <p begin="00:54:10.780" end="00:54:13.220">consolidated sequel curries into minimum number</p>
+      <p begin="00:54:13.220" end="00:54:18.580">of queries and what they saw was ten-x performance improvement and this is</p>
+      <p begin="00:54:18.580" end="00:54:23.550">the updated architecture search chunky ios on the front xml processing the middle</p>
+      <p begin="00:54:23.550" end="00:54:28.100">tier and reporting at the geo replica rather than the primary and I've got an</p>
+      <p begin="00:54:28.100" end="00:54:31.330">example here of load test on a synthetic</p>
+      <p begin="00:54:31.330" end="00:54:36.200">app that does exactly what we're just talking about?</p>
+      <p begin="00:54:36.200" end="00:54:46.190">So, if I go to.</p>
+      <p begin="00:54:46.190" end="00:54:48.330">Good the browser again.</p>
+      <p begin="00:54:48.330" end="00:54:52.310">I thought I had a code sample for this one.</p>
+      <p begin="00:54:52.310" end="00:54:53.510">Yeah, actually.</p>
+      <p begin="00:54:54.520" end="00:55:00.780">This is.</p>
+      <p begin="00:55:00.780" end="00:55:03.090">This is right here.</p>
+      <p begin="00:55:03.090" end="00:55:06.740">Tough to keep track of all these demos here we go so we've</p>
+      <p begin="00:55:06.740" end="00:55:11.990">got this busy database example and we've got the...</p>
+      <p begin="00:55:11.990" end="00:55:16.630">query in sql let me show you the sql query so this is a sql</p>
+      <p begin="00:55:16.630" end="00:55:23.870">query that's doing a whole bunch of xml which is actually not what you want at all.</p>
+      <p begin="00:55:23.870" end="00:55:24.550">For performance.</p>
+      <p begin="00:55:25.880" end="00:55:29.960">And, here's the controller for this which is simply doing a</p>
+      <p begin="00:55:29.960" end="00:55:32.220">basically sequel can one...command.</p>
+      <p begin="00:55:33.280" end="00:55:36.140">And, just waiting for it so very simple kind of controller.</p>
+      <p begin="00:55:37.200" end="00:55:43.170">Because all the work is being done in that sql query that we saw back here this complicated</p>
+      <p begin="00:55:43.170" end="00:55:47.020">Which is doing this?</p>
+      <p begin="00:55:47.020" end="00:55:51.290">If we take a look at the query on the one where the processing is done on the middle</p>
+      <p begin="00:55:51.290" end="00:55:55.690">tier here's the sql query it's a lot simpler to understand a lot</p>
+      <p begin="00:55:55.690" end="00:56:00.370">less resource intensive on sequel and if we took a look at the</p>
+      <p begin="00:56:00.370" end="00:56:04.230">controller...that work moved into the controller itself and you can see here in</p>
+      <p begin="00:56:04.230" end="00:56:11.990">building up the xml...going to be putting into that.</p>
+      <p begin="00:56:11.990" end="00:56:16.840">And, that's where we've got this low task here so this</p>
+      <p begin="00:56:16.840" end="00:56:21.810">is xml processing in the database layer this is hitting the left side example</p>
+      <p begin="00:56:21.810" end="00:56:29.980">and on the right side we've got hitting that right side example.</p>
+      <p begin="00:56:29.980" end="00:56:31.610">Ten queries.</p>
+      <p begin="00:56:31.610" end="00:56:35.550">Xml on the database versus xml in the middle tier</p>
+      <p begin="00:56:35.550" end="00:56:38.630">...of performance difference that you can see drastic improve</p>
+      <p begin="00:56:38.630" end="00:56:42.260">...a drastic difference with that simple code that you saw</p>
+      <p begin="00:56:42.260" end="00:56:44.880">it there created causes this kind of drastic</p>
+      <p begin="00:56:44.880" end="00:56:49.740">difference in fact in this customers case here's the example of the throughput</p>
+      <p begin="00:56:49.740" end="00:56:54.810">that they saw on the database so the load on the database here</p>
+      <p begin="00:56:54.810" end="00:57:00.250">on the busy one this is actually from this synthetic query that we just saw</p>
+      <p begin="00:57:00.250" end="00:57:05.120">but very similar to what this customer...like I mention ten-x performance improvement they saw eczema processing the</p>
+      <p begin="00:57:05.120" end="00:57:09.560">middle tier versus on the app...the load on the database</p>
+      <p begin="00:57:09.560" end="00:57:14.870">went from eighty seven percent down to thirty seven percent so lots more lots more head room for</p>
+      <p begin="00:57:14.870" end="00:57:19.800">lots more real work on that database rather than the stuff that they should've been doing somewhere else.</p>
+      <p begin="00:57:19.800" end="00:57:25.850">And, we got one last example here photo sharing application so companies doing.</p>
+      <p begin="00:57:25.850" end="00:57:30.140">Photo sharing and image processing in the cloud offering</p>
+      <p begin="00:57:30.140" end="00:57:34.810">customers unlimited storage the first release said fifty were limited fifty request per second their</p>
+      <p begin="00:57:34.810" end="00:57:38.760">target was seven thousand requests per second.</p>
+      <p begin="00:57:38.760" end="00:57:42.280">And, here's the problem.</p>
+      <p begin="00:57:42.280" end="00:57:46.770">This architecture right here everything in one web role very hey let's go to</p>
+      <p begin="00:57:46.770" end="00:57:50.970">...let's go to pass then they created all of these services inside the web role</p>
+      <p begin="00:57:52.280" end="00:57:56.860">with one database on the back-end for and they and they</p>
+      <p begin="00:57:56.860" end="00:58:03.140">also here's another key thing that they have got wrong is that for every one of these queries.</p>
+      <p begin="00:58:03.140" end="00:58:07.370">To these other services they were using a different http request are actually using http</p>
+      <p begin="00:58:07.370" end="00:58:11.340">in-between these things because they migrated from another architecture where these things</p>
+      <p begin="00:58:11.340" end="00:58:12.270">...using http.</p>
+      <p begin="00:58:13.540" end="00:58:18.510">So, just a horrible, horrible architecture that a real one that they called the cat team</p>
+      <p begin="00:58:18.510" end="00:58:25.730">in so the cat team we factored architecture...separate web...worker roles they changed</p>
+      <p begin="00:58:25.730" end="00:58:29.180">Builds...they change the asynchronous calls across the architecture</p>
+      <p begin="00:58:30.290" end="00:58:35.190">...they actually optimized for storage instead of taking all the pictures in the database they stuck them</p>
+      <p begin="00:58:35.190" end="00:58:38.170">some place else and this is now where</p>
+      <p begin="00:58:38.170" end="00:58:42.310">you see what's going on image processing goes to blob store.</p>
+      <p begin="00:58:42.310" end="00:58:43.180">You see the cash.</p>
+      <p begin="00:58:44.230" end="00:58:48.870">Being sir stored...durable cash being stored in table storage and then you see a cash in front of</p>
+      <p begin="00:58:48.870" end="00:58:52.630">adrg database and you also see that they're using reusing http</p>
+      <p begin="00:58:52.630" end="00:58:57.160">connections as they talk from these one service which now is in a separate web</p>
+      <p begin="00:58:57.160" end="00:59:02.540">role to these other web roles which have their own dedicated services</p>
+      <p begin="00:59:02.540" end="00:59:07.940">so big difference in architecture and let's go take a look.</p>
+      <p begin="00:59:07.940" end="00:59:08.820">...example.</p>
+      <p begin="00:59:09.870" end="00:59:12.470">Of that.</p>
+      <p begin="00:59:12.470" end="00:59:28.790">...visual studio and I'll show you the results of this as well.</p>
+      <p begin="00:59:28.790" end="00:59:32.570">New http request per control pretty straightforward you see http</p>
+      <p begin="00:59:32.570" end="00:59:44.010">client new client request per each request and on the right side.</p>
+      <p begin="00:59:44.010" end="00:59:50.040">Single-a single http request for client.</p>
+      <p begin="00:59:50.040" end="00:59:50.940">And, that's.</p>
+      <p begin="00:59:52.080" end="00:59:56.100">Demonstrated by this fact right here you can see there's one</p>
+      <p begin="00:59:56.100" end="01:00:02.410">http client that's just simply being reused on every one of these requests here and also we</p>
+      <p begin="01:00:02.410" end="01:00:15.710">see asynchronous processing so let's go take a look at the results for this.</p>
+      <p begin="01:00:15.710" end="01:00:22.150">Here's the throughput for.</p>
+      <p begin="01:00:22.150" end="01:00:24.620">Performance for the one where we're</p>
+      <p begin="01:00:24.620" end="01:00:27.980">creating a new request for every new http client request</p>
+      <p begin="01:00:27.980" end="01:00:31.110">...one and the one...seeing.</p>
+      <p begin="01:00:31.110" end="01:00:37.650">For bat asynchronous reuse of the same http request</p>
+      <p begin="01:00:37.650" end="01:00:43.440">a client sorry it should be client and you can see the average response time here.</p>
+      <p begin="01:00:43.440" end="01:00:44.390">Average is.</p>
+      <p begin="01:00:45.460" end="01:00:48.920">Around one-point-two seconds average response I'm here is point-two</p>
+      <p begin="01:00:48.920" end="01:00:54.060">seconds so six x difference in response time.</p>
+      <p begin="01:00:54.060" end="01:00:59.820">And, we'll see the same kind of benefits.</p>
+      <p begin="01:00:59.820" end="01:01:03.030">On throughput as well again if we're taking like a</p>
+      <p begin="01:01:03.030" end="01:01:07.210">requests per second you see the scale here is ten-x with the scale...over here one thousand</p>
+      <p begin="01:01:07.210" end="01:01:10.680">...here ten thousand scale over here.</p>
+      <p begin="01:01:10.680" end="01:01:12.970">And, the request per second goes up to about three thousand</p>
+      <p begin="01:01:12.970" end="01:01:15.140">in over here it's hovering around.</p>
+      <p begin="01:01:16.840" end="01:01:18.340">Six hundred so,</p>
+      <p begin="01:01:18.340" end="01:01:25.350">massive difference just from that simple code changes well so that brings me the conclusion the talk.</p>
+      <p begin="01:01:25.350" end="01:01:29.600">And, here the kind of lessons that I hope you took away from this</p>
+      <p begin="01:01:29.600" end="01:01:34.170">cash aggressively always worry about caches local caches, caches between your database caches</p>
+      <p begin="01:01:34.170" end="01:01:39.000">ogg between your web and worker role where you can asynchronous processing with</p>
+      <p begin="01:01:39.000" end="01:01:43.770">...where possible processing batches minimizing round trips between</p>
+      <p begin="01:01:43.770" end="01:01:47.990">your various tears partition your data and compute...take advantage of scale</p>
+      <p begin="01:01:47.990" end="01:01:52.910">architectures and then use the database for database work not for other work and take advantage</p>
+      <p begin="01:01:52.910" end="01:01:57.780">also in your database and other places where you can of those secondary that you've got which you can</p>
+      <p begin="01:01:57.780" end="01:02:03.200">also do processing from all of these cases are available right here at this get</p>
+      <p begin="01:02:03.200" end="01:02:06.770">have repository this whole project is so you can go look at these examples and play</p>
+      <p begin="01:02:06.770" end="01:02:08.960">with them yourself and then there's another get</p>
+      <p begin="01:02:08.960" end="01:02:13.910">hub repository there that has a bunch of other architectural design patterns that you should can follow both of</p>
+      <p begin="01:02:13.910" end="01:02:20.800">...creative from the cat team and there's documentation you're actually pull this up in the browser.</p>
+      <p begin="01:02:20.800" end="01:02:24.410">Just to give you an idea of what's here.</p>
+      <p begin="01:02:24.410" end="01:02:27.920">And, then I want to leave you with one last free.</p>
+      <p begin="01:02:27.920" end="01:02:32.330">...freebie for everybody in the room.</p>
+      <p begin="01:02:32.330" end="01:02:38.900">Which is how many here people here working in a real project right now...like some architecture guidance?</p>
+      <p begin="01:02:38.900" end="01:02:42.760">Okay, I'll give you a each everybody in hear something free in a second</p>
+      <p begin="01:02:42.760" end="01:02:47.530">here's that page so this is the page with this project that has all these examples on</p>
+      <p begin="01:02:47.530" end="01:02:50.170">it with documentation about what each of them do</p>
+      <p begin="01:02:50.170" end="01:02:56.340">now here's the free thing that I'm giving you all the cat teams here...</p>
+      <p begin="01:02:56.340" end="01:03:01.020">Here's where they are they've got a cat clinic that's the map where you can go find them</p>
+      <p begin="01:03:01.020" end="01:03:06.120">they're here during conference hours every day here through the...the week you can go down</p>
+      <p begin="01:03:06.120" end="01:03:10.480">there take them your architecture tell them what problems...you have</p>
+      <p begin="01:03:10.480" end="01:03:15.240">or what guidance you want and they'll spit sit down understand your project and give you that</p>
+      <p begin="01:03:15.240" end="01:03:20.720">guidance all completely for free so...you to take advantage that?</p>
+      <p begin="01:03:20.720" end="01:03:25.830">And, have a great rest of the...conference and all of the see you next year...</p>
+
+    </div>
+  </body>
+</tt>

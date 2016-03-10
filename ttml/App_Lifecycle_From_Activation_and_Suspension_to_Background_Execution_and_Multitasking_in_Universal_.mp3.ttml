@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.911</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.680" end="00:00:10.130">welcome to san francisco and welcome to build twenty fifteen and,</p>
+      <p begin="00:00:10.130" end="00:00:12.410">you know, welcome.</p>
+      <p begin="00:00:12.410" end="00:00:15.190">Welcome developers so,</p>
+      <p begin="00:00:15.190" end="00:00:19.400">of course you're all developers and you all have apps.</p>
+      <p begin="00:00:19.400" end="00:00:24.300">And, what do you want for your apps all you want more users?</p>
+      <p begin="00:00:24.300" end="00:00:27.530">And, as you heard this morning the best way to get more users</p>
+      <p begin="00:00:27.530" end="00:00:34.340">of billions of users is with universal apps for windows.</p>
+      <p begin="00:00:34.340" end="00:00:38.600">Some you already have apps...all of you probably already have apps either for</p>
+      <p begin="00:00:38.600" end="00:00:43.350">your desktop on one thirty-two or dot net on windows</p>
+      <p begin="00:00:43.350" end="00:00:47.650">...windows store windows eighty-one for windows phone or even</p>
+      <p begin="00:00:47.650" end="00:00:50.740">...and android.</p>
+      <p begin="00:00:50.740" end="00:00:52.960">But, for all of...get to...windows platform</p>
+      <p begin="00:00:54.130" end="00:00:58.690">we'll go through today kind of all the things that you need to know for your opt to be a good citizen</p>
+      <p begin="00:00:58.690" end="00:01:05.280">...behave properly...windows up.</p>
+      <p begin="00:01:05.280" end="00:01:06.450">So, my name is...henry</p>
+      <p begin="00:01:06.450" end="00:01:10.840">...a program manager on the windows developer ecosystem platform team and,</p>
+      <p begin="00:01:10.840" end="00:01:15.390">we're here today to talk about windows application lifecycle.</p>
+      <p begin="00:01:15.390" end="00:01:21.150">So, a couple became keeping things first be sure to rate all your sessions</p>
+      <p begin="00:01:21.150" end="00:01:26.040">you can remind based on the first slide if you want but you'll get another opportunity a little bit later to</p>
+      <p begin="00:01:26.040" end="00:01:28.740">rate them as wellat the end of the session</p>
+      <p begin="00:01:28.740" end="00:01:34.650">...to do this one now just kind of a you are here so this is the app model track for</p>
+      <p begin="00:01:34.650" end="00:01:40.470">windows a lot of you probably came before lunch from andrew session I hope you</p>
+      <p begin="00:01:40.470" end="00:01:47.720">waited that welcomes buying software tonight and I...to be a good mood but, we're here in this session at the</p>
+      <p begin="00:01:47.720" end="00:01:52.590">bottom which is the kernel how windows really...your app and how</p>
+      <p begin="00:01:52.590" end="00:01:59.590">interact with your app and how it sends you messages and kind of what we mean by that well?</p>
+      <p begin="00:01:59.590" end="00:02:01.730">By the events and the messages we send a windows</p>
+      <p begin="00:02:01.730" end="00:02:05.440">meetings like suspension and resume of your events...when</p>
+      <p begin="00:02:05.440" end="00:02:09.880">your application can execute the background how we give it accesses two-two</p>
+      <p begin="00:02:09.880" end="00:02:14.710">resources like memory and cpu so they can most efficiently use the battery on</p>
+      <p begin="00:02:14.710" end="00:02:20.590">battery-powered devices then of course just system triggers like timer events and,</p>
+      <p begin="00:02:20.590" end="00:02:24.020">events that happen within the system like push notifications and how those get</p>
+      <p begin="00:02:24.020" end="00:02:28.120">triggered into your app in the background?</p>
+      <p begin="00:02:28.120" end="00:02:32.090">And, of course the good news is that we've built this into the universal windows</p>
+      <p begin="00:02:32.090" end="00:02:35.530">platform so we build something that scales all away from our phone</p>
+      <p begin="00:02:35.530" end="00:02:39.550">...out he devices all the way up through tablets and desktops</p>
+      <p begin="00:02:39.550" end="00:02:46.580">...really powerful desktop and xbox machines in the surface hub and, the hollow...</p>
+      <p begin="00:02:46.580" end="00:02:48.510">And, the good news for you guys is that you get</p>
+      <p begin="00:02:48.510" end="00:02:52.800">to write the same code it runs absolutely everywhere but there are some differences with house</p>
+      <p begin="00:02:52.800" end="00:02:56.800">...behave obviously as we scale across these different devices that are different</p>
+      <p begin="00:02:56.800" end="00:03:02.270">amount of memory and different, different amounts of cpu so on.</p>
+      <p begin="00:03:02.270" end="00:03:07.240">So, before I get started here on the for application lifecycle quick show of hands how many</p>
+      <p begin="00:03:07.240" end="00:03:12.980">of you are...dot net desktop developers so a</p>
+      <p begin="00:03:12.980" end="00:03:16.190">lot like over half looks like...your windows,</p>
+      <p begin="00:03:16.190" end="00:03:20.880">windows store developers also half and,</p>
+      <p begin="00:03:20.880" end="00:03:24.270">windows phone developers so three halves</p>
+      <p begin="00:03:26.680" end="00:03:32.470">So,...you probably have apps for multiple platforms and of course that's why we're here is going to save you a whole bunch of</p>
+      <p begin="00:03:32.470" end="00:03:36.100">time to be able to build one app across,</p>
+      <p begin="00:03:36.100" end="00:03:40.540">across all the places that windows is and</p>
+      <p begin="00:03:40.540" end="00:03:45.040">...already building windows store applications or windows phone applications are not going</p>
+      <p begin="00:03:45.040" end="00:03:48.270">...much work for you to...already familiar with the basics of the application</p>
+      <p begin="00:03:48.270" end="00:03:52.520">lifecycle if you're coming from when thirty-two or dot net there's some more things that you</p>
+      <p begin="00:03:52.520" end="00:03:59.250">...have to learn in order to behave really well as universal windows up so we'll start off with the</p>
+      <p begin="00:03:59.250" end="00:04:03.960">foreman application life-cycle and with the basics of application lifetime</p>
+      <p begin="00:04:03.960" end="00:04:08.340">so your app can be really in one of three states not running,</p>
+      <p begin="00:04:08.340" end="00:04:13.600">running or suspended so now running is kind of obvious...not running users not using</p>
+      <p begin="00:04:13.600" end="00:04:17.100">...just sitting there on-disk if the user launches it</p>
+      <p begin="00:04:17.100" end="00:04:19.550">...current activation of...them, you know,</p>
+      <p begin="00:04:19.550" end="00:04:23.720">topping on a tile...apple come up...announcers the running state they're using your app</p>
+      <p begin="00:04:23.720" end="00:04:30.060">their pressing buttons are scrolling around...taping things...the...running and it's in the foreground.</p>
+      <p begin="00:04:30.060" end="00:04:31.530">A job...to the background</p>
+      <p begin="00:04:31.530" end="00:04:36.050">...this can be different things on different views but friends on the phone if they hit the start button and move to another</p>
+      <p begin="00:04:36.050" end="00:04:43.400">app that's considered your app moving backwards moving to the background the os will</p>
+      <p begin="00:04:43.400" end="00:04:48.730">then suspend your application so this point it's still sitting in memory but always threads always</p>
+      <p begin="00:04:48.730" end="00:04:53.900">...suspended so it's not running it's just sitting there completely suspended in the</p>
+      <p begin="00:04:53.900" end="00:04:58.030">...future goes back into your app...resuming event</p>
+      <p begin="00:04:58.030" end="00:05:03.150">...keep running again if at some point windows needs the memory that your app is</p>
+      <p begin="00:05:03.150" end="00:05:08.090">using for something also there's another app that's coming in for instance the user wants to use it needs that</p>
+      <p begin="00:05:08.090" end="00:05:13.030">memory will move your out back into the non running state so we'll take it out of memory.</p>
+      <p begin="00:05:13.030" end="00:05:15.540">You'll see...you get events as you transitions between all</p>
+      <p begin="00:05:15.540" end="00:05:21.820">...states and activated event a suspending events and resuming event.</p>
+      <p begin="00:05:21.820" end="00:05:26.250">And, but, you see there's no event between suspended and not running so when you move to</p>
+      <p begin="00:05:26.250" end="00:05:31.230">the suspended event you have to assume you may you may never come back out of that event you</p>
+      <p begin="00:05:31.230" end="00:05:35.150">make or not running so you have to completely serialized any state you have or</p>
+      <p begin="00:05:35.150" end="00:05:41.270">to be able to resume back into that event so this is kind of a little bit more states than the sort of a</p>
+      <p begin="00:05:41.270" end="00:05:45.950">...to...dot net what have which role you could think of it really think of them as having these lifetime</p>
+      <p begin="00:05:45.950" end="00:05:51.940">states but really they had not running and running didn't have this kind of suspended state in the middle.</p>
+      <p begin="00:05:51.940" end="00:05:56.500">And, of course for universal windows applications and all modern applications</p>
+      <p begin="00:05:57.690" end="00:06:02.660">apps are typically in that suspended state and, then and,</p>
+      <p begin="00:06:02.660" end="00:06:06.240">reside there's my we try...keep...there as much as possible because that's the kind</p>
+      <p begin="00:06:06.240" end="00:06:11.380">...efficient state for the battery and for the performance of the</p>
+      <p begin="00:06:11.380" end="00:06:16.000">machine what does this look like in terms of lifetime so this is kind of a</p>
+      <p begin="00:06:16.000" end="00:06:20.960">chart I have here that shows time...horizontally</p>
+      <p begin="00:06:20.960" end="00:06:24.250">...usage of memory and cpu vertically so when these are</p>
+      <p begin="00:06:24.250" end="00:06:28.890">...your app you start you load some data you consuming memory and then you have level</p>
+      <p begin="00:06:28.890" end="00:06:31.650">...the users is using your app and it's running</p>
+      <p begin="00:06:32.900" end="00:06:37.680">and at some point you get a suspended message of the hit the windows key if they minimize your</p>
+      <p begin="00:06:37.680" end="00:06:43.660">app so on that point we give you a small window of time to serialized all</p>
+      <p begin="00:06:43.660" end="00:06:48.620">your data into get into that suspended state so there you'll see whatever data or whatever data...the</p>
+      <p begin="00:06:48.620" end="00:06:53.320">...looking at any data...in the ui whatever you need to do to sort of build a</p>
+      <p begin="00:06:53.320" end="00:07:00.280">state you...reconstitute back into when you're...is resumed and,</p>
+      <p begin="00:07:00.280" end="00:07:01.650">of course?</p>
+      <p begin="00:07:01.650" end="00:07:06.950">Of course this point all your threads in your execution is completely suspended as well so,</p>
+      <p begin="00:07:06.950" end="00:07:09.310">after you finish that suspending state move into the</p>
+      <p begin="00:07:09.310" end="00:07:14.590">suspended suspending event move into the suspended state your app is not using any cpu</p>
+      <p begin="00:07:14.590" end="00:07:19.380">at all with exception of the background execution stuff that I'll talk about a little later but,</p>
+      <p begin="00:07:19.380" end="00:07:22.890">generally applications not using any cpu at all.</p>
+      <p begin="00:07:22.890" end="00:07:27.430">Course...can move back into the running stay we call as a resumed events you saw that</p>
+      <p begin="00:07:27.430" end="00:07:32.540">earlier on a diagram continue to run and then if at some point</p>
+      <p begin="00:07:32.540" end="00:07:38.200">in the suspended state and windows needs the memory for another</p>
+      <p begin="00:07:38.200" end="00:07:44.750">app the come in we will then move it to the not running states I think it's taken out of memory but,</p>
+      <p begin="00:07:44.750" end="00:07:50.210">you don't get the opportunity to run again between being suspended and, move into the not running</p>
+      <p begin="00:07:50.210" end="00:07:52.520">state.</p>
+      <p begin="00:07:52.520" end="00:07:57.150">So, I'll show you this very briefly encode here...move over to a very simple,</p>
+      <p begin="00:07:57.150" end="00:07:59.040">simple demo I have over here.</p>
+      <p begin="00:08:00.550" end="00:08:06.810">So, this is...see the alright so this is very simple project very</p>
+      <p begin="00:08:06.810" end="00:08:11.240">close to sort of the temple that you get if you did a new universal windows</p>
+      <p begin="00:08:11.240" end="00:08:17.590">application visual studio and I've hooked up here to the suspending and resuming events.</p>
+      <p begin="00:08:17.590" end="00:08:19.710">So, I have handlers for those down here and</p>
+      <p begin="00:08:19.710" end="00:08:37.420">we'll just walk through very quickly what happens when I watch this application?</p>
+      <p begin="00:08:37.420" end="00:08:38.710">So, here is launching the first</p>
+      <p begin="00:08:38.710" end="00:08:44.270">...launched event which is maps the activated event that I was talking about earlier.</p>
+      <p begin="00:08:44.270" end="00:08:49.010">And, this is sort of the first launch of the app government-run before so, we do, you know,</p>
+      <p begin="00:08:49.010" end="00:08:52.180">full startup from here and now it's sitting...running</p>
+      <p begin="00:08:52.180" end="00:08:56.170">...little chat application of written so,</p>
+      <p begin="00:08:56.170" end="00:09:00.550">what you'll see is, you know, while...the...actually none of the eventual fires</p>
+      <p begin="00:09:00.550" end="00:09:05.200">...just minimized there but it's actually running in the background so</p>
+      <p begin="00:09:05.200" end="00:09:08.580">...important thing to do when?</p>
+      <p begin="00:09:08.580" end="00:09:14.980">When you're testing these things in developing visual studios use this life-cycle events button?</p>
+      <p begin="00:09:14.980" end="00:09:20.520">And, you can see I can I can fi I can trigger the various states in</p>
+      <p begin="00:09:20.520" end="00:09:25.790">theapplication life-cycle state machines so I can...can ask the app to suspend</p>
+      <p begin="00:09:25.790" end="00:09:31.200">to resume or...move to shut down so that's moving to the suspended state and then to the not running</p>
+      <p begin="00:09:31.200" end="00:09:33.930">state so I'll show you what happens here when I had suspend</p>
+      <p begin="00:09:35.340" end="00:09:40.080">...suspend event fires and, what's going on here is I'm</p>
+      <p begin="00:09:40.080" end="00:09:46.650">saving all my local data so I have another method here that saved all my data to...storage.</p>
+      <p begin="00:09:46.650" end="00:09:51.480">And, you notice here this is an asynchronous method so it's important that I</p>
+      <p begin="00:09:51.480" end="00:09:54.870">grab the suspending operation referral what</p>
+      <p begin="00:09:54.870" end="00:10:02.810">...does is it says don't suspend the app intel I call complete on this...</p>
+      <p begin="00:10:02.810" end="00:10:06.830">If I hadn't done this what happen is the same local data would've built</p>
+      <p begin="00:10:06.830" end="00:10:11.560">a lambda and spun off on a different thread to save my data which is great because it doesn't because</p>
+      <p begin="00:10:11.560" end="00:10:15.360">...not on the ui thread it's happening in the background but</p>
+      <p begin="00:10:15.360" end="00:10:20.060">dui thread would finish and windows within think your apples and executing</p>
+      <p begin="00:10:20.060" end="00:10:26.520">...would move us into the spend state so I grab the referral here and,</p>
+      <p begin="00:10:26.520" end="00:10:31.130">that's that tells that tells windows to keep the app around intel</p>
+      <p begin="00:10:31.130" end="00:10:35.790">choices complete now you still get to run forever so when I call suspending here so I have a little</p>
+      <p begin="00:10:35.790" end="00:10:42.080">...that comes up ...opposite spending and, then I get</p>
+      <p begin="00:10:42.080" end="00:10:46.580">it depends a little bit between mobile in windows and are different skews what the with...</p>
+      <p begin="00:10:46.580" end="00:10:50.680">with typically it's around five seconds that you'll get to save all your data?</p>
+      <p begin="00:10:51.690" end="00:10:58.360">And, do whatever you need to do in the background so?</p>
+      <p begin="00:10:58.360" end="00:11:04.370">And, I'll just actually before I do more code I'll show you what happens when I do resume.</p>
+      <p begin="00:11:04.370" end="00:11:06.690">Citation so,</p>
+      <p begin="00:11:06.690" end="00:11:10.410">I get the resume event and then of course I read on my data back and here I'm showing...</p>
+      <p begin="00:11:11.420" end="00:11:15.640">That's resuming.</p>
+      <p begin="00:11:15.640" end="00:11:19.790">So, that's why I move...suspended in the resuming state.</p>
+      <p begin="00:11:19.790" end="00:11:26.730">And, using a using visual studio sort of force those events that happen.</p>
+      <p begin="00:11:26.730" end="00:11:30.950">Now what I'm going to do here is I'm going to now try and save some data</p>
+      <p begin="00:11:30.950" end="00:11:33.930">...to the klout which takes a little bit longer and,</p>
+      <p begin="00:11:33.930" end="00:11:42.310">I'm going to do this not in the debugged just to show you guys what happens so,...app here with...</p>
+      <p begin="00:11:42.310" end="00:11:46.590">And, as...comes up so the same app and other...minimized here so,</p>
+      <p begin="00:11:46.590" end="00:11:52.410">the apples now moving into the spending say now the break point and get hit one of the debug attached but,</p>
+      <p begin="00:11:52.410" end="00:11:58.180">what's happening you'll notice that...not coming up saying I'm suspended.</p>
+      <p begin="00:11:58.180" end="00:12:03.060">And, that's because my app a sitting in this saving cloud data state</p>
+      <p begin="00:12:03.060" end="00:12:07.060">is never actually entering the suspended state.</p>
+      <p begin="00:12:07.060" end="00:12:11.820">Eventually...you guys notice down here but the icon disappear so what happen we</p>
+      <p begin="00:12:11.820" end="00:12:16.320">can go to the logs here and we can see the top log here that windows</p>
+      <p begin="00:12:16.320" end="00:12:21.660">...my application hong was because I spent too long and that resuming method.</p>
+      <p begin="00:12:21.660" end="00:12:24.010">And, window and, windows made the call though they thought the</p>
+      <p begin="00:12:24.010" end="00:12:28.170">...taking too long and that we needed to terminated so that we could bring the next app</p>
+      <p begin="00:12:28.170" end="00:12:33.190">...that is the user needed of course we do this sort of keep performance really,</p>
+      <p begin="00:12:33.190" end="00:12:37.090">really good for universal windows applications.</p>
+      <p begin="00:12:38.430" end="00:12:40.800">So, the next outcome launch really quickly so we don't have too much</p>
+      <p begin="00:12:40.800" end="00:12:46.450">contention and app running in the background trying to shut down another app coming in.</p>
+      <p begin="00:12:46.450" end="00:12:55.740">But, what if we needed that extra time?</p>
+      <p begin="00:12:55.740" end="00:13:00.580">So, what we need that extra time to save data cloud you saw</p>
+      <p begin="00:13:00.580" end="00:13:06.130">...a particular case I mean I'm...reason we powerful laptop here there's not that much going on</p>
+      <p begin="00:13:06.130" end="00:13:12.290">in the machine there really is no reason why we can let the app run a little bit longer?</p>
+      <p begin="00:13:12.290" end="00:13:14.500">So, we've introduced...windows ten for universal</p>
+      <p begin="00:13:14.500" end="00:13:19.680">...is it's concept of extended execution and what this is</p>
+      <p begin="00:13:19.680" end="00:13:25.960">a laos your application to ask for more time to not be suspend?</p>
+      <p begin="00:13:25.960" end="00:13:29.740">...use the same diagrams before and,</p>
+      <p begin="00:13:29.740" end="00:13:32.600">we look at this...in the running stage.</p>
+      <p begin="00:13:32.600" end="00:13:35.420">And,...suspending event at this point</p>
+      <p begin="00:13:35.420" end="00:13:40.330">we can requests extended execution session.</p>
+      <p begin="00:13:40.330" end="00:13:42.440">I'll show you this encode in a second and,</p>
+      <p begin="00:13:42.440" end="00:13:50.020">what this does...windows is hey if there's resources available just let me keep running for a little bit longer?</p>
+      <p begin="00:13:50.020" end="00:13:51.650">And, of course if there are...available</p>
+      <p begin="00:13:51.650" end="00:13:56.350">...you do that so you'll stay in this case you'll stay in that suspending...and,</p>
+      <p begin="00:13:56.350" end="00:14:00.850">you can keep you can keep a saving data or uploading data or whatever you need to do and then</p>
+      <p begin="00:14:00.850" end="00:14:03.460">when you're done you want to the suspended state</p>
+      <p begin="00:14:03.460" end="00:14:08.020">...windows needs the resource for something else if the app that's coming in the next thing</p>
+      <p begin="00:14:08.020" end="00:14:10.320">...trying to do needs a lot of memory</p>
+      <p begin="00:14:10.320" end="00:14:15.900">run a memory constrain device or if you're taking a very long-time and the battery gets lower</p>
+      <p begin="00:14:15.900" end="00:14:22.650">...to a state where we need to...conserve it...message</p>
+      <p begin="00:14:22.650" end="00:14:28.790">at that point you need just you need to...very quickly only get a second clean-up?</p>
+      <p begin="00:14:28.790" end="00:14:41.690">So, I'll show you this here quickly encode.</p>
+      <p begin="00:14:41.690" end="00:14:45.280">So, this is the same the same app here.</p>
+      <p begin="00:14:45.280" end="00:14:51.800">And, I'm not my unsuspecting methods I'm going to take this code here.</p>
+      <p begin="00:14:51.800" end="00:14:53.960">And, I...replace it with this extended executions</p>
+      <p begin="00:14:53.960" end="00:14:57.040">...execution session so.</p>
+      <p begin="00:14:58.120" end="00:15:01.950">What...I done here so I have created a new extended execution</p>
+      <p begin="00:15:01.950" end="00:15:06.700">session right here and I've supplied a couple a couple parameters so</p>
+      <p begin="00:15:06.700" end="00:15:09.490">...said the reason is I'm saving data and,</p>
+      <p begin="00:15:09.490" end="00:15:14.600">you'll see in the...of the sdk there's only a few reasons location tracking which</p>
+      <p begin="00:15:14.600" end="00:15:19.310">...saving data...unspecified...will probable extend in the future</p>
+      <p begin="00:15:19.310" end="00:15:22.480">...the current build use of is only three options you have an you must</p>
+      <p begin="00:15:22.480" end="00:15:27.660">supplier reason and, as well as a description which are things that will show up in the</p>
+      <p begin="00:15:27.660" end="00:15:33.000">ui to tell the user what's going on the background if they need to figure out...why</p>
+      <p begin="00:15:33.000" end="00:15:39.310">...app still running or why things are going on the background so I into the...the reason</p>
+      <p begin="00:15:39.310" end="00:15:43.810">hook up to the revoke event which I mentioned earlier so hooked up here if that revoke</p>
+      <p begin="00:15:43.810" end="00:15:48.590">...called...close my connection really quickly and kinda get out of the way</p>
+      <p begin="00:15:48.590" end="00:15:53.810">then the first thing I do is I say my local data I know this doesn't take very much time so it's going to do that anyways I</p>
+      <p begin="00:15:53.810" end="00:15:59.070">know I can get that done in the time that windows gives me if I have my extent execution allow</p>
+      <p begin="00:15:59.070" end="00:16:04.040">...I can allowed back so I can potentially...or...denied if there's no resources available at</p>
+      <p begin="00:16:04.040" end="00:16:08.830">the start we won't even give you the session to begin with but typically,</p>
+      <p begin="00:16:08.830" end="00:16:15.550">typically you'll get...at this point I'll start saving my cloud data?</p>
+      <p begin="00:16:15.550" end="00:16:22.830">So, we can see...the same app here.</p>
+      <p begin="00:16:22.830" end="00:16:28.480">And, we can see continuing to run if I if I minimize here for</p>
+      <p begin="00:16:28.480" end="00:16:34.470">...call...operator...button.</p>
+      <p begin="00:16:34.470" end="00:16:38.700">All move through all this.</p>
+      <p begin="00:16:38.700" end="00:16:44.040">And, then I save my data and I check I check...result here is allowed.</p>
+      <p begin="00:16:44.040" end="00:16:49.200">And, now I...my data cloud.</p>
+      <p begin="00:16:49.200" end="00:16:53.400">So, take a few seconds because of my data take a long-time to the cloud maybe amount</p>
+      <p begin="00:16:53.400" end="00:16:58.940">of full connection or something like that it's just turning around...my data...the background and then I'll send a</p>
+      <p begin="00:16:58.940" end="00:17:01.710">...notification when we're done?</p>
+      <p begin="00:17:03.090" end="00:17:12.380">Unless I'm having a bug where it's not it'll show up in here...a second.</p>
+      <p begin="00:17:12.380" end="00:17:16.550">Yeah, so, maybe that doesn't come through anyway you have to trust me that tells would come through and,</p>
+      <p begin="00:17:16.550" end="00:17:25.039">you would you get...not of you'd your session complete and then you move into the suspending state.</p>
+      <p begin="00:17:25.039" end="00:17:34.480">So, that's...of one-half of extended execution.</p>
+      <p begin="00:17:34.480" end="00:17:36.310">The other option is to call</p>
+      <p begin="00:17:36.310" end="00:17:42.570">centre execution at some point while...app is running in the foreground not during the suspended method.</p>
+      <p begin="00:17:42.570" end="00:17:47.670">...suspended call back event of course this could be if,</p>
+      <p begin="00:17:47.670" end="00:17:50.785">you know, ahead of time that you're going to want to...running the background so, you</p>
+      <p begin="00:17:50.785" end="00:17:56.620">know, example using the reasons that we have that I showed you before is background</p>
+      <p begin="00:17:56.620" end="00:18:01.480">location tracking so-if you have a turn by turn navigation application...</p>
+      <p begin="00:18:01.480" end="00:18:07.660">a fitness application once attract the users location in the background whenever you start that session, you know,</p>
+      <p begin="00:18:07.660" end="00:18:11.740">when you click turn by turn start turn by turn our start your run</p>
+      <p begin="00:18:11.740" end="00:18:16.880">your bike ride or whatever it is for your app you can request your extension then</p>
+      <p begin="00:18:16.880" end="00:18:22.080">...and in that case your app won't even get the suspended event?</p>
+      <p begin="00:18:22.080" end="00:18:25.690">You can listen to the core window if you want to understand when your...the for</p>
+      <p begin="00:18:25.690" end="00:18:30.600">...not and you can listen to the memory manager events to tell you if the amount of memory your</p>
+      <p begin="00:18:30.600" end="00:18:31.890">...allowed to use changes if</p>
+      <p begin="00:18:31.890" end="00:18:36.430">your memory caps change but you won't get that suspended about you just keep running in the background</p>
+      <p begin="00:18:36.430" end="00:18:44.270">...if windows needs resource for something else will send you the revoked event and, your app</p>
+      <p begin="00:18:44.270" end="00:18:48.910">...clean-up and typically a question resend you revoked because we need to resources for something we're not just going to</p>
+      <p begin="00:18:48.910" end="00:18:55.890">enter the suspension in this case...a suspend and terminate.</p>
+      <p begin="00:18:55.890" end="00:18:58.500">So, I'll show you really...they actually have here kind of neat</p>
+      <p begin="00:18:58.500" end="00:19:03.560">the actual maps application this is the maps app that ships again</p>
+      <p begin="00:19:03.560" end="00:19:07.350">...a universal windows apps of the same app ships on windows,</p>
+      <p begin="00:19:07.350" end="00:19:12.560">windows phone all windows devices that has map that have maps.</p>
+      <p begin="00:19:12.560" end="00:19:17.780">...wi-fi little slow here.</p>
+      <p begin="00:19:17.780" end="00:19:22.290">It's like the maps and coming anyways so,</p>
+      <p begin="00:19:22.290" end="00:19:28.960">I can ask maps directions so, I can say well I want to go back to my hotel here so, give me</p>
+      <p begin="00:19:28.960" end="00:19:35.090">directions...me driving directions...switch over...going on.</p>
+      <p begin="00:19:35.090" end="00:19:37.750">All right so this is the real maps out here.</p>
+      <p begin="00:19:39.680" end="00:19:43.280">And, I think my connections a little slow so I'm not getting the</p>
+      <p begin="00:19:43.280" end="00:19:48.420">formats coming in has got the streets data looks like the traffic data which is probably all any</p>
+      <p begin="00:19:48.420" end="00:19:52.540">so, I've just asked to take me for my location to the to my hotel</p>
+      <p begin="00:19:52.540" end="00:19:59.700">and walking directions that...a little bit quicker and, then when I click go?</p>
+      <p begin="00:19:59.700" end="00:20:04.700">Here now the maps app has entered the.</p>
+      <p begin="00:20:04.700" end="00:20:05.420">Has entered</p>
+      <p begin="00:20:05.420" end="00:20:10.220">...its extended execution session and...exactly the same thing here except this is not actually in</p>
+      <p begin="00:20:10.220" end="00:20:14.230">a suspended event this is just one I've started be started</p>
+      <p begin="00:20:14.230" end="00:20:18.950">the navigation session the same thing I'm creating extend execution sessiongiving a look</p>
+      <p begin="00:20:18.950" end="00:20:23.030">a reason of location tracking checking the results and,</p>
+      <p begin="00:20:23.030" end="00:20:26.720">if it's allowed in start mynavigation session in this case here</p>
+      <p begin="00:20:26.720" end="00:20:34.380">they're subscribing to the events of core windows...they know often the foreground or not?</p>
+      <p begin="00:20:34.380" end="00:20:37.040">So, now also maps...now so now</p>
+      <p begin="00:20:37.040" end="00:20:45.160">...may term return directions of course I can minimize this and, it will still give me my directions.</p>
+      <p begin="00:20:45.160" end="00:20:56.930">So, those are kind of the two ways that you can use...execution.</p>
+      <p begin="00:20:56.930" end="00:21:01.320">And, of course as I mentioned this will very little bit</p>
+      <p begin="00:21:01.320" end="00:21:06.050">based on devices on how much memory they have to how much time you'll get is not guaranteed</p>
+      <p begin="00:21:06.050" end="00:21:11.970">...opportunistic thing on desktops with lots of memory you'll be able to run</p>
+      <p begin="00:21:11.970" end="00:21:17.640">pretty much on constrained in the background on some of the phone devices and io...devices where there's</p>
+      <p begin="00:21:17.640" end="00:21:22.400">very little memory...typically only enough memory to keep one or two apps active...the time you'll</p>
+      <p begin="00:21:22.400" end="00:21:29.520">find the amount of time that you can run in this state is often much shorter.</p>
+      <p begin="00:21:29.520" end="00:21:33.900">So, that's kind of the big new piece that we have for foreground execution windows telling</p>
+      <p begin="00:21:33.900" end="00:21:38.390">...move over now to background execution.</p>
+      <p begin="00:21:38.390" end="00:21:41.070">And, when I go back and execution</p>
+      <p begin="00:21:41.070" end="00:21:46.030">what I mean here is really just ways that your app can come alive in the background</p>
+      <p begin="00:21:46.030" end="00:21:52.150">are...user back in you know, either by responding to you know,</p>
+      <p begin="00:21:52.150" end="00:21:57.130">push notifications or events in the back system events in the background update their to</p>
+      <p begin="00:21:57.130" end="00:22:02.100">update your tile or things like tracking again tracking location using geo</p>
+      <p begin="00:22:02.100" end="00:22:03.510">fences or</p>
+      <p begin="00:22:03.510" end="00:22:08.790">...music in the background...connecting to bluetooth devices there's a really cases where</p>
+      <p begin="00:22:08.790" end="00:22:14.660">your opposite running but it's responding to things happening on the device and the system events?</p>
+      <p begin="00:22:14.660" end="00:22:21.320">And, backer execution in general is kind of had a long story on both windows,</p>
+      <p begin="00:22:21.320" end="00:22:26.870">windows phone...the good news is again here we've completely converge all.</p>
+      <p begin="00:22:26.870" end="00:22:31.750">All windows skews both desktop and windows phone and, all</p>
+      <p begin="00:22:31.750" end="00:22:36.000">...the all the windows ten ...so if so</p>
+      <p begin="00:22:36.000" end="00:22:39.990">...windows phone developers and kind of windows phone you may</p>
+      <p begin="00:22:39.990" end="00:22:45.680">remember background agents which are things that would fire periodically agents that would</p>
+      <p begin="00:22:45.680" end="00:22:52.110">fire every thirty minutes so you could update your tile and, then if you're coming from windows</p>
+      <p begin="00:22:52.110" end="00:22:56.050">age you're familiar with the concept of a background tasks</p>
+      <p begin="00:22:56.050" end="00:23:01.260">...triggers we at we added those in windows phone...</p>
+      <p begin="00:23:01.260" end="00:23:05.350">So, we had kind of a converge background model...windows eight between windows</p>
+      <p begin="00:23:05.350" end="00:23:08.520">...windows phone aone if you are building</p>
+      <p begin="00:23:08.520" end="00:23:13.630">...store applications as well as silverlight aone applications could also use the converge</p>
+      <p begin="00:23:13.630" end="00:23:16.430">...background...</p>
+      <p begin="00:23:16.430" end="00:23:19.710">...question windows ten everyone's big happy family all</p>
+      <p begin="00:23:19.710" end="00:23:25.360">the windows skews all use the same background execution model.</p>
+      <p begin="00:23:25.360" end="00:23:29.660">So, those are you coming from when thirty-two or dot net where you're not really</p>
+      <p begin="00:23:29.660" end="00:23:35.900">familiar with this concept of having a separate model for running in the background the way we define</p>
+      <p begin="00:23:35.900" end="00:23:40.310">background execution on windows of windows universal</p>
+      <p begin="00:23:40.310" end="00:23:44.940">popular universal windows platform is with triggers and background tasks so background</p>
+      <p begin="00:23:44.940" end="00:23:49.470">tasks kind of the unit the module that actually runs in the background code that runs the background</p>
+      <p begin="00:23:49.470" end="00:23:56.780">the triggers the thing that causes that module to start running that code start-one.</p>
+      <p begin="00:23:56.780" end="00:24:00.290">And, app subscribe to triggers and windows triggers fire code start running so,</p>
+      <p begin="00:24:00.290" end="00:24:04.390">for example, you can subscribe to...notification trigger your background tackle fire</p>
+      <p begin="00:24:04.390" end="00:24:10.760">...push notification comes in geo fencing as well if...if you're if</p>
+      <p begin="00:24:10.760" end="00:24:15.550">you're device moves locations it can cross a geo fence which will cause a which is</p>
+      <p begin="00:24:15.550" end="00:24:19.250">you get within a particular radius of.</p>
+      <p begin="00:24:19.250" end="00:24:24.910">Of some location and, you have a trigger find those cases obviously bluetooth as well</p>
+      <p begin="00:24:24.910" end="00:24:27.230">you know,...with bands and,</p>
+      <p begin="00:24:27.230" end="00:24:31.570">all sorts of devices watches and smart watches on we have to notifications by</p>
+      <p begin="00:24:31.570" end="00:24:36.520">a bluetooth and, your...subscribe to things like that heart rate monitors so on that</p>
+      <p begin="00:24:36.520" end="00:24:41.050">...booted devices regular timer events or system events just things happening</p>
+      <p begin="00:24:41.050" end="00:24:46.030">on the system periodic timers again wi-fi becoming available users logging in</p>
+      <p begin="00:24:46.030" end="00:24:50.890">that kind of stuff you can subscribe to of course apps services there's a whole session on</p>
+      <p begin="00:24:50.890" end="00:24:55.480">apps services and apt app communication I'm a little bit later in the week but those are also</p>
+      <p begin="00:24:55.480" end="00:24:59.680">...by background tasks...those are kind of interesting because that's a case where you can actually</p>
+      <p begin="00:24:59.680" end="00:25:02.850">your app can call another apps background service</p>
+      <p begin="00:25:02.850" end="00:25:08.590">background task to do to do work on your behalf so, it allows kind of this</p>
+      <p begin="00:25:08.590" end="00:25:15.460">web apps of apps to...other apps to get information on have worked on for them.</p>
+      <p begin="00:25:15.460" end="00:25:19.940">So, just an introduction I'll give a really quick demo here.</p>
+      <p begin="00:25:19.940" end="00:25:22.520">On the basics of background tasks.</p>
+      <p begin="00:25:22.520" end="00:25:26.670">And, a couple things that have changed as we converged</p>
+      <p begin="00:25:26.670" end="00:25:31.670">are background execution model across windows across all the windows skews.</p>
+      <p begin="00:25:31.670" end="00:25:35.700">So, this is my simple is again a very simple</p>
+      <p begin="00:25:35.700" end="00:25:40.430">...my same simple chat application what I've done here is when this page loads</p>
+      <p begin="00:25:40.430" end="00:25:44.150">...register much...tasks so the first thing that I</p>
+      <p begin="00:25:44.150" end="00:25:48.570">need to do is request access to run the...</p>
+      <p begin="00:25:49.890" end="00:25:54.200">...minimize this you guys can see it so,</p>
+      <p begin="00:25:54.200" end="00:25:59.470">I'm calling here the backer execution manager and kang request access.</p>
+      <p begin="00:25:59.470" end="00:26:02.660">And, what this does is it asks windows to give this</p>
+      <p begin="00:26:02.660" end="00:26:06.490">...permission to run a background your app has to do this if...to run</p>
+      <p begin="00:26:06.490" end="00:26:11.270">in the background of doesn't do this none of the triggers the...will fire?</p>
+      <p begin="00:26:11.270" end="00:26:14.830">If you're coming from windows the store development on windows</p>
+      <p begin="00:26:14.830" end="00:26:16.860">...windows aone.</p>
+      <p begin="00:26:16.860" end="00:26:20.160">Calling this api would bring up</p>
+      <p begin="00:26:20.160" end="00:26:25.250">some windows you-are-there...ask the user to pin there...</p>
+      <p begin="00:26:25.250" end="00:26:29.550">For universal windows apps we don't we don't do that so that's kind of an important distinction</p>
+      <p begin="00:26:29.550" end="00:26:32.170">...more similar to the windows phone model where your</p>
+      <p begin="00:26:32.170" end="00:26:36.910">apple just typically be granted access anyways cases where you would</p>
+      <p begin="00:26:36.910" end="00:26:42.180">...access...the user has explicitly just a larger out from running in the background so,</p>
+      <p begin="00:26:42.180" end="00:26:47.170">we have battery...across all windows all windows desktop and windows mobile now so</p>
+      <p begin="00:26:47.170" end="00:26:52.280">...could go into battery saver...the background task control panel and,</p>
+      <p begin="00:26:52.280" end="00:26:54.510">prevent your...from...in the background if they don't want your</p>
+      <p begin="00:26:54.510" end="00:26:59.160">...to be consuming battery...doing stuff in the background that would be case where you would get denied so</p>
+      <p begin="00:26:59.160" end="00:27:03.700">you should always request access there's also a get on here that you can call you ever want to check if the</p>
+      <p begin="00:27:03.700" end="00:27:11.710">users changed the state of whether you can run in the background.</p>
+      <p begin="00:27:11.710" end="00:27:16.570">Yeah, so, there's a get accessible...can call...</p>
+      <p begin="00:27:16.570" end="00:27:19.780">So, that's requesting around the background also,</p>
+      <p begin="00:27:19.780" end="00:27:23.870">you know, best practice is to unregistered any tasks that you have so I have a</p>
+      <p begin="00:27:23.870" end="00:27:26.260">...check...the timer task already registered and</p>
+      <p begin="00:27:26.260" end="00:27:29.150">on registered here some enumerating all the tasks.</p>
+      <p begin="00:27:30.390" end="00:27:33.040">Here and then registering them.</p>
+      <p begin="00:27:33.040" end="00:27:38.480">And, then finally I'm going to register my task here so in this case here</p>
+      <p begin="00:27:38.480" end="00:27:43.400">...a time a timer trigger.</p>
+      <p begin="00:27:43.400" end="00:27:48.310">...so create a timer trigger the parameters this takes it takes a</p>
+      <p begin="00:27:48.310" end="00:27:53.660">time-out of time interval fifteen minutes and then one shot means I want</p>
+      <p begin="00:27:53.660" end="00:27:54.910">to recur not so</p>
+      <p begin="00:27:54.910" end="00:28:00.890">things to false means I want the timer we occur every fifteen minutes create this thing called</p>
+      <p begin="00:28:00.890" end="00:28:04.860">the background task builder which helps me build these task instances given a name</p>
+      <p begin="00:28:04.860" end="00:28:08.880">and entry point so I've already added to the solution here a</p>
+      <p begin="00:28:08.880" end="00:28:13.320">...rt component that has my background task...so I'll show you...second but,</p>
+      <p begin="00:28:13.320" end="00:28:21.040">so, I specify that...my entry point my timer task here I said the trigger I can also set conditions.</p>
+      <p begin="00:28:21.040" end="00:28:32.560">So, I could for instance.</p>
+      <p begin="00:28:32.560" end="00:28:35.450">Conferences also add a condition to here and,</p>
+      <p begin="00:28:35.450" end="00:28:38.630">what conditions are conditions kind of work with triggers</p>
+      <p begin="00:28:38.630" end="00:28:45.700">as something else that must happen in order for that triggered a fire so?</p>
+      <p begin="00:28:45.700" end="00:28:48.090">I can add...system condition</p>
+      <p begin="00:28:48.090" end="00:28:52.810">...sorry year-ago system condition type of</p>
+      <p begin="00:28:52.810" end="00:28:59.420">say the internet available...that case this.</p>
+      <p begin="00:28:59.420" end="00:29:02.170">...new system condition.</p>
+      <p begin="00:29:02.170" end="00:29:07.370">Descriptive anyways you can add system condition...that will be something</p>
+      <p begin="00:29:07.370" end="00:29:11.250">though also have to be true for that task to fires in that case I can</p>
+      <p begin="00:29:11.250" end="00:29:15.930">...system condition and if the internet...available my time trigger wouldn't fire</p>
+      <p begin="00:29:15.930" end="00:29:20.210">...would happen is after the fifty-minute interval my timer would latch.</p>
+      <p begin="00:29:20.210" end="00:29:25.590">Which are manage ready to fire and then as soon as internet became available the trigger would fire my background task</p>
+      <p begin="00:29:25.590" end="00:29:29.840">would run?</p>
+      <p begin="00:29:29.840" end="00:29:34.500">So,...check here for the registration.</p>
+      <p begin="00:29:34.500" end="00:29:38.890">Here I can then get the name of so now register my task.</p>
+      <p begin="00:29:38.890" end="00:29:42.470">So, I can run this.</p>
+      <p begin="00:29:42.470" end="00:29:46.570">And, we can already wait around for fifteen minutes for this triggered a</p>
+      <p begin="00:29:46.570" end="00:29:51.100">...getting we're not going away for that to happen again, handy.</p>
+      <p begin="00:29:51.100" end="00:29:56.480">Visual studio will give us a in the life-cycle events...background tasks</p>
+      <p begin="00:29:56.480" end="00:30:00.980">...registration break point lifecycle events for background tasks we can are</p>
+      <p begin="00:30:00.980" end="00:30:03.920">...events menu we can see our list of</p>
+      <p begin="00:30:03.920" end="00:30:10.170">background tasks here so I can in this case explicitly fire the timer tasks and,</p>
+      <p begin="00:30:10.170" end="00:30:14.330">...point on there...hit the run method and, that just</p>
+      <p begin="00:30:14.330" end="00:30:21.560">popped the toast so do that again so we can look at the actual task here so,</p>
+      <p begin="00:30:21.560" end="00:30:25.460">I told you before this task was ...rt component that added</p>
+      <p begin="00:30:25.460" end="00:30:30.300">to the solution implements I background tasking kind of</p>
+      <p begin="00:30:30.300" end="00:30:35.090">the only interesting thing that I background task has this one method and the run</p>
+      <p begin="00:30:35.090" end="00:30:41.430">method is what gets called when you're...when your trigger fires.</p>
+      <p begin="00:30:41.430" end="00:30:46.860">you can see here when I force that task to fire a via visual studio</p>
+      <p begin="00:30:46.860" end="00:30:51.220">my run method is called a hooking up here to cancel method this is what windows</p>
+      <p begin="00:30:51.220" end="00:30:55.620">we'll call if you run out of time to run your background task so,</p>
+      <p begin="00:30:55.620" end="00:30:58.600">I can handle that down below that I showed...</p>
+      <p begin="00:30:58.600" end="00:31:03.290">And,...and such as showing a...down here in this code and,</p>
+      <p begin="00:31:03.290" end="00:31:07.310">then one more thing you have to do to finish registering your background task with two more things one is you</p>
+      <p begin="00:31:07.310" end="00:31:09.860">have to reference it from your foreground project.</p>
+      <p begin="00:31:10.910" end="00:31:12.970">But, then also you have to add</p>
+      <p begin="00:31:12.970" end="00:31:19.020">a entry in your manifest so here we see extensions,</p>
+      <p begin="00:31:19.020" end="00:31:23.980">extensions element being added is also a wizard for this in the designer that makes</p>
+      <p begin="00:31:23.980" end="00:31:27.460">...a fair bit simpler but this shows you exactly what's going on</p>
+      <p begin="00:31:27.460" end="00:31:32.320">...created a background task here specify the entry point to be</p>
+      <p begin="00:31:32.320" end="00:31:37.140">in my background task assembly in the timer task</p>
+      <p begin="00:31:37.140" end="00:31:38.360">costs.</p>
+      <p begin="00:31:38.360" end="00:31:39.410">...I've said that my tasks</p>
+      <p begin="00:31:39.410" end="00:31:46.500">...timer and here you can specify all sorts of different task types as well.</p>
+      <p begin="00:31:46.500" end="00:31:58.340">So, that's the basics of background tasks.</p>
+      <p begin="00:31:58.340" end="00:32:04.360">We have a bunch we have a bunch of triggers if you've been...from...a one we</p>
+      <p begin="00:32:04.360" end="00:32:08.840">had a system triggers time triggers...triggers those have been around for a while.</p>
+      <p begin="00:32:08.840" end="00:32:09.180">And, windows</p>
+      <p begin="00:32:09.180" end="00:32:14.460">phony one we added a bunch of new triggers cash file which is for grabbing,</p>
+      <p begin="00:32:14.460" end="00:32:19.930">grabbing data from the cloud for file pickers a</p>
+      <p begin="00:32:19.930" end="00:32:25.140">couple a couple bluetooth triggers device connection trigger gadsden rf</p>
+      <p begin="00:32:25.140" end="00:32:30.250">...or...bluetooth location trigger which is for geo fencing.</p>
+      <p begin="00:32:30.250" end="00:32:32.680">And, then a windows...more triggers so</p>
+      <p begin="00:32:32.680" end="00:32:37.330">we but you almost double the number of triggers that we have we've added a few triggers</p>
+      <p begin="00:32:37.330" end="00:32:42.140">for accessing the data store of appointments and contacts on</p>
+      <p begin="00:32:42.140" end="00:32:46.270">the device more bluetooth triggers for bluetooth or bluetooth</p>
+      <p begin="00:32:46.270" end="00:32:51.600">...as well as device watcher which is a new type of bluetooth figure that can listen,</p>
+      <p begin="00:32:51.600" end="00:32:56.330">listen foradvertisements from bluetooth devices activity</p>
+      <p begin="00:32:56.330" end="00:32:58.920">...to censored to do sensor triggers activity</p>
+      <p begin="00:32:58.920" end="00:33:03.690">...trigger and sensor data threshold trigger which can be used for things like parameters listening to the</p>
+      <p begin="00:33:03.690" end="00:33:09.230">...kind of stuff a couple triggers for toast notifications</p>
+      <p begin="00:33:09.230" end="00:33:13.690">so-if...if the user.</p>
+      <p begin="00:33:13.690" end="00:33:16.690">Taps on our works with your toast notification you actionable</p>
+      <p begin="00:33:16.690" end="00:33:21.220">toast notification or notifications...the action center those will fire trigger which can</p>
+      <p begin="00:33:21.220" end="00:33:26.990">activated background task and you can do some work and, then the application trigger and socket activity trigger I won't ruin</p>
+      <p begin="00:33:26.990" end="00:33:30.840">...surprise for the talk with those...second but all the ones above that</p>
+      <p begin="00:33:30.840" end="00:33:36.180">...sessions later on appointee...the dec where folks talk about those triggered.</p>
+      <p begin="00:33:36.180" end="00:33:39.930">So, those are all the new triggers that we've added in windows</p>
+      <p begin="00:33:39.930" end="00:33:44.980">ten we've also...course on all windows on</p>
+      <p begin="00:33:44.980" end="00:33:50.700">windows desktop and windows phone windows mobile as long as you know,</p>
+      <p begin="00:33:50.700" end="00:33:54.170">as long as obviously device supports those particular things</p>
+      <p begin="00:33:54.170" end="00:33:58.840">...the devices never gps than obviously location triggers locker fire so,</p>
+      <p begin="00:33:58.840" end="00:34:03.270">more good news we've converged resource management of background tasks across,</p>
+      <p begin="00:34:03.270" end="00:34:07.990">across windows across all windows devices.</p>
+      <p begin="00:34:07.990" end="00:34:11.470">If you remember if you're coming from windows aone there</p>
+      <p begin="00:34:11.470" end="00:34:15.520">was this concept of...cpu time and</p>
+      <p begin="00:34:15.520" end="00:34:20.360">...pool of cpu resources that your app would have a access to in the background of used</p>
+      <p begin="00:34:20.360" end="00:34:23.780">...those resources would have to wait for that cpu...refill.</p>
+      <p begin="00:34:25.000" end="00:34:30.040">...things a little bit here and, separated for default background tasks</p>
+      <p begin="00:34:31.640" end="00:34:36.420">...look very similar to the model again we had on windows phone for windows phony</p>
+      <p begin="00:34:36.420" end="00:34:41.490">one so, you have a memory cap and this is for...make devices here is this</p>
+      <p begin="00:34:41.490" end="00:34:48.550">scales up as we move up to more devices with more memory but, on...of</p>
+      <p begin="00:34:48.550" end="00:34:54.060">...five twelve make devices which are some are advice with the least amount of memory your background</p>
+      <p begin="00:34:54.060" end="00:35:01.240">task get sixteen megabytes of memory to run and, we'll run for thirty seconds something does</p>
+      <p begin="00:35:01.240" end="00:35:05.730">...thirty seconds in the background after twenty five seconds...running will send</p>
+      <p begin="00:35:05.730" end="00:35:08.320">the cancel notification to your to your</p>
+      <p begin="00:35:08.320" end="00:35:12.200">task so you will get some warning that your time is about to run out so,</p>
+      <p begin="00:35:12.200" end="00:35:17.150">you get twenty...plus five seconds to run and you get at least ten percent of cpu so that's</p>
+      <p begin="00:35:17.150" end="00:35:22.500">kind of a soft cap of there's nothing else going on in the device you can use you know, as much debuts available</p>
+      <p begin="00:35:22.500" end="00:35:28.230">but you're guaranteed to get that ten percent and of course task can be blocked...the users block them and battery</p>
+      <p begin="00:35:28.230" end="00:35:33.160">saver or in the background task control panel the other the others</p>
+      <p begin="00:35:33.160" end="00:35:36.870">sat is long-running or opportunistic background tasks those typically</p>
+      <p begin="00:35:36.870" end="00:35:41.700">have the same memory caps but they can run for as long as...resources available so not just for thirty</p>
+      <p begin="00:35:41.700" end="00:35:48.250">seconds to use me they can run much longer if there's resources available on</p>
+      <p begin="00:35:48.250" end="00:35:53.060">the device so the triggers that are that are opportunistic triggers...the application trigger</p>
+      <p begin="00:35:53.060" end="00:35:59.950">...talk about the second...trigger which is a trigger that fires when wi-fi is available</p>
+      <p begin="00:35:59.950" end="00:36:04.940">when the devices plugged in when it's in a good battery state?</p>
+      <p begin="00:36:04.940" end="00:36:07.520">Sorry not wi-fi...I was an old condition...</p>
+      <p begin="00:36:07.520" end="00:36:14.950">about the device used trigger which is used for connecting to devices in the background.</p>
+      <p begin="00:36:14.950" end="00:36:20.520">that's kind of resource management for background tasks sort of related to resource management...this</p>
+      <p begin="00:36:20.520" end="00:36:25.930">is kind of a complex feature what's important to talk about is that we've added the ability to host</p>
+      <p begin="00:36:25.930" end="00:36:30.810">background tasks in process with your foreground so what does</p>
+      <p begin="00:36:30.810" end="00:36:37.010">this mean well typically on the left here is how background task works</p>
+      <p begin="00:36:37.010" end="00:36:41.950">is hopefully it's host in the completely separate process from your application the application</p>
+      <p begin="00:36:41.950" end="00:36:47.200">be running in your background task can be running in two separate processes and, they never really talk to each</p>
+      <p begin="00:36:47.200" end="00:36:52.570">other lifetime is not intertwined anyway but,...you can do now and windows ten</p>
+      <p begin="00:36:52.570" end="00:36:57.260">is you can specify for your background task to be hosted in the foreground</p>
+      <p begin="00:36:57.260" end="00:37:02.780">process so both sit in the same process in that case and the advantage of that is if you</p>
+      <p begin="00:37:02.780" end="00:37:09.270">want to do interprocess communication between the foreground in the background well,</p>
+      <p begin="00:37:09.270" end="00:37:13.190">it's not interprocess communication that point it's just communication between those two</p>
+      <p begin="00:37:13.190" end="00:37:13.940">...to modules?</p>
+      <p begin="00:37:15.050" end="00:37:18.410">...much simpler if the average communication that you want to</p>
+      <p begin="00:37:18.410" end="00:37:22.280">...your background task in your foreground this can be useful again,</p>
+      <p begin="00:37:22.280" end="00:37:28.380">for those kind of more long-running tasks where you might have so you might have them running the same time</p>
+      <p begin="00:37:28.380" end="00:37:33.180">...your foreground the disadvantage of courses now you have to keep your whole for application around</p>
+      <p begin="00:37:33.180" end="00:37:37.990">in memory and especially on devices with limit amount of memory that</p>
+      <p begin="00:37:37.990" end="00:37:43.190">it very much increases the chance of your of your application to</p>
+      <p begin="00:37:43.190" end="00:37:47.280">not stay resident...in this suspended state.</p>
+      <p begin="00:37:47.280" end="00:37:51.140">So, that's kind of the basics of the background execution model and,</p>
+      <p begin="00:37:51.140" end="00:37:57.630">the converges that we've made a windows ten for universal windows applications I want to sort of finish</p>
+      <p begin="00:37:57.630" end="00:38:02.520">off...talk about to triggers specifically that are new...windows ten but,</p>
+      <p begin="00:38:02.520" end="00:38:06.670">I want to show you a quick demo of for both of those so one of the application</p>
+      <p begin="00:38:06.670" end="00:38:11.840">trigger am ...what we call this the application trigger it's because it's triggered by your</p>
+      <p begin="00:38:11.840" end="00:38:14.120">application...being able to clever with</p>
+      <p begin="00:38:14.120" end="00:38:19.780">...name basically what happens in this case instead of waiting for like a timer to go off for wi-fi</p>
+      <p begin="00:38:19.780" end="00:38:26.780">...avail or whatever you actually explicitly fire it from your application?</p>
+      <p begin="00:38:26.780" end="00:38:28.630">So, this is really useful if</p>
+      <p begin="00:38:28.630" end="00:38:31.810">...app need to sink a bunch of data at the beginning like if you're thinking much</p>
+      <p begin="00:38:31.810" end="00:38:37.990">of contacts or data from like a news feed or something at the beginning and the user</p>
+      <p begin="00:38:37.990" end="00:38:43.900">may launcher app check something real quick and the navigate away previously</p>
+      <p begin="00:38:43.900" end="00:38:48.220">your app wouldn't have time to...to...data application trigger allows you to do that and of</p>
+      <p begin="00:38:48.220" end="00:38:53.020">...more efficient than using something like extended execution because if you host</p>
+      <p begin="00:38:53.020" end="00:38:54.050">...a separate process</p>
+      <p begin="00:38:54.050" end="00:39:02.680">you're only using that small amount of memory and you're much more likely to be able to keep running for much longer.</p>
+      <p begin="00:39:02.680" end="00:39:15.590">I'll show you a quick demo of that.</p>
+      <p begin="00:39:15.590" end="00:39:20.720">So, the registration of this is almost exactly the same as before for the basic background tasks</p>
+      <p begin="00:39:20.720" end="00:39:27.470">so here and requesting access they think so on difference here I'm creating and application trigger.</p>
+      <p begin="00:39:27.470" end="00:39:31.610">And, after...register it I do two things one is I create a value</p>
+      <p begin="00:39:31.610" end="00:39:35.020">...this is the this is basically dictionary that I pass that I</p>
+      <p begin="00:39:35.020" end="00:39:40.530">...to the background task the...has information to know...</p>
+      <p begin="00:39:40.530" end="00:39:47.070">what is supposed to do there's a very simple lightweight way of passing information between your foreground your background.</p>
+      <p begin="00:39:47.070" end="00:39:51.630">So, I'll just put a couple strings and...anything that serialized able in this theological to</p>
+      <p begin="00:39:51.630" end="00:39:56.840">string into this value set and, then here's where the magic happens here I'm a</p>
+      <p begin="00:39:56.840" end="00:40:00.300">trigger I actually call request on it so,</p>
+      <p begin="00:40:00.300" end="00:40:04.570">this asks the trigger to fire right away.</p>
+      <p begin="00:40:04.570" end="00:40:08.480">And, I can get ... different results either was allowed</p>
+      <p begin="00:40:08.480" end="00:40:13.900">it was already running or for or for whatever reason it's been disabled from</p>
+      <p begin="00:40:13.900" end="00:40:19.510">running so-if users disable your background tasks.</p>
+      <p begin="00:40:19.510" end="00:40:21.890">...was allowed I'm showing you progress in the background</p>
+      <p begin="00:40:21.890" end="00:40:26.440">...I'll show you herewhat's happening in the background</p>
+      <p begin="00:40:26.440" end="00:40:32.470">task again very much exactly the same as the.</p>
+      <p begin="00:40:32.470" end="00:40:37.490">As any background task.</p>
+      <p begin="00:40:37.490" end="00:40:39.810">So, as soon as this app comes up the first pages</p>
+      <p begin="00:40:39.810" end="00:40:47.490">...kick-off this background pasta...thinking data in the background.</p>
+      <p begin="00:40:47.490" end="00:40:50.660">So, you can see register and then</p>
+      <p begin="00:40:50.660" end="00:40:55.240">my task immediately gets called to run I didn't have to do anything in this case...</p>
+      <p begin="00:40:55.240" end="00:41:00.870">explicitly called it from a foreground out so, you see hello here and,</p>
+      <p begin="00:41:00.870" end="00:41:03.980">it's going to start sinking data.</p>
+      <p begin="00:41:03.980" end="00:41:08.830">And, sending some...notifications hopefully there we go so those are</p>
+      <p begin="00:41:08.830" end="00:41:12.820">popping up like before but they're showing up at...action center here and,</p>
+      <p begin="00:41:12.820" end="00:41:18.040">if I kill this app my sinking still continues in the background there's thirty</p>
+      <p begin="00:41:18.040" end="00:41:22.960">percent there's forty percent so my background task right now is continuing to run in the background and,</p>
+      <p begin="00:41:22.960" end="00:41:28.170">...data even well my foreground app isn't running.</p>
+      <p begin="00:41:28.170" end="00:41:39.840">So, that's again particular useful for these kind of initial...operations is long-running...operations.</p>
+      <p begin="00:41:39.840" end="00:41:43.980">One other trigger I want to talk about is these socket trigger</p>
+      <p begin="00:41:43.980" end="00:41:50.590">is a really powerful new trigger that we've added in windows ten.</p>
+      <p begin="00:41:50.590" end="00:41:53.540">Which allowsallows app to have to have their network</p>
+      <p begin="00:41:53.540" end="00:41:58.630">connectivity maintained even when they're no longer running so, again,</p>
+      <p begin="00:41:58.630" end="00:42:03.520">if you're coming from windows store applications you may be familiar with the control channel trigger...a little bit little</p>
+      <p begin="00:42:03.520" end="00:42:07.870">bit more obscure this was basically trigger that would allow you to keep</p>
+      <p begin="00:42:07.870" end="00:42:11.940">a background task suspended memory sitting</p>
+      <p begin="00:42:11.940" end="00:42:15.990">on a network socket and, then waking that task up whenever there</p>
+      <p begin="00:42:15.990" end="00:42:22.610">was data coming in on that network socket the disadvantage that was a course your out how to stick around and memory so</p>
+      <p begin="00:42:22.610" end="00:42:27.610">didn't work very well on devices where there is a limited amount of memory so the big improvement with socket</p>
+      <p begin="00:42:27.610" end="00:42:32.500">trigger tasks is that we actually now broker that socket hold</p>
+      <p begin="00:42:32.500" end="00:42:38.710">onto it for-you in the operating system and that means you're tasking completely go away</p>
+      <p begin="00:42:38.710" end="00:42:45.110">completely be removed from memory and we will wake you up and reactivated whenever there's data on that so,</p>
+      <p begin="00:42:45.110" end="00:42:50.370">this is a good alternative to using w and asked if you have your own push notification system if you have</p>
+      <p begin="00:42:50.370" end="00:42:55.580">your own server infrastructure for sending push notifications half the room...</p>
+      <p begin="00:42:55.580" end="00:43:02.040">why whatever want to do that and the other half is like that sounds great I absolutely have that...want to do that but, yeah,</p>
+      <p begin="00:43:02.040" end="00:43:05.590">so, if you have that situation where you have your own sort of push notification</p>
+      <p begin="00:43:05.590" end="00:43:10.190">the system this is what this will be helpful there?</p>
+      <p begin="00:43:10.190" end="00:43:14.760">So, the way this kind of works is you create your socket in the foreground</p>
+      <p begin="00:43:14.760" end="00:43:20.060">...your background task and you hand-off your socket between the foreground in the background so,</p>
+      <p begin="00:43:20.060" end="00:43:24.890">if you're using your...in the foreground you grab socket from the socket broker</p>
+      <p begin="00:43:24.890" end="00:43:27.450">...do whatever you need to do and,</p>
+      <p begin="00:43:27.450" end="00:43:32.160">then and then you hand it back to the broker...your...goes away and they get reactivated if there's</p>
+      <p begin="00:43:32.160" end="00:43:51.570">...on that socket so I'll show you this quickly here in a demo.</p>
+      <p begin="00:43:51.570" end="00:43:54.340">So, I'm...to kick-off here really briefly I have a little,</p>
+      <p begin="00:43:54.340" end="00:43:57.950">little server program that just...little telnet server that runs</p>
+      <p begin="00:43:59.910" end="00:44:04.620">and, then a little bought that send messages to it so, these are just when thirty-two</p>
+      <p begin="00:44:04.620" end="00:44:08.560">...dot net applications consul applications and,</p>
+      <p begin="00:44:08.560" end="00:44:17.140">then here is the uw p application.</p>
+      <p begin="00:44:17.140" end="00:44:23.260">So, I'll just run through this.</p>
+      <p begin="00:44:23.260" end="00:44:27.130">So, again, here I'm registering the task.</p>
+      <p begin="00:44:27.130" end="00:44:32.010">Same as before same patterns before in this case I'm using a socket activity triggers</p>
+      <p begin="00:44:32.010" end="00:44:37.180">...this socket trigger.</p>
+      <p begin="00:44:37.180" end="00:44:39.550">And, if my socket trigger</p>
+      <p begin="00:44:40.710" end="00:44:45.120">is successfully registered then go and I connect my socket in</p>
+      <p begin="00:44:45.120" end="00:44:48.760">the background so here I'm just using a new stress</p>
+      <p begin="00:44:48.760" end="00:44:53.790">screen socket and connecting to local hosts that server that I showed you there a</p>
+      <p begin="00:44:53.790" end="00:44:58.360">little telnet server and on the socket on the stream socket itself there's this new</p>
+      <p begin="00:44:58.360" end="00:45:05.690">method called enable transfer ownership...id that I can make-up whatever</p>
+      <p begin="00:45:05.690" end="00:45:10.160">...and I say if I want to wake-up unconnected standby?</p>
+      <p begin="00:45:10.160" end="00:45:15.360">And, then and, then I say I'm done with it so I'm going to transfer ownership back to the</p>
+      <p begin="00:45:15.360" end="00:45:20.030">...broker with the name here and then this time</p>
+      <p begin="00:45:20.030" end="00:45:22.130">spanned here's how often I want the</p>
+      <p begin="00:45:22.130" end="00:45:28.440">...be...try and honor as...keep alive as possible.</p>
+      <p begin="00:45:28.440" end="00:45:35.850">So, here of connected and then what you'll see in a second is?</p>
+      <p begin="00:45:35.850" end="00:45:38.360">So, that...woke up and what's happening with the</p>
+      <p begin="00:45:38.360" end="00:45:42.430">...aziz sending a message every five seconds so,</p>
+      <p begin="00:45:42.430" end="00:45:45.260">what happened is I connected to that server?</p>
+      <p begin="00:45:45.260" end="00:45:49.550">And, then eye-hand the socket back to the broker and then my chart</p>
+      <p begin="00:45:49.550" end="00:45:52.260">...here then send a message</p>
+      <p begin="00:45:52.260" end="00:45:55.320">...and related back to my app.</p>
+      <p begin="00:45:55.320" end="00:45:59.240">Which then activated my background task so my app could have been completely</p>
+      <p begin="00:45:59.240" end="00:46:06.800">gone completely terminated not memory my background task would have been activated here in the run method?</p>
+      <p begin="00:46:06.800" end="00:46:13.270">So, in my run method by grab the trigger details which to which degree information about the socket and I can</p>
+      <p begin="00:46:13.270" end="00:46:17.870">retrieve the socket from there which is what I'm doing here I check the reason I say it was</p>
+      <p begin="00:46:17.870" end="00:46:23.430">because of socket activity which is great that means there's data on the socket that I want to process and,</p>
+      <p begin="00:46:23.430" end="00:46:32.610">then I read that data and, then.</p>
+      <p begin="00:46:32.610" end="00:46:39.770">So, I got a bunch of these...clear here.</p>
+      <p begin="00:46:39.770" end="00:46:44.020">But, again, my app could be completely gone and I would still get ...notifications</p>
+      <p begin="00:46:44.020" end="00:46:51.840">coming in and, my background task reactivated even when I'm not even when I'm not running anymore.</p>
+      <p begin="00:46:51.840" end="00:46:56.980">So, that's a very powerful new trigger for.</p>
+      <p begin="00:46:56.980" end="00:47:08.150">For network based applications the...listen to data coming in the background.</p>
+      <p begin="00:47:08.150" end="00:47:13.710">So, that's kind of main stuff I want to show you today just to wrap things up,</p>
+      <p begin="00:47:13.710" end="00:47:17.690">... great news for everything is the application life-cycle backer execution</p>
+      <p begin="00:47:17.690" end="00:47:22.150">is completely converge across windows across all the windows ten skews for universal</p>
+      <p begin="00:47:22.150" end="00:47:26.170">windows apps so what that means is that you can write the same code and</p>
+      <p begin="00:47:26.170" end="00:47:30.480">haven't run on all windows devices the thing of course you have to be aware</p>
+      <p begin="00:47:30.480" end="00:47:36.020">of is that despite all the new things you can do all the tonnes a new triggers in capabilities that we've</p>
+      <p begin="00:47:36.020" end="00:47:40.900">added resource are still limited on especially on our mobile devices and the</p>
+      <p begin="00:47:40.900" end="00:47:46.650">...devices so you have to be aware of what happens when there's</p>
+      <p begin="00:47:46.650" end="00:47:50.830">low memory or when the devices on battery and we need to...conserve resources in that case</p>
+      <p begin="00:47:50.830" end="00:47:58.540">so that's when you get these notifications from windows...about what your app is doing?</p>
+      <p begin="00:47:58.540" end="00:48:00.590">So, there's a few other sessions that you really should go</p>
+      <p begin="00:48:00.590" end="00:48:04.580">to so there's a couple sessions session on thursday that</p>
+      <p begin="00:48:04.580" end="00:48:11.640">we'll talk a lot about some of those new contacts and appointments triggers.</p>
+      <p begin="00:48:11.640" end="00:48:15.980">...session on friday around the new bluetooth triggers and,</p>
+      <p begin="00:48:15.980" end="00:48:19.610">then sort of I talked a lot here about how windows talks to</p>
+      <p begin="00:48:19.610" end="00:48:25.080">...app robert has a session on friday around what your app should do in those cases and how</p>
+      <p begin="00:48:25.080" end="00:48:33.530">should handle ...those kind of...a winning events so on internally the</p>
+      <p begin="00:48:33.530" end="00:48:37.980">new toast notification triggers will be covered in a session on friday</p>
+      <p begin="00:48:37.980" end="00:48:43.390">...thomas and then app services which is a great new feature?</p>
+      <p begin="00:48:43.390" end="00:48:48.050">That you probably are a lot about andrew session a rude has a has a session</p>
+      <p begin="00:48:48.050" end="00:48:51.260">...sandeep have a session on that.</p>
+      <p begin="00:48:51.260" end="00:48:56.340">On friday so, if there's any questions.</p>
+      <p begin="00:48:56.340" end="00:48:56.640">You have to</p>
+      <p begin="00:48:56.640" end="00:49:04.120">...now you really insiders lounge or you can reach out to me on twitter...hammering.</p>
+      <p begin="00:49:04.120" end="00:49:07.390">And, one more chance to evaluate the session.</p>
+      <p begin="00:49:07.390" end="00:49:08.480">Great thanks everyone.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.910</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.060" end="00:00:06.300">All rights.</p>
+      <p begin="00:00:06.300" end="00:00:10.790">I think we're just going to get...started thank you very much for coming to this</p>
+      <p begin="00:00:10.790" end="00:00:16.030">...how the stashing I hope everyone enjoyed itthe wonderful key</p>
+      <p begin="00:00:16.030" end="00:00:20.360">notes I was really incredible key notes in a very long as well</p>
+      <p begin="00:00:21.470" end="00:00:26.810">...hope you really enjoy all the demos and exciting progress there I</p>
+      <p begin="00:00:26.810" end="00:00:31.640">...conference allies really fall microsoft developers...in this breakouts</p>
+      <p begin="00:00:31.640" end="00:00:36.480">meshing my colleague ryan and I have a chance to tell you the</p>
+      <p begin="00:00:36.480" end="00:00:39.740">...exciting stuff and a tools and api is</p>
+      <p begin="00:00:39.740" end="00:00:42.150">...case we actually booting to</p>
+      <p begin="00:00:42.150" end="00:00:48.690">apps the smarts to the data and...apps your building.</p>
+      <p begin="00:00:48.690" end="00:00:53.280">This is a title inv de file talk as I mentioned the...and I would</p>
+      <p begin="00:00:53.280" end="00:00:58.320">do this presentation together just a friendly reminder that's</p>
+      <p begin="00:00:58.320" end="00:01:01.760">...we really, really want to get your feedback for every stashing</p>
+      <p begin="00:01:01.760" end="00:01:06.750">every presentation we do...end of this presentation...would be great if you can some</p>
+      <p begin="00:01:06.750" end="00:01:12.860">made the evaluation and please say rein did a good job.</p>
+      <p begin="00:01:12.860" end="00:01:15.720">So, we are going to talk about</p>
+      <p begin="00:01:15.720" end="00:01:19.060">something called the project oxford's it's really,</p>
+      <p begin="00:01:19.060" end="00:01:21.080">really very...</p>
+      <p begin="00:01:21.080" end="00:01:25.270">Fall what...we actually can really do in terms of adding smarts to the</p>
+      <p begin="00:01:25.270" end="00:01:27.970">...that applications you have.</p>
+      <p begin="00:01:27.970" end="00:01:31.340">Specifically what we're going to show you today is a</p>
+      <p begin="00:01:31.340" end="00:01:34.790">portfolio of rest api some is the case that</p>
+      <p begin="00:01:34.790" end="00:01:40.040">will help you to write applications when you deal with this massive amount of</p>
+      <p begin="00:01:40.040" end="00:01:45.030">...especially the kind of multimedia data from speech voice</p>
+      <p begin="00:01:45.030" end="00:01:48.880">to...image...to text how can you actually</p>
+      <p begin="00:01:48.880" end="00:01:50.800">understands what's going on with the</p>
+      <p begin="00:01:50.800" end="00:01:57.100">content you have the multimedia data and how can you make some sense out of the...</p>
+      <p begin="00:01:57.100" end="00:02:00.500">As many of you aware and the recently is</p>
+      <p begin="00:02:00.500" end="00:02:05.050">...so much...the explosive growth of online...and a lot of us</p>
+      <p begin="00:02:05.050" end="00:02:08.800">in that can get access to...few butte apps.</p>
+      <p begin="00:02:08.800" end="00:02:12.680">...you really care about all this mobile devices now</p>
+      <p begin="00:02:12.680" end="00:02:17.540">just everywhere and everyone in every device is collecting law</p>
+      <p begin="00:02:17.540" end="00:02:23.170">...than anyone connection make sense out of that if you think that the positively</p>
+      <p begin="00:02:23.170" end="00:02:28.170">you can...those data together and the think abouts in the between p hold data</p>
+      <p begin="00:02:28.170" end="00:02:32.510">...all those things you might be able to figure out the relationship in</p>
+      <p begin="00:02:32.510" end="00:02:37.770">...yet this morning mention abouts you could think about the kind of graph.</p>
+      <p begin="00:02:37.770" end="00:02:42.010">Butts the fundamental problem is really you know-how much we can actually even</p>
+      <p begin="00:02:42.010" end="00:02:46.710">null abouts the kind of data there I want to be very clear ways</p>
+      <p begin="00:02:46.710" end="00:02:49.770">you that's, you know, the as we think about all this kind of</p>
+      <p begin="00:02:49.770" end="00:02:53.580">machine learning kind of problems that we can actually solve.</p>
+      <p begin="00:02:53.580" end="00:02:55.980">The different ways to think about that.</p>
+      <p begin="00:02:55.980" end="00:03:00.870">We actually view the provi microsoft called the geo machine learning in fact</p>
+      <p begin="00:03:00.870" end="00:03:05.870">...tamar my colleague...of zero shall we talk about the greed details I</p>
+      <p begin="00:03:05.870" end="00:03:09.410">...keno the tamar of what kind of machine learning...</p>
+      <p begin="00:03:09.410" end="00:03:14.080">we can do you can even imagine...project oxford's can be part</p>
+      <p begin="00:03:14.080" end="00:03:17.220">of the overall machine learning tools...microsoft would provide</p>
+      <p begin="00:03:17.220" end="00:03:21.380">...and what we really want to talk about here is</p>
+      <p begin="00:03:21.380" end="00:03:24.740">actually all kind of multimedia data as I mentioned that</p>
+      <p begin="00:03:24.740" end="00:03:31.410">...do image attacks what kind of things we can actually do?</p>
+      <p begin="00:03:31.410" end="00:03:33.580">I want to get even more specifically</p>
+      <p begin="00:03:33.580" end="00:03:36.500">the kind of data that we actually deal with.</p>
+      <p begin="00:03:36.500" end="00:03:41.290">The first kind of data is actually vision was all kind of the image in the video</p>
+      <p begin="00:03:41.290" end="00:03:43.990">seeing what we can really do.</p>
+      <p begin="00:03:43.990" end="00:03:47.290">I actually started the my own the research career</p>
+      <p begin="00:03:47.290" end="00:03:50.510">...doing computer vision stuff.</p>
+      <p begin="00:03:50.510" end="00:03:54.470">You imagine adding a fifty years ago marvin minsky mit just said</p>
+      <p begin="00:03:54.470" end="00:03:57.920">...they just connect camera...gr computer</p>
+      <p begin="00:03:57.920" end="00:04:02.530">...computed tell you what the computer really understands so things has really,</p>
+      <p begin="00:04:02.530" end="00:04:05.420">really progress a...over the years</p>
+      <p begin="00:04:05.420" end="00:04:09.970">especially last five years computer vision has really advanced the...</p>
+      <p begin="00:04:09.970" end="00:04:11.160">And, the similarly off-course of</p>
+      <p begin="00:04:11.160" end="00:04:15.700">...speech which I also mention very quickly I think significant reason for</p>
+      <p begin="00:04:15.700" end="00:04:19.600">...recently I would say that probably qone is just there's just so much more</p>
+      <p begin="00:04:19.600" end="00:04:23.900">...secondly I would say allow the machine learning algorithms particularly</p>
+      <p begin="00:04:23.900" end="00:04:28.190">deep learning are making huge difference the second set</p>
+      <p begin="00:04:28.190" end="00:04:33.000">of things we want to talk about today is actually about a face.</p>
+      <p begin="00:04:33.000" end="00:04:34.930">And, if you look at the face and</p>
+      <p begin="00:04:34.930" end="00:04:38.940">...you could view that as the specific part of the images but</p>
+      <p begin="00:04:38.940" end="00:04:43.600">there's just so special that the so many things you can actually do...the</p>
+      <p begin="00:04:43.600" end="00:04:50.160">...recognition...id detection...other things the third...is speech.</p>
+      <p begin="00:04:50.160" end="00:04:53.870">I still...twenty-some years ago in a speech was very</p>
+      <p begin="00:04:53.870" end="00:04:56.460">...and that was around the time that</p>
+      <p begin="00:04:56.460" end="00:04:59.960">...hidden markov models started to really show the promise.</p>
+      <p begin="00:05:00.980" end="00:05:02.990">And, if you look at if you plot is all the</p>
+      <p begin="00:05:02.990" end="00:05:08.100">error rates over the years in the speech recognition error rates...coming down.</p>
+      <p begin="00:05:08.100" end="00:05:13.230">...really took a lot of years that's in the roughly about twenty years ago it was good</p>
+      <p begin="00:05:13.230" end="00:05:18.940">...age for speech recognition...speech recognition rate.</p>
+      <p begin="00:05:18.940" end="00:05:23.520">Really went down significantly but then there was about ten fifteen years of time that</p>
+      <p begin="00:05:23.520" end="00:05:28.500">the speech was not really making too much pairwise their last five years that we once</p>
+      <p begin="00:05:28.500" end="00:05:32.660">again the...the unbelievable improvement of speech.</p>
+      <p begin="00:05:32.660" end="00:05:36.640">...we get into...point that's the speech recognition is becoming</p>
+      <p begin="00:05:36.640" end="00:05:41.400">mainstream is becoming useful and we have had a number of years of...</p>
+      <p begin="00:05:41.400" end="00:05:46.520">investments you microsoft is something that I feel very excited about what we can actually often</p>
+      <p begin="00:05:46.520" end="00:05:52.010">...to the users and developers I...search should say.</p>
+      <p begin="00:05:52.010" end="00:05:55.120">The last one we talk we talk about today is perhaps the thing</p>
+      <p begin="00:05:55.120" end="00:05:59.670">I feel most excited about is actually about language understanding it's greedy to</p>
+      <p begin="00:05:59.670" end="00:06:02.740">...the phrases in the...speech.</p>
+      <p begin="00:06:02.740" end="00:06:03.980">When you put those together?</p>
+      <p begin="00:06:05.150" end="00:06:08.550">And, the language understanding a is very difficult.</p>
+      <p begin="00:06:09.700" end="00:06:13.770">As you some of you...node that's microsoft recently</p>
+      <p begin="00:06:13.770" end="00:06:16.950">announced that described translator where you we actually have</p>
+      <p begin="00:06:16.950" end="00:06:21.430">machine translation the started the from the speech then you have some</p>
+      <p begin="00:06:21.430" end="00:06:26.340">natural language understanding then you need to have the context you put those in together so today</p>
+      <p begin="00:06:26.340" end="00:06:31.870">we will show you a teaser of what's really interesting you can do in</p>
+      <p begin="00:06:31.870" end="00:06:36.780">a by actually trini all natural language understanding model in particular</p>
+      <p begin="00:06:36.780" end="00:06:41.750">using something called active learning was small amount of data that you starts...</p>
+      <p begin="00:06:41.750" end="00:06:46.350">there so runaway tail you a lot of those no details there.</p>
+      <p begin="00:06:46.350" end="00:06:49.400">So, you might ask say, you know, why now, you know,</p>
+      <p begin="00:06:49.400" end="00:06:53.590">why microsoft's what because we actually have really been</p>
+      <p begin="00:06:53.590" end="00:06:55.420">...all kind of machine learning</p>
+      <p begin="00:06:55.420" end="00:06:59.090">...fault all kind of multimedia data for long</p>
+      <p begin="00:06:59.090" end="00:07:05.370">long-time we actually started speech recognition group in a twenty three years ago study vision group</p>
+      <p begin="00:07:05.370" end="00:07:09.630">...years ago you microsoft research and we have trina tons of</p>
+      <p begin="00:07:09.630" end="00:07:14.510">different models not only for research projects but also for various products,</p>
+      <p begin="00:07:14.510" end="00:07:19.500">products like a being click on a...office?</p>
+      <p begin="00:07:19.500" end="00:07:23.470">So, we realize the couple of things one is that's even at the</p>
+      <p begin="00:07:23.470" end="00:07:28.850">microsoft's we cannot really require every developer to be machine learning</p>
+      <p begin="00:07:28.850" end="00:07:32.820">Secondly we also realize that's in a many difference companies</p>
+      <p begin="00:07:32.820" end="00:07:37.520">many different research institutes coming...was very interesting</p>
+      <p begin="00:07:37.520" end="00:07:42.330">advanced algorithms for vision visual recognition</p>
+      <p begin="00:07:42.330" end="00:07:45.770">...visual understanding speech and all those things</p>
+      <p begin="00:07:45.770" end="00:07:49.320">...use really important that we make those advanced</p>
+      <p begin="00:07:49.320" end="00:07:52.420">...algorithms...the prototypes and</p>
+      <p begin="00:07:52.420" end="00:07:56.200">...available to a large ecosystem</p>
+      <p begin="00:07:56.200" end="00:08:00.820">as people continue to contributed to those algorithms such that's</p>
+      <p begin="00:08:00.820" end="00:08:05.610">...we can actually share with everyone and the now we can boots</p>
+      <p begin="00:08:05.610" end="00:08:10.610">interesting apps not only for windows but across all kind of ecosystems</p>
+      <p begin="00:08:10.610" end="00:08:15.260">...heard from...here this morning so that's why we started this</p>
+      <p begin="00:08:15.260" end="00:08:20.010">project oxford's not too long ago and we starts.</p>
+      <p begin="00:08:20.010" end="00:08:23.150">...a set of in a web services rest api</p>
+      <p begin="00:08:23.150" end="00:08:26.460">...such that inuit anywhere...the boots, you know,</p>
+      <p begin="00:08:26.460" end="00:08:29.850">we can actually help you to start aways yes</p>
+      <p begin="00:08:29.850" end="00:08:34.240">make no mistake we want you have the...the binding of this kind of web</p>
+      <p begin="00:08:34.240" end="00:08:38.460">services with all kind of clients and hopefully</p>
+      <p begin="00:08:38.460" end="00:08:43.080">we'll be able to continue to deliver is kind of value to you.</p>
+      <p begin="00:08:43.080" end="00:08:45.470">Is what talk talking about the developers</p>
+      <p begin="00:08:45.470" end="00:08:50.230">a key requirements for any kind of api design...this st case is really</p>
+      <p begin="00:08:50.230" end="00:08:55.140">easy to use...we keep this very much in our minds as we</p>
+      <p begin="00:08:55.140" end="00:08:59.590">...designing this whole thing my joke to the team is that you just have</p>
+      <p begin="00:08:59.590" end="00:09:03.780">to designs the whole api systems so simple?</p>
+      <p begin="00:09:03.780" end="00:09:07.650">That even microsoft executives can use it so I'm going</p>
+      <p begin="00:09:07.650" end="00:09:11.920">to personally demonstrates show you a demo that actually I wrote the felines of</p>
+      <p begin="00:09:11.920" end="00:09:16.580">...and...on this enjoy</p>
+      <p begin="00:09:16.580" end="00:09:25.670">a phone in io show you a demo...switches display first.</p>
+      <p begin="00:09:25.670" end="00:09:29.770">Great I'll see you can actually see that so it's actually really</p>
+      <p begin="00:09:29.770" end="00:09:35.540">fun demo and I just give you a little bit of context and you know, a little bit of marketing each by the</p>
+      <p begin="00:09:35.540" end="00:09:40.340">bear with me so my boss the ceo of microsoft's</p>
+      <p begin="00:09:40.340" end="00:09:44.790">and the site here is actually a...cricket fan so he actually follows</p>
+      <p begin="00:09:44.790" end="00:09:50.910">...those someexciting...gains...like...unfortunately I actually don't know anything about it</p>
+      <p begin="00:09:50.910" end="00:09:54.880">and I spend too much time watching american football I guess so.</p>
+      <p begin="00:09:56.070" end="00:10:01.030">I have tech knowledge and the we have project author we have all those visual recognition</p>
+      <p begin="00:10:01.030" end="00:10:03.080">and the speech and other things so</p>
+      <p begin="00:10:03.080" end="00:10:07.610">...media is...the very simple app using this kind of api is so</p>
+      <p begin="00:10:07.610" end="00:10:13.690">he's app let me show you a demo here so I can start this and the.</p>
+      <p begin="00:10:13.690" end="00:10:18.090">Try to recognize in a couple of not all</p>
+      <p begin="00:10:18.090" end="00:10:21.820">...the clears and the which I actually care about because I</p>
+      <p begin="00:10:21.820" end="00:10:25.270">...idea follows those guys so if I</p>
+      <p begin="00:10:25.270" end="00:10:30.150">just the input a picture let's say I watch tv and the game is going I</p>
+      <p begin="00:10:30.150" end="00:10:34.370">...the photo and the from that that's I actually have a picture</p>
+      <p begin="00:10:34.370" end="00:10:39.660">of some people actually players playing but I really don't know those guys but</p>
+      <p begin="00:10:39.660" end="00:10:44.120">I can submits this picture to the kind of web services that are</p>
+      <p begin="00:10:44.120" end="00:10:47.120">butte using project oxford's api</p>
+      <p begin="00:10:47.120" end="00:10:51.920">is and I submit that's so now this picture is actually going there as you can</p>
+      <p begin="00:10:51.920" end="00:10:56.470">see very quickly and those two people identify...and the</p>
+      <p begin="00:10:56.470" end="00:10:59.930">...the names again I want to tell you that those two names</p>
+      <p begin="00:10:59.930" end="00:11:05.460">that amount a group of names that actually I wanted the system to recognize so this</p>
+      <p begin="00:11:05.460" end="00:11:09.340">mi actually once, you know,...abouts the</p>
+      <p begin="00:11:09.340" end="00:11:13.730">...so what I'm going to do is actually now I connectivity reads chewed the</p>
+      <p begin="00:11:13.730" end="00:11:17.730">...search engine so now is actually senses being search engine</p>
+      <p begin="00:11:17.730" end="00:11:22.510">what's different here is that I actually enhances the being search result with</p>
+      <p begin="00:11:22.510" end="00:11:28.710">another set off api services powered by project...that is actually</p>
+      <p begin="00:11:28.710" end="00:11:34.840">speech so let me see if you that works here you probably see these that this</p>
+      <p begin="00:11:34.840" end="00:11:42.260">...symbol years I presses so I just want to know more about...so.</p>
+      <p begin="00:11:42.260" end="00:11:47.240">How old is he?</p>
+      <p begin="00:11:47.240" end="00:11:54.490">Was pretty good he's only twenty six while he's doing really well maybe even as a try.</p>
+      <p begin="00:11:54.490" end="00:12:02.570">Where was he born?</p>
+      <p begin="00:12:02.570" end="00:12:06.130">All rights so you can imagine ads in a wes this kind of web services</p>
+      <p begin="00:12:06.130" end="00:12:11.100">...here and you can do a lot of interesting interactions so again adding</p>
+      <p begin="00:12:11.100" end="00:12:15.990">the point is that in a how can we really think about to note offering this set of api from speech</p>
+      <p begin="00:12:15.990" end="00:12:19.210">to vision to phase to language so that we can help you</p>
+      <p begin="00:12:19.210" end="00:12:22.220">use a developers to add the smarts.</p>
+      <p begin="00:12:22.220" end="00:12:25.210">To the beta and the application attributing so we</p>
+      <p begin="00:12:25.210" end="00:12:40.280">that I'm going to invite the ryan to come up to tell you a lot of the glorious details.</p>
+      <p begin="00:12:40.280" end="00:12:44.320">...so my name's...gaussian...program manager in technology</p>
+      <p begin="00:12:44.320" end="00:12:48.750">and research I'll tell you a little bit more about the services that we're announcing today with project</p>
+      <p begin="00:12:48.750" end="00:12:50.210">oxford.</p>
+      <p begin="00:12:50.210" end="00:12:51.980">So, first off as we come back to</p>
+      <p begin="00:12:51.980" end="00:12:57.470">...mentioning earlier about how ease of ease of use and how that was kind of a guiding principle</p>
+      <p begin="00:12:57.470" end="00:13:02.220">...services so as we built these api is against harris joke about</p>
+      <p begin="00:13:02.220" end="00:13:08.090">so easy...even microsoft executive can use it things like detection and identification</p>
+      <p begin="00:13:08.090" end="00:13:12.840">very complicated models in the back and very hard to do but we just two lines of code we</p>
+      <p begin="00:13:12.840" end="00:13:17.200">have one-line protection one-line to identify it very easy to include these</p>
+      <p begin="00:13:17.200" end="00:13:23.080">and any application let me talk a bit more about which services...talking about today?</p>
+      <p begin="00:13:23.080" end="00:13:25.830">So, within vision we have...services that you can</p>
+      <p begin="00:13:25.830" end="00:13:29.110">...recognized the contents of images we also</p>
+      <p begin="00:13:29.110" end="00:13:32.880">...you identify words within those images and finally we</p>
+      <p begin="00:13:32.880" end="00:13:39.160">...you generate thumbnails I keep more of the content within your cropped photos.</p>
+      <p begin="00:13:39.160" end="00:13:44.710">Base api is a complex and specialized set of tasks within vision we</p>
+      <p begin="00:13:44.710" end="00:13:48.490">...of rest api is that you cannot only detect faces you can described</p>
+      <p begin="00:13:48.490" end="00:13:53.090">...even predict some features about the spaces but we also...you take a set</p>
+      <p begin="00:13:53.090" end="00:13:58.080">of photos that you've never-seen-before you've never label and will group them around the people that are</p>
+      <p begin="00:13:58.080" end="00:14:04.760">in those photos and finally we provide the set of tools that you can do identification task that</p>
+      <p begin="00:14:04.760" end="00:14:07.250">...has application?</p>
+      <p begin="00:14:07.250" end="00:14:11.600">With the speech services we are provide you the ability to both here</p>
+      <p begin="00:14:11.600" end="00:14:16.060">users and talk with your users speech recognition you can convert audio into</p>
+      <p begin="00:14:16.060" end="00:14:20.690">taxed with the text-to-speech you can easily generate audio files to</p>
+      <p begin="00:14:20.690" end="00:14:25.890">speak back to your users all with across multiple languages and finally</p>
+      <p begin="00:14:25.890" end="00:14:29.730">...touch on the band was helps you really understand the</p>
+      <p begin="00:14:29.730" end="00:14:34.700">intent behind words and behind phrases you can understand only what...of actions you</p>
+      <p begin="00:14:34.700" end="00:14:39.180">want to take you can also say what topics you'd like to take those actions on</p>
+      <p begin="00:14:39.180" end="00:14:42.300">...the our of active learning was makes it easy for you to get a model</p>
+      <p begin="00:14:42.300" end="00:14:46.850">...post-it and building your application around that.</p>
+      <p begin="00:14:46.850" end="00:14:49.720">So, first with a vision api as.</p>
+      <p begin="00:14:49.720" end="00:14:53.040">We've built in collaboration with the bing team and these help you make</p>
+      <p begin="00:14:53.040" end="00:14:57.900">the most of your images and understand what's happening inside of them so the</p>
+      <p begin="00:14:57.900" end="00:15:01.500">analyze image service provides a set of features that describe</p>
+      <p begin="00:15:01.500" end="00:15:05.610">...and is built specifically with the bing</p>
+      <p begin="00:15:05.610" end="00:15:11.100">the image search team so on the left-hand side of the screen you can see input</p>
+      <p begin="00:15:11.100" end="00:15:15.370">photo with just this photo input into the analyze image rest api</p>
+      <p begin="00:15:15.370" end="00:15:21.060">service we can start to describe what type of images this is a photograph is it in</p>
+      <p begin="00:15:21.060" end="00:15:27.630">...color is animated it align drawing...clip art things like that?</p>
+      <p begin="00:15:27.630" end="00:15:31.600">Content is what we're really drawing on beings image understanding</p>
+      <p begin="00:15:31.600" end="00:15:35.800">so the first item you'll see there is categories so given just this photo of aman</p>
+      <p begin="00:15:35.800" end="00:15:40.780">swimming we can return back and say well it really looks like this is someone swimming</p>
+      <p begin="00:15:40.780" end="00:15:45.870">so whether or not or whatever the photo into being we can tell you there's a city scape there's cars</p>
+      <p begin="00:15:45.870" end="00:15:51.600">there's a cap is a dog we can help you describe the image with only the images the input we have a</p>
+      <p begin="00:15:51.600" end="00:15:56.110">...of scores around adult content you can understand if there's pornographic content within</p>
+      <p begin="00:15:56.110" end="00:16:00.930">a photograph this can be very useful doing some sort of content moderation and</p>
+      <p begin="00:16:00.930" end="00:16:05.820">finally faces which makes use of the face api...which...talk about in more detail later on</p>
+      <p begin="00:16:05.820" end="00:16:10.560">what you understand you know-how many faces are and photo as well as predicting</p>
+      <p begin="00:16:10.560" end="00:16:15.870">agent even the gender and the location of where that faces found within the photo.</p>
+      <p begin="00:16:15.870" end="00:16:20.450">The final set of features on mention from the analyze image service are colors.</p>
+      <p begin="00:16:20.450" end="00:16:25.160">So, we can describe this service what are the dominant colors in the front of the image in the back of the</p>
+      <p begin="00:16:25.160" end="00:16:28.660">image we can also tell you the accent color that would work best with the images</p>
+      <p begin="00:16:28.660" end="00:16:33.230">so by knowing this color information about an image you can make it look beautiful</p>
+      <p begin="00:16:33.230" end="00:16:40.220">within your application without having to do a bunch of custom work for each individual photo.</p>
+      <p begin="00:16:40.220" end="00:16:44.290">The object character recognition service once you identify and recognize words within</p>
+      <p begin="00:16:44.290" end="00:16:49.860">a photo so with this example on the left-hand side this is the only input into</p>
+      <p begin="00:16:49.860" end="00:16:52.130">the rest service and not only</p>
+      <p begin="00:16:52.130" end="00:16:55.920">doesn't recognize the total text within the photo and where the line</p>
+      <p begin="00:16:55.920" end="00:17:00.710">breaks are but it can also predict what language the seems to be</p>
+      <p begin="00:17:00.710" end="00:17:05.390">what orientation the words exist in...give you a bounding boxy you can</p>
+      <p begin="00:17:05.390" end="00:17:13.730">recognize within the photo where each of the individual words ends up being?</p>
+      <p begin="00:17:13.730" end="00:17:15.650">With the smart thumbnail service</p>
+      <p begin="00:17:15.650" end="00:17:19.730">often have a need to crop or scale photos but when you do</p>
+      <p begin="00:17:19.730" end="00:17:28.640">that it can be challenging to make sure the important content remain center of the frame.</p>
+      <p begin="00:17:28.640" end="00:17:31.250">On the left-hand side you can see two sets</p>
+      <p begin="00:17:31.250" end="00:17:35.930">of input images and on the right-hand side you can see multiple different cropping is</p>
+      <p begin="00:17:35.930" end="00:17:39.670">for these images so right now you can see that the dominant object</p>
+      <p begin="00:17:39.670" end="00:17:43.310">and both of those photos can sometimes be lost.</p>
+      <p begin="00:17:43.310" end="00:17:46.370">Especially in the right most side we have kind of the most</p>
+      <p begin="00:17:46.370" end="00:17:51.000">...cropping going on so when we run these photos to the</p>
+      <p begin="00:17:51.000" end="00:17:53.160">smartkom now service.</p>
+      <p begin="00:17:53.160" end="00:17:57.860">Switch to hear it keeps more of the content within the frame.</p>
+      <p begin="00:17:57.860" end="00:18:01.120">...go back just to show that again so here which is kind of</p>
+      <p begin="00:18:01.120" end="00:18:04.330">a naive cropping we start losing some of the some of the content</p>
+      <p begin="00:18:04.330" end="00:18:08.950">and the photos especially if you look at the right most items but through the service</p>
+      <p begin="00:18:08.950" end="00:18:12.360">...shift and keep that front-and-center this can be</p>
+      <p begin="00:18:12.360" end="00:18:19.050">really helpful when you're trying to put photos and multiple spots in your application.</p>
+      <p begin="00:18:19.050" end="00:18:23.030">With the face api is this is a set of computer vision tasks</p>
+      <p begin="00:18:23.030" end="00:18:27.130">...be recognize human faces within images.</p>
+      <p begin="00:18:27.130" end="00:18:30.780">So, the first...talk about is just detection is one of</p>
+      <p begin="00:18:30.780" end="00:18:36.020">the core calls that a lot of the otherfeatures face api built on top of so</p>
+      <p begin="00:18:36.020" end="00:18:40.280">here given input image example you can see on the left we get</p>
+      <p begin="00:18:40.280" end="00:18:44.180">the output...jason object on the right</p>
+      <p begin="00:18:44.180" end="00:18:49.000">...first detection looks for one or more faces within a photograph...only does</p>
+      <p begin="00:18:49.000" end="00:18:54.520">a detect that face and tell you how many found where within the photo that faces</p>
+      <p begin="00:18:54.520" end="00:18:57.180">bound but even tells,... what is the pos</p>
+      <p begin="00:18:57.180" end="00:19:01.490">...the person looking it also predicts things like</p>
+      <p begin="00:19:01.490" end="00:19:05.590">age predicts things like gender so these are sort of experimental features that</p>
+      <p begin="00:19:05.590" end="00:19:10.570">...surfacing with the face api...but, these evolve over time</p>
+      <p begin="00:19:10.570" end="00:19:15.690">improve over time finally it gives you set...facial landmarks so the visual</p>
+      <p begin="00:19:15.690" end="00:19:19.500">...you can tell where the eyes are where the noses left</p>
+      <p begin="00:19:19.500" end="00:19:27.380">...mouth right...the math you can...of all these points across the detected faces?</p>
+      <p begin="00:19:27.380" end="00:19:29.200">If I switch over to verification,</p>
+      <p begin="00:19:29.200" end="00:19:32.440">verification built on top of detection</p>
+      <p begin="00:19:32.440" end="00:19:37.430">with verification you give to input images detect spaces and</p>
+      <p begin="00:19:37.430" end="00:19:45.860">...compares the to see whether or not they're likely to be the same person in gives you back...confidence score for that.</p>
+      <p begin="00:19:45.860" end="00:19:50.240">Grouping...to build on top of detection and the grouping api</p>
+      <p begin="00:19:50.240" end="00:19:54.770">call takes in a set of images in returns back</p>
+      <p begin="00:19:54.770" end="00:20:00.080">those images clustered around the detected face within those photos with</p>
+      <p begin="00:20:00.080" end="00:20:06.890">no extra information...kind of the start to being able to tag collections of photos.</p>
+      <p begin="00:20:06.890" end="00:20:10.940">Moving on to identification, identification is a slightly more complicated</p>
+      <p begin="00:20:10.940" end="00:20:13.980">task we provide a separate has that makes...easy to build within</p>
+      <p begin="00:20:13.980" end="00:20:19.080">to your application so the first thing you'll do if you want to start identifying faces within a photo</p>
+      <p begin="00:20:19.080" end="00:20:23.590">...group of a person group so in this example...that</p>
+      <p begin="00:20:24.690" end="00:20:28.850">Then for each person group you can go and you can add one or more person</p>
+      <p begin="00:20:28.850" end="00:20:33.630">objects you can describe what that object is so in this case at one of my colleagues</p>
+      <p begin="00:20:33.630" end="00:20:39.480">...now when we go back to the detection call that we talked about earlier</p>
+      <p begin="00:20:39.480" end="00:20:44.000">at the end of that...given the opportunity to basically ad that face to</p>
+      <p begin="00:20:44.000" end="00:20:48.440">in existing person object so overtime with a couple of detection calls you can</p>
+      <p begin="00:20:48.440" end="00:20:55.450">build-up a set of example faces for each of the person objects in your group.</p>
+      <p begin="00:20:55.450" end="00:21:00.220">Then you can make the identify call where you take a new unlabeled photo capacity</p>
+      <p begin="00:21:00.220" end="00:21:04.580">and exist against your existing person group and it will tell you which</p>
+      <p begin="00:21:04.580" end="00:21:09.450">person object is this most likely to be or if it doesn't match for any of them will tell you that</p>
+      <p begin="00:21:09.450" end="00:21:13.950">it's an unknown base.</p>
+      <p begin="00:21:13.950" end="00:21:15.720">So, let me switch over to the speech api</p>
+      <p begin="00:21:15.720" end="00:21:19.620">as and talk about how we can help you understand the content of audio.</p>
+      <p begin="00:21:19.620" end="00:21:23.230">Speech api is powered by bing we provide to main services the</p>
+      <p begin="00:21:23.230" end="00:21:26.120">first voice recognition which converts speech.</p>
+      <p begin="00:21:26.120" end="00:21:29.600">And, spoken audio into a string.</p>
+      <p begin="00:21:29.600" end="00:21:36.400">...output so you can specify what type of audio file you'd like to generate.</p>
+      <p begin="00:21:36.400" end="00:21:41.180">With voice recognition impasse an audio stream or file...you get back a set of</p>
+      <p begin="00:21:41.180" end="00:21:43.370">texturing...same back...the</p>
+      <p begin="00:21:43.370" end="00:21:47.490">...autonomous great speech recognition and at</p>
+      <p begin="00:21:47.490" end="00:21:52.340">...announcing this was support for multiple different languages.</p>
+      <p begin="00:21:52.340" end="00:21:56.340">With voice recognition there's two main...at this works in a short form and along for</p>
+      <p begin="00:21:56.340" end="00:22:00.300">...short form is really when you think users are going to be issuing single</p>
+      <p begin="00:22:00.300" end="00:22:04.400">sentences you know, little fifteen seconds or...kind of utterances</p>
+      <p begin="00:22:04.400" end="00:22:09.260">to your application and you can see example on the bottom of the screen so if the input to</p>
+      <p begin="00:22:09.260" end="00:22:13.420">this was four hundred fifty sixth street san-francisco short form service</p>
+      <p begin="00:22:13.420" end="00:22:18.090">returns back and says well here's a bunch of translations it'll even come back and say, you know,</p>
+      <p begin="00:22:18.090" end="00:22:22.870">there might be multiple translations for this or multiple transcriptions for this so here are</p>
+      <p begin="00:22:22.870" end="00:22:28.900">...the five most likely ones in one form...this can deal with audio files up to two minutes</p>
+      <p begin="00:22:28.900" end="00:22:30.170">...length.</p>
+      <p begin="00:22:30.170" end="00:22:33.350">And, it returns back strings at each identified</p>
+      <p begin="00:22:33.350" end="00:22:39.070">sentence pause from the service now in both of these examples you can also make use of</p>
+      <p begin="00:22:39.070" end="00:22:43.970">a called partial results when you call the service you can tell it instead of just giving me</p>
+      <p begin="00:22:43.970" end="00:22:48.560">the final result as you're in the middle of processing this audio file give-me</p>
+      <p begin="00:22:48.560" end="00:22:52.140">results along the way.</p>
+      <p begin="00:22:52.140" end="00:22:54.560">As...you access the voice recognition service</p>
+      <p begin="00:22:54.560" end="00:22:58.550">...to main ways to do this with project oxford the first is a set</p>
+      <p begin="00:22:58.550" end="00:23:01.980">...api as and the second is of client</p>
+      <p begin="00:23:01.980" end="00:23:06.740">...for windows desktop android and ios both get access to the</p>
+      <p begin="00:23:06.740" end="00:23:11.020">same back-end but the primary difference you'll notice between the rest api and the</p>
+      <p begin="00:23:11.020" end="00:23:15.300">client library service is that we use the client library this enables you to do</p>
+      <p begin="00:23:15.300" end="00:23:20.010">the long form audio processing in addition the client library is what enables</p>
+      <p begin="00:23:20.010" end="00:23:24.570">this partial results to come back and this is because the client libraries making use of a</p>
+      <p begin="00:23:24.570" end="00:23:29.220">web socket connection so can keep streaming those results back as...making progress on them</p>
+      <p begin="00:23:30.520" end="00:23:36.570">and also talk briefly about windows ten which has a set of speech api...speech api is in windows</p>
+      <p begin="00:23:36.570" end="00:23:41.070">ten provide a and even further enrich set of speech features things like</p>
+      <p begin="00:23:41.070" end="00:23:46.240">voice activation or dealing with microphone array processing or extensible</p>
+      <p begin="00:23:46.240" end="00:23:50.850">grammar control specific cheer voice recognition needs.</p>
+      <p begin="00:23:50.850" end="00:23:55.640">So, these three different ways of accessing the voice recognition services is really up to</p>
+      <p begin="00:23:55.640" end="00:24:00.470">you the developers as to what best fits your application what's best fits</p>
+      <p begin="00:24:00.470" end="00:24:04.110">your needs for what features you need support and on the</p>
+      <p begin="00:24:04.110" end="00:24:07.840">project oxford website we end up having sample code...some descriptions</p>
+      <p begin="00:24:07.840" end="00:24:15.070">...a bit more detail as to the differences between these three different ways of doing voice recognition.</p>
+      <p begin="00:24:15.070" end="00:24:19.950">Voice output what-you actually now talk to your users so you can generate files fifteen</p>
+      <p begin="00:24:19.950" end="00:24:24.410">seconds in length and has multiple languages that...seventeen actually</p>
+      <p begin="00:24:24.410" end="00:24:28.680">...launch and across the seventeen languages many of them have both male</p>
+      <p begin="00:24:28.680" end="00:24:32.780">and female voices so depending what type of audio you like to send your users you</p>
+      <p begin="00:24:32.780" end="00:24:37.650">can pick that along the bottom of history and if this continues with...ease of</p>
+      <p begin="00:24:37.650" end="00:24:42.570">use description so all I have to do when I call the voice output service</p>
+      <p begin="00:24:42.570" end="00:24:47.510">...the language I'd like I pick which voice I'd like to use and then they just pass in</p>
+      <p begin="00:24:47.510" end="00:24:53.570">the string and it returns back...audio file so let me quickly switch to the</p>
+      <p begin="00:24:53.570" end="00:25:01.850">project oxford website and I'll show you an example of these two services?</p>
+      <p begin="00:25:01.850" end="00:25:10.640">To first off have...speech detects service here.</p>
+      <p begin="00:25:10.640" end="00:25:14.970">Happy to be and build in san francisco.</p>
+      <p begin="00:25:14.970" end="00:25:16.280">Listening</p>
+      <p begin="00:25:16.280" end="00:25:20.780">...the text and as it was going you can see that the words were adjusting</p>
+      <p begin="00:25:20.780" end="00:25:25.460">and shifting themselves over time that's the partial results at work.</p>
+      <p begin="00:25:25.460" end="00:25:33.070">Similarly with text-to-speech.</p>
+      <p begin="00:25:33.070" end="00:25:33.980">In type in the</p>
+      <p begin="00:25:33.980" end="00:25:40.070">text that we'd like to have and then even see that in this case</p>
+      <p begin="00:25:40.070" end="00:25:44.850">always specified call is that the language english</p>
+      <p begin="00:25:44.850" end="00:25:47.730">and we'd like to use this voice.</p>
+      <p begin="00:25:48.750" end="00:25:53.080">And, we have...and welcome to...</p>
+      <p begin="00:25:53.080" end="00:25:55.920">Great very easy to start having</p>
+      <p begin="00:25:55.920" end="00:26:03.680">dialogue for users with audio and understanding what they're saying.</p>
+      <p begin="00:26:03.680" end="00:26:06.190">And, now like to switch to...which stands</p>
+      <p begin="00:26:06.190" end="00:26:11.080">for language understanding intelligence service really excited to show you how</p>
+      <p begin="00:26:11.080" end="00:26:17.340">...can bring natural language processing injure applications.</p>
+      <p begin="00:26:17.340" end="00:26:22.730">just as voice recognition was able to convert audio into taxed</p>
+      <p begin="00:26:22.730" end="00:26:26.480">you convert that text into a set of structured understandings</p>
+      <p begin="00:26:27.720" end="00:26:32.400">so-you can take this phrase like news about flight delays and you can get back</p>
+      <p begin="00:26:32.400" end="00:26:36.750">...response on the right that ends up saying you're not only is</p>
+      <p begin="00:26:36.750" end="00:26:40.180">find news the most blakely intent.</p>
+      <p begin="00:26:41.380" end="00:26:48.700">But, the topic that we want to operate on...delays.</p>
+      <p begin="00:26:48.700" end="00:26:52.060">So, with...you can build this type of model for yourself if</p>
+      <p begin="00:26:52.060" end="00:26:57.000">you're application by providing just a few examples with labels so now let me switch</p>
+      <p begin="00:26:57.000" end="00:27:06.210">the browser and I'll show you how easy it is...end of actually building a...model.</p>
+      <p begin="00:27:06.210" end="00:27:08.020">The first off.</p>
+      <p begin="00:27:08.020" end="00:27:12.620">At launch who is going to be in private...</p>
+      <p begin="00:27:12.620" end="00:27:16.440">Sign-out this is the page you'll see when you visit the lou's website.</p>
+      <p begin="00:27:16.440" end="00:27:20.500">And, first off as a private preview means we're not letting everyone into the</p>
+      <p begin="00:27:20.500" end="00:27:24.810">siteat first so you come in and you sign up for</p>
+      <p begin="00:27:24.810" end="00:27:29.520">...invite code and you give us a few examples of what you'd like to use...</p>
+      <p begin="00:27:29.520" end="00:27:34.340">for and then over time will be letting in more and more developers to the service and this is really</p>
+      <p begin="00:27:34.340" end="00:27:39.080">so that we can get feedback from the developer audiences to what changes you like to see</p>
+      <p begin="00:27:39.080" end="00:27:47.710">...what's working and what's not so I'll sign-in.</p>
+      <p begin="00:27:47.710" end="00:27:52.920">now I have in mind and application that I'd like to build around being able to find</p>
+      <p begin="00:27:52.920" end="00:27:57.310">send share and read use topics and I want to be able to access this</p>
+      <p begin="00:27:57.310" end="00:28:01.430">...I want to be able to what my users interact with it the audio</p>
+      <p begin="00:28:01.430" end="00:28:04.920">so the first thing I'll do is also a new application</p>
+      <p begin="00:28:06.180" end="00:28:14.200">...news chat find share...news...news.</p>
+      <p begin="00:28:14.200" end="00:28:17.500">...create a new application forming.</p>
+      <p begin="00:28:17.500" end="00:28:19.040">And, what's create.</p>
+      <p begin="00:28:19.040" end="00:28:21.370">I can then come in and I can choose to</p>
+      <p begin="00:28:21.370" end="00:28:24.470">edit the application now with</p>
+      <p begin="00:28:24.470" end="00:28:30.630">...you'll notice on the left-hand side of the screen that there's</p>
+      <p begin="00:28:30.630" end="00:28:32.680">So, intense mapped to...a</p>
+      <p begin="00:28:32.680" end="00:28:38.060">...full sentence is in the app some application I want to be able to find news I want to be able to</p>
+      <p begin="00:28:38.060" end="00:28:42.920">share it with someone and I want to be able to read a specific item.</p>
+      <p begin="00:28:42.920" end="00:28:46.270">And, the entities in this case are the</p>
+      <p begin="00:28:46.270" end="00:28:51.010">objects we take those actions on when I go to find news...news about a topic if I want to</p>
+      <p begin="00:28:51.010" end="00:28:55.330">send it to someone I want to send it to a specific person so the first thing I'll do is I'll</p>
+      <p begin="00:28:55.330" end="00:29:00.800">define some entities so when I go to send I want to be able</p>
+      <p begin="00:29:02.210" end="00:29:08.200">And, when I go to find news...have a...topic?</p>
+      <p begin="00:29:08.200" end="00:29:09.610">Similarly we can go</p>
+      <p begin="00:29:09.610" end="00:29:15.620">up here and we can create those intense so I mentioned we have share news.</p>
+      <p begin="00:29:15.620" end="00:29:19.790">We also have find news.</p>
+      <p begin="00:29:19.790" end="00:29:22.680">Finally will have read news.</p>
+      <p begin="00:29:22.680" end="00:29:24.720">And, intent.</p>
+      <p begin="00:29:24.720" end="00:29:28.080">Clear these notifications.</p>
+      <p begin="00:29:28.080" end="00:29:33.180">And, now that I've told...you know, what actions I'd like toI'd like my model</p>
+      <p begin="00:29:33.180" end="00:29:37.990">to understand what type of entities I'm going to look to get back now we switch into this main have</p>
+      <p begin="00:29:37.990" end="00:29:42.370">...this new utterances area are you start giving...examples and you tell...you know,</p>
+      <p begin="00:29:42.370" end="00:29:46.360">this is what I'd like to handle and this is how I expect users to</p>
+      <p begin="00:29:46.360" end="00:29:51.570">interactive my application to find news about bill?</p>
+      <p begin="00:29:51.570" end="00:29:56.090">So, the first thing that I'll do when this comes up in this drop down box over here I can</p>
+      <p begin="00:29:56.090" end="00:29:58.910">pick what intend this phrase matches to</p>
+      <p begin="00:29:58.910" end="00:30:03.590">...finding news this is a find news intent and then in the phrase that I've</p>
+      <p begin="00:30:03.590" end="00:30:07.370">typed I can select any of the words or really any part of the</p>
+      <p begin="00:30:07.370" end="00:30:12.840">string I can dragon highlight and then I can say what entity this is to find use about</p>
+      <p begin="00:30:12.840" end="00:30:19.130">...the news topic so label that approximate I could try another way of asking for news</p>
+      <p begin="00:30:19.130" end="00:30:24.930">so tell me news about.</p>
+      <p begin="00:30:24.930" end="00:30:29.480">Again, I'll come over here I'll say that this is a find news example...is</p>
+      <p begin="00:30:29.480" end="00:30:33.590">...news topic and...submit this to...now I can give</p>
+      <p begin="00:30:33.590" end="00:30:39.850">some examples of other intense so share with jim.</p>
+      <p begin="00:30:39.850" end="00:30:42.670">We'll say that as a share news intent.</p>
+      <p begin="00:30:42.670" end="00:30:46.080">Jim is the recipient.</p>
+      <p begin="00:30:46.080" end="00:30:51.200">And, now one of the things that tends to be very valuable for model building is providing negative</p>
+      <p begin="00:30:51.200" end="00:30:54.620">examples something that I know that this model should never identify</p>
+      <p begin="00:30:54.620" end="00:31:00.610">within intent so just one example is what is the population seattle this</p>
+      <p begin="00:31:00.610" end="00:31:03.890">is something my news minding apple never understand so,</p>
+      <p begin="00:31:03.890" end="00:31:07.420">it's pretty labeled as none here and I can just submit.</p>
+      <p begin="00:31:07.420" end="00:31:10.800">Now you see me add a recipient</p>
+      <p begin="00:31:10.800" end="00:31:14.480">...topics I've defined two types of entities that are really important</p>
+      <p begin="00:31:14.480" end="00:31:19.090">...application but when I think about how I want the app to be able to read news so I want</p>
+      <p begin="00:31:19.090" end="00:31:24.380">users to be able to say things like read the third item so third in that case would be the way that I want to select</p>
+      <p begin="00:31:24.380" end="00:31:26.810">...item from the lest but with...we have a set of</p>
+      <p begin="00:31:26.810" end="00:31:31.550">prebuilt in entities and they're coming from...so for a lot of common use</p>
+      <p begin="00:31:31.550" end="00:31:36.040">cases we provide prebuilt entity understanding models so that you don't have to worry about</p>
+      <p begin="00:31:36.040" end="00:31:40.500">defining these yourself so everything from being able to understand</p>
+      <p begin="00:31:40.500" end="00:31:46.060">temperature the bottom here being able to understand dates and times these are things that</p>
+      <p begin="00:31:46.060" end="00:31:51.490">...comes ready to help you with is important entity for your application even something like</p>
+      <p begin="00:31:51.490" end="00:31:56.360">this encyclopedia entity identifier is preloaded with thousands of different</p>
+      <p begin="00:31:56.360" end="00:32:01.680">entities and topics locations places things like that and, this can be a massive time</p>
+      <p begin="00:32:01.680" end="00:32:05.920">saver when you're trying to build a model so I'll come back up here</p>
+      <p begin="00:32:05.920" end="00:32:10.340">and also to ordeal...how I'm going to refer to things my application so</p>
+      <p begin="00:32:10.340" end="00:32:16.240">now when I come in and I say something like read me the third item.</p>
+      <p begin="00:32:16.240" end="00:32:18.220">Similar window that you've seen before but</p>
+      <p begin="00:32:18.220" end="00:32:22.390">because I said orders are important my application is already labeled that's</p>
+      <p begin="00:32:22.390" end="00:32:26.430">...in order now so all I have to do is say, you know,</p>
+      <p begin="00:32:26.430" end="00:32:31.100">this is a read news intent...submit that.</p>
+      <p begin="00:32:31.100" end="00:32:35.280">So, now you'll notice along the bottom of the screen that looses re picked up and started training</p>
+      <p begin="00:32:35.280" end="00:32:38.720">...look you've entered in a few utterances I'm going to train a model for</p>
+      <p begin="00:32:38.720" end="00:32:45.300">you so now what happens when they come in and I say,... find news about asher.</p>
+      <p begin="00:32:45.300" end="00:32:48.060">So, in this case...with those couple of examples this is enough to get</p>
+      <p begin="00:32:48.060" end="00:32:52.630">...model built-in...and it can start trying to match these utterances no</p>
+      <p begin="00:32:52.630" end="00:32:55.500">find use about asher so it's already said look I think adders</p>
+      <p begin="00:32:55.500" end="00:32:58.770">...topic and I'm pretty sure I'm very sure that</p>
+      <p begin="00:32:58.770" end="00:33:00.870">...uses the intent.</p>
+      <p begin="00:33:00.870" end="00:33:05.950">We can get some...and we can say things like, you know,</p>
+      <p begin="00:33:05.950" end="00:33:09.870">we could say,...tell me.</p>
+      <p begin="00:33:09.870" end="00:33:10.990">About seattle.</p>
+      <p begin="00:33:12.280" end="00:33:16.830">Again, find news is labeled this intent didn't quite get entity we</p>
+      <p begin="00:33:16.830" end="00:33:21.010">label this being news topic.</p>
+      <p begin="00:33:21.010" end="00:33:25.770">So, now I've labeled a few utterances retrain the application</p>
+      <p begin="00:33:25.770" end="00:33:30.610">manually and I'm ready to start trying this out so I come back to</p>
+      <p begin="00:33:30.610" end="00:33:34.140">the my application page another's published button is available</p>
+      <p begin="00:33:35.160" end="00:33:38.200">...publish web service was happening here is</p>
+      <p begin="00:33:38.200" end="00:33:40.770">...going into taking the model that I've trained</p>
+      <p begin="00:33:40.770" end="00:33:45.890">...hosting it...and it's giving it at the endpoint that I can start...over</p>
+      <p begin="00:33:45.890" end="00:33:49.460">...over http so now I can type something like</p>
+      <p begin="00:33:50.540" end="00:33:57.220">share with john.</p>
+      <p begin="00:33:57.220" end="00:34:01.380">Little bit bigger and now you can see this is the response I get back</p>
+      <p begin="00:34:01.380" end="00:34:05.390">from my model so share news is the highest ranked</p>
+      <p begin="00:34:05.390" end="00:34:06.780">intent.</p>
+      <p begin="00:34:06.780" end="00:34:11.240">Didn't quite get the think we get the entity there but that's okay I'll show you how we can go back and</p>
+      <p begin="00:34:11.240" end="00:34:16.280">adjust that later on we can try a few more examples...with...we can say find</p>
+      <p begin="00:34:16.280" end="00:34:21.970">news about cricket now in this case lewis's predicted the intent</p>
+      <p begin="00:34:21.970" end="00:34:26.880">...find news and it's pulled out cricket as being the news topic that I'd like</p>
+      <p begin="00:34:26.880" end="00:34:31.010">to work against you can...in my application as you see this is</p>
+      <p begin="00:34:31.010" end="00:34:34.080">...news I can take this entity that is identified and I can just</p>
+      <p begin="00:34:34.080" end="00:34:38.200">operating on that directly I don't have to do a lot of extra work to try and figure</p>
+      <p begin="00:34:38.200" end="00:34:43.250">out what that entity ends up being now let me give...example of something that I'm pretty sure this</p>
+      <p begin="00:34:43.250" end="00:34:48.030">...model is not going to of generalize to yet so when I go to share thing, you know,</p>
+      <p begin="00:34:48.030" end="00:34:53.890">people might want to be able to say something like chute that to james?</p>
+      <p begin="00:34:53.890" end="00:34:58.410">...returned hasn't identified any entities here and in fact it said that the</p>
+      <p begin="00:34:58.410" end="00:35:03.370">most likely intent in this case is none...catch-all bucket that says look this doesn't seem</p>
+      <p begin="00:35:03.370" end="00:35:09.470">to match any of the other intense that you've previously define for me.</p>
+      <p begin="00:35:09.470" end="00:35:12.790">So, I will now come back to</p>
+      <p begin="00:35:12.790" end="00:35:17.870">...will close this window...come into edit.</p>
+      <p begin="00:35:17.870" end="00:35:23.650">Nouns main page if I come up to the suggestion tab so now you're going to see, you know,</p>
+      <p begin="00:35:23.650" end="00:35:28.180">all these the three utterances that I've issued against the application</p>
+      <p begin="00:35:28.180" end="00:35:30.550">...against the model</p>
+      <p begin="00:35:30.550" end="00:35:34.840">and these aren't necessarily going to be in the exact order that I've issued</p>
+      <p begin="00:35:34.840" end="00:35:40.490">...against the applicationthe reason for this is thanks active learning what</p>
+      <p begin="00:35:40.490" end="00:35:44.840">...does it orders these based on the ones that are most likely to</p>
+      <p begin="00:35:44.840" end="00:35:50.550">improve the model so the one to the top of improving the model the most if I label them</p>
+      <p begin="00:35:50.550" end="00:35:56.030">and doing this by hand here where I've labeled three or four of them ...not too hard it's very quick and easy to</p>
+      <p begin="00:35:56.030" end="00:36:00.770">...these utterances but once you've built kind of an initial model into your application you</p>
+      <p begin="00:36:00.770" end="00:36:04.430">...it with a couple of people and maybe you're getting hundreds even thousands or</p>
+      <p begin="00:36:04.430" end="00:36:09.300">tens of thousands utterances coming in a day this is one of the biggest time savers of</p>
+      <p begin="00:36:09.300" end="00:36:13.690">...so it always puts...the top the ones that are most important for you to</p>
+      <p begin="00:36:13.690" end="00:36:17.870">label to make the model better so when you have some time to go in label those</p>
+      <p begin="00:36:17.870" end="00:36:23.310">are always working on the most impactful ones so this is the same interface that...showing before so shoot</p>
+      <p begin="00:36:23.310" end="00:36:31.340">that to james I'm going to say that this is share news and also the james a recipient.</p>
+      <p begin="00:36:31.340" end="00:36:38.480">Share with john is a recipient but share news are already predicting correctly.</p>
+      <p begin="00:36:38.480" end="00:36:42.740">And, find use about cricket this was labeled correctly both in terms of the intend and</p>
+      <p begin="00:36:42.740" end="00:36:46.410">the entity so awesome at that one.</p>
+      <p begin="00:36:46.410" end="00:36:51.190">The one thing on the left-hand side that I haven't shown is model features so</p>
+      <p begin="00:36:51.190" end="00:36:56.640">model features are a way to tell us there's sort of words or there's a set of phrases that are really</p>
+      <p begin="00:36:56.640" end="00:37:00.800">important the application these are hits if you see any of these words you see any of</p>
+      <p begin="00:37:00.800" end="00:37:02.890">these phrases pay closer</p>
+      <p begin="00:37:02.890" end="00:37:09.490">attention to that to the to that word or phrase.</p>
+      <p begin="00:37:09.490" end="00:37:13.060">In this case of being able to share news and wanting to identify recipient</p>
+      <p begin="00:37:13.060" end="00:37:16.900">maybe I say look I have a set of names and names are really important...</p>
+      <p begin="00:37:16.900" end="00:37:21.430">names less and I can just take a list of names that already have.</p>
+      <p begin="00:37:21.430" end="00:37:24.360">...them in as a comma separated lest.</p>
+      <p begin="00:37:24.360" end="00:37:29.750">Into...here's a set of features you should, should really think about and,</p>
+      <p begin="00:37:29.750" end="00:37:33.000">treated stronger hands so now if I come back to</p>
+      <p begin="00:37:33.000" end="00:37:39.480">new utterances and I say something like chute that to amber.</p>
+      <p begin="00:37:39.480" end="00:37:43.920">Great share news identified as the strongest strongest</p>
+      <p begin="00:37:43.920" end="00:37:48.250">intent amber identified as the most likely</p>
+      <p begin="00:37:48.250" end="00:37:48.750">recipient.</p>
+      <p begin="00:37:51.620" end="00:37:58.330">You can even try a few more...such as find me news on office.</p>
+      <p begin="00:37:58.330" end="00:38:01.670">Find news again.</p>
+      <p begin="00:38:01.670" end="00:38:05.080">The correctly predicted intent offices not entity and we get</p>
+      <p begin="00:38:05.080" end="00:38:09.480">...you can see that over time you kind of come back and forth...you label if</p>
+      <p begin="00:38:09.480" end="00:38:13.850">you more utterances it builds a new model for you try that out...that's</p>
+      <p begin="00:38:13.850" end="00:38:18.840">doing me see what users are submitting you keep kind of updating this over and over again</p>
+      <p begin="00:38:18.840" end="00:38:22.620">whenever you want to come back to the my applications page</p>
+      <p begin="00:38:22.620" end="00:38:25.990">...publish you can update the published application and</p>
+      <p begin="00:38:25.990" end="00:38:29.350">...of a sudden shoot that to...</p>
+      <p begin="00:38:32.550" end="00:38:36.710">A and all published the update model and</p>
+      <p begin="00:38:36.710" end="00:38:41.000">it's bound share news and...as the correct recipient.</p>
+      <p begin="00:38:41.000" end="00:38:46.050">So, that's how easy it is to end up building a model with...</p>
+      <p begin="00:38:46.050" end="00:38:50.300">So, just giving these few examples that you what your application to handle giving if you</p>
+      <p begin="00:38:50.300" end="00:38:56.520">utterances ...model for you...the active learning that I talked about earlier on which</p>
+      <p begin="00:38:56.520" end="00:39:01.830">is always making the time you put into labeling the most valuable time</p>
+      <p begin="00:39:01.830" end="00:39:04.760">that it could be because it only provides the ones very provides the ones</p>
+      <p begin="00:39:04.760" end="00:39:11.920">at the top of the list that give the model the most information.</p>
+      <p begin="00:39:11.920" end="00:39:15.930">So, that's the set of services that we are announcing today for project oxford and</p>
+      <p begin="00:39:15.930" end="00:39:20.320">...show you how to get started with these ...as...a private preview all</p>
+      <p begin="00:39:20.320" end="00:39:24.970">the other services are actually available in beta starting today.</p>
+      <p begin="00:39:24.970" end="00:39:28.180">So, we switch over to a browser and</p>
+      <p begin="00:39:28.180" end="00:39:32.980">reading come to the project oxford website.</p>
+      <p begin="00:39:32.980" end="00:39:37.830">Our website you can find our demos and...documentations which we've talked about a little bit before but</p>
+      <p begin="00:39:37.830" end="00:39:42.400">let's say I'm interested in the speech api and signing up for those.</p>
+      <p begin="00:39:42.400" end="00:39:44.450">So, I come to the speech api page is</p>
+      <p begin="00:39:44.450" end="00:39:48.890">click sign up this will take me over the as your management</p>
+      <p begin="00:39:48.890" end="00:39:54.960">portal so all of our services make use of your existing measure accounts and subscriptions.</p>
+      <p begin="00:39:54.960" end="00:39:59.570">And, once this loads the marketplace we come in and we've got three</p>
+      <p begin="00:39:59.570" end="00:40:04.140">...face api entry speech entry and the vision api entry and</p>
+      <p begin="00:40:04.140" end="00:40:07.350">you'll pick that from the west.</p>
+      <p begin="00:40:07.350" end="00:40:10.880">Once you...from the west another moment here's if it comes up</p>
+      <p begin="00:40:10.880" end="00:40:18.470">...great so I can come in and I can say that I want access to</p>
+      <p begin="00:40:18.470" end="00:40:23.410">Make sure given a name to its...service and as I mentioned all of</p>
+      <p begin="00:40:23.410" end="00:40:26.970">these are available starting today in beta or providing a free</p>
+      <p begin="00:40:26.970" end="00:40:31.910">...of access for all of these that gives you five thousand transactions for each of the api</p>
+      <p begin="00:40:31.910" end="00:40:35.370">is each month so...the transaction is roughly, you know,</p>
+      <p begin="00:40:35.370" end="00:40:40.640">every rest api call counts as one transaction.</p>
+      <p begin="00:40:40.640" end="00:40:43.220">It reviews the purchase asks me whether or not</p>
+      <p begin="00:40:43.220" end="00:40:47.340">that I'm okay with it being a free purchase this is where you can find</p>
+      <p begin="00:40:47.340" end="00:40:52.330">...terms of use and privacy policy as well and once this is done...let me</p>
+      <p begin="00:40:52.330" end="00:40:57.270">purchased this and it'll show up in my list of applications so</p>
+      <p begin="00:40:57.270" end="00:41:00.120">now I can go to one that I've already.</p>
+      <p begin="00:41:01.260" end="00:41:05.150">That I've already create and once you've added this your</p>
+      <p begin="00:41:05.150" end="00:41:08.080">asher account you need to get your api token</p>
+      <p begin="00:41:08.080" end="00:41:12.450">this is how you actually you the secret key you include in your rest call so it knows that</p>
+      <p begin="00:41:12.450" end="00:41:17.200">your authorized to use it you manage all of these on our project oxford page you can</p>
+      <p begin="00:41:17.200" end="00:41:21.950">...this older one here called speech api is that I've already purchased and my primary</p>
+      <p begin="00:41:21.950" end="00:41:26.830">key and secondary key and show and you can regenerate these and,</p>
+      <p begin="00:41:26.830" end="00:41:33.830">use them as needed within your application.</p>
+      <p begin="00:41:33.830" end="00:41:36.410">So, again, to microsoft project oxford so, you know,</p>
+      <p begin="00:41:36.410" end="00:41:40.400">...collection of rest api...we're proud to announce today and,</p>
+      <p begin="00:41:40.400" end="00:41:44.100">we want this to help you developers to be able to write smarter applications</p>
+      <p begin="00:41:45.740" end="00:41:50.410">don't need to be an expert in machine learning don't need to be an expert in some of these advanced vision</p>
+      <p begin="00:41:50.410" end="00:41:54.560">and speech recognition tasks are natural language processing so,</p>
+      <p begin="00:41:54.560" end="00:41:59.050">we just help youeasily understand that content in your applications especially</p>
+      <p begin="00:41:59.050" end="00:42:01.980">...content start be more and more readily available</p>
+      <p begin="00:42:01.980" end="00:42:06.270">...carrying around one two or maybe even three devices in our pockets that's</p>
+      <p begin="00:42:06.270" end="00:42:11.240">got a video camera that's got a microphone in it so being able to unlock</p>
+      <p begin="00:42:11.240" end="00:42:15.520">what's in that is incredibly powerful task...constantly</p>
+      <p begin="00:42:15.520" end="00:42:19.750">a evolving set of services as well so I've talked about this...we're announcing today</p>
+      <p begin="00:42:19.750" end="00:42:24.020">...your feedback is going to be very important to us and figure out what are the next set of services we</p>
+      <p begin="00:42:24.020" end="00:42:28.740">launch so every requests for you so go to our website so you can</p>
+      <p begin="00:42:28.740" end="00:42:32.540">find that www dot project oxford dot ai stop</p>
+      <p begin="00:42:32.540" end="00:42:36.960">...booth we have a booth on the third-floor there we can help you get you register</p>
+      <p begin="00:42:36.960" end="00:42:41.720">...any the services we can answer questions we can get you signed up for...for</p>
+      <p begin="00:42:41.720" end="00:42:46.680">...code you can be one of the first users to make use of...very mentioned already, you know,</p>
+      <p begin="00:42:46.680" end="00:42:51.510">this is first step we...forums are come give us feedback tell us what extra features you</p>
+      <p begin="00:42:51.510" end="00:42:57.180">want to see and finally with a vision api as I only touch kind of briefly on the set of services that</p>
+      <p begin="00:42:57.180" end="00:43:02.470">...in the vision api...the features that come out of them on friday there's a talk from</p>
+      <p begin="00:43:02.470" end="00:43:09.430">the nas on the bing team and he'll be going into much more detail as what the services are?</p>
+      <p begin="00:43:09.430" end="00:43:12.470">So,...it today for our talk so kind of a final reminders</p>
+      <p begin="00:43:12.470" end="00:43:17.060">...mention in the beginning...we evaluate the session tell us how we did and, again,</p>
+      <p begin="00:43:17.060" end="00:43:21.220">stop...booth but us know what you think about project oxford and we're really</p>
+      <p begin="00:43:21.220" end="00:43:27.560">excited to see and hear what you build with these sets of services thank you.</p>
+
+    </div>
+  </body>
+</tt>

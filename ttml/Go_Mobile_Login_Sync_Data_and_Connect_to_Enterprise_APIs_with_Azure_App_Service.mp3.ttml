@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.915</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.590" end="00:00:08.340">All right it is exactly six thirty so let's get started.</p>
+      <p begin="00:00:08.340" end="00:00:12.440">...everyone this is a rather large room for everyone...if you if you want</p>
+      <p begin="00:00:12.440" end="00:00:18.570">to move over closer to me that's fine if you if you want to stay far away because,...</p>
+      <p begin="00:00:18.570" end="00:00:22.200">The speaker near the audience that's totally fine too.</p>
+      <p begin="00:00:22.200" end="00:00:26.060">Thank you for coming this late session...builds, you know,</p>
+      <p begin="00:00:26.060" end="00:00:31.380">it's all day all...my coworkers heard but time the session was they thought it was a typo but,</p>
+      <p begin="00:00:31.380" end="00:00:36.060">you know, that's how we world built ...hands if you're drinking lots of caffeine in order to say</p>
+      <p begin="00:00:36.060" end="00:00:39.680">wake good if you guys fall asleep I multiply</p>
+      <p begin="00:00:39.680" end="00:00:43.880">...the rest of you I will try to be entertaining enough that you don't</p>
+      <p begin="00:00:43.880" end="00:00:46.400">fall asleep so my name is</p>
+      <p begin="00:00:46.400" end="00:00:50.860">...ameliorate I am a program manager on the...mobile team.</p>
+      <p begin="00:00:50.860" end="00:01:01.040">And, you-can reach me at let-me donna on twitter.</p>
+      <p begin="00:01:01.040" end="00:01:05.260">I guess you're supposed to look at the cure code the beginning of the talk so,</p>
+      <p begin="00:01:05.260" end="00:01:08.040">what I want-to talk to-you today is about</p>
+      <p begin="00:01:08.040" end="00:01:12.800">measure mobile apps and what that means particularly I'm going</p>
+      <p begin="00:01:12.800" end="00:01:16.840">to talk about what as your mobile is in the context of</p>
+      <p begin="00:01:16.840" end="00:01:21.550">app service which is a new offering that we've come out with very recently</p>
+      <p begin="00:01:21.550" end="00:01:25.290">...a show of hands how many of you have attended at least one</p>
+      <p begin="00:01:25.290" end="00:01:28.940">of break-up session on apps service not a</p>
+      <p begin="00:01:28.940" end="00:01:33.480">ton of people so if you if you want to recommend you go back later and watch the recordings</p>
+      <p begin="00:01:33.480" end="00:01:37.480">...handsome...got hunter did an excellent presentation and</p>
+      <p begin="00:01:37.480" end="00:01:42.010">wagner also did one so I'll talk to-you about what that all means and how it all</p>
+      <p begin="00:01:42.010" end="00:01:46.930">fits together and I'll talk to-you about what that means for mobile basically what</p>
+      <p begin="00:01:46.930" end="00:01:52.260">...mobile apps is the next generation of mobile services?</p>
+      <p begin="00:01:52.260" end="00:01:55.690">And, I'm going to talk about how ...developers can use that</p>
+      <p begin="00:01:55.690" end="00:01:59.910">to build both consumer apps and enterprise apps so some</p>
+      <p begin="00:01:59.910" end="00:02:04.370">of these scenarios may not exactly fit the kinds of apps you're trying to build but I want to show you an</p>
+      <p begin="00:02:04.370" end="00:02:08.840">...system and then you can fill in the blanks with how you might actually do things for the</p>
+      <p begin="00:02:08.840" end="00:02:12.500">projects your building in particular I'm going to talk about offline</p>
+      <p begin="00:02:12.500" end="00:02:17.990">...it's not limited to enterprise apps but the particular example I'm going to use is an enterprise app</p>
+      <p begin="00:02:19.130" end="00:02:23.050">so apps service what is that it is an integrated</p>
+      <p begin="00:02:23.050" end="00:02:27.770">offering that gives you four components so the</p>
+      <p begin="00:02:27.770" end="00:02:32.580">first one is web apps which is basically asher website</p>
+      <p begin="00:02:32.580" end="00:02:36.730">three branded with some new features of course the reason they did this</p>
+      <p begin="00:02:36.730" end="00:02:40.240">re branding is because as...website with</p>
+      <p begin="00:02:40.240" end="00:02:44.890">actually excellent platform for hosting code not necessarily just website so</p>
+      <p begin="00:02:44.890" end="00:02:50.140">that's the that's the reason for the name change and there's a lot of really awesome new features that have come out for</p>
+      <p begin="00:02:50.140" end="00:02:55.060">larger web apps the cool thing about apps service is that all of these</p>
+      <p begin="00:02:55.060" end="00:02:58.430">...components can now use all of those features</p>
+      <p begin="00:02:58.430" end="00:03:02.130">because I'll explain the hosting environment is actually share</p>
+      <p begin="00:03:02.130" end="00:03:05.790">some mobile apps you can think of as mobile services.</p>
+      <p begin="00:03:06.910" end="00:03:11.680">Platforms onto apps service and I'll explain exactly what that means and go into the code and show you the</p>
+      <p begin="00:03:11.680" end="00:03:16.700">portal and everything but that's the basic idea logic apps you might remember a</p>
+      <p begin="00:03:16.700" end="00:03:22.010">brief demo of...scott handsome and did a yesterday's keynote where he had a kind</p>
+      <p begin="00:03:22.010" end="00:03:27.170">of visual workflow editor in a website and then he made his little channel nine</p>
+      <p begin="00:03:27.170" end="00:03:30.160">...so that's what logic...</p>
+      <p begin="00:03:30.160" end="00:03:35.320">logic apps is about orchestratingmultiple pieces of your system together</p>
+      <p begin="00:03:35.320" end="00:03:40.050">so business processes an example would be that customer</p>
+      <p begin="00:03:40.050" end="00:03:45.550">sent an email and then you have an automated system that puts it into your crm</p>
+      <p begin="00:03:45.550" end="00:03:49.510">and api apps are kind of the glue the connects everything together you can build</p>
+      <p begin="00:03:49.510" end="00:03:54.270">...api up that's custom or you can use one of the connectors that we have in the gallery so,</p>
+      <p begin="00:03:54.270" end="00:03:57.400">for example, their sales force their sequel there's a bunch</p>
+      <p begin="00:03:57.400" end="00:04:01.980">of enterprise connectors and then there's a lot of social ones like to iliopsoas and twitter and things</p>
+      <p begin="00:04:01.980" end="00:04:06.630">like that but of course you can submit your own api apps you can</p>
+      <p begin="00:04:06.630" end="00:04:13.900">...the marketplace you can also hosting privately so it's really opening up a lot for people?</p>
+      <p begin="00:04:13.900" end="00:04:16.420">So, in terms of the platform...</p>
+      <p begin="00:04:16.420" end="00:04:18.780">You can think of api apps and mobile apps</p>
+      <p begin="00:04:18.780" end="00:04:22.510">...running actually you don't have to just think about it they do they do run on</p>
+      <p begin="00:04:22.510" end="00:04:26.640">a web apps and logic apps our for orchestrating all of</p>
+      <p begin="00:04:26.640" end="00:04:30.730">these components together so what this means concretely</p>
+      <p begin="00:04:30.730" end="00:04:39.010">for mobile services customers is that you have more control.</p>
+      <p begin="00:04:39.010" end="00:04:43.080">A conditional hand how many of played around with mobile services are familiar with it</p>
+      <p begin="00:04:43.080" end="00:04:48.030">okay so a lot of people awesome great so I can explain to exactly what's different between</p>
+      <p begin="00:04:48.030" end="00:04:52.580">a agile mobile apps and...mobile services so as I said</p>
+      <p begin="00:04:52.580" end="00:04:58.560">absences about kind of expanding what you can do with this offering.</p>
+      <p begin="00:04:58.560" end="00:05:01.340">Another great thing with it being a common</p>
+      <p begin="00:05:01.340" end="00:05:05.360">hosting environment is that now you have one building model for all of your</p>
+      <p begin="00:05:05.360" end="00:05:09.120">apps services so for instance let's say you have a website to get a</p>
+      <p begin="00:05:09.120" end="00:05:14.230">ton of traffic so it needs a lot of capacity and you have mobile apps the take advantage</p>
+      <p begin="00:05:14.230" end="00:05:19.320">of out offline...so your clients are very chatty so you don't need a ton of compute resources</p>
+      <p begin="00:05:19.320" end="00:05:24.260">if you want you-can host those two together and decide to scale them together or you could</p>
+      <p begin="00:05:24.260" end="00:05:28.830">split them up and now with the new dedicated scale unit offering an</p>
+      <p begin="00:05:28.830" end="00:05:34.340">...your apps service you can take advantage of that for all of app service.</p>
+      <p begin="00:05:34.340" end="00:05:34.840">Services.</p>
+      <p begin="00:05:36.020" end="00:05:41.650">So, you may notice the word app and...appears...so if you can take you can</p>
+      <p begin="00:05:41.650" end="00:05:44.750">count if you want and tell me at the end.</p>
+      <p begin="00:05:44.750" end="00:05:48.280">Another important part is that there's a gateway that's a part of</p>
+      <p begin="00:05:48.280" end="00:05:51.500">a api apps technically but all the app service.</p>
+      <p begin="00:05:52.530" end="00:05:55.620">Services take advantage of that and that means that now</p>
+      <p begin="00:05:55.620" end="00:06:00.280">you have one common place where you to your authentication so I'm going to shown example</p>
+      <p begin="00:06:00.280" end="00:06:05.210">where authenticated with sales force and we're actually going to do ad-hoc federation with</p>
+      <p begin="00:06:05.210" end="00:06:08.780">...and we can use that same exact gateway</p>
+      <p begin="00:06:08.780" end="00:06:13.290">to authenticate of users of our web app and</p>
+      <p begin="00:06:13.290" end="00:06:21.390">users of the mobile app...should say the service behind mobile app.</p>
+      <p begin="00:06:21.390" end="00:06:26.180">So, now why is this all interesting aerotitis altogether and story</p>
+      <p begin="00:06:26.180" end="00:06:33.300">but not the most exciting business in the world but I think what they're trying to do is pretty cool.</p>
+      <p begin="00:06:33.300" end="00:06:36.100">How many here have...fabric...</p>
+      <p begin="00:06:36.100" end="00:06:39.200">Ever...you know,...know about the...microsoft loves fabric</p>
+      <p begin="00:06:39.200" end="00:06:42.600">...and farrakhan...microsoft and</p>
+      <p begin="00:06:42.600" end="00:06:46.620">...recently under new management and.</p>
+      <p begin="00:06:46.620" end="00:06:50.470">They've decided to relaunch their cable business</p>
+      <p begin="00:06:50.470" end="00:06:55.800">ever can cable and...took a look at address service when it launched</p>
+      <p begin="00:06:55.800" end="00:06:58.950">...ago and I said my god this is perfect this is how we're going to revitalize</p>
+      <p begin="00:06:58.950" end="00:07:01.230">...business I don't know about you</p>
+      <p begin="00:07:01.230" end="00:07:06.390">but my cable company gives me a four-hour window when they're going to repair things anyone</p>
+      <p begin="00:07:06.390" end="00:07:12.160">have that experience at alland, you know,...when they do come they don't fix</p>
+      <p begin="00:07:12.160" end="00:07:17.320">it and you have to get on hold with customer service and it's just a...mass so</p>
+      <p begin="00:07:17.320" end="00:07:22.280">farrakhan cable in a market where there's a lot of competition and they're able to</p>
+      <p begin="00:07:22.280" end="00:07:24.770">read we kind of do a whole new business model</p>
+      <p begin="00:07:24.770" end="00:07:29.820">for customers and that's how they're going to that's why they're going to use asher</p>
+      <p begin="00:07:29.820" end="00:07:33.300">of service to change the way they're doing business</p>
+      <p begin="00:07:33.300" end="00:07:38.180">so first off they're going to do online appointment...they're going to give you push notifications</p>
+      <p begin="00:07:38.180" end="00:07:41.960">mathematic alerts when the technician is going to come to your house and then they're</p>
+      <p begin="00:07:41.960" end="00:07:46.910">going to do a revolutionary ten-minute service window and they're even</p>
+      <p begin="00:07:46.910" end="00:07:51.730">greater than you push notifications when the technician is on the way...technician we use mobile apple</p>
+      <p begin="00:07:51.730" end="00:07:52.370">offline</p>
+      <p begin="00:07:52.370" end="00:07:57.400">...the goal is to for fabric can cable to provide excellent customer experience</p>
+      <p begin="00:07:57.400" end="00:08:02.320">now you may not be working on a big enterprise app but the same scenario applies even</p>
+      <p begin="00:08:02.320" end="00:08:06.900">a small business you have a lot of components that you want to integrate together maybe those</p>
+      <p begin="00:08:06.900" end="00:08:12.020">are third parties of some third-party serum system you purchase or maybe their internal api</p>
+      <p begin="00:08:12.020" end="00:08:17.140">...purchase you need orchestrate between all of this.</p>
+      <p begin="00:08:17.140" end="00:08:23.230">So, let me talk about how this scenario is using all the components.</p>
+      <p begin="00:08:23.230" end="00:08:27.120">Basically...customer is going to...appointments on a new website</p>
+      <p begin="00:08:28.410" end="00:08:31.890">...website that the customer...going to use assigned</p>
+      <p begin="00:08:31.890" end="00:08:36.630">a technician so this is one of the ways in which...differentiate themselves it's not it's not customer service</p>
+      <p begin="00:08:36.630" end="00:08:41.370">the customer ballet and...the service technician it's going to</p>
+      <p begin="00:08:41.370" end="00:08:46.140">use a mobile app under device and they're going to be the ones that close-up...order but all of</p>
+      <p begin="00:08:46.140" end="00:08:50.080">these things are going to be orchestrated together so it works really seamlessly and</p>
+      <p begin="00:08:50.080" end="00:08:55.900">...good customer experience so...you show you a logical view of this</p>
+      <p begin="00:08:55.900" end="00:08:58.600">...my talk progresses I'm going to fill</p>
+      <p begin="00:08:58.600" end="00:09:03.410">out the architectural diagram that maps to all these pieces and I'm also going to show you show working</p>
+      <p begin="00:09:03.410" end="00:09:07.700">...so there's existing site</p>
+      <p begin="00:09:07.700" end="00:09:13.060">that for the customer valet it's actually used for many different aspects of fabric</p>
+      <p begin="00:09:13.060" end="00:09:15.190">...for doing us being</p>
+      <p begin="00:09:15.190" end="00:09:20.710">...during service advising and scheduling work orders my kind of thing and now</p>
+      <p begin="00:09:20.710" end="00:09:24.450">they built a new customer site where customers can see what the available</p>
+      <p begin="00:09:24.450" end="00:09:29.270">appointments are they can choose a time slot that will get added to</p>
+      <p begin="00:09:29.270" end="00:09:33.080">...crm database...sales force and now the customer</p>
+      <p begin="00:09:33.080" end="00:09:37.710">ballet is going to look at these new a equipment requests and assigned technicians to</p>
+      <p begin="00:09:37.710" end="00:09:42.670">them and we're going to use logic apps to send the</p>
+      <p begin="00:09:42.670" end="00:09:47.820">customer notification when...service has been scheduled then</p>
+      <p begin="00:09:47.820" end="00:09:52.560">there is there to mobile apps and only going to show you one of them but you can imagine what the other one will look like I'm</p>
+      <p begin="00:09:52.560" end="00:09:57.560">sure the technician app but...scenarios there's often a corresponding customer app</p>
+      <p begin="00:09:57.560" end="00:10:02.190">and that's what the customer...when they say ...point has been scheduled or</p>
+      <p begin="00:10:02.190" end="00:10:06.480">your technician will be here in one-minute that kind of thing.</p>
+      <p begin="00:10:06.480" end="00:10:11.440">to tie all these things together we're going to use api apps so these are just some of the connectors we can</p>
+      <p begin="00:10:11.440" end="00:10:15.190">years so, officer sixty-five to will leo</p>
+      <p begin="00:10:15.190" end="00:10:20.040">sales force there's also a dynamics connector there's http their sequel of course you can write</p>
+      <p begin="00:10:20.040" end="00:10:24.920">your own the great thing about the connectors as I said is that they</p>
+      <p begin="00:10:24.920" end="00:10:29.760">can have authentication in them and access control in addition to providing</p>
+      <p begin="00:10:29.760" end="00:10:34.210">an api to the different components of your app and,</p>
+      <p begin="00:10:34.210" end="00:10:37.280">also we often hear the word app talking, talking about apps service the</p>
+      <p begin="00:10:37.280" end="00:10:40.700">...slightly overloaded can be a little confusing out when we say</p>
+      <p begin="00:10:40.700" end="00:10:44.980">...build...app with app service think of an as an end-to-end solution and,</p>
+      <p begin="00:10:44.980" end="00:10:46.910">system and obviously it's going to</p>
+      <p begin="00:10:46.910" end="00:10:51.400">use more features and asher than just those and app service so think of apps</p>
+      <p begin="00:10:51.400" end="00:10:55.280">...common compute layer and your app is basically</p>
+      <p begin="00:10:55.280" end="00:10:58.090">...solution which are not all of it needs to be</p>
+      <p begin="00:10:58.090" end="00:11:04.560">an asher and use absence of us to help you build that out so I'm going</p>
+      <p begin="00:11:04.560" end="00:11:08.790">to show you the first few pieces of this.</p>
+      <p begin="00:11:08.790" end="00:11:10.900">There's going to be a customer app</p>
+      <p begin="00:11:10.900" end="00:11:15.860">customer valet is going to use a web app to create a case...crm and</p>
+      <p begin="00:11:15.860" end="00:11:35.320">the logic app is going to send a push notifications so let me switch to my demo machine.</p>
+      <p begin="00:11:35.320" end="00:11:40.200">...computer to dissipates ...conserving energy</p>
+      <p begin="00:11:40.200" end="00:11:44.610">ok so this is the new sites that customers will see that</p>
+      <p begin="00:11:44.610" end="00:11:48.010">...shows them the availability of what of what they can.</p>
+      <p begin="00:11:49.350" end="00:11:53.530">Schedule for...service technician and look,</p>
+      <p begin="00:11:53.530" end="00:11:55.250">this is another revolutionary thing they have</p>
+      <p begin="00:11:55.250" end="00:12:05.290">sunday appointments so what I'm going to do is I'm going to requests...appointment.</p>
+      <p begin="00:12:05.290" end="00:12:08.730">You can be here today so I'm going to help them out by</p>
+      <p begin="00:12:08.730" end="00:12:12.110">...service technician and.</p>
+      <p begin="00:12:13.400" end="00:12:15.270">And, that...I watch all the details</p>
+      <p begin="00:12:15.270" end="00:12:19.910">but that's going to go into the serum database then.</p>
+      <p begin="00:12:19.910" end="00:12:24.320">What's going to happen is the customer ballet is going to see this site and you can see it shared among other</p>
+      <p begin="00:12:24.320" end="00:12:28.670">farrakhan assets because this is for instance the farrakhan cars website and,</p>
+      <p begin="00:12:28.670" end="00:12:34.250">that was entirely intentional on my part of course and.</p>
+      <p begin="00:12:34.250" end="00:12:38.510">What I'm going to do is since I have an...with the customer malaise I'm actually going to schedule</p>
+      <p begin="00:12:38.510" end="00:12:43.600">...for myself instead the one thing I forgot to mention fabric...so</p>
+      <p begin="00:12:43.600" end="00:12:49.050">while they're going to through a lot of the ip service to microsoft executives and</p>
+      <p begin="00:12:49.050" end="00:12:53.200">employees and asher so we see...scott guthrie is in heremy vp</p>
+      <p begin="00:12:53.200" end="00:12:57.960">...staples and some members of the as your mobile tape and that so that's how they're going to</p>
+      <p begin="00:12:57.960" end="00:13:02.990">really prove out this amazing new cable system so what I'm going to do is I'm going to</p>
+      <p begin="00:13:02.990" end="00:13:07.220">requests so I previously filled out this that web form requested</p>
+      <p begin="00:13:07.220" end="00:13:15.660">service center now the customer valet we'll see this notice karla davis?</p>
+      <p begin="00:13:15.660" end="00:13:16.820">Now I will click</p>
+      <p begin="00:13:16.820" end="00:13:21.660">...I will choose a service technician this one is good because he is</p>
+      <p begin="00:13:21.660" end="00:13:26.250">a cable repair person slash oil in transmissions specialist</p>
+      <p begin="00:13:26.250" end="00:13:31.240">slash actor as you can tell from...from his head shot</p>
+      <p begin="00:13:31.240" end="00:13:37.070">sowhat I need is my cable box updated so it's what I'm doing now</p>
+      <p begin="00:13:37.070" end="00:13:41.600">is I'm dragging and appointments onto...calendar</p>
+      <p begin="00:13:41.600" end="00:13:46.520">in office three sixty five so he will see that there and this will</p>
+      <p begin="00:13:46.520" end="00:13:55.830">also get synched tohis mobile device when I when I show you that part of it?</p>
+      <p begin="00:13:55.830" end="00:13:58.450">Ok, so, that's all...</p>
+      <p begin="00:13:58.450" end="00:14:02.170">And,...if the demo...or kind to me</p>
+      <p begin="00:14:02.170" end="00:14:08.320">than what we will see is a push notification we may not.</p>
+      <p begin="00:14:08.320" end="00:14:13.620">But, there is in fact fabric can push...it works awesome so</p>
+      <p begin="00:14:13.620" end="00:14:18.370">I actually click that a little too fast but it said point confirmed so,</p>
+      <p begin="00:14:18.370" end="00:14:22.180">basically use my identity to send...push notifications my device</p>
+      <p begin="00:14:22.180" end="00:14:29.290">and I said I wasn't going to show you the consumer app...did show you the push part of it.</p>
+      <p begin="00:14:29.290" end="00:14:34.590">And, it looks like a carol cannot have service because the sites didn't like him but,</p>
+      <p begin="00:14:34.590" end="00:14:42.870">it's okay because I'm assigned up now.</p>
+      <p begin="00:14:42.870" end="00:14:43.860">Not going to show you the</p>
+      <p begin="00:14:43.860" end="00:14:48.190">...portal just yet but I'm going to show you and this is the sales</p>
+      <p begin="00:14:48.190" end="00:14:52.370">...database...refresh this you can see that data did indeed get</p>
+      <p begin="00:14:52.370" end="00:14:57.680">save to it so here is the new case that I created and, I'm not going to show you all the details but this is</p>
+      <p begin="00:14:57.680" end="00:15:01.370">actually using active directory federation using</p>
+      <p begin="00:15:01.370" end="00:15:03.720">...ad-hoc federation model with the gateway and</p>
+      <p begin="00:15:03.720" end="00:15:10.170">...it's all rather involved but the.</p>
+      <p begin="00:15:10.170" end="00:15:14.870">This is actually a customsales force instance that is synchronized with an</p>
+      <p begin="00:15:14.870" end="00:15:21.840">ad tenet called control so web so let me show you.</p>
+      <p begin="00:15:21.840" end="00:15:27.720">A screen shot of the technician app.</p>
+      <p begin="00:15:27.720" end="00:15:34.070">Because I'm going to actually dive into the details in a minute and this is written using examine forms.</p>
+      <p begin="00:15:34.070" end="00:15:34.560">It was not</p>
+      <p begin="00:15:34.560" end="00:15:39.650">build by designer so this is the way that we had but we were able to build it very quickly because</p>
+      <p begin="00:15:39.650" end="00:15:44.070">...informs let-you...ui once in your code and</p>
+      <p begin="00:15:44.070" end="00:15:49.280">basically have a ton of code share between your different app so this</p>
+      <p begin="00:15:49.280" end="00:15:53.860">...for instance works on both android and ios and integrates with</p>
+      <p begin="00:15:53.860" end="00:15:57.300">...device functionality and I'll go into great detail with the</p>
+      <p begin="00:15:57.300" end="00:16:02.470">ness and I'll even show how the offline sink part of it works.</p>
+      <p begin="00:16:02.470" end="00:16:07.460">A little bit about push notifications actually let me see...how many of you already know this how many of you are familiar with</p>
+      <p begin="00:16:07.460" end="00:16:10.090">...notification hums.</p>
+      <p begin="00:16:10.090" end="00:16:14.660">Okay, a lot of people I'll just summarize the flied quickly.</p>
+      <p begin="00:16:14.660" end="00:16:18.100">Basically.</p>
+      <p begin="00:16:18.100" end="00:16:20.010">When either whether or not you use certification</p>
+      <p begin="00:16:20.010" end="00:16:24.690">...you need to request a us...as a developer app...to request</p>
+      <p begin="00:16:24.690" end="00:16:29.560">...device handle from the platform notification service so that will either be say the windows</p>
+      <p begin="00:16:29.560" end="00:16:34.540">notification service apple one or the google one are by to etc?</p>
+      <p begin="00:16:34.540" end="00:16:39.270">The problem is...deplete let's have a service like notification...you as a developer in your</p>
+      <p begin="00:16:39.270" end="00:16:42.710">back-end you need to maintain a mapping between these device handles</p>
+      <p begin="00:16:42.710" end="00:16:45.330">and logical users and if you have logical groups</p>
+      <p begin="00:16:45.330" end="00:16:49.780">...even worse then if you want to send these notifications you have to</p>
+      <p begin="00:16:49.780" end="00:16:54.470">manage the scale yourself basically you can't you have to build a</p>
+      <p begin="00:16:54.470" end="00:16:58.030">scalable back-end service that can send, you know,</p>
+      <p begin="00:16:58.030" end="00:17:02.730">thousands of...millions verifications second and what notification</p>
+      <p begin="00:17:02.730" end="00:17:08.110">...does is that basically does all this for you and it scales really...used in the so...</p>
+      <p begin="00:17:08.110" end="00:17:16.080">electrics app and a lot of other places so that's the benefit of notification humps?</p>
+      <p begin="00:17:16.080" end="00:17:21.240">And, that's where I that was the piece use notification...to send myself notification</p>
+      <p begin="00:17:21.240" end="00:17:25.640">and in my back encode I didn't even have to care about the device handle I just</p>
+      <p begin="00:17:25.640" end="00:17:26.140">registered.</p>
+      <p begin="00:17:27.810" end="00:17:30.640">...developer register the logical user of the app</p>
+      <p begin="00:17:30.640" end="00:17:40.110">and the back-end I just center notification to that logical user so.</p>
+      <p begin="00:17:40.110" end="00:17:41.450">...to titus all together.</p>
+      <p begin="00:17:43.380" end="00:17:47.050">Let's look at some examples of how people are currently using</p>
+      <p begin="00:17:47.050" end="00:17:52.640">...mobile services and howthese they can continue to do</p>
+      <p begin="00:17:52.640" end="00:17:56.030">...with that so</p>
+      <p begin="00:17:56.030" end="00:18:00.870">why comes to consumer apps sleeve music is a really awesome app...available on windows phone</p>
+      <p begin="00:18:00.870" end="00:18:05.750">...a windows phone tried out...helping you discover new music that you might be</p>
+      <p begin="00:18:05.750" end="00:18:09.270">interested in and in particular if the artists are local</p>
+      <p begin="00:18:09.270" end="00:18:13.780">to you they've just added a new social feed feature which uses the</p>
+      <p begin="00:18:13.780" end="00:18:18.710">new api apps twitter connector in order to help</p>
+      <p begin="00:18:18.710" end="00:18:21.590">...get users to subscribe to feeder to show them a custom</p>
+      <p begin="00:18:21.590" end="00:18:25.430">...so it's about engaging with artists and?</p>
+      <p begin="00:18:25.430" end="00:18:29.660">The way that they were able to do all this is...it's pretty hard to do all of that in</p>
+      <p begin="00:18:29.660" end="00:18:33.320">your client app particularly if you want to make it multi platform</p>
+      <p begin="00:18:33.320" end="00:18:40.280">so using a service that handles this for you...eases...the...</p>
+      <p begin="00:18:40.280" end="00:18:42.090">Another example this time</p>
+      <p begin="00:18:42.090" end="00:18:47.840">a business app is three-m so they had this new parking meter ...they wanted</p>
+      <p begin="00:18:47.840" end="00:18:54.080">to sell and the sales people wanted to know more about where these</p>
+      <p begin="00:18:54.080" end="00:18:59.030">meters were installed and how efficient they were but they actually had no visibility into</p>
+      <p begin="00:18:59.030" end="00:19:03.730">that because it's a parking meter and its located in a parking garage and</p>
+      <p begin="00:19:03.730" end="00:19:05.410">there's no internet connectivity</p>
+      <p begin="00:19:05.410" end="00:19:11.680">so there was a lot of manual entry so the business owner, you know,</p>
+      <p begin="00:19:11.680" end="00:19:16.240">was mentioning this to a...three-m...name jason...</p>
+      <p begin="00:19:16.240" end="00:19:22.160">jason fox and, jason's leo will united's mobile services before I...it build this...weekend and,</p>
+      <p begin="00:19:22.160" end="00:19:26.050">then and then immediately got worried because...set himself up for such...such a</p>
+      <p begin="00:19:26.050" end="00:19:30.750">...thing...had to do but he did build in a weekend to use</p>
+      <p begin="00:19:30.750" end="00:19:33.640">...and asher mobile services offline</p>
+      <p begin="00:19:33.640" end="00:19:38.490">...so that the app can now work offline in the parking garage because I don't know about you but</p>
+      <p begin="00:19:38.490" end="00:19:44.210">I have never been a parking garage that had any kind of connectivity whatsoever and,</p>
+      <p begin="00:19:44.210" end="00:19:48.080">you can do even more and this is probably a good...all</p>
+      <p begin="00:19:48.080" end="00:19:53.080">...you probably can think of other ways in which businesses can be revolutionized but this is a</p>
+      <p begin="00:19:53.080" end="00:19:55.220">cool another cool story scott's</p>
+      <p begin="00:19:55.220" end="00:20:00.310">go who isin the construction industry had a construction site that they were building next to</p>
+      <p begin="00:20:00.310" end="00:20:03.520">a hospital and the hospital had a new natal</p>
+      <p begin="00:20:03.520" end="00:20:08.380">...unit which is very sensitive to vibrations and dust particles so</p>
+      <p begin="00:20:08.380" end="00:20:13.320">what's constant did was they built out some sensors and,</p>
+      <p begin="00:20:13.320" end="00:20:17.380">connect about to...and...mobile push notifications</p>
+      <p begin="00:20:17.380" end="00:20:22.870">so that construction workers and also the hospital ten hospital administrators</p>
+      <p begin="00:20:22.870" end="00:20:28.860">can see exactly what was going on because they wanted to they didn't want</p>
+      <p begin="00:20:28.860" end="00:20:32.490">...work all togetherbecause it's a construction site the need to build</p>
+      <p begin="00:20:32.490" end="00:20:37.010">...but the jacked...can cause dangerous</p>
+      <p begin="00:20:37.010" end="00:20:41.760">...so this let them do their work efficiently and safely?</p>
+      <p begin="00:20:41.760" end="00:20:45.700">Not to mention it save time because then the workers...have to constantly go and check</p>
+      <p begin="00:20:45.700" end="00:20:51.510">meters now the ...getting push their phone for them so.</p>
+      <p begin="00:20:51.510" end="00:20:55.020">That was about mobile services and I said the new thing</p>
+      <p begin="00:20:55.020" end="00:20:58.600">is agile mobile apps so what's the difference and fortunately a lot of</p>
+      <p begin="00:20:58.600" end="00:21:04.530">you are familiar with mobile services so.</p>
+      <p begin="00:21:04.530" end="00:21:08.150">Hopefully this diagram is a familiar to you</p>
+      <p begin="00:21:08.150" end="00:21:14.020">basically mobile services gives you three core features which is the data</p>
+      <p begin="00:21:14.020" end="00:21:17.690">connections...user authentication especially the kind</p>
+      <p begin="00:21:17.690" end="00:21:21.980">that's in your plugged into your mobile device so social log in with</p>
+      <p begin="00:21:21.980" end="00:21:26.840">the client flow where you get a nice you why within your app rather than getting redirected some web</p>
+      <p begin="00:21:26.840" end="00:21:29.740">page and push notifications and,</p>
+      <p begin="00:21:29.740" end="00:21:34.720">the other...relatively newer feature is offline...which last year at</p>
+      <p begin="00:21:34.720" end="00:21:39.500">build when I presented it with stone preview and now it's generally available</p>
+      <p begin="00:21:39.500" end="00:21:44.160">for a lot of our platforms so windows universal</p>
+      <p begin="00:21:44.160" end="00:21:46.390">...ios...android?</p>
+      <p begin="00:21:47.500" end="00:21:51.260">Android and ios native and</p>
+      <p begin="00:21:51.260" end="00:21:56.230">...working on building it out on more of our platforms now the thing that's</p>
+      <p begin="00:21:56.230" end="00:21:58.920">difference aside from the data connectors</p>
+      <p begin="00:21:58.920" end="00:22:01.780">...back one data connectors are also different see how I</p>
+      <p begin="00:22:01.780" end="00:22:06.040">have api apps here now there's more opportunities for you to connector</p>
+      <p begin="00:22:06.040" end="00:22:10.730">...different systems and the key there is the gateway that's in api apps</p>
+      <p begin="00:22:10.730" end="00:22:12.580">are now you can do some federation</p>
+      <p begin="00:22:12.580" end="00:22:17.030">and ensure security when you're connecting to other systems so what's new</p>
+      <p begin="00:22:18.170" end="00:22:20.820">...perspective is now that you're now you're back</p>
+      <p begin="00:22:20.820" end="00:22:26.820">encoders running as an asher web app this is the thing that mobile services customers have been asking</p>
+      <p begin="00:22:26.820" end="00:22:31.530">for from us for a very long-time mobile services abstracts</p>
+      <p begin="00:22:31.530" end="00:22:35.980">away your compute container which means that...lets us do a lot</p>
+      <p begin="00:22:35.980" end="00:22:40.750">for you if we can do a lot of monitoring we can do a lot of scaling we can.</p>
+      <p begin="00:22:40.750" end="00:22:44.770">Basically manage things that give you a layer of abstraction but what we heard from</p>
+      <p begin="00:22:44.770" end="00:22:48.640">customers was I don't want this abstraction, you know, I don't want to work on</p>
+      <p begin="00:22:48.640" end="00:22:53.570">ibm but I also don't want something where I can't even control...in a fine-grain size of what</p>
+      <p begin="00:22:53.570" end="00:22:57.600">vm using or how much memory I have available or load balancing across</p>
+      <p begin="00:22:57.600" end="00:23:03.550">multiple systems so what we did...after mobile apps?</p>
+      <p begin="00:23:03.550" end="00:23:06.620">Is to make your back-end</p>
+      <p begin="00:23:06.620" end="00:23:11.560">...code run as a full-fledged web appallen</p>
+      <p begin="00:23:11.560" end="00:23:16.180">what's formally known as adder websites that means you get all those features for free</p>
+      <p begin="00:23:16.180" end="00:23:22.400">in the past every time websites added a new feature and they were constantly doing this by the way?</p>
+      <p begin="00:23:22.400" end="00:23:27.750">...we had to implemented ourselves and now every time...your features they've been</p>
+      <p begin="00:23:27.750" end="00:23:32.400">adding even more was recently you get those two so.</p>
+      <p begin="00:23:33.460" end="00:23:36.900">...have a slide yes, so, here's the fly this is just a small</p>
+      <p begin="00:23:36.900" end="00:23:42.730">list of the benefits that you get on as yourweb apps but a lot of people</p>
+      <p begin="00:23:42.730" end="00:23:48.860">asked for a traffic manager geo distribution custom...names...at and the</p>
+      <p begin="00:23:48.860" end="00:23:53.490">In production ab testing all these things what this also means is</p>
+      <p begin="00:23:53.490" end="00:23:59.570">that if you watched...you can watch any of the recordings of bil...because most of already</p>
+      <p begin="00:24:01.100" end="00:24:02.870">And, if they talking they're talking about</p>
+      <p begin="00:24:02.870" end="00:24:07.560">measure websites or other web apps features all of that applies to your</p>
+      <p begin="00:24:07.560" end="00:24:12.390">mobile services back-end code so for instance david ever had a great talk on dev</p>
+      <p begin="00:24:12.390" end="00:24:17.510">...and kind of doing a whole flow where we continuous integration and pushing new</p>
+      <p begin="00:24:17.510" end="00:24:21.230">...having a deployed you can do in production ab testing where you</p>
+      <p begin="00:24:21.230" end="00:24:24.880">sit send part of your traffic to some customers not others all of</p>
+      <p begin="00:24:24.880" end="00:24:34.520">those features all of those use cases apply in as your mobile apps.</p>
+      <p begin="00:24:34.520" end="00:24:39.400">So, right now mobile services is only available...the classic portal and</p>
+      <p begin="00:24:39.400" end="00:24:43.960">it supports both node and dot net back-end as you as, you know, mobile apps three</p>
+      <p begin="00:24:43.960" end="00:24:51.400">now only supports dot net back-end through a server sdk node support is coming.</p>
+      <p begin="00:24:51.400" end="00:24:56.200">Once we ga...mobile apps...will have all of the features</p>
+      <p begin="00:24:56.200" end="00:24:58.850">of mobile services plus many more.</p>
+      <p begin="00:24:58.850" end="00:25:02.770">And, at that time you can choose what you want to do in</p>
+      <p begin="00:25:02.770" end="00:25:07.560">terms of migration so our mobile app is still in preview what this means</p>
+      <p begin="00:25:07.560" end="00:25:12.930">is a you should try it out because this is when you can influence the product...mp</p>
+      <p begin="00:25:12.930" end="00:25:17.620">and it's a new product so it's real or from the edges we still want to hear the feedback because we want to fix</p>
+      <p begin="00:25:17.620" end="00:25:21.890">want to fix those most painful things as soon as possible.</p>
+      <p begin="00:25:21.890" end="00:25:26.210">The new features are going to go into mobile apps especially because we have this</p>
+      <p begin="00:25:26.210" end="00:25:32.310">much more capabilities now that it's hosted on asher websites and with that but</p>
+      <p begin="00:25:32.310" end="00:25:37.080">...mobile services is still fully supported the your sites are just going to go away we're not going to</p>
+      <p begin="00:25:37.080" end="00:25:41.480">kick you off we're going to give you a seamless migration experience once we make our</p>
+      <p begin="00:25:41.480" end="00:25:46.880">product generally available at...you can decide whether you want to move so we're going...your</p>
+      <p begin="00:25:46.880" end="00:25:51.880">...to move we're not going to kick you out so if you have an existing app that's</p>
+      <p begin="00:25:51.880" end="00:25:56.140">...production and you're not planning on changing the back encode very much you might decide to just</p>
+      <p begin="00:25:56.140" end="00:26:01.960">stay on mobile services but if you're making tweaks and you're like hey, I'd really like to use bigger</p>
+      <p begin="00:26:01.960" end="00:26:09.350">...to use this new dedicated app service environment that point you can seamlessly migrate.</p>
+      <p begin="00:26:09.350" end="00:26:14.300">let's go back to the...cable example and let me fill in the</p>
+      <p begin="00:26:14.300" end="00:26:20.720">mobile app back-end part of it so I where to show this part the new a new</p>
+      <p begin="00:26:20.720" end="00:26:25.400">piece is that we have a web job that is going to synchronize the</p>
+      <p begin="00:26:25.400" end="00:26:30.210">serum data that the customer the customer cases to us</p>
+      <p begin="00:26:30.210" end="00:26:33.690">...sequel database that specific to the farrakhan cable</p>
+      <p begin="00:26:33.690" end="00:26:38.580">system so you can think of that databases having more information than just</p>
+      <p begin="00:26:38.580" end="00:26:44.900">the customer data so for instance it could have asset information of which cable boxes are</p>
+      <p begin="00:26:44.900" end="00:26:48.730">...given out to which customers it can have</p>
+      <p begin="00:26:48.730" end="00:26:52.560">a repair history for customer...you can do all kinds</p>
+      <p begin="00:26:52.560" end="00:26:57.090">of analytics reporting on that so we typically will have some kind of database like that</p>
+      <p begin="00:26:57.090" end="00:27:04.910">but you do want to synchronized with your customer relationship data and?</p>
+      <p begin="00:27:04.910" end="00:27:09.500">The mobile app back-end is going to read data from sequel and</p>
+      <p begin="00:27:09.500" end="00:27:14.290">then write changes through crm so that ensures that when you close the case for instance it</p>
+      <p begin="00:27:14.290" end="00:27:18.700">gets close and crm right away the cool thing though is that now</p>
+      <p begin="00:27:18.700" end="00:27:22.840">that a mobile apps runs in the same containers web apps is that this</p>
+      <p begin="00:27:22.840" end="00:27:28.350">web job can actually run in the same exact containers...excise as the mobile app and</p>
+      <p begin="00:27:28.350" end="00:27:34.970">I'll shown example of how that's working...all working in.</p>
+      <p begin="00:27:34.970" end="00:27:39.750">A mobile app...and now it's time for the demo.</p>
+      <p begin="00:27:39.750" end="00:27:48.800">...switch back to my windows machine.</p>
+      <p begin="00:27:48.800" end="00:27:53.680">So, first I want to do is show you the actor preview portal and explain</p>
+      <p begin="00:27:53.680" end="00:27:56.610">to all the pieces of that in.</p>
+      <p begin="00:27:56.610" end="00:27:59.100">Measure mobile apps and.</p>
+      <p begin="00:27:59.100" end="00:28:01.130">...how that maps into what you already know about</p>
+      <p begin="00:28:01.130" end="00:28:06.890">natural services how many people here played around with the preview portal?</p>
+      <p begin="00:28:06.890" end="00:28:11.590">Some not everyone okay so.</p>
+      <p begin="00:28:11.590" end="00:28:14.980">The preview portal has a bunch of nice features one is that you can pin</p>
+      <p begin="00:28:14.980" end="00:28:16.960">...services to your start</p>
+      <p begin="00:28:16.960" end="00:28:20.540">board so here this field engineer light is my mobile</p>
+      <p begin="00:28:20.540" end="00:28:25.950">...and this is the this is really the blade that shows all</p>
+      <p begin="00:28:25.950" end="00:28:29.250">of the components of your back-end together all the mobile</p>
+      <p begin="00:28:29.250" end="00:28:36.300">specific components so here for instance I have a gateway and that was...app</p>
+      <p begin="00:28:36.300" end="00:28:42.740">api apps gateway that I talked about earlier of course there's the notification hub.</p>
+      <p begin="00:28:42.740" end="00:28:46.040">Usually...there's a notification hub</p>
+      <p begin="00:28:46.040" end="00:28:52.250">there's your master and application key and then there's user...</p>
+      <p begin="00:28:52.250" end="00:28:57.290">Notice how here in the user authors this long guid.</p>
+      <p begin="00:28:57.290" end="00:29:01.500">Because the gateway currently a generates a very long...name for...out to make sure</p>
+      <p begin="00:29:01.500" end="00:29:05.470">doesn't conflict with anything but when you click user off here it's actually...</p>
+      <p begin="00:29:05.470" end="00:29:10.310">changing your gateway settings which means that now when you have a web app that's hosted on</p>
+      <p begin="00:29:10.310" end="00:29:15.140">the same the same resource group can take advantage of those same authentication</p>
+      <p begin="00:29:15.140" end="00:29:18.820">statics now the really cool part.</p>
+      <p begin="00:29:18.820" end="00:29:21.290">...is that.</p>
+      <p begin="00:29:21.290" end="00:29:28.170">You can go to the code site now and it's a full...web app.</p>
+      <p begin="00:29:28.170" end="00:29:35.260">So, I turned on always on so you see there's a bunch of...requests and.</p>
+      <p begin="00:29:35.260" end="00:29:37.790">At this point I can go to all of my</p>
+      <p begin="00:29:37.790" end="00:29:41.260">settings so here I'm going to go to the web jobs.</p>
+      <p begin="00:29:41.260" end="00:29:46.690">Part so this is the web job that I have...same subscription I'll show you the code that and</p>
+      <p begin="00:29:46.690" end="00:29:51.530">minute the other thing is that if you go back to the mobile app laid you see this</p>
+      <p begin="00:29:51.530" end="00:29:54.390">ad client button which is similar it's actually goes the same</p>
+      <p begin="00:29:54.390" end="00:29:59.430">...quick star button and that's basically similar to the quick start experience that you have with</p>
+      <p begin="00:29:59.430" end="00:30:04.100">mobile services today and you can see we don't have all of our clients yet but we will very</p>
+      <p begin="00:30:04.100" end="00:30:11.060">soon we're adding more and more and we welcome your feedback on all of them.</p>
+      <p begin="00:30:11.060" end="00:30:13.940">So, let me show you the code.</p>
+      <p begin="00:30:13.940" end="00:30:18.810">So, now...go to visual studio and show you the back-end for that service that I just</p>
+      <p begin="00:30:18.810" end="00:30:22.630">...so I have a this field engineer light service and what this</p>
+      <p begin="00:30:22.630" end="00:30:27.480">does is it gets deployed that code site...saw it has basically</p>
+      <p begin="00:30:27.480" end="00:30:32.560">the mobile app name at with a dot dash code append to it so I've already</p>
+      <p begin="00:30:32.560" end="00:30:38.510">...this but if you want to see...talking about?</p>
+      <p begin="00:30:38.510" end="00:30:43.080">...sm published on this machine but, what I would do to...</p>
+      <p begin="00:30:43.080" end="00:30:45.610">...show you that is.</p>
+      <p begin="00:30:45.610" end="00:30:47.890">A pick...web apps as my</p>
+      <p begin="00:30:47.890" end="00:30:52.030">publish target would sign in with my asher credentials which I'm not going to do now and</p>
+      <p begin="00:30:52.030" end="00:31:03.950">then it would show me all the web apps that are have on my subscription...choose to published...</p>
+      <p begin="00:31:03.950" end="00:31:06.650">So, there's a so I think as you saw there was</p>
+      <p begin="00:31:06.650" end="00:31:09.950">...shaman there and also.</p>
+      <p begin="00:31:09.950" end="00:31:14.120">The mobile app back-end the mobile app back-end code</p>
+      <p begin="00:31:14.120" end="00:31:18.310">is actually using some new get packages that we call the dot net server sdk.</p>
+      <p begin="00:31:19.350" end="00:31:26.340">And, those are really similar to how mobile services worked and the classic world basically now</p>
+      <p begin="00:31:26.340" end="00:31:32.710">you have a server sdk the encode against rather than the...was in mobile services where you're</p>
+      <p begin="00:31:32.710" end="00:31:36.600">...sandbox and to what you how to do so right now as I said we have a dot net server</p>
+      <p begin="00:31:36.600" end="00:31:41.280">sdk and we will very soon have a preview node us</p>
+      <p begin="00:31:41.280" end="00:31:46.440">...k now let's see if.</p>
+      <p begin="00:31:46.440" end="00:31:53.780">Can show you the code now...it really once monologue n?</p>
+      <p begin="00:31:53.780" end="00:32:01.510">Okay, I'll do it.</p>
+      <p begin="00:32:01.510" end="00:32:03.650">So, what will happen at this point</p>
+      <p begin="00:32:03.650" end="00:32:08.590">ok so there we go I worked so what this what I could do then is pick the code</p>
+      <p begin="00:32:08.590" end="00:32:12.470">site and actually it's this one and I can publish that you can also</p>
+      <p begin="00:32:12.470" end="00:32:16.560">...publish profile so if you if you have a bunch of web apps and you don't pick the right</p>
+      <p begin="00:32:16.560" end="00:32:21.470">one you can just import that into your project really easily so let's look at this code here what</p>
+      <p begin="00:32:21.470" end="00:32:25.950">I have is the job controller which represents those open cases that</p>
+      <p begin="00:32:25.950" end="00:32:30.520">were in sales force and this table controller is really,</p>
+      <p begin="00:32:30.520" end="00:32:34.180">really similar actually it's exactly the same...of very...exactly the same as what you</p>
+      <p begin="00:32:34.180" end="00:32:39.600">had mobile services now the differences of course that you can host more things here</p>
+      <p begin="00:32:40.640" end="00:32:45.020">and, you know,...some of you would get frustrated that you had to use particular versions of various</p>
+      <p begin="00:32:45.020" end="00:32:49.360">new get packages in a particular version...api because we're hosting everything and I can see</p>
+      <p begin="00:32:49.360" end="00:32:55.720">everyone's very happy about that...guess what you can...whatever you want it's all it's all open to you but,</p>
+      <p begin="00:32:55.720" end="00:32:59.220">you get those theme benefits of the</p>
+      <p begin="00:32:59.220" end="00:33:08.350">...the table abstraction that's in...get packages?</p>
+      <p begin="00:33:08.350" end="00:33:08.800">Here if we</p>
+      <p begin="00:33:08.800" end="00:33:12.410">look at the patch code here and I show you how I'm doing the right through.</p>
+      <p begin="00:33:13.750" end="00:33:18.940">And, just the right part of it...part is exactly the same as what a regular table</p>
+      <p begin="00:33:18.940" end="00:33:23.030">...with you and now I'm going to called sales force client which is the</p>
+      <p begin="00:33:23.030" end="00:33:26.630">...force connector and I'm going to send a request update this</p>
+      <p begin="00:33:26.630" end="00:33:32.160">particular case that I'm working on now the web job is also deployed in the same exact</p>
+      <p begin="00:33:32.160" end="00:33:36.580">...back encode sites and it is also using that series axles for help burgess</p>
+      <p begin="00:33:36.580" end="00:33:38.860">...to that code file and it has</p>
+      <p begin="00:33:38.860" end="00:33:46.210">a long-running process that basically every thirty seconds poles and looks for new data.</p>
+      <p begin="00:33:46.210" end="00:33:53.230">That's how everything stays in sake.</p>
+      <p begin="00:33:53.230" end="00:33:57.390">So, you may notice this stuff here and this of is related to offline</p>
+      <p begin="00:33:57.390" end="00:34:03.140">...so I'm going to start talking about that.</p>
+      <p begin="00:34:03.140" end="00:34:06.740">So, if you're familiar with.</p>
+      <p begin="00:34:06.740" end="00:34:11.620">Mobile services, you know, about the tables and point which basically gives you a bunch of</p>
+      <p begin="00:34:11.620" end="00:34:14.200">rest endpoints for doing all of your create update</p>
+      <p begin="00:34:14.200" end="00:34:19.210">etc operations one of the reasons that valuable aside from the fact that it's</p>
+      <p begin="00:34:19.210" end="00:34:23.730">useful abstraction is that you can use it to do offline data...basically</p>
+      <p begin="00:34:23.730" end="00:34:28.710">implement the protocol that are client libraries expects and once you provide</p>
+      <p begin="00:34:28.710" end="00:34:33.970">those additional properties which by the way you can modify any reston points to provide the right</p>
+      <p begin="00:34:33.970" end="00:34:39.140">properties then you automatically just have...that you can use with our offline</p>
+      <p begin="00:34:39.140" end="00:34:45.710">...case so I probably don't need to explain ty it's good to have offline</p>
+      <p begin="00:34:45.710" end="00:34:50.520">But, you know, every time I step into an elevator I'm constantly annoyed my phone because,</p>
+      <p begin="00:34:50.520" end="00:34:54.980">you know, I lost connectivity for to like, you know, thirty seconds and suddenly,</p>
+      <p begin="00:34:54.980" end="00:34:59.050">you know, it the apps they can't do anything anymore now the reason that</p>
+      <p begin="00:34:59.050" end="00:35:03.780">apps don't implement offline saying is that it's usually really difficult to get it right now the</p>
+      <p begin="00:35:03.780" end="00:35:08.700">simple cases are pretty easy like a read-only cache of data but once you want users</p>
+      <p begin="00:35:08.700" end="00:35:12.100">to start modifying data and once they can modify data that</p>
+      <p begin="00:35:12.100" end="00:35:15.060">...owned by other users now you get into a whole</p>
+      <p begin="00:35:15.060" end="00:35:21.800">world of madness that's usually something most developers just don't want to touch.</p>
+      <p begin="00:35:21.800" end="00:35:26.010">However, when you...mobile apps and actionable services it's really easy to do this</p>
+      <p begin="00:35:26.010" end="00:35:30.580">...sdk does the heavy lifting for you but it's still exposes enough...you can</p>
+      <p begin="00:35:30.580" end="00:35:39.460">...behavior to erroneous so?</p>
+      <p begin="00:35:39.460" end="00:35:42.980">Why would you want offline...as I said you are...data?</p>
+      <p begin="00:35:44.030" end="00:35:48.710">You want to be able to handle internet network connectivity.</p>
+      <p begin="00:35:48.710" end="00:35:52.950">The key point the one that's really tricky to do is that when you want users to create a</p>
+      <p begin="00:35:52.950" end="00:35:56.670">modified data even when there's no network so remember the cable</p>
+      <p begin="00:35:56.670" end="00:36:01.750">...person the one who's also an actor in his spare time so bob</p>
+      <p begin="00:36:01.750" end="00:36:05.160">johnson when he's going to someone's house and urge compare repair</p>
+      <p begin="00:36:05.160" end="00:36:07.480">their cable chances are</p>
+      <p begin="00:36:07.480" end="00:36:12.480">...he doesn't always have a network connection you don't want you as a business and you as a</p>
+      <p begin="00:36:12.480" end="00:36:16.210">customer don't want him to not being able to do anything because there's no</p>
+      <p begin="00:36:16.210" end="00:36:20.920">network the same time you need to maintain security of what is happening...</p>
+      <p begin="00:36:20.920" end="00:36:26.070">to maintain authentication you want to make sure that when he makes edits that those reflected in the system</p>
+      <p begin="00:36:26.070" end="00:36:30.470">is having come from his machine that's the thing that's those are the things that we offer for</p>
+      <p begin="00:36:30.470" end="00:36:32.710">...are you can also use offline</p>
+      <p begin="00:36:32.710" end="00:36:37.560">...to think data across multiple devices if you have a customers that can</p>
+      <p begin="00:36:37.560" end="00:36:41.420">login on tablet let's say in a phone and</p>
+      <p begin="00:36:41.420" end="00:36:45.100">finally most importantly when there's conflicts you can detect</p>
+      <p begin="00:36:45.100" end="00:36:47.560">...handle them you can handle the conflicts</p>
+      <p begin="00:36:47.560" end="00:36:53.020">...either the client-side or in your back-end code.</p>
+      <p begin="00:36:53.020" end="00:36:55.810">And, the way works is that.</p>
+      <p begin="00:36:55.810" end="00:37:00.810">The client sdk keeps...of all those operations that you've done that can modify data so</p>
+      <p begin="00:37:00.810" end="00:37:05.680">the create the update delete operations and once you get back online you</p>
+      <p begin="00:37:05.680" end="00:37:08.720">can do push action and send those changes.</p>
+      <p begin="00:37:09.730" end="00:37:13.720">And, at that point will detect conflicts if you opt in to</p>
+      <p begin="00:37:13.720" end="00:37:16.390">the versioning on the client-server you can</p>
+      <p begin="00:37:16.390" end="00:37:22.700">...conflict handling...decide where to handle the issue.</p>
+      <p begin="00:37:22.700" end="00:37:24.800">Also a lot of times</p>
+      <p begin="00:37:24.800" end="00:37:28.230">...will get deleted from your database and now clients are</p>
+      <p begin="00:37:28.230" end="00:37:32.650">...locally how do they know what to get rid of and the way we implement that as with soft</p>
+      <p begin="00:37:32.650" end="00:37:37.650">delete so-you marker record is deleted in the database or inner if you're using</p>
+      <p begin="00:37:37.650" end="00:37:42.190">...back-end for instance you just change the response...to include the deleted</p>
+      <p begin="00:37:42.190" end="00:37:46.890">flag for those records and the client just automatically will purge them for you is part of</p>
+      <p begin="00:37:46.890" end="00:37:52.730">...pull operations and of course offline integrates with other</p>
+      <p begin="00:37:52.730" end="00:37:58.970">mobile services features so you can use a push notifications trigger sake if you want to so</p>
+      <p begin="00:37:58.970" end="00:38:03.870">let's go back to our exciting cable company and.</p>
+      <p begin="00:38:03.870" end="00:38:06.290">Let's look at the client-side...</p>
+      <p begin="00:38:06.290" end="00:38:09.650">The mobile client...now going to sink.</p>
+      <p begin="00:38:09.650" end="00:38:11.470">Its own sequel light local single</p>
+      <p begin="00:38:11.470" end="00:38:15.720">light database with the adder mobile back-end now this</p>
+      <p begin="00:38:15.720" end="00:38:19.120">...the part of the right is really importantfrom</p>
+      <p begin="00:38:19.120" end="00:38:23.950">an architectural standpoint notice that it's not going straight to the database and it's not going straight</p>
+      <p begin="00:38:23.950" end="00:38:28.190">to sales force that's really important because you want to</p>
+      <p begin="00:38:28.190" end="00:38:31.910">...you...an operator you want to clique keep your client app code as</p>
+      <p begin="00:38:31.910" end="00:38:36.880">simple as possible particularly if you want to make it multi platform you</p>
+      <p begin="00:38:36.880" end="00:38:40.130">don't want to think about what where the data is located you want to layer of</p>
+      <p begin="00:38:40.130" end="00:38:44.690">abstraction for that and by putting that layer of abstraction in your</p>
+      <p begin="00:38:44.690" end="00:38:49.820">backend you can decide what view clients see so...get a really,</p>
+      <p begin="00:38:49.820" end="00:38:53.650">really simple view of things and it makes that much easier to write your</p>
+      <p begin="00:38:53.650" end="00:38:58.470">client code because other than offline...having a nice simple model for the...means that you can</p>
+      <p begin="00:38:58.470" end="00:39:03.240">split your ui more easily you can have your semantic actions map better to</p>
+      <p begin="00:39:03.240" end="00:39:09.000">within the within the actual database and things just work out better overall?</p>
+      <p begin="00:39:09.000" end="00:39:16.310">So, let's see this an action your all probably itching for a live demo of this.</p>
+      <p begin="00:39:16.310" end="00:39:25.990">to do this I'm going to switch to my...where I have...studio...</p>
+      <p begin="00:39:25.990" end="00:39:30.690">And, you saw the ui of the app when we to do here is I'm going to build</p>
+      <p begin="00:39:30.690" end="00:39:35.110">this up incrementally I'm going to start with an app...actually has no data connection</p>
+      <p begin="00:39:35.110" end="00:39:39.870">at all and not only connected to the mobile back-end but also...offline</p>
+      <p begin="00:39:39.870" end="00:39:44.770">...at the same time and hopefully this will show you how easy it is to add these features to</p>
+      <p begin="00:39:44.770" end="00:39:46.690">existing app.</p>
+      <p begin="00:39:46.690" end="00:39:50.090">So, as I said this is...informs app it works on both ios</p>
+      <p begin="00:39:50.090" end="00:39:53.550">...in this particular case I'm just going to show you the ios</p>
+      <p begin="00:39:53.550" end="00:39:55.320">version and.</p>
+      <p begin="00:39:56.340" end="00:40:00.140">What I have here is the service aspects of the</p>
+      <p begin="00:40:00.140" end="00:40:02.640">...this is the part that returns the actual</p>
+      <p begin="00:40:02.640" end="00:40:07.960">data and here what I'm doing is I'm just returning mocked data so by launched</p>
+      <p begin="00:40:07.960" end="00:40:16.620">in the emulator emulator what I'm going to see is just...fake text?</p>
+      <p begin="00:40:16.620" end="00:40:17.130">So, yes,</p>
+      <p begin="00:40:17.130" end="00:40:22.040">we have worm...some and etc so they text.</p>
+      <p begin="00:40:22.040" end="00:40:23.310">Let's.</p>
+      <p begin="00:40:23.310" end="00:40:28.560">Quit that emulator out so what I can do a comment out the...data</p>
+      <p begin="00:40:28.560" end="00:40:37.080">and I'll add initialize or to connect to my mobile service packet.</p>
+      <p begin="00:40:37.080" end="00:40:41.290">I'm going to use some code templates they don't have to watch me type everything if you're</p>
+      <p begin="00:40:41.290" end="00:40:46.140">familiar with mobile services you'll see that this constructors really similar to the one</p>
+      <p begin="00:40:46.140" end="00:40:50.670">for mobile services the one difference is now there's a gateway...here I put that into a</p>
+      <p begin="00:40:50.670" end="00:40:59.200">member variables...have to see the whole thing but this is where all the authentication goes.</p>
+      <p begin="00:40:59.200" end="00:41:03.200">...in order to actually store and later</p>
+      <p begin="00:41:03.200" end="00:41:07.100">...create updates delete operations and we create something called</p>
+      <p begin="00:41:07.100" end="00:41:09.800">...table.</p>
+      <p begin="00:41:09.800" end="00:41:14.380">What that is an abstraction that keeps track of these changes and when you read from a</p>
+      <p begin="00:41:14.380" end="00:41:17.740">...table your reading locally you're reading from your local sequel light database</p>
+      <p begin="00:41:17.740" end="00:41:21.360">mass case when you send updates again you're doing updates on your local</p>
+      <p begin="00:41:21.360" end="00:41:32.060">database but sdk is also keeping a q for-you of all the changes that has made?</p>
+      <p begin="00:41:32.060" end="00:41:35.630">Some using local storage layer.</p>
+      <p begin="00:41:35.630" end="00:41:40.460">I need to initialized so here I'm using a sequel light store this is one that we provide for</p>
+      <p begin="00:41:40.460" end="00:41:43.970">...by default and is?</p>
+      <p begin="00:41:43.970" end="00:41:48.030">Basically doing...using...sequel light in order to do the offline...storage</p>
+      <p begin="00:41:48.030" end="00:41:53.090">layer this is completely customizable if you see here I'm initialize in</p>
+      <p begin="00:41:53.090" end="00:41:55.260">the context with the store if I</p>
+      <p begin="00:41:55.260" end="00:42:00.220">...I can has anything that implements the right interface so if you have your own local star</p>
+      <p begin="00:42:00.220" end="00:42:04.500">that's based on the couch tv or some custom thing you can</p>
+      <p begin="00:42:04.500" end="00:42:09.160">...implement just...that...really easily so.</p>
+      <p begin="00:42:09.160" end="00:42:14.180">I've been running this apple bunch of times and.</p>
+      <p begin="00:42:14.180" end="00:42:18.730">Don't want to see all data summer change this local...name so,...</p>
+      <p begin="00:42:18.730" end="00:42:23.700">initialize local store and then I initialize the same table which is basically</p>
+      <p begin="00:42:23.700" end="00:42:28.990">mapping everything wire everything up with the same context?</p>
+      <p begin="00:42:28.990" end="00:42:37.370">Now what I want to read.</p>
+      <p begin="00:42:37.370" end="00:42:41.190">What I'm going to do?</p>
+      <p begin="00:42:41.190" end="00:42:47.430">Is going to...from job table and the disapprove this particular methods</p>
+      <p begin="00:42:47.430" end="00:42:52.290">supports search so it's going to do a query on a local sequel database and return the result</p>
+      <p begin="00:42:52.290" end="00:42:55.710">this is all doing a local read which is really important because you as</p>
+      <p begin="00:42:55.710" end="00:43:00.380">...developer you don't want to write really complicated logic to decide where to read from depending on whether</p>
+      <p begin="00:43:00.380" end="00:43:00.850">...online</p>
+      <p begin="00:43:00.850" end="00:43:05.620">...instead what you're going to do is write code that works against</p>
+      <p begin="00:43:05.620" end="00:43:09.870">the local store and then based on your apps logic you're going to decide what point you want to</p>
+      <p begin="00:43:09.870" end="00:43:14.300">synchronize the changes with what's in your actual mobile service since gives you a ton</p>
+      <p begin="00:43:14.300" end="00:43:19.030">of control and it's also means that you can write apps that can either be in</p>
+      <p begin="00:43:19.030" end="00:43:23.350">the primarily online mode where they're just kind of keeping some state around just in case you step</p>
+      <p begin="00:43:23.350" end="00:43:27.850">into an elevator or apps like the fields of technician where</p>
+      <p begin="00:43:27.850" end="00:43:33.850">... he mites usually not...connectivity?</p>
+      <p begin="00:43:33.850" end="00:43:37.870">So, now to update the job I've already said it status to complete</p>
+      <p begin="00:43:37.870" end="00:43:42.380">want to do here is just call update asic on my</p>
+      <p begin="00:43:42.380" end="00:43:50.470">...table of instance.</p>
+      <p begin="00:43:50.470" end="00:43:54.660">And, if you're familiar with our mobile services an online sdk actually this is</p>
+      <p begin="00:43:54.660" end="00:44:00.660">exact same method called that...same withthe query that you do here.</p>
+      <p begin="00:44:00.660" end="00:44:05.130">And, that's it...that's by design.</p>
+      <p begin="00:44:05.130" end="00:44:07.070">The y is going to the periodically</p>
+      <p begin="00:44:07.070" end="00:44:15.340">costing particularly when you go from online to offline so.</p>
+      <p begin="00:44:15.340" end="00:44:19.700">Let us...that functionality here.</p>
+      <p begin="00:44:19.700" end="00:44:21.910">This is a slightly longer but it's</p>
+      <p begin="00:44:21.910" end="00:44:29.030">still pretty reasonable first what you're going to do is you're going to push changes that you have pending.</p>
+      <p begin="00:44:29.030" end="00:44:33.110">If you if you actually pull changes and you have pending changes on that same table sdk</p>
+      <p begin="00:44:33.110" end="00:44:38.190">actually call push for you that's how it make sure that everything is consistent now I have a</p>
+      <p begin="00:44:38.190" end="00:44:42.560">query and basically what I'm saying here is I just wants this</p>
+      <p begin="00:44:42.560" end="00:44:45.230">...only have those jobs that belong to this local</p>
+      <p begin="00:44:45.230" end="00:44:49.780">technet this particular technician we don't want every single job in the world showing up that takes</p>
+      <p begin="00:44:49.780" end="00:44:54.590">...and also your us probably oakley weird.</p>
+      <p begin="00:44:54.590" end="00:44:56.120">And, then...you do is you pull a</p>
+      <p begin="00:44:56.120" end="00:45:03.470">...with that same query here the first parameter is something called a query key.</p>
+      <p begin="00:45:03.470" end="00:45:08.950">that's optional here at...to it because I don't have a ton of data what that does is it does incremental</p>
+      <p begin="00:45:08.950" end="00:45:11.400">...for you it uses sdk...</p>
+      <p begin="00:45:11.400" end="00:45:16.360">an internal table words keeping track of the queries it's done...keeps the time stamp of the</p>
+      <p begin="00:45:16.360" end="00:45:20.620">last record it got the last time you did a poll operation so when you pass</p>
+      <p begin="00:45:20.620" end="00:45:23.020">...that same query key the next time you do a</p>
+      <p begin="00:45:23.020" end="00:45:30.150">pool it's going to start from that point to get everything later than up and that's it so?</p>
+      <p begin="00:45:30.150" end="00:45:34.760">Fingers crossed let's build everything and run it</p>
+      <p begin="00:45:34.760" end="00:45:38.930">to now what this is going to do is.</p>
+      <p begin="00:45:38.930" end="00:45:42.260">Get all the active cases let-me open up sales force</p>
+      <p begin="00:45:42.260" end="00:45:46.340">that you can see we actually have here so,</p>
+      <p begin="00:45:46.340" end="00:45:51.480">we had a...fix first...we...sure that was fixed right away</p>
+      <p begin="00:45:51.480" end="00:45:56.460">he's the most...ip of the customers and then my coworker matthew and deny</p>
+      <p begin="00:45:56.460" end="00:46:01.430">are the ones that have some outstanding work to be done that the work that's been assigned</p>
+      <p begin="00:46:01.430" end="00:46:06.800">out to a technician so here notice there's no data this is...</p>
+      <p begin="00:46:06.800" end="00:46:11.750">Because I started the app in offline mode so what this is doing</p>
+      <p begin="00:46:11.750" end="00:46:15.830">is pretending like there's no network connection and doing a local read.</p>
+      <p begin="00:46:15.830" end="00:46:17.550">When I turn this over</p>
+      <p begin="00:46:17.550" end="00:46:20.840">to online what that's going to do is call</p>
+      <p begin="00:46:20.840" end="00:46:26.960">my mobile service and put all that data into my local sequel light database?</p>
+      <p begin="00:46:26.960" end="00:46:31.550">And, then you can make changes so to show you that it</p>
+      <p begin="00:46:31.550" end="00:46:32.050">really.</p>
+      <p begin="00:46:33.180" end="00:46:35.350">Does work offline?</p>
+      <p begin="00:46:35.350" end="00:46:41.070">I'm going to change return it.</p>
+      <p begin="00:46:41.070" end="00:46:45.720">And, what I'm going to do is at the technician I'm going to say that this</p>
+      <p begin="00:46:45.720" end="00:46:51.180">work was completed for me as a customer but since I'm</p>
+      <p begin="00:46:51.180" end="00:46:52.550">offline?</p>
+      <p begin="00:46:52.550" end="00:47:02.380">If I go here and refresh the...sales force you can see that the...still now.</p>
+      <p begin="00:47:02.380" end="00:47:07.060">And, let's go back online.</p>
+      <p begin="00:47:07.060" end="00:47:09.330">Refreshed is to be sure.</p>
+      <p begin="00:47:09.330" end="00:47:13.150">...pushing the changes...through sales force and you see now the</p>
+      <p begin="00:47:13.150" end="00:47:17.890">cases close and let's say that let's say meantime</p>
+      <p begin="00:47:17.890" end="00:47:21.330">...the field technician is left my house I call back and I say I call my</p>
+      <p begin="00:47:21.330" end="00:47:25.830">personalized customer service valet I say nope everything broke again this is</p>
+      <p begin="00:47:25.830" end="00:47:28.790">totally busted so here.</p>
+      <p begin="00:47:28.790" end="00:47:34.080">What I can do is reopen the case?</p>
+      <p begin="00:47:34.080" end="00:47:37.970">If I can remember how to do that and...</p>
+      <p begin="00:47:37.970" end="00:47:46.010">So,...this is the contact the wrong place you can see that I'm an avid of</p>
+      <p begin="00:47:46.010" end="00:47:56.030">sales force user so, the case...re...</p>
+      <p begin="00:47:56.030" end="00:47:58.940">Let me first.</p>
+      <p begin="00:47:58.940" end="00:48:00.740">We do something here.</p>
+      <p begin="00:48:00.740" end="00:48:08.910">I'm going to.</p>
+      <p begin="00:48:08.910" end="00:48:11.950">I'll keep it online so I was going to generate a conflict</p>
+      <p begin="00:48:11.950" end="00:48:24.040">for you so this case is now reopened...to say why it's reopened.</p>
+      <p begin="00:48:24.040" end="00:48:27.760">And, that's the reason is that I called and you can see here my boss is the customer</p>
+      <p begin="00:48:27.760" end="00:48:32.780">valet here he's been he's been making all these changes his moonlighting...fabric</p>
+      <p begin="00:48:32.780" end="00:48:37.020">...cable despair time.</p>
+      <p begin="00:48:37.020" end="00:48:38.070">Go back here and</p>
+      <p begin="00:48:38.070" end="00:48:42.080">...you can see my appointment is still updated so now let's get let's</p>
+      <p begin="00:48:42.080" end="00:48:46.770">simulate a conflict let's have the technician make changes and let's</p>
+      <p begin="00:48:46.770" end="00:48:50.950">pretend that he's offline for a long-time and in the meantime us the</p>
+      <p begin="00:48:50.950" end="00:48:58.900">customer support person is actually change that same record so what I'm going to do here.</p>
+      <p begin="00:48:58.900" end="00:49:00.560">...offline...</p>
+      <p begin="00:49:00.560" end="00:49:02.200">Online...</p>
+      <p begin="00:49:02.200" end="00:49:04.800">I'm going to mark this...again.</p>
+      <p begin="00:49:05.950" end="00:49:06.630">Data isn't</p>
+      <p begin="00:49:06.630" end="00:49:11.420">...here I'm going to go in edit the case and,</p>
+      <p begin="00:49:11.420" end="00:49:13.180">say that.</p>
+      <p begin="00:49:13.180" end="00:49:16.430">Everything is broken.</p>
+      <p begin="00:49:16.430" end="00:49:25.080">And, I'll change the status to new and...close.</p>
+      <p begin="00:49:25.080" end="00:49:29.180">Just save the statuses new.</p>
+      <p begin="00:49:29.180" end="00:49:37.860">Let me go back to my simulator.</p>
+      <p begin="00:49:37.860" end="00:49:38.720">...it refresh before</p>
+      <p begin="00:49:38.720" end="00:49:46.030">I realized I didn't actually market completed I do not set it up correctly.</p>
+      <p begin="00:49:46.030" end="00:49:48.640">No, I did sorry.</p>
+      <p begin="00:49:48.640" end="00:49:52.240">I get confused with all these names of people who are probably not actually</p>
+      <p begin="00:49:52.240" end="00:49:57.710">requesting cable service so as a field engineer maybe a little confusing but</p>
+      <p begin="00:49:57.710" end="00:50:02.260">what happened was as the field engineer I closed out the case but before I had a chance to</p>
+      <p begin="00:50:02.260" end="00:50:07.380">sink the customer support representative had actually change the case and change</p>
+      <p begin="00:50:07.380" end="00:50:12.240">the title and you can see that these changes are now reflected in the fit field</p>
+      <p begin="00:50:12.240" end="00:50:17.000">engineers app so you don't have a situation where the field engineer has just left,</p>
+      <p begin="00:50:17.000" end="00:50:17.720">you know, and,</p>
+      <p begin="00:50:17.720" end="00:50:25.530">come back to office now he synchronizing now you overwrite, you know, customer data because that would be really bad.</p>
+      <p begin="00:50:25.530" end="00:50:29.990">Let me talk about how the thing complex actually work.</p>
+      <p begin="00:50:29.990" end="00:50:34.410">Basically so remember this diagram of how synchronization is</p>
+      <p begin="00:50:34.410" end="00:50:36.900">...with offline</p>
+      <p begin="00:50:36.900" end="00:50:41.840">...you can decide where you want to your complex resolution you can either do it on the server-side which is what I'm going to</p>
+      <p begin="00:50:41.840" end="00:50:43.860">shown this example on the client-side.</p>
+      <p begin="00:50:44.940" end="00:50:49.740">And, the way it works as that uses something called optimistic concurrency which is</p>
+      <p begin="00:50:49.740" end="00:50:54.140">a very fancy sounding word for don't lock the databasewhile someone</p>
+      <p begin="00:50:54.140" end="00:51:00.870">...so basically think olds version control systems like cbs that would...and</p>
+      <p begin="00:51:00.870" end="00:51:06.350">...or even older version control systems that would lock files because someone might at them</p>
+      <p begin="00:51:06.350" end="00:51:11.690">to newer systems where they, you know, assume that anyone could be editing at the</p>
+      <p begin="00:51:11.690" end="00:51:16.840">...emerge back-end is when...conflicts...what we do here basically</p>
+      <p begin="00:51:16.840" end="00:51:21.630">supposed to the first device creates a new record with the value of triangle and version</p>
+      <p begin="00:51:21.630" end="00:51:26.460">one that's how we're doing optimistic concurrency were keeping track of the fields</p>
+      <p begin="00:51:26.460" end="00:51:31.880">of with a value that has to change each time when we map this into</p>
+      <p begin="00:51:31.880" end="00:51:36.540">sql it's the row version...but it can be anything that can be mapped</p>
+      <p begin="00:51:36.540" end="00:51:40.470">to...hp compliant...tag so now device</p>
+      <p begin="00:51:40.470" end="00:51:44.330">to is going to get the new data from the server device to is going to change the value</p>
+      <p begin="00:51:44.330" end="00:51:49.000">to a square into now the versions going to get incremented...send that change</p>
+      <p begin="00:51:49.000" end="00:51:53.530">...the server so now the client...out of...device one of out-of-date now if</p>
+      <p begin="00:51:53.530" end="00:51:56.860">it tries to change the same data to a circle is going to try to</p>
+      <p begin="00:51:56.860" end="00:52:01.290">think its on version to but actually it's not because version to is what the server</p>
+      <p begin="00:52:01.290" end="00:52:04.210">...without points the server says nope sorry, yeah,</p>
+      <p begin="00:52:04.210" end="00:52:08.900">you have a precondition failed exception actually sends that particular status</p>
+      <p begin="00:52:08.900" end="00:52:13.730">...code afford twelve so if you trapped exception on the server obviously the client won't see</p>
+      <p begin="00:52:13.730" end="00:52:18.360">it and, but,...either on the client or the server you can handle the</p>
+      <p begin="00:52:18.360" end="00:52:35.990">exceptions same way so let's look and see how that works and our server code?</p>
+      <p begin="00:52:35.990" end="00:52:39.710">So, let's go back to the job controller and I said there's a bunch of...that you had you</p>
+      <p begin="00:52:39.710" end="00:52:45.540">didn't have to pay attention to but this is how handling basically ...the conflict resolution works</p>
+      <p begin="00:52:45.540" end="00:52:50.390">or one way you can implemented if the kind of pretend that you're actually doing handling at the same way you...</p>
+      <p begin="00:52:50.390" end="00:52:55.600">on the client so here what it's going to do is it's going to try to update the database</p>
+      <p begin="00:52:55.600" end="00:53:01.850">and databases where I have that version fieldset and because it's a</p>
+      <p begin="00:53:01.850" end="00:53:05.410">sequel...version every time the data is updated the</p>
+      <p begin="00:53:05.410" end="00:53:08.600">...versions actually going to increment so here</p>
+      <p begin="00:53:08.600" end="00:53:12.510">...back-end as a catches the exception and if it gets precondition</p>
+      <p begin="00:53:12.510" end="00:53:16.860">fails the for twelve then it's going to decide what to do in this case it's going to</p>
+      <p begin="00:53:16.860" end="00:53:21.010">do server wins so it's just going to ignore the client changes all together</p>
+      <p begin="00:53:21.010" end="00:53:24.170">and it's going to tell the client hey this is actually what values.</p>
+      <p begin="00:53:25.310" end="00:53:29.920">Are more realistic system you probably would log changes or maybe would merge the complex</p>
+      <p begin="00:53:29.920" end="00:53:40.880">together but this is just a simple example of how you might...the conflict handling?</p>
+      <p begin="00:53:40.880" end="00:53:43.650">All right so summarize.</p>
+      <p begin="00:53:43.650" end="00:53:48.770">Offline...light-weight...composer...it works with a bunch of data sources even more than</p>
+      <p begin="00:53:48.770" end="00:53:53.770">we had before so I showed you sales force it also works with dynamics crm it also works</p>
+      <p begin="00:53:53.770" end="00:53:58.800">with more interesting sources like...or any custom api that you have.</p>
+      <p begin="00:53:58.800" end="00:54:03.050">A and we have cross-platform...decays all of them support offline.</p>
+
+    </div>
+  </body>
+</tt>

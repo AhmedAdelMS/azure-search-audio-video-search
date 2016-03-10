@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.893</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.330" end="00:00:04.850">...appearing...build the session is what can...do for android</p>
+      <p begin="00:00:04.850" end="00:00:09.550">and ios so obviously here I'm going to tell you about what a measure can do if</p>
+      <p begin="00:00:09.550" end="00:00:14.670">you're building android ios apps how it can help you built better applications if you already what's the</p>
+      <p begin="00:00:14.670" end="00:00:18.930">keynote which if you have an I'll just go back and watch that there were some really cool announcements</p>
+      <p begin="00:00:18.930" end="00:00:21.800">that have to do with android ios coding and</p>
+      <p begin="00:00:21.800" end="00:00:27.250">...I'm not going to dive into those but I will be focusing on as your...today the first</p>
+      <p begin="00:00:27.250" end="00:00:32.300">...a little bit about me you haven't caught me on cloud cover or another</p>
+      <p begin="00:00:32.300" end="00:00:35.450">them before my name is chris reiner I'm a senior technical</p>
+      <p begin="00:00:35.450" end="00:00:41.420">ranges that microsoft I focused primarily on open-source and?</p>
+      <p begin="00:00:41.420" end="00:00:45.180">Maybe...of technology as far as how we can use that along with</p>
+      <p begin="00:00:45.180" end="00:00:51.090">leisure I do a lot of android ios development obviously that's why I'm here talks you...if you</p>
+      <p begin="00:00:51.090" end="00:00:55.920">...twitter you might be...picture that's my job and then also, you know,</p>
+      <p begin="00:00:55.920" end="00:00:59.500">I'm really into sailing that's kind of idea when I'm not doing stuff like</p>
+      <p begin="00:01:00.730" end="00:01:04.520">...started by going over a can be agenda for the session</p>
+      <p begin="00:01:04.520" end="00:01:09.170">...is to a quick overview of as you're just kind of a high-level view of what it</p>
+      <p begin="00:01:09.170" end="00:01:13.760">is education...familiar with it and...going to focus on two different things making more powerful</p>
+      <p begin="00:01:13.760" end="00:01:18.210">...so services...can help you build better applications and then</p>
+      <p begin="00:01:18.210" end="00:01:22.400">...testing...so services that can help you build-out your applications</p>
+      <p begin="00:01:22.400" end="00:01:26.490">...that's building them touching them running...</p>
+      <p begin="00:01:26.490" end="00:01:28.430">And, then we'll kind of replicas to quick summary</p>
+      <p begin="00:01:28.430" end="00:01:33.420">and provide a few ways to contact both myself and some of the teams that work on</p>
+      <p begin="00:01:33.420" end="00:01:37.530">...relative to what...talking about today.</p>
+      <p begin="00:01:37.530" end="00:01:42.650">So, first for an overview you know, really popular thing that you'll hear from you probably heard</p>
+      <p begin="00:01:42.650" end="00:01:45.790">...the build sessions is that microsoft is really becoming</p>
+      <p begin="00:01:45.790" end="00:01:49.830">a mobile first cloud first company and it's really more the microsoft of world</p>
+      <p begin="00:01:49.830" end="00:01:54.380">...people are doing more things on their phones first before they look anywhere else and people</p>
+      <p begin="00:01:54.380" end="00:01:58.740">...at the cloud is...other problems so instead of getting other traditional computer, you know,</p>
+      <p begin="00:01:58.740" end="00:02:01.430">maybe they're...mobile...tablet instead of having a set</p>
+      <p begin="00:02:01.430" end="00:02:06.250">...your own datacenter by your own service people are looking at the cloud and we're really embracing that and, you know,</p>
+      <p begin="00:02:06.250" end="00:02:10.630">this specific session is really all about that because we're really talking about how we can use the</p>
+      <p begin="00:02:10.630" end="00:02:15.490">clouded to build better mobile applications so microsoft as your as microsoft's</p>
+      <p begin="00:02:15.490" end="00:02:20.180">cloud platform and that's a kind of a nebulous term for a lot of different</p>
+      <p begin="00:02:20.180" end="00:02:25.210">services and offerings that microsoft provides for application developers and these</p>
+      <p begin="00:02:25.210" end="00:02:30.340">...developers building out, you know, I web applications so something like you know,</p>
+      <p begin="00:02:30.340" end="00:02:34.810">and, instagram perhaps something like that just a big what website all the way down to, you know,</p>
+      <p begin="00:02:34.810" end="00:02:40.360">just small, you know, just my own little personal website sort of stuff and then this could be also stuff for</p>
+      <p begin="00:02:40.360" end="00:02:43.630">people building mobile applications ...willing, you know,</p>
+      <p begin="00:02:43.630" end="00:02:46.940">big server farm etc just tons of different things we're going</p>
+      <p begin="00:02:46.940" end="00:02:50.270">...highlighting some of the services that you see here on this graph</p>
+      <p begin="00:02:50.270" end="00:02:55.250">...have specifically to do with a mobile and more specifically to do with...</p>
+      <p begin="00:02:55.250" end="00:03:00.210">and right so we'll go through all these things right here but there's a ton of stuff in here whether it's</p>
+      <p begin="00:03:00.210" end="00:03:04.080">a virtual machines and infrastructures service or website which is</p>
+      <p begin="00:03:04.080" end="00:03:07.490">...service to database storage options to</p>
+      <p begin="00:03:07.490" end="00:03:11.290">of education a lot of these things are software...coined use from mobile</p>
+      <p begin="00:03:11.290" end="00:03:17.650">...do in a pretty simple easy way so what comes to mobile measure we look at</p>
+      <p begin="00:03:17.650" end="00:03:21.740">kind of three different things we want to make sure the suffer buildings accessible is open</p>
+      <p begin="00:03:21.740" end="00:03:25.200">...easy without accessibility obviously</p>
+      <p begin="00:03:25.200" end="00:03:29.840">...android hugely insanely popular devices so when we build-out services we want-to make sure</p>
+      <p begin="00:03:29.840" end="00:03:34.510">these services can work with these operating systems we talk about open</p>
+      <p begin="00:03:34.510" end="00:03:39.530">we mean that we...make sure you understand how things work and what's going on so lot of the</p>
+      <p begin="00:03:39.530" end="00:03:42.010">...we're going to use around look at say...</p>
+      <p begin="00:03:42.010" end="00:03:46.610">open-source on get so if you want understand how things work under the hood you</p>
+      <p begin="00:03:46.610" end="00:03:50.780">can look at that sdk if you want to make a...request you can do that we except</p>
+      <p begin="00:03:50.780" end="00:03:56.020">...requests or very open about how us technology works and then easy.</p>
+      <p begin="00:03:56.020" end="00:03:57.140">It's all great if, you know,</p>
+      <p begin="00:03:57.140" end="00:04:02.350">you can use it on the different platforms and you can see how orson...is easy-to-use it's going</p>
+      <p begin="00:04:02.350" end="00:04:06.340">to be really hard to make sense of why you would even bother so the</p>
+      <p begin="00:04:06.340" end="00:04:10.120">...see today it's really easy to get plugged into both your ios</p>
+      <p begin="00:04:10.120" end="00:04:10.880">...applications</p>
+      <p begin="00:04:11.990" end="00:04:17.690">let's go ahead and jump right into talking about making more powerful apps.</p>
+      <p begin="00:04:17.690" end="00:04:20.600">So, first...going to talk about is as your mobile services and</p>
+      <p begin="00:04:20.600" end="00:04:24.880">...something we've been talking about for a couple years now and it's really quite</p>
+      <p begin="00:04:24.880" end="00:04:28.460">...a offers a lot of capabilities essentially this is a platforms</p>
+      <p begin="00:04:28.460" end="00:04:32.620">...service offering from microsoft measure that contains functionality to</p>
+      <p begin="00:04:32.620" end="00:04:37.460">do the three big things are data storage authentication and push</p>
+      <p begin="00:04:37.460" end="00:04:40.710">...when it comes...storage by default kind of the</p>
+      <p begin="00:04:40.710" end="00:04:45.560">...out-of-the-box screens you get is it's going to store data in a sql database was really nice</p>
+      <p begin="00:04:45.560" end="00:04:50.410">about mobile services is that the sequel database that uses is not something that,</p>
+      <p begin="00:04:50.410" end="00:04:54.870">you know, hidden behind the scenes you can access...can your data unless you're using mobile</p>
+      <p begin="00:04:54.870" end="00:04:59.810">services is a normal...error sequel database so</p>
+      <p begin="00:04:59.810" end="00:05:04.730">if you decide you want to take all your data out of that and put you...system you can do that if you need to</p>
+      <p begin="00:05:04.730" end="00:05:09.120">connect that database and do more enhance database administration you can do that</p>
+      <p begin="00:05:09.120" end="00:05:13.940">we also have a mobile services...that you can pretty easily connected to other data stores so if you</p>
+      <p begin="00:05:13.940" end="00:05:17.310">...something like a no sequel system like table storage...db you</p>
+      <p begin="00:05:17.310" end="00:05:21.700">could do that if you need to connect into a sas provider like sales</p>
+      <p begin="00:05:21.700" end="00:05:25.530">force dynamics you can do that a lot of functionality you get out of</p>
+      <p begin="00:05:25.530" end="00:05:29.890">that data storage as far as user authentication goes this is a great feature that</p>
+      <p begin="00:05:29.890" end="00:05:34.330">enables you to really easily giver uses the ability to login so that you can</p>
+      <p begin="00:05:34.330" end="00:05:38.980">then know who they are and make sure...only getting the data that they're authorized to see</p>
+      <p begin="00:05:38.980" end="00:05:43.750">...mobile services has connectivity to do authentication with facebook</p>
+      <p begin="00:05:43.750" end="00:05:47.200">twitter microsoft accounts goo hunt and then also as</p>
+      <p begin="00:05:47.200" end="00:05:51.370">you're active directory we'll talk more about the adjective directory a little bit waiter</p>
+      <p begin="00:05:51.370" end="00:05:56.270">because it extends beyond just what mobile services can do and then another</p>
+      <p begin="00:05:56.270" end="00:06:00.960">...here is push notifications push locations are hugely important when you building</p>
+      <p begin="00:06:00.960" end="00:06:05.850">mobile applications the vast majority of mobile applications are using these push notations whether</p>
+      <p begin="00:06:05.850" end="00:06:10.800">it's something where you're popping up something to the user or descending information down...the application to create</p>
+      <p begin="00:06:10.800" end="00:06:15.300">a very seamless very enticing experience as far as push</p>
+      <p begin="00:06:15.300" end="00:06:20.170">...go with measure mobile services their support for aps which supports ios and</p>
+      <p begin="00:06:20.170" end="00:06:25.530">...austen their support for android for both</p>
+      <p begin="00:06:25.530" end="00:06:28.060">...google android so gc...</p>
+      <p begin="00:06:28.060" end="00:06:32.960">group messaging amazon android so amazon device messaging as well as by</p>
+      <p begin="00:06:32.960" end="00:06:37.980">...windows, windows phone emptiness w...this of works ...you</p>
+      <p begin="00:06:37.980" end="00:06:43.230">...the amazon...provocations and, then were also working on some other enhance of</p>
+      <p begin="00:06:43.230" end="00:06:47.980">for...messaging as well now behind-the-scenes you're able to actually</p>
+      <p begin="00:06:47.980" end="00:06:51.440">do your coding so build your own logic out</p>
+      <p begin="00:06:51.440" end="00:06:57.800">b dot net for...js as well some other languages?</p>
+      <p begin="00:06:57.800" end="00:07:00.700">And,...client-side their st case for all the upping</p>
+      <p begin="00:07:00.700" end="00:07:03.970">systems you'd expect so for ios for android for windows,</p>
+      <p begin="00:07:03.970" end="00:07:07.960">windows phone and there's also suffer cross...solution so if you building is amr</p>
+      <p begin="00:07:07.960" end="00:07:12.100">application or phone gap application you can use those sdk you can</p>
+      <p begin="00:07:12.100" end="00:07:16.210">...inside of those applications...is a very can, you know, compelling or,</p>
+      <p begin="00:07:16.210" end="00:07:20.720">you know, an encompassing offer if you're building locations so you don't have to worry about building</p>
+      <p begin="00:07:20.720" end="00:07:25.400">out this back or how do you handle...off of education or how do you</p>
+      <p begin="00:07:25.400" end="00:07:30.470">...aps re-do push...mobile services does this for you and this is also</p>
+      <p begin="00:07:30.470" end="00:07:32.830">if you could build yourself but it's going</p>
+      <p begin="00:07:32.830" end="00:07:35.910">to take time and you're going to have to be able to test it and</p>
+      <p begin="00:07:35.910" end="00:07:40.800">...going to be reliable and it's going to work and that will scale out mobile services here and does all this</p>
+      <p begin="00:07:40.800" end="00:07:46.940">for you already let's go ahead and look at mobile service really quickly?</p>
+      <p begin="00:07:46.940" end="00:07:51.480">So, here we are in the microsoft error portal if I wanted this is the current portal we're</p>
+      <p begin="00:07:51.480" end="00:07:56.300">...be going between this and the preview portal throughout the session if we wanted to</p>
+      <p begin="00:07:56.300" end="00:08:00.900">create a new mobile service we could just go...create and then we give it a name we choose</p>
+      <p begin="00:08:00.900" end="00:08:05.210">...create a new database using existing one...us subscription we want to put it</p>
+      <p begin="00:08:05.210" end="00:08:09.390">...where we want as far as around the world goes I've already...mobile service</p>
+      <p begin="00:08:09.390" end="00:08:14.470">...skip past that and go into build mobile service demo the first thing you see is the quick</p>
+      <p begin="00:08:14.470" end="00:08:19.220">start page where you can choose a platform you want to start with and it'll give you a guide for either</p>
+      <p begin="00:08:19.220" end="00:08:22.230">creating new application or connecting existing</p>
+      <p begin="00:08:22.230" end="00:08:26.980">...just downloading the sdk I've already done this and I've already got in iowa's and</p>
+      <p begin="00:08:26.980" end="00:08:31.640">...application...going to walk through and we'll kind of look through some of the portal and, you know,</p>
+      <p begin="00:08:31.640" end="00:08:33.970">instead of going through the whole creation process will just focus on</p>
+      <p begin="00:08:33.970" end="00:08:40.190">...already created so this is going to be this simple to do application you get out of the</p>
+      <p begin="00:08:40.190" end="00:08:45.350">...just with a few modification to it...I'll point out as they already have a to</p>
+      <p begin="00:08:45.350" end="00:08:50.230">do item table to store my data so if I go over to.</p>
+      <p begin="00:08:50.230" end="00:08:54.880">Android studio I've got this build mobile services application here and the first we'll do is</p>
+      <p begin="00:08:54.880" end="00:09:03.220">...just run and walk through some of the code so it's going to go ahead and assembler application.</p>
+      <p begin="00:09:03.220" end="00:09:06.430">And,...on our emulator.</p>
+      <p begin="00:09:06.430" end="00:09:20.530">And, then we'll go over here to our emulator and just a moment we should see our application run.</p>
+      <p begin="00:09:20.530" end="00:09:24.940">casing to launch up the first thing we're going to see is it's going to prompt us to authenticate I've already</p>
+      <p begin="00:09:24.940" end="00:09:30.180">added authentication in my application so here we've got doing twitter off so I'm</p>
+      <p begin="00:09:30.180" end="00:09:34.150">going-to go ahead and type in my username and then I will take</p>
+      <p begin="00:09:34.150" end="00:09:42.030">this off-screen type in my password.</p>
+      <p begin="00:09:42.030" end="00:09:44.940">And, we'll go ahead and sign-in.</p>
+      <p begin="00:09:44.940" end="00:09:48.300">And, some login it shows me my id it's twitter...</p>
+      <p begin="00:09:48.300" end="00:09:52.710">a big number was really great is that now the client-side application has</p>
+      <p begin="00:09:52.710" end="00:09:55.570">an id from...user and then my back-end also</p>
+      <p begin="00:09:55.570" end="00:09:59.420">has id from user so now I can actually start saving data</p>
+      <p begin="00:09:59.420" end="00:10:03.880">...that user doing queries off the user id and that's how you go ahead and</p>
+      <p begin="00:10:03.880" end="00:10:12.290">you restrict access to data so-if, for example, I save...to do item.</p>
+      <p begin="00:10:12.290" end="00:10:17.070">So, we'll say we're going to talk about mobile services when I say this data on the back-end if I wanted</p>
+      <p begin="00:10:17.070" end="00:10:22.230">to I could add the id to this data object and then I know that this</p>
+      <p begin="00:10:22.230" end="00:10:26.240">to item was saved by me the user and then whenever I get my to do</p>
+      <p begin="00:10:26.240" end="00:10:30.110">...refresh the...I can make sure that on the only once iness.</p>
+      <p begin="00:10:30.110" end="00:10:31.590">So, let's just had a couple more should</p>
+      <p begin="00:10:31.590" end="00:10:35.450">you items from android so to from</p>
+      <p begin="00:10:35.450" end="00:10:40.590">...let's go ahead and that now if we go back to the portal.</p>
+      <p begin="00:10:40.590" end="00:10:44.140">And, we go into this you...table we'll see that we've got some data here</p>
+      <p begin="00:10:44.140" end="00:10:46.040">...gives...you know,</p>
+      <p begin="00:10:46.040" end="00:10:50.960">what dns across being, you know, the text...a complete field mobile services you something called</p>
+      <p begin="00:10:50.960" end="00:10:54.060">dynamics immunization so that it will generate database</p>
+      <p begin="00:10:54.060" end="00:10:58.100">comes and the scheme is...for you</p>
+      <p begin="00:10:58.100" end="00:11:02.450">sequentially application and let's go ahead and look at some of the code?</p>
+      <p begin="00:11:02.450" end="00:11:07.360">Most...codes going-to-take place in the to do activity this is kind of...if you hefner with android this is</p>
+      <p begin="00:11:07.360" end="00:11:13.500">that you know, essentially the thing that represents the page we're looking at really so first we</p>
+      <p begin="00:11:13.500" end="00:11:16.110">...service client is part of the sdk</p>
+      <p begin="00:11:16.110" end="00:11:21.020">that or referencing this mobile service clients...kind of...our initial access into</p>
+      <p begin="00:11:21.020" end="00:11:25.090">our application whenever mobile service table this is what we use with the to</p>
+      <p begin="00:11:25.090" end="00:11:28.890">do am object right here this has this room has the different point</p>
+      <p begin="00:11:28.890" end="00:11:32.830">of different properties that we have is part of that and id a text</p>
+      <p begin="00:11:32.830" end="00:11:36.910">...complete field now if we go back in here and we look at the on create</p>
+      <p begin="00:11:36.910" end="00:11:41.870">method personal see is this mobile service client instantiated worry...url</p>
+      <p begin="00:11:41.870" end="00:11:46.900">...mobile service and an application key this application key is a unique...for</p>
+      <p begin="00:11:46.900" end="00:11:49.650">...mobile service and what this allows me to do is I can</p>
+      <p begin="00:11:49.650" end="00:11:53.670">set security settings on the different tables differ methods part of</p>
+      <p begin="00:11:53.670" end="00:11:57.810">...service whether not they requires application key come across a header when I</p>
+      <p begin="00:11:57.810" end="00:12:01.190">criminal service client like this it's going to automatically send this as a header with</p>
+      <p begin="00:12:01.190" end="00:12:03.920">...request so next thing I do after a create a</p>
+      <p begin="00:12:03.920" end="00:12:08.530">is I call authenticate in this case if I go to authenticate and</p>
+      <p begin="00:12:08.530" end="00:12:13.100">if you looked at the mobile...sdk for android before you might think this looks a little bit</p>
+      <p begin="00:12:13.100" end="00:12:15.910">different because we're using this stuff called futures and work</p>
+      <p begin="00:12:15.910" end="00:12:20.670">creating call backs essentially in order to better facilitation functionality down the road we</p>
+      <p begin="00:12:20.670" end="00:12:25.190">kind of changed how it works it still looks relatively similar just a little bit nomenclature,</p>
+      <p begin="00:12:25.190" end="00:12:27.780">nomenclature changes so inside here</p>
+      <p begin="00:12:27.780" end="00:12:32.150">we're calling login on the client object or passing in the twitter provider if we</p>
+      <p begin="00:12:32.150" end="00:12:36.440">...to do google microsoft etc we could just change that</p>
+      <p begin="00:12:36.440" end="00:12:37.810">right here?</p>
+      <p begin="00:12:37.810" end="00:12:41.710">Then inside of that we pass a call back which says that when we successfully</p>
+      <p begin="00:12:41.710" end="00:12:46.420">login go ahead and create that papa says hey your login and then call create table</p>
+      <p begin="00:12:46.420" end="00:12:50.750">create table is what is does the for code to say hey when I</p>
+      <p begin="00:12:50.750" end="00:12:55.590">ever I use this m to do table object this is the classes...I'm using its the to do</p>
+      <p begin="00:12:55.590" end="00:13:00.740">entail behind-the-scenes then we're calling refresh items on the to do table and if we look at</p>
+      <p begin="00:13:00.740" end="00:13:04.590">...here were calling you...we see...here we see in a...</p>
+      <p begin="00:13:04.590" end="00:13:09.450">task that's running and basically saying go fetch the data where the complete...equal</p>
+      <p begin="00:13:09.450" end="00:13:14.410">false so if we go back to replication...we just mark this as complete now</p>
+      <p begin="00:13:14.410" end="00:13:18.490">free refresh that commands...this time it only pullback one because we</p>
+      <p begin="00:13:18.490" end="00:13:23.510">have a completed item and then after that we just add to the adapter which is basically just normal list</p>
+      <p begin="00:13:23.510" end="00:13:29.790">view functionality then we actually want to add new item.</p>
+      <p begin="00:13:29.790" end="00:13:35.730">We create instance of the to item class we set the text and complete flag and then we</p>
+      <p begin="00:13:35.730" end="00:13:39.200">And, to do table dot insert...the item in really,</p>
+      <p begin="00:13:39.200" end="00:13:42.410">really simple functionality for talking back to this mobile service and</p>
+      <p begin="00:13:42.410" end="00:13:45.230">very android specific just a second what it looks like</p>
+      <p begin="00:13:45.230" end="00:13:48.330">...ios and it's going to be a little bit different because it's going to be appropriate for</p>
+      <p begin="00:13:48.330" end="00:13:52.110">...see developer one of the things I want to show off is this build a</p>
+      <p begin="00:13:52.110" end="00:13:55.260">...file and if we look in here.</p>
+      <p begin="00:13:55.260" end="00:14:00.050">This build...if you look in here we'll see that we are referencing this</p>
+      <p begin="00:14:00.050" end="00:14:03.330">measure mobile services sdk this</p>
+      <p begin="00:14:03.330" end="00:14:08.070">...beta now this is actually in a repository so we don't have</p>
+      <p begin="00:14:08.070" end="00:14:12.950">to pull down a jar filing...that is part of the greater build...automatic in a</p>
+      <p begin="00:14:12.950" end="00:14:18.650">...in the of library the code for mobile services let's go ahead and</p>
+      <p begin="00:14:18.650" end="00:14:20.980">hop overlook this and ios.</p>
+      <p begin="00:14:20.980" end="00:14:29.420">So, here I have a very similar application that I'll go ahead and run.</p>
+      <p begin="00:14:29.420" end="00:14:34.880">And, there we have the...similar...so first thing we'll do is...login here as well different,</p>
+      <p begin="00:14:34.880" end="00:14:39.270">different application running on different advice media login again.</p>
+      <p begin="00:14:39.270" end="00:14:48.330">So, we'll...password here.</p>
+      <p begin="00:14:48.330" end="00:14:52.410">we see that we have similar data here I've still got some data...the last</p>
+      <p begin="00:14:52.410" end="00:14:57.360">...but if I say from ios can add</p>
+      <p begin="00:14:57.360" end="00:15:01.280">...item and now if we go back to our entered application</p>
+      <p begin="00:15:01.280" end="00:15:06.220">we refresher we see that we get the data so now doesn't matter which device we save the</p>
+      <p begin="00:15:06.220" end="00:15:11.610">data...the other device can see that data so looking at our objective</p>
+      <p begin="00:15:11.610" end="00:15:15.970">see application person we see is here in object to see we've added a windows</p>
+      <p begin="00:15:15.970" end="00:15:19.750">measure mobile services framework this is just like how in the a</p>
+      <p begin="00:15:19.750" end="00:15:24.030">...replication we compile the jar from the repository or we pulled that infinite</p>
+      <p begin="00:15:24.030" end="00:15:28.120">...up here we actually at a framework now inside here we've got this to</p>
+      <p begin="00:15:28.120" end="00:15:32.970">do service class and this can have some similar code or similar objects at least</p>
+      <p begin="00:15:32.970" end="00:15:39.020">...an microsoft client again that's the entry point...service then we've got a add a method complete a</p>
+      <p begin="00:15:39.020" end="00:15:43.170">sinking data so if we go to...service quest here.</p>
+      <p begin="00:15:43.170" end="00:15:46.590">We look at the creation we see same build mobile service director</p>
+      <p begin="00:15:46.590" end="00:15:50.850">national dot net url and the exact same application key again that has</p>
+      <p begin="00:15:50.850" end="00:15:55.320">do security will look at the...just a second so there's some stuff in here that we're not going look</p>
+      <p begin="00:15:55.320" end="00:15:58.980">at to deeply but basically the ios sdk</p>
+      <p begin="00:15:58.980" end="00:16:03.530">is prebuilt to store data locally using core data and</p>
+      <p begin="00:16:03.530" end="00:16:07.000">sql white I'll talk more about that when it comes to offline data</p>
+      <p begin="00:16:07.000" end="00:16:12.360">...in a few minutes but down here we create a...table with its url name when it comes</p>
+      <p begin="00:16:12.360" end="00:16:16.870">adding and item we pass ns dictionary the item and look at the code</p>
+      <p begin="00:16:16.870" end="00:16:20.520">...just a second we've hassan or recall insert on-scene table and</p>
+      <p begin="00:16:20.520" end="00:16:25.680">...and that item so very similar we had nearer recall insert on the table object</p>
+      <p begin="00:16:25.680" end="00:16:30.200">...item we call update on the same...table and we want to</p>
+      <p begin="00:16:30.200" end="00:16:34.670">...the data down we call...data and pull data is basically creating a query</p>
+      <p begin="00:16:34.670" end="00:16:38.710">or also do items, you know, it it's creating query with the to answer...for</p>
+      <p begin="00:16:39.720" end="00:16:44.940">the complete flag as equal false now if we go ahead and look at the to use you</p>
+      <p begin="00:16:44.940" end="00:16:47.350">...kind of...portion of if you're not familiar with</p>
+      <p begin="00:16:47.350" end="00:16:52.890">ios development for go down here to where we first login here</p>
+      <p begin="00:16:52.890" end="00:16:57.500">we're calling login you control provider on the client this is a way of generating a</p>
+      <p begin="00:16:57.500" end="00:17:01.060">view that wraps that web login that we did against twitter we've</p>
+      <p begin="00:17:01.060" end="00:17:04.820">...twitter here just like before if we wanted to pass...else like</p>
+      <p begin="00:17:04.820" end="00:17:09.430">...microsoft account tool...facebook we could and then when we get</p>
+      <p begin="00:17:09.430" end="00:17:14.640">...we've authenticate...we cover fresh now when we actually</p>
+      <p begin="00:17:14.640" end="00:17:16.400">...an item?</p>
+      <p begin="00:17:16.400" end="00:17:21.080">Or I'm sorry we...fetch the data this is what's happening here we're saying hey we want</p>
+      <p begin="00:17:21.080" end="00:17:23.600">...the to do am data with complete...equal</p>
+      <p begin="00:17:23.600" end="00:17:29.970">now just like we did in java just a little bit more specific to of doing...c.</p>
+      <p begin="00:17:29.970" end="00:17:35.150">And, then when we actually go to adding item?</p>
+      <p begin="00:17:35.150" end="00:17:38.160">Here we just create as dictionary so basically achy value</p>
+      <p begin="00:17:38.160" end="00:17:43.290">...set we...into the ad item...energy service and again behind-the-scenes that's</p>
+      <p begin="00:17:43.290" end="00:17:45.930">...insert...table.</p>
+      <p begin="00:17:45.930" end="00:17:47.970">So, a little bit different code...you know,</p>
+      <p begin="00:17:47.970" end="00:17:52.500">definitely different syntax wise but it's doing the exact same thing as what we did in our</p>
+      <p begin="00:17:52.500" end="00:17:57.290">android application let's go look at the portal and look at a few different things first thing</p>
+      <p begin="00:17:57.290" end="00:18:00.370">we'll look at is the script calm I don't have any additional</p>
+      <p begin="00:18:00.370" end="00:18:05.850">functionality in here right now except for once this loads.</p>
+      <p begin="00:18:05.850" end="00:18:10.480">We'll see that I m logging data and will look at isn't just a second essential I'm doing is whenever</p>
+      <p begin="00:18:10.480" end="00:18:14.600">...certain item I'm logging the user object and this contains the user...</p>
+      <p begin="00:18:14.600" end="00:18:19.550">users id and what's really great about the scripts...is where I can put added functionality so if I wanted</p>
+      <p begin="00:18:19.550" end="00:18:24.440">to data validation like make sure the...you item was only a few characters long I could put</p>
+      <p begin="00:18:24.440" end="00:18:29.430">in right here if I wanted to check and make sure the user id was valid I could do that here</p>
+      <p begin="00:18:29.430" end="00:18:34.520">though I know that since this...through the user id is valid but I could do any sort of checks</p>
+      <p begin="00:18:34.520" end="00:18:39.590">...logic here with it...third-party service maybe I want to...twitter anything amounted...</p>
+      <p begin="00:18:39.590" end="00:18:44.420">doing here now I mention mobile services academic optimization you can also if you want to add</p>
+      <p begin="00:18:44.420" end="00:18:48.160">columns from here as well as remove columns as well?</p>
+      <p begin="00:18:48.160" end="00:18:52.920">Then ...security and essentially by default the security level on mobile services</p>
+      <p begin="00:18:52.920" end="00:18:57.920">is that as long as the application key comes over as a header the request goes through but you</p>
+      <p begin="00:18:57.920" end="00:19:02.500">can change that to three other settings everyone allows you to basically just as long as,</p>
+      <p begin="00:19:02.500" end="00:19:07.590">you know, the url you're able to make the request only authenticate uses means that user object has to be</p>
+      <p begin="00:19:07.590" end="00:19:11.830">for an valid and mobile services going to make sure that user visibility and for-you</p>
+      <p begin="00:19:11.830" end="00:19:15.630">...only scripps and admins is another way of locking it down so that only other</p>
+      <p begin="00:19:15.630" end="00:19:20.010">scripts can access the table or someone...send a master key which is an additional</p>
+      <p begin="00:19:20.010" end="00:19:24.720">...somewhat like the...key over your service.</p>
+      <p begin="00:19:24.720" end="00:19:26.620">...mobile services has custom api</p>
+      <p begin="00:19:26.620" end="00:19:32.120">as where basically when you make request against the table...using a rest...</p>
+      <p begin="00:19:32.120" end="00:19:36.860">generated for-you with custom api as you can create a new api specify permissions just</p>
+      <p begin="00:19:36.860" end="00:19:41.770">like we did before and you can define whatever functionality is not...do an actual table.</p>
+      <p begin="00:19:41.770" end="00:19:46.010">The scheduler allows you to create schedule jobs that can either run on a schedule whether</p>
+      <p begin="00:19:46.010" end="00:19:50.590">it every few minutes every few hours every day or on-demand so just one</p>
+      <p begin="00:19:50.590" end="00:19:55.290">off and when you create one of these...able to add the same kind of script that we did we looked at the</p>
+      <p begin="00:19:55.290" end="00:20:00.390">...second ago where you can programmer functionality one so maybe you want to clean-up all data maybe want to</p>
+      <p begin="00:20:00.390" end="00:20:06.460">...regular push notification any that functionality can be put in here pusher applications is something interesting</p>
+      <p begin="00:20:06.460" end="00:20:10.390">push applications actually powered by another service that's part of measure called notification</p>
+      <p begin="00:20:10.390" end="00:20:11.710">...we're going to look at</p>
+      <p begin="00:20:11.710" end="00:20:16.690">...in more detail in a few minutes but suffice to say mobile services has</p>
+      <p begin="00:20:16.690" end="00:20:21.580">really easy connectivity into push locations where you just need to set up your</p>
+      <p begin="00:20:21.580" end="00:20:26.440">...here credentials to the...and then you can register from the device using</p>
+      <p begin="00:20:26.440" end="00:20:31.830">...mobile services sdk no identity's where you put any of the settings for the eight-eighty providers you want to</p>
+      <p begin="00:20:31.830" end="00:20:36.060">use so right now I've got twittering here and I've got google in here and this is what</p>
+      <p begin="00:20:36.060" end="00:20:40.890">allows me to use the twitter authentication because if I tried to use twitter authentication without</p>
+      <p begin="00:20:40.890" end="00:20:45.840">...settings and it wouldn't work same time like if I tried facebook right now</p>
+      <p begin="00:20:45.840" end="00:20:51.470">wouldn't work and the way you get the settings as you go through the twitter developer...the facebook...</p>
+      <p begin="00:20:51.470" end="00:20:56.030">and you create...application there and essentially you get them url your mobile service and then they give you back</p>
+      <p begin="00:20:56.030" end="00:21:00.480">information so you can set up authentication the last couple tabs</p>
+      <p begin="00:21:00.480" end="00:21:05.480">first to get configured this allows us to change what sequel database or sequel server one reference the</p>
+      <p begin="00:21:05.480" end="00:21:10.380">scripps behind our table access...custom api...scheduler there are</p>
+      <p begin="00:21:10.380" end="00:21:15.350">available in a very get repository so you can pull those so scripts down locally</p>
+      <p begin="00:21:15.350" end="00:21:20.160">make changes and push them up and...deploy them on your mobile service you can turn</p>
+      <p begin="00:21:20.160" end="00:21:25.120">that dynamic immunization on and off I'll talk more about hyper...but later for</p>
+      <p begin="00:21:25.120" end="00:21:29.720">crosswords and resource sharing this allows you to basically using ishmael javascript library to</p>
+      <p begin="00:21:29.720" end="00:21:33.910">access mobile services and in that case in order to make that cross domain javascript</p>
+      <p begin="00:21:33.910" end="00:21:38.440">request you need to put the domain you're coming from into this system there's some developer</p>
+      <p begin="00:21:38.440" end="00:21:43.590">analytic systems you can use and then there's a few different settings and monitoring things as far as</p>
+      <p begin="00:21:43.590" end="00:21:47.670">scale goes right now is mobile service will be in the free mode?</p>
+      <p begin="00:21:47.670" end="00:21:50.550">Like many of...other office manager there's a free mode that lets you play</p>
+      <p begin="00:21:50.550" end="00:21:53.910">around develop essentially perpetually without having to worry about paying</p>
+      <p begin="00:21:53.910" end="00:21:58.960">a price that's not true freshly but there's no we're not charging fourth.</p>
+      <p begin="00:21:58.960" end="00:22:02.790">Those are limited though as far as what you can you know-how how much you can use how many</p>
+      <p begin="00:22:02.790" end="00:22:06.880">requests you can make once you go to basic standard you're then able to scale-up the</p>
+      <p begin="00:22:06.880" end="00:22:11.460">number of units or how many request you're going to make a month and you can also do auto scale and</p>
+      <p begin="00:22:11.460" end="00:22:14.890">...by the number api...not paying for more than you want to</p>
+      <p begin="00:22:16.120" end="00:22:20.480">...the free and now look at the...now I showed you before that when I</p>
+      <p begin="00:22:20.480" end="00:22:24.520">...to do item on actually logging the user id the</p>
+      <p begin="00:22:24.520" end="00:22:26.290">user object so in here we see a</p>
+      <p begin="00:22:26.290" end="00:22:30.010">logarithm log entry for the user object and we see that, you know,</p>
+      <p begin="00:22:30.010" end="00:22:34.730">my levels authenticated on authenticated user got my twitter id here and if I wanted to I</p>
+      <p begin="00:22:34.730" end="00:22:38.800">...the identity's and get more information from twitter so</p>
+      <p begin="00:22:38.800" end="00:22:42.590">that's mobile services a lot of functionality makes it will really powerful</p>
+      <p begin="00:22:42.590" end="00:22:54.000">of applications without having to worry about how all of this back-end stuff really works underneath the covers?</p>
+      <p begin="00:22:54.000" end="00:22:56.640">Now imagine...we look at the issa but part</p>
+      <p begin="00:22:56.640" end="00:23:00.340">of mobile services is a feature called offline datacenter</p>
+      <p begin="00:23:00.340" end="00:23:05.210">now this is something that's primarily a client-side feature allows you to do is instead of just</p>
+      <p begin="00:23:05.210" end="00:23:10.160">send your data directly appear mobile service you can send it to a local table which is powered by</p>
+      <p begin="00:23:10.160" end="00:23:14.850">sequel lie in the ios instance it's using...data on top of</p>
+      <p begin="00:23:14.850" end="00:23:17.140">...it but then you can...that data again</p>
+      <p begin="00:23:17.140" end="00:23:22.580">...mobile service what this means is that if your device goes offline you can still make</p>
+      <p begin="00:23:22.580" end="00:23:26.780">your application work it will just write the changes locally and then once you get back online you can</p>
+      <p begin="00:23:26.780" end="00:23:31.540">push the changes or...changes with your server now right now the client</p>
+      <p begin="00:23:31.540" end="00:23:36.140">sdk for dot net ios republic the anyone's currently in beta so</p>
+      <p begin="00:23:36.140" end="00:23:40.570">...you can use it can work...just isn't production...again all of these using</p>
+      <p begin="00:23:40.570" end="00:23:44.830">sequel at behind-the-scenes now that...is developer control...can dictate when you want to</p>
+      <p begin="00:23:44.830" end="00:23:49.860">...so maybe you don't want to think a lot of data if they're just on their...connection but if they're on their</p>
+      <p begin="00:23:49.860" end="00:23:54.570">wife I connection you do you...behind-the-scenes on the server-side it uses</p>
+      <p begin="00:23:54.570" end="00:23:57.820">...optimistic concurrency essentially what this means is the</p>
+      <p begin="00:23:57.820" end="00:24:01.410">first-rate wins so if I have two different applications maybe one running online</p>
+      <p begin="00:24:01.410" end="00:24:06.480">...device one running on my android device and I m offline both and I make changes</p>
+      <p begin="00:24:06.480" end="00:24:10.760">of the same data...device pushes the...data first my</p>
+      <p begin="00:24:10.760" end="00:24:15.680">...connection tries to put the data...as hey you don't have...data you're trying</p>
+      <p begin="00:24:15.680" end="00:24:20.310">...update you need to solve this problem and when you get that sort of conflict you can have the on</p>
+      <p begin="00:24:20.310" end="00:24:20.890">the server-side</p>
+      <p begin="00:24:20.890" end="00:24:25.990">on the client so if you just want to...the data you could just do that on the server-side but if you want</p>
+      <p begin="00:24:25.990" end="00:24:30.890">...user and say hey this is the actual data its current you sure you want to save your data you</p>
+      <p begin="00:24:30.890" end="00:24:36.640">can do that on the client-side now as your mobile services been around for a couple years and</p>
+      <p begin="00:24:36.640" end="00:24:40.850">its focus was really on building mobile applications but...a few other services that are part of</p>
+      <p begin="00:24:40.850" end="00:24:45.670">...that are really useful in conjunction with mobile services so there's actual website which allow</p>
+      <p begin="00:24:45.670" end="00:24:50.570">you deploy web applications whether dot net java php</p>
+      <p begin="00:24:50.570" end="00:24:56.320">...js or other languages and this has a lot of really cool functionality like you can</p>
+      <p begin="00:24:56.320" end="00:25:00.630">do us site sought so you can say I want to test I want to test</p>
+      <p begin="00:25:00.630" end="00:25:05.480">the environment production environment you can do automated backup and restoring</p>
+      <p begin="00:25:05.480" end="00:25:09.020">at you can do a lot of...really cool functionality but even though mobile</p>
+      <p begin="00:25:09.020" end="00:25:12.970">services is kind of built off of...websites you couldn't use the same functionality from</p>
+      <p begin="00:25:12.970" end="00:25:18.460">measure websites and you couldn't hosting a web application inside your mobile service that was, you know,</p>
+      <p begin="00:25:18.460" end="00:25:23.080">for your mobile application you get the host that separately inside of...website now additionally</p>
+      <p begin="00:25:23.080" end="00:25:27.170">their services some called based talk services which allow you to increase functionality</p>
+      <p begin="00:25:27.170" end="00:25:31.570">for mobile applications as well such as connecting from a mobile application</p>
+      <p begin="00:25:31.570" end="00:25:37.290">...on premise database or web service now we just recently</p>
+      <p begin="00:25:37.290" end="00:25:40.600">...measure...service and this essentially combines this functionality</p>
+      <p begin="00:25:40.600" end="00:25:44.770">altogether in addition to some other functionality so as you rhappe service your now</p>
+      <p begin="00:25:44.770" end="00:25:47.770">able to build web apps and mobile apps and logic apps</p>
+      <p begin="00:25:47.770" end="00:25:51.570">and api apps and really right now what we really focus on is this web apps</p>
+      <p begin="00:25:51.570" end="00:25:56.520">and mobile apps because the mobile apps essentially the future of mobile services so of</p>
+      <p begin="00:25:56.520" end="00:26:01.330">functionally mobile services is right there in mobile apps but additionally you're able to deploy is</p>
+      <p begin="00:26:01.330" end="00:26:06.690">kind of a bigger piece other pieces of the application so the same...employer mobile apps</p>
+      <p begin="00:26:06.690" end="00:26:10.890">you can employer web apps too and it's basically one application...</p>
+      <p begin="00:26:10.890" end="00:26:14.000">Worrying about what's going on over here in...website much going over the on over there</p>
+      <p begin="00:26:14.000" end="00:26:19.480">...mobile in your mobile service it's all one app service.</p>
+      <p begin="00:26:19.480" end="00:26:24.120">Some of the new capabilities for mobile apps that we, you know,...with edge websites better now</p>
+      <p begin="00:26:24.120" end="00:26:29.100">capable of being use from mobile applications include long-running task for web job or web jobs</p>
+      <p begin="00:26:29.100" end="00:26:32.410">...with...a bit bucket via so</p>
+      <p begin="00:26:32.410" end="00:26:36.520">otto load balancing out of scaling as well as geographical</p>
+      <p begin="00:26:36.520" end="00:26:41.770">disaster recovery virtual network networking hybrid connections and that sleight</p>
+      <p begin="00:26:41.770" end="00:26:46.610">...deployments I...and this is currently in preview so if you're</p>
+      <p begin="00:26:46.610" end="00:26:51.580">billion production application should...mobile services but down-arrow when this goes to</p>
+      <p begin="00:26:51.580" end="00:26:53.970">...a...general the ability this</p>
+      <p begin="00:26:53.970" end="00:26:58.100">...be the future of mobile connectivity when it comes to measure let's</p>
+      <p begin="00:26:58.100" end="00:27:01.740">take a look at just how we would set-up and...service and what it looks like?</p>
+      <p begin="00:27:01.740" end="00:27:05.720">In order to do this we're going to actually go to the preview portal inside</p>
+      <p begin="00:27:05.720" end="00:27:11.090">here we can go in and I can create a new mobile application</p>
+      <p begin="00:27:11.090" end="00:27:16.140">and inside here it's going to ask me for...different information like where I want to be what I want</p>
+      <p begin="00:27:16.140" end="00:27:18.860">to be called stuff like that.</p>
+      <p begin="00:27:18.860" end="00:27:23.920">...skip has this...going to go into a mobile application...already created.</p>
+      <p begin="00:27:23.920" end="00:27:27.690">And, inside here we can see I can add a clients again this is just</p>
+      <p begin="00:27:27.690" end="00:27:32.430">...previews...all the clients are here so where we saw all the android ios</p>
+      <p begin="00:27:32.430" end="00:27:36.700">...and phone...windows, windows phone before we only see a few of them here</p>
+      <p begin="00:27:36.700" end="00:27:41.560">and preview we can go into the different</p>
+      <p begin="00:27:41.560" end="00:27:46.600">authentication options as far as uses that can access this and what they can do with it we can</p>
+      <p begin="00:27:46.600" end="00:27:51.410">go into the settings in see the different user authentication and other</p>
+      <p begin="00:27:51.410" end="00:27:55.460">options and things like that we can use...we can see...push</p>
+      <p begin="00:27:55.460" end="00:28:00.230">...services essentially like I said before all the functionality that was there before</p>
+      <p begin="00:28:00.230" end="00:28:05.740">in our in our mobile services going-to be here...of the other things I'll show you</p>
+      <p begin="00:28:05.740" end="00:28:09.470">in highway is that when you grab an applications, for example, the ios</p>
+      <p begin="00:28:09.470" end="00:28:14.210">app you can you download not just the ios application but also</p>
+      <p begin="00:28:14.210" end="00:28:18.740">a server-side so the deployment model here's a little bit different whereas with this mobile service</p>
+      <p begin="00:28:18.740" end="00:28:23.820">we're doing everything in the portal here for the visuals for the dot net piece you</p>
+      <p begin="00:28:23.820" end="00:28:28.340">...visual studio solution...deploy that for your mobile app now again this is a previous</p>
+      <p begin="00:28:28.340" end="00:28:33.730">we don't have a node version yet but is going-to be coming down the road?</p>
+      <p begin="00:28:33.730" end="00:28:38.040">...go ahead and...back to our slides.</p>
+      <p begin="00:28:38.040" end="00:28:42.250">...was I was notification...facilitate manage</p>
+      <p begin="00:28:42.250" end="00:28:47.220">push notifications and this works like I said before with android ios windows and windows phone</p>
+      <p begin="00:28:47.220" end="00:28:52.150">and several varieties of and representations of works with now I'm going to show you this for both of</p>
+      <p begin="00:28:52.150" end="00:28:57.010">...but some of the features that notification has laid...for you is targeted portion applications so-if you</p>
+      <p begin="00:28:57.010" end="00:29:00.900">want-to push to curses phone, for example, you...that or if you want to</p>
+      <p begin="00:29:00.900" end="00:29:06.830">push to everybody that build you could do that and a facilitates doing across platforms</p>
+      <p begin="00:29:06.830" end="00:29:11.670">so pushed above android and ios and windows...windows phone really easily using temples</p>
+      <p begin="00:29:11.670" end="00:29:17.105">...the great things about...is highly scalable so if you need to deliver millions...locations you're going</p>
+      <p begin="00:29:17.105" end="00:29:21.440">to be able to do so let's go ahead and look at notification...</p>
+      <p begin="00:29:21.440" end="00:29:24.850">First thing we'll do is we'll go back to the portal and now I'm going to service</p>
+      <p begin="00:29:24.850" end="00:29:28.780">bus which is what...a part of an...of</p>
+      <p begin="00:29:28.780" end="00:29:35.270">...already created call build mobile apps hub now inside</p>
+      <p begin="00:29:35.270" end="00:29:40.120">Similarly sony before how we configure are ...for mobile services again it's using</p>
+      <p begin="00:29:40.120" end="00:29:44.670">location of behind-the-scenes but if I go into configure for...of this is where I can</p>
+      <p begin="00:29:44.670" end="00:29:48.440">set my windows...settings my apple aps</p>
+      <p begin="00:29:48.440" end="00:29:51.890">...muhammad's settings I've already uploaded certificate and</p>
+      <p begin="00:29:51.890" end="00:29:55.370">set-up gcm if I wanted to if I was just</p>
+      <p begin="00:29:55.370" end="00:29:59.560">...gcm for the first-time I would go into an application google oper</p>
+      <p begin="00:29:59.560" end="00:30:04.380">...I go to api is I'd turn on a google</p>
+      <p begin="00:30:04.380" end="00:30:05.210">...messaging</p>
+      <p begin="00:30:05.210" end="00:30:09.650">...friend right there and then you just grab a server key which is how</p>
+      <p begin="00:30:09.650" end="00:30:14.560">my notification of can authenticate talked into a google developed google developer</p>
+      <p begin="00:30:14.560" end="00:30:19.390">...so I've already got the setup from a client-side</p>
+      <p begin="00:30:19.390" end="00:30:24.150">attributes information I need then are the name of my hub and then the listen shared access</p>
+      <p begin="00:30:24.150" end="00:30:35.370">injure so I can actually register with the hub so then let's go ahead and look at this on an android application?</p>
+      <p begin="00:30:35.370" end="00:30:44.620">So, let's first run...application.</p>
+      <p begin="00:30:44.620" end="00:30:48.540">And,...run this on emulator.</p>
+      <p begin="00:30:48.540" end="00:30:50.970">And, this can be really simple application...going to</p>
+      <p begin="00:30:50.970" end="00:30:55.100">allow us to do is register with our notification hub and then get</p>
+      <p begin="00:30:55.100" end="00:30:59.380">...so what that...the background abner</p>
+      <p begin="00:30:59.380" end="00:31:04.630">ok so here we are so we see we haven't registered yet of your button original gcm...got a few different</p>
+      <p begin="00:31:04.630" end="00:31:09.000">...location...personal do it registered gcm this goes through my</p>
+      <p begin="00:31:09.000" end="00:31:13.930">application it basically uses the google how...which is part of google's android api</p>
+      <p begin="00:31:13.930" end="00:31:18.450">as it goes up to gc...it says I want to register and passes in a</p>
+      <p begin="00:31:18.450" end="00:31:21.330">...id which is another...get from the google developer</p>
+      <p begin="00:31:21.330" end="00:31:26.140">consul so when I hit that I get back this really long string which identifies my</p>
+      <p begin="00:31:26.140" end="00:31:30.860">...my device to gc and now after that what I can do is I'm going</p>
+      <p begin="00:31:30.860" end="00:31:35.250">to use this notification have object create using the hub name and</p>
+      <p begin="00:31:35.250" end="00:31:39.620">...string I mentioned before and I'm going to call this register method I just</p>
+      <p begin="00:31:39.620" end="00:31:44.820">passion the registration the registration id so register to with no tags now what I'm going</p>
+      <p begin="00:31:44.820" end="00:31:48.940">to do next is I'm going to go into a different mobile services which I set up to help me do some push</p>
+      <p begin="00:31:48.940" end="00:31:51.320">notifications so I've got some custom api</p>
+      <p begin="00:31:51.320" end="00:31:55.430">in here that I can just access via the web and the first we're going to look at is just</p>
+      <p begin="00:31:55.430" end="00:31:58.980">...push to gcm and aps.</p>
+      <p begin="00:31:58.980" end="00:32:01.740">So, if we go and look at this script right here</p>
+      <p begin="00:32:01.740" end="00:32:06.570">we'll see that I've got the hub name again and I've got a different connection...this one has for shared</p>
+      <p begin="00:32:06.570" end="00:32:11.560">...is a full access signature so that means I can actually not just register but I can actually trigger</p>
+      <p begin="00:32:11.560" end="00:32:17.130">provocations so then down here I'm using the location of service...aps dot send</p>
+      <p begin="00:32:17.130" end="00:32:21.440">and passing in a payload for that...doing gcm...passing...for</p>
+      <p begin="00:32:21.440" end="00:32:27.970">that now let's go ahead and refresh this page right here and if we return or application.</p>
+      <p begin="00:32:27.970" end="00:32:32.840">We see hello for measure and if I look up here I can see that I've got a portion of creation</p>
+      <p begin="00:32:32.840" end="00:32:37.310">showing up now the next thing I want to do is I want to actually run this</p>
+      <p begin="00:32:37.310" end="00:32:42.220">and ios so I've got a similar application...and ios.</p>
+      <p begin="00:32:42.220" end="00:32:47.140">much like before...creating notification up with the name and the string</p>
+      <p begin="00:32:47.140" end="00:32:52.110">time registering with aps that's going on behind the scenes of getting back a string and then</p>
+      <p begin="00:32:52.110" end="00:32:55.170">I'm registering without with a advice token underpass</p>
+      <p begin="00:32:55.170" end="00:32:59.380">...token...let's go ahead and run this application and I'm</p>
+      <p begin="00:32:59.380" end="00:33:18.980">going-to go ahead and screen share so we can actually see this running.</p>
+      <p begin="00:33:18.980" end="00:33:21.810">And, there we go so now return the application we've already</p>
+      <p begin="00:33:21.810" end="00:33:24.510">...token back or register with no tags.</p>
+      <p begin="00:33:24.510" end="00:33:27.150">Now what I want to do is I'm...go over here I'm in a refresh.</p>
+      <p begin="00:33:28.520" end="00:33:31.610">I'm actually going to get my emulator is race we can watch them</p>
+      <p begin="00:33:31.610" end="00:33:32.740">on a refresh.</p>
+      <p begin="00:33:33.930" end="00:33:38.160">And, we can see looked...the both places we see it from ios</p>
+      <p begin="00:33:38.160" end="00:33:44.180">we see it through on android let's go ahead and go back to the code...never look at these register with tags</p>
+      <p begin="00:33:44.180" end="00:33:49.330">method what this allows us to do is when we do the registration we can say I want you</p>
+      <p begin="00:33:49.330" end="00:33:53.950">...information to minute-to-minute registration so in this case here I've</p>
+      <p begin="00:33:53.950" end="00:33:59.830">got bill of android user I've got all users and I'm using just...</p>
+      <p begin="00:33:59.830" end="00:34:06.340">registration id in...strings figured ios we'll see we've got a very similar thing we have...</p>
+      <p begin="00:34:06.340" end="00:34:11.290">ray of strings we...and registered native device...we do that the token data and then</p>
+      <p begin="00:34:11.290" end="00:34:14.710">our tag set so now if I go back to my to applications.</p>
+      <p begin="00:34:16.120" end="00:34:20.090">We register with tags from our ios app and we'll go to</p>
+      <p begin="00:34:20.090" end="00:34:23.200">...application and will...tags?</p>
+      <p begin="00:34:23.200" end="00:34:27.040">Now we'll go back up to the portal...got a different method here</p>
+      <p begin="00:34:27.040" end="00:34:32.080">called push test tag and this is going to be very similar except now the first parameter to</p>
+      <p begin="00:34:32.080" end="00:34:36.530">sand is build in this case an android user in this case so</p>
+      <p begin="00:34:36.530" end="00:34:42.330">I'm saying when I say aps...and build it's going to look for any tag...registered with</p>
+      <p begin="00:34:42.330" end="00:34:46.400">...build any registration that's got that build tag is going to try to push</p>
+      <p begin="00:34:46.400" end="00:34:50.350">that and then when I do gc m is going to say hey anybody's richer within</p>
+      <p begin="00:34:50.350" end="00:34:55.900">...user push to them so let's go ahead and here go through our website</p>
+      <p begin="00:34:55.900" end="00:35:02.260">...test tag and if we look here we can see we've got?</p>
+      <p begin="00:35:02.260" end="00:35:06.300">Hello, build and then we got that push invocation on android as well and we can look</p>
+      <p begin="00:35:06.300" end="00:35:10.510">about if we just go right here so hello end-users so now I can target</p>
+      <p begin="00:35:10.510" end="00:35:13.740">...locations for one specific device or another</p>
+      <p begin="00:35:13.740" end="00:35:18.640">specific device now so far I've had to do both push</p>
+      <p begin="00:35:18.640" end="00:35:23.650">...for gcm in aps separately that's</p>
+      <p begin="00:35:23.650" end="00:35:27.990">really not ideal I don't want to have to have separate blocks of code anywhere I want to</p>
+      <p begin="00:35:27.990" end="00:35:33.520">push location to handle each provider what I can do instead is when I...put with by notification of a</p>
+      <p begin="00:35:33.520" end="00:35:37.960">...a template and this template can dictate what format I should receive</p>
+      <p begin="00:35:37.960" end="00:35:41.450">...location so if we look at this template for android.</p>
+      <p begin="00:35:42.600" end="00:35:47.440">We see I've got this data message and then this dollar sign message right here</p>
+      <p begin="00:35:47.440" end="00:35:51.960">and what happens is whenever I send a message parameter or message field as a</p>
+      <p begin="00:35:51.960" end="00:35:56.720">portion of vacation to attempted push notification...deal with a pulling...the right</p>
+      <p begin="00:35:56.720" end="00:36:01.630">recipients base...the tags...getting the format the data in the right format to push to,</p>
+      <p begin="00:36:01.630" end="00:36:05.360">for example, in this case gc...if we look over at the ap and</p>
+      <p begin="00:36:05.360" end="00:36:09.290">sone or the ios one we'll see it's a little bit different but it's got that aps and the same</p>
+      <p begin="00:36:09.290" end="00:36:12.580">dollar sign message so this is the...format for aps</p>
+      <p begin="00:36:12.580" end="00:36:17.020">...gcm but that's of course because when I get a push this ios application it should be using</p>
+      <p begin="00:36:17.020" end="00:36:23.780">gi aps so I'll...register attempts on both my devices here?</p>
+      <p begin="00:36:23.780" end="00:36:28.550">And, now we'll go back to the poorer and I go to this push...template page and</p>
+      <p begin="00:36:28.550" end="00:36:33.020">inside here I'm creating a payload where I've got this message job this message parameter</p>
+      <p begin="00:36:33.020" end="00:36:36.750">...template pushed everyone and then I call notification of service dot</p>
+      <p begin="00:36:36.750" end="00:36:41.890">send so don't send to other...aps just send anyone that applies to</p>
+      <p begin="00:36:41.890" end="00:36:47.140">I'm not sending a tag here but I could if I wanted to and then just...the payload so now we'll say push</p>
+      <p begin="00:36:47.140" end="00:36:50.820">...template.</p>
+      <p begin="00:36:50.820" end="00:36:55.900">And, if we go back to our...device we see we got that portion of we...device it</p>
+      <p begin="00:36:55.900" end="00:37:00.770">was too fast we see right here and see if we can refresher really quickly and then see</p>
+      <p begin="00:37:00.770" end="00:37:05.250">...push everyone we gotta get ios as well so really powerful way to get</p>
+      <p begin="00:37:05.250" end="00:37:10.460">push notifications regardless of what type of application or what operations</p>
+      <p begin="00:37:10.460" end="00:37:13.130">...additionally regardless of whether you're using as your</p>
+      <p begin="00:37:13.130" end="00:37:17.820">...data storage or use replication anything else you can just use the service just</p>
+      <p begin="00:37:17.820" end="00:37:21.660">...you portion locations like I'm doing here and in addition to having</p>
+      <p begin="00:37:21.660" end="00:37:24.950">client service decays that work with android ios and windows,</p>
+      <p begin="00:37:24.950" end="00:37:29.060">windows phone from the back-end...a lot of ways of talking to unification of to actually trigger</p>
+      <p begin="00:37:29.060" end="00:37:32.330">push notifications you can use a dot net</p>
+      <p begin="00:37:32.330" end="00:37:35.230">...talks...you can use a</p>
+      <p begin="00:37:35.230" end="00:37:39.100">note sdk which is essentially what I'm doing right here I'm using this</p>
+      <p begin="00:37:39.100" end="00:37:43.510">...javascript ck there's also a java sdk and then everything is actually expose</p>
+      <p begin="00:37:43.510" end="00:37:47.350">via...the rest api so if you're building a application</p>
+      <p begin="00:37:47.350" end="00:37:50.160">...that you want to talk unification hubs with but you don't have</p>
+      <p begin="00:37:50.160" end="00:38:00.240">...sdk for you can just use the rest api and it's very easy let's head back to slides?</p>
+      <p begin="00:38:00.240" end="00:38:04.320">So, if you feature...services will talk about that we won't show and real detail</p>
+      <p begin="00:38:04.320" end="00:38:08.900">...the first one is as your storage now so far when I showed you mobile services we</p>
+      <p begin="00:38:08.900" end="00:38:12.760">...sequel database behind-the-scenes...data I mention this is just,</p>
+      <p begin="00:38:12.760" end="00:38:16.240">you know, built...services you can change if you want as your</p>
+      <p begin="00:38:16.240" end="00:38:19.080">...facilitates a few different kinds of storage including</p>
+      <p begin="00:38:19.080" end="00:38:21.790">no sequel via table storage files</p>
+      <p begin="00:38:21.790" end="00:38:25.920">...large data via blobs and then the messages and descriptions via</p>
+      <p begin="00:38:25.920" end="00:38:28.540">...now there's an error ack available for the</p>
+      <p begin="00:38:28.540" end="00:38:33.490">so-if you need to talk directly to the storage systems from...application you can do and I always</p>
+      <p begin="00:38:33.490" end="00:38:38.320">...progress...interested in that you should get in touch with us.</p>
+      <p begin="00:38:38.320" end="00:38:40.440">I mention authentication earlier and I</p>
+      <p begin="00:38:40.440" end="00:38:45.040">talk about how you could use as your eccentric free-form mobile services now address directory</p>
+      <p begin="00:38:45.040" end="00:38:49.390">is a system that stands on its own known for authentication and what's great about address</p>
+      <p begin="00:38:49.390" end="00:38:53.900">directory is that there's an edge...active directory authentication library for ios</p>
+      <p begin="00:38:53.900" end="00:38:58.260">for android for all these others operating systems that you can use to authenticate</p>
+      <p begin="00:38:58.260" end="00:39:02.400">users again regardless of whether...using another...you know,</p>
+      <p begin="00:39:02.400" end="00:39:07.010">within measure and...going...can...this with your on premise</p>
+      <p begin="00:39:07.010" end="00:39:11.130">actual directory so if you want your employees to log in with their</p>
+      <p begin="00:39:11.130" end="00:39:15.870">corporate credentials before they can access some sort of service or some sort of application you can use the</p>
+      <p begin="00:39:15.870" end="00:39:20.630">address directory library to make sure that happens this uses industry-standard secure</p>
+      <p begin="00:39:20.630" end="00:39:25.520">off to enables you access api is like office and sharepoint without having to prompt</p>
+      <p begin="00:39:25.520" end="00:39:29.830">...every time and like I mentioned before it's...with on premise you can make it think</p>
+      <p begin="00:39:29.830" end="00:39:35.100">...privacy officer's sixty-five is office in the cloud and there's a</p>
+      <p begin="00:39:35.100" end="00:39:38.940">library that allows you to...your sharepoint online files unless</p>
+      <p begin="00:39:38.940" end="00:39:42.730">you're outlook mail calendars and context as well as your as your</p>
+      <p begin="00:39:42.730" end="00:39:47.280">actual directory craft and...works with the ad l so essentially you can use the ado library</p>
+      <p begin="00:39:47.280" end="00:39:50.730">...finicky users...start making calls using the office fifty-five</p>
+      <p begin="00:39:50.730" end="00:39:56.100">st case media services is a really cool service</p>
+      <p begin="00:39:56.100" end="00:40:00.580">...you do video-on-demand so from administration perspective you can ingest new</p>
+      <p begin="00:40:00.580" end="00:40:05.080">media you-can...you can package it and you can also delivered</p>
+      <p begin="00:40:05.080" end="00:40:10.320">down to applications now it's really quite easy to get this to watches on both mobile or</p>
+      <p begin="00:40:10.320" end="00:40:13.440">web and there's different authentication options whether you need you</p>
+      <p begin="00:40:13.440" end="00:40:17.060">...around so think that you want to be able to distribute media</p>
+      <p begin="00:40:17.060" end="00:40:20.510">...that nobody can duplicate up to, you know,</p>
+      <p begin="00:40:20.510" end="00:40:26.580">just secure media...make sure gets there securely but once it's there you're less concern.</p>
+      <p begin="00:40:26.580" end="00:40:28.760">...talk about really quickly is biz talk</p>
+      <p begin="00:40:28.760" end="00:40:33.120">...services hybrid connections...is going to be part of...what that...that</p>
+      <p begin="00:40:33.120" end="00:40:37.840">...service but for right now you can so user mobile services as well as hybrid connections</p>
+      <p begin="00:40:37.840" end="00:40:41.830">...this allows you to do is points a endpoint within ager...</p>
+      <p begin="00:40:41.830" end="00:40:46.710">endpoint within your enterprise using a hybrid connection manager so whereas by default</p>
+      <p begin="00:40:46.710" end="00:40:51.580">mobile services using a sequel database inside of editor you can use a hybrid connection to point</p>
+      <p begin="00:40:51.580" end="00:40:55.610">...database running your own datacenter and then mobile services will basically automatically</p>
+      <p begin="00:40:55.610" end="00:40:59.970">funnel all traffic to this hybrid connection so...all the data is only being stored in your</p>
+      <p begin="00:40:59.970" end="00:41:04.930">database on your in your datacenter as opposed to measure you can use the same thing to talk to, you know,</p>
+      <p begin="00:41:04.930" end="00:41:10.540">internal services whether they...services or any other endpoint you might want to the next section we'll talk about</p>
+      <p begin="00:41:10.540" end="00:41:13.610">is building in testing apps so if you're building</p>
+      <p begin="00:41:13.610" end="00:41:18.380">an application what else can...measure to help you do that.</p>
+      <p begin="00:41:18.380" end="00:41:22.840">First...talk about is android plugins and we have these for...studio and intelligent</p>
+      <p begin="00:41:22.840" end="00:41:26.930">these allow you really easy way to connects to measure mobile services on whether that's to connect</p>
+      <p begin="00:41:26.930" end="00:41:31.340">...existing or create anyone notification hubs as well as your service and office</p>
+      <p begin="00:41:31.340" end="00:41:36.740">sixty-five activities including selling permissions let's take a really quick look at the android</p>
+      <p begin="00:41:36.740" end="00:41:42.020">studio plug-in so just go back to android studio and I'm just going to go to</p>
+      <p begin="00:41:42.020" end="00:41:46.510">my application I'll go to new and then I'll go down to microsoft and I can</p>
+      <p begin="00:41:46.510" end="00:41:51.170">choose as your service directory and...basically allow me, you know, create a activity which</p>
+      <p begin="00:41:51.170" end="00:41:52.830">...the functionality of talking the</p>
+      <p begin="00:41:52.830" end="00:41:57.660">...service or notifications or both if I go back and I say new</p>
+      <p begin="00:41:57.660" end="00:42:00.320">...can go to.</p>
+      <p begin="00:42:00.320" end="00:42:03.670">Microsoft office sixty-five activity and it lets me...</p>
+      <p begin="00:42:03.670" end="00:42:08.500">attributed again can dictate whether I want to talk to outlook services the file services or share</p>
+      <p begin="00:42:08.500" end="00:42:13.290">pointless another little bit functionality inside the plug-in is you're actually able to go</p>
+      <p begin="00:42:13.290" end="00:42:18.550">in...mobile services your virtual machines and your storage can't connect to those as</p>
+      <p begin="00:42:18.550" end="00:42:23.270">...nuance.</p>
+      <p begin="00:42:23.270" end="00:42:24.880">And, you'll see added function...this</p>
+      <p begin="00:42:24.880" end="00:42:29.770">amazon so visual studio online is a really cool tool it's not</p>
+      <p begin="00:42:29.770" end="00:42:34.200">really it's not essentially visual studio the id online but what it</p>
+      <p begin="00:42:34.200" end="00:42:38.590">...is it's project management but it's really enhance at the base what you get out of is you can</p>
+      <p begin="00:42:38.590" end="00:42:41.670">do version control and you can...this up with get or tiff and</p>
+      <p begin="00:42:41.670" end="00:42:46.640">it's free for five people you can also do more actual project management</p>
+      <p begin="00:42:46.640" end="00:42:51.210">...create bugs you can create...you contract work items all that stuff and then some</p>
+      <p begin="00:42:51.210" end="00:42:56.210">really cool functionality is stuff that we previewed last october last november and it</p>
+      <p begin="00:42:56.210" end="00:43:00.680">allows you to build applications in a continuous integration for android and ios and</p>
+      <p begin="00:43:00.680" end="00:43:05.510">this includes running your test as well as publishing compile apps let's take a quick look at some of the stuff that will have</p>
+      <p begin="00:43:05.510" end="00:43:12.120">coming there so if I go back to the browser so this is...online if I want to</p>
+      <p begin="00:43:12.120" end="00:43:15.760">create a new project I could do so really easily...just give it mining</p>
+      <p begin="00:43:15.760" end="00:43:19.670">say build project and then I can choose what process temple if you want</p>
+      <p begin="00:43:19.670" end="00:43:24.570">to do that and then we can choose between team foundation server version control or get now there's nothing</p>
+      <p begin="00:43:24.570" end="00:43:29.380">we're about this is traditional get so once you create this get repository you can use the command line</p>
+      <p begin="00:43:29.380" end="00:43:34.270">...pushing and pulling your code into visual sphere online I've already creator...</p>
+      <p begin="00:43:34.270" end="00:43:39.250">the contains all the code samples I showed you today now we could go in here we</p>
+      <p begin="00:43:39.250" end="00:43:41.870">...look at the code if we wanted to but let's go to this</p>
+      <p begin="00:43:41.870" end="00:43:46.190">build previewing and again this is functionality will have coming down the road what is</p>
+      <p begin="00:43:46.190" end="00:43:49.580">...preview right now so what I could do right here is I can create a new</p>
+      <p begin="00:43:49.580" end="00:43:53.610">...definition I'll just say it's an empty definition notice we have a few</p>
+      <p begin="00:43:53.610" end="00:44:00.120">...templates already for visual studios...in x code and then once I create definition I can go to</p>
+      <p begin="00:44:00.120" end="00:44:05.090">add build steps like android build so build my...replication or sign</p>
+      <p begin="00:44:05.090" end="00:44:08.180">my ap...I could go down here...x code build</p>
+      <p begin="00:44:08.180" end="00:44:12.700">an x code package ios soap to actually build the ip a which really cool this is,</p>
+      <p begin="00:44:12.700" end="00:44:13.340">you know,</p>
+      <p begin="00:44:13.340" end="00:44:18.220">I've got several different projects in here so I could have several build steps...sever build definitions and I could just point</p>
+      <p begin="00:44:18.220" end="00:44:23.640">...you know, where's my build by my...wrapper which project director my using should I run the</p>
+      <p begin="00:44:23.640" end="00:44:28.260">...emulator do I run...tests and then here I can actually say I want you to sign</p>
+      <p begin="00:44:28.260" end="00:44:32.340">...creating ack so this create some really cool functionality where you</p>
+      <p begin="00:44:32.340" end="00:44:37.670">can basically automate building your application running test and...so think of,</p>
+      <p begin="00:44:37.670" end="00:44:40.910">you know, you're...you're testing your application now in your in your enterprise</p>
+      <p begin="00:44:40.910" end="00:44:44.470">...company and every time you make a code change you want to make a new ack available</p>
+      <p begin="00:44:44.470" end="00:44:49.370">for your testers this can do that you can build this application every time...change it</p>
+      <p begin="00:44:49.370" end="00:44:54.560">...test you can create a new...and assigning step and then you...you know, a scripted</p>
+      <p begin="00:44:54.560" end="00:44:59.540">...that will take that...you know, maybe email to users or delivered to wherever it needs to be so that</p>
+      <p begin="00:44:59.540" end="00:45:03.970">they can start...same goes for ex code...really interesting because</p>
+      <p begin="00:45:03.970" end="00:45:08.850">we can exactly right now build-out iowa's application online but you can</p>
+      <p begin="00:45:08.850" end="00:45:14.390">...a visionary online...a...so ios ten machine,</p>
+      <p begin="00:45:14.390" end="00:45:18.600">for example, and, build that rx code application that way and then you have that same</p>
+      <p begin="00:45:18.600" end="00:45:23.880">...to packers that up and then delivers somewhere if you want to really very powerful stuff</p>
+      <p begin="00:45:23.880" end="00:45:28.610">for to continues integration building...your applications.</p>
+      <p begin="00:45:28.610" end="00:45:32.300">App insight provide easy application monitoring and this essentially</p>
+      <p begin="00:45:32.300" end="00:45:36.930">...performance modeling of your application you contract usage and metrics you-can review</p>
+      <p begin="00:45:36.930" end="00:45:41.270">...crashes information there...it back and...so let's say you're doing them</p>
+      <p begin="00:45:41.270" end="00:45:46.140">that mobile measure...service and you've got an application and you...a mobile or website for</p>
+      <p begin="00:45:46.140" end="00:45:50.690">the application well you can use this adj or app insights to get information on the</p>
+      <p begin="00:45:50.690" end="00:45:55.130">usage of your mobile app as well as your website let's take a quick look at what</p>
+      <p begin="00:45:55.130" end="00:45:59.970">this looks like now I've already added some code into this standard application to do</p>
+      <p begin="00:45:59.970" end="00:46:04.570">...insights person you see is I just added this compile directive...migrate</p>
+      <p begin="00:46:04.570" end="00:46:09.440">...file so it's going to go out and pull down the...insights library which is available get herb like all the other sdk</p>
+      <p begin="00:46:09.440" end="00:46:14.400">...today and then in my...activity or let's go back to the manifest first</p>
+      <p begin="00:46:14.400" end="00:46:19.390">and I manifest here I'm specifying information instrumentation key which I get out of the portal and</p>
+      <p begin="00:46:19.390" end="00:46:23.900">...look...second...do activity in on...</p>
+      <p begin="00:46:23.900" end="00:46:28.050">...down at the bottom here I'm creating an instance of my telemetry</p>
+      <p begin="00:46:28.050" end="00:46:32.960">client coin track events and saying...if I say trick event of...and</p>
+      <p begin="00:46:32.960" end="00:46:37.920">I'm also doing it when I have an item added since I did this stuff earlier in my application if</p>
+      <p begin="00:46:37.920" end="00:46:42.970">you go to the proto we should see some events that have been logged so we'll go back here the portal</p>
+      <p begin="00:46:42.970" end="00:46:45.890">...go and return to home.</p>
+      <p begin="00:46:45.890" end="00:46:51.960">Algorithm build mobile app insights now if we look in here we should see we already have a</p>
+      <p begin="00:46:51.960" end="00:46:56.180">few events logged after...so we see we've got events log my happened crash for</p>
+      <p begin="00:46:56.180" end="00:47:00.590">me crested here but I can see that I started the at five times I added one item and</p>
+      <p begin="00:47:00.590" end="00:47:04.010">out-dated one item I can see where the requests were made from</p>
+      <p begin="00:47:04.010" end="00:47:07.310">...I can go to the metrics explorer and look at</p>
+      <p begin="00:47:07.310" end="00:47:12.170">additional information after I can figure it so what sort of metrics to I want to get a lot</p>
+      <p begin="00:47:12.170" end="00:47:18.160">of options there if I go down here we can see, you know, what version of the android sdk</p>
+      <p begin="00:47:18.160" end="00:47:22.940">...be use in this case is built for ex eighty-six is five-point-one that's my screen</p>
+      <p begin="00:47:22.940" end="00:47:26.830">...tons...really great information here as far as getting</p>
+      <p begin="00:47:26.830" end="00:47:31.520">...goes if we go to you know, the contrary explains what you...get started</p>
+      <p begin="00:47:31.520" end="00:47:36.330">...and if I go to settings this is where I can grab that instrumentation key that I put</p>
+      <p begin="00:47:36.330" end="00:47:39.780">inside my application so like I said really easy goes up and running and</p>
+      <p begin="00:47:39.780" end="00:47:43.640">you start getting really great information about the usage of your application...in rate</p>
+      <p begin="00:47:43.640" end="00:47:52.300">it works and ios as well as all sorts of other devices going back to our slides?</p>
+      <p begin="00:47:52.300" end="00:47:57.030">Now visual...online is...online...looked at where we its source control we can build</p>
+      <p begin="00:47:57.030" end="00:48:00.810">that build-out a project...project management visual studio itself has</p>
+      <p begin="00:48:00.810" end="00:48:04.980">some functionality if you are building android ios applications so</p>
+      <p begin="00:48:04.980" end="00:48:07.570">...connectivity into cordova...samurai</p>
+      <p begin="00:48:07.570" end="00:48:10.420">...doing cplus-plus build and deployment debugging</p>
+      <p begin="00:48:10.420" end="00:48:15.510">and there's also an android emulator that runs as part of visual studio to help you better and,</p>
+      <p begin="00:48:15.510" end="00:48:21.110">test out and run your applications so to summarize we looked at today as you can</p>
+      <p begin="00:48:21.110" end="00:48:23.650">our...back and no matter what your building as far as</p>
+      <p begin="00:48:23.650" end="00:48:28.640">modification goes so as your mobile services which is production approve right now</p>
+      <p begin="00:48:28.640" end="00:48:32.550">there's address service and mobile apps which is in preview right now and it's kind of the future</p>
+      <p begin="00:48:32.550" end="00:48:36.210">where we're going there's notification helps channel push locations and</p>
+      <p begin="00:48:36.210" end="00:48:41.550">networks with mobile app mobile services but can also work as a stain on if you just need to do push notifications</p>
+      <p begin="00:48:41.550" end="00:48:46.160">there's answer storage measure active directory is...hybrid services for making more powerful</p>
+      <p begin="00:48:46.160" end="00:48:50.450">inching applications as far as helping you build better applications...visual</p>
+      <p begin="00:48:50.450" end="00:48:55.100">...online there's those pieces...studio there's app insights and those id</p>
+      <p begin="00:48:55.100" end="00:48:59.610">...looked at thank you for turning in washes I hope you had a great time</p>
+      <p begin="00:48:59.610" end="00:49:04.220">and build if you want to reach out to me you can always do so on twitter chris for eisner you</p>
+      <p begin="00:49:04.220" end="00:49:09.490">can retest...my website crystallized dot com and then if you feedback on mobile apps</p>
+      <p begin="00:49:09.490" end="00:49:14.180">or services you-can email mobile services microsoft-dot-com and then we always welcome feedback and</p>
+      <p begin="00:49:14.180" end="00:49:19.600">user requests at feedback...ager dot com thanks everyone and have a great day?</p>
+
+    </div>
+  </body>
+</tt>

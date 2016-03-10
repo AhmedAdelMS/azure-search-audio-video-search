@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.883</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.040" end="00:00:03.680">We get-together</p>
+      <p begin="00:00:05.790" end="00:00:10.460">morning before I start I want to apologize to that front kind</p>
+      <p begin="00:00:10.460" end="00:00:16.090">of corner if I disappear behind the polar it's not my fault so.</p>
+      <p begin="00:00:16.090" end="00:00:21.000">If you want to see most of the time and move to the side-of-the-road where...hiding behind the big concrete</p>
+      <p begin="00:00:21.000" end="00:00:26.230">...but other than that ...morning a hyper all</p>
+      <p begin="00:00:26.230" end="00:00:30.350">...is fresh this morning as I am I was not up like last night looking at all</p>
+      <p begin="00:00:30.350" end="00:00:35.270">the san-francisco balls and trying at the...was my hotel room being good</p>
+      <p begin="00:00:35.270" end="00:00:40.260">and diligent...I'm fresh for this morning who else is...excellent</p>
+      <p begin="00:00:40.260" end="00:00:45.840">whether that all right so we're going to talk about as your's no...</p>
+      <p begin="00:00:45.840" end="00:00:51.570">databases a service called as a document db my name's ryan I'm one of the program</p>
+      <p begin="00:00:51.570" end="00:00:57.700">...on the team in case you haven't seen me or heard me before he</p>
+      <p begin="00:00:57.700" end="00:01:01.990">so my embarrassing je don's on video that's gone viral</p>
+      <p begin="00:01:01.990" end="00:01:06.670">...spread everywhere good not many people I have some dignity</p>
+      <p begin="00:01:06.670" end="00:01:13.290">left that's also ok so it's...take a look please remember</p>
+      <p begin="00:01:13.290" end="00:01:19.020">...decision will be a slider the your code feasible evil?</p>
+      <p begin="00:01:19.020" end="00:01:20.130">And, that's all right so what</p>
+      <p begin="00:01:20.130" end="00:01:25.660">...going to drive I have a couple of ideas I thought depending on how many people epub calling</p>
+      <p begin="00:01:25.660" end="00:01:31.690">...we could have some coffee...people seem to be fresh so what we're</p>
+      <p begin="00:01:31.690" end="00:01:36.730">...do today is going to have a look at document devices just quickly briefly as a show of</p>
+      <p begin="00:01:36.730" end="00:01:42.250">hands who's never use the document database before a lot of people all right all</p>
+      <p begin="00:01:42.250" end="00:01:47.440">right so you do a quick recap of document devices what they're good for what</p>
+      <p begin="00:01:47.440" end="00:01:51.620">are not-so-good for kind of vague difference between them and relational</p>
+      <p begin="00:01:51.620" end="00:01:57.680">databases who has used some other document database so like among</p>
+      <p begin="00:01:57.680" end="00:02:01.070">...or raven couch tv</p>
+      <p begin="00:02:01.070" end="00:02:05.040">...the big favorites that you want a</p>
+      <p begin="00:02:05.040" end="00:02:10.110">...db user...dvds?</p>
+      <p begin="00:02:10.110" end="00:02:11.160">We'll.</p>
+      <p begin="00:02:11.160" end="00:02:17.030">Just to give an idea of what you guys have been doing we're going to do a</p>
+      <p begin="00:02:17.030" end="00:02:21.080">quick intro recap to document db it's not going to be a the?</p>
+      <p begin="00:02:22.580" end="00:02:27.580">We're not just been too much time on that we want to try get down to the building</p>
+      <p begin="00:02:27.580" end="00:02:33.650">apps...the tips and tricks for building apps because that's where you want to spend a lot of time and</p>
+      <p begin="00:02:33.650" end="00:02:38.960">we'll take a quick look ...ahead we've got some feedback from people that say</p>
+      <p begin="00:02:38.960" end="00:02:42.110">we really want to know what you guys doing what's on your</p>
+      <p begin="00:02:42.110" end="00:02:45.900">road ahead and we're not really usually very good sharing that kind of info</p>
+      <p begin="00:02:45.900" end="00:02:51.320">publicly because it commits us to stuff but, that's okay I'll say what's, what's,</p>
+      <p begin="00:02:51.320" end="00:02:59.250">what's on...so, what is a document database document...is?</p>
+      <p begin="00:02:59.250" end="00:03:03.890">The type device that is very good at dealing with</p>
+      <p begin="00:03:03.890" end="00:03:07.040">dyson data...documents that look like that</p>
+      <p begin="00:03:07.040" end="00:03:11.330">...read...you don't really need to as long as you get the idea that it's I</p>
+      <p begin="00:03:11.330" end="00:03:15.320">...hierarchical kind of...documents it's got some nesting in</p>
+      <p begin="00:03:15.320" end="00:03:20.050">...it can horizon a that can have...documents and the idea is that...</p>
+      <p begin="00:03:20.050" end="00:03:24.850">thing isself-contained entity that describes some.</p>
+      <p begin="00:03:25.940" end="00:03:30.680">Some entity that you're working with...b customer with autos and</p>
+      <p begin="00:03:30.680" end="00:03:34.470">...lines and products or a contact with addresses</p>
+      <p begin="00:03:34.470" end="00:03:37.780">an contact details or anything that's kind</p>
+      <p begin="00:03:37.780" end="00:03:41.220">of like self-contained into a document and that's I think</p>
+      <p begin="00:03:41.220" end="00:03:45.300">...the name comes from and if I had a time machine I'd go back in time and try</p>
+      <p begin="00:03:45.300" end="00:03:49.400">and influence whoever called a document...document advice I try and get them</p>
+      <p begin="00:03:49.400" end="00:03:53.590">...something else because it kinda creates a little bit of confusion but,</p>
+      <p begin="00:03:53.590" end="00:03:57.110">when you think about these document devices there really are</p>
+      <p begin="00:03:57.110" end="00:04:00.140">the self-contained documents...</p>
+      <p begin="00:04:00.140" end="00:04:04.710">when you deal with a relational database like sequel server?</p>
+      <p begin="00:04:04.710" end="00:04:08.310">...dealing with tables you dealing with records...records</p>
+      <p begin="00:04:08.310" end="00:04:12.890">...to other records and to get the entity what you actually go to the</p>
+      <p begin="00:04:12.890" end="00:04:17.250">dues you gotta go and join a bunch of a whole bunch of tables together and compose the</p>
+      <p begin="00:04:17.250" end="00:04:22.150">entity on-the-fly document databases take a different approach they say hey instead of</p>
+      <p begin="00:04:22.150" end="00:04:25.130">me doing those computation calculation</p>
+      <p begin="00:04:25.130" end="00:04:29.600">...on-the-fly what you should do is model your documents as these kind of</p>
+      <p begin="00:04:29.600" end="00:04:36.530">...complete entities and there's a very good reason why.</p>
+      <p begin="00:04:36.530" end="00:04:40.710">There are some papers and studies that say document devices scale</p>
+      <p begin="00:04:40.710" end="00:04:45.620">at the internet scale they perform a whole lot better than relational databases</p>
+      <p begin="00:04:45.620" end="00:04:49.360">...this is one of the very big reasons relational databases have to do a</p>
+      <p begin="00:04:49.360" end="00:04:54.280">lot of work on-the-fly when you start joining ffifteen tables together to compose</p>
+      <p begin="00:04:54.280" end="00:04:57.490">...and every time you...and entity it has to go and kind</p>
+      <p begin="00:04:57.490" end="00:05:01.940">of break that up and righted to fifteen different tables and maintain locks and all that kind of stuff...was doing</p>
+      <p begin="00:05:01.940" end="00:05:06.820">that or the document database you working on that single document entity so we don't need to</p>
+      <p begin="00:05:06.820" end="00:05:10.500">...and...anything else all we do is we persist just that one into...the whole</p>
+      <p begin="00:05:10.500" end="00:05:15.290">...all right so there's a fundamental difference between those two so when you start working</p>
+      <p begin="00:05:15.290" end="00:05:18.480">with document devices think about that.</p>
+      <p begin="00:05:18.480" end="00:05:23.020">So, there really are good to those kind of document they're not so well...to that kind of</p>
+      <p begin="00:05:23.020" end="00:05:28.510">...now that's also adjacent document and, I could put that into a document</p>
+      <p begin="00:05:28.510" end="00:05:34.000">advice no problem at all okay ...work.</p>
+      <p begin="00:05:34.000" end="00:05:34.720">And, I could go</p>
+      <p begin="00:05:34.720" end="00:05:39.710">...search or query full things by id all by text</p>
+      <p begin="00:05:39.710" end="00:05:42.540">okay this kind of document...</p>
+      <p begin="00:05:43.710" end="00:05:47.820">is probably better served out of something like edges search or elastic social</p>
+      <p begin="00:05:47.820" end="00:05:52.310">...laurel one of the search engines why because most of the searching that you can do on</p>
+      <p begin="00:05:52.310" end="00:05:58.390">...document is worth...blocker text...you're going to be wanting to do full-text</p>
+      <p begin="00:05:58.390" end="00:06:02.830">that makes a or full-text searching fuzzy logic searching...matching sound</p>
+      <p begin="00:06:02.830" end="00:06:07.410">...matching all of that kind of stuff and that's probably better...suited to a search engine rather</p>
+      <p begin="00:06:07.410" end="00:06:10.180">...database changes something like</p>
+      <p begin="00:06:10.180" end="00:06:13.060">...probably better...in?</p>
+      <p begin="00:06:13.060" end="00:06:17.780">As research than in document in a document advice will work</p>
+      <p begin="00:06:17.780" end="00:06:21.940">show you can do it but...going to stop you but there are other options.</p>
+      <p begin="00:06:22.990" end="00:06:24.530">And, lastly.</p>
+      <p begin="00:06:24.530" end="00:06:26.660">They're definitely not for those kind of data</p>
+      <p begin="00:06:26.660" end="00:06:31.380">document okay and I've got a lot of people come to me and...this is also how do I stole my</p>
+      <p begin="00:06:31.380" end="00:06:34.920">...documents in as a document database.</p>
+      <p begin="00:06:34.920" end="00:06:38.730">Document...are not for those kind of document write...really</p>
+      <p begin="00:06:38.730" end="00:06:44.300">...for jason documents not where documents all...now if you want to</p>
+      <p begin="00:06:44.300" end="00:06:49.020">...or content management solution that took...documents and you want to</p>
+      <p begin="00:06:49.020" end="00:06:54.010">...in something like as a document db you probably code right because what you do is you would create a</p>
+      <p begin="00:06:54.010" end="00:06:59.900">meta that metadata documents and, in that jason you would put all the searchable curable fields that you want</p>
+      <p begin="00:06:59.900" end="00:07:03.900">to query on you put that in the jason and then using document</p>
+      <p begin="00:07:03.900" end="00:07:08.500">...attachment property you would attach the word document the binary to the metadata...</p>
+      <p begin="00:07:08.500" end="00:07:13.450">and process that in document db because what we then do is we take a binary we put it</p>
+      <p begin="00:07:13.450" end="00:07:18.840">into blob storage and, now we are knee-deep and index the</p>
+      <p begin="00:07:18.840" end="00:07:24.300">small metadata file so what I'm trying index these things if you want to indexing and searching inside of your</p>
+      <p begin="00:07:24.300" end="00:07:27.280">...documents office documents sharepoint so much better option</p>
+      <p begin="00:07:27.280" end="00:07:34.920">for you it's designed to do that sort of thing?</p>
+      <p begin="00:07:34.920" end="00:07:37.870">Seems my clicker has a very limited range.</p>
+      <p begin="00:07:37.870" end="00:07:41.000">All right so one of the things that have</p>
+      <p begin="00:07:41.000" end="00:07:44.030">...document devices by far the most popular</p>
+      <p begin="00:07:44.030" end="00:07:48.350">database at the moment if you look at stats on the</p>
+      <p begin="00:07:48.350" end="00:07:54.660">...growing devices there is one whose name shall not be...the room?</p>
+      <p begin="00:07:54.660" end="00:07:59.240">That is probably the third or fourth most popular database in terms of growing</p>
+      <p begin="00:08:00.370" end="00:08:03.950">...couple years...a very good reason why developers...flocking to</p>
+      <p begin="00:08:03.950" end="00:08:08.870">document devices and that's because they love document devices and document</p>
+      <p begin="00:08:08.870" end="00:08:13.730">devices love developers mostly document advice if you</p>
+      <p begin="00:08:13.730" end="00:08:16.520">...yesterday on the data who was in</p>
+      <p begin="00:08:16.520" end="00:08:20.990">the session yesterday on the foundations nobody so you...have seen</p>
+      <p begin="00:08:20.990" end="00:08:24.240">me there yesterday how developer friendly</p>
+      <p begin="00:08:24.240" end="00:08:29.790">document databases onstage on-the-fly...to make a change to an application</p>
+      <p begin="00:08:29.790" end="00:08:34.320">and without going through a whole modeling exercise and that without going through a whole or</p>
+      <p begin="00:08:34.320" end="00:08:36.730">...mapping exercise all I did was open</p>
+      <p begin="00:08:36.730" end="00:08:41.710">...visual studio make a change to a model class they...change the ui and I could</p>
+      <p begin="00:08:41.710" end="00:08:46.500">been persist a new field in the database right and that's how easy it is</p>
+      <p begin="00:08:46.500" end="00:08:51.280">you can and it's so good for those the way we build applications that.</p>
+      <p begin="00:08:51.280" end="00:08:57.170">Remembers and just doing a quick scan of the audience but he remembers when we bolts</p>
+      <p begin="00:08:57.170" end="00:08:57.670">systems.</p>
+      <p begin="00:08:59.090" end="00:09:02.210">Where we would...take a six-month planning phase and we would sit</p>
+      <p begin="00:09:02.210" end="00:09:07.000">down and we would do this whole complicated data modeling exercise and,</p>
+      <p begin="00:09:07.000" end="00:09:08.430">then often that six-month kind of</p>
+      <p begin="00:09:08.430" end="00:09:12.500">...we then going to planning and we'd figure out how to map that into a domain</p>
+      <p begin="00:09:12.500" end="00:09:17.880">object and eventually about a year later we would actually start building an application right we don't</p>
+      <p begin="00:09:17.880" end="00:09:22.870">build applications like that anymore we sit down we go right I got a great idea we open up</p>
+      <p begin="00:09:22.870" end="00:09:27.800">and ide whatever that is we...coding and now we just want to source that and retrieved from</p>
+      <p begin="00:09:27.800" end="00:09:32.770">...is that's how we work and we want to make a change we go back into the application we make</p>
+      <p begin="00:09:32.770" end="00:09:37.460">...code change we don't have to go through that whole process of kind of, you know, taking</p>
+      <p begin="00:09:37.460" end="00:09:42.340">...offline updating all apply update scripts the change the schemer eccentric such a</p>
+      <p begin="00:09:42.340" end="00:09:46.730">related to create these crazy schemas to deal with the</p>
+      <p begin="00:09:46.730" end="00:09:52.920">fact that not all records have those property ... that you just go in and,</p>
+      <p begin="00:09:52.920" end="00:09:58.400">you work with them what we really like about document databases as well as...notion of</p>
+      <p begin="00:09:58.400" end="00:10:03.370">low impedance who love sitting down and mapping your?</p>
+      <p begin="00:10:03.370" end="00:10:06.890">Programming language...dot net type into a database type.</p>
+      <p begin="00:10:06.890" end="00:10:09.970">...that love saying that this domain object</p>
+      <p begin="00:10:09.970" end="00:10:13.460">...is actually this field in that database table...most of my in</p>
+      <p begin="00:10:13.460" end="00:10:18.420">properties that fielding map table and change its type and do this horrible mapping thing</p>
+      <p begin="00:10:18.420" end="00:10:23.650">...doing that many people all these things you don't actually have to do that most of</p>
+      <p begin="00:10:23.650" end="00:10:25.180">the time your views</p>
+      <p begin="00:10:25.180" end="00:10:31.050">in your view models if you working in ajax and knock up or what you know,</p>
+      <p begin="00:10:31.050" end="00:10:35.060">all of those kinds of tools...probably already working with a</p>
+      <p begin="00:10:35.060" end="00:10:38.510">...follow some form right you working javascript working with</p>
+      <p begin="00:10:38.510" end="00:10:43.280">...follow ready...you've got this...object that will be cool if I could just take the</p>
+      <p begin="00:10:43.280" end="00:10:48.450">...object...persistence and get the...object back and, bonded to...and</p>
+      <p begin="00:10:48.450" end="00:10:54.200">that's exactly what document devices allow you to do...so it just works?</p>
+      <p begin="00:10:54.200" end="00:10:56.170">That's hard.</p>
+      <p begin="00:10:56.170" end="00:11:01.380">By the time it should just work right and it's fast it's...to get going it's...to use them</p>
+      <p begin="00:11:01.380" end="00:11:05.450">...to develop against them and for most part they perform really,</p>
+      <p begin="00:11:05.450" end="00:11:09.660">really well if you've done the some due diligence</p>
+      <p begin="00:11:09.660" end="00:11:14.130">...just because they're kind of really quick and really easy to get up and running a lot</p>
+      <p begin="00:11:14.130" end="00:11:19.720">of people get sorrowful subtle for a particular way and without doing any</p>
+      <p begin="00:11:19.720" end="00:11:25.090">...how they should model...all how they should designer entities</p>
+      <p begin="00:11:25.090" end="00:11:29.260">...they get stuck by...stuck and I find that</p>
+      <p begin="00:11:29.260" end="00:11:34.250">the six months in the data model isn't working for them anymore okay because they're apps...too big</p>
+      <p begin="00:11:34.250" end="00:11:39.540">...the documents of going-to...queries...slowing down or whatever the case maybe you'll still have all</p>
+      <p begin="00:11:39.540" end="00:11:44.590">kinds of issues but it really is much quicker to go in refactoring data model a</p>
+      <p begin="00:11:44.590" end="00:11:49.420">and kinda keep going.</p>
+      <p begin="00:11:49.420" end="00:11:55.220">So, as a document db fully managed highly scalable...document</p>
+      <p begin="00:11:55.220" end="00:11:59.600">...as a service right yes it is only available in as</p>
+      <p begin="00:11:59.600" end="00:12:03.580">...today and, that's.</p>
+      <p begin="00:12:03.580" end="00:12:05.660">Where we are?</p>
+      <p begin="00:12:05.660" end="00:12:09.530">When we started out with us it's been a long road for us we've been working</p>
+      <p begin="00:12:09.530" end="00:12:12.820">on this probably two years around about two</p>
+      <p begin="00:12:12.820" end="00:12:16.920">years when we first started out we slowed up when?</p>
+      <p begin="00:12:16.920" end="00:12:20.020">Various people with film or various groups...microsoft came to the</p>
+      <p begin="00:12:20.020" end="00:12:23.490">...the data group right because we part of the sign group that</p>
+      <p begin="00:12:23.490" end="00:12:28.430">build sequel server believable we're also part of the same group that bowls...research and,</p>
+      <p begin="00:12:28.430" end="00:12:33.300">all the other cool data like all those kind of other cooled...data services</p>
+      <p begin="00:12:33.300" end="00:12:38.600">were part of the same group and I came to that group and I said I guys we really want to use</p>
+      <p begin="00:12:38.600" end="00:12:42.840">a document database which is the document database you recommend for us and we kind of</p>
+      <p begin="00:12:42.840" end="00:12:45.470">...looking around and the this one</p>
+      <p begin="00:12:45.470" end="00:12:50.060">...some cases that one-word some cases but largely we when happy as a as a</p>
+      <p begin="00:12:50.060" end="00:12:57.110">data group with any of the databases that were out there so we actually wanted to</p>
+      <p begin="00:12:57.110" end="00:13:02.090">take a step back and say can we do some things better...and these of become</p>
+      <p begin="00:13:02.090" end="00:13:06.130">...for our full kind of polls that we want to believe</p>
+      <p begin="00:13:06.130" end="00:13:12.650">...all right the fact that we really want to be...enabled query of the schema free that</p>
+      <p begin="00:13:12.650" end="00:13:16.690">...a bit ofa buzzword right because</p>
+      <p begin="00:13:16.690" end="00:13:21.090">you're document actually has some kind of a schema because as soon as you structure document in a particular</p>
+      <p begin="00:13:21.090" end="00:13:23.900">...infers...right so...schema</p>
+      <p begin="00:13:23.900" end="00:13:28.830">...were schema flexible because we allow you to change that structure really easily but</p>
+      <p begin="00:13:28.830" end="00:13:33.800">that has some kind of a...right but what we really want to be able to do is not just allow you to</p>
+      <p begin="00:13:33.800" end="00:13:38.000">...these documents in whatever format or whatever schema</p>
+      <p begin="00:13:38.000" end="00:13:44.010">...like...we want to very quickly and very easily to be able to query them and,</p>
+      <p begin="00:13:44.010" end="00:13:48.950">that's where we found a lot of these databases breakdown a lot of them allow you to quickly and easily</p>
+      <p begin="00:13:48.950" end="00:13:53.870">stall...jason documents but in order to be able to go and efficiently query them you have to</p>
+      <p begin="00:13:53.870" end="00:13:54.610">...define indexes.</p>
+      <p begin="00:13:55.850" end="00:13:59.620">Now soon as you define an index you've...the schema right because the</p>
+      <p begin="00:13:59.620" end="00:14:03.500">...document changes if it doesn't match what...schema says you're not</p>
+      <p begin="00:14:03.500" end="00:14:08.650">...query for it as soon as you start working.</p>
+      <p begin="00:14:08.650" end="00:14:12.320">And, you start...evolving your data models, you know,</p>
+      <p begin="00:14:12.320" end="00:14:17.040">I have to go and kind of rebuild indexes you have to wait for them to rebuild and all that constant we</p>
+      <p begin="00:14:17.040" end="00:14:21.440">wanted to be able to take adjacent document with any arbitrary kind</p>
+      <p begin="00:14:21.440" end="00:14:26.320">of properties any level of nesting any arbitrary property in the document persisted in the database</p>
+      <p begin="00:14:26.320" end="00:14:32.480">and needed to be able to query using index on any property in...document and none of that when we</p>
+      <p begin="00:14:32.480" end="00:14:34.870">...none of the databases on the market and I don't believe any on the</p>
+      <p begin="00:14:34.870" end="00:14:38.140">...dice lol offer that right.</p>
+      <p begin="00:14:38.140" end="00:14:41.790">So, that was one of the very first thing is that we that we that we set out to</p>
+      <p begin="00:14:41.790" end="00:14:45.620">...and we set...</p>
+      <p begin="00:14:45.620" end="00:14:48.750">We've been to microsoft research guys and we said to them</p>
+      <p begin="00:14:48.750" end="00:14:50.780">...us because we don't know-how to do</p>
+      <p begin="00:14:50.780" end="00:14:56.370">this must be possible anything's possible given enough time and money we don't know-how to do this</p>
+      <p begin="00:14:56.370" end="00:15:00.740">can you help and the microsoft research guys revising they were</p>
+      <p begin="00:15:00.740" end="00:15:06.460">to our engineers and...bolts...you type of index so a lot of</p>
+      <p begin="00:15:06.460" end="00:15:11.050">...if you've done any database workload databases share some common index</p>
+      <p begin="00:15:11.050" end="00:15:11.730">engines</p>
+      <p begin="00:15:11.730" end="00:15:16.290">...we don't we have a new index engine that runs as a document</p>
+      <p begin="00:15:16.290" end="00:15:22.190">...now a lot of people have been asking about details of that index engine.</p>
+      <p begin="00:15:22.190" end="00:15:27.630">we have a...paper that will be published shortly and, dahmer...principle engineer</p>
+      <p begin="00:15:27.630" end="00:15:32.370">pe will be presenting at a number of database conferences shortly on our in</p>
+      <p begin="00:15:32.370" end="00:15:37.690">...and how it works but, that was one of one of the fundamental differences that we...that</p>
+      <p begin="00:15:37.690" end="00:15:42.540">we worked on the other one that we wanted to nile was concept of multi</p>
+      <p begin="00:15:42.540" end="00:15:46.490">...transactions right everybody loves in sequel server</p>
+      <p begin="00:15:46.490" end="00:15:50.540">on any relational system that I can start...transaction I can</p>
+      <p begin="00:15:50.540" end="00:15:53.350">...number...the different entities different tables different</p>
+      <p begin="00:15:53.350" end="00:15:57.630">rows and I can commit the transaction and if anything goes wrong halfway between</p>
+      <p begin="00:15:58.740" end="00:16:02.120">...transaction roll-out and the databases back into a</p>
+      <p begin="00:16:02.120" end="00:16:07.650">consistent site now as soon as you move over into the...sequel world</p>
+      <p begin="00:16:07.650" end="00:16:12.310">into the other document devices many of them don't allow that behavior</p>
+      <p begin="00:16:12.310" end="00:16:16.690">...now do but, many don't...do that so you give up</p>
+      <p begin="00:16:16.690" end="00:16:21.530">those notion of consistent...atomic transactions as soon as you move to one of these</p>
+      <p begin="00:16:21.530" end="00:16:26.410">devices and that causes problems right we've seen some horrendous looking code that developers of</p>
+      <p begin="00:16:26.410" end="00:16:29.690">had to write in their applications to deal with the fact that</p>
+      <p begin="00:16:29.690" end="00:16:34.190">...unique compensation undo rollback and all sorts of crazy</p>
+      <p begin="00:16:34.190" end="00:16:39.170">things so we really wanted to mail the fact that we want you to be able to</p>
+      <p begin="00:16:39.170" end="00:16:42.960">do multi...transactions so?</p>
+      <p begin="00:16:42.960" end="00:16:47.760">Do one operation that touches a number of different documents and if that operation</p>
+      <p begin="00:16:47.760" end="00:16:52.720">succeeds commit all those documents if the operation files rollback out and leave</p>
+      <p begin="00:16:52.720" end="00:16:56.820">the databases ones and then we really wanted to kind of the</p>
+      <p begin="00:16:56.820" end="00:16:59.560">...to come into...together?</p>
+      <p begin="00:17:00.700" end="00:17:01.980">We really want to make this thing</p>
+      <p begin="00:17:01.980" end="00:17:07.220">...and we really want to make this thing perform and we really want to kind of offered</p>
+      <p begin="00:17:07.220" end="00:17:11.710">...price points that are small increments that you can</p>
+      <p begin="00:17:11.710" end="00:17:14.920">adjust up...down...by the...</p>
+      <p begin="00:17:14.920" end="00:17:19.490">you know, all of those kinds of things that we found that taking a product was</p>
+      <p begin="00:17:19.490" end="00:17:24.600">designed to run on a server and hosting at server for use a service didn't really give you that</p>
+      <p begin="00:17:24.600" end="00:17:29.840">those capabilities so this is what we set out to do and this is how we believe as</p>
+      <p begin="00:17:29.840" end="00:17:37.280">a document db differentiates itself from the other databases that are up.</p>
+      <p begin="00:17:37.280" end="00:17:39.090">If we take a look.</p>
+      <p begin="00:17:39.090" end="00:17:42.450">Document db very well-suited to webm...mobile applications</p>
+      <p begin="00:17:43.680" end="00:17:47.200">...that's the only kind of application you can...document db with</p>
+      <p begin="00:17:47.200" end="00:17:51.890">...it'll work brilliantly and a line-of-business...it'll work brilliantly</p>
+      <p begin="00:17:51.890" end="00:17:56.150">in a normal enterprise kind of application it'll work fantastically well</p>
+      <p begin="00:17:56.150" end="00:18:00.530">in an imc application in fact many of</p>
+      <p begin="00:18:00.530" end="00:18:03.250">our very large customers are running imc applications to</p>
+      <p begin="00:18:03.250" end="00:18:08.160">...on document db we have a vehicle manufacturer that every time you start and stop...those</p>
+      <p begin="00:18:08.160" end="00:18:13.380">...telemetry message that gets persisting document db it's actually kind of scary what vehicle</p>
+      <p begin="00:18:13.380" end="00:18:17.770">manufacturers collect about...just by the way.</p>
+      <p begin="00:18:17.770" end="00:18:25.930">I'm not saying which vehicle manufacturer...one I drive so, what are the other things that we want try to do is</p>
+      <p begin="00:18:25.930" end="00:18:29.170">this reliable and predictable performance okay when?</p>
+      <p begin="00:18:30.320" end="00:18:31.540">When we started out one of</p>
+      <p begin="00:18:31.540" end="00:18:36.940">the very first thing that we said is that we don't want to have this notion of</p>
+      <p begin="00:18:36.940" end="00:18:41.340">a noisy neighbor problem because that's the problem that puts a lot of people from a</p>
+      <p begin="00:18:41.340" end="00:18:45.410">...a service is that your application</p>
+      <p begin="00:18:45.410" end="00:18:50.520">is usually impacted by what...neighbor on your boxes doing?</p>
+      <p begin="00:18:50.520" end="00:18:53.790">And, for us that was an absolute nonnegotiable so,</p>
+      <p begin="00:18:53.790" end="00:18:58.600">we...make sure that when you create your database when you put</p>
+      <p begin="00:18:58.600" end="00:19:03.470">...documents into your collection of for documents we...make sure that</p>
+      <p begin="00:19:03.470" end="00:19:09.100">was completely isolated from anything else happening on the machine so fast predictable</p>
+      <p begin="00:19:09.100" end="00:19:16.590">...consistency that's what we radio gainful and...really all gainful celeste</p>
+      <p begin="00:19:16.590" end="00:19:19.760">We think we've done well with elastic scale we've</p>
+      <p begin="00:19:19.760" end="00:19:24.980">heard from feedback during preview in the early color weeks of gi that we can</p>
+      <p begin="00:19:24.980" end="00:19:32.420">this...that we can do better and we will but also some other kind of things that were.</p>
+      <p begin="00:19:32.420" end="00:19:34.520">Shooting...</p>
+      <p begin="00:19:34.520" end="00:19:36.680">And, then really with...document db at</p>
+      <p begin="00:19:36.680" end="00:19:42.090">its this document itemized thing it really is about rapid development right.</p>
+      <p begin="00:19:42.090" end="00:19:46.610">We took a couple of bets when we started out we said well how do we</p>
+      <p begin="00:19:46.610" end="00:19:50.310">get developers to start using document db as quickly as possible and</p>
+      <p begin="00:19:50.310" end="00:19:53.750">eases why was give them tools that are familiar with.</p>
+      <p begin="00:19:53.750" end="00:19:59.450">...I'm going to new query language that you have to...learn how to how to do</p>
+      <p begin="00:19:59.450" end="00:20:04.640">...divested you...inventor new protocol...inventing you kind of</p>
+      <p begin="00:20:04.640" end="00:20:09.440">...to...documents okay there's a way that everybody loves it already</p>
+      <p begin="00:20:09.440" end="00:20:15.270">school jason use dyson right there's a lot of work that's gone into</p>
+      <p begin="00:20:15.270" end="00:20:19.300">...developers love javascript so let's try and use javascript where we can</p>
+      <p begin="00:20:19.300" end="00:20:26.600">...and really integrate javascript into the database engine so we hoping that it's easy to</p>
+      <p begin="00:20:26.600" end="00:20:29.100">...get up and running.</p>
+      <p begin="00:20:29.100" end="00:20:32.120">And, then the fact that it's fully...is also okay I just create</p>
+      <p begin="00:20:32.120" end="00:20:40.600">the database within a couple of minutes if I arkansas...against.</p>
+      <p begin="00:20:40.600" end="00:20:45.510">One of the things as well as that we also want to make sure that it's not just the service that kind of is there on its</p>
+      <p begin="00:20:45.510" end="00:20:50.070">own all right we are part of the as your ecosystem</p>
+      <p begin="00:20:50.070" end="00:20:55.240">one of my show that when you bowled a web app or logic app and api app</p>
+      <p begin="00:20:55.240" end="00:20:59.930">or mobile app that you can use document db one of my show that</p>
+      <p begin="00:20:59.930" end="00:21:04.860">when you deal machine learning kind of stuff on the cool machine learning things that you saw in the</p>
+      <p begin="00:21:04.860" end="00:21:09.090">keynote one of my shoulder document db can be part of that.</p>
+      <p begin="00:21:09.090" end="00:21:14.090">Rbi so when you want to run your reports and you want to do analytics and offs questions of your data we</p>
+      <p begin="00:21:14.090" end="00:21:17.210">want-to make sure a document devious part of that so today we</p>
+      <p begin="00:21:17.210" end="00:21:22.450">...support search so when you have a search account you can go in and creates a document</p>
+      <p begin="00:21:23.830" end="00:21:28.630">...they call it a data source code direct connection but you can point edit either</p>
+      <p begin="00:21:28.630" end="00:21:33.520">sql or document db and then I will go and index and</p>
+      <p begin="00:21:33.520" end="00:21:37.210">crawl through...db and...all right so</p>
+      <p begin="00:21:37.210" end="00:21:41.300">...more complicated writing code or double write code put in document</p>
+      <p begin="00:21:41.300" end="00:21:43.460">...in search and trying to keep</p>
+      <p begin="00:21:43.460" end="00:21:49.850">...now you just put in document db point search at the middle figure it out for you dupe we've got a</p>
+      <p begin="00:21:49.850" end="00:21:54.420">...connector so-if you want-to do these complicated running along writing map</p>
+      <p begin="00:21:54.420" end="00:21:57.370">reduce jobs to do aggregates and averages and counts and</p>
+      <p begin="00:21:57.370" end="00:22:02.460">...and all those sorts of things you can fire off using our</p>
+      <p begin="00:22:02.460" end="00:22:07.090">didn't connector you can run those jobs and then...data back into document db if you want</p>
+      <p begin="00:22:07.090" end="00:22:12.850">or anyone else what are the cool things...connector is.</p>
+      <p begin="00:22:12.850" end="00:22:17.660">We have some customers that are into the approaching triple digit terabyte</p>
+      <p begin="00:22:17.660" end="00:22:22.100">...of data in document db they storing lots and lots and lots and lots and lots of</p>
+      <p begin="00:22:22.100" end="00:22:27.050">data and I when I when I...using the ado...I found that the jobs would run</p>
+      <p begin="00:22:27.050" end="00:22:31.870">for a really long-time and that's because we were going through eighty...data now</p>
+      <p begin="00:22:31.870" end="00:22:37.680">dupes really good at doing that map reduce thing but we thought well is there a wide to...that even quicker so</p>
+      <p begin="00:22:37.680" end="00:22:41.770">...connect you can actually give a document db query the...equipment...</p>
+      <p begin="00:22:41.770" end="00:22:46.650">will only fetch that data that...you're interested in and then kind of work through</p>
+      <p begin="00:22:46.650" end="00:22:51.980">that rather than fetching everything it'll any fetch what you...fetch.</p>
+      <p begin="00:22:51.980" end="00:22:55.840">And, then work has begun integrating into all these other kind of tools and</p>
+      <p begin="00:22:55.840" end="00:23:00.340">technologies and, they should ...</p>
+      <p begin="00:23:00.340" end="00:23:05.210">...so little that what...you db cost so,</p>
+      <p begin="00:23:05.210" end="00:23:08.150">from as little as I think it's.</p>
+      <p begin="00:23:08.150" end="00:23:11.300">I don't have an undue look for one-hour for</p>
+      <p begin="00:23:11.300" end="00:23:14.690">document db database is three cents.</p>
+      <p begin="00:23:14.690" end="00:23:18.460">For a...I think it's less than a cup of coffee or much less than a cup of</p>
+      <p begin="00:23:18.460" end="00:23:22.330">coffee okay so you can get going really, really quick really,</p>
+      <p begin="00:23:22.330" end="00:23:25.800">really easy there are a couple of things</p>
+      <p begin="00:23:25.800" end="00:23:30.650">...that are must mention all right and you'll see as we go on through the rest</p>
+      <p begin="00:23:30.650" end="00:23:37.670">of the session I hope you'll get an understanding of kind of how things work these are</p>
+      <p begin="00:23:37.670" end="00:23:42.570">price at a collection...so...uses raven...</p>
+      <p begin="00:23:42.570" end="00:23:44.780">Pay attention visa charged</p>
+      <p begin="00:23:44.780" end="00:23:49.650">a collection level and that's because a collection in document db is a very different concept</p>
+      <p begin="00:23:49.650" end="00:23:52.780">in a very different notion to a collection among...rival.</p>
+      <p begin="00:23:54.210" end="00:23:57.740">Hindsight says we should have probably given a different time we shouldn't of</p>
+      <p begin="00:23:57.740" end="00:24:02.320">...collection use people expect to use it like very using mongolian</p>
+      <p begin="00:24:02.320" end="00:24:05.850">...collections among the guys and they documentations</p>
+      <p begin="00:24:05.850" end="00:24:10.730">says think of a collection like a table and think of a document like a</p>
+      <p begin="00:24:11.850" end="00:24:15.080">We don't want people to think of collections like that.</p>
+      <p begin="00:24:15.080" end="00:24:19.120">We want people to think of collections as I partition of data you can</p>
+      <p begin="00:24:19.120" end="00:24:27.130">stick any data into a collection not just tighter of the same type.</p>
+      <p begin="00:24:27.130" end="00:24:27.430">And, there's</p>
+      <p begin="00:24:27.430" end="00:24:33.060">a number reasons for that because of features like being able to do multi</p>
+      <p begin="00:24:33.060" end="00:24:33.880">...transactions</p>
+      <p begin="00:24:33.880" end="00:24:39.230">...within collections eventually we'll have some future features that are also going to kind of</p>
+      <p begin="00:24:39.230" end="00:24:43.300">make more sense of why we see collections as...</p>
+      <p begin="00:24:43.300" end="00:24:49.340">of heterogeneous documents rather than the documents of the same type.</p>
+      <p begin="00:24:49.340" end="00:24:53.210">So, when you start our planning for your application?</p>
+      <p begin="00:24:53.210" end="00:24:57.930">Don't fink arbitration as a table...try and put customers into one products</p>
+      <p begin="00:24:57.930" end="00:25:02.420">into one orders into one order details into one because eventually you'll end up with a</p>
+      <p begin="00:25:02.420" end="00:25:07.180">database that has sixty collections for like a hundred major data and you'll be</p>
+      <p begin="00:25:07.180" end="00:25:10.420">sighing document...really, really expensive</p>
+      <p begin="00:25:10.420" end="00:25:17.540">...you took although lead either...you put into one collection it'll cost you twenty five bucks a month?</p>
+      <p begin="00:25:17.540" end="00:25:23.530">So, if we move on let's take a look at the basics of document db okay and</p>
+      <p begin="00:25:23.530" end="00:25:29.100">...the understanding of kind of how a resource models put together these...the database</p>
+      <p begin="00:25:29.100" end="00:25:33.600">...the poorly credit database account and all that gives use...unique dna serviceable</p>
+      <p begin="00:25:33.600" end="00:25:37.120">...like most edges services we fully</p>
+      <p begin="00:25:37.120" end="00:25:41.850">...comply we fully race-based...everything in document db is a</p>
+      <p begin="00:25:41.850" end="00:25:47.250">raced resource...can talk to at using a raced url everything</p>
+      <p begin="00:25:47.250" end="00:25:52.330">from a database to a collection to a user to a permission object to</p>
+      <p begin="00:25:52.330" end="00:25:56.150">...itself everything is...object and I can do</p>
+      <p begin="00:25:56.150" end="00:26:03.270">...so put so pushes or posts to any resource in the database.</p>
+      <p begin="00:26:03.270" end="00:26:08.540">So, that brings...database so databases a psychological thing there isn't</p>
+      <p begin="00:26:08.540" end="00:26:13.140">a physical by devices a logical container logical way to group</p>
+      <p begin="00:26:13.140" end="00:26:18.900">...collections and...together.</p>
+      <p begin="00:26:18.900" end="00:26:22.100">Then we get into collections circulation is really like I said</p>
+      <p begin="00:26:22.100" end="00:26:25.690">this container full for different kinds of the documents</p>
+      <p begin="00:26:25.690" end="00:26:29.970">it's a physical allocation of resources so when you create a collection we actually go to</p>
+      <p begin="00:26:29.970" end="00:26:35.990">a node somewhere in our cluster and we physically allocate you and</p>
+      <p begin="00:26:35.990" end="00:26:41.130">At amount of cpu and amount of memory and amount of the sky and amount of network and,</p>
+      <p begin="00:26:41.130" end="00:26:45.200">that's how we can might make sure that we don't have a noisy neighbor problem because</p>
+      <p begin="00:26:45.200" end="00:26:49.550">that collection has very specific and very hard boundaries</p>
+      <p begin="00:26:49.550" end="00:26:55.210">...a cannot operate outside of the boundary some no matter what anyone else is doing in their collection on</p>
+      <p begin="00:26:55.210" end="00:26:59.230">their node you're getting that slice of that machine and we make sure that you get</p>
+      <p begin="00:26:59.230" end="00:27:00.460">...so that machine.</p>
+      <p begin="00:27:03.970" end="00:27:07.820">It's a scope...queries so today you can't do a query across collections</p>
+      <p begin="00:27:07.820" end="00:27:12.570">...because a collection could be...any one of our</p>
+      <p begin="00:27:12.570" end="00:27:17.210">clusters could be a thousand nodes so you can't do a query that spans across</p>
+      <p begin="00:27:17.210" end="00:27:22.800">a thousand nodes what you need to do...talk about the slider is this notion of a fan</p>
+      <p begin="00:27:22.800" end="00:27:27.590">out query so if you're looking for...and you don't really know what collection that's in all then you got</p>
+      <p begin="00:27:27.590" end="00:27:35.100">...query every collection as a fine art query and consolidate results back together again.</p>
+      <p begin="00:27:35.100" end="00:27:40.860">All right our storage...by sdts in...in the machine is solid-state</p>
+      <p begin="00:27:40.860" end="00:27:43.880">disks and that's where your data...so we done back on the</p>
+      <p begin="00:27:43.880" end="00:27:47.870">edges storage or anything like that there is these.</p>
+      <p begin="00:27:47.870" end="00:27:52.480">In fact our index engine has been optimized for modern-day...these</p>
+      <p begin="00:27:52.480" end="00:27:59.000">so we...engine that takes advantage of a hardware that we running on.</p>
+      <p begin="00:27:59.000" end="00:28:03.520">And, then they're below by the hour so if you create a collection try and you delete</p>
+      <p begin="00:28:03.520" end="00:28:06.960">the collection immediately you'll get charge for an hour.</p>
+      <p begin="00:28:06.960" end="00:28:10.550">Depending on what that is if it was and sone collection you'll get</p>
+      <p begin="00:28:10.550" end="00:28:15.050">charge three-point-four...unknown is three-point-four...</p>
+      <p begin="00:28:15.050" end="00:28:19.580">right so just keep that in mind as well when you especially important when you're running</p>
+      <p begin="00:28:21.410" end="00:28:25.830">...you running a una taste that's...I...collection does some testing</p>
+      <p begin="00:28:25.830" end="00:28:32.780">...collection that's going to charge you that's going to cost you three things to do that.</p>
+      <p begin="00:28:32.780" end="00:28:36.230">Right.</p>
+      <p begin="00:28:36.230" end="00:28:40.840">And, then you get the notion of documents and a documents is mostly what you're going to work with</p>
+      <p begin="00:28:40.840" end="00:28:47.240">that's your document it goes into a collection all right.</p>
+      <p begin="00:28:47.240" end="00:28:52.070">Loan for schemer case you can put any kind of documentary like into...one</p>
+      <p begin="00:28:52.070" end="00:28:56.950">into one collection and we are optimized for smaller documents rather than</p>
+      <p begin="00:28:56.950" end="00:29:01.240">...documents and that's because smaller documents as you may have</p>
+      <p begin="00:29:01.240" end="00:29:05.960">noticed if you've done anything on the internet or whatever smaller documents in terms of network io and this guy</p>
+      <p begin="00:29:05.960" end="00:29:10.020">I work much better than one large document so decisive</p>
+      <p begin="00:29:10.020" end="00:29:14.250">hundred small documents is actually lock lace network io and it's a lot quicker because</p>
+      <p begin="00:29:14.250" end="00:29:18.840">I can be paralyzed operations than writing one big</p>
+      <p begin="00:29:18.840" end="00:29:24.620">document so we are optimized for lots of smaller documents rather than bigger documents and we</p>
+      <p begin="00:29:24.620" end="00:29:31.930">do have a document size limit today which when we started out in preview.</p>
+      <p begin="00:29:31.930" end="00:29:36.890">A number that we set that will our internal customers...telling us right</p>
+      <p begin="00:29:36.890" end="00:29:41.480">we put out there and very quickly external customers told us that was a very</p>
+      <p begin="00:29:41.480" end="00:29:45.120">...number and we...we opted to.</p>
+      <p begin="00:29:45.120" end="00:29:48.670">A hundred-twenty ik and eventually we've now up to five hundred twelve</p>
+      <p begin="00:29:48.670" end="00:29:51.180">...document now five hundred twelve</p>
+      <p begin="00:29:51.180" end="00:29:56.380">...if you take...you...down so get rid of the nice kind of indenting and</p>
+      <p begin="00:29:56.380" end="00:30:01.080">wide spice because computers don't need that once you get rid of that five hundred to all kind</p>
+      <p begin="00:30:01.080" end="00:30:04.300">of minimize jason is actually an incredible amount of</p>
+      <p begin="00:30:04.300" end="00:30:09.650">...right it really is a lot of document lot-of a lot...could fit</p>
+      <p begin="00:30:09.650" end="00:30:14.570">into a document plus five hundred twelve k is two little.</p>
+      <p begin="00:30:14.570" end="00:30:19.450">And, we're listening we running some internal tests on different document sizes</p>
+      <p begin="00:30:19.450" end="00:30:23.850">as soon as we believe that we can from a network io kind of point</p>
+      <p begin="00:30:23.850" end="00:30:29.590">of view handling sustain thousand's attendance running bigger documents</p>
+      <p begin="00:30:29.590" end="00:30:34.390">we will potentially...that limit again all right so a lot of these limits are implies while.</p>
+      <p begin="00:30:34.390" end="00:30:38.820">We're kind of tasting what things can...so,</p>
+      <p begin="00:30:38.820" end="00:30:45.600">these are constantly under review and we may well left that limited in the future.</p>
+      <p begin="00:30:46.760" end="00:30:48.530">And, then you get other things in document</p>
+      <p begin="00:30:48.530" end="00:30:53.500">...called uses...seitenheader user in...and I can assign</p>
+      <p begin="00:30:53.500" end="00:30:58.350">...user permissions and use the permissions could be at a collection level or down to a document</p>
+      <p begin="00:30:58.350" end="00:31:03.210">...so I could cite this user can only read the document those user can write and read that</p>
+      <p begin="00:31:03.210" end="00:31:07.100">...but it's down to a document label we don't have the</p>
+      <p begin="00:31:07.100" end="00:31:13.380">...attributes level permission it's down to the document being that we also have</p>
+      <p begin="00:31:13.380" end="00:31:17.700">slow procedures...an user-defined functions now before people chase me</p>
+      <p begin="00:31:17.700" end="00:31:21.510">...the room with a pitchfork because slow procedures</p>
+      <p begin="00:31:21.510" end="00:31:26.000">...server-side triggers and that kind of stuff...we think</p>
+      <p begin="00:31:26.000" end="00:31:31.320">they're really all value and benefits...using server-side scripts and for the right</p>
+      <p begin="00:31:31.320" end="00:31:35.300">reason like anything no, matter how good it is if you</p>
+      <p begin="00:31:35.300" end="00:31:41.240">...incorrectly it's going to be horrible but we believe that if you use a directly</p>
+      <p begin="00:31:41.240" end="00:31:45.640">...actually be beneficial for the guys sitting on the floor...the corning unless you want to</p>
+      <p begin="00:31:45.640" end="00:31:47.160">...on the floor...sloping</p>
+      <p begin="00:31:47.160" end="00:31:51.840">...in the middle over here and there's a few...of their mechanism</p>
+      <p begin="00:31:51.840" end="00:31:57.660">right so we also have the notion of attachments what you can do is you can give us</p>
+      <p begin="00:31:57.660" end="00:32:01.730">a document that has a picture or video or whatever but</p>
+      <p begin="00:32:01.730" end="00:32:06.400">attached to it and we then offload that attachment to blob storage and we manage the</p>
+      <p begin="00:32:06.400" end="00:32:10.370">...of that so...delete the document we also go in and clean-up all the attachments with...</p>
+      <p begin="00:32:10.370" end="00:32:15.330">well when you query for a document you can get the document back you can also tell us to include the attachments</p>
+      <p begin="00:32:15.330" end="00:32:19.520">...bring back the attachments as well all-you-can-eat governance story attachments</p>
+      <p begin="00:32:19.520" end="00:32:26.450">yourself propelling to the document...the attachment in the document if you want to do that way.</p>
+      <p begin="00:32:26.450" end="00:32:27.200">Okay, so,</p>
+      <p begin="00:32:27.200" end="00:32:31.810">document db jason documents this is what I look like they're actually when you look at a</p>
+      <p begin="00:32:31.810" end="00:32:34.750">...adjacent documents actually tree.</p>
+      <p begin="00:32:34.750" end="00:32:39.630">this is really important because what we base our index on because it's a tree that we can</p>
+      <p begin="00:32:39.630" end="00:32:47.840">walken we can navigate through the tree were able to index every property in the document for you.</p>
+      <p begin="00:32:47.840" end="00:32:51.770">So, talking about our indexing by default we index every property every</p>
+      <p begin="00:32:51.770" end="00:32:53.500">attribute in the document.</p>
+      <p begin="00:32:55.770" end="00:33:00.460">We think for the majority of the users.</p>
+      <p begin="00:33:01.470" end="00:33:07.300">The default probably good but, we allow you to tweak that we...my changes to</p>
+      <p begin="00:33:07.300" end="00:33:12.560">...if you find that you actually ...</p>
+      <p begin="00:33:13.670" end="00:33:14.420">Data model really,</p>
+      <p begin="00:33:14.420" end="00:33:19.160">really well and you have a big document with a thousand attributes and, you know,</p>
+      <p begin="00:33:19.160" end="00:33:20.900">you any...query on a subset of</p>
+      <p begin="00:33:20.900" end="00:33:25.400">them they or when there's a lot of fields in a document...being wasted in the</p>
+      <p begin="00:33:25.400" end="00:33:29.910">index again that's going to cost you storage size it's going to cost you a</p>
+      <p begin="00:33:29.910" end="00:33:34.490">...charges that kinda stuff so you can actually go into index policy and you can do things</p>
+      <p begin="00:33:34.490" end="00:33:39.610">like include...paul's so by default we include everything but you can go slot excluding</p>
+      <p begin="00:33:39.610" end="00:33:41.330">pods if you want?</p>
+      <p begin="00:33:41.330" end="00:33:44.010">We also have two different indexing mods...consistent one is</p>
+      <p begin="00:33:44.010" end="00:33:49.700">lazy so default is consistent serve as you writing the document were updating index</p>
+      <p begin="00:33:49.700" end="00:33:56.440">...time and we find that the index keeps up and, the very highs</p>
+      <p begin="00:33:56.440" end="00:34:01.210">...so we haven't found the index kind of lagging yet</p>
+      <p begin="00:34:01.210" end="00:34:06.250">we watch all the time and we've got metrics to tell us whether it's lagging but</p>
+      <p begin="00:34:06.250" end="00:34:10.890">...keeps up however if you've got these really big bulk insert kind</p>
+      <p begin="00:34:10.890" end="00:34:12.230">of operations so I</p>
+      <p begin="00:34:12.230" end="00:34:15.230">...every morning you in just a ton of data.</p>
+      <p begin="00:34:16.700" end="00:34:20.260">And, it's not really that important that you can query on...immediately</p>
+      <p begin="00:34:20.260" end="00:34:25.800">they what you could do is you could set the indexing policy or indexing mode on a collections lazy</p>
+      <p begin="00:34:25.800" end="00:34:29.750">...that'll mean is that we just one index while you're writing and you can</p>
+      <p begin="00:34:29.750" end="00:34:34.540">invest a ton of stuff and then the index...catch up in eventually</p>
+      <p begin="00:34:34.540" end="00:34:38.930">consistent so you did hire right throughput</p>
+      <p begin="00:34:38.930" end="00:34:45.000">worth with lazy mode and then we also have an indexing policy that says automatic</p>
+      <p begin="00:34:45.000" end="00:34:50.290">manual right so you can actually switch automatic indexing of completely so when you put a</p>
+      <p begin="00:34:50.290" end="00:34:54.970">...collection it doesn't get indexed unless you tell it to be index when you do the create</p>
+      <p begin="00:34:54.970" end="00:34:59.900">statement so you can switch automatic indexing off and then only index some documents you</p>
+      <p begin="00:34:59.900" end="00:35:03.470">put in the collection some documents you put in the collection you may not</p>
+      <p begin="00:35:03.470" end="00:35:08.310">want to index the whole thing other documents...put in the collection you want to index so this way you can switch</p>
+      <p begin="00:35:08.310" end="00:35:14.230">on all of depending on what you want to now even if the document has been</p>
+      <p begin="00:35:14.230" end="00:35:17.710">...you can still redid as long as, you know, it's id you...</p>
+      <p begin="00:35:17.710" end="00:35:26.870">readers all right so you can go in and you can actually read the document by its</p>
+      <p begin="00:35:26.870" end="00:35:30.470">...paul's like I said you can kind of include...xthree...</p>
+      <p begin="00:35:31.490" end="00:35:35.060">We also have currently two different index types will be adding more as we</p>
+      <p begin="00:35:35.060" end="00:35:39.000">go we currently have to indexing types what is a hash and,</p>
+      <p begin="00:35:39.000" end="00:35:42.480">that's really, really good for doing equality type operations</p>
+      <p begin="00:35:42.480" end="00:35:47.460">give-me all documents where age is twenty or give-me all</p>
+      <p begin="00:35:47.460" end="00:35:49.320">...city is san-francisco.</p>
+      <p begin="00:35:52.160" end="00:35:57.210">Hash indexes work really well for that kind of operation range index works well for give-me</p>
+      <p begin="00:35:57.210" end="00:36:00.920">old documents where ages greater than thirty or where</p>
+      <p begin="00:36:00.920" end="00:36:03.820">...between x and y ok so</p>
+      <p begin="00:36:03.820" end="00:36:09.290">range operations range index all right now?</p>
+      <p begin="00:36:09.290" end="00:36:14.060">Depending on what you're doing you can actually switch, switch index so,</p>
+      <p begin="00:36:14.060" end="00:36:16.960">as you include...off you can see over there I'm including.</p>
+      <p begin="00:36:19.040" end="00:36:24.010">...including...that...roots...giving it an index type of hash something apply</p>
+      <p begin="00:36:24.010" end="00:36:28.520">hash index everything in my document the bottom one I think I'm saying</p>
+      <p begin="00:36:28.520" end="00:36:33.280">...time stamp I wanted to be a range because I'm going to do range kind of operations on-chip time</p>
+      <p begin="00:36:33.280" end="00:36:39.300">...so that's what you can do over there and then as you start doing these things you can also change the index</p>
+      <p begin="00:36:39.300" end="00:36:44.170">precision and index precision is largely a tradeoff between the amount of</p>
+      <p begin="00:36:44.170" end="00:36:49.170">storage that we do and a and the speed of the index all of the index</p>
+      <p begin="00:36:49.170" end="00:36:54.350">are more precise you are the quicker we will be okay but,</p>
+      <p begin="00:36:54.350" end="00:36:58.720">the larger may be less precise ja the smaller you'll storage</p>
+      <p begin="00:36:58.720" end="00:37:04.800">requirements will be but the bigger the results...will have to kind of scan through...index.</p>
+      <p begin="00:37:04.800" end="00:37:09.490">And, then you do that so javascript transactions all...these things on triggers</p>
+      <p begin="00:37:09.490" end="00:37:13.700">in-store proxy allow you to do multiple document transactions so when you want</p>
+      <p begin="00:37:13.700" end="00:37:18.880">to do that multiple document transaction slow procedure trigger.</p>
+      <p begin="00:37:18.880" end="00:37:23.440">So, what you do...you going you define this whole procedure I'll show you what one looks like or trigger I'll show you</p>
+      <p begin="00:37:23.440" end="00:37:28.100">one looks like and that can then go and perform operations</p>
+      <p begin="00:37:28.100" end="00:37:33.140">gains multiple documents and either commit the whole thing as a snapshot as</p>
+      <p begin="00:37:33.140" end="00:37:37.370">...transaction or effect still procedure</p>
+      <p begin="00:37:37.370" end="00:37:42.180">ritalin javascript frozen era we roll back the whole thing and we...everything and put the database</p>
+      <p begin="00:37:42.180" end="00:37:44.420">...consistent...</p>
+      <p begin="00:37:44.420" end="00:37:46.720">In terms of query there are currently</p>
+      <p begin="00:37:48.250" end="00:37:53.960">depending on currently there are two ways to query document db if</p>
+      <p begin="00:37:53.960" end="00:37:57.590">...in dot net how many dot net developers and room.</p>
+      <p begin="00:37:57.590" end="00:38:01.980">Actually sorry this is a...conference how many non dot net developers in the</p>
+      <p begin="00:38:01.980" end="00:38:08.970">audience so node python javascript compliance right cool so.</p>
+      <p begin="00:38:08.970" end="00:38:13.730">I'm going to talk quickly about the net stuff and then the other languages we haven't forgotten about so</p>
+      <p begin="00:38:13.730" end="00:38:19.180">will be making changes into the other languages soon in dot net you can use</p>
+      <p begin="00:38:19.180" end="00:38:24.720">...if you like writing stuff...language integrated query you can I should do that and,</p>
+      <p begin="00:38:24.720" end="00:38:29.630">for the most part works there are some up right is that we don't yet support inside of link and that's because the back-end</p>
+      <p begin="00:38:29.630" end="00:38:35.820">kind of query capabilities...catching up but,...works and then for the non dot</p>
+      <p begin="00:38:35.820" end="00:38:39.040">that people even...the people that still prefer sequel</p>
+      <p begin="00:38:39.040" end="00:38:44.430">syntax you can write your query as a sequels sql query.</p>
+      <p begin="00:38:44.430" end="00:38:47.920">And, both work equally fine if you're doing race programming you</p>
+      <p begin="00:38:47.920" end="00:38:51.230">...sql as the body.</p>
+      <p begin="00:38:51.230" end="00:38:56.820">And, you would execute query that way around.</p>
+      <p begin="00:38:56.820" end="00:38:58.800">All right what we can also do is we can</p>
+      <p begin="00:38:58.800" end="00:39:02.450">...queries by introducing user-defined functions</p>
+      <p begin="00:39:02.450" end="00:39:04.620">...one over here is a user-defined function call</p>
+      <p begin="00:39:04.620" end="00:39:06.890">...it's written in javascript.</p>
+      <p begin="00:39:08.580" end="00:39:11.110">So, you...store on the server and then when</p>
+      <p begin="00:39:11.110" end="00:39:16.260">you execute that you can actually then include the you df in your query?</p>
+      <p begin="00:39:16.260" end="00:39:20.050">And, you can do some really cool powerful things with you...if</p>
+      <p begin="00:39:20.050" end="00:39:25.180">...writing in link this is a shows how to include the you df in sql if you're writing and dot</p>
+      <p begin="00:39:25.180" end="00:39:30.630">...you can involve for-you df from link as well so you don't have to...back to sequels you</p>
+      <p begin="00:39:30.630" end="00:39:36.780">judea you can use...you df in a way close right so I could</p>
+      <p begin="00:39:36.780" end="00:39:42.550">have said select name from company from roots where</p>
+      <p begin="00:39:42.550" end="00:39:46.450">...equals company and text greater than.</p>
+      <p begin="00:39:46.450" end="00:39:49.450">...I can do that.</p>
+      <p begin="00:39:49.450" end="00:39:54.760">Bp warm though that as soon as you put a...into the way close if that's the only</p>
+      <p begin="00:39:54.760" end="00:39:59.390">predicate in the way close we then...take advantage of the index right because we</p>
+      <p begin="00:40:00.470" end="00:40:04.250">...the xthree ud if so we then would resort back to the</p>
+      <p begin="00:40:04.250" end="00:40:08.350">scan and scandal the documents and possum for-you df and that's why I</p>
+      <p begin="00:40:08.350" end="00:40:12.270">say have at least one other falter in your query if you're going to use</p>
+      <p begin="00:40:12.270" end="00:40:17.710">...and the way close in this case it was like where type is company but I could have said where</p>
+      <p begin="00:40:17.710" end="00:40:20.620">hq equals russia and then puts</p>
+      <p begin="00:40:20.620" end="00:40:25.330">v you df into that means rule first go to the index final documents</p>
+      <p begin="00:40:25.330" end="00:40:29.850">that match from the index and then we'll pause that smaller subset of documents into the</p>
+      <p begin="00:40:29.850" end="00:40:36.330">...for rather than every single document that's going to go through the if?</p>
+      <p begin="00:40:36.330" end="00:40:41.360">All right so the kinds of applications that we're seeing people both are</p>
+      <p begin="00:40:41.360" end="00:40:45.510">your traditional web write the...nodal js</p>
+      <p begin="00:40:45.510" end="00:40:51.040">and the back-end we also support other things on the back-end</p>
+      <p begin="00:40:51.040" end="00:40:54.540">we have full support for java...if you want to run a java web</p>
+      <p begin="00:40:54.540" end="00:40:59.310">...full support for java if you want to run python we have</p>
+      <p begin="00:40:59.310" end="00:41:02.250">...support for python that kinda stuff so</p>
+      <p begin="00:41:02.250" end="00:41:06.140">...admit node the js on as a websites for instance we also have</p>
+      <p begin="00:41:06.140" end="00:41:10.450">php ruby there's some guys...the community of slowed a php</p>
+      <p begin="00:41:10.450" end="00:41:14.790">...a ruby driver for us is also now I see a go driver so community</p>
+      <p begin="00:41:14.790" end="00:41:19.660">...is picking up really nicely so,...have...get up...and if you want to</p>
+      <p begin="00:41:19.660" end="00:41:26.170">...was please do the...js the java sdk the javascript is</p>
+      <p begin="00:41:26.170" end="00:41:31.410">to...lol opensource if you want to contribute back to...feel free</p>
+      <p begin="00:41:31.410" end="00:41:35.510">dot net one is not...yet there's some?</p>
+      <p begin="00:41:35.510" end="00:41:40.920">Internal compliance issues that we're working through to get that one published ...showed we will</p>
+      <p begin="00:41:40.920" end="00:41:47.130">...it's just a little bit more work to publish that one but, we'll get...</p>
+      <p begin="00:41:47.130" end="00:41:52.650">All right so we can also support so this model here was your traditional kind of</p>
+      <p begin="00:41:52.650" end="00:41:55.760">...airwave application you get...web...web server and you</p>
+      <p begin="00:41:55.760" end="00:42:00.540">...and how that web server all that web</p>
+      <p begin="00:42:00.540" end="00:42:04.040">...the databases using this notion of a mas techy?</p>
+      <p begin="00:42:04.040" end="00:42:07.030">That...key used as a storage.</p>
+      <p begin="00:42:08.220" end="00:42:11.900">...couple people...gives you a mas...simon's we give them off to</p>
+      <p begin="00:42:11.900" end="00:42:16.730">...now with the musty you can do absolutely anything on that database account you can drop...you</p>
+      <p begin="00:42:16.730" end="00:42:21.400">can credit collection you can do whatever so you need to keep the key secure and</p>
+      <p begin="00:42:21.400" end="00:42:26.260">safe so when you're doing a middle...kind of application like this and that applications running</p>
+      <p begin="00:42:26.260" end="00:42:31.480">and measure you can keep key in the middle...a and b very confident that</p>
+      <p begin="00:42:31.480" end="00:42:34.480">...your...that...right.</p>
+      <p begin="00:42:34.480" end="00:42:38.780">We also want to...of a single page...application the</p>
+      <p begin="00:42:38.780" end="00:42:43.750">...one...you have no middle...and the web klein's...strides the</p>
+      <p begin="00:42:43.750" end="00:42:47.895">...right now...you don't want to do here is you don't want</p>
+      <p begin="00:42:47.895" end="00:42:52.960">to put the key into yours into your web application.</p>
+      <p begin="00:42:52.960" end="00:42:59.740">And, also the question but hopefully it's obvious why don't you want to put the key into your web application.</p>
+      <p begin="00:42:59.740" end="00:43:02.040">Thank you...that's because the key is</p>
+      <p begin="00:43:02.040" end="00:43:06.310">...study on every device that is accessing that thing and you have now given...why your si</p>
+      <p begin="00:43:06.310" end="00:43:11.100">...is a password to unanimous is not a good idea so today we</p>
+      <p begin="00:43:11.100" end="00:43:15.270">...require that you have a small.</p>
+      <p begin="00:43:15.270" end="00:43:19.000">Middle...the client will go...connector and says hey this is...I</p>
+      <p begin="00:43:19.000" end="00:43:24.510">...we will then go off to document db we general rights effectively assessed</p>
+      <p begin="00:43:24.510" end="00:43:29.080">aiken...access signature for end-user for a period of time.</p>
+      <p begin="00:43:29.080" end="00:43:33.350">We then return that...token to the browser and that's what the browser</p>
+      <p begin="00:43:33.350" end="00:43:37.980">uses to talk to the database doesn't use the mas techy...uses that short time</p>
+      <p begin="00:43:37.980" end="00:43:41.970">...of ...access signature and eventually that's shared</p>
+      <p begin="00:43:41.970" end="00:43:45.420">...signature will time-out you can set how long-duration is</p>
+      <p begin="00:43:45.420" end="00:43:51.480">...out it has to go back to the middle tier get a new token and then can make back to the database?</p>
+      <p begin="00:43:51.480" end="00:43:54.270">So, that's how it works that I.</p>
+      <p begin="00:43:54.270" end="00:43:59.160">We don't yet have integration into things like as...active directory so you can't director...</p>
+      <p begin="00:43:59.160" end="00:44:04.480">sign in get a token posits document db it's something that were investigating but it's not there</p>
+      <p begin="00:44:04.480" end="00:44:11.600">yet we also fully support mobile applications and like you single page apps please</p>
+      <p begin="00:44:11.600" end="00:44:14.150">...puts the key in your in your</p>
+      <p begin="00:44:14.150" end="00:44:18.570">file nap all-in-all iphone appointee...android...</p>
+      <p begin="00:44:18.570" end="00:44:22.670">Again, people get a hold of that app...compile it and</p>
+      <p begin="00:44:22.670" end="00:44:27.600">...your key okay so please don't do that either do something similar to what</p>
+      <p begin="00:44:27.600" end="00:44:31.710">I had before all use something like...mobile apps.</p>
+      <p begin="00:44:31.710" end="00:44:32.660">As...mobile apps</p>
+      <p begin="00:44:32.660" end="00:44:37.630">...has the key and the...the...told to the database and all the application</p>
+      <p begin="00:44:37.630" end="00:44:41.740">does is authenticate against that and then mobile services or as</p>
+      <p begin="00:44:41.740" end="00:44:48.280">...mobile applications proxies local to the database and then using as your mobile</p>
+      <p begin="00:44:48.280" end="00:44:54.660">apps you can either writes about that back-end or nodal...back-end and then that's how that works.</p>
+      <p begin="00:44:54.660" end="00:44:57.550">I...applications we see lots and lots and lots of kind of I had</p>
+      <p begin="00:44:57.550" end="00:45:03.400">to use especially when we hand out things like ruby pies and</p>
+      <p begin="00:45:03.400" end="00:45:07.790">...you windows we see lots more people kind of writing these kind of applications</p>
+      <p begin="00:45:07.790" end="00:45:12.270">...what we've seen a lot of is when we started out with</p>
+      <p begin="00:45:12.270" end="00:45:16.880">a lot of some people would say well okay...try and kind of get my device the</p>
+      <p begin="00:45:16.880" end="00:45:21.550">...to the database again a problem because the device needs</p>
+      <p begin="00:45:21.550" end="00:45:25.700">...key...don't do that what you want to do is have</p>
+      <p begin="00:45:25.700" end="00:45:30.260">devices speak to something that's cheaper and easier and even more</p>
+      <p begin="00:45:30.260" end="00:45:33.530">scaleable okay something like as...events...</p>
+      <p begin="00:45:33.530" end="00:45:37.360">You get the device to...pleasure events hubs double-a messages in</p>
+      <p begin="00:45:37.360" end="00:45:41.580">...there and then you have some kind of a processor to pull out of events</p>
+      <p begin="00:45:41.580" end="00:45:46.160">...and stick it...document db...can be something that you custom</p>
+      <p begin="00:45:46.160" end="00:45:51.080">bold and run on a worker...it can be something alike I've shown here which is apache</p>
+      <p begin="00:45:51.080" end="00:45:54.530">store more measures stream analytics they</p>
+      <p begin="00:45:54.530" end="00:45:59.000">...make to events...for you...the data...do real-time analytics on them if you</p>
+      <p begin="00:45:59.000" end="00:46:03.900">want to do something with that and then push the results and,</p>
+      <p begin="00:46:03.900" end="00:46:07.670">the raw data falls into the as a document the what-you</p>
+      <p begin="00:46:07.670" end="00:46:13.610">main do overtime species imc applications that generate terabytes of data</p>
+      <p begin="00:46:13.610" end="00:46:17.550">By the end-of-the-year you see...bowl has got to and I watering</p>
+      <p begin="00:46:17.550" end="00:46:23.320">really large number so what you want to start doing is you want to...aging out all...so you</p>
+      <p begin="00:46:23.320" end="00:46:27.960">...have a process that will go and find data that's old in document db</p>
+      <p begin="00:46:27.960" end="00:46:32.690">...talk about strategies to do that in a second...you'll have that process</p>
+      <p begin="00:46:32.690" end="00:46:37.440">...out the old data into something like the...data like which was talked about</p>
+      <p begin="00:46:37.440" end="00:46:42.670">on by one was...I can't remember but there's now leisure data</p>
+      <p begin="00:46:42.670" end="00:46:48.340">...you can dump data into and then you can run your analytics jobs on top</p>
+      <p begin="00:46:48.340" end="00:46:50.680">The...like.</p>
+      <p begin="00:46:50.680" end="00:46:54.150">So, some things to kind of look at.</p>
+      <p begin="00:46:54.150" end="00:46:56.780">When designing and ...the document</p>
+      <p begin="00:46:56.780" end="00:47:01.630">db applications so yes there's still some design even though we're...agile kind</p>
+      <p begin="00:47:01.630" end="00:47:07.690">of flexible goals cruel there's still some design that we have to kind of do upfront?</p>
+      <p begin="00:47:07.690" end="00:47:10.440">We generally say subtle...modeling your data</p>
+      <p begin="00:47:12.040" end="00:47:15.310">...right it's easy to kind of remodel united but sort</p>
+      <p begin="00:47:15.310" end="00:47:21.340">...some kind of an idea think about how what are these entities that you're going to work with how you going to work</p>
+      <p begin="00:47:21.340" end="00:47:25.490">with them how they're going to be query together how's your web application</p>
+      <p begin="00:47:25.490" end="00:47:28.700">...mobile application get a query for them use them write them that kind</p>
+      <p begin="00:47:28.700" end="00:47:31.880">of stuff so think about your access patterns...</p>
+      <p begin="00:47:31.880" end="00:47:36.730">size kind of come up with your top five to ten queries ok now use the real</p>
+      <p begin="00:47:36.730" end="00:47:41.820">...that you model this jason and use them in those queries and then what you will</p>
+      <p begin="00:47:41.820" end="00:47:46.710">do is every time you execute any operation against document db you get</p>
+      <p begin="00:47:46.710" end="00:47:48.860">backer question of charge that</p>
+      <p begin="00:47:48.860" end="00:47:54.740">...charges the currency where we all the charge that we applied</p>
+      <p begin="00:47:54.740" end="00:47:59.860">to that to that operation so you'll see like if I do a read I get back</p>
+      <p begin="00:47:59.860" end="00:48:07.170">...you charge of one if I doa...of a large documentum I get back and...you count of one hundred?</p>
+      <p begin="00:48:07.170" end="00:48:09.200">Model...dire your queries.</p>
+      <p begin="00:48:10.260" end="00:48:15.690">Measure what...you charges...will help replying...capacity...help you understand with the you need</p>
+      <p begin="00:48:15.690" end="00:48:20.340">and sone and stwo and sthree or if you need a thousand is threes or a hundred this</p>
+      <p begin="00:48:20.340" end="00:48:24.470">one's or whatever the case maybe that's the only way you will...</p>
+      <p begin="00:48:24.470" end="00:48:28.320">But, then measure those are use constantly that will have metrics...the portal</p>
+      <p begin="00:48:28.320" end="00:48:33.290">...tell you what you'll average or you count was what was your maximum are you count what was your minimum are</p>
+      <p begin="00:48:33.290" end="00:48:38.420">...that kind of some measure that keep track of that and as you see if that</p>
+      <p begin="00:48:38.420" end="00:48:41.520">...too high you may want to go back and look at</p>
+      <p begin="00:48:41.520" end="00:48:49.690">remodeling your dine or changing your index all optimizing a queries on and those kinds of things.</p>
+      <p begin="00:48:49.690" end="00:48:54.950">title modeling with the normalization so the biggest challenge that people coming from a relational</p>
+      <p begin="00:48:54.950" end="00:48:57.840">...into a document...is how do I model</p>
+      <p begin="00:48:57.840" end="00:49:03.640">medina okay because it's very different from how...model my data in</p>
+      <p begin="00:49:03.640" end="00:49:09.600">a relational let's sayI have an application that's dealing with motor vehicles</p>
+      <p begin="00:49:09.600" end="00:49:13.030">in a relational database what I would probably do is take at motor vehicle and</p>
+      <p begin="00:49:13.030" end="00:49:16.530">...into its thousand individual pots and then I probably</p>
+      <p begin="00:49:16.530" end="00:49:21.270">stalls individual parts all over the place and when I wanted to work with...data with</p>
+      <p begin="00:49:21.270" end="00:49:25.590">a vehicle...write a query that would join all the tables together and</p>
+      <p begin="00:49:25.590" end="00:49:28.970">re bold reassemble my vehicle and a</p>
+      <p begin="00:49:28.970" end="00:49:33.410">document advice most of the time what we're doing is saying don't...vehicle down</p>
+      <p begin="00:49:33.410" end="00:49:37.020">is stored as it is as an entity ok?</p>
+      <p begin="00:49:38.260" end="00:49:42.980">Now these are some things.</p>
+      <p begin="00:49:42.980" end="00:49:47.970">...kind of good full so when you're doing one...few relationships ok so here</p>
+      <p begin="00:49:47.970" end="00:49:51.390">I've got a person that has a few contact details.</p>
+      <p begin="00:49:52.830" end="00:49:55.340">The imbedded data changes infrequently</p>
+      <p begin="00:49:55.340" end="00:50:00.860">what I mean by that is if I was linking to I don't know let's say</p>
+      <p begin="00:50:00.860" end="00:50:05.700">the address right in this case and the city was washington and it has</p>
+      <p begin="00:50:05.700" end="00:50:10.530">...right now if that zip code changes often...</p>
+      <p begin="00:50:10.530" end="00:50:15.500">if when you potentially don't want to do that because what you do is you have to</p>
+      <p begin="00:50:15.500" end="00:50:19.870">go to every single document that has washington...code.</p>
+      <p begin="00:50:19.870" end="00:50:24.670">Whereas in a relational database would be all easier because you've got a one recording chains that in one place</p>
+      <p begin="00:50:24.670" end="00:50:30.280">and everybody would know about the change this time think about how many...that</p>
+      <p begin="00:50:30.280" end="00:50:33.400">the value that you d normalizing is being...</p>
+      <p begin="00:50:35.270" end="00:50:38.430">And, largely d normalizing provides for better read performance</p>
+      <p begin="00:50:40.010" end="00:50:45.150">and applications you typically unless you're doing a little bit more complicated</p>
+      <p begin="00:50:45.150" end="00:50:49.350">...you typically...compromise either read performance</p>
+      <p begin="00:50:49.350" end="00:50:55.710">...performance so you-can either model your data for really, really good read performance...model your data for really,</p>
+      <p begin="00:50:55.710" end="00:51:00.580">really good right performance or some kind of compromising between unless you're doing something like secure</p>
+      <p begin="00:51:00.580" end="00:51:05.340">rs where you have two different models representing about but typically...normalize</p>
+      <p begin="00:51:05.340" end="00:51:10.490">model is better for read why because when I'm reading...I...I did one entity and I</p>
+      <p begin="00:51:10.490" end="00:51:17.540">bring it back I don't have to go to fifteen tables reassemble...and bring it back to.</p>
+      <p begin="00:51:17.540" end="00:51:22.100">Sometimes the d normalizing is not provide way to go and you can stolen a document</p>
+      <p begin="00:51:22.100" end="00:51:26.000">advice do referencing the referencing here is a weakling</p>
+      <p begin="00:51:26.000" end="00:51:30.490">...because the server doesn't in full-size links so</p>
+      <p begin="00:51:30.490" end="00:51:35.020">...I've said when I inserts and address document with user id xyz</p>
+      <p begin="00:51:35.020" end="00:51:40.330">the database won't go insight hey there's no user called xyz therefore you can't do this</p>
+      <p begin="00:51:40.330" end="00:51:41.780">...it won't do that</p>
+      <p begin="00:51:41.780" end="00:51:45.540">four-year-olds gladly accepted so you could end up with broken links.</p>
+      <p begin="00:51:45.540" end="00:51:49.670">You can use a triggering document db to kind of gone enforce that if you want...can create a</p>
+      <p begin="00:51:49.670" end="00:51:54.180">...trigger that says when I put in...document my shoulders...</p>
+      <p begin="00:51:54.180" end="00:52:01.050">that matches user id if it isn't reject the address document okay so you could do that in a trigger.</p>
+      <p begin="00:52:01.050" end="00:52:05.070">Data modeling with referencing is usually better when the reference data</p>
+      <p begin="00:52:05.070" end="00:52:09.960">changes frequently so when you want to go in and update that wrote that piece of reference data that's being reference by lots</p>
+      <p begin="00:52:09.960" end="00:52:16.090">of other documents think about referencing your data.</p>
+      <p begin="00:52:16.090" end="00:52:20.650">The data modeling with referencing when you have a heavy...workload</p>
+      <p begin="00:52:20.650" end="00:52:24.220">is often kind of you'll get better performance out of your write workload.</p>
+      <p begin="00:52:25.330" end="00:52:29.750">Right you can also aggregate these things so you can have hybrid models</p>
+      <p begin="00:52:29.750" end="00:52:32.970">with some of your data is normalize some of you...normalized.</p>
+      <p begin="00:52:34.910" end="00:52:39.600">So,...it's...of flick through the slides quite quickly use I want to get to the next part and I'm running out</p>
+      <p begin="00:52:39.600" end="00:52:45.190">of time but, some...somewhat jason data modeling...the slides will be available off</p>
+      <p begin="00:52:45.190" end="00:52:50.400">...as you can go and have a look at those but some of those things over there make...may seem small but</p>
+      <p begin="00:52:50.400" end="00:52:55.920">...very big difference when you model your application?</p>
+      <p begin="00:52:55.920" end="00:53:00.470">Indexing policies again I told you can play around with indexing policies and ranges</p>
+      <p begin="00:53:00.470" end="00:53:05.390">in precision and all that kind of...queries look which are you charges</p>
+      <p begin="00:53:05.390" end="00:53:08.790">modify your index policy do this...agency which are you charges.</p>
+      <p begin="00:53:10.020" end="00:53:15.160">Clearing the things that you can do with query to optimize rights...smaller results</p>
+      <p begin="00:53:15.160" end="00:53:20.010">...limit the use of scan operations okay so if you don't have a range</p>
+      <p begin="00:53:20.010" end="00:53:24.640">...on-the-field don't do a range operation...don't</p>
+      <p begin="00:53:24.640" end="00:53:29.470">...queries that say not so often people say</p>
+      <p begin="00:53:29.470" end="00:53:34.430">selects...from database where gender is not...</p>
+      <p begin="00:53:34.430" end="00:53:36.520">They don't do that.</p>
+      <p begin="00:53:36.520" end="00:53:39.060">Because that results in a scanned rather do</p>
+      <p begin="00:53:39.060" end="00:53:43.510">a slight star from database where gender equals female if you're looking for</p>
+      <p begin="00:53:43.510" end="00:53:48.030">...that's a much more efficient query that will give you the exact same results it</p>
+      <p begin="00:53:48.030" end="00:53:53.530">...sighing where a lot of mile so simple things like that if you have</p>
+      <p begin="00:53:53.530" end="00:53:57.170">...way clauses include other particles.</p>
+      <p begin="00:53:57.170" end="00:54:02.130">All...inductive...db you need to partition for two reasons data</p>
+      <p begin="00:54:02.130" end="00:54:05.780">size because every collection is I need to engage in size today</p>
+      <p begin="00:54:05.780" end="00:54:10.150">and throughput the maximum collection that you can have is two thousand five hundred</p>
+      <p begin="00:54:10.150" end="00:54:14.770">...units per second if you need more than that to serve ten million concurrent</p>
+      <p begin="00:54:14.770" end="00:54:21.490">users okay which we have a customer does you need to...across multiple partitions.</p>
+      <p begin="00:54:21.490" end="00:54:25.640">How do you scale out so there's a couple of different ways the first is pullover</p>
+      <p begin="00:54:25.640" end="00:54:29.310">...start-one petition you...get to some kind of</p>
+      <p begin="00:54:29.310" end="00:54:32.220">...room and then you start spilling over to the next one day?</p>
+      <p begin="00:54:33.700" end="00:54:35.550">...notion of a range.</p>
+      <p begin="00:54:35.550" end="00:54:38.650">So,...for the current period of time</p>
+      <p begin="00:54:38.650" end="00:54:43.090">okay today seven days this month this year and then when</p>
+      <p begin="00:54:43.090" end="00:54:46.660">that period falls over you move to the next one when appeared</p>
+      <p begin="00:54:46.660" end="00:54:52.010">...you move to the next one and eventually you'll in a jobs in pog per jot all</p>
+      <p begin="00:54:53.580" end="00:54:58.100">And, then you also have this notion of a lookup so some kind of look up so I'm</p>
+      <p begin="00:54:58.100" end="00:55:00.690">...by tenant on petitioning by region and</p>
+      <p begin="00:55:00.690" end="00:55:03.780">...by vehicle...number or whatever the case</p>
+      <p begin="00:55:03.780" end="00:55:09.670">maybe I have some kind of a short map that I actually look at let me skip this one because</p>
+      <p begin="00:55:09.670" end="00:55:14.830">I want to show you what we've just recently announced so if you got to</p>
+      <p begin="00:55:14.830" end="00:55:18.530">petition hash says I've got a hundred collections on</p>
+      <p begin="00:55:18.530" end="00:55:21.530">...evenly distribute them all data across collections</p>
+      <p begin="00:55:21.530" end="00:55:26.550">...you some kind of algorithm and that will then go and spread your data across</p>
+      <p begin="00:55:26.550" end="00:55:28.930">...collections for you?</p>
+      <p begin="00:55:28.930" end="00:55:34.350">Skip...so, if you take a look...find out queries this is what I was talking about earlier sometimes data</p>
+      <p begin="00:55:34.350" end="00:55:38.390">may actually exist in multiple create in multiple containers and you need to do a</p>
+      <p begin="00:55:38.390" end="00:55:41.400">...operation now languages like dot</p>
+      <p begin="00:55:41.400" end="00:55:44.610">...allow you to do parallel query execution so I can</p>
+      <p begin="00:55:44.610" end="00:55:48.480">firewall foes three queries in parallel and one operation and asynchronous</p>
+      <p begin="00:55:48.480" end="00:55:51.360">we certain white for the results from each of those to come back to</p>
+      <p begin="00:55:51.360" end="00:55:55.750">...aggregate results and present that to my application.</p>
+      <p begin="00:55:55.750" end="00:56:00.670">Yes,...multiple...to the device but when you web...sitting in the same datacenters</p>
+      <p begin="00:56:00.670" end="00:56:04.820">measure document database its multiple...over sub millisecond</p>
+      <p begin="00:56:04.820" end="00:56:09.790">...network infrastructure it's really not that much of a big deal.</p>
+      <p begin="00:56:09.790" end="00:56:16.670">All right so when you want to design...the three that I've kind of looked up and they each got some pros and</p>
+      <p begin="00:56:16.670" end="00:56:20.040">And, unfortunately there's no one kind of solution that fits</p>
+      <p begin="00:56:20.040" end="00:56:24.340">everybody scenario these are largely the three patterns that we seeing</p>
+      <p begin="00:56:24.340" end="00:56:34.660">customers doing tonight so I'll look up's ranging and hashing okay.</p>
+      <p begin="00:56:34.660" end="00:56:38.770">Partitioning sounds hog and lots of...of come to us and said</p>
+      <p begin="00:56:38.770" end="00:56:43.650">...is hard I throughout a lot of extra code please help.</p>
+      <p begin="00:56:43.650" end="00:56:48.510">So, just yesterday we announced that we...included petition resolves</p>
+      <p begin="00:56:48.510" end="00:56:53.140">...the new...sdk so what you do is your apt talks the</p>
+      <p begin="00:56:53.140" end="00:56:55.250">...the apt to figure out what</p>
+      <p begin="00:56:55.250" end="00:56:59.130">kind of petition resolve or its using so either hash</p>
+      <p begin="00:56:59.130" end="00:57:03.480">...look up a small overall any of those and it...</p>
+      <p begin="00:57:03.480" end="00:57:07.530">Talks to the net or poss that...to the done erased entire and</p>
+      <p begin="00:57:07.530" end="00:57:13.830">sdk figures out which collection you should...and it goes off to that...collection so</p>
+      <p begin="00:57:13.830" end="00:57:18.070">...many collections and we have some customers that have a thousand collections</p>
+      <p begin="00:57:18.070" end="00:57:21.870">very now appear as one logical database of anyone's work to</p>
+      <p begin="00:57:21.870" end="00:57:25.790">...document db before when you're writing a document you tell us which collections</p>
+      <p begin="00:57:25.790" end="00:57:30.050">go put in now you don't you tell us which database to put it in you tell us what</p>
+      <p begin="00:57:30.050" end="00:57:37.680">partition resolve you're using and we...out what collections...than all get it from.</p>
+      <p begin="00:57:42.150" end="00:57:46.350">There's still able to work that you have to do that so we haven't done a little for-you</p>
+      <p begin="00:57:46.350" end="00:57:49.970">...still some work around managing those petitions when you petitions get</p>
+      <p begin="00:57:49.970" end="00:57:54.490">to bagel you want to add an extra ones and you want to shuffle data</p>
+      <p begin="00:57:54.490" end="00:57:59.770">...work that you have to go do their ...looking at what we can do to make that easier for you</p>
+      <p begin="00:57:59.770" end="00:58:06.900">but that's that I will posts all the demos online in fact there</p>
+      <p begin="00:58:06.900" end="00:58:11.850">really are so I'll jump to actually where in a second where they are</p>
+      <p begin="00:58:11.850" end="00:58:16.630">...there...you...document db partitioning all samples in the demos that</p>
+      <p begin="00:58:16.630" end="00:58:21.710">I was going to run are in that folder so I will show you how to go and</p>
+      <p begin="00:58:21.710" end="00:58:23.900">use the bolton hash petition resolve</p>
+      <p begin="00:58:23.900" end="00:58:30.530">...the bolton range petition...the bolton spa level partition resolving?</p>
+      <p begin="00:58:30.530" end="00:58:35.340">And, then we expose...interface called I...resolve...you can go...your...one</p>
+      <p begin="00:58:35.340" end="00:58:40.470">day I wrote...for customer ready that was a combination of hash range and,</p>
+      <p begin="00:58:40.470" end="00:58:45.790">pullover so they have once I...range...so, I have a range</p>
+      <p begin="00:58:45.790" end="00:58:50.710">of things within that I have a hash because I have a number of collections in that range and</p>
+      <p begin="00:58:50.710" end="00:58:55.770">then as does collections flap...over to another one so using</p>
+      <p begin="00:58:55.770" end="00:59:00.360">...resolve a is basically to methods one that says...for read one that</p>
+      <p begin="00:59:00.360" end="00:59:05.180">...create and you go and implement the code that figures out how to do this you can go right</p>
+      <p begin="00:59:05.180" end="00:59:08.180">...ones and in that at the url</p>
+      <p begin="00:59:08.180" end="00:59:13.570">we've there's about another for different ones that we've actually...we're hoping.</p>
+      <p begin="00:59:14.580" end="00:59:18.900">Is that we kind of build-up community of people contributing the</p>
+      <p begin="00:59:18.900" end="00:59:23.650">position resolves so if you...a cool...resolving you want to share it please go put it</p>
+      <p begin="00:59:23.650" end="00:59:29.850">...a get have repository and, shared with other people and what...we see</p>
+      <p begin="00:59:29.850" end="00:59:38.020">more those people we...kind of look to bring it back into the core sdk all that...stuff?</p>
+      <p begin="00:59:38.020" end="00:59:39.560">Ok, so, roadmap time I promise</p>
+      <p begin="00:59:39.560" end="00:59:43.840">you roadmap I have thirty seconds so let me go through roadmap quickly so we</p>
+      <p begin="00:59:43.840" end="00:59:48.680">will public preview in light last year we gi dvs.</p>
+      <p begin="00:59:48.680" end="00:59:50.690">Couple weeks ago and,</p>
+      <p begin="00:59:50.690" end="00:59:55.640">since then we've done deployments every single week...every single week</p>
+      <p begin="00:59:55.640" end="01:00:00.750">...push the deployment we've pushed hundreds of deployments sometimes even more than once a week</p>
+      <p begin="01:00:00.750" end="01:00:06.220">and what we've been actually focusing on is making sure that first and foremost the services stable</p>
+      <p begin="01:00:06.220" end="01:00:11.080">and...it scales okay so,</p>
+      <p begin="01:00:11.080" end="01:00:15.480">yes, there are a couple of features that we're short all right but we needed to make sure that the</p>
+      <p begin="01:00:15.480" end="01:00:18.900">bison solid that we can bowl these features on top of so we're</p>
+      <p begin="01:00:18.900" end="01:00:23.150">...kind of catching up a little bit and, there's still some foundation</p>
+      <p begin="01:00:23.150" end="01:00:27.750">work we're doing and we have a whole bunch of features kind of queued up and the sues</p>
+      <p begin="01:00:27.750" end="01:00:32.610">where we feel comfortable those features should role really quickly?</p>
+      <p begin="01:00:32.610" end="01:00:36.240">So, showtime future in the next.</p>
+      <p begin="01:00:36.240" end="01:00:36.610">I want</p>
+      <p begin="01:00:36.610" end="01:00:42.380">...too much in the next weeks we should be able to see name based routing</p>
+      <p begin="01:00:42.380" end="01:00:47.620">okay so people have told us that...like self links self links when you</p>
+      <p begin="01:00:47.620" end="01:00:52.560">...the...internal your eyes so every resources a has a as a</p>
+      <p begin="01:00:52.560" end="01:00:56.990">...it when you create a document we create this internal thing called</p>
+      <p begin="01:00:56.990" end="01:01:01.750">the resource id which is unreadable...</p>
+      <p begin="01:01:01.750" end="01:01:04.180">You don't know what it is so, you know,</p>
+      <p begin="01:01:04.180" end="01:01:09.040">you document bites id you don't necessarily know what...resource ideas in order to go</p>
+      <p begin="01:01:09.040" end="01:01:13.380">...read the document what you gotta go do is you gotta go query for it bring it back get sell</p>
+      <p begin="01:01:13.380" end="01:01:16.590">...can then use...are applying so what</p>
+      <p begin="01:01:16.590" end="01:01:20.450">word bringing out fairly shortly is concept of nine based routing</p>
+      <p begin="01:01:20.450" end="01:01:24.720">name base being the id that you've given us...you create a document</p>
+      <p begin="01:01:24.720" end="01:01:30.770">called my document id you'll be able to get include that inside url</p>
+      <p begin="01:01:30.770" end="01:01:35.090">I have you'll supplied ideas and its instead of just our internal resource</p>
+      <p begin="01:01:35.090" end="01:01:42.110">...which will make we hope a huge difference so, we also be doing range</p>
+      <p begin="01:01:42.110" end="01:01:45.470">indexes for strings so you can do things like starts with ends with contains.</p>
+      <p begin="01:01:46.660" end="01:01:51.200">And, then probably the big one that everybody's writing for is</p>
+      <p begin="01:01:52.590" end="01:01:55.830">...auto by is queued it's in our internal</p>
+      <p begin="01:01:55.830" end="01:01:58.710">taste environment is going through some serious kind of strange</p>
+      <p begin="01:01:58.710" end="01:02:04.050">and tasting and as soon as we feel comfortable vthree features...land and,</p>
+      <p begin="01:02:04.050" end="01:02:10.470">all and hopefully very soon I'm hoping to have...that's the and, we're</p>
+      <p begin="01:02:10.470" end="01:02:17.110">only just getting going we have features planned for ages okay we're only getting going</p>
+      <p begin="01:02:17.110" end="01:02:19.030">...because this is a service it means that</p>
+      <p begin="01:02:19.030" end="01:02:25.820">we can deliver features on a weekly vices if we need to on a daily basis if we have</p>
+      <p begin="01:02:25.820" end="01:02:30.560">Please keep telling us what the features are please on thing we're ignoring you</p>
+      <p begin="01:02:30.560" end="01:02:34.580">...not ignoring you were listening to every single feedback request that comes</p>
+      <p begin="01:02:34.580" end="01:02:38.070">in and we feed them into our planning and we feed them into</p>
+      <p begin="01:02:38.070" end="01:02:41.250">our prioritizing and every single kind of peace</p>
+      <p begin="01:02:41.250" end="01:02:47.060">...feedback...guys give us goes into planning the future of the service so please keep giving</p>
+      <p begin="01:02:47.060" end="01:02:53.400">us that and,...was...point because we are looking to grow</p>
+      <p begin="01:02:53.400" end="01:02:56.680">...team so there's the feedback in the forms so the</p>
+      <p begin="01:02:56.680" end="01:03:00.980">user voice one and the forms if you've got a problem so user voice if you want to feature...</p>
+      <p begin="01:03:00.980" end="01:03:07.130">for forms if you have a problem go posted I personally spend way too much time</p>
+      <p begin="01:03:08.790" end="01:03:10.840">authoring forms.</p>
+      <p begin="01:03:10.840" end="01:03:15.100">And, not responding to other things that I should be doing but that's because I</p>
+      <p begin="01:03:15.100" end="01:03:19.980">feel passionately about helping people kind of you...problems that you've</p>
+      <p begin="01:03:19.980" end="01:03:24.250">gotten using those problems to learn how we can make the service better in the future</p>
+      <p begin="01:03:24.250" end="01:03:29.420">that's a great learning experience for us then the product page in the dachshund tutorials</p>
+      <p begin="01:03:29.420" end="01:03:33.260">...looking for more info and more dachshund tutorials weekly publishing you</p>
+      <p begin="01:03:33.260" end="01:03:37.630">...need tutorials all the time so please going to have a look...and,</p>
+      <p begin="01:03:37.630" end="01:03:41.520">use the feedback if you if you like the document tells you like the document</p>
+      <p begin="01:03:41.520" end="01:03:46.460">because that gives us an idea of what kind of documents you like if you don't like the documents tells you are</p>
+      <p begin="01:03:46.460" end="01:03:51.880">like intel's why you like it because then we can go and improvement document write.</p>
+      <p begin="01:03:51.880" end="01:03:55.110">In samples there's lots and lots and lots and lots and lots of samples we push</p>
+      <p begin="01:03:55.110" end="01:04:01.750">up all the time ...I have a look at that one then blogging twitter if you want to follow us on</p>
+      <p begin="01:04:01.750" end="01:04:05.560">the blog and on and on twitter that's where we announce kind of cool new things so if you</p>
+      <p begin="01:04:05.560" end="01:04:08.750">...following us...yesterday you would have seen announcement of a petitioning</p>
+      <p begin="01:04:08.750" end="01:04:15.700">and charting support already so now we're a little bit over so,</p>
+      <p begin="01:04:15.700" end="01:04:20.670">do we probably...too much time on the stage doing questions because of run out</p>
+      <p begin="01:04:20.670" end="01:04:25.450">of time so sorry about that for the people watching at home but if you have a question please come</p>
+      <p begin="01:04:25.450" end="01:04:27.410">find me I will be outside</p>
+      <p begin="01:04:28.470" end="01:04:32.470">...so come find me and all happily answer any question that you have?</p>
+
+    </div>
+  </body>
+</tt>

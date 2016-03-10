@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.897</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:08.610" end="00:00:11.750">Hi, my name is manassas and here I have my colleague lynne</p>
+      <p begin="00:00:11.750" end="00:00:15.690">...with me and what we're going to talk today about is vision services</p>
+      <p begin="00:00:15.690" end="00:00:18.320">...just-released as part of project oxford which</p>
+      <p begin="00:00:18.320" end="00:00:23.190">is announced a couple of days ago and what I'm going to talk about today is how you can take</p>
+      <p begin="00:00:23.190" end="00:00:26.470">...beautiful image like the one you're looking at the screen and</p>
+      <p begin="00:00:26.470" end="00:00:33.680">interpret and provide data which is very interesting and you can use it in your applications?</p>
+      <p begin="00:00:33.680" end="00:00:36.620">Just to remind everyone that it's every</p>
+      <p begin="00:00:36.620" end="00:00:42.280">it's that we should evaluate the session...the end.</p>
+      <p begin="00:00:42.280" end="00:00:46.320">The agenda for today I'm just going to briefly talk about what are the challenges and</p>
+      <p begin="00:00:46.320" end="00:00:50.340">why understanding images is very important and then I'm going to show you a</p>
+      <p begin="00:00:50.340" end="00:00:55.300">bunch of demos and then talk about the details of the api the...api summer talk about is</p>
+      <p begin="00:00:55.300" end="00:00:59.180">analyze I made which is basically and image processing service</p>
+      <p begin="00:00:59.180" end="00:01:03.890">which takes an image and gives tells you a lot of interesting information about the second one is</p>
+      <p begin="00:01:03.890" end="00:01:08.180">ocr which takes an image with text and converted into machine</p>
+      <p begin="00:01:08.180" end="00:01:12.520">usable text and the last one is which is one of my favorites which</p>
+      <p begin="00:01:12.520" end="00:01:19.110">is generated thumbnail which is you take an image...smart cropping?</p>
+      <p begin="00:01:19.110" end="00:01:23.130">So, the challenges of a modern app therefore challenges of a modern app the</p>
+      <p begin="00:01:23.130" end="00:01:28.120">first is that the images have become front-and-center of all applications</p>
+      <p begin="00:01:28.120" end="00:01:31.950">and this is very critical in because of the cost</p>
+      <p begin="00:01:31.950" end="00:01:37.790">...the transmission of data has become cheaper and,</p>
+      <p begin="00:01:37.790" end="00:01:43.090">that's the kind of the main reason the second is that most of the images are coming from a</p>
+      <p begin="00:01:43.090" end="00:01:47.730">variety of sources you building...the images are being submitted</p>
+      <p begin="00:01:47.730" end="00:01:51.450">by a third-person and you have to ensure that the images clean it</p>
+      <p begin="00:01:51.450" end="00:01:55.820">is appropriate for others to see the other aspect is you want to know something about</p>
+      <p begin="00:01:55.820" end="00:02:01.060">the image if someone is taking a photograph and...image it'd be good to know some aspects</p>
+      <p begin="00:02:01.060" end="00:02:04.400">...other humans in it other animals and...very</p>
+      <p begin="00:02:04.400" end="00:02:09.190">interesting and then once you have an image how do you presented beautifully how you</p>
+      <p begin="00:02:09.190" end="00:02:14.670">can you take advantage of the features of the image itself and present pres</p>
+      <p begin="00:02:14.670" end="00:02:17.770">...application better the third challenge</p>
+      <p begin="00:02:17.770" end="00:02:22.610">offer modern app is that you want to process instantly so as soon as</p>
+      <p begin="00:02:22.610" end="00:02:28.820">you have your mobile app or you have an app you want to instantly process these images.</p>
+      <p begin="00:02:28.820" end="00:02:33.730">the last is that you as a developer want to focus on your core value proposition</p>
+      <p begin="00:02:33.730" end="00:02:36.740">off of your app and not worry about</p>
+      <p begin="00:02:36.740" end="00:02:44.380">many expensive things of which and image processing algorithm may do.</p>
+      <p begin="00:02:44.380" end="00:02:48.080">So, how do we go to help you so this we</p>
+      <p begin="00:02:48.080" end="00:02:52.360">...microsoft as a research company has been investing in image processing</p>
+      <p begin="00:02:52.360" end="00:02:56.790">...vision and deep learning for many years and this combined with the</p>
+      <p begin="00:02:56.790" end="00:03:00.860">query click...of bing basically in bing...search we get</p>
+      <p begin="00:03:00.860" end="00:03:05.910">a lot of queries and we get a lot of if image results and people click on those results that</p>
+      <p begin="00:03:05.910" end="00:03:09.550">...graph is a huge training data which we can combine that</p>
+      <p begin="00:03:09.550" end="00:03:14.090">microsoft research to provide these services so what we...the services</p>
+      <p begin="00:03:14.090" end="00:03:17.210">...providing today are part of project</p>
+      <p begin="00:03:17.210" end="00:03:22.550">...which I'll talk more about and the across platforms...you can use them from ios</p>
+      <p begin="00:03:22.550" end="00:03:29.410">an android as well and...into the details of all the all of these three services?</p>
+      <p begin="00:03:29.410" end="00:03:31.560">Before I get into the details I just want</p>
+      <p begin="00:03:31.560" end="00:03:36.430">to should talk a little bit about one of our customers so this is one of a launch partners this is</p>
+      <p begin="00:03:36.430" end="00:03:41.310">picket dot me and what they are building is a marketplace where they want to connect people</p>
+      <p begin="00:03:41.310" end="00:03:44.120">...supplying images for with people who media</p>
+      <p begin="00:03:44.120" end="00:03:50.370">images as you can imagine the process thousands of images every day?</p>
+      <p begin="00:03:50.370" end="00:03:54.260">What are the challenges they have the challenges they have is they want to</p>
+      <p begin="00:03:54.260" end="00:03:57.770">build enhance search and browse experience for that they want to</p>
+      <p begin="00:03:57.770" end="00:04:04.220">understand the metadata which is in the image the second is that...the only choose appropriate</p>
+      <p begin="00:04:04.220" end="00:04:08.870">colors so that the butte this can beatified the...if the haven't image if they could if they knew</p>
+      <p begin="00:04:08.870" end="00:04:13.510">what the colors to show on the on the side or when the images loading which is the</p>
+      <p begin="00:04:13.510" end="00:04:18.370">right color to show in the background darby great and most importantly one of the reasons</p>
+      <p begin="00:04:18.370" end="00:04:22.720">they're using as is the ad when images a submitted they want to make sure that people</p>
+      <p begin="00:04:22.720" end="00:04:28.990">...us submitting anything in appropriate and they want to filter them out there's another and,</p>
+      <p begin="00:04:28.990" end="00:04:33.950">I'm going to show how we're going we're helping...me and all of this cases another customer</p>
+      <p begin="00:04:33.950" end="00:04:37.550">scenarios a very famous sports team...are working with</p>
+      <p begin="00:04:37.550" end="00:04:42.450">what they're doing is they want france to upload images in real-time and they want</p>
+      <p begin="00:04:42.450" end="00:04:46.110">to put it on facebook...on...on their side and</p>
+      <p begin="00:04:46.110" end="00:04:50.640">the what they want to do is they want to make sure that none of the images which are submitted</p>
+      <p begin="00:04:50.640" end="00:04:54.570">...would it wouldn't be appropriate for others to see</p>
+      <p begin="00:04:54.570" end="00:04:58.400">and that and that's the reason they're working with us</p>
+      <p begin="00:04:58.400" end="00:05:03.300">...dual-use...service of the company is a very famous wildlife company</p>
+      <p begin="00:05:03.300" end="00:05:07.460">they're building a wildlife app and for them it's very important when they get</p>
+      <p begin="00:05:07.460" end="00:05:12.430">images is that they want images with knowing the on a separate images that have humans with no</p>
+      <p begin="00:05:12.430" end="00:05:17.860">him animals especially so they want to keep all the animals...separately and then human</p>
+      <p begin="00:05:17.860" end="00:05:24.910">...separately and that for them is very and a very important aspect?</p>
+      <p begin="00:05:24.910" end="00:05:38.310">this would be a good time I think to show a demo to show our services.</p>
+      <p begin="00:05:38.310" end="00:05:42.300">So, this is a demo of our service so, for example,</p>
+      <p begin="00:05:42.300" end="00:05:47.060">if you had an image or let's start with the image whichever showing you earlier of the person</p>
+      <p begin="00:05:47.060" end="00:05:52.300">swimming so,what would we do is like we look at this image and a lot of</p>
+      <p begin="00:05:52.300" end="00:05:58.350">interesting things about it one of the things would be what this images in this case we identify that it's</p>
+      <p begin="00:05:58.350" end="00:06:04.380">neither clip art and online drawing which means it's a photograph and this is also very useful</p>
+      <p begin="00:06:04.380" end="00:06:09.400">the lot-of graphic sites which want to distinguishfor actual photographs from</p>
+      <p begin="00:06:09.400" end="00:06:14.990">non photographs another aspect is whether it's black-and-white or has a particular</p>
+      <p begin="00:06:14.990" end="00:06:20.420">color in it whether it's adult a racy I'll talk more in detail about what is addled</p>
+      <p begin="00:06:20.420" end="00:06:23.940">...racy later on?</p>
+      <p begin="00:06:23.940" end="00:06:28.700">And, then the other aspect is categories so in this case it recognizes that this images about a person</p>
+      <p begin="00:06:28.700" end="00:06:30.190">swimming.</p>
+      <p begin="00:06:30.190" end="00:06:33.860">We also recognize that zs there's one person in this image</p>
+      <p begin="00:06:33.860" end="00:06:36.010">...mail and,</p>
+      <p begin="00:06:36.010" end="00:06:39.880">we try to estimate is...and I'll talk more about it there's lot of talk about this</p>
+      <p begin="00:06:39.880" end="00:06:44.790">...in the internet a about this particular feature...</p>
+      <p begin="00:06:44.790" end="00:06:50.270">the colors dominant colors...dominant colors means what is the most important cullen this image and accent</p>
+      <p begin="00:06:50.270" end="00:06:54.160">...what is a contrasting color let's take this photograph of the new york</p>
+      <p begin="00:06:54.160" end="00:06:58.060">...in this case we recognize that this image is about buildings it's about</p>
+      <p begin="00:06:58.060" end="00:07:03.910">city and the...outdoor city and it's obviously a black-and-white image so</p>
+      <p begin="00:07:03.910" end="00:07:08.320">the colors are not very interesting and also...no people in it.</p>
+      <p begin="00:07:08.320" end="00:07:09.330">Let's take</p>
+      <p begin="00:07:09.330" end="00:07:13.890">another image this flower image so in this case</p>
+      <p begin="00:07:13.890" end="00:07:18.270">colors become very interesting so we identify all the dominant colors the most dominant</p>
+      <p begin="00:07:18.270" end="00:07:22.300">colors white here the black is a second-most and green is the third and the</p>
+      <p begin="00:07:22.300" end="00:07:26.170">...dominant color foreground is white and background is y and then</p>
+      <p begin="00:07:26.170" end="00:07:30.360">accent color is the contrasting color so which would want to be the most contrast</p>
+      <p begin="00:07:30.360" end="00:07:35.200">...and that's the pollen in the flout itself you can even go to</p>
+      <p begin="00:07:35.200" end="00:07:38.790">the side right now and even try a personal images so,</p>
+      <p begin="00:07:38.790" end="00:07:43.180">for example, let me.</p>
+      <p begin="00:07:43.180" end="00:07:45.920">...had a vacation to mexico so I</p>
+      <p begin="00:07:45.920" end="00:07:49.620">try I took some photographs over there and this one...the recognizes that it's</p>
+      <p begin="00:07:49.620" end="00:07:55.190">...it's a photograph of ocean and also that there is some stone...which makes</p>
+      <p begin="00:07:55.190" end="00:08:00.230">it very interesting...me being brave enough to hold a</p>
+      <p begin="00:08:00.230" end="00:08:05.630">lion and recognizes my age and my daughter's agedoesn't recognize my</p>
+      <p begin="00:08:05.630" end="00:08:12.370">son's age because he's looking a bit sideways and, it also gives...</p>
+      <p begin="00:08:12.370" end="00:08:20.930">contrasting color for this image which I'll talk more about later on which are the leaves in the picture?</p>
+      <p begin="00:08:20.930" end="00:08:26.240">And, you can if everybody's looking from straight ahead like in this photograph all the faces</p>
+      <p begin="00:08:26.240" end="00:08:30.560">...captured much better in this we can capture everybody's age young</p>
+      <p begin="00:08:30.560" end="00:08:35.410">and old this...a good time to go back to the dec.</p>
+      <p begin="00:08:35.410" end="00:08:40.160">And, let me talk a little bit more about some of these details about this</p>
+      <p begin="00:08:41.450" end="00:08:45.650">okay so we're talking about the first I'll talk about category detection which</p>
+      <p begin="00:08:45.650" end="00:08:48.810">...showing a so you could go to the side and try all of these</p>
+      <p begin="00:08:48.810" end="00:08:53.540">images oregon try and you any of your image and we will be able to recognize you know,</p>
+      <p begin="00:08:53.540" end="00:08:56.940">the categories whether it's ocean or sky or</p>
+      <p begin="00:08:56.940" end="00:09:00.380">the train station or whether it's a food image?</p>
+      <p begin="00:09:00.380" end="00:09:04.070">In general what we have done is we have trained our models using bing</p>
+      <p begin="00:09:04.070" end="00:09:08.630">data on eighty-six categories these are a prototypical categories photograph</p>
+      <p begin="00:09:08.630" end="00:09:12.440">others are interested in categorizing the photographs, for example,</p>
+      <p begin="00:09:12.440" end="00:09:17.090">for object we sub categorize...food and transportation and</p>
+      <p begin="00:09:17.090" end="00:09:21.780">bring animals and within animals cats and birds and dogs and</p>
+      <p begin="00:09:21.780" end="00:09:28.250">for outdoor another top-level...have categories like field</p>
+      <p begin="00:09:28.250" end="00:09:35.240">in ocean city how these and these are all very useful categories?</p>
+      <p begin="00:09:35.240" end="00:09:39.990">And, this same technology is internally used in microsoft for the one</p>
+      <p begin="00:09:39.990" end="00:09:43.000">...search which was recently released the and as the one-price...</p>
+      <p begin="00:09:43.000" end="00:09:47.730">and bing image its image source has been using it for a while and we measure</p>
+      <p begin="00:09:47.730" end="00:09:52.650">...quality on a standard photograph...dataset from mit and</p>
+      <p begin="00:09:52.650" end="00:09:57.240">...on that set...we do pretty well ninety five percent precision and</p>
+      <p begin="00:09:57.240" end="00:10:02.200">seventy-three percent recall what it means is that about three-fourths of the images in that dataset</p>
+      <p begin="00:10:02.200" end="00:10:11.520">we are able to...some category in it and, the position is pretty high.</p>
+      <p begin="00:10:11.520" end="00:10:16.210">So, the that's about category detectionlet me move on</p>
+      <p begin="00:10:16.210" end="00:10:19.750">...a different area.</p>
+      <p begin="00:10:19.750" end="00:10:25.530">What I'll explain this one by showing?</p>
+      <p begin="00:10:25.530" end="00:10:29.580">...bing if you go and type in line you see this beautiful of pictures of</p>
+      <p begin="00:10:29.580" end="00:10:33.900">...and you did a bunch of filter's here and one of the</p>
+      <p begin="00:10:33.900" end="00:10:38.960">filters ...type and you could say that I wanted to see only clip art photographs</p>
+      <p begin="00:10:38.960" end="00:10:43.610">...a...or you wanted to see only the line drawings of</p>
+      <p begin="00:10:43.610" end="00:10:48.360">a line also that there are color filters which</p>
+      <p begin="00:10:48.360" end="00:10:53.290">happens identify which are the colors dominant color of...you could</p>
+      <p begin="00:10:53.290" end="00:11:00.100">...color enriched showed those pictures of...or you could click on black-and-white.</p>
+      <p begin="00:11:00.100" end="00:11:05.210">So, what we're doing is we're exposing all of these things as part of</p>
+      <p begin="00:11:05.210" end="00:11:09.680">this service so-if you...if you if you submitted a picture of just like the one I have on the screen</p>
+      <p begin="00:11:09.680" end="00:11:13.040">you would get this happens to be a clip art and within</p>
+      <p begin="00:11:13.040" end="00:11:18.300">...we also say that is high-quality or...have a rating of from zero to...is know</p>
+      <p begin="00:11:18.300" end="00:11:24.250">...one is ambiguous...is the average...quality and</p>
+      <p begin="00:11:24.250" end="00:11:31.280">high-quality and then this happens to be a line drawing and this happens to be a black-and-white image as well?</p>
+      <p begin="00:11:31.280" end="00:11:32.430">And, these models</p>
+      <p begin="00:11:32.430" end="00:11:36.900">are more recall focused so we don't vid even if</p>
+      <p begin="00:11:36.900" end="00:11:41.730">...are a little bit ambiguous we and at...estimate them to be clip art line drawing and</p>
+      <p begin="00:11:41.730" end="00:11:46.610">black-and-white as I said before this is very useful for...couple of companies are working which they want</p>
+      <p begin="00:11:46.610" end="00:11:52.280">to distinguish photographs from non photographs and in those case it can be very useful.</p>
+      <p begin="00:11:52.280" end="00:11:56.610">This the next topic I...talk about is one of my favorite topics which is accent</p>
+      <p begin="00:11:56.610" end="00:12:01.380">...this is a common problem you have is you have this photograph of a</p>
+      <p begin="00:12:01.380" end="00:12:04.870">gentleman and you want to decide what should be the best contrast color</p>
+      <p begin="00:12:04.870" end="00:12:09.860">for this image and denotes if you are brave enough you would you'd go for of with</p>
+      <p begin="00:12:09.860" end="00:12:14.550">a bright color like a blue or red or most people are very,</p>
+      <p begin="00:12:14.550" end="00:12:18.850">you know, they would over the if you are building...website...typically go the neutral color</p>
+      <p begin="00:12:18.850" end="00:12:23.370">is one of the to bottom colors and would say those are safer colors I would go</p>
+      <p begin="00:12:23.370" end="00:12:29.330">with and this feature we released as part of windows eight and I'm going to show</p>
+      <p begin="00:12:29.330" end="00:12:32.010">...what's in windows eight which will give the inspiration?</p>
+      <p begin="00:12:33.390" end="00:12:35.050">Sofa in windows eight if you</p>
+      <p begin="00:12:35.050" end="00:12:40.760">...if you go to thisthe start screen and you type in a query like</p>
+      <p begin="00:12:40.760" end="00:12:42.570">...swift what you'll get is a</p>
+      <p begin="00:12:42.570" end="00:12:47.810">you got a beautiful hero image of her and followed by her news articles and</p>
+      <p begin="00:12:47.810" end="00:12:53.400">...albums and the color which you want to choose for the background here for the new than</p>
+      <p begin="00:12:53.400" end="00:12:58.710">...iswe is uses the same service and the way we</p>
+      <p begin="00:12:58.710" end="00:13:02.310">chose this color is by looking at which is the most</p>
+      <p begin="00:13:02.310" end="00:13:05.890">...popping color of the image which and which would be which will</p>
+      <p begin="00:13:05.890" end="00:13:10.710">...with the most contrasting color and in this case it happens to be her lipstick so does the</p>
+      <p begin="00:13:10.710" end="00:13:15.200">how lipsticks color widgets been chosen as the accent color and it helps</p>
+      <p begin="00:13:16.360" end="00:13:22.140">the whole screen to look more harmonious and I pleasing so let's take another example to make</p>
+      <p begin="00:13:22.140" end="00:13:26.910">this point more clear this is another query of...beyond</p>
+      <p begin="00:13:26.910" end="00:13:31.830">...you do a query...say and this cut in this case the color which was chosen</p>
+      <p begin="00:13:31.830" end="00:13:35.120">the blue-collar which has been chosen is the most saturated color</p>
+      <p begin="00:13:35.120" end="00:13:39.660">behind in our background and this color helps the screen look</p>
+      <p begin="00:13:39.660" end="00:13:46.280">you know, much more again, my very I pleasing and makes</p>
+      <p begin="00:13:46.280" end="00:13:50.250">...make...makes it flow much better this and this doesn't make the whole</p>
+      <p begin="00:13:50.250" end="00:13:54.990">application look boring otherwise what happens is you just have one color the background</p>
+      <p begin="00:13:54.990" end="00:13:59.820">you choose that consistently just to make this point even more</p>
+      <p begin="00:13:59.820" end="00:14:05.630">...this more complex example where ...reading...has very</p>
+      <p begin="00:14:05.630" end="00:14:12.720">different colors on her in this picture the color we have chosen is the color</p>
+      <p begin="00:14:12.720" end="00:14:17.560">...because that is the most contrasting color and makes the</p>
+      <p begin="00:14:17.560" end="00:14:21.310">screamed, you know, look, harmonious?</p>
+      <p begin="00:14:21.310" end="00:14:27.400">And, also we what we do is we try to avoid skin tone so...we don't use</p>
+      <p begin="00:14:27.400" end="00:14:34.600">skin tone is kind of avoided otherwise again this algorithm...work as well.</p>
+      <p begin="00:14:34.600" end="00:14:37.590">So, that there are two kinds of colors the exposing in this service</p>
+      <p begin="00:14:37.590" end="00:14:41.880">dominant an x and color dominant is very straightforward to understand</p>
+      <p begin="00:14:41.880" end="00:14:46.040">is what we do is we look at which is the most dominant color and we quantized</p>
+      <p begin="00:14:46.040" end="00:14:50.820">into one of the twelve top dominant colors and this is also very useful in especially in</p>
+      <p begin="00:14:50.820" end="00:14:53.500">shopping scenarios if somebody gives you</p>
+      <p begin="00:14:53.500" end="00:14:57.340">...this image of ...shoe and says it's...shoe and you want</p>
+      <p begin="00:14:57.340" end="00:15:02.710">to validate that this can be very useful in those cases and that's typically the cases where we use</p>
+      <p begin="00:15:02.710" end="00:15:08.870">it in bing a accent color as I talked about is the is the is</p>
+      <p begin="00:15:08.870" end="00:15:12.290">in color where we try a we use the get</p>
+      <p begin="00:15:12.290" end="00:15:17.260">...get the most saturated contrasting are popping color of the image and we try to</p>
+      <p begin="00:15:17.260" end="00:15:23.280">...wide skin tone and also if...unable to find any color then we use a default...column?</p>
+      <p begin="00:15:23.280" end="00:15:26.110">And, there are many interesting application once you get use a</p>
+      <p begin="00:15:26.110" end="00:15:30.320">bunch of start using this it's pretty addictive and bing we</p>
+      <p begin="00:15:30.320" end="00:15:35.970">...using it in various places whenever we show images.</p>
+      <p begin="00:15:35.970" end="00:15:39.840">So, for coming back to this example of this gentleman so that accent color which are</p>
+      <p begin="00:15:39.840" end="00:15:43.710">service returns currently is the color of his beard.</p>
+      <p begin="00:15:43.710" end="00:15:48.760">So, that's what was chosen.</p>
+      <p begin="00:15:48.760" end="00:15:52.500">Now I'm going to talk about a very important area which is addled and</p>
+      <p begin="00:15:52.500" end="00:15:53.300">receive detection.</p>
+      <p begin="00:15:54.370" end="00:15:55.190">When I say</p>
+      <p begin="00:15:55.190" end="00:16:01.970">addled what I really mean is pawn and this is and,</p>
+      <p begin="00:16:01.970" end="00:16:06.760">what racy means is these are images which wouldn't be suitable in</p>
+      <p begin="00:16:06.760" end="00:16:10.920">a school environment or it may not be suitable in certain cultures</p>
+      <p begin="00:16:10.920" end="00:16:15.330">...certain markets and you're working it's</p>
+      <p begin="00:16:15.330" end="00:16:18.710">...continuously improve all of these models of because we use it</p>
+      <p begin="00:16:18.710" end="00:16:23.520">and bing if you go to bing and if you choose strict mode you don't see adult</p>
+      <p begin="00:16:23.520" end="00:16:26.880">...not...images if you go to moderate mode you don't see</p>
+      <p begin="00:16:26.880" end="00:16:32.690">...images the...unc addled images?</p>
+      <p begin="00:16:32.690" end="00:16:36.390">So, what we do is as part of this service</p>
+      <p begin="00:16:36.390" end="00:16:41.180">redone you a label which says whether a particular images added or racy and</p>
+      <p begin="00:16:41.180" end="00:16:46.720">these labels...we think are the at the operating point of the...of</p>
+      <p begin="00:16:46.720" end="00:16:51.650">as the mostgives the best use experience but we also give you the actual</p>
+      <p begin="00:16:51.650" end="00:16:55.770">classified score so if you are building models on top of our models</p>
+      <p begin="00:16:55.770" end="00:17:00.630">a meta model you could use this chords and...your own classified on top of our</p>
+      <p begin="00:17:00.630" end="00:17:05.970">classifiers let's go a little bit more into detail about this so?</p>
+      <p begin="00:17:05.970" end="00:17:10.650">The first of all I would emphasize that are models are really robust and they've been</p>
+      <p begin="00:17:10.650" end="00:17:14.980">used in bing with a build with bing training data for many years and they use deep</p>
+      <p begin="00:17:14.980" end="00:17:17.070">neural networks it's very important to</p>
+      <p begin="00:17:17.070" end="00:17:21.780">...with the advantage of using deep...networks like, for example,</p>
+      <p begin="00:17:21.780" end="00:17:25.980">if there's a mother with a baby and a lot of skin and it won't be identified as an</p>
+      <p begin="00:17:25.980" end="00:17:33.400">adult because our dn models of learned that this is not...this is not addled.</p>
+      <p begin="00:17:33.400" end="00:17:38.630">And, also the second important point is that...flexible thresholds, for example,</p>
+      <p begin="00:17:38.630" end="00:17:42.540">there's a default operating point at which this classifier works</p>
+      <p begin="00:17:42.540" end="00:17:46.810">...it any classifier the a lot of false positives.</p>
+      <p begin="00:17:46.810" end="00:17:50.950">But, what you can do is you can say that I really don't want to have any</p>
+      <p begin="00:17:50.950" end="00:17:55.820">at adult documents in my application in that case you can go for the point a higher</p>
+      <p begin="00:17:55.820" end="00:18:00.850">recall point but if you go with...recall point we'll have more false positives and in that case you</p>
+      <p begin="00:18:00.850" end="00:18:06.490">will have to use human...filter them out on the other hand you can say that I just one...I don't</p>
+      <p begin="00:18:06.490" end="00:18:11.630">want to...anybody who is who may not be a of</p>
+      <p begin="00:18:11.630" end="00:18:18.350">like false negatives that in that case you'll end up having some leakage so</p>
+      <p begin="00:18:18.350" end="00:18:22.650">let's talk about this is a very important topics I just want to have one more slide to go into</p>
+      <p begin="00:18:22.650" end="00:18:24.810">details about this, for example, you had an</p>
+      <p begin="00:18:24.810" end="00:18:29.810">application where you at ten thousand images and on average there are two-point-six</p>
+      <p begin="00:18:29.810" end="00:18:34.370">person images adult which is pretty high two hundred sixty images are ten-k?</p>
+      <p begin="00:18:34.370" end="00:18:39.930">And, the simplest way would be you would have some person sitting there</p>
+      <p begin="00:18:39.930" end="00:18:43.820">...an example of the fran...application which I was talking about where fat</p>
+      <p begin="00:18:43.820" end="00:18:48.270">fans uploading images...have somebody sitting and watching all the ten thousand images very</p>
+      <p begin="00:18:48.270" end="00:18:51.080">quickly and trying to identify which</p>
+      <p begin="00:18:51.080" end="00:18:55.880">...but what you could do is you could to use us service and us add a</p>
+      <p begin="00:18:55.880" end="00:18:58.790">higher recall point and we will say that about</p>
+      <p begin="00:18:58.790" end="00:19:03.900">...three hundred fifty five of them...identified as</p>
+      <p begin="00:19:03.900" end="00:19:07.560">an adult and if you the judge who's sitting</p>
+      <p begin="00:19:07.560" end="00:19:12.090">there would focus on these three hundred fifty five and you would catch two hundred sixty two hundred eight out</p>
+      <p begin="00:19:12.090" end="00:19:16.970">of two hundred sixty images right away and you would identify them to be adult and they would be filtered</p>
+      <p begin="00:19:16.970" end="00:19:23.110">out from application obviously...I'm talking all this by just looking at the image</p>
+      <p begin="00:19:23.110" end="00:19:27.940">in most cases you have other context you have context like text like somebody</p>
+      <p begin="00:19:27.940" end="00:19:32.790">has said something about an image or people are typing in comments that helps obviously</p>
+      <p begin="00:19:32.790" end="00:19:37.680">helps you identify addled images then this history typically</p>
+      <p begin="00:19:37.680" end="00:19:41.020">users over using your...many years may not post</p>
+      <p begin="00:19:41.020" end="00:19:46.400">anything offensive and this context which is also important is, you know,</p>
+      <p begin="00:19:46.400" end="00:19:47.480">in some cases they might</p>
+      <p begin="00:19:47.480" end="00:19:53.060">...sudden scenarios people might tend to post more adult images.</p>
+      <p begin="00:19:53.060" end="00:19:58.200">Just to make this wind how do we do this in bing in bing what we do is we use</p>
+      <p begin="00:19:58.200" end="00:20:01.240">the same...the image classifier but we also</p>
+      <p begin="00:20:01.240" end="00:20:04.760">...which images this classifier this</p>
+      <p begin="00:20:04.760" end="00:20:09.110">prior on which page they are so we know the page information we know url information we</p>
+      <p begin="00:20:09.110" end="00:20:13.510">know domain information and that gives us context ofyou know,</p>
+      <p begin="00:20:13.510" end="00:20:18.580">whether a particular images adult in john and then any image which is at the boundary of the</p>
+      <p begin="00:20:18.580" end="00:20:22.820">threshold we use human judges for that and then we combine that with the query</p>
+      <p begin="00:20:22.820" end="00:20:27.540">...users typing the query classified and also how people engaging with this image</p>
+      <p begin="00:20:27.540" end="00:20:32.720">...typically...image people tend to click on it for any query so,</p>
+      <p begin="00:20:32.720" end="00:20:37.330">that the mixes...identify what</p>
+      <p begin="00:20:37.330" end="00:20:43.080">the so the meta point here is that one should if you have other signals besides</p>
+      <p begin="00:20:43.080" end="00:20:47.160">...signals please use them.</p>
+      <p begin="00:20:47.160" end="00:20:50.870">Now the next topic and we'll talk about is face detection so this was the</p>
+      <p begin="00:20:50.870" end="00:20:56.100">original image I showed you at the beginning of the presentation and we</p>
+      <p begin="00:20:56.100" end="00:20:59.910">identify the exact face location so</p>
+      <p begin="00:20:59.910" end="00:21:04.260">we're able to identify that there's a mail-in this is his is approximate</p>
+      <p begin="00:21:04.260" end="00:21:12.160">age and, what is the face rectangle of this image?</p>
+      <p begin="00:21:12.160" end="00:21:12.520">And, this</p>
+      <p begin="00:21:12.520" end="00:21:17.170">...very useful in many scenarios it's a very useful always to know...there are people in it</p>
+      <p begin="00:21:17.170" end="00:21:22.040">...most pictures almost fifty percent of the pictures are about people and if you knew how many people out</p>
+      <p begin="00:21:22.040" end="00:21:29.220">there that...a couple...one person in it you can do many interesting things.</p>
+      <p begin="00:21:29.220" end="00:21:33.190">And,...our face detection algorithm that does it can detect up to</p>
+      <p begin="00:21:33.190" end="00:21:38.130">sixty four people in it and just to make this point even the</p>
+      <p begin="00:21:38.130" end="00:21:43.580">thing there's a university of massachusetts at amherst has this face competition</p>
+      <p begin="00:21:43.580" end="00:21:45.530">of the microsoft dataset called the</p>
+      <p begin="00:21:45.530" end="00:21:51.460">fd db dataset which is which is used tomeasure how good your</p>
+      <p begin="00:21:51.460" end="00:21:56.110">face detection is an microsoft research is number one</p>
+      <p begin="00:21:56.110" end="00:22:00.600">...across all the competitions we have zero false positives on that</p>
+      <p begin="00:22:00.600" end="00:22:05.990">dataset and, recall of eighty-three percent...eighty three percent of those four-eighty party percent</p>
+      <p begin="00:22:05.990" end="00:22:09.620">of those photographs were able to identify faces and,</p>
+      <p begin="00:22:09.620" end="00:22:11.680">we never say something is a face which is</p>
+      <p begin="00:22:11.680" end="00:22:18.020">...office and this is better than the other two big combinators which</p>
+      <p begin="00:22:18.020" end="00:22:22.370">are name here the only two other companies which do face detection the</p>
+      <p begin="00:22:22.370" end="00:22:27.510">way we do okay and then the this and</p>
+      <p begin="00:22:27.510" end="00:22:31.460">...you have a detailed algorithm about-face searching and</p>
+      <p begin="00:22:31.460" end="00:22:37.630">face algorithms I didn't talk about thisbriefly just show you the website so we</p>
+      <p begin="00:22:37.630" end="00:22:42.030">have this project oxford website which is just announce couple of days back and</p>
+      <p begin="00:22:42.030" end="00:22:46.900">it has the face api xyz of complete module dedicated to face so if you</p>
+      <p begin="00:22:46.900" end="00:22:52.000">wanted to find out whetheryou could submit a set of photographs...can say</p>
+      <p begin="00:22:52.000" end="00:22:56.680">...fifty employees in my co you could submit photographs of those employees and then you can</p>
+      <p begin="00:22:56.680" end="00:23:01.230">send an photograph and say is it one of them so there's</p>
+      <p begin="00:23:01.230" end="00:23:04.630">of face verification...face...also you could give to</p>
+      <p begin="00:23:05.900" end="00:23:10.710">...these two people are the same person or not there's a set of speech api</p>
+      <p begin="00:23:10.710" end="00:23:13.110">...convert...speech into text</p>
+      <p begin="00:23:13.110" end="00:23:17.430">...into speech and the vision api is the talk I'm giving and then the lastly</p>
+      <p begin="00:23:17.430" end="00:23:21.470">...language understanding as well so this is the site project</p>
+      <p begin="00:23:21.470" end="00:23:26.210">oxford dot ai and all these demos are free and then there's also tear</p>
+      <p begin="00:23:26.210" end="00:23:31.440">...of free if you have as your subscription you could...could do so,...</p>
+      <p begin="00:23:31.440" end="00:23:37.840">first-year it's free...from the application so let's go back to my</p>
+      <p begin="00:23:37.840" end="00:23:43.600">...and then so, where do we use this so there was a</p>
+      <p begin="00:23:43.600" end="00:23:48.060">lot of talk yesterday if you have you been following the internet a about this</p>
+      <p begin="00:23:48.060" end="00:23:53.700">site which was based how do how old dot net so this vent very wide all once</p>
+      <p begin="00:23:53.700" end="00:23:57.990">...did his demo and this uses the same api</p>
+      <p begin="00:23:57.990" end="00:24:02.840">the face api and in this case if you try to estimate</p>
+      <p begin="00:24:02.840" end="00:24:09.010">the your exact age which is looks...lot of fun and you should all</p>
+      <p begin="00:24:09.010" end="00:24:13.090">...but the real application for an eml developer is with the way we use</p>
+      <p begin="00:24:13.090" end="00:24:18.630">it in bing is use it as a classifier we just put it as a feature to the of</p>
+      <p begin="00:24:18.630" end="00:24:29.120">feature to our model and we know what it helps as is your diaper query like?</p>
+      <p begin="00:24:29.120" end="00:24:32.430">...on...so you in this case you</p>
+      <p begin="00:24:32.430" end="00:24:37.550">want photographs of the younger medina and then what we do is we use this,</p>
+      <p begin="00:24:37.550" end="00:24:41.520">you know, all this photographs what age they are approximate age and</p>
+      <p begin="00:24:41.520" end="00:24:46.090">...it helps us make better relevance results so that's how we use it so it's</p>
+      <p begin="00:24:46.090" end="00:24:49.780">not about giving a precise age of a person but just a</p>
+      <p begin="00:24:49.780" end="00:24:55.100">using intelligently to identify a person is...or older or the</p>
+      <p begin="00:24:55.100" end="00:25:04.570">of one there's one percent in the pitch photograph for their multiple people in the photograph?</p>
+      <p begin="00:25:04.570" end="00:25:06.920">Yeah, and, then the lastly face detection is also</p>
+      <p begin="00:25:06.920" end="00:25:13.740">useful for thumbnail detection and I'll talk more about that later.</p>
+      <p begin="00:25:13.740" end="00:25:18.120">So, this first api...in summary it does</p>
+      <p begin="00:25:18.120" end="00:25:21.750">...detection category detection color image type and</p>
+      <p begin="00:25:21.750" end="00:25:25.580">face and if you have the flexibility also of getting all of</p>
+      <p begin="00:25:25.580" end="00:25:30.870">these features and if you only find some of them interesting you can just pick and choose which features interesting</p>
+      <p begin="00:25:30.870" end="00:25:35.760">to you now I'll walk over to the next topic which is ocr</p>
+      <p begin="00:25:35.760" end="00:25:40.380">...character recognition so one of our launch partners for all siard is art</p>
+      <p begin="00:25:40.380" end="00:25:44.290">...institute of artificial intelligence what they're trying to do is they're</p>
+      <p begin="00:25:44.290" end="00:25:48.570">building a artificial intelligence system which can answer</p>
+      <p begin="00:25:48.570" end="00:25:53.660">...questions for sixth-grade eight-grade and tenth grade eggs science exams</p>
+      <p begin="00:25:53.660" end="00:25:58.560">as in particular and for bad they need to understand example questions they need</p>
+      <p begin="00:25:58.560" end="00:26:04.650">to then explain those...the answers to those questions to their students.</p>
+      <p begin="00:26:04.650" end="00:26:09.430">And, for that the first step would be to actually do be able to read example questions one of the</p>
+      <p begin="00:26:09.430" end="00:26:13.460">challenges of example questions especially eight-grade science exams out</p>
+      <p begin="00:26:13.460" end="00:26:18.260">...of diagrams in eight-grade science exams and then the</p>
+      <p begin="00:26:18.260" end="00:26:23.380">needs to be a way you could interpret these images and extract</p>
+      <p begin="00:26:23.380" end="00:26:32.500">text out of them so let me show you a demo of how we solve this.</p>
+      <p begin="00:26:32.500" end="00:26:38.600">So, if you go to the same demo site we have ocr here so</p>
+      <p begin="00:26:38.600" end="00:26:43.590">what ocr does is obviously takes a image looks at the text on that image and it and it</p>
+      <p begin="00:26:43.590" end="00:26:49.920">converts that into machine usable character stream and if you look at</p>
+      <p begin="00:26:49.920" end="00:26:55.400">the detail what we redone is we are we what...doing here is...oughta detections</p>
+      <p begin="00:26:55.400" end="00:27:00.750">...able to recognize that this is english-language we also able to recognize that this all the taxes</p>
+      <p begin="00:27:00.750" end="00:27:02.190">...on a straight line</p>
+      <p begin="00:27:02.190" end="00:27:06.300">...text angle is zero and then we draw</p>
+      <p begin="00:27:06.300" end="00:27:10.230">bon bounding box on every line and every word so, you know,</p>
+      <p begin="00:27:10.230" end="00:27:12.580">exactly where the word is in the picture?</p>
+      <p begin="00:27:13.660" end="00:27:18.310">And, if you take another photograph like this one here the words</p>
+      <p begin="00:27:18.310" end="00:27:22.850">are a little bit tilted is a two degrees so what happens is the images taken</p>
+      <p begin="00:27:22.850" end="00:27:27.610">it straightened out and then all the text is extracted from it.</p>
+      <p begin="00:27:27.610" end="00:27:31.810">And, all the bounding boxes are given you can also select your</p>
+      <p begin="00:27:31.810" end="00:27:35.000">own image let me try a I could</p>
+      <p begin="00:27:35.000" end="00:27:39.580">tribe personal image as well I have this recipe done by my son so it</p>
+      <p begin="00:27:39.580" end="00:27:43.720">converts what he wrote on his you know,</p>
+      <p begin="00:27:43.720" end="00:27:48.540">he made a recipe for muffin and...it can convert it into text and</p>
+      <p begin="00:27:48.540" end="00:27:54.900">tell me exactly maybe not very useful but I'll show you very useful scenario which</p>
+      <p begin="00:27:54.900" end="00:27:57.710">...institute of artificial intelligence is using</p>
+      <p begin="00:27:57.710" end="00:28:02.110">what they're doing is they're taking this decks and now they know what exactly</p>
+      <p begin="00:28:02.110" end="00:28:06.920">...text in the science diagram and they can also find all the</p>
+      <p begin="00:28:06.920" end="00:28:12.050">...for it so they know exactly what the text is and this helps them</p>
+      <p begin="00:28:12.050" end="00:28:14.080">...what and,</p>
+      <p begin="00:28:14.080" end="00:28:18.140">then they using other features to figure out that this what kind of science diagram this</p>
+      <p begin="00:28:18.140" end="00:28:22.180">...and then the helps them in the obviously they have the</p>
+      <p begin="00:28:22.180" end="00:28:29.180">question also what the science question is and they can help answer the questions.</p>
+      <p begin="00:28:29.180" end="00:28:34.970">So, let's talk a little bit more about ocr.</p>
+      <p begin="00:28:34.970" end="00:28:39.700">So, all cr ...one thing about ocr is it's a very mature</p>
+      <p begin="00:28:39.700" end="00:28:44.550">technology it's being used across microsoft in many products one drive office</p>
+      <p begin="00:28:44.550" end="00:28:49.310">lengths one node bing and microsoft translator the new thing in this services the</p>
+      <p begin="00:28:49.310" end="00:28:53.660">to new things one thing is that this the first-time we have automatically detecting</p>
+      <p begin="00:28:53.660" end="00:28:57.120">a language and the second a so you could provide, you know,</p>
+      <p begin="00:28:57.120" end="00:29:01.640">it's very expensive to have twenty-one libraries on your machine so here it's all in the</p>
+      <p begin="00:29:01.640" end="00:29:06.250">cloud so it's very easy to have this the automatically detection</p>
+      <p begin="00:29:06.250" end="00:29:09.350">service available and the second aspect which is new</p>
+      <p begin="00:29:09.350" end="00:29:13.440">is cross platform the all of micros all of project oxford is</p>
+      <p begin="00:29:13.440" end="00:29:17.810">...cross platform that is if you have an ios app or android app you</p>
+      <p begin="00:29:17.810" end="00:29:21.240">can hit this service and you can take advantage that will siard eeoc</p>
+      <p begin="00:29:21.240" end="00:29:26.270">...library but theas far as functionalities concert the ocr library...ship with windows</p>
+      <p begin="00:29:26.270" end="00:29:31.130">stand is exactly the same its own the only two things which are different is...that library</p>
+      <p begin="00:29:31.130" end="00:29:36.110">works only with windows this with this service will work with any device and also</p>
+      <p begin="00:29:36.110" end="00:29:42.890">it does automatically, automatically detects languages and then we all if the decks</p>
+      <p begin="00:29:42.890" end="00:29:48.050">is stilted then we straighten it so that's and, then we give that information back</p>
+      <p begin="00:29:48.050" end="00:29:52.820">...so because of many times if you wanted to draw bounding boxes on the text which you</p>
+      <p begin="00:29:52.820" end="00:29:57.360">identified and you wanted to put that in the ux this aspect is very useful so</p>
+      <p begin="00:29:57.360" end="00:30:03.000">we if you have rotating imagine anyway we give that information back and then we</p>
+      <p begin="00:30:03.000" end="00:30:11.070">give bounding boxes for every text and every word...sorry every line and every line and every word.</p>
+      <p begin="00:30:11.070" end="00:30:16.400">And, this ...are...limitations one is that...</p>
+      <p begin="00:30:16.400" end="00:30:21.680">text is more than forty degrees then in that case of we don't know more rotation</p>
+      <p begin="00:30:21.680" end="00:30:26.120">then forty degrees and the quality of all seattle we don't publish any office shall pr because it</p>
+      <p begin="00:30:26.120" end="00:30:29.040">...it varies a lot on the type of content</p>
+      <p begin="00:30:29.040" end="00:30:34.770">to have if you have content which is a text focused images it will</p>
+      <p begin="00:30:34.770" end="00:30:39.540">do very well but if you have if you have text focus but if there's lot of course sieve</p>
+      <p begin="00:30:40.580" end="00:30:44.700">...the pr is going to not be as good and,...</p>
+      <p begin="00:30:44.700" end="00:30:49.640">photographs...text is just in the background it is not the dominant aspect the</p>
+      <p begin="00:30:49.640" end="00:30:54.980">false-positive...very different depending on the example also and I have not</p>
+      <p begin="00:30:54.980" end="00:30:59.600">shown you an example...different language so you could also take a language</p>
+      <p begin="00:31:00.650" end="00:31:06.060">I don't speak any of the other languages your chinese french or spanishabout</p>
+      <p begin="00:31:07.160" end="00:31:11.770">...you what here will do it is automatically detecting that is</p>
+      <p begin="00:31:11.770" end="00:31:15.760">chinese and it's able to show the output chinese,</p>
+      <p begin="00:31:15.760" end="00:31:20.700">chinese language and then it tells you that it is in chinese which is</p>
+      <p begin="00:31:20.700" end="00:31:25.620">very useful that itself could be a useful feature.</p>
+      <p begin="00:31:25.620" end="00:31:28.610">And, what we use it in bing I'm from</p>
+      <p begin="00:31:28.610" end="00:31:32.150">being team where we use it in bing is views it actually for</p>
+      <p begin="00:31:32.150" end="00:31:36.650">added detection as well so the topic I was talking about one of the biggest problems is the lot-of</p>
+      <p begin="00:31:36.650" end="00:31:43.180">quotes which are inappropriate so we are able to filter those output by using ocr?</p>
+      <p begin="00:31:43.180" end="00:31:43.870">So, this site in</p>
+      <p begin="00:31:43.870" end="00:31:49.610">...this service is a big say image you can provide a language or</p>
+      <p begin="00:31:49.610" end="00:31:53.550">default is auto-detects and if, you know,...text is a</p>
+      <p begin="00:31:53.550" end="00:31:58.320">...to provide orientation are also and the output is the language that text</p>
+      <p begin="00:31:58.320" end="00:32:03.000">angle and orientation as I said that text angle and orientation is useful</p>
+      <p begin="00:32:03.000" end="00:32:10.010">because you want to you might want to show you might want to draw ux around the words...the text.</p>
+      <p begin="00:32:10.010" end="00:32:15.500">And, then we provide bounding boxes for each a line...every word.</p>
+      <p begin="00:32:15.500" end="00:32:17.610">Ok, let me-let me want to our</p>
+      <p begin="00:32:17.610" end="00:32:23.060">third topic so this is talking about tom...service.</p>
+      <p begin="00:32:23.060" end="00:32:26.110">The...service is a very interesting problem so what happens</p>
+      <p begin="00:32:26.110" end="00:32:30.850">is most images out there are either landscape or portrait</p>
+      <p begin="00:32:30.850" end="00:32:35.230">but whenever there's a thumbnail it's always a squared thumbnail and what happens is you</p>
+      <p begin="00:32:35.230" end="00:32:39.950">take a landscape image or portrait image and then you...into a squared this is a very common</p>
+      <p begin="00:32:39.950" end="00:32:44.980">...which happens in across the many applications and</p>
+      <p begin="00:32:44.980" end="00:32:48.080">thisproblem even becomes much more complex because very</p>
+      <p begin="00:32:48.080" end="00:32:52.790">...you want to put these images on different devices on phone stabbed species</p>
+      <p begin="00:32:52.790" end="00:32:56.250">...the layouts are different and you don't want to store the same</p>
+      <p begin="00:32:56.250" end="00:32:59.400">comunale multiple times for multiple devices</p>
+      <p begin="00:32:59.400" end="00:33:04.210">or multiple scenarios what if there was a service which you took your image and,</p>
+      <p begin="00:33:04.210" end="00:33:07.150">you told them...the service which is the target</p>
+      <p begin="00:33:07.150" end="00:33:12.400">or target devices or tiger target container and it would and you the exact</p>
+      <p begin="00:33:12.400" end="00:33:17.710">right image for that scenario so that's exactly what the service does it takes</p>
+      <p begin="00:33:17.710" end="00:33:22.020">an image and it identifies what is the main object in that</p>
+      <p begin="00:33:22.020" end="00:33:27.190">image and then what we what we identify...grab the image to say this is the</p>
+      <p begin="00:33:27.190" end="00:33:31.970">region of interest it shouldn't be crop and then we re scaled</p>
+      <p begin="00:33:31.970" end="00:33:36.920">image to fit the target dimension this can be again understood bunch better with</p>
+      <p begin="00:33:36.920" end="00:33:42.220">...with the demo so you go back to us site and here have</p>
+      <p begin="00:33:42.220" end="00:33:45.710">...so this is the original image...person standing on top of</p>
+      <p begin="00:33:45.710" end="00:33:50.360">...mountain and what's happening is the original images</p>
+      <p begin="00:33:50.360" end="00:33:52.390">a landscape image and what we're</p>
+      <p begin="00:33:52.390" end="00:33:58.090">trying to do is try to fit this image in either in landscape these three a...the</p>
+      <p begin="00:33:58.090" end="00:34:02.760">...image and the last to...portrait images and obviously...used you can see this a</p>
+      <p begin="00:34:02.760" end="00:34:07.750">very big challenge to put a landscape image into a portrait container and even the</p>
+      <p begin="00:34:07.750" end="00:34:11.910">square container ideally this person should be in the center of the image and</p>
+      <p begin="00:34:11.910" end="00:34:16.540">...that would be the best thing so let...me turn right now this in this demo the smart cropping</p>
+      <p begin="00:34:16.540" end="00:34:21.740">is stand-off so if you don...on our smart cropping what...see is that...person in the</p>
+      <p begin="00:34:21.740" end="00:34:24.290">...images exactly in the middle and</p>
+      <p begin="00:34:24.290" end="00:34:28.860">in the landscape image what works for a</p>
+      <p begin="00:34:28.860" end="00:34:33.200">portrait to the last to portrait containers also pretty...so if you</p>
+      <p begin="00:34:33.200" end="00:34:38.190">don't offer you'll see that things are moving and then</p>
+      <p begin="00:34:38.190" end="00:34:41.930">...able to identify the region of interest let's take another</p>
+      <p begin="00:34:41.930" end="00:34:46.850">example this is a person reading a book in front of a fireplace and you're</p>
+      <p begin="00:34:46.850" end="00:34:50.520">right...smart cropping stoned on and as you can</p>
+      <p begin="00:34:50.520" end="00:34:53.290">see it looks pretty good but if you don</p>
+      <p begin="00:34:53.290" end="00:34:58.730">often smart dropping and just select the center of the imageagain,</p>
+      <p begin="00:34:58.730" end="00:35:03.590">this is a landscape image...work well for portrait but even if you look at the squared which is the most</p>
+      <p begin="00:35:03.590" end="00:35:08.510">popular comunale it doesn't look...good because the full it doesn't know</p>
+      <p begin="00:35:08.510" end="00:35:13.160">that the person is much more important than the fireplace?</p>
+      <p begin="00:35:13.160" end="00:35:18.220">And, the...more examples you can try let me try this let's</p>
+      <p begin="00:35:18.220" end="00:35:22.410">turn off the smart dropping and then try the logo the</p>
+      <p begin="00:35:22.410" end="00:35:25.480">logos very interesting because in logo</p>
+      <p begin="00:35:25.480" end="00:35:28.310">...all the content is important you should never crop</p>
+      <p begin="00:35:28.310" end="00:35:32.600">logo because all the information it's a loss of information if you crop and that's</p>
+      <p begin="00:35:32.600" end="00:35:36.670">why looks horrible here but when you do is when you turn on smarter</p>
+      <p begin="00:35:36.670" end="00:35:41.610">...cropping in this case what you see is what we have done is...instead of cropping the images we</p>
+      <p begin="00:35:41.610" end="00:35:46.810">...images because we know it's this text on the image and therefore you shouldn't cropped</p>
+      <p begin="00:35:46.810" end="00:35:50.630">images actually bad these images and therefore all of them just look</p>
+      <p begin="00:35:50.630" end="00:35:55.740">...scaled to fit even the smallest containers.</p>
+      <p begin="00:35:55.740" end="00:35:57.190">Ok.</p>
+      <p begin="00:35:57.190" end="00:35:58.670">So, let's.</p>
+      <p begin="00:35:58.670" end="00:36:05.450">Go back to the thumbnails service.</p>
+      <p begin="00:36:05.450" end="00:36:05.960">So, yeah,</p>
+      <p begin="00:36:05.960" end="00:36:11.190">so, the demo...showing is that of the original image was a three by two and</p>
+      <p begin="00:36:11.190" end="00:36:16.040">we're trying to fit it into different containers and in most cases</p>
+      <p begin="00:36:16.040" end="00:36:20.980">the thumbnails this-is just a illustration purposes we tried different containers but what</p>
+      <p begin="00:36:20.980" end="00:36:25.260">we're trying to optimize is four-square containers and that's the and</p>
+      <p begin="00:36:25.260" end="00:36:28.680">...thumbnails r squared.</p>
+      <p begin="00:36:28.680" end="00:36:34.180">So, this ...api is a very straightforward api you</p>
+      <p begin="00:36:34.180" end="00:36:39.540">take an image you give the dimensions of the target...you want to put the image and,</p>
+      <p begin="00:36:39.540" end="00:36:44.030">you would all the enable smart...just for you know, it's for fun but you</p>
+      <p begin="00:36:44.030" end="00:36:48.360">...normally cupid through because you one smart cropping and then the output would be</p>
+      <p begin="00:36:48.360" end="00:36:53.760">a thumbnail image which you can then use in the in your thing and we are</p>
+      <p begin="00:36:53.760" end="00:36:57.880">...thinking a lot of enhancements here once we know how much interested</p>
+      <p begin="00:36:57.880" end="00:37:03.280">that is in this kind of api because...this can before that optimized as well?</p>
+      <p begin="00:37:03.280" end="00:37:05.440">So, how can you take advantage of all of</p>
+      <p begin="00:37:05.440" end="00:37:09.400">these services so all of these services are available as restful</p>
+      <p begin="00:37:09.400" end="00:37:14.330">api and we also provide a simple sdk which wraps around</p>
+      <p begin="00:37:14.330" end="00:37:19.080">is restful api and the data that I speak is available for a android</p>
+      <p begin="00:37:19.080" end="00:37:20.770">...dicapta</p>
+      <p begin="00:37:20.770" end="00:37:24.480">...for dot net and the...the...which you can do</p>
+      <p begin="00:37:24.480" end="00:37:29.180">...very says ...if you go to asher you can get a subscription key of</p>
+      <p begin="00:37:29.180" end="00:37:33.230">...is free...nave...to certain number of transactions per month and you can</p>
+      <p begin="00:37:33.230" end="00:37:37.220">make a make write a few lines of code upload your local image and</p>
+      <p begin="00:37:37.220" end="00:37:41.970">...analyzing them and using application the kind of output you will get is what is at the...</p>
+      <p begin="00:37:41.970" end="00:37:46.950">you'll get this kind of output will tell you what kind of image it is all the...it's adult</p>
+      <p begin="00:37:46.950" end="00:37:52.970">...one of the scores for ed what is a category it belongs to and,</p>
+      <p begin="00:37:52.970" end="00:37:54.980">...information</p>
+      <p begin="00:37:54.980" end="00:38:02.140">so it's pretty straightforward to before you to use are service?</p>
+      <p begin="00:38:02.140" end="00:38:04.280">The three key reasons I would say you should tryout</p>
+      <p begin="00:38:04.280" end="00:38:07.680">...service we need we need this technology</p>
+      <p begin="00:38:07.680" end="00:38:10.780">in-house to our many of</p>
+      <p begin="00:38:10.780" end="00:38:15.780">our own microsoft applications especially being emits search and we you re</p>
+      <p begin="00:38:15.780" end="00:38:24.320">...continuously improving all of this all of these features which I talked about today.</p>
+      <p begin="00:38:24.320" end="00:38:29.230">And, because it's all about...service you always get the latest and the best at all times</p>
+      <p begin="00:38:29.230" end="00:38:33.430">and the third reason is that it is available as a cloud services</p>
+      <p begin="00:38:33.430" end="00:38:40.320">very easy to integrate its cross platform and you can use it in any application you want.</p>
+      <p begin="00:38:40.320" end="00:38:43.370">And, I've talked a lot about bing today why,</p>
+      <p begin="00:38:43.370" end="00:38:47.660">you know, being a start part about as and search engine but within microsoft bing is</p>
+      <p begin="00:38:47.660" end="00:38:50.900">being use...a variety of products as</p>
+      <p begin="00:38:50.900" end="00:38:55.720">an intelligent engine its use in office and many of the office new office features of</p>
+      <p begin="00:38:55.720" end="00:39:00.440">being intelligence and them windows and...on I uses a lot of bing xbox</p>
+      <p begin="00:39:00.440" end="00:39:02.150">...and now for the first-time</p>
+      <p begin="00:39:02.150" end="00:39:07.100">get exposing this technology as a service as part of project...oxford</p>
+      <p begin="00:39:07.100" end="00:39:15.740">so you can you get us developer can...direct advantage of this services.</p>
+      <p begin="00:39:15.740" end="00:39:20.680">I'd like to...the call to action for all of you is to go to our website trial website</p>
+      <p begin="00:39:20.680" end="00:39:24.670">outcry out all the demos...only images demos free for anybody to</p>
+      <p begin="00:39:24.670" end="00:39:28.830">...you can just upload images you can upload even...image from</p>
+      <p begin="00:39:28.830" end="00:39:33.310">an internet you can even type any image which you can even typing url if</p>
+      <p begin="00:39:33.310" end="00:39:37.470">...upload your image you can even type...url and,</p>
+      <p begin="00:39:37.470" end="00:39:41.420">the demos...don't store any images there was a lot of talk right now about</p>
+      <p begin="00:39:41.420" end="00:39:49.730">the that the...privacy concerns the none of the images a store and,</p>
+      <p begin="00:39:49.730" end="00:39:51.890">also we had if you're interested in knowing</p>
+      <p begin="00:39:53.610" end="00:39:59.780">what are the one of the other features we have as part of project oxford like speech</p>
+      <p begin="00:39:59.780" end="00:40:03.940">language understanding or face detection there was another session which happened two days</p>
+      <p begin="00:40:03.940" end="00:40:08.310">back you can watch that we have a dedicated boot on the third-floor</p>
+      <p begin="00:40:08.310" end="00:40:13.350">with lot-of exports there if you have more questions and then we have an active forum</p>
+      <p begin="00:40:13.350" end="00:40:18.110">which is which is a lot of people asking questions and also I'll take any questions right</p>
+      <p begin="00:40:18.110" end="00:40:25.540">now if you have...can come forward to the mike and ask questions thank you very much?</p>
+      <p begin="00:40:32.400" end="00:40:36.820">Could use the mike because getting recorded?</p>
+      <p begin="00:40:36.820" end="00:40:41.380">You have list of what's in the pipelining now so, yeah, I can talk about a couple of things so like</p>
+      <p begin="00:40:41.380" end="00:40:45.690">for category detection we are expanding of the number of categories people</p>
+      <p begin="00:40:45.690" end="00:40:50.060">want so it's only eighty-six categories we expanding that</p>
+      <p begin="00:40:50.060" end="00:40:54.590">...and we improve the quality that for...you have many interesting things</p>
+      <p begin="00:40:54.590" end="00:40:58.120">...should you re...image it normally miniature palmdale</p>
+      <p begin="00:40:58.120" end="00:41:05.020">...breezes interesting to have a url so what we could do it...the url of and</p>
+      <p begin="00:41:05.020" end="00:41:09.580">...give you a real-world example do you have something that would recognize a piece of</p>
+      <p begin="00:41:09.580" end="00:41:13.070">an image in an image yes that's the thing we are technology</p>
+      <p begin="00:41:13.070" end="00:41:18.500">...working on and, legion here is...that the</p>
+      <p begin="00:41:18.500" end="00:41:23.370">...that me and we are working on that technology which will hopefully at some later time</p>
+      <p begin="00:41:23.370" end="00:41:31.480">we can talk about that if we can talk about it now one-fifth something about that?</p>
+      <p begin="00:41:31.480" end="00:41:35.200">If that's his project so that's good question moi.</p>
+      <p begin="00:41:36.400" end="00:41:41.600">He's asking the whether you can detect box.</p>
+      <p begin="00:41:41.600" end="00:41:46.370">Given a small piece of an image can you look at other images and say this</p>
+      <p begin="00:41:46.370" end="00:41:53.930">piece is in those images are the technology called a...actually you want</p>
+      <p begin="00:41:53.930" end="00:41:58.330">to detect the...the...the oddly moi.</p>
+      <p begin="00:41:58.330" end="00:42:08.070">Production...</p>
+      <p begin="00:42:08.070" end="00:42:13.160">When...be available...rules example we have a number of customers</p>
+      <p begin="00:42:13.160" end="00:42:25.440">are waiting for that yet and we have yet ...work with you the when we have that</p>
+      <p begin="00:42:25.440" end="00:42:29.750">Because xerox warms to detect when top-secret photographs</p>
+      <p begin="00:42:29.750" end="00:42:33.220">or documents are being printed.</p>
+      <p begin="00:42:33.220" end="00:42:38.260">they want to be able to recognize pieces of images that areprohibited list,</p>
+      <p begin="00:42:38.260" end="00:42:43.890">yeah, exactly and people also want to...the copyright violation that's</p>
+      <p begin="00:42:43.890" end="00:42:48.960">...like if someone as an image which is they</p>
+      <p begin="00:42:48.960" end="00:42:56.710">...because...very...they want to be notified.</p>
+      <p begin="00:42:56.710" end="00:43:02.650">When should check because we are also working on that?</p>
+      <p begin="00:43:02.650" end="00:43:09.310">Brigade you can talk offline every disagree let's ask the question let's talk about.</p>
+      <p begin="00:43:09.310" end="00:43:13.120">Question with regard to the...over...</p>
+      <p begin="00:43:13.120" end="00:43:18.540">say with regard to the optimal imagery ...</p>
+      <p begin="00:43:19.620" end="00:43:21.840">Image resolution so for ocr you</p>
+      <p begin="00:43:21.840" end="00:43:27.000">...that the maximum dimension if you thousand six hundred right here so what</p>
+      <p begin="00:43:27.000" end="00:43:31.220">...other functionality like classifying.</p>
+      <p begin="00:43:31.220" end="00:43:35.600">...you have any kind of maximum them and she's yet that mathematician</p>
+      <p begin="00:43:35.600" end="00:43:39.750">...can...your we just...say some... of</p>
+      <p begin="00:43:39.750" end="00:43:44.410">...and...and believe...is the scale diametrically</p>
+      <p begin="00:43:44.410" end="00:43:51.150">fucked but you have any kind of optimum resolution which would say okay this.</p>
+      <p begin="00:43:51.150" end="00:43:59.690">No, I can do very well on...as well as optimum dimensions so,</p>
+      <p begin="00:43:59.690" end="00:44:05.540">basically they believe there should be off of it nobody high-quality the</p>
+      <p begin="00:44:05.540" end="00:44:13.600">...small but if it's...logical...of...be...the bandwidth.</p>
+      <p begin="00:44:13.600" end="00:44:20.800">...the question response time-code yahoo good...the...</p>
+      <p begin="00:44:20.800" end="00:44:25.790">I have to equation the first one is you also working on providing a</p>
+      <p begin="00:44:25.790" end="00:44:29.360">...a description of the image so we had a you presented the</p>
+      <p begin="00:44:29.360" end="00:44:33.660">category so it gives you the category but, for example, for the woman...a book with</p>
+      <p begin="00:44:33.660" end="00:44:38.510">a fireplace...focusing on maybe providing a woman is reading a book by</p>
+      <p begin="00:44:38.510" end="00:44:43.610">a fireplace text...from microsoft research that...published papers</p>
+      <p begin="00:44:43.610" end="00:44:48.980">...that and if you go to...today we also give you</p>
+      <p begin="00:44:48.980" end="00:44:54.290">...interesting information about an image of and, we have that</p>
+      <p begin="00:44:54.290" end="00:45:00.710">...roadmap recalling that dec insights get insights about the image and.</p>
+      <p begin="00:45:00.710" end="00:45:07.280">Description of...thanks and the second question is about the coping capabilities smart</p>
+      <p begin="00:45:07.280" end="00:45:12.640">cropping is your id to casual solace images so that you could</p>
+      <p begin="00:45:12.640" end="00:45:17.320">...some as some kind of proxy for websites all right so that's what we wanted</p>
+      <p begin="00:45:17.320" end="00:45:22.640">to what we want to do it that vone...there's no reason for you to store the</p>
+      <p begin="00:45:22.640" end="00:45:29.220">of...on your we return the...ideally what we should do...which is...return</p>
+      <p begin="00:45:29.220" end="00:45:34.310">...and then if you're calling from and iphone you would know that iphone</p>
+      <p begin="00:45:34.310" end="00:45:38.890">this is an iphone...high-resolution should give you even a better higher-quality</p>
+      <p begin="00:45:38.890" end="00:45:43.830">...and if you're...from a device which has low-resolution we should</p>
+      <p begin="00:45:43.830" end="00:45:49.440">...and that's how exactly how you that internally within microsoft no-kill you drive like...if</p>
+      <p begin="00:45:49.440" end="00:45:54.400">...such today...iphone the quality of the images are going to better because</p>
+      <p begin="00:45:54.400" end="00:46:00.150">the device...cannot handle the iconic images we don't...so that's an enhancement we can</p>
+      <p begin="00:46:00.150" end="00:46:18.430">do to this service andyou surely...thanks?</p>
+      <p begin="00:46:18.430" end="00:46:21.640">Videos oreos...that's.</p>
+      <p begin="00:46:21.640" end="00:46:24.490">A very good question actually that is one of the best</p>
+      <p begin="00:46:24.490" end="00:46:27.910">...enterprise scenarios security and</p>
+      <p begin="00:46:28.960" end="00:46:34.920">...detection so yes that's in our road map and,</p>
+      <p begin="00:46:34.920" end="00:46:41.470">I...a lot of when I was reading our customers...a lot of people often about</p>
+      <p begin="00:46:41.470" end="00:46:47.850">seen detection and, we have we have made some promises who...bing videos</p>
+      <p begin="00:46:47.850" end="00:46:52.420">...extract all the interesting images in...multiple images to</p>
+      <p begin="00:46:52.420" end="00:46:57.990">...make a story and...show what are the images</p>
+      <p begin="00:46:57.990" end="00:47:03.170">Customers want really is this is...and it's a security camera</p>
+      <p begin="00:47:03.170" end="00:47:06.920">...my house and dorm...me when you see my own</p>
+      <p begin="00:47:06.920" end="00:47:11.250">cash so that those kind of scenarios and, you know,</p>
+      <p begin="00:47:11.250" end="00:47:22.740">we are reacting networking or at least...that area.</p>
+      <p begin="00:47:22.740" end="00:47:27.730">Okay, I'll take any questions offline we go off-camera thank you.</p>
+
+    </div>
+  </body>
+</tt>
