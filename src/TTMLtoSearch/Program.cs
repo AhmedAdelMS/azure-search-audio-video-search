@@ -28,10 +28,13 @@ namespace TTMLtoSearch
             _indexClient = _searchClient.Indexes.GetClient(AzureSearchIndex);
 
             Console.WriteLine("{0}", "Deleting index...\n");
-            if (DeleteIndex())
+            DeleteIndex();
+            
+            Console.WriteLine("{0}", "Creating index...\n");
+            if (CreateIndex() == false)
             {
-                Console.WriteLine("{0}", "Creating index...\n");
-                CreateIndex();
+                Console.ReadLine();
+                return;
             }
 
             Console.WriteLine("{0}", "Uploading video metadata...\n");
@@ -73,7 +76,7 @@ namespace TTMLtoSearch
 
             return true;
         }
-        private static void CreateIndex()
+        private static bool CreateIndex()
         {
             // Create the Azure Search index based on the included schema
             try
@@ -97,7 +100,9 @@ namespace TTMLtoSearch
             catch (Exception ex)
             {
                 Console.WriteLine("Error creating index: {0}\r\n", ex.Message);
+                return false;
             }
+            return true;
 
         }
 
