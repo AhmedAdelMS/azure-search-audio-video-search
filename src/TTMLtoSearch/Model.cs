@@ -15,6 +15,15 @@ namespace TTMLtoSearch
         public string date { get; set; }
         public string url { get; set; }
         public string transcribed_text { get; set; }
-
     }
+
+    public class DataRecord
+    {
+        public string session_title { get; set; }
+        public string tags { get; set; }
+        public string speakers { get; set; }
+        public string date { get; set; }
+        public string url { get; set; }
+    }
+
 }

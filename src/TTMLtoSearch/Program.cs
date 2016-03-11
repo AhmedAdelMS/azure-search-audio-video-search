@@ -1,4 +1,5 @@
-﻿using Microsoft.Azure.Search;
+﻿using CsvHelper;
+using Microsoft.Azure.Search;
 using Microsoft.Azure.Search.Models;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml;
+using System.Linq;
 
 namespace TTMLtoSearch
 {
@@ -121,7 +123,8 @@ namespace TTMLtoSearch
                 // the batch. Depending on your application, you can take compensating actions like delaying and
                 // retrying. For this simple demo, we just log the failed document keys and continue.
                 Console.WriteLine(
-                 "Failed to index some of the documents: {0}",e.Message);
+                 "Failed to index some of the documents: {0}",
+                        String.Join(", ", e.IndexingResults.Where(r => !r.Succeeded).Select(r => r.Key)));
             }
 
             // Wait a while for indexing to complete.
@@ -167,11 +170,8 @@ namespace TTMLtoSearch
                 // the batch. Depending on your application, you can take compensating actions like delaying and
                 // retrying. For this simple demo, we just log the failed document keys and continue.
                 Console.WriteLine(
-                 "Failed to index some of the documents: {0}", e.Message);
-
-                //Console.WriteLine(
-                // "Failed to index some of the documents: {0}",
-                //        String.Join(", ", e.IndexingResults.Where(r => !r.Succeeded).Select(r => r.Key)));
+                 "Failed to index some of the documents: {0}",
+                        String.Join(", ", e.IndexingResults.Where(r => !r.Succeeded).Select(r => r.Key)));
 
 
             }
@@ -201,33 +201,24 @@ namespace TTMLtoSearch
         {
             List<IndexAction> indexOperations = new List<IndexAction>();
 
-            using (OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Directory.GetCurrentDirectory() + ";" + "Extended Properties=\"Text;HDR=No;FMT=Delimited;\""))
+            using (var sr = new StreamReader(@"BuildSessionMetatdata.csv"))
             {
-                cn.Open();
-                using (OleDbCommand cmd = cn.CreateCommand())
+                var reader = new CsvReader(sr);
+                IEnumerable<DataRecord> records = reader.GetRecords<DataRecord>();
+
+                foreach (DataRecord record in records)
                 {
-                    cmd.CommandText = "SELECT * FROM [BuildSessionMetatdata.csv]";
-                    cmd.CommandType = CommandType.Text;
-                    int counter = 0;
-                    using (OleDbDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection))
-                    {
-                        foreach (DbDataRecord record in reader)
-                        {
-                            counter++;
+                    Document doc = new Document();
+                    string title = record.session_title;
+                    string session_id = title.Replace(" ", "_").ToLower();
+                    doc.Add("session_id", ConvertToAlphaNumeric(session_id));
+                    doc.Add("session_title", title);
+                    doc.Add("tags", record.tags);
+                    doc.Add("speakers", record.speakers);
+                    doc.Add("date", Convert.ToDateTime(record.date).ToShortDateString());
+                    doc.Add("url", record.url);
+                    indexOperations.Add(IndexAction.Upload(doc));
 
-                            Document doc = new Document();
-                            string title = record.GetString(0);
-                            string session_id = title.Replace(" ", "_").ToLower();
-                            doc.Add("session_id", ConvertToAlphaNumeric(session_id));
-                            doc.Add("session_title", title);
-                            doc.Add("tags", record.GetValue(1).ToString() == "" ? "" : record.GetString(1));
-                            doc.Add("speakers", record.GetValue(2).ToString() == "" ? "" : record.GetString(2));
-                            doc.Add("date", Convert.ToDateTime(record.GetValue(3)).ToShortDateString());
-                            doc.Add("url", record.GetValue(4).ToString() == "" ? "" : record.GetString(4));
-                            indexOperations.Add(IndexAction.Upload(doc));
-                        }
-
-                    }
                 }
             }
             return indexOperations;
