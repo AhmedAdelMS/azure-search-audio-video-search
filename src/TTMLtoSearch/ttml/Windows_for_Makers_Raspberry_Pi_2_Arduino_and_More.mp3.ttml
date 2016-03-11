@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.926</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:06.100" end="00:00:07.540">Okay.</p>
+      <p begin="00:00:07.540" end="00:00:11.880">What...thank you guys for joining me now it's?</p>
+      <p begin="00:00:11.880" end="00:00:14.450">Late at six thirty.</p>
+      <p begin="00:00:14.450" end="00:00:19.500">It's kind of weird being like the dinnertime entertainment I'm here every day at six thirty and</p>
+      <p begin="00:00:19.500" end="00:00:24.680">ten thirty try the viel tip your server we'll talk about ...tear going to talk about maker</p>
+      <p begin="00:00:24.680" end="00:00:28.980">stuff with coyote I've got a massive array of demos if you came and</p>
+      <p begin="00:00:28.980" end="00:00:33.170">saw like the fervent preparation for all these things hopefully it all</p>
+      <p begin="00:00:33.170" end="00:00:36.560">lance there's an amazing quantity of wires and boards blinking things</p>
+      <p begin="00:00:36.560" end="00:00:41.480">and demos and I'm really excited to be able to share this stuff it's kind of</p>
+      <p begin="00:00:41.480" end="00:00:46.300">a combination of a couple of years of work from our team a lot of people here onsite back and rabin</p>
+      <p begin="00:00:46.300" end="00:00:58.380">have been helping kinda get a lot of this stuff ready so, without further ado let's march forward.</p>
+      <p begin="00:00:58.380" end="00:01:03.050">I'd like to start just by...contextual icing of this whole this whole hardware</p>
+      <p begin="00:01:03.050" end="00:01:08.090">thing I don't how many of you guys kind of grew up as hardware people we just.</p>
+      <p begin="00:01:08.090" end="00:01:13.510">Yeah, so, good chunk of the crowd and the rest I assume software people.</p>
+      <p begin="00:01:13.510" end="00:01:15.800">Ok, there's a bunch of people didn't raise hand so...</p>
+      <p begin="00:01:17.170" end="00:01:23.400">Farmingpainting something like that I was assuming kind of a mix between</p>
+      <p begin="00:01:23.400" end="00:01:26.590">hardware and software I...up as the software guy soI</p>
+      <p begin="00:01:26.590" end="00:01:31.150">like to contextualized where we are in this exciting hardware space back with my experiences</p>
+      <p begin="00:01:31.150" end="00:01:35.600">and software and what I found is there were a few interesting trends that drove people</p>
+      <p begin="00:01:35.600" end="00:01:40.550">to do all this cool software stuff that kind of exploded in</p>
+      <p begin="00:01:40.550" end="00:01:44.780">app stores and application...the first thing is development got really easy</p>
+      <p begin="00:01:44.780" end="00:01:49.610">used to be that to be a software developer maybe, you know, when I was a kid you</p>
+      <p begin="00:01:49.610" end="00:01:53.630">had to be this ninja that really understood the finer details of how</p>
+      <p begin="00:01:53.630" end="00:01:58.530">machines worked in you were able to code in see and assembly and it was just a high</p>
+      <p begin="00:01:58.530" end="00:02:02.270">bar and today it's very simple to write software modern tools are</p>
+      <p begin="00:02:02.270" end="00:02:07.920">awesome the second major trend that is really affected applications</p>
+      <p begin="00:02:09.140" end="00:02:13.180">...a ready market to go use those applications</p>
+      <p begin="00:02:13.180" end="00:02:17.050">and primarily driven by the mobile phone the mobile smart phones has</p>
+      <p begin="00:02:17.050" end="00:02:19.730">...fact that almost everybody particularly here</p>
+      <p begin="00:02:19.730" end="00:02:24.620">north america everybody's got one of these so you've got these sockets better ready to</p>
+      <p begin="00:02:24.620" end="00:02:29.380">sell into and people want to buy these applications because let's face it sometimes you're waiting for</p>
+      <p begin="00:02:29.380" end="00:02:33.960">bussing candy crashes way to kill some time the third one is low</p>
+      <p begin="00:02:33.960" end="00:02:38.830">friction distribution that not only is they're kind of a ready market but as</p>
+      <p begin="00:02:38.830" end="00:02:43.030">a software developer through app stores that market is completely and</p>
+      <p begin="00:02:43.030" end="00:02:46.300">very friction leslie available to me I can,</p>
+      <p begin="00:02:46.300" end="00:02:49.300">you know, pay of feed to a platform vendor usually</p>
+      <p begin="00:02:49.300" end="00:02:54.800">...exchange for that fear will pay I can get my software out anybody who wants?</p>
+      <p begin="00:02:54.800" end="00:02:59.600">And, finally there's this opportunity that I think is a little bit was</p>
+      <p begin="00:02:59.600" end="00:03:04.400">...and then we recognize that as an industry for enduring relationships used to be that when you</p>
+      <p begin="00:03:04.400" end="00:03:09.350">bought software it was kind of release over release activity to buy software license I</p>
+      <p begin="00:03:09.350" end="00:03:13.150">would you go in by piece of software and then, you know,</p>
+      <p begin="00:03:13.150" end="00:03:16.550">when v next came out I would have another conversation with the vendor maybe by that</p>
+      <p begin="00:03:16.550" end="00:03:21.220">...instead it's really changed up such that vendors want to build relationships with</p>
+      <p begin="00:03:21.220" end="00:03:25.410">our customers not just to sell version over version but you know,</p>
+      <p begin="00:03:25.410" end="00:03:29.780">in game purchases of content or to be able to do things like</p>
+      <p begin="00:03:29.780" end="00:03:32.330">hammering my microsoft band and this provides me sort</p>
+      <p begin="00:03:32.330" end="00:03:36.450">of ongoing engagement through some of the analytics...provides about my level</p>
+      <p begin="00:03:36.450" end="00:03:40.950">of physical activities those kinds of things that are provided continuous engagement</p>
+      <p begin="00:03:40.950" end="00:03:46.410">so the way I think about it I think things are just the new apps and the reason</p>
+      <p begin="00:03:46.410" end="00:03:51.150">why we get kind of pumped up about this is where replying the same trends in the hardware</p>
+      <p begin="00:03:51.150" end="00:03:55.790">space guess what hardware developments become really easy thanks to raspberry</p>
+      <p begin="00:03:55.790" end="00:04:00.710">...thanks...we know in particular tools like that ...modular it's like,</p>
+      <p begin="00:04:00.710" end="00:04:05.060">you know, as software developer I grew up doing modular development putting things in,</p>
+      <p begin="00:04:05.060" end="00:04:09.100">you know, first structuring them and functions and trying not to make too much spaghetti and then I</p>
+      <p begin="00:04:09.100" end="00:04:13.590">...classes and things like that harbors kind of the same way I can take a base</p>
+      <p begin="00:04:13.590" end="00:04:18.070">...shields on it I can attach lures to it and it's very modular and all these modules are</p>
+      <p begin="00:04:18.070" end="00:04:22.940">designed to work independently and be aggregated into one solution very easy to do in the</p>
+      <p begin="00:04:22.940" end="00:04:27.800">software tools to build those things are also very easy-to-use there's become a ready market</p>
+      <p begin="00:04:27.800" end="00:04:33.470">inaccessible market if I look at things like being able to go</p>
+      <p begin="00:04:33.470" end="00:04:38.370">andsponsor purchasing some particular piece of hardware that somebody's building like on</p>
+      <p begin="00:04:38.370" end="00:04:43.690">...starter and it's easy for me to get there and I ot is not a scary thing for people to</p>
+      <p begin="00:04:43.690" end="00:04:48.720">biif you look...moderation as one spaces an example people are afraid of going</p>
+      <p begin="00:04:48.720" end="00:04:53.300">...that stuff they're ready to go do it the ready to bring these things into their homes now</p>
+      <p begin="00:04:53.300" end="00:04:57.120">the challenge for all of us in the room I think is I think we've</p>
+      <p begin="00:04:57.120" end="00:05:00.030">won when every new device that somebody</p>
+      <p begin="00:05:00.030" end="00:05:04.530">acquires makes their world incrementally richer today?</p>
+      <p begin="00:05:05.780" end="00:05:08.060">And, I do this myself every new device</p>
+      <p begin="00:05:08.060" end="00:05:12.550">I acquire makes my life sometimes a little more complicated little more fun in totally</p>
+      <p begin="00:05:12.550" end="00:05:16.370">...don't get me wrong I totally cool with it but it gets a little more complicated</p>
+      <p begin="00:05:16.370" end="00:05:21.740">I think crossing the...for us means making it simpler for people</p>
+      <p begin="00:05:21.740" end="00:05:26.610">things like kick starters I mention make distribution super simple to get my product</p>
+      <p begin="00:05:26.610" end="00:05:31.410">out there to market I don't have to go do some deal with major retailers and people who have</p>
+      <p begin="00:05:31.410" end="00:05:35.100">...of customers I can get directly to those customers and</p>
+      <p begin="00:05:35.100" end="00:05:38.400">like software the sale of my hardware gives me</p>
+      <p begin="00:05:38.400" end="00:05:43.020">the opportunity create an enduring relationship with my customer through the data that my</p>
+      <p begin="00:05:43.020" end="00:05:47.890">device generates typically or through the way I want my device interoperate with other devices that might be</p>
+      <p begin="00:05:47.890" end="00:05:53.900">in the neighborhood so those are kind of the trends I thought I just go into a little bit about you know,</p>
+      <p begin="00:05:53.900" end="00:05:59.890">this raspberry...in particular and I have a few up here some of the things I'll be talking about I'll be</p>
+      <p begin="00:05:59.890" end="00:06:04.930">talking aboutgps...quite a bit but you'll hear these terms and I just kinda</p>
+      <p begin="00:06:04.930" end="00:06:07.740">wanted to give you the brief primus if you think about</p>
+      <p begin="00:06:07.740" end="00:06:12.660">...as a as a technology that I can use to drive hardware it's a</p>
+      <p begin="00:06:12.660" end="00:06:17.560">protocol that you might think of like tci express is higher-speed and there</p>
+      <p begin="00:06:17.560" end="00:06:22.890">are fewer of those pins available on a particular board usually than there are I squared</p>
+      <p begin="00:06:22.890" end="00:06:28.190">see pants which are lower speed more available I squared see</p>
+      <p begin="00:06:28.190" end="00:06:31.450">...a protocols actually a little bit more complicated but,</p>
+      <p begin="00:06:31.450" end="00:06:36.130">those are kinda how I will drive hardware in gps ios kind of like gi why it's like</p>
+      <p begin="00:06:36.130" end="00:06:41.060">ours to thirty-two serial port kind of stuff I can just do whatever I want to do over dpi</p>
+      <p begin="00:06:41.060" end="00:06:44.510">on a lot of the demos I'll show today I'll show using</p>
+      <p begin="00:06:44.510" end="00:06:49.160">...because it's kind of the simplest thing to do.</p>
+      <p begin="00:06:49.160" end="00:06:52.890">So, now let's drill into this raspberry pipe word I've got all these</p>
+      <p begin="00:06:52.890" end="00:06:56.560">pins that you see along the right side of the screen and,</p>
+      <p begin="00:06:56.560" end="00:07:00.330">if you look at the labels you'll see that there's a chunks that are our there's a</p>
+      <p begin="00:07:00.330" end="00:07:04.260">chunk that are sp ire gps io and you could tell by the color the</p>
+      <p begin="00:07:04.260" end="00:07:07.860">...and...and the gps audio is in orange and the</p>
+      <p begin="00:07:07.860" end="00:07:12.170">powers and yellow actually the three-point-three wel powers and yellow in the</p>
+      <p begin="00:07:12.170" end="00:07:15.030">...powers and read and,</p>
+      <p begin="00:07:15.030" end="00:07:19.750">just kind of going through this I can see okay that now I'm getting...I can kind of connect things to these...and</p>
+      <p begin="00:07:19.750" end="00:07:24.540">then I can drive these...and I can make some hardware this raspberry pi to board which I'm showing</p>
+      <p begin="00:07:24.540" end="00:07:28.580">so my demos has a number of other interesting things about it too I can</p>
+      <p begin="00:07:28.580" end="00:07:33.630">attaches display to it I can go from that display porter I can go from html</p>
+      <p begin="00:07:33.630" end="00:07:39.360">I can attach a camera adaptor to it supports a network card that I can connect to it's got...</p>
+      <p begin="00:07:39.360" end="00:07:46.000">usb ports and, it's got underneath...says display it's got a space for...so I can put in</p>
+      <p begin="00:07:46.000" end="00:07:51.340">...card and on that...card I can put an operating system that I want to choose to</p>
+      <p begin="00:07:51.340" end="00:07:56.240">So, that...very pi...the other things I hit on the session is often a little bit about our do we know</p>
+      <p begin="00:07:56.240" end="00:08:00.610">...this is are...you know, probably the most popular model...we know and you</p>
+      <p begin="00:08:00.610" end="00:08:04.690">could see some analogues, you know, pins for our pins for dpi opens for</p>
+      <p begin="00:08:04.690" end="00:08:08.810">...if I want to drive things I can...our I can connected to the</p>
+      <p begin="00:08:08.810" end="00:08:14.420">network sometimes people ask what's the difference between raspberry...and</p>
+      <p begin="00:08:14.420" end="00:08:19.250">...do we know why what...use one over the other and the short answer is that raspberry pie you can think of</p>
+      <p begin="00:08:19.250" end="00:08:23.440">as a small computer that has some io capability that's got all those pins that I</p>
+      <p begin="00:08:23.440" end="00:08:28.020">just showed you in that so works really well that way...really optimize</p>
+      <p begin="00:08:28.020" end="00:08:32.370">to work directly with the hardware so there's no operating system intermediate</p>
+      <p begin="00:08:32.370" end="00:08:36.860">...between the software which they call sketch the software you write that runs on that hardware</p>
+      <p begin="00:08:38.770" end="00:08:43.280">and,...and the hardware itself like you're talking directly to the hardware and art we are</p>
+      <p begin="00:08:43.280" end="00:08:48.520">typically has the ability to drive a little bit more our through the pin so you can often drive</p>
+      <p begin="00:08:48.520" end="00:08:52.870">...your hardware through...we know that you might be able to through raspberry pi...the other</p>
+      <p begin="00:08:52.870" end="00:08:56.040">...reply has a microprocessor instead of</p>
+      <p begin="00:08:56.040" end="00:09:01.040">a microcontroller so I can write apps and I can do algorithms and I can do lots of</p>
+      <p begin="00:09:01.040" end="00:09:06.510">cool interesting things using a computer that I might not be able to do using a microcontroller I'll</p>
+      <p begin="00:09:06.510" end="00:09:11.920">talk about a little bit how to mix these two worlds because we think we've hit upon some interesting kind of what we</p>
+      <p begin="00:09:11.920" end="00:09:17.120">call internally the big brain little brain I want a little brain to drive my hardware...big bring to drive my software</p>
+      <p begin="00:09:17.120" end="00:09:19.380">and algorithms.</p>
+      <p begin="00:09:19.380" end="00:09:23.960">So, let's start with a quick demo let me first introduce you to this piece of hardware let me ask</p>
+      <p begin="00:09:23.960" end="00:09:27.440">is I'm doing this how many of you have had the opportunity to go visit</p>
+      <p begin="00:09:27.440" end="00:09:30.040">...hands-on area with some of the raspberry</p>
+      <p begin="00:09:30.040" end="00:09:35.110">pie stuff gap that's awesome good chunk of people.</p>
+      <p begin="00:09:35.110" end="00:09:40.910">...make sure your...almost number four my first audio-visual</p>
+      <p begin="00:09:40.910" end="00:09:44.430">...let's see if I'm successful I am.</p>
+      <p begin="00:09:44.430" end="00:09:47.390">Except for the blurring this.</p>
+      <p begin="00:09:47.390" end="00:09:52.030">There we go so I'm looking at this at this board right here this is the more</p>
+      <p begin="00:09:52.030" end="00:09:56.450">that I'm using and I've got this little bred...attached pay no attention to the circus looking</p>
+      <p begin="00:09:56.450" end="00:10:01.370">blinking thing that's over here that is something that will play with later so this is a raspberry</p>
+      <p begin="00:10:01.370" end="00:10:05.650">pilot very much like the thing we just saw I've got a couple pins connected to this raspberry</p>
+      <p begin="00:10:05.650" end="00:10:08.350">pie as you can see right here driving</p>
+      <p begin="00:10:08.350" end="00:10:11.370">powering ground I've got a I've got an</p>
+      <p begin="00:10:11.370" end="00:10:15.900">...connected to this bread board and I've got a little resistor so that I don't blow up my</p>
+      <p begin="00:10:15.900" end="00:10:20.960">alley and what I want to do with this demo...blink this...the on</p>
+      <p begin="00:10:20.960" end="00:10:34.700">and off so I thought I just kind of walk you through the software that I would write to do that?</p>
+      <p begin="00:10:34.700" end="00:10:39.290">All right so farm to for to on av switches so I'm feeling really good about this.</p>
+      <p begin="00:10:39.290" end="00:10:44.340">...this is harder than it looks sometimes.</p>
+      <p begin="00:10:44.340" end="00:10:46.380">All right so just to</p>
+      <p begin="00:10:46.380" end="00:10:51.300">just kind of prefilter what I'm going to do here is I'm going to set up this by the way is just the universal</p>
+      <p begin="00:10:51.300" end="00:10:56.110">app it's just a windows app this isn't some special crazy like raspberry</p>
+      <p begin="00:10:56.110" end="00:11:02.190">...flavor windows...as a windows app I'm using the</p>
+      <p begin="00:11:02.190" end="00:11:06.820">dpx support that...part of the universal windows platform if I'm trying to</p>
+      <p begin="00:11:06.820" end="00:11:11.700">run this application on a system that doesn't have dpi...it</p>
+      <p begin="00:11:11.700" end="00:11:16.620">will just fail gracefully there's some air tracks in...that will enable to just kind of fail gracefully but this</p>
+      <p begin="00:11:16.620" end="00:11:19.680">app will run like it will load and run if I were to compile run this</p>
+      <p begin="00:11:19.680" end="00:11:25.110">up on my laptop on my phone so, just to be clear this is just a universal windows</p>
+      <p begin="00:11:25.110" end="00:11:31.180">at I just set up a little timer because I want be able to time when I'm</p>
+      <p begin="00:11:31.180" end="00:11:35.340">had the frequency of the flashing of my of my</p>
+      <p begin="00:11:36.640" end="00:11:41.200">And, the interesting code here I can walk through and order interesting code here</p>
+      <p begin="00:11:41.200" end="00:11:47.050">initialize is...just a few lines of code rtp audio...got dot get</p>
+      <p begin="00:11:47.050" end="00:11:51.180">...now what is gps...thing come from if I</p>
+      <p begin="00:11:51.180" end="00:11:56.310">were to if I were to look at the tool tip over this windows dot devices that</p>
+      <p begin="00:11:56.310" end="00:12:00.850">gps ios so this is one of our namespaces this is a windows name space so,</p>
+      <p begin="00:12:00.850" end="00:12:05.130">this is built right into the platform and I'm able to use that I'm able to get there's only one</p>
+      <p begin="00:12:05.130" end="00:12:08.380">...who get defaults going to work there's a couple error</p>
+      <p begin="00:12:08.380" end="00:12:12.930">checks here and then I can open the pin make sure that the</p>
+      <p begin="00:12:12.930" end="00:12:17.760">pin is initialize properly and then I can write a value to that...I can write to that</p>
+      <p begin="00:12:17.760" end="00:12:24.040">pin to get it turn the...dionne I'm using a little little identifier here</p>
+      <p begin="00:12:24.040" end="00:12:28.410">...depend which is simply the number of the gps open that I'm connected</p>
+      <p begin="00:12:28.410" end="00:12:32.690">to...scroll down and show you what that identifiers it's just five</p>
+      <p begin="00:12:32.690" end="00:12:37.370">so on that map that I showed you that showed all the pins if you were to...that map you would</p>
+      <p begin="00:12:37.370" end="00:12:42.140">find dpi open five which is actually something like pin number twenty-eight on the</p>
+      <p begin="00:12:42.140" end="00:12:48.490">board it gets interesting to map sort of physical to virtual pins.</p>
+      <p begin="00:12:48.490" end="00:12:55.080">Couple more things every time the timer...I flip the...on or off so.</p>
+      <p begin="00:12:55.080" end="00:12:58.540">Flipping...just the exercise of writing</p>
+      <p begin="00:12:58.540" end="00:13:03.470">...on or off to that pin and changing the user interface</p>
+      <p begin="00:13:03.470" end="00:13:07.060">to switch on off so I've actually written a little user interface here</p>
+      <p begin="00:13:07.060" end="00:13:15.760">apparently doesn't like the interface that I've written herelong-term bring that up again.</p>
+      <p begin="00:13:15.760" end="00:13:18.800">It'll run right you think.</p>
+      <p begin="00:13:18.800" end="00:13:23.490">...give it a whirl...just it ok so let me do this let me let</p>
+      <p begin="00:13:23.490" end="00:13:28.500">me start running this on the remote machine by the way notice my although I'm on</p>
+      <p begin="00:13:28.500" end="00:13:33.270">a surface three as my dev machine but my debug...sets</p>
+      <p begin="00:13:33.270" end="00:13:38.050">remote machine my remote machine is this raspberry pie up here on the on the table that you</p>
+      <p begin="00:13:38.050" end="00:13:42.670">were just looking at and if I were to go to debug</p>
+      <p begin="00:13:42.670" end="00:13:43.690">...properties.</p>
+      <p begin="00:13:45.070" end="00:13:48.700">And, I can show you the ip address this is just the ip address up here of the</p>
+      <p begin="00:13:48.700" end="00:13:51.450">sport I'm able to debug too it just like I would debug</p>
+      <p begin="00:13:51.450" end="00:13:56.600">...windows system so there's nothing really special I have to do to be able to do that</p>
+      <p begin="00:13:56.600" end="00:14:01.920">if you're using our image forI guess there's no other image to use for the raspberry</p>
+      <p begin="00:14:01.920" end="00:14:05.710">pi so when you use our windows image for the raspberry pi</p>
+      <p begin="00:14:05.710" end="00:14:11.150">it's the remote...already set up for you to go ahead and use so you don't have to do any kind of configuration for</p>
+      <p begin="00:14:11.150" end="00:14:17.370">...debugging is already they're already ready let me go ahead and run this.</p>
+      <p begin="00:14:17.370" end="00:14:25.110">So, you should see the output cooking and meanwhile me see if I can switch over inputs.</p>
+      <p begin="00:14:25.110" end="00:14:26.790">There you go so that's the</p>
+      <p begin="00:14:26.790" end="00:14:30.510">way you're seeing now up on the screen is the output of the html</p>
+      <p begin="00:14:30.510" end="00:14:35.140">...my raspberry...so that is a universal windows application running</p>
+      <p begin="00:14:35.140" end="00:14:40.350">the blinking is coinciding with the blinking that I have here on my on my</p>
+      <p begin="00:14:40.350" end="00:14:45.260">screen which I can switch over and show you sorry I don't have like cool side-by-side or picture and picture</p>
+      <p begin="00:14:45.260" end="00:14:50.170">anything like that so you have to just kind of imagine what that might look like if you closure</p>
+      <p begin="00:14:50.170" end="00:14:54.540">...really tightly...them side-by-side there you go</p>
+      <p begin="00:14:54.540" end="00:15:11.890">...blanket that's kind of the canonical hello world of the hardware world.</p>
+      <p begin="00:15:11.890" end="00:15:15.840">Now another interesting thing I find about hardware one of the other reason</p>
+      <p begin="00:15:15.840" end="00:15:20.440">...steve theory of how the world works this isn't like science or anything or maybe it</p>
+      <p begin="00:15:20.440" end="00:15:26.300">is I don't know depending on if I'm science but this is just my theory and how the world works we use a</p>
+      <p begin="00:15:26.300" end="00:15:31.240">lot of touch-screen especially in our line of work like we're always, you know, touching our computers touching</p>
+      <p begin="00:15:31.240" end="00:15:36.580">our phones that's just kind of how we do things those of you that have kids that are maybe less</p>
+      <p begin="00:15:36.580" end="00:15:42.730">than eighteen-years-old will find that the first thing they do when they go up to a screen is?</p>
+      <p begin="00:15:42.730" end="00:15:47.820">Touches what did we do we like it was like...yell at you like I'm after window</p>
+      <p begin="00:15:47.820" end="00:15:51.310">...touch the screen but people of have</p>
+      <p begin="00:15:51.310" end="00:15:55.360">learn to manipulate physically which is interesting but what I think that touch-screen</p>
+      <p begin="00:15:55.360" end="00:16:00.410">...they're just a...mirage of the real-world they're not</p>
+      <p begin="00:16:00.410" end="00:16:04.600">really the real-world in fact I think humans actually prefer</p>
+      <p begin="00:16:04.600" end="00:16:09.200">tactile experiences they prefer to touch actual things not two-dimensional</p>
+      <p begin="00:16:09.200" end="00:16:13.700">representations of three-dimensional things and it's my belief that this is also one of the</p>
+      <p begin="00:16:13.700" end="00:16:17.370">drivers of what's happening in the maker space today and in the</p>
+      <p begin="00:16:17.370" end="00:16:19.830">hardware space today is giving</p>
+      <p begin="00:16:19.830" end="00:16:24.010">humans the opportunity to physically manipulate their world never mind that</p>
+      <p begin="00:16:24.010" end="00:16:28.820">those physical controls are just connected the bits and bytes just like if they were being painted on a two-dimensional</p>
+      <p begin="00:16:28.820" end="00:16:33.820">screen it's the fact that we can engage with these and visceral physical way makes it more</p>
+      <p begin="00:16:33.820" end="00:16:38.510">...pleasing for us as human beings and just some examples of some of these kinds</p>
+      <p begin="00:16:38.510" end="00:16:44.370">of switching experiences that we like to touch so what</p>
+      <p begin="00:16:44.370" end="00:16:49.660">we've we want to offer is a couple things one is this windows ten</p>
+      <p begin="00:16:49.660" end="00:16:55.000">addition io t core that was released yesterday and,</p>
+      <p begin="00:16:55.000" end="00:16:58.770">combined with visual studio and I've showed you both of those so far ready</p>
+      <p begin="00:16:58.770" end="00:17:01.750">today to be able to bring that into your world</p>
+      <p begin="00:17:01.750" end="00:17:06.580">...making stuff and I hope the way you receive this isn't that we're</p>
+      <p begin="00:17:06.580" end="00:17:10.900">here to say use our stuff instead of some other stuff I think what I'd what I'd</p>
+      <p begin="00:17:10.900" end="00:17:15.240">like you to walk away with is used, you know, tryout our stuff to try</p>
+      <p begin="00:17:15.240" end="00:17:19.280">out the tryout windows and tryout visual studio as well kind of attitude</p>
+      <p begin="00:17:19.280" end="00:17:23.940">your arsenal of tools that you might use to go make things I think...still</p>
+      <p begin="00:17:23.940" end="00:17:28.820">an absolute role to play for other operating systems in the space for other tools in the space for other hardware in</p>
+      <p begin="00:17:28.820" end="00:17:32.470">the space it's an enormous space and I</p>
+      <p begin="00:17:32.470" end="00:17:36.850">...we found some opportunities that I hope you'll agree by the time we get the into this presentation to</p>
+      <p begin="00:17:36.850" end="00:17:43.820">do cool stuff with the platform what it's additive it's not instead of?</p>
+      <p begin="00:17:43.820" end="00:17:46.980">So, many of you have seen these robots.</p>
+      <p begin="00:17:46.980" end="00:17:50.070">I've got one of these robots right here and</p>
+      <p begin="00:17:50.070" end="00:17:53.490">I can even I can even show you these robots on the overhead.</p>
+      <p begin="00:17:54.740" end="00:17:55.230">And, then I've got</p>
+      <p begin="00:17:55.230" end="00:18:00.060">to move on my blinking lights and everything let me see if I can get this guy over the</p>
+      <p begin="00:18:00.060" end="00:18:05.800">robots a bit of a challenge because it's I've managed to tether written several different ways</p>
+      <p begin="00:18:05.800" end="00:18:10.570">so I'm almost certain to break stuff as I go throughout the course</p>
+      <p begin="00:18:10.570" end="00:18:15.700">this presentation.</p>
+      <p begin="00:18:15.700" end="00:18:19.980">So, there...one I've got one of these robots here.</p>
+      <p begin="00:18:19.980" end="00:18:23.220">And, see if a...field.</p>
+      <p begin="00:18:23.220" end="00:18:26.430">There we go for wide-field you kinda see it so,</p>
+      <p begin="00:18:26.430" end="00:18:29.460">what the robot is it's a few laser cut</p>
+      <p begin="00:18:29.460" end="00:18:34.050">wouldn't parts and I've got a raspy...sitting on top that raspberry pi has and</p>
+      <p begin="00:18:34.050" end="00:18:37.560">...card loaded into the front of it as the card has windows ten</p>
+      <p begin="00:18:37.560" end="00:18:43.500">...core I'm connected to the pins on the top of my raspberry...</p>
+      <p begin="00:18:43.500" end="00:18:49.500">to drive a couple motors that can drive the wheels forward or backwards and,</p>
+      <p begin="00:18:49.500" end="00:18:53.760">then I've got kind of some screws and some connectors little ball bearing thing there so</p>
+      <p begin="00:18:53.760" end="00:18:57.950">it kind of runs flat and smooth I've got a little sensor here so that if</p>
+      <p begin="00:18:57.950" end="00:19:00.940">a bumps into something on the side it can stop it knows</p>
+      <p begin="00:19:00.940" end="00:19:05.530">it's bumped into something so that's essentially what you see here cute little robot</p>
+      <p begin="00:19:05.530" end="00:19:09.690">...I've got one that's now up here all plugged in</p>
+      <p begin="00:19:09.690" end="00:19:13.205">...ready to ready to do something so what I'm going to do is I'm going</p>
+      <p begin="00:19:13.205" end="00:19:16.420">to switch back toswitch back to visual studio</p>
+      <p begin="00:19:16.420" end="00:19:32.120">...project that we're working on to be able to manipulate this robot?</p>
+      <p begin="00:19:32.120" end="00:19:37.350">I'll tell ya no matter how the how the demos go the fact that I mastering av switching</p>
+      <p begin="00:19:37.350" end="00:19:39.830">...walk away feeling like a winner honestly?</p>
+      <p begin="00:19:41.430" end="00:19:45.990">All right so assuming I have the correct ip address in here and how do I know if</p>
+      <p begin="00:19:45.990" end="00:19:50.860">I've got the ip address we do have a tool that we've made available as a part of the package</p>
+      <p begin="00:19:50.860" end="00:19:55.700">...download that's called the windows it core watcher so this tool it'll</p>
+      <p begin="00:19:55.700" end="00:20:00.560">install along with the other tools what does it looks for other or look for windows</p>
+      <p begin="00:20:00.560" end="00:20:03.000">it core devices on the network</p>
+      <p begin="00:20:03.000" end="00:20:07.880">so happens that I'm sharing the network with a couple devices couple devices</p>
+      <p begin="00:20:07.880" end="00:20:12.170">up here once the robot when was the blinking device I've already change the default</p>
+      <p begin="00:20:12.170" end="00:20:15.350">passwords so anybody that thought about getting cute wanting to get</p>
+      <p begin="00:20:15.350" end="00:20:20.470">...make them do something different you're going to have to have my password first?</p>
+      <p begin="00:20:20.470" end="00:20:24.890">But, it tells me what the mac addresses what the ip addresses and I can do interesting things like</p>
+      <p begin="00:20:24.890" end="00:20:27.750">I can go to this text robot one which should be the</p>
+      <p begin="00:20:27.750" end="00:20:31.920">guided sitting up right here in front of me and I can also open a web browser interface</p>
+      <p begin="00:20:31.920" end="00:20:38.470">that device and we've given you a just for this release for kind of debugging and,</p>
+      <p begin="00:20:38.470" end="00:20:42.500">purposes of getting familiar with the platform being able to do some things that are difficult to</p>
+      <p begin="00:20:42.500" end="00:20:47.830">do otherwise because we're not quite complete yet you can do some configuration on the device what app is</p>
+      <p begin="00:20:47.830" end="00:20:51.930">it running can I loader unload apps from the device, you know,</p>
+      <p begin="00:20:51.930" end="00:20:56.010">tell me something about what the network situation is on this thing so</p>
+      <p begin="00:20:56.010" end="00:21:00.890">just a handy tool that you can use once you've got one of these windows t windows</p>
+      <p begin="00:21:00.890" end="00:21:06.910">multi-core devices up and running so here I am imap to robot app let me</p>
+      <p begin="00:21:06.910" end="00:21:11.460">we look around here the robot so a couple interesting</p>
+      <p begin="00:21:11.460" end="00:21:16.250">couple interesting things about the robot one is that again it's a universal app is a</p>
+      <p begin="00:21:16.250" end="00:21:20.160">headed universal lap so there's actually some screen output which is why I have the</p>
+      <p begin="00:21:20.160" end="00:21:22.710">html connected on this particular robot</p>
+      <p begin="00:21:22.710" end="00:21:28.180">and I'm using gp io to simply drive the wheels one direction or the other and,</p>
+      <p begin="00:21:28.180" end="00:21:32.550">I won't go through everything but just to show you some of the code that is used to</p>
+      <p begin="00:21:32.550" end="00:21:37.720">initialize the gps opens and some of the code that is used</p>
+      <p begin="00:21:37.720" end="00:21:42.440">to actually write a value...begin the motor to spinning so what I want to do now is I just want to</p>
+      <p begin="00:21:42.440" end="00:21:46.350">deploy this application...set to deploy the...remote machine</p>
+      <p begin="00:21:46.350" end="00:21:57.810">...arm all of that's good let's see if this works will be lovely?</p>
+      <p begin="00:21:57.810" end="00:22:02.140">That's never good sign sometimes it's not a disconcerting simon's never good</p>
+      <p begin="00:22:02.140" end="00:22:13.960">sign in what that's doing this I'm going to look and make sure I've got my ip address right.</p>
+      <p begin="00:22:13.960" end="00:22:18.100">All right that's as I may not have the right ip address going on so let's come back to</p>
+      <p begin="00:22:18.100" end="00:22:20.930">...core watcher that's why this thing is handy.</p>
+      <p begin="00:22:20.930" end="00:22:23.200">Copy the ip address.</p>
+      <p begin="00:22:23.200" end="00:22:31.670">Come back to visual studio.</p>
+      <p begin="00:22:31.670" end="00:22:36.080">Looks like it changed through wow that's disconcerting it changed since</p>
+      <p begin="00:22:36.080" end="00:22:41.200">right before the session when I set it up I don't know why that is maybe that's a bug someone in the room might</p>
+      <p begin="00:22:41.200" end="00:22:46.050">...file bug on that.</p>
+      <p begin="00:22:46.050" end="00:22:49.370">Okay, now it says starting deployment starting and</p>
+      <p begin="00:22:49.370" end="00:22:57.170">well that's starting to switch over now to the output of the robots html port.</p>
+      <p begin="00:22:57.170" end="00:23:01.350">And, there we go let's just kind of a little default app screen that the</p>
+      <p begin="00:23:01.350" end="00:23:11.530">it core produces.</p>
+      <p begin="00:23:11.530" end="00:23:16.360">A iq let's talk after his hard to hear the question up here so here's,</p>
+      <p begin="00:23:16.360" end="00:23:21.660">here's the here's the default screen for the application.</p>
+      <p begin="00:23:21.660" end="00:23:24.860">If it's working correctly I should be able to kind of use this guy to</p>
+      <p begin="00:23:24.860" end="00:23:35.700">drive which is good...see if I can show you back on the back on the elmo.</p>
+      <p begin="00:23:35.700" end="00:23:40.330">And, I'm running over a dot net micro framework board right now I don't mean anything by that it's</p>
+      <p begin="00:23:40.330" end="00:23:45.220">just happens to be where positioned ok so now it's around so what's cool</p>
+      <p begin="00:23:45.220" end="00:23:48.370">...I'm using an xbox controller to drive this thing if I</p>
+      <p begin="00:23:48.370" end="00:23:52.500">had a touch-screen the or mouse those buttons that you saw...the...I could use</p>
+      <p begin="00:23:52.500" end="00:23:57.890">those to manipulate the application as well but I did not plug-in a mouse and,</p>
+      <p begin="00:23:57.890" end="00:24:00.220">that's not a touch-screen turns out but,</p>
+      <p begin="00:24:00.220" end="00:24:04.170">I can use just regular xbox controller to drive this because we've</p>
+      <p begin="00:24:04.170" end="00:24:09.080">this-is just a regular shows up as a regular windows hid joystick that I can use</p>
+      <p begin="00:24:09.080" end="00:24:11.530">...manipulate I didn't really have to writing</p>
+      <p begin="00:24:11.530" end="00:24:16.100">...special coder...to handle the xbox controller just plugged in and,</p>
+      <p begin="00:24:16.100" end="00:24:21.170">... kind of defined what forward and back and side-to-side means so,</p>
+      <p begin="00:24:21.170" end="00:24:25.040">that's pretty neat let-me let me do this I'm going to just...the</p>
+      <p begin="00:24:25.040" end="00:24:31.470">bagger so I detach the...which means I've got the application hopefully still running on this</p>
+      <p begin="00:24:31.470" end="00:24:35.510">device because I want to get at in just a minute so,</p>
+      <p begin="00:24:35.510" end="00:24:39.720">with that application still running here's what I'd like to do I'm just going to change the target</p>
+      <p begin="00:24:39.720" end="00:24:44.700">of this application from armed x eighty-six and I'm going to say I want to</p>
+      <p begin="00:24:44.700" end="00:24:49.120">debug on the local machine instead of on a remote machine now steve you're crazy you</p>
+      <p begin="00:24:49.120" end="00:24:54.120">might say that was a application that was meant for robot not for laptop to run on</p>
+      <p begin="00:24:54.120" end="00:25:00.150">...your mistaken I would say I'm actually going to run it on my machine and let me</p>
+      <p begin="00:25:00.150" end="00:25:03.190">...you weren't looking where you you're,</p>
+      <p begin="00:25:03.190" end="00:25:08.850">you're looking at the other so here we go let me show registered I just changed.</p>
+      <p begin="00:25:08.850" end="00:25:12.900">Target ...x eighty-six and debugged locally so</p>
+      <p begin="00:25:12.900" end="00:25:20.400">with that I'm just going to hit the green arrow and if everything goes well.</p>
+      <p begin="00:25:20.400" end="00:25:24.700">There is so now I've got the same exact application that you saw...the output of the raspberry</p>
+      <p begin="00:25:24.700" end="00:25:28.850">pi robot here on my screen and if</p>
+      <p begin="00:25:28.850" end="00:25:33.890">this works appropriately what I should be able to do is...this other</p>
+      <p begin="00:25:33.890" end="00:25:39.030">xbox controller that's actually connected to my laptop so these robots what they do and</p>
+      <p begin="00:25:39.030" end="00:25:44.500">...when they start-up is a or the app starts up is it looks</p>
+      <p begin="00:25:44.500" end="00:25:48.520">for another application to connect back to so it found this instance of this</p>
+      <p begin="00:25:48.520" end="00:25:53.380">application running on my pc connect back to it and now I can if I switch</p>
+      <p begin="00:25:53.380" end="00:25:57.140">ci messed up switching one-time so now I don't feel like such a winner anymore,</p>
+      <p begin="00:25:57.140" end="00:26:03.290">you know, maybe I'll get my...back...if I switch back to?</p>
+      <p begin="00:26:03.290" end="00:26:07.960">Switch back...now you can see I can drive this thing so it was pretty interesting running the</p>
+      <p begin="00:26:07.960" end="00:26:12.780">exact same copy of the application whether I'm running on this device</p>
+      <p begin="00:26:12.780" end="00:26:15.570">whether running on a laptop and I just kind of change the control</p>
+      <p begin="00:26:15.570" end="00:26:17.870">...instead of driving the motors directly</p>
+      <p begin="00:26:17.870" end="00:26:35.890">my ipc center command over the network to the robot to go ahead and spin the motors.</p>
+      <p begin="00:26:35.890" end="00:26:40.590">All right we kind of looked at the robot.</p>
+      <p begin="00:26:40.590" end="00:26:44.160">...a little bit now about ...thing so,</p>
+      <p begin="00:26:44.160" end="00:26:48.920">typically when we build a thing where, you know, I talked about our do we know we can start with an art we know what the</p>
+      <p begin="00:26:48.920" end="00:26:54.240">really inexpensive to be able to build the thing that drives that drives hardware start with maybe</p>
+      <p begin="00:26:54.240" end="00:26:59.240">a thirty dollars we'll but if I want to do like I want to accelerometer ought to be able to tell, you know,</p>
+      <p begin="00:26:59.240" end="00:27:04.990">when I move and about...three-dimensional space so that's about another thirty bucks and then pardon</p>
+      <p begin="00:27:04.990" end="00:27:07.570">...if I want to do speech recognition...that's,</p>
+      <p begin="00:27:07.570" end="00:27:12.020">you know, it's kinda hard so speech recognition is about fifty bucks you add that then</p>
+      <p begin="00:27:12.020" end="00:27:17.200">you can one of the properties of shields are often made to be stable and you can stack</p>
+      <p begin="00:27:17.200" end="00:27:22.330">these things one on top of the other to be able to do things because they said on...that can</p>
+      <p begin="00:27:22.330" end="00:27:28.080">share that can share io channels and then what if I want some kind of touch-screen</p>
+      <p begin="00:27:28.080" end="00:27:32.860">display with nappy need if I could like tell where I was in space and time and I can</p>
+      <p begin="00:27:32.860" end="00:27:37.700">recognize speech and I can touch that's another city as you see like one as you start to</p>
+      <p begin="00:27:37.700" end="00:27:42.630">actually stack up in physical space and then you also</p>
+      <p begin="00:27:42.630" end="00:27:47.600">start to stack up in economic space it adds up as you add all of</p>
+      <p begin="00:27:47.600" end="00:27:53.430">the shields and then there's a whole bunch of things that you might want to do with one of these devices right you might</p>
+      <p begin="00:27:53.430" end="00:27:56.890">want to camera might want to...to something via bluetooth you might want</p>
+      <p begin="00:27:56.890" end="00:28:01.700">to do sd storage to be able to put stuff on it you might want to connect...network the cellular</p>
+      <p begin="00:28:01.700" end="00:28:06.820">wi-fiyou might need speech detection you might want to have vibration they're all these things that you</p>
+      <p begin="00:28:06.820" end="00:28:10.950">could imagine that small devices tend to do and their shields by the way that</p>
+      <p begin="00:28:10.950" end="00:28:15.250">you all of these things that you could buy you could stack them and, you know, you could have a really cool</p>
+      <p begin="00:28:15.250" end="00:28:19.790">look in device I'm just by stack and all this stuff but sometimes it can become unwieldy</p>
+      <p begin="00:28:19.790" end="00:28:24.480">inexpensive so one of the projects we've been working on...project we internally call project</p>
+      <p begin="00:28:24.480" end="00:28:29.250">margarita which is the universal windows platform bridge to the art we know platform this</p>
+      <p begin="00:28:29.250" end="00:28:34.570">is part of our announcement yesterday with our...we know and it's consistent with the</p>
+      <p begin="00:28:34.570" end="00:28:39.140">other universal windows application bridges that we've made for other platforms it's the</p>
+      <p begin="00:28:39.140" end="00:28:43.750">idea of saying hey wherever you are there's an easy way...to come in and also</p>
+      <p begin="00:28:43.750" end="00:28:51.330">in additive way leverage the capabilities of windows rather than in instead of way?</p>
+      <p begin="00:28:51.330" end="00:28:55.130">And, one of the ways that we thought about doing this is to say,</p>
+      <p begin="00:28:55.130" end="00:28:58.720">you know, we're pretty good at building these phones</p>
+      <p begin="00:28:58.720" end="00:29:03.310">that really high-volume we make a lot of the sm phones in the us anyway</p>
+      <p begin="00:29:03.310" end="00:29:08.140">you can buy I think this is technically a linear six twenty but you can find five twenty</p>
+      <p begin="00:29:08.140" end="00:29:13.620">five thirty six twenty six thirty for about fifty dollars usually with no contract really inexpensive</p>
+      <p begin="00:29:13.620" end="00:29:18.190">and if you think about all the cool thing you get inside of a phone if you think about it not</p>
+      <p begin="00:29:18.190" end="00:29:23.110">as a phone but as a maker device wow all those things on that list I get</p>
+      <p begin="00:29:23.110" end="00:29:27.860">an accelerometer I get a gps I get a big touch-screen get cellular</p>
+      <p begin="00:29:27.860" end="00:29:33.080">I get wi-fi I get bluetooth the list kind of goes on and on of all the cool things that</p>
+      <p begin="00:29:33.080" end="00:29:45.520">I could get if I could find the right ways to connect from like this to a device like...we know.</p>
+      <p begin="00:29:45.520" end="00:29:48.170">So,...start with when I when I</p>
+      <p begin="00:29:48.170" end="00:29:51.580">develop applications for my phone it's cool but, you know,</p>
+      <p begin="00:29:51.580" end="00:29:54.510">my phone is really bad at my phone is really bad</p>
+      <p begin="00:29:54.510" end="00:29:59.440">and driving hardware like I could you tapered we know to the back of my phone or, you know,</p>
+      <p begin="00:29:59.440" end="00:30:03.900">push buttons on it or something like that might be one way to do it it's, you know,</p>
+      <p begin="00:30:03.900" end="00:30:09.980">it's...unwieldy but that's one way I could do it one of the things that we announced here</p>
+      <p begin="00:30:09.980" end="00:30:15.130">build is this remote art we know wiring or remote...remote or do we know</p>
+      <p begin="00:30:15.130" end="00:30:20.000">a allows me to do something like from my phone I can build that app that kind of</p>
+      <p begin="00:30:20.000" end="00:30:23.040">...take a picture with my phone camera and then I can scale it</p>
+      <p begin="00:30:23.040" end="00:30:27.840">...it and do all the things that are storage and computationally intensive and hardware</p>
+      <p begin="00:30:27.840" end="00:30:32.720">intensive and then I can maybe send that over to the art we know to drive</p>
+      <p begin="00:30:32.720" end="00:30:38.040">some kind of some kind of experience and this idea of remote art</p>
+      <p begin="00:30:38.040" end="00:30:42.610">winter was pretty cool wanted to show you a couple of demos actually</p>
+      <p begin="00:30:42.610" end="00:30:52.250">of this thing so let me start let me start here?</p>
+      <p begin="00:30:52.250" end="00:30:54.770">So, now bring this guy on board so</p>
+      <p begin="00:30:54.770" end="00:30:59.030">this thing that kind of looks like frankenstein monster.</p>
+      <p begin="00:30:59.030" end="00:31:03.710">And, in addition to turning on...creator one of the other things that</p>
+      <p begin="00:31:03.710" end="00:31:07.800">it does is it's just a bunch of wires that are plugged into all</p>
+      <p begin="00:31:07.800" end="00:31:11.780">the various pins of an art we know so that I can drive that are do</p>
+      <p begin="00:31:11.780" end="00:31:16.690">we know remotely I just want to do this for demo purposes so what I've got here my setup</p>
+      <p begin="00:31:16.690" end="00:31:21.520">is I've got...know on top of the art we know is a whether shield that knows how to read</p>
+      <p begin="00:31:21.520" end="00:31:26.410">temperature and barometric pressure humidity and that sort of thing and then I've got from all</p>
+      <p begin="00:31:26.410" end="00:31:31.960">the from of io pins I've got a bunch of things that are driving a leads bunch of wires that are...</p>
+      <p begin="00:31:31.960" end="00:31:37.270">leads I've got a little potentially armor here that I can turn I've got a button that I compress and</p>
+      <p begin="00:31:37.270" end="00:31:40.140">then I've got a little little bluetooth shield here</p>
+      <p begin="00:31:40.140" end="00:31:45.570">that I'm using to be able to connect from this device to the world via bluetooth.</p>
+      <p begin="00:31:45.570" end="00:31:54.660">So, let's take a look at a couple things here.</p>
+      <p begin="00:31:54.660" end="00:31:57.200">Someone open up another visual studio project in this</p>
+      <p begin="00:31:58.690" end="00:32:06.290">...screen...I was still doing so good and then I completely fell off the wagon.</p>
+      <p begin="00:32:06.290" end="00:32:10.550">Okay, that's visual studio I side with here so,</p>
+      <p begin="00:32:10.550" end="00:32:15.070">this is visual studio and what I'm going to do is I'm going to this is an app that</p>
+      <p begin="00:32:15.070" end="00:32:19.830">is intended to run not on the start we...but it's intended to run on my phone and using remote art</p>
+      <p begin="00:32:19.830" end="00:32:22.760">window over bluetooth I can use my phone</p>
+      <p begin="00:32:22.760" end="00:32:29.270">to accessing control the capabilities of the...device so just a couple things from a code</p>
+      <p begin="00:32:29.270" end="00:32:34.300">standpoint I wanted to show you guys just to kinda get a feel for how this thing works one is in the</p>
+      <p begin="00:32:34.300" end="00:32:39.230">setup so you can see in the setup code I am a establishing a bluetooth</p>
+      <p begin="00:32:39.230" end="00:32:44.290">serial connection I am doing this new uw pfour</p>
+      <p begin="00:32:44.290" end="00:32:50.530">...thing creating a for...object which you can see is one of the namespaces</p>
+      <p begin="00:32:50.530" end="00:32:54.720">that we provide and same thing for this remote device in fact if</p>
+      <p begin="00:32:54.720" end="00:33:00.230">I look into if I look into this remote device?</p>
+      <p begin="00:33:00.230" end="00:33:04.730">...go to definition you can see that it's...metadata and what this remote devices is</p>
+      <p begin="00:33:04.730" end="00:33:09.480">it's kind of a it's kind of an api that is part of</p>
+      <p begin="00:33:09.480" end="00:33:13.870">the universal windows platform that's a representation of the things I can do via</p>
+      <p begin="00:33:13.870" end="00:33:18.750">and art window api so I can I can read I can...I can get the eyes...see</p>
+      <p begin="00:33:20.060" end="00:33:25.060">bus access I can do all of these things that I would be able to do but I've got a nice universal windows</p>
+      <p begin="00:33:25.060" end="00:33:30.690">platform api set that I can use to do that now I'm kind of passing this from</p>
+      <p begin="00:33:30.690" end="00:33:36.880">thing what for...is it's a standard it's a standard protocol for driving micro</p>
+      <p begin="00:33:36.880" end="00:33:41.870">...so I'm just going to use that standard protocol for microcontroller to</p>
+      <p begin="00:33:41.870" end="00:33:46.500">drive this particular...do we know to be able to do interesting things with it couple</p>
+      <p begin="00:33:46.500" end="00:33:52.420">other things I would just point out one is and let me show you what this application looks like</p>
+      <p begin="00:33:52.420" end="00:33:56.930">assuming I don't get the example...on this one and getting sam layers</p>
+      <p begin="00:33:56.930" end="00:34:18.490">and this one so I'll show you on the phone let me go ahead and deploying run this guy?</p>
+      <p begin="00:34:18.490" end="00:34:27.000">Ok, so, I'm...it now it's my phone.</p>
+      <p begin="00:34:27.000" end="00:34:30.180">So, now what you see on the screen is the phone that I'm using right here my</p>
+      <p begin="00:34:30.180" end="00:34:33.890">...just a picture of the screen what I'm going to do now is I'm going</p>
+      <p begin="00:34:33.890" end="00:34:37.880">to connect to the bluetooth device that's sitting</p>
+      <p begin="00:34:37.880" end="00:34:46.150">right here and that is happens to be this one I believe.</p>
+      <p begin="00:34:46.150" end="00:34:51.280">So, this is the why that wasn't I wasn't able to show you in visual studio but what this is just</p>
+      <p begin="00:34:51.280" end="00:34:55.320">it looks like the rails on the art we know it's just a representation of the different pins on the</p>
+      <p begin="00:34:55.320" end="00:35:00.690">or do we know so when I...I push buttons on my device here</p>
+      <p begin="00:35:00.690" end="00:35:08.220">and you can see I'm pushing a bunch of different buttons what's actually happening is?</p>
+      <p begin="00:35:08.220" end="00:35:12.680">On the device...lighting up the leads.</p>
+      <p begin="00:35:12.680" end="00:35:14.980">So, I'm driving this</p>
+      <p begin="00:35:14.980" end="00:35:19.610">...do we know from my phone and I haven't gotten to what's actually running on</p>
+      <p begin="00:35:19.610" end="00:35:25.190">...we'll get to that one second but, I can do other things like I can hit the</p>
+      <p begin="00:35:25.190" end="00:35:30.020">humidity button on my device which I'll show you in just one moment and it will read-out the</p>
+      <p begin="00:35:30.020" end="00:35:34.710">value from the whether...so when I hit humidity you can see that</p>
+      <p begin="00:35:34.710" end="00:35:39.840">says there's thirty two percent humidity which are that drive here didn't feel that drives me</p>
+      <p begin="00:35:39.840" end="00:35:43.820">...here I can't I should be able to for example,</p>
+      <p begin="00:35:43.820" end="00:35:47.200">play with the potentially ahmed earn you can see the number spin as I play with</p>
+      <p begin="00:35:47.200" end="00:35:51.530">...that's really cool so the question is what am I doing on the...we know</p>
+      <p begin="00:35:51.530" end="00:35:57.710">...kind of be able to get at it from my windows device like that it turns out that</p>
+      <p begin="00:35:57.710" end="00:36:02.830">the usa would please like stopped bugging it turns out that let me ...head over to the</p>
+      <p begin="00:36:02.830" end="00:36:06.520">...do we know id.</p>
+      <p begin="00:36:06.520" end="00:36:07.860">And, the...do we know id.</p>
+      <p begin="00:36:09.010" end="00:36:13.060">Contains a number of examples that are kind of come with our do</p>
+      <p begin="00:36:13.060" end="00:36:20.100">we know out-of-the-box including an example called standard for model.</p>
+      <p begin="00:36:20.100" end="00:36:22.170">So, there is so this is just</p>
+      <p begin="00:36:22.170" end="00:36:26.390">...stock standard for mod example that comes from...we know with their</p>
+      <p begin="00:36:26.390" end="00:36:30.780">...with their download this was the sketch that we loaded into the art</p>
+      <p begin="00:36:30.780" end="00:36:35.190">...device so literally I was able from a windows application using uw</p>
+      <p begin="00:36:35.190" end="00:36:40.150">p to drive all the pins and capabilities of this hard...device and I never even had to write</p>
+      <p begin="00:36:40.150" end="00:36:44.890">...or learn align of our do we know code I was able to deploy the standard for...</p>
+      <p begin="00:36:44.890" end="00:36:49.780">a sketch get that running and then once that's running on the...we...kind of the world</p>
+      <p begin="00:36:49.780" end="00:36:55.440">...might...or from a windows application it's really cool now this is a pretty simple example</p>
+      <p begin="00:36:55.440" end="00:36:59.320">in a somewhat contrived example to be able to show you all the things that light up</p>
+      <p begin="00:36:59.320" end="00:37:05.440">...more complex things that we could do as well and that's another thing I'd like to show.</p>
+      <p begin="00:37:05.440" end="00:37:08.360">So, let me.</p>
+      <p begin="00:37:08.360" end="00:37:11.550">...open up another example in dam...this is</p>
+      <p begin="00:37:11.550" end="00:37:15.320">...dan taking off the during the big reveal.</p>
+      <p begin="00:37:24.000" end="00:37:24.920">Ok,</p>
+      <p begin="00:37:24.920" end="00:37:29.320">so, this is when you like let the team go loose and you're like okay</p>
+      <p begin="00:37:29.320" end="00:37:33.340">...we want to do this with this remote...we know things that we can really</p>
+      <p begin="00:37:33.340" end="00:37:39.050">drives some hardware from a windows device other than having some really interesting</p>
+      <p begin="00:37:39.050" end="00:37:44.190">blinking leads what can we do and the answer courses a lot more leads</p>
+      <p begin="00:37:44.190" end="00:37:48.480">so what you see is a massive screen full of...</p>
+      <p begin="00:37:48.480" end="00:37:52.660">And, I'm almost certain we're not violating any local fire codes</p>
+      <p begin="00:37:52.660" end="00:37:55.700">or unique or ...</p>
+      <p begin="00:37:55.700" end="00:38:02.450">w electrical rules totally safe it's on its own circuit but what we have here</p>
+      <p begin="00:38:02.450" end="00:38:07.470">...we want to be able to rendering image that we can take from this phone</p>
+      <p begin="00:38:07.470" end="00:38:11.180">...to capture and image on this phone using the camera and then I want to be able</p>
+      <p begin="00:38:11.180" end="00:38:15.740">render that image over there to...to the leads using mired we know to</p>
+      <p begin="00:38:15.740" end="00:38:20.010">drive the leads and using my phone to handle all the processing load</p>
+      <p begin="00:38:20.010" end="00:38:24.740">...capturing the image and kind of raster rising the image to this smaller</p>
+      <p begin="00:38:24.740" end="00:38:29.230">think it's I don't remember how many pixels forty-eight by forty or forty by forty I don't even remember</p>
+      <p begin="00:38:29.230" end="00:38:36.800">...by forty and, if that would work that I think that would be pretty cool so,</p>
+      <p begin="00:38:36.800" end="00:38:42.280">let me let me start by trying the application out?</p>
+      <p begin="00:38:42.280" end="00:38:45.290">So, by the way it's worth noting that are although word windows are</p>
+      <p begin="00:38:45.290" end="00:38:47.910">...driving hardware they're fairly small</p>
+      <p begin="00:38:47.910" end="00:38:53.400">in modest compute devices in fact the array that you would</p>
+      <p begin="00:38:53.400" end="00:38:59.500">use for this set of pixels does not fit into the ram of the or do we know data</p>
+      <p begin="00:38:59.500" end="00:39:03.240">can...remind around that like wow like there's no frame buffer because?</p>
+      <p begin="00:39:04.310" end="00:39:09.070">You know, the frame is bigger than the buffer so how do you do that what we do is we do</p>
+      <p begin="00:39:09.070" end="00:39:12.710">all of that here locally on the.</p>
+      <p begin="00:39:12.710" end="00:39:18.930">On the windows phone and I'm seeing a deployment or let me make sure my...unlocked here.</p>
+      <p begin="00:39:18.930" end="00:39:23.610">...seeing all of that doing all of that processing on the windows phone and</p>
+      <p begin="00:39:23.610" end="00:39:28.360">then sending it sending the information sort-of bit-by-bit via blobs binary</p>
+      <p begin="00:39:28.360" end="00:39:34.660">blobs until a paints the entire screen.</p>
+      <p begin="00:39:34.660" end="00:39:46.440">And, it's registering.</p>
+      <p begin="00:39:46.440" end="00:39:50.300">Ok, so, now what you see is that is that application now in</p>
+      <p begin="00:39:50.300" end="00:39:54.220">this case we have made a look we have done a little bit of work to the standard for</p>
+      <p begin="00:39:54.220" end="00:39:58.830">...application that's running on this particular art reno shield so,</p>
+      <p begin="00:39:58.830" end="00:40:01.960">we've made some editing we did write a little bit of our do we know code to get</p>
+      <p begin="00:40:01.960" end="00:40:09.250">this from working let me try this let me see if I could me see if I could take a cellphone here.</p>
+      <p begin="00:40:09.250" end="00:40:11.680">Okay, here we go others a light behind me</p>
+      <p begin="00:40:11.680" end="00:40:15.810">it's going to be really hard to do but we'll see if we can capture my face there</p>
+      <p begin="00:40:15.810" end="00:40:22.570">we go...I'm looking down that is not my best picture that I've ever taken.</p>
+      <p begin="00:40:22.570" end="00:40:36.970">...going to tell to drive the screen.</p>
+      <p begin="00:40:36.970" end="00:40:41.440">So, how many...went to the session I did on t last year?</p>
+      <p begin="00:40:41.440" end="00:40:45.880">Yeah, I did this thing where I had this traffic light and I left it on so that like the guy in</p>
+      <p begin="00:40:45.880" end="00:40:49.370">the front-row got sunburned.</p>
+      <p begin="00:40:49.370" end="00:40:51.910">That was fun when that happened wasn't.</p>
+      <p begin="00:40:51.910" end="00:40:57.770">So, let's try this specific take picture you guys...how this ends up.</p>
+      <p begin="00:40:57.770" end="00:41:08.320">...taken a picture...are going to render that.</p>
+      <p begin="00:41:08.320" end="00:41:13.410">And, see.</p>
+      <p begin="00:41:13.410" end="00:41:16.840">Just the top of screens taken so yeah,</p>
+      <p begin="00:41:16.840" end="00:41:22.490">it's I think...the pixel on the.</p>
+      <p begin="00:41:22.490" end="00:41:29.690">So, anyway, great example of kind ofand, let me let me do this is...trick for.</p>
+      <p begin="00:41:29.690" end="00:41:34.450">Not some burning people see if this kind of works.</p>
+      <p begin="00:41:34.450" end="00:41:39.390">Is to take a picture of a black screen and then painted there we go there</p>
+      <p begin="00:41:39.390" end="00:41:46.560">are some trial-and-error involved in figuring out that solution believe me?</p>
+      <p begin="00:41:46.560" end="00:41:51.070">That's...kinda gives you an idea of...the kind of things that you would do if you can take this</p>
+      <p begin="00:41:51.070" end="00:41:56.030">remote wiring to its logical conclusion really using the our verge we know to drive hardware which is what</p>
+      <p begin="00:41:56.030" end="00:42:01.280">it's best that but recognizing the fact that it's not good having a lot of ram are being able</p>
+      <p begin="00:42:01.280" end="00:42:05.300">to image processing offloading network in this case my phone.</p>
+      <p begin="00:42:06.360" end="00:42:10.240">Now if I were to I'm just going to stop the debug session here</p>
+      <p begin="00:42:11.660" end="00:42:16.290">the code here is just to show you a couple pieces of code that are that I think</p>
+      <p begin="00:42:16.290" end="00:42:20.340">...interesting one is just kind of the same set of code to set up yes,</p>
+      <p begin="00:42:20.340" end="00:42:24.790">it's over bluetooth yes I'm using for model once again so similar pattern to what you</p>
+      <p begin="00:42:24.790" end="00:42:29.100">saw with my a small example here of the blinking leads and the potential</p>
+      <p begin="00:42:29.100" end="00:42:33.800">...and that sort of thing...this thing does...work is done by this</p>
+      <p begin="00:42:33.800" end="00:42:37.760">draught image function which is what takes the camera image</p>
+      <p begin="00:42:37.760" end="00:42:43.490">the kind of knows how to raster...based on the kind of ...of image that you want to</p>
+      <p begin="00:42:43.490" end="00:42:48.540">...to the screen and once it's done that it kind of...the shift</p>
+      <p begin="00:42:48.540" end="00:42:53.040">bites function over and over again for every blob of data and just kind of passes it</p>
+      <p begin="00:42:53.040" end="00:42:55.900">over the bluetooth channel intellect lights up every</p>
+      <p begin="00:42:55.900" end="00:42:58.720">...so pretty cool.</p>
+      <p begin="00:42:58.720" end="00:43:04.960">Let's see what else we have here.</p>
+      <p begin="00:43:04.960" end="00:43:09.570">So, what we showed was this idea that hey without really learning how to be</p>
+      <p begin="00:43:09.570" end="00:43:13.660">...art we know programmer I can use a windows phone combined with an art we</p>
+      <p begin="00:43:13.660" end="00:43:17.830">know to drive hardware what we'd also like to talk about is</p>
+      <p begin="00:43:17.830" end="00:43:22.800">this idea of windows virtual shield for art we know kind of the converse I can</p>
+      <p begin="00:43:22.800" end="00:43:26.560">...learning really how to be a windows developer I can from my</p>
+      <p begin="00:43:26.560" end="00:43:31.340">...we know code leverage all the capabilities from my phone just as if my phone</p>
+      <p begin="00:43:31.340" end="00:43:35.790">...a set of shields provide stacked on top of mired we know except in this case I want</p>
+      <p begin="00:43:35.790" end="00:43:40.790">to do it over bluetooth so that means things like the screen or things like speech</p>
+      <p begin="00:43:40.790" end="00:43:43.060">recognition they could just show up in mired</p>
+      <p begin="00:43:43.060" end="00:43:47.540">...world like a natural thing that like the same way that I would show up the with this weather</p>
+      <p begin="00:43:47.540" end="00:43:49.420">...that I would just put on top of the hardware?</p>
+      <p begin="00:43:50.600" end="00:43:58.040">So, let's take a look at what that might look like.</p>
+      <p begin="00:43:58.040" end="00:44:01.850">I'm going to go into...we know code now.</p>
+      <p begin="00:44:01.850" end="00:44:05.220">So, here's my here's mired we know code which you're going to see in just</p>
+      <p begin="00:44:05.220" end="00:44:09.960">one-minute there is so there's mired winner code using...we know id</p>
+      <p begin="00:44:09.960" end="00:44:14.110">...so looking at the art we know code if you're not familiar with art we know</p>
+      <p begin="00:44:14.110" end="00:44:18.470">...sketch language is a see like language</p>
+      <p begin="00:44:18.470" end="00:44:22.050">others pound includes there's curly braces there's function calls it's got</p>
+      <p begin="00:44:22.050" end="00:44:29.220">a kind of stuff the things I want to point out to you are the includes here</p>
+      <p begin="00:44:29.220" end="00:44:34.620">these are includes that are about the virtual shield so I want to be able to get</p>
+      <p begin="00:44:34.620" end="00:44:39.470">at the virtual shield support I want to get the screen which is graphics dot h I</p>
+      <p begin="00:44:39.470" end="00:44:42.500">want to get the accelerometer for my phone I want to be able to get</p>
+      <p begin="00:44:42.500" end="00:44:47.380">it speech recognition from iphone and I wanna-be able to get the web I want use my phone is</p>
+      <p begin="00:44:47.380" end="00:44:51.610">a conduit to the worldwide web via bluetooth or sorry</p>
+      <p begin="00:44:51.610" end="00:44:57.300">...cellular or via wi-fi however the phone might happen to be connected and,</p>
+      <p begin="00:44:57.300" end="00:45:02.000">just to show you a little bit of the...we know sketch code what the setup function does usually</p>
+      <p begin="00:45:02.000" end="00:45:07.310">...to functions at least set-up and loop what the setup function does is it sets up all</p>
+      <p begin="00:45:07.310" end="00:45:11.660">these shields it sets them up in such a way that they the action</p>
+      <p begin="00:45:11.660" end="00:45:14.730">becomes call backs so inside of our run function</p>
+      <p begin="00:45:14.730" end="00:45:19.870">it just includes a call to like execute on all the call backs when it's appropriate to do so,</p>
+      <p begin="00:45:19.870" end="00:45:21.920">I set up call backs and thenso,</p>
+      <p begin="00:45:21.920" end="00:45:27.410">I have call backs for things like hey when I get an event for</p>
+      <p begin="00:45:27.410" end="00:45:31.760">the for the screen this tells me or this is actually the</p>
+      <p begin="00:45:31.760" end="00:45:36.550">set-up event this tells me okay I want to draw some buttons on the screen and I'm</p>
+      <p begin="00:45:36.550" end="00:45:42.290">going to look up colors on wikipedia...what does that mean what them and you see the...got docket</p>
+      <p begin="00:45:42.290" end="00:45:46.930">so what this means is one of the things we wanted to do with this demo is we wanted</p>
+      <p begin="00:45:46.930" end="00:45:51.130">to use the web to go find all the colors that are in the creole</p>
+      <p begin="00:45:51.130" end="00:45:55.290">a color catalog so now creole has colors like tangerine</p>
+      <p begin="00:45:55.290" end="00:45:59.660">and burnt cnn all these kind of weird things we thought that would be a fun set of colors to go</p>
+      <p begin="00:45:59.660" end="00:46:04.320">...so there's actually a wikipedia page of course where you can go and look at all those</p>
+      <p begin="00:46:04.320" end="00:46:09.120">colors we grab that and then we're going to use those colors as part of</p>
+      <p begin="00:46:09.120" end="00:46:15.480">the speech recognition so that we can get the appropriate color drawn on...doing and,</p>
+      <p begin="00:46:15.480" end="00:46:20.280">we're just going to draw...a point on the or do we know so the web event all this thing does is</p>
+      <p begin="00:46:20.280" end="00:46:24.850">once it gets that response back from the wikipedia page parses it says great I've got that</p>
+      <p begin="00:46:24.850" end="00:46:30.950">information that's awesome and then we've got this other thing here that?</p>
+      <p begin="00:46:30.950" end="00:46:33.010">Draws to the screen based on the speech</p>
+      <p begin="00:46:33.010" end="00:46:37.530">...figures out here's the color you wanted I get the xy coordinates I draw a</p>
+      <p begin="00:46:37.530" end="00:46:43.940">on the screen that pixel which is a very big dp pixel that you want to see so,</p>
+      <p begin="00:46:43.940" end="00:46:47.110">let's see if we get this thing running what is really,</p>
+      <p begin="00:46:47.110" end="00:46:50.570">really neat about this particular demo?</p>
+      <p begin="00:46:50.570" end="00:46:55.250">Is I literally do not have to learn how to be a windows developer all I have to be</p>
+      <p begin="00:46:55.250" end="00:47:01.430">able to do is run windows application so we've written this application</p>
+      <p begin="00:47:01.430" end="00:47:06.410">herewhich is the virtual shield application it's not yet available in the store but</p>
+      <p begin="00:47:06.410" end="00:47:11.020">...made the source code available in fact I think the source code for absolutely everything I'm</p>
+      <p begin="00:47:11.020" end="00:47:15.930">showing you today with the exception maybe one demo is already on get hub you can get it everything you</p>
+      <p begin="00:47:15.930" end="00:47:20.000">could try that yourself...around with the including this application eventually</p>
+      <p begin="00:47:20.000" end="00:47:24.930">will be in the store so you don't even have to know-how to go get to you don't even have to</p>
+      <p begin="00:47:24.930" end="00:47:34.310">know-how to get to get have you just have to not go to the store some of...run this application?</p>
+      <p begin="00:47:34.310" end="00:47:39.450">So, all the code I've written sits over there on the...we know it's looking up the colors</p>
+      <p begin="00:47:39.450" end="00:47:44.380">...wikipedia...found them...hundred-twenty colors I only have the sixty-four color package of</p>
+      <p begin="00:47:44.380" end="00:47:48.550">...as I didn't really realize there was a one twenty...maybe they change over the years like</p>
+      <p begin="00:47:48.550" end="00:47:52.560">baskin-robbins only thirty one-at-a-time but the entire</p>
+      <p begin="00:47:52.560" end="00:47:54.480">...a flavors is actually fairly,</p>
+      <p begin="00:47:54.480" end="00:48:00.180">fairly big all right so I've got this I've got this guy go...so let me let me</p>
+      <p begin="00:48:00.180" end="00:48:02.480">...go let's see what happens</p>
+      <p begin="00:48:02.480" end="00:48:06.580">...redrawing all right so what should happen I can't see the screen so I'm just</p>
+      <p begin="00:48:06.580" end="00:48:10.980">...relying on...to tell me that things are...using the accelerometer so as I</p>
+      <p begin="00:48:10.980" end="00:48:15.490">...the phone it should be drawing the pixel in different places.</p>
+      <p begin="00:48:15.490" end="00:48:19.780">So, that's pretty that's pretty good if that's in fact happening nobody's brewing so</p>
+      <p begin="00:48:19.780" end="00:48:23.680">what's probably happening I feel pretty good about that...I'm going to</p>
+      <p begin="00:48:23.680" end="00:48:50.390">nominate hit on the phone and hit this color button and ask...to paint a different color.</p>
+      <p begin="00:48:50.390" end="00:48:57.230">...try one more tangerine.</p>
+      <p begin="00:48:57.230" end="00:49:07.140">Doesn't understand my accent?</p>
+      <p begin="00:49:07.140" end="00:49:15.260">Yeah, that seems to work ok what about.</p>
+      <p begin="00:49:15.260" end="00:49:31.270">So, you can see the upwards fun.</p>
+      <p begin="00:49:31.270" end="00:49:34.420">One of the things we thought a lot in working on windows coyote</p>
+      <p begin="00:49:34.420" end="00:49:40.360">...this idea of connectivity you know, if you attended a session I did was</p>
+      <p begin="00:49:40.360" end="00:49:43.920">sam george yesterday we talked a lot about connectivity...</p>
+      <p begin="00:49:43.920" end="00:49:48.840">devices and to me connectivity is what really represents the difference between imbedded</p>
+      <p begin="00:49:48.840" end="00:49:54.580">and io t imbedded devices... small computers imbedded in things that,</p>
+      <p begin="00:49:54.580" end="00:49:59.680">you know, exhibits independent behavior based on having onboard computer it becomes io</p>
+      <p begin="00:49:59.680" end="00:50:03.270">t when these devices can connect to the other devices around them and</p>
+      <p begin="00:50:03.270" end="00:50:07.530">...ambient environment and also connect to the cloud so we focused on that</p>
+      <p begin="00:50:07.530" end="00:50:12.540">and a couple different ways one is you'll find as we demonstrated yesterday ready connection up to</p>
+      <p begin="00:50:12.540" end="00:50:14.230">ashes...t infrastructure so</p>
+      <p begin="00:50:14.230" end="00:50:20.310">you're building out devices like this you have the ability to leverage the data that they</p>
+      <p begin="00:50:20.310" end="00:50:25.120">...gain interest interesting insights from the data that generates be able to</p>
+      <p begin="00:50:25.120" end="00:50:29.390">view data in real-time be able to find alerts and anomalous behavior and real-time</p>
+      <p begin="00:50:29.390" end="00:50:34.480">but then also gavin geared gave a session earlier this week about all join and,</p>
+      <p begin="00:50:34.480" end="00:50:38.980">all join as an investment that we've made in windows...available...all windows ten additions including</p>
+      <p begin="00:50:38.980" end="00:50:43.940">ip core as a local old sort...proximate network technology</p>
+      <p begin="00:50:43.940" end="00:50:49.060">for devices to talk to one another it's my point of view that devices, you know,</p>
+      <p begin="00:50:49.060" end="00:50:52.740">they want to be free that they want to talk to other devices they want to</p>
+      <p begin="00:50:52.740" end="00:50:57.730">talk to the cloud and, we only win this is one of those things where we only win-win</p>
+      <p begin="00:50:58.900" end="00:51:03.360">...we can light up that world...when I...device my world gets richer if you think about</p>
+      <p begin="00:51:03.360" end="00:51:08.050">it that world only happens when devices can talk to one another otherwise I'm thinking about okay</p>
+      <p begin="00:51:08.050" end="00:51:13.040">how do I only acquire devices that are in the particular walled garden ecosystem that I</p>
+      <p begin="00:51:13.040" end="00:51:16.340">maybe participating in...we just devices should just</p>
+      <p begin="00:51:16.340" end="00:51:21.300">know-how to talk to each other that should be the default behavior for devices.</p>
+      <p begin="00:51:21.300" end="00:51:23.370">Speaking of which I'd like to talk a little bit</p>
+      <p begin="00:51:23.370" end="00:51:28.390">about smaller devices and also talk about how they connect the altering to the world.</p>
+      <p begin="00:51:28.390" end="00:51:32.990">Dot net micro framework is a technology that we've worked on for several years</p>
+      <p begin="00:51:32.990" end="00:51:37.830">and it represents a smaller classes devices so those devices that we talked about our do we</p>
+      <p begin="00:51:37.830" end="00:51:42.540">...running on micro running microcontroller class silicon that is where dot net</p>
+      <p begin="00:51:42.540" end="00:51:47.210">micro framework works best these days typically that's represented by arm cortex</p>
+      <p begin="00:51:47.210" end="00:51:50.350">...three-m for classed silicon here</p>
+      <p begin="00:51:50.350" end="00:51:54.490">to new boards from one of our partners secret...they've got a great product called</p>
+      <p begin="00:51:54.490" end="00:51:59.460">net we know and it allows me to use micro framework gives me the ability from within csharp</p>
+      <p begin="00:51:59.460" end="00:52:04.290">in a dot net environment to write code that actually runs on these little tiny platforms</p>
+      <p begin="00:52:04.290" end="00:52:09.660">in many ways...many...very often that code that I write for these little</p>
+      <p begin="00:52:09.660" end="00:52:15.030">...alsoupward compatible to larger versions of dot net so</p>
+      <p begin="00:52:15.030" end="00:52:18.290">netting between...three wi-fi has onboard wi-fi between</p>
+      <p begin="00:52:18.290" end="00:52:23.580">three ethernet onboard ethernet and a couple of other partners we've worked with gh</p>
+      <p begin="00:52:23.580" end="00:52:29.150">...another big maker of dot net micro framework devices on the left you see</p>
+      <p begin="00:52:29.150" end="00:52:33.540">...gh...as spider kit which is taking the idea of</p>
+      <p begin="00:52:33.540" end="00:52:38.550">micro framework and then adding to it modular hardware so that I can plug on cameras</p>
+      <p begin="00:52:38.550" end="00:52:42.100">...and lots of different sensors and then what you see on the right</p>
+      <p begin="00:52:42.100" end="00:52:44.920">there is a prototype of a hat for raspberry</p>
+      <p begin="00:52:44.920" end="00:52:49.810">...to that allows me to kind of enjoy that modular hardware ecosystem that gh</p>
+      <p begin="00:52:49.810" end="00:52:51.220">gis been famous for</p>
+      <p begin="00:52:51.220" end="00:52:56.420">...to do that on top of raspberry pi to on windows ten not just on dot net micro</p>
+      <p begin="00:52:56.420" end="00:53:02.700">frameworks that's pretty cool I did want to show you one demo for dot net micro framework let me start by</p>
+      <p begin="00:53:02.700" end="00:53:07.120">showing you this board which is which is a monster for micro framework</p>
+      <p begin="00:53:07.120" end="00:53:08.610">board?</p>
+      <p begin="00:53:08.610" end="00:53:11.000">Within the big...the new small.</p>
+      <p begin="00:53:11.000" end="00:53:14.320">So, we've got this four that's like.</p>
+      <p begin="00:53:14.320" end="00:53:16.000">Size of my hand.</p>
+      <p begin="00:53:16.000" end="00:53:19.840">All of your door locks will be this big in the future believe me here to</p>
+      <p begin="00:53:19.840" end="00:53:23.620">value know what this is actually a development board for</p>
+      <p begin="00:53:23.620" end="00:53:28.290">micro framework so typically if you if you kind of work in hardware space what you'll find is</p>
+      <p begin="00:53:28.290" end="00:53:32.340">vendors and this one comes from arm vendors will give you these development boards that</p>
+      <p begin="00:53:32.340" end="00:53:37.320">...the so see that you want to target but then it's got all the ios and all the connectors and all</p>
+      <p begin="00:53:37.320" end="00:53:42.230">the support for everything that you might want to do with it and this is one of these ads heart it's a cortex</p>
+      <p begin="00:53:42.230" end="00:53:47.120">m for arm architecture and what I wanted to show is just</p>
+      <p begin="00:53:47.120" end="00:53:53.260">a little windows application here combined with my television so what</p>
+      <p begin="00:53:53.260" end="00:53:58.580">we've done is all join has a small form factor that's</p>
+      <p begin="00:53:58.580" end="00:54:03.560">designed for the smallest device like micro framework devices and using that</p>
+      <p begin="00:54:03.560" end="00:54:07.940">small form factor I'm able to create all join compatible</p>
+      <p begin="00:54:07.940" end="00:54:13.720">devices and put them are create these tiny things and put them in all joined</p>
+      <p begin="00:54:13.720" end="00:54:18.000">...tiny devices are...compatible so that I can have door locks</p>
+      <p begin="00:54:18.000" end="00:54:22.940">...can have lightbulb...can have the smallest things that speak all join not just bigger devices</p>
+      <p begin="00:54:22.940" end="00:54:33.680">like this windows machine here so I'm going to switch to my laptop?</p>
+      <p begin="00:54:33.680" end="00:54:38.740">So, what should come up here is a is a dot net micro framework project so you can see this dot</p>
+      <p begin="00:54:38.740" end="00:54:44.640">net micro framework project what this does very briefly is just sets up</p>
+      <p begin="00:54:44.640" end="00:54:48.900">sets up this device as a member of the ambient networks all</p>
+      <p begin="00:54:48.900" end="00:54:53.810">join bus because it is running the sm version of all join it looks</p>
+      <p begin="00:54:53.810" end="00:54:58.100">for a router that can connect to that it can allow it to connect other devices</p>
+      <p begin="00:54:58.100" end="00:55:02.910">...the outside world it so happens that router functionality is built</p>
+      <p begin="00:55:02.910" end="00:55:06.820">into windows devices including windows phone that I'm running here</p>
+      <p begin="00:55:06.820" end="00:55:10.780">so what will actually do...will communicating communicate from this dot</p>
+      <p begin="00:55:10.780" end="00:55:15.490">micro framework device to this windows device they can discover each other they can</p>
+      <p begin="00:55:15.490" end="00:55:20.340">they can shake hands they can get to know each other and then once it establishes that connection</p>
+      <p begin="00:55:20.340" end="00:55:25.050">between my phone and the sm micro framework device it can use my phone to</p>
+      <p begin="00:55:25.050" end="00:55:30.110">rout communication to other devices on my network including this television here which</p>
+      <p begin="00:55:30.110" end="00:55:33.980">this lg television also and this is a commercial that you can</p>
+      <p begin="00:55:33.980" end="00:55:37.930">...probably by across the street a target this particular</p>
+      <p begin="00:55:37.930" end="00:55:43.280">...speaks all join the commercial device that you can buy today that speaks altering so,</p>
+      <p begin="00:55:43.280" end="00:55:48.410">just to show you a couple pieces of code here there's just kind of big while true loop that this thing sits</p>
+      <p begin="00:55:48.410" end="00:55:50.840">in while it's running and it kinda</p>
+      <p begin="00:55:50.840" end="00:55:55.600">does some housekeeping first it make sure that gets an ip address setup it starts up</p>
+      <p begin="00:55:55.600" end="00:56:00.520">the all join service and make sure that the all join service get setup once the all join services</p>
+      <p begin="00:56:00.520" end="00:56:07.930">setup it looks for a router connects itself to that router?</p>
+      <p begin="00:56:07.930" end="00:56:11.690">And, then it kind of sits in a message pump loop handling messages and</p>
+      <p begin="00:56:11.690" end="00:56:16.660">...couple of interesting messages for this demo one is the phone is allowed to</p>
+      <p begin="00:56:17.810" end="00:56:21.430">...and the others the phone earth phone or any device...all join</p>
+      <p begin="00:56:21.430" end="00:56:25.010">...to read or write the value of the temperature and I've hard</p>
+      <p begin="00:56:25.010" end="00:56:28.970">coded the temperature for purposes of this demo at seventy so,</p>
+      <p begin="00:56:28.970" end="00:56:35.070">what I'm going to do is I'm going to run different different phone here looks the same but it's</p>
+      <p begin="00:56:35.070" end="00:56:37.240">actually different from?</p>
+      <p begin="00:56:37.240" end="00:56:41.610">And, let's come out here.</p>
+      <p begin="00:56:41.610" end="00:56:45.970">All right so I've got this application it's connected which means these two devices of already</p>
+      <p begin="00:56:45.970" end="00:56:49.340">...connected to one another what I can do is I can</p>
+      <p begin="00:56:49.340" end="00:56:58.970">read the temperature from this micro framework device and again using all join?</p>
+      <p begin="00:56:58.970" end="00:57:03.590">Okay, that's got it at seventy degrees and the other thing that I can do is I can</p>
+      <p begin="00:57:03.590" end="00:57:07.910">set the temperature and when I degrees fahrenheit current</p>
+      <p begin="00:57:07.910" end="00:57:11.950">temperature degrees fahrenheit?</p>
+      <p begin="00:57:11.950" end="00:57:16.830">...like a mix those kind of cool what we'll do is when I said it will send</p>
+      <p begin="00:57:16.830" end="00:57:21.190">...all join broadcast to say someone set my temperature if all goes well</p>
+      <p begin="00:57:21.190" end="00:57:24.620">the all join broadcast should be picked up by this television here in front so</p>
+      <p begin="00:57:24.620" end="00:57:30.890">that's going to click the send tv which was set in sentence broadcast?</p>
+      <p begin="00:57:30.890" end="00:57:32.450">...stage.</p>
+      <p begin="00:57:32.450" end="00:57:41.400">For sorry...stage.</p>
+      <p begin="00:57:41.400" end="00:57:44.650">That should be ok let me just try and make sure this</p>
+      <p begin="00:57:44.650" end="00:57:49.370">...run the application one-time let's see.</p>
+      <p begin="00:57:49.370" end="00:57:51.820">I'm sure it's going to be...totally going to work moi.</p>
+      <p begin="00:58:01.820" end="00:58:07.360">This kind of a finality in the way she says that isn't there.</p>
+      <p begin="00:58:07.360" end="00:58:21.570">I'm...to go with what core...tells me.</p>
+      <p begin="00:58:21.570" end="00:58:25.960">All right and a couple cost action I have for-you one is if you</p>
+      <p begin="00:58:25.960" end="00:58:30.300">haven't already please visit windows on devices dot com again,</p>
+      <p begin="00:58:30.300" end="00:58:32.680">be able to explore source code figure out how to set</p>
+      <p begin="00:58:32.680" end="00:58:35.730">...windows on your on your raspberry pi to in</p>
+      <p begin="00:58:35.730" end="00:58:40.690">aboard max devices here at the conference you can do the quick start challenge you can do the</p>
+      <p begin="00:58:40.690" end="00:58:44.840">...workshop so lots of things that you can do to kinda get engage and start</p>
+      <p begin="00:58:44.840" end="00:58:53.600">working on stuff now I do have one last thing as we're up against time.</p>
+      <p begin="00:58:53.600" end="00:58:57.610">...all you guys one of these cool robot kids ...</p>
+      <p begin="00:59:08.190" end="00:59:12.960">Thank you thank you for coming this the kid has a...it's got...card pre image with</p>
+      <p begin="00:59:14.090" end="00:59:19.020">...the robot kit components it's got sensors wires...</p>
+      <p begin="00:59:19.020" end="00:59:26.030">I wasn't going to do it because the micro framework thing failed I thought I showed you guys.</p>
+      <p begin="00:59:26.030" end="00:59:28.690">So, thank you for coming to build.</p>
+      <p begin="00:59:28.690" end="00:59:29.730">Enjoy the resolution.</p>
+
+    </div>
+  </body>
+</tt>

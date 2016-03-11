@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.879</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:19.980" end="00:00:24.760">Hey, de there we are live at but...here...build.</p>
+      <p begin="00:00:24.760" end="00:00:29.940">Pretty exciting there's some really good announcements I...tweet by the way this is...my good friend hello do</p>
+      <p begin="00:00:29.940" end="00:00:34.230">you work on...on visual studio and all the...tool in visual web</p>
+      <p begin="00:00:34.230" end="00:00:39.190">tooling visual so-so it...this anecdote eyes there was this guy who</p>
+      <p begin="00:00:39.190" end="00:00:46.430">did a tweet is like hey I'm coming back to javascript development after six months of doing.</p>
+      <p begin="00:00:46.430" end="00:00:51.130">My goodness everything is different what's changed in the last six</p>
+      <p begin="00:00:51.130" end="00:00:56.060">months when it comes to developing for the web and javascript in the last six</p>
+      <p begin="00:00:56.060" end="00:01:01.710">months probably not that much like drastically ios ogg yeah,</p>
+      <p begin="00:01:01.710" end="00:01:07.400">things move fast that's for sure, yeah, so, especially in our stack we're now see this adoption</p>
+      <p begin="00:01:07.400" end="00:01:12.240">envision studio of the node base tools and our and pm the page managers and...</p>
+      <p begin="00:01:12.240" end="00:01:17.140">gulp to task runners ok...is minute find bundle...javascript files compile</p>
+      <p begin="00:01:17.140" end="00:01:22.150">type script so on and that sort of runs...and cross-platform and right and it's a</p>
+      <p begin="00:01:22.150" end="00:01:27.770">very different world especially for like maybe the typical visual studio user of has...so,</p>
+      <p begin="00:01:27.770" end="00:01:34.600">in that sense a lot of stuff has happened new frameworks come up,...it's there's a human there's so many</p>
+      <p begin="00:01:34.600" end="00:01:39.380">things to keep track of when it comes to web development so</p>
+      <p begin="00:01:39.380" end="00:01:43.780">I'm just going to start naming some things and let's see if we could put them in</p>
+      <p begin="00:01:43.780" end="00:01:47.840">the appropriate buckets...and pm what is that</p>
+      <p begin="00:01:47.840" end="00:01:51.470">package manager node package manager ok bauer.</p>
+      <p begin="00:01:51.470" end="00:01:54.590">That's of client-side library package manager so it's</p>
+      <p begin="00:01:54.590" end="00:01:59.590">a so they're both package manager guess what's yours...and pm...well, so,</p>
+      <p begin="00:01:59.590" end="00:02:03.740">there are fundamental differences but they're also very similar we can let's just take new good in</p>
+      <p begin="00:02:03.740" end="00:02:08.530">...well because they'll see that are...three package measures we now have to deal with right just let's</p>
+      <p begin="00:02:08.530" end="00:02:13.450">...them apart a little bit so new get that we know...many years have</p>
+      <p begin="00:02:13.450" end="00:02:18.090">providers with both server-side components like dl files but also</p>
+      <p begin="00:02:18.090" end="00:02:22.790">...act of like j query and bootstrap angular js, you know,</p>
+      <p begin="00:02:22.790" end="00:02:26.770">for the client-sideso, in the new...on</p>
+      <p begin="00:02:26.770" end="00:02:31.610">...five new good will only be handling the server-side components like the</p>
+      <p begin="00:02:31.610" end="00:02:36.870">...the assemblies the dl files...but they will not it will not handle client-side</p>
+      <p begin="00:02:36.870" end="00:02:41.100">packages anymore so for that we want to use bauer because that's our climb side</p>
+      <p begin="00:02:42.340" end="00:02:45.590">...now...was really cool about</p>
+      <p begin="00:02:45.590" end="00:02:50.240">it is that our is a lot larger has a lot more packages available the new</p>
+      <p begin="00:02:50.240" end="00:02:55.310">good has for the client-side space and that's also where,</p>
+      <p begin="00:02:55.310" end="00:02:59.700">you know, people that actually build the frameworks they put they put it on our so</p>
+      <p begin="00:02:59.700" end="00:03:03.370">that's always up-to-date as a huge ecosystem sort of it's a great gain</p>
+      <p begin="00:03:03.370" end="00:03:08.030">for us visual student dot net developers that we have access to those natively with envisions</p>
+      <p begin="00:03:08.030" end="00:03:10.960">...now because we just have more options and,</p>
+      <p begin="00:03:10.960" end="00:03:15.760">that's great...overlap between and pm and bauer yes so</p>
+      <p begin="00:03:15.760" end="00:03:22.010">what how we look at it is internally envisions the we kind of treat and pm</p>
+      <p begin="00:03:22.010" end="00:03:27.930">...a way to bring in tooling so...assemblies our for</p>
+      <p begin="00:03:27.930" end="00:03:33.880">...sideline...in pm for tooling okay what do you mean by...</p>
+      <p begin="00:03:33.880" end="00:03:39.670">yeah, so, that would...stuff that helps you run tasks on your</p>
+      <p begin="00:03:39.670" end="00:03:43.430">app like help you compile lists and...and coffee script and</p>
+      <p begin="00:03:44.490" end="00:03:49.610">...help you minute find bundle your javascript...I can help with all</p>
+      <p begin="00:03:49.610" end="00:03:54.360">...think about imis...right that's sort of a tooling thing we now have these things called</p>
+      <p begin="00:03:54.360" end="00:03:58.450">...and gulp you install them into your project using and pm and ios</p>
+      <p begin="00:03:58.450" end="00:04:02.720">maggots manager so but they're still like they're still like...little bit of</p>
+      <p begin="00:04:02.720" end="00:04:07.550">...because...a lot of overlap you will find client-side packages on</p>
+      <p begin="00:04:07.550" end="00:04:12.420">...pm like the same ones...on bauer so if you want to use I just want</p>
+      <p begin="00:04:12.420" end="00:04:17.710">to use and p it doesn't have as many client-side packages what more people actually putting</p>
+      <p begin="00:04:17.710" end="00:04:22.660">clarissa pages on...pm so you could say I'm just going to use and pm for both client-side packages</p>
+      <p begin="00:04:22.660" end="00:04:28.180">and potentially if you want to your build orchestration stuff...tooling</p>
+      <p begin="00:04:28.180" end="00:04:32.990">well, that makes a little bit more...and pm and bauer and new get...all</p>
+      <p begin="00:04:32.990" end="00:04:37.530">...the same family new get for assemblies and pm to bring in tooling</p>
+      <p begin="00:04:37.530" end="00:04:42.880">...and then...client-side frameworks that's right like angular</p>
+      <p begin="00:04:42.880" end="00:04:47.310">etc it's all right so now that we've gotten gone through those three so,</p>
+      <p begin="00:04:47.310" end="00:04:51.950">we have we have and pm bauer and new get now we have</p>
+      <p begin="00:04:51.950" end="00:04:53.260">run and</p>
+      <p begin="00:04:53.260" end="00:04:58.580">...one of those yet...are the ones that we bring in using and</p>
+      <p begin="00:04:58.580" end="00:05:04.120">...a couple of tooling components so grunt...kind of</p>
+      <p begin="00:05:04.120" end="00:05:09.630">solve the same problem of orchestrating or running tasks on your client-side</p>
+      <p begin="00:05:09.630" end="00:05:14.550">app so I was mentioning like stuff like compiling lessons...coffee script or bundling</p>
+      <p begin="00:05:14.550" end="00:05:20.130">...stuff like that and what really cool about this is that because we install them</p>
+      <p begin="00:05:20.130" end="00:05:23.270">into in our project individual project just like</p>
+      <p begin="00:05:23.270" end="00:05:27.220">...all-new pegs that's to this specific project right what?</p>
+      <p begin="00:05:27.220" end="00:05:30.730">Happens...that you can have a specific version of a compiler.</p>
+      <p begin="00:05:32.170" end="00:05:34.970">In that one project a different version another project and they</p>
+      <p begin="00:05:34.970" end="00:05:37.980">...it's okay and that's perfectly fine right so you can</p>
+      <p begin="00:05:37.980" end="00:05:44.100">...tooling sort of the compiles all that follow the project so that's new world sort of right so,</p>
+      <p begin="00:05:44.100" end="00:05:48.590">it if you're doing any...five.</p>
+      <p begin="00:05:48.590" end="00:05:50.910">...all that stuff where we also have like</p>
+      <p begin="00:05:50.910" end="00:05:57.520">the idea of shipping the actual runtime...the...is in there and now the client</p>
+      <p begin="00:05:57.520" end="00:06:01.510">service so you'll be able to reliably work on stuff without things messing</p>
+      <p begin="00:06:01.510" end="00:06:06.030">up with that basically means that your entire...now is completely isolated and can be worked</p>
+      <p begin="00:06:06.030" end="00:06:09.470">on by multiple people, you know, shared across get what we are</p>
+      <p begin="00:06:09.470" end="00:06:14.200">bigger team or whatever and you always know that the tool is going to be the same so that music</p>
+      <p begin="00:06:14.200" end="00:06:19.190">runt and gulp what is the role...they do so they they're the ones that</p>
+      <p begin="00:06:19.190" end="00:06:23.120">...with compiling and fondling and magnification and</p>
+      <p begin="00:06:23.120" end="00:06:24.940">...sort of client-side</p>
+      <p begin="00:06:24.940" end="00:06:30.020">...you might have looked at any task so...taking your less and converting in this</p>
+      <p begin="00:06:30.020" end="00:06:32.880">...or taking your type script averting</p>
+      <p begin="00:06:32.880" end="00:06:37.740">into javascript exactly okay so now that we've sort of got a framework we understand that</p>
+      <p begin="00:06:37.740" end="00:06:43.190">and p bauer and new get our for...and packages and then</p>
+      <p begin="00:06:43.190" end="00:06:48.620">grunt and gulp...for running tasks how do you make this magic happen when</p>
+      <p begin="00:06:48.620" end="00:06:53.410">you're using visual studio and that's where you come right yes so we had</p>
+      <p begin="00:06:53.410" end="00:06:56.960">we talk about is like...actually long-time background so we</p>
+      <p begin="00:06:56.960" end="00:07:01.050">have some ideas we had to make sure that these tools which are you</p>
+      <p begin="00:07:01.050" end="00:07:06.440">...primarily used on the command-line today we have to make sure that they would when they</p>
+      <p begin="00:07:06.440" end="00:07:11.080">were like used within visual studio that the command-line...still work in the exact same way I got</p>
+      <p begin="00:07:11.080" end="00:07:16.870">there would be no visual studio specifics needed to consume these new tools right and,</p>
+      <p begin="00:07:16.870" end="00:07:19.660">that the user can opt out saying I don't want to use which</p>
+      <p begin="00:07:19.660" end="00:07:24.280">is due to handle any of this I'll just do it on the command-line or...don't want to use it at</p>
+      <p begin="00:07:24.280" end="00:07:28.760">...you have we have completely divested ourselves of the not invented</p>
+      <p begin="00:07:28.760" end="00:07:32.140">here syndrome and...you said it works their</p>
+      <p begin="00:07:32.140" end="00:07:37.150">...use those tools yep but with one big difference right let's see if we were going to do</p>
+      <p begin="00:07:37.150" end="00:07:42.160">anything in visual studio on top of this stuff it had to be a better experience then what's what</p>
+      <p begin="00:07:42.160" end="00:07:47.580">...out there today usually command-line...you got...shows yes...so?</p>
+      <p begin="00:07:47.580" end="00:07:52.810">Here I have a project...pretty empty is...five...and,</p>
+      <p begin="00:07:52.810" end="00:07:59.760">I thought let's just build a really small little static website...okay so?</p>
+      <p begin="00:07:59.760" end="00:08:07.080">I'm just going to add a index dot html so let's do that.</p>
+      <p begin="00:08:07.080" end="00:08:09.860">...all...that was cleverness that stuff</p>
+      <p begin="00:08:09.860" end="00:08:13.920">you built to that could be web essentials that might be it but I think actually</p>
+      <p begin="00:08:13.920" end="00:08:19.670">is building ok...little hidden snippet ...let's say that I want</p>
+      <p begin="00:08:19.670" end="00:08:23.450">...to build this is website writer and I want to add bootstrap so</p>
+      <p begin="00:08:23.450" end="00:08:25.770">...client-side css framework right to</p>
+      <p begin="00:08:25.770" end="00:08:29.020">makings fit nicely and be respond responsive web and, you know,</p>
+      <p begin="00:08:29.020" end="00:08:33.690">it's I like that framework...lot-of frameworks like them out there like...but, you know,</p>
+      <p begin="00:08:33.690" end="00:08:35.740">but, service...one so now want to</p>
+      <p begin="00:08:35.740" end="00:08:39.550">...in using bauer ok so what I want to do is I want to create.</p>
+      <p begin="00:08:40.590" end="00:08:45.310">A powered adjacent file that is the equivalent if you're familiar with new get that</p>
+      <p begin="00:08:45.310" end="00:08:48.480">equivalent of packages that conflict okay,</p>
+      <p begin="00:08:48.480" end="00:08:50.730">so, we're going to create powder json.</p>
+      <p begin="00:08:51.890" end="00:08:56.400">In the root of the project here there's like a really cool little icon there at the bottom</p>
+      <p begin="00:08:58.110" end="00:09:02.570">...show you we know what your using...well it's because that</p>
+      <p begin="00:09:02.570" end="00:09:07.080">...we're ending up with a lot of json files and the</p>
+      <p begin="00:09:07.080" end="00:09:11.030">jason's sort of looks like similar and it looked like so having a little like on</p>
+      <p begin="00:09:11.030" end="00:09:16.370">...business form of essentials...I'm just experimenting with this...got like.</p>
+      <p begin="00:09:16.370" end="00:09:21.730">So, what really cool is that we have this new jason editor in visual studio and we can now see here that we get like</p>
+      <p begin="00:09:21.730" end="00:09:24.400">...that's the that's I think?</p>
+      <p begin="00:09:24.400" end="00:09:27.470">That's where the experience get better because if you're typing this</p>
+      <p begin="00:09:27.470" end="00:09:31.890">...just a regular edit right you're going to have to be fumbling around make sure you type in the right</p>
+      <p begin="00:09:31.890" end="00:09:36.750">...you getting these definitions from well if we take a look up here we can see that</p>
+      <p begin="00:09:36.750" end="00:09:38.790">there's a url.</p>
+      <p begin="00:09:38.790" end="00:09:44.280">schemas dot org iso schemas dot org has like a lot of different</p>
+      <p begin="00:09:44.280" end="00:09:49.660">...schema files its open-source the cool thing is that any schema that is on</p>
+      <p begin="00:09:49.660" end="00:09:52.810">there visual studio will automatically apply.</p>
+      <p begin="00:09:52.810" end="00:09:57.310">To a file that has specific name that's matched up to that schema file so like in this case we know that</p>
+      <p begin="00:09:57.310" end="00:10:00.620">powered adjacent matches this url this schema</p>
+      <p begin="00:10:00.620" end="00:10:05.530">guidance schema store so if there's like some new with bang z that comes out we'll</p>
+      <p begin="00:10:05.530" end="00:10:09.370">...as long as it's in the jason's...store we don't have to update vision</p>
+      <p begin="00:10:09.370" end="00:10:13.210">...all just set up a...schemas dot org and...to go that's on</p>
+      <p begin="00:10:13.210" end="00:10:16.380">...side no right because it seems like...actually really cool art</p>
+      <p begin="00:10:16.380" end="00:10:19.130">up all right so we need to give it a name your.</p>
+      <p begin="00:10:20.400" end="00:10:25.760">Whatever and web application thirty-eight is the right</p>
+      <p begin="00:10:25.760" end="00:10:29.990">...I whatever...look here you get like nys.</p>
+      <p begin="00:10:29.990" end="00:10:32.470">Descriptions and all that sort of all coming and</p>
+      <p begin="00:10:32.470" end="00:10:36.330">...the brackets because it knows it needs and...object and everything it's a really,</p>
+      <p begin="00:10:36.330" end="00:10:41.070">really great experience typing and...you don't need to put in the quotes and all that kind of just...that so let's</p>
+      <p begin="00:10:41.070" end="00:10:46.830">do bootstrap look here how you get like intelligence from...in, you know,</p>
+      <p begin="00:10:46.830" end="00:10:52.480">...registry online awesome and we can do that so that's the latest version I'm</p>
+      <p begin="00:10:52.480" end="00:10:54.680">going to now save this file.</p>
+      <p begin="00:10:54.680" end="00:10:57.790">...check out what's happening here is...magic's does something here's</p>
+      <p begin="00:10:57.790" end="00:11:02.690">...app in your magic and something is happening here in the manager locker pegged it</p>
+      <p begin="00:11:02.690" end="00:11:08.160">looks like it's calling bauer it's not that...not embedding something you're not</p>
+      <p begin="00:11:08.160" end="00:11:12.150">ok so that's running and we can see dependencies up here.</p>
+      <p begin="00:11:12.150" end="00:11:16.450">...get our...now see bootstrap is install and has a dependency and</p>
+      <p begin="00:11:16.450" end="00:11:21.300">decor right and that's all been brought down to us...dependencies handled by...itself so that</p>
+      <p begin="00:11:21.300" end="00:11:25.650">super-rich...so we just type what I wanted I got intelligence work and I just save the</p>
+      <p begin="00:11:25.650" end="00:11:31.090">file and that's it that's it right the like normally if you would do this and the command-line you have to open</p>
+      <p begin="00:11:31.090" end="00:11:35.870">the command-line you would know what the name...baggage was and the version potentially if you</p>
+      <p begin="00:11:35.870" end="00:11:42.080">...the latest so on now we just say...file this is...yeah,</p>
+      <p begin="00:11:42.080" end="00:11:44.070">That's really nice if we look at the</p>
+      <p begin="00:11:46.110" end="00:11:51.590">...the structure here we can see...have our components, yeah, that's the standard way</p>
+      <p begin="00:11:51.590" end="00:11:55.250">...bauer store stuff you can change that to be a different location</p>
+      <p begin="00:11:55.250" end="00:11:59.360">of different name but by default our installs into our underscore</p>
+      <p begin="00:11:59.360" end="00:12:03.770">component and if you want to change that you have to go into the bauer configuration, yeah, you can just basically</p>
+      <p begin="00:12:03.770" end="00:12:08.530">...our cdot par...file and you can configure that and keep that in your project and that will</p>
+      <p begin="00:12:08.530" end="00:12:12.320">...honor that and that speaks more towards us respecting</p>
+      <p begin="00:12:12.320" end="00:12:16.660">with bowers doing because it's doing fine yes whatever, whatever our however</p>
+      <p begin="00:12:16.660" end="00:12:21.150">bauer works is how wishes to works on top of got it right because underneath</p>
+      <p begin="00:12:21.150" end="00:12:25.160">everything visual studio does is just acting like a proxy between you and the command-line got it</p>
+      <p begin="00:12:25.160" end="00:12:30.870">...then they anything that happens in visual studio visual studio...command-line</p>
+      <p begin="00:12:30.870" end="00:12:35.780">So, anyway, we can see here that we have our bootstrap and we have these different things but,</p>
+      <p begin="00:12:35.780" end="00:12:39.140">we don't have the our components over here so we actually height that.</p>
+      <p begin="00:12:39.140" end="00:12:43.430">...for show it by say show his of the...and it shows up right here because you don't want to be messing with</p>
+      <p begin="00:12:43.430" end="00:12:45.700">...bowers and control, yeah,</p>
+      <p begin="00:12:45.700" end="00:12:49.530">well, you could you just uses...consume everything that's</p>
+      <p begin="00:12:49.530" end="00:12:55.280">in our components but what I like to do is that I like to use gulp that I can</p>
+      <p begin="00:12:55.280" end="00:13:00.010">set up task that copies just the fonts...live...hours about...and put it into my</p>
+      <p begin="00:13:00.010" end="00:13:04.570">avid location I want...our start to see the difference we use bauer to</p>
+      <p begin="00:13:04.570" end="00:13:10.130">bring in part of the ui stuff that we're doing and we're going to use goal is that</p>
+      <p begin="00:13:10.130" end="00:13:14.780">using rooms gulp to take that just the stuff we want out of our components when we</p>
+      <p begin="00:13:14.780" end="00:13:19.730">can compile or sort of movies this thing exactly so in order to install gulp that's</p>
+      <p begin="00:13:19.730" end="00:13:24.800">tooling right where use and pm...right so in pm this is very similar package dot</p>
+      <p begin="00:13:24.800" end="00:13:29.220">json we at that file and now we get the exact same experience</p>
+      <p begin="00:13:31.560" end="00:13:32.140">A version.</p>
+      <p begin="00:13:33.530" end="00:13:34.910">And, nieces some ver</p>
+      <p begin="00:13:34.910" end="00:13:39.870">...looks like this and then we need dependencies actually we</p>
+      <p begin="00:13:39.870" end="00:13:49.720">need the dependencies doesn't really matter and we're going to get got</p>
+      <p begin="00:13:49.720" end="00:13:56.140">And,...through that and I'm going to save this...happening I just say</p>
+      <p begin="00:13:56.140" end="00:14:02.320">for honk magic is now underway are sleeves people...parsley and...pm now shows up your</p>
+      <p begin="00:14:02.320" end="00:14:06.090">...awesome okay so it's installing the background sorta is not done yet</p>
+      <p begin="00:14:06.090" end="00:14:09.370">...a zero here so working on slower.</p>
+      <p begin="00:14:09.370" end="00:14:16.530">So, that means we now bring in the tool gulp and if you look at that in the.</p>
+      <p begin="00:14:16.530" end="00:14:20.730">File explore we have called in the node modules folder...and again</p>
+      <p begin="00:14:20.730" end="00:14:25.580">we don't show node modules over here because this you probably don't</p>
+      <p begin="00:14:25.580" end="00:14:29.680">want to have in your app again there could be teachers where you do but,</p>
+      <p begin="00:14:29.680" end="00:14:34.370">you know, what's...tool...might...it's yeah, if that's what you're using it for exactly</p>
+      <p begin="00:14:34.370" end="00:14:39.580">so now we just have to create a gulp file dot js now this</p>
+      <p begin="00:14:39.580" end="00:14:43.360">is where gulp that's sort of its initial file it has to be</p>
+      <p begin="00:14:43.360" end="00:14:48.460">...file js and I love the we have a little</p>
+      <p begin="00:14:48.460" end="00:14:54.280">...nautical...</p>
+      <p begin="00:14:55.450" end="00:14:58.950">Holy cal not-so-little you get a little</p>
+      <p begin="00:14:58.950" end="00:15:03.360">...the snippet so what I'm going to do not going to use gulp to create a task</p>
+      <p begin="00:15:03.360" end="00:15:07.000">that copies bootstrap from our components into my file</p>
+      <p begin="00:15:07.000" end="00:15:11.540">...verge my project so I'm going to say gulp source.</p>
+      <p begin="00:15:11.540" end="00:15:17.240">And, you're going to use this for most of the...file so-called...to do.</p>
+      <p begin="00:15:17.240" end="00:15:21.330">And, this right here means.</p>
+      <p begin="00:15:21.330" end="00:15:24.280">...the root directory so we're going to take our components.</p>
+      <p begin="00:15:26.910" end="00:15:29.110">And, we're going to take bootstraps so.</p>
+      <p begin="00:15:30.580" end="00:15:33.100">I kinda know what you're right here right I know what</p>
+      <p begin="00:15:33.100" end="00:15:37.810">this so I'm going to say anything that's inside the...</p>
+      <p begin="00:15:37.810" end="00:15:41.830">...this is a glossing pattern so I'm going to take all that I'm going to</p>
+      <p begin="00:15:41.830" end="00:15:46.550">hype that knows how you get intelligence are really rich intelligence...</p>
+      <p begin="00:15:46.550" end="00:15:51.080">gulp dot destinations of this or creates this is a streaming system so this kind</p>
+      <p begin="00:15:51.080" end="00:15:54.870">...this helper built this nation that sort of the file stream that</p>
+      <p begin="00:15:54.870" end="00:16:00.940">...the on-disk and we're just going to give that a destination so let's create new</p>
+      <p begin="00:16:00.940" end="00:16:03.540">...lip and bootstrap.</p>
+      <p begin="00:16:03.540" end="00:16:05.170">Just like that.</p>
+      <p begin="00:16:05.170" end="00:16:08.390">I'm going to save this file so now.</p>
+      <p begin="00:16:08.390" end="00:16:13.420">We have the new task...all...cools zoom...that's cool right.</p>
+      <p begin="00:16:13.420" end="00:16:16.650">So, now we can just execute that has...created.</p>
+      <p begin="00:16:16.650" end="00:16:18.910">Copyright here.</p>
+      <p begin="00:16:18.910" end="00:16:23.810">It...you may...I...make sure that everyone can see that</p>
+      <p begin="00:16:23.810" end="00:16:28.660">were just literally running gulp yes I mean it's not it's not like we</p>
+      <p begin="00:16:28.660" end="00:16:35.050">...anything this is goal this is the output of a node js process.</p>
+      <p begin="00:16:35.050" end="00:16:38.830">So, we see we ran it and we now have a lip folder with a boutros folder and</p>
+      <p begin="00:16:38.830" end="00:16:45.140">we have all this stuff up here right now that's awesome so very cool and just to make sure that you see</p>
+      <p begin="00:16:45.140" end="00:16:49.670">here how we're not actually be...doing anything that's not already support if</p>
+      <p begin="00:16:49.670" end="00:16:54.190">we just open the command-line your I can just...gulp let me just</p>
+      <p begin="00:16:55.260" end="00:16:57.310">Gulp copy.</p>
+      <p begin="00:16:57.310" end="00:17:04.750">Let's execute that and we see we get the...same output...is...not doing anything magical they're just</p>
+      <p begin="00:17:04.750" end="00:17:12.739">...our the same way you...so that's important to keep in mind.</p>
+      <p begin="00:17:12.739" end="00:17:15.029">...pretty cool you're right,</p>
+      <p begin="00:17:15.029" end="00:17:20.279">yeah, is there anything else...here's my question what's...grunt and goal</p>
+      <p begin="00:17:20.279" end="00:17:24.759">the same it seems like gulp is more code oriented and grunt is more</p>
+      <p begin="00:17:24.759" end="00:17:27.559">...definition oriented is...good assessment, yeah,</p>
+      <p begin="00:17:27.559" end="00:17:32.789">that's one way of looking at I think there's so, I think...was sort of the first one out there and it was the one that</p>
+      <p begin="00:17:32.789" end="00:17:38.250">sort of revolutionized the client-side workflow adult came a little later and was</p>
+      <p begin="00:17:38.250" end="00:17:42.530">build on different principles like everything is a stream right and if you treat everything</p>
+      <p begin="00:17:42.530" end="00:17:47.170">is a stream it's very easy to orchestrate different things so you might orchestrate things like the first thing you</p>
+      <p begin="00:17:47.170" end="00:17:51.490">do is that you find a source file...less file and,</p>
+      <p begin="00:17:51.490" end="00:17:56.330">you want...rather compiler on it right so you hyped that stream that</p>
+      <p begin="00:17:56.330" end="00:18:02.070">fashion to less compiler that again return to stream that has the compile</p>
+      <p begin="00:18:02.070" end="00:18:07.150">...and you can run that to...auto prefix or to a...fire?</p>
+      <p begin="00:18:07.150" end="00:18:11.320">And, then at the end you can put it on...right with the gulp tests</p>
+      <p begin="00:18:11.320" end="00:18:14.910">...offense you can orchestrate very cool</p>
+      <p begin="00:18:14.910" end="00:18:20.540">way like that so gulp gives you that grunt does not in run...a little bit different and you know,</p>
+      <p begin="00:18:20.540" end="00:18:25.160">that's fine whatever whichever one you like we have equal support for them so that's awesome, yeah,</p>
+      <p begin="00:18:25.160" end="00:18:28.870">so, just to finish up is this something that you can</p>
+      <p begin="00:18:28.870" end="00:18:33.140">use and now is or isn't something you have to use visual studio twenty fifteen</p>
+      <p begin="00:18:33.140" end="00:18:37.900">for so the best experience here you get with visions two-twenty fifteen</p>
+      <p begin="00:18:37.900" end="00:18:42.470">okay there are however extensions out there for with visions two-twenty</p>
+      <p begin="00:18:42.470" end="00:18:47.200">thirteen ok so there's the task explore so this entire</p>
+      <p begin="00:18:47.200" end="00:18:50.940">...you see down here from this one is out for visual studio</p>
+      <p begin="00:18:50.940" end="00:18:54.420">twenty thirteen as a free download...is not</p>
+      <p begin="00:18:54.420" end="00:19:00.130">...full featured as this but most of it you get so, that's good that's one of them the other</p>
+      <p begin="00:19:00.130" end="00:19:06.050">one is called package intelligence and that's one that give you like the our</p>
+      <p begin="00:19:06.050" end="00:19:07.920">and pm intelligence in the...that is</p>
+      <p begin="00:19:07.920" end="00:19:12.850">...school that when you save the file automatically app installswhen you open</p>
+      <p begin="00:19:12.850" end="00:19:17.680">the project for the first-time and you don't have like the say the node modules in the</p>
+      <p begin="00:19:17.680" end="00:19:22.570">our components folder because you just cloning from get up and didn't check in those files will</p>
+      <p begin="00:19:22.570" end="00:19:27.850">automatically restore those packages for-you that's twenty fifteen stuff that no that, yeah, that's why that's</p>
+      <p begin="00:19:27.850" end="00:19:31.890">...twenty fifteen but you can get it that's also in the package intelligence got it</p>
+      <p begin="00:19:31.890" end="00:19:36.670">...two-twenty thirteen so if you go to visual studio gallery dot com that's our we have all</p>
+      <p begin="00:19:36.670" end="00:19:42.760">are extensions package intelligence and...and grunt launcher</p>
+      <p begin="00:19:42.760" end="00:19:47.430">...launcher is...gives you some right click context menu...the solution</p>
+      <p begin="00:19:47.430" end="00:19:52.950">explore to do some things that...don't need that and two-twenty fifteen...a built-in yes</p>
+      <p begin="00:19:52.950" end="00:19:57.680">...except for one thing but that's coming all right...thanks so much refunding some time was sort of the</p>
+      <p begin="00:19:57.680" end="00:20:02.950">miss defying all these tools for client-side javascript development manages a pleasure</p>
+      <p begin="00:20:02.950" end="00:20:05.250">...thanks for watching and we'll see in...</p>
+
+    </div>
+  </body>
+</tt>

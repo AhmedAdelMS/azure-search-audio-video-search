@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.894</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.520" end="00:00:04.650">Welcome my name is claudio I'm a program managing the</p>
+      <p begin="00:00:04.650" end="00:00:09.650">...team and today I'm here to present one of</p>
+      <p begin="00:00:09.650" end="00:00:14.690">the programming model that are available for a newvery</p>
+      <p begin="00:00:14.690" end="00:00:18.840">...technology that is...service public?</p>
+      <p begin="00:00:18.840" end="00:00:22.180">So, today we are going to talk about</p>
+      <p begin="00:00:22.180" end="00:00:25.960">these technology it was announced...week</p>
+      <p begin="00:00:25.960" end="00:00:31.650">so you should probably you probably had the chance to read about it and,</p>
+      <p begin="00:00:31.650" end="00:00:36.980">you may also have seen these slide this is basically what</p>
+      <p begin="00:00:36.980" end="00:00:41.000">service public is a...I knew framework I</p>
+      <p begin="00:00:41.000" end="00:00:45.650">...runtime environment...design to allow</p>
+      <p begin="00:00:45.650" end="00:00:50.230">I scalable michael service base application two-run</p>
+      <p begin="00:00:50.230" end="00:00:54.100">...and also on prime as you can see that are a lot of</p>
+      <p begin="00:00:54.100" end="00:00:59.070">different features that comes b with the application with the framework itself</p>
+      <p begin="00:00:59.070" end="00:01:04.140">there is a high-density there is high availability the ability to scale application</p>
+      <p begin="00:01:04.140" end="00:01:09.670">or are feature that artability in the platform in addition to that there are also</p>
+      <p begin="00:01:10.960" end="00:01:16.030">different programming models are different way to write application four-d</p>
+      <p begin="00:01:16.030" end="00:01:21.130">...platform and today we're going to discuss one of them that</p>
+      <p begin="00:01:21.130" end="00:01:26.270">these core what we codyreliable actors?</p>
+      <p begin="00:01:26.270" end="00:01:29.680">Let me move very quickly</p>
+      <p begin="00:01:29.680" end="00:01:33.790">are very brief introduction if you're not already familiar with the actor</p>
+      <p begin="00:01:33.790" end="00:01:39.240">...is not a new idea it was invented about forty years</p>
+      <p begin="00:01:39.240" end="00:01:46.130">ago by car you would he basically designed is a thought about these new</p>
+      <p begin="00:01:46.130" end="00:01:51.200">model...application that was base on independent</p>
+      <p begin="00:01:52.340" end="00:01:55.580">units where both state?</p>
+      <p begin="00:01:56.600" end="00:01:59.950">And, code could be encapsulated together and then</p>
+      <p begin="00:01:59.950" end="00:02:04.020">...communication was done through some sort of messaging</p>
+      <p begin="00:02:04.020" end="00:02:10.930">system so that model these...became a very interesting</p>
+      <p begin="00:02:10.930" end="00:02:14.960">in the last few years because of the new requirement</p>
+      <p begin="00:02:14.960" end="00:02:21.200">...highly scalable application are there are nowyou know, we'd cloud solution that are</p>
+      <p begin="00:02:21.200" end="00:02:25.560">you can potentially ev access to under the of course so now the challenges</p>
+      <p begin="00:02:25.560" end="00:02:29.110">...to be the application that can really leverage that sort of</p>
+      <p begin="00:02:29.110" end="00:02:34.260">...infrastructure and act torso seems to be a one-way</p>
+      <p begin="00:02:34.260" end="00:02:39.010">that you can design application that really allows you to leverage that very</p>
+      <p begin="00:02:39.010" end="00:02:44.010">powerful infrastructure by keeping somehow the idea the design of the application</p>
+      <p begin="00:02:44.010" end="00:02:50.640">a relatively simple in addition to these encapsulation of coding state</p>
+      <p begin="00:02:50.640" end="00:02:55.970">a synchronous communication a...social provide the ability to</p>
+      <p begin="00:02:55.970" end="00:03:00.210">...single...and activity supposed to be single...so</p>
+      <p begin="00:03:00.210" end="00:03:04.890">...complexity of designing and daily with multi-threaded type of</p>
+      <p begin="00:03:04.890" end="00:03:09.370">...that you can avoid we dactor...there are</p>
+      <p begin="00:03:09.370" end="00:03:13.810">...implementations are both in the sort of not dot net toward</p>
+      <p begin="00:03:13.810" end="00:03:18.760">bottles on the other...runtime environments probably one of the most famous one</p>
+      <p begin="00:03:18.760" end="00:03:20.880">...the one used by arlen.</p>
+      <p begin="00:03:21.920" end="00:03:25.030">So, less dearly the bit into</p>
+      <p begin="00:03:25.030" end="00:03:29.770">why we need an actor model so in the old days the application word be</p>
+      <p begin="00:03:29.770" end="00:03:34.620">used in the multiple layers...typical trickier striper level otherwise</p>
+      <p begin="00:03:34.620" end="00:03:38.210">...web from ten there was a middle tier or...business logical</p>
+      <p begin="00:03:38.210" end="00:03:42.130">...application...typo layer and then there was</p>
+      <p begin="00:03:42.130" end="00:03:47.480">an axis data base and storage layer rd challenge we did that type of</p>
+      <p begin="00:03:47.480" end="00:03:50.980">model there was a really dealing with the discover ability</p>
+      <p begin="00:03:50.980" end="00:03:55.260">of the application so typically in all the application may be becomes very</p>
+      <p begin="00:03:55.260" end="00:03:59.970">...more customers want to connect to it and then what happens is that the first</p>
+      <p begin="00:03:59.970" end="00:04:02.760">lehrer layer probably is...a web from</p>
+      <p begin="00:04:02.760" end="00:04:07.870">...needs to be replicated to provide to be able to...more traffic</p>
+      <p begin="00:04:07.870" end="00:04:12.820">then you know, the next level would be probably the application server layer and then</p>
+      <p begin="00:04:12.820" end="00:04:17.060">...database layer...each of these steps as a</p>
+      <p begin="00:04:17.060" end="00:04:20.780">developer it was always challenging to try to find the right</p>
+      <p begin="00:04:20.780" end="00:04:23.910">tradeoff between adding more components like</p>
+      <p begin="00:04:23.910" end="00:04:29.550">...a q system in order to piper and...and q requested and,</p>
+      <p begin="00:04:29.550" end="00:04:33.810">maybe...systems in order to provide...low latency or</p>
+      <p begin="00:04:33.810" end="00:04:40.090">reduced latency for end-users we the internet skate or cloud not</p>
+      <p begin="00:04:40.090" end="00:04:43.890">if type of applications what happens is that the idea is to be</p>
+      <p begin="00:04:43.890" end="00:04:48.370">the application a very different weight and the way is to create</p>
+      <p begin="00:04:48.370" end="00:04:53.520">...something that is...finer granularity over</p>
+      <p begin="00:04:53.520" end="00:04:58.490">...components...application and try to build basically what now is</p>
+      <p begin="00:04:58.490" end="00:05:03.470">...as a michael service architecture so basically split all the functionality your application...</p>
+      <p begin="00:05:03.470" end="00:05:08.340">more depose more manageable components that can potential be replicated</p>
+      <p begin="00:05:08.340" end="00:05:12.890">base...the workload and the idea is to provide elasticity the</p>
+      <p begin="00:05:12.890" end="00:05:17.090">...based...in such a way that the system somehow is</p>
+      <p begin="00:05:17.090" end="00:05:21.110">able to react automatically base on the demand so on the left on the</p>
+      <p begin="00:05:21.110" end="00:05:24.980">right you see that there is the sort of a new idea where you have</p>
+      <p begin="00:05:24.980" end="00:05:29.500">typically a from tandy can be a load balance or something that provides the public can</p>
+      <p begin="00:05:29.500" end="00:05:36.580">point and then there are machines, you know, can be, you know,a cluster what we</p>
+      <p begin="00:05:36.580" end="00:05:40.890">can call a cluster any side that cluster there are multiple independent components</p>
+      <p begin="00:05:40.890" end="00:05:43.970">...interact with each other in order to provide the functionality</p>
+      <p begin="00:05:43.970" end="00:05:48.990">...required so in this...new model?</p>
+      <p begin="00:05:48.990" end="00:05:52.890">We have the service fabric that is the underneath infrastructure so that's sort of</p>
+      <p begin="00:05:52.890" end="00:05:54.410">cluster management</p>
+      <p begin="00:05:54.410" end="00:05:59.560">...that we need and then we have the fabric reliable</p>
+      <p begin="00:05:59.560" end="00:06:04.600">actors that the programming model that he we can add on top</p>
+      <p begin="00:06:04.600" end="00:06:09.920">of the runtime in order to build our applications and then beam base on</p>
+      <p begin="00:06:09.920" end="00:06:15.980">...type of design we get some of the feature that comes with the actor</p>
+      <p begin="00:06:15.980" end="00:06:20.650">...and typically the resource isolation as a were saying before the ability</p>
+      <p begin="00:06:20.650" end="00:06:24.130">...state encoder together the are synchronous</p>
+      <p begin="00:06:24.130" end="00:06:28.670">communication okay that is very important in order to achieve scaleability and also</p>
+      <p begin="00:06:28.670" end="00:06:33.590">...single...so when I write to the code for my actor I don't really need to</p>
+      <p begin="00:06:33.590" end="00:06:37.160">...into complex...type of</p>
+      <p begin="00:06:37.160" end="00:06:43.570">code that clearly is very difficult to write and get it right so in addition</p>
+      <p begin="00:06:43.570" end="00:06:45.590">of being based on the service</p>
+      <p begin="00:06:45.590" end="00:06:50.960">...fabric what do we get is some additional benefit and one of them is</p>
+      <p begin="00:06:50.960" end="00:06:53.790">...transparency location</p>
+      <p begin="00:06:53.790" end="00:06:58.290">transparency basically means that in order for me to be able to interact</p>
+      <p begin="00:06:58.290" end="00:07:03.130">to send quote-unquote send a message to an actor I really don't need to know where that</p>
+      <p begin="00:07:03.130" end="00:07:06.850">...is going to be located within my cluster I</p>
+      <p begin="00:07:06.850" end="00:07:09.210">...very easy way to porting put</p>
+      <p begin="00:07:09.210" end="00:07:13.260">...to that doctor in such a way that I don't really need to manage</p>
+      <p begin="00:07:13.260" end="00:07:17.400">format developer from my application point of view the actual location</p>
+      <p begin="00:07:17.400" end="00:07:24.040">...being able tokeep track aware my actor are going to be allocated.</p>
+      <p begin="00:07:24.040" end="00:07:28.300">In addition to that we basically built the synchronous communication</p>
+      <p begin="00:07:29.350" end="00:07:34.150">model is also based on our request response type of...so...very</p>
+      <p begin="00:07:34.150" end="00:07:39.230">easy-to-use I send...to an actor the request is going to be a synchronous so</p>
+      <p begin="00:07:39.230" end="00:07:43.840">...not going to be blocking from my side but at the same time I have this pattern over</p>
+      <p begin="00:07:43.840" end="00:07:49.190">...respond so I know that I will...back so the</p>
+      <p begin="00:07:49.190" end="00:07:54.580">logically my called doesn't need to really have to deal with complex a</p>
+      <p begin="00:07:54.580" end="00:07:59.020">synchronous are being able to track for instance what type of...in order to be</p>
+      <p begin="00:07:59.020" end="00:08:05.770">...for instance to process...mesh search coming back from another actor.</p>
+      <p begin="00:08:05.770" end="00:08:07.960">And, then the thing that is</p>
+      <p begin="00:08:07.960" end="00:08:12.180">...windows fabric is the automatic fail over so</p>
+      <p begin="00:08:12.180" end="00:08:17.390">...an actor the actor my failed for some sort of reason can be the code itself that is</p>
+      <p begin="00:08:17.390" end="00:08:21.760">fairly already maybe that is the node where that specific actor was running that</p>
+      <p begin="00:08:21.760" end="00:08:24.650">...paley and what are the windows fabric a</p>
+      <p begin="00:08:24.650" end="00:08:29.590">infrastructure does is ultimately reallocate the actor on another</p>
+      <p begin="00:08:29.590" end="00:08:34.240">node or potentially restart the know the actively...in such a way that from</p>
+      <p begin="00:08:34.240" end="00:08:40.360">a developer point of view I don't have to deal with the sort-of failed over type of scenarios?</p>
+      <p begin="00:08:40.360" end="00:08:42.200">In addition to that...other important</p>
+      <p begin="00:08:42.200" end="00:08:46.920">feature is I have the ability to upgrade.</p>
+      <p begin="00:08:46.920" end="00:08:51.660">The actors inwhat we call...downtime type of fashion so I</p>
+      <p begin="00:08:51.660" end="00:08:56.040">ever running service the service is compose of multiple actors the</p>
+      <p begin="00:08:56.040" end="00:09:01.110">actors can be a upgraded over time without</p>
+      <p begin="00:09:01.110" end="00:09:06.220">any interruption the worst-case scenario is my the users on the other side</p>
+      <p begin="00:09:06.220" end="00:09:11.360">will see a very is more of...are in there sort of interaction with the</p>
+      <p begin="00:09:11.360" end="00:09:14.620">...but nothing is sort of lost I don't need to start</p>
+      <p begin="00:09:14.620" end="00:09:19.700">a machine I do need to go through complex deployment process?</p>
+      <p begin="00:09:19.700" end="00:09:24.750">So, all of these are...that comes with the actor</p>
+      <p begin="00:09:24.750" end="00:09:29.320">...being built on top of the service fabric infrastructure so</p>
+      <p begin="00:09:29.320" end="00:09:35.210">let's see what more in detail what does it mean to build really an actor</p>
+      <p begin="00:09:35.210" end="00:09:38.980">...solution so in order to build</p>
+      <p begin="00:09:38.980" end="00:09:43.390">...liable actors of application the first thing that</p>
+      <p begin="00:09:43.390" end="00:09:48.410">they need to do and you will see that the process the time following is something that these really should be very from</p>
+      <p begin="00:09:48.410" end="00:09:54.020">...nothing really new is very similar to the same process that you go through by building</p>
+      <p begin="00:09:54.020" end="00:09:57.260">a standard...oriented base that type of</p>
+      <p begin="00:09:57.260" end="00:10:00.900">application so the first thing that I do is I define</p>
+      <p begin="00:10:00.900" end="00:10:06.050">the actor interfaces so basically the actor interface define what do we can</p>
+      <p begin="00:10:06.050" end="00:10:11.150">...quote-unquote the messages so the type of messages that</p>
+      <p begin="00:10:11.150" end="00:10:15.950">the actor is able to process and will allow a third-party that can be</p>
+      <p begin="00:10:15.950" end="00:10:20.100">...application already can be another actor to interact with that specific</p>
+      <p begin="00:10:20.100" end="00:10:25.700">...the time about to define...step I just need to implement</p>
+      <p begin="00:10:26.710" end="00:10:32.430">dee interface...a class that derided for something</p>
+      <p begin="00:10:32.430" end="00:10:37.880">that these called an actor so basically you take like you would do in any sort of</p>
+      <p begin="00:10:37.880" end="00:10:42.610">object-oriented type of application you take a class you derive from it you</p>
+      <p begin="00:10:42.610" end="00:10:48.550">implementer interface that basically...business logic the</p>
+      <p begin="00:10:48.550" end="00:10:56.500">code that define my actor in addition to that we'll see I have a slide</p>
+      <p begin="00:10:56.500" end="00:11:01.800">about that later that we also cr we actually go into</p>
+      <p begin="00:11:01.800" end="00:11:06.070">...package these actor together in such a way that they become quote-unquote</p>
+      <p begin="00:11:06.070" end="00:11:07.780">...service ...a</p>
+      <p begin="00:11:07.780" end="00:11:12.840">...entity that can really run inside the service public infrastructure then that</p>
+      <p begin="00:11:12.840" end="00:11:17.300">thirst type is I need to registered the actor and basically registering the</p>
+      <p begin="00:11:17.300" end="00:11:21.500">actor means that I led to the service probability infrastructure</p>
+      <p begin="00:11:21.500" end="00:11:26.170">node that there is a new quote-unquote type a new entity that</p>
+      <p begin="00:11:26.170" end="00:11:32.130">can be instantiated so any other application...service</p>
+      <p begin="00:11:32.130" end="00:11:37.420">or program that is running we...service tropic infrastructure</p>
+      <p begin="00:11:37.420" end="00:11:42.120">will be able to use these new entity and then the last</p>
+      <p begin="00:11:42.120" end="00:11:47.730">step is in order to communicate with actors so if I want to</p>
+      <p begin="00:11:47.730" end="00:11:52.480">evoke one specific message I want to send a measure to an actor the way that I do it is</p>
+      <p begin="00:11:52.480" end="00:11:56.630">with something that we call an actor proxy inductor proxy is</p>
+      <p begin="00:11:56.630" end="00:12:00.790">a class of the entity that provide that sort of location</p>
+      <p begin="00:12:00.790" end="00:12:05.280">transparency that is an additional benefit of the actor</p>
+      <p begin="00:12:05.280" end="00:12:10.550">...running on top of the service public so I really don't need to a I have complex</p>
+      <p begin="00:12:10.550" end="00:12:16.020">business logic in myapplication in order to end-all where, you know, and,</p>
+      <p begin="00:12:16.020" end="00:12:20.680">to manage where...are located I can use the actor proxy</p>
+      <p begin="00:12:20.680" end="00:12:23.690">...provide me all the ability of in all</p>
+      <p begin="00:12:23.690" end="00:12:26.260">...fail over management so let's assume that</p>
+      <p begin="00:12:26.260" end="00:12:30.000">I'm working with an actor that specific actor is</p>
+      <p begin="00:12:30.000" end="00:12:33.820">...one node in the cluster that node my...so the activities</p>
+      <p begin="00:12:33.820" end="00:12:39.050">...allocated to another node by using the actor proxy I can just core</p>
+      <p begin="00:12:39.050" end="00:12:43.590">reactor again I don't really need to figure out or no even know that</p>
+      <p begin="00:12:43.590" end="00:12:44.240">...doctor</p>
+      <p begin="00:12:44.240" end="00:12:49.130">...actually moved to a different node so the actor proxy provide a very easy way to interact</p>
+      <p begin="00:12:49.130" end="00:12:54.250">with actors actor proxy is use both my client application and</p>
+      <p begin="00:12:54.250" end="00:12:57.670">we will see different types of client applications but also between</p>
+      <p begin="00:12:57.670" end="00:13:01.550">...actor to actor type of communication?</p>
+      <p begin="00:13:01.550" end="00:13:06.910">So, before we go into more some real code that we can show I want to spend, you</p>
+      <p begin="00:13:06.910" end="00:13:11.850">know, one-minute to explain the our applications and services are really package</p>
+      <p begin="00:13:11.850" end="00:13:17.290">and deployed on theservice public infrastructure in this case I have a</p>
+      <p begin="00:13:17.290" end="00:13:21.190">...I have a set of actors the...the fine I can,</p>
+      <p begin="00:13:21.190" end="00:13:24.780">you know, I have a lot of flexibility I can decide that, you know,</p>
+      <p begin="00:13:24.780" end="00:13:27.270">one...is one service</p>
+      <p begin="00:13:27.270" end="00:13:32.020">...the service superstructure or I can package multiple...together</p>
+      <p begin="00:13:32.020" end="00:13:37.090">...one single service so I have basically one entity that di I take all</p>
+      <p begin="00:13:37.090" end="00:13:41.140">the code I package together and potentially I might have also some</p>
+      <p begin="00:13:41.140" end="00:13:47.790">configuration some doctor that I need to package along with my code I</p>
+      <p begin="00:13:47.790" end="00:13:52.330">package in something that the school of service package and then I have</p>
+      <p begin="00:13:53.640" end="00:13:56.360">an application package that is basically may</p>
+      <p begin="00:13:56.360" end="00:14:02.700">logic unit of deployment for service public for service fabric and what</p>
+      <p begin="00:14:02.700" end="00:14:07.650">the application package gives me is basically three different things number one is</p>
+      <p begin="00:14:07.650" end="00:14:12.520">the you need to where I can manage the lifetime of my application so</p>
+      <p begin="00:14:12.520" end="00:14:16.950">...application is deployed...application is activated...the</p>
+      <p begin="00:14:16.950" end="00:14:22.380">...okay the second thing is versioning and application define I</p>
+      <p begin="00:14:22.380" end="00:14:26.420">can have multiple version of an application and then is the</p>
+      <p begin="00:14:26.420" end="00:14:31.370">logical unit in which I want to version one specific set potentially</p>
+      <p begin="00:14:31.370" end="00:14:37.830">of services so if I have a set of services that define my maybe my</p>
+      <p begin="00:14:37.830" end="00:14:42.740">end-to-end solution for a customer that becomes an application that I can rev</p>
+      <p begin="00:14:42.740" end="00:14:48.540">...have I can deploy multiple version of that by taking care...</p>
+      <p begin="00:14:48.540" end="00:14:54.000">a managing all the different components as one singlelogical unit and</p>
+      <p begin="00:14:54.000" end="00:14:57.990">then...the same time...provides isolation</p>
+      <p begin="00:14:57.990" end="00:15:03.000">...the application itself and all...services inside application</p>
+      <p begin="00:15:03.000" end="00:15:08.210">can run...specific forty-some security requirements that</p>
+      <p begin="00:15:09.880" end="00:15:14.660">...application-level however really...very...type of control over</p>
+      <p begin="00:15:14.660" end="00:15:17.500">...package my different services that by the way I can be</p>
+      <p begin="00:15:17.500" end="00:15:20.480">...a across multiple applications or</p>
+      <p begin="00:15:20.480" end="00:15:24.180">...configured that specific application in order to run in the service</p>
+      <p begin="00:15:24.180" end="00:15:29.460">fabric so once I have my service package I package them, you know,</p>
+      <p begin="00:15:29.460" end="00:15:31.950">I can have multiple...case, you know,</p>
+      <p begin="00:15:31.950" end="00:15:36.890">I have to services another point I have one single unita that can deployed in the service</p>
+      <p begin="00:15:36.890" end="00:15:42.180">public infrastructure so let's goal and, show some code</p>
+      <p begin="00:15:42.180" end="00:15:47.210">sothe first thing that they want to show is rd a developer experience</p>
+      <p begin="00:15:47.210" end="00:15:53.430">looks like a so first of all for service fabric d typical</p>
+      <p begin="00:15:53.430" end="00:15:59.450">developer environment is compose by clearly visual studio with service poverty</p>
+      <p begin="00:15:59.450" end="00:16:02.370">...a new project system that allows you to</p>
+      <p begin="00:16:02.370" end="00:16:05.850">...to different type of service fabric</p>
+      <p begin="00:16:05.850" end="00:16:10.760">our services and applications and then is also...on the</p>
+      <p begin="00:16:10.760" end="00:16:16.440">loca cluster so only your local machine in this case might laptop I have</p>
+      <p begin="00:16:16.440" end="00:16:21.880">...runtime environment that I can deploy that can be deployed on</p>
+      <p begin="00:16:21.880" end="00:16:25.220">...social multiple machines everything is running on</p>
+      <p begin="00:16:25.220" end="00:16:28.890">the same on the same box is sort of similar to the as</p>
+      <p begin="00:16:28.890" end="00:16:33.330">...emulator sort of thing but...very close to</p>
+      <p begin="00:16:33.330" end="00:16:38.160">...the runtime environment is going-to be so...application...ranch</p>
+      <p begin="00:16:38.160" end="00:16:43.470">...your local cluster is going to run a aziz on a production environment on</p>
+      <p begin="00:16:43.470" end="00:16:49.860">...so here I have visual studio I installed the service fabric</p>
+      <p begin="00:16:51.110" end="00:16:55.930">...so let me first of all show the canonical</p>
+      <p begin="00:16:55.930" end="00:16:59.440">low war-type of application so once you go into</p>
+      <p begin="00:16:59.440" end="00:17:03.440">the visual studio environment you have clearly the ability so let me</p>
+      <p begin="00:17:03.440" end="00:17:09.190">show very quickly the ability to create a new project so under clouded</p>
+      <p begin="00:17:09.190" end="00:17:13.720">...a new category service fabric and you see that...you can create</p>
+      <p begin="00:17:13.720" end="00:17:18.130">a different type of services so the visual studio tools for service</p>
+      <p begin="00:17:18.130" end="00:17:22.610">fabric we provide you are set of templates that you can is in order to quote-unquote</p>
+      <p begin="00:17:22.610" end="00:17:25.440">...to the type of service that you want</p>
+      <p begin="00:17:25.440" end="00:17:31.090">to build in our case you see that I will focus on the service public...service-type</p>
+      <p begin="00:17:31.090" end="00:17:38.020">all projects so here just to save a little bit of time ip recreatedthe typical</p>
+      <p begin="00:17:38.020" end="00:17:43.930">...war-type of scenario so let me sure...our solution will look like so I</p>
+      <p begin="00:17:43.930" end="00:17:49.100">...first of...we discuss the step number one is to define the?</p>
+      <p begin="00:17:49.100" end="00:17:53.830">Interfaces so when they create a solution I have one project in my solution that</p>
+      <p begin="00:17:53.830" end="00:17:58.610">defined interfaces here you see that I have in this case</p>
+      <p begin="00:17:58.610" end="00:18:01.280">...interfaces very simple...have one single</p>
+      <p begin="00:18:01.280" end="00:18:05.760">method that is say award and the only thing that I need to do is</p>
+      <p begin="00:18:05.760" end="00:18:10.400">to derived interface from I actor in such a way that the disservice</p>
+      <p begin="00:18:10.400" end="00:18:15.110">property professionals...to end-all and...to manage these interfaces in this</p>
+      <p begin="00:18:15.110" end="00:18:21.390">specific...when you create a new project these the...creates</p>
+      <p begin="00:18:21.390" end="00:18:25.330">...simple interface already so what you can do is just</p>
+      <p begin="00:18:25.330" end="00:18:29.560">to customize and...that these already provided by you by</p>
+      <p begin="00:18:29.560" end="00:18:34.310">...so after I have the interface to in this case I...is a said,</p>
+      <p begin="00:18:34.310" end="00:18:36.810">you know, I create the only one method that</p>
+      <p begin="00:18:36.810" end="00:18:42.140">...say yellow I go to the next part of the application that</p>
+      <p begin="00:18:42.140" end="00:18:45.960">is in this case the award and hilo ward is what we</p>
+      <p begin="00:18:45.960" end="00:18:50.110">...just before in...before is the service so the it is</p>
+      <p begin="00:18:50.110" end="00:18:53.470">...logically unit where the actor is going to be</p>
+      <p begin="00:18:53.470" end="00:18:57.500">packaged inside in such a way that the becomes an entity that</p>
+      <p begin="00:18:57.500" end="00:19:01.800">camron inside the service...infrastructure so the thing that they need to do in this</p>
+      <p begin="00:19:01.800" end="00:19:09.870">...project is let me actually take dl award?</p>
+      <p begin="00:19:09.870" end="00:19:14.400">Actor so you see that here I have my actor I</p>
+      <p begin="00:19:14.400" end="00:19:19.160">have yellow actor either...for one specificclass that these the</p>
+      <p begin="00:19:19.160" end="00:19:24.330">actor class and then the thing that I'm doing is to create and</p>
+      <p begin="00:19:24.330" end="00:19:26.760">...the award the</p>
+      <p begin="00:19:26.760" end="00:19:31.980">interface so as you can see here visual studio raid p...some</p>
+      <p begin="00:19:31.980" end="00:19:36.740">border...type of code that is the typical code that you need to</p>
+      <p begin="00:19:36.740" end="00:19:41.500">ave we d an actor and let me walk through very quickly some of the</p>
+      <p begin="00:19:43.640" end="00:19:48.000">...so we have a method for into that is called on activate these</p>
+      <p begin="00:19:48.000" end="00:19:53.170">method these is called when the actor is going to be activated by the runtime</p>
+      <p begin="00:19:53.170" end="00:19:57.890">environment so here for instance you can write some initialization code that you</p>
+      <p begin="00:19:57.890" end="00:20:02.810">may need to every your application typically you might have a configure file where you</p>
+      <p begin="00:20:02.810" end="00:20:07.530">re some parameters audio connect to some sort of external</p>
+      <p begin="00:20:07.530" end="00:20:12.020">...can system in order to collect some data that needs to be available while the</p>
+      <p begin="00:20:12.020" end="00:20:16.960">...is oper running there is another method that is...</p>
+      <p begin="00:20:16.960" end="00:20:21.860">on the activate so when the actor is going to be the activated I will</p>
+      <p begin="00:20:21.860" end="00:20:25.970">spend few words later to explain what that means and then as you can</p>
+      <p begin="00:20:25.970" end="00:20:31.120">see here I have basically the implementation of the say hello</p>
+      <p begin="00:20:31.120" end="00:20:36.590">so say aloe in this case basically take one parameter and what I'm doing is basically</p>
+      <p begin="00:20:36.590" end="00:20:41.390">just sending back to we what whatever is calling me in</p>
+      <p begin="00:20:41.390" end="00:20:45.870">this specific case basically one stream we degree thing that I got with you know, a</p>
+      <p begin="00:20:45.870" end="00:20:49.740">string so is very simple very simple implementation</p>
+      <p begin="00:20:49.740" end="00:20:54.800">so one more note you see that here I have also the is classes service</p>
+      <p begin="00:20:54.800" end="00:21:00.950">event source class this is something that comes again with the template that is generated</p>
+      <p begin="00:21:00.950" end="00:21:06.990">by visual studio and basically give you the ability to create a</p>
+      <p begin="00:21:06.990" end="00:21:09.860">...events they can be used for logging in</p>
+      <p begin="00:21:09.860" end="00:21:15.320">tracing type of scenarios so along with</p>
+      <p begin="00:21:15.320" end="00:21:21.030">being able to debug my application I also have the ability to have a very a</p>
+      <p begin="00:21:21.030" end="00:21:25.200">reach...eighty w set of events that I can fully</p>
+      <p begin="00:21:25.200" end="00:21:27.900">...such a way that when my application is deploys</p>
+      <p begin="00:21:27.900" end="00:21:33.380">...I have the ability to figure out what is going on with my system</p>
+      <p begin="00:21:33.380" end="00:21:39.000">so I have these application and then let me show you the thing that doesn't come by</p>
+      <p begin="00:21:39.000" end="00:21:44.560">defaultyet we're going to add that by the time by next week for</p>
+      <p begin="00:21:44.560" end="00:21:49.360">...so here is declined application and let me</p>
+      <p begin="00:21:49.360" end="00:21:52.810">...actually sorry before we go that...showed the</p>
+      <p begin="00:21:52.810" end="00:21:58.320">third step I forgot to mention that the first step if you remember ...the previous slide</p>
+      <p begin="00:21:58.320" end="00:22:01.780">...about a registering the actor and then here it is</p>
+      <p begin="00:22:01.780" end="00:22:04.380">our these done so I have basically?</p>
+      <p begin="00:22:05.460" end="00:22:10.440">One class that these provide by the runtime and then during that class I do</p>
+      <p begin="00:22:10.440" end="00:22:12.690">the actor registration other point</p>
+      <p begin="00:22:12.690" end="00:22:18.630">...with these line I basically making my actor</p>
+      <p begin="00:22:18.630" end="00:22:21.040">...available to or</p>
+      <p begin="00:22:21.040" end="00:22:25.740">services and application running on the service public infrastructure so by</p>
+      <p begin="00:22:25.740" end="00:22:32.890">default the visual studio solution create one for you but if</p>
+      <p begin="00:22:32.890" end="00:22:37.190">you implement multiple actors in the same project you will have basically to</p>
+      <p begin="00:22:37.190" end="00:22:42.630">add additional lines like these in order to register...actors that you might</p>
+      <p begin="00:22:42.630" end="00:22:47.390">have in your application so we went through the interfaces we show the</p>
+      <p begin="00:22:47.390" end="00:22:50.210">actor implementation with interface we show the</p>
+      <p begin="00:22:50.210" end="00:22:54.490">act or registration and then the last step the fourth step was basically</p>
+      <p begin="00:22:54.490" end="00:22:59.800">the actor proxy so in this case...I added...client application just to the</p>
+      <p begin="00:22:59.800" end="00:23:05.530">...that actually the actor is working and then here you see that is the way</p>
+      <p begin="00:23:05.530" end="00:23:09.970">that I am using the actor proxy so the actor...</p>
+      <p begin="00:23:09.970" end="00:23:14.860">the ability to connect to bind to an actor and this is basically our...do it I have an</p>
+      <p begin="00:23:14.860" end="00:23:19.140">actor proxies I say create and create the doesn't always mean</p>
+      <p begin="00:23:19.140" end="00:23:23.760">create, create means create if the actor is not active or ict means</p>
+      <p begin="00:23:23.760" end="00:23:30.430">...bind if the actor is already running I specify the type of interface</p>
+      <p begin="00:23:30.430" end="00:23:35.650">so what type of communication I want to...this case I want to communicate with the</p>
+      <p begin="00:23:35.650" end="00:23:40.620">award actor and then basically I define an actor idea specify an</p>
+      <p begin="00:23:40.620" end="00:23:44.710">act already I will spend a little bit of time later to explain</p>
+      <p begin="00:23:44.710" end="00:23:48.820">what that means and then I have the application name</p>
+      <p begin="00:23:48.820" end="00:23:52.400">...basically define the application as I showed before in</p>
+      <p begin="00:23:52.400" end="00:23:56.710">the previous slide that is the entity that encapsulated that the package</p>
+      <p begin="00:23:56.710" end="00:24:01.020">different services in my application in this case I have one application that is</p>
+      <p begin="00:24:01.020" end="00:24:04.750">composer one single service so I want to show you</p>
+      <p begin="00:24:04.750" end="00:24:09.290">one quick thing so let's go to dl award say a</p>
+      <p begin="00:24:09.290" end="00:24:12.620">...I can for instance set...break point.</p>
+      <p begin="00:24:12.620" end="00:24:14.550">A here.</p>
+      <p begin="00:24:14.550" end="00:24:18.430">I go to my...application you cd</p>
+      <p begin="00:24:18.430" end="00:24:21.930">...award application is the service fabric application</p>
+      <p begin="00:24:21.930" end="00:24:25.830">eighties the application that manages the entire life-cycle of my applications</p>
+      <p begin="00:24:25.830" end="00:24:30.400">so the build process deployment process debugging so on so by</p>
+      <p begin="00:24:30.400" end="00:24:35.990">default eighties di the startup project so the only thing that I need to do in this</p>
+      <p begin="00:24:35.990" end="00:24:42.250">case if you see here I have the ability to for instance</p>
+      <p begin="00:24:42.250" end="00:24:48.000">...remover...package my application and do additional operations</p>
+      <p begin="00:24:48.000" end="00:24:54.660">on my application so the theater need to do unlike any other</p>
+      <p begin="00:24:54.660" end="00:24:58.260">...to the application I just need to...a five and what</p>
+      <p begin="00:24:58.260" end="00:25:01.900">...this is going to do is basically to package my applications so compile</p>
+      <p begin="00:25:01.900" end="00:25:06.740">the code packaged applications so basically...that sort of application package that I</p>
+      <p begin="00:25:06.740" end="00:25:11.300">showed you before and then basically take the application deployed the application the</p>
+      <p begin="00:25:11.300" end="00:25:15.030">...cluster and...as you can see on the output windowed</p>
+      <p begin="00:25:15.030" end="00:25:19.050">...visual...telling me what is happening so are the process</p>
+      <p begin="00:25:19.050" end="00:25:24.420">is progressing over time with my package being deployed on the loca</p>
+      <p begin="00:25:24.420" end="00:25:29.040">...and then here you see that I have the diagnostic events that basically show me</p>
+      <p begin="00:25:30.080" end="00:25:35.230">the audited w events that I used in my</p>
+      <p begin="00:25:35.230" end="00:25:38.740">application so I can very easily see what is happening on my</p>
+      <p begin="00:25:38.740" end="00:25:44.600">applications so now I have dee service fabric applications deployed</p>
+      <p begin="00:25:44.600" end="00:25:49.870">my activities raided to be used so let me switch very quickly to the lowered</p>
+      <p begin="00:25:49.870" end="00:25:58.250">client so I have a very simple console client so here and,</p>
+      <p begin="00:25:58.250" end="00:26:01.140">...clients so now what I'm doing I'm luncheon declined application?</p>
+      <p begin="00:26:02.700" end="00:26:05.920">And, as you can see like any other visual to</p>
+      <p begin="00:26:05.920" end="00:26:12.890">the application the actor proxy cody actor cody say a little</p>
+      <p begin="00:26:12.890" end="00:26:15.960">...and the in the sale...break...so</p>
+      <p begin="00:26:15.960" end="00:26:21.800">...have the ability to debug my applications like any other visual studio</p>
+      <p begin="00:26:21.800" end="00:26:26.790">application so in...as you can see high basically...the client</p>
+      <p begin="00:26:26.790" end="00:26:30.210">...I have, you know, that is the idea of the actor that I</p>
+      <p begin="00:26:30.210" end="00:26:34.930">was calling here that it is and then basically actually I didn't</p>
+      <p begin="00:26:34.930" end="00:26:42.690">send any message but this is basically the...apply that I got back from the.</p>
+      <p begin="00:26:42.690" end="00:26:47.870">...actor and then as you can see here I have an old di for each</p>
+      <p begin="00:26:47.870" end="00:26:50.720">...this is deed...event the</p>
+      <p begin="00:26:50.720" end="00:26:55.190">...register in my are sale awarded method when</p>
+      <p begin="00:26:55.190" end="00:26:59.950">it was invoked so here you can see that I have the ability...very</p>
+      <p begin="00:26:59.950" end="00:27:05.270">easily a...what is happening in production we'd a set of</p>
+      <p begin="00:27:05.270" end="00:27:09.570">...prevents ok so this is a very simple example I want to spend</p>
+      <p begin="00:27:09.570" end="00:27:16.130">one week one more thing so actually let's kill this I want to load</p>
+      <p begin="00:27:16.130" end="00:27:19.960">the one different solution so,</p>
+      <p begin="00:27:19.960" end="00:27:24.960">let's ...solution is exactly the same</p>
+      <p begin="00:27:24.960" end="00:27:27.750">solution so one thing that I want to show you is,</p>
+      <p begin="00:27:27.750" end="00:27:31.000">you know, I...I said a lot about</p>
+      <p begin="00:27:31.000" end="00:27:34.900">actors but there is one specific thing in the name of</p>
+      <p begin="00:27:34.900" end="00:27:39.630">our new technology that is called reliable actors I want to show you a little bit about</p>
+      <p begin="00:27:39.630" end="00:27:43.940">what that means so here I have another project is a very simple actor</p>
+      <p begin="00:27:43.940" end="00:27:49.310">he's an actor that as let me should be the interface here I basically</p>
+      <p begin="00:27:49.310" end="00:27:55.130">have the ability to get them set...a counter so I have an actor that basically save a local</p>
+      <p begin="00:27:55.130" end="00:27:59.480">...so I can read the counter or I can set...the counter to a new value</p>
+      <p begin="00:27:59.480" end="00:28:04.320">okay so it's very simple I have a client application I have</p>
+      <p begin="00:28:04.320" end="00:28:09.470">interfaces like before so let me do a very simple</p>
+      <p begin="00:28:09.470" end="00:28:14.410">here so instead of going to the debug process of this point I don't really need to go</p>
+      <p begin="00:28:14.410" end="00:28:18.320">...debug process I just want to...solution so I go to</p>
+      <p begin="00:28:18.320" end="00:28:22.580">deploy so now what happens is that my applications going to be deployed suomi</p>
+      <p begin="00:28:22.580" end="00:28:30.850">...cluster okay so let me go to the client application.</p>
+      <p begin="00:28:30.850" end="00:28:35.910">so here I have my counter application and,</p>
+      <p begin="00:28:35.910" end="00:28:39.850">if I start my counter application you see that these is very simple is going</p>
+      <p begin="00:28:39.850" end="00:28:44.580">to call the actor is going to get the state increase d a counter by one and just keep</p>
+      <p begin="00:28:44.580" end="00:28:49.580">calling ok so now let me show you what</p>
+      <p begin="00:28:49.580" end="00:28:55.480">out the application will look like so there is a very interesting toward that we that is part</p>
+      <p begin="00:28:55.480" end="00:29:00.150">of the service property infrastructure that these cody service public explorer and we</p>
+      <p begin="00:29:00.150" end="00:29:04.440">explore I can actually see what is running within inside my service</p>
+      <p begin="00:29:04.440" end="00:29:09.160">public infrastructure for in this case I have, you know, I have my application</p>
+      <p begin="00:29:09.160" end="00:29:14.020">view you see that I have my...lowered application that I deployed before and then I have</p>
+      <p begin="00:29:14.020" end="00:29:16.160">this application that is the</p>
+      <p begin="00:29:18.390" end="00:29:23.620">counter application and you see that this is basically telling me that these running on</p>
+      <p begin="00:29:23.620" end="00:29:27.170">...one so let me show you what the cluster look like</p>
+      <p begin="00:29:27.170" end="00:29:31.850">...my local machine I have the service fabric infrastructures basically right now based on</p>
+      <p begin="00:29:31.850" end="00:29:35.730">five different nodes so think of like five logical machines</p>
+      <p begin="00:29:35.730" end="00:29:39.850">...to get-together and then I have that the application the fabric</p>
+      <p begin="00:29:39.850" end="00:29:44.020">application these pacific counter is currently running on...number-one</p>
+      <p begin="00:29:44.020" end="00:29:48.660">...bono number one I see that there is the content application I go and</p>
+      <p begin="00:29:48.660" end="00:29:53.530">actually I see that disease decode that is actually running on that specific</p>
+      <p begin="00:29:53.530" end="00:29:56.470">...so let me make a little bit of</p>
+      <p begin="00:29:56.470" end="00:30:02.160">...room here so you see that I have my applications running so let me</p>
+      <p begin="00:30:02.160" end="00:30:05.860">do something like I want to simulate to deep</p>
+      <p begin="00:30:05.860" end="00:30:12.000">...failure so I have actually let's move these on the debate here</p>
+      <p begin="00:30:12.000" end="00:30:17.740">okay so I want to show a failure so what I'm</p>
+      <p begin="00:30:17.740" end="00:30:22.580">doing what I'm going to do is here you see that I have no number one I have code and</p>
+      <p begin="00:30:22.580" end="00:30:26.570">basically I just say restart and what this means is basically just a processor</p>
+      <p begin="00:30:26.570" end="00:30:32.900">...I have a process that...running here and...than just to kill it and we started so</p>
+      <p begin="00:30:32.900" end="00:30:35.830">...started and then what I</p>
+      <p begin="00:30:35.830" end="00:30:38.750">...see is you see that,</p>
+      <p begin="00:30:38.750" end="00:30:43.420">you know, I have my application...stop here?</p>
+      <p begin="00:30:43.420" end="00:30:45.170">...to medically might process</p>
+      <p begin="00:30:45.170" end="00:30:49.640">we started the actor actually lost the state to but I was</p>
+      <p begin="00:30:49.640" end="00:30:54.580">he was able to recover from a fail over and you can think of it over as the node actually failing all the</p>
+      <p begin="00:30:54.580" end="00:30:59.050">process failing itself but you see that the windows fabric infrastructure was able to</p>
+      <p begin="00:30:59.050" end="00:31:03.230">...to the process and basically get everything upper running and</p>
+      <p begin="00:31:03.230" end="00:31:07.800">the client application basically didn't see anything...putting sort of</p>
+      <p begin="00:31:07.800" end="00:31:13.170">right the state clearly is different now but, the from the application point of view is like</p>
+      <p begin="00:31:13.170" end="00:31:17.960">the actor was always running so let's move back to</p>
+      <p begin="00:31:17.960" end="00:31:23.300">d slide deck so what do we what I showed you here is basically</p>
+      <p begin="00:31:23.300" end="00:31:28.180">the basic end-to-end developer experience and then also the first very important</p>
+      <p begin="00:31:28.180" end="00:31:31.960">...that is the code is reliable so the service fabric</p>
+      <p begin="00:31:31.960" end="00:31:34.580">...able...manage the</p>
+      <p begin="00:31:34.580" end="00:31:38.720">...over of services when something happens to the</p>
+      <p begin="00:31:38.720" end="00:31:43.870">code execution so in this case you see that, you know, the...failed and actually I made</p>
+      <p begin="00:31:43.870" end="00:31:48.590">...the service of fabric what...does is potential relocate,</p>
+      <p begin="00:31:48.590" end="00:31:52.990">you know, in our case the service the actor service to another node if that specific</p>
+      <p begin="00:31:52.990" end="00:31:58.110">nodeis failing or it can we...to the process in such a way that</p>
+      <p begin="00:31:58.110" end="00:32:03.170">the guarantee availability so from a client point of view that is nothing or from the application itself</p>
+      <p begin="00:32:03.170" end="00:32:07.410">...there is no additional business logic or complex logic that I need to building</p>
+      <p begin="00:32:07.410" end="00:32:12.820">to in order to end of that specific...scenario but, you know, as you</p>
+      <p begin="00:32:12.820" end="00:32:18.400">saw when the fail over was a pretty what I...I actually lost the state so,</p>
+      <p begin="00:32:18.400" end="00:32:24.270">you know, adding you memory only type of state is interesting but for</p>
+      <p begin="00:32:24.270" end="00:32:29.770">...case scenario I need to have more than that so let me show you</p>
+      <p begin="00:32:29.770" end="00:32:35.800">what imis to take ...stateless a actor in make it statefull</p>
+      <p begin="00:32:35.800" end="00:32:40.170">...show...is a very simple to stay process to number-one I define what I</p>
+      <p begin="00:32:40.170" end="00:32:44.110">mean by state so I take what I consider to be the adopter that I need to</p>
+      <p begin="00:32:44.110" end="00:32:48.450">persist over potentially failures already start and then the only</p>
+      <p begin="00:32:48.450" end="00:32:51.550">...need to do is to take that class that I implemented before that</p>
+      <p begin="00:32:51.550" end="00:32:56.490">...from an actor and I derived from an actor of t state that basically</p>
+      <p begin="00:32:56.490" end="00:33:01.320">...now the actor is actually an actor that...as a stated that I</p>
+      <p begin="00:33:01.320" end="00:33:07.540">need to save and replicate what are the actor the reliable actor as</p>
+      <p begin="00:33:07.540" end="00:33:13.330">be team and provide out-of-the-box is automatically the management of the</p>
+      <p begin="00:33:13.330" end="00:33:18.330">state so for instance I...any change that these made...to the state</p>
+      <p begin="00:33:18.330" end="00:33:22.500">...to...is saved a replicated in such a way</p>
+      <p begin="00:33:22.500" end="00:33:28.230">that if something goes wrong with my actor I have the ability to restore the state as is and,</p>
+      <p begin="00:33:28.230" end="00:33:32.300">then I have...dee ability to a optimize</p>
+      <p begin="00:33:33.690" end="00:33:38.320">...control over state like for instance...</p>
+      <p begin="00:33:38.320" end="00:33:43.520">is persisted every time that there is a method so when I call a method</p>
+      <p begin="00:33:43.520" end="00:33:48.180">the my actor the meta might change state so what...service fabric infrastructure</p>
+      <p begin="00:33:48.180" end="00:33:52.440">...is actually to save the state but if I have for instance</p>
+      <p begin="00:33:52.440" end="00:33:57.140">our method that I know that is not going to change state what I can use a something that is</p>
+      <p begin="00:33:57.140" end="00:34:01.420">...read-only soy mark that specific method as read-only</p>
+      <p begin="00:34:01.420" end="00:34:06.250">so that means that is not going to change state so the service fabric infrastructure</p>
+      <p begin="00:34:06.250" end="00:34:12.940">can avoid doing the actually state replication and things of that so performance</p>
+      <p begin="00:34:12.940" end="00:34:18.220">wise you definitely can benefit from that and in addition to that you can</p>
+      <p begin="00:34:18.220" end="00:34:23.930">have as a developer fine-grained control over state and when you want to</p>
+      <p begin="00:34:23.930" end="00:34:29.790">...state so we can be quote-unquote on-demand if you need to so let me show you</p>
+      <p begin="00:34:29.790" end="00:34:34.040">very quickly what that means so I have let me close</p>
+      <p begin="00:34:34.040" end="00:34:43.030">these solution and I want to open another solution that...is the?</p>
+      <p begin="00:34:43.030" end="00:34:47.290">So, here I have basically is exactly the same application so the</p>
+      <p begin="00:34:47.290" end="00:34:52.520">only difference is I want to show you that is the two things that I need</p>
+      <p begin="00:34:52.520" end="00:34:56.270">to do in order to create a statefullservice</p>
+      <p begin="00:34:56.270" end="00:34:59.320">...one here you see this class counter state</p>
+      <p begin="00:34:59.320" end="00:35:03.050">...the step number one...define what I mean by state</p>
+      <p begin="00:35:03.050" end="00:35:07.710">...cases a very simple integer that I want to save it can be, you know,</p>
+      <p begin="00:35:07.710" end="00:35:11.490">as complex as you want just need to be a across that these</p>
+      <p begin="00:35:11.490" end="00:35:16.520">...elizabeth okay and then here you see that the only difference that I need to make</p>
+      <p begin="00:35:16.520" end="00:35:19.450">is I need to specify that now my actor is a</p>
+      <p begin="00:35:19.450" end="00:35:23.540">...actor so the ...for actor we...stated that these the</p>
+      <p begin="00:35:23.540" end="00:35:27.690">...state that I...and then here the only</p>
+      <p begin="00:35:27.690" end="00:35:31.370">difference in the code is my state is</p>
+      <p begin="00:35:31.370" end="00:35:37.680">expos quote-unquote with member across member that the state so we</p>
+      <p begin="00:35:37.680" end="00:35:41.370">the state I can basically axes the counter state class and from there I</p>
+      <p begin="00:35:41.370" end="00:35:45.630">can read and write I can...or get all the method</p>
+      <p begin="00:35:45.630" end="00:35:49.680">there so beside that there...nothing ness that...</p>
+      <p begin="00:35:49.680" end="00:35:54.610">I need to do so let's go ahead and take these application and deployed again either</p>
+      <p begin="00:35:54.610" end="00:35:56.550">...my cluster.</p>
+      <p begin="00:35:56.550" end="00:36:00.730">So, I'm going exactly e to the same process I take packaged</p>
+      <p begin="00:36:00.730" end="00:36:06.660">application deployed on the cluster and then let me show you first of all</p>
+      <p begin="00:36:06.660" end="00:36:11.710">...open the client application</p>
+      <p begin="00:36:11.710" end="00:36:16.940">and less that get started.</p>
+      <p begin="00:36:16.940" end="00:36:22.300">Okay, so, here I have basically I have a counters is</p>
+      <p begin="00:36:22.300" end="00:36:25.990">basicallygoing over is increasing the counters overtime</p>
+      <p begin="00:36:25.990" end="00:36:32.200">okay so let me show you one important thing so if I go to the...solutions for</p>
+      <p begin="00:36:32.200" end="00:36:35.980">...service explorer let me do refresh?</p>
+      <p begin="00:36:37.050" end="00:36:42.740">And, then here now I have the same application because I use exactly the same name</p>
+      <p begin="00:36:42.740" end="00:36:47.300">to identify it but let's short here what happens to</p>
+      <p begin="00:36:47.300" end="00:36:51.280">...deployment so before you so that...was only one node</p>
+      <p begin="00:36:51.280" end="00:36:56.200">active now because I have I asked sort of innocence the</p>
+      <p begin="00:36:56.200" end="00:37:02.200">service fabric to take care of the state of the at this point you see that minor might</p>
+      <p begin="00:37:02.200" end="00:37:07.040">the probabilities different I have now tree nodes I have one node that these primary where my</p>
+      <p begin="00:37:07.040" end="00:37:11.540">...running and then I have to other notes that are course secondary so</p>
+      <p begin="00:37:11.540" end="00:37:15.250">...where those node are used in order to replicate the state of</p>
+      <p begin="00:37:15.250" end="00:37:19.210">...actor he such a way that if something goes wrong with node number</p>
+      <p begin="00:37:19.210" end="00:37:23.720">two with my primary is running I have the ability to recover so</p>
+      <p begin="00:37:23.720" end="00:37:28.040">recreated the code restarted the actor...basically you re</p>
+      <p begin="00:37:28.040" end="00:37:32.590">...state from one of these two-second ortiz that are running at the same time so</p>
+      <p begin="00:37:32.590" end="00:37:36.530">this is basically the typical scenario where you have a state</p>
+      <p begin="00:37:36.530" end="00:37:41.250">...clearly the number of replicas where I the state</p>
+      <p begin="00:37:41.250" end="00:37:45.980">these replicate can be configure in this case I decide where basically a scenario we tree</p>
+      <p begin="00:37:45.980" end="00:37:48.470">...into replicas but I can have one</p>
+      <p begin="00:37:48.470" end="00:37:53.780">primary multiple replicas infer really need to...super-high level all</p>
+      <p begin="00:37:53.780" end="00:37:59.770">of reliability for my state okay so in this case I have,</p>
+      <p begin="00:37:59.770" end="00:38:05.380">you know,the countered is actually running so let me actually sure first of all another</p>
+      <p begin="00:38:05.380" end="00:38:11.830">application so if I go back to the same application as before.</p>
+      <p begin="00:38:11.830" end="00:38:16.260">So, I have the counter let's run these one...is like before, you know,</p>
+      <p begin="00:38:16.260" end="00:38:21.180">that they were showing before that he was just increasing the number but this time let's</p>
+      <p begin="00:38:21.180" end="00:38:24.960">do...go through the same process and try to see what happens if I</p>
+      <p begin="00:38:24.960" end="00:38:27.520">...these primary so I go to in this case</p>
+      <p begin="00:38:27.520" end="00:38:30.860">...number two because now my code these running...</p>
+      <p begin="00:38:30.860" end="00:38:34.980">known number two I have code and then basically I...</p>
+      <p begin="00:38:36.680" end="00:38:40.080">A actor again so I want to</p>
+      <p begin="00:38:40.080" end="00:38:44.330">that you notice one important thing let me stop here you see that</p>
+      <p begin="00:38:44.330" end="00:38:48.530">the big difference we respect to the previews example is that what I</p>
+      <p begin="00:38:48.530" end="00:38:53.490">see today now is that the countered actually continue and</p>
+      <p begin="00:38:53.490" end="00:38:57.600">was not restarted because yes the code wars we started I</p>
+      <p begin="00:38:57.600" end="00:39:02.390">kill the process the...but the state...preserved...save...in the</p>
+      <p begin="00:39:02.390" end="00:39:07.320">to other secondary that...running along with the primary so as soon as the actor</p>
+      <p begin="00:39:07.320" end="00:39:12.180">restarted he was able to recreated this state and</p>
+      <p begin="00:39:12.180" end="00:39:17.440">like keywords before the fail over process so this is a very quick</p>
+      <p begin="00:39:17.440" end="00:39:24.520">way to show you how you can build actors that can actually also</p>
+      <p begin="00:39:24.520" end="00:39:32.450">preserve state across potential...so let's ever quick node.</p>
+      <p begin="00:39:32.450" end="00:39:37.020">All statefull actors so do way that</p>
+      <p begin="00:39:37.020" end="00:39:41.690">doctors are persisted a something a through what we could providers and there are</p>
+      <p begin="00:39:41.690" end="00:39:45.920">...providers in the service fabric so the sort of</p>
+      <p begin="00:39:45.920" end="00:39:49.620">...the reliable actors framework comes we</p>
+      <p begin="00:39:49.620" end="00:39:53.350">to providers one is volatile state provider this means that</p>
+      <p begin="00:39:53.350" end="00:39:56.970">the state is replicated as you see in across multiple</p>
+      <p begin="00:39:56.970" end="00:40:01.030">...but is in memory only so in the in that</p>
+      <p begin="00:40:01.030" end="00:40:04.840">...if all three nodes goes down</p>
+      <p begin="00:40:04.840" end="00:40:08.850">this state is not going to be...saved so this is again</p>
+      <p begin="00:40:08.850" end="00:40:13.430">the ee worthwhile for all the case where you need to preserve the state but</p>
+      <p begin="00:40:13.430" end="00:40:17.660">...you can afford to lose the state if there is are a drastic</p>
+      <p begin="00:40:17.660" end="00:40:21.590">...or of a bb fail over type of scenario order are the</p>
+      <p begin="00:40:21.590" end="00:40:26.270">du-rable state provider where along with the keeping the stating memory...is also</p>
+      <p begin="00:40:26.270" end="00:40:31.570">...disk and replicate across multiple replicas so these...give you a higher level</p>
+      <p begin="00:40:31.570" end="00:40:37.470">...we that clearly a little bit of a performancecost that</p>
+      <p begin="00:40:37.470" end="00:40:42.050">these associated with the fact that ...state needs to be persisted on-disk?</p>
+      <p begin="00:40:43.080" end="00:40:48.330">This state is manage the state provider is a fully</p>
+      <p begin="00:40:48.330" end="00:40:53.720">customizableinterface as you can see her in this slide is a fairly simple</p>
+      <p begin="00:40:53.720" end="00:40:57.750">...so potentially if you have are...specific needs where you want to</p>
+      <p begin="00:40:57.750" end="00:41:02.620">save stating...specific storage...core document</p>
+      <p begin="00:41:02.620" end="00:41:06.630">db or something else you can actually implemented...</p>
+      <p begin="00:41:06.630" end="00:41:11.540">your state provider another point you just need to specify that state provider within the actor model</p>
+      <p begin="00:41:11.540" end="00:41:16.250">and the after model...that and then you have the ability also to control the</p>
+      <p begin="00:41:16.250" end="00:41:18.240">asked...provider either</p>
+      <p begin="00:41:18.240" end="00:41:22.730">the assembly level show all the actors belonging to that assembly will use that</p>
+      <p begin="00:41:22.730" end="00:41:27.500">specific state provider or you can specify at the act of type so one actor</p>
+      <p begin="00:41:27.500" end="00:41:32.460">...by...a...than another actor type.</p>
+      <p begin="00:41:32.460" end="00:41:37.950">So, let's ...quick...discussion about scalability so</p>
+      <p begin="00:41:37.950" end="00:41:42.720">we discuss a lot about reliability but what about scalability so, you know,</p>
+      <p begin="00:41:42.720" end="00:41:45.910">the...one of the key important feature of</p>
+      <p begin="00:41:45.910" end="00:41:50.740">high scalable all cloudy type of applications the ability to skate so the way that</p>
+      <p begin="00:41:50.740" end="00:41:54.770">...reliable actor scaled is through something that is called</p>
+      <p begin="00:41:54.770" end="00:41:59.620">partitions and partition is a way to distribute traffic across</p>
+      <p begin="00:41:59.620" end="00:42:04.990">multiple instances of your service so let me try to</p>
+      <p begin="00:42:04.990" end="00:42:10.370">I want to show you what that means so let's assume for instance that I have</p>
+      <p begin="00:42:10.370" end="00:42:12.180">...this case three different</p>
+      <p begin="00:42:12.180" end="00:42:17.160">our clients application they are going to called a</p>
+      <p begin="00:42:17.160" end="00:42:21.780">on actor and if I have one partition so basically I'm saying that</p>
+      <p begin="00:42:21.780" end="00:42:26.610">I have a way to identify are range okay that basically says</p>
+      <p begin="00:42:26.610" end="00:42:31.340">okay how do I want to distribute the traffic across these range and then the default for</p>
+      <p begin="00:42:31.340" end="00:42:33.920">...model is basically sixty</p>
+      <p begin="00:42:33.920" end="00:42:38.920">to sixty four-bit integer that is used in order to identify sort of the</p>
+      <p begin="00:42:38.920" end="00:42:43.650">...additional space for this case let's assume that I define my services with one</p>
+      <p begin="00:42:43.650" end="00:42:47.460">...partition so this means...basically no matter what type of</p>
+      <p begin="00:42:47.460" end="00:42:51.140">idi create if we go through the single one partitions</p>
+      <p begin="00:42:51.140" end="00:42:55.180">...will is our final with one single output innocence and then</p>
+      <p begin="00:42:55.180" end="00:43:00.450">these means that basically I have one single actor running in my cluster let's say that, you know,</p>
+      <p begin="00:43:00.450" end="00:43:05.080">I want to scale so I want to be able to and-or more traffic so what I can do is</p>
+      <p begin="00:43:05.080" end="00:43:10.390">basically to define multiple partition other pointed the undecidable range is</p>
+      <p begin="00:43:10.390" end="00:43:12.930">...three different buckets and</p>
+      <p begin="00:43:12.930" end="00:43:16.990">other point of depending on the id that I use I might be able to</p>
+      <p begin="00:43:16.990" end="00:43:20.950">use the actor belonging to partition number-one partition number two</p>
+      <p begin="00:43:20.950" end="00:43:26.040">or partition number trick and then as my traffic increases I can</p>
+      <p begin="00:43:26.040" end="00:43:31.720">are the more and more partitions in such a way that I have more</p>
+      <p begin="00:43:31.720" end="00:43:34.590">actors or more services that are able to</p>
+      <p begin="00:43:34.590" end="00:43:39.270">...my traffic so my traffic is basically spread across multiple instances</p>
+      <p begin="00:43:40.490" end="00:43:48.380">so let me show you what that means so if I havethese</p>
+      <p begin="00:43:49.400" end="00:43:53.960">...state so the one that we were using before so is already deployed</p>
+      <p begin="00:43:53.960" end="00:43:58.000">so one thing that I can do is let me go to?</p>
+      <p begin="00:44:01.520" end="00:44:06.960">...state for the client.</p>
+      <p begin="00:44:06.960" end="00:44:11.470">And, then I have basically.</p>
+      <p begin="00:44:11.470" end="00:44:14.980">I have an application and what I want to show you is</p>
+      <p begin="00:44:14.980" end="00:44:19.590">the following actually let me step back before I want to do one more thing so I want to</p>
+      <p begin="00:44:19.590" end="00:44:22.710">should the difference between one instances and multiple</p>
+      <p begin="00:44:22.710" end="00:44:27.110">one partition and multiple partitions...I have the application that...</p>
+      <p begin="00:44:27.110" end="00:44:32.040">was using before let-me open this is the application manifest that is basically what</p>
+      <p begin="00:44:32.040" end="00:44:36.340">...application as I was explaining before so as you can see here</p>
+      <p begin="00:44:36.340" end="00:44:41.590">I have partition count equal one so this is basically the first case I have</p>
+      <p begin="00:44:41.590" end="00:44:46.490">old my traffic going to one single partition let me change that and I want to say that,</p>
+      <p begin="00:44:46.490" end="00:44:50.410">you know, right now my traffic is increaase and...I want to be able to</p>
+      <p begin="00:44:50.410" end="00:44:54.540">and-or that increased traffic so what they say is now I want to</p>
+      <p begin="00:44:54.540" end="00:44:59.130">...we...so they would be sort of time instances of my actor being able to end</p>
+      <p begin="00:44:59.130" end="00:45:04.820">on the traffic so let's take the application we deployed so</p>
+      <p begin="00:45:04.820" end="00:45:09.680">now I go again go through the deployment process and then?</p>
+      <p begin="00:45:09.680" end="00:45:11.730">...go here you see that the</p>
+      <p begin="00:45:11.730" end="00:45:16.500">...the old version I have basically these one that is call-you</p>
+      <p begin="00:45:16.500" end="00:45:21.230">...one sorry I need to refresh here.</p>
+      <p begin="00:45:21.230" end="00:45:23.210">...that the now there is a big difference you</p>
+      <p begin="00:45:23.210" end="00:45:27.980">...before I had only one of these entity and these entities are partitions.</p>
+      <p begin="00:45:29.030" end="00:45:32.910">Here instead of ten of them now so this means that basically I</p>
+      <p begin="00:45:32.910" end="00:45:37.290">have now ten different partitions that are able to...the</p>
+      <p begin="00:45:37.290" end="00:45:42.540">traffic so if I have these ten partitions now running so let me see just to make sure</p>
+      <p begin="00:45:42.540" end="00:45:50.700">everything is fine yes so if I go to my application and then.</p>
+      <p begin="00:45:50.700" end="00:45:53.610">Let's say that I have.</p>
+      <p begin="00:45:53.610" end="00:45:56.400">Newm of counters.</p>
+      <p begin="00:45:56.400" end="00:46:03.990">...let's say that I want to start with onlyinnocence one.</p>
+      <p begin="00:46:03.990" end="00:46:09.400">Okay, so, these case...I used the wrong ...but what basically app</p>
+      <p begin="00:46:09.400" end="00:46:14.290">and series that I have one hundred I create one undercut a counters</p>
+      <p begin="00:46:14.290" end="00:46:19.060">I deployed of ten...the services deploying</p>
+      <p begin="00:46:19.060" end="00:46:23.580">than a partitions so as you can see here basically the traffic that</p>
+      <p begin="00:46:23.580" end="00:46:27.850">these coming from the client application...spread across</p>
+      <p begin="00:46:27.850" end="00:46:31.860">the depend partitions so you see that each one of them is running</p>
+      <p begin="00:46:31.860" end="00:46:36.780">one counter and the traffic from the client is going to go to one of these</p>
+      <p begin="00:46:36.780" end="00:46:40.770">partitions and the counter is increased every time...are client</p>
+      <p begin="00:46:40.770" end="00:46:45.990">request so as you can see, you know, right now I have a lot of traffic and the traffic is spread across</p>
+      <p begin="00:46:45.990" end="00:46:48.030">...ten different partitions so this is a</p>
+      <p begin="00:46:48.030" end="00:46:53.980">way to basically I show how...service fabric</p>
+      <p begin="00:46:53.980" end="00:47:00.100">...base service fabric application can scale out basically through what</p>
+      <p begin="00:47:00.100" end="00:47:06.450">...here that are the partitions okay so let me kill this let's go back to</p>
+      <p begin="00:47:06.450" end="00:47:12.330">d slides and thena very quickly kappa just to make sure that, you know,</p>
+      <p begin="00:47:12.330" end="00:47:17.230">I...what I covert so, we have these sort of actors that</p>
+      <p begin="00:47:17.230" end="00:47:21.510">...sort of these independent...the is somehow helps you to think about</p>
+      <p begin="00:47:21.510" end="00:47:26.600">the highly distributed type of system we is so that is not that difficult to</p>
+      <p begin="00:47:26.600" end="00:47:31.130">...there is only for basic concepts in order to get started that at the end of they are</p>
+      <p begin="00:47:31.130" end="00:47:37.250">not very different from media design patterns like...object-oriented type of application</p>
+      <p begin="00:47:37.250" end="00:47:42.150">...state are both reliable so there is no additional code that you need</p>
+      <p begin="00:47:42.150" end="00:47:46.500">to writing your application in order to end of those cases fail over and state the</p>
+      <p begin="00:47:46.500" end="00:47:51.410">...across...overs and then it is also designed to scale to partitions</p>
+      <p begin="00:47:51.410" end="00:47:54.740">...you have the ability basically without and as you get</p>
+      <p begin="00:47:54.740" end="00:47:59.370">...you so I didn't change decode of my application I just basically</p>
+      <p begin="00:47:59.370" end="00:48:04.020">neat I just needed to change the manifest the application manifest</p>
+      <p begin="00:48:04.020" end="00:48:08.450">some sort of meta data redeployment application the point my application was able to</p>
+      <p begin="00:48:08.450" end="00:48:15.100">...much better okay is that all...in addition to that for</p>
+      <p begin="00:48:15.100" end="00:48:20.090">the reliable actor provide also some additional feature and now we go through some of</p>
+      <p begin="00:48:20.090" end="00:48:25.830">them and then probably the last a big question that you might have is but what</p>
+      <p begin="00:48:25.830" end="00:48:31.240">how do I upgrade might...potentially without any</p>
+      <p begin="00:48:31.240" end="00:48:35.530">interruption and I will I will show you I'll do that?</p>
+      <p begin="00:48:35.530" end="00:48:43.400">So,...reliable...the other features available in the app the reliable actors</p>
+      <p begin="00:48:43.400" end="00:48:47.510">...very sympathizer said these are very familiar design...soap</p>
+      <p begin="00:48:47.510" end="00:48:52.130">authors are just quote-unquote objects so you can take and then pastime around...</p>
+      <p begin="00:48:52.130" end="00:48:57.270">is very simple and exception...social propagate so from a developer point of view</p>
+      <p begin="00:48:57.270" end="00:49:02.780">...is a very familiar typo programming ...in addition to that</p>
+      <p begin="00:49:02.780" end="00:49:08.690">...reliable actors as a...garbage collector like type of process so</p>
+      <p begin="00:49:08.690" end="00:49:13.610">these means that the framework is going to check if an actor is going</p>
+      <p begin="00:49:13.610" end="00:49:14.740">is it was used</p>
+      <p begin="00:49:14.740" end="00:49:19.540">...and if it was not use...actor is mark...</p>
+      <p begin="00:49:19.540" end="00:49:25.540">court inactive and then the actual clr dot net the garbage collector attribute</p>
+      <p begin="00:49:25.540" end="00:49:30.370">acclaim the memory and this is done in order to optimize memory usage</p>
+      <p begin="00:49:30.370" end="00:49:35.600">the ability...so there is location transparency and</p>
+      <p begin="00:49:35.600" end="00:49:40.270">...the same time actors are...the fact that the garbage collector collects</p>
+      <p begin="00:49:40.270" end="00:49:44.170">...an actor and the actor basically these...it</p>
+      <p begin="00:49:44.170" end="00:49:48.860">doesn't have any implication from a client point of view when from the actor proxy I'm going to</p>
+      <p begin="00:49:48.860" end="00:49:52.700">...that specific actor if the doctor was collected because it was not</p>
+      <p begin="00:49:52.700" end="00:49:56.490">use for a long-time the actor will be recreated the state</p>
+      <p begin="00:49:56.490" end="00:50:00.120">...be reiterated completely automatically so again without</p>
+      <p begin="00:50:00.120" end="00:50:05.900">any additional business logic that you need to write and then the frequency of dc and</p>
+      <p begin="00:50:05.900" end="00:50:09.670">...timeout so hour-long...needs to be active in order</p>
+      <p begin="00:50:09.670" end="00:50:15.070">to be collected is something that you can customize in addition to thatsomething that is very</p>
+      <p begin="00:50:15.070" end="00:50:19.570">useful for these actor model is the what we call timers and</p>
+      <p begin="00:50:19.570" end="00:50:25.590">minors so those are features that allows you toschedule recurring task we</p>
+      <p begin="00:50:25.590" end="00:50:29.080">d the...stuff and there is a big the big difference</p>
+      <p begin="00:50:29.080" end="00:50:34.230">between timers reminders timers are basically they have the lifespan all-time</p>
+      <p begin="00:50:34.230" end="00:50:38.000">it is within the actor lifespan so this means that for</p>
+      <p begin="00:50:38.000" end="00:50:42.340">instance the timer is active until the actor is active but if the</p>
+      <p begin="00:50:42.340" end="00:50:45.960">...the activated the timer will basicallythe</p>
+      <p begin="00:50:45.960" end="00:50:50.550">would be the activate as well so it's not going to fight again instead remind recently that</p>
+      <p begin="00:50:50.550" end="00:50:54.810">provide that sort of life-cycle and potentially also failures</p>
+      <p begin="00:50:54.810" end="00:50:59.290">so-if my arteries collected or if my actor for any sort of reason failures and</p>
+      <p begin="00:50:59.290" end="00:51:04.730">restarted on a different node a reminder is actually going to be active so</p>
+      <p begin="00:51:04.730" end="00:51:06.650">...is at the service</p>
+      <p begin="00:51:06.650" end="00:51:11.840">fabric level so is something that is persisted over failures and</p>
+      <p begin="00:51:11.840" end="00:51:16.650">then there is another feature that we call events that is the ability is a very simple pub</p>
+      <p begin="00:51:16.650" end="00:51:21.650">subtype of infrastructure that allows doctors to communicate with the client</p>
+      <p begin="00:51:21.650" end="00:51:26.380">application so instead of are typically to add the client to may be do a</p>
+      <p begin="00:51:26.380" end="00:51:31.200">sort...type of a scenario where you actually query, you know,</p>
+      <p begin="00:51:31.200" end="00:51:34.960">the actors to get the information that you may need you</p>
+      <p begin="00:51:34.960" end="00:51:39.600">can register typical delegate and the actors can code that delegate</p>
+      <p begin="00:51:39.600" end="00:51:43.460">on the client-side in order to provide forty-some status updates so that</p>
+      <p begin="00:51:43.460" end="00:51:47.200">is another feature that provide that these easier to build</p>
+      <p begin="00:51:47.200" end="00:51:52.770">...can make easier to build...end-to-end applications a very quick node</p>
+      <p begin="00:51:52.770" end="00:51:59.670">she's we're talking about a single threaded but in a multi-threaded type of environment</p>
+      <p begin="00:51:59.670" end="00:52:03.620">...up a quick note about concurrency...reliable</p>
+      <p begin="00:52:03.620" end="00:52:08.480">...base execution model so doctors are executed intern is</p>
+      <p begin="00:52:08.480" end="00:52:12.320">...sort of tadpole like type of mode and then from...</p>
+      <p begin="00:52:12.320" end="00:52:17.270">interesting point of view...is basically based on...context</p>
+      <p begin="00:52:17.270" end="00:52:21.710">base we intimacy so these means that for instance I have an actor a that is korean actor</p>
+      <p begin="00:52:21.710" end="00:52:25.360">be vector b is...actor see the actor see can</p>
+      <p begin="00:52:25.360" end="00:52:31.810">...the actor a because...part of the same context right so that is something that</p>
+      <p begin="00:52:31.810" end="00:52:36.250">the supported by the platform the same time if for instance you want to</p>
+      <p begin="00:52:36.250" end="00:52:40.400">these you might see cases where you want to being able</p>
+      <p begin="00:52:40.400" end="00:52:46.950">to detect these sort of...back type of thing the other point you can</p>
+      <p begin="00:52:46.950" end="00:52:54.030">...into...point underside pure will be thrown...that sort of scorer</p>
+      <p begin="00:52:54.030" end="00:53:00.200">dependencies are happening in while the application is running?</p>
+      <p begin="00:53:00.200" end="00:53:04.160">In addition to that because of reliable actors are part of</p>
+      <p begin="00:53:04.160" end="00:53:09.280">the service public they have some benefit in addition to that orchestration resource</p>
+      <p begin="00:53:09.280" end="00:53:14.210">...is isolation so basically these means that I can also control the placement</p>
+      <p begin="00:53:14.210" end="00:53:18.830">on my actors so I can decide where my actors are going to be deployed I can decide that for</p>
+      <p begin="00:53:18.830" end="00:53:22.850">instance the actors or the service that is part of my</p>
+      <p begin="00:53:22.850" end="00:53:27.110">...infrastructure is going to be...one specific...</p>
+      <p begin="00:53:27.110" end="00:53:32.260">my cluster or I might have different type of services we different profiles</p>
+      <p begin="00:53:32.260" end="00:53:37.330">...usage o or adopter storage that I can...different</p>
+      <p begin="00:53:37.330" end="00:53:42.320">nodes think forty-some of different between I have a machine...my classes that the using</p>
+      <p begin="00:53:42.320" end="00:53:48.040">as the versus you know, traditional spinning disks...then.</p>
+      <p begin="00:53:48.040" end="00:53:48.620">There is</p>
+      <p begin="00:53:48.620" end="00:53:53.980">...support for full operations support...type of scenario when</p>
+      <p begin="00:53:53.980" end="00:53:58.650">mice system easing production I have a wide range of different tools as</p>
+      <p begin="00:53:58.650" end="00:54:04.350">monitoring cluster manages socio my class thirty perform you see the cluster</p>
+      <p begin="00:54:04.350" end="00:54:09.010">explore issue me if the nodes so if they are healthy what is happening my</p>
+      <p begin="00:54:09.010" end="00:54:14.390">...so on those are all features that are building a platform</p>
+      <p begin="00:54:14.390" end="00:54:19.990">...there is no thing that you need to do in addition in order to be able to add a sort</p>
+      <p begin="00:54:19.990" end="00:54:25.330">...productionruntime type of a monitoring</p>
+      <p begin="00:54:25.330" end="00:54:31.140">infrastructure there is a lot of emphasis on security so for instance you can</p>
+      <p begin="00:54:31.140" end="00:54:34.240">of a fine-grain control over security and, you know,</p>
+      <p begin="00:54:34.240" end="00:54:37.890">use different security profiles based on the type of data...so that</p>
+      <p begin="00:54:37.890" end="00:54:41.240">...actors or your windows public services are going to end</p>
+      <p begin="00:54:41.240" end="00:54:44.210">...soap...all actors that of...dealing with</p>
+      <p begin="00:54:44.210" end="00:54:49.190">...data you might want to isolate them...specific node and</p>
+      <p begin="00:54:49.190" end="00:54:53.530">...under...low privilege type of account so this is old feature and</p>
+      <p begin="00:54:53.530" end="00:54:59.330">...indy service infrastructure.</p>
+      <p begin="00:54:59.330" end="00:55:00.880">And, then.</p>
+      <p begin="00:55:00.880" end="00:55:05.810">There is the life-cycle so along with the ability to...a...to</p>
+      <p begin="00:55:05.810" end="00:55:10.740">have reliable...d service infrastructure provide also the ability to manage the</p>
+      <p begin="00:55:10.740" end="00:55:14.270">application life-cycle so for instance and</p>
+      <p begin="00:55:14.270" end="00:55:18.960">...want to show youright now is the ability to upgrade</p>
+      <p begin="00:55:18.960" end="00:55:24.180">your application without any interruption so less reach back so,</p>
+      <p begin="00:55:24.180" end="00:55:26.720">let's kill this if I go to.</p>
+      <p begin="00:55:29.750" end="00:55:35.930">Here and then I want todeployed.</p>
+      <p begin="00:55:35.930" end="00:55:40.070">And, you application first of all let me show you the code very quickly I</p>
+      <p begin="00:55:40.070" end="00:55:44.210">don't want to spend too much time on it by just to give you an idea</p>
+      <p begin="00:55:44.210" end="00:55:48.390">...the out the code will look like.</p>
+      <p begin="00:55:48.390" end="00:55:51.490">So, this is a services more,</p>
+      <p begin="00:55:51.490" end="00:55:56.480">you know, in the for the previews...more user console applications so this is...more</p>
+      <p begin="00:55:56.480" end="00:56:01.300">...application where I...a web content type of thing so I have a service here sp</p>
+      <p begin="00:56:01.300" end="00:56:06.270">the serving two different versions so I want to show you are you can...grade-a services</p>
+      <p begin="00:56:06.270" end="00:56:12.310">using, you know, the...features are there are the interfaces as</p>
+      <p begin="00:56:12.310" end="00:56:15.440">...should be from...this point and then there is basically</p>
+      <p begin="00:56:15.440" end="00:56:18.680">...one that instead of being a console application is</p>
+      <p begin="00:56:20.930" end="00:56:26.800">web from tent so let me show you in...lights very quickly so what</p>
+      <p begin="00:56:26.800" end="00:56:31.320">that means basically the architecture of the application so I have a browser</p>
+      <p begin="00:56:31.320" end="00:56:36.810">what I want to show is I have a front-end in these cases are project k from</p>
+      <p begin="00:56:36.810" end="00:56:42.610">...the project k is all said within the service fabric cluster</p>
+      <p begin="00:56:43.680" end="00:56:48.230">...using multiple actors and each actual representup</p>
+      <p begin="00:56:48.230" end="00:56:53.570">a moving object that is moving in the browser and I will show you</p>
+      <p begin="00:56:53.570" end="00:56:57.980">what that means...that is happening is basically the front-end application is going</p>
+      <p begin="00:56:57.980" end="00:57:02.160">to push updates via web circuits to the browser and the browser</p>
+      <p begin="00:57:02.160" end="00:57:06.640">...campus is going to update this state and actually the location of all the object</p>
+      <p begin="00:57:06.640" end="00:57:11.920">objects and then I want to the from ten does in this case is to query</p>
+      <p begin="00:57:11.920" end="00:57:18.200">or the actors in order to get status updates in addition to that the</p>
+      <p begin="00:57:18.200" end="00:57:23.250">actors within the actors they're using timers in as a way to</p>
+      <p begin="00:57:23.250" end="00:57:27.830">updated that location so what happens is that every thirty milliseconds</p>
+      <p begin="00:57:27.830" end="00:57:32.440">of a timer...and then what are the actor does is to update is</p>
+      <p begin="00:57:32.440" end="00:57:37.400">a location and then the state of the actor is actually the location itself so basically</p>
+      <p begin="00:57:37.400" end="00:57:42.150">the state is persisted so from up...point of view what different dinesh</p>
+      <p begin="00:57:42.150" end="00:57:47.880">to do just to collect all the data...to the...a very simple type of from that everything is manager</p>
+      <p begin="00:57:47.880" end="00:57:53.770">...the actors in the cluster okay so the application easier I have</p>
+      <p begin="00:57:53.770" end="00:57:59.620">just to show you if you are from here this is a typical project k type of application with</p>
+      <p begin="00:57:59.620" end="00:58:02.460">...views so on and then the only thing that</p>
+      <p begin="00:58:02.460" end="00:58:05.200">dicey here is basically</p>
+      <p begin="00:58:05.200" end="00:58:14.200">the way that if I look at this method is from ...</p>
+      <p begin="00:58:14.200" end="00:58:17.700">The actor is I basically I'm querying</p>
+      <p begin="00:58:17.700" end="00:58:22.200">the actors in order to get...status updates and then we have web sockets I'm going-to</p>
+      <p begin="00:58:22.200" end="00:58:26.710">...status updates to the browser so if I go</p>
+      <p begin="00:58:26.710" end="00:58:29.180">...what they want to do is</p>
+      <p begin="00:58:30.390" end="00:58:35.080">I have the application I already prepackaged application so what I want to do is to</p>
+      <p begin="00:58:35.080" end="00:58:40.210">...very simple our...script that using the service fabric publish</p>
+      <p begin="00:58:40.210" end="00:58:43.540">I'll comments is going to take the to packages application and</p>
+      <p begin="00:58:43.540" end="00:58:49.070">...them ok so what I'm going to do is I said</p>
+      <p begin="00:58:49.070" end="00:58:50.940">...deployed so what is</p>
+      <p begin="00:58:50.940" end="00:58:55.760">epidemic is I'm connected to my local cluster and what visual studio already</p>
+      <p begin="00:58:55.760" end="00:59:00.590">...built-in I'm basically deploying the application in this case I'm deploying</p>
+      <p begin="00:59:00.590" end="00:59:05.360">both...version of my application but I'm quote-unquote activating only version</p>
+      <p begin="00:59:05.360" end="00:59:09.680">number one okay so you see that here I have basically to applications</p>
+      <p begin="00:59:09.680" end="00:59:14.540">version number one and...version number two okay and then the active one is</p>
+      <p begin="00:59:14.540" end="00:59:18.390">...out version number one so if I open the browser and</p>
+      <p begin="00:59:18.390" end="00:59:23.390">I go to my local machine on board eighty</p>
+      <p begin="00:59:23.390" end="00:59:29.660">five or six and you see that I have these sort of very simple let me zooming</p>
+      <p begin="00:59:29.660" end="00:59:33.040">...bit so I have basically what we call the visual</p>
+      <p begin="00:59:33.040" end="00:59:37.620">...flying objects are moving around you should there is a little bit of a tale the</p>
+      <p begin="00:59:37.620" end="00:59:42.370">theater represent basically the state of those actors and those doctors are basically same there</p>
+      <p begin="00:59:42.370" end="00:59:47.360">...previous fifty positions and then basically browser is</p>
+      <p begin="00:59:47.360" end="00:59:53.870">just rendering the current state of those objects so if I go</p>
+      <p begin="00:59:53.870" end="01:00:02.110">to my project...protocol you see that I have a new application</p>
+      <p begin="01:00:02.110" end="01:00:05.940">ok the application right now there are q services one is the</p>
+      <p begin="01:00:05.940" end="01:00:10.810">state full-service that is the one that is managing over the...actors and then the box one is</p>
+      <p begin="01:00:10.810" end="01:00:15.890">basically the project k from the...ok and you see that here I have my</p>
+      <p begin="01:00:15.890" end="01:00:20.300">...from chinese running on old one and then era of my actor that are basically spread</p>
+      <p begin="01:00:20.300" end="01:00:26.070">across basic time different partitions okay so if I go here and then the</p>
+      <p begin="01:00:26.070" end="01:00:30.100">...want to do is you see that I have these flying objects and why do these</p>
+      <p begin="01:00:30.100" end="01:00:35.450">guys are running what I want to do is I want to update so this point I have the</p>
+      <p begin="01:00:35.450" end="01:00:42.030">seem commoncommon line tool and then what I do is I basically trigger</p>
+      <p begin="01:00:42.030" end="01:00:45.490">on update so what is...is basically a styling</p>
+      <p begin="01:00:45.490" end="01:00:50.260">...fabric now service fabric now you want to move from version number...</p>
+      <p begin="01:00:50.260" end="01:00:56.420">to version number two so let me go here and then if I go to</p>
+      <p begin="01:00:56.420" end="01:00:59.300">...service to the service</p>
+      <p begin="01:00:59.300" end="01:01:04.100">fabrics product you see that basically what is happening is showing me</p>
+      <p begin="01:01:04.100" end="01:01:08.490">...let me do this so we can actually see what is happening real-time?</p>
+      <p begin="01:01:08.490" end="01:01:13.590">Is basically telling me that we are going through...process and you</p>
+      <p begin="01:01:13.590" end="01:01:18.680">see here that I have different domains upgrade domains and what is happening is</p>
+      <p begin="01:01:18.680" end="01:01:25.410">...updating right now a domain update number domain...one and I want tapas</p>
+      <p begin="01:01:25.410" end="01:01:29.420">...if we keep looking at this selection remove</p>
+      <p begin="01:01:29.420" end="01:01:34.030">this here if we keep looking at this objects you see</p>
+      <p begin="01:01:34.030" end="01:01:35.740">...y and the</p>
+      <p begin="01:01:35.740" end="01:01:41.000">...service fabric is updating my service some of these object will stop</p>
+      <p begin="01:01:41.000" end="01:01:45.540">for a second and those are the objects that are running on that specific</p>
+      <p begin="01:01:45.540" end="01:01:50.380">domain upgrade so in the node that belongs to that specific domain...they</p>
+      <p begin="01:01:50.380" end="01:01:54.510">stop for a second auc here and then after the domain</p>
+      <p begin="01:01:54.510" end="01:01:57.310">upgrade is completed they will</p>
+      <p begin="01:01:57.310" end="01:02:02.980">restart the important thing to notice is that state is not lost so from a</p>
+      <p begin="01:02:02.980" end="01:02:07.490">...point of view I see that the momentarily they stop and keep in mind that I'm running</p>
+      <p begin="01:02:07.490" end="01:02:11.620">a everything on one single machines so clearly here is a little bit</p>
+      <p begin="01:02:11.620" end="01:02:16.290">slower than it will happen on scenario but as you can see,</p>
+      <p begin="01:02:16.290" end="01:02:19.740">you know, the flying object will stop for a second</p>
+      <p begin="01:02:19.740" end="01:02:24.370">they will resume as soon as the...is updated</p>
+      <p begin="01:02:24.370" end="01:02:28.360">and the same time you see if you notice that actually the upgrade process</p>
+      <p begin="01:02:28.360" end="01:02:33.190">when through because now they are actually rotating so actually upgrade of my</p>
+      <p begin="01:02:33.190" end="01:02:36.730">a actors wars adding rotation to the</p>
+      <p begin="01:02:36.730" end="01:02:41.580">actor itself ok so here you see that disease in progress I</p>
+      <p begin="01:02:41.580" end="01:02:47.250">have three out of five domain upgrades and other point?</p>
+      <p begin="01:02:47.250" end="01:02:51.200">The goal here is to show you that you see that these apathy</p>
+      <p begin="01:02:51.200" end="01:02:54.380">...downtime upgrade so the</p>
+      <p begin="01:02:54.380" end="01:02:59.350">...is still ...with that okay,</p>
+      <p begin="01:02:59.350" end="01:03:03.710">so, we so the demo and then</p>
+      <p begin="01:03:03.710" end="01:03:08.450">...is basically the end of my presentation there.</p>
+      <p begin="01:03:08.450" end="01:03:12.240">There was a lot of material to covert so clearly I will</p>
+      <p begin="01:03:12.240" end="01:03:17.460">invite you to take a low-carb artistic a showed the same pose that-you</p>
+      <p begin="01:03:17.460" end="01:03:21.730">...in my demo are part of the sdk so you...</p>
+      <p begin="01:03:22.880" end="01:03:27.620">locker machine and actually spend more time to look at the code we are going to</p>
+      <p begin="01:03:27.620" end="01:03:32.060">poster a more to tortillas same videossoon</p>
+      <p begin="01:03:32.060" end="01:03:37.040">...keep a checking these urls and that would be more and more</p>
+      <p begin="01:03:37.040" end="01:03:42.240">material and then very important please provide feedback we have</p>
+      <p begin="01:03:42.240" end="01:03:44.450">...lot of feature the platform the</p>
+      <p begin="01:03:44.450" end="01:03:49.040">run-time service fabric can be used for a while within microsoft that are</p>
+      <p begin="01:03:49.040" end="01:03:54.000">...big important services running...the actor...is</p>
+      <p begin="01:03:54.000" end="01:03:58.980">relatively new so-if you seen that...basing features or there are</p>
+      <p begin="01:03:58.980" end="01:04:03.910">no scenarios that are not easy to implement using the actor with a feature that we having actor</p>
+      <p begin="01:04:03.910" end="01:04:09.120">...today please let us know and then we'll will</p>
+      <p begin="01:04:10.810" end="01:04:12.630">...best to between,</p>
+      <p begin="01:04:12.630" end="01:04:17.890">you know, the tech preview nj to improve as much as we can and</p>
+      <p begin="01:04:17.890" end="01:04:21.730">then stay tuned because again as I said, you know, the...is going to be</p>
+      <p begin="01:04:23.850" end="01:04:28.940">...a...type of thing so we're going to add more and more scenariosthat are</p>
+      <p begin="01:04:31.020" end="01:04:34.560">...will help you to understand the benefit of using</p>
+      <p begin="01:04:34.560" end="01:04:38.860">actors for building applications important thing</p>
+      <p begin="01:04:38.860" end="01:04:43.330">...I'm not for everything there would be a document that</p>
+      <p begin="01:04:43.330" end="01:04:47.290">...the typical design partners and untie partners</p>
+      <p begin="01:04:47.290" end="01:04:52.600">four-d actor programming model so that's it I hope that was...for thanks-a-lot?</p>
+
+    </div>
+  </body>
+</tt>

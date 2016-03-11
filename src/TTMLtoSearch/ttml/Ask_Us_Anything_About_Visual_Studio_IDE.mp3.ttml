@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.880</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.620" end="00:00:03.400">Welcome back we're here live built twenty fifty this</p>
+      <p begin="00:00:03.400" end="00:00:08.190">...awesome conference and I'm excited to be with you guys you literally make the</p>
+      <p begin="00:00:08.190" end="00:00:13.070">house where in I live I love visual studio tell me a</p>
+      <p begin="00:00:13.070" end="00:00:17.620">little bit first about who you are what you do and what are some of the cool things coming out for</p>
+      <p begin="00:00:17.620" end="00:00:21.520">visual studio the next release so let's start over here mark so I'm</p>
+      <p begin="00:00:21.520" end="00:00:26.010">models and thomas and I work on the core visual studio id et I look</p>
+      <p begin="00:00:26.010" end="00:00:28.490">...to the...which is the place where...</p>
+      <p begin="00:00:28.490" end="00:00:34.020">imagine twelve that was a magic happens sometimes eighteen hours a day it's right so,</p>
+      <p begin="00:00:34.020" end="00:00:37.950">I live there and, I've been working on some productivity features and the</p>
+      <p begin="00:00:37.950" end="00:00:43.930">twenty fifteen cycle will maybe give you a little look at the moment...hall</p>
+      <p begin="00:00:43.930" end="00:00:48.670">...program manager on the diagnostics team...work on the debugging performance tools and visual studio</p>
+      <p begin="00:00:48.670" end="00:00:52.380">...of the...things we brought to visited two thousand fifteen include what</p>
+      <p begin="00:00:52.380" end="00:00:57.280">...continue improvements dice the ability to use lambdas...the watch window and debugging on</p>
+      <p begin="00:00:57.280" end="00:01:01.070">dot net and we brought some performance tools into the editor in into the</p>
+      <p begin="00:01:01.070" end="00:01:04.710">debugging tools as well so we can show you how long code text execute, for example,</p>
+      <p begin="00:01:04.710" end="00:01:10.810">just while you're stepping running to break points awesome...it was cooler I also work on the visit</p>
+      <p begin="00:01:10.810" end="00:01:15.700">...core teams our team at does the core parts of...for all languages</p>
+      <p begin="00:01:15.700" end="00:01:19.340">...editing in the building in...debugged</p>
+      <p begin="00:01:19.340" end="00:01:22.870">...as well so anything that release all languages what we</p>
+      <p begin="00:01:22.870" end="00:01:26.530">do lots awesome well we've got them here so please</p>
+      <p begin="00:01:26.530" end="00:01:30.520">ask some questions otherwise I'm just going to go crazy tell me about the</p>
+      <p begin="00:01:30.520" end="00:01:34.880">new stuff coming out why is exciting maybe even show us a little bit of what's going on</p>
+      <p begin="00:01:36.020" end="00:01:41.610">sure we do I think big thing for...five-fifteen isfocus on</p>
+      <p begin="00:01:41.610" end="00:01:46.300">...productivity so as always the...developers appreciate productivity and we have a lot of that the</p>
+      <p begin="00:01:46.300" end="00:01:48.350">...so stuff on the editor and</p>
+      <p begin="00:01:48.350" end="00:01:51.960">...going to be so some stuff on the blogger and there's lots of let's start with the editor because that's where</p>
+      <p begin="00:01:51.960" end="00:01:56.950">...all starts that's...we type it and then with your stuff that's we figure out what we type wrong that's what I start</p>
+      <p begin="00:01:58.000" end="00:02:02.000">...funny that you should mention it's about getting things wrong because my world this</p>
+      <p begin="00:02:02.000" end="00:02:07.040">...releases really been about the first stage of getting things wrong and how to avoid it right</p>
+      <p begin="00:02:07.040" end="00:02:09.790">...it's about...so, what</p>
+      <p begin="00:02:09.790" end="00:02:15.520">you see in my visual studio right now is I'm looking at a project that I've been working on I've</p>
+      <p begin="00:02:15.520" end="00:02:20.280">got an error present in the project you'll see I've got my error let's stop...the fairly typical</p>
+      <p begin="00:02:20.280" end="00:02:24.670">developer thing when I'm working thrillist...it's kinda like my to do this right so,</p>
+      <p begin="00:02:24.670" end="00:02:29.130">I...and sure enough I'm...go right to the lines of code as the</p>
+      <p begin="00:02:29.130" end="00:02:34.660">...that's nothing new it's been like that for a long-time but, you might notice if you're watching</p>
+      <p begin="00:02:34.660" end="00:02:38.740">...this move my mass overhear zoom in all as a</p>
+      <p begin="00:02:38.740" end="00:02:44.100">...new guy in town and that's the light bulb...left ok so, you notice...</p>
+      <p begin="00:02:44.100" end="00:02:49.580">he has a keyboard shortcut now I'm a guy who likes to keep my hand on the cable right okay so what I'm going</p>
+      <p begin="00:02:49.580" end="00:02:54.850">to do is zoom out I'm going to say control dot net if you notice that told me the action that</p>
+      <p begin="00:02:55.890" end="00:02:58.020">...right control what was the sdp people</p>
+      <p begin="00:02:58.020" end="00:03:01.430">...up what I was doing okay and you can see?</p>
+      <p begin="00:03:02.470" end="00:03:07.820">That says something new as appearing not and then if he ever got to use the old smart</p>
+      <p begin="00:03:07.820" end="00:03:11.260">tags right this is a replacement for those but a whole lot richer</p>
+      <p begin="00:03:11.260" end="00:03:15.290">...I'll bunch richer than it was before instead of just presenting me with the list of</p>
+      <p begin="00:03:15.290" end="00:03:20.380">actions here what it's going to do as I move down this list and I'm...maps that you can see it</p>
+      <p begin="00:03:20.380" end="00:03:23.970">properly as I move down this list you'll see</p>
+      <p begin="00:03:23.970" end="00:03:28.010">...presenting may not just with the action itself but also with</p>
+      <p begin="00:03:28.010" end="00:03:32.200">...pretty neat little previewed okay what previous telling me in</p>
+      <p begin="00:03:32.200" end="00:03:35.470">...mode you see this green lines for things that are being added</p>
+      <p begin="00:03:35.470" end="00:03:40.410">...and red-line some things that are being taken away that's telling me exactly what I'm going to get before I</p>
+      <p begin="00:03:40.410" end="00:03:44.120">get so if you're going to...it up,... before hand how you're going to screwed</p>
+      <p begin="00:03:44.120" end="00:03:47.310">...better wonderful this is a projection forward into the future</p>
+      <p begin="00:03:47.310" end="00:03:51.600">and this comes courtesy of the new roslyn compiler model in the csharp and bb well</p>
+      <p begin="00:03:51.600" end="00:03:57.200">god it's offset...know what's going to happen in the future it's kind of a crystal ball if you like right so,</p>
+      <p begin="00:03:57.200" end="00:04:00.180">when I hit this thing I'm going to know right away I don't have to go and</p>
+      <p begin="00:04:00.180" end="00:04:06.830">hit preview changes to figure out what this thing's going to be for me right so I go ahead and take that change?</p>
+      <p begin="00:04:06.830" end="00:04:12.390">And, sure, enough I made...that's cool that's all well and good let's just on do that change</p>
+      <p begin="00:04:12.390" end="00:04:17.110">this for a moment that and now I'm a mouse oriented guy just...and I have to...all</p>
+      <p begin="00:04:17.110" end="00:04:22.370">...right so, I'm...guide and I want to hover over my</p>
+      <p begin="00:04:22.370" end="00:04:27.200">errors and typically what we find is people when...worrying about an error issue they get a hover over the</p>
+      <p begin="00:04:27.200" end="00:04:31.180">red squiggles...what better place to parker's?</p>
+      <p begin="00:04:31.180" end="00:04:33.720">Lightbulb nice right so,</p>
+      <p begin="00:04:33.720" end="00:04:38.650">this is exactly what we put the same experience you can go ahead and that guy up get exactly the same</p>
+      <p begin="00:04:38.650" end="00:04:42.620">result previously that light bulb was in my head and most of the time it did show</p>
+      <p begin="00:04:43.840" end="00:04:46.500">...that it's a visual studio now right exactly,</p>
+      <p begin="00:04:46.500" end="00:04:51.190">yeah, but,...to have the ideas come up...the machete...rely on the brian</p>
+      <p begin="00:04:51.190" end="00:04:56.930">...right yeah, so, ...in this new world.</p>
+      <p begin="00:04:56.930" end="00:04:58.780">...the light...you might have noticed as I</p>
+      <p begin="00:04:58.780" end="00:05:03.910">slid my maps over this guy here on this can zoom in a little bit so you can see it but,</p>
+      <p begin="00:05:03.910" end="00:05:08.750">we've got here is a very slight damning if you look at the word...yeah, it's slightly gripe</p>
+      <p begin="00:05:08.750" end="00:05:12.110">...subtle and the reason that subtle is we don't...beating your around</p>
+      <p begin="00:05:12.110" end="00:05:17.450">...right yet because this is the suggestion right this is just a suggestion so this</p>
+      <p begin="00:05:17.450" end="00:05:22.000">one-stop your code compiling this...actually break you completely but it is a suggestion we have</p>
+      <p begin="00:05:22.000" end="00:05:28.250">...for how to make it had better okay and what it's going to let me do once again if I put my</p>
+      <p begin="00:05:28.250" end="00:05:33.060">...on the line the same cut keyboard experience applies it comes up on the margin...</p>
+      <p begin="00:05:33.060" end="00:05:37.810">It tells me I have an unnecessary cast once again I get this handy dandy preview which lets me know what's going</p>
+      <p begin="00:05:37.810" end="00:05:42.830">to happen nice,... that I can also apply of any scape that I like...so</p>
+      <p begin="00:05:42.830" end="00:05:48.380">whether if I want to eliminate all the unnecessary...in my project I can go ahead and do that and,</p>
+      <p begin="00:05:48.380" end="00:05:53.360">that case I will see the...changes dialogue because that's a lot of files to be changing without letting me know what you're doing</p>
+      <p begin="00:05:53.360" end="00:05:56.860">...but let's suppose I just want to take this unnecessary cost I can go ahead and</p>
+      <p begin="00:05:56.860" end="00:06:02.270">...that's awesome that's really cool but for the next...this I mean you have and reading</p>
+      <p begin="00:06:02.270" end="00:06:04.580">...artificially...the next level of</p>
+      <p begin="00:06:04.580" end="00:06:10.780">...some right what we've got here is let's introduce that thing again?</p>
+      <p begin="00:06:10.780" end="00:06:15.020">Let's make the same mistake twice because I never do that right and,</p>
+      <p begin="00:06:15.020" end="00:06:18.330">you'll see that as I types the light...</p>
+      <p begin="00:06:18.330" end="00:06:21.220">Right now that should be spurned some thoughts</p>
+      <p begin="00:06:21.220" end="00:06:26.120">...if you've ever done this class of thing typically used to come up from static analysis all</p>
+      <p begin="00:06:26.120" end="00:06:31.090">...right so you wouldn't find this thing out until...whenever you got rams</p>
+      <p begin="00:06:31.090" end="00:06:36.410">...running static analysis right now if you're a good guide that...your build price right ...</p>
+      <p begin="00:06:36.410" end="00:06:41.510">maybe it happened on your...build or whatever you'd find out then but if you're like a lot of...find</p>
+      <p begin="00:06:41.510" end="00:06:45.750">...maybe weeks like...right and I've accumulated a whole bunch of dead right</p>
+      <p begin="00:06:45.750" end="00:06:48.810">...project right you don't want to do that want to find out right now</p>
+      <p begin="00:06:48.810" end="00:06:54.700">...the magic here is being enabled by a new feature in roslyn.</p>
+      <p begin="00:06:54.700" end="00:07:00.450">Called analyses okay ...feature of the roslyn framework okay they are</p>
+      <p begin="00:07:00.450" end="00:07:05.120">and extensible way of expressing rules like the one we just saw a selig</p>
+      <p begin="00:07:05.120" end="00:07:09.190">...the references you're adding or how does that work well how that works is these things are typically</p>
+      <p begin="00:07:09.190" end="00:07:14.150">their assemblies package this new get packages scott okay and I travel with your project all that</p>
+      <p begin="00:07:14.150" end="00:07:18.880">is cool...the app could you make your own custom analyzers and is that what</p>
+      <p begin="00:07:18.880" end="00:07:22.920">...absolutely correct...the awesome not only can you write your</p>
+      <p begin="00:07:22.920" end="00:07:27.660">I'm okay and I can do ad analyzer okay and I could add a new one I can add one</p>
+      <p begin="00:07:27.660" end="00:07:32.310">of the new get packaged my projects habit trouble...my...from a library author let's say I wrote my</p>
+      <p begin="00:07:32.310" end="00:07:37.700">and library I can make a set of rules the trouble with that library that's remarkable because now,</p>
+      <p begin="00:07:37.700" end="00:07:42.180">... like jim the offers always puts the curly...on the same...man we got fix that</p>
+      <p begin="00:07:42.180" end="00:07:46.510">right analyze those a gym...the next slide every time it so that's the kind of</p>
+      <p begin="00:07:46.510" end="00:07:51.390">...I know it's a silly example but that's kind of the analyze...do is...at structure code</p>
+      <p begin="00:07:51.390" end="00:07:56.520">...what it's doing correct okay so you have full access to the our of the roles and posit and,</p>
+      <p begin="00:07:56.520" end="00:08:00.200">you're basically going to be able to figure out when things have gone wrong and</p>
+      <p begin="00:08:00.200" end="00:08:04.600">raise the raise issues and not just raise issues mind you...fixes to those issues</p>
+      <p begin="00:08:04.600" end="00:08:09.530">and not even when they're wrong but maybe when they're wrong for your organization correct</p>
+      <p begin="00:08:09.530" end="00:08:14.240">okay I'm not super important because these things are configured in rule sets right</p>
+      <p begin="00:08:14.240" end="00:08:19.360">I have a rules editor here that's actually going to allow me to...so let's go ahead and look</p>
+      <p begin="00:08:19.360" end="00:08:24.890">we can find that redundant cast one that I was talking about just there it is and I can decide from</p>
+      <p begin="00:08:24.890" end="00:08:27.790">my a policy what shows up</p>
+      <p begin="00:08:27.790" end="00:08:32.670">...okay so I could say from my project I never want redundant...and I'm going</p>
+      <p begin="00:08:32.670" end="00:08:36.960">to have those...warnings or even is...all wow if I want to do that right so</p>
+      <p begin="00:08:36.960" end="00:08:40.930">it's fully in your hands these things trouble with your project is your conventions</p>
+      <p begin="00:08:40.930" end="00:08:45.890">your control that's awesome I really like some of these features so let's move on to debugging are</p>
+      <p begin="00:08:45.890" end="00:08:49.060">you ready to tell us a little bit out?</p>
+      <p begin="00:08:49.060" end="00:08:51.530">Let's see so now that we've now we've analyzed</p>
+      <p begin="00:08:51.530" end="00:08:54.640">...code...we've typed in now that we've let the light bulb, come on,</p>
+      <p begin="00:08:54.640" end="00:09:01.200">the computers...of our heads once...the thing how can we start to profile these things are look at...</p>
+      <p begin="00:09:01.200" end="00:09:05.260">I...so let's turn off I have ...to my screen gets up there</p>
+      <p begin="00:09:05.260" end="00:09:09.920">are very excellent so I have do you have up here that's going to make a call to web service</p>
+      <p begin="00:09:09.920" end="00:09:14.450">okay and it's going to go ahead and click this button and it's going to go ahead</p>
+      <p begin="00:09:14.450" end="00:09:19.360">make just a couple web calls and I can see that that's really not that fast service which that was a lot faster</p>
+      <p begin="00:09:19.360" end="00:09:22.990">okay so...old world how I would figure out how to go do</p>
+      <p begin="00:09:22.990" end="00:09:26.600">that I'm what I had to probably go try to run some profiler maybe</p>
+      <p begin="00:09:26.600" end="00:09:31.520">...some custom instrumentation my code but now what I can do I'm just going-to go down here to</p>
+      <p begin="00:09:31.520" end="00:09:32.990">method?</p>
+      <p begin="00:09:32.990" end="00:09:37.680">That handles the button click when I click the button on there and as I step</p>
+      <p begin="00:09:37.680" end="00:09:40.790">to the code you can see this little tip shows up we call a</p>
+      <p begin="00:09:40.790" end="00:09:44.360">...tip here on the approximately how long the code text execute</p>
+      <p begin="00:09:44.360" end="00:09:50.290">...awesome stepping from...did nothing to...less than one millisecond to execute so as I go</p>
+      <p begin="00:09:50.290" end="00:09:55.840">...can see nothing dressing taping...the...happening step.</p>
+      <p begin="00:09:55.840" end="00:09:59.110">And, there's also...between break points as well but so as I step over this one</p>
+      <p begin="00:09:59.110" end="00:10:03.140">...I can see...taking a while I know exactly how long it took now</p>
+      <p begin="00:10:03.140" end="00:10:06.880">...can see that actually about two seconds to make that web service call dot so now</p>
+      <p begin="00:10:06.880" end="00:10:12.110">let's run the methods can make to...there's three things in this list so I'm just going to choose</p>
+      <p begin="00:10:12.110" end="00:10:14.990">run to cursor that's like running or break point.</p>
+      <p begin="00:10:14.990" end="00:10:17.590">And,...tell me how long it ran from the previous break states</p>
+      <p begin="00:10:17.590" end="00:10:20.470">...from a stepper whether to can break points and I can see that</p>
+      <p begin="00:10:20.470" end="00:10:24.390">it took about four point to milliseconds to run the additions</p>
+      <p begin="00:10:24.390" end="00:10:28.840">...take about two seconds per web service call...a really</p>
+      <p begin="00:10:28.840" end="00:10:32.330">...way in the bagger but I can time.</p>
+      <p begin="00:10:32.330" end="00:10:35.910">My code about the need to go...stopwatch as a custom instrumentation or run</p>
+      <p begin="00:10:35.910" end="00:10:40.320">a profiler outside of course of...so now is your debugging not only, you know,</p>
+      <p begin="00:10:40.320" end="00:10:44.710">okay, which code is not doing what I what...although with code is maybe doing what I</p>
+      <p begin="00:10:44.710" end="00:10:50.710">want but not really well exactly I don't have to think about ...doing...performance</p>
+      <p begin="00:10:50.710" end="00:10:54.920">...just of course debugging I can see along...code text execute that's awesome</p>
+      <p begin="00:10:54.920" end="00:10:59.920">okay so there was a question on channel nine but I want to ask about that maybe has a little</p>
+      <p begin="00:10:59.920" end="00:11:03.840">bit to do with debugging other end new tools</p>
+      <p begin="00:11:03.840" end="00:11:08.020">for game developers in visual studio twenty fifty?</p>
+      <p begin="00:11:08.020" end="00:11:12.100">Gathers quite a bit of stuff actually so on day in and,</p>
+      <p begin="00:11:12.100" end="00:11:15.740">we have that...multiple levels...the lowest-level we have</p>
+      <p begin="00:11:15.740" end="00:11:19.580">...tools for visited graphics and diagnostics so,</p>
+      <p begin="00:11:19.580" end="00:11:24.170">people who are using direct text and they want to be able to debugged</p>
+      <p begin="00:11:24.170" end="00:11:28.510">profiler applicationswe allow them to do graphics level debugging on those</p>
+      <p begin="00:11:28.510" end="00:11:32.220">applications...be able to go and add to a certain pixel and say</p>
+      <p begin="00:11:32.220" end="00:11:37.130">...is that pixels that specific color and be able to trace through all the shatters that happen and see, you know,</p>
+      <p begin="00:11:37.130" end="00:11:40.300">go all the way into pinpointing where the source of the problem</p>
+      <p begin="00:11:40.300" end="00:11:43.820">was right and then we added also now profiling for a for graphics</p>
+      <p begin="00:11:43.820" end="00:11:47.480">...debugging also profiling so a bunch of new things happy</p>
+      <p begin="00:11:47.480" end="00:11:53.280">...but fifteen in addition to that one of things that we're doing is that we're working with the unity</p>
+      <p begin="00:11:53.280" end="00:11:58.160">on having a good support between a visual studio and units of your eyes if you're</p>
+      <p begin="00:11:58.160" end="00:12:03.550">creating mobile applications with unityone of the things that we do now is that...small we just had the announced</p>
+      <p begin="00:12:03.550" end="00:12:08.760">a partnership with unity a few weeks ago where it's going to be easy to acquire the tool to use both</p>
+      <p begin="00:12:08.760" end="00:12:13.240">...in visual studio be easy for you to configure those of the together and also we have</p>
+      <p begin="00:12:13.240" end="00:12:17.280">...studio tools for unity and that make it very easy for you to goal</p>
+      <p begin="00:12:17.280" end="00:12:21.430">...your csharp code in your favorite environment inside the studio and be able</p>
+      <p begin="00:12:21.430" end="00:12:26.740">to the debugging from inside visual studioand, see the app run in the unity editors</p>
+      <p begin="00:12:26.740" end="00:12:31.720">it's a very nice combination there that is awesome...your demo sure I feel like there's more we got</p>
+      <p begin="00:12:31.720" end="00:12:37.820">a c that's...anymore that we can look at let's do it so next thing I should point out as we were</p>
+      <p begin="00:12:37.820" end="00:12:42.890">doing this up performance tip and we're looking at that is this window over here that pops up now</p>
+      <p begin="00:12:42.890" end="00:12:47.560">and I start debug instead of new windows I don't think I've seen that yet or brand-new windowed visual</p>
+      <p begin="00:12:47.560" end="00:12:51.330">...does fifteen called the diagnostics tools so by default I'm</p>
+      <p begin="00:12:51.330" end="00:12:55.970">going-to have memory information about my process so I can...running about thirty nine</p>
+      <p begin="00:12:55.970" end="00:13:01.320">megabytes right here so nothing concerning going on right there I can see the cpu consumption of my</p>
+      <p begin="00:13:01.320" end="00:13:05.330">...over time to write overtime...so by default zoomed</p>
+      <p begin="00:13:05.330" end="00:13:09.090">...kind of my previous breaks...I just went ahead and reset that now</p>
+      <p begin="00:13:09.090" end="00:13:12.360">as I scroll back I can see the memory trend</p>
+      <p begin="00:13:12.360" end="00:13:17.040">...my entire debug session and maps not really do anything here of</p>
+      <p begin="00:13:17.040" end="00:13:20.080">...web coliseum barely using any cpu there's nothing</p>
+      <p begin="00:13:20.080" end="00:13:24.090">...worried about their also one of the things we get asked...people really,</p>
+      <p begin="00:13:24.090" end="00:13:28.660">really like perth...released is I have the history over here in this debug</p>
+      <p begin="00:13:28.660" end="00:13:33.040">events tab that shows the every single step that was recorded I can see</p>
+      <p begin="00:13:33.040" end="00:13:38.000">the time that it took so if I want to go back and say I don't remember what my previous</p>
+      <p begin="00:13:38.000" end="00:13:44.490">step was I can just look back okay so that first step to two hundred...</p>
+      <p begin="00:13:44.490" end="00:13:49.270">seconds about and then when I ran to break point it took about four-point-two seconds so you have a</p>
+      <p begin="00:13:49.270" end="00:13:54.240">full history about over there that's awesome well we've incorporated memory tools so I can</p>
+      <p begin="00:13:54.240" end="00:13:59.420">take a snapshot I can view all the objects in my keep my process to see if my</p>
+      <p begin="00:13:59.420" end="00:14:04.770">see my memory grafting a little bit high I can see what's going on in the always tell us</p>
+      <p begin="00:14:04.770" end="00:14:09.660">...I don't think I've ever seen that to this is also knew twenty fifteen being incorporated many bagger</p>
+      <p begin="00:14:09.660" end="00:14:14.760">we have...experience of this on top of dump files only the ultimate skewing</p>
+      <p begin="00:14:14.760" end="00:14:19.510">...as a okay but the ability to do...debugging and</p>
+      <p begin="00:14:19.510" end="00:14:23.540">...a break point is...fifteen and that's an almost use down</p>
+      <p begin="00:14:23.540" end="00:14:28.180">to community so this brings up an interesting question because we looked at</p>
+      <p begin="00:14:28.180" end="00:14:32.290">some cool stuff and they're used to be a lot of differentiation of which</p>
+      <p begin="00:14:32.290" end="00:14:37.920">version of visual studio had what they so of the stuff that you showed can you tell us</p>
+      <p begin="00:14:37.920" end="00:14:40.480">all about which things go into which skews?</p>
+      <p begin="00:14:41.500" end="00:14:44.650">Sure, everything I've showed so far is available down to the community</p>
+      <p begin="00:14:44.650" end="00:14:49.570">...that's a free one right the anyone can use that same for all the stuff I said okay because</p>
+      <p begin="00:14:49.570" end="00:14:55.020">I remember watching some of the ultimate stuff like years ago like wow I wish I could have that well,</p>
+      <p begin="00:14:55.020" end="00:14:59.280">professional because but this is really need that we're giving these really</p>
+      <p begin="00:14:59.280" end="00:15:04.490">powerful tools to anybody...say something I was going to say that one of the things...been asked</p>
+      <p begin="00:15:04.490" end="00:15:09.160">...that code...right...for the longest time was only in the high-speed</p>
+      <p begin="00:15:09.160" end="00:15:11.480">...view and we brought that down with...</p>
+      <p begin="00:15:12.520" end="00:15:16.750">The awesome posits a...completes your id experience all right so here's a</p>
+      <p begin="00:15:16.750" end="00:15:20.810">questions coming in...is their...support for...and id avi</p>
+      <p begin="00:15:20.810" end="00:15:26.030">the regions I don't know if a dungeons and I thought that's my opinion</p>
+      <p begin="00:15:26.030" end="00:15:30.790">righted justify on this is not represent the period by employer I'll give you have</p>
+      <p begin="00:15:30.790" end="00:15:35.220">regions you just maybe you should make a new class, you know, I...so in terms of</p>
+      <p begin="00:15:35.220" end="00:15:40.070">programming support in the id in general...for reasons it yes we do have support for reasons and</p>
+      <p begin="00:15:40.070" end="00:15:42.780">...programming we have a lot of editor program...in</p>
+      <p begin="00:15:42.780" end="00:15:47.810">place one of the things that is new invisibility five-fifteen is that refocus on visual studio</p>
+      <p begin="00:15:47.810" end="00:15:52.620">sensibility...a one of the things that we're doing now is just make it a lot easier for you as a developer</p>
+      <p begin="00:15:52.620" end="00:15:57.360">...customize...environment and...having perhaps...features you want to add</p>
+      <p begin="00:15:57.360" end="00:16:02.030">or somethings I want to do for yourself or for your team or you...some scales and you want to create some</p>
+      <p begin="00:16:02.030" end="00:16:06.990">open-source project for something that you want to have a customization for everybody and we are creating new tools</p>
+      <p begin="00:16:06.990" end="00:16:10.580">in terms of a much better, you know,...some really nice templates</p>
+      <p begin="00:16:10.580" end="00:16:15.890">to start from a very good documentation now much... we kind of the not having been investing</p>
+      <p begin="00:16:15.890" end="00:16:20.590">in that documentation for a while now it's much reminded frida make extensions new thing</p>
+      <p begin="00:16:20.590" end="00:16:25.110">that was it is hard-right but it's good now the nice thing is that also</p>
+      <p begin="00:16:25.110" end="00:16:30.310">we're creating this open-source or you know, collection of repositories where we're showing you all</p>
+      <p begin="00:16:30.310" end="00:16:35.290">the places where there are people who created open-source extensions you could go on learn from them because one of</p>
+      <p begin="00:16:35.290" end="00:16:40.530">the things that we heard from people on...again is that the best source for learning to create</p>
+      <p begin="00:16:40.530" end="00:16:44.500">visual studio extensions was going to look at existing thing so whether you look at the</p>
+      <p begin="00:16:44.500" end="00:16:49.620">...tools for visual studio or whether looking at other tools they're all good extensions they can go on learn from</p>
+      <p begin="00:16:49.620" end="00:16:53.860">so that audio...talking about extensions actually the light bulb that you</p>
+      <p begin="00:16:53.860" end="00:16:58.300">...that that's a fully extensible piece to so-if you want-to write your own lightbulb</p>
+      <p begin="00:16:58.300" end="00:17:02.620">I already talked about...being one way you can do that but if you're not working and manage languages</p>
+      <p begin="00:17:02.620" end="00:17:06.950">in vb and csharp even write your...light bulbs anyways so they were just as well and</p>
+      <p begin="00:17:06.950" end="00:17:11.610">other file types as well...just a slightly different way of addressing them so anyone can go posse on those</p>
+      <p begin="00:17:11.610" end="00:17:16.750">...awesome all right the jb any cplus-plus improvements visual studio twenty fifty</p>
+      <p begin="00:17:16.750" end="00:17:21.580">all many cplus-plus improvements in visit let's hear about the so...probably get the</p>
+      <p begin="00:17:21.580" end="00:17:23.670">...guys talk about them...just mention a few</p>
+      <p begin="00:17:23.670" end="00:17:28.910">okay and definitely in terms of standardization one of things that's and use that,</p>
+      <p begin="00:17:28.910" end="00:17:33.890">you know, continue focus on cplus-plus...fourteen so I know that herb sutter publishes the</p>
+      <p begin="00:17:33.890" end="00:17:37.180">...and stuff on low-end and they have you know,</p>
+      <p begin="00:17:37.180" end="00:17:42.240">it's lighting up a lot more...cplus-plus levens people's...that's obviously something that's</p>
+      <p begin="00:17:42.240" end="00:17:46.470">...twenty fifteen another thing is the focus on multiplies development and</p>
+      <p begin="00:17:46.470" end="00:17:50.660">...form so now you can see at targeting android</p>
+      <p begin="00:17:50.660" end="00:17:54.200">with cplus-plus and ios as well as you can create and</p>
+      <p begin="00:17:54.200" end="00:17:59.060">wineries that or use source...of runs multiple places and now from within business</p>
+      <p begin="00:17:59.060" end="00:18:03.410">...you can neck create build and debug android targets...so,</p>
+      <p begin="00:18:03.410" end="00:18:07.340">that's...actually one thing...on top of that</p>
+      <p begin="00:18:07.340" end="00:18:12.300">...post of on the cplus-plus blog about how because we've added the support for android and we</p>
+      <p begin="00:18:12.300" end="00:18:15.020">...debug using gb and now ldap</p>
+      <p begin="00:18:15.020" end="00:18:20.820">...on the...how you can use visual studio for general remote targeting of one-x raspberry</p>
+      <p begin="00:18:20.820" end="00:18:25.400">pies well-supported wow so it's like now it's a real bigger</p>
+      <p begin="00:18:25.400" end="00:18:28.510">house a larger ten more people...stuff they want</p>
+      <p begin="00:18:28.510" end="00:18:33.830">...all right go ahead...they on-call choice I showed the...the memory to working for manage</p>
+      <p begin="00:18:33.830" end="00:18:37.140">...tool works for native as well so if you're doing cplus-plus you need to</p>
+      <p begin="00:18:37.140" end="00:18:41.210">solve memory problems we have the memory to works very similar all</p>
+      <p begin="00:18:41.210" end="00:18:47.120">does allocation tracking rather than reference graphs...native so you just of your attached to the</p>
+      <p begin="00:18:47.120" end="00:18:51.380">natively bagger you...take snapshot it'll record what state of all the allocations</p>
+      <p begin="00:18:51.380" end="00:18:56.080">where that point you...different point take another snapshot and we'll show you all the allocations</p>
+      <p begin="00:18:56.080" end="00:19:01.220">...allocated since the first nap...you got what one really cool thing...we're talking about</p>
+      <p begin="00:19:01.220" end="00:19:06.180">...buses that in the editor now as we're getting a lot of idea...a</p>
+      <p begin="00:19:06.180" end="00:19:10.870">improvements at one of the things that I really like about visit and fifteen is that it has this little feature</p>
+      <p begin="00:19:10.870" end="00:19:15.660">...you can synchronize declarations and definitions so you go and...something in the and</p>
+      <p begin="00:19:15.660" end="00:19:21.830">the cplus-plus I'll see it and cp file and... synchronize that to header file is just</p>
+      <p begin="00:19:21.830" end="00:19:27.240">...and now you're header and I want to see this is a sounds like too much...I have a quick little demo</p>
+      <p begin="00:19:27.240" end="00:19:33.420">...even had one going that's awesome is one I prepared earlier.</p>
+      <p begin="00:19:33.420" end="00:19:42.630">...really trivial method...couple arguments here.</p>
+      <p begin="00:19:42.630" end="00:19:48.540">Okay, so, I get the end of this line and typically what I'm going to want to do at that point.</p>
+      <p begin="00:19:48.540" end="00:19:53.520">You see the lightbulb...okay.</p>
+      <p begin="00:19:53.520" end="00:20:00.130">The magic...what's happened here, yeah, I actually got my cp file that I want to go...that method</p>
+      <p begin="00:20:00.130" end="00:20:02.980">...of inline moi...</p>
+      <p begin="00:20:02.980" end="00:20:07.330">...here which is actually a feature that's been around for a while but we've leveraged it together with the</p>
+      <p begin="00:20:07.330" end="00:20:12.060">light bulb here to allow you to go ahead and create the body about that</p>
+      <p begin="00:20:12.060" end="00:20:16.690">method right away and you do you can texturally as well so you're right in line you have</p>
+      <p begin="00:20:16.690" end="00:20:20.980">...the context of the heady or working and you can just go ahead and work and type it in...it</p>
+      <p begin="00:20:20.980" end="00:20:25.770">up that's really cool aren't paying that's not only related cplus-plus but also covers</p>
+      <p begin="00:20:25.770" end="00:20:30.630">everybody is one of focuses for visual studio this releases that we focused on people creating a</p>
+      <p begin="00:20:30.630" end="00:20:34.310">classic...applications and people who are using cloud services in their development</p>
+      <p begin="00:20:34.310" end="00:20:38.880">got so, a one of the things that we've added is that we've learned that a lot of people as</p>
+      <p begin="00:20:38.880" end="00:20:43.610">they're doing their development they have to deal with multiple accounts, you know, I have this, you know, sequel as</p>
+      <p begin="00:20:43.610" end="00:20:48.350">or database that I'm using and I have this feature from visual studio online amusing this thing</p>
+      <p begin="00:20:48.350" end="00:20:53.550">...all from outside microsoft completely get...somewhere right...it, you know, constantly as you're using the</p>
+      <p begin="00:20:53.550" end="00:20:58.880">id you get prompted to enter username enter your password for this thing for that thing and you</p>
+      <p begin="00:20:58.880" end="00:21:02.930">...multiple times the things that we added for resisted five-fifteen it's you know,</p>
+      <p begin="00:21:02.930" end="00:21:05.370">single sign on where you basically tell us about all like</p>
+      <p begin="00:21:05.370" end="00:21:10.290">...that you have and then we will remember them and then every time you're just using</p>
+      <p begin="00:21:10.290" end="00:21:13.460">...connecting to...anything we'll just go through your accounts</p>
+      <p begin="00:21:13.460" end="00:21:18.150">authenticate with the right one and you get going so much less typing of</p>
+      <p begin="00:21:18.150" end="00:21:23.030">...passwords at...id which isone of my favorite things that we've added this time around got it right so there's</p>
+      <p begin="00:21:23.030" end="00:21:26.340">a more questions...gets the questionable python tools for visual studio</p>
+      <p begin="00:21:26.340" end="00:21:30.300">be getting the new libel feature in csharp six and visual basic fourteen</p>
+      <p begin="00:21:30.300" end="00:21:34.570">...down-arrow the answer to that question but...as I say this extension</p>
+      <p begin="00:21:34.570" end="00:21:39.920">...that any language can take so whenever anybody who writes languages ready to</p>
+      <p begin="00:21:39.920" end="00:21:44.240">...and provide their own capabilities like that they can do that so but that's actually</p>
+      <p begin="00:21:44.240" end="00:21:49.630">happening varying rights across the different languages...they're all possible got next question</p>
+      <p begin="00:21:49.630" end="00:21:52.980">will we will we be able to use visual studio for art we</p>
+      <p begin="00:21:52.980" end="00:21:55.620">know development that's an interesting question we.</p>
+      <p begin="00:21:56.640" end="00:22:01.590">Are we going to be able to users...development I don't think you can do it right now I know that, you know,</p>
+      <p begin="00:22:01.590" end="00:22:06.560">we have...team and they're looking at what you can do with visited development targeting</p>
+      <p begin="00:22:07.930" end="00:22:12.320">General devices in general including are doing a devices I don't have anything to</p>
+      <p begin="00:22:12.320" end="00:22:16.810">...point god I know that we have people looking at that space in general this is going to be a</p>
+      <p begin="00:22:16.810" end="00:22:21.540">really fast answer because advanced already are the debugging improvements like diagnostic tools</p>
+      <p begin="00:22:21.540" end="00:22:24.560">...the community addition absolutely yes they</p>
+      <p begin="00:22:24.560" end="00:22:27.920">are that's great all right another question will other types</p>
+      <p begin="00:22:27.920" end="00:22:34.530">of extensions also be supported by new get delivery tool windows etc.</p>
+      <p begin="00:22:34.530" end="00:22:38.920">...question I think what they're asking is because if you're talking about extensibility visual studio</p>
+      <p begin="00:22:38.920" end="00:22:43.880">...wondering if that they want some kind of repository were all these deliver people could download</p>
+      <p begin="00:22:43.880" end="00:22:48.850">the...a new get so you can do it via new get a about what you can do is</p>
+      <p begin="00:22:48.850" end="00:22:53.160">...reading revamping the gallery diversity gallery and we're creating new experiences</p>
+      <p begin="00:22:53.160" end="00:22:57.140">and which you're going to be able to very easily from within the</p>
+      <p begin="00:22:57.140" end="00:23:01.600">id or from within, you know, the browser goal and find you senses be</p>
+      <p begin="00:23:01.600" end="00:23:06.840">recommended new expenses and be able to get them to your to your id...directly so that's one thing</p>
+      <p begin="00:23:06.840" end="00:23:10.370">we're investing just making the gallery that place where you can go and get</p>
+      <p begin="00:23:10.370" end="00:23:15.120">...and easily make them with constantly heard people tell us that they also want those to be able to be</p>
+      <p begin="00:23:15.120" end="00:23:20.150">synchronize across all their machines so while we don't do that today we definitely heard that feedbacks oats</p>
+      <p begin="00:23:20.150" end="00:23:25.640">an are backlog our next question well visual seo twenty thirteen extensions be supported</p>
+      <p begin="00:23:25.640" end="00:23:30.870">in bs twenty fifteen and there have not been at tama changes between</p>
+      <p begin="00:23:30.870" end="00:23:34.210">...thirteen and twenty fifteen in terms of breaking changes for extensions</p>
+      <p begin="00:23:34.210" end="00:23:38.700">is very easy for an extension developer to go and take the twenty thirteen about extension and</p>
+      <p begin="00:23:38.700" end="00:23:43.530">move twenty fifteen we still make it at and now voluntary thing a</p>
+      <p begin="00:23:43.530" end="00:23:48.250">...a specific action that you have...have to take to make sure that extension developers goal and</p>
+      <p begin="00:23:48.250" end="00:23:52.130">tester extensions with the latest product so that you just not getting something that would crash on</p>
+      <p begin="00:23:52.130" end="00:23:56.920">yours right so just to make sure...have a certain level quality platform extension developer perspective</p>
+      <p begin="00:23:56.920" end="00:24:01.550">it's very easy to go take their existing twenty thirteen extension and take it to...fifty and where working</p>
+      <p begin="00:24:01.550" end="00:24:07.000">action with the top extensions make sure that launch you're going to have that experience...got</p>
+      <p begin="00:24:07.000" end="00:24:11.890">...all right next question those bs twenty fifteen have any significant changes in</p>
+      <p begin="00:24:11.890" end="00:24:18.200">tf integration overview...thirteen?</p>
+      <p begin="00:24:18.200" end="00:24:18.500">You know,</p>
+      <p begin="00:24:18.500" end="00:24:24.360">I don't know the answer to that...like for me like look if we have...questions run out I</p>
+      <p begin="00:24:24.360" end="00:24:29.170">would totally like look I use visual studio for so long but I bet there's like little nuggets of</p>
+      <p begin="00:24:29.170" end="00:24:33.970">gold you can tell me about features that you're surprised we don't know about you tell us there's so much</p>
+      <p begin="00:24:33.970" end="00:24:38.390">of visual studio that it's hard to say I know everything about idled</p>
+      <p begin="00:24:38.390" end="00:24:41.880">...used it for fifteen years I know that we have a team those dedicated to</p>
+      <p begin="00:24:41.880" end="00:24:47.230">working on the integration outsource control in general with visual studio and</p>
+      <p begin="00:24:47.230" end="00:24:51.840">...fs is our premier source controls obviously...that...I imagine there have been</p>
+      <p begin="00:24:51.840" end="00:24:59.590">...just not the right guide to comment on it john aso their plans...sixty four-bit visual studio.</p>
+      <p begin="00:24:59.590" end="00:25:03.180">That's a good one that's always a question that comes up one of the things that we have</p>
+      <p begin="00:25:04.240" end="00:25:08.680">...to answer the question if we don't have...but, you know,</p>
+      <p begin="00:25:08.680" end="00:25:14.650">visual studio...that there's no sixty four-bit version of...with that said</p>
+      <p begin="00:25:14.650" end="00:25:19.600">we do have technologies within visual studio that are actually running...sixty-four</p>
+      <p begin="00:25:19.600" end="00:25:24.570">...while you actually have a thirty two-bit...we have internal technology in which</p>
+      <p begin="00:25:24.570" end="00:25:28.410">we get some components that we know consume a lot of memory, you know, for example,</p>
+      <p begin="00:25:28.410" end="00:25:33.280">I know that like cplus-plus intelligence and probably some of things in debugging where we execute those as</p>
+      <p begin="00:25:33.280" end="00:25:38.830">sixty four-bit and we have...thirty but shel interactive...so parts of aches parts of</p>
+      <p begin="00:25:38.830" end="00:25:43.320">...are ready running sixty four-bit it's just that like the shelling the editor we</p>
+      <p begin="00:25:43.320" end="00:25:47.040">...we don't have that running it's gotthere's an interesting question about the</p>
+      <p begin="00:25:47.040" end="00:25:50.000">editor fear and it brings up sort of the notion of is</p>
+      <p begin="00:25:50.000" end="00:25:53.980">their extensibility that you can do with the editor the question is</p>
+      <p begin="00:25:53.980" end="00:25:58.370">...editor mode in the editor I don't know if you could say well what...be</p>
+      <p begin="00:25:58.370" end="00:26:02.970">...it but other ways to do extensions to the ns yes there are ways that you can write</p>
+      <p begin="00:26:02.970" end="00:26:07.840">that editor extensions that emulate particular key...and ways of doing things</p>
+      <p begin="00:26:07.840" end="00:26:12.730">...a pretty flexible service and very extensible in the way that it works and,</p>
+      <p begin="00:26:12.730" end="00:26:18.130">people have written several interesting extensions but doing...different ways of</p>
+      <p begin="00:26:18.130" end="00:26:23.170">...bindings that kind of thing is a fairly typical one...do but also changing the way the</p>
+      <p begin="00:26:23.170" end="00:26:27.920">...works...more radical...is perfectly possible through extensibility and if</p>
+      <p begin="00:26:27.920" end="00:26:32.630">there's an enthusiastic community around something like that than that there's nothing to stop and...and</p>
+      <p begin="00:26:32.630" end="00:26:37.190">building and extension...like you mentioned before go ahead and take a look at the extensions that have already been</p>
+      <p begin="00:26:37.190" end="00:26:42.220">open resources open that you take a look and see how it works exactly so are right</p>
+      <p begin="00:26:42.220" end="00:26:47.080">...will we see any better support for...for templates built into the future visual studio</p>
+      <p begin="00:26:47.080" end="00:26:51.840">updates edges syntax highlighting or tell us that seems to be out of the scope of the tool</p>
+      <p begin="00:26:51.840" end="00:26:56.120">...more ability for language you have any say about that or just.</p>
+      <p begin="00:26:56.120" end="00:27:01.650">I don't know the...there so it's whoever rights t for...and I think the cool thing is that I think I'm learning</p>
+      <p begin="00:27:01.650" end="00:27:06.490">here that visual studios is fabulous tool we're going to add what we think you need</p>
+      <p begin="00:27:06.490" end="00:27:11.480">...if you need more you can totally do-it-yourself to...right next question will</p>
+      <p begin="00:27:11.480" end="00:27:15.730">we see a more efficient implementation of direct symbol referencing</p>
+      <p begin="00:27:15.730" end="00:27:20.990">inline assembly wow that's a inline assembly that's pretty.</p>
+      <p begin="00:27:20.990" end="00:27:21.810">...pretty</p>
+      <p begin="00:27:21.810" end="00:27:26.980">...I don't know I actually know that we're not investing very much in terms of like the editing experience</p>
+      <p begin="00:27:26.980" end="00:27:31.810">...assembly so what...inline assembly I've never used one so ...you're writing some</p>
+      <p begin="00:27:31.810" end="00:27:36.150">...typically likes of c code and you want to have an implementation of</p>
+      <p begin="00:27:36.150" end="00:27:41.170">...something it written down like moi though I like obviously like...the of</p>
+      <p begin="00:27:41.170" end="00:27:46.360">the...a sm in the see code on assuming that's what the what is reference</p>
+      <p begin="00:27:46.360" end="00:27:50.690">...is...so you don't trust the compiler and you wanted to your online assembly</p>
+      <p begin="00:27:50.690" end="00:27:54.510">...that typically tends to be and that person wants immediate performance</p>
+      <p begin="00:27:54.510" end="00:27:59.390">boost for the current chip that they are targeting because right typically on people do that, you know, they're obsolete</p>
+      <p begin="00:27:59.390" end="00:28:03.970">...a couple of couple years but so I think this is a good question to sort of start wrapping up on</p>
+      <p begin="00:28:03.970" end="00:28:07.950">...which we thoughts what features are not available in</p>
+      <p begin="00:28:07.950" end="00:28:12.710">communities because it seems like everything we keeps talking about is in communication</p>
+      <p begin="00:28:12.710" end="00:28:17.960">...something that's not you can goes into that so you in the diagnostic space we have been</p>
+      <p begin="00:28:17.960" end="00:28:22.100">...are historical debugging technology in twenty fifteen that is</p>
+      <p begin="00:28:22.100" end="00:28:25.270">...enterprise got so as...</p>
+      <p begin="00:28:25.270" end="00:28:30.260">finishing up we got a minute left where can people go to learn more about each of the things you talked about</p>
+      <p begin="00:28:31.620" end="00:28:36.560">I will start with you and...will work with... the best place to learn about what's</p>
+      <p begin="00:28:36.560" end="00:28:41.570">in the new things and business to do is obviously blog like to me that is the source of new information scummy and</p>
+      <p begin="00:28:41.570" end="00:28:45.470">obviously there's also...the and documentation but if...going to learning an about,</p>
+      <p begin="00:28:45.470" end="00:28:47.870">you know, the different new things and what is it and what the</p>
+      <p begin="00:28:47.870" end="00:28:52.470">...we always...always going to...to blogging you're going to find a block was, for example,</p>
+      <p begin="00:28:52.470" end="00:28:55.640">for the...which we just-released we have a blog</p>
+      <p begin="00:28:55.640" end="00:29:00.580">...says like here the new things here's what's coming here's how it works and then it references other blog...you can go and</p>
+      <p begin="00:29:00.580" end="00:29:04.620">learn from...references...documentation that you can you can see so you'll read their,</p>
+      <p begin="00:29:04.620" end="00:29:08.720">for example, something we didn't talk about like now we work on really good high dpi machines and</p>
+      <p begin="00:29:08.720" end="00:29:12.730">...looks beautiful they're all right ten seconds each all right so diagnostics</p>
+      <p begin="00:29:12.730" end="00:29:16.500">...blog aka dot microsoft last diagnostics blog</p>
+      <p begin="00:29:16.500" end="00:29:21.620">...about all the diagnostics features that we're doing there all right and you're up yepsame thing</p>
+      <p begin="00:29:21.620" end="00:29:26.860">...hit the bs blog if you want to know about that very specific question about bs offerings is a great page</p>
+      <p begin="00:29:26.860" end="00:29:30.230">...visual studio online which will...thatand,</p>
+      <p begin="00:29:30.230" end="00:29:35.270">also causal these great sessions that we've been doing it build which...going to be online very shortly...</p>
+      <p begin="00:29:35.270" end="00:29:47.300">thanks so much for spending time with us thanks for watching...catch you guys after the break simulator...</p>
+
+    </div>
+  </body>
+</tt>

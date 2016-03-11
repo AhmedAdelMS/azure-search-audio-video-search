@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.921</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.750" end="00:00:05.280">Okay, we're going to get started hello everyone</p>
+      <p begin="00:00:05.280" end="00:00:11.800">and welcome to the third and final day of build I hope you're having a great conference.</p>
+      <p begin="00:00:11.800" end="00:00:16.409">I really want to thank you to take the time to come to our session.</p>
+      <p begin="00:00:16.409" end="00:00:20.540">So, let's get started with a quick show of hands first.</p>
+      <p begin="00:00:20.540" end="00:00:23.780">Please raise your hand if today you have</p>
+      <p begin="00:00:23.780" end="00:00:28.780">an app currently published in any of apps so across platforms windows</p>
+      <p begin="00:00:28.780" end="00:00:33.320">ios android so pretty much almost everybody now keep your hands</p>
+      <p begin="00:00:33.320" end="00:00:39.500">...if you're interested in making money.</p>
+      <p begin="00:00:39.500" end="00:00:40.580">I think even more people</p>
+      <p begin="00:00:40.580" end="00:00:45.260">...hands than in the first question which is good so,</p>
+      <p begin="00:00:45.260" end="00:00:49.690">according to the latest numbers of this...in the industry.</p>
+      <p begin="00:00:49.690" end="00:00:52.190">More than has of you.</p>
+      <p begin="00:00:52.190" end="00:01:00.910">Are probably making less than one thousand dollars per month?</p>
+      <p begin="00:01:00.910" end="00:01:03.530">Very interested in making more than that.</p>
+      <p begin="00:01:03.530" end="00:01:08.480">I'm happy to say that you came to the right session.</p>
+      <p begin="00:01:08.480" end="00:01:14.070">So, my name is envelopes and I have here with me james</p>
+      <p begin="00:01:14.070" end="00:01:17.690">Were both program managers in the windows...team.</p>
+      <p begin="00:01:17.690" end="00:01:21.980">And,...super excited today to come here and talk to all of you about a number of</p>
+      <p begin="00:01:21.980" end="00:01:34.070">improvements that we're doing with windows...to how do you make more money with your apps.</p>
+      <p begin="00:01:34.070" end="00:01:37.220">So, used to be the case not very not a</p>
+      <p begin="00:01:37.220" end="00:01:41.320">very long-time ago that when you finish snap-in you publicity to the</p>
+      <p begin="00:01:41.320" end="00:01:45.250">store you could sort of relax sit down and see</p>
+      <p begin="00:01:45.250" end="00:01:51.190">...results coming in maybe move on to your next project that's not the case anymore as,</p>
+      <p begin="00:01:51.190" end="00:01:58.070">you know, when you...and...to this store this is just the beginning of a very long journey?</p>
+      <p begin="00:01:58.070" end="00:02:02.870">...now competing with hundreds of thousands of other apps</p>
+      <p begin="00:02:02.870" end="00:02:10.710">that are all competing to try to get the...attention all at the same time.</p>
+      <p begin="00:02:10.710" end="00:02:15.360">If you really want to be successful here you need to compete with all these developers, developers are all</p>
+      <p begin="00:02:15.360" end="00:02:21.830">gating very sophisticated in finding new ways to promote their apps and make money.</p>
+      <p begin="00:02:21.830" end="00:02:27.200">So, if you want to make money you need to do three things very well the first</p>
+      <p begin="00:02:27.200" end="00:02:31.110">You need to acquire users for your app so that they have a chance to run your</p>
+      <p begin="00:02:31.110" end="00:02:34.810">app for the first-time second.</p>
+      <p begin="00:02:34.810" end="00:02:38.100">You need to make sure the duos users stay engaged with</p>
+      <p begin="00:02:38.100" end="00:02:42.710">your app satisfied and more importantly keep coming back often to</p>
+      <p begin="00:02:42.710" end="00:02:44.780">your app and then third</p>
+      <p begin="00:02:44.780" end="00:02:49.680">unit to monetize by either selling something to those users.</p>
+      <p begin="00:02:49.680" end="00:02:55.820">Or by selling the...inventory they generates to advertisers who are willing to pay for it.</p>
+      <p begin="00:02:55.820" end="00:02:58.380">And, then throughout all this cycle.</p>
+      <p begin="00:02:58.380" end="00:03:01.110">You need to constantly analyze.</p>
+      <p begin="00:03:01.110" end="00:03:01.880">Fresh data.</p>
+      <p begin="00:03:03.310" end="00:03:05.270">To improve your app.</p>
+      <p begin="00:03:05.270" end="00:03:08.900">And, to optimize your marketing strategy.</p>
+      <p begin="00:03:08.900" end="00:03:09.600">So, today</p>
+      <p begin="00:03:09.600" end="00:03:14.590">we want-to talk to-you about a number of tools and services that were introducing with windows</p>
+      <p begin="00:03:14.590" end="00:03:21.850">ten to help you acquire engage and monetize users.</p>
+      <p begin="00:03:21.850" end="00:03:25.540">So, let's talk about user acquisition first.</p>
+      <p begin="00:03:25.540" end="00:03:28.270">There's many ways many different strategies that</p>
+      <p begin="00:03:28.270" end="00:03:32.550">you can use for user acquisition so, for example,</p>
+      <p begin="00:03:32.550" end="00:03:37.010">here james and I recently finished developing...latest game.</p>
+      <p begin="00:03:37.010" end="00:03:41.120">Controls all I know great name.</p>
+      <p begin="00:03:41.120" end="00:03:46.500">And, we're just thinking about our user acquisition strategy however going to</p>
+      <p begin="00:03:46.500" end="00:03:51.550">bring new users to the game so we thought about a number of things we thought about leveraging social media</p>
+      <p begin="00:03:51.550" end="00:03:56.760">within posts or new gaming twitter and facebook we're going to write a</p>
+      <p begin="00:03:56.760" end="00:03:58.430">...send an e-mail to our customer</p>
+      <p begin="00:03:58.430" end="00:04:03.080">...and get this thing promoted we also thought about reaching out to app reviews</p>
+      <p begin="00:04:03.080" end="00:04:03.580">sites.</p>
+      <p begin="00:04:04.640" end="00:04:09.210">...select number of game review sites on the web that we know are very of</p>
+      <p begin="00:04:09.210" end="00:04:14.020">high-quality and we saw we get...to review our game and publishing</p>
+      <p begin="00:04:14.020" end="00:04:19.300">...review these will drive a bunch of high-quality users are game we also thought</p>
+      <p begin="00:04:19.300" end="00:04:23.620">about running a pay that...slapped campaign to bring in more users.</p>
+      <p begin="00:04:23.620" end="00:04:28.270">And, we also had about a user referral model where we</p>
+      <p begin="00:04:28.270" end="00:04:34.420">could leverage our own users of the game to bringing even more users.</p>
+      <p begin="00:04:34.420" end="00:04:36.920">Now with all these different user acquisitions strategies.</p>
+      <p begin="00:04:38.080" end="00:04:39.320">Is very important?</p>
+      <p begin="00:04:40.470" end="00:04:43.370">To make sure that you're able to measure</p>
+      <p begin="00:04:43.370" end="00:04:48.110">and track the effectiveness of each one of these different campaigns so.</p>
+      <p begin="00:04:48.110" end="00:04:51.780">That you can then optimize and focus on those campaigns those</p>
+      <p begin="00:04:51.780" end="00:04:56.960">...strategies that are bringing in the highest quality users.</p>
+      <p begin="00:04:56.960" end="00:05:01.780">So, in order to measure the effectiveness of these campaigns.</p>
+      <p begin="00:05:01.780" end="00:05:08.080">With windows stan I'm very happy to announce that were introducing campaign attribution.</p>
+      <p begin="00:05:08.080" end="00:05:14.290">campaign attribution you can define a unique campaign identifier.</p>
+      <p begin="00:05:14.290" end="00:05:19.340">For each of your user acquisition campaigns it's very easy to use</p>
+      <p begin="00:05:19.340" end="00:05:23.770">campaign attribution you just create a deep link to your app in</p>
+      <p begin="00:05:23.770" end="00:05:24.980">this store.</p>
+      <p begin="00:05:24.980" end="00:05:28.400">...in the format that were shown in this live.</p>
+      <p begin="00:05:28.400" end="00:05:29.350">And, then you append.</p>
+      <p begin="00:05:30.720" end="00:05:32.020">...end of it</p>
+      <p begin="00:05:32.020" end="00:05:38.240">ac id parameter with the name of the campaign that you choose.</p>
+      <p begin="00:05:38.240" end="00:05:42.200">Now you have a number of depleting so you can use this freely wherever you want</p>
+      <p begin="00:05:42.200" end="00:05:42.990">your different.</p>
+      <p begin="00:05:44.120" end="00:05:48.900">Marketing vehicles as users click...this links and come to</p>
+      <p begin="00:05:48.900" end="00:05:52.640">the store and ultimately install your app.</p>
+      <p begin="00:05:52.640" end="00:05:54.450">The windows is store.</p>
+      <p begin="00:05:54.450" end="00:05:58.410">Will keep track of all of this?</p>
+      <p begin="00:05:58.410" end="00:06:01.100">By come into the new...sinner.</p>
+      <p begin="00:06:01.100" end="00:06:05.330">You'll then be able to get a detailed attribution report that you can</p>
+      <p begin="00:06:05.330" end="00:06:10.550">field thereby camping so that then you can...for each one of these.</p>
+      <p begin="00:06:10.550" end="00:06:17.690">What was a number of clicks and ultimately the number of installs...got?</p>
+      <p begin="00:06:17.690" end="00:06:20.710">But, even better your app.</p>
+      <p begin="00:06:20.710" end="00:06:25.510">Will be able to query this campaign identifier at runtime?</p>
+      <p begin="00:06:25.510" end="00:06:26.770">So, that it knows.</p>
+      <p begin="00:06:27.860" end="00:06:32.010">Which campaign led to its own install?</p>
+      <p begin="00:06:32.010" end="00:06:36.570">And, this is very interesting for different scenarios the first way in which</p>
+      <p begin="00:06:36.570" end="00:06:41.040">we're going to use these for our user referral scenario.</p>
+      <p begin="00:06:41.040" end="00:06:43.970">With can't also?</p>
+      <p begin="00:06:43.970" end="00:06:47.030">For any user who brings seeing.</p>
+      <p begin="00:06:47.030" end="00:06:50.950">Ten or more of their frames also join the game.</p>
+      <p begin="00:06:50.950" end="00:06:53.540">We're going to give them a reward.</p>
+      <p begin="00:06:53.540" end="00:06:57.590">Of one hundred gold coins of in game currency.</p>
+      <p begin="00:06:57.590" end="00:07:01.320">And, we can do that with campaign attribution with compare</p>
+      <p begin="00:07:01.320" end="00:07:06.070">attribution our game can generate on-the-fly campaign id.</p>
+      <p begin="00:07:06.070" end="00:07:10.840">And, give a...into the user then can be shared across their networks of</p>
+      <p begin="00:07:10.840" end="00:07:11.340">friends?</p>
+      <p begin="00:07:12.360" end="00:07:17.180">And, then add runtime we can checking the app and verify and track.</p>
+      <p begin="00:07:17.180" end="00:07:24.570">How many users each one of these users brought and then give them the appropriate...</p>
+      <p begin="00:07:24.570" end="00:07:27.050">The other use for these is analytics.</p>
+      <p begin="00:07:28.440" end="00:07:31.950">Your app can at runtime get the campaign identifier</p>
+      <p begin="00:07:31.950" end="00:07:36.820">...app to your analytic solution...allows you to do things they create user</p>
+      <p begin="00:07:36.820" end="00:07:40.820">...based on where the users who are required from.</p>
+      <p begin="00:07:40.820" end="00:07:45.280">And, then you can analyze user cohorts and understand how the</p>
+      <p begin="00:07:45.280" end="00:07:50.810">users that you acquired from facebook behave differently from the users</p>
+      <p begin="00:07:50.810" end="00:07:54.270">...you acquired in some other place.</p>
+      <p begin="00:07:54.270" end="00:07:58.600">And, more importantly what-you want-to do is calculate the amount of</p>
+      <p begin="00:07:58.600" end="00:08:01.500">money and revenue your making for each of these</p>
+      <p begin="00:08:01.500" end="00:08:06.170">different user groups and then focus on those campaigns.</p>
+      <p begin="00:08:06.170" end="00:08:09.350">That are giving you the highest lifetime value of</p>
+      <p begin="00:08:09.350" end="00:08:15.110">users at the lowest.</p>
+      <p begin="00:08:15.110" end="00:08:18.050">So,...why don't you show us how to use these...</p>
+      <p begin="00:08:18.050" end="00:08:19.790">Thanks...</p>
+      <p begin="00:08:19.790" end="00:08:24.370">...recovered earlier we have a...demo application publish the store.</p>
+      <p begin="00:08:24.370" end="00:08:28.460">And, now that it's out there we switched our focus to the acquisition of new users to</p>
+      <p begin="00:08:28.460" end="00:08:31.810">our application and one of the first strategies we chose</p>
+      <p begin="00:08:31.810" end="00:08:37.950">...leverage was social media so let me switch over here right great and,</p>
+      <p begin="00:08:37.950" end="00:08:40.890">using the...new campaign attribution functionality</p>
+      <p begin="00:08:40.890" end="00:08:44.880">...we were able to track the effectiveness of kitt this campaign so all set</p>
+      <p begin="00:08:44.880" end="00:08:49.760">up one on facebook here this is a page I created for our generically name can</p>
+      <p begin="00:08:49.760" end="00:09:00.680">...so company...alright a simple promotional post around...application.</p>
+      <p begin="00:09:00.680" end="00:09:04.490">Right and...called out we're going to copy and paste the</p>
+      <p begin="00:09:04.490" end="00:09:07.980">deep link to our application into the post.</p>
+      <p begin="00:09:09.010" end="00:09:11.600">...to the end of this deep link all append</p>
+      <p begin="00:09:11.600" end="00:09:15.350">campaign identifier my choosing here I'll choose facebook here for the</p>
+      <p begin="00:09:15.350" end="00:09:19.390">posts opposes out to my group and now to show you is anal</p>
+      <p begin="00:09:19.390" end="00:09:23.120">smoke and mirrors ar click on the link here as a user would when they</p>
+      <p begin="00:09:23.120" end="00:09:27.170">...posts and it'll bring them to the windows ten store for applications</p>
+      <p begin="00:09:27.170" end="00:09:32.060">is the product details page for application you can see that the campaign ideas come along</p>
+      <p begin="00:09:32.060" end="00:09:37.010">with this here and I can click on the get the app link here download the application of</p>
+      <p begin="00:09:37.010" end="00:09:41.020">...behind-the-scenes the store has collected telemetry both that I view</p>
+      <p begin="00:09:41.020" end="00:09:46.270">this page and if I...and attributes those to the campaign id facebook in this</p>
+      <p begin="00:09:46.270" end="00:09:51.710">...case that was clicked on at the end of the url now this is</p>
+      <p begin="00:09:51.710" end="00:09:56.070">expos back to you in a new report we've added this is the new universal</p>
+      <p begin="00:09:56.070" end="00:09:59.210">...center this is the channels and conversions report for</p>
+      <p begin="00:09:59.210" end="00:10:02.650">...demo application the first graph you see here is</p>
+      <p begin="00:10:02.650" end="00:10:07.260">a chart of the page use received for...them over time.</p>
+      <p begin="00:10:07.260" end="00:10:11.220">...you can see we been live for over thirty days in the store and</p>
+      <p begin="00:10:11.220" end="00:10:15.000">even more importantly the beginning of april we got a huge spike in the number</p>
+      <p begin="00:10:15.000" end="00:10:20.410">...views of our application so all filter this report by custom</p>
+      <p begin="00:10:20.410" end="00:10:25.110">campaign and specifically the twitter campaign id here.</p>
+      <p begin="00:10:25.110" end="00:10:26.750">So, it turns out that earlier and</p>
+      <p begin="00:10:26.750" end="00:10:31.640">in april actually sent a couple tweets the same as you software facebook and</p>
+      <p begin="00:10:31.640" end="00:10:36.760">we were lucky enough to have some are executives in this demo actually retreat this out</p>
+      <p begin="00:10:36.760" end="00:10:39.510">and you can see that specifically the twitter</p>
+      <p begin="00:10:39.510" end="00:10:45.320">traffic drove a lot of those new page use that occurred in the beginning of april allows you seen here</p>
+      <p begin="00:10:45.320" end="00:10:49.440">we're utilized your utilizing twitter and facebook many different strategies to acquire</p>
+      <p begin="00:10:49.440" end="00:10:52.700">new users and we need the ability to measure the effectiveness of</p>
+      <p begin="00:10:52.700" end="00:10:57.680">those campaigns against each other to understand what do we spend our money we spend our time.</p>
+      <p begin="00:10:57.680" end="00:11:02.380">So, going down further into this report we provide a conversions breakdown table here that</p>
+      <p begin="00:11:02.380" end="00:11:05.870">does just that you can see here we've had a couple campaigns</p>
+      <p begin="00:11:05.870" end="00:11:10.660">...we've been running over time and summa facebook campaign will start showing up here the views and</p>
+      <p begin="00:11:10.660" end="00:11:16.340">conversions as you can see here the twitter campaign was great and driving new traffic new people the</p>
+      <p begin="00:11:16.340" end="00:11:20.580">viewer application...a conversion rate in this in this world of</p>
+      <p begin="00:11:20.580" end="00:11:24.230">about thirty percent however the app install ad campaign</p>
+      <p begin="00:11:24.230" end="00:11:28.570">we're running at the same time here although it didn't drive as many page views</p>
+      <p begin="00:11:28.570" end="00:11:40.730">was much more successful and converting the...actually came to view the application to...</p>
+      <p begin="00:11:40.730" end="00:11:43.760">All right so we also say that we wanted to reach out to</p>
+      <p begin="00:11:43.760" end="00:11:49.160">...game review sites and get our game reviewed and.</p>
+      <p begin="00:11:49.160" end="00:11:53.280">Our game is free and we monetize three not purchases</p>
+      <p begin="00:11:53.280" end="00:11:55.380">...additional levels or</p>
+      <p begin="00:11:55.380" end="00:11:58.920">...currency that you can use for things within the game.</p>
+      <p begin="00:11:58.920" end="00:12:03.980">So, in order to lead.</p>
+      <p begin="00:12:03.980" end="00:12:08.470">if you don't really buy a game level the game cams with.</p>
+      <p begin="00:12:08.470" end="00:12:13.470">Just a limited amount of game time that you can do so really to experiencing</p>
+      <p begin="00:12:13.470" end="00:12:15.480">...of really purchase the first-level at</p>
+      <p begin="00:12:15.480" end="00:12:20.200">least so we decided to give the first-level for free</p>
+      <p begin="00:12:20.200" end="00:12:24.550">to these reviewers so they could experience the full game in detail</p>
+      <p begin="00:12:24.550" end="00:12:29.140">...writing meaningful review so to do this we turn to the new</p>
+      <p begin="00:12:29.140" end="00:12:33.520">feature of promotional codes and...to announce promotional</p>
+      <p begin="00:12:33.520" end="00:12:38.280">...in windows ten thank you.</p>
+      <p begin="00:12:38.280" end="00:12:40.090">Which will lead users?</p>
+      <p begin="00:12:41.390" end="00:12:47.710">Redeem in this store for apps or ip items.</p>
+      <p begin="00:12:47.710" end="00:12:50.040">Directly from...center.</p>
+      <p begin="00:12:50.040" end="00:12:50.410">You can</p>
+      <p begin="00:12:50.410" end="00:12:55.380">...and create a...of promotional topromotional</p>
+      <p begin="00:12:55.380" end="00:12:58.750">...for your apps...ip items.</p>
+      <p begin="00:12:58.750" end="00:13:01.080">You can create...to two-hundred-and-fifty</p>
+      <p begin="00:13:01.080" end="00:13:03.620">...per product per year.</p>
+      <p begin="00:13:04.810" end="00:13:10.520">This codes will expiring six months once you create these codes you can</p>
+      <p begin="00:13:10.520" end="00:13:15.930">download them in a...your computer and then.</p>
+      <p begin="00:13:15.930" end="00:13:18.030">Do whatever you want with them?</p>
+      <p begin="00:13:18.030" end="00:13:22.680">In our case we got those codes and we send them with some instructions to the game</p>
+      <p begin="00:13:22.680" end="00:13:23.180">reviewers.</p>
+      <p begin="00:13:24.580" end="00:13:29.020">Then they were able to use them from within the star client</p>
+      <p begin="00:13:29.020" end="00:13:33.220">...redeem for our free game level and because this was</p>
+      <p begin="00:13:33.220" end="00:13:37.390">nih decode...an app code...for an ip.</p>
+      <p begin="00:13:37.390" end="00:13:40.780">They were able to furs just easily download the</p>
+      <p begin="00:13:40.780" end="00:13:42.600">game for those that didn't have</p>
+      <p begin="00:13:42.600" end="00:13:47.350">it installed already and then automatically they were entitled to the first.</p>
+      <p begin="00:13:47.350" end="00:13:55.730">Level of the game for free they were able to experience a full game.</p>
+      <p begin="00:13:55.730" end="00:13:59.100">So, next we thought about running...not...ad...</p>
+      <p begin="00:14:00.130" end="00:14:06.260">Some also happy to announce that we're now integrating directly</p>
+      <p begin="00:14:06.260" end="00:14:10.310">...center...promote your app offering which</p>
+      <p begin="00:14:10.310" end="00:14:16.060">you can use to create app instill ad campaigns for your app.</p>
+      <p begin="00:14:16.060" end="00:14:20.160">That will display ads just like this one as</p>
+      <p begin="00:14:20.160" end="00:14:26.180">your target customers are use...apps from the store.</p>
+      <p begin="00:14:26.180" end="00:14:27.860">You can purchase.</p>
+      <p begin="00:14:27.860" end="00:14:30.080">Bathe...</p>
+      <p begin="00:14:31.190" end="00:14:33.530">Which will show your ad?</p>
+      <p begin="00:14:33.530" end="00:14:36.260">Is people use apps from other developers?</p>
+      <p begin="00:14:37.610" end="00:14:40.510">...you can also create house...</p>
+      <p begin="00:14:40.510" end="00:14:44.700">Which will show this ads?</p>
+      <p begin="00:14:44.700" end="00:14:50.890">...apps...you may have published to the store and these are free for you.</p>
+      <p begin="00:14:50.890" end="00:14:55.090">If you're interested in more detail sources session later today at all thirty</p>
+      <p begin="00:14:55.090" end="00:15:03.440">...I believe it's sessions seven-six one which will cover...more detail.</p>
+      <p begin="00:15:03.440" end="00:15:04.730">Great.</p>
+      <p begin="00:15:04.730" end="00:15:08.990">So, we've covered some of the different acquisitions strategies that are live...the new universal</p>
+      <p begin="00:15:08.990" end="00:15:13.870">...center and for contest a demo application as we've utilize some of</p>
+      <p begin="00:15:13.870" end="00:15:18.330">these strategies we needed the ability to track how many users are actually acquiring</p>
+      <p begin="00:15:18.330" end="00:15:23.030">for application or game in this case and all the ip items within.</p>
+      <p begin="00:15:23.030" end="00:15:26.920">So, in new universal dead-center we have two reports I'm going to show you here</p>
+      <p begin="00:15:26.920" end="00:15:31.590">for contest application the first is are acquisitions report so if you have</p>
+      <p begin="00:15:31.590" end="00:15:34.960">an application live in the windows store windows phone store today,</p>
+      <p begin="00:15:34.960" end="00:15:39.080">you know, the you need to go to two separate locations to be able to view the number of</p>
+      <p begin="00:15:39.080" end="00:15:41.760">download you receive your application and the new</p>
+      <p begin="00:15:41.760" end="00:15:45.410">...this report combines all that information to one place from</p>
+      <p begin="00:15:45.410" end="00:15:50.380">the windows eight windows phone...and windows ten stores.</p>
+      <p begin="00:15:50.380" end="00:15:55.010">Furthermore we've improve the latency of the data that you see here so in the first</p>
+      <p begin="00:15:55.010" end="00:15:58.000">...the last point we have here is actually data</p>
+      <p begin="00:15:58.000" end="00:16:05.810">for application today is being updated hourly that's why you see the huge spike at the end here.</p>
+      <p begin="00:16:05.810" end="00:16:07.740">All this...</p>
+      <p begin="00:16:07.740" end="00:16:12.530">Right now you...over the last thirty days but we're also very soon going to be adding a last</p>
+      <p begin="00:16:12.530" end="00:16:17.350">seventy two hours filter to this page so she can see and hourly breakdown...close to</p>
+      <p begin="00:16:17.350" end="00:16:20.540">...view of your data of the number of people acquiring your app</p>
+      <p begin="00:16:20.540" end="00:16:24.600">in ip items this is critical as you launcher after the first-time you</p>
+      <p begin="00:16:24.600" end="00:16:28.570">...launch updates your application you launch new ip items you wanna-be able to</p>
+      <p begin="00:16:28.570" end="00:16:32.710">track how quickly people are acquiring them across the markets.</p>
+      <p begin="00:16:32.710" end="00:16:36.150">Now because you're selling your application in a global market across a bunch</p>
+      <p begin="00:16:36.150" end="00:16:40.090">of different devices we've write a couple breakdown views of your acquisition</p>
+      <p begin="00:16:40.090" end="00:16:43.110">data the first one is by customer demographics</p>
+      <p begin="00:16:43.110" end="00:16:49.920">to provide you breakdown a by age and gender of the people that are acquire your application.</p>
+      <p begin="00:16:49.920" end="00:16:54.510">Further down this page...write a breakdown of your acquisition database on the markets that you're selling</p>
+      <p begin="00:16:54.510" end="00:17:00.450">your application and the os versions that has been acquired on now is</p>
+      <p begin="00:17:00.450" end="00:17:04.960">...covered for contest demo we're selling...for free and we're making our money through</p>
+      <p begin="00:17:04.960" end="00:17:10.070">...ip items paid ip items within our application so the same set of acquisition data you</p>
+      <p begin="00:17:10.070" end="00:17:15.000">see here for application are...app is also available for each of the ip items</p>
+      <p begin="00:17:15.000" end="00:17:19.490">for selling within our applications all I've gone to the ip acquisitions page here for</p>
+      <p begin="00:17:19.490" end="00:17:25.080">...demo we're actually selling seven ip items which are wonderfully generically name one</p>
+      <p begin="00:17:25.080" end="00:17:27.140">through seven here.</p>
+      <p begin="00:17:27.140" end="00:17:31.900">And, the first report here allows you to compare the performance of ip items against each other</p>
+      <p begin="00:17:31.900" end="00:17:36.680">so...very easy to do here for me is I can compare how my top</p>
+      <p begin="00:17:36.680" end="00:17:42.450">and my bottom ip item...against each other over time.</p>
+      <p begin="00:17:42.450" end="00:17:46.290">...also provides a break down by the same pivots you saw earlier</p>
+      <p begin="00:17:46.290" end="00:17:52.580">on the acquisitions report by customer demographics...market by the operating system.</p>
+      <p begin="00:17:52.580" end="00:17:57.350">demo so far chemistry so far is both the channels and conversion what report and the</p>
+      <p begin="00:17:57.350" end="00:18:01.490">to acquisition reports here which allow you to understand where people are coming from</p>
+      <p begin="00:18:01.490" end="00:18:11.770">to acquire application who they are and where they're where they're coming from the download your application?</p>
+      <p begin="00:18:11.770" end="00:18:17.250">So, far we've talked about new ways in which you can acquire users for your app and we've</p>
+      <p begin="00:18:17.250" end="00:18:21.840">shown you how you can very quickly get those resolves your acquisition reports</p>
+      <p begin="00:18:21.840" end="00:18:23.980">...center.</p>
+      <p begin="00:18:23.980" end="00:18:26.670">Now what do you have to do is make sure that those users that</p>
+      <p begin="00:18:26.670" end="00:18:30.330">are coming in our engage with your app...satisfied.</p>
+      <p begin="00:18:31.410" end="00:18:35.780">And, more importantly that they keep coming back often.</p>
+      <p begin="00:18:35.780" end="00:18:39.930">And, there's three interesting things that you should do the first one is you need to</p>
+      <p begin="00:18:39.930" end="00:18:44.730">understand how users are behaving in your app.</p>
+      <p begin="00:18:44.730" end="00:18:48.770">Are they a is spending time on the features that you the...are</p>
+      <p begin="00:18:48.770" end="00:18:54.120">the using them in the way you thought they would are they getting maybe</p>
+      <p begin="00:18:54.120" end="00:18:58.800">stuck on a level of a game and never progress into the next one?</p>
+      <p begin="00:18:58.800" end="00:19:01.400">Are...making in a purchases and</p>
+      <p begin="00:19:01.400" end="00:19:03.830">...rates you hoped?</p>
+      <p begin="00:19:05.930" end="00:19:09.050">Are there any other reese's with your app?</p>
+      <p begin="00:19:09.050" end="00:19:15.110">I'm very happy to announce that with that windows...center now will</p>
+      <p begin="00:19:15.110" end="00:19:19.900">be fully integrated with visual studio application insights.</p>
+      <p begin="00:19:19.900" end="00:19:21.610">Which is a full in app</p>
+      <p begin="00:19:21.610" end="00:19:28.470">analytics solution that you just get for free with their windows up?</p>
+      <p begin="00:19:28.470" end="00:19:31.470">Nesting you need to do is understand how</p>
+      <p begin="00:19:31.470" end="00:19:35.760">your users are reacting to your app and what's their feedback.</p>
+      <p begin="00:19:35.760" end="00:19:40.040">...and reviews are critical the new that center gives you a</p>
+      <p begin="00:19:40.040" end="00:19:44.170">lot of new ways in which you can collect and analyze the</p>
+      <p begin="00:19:44.170" end="00:19:48.140">...and review data more importantly we're not going</p>
+      <p begin="00:19:48.140" end="00:19:52.800">to let you respond to those user reviews something that we only had we had before only</p>
+      <p begin="00:19:52.800" end="00:19:59.130">...windows phone will now be extend into all the app types the lastly you need to make sure that your</p>
+      <p begin="00:19:59.130" end="00:20:02.730">app is running well...the app health.</p>
+      <p begin="00:20:02.730" end="00:20:06.080">...center gives you more ways.</p>
+      <p begin="00:20:06.080" end="00:20:10.740">To understand if you're app is having any quality issues and gives you the right data so that</p>
+      <p begin="00:20:10.740" end="00:20:15.350">you can fix those issues quickly.</p>
+      <p begin="00:20:15.350" end="00:20:16.580">All right.</p>
+      <p begin="00:20:16.580" end="00:20:21.140">So, are contested them applications been live for a couple months now and we have a</p>
+      <p begin="00:20:21.140" end="00:20:25.490">decent amount of user base that we've acquired overtime so we</p>
+      <p begin="00:20:25.490" end="00:20:29.900">realizes team that we need to leverage in app analytics to understand how</p>
+      <p begin="00:20:29.900" end="00:20:34.220">our users are engaging and behaving within our application...</p>
+      <p begin="00:20:34.220" end="00:20:39.880">with the launch of the new dead-center I'm happy to announce will be adding a new app usage page</p>
+      <p begin="00:20:39.880" end="00:20:44.440">that provides these insights for you to understand how this page is going to work</p>
+      <p begin="00:20:45.570" end="00:20:50.490">all-star in visual studio and what I opened up here is a visual studio</p>
+      <p begin="00:20:50.490" end="00:20:55.380">twenty fifteen project for contest so demo application we've seen so far?</p>
+      <p begin="00:20:55.380" end="00:20:59.890">I created this project using the windows ten development tools that are available this speak to all of</p>
+      <p begin="00:20:59.890" end="00:21:04.830">...and specifically I created it using one of the universal store app</p>
+      <p begin="00:21:04.830" end="00:21:10.510">templates each of these templates with windows ten comes with support for an</p>
+      <p begin="00:21:10.510" end="00:21:13.550">app analytics by default with inclusion of the application</p>
+      <p begin="00:21:13.550" end="00:21:17.300">insights sdk you can see it's been added as a reference to my project</p>
+      <p begin="00:21:17.300" end="00:21:22.090">...and the telemetry client for application insights has been added instantiated</p>
+      <p begin="00:21:22.090" end="00:21:23.670">for my project.</p>
+      <p begin="00:21:23.670" end="00:21:28.440">Initially built this I just...my...the project...compiled it I built my app</p>
+      <p begin="00:21:28.440" end="00:21:33.510">x and I submitted it to the store as a part of that submission process the store activated the</p>
+      <p begin="00:21:33.510" end="00:21:38.120">insights sdk and now we are application runs on any of the windows...windows phone</p>
+      <p begin="00:21:38.120" end="00:21:43.010">...windows ten devices the...automatically collects telemetry that is</p>
+      <p begin="00:21:43.010" end="00:21:46.270">exposed to through this new app usage reports so let's take a look at that for</p>
+      <p begin="00:21:46.270" end="00:21:51.990">...demo I've gone back...dev center to our app usage page here.</p>
+      <p begin="00:21:51.990" end="00:21:56.830">You can see here that I'm able to see now for...demo all the number top the number of</p>
+      <p begin="00:21:56.830" end="00:22:01.700">user sessions for application overtime this is the number of times that...users actually started</p>
+      <p begin="00:22:01.700" end="00:22:06.370">...application maybe we'll see how that's trending over time.</p>
+      <p begin="00:22:06.370" end="00:22:09.600">I'm able to see how those are started across all</p>
+      <p begin="00:22:09.600" end="00:22:14.890">the different markets that we offer for application, application happens to be more popular in</p>
+      <p begin="00:22:14.890" end="00:22:17.930">...in the uk I...also able to see how many</p>
+      <p begin="00:22:17.930" end="00:22:21.070">...times it's been started by operating system.</p>
+      <p begin="00:22:22.120" end="00:22:24.820">By device model name.</p>
+      <p begin="00:22:24.820" end="00:22:29.390">And, also very importantly by screen resolution.</p>
+      <p begin="00:22:29.390" end="00:22:34.330">Finally another piece critical piece...critical metric it offers is the number of daily</p>
+      <p begin="00:22:34.330" end="00:22:39.260">users actually contour application every day to use it and for those</p>
+      <p begin="00:22:39.260" end="00:22:42.370">users allows us to see how long that</p>
+      <p begin="00:22:42.370" end="00:22:45.960">they're actually spending within our application so everything you've seen</p>
+      <p begin="00:22:45.960" end="00:22:50.810">so far comes by default just by including the sdk within your application building</p>
+      <p begin="00:22:50.810" end="00:22:56.130">...ten app using our tools but there's another level of insight</p>
+      <p begin="00:22:56.130" end="00:23:00.790">that you can gain by instrumenting your app with custom events to show you what I mean let's go back</p>
+      <p begin="00:23:00.790" end="00:23:03.660">to visual studio...to our main page.</p>
+      <p begin="00:23:04.820" end="00:23:05.740">Here and...</p>
+      <p begin="00:23:05.740" end="00:23:12.000">common or uncommon out this line of code here for the browse item click method.</p>
+      <p begin="00:23:12.000" end="00:23:16.120">What I've done here is I've utilize the telemetry client we saw that was added to our project to track</p>
+      <p begin="00:23:16.120" end="00:23:20.490">a custom events specifically...browser item event here?</p>
+      <p begin="00:23:20.490" end="00:23:24.720">Every time this method is called...are application runs across the many different devices</p>
+      <p begin="00:23:24.720" end="00:23:29.290">this browse item event is collected by the...and set up to the cloud.</p>
+      <p begin="00:23:29.290" end="00:23:34.350">And, its expose you to the same app usage report that we saw earlier.</p>
+      <p begin="00:23:34.350" end="00:23:39.160">Just growing down one more little bit here you see that we have a table here</p>
+      <p begin="00:23:39.160" end="00:23:42.550">...provides you with a number of custom events for application over the last</p>
+      <p begin="00:23:42.550" end="00:23:47.080">thirty days you see we have very simple list of custom events we've chosen implement</p>
+      <p begin="00:23:47.080" end="00:23:52.960">for demo application here but you guys can go much deeper if you have a game you can add</p>
+      <p begin="00:23:52.960" end="00:23:57.480">a custom event for every level that you have within your application if you have</p>
+      <p begin="00:23:57.480" end="00:24:01.030">an application...a new features you can add custom</p>
+      <p begin="00:24:01.030" end="00:24:07.200">...determine whether users find those features are use them.</p>
+      <p begin="00:24:07.200" end="00:24:10.950">All the reporting you've seen this app usage report here is a summary</p>
+      <p begin="00:24:10.950" end="00:24:15.300">view the very detailed granularity data that's collected by the sdk and</p>
+      <p begin="00:24:15.300" end="00:24:18.270">it turns out that we have another view of that data that allows you</p>
+      <p begin="00:24:18.270" end="00:24:22.400">go much deeper and that's offered in the application insights reporting</p>
+      <p begin="00:24:22.400" end="00:24:26.310">portal that's available to you by the link at the top of the app usage page you can click on</p>
+      <p begin="00:24:26.310" end="00:24:31.970">it'll open up the portal here taste complements to download the open here but,</p>
+      <p begin="00:24:31.970" end="00:24:36.090">I already have it open because this is a great them.</p>
+      <p begin="00:24:36.090" end="00:24:40.500">You can see here...same data that supports...the app usage page...shown over</p>
+      <p begin="00:24:40.500" end="00:24:45.210">...seven days here you see that your number of daily users you see the number of sessions for</p>
+      <p begin="00:24:45.210" end="00:24:47.710">...number page views.</p>
+      <p begin="00:24:47.710" end="00:24:48.110">Provides</p>
+      <p begin="00:24:48.110" end="00:24:53.100">...out by countries you scroll down here by devices by session duration here.</p>
+      <p begin="00:24:53.100" end="00:24:57.080">But, you can go much deeper within this portal here we've allowed you to</p>
+      <p begin="00:24:57.080" end="00:25:02.160">dot dive into your customer events so I've selected the browse item event that we added to our</p>
+      <p begin="00:25:02.160" end="00:25:06.020">...I can see now here's both by changing the time</p>
+      <p begin="00:25:06.020" end="00:25:09.080">range filter I can sort through all the different events</p>
+      <p begin="00:25:09.080" end="00:25:15.130">that come through for those users to clicked and hit that browse item event within my code.</p>
+      <p begin="00:25:15.130" end="00:25:19.350">Great thing about this metrics explore view is that...some breakouts of</p>
+      <p begin="00:25:19.350" end="00:25:23.740">ourtelemetry by default you can see by region by app</p>
+      <p begin="00:25:23.740" end="00:25:28.740">version but you can also customize it on your own so say it...care about the break</p>
+      <p begin="00:25:28.740" end="00:25:33.600">...by application version here I instead I want to see broken down by some other metrics such</p>
+      <p begin="00:25:33.600" end="00:25:38.120">as device model so it's very easy for me to change not only how the</p>
+      <p begin="00:25:38.120" end="00:25:42.170">data is rendered but also the specific break out of the data so all of a</p>
+      <p begin="00:25:42.170" end="00:25:46.620">sudden I can see how the browse item events hit across all the devices out there and</p>
+      <p begin="00:25:46.620" end="00:25:52.230">you can see here there's a rich set of data available that's collected by the sdk and you</p>
+      <p begin="00:25:52.230" end="00:25:59.710">can build your own views and your own slices of the data and divers deep is you need to gain the own insight.</p>
+      <p begin="00:25:59.710" end="00:26:03.110">NowI won't go any deeper into the reporting</p>
+      <p begin="00:26:03.110" end="00:26:08.360">...see here today there's another session that covers is all great detail but,</p>
+      <p begin="00:26:08.360" end="00:26:10.000">lucky for you...going on right now.</p>
+      <p begin="00:26:11.570" end="00:26:15.330">But, before you all run out of our session.</p>
+      <p begin="00:26:15.330" end="00:26:18.080">You can watch it online later on channel nine the same</p>
+      <p begin="00:26:18.080" end="00:26:23.910">as our session energy to do so if you're interested in custom events your code.</p>
+      <p begin="00:26:23.910" end="00:26:27.660">So, hopping back to the dead-center in addition to</p>
+      <p begin="00:26:27.660" end="00:26:31.720">...app analytics there's also another set of tools you can use to measure the performance of your</p>
+      <p begin="00:26:31.720" end="00:26:38.390">application engagement you're getting from...community will start off with the new ratings reports.</p>
+      <p begin="00:26:38.390" end="00:26:43.210">Every time a user richer app on any of the windows stores</p>
+      <p begin="00:26:43.210" end="00:26:47.410">that events collected that solutions collect index exposed to you hear so</p>
+      <p begin="00:26:47.410" end="00:26:52.400">this report provides, you know, what is your average rating how many were humming was a number of ratings you've</p>
+      <p begin="00:26:52.400" end="00:26:57.070">...also provides a breakdown of which ratings you...for one-star for</p>
+      <p begin="00:26:57.070" end="00:27:04.790">five stars also very critically provides you with the view of how you...is trending over time?</p>
+      <p begin="00:27:04.790" end="00:27:07.140">And, since the ratings of your application tend</p>
+      <p begin="00:27:07.140" end="00:27:11.810">very by market the whole report here can be filter by market and we've also have the</p>
+      <p begin="00:27:11.810" end="00:27:16.400">breakdown table here the bottom the provides you both with the number reviews for each</p>
+      <p begin="00:27:16.400" end="00:27:21.070">your markets as well as the average rating in this particular markets.</p>
+      <p begin="00:27:21.070" end="00:27:26.010">Now hand-in-hand with ratings come reviews.</p>
+      <p begin="00:27:26.010" end="00:27:30.970">So, answer the reviews report in-depth center which provides you with the ability to sorts</p>
+      <p begin="00:27:30.970" end="00:27:37.950">and filter through the specific feedback...users submitted along with the rating of your application.</p>
+      <p begin="00:27:37.950" end="00:27:42.390">You can sort this page and filter this page by the raiding by the</p>
+      <p begin="00:27:42.390" end="00:27:48.530">actual target os by the market by some other filters...you to sift through this feedback.</p>
+      <p begin="00:27:48.530" end="00:27:53.460">Most very happy to...within this page we automatically offer translation for reviews that</p>
+      <p begin="00:27:53.460" end="00:27:57.340">were submitted in a preferred language other than your own can see here that</p>
+      <p begin="00:27:57.340" end="00:27:59.450">...I don't speak chinese.</p>
+      <p begin="00:27:59.450" end="00:28:05.930">We use...translator translate this that english so I can understand the specific feedback from this user.</p>
+      <p begin="00:28:05.930" end="00:28:09.200">Now if you have an existing app today,</p>
+      <p begin="00:28:09.200" end="00:28:12.950">you know, that very often when users submit maybe</p>
+      <p begin="00:28:12.950" end="00:28:16.210">...feedback for application a lot of times.</p>
+      <p begin="00:28:16.210" end="00:28:19.070">They specifically ask for features or even maybe the</p>
+      <p begin="00:28:19.070" end="00:28:23.610">report an issue within your application so that's why I'm very happy to announces</p>
+      <p begin="00:28:23.610" end="00:28:28.170">...you covered earlier that were bringing the response review capability that exist today</p>
+      <p begin="00:28:28.170" end="00:28:33.130">in the windows phone store to the universal dead-center for all the platforms.</p>
+      <p begin="00:28:33.130" end="00:28:37.820">So, savannah here she was responding to</p>
+      <p begin="00:28:37.820" end="00:28:43.110">our contest application and, specifically said there's a problem going on service three-four</p>
+      <p begin="00:28:43.110" end="00:28:47.950">application through this new respond to review capability for the universe that's</p>
+      <p begin="00:28:47.950" end="00:28:51.910">...I'll be able to privately respond to savannah maybe asking her to give me</p>
+      <p begin="00:28:51.910" end="00:28:55.140">some screenshot some additional information allow me to diagnose issue with</p>
+      <p begin="00:28:55.140" end="00:29:00.340">my application say she was happy enough to give that to me and I push that a...application</p>
+      <p begin="00:29:00.340" end="00:29:05.290">...then publicly respond to this review and that public responsibly available for everyone to see</p>
+      <p begin="00:29:05.290" end="00:29:12.490">in the store so people can see that I'm engage...the feedback.</p>
+      <p begin="00:29:12.490" end="00:29:16.340">Now on the same note of things going wrong we have the</p>
+      <p begin="00:29:16.340" end="00:29:21.010">app health reports and the app health report provides you with the tools</p>
+      <p begin="00:29:21.010" end="00:29:24.680">that you need to identify diagnosis and fix bugs</p>
+      <p begin="00:29:24.680" end="00:29:30.780">and issues within your code as they arise any time that there's at crash or</p>
+      <p begin="00:29:30.780" end="00:29:34.920">...or memory failure while...applications running across anyone...phone</p>
+      <p begin="00:29:34.920" end="00:29:39.090">...windows...windows ten device that information is collected by the operating system</p>
+      <p begin="00:29:39.090" end="00:29:43.410">exposed to you hear through the app health report so let's take a look at how are can</p>
+      <p begin="00:29:43.410" end="00:29:48.900">toaster demo application is doing she's doing very poorly the first report here total crashes</p>
+      <p begin="00:29:48.900" end="00:29:53.340">in events over time provides you with the ability to identify new bugs</p>
+      <p begin="00:29:53.340" end="00:29:58.140">...as the arises you push out...after the first-time and push updates</p>
+      <p begin="00:29:58.140" end="00:30:01.820">...spikes in the graph you see here.</p>
+      <p begin="00:30:01.820" end="00:30:05.490">You can filter this whole page by the version of your application and by market</p>
+      <p begin="00:30:05.490" end="00:30:10.430">...version to diagnosis where the issue is actually coming from we also have</p>
+      <p begin="00:30:10.430" end="00:30:14.730">the crashing event breakdown chart here the breaks down the number of crashes</p>
+      <p begin="00:30:14.730" end="00:30:18.960">by certain characteristics of the device that's happening on the os version that's on</p>
+      <p begin="00:30:18.960" end="00:30:23.100">there the type of the device available memory available...size.</p>
+      <p begin="00:30:23.100" end="00:30:26.000">And, the cpu speed.</p>
+      <p begin="00:30:26.000" end="00:30:29.760">So, say that you've identified and done some diagnosing of issues within your application</p>
+      <p begin="00:30:30.810" end="00:30:36.780">...the ability to final location within your code that actually causes issue in the first-place.</p>
+      <p begin="00:30:36.780" end="00:30:40.300">So, that's why we have the failure log table at the bottom here which provides</p>
+      <p begin="00:30:40.300" end="00:30:44.320">an exposes the stack traces that we've collected at the time of the crash</p>
+      <p begin="00:30:44.320" end="00:30:48.460">within your application so open up one of these rows here</p>
+      <p begin="00:30:48.460" end="00:30:52.860">for contest application and you can see here we've organized these by what we call</p>
+      <p begin="00:30:52.860" end="00:30:55.120">symbols this corresponds to groups</p>
+      <p begin="00:30:55.120" end="00:31:00.630">...corresponds to a specific class and method within your location and I can open up the</p>
+      <p begin="00:31:00.630" end="00:31:07.470">...just by clicking link here is provides a full stack trace of the failure.</p>
+      <p begin="00:31:07.470" end="00:31:11.480">And, this is all live today so I urge you if you have...existing...go take a look</p>
+      <p begin="00:31:11.480" end="00:31:18.090">goofs go try and find out if you have issues within your existing applications.</p>
+      <p begin="00:31:18.090" end="00:31:22.860">And, finally I'm very happy to announce that we taken great strides in the new</p>
+      <p begin="00:31:22.860" end="00:31:26.840">...dead-center to improve your access to your data for</p>
+      <p begin="00:31:26.840" end="00:31:31.790">your applications all the data that sits behind reports I've covered so far for-you</p>
+      <p begin="00:31:31.790" end="00:31:36.630">today the acquisition reports to channels and conversions the ratings reviews health.</p>
+      <p begin="00:31:36.630" end="00:31:42.070">All that data will be available to-you to download through the download reports page that you can access</p>
+      <p begin="00:31:42.070" end="00:31:47.470">here show you what I mean...hopping here for contested demo.</p>
+      <p begin="00:31:47.470" end="00:31:51.850">So, specifically you can download either for data for other specific application or if you</p>
+      <p begin="00:31:51.850" end="00:31:56.680">have multiple applications for all applications for your account...going to do for you today</p>
+      <p begin="00:31:56.680" end="00:32:01.620">is an instant reports which are available for download immediately all download our acquisition data for can</p>
+      <p begin="00:32:01.620" end="00:32:05.720">...so it'll be a daily level for the last thirty days.</p>
+      <p begin="00:32:05.720" end="00:32:11.690">When you click download reports and a couple seconds...be able to download text file containing all this data because it's a text</p>
+      <p begin="00:32:11.690" end="00:32:15.960">...choose to analyze it however you want but...here all just open it up and</p>
+      <p begin="00:32:15.960" end="00:32:18.910">excel to show you the type of view that you can build...specifically?</p>
+      <p begin="00:32:20.760" end="00:32:23.320">Specifically...build a pivot table.</p>
+      <p begin="00:32:23.320" end="00:32:26.140">Using this data and just, for example,</p>
+      <p begin="00:32:26.140" end="00:32:31.060">in the short amount of time we have today all build a similar view to one you saw earlier on</p>
+      <p begin="00:32:31.060" end="00:32:35.730">the acquisitions page and I'll just build a pivot table or easily and then I'll</p>
+      <p begin="00:32:35.730" end="00:32:40.190">...chart here for visualization so this is the same customer demographic</p>
+      <p begin="00:32:40.190" end="00:32:43.380">view that you saw earlier on the acquisitions page but</p>
+      <p begin="00:32:43.380" end="00:32:47.860">now because I have access to the actual raw data from application I can further build</p>
+      <p begin="00:32:47.860" end="00:32:50.910">a slice into this I can filter this by the</p>
+      <p begin="00:32:50.910" end="00:32:55.080">us and maybe for those people who acquire my app as a joke on april</p>
+      <p begin="00:32:55.080" end="00:33:00.450">fool's day ok so this is very simple contrived example for just</p>
+      <p begin="00:33:00.450" end="00:33:04.460">contested them here but all the data for all the reports we've covered is available for you and</p>
+      <p begin="00:33:04.460" end="00:33:08.330">it's rough format so you can build your own slices of the data you can</p>
+      <p begin="00:33:08.330" end="00:33:12.090">gain your own insights that you need to run your application and your business.</p>
+      <p begin="00:33:13.280" end="00:33:15.660">And, then finally hopping back to the our</p>
+      <p begin="00:33:15.660" end="00:33:18.990">...page in addition to these instant reports which you see</p>
+      <p begin="00:33:18.990" end="00:33:23.780">there they map to the same reports we provide you...the other pages the data is aggregates only</p>
+      <p begin="00:33:23.780" end="00:33:29.300">over certain date range coming very soon we adding these historical reports which allow you to</p>
+      <p begin="00:33:29.300" end="00:33:34.890">query a custom date range of data over any granularity</p>
+      <p begin="00:33:34.890" end="00:33:39.410">for example, for...demo application I be able to download the raw transaction level data</p>
+      <p begin="00:33:39.410" end="00:33:44.330">for acquisitions going back to when I initially launch...application for ours was only a couple months but for</p>
+      <p begin="00:33:44.330" end="00:33:48.700">some of you this is data that goes back many years.</p>
+      <p begin="00:33:48.700" end="00:33:50.670">And, finally I'm very happy to announce</p>
+      <p begin="00:33:50.670" end="00:33:55.530">that will be addressing one of the biggest pieces of feedback to do with analytics that we've heard from you over</p>
+      <p begin="00:33:55.530" end="00:33:59.600">time which is that all the data here both the incent</p>
+      <p begin="00:33:59.600" end="00:34:03.530">and historical reports will be available for you to download the new set of apis</p>
+      <p begin="00:34:03.530" end="00:34:13.389">we launching later this year.</p>
+      <p begin="00:34:13.389" end="00:34:17.869">So, everything I showed you so far is live today for your own application if you have one publish</p>
+      <p begin="00:34:17.869" end="00:34:25.570">...when the store...so please go and check them out right now and give us feedback thank you.</p>
+      <p begin="00:34:25.570" end="00:34:26.370">Thanks james.</p>
+      <p begin="00:34:27.450" end="00:34:34.120">Finally things for doing the api...all waiting for that.</p>
+      <p begin="00:34:34.120" end="00:34:38.160">So, far we've talked about menu new ways for you to acquire</p>
+      <p begin="00:34:38.160" end="00:34:41.660">users then we've talked about keeping those users happy and</p>
+      <p begin="00:34:41.660" end="00:34:45.770">engage and coming back to your app and that's all great but we're not done</p>
+      <p begin="00:34:45.770" end="00:34:51.980">yet are we now comes the most important part making money.</p>
+      <p begin="00:34:51.980" end="00:34:54.980">There are many different modernization models</p>
+      <p begin="00:34:54.980" end="00:34:59.520">but these are the main three that we see in the windows and windows phone stores</p>
+      <p begin="00:34:59.520" end="00:35:05.970">today about fifty five percent of the revenue comes from a nap vertices.</p>
+      <p begin="00:35:05.970" end="00:35:08.020">Most apps have be moving for the</p>
+      <p begin="00:35:08.020" end="00:35:12.480">...model to this free model just like our control so game</p>
+      <p begin="00:35:12.480" end="00:35:15.390">...monetize by selling additional content or features.</p>
+      <p begin="00:35:17.210" end="00:35:21.960">So, we see these growing overtime a very high-rate.</p>
+      <p begin="00:35:21.960" end="00:35:25.330">The nexus advertising with about thirty one percent of the revenue</p>
+      <p begin="00:35:25.330" end="00:35:27.720">and also experiencing great growth.</p>
+      <p begin="00:35:27.720" end="00:35:31.180">And, then beta apps in some cases is still makes sense to</p>
+      <p begin="00:35:31.180" end="00:35:35.810">...your app for...fix the in the store although we're not really seen much growth</p>
+      <p begin="00:35:35.810" end="00:35:39.920">there regardless of what business model where</p>
+      <p begin="00:35:39.920" end="00:35:43.850">you're using we've got improvements to help you make more money on</p>
+      <p begin="00:35:43.850" end="00:35:49.910">any of them so let's get started and let's talk about...purchases.</p>
+      <p begin="00:35:49.910" end="00:35:51.760">So, you're been successful you're bringing in</p>
+      <p begin="00:35:51.760" end="00:35:55.260">all these new users they're opening up your app.</p>
+      <p begin="00:35:55.260" end="00:35:58.980">But, they haven't purchased anything yet.</p>
+      <p begin="00:35:58.980" end="00:36:01.810">And, your ultimate goal.</p>
+      <p begin="00:36:01.810" end="00:36:06.680">Is to get those users to purchase something from you move them from</p>
+      <p begin="00:36:06.680" end="00:36:08.600">being free users to paged users?</p>
+      <p begin="00:36:09.800" end="00:36:14.150">And, that's called that's we call that a conversion.</p>
+      <p begin="00:36:14.150" end="00:36:16.970">By showing the right ip item to the</p>
+      <p begin="00:36:16.970" end="00:36:21.380">...user at the right time you can really improve your conversion rate</p>
+      <p begin="00:36:22.460" end="00:36:27.290">but sometimes users need some help or some incentive to make that</p>
+      <p begin="00:36:27.290" end="00:36:27.790">burgess.</p>
+      <p begin="00:36:28.850" end="00:36:32.580">And, that's why we're introducing a discounts.</p>
+      <p begin="00:36:32.580" end="00:36:34.590">With windows time.</p>
+      <p begin="00:36:34.590" end="00:36:36.560">With ip this counts.</p>
+      <p begin="00:36:36.560" end="00:36:39.000">You can schedule directly from...center.</p>
+      <p begin="00:36:40.130" end="00:36:44.770">A time limited discount for your in apertures items</p>
+      <p begin="00:36:45.990" end="00:36:50.890">...easy just speaking ip item...start and end date.</p>
+      <p begin="00:36:50.890" end="00:36:54.050">And,...the new price that you want that item to half</p>
+      <p begin="00:36:55.160" end="00:36:58.700">your app will then have access to this information</p>
+      <p begin="00:36:58.700" end="00:37:03.500">...query for the list of ip items to display to the user you'll be</p>
+      <p begin="00:37:03.500" end="00:37:07.430">able to see which items are currently on sale?</p>
+      <p begin="00:37:07.430" end="00:37:12.070">And, then your app can render the appropriate ui to highlight these</p>
+      <p begin="00:37:12.070" end="00:37:16.250">discounts the users and render the appropriate a strike through</p>
+      <p begin="00:37:16.250" end="00:37:21.250">and mention that this item just for today it's ninety nine...instead of the useful</p>
+      <p begin="00:37:21.250" end="00:37:26.180">for...or whatever radius this will hopefully help viewing</p>
+      <p begin="00:37:26.180" end="00:37:32.060">...that conversion rate with users.</p>
+      <p begin="00:37:32.060" end="00:37:34.620">I also wanted to say that with.</p>
+      <p begin="00:37:34.620" end="00:37:39.140">We acknowledge that we've been hearing very loud and clear from developers that-you</p>
+      <p begin="00:37:39.140" end="00:37:42.870">...to enable other modernization models...subscriptions.</p>
+      <p begin="00:37:43.970" end="00:37:49.750">And, I'm happy to announce ip subscriptions are...windows time.</p>
+      <p begin="00:37:49.750" end="00:37:50.910">With ip subscriptions.</p>
+      <p begin="00:37:52.070" end="00:37:54.060">You can sell users.</p>
+      <p begin="00:37:54.060" end="00:37:57.460">A recurrence subscription that can give them access to</p>
+      <p begin="00:37:57.460" end="00:38:04.910">a specific content or features within europe.</p>
+      <p begin="00:38:04.910" end="00:38:10.330">You will you can choose from different subscription periods and all</p>
+      <p begin="00:38:10.330" end="00:38:15.240">the transaction flows through...using the same trusted and secure payment</p>
+      <p begin="00:38:15.240" end="00:38:19.690">flow that we've been using with ip is already for a long-time.</p>
+      <p begin="00:38:19.690" end="00:38:22.710">We're working on this...later this year.</p>
+      <p begin="00:38:22.710" end="00:38:29.660">If you have feedback on it would love to hear from you.</p>
+      <p begin="00:38:29.660" end="00:38:31.750">So, next let's talk about advertising.</p>
+      <p begin="00:38:33.080" end="00:38:37.830">If you're monetize soon with adds to the your app I think you'll be happy to hear about a</p>
+      <p begin="00:38:37.830" end="00:38:40.280">number of improvements were making.</p>
+      <p begin="00:38:40.280" end="00:38:47.740">The first one is that with windows ten it's easier than ever to monetize with</p>
+      <p begin="00:38:47.740" end="00:38:51.980">Go-to visual studio drag-and-drop the new ad control from the</p>
+      <p begin="00:38:51.980" end="00:38:54.120">toolbox to your app canvas.</p>
+      <p begin="00:38:55.140" end="00:38:57.300">And,...media app.</p>
+      <p begin="00:38:57.300" end="00:39:03.880">...have to do anything else you just do that you'll stargate in advertising revenue.</p>
+      <p begin="00:39:03.880" end="00:39:07.950">If you're using this...they, you know, that there's a number of steps you have to</p>
+      <p begin="00:39:07.950" end="00:39:12.770">...you have to go to different portal create...accounts.</p>
+      <p begin="00:39:12.770" end="00:39:17.600">Get idea needs and app...back put it on your app all of that is gone now</p>
+      <p begin="00:39:17.600" end="00:39:23.240">we're with simplified drag-and-drop in get money.</p>
+      <p begin="00:39:23.240" end="00:39:24.870">Last year.</p>
+      <p begin="00:39:24.870" end="00:39:31.100">We introduced...mediation on windows phone.</p>
+      <p begin="00:39:31.100" end="00:39:34.640">And, developers have been able to very successfully use</p>
+      <p begin="00:39:34.640" end="00:39:39.050">ad mediation to lift their...field rates all</p>
+      <p begin="00:39:39.050" end="00:39:42.470">around the world virtually one hundred percent.</p>
+      <p begin="00:39:43.640" end="00:39:46.670">With ad mediation you can very easily connect</p>
+      <p begin="00:39:46.670" end="00:39:52.880">your app to multiple third-party at networks and then remotely configure how</p>
+      <p begin="00:39:52.880" end="00:39:54.320">uone those ad networks.</p>
+      <p begin="00:39:55.600" end="00:39:57.050">To be used</p>
+      <p begin="00:39:57.050" end="00:39:59.790">...what order on a bear market basis.</p>
+      <p begin="00:40:00.850" end="00:40:06.520">This allows you to optimize...rate as well as cpa m in any market.</p>
+      <p begin="00:40:06.520" end="00:40:10.830">We're very happy to announce that ad mediation is also come into windows</p>
+      <p begin="00:40:10.830" end="00:40:14.310">stan you'll be able to use it across all your apps.</p>
+      <p begin="00:40:15.320" end="00:40:20.200">And, finally we're also introducing video interstitial is</p>
+      <p begin="00:40:20.200" end="00:40:23.980">just a new add format that as you probably know carries a match higher cpa</p>
+      <p begin="00:40:23.980" end="00:40:28.100">...than regular banner ads.</p>
+      <p begin="00:40:28.100" end="00:40:32.030">This is just a summary off all the improvements today</p>
+      <p begin="00:40:32.030" end="00:40:36.710">at twelve thirty...to the advertising session where you'll get a deep</p>
+      <p begin="00:40:36.710" end="00:40:43.730">...all of these demos and all the goodness that we're doing on that on that site.</p>
+      <p begin="00:40:43.730" end="00:40:44.230">Lastly.</p>
+      <p begin="00:40:45.310" end="00:40:50.180">I wanted to talk about yet another way that you can leverage</p>
+      <p begin="00:40:50.180" end="00:40:56.190">to make even more...with your app the microsoft affiliate program.</p>
+      <p begin="00:40:56.190" end="00:40:58.010">With our affiliate program</p>
+      <p begin="00:40:58.010" end="00:41:02.580">your app can generate additional revenue by promoting</p>
+      <p begin="00:41:02.580" end="00:41:09.180">digitale or physical content that is being solved in...microsoft store.</p>
+      <p begin="00:41:09.180" end="00:41:14.020">You can earn a seven percent commission on any apps</p>
+      <p begin="00:41:14.020" end="00:41:17.850">...music tv shows.</p>
+      <p begin="00:41:17.850" end="00:41:23.980">And, movies that are...the microsoft store today.</p>
+      <p begin="00:41:23.980" end="00:41:25.300">It's very easy to participate.</p>
+      <p begin="00:41:26.600" end="00:41:28.430">You can even earn this same</p>
+      <p begin="00:41:28.430" end="00:41:32.310">seven percent commission on all the ip purchases.</p>
+      <p begin="00:41:33.430" end="00:41:35.080">Done by those users.</p>
+      <p begin="00:41:36.170" end="00:41:41.240">Within a fourteen day attribution window.</p>
+      <p begin="00:41:41.240" end="00:41:43.910">This is way more than what.</p>
+      <p begin="00:41:43.910" end="00:41:47.560">Any other affiliate program authors.</p>
+      <p begin="00:41:47.560" end="00:41:52.240">If you're interested in leveraging this...opportunity I encourage you to watch</p>
+      <p begin="00:41:52.240" end="00:41:55.920">...prove pre-recorded video number two nine</p>
+      <p begin="00:41:55.920" end="00:42:00.240">six that's available right now on channel nine you can go watch it</p>
+      <p begin="00:42:00.240" end="00:42:07.430">and get all the details sign up for the program start making some more money.</p>
+      <p begin="00:42:07.430" end="00:42:12.340">Okay, so, we've talked about many things today and I just wanted to take one-minute to</p>
+      <p begin="00:42:12.340" end="00:42:20.790">recap and summarize all the improvements that we're making for you to make more money.</p>
+      <p begin="00:42:20.790" end="00:42:25.740">We've introduced campaign attribution so you can measure the effectiveness of all your different user</p>
+      <p begin="00:42:25.740" end="00:42:26.960">acquisitions strategies.</p>
+      <p begin="00:42:28.120" end="00:42:32.020">We've introduced promotional...so that you can offer your apps</p>
+      <p begin="00:42:32.020" end="00:42:37.270">and api items for free to select set of users.</p>
+      <p begin="00:42:37.270" end="00:42:40.020">...surfacing...center promote your app so that</p>
+      <p begin="00:42:40.020" end="00:42:47.520">you can easily book bathe or free...ad campaigns.</p>
+      <p begin="00:42:47.520" end="00:42:51.760">We're integrating with visuals to the application insights to give you a</p>
+      <p begin="00:42:51.760" end="00:42:58.680">free in app analytics solution for all your windows apps.</p>
+      <p begin="00:42:58.680" end="00:43:03.010">We're extending the ability to respond to use a reviews both privately as well as</p>
+      <p begin="00:43:03.010" end="00:43:04.350">publicly.</p>
+      <p begin="00:43:04.350" end="00:43:06.890">For all your apps.</p>
+      <p begin="00:43:06.890" end="00:43:09.740">Relating you download all your reporting data</p>
+      <p begin="00:43:11.110" end="00:43:14.150">...aggregate or on a...format.</p>
+      <p begin="00:43:15.380" end="00:43:17.600">For all periods of time.</p>
+      <p begin="00:43:17.600" end="00:43:23.380">Directly from...or through...api.</p>
+      <p begin="00:43:23.380" end="00:43:25.030">We're introducing ip discounts.</p>
+      <p begin="00:43:26.410" end="00:43:31.900">To help you convert those users from creative page.</p>
+      <p begin="00:43:31.900" end="00:43:33.580">For introducing ip subscriptions.</p>
+      <p begin="00:43:34.650" end="00:43:38.720">To enable...business model for apps.</p>
+      <p begin="00:43:38.720" end="00:43:43.620">We're extending ad mediation to the whole family of windows apps.</p>
+      <p begin="00:43:43.620" end="00:43:46.810">And, introducing video interstitial.</p>
+      <p begin="00:43:46.810" end="00:43:49.410">And, we're giving one we're giving you one more way to make</p>
+      <p begin="00:43:49.410" end="00:43:55.130">money through the microsoft affiliate program.</p>
+      <p begin="00:43:55.130" end="00:43:56.160">All of these features.</p>
+      <p begin="00:43:58.480" end="00:44:01.340">...with the windows...</p>
+      <p begin="00:44:01.340" end="00:44:05.200">Some of them with demo today and are available today</p>
+      <p begin="00:44:05.200" end="00:44:08.360">in the preview dead-center that launched on wednesday?</p>
+      <p begin="00:44:09.590" end="00:44:14.130">The others will be rolled out over the next weeks and months.</p>
+      <p begin="00:44:14.130" end="00:44:18.490">Together with the rest of windows time.</p>
+      <p begin="00:44:18.490" end="00:44:21.570">And, there's a there's three things that you can go and do today and the</p>
+      <p begin="00:44:21.570" end="00:44:24.090">...center and I encourage you to do that if you have</p>
+      <p begin="00:44:24.090" end="00:44:27.530">...at least on the windows are windows phone store can to the</p>
+      <p begin="00:44:27.530" end="00:44:31.260">dead-center preview go check out all the reports</p>
+      <p begin="00:44:31.260" end="00:44:35.570">download the or reporting play with it and</p>
+      <p begin="00:44:35.570" end="00:44:37.440">please let us know?</p>
+      <p begin="00:44:37.440" end="00:44:39.520">Your thoughts on that there's a feedback</p>
+      <p begin="00:44:39.520" end="00:44:44.950">...bottom of the portal please clique both james and I are looking at that</p>
+      <p begin="00:44:44.950" end="00:44:49.050">...were reading the feedback that we get from you</p>
+      <p begin="00:44:49.050" end="00:44:53.740">go bouquet bade obvious slap campaign started getting...users for your app you can do</p>
+      <p begin="00:44:53.740" end="00:44:59.870">that today and start leveraging vessels to the application insights.</p>
+      <p begin="00:44:59.870" end="00:45:03.970">Instrument your app create...me then...all the right places</p>
+      <p begin="00:45:03.970" end="00:45:10.700">in your app you want to do that now so you start learning more about your users.</p>
+      <p begin="00:45:10.700" end="00:45:12.850">Finally these are the sessions that I recommended</p>
+      <p begin="00:45:12.850" end="00:45:17.960">throughout throughout my talk seven-six one to the at twelve thirty.</p>
+      <p begin="00:45:17.960" end="00:45:20.470">Really go there if you want to make more money with advertising.</p>
+      <p begin="00:45:21.850" end="00:45:25.030">Six-two for is this session that is probably of wrapping</p>
+      <p begin="00:45:25.030" end="00:45:29.400">app right now go check out the recording if you want to learn more about</p>
+      <p begin="00:45:29.400" end="00:45:34.330">...application insights portal to get more insights and your app and then</p>
+      <p begin="00:45:34.330" end="00:45:42.450">the microsoft affiliate pre-recorded video...nine six.</p>
+      <p begin="00:45:42.450" end="00:45:45.460">And, please evaluate our session so that we can make...</p>
+      <p begin="00:45:45.460" end="00:45:51.080">better conference in the future with that I think...done</p>
+      <p begin="00:45:51.080" end="00:45:56.330">we can take a number of questions here right now</p>
+      <p begin="00:45:56.330" end="00:46:01.420">james and I will also be at the windows insider...for the next hour so,</p>
+      <p begin="00:46:01.420" end="00:46:06.360">you can ask questions here you can...over there for any follow-up questions that you may</p>
+      <p begin="00:46:06.360" end="00:46:09.690">have we have to...right there.</p>
+      <p begin="00:46:09.690" end="00:46:20.990">Available for anybody right now.</p>
+      <p begin="00:46:20.990" end="00:46:24.190">Thank you for all the improvements you made.</p>
+      <p begin="00:46:24.190" end="00:46:29.230">I really like the ability to respond to usersespecially reviews.</p>
+      <p begin="00:46:29.230" end="00:46:33.820">I was just wondering if there's a case in which you can flagged</p>
+      <p begin="00:46:33.820" end="00:46:38.030">of review if there are currently you can flag review</p>
+      <p begin="00:46:38.030" end="00:46:42.870">for having profanity I believe or for being spam but if</p>
+      <p begin="00:46:42.870" end="00:46:48.840">they are making false claims or putting misinformation interviews there's no way to</p>
+      <p begin="00:46:48.840" end="00:46:52.130">flagging and there's some instances where we might not be able to</p>
+      <p begin="00:46:52.130" end="00:46:55.060">reach them or you can through email.</p>
+      <p begin="00:46:56.260" end="00:47:00.770">Or they're just being troll essentially is...way to flagged them if they're saying at feet</p>
+      <p begin="00:47:00.770" end="00:47:06.900">...giving features you do give order just being...</p>
+      <p begin="00:47:06.900" end="00:47:12.100">We're not introducing any new way to that in particular</p>
+      <p begin="00:47:12.100" end="00:47:16.240">and we know that that's just something that happens not only with</p>
+      <p begin="00:47:16.240" end="00:47:19.200">aspirational...stores and</p>
+      <p begin="00:47:19.200" end="00:47:23.990">it's a problem whenever you lead users give...and feedback we're always</p>
+      <p begin="00:47:23.990" end="00:47:29.410">going to get someone who gives you the wrong feedback for whatever reason but,</p>
+      <p begin="00:47:29.410" end="00:47:32.230">at least with respond to reviews you</p>
+      <p begin="00:47:32.230" end="00:47:35.410">can contact that person and what we're doing is we're</p>
+      <p begin="00:47:35.410" end="00:47:40.400">letting that person then come back and update...review...showing</p>
+      <p begin="00:47:40.400" end="00:47:44.710">you...we show you the radiance will tell you how many of those radians have been updated</p>
+      <p begin="00:47:44.710" end="00:47:49.830">radians as a result of you contacting that you can also publicly</p>
+      <p begin="00:47:49.830" end="00:47:55.800">responsibility right and...publicly responded that feedback would be does boulder so,</p>
+      <p begin="00:47:55.800" end="00:47:59.170">that's one way but I think we're explicitly flag is not</p>
+      <p begin="00:47:59.170" end="00:48:05.540">...specifically but you have ways to address...through this in just one more question?</p>
+      <p begin="00:48:05.540" end="00:48:08.990">It's just going to be able to work with older reviews say</p>
+      <p begin="00:48:08.990" end="00:48:13.350">...updating my app throughout for a couple of years now and some of the old reviews</p>
+      <p begin="00:48:13.350" end="00:48:18.230">were very popular requesting features I've implemented now and they're still very high up because they</p>
+      <p begin="00:48:18.230" end="00:48:26.360">were so uploaded and it might be able to respond public to those.</p>
+      <p begin="00:48:26.360" end="00:48:31.900">We have some limits I don't have the details right now we</p>
+      <p begin="00:48:31.900" end="00:48:34.390">will address this.</p>
+      <p begin="00:48:34.390" end="00:48:38.500">Through...documentation so,</p>
+      <p begin="00:48:38.500" end="00:48:43.460">I can give you a concrete answer but definitely if</p>
+      <p begin="00:48:43.460" end="00:48:45.350">there assembly means that below</p>
+      <p begin="00:48:45.350" end="00:48:49.360">...from the...would you just said this is something that will consider.</p>
+      <p begin="00:48:50.630" end="00:48:55.080">Thank you.</p>
+      <p begin="00:48:55.080" end="00:49:00.190">Hi, I'm really excited about the download and install attribution and,</p>
+      <p begin="00:49:00.190" end="00:49:04.370">I saw that for our own campaigns we can just tag the...you know,</p>
+      <p begin="00:49:04.370" end="00:49:06.400">take on the url but what</p>
+      <p begin="00:49:06.400" end="00:49:11.450">about the downloads that come from being featured in a particular market in the windows store or</p>
+      <p begin="00:49:11.450" end="00:49:20.780">in a collection in the windows store is that data available somehow?</p>
+      <p begin="00:49:20.780" end="00:49:26.280">We are working on enable ingest that.</p>
+      <p begin="00:49:26.280" end="00:49:32.510">We don't have the details yet but our goal is to...you...</p>
+      <p begin="00:49:32.510" end="00:49:33.160">The attribution.</p>
+      <p begin="00:49:34.540" end="00:49:39.520">To understand where the downloads came from for campaigns you created</p>
+      <p begin="00:49:39.520" end="00:49:44.990">or...sources such as promotions within the store</p>
+      <p begin="00:49:44.990" end="00:49:49.590">or any other any other sources so I don't have a definitive</p>
+      <p begin="00:49:49.590" end="00:49:57.900">answer either but this is something we're working on and you should expect to see these at some point.</p>
+      <p begin="00:49:57.900" end="00:50:02.960">Hello, yeah, really excited about the ability to respond to</p>
+      <p begin="00:50:02.960" end="00:50:08.710">users based on the feedback on your application but I want to</p>
+      <p begin="00:50:08.710" end="00:50:09.850">as can april modes.</p>
+      <p begin="00:50:10.990" end="00:50:15.430">May new application by responding to people</p>
+      <p begin="00:50:15.430" end="00:50:20.400">who of david feedback on my previous applications allow like to no</p>
+      <p begin="00:50:20.400" end="00:50:26.670">what four-month...received...kind of information is...trudy...off oddity get</p>
+      <p begin="00:50:26.670" end="00:50:30.840">the respond okay so let me try to repeat the question</p>
+      <p begin="00:50:30.840" end="00:50:36.090">to make sure I understood I think you want to know if you can respond</p>
+      <p begin="00:50:36.090" end="00:50:40.510">to a user at the same time use that as a vehicle to promote some of your other apps</p>
+      <p begin="00:50:40.510" end="00:50:45.460">exist we have a specific guidance on how you can use the respond to review feature</p>
+      <p begin="00:50:45.460" end="00:50:51.760">and this is something that were not letting you do at this point you can always promote</p>
+      <p begin="00:50:51.760" end="00:50:56.660">a new ad the to the app that fixes and existing issue and</p>
+      <p begin="00:50:56.660" end="00:51:01.390">it's about providing meaningful information to the user at that point this is not</p>
+      <p begin="00:51:01.390" end="00:51:07.240">a it would be great but it's not a marketing vehicle for your other apps?</p>
+      <p begin="00:51:07.240" end="00:51:10.100">There's other ways which we've shown you that you can use for</p>
+      <p begin="00:51:10.100" end="00:51:17.440">that and now your second question well,...</p>
+      <p begin="00:51:17.440" end="00:51:20.160">...correct the second question is about</p>
+      <p begin="00:51:20.160" end="00:51:24.120">which formatdoes a user get to a your response</p>
+      <p begin="00:51:24.120" end="00:51:27.800">...so you can either respond privately or publicly</p>
+      <p begin="00:51:27.800" end="00:51:32.290">you respond privately it's an email that goes to the to the user?</p>
+      <p begin="00:51:32.290" end="00:51:34.860">The email that the user gets will also have a</p>
+      <p begin="00:51:34.860" end="00:51:40.520">link where they can cleats where they can click land in the review that they</p>
+      <p begin="00:51:40.520" end="00:51:45.020">wrote and modify it if they want okay so it's an e-mail if</p>
+      <p begin="00:51:45.020" end="00:51:48.220">...publicly it's obviously just a public</p>
+      <p begin="00:51:48.220" end="00:51:52.980">response that will show up both...the website for this store as well as historic client</p>
+      <p begin="00:51:52.980" end="00:51:54.510">...the device.</p>
+      <p begin="00:51:54.510" end="00:51:58.770">Thank you.</p>
+      <p begin="00:51:58.770" end="00:52:01.090">My question is if you have a</p>
+      <p begin="00:52:01.090" end="00:52:05.700">see id in the link that drives people to the store is</p>
+      <p begin="00:52:05.700" end="00:52:10.310">there a way to track those users if they've downloaded afterwards for</p>
+      <p begin="00:52:10.310" end="00:52:17.300">...purchases and things like that correct so this is the use case and we</p>
+      <p begin="00:52:17.300" end="00:52:22.080">talked about where your app can query the see id at runtime.</p>
+      <p begin="00:52:22.080" end="00:52:24.430">Save you do that and your</p>
+      <p begin="00:52:24.430" end="00:52:28.670">...and you send it to your own service or some third-party</p>
+      <p begin="00:52:28.670" end="00:52:33.620">analytic service that graphs and...id then you'll be able to use this</p>
+      <p begin="00:52:33.620" end="00:52:38.170">the track that user overtime track their purchases and understand</p>
+      <p begin="00:52:38.170" end="00:52:42.430">what revenue you're getting from them, for example, and,</p>
+      <p begin="00:52:42.430" end="00:52:47.430">I went kind of quick over that but just...dive in one level deeper.</p>
+      <p begin="00:52:47.430" end="00:52:52.440">When the way we actually track conversion basically...attributed purchase other nap purchaser that</p>
+      <p begin="00:52:52.440" end="00:52:57.100">...works is a page a page you comes in that has that id right</p>
+      <p begin="00:52:57.100" end="00:53:02.150">if any app purchase happens within twenty four hours...we consider that and</p>
+      <p begin="00:53:02.150" end="00:53:07.650">attributed purchaser conversion and then following that purchase any ip purchase that occurs</p>
+      <p begin="00:53:07.650" end="00:53:12.630">within seven days we also attribute to that campaign and he didn't...that when we walk through it but those are</p>
+      <p begin="00:53:12.630" end="00:53:17.280">the windows the standard windows we use and it's either they went through...the actual purchase</p>
+      <p begin="00:53:17.280" end="00:53:22.210">flow right there or say they...on one device and purchased it later</p>
+      <p begin="00:53:22.210" end="00:53:26.730">on say their phones that we also cover that in our back-end and,</p>
+      <p begin="00:53:26.730" end="00:53:30.750">consider those conversions either the app right...does the id stick with</p>
+      <p begin="00:53:30.750" end="00:53:36.640">the installation I mean, you know, does it stick with the machine that has the download</p>
+      <p begin="00:53:36.640" end="00:53:42.780">actually sticks with the license to users...across a different machines...would not be with</p>
+      <p begin="00:53:42.780" end="00:53:50.650">the specific machine would be with their license for your application...thank you?</p>
+      <p begin="00:53:50.650" end="00:53:55.570">...for the...one-third improvements but,</p>
+      <p begin="00:53:55.570" end="00:54:00.670">my question isnow with the reports are basically two to three to four days</p>
+      <p begin="00:54:00.670" end="00:54:01.810">...from the</p>
+      <p begin="00:54:03.020" end="00:54:08.200">...read be able to use the stage all-out in the future release</p>
+      <p begin="00:54:08.200" end="00:54:12.970">...of...time or reduce to the...yeah,</p>
+      <p begin="00:54:12.970" end="00:54:16.070">so, as a covered were the report you saw today</p>
+      <p begin="00:54:16.070" end="00:54:19.720">be updated hourly and will also be adding...of into our view the prize</p>
+      <p begin="00:54:19.720" end="00:54:23.430">and hourly breakdown so as you roll-out new versions of your app you</p>
+      <p begin="00:54:23.430" end="00:54:28.020">can filter that report by the versions of your apps you if you roll-out new version would have</p>
+      <p begin="00:54:28.020" end="00:54:31.900">a new version you would be able to see the crashes for the new versions of</p>
+      <p begin="00:54:31.900" end="00:54:37.650">your app within the...of the logic that's...you have an existing that published</p>
+      <p begin="00:54:37.650" end="00:54:42.300">today I would encourage you to go to the old portal and the new and compare</p>
+      <p begin="00:54:42.300" end="00:54:45.290">you'll see I'm more interested for future stages</p>
+      <p begin="00:54:45.290" end="00:54:53.800">...so very can be...them update the same time?</p>
+      <p begin="00:54:53.800" end="00:54:56.090">Okay, thanks everybody thank you.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.867</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.180" end="00:00:03.720">...it's...two thousand fifteen and,</p>
+      <p begin="00:00:03.720" end="00:00:06.630">as usual we're going to get to talk about cplus-plus</p>
+      <p begin="00:00:06.630" end="00:00:11.290">native code and also something really interesting that we learned about it build</p>
+      <p begin="00:00:11.290" end="00:00:15.540">objectives see compiling in visual studio on windows</p>
+      <p begin="00:00:15.540" end="00:00:20.520">so without further ado I want to have you guys introduce yourselves and tells little about what</p>
+      <p begin="00:00:20.520" end="00:00:24.900">you done related to what I just said okay I'm jim route again I'm</p>
+      <p begin="00:00:24.900" end="00:00:28.470">...manager for the cplus-plus compiler we hooked up the</p>
+      <p begin="00:00:28.470" end="00:00:32.390">...front-end to compile cplus-plus and objectives</p>
+      <p begin="00:00:32.390" end="00:00:35.470">...and targeting the runtime that these guys.</p>
+      <p begin="00:00:35.470" end="00:00:40.380">Are going to introduce themselves for...that I am a program manager</p>
+      <p begin="00:00:40.380" end="00:00:45.030">...with the windows team and we basically took a lot of the work that</p>
+      <p begin="00:00:45.030" end="00:00:47.550">...done and really ran with it and</p>
+      <p begin="00:00:47.550" end="00:00:51.120">...speed the equate objective...solution...</p>
+      <p begin="00:00:51.120" end="00:00:54.780">today I'm a software engineer and the same team on?</p>
+      <p begin="00:00:56.000" end="00:01:00.600">A lot of the implementations...the frameworks and foundation gets.</p>
+      <p begin="00:01:00.600" end="00:01:05.050">And,...heard rigorous I'm actually in...not in the product team I take with...</p>
+      <p begin="00:01:05.050" end="00:01:09.680">do and I try to help partners use these, you know, their technology to bring their products</p>
+      <p begin="00:01:09.680" end="00:01:14.270">...to windows, windows phone most recently candy...</p>
+      <p begin="00:01:14.270" end="00:01:18.530">...work...denotes read on absolutely and I was running</p>
+      <p begin="00:01:18.530" end="00:01:22.850">it on my windows phone eighty-one device and I didn't realize was actually the ios app at that</p>
+      <p begin="00:01:22.850" end="00:01:28.400">point...thanks you guys, yeah, that really work it runs faceted runs it's very</p>
+      <p begin="00:01:28.400" end="00:01:33.200">stables very fast...just a great experience school so remember you can ask questions out</p>
+      <p begin="00:01:33.200" end="00:01:37.210">there and the topic is compiling objectives</p>
+      <p begin="00:01:37.210" end="00:01:41.750">see on windows using visual studio it's also any question you might have</p>
+      <p begin="00:01:41.750" end="00:01:46.090">for cplus-plus back and in fact you guys finally.</p>
+      <p begin="00:01:46.090" end="00:01:48.830">Solve the guard problem poet out</p>
+      <p begin="00:01:48.830" end="00:01:53.750">your optimizations so that's something we can talk about as well so talk really was about</p>
+      <p begin="00:01:53.750" end="00:01:58.570">two things it's all the code generation technology that you can get right now in visual</p>
+      <p begin="00:01:58.570" end="00:02:05.460">studio twenty fifteen in addition to the...is going-to be coming out what two days after we...</p>
+      <p begin="00:02:05.460" end="00:02:08.810">At least at least one bs update cycle later.</p>
+      <p begin="00:02:09.890" end="00:02:13.920">So, let's jump right into this what is so it's what's the name</p>
+      <p begin="00:02:13.920" end="00:02:16.370">of technology to work on this project island</p>
+      <p begin="00:02:16.370" end="00:02:20.400">...island what island...it's a lovely pedestrian bridge somewhere on been</p>
+      <p begin="00:02:20.400" end="00:02:23.730">...I believe so we commandeer that name that</p>
+      <p begin="00:02:23.730" end="00:02:27.100">...going...because it's a bridge exactly it's a bridget</p>
+      <p begin="00:02:27.100" end="00:02:30.620">...way to get cold you've already written that happens to be using objective</p>
+      <p begin="00:02:30.620" end="00:02:34.430">see but get that code on to the windows platform now</p>
+      <p begin="00:02:34.430" end="00:02:39.690">...is the objected see with the gigantic api underneath so, you know,</p>
+      <p begin="00:02:39.690" end="00:02:41.260">core ui coronation</p>
+      <p begin="00:02:41.260" end="00:02:47.390">blah-blah-blah so you had to do translation there I hear you've done some interesting things?</p>
+      <p begin="00:02:47.390" end="00:02:50.710">To think of it as and implementation of the platform right so</p>
+      <p begin="00:02:50.710" end="00:02:55.470">...spent a lot of time implementing you...make sure it all works together nicely and it's not only</p>
+      <p begin="00:02:55.470" end="00:03:00.270">likeit we spent a lot of time integrating angle project which is used to implement open</p>
+      <p begin="00:03:00.270" end="00:03:04.200">jail on top of directory which was used by the kenny...project and</p>
+      <p begin="00:03:04.200" end="00:03:07.840">...inspire able to ship it went so fast and this platform</p>
+      <p begin="00:03:07.840" end="00:03:10.730">possum so what</p>
+      <p begin="00:03:10.730" end="00:03:16.220">actually is going on underneath that enables that's.</p>
+      <p begin="00:03:16.220" end="00:03:19.750">Binary rewriting what's going on so it's not rewriting binary</p>
+      <p begin="00:03:19.750" end="00:03:23.320">said it's actually compiling objective secret on</p>
+      <p begin="00:03:23.320" end="00:03:26.620">...just implemented the things that they need to be there for at all</p>
+      <p begin="00:03:26.620" end="00:03:31.190">to come together nicely so what happens when apple releases and updated you</p>
+      <p begin="00:03:31.190" end="00:03:37.180">...sure ...remember the way...development works.</p>
+      <p begin="00:03:37.180" end="00:03:40.280">When you're writing your app for ios...sort of these two numbers</p>
+      <p begin="00:03:40.280" end="00:03:45.070">...is your target sdk which is, you know, usually the latest version of the os</p>
+      <p begin="00:03:45.070" end="00:03:47.970">in the sdk that exists but there's also this other notion called</p>
+      <p begin="00:03:47.970" end="00:03:53.610">...base st and that really lets you set the bounds...you say as developer I'm going to</p>
+      <p begin="00:03:53.610" end="00:03:58.500">support iowa's versions sixty-eight or fly through eight or something like that so,</p>
+      <p begin="00:03:58.500" end="00:04:04.160">most developers to maximize the available market...actually don't set their base sdk to be</p>
+      <p begin="00:04:04.160" end="00:04:10.670">eight-point...or eight-point also there's in fact sort of sliding window of time between</p>
+      <p begin="00:04:10.670" end="00:04:14.980">...api...released...widely or completely adopted but</p>
+      <p begin="00:04:14.980" end="00:04:18.020">...my point was that you're still going to make changes to all of</p>
+      <p begin="00:04:18.020" end="00:04:24.450">...is following...train this is a one-point-zero product right now and as we go for...</p>
+      <p begin="00:04:24.450" end="00:04:31.150">of work for more and more api...have more features more great compiler features especially?</p>
+      <p begin="00:04:31.150" end="00:04:36.660">And, to go back nothing really happens because, for example, can...ios you can do two</p>
+      <p begin="00:04:36.660" end="00:04:41.170">or three updates they've done three or four in the last four months or something like that</p>
+      <p begin="00:04:41.170" end="00:04:46.550">eight one patched...a lot it doesn't matter right in our case we compile against</p>
+      <p begin="00:04:46.550" end="00:04:50.380">unicode we shipment code ios on a separate track and your application</p>
+      <p begin="00:04:50.380" end="00:04:54.750">...break or anything like that so you don't have to be on the faster?</p>
+      <p begin="00:04:54.750" end="00:04:56.250">And, you get...because</p>
+      <p begin="00:04:56.250" end="00:05:01.180">you're compiling and ios and app that was originally designed for ios</p>
+      <p begin="00:05:01.180" end="00:05:04.200">...written objective...using all the underneath</p>
+      <p begin="00:05:04.200" end="00:05:09.510">technologies you can extended take advantage of say the windows platform word is going</p>
+      <p begin="00:05:09.510" end="00:05:16.480">to be running so you could have, you know, I'd like core tama help me play.</p>
+      <p begin="00:05:16.480" end="00:05:20.300">Yacht anyway...that's...a very good points are because of the work committee</p>
+      <p begin="00:05:20.300" end="00:05:25.280">and have don your compiling objective see using the same code</p>
+      <p begin="00:05:25.280" end="00:05:29.940">jan as you are cplus-plus that means you can call functions between objective</p>
+      <p begin="00:05:29.940" end="00:05:32.760">c and cplus-plus world without doing sort of ugly...on</p>
+      <p begin="00:05:32.760" end="00:05:37.060">...of parameters...just function calls...same thing the other way so,</p>
+      <p begin="00:05:37.060" end="00:05:43.140">yeah, you can you can absolutely...on...on being on xbox api all sorts of</p>
+      <p begin="00:05:43.140" end="00:05:48.460">itself when you do compile your objective c code in visual studio</p>
+      <p begin="00:05:48.460" end="00:05:52.620">you get all of optimization greatness that jim and team</p>
+      <p begin="00:05:52.620" end="00:05:56.675">is done including the new guard technology and sort of, you</p>
+      <p begin="00:05:56.675" end="00:06:02.870">know, really preventing a series of attacks...that's really important</p>
+      <p begin="00:06:02.870" end="00:06:08.570">value-added because one of the biggest things that we focused on indeo in the</p>
+      <p begin="00:06:08.570" end="00:06:13.400">...fourteen timeframe which is visual studio twenty fourteen is security so one of the things</p>
+      <p begin="00:06:13.400" end="00:06:17.260">we'll be able to do is wools we suppliers sweats?</p>
+      <p begin="00:06:17.260" end="00:06:19.910">It'll basically...a lot of the control flow and</p>
+      <p begin="00:06:19.910" end="00:06:24.500">...it and we modify the operating system the os loader the</p>
+      <p begin="00:06:24.500" end="00:06:28.120">linger in the compiler for this and it'll all be available in the objective</p>
+      <p begin="00:06:28.120" end="00:06:31.730">c code that we generate and,</p>
+      <p begin="00:06:31.730" end="00:06:34.740">we really plan to take that forward aggressively</p>
+      <p begin="00:06:36.060" end="00:06:40.680">...that we've shipped garden we've got security as part of the product</p>
+      <p begin="00:06:40.680" end="00:06:45.690">awesome...so we got questions keep asking them maroon wants to</p>
+      <p begin="00:06:45.690" end="00:06:48.490">...ios capabilities might keep changing</p>
+      <p begin="00:06:48.490" end="00:06:52.940">...cable keep getting updated we sort of already talked about I plan to keep windows update run</p>
+      <p begin="00:06:52.940" end="00:06:57.960">those absentee capabilities wellsort of talk, yeah, we talk about a little bit but I do again</p>
+      <p begin="00:06:57.960" end="00:07:01.490">what remind people that look if you want to take advantage of some crazy</p>
+      <p begin="00:07:01.490" end="00:07:06.390">to functionality we have a great windows universal api surface you can call right into that and,</p>
+      <p begin="00:07:06.390" end="00:07:10.190">interoperate with the rest of your application excellent of</p>
+      <p begin="00:07:10.190" end="00:07:12.860">...keying what about swift.</p>
+      <p begin="00:07:12.860" end="00:07:17.230">What about swift...is rewarded as well you we are not making any enhancements</p>
+      <p begin="00:07:17.230" end="00:07:19.080">in are not moi?</p>
+      <p begin="00:07:20.570" end="00:07:25.230">Today as writing I agree completely I do recommend people watts jim</p>
+      <p begin="00:07:25.230" end="00:07:28.140">stocked ohm ogg at that slide.</p>
+      <p begin="00:07:28.140" end="00:07:31.130">But, no, announcements I'm just playing I'm kidding but you do</p>
+      <p begin="00:07:31.130" end="00:07:33.740">...the...front-end.</p>
+      <p begin="00:07:33.740" end="00:07:34.370">Right, yeah,</p>
+      <p begin="00:07:34.370" end="00:07:38.850">we do point so...now since we want to actually get full fidelity</p>
+      <p begin="00:07:38.850" end="00:07:43.630">at the cplus-plus level because that's truly across platform play across vendors</p>
+      <p begin="00:07:43.630" end="00:07:48.730">and then we want ctwo at the bottom because that's a cross-platform display within the all</p>
+      <p begin="00:07:48.730" end="00:07:53.430">...we have...for the windows platform so since you have</p>
+      <p begin="00:07:53.430" end="00:07:58.390">...hooked up to rc to code generator you naturally get objective say</p>
+      <p begin="00:07:58.390" end="00:08:01.250">...front-end world parse objectives</p>
+      <p begin="00:08:01.250" end="00:08:04.510">...read so papon wants to know.</p>
+      <p begin="00:08:04.510" end="00:08:09.180">First walls...great step forward it definitely is my question is</p>
+      <p begin="00:08:09.180" end="00:08:12.520">...to recompile any ios...c code windows</p>
+      <p begin="00:08:12.520" end="00:08:17.770">...anything get lost in translation also how about you why yet</p>
+      <p begin="00:08:17.770" end="00:08:22.810">...we do support you likeit that is to say it's absolutely perfect...every part of you</p>
+      <p begin="00:08:22.810" end="00:08:27.410">I can't but we have a pretty good support for most of what people use for your</p>
+      <p begin="00:08:27.410" end="00:08:32.170">because we have take every pragmatic approach to implementing the frameworks that people</p>
+      <p begin="00:08:32.170" end="00:08:36.610">years what happens is...workflow is we take apps and we make the more and when you do this</p>
+      <p begin="00:08:36.610" end="00:08:39.430">...enough apps income stuff works because we</p>
+      <p begin="00:08:39.430" end="00:08:42.330">...surface area for testing right and</p>
+      <p begin="00:08:42.330" end="00:08:47.110">nothing's really lost in translation because we're not really we're not really translating thing</p>
+      <p begin="00:08:47.110" end="00:08:51.030">we're just implementing things that people with people rely on and</p>
+      <p begin="00:08:51.030" end="00:08:55.930">are compiler is planning it's exactly what everyone's used to</p>
+      <p begin="00:08:55.930" end="00:09:01.490">just have it's a different a...encode generators is different and in fact it's a very</p>
+      <p begin="00:09:01.490" end="00:09:06.230">strict strong...and can give us everything for debugging</p>
+      <p begin="00:09:06.230" end="00:09:11.200">...visual studio that developers want will look...I don't know but I know himmy uses</p>
+      <p begin="00:09:11.200" end="00:09:17.650">x code we...apps is also developer I've tried to put around that's</p>
+      <p begin="00:09:17.650" end="00:09:22.370">good I much prefer visual studio and not just because I work at microsoft it's</p>
+      <p begin="00:09:22.370" end="00:09:27.820">...it's a great id it's a great experience...a developer so I think what</p>
+      <p begin="00:09:27.820" end="00:09:32.330">...little...through the business man I'm just getting your not the...you look like</p>
+      <p begin="00:09:32.330" end="00:09:34.500">...yes as?</p>
+      <p begin="00:09:34.500" end="00:09:36.280">A so what do you think</p>
+      <p begin="00:09:36.280" end="00:09:41.250">...in terms of light the pattern of behavior is going to be...amongst</p>
+      <p begin="00:09:41.250" end="00:09:46.120">developers when it comes to using this technology I mean and ios guide.</p>
+      <p begin="00:09:46.120" end="00:09:48.460">...apps...whatever I only kind</p>
+      <p begin="00:09:48.460" end="00:09:52.800">of focus on ios but now I might want to take a look at windows.</p>
+      <p begin="00:09:52.800" end="00:09:56.470">But, it's still going to be a conceptual shift to cover windows...visual studio</p>
+      <p begin="00:09:56.470" end="00:10:01.010">...windows and then how do you see this workflow like what's, what's going to happen out with</p>
+      <p begin="00:10:01.010" end="00:10:05.880">...stuff...let's let me get that in...as one add something very obviously to what jordan</p>
+      <p begin="00:10:05.880" end="00:10:12.170">said of the questions we get pretty often is around performance and I think a</p>
+      <p begin="00:10:12.170" end="00:10:16.570">side effect of what we've been saying today is that there's no?</p>
+      <p begin="00:10:16.570" end="00:10:18.830">Strict reason why anything you</p>
+      <p begin="00:10:18.830" end="00:10:23.470">rights using...on windows will be any slower than intricate cplus-plus.</p>
+      <p begin="00:10:23.470" end="00:10:27.020">Or the equivalent code running on equivalent hardware on and</p>
+      <p begin="00:10:27.020" end="00:10:32.180">...through important point yes is medical there's no translation there's,</p>
+      <p begin="00:10:32.180" end="00:10:37.050">there's already ambition there's no vm there's no emulator...running against the</p>
+      <p begin="00:10:37.050" end="00:10:40.740">...of the hardware...an incredible compiler optimization</p>
+      <p begin="00:10:42.200" end="00:10:44.040">...your question so I will inversions?</p>
+      <p begin="00:10:45.430" end="00:10:49.800">As...guys all...to be long-winded I think what I was saying</p>
+      <p begin="00:10:49.800" end="00:10:55.900">was what do you envision the workflow be yes that's right what's the climate you've left.</p>
+      <p begin="00:10:55.900" end="00:11:00.660">...and, I play or if we had a few partners play with it, you know, some</p>
+      <p begin="00:11:00.660" end="00:11:03.840">...kingett etc or some you know, that we have...here</p>
+      <p begin="00:11:03.840" end="00:11:08.780">than what we see is that this is a really great web people to get started out, you know,</p>
+      <p begin="00:11:08.780" end="00:11:13.660">he was an interesting exercise where they could state all now we think...too much work they had what</p>
+      <p begin="00:11:13.660" end="00:11:19.290">it to android article was portable but they had already done a lot of work in order to make it...portable so,</p>
+      <p begin="00:11:19.290" end="00:11:22.890">they...they...thinking it's too much works too much work and we show them</p>
+      <p begin="00:11:22.890" end="00:11:27.530">...technology and said okay that's worth a shot right and then we did</p>
+      <p begin="00:11:27.530" end="00:11:32.390">they were like okay this is great and as you saw from keynote they're not going to do a lot more</p>
+      <p begin="00:11:32.390" end="00:11:37.120">apps and they're like okay now we understand the platform now we know we can do you know,</p>
+      <p begin="00:11:37.120" end="00:11:42.030">it's open gl so they can also use angle natively so they're like okay we're going to start moving towards</p>
+      <p begin="00:11:42.030" end="00:11:47.460">...natick path but they would have never tried it and they not had this technology to get them</p>
+      <p begin="00:11:47.460" end="00:11:51.960">they're very quickly they got there they saw the users the staff and platform</p>
+      <p begin="00:11:51.960" end="00:11:56.680">dioxide monetize and they were like okay that that's...so for</p>
+      <p begin="00:11:56.680" end="00:12:01.270">us know in vandalism this is a really great way to get people smart people see it and they're</p>
+      <p begin="00:12:01.270" end="00:12:06.550">like that makes...easier now I expect...be some people that...will keep,</p>
+      <p begin="00:12:06.550" end="00:12:07.670">you know, what</p>
+      <p begin="00:12:07.670" end="00:12:13.360">...and they'll be other people that say we'll novel native ask me dive into their next generation apps</p>
+      <p begin="00:12:13.360" end="00:12:18.320">...the that as they do more and whereas that's a perfect way to get started because we do one</p>
+      <p begin="00:12:18.320" end="00:12:22.480">after the native when you bring your...apps...still...think</p>
+      <p begin="00:12:22.480" end="00:12:27.300">...live tiled some local modifications we do in...for-you lab we</p>
+      <p begin="00:12:27.300" end="00:12:31.600">...this api somatic seamless for you to do it but there's a lot of other features right</p>
+      <p begin="00:12:31.600" end="00:12:35.520">...out there's a lot of other features we want people take advantage off and do</p>
+      <p begin="00:12:35.520" end="00:12:38.880">...on cplus-plus right now it's transparent you can just start</p>
+      <p begin="00:12:39.900" end="00:12:44.950">...seamless right so we wanted to you...to take advantage...an as you go through</p>
+      <p begin="00:12:44.950" end="00:12:49.730">it at some point you make the decision of...on...out of these do is</p>
+      <p begin="00:12:49.730" end="00:12:54.820">we want to make it...I think of...your...the talk the demo really lit up</p>
+      <p begin="00:12:54.820" end="00:12:58.230">...language services we didn't get a chance really...</p>
+      <p begin="00:12:58.230" end="00:13:01.570">Language services but you really did depth...colors asia and</p>
+      <p begin="00:13:01.570" end="00:13:06.480">...handful language services to do...continue completely...model...jump</p>
+      <p begin="00:13:06.480" end="00:13:12.020">...it's I mean visual studio is a great idea and we've just made a great for visual for</p>
+      <p begin="00:13:12.020" end="00:13:16.590">objectively as well...and ctwo is a great back-end compiler...credit</p>
+      <p begin="00:13:16.590" end="00:13:21.090">that's...as well as...compile we have a great team the team</p>
+      <p begin="00:13:21.090" end="00:13:25.890">isn't as an amazing team for code generation and for security and those two things together I think</p>
+      <p begin="00:13:25.890" end="00:13:28.240">...big deal but I think the</p>
+      <p begin="00:13:28.240" end="00:13:33.250">...going back to your point the integration with visual studio is really powerful</p>
+      <p begin="00:13:33.250" end="00:13:40.320">...makes it extremely low...to move to use them.</p>
+      <p begin="00:13:40.320" end="00:13:44.600">So, we have a question which I think when phone as...</p>
+      <p begin="00:13:44.600" end="00:13:51.010">design but how do we get ios apps to this experience metro tiles etc?</p>
+      <p begin="00:13:51.010" end="00:13:55.770">Well, it's just...talked about before games it seamless...because...to be</p>
+      <p begin="00:13:55.770" end="00:14:01.530">consistent across platforms like game looks the exact same whether it's unity or you know,</p>
+      <p begin="00:14:01.530" end="00:14:05.150">these technology or any other technology the games are like the exact same</p>
+      <p begin="00:14:05.150" end="00:14:10.190">influence across-the-board so there there's no ...patterns of with regards to you...kid they've</p>
+      <p begin="00:14:10.190" end="00:14:13.240">...they have right now it does look a little bit ios</p>
+      <p begin="00:14:13.240" end="00:14:15.600">...something that...have to look at with</p>
+      <p begin="00:14:15.600" end="00:14:20.990">...should be theme and what is the best practices...right now because we're just getting started</p>
+      <p begin="00:14:20.990" end="00:14:25.730">...sorry control and they're making those decisions as they go with regards to how part I want to go and</p>
+      <p begin="00:14:25.730" end="00:14:30.970">...so, are...which will be there...luminaries to should not be</p>
+      <p begin="00:14:32.160" end="00:14:36.790">are problem-solves so it is also if you are and iowa's developer you</p>
+      <p begin="00:14:36.790" end="00:14:41.670">can already theme...your you like it...you can say I want my buttons to be yellows of</p>
+      <p begin="00:14:41.670" end="00:14:46.710">...that's absolutely within your control and ...got a little bit in</p>
+      <p begin="00:14:46.710" end="00:14:51.160">the demo we did earlier today about how we can...customize</p>
+      <p begin="00:14:51.160" end="00:14:56.040">look and feel of various...elements by default without you having to actually do anything</p>
+      <p begin="00:14:56.040" end="00:15:00.990">and another example of that is we can offer support automatic support for</p>
+      <p begin="00:15:00.990" end="00:15:05.070">back button integration so if you're if you're app uses a standard</p>
+      <p begin="00:15:05.070" end="00:15:08.870">...navigation controller and...do nothing else we can automatically</p>
+      <p begin="00:15:08.870" end="00:15:13.140">...physical backpacking support onto...backwards navigation so</p>
+      <p begin="00:15:13.140" end="00:15:17.150">we've done a lot of this work for you to make it really easy but you can also customize</p>
+      <p begin="00:15:17.150" end="00:15:21.540">the mcallen as austin tx and of course?</p>
+      <p begin="00:15:21.540" end="00:15:24.340">Ios is models...right</p>
+      <p begin="00:15:24.340" end="00:15:30.760">...flatten so at least there's some work you don't have to do you.</p>
+      <p begin="00:15:30.760" end="00:15:34.620">Will there be a windows emulator for ios I think that's a legal problem</p>
+      <p begin="00:15:34.620" end="00:15:38.250">...of technical probable there's no reason to do the...because</p>
+      <p begin="00:15:38.250" end="00:15:43.110">...compiling directly and regenerating code directly to the run-time just like we</p>
+      <p begin="00:15:43.110" end="00:15:48.640">would compile cplus-plus so you can view your application running on windows as a exactly</p>
+      <p begin="00:15:48.640" end="00:15:51.250">...important emphasize...it's a windows application</p>
+      <p begin="00:15:51.250" end="00:15:56.170">we can pilot just as we would any other application on windows...so happens</p>
+      <p begin="00:15:56.170" end="00:16:00.020">...now the going back to the workflow sort of question was if</p>
+      <p begin="00:16:00.020" end="00:16:05.550">...and ios developer?</p>
+      <p begin="00:16:05.550" end="00:16:08.010">And, I had always been drooling</p>
+      <p begin="00:16:08.010" end="00:16:12.440">and watching visual studio and jealous of my friends...music and I know job</p>
+      <p begin="00:16:12.440" end="00:16:18.150">...the same so my point is I think I'm trying to.</p>
+      <p begin="00:16:18.150" end="00:16:19.530">And, I forgot...</p>
+      <p begin="00:16:19.530" end="00:16:25.160">what happens ej bourbon late at night...to...we do have support for</p>
+      <p begin="00:16:25.160" end="00:16:29.530">...visual studio we...some time in like incorporating</p>
+      <p begin="00:16:29.530" end="00:16:34.150">...complete support...like when you press dot what happens and playing</p>
+      <p begin="00:16:34.150" end="00:16:37.950">has an api that actually were able to leverage for to great effect for</p>
+      <p begin="00:16:37.950" end="00:16:43.270">forgetting information about what could happen in that context and we had a lot of success with that</p>
+      <p begin="00:16:43.270" end="00:16:47.710">and at also allowed us to navigate through the code right when you say</p>
+      <p begin="00:16:47.710" end="00:16:52.690">like this token I'm interested in what this says like show me the definition of what the...</p>
+      <p begin="00:16:52.690" end="00:16:57.510">or...all these things are made possible by...being a very useful</p>
+      <p begin="00:16:57.510" end="00:17:02.690">products and I guess so going back to was trying to...</p>
+      <p begin="00:17:02.690" end="00:17:07.640">I'm talking about going from windows to...ios device so right</p>
+      <p begin="00:17:07.640" end="00:17:12.540">now what we have is taking existing ios and bring it to windows but</p>
+      <p begin="00:17:12.540" end="00:17:17.030">from a developers perspective I'm talking about the experience of writing code</p>
+      <p begin="00:17:17.030" end="00:17:21.590">in visual studio and getting really nice design-time that all</p>
+      <p begin="00:17:21.590" end="00:17:25.840">...cross-platform story there's talk here about and,</p>
+      <p begin="00:17:25.840" end="00:17:28.680">the idea is that you can write for android ios</p>
+      <p begin="00:17:28.680" end="00:17:31.750">or windows directly and if you can compile out</p>
+      <p begin="00:17:31.750" end="00:17:35.950">...onto the metals so to speak for objective</p>
+      <p begin="00:17:35.950" end="00:17:39.420">see you can stay within visual studio</p>
+      <p begin="00:17:39.420" end="00:17:43.920">on windows doing your cross complaint cross-platform development until you're ready</p>
+      <p begin="00:17:43.920" end="00:17:48.710">to deploy one last build would actually go through the...to get your onto the</p>
+      <p begin="00:17:48.710" end="00:17:53.470">iowa's store so that would be but that would just be copying all your source</p>
+      <p begin="00:17:53.470" end="00:17:58.010">code all your files bringing it over to x code compiling building</p>
+      <p begin="00:17:58.010" end="00:18:02.990">optimizing there will we the point right expectations that people generate</p>
+      <p begin="00:18:02.990" end="00:18:07.900">visual studio projects for it and check those projects into...source repository so they can make</p>
+      <p begin="00:18:07.900" end="00:18:13.120">modifications how are they like in visual studio and then when they pull on their</p>
+      <p begin="00:18:13.120" end="00:18:16.620">...computer yes they can just build...next node n</p>
+      <p begin="00:18:16.620" end="00:18:21.370">continue got so that goes the through...emulator question right you're not going</p>
+      <p begin="00:18:21.370" end="00:18:26.200">to be deploying to...ios device from windows because that's illegal or maybe that's</p>
+      <p begin="00:18:26.200" end="00:18:30.580">not the reason it's not the problem we're trying to solve the problem trying to solve is to help people</p>
+      <p begin="00:18:30.580" end="00:18:34.790">right great windows application and not just games himmy sorry...just</p>
+      <p begin="00:18:34.790" end="00:18:39.570">games null not all is a lot outside...now what about what is interesting because when you</p>
+      <p begin="00:18:39.570" end="00:18:44.450">say not just games as himmy mention games are really self-contained</p>
+      <p begin="00:18:44.450" end="00:18:47.500">...easier problem somerset but when you have</p>
+      <p begin="00:18:47.500" end="00:18:49.240">an app that's like very platform?</p>
+      <p begin="00:18:50.580" end="00:18:56.040">You know, ties into a bunch of the api that the hardware supports how does</p>
+      <p begin="00:18:56.040" end="00:19:00.940">that work when I want to bring...of...you said you've done a lot of work yes...so</p>
+      <p begin="00:19:00.940" end="00:19:04.880">...if we if we step back and just keep reminding ourselves that you are writing a windows</p>
+      <p begin="00:19:04.880" end="00:19:08.360">app you're just using objective see for certain bits and bobs of that</p>
+      <p begin="00:19:08.360" end="00:19:12.900">application...now you can imagine all sorts of permutations?</p>
+      <p begin="00:19:12.900" end="00:19:16.610">Stem from that you could imagine writing your ui using</p>
+      <p begin="00:19:16.610" end="00:19:20.610">...but keeping some of the back-end logic, you know, just</p>
+      <p begin="00:19:20.610" end="00:19:25.900">...fancy networking...really proud of it really works well...be objectives you can bring that and you can link the</p>
+      <p begin="00:19:25.900" end="00:19:30.230">two together you can go the other way you could have your you are using objective...and you could have all the</p>
+      <p begin="00:19:30.230" end="00:19:35.180">back-end windows...custom staffin csharp or cplus-plus</p>
+      <p begin="00:19:35.180" end="00:19:39.040">and you can tie all these things together so you're not you're not limited you're not writing inside</p>
+      <p begin="00:19:39.040" end="00:19:43.990">...sandbox are not limited to certain...objective see compatible api you have you are</p>
+      <p begin="00:19:43.990" end="00:19:49.850">writing windows application...I could have objected see under-age...five.</p>
+      <p begin="00:19:49.850" end="00:19:53.220">...as of universal windows app.</p>
+      <p begin="00:19:53.220" end="00:19:54.760">Someday technically,</p>
+      <p begin="00:19:54.760" end="00:19:59.830">technically you could...because...adaptor winner...the middle...from and html</p>
+      <p begin="00:19:59.830" end="00:20:04.650">...but that's the beauty of the avi...that's why we worked so hard...badly and you can certainly</p>
+      <p begin="00:20:04.650" end="00:20:09.540">invoke web views within the context of either and objectives the ios you likeit,</p>
+      <p begin="00:20:09.540" end="00:20:12.780">for example, application...</p>
+      <p begin="00:20:12.780" end="00:20:18.970">there are no questions which I find really unbelievable this is channel my...</p>
+      <p begin="00:20:18.970" end="00:20:25.050">But, so, now you're stuck with me...but.</p>
+      <p begin="00:20:25.050" end="00:20:28.720">Let's continue to talk one of the questions I have...I really...curious about</p>
+      <p begin="00:20:28.720" end="00:20:33.100">...engineering perspective what was...hard was this</p>
+      <p begin="00:20:34.450" end="00:20:39.390">...we don't sell them seldom would really think about the and how much time did you spend</p>
+      <p begin="00:20:39.390" end="00:20:43.560">on this...fortunately a lot</p>
+      <p begin="00:20:43.560" end="00:20:50.120">...hard problem a lot of the really hard problems I should say we sort of outsourced to...</p>
+      <p begin="00:20:50.120" end="00:20:52.690">We made a few large stones...getting moi.</p>
+      <p begin="00:20:54.400" end="00:20:57.770">Not to say...was trivial at all no it's</p>
+      <p begin="00:20:57.770" end="00:21:01.860">a very large very complicated project and...</p>
+      <p begin="00:21:01.860" end="00:21:07.990">they reach out and actually say thanks to shane...who actually worked weekends</p>
+      <p begin="00:21:07.990" end="00:21:13.050">we started really I would say like around christmas time wow so it really,</p>
+      <p begin="00:21:13.050" end="00:21:18.200">really is a major accomplishment...all working...really proud of...I think it's going to be a great</p>
+      <p begin="00:21:18.200" end="00:21:22.980">products we have a ways to go we really want to make sure everybody understands that we really do</p>
+      <p begin="00:21:22.980" end="00:21:26.720">...and...you assad to look at it have at least for</p>
+      <p begin="00:21:26.720" end="00:21:31.090">...because what when I look at what we have today with regards to out syntax</p>
+      <p begin="00:21:31.090" end="00:21:36.140">...highlighting a lot of the...the bagging and all that like literally right here</p>
+      <p begin="00:21:36.140" end="00:21:40.170">where you have is james dean doing some first of all we had a rocking</p>
+      <p begin="00:21:40.170" end="00:21:44.810">...that we started with...gives...came in and said okay, yeah, we're going to bring all the...</p>
+      <p begin="00:21:44.810" end="00:21:49.450">compilers all that stuff but we were building on top of visual studios so all of the</p>
+      <p begin="00:21:49.450" end="00:21:54.300">...the taj all those things where there right so they did some really hard work</p>
+      <p begin="00:21:54.300" end="00:21:58.080">in a very short time if you look at how much they accomplished, you know,</p>
+      <p begin="00:21:58.080" end="00:22:02.250">it's not that long...out but it's because they were building on top of</p>
+      <p begin="00:22:02.250" end="00:22:07.240">a very strong foundation...to use extremely extensible it's very flexible and,</p>
+      <p begin="00:22:07.240" end="00:22:12.550">do like literally I would see that yeah, we're going to get syntax highlighting next week...any</p>
+      <p begin="00:22:12.550" end="00:22:17.040">which is like all like it's mind-boggling to thing they could do it thanks bye-bye now</p>
+      <p begin="00:22:18.420" end="00:22:22.440">...for the language syntax ...asia...what's your</p>
+      <p begin="00:22:22.440" end="00:22:27.010">point of even on the or even but outside the work ...</p>
+      <p begin="00:22:27.010" end="00:22:32.410">have done our team has put...a ton of work to make sure that experience is really,</p>
+      <p begin="00:22:32.410" end="00:22:37.290">really perform...really, really compatible so when you schools through through ui you're not going</p>
+      <p begin="00:22:37.290" end="00:22:40.020">to get lags and jitter and that sort of thing things are going</p>
+      <p begin="00:22:40.020" end="00:22:44.780">to run really well really fascinating to look great and the only doer to</p>
+      <p begin="00:22:44.780" end="00:22:49.940">...demos and everything so everything being map it onto the act...everything was really,</p>
+      <p begin="00:22:49.940" end="00:22:51.630">really quick?</p>
+      <p begin="00:22:51.630" end="00:22:56.910">This early on right so I think the only thing we really need to</p>
+      <p begin="00:22:56.910" end="00:23:02.350">worry about from down to one this goes out is really stress testing everything</p>
+      <p begin="00:23:02.350" end="00:23:07.300">...that we really, really optimize and we get the right security attributes encodes what</p>
+      <p begin="00:23:07.300" end="00:23:11.910">...you are right mass so thank you for asking questions to</p>
+      <p begin="00:23:11.910" end="00:23:17.020">...want to know...see access...a wind thirty-two or only when</p>
+      <p begin="00:23:17.020" end="00:23:21.970">...you are...windows application whatever you can call from a windows out</p>
+      <p begin="00:23:21.970" end="00:23:26.390">...objectives the is you can access both native see out that's how</p>
+      <p begin="00:23:26.390" end="00:23:28.570">...runtime implemented and,</p>
+      <p begin="00:23:28.570" end="00:23:33.010">then...because again we have the avi so you...david want to know</p>
+      <p begin="00:23:33.010" end="00:23:38.480">are you worried about apple having a negative reaction to the release of this product I</p>
+      <p begin="00:23:38.480" end="00:23:43.920">think so-called...across platforms has been at...since probably the first programming languages</p>
+      <p begin="00:23:43.920" end="00:23:48.780">...and that's really what we're talking about...reusing your code</p>
+      <p begin="00:23:48.780" end="00:23:55.780">your the developer and what you do with your code is your business it's yours you wrote?</p>
+      <p begin="00:23:55.780" end="00:24:00.150">Clank compiler...has like that say there's nothing beats beyond,</p>
+      <p begin="00:24:00.150" end="00:24:05.660">beyond that there's nothing in there to...can come back and say here's we have you implemented...api</p>
+      <p begin="00:24:05.660" end="00:24:10.040">is,...like, you know, that's all right we have the submit that but then it's got a buttery about</p>
+      <p begin="00:24:10.040" end="00:24:14.220">...vast so there's not much that you can go out there right and,</p>
+      <p begin="00:24:14.220" end="00:24:18.650">again,...been on the market for probably five six months now, yeah,</p>
+      <p begin="00:24:18.650" end="00:24:24.090">they were before holidays so you know,...one of those things that we're not I think they do</p>
+      <p begin="00:24:24.090" end="00:24:26.520">...has been done people can common try</p>
+      <p begin="00:24:26.520" end="00:24:31.860">the technologies and I hope we can all collaborate because these makes it better for everybody apps so you know,</p>
+      <p begin="00:24:31.860" end="00:24:34.990">hopefully everybody will be happy.</p>
+      <p begin="00:24:34.990" end="00:24:42.070">...can you...csharp bs check and...poland makin compile native?</p>
+      <p begin="00:24:42.070" end="00:24:44.530">...again slow-motion moi.</p>
+      <p begin="00:24:44.530" end="00:24:49.720">So,...songwriter csharp in visual studio...into...and compile</p>
+      <p begin="00:24:49.720" end="00:24:54.590">...so maybe if you...about summary think he's talking about the</p>
+      <p begin="00:24:54.590" end="00:25:01.000">...also...would have a...talk and now.</p>
+      <p begin="00:25:01.000" end="00:25:05.330">Can apple...this out using visual studio code now</p>
+      <p begin="00:25:05.330" end="00:25:09.830">...it right now we're just announcing support for visual studio</p>
+      <p begin="00:25:09.830" end="00:25:14.010">twenty-fifth gap me visual studio code to be clear is really</p>
+      <p begin="00:25:14.010" end="00:25:17.840">a text editor that supports a couple languages with...you know,</p>
+      <p begin="00:25:17.840" end="00:25:22.020">deeper model so debugging and?</p>
+      <p begin="00:25:22.020" end="00:25:25.420">Can apple...this out actually visual studio code already</p>
+      <p begin="00:25:25.420" end="00:25:29.060">...what...see features are available which</p>
+      <p begin="00:25:29.060" end="00:25:33.440">objective see features are available name them which ones aren't probably</p>
+      <p begin="00:25:33.440" end="00:25:37.200">...much...up with...we support everything</p>
+      <p begin="00:25:37.200" end="00:25:42.700">...we have...support through the runtime in the code generation everything...that works just fine</p>
+      <p begin="00:25:42.700" end="00:25:48.920">we it just works that's a value prop right we are a...way at</p>
+      <p begin="00:25:48.920" end="00:25:54.290">locks all of...and that's like classes and functions those rn like</p>
+      <p begin="00:25:54.290" end="00:25:58.090">...foundation as and but I mean...see the language you</p>
+      <p begin="00:25:58.090" end="00:26:02.410">have the clank finance exactly there is that's not really a question, yeah,</p>
+      <p begin="00:26:02.410" end="00:26:06.570">...we with tessa particularly with planks code...for</p>
+      <p begin="00:26:06.570" end="00:26:12.410">...absolutely...lately and it works very beautiful censors</p>
+      <p begin="00:26:12.410" end="00:26:17.320">notifications they do a lot of mapping...that you would think of...there because,</p>
+      <p begin="00:26:17.320" end="00:26:19.800">for example, notifications...api that you think about</p>
+      <p begin="00:26:19.800" end="00:26:24.230">...platform specific local notification gets mapped automatically</p>
+      <p begin="00:26:24.230" end="00:26:27.660">...purchases another one that they map automatically so they actually</p>
+      <p begin="00:26:27.660" end="00:26:31.360">...later listen to those api implemented natively and you can use</p>
+      <p begin="00:26:31.360" end="00:26:36.140">...existing code without having to go there so there's a lot implemented their</p>
+      <p begin="00:26:36.140" end="00:26:39.040">...want to know does it doesn't mean it is now possible</p>
+      <p begin="00:26:39.040" end="00:26:44.330">report react needed to windows...I don't want to make promises are comments about</p>
+      <p begin="00:26:44.330" end="00:26:47.060">...I haven't seen yet tenacity...</p>
+      <p begin="00:26:48.370" end="00:26:48.870">Maybe.</p>
+      <p begin="00:26:49.920" end="00:26:56.270">Is that...answer I gradients assures online...we...go to</p>
+      <p begin="00:26:56.270" end="00:27:01.520">...slash island woodside...cumulative...right on</p>
+      <p begin="00:27:01.520" end="00:27:07.990">and follow blog if it doesn't work that's the right answer can you explain something about the candy</p>
+      <p begin="00:27:07.990" end="00:27:11.830">crush game that was mentioned was the current windows phone...version</p>
+      <p begin="00:27:11.830" end="00:27:16.240">created with this tooling or is this a upfront upcoming phone version?</p>
+      <p begin="00:27:16.240" end="00:27:19.560">So, for can...we did it for windows phone aid is</p>
+      <p begin="00:27:19.560" end="00:27:25.180">I hey let's go try it out let's make sure this technology works going forward app all they</p>
+      <p begin="00:27:25.180" end="00:27:30.200">knew ...the new language stuff we've done...going forward we want to focus...ten but can the</p>
+      <p begin="00:27:30.200" end="00:27:35.050">...windows phone ages because app...tried out and we wanted for the holidays and</p>
+      <p begin="00:27:35.050" end="00:27:42.160">there wasn't going to be a windows stanford holidays so that's what we did great populate too</p>
+      <p begin="00:27:42.160" end="00:27:46.760">much they're I mean it's such a weird game and the people behind it</p>
+      <p begin="00:27:46.760" end="00:27:51.570">or they're pretty brilliant it's a couple billion-dollar frenchie so I'm not going to</p>
+      <p begin="00:27:51.570" end="00:27:58.960">arguebetween...laughing to the...absolutely can I...windows app and</p>
+      <p begin="00:27:58.960" end="00:28:03.140">objectives...not porting just writing native...see instead of</p>
+      <p begin="00:28:03.140" end="00:28:07.890">...csharp gaps...that's real story the again reduce compile top-to-bottom</p>
+      <p begin="00:28:07.890" end="00:28:12.930">...to the code that runs...with their run-time just like you would write a cplus-plus up</p>
+      <p begin="00:28:12.930" end="00:28:16.940">...can you can go into visual studio you can go file new file</p>
+      <p begin="00:28:16.940" end="00:28:21.310">...are sorry of addicts add new item make a dot and file</p>
+      <p begin="00:28:21.310" end="00:28:24.890">...town from their absolutely but I guess the other way to think about us questions</p>
+      <p begin="00:28:24.890" end="00:28:29.380">what he's really asking file new universal</p>
+      <p begin="00:28:29.380" end="00:28:34.330">windows that underneath objectives see and I right the whole thing and objectives</p>
+      <p begin="00:28:34.330" end="00:28:39.180">...we actually do have that behaviors well actually one of the last things before we came here was one of our</p>
+      <p begin="00:28:40.980" end="00:28:42.640">...template I guess,</p>
+      <p begin="00:28:42.640" end="00:28:47.150">yeah, it's a visual studio template to create and app that subjective see exactly what you're</p>
+      <p begin="00:28:47.150" end="00:28:51.970">...you can just press a button and get a bare-bones object to see project so now I</p>
+      <p begin="00:28:51.970" end="00:28:56.920">have to say this I my own personal biases I think objective ce is</p>
+      <p begin="00:28:57.960" end="00:29:02.550">...ugly sizzling of...see...like</p>
+      <p begin="00:29:02.550" end="00:29:07.530">a small talk maybe you've got this is an insane language?</p>
+      <p begin="00:29:07.530" end="00:29:09.250">...it's nice</p>
+      <p begin="00:29:09.250" end="00:29:12.610">...that the strict superset epsy it's nice from that perspective.</p>
+      <p begin="00:29:13.900" end="00:29:17.340">But, here that people are used...not...like</p>
+      <p begin="00:29:17.340" end="00:29:22.210">there's scientific data says the to...you know, keys...your keyboard</p>
+      <p begin="00:29:22.210" end="00:29:27.100">...the brackets so-if you want-to even it out go...cone some, you know,</p>
+      <p begin="00:29:27.100" end="00:29:31.170">once a year for a week and...it out enough that you'll be even for</p>
+      <p begin="00:29:31.170" end="00:29:36.490">...year and I'm a real fan of objective...I actually like it a lot of the...ask</p>
+      <p begin="00:29:36.490" end="00:29:42.170">...but out...answer...beat the cold people tend to</p>
+      <p begin="00:29:42.170" end="00:29:46.250">love the most is the stuff they've...right and if it already written...and it's</p>
+      <p begin="00:29:46.250" end="00:29:51.740">...it's beautiful to them then that's the called really want to help in...okay,</p>
+      <p begin="00:29:51.740" end="00:29:55.160">yeah, absolutely that's well-served but isn't there sort of</p>
+      <p begin="00:29:55.160" end="00:30:00.310">a cognitive mismatch between the way that you compose</p>
+      <p begin="00:30:00.310" end="00:30:04.460">and objective see if you're coming at it from see</p>
+      <p begin="00:30:04.460" end="00:30:09.370">even see you spend all your targets the subject isn't it like a conceptual...</p>
+      <p begin="00:30:09.370" end="00:30:13.790">strange that's still an object-oriented language just like cplus-plus and it's a strict in</p>
+      <p begin="00:30:13.790" end="00:30:20.110">an office of formal superset of cplus-plus but it's definitely a of c so I think that</p>
+      <p begin="00:30:20.110" end="00:30:25.020">...at keeping in the theme of everything that we're supposed to be striving for windows</p>
+      <p begin="00:30:25.020" end="00:30:29.140">tanned word almost language agnostic we really don't we're not religious about it</p>
+      <p begin="00:30:29.140" end="00:30:34.260">...languages whatever you...will generate the code for it that's what we're trying to do fortunes</p>
+      <p begin="00:30:34.260" end="00:30:38.860">...for anything on windows great and...need to wrap up the most important thing is that we do love</p>
+      <p begin="00:30:38.860" end="00:30:43.560">objective...visual studio love object dasi windows love...see,</p>
+      <p begin="00:30:43.560" end="00:30:46.610">come on, over and rights maps for windows</p>
+      <p begin="00:30:46.610" end="00:30:52.230">...favorite language rock-and-roll thanks for coming on thank you thank you.</p>
+
+    </div>
+  </body>
+</tt>

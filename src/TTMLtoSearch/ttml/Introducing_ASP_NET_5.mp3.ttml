@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.880</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.240" end="00:00:08.070">Hello, friends.</p>
+      <p begin="00:00:08.070" end="00:00:13.080">That was sad so let me just share a little bit of information that's very important you understand</p>
+      <p begin="00:00:13.080" end="00:00:15.920">that the people who are requiring this recorded.</p>
+      <p begin="00:00:17.040" end="00:00:19.410">Don't hear you very well?</p>
+      <p begin="00:00:19.410" end="00:00:21.640">And, I've been watching some videos of myself and</p>
+      <p begin="00:00:21.640" end="00:00:25.840">...hunter and it looks really sad because wilt</p>
+      <p begin="00:00:25.840" end="00:00:31.600">...make something we'll say something very...great pithy something very wise as we do</p>
+      <p begin="00:00:31.600" end="00:00:37.280">...then it looks like it doesn't land.</p>
+      <p begin="00:00:37.280" end="00:00:42.070">we need to be louder so that we don't look like idiots in the recorded version.</p>
+      <p begin="00:00:42.070" end="00:00:43.740">Homo all moi.</p>
+      <p begin="00:00:47.500" end="00:00:51.940">...think...going to my wife that part.</p>
+      <p begin="00:00:51.940" end="00:00:56.100">I am...handsome in this is my bosco hunter and we are the lesser scott's.</p>
+      <p begin="00:00:56.100" end="00:01:00.240">And, we are here to talk about the introduction to sp net five.</p>
+      <p begin="00:01:00.240" end="00:01:03.990">And, I want to point out this is part one of to part</p>
+      <p begin="00:01:03.990" end="00:01:08.880">...is tomorrow morning at nine with damian edwards is going to do a deep divx so</p>
+      <p begin="00:01:08.880" end="00:01:13.210">if we're going to be kind of one hundred and into joiner level here and then we get to</p>
+      <p begin="00:01:13.210" end="00:01:15.430">damning we're just going to keep going off into the sky where</p>
+      <p begin="00:01:15.430" end="00:01:20.200">...a big breath thing they were going across a lot of topics in not go super deepening those topics</p>
+      <p begin="00:01:20.200" end="00:01:24.960">...and tamar...go super deep and a couple topics.</p>
+      <p begin="00:01:24.960" end="00:01:30.230">Okay, so, do make sure that you take a picture of this q r code and</p>
+      <p begin="00:01:30.230" end="00:01:35.140">...for posterity for the future...uses q r codes?</p>
+      <p begin="00:01:35.140" end="00:01:41.540">...today.</p>
+      <p begin="00:01:41.540" end="00:01:44.460">So, this is all about sp dot net five the modern</p>
+      <p begin="00:01:44.460" end="00:01:49.930">web and why we made this before we even get into...five let's you're going to go right to</p>
+      <p begin="00:01:49.930" end="00:01:54.910">...let's talk about first of anybody's...</p>
+      <p begin="00:01:54.910" end="00:02:05.370">We just ship via twenty fifteen rc yesterday for you guys.</p>
+      <p begin="00:02:05.370" end="00:02:08.040">Asp...five is not rc is if</p>
+      <p begin="00:02:08.040" end="00:02:11.960">...play with you'll see it says beta for and that's because we are a little bit behind</p>
+      <p begin="00:02:11.960" end="00:02:17.220">the via schedule so we expect I don't know when they're in our team but I know we're in</p>
+      <p begin="00:02:17.220" end="00:02:20.740">our tm basically one update behind them so whenever bs</p>
+      <p begin="00:02:20.740" end="00:02:22.650">...m will do and,</p>
+      <p begin="00:02:22.650" end="00:02:28.220">our team about two or three months after that said we know a lot of folks are building web</p>
+      <p begin="00:02:28.220" end="00:02:33.270">...today and even if you're not...five and you're still usingin the</p>
+      <p begin="00:02:33.270" end="00:02:34.460">cfive.</p>
+      <p begin="00:02:34.460" end="00:02:39.490">With api to signal...three web forms there's a bunch of updates in the</p>
+      <p begin="00:02:39.490" end="00:02:41.760">ftwenty fifteen rc that effect you guys</p>
+      <p begin="00:02:41.760" end="00:02:46.500">as well and we're...to scroll through and show a couple these is a blog post up on</p>
+      <p begin="00:02:46.500" end="00:02:51.330">...web the blog...you go there you can read all these changes there's some bugs in</p>
+      <p begin="00:02:51.330" end="00:02:57.100">...twenty fifteen rc imagine that there's work-arounds for the bugs in this blog post as</p>
+      <p begin="00:02:57.100" end="00:03:00.650">well as the biggest thing is we did</p>
+      <p begin="00:03:00.650" end="00:03:05.130">...support so even if you using web forms are in the cfive.</p>
+      <p begin="00:03:05.130" end="00:03:09.880">...api to you get all the new csharp all-new vb features this is</p>
+      <p begin="00:03:09.880" end="00:03:14.130">actually really cool here's a blurry screenshot here this is a</p>
+      <p begin="00:03:14.130" end="00:03:19.510">web forms page...seven there is using a new roslyn.</p>
+      <p begin="00:03:19.510" end="00:03:23.360">Csharp language feature so there are cool</p>
+      <p begin="00:03:23.360" end="00:03:27.780">and interesting stuff happening web form...got a sank model pining with</p>
+      <p begin="00:03:27.780" end="00:03:31.970">...all the http to...running on system web which are</p>
+      <p begin="00:03:31.970" end="00:03:37.960">...cfive jan and search they get ...they get</p>
+      <p begin="00:03:37.960" end="00:03:44.150">...should be to supports, yeah,actually...model...for web forms so anybody...building</p>
+      <p begin="00:03:44.150" end="00:03:49.460">...the current...there is love for those bits in this release don't forget that as well and we do know</p>
+      <p begin="00:03:49.460" end="00:03:54.390">that's a little bit confusing that it feels like the number five is a greater number</p>
+      <p begin="00:03:54.390" end="00:03:58.860">than four-point-six but it is a parallel track it's the difference</p>
+      <p begin="00:03:58.860" end="00:04:03.770">in for framework and the core framework we'll talk about those differences as we get into little more</p>
+      <p begin="00:04:03.770" end="00:04:09.820">detail but I just...make us understand that it's been a four-six kind of makes the world</p>
+      <p begin="00:04:09.820" end="00:04:14.790">...as a lot of really cool stuff happening so, this is happening in parallel right.</p>
+      <p begin="00:04:14.790" end="00:04:20.600">Okay, let's talk about asking at five ...I don't...of...today we have lots of demos and we...a lot of</p>
+      <p begin="00:04:20.600" end="00:04:23.460">time on slides...you want to talk about some of the design</p>
+      <p begin="00:04:23.460" end="00:04:28.220">...but a around estimate five one of them is we totally modular we build</p>
+      <p begin="00:04:28.220" end="00:04:34.350">...dot net back in the day the idea there was...the kitchen-sink in here</p>
+      <p begin="00:04:34.350" end="00:04:39.010">and have every feature turned on by default because we're trying to bring web developers from</p>
+      <p begin="00:04:39.010" end="00:04:43.320">our desktop developers into web and we would make a simple</p>
+      <p begin="00:04:43.320" end="00:04:48.030">as possible now we move for the future and now we...make web apps as fast as</p>
+      <p begin="00:04:48.030" end="00:04:51.910">...so now you can turn on our office</p>
+      <p begin="00:04:51.910" end="00:04:57.690">...you want and will show that the demos another thing is...network for the cloud and,</p>
+      <p begin="00:04:57.690" end="00:05:00.870">microsoft and we...make it even easier...to take</p>
+      <p begin="00:05:00.870" end="00:05:04.520">...application in publisher to add your inhabit work when you use</p>
+      <p begin="00:05:04.520" end="00:05:09.540">features like scale-up and scale down and stuff like that so there's some sort of changes in the framework to do</p>
+      <p begin="00:05:09.540" end="00:05:15.190">you with this faster development cycle on my machine building and</p>
+      <p begin="00:05:15.190" end="00:05:17.660">...five app...a web forms app</p>
+      <p begin="00:05:17.660" end="00:05:22.950">...change and recompile and stuff is like a second cycle?</p>
+      <p begin="00:05:22.950" end="00:05:28.340">We've got that down to two seconds right now on estimate five and we think we maybe can even</p>
+      <p begin="00:05:28.340" end="00:05:33.640">those...the future I'm going to...everybody my laptop has been head every version visual studio</p>
+      <p begin="00:05:33.640" end="00:05:37.840">...for like the last six months...fast even with...five</p>
+      <p begin="00:05:37.840" end="00:05:42.760">...couple generations old but if you download the rc you should see the two-second thing that we're talking</p>
+      <p begin="00:05:42.760" end="00:05:48.590">about right cross-platform so...you can buildings pfive application you can run it on</p>
+      <p begin="00:05:48.590" end="00:05:53.380">windows mac and linux because of that that's why you see this choose your editors</p>
+      <p begin="00:05:53.380" end="00:05:57.840">and tools above so one of the things we're going to show today a little bit of an essential lot more</p>
+      <p begin="00:05:57.840" end="00:05:59.750">on friday is pretty much anything</p>
+      <p begin="00:05:59.750" end="00:06:04.640">you can do in visual studio we have a way to do on command-line and that's because if you're on a</p>
+      <p begin="00:06:04.640" end="00:06:10.110">...linux machine there is no visual studio...code we just announced yesterday right but,</p>
+      <p begin="00:06:10.110" end="00:06:15.770">it's an editor and this will cause a lot of ...a confusion consternation where people will say hey I like</p>
+      <p begin="00:06:15.770" end="00:06:20.690">visual studio code winning...this fancy new visual studio feature in visual studio code</p>
+      <p begin="00:06:20.690" end="00:06:24.860">missing the point if you ask those kinda questions...not going to...any visual designers</p>
+      <p begin="00:06:24.860" end="00:06:28.980">in visual studio code if you want to know how to do this thing in visual coding</p>
+      <p begin="00:06:28.980" end="00:06:33.950">to the command-line because that's who that's for but if you are and id person you're going</p>
+      <p begin="00:06:33.950" end="00:06:39.190">to the id and this features that we're going to show you were going to spend some time in text files</p>
+      <p begin="00:06:39.190" end="00:06:43.810">doing things the command-line for all of those things there is also a gesture a</p>
+      <p begin="00:06:43.810" end="00:06:48.810">ui gesture within the studio so he might prefer to go to the command-line and type,</p>
+      <p begin="00:06:48.810" end="00:06:53.610">you know, restore whatever someone else might refer prefer to write click on something and</p>
+      <p begin="00:06:53.610" end="00:06:57.360">solution explore into the same gesture but the essence is the same so we're going</p>
+      <p begin="00:06:57.360" end="00:07:01.590">to show you the ui layer and then what's underneath and the nice thing of</p>
+      <p begin="00:07:01.590" end="00:07:07.460">...that there's no black boxes anymore right we're not going to take the visual...oop that...be a</p>
+      <p begin="00:07:07.460" end="00:07:11.580">...actually that's pretty I would hate to call it text studio it's not quite</p>
+      <p begin="00:07:11.580" end="00:07:16.830">as cool command-line studio command-line studio the other thing is we want we want arithmetic</p>
+      <p begin="00:07:16.830" end="00:07:21.380">the fast is it possibly can be so there's a lot of work has been done in</p>
+      <p begin="00:07:21.380" end="00:07:25.870">...five to make it super-fast and scale a lot more...today so, for example,</p>
+      <p begin="00:07:25.870" end="00:07:30.820">...estimate five application...ninety percent less memory than a existing...</p>
+      <p begin="00:07:30.820" end="00:07:37.000">application today and, that's because we stripped a bunch of stuff out and...bunch of stuff to the point that we</p>
+      <p begin="00:07:37.000" end="00:07:40.770">are comparably or better than no js and in many</p>
+      <p begin="00:07:40.770" end="00:07:46.010">...situations now so that's kind of core tenets on is it five okay and,</p>
+      <p begin="00:07:46.010" end="00:07:50.490">then are ... is a share final slide that nice we are five minutes in we</p>
+      <p begin="00:07:50.490" end="00:07:56.490">are last slide is a developer conference after all there's actually a person from a popular news</p>
+      <p begin="00:07:56.490" end="00:08:03.790">site who was complaining about all the code that was being showed in the keynote?</p>
+      <p begin="00:08:03.790" end="00:08:06.930">Thank you...here you on the tape yeah,</p>
+      <p begin="00:08:06.930" end="00:08:19.250">I mean this is a developer conference this next year we're going to put on the microsoft powerpoint conference just for those people that.</p>
+      <p begin="00:08:19.250" end="00:08:19.870">Yes,</p>
+      <p begin="00:08:19.870" end="00:08:25.580">so, these circle parts in yellow are the parts of asp net and,</p>
+      <p begin="00:08:25.580" end="00:08:30.030">dot net...open-source and there are more than there are not all of the jitter</p>
+      <p begin="00:08:30.030" end="00:08:34.490">all the compilers all the core...dot...core framework itself is</p>
+      <p begin="00:08:34.490" end="00:08:37.720">...net...parts four and five</p>
+      <p begin="00:08:37.720" end="00:08:42.400">...signal are all open-source you notice the pieces that aren't are some of</p>
+      <p begin="00:08:42.400" end="00:08:46.500">...pieces the pieces chip with windows the pieces for which there are no good reasons for them to get the</p>
+      <p begin="00:08:46.500" end="00:08:51.160">open-source even the ones...circled the source code is available like</p>
+      <p begin="00:08:51.160" end="00:08:56.480">...four-point-six for all of us spatially you can get these source its source open right reference</p>
+      <p begin="00:08:56.480" end="00:09:00.510">source...the reason there is we did open-source code and put a lot...source code for</p>
+      <p begin="00:09:00.510" end="00:09:04.570">dot net four-six up and get up the challenges we can't really think</p>
+      <p begin="00:09:04.570" end="00:09:10.050">...contribution because if you change anything that framework something breaks somewhere and,</p>
+      <p begin="00:09:10.050" end="00:09:12.270">you know, you guys all the rumah probably got,</p>
+      <p begin="00:09:12.270" end="00:09:16.050">you know, a for five-one or for five-two...feature head against the wall and</p>
+      <p begin="00:09:16.050" end="00:09:21.510">in work and that's why we don't take changes on that thing and that's actually a really great point for why</p>
+      <p begin="00:09:21.510" end="00:09:26.750">we've architected this the way it is that you want to be able to take application a and put on a machine and</p>
+      <p begin="00:09:26.750" end="00:09:31.370">...and someone else another apartment makes app be you don't want to have</p>
+      <p begin="00:09:31.370" end="00:09:34.470">...we don't have dot...for five-two on that machine we have four</p>
+      <p begin="00:09:34.470" end="00:09:39.260">...were afraid to take this that goes away happy and app bacon</p>
+      <p begin="00:09:39.260" end="00:09:41.850">live together with their own private builds of the</p>
+      <p begin="00:09:41.850" end="00:09:45.730">...in framework private builds of whatever they like.</p>
+      <p begin="00:09:45.730" end="00:09:49.860">So, let's switch over and that's...</p>
+      <p begin="00:09:49.860" end="00:09:54.680">The aso a pretty exciting announcements announcement here this is a new site we have</p>
+      <p begin="00:09:54.680" end="00:10:01.750">called asp net dot...studies business...fancier your</p>
+      <p begin="00:10:01.750" end="00:10:09.160">...just...canada how do I use the use a...use this...the...</p>
+      <p begin="00:10:09.160" end="00:10:15.170">Only manages use the...on this thing attract pad is terrible.</p>
+      <p begin="00:10:15.170" end="00:10:19.610">This is doctor sp net and this is powered by read the</p>
+      <p begin="00:10:19.610" end="00:10:21.550">...which is stinks.</p>
+      <p begin="00:10:21.550" end="00:10:25.870">Based mark down style restructured text</p>
+      <p begin="00:10:25.870" end="00:10:33.920">continuous integration for...doctor and get up not cool check this out.</p>
+      <p begin="00:10:33.920" end="00:10:38.880">Say now your first application amac.</p>
+      <p begin="00:10:40.000" end="00:10:43.460">Lovely...and then at the bottom fork these...</p>
+      <p begin="00:10:43.460" end="00:10:48.140">write the check this out click on the version of the...</p>
+      <p begin="00:10:48.140" end="00:10:52.120">I want to...or I want to epub want to read the kindle.</p>
+      <p begin="00:10:52.120" end="00:10:54.770">Click on pbs and now you're bringing down the</p>
+      <p begin="00:10:54.770" end="00:10:59.730">...and when the changes get made in get hub that automatically...flows through so we're given that a</p>
+      <p begin="00:10:59.730" end="00:11:03.240">try, yeah, once we feel is totally out we actually plan to publish those</p>
+      <p begin="00:11:03.240" end="00:11:12.390">...ourselves on some of the stores yet and we're going to...</p>
+      <p begin="00:11:12.390" end="00:11:15.140">Check it out nice.</p>
+      <p begin="00:11:15.140" end="00:11:16.560">All right much blank pages.</p>
+      <p begin="00:11:19.160" end="00:11:20.710">Nice there.</p>
+      <p begin="00:11:20.710" end="00:11:24.930">That pages intentionally left length.</p>
+      <p begin="00:11:24.930" end="00:11:29.360">All books start with...idling pages I don't know why kill trees.</p>
+      <p begin="00:11:29.360" end="00:11:32.180">...a big it's big tree lobby.</p>
+      <p begin="00:11:32.180" end="00:11:36.130">As we were saying earlier ...at five is</p>
+      <p begin="00:11:36.130" end="00:11:41.140">modular so this is what the minimal estimate application looks like today...</p>
+      <p begin="00:11:41.140" end="00:11:46.140">is hello world this is hello world and this looks like very similar to something that you would see in something like</p>
+      <p begin="00:11:46.140" end="00:11:50.030">...js now this isn't file new project default app this is empty</p>
+      <p begin="00:11:50.030" end="00:11:54.950">...boundary project empty application ok so this is a difference between the one...get bootstrap</p>
+      <p begin="00:11:54.950" end="00:11:59.930">...this is...now the difference between doing this and opening up web forms and going</p>
+      <p begin="00:11:59.930" end="00:12:06.730">into default spx and typing response dot write line hello world is what sir.</p>
+      <p begin="00:12:06.730" end="00:12:10.880">...because you never listen to me course not the difference between this</p>
+      <p begin="00:12:10.880" end="00:12:15.780">here and...default spx and saying response that right hello world yeah,</p>
+      <p begin="00:12:15.780" end="00:12:19.720">and, if you're doing default...in spx were in dc or any</p>
+      <p begin="00:12:19.720" end="00:12:24.020">those kinds of things there's a whole pile of modules are going to run inside of</p>
+      <p begin="00:12:24.020" end="00:12:27.870">...layers between un hello world layers for good reason</p>
+      <p begin="00:12:27.870" end="00:12:30.360">...the important thing when you hear that something is</p>
+      <p begin="00:12:30.360" end="00:12:33.600">improved in performance by to hundred-percent that doesn't mean that it</p>
+      <p begin="00:12:33.600" end="00:12:36.980">sucked hundred-percent before and we just found something</p>
+      <p begin="00:12:36.980" end="00:12:41.770">...literally trying to understand the difference between how do you build a mini-van which is extremely useful for caring</p>
+      <p begin="00:12:41.770" end="00:12:46.910">kids and groceries around and how do you build a motorcycle but use the same core concepts</p>
+      <p begin="00:12:46.910" end="00:12:51.840">we wanted to make...that five both of those things so you could...anything you want here</p>
+      <p begin="00:12:51.840" end="00:12:55.910">and, this is when you see some of these synthetic benchmarks against net and they're comparing,</p>
+      <p begin="00:12:55.910" end="00:12:59.660">you know, we're running modules who running routing we're running error pages</p>
+      <p begin="00:12:59.660" end="00:13:02.780">...bring all that technology...hello world</p>
+      <p begin="00:13:02.780" end="00:13:07.490">guess what we're going to slow right you can't benchmark node and web forms if node all they do is</p>
+      <p begin="00:13:07.490" end="00:13:14.410">handler...world and just kind of...eye-hand...as a lower?</p>
+      <p begin="00:13:14.410" end="00:13:17.560">This would be what you would compare but if but even that this</p>
+      <p begin="00:13:17.560" end="00:13:21.570">...handler, handler still going to have all that other stuff happen so you have basically nothing</p>
+      <p begin="00:13:21.570" end="00:13:26.550">right I have nothing so this would be this will give me a yells going to death right so normally you would get a nice air page</p>
+      <p begin="00:13:26.550" end="00:13:35.280">...if you're in this in a...much lower-level...page when I run this okay.</p>
+      <p begin="00:13:35.280" end="00:13:35.780">White.</p>
+      <p begin="00:13:37.550" end="00:13:42.410">you get basically a stack up and...that come from that came from our web post</p>
+      <p begin="00:13:42.410" end="00:13:48.280">okay from the host...this is the thing that holds the whole thing togetherboots the stack up said</p>
+      <p begin="00:13:48.280" end="00:13:52.770">hey the app blew up in my face okay here's...here's what I put out now</p>
+      <p begin="00:13:52.770" end="00:13:59.090">...interesting if you actually want a nice airbases show how modular we are let me-let me</p>
+      <p begin="00:13:59.090" end="00:14:02.330">jumping down here and...page.</p>
+      <p begin="00:14:02.330" end="00:14:06.010">...while he's doing that he could go to references</p>
+      <p begin="00:14:06.010" end="00:14:08.790">and add reference or add new get.</p>
+      <p begin="00:14:08.790" end="00:14:12.990">But, those references are there on the left-hand side so that's an example of there's the</p>
+      <p begin="00:14:12.990" end="00:14:15.440">...gesture...the text gesture</p>
+      <p begin="00:14:15.440" end="00:14:20.350">usual makes you happy the result is the same notice that when he type that diagnostics</p>
+      <p begin="00:14:20.350" end="00:14:25.560">...appeared on the right-hand side if you had done that with the ui gesture it-would appeared in the text</p>
+      <p begin="00:14:25.560" end="00:14:28.340">file make sense.</p>
+      <p begin="00:14:28.340" end="00:14:33.280">So, now I've got an emphasis use era page so basically enabled and air page</p>
+      <p begin="00:14:33.280" end="00:14:36.190">...the application...</p>
+      <p begin="00:14:36.190" end="00:14:38.350">...not ship with their page now we get a</p>
+      <p begin="00:14:38.350" end="00:14:46.280">sang on and you've got a bunch of stuff in here.</p>
+      <p begin="00:14:46.280" end="00:14:47.260">That doesn't do anything.</p>
+      <p begin="00:14:48.460" end="00:14:51.700">This is an empty app always...app there's</p>
+      <p begin="00:14:51.700" end="00:14:57.980">...doesn't have anything there's not much in thisthose a light up as we start filling up...stuff right but,</p>
+      <p begin="00:14:57.980" end="00:15:02.550">this is a nice change that you can not change replaces your page which you never could have</p>
+      <p begin="00:15:02.550" end="00:15:07.350">done before because there's no way to recompile system web and replace...a pipeline,</p>
+      <p begin="00:15:07.350" end="00:15:12.100">pipeline nice another fun thing to show here as well is now</p>
+      <p begin="00:15:12.100" end="00:15:17.290">that you describe this folder that we have new folder called the brute, yeah, this is a really interesting one when</p>
+      <p begin="00:15:17.290" end="00:15:22.070">nbc came out people who are web for people get freaked out because you go ahead slash</p>
+      <p begin="00:15:22.070" end="00:15:24.490">home slash index and they go looking for that on-disk?</p>
+      <p begin="00:15:25.530" end="00:15:26.660">And, this was actually a weakness</p>
+      <p begin="00:15:26.660" end="00:15:31.290">of web forms developers about ten fifteen years ago because what would happen as we go to other frameworks and we'd</p>
+      <p begin="00:15:31.290" end="00:15:35.710">go looking for stuff because we thought there was a direct relationship between the url</p>
+      <p begin="00:15:35.710" end="00:15:39.650">...disk...move forward into a</p>
+      <p begin="00:15:39.650" end="00:15:44.410">new world where you've got javascript libraries that you bring in the need to be squares</p>
+      <p begin="00:15:44.410" end="00:15:49.450">...needs to be mystified there is now a difference between the code that you look at</p>
+      <p begin="00:15:49.450" end="00:15:53.120">and the resulting build of your application so www</p>
+      <p begin="00:15:53.120" end="00:15:57.940">...is now if folder a place that lives under your app that's where static</p>
+      <p begin="00:15:57.940" end="00:16:03.190">stuff is served out of so if you want to serve foo dot html you don't drop it in the</p>
+      <p begin="00:16:03.190" end="00:16:07.720">root of your project you drop it in...root the value that</p>
+      <p begin="00:16:07.720" end="00:16:12.200">provides is that I can add a bunch of javascript libraries doesn't automatically make them accessible</p>
+      <p begin="00:16:12.200" end="00:16:16.350">to my application they get accessible...my app when I copy them into</p>
+      <p begin="00:16:16.350" end="00:16:21.280">wwe route which means I...have the unmanned fide versions out my can be looking at them and then I can go</p>
+      <p begin="00:16:21.280" end="00:16:25.510">and post-process them and drop them in there so what if you denser so what</p>
+      <p begin="00:16:25.510" end="00:16:28.300">...new now is I added</p>
+      <p begin="00:16:28.300" end="00:16:31.790">go back to visual studio I added a hello that html file</p>
+      <p begin="00:16:31.790" end="00:16:36.240">...application you have hello dot html so he put that inside that we're.</p>
+      <p begin="00:16:36.240" end="00:16:38.120">Okay, so, then.</p>
+      <p begin="00:16:38.120" end="00:16:46.470">Does it get serve when you ask for and then we're going to do is going to ask for that okay?</p>
+      <p begin="00:16:46.470" end="00:16:50.460">Do not get served...said hello html?</p>
+      <p begin="00:16:50.460" end="00:16:55.430">you basically my app spits out hello world no matter no matter what so</p>
+      <p begin="00:16:55.430" end="00:16:58.530">...the handler, handler those learning last the last</p>
+      <p begin="00:16:58.530" end="00:17:02.710">...anything you want there just like...and then it was work.</p>
+      <p begin="00:17:02.710" end="00:17:06.280">Yes, archetype...webbing that's what types to happens,</p>
+      <p begin="00:17:06.280" end="00:17:11.540">you know,...allstate catches everything but the point the</p>
+      <p begin="00:17:11.540" end="00:17:16.260">point there is we don't even serve static files...don't included error page and</p>
+      <p begin="00:17:16.260" end="00:17:27.670">...on included static file handler that is innovation.</p>
+      <p begin="00:17:27.670" end="00:17:30.610">...the point here is...cafeteria plan</p>
+      <p begin="00:17:30.610" end="00:17:34.940">you get exactly what you want no more than you ask for so this</p>
+      <p begin="00:17:34.940" end="00:17:39.000">...absolute control I just added static files back home.</p>
+      <p begin="00:17:39.000" end="00:17:42.140">And, I'll come over here and this now see app</p>
+      <p begin="00:17:42.140" end="00:17:47.060">...positive for a second please...this out because this whole use thing is</p>
+      <p begin="00:17:47.060" end="00:17:50.810">confusing you see those arrows are pointing down those are extension methods</p>
+      <p begin="00:17:50.810" end="00:17:55.430">we added that static file thing in there is now use static files it's not</p>
+      <p begin="00:17:55.430" end="00:17:59.780">that you have to memorize a whole bunch of use this and use that kind of stuff as you add new</p>
+      <p begin="00:17:59.780" end="00:18:01.690">packages you go and let's say someone</p>
+      <p begin="00:18:01.690" end="00:18:06.680">makes the open-source way better version of the...screen of death.</p>
+      <p begin="00:18:06.680" end="00:18:10.200">He'll just swap out his version swap that went in and then he'll</p>
+      <p begin="00:18:10.200" end="00:18:15.470">use their extension method and that added into the pipeline that's how that appeared there.</p>
+      <p begin="00:18:15.470" end="00:18:18.300">So, can we serve html...new strangled</p>
+      <p begin="00:18:18.300" end="00:18:22.970">...things there you go hello from the build...even better when it's big farm?</p>
+      <p begin="00:18:22.970" end="00:18:26.670">So, I just showing you we're now modular you can turn on or off all</p>
+      <p begin="00:18:26.670" end="00:18:31.740">of our features as much as you want.</p>
+      <p begin="00:18:31.740" end="00:18:35.210">So, now let's go and create a...app like an actual default</p>
+      <p begin="00:18:35.210" end="00:18:37.920">...here and this is also an interesting point</p>
+      <p begin="00:18:37.920" end="00:18:42.800">...he makes is this new app there's a difference between a web forms app...</p>
+      <p begin="00:18:42.800" end="00:18:47.630">session cookie management and all those kinds of things...nbc app...multiple layers and</p>
+      <p begin="00:18:47.630" end="00:18:52.650">are very low-level tiny maybe and io t scenario where you've got...serving</p>
+      <p begin="00:18:52.650" end="00:18:58.050">jason you're doing that directly or something in between with web api we want you to</p>
+      <p begin="00:18:58.050" end="00:19:01.760">be able to do those little scenarios and the big scenarios</p>
+      <p begin="00:19:01.760" end="00:19:06.460">and because you can pick the pieces that you want you're going to get the perf you're never going to be asking yourself a</p>
+      <p begin="00:19:06.460" end="00:19:10.540">question like what's in between me and the wire?</p>
+      <p begin="00:19:10.540" end="00:19:11.280">Some saying.</p>
+      <p begin="00:19:12.310" end="00:19:14.490">Abstraction layers can get you in trouble</p>
+      <p begin="00:19:14.490" end="00:19:18.710">you add too many layers of abstraction and we hit a lot of stuff and web forms and that's</p>
+      <p begin="00:19:18.710" end="00:19:23.020">okay because it's a powerful framework for putting together compose will apps but we</p>
+      <p begin="00:19:23.020" end="00:19:27.380">hit them because dragging a button on to design surface and making it button click was an</p>
+      <p begin="00:19:27.380" end="00:19:32.880">important scenario important scenario but now we're in a new world right what the key</p>
+      <p begin="00:19:32.880" end="00:19:35.860">to into the new world because we now don't require visual</p>
+      <p begin="00:19:35.860" end="00:19:40.090">...is we do all of our compilation inside of our inside race net</p>
+      <p begin="00:19:40.090" end="00:19:43.010">...compile itself so in this scenario</p>
+      <p begin="00:19:43.010" end="00:19:47.650">...modify this...get the page appear your application description page share</p>
+      <p begin="00:19:47.650" end="00:19:53.430">...say hello...has to be clear this is not...your in...csharp code</p>
+      <p begin="00:19:53.430" end="00:19:59.530">okay you haven't typed control I'm not I'm not saved anything at all don't trick them and on your machine</p>
+      <p begin="00:19:59.530" end="00:20:03.410">...two seconds on my machine it'll take like six seconds and that's because if you</p>
+      <p begin="00:20:03.410" end="00:20:10.270">...too much junk on...so...point here is we're now building.</p>
+      <p begin="00:20:10.270" end="00:20:13.880">...and what's cool that is...roslyn to do this and what the</p>
+      <p begin="00:20:13.880" end="00:20:17.170">perfect proves we have is when we compile now we no longer</p>
+      <p begin="00:20:18.330" end="00:20:23.100">...when you make a change you save some csharp</p>
+      <p begin="00:20:23.100" end="00:20:26.770">disk then you loaded back up into the compiler than the compiler saves</p>
+      <p begin="00:20:26.770" end="00:20:31.630">...back to disk and you pick...dl up and then you run...right that's just how the</p>
+      <p begin="00:20:31.630" end="00:20:35.440">circle life works when compile in this world?</p>
+      <p begin="00:20:35.440" end="00:20:40.080">You save the textile the disk you redid up and you compile...in memory and the assembly always</p>
+      <p begin="00:20:40.080" end="00:20:44.380">stays in memory it sits there nothing ever got emitted to disk that said we know that when people</p>
+      <p begin="00:20:44.380" end="00:20:48.820">publisher applications they want to be able to pre-compressor elements and put them up as well right we</p>
+      <p begin="00:20:48.820" end="00:20:55.780">...to do...been solder here is there been folder I don't know-how to use the number and here.</p>
+      <p begin="00:20:55.780" end="00:20:59.250">Is there...where did you put the...the deal?</p>
+      <p begin="00:20:59.250" end="00:21:00.910">With dealers.</p>
+      <p begin="00:21:00.910" end="00:21:04.680">Darn you hunter so there's no been and there's no</p>
+      <p begin="00:21:04.680" end="00:21:07.900">option is no dealer because when you do things in node</p>
+      <p begin="00:21:07.900" end="00:21:11.910">a ruby your python with these interpreted languages types encoding it refresh types</p>
+      <p begin="00:21:11.910" end="00:21:16.290">...hip fresh but there's value and there's our in the clr</p>
+      <p begin="00:21:16.290" end="00:21:20.070">...in csharp and...so you want to have those kinds of</p>
+      <p begin="00:21:20.070" end="00:21:24.320">statically type languages how do you get the feeling of a dynamic language that...you know,</p>
+      <p begin="00:21:24.320" end="00:21:28.690">just refresh, refresh, refresh but also this speed in the our of net you do that with</p>
+      <p begin="00:21:28.690" end="00:21:34.150">roslyn right next is references if you look at references here is not got these</p>
+      <p begin="00:21:34.150" end="00:21:36.960">the to nipped references to these two frameworks we have whom</p>
+      <p begin="00:21:36.960" end="00:21:43.200">...dn x which is dot net execution done...execution</p>
+      <p begin="00:21:43.200" end="00:21:48.490">environment...and we have one for four-point-five one and we have which will run</p>
+      <p begin="00:21:48.490" end="00:21:54.430">...four-point-five, four-point-five to four...so you are actually compiling this for two different frameworks</p>
+      <p begin="00:21:54.430" end="00:21:58.210">right now correct okay this is kind of like with universe...for this</p>
+      <p begin="00:21:58.210" end="00:22:02.750">compile for that your compiling simultaneously for dot net full framework and</p>
+      <p begin="00:22:02.750" end="00:22:07.440">...and dot net core right and now packages show up in references,</p>
+      <p begin="00:22:07.440" end="00:22:10.460">you know, five years...according to get packages</p>
+      <p begin="00:22:10.460" end="00:22:15.460">...now first-class this is a really important point asp dot net five</p>
+      <p begin="00:22:15.460" end="00:22:20.450">works on both frameworks it's not too different versions of sp net</p>
+      <p begin="00:22:20.450" end="00:22:25.070">...runs on a full framework runs in the core framework you then target them both</p>
+      <p begin="00:22:25.070" end="00:22:28.150">and if you use something that's in the course</p>
+      <p begin="00:22:28.150" end="00:22:33.060">clr it will warn you and you can decide if you want to ff around that.</p>
+      <p begin="00:22:33.060" end="00:22:35.720">But, if you look like in the framework searching a</p>
+      <p begin="00:22:35.720" end="00:22:41.020">...dependency graphic I look there's that one's a new get package and that one must be local yes or</p>
+      <p begin="00:22:41.020" end="00:22:46.610">...system or part ok so in the...it's actually part of we framework.</p>
+      <p begin="00:22:46.610" end="00:22:48.370">I like...version number show too.</p>
+      <p begin="00:22:49.500" end="00:22:50.960">That's cool.</p>
+      <p begin="00:22:50.960" end="00:22:53.930">So, that's a new concepts okay.</p>
+      <p begin="00:22:53.930" end="00:22:54.940">...the hang actually</p>
+      <p begin="00:22:54.940" end="00:23:04.280">...going project...from actually as we're going next let's look at frameworks real quick.</p>
+      <p begin="00:23:04.280" end="00:23:07.750">...cs project...so</p>
+      <p begin="00:23:07.750" end="00:23:13.010">...with cs proj right which is the csharp project file you would have these</p>
+      <p begin="00:23:13.010" end="00:23:17.690">includes and you'd say I want to add foo dot cs and you're going to...cs</p>
+      <p begin="00:23:17.690" end="00:23:22.570">progeny you add the food out cs in large teams...be a constant merge issue</p>
+      <p begin="00:23:22.570" end="00:23:27.290">as people add-in removes stuff so we're switching to a format where if it's in the folder</p>
+      <p begin="00:23:27.290" end="00:23:30.350">it's in the project okay if you don't want</p>
+      <p begin="00:23:30.350" end="00:23:34.630">their we've inverted it so now you would exclude that right out of the project</p>
+      <p begin="00:23:34.630" end="00:23:38.740">...so we're showing all the packages that we require for this application</p>
+      <p begin="00:23:38.740" end="00:23:43.350">to run right here and this is a declaration in the project...of what we want.</p>
+      <p begin="00:23:43.350" end="00:23:45.820">And, then what's in the references is what we got</p>
+      <p begin="00:23:45.820" end="00:23:49.890">right and we planned actually replace packages that can fig across the projects</p>
+      <p begin="00:23:49.890" end="00:23:54.810">...project adjacent future as well that's coming something else we have years we have commands,</p>
+      <p begin="00:23:54.810" end="00:23:58.890">yeah, this was this...me a while you my head around because this is a very.</p>
+      <p begin="00:23:58.890" end="00:24:03.880">Generic and open way to do things but initially I thought I was just a way to start the web server bcs get</p>
+      <p begin="00:24:03.880" end="00:24:08.600">commands...name value name value the name can be anything you want doesn't have to</p>
+      <p begin="00:24:08.600" end="00:24:14.480">...letters he in their that case...web instead...and then the...the</p>
+      <p begin="00:24:14.480" end="00:24:18.980">...on the other side there is actually a type name.</p>
+      <p begin="00:24:18.980" end="00:24:23.220">And, you could have your own commands so then you would go and say, you know,</p>
+      <p begin="00:24:23.220" end="00:24:26.500">generate code or run this</p>
+      <p begin="00:24:26.500" end="00:24:29.700">a generic commander task you might want to run that wasn't being handle</p>
+      <p begin="00:24:29.700" end="00:24:35.170">...you by a...and we'll talk about those so here he's got the entity framework stuff he's got a</p>
+      <p begin="00:24:35.170" end="00:24:39.600">...got web which runs in this case the...net web</p>
+      <p begin="00:24:39.600" end="00:24:44.540">server but when we look at this on another platform we might use a different web server and we would tape</p>
+      <p begin="00:24:44.540" end="00:24:48.830">...dn x fool where fu was some custom thing</p>
+      <p begin="00:24:48.830" end="00:24:53.920">it's a very extensible way to do...to run that command I run the dynamics cuter</p>
+      <p begin="00:24:53.920" end="00:24:59.050">give it to a dot...the current directory and I told...command...I want to run so I want to run</p>
+      <p begin="00:24:59.050" end="00:25:03.660">web which point I'm going to launch the web browser or what's okay so just to be clear has the fonts</p>
+      <p begin="00:25:03.660" end="00:25:06.670">...kind of sm...what you've done is your in the same folder in the</p>
+      <p begin="00:25:06.670" end="00:25:11.640">...folder their of the...the project jason lives correct yes</p>
+      <p begin="00:25:11.640" end="00:25:15.830">project adjacent location see...appear as you have to put the dot there</p>
+      <p begin="00:25:15.830" end="00:25:19.230">...put a path to where your project is you put it on the anywhere</p>
+      <p begin="00:25:19.230" end="00:25:24.090">okay and then web the companion run command you want to in this case where web</p>
+      <p begin="00:25:24.090" end="00:25:28.370">then web if I look...the task explore the task manager</p>
+      <p begin="00:25:28.370" end="00:25:33.410">...x being their living as the component container and then it will have instantiated</p>
+      <p begin="00:25:33.410" end="00:25:38.030">...hosting part of the web listener to be doing that now by copy this exact</p>
+      <p begin="00:25:38.030" end="00:25:43.480">project file...amac and said dn x web it would fail right</p>
+      <p begin="00:25:43.480" end="00:25:47.540">...there will if you notice this is says microsoft that cannot</p>
+      <p begin="00:25:47.540" end="00:25:51.460">...that web listener web designer...weblets web listeners basically</p>
+      <p begin="00:25:51.460" end="00:25:55.720">deal we wrote the talked http...and hp systems and exist on the</p>
+      <p begin="00:25:55.720" end="00:26:00.810">mac so we have a another one of these we written called pastoral and...the one we run a</p>
+      <p begin="00:26:00.810" end="00:26:07.420">mac and it will do the same operation ...using live uyvy...you ve is what</p>
+      <p begin="00:26:07.420" end="00:26:12.040">...with the...the underlying stack that makes the node...web server work.</p>
+      <p begin="00:26:12.040" end="00:26:15.270">So,...of actually frameworks are...talk about framework</p>
+      <p begin="00:26:15.270" end="00:26:18.810">...the bottom of...the parallel I...as you see</p>
+      <p begin="00:26:18.810" end="00:26:24.000">...is dn x for five-one indian x core five you see on the right-hand side</p>
+      <p begin="00:26:24.000" end="00:26:30.590">...references can-you delete the dn x four five one-liner.</p>
+      <p begin="00:26:30.590" end="00:26:37.620">...you...for snacks...</p>
+      <p begin="00:26:37.620" end="00:26:41.650">So, kind of diabetic or some these are looking for snacks.</p>
+      <p begin="00:26:41.650" end="00:26:48.240">Look,...to say.</p>
+      <p begin="00:26:48.240" end="00:26:51.780">You see how it's banged out right now...right there.</p>
+      <p begin="00:26:52.860" end="00:26:56.150">That's back did a new get restore.</p>
+      <p begin="00:26:56.150" end="00:27:07.870">To make sure that...had all the things...them all up.</p>
+      <p begin="00:27:07.870" end="00:27:08.670">So, talk...</p>
+      <p begin="00:27:09.780" end="00:27:13.590">Okay, let's talk about our so you know-how you've got imis build...builds within</p>
+      <p begin="00:27:13.590" end="00:27:18.350">...you used to build stuff on the server-side other web frameworks in a lot of open-source people in front-end web</p>
+      <p begin="00:27:18.350" end="00:27:22.950">developers use client-side frameworks they have client-side bills they have</p>
+      <p begin="00:27:22.950" end="00:27:27.880">client-side tools they have library managers new gets and things like that except they have</p>
+      <p begin="00:27:27.880" end="00:27:32.920">things like bauer...pm and bauer brings down libraries and, pm brings</p>
+      <p begin="00:27:32.920" end="00:27:37.220">...libraries and tools that's all integrated into this now as</p>
+      <p begin="00:27:37.220" end="00:27:42.190">well that means that if you see some cool thing that the node kids are using</p>
+      <p begin="00:27:42.190" end="00:27:46.970">you want that to you can have that you might ask why we're use what why we bring</p>
+      <p begin="00:27:46.970" end="00:27:52.030">bauer into individual studio ...we have new get already because the</p>
+      <p begin="00:27:52.030" end="00:27:57.020">whole world uses it right today what happens is a lot of people a lot of us inside</p>
+      <p begin="00:27:57.020" end="00:28:00.670">of inside microsoft a lot of people deportees net have gone out to</p>
+      <p begin="00:28:00.670" end="00:28:06.290">bauer grab scripts from their...up...new get packages wrangler is and,</p>
+      <p begin="00:28:06.290" end="00:28:09.050">then we try to maintain...and maintain these things right but the</p>
+      <p begin="00:28:09.050" end="00:28:13.810">realities are always out-of-date so we said why keep being out-of-date let's go to the source so</p>
+      <p begin="00:28:13.810" end="00:28:21.840">two-story who do you think handles the angular packages a new get for the angular javascript library.</p>
+      <p begin="00:28:21.840" end="00:28:24.110">...popper and why...jump up and do it</p>
+      <p begin="00:28:24.110" end="00:28:28.590">...get sick of it recall means...would you do it and then I got sick of it and I</p>
+      <p begin="00:28:28.590" end="00:28:31.940">ask another guy and it's stupid because we're always behind</p>
+      <p begin="00:28:31.940" end="00:28:35.090">...happens three hours after the next version of anger comes out</p>
+      <p begin="00:28:35.090" end="00:28:42.540">...me why you now have angular on new get?</p>
+      <p begin="00:28:42.540" end="00:28:45.860">Wintertime tournaments so,</p>
+      <p begin="00:28:45.860" end="00:28:50.960">this like we showed in...you can see here we get full intelligence so we're not in the project updates anymore we're in the</p>
+      <p begin="00:28:50.960" end="00:28:55.160">bauer and I've selected angular js and is saying what version do I want</p>
+      <p begin="00:28:55.160" end="00:28:56.870">...like latest version I</p>
+      <p begin="00:28:56.870" end="00:29:00.930">...press save now that does not bring angular into my</p>
+      <p begin="00:29:00.930" end="00:29:03.950">projects it makes it available to my project but</p>
+      <p begin="00:29:03.950" end="00:29:07.580">member that www route gotta get over there someone has</p>
+      <p begin="00:29:07.580" end="00:29:12.340">to put it there it doesn't just drop it into the root of my direct of my system</p>
+      <p begin="00:29:12.340" end="00:29:15.580">...in new get one of the first things people wanted was the ability to control</p>
+      <p begin="00:29:15.580" end="00:29:18.800">where the javascript scope now you get that so, yeah,</p>
+      <p begin="00:29:18.800" end="00:29:23.180">we...folder...we have another file which is a goal filed</p>
+      <p begin="00:29:23.180" end="00:29:29.610">...which...copy this to your...folder right so we've got brunt</p>
+      <p begin="00:29:29.610" end="00:29:33.650">and gulp which are client-side microsoft builds their build systems are task</p>
+      <p begin="00:29:33.650" end="00:29:38.480">managers gulp is the one that's hot right now and then you would in your...task change it so that it</p>
+      <p begin="00:29:38.480" end="00:29:42.740">copy that angular into the root or whatever you wanted to be because everyone's puts their</p>
+      <p begin="00:29:42.740" end="00:29:47.650">script somewhere else what is a two-step process will try to make that as easy as we can so...</p>
+      <p begin="00:29:47.650" end="00:29:53.700">stuff injuring as well so we have a new feature and, just...called the task...explore tr easily</p>
+      <p begin="00:29:53.700" end="00:29:58.030">...inside the team and the idea here was historically we've done things like</p>
+      <p begin="00:29:58.030" end="00:30:02.550">...do something that goes in lengths your javascript that means is going to look for common javascript...or look</p>
+      <p begin="00:30:02.550" end="00:30:07.780">at your css...common css...we've taken the open-source things that are out there</p>
+      <p begin="00:30:07.780" end="00:30:12.290">we written our own to replace those...of tool them...visual studio right so</p>
+      <p begin="00:30:12.290" end="00:30:16.420">...you want to run js lent as part of your build what you've got here is a binding</p>
+      <p begin="00:30:16.420" end="00:30:21.960">between events that happen in visual studio and events that exist...task that</p>
+      <p begin="00:30:21.960" end="00:30:26.740">...is in your profile so-if you want-to modifier css before...build</p>
+      <p begin="00:30:26.740" end="00:30:31.570">...put that in your go file you added to before build right so we're no longer trying to keep up with these</p>
+      <p begin="00:30:31.570" end="00:30:36.940">open-source libraries...building in you don't have to see this stuff the stuff all...most developers you</p>
+      <p begin="00:30:36.940" end="00:30:41.360">...on your application...and stuff is going to be running behind-the-scene you might say that's a lot of concepts</p>
+      <p begin="00:30:41.360" end="00:30:46.170">to learn hundred-mile new project is going...do the right thing by default will have a good nice</p>
+      <p begin="00:30:46.170" end="00:30:49.650">...you can just use...to think about it so one final thing I want</p>
+      <p begin="00:30:49.650" end="00:30:52.640">to shown this application right now is I want to go to properties?</p>
+      <p begin="00:30:53.700" end="00:30:59.100">And, inside my properties...notice I have this option where I can say I want to use a dn</p>
+      <p begin="00:30:59.100" end="00:31:03.900">x zoom in on the and let's zoom in here.</p>
+      <p begin="00:31:03.900" end="00:31:06.110">So, wits version of this execution environment</p>
+      <p begin="00:31:06.110" end="00:31:10.980">...you want to use...do this in the for framework...do this and dot net core.</p>
+      <p begin="00:31:10.980" end="00:31:15.860">...we have...to a specific version member we said before about how you've got a machine</p>
+      <p begin="00:31:15.860" end="00:31:20.820">that's got a dot net whatever on it and application a I want to application</p>
+      <p begin="00:31:20.820" end="00:31:25.200">...we cannot risk those applications breaking each other they have to be</p>
+      <p begin="00:31:25.200" end="00:31:28.870">in their own universe so we're just like core here</p>
+      <p begin="00:31:28.870" end="00:31:33.020">...now we're basically told when I build I want to...build this</p>
+      <p begin="00:31:33.020" end="00:31:36.800">thing for the core framework which I want let's have that full side-by-side.</p>
+      <p begin="00:31:38.520" end="00:31:42.470">Just build and make sure...still healthy ok, and,...to a public</p>
+      <p begin="00:31:42.470" end="00:31:46.850">...funny story when he actually is pressing...actually do anything it just</p>
+      <p begin="00:31:46.850" end="00:31:51.470">does like spell-check it doesn't have to loaded...doesn't have to load all the errors in your in your</p>
+      <p begin="00:31:51.470" end="00:31:57.100">...window who...there's no deal elegant made...packed up and bundle it...that is</p>
+      <p begin="00:31:57.100" end="00:32:01.570">...the actual dls happen he's going to go into a publish to a file system</p>
+      <p begin="00:32:01.570" end="00:32:04.710">...a published this onto a usb</p>
+      <p begin="00:32:04.710" end="00:32:09.130">...and...publicity like folder might...okay so what is</p>
+      <p begin="00:32:09.130" end="00:32:18.560">to see back maybe foo-foo z colon and I think they added that.</p>
+      <p begin="00:32:18.560" end="00:32:24.380">Put in foo-foo...has lots of...that's good.</p>
+      <p begin="00:32:24.380" end="00:32:27.590">All right so what this will do is actually...you're doing that let's</p>
+      <p begin="00:32:27.590" end="00:32:31.460">...look at happen more fun to see it happen.</p>
+      <p begin="00:32:31.460" end="00:32:35.190">Didn't ...app...appeared?</p>
+      <p begin="00:32:35.190" end="00:32:37.800">Some stuff going by.</p>
+      <p begin="00:32:37.800" end="00:32:43.670">...that where do you think those three things came from the all.</p>
+      <p begin="00:32:43.670" end="00:32:52.670">Those are the commands from project adjacent so, can...laptop what...</p>
+      <p begin="00:32:52.670" end="00:32:55.110">...like as a...</p>
+      <p begin="00:32:55.110" end="00:32:56.020">Always one of the once you</p>
+      <p begin="00:32:56.020" end="00:33:04.550">...for free...so nice thank you for give-me...like open up seriously.</p>
+      <p begin="00:33:04.550" end="00:33:06.960">What kind of va thing</p>
+      <p begin="00:33:06.960" end="00:33:11.110">...using these days get tv port and?</p>
+      <p begin="00:33:12.270" end="00:33:14.860">...full-size hci.</p>
+      <p begin="00:33:14.860" end="00:33:20.290">Okay,...anything here...</p>
+      <p begin="00:33:20.290" end="00:33:23.180">Clear my browser history before you put that onstage measure handsome</p>
+      <p begin="00:33:25.820" end="00:33:29.140">...copying this onto his well on</p>
+      <p begin="00:33:29.140" end="00:33:33.460">...us speakeasy here okay so he's publishing</p>
+      <p begin="00:33:33.460" end="00:33:38.630">to this location and then what I'm going to do...that?</p>
+      <p begin="00:33:38.630" end="00:33:42.500">And, that's...important...that's not</p>
+      <p begin="00:33:42.500" end="00:33:48.070">...that that's network...the...tiny deviate with this</p>
+      <p begin="00:33:48.070" end="00:33:58.360">...copying...you never know...done all right I can't see the screen catch...screen.</p>
+      <p begin="00:33:58.360" end="00:33:59.770">By broke that moi.</p>
+      <p begin="00:34:02.880" end="00:34:05.710">...mail now.</p>
+      <p begin="00:34:05.710" end="00:34:12.430">Slows...slows...who brings...low memory stick to develop a conference.</p>
+      <p begin="00:34:12.430" end="00:34:14.190">One of the...earlier was.</p>
+      <p begin="00:34:15.520" end="00:34:19.640">Hanging on it...about ninety...about...notes about.</p>
+      <p begin="00:34:19.640" end="00:34:30.680">It's about two hours and.</p>
+      <p begin="00:34:30.680" end="00:34:33.690">Because the best part about windows eight is that dialogue</p>
+      <p begin="00:34:33.690" end="00:34:40.129">...saying this is like yes disappointments.</p>
+      <p begin="00:34:40.129" end="00:34:43.480">Too bad they can't see the disappointment.</p>
+      <p begin="00:34:43.480" end="00:34:47.830">...is when this case we actually compile that is an application against dot net core</p>
+      <p begin="00:34:47.830" end="00:34:54.110">for like five minutes and because dot net core is on this means the application can run</p>
+      <p begin="00:34:54.110" end="00:34:57.280">on any machine without affecting that machine...all the</p>
+      <p begin="00:34:57.280" end="00:35:02.220">application doesn't touch system thirty-two it doesn't such registry doesn't touch anything on</p>
+      <p begin="00:35:02.220" end="00:35:09.200">the machine at all you install anything on...visual studio like.</p>
+      <p begin="00:35:09.200" end="00:35:15.810">...code but not any you have you don't have any...new bits...yet.</p>
+      <p begin="00:35:15.810" end="00:35:18.360">...nothing on here.</p>
+      <p begin="00:35:18.360" end="00:35:23.160">Any britney spears fell down.</p>
+      <p begin="00:35:23.160" end="00:35:28.350">It's going to read about that real quick average...an ios game or something...</p>
+      <p begin="00:35:28.350" end="00:35:34.510">So,...just run that web command.</p>
+      <p begin="00:35:34.510" end="00:35:37.300">And, did you didn't have the consul...info</p>
+      <p begin="00:35:37.300" end="00:35:41.000">...act forget to turn the consul longer on...debug?</p>
+      <p begin="00:35:42.010" end="00:35:46.600">Your...you...do I...example.</p>
+      <p begin="00:35:46.600" end="00:36:04.120">Oxygen your the busts...pardon me five...</p>
+      <p begin="00:36:04.120" end="00:36:08.330">It really is running optimistic is not touching local drive at all is running that is</p>
+      <p begin="00:36:08.330" end="00:36:13.230">a website running off his memory stick now I'm going to pull the memory sick-out without</p>
+      <p begin="00:36:13.230" end="00:36:19.940">warning the operating system because life is too short to safely remove your...</p>
+      <p begin="00:36:19.940" end="00:36:29.180">Thank you...I don't know what's going to happen now as...screens going.</p>
+      <p begin="00:36:29.180" end="00:36:30.020">Not happy.</p>
+      <p begin="00:36:32.360" end="00:36:36.750">...show one more concept here and this is the notion of what we call environment's</p>
+      <p begin="00:36:36.750" end="00:36:41.990">...twenty minutes where you need to...related google facile faster</p>
+      <p begin="00:36:41.990" end="00:36:46.080">...my project again and if I come over here</p>
+      <p begin="00:36:46.080" end="00:36:52.400">...properties are going to debug there's this notion of</p>
+      <p begin="00:36:52.400" end="00:36:56.930">And, that's...you said if you want to have...I doing a development build my doing a staging build</p>
+      <p begin="00:36:56.930" end="00:37:01.210">brand is that a magic string for development...development called...I mean it's</p>
+      <p begin="00:37:01.210" end="00:37:06.010">a hash tags you could change that you can to development whatever word you want so dev test staging,</p>
+      <p begin="00:37:06.010" end="00:37:10.100">staging one staging to I can make those things up myself, yeah, so, that's why do we care about this let's</p>
+      <p begin="00:37:10.100" end="00:37:15.140">look at the views and let's go look inside of shared and let's look at the layout file</p>
+      <p begin="00:37:15.140" end="00:37:19.950">ok now...either master page this is showing some stuff which...is going tomorrow...</p>
+      <p begin="00:37:19.950" end="00:37:24.930">more detail iraqi doing dependency injection here and actually injecting some types and stuff directly</p>
+      <p begin="00:37:24.930" end="00:37:30.170">to the page...here look we have this new thing senses environment</p>
+      <p begin="00:37:30.170" end="00:37:34.830">names equals development environment names equal staging is done see how that's</p>
+      <p begin="00:37:34.830" end="00:37:39.270">in purple that's actually not html tag that will get admitted it's just letting us know that if we are</p>
+      <p begin="00:37:39.270" end="00:37:44.720">in development drop in those style sheets and if you are in either staging</p>
+      <p begin="00:37:44.720" end="00:37:49.460">...production use these other ones will actually not even more than use the other ones you look at these other ones</p>
+      <p begin="00:37:49.460" end="00:37:51.990">they're interesting because they actually point-two.</p>
+      <p begin="00:37:51.990" end="00:37:56.770">Version of the scripts on a on a...a...interesting so</p>
+      <p begin="00:37:56.770" end="00:38:01.440">you've got bootstrap coming out of a specific folder locally and then in production use which over</p>
+      <p begin="00:38:01.440" end="00:38:08.080">...the assyrian but well even better the look we have a...fallback that...means if the</p>
+      <p begin="00:38:08.080" end="00:38:12.440">...in is not available will fallback your local system.</p>
+      <p begin="00:38:12.440" end="00:38:19.300">This is an we have a feature called heck helpers thank you.</p>
+      <p begin="00:38:19.300" end="00:38:24.340">So, we have this new feature which they're going to go into deep on friday which is an awesome feature called tag helpers</p>
+      <p begin="00:38:24.340" end="00:38:28.760">and, that's these tags...so even like link what happens if I put any of</p>
+      <p begin="00:38:28.760" end="00:38:33.430">these asp dashes in there that tells it that we don't want to use the html link we want use</p>
+      <p begin="00:38:33.430" end="00:38:38.830">the special version we have over written that understands...dash fallback that each</p>
+      <p begin="00:38:38.830" end="00:38:42.670">...right so much easier way than going writing all of that's how that works</p>
+      <p begin="00:38:42.670" end="00:38:48.070">...show one more example of tag helpers which is pretty good pretty cool I'm going to go in here</p>
+      <p begin="00:38:48.070" end="00:38:53.160">login and look at the login file all right so...login file and</p>
+      <p begin="00:38:53.160" end="00:38:57.330">first-run the app to some people...like a login page and pretty...people</p>
+      <p begin="00:38:57.330" end="00:39:02.740">...look like okay...I'm guessing it will have a username or password...xbox in</p>
+      <p begin="00:39:02.740" end="00:39:07.650">a button that says login just...you re my mind just guessing?</p>
+      <p begin="00:39:07.650" end="00:39:10.600">Redman that was worth the time ok so.</p>
+      <p begin="00:39:11.850" end="00:39:14.140">So, if you look at this page.</p>
+      <p begin="00:39:14.140" end="00:39:17.540">We didn't write html dot text box anywhere on here</p>
+      <p begin="00:39:17.540" end="00:39:21.270">right we just wrote html.</p>
+      <p begin="00:39:21.270" end="00:39:25.620">So, these are...inputs input tags regular input tag but because it</p>
+      <p begin="00:39:25.620" end="00:39:29.980">has this asp dash for that enables the html helper or the</p>
+      <p begin="00:39:31.370" end="00:39:35.900">...written for this that understands these things and actually does the equivalent of html that</p>
+      <p begin="00:39:35.900" end="00:39:39.710">...right now if I'd...do this before you got to go like</p>
+      <p begin="00:39:39.710" end="00:39:44.080">...html dot text box right those helpers the problem with early parts of</p>
+      <p begin="00:39:44.080" end="00:39:49.380">raiser it felt weird is you switch back and forth between html and</p>
+      <p begin="00:39:49.380" end="00:39:52.460">...trying to keep you in html more often</p>
+      <p begin="00:39:52.460" end="00:39:57.320">...I see any actually csharp in here except for what you're doing right now...yeah,</p>
+      <p begin="00:39:57.320" end="00:40:00.560">...be the old way this is the old way which</p>
+      <p begin="00:40:00.560" end="00:40:05.230">was pretty stupid about ang on now it was pretty awesome at the time knows terrible this is this</p>
+      <p begin="00:40:05.230" end="00:40:09.460">...a we screwed up really bad so.</p>
+      <p begin="00:40:09.460" end="00:40:15.490">...look at this we have this awesome editor that has awesome css intelligence it's not going to</p>
+      <p begin="00:40:15.490" end="00:40:20.660">understand what new curly brace quote class equals...not in html</p>
+      <p begin="00:40:20.660" end="00:40:25.930">...one...all the intelligence so,</p>
+      <p begin="00:40:25.930" end="00:40:29.470">that was a bad idea we started using angular and stuff with our at</p>
+      <p begin="00:40:29.470" end="00:40:40.280">...bootstrap and I would be a little more measured sir.</p>
+      <p begin="00:40:40.280" end="00:40:44.930">And, these before all the features that you expect.</p>
+      <p begin="00:40:44.930" end="00:40:47.700">Exist here before knows the model</p>
+      <p begin="00:40:47.700" end="00:40:50.660">...my page is...me all the intelligence so</p>
+      <p begin="00:40:50.660" end="00:40:54.760">...html tag what happens is as soon as I type quotes I'm actually not</p>
+      <p begin="00:40:54.760" end="00:41:00.100">...tag anymore I'm actually in csharp and you got that injected in there because the whole page knows about that</p>
+      <p begin="00:41:00.100" end="00:41:04.410">rice's for that model tomorrow in the in...deep dive demeans</p>
+      <p begin="00:41:04.410" end="00:41:09.960">...come on, stage and show you how these things work show you how to write and yourself and,</p>
+      <p begin="00:41:09.960" end="00:41:12.500">they're pretty cool so let's.</p>
+      <p begin="00:41:12.500" end="00:41:17.510">Undo any...here that will not compile.</p>
+      <p begin="00:41:17.510" end="00:41:18.840">And, let's see we want to next.</p>
+      <p begin="00:41:19.930" end="00:41:25.870">Configuration we've only got eighteen minutes.</p>
+      <p begin="00:41:25.870" end="00:41:30.190">So, number okay if you're good so another thing we</p>
+      <p begin="00:41:30.190" end="00:41:34.690">talked about earlier we showed that empty application we showed...</p>
+      <p begin="00:41:34.690" end="00:41:39.610">had nothing turned on and now I'm actually looking at a full...application and now you can see</p>
+      <p begin="00:41:39.610" end="00:41:44.650">...booting up...configuration system as I scroll down you're going to see that I'm</p>
+      <p begin="00:41:44.650" end="00:41:49.220">going to boot-up the support for entity framework the support for identity</p>
+      <p begin="00:41:49.220" end="00:41:54.570">system you can see m in a boot-up some of the services required for</p>
+      <p begin="00:41:54.570" end="00:41:59.090">often kate authentication with facebook and I notice that in the configuration part you mention the</p>
+      <p begin="00:41:59.090" end="00:42:04.130">...thing do I have to use jason for...no you don't actually use this configuration what</p>
+      <p begin="00:42:04.130" end="00:42:13.370">...what if I and I files...how we role in my in my enterprise.</p>
+      <p begin="00:42:13.370" end="00:42:17.970">Remove just for handsome and he after that he's been begging us for five years</p>
+      <p begin="00:42:17.970" end="00:42:23.550">...the one feature hp that needs to succeed...final files.</p>
+      <p begin="00:42:23.550" end="00:42:27.130">Just respect the any man.</p>
+      <p begin="00:42:27.130" end="00:42:30.590">...the point there is that before doing things like...settings, you know,</p>
+      <p begin="00:42:30.590" end="00:42:34.120">it's angle brackets adding more and more stuff into your web</p>
+      <p begin="00:42:34.120" end="00:42:37.870">...this is an extensible configuration system that allows you to pulling...from wherever you</p>
+      <p begin="00:42:37.870" end="00:42:42.610">...wherever you have makes you happy wherever your company like well it also we're</p>
+      <p begin="00:42:42.610" end="00:42:44.560">...multiple layers you might notice...that I first</p>
+      <p begin="00:42:44.560" end="00:42:49.810">at adjacent file right then I come down here and say we had another visions outside another reason</p>
+      <p begin="00:42:49.810" end="00:42:54.310">...if you want to have a development version of your script values get rid of others transform</p>
+      <p begin="00:42:54.310" end="00:42:58.550">you're actually chaining them...be...dot jason nab can fig dot environment dot</p>
+      <p begin="00:42:58.550" end="00:43:03.250">jason and one would overwrite...one can override the other one and...notice...the very bottom here, yeah,</p>
+      <p begin="00:43:03.250" end="00:43:08.040">we have configure environment variables and we have this because we think if you're going to</p>
+      <p begin="00:43:08.040" end="00:43:13.040">...in the cloud you should have the conflict file it all the your production setting should be</p>
+      <p begin="00:43:13.040" end="00:43:16.590">handle your iq department control in the cloud right not by the</p>
+      <p begin="00:43:16.590" end="00:43:21.560">...if you've ever done anything with as...like me you accidentally checked in</p>
+      <p begin="00:43:21.560" end="00:43:25.640">...password or connection string or something like that into a web and fig and then it's</p>
+      <p begin="00:43:25.640" end="00:43:29.770">...how do you tell get that you didn't really mean it.</p>
+      <p begin="00:43:29.770" end="00:43:32.370">You know, and, intel give...that you didn't really mean I guess</p>
+      <p begin="00:43:32.370" end="00:43:37.340">...all changing our passwords with this you can have a configuration locally you can have it then</p>
+      <p begin="00:43:37.340" end="00:43:42.450">...environment variable...configuration and he's got a another configuration that's environment specific and</p>
+      <p begin="00:43:42.450" end="00:43:47.370">then can override those with environment variables which are set outside of your code?</p>
+      <p begin="00:43:47.370" end="00:43:52.290">More so is anybody this room and I ever checking to get hub any of your</p>
+      <p begin="00:43:52.290" end="00:43:56.530">connection streams are definitely...actually this migrate whereas you and I know there's more than</p>
+      <p begin="00:43:56.530" end="00:44:01.110">...search give hub for the word password.</p>
+      <p begin="00:44:01.110" end="00:44:03.640">Yeah, you find a few so you'll notice</p>
+      <p begin="00:44:03.640" end="00:44:08.460">if I'm in my development environment which means I'm right where I'm in now we had another one your called</p>
+      <p begin="00:44:08.460" end="00:44:13.380">ad user...so the idea is we built a featured ask net where you never ever put your</p>
+      <p begin="00:44:13.380" end="00:44:17.660">connection strings inside of the folder structure here which means you never</p>
+      <p begin="00:44:17.660" end="00:44:21.260">had the chance of accidentally get pushing it up your server</p>
+      <p begin="00:44:21.260" end="00:44:25.150">nice so thank you.</p>
+      <p begin="00:44:25.150" end="00:44:30.600">So, what I would do is I would run this new command we have called user secret?</p>
+      <p begin="00:44:30.600" end="00:44:35.190">...user secret that is yet another command-line thing for me to learn another</p>
+      <p begin="00:44:35.190" end="00:44:39.520">...will have institute feeling for this as well but is an actual command-line</p>
+      <p begin="00:44:39.520" end="00:44:44.390">is something that you're going to describe explain how to write tomorrow this is actually a is one of the</p>
+      <p begin="00:44:44.390" end="00:44:48.670">...net five consul lap who are dn x consul lab that's</p>
+      <p begin="00:44:48.670" end="00:44:52.880">installed my path remember how we had all those commands in project jason your dot</p>
+      <p begin="00:44:52.880" end="00:44:57.810">execution environment can have commands as well so this is actually one of those you can make your</p>
+      <p begin="00:44:57.810" end="00:45:02.350">own this is not going to go learn a whole pile of these you can write your own so what I'm going</p>
+      <p begin="00:45:02.350" end="00:45:11.060">to do here is I'm going to say app settings that site title.</p>
+      <p begin="00:45:11.060" end="00:45:14.960">And, I can say that's just...magic string app settings outside</p>
+      <p begin="00:45:14.960" end="00:45:22.860">...also...I'm like that from...in rand-r project, project configuring okay.</p>
+      <p begin="00:45:22.860" end="00:45:26.210">So, what that does is academic...here and say, you know,</p>
+      <p begin="00:45:26.210" end="00:45:29.620">list my...using like dp api or what</p>
+      <p begin="00:45:29.620" end="00:45:34.470">...secret places this I'm not going to tell you what that's not really...to find out...looking</p>
+      <p begin="00:45:34.470" end="00:45:39.310">...coding get hub and find out where it actually...what we typically do is we recommend you put connection strings</p>
+      <p begin="00:45:39.310" end="00:45:43.670">...with this tool and what this tool actually does is it puts it puts those</p>
+      <p begin="00:45:43.670" end="00:45:49.500">things inside of your user folder that's not very secret well it's not your project which means not...go to get</p>
+      <p begin="00:45:49.500" end="00:45:52.500">...that's actually that's the only care about is we don't want</p>
+      <p begin="00:45:52.500" end="00:45:57.540">...stuff stored in your project so it goes to get...</p>
+      <p begin="00:45:57.540" end="00:46:03.170">And, I should be able to come down here in the application and pull</p>
+      <p begin="00:46:03.170" end="00:46:06.760">that back out...jump ahead yes in the interest of time if the client list of</p>
+      <p begin="00:46:06.760" end="00:46:08.420">...we've got about fourteen minutes.</p>
+      <p begin="00:46:09.520" end="00:46:14.550">When you that one of that one...need to do all these things here?</p>
+      <p begin="00:46:14.550" end="00:46:18.710">...other six pages let's do controllers...furs us do that</p>
+      <p begin="00:46:18.710" end="00:46:22.980">...simpler evolutionary and then...and we'll jump...that are</p>
+      <p begin="00:46:22.980" end="00:46:27.470">ok so the unwind a few things here...straighten back out that's been my</p>
+      <p begin="00:46:27.470" end="00:46:32.180">...folder and let's go add a new comptroller so before</p>
+      <p begin="00:46:32.180" end="00:46:36.810">there was adding controllers and driving them from controller or deriving from api</p>
+      <p begin="00:46:36.810" end="00:46:41.690">controller and we unify those...now you've got an nbc controller in a web api</p>
+      <p begin="00:46:41.690" end="00:46:45.880">...the same thing but sometimes still people don't necessarily want to have a</p>
+      <p begin="00:46:45.880" end="00:46:54.000">controller base class where they want to comptroller less controller.</p>
+      <p begin="00:46:54.000" end="00:46:56.750">What they want I don't know?</p>
+      <p begin="00:46:56.750" end="00:47:05.310">...doesn't that kind of a...confidences you run the team.</p>
+      <p begin="00:47:05.310" end="00:47:10.010">So, the point of this example is we were saying earlier that a</p>
+      <p begin="00:47:10.010" end="00:47:14.580">...modular and getting...opt into how much stuff that you want right...you don't want our control</p>
+      <p begin="00:47:14.580" end="00:47:19.990">...class today you can do a bunch of voodoo...to work around that in the new</p>
+      <p begin="00:47:19.990" end="00:47:24.750">world you can use is mushers little nbc's you want here I've got a simple class</p>
+      <p begin="00:47:24.750" end="00:47:28.730">called scott controller it has index method return string</p>
+      <p begin="00:47:28.730" end="00:47:35.300">...this is from my controller that is there is a pogo class plain old clr object.</p>
+      <p begin="00:47:35.300" end="00:47:36.590">Now does that mean that I can go and</p>
+      <p begin="00:47:36.590" end="00:47:42.760">start randomly calling functions on public classes and that would be a bad thing.</p>
+      <p begin="00:47:42.760" end="00:47:44.980">Conditions so that only...only works</p>
+      <p begin="00:47:44.980" end="00:47:48.920">...wide-screen this only works because I'm my name is scott</p>
+      <p begin="00:47:48.920" end="00:47:51.320">controller so by convened always done</p>
+      <p begin="00:47:51.320" end="00:47:56.200">is nbc's always work this way where it implies this okay because the name ended in</p>
+      <p begin="00:47:56.200" end="00:48:00.220">...correct so that I'm going to login to like, you know,</p>
+      <p begin="00:48:00.220" end="00:48:05.380">someone's company and hope that they have things that are name controller.</p>
+      <p begin="00:48:05.380" end="00:48:08.080">The office of the...probably a good place to start.</p>
+      <p begin="00:48:11.650" end="00:48:14.290">Appoint about this is I could actually</p>
+      <p begin="00:48:14.290" end="00:48:17.640">...controllerbase class of wanted-to here.</p>
+      <p begin="00:48:17.640" end="00:48:21.590">I don't even have to we use dependency injection is built-in feature inside...can at</p>
+      <p begin="00:48:21.590" end="00:48:26.680">...so everything is being depends injected in here if I want to go grab any the things</p>
+      <p begin="00:48:26.680" end="00:48:31.380">...controller their typically being dependency injection if you go the source code for the new comptroller</p>
+      <p begin="00:48:31.380" end="00:48:36.380">based class all it does have a constructor that takes all the things are being brought in by dependency injection</p>
+      <p begin="00:48:36.380" end="00:48:41.390">...indigo new comptroller today you say this dot and there's all this great stuff that's available in</p>
+      <p begin="00:48:41.390" end="00:48:45.240">...bags and action results and all those kinds of things here</p>
+      <p begin="00:48:45.240" end="00:48:50.140">you're on your own right but no it's being injected in by the by the system</p>
+      <p begin="00:48:50.140" end="00:48:55.230">an example of that is notice here I've got this longer factory that we addconsul logging on</p>
+      <p begin="00:48:55.230" end="00:49:00.980">...set by default...warning...wants to be a situ...if I look at this is returning</p>
+      <p begin="00:49:00.980" end="00:49:04.820">it it's using I longer factory right I could take...I</p>
+      <p begin="00:49:04.820" end="00:49:07.860">...factory make that constructor on my</p>
+      <p begin="00:49:07.860" end="00:49:12.830">...this controller ik so my pogo...there my plane all object there I could say</p>
+      <p begin="00:49:12.830" end="00:49:17.720">...a constructor for it takes and I longer factory and they will automatically end up in there and I can</p>
+      <p begin="00:49:17.720" end="00:49:23.430">squirrel when use correct I'm not going to do it but which exact make sense all right good like that so we have been</p>
+      <p begin="00:49:23.430" end="00:49:26.730">suggestion built-in wellness also want to say if you want to</p>
+      <p begin="00:49:26.730" end="00:49:30.510">use your own thing yep we support all the popular</p>
+      <p begin="00:49:30.510" end="00:49:35.730">gis exist today phrase net already we options within the work so you don't have to use</p>
+      <p begin="00:49:35.730" end="00:49:38.610">our thing but we don't require one of those to go so</p>
+      <p begin="00:49:38.610" end="00:49:42.630">...talked about the concept of dn...and we've seen as dot net execution virus</p>
+      <p begin="00:49:42.630" end="00:49:49.650">...briefly the command-line and I'm going to after insist that you zoom in on.</p>
+      <p begin="00:49:49.650" end="00:49:53.740">...go so the dot net version managerthe dn</p>
+      <p begin="00:49:53.740" end="00:49:56.740">...as a command-line that's going to allow you to</p>
+      <p begin="00:49:56.740" end="00:50:01.280">come manage all these different frameworks because we anticipate a world where there's going to be, you know, four or five</p>
+      <p begin="00:50:01.280" end="00:50:06.270">these different ones and you're going to be testing on one as you develop actively on another or maybe someone</p>
+      <p begin="00:50:06.270" end="00:50:08.790">finds a bug in the course...they want to change it</p>
+      <p begin="00:50:08.790" end="00:50:13.020">...make their own private build-up that or you're going to have you know,</p>
+      <p begin="00:50:13.020" end="00:50:17.100">mono might be one...the course are might be another and you're going to move around dn</p>
+      <p begin="00:50:17.100" end="00:50:20.520">gm will list those...he can...vm space</p>
+      <p begin="00:50:20.520" end="00:50:27.730">list and see them he actually has for versions there right actually they're one for each</p>
+      <p begin="00:50:27.730" end="00:50:32.200">...course clr and then if he went and installed a new one like beta three</p>
+      <p begin="00:50:32.200" end="00:50:38.140">...five those are going to show up there and notice where they live they live not and</p>
+      <p begin="00:50:38.140" end="00:50:39.160">Know system thirty-two.</p>
+      <p begin="00:50:40.180" end="00:50:41.930">Live-in as user folder</p>
+      <p begin="00:50:41.930" end="00:50:47.530">...go I can go I've got a ...open...use my user folder here I've...this...called dn x</p>
+      <p begin="00:50:47.530" end="00:50:53.040">...of the...actually don't mind you see...default their.</p>
+      <p begin="00:50:53.040" end="00:50:57.860">Here yet I using this is really cool this is one of those things like, you know, when we keep we keep saying there's no black</p>
+      <p begin="00:50:57.860" end="00:51:02.840">boxes no black box...says default and one of those...active...</p>
+      <p begin="00:51:02.840" end="00:51:08.840">A default...is me at home and like...alias default that about</p>
+      <p begin="00:51:08.840" end="00:51:11.190">...secrets alias what's that</p>
+      <p begin="00:51:11.190" end="00:51:16.080">I found it default how do they keep track.</p>
+      <p begin="00:51:16.080" end="00:51:19.420">Magic the black box so I could</p>
+      <p begin="00:51:19.420" end="00:51:23.250">...trial-and-error called foo dot text and put the name</p>
+      <p begin="00:51:23.250" end="00:51:28.220">of a dn x in there and then go dn x use...a work.</p>
+      <p begin="00:51:28.220" end="00:51:32.090">Is sometimes the simplest thing works the same thing is all that way all these</p>
+      <p begin="00:51:32.090" end="00:51:37.280">runtime zer in my dn x runtime folder yep...delete, delete</p>
+      <p begin="00:51:37.280" end="00:51:43.800">...these...machine these are all this in their own folded by themselves full control?</p>
+      <p begin="00:51:43.800" end="00:51:47.080">So, let's sword you that knock over here</p>
+      <p begin="00:51:47.080" end="00:51:49.180">...I think is that button slashing.</p>
+      <p begin="00:51:50.810" end="00:51:53.530">Thinking announce here.</p>
+      <p begin="00:51:53.530" end="00:51:54.030">Okay.</p>
+      <p begin="00:51:55.060" end="00:51:58.880">Okay, so, I want...now you have eight minutes</p>
+      <p begin="00:51:59.900" end="00:52:03.750">fun...yoast net and why do this...you explain what</p>
+      <p begin="00:52:03.750" end="00:52:08.680">yoko is and what this is doing so there's no file new project amac there's no visual studio</p>
+      <p begin="00:52:08.680" end="00:52:13.820">...amac at but there's a thing called yeoman and yeoman is a template in generators</p>
+      <p begin="00:52:13.820" end="00:52:18.220">founding project for front-end web developers node folks do this and</p>
+      <p begin="00:52:18.220" end="00:52:20.860">...make their own generators there's one called</p>
+      <p begin="00:52:20.860" end="00:52:25.890">asp net generator that you can install once you've got yeoman and you type...like</p>
+      <p begin="00:52:25.890" end="00:52:29.310">...to get a series of generator choices you can pick from the nancy</p>
+      <p begin="00:52:29.310" end="00:52:32.390">asp that open-source framework or from...empty app or</p>
+      <p begin="00:52:32.390" end="00:52:37.720">...app and then he types...you there...I did here is I went folder</p>
+      <p begin="00:52:37.720" end="00:52:41.850">...what are the folder looks like it is now and I'll say restore the...you restore</p>
+      <p begin="00:52:41.850" end="00:52:45.840">...you dot net utility...basically a new get restore</p>
+      <p begin="00:52:45.840" end="00:52:50.130">...ok that's going out and then in that he says new</p>
+      <p begin="00:52:50.130" end="00:52:54.900">restore it restores not just the it basically everything that needs the</p>
+      <p begin="00:52:54.900" end="00:53:00.420">...pm the our of...new get and now he's in visual studio code and</p>
+      <p begin="00:53:00.420" end="00:53:05.330">we'll go into the web application folder here still going that's okay I'm going to</p>
+      <p begin="00:53:05.330" end="00:53:09.770">...here okay and you see this little fire here in the corn lower left corner which</p>
+      <p begin="00:53:09.770" end="00:53:14.250">is one project click on that?</p>
+      <p begin="00:53:14.250" end="00:53:17.660">That found the project dot jason that little fire represents on the</p>
+      <p begin="00:53:17.660" end="00:53:21.060">...which is an open-source project that knows about these things if you</p>
+      <p begin="00:53:21.060" end="00:53:23.730">...omni sharp dot net you can get in</p>
+      <p begin="00:53:23.730" end="00:53:28.090">...us sense on mac and linux for e-max them.</p>
+      <p begin="00:53:28.090" end="00:53:31.160">Brackets adam whatever makes you happy it comes with</p>
+      <p begin="00:53:31.160" end="00:53:35.950">visual studio code there's been a few people have ask questions about visual</p>
+      <p begin="00:53:35.950" end="00:53:40.410">...code and intelligence...csharp and stuff like that and we want to point out that right now for</p>
+      <p begin="00:53:40.410" end="00:53:44.650">visio code the intelligence for csharp is for asp net projects...or</p>
+      <p begin="00:53:44.650" end="00:53:48.930">...x projects and dn x consul projects you on the network apply why</p>
+      <p begin="00:53:48.930" end="00:53:52.170">...networking...spinning and...</p>
+      <p begin="00:53:53.240" end="00:54:00.230">The unplug the network was...this...important magnets.</p>
+      <p begin="00:54:00.230" end="00:54:07.940">I will fix it while you play with...kind of an ally but swap back...</p>
+      <p begin="00:54:07.940" end="00:54:13.840">Kind of...if now I what does this but.</p>
+      <p begin="00:54:13.840" end="00:54:26.420">We want to prove that it's modular that's fun and you can play you can do fun things.</p>
+      <p begin="00:54:26.420" end="00:54:27.920">So, inherent samples.</p>
+      <p begin="00:54:29.320" end="00:54:37.760">...hello, what's it.</p>
+      <p begin="00:54:37.760" end="00:54:39.780">...and run that.</p>
+      <p begin="00:54:39.780" end="00:54:44.300">Bring up this web one of cool things about what we're doing...connect being open-source and with</p>
+      <p begin="00:54:44.300" end="00:54:49.180">dot net core being open-source is now people can do all kinds</p>
+      <p begin="00:54:49.180" end="00:54:55.400">of crazy stuff with our platforms we had somebody just last weekend.</p>
+      <p begin="00:54:55.400" end="00:55:00.090">Ports net core to freebie sd as an example of something</p>
+      <p begin="00:55:00.090" end="00:55:02.930">...communities done and scott's going to show you some crazy thing</p>
+      <p begin="00:55:02.930" end="00:55:19.170">...go here is asp dot net running on this raspberry</p>
+      <p begin="00:55:19.170" end="00:55:22.390">Now this is not a declaration of support for internet raspberry</p>
+      <p begin="00:55:22.390" end="00:55:26.740">...this is a declaration of this is a really cool hack</p>
+      <p begin="00:55:26.740" end="00:55:31.880">of a lightweight framework that we can start porting all sorts of interesting stuff in this case here on the raspberry</p>
+      <p begin="00:55:31.880" end="00:55:34.460">...arm device I'm using mono.</p>
+      <p begin="00:55:35.700" end="00:55:39.910">...continue to be able to plug these things in any way you want if I get a</p>
+      <p begin="00:55:39.910" end="00:55:43.530">build of the course...runs the...reply maybe I could swap it out and</p>
+      <p begin="00:55:43.530" end="00:55:48.130">with that dot net version manager you can see how I might potentially do something like that so in my</p>
+      <p begin="00:55:48.130" end="00:55:52.120">mind I'm imagining the our that I can be on a raspberry</p>
+      <p begin="00:55:52.120" end="00:55:56.410">...returning jason's...imagining like coyotes scenarios ramming return the</p>
+      <p begin="00:55:56.410" end="00:55:59.640">...of like the moisture content one of my wife's plants.</p>
+      <p begin="00:56:00.860" end="00:56:05.920">Right and then I can scale my application all the way up into asher...from sixty</p>
+      <p begin="00:56:05.920" end="00:56:07.230">...k the sixty-four</p>
+      <p begin="00:56:07.230" end="00:56:12.030">terabytes or whatever that's what I think is exciting about a modular asp dot net,</p>
+      <p begin="00:56:12.030" end="00:56:16.910">you know, it's little this-is just a hello world but I could certainly spin to jason talk to devices</p>
+      <p begin="00:56:16.910" end="00:56:20.400">dpi or whatever I don't know</p>
+      <p begin="00:56:20.400" end="00:56:26.430">...builds work in which builds don't I just know that this build worked so, it is definitely in a hacker</p>
+      <p begin="00:56:26.430" end="00:56:30.830">phase when you're doing crazy stuff like what I'm trying to accomplish here.</p>
+      <p begin="00:56:30.830" end="00:56:32.580">...over there.</p>
+      <p begin="00:56:32.580" end="00:56:37.190">...change one thing...okay.</p>
+      <p begin="00:56:37.190" end="00:56:41.570">The network is not like a slice distances simpler project okay.</p>
+      <p begin="00:56:41.570" end="00:56:44.710">So, he's on code on this...here.</p>
+      <p begin="00:56:44.710" end="00:56:48.670">You see that...sharp their and visual studio code found one project can</p>
+      <p begin="00:56:48.670" end="00:56:51.850">you type context dot...to this is just first</p>
+      <p begin="00:56:51.850" end="00:56:55.220">...like...a zero.</p>
+      <p begin="00:56:55.220" end="00:56:58.240">A dot icio so now do var.</p>
+      <p begin="00:57:03.490" end="00:57:06.940">That way you don't give a hint what it is.</p>
+      <p begin="00:57:06.940" end="00:57:09.660">...so a is an n right.</p>
+      <p begin="00:57:09.660" end="00:57:15.400">So, then you get into stuff so then go and do change...</p>
+      <p begin="00:57:15.400" end="00:57:20.510">Bar a equals...lists situ one then you'll get intelligence and not just auto complete</p>
+      <p begin="00:57:20.510" end="00:57:25.390">and all that setting...intelligence these things I also discussing earlier I</p>
+      <p begin="00:57:25.390" end="00:57:30.130">...to command-line...x dash pastoral because in this particular case I'm on a mac</p>
+      <p begin="00:57:30.130" end="00:57:40.280">I don't have http...now I've got the custer command showing up here.</p>
+      <p begin="00:57:40.280" end="00:57:46.530">And, that's...still using an hosting...goes to the right there the server is castro and</p>
+      <p begin="00:57:46.530" end="00:57:51.460">...uses...uyvy or lib of is fallow likes to call it</p>
+      <p begin="00:57:51.460" end="00:57:53.850">is also the guy who thinks the new get your called nutcase.</p>
+      <p begin="00:57:55.240" end="00:57:58.580">That's...that's not going to happen we're not going to let that happen</p>
+      <p begin="00:57:58.580" end="00:58:02.820">here's hello world running automatic with</p>
+      <p begin="00:58:03.990" end="00:58:07.760">With visio code so if you go up to...</p>
+      <p begin="00:58:07.760" end="00:58:09.810">Dot asp dot net you can go</p>
+      <p begin="00:58:09.810" end="00:58:13.130">and cr continues integration server that is running our</p>
+      <p begin="00:58:13.130" end="00:58:17.900">...regularly you can get involved you can go to get hub slash</p>
+      <p begin="00:58:17.900" end="00:58:22.850">asp net slash home you can find all of this stuff up at www dot</p>
+      <p begin="00:58:22.850" end="00:58:25.830">...basically...that the acinet slash...</p>
+      <p begin="00:58:25.830" end="00:58:30.950">next well and I actually to give a little bit of a plug for that if we go up to asp net</p>
+      <p begin="00:58:30.950" end="00:58:35.170">slashed v next one of the things that we've been doing is every?</p>
+      <p begin="00:58:36.860" end="00:58:38.170">Tuesday.</p>
+      <p begin="00:58:38.170" end="00:58:39.400">With us community</p>
+      <p begin="00:58:39.400" end="00:58:43.620">stand-up basically alive broadcast just like a stand-up</p>
+      <p begin="00:58:43.620" end="00:58:48.970">...stand-up fifteen twenty minutes of what happened that week in</p>
+      <p begin="00:58:48.970" end="00:58:53.370">not you-know-who blog what but literally what got checked in what worked what didn't</p>
+      <p begin="00:58:53.370" end="00:58:57.680">what tester failing what do we, you know, where we heading we've been doing this for twenty nine?</p>
+      <p begin="00:58:57.680" end="00:59:02.430">Different episode they're cool episodes you'll hear us talk about arguing about how we think...thing should be built</p>
+      <p begin="00:59:02.430" end="00:59:08.430">in which look like...we asked people on the status and gives...opinions we look at the...on the</p>
+      <p begin="00:59:08.430" end="00:59:11.360">...to videos yep sodefinitely get involved in</p>
+      <p begin="00:59:11.360" end="00:59:16.280">that every tuesday and there you go if you have it at...in fact I thought that</p>
+      <p begin="00:59:16.280" end="00:59:21.920">one okay we miss the logging stuff so tomorrow...guys cover log yes we did not cover how logging</p>
+      <p begin="00:59:21.920" end="00:59:26.460">works and how to plug the new logging subsystem into diagnostics a...make sure</p>
+      <p begin="00:59:26.460" end="00:59:30.990">...cover that tomorrow but we got everything else you want to cover so all right cool thank you all very much?</p>
+
+    </div>
+  </body>
+</tt>

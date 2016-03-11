@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{322F6F2D-3C65-4FD7-BDC1-7D1432BEA156}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTMLtoSearch</RootNamespace>
+    <AssemblyName>TTMLtoSearch</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Search">
+      <HintPath>..\packages\Microsoft.Azure.Search.1.1.1\lib\net45\Microsoft.Azure.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.1.8.1\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.Azure.2.5.2\lib\net45\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial">
+      <HintPath>..\packages\Microsoft.Spatial.6.13.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BuildSessionMetatdata.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ttml\Abiola_from_Gamsole.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Acquiring_Users_and_Monetizing_Your_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\AllJoyn_Building_Universal_Windows_Apps_that_Discover_Connect_and_Interact_with_Other_Devices_and_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\All_Things_Azure.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\App_Lifecycle_From_Activation_and_Suspension_to_Background_Execution_and_Multitasking_in_Universal_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\App_Packaging_and_Deployment_for_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\App_to_App_Communication_Building_a_Web_of_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Ask_Anders_Anything.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Ask_Us_Anything_About_Visual_Studio_IDE.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Active_Directory_Identity_Management_as_a_Service_for_Modern_Applications.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_API_Apps_for_Web_Mobile_and_Logic_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_App_Service_Architecture.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_IoT_Security.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Media_Services_Developer_Deep_Dive.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Resource_Manager.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Storage_for_Developers_Overview_and_New_Capabilities.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Storage_Performance_Scalability_and_Security.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Azure_Virtual_Machines_Deep_Dive.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\A_Studio_in_the_Palm_of_Your_Hand_Developing_Audio_and_Video_Creation_Apps_for_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Best_Practices_for_Creating_IoT_Solutions_with_Azure.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Be_Even_More_Productive_with_Visual_C_2015_IDE_Tips_and_Tricks_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Accessible_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_and_Monetizing_Applications_through_Microsoft_Azure_Marketplace.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Apps_for_USB_Accessories.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_a_Single_Page_App_Using_Angular_and_TypeScript_Using_Office_365_APIs.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Big_Data_Applications_Using_Azure_HDInsight_Service.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Compelling_Bluetooth_Apps_in_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Consumer_and_Enterprise_Device_Solutions_with_Windows_10_IoT.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Cross_Platform_Mobile_Apps_in_C_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_C_Universal_Apps_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Data_Analytics_Pipelines_Using_Azure_Data_Factory_HDInsight_Azure_ML_and_More.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Faster_More_Capable_Cloud_Powered_Apps_in_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Highly_Scalable_and_Available_SaaS_Applications_with_Azure_SQL_Database.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Network_Aware_Applications_Using_Azure_Resource_Provider_RP_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Resilient_Scalable_Services_with_Microsoft_Azure_Service_Fabric.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Building_Universal_Windows_Games_with_Unity.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Build_the_Next_Big_Thing_with_Azure_s_NoSQL_Service_DocumentDB.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Build_with_Bing_Use_Bing_APIs_and_Tools_to_Enrich_Your_Apps_and_Make_Them_More_Discoverable.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Camera_Developing_Powerful_Camera_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Case_Studies_of_HoloLens_App_Development.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Chatting_with_Snover.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Closing_Ceremony.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Cloud_Authentication_Troubleshooting_and_Recipes_for_Developers.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Connecting_to_OneNote_in_the_Cloud_with_Office_365_APIs.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Connecting_Your_Devices_to_the_Azure_IoT_Suite.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Cortana_Extensibility_in_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Cross_Platform_Continuous_Delivery_with_Release_Management_to_Embrace_DevOps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Cross_Platform_Localization_with_the_Multilingual_App_Toolkit.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\C_6_VB14_and_all_Things_Roslyn.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Data_Binding_Boost_Your_Apps_Performance_Through_New_Enhancements_to_XAML_Data_Binding.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Day_One_Keynote_Presentation.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Debugger_Tips_and_Tricks_for_NET_Developers_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Deep_Dive_into_ASP_NET_5.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Deep_Dive_into_Microsoft_Azure_Service_Fabric_Reliable_Actors.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Deep_Dive_into_XAML_and_NET_Universal_Windows_App_Development.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Deploying_and_Managing_Services_with_Microsoft_Azure_Service_Fabric.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Deploying_Complex_Open_Source_Workloads_on_Azure.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Designing_and_Developing_the_Ultimate_Windows_App_Experience.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Designing_and_Sizing_a_Global_Scale_Telemetry_Platform_on_Azure_Event_Hubs.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Design_UX_Patterns_and_Responsive_Techniques_for_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Developing_3D_Printing_Apps_and_Services_in_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Developing_Audio_and_Video_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Developing_for_HoloLens.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Developing_for_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Developing_Universal_Windows_Apps_in_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Develop_Modern_Native_Applications_with_Azure_Active_Directory.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\DevOps_as_a_Strategy_for_Business_Agility.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Diagnosing_Issues_with_Cloud_Applications_Hosted_in_Azure_IaaS_and_PaaS_Using_Visual_Studio.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Discovering_Windows_10_Devices_Over_Wi_Fi_DNS_SD_API.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Display_Scaling_What_It_Is_and_What_You_Need_to_Know_About_it_to_Have_Great_Visuals.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Entity_Framework_7_Data_for_Web_Phone_Store_and_Desktop.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Extending_Custom_Solutions_with_Excel_PowerPoint_and_Word_Add_ins.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Fast_and_Powerful_Diagnostics_and_Problem_Solving_with_Application_Insights.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Gaining_Real_Time_IoT_Insights_using_Azure_Stream_Analytics_AzureML_and_PowerBI.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Game_Developers_Get_the_Most_Out_of_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Getting_Great_Performance_Out_of_Cordova_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Getting_Started_with_Cross_Platform_Mobile_Development_with_Apache_Cordova.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Getting_Your_Apps_Connected_with_Networking_APIs.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Get_Your_Hands_Dirty_with_the_Office_365_APIs_Authentication_and_SDKs.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Go_Mobile_Login_Sync_Data_and_Connect_to_Enterprise_APIs_with_Azure_App_Service.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Go_Mobile_with_C_Visual_Studio_and_Xamarin.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Hacking_Augmented_Reality_with_Kinect.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Harnessing_the_Full_Power_of_Input_in_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Historical_Debugging_with_IntelliTrace_in_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Hosted_Web_Apps_and_Web_Platform_Innovations.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\HTTP_2_in_Windows_10_Browser_Apps_and_Web_Server.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Innovation_in_C_Code_Generation.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Internet_of_Things_Overview.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Internet_of_Things_Show_Live.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Introducing_ASP_NET_5.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Introducing_DirectInk_Learn_How_to_Unlock_New_Opportunities_Using_Ink_in_Your_App.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Introducing_the_Windows_10_App_Model.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Introducing_Win2D_DirectX_Powered_Drawing_in_C_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Introduction_and_What_s_New_in_Azure_IaaS.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\JavaScript_Frameworks_in_Your_Apps_and_Sites_from_WinJS_and_Beyond.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Lessons_From_Scale_Building_Applications_for_Azure.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Leveraging_Maps_and_Location_Across_Phone_Tablet_and_PC_in_Your_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Localize_Windows_Apps_Using_the_Multilingual_App_Toolkit.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Logic_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Making_Money_with_Office_365.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Managing_Azure_Applications_Using_the_New_Azure_Portal.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Managing_Mobile_Devices_and_Applications_in_an_Enterprise.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Maximize_Your_Coding_Productivity_for_Apps_Devices_and_Services_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Meet_the_Visual_Studio_Code_team.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Memory_and_CPU_Policy_in_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Microsoft_Azure_Service_Fabric_Architecture.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Microsoft_Band_Developing_for_Microsoft_Band_and_Microsoft_Health.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Microsoft_Edge.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Microsoft_Passport_and_Windows_Hello_Moving_Beyond_Passwords_and_Credential_Theft.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Modern_Web_Tooling.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Modern_Web_Tooling_in_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Monetize_and_Promote_Your_Universal_Windows_App_with_Ads.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Money_Fame_and_Flexibility_New_Extensibility_for_Visual_Studio_and_Visual_Studio_Online.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Movie_Creator_and_Video_Turner.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Nano_Server_A_Cloud_Optimized_Windows_Server_for_Developers.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\New_Tools_from_Microsoft_Advertising_to_Help_App_Developers_Grow_Audience_and_Revenue.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\New_XAML_Tools_in_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Next_Generation_Hotspots_Windows_10_Hotspot_2_0.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Office_365_and_Azure_A_Developer_s_Guide_for_Maximizing_the_Cloud.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Office_365_What_s_New.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Office_Development_Matters_and_Here_s_Why_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\On_the_Shoulders_of_Giants_Building_Apps_that_Consume_Modern_SaaS_Endpoints_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Optimizing_Windows_Apps_for_Continuum.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Optimizing_Your_Build_Time_Using_Visual_C_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Outside_of_the_Box.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Overview_of_Cross_Platform_Mobile_Development_with_Office_365.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Printing_Developing_Apps_That_Print_in_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Project_Centennial_Converting_your_Classic_Windows_App_Win32_Net_COM_to_a_Universal_Windows_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Python_and_Node_js_Microsoft_s_Best_Kept_Secrets.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Running_Web_and_Mobile_Apps_on_Azure_App_Service.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Screen_Casting_Develop_Multi_Screen_Universal_Windows_Apps_Using_Casting_Technologies.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Secure_Access_to_Enterprise_Networks_and_VPN_Platform_Enhancements.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Single_Sign_On_with_Secure_Authentication.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Strategies_for_Developing_Cross_Platform_Applications_with_Visual_Studio_2015.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Surface_Hub_Building_Windows_Universal_Apps_for_Surface_Hub_and_the_Large_Screen.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Surviving_Success_Architecting_Web_Sites_and_Services_for_Rapid_Growth.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\The_Lesser_Scotts.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\The_Microsoft_Affiliate_Program.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\The_Next_Generation_of_Azure_Compute_Platform_with_Mark_Russinovich.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\The_Skype_Developer_Platform_and_Skype_Web_Developer_Capabilities.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\The_Windows_10_Story.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Thinking_in_Containers_Building_a_Scalable_Next_Gen_Application_with_Docker_on_Azure.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Tiles_Notifications_and_Action_Center.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Tried_and_True_Practices_for_Transforming_SharePoint_Solutions_to_Cloud_Ready_Solutions.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Universal_Commanding_and_Navigation_in_Your_XAML.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Universal_Windows_Platform.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\User_Data_Working_with_Contacts_Appointments_Text_Messages_and_More_on_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Using_Azure_Search_to_Build_Great_Search_Experiences_in_Mobile_and_Web_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Vision_APIs_Understanding_Images_in_Your_App.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Visualizing_Business_Data_on_any_Device_with_Bing_Maps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_Can_Azure_Do_for_Android_and_iOS_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_for_Azure_Developers_in_Visual_Studio_and_Azure_SDK.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_for_Build_Automation_in_Team_Foundation_Server_and_Visual_Studio_Online.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_in_Azure_Media_Services_this_Year_Indexer_Player_and_Live_Encoder.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_in_C_6_and_Visual_Basic_14.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_in_F12_for_Project_Spartan_.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_in_JavaScript_for_Fast_and_Scalable_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\What_s_New_in_XAML_for_Universal_Windows_Apps.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\When_Bad_Things_Happen_to_Good_Apps_Troubleshooting_Applications_on_Azure_App_Service.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Windows_10_Platform.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Windows_Containers_What_Why_and_How.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Windows_Design_for_Developers_An_Executive_Panel.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Windows_for_Makers_Raspberry_Pi_2_Arduino_and_More.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Windows_Open_Source_Software.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Wi_Fi_Direct_and_Wi_Fi_Direct_Services_API.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Writing_Visual_Studio_Extensions_Tips_and_Tricks_to_Get_Started.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\XAML.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\XAML_Case_Study_Putting_it_All_Together_Office_and_XAML.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\Young_Coders.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\_NET_Compiler_Platform_Roslyn_Analyzers_and_the_Rise_of_Code_Aware_Libraries.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\_NET_Open_Source_Initiative.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\_PROJECT_ASTORIA_Build_Great_Windows_Apps_with_Your_Android_Code.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\_Project_Oxford_Adding_Smart_to_Your_Applications.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ttml\_Project_Spartan_Introducing_the_New_Browser_and_Web_App_Platform_for_Windows_10.mp3.ttml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

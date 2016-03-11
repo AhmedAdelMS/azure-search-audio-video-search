@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.874</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.580" end="00:00:04.010">Has a redoing...</p>
+      <p begin="00:00:04.010" end="00:00:09.670">So, thanks for coming in today shown up I'm brett...lead program manager for</p>
+      <p begin="00:00:09.670" end="00:00:14.610">...accessibility group inside windows operating system group and this is my colleague mr chris</p>
+      <p begin="00:00:14.610" end="00:00:16.630">anderson howdy.</p>
+      <p begin="00:00:16.630" end="00:00:20.870">And, today if you look up here ravel url...to connect</p>
+      <p begin="00:00:20.870" end="00:00:26.130">...and we've done this basically as an example of how can</p>
+      <p begin="00:00:26.130" end="00:00:32.080">we start extending accessibility...new ways to the lexicon project that one of our</p>
+      <p begin="00:00:32.080" end="00:00:36.670">developers did you go to this website to...looks.</p>
+      <p begin="00:00:36.670" end="00:00:41.600">Like powerpoint...subtly different into...it all the text is taken from the</p>
+      <p begin="00:00:41.600" end="00:00:45.300">middle layer...the back-end...this you can listen through</p>
+      <p begin="00:00:45.300" end="00:00:48.930">...listen...screenwriter more importantly depending</p>
+      <p begin="00:00:48.930" end="00:00:53.440">on your device if it's windows device or...device your device</p>
+      <p begin="00:00:53.440" end="00:01:10.000">choice you can connect to in participate...talk more about that as we go on through the session.</p>
+      <p begin="00:01:10.000" end="00:01:15.310">Right there's...feedback...feedback please let us know questions comments</p>
+      <p begin="00:01:15.310" end="00:01:23.410">...also...extensions for you so we can bring more and better information.</p>
+      <p begin="00:01:23.410" end="00:01:27.900">So,...this talk about accessibility and spent about probably seventy years</p>
+      <p begin="00:01:27.900" end="00:01:32.255">...my career talking about accessibility people thinking about it it's really want</p>
+      <p begin="00:01:32.255" end="00:01:36.110">to talk about what is accessibility any...have to do that</p>
+      <p begin="00:01:36.110" end="00:01:40.420">in context with a disability so spend some time talking about different classes</p>
+      <p begin="00:01:40.420" end="00:01:43.910">and disabilities...of possible...those are situational or data</p>
+      <p begin="00:01:43.910" end="00:01:50.260">day or maybe even tempered depending what's going on and then kind of why we do the work.</p>
+      <p begin="00:01:50.260" end="00:01:58.500">So, we'll talk about what motivates us why we like...going on.</p>
+      <p begin="00:01:58.500" end="00:02:00.350">...defect speaker so who are</p>
+      <p begin="00:02:00.350" end="00:02:04.920">...and what is accessibility team and what we think about the parts you think about everyday</p>
+      <p begin="00:02:04.920" end="00:02:10.800">...kind of walk...pieces for and then we're going to take a little journey</p>
+      <p begin="00:02:10.800" end="00:02:14.910">...focus on...because a lot of time they went unspoken developers or</p>
+      <p begin="00:02:14.910" end="00:02:19.490">that convene said hey look I don't know needs to really make and accessible for</p>
+      <p begin="00:02:19.490" end="00:02:22.900">...reader and the truth is it's really</p>
+      <p begin="00:02:22.900" end="00:02:26.910">...this is already in your head and to build a...and talk to and</p>
+      <p begin="00:02:26.910" end="00:02:34.480">app is pretty straightforward easy to do and sort of walked and then from there we're going to</p>
+      <p begin="00:02:34.480" end="00:02:39.880">live...with...and...kind of...you guys theater dance developers and we're</p>
+      <p begin="00:02:39.880" end="00:02:42.950">...look at the to common patterns that we</p>
+      <p begin="00:02:42.950" end="00:02:47.930">...people toknown understand and really?</p>
+      <p begin="00:02:47.930" end="00:02:54.960">...to fix and understand...people with the using people who...screeners.</p>
+      <p begin="00:02:54.960" end="00:03:01.100">So, we dive into the successfully for your app again...design for every designs are</p>
+      <p begin="00:03:01.100" end="00:03:05.410">...the design and really...writing...sketching a picture of it</p>
+      <p begin="00:03:05.410" end="00:03:10.310">...usually good at saying I click on a b happens of</p>
+      <p begin="00:03:10.310" end="00:03:15.330">interactive c and d happens so really you build this nice big-state diagram and</p>
+      <p begin="00:03:15.330" end="00:03:18.890">...only three step to consider which is a start state...</p>
+      <p begin="00:03:18.890" end="00:03:24.300">and...repeat that quite a bit and the talk...make more sense of go along and</p>
+      <p begin="00:03:24.300" end="00:03:28.230">at the end of it the beauty of...is...it turns out to be a fairly</p>
+      <p begin="00:03:28.230" end="00:03:32.180">...amount of code very small number of lines and</p>
+      <p begin="00:03:32.180" end="00:03:37.850">...go something is very accessible...be accessible on the...the desktop analysis</p>
+      <p begin="00:03:37.850" end="00:03:47.530">believable and...to where all of the windows universal platform...</p>
+      <p begin="00:03:47.530" end="00:03:51.260">So, when we think about what is a disability we think about a</p>
+      <p begin="00:03:51.260" end="00:03:55.610">...disabilities and these are some of them and not all of them but some...cognitive</p>
+      <p begin="00:03:55.610" end="00:04:00.850">...you have...need for less information because that's all you can process?</p>
+      <p begin="00:04:00.850" end="00:04:04.700">In some cases you need less information because it's too much stimulus overload</p>
+      <p begin="00:04:04.700" end="00:04:06.980">institute some cases</p>
+      <p begin="00:04:06.980" end="00:04:11.660">...studies with focus autism they find that the less type of data they have</p>
+      <p begin="00:04:11.660" end="00:04:15.480">a available to them action the better they are...function.</p>
+      <p begin="00:04:15.480" end="00:04:18.780">...learning disabilities people...even</p>
+      <p begin="00:04:18.780" end="00:04:24.650">...dyslexia orders calcium where you can't really process fright.</p>
+      <p begin="00:04:24.650" end="00:04:28.870">Process...equations.</p>
+      <p begin="00:04:28.870" end="00:04:31.580">But, the thing I learned disabilities there's always the flipside...are learning</p>
+      <p begin="00:04:31.580" end="00:04:36.420">ability so my case and low-vision I'm legally blind so I learned from really listening</p>
+      <p begin="00:04:36.420" end="00:04:41.140">really well so it's also about bringing data to someone...a way that they can</p>
+      <p begin="00:04:41.140" end="00:04:47.260">consuming whether it's through audio author visuals and look at visual impairments as a range of visual</p>
+      <p begin="00:04:47.260" end="00:04:52.220">impairments what...go through a few samples in the next slides.</p>
+      <p begin="00:04:52.220" end="00:04:58.220">There's motor impairments...about motor impairments is that there's a range of them anymore</p>
+      <p begin="00:04:58.220" end="00:05:02.380">...have parkinson's disease you may have trouble doing fine motor control.</p>
+      <p begin="00:05:02.380" end="00:05:07.340">...also be something more temporary you've broken error and you can't use it how do you</p>
+      <p begin="00:05:07.340" end="00:05:12.080">...the system or more recently a friend of mine had a little baby tommy is</p>
+      <p begin="00:05:12.080" end="00:05:15.130">...baby...the interact with the system.</p>
+      <p begin="00:05:15.130" end="00:05:21.130">That's kind...range of spectrum credibility impact and how people's lives?</p>
+      <p begin="00:05:21.130" end="00:05:23.380">...perception...text size of</p>
+      <p begin="00:05:23.380" end="00:05:29.120">the common thank you get older the ability to read small text decreases.</p>
+      <p begin="00:05:29.120" end="00:05:32.930">So, how do you help that I find that people...you might arms have gotten</p>
+      <p begin="00:05:32.930" end="00:05:36.890">...as I've gotten older I...I try to holdings farther and farther way</p>
+      <p begin="00:05:38.220" end="00:05:41.820">...part of this accessibility getting us to where we have longer arms</p>
+      <p begin="00:05:41.820" end="00:05:46.180">...ok great is...build adapt that because</p>
+      <p begin="00:05:46.180" end="00:05:52.300">excuse me because you're for it may be...need things larger?</p>
+      <p begin="00:05:52.300" end="00:05:55.870">...that you have color perception also so I spent quite</p>
+      <p begin="00:05:55.870" end="00:06:01.680">a time writing reports I put together...some...and some green and yellow and I put a</p>
+      <p begin="00:06:01.680" end="00:06:05.370">little excel spreadsheet I sent it out and probably ten minutes later</p>
+      <p begin="00:06:05.370" end="00:06:09.700">sever managers replied back and I said I'm color-blind accessibility</p>
+      <p begin="00:06:11.040" end="00:06:15.600">so it kinda have to think through the things of it was easy for all forget like</p>
+      <p begin="00:06:15.600" end="00:06:21.150">you get like said we still struggle with this with this particular manager is actually presenting tomorrow and,</p>
+      <p begin="00:06:21.150" end="00:06:25.420">he's red green color-blind...to this day years of working with...we still have...</p>
+      <p begin="00:06:25.420" end="00:06:31.530">wrong colors yes exactly and there's a combination of things color perception and</p>
+      <p begin="00:06:31.530" end="00:06:35.660">...text gets smaller and smaller...process</p>
+      <p begin="00:06:35.660" end="00:06:39.580">...contrast issues now we live in seattle not a lot</p>
+      <p begin="00:06:39.580" end="00:06:40.990">of sunny days.</p>
+      <p begin="00:06:40.990" end="00:06:42.970">But,...walking out in the</p>
+      <p begin="00:06:42.970" end="00:06:47.940">sun chinese my cellphone and suddenly all of data washes out and I find myself</p>
+      <p begin="00:06:47.940" end="00:06:54.830">...into a shadow to try to read to read interact my cellphone because...contrast...</p>
+      <p begin="00:06:54.830" end="00:06:57.050">...and that analogous</p>
+      <p begin="00:06:57.050" end="00:07:00.380">...when contrast goes to zero that could be because you have no</p>
+      <p begin="00:07:00.380" end="00:07:05.830">site or because of situations where you frankly relatively user site, yeah, so,</p>
+      <p begin="00:07:05.830" end="00:07:10.390">for example, I would argue that low-carb very low contrast as appropriate for text messaging and</p>
+      <p begin="00:07:10.390" end="00:07:16.870">cars yes software things should not be doing...driving.</p>
+      <p begin="00:07:16.870" end="00:07:21.150">And, then we have and it has been...have all what are some</p>
+      <p begin="00:07:21.150" end="00:07:25.050">...severe motor functions and really what can you do through</p>
+      <p begin="00:07:25.050" end="00:07:30.400">...technology so really what...accessibility...to us and we think about</p>
+      <p begin="00:07:30.400" end="00:07:34.690">it should about usability that connects lives in this case.</p>
+      <p begin="00:07:34.690" end="00:07:37.280">Steve's able to use has technology to communicate with</p>
+      <p begin="00:07:37.280" end="00:07:43.030">his family his wife and friends and in those simpler case today</p>
+      <p begin="00:07:43.030" end="00:07:47.690">or project...powerpoint out to your device allows me as a presenter to connect</p>
+      <p begin="00:07:47.690" end="00:07:51.450">...in the best possible allows someone with low-vision</p>
+      <p begin="00:07:51.450" end="00:07:55.110">...no vision to hear and...not miss what's going on</p>
+      <p begin="00:07:55.110" end="00:07:59.330">so really for us about how do we connect people through technology</p>
+      <p begin="00:07:59.330" end="00:08:09.700">certainly starts with you and how do we help you build and create a moreaccessible...</p>
+      <p begin="00:08:09.700" end="00:08:12.600">And, that really comes through things why do we want to</p>
+      <p begin="00:08:12.600" end="00:08:16.750">do it well for us again it's really about impacting people's lives</p>
+      <p begin="00:08:18.110" end="00:08:23.090">kind of maximizes if you're app...you're building applications for education or for the</p>
+      <p begin="00:08:23.090" end="00:08:26.920">workplace or just for fun it really allows everybody to kind of interaction</p>
+      <p begin="00:08:26.920" end="00:08:30.840">use application and flows are developers or pragmatic sometimes you</p>
+      <p begin="00:08:30.840" end="00:08:35.370">want test automation so how do I make sure I continue to build my app make sure works</p>
+      <p begin="00:08:35.370" end="00:08:40.160">...work...forward and frankly...doing it's kind of fun it's great to go out help people out</p>
+      <p begin="00:08:40.160" end="00:08:46.340">...think about different ways to really build interaction model between people.</p>
+      <p begin="00:08:46.340" end="00:08:49.150">...parts in the stack.</p>
+      <p begin="00:08:49.150" end="00:08:52.560">So, the top of courses always your app...a different frameworks</p>
+      <p begin="00:08:52.560" end="00:08:54.360">...can use you can use the</p>
+      <p begin="00:08:54.360" end="00:08:59.180">...framework web html framework wintry to if you like</p>
+      <p begin="00:08:59.180" end="00:09:02.830">...kind of flows down through some of the lower layers around url animation</p>
+      <p begin="00:09:03.860" end="00:09:07.420">...little time...animation because it really is the contract.</p>
+      <p begin="00:09:08.550" end="00:09:12.630">Is that the api set that actually says the</p>
+      <p begin="00:09:12.630" end="00:09:19.340">intent of your application so if, you know, you want something to work from button or list box?</p>
+      <p begin="00:09:19.340" end="00:09:24.890">...in a way that allows this...to have a read to someone or</p>
+      <p begin="00:09:24.890" end="00:09:28.890">...action on behalf of somebody.</p>
+      <p begin="00:09:28.890" end="00:09:32.210">And, if you look at throughout the sectors input pieces how do</p>
+      <p begin="00:09:32.210" end="00:09:35.860">you do input for those it can't move well how do you</p>
+      <p begin="00:09:35.860" end="00:09:40.690">render the text so it's easy-to-read for high contrast scenarios now the things</p>
+      <p begin="00:09:40.690" end="00:09:44.450">again enable the other side of that which is assistive technology?</p>
+      <p begin="00:09:45.520" end="00:09:49.890">Scenarios are built-in screenwriter how do you really help someone who</p>
+      <p begin="00:09:49.890" end="00:09:55.680">is blind interact or low-vision reed and interact with the data...on the screen.</p>
+      <p begin="00:09:55.680" end="00:09:57.680">There's some basic voice command control and</p>
+      <p begin="00:09:57.680" end="00:10:01.210">...windows speech recognition and use that same data</p>
+      <p begin="00:10:01.210" end="00:10:05.470">sonata click controls interact with controls nissan example</p>
+      <p begin="00:10:05.470" end="00:10:10.340">that third-party assistive technology to the toby eye tracking help</p>
+      <p begin="00:10:10.340" end="00:10:21.130">...work every day.</p>
+      <p begin="00:10:21.130" end="00:10:26.060">What is it that we kind of think about and own and work on every day and we work on that...layer work</p>
+      <p begin="00:10:26.060" end="00:10:30.590">...html layer work and making sure that your code as easy translate</p>
+      <p begin="00:10:30.590" end="00:10:34.590">...so that way enables net narration if</p>
+      <p begin="00:10:34.590" end="00:10:37.220">...voice command and control</p>
+      <p begin="00:10:37.220" end="00:10:41.940">third-party assistive technology so we run that entire gamut...spend everyday kind of think about how to make a better</p>
+      <p begin="00:10:41.940" end="00:10:46.860">and simpler for you to do that and today's talk focuses primarily</p>
+      <p begin="00:10:46.860" end="00:10:52.530">on screen reading because there's a large benefit that comes from doing this?</p>
+      <p begin="00:10:52.530" end="00:10:54.350">If you work through the api set</p>
+      <p begin="00:10:54.350" end="00:10:58.750">of problems space you end up helping do not only narrator but speech recognition</p>
+      <p begin="00:10:58.750" end="00:11:03.550">third-party apps there's a large amount of benefit gain throughout the entire system</p>
+      <p begin="00:11:03.550" end="00:11:07.820">...just to step back one second is that the narrative probably the best</p>
+      <p begin="00:11:07.820" end="00:11:12.580">demonstration of that protocol layer so bright talked about the ui automation system</p>
+      <p begin="00:11:12.580" end="00:11:15.930">...the fact that defines the protocol between all of the different</p>
+      <p begin="00:11:15.930" end="00:11:20.850">desperate ui frameworks and the various things that need to run on top of</p>
+      <p begin="00:11:20.850" end="00:11:25.100">...so narrator...speech recognition all these things...piped through</p>
+      <p begin="00:11:25.100" end="00:11:31.190">this ui automation layer so it gives this framework agnostic way of doing it so now you can have</p>
+      <p begin="00:11:31.190" end="00:11:36.070">...reading happen across your platform your app regardless of implementation technology</p>
+      <p begin="00:11:36.070" end="00:11:40.160">even if you build using some other thing like unity or something like this you can still</p>
+      <p begin="00:11:40.160" end="00:11:44.660">...through you adoration to allow all of these things to light up so,</p>
+      <p begin="00:11:44.660" end="00:11:48.270">even in cases where you don't necessarily think that there's a direct correlation to assistive</p>
+      <p begin="00:11:48.270" end="00:11:55.840">technology as you can get the benefit of screen reading from europe correct.</p>
+      <p begin="00:11:55.840" end="00:12:00.920">Really well of course things as...get of the time how do I held my every level read aloud the</p>
+      <p begin="00:12:00.920" end="00:12:05.470">brett how do I get my app to read aloud awesome question so today I really call it</p>
+      <p begin="00:12:05.470" end="00:12:09.370">what I'd consider to be as a narrator red-line everybody's written</p>
+      <p begin="00:12:09.370" end="00:12:12.700">...lines everybody sketched red-line...how to</p>
+      <p begin="00:12:12.700" end="00:12:18.140">...and really understand the transitions of their...has anyone here worked with a graphic</p>
+      <p begin="00:12:18.140" end="00:12:24.130">designer anyone yes great have you ever gotten a picture with little lines on...that said this</p>
+      <p begin="00:12:24.130" end="00:12:29.720">...be to pixels wide...should be this color...like rgb a...or in</p>
+      <p begin="00:12:29.720" end="00:12:34.520">...values that you that have to figure out the rgb value is an translate into a...say...</p>
+      <p begin="00:12:34.520" end="00:12:39.260">because they pick some pant on color all that craziness like...the designer red-line...the visual</p>
+      <p begin="00:12:39.260" end="00:12:45.550">...this pixel perfect manifestation of what your ui should look like and all those</p>
+      <p begin="00:12:45.550" end="00:12:50.730">...canvas step-by-step walked over ui...happen what are the color transitions so</p>
+      <p begin="00:12:50.730" end="00:12:55.580">that transition ability to take that same concept have a start state</p>
+      <p begin="00:12:55.580" end="00:13:00.280">a transition an and you'll see that and all of these are these red lines.</p>
+      <p begin="00:13:00.280" end="00:13:02.370">So, we're going to take a moment I'm going to focus on</p>
+      <p begin="00:13:02.370" end="00:13:07.570">...sketch...based on the...menu.</p>
+      <p begin="00:13:07.570" end="00:13:09.740">Now during windows eight</p>
+      <p begin="00:13:09.740" end="00:13:14.630">start many team arrived and said hey we want to put tiles on the start menu but I don't</p>
+      <p begin="00:13:14.630" end="00:13:19.350">want to do from accessibility...so I walked over.</p>
+      <p begin="00:13:19.350" end="00:13:21.220">...conference room and I said</p>
+      <p begin="00:13:21.220" end="00:13:25.930">...to me what it is...this is roughly the sketch and build.</p>
+      <p begin="00:13:25.930" end="00:13:30.160">I said...they mention will have tiles they could be square</p>
+      <p begin="00:13:30.160" end="00:13:35.880">they can be rectangle that could be really large squares...be small squares but they also</p>
+      <p begin="00:13:35.880" end="00:13:40.740">...a grid all right anything else yes they have names okay and they</p>
+      <p begin="00:13:40.740" end="00:13:44.920">have other data...news comes in I...bit about the news.</p>
+      <p begin="00:13:44.920" end="00:13:49.570">Awesome...just described all of...properties of...</p>
+      <p begin="00:13:49.570" end="00:13:55.560">idea we think we can do that but we're really worried about what it means to rearrange</p>
+      <p begin="00:13:55.560" end="00:14:00.540">I said okay we'll tell me what happens as well...put my finger down.</p>
+      <p begin="00:14:00.540" end="00:14:03.490">And, I start moving the item.</p>
+      <p begin="00:14:04.500" end="00:14:09.800">And, nothing really happens until I get to a certain state everything snaps.</p>
+      <p begin="00:14:11.670" end="00:14:16.450">...right so someone code you start...you can.</p>
+      <p begin="00:14:16.450" end="00:14:20.830">Summary start dragging a change visuals...visual changes</p>
+      <p begin="00:14:20.830" end="00:14:25.780">to put the new location let things and left in the right of it, you know, that code happens</p>
+      <p begin="00:14:25.780" end="00:14:31.400">...will yet...now you actually know everything you need to know to kind of put that from</p>
+      <p begin="00:14:31.400" end="00:14:34.060">a start transition and.</p>
+      <p begin="00:14:34.060" end="00:14:38.530">It turns out in this case it's just a drag drop pattern and you start.</p>
+      <p begin="00:14:38.530" end="00:14:42.690">...what happens in...</p>
+      <p begin="00:14:42.690" end="00:14:50.240">Let's take a lock through this.</p>
+      <p begin="00:14:50.240" end="00:14:51.490">Sort-of startup</p>
+      <p begin="00:14:51.490" end="00:14:56.490">narrator which how many people have ever launch narrator on their computer search</p>
+      <p begin="00:14:56.490" end="00:15:02.020">...awesome you...this is an for those of you haven't bringing</p>
+      <p begin="00:15:02.020" end="00:15:08.180">...narrator is most commonly done accidentally ...and by hitting windows</p>
+      <p begin="00:15:08.180" end="00:15:12.950">key enter your machine we'll start talking to you and you will not be able to figure out how to stop it and</p>
+      <p begin="00:15:12.950" end="00:15:17.160">...widely...on the keyboard to make it shut up and you'll figure out</p>
+      <p begin="00:15:17.160" end="00:15:22.370">...windows key enter will make it stop again one of the big changes we've been making we've been working hard</p>
+      <p begin="00:15:22.370" end="00:15:25.610">...narrator and making it a lot more what more</p>
+      <p begin="00:15:25.610" end="00:15:29.640">...lot faster and one of the things that we actually fixed a lot on was to make</p>
+      <p begin="00:15:29.640" end="00:15:34.290">startup and shutdown faster because when people started in there was a long delay they wouldn't correlate that</p>
+      <p begin="00:15:34.290" end="00:15:37.050">behavior...narrator here we put windows</p>
+      <p begin="00:15:37.050" end="00:15:41.700">key enter most narrator commands are access using the caps lock...and this what you do</p>
+      <p begin="00:15:41.700" end="00:15:46.700">special commands otherwise the normal keyboard shortcuts just continue to go through the program so</p>
+      <p begin="00:15:46.700" end="00:15:50.740">...selected the first item so let's see what narrator sets?</p>
+      <p begin="00:15:50.740" end="00:15:53.390">File explore...</p>
+      <p begin="00:15:53.390" end="00:15:56.730">...on selected...</p>
+      <p begin="00:15:56.730" end="00:16:01.260">So,...a bunch of information and error...said it was an item it said that it was a one of three so you</p>
+      <p begin="00:16:01.260" end="00:16:05.350">can see visually we can see...three things...must be talking about the top three things</p>
+      <p begin="00:16:05.350" end="00:16:09.730">...menu...what we arrow down and go to one of the tights in</p>
+      <p begin="00:16:09.730" end="00:16:13.620">visuals main grouped mail search, search.</p>
+      <p begin="00:16:13.620" end="00:16:16.730">Universities under pressure to divest...search.</p>
+      <p begin="00:16:16.730" end="00:16:22.950">You whether three of seven project spartan to of seven so you can</p>
+      <p begin="00:16:22.950" end="00:16:27.920">heroics pardon to of seven...everything things many times yes</p>
+      <p begin="00:16:27.920" end="00:16:33.110">...we can your narrative...information about where it is in the position</p>
+      <p begin="00:16:33.110" end="00:16:38.590">in the list so if you were user...to users you might want reorder the so you can get to the things you</p>
+      <p begin="00:16:38.590" end="00:16:43.580">...commonly early just because it's a grid of visual grid doesn't mean that a</p>
+      <p begin="00:16:43.580" end="00:16:48.660">non sighted person wouldn't care about where they go in this list and, it's</p>
+      <p begin="00:16:48.660" end="00:16:54.400">...courses drag...all its told us that it's ...it...tools to...we heard when it was</p>
+      <p begin="00:16:54.400" end="00:16:59.930">on search actually told us the live tile information all that can be read very easily to you and,</p>
+      <p begin="00:16:59.930" end="00:17:03.990">now we want to do that activity that we talked about in the what reader or the</p>
+      <p begin="00:17:03.990" end="00:17:08.490">walk through which was to rearrange the...so the keyboard</p>
+      <p begin="00:17:08.490" end="00:17:13.260">shortcut which I just learned about yesterday I didn't realize there was an awesome short-cut for this and I love</p>
+      <p begin="00:17:13.260" end="00:17:18.290">keyboard shortcuts so alt shift I believe all shift plus...and</p>
+      <p begin="00:17:18.290" end="00:17:25.400">then error...to allow you to drag-and-drop with your keyboard so let's start operation?</p>
+      <p begin="00:17:25.400" end="00:17:27.620">Drop to place...main before mail-in column three row</p>
+      <p begin="00:17:27.620" end="00:17:32.500">...now drop to place...between whether and calendar and column for row two so</p>
+      <p begin="00:17:32.500" end="00:17:38.080">...we heard that just for those of you are familiar with this we have slowed narrator down</p>
+      <p begin="00:17:38.080" end="00:17:42.270">...from what normal accessible users use it for so we can</p>
+      <p begin="00:17:42.270" end="00:17:51.360">kind of here but even then it's pretty fast so let's do one more time.</p>
+      <p begin="00:17:51.360" end="00:17:54.620">Drop to place...before mail-in column three row two so</p>
+      <p begin="00:17:54.620" end="00:17:59.250">...drop to place in main the name of the groups...place and main.</p>
+      <p begin="00:17:59.250" end="00:18:04.490">Row three column two I believe what...said between male and</p>
+      <p begin="00:18:04.490" end="00:18:09.370">whether so told us all of that information the to items to the side what position was</p>
+      <p begin="00:18:09.370" end="00:18:13.060">...the grid and what the name of the group what's the most contain forward into the next</p>
+      <p begin="00:18:13.060" end="00:18:18.950">...to place...main between male and whether in...row two and then...direct complete as</p>
+      <p begin="00:18:18.950" end="00:18:22.970">all of that information the dry complete all of that stuff that we talked about and it's really the</p>
+      <p begin="00:18:22.970" end="00:18:28.080">same way verbally you communicate like if I...please move one</p>
+      <p begin="00:18:28.080" end="00:18:31.910">...to your right you would know exactly what that what except we're facing differ</p>
+      <p begin="00:18:31.910" end="00:18:35.070">directions you be confused by the direction thing but,</p>
+      <p begin="00:18:35.070" end="00:18:39.010">no, one we confused what activity was or what I was asked me to do and</p>
+      <p begin="00:18:39.010" end="00:18:44.310">he said I've moved the...my right you'll understand that as well the big thing we find on</p>
+      <p begin="00:18:44.310" end="00:18:48.430">...lot of accessibility work is just getting people to think about it</p>
+      <p begin="00:18:48.430" end="00:18:52.110">as normal human communication and not some crazy</p>
+      <p begin="00:18:52.110" end="00:18:55.330">act inspector ui automation tree all</p>
+      <p begin="00:18:55.330" end="00:18:59.420">...stuff instead think about the output of the audible interface you want</p>
+      <p begin="00:18:59.420" end="00:19:02.980">...your program and basically if you're talking someone on the phone and to</p>
+      <p begin="00:19:02.980" end="00:19:10.870">prove this a little further let's just do this for a second and now we're going to see if we can all figure out what</p>
+      <p begin="00:19:10.870" end="00:19:15.050">Drop to place...before mail drop to place main between whether and calendar and column for</p>
+      <p begin="00:19:15.050" end="00:19:21.750">...to complete...everyone know what screens going to look like.</p>
+      <p begin="00:19:21.750" end="00:19:27.730">...at least one person nodding...paying attention that's good...two-fifty...</p>
+      <p begin="00:19:27.730" end="00:19:29.020">All right.</p>
+      <p begin="00:19:29.020" end="00:19:34.020">Great.</p>
+      <p begin="00:19:34.020" end="00:19:41.190">If we all thought it was between the whether encounter than we are right and we listened very carefully.</p>
+      <p begin="00:19:41.190" end="00:19:52.450">So, actually narrator.</p>
+      <p begin="00:19:52.450" end="00:19:55.580">...ability to take what you already know in your app to understand the</p>
+      <p begin="00:19:55.580" end="00:19:59.890">designed to be able to really walk through that narrator red-line</p>
+      <p begin="00:19:59.890" end="00:20:04.680">super important...to examples so chris has</p>
+      <p begin="00:20:04.680" end="00:20:07.960">a download research on some colors.</p>
+      <p begin="00:20:07.960" end="00:20:14.300">Yet...read x...is a great web...at least one person so x</p>
+      <p begin="00:20:14.300" end="00:20:19.320">...did this you do...interesting thing on the science the science of a</p>
+      <p begin="00:20:19.320" end="00:20:23.070">colors and what people think different colors are so he did a survey</p>
+      <p begin="00:20:23.070" end="00:20:28.360">...gettingtwo hundred-thousand people to respond on what they defined color...to be was</p>
+      <p begin="00:20:28.360" end="00:20:33.360">is very interesting if you crowd source your list of colors the names that you get back?</p>
+      <p begin="00:20:33.360" end="00:20:38.990">So, I want to do a little a web...that allows me to browser that list of colors and select one ...</p>
+      <p begin="00:20:38.990" end="00:20:41.450">using a pattern that we found that people often have</p>
+      <p begin="00:20:41.450" end="00:20:46.460">troubles with on the web which kind of these rich list the kinds of things.</p>
+      <p begin="00:20:46.460" end="00:20:50.180">So, as you type...expectation is the...kind</p>
+      <p begin="00:20:50.180" end="00:20:54.850">of narrows down you can go down and select that list by pressing enter on it we see</p>
+      <p begin="00:20:54.850" end="00:20:59.450">...quite often and in some cases as things happen on the</p>
+      <p begin="00:20:59.450" end="00:21:05.640">screen you might have location...tell people information the number of colors...really translator</p>
+      <p begin="00:21:05.640" end="00:21:11.110">things such as in mail apps or things where you think there's always this bad somewhere that</p>
+      <p begin="00:21:11.110" end="00:21:16.110">says loading and sinking and...kinda go through that and see what looks like, yeah, so, we built</p>
+      <p begin="00:21:16.110" end="00:21:21.450">...all sketch the...go through this and we did that same that thing that...lines experience and</p>
+      <p begin="00:21:21.450" end="00:21:26.560">we have our app you so I can see my colors I can select some we can go look</p>
+      <p begin="00:21:26.560" end="00:21:31.350">...I...this...box and go through select and item we can see,</p>
+      <p begin="00:21:31.350" end="00:21:35.820">you know, it turns out that if you ask a large population of people you'll come</p>
+      <p begin="00:21:35.820" end="00:21:42.230">up with a statistically significant selection of vomit oriented colors.</p>
+      <p begin="00:21:42.230" end="00:21:47.330">All right so,...try to scenarios do.</p>
+      <p begin="00:21:47.330" end="00:21:53.790">Http slash local host three thousand slash internet explorer window</p>
+      <p begin="00:21:53.790" end="00:21:59.080">Let's type...jelly.</p>
+      <p begin="00:21:59.080" end="00:22:05.550">Right why number eight zero three four group...so,...not read a lot of</p>
+      <p begin="00:22:05.550" end="00:22:10.230">we asked to we wanted to read the lot number of items the list as</p>
+      <p begin="00:22:10.230" end="00:22:14.550">...which I can actually see I have magnify...windows awesome</p>
+      <p begin="00:22:14.550" end="00:22:20.190">...right here that says how many...selected but we didn't read it and,</p>
+      <p begin="00:22:20.190" end="00:22:24.930">then ave flexing item if sense...slash local host three...luncheon</p>
+      <p begin="00:22:24.930" end="00:22:30.110">injured explore...http slash local host three thousand slash</p>
+      <p begin="00:22:30.110" end="00:22:34.800">raping number...to...fifty-five group...group.</p>
+      <p begin="00:22:34.800" end="00:22:37.750">Group is that what really have yes I...a list item</p>
+      <p begin="00:22:37.750" end="00:22:42.650">sitting narrator so let's start with fixing the number okay great because one of</p>
+      <p begin="00:22:42.650" end="00:22:47.610">these happens visually...typing this shrinks and that's significant because how many things do you want to</p>
+      <p begin="00:22:47.610" end="00:22:52.380">look through well if you can't see that do not that list is narrowing to something you might want to go</p>
+      <p begin="00:22:52.380" end="00:22:58.240">...picking through and looking at so let's talk about the large amount of code it takes to</p>
+      <p begin="00:22:58.240" end="00:23:02.980">do this great so this is my little app I did this using</p>
+      <p begin="00:23:02.980" end="00:23:07.820">the most tacking techniques I could think of that web...known to do so I'm degenerating a big</p>
+      <p begin="00:23:07.820" end="00:23:11.300">...string of gives an in whatever time</p>
+      <p begin="00:23:11.300" end="00:23:16.270">...update the display based on the thing I simply go through and grab all the colors I string can</p>
+      <p begin="00:23:16.270" end="00:23:21.910">...them...and I'm blast...into my inner html this is also perfect</p>
+      <p begin="00:23:21.910" end="00:23:25.560">perfectly...quite accessible...so let's see so,</p>
+      <p begin="00:23:25.560" end="00:23:29.820">we want to read that text every other change which we've got this one attacks...here which says hey</p>
+      <p begin="00:23:29.820" end="00:23:34.780">...text content equals the cullen you so one simple</p>
+      <p begin="00:23:34.780" end="00:23:38.500">thing...property great.</p>
+      <p begin="00:23:38.500" end="00:23:45.740">...alive equals polite so here is our summary element and</p>
+      <p begin="00:23:45.740" end="00:23:51.400">...daschle.</p>
+      <p begin="00:23:51.400" end="00:23:56.250">Because we like politeness...being rude yes we'll save that.</p>
+      <p begin="00:23:56.250" end="00:24:00.050">Go back and refresh...overwork and wellness</p>
+      <p begin="00:24:00.050" end="00:24:05.050">http end-of-life six hundred and seventy two of nine hundred and forty nine</p>
+      <p begin="00:24:05.050" end="00:24:09.850">mesh three hundred and nine of nine hundred and forty nine...fifty.</p>
+      <p begin="00:24:09.850" end="00:24:13.990">Read six of nine hundred and forty nine mesh awesome so</p>
+      <p begin="00:24:13.990" end="00:24:17.480">now the screener consumer completely no than down</p>
+      <p begin="00:24:17.480" end="00:24:22.310">to reasonable number I can go in and start walking through and the selecting colors</p>
+      <p begin="00:24:22.310" end="00:24:26.430">...the most critical...is actually http slash local</p>
+      <p begin="00:24:26.430" end="00:24:30.910">...three thousand is...when you come in six of nine hundred and forty nine</p>
+      <p begin="00:24:30.910" end="00:24:34.480">match zero of nine hundred and forty nine mesh</p>
+      <p begin="00:24:34.480" end="00:24:38.790">...ones when you get to nothing in the list correct and now I know there's nothing in</p>
+      <p begin="00:24:38.790" end="00:24:44.090">...the three exiting narrator all right?</p>
+      <p begin="00:24:44.090" end="00:24:47.130">So,...the next thing which in fact we said that wasn't reading the right thing on each</p>
+      <p begin="00:24:47.130" end="00:24:50.400">...correct so we probably like the</p>
+      <p begin="00:24:50.400" end="00:24:54.790">...a list item but so why is it saying group.</p>
+      <p begin="00:24:54.790" end="00:24:58.370">...just automatically transitioned into a group great...I</p>
+      <p begin="00:24:58.370" end="00:25:01.760">...it visually list I spent the time to like I added keyboard</p>
+      <p begin="00:25:01.760" end="00:25:03.940">...and I was a good web devon</p>
+      <p begin="00:25:03.940" end="00:25:12.290">made the right thing and it still wasn't quite right does not cleric of the doesn't know that is a list I.</p>
+      <p begin="00:25:12.290" end="00:25:13.660">What are the next?</p>
+      <p begin="00:25:13.660" end="00:25:16.930">Career list item great so this big blob of html</p>
+      <p begin="00:25:16.930" end="00:25:22.230">...here lovely you guessing and have to add more attributes you can have another attribute</p>
+      <p begin="00:25:22.230" end="00:25:26.300">...and ari role?</p>
+      <p begin="00:25:26.300" end="00:25:28.020">Now if you haven't done a lot of web development</p>
+      <p begin="00:25:28.020" end="00:25:34.840">there's a key thing going on here for dave's to turn them into accessibility is res.</p>
+      <p begin="00:25:34.840" end="00:25:38.170">Thanks...what...role you</p>
+      <p begin="00:25:38.170" end="00:25:39.430">...general equals.</p>
+      <p begin="00:25:40.510" end="00:25:43.000">Okay.</p>
+      <p begin="00:25:43.000" end="00:25:49.060">That...let's start with that run it.</p>
+      <p begin="00:25:49.060" end="00:25:51.740">Http a http.</p>
+      <p begin="00:25:51.740" end="00:25:56.470">Slash local host three thousand slash a zero percent vertically scroll</p>
+      <p begin="00:25:57.590" end="00:26:00.310">...pascal...number fifty six eighty fifty-seven.</p>
+      <p begin="00:26:01.570" end="00:26:05.690">Illnesses group one research group as beautiful we're closer</p>
+      <p begin="00:26:05.690" end="00:26:09.590">...probably like to know what number I'm on because...visually easy to see</p>
+      <p begin="00:26:09.590" end="00:26:13.520">zero yes that I'm on I'm on number four number</p>
+      <p begin="00:26:13.520" end="00:26:19.540">two number three so let's go ahead and put in the number.</p>
+      <p begin="00:26:19.540" end="00:26:22.410">Ok, so, that's a given...</p>
+      <p begin="00:26:22.410" end="00:26:26.040">Pauses in set.</p>
+      <p begin="00:26:26.040" end="00:26:29.690">And, set size.</p>
+      <p begin="00:26:29.690" end="00:26:33.640">...set...the overall set size so what's your an of m</p>
+      <p begin="00:26:33.640" end="00:26:36.140">...have the index.</p>
+      <p begin="00:26:36.140" end="00:26:39.070">For their and then.</p>
+      <p begin="00:26:39.070" end="00:26:44.960">We need to have the res...he said was deposited insets so...we just go and</p>
+      <p begin="00:26:46.200" end="00:26:52.520">Total count.</p>
+      <p begin="00:26:52.520" end="00:26:54.070">Skr http end-of-life.</p>
+      <p begin="00:26:55.230" end="00:26:59.180">Cloudy blue number ecc to...pascal</p>
+      <p begin="00:26:59.180" end="00:27:03.930">...number fifty six eighty fifty-seven I know why that's not really</p>
+      <p begin="00:27:03.930" end="00:27:07.640">do you...box yes.</p>
+      <p begin="00:27:07.640" end="00:27:11.670">Hilltop so list just like if you think about if you're familiar example or</p>
+      <p begin="00:27:11.670" end="00:27:15.980">html you have this notion of kind of container elements so you have a list boxer list items inside</p>
+      <p begin="00:27:15.980" end="00:27:20.180">...people accessibility needs no both piece of information as well as the case of this we have</p>
+      <p begin="00:27:20.180" end="00:27:24.100">...which we just have lots of diums like...html everything</p>
+      <p begin="00:27:24.100" end="00:27:27.960">...do and we told the excessively system that we had...items</p>
+      <p begin="00:27:29.050" end="00:27:33.840">...analyst by...not tell...was list box let's go and fix that...go here to the index</p>
+      <p begin="00:27:33.840" end="00:27:39.180">html safer are color slacks will say role equals.</p>
+      <p begin="00:27:39.180" end="00:27:43.120">List box.</p>
+      <p begin="00:27:43.120" end="00:27:45.330">Okay, and,...go try that skr</p>
+      <p begin="00:27:45.330" end="00:27:49.690">...http slash local host three thousand slash</p>
+      <p begin="00:27:49.690" end="00:27:56.690">...number btwenty nine-ninety sixty two of nine hundred and forty nine...the</p>
+      <p begin="00:27:56.690" end="00:28:04.510">non select awesome so, we get a two-for-one deal six a...a list...analyst item.</p>
+      <p begin="00:28:04.510" end="00:28:08.210">And, then by default and says okay...must not be selected but doesn't tell us if</p>
+      <p begin="00:28:08.210" end="00:28:14.340">it selected it's not that...this one is clearly deflecting sixty fifty seven.</p>
+      <p begin="00:28:14.340" end="00:28:20.770">Forty-nine non selected okay right so we close career we're getting close.</p>
+      <p begin="00:28:20.770" end="00:28:25.300">So, now if you go back and do another property for when it selected</p>
+      <p begin="00:28:25.300" end="00:28:29.490">...we are a selected equals true ok so here's?</p>
+      <p begin="00:28:29.490" end="00:28:33.170">The mobile html code so in this I have a event and</p>
+      <p begin="00:28:33.170" end="00:28:37.970">...is what I want to tag deflected...adding the selected css style.</p>
+      <p begin="00:28:37.970" end="00:28:40.420">Which shouldn't that be enough?</p>
+      <p begin="00:28:40.420" end="00:28:42.480">...know I could point ok</p>
+      <p begin="00:28:42.480" end="00:28:46.840">...so let's go addison so here we're trying to remove it...I believe we want</p>
+      <p begin="00:28:46.840" end="00:28:47.700">to set attribute.</p>
+      <p begin="00:28:48.880" end="00:28:54.400">...a selected.</p>
+      <p begin="00:28:54.400" end="00:28:57.590">And, then down here when we selected.</p>
+      <p begin="00:28:57.590" end="00:29:01.680">Will simply say the element we're going to insets like to</p>
+      <p begin="00:29:01.680" end="00:29:09.940">equal true awesome the right that's...illustrator?</p>
+      <p begin="00:29:09.940" end="00:29:14.240">...number nine hundred and ninety seven thousand five hundred and seventy</p>
+      <p begin="00:29:14.240" end="00:29:17.890">zero selected reddish grain...one number</p>
+      <p begin="00:29:17.890" end="00:29:22.530">...erode selected...zero three four so</p>
+      <p begin="00:29:22.530" end="00:29:26.070">now exiting narrator hunch code was this</p>
+      <p begin="00:29:26.070" end="00:29:33.240">let's look so this was a lot of code it was pretty painful let's look at</p>
+      <p begin="00:29:33.240" end="00:29:35.280">So, here's the total...we have.</p>
+      <p begin="00:29:36.420" end="00:29:38.750">So, we added three lines of code</p>
+      <p begin="00:29:38.750" end="00:29:42.640">...markup and these two function calls to</p>
+      <p begin="00:29:42.640" end="00:29:47.280">...selected and we made one other change which was to add the ari alive and</p>
+      <p begin="00:29:47.280" end="00:29:53.610">the...about total of six changes to make that pretty accessible that's a nice thing when folks</p>
+      <p begin="00:29:53.610" end="00:29:58.460">...walk through it really what we do we looked at the app dissected the</p>
+      <p begin="00:29:58.460" end="00:30:03.430">image...through it and one of the visual things are going on in the app at that time</p>
+      <p begin="00:30:03.430" end="00:30:13.320">...walk through...few pieces of mark-up and...good.</p>
+      <p begin="00:30:13.320" end="00:30:16.070">Well, there's a second set of things that we see</p>
+      <p begin="00:30:16.070" end="00:30:21.120">folks commonly do and that is that they love to have groups.</p>
+      <p begin="00:30:21.120" end="00:30:24.190">Of things and you don't really know.</p>
+      <p begin="00:30:24.190" end="00:30:29.870">When transitions happen so today if you think about</p>
+      <p begin="00:30:29.870" end="00:30:35.450">...such as music apps and video apps and loading things across the web there's</p>
+      <p begin="00:30:35.450" end="00:30:39.500">always larger level set and you click on it reuse list boxy load</p>
+      <p begin="00:30:39.500" end="00:30:46.090">a bunch of stuff may take a while and then either have one or more things that show up?</p>
+      <p begin="00:30:46.090" end="00:30:47.930">So, in this again we have</p>
+      <p begin="00:30:47.930" end="00:30:51.610">...here's...top-level list a sets.</p>
+      <p begin="00:30:51.610" end="00:30:55.560">And,...loading who knows what it's doing during that load.</p>
+      <p begin="00:30:55.560" end="00:30:59.220">And, then we get to the end there maybe one or more things there.</p>
+      <p begin="00:30:59.220" end="00:31:09.840">So, thank you built pretty much the same app, yeah, based on a color selection.</p>
+      <p begin="00:31:09.840" end="00:31:15.540">So, here instead of using html woodside you...show this behavior and, this is</p>
+      <p begin="00:31:15.540" end="00:31:20.910">...like...the very common pattern we see people reusing the list box in this case I'm</p>
+      <p begin="00:31:20.910" end="00:31:26.550">...have a set of colors we go and we can drill into one of these</p>
+      <p begin="00:31:26.550" end="00:31:31.430">and social all the colors that map...to that color so,</p>
+      <p begin="00:31:31.430" end="00:31:35.580">here we can see three things that are that sorry...couplings...this color and we go</p>
+      <p begin="00:31:35.580" end="00:31:41.640">to different color we have do ...have a few other things and,</p>
+      <p begin="00:31:41.640" end="00:31:46.310">each case what I've done to simulate the common pattern we see people kind of get messed up and we have</p>
+      <p begin="00:31:46.310" end="00:31:49.610">...delay between each one of these screens so,</p>
+      <p begin="00:31:49.610" end="00:31:53.740">if we look we're going to let's see what behavior we get by default out of</p>
+      <p begin="00:31:53.740" end="00:31:57.610">sample because now we have a real list hopefully...a little better oltre</p>
+      <p begin="00:31:57.610" end="00:32:02.440">...read system dark purple system dot elections dot generic dot</p>
+      <p begin="00:32:02.440" end="00:32:05.270">...herbal...light-blue</p>
+      <p begin="00:32:05.270" end="00:32:10.210">...system dot elections dot generic...teal that's is from dot how monthly</p>
+      <p begin="00:32:10.210" end="00:32:17.380">...that part of what if we go in here...one more things...case we navigated</p>
+      <p begin="00:32:17.380" end="00:32:23.150">...now we're sitting in the back we didn't hear I...know there was loading hopefuls it I</p>
+      <p begin="00:32:23.150" end="00:32:28.320">...know where focus went which?</p>
+      <p begin="00:32:28.320" end="00:32:31.600">...have the same process.</p>
+      <p begin="00:32:31.600" end="00:32:33.460">So, what happens in this case is that</p>
+      <p begin="00:32:33.460" end="00:32:38.230">again you look at the start state loading happens loading finishes and</p>
+      <p begin="00:32:38.230" end="00:32:43.230">...really knows kind of what happened so we've got a couple things to fix yep what we</p>
+      <p begin="00:32:43.230" end="00:32:48.510">want to go out...area however that we're naming let's give the naming first?</p>
+      <p begin="00:32:48.510" end="00:32:54.680">Just side effect where sometimes you get the classed name added to your overall name and that's</p>
+      <p begin="00:32:54.680" end="00:32:58.690">...useful what we did we did most of them...a really smart languages</p>
+      <p begin="00:32:58.690" end="00:33:03.560">it takes whatever data item you put into a list view it uses that...the...gels to</p>
+      <p begin="00:33:03.560" end="00:33:09.370">...now that works out great until the object you get is something like a.</p>
+      <p begin="00:33:09.370" end="00:33:11.090">A key value...</p>
+      <p begin="00:33:11.090" end="00:33:13.120">The generic collection which is what some idea</p>
+      <p begin="00:33:13.120" end="00:33:17.270">...this example very easy to do so in that case to string of a key value</p>
+      <p begin="00:33:17.270" end="00:33:23.900">...reads the classing which is very not useful so let's fix that.</p>
+      <p begin="00:33:23.900" end="00:33:29.220">So, in we've added events to grid view which lets you know,</p>
+      <p begin="00:33:29.220" end="00:33:37.010">when the content for containers changing...go to that event?</p>
+      <p begin="00:33:37.010" end="00:33:41.370">And, we'll go in and implement this with our new code.</p>
+      <p begin="00:33:41.370" end="00:33:50.460">Instead of throwing exception.</p>
+      <p begin="00:33:50.460" end="00:33:53.110">...a up moi what.</p>
+      <p begin="00:33:54.570" end="00:33:57.390">This does if we have two types of items in</p>
+      <p begin="00:33:57.390" end="00:34:02.310">our list we have either the top-level things which are these key value...or we have the lower-level</p>
+      <p begin="00:34:02.310" end="00:34:07.670">things which are individual colors since I'm reusing the same grid view for the items</p>
+      <p begin="00:34:07.670" end="00:34:12.190">...use a template selector which...familiar with...model...selector what</p>
+      <p begin="00:34:12.190" end="00:34:16.860">you choose between different views in this code I'm just going to look at the data type of the</p>
+      <p begin="00:34:16.860" end="00:34:22.490">...the term...I need to do so the important call here is automation properties that set</p>
+      <p begin="00:34:22.490" end="00:34:26.820">name and this allows me to control the name...going to be read for this basically when this</p>
+      <p begin="00:34:26.820" end="00:34:31.380">thing gets activated what you want narrator to speak so, it's really easy to go</p>
+      <p begin="00:34:31.380" end="00:34:41.570">set this property using our data model as we can push that in once you have a fixes.</p>
+      <p begin="00:34:41.570" end="00:34:46.290">So, now hopefully if we do right we will hear good it's much better...esri</p>
+      <p begin="00:34:46.290" end="00:34:51.220">...one of twenty-seven...selected so...the</p>
+      <p begin="00:34:51.220" end="00:34:56.360">rest of the...by the...listing the number of items that are in</p>
+      <p begin="00:34:56.360" end="00:34:59.920">there is listing the color name like and all that stuff came for free the</p>
+      <p begin="00:34:59.920" end="00:35:04.350">selection all that's...by default you get a pretty good experience you just need to figure out</p>
+      <p begin="00:35:04.350" end="00:35:09.760">these little details to go tweak exactly exiting...now the nice thing here.</p>
+      <p begin="00:35:09.760" end="00:35:15.360">...the...space it was rf and in the vema cases automation peers.</p>
+      <p begin="00:35:15.360" end="00:35:19.590">...properties, properties...yes thank you.</p>
+      <p begin="00:35:19.590" end="00:35:20.820">All right so,</p>
+      <p begin="00:35:20.820" end="00:35:25.580">we saw a couple of things we didn't get which was ...the.</p>
+      <p begin="00:35:25.580" end="00:35:26.080">Traditions.</p>
+      <p begin="00:35:27.490" end="00:35:30.790">Opposite yes.</p>
+      <p begin="00:35:30.790" end="00:35:35.670">To that let's notify people about what's going on so many click it</p>
+      <p begin="00:35:35.670" end="00:35:37.840">...toutes know that...loading</p>
+      <p begin="00:35:37.840" end="00:35:45.560">...waiting for infinity and the least to give them an idea of what's going on.</p>
+      <p begin="00:35:45.560" end="00:35:49.310">So, we did this html we use the...live region feature which</p>
+      <p begin="00:35:49.310" end="00:35:53.740">allowed us to have a little text area that we said hey every time we change that we want you to go read this to the</p>
+      <p begin="00:35:53.740" end="00:35:58.930">user so they know what...a similar thing here in the geometry soldiers...I'm going to go</p>
+      <p begin="00:35:58.930" end="00:36:04.260">...somewhere in the tree pretty much almost can be anywhere...put this element...so,</p>
+      <p begin="00:36:04.260" end="00:36:11.250">we just want to text...that can...blog at...</p>
+      <p begin="00:36:12.710" end="00:36:19.300">And, then we'll say we want to have it have a automation properties dot</p>
+      <p begin="00:36:20.850" end="00:36:24.920">Setting is...similar what we did before.</p>
+      <p begin="00:36:24.920" end="00:36:29.150">What other important thing we should do here because we already have a progress</p>
+      <p begin="00:36:29.150" end="00:36:33.790">indicator for those pesky sighted people who can see the screen yes having a</p>
+      <p begin="00:36:33.790" end="00:36:39.570">duplicate of text area we'll probably get their way yes so I think we should make this invisible</p>
+      <p begin="00:36:39.570" end="00:36:44.470">...yes but not collapsed not collapsed so...capacity zero</p>
+      <p begin="00:36:44.470" end="00:36:48.960">now it's important for those of you take note home to make the opacity zero not visibility</p>
+      <p begin="00:36:48.960" end="00:36:53.170">...visibly...takes it out the visual tree as will not be seen will not be</p>
+      <p begin="00:36:53.170" end="00:36:58.060">read will not participate in accessibility by making opacity zero it is invisible but</p>
+      <p begin="00:36:58.060" end="00:37:03.930">it is processed so in this case we can use this to trigger the narrator to read the right thing?</p>
+      <p begin="00:37:03.930" end="00:37:08.610">Great so now we just need to have a little function that's</p>
+      <p begin="00:37:08.610" end="00:37:10.430">...right function.</p>
+      <p begin="00:37:10.430" end="00:37:17.640">Of the work for taking over okay great.</p>
+      <p begin="00:37:17.640" end="00:37:26.150">...going to say a function called voidupdates.</p>
+      <p begin="00:37:26.150" end="00:37:33.190">just taken the message insource a reader dot text equals the message we want to say.</p>
+      <p begin="00:37:33.190" end="00:37:37.820">Lovely perfect and we have one lastly to do so that automation properties</p>
+      <p begin="00:37:37.820" end="00:37:42.630">...this and,...loves control.</p>
+      <p begin="00:37:42.630" end="00:37:47.120">Html like makes lots of decisions for you is totally dynamic it's the whole</p>
+      <p begin="00:37:47.120" end="00:37:52.060">hippie free...go whack on things the magically happen example we said we want</p>
+      <p begin="00:37:52.060" end="00:37:56.630">you control we don't want every time it has something to change want you to go in and have control over when this</p>
+      <p begin="00:37:56.630" end="00:38:02.270">happens so we need tells animal...now we want you to read...go notify the user so,</p>
+      <p begin="00:38:02.270" end="00:38:10.490">I think we do this with this awesome line of code which is framework element automation</p>
+      <p begin="00:38:10.490" end="00:38:13.280">The automation ps.</p>
+      <p begin="00:38:13.280" end="00:38:16.660">And,...say from element of the reader and</p>
+      <p begin="00:38:16.660" end="00:38:18.950">...say what we need to hear.</p>
+      <p begin="00:38:20.200" end="00:38:24.770">From the...that...very good thank you...</p>
+      <p begin="00:38:24.770" end="00:38:30.480">That...say the.</p>
+      <p begin="00:38:30.480" end="00:38:33.950">So, the framework automation peer.</p>
+      <p begin="00:38:33.950" end="00:38:35.990">Is this is that implementation</p>
+      <p begin="00:38:35.990" end="00:38:40.330">...we talked about ui automation...you have this protocol to control with the</p>
+      <p begin="00:38:40.330" end="00:38:44.920">screwed or does example they have a set of classes called for automation</p>
+      <p begin="00:38:44.920" end="00:38:49.740">peers and for every element you see on the screen there...automation peer behind-the-scenes and if you</p>
+      <p begin="00:38:49.740" end="00:38:54.570">...custom control you actually create your own automation peer the can do anything you want you-can</p>
+      <p begin="00:38:54.570" end="00:38:58.720">...to accessibility glider screener but you can also do cool things like you</p>
+      <p begin="00:38:58.720" end="00:39:02.600">can omit things from the automation api such...you can say</p>
+      <p begin="00:39:02.600" end="00:39:07.030">I have like thirty levels of nested crud in my visual tree but I don't want any</p>
+      <p begin="00:39:07.030" end="00:39:11.700">that to show up when people read it so I want you to jump down to this nested element inside turned</p>
+      <p begin="00:39:11.700" end="00:39:16.100">...or if...building full custom canvases you do all your own dtwo</p>
+      <p begin="00:39:16.100" end="00:39:20.970">...rendering you can also then make enable that...animation...well screeners can</p>
+      <p begin="00:39:20.970" end="00:39:25.250">reddit regardless of whether it's a full custom control or we're just modifying a</p>
+      <p begin="00:39:25.250" end="00:39:30.110">common control awesome so here we have where we put that busy way is active which this is the</p>
+      <p begin="00:39:30.110" end="00:39:35.590">...so here we want to say...say something right update reader just loading</p>
+      <p begin="00:39:35.590" end="00:39:41.160">...your data is looking?</p>
+      <p begin="00:39:41.160" end="00:39:45.650">The here shortly.</p>
+      <p begin="00:39:45.650" end="00:39:47.690">Come a long sentence.</p>
+      <p begin="00:39:47.690" end="00:39:49.390">But, we've got time.</p>
+      <p begin="00:39:49.390" end="00:39:53.900">And, I felt like I need to express my creativity all right so we've had</p>
+      <p begin="00:39:53.900" end="00:39:58.990">...say something...you see what happens.</p>
+      <p begin="00:39:58.990" end="00:40:00.760">So, hooked up the</p>
+      <p begin="00:40:00.760" end="00:40:06.880">...again a text...to look at and...what to say.</p>
+      <p begin="00:40:06.880" end="00:40:10.870">Color tree black one of...green three of</p>
+      <p begin="00:40:10.870" end="00:40:16.000">...back button your data will be here shortly.</p>
+      <p begin="00:40:16.000" end="00:40:21.160">Okay, we're close I don't know my data accurate exactly going to say that we</p>
+      <p begin="00:40:21.160" end="00:40:25.050">started we now the data is on its way but we don't really know</p>
+      <p begin="00:40:25.050" end="00:40:28.530">what happened so common people ask will do any...tell you that the</p>
+      <p begin="00:40:28.530" end="00:40:33.520">...loaded donated change that message in fact answer really is no we just</p>
+      <p begin="00:40:33.520" end="00:40:38.050">want to put them right on the first option so let's set focus...okay</p>
+      <p begin="00:40:38.050" end="00:40:43.280">great tool to color tree microsoft visual let's not have.</p>
+      <p begin="00:40:43.280" end="00:40:46.210">Narrator read all of my code.</p>
+      <p begin="00:40:46.210" end="00:40:48.570">Okay, now remember that's that line of code that was</p>
+      <p begin="00:40:48.570" end="00:40:55.410">robots taking over that is now the right thing to do the robot should take over right now.</p>
+      <p begin="00:40:55.410" end="00:41:02.370">So, let me explain what this does if we have some items in the grid view we want to restore focus to</p>
+      <p begin="00:41:02.370" end="00:41:06.160">that first item now if you're using example in a</p>
+      <p begin="00:41:06.160" end="00:41:10.920">mode where you're actually doing trues animal navigation between pages example grid view</p>
+      <p begin="00:41:10.920" end="00:41:15.820">does the right thing it sets...focus to the right element it puts the right thing in restores focus</p>
+      <p begin="00:41:15.820" end="00:41:20.770">the last thing it hasn't journal for tracking the stuff however</p>
+      <p begin="00:41:20.770" end="00:41:26.690">the reason we're showing you this way is that we continue to see people who re-use their</p>
+      <p begin="00:41:26.690" end="00:41:31.670">list because there's actually some performance benefits of taking the same list...it again and again...you</p>
+      <p begin="00:41:31.670" end="00:41:34.460">...this way example just doesn't know what to do it's not going</p>
+      <p begin="00:41:34.460" end="00:41:39.170">to steal focus from your app so it's not going to do...by default so,... how to take on some of this</p>
+      <p begin="00:41:39.170" end="00:41:44.420">bird is a case where even as a sighted user the fact that my focus was getting kind of</p>
+      <p begin="00:41:44.420" end="00:41:48.850">...that back button as a keyboard user would be pretty annoying eventually learn that every time you</p>
+      <p begin="00:41:48.850" end="00:41:54.170">could enter to go into something I have hit tab but even more frustrating tonon...user especially</p>
+      <p begin="00:41:54.170" end="00:41:59.680">...narrator just doesn't...correct so what we do here is I scroll interview the</p>
+      <p begin="00:41:59.680" end="00:42:04.170">item that was selected that was last selected or that we want to show I update the layout</p>
+      <p begin="00:42:04.170" end="00:42:07.540">...forces synchronous layout of the grid view so this forces the containers to be</p>
+      <p begin="00:42:07.540" end="00:42:12.430">realized that we have a real example element which we can then go and grab and</p>
+      <p begin="00:42:12.430" end="00:42:16.420">set focus to the reason...and programmatic is so that if the</p>
+      <p begin="00:42:16.420" end="00:42:21.720">users not using the keyboard they won't see the dotted lines the...appear around</p>
+      <p begin="00:42:21.720" end="00:42:29.310">the element so, we've done...I think we're good rights...share...</p>
+      <p begin="00:42:29.310" end="00:42:33.790">...chris was talking about is...if you had a tab into it and restart</p>
+      <p begin="00:42:33.790" end="00:42:38.600">to the list it just takes a long-time to get the to get through the same list</p>
+      <p begin="00:42:38.600" end="00:42:43.080">...hundred things long seven it's really hard electorate</p>
+      <p begin="00:42:43.080" end="00:42:48.800">...seven...it keeps it keeps talking...yeah, I know.</p>
+      <p begin="00:42:48.800" end="00:42:52.200">That's not so...your data will be your shortly.</p>
+      <p begin="00:42:52.200" end="00:42:55.750">...greek kelly green one of seven...also like</p>
+      <p begin="00:42:55.750" end="00:43:03.050">to perfect great...your data will be here short.</p>
+      <p begin="00:43:03.050" end="00:43:07.730">Green three of...I...to go to one of the that is these little shaded</p>
+      <p begin="00:43:07.730" end="00:43:12.930">...designer something secret about my code because I wrote which is anyone that have this</p>
+      <p begin="00:43:12.930" end="00:43:18.840">little cool gradient actually has no colors and let's see what happens?</p>
+      <p begin="00:43:18.840" end="00:43:22.040">Your data will be here shortly.</p>
+      <p begin="00:43:22.040" end="00:43:26.310">My data there yet I'm not looking at...are still waiting yes the</p>
+      <p begin="00:43:26.310" end="00:43:31.180">...still waiting I don't think it's coming okay I...is coming now what do I do so there's one</p>
+      <p begin="00:43:31.180" end="00:43:35.980">other interesting...handle zero case yes zero case.</p>
+      <p begin="00:43:35.980" end="00:43:40.380">So, before we had that...progress guy that was great so here we're going</p>
+      <p begin="00:43:40.380" end="00:43:50.380">...code just update that function call...say hey.</p>
+      <p begin="00:43:50.380" end="00:43:55.330">...you...account equals zero...actually have narrative</p>
+      <p begin="00:43:55.330" end="00:44:00.680">...update reader will say no item.</p>
+      <p begin="00:44:00.680" end="00:44:10.780">...the last case right perfectly run.</p>
+      <p begin="00:44:10.780" end="00:44:13.140">Culturally marine.</p>
+      <p begin="00:44:13.140" end="00:44:17.610">Light-blue...back button your data will be here shortly.</p>
+      <p begin="00:44:17.610" end="00:44:19.860">No, items.</p>
+      <p begin="00:44:19.860" end="00:44:21.720">...possible.</p>
+      <p begin="00:44:21.720" end="00:44:24.360">So, now everything is visual exiting narrator comes</p>
+      <p begin="00:44:24.360" end="00:44:33.690">...honorably and again who...talking again let's go look at that.</p>
+      <p begin="00:44:33.690" end="00:44:36.470">Cycled nineteen explore window.</p>
+      <p begin="00:44:36.470" end="00:44:46.100">Will do this old fashion way?</p>
+      <p begin="00:44:46.100" end="00:44:49.170">We added one-line here.</p>
+      <p begin="00:44:49.170" end="00:44:52.670">And, here we added.</p>
+      <p begin="00:44:52.670" end="00:44:53.820">Fifteen-minute many.</p>
+      <p begin="00:44:55.760" end="00:45:02.510">Convert from relatively inaccessible to...we want exactly</p>
+      <p begin="00:45:02.510" end="00:45:08.740">Interesting to can run that was magnify around once.</p>
+      <p begin="00:45:08.740" end="00:45:09.170">So, the...</p>
+      <p begin="00:45:09.170" end="00:45:16.110">we made earlier that by really helping self-tuning problems you actually help other system technologies.</p>
+      <p begin="00:45:16.110" end="00:45:22.590">Ok, can everyone see the back now?</p>
+      <p begin="00:45:22.590" end="00:45:28.030">Color tree...one of seven...selected back</p>
+      <p begin="00:45:28.030" end="00:45:30.880">...your data will be your shortly.</p>
+      <p begin="00:45:30.880" end="00:45:36.290">...button green dark blue dark teal a of</p>
+      <p begin="00:45:36.290" end="00:45:41.270">...back button your data will be here shortly.</p>
+      <p begin="00:45:41.270" end="00:45:46.460">Dark blue-green...back button and then</p>
+      <p begin="00:45:46.460" end="00:45:50.840">...shortly navigation to-you teal a of...</p>
+      <p begin="00:45:51.940" end="00:45:53.770">Non selected exiting</p>
+      <p begin="00:45:53.770" end="00:45:58.690">narrator so again by looking at that nice narrow slice of highly screeners work</p>
+      <p begin="00:45:58.690" end="00:46:02.340">you get the benefit now of magnify or tracking focus</p>
+      <p begin="00:46:02.340" end="00:46:07.290">again resumed in if you didn't have that had to look that long list and with the magnify around</p>
+      <p begin="00:46:07.290" end="00:46:12.250">...lost it's hard-to-find a place again so really a little bit of work and narrator goes along</p>
+      <p begin="00:46:12.250" end="00:46:22.730">...helping people magnification and other systems technologies.</p>
+      <p begin="00:46:22.730" end="00:46:25.270">So, kind of a golda davis do, you know,</p>
+      <p begin="00:46:25.270" end="00:46:30.130">how to walk to your app now think about each step think about the start state the transition</p>
+      <p begin="00:46:30.130" end="00:46:33.640">and the end as you can see really from html</p>
+      <p begin="00:46:33.640" end="00:46:36.410">silos about six lines of code, for example,...</p>
+      <p begin="00:46:36.410" end="00:46:41.580">was about fifteen sixteen lines of code and from something is not usable</p>
+      <p begin="00:46:41.580" end="00:46:46.560">...useful by screenwriter very short amount of lines of code again html world</p>
+      <p begin="00:46:46.560" end="00:46:52.120">...ariel really helps...be decker in a way that can be accessible...automation</p>
+      <p begin="00:46:52.120" end="00:46:59.030">peers and automation properties...used to help make...be accessible?</p>
+      <p begin="00:46:59.030" end="00:47:01.080">And, then from doing that.</p>
+      <p begin="00:47:01.080" end="00:47:01.430">Again,</p>
+      <p begin="00:47:01.430" end="00:47:06.260">all of this goes across all the windows universal platform on a mobile device for the desktop you're</p>
+      <p begin="00:47:06.260" end="00:47:10.320">going to get that same experience eone and there's a couple links down here really about</p>
+      <p begin="00:47:10.320" end="00:47:15.280">...get more information is developer and the to links to thesource code is</p>
+      <p begin="00:47:15.280" end="00:47:19.200">actress work on today you look at the to projects there's a branch which is the</p>
+      <p begin="00:47:19.200" end="00:47:23.600">demo start branch and there's a branch that's master which is the final version that has everything</p>
+      <p begin="00:47:23.600" end="00:47:29.220">workings you can look at those two and see what we had to change.</p>
+      <p begin="00:47:29.220" end="00:47:31.360">Thank you very much yes...questions</p>
+      <p begin="00:47:31.360" end="00:47:36.540">...have time for questions...for...if you want to go to the microphone if anybody has questions</p>
+      <p begin="00:47:36.540" end="00:47:42.440">...to things let us know think there's a microphone they're over there.</p>
+      <p begin="00:47:42.440" end="00:47:45.090">...catches...we're going to be in the</p>
+      <p begin="00:47:45.090" end="00:47:56.770">windows insider lunge windows insider lounge the next ninety minutes so if you have any question about anything yes.</p>
+      <p begin="00:47:56.770" end="00:48:04.810">Do we know anything about the ability accessibility group and...</p>
+      <p begin="00:48:04.810" end="00:48:11.880">Okay, great moi.</p>
+      <p begin="00:48:11.880" end="00:48:13.540">Yeah, so, the question was</p>
+      <p begin="00:48:13.540" end="00:48:18.420">we aware of the and vp group around accessibility microsoft and the answer is I guess we</p>
+      <p begin="00:48:18.420" end="00:48:22.560">are definitely that they would be interested information...thanks.</p>
+
+    </div>
+  </body>
+</tt>

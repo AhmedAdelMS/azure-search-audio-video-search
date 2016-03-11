@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.928</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.500" end="00:00:09.200">All right let's get started welcome everybody thank you so much for</p>
+      <p begin="00:00:09.200" end="00:00:14.580">being here I'm sure you've been to a lot of great sessions over the last couple of days hopefully...excited about</p>
+      <p begin="00:00:14.580" end="00:00:20.850">the things you've seen so far excited about windows stand in general.</p>
+      <p begin="00:00:20.850" end="00:00:21.830">My name is currently</p>
+      <p begin="00:00:21.830" end="00:00:26.740">...I'm a program manager on the operating systems group I specifically work</p>
+      <p begin="00:00:26.740" end="00:00:30.470">on the authentication platform team that's part of operating system security.</p>
+      <p begin="00:00:31.570" end="00:00:36.080">Really excited to be here today and representing all of the folks back home we've</p>
+      <p begin="00:00:36.080" end="00:00:39.830">been working on a lot of cool things that we've done with windows</p>
+      <p begin="00:00:39.830" end="00:00:45.260">ten and I'm really happy to be here today to show some of that to you I know most of you in this room are developers</p>
+      <p begin="00:00:47.770" end="00:00:51.730">...into authentication that's why you're here but I would like to get a better sense</p>
+      <p begin="00:00:51.730" end="00:00:55.770">of the spread in terms of what kind of services...apps you guys</p>
+      <p begin="00:00:55.770" end="00:01:00.140">right what identity providers you target primarily so just to show</p>
+      <p begin="00:01:00.140" end="00:01:05.320">of hands folks who writes or deal with apps or design apps that</p>
+      <p begin="00:01:05.320" end="00:01:09.840">perhaps connect to microsoft services or are relying</p>
+      <p begin="00:01:09.840" end="00:01:16.320">parties of microsoft identity's systems like microsoft account or...active directory?</p>
+      <p begin="00:01:16.320" end="00:01:23.540">All right fair share how about non microsoft identity providers?</p>
+      <p begin="00:01:23.540" end="00:01:28.330">...folks on video...no-hands I'm just getting a lot</p>
+      <p begin="00:01:28.330" end="00:01:33.620">...finally how many of your in the business of providing these services</p>
+      <p begin="00:01:33.620" end="00:01:38.320">your yourselves identity providers see a few hands very cool or you own</p>
+      <p begin="00:01:38.320" end="00:01:42.180">...speed apps that perhaps you have your own specific identity</p>
+      <p begin="00:01:42.180" end="00:01:46.660">deeds that aren't met by off-the-shelf the identity providers so there's a</p>
+      <p begin="00:01:46.660" end="00:01:52.890">...share of everyone in this room I think I'd be given the given the show of hands at</p>
+      <p begin="00:01:52.890" end="00:01:57.430">be presented acquire...if I highlighted the fact once again the</p>
+      <p begin="00:01:57.430" end="00:02:01.750">authentication happens to be something that every app has to</p>
+      <p begin="00:02:01.750" end="00:02:08.400">deal with in one form or the other and ...users of.</p>
+      <p begin="00:02:08.400" end="00:02:10.670">...a place where the expect.</p>
+      <p begin="00:02:10.670" end="00:02:12.770">Amazing curator experiences that are</p>
+      <p begin="00:02:12.770" end="00:02:17.420">...to their likings and dared likes and dislikes but they don't want to</p>
+      <p begin="00:02:17.420" end="00:02:21.810">sign-in to get those like you'll get those preferences in last thing they want to</p>
+      <p begin="00:02:21.810" end="00:02:24.570">...yet another login form where I have to</p>
+      <p begin="00:02:24.570" end="00:02:32.320">enter my passwords or even worse sign up for a new account.</p>
+      <p begin="00:02:32.320" end="00:02:35.330">The initial experience that and app has the</p>
+      <p begin="00:02:35.330" end="00:02:40.220">first sixty to ninety seconds is so crucial to that apps success and...</p>
+      <p begin="00:02:40.220" end="00:02:47.480">and unfortunately or fortunately authentication happens to be a part of those for sixty seconds.</p>
+      <p begin="00:02:47.480" end="00:02:48.780">So, what I want to talk about</p>
+      <p begin="00:02:48.780" end="00:02:54.060">today and really focus on over the next forty five minutes</p>
+      <p begin="00:02:54.060" end="00:02:58.900">or to talk to-you about some of the improvements we've made in windows stand specifically</p>
+      <p begin="00:02:58.900" end="00:03:04.040">around the authentication platform and then deep dive and give you guys</p>
+      <p begin="00:03:04.040" end="00:03:08.120">in insight into the specific authentication features that are new in the platform</p>
+      <p begin="00:03:08.120" end="00:03:13.480">the infrastructure the api is that you can using your apps the api as you can use in your</p>
+      <p begin="00:03:13.480" end="00:03:18.050">apps to provide services to other apps such that?</p>
+      <p begin="00:03:18.050" end="00:03:20.660">We are able to deliver those created experiences that are</p>
+      <p begin="00:03:20.660" end="00:03:26.850">users have grown to expect and will love once we deliver them?</p>
+      <p begin="00:03:26.850" end="00:03:29.700">...and go into that I do want to take some time and</p>
+      <p begin="00:03:29.700" end="00:03:33.660">just share with you some of thetrends</p>
+      <p begin="00:03:33.660" end="00:03:37.910">...this share some of the context in...some of the background</p>
+      <p begin="00:03:37.910" end="00:03:43.090">that as we were looking at what we want to do with windows ten that were</p>
+      <p begin="00:03:43.090" end="00:03:50.030">critical design decisions that went into creating this infrastructure that I want to share with you today.</p>
+      <p begin="00:03:50.030" end="00:03:54.680">...trends the tell us today that a lot of people are working</p>
+      <p begin="00:03:54.680" end="00:03:59.320">not only just at work but virtually everywhere how many of you send</p>
+      <p begin="00:03:59.320" end="00:04:04.320">your first email way before...make it into your workplace?</p>
+      <p begin="00:04:04.320" end="00:04:08.940">All right I would have expected all hands I'll take about ninety percent of them last</p>
+      <p begin="00:04:08.940" end="00:04:13.870">email we after you've left work finding people are working wherever they</p>
+      <p begin="00:04:13.870" end="00:04:17.340">can...on the road in the error cafes.</p>
+      <p begin="00:04:18.780" end="00:04:23.460">On devices that the love so the ubiquity of devices my mobile phone in</p>
+      <p begin="00:04:23.460" end="00:04:27.760">my pocket mining laptop my desktop all of these service</p>
+      <p begin="00:04:27.760" end="00:04:32.430">...of these devices eventually...things...folks are using to</p>
+      <p begin="00:04:32.430" end="00:04:38.680">access resources that they really want to get their hands-on obviously.</p>
+      <p begin="00:04:38.680" end="00:04:43.420">The ubiquity of these devices and the nature of the geo locations that folks are</p>
+      <p begin="00:04:43.420" end="00:04:48.100">using these devices in is leading to...the software...a service and</p>
+      <p begin="00:04:48.100" end="00:04:53.630">it's obviously growing faster than we've ever known.</p>
+      <p begin="00:04:53.630" end="00:04:57.890">People expect to have the ability to work when how and how they</p>
+      <p begin="00:04:57.890" end="00:04:59.080">choose?</p>
+      <p begin="00:04:59.080" end="00:05:01.370">Using the devices the love.</p>
+      <p begin="00:05:01.370" end="00:05:02.310">And, the apps</p>
+      <p begin="00:05:02.310" end="00:05:07.810">they're familiar with this isn't some small shift in the workplace this is</p>
+      <p begin="00:05:07.810" end="00:05:13.730">in an entirely new business culture the best way to</p>
+      <p begin="00:05:13.730" end="00:05:16.770">...these new needs we have to just</p>
+      <p begin="00:05:16.770" end="00:05:23.250">make it possible for folks to do what they're already doing in a much more seamless way.</p>
+      <p begin="00:05:23.250" end="00:05:29.160">When we were thinking about what we wanted to do with windows...this was at the back of our minds with windows</p>
+      <p begin="00:05:29.160" end="00:05:34.130">eight-point one we obviously created the most personal pc ever</p>
+      <p begin="00:05:34.130" end="00:05:37.970">...everything from the ground-up all the way down to the kernel</p>
+      <p begin="00:05:37.970" end="00:05:41.010">of to all the way up to the user experiences and delivered of really,</p>
+      <p begin="00:05:41.010" end="00:05:44.540">really to rated personal experience that over the last</p>
+      <p begin="00:05:44.540" end="00:05:49.320">...years we've learned that...customers like of course there's a lot of things that they do not like that</p>
+      <p begin="00:05:49.320" end="00:05:54.760">they were also a lot of things that they did like things like access to the store the applications</p>
+      <p begin="00:05:54.760" end="00:05:59.610">they could download the personalization the start screen that was created to them</p>
+      <p begin="00:05:59.610" end="00:06:04.180">the seamless ness that was...available across devices and all these</p>
+      <p begin="00:06:04.180" end="00:06:10.300">first personalization we're just proving seamlessly wherever you...access them?</p>
+      <p begin="00:06:10.300" end="00:06:14.700">But, when we started looking at windows stand we were like all right a lot of people are</p>
+      <p begin="00:06:14.700" end="00:06:17.250">using pc's for work?</p>
+      <p begin="00:06:17.250" end="00:06:18.690">Clearly.</p>
+      <p begin="00:06:18.690" end="00:06:23.190">The foundation how the modern worker works in a cloud first mobile force</p>
+      <p begin="00:06:23.190" end="00:06:25.370">work has changed.</p>
+      <p begin="00:06:25.370" end="00:06:29.610">So, what is it that we need to do how do we advance the platform from what we did in windows</p>
+      <p begin="00:06:29.610" end="00:06:32.230">...to the next version</p>
+      <p begin="00:06:32.230" end="00:06:37.770">...found was most of the services the folks really like we're all dependent on the</p>
+      <p begin="00:06:37.770" end="00:06:43.900">availability of a microsoft account which was primarily a consumer great identity system and all</p>
+      <p begin="00:06:43.900" end="00:06:48.840">of the things that we wanted to make available all of the things that trudy light and, you know,</p>
+      <p begin="00:06:48.840" end="00:06:53.680">light the windows experience up did not participate with</p>
+      <p begin="00:06:53.680" end="00:06:55.080">of work or school accounts?</p>
+      <p begin="00:06:56.110" end="00:07:00.960">You guys sure, went to the keynote yesterday we talked about adder and how successful it has</p>
+      <p begin="00:07:00.960" end="00:07:06.590">been how folks of written millions and millions of a applications their users</p>
+      <p begin="00:07:06.590" end="00:07:11.890">millions of applications we have a very popular identity system in as your as well as</p>
+      <p begin="00:07:11.890" end="00:07:16.140">...active directory avce of you guys know when we looked at...active directory and looked</p>
+      <p begin="00:07:16.140" end="00:07:19.850">...windows eight-point one we found that well didn't really talk to each other and they</p>
+      <p begin="00:07:19.850" end="00:07:25.880">weren't exactly integrated so that was something we wanted to address with windows</p>
+      <p begin="00:07:25.880" end="00:07:30.890">So, I'm happy to announce the windows stan connects to both</p>
+      <p begin="00:07:30.890" end="00:07:35.380">personal and work clouds and provides a great</p>
+      <p begin="00:07:35.380" end="00:07:40.200">user experience as well as a seamless developer experience all the things that</p>
+      <p begin="00:07:40.200" end="00:07:43.000">consumers due to love with windows eight-point one</p>
+      <p begin="00:07:43.000" end="00:07:49.850">we brought that to windows stand for work and school accounts.</p>
+      <p begin="00:07:49.850" end="00:07:51.710">I want to give you guys a little bit of</p>
+      <p begin="00:07:51.710" end="00:07:54.410">insight about what I'm referring to here so.</p>
+      <p begin="00:07:55.840" end="00:08:01.180">What we did was we revamped again the entire?</p>
+      <p begin="00:08:01.180" end="00:08:06.220">The entirely of...the windows experience so imagine you go to a retailer pick</p>
+      <p begin="00:08:06.220" end="00:08:12.200">up a brand-new shrink-wrapped device you pick it up you seen this screen before in the</p>
+      <p begin="00:08:12.200" end="00:08:17.130">...experience we added some new flows.</p>
+      <p begin="00:08:17.130" end="00:08:20.410">Right into the...box experience.</p>
+      <p begin="00:08:20.410" end="00:08:22.440">This particular screen where who owns your</p>
+      <p begin="00:08:22.440" end="00:08:27.510">pc's a very interesting one this is after a while hot lots and lots</p>
+      <p begin="00:08:27.510" end="00:08:31.490">and lots...in debates and going back and forth what we want to do</p>
+      <p begin="00:08:31.490" end="00:08:36.080">was...wanted to come up with the easiest question to ask</p>
+      <p begin="00:08:36.080" end="00:08:41.650">consumers to express as to what it is that they were going to use this device for given all the</p>
+      <p begin="00:08:41.650" end="00:08:46.220">trends that we're seeing the bring your own device the choose your own device</p>
+      <p begin="00:08:46.220" end="00:08:50.070">come to my work I'm going to hand you a device of just bring your own,</p>
+      <p begin="00:08:50.070" end="00:08:52.370">you know, device that you've been using and,</p>
+      <p begin="00:08:52.370" end="00:08:56.400">it's very difficult to eventually ask...going to</p>
+      <p begin="00:08:56.400" end="00:08:59.770">...device for because a lot of us two-person things on</p>
+      <p begin="00:08:59.770" end="00:09:04.320">work devices work things on personal devices look at the end of the day be landed</p>
+      <p begin="00:09:04.320" end="00:09:09.060">on the best way to really understand what the intent of this devices at</p>
+      <p begin="00:09:09.060" end="00:09:11.940">...user expects to use it is based on</p>
+      <p begin="00:09:11.940" end="00:09:17.780">of who owns it so right here if a user goes ahead and chooses this</p>
+      <p begin="00:09:17.780" end="00:09:21.580">action this device actually used glossed about organization</p>
+      <p begin="00:09:21.580" end="00:09:26.110">it's a david for us to make following decisions on things like...we understand what</p>
+      <p begin="00:09:26.110" end="00:09:29.960">...primarily...using this for and what are some of the things that we</p>
+      <p begin="00:09:29.960" end="00:09:33.920">need to do so if you choose that right from again the out</p>
+      <p begin="00:09:33.920" end="00:09:37.800">...box experience similar to how used to have microsoft account integration in</p>
+      <p begin="00:09:37.800" end="00:09:43.350">...box experience here you can log in with your work or school account that are powered by act as</p>
+      <p begin="00:09:43.350" end="00:09:47.260">our active directory as soon as you enter your user name you</p>
+      <p begin="00:09:47.260" end="00:09:48.720">have navigated to</p>
+      <p begin="00:09:49.970" end="00:09:53.860">...specific so in this case since bob that can also</p>
+      <p begin="00:09:53.860" end="00:09:58.090">dotcom was the account that was used login?</p>
+      <p begin="00:09:58.090" end="00:10:00.280">The user was navigated to control</p>
+      <p begin="00:10:00.280" end="00:10:05.180">...particular tenants web page in a as...active directory I was possible for can</p>
+      <p begin="00:10:05.180" end="00:10:08.890">...to brand this out of box experience now in this case</p>
+      <p begin="00:10:08.890" end="00:10:12.900">this very interesting where there a couple of...organizations one</p>
+      <p begin="00:10:12.900" end="00:10:16.920">...there's one said that is cloud only in which case</p>
+      <p begin="00:10:16.920" end="00:10:20.560">...navigate to their cloud endpoint and measure makes it possible</p>
+      <p begin="00:10:20.560" end="00:10:24.960">for-you to brand experience as you see here if I go back there was a general screen</p>
+      <p begin="00:10:24.960" end="00:10:28.940">that said well this is what you need to do on the screen but as soon as you enter your password, you know,</p>
+      <p begin="00:10:28.940" end="00:10:31.160">things that ip push down your branding your</p>
+      <p begin="00:10:31.160" end="00:10:35.540">logo things like that can integrated right into the of</p>
+      <p begin="00:10:35.540" end="00:10:42.310">box experience now if you were of federated organization and you had it on</p>
+      <p begin="00:10:42.310" end="00:10:47.130">prime existence as well and...this device was on your premises this would have seamlessly</p>
+      <p begin="00:10:47.130" end="00:10:51.930">navigate to your on prime authentication page and now you have the ability</p>
+      <p begin="00:10:51.930" end="00:10:55.700">organizations due to add things like to factor authentication and</p>
+      <p begin="00:10:55.700" end="00:11:00.570">things like that more interestingly what we wanted to do was not...you know, in order to</p>
+      <p begin="00:11:00.570" end="00:11:05.860">bringing the work productivity and use cases</p>
+      <p begin="00:11:05.860" end="00:11:10.790">for customers to windows we also have to make sure that we bring all the expectations</p>
+      <p begin="00:11:10.790" end="00:11:15.260">that ip has along with them so they can control the devices</p>
+      <p begin="00:11:15.260" end="00:11:21.230">and manage them and make it possible for folks to access resources so it is possible for</p>
+      <p begin="00:11:21.230" end="00:11:23.720">...to integrate with</p>
+      <p begin="00:11:23.720" end="00:11:27.820">a mobile device management solution of their liking again if the</p>
+      <p begin="00:11:27.820" end="00:11:32.940">account that I used to sign into this machine and back in the discovery phase there was a</p>
+      <p begin="00:11:32.940" end="00:11:37.330">mobile device management solution integrated with this particular account</p>
+      <p begin="00:11:37.330" end="00:11:41.200">the policies would be pushed out again all of this is happening right in the</p>
+      <p begin="00:11:41.200" end="00:11:44.430">...box experience that customer, you know,</p>
+      <p begin="00:11:44.430" end="00:11:49.800">gets to see when they just go and buy device from...retailer there was an excellent</p>
+      <p begin="00:11:49.800" end="00:11:54.730">...yesterday on how to manage mobile devices and application</p>
+      <p begin="00:11:54.730" end="00:11:59.790">the enterprise if you guys are interested do check this out folks online as well you could I</p>
+      <p begin="00:11:59.790" end="00:12:03.970">have links at the end of all the...and refer to and keep an eye out this</p>
+      <p begin="00:12:03.970" end="00:12:09.740">blue little thing so...be my way of...you know, what are the relevant...you...check out?</p>
+      <p begin="00:12:09.740" end="00:12:11.400">All right so.</p>
+      <p begin="00:12:12.460" end="00:12:16.890">That's one games great so you're telling me that I can goal user can pick up a</p>
+      <p begin="00:12:16.890" end="00:12:21.090">...device and they can go ahead and provision it for the workplace.</p>
+      <p begin="00:12:21.090" end="00:12:23.540">Okay,...what does that really mean</p>
+      <p begin="00:12:23.540" end="00:12:29.650">so I'm going to show you what that...</p>
+      <p begin="00:12:29.650" end="00:12:35.440">Let me switch...to...</p>
+      <p begin="00:12:35.440" end="00:12:38.420">Device here so I'm actually going to</p>
+      <p begin="00:12:38.420" end="00:12:43.110">use the example of my only count this is a bc that I</p>
+      <p begin="00:12:43.110" end="00:12:47.060">...having gone through the exact same process that I showed you and I</p>
+      <p begin="00:12:47.060" end="00:12:49.400">used my credentials that I got from my workplace.</p>
+      <p begin="00:12:50.530" end="00:12:54.660">Right from you see the...personalize it knows</p>
+      <p begin="00:12:54.660" end="00:13:00.030">why am this is a brand new way of logging into windows so far folks have been able log in with</p>
+      <p begin="00:13:00.030" end="00:13:04.120">...local account with...microsoft account with a</p>
+      <p begin="00:13:04.120" end="00:13:09.350">active directory account now it's also possible log...windows with your asher active directory</p>
+      <p begin="00:13:09.350" end="00:13:12.280">...all those work or school credentials that</p>
+      <p begin="00:13:12.280" end="00:13:18.990">...been using to access services you like bakke right into the operating system.</p>
+      <p begin="00:13:18.990" end="00:13:22.870">Obviously the true magic...now...made...to my desktop now</p>
+      <p begin="00:13:22.870" end="00:13:26.950">can I get productive so a lot of the things that</p>
+      <p begin="00:13:26.950" end="00:13:31.130">...powered with microsoft accounts and windows zero-point-one we've actually like I</p>
+      <p begin="00:13:31.130" end="00:13:36.420">said brought them two eight two ten and made them work with</p>
+      <p begin="00:13:36.420" end="00:13:39.090">...directory accounts as well.</p>
+      <p begin="00:13:39.090" end="00:13:40.140">So, one of the applications</p>
+      <p begin="00:13:40.140" end="00:13:44.870">...the helps media pretty productive I work is the word applications</p>
+      <p begin="00:13:44.870" end="00:13:49.760">...example of the word preview app that I got from the beta store this is a</p>
+      <p begin="00:13:49.760" end="00:13:56.030">universal windows...windows app that has a is been optimize</p>
+      <p begin="00:13:56.030" end="00:14:00.740">for touch works across all screen sizes welcomes</p>
+      <p begin="00:14:00.740" end="00:14:04.590">me I can go ahead redux like...ebook and, you know,</p>
+      <p begin="00:14:04.590" end="00:14:09.010">now...setting things up this is the...ever using this application so it's</p>
+      <p begin="00:14:09.010" end="00:14:14.010">getting ready for all that stuff that it lets people do?</p>
+      <p begin="00:14:14.010" end="00:14:15.390">Now this is pretty cool it knows</p>
+      <p begin="00:14:15.390" end="00:14:23.350">why am and was able to welcome me and because they are it that's nice.</p>
+      <p begin="00:14:23.350" end="00:14:29.110">And,...or I don't want to...that document.</p>
+      <p begin="00:14:29.110" end="00:14:32.190">I clicked on the wrong document the basically what it</p>
+      <p begin="00:14:32.190" end="00:14:36.950">just did was there as soon as I said all right let's go ahead you-know-who I am was able to</p>
+      <p begin="00:14:36.950" end="00:14:41.590">pull down the last recently use document list that I have no this is a curator list of all the things that I've been</p>
+      <p begin="00:14:41.590" end="00:14:46.520">doing on various devices so there was this one particular document that I was playing withwhich is</p>
+      <p begin="00:14:46.520" end="00:14:53.090">hosted on our work sharepoint actually that I was editing what I was still motel?</p>
+      <p begin="00:14:53.090" end="00:14:57.010">Word is accessing it downloading it and then</p>
+      <p begin="00:14:57.010" end="00:14:59.440">while opens it up.</p>
+      <p begin="00:14:59.440" end="00:15:01.000">...here...they've been</p>
+      <p begin="00:15:01.000" end="00:15:05.630">no prompts yet this application has been able to leverage logged on</p>
+      <p begin="00:15:05.630" end="00:15:10.570">users identity to create a good welcome experience but beyond that it's been able to</p>
+      <p begin="00:15:10.570" end="00:15:15.060">use the same users identity to retrieve the necessary authentication</p>
+      <p begin="00:15:15.060" end="00:15:21.160">artifacts to be able to talk to the services that let's see do the things it can do best.</p>
+      <p begin="00:15:21.160" end="00:15:24.900">All right other apps that make be while I use a lot of my</p>
+      <p begin="00:15:24.900" end="00:15:29.590">...app this is another example of the same thing it was able to just use my logged on</p>
+      <p begin="00:15:29.590" end="00:15:33.190">users identity star sinking e-mail my calendar</p>
+      <p begin="00:15:33.190" end="00:15:39.200">app you get the point basically all these apps...available in-box with windows</p>
+      <p begin="00:15:39.200" end="00:15:43.020">zero-point-one have been updated to also work with your work identity's now</p>
+      <p begin="00:15:44.430" end="00:15:47.530">...do want to highlight something else.</p>
+      <p begin="00:15:47.530" end="00:15:49.560">So, I...myself reminders</p>
+      <p begin="00:15:49.560" end="00:15:54.610">...in forget so here I have an invite in my on my calendar</p>
+      <p begin="00:15:54.610" end="00:16:01.350">where I have a link I'm going to click on this link this link opens in adj.</p>
+      <p begin="00:16:01.350" end="00:16:05.830">Navigating to a link that was again hosted on a work.</p>
+      <p begin="00:16:05.830" end="00:16:08.300">Sharepoint...</p>
+      <p begin="00:16:08.300" end="00:16:11.330">...they should have been on a faster network but.</p>
+      <p begin="00:16:11.330" end="00:16:11.980">I just</p>
+      <p begin="00:16:11.980" end="00:16:16.560">was able to access a resource in the browser levels hosted in</p>
+      <p begin="00:16:16.560" end="00:16:20.760">unprotected sharepoint but once again no props.</p>
+      <p begin="00:16:20.760" end="00:16:27.250">So, that's pretty cool.</p>
+      <p begin="00:16:27.250" end="00:16:29.160">Access you can see.</p>
+      <p begin="00:16:29.160" end="00:16:32.290">With windows eight we're bringing work and school</p>
+      <p begin="00:16:32.290" end="00:16:37.010">accounts as a first-class citizen and lighting up all those experiences that</p>
+      <p begin="00:16:37.010" end="00:16:40.830">...loved with windows eight-point one furthermore</p>
+      <p begin="00:16:40.830" end="00:16:42.930">we're making it possible for</p>
+      <p begin="00:16:42.930" end="00:16:47.320">ip to have all the necessary controls they need in order to manage and</p>
+      <p begin="00:16:47.320" end="00:16:53.510">...the services that the choose the experience is pretty</p>
+      <p begin="00:16:53.510" end="00:16:59.280">easy so self deployment is going to be really easy for consumers the reasons I'm</p>
+      <p begin="00:16:59.280" end="00:17:04.280">telling you all these things is I just wanted to share with you all of things that...that have gone</p>
+      <p begin="00:17:04.280" end="00:17:09.270">into windows ten and the identity investments we've made so this is just one more avenue</p>
+      <p begin="00:17:09.270" end="00:17:12.650">...targeting this market...workers the modern</p>
+      <p begin="00:17:12.650" end="00:17:16.700">workers where we want to make windows the most productive operating</p>
+      <p begin="00:17:16.700" end="00:17:25.059">system ever another avenue to write those apps and get them into the hands of the consumer.</p>
+      <p begin="00:17:25.059" end="00:17:26.999">Of course platforms.</p>
+      <p begin="00:17:26.999" end="00:17:29.709">Are great the platforms are only?</p>
+      <p begin="00:17:29.709" end="00:17:33.059">As good as the experiences the light up while.</p>
+      <p begin="00:17:33.059" end="00:17:37.339">Identity plays a pivotal role in some of the things that I showed you the things that really</p>
+      <p begin="00:17:37.339" end="00:17:40.799">...are the applications the verticals that we</p>
+      <p begin="00:17:40.799" end="00:17:46.109">built on top of these identity constructs that eventually let users</p>
+      <p begin="00:17:46.109" end="00:17:50.849">be productive that's what it's all about people want to get stuff done we're in the business</p>
+      <p begin="00:17:50.849" end="00:17:58.090">off enabling them to getting there so as we were looking at?</p>
+      <p begin="00:17:58.090" end="00:18:02.450">Identity and the investments we've made obviously wanted to make sure that be</p>
+      <p begin="00:18:02.450" end="00:18:07.050">evolve the platform in a...ve made it possible for and</p>
+      <p begin="00:18:07.050" end="00:18:10.320">we created the right tools for you guys to integrate with the</p>
+      <p begin="00:18:10.320" end="00:18:14.150">...such that the experiences that I showed you</p>
+      <p begin="00:18:14.150" end="00:18:18.400">it was possible for-you to deliver even better experiences and that's</p>
+      <p begin="00:18:18.400" end="00:18:23.340">what we're doing that we thought it was a great opportunity just take a step back summa out and</p>
+      <p begin="00:18:23.340" end="00:18:28.330">not...solve the problem at hand but dig into consideration all</p>
+      <p begin="00:18:28.330" end="00:18:33.020">of the feedback we've gotten over the over the last few years from</p>
+      <p begin="00:18:33.020" end="00:18:37.460">developers so thank you for all the feedback...you've been giving us from</p>
+      <p begin="00:18:37.460" end="00:18:42.680">identity providers we've been working with a lot of them and at the end that,</p>
+      <p begin="00:18:42.680" end="00:18:45.870">you know,...and consumers so the main</p>
+      <p begin="00:18:45.870" end="00:18:50.200">set of challenges we found one pretty obvious there was no</p>
+      <p begin="00:18:50.200" end="00:18:54.750">...active directory on windows so there has to be a natively of doing things.</p>
+      <p begin="00:18:54.750" end="00:18:59.480">To we...a few competing development models.</p>
+      <p begin="00:18:59.480" end="00:19:04.200">If you are targeting microsoft accounts we had online of...online id authenticate</p>
+      <p begin="00:19:04.200" end="00:19:08.710">...set api anyone of...those.</p>
+      <p begin="00:19:08.710" end="00:19:11.310">Couple...then if you</p>
+      <p begin="00:19:11.310" end="00:19:15.010">are targeting as you're active directory we have.</p>
+      <p begin="00:19:15.010" end="00:19:19.360">Active directory authentication library which was an...box library that was available for you guys to</p>
+      <p begin="00:19:19.360" end="00:19:21.200">including your apps.</p>
+      <p begin="00:19:21.200" end="00:19:25.970">If you were targeting other third-party services then we had the web authentication broker</p>
+      <p begin="00:19:25.970" end="00:19:30.070">api that have been hugely popular but at the end of the day all of them were</p>
+      <p begin="00:19:30.070" end="00:19:32.060">very different api is at the end of</p>
+      <p begin="00:19:32.060" end="00:19:39.420">...about but trying to enable very similar use cases and they had their shortcomings.</p>
+      <p begin="00:19:39.420" end="00:19:39.920">We also</p>
+      <p begin="00:19:39.920" end="00:19:43.780">heard from our third from our partners where the.</p>
+      <p begin="00:19:44.820" end="00:19:47.190">Api is or the capabilities available in</p>
+      <p begin="00:19:47.190" end="00:19:51.670">the platform weren't letting them really deliver the experience that they wanted</p>
+      <p begin="00:19:51.670" end="00:19:57.310">to their consumers and finally all of these things lead to</p>
+      <p begin="00:19:57.310" end="00:20:01.040">...where users are having to.</p>
+      <p begin="00:20:01.040" end="00:20:05.820">Enter their user name and passwords all over the place the experiences they were seeing</p>
+      <p begin="00:20:05.820" end="00:20:10.740">the authentication...when that...so we figured well with all of these things</p>
+      <p begin="00:20:12.740" end="00:20:17.340">while we're bringing the new let's bridge the old and make it all better and</p>
+      <p begin="00:20:17.340" end="00:20:21.460">that led to the berth off web account manager</p>
+      <p begin="00:20:21.460" end="00:20:26.510">this is primarily what I want to spend my time talking to you guys about today.</p>
+      <p begin="00:20:26.510" end="00:20:30.070">The web account manager is a brand new feature added in windows</p>
+      <p begin="00:20:30.070" end="00:20:34.660">...it is an authentication infrastructure that allows</p>
+      <p begin="00:20:34.660" end="00:20:38.530">absence services to request tokens.</p>
+      <p begin="00:20:39.620" end="00:20:45.690">And, unsigned and, be able to...services in a seamless way.</p>
+      <p begin="00:20:45.690" end="00:20:48.810">It also enables identity providers of service</p>
+      <p begin="00:20:48.810" end="00:20:54.880">providers to natively plug into the operating system and provide those services to other apps.</p>
+      <p begin="00:20:54.880" end="00:20:56.730">So, I'm going to give you guys</p>
+      <p begin="00:20:56.730" end="00:21:01.160">...quick examples what I'm going to go...do now is give you an example so they get</p>
+      <p begin="00:21:01.160" end="00:21:04.760">...insight about what I'm talking about so let's look at some code.</p>
+      <p begin="00:21:04.760" end="00:21:09.200">After that I'll give you a little high via high over a high-level overview of what's</p>
+      <p begin="00:21:09.200" end="00:21:14.140">really happening under the hood and then we'll go back and look at these api specifically and what I'd</p>
+      <p begin="00:21:14.140" end="00:21:19.130">like to do is just provide you with the functional behavior of these api so that when you download the</p>
+      <p begin="00:21:19.130" end="00:21:26.210">samples and you start playing with them you understand what's going on all right?</p>
+      <p begin="00:21:26.210" end="00:21:41.050">...which blower.</p>
+      <p begin="00:21:41.050" end="00:21:42.320">All right.</p>
+      <p begin="00:21:42.320" end="00:21:47.760">So, here have very basic app so one of the things I'd like to do</p>
+      <p begin="00:21:47.760" end="00:21:52.440">as I'm going through these examples is focus on the act of getting a token so that you can talk</p>
+      <p begin="00:21:52.440" end="00:21:57.360">to services but not per say the process once you get a token and how do you</p>
+      <p begin="00:21:57.360" end="00:21:58.760">doctor specific services so</p>
+      <p begin="00:21:58.760" end="00:22:03.510">I'll be focusing on getting the token part and then I'll be pointing you to</p>
+      <p begin="00:22:03.510" end="00:22:07.740">...really interesting talks that talk about specifically how you target these services that</p>
+      <p begin="00:22:07.740" end="00:22:12.250">...what...this app machine front of you is pretty</p>
+      <p begin="00:22:12.250" end="00:22:17.480">basic similar to how you just saw the office app as soon as it was run it knew who I was and</p>
+      <p begin="00:22:17.480" end="00:22:22.210">it greeted me this application there's something very similar?</p>
+      <p begin="00:22:22.210" end="00:22:28.560">First thing in order to do so what is really doing is the for.</p>
+      <p begin="00:22:28.560" end="00:22:33.430">We've added a new api in the web in the web authentication core manager</p>
+      <p begin="00:22:33.430" end="00:22:36.250">or the web account manager name space.</p>
+      <p begin="00:22:36.250" end="00:22:40.610">Which is request token asic?</p>
+      <p begin="00:22:40.610" end="00:22:45.220">Request openness...is one of the main api as you be using a lot to request token as the</p>
+      <p begin="00:22:45.220" end="00:22:50.760">name suggests in order to request a token you have to...result</p>
+      <p begin="00:22:50.760" end="00:22:54.460">a request parameter that you pass into this api.</p>
+      <p begin="00:22:55.540" end="00:23:00.930">The...parameter actually takes in a few things, things like.</p>
+      <p begin="00:23:00.930" end="00:23:07.320">Well, who the provider is...this token from things like what is the client id</p>
+      <p begin="00:23:07.320" end="00:23:12.810">what is the scope for which you want the token force of the typical...so you're requesting a</p>
+      <p begin="00:23:12.810" end="00:23:17.760">token to be able to talk to a services a service and you're saying art please get me</p>
+      <p begin="00:23:17.760" end="00:23:23.980">and token I wanted from this provider here's the client id so you can pass in a lot of</p>
+      <p begin="00:23:23.980" end="00:23:29.110">the specifically a specific data that the various providers one</p>
+      <p begin="00:23:29.110" end="00:23:35.180">in my particular case what I'm doing is as you can see I am targeting?</p>
+      <p begin="00:23:35.180" end="00:23:39.700">The asher active directory provided...microsoft identity provider so</p>
+      <p begin="00:23:39.700" end="00:23:44.020">the first thing I do is get a handle to the provider I use the api under web</p>
+      <p begin="00:23:44.020" end="00:23:48.940">account authentication core manager called find account provider asic.</p>
+      <p begin="00:23:48.940" end="00:23:51.230">You pass in the unique identity of</p>
+      <p begin="00:23:51.230" end="00:23:54.640">the id of the provider you're trying to target.</p>
+      <p begin="00:23:54.640" end="00:23:59.120">I'll go into the details of how this becomes more interesting before the time being I'm getting back a</p>
+      <p begin="00:23:59.120" end="00:24:03.450">handle a provider that is a unique...way to</p>
+      <p begin="00:24:03.450" end="00:24:07.150">...my request as to who I'm going after.</p>
+      <p begin="00:24:07.150" end="00:24:08.050">Then I go ahead</p>
+      <p begin="00:24:08.050" end="00:24:14.520">entry the request where the web token request object takes in the provider.</p>
+      <p begin="00:24:14.520" end="00:24:16.420">The scope.</p>
+      <p begin="00:24:16.420" end="00:24:20.510">The id of this particular app as it's been registered with the</p>
+      <p begin="00:24:20.510" end="00:24:24.330">...that I'm talking to and finally the resource I'm trying</p>
+      <p begin="00:24:24.330" end="00:24:29.060">to target so in this case what's going to happen is I'm going to request as soon as</p>
+      <p begin="00:24:29.060" end="00:24:32.620">execute I'm going to request to get back...token to be able</p>
+      <p begin="00:24:32.620" end="00:24:38.370">to talk to the resource which is graft of windows dot net</p>
+      <p begin="00:24:38.370" end="00:24:40.810">after that once they get this request I'm</p>
+      <p begin="00:24:40.810" end="00:24:50.320">...passive into a welcome svqs splash screen e.</p>
+      <p begin="00:24:50.320" end="00:24:56.120">I'm running on a...so things might be more slow than normal.</p>
+      <p begin="00:24:56.120" end="00:25:00.110">What you're going to see here so by the way I what a forgot to mention was that I'm on the</p>
+      <p begin="00:25:00.110" end="00:25:04.570">...device that I gave you the demo on where I showed you the various apps...and</p>
+      <p begin="00:25:04.570" end="00:25:09.070">...active directory so what just happened here was I was able to use the same set</p>
+      <p begin="00:25:09.070" end="00:25:10.810">api and deliver the same</p>
+      <p begin="00:25:10.810" end="00:25:15.270">...experience that been box apps listed there were no authentication</p>
+      <p begin="00:25:15.270" end="00:25:21.240">props so this is new on windows eight-point one key wasn't possible</p>
+      <p begin="00:25:21.240" end="00:25:25.430">to deliver a single sign-out experience using as our active directory the</p>
+      <p begin="00:25:25.430" end="00:25:29.740">user had to at least authenticate what's but now given that the user</p>
+      <p begin="00:25:29.740" end="00:25:34.530">log in to the operating system with their act with their accounts it is</p>
+      <p begin="00:25:34.530" end="00:25:41.850">possible using the new infrastructure for apps to be able to request tokens that map to it?</p>
+      <p begin="00:25:41.850" end="00:25:45.010">Great so let's switch back I want to give you guys a little bit of</p>
+      <p begin="00:25:45.010" end="00:25:51.660">insight into what's what's happening one of the things that I want to highlight is that this</p>
+      <p begin="00:25:51.660" end="00:25:56.180">infrastructures not just geared towards microsoft identity's this is</p>
+      <p begin="00:25:56.180" end="00:26:01.160">an extensible infrastructure so I'm just using the example of what I want to do is because</p>
+      <p begin="00:26:01.160" end="00:26:06.870">there to audiences to...manager the first one being the apps that want tokens and the second</p>
+      <p begin="00:26:06.870" end="00:26:11.380">one being providers that are in the business of issuing tokens some</p>
+      <p begin="00:26:11.380" end="00:26:16.190">focusing first on the app side api and the app side of things.</p>
+      <p begin="00:26:16.190" end="00:26:22.040">And, just to bring home the point using a first party provider so that</p>
+      <p begin="00:26:22.040" end="00:26:27.820">become manager is part of windows the actors and waller</p>
+      <p begin="00:26:27.820" end="00:26:30.920">and application that wants to talk to and identity service</p>
+      <p begin="00:26:30.920" end="00:26:35.770">or provider this could be one cloud these could be many clouds of just in order to make</p>
+      <p begin="00:26:35.770" end="00:26:40.170">things look less complicated of just combine them in one cloud?</p>
+      <p begin="00:26:40.170" end="00:26:43.740">And, then there's the web account provider.</p>
+      <p begin="00:26:43.740" end="00:26:50.200">The flow...using the request token a sinking api that I just showed you</p>
+      <p begin="00:26:50.200" end="00:26:54.840">...the necessary context...account manager gets that request</p>
+      <p begin="00:26:54.840" end="00:26:59.470">processes it the first thing it does is it figures out how do I</p>
+      <p begin="00:26:59.470" end="00:27:04.970">already know about this account or this request in my cash if so I'm just going to return it to you</p>
+      <p begin="00:27:04.970" end="00:27:11.610">this is obviously to make sure that performances of...most importance.</p>
+      <p begin="00:27:11.610" end="00:27:15.470">Let's say there was nothing in the cache the next thing it does is it breaks open the request</p>
+      <p begin="00:27:15.470" end="00:27:18.500">...got and looks at the provider that was passed</p>
+      <p begin="00:27:18.500" end="00:27:22.330">in the request object and figures out whether.</p>
+      <p begin="00:27:22.330" end="00:27:25.260">Of the can't provider match corresponding to that</p>
+      <p begin="00:27:25.260" end="00:27:29.340">id was available on windows or not.</p>
+      <p begin="00:27:29.340" end="00:27:31.650">Another thing I before I keep...I want to</p>
+      <p begin="00:27:31.650" end="00:27:36.550">highlight so here app the orange box and the confer wider the box</p>
+      <p begin="00:27:36.550" end="00:27:45.890">of the bottom there just windows universal...just apps.</p>
+      <p begin="00:27:45.890" end="00:27:50.490">...manager is able to ascertain that yes I have this provider available this app is</p>
+      <p begin="00:27:50.490" end="00:27:55.450">installed so what it does then is activates the corresponding web contra</p>
+      <p begin="00:27:55.450" end="00:27:58.750">...application and passes in all the context that</p>
+      <p begin="00:27:58.750" end="00:28:02.310">it got from the original calling application along</p>
+      <p begin="00:28:02.310" end="00:28:07.580">with things like the package family name so that the contra vid or has all the</p>
+      <p begin="00:28:07.580" end="00:28:10.890">context couple other things it does is it</p>
+      <p begin="00:28:10.890" end="00:28:16.430">...you know, it make sure that the contra wider is</p>
+      <p begin="00:28:16.430" end="00:28:21.200">...the foreground make sure that all of the things from in doing perspective and user experience perspective</p>
+      <p begin="00:28:21.200" end="00:28:25.310">are done correctly so let you don't have to deal with it now if</p>
+      <p begin="00:28:25.310" end="00:28:28.940">this becomes provider which is just...already knows who the user is</p>
+      <p begin="00:28:28.940" end="00:28:34.610">in my case it did in some cases let's say you had an application</p>
+      <p begin="00:28:34.610" end="00:28:39.250">a third-party identity provider for club that you have the app installed a new</p>
+      <p begin="00:28:39.250" end="00:28:44.180">previously just log into that...because flow you want to use it in that case no</p>
+      <p begin="00:28:44.180" end="00:28:46.050">prompts obviously all you see is</p>
+      <p begin="00:28:46.050" end="00:28:52.610">an authenticateauthorization to the request that you just made but if not the</p>
+      <p begin="00:28:52.610" end="00:28:56.800">...provider can go ahead and authenticate the user?</p>
+      <p begin="00:28:56.800" end="00:28:58.680">Retrieve this token.</p>
+      <p begin="00:28:58.680" end="00:29:03.670">Facet back to the web icon manager where we put in the...just to make sure that the next time if</p>
+      <p begin="00:29:03.670" end="00:29:08.070">there same request comes in within a particular couple of seconds are able to have this</p>
+      <p begin="00:29:08.070" end="00:29:13.000">backed really fast we...we categorically did that because you wanted to make sure that this</p>
+      <p begin="00:29:13.000" end="00:29:17.980">platform and this infrastructure skilled across-the-board as you guys know windows is going</p>
+      <p begin="00:29:17.980" end="00:29:22.640">to run a lot of devices all the way from really cheap...to really expensive surface</p>
+      <p begin="00:29:22.640" end="00:29:27.470">...and the resources available on these devices are obviously really</p>
+      <p begin="00:29:27.470" end="00:29:32.170">different so we wanted to make sure that you the app developer didn't have to worry about how you</p>
+      <p begin="00:29:32.170" end="00:29:35.630">were going to scale your apps to work on all these devices we just inherently to</p>
+      <p begin="00:29:35.630" end="00:29:39.740">care off how that would just work.</p>
+      <p begin="00:29:39.740" end="00:29:43.180">So, once we cash that token...the data that we got back from the</p>
+      <p begin="00:29:43.180" end="00:29:47.710">...whether we pass that token back to the application in the form of the request</p>
+      <p begin="00:29:47.710" end="00:29:51.330">result I'm going to deep dive into the request result and kind of</p>
+      <p begin="00:29:51.330" end="00:29:56.170">you crack open what is in this request result that's more than just token.</p>
+      <p begin="00:29:56.170" end="00:30:03.980">Eventually the application uses this token and talks to the identity service.</p>
+      <p begin="00:30:03.980" end="00:30:07.850">So, this is really funny one of my one of the pc's those using the demo is</p>
+      <p begin="00:30:07.850" end="00:30:10.080">installing the latest flight.</p>
+      <p begin="00:30:10.080" end="00:30:11.780">That's one.</p>
+      <p begin="00:30:11.780" end="00:30:14.710">Insider program.</p>
+      <p begin="00:30:14.710" end="00:30:21.030">All right so let's switch back to the demo.</p>
+      <p begin="00:30:21.030" end="00:30:24.630">So, now that you have a better understanding of what the</p>
+      <p begin="00:30:24.630" end="00:30:29.460">...manager does so far what we've seen is...right I got a token this aptitude we</p>
+      <p begin="00:30:29.460" end="00:30:33.510">are targeted a particular...provider let's but she's of</p>
+      <p begin="00:30:33.510" end="00:30:36.670">...provider let's say you writing and application that</p>
+      <p begin="00:30:36.670" end="00:30:41.580">wanted-to target microsoft accounts now so all I have to really do is go</p>
+      <p begin="00:30:41.580" end="00:30:51.490">ahead and change that web account provider on targeting from organizations to.</p>
+      <p begin="00:30:51.490" end="00:30:55.220">This particular...provider.</p>
+      <p begin="00:30:55.220" end="00:30:58.290">I'm just going to change the request so the same</p>
+      <p begin="00:30:58.290" end="00:31:03.480">motion where the first thing the app has to do is find the web account provider</p>
+      <p begin="00:31:03.480" end="00:31:08.190">and then constructor request in the request as you can see all I'm doing is passing</p>
+      <p begin="00:31:08.190" end="00:31:10.880">in the provider scope.</p>
+      <p begin="00:31:10.880" end="00:31:14.760">Doesn't taken id because the microsoft account infrastructure web become provider</p>
+      <p begin="00:31:14.760" end="00:31:19.770">just works with the identity that was passed to it by theby the</p>
+      <p begin="00:31:19.770" end="00:31:25.220">...manager and in this case by just making this simple change when I run this up once again</p>
+      <p begin="00:31:25.220" end="00:31:31.190">is going to take a while the difference is going to be that a different web account provider that was targeted</p>
+      <p begin="00:31:31.190" end="00:31:32.830">is going to launch?</p>
+      <p begin="00:31:32.830" end="00:31:39.180">And, the user can.</p>
+      <p begin="00:31:39.180" end="00:31:44.780">You see if I have a faster computer for this.</p>
+      <p begin="00:31:44.780" end="00:31:45.770">There you go...</p>
+      <p begin="00:31:47.270" end="00:31:53.520">the microsoft account authentication experience I can go ahead and authenticate here.</p>
+      <p begin="00:31:53.520" end="00:31:57.300">So, do that sapped gets back a token?</p>
+      <p begin="00:31:57.300" end="00:32:19.550">Click on sign-in.</p>
+      <p begin="00:32:19.550" end="00:32:27.800">Samoa.</p>
+      <p begin="00:32:27.800" end="00:32:32.540">Hh I probably crash their servers with all the practices I was doing make sure that this app would</p>
+      <p begin="00:32:32.540" end="00:32:36.520">work on stage and...my account slack but the point that I was really trying</p>
+      <p begin="00:32:36.520" end="00:32:40.300">to make is that I could just easily</p>
+      <p begin="00:32:40.300" end="00:32:45.040">we target a different provider change a couple of parameters where I'm</p>
+      <p begin="00:32:45.040" end="00:32:48.510">ky changed who the provider I wanted target was I</p>
+      <p begin="00:32:48.510" end="00:32:54.710">changed the request because the request is always specific to the provider you're talking to</p>
+      <p begin="00:32:54.710" end="00:32:59.760">but from a infrastructural point of view...creating so you the first thing you did was</p>
+      <p begin="00:32:59.760" end="00:33:03.440">find a provider second thing you did was create the request specific to the provider</p>
+      <p begin="00:33:03.440" end="00:33:13.840">your targeting and finally used request token...as the api right.</p>
+      <p begin="00:33:13.840" end="00:33:17.640">So, the example that I showed you was just using the same infrastructure</p>
+      <p begin="00:33:17.640" end="00:33:23.250">targeting microsoft account provider and then talking to a microsoft...</p>
+      <p begin="00:33:23.250" end="00:33:26.420">I want to deep dive into the various aps that are available.</p>
+      <p begin="00:33:27.500" end="00:33:32.430">And, we can, you know, you could you can download the samples and obviously you'd be much happier playing</p>
+      <p begin="00:33:32.430" end="00:33:36.440">with code to understand what I do want to do is introduce you to some of the api is</p>
+      <p begin="00:33:36.440" end="00:33:38.830">...the functional differences and when you want to use one</p>
+      <p begin="00:33:38.830" end="00:33:43.680">where's the other and what are the subtle nuances involved so the first one we talked</p>
+      <p begin="00:33:43.680" end="00:33:48.430">about request showcasing you've seen takes a few parameters like the request,</p>
+      <p begin="00:33:48.430" end="00:33:52.960">request comprises of provider scope client id and</p>
+      <p begin="00:33:52.960" end="00:33:57.420">ui options so-if you want-to by default we won't force</p>
+      <p begin="00:33:57.420" end="00:34:01.850">a prompt but it is possible for-you to communicate to</p>
+      <p begin="00:34:01.850" end="00:34:06.710">the web contra wider that in my use case I do want the user to once again authenticate</p>
+      <p begin="00:34:06.710" end="00:34:11.580">we authenticate so this would be the case if you're writing a app that does purchase,</p>
+      <p begin="00:34:11.580" end="00:34:16.470">for example, you want to really make sure that the user so as I really want to</p>
+      <p begin="00:34:16.470" end="00:34:22.199">purchase versus their kids is going trigger-happy?</p>
+      <p begin="00:34:22.199" end="00:34:27.429">That's good...second api called get token silently</p>
+      <p begin="00:34:27.429" end="00:34:32.379">as the name suggests this api by design is a silent api so-if you have</p>
+      <p begin="00:34:32.379" end="00:34:37.249">a use case where you want to make sure that there's never any why shown or</p>
+      <p begin="00:34:37.249" end="00:34:42.429">you're calling you want to request tokens from a worker background thread you want</p>
+      <p begin="00:34:42.429" end="00:34:48.639">to use this api the main functional difference get token asic sorry get token silently</p>
+      <p begin="00:34:48.639" end="00:34:51.919">...as you want to use it when you are.</p>
+      <p begin="00:34:51.919" end="00:34:55.169">Absolutely show you want to show...things you're doing in the background.</p>
+      <p begin="00:34:57.699" end="00:35:00.799">With request...with request token...</p>
+      <p begin="00:35:00.799" end="00:35:03.179">There is a new once.</p>
+      <p begin="00:35:03.179" end="00:35:07.509">When you call when you're app called request token...think they are two things that</p>
+      <p begin="00:35:07.509" end="00:35:12.269">...the first thing that the system doesn't you don't have to think about...this happens as part of the</p>
+      <p begin="00:35:12.269" end="00:35:15.869">...on manager doing its thing is that it first tries to</p>
+      <p begin="00:35:15.869" end="00:35:18.369">retrieval token silently</p>
+      <p begin="00:35:18.369" end="00:35:22.649">so checks the cash that we looked at if the...</p>
+      <p begin="00:35:22.649" end="00:35:24.059">...occurred</p>
+      <p begin="00:35:24.059" end="00:35:29.369">...activates the corresponding provider in the background and says hey</p>
+      <p begin="00:35:29.369" end="00:35:33.729">can you process this request and that would succeed in cases where</p>
+      <p begin="00:35:33.729" end="00:35:37.209">your app was previously authorized and the user</p>
+      <p begin="00:35:37.209" end="00:35:39.909">...already authenticated in which case</p>
+      <p begin="00:35:39.909" end="00:35:45.970">...you just get the token back without any splashes without any screens shown.</p>
+      <p begin="00:35:45.970" end="00:35:48.230">If all of that fields then</p>
+      <p begin="00:35:48.230" end="00:35:52.090">...activates the corresponding...wider once again this time</p>
+      <p begin="00:35:52.090" end="00:35:55.260">in the foreground and therefore</p>
+      <p begin="00:35:55.260" end="00:36:00.250">it is after that where the web account provider can paint the experience that it so</p>
+      <p begin="00:36:00.250" end="00:36:04.810">...which could be and authentication flow and authorization flow</p>
+      <p begin="00:36:04.810" end="00:36:11.110">...to factor of outflow and the third api that's of relevance</p>
+      <p begin="00:36:11.110" end="00:36:16.260">is sign-out asic what sign-out asic does is.</p>
+      <p begin="00:36:16.260" end="00:36:21.290">When you as an app...for a request for tokens you get back the tokens</p>
+      <p begin="00:36:21.290" end="00:36:24.970">and, some stuff and I'm going to focus on the specific outputs also when you</p>
+      <p begin="00:36:24.970" end="00:36:30.520">get back tokens there's a there's a trail that's created on the system in the</p>
+      <p begin="00:36:30.520" end="00:36:34.950">cache the provider that's processing your requests also has to keep some for</p>
+      <p begin="00:36:34.950" end="00:36:39.010">...data about who the requesting apps have been so far so if you want to</p>
+      <p begin="00:36:39.010" end="00:36:44.720">provide that functionality of...user wants to sign out of your app you can use this api what it</p>
+      <p begin="00:36:44.720" end="00:36:48.050">does is it removes for that particular</p>
+      <p begin="00:36:48.050" end="00:36:52.950">application any fragments that were created particular to that account?</p>
+      <p begin="00:36:52.950" end="00:36:57.700">that I mean this is important because let's say you were writing and application that is not just</p>
+      <p begin="00:36:57.700" end="00:37:02.190">used by one users used by many users rate and</p>
+      <p begin="00:37:02.190" end="00:37:05.150">it's running on a desktop that's a workstation, for example,</p>
+      <p begin="00:37:05.150" end="00:37:09.890">in it's not personal people come user app log in and then once they're done the log</p>
+      <p begin="00:37:09.890" end="00:37:13.790">out the lock away and then a second person comes in a logs and they go</p>
+      <p begin="00:37:13.790" end="00:37:17.930">on so this is when that comes in handy what you don't want is for cashed</p>
+      <p begin="00:37:17.930" end="00:37:21.930">...to come back where you sign in the</p>
+      <p begin="00:37:21.930" end="00:37:25.680">that the not the intended use so you want to use sign-out a</p>
+      <p begin="00:37:25.680" end="00:37:29.090">...to cleanse any fragments that</p>
+      <p begin="00:37:29.090" end="00:37:35.240">were created particular to this application that correspond to the to the account.</p>
+      <p begin="00:37:35.240" end="00:37:41.800">All right let's look at some of the response results.</p>
+      <p begin="00:37:41.800" end="00:37:48.600">One of the main outputs of the api is the token request.</p>
+      <p begin="00:37:48.600" end="00:37:49.920">Result.</p>
+      <p begin="00:37:49.920" end="00:37:52.880">So, this guy right here.</p>
+      <p begin="00:37:52.880" end="00:38:00.830">the request...the token request result essentially is comprised off.</p>
+      <p begin="00:38:00.830" end="00:38:05.810">One main thing you're getting which in turn has a few pieces</p>
+      <p begin="00:38:05.810" end="00:38:10.320">of relevant information of course we all know it has token in...I've already given</p>
+      <p begin="00:38:10.320" end="00:38:14.970">that away but the results are comprise of to main segments the first</p>
+      <p begin="00:38:14.970" end="00:38:19.250">is just data you get back which has the token...requested and secondly</p>
+      <p begin="00:38:19.250" end="00:38:23.790">a web account a web how does a really interesting object I'm going to talk about that just a</p>
+      <p begin="00:38:23.790" end="00:38:29.380">little bit the...you get back from this request is the status the status</p>
+      <p begin="00:38:29.380" end="00:38:35.360">is comprised of could comprised of two things so as you can tell if</p>
+      <p begin="00:38:35.360" end="00:38:40.310">you requested a token for a web account provider and the web account provider wasn't</p>
+      <p begin="00:38:40.310" end="00:38:45.140">available on the system or the system crashed while processing this</p>
+      <p begin="00:38:45.140" end="00:38:53.380">request so they'll be a system result or enter status that you get back and.</p>
+      <p begin="00:38:53.380" end="00:38:54.760">Assuming that the</p>
+      <p begin="00:38:54.760" end="00:38:59.340">request mediad successfully all the way over to the web account provider but the web</p>
+      <p begin="00:38:59.340" end="00:39:04.060">...wider had some specific results status that they wanted to provide</p>
+      <p begin="00:39:04.060" end="00:39:08.690">to the application so just to be very clear.</p>
+      <p begin="00:39:08.690" end="00:39:10.200">And, app makes a call I</p>
+      <p begin="00:39:10.200" end="00:39:15.040">want a microsoft account token the successfully</p>
+      <p begin="00:39:15.040" end="00:39:19.400">make the call go all the way to the web account provider which is the microsoft account provider but the</p>
+      <p begin="00:39:19.400" end="00:39:24.040">microsoft account provider finds that while the...in interrupt state they</p>
+      <p begin="00:39:24.040" end="00:39:27.710">need to enter their password or their cell phone number once again</p>
+      <p begin="00:39:27.710" end="00:39:32.830">to for me to be able to process this request so in that web token request</p>
+      <p begin="00:39:32.830" end="00:39:37.780">...crockett open you could look at whether it succeeded or not if it did great things are awesome if they did</p>
+      <p begin="00:39:37.780" end="00:39:42.720">not then you can look at the specific error you got back from the web account provider and just</p>
+      <p begin="00:39:42.720" end="00:39:46.500">...so they, you know, how to mediated?</p>
+      <p begin="00:39:46.500" end="00:39:51.070">I talked about the web account object which is part of the response data</p>
+      <p begin="00:39:51.070" end="00:39:55.520">...object is essentially an object that corresponds</p>
+      <p begin="00:39:55.520" end="00:40:01.900">to the user that you just got a token back from.</p>
+      <p begin="00:40:01.900" end="00:40:06.480">What that means there's a lot of times you find that we just want to get a token because we want to be able to</p>
+      <p begin="00:40:06.480" end="00:40:12.040">push...will some personalization details like their name there picture and</p>
+      <p begin="00:40:12.040" end="00:40:16.740">things like that so the web account object is an object that consists of all of this</p>
+      <p begin="00:40:16.740" end="00:40:23.520">data that corresponds to this user that was that the token corresponds to?</p>
+      <p begin="00:40:23.520" end="00:40:28.330">This is interesting because once you get this bakke distracted open if some of the information you wanted to</p>
+      <p begin="00:40:28.330" end="00:40:33.140">get out of the user is just included here you can go ahead and get it right from there you don't have to</p>
+      <p begin="00:40:33.140" end="00:40:35.330">make extra quals but more importantly</p>
+      <p begin="00:40:36.370" end="00:40:41.070">for any subsequent calls you make so the request token asic api that we should</p>
+      <p begin="00:40:41.070" end="00:40:45.750">be saw takes in a second parameter too so we saw that there are two or</p>
+      <p begin="00:40:45.750" end="00:40:50.670">loads to...the first one was capacitor question you get back a token the second overload is</p>
+      <p begin="00:40:50.670" end="00:40:55.150">you can facet request along with this web account and what</p>
+      <p begin="00:40:55.150" end="00:40:59.330">that does is it is your we of communicating to the</p>
+      <p begin="00:40:59.330" end="00:41:04.300">system that I just ask for token once again for that user that you</p>
+      <p begin="00:41:04.300" end="00:41:07.590">...previously given me a token for now this comes in</p>
+      <p begin="00:41:07.590" end="00:41:12.680">handy especially when you're writing apps that deal with a lot of accounts let's see</p>
+      <p begin="00:41:12.680" end="00:41:17.130">...application so what you end up having to do is for each account that</p>
+      <p begin="00:41:17.130" end="00:41:21.810">...user ads you have a corresponding sarah tokens and then you have to</p>
+      <p begin="00:41:21.810" end="00:41:26.660">create a mapping of sorts and indexing mechanism to make sure that subsequently when</p>
+      <p begin="00:41:26.660" end="00:41:31.660">you're making more calls for refreshed tokens are new tokens that you have to figure out well</p>
+      <p begin="00:41:31.660" end="00:41:35.370">...a token a corresponds to this so you create your own indexing</p>
+      <p begin="00:41:35.370" end="00:41:40.840">mechanism you don't have to anymore you can just use the web account object and the</p>
+      <p begin="00:41:40.840" end="00:41:43.150">idea that specified in it and just hang</p>
+      <p begin="00:41:43.150" end="00:41:47.820">onto that id that's it so when you get a token bakke get a web account the</p>
+      <p begin="00:41:47.820" end="00:41:52.050">web account has an id if you just hang on to this id</p>
+      <p begin="00:41:52.050" end="00:41:55.430">...other aps available in the system where you can passes you can do a</p>
+      <p begin="00:41:55.430" end="00:41:57.890">find web account call on the web authentication</p>
+      <p begin="00:41:57.890" end="00:42:02.670">core manager which returns the web account that id corresponds to</p>
+      <p begin="00:42:02.670" end="00:42:07.660">...account has all this information about who was the provider what was the name of the</p>
+      <p begin="00:42:07.660" end="00:42:11.470">user what was the email address things like that and then you can use this web account</p>
+      <p begin="00:42:11.470" end="00:42:14.720">object subsequently to make further requests?</p>
+      <p begin="00:42:14.720" end="00:42:21.930">So, makes it really easy and you don't have to recreated indexing mechanism.</p>
+      <p begin="00:42:21.930" end="00:42:25.580">I want to highlight the fact that these api is</p>
+      <p begin="00:42:25.580" end="00:42:28.580">are in the universal windows platform and</p>
+      <p begin="00:42:28.580" end="00:42:32.270">their available to both universal windows</p>
+      <p begin="00:42:32.270" end="00:42:37.150">apps as well as classic apps so if you have if</p>
+      <p begin="00:42:37.150" end="00:42:41.700">you own classic applications that...to target any of these identity systems it is possible to use the</p>
+      <p begin="00:42:41.700" end="00:42:46.770">seems applicable api is to target them to.</p>
+      <p begin="00:42:46.770" end="00:42:51.340">Now some of you might be thinking so you just told me how I can request for tokens and target</p>
+      <p begin="00:42:51.340" end="00:42:56.970">adrg active directory and get back those...what about active directory authentication library</p>
+      <p begin="00:42:56.970" end="00:43:02.440">that I've been using so far so I do want to make sure that I don't confuse you so if</p>
+      <p begin="00:43:02.440" end="00:43:07.050">you're app targets windows ten you should use the web account manager this is</p>
+      <p begin="00:43:07.050" end="00:43:11.800">the only way you get to as it status to leverage the logged on</p>
+      <p begin="00:43:11.800" end="00:43:15.760">users identity and bootstrap your experiences based on how the</p>
+      <p begin="00:43:15.760" end="00:43:20.970">users using the device if...app targets more than just windows</p>
+      <p begin="00:43:20.970" end="00:43:25.840">stan perhaps down level versions of windows another os is then</p>
+      <p begin="00:43:25.840" end="00:43:31.170">you want to look at active directory authentication library because it provides a much more the</p>
+      <p begin="00:43:31.170" end="00:43:36.820">right tools for you to...to create those experiences if you've written a</p>
+      <p begin="00:43:36.820" end="00:43:40.720">app that uses a at all and is deployed on windows</p>
+      <p begin="00:43:40.720" end="00:43:44.610">stent it will continue to work right now the as</p>
+      <p begin="00:43:44.610" end="00:43:49.240">a active directory sorry...directory authentication libraries built on top of</p>
+      <p begin="00:43:49.240" end="00:43:53.300">web authentication broker which is something that was introduced in windows</p>
+      <p begin="00:43:54.320" end="00:43:59.100">...down the lane we're going to switch the internal plumbing and speech or from the</p>
+      <p begin="00:43:59.100" end="00:44:03.040">...web authentication manager to the web account manager</p>
+      <p begin="00:44:03.040" end="00:44:06.630">so from your perspective things will just you'll get</p>
+      <p begin="00:44:06.630" end="00:44:15.550">an upgrade so to speak you wouldn't have to do anything to our app they'll just work and people get single sign on?</p>
+      <p begin="00:44:15.550" end="00:44:20.170">If you want to learn more specifically about how to talk to measure active</p>
+      <p begin="00:44:20.170" end="00:44:24.900">directory there's an excellent talk tomorrow that my friend with oreos giving at nine am</p>
+      <p begin="00:44:24.900" end="00:44:29.300">so be sure to check that out so this is very found out about the new infrastructure</p>
+      <p begin="00:44:29.300" end="00:44:33.210">in windows stand moving comes to talking about specific services and</p>
+      <p begin="00:44:33.210" end="00:44:37.980">connecting to them this is a great talk that will shed light on how you can use act as...active</p>
+      <p begin="00:44:37.980" end="00:44:43.670">directory and go through all the all the various configurations there's also a talk I believe this</p>
+      <p begin="00:44:43.670" end="00:44:49.110">is as well as...tomorrow as well around three...three thirty where.</p>
+      <p begin="00:44:49.110" end="00:44:55.840">There's talk on building universal windows applications and connect office...sixty-five services.</p>
+      <p begin="00:44:55.840" end="00:44:57.670">So, one of the things that...so,</p>
+      <p begin="00:44:57.670" end="00:45:05.280">we so far we've seen one of the things I want to...just because.</p>
+      <p begin="00:45:05.280" end="00:45:10.050">...they chore and we've categorically...on one of the main problem</p>
+      <p begin="00:45:10.050" end="00:45:16.780">we saw was and the...to not everyone's just targeting.</p>
+      <p begin="00:45:16.780" end="00:45:21.640">First party microsoft identity systems people also targeting third-party.</p>
+      <p begin="00:45:21.640" end="00:45:26.310">Identity systems so we wanted to make sure that be created infrastructure where</p>
+      <p begin="00:45:26.310" end="00:45:30.570">it was possible for third parties to integrate with windows and</p>
+      <p begin="00:45:30.570" end="00:45:35.540">deliver the same experiences that first party identity systems with</p>
+      <p begin="00:45:35.540" end="00:45:41.890">microsoft have been able to so web account manager is extensible let me see if</p>
+      <p begin="00:45:41.890" end="00:45:57.290">the demo the other with me give you an example of.</p>
+      <p begin="00:45:57.290" end="00:46:00.810">Yet this machines...</p>
+      <p begin="00:46:00.810" end="00:46:04.570">So, far we've done is we've talked about all the api is that</p>
+      <p begin="00:46:04.570" end="00:46:07.690">apply to the orange box the app that trying-to</p>
+      <p begin="00:46:07.690" end="00:46:14.770">...services and...to request for tokens and then be able to talk to services.</p>
+      <p begin="00:46:14.770" end="00:46:18.890">It's also let's talk about the web account provider side of things so,</p>
+      <p begin="00:46:18.890" end="00:46:22.100">far we've seen microsoft provider and other providers</p>
+      <p begin="00:46:22.100" end="00:46:25.730">...plug-in but if you wanted to.</p>
+      <p begin="00:46:25.730" end="00:46:30.170">Provide your own services that you said all right well I'm in this business and I want</p>
+      <p begin="00:46:30.170" end="00:46:35.120">to go ahead and provide other apps and services or apps the ability to</p>
+      <p begin="00:46:35.120" end="00:46:40.220">provide single sign on in there without in their own experiences without having to</p>
+      <p begin="00:46:40.220" end="00:46:45.040">recreate the of education logic it is possible for-you to add as many of education</p>
+      <p begin="00:46:45.040" end="00:46:50.370">...providers as well as you want.</p>
+      <p begin="00:46:50.370" end="00:46:55.000">This is really interesting so you remember how I showed you when you were when I</p>
+      <p begin="00:46:55.000" end="00:46:59.790">logged in with my asher active directory account the first thing I did was obviously</p>
+      <p begin="00:46:59.790" end="00:47:04.570">use in app that was able to single sign on the second thing I did though was clicked on a link that then</p>
+      <p begin="00:47:04.570" end="00:47:09.070">open in the browser and it just worked this was so</p>
+      <p begin="00:47:09.070" end="00:47:12.810">...like to refer to as browser sl this was something we</p>
+      <p begin="00:47:12.810" end="00:47:16.050">...eight-point one with microsoft...had logged</p>
+      <p begin="00:47:16.050" end="00:47:20.770">into windows eight or eight point one with their emissary even ten now.</p>
+      <p begin="00:47:20.770" end="00:47:25.240">Not only would they get single sign on and they were using apps they would also get single sign in the browser</p>
+      <p begin="00:47:25.240" end="00:47:28.610">and specifically naive when they were going to relying parties</p>
+      <p begin="00:47:28.610" end="00:47:32.320">...microsoft accounts like ...outlook dot com,</p>
+      <p begin="00:47:32.320" end="00:47:36.450">for example, extended that functionality to.</p>
+      <p begin="00:47:37.480" end="00:47:42.470">Work or school...which is what you saw when I went to adj and I was able to open</p>
+      <p begin="00:47:42.470" end="00:47:47.050">that powerpoint document that was on my sharepoint but what we've done is we've not be...stop</p>
+      <p begin="00:47:47.050" end="00:47:51.720">there...extended that support to all</p>
+      <p begin="00:47:51.720" end="00:47:55.990">providers so anyone who has a web account provider on windows which is just</p>
+      <p begin="00:47:55.990" end="00:48:00.830">...app that's implemented the interfaces it is possible for-you to provide</p>
+      <p begin="00:48:00.830" end="00:48:06.110">that experiences not just to avce but also to things that are running in the browser</p>
+      <p begin="00:48:06.110" end="00:48:12.940">when I say browser I don't mean just ie or edge I mean any participate browser.</p>
+      <p begin="00:48:14.090" end="00:48:15.220">Why do you want to be and aac of the</p>
+      <p begin="00:48:15.220" end="00:48:20.130">can provider this is not for everyone if you're just writing apps that are relying parties to other</p>
+      <p begin="00:48:20.130" end="00:48:24.925">identity systems the first...that we saw are pretty good those are the ones you want</p>
+      <p begin="00:48:24.925" end="00:48:29.710">to look at but obviously in order to create value for you guys to</p>
+      <p begin="00:48:29.710" end="00:48:34.700">use those api...has to be a corresponding set of web contra wires that provide the value</p>
+      <p begin="00:48:34.700" end="00:48:40.540">the provide the services and the tokens that you're looking for so if you</p>
+      <p begin="00:48:40.540" end="00:48:45.110">...in the business of already providing identity services</p>
+      <p begin="00:48:45.110" end="00:48:48.690">the sections relevant...so?</p>
+      <p begin="00:48:48.690" end="00:48:50.850">There's that you're already and identity provider</p>
+      <p begin="00:48:50.850" end="00:48:54.000">and you want to figure out a way to integrate with windows.</p>
+      <p begin="00:48:55.010" end="00:48:58.250">Second if you find that you have you own a</p>
+      <p begin="00:48:58.250" end="00:49:03.540">set of apps and services that one single sign on and none of your</p>
+      <p begin="00:49:03.540" end="00:49:06.920">...you have custom needs so you don't want to have all of your apps</p>
+      <p begin="00:49:06.920" end="00:49:10.540">implement something that's not the replicated everywhere you just</p>
+      <p begin="00:49:10.540" end="00:49:15.400">want to have all of those apps leverage that logic in a single place</p>
+      <p begin="00:49:15.400" end="00:49:20.330">you one-of-a-kind provider or thirdly you find that the needs that you have aren't met by any of the</p>
+      <p begin="00:49:20.330" end="00:49:27.840">...providers...file find...there and you just want to write your own.</p>
+      <p begin="00:49:27.840" end="00:49:32.360">What does it take to write a web account provider I'm not going to go into too many details I</p>
+      <p begin="00:49:32.360" end="00:49:37.970">will be hanging out of the insider...so if this is...you definitely find me and we can,</p>
+      <p begin="00:49:37.970" end="00:49:42.100">you know, droppings out on the wide board and I'll give you a better understanding but</p>
+      <p begin="00:49:42.100" end="00:49:46.730">it's pretty straightforward the first thing you need to know is the web account provider is just</p>
+      <p begin="00:49:46.730" end="00:49:52.230">a app it's a universal app right what that does is you can write it</p>
+      <p begin="00:49:52.230" end="00:49:57.360">...can submitted to the store and folks can acquired via the store?</p>
+      <p begin="00:49:57.360" end="00:50:01.130">In order to become of the countrywide of the first thing you want to do is register yourself as a web account</p>
+      <p begin="00:50:01.130" end="00:50:04.720">whiter what that really means is in your apps manifest</p>
+      <p begin="00:50:04.720" end="00:50:09.560">there's a new extension category very get to specify that you want to be over-the-counter wider</p>
+      <p begin="00:50:09.560" end="00:50:14.050">and you specify your own unique id so if you saw those request</p>
+      <p begin="00:50:14.050" end="00:50:16.620">token easing...overtaking in a provider and</p>
+      <p begin="00:50:16.620" end="00:50:21.750">we were looking for a provider using and id that's where that's where I got</p>
+      <p begin="00:50:21.750" end="00:50:26.130">it from so-if tomorrow I created a fabric and the contra wider</p>
+      <p begin="00:50:26.130" end="00:50:29.630">...registered with...fabric...dot com id which is unique</p>
+      <p begin="00:50:29.630" end="00:50:34.630">to me that then I can share with my application developers to use</p>
+      <p begin="00:50:34.630" end="00:50:38.650">question I get a lot is well what prevents anyone else from.</p>
+      <p begin="00:50:38.650" end="00:50:41.850">Claiming to be fabric I'm too so we've made the</p>
+      <p begin="00:50:41.850" end="00:50:45.590">...made sure that during store on boarding we have the write checks in place</p>
+      <p begin="00:50:45.590" end="00:50:51.860">...two people can spoof to be someone they're not second thing that you need to do in order to become</p>
+      <p begin="00:50:51.860" end="00:50:55.450">...provider is handle activation klein's.</p>
+      <p begin="00:50:55.450" end="00:50:58.850">So, this is basically just all the functionality</p>
+      <p begin="00:50:58.850" end="00:51:04.160">that corresponds to the aps you've seen already so there was a request...api</p>
+      <p begin="00:51:04.160" end="00:51:09.000">well there's a request token corresponding activation kind so...app makes a call the</p>
+      <p begin="00:51:09.000" end="00:51:13.260">...manager get saved it activates the...provider and it says</p>
+      <p begin="00:51:13.260" end="00:51:17.890">alright wake-up someone just requested for token please can you go process it so there</p>
+      <p begin="00:51:17.890" end="00:51:22.510">to cad the two main classes of these activation kinds one that is</p>
+      <p begin="00:51:22.510" end="00:51:27.900">in the foreground that is you the web account providers app comes up and</p>
+      <p begin="00:51:27.900" end="00:51:31.840">...great example of that is request token asic that might require user to authorize</p>
+      <p begin="00:51:31.840" end="00:51:34.560">...there are other</p>
+      <p begin="00:51:35.690" end="00:51:43.010">can one of the other things I can show you guys?</p>
+      <p begin="00:51:43.010" end="00:51:43.630">The ux.</p>
+      <p begin="00:51:44.860" end="00:51:47.470">In windows has also we've</p>
+      <p begin="00:51:47.470" end="00:51:51.120">gone ahead and updated the accounts ux</p>
+      <p begin="00:51:51.120" end="00:51:57.370">...settings on this account...in with by...active directory account so that's what you</p>
+      <p begin="00:51:57.370" end="00:52:02.310">see and the only provider I had was well too I had the</p>
+      <p begin="00:52:02.310" end="00:52:07.280">work or school account providers and I had my microsoft account providers now if I had a third</p>
+      <p begin="00:52:07.280" end="00:52:12.130">provider and I'd gone ahead and added my account in a similar authentication</p>
+      <p begin="00:52:12.130" end="00:52:17.630">...that these were added in that would also show up here so can also fabric am if</p>
+      <p begin="00:52:17.630" end="00:52:22.600">you're writing your own web account provider it natively plugs into the system start showing up under the accounts</p>
+      <p begin="00:52:22.600" end="00:52:23.310">a section</p>
+      <p begin="00:52:23.310" end="00:52:28.230">pc settings things that users can do here are obviously remove the account and then</p>
+      <p begin="00:52:28.230" end="00:52:32.870">...clicking on manage...would be another example of</p>
+      <p begin="00:52:32.870" end="00:52:39.570">a foreground activation call now so that's why I wanted to give you that context.</p>
+      <p begin="00:52:39.570" end="00:52:42.950">So, for user goes ahead and dc settings clicks on your particular</p>
+      <p begin="00:52:42.950" end="00:52:46.770">account clicks on manage very going to activate the</p>
+      <p begin="00:52:46.770" end="00:52:50.570">...provider and say hey the user just clicked on manage what you</p>
+      <p begin="00:52:50.570" end="00:52:52.240">want to show.</p>
+      <p begin="00:52:52.240" end="00:52:56.890">And, then there's the second-class of activation kinds which are primarily silent</p>
+      <p begin="00:52:56.890" end="00:52:57.660">in the background.</p>
+      <p begin="00:52:58.770" end="00:53:01.910">Get token silently a...is a great example of it where we</p>
+      <p begin="00:53:01.910" end="00:53:05.840">...in the background...you're supposed to do a processing where you won't come to the foreground</p>
+      <p begin="00:53:07.960" end="00:53:13.430">of course the browser ss so...that I alluded to if you're third but, you know,</p>
+      <p begin="00:53:13.430" end="00:53:18.380">if you're...wider you want to provide those browser single sign on services their</p>
+      <p begin="00:53:18.380" end="00:53:25.360">api is that are available for you to push cookies in the right cookie jars that are brokered through the system.</p>
+      <p begin="00:53:25.360" end="00:53:31.430">And, finally you want to manage the lifecycle of this account.</p>
+      <p begin="00:53:31.430" end="00:53:37.500">As part of the request token your woken up the user authenticate now you-know-who the</p>
+      <p begin="00:53:37.500" end="00:53:41.990">...it is up to you whether you want to persist this account onto that system</p>
+      <p begin="00:53:41.990" end="00:53:47.210">or not in a wayward start showing up bc setting so there's a corresponding set...you know,</p>
+      <p begin="00:53:47.210" end="00:53:52.180">api is that are available for ubicom providers to do account management very can add a</p>
+      <p begin="00:53:52.180" end="00:53:59.410">particular web account into the system you can remove it can modified things like that.</p>
+      <p begin="00:53:59.410" end="00:54:04.340">Of how many of you guys checked out the microsoft password talk.</p>
+      <p begin="00:54:04.340" end="00:54:09.570">Fit fair...number so all of the cool things that windows ten</p>
+      <p begin="00:54:09.570" end="00:54:13.990">...available in the...microsoft passport also things that you can leverage</p>
+      <p begin="00:54:13.990" end="00:54:18.700">here so if you want to provide that amazing facial recognition experience as part</p>
+      <p begin="00:54:18.700" end="00:54:23.420">of your identity provide as part of your identity provider this is the place you do it</p>
+      <p begin="00:54:23.420" end="00:54:26.710">you just be managing the request token in a</p>
+      <p begin="00:54:26.710" end="00:54:30.100">...your leveraging the new api is that do facial recognition</p>
+      <p begin="00:54:30.100" end="00:54:34.040">for you so all of the...the because</p>
+      <p begin="00:54:34.040" end="00:54:38.940">...provider you're just in app you have access to all of the reach api is that windows</p>
+      <p begin="00:54:38.940" end="00:54:43.710">...makes available for you.</p>
+      <p begin="00:54:43.710" end="00:54:48.120">There's also a talk tomorrow which is on app to</p>
+      <p begin="00:54:48.120" end="00:54:52.390">app communication now this is interesting so far what we've seen is, you know, very rigid</p>
+      <p begin="00:54:52.390" end="00:54:57.330">contract where apps one request for tokens and there's a bunch of back and forth?</p>
+      <p begin="00:54:57.330" end="00:55:01.130">Once you-are-there beyond that sometimes you also have reasons where you want your</p>
+      <p begin="00:55:01.130" end="00:55:04.630">...to talk to some other app for a completely different reason or you want to</p>
+      <p begin="00:55:04.630" end="00:55:07.970">shared context for some reason so this talk tomorrow at</p>
+      <p begin="00:55:07.970" end="00:55:12.690">three where we talk about how apps can communicate with each other is also really interesting so</p>
+      <p begin="00:55:12.690" end="00:55:17.250">something I would highly recommend for you guys to go check out and using all of these things together</p>
+      <p begin="00:55:17.250" end="00:55:22.200">you can curator really really awesome experience for your and developers</p>
+      <p begin="00:55:22.200" end="00:55:26.740">...and consumers so just to wrap up.</p>
+      <p begin="00:55:26.740" end="00:55:30.940">...manager makes possible and provides needed support for</p>
+      <p begin="00:55:30.940" end="00:55:34.680">...active directory authentication on windows stand.</p>
+      <p begin="00:55:34.680" end="00:55:36.660">It makes it possible.</p>
+      <p begin="00:55:36.660" end="00:55:39.960">All of this in a we...a simple set of</p>
+      <p begin="00:55:39.960" end="00:55:44.150">consistent api is that we just saw we all you have to do is change the</p>
+      <p begin="00:55:44.150" end="00:55:48.270">...targeting and create the corresponding request.</p>
+      <p begin="00:55:48.270" end="00:55:53.240">It enables in the form of the contra wider integration ways for</p>
+      <p begin="00:55:53.240" end="00:55:58.230">nan microsoft entities to also be able to be</p>
+      <p begin="00:55:58.230" end="00:56:03.190">a and provide the same level...one of the things I really want to highlight is</p>
+      <p begin="00:56:03.190" end="00:56:07.740">measure active directory and microsoft...that you just saw are built on top</p>
+      <p begin="00:56:07.740" end="00:56:12.610">of this infrastructure and all of the things they were able to do is possible to you for you</p>
+      <p begin="00:56:12.610" end="00:56:18.990">...also provide as part of being a...and finally all these things we hope that,</p>
+      <p begin="00:56:18.990" end="00:56:23.920">... users will see less number user name and password props and hopefully we'll get that single</p>
+      <p begin="00:56:23.920" end="00:56:28.070">silent across the speed apps where we deliver that value that</p>
+      <p begin="00:56:28.070" end="00:56:31.310">folks expect that I've talked about earlier so</p>
+      <p begin="00:56:31.310" end="00:56:44.420">that going to open and take a couple of questions if you have any.</p>
+      <p begin="00:56:44.420" end="00:56:49.620">the question was if...you're writing a providers a possible for-you to leverage another</p>
+      <p begin="00:56:49.620" end="00:56:54.320">...on provider or not and the answers absolutely because in that case</p>
+      <p begin="00:56:54.320" end="00:56:57.470">...web account provider just acts as a relying party just</p>
+      <p begin="00:56:57.470" end="00:57:01.630">and app to that web account provider so...it is possible for-you...</p>
+      <p begin="00:57:01.630" end="00:57:06.630">web account providers so you could do things like well I'll take a dependency on xyz</p>
+      <p begin="00:57:06.630" end="00:57:10.800">...account provider for let's say authentication purposes but</p>
+      <p begin="00:57:10.800" end="00:57:15.500">for authorization I have my own custom logic and that's what I want to be can to</p>
+      <p begin="00:57:15.500" end="00:57:29.530">might customer become provider so that's possible.</p>
+      <p begin="00:57:29.530" end="00:57:33.970">A great question so the question was I talked about browser ss so are there</p>
+      <p begin="00:57:33.970" end="00:57:38.100">any javascript libraries for all of this magic to happen so the browser ss</p>
+      <p begin="00:57:38.100" end="00:57:43.300">so is interesting so from a relying party perspective so if you're just a web</p>
+      <p begin="00:57:43.300" end="00:57:47.190">page that depends on a identity provider to be</p>
+      <p begin="00:57:47.190" end="00:57:51.970">signed in you don't have to worry about it things work exactly how they did which is you use</p>
+      <p begin="00:57:51.970" end="00:57:56.710">typical author relying party navigate to...identity providers web page and</p>
+      <p begin="00:57:56.710" end="00:58:01.410">if the user was already signed in things happen right so from a relying party point</p>
+      <p begin="00:58:01.410" end="00:58:05.820">of view nothing changes web remains the way it does?</p>
+      <p begin="00:58:05.820" end="00:58:09.800">From...identity provider point of view things change slightly</p>
+      <p begin="00:58:09.800" end="00:58:14.660">...models if you if you want to understand the browser ss...by the way I</p>
+      <p begin="00:58:14.660" end="00:58:19.450">be more than happy to, you know, talk about this in more detail when we talk on the inside</p>
+      <p begin="00:58:19.450" end="00:58:23.840">...but browser...so...essentially to models the first model is</p>
+      <p begin="00:58:23.840" end="00:58:28.940">the push model where the web account provider can push</p>
+      <p begin="00:58:28.940" end="00:58:32.590">cookies into the corresponding cookie jars v of</p>
+      <p begin="00:58:32.590" end="00:58:37.380">account manager right so this would happen when let's say the chronological</p>
+      <p begin="00:58:37.380" end="00:58:42.300">order of things was the user has never gone to hotmail dot com</p>
+      <p begin="00:58:42.300" end="00:58:46.580">...is life using a browser the first thing he or she did was use...that was</p>
+      <p begin="00:58:46.580" end="00:58:52.490">an authentication that was authenticated using microsoft account and I was let's say for the sake of this example</p>
+      <p begin="00:58:52.490" end="00:58:57.400">on a local device so nor counts known anywhere the app is launched does</p>
+      <p begin="00:58:57.400" end="00:59:00.970">...oak and asic that account providers launched since it</p>
+      <p begin="00:59:00.970" end="00:59:05.880">big normal the user was the user went through the authentication flow once</p>
+      <p begin="00:59:05.880" end="00:59:10.310">the user authenticated the token was generated and sent back so that takes care of the app</p>
+      <p begin="00:59:10.310" end="00:59:15.140">...so far but in parallel with the web account provider also does is retrieves the right</p>
+      <p begin="00:59:15.140" end="00:59:17.980">cookies from its back-end and then using the web</p>
+      <p begin="00:59:17.980" end="00:59:22.280">account manager api is pushes these cookies via...a</p>
+      <p begin="00:59:22.280" end="00:59:26.870">broker channel into the relevant cookie jars so that's the push model where the web</p>
+      <p begin="00:59:26.870" end="00:59:31.970">contra wider bush's things into the cookie jar now let's reverse the chronological order of</p>
+      <p begin="00:59:31.970" end="00:59:36.640">things the user never went to apps the first thing that went did was they went to the</p>
+      <p begin="00:59:36.640" end="00:59:41.860">browser in that case it is possible for the web account providers but,</p>
+      <p begin="00:59:41.860" end="00:59:46.110">page in this case to leverage a new protocol handler view of</p>
+      <p begin="00:59:46.110" end="00:59:51.020">added in windows ten which is a...all of this information is going to be available in</p>
+      <p begin="00:59:51.020" end="00:59:55.510">the resources I share where there's a new protocol handler available</p>
+      <p begin="00:59:55.510" end="00:59:59.040">...on your webpage you could have a javascript that makes</p>
+      <p begin="00:59:59.040" end="01:00:02.780">the call to this protocol handler this is very similar to how you would do mailed</p>
+      <p begin="01:00:02.780" end="01:00:08.210">to or open a particular app just one more vitally state protocol and...so that...are</p>
+      <p begin="01:00:08.210" end="01:00:13.110">no more links so the javascript on the web page makes</p>
+      <p begin="01:00:13.110" end="01:00:18.090">a protocol handler call tb off and then passes in context that.</p>
+      <p begin="01:00:18.090" end="01:00:23.000">Comes to the web account manager be crack open the context and the request that we just got from the confer</p>
+      <p begin="01:00:23.000" end="01:00:28.620">wider and figure out if this request is a valid one and</p>
+      <p begin="01:00:28.620" end="01:00:31.390">...who are you tart trying to target.</p>
+      <p begin="01:00:31.390" end="01:00:36.200">I see a couple of faces that I just lost let's take an example.</p>
+      <p begin="01:00:36.200" end="01:00:41.840">Socialistic let's take an example let's say hotmail dot com I went to hotmail dot</p>
+      <p begin="01:00:41.840" end="01:00:46.610">com for the first-time on a local machine that has no knowledge of my microsoft account ever and</p>
+      <p begin="01:00:46.610" end="01:00:50.480">ever aidid's use microsoft...hotmail dot com please feel free to swap</p>
+      <p begin="01:00:50.480" end="01:00:56.050">it with anything you like third-party crisper...to hotmail dot com</p>
+      <p begin="01:00:56.050" end="01:01:00.430">clearly never known I've never seen this user before the user</p>
+      <p begin="01:01:00.430" end="01:01:05.290">...once the user authenticate...goes on as a did the right cookies are generated,</p>
+      <p begin="01:01:05.290" end="01:01:10.060">... how the web works but in parallel what they can do is using the</p>
+      <p begin="01:01:10.060" end="01:01:15.060">pbr's protocol handler they can say all right dude...pass these cookies that</p>
+      <p begin="01:01:15.060" end="01:01:19.770">I just generated or this authentication artifact onto my corresponding</p>
+      <p begin="01:01:19.770" end="01:01:24.080">web account provider so they can do things like db...</p>
+      <p begin="01:01:24.080" end="01:01:28.370">login of microsoft-dot-com and here's some stuff?</p>
+      <p begin="01:01:28.370" end="01:01:32.940">Then we get that call the processes it reprocess it so we get a call saying hate</p>
+      <p begin="01:01:32.940" end="01:01:35.890">someone wants to push data to the</p>
+      <p begin="01:01:35.890" end="01:01:40.160">login dot microsoft dot com provider and here's the data if it comes from the right</p>
+      <p begin="01:01:40.160" end="01:01:43.180">entity we go ahead and activate a background</p>
+      <p begin="01:01:43.180" end="01:01:48.590">activation this kind in this space where the welcome providers activated...the background only</p>
+      <p begin="01:01:48.590" end="01:01:52.650">...the context of the received from the web page so that's basically how the browser</p>
+      <p begin="01:01:52.650" end="01:01:55.450">...model works.</p>
+      <p begin="01:01:55.450" end="01:02:01.170">...any...take one more question and then let's talk in the insider</p>
+      <p begin="01:02:01.170" end="01:02:20.260">...yes, sir I'll talk to-you I'll find you.</p>
+      <p begin="01:02:20.260" end="01:02:25.160">Absolutely so the question was what if you were to factor author company and can this</p>
+      <p begin="01:02:25.160" end="01:02:30.150">infrastructure be leveraged at the end of the day as you saw the web contra wider is where the</p>
+      <p begin="01:02:30.150" end="01:02:35.120">authentication happens and that's your target audience right that's where you want to integrate with other</p>
+      <p begin="01:02:35.120" end="01:02:40.320">to factoryour to factor authentication scenarios so you want all potentially</p>
+      <p begin="01:02:40.320" end="01:02:44.340">...providers to be talking to your service to provide to factor out</p>
+      <p begin="01:02:44.340" end="01:02:49.160">services what-you want-to do is you want to go ahead and target all of the guys who are writing the confer</p>
+      <p begin="01:02:49.160" end="01:02:52.900">writers for windows and go and pitch you are which are set</p>
+      <p begin="01:02:52.900" end="01:02:57.310">...services as an option if you want just provide singles</p>
+      <p begin="01:02:57.310" end="01:03:02.010">to factor art without having to worry about it so it will be the that account providers of the</p>
+      <p begin="01:03:02.010" end="01:03:06.550">world that would be the biggest bang for your hit for your for your money just because</p>
+      <p begin="01:03:06.550" end="01:03:10.340">they're the conduit for a lot of applications to go through as opposed to</p>
+      <p begin="01:03:10.340" end="01:03:13.760">targeting each and every application having them some use</p>
+      <p begin="01:03:13.760" end="01:03:19.350">...with you so it would be the web account providers that you...</p>
+      <p begin="01:03:19.350" end="01:03:23.660">Art thank you ladies in general I'm going to be hanging out at the insider</p>
+      <p begin="01:03:23.660" end="01:03:25.440">land so please feel free to.</p>
+
+    </div>
+  </body>
+</tt>

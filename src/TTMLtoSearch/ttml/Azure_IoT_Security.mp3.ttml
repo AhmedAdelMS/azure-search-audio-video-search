@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.921</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.540" end="00:00:05.050">...will start.</p>
+      <p begin="00:00:05.050" end="00:00:06.430">Hello.</p>
+      <p begin="00:00:06.430" end="00:00:08.440">Welcome back from lunch.</p>
+      <p begin="00:00:08.440" end="00:00:14.770">Ladies and gentlemen and the millions of viewers...around the world.</p>
+      <p begin="00:00:14.770" end="00:00:19.410">My name is a claimants...and the lead architect for the agile</p>
+      <p begin="00:00:19.410" end="00:00:25.130">t services what that means is that when I say something in the team</p>
+      <p begin="00:00:25.130" end="00:00:29.230">then sometimes they listen to me?</p>
+      <p begin="00:00:29.230" end="00:00:34.330">And, I'll talk about after I...security and the to start with.</p>
+      <p begin="00:00:34.330" end="00:00:38.690">Let me tell you what book currently read every book that's was</p>
+      <p begin="00:00:38.690" end="00:00:40.560">...in nineteen eighty four.</p>
+      <p begin="00:00:42.730" end="00:00:49.410">that has been reissued in nineteen ninety nine called normal accidents?</p>
+      <p begin="00:00:49.410" end="00:00:54.030">And, it's really about the sociology of accidents that</p>
+      <p begin="00:00:54.030" end="00:00:58.950">happen complex systems which is really interesting it has to do with</p>
+      <p begin="00:00:58.950" end="00:01:02.420">io t because what we're doing here is we're building...start to</p>
+      <p begin="00:01:02.420" end="00:01:09.110">build very complex systems that are interacting with each other and where security?</p>
+      <p begin="00:01:09.110" end="00:01:12.230">Takes up new shapes and shapes that were not so</p>
+      <p begin="00:01:12.230" end="00:01:20.690">familiar with as an industry especially when I talk about the it industry.</p>
+      <p begin="00:01:20.690" end="00:01:22.830">You should see the score the session afterwards</p>
+      <p begin="00:01:22.830" end="00:01:27.780">you're going to see the barcode again to be entered into the daily prized drawing of something that's</p>
+      <p begin="00:01:27.780" end="00:01:32.830">sure surely fabulous...idea what is though.</p>
+      <p begin="00:01:32.830" end="00:01:34.160">All right.</p>
+      <p begin="00:01:34.160" end="00:01:36.740">So, I'm going to talk about the connected things in the io</p>
+      <p begin="00:01:36.740" end="00:01:42.010">...I'll give you a bit of aninventory of what we already know</p>
+      <p begin="00:01:42.010" end="00:01:46.850">practice is that we already know-how to do and,</p>
+      <p begin="00:01:46.850" end="00:01:51.920">then also and this is why this talk is not only for you in the room</p>
+      <p begin="00:01:51.920" end="00:01:57.540">who have made the time to come to build and to think that investing time in</p>
+      <p begin="00:01:57.540" end="00:02:02.540">coming to microsoft conferences a good idea but seriously the folks were going to what</p>
+      <p begin="00:02:02.540" end="00:02:07.850">...is later who probably don't even know yet that there are...audience also for them</p>
+      <p begin="00:02:07.850" end="00:02:12.460">is very interesting you'll know why I'll talk about some security and privacy</p>
+      <p begin="00:02:12.460" end="00:02:14.910">principles that were following</p>
+      <p begin="00:02:14.910" end="00:02:19.730">...were giving out as guidance as relates to the ot and I'll talk about the agile</p>
+      <p begin="00:02:19.730" end="00:02:23.210">t services and how they go and implement them and I'm also going to give you</p>
+      <p begin="00:02:23.210" end="00:02:28.720">some outlook and roadmap because we're really only at the beginning of a journey here and,</p>
+      <p begin="00:02:28.720" end="00:02:30.470">as an industry because the io</p>
+      <p begin="00:02:30.470" end="00:02:35.090">t currently at the top of the high site hype cycle and right now?</p>
+      <p begin="00:02:35.090" end="00:02:36.220">Most is written.</p>
+      <p begin="00:02:37.230" end="00:02:40.980">Not encode by...magazines and in marketing brochures.</p>
+      <p begin="00:02:42.100" end="00:02:43.910">We're going to get to the point where most</p>
+      <p begin="00:02:43.910" end="00:02:48.090">...written encode the number going to go and go down into that</p>
+      <p begin="00:02:48.090" end="00:02:50.040">...I got is really difficult phase.</p>
+      <p begin="00:02:51.060" end="00:02:58.780">Until we actually land on the ...of productivity.</p>
+      <p begin="00:02:58.780" end="00:03:03.700">When I talk about connected things or the...t this is a picture that kind of covers what I</p>
+      <p begin="00:03:03.700" end="00:03:08.310">mean...trying to be comprehensive so, we have</p>
+      <p begin="00:03:08.310" end="00:03:13.200">in personal environment's and networks we have watches glasses work</p>
+      <p begin="00:03:13.200" end="00:03:18.400">tools hearing aids robotic assistance by on aac systems?</p>
+      <p begin="00:03:18.400" end="00:03:24.890">They're really around people or in very small environment stuff that gets wired together.</p>
+      <p begin="00:03:24.890" end="00:03:28.950">Then we have those things kind of wired up to bigger systems.</p>
+      <p begin="00:03:28.950" end="00:03:32.970">And,...also...forget impersonal environment's and local</p>
+      <p begin="00:03:32.970" end="00:03:37.970">environments in these networks what you can also count towards that is local bus systems</p>
+      <p begin="00:03:37.970" end="00:03:40.380">are industrial automation...</p>
+      <p begin="00:03:40.380" end="00:03:40.990">Stuff that gets</p>
+      <p begin="00:03:40.990" end="00:03:45.890">...together can...then you have larger systems which are put together</p>
+      <p begin="00:03:45.890" end="00:03:47.570">from multiple devices</p>
+      <p begin="00:03:47.570" end="00:03:53.530">...vehicles...vessels factories farms all platforms.</p>
+      <p begin="00:03:53.530" end="00:03:55.810">Which have a local network</p>
+      <p begin="00:03:57.100" end="00:03:59.740">a vehicle today like the typical?</p>
+      <p begin="00:04:00.990" end="00:04:04.140">Upper-class luxury vehicle you can...</p>
+      <p begin="00:04:04.140" end="00:04:06.730">Has forty microprocessors in it micro</p>
+      <p begin="00:04:06.730" end="00:04:12.300">controllers in your key fob as a microcontroller...harks</p>
+      <p begin="00:04:12.300" end="00:04:20.130">via radio with your card that's already fairly complex system all put together on a...</p>
+      <p begin="00:04:20.130" end="00:04:20.520">Those</p>
+      <p begin="00:04:20.520" end="00:04:25.520">devices will speak to external increasingly speak to external systems.</p>
+      <p begin="00:04:25.520" end="00:04:29.620">This is these local systems exist and they have been evolving</p>
+      <p begin="00:04:29.620" end="00:04:34.610">for many years as closest...arguably some of the first io</p>
+      <p begin="00:04:34.610" end="00:04:38.050">t applications were built in at least</p>
+      <p begin="00:04:38.050" end="00:04:44.790">on what we know from the history record on this side of the iron curtain</p>
+      <p begin="00:04:44.790" end="00:04:47.500">by...the department of defense for the</p>
+      <p begin="00:04:47.500" end="00:04:52.270">purpose of detecting russian bombers within very version...time.</p>
+      <p begin="00:04:52.270" end="00:04:55.440">Which were very large computing systems?</p>
+      <p begin="00:04:55.440" end="00:04:59.850">That were plug together and they were effectively taking sensor data in</p>
+      <p begin="00:04:59.850" end="00:05:04.630">radar data in were correlating that...that data to detect within very short time with</p>
+      <p begin="00:05:04.630" end="00:05:09.670">...would be attacked...arguably the first I'll thesis those ever built and that already</p>
+      <p begin="00:05:09.670" end="00:05:13.450">had a notion of integrating data from different sites.</p>
+      <p begin="00:05:13.450" end="00:05:14.940">Into one</p>
+      <p begin="00:05:14.940" end="00:05:21.990">common information base and that's something that was built in the early sixties.</p>
+      <p begin="00:05:21.990" end="00:05:24.340">So, when I see column here I don't necessarily mean</p>
+      <p begin="00:05:24.340" end="00:05:27.620">...cloud...public cloud but also mean</p>
+      <p begin="00:05:27.620" end="00:05:34.020">cloud systems in general I mean datacenter systems you have local environments?</p>
+      <p begin="00:05:34.020" end="00:05:36.720">That communicate out to with centralize</p>
+      <p begin="00:05:36.720" end="00:05:41.490">data collection data analysis and control systems either directly through</p>
+      <p begin="00:05:41.490" end="00:05:49.500">...isp system or through...mobile network operator gateways...</p>
+      <p begin="00:05:49.500" end="00:05:53.250">So, that's when I say connect the things I mean?</p>
+      <p begin="00:05:53.250" end="00:05:55.510">Those systems and now the question is how do we go</p>
+      <p begin="00:05:55.510" end="00:06:00.930">and secure how we go-go about securing all those things now.</p>
+      <p begin="00:06:00.930" end="00:06:05.640">Let's think about how important the security is in here.</p>
+      <p begin="00:06:05.640" end="00:06:07.680">This is about io t enabled infrastructure.</p>
+      <p begin="00:06:09.720" end="00:06:14.770">What the picture I showed you previously is investor automation you can go and easily fit into that</p>
+      <p begin="00:06:14.770" end="00:06:18.500">...to get back to that and how you can go fit that into the picture but here you have enabled</p>
+      <p begin="00:06:18.500" end="00:06:24.970">infrastructure cities buildings energy health mobility traffic</p>
+      <p begin="00:06:24.970" end="00:06:28.410">Have health system lab equipments energy nuclear waste</p>
+      <p begin="00:06:28.410" end="00:06:31.880">management coal mining buildings signage?</p>
+      <p begin="00:06:33.150" end="00:06:35.500">Medical emergency systems.</p>
+      <p begin="00:06:35.500" end="00:06:40.340">And, all...systems which are vital to our communities...which are run</p>
+      <p begin="00:06:40.340" end="00:06:46.460">somehow today and they work what we want to do is want to use digital technology to make...</p>
+      <p begin="00:06:46.460" end="00:06:52.740">ever more efficient but that means that we're now creating more integration</p>
+      <p begin="00:06:52.740" end="00:06:58.230">more communication paths potentially more text surface obviously.</p>
+      <p begin="00:06:58.230" end="00:07:02.160">Which leads to...very important point?</p>
+      <p begin="00:07:02.160" end="00:07:05.330">Safety matters.</p>
+      <p begin="00:07:05.330" end="00:07:11.860">Security is a function of the overall safety strategy for systems.</p>
+      <p begin="00:07:11.860" end="00:07:16.840">In it security kind of is more or less the self-contained thing with the internet a</p>
+      <p begin="00:07:16.840" end="00:07:20.270">things becomes up...the whole story becomes up level the</p>
+      <p begin="00:07:20.270" end="00:07:25.180">...higher the highest priority thing is really safety many environment.</p>
+      <p begin="00:07:25.180" end="00:07:28.960">So, for a few sentences here many lt solutions control critical</p>
+      <p begin="00:07:28.960" end="00:07:36.000">...at the core of industrial and civil infrastructure.</p>
+      <p begin="00:07:36.000" end="00:07:40.790">So, the digital security will be increasingly interwoven with physical safety of life and equipment that's something</p>
+      <p begin="00:07:40.790" end="00:07:46.150">that's good that's driving the my boss has told me hey.</p>
+      <p begin="00:07:46.150" end="00:07:49.420">Since your the architect for those services the one thing I want to</p>
+      <p begin="00:07:49.420" end="00:07:52.930">...care of is one are security story</p>
+      <p begin="00:07:52.930" end="00:07:59.310">to right and that's something I have a lot of respect for because of this.</p>
+      <p begin="00:07:59.310" end="00:08:01.220">Because really it's not only</p>
+      <p begin="00:08:01.220" end="00:08:05.150">security story it's not an info sex story.</p>
+      <p begin="00:08:05.150" end="00:08:15.910">It's a safety story.</p>
+      <p begin="00:08:15.910" end="00:08:18.120">Many ot solutions will provide very deep in</p>
+      <p begin="00:08:18.120" end="00:08:23.040">near real-time into insight into industrial in business processes.</p>
+      <p begin="00:08:23.040" end="00:08:26.020">As well as into homes and the immediate personal</p>
+      <p begin="00:08:26.020" end="00:08:31.910">...privacy matters and one thing</p>
+      <p begin="00:08:31.910" end="00:08:36.400">we're very clear about in the across the entire platform specifically and</p>
+      <p begin="00:08:36.400" end="00:08:42.210">asher is that your data.</p>
+      <p begin="00:08:42.210" end="00:08:44.850">...you store your application data</p>
+      <p begin="00:08:44.850" end="00:08:47.900">in our platform is your data and we're going to</p>
+      <p begin="00:08:47.900" end="00:08:53.380">help you protected what you'll also find us do is to write up the guidance</p>
+      <p begin="00:08:53.380" end="00:08:56.540">in the principles that we've follow for our own services.</p>
+      <p begin="00:08:57.930" end="00:09:03.620">...how do we protect the data that is in let's say outlook dot com we have very strong</p>
+      <p begin="00:09:03.620" end="00:09:06.410">principles...how we think about privacy for</p>
+      <p begin="00:09:06.410" end="00:09:10.990">services that we build for customers that we go and</p>
+      <p begin="00:09:10.990" end="00:09:14.660">right those down and help people help developers who are building</p>
+      <p begin="00:09:14.660" end="00:09:20.070">coyote apps on top of our platform follow those principles if they want to</p>
+      <p begin="00:09:20.070" end="00:09:25.050">but the foundational principle that we have around privacy is your data is your data we're not going to</p>
+      <p begin="00:09:25.050" end="00:09:29.100">go...your service and then do analytics and</p>
+      <p begin="00:09:29.100" end="00:09:40.030">should know create value of that datalike others mites want to do?</p>
+      <p begin="00:09:40.030" end="00:09:43.550">When we already know we know a lot of things and now I want to go</p>
+      <p begin="00:09:43.550" end="00:09:50.090">...a type of person that we?</p>
+      <p begin="00:09:50.090" end="00:09:54.840">Are now starting to interact with which is a type of person who is kind of been on the other</p>
+      <p begin="00:09:54.840" end="00:09:57.930">...the fence in who are now getting to know</p>
+      <p begin="00:09:57.930" end="00:09:59.970">as it people?</p>
+      <p begin="00:09:59.970" end="00:10:04.190">It's the software people who are on the operational side hardware</p>
+      <p begin="00:10:04.190" end="00:10:08.510">...have so far been kind of mostly hardware designers</p>
+      <p begin="00:10:08.510" end="00:10:12.920">machine designers machine builders who've been seeing kind of software as a</p>
+      <p begin="00:10:12.920" end="00:10:18.960">little bit of additional group that needs to be done but who become increasingly</p>
+      <p begin="00:10:18.960" end="00:10:23.650">more software developers and now...and plug-in those things together...people I call</p>
+      <p begin="00:10:23.650" end="00:10:27.450">...operational technology engineers these are.</p>
+      <p begin="00:10:27.450" end="00:10:30.910">The real engineers if you will.</p>
+      <p begin="00:10:30.910" end="00:10:35.590">The people don't build software we call ourselves engineers but the people who have call themselves</p>
+      <p begin="00:10:35.590" end="00:10:41.580">engineers before we started to do that that's the people were me who have very</p>
+      <p begin="00:10:41.580" end="00:10:46.360">rigid procedures around a lot of stuff already around safety and there's</p>
+      <p begin="00:10:46.360" end="00:10:50.900">...and there's international standards as a lot of stuff that's happening on the safety</p>
+      <p begin="00:10:50.900" end="00:10:55.840">side that we can take a look at and that's the reason why I read the book and why</p>
+      <p begin="00:10:55.840" end="00:11:00.190">...not only that book but a ton of books is we can learn a lot from?</p>
+      <p begin="00:11:01.240" end="00:11:05.450">Literally decades of information decades of experience</p>
+      <p begin="00:11:05.450" end="00:11:10.160">around safety because we're now part of a context that is very</p>
+      <p begin="00:11:10.160" end="00:11:15.160">often safety driven with coyote solutions so it engineers we know-how to make a lot of</p>
+      <p begin="00:11:15.160" end="00:11:20.660">digital...secure which I'm going to go in and go through a little bit more detail secure development</p>
+      <p begin="00:11:20.660" end="00:11:25.390">lifecycle secure network technologies et cetera et cetera going to get to those ot</p>
+      <p begin="00:11:25.390" end="00:11:29.290">engineers no have standards procedures training</p>
+      <p begin="00:11:29.290" end="00:11:33.940">...improvement some people will say my god that's waterfall.</p>
+      <p begin="00:11:33.940" end="00:11:36.900">Yes, some of those things are waterfall.</p>
+      <p begin="00:11:36.900" end="00:11:41.490">Safety management and security management is a very rigid</p>
+      <p begin="00:11:41.490" end="00:11:42.580">thing.</p>
+      <p begin="00:11:42.580" end="00:11:45.970">For reason because you don't want to kill people.</p>
+      <p begin="00:11:45.970" end="00:11:46.980">So, there's</p>
+      <p begin="00:11:46.980" end="00:11:51.820">going to be culture clash between those two worlds of the software side where we want to do</p>
+      <p begin="00:11:51.820" end="00:11:55.410">angel and very quick and everything and on the operational</p>
+      <p begin="00:11:55.410" end="00:12:00.120">...and we see those culture clashes in all of the engages that were...like I'm not going to</p>
+      <p begin="00:12:00.120" end="00:12:06.110">update my software on the device and in fact windows xp.</p>
+      <p begin="00:12:06.110" end="00:12:08.910">What are the reasons why windows is so</p>
+      <p begin="00:12:08.910" end="00:12:13.370">still so popular in the investor automation spaces because?</p>
+      <p begin="00:12:13.370" end="00:12:17.470">It's still supported the imbedded version is still supported its operating system</p>
+      <p begin="00:12:17.470" end="00:12:24.160">was published what thirteen fourteen years ago now...own support.</p>
+      <p begin="00:12:24.160" end="00:12:26.850">I want to update my system that's a that's never change</p>
+      <p begin="00:12:26.850" end="00:12:31.270">running system that's something that's ingrained in the culture of</p>
+      <p begin="00:12:31.270" end="00:12:36.030">...operational technology and of course they have a notion of risk and hazard and nowand,</p>
+      <p begin="00:12:36.030" end="00:12:40.540">hazards that we really don't have any experience with...people.</p>
+      <p begin="00:12:40.540" end="00:12:50.280">We don't kill...we don't kill people with our stuff usually.</p>
+      <p begin="00:12:50.280" end="00:12:56.680">Microsoft has and has a number of cloud security principles...took this from a talk that?</p>
+      <p begin="00:12:56.680" end="00:13:01.160">More consider...at the rsa conference so we first we</p>
+      <p begin="00:13:01.160" end="00:13:02.250">protect</p>
+      <p begin="00:13:02.250" end="00:13:06.970">so these are capabilities that we built into the platform.</p>
+      <p begin="00:13:06.970" end="00:13:12.220">And, that we help you with security developed secure development site life-cycle network</p>
+      <p begin="00:13:12.220" end="00:13:16.440">...identity isolation that stuff that we do at the network at the network level these privilege</p>
+      <p begin="00:13:16.440" end="00:13:21.510">just-in-time access that's something how we do security containers vulnerabilities</p>
+      <p begin="00:13:21.510" end="00:13:25.670">and update management that's what we help with the platform and then we're</p>
+      <p begin="00:13:25.670" end="00:13:31.650">actually doing a ton of work for you and that's something for another</p>
+      <p begin="00:13:31.650" end="00:13:36.750">talked specifically about asher security all up in terms of...certification</p>
+      <p begin="00:13:36.750" end="00:13:41.540">I'm going to name a few standards...the end of the talk life's...penetration testing</p>
+      <p begin="00:13:41.540" end="00:13:47.230">where we're actually having our platform attacks at all times and we have</p>
+      <p begin="00:13:47.230" end="00:13:52.850">...out it's actually a handsome money that you can earn by just hacking</p>
+      <p begin="00:13:52.850" end="00:13:57.430">...platform in life production and, we have institute</p>
+      <p begin="00:13:57.430" end="00:14:02.260">...use the detection we have a digital crimes unit that's helping with digital</p>
+      <p begin="00:14:02.260" end="00:14:04.770">crimes helping things tracking things they'll</p>
+      <p begin="00:14:04.770" end="00:14:08.510">...bartlett's down we're having pretty sophisticated this</p>
+      <p begin="00:14:08.510" end="00:14:13.700">divert distributed denial of service defenses having a lot of stuff they're already doing kind of just at the</p>
+      <p begin="00:14:13.700" end="00:14:23.480">datacenter level...securing the platform as...infrastructure.</p>
+      <p begin="00:14:23.480" end="00:14:27.120">For applications for solutions but also for products.</p>
+      <p begin="00:14:28.280" end="00:14:30.870">One thing we have a secure development lifecycle the</p>
+      <p begin="00:14:30.870" end="00:14:38.140">secured available lifecycle something that has emerged out of microsoft's.</p>
+      <p begin="00:14:38.140" end="00:14:39.050">Bad days.</p>
+      <p begin="00:14:40.130" end="00:14:45.400">If you remember windows xp before windows xp sp...</p>
+      <p begin="00:14:45.400" end="00:14:50.610">Those were not very happy times because security was their security was arguably</p>
+      <p begin="00:14:50.610" end="00:14:54.880">...from the very beginning but it was not consistent there was not</p>
+      <p begin="00:14:54.880" end="00:14:59.630">a consistent process for how to apply security principles so</p>
+      <p begin="00:14:59.630" end="00:15:04.980">this the platform the core was okay the shell didn't care</p>
+      <p begin="00:15:04.980" end="00:15:09.790">much or not as much as they should and it was pretty on even across teams every team</p>
+      <p begin="00:15:09.790" end="00:15:14.400">could kind of kind of do its own applies on principles that stopped with the</p>
+      <p begin="00:15:14.400" end="00:15:18.510">security were set that was effectively started with windows xp sp to the</p>
+      <p begin="00:15:18.510" end="00:15:22.700">...secured...secure development lifecycle with effectively</p>
+      <p begin="00:15:22.700" end="00:15:27.740">...completely out of this which says first of all there's</p>
+      <p begin="00:15:27.740" end="00:15:30.960">a training requirement that everybody who participates in the process</p>
+      <p begin="00:15:30.960" end="00:15:36.390">...to have a minimal education around security and that's something that we live like at</p>
+      <p begin="00:15:36.390" end="00:15:41.100">...required security trainee for every engineered who touches code.</p>
+      <p begin="00:15:41.100" end="00:15:44.820">At microsoft so we have all have to go through this every year</p>
+      <p begin="00:15:45.990" end="00:15:48.480">...then on the requirements</p>
+      <p begin="00:15:48.480" end="00:15:53.360">...for any product or any software that you right you stab alicia what the security requirements are</p>
+      <p begin="00:15:53.360" end="00:15:58.620">with your baseline what is acceptable what is not acceptable based on</p>
+      <p begin="00:15:58.620" end="00:16:05.080">a once you've done that then you establish what the design requirements</p>
+      <p begin="00:16:05.080" end="00:16:09.870">are and then you have a rough sketch of what the architectures going to be and then you do</p>
+      <p begin="00:16:09.870" end="00:16:15.820">threat modeling which means you try to figure out what are the attack services if you have...application.</p>
+      <p begin="00:16:15.820" end="00:16:20.810">Right and then you make a call once you once, you know, what the potential threads...your</p>
+      <p begin="00:16:20.810" end="00:16:25.450">attack vectors are could be then you make a decision of which you want</p>
+      <p begin="00:16:25.450" end="00:16:32.280">to mitigate and how they what you want to mitigate them and sometimes you will choose not to mitigate some?</p>
+      <p begin="00:16:32.280" end="00:16:37.230">if you choose not to mitigate them some that is a documented act and</p>
+      <p begin="00:16:37.230" end="00:16:41.210">your explicit about it and that's something that matters.</p>
+      <p begin="00:16:41.210" end="00:16:44.710">If this looks like waterfall for...to you, yeah, that's wonderful.</p>
+      <p begin="00:16:45.830" end="00:16:48.520">But, that's okay.</p>
+      <p begin="00:16:48.520" end="00:16:53.300">Because with the next iteration you can come back to this so we're practicing this even in the a</p>
+      <p begin="00:16:53.300" end="00:16:58.220">job projects for doing that all the time and that's something and then you go into</p>
+      <p begin="00:16:58.220" end="00:17:03.060">...implementation use only approve tools only approved algorithms</p>
+      <p begin="00:17:03.060" end="00:17:03.730">there's</p>
+      <p begin="00:17:03.730" end="00:17:09.710">...md five is one of those hash algorithms that still very popular</p>
+      <p begin="00:17:09.710" end="00:17:15.750">and here is ...standard and there's a...still using md five microsoft we</p>
+      <p begin="00:17:15.750" end="00:17:20.460">can use eighty-five period for no purpose if we just need to have a hash.</p>
+      <p begin="00:17:21.510" end="00:17:23.540">Just the hash function to go and identify</p>
+      <p begin="00:17:23.540" end="00:17:30.540">something just a hash function to go and create hash table we can't use shot too.</p>
+      <p begin="00:17:30.540" end="00:17:32.310">Because it's unclear whether</p>
+      <p begin="00:17:32.310" end="00:17:36.960">would use it for security reasons so we have to use other hash</p>
+      <p begin="00:17:36.960" end="00:17:41.390">...we only need to have the for...secure purposes very strict about those things about</p>
+      <p begin="00:17:41.390" end="00:17:45.390">those procedures so all those things I'm not going to give you a whole talk</p>
+      <p begin="00:17:45.390" end="00:17:50.390">about the est-il you can get all that material from st elders actually qualify partners who can help you</p>
+      <p begin="00:17:50.390" end="00:17:55.820">establishing the dls something that is very useful to build secure</p>
+      <p begin="00:17:55.820" end="00:18:00.600">software and we believe also secure products we're currently doing is we're looking through the sd</p>
+      <p begin="00:18:00.600" end="00:18:04.490">...and see how much we can go and extend that to.</p>
+      <p begin="00:18:04.490" end="00:18:08.330">Makers and also to in dust to industrial product</p>
+      <p begin="00:18:08.330" end="00:18:12.340">folks what changes we need to make what augmentation...we need to make and</p>
+      <p begin="00:18:12.340" end="00:18:18.310">we're also very happy to get feedback on this.</p>
+      <p begin="00:18:18.310" end="00:18:22.980">What's also important...the kevin has in the previous talked, talked about this</p>
+      <p begin="00:18:22.980" end="00:18:27.530">is events in-depth...in-depth is something that we take very seriously</p>
+      <p begin="00:18:27.530" end="00:18:30.900">and all layers and also out's in all</p>
+      <p begin="00:18:30.900" end="00:18:36.140">...in all these different zone so there's the clouds zone...want to do what we go</p>
+      <p begin="00:18:36.140" end="00:18:41.890">and do defense in-depth on the datacenter side that starts with the physical</p>
+      <p begin="00:18:41.890" end="00:18:46.650">layer obviously getting into datacenter getting to a computer in one of</p>
+      <p begin="00:18:46.650" end="00:18:51.980">our datacenters is going to be not very happy experience?</p>
+      <p begin="00:18:51.980" end="00:18:57.100">If you are not authorized to do that I'm sure some will be in the way at some</p>
+      <p begin="00:18:57.100" end="00:18:58.310">point.</p>
+      <p begin="00:18:58.310" end="00:19:02.310">Then but even then one of the things we do kind of at the host</p>
+      <p begin="00:19:02.310" end="00:19:05.860">physical layer is we have stricter separation between the</p>
+      <p begin="00:19:05.860" end="00:19:10.540">sites and the suffer ones in it so I would not be able to tell which of the</p>
+      <p begin="00:19:10.540" end="00:19:15.950">machines run my were runs where workload that's something that we strictly separate out.</p>
+      <p begin="00:19:15.950" end="00:19:20.920">The rest defense in-depth we do in the cloud side there's...depth that we also help with in</p>
+      <p begin="00:19:20.920" end="00:19:25.610">on the device side so with windows ten also with windows</p>
+      <p begin="00:19:25.610" end="00:19:28.640">...with the current operating system and,</p>
+      <p begin="00:19:28.640" end="00:19:33.700">with a full operating system...a defense in-depth model it really starts download the hardware level</p>
+      <p begin="00:19:33.700" end="00:19:38.660">and allows you to have with the rtp...ship keys that are in the hardware than a</p>
+      <p begin="00:19:38.660" end="00:19:43.330">lot in the hardware and that then you have a trusted model we can have a secure</p>
+      <p begin="00:19:43.330" end="00:19:46.820">boot loader that's...by that pm that will then go</p>
+      <p begin="00:19:46.820" end="00:19:52.430">...the operating system that will then go and load only trusted components.</p>
+      <p begin="00:19:52.430" end="00:19:57.580">So, you can create the...can create the super secure systems that's the foundation having</p>
+      <p begin="00:19:57.580" end="00:20:02.500">...secure having secured or the defense in-depth basically taking measures</p>
+      <p begin="00:20:02.500" end="00:20:08.530">...all level of the system is the foundation for all the things that we do.</p>
+      <p begin="00:20:08.530" end="00:20:16.350">It all the things that we belief need to be done io t.</p>
+      <p begin="00:20:16.350" end="00:20:19.850">That's not all because there's the reality kinda gets in</p>
+      <p begin="00:20:19.850" end="00:20:25.010">the way sometimes the first thing is not all devices</p>
+      <p begin="00:20:25.010" end="00:20:29.250">are devices that are at the range where you can go and run</p>
+      <p begin="00:20:30.470" end="00:20:35.430">a full operating system with all security features</p>
+      <p begin="00:20:35.430" end="00:20:39.780">we have ten thousand-dollar servers on one side which are super easy to</p>
+      <p begin="00:20:39.780" end="00:20:44.530">defends and we have one dollar sensors on the other side that are basically just</p>
+      <p begin="00:20:44.530" end="00:20:50.610">a little microcontroller if you just take a look at the maker platforms because they're actually good</p>
+      <p begin="00:20:50.610" end="00:20:55.540">point reference the rest very pi is a full computer</p>
+      <p begin="00:20:55.540" end="00:21:00.680">and has ample capacity if you play with one of the lower lois and</p>
+      <p begin="00:21:00.680" end="00:21:03.050">...do we nodes?</p>
+      <p begin="00:21:03.050" end="00:21:04.110">That's.</p>
+      <p begin="00:21:04.110" end="00:21:10.470">That's about the capacity that might sinclair z is eighty-one have it's just much faster.</p>
+      <p begin="00:21:10.470" end="00:21:12.970">But, it's a huge range so you have</p>
+      <p begin="00:21:12.970" end="00:21:20.680">these super cheap sensors and the only way we're going to get to however trillion devices is</p>
+      <p begin="00:21:20.680" end="00:21:24.430">Read the next analyst thing...week...going to be some quadrant.</p>
+      <p begin="00:21:25.940" end="00:21:31.750">The only way how that's going to happen is that stuff is going to be fairly cheap so,</p>
+      <p begin="00:21:31.750" end="00:21:36.330">it's going to be one dol devices to that are devices and really when you think about and</p>
+      <p begin="00:21:36.330" end="00:21:38.700">this is what I say with that with the second bullet.</p>
+      <p begin="00:21:39.730" end="00:21:43.650">How much can you add to toaster?</p>
+      <p begin="00:21:43.650" end="00:21:48.560">you make a toaster and make a connected toaster instead of just make a plane toaster and you sell that post</p>
+      <p begin="00:21:48.560" end="00:21:50.220">...usually for thirty-nine ninety-five.</p>
+      <p begin="00:21:51.500" end="00:21:59.860">How much how much more expensive can the connect those derby?</p>
+      <p begin="00:21:59.860" end="00:22:01.890">Maybe, yeah, so, if you make ten bucks</p>
+      <p begin="00:22:01.890" end="00:22:06.720">then that is five dollars for the retailer right.</p>
+      <p begin="00:22:06.720" end="00:22:11.800">And, then that's two dollars for all the other people who want to go and,</p>
+      <p begin="00:22:11.800" end="00:22:14.380">make money on this so it's three.</p>
+      <p begin="00:22:14.380" end="00:22:21.100">And, then the actual bomb that you get allocated is probably a dollar-fifty.</p>
+      <p begin="00:22:21.100" end="00:22:25.630">That's what you gotta live with for the logic and the coach and the connect connectivity logic and</p>
+      <p begin="00:22:25.630" end="00:22:29.480">all those things that makes...hard so that constraints</p>
+      <p begin="00:22:29.480" end="00:22:32.340">...computational capabilities which means that also</p>
+      <p begin="00:22:32.340" end="00:22:36.670">...how much crypto you can do memory storage capacity,</p>
+      <p begin="00:22:36.670" end="00:22:40.980">capacity that also says how much logging for instance you can do how much</p>
+      <p begin="00:22:40.980" end="00:22:46.520">can you can keep track of things energy consumption.</p>
+      <p begin="00:22:46.520" end="00:22:51.260">...analysis services tech if you can if you can make a device who runs on...that runs on</p>
+      <p begin="00:22:51.260" end="00:22:57.340">battery just burn it's birds battery on senseless compute work.</p>
+      <p begin="00:22:57.340" end="00:23:02.830">And, then the component qualities also big factor.</p>
+      <p begin="00:23:02.830" end="00:23:04.290">A sensor.</p>
+      <p begin="00:23:04.290" end="00:23:11.550">That costs about our with connectivity logic.</p>
+      <p begin="00:23:11.550" end="00:23:13.590">...sensors you could buy the cost five.</p>
+      <p begin="00:23:14.720" end="00:23:16.720">And, ten fifty.</p>
+      <p begin="00:23:16.720" end="00:23:20.000">And, five hundred and five thousand.</p>
+      <p begin="00:23:20.000" end="00:23:23.550">Depending on the quality the lowest quality censor</p>
+      <p begin="00:23:23.550" end="00:23:28.280">...potentially break earlier the interesting thing is.</p>
+      <p begin="00:23:28.280" end="00:23:31.580">...sensor...a broken sensor.</p>
+      <p begin="00:23:31.580" end="00:23:34.750">...hard to distinguish.</p>
+      <p begin="00:23:34.750" end="00:23:38.580">It also becomes a data quality shoals so.</p>
+      <p begin="00:23:38.580" end="00:23:42.630">So, data quality can also gets looped into with the security...safety</p>
+      <p begin="00:23:43.910" end="00:23:50.410">so capability constraint devices is something that is a that's a that's a big concern.</p>
+      <p begin="00:23:50.410" end="00:23:53.720">Also not everything that we see is greenfield</p>
+      <p begin="00:23:53.720" end="00:23:57.390">right factories other industry utility environment's are all</p>
+      <p begin="00:23:57.390" end="00:24:01.190">...field production lines are getting upgraded</p>
+      <p begin="00:24:01.190" end="00:24:04.940">...tool but you don't go and build a whole new building except</p>
+      <p begin="00:24:04.940" end="00:24:09.580">for when you set up a new site than you do but otherwise you are using</p>
+      <p begin="00:24:09.580" end="00:24:15.200">reusing equipment and there's many environment's which have been upgraded for</p>
+      <p begin="00:24:15.200" end="00:24:21.570">...forty fifty years which keep get getting upgrade my favorite example because I'm a</p>
+      <p begin="00:24:21.570" end="00:24:24.020">Airplane gig is the...bfifty...</p>
+      <p begin="00:24:25.030" end="00:24:30.860">Which has now been flying for sixty years and the will</p>
+      <p begin="00:24:30.860" end="00:24:37.180">continue to fly until two thousand forty when they all this airplanes are going to be eighty-years-old?</p>
+      <p begin="00:24:37.180" end="00:24:42.480">they just keep...getting upgraded one by one by one by one of many factory...just like that.</p>
+      <p begin="00:24:42.480" end="00:24:44.610">So, you don't get to do a greenfield</p>
+      <p begin="00:24:44.610" end="00:24:49.390">brand-new install in many environments especially in a number comes to infrastructure</p>
+      <p begin="00:24:49.390" end="00:24:53.900">...and homes are like that too if you think about how you are introducing just in your house</p>
+      <p begin="00:24:53.900" end="00:24:58.690">introduce new technology you don't go to best buy and say I'd like to buy the</p>
+      <p begin="00:24:58.690" end="00:25:01.740">...the store no you go and biasing.</p>
+      <p begin="00:25:03.030" end="00:25:09.450">And, then three months later you go to buy another thing and then three months later you go with your wife and</p>
+      <p begin="00:25:09.450" end="00:25:13.490">she says null.</p>
+      <p begin="00:25:13.490" end="00:25:18.030">So, you wait another three months.</p>
+      <p begin="00:25:18.030" end="00:25:22.890">So, it's a it's a process that goes one by one by one and that also creates a lot of</p>
+      <p begin="00:25:22.890" end="00:25:27.080">diversity in your systems but it's also not a it's not ecosystem one-story</p>
+      <p begin="00:25:27.080" end="00:25:31.400">...security obviously comes out of this.</p>
+      <p begin="00:25:31.400" end="00:25:35.100">What we found very surprising is the legacy</p>
+      <p begin="00:25:35.100" end="00:25:40.000">network design attitude in specifically in industrial environment's industrial automation</p>
+      <p begin="00:25:40.000" end="00:25:45.320">environment's that's something that came as shouldn't have come as a surprise to</p>
+      <p begin="00:25:45.320" end="00:25:51.800">us when we were starting to look at this fromteam perspective two-and-a-half years ago but I</p>
+      <p begin="00:25:51.800" end="00:25:56.470">kinda was because as...people your now all kind of this expecting that</p>
+      <p begin="00:25:56.470" end="00:26:01.380">you have some level a some application-level security capabilities</p>
+      <p begin="00:26:01.380" end="00:26:05.120">...and endpoint here and endpoint there and they have a notion</p>
+      <p begin="00:26:05.120" end="00:26:09.720">of in identifying each other towards each other and we found?</p>
+      <p begin="00:26:09.720" end="00:26:14.510">In very many environment's none of that...very many environment that we</p>
+      <p begin="00:26:14.510" end="00:26:18.280">...investor automation as well as in manufacturing in as</p>
+      <p begin="00:26:18.280" end="00:26:23.110">...very many other environment's is that</p>
+      <p begin="00:26:23.110" end="00:26:24.780">because the ip folks?</p>
+      <p begin="00:26:25.850" end="00:26:30.570">Cutting-edge it folks have long been so self-absorbed with building all these wonderful social</p>
+      <p begin="00:26:30.570" end="00:26:35.470">experiences they haven't been really paying attention much to what has been</p>
+      <p begin="00:26:35.470" end="00:26:41.320">happening in those industrial environments as a consequence they've been just using best practices</p>
+      <p begin="00:26:41.320" end="00:26:45.630">of the off-the-shelf effectively to go...networks which you can't blame them</p>
+      <p begin="00:26:45.630" end="00:26:49.760">for and was what has happened is that they've...</p>
+      <p begin="00:26:49.760" end="00:26:52.950">Secure networks that mimic the</p>
+      <p begin="00:26:52.950" end="00:26:57.350">exact scenarios of how they secure the perimeter so they</p>
+      <p begin="00:26:57.350" end="00:27:01.970">built waltz and then in those...you can go and move freely.</p>
+      <p begin="00:27:01.970" end="00:27:03.980">And, then you build doors into those</p>
+      <p begin="00:27:03.980" end="00:27:09.600">systems gates that you can come through so we have a secure network and,</p>
+      <p begin="00:27:09.600" end="00:27:13.950">you can't get into that network networks isolated once you're in the network is actually fairly easy to</p>
+      <p begin="00:27:13.950" end="00:27:18.830">communicate with other parties and if you want to get in then you have a designed</p>
+      <p begin="00:27:18.830" end="00:27:23.470">door that design door looks often like this you can</p>
+      <p begin="00:27:23.470" end="00:27:28.270">buy security in the industry automation space in the form of</p>
+      <p begin="00:27:28.270" end="00:27:31.250">two black boxes.</p>
+      <p begin="00:27:31.250" end="00:27:35.480">From the number of vendors there's thousands and...vendors...sell</p>
+      <p begin="00:27:35.480" end="00:27:37.650">...these boxes which are effectively little</p>
+      <p begin="00:27:37.650" end="00:27:42.280">vp and bridges which have sometimes advertised hardware</p>
+      <p begin="00:27:42.280" end="00:27:49.120">see fit certificates which make them super secure...argument there is you so you...five</p>
+      <p begin="00:27:49.120" end="00:27:55.700">...certificate you put into the hardware and therefore the hardware is now certified to be secure.</p>
+      <p begin="00:27:55.700" end="00:27:58.090">That's nonsense but that's actually in the marketing</p>
+      <p begin="00:27:58.090" end="00:28:02.280">material so now you doing this.</p>
+      <p begin="00:28:02.280" end="00:28:05.120">Now you're actually setting up your network...is exif this</p>
+      <p begin="00:28:05.120" end="00:28:10.400">...existing practice you have this low the local error production network you have a</p>
+      <p begin="00:28:10.400" end="00:28:13.280">...motes service technician who wants to go and</p>
+      <p begin="00:28:13.280" end="00:28:19.550">...get at this with his workstation in some other place so they go and build this bridge.</p>
+      <p begin="00:28:19.550" end="00:28:20.570">What are the threads are</p>
+      <p begin="00:28:20.570" end="00:28:26.070">...mitigated or that exist in this right you have?</p>
+      <p begin="00:28:26.070" end="00:28:28.940">So, this is the...modeling model so...have spoof</p>
+      <p begin="00:28:28.940" end="00:28:33.140">in temporal repudiation information disclose...serves elevation of privilege.</p>
+      <p begin="00:28:34.280" end="00:28:37.390">And, I've done a little modeling of this model</p>
+      <p begin="00:28:37.390" end="00:28:42.600">where the communication path is subject to tampering and information disclosure</p>
+      <p begin="00:28:42.600" end="00:28:46.810">and now of service the machine control logic is actually</p>
+      <p begin="00:28:46.810" end="00:28:51.630">threatened by all those things the path to the configuration of the device is also</p>
+      <p begin="00:28:51.630" end="00:28:55.810">t id configuration itself is sub is potentially</p>
+      <p begin="00:28:55.810" end="00:29:00.440">subject repudiation the operator is also subject to spoof</p>
+      <p begin="00:29:00.440" end="00:29:04.990">...at repudiation so we were categoryauthenticate,</p>
+      <p begin="00:29:04.990" end="00:29:08.990">authenticate him or her so this kind the</p>
+      <p begin="00:29:08.990" end="00:29:11.240">threat model for that particular communication</p>
+      <p begin="00:29:11.240" end="00:29:17.110">length so those security devices what do they help with?</p>
+      <p begin="00:29:17.110" end="00:29:20.640">Not a whole lot what they help with is basically just tampering</p>
+      <p begin="00:29:21.680" end="00:29:26.080">information disclosure making the network secure but they're</p>
+      <p begin="00:29:26.080" end="00:29:32.270">not doing something that's actually very dangerous diffusing the networks.</p>
+      <p begin="00:29:32.270" end="00:29:33.370">Because</p>
+      <p begin="00:29:33.370" end="00:29:40.260">one network becomes part of the other network because there is no in vp n.</p>
+      <p begin="00:29:40.260" end="00:29:45.050">Vp...a network integration bridging technology there's no in vp and this</p>
+      <p begin="00:29:45.050" end="00:29:48.870">x is only about having a secure network cable that</p>
+      <p begin="00:29:48.870" end="00:29:53.800">you plugged in that one thing it's another thing that virtual network cable that the network cable is</p>
+      <p begin="00:29:53.800" end="00:29:58.460">virtual it runs over the internet but there's otherwise...security technology</p>
+      <p begin="00:29:58.460" end="00:30:05.220">it actually is worse because it enables that if you own the service this.</p>
+      <p begin="00:30:05.220" end="00:30:06.340">You can only machine.</p>
+      <p begin="00:30:07.360" end="00:30:10.490">Because with the attitude of not having endpoint level security.</p>
+      <p begin="00:30:11.670" end="00:30:14.240">That's a huge problem.</p>
+      <p begin="00:30:14.240" end="00:30:19.190">And, that's something that we fines in a lot of environment's a lot of legacy</p>
+      <p begin="00:30:19.190" end="00:30:21.880">...and there's also the way how</p>
+      <p begin="00:30:21.880" end="00:30:27.820">this stacks that worm that you may have heard of...</p>
+      <p begin="00:30:27.820" end="00:30:29.570">That didn't even need to have a vp</p>
+      <p begin="00:30:29.570" end="00:30:34.490">n gate a access that was it was enough to go infect use</p>
+      <p begin="00:30:34.490" end="00:30:38.800">...that was put into what are the service desks that then got owned</p>
+      <p begin="00:30:38.800" end="00:30:41.470">inside the factory which then stage a</p>
+      <p begin="00:30:41.470" end="00:30:52.590">pretty elaborate attack against those systems which were pretty wide open to access.</p>
+      <p begin="00:30:52.590" end="00:30:57.810">That was this was one of the moments where I had to close my eyes and basis leave the room</p>
+      <p begin="00:30:59.210" end="00:31:04.370">we've also seen this vehicle telematics so there are in vehicle telematics in this</p>
+      <p begin="00:31:04.370" end="00:31:09.160">...a commercial environment that exact same model so you have</p>
+      <p begin="00:31:09.160" end="00:31:10.470">trucks.</p>
+      <p begin="00:31:10.470" end="00:31:14.210">That dial-in that have a have a network connection over</p>
+      <p begin="00:31:14.210" end="00:31:20.800">three-g that effectively dial-up into vp and into viet vp and gateway into</p>
+      <p begin="00:31:20.800" end="00:31:25.620">one of two ways either through a private aps and that the mobile network operator</p>
+      <p begin="00:31:25.620" end="00:31:30.360">traits which is advertises peer-to-peer capable.</p>
+      <p begin="00:31:30.360" end="00:31:34.540">So, through that private a pm your career dialing into vp</p>
+      <p begin="00:31:34.540" end="00:31:40.640">...a vp n which is peer-to-peer cable which means the device can talk to each other.</p>
+      <p begin="00:31:40.640" end="00:31:44.940">And, but, we also have seen other variations of this where they go and the dial into</p>
+      <p begin="00:31:44.940" end="00:31:49.150">...into the...that's on-site so one of the to.</p>
+      <p begin="00:31:49.150" end="00:31:51.950">So, either they come through a public...or they go through private</p>
+      <p begin="00:31:51.950" end="00:31:56.280">aps and then once you own one of those equals.</p>
+      <p begin="00:31:57.330" end="00:31:58.970">I mean you own them</p>
+      <p begin="00:31:58.970" end="00:32:03.870">...sense right you hacker you get pretty.</p>
+      <p begin="00:32:03.870" end="00:32:08.190">Direct access to all the rest that's in the network.</p>
+      <p begin="00:32:08.190" end="00:32:12.740">And, that's pretty scary.</p>
+      <p begin="00:32:12.740" end="00:32:14.860">There's other issues with this so this is</p>
+      <p begin="00:32:14.860" end="00:32:18.670">...obviously security obviously a security risk.</p>
+      <p begin="00:32:18.670" end="00:32:23.500">There's more issues for instance so when you do this when you use</p>
+      <p begin="00:32:23.500" end="00:32:26.870">this lower-level effectively layer-two network integration</p>
+      <p begin="00:32:26.870" end="00:32:32.150">...technique to go in and integrate a truck.</p>
+      <p begin="00:32:32.150" end="00:32:36.850">With the cloud system and try to send data to the truck.</p>
+      <p begin="00:32:36.850" end="00:32:41.310">You have to stick with that networking technology right so you have to go</p>
+      <p begin="00:32:41.310" end="00:32:43.540">into the nesting.</p>
+      <p begin="00:32:43.540" end="00:32:48.380">...need to do the dhcp thing if you don't have static ip addresses.</p>
+      <p begin="00:32:48.380" end="00:32:52.780">Let's say you don't have to do that well then you still have the so you need to go and</p>
+      <p begin="00:32:52.780" end="00:32:56.820">find you to register the device.</p>
+      <p begin="00:32:56.820" end="00:33:01.250">And, then you also need to know if you want to send a message to truck and that's and that</p>
+      <p begin="00:33:01.250" end="00:33:05.180">...is currently not online because driving through tunnel or it's currently on a</p>
+      <p begin="00:33:05.180" end="00:33:10.120">ferry or whatever then you have to wait until the truck shows up again so there's</p>
+      <p begin="00:33:10.120" end="00:33:14.520">...poorer coupling that you creating by having everything being a network server but it</p>
+      <p begin="00:33:14.520" end="00:33:20.730">is really dangerous because now you...putting you putting devices that are of...operated</p>
+      <p begin="00:33:20.730" end="00:33:27.410">by different people and...are exposed to the environment into a single vp n.</p>
+      <p begin="00:33:27.410" end="00:33:34.910">Again, there's no in vp n.</p>
+      <p begin="00:33:34.910" end="00:33:38.150">Back to those sensors because let's go</p>
+      <p begin="00:33:38.150" end="00:33:43.090">more on the on the what was that the left side</p>
+      <p begin="00:33:43.090" end="00:33:50.100">of the continuum when it comes to prices?</p>
+      <p begin="00:33:50.100" end="00:33:56.310">Let's think about all the little gadgets and gives moves you can buy for the whole.</p>
+      <p begin="00:33:56.310" end="00:33:59.400">Let's think about five-dollar ten dollars whether</p>
+      <p begin="00:33:59.400" end="00:34:02.260">sensors sensor equipment that you put on</p>
+      <p begin="00:34:02.260" end="00:34:07.490">the side of buildings to know what the noise level with the pollution level what</p>
+      <p begin="00:34:07.490" end="00:34:12.830">the environmental conditions are throat a city.</p>
+      <p begin="00:34:12.830" end="00:34:18.290">Let's make those twenty bucks or fifty bucks but those devices all need to be needs to</p>
+      <p begin="00:34:18.290" end="00:34:22.340">be relatively cheap they'll be equipped with.</p>
+      <p begin="00:34:22.340" end="00:34:24.130">Small.</p>
+      <p begin="00:34:24.130" end="00:34:31.500">With small and low capability circuitry.</p>
+      <p begin="00:34:31.500" end="00:34:35.760">If you act if you actually operate them a servers they will have to go and triage</p>
+      <p begin="00:34:35.760" end="00:34:39.220">to traffic that comes in them they have to make a decision...whether they want got</p>
+      <p begin="00:34:39.220" end="00:34:46.079">what go let someone in or not if someone comes...attacks them.</p>
+      <p begin="00:34:46.079" end="00:34:50.979">...have to keep log because if you put...device or server out there and you</p>
+      <p begin="00:34:50.979" end="00:34:55.699">don't look into the log of whether someone attacks it well then eventually</p>
+      <p begin="00:34:55.699" end="00:35:00.579">...come if...to get in you have to look for this so how does...device which is</p>
+      <p begin="00:35:00.579" end="00:35:08.510">sitting somewhere...pinned against the wall people login whose look into that mode.</p>
+      <p begin="00:35:08.510" end="00:35:14.180">Will you go and...million tiny and...public, public network servers?</p>
+      <p begin="00:35:14.180" end="00:35:15.530">...do you think they could helps</p>
+      <p begin="00:35:15.530" end="00:35:21.160">...need some help with that we think they could need some help with that.</p>
+      <p begin="00:35:21.160" end="00:35:28.050">So, we have a principle there is nothing that we invented.</p>
+      <p begin="00:35:28.050" end="00:35:30.140">It's called services of communication</p>
+      <p begin="00:35:30.140" end="00:35:34.430">...a model where all devices that are in and</p>
+      <p begin="00:35:34.430" end="00:35:39.960">io t scenario which are the sm these small</p>
+      <p begin="00:35:39.960" end="00:35:44.710">devices that you find around the house the ones that are you know,</p>
+      <p begin="00:35:44.710" end="00:35:47.750">just adding a dollar or three or five to the</p>
+      <p begin="00:35:47.750" end="00:35:52.050">...materials how we can go and even reason about security</p>
+      <p begin="00:35:52.050" end="00:35:57.630">network which means we need to have a service and that service can either live on-the-field</p>
+      <p begin="00:35:57.630" end="00:36:02.480">gateway that's a device that you have around the house or in the facility which</p>
+      <p begin="00:36:02.480" end="00:36:06.120">can go and help out or it's a cloud service.</p>
+      <p begin="00:36:07.800" end="00:36:12.540">you have this you have an isolated network here isolated network can be anything</p>
+      <p begin="00:36:12.540" end="00:36:18.200">...effectively the pam that you have in the initial slide or the local network that I</p>
+      <p begin="00:36:18.200" end="00:36:24.350">on the initial slide it can be anything from a mobile operator network</p>
+      <p begin="00:36:24.350" end="00:36:31.240">sell to a to in all the local home network.</p>
+      <p begin="00:36:31.240" end="00:36:34.370">And, there's going to be a router at the edge.</p>
+      <p begin="00:36:34.370" end="00:36:38.000">Let's establish first one thing.</p>
+      <p begin="00:36:38.000" end="00:36:42.920">has been said and it's there's plenty of articles you can read.</p>
+      <p begin="00:36:42.920" end="00:36:45.340">This more being more written in were in</p>
+      <p begin="00:36:45.340" end="00:36:47.660">...then there's written...code there's.</p>
+      <p begin="00:36:48.680" end="00:36:52.790">Plenty article signal read that say we must have ip vsix</p>
+      <p begin="00:36:52.790" end="00:36:57.300">because we're going to have ten billion devices and every one of those devices</p>
+      <p begin="00:36:57.300" end="00:37:03.890">...to have a public ip address that ladies and gentlemen is complete nonsense it</p>
+      <p begin="00:37:03.890" end="00:37:08.050">is complete nonsense because count all the devices that you have</p>
+      <p begin="00:37:08.050" end="00:37:14.220">...your own homes and your geeks which means you're going to have player those.</p>
+      <p begin="00:37:14.220" end="00:37:22.530">Which have a public...ip address?</p>
+      <p begin="00:37:23.650" end="00:37:29.380">Adventures here you have five well...professor.</p>
+      <p begin="00:37:29.380" end="00:37:32.360">It's not a lot.</p>
+      <p begin="00:37:32.360" end="00:37:35.300">It's your gateway...router and</p>
+      <p begin="00:37:35.300" end="00:37:41.200">nat is not a bad idea at all...actually good idea because it keeps the networks</p>
+      <p begin="00:37:41.200" end="00:37:47.420">it keeps...network separate your devices that you have and the extra even if you bring in</p>
+      <p begin="00:37:47.420" end="00:37:52.390">extra new device in your home or even if you bring in extra new device in the in...for into</p>
+      <p begin="00:37:52.390" end="00:37:55.110">...production environment.</p>
+      <p begin="00:37:55.110" end="00:37:58.420">The presence of that device doesn't change the foundational design if</p>
+      <p begin="00:37:58.420" end="00:38:01.980">your network which isn't expecting that anybody shows up to visit</p>
+      <p begin="00:38:03.500" end="00:38:09.720">...the lower network layers so having that network address translation haven't</p>
+      <p begin="00:38:09.720" end="00:38:14.260">that the separation between those networks is a healthy thing to have and I think that's also something</p>
+      <p begin="00:38:14.260" end="00:38:17.730">was worth preserving.</p>
+      <p begin="00:38:17.730" end="00:38:20.540">Who needs ip six other people who are building these</p>
+      <p begin="00:38:20.540" end="00:38:25.310">mobile base stations because that's going to explode?</p>
+      <p begin="00:38:25.310" end="00:38:29.920">And, mobile base stations not only as traditional mobile network operators but also things like</p>
+      <p begin="00:38:29.920" end="00:38:34.260">...fox which is a french company...building a is mba</p>
+      <p begin="00:38:34.260" end="00:38:39.350">...embed base networks where you can but by a data plan that gives you</p>
+      <p begin="00:38:39.350" end="00:38:46.430">fifty messages per or...messages per day which each</p>
+      <p begin="00:38:46.430" end="00:38:52.030">half like sixteen bytes but that's enough if you want to build a connected cal?</p>
+      <p begin="00:38:52.030" end="00:38:54.180">No, kidding no kidding you can</p>
+      <p begin="00:38:54.180" end="00:38:59.130">...for second series business connected...</p>
+      <p begin="00:38:59.130" end="00:39:04.370">If you want to know when that cou when that cou is ready to have babies that's an</p>
+      <p begin="00:39:04.370" end="00:39:09.680">...to figure out also you just general generally if you have a very large from you want to know whether</p>
+      <p begin="00:39:09.680" end="00:39:13.470">you're cows are live is still living or whether somewhere out there.</p>
+      <p begin="00:39:13.470" end="00:39:17.830">And, that's something you can do with the service like this very nicely so all of those things are connected to</p>
+      <p begin="00:39:17.830" end="00:39:22.820">these router so the way how this works is very simple any device goes...out through</p>
+      <p begin="00:39:22.820" end="00:39:27.800">gateway to a service gateway that service gateway has a bucket that's</p>
+      <p begin="00:39:27.800" end="00:39:32.790">...so that device the devices period with that service gateway which means</p>
+      <p begin="00:39:32.790" end="00:39:37.050">educate taints it has one credential and it knows one</p>
+      <p begin="00:39:37.050" end="00:39:41.350">peer that will communicate with ever.</p>
+      <p begin="00:39:41.350" end="00:39:43.800">It doesn't need to have a local of a local</p>
+      <p begin="00:39:43.800" end="00:39:48.580">authentication database it doesn't need to have any of those things it only needs to know that one key</p>
+      <p begin="00:39:48.580" end="00:39:53.040">that of the party that...truss and...to have a key to identify itself and a second key to</p>
+      <p begin="00:39:53.040" end="00:39:57.340">role then we'll go and creative stable connection out</p>
+      <p begin="00:39:57.340" end="00:40:01.560">to that service gateway whenever it sees the network.</p>
+      <p begin="00:40:01.560" end="00:40:03.970">To send messages to the device you go and</p>
+      <p begin="00:40:03.970" end="00:40:08.910">stop-and-go from the client decent data to the service gateway to a name and not</p>
+      <p begin="00:40:08.910" end="00:40:14.610">to...address which very nicely solves the problem of a car.</p>
+      <p begin="00:40:14.610" end="00:40:21.950">...driving along a road fast.</p>
+      <p begin="00:40:21.950" end="00:40:28.910">On the...we don't have these crazy researchers that you people have here so,</p>
+      <p begin="00:40:28.910" end="00:40:34.190">I go with normal cruising speed that whole like hundred-miles-an-hour I</p>
+      <p begin="00:40:34.190" end="00:40:39.200">ate switch cell towers about every minute so every</p>
+      <p begin="00:40:39.200" end="00:40:44.140">one-and-a-half minutes help between cell towers specifically on the hire band on the</p>
+      <p begin="00:40:44.140" end="00:40:48.550">hire throughput bands which means also get a new address at each of</p>
+      <p begin="00:40:48.550" end="00:40:53.830">those which means am inconvenient to reach</p>
+      <p begin="00:40:53.830" end="00:40:57.900">...to get the timing right because I'll be switching networks and,</p>
+      <p begin="00:40:57.900" end="00:41:03.880">also a be difficult to address if I get a local address there this year this model is solving that very</p>
+      <p begin="00:41:03.880" end="00:41:08.970">nicely but having a stable name and whenever I reconnect effectively I just</p>
+      <p begin="00:41:08.970" end="00:41:13.400">go and pull...messages for me from that service gateway and</p>
+      <p begin="00:41:13.400" end="00:41:17.590">then sending in I'm sending through that gateway that</p>
+      <p begin="00:41:17.590" end="00:41:22.390">gateway again might be local so it might be a local gateway</p>
+      <p begin="00:41:22.390" end="00:41:25.940">...you have in the house or it might be a</p>
+      <p begin="00:41:25.940" end="00:41:30.500">...gateway of the sort...building.</p>
+      <p begin="00:41:30.500" end="00:41:35.190">The device does not listen...traffic all connections are device initiated</p>
+      <p begin="00:41:35.190" end="00:41:39.920">and outbound...mappings automatic and outbound.</p>
+      <p begin="00:41:39.920" end="00:41:46.430">And, now in blog ports open the...services minimize your house is safe.</p>
+      <p begin="00:41:46.430" end="00:41:50.030">That's the other crazy thing right if you have up and pe</p>
+      <p begin="00:41:50.030" end="00:41:55.200">support on your wireless lan router and have that turned on?</p>
+      <p begin="00:41:55.200" end="00:42:06.210">You crazy.</p>
+      <p begin="00:42:06.210" end="00:42:10.680">The scenario we see people asking for all the time is.</p>
+      <p begin="00:42:10.680" end="00:42:13.110">I want to control my a</p>
+      <p begin="00:42:13.110" end="00:42:17.260">insert device here washer dryer car.</p>
+      <p begin="00:42:17.260" end="00:42:23.070">With my cell phone.</p>
+      <p begin="00:42:23.070" end="00:42:27.990">Or my galaxy.</p>
+      <p begin="00:42:27.990" end="00:42:33.170">So, how do you realize that well you go through the same model?</p>
+      <p begin="00:42:33.170" end="00:42:35.750">You don't need to have local peering but you go through a</p>
+      <p begin="00:42:35.750" end="00:42:40.100">service gateway or you will goal and that's even more likely throw mobile back-end you</p>
+      <p begin="00:42:40.100" end="00:42:44.810">connected device up to that service gateway that's where gets nailed up</p>
+      <p begin="00:42:44.810" end="00:42:49.210">right and then you come from the mobile device go through the mobile app or go</p>
+      <p begin="00:42:49.210" end="00:42:55.850">straight through the to the service gateway if you have to necessary...and sent the message that way.</p>
+      <p begin="00:42:55.850" end="00:43:01.790">So, let's say you want to go and build is solution for car sharing and for car</p>
+      <p begin="00:43:01.790" end="00:43:07.180">sharing where you can go and the say hey I need to have a car that I want to go</p>
+      <p begin="00:43:07.180" end="00:43:13.220">and drive and I'm going to get itwant to get the...</p>
+      <p begin="00:43:13.220" end="00:43:15.880">Seconds later the app says hey, yeah, I have a car for</p>
+      <p begin="00:43:15.880" end="00:43:21.610">you the car is over there over there over there and then it's the white one and,</p>
+      <p begin="00:43:21.610" end="00:43:24.630">just walk up to it so I woke up to it on the app I can</p>
+      <p begin="00:43:24.630" end="00:43:27.680">...push a button car unlocks.</p>
+      <p begin="00:43:27.680" end="00:43:30.640">Magic.</p>
+      <p begin="00:43:30.640" end="00:43:35.480">What the authorization for that act of unlocking the car is something that</p>
+      <p begin="00:43:35.480" end="00:43:38.040">will have to be brokered by the system either?</p>
+      <p begin="00:43:39.230" end="00:43:43.010">...by phone some information to</p>
+      <p begin="00:43:43.010" end="00:43:48.550">have a local connectivity but that's something that would depend on certain radio capabilities</p>
+      <p begin="00:43:48.550" end="00:43:53.530">in my phone or it does the remote unlocked directly when I push a button and that would</p>
+      <p begin="00:43:53.530" end="00:43:59.700">then come through that path where the mobile back-end is effectively employee authorization logic.</p>
+      <p begin="00:43:59.700" end="00:44:01.620">But, it's a very elegant solution to</p>
+      <p begin="00:44:01.620" end="00:44:08.360">avoid all of the local networking setup stuff because everybody can...of...a single place.</p>
+      <p begin="00:44:08.360" end="00:44:09.300">And,...is secure.</p>
+      <p begin="00:44:10.520" end="00:44:18.830">Because both parties have appeared connection with the...</p>
+      <p begin="00:44:18.830" end="00:44:23.130">And, you get to poured coupling of it.</p>
+      <p begin="00:44:23.130" end="00:44:27.650">Further thing that's also part of this services communication model</p>
+      <p begin="00:44:27.650" end="00:44:33.930">is trust brokerage for nomadic devices the currents the current models for vehicle to</p>
+      <p begin="00:44:33.930" end="00:44:40.790">vehicle and vehicle to infrastructure a standards...iso standards</p>
+      <p begin="00:44:40.790" end="00:44:45.640">Call effective for the for creating the largest pk isis them in the world.</p>
+      <p begin="00:44:45.640" end="00:44:49.090">Where effectively every car gets certificate</p>
+      <p begin="00:44:50.340" end="00:44:56.090">...those certificates are manage at massive scale and we're going to be ending up with the</p>
+      <p begin="00:44:56.090" end="00:45:02.850">system that will go and distribute and role and replace certificates at the scale of several?</p>
+      <p begin="00:45:02.850" end="00:45:05.410">Billion vehicles eventually.</p>
+      <p begin="00:45:06.640" end="00:45:09.730">And, also will go and distribute the net the necessary certificate</p>
+      <p begin="00:45:09.730" end="00:45:13.320">...lists which are going to be funny because, you know,</p>
+      <p begin="00:45:13.320" end="00:45:17.800">stuff gets stolen stuff good stuff breaks et cetera et cetera so we're also going to have city of your</p>
+      <p begin="00:45:17.800" end="00:45:23.250">revelation replication list of kind of the same dimensions that it's not going to work.</p>
+      <p begin="00:45:23.250" end="00:45:27.520">We have mechanisms to deal with that and mechanisms like.</p>
+      <p begin="00:45:27.520" end="00:45:30.650">Having a devices...device identity system and</p>
+      <p begin="00:45:30.650" end="00:45:35.290">...token system that allows to do this right so</p>
+      <p begin="00:45:35.290" end="00:45:40.020">I trust as a device that registry the other device also</p>
+      <p begin="00:45:40.020" end="00:45:44.650">trust that registry and which means now a device can ask for token that</p>
+      <p begin="00:45:44.650" end="00:45:50.670">are under another device can actually ...being trustworthy</p>
+      <p begin="00:45:50.670" end="00:45:55.850">...token can be varied in lifetime and that's something that's</p>
+      <p begin="00:45:55.850" end="00:46:00.100">a very useful model for enabling peer-to-peer communication which will be</p>
+      <p begin="00:46:00.100" end="00:46:04.200">is essential because if you driving along the street?</p>
+      <p begin="00:46:04.200" end="00:46:09.540">you need to have information from the infrastructure what you're what you're traffic lights are doing or what</p>
+      <p begin="00:46:09.540" end="00:46:13.510">your...are doing you can't rely on call connectivity which means local radio</p>
+      <p begin="00:46:13.510" end="00:46:19.140">something that's important but we can't do is we can't have this huge pk infrastructure with trying-to</p>
+      <p begin="00:46:19.140" end="00:46:23.510">...starts etc we need to have something is lighter-weight and having that</p>
+      <p begin="00:46:23.510" end="00:46:26.270">...brokered trust model where you have</p>
+      <p begin="00:46:26.270" end="00:46:33.630">tokens with a limited lifetime which you can go and requires something that's actually more feasible?</p>
+      <p begin="00:46:33.630" end="00:46:40.020">So, all the translated into vehicle telematics from the previous picture</p>
+      <p begin="00:46:40.020" end="00:46:42.400">This is something that we do.</p>
+      <p begin="00:46:42.400" end="00:46:47.670">Today with all give you name.</p>
+      <p begin="00:46:47.670" end="00:46:49.920">There a commercial truck company.</p>
+      <p begin="00:46:49.920" end="00:46:50.440">And, they have</p>
+      <p begin="00:46:50.440" end="00:46:55.420">an inc up bridge in their telematics box and that telematics</p>
+      <p begin="00:46:55.420" end="00:47:00.760">box is talking through to answer using the impure peeling that</p>
+      <p begin="00:47:00.760" end="00:47:04.940">is the only solution that does that we have another solution that that's from the</p>
+      <p begin="00:47:04.940" end="00:47:09.560">alfie tool fob that you can...plug-in your car that's also using</p>
+      <p begin="00:47:09.560" end="00:47:14.420">the same principle and we have a number of other solutions that do that in vehicle</p>
+      <p begin="00:47:14.420" end="00:47:19.300">telematics another set of manufactures I can't name.</p>
+      <p begin="00:47:19.300" end="00:47:22.950">If...http...link its bidirectional</p>
+      <p begin="00:47:22.950" end="00:47:27.060">...by default reliable transfer application-level and</p>
+      <p begin="00:47:27.060" end="00:47:30.850">no exposure to the tiers they...sitting on the same network</p>
+      <p begin="00:47:30.850" end="00:47:34.840">right there's no integration at the lowest-level</p>
+      <p begin="00:47:34.840" end="00:47:39.780">...we just all application-level integration.</p>
+      <p begin="00:47:39.780" end="00:47:44.760">Industrial automation were working very closely I'm actually sitting I'm sitting on the</p>
+      <p begin="00:47:44.760" end="00:47:49.600">opec foundations of the techniques advisory council and also a member of the</p>
+      <p begin="00:47:49.600" end="00:47:52.450">opie cu a working group.</p>
+      <p begin="00:47:52.450" end="00:47:57.420">Which is a consortium four hundred sixty companies</p>
+      <p begin="00:47:57.420" end="00:48:02.060">mostly all from the operational technology side industrial automation where</p>
+      <p begin="00:48:02.060" end="00:48:08.120">creating standards for industrial automation integration and opie see way?</p>
+      <p begin="00:48:08.120" end="00:48:11.820">...something has to build kind-of for making creating compatibility creating integration</p>
+      <p begin="00:48:11.820" end="00:48:13.560">...the factory floor realizing.</p>
+      <p begin="00:48:15.220" end="00:48:17.730">That security's important opus your</p>
+      <p begin="00:48:17.730" end="00:48:22.610">usa already implements point-to-point security.</p>
+      <p begin="00:48:22.610" end="00:48:25.370">But, that doesn't change the fact that the factory floor per</p>
+      <p begin="00:48:25.370" end="00:48:30.330">say is not necessarily secure so the model were putting into opec way for the</p>
+      <p begin="00:48:30.330" end="00:48:35.050">working group level is a model where you have the notion of an opie</p>
+      <p begin="00:48:35.050" end="00:48:39.260">see way gateway and then later...us also putting this into the opie</p>
+      <p begin="00:48:39.260" end="00:48:42.560">servers so that the cloud link is</p>
+      <p begin="00:48:42.560" end="00:48:46.360">...is done through exactly the same principle all outbound</p>
+      <p begin="00:48:46.360" end="00:48:52.020">status stable connection and that's how the routing happens so...we see way or</p>
+      <p begin="00:48:52.020" end="00:48:56.300">ds or any other protocol that's being used inside and then having</p>
+      <p begin="00:48:56.300" end="00:49:01.050">effectively a gateway that facilitates the communication with.</p>
+      <p begin="00:49:01.050" end="00:49:01.730">Demonstrate this</p>
+      <p begin="00:49:01.730" end="00:49:08.240">...hanover...with a number of companiesthe</p>
+      <p begin="00:49:08.240" end="00:49:12.700">...devices speaker some see labs that's a company in seattle</p>
+      <p begin="00:49:12.700" end="00:49:17.610">that's building investor automation solution and they have build a bridge between opie</p>
+      <p begin="00:49:17.610" end="00:49:22.730">...and the cloud that you can actually buy as a device or the software from</p>
+      <p begin="00:49:22.730" end="00:49:29.430">see labs to make...integration happen...doing the working group...kind of formalizing that link.</p>
+      <p begin="00:49:29.430" end="00:49:33.090">For that sort of integrations so that we can go from environment which has not been</p>
+      <p begin="00:49:33.090" end="00:49:35.830">designed for being exposed to the cloud it can go</p>
+      <p begin="00:49:35.830" end="00:49:39.750">into very securely link this with environments that are in the</p>
+      <p begin="00:49:39.750" end="00:49:43.520">column that also brings all the reliability capabilities with</p>
+      <p begin="00:49:43.520" end="00:49:47.580">that because and opie see way environment my</p>
+      <p begin="00:49:47.580" end="00:49:56.150">quite well be sitting on a truck and moving or sitting on a ship and moving.</p>
+      <p begin="00:49:56.150" end="00:50:03.410">Another massive, massive issue.</p>
+      <p begin="00:50:03.410" end="00:50:05.580">If we think about these vehicle solutions.</p>
+      <p begin="00:50:06.900" end="00:50:08.850">We're talking about devices</p>
+      <p begin="00:50:08.850" end="00:50:14.450">we're talking about management of devices at the scale of millions if</p>
+      <p begin="00:50:14.450" end="00:50:19.440">we're building this into a into the standard as a stellar capability into</p>
+      <p begin="00:50:19.440" end="00:50:24.260">...your quickly at a million two million three million vehicles output</p>
+      <p begin="00:50:24.260" end="00:50:30.020">out of a single brand per year.</p>
+      <p begin="00:50:30.020" end="00:50:31.630">That's a lot.</p>
+      <p begin="00:50:31.630" end="00:50:36.340">If you think about how the biggest how big the biggest active directory deployment is that,</p>
+      <p begin="00:50:36.340" end="00:50:42.250">you know.</p>
+      <p begin="00:50:42.250" end="00:50:45.270">Magnitudes away from that.</p>
+      <p begin="00:50:45.270" end="00:50:49.850">So, you have to have...actually goes deals with that in the and it also</p>
+      <p begin="00:50:49.850" end="00:50:56.440">can do software update management which is importance at that scale.</p>
+      <p begin="00:50:56.440" end="00:50:57.310">And, just to illustrate.</p>
+      <p begin="00:50:58.860" end="00:50:59.430">A million.</p>
+      <p begin="00:51:00.460" end="00:51:02.690">Is a lot right?</p>
+      <p begin="00:51:02.690" end="00:51:04.350">So, what we have as makers</p>
+      <p begin="00:51:04.350" end="00:51:08.690">...in a heck...like hundreds of devices enterprise</p>
+      <p begin="00:51:08.690" end="00:51:12.140">...proud of...ten thousands of devices?</p>
+      <p begin="00:51:13.280" end="00:51:17.350">Consumer products is millions of devices.</p>
+      <p begin="00:51:17.350" end="00:51:21.270">So, that's something that call for additional infrastructure that to deal with the</p>
+      <p begin="00:51:21.270" end="00:51:26.060">security so...we're building is part of the ire address ut</p>
+      <p begin="00:51:26.060" end="00:51:31.440">...a piece that sits in the after I ot suite which is the delegated</p>
+      <p begin="00:51:31.440" end="00:51:35.940">component specifically aiming to solve the scale issues</p>
+      <p begin="00:51:35.940" end="00:51:39.550">...specifically the security issues so I don't</p>
+      <p begin="00:51:39.550" end="00:51:41.860">see how job as part of the io t</p>
+      <p begin="00:51:41.860" end="00:51:47.970">...provides effectively a model for creating.</p>
+      <p begin="00:51:47.970" end="00:51:51.440">Millions of devices up to ten million devices per</p>
+      <p begin="00:51:51.440" end="00:51:55.820">...for I'll see how this curly the goal that we have.</p>
+      <p begin="00:51:55.820" end="00:51:57.380">With explicit support for</p>
+      <p begin="00:51:57.380" end="00:52:03.670">feel gateways explicit support for additional protocol.</p>
+      <p begin="00:52:03.670" end="00:52:07.360">As a service solution that you can be that you'll be able to</p>
+      <p begin="00:52:07.360" end="00:52:09.630">build to effectively go to the after poorly</p>
+      <p begin="00:52:09.630" end="00:52:12.570">crater coyote hub and you're going to get this bidirectional capability</p>
+      <p begin="00:52:13.800" end="00:52:18.720">that bidirectional capability will give you a way to go and talk directly with</p>
+      <p begin="00:52:18.720" end="00:52:23.470">...hub using https.</p>
+      <p begin="00:52:23.470" end="00:52:26.820">One point one or two.</p>
+      <p begin="00:52:26.820" end="00:52:31.510">Or with aim compete and explicit about the here.</p>
+      <p begin="00:52:31.510" end="00:52:35.970">And, we'll also give you a way and this is something we're going to provide as a self host book</p>
+      <p begin="00:52:35.970" end="00:52:42.160">capability to talk in...tt as capability and that gateway will also</p>
+      <p begin="00:52:42.160" end="00:52:46.410">be the foundation that you can go and build on if you want to support further protocol</p>
+      <p begin="00:52:46.410" end="00:52:50.230">...going to go and extend to further protocols as well the way you</p>
+      <p begin="00:52:50.230" end="00:52:53.480">can think of coyote hub is that it is a super.</p>
+      <p begin="00:52:54.600" end="00:52:57.210">Charge bidirectional version of events</p>
+      <p begin="00:52:57.210" end="00:53:01.360">hub with further capabilities so it's building on the foundational scale</p>
+      <p begin="00:53:01.360" end="00:53:04.520">...ub which can today already do.</p>
+      <p begin="00:53:07.650" end="00:53:13.310">A million sources and over one gigabyte per second throughput we're</p>
+      <p begin="00:53:13.310" end="00:53:21.070">currently doing on events ub over fifteen billion messages per day.</p>
+      <p begin="00:53:21.070" end="00:53:22.950">So, on that capability.</p>
+      <p begin="00:53:24.350" end="00:53:26.180">Were building up the io</p>
+      <p begin="00:53:26.180" end="00:53:31.970">...hub on that phone on that on that skill foundation were actually extending that even.</p>
+      <p begin="00:53:31.970" end="00:53:35.740">For services connectivity you going to have these per device command</p>
+      <p begin="00:53:35.740" end="00:53:39.250">...so let me go through this quickly so hyper</p>
+      <p begin="00:53:40.320" end="00:53:44.430">...identity registry in there so that you can have millions of</p>
+      <p begin="00:53:44.430" end="00:53:48.670">these devices indeo...registered so we're going to allow you to go and register them</p>
+      <p begin="00:53:48.670" end="00:53:54.860">and will also be able to federated identity with active directory?</p>
+      <p begin="00:53:54.860" end="00:53:57.470">We're going to be secure by principle.</p>
+      <p begin="00:53:57.470" end="00:53:59.020">At the main gateway of the</p>
+      <p begin="00:53:59.020" end="00:54:04.220">...hub you will not be able to use protocols that are not secure.</p>
+      <p begin="00:54:04.220" end="00:54:08.280">We will not allow...http traffic if you want</p>
+      <p begin="00:54:08.280" end="00:54:16.300">...plane...should be traffic you can do that but you have to go and make itself also gateway.</p>
+      <p begin="00:54:16.300" end="00:54:19.880">We will support initially tls with the starts.</p>
+      <p begin="00:54:21.110" end="00:54:23.980">We will then also extend this to also support</p>
+      <p begin="00:54:23.980" end="00:54:28.090">...ps k which shaved off the certificate</p>
+      <p begin="00:54:28.090" end="00:54:32.490">exchange and allows you to operate with shared keys on both sides</p>
+      <p begin="00:54:32.490" end="00:54:37.330">of the connection which makes the exchange much quicker and much more lighter-weight</p>
+      <p begin="00:54:37.330" end="00:54:41.840">in specifically designed for that purpose will also look into using tls...pk which is</p>
+      <p begin="00:54:41.840" end="00:54:44.840">...public key which does the same thing with asymmetric</p>
+      <p begin="00:54:44.840" end="00:54:50.400">...cryptography and there's specifically interesting for super bandwidth constraint links</p>
+      <p begin="00:54:50.400" end="00:54:54.960">so if you paying your mtwo m connection by the kilobytes</p>
+      <p begin="00:54:54.960" end="00:54:56.970">...always sending five</p>
+      <p begin="00:54:56.970" end="00:55:02.700">kilobytes starts across the wires not a good idea if it's always the same thing and,</p>
+      <p begin="00:55:02.700" end="00:55:07.680">...typically because the peering is strong because...have of gateway in advice you don't need the</p>
+      <p begin="00:55:07.680" end="00:55:12.630">search you actually don't want to have the third-party certificate authority in the middle having a key exchange</p>
+      <p begin="00:55:12.630" end="00:55:21.890">actually sufficient and, we're going to have effectively native support for the services the communication model just talked about.</p>
+      <p begin="00:55:21.890" end="00:55:26.880">You will generally authenticate at the channel level so whatever that</p>
+      <p begin="00:55:26.880" end="00:55:32.460">channel is...http et-cetera and, then authenticate</p>
+      <p begin="00:55:32.460" end="00:55:37.650">...and...authorized against the gateway based on that device registry there's also going</p>
+      <p begin="00:55:37.650" end="00:55:42.810">to be a blacklist for tokens and then all the messages are coming in there are tag</p>
+      <p begin="00:55:42.810" end="00:55:47.000">by us with the identity of that device so that is something that the device</p>
+      <p begin="00:55:47.000" end="00:55:49.460">can't spoof.</p>
+      <p begin="00:55:49.460" end="00:55:53.710">The device can't say I'm sending I'm the device so-and-so which you can curly do</p>
+      <p begin="00:55:53.710" end="00:55:57.550">right today you can say I'm device so-and-so but you have to go prove that you device</p>
+      <p begin="00:55:57.550" end="00:56:04.600">...we're actually stamping that on based on the authentication results.</p>
+      <p begin="00:56:04.600" end="00:56:09.140">And, then also we're going to add is device</p>
+      <p begin="00:56:09.140" end="00:56:14.060">...foundation so that you can do software updates through</p>
+      <p begin="00:56:14.060" end="00:56:19.280">that system that you can go and get the state of your devices through that system and software</p>
+      <p begin="00:56:19.280" end="00:56:26.450">...something that is obviously super important if you want to...secure processes.</p>
+      <p begin="00:56:26.450" end="00:56:34.960">So, last three minutes let me speculate about the future a little bit.</p>
+      <p begin="00:56:34.960" end="00:56:39.080">There's a lot io t challenges I already talked about some of them right</p>
+      <p begin="00:56:39.080" end="00:56:43.960">there's cost pressure...device hardware cheap sensors weak or</p>
+      <p begin="00:56:43.960" end="00:56:48.800">no crypto the source of randomness if you need to if you want to crypto you</p>
+      <p begin="00:56:48.800" end="00:56:56.220">have to start with some random numbers...random numbers of a super tiny chip it's kinda hard.</p>
+      <p begin="00:56:56.220" end="00:56:57.640">Time management is...</p>
+      <p begin="00:56:58.930" end="00:57:02.800">Just the fact of not having a real time clock in a super cheap device try to do that</p>
+      <p begin="00:57:02.800" end="00:57:12.540">...dwindle good luck there's an analog gap.</p>
+      <p begin="00:57:12.540" end="00:57:13.900">With...of</p>
+      <p begin="00:57:13.900" end="00:57:19.340">audio the rm has kind of failed and the reason why the rm has failed is because it's</p>
+      <p begin="00:57:19.340" end="00:57:26.050">kinda hard it's kind of easy to go and play it back and recorded back with very minimal fidelity</p>
+      <p begin="00:57:26.050" end="00:57:31.690">analog gap also exists on the other side because you can go in degrade a</p>
+      <p begin="00:57:31.690" end="00:57:38.590">...you can cheat on a...right you have a temperature sensor new hold...lighter in front of it.</p>
+      <p begin="00:57:38.590" end="00:57:43.710">There's all kinds of a you can do physical hacks against digital systems...the digital systems</p>
+      <p begin="00:57:43.710" end="00:57:47.570">...cope with them especially not if they're cheap investor great</p>
+      <p begin="00:57:47.570" end="00:57:51.690">...can deal with them because they have defenses against that and they can go</p>
+      <p begin="00:57:51.690" end="00:57:55.860">and spot those things but cheap sensors can't.</p>
+      <p begin="00:57:55.860" end="00:57:59.030">So, what that means is that the defense in-depth is often broken</p>
+      <p begin="00:57:59.030" end="00:58:02.030">kind of at the lowest levels at the device in the field</p>
+      <p begin="00:58:02.030" end="00:58:06.150">gateway layer also because there's legacy?</p>
+      <p begin="00:58:06.150" end="00:58:08.830">There's a lot of stuff that will have to deal with which just</p>
+      <p begin="00:58:08.830" end="00:58:16.280">can't which we won't be able to secure because thirty-years-old so we already have</p>
+      <p begin="00:58:16.280" end="00:58:20.390">...services...we have we have machine identity</p>
+      <p begin="00:58:20.390" end="00:58:23.990">and axes authorization that we can do architecturally and that we're covering.</p>
+      <p begin="00:58:25.110" end="00:58:27.180">Further out.</p>
+      <p begin="00:58:27.180" end="00:58:30.200">Stuff we're also going to tackle is</p>
+      <p begin="00:58:30.200" end="00:58:34.940">...data stream authorization we're going to take a look at the data streams</p>
+      <p begin="00:58:34.940" end="00:58:39.210">and actually we figure out who's product we have to go and figure out</p>
+      <p begin="00:58:39.210" end="00:58:43.830">who's authorize to get that data and process that data in collaborative</p>
+      <p begin="00:58:43.830" end="00:58:48.940">environment's like factory we'll have to go and figure out what's the possibility of that data is</p>
+      <p begin="00:58:48.940" end="00:58:53.020">the sensor bad and integrate data quality concerns</p>
+      <p begin="00:58:53.020" end="00:58:57.600">with these with these authorization concerns...sensor and a broken sensor</p>
+      <p begin="00:58:57.600" end="00:59:02.520">are indistinguishable so data quality something that is part of the platform that we think we</p>
+      <p begin="00:59:02.520" end="00:59:08.670">can provide help with that also for privacy if you take the</p>
+      <p begin="00:59:08.670" end="00:59:12.920">rental car scenario you have rent-a-car you rent-a-car.</p>
+      <p begin="00:59:12.920" end="00:59:13.320">You sit</p>
+      <p begin="00:59:13.320" end="00:59:20.790">in it you drive two weeks later you call the rental car companies say...delete my data.</p>
+      <p begin="00:59:20.790" end="00:59:24.490">What the readily our company has legitimate rights to collect the</p>
+      <p begin="00:59:24.490" end="00:59:28.370">information from the vehicle so it's gotta be a way to attach your identity</p>
+      <p begin="00:59:28.370" end="00:59:33.820">from to that system and then remove your identity from that is secure way there's</p>
+      <p begin="00:59:33.820" end="00:59:37.820">...with how do we deal with privacy how do we deal with data quality how do</p>
+      <p begin="00:59:37.820" end="00:59:40.840">we deal with trust in those environments and</p>
+      <p begin="00:59:40.840" end="00:59:47.470">really also can have this that safety notion kind of flow into the system?</p>
+      <p begin="00:59:47.470" end="00:59:51.130">So, I'll to security is a shared responsibility security</p>
+      <p begin="00:59:51.130" end="00:59:53.360">concepts to the edge.</p>
+      <p begin="00:59:54.440" end="00:59:58.690">You should and implement the security developments lifecycle you can get help from us</p>
+      <p begin="00:59:58.690" end="01:00:03.880">this cyber security experts at microsoft can actually help with that leverage industry</p>
+      <p begin="01:00:03.880" end="01:00:09.000">best practices and then there's a lot of stuff that we do already you can start with the asher</p>
+      <p begin="01:00:09.000" end="01:00:13.010">ot...the services we have already events up is a great star the reference</p>
+      <p begin="01:00:13.010" end="01:00:18.390">...a great start and then I would also ask you to review a platform principles</p>
+      <p begin="01:00:18.390" end="01:00:23.270">and certifications because they're really part of that process we have a lot of...already making huge investments</p>
+      <p begin="01:00:23.270" end="01:00:27.770">and we're extending those even further and</p>
+      <p begin="01:00:27.770" end="01:00:31.800">without thank you very much for.</p>
+      <p begin="01:00:31.800" end="01:00:37.990">Spending that time with us and hope that was somewhat lightning a good conference.</p>
+
+    </div>
+  </body>
+</tt>

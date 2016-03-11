@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.894</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.020" end="00:00:10.080">All right good afternoon everyone thanks for joining the...of the day.</p>
+      <p begin="00:00:10.080" end="00:00:12.690">So, man is going to be hard to compute those</p>
+      <p begin="00:00:12.690" end="00:00:21.780">...limos demos bob I do have some cool demos today thanks for staying late.</p>
+      <p begin="00:00:21.780" end="00:00:24.920">So, they were going to focus on excel powerpoint</p>
+      <p begin="00:00:24.920" end="00:00:28.900">and word audience we're going to drill down a little bit more into the development experience for the</p>
+      <p begin="00:00:28.900" end="00:00:31.450">...for people that are in familiar with them already.</p>
+      <p begin="00:00:32.530" end="00:00:35.790">My name is rolando human anomaly program manager on the whole physics</p>
+      <p begin="00:00:35.790" end="00:00:39.980">and civility platform team I've been working with office</p>
+      <p begin="00:00:39.980" end="00:00:45.890">...for six years now I've been witness of the evolution of</p>
+      <p begin="00:00:45.890" end="00:00:49.340">the different extensibility model so it's great to see how we're moving</p>
+      <p begin="00:00:49.340" end="00:00:59.250">towards a new model where you can use web technologies to extend office in are very...way.</p>
+      <p begin="00:00:59.250" end="00:01:05.870">Please...forget to do the...that slide so,</p>
+      <p begin="00:01:05.870" end="00:01:13.600">the agenda for today iswe're going to do a quick overview of office audience.</p>
+      <p begin="00:01:13.600" end="00:01:15.200">I'm going to spend most of the</p>
+      <p begin="00:01:15.200" end="00:01:20.050">...talking about what's new what is the new developments that we have made in the last three</p>
+      <p begin="00:01:20.050" end="00:01:24.940">to six months since the last big conference...to talk a little bit about the</p>
+      <p begin="00:01:24.940" end="00:01:27.760">role bob what's coming in the future and then</p>
+      <p begin="00:01:27.760" end="00:01:32.750">when aspirin some time talking about the call-to-action so in terms of</p>
+      <p begin="00:01:32.750" end="00:01:36.940">...how the session fits in the overall framing of for the rest of the developer</p>
+      <p begin="00:01:36.940" end="00:01:40.920">talks...going to focusing decision about bringing</p>
+      <p begin="00:01:40.920" end="00:01:45.270">...new user experiences into office so the left-hand side of</p>
+      <p begin="00:01:45.270" end="00:01:48.010">...is what this session is all about?</p>
+      <p begin="00:01:48.010" end="00:01:56.480">So, let's value in.</p>
+      <p begin="00:01:56.480" end="00:01:59.420">So, you probably so these...about the opportunity to</p>
+      <p begin="00:01:59.420" end="00:02:05.310">...office there's obviously some impressive numbers over there one more than</p>
+      <p begin="00:02:05.310" end="00:02:10.120">one billion users using office for an average of two hours</p>
+      <p begin="00:02:10.120" end="00:02:15.030">every day so that's a big opportunity there's a captive market there ...</p>
+      <p begin="00:02:15.030" end="00:02:20.630">decreed solutions that extend office you-can reach to all these big audience so for</p>
+      <p begin="00:02:20.630" end="00:02:25.020">...going to focus on the aspect the number of users</p>
+      <p begin="00:02:25.020" end="00:02:29.860">and the time they spend inside the office publications because obvious audiences precisely to bring</p>
+      <p begin="00:02:29.860" end="00:02:36.150">your custom experiences inside the applications that...use the most.</p>
+      <p begin="00:02:36.150" end="00:02:40.400">And, from my perspective this is all about productivity so.</p>
+      <p begin="00:02:41.730" end="00:02:42.530">Why would you</p>
+      <p begin="00:02:42.530" end="00:02:47.030">extend office as opposed to just create your own web application</p>
+      <p begin="00:02:47.030" end="00:02:51.950">...mobile application where I think we need to think about to perspectives one is the</p>
+      <p begin="00:02:51.950" end="00:02:56.940">end-user perspective which is we want to...users more productive offices approach</p>
+      <p begin="00:02:56.940" end="00:03:01.890">to really sweet it's already helping users to be productive well-versed field a lot of</p>
+      <p begin="00:03:01.890" end="00:03:07.120">opportunities or... customers scenarios where users have a lot of</p>
+      <p begin="00:03:07.120" end="00:03:11.430">the information under data in excel but they often in a big enterprise</p>
+      <p begin="00:03:11.430" end="00:03:16.620">...to...systems sites you...constantly switching to</p>
+      <p begin="00:03:16.620" end="00:03:20.020">...screens to connect to customer data copy</p>
+      <p begin="00:03:20.020" end="00:03:24.470">the data put it into excel deformities not correct spend twenty minutes just</p>
+      <p begin="00:03:24.470" end="00:03:29.750">formatting the data and it's a lot of lots of protein...so even though they are...one of the</p>
+      <p begin="00:03:29.750" end="00:03:32.910">...productivity suites in the planet they still have</p>
+      <p begin="00:03:32.910" end="00:03:36.200">these inefficiencies so productivity</p>
+      <p begin="00:03:36.200" end="00:03:40.530">for end-users can be optimized by creating these custom solutions</p>
+      <p begin="00:03:40.530" end="00:03:45.340">ringing the connectivity the collaboration linear in the context of office?</p>
+      <p begin="00:03:45.340" end="00:03:49.700">Now from a developer perspective developing of is also makes a lot of sense</p>
+      <p begin="00:03:49.700" end="00:03:52.610">so-so developer if you are going to</p>
+      <p begin="00:03:52.610" end="00:03:56.610">...solution that has functions where office already</p>
+      <p begin="00:03:56.610" end="00:03:59.670">...like collaboration content</p>
+      <p begin="00:03:59.670" end="00:04:04.750">...data analysis...start from scratch why invents</p>
+      <p begin="00:04:04.750" end="00:04:07.620">...way to do things if all</p>
+      <p begin="00:04:07.620" end="00:04:12.580">...is users already familiar with...way of is also you can build on top of office</p>
+      <p begin="00:04:12.580" end="00:04:14.850">...and then save a lot of time and...</p>
+      <p begin="00:04:14.850" end="00:04:20.600">your users offer users are much valuable experience</p>
+      <p begin="00:04:20.600" end="00:04:26.240">enough familiar product that they already use two hours in average of a.</p>
+      <p begin="00:04:26.240" end="00:04:27.290">So, without context.</p>
+      <p begin="00:04:28.390" end="00:04:31.560">There's one talk a little bit about the</p>
+      <p begin="00:04:31.560" end="00:04:36.360">new web audience so you probably heard the rename from apps for</p>
+      <p begin="00:04:36.360" end="00:04:40.860">...to the new office audience.</p>
+      <p begin="00:04:40.860" end="00:04:45.820">this is something that we are doing to reflect on the history that we have had</p>
+      <p begin="00:04:45.820" end="00:04:50.380">...office extensibility we have hub commodities...audience and people</p>
+      <p begin="00:04:50.380" end="00:04:54.570">were a little bit confuse with the notion of apps and the fact that you have mobile</p>
+      <p begin="00:04:54.570" end="00:04:57.260">...web apps and abs inside office</p>
+      <p begin="00:04:57.260" end="00:05:00.250">apps so we decided to go with</p>
+      <p begin="00:05:00.250" end="00:05:06.540">audience which sounds goodpeople understand it so, it's a...of</p>
+      <p begin="00:05:06.540" end="00:05:11.110">...so I'd like to ask of these point how</p>
+      <p begin="00:05:11.110" end="00:05:18.770">many of you I already familiar with apps for office or have developed enough...</p>
+      <p begin="00:05:18.770" end="00:05:24.200">...so, throughout this session ...office are going to be office audience</p>
+      <p begin="00:05:24.200" end="00:05:26.560">in the problems your will still see the</p>
+      <p begin="00:05:26.560" end="00:05:31.790">...roughest there is going to take some time for us to propagate</p>
+      <p begin="00:05:31.790" end="00:05:36.960">the name but eventually everything will be called audience in all the products so,</p>
+      <p begin="00:05:36.960" end="00:05:41.210">you see in some the screen shots or even the pros</p>
+      <p begin="00:05:41.210" end="00:05:46.200">...terrifies those are what we called office audience and when whenever</p>
+      <p begin="00:05:46.200" end="00:05:51.460">we need to distinguish we're going to use the web audience to make sure we're talking about the new type of audience</p>
+      <p begin="00:05:51.460" end="00:05:56.430">now let me ask you how many of you have created or have solutions in the</p>
+      <p begin="00:05:56.430" end="00:06:01.980">...or via seo technology so quite a bit so</p>
+      <p begin="00:06:01.980" end="00:06:05.540">you're pretty familiar with how to extend office so I probably don't need to</p>
+      <p begin="00:06:05.540" end="00:06:09.500">...you more about the value of doing these?</p>
+      <p begin="00:06:09.500" end="00:06:10.480">So, let me just</p>
+      <p begin="00:06:10.480" end="00:06:16.420">...right into...some...most I want to show you the current state.</p>
+      <p begin="00:06:16.420" end="00:06:21.620">Of office...</p>
+      <p begin="00:06:21.620" end="00:06:26.990">So, you've seen the we have a store a lot of developers have already</p>
+      <p begin="00:06:26.990" end="00:06:30.620">published thousands of different apps in the store.</p>
+      <p begin="00:06:30.620" end="00:06:35.470">In these last few years we've seen a lot of very interesting apps coming up</p>
+      <p begin="00:06:35.470" end="00:06:40.440">...that allow you to really enhancer productivity so when I show you just a few</p>
+      <p begin="00:06:40.440" end="00:06:46.380">of the abs that are already there just to give you a sense of what's happening in the market</p>
+      <p begin="00:06:46.380" end="00:06:51.090">...I start with these business solutions apps in xcel.</p>
+      <p begin="00:06:51.090" end="00:06:56.730">Which is created by...reproduce one of the companies that has one of the</p>
+      <p begin="00:06:56.730" end="00:07:02.080">largest database in the world about business they have information</p>
+      <p begin="00:07:02.080" end="00:07:06.630">about revenue contact information marketing information and they create</p>
+      <p begin="00:07:06.630" end="00:07:11.440">the solution excel that allows me to pull information from their database</p>
+      <p begin="00:07:11.440" end="00:07:15.160">...excels I can manipulated their in this case let's...</p>
+      <p begin="00:07:15.160" end="00:07:19.730">small software company and I want to sell my problem for small retailers here in the</p>
+      <p begin="00:07:19.730" end="00:07:25.630">area...I would like to find some prospects so I'm going to use these solution from</p>
+      <p begin="00:07:25.630" end="00:07:28.680">...they have these marketing solutions</p>
+      <p begin="00:07:28.680" end="00:07:33.240">where they offer media ability to request a prospect least...</p>
+      <p begin="00:07:33.240" end="00:07:37.810">and some criteria so I'm going to click on that the first thing I'm going to do is</p>
+      <p begin="00:07:37.810" end="00:07:42.860">enter the concrete so let's...</p>
+      <p begin="00:07:44.340" end="00:07:50.090">American-type.</p>
+      <p begin="00:07:50.090" end="00:07:54.780">And, actually...what's around here.</p>
+      <p begin="00:07:54.780" end="00:07:58.590">So,...because I'm going to select these area and then</p>
+      <p begin="00:07:58.590" end="00:08:03.150">my target market these small retail companies I want to help them be more productive but</p>
+      <p begin="00:08:03.150" end="00:08:04.790">how more sales so.</p>
+      <p begin="00:08:05.880" end="00:08:10.820">What type of retail there and get the actual filter I want</p>
+      <p begin="00:08:10.820" end="00:08:16.370">in this case I want to all the retail stores in the area and I want to focus on companies that</p>
+      <p begin="00:08:16.370" end="00:08:21.270">have a lot of employees and are not doing that well with revenue so let's</p>
+      <p begin="00:08:21.270" end="00:08:25.960">say I want less than a million dollars in revenue</p>
+      <p begin="00:08:25.960" end="00:08:30.010">but they have more than ten employees so let's see how</p>
+      <p begin="00:08:30.010" end="00:08:33.230">...comes up...going to say load</p>
+      <p begin="00:08:33.230" end="00:08:37.990">they're going to the charter transactions against you see some very interesting</p>
+      <p begin="00:08:37.990" end="00:08:41.550">...models happening already in the market I'm going to accept</p>
+      <p begin="00:08:41.550" end="00:08:43.000">the charge?</p>
+      <p begin="00:08:43.000" end="00:08:47.250">They go fetch the data from the database...is ready for me to insert</p>
+      <p begin="00:08:47.250" end="00:08:52.020">...click here...boom I have the data in excel now since I'm in</p>
+      <p begin="00:08:53.040" end="00:08:58.020">Already can start doing some of the things that I would naturally doing excel like, for example,</p>
+      <p begin="00:08:58.020" end="00:09:02.180">do some conditional formatting for some of these data to see</p>
+      <p begin="00:09:02.180" end="00:09:07.280">where'd employees are but I want to...a little bit more than that I'm going to use</p>
+      <p begin="00:09:07.280" end="00:09:11.220">a capabilities and the fact that I'm already in excel?</p>
+      <p begin="00:09:12.370" end="00:09:16.940">Create...for me in this case I want to get</p>
+      <p begin="00:09:16.940" end="00:09:19.490">...address for these businesses because I want to see</p>
+      <p begin="00:09:19.490" end="00:09:24.480">them up so but the data came in different columns so what I'm going to say is</p>
+      <p begin="00:09:24.480" end="00:09:29.460">use the excel data feel functionality to help me get the full address</p>
+      <p begin="00:09:29.460" end="00:09:32.690">...one single field in this case I'm just going to</p>
+      <p begin="00:09:32.690" end="00:09:40.490">put an example I'm going to copy the address of the first one.</p>
+      <p begin="00:09:40.490" end="00:09:43.480">And, this is...and.</p>
+      <p begin="00:09:43.480" end="00:09:49.580">...cure-all.</p>
+      <p begin="00:09:49.580" end="00:09:52.610">...copied...to show excel what I</p>
+      <p begin="00:09:52.610" end="00:09:57.380">want from these three columns I'm going to do the data tab...a flash field</p>
+      <p begin="00:09:57.380" end="00:10:00.790">so excel is going to automatically give me...</p>
+      <p begin="00:10:02.410" end="00:10:06.930">...addresses once we have that now I can select</p>
+      <p begin="00:10:06.930" end="00:10:11.370">that entire set of companies and I want to use another up in this case</p>
+      <p begin="00:10:11.370" end="00:10:17.220">...maps up which you probably are very familiar with and just tell being maps</p>
+      <p begin="00:10:17.220" end="00:10:22.050">a please give-me a map of those addresses the just...I'm going to use this</p>
+      <p begin="00:10:22.050" end="00:10:25.890">other visualization which actually allows me to better</p>
+      <p begin="00:10:25.890" end="00:10:28.720">drill down and see which companies have a lot of</p>
+      <p begin="00:10:28.720" end="00:10:33.240">employees but not a lot of sales in this case I can see these red circles</p>
+      <p begin="00:10:33.240" end="00:10:37.290">...the ratio between employee and sales is bigger legacy these guys have</p>
+      <p begin="00:10:37.290" end="00:10:42.290">nineteen employees and not even a million sales were us these guys have a million sales</p>
+      <p begin="00:10:42.290" end="00:10:46.230">...thirteen employees so these guys probably need help I can go so my product</p>
+      <p begin="00:10:46.230" end="00:10:50.820">to them so this is a great way to bring</p>
+      <p begin="00:10:50.820" end="00:10:56.750">...idea have to leave excel to achieve these call...scenario.</p>
+      <p begin="00:10:56.750" end="00:10:58.880">Now you've been hearing a lot...bcs</p>
+      <p begin="00:10:58.880" end="00:11:03.180">a platform for all of office all of the client so...just...to demonstrate</p>
+      <p begin="00:11:04.440" end="00:11:17.650">how this room going to save these into my one drive I'm going to grow libm?</p>
+      <p begin="00:11:17.650" end="00:11:25.070">And, then I'm going to go to my one grieve on the web.</p>
+      <p begin="00:11:25.070" end="00:11:28.680">...let's do one grieve.</p>
+      <p begin="00:11:28.680" end="00:11:32.550">Motion see...new prospects...group here.</p>
+      <p begin="00:11:32.550" end="00:11:37.520">now if I click where I would expect that I will get the exact same experience I left on the</p>
+      <p begin="00:11:37.520" end="00:11:42.280">desktop so this ability to move from one device to an order and continue</p>
+      <p begin="00:11:42.280" end="00:11:48.320">to be provocative I get my map here...can continue to drilled.</p>
+      <p begin="00:11:48.320" end="00:11:53.450">I can get more data with the business solutions up good another cheat and start editing</p>
+      <p begin="00:11:53.450" end="00:11:56.290">...so you can see the our of</p>
+      <p begin="00:11:56.290" end="00:12:01.180">these model now let me jump now into ward.</p>
+      <p begin="00:12:01.180" end="00:12:04.740">And, in...you're probably seeing a lot of the reference abs wikipedia</p>
+      <p begin="00:12:04.740" end="00:12:09.640">translation all those are very simple labs but thegive you good productivity</p>
+      <p begin="00:12:09.640" end="00:12:14.910">boosters in some cases I'm starting to see some very interesting ones like these mind</p>
+      <p begin="00:12:14.910" end="00:12:18.220">...that I found the other day this one is</p>
+      <p begin="00:12:18.220" end="00:12:22.580">really interesting because it allows me to very easily generate content.</p>
+      <p begin="00:12:22.580" end="00:12:27.470">Without having to do a lot of efforts in this case let's say I'm editing a document and I</p>
+      <p begin="00:12:27.470" end="00:12:30.320">want to do some brainstorming...one of the</p>
+      <p begin="00:12:30.320" end="00:12:35.170">terms of the key terms in my writing...this case I'm going to select</p>
+      <p begin="00:12:35.170" end="00:12:38.270">award in this case video I'm going to say.</p>
+      <p begin="00:12:39.280" end="00:12:44.560">Give me insights about...grid newm mind map for video and</p>
+      <p begin="00:12:44.560" end="00:12:50.330">these of is going to search the web and give-me terms related to...</p>
+      <p begin="00:12:50.330" end="00:12:52.670">Particular word in this case I</p>
+      <p begin="00:12:52.670" end="00:12:58.310">see there is technology one I want to drill down a little bit more and see what's in the</p>
+      <p begin="00:12:58.310" end="00:13:03.250">web about technology I can say map node and then these will continue to search the web and</p>
+      <p begin="00:13:03.250" end="00:13:09.240">give-me more insights...I can create my own ideas.</p>
+      <p begin="00:13:09.240" end="00:13:13.230">And, once I'm gone I can of course come here and say one</p>
+      <p begin="00:13:13.230" end="00:13:15.260">to these diagram</p>
+      <p begin="00:13:15.260" end="00:13:20.180">to my documents boom I have creative very quickly we</p>
+      <p begin="00:13:20.180" end="00:13:24.750">have living work a whole new type of diagram without having to install</p>
+      <p begin="00:13:24.750" end="00:13:27.410">...application goal switch convex etc.</p>
+      <p begin="00:13:28.460" end="00:13:32.970">And, then lastly just to our wrap-up with powerpoint you probably seen all those</p>
+      <p begin="00:13:32.970" end="00:13:38.080">...codes that we have...this lies world there's some nab that allows you to</p>
+      <p begin="00:13:38.080" end="00:13:42.300">very easily do about in powerpoint we have these your code generator</p>
+      <p begin="00:13:42.300" end="00:13:47.200">I like these app especially in this type of scenario so, for example,</p>
+      <p begin="00:13:47.200" end="00:13:51.810">I want to...the cure called for the...dot office dot com which is the main</p>
+      <p begin="00:13:51.810" end="00:13:57.560">destination that we use and I want to make it bigger I want to make it</p>
+      <p begin="00:13:57.560" end="00:14:02.230">...too much this slide...once I'm done I can crappie.</p>
+      <p begin="00:14:02.230" end="00:14:06.880">And, pasted here and in a matter of seconds I already created mike your</p>
+      <p begin="00:14:06.880" end="00:14:12.220">code for my for my session similarly you probably seen ...the robs like</p>
+      <p begin="00:14:12.220" end="00:14:16.170">...everywhere which allows me to do live audience...inside my</p>
+      <p begin="00:14:16.170" end="00:14:20.150">presentations and we are we have also seen a lot of</p>
+      <p begin="00:14:21.540" end="00:14:26.380">enthusiasm in the education space so there is these very cool interactive</p>
+      <p begin="00:14:26.380" end="00:14:30.990">...the people are putting in presentations especially teachers that teach their students</p>
+      <p begin="00:14:30.990" end="00:14:39.860">aboutdifferent topics in this case look at these teachers in the about...</p>
+      <p begin="00:14:39.860" end="00:14:44.980">The concentration of a particular substance in the water I can play with these and I</p>
+      <p begin="00:14:44.980" end="00:14:49.340">can really learn about some science topic in this</p>
+      <p begin="00:14:49.340" end="00:14:52.460">case with these nice applications so.</p>
+      <p begin="00:14:53.870" end="00:14:57.170">Pretty cool people are starting to be creative and</p>
+      <p begin="00:14:57.170" end="00:15:01.490">enabled very interesting scenarios.</p>
+      <p begin="00:15:01.490" end="00:15:05.840">Bob people always ask me can you really create</p>
+      <p begin="00:15:05.840" end="00:15:09.520">a enterprise solutions with...platform means</p>
+      <p begin="00:15:09.520" end="00:15:14.440">...ready and even though you probably seen...there are some</p>
+      <p begin="00:15:14.440" end="00:15:18.950">api gaps we are working on filling those as fast as we can but</p>
+      <p begin="00:15:18.950" end="00:15:25.790">today we have already a lot of what you need to create real-world solutions.</p>
+      <p begin="00:15:25.790" end="00:15:31.470">And, I want to just show youthe architecture behind the sap them all</p>
+      <p begin="00:15:31.470" end="00:15:36.690">the you guys have seen I'm going to...to the in this session one more time</p>
+      <p begin="00:15:36.690" end="00:15:41.130">I know you have seen it twice when I show you one more time to make sure</p>
+      <p begin="00:15:41.130" end="00:15:46.170">the you understand what's going on behind the scenes in this case</p>
+      <p begin="00:15:46.170" end="00:15:50.350">...more is based on architecture like these there's ...</p>
+      <p begin="00:15:50.350" end="00:15:56.150">adding in office...ask read this enterprise gate where the resource on the cloud</p>
+      <p begin="00:15:56.150" end="00:15:59.760">that basically allows you to get access to...</p>
+      <p begin="00:15:59.760" end="00:16:01.180">Even your own premise</p>
+      <p begin="00:16:01.180" end="00:16:06.300">...from mississippi through these gateway...you need to do from your office out in</p>
+      <p begin="00:16:06.300" end="00:16:10.250">this connect to some piece of software in the cloud that is the door</p>
+      <p begin="00:16:10.250" end="00:16:15.460">into your enterprise data so it is possibleto...and</p>
+      <p begin="00:16:15.460" end="00:16:21.430">...data and systems that are home frame in this case the other</p>
+      <p begin="00:16:21.430" end="00:16:26.000">challenging aspect is also the identity cover you manage identity's so</p>
+      <p begin="00:16:26.000" end="00:16:30.540">what we're doing is they're mapping the...sixty-five entities to the</p>
+      <p begin="00:16:30.540" end="00:16:34.290">sap identity so there's some configuration...initial setup that happens</p>
+      <p begin="00:16:34.290" end="00:16:38.900">...ones that it's done you can securely login from your obviously sixty-five</p>
+      <p begin="00:16:38.900" end="00:16:42.850">tenant into their service and then into a cp so.</p>
+      <p begin="00:16:43.920" end="00:16:53.420">Let me just quickly show you how that works?</p>
+      <p begin="00:16:53.420" end="00:16:54.520">Close.</p>
+      <p begin="00:16:54.520" end="00:16:59.380">These one here.</p>
+      <p begin="00:16:59.380" end="00:17:01.590">...ok so here's the</p>
+      <p begin="00:17:01.590" end="00:17:05.210">...the mobile you've seen a couple of times already so what I</p>
+      <p begin="00:17:05.210" end="00:17:10.430">...to make sure this is not just smoke and...the sap client</p>
+      <p begin="00:17:10.430" end="00:17:15.000">...my machine that is connecting to a realistically system hosted on the cloud</p>
+      <p begin="00:17:16.550" end="00:17:20.930">and, I'll show you what that looks like.</p>
+      <p begin="00:17:20.930" end="00:17:23.600">...going to open.</p>
+      <p begin="00:17:23.600" end="00:17:28.090">Going to be brave here I definitely felt like a fish out of the water in these</p>
+      <p begin="00:17:29.150" end="00:17:34.540">But, I'm going to try so I'm going to login on my sap system.</p>
+      <p begin="00:17:34.540" end="00:17:40.600">I need to remember the name of the table that I need to connects bob.</p>
+      <p begin="00:17:40.600" end="00:17:45.490">Going through all those hurdles now this is the screens the...users see</p>
+      <p begin="00:17:45.490" end="00:17:50.480">every day or...data so here I have a collection of records</p>
+      <p begin="00:17:50.480" end="00:17:55.080">in this case you can see is the same data set that I'm showing in</p>
+      <p begin="00:17:55.080" end="00:17:59.870">excel and I'm already connected so what I want to show you is how the objects are happening</p>
+      <p begin="00:17:59.870" end="00:18:05.510">real-time so I'm going to come here you can cvs particular the first</p>
+      <p begin="00:18:05.510" end="00:18:07.330">...the contact name is some.</p>
+      <p begin="00:18:08.420" end="00:18:13.400">Some other person so I'm going to say I'm going I'm going to be the contact for bowed car</p>
+      <p begin="00:18:13.400" end="00:18:17.300">...obviously these record use.</p>
+      <p begin="00:18:17.300" end="00:18:21.570">Rightnow looks like these in a cp here's the contact I just change</p>
+      <p begin="00:18:21.570" end="00:18:25.840">...let me take over like the first three cars I'm going</p>
+      <p begin="00:18:25.840" end="00:18:30.540">to be the promoter of those cards and these</p>
+      <p begin="00:18:30.540" end="00:18:35.540">in this project so when I say let's compare save as you have</p>
+      <p begin="00:18:35.540" end="00:18:40.750">seen so this is going to connect to the cpc system and,</p>
+      <p begin="00:18:40.750" end="00:18:46.880">check what changes have people made over what changes have made and</p>
+      <p begin="00:18:46.880" end="00:18:49.390">...I laws the connection we tried to reload.</p>
+      <p begin="00:18:50.600" end="00:18:54.700">Sometimes this happens.</p>
+      <p begin="00:18:54.700" end="00:18:57.400">Okay, so, that's two comparing save.</p>
+      <p begin="00:18:57.400" end="00:19:02.040">There we go so increments...via cpc system it recognizes that I have change three</p>
+      <p begin="00:19:02.040" end="00:19:05.130">...and it gives me the opportunity to review</p>
+      <p begin="00:19:05.130" end="00:19:09.210">goals so liquid changes in this case...I say I want to keep all the</p>
+      <p begin="00:19:09.210" end="00:19:14.510">excel changes of the cp so I'm dom now I can go back to my is</p>
+      <p begin="00:19:14.510" end="00:19:18.230">...and refresh here.</p>
+      <p begin="00:19:18.230" end="00:19:20.360">If I look at the record.</p>
+      <p begin="00:19:20.360" end="00:19:25.560">I should see my name is a contact over there so.</p>
+      <p begin="00:19:25.560" end="00:19:30.660">Berry real credible end-to-end solutions are really possible we've been</p>
+      <p begin="00:19:30.660" end="00:19:34.970">your platforms...all you need to do is your user existing web skills</p>
+      <p begin="00:19:34.970" end="00:19:50.230">and are connect to systems...already know-how to connect to the web...cloud?</p>
+      <p begin="00:19:50.230" end="00:19:54.210">...so...but it's possible to the</p>
+      <p begin="00:19:54.210" end="00:19:58.680">now let's look at what's new what have we be working on</p>
+      <p begin="00:19:58.680" end="00:20:03.730">in the last three to six months so I'm going to show you a serious of the most to</p>
+      <p begin="00:20:03.730" end="00:20:10.170">...these so the first one I'm going to start with the one</p>
+      <p begin="00:20:10.170" end="00:20:17.170">that were most proud of which is the work we've been doing on the.</p>
+      <p begin="00:20:17.170" end="00:20:20.180">Ipod and you probably seen a few them also</p>
+      <p begin="00:20:20.180" end="00:20:23.860">...when...quickly demonstrate again the multiplied</p>
+      <p begin="00:20:23.860" end="00:20:28.830">from aspect so I just created prospects a sheets.</p>
+      <p begin="00:20:28.830" end="00:20:31.030">Verbs in the desktop...I opened</p>
+      <p begin="00:20:31.030" end="00:20:35.500">...long online now if I come here because my account</p>
+      <p begin="00:20:35.500" end="00:20:38.200">disconnected to muh obviously sixty-five...a number</p>
+      <p begin="00:20:38.200" end="00:20:43.050">...you see how it already show showed up in my recent</p>
+      <p begin="00:20:43.050" end="00:20:50.400">documents I'm going to click prospects you would expect to see.</p>
+      <p begin="00:20:50.400" end="00:20:56.020">Exactly the same serving the...save on the desktop.</p>
+      <p begin="00:20:56.020" end="00:21:09.240">Now let's see if the network.</p>
+      <p begin="00:21:10.370" end="00:21:13.520">Google alright so there really is so,</p>
+      <p begin="00:21:13.520" end="00:21:18.210">you can see the same code base ...changes to the apps on the</p>
+      <p begin="00:21:18.210" end="00:21:22.360">apps are running on the...as well so this is...we're starting to</p>
+      <p begin="00:21:22.360" end="00:21:25.920">...really about promise of broad ones and</p>
+      <p begin="00:21:25.920" end="00:21:30.590">wrong all the different platforms and as you so we're going to start enabling many more</p>
+      <p begin="00:21:30.590" end="00:21:33.770">platforms in the future so</p>
+      <p begin="00:21:33.770" end="00:21:49.450">now let's jump into the developer experience so, what has changed there?</p>
+      <p begin="00:21:49.450" end="00:21:54.920">So,...the this opportunity to talk about some of the new experiences that we enable for</p>
+      <p begin="00:21:54.920" end="00:21:59.120">developers so for those of you that are not</p>
+      <p begin="00:21:59.120" end="00:22:03.670">familiar rand-r still learning...a new set of content</p>
+      <p begin="00:22:03.670" end="00:22:08.030">...make you makes it really easy to learn about office</p>
+      <p begin="00:22:08.030" end="00:22:12.970">outings so this is the new getting started page from out of the office</p>
+      <p begin="00:22:12.970" end="00:22:17.710">...com so you go there today this was release just these morning the you will</p>
+      <p begin="00:22:17.710" end="00:22:23.310">find that there's information about of...different five-eighty gis and also about</p>
+      <p begin="00:22:23.310" end="00:22:29.160">audience we released a new explore javascript.</p>
+      <p begin="00:22:29.160" end="00:22:32.620">Page which is very handy if you want to just go on</p>
+      <p begin="00:22:32.620" end="00:22:36.890">...some of the api are available you have basically</p>
+      <p begin="00:22:36.890" end="00:22:41.840">embedded excel on-line and you can try some code right there without doing anything more than</p>
+      <p begin="00:22:41.840" end="00:22:44.890">...browse to the page so, for example,</p>
+      <p begin="00:22:44.890" end="00:22:48.000">like in run this code here.</p>
+      <p begin="00:22:48.000" end="00:22:53.150">And, see what...it...to the spreadsheet</p>
+      <p begin="00:22:53.150" end="00:22:58.440">and there's more samples over there if I go back.</p>
+      <p begin="00:22:58.440" end="00:23:03.240">Close that I'm going to also show you now than we</p>
+      <p begin="00:23:03.240" end="00:23:10.640">have the accessible how the you test and develop considering the so</p>
+      <p begin="00:23:10.640" end="00:23:16.070">let's just create a very quick project and see how also developer you can put it on the so</p>
+      <p begin="00:23:16.070" end="00:23:20.400">that you can for your application make sure that everything's working because even volume...one</p>
+      <p begin="00:23:20.400" end="00:23:26.010">code base you still need to make sure that it works across all the different browser versions in the</p>
+      <p begin="00:23:26.010" end="00:23:30.990">case of ios you will be working with a safari so this is no different than the web you need to</p>
+      <p begin="00:23:30.990" end="00:23:35.970">...your web app multiple browsers is very similar here so it's always a good idea</p>
+      <p begin="00:23:35.970" end="00:23:39.140">of to the sign for responsiveness for all these different</p>
+      <p begin="00:23:39.140" end="00:23:44.630">...factors but also there's the different browsersto make sure the everything is working</p>
+      <p begin="00:23:44.630" end="00:23:50.290">fine so let's just create a very simple app put it on the from a developer</p>
+      <p begin="00:23:50.290" end="00:23:55.800">perspective so for that I'm going to use the newvisual studio</p>
+      <p begin="00:23:55.800" end="00:24:01.100">all online experience...some of you already saw these</p>
+      <p begin="00:24:01.100" end="00:24:04.930">...moines the session for the developer keynote working with outlook</p>
+      <p begin="00:24:04.930" end="00:24:10.180">...we also enabled the ability to use nap without requiring</p>
+      <p begin="00:24:10.180" end="00:24:13.590">and...sixty-five signing which was a lot of the feedback receive</p>
+      <p begin="00:24:13.590" end="00:24:18.570">...was too much of...requirement so we enable the use of map</p>
+      <p begin="00:24:18.570" end="00:24:23.120">...with your emissary account so you come here and get started you-can signing with</p>
+      <p begin="00:24:23.120" end="00:24:27.260">...your called mail account.</p>
+      <p begin="00:24:27.260" end="00:24:33.310">And, this will give you.</p>
+      <p begin="00:24:33.310" end="00:24:36.150">...up experience I'm going to create on your project and I'm</p>
+      <p begin="00:24:36.150" end="00:24:41.150">going to say I want to create the service realization.</p>
+      <p begin="00:24:42.480" end="00:24:47.230">Out in just create so nothing fancy there's</p>
+      <p begin="00:24:47.230" end="00:24:51.100">a crawled run it.</p>
+      <p begin="00:24:51.100" end="00:25:00.350">So, I have already are working app.</p>
+      <p begin="00:25:00.350" end="00:25:02.550">The release.</p>
+      <p begin="00:25:02.550" end="00:25:10.260">And, started it's a fully functional.</p>
+      <p begin="00:25:10.260" end="00:25:12.750">...your it allows you to visualize in this case</p>
+      <p begin="00:25:12.750" end="00:25:16.850">...sample data now I'm going to go back to map and,</p>
+      <p begin="00:25:16.850" end="00:25:21.800">show you how to moved out from...environment to the odb because I want</p>
+      <p begin="00:25:21.800" end="00:25:27.170">this the there so for that I'm going to using this case visual studio but you don't need</p>
+      <p begin="00:25:27.170" end="00:25:32.540">visual studio I'm just going to use visual studio for convenience in this case so,</p>
+      <p begin="00:25:32.540" end="00:25:35.220">map allows you to download the project to</p>
+      <p begin="00:25:35.220" end="00:25:42.130">...studio when...save the file.</p>
+      <p begin="00:25:42.130" end="00:25:45.530">And, open it...generates...file that is going to launch</p>
+      <p begin="00:25:45.530" end="00:25:53.000">...visual studio automatically with the same project that I just created.</p>
+      <p begin="00:25:53.000" end="00:25:55.510">So, I'm going to use visual studio.</p>
+      <p begin="00:25:56.630" end="00:26:00.100">To publish these easily to</p>
+      <p begin="00:26:00.100" end="00:26:04.570">...website so in order to logged these application on that but I want to</p>
+      <p begin="00:26:04.570" end="00:26:05.110">loaded from</p>
+      <p begin="00:26:05.110" end="00:26:10.030">...or to see that it's loading correctly from the right environment so what I'm going to</p>
+      <p begin="00:26:10.030" end="00:26:17.590">do here is an obviously if I if I run these on the desktop it...wrong.</p>
+      <p begin="00:26:17.590" end="00:26:21.560">Just to make sure I'm going to...the...so it's running here on the</p>
+      <p begin="00:26:21.560" end="00:26:25.900">desktop using visual studio and it's working world so</p>
+      <p begin="00:26:25.900" end="00:26:28.850">...going to stop that.</p>
+      <p begin="00:26:28.850" end="00:26:34.560">And, now what I'm going to do is going to polish these.</p>
+      <p begin="00:26:34.560" end="00:26:38.260">Rightly publish I'm going to create a new publishing profile</p>
+      <p begin="00:26:38.260" end="00:26:41.390">...it them all.</p>
+      <p begin="00:26:41.390" end="00:26:43.450">And, I'm going to...so I</p>
+      <p begin="00:26:43.450" end="00:26:48.320">want to show you some of the nice features of visual studio you already have a measure</p>
+      <p begin="00:26:48.320" end="00:26:53.910">...with your imis...or...account you can chrome directly to the profile</p>
+      <p begin="00:26:53.910" end="00:26:57.960">...in the publishing experience...and select I want</p>
+      <p begin="00:26:57.960" end="00:27:00.890">to published to one of my usher websites this is going to</p>
+      <p begin="00:27:00.890" end="00:27:05.430">recognize your account because I'm standing here I'm going to polish these</p>
+      <p begin="00:27:05.430" end="00:27:11.400">...to these website here.</p>
+      <p begin="00:27:11.400" end="00:27:14.920">And,...say publish.</p>
+      <p begin="00:27:14.920" end="00:27:17.620">So, that is going to put all the html</p>
+      <p begin="00:27:17.620" end="00:27:22.070">...javascript of the and measure websites so.</p>
+      <p begin="00:27:22.070" end="00:27:28.390">Once it's...it should launch a browser.</p>
+      <p begin="00:27:28.390" end="00:27:32.530">It's not...to the...but if I go to the art...directory of the</p>
+      <p begin="00:27:32.530" end="00:27:37.400">app which is home html it is there so the app is already</p>
+      <p begin="00:27:37.400" end="00:27:42.790">live in usher websites now the only thing I'm missing in order to see that in my</p>
+      <p begin="00:27:42.790" end="00:27:48.650">ad pog use a I need to side load the manifest of the...of the know</p>
+      <p begin="00:27:48.650" end="00:27:52.620">that app exes so that's what I'm going to do next so I'm going to</p>
+      <p begin="00:27:52.620" end="00:27:54.910">...back to visual studio on-again say publish</p>
+      <p begin="00:27:56.280" end="00:28:01.100">...package the app I'm going to make sure this is going to connect</p>
+      <p begin="00:28:01.100" end="00:28:05.240">...which is a requirement for all office audience and say</p>
+      <p begin="00:28:05.240" end="00:28:09.340">finish and this is going to give me the manifest here release this is the</p>
+      <p begin="00:28:09.340" end="00:28:13.780">...that I need to put on my...bob so that I can test that up</p>
+      <p begin="00:28:13.780" end="00:28:18.680">here so let's go ahead and do that now I'm going to have to disconnect my mouse to be able to plugging</p>
+      <p begin="00:28:18.680" end="00:28:24.980">...the way I do it is very easily already installed</p>
+      <p begin="00:28:24.980" end="00:28:28.290">...tones in my are windows pc but if you have a mark</p>
+      <p begin="00:28:28.290" end="00:28:32.380">this will be a major experience to?</p>
+      <p begin="00:28:32.380" end="00:28:40.080">Image of...here.</p>
+      <p begin="00:28:40.080" end="00:28:42.400">All I need to do is.</p>
+      <p begin="00:28:42.400" end="00:28:47.810">Open-eyed tombs.</p>
+      <p begin="00:28:47.810" end="00:28:49.800">And, I hope.</p>
+      <p begin="00:28:49.800" end="00:28:56.530">And, recognizes...</p>
+      <p begin="00:28:56.530" end="00:29:05.690">...wait for my bc to recognize the.</p>
+      <p begin="00:29:05.690" end="00:29:16.260">...for some reason it's not...</p>
+      <p begin="00:29:16.260" end="00:29:17.550">From to...directly.</p>
+      <p begin="00:29:22.100" end="00:29:25.870">So, now the I disconnect the so all I need to do is</p>
+      <p begin="00:29:25.870" end="00:29:28.220">strong to the app section.</p>
+      <p begin="00:29:33.420" end="00:29:36.650">...load and cv apps that are available there you can see</p>
+      <p begin="00:29:36.650" end="00:29:41.010">...have excel and word so I'm going...drop the</p>
+      <p begin="00:29:41.010" end="00:29:47.780">...that I just read the database are over there.</p>
+      <p begin="00:29:47.780" end="00:29:49.210">Ok.</p>
+      <p begin="00:29:49.210" end="00:29:53.070">And, that's it now I can compromise...</p>
+      <p begin="00:29:53.070" end="00:29:56.070">...can make...again.</p>
+      <p begin="00:29:56.070" end="00:30:02.880">So, I can projects.</p>
+      <p begin="00:30:02.880" end="00:30:06.430">And, brokering.</p>
+      <p begin="00:30:06.430" end="00:30:20.900">Switch so you can see.</p>
+      <p begin="00:30:20.900" end="00:30:30.740">A...opening the last document one.</p>
+      <p begin="00:30:30.740" end="00:30:33.750">And, create and uone.</p>
+      <p begin="00:30:33.750" end="00:30:38.200">I'm going to create a blank documents when I go to my in...you</p>
+      <p begin="00:30:38.200" end="00:30:43.140">will see that we have audience here and you will see that because I loaded...</p>
+      <p begin="00:30:43.140" end="00:30:54.110">app or adding it's already there I can inserted</p>
+      <p begin="00:30:54.110" end="00:31:02.140">This may be americorps issue.</p>
+      <p begin="00:31:02.140" end="00:31:06.130">There we go okay so there's something going on so now if</p>
+      <p begin="00:31:06.130" end="00:31:09.190">...insert sample data I can see the app that I just</p>
+      <p begin="00:31:09.190" end="00:31:12.980">published washer so in a matter of minutes I can really do my</p>
+      <p begin="00:31:12.980" end="00:31:17.830">multi devise development really easily so this is one of the</p>
+      <p begin="00:31:17.830" end="00:31:21.890">key aspects of the model now let's switch gears and I want to show</p>
+      <p begin="00:31:21.890" end="00:31:28.300">you also some of the new capabilities from platform perspective as well as some of</p>
+      <p begin="00:31:28.300" end="00:31:34.720">a api what can you do with the api us?</p>
+      <p begin="00:31:34.720" end="00:31:35.220">Samoa.</p>
+      <p begin="00:31:38.450" end="00:31:43.020">Thanks again all right so let's close...here.</p>
+      <p begin="00:31:43.020" end="00:31:48.650">for these next them all we said it's all about productivity so let's</p>
+      <p begin="00:31:48.650" end="00:31:53.110">...really enhances the pro tutti of users from scratch so we're going to</p>
+      <p begin="00:31:54.340" end="00:31:59.370">them all that allows me to very easily create a project</p>
+      <p begin="00:31:59.370" end="00:32:04.250">information in...with nys visualizations so.</p>
+      <p begin="00:32:05.330" end="00:32:08.780">In this case let me start a run your project here.</p>
+      <p begin="00:32:08.780" end="00:32:14.160">So, I'm going to start and let's call it this is my team.</p>
+      <p begin="00:32:14.160" end="00:32:18.270">Builder.</p>
+      <p begin="00:32:18.270" end="00:32:23.450">So, I'm going to make it a task...in this case I...focus on the word.</p>
+      <p begin="00:32:23.450" end="00:32:28.300">So, all this...of the projects a little bit about this in our in this case</p>
+      <p begin="00:32:28.300" end="00:32:31.960">ourselves...person and I all the time so software</p>
+      <p begin="00:32:31.960" end="00:32:37.000">projects and most of the time we put the same type of...team structure we have our</p>
+      <p begin="00:32:37.000" end="00:32:40.770">...designer we have couple of engineers on a project</p>
+      <p begin="00:32:40.770" end="00:32:45.140">lead the only thing that changes is the actual people that are assigned to</p>
+      <p begin="00:32:45.140" end="00:32:50.130">a project on the raising the prices so but I want to do this all the time and</p>
+      <p begin="00:32:50.130" end="00:32:55.230">it's been a lot of time just reading these diagrams where I pudding work when...the proposals</p>
+      <p begin="00:32:55.230" end="00:32:59.830">...so let's see how I can are create a productivity boost</p>
+      <p begin="00:32:59.830" end="00:33:03.680">...in a matter of minutes soI'm going to start with the</p>
+      <p begin="00:33:03.680" end="00:33:08.520">blind project so let's just are run into see what it does...so the whole project template</p>
+      <p begin="00:33:08.520" end="00:33:13.490">from visual studio gives you something that you may be already familiar with</p>
+      <p begin="00:33:13.490" end="00:33:18.840">...simple...that allows you to read the selection and display it</p>
+      <p begin="00:33:20.220" end="00:33:24.120">on a pop-up now that's not very useful so let's see what</p>
+      <p begin="00:33:24.120" end="00:33:30.570">can we do to make it more useful so I'm going to go back to visual studio.</p>
+      <p begin="00:33:30.570" end="00:33:34.320">And, open some of the cool behind these the first thing I</p>
+      <p begin="00:33:34.320" end="00:33:38.270">want to talk about is one very powerful api</p>
+      <p begin="00:33:38.270" end="00:33:42.510">that we have in word that I'm not sure the people realize how powerfully</p>
+      <p begin="00:33:42.510" end="00:33:47.410">so I'm going to focus my solution on that one api which is the ability to read and</p>
+      <p begin="00:33:47.410" end="00:33:52.390">write open-xml from the document so in this case instead of just reading the</p>
+      <p begin="00:33:52.390" end="00:33:56.010">text I'm going to reeves the open-xml</p>
+      <p begin="00:33:56.010" end="00:34:00.430">representation of the selection what I do the</p>
+      <p begin="00:34:00.430" end="00:34:03.540">...by changing the type that</p>
+      <p begin="00:34:03.540" end="00:34:07.980">...request the data out to be return to me in this case I'm doing</p>
+      <p begin="00:34:07.980" end="00:34:12.330">...get selected data function requesting text I'm going to change</p>
+      <p begin="00:34:12.330" end="00:34:19.730">that to request open xml whoops.</p>
+      <p begin="00:34:19.730" end="00:34:21.610">I...these variable to hold the</p>
+      <p begin="00:34:21.610" end="00:34:25.320">...so because open some of these much more larger I'm just going to</p>
+      <p begin="00:34:25.320" end="00:34:32.030">common these notification...instead of showing it there I'm going to.</p>
+      <p begin="00:34:32.030" end="00:34:36.830">Basically put it on that variable so...the xml and...also</p>
+      <p begin="00:34:36.830" end="00:34:41.590">...a textbook so that we can see it so for that I'm going to also a</p>
+      <p begin="00:34:41.590" end="00:34:46.270">...here...my the fold.</p>
+      <p begin="00:34:46.270" end="00:34:51.000">Html so let's see ...those to the apps with you switch back to</p>
+      <p begin="00:34:51.000" end="00:34:54.300">word so ok now I have a...works.</p>
+      <p begin="00:34:54.300" end="00:34:58.570">Now I have the ability to select something</p>
+      <p begin="00:34:58.570" end="00:35:02.730">and get the open-xml representation of that instead of the text</p>
+      <p begin="00:35:02.730" end="00:35:06.540">ok that's still not very useful let's make it more interesting so I'm going</p>
+      <p begin="00:35:06.540" end="00:35:11.240">...close word and show you are quick trick.</p>
+      <p begin="00:35:11.240" end="00:35:14.310">In visual studio if you add</p>
+      <p begin="00:35:14.310" end="00:35:18.140">...existing document...one open word.</p>
+      <p begin="00:35:18.140" end="00:35:22.090">If I come to the project and rightly can say</p>
+      <p begin="00:35:22.090" end="00:35:26.920">...existing items you can select any word document...you have in your machine and</p>
+      <p begin="00:35:26.920" end="00:35:30.730">added to your project in this case I have these word document that I want to</p>
+      <p begin="00:35:30.730" end="00:35:35.550">uses a template and then just delve visual studio...creating a new document</p>
+      <p begin="00:35:36.760" end="00:35:40.630">...five just use the documents I'm going to do that because</p>
+      <p begin="00:35:40.630" end="00:35:44.180">that document has the project template I want to automate</p>
+      <p begin="00:35:44.180" end="00:35:48.990">now another thing I want to do is I not only want to read the selection I</p>
+      <p begin="00:35:48.990" end="00:35:51.480">...to actually...create</p>
+      <p begin="00:35:51.480" end="00:35:58.280">...with a xml so let's create a bottom here whoops.</p>
+      <p begin="00:35:58.280" end="00:35:59.160">It's create a new</p>
+      <p begin="00:35:59.160" end="00:36:03.780">...on that allows me to also set the data.</p>
+      <p begin="00:36:03.780" end="00:36:07.950">And, I'm going to go to javascript here and also</p>
+      <p begin="00:36:07.950" end="00:36:12.440">...the bottom as you can see m using jake...</p>
+      <p begin="00:36:12.440" end="00:36:17.910">So, just need to...the bottom to these said data function so all I need to do is</p>
+      <p begin="00:36:17.910" end="00:36:21.090">add the said data function.</p>
+      <p begin="00:36:21.090" end="00:36:23.700">...the said data function is</p>
+      <p begin="00:36:23.700" end="00:36:27.550">actually really simple as well you can see were only calling the</p>
+      <p begin="00:36:27.550" end="00:36:31.490">...selected data api and we're processing that open-xml that we saved</p>
+      <p begin="00:36:31.490" end="00:36:39.240">into variable so very simple code so let's see how this looks like.</p>
+      <p begin="00:36:39.240" end="00:36:43.650">So, now I open my template document you can see there is the template</p>
+      <p begin="00:36:43.650" end="00:36:47.540">that I normally generate also user now I'm going to</p>
+      <p begin="00:36:47.540" end="00:36:51.690">our my app team builder...developing it going to</p>
+      <p begin="00:36:51.690" end="00:36:56.680">save the document and now the our of open-xml is that you</p>
+      <p begin="00:36:56.680" end="00:37:01.670">can not only grab takes you can grab any complex representation of continued words,</p>
+      <p begin="00:37:01.670" end="00:37:06.770">for example, in this case I one these diagram this is the type of diagram that I...my opt to generate automatically</p>
+      <p begin="00:37:06.770" end="00:37:11.700">for my users sigrid these project simply diagram you can see I have</p>
+      <p begin="00:37:11.700" end="00:37:15.860">...holders forwarded data would be...I...this up to do is basically</p>
+      <p begin="00:37:15.860" end="00:37:20.280">generate these diagrams dynamically based on data coming from the back so let's see how we can do</p>
+      <p begin="00:37:20.280" end="00:37:26.620">that the first thing is this object these are...object I actually spent like a good</p>
+      <p begin="00:37:26.620" end="00:37:32.100">...just deciding...looks right so the our of these is that you can</p>
+      <p begin="00:37:32.100" end="00:37:35.290">select here.</p>
+      <p begin="00:37:35.290" end="00:37:37.580">This whole thing and say get the</p>
+      <p begin="00:37:37.580" end="00:37:43.200">data I have now the eczema representation here but now with the said they'd</p>
+      <p begin="00:37:43.200" end="00:37:45.260">...the same thing from...works.</p>
+      <p begin="00:37:46.290" end="00:37:50.150">Order variable into the document ok so now we have the</p>
+      <p begin="00:37:50.150" end="00:37:54.800">ability to anything that I can representing worked I can podium</p>
+      <p begin="00:37:54.800" end="00:37:58.820">...template and spit it out now.</p>
+      <p begin="00:37:58.820" end="00:38:03.330">Great we just implemented copy...so still not a very useful</p>
+      <p begin="00:38:03.330" end="00:38:08.160">what the part of will make it really compelling is if I can replace these...holders</p>
+      <p begin="00:38:08.160" end="00:38:12.940">...actual data and make these really dynamic so let's see how we can go and enable</p>
+      <p begin="00:38:12.940" end="00:38:17.960">that for this project so for...</p>
+      <p begin="00:38:17.960" end="00:38:24.270">I'm going to go back to visual studio and...data models...load...</p>
+      <p begin="00:38:24.270" end="00:38:28.810">From some other place in this case I'm going to just...that but I also want to</p>
+      <p begin="00:38:28.810" end="00:38:34.710">demonstrate how you can use any of the libraries that are out there</p>
+      <p begin="00:38:34.710" end="00:38:38.570">and javascript in this case I'm going to use angular to enhance this</p>
+      <p begin="00:38:38.570" end="00:38:43.450">project so angular makes it really easy to...to the down the uri and that's what</p>
+      <p begin="00:38:43.450" end="00:38:47.730">I'm going to do so I'm going to include the angular reference there I'm</p>
+      <p begin="00:38:47.730" end="00:38:51.670">going to replace these text in the.</p>
+      <p begin="00:38:52.680" end="00:38:57.510">Html with some.</p>
+      <p begin="00:38:57.510" end="00:39:02.230">Angular definitions for a couple of things I'm going to have a title I have</p>
+      <p begin="00:39:02.230" end="00:39:04.730">an angular app and the corresponding</p>
+      <p begin="00:39:04.730" end="00:39:09.420">comptroller for those familiar with angular and then I have an imports for the</p>
+      <p begin="00:39:09.420" end="00:39:14.130">number of hours...people will be working on and then...for crumble</p>
+      <p begin="00:39:14.130" end="00:39:19.010">...to capture...different roles was going to play those roles and a running total</p>
+      <p begin="00:39:19.010" end="00:39:23.880">...I can see...who's working on that now that I have that on my html all</p>
+      <p begin="00:39:23.880" end="00:39:27.140">I need to do is come back to my javascript and</p>
+      <p begin="00:39:27.140" end="00:39:33.270">...the corresponding data model for...in this case I'm going to reach out to a</p>
+      <p begin="00:39:33.270" end="00:39:38.120">...for simplicity what you can imagine you could connect to anything...like http,</p>
+      <p begin="00:39:38.120" end="00:39:41.390">for example, as we saw in the other case this case I just have some hard</p>
+      <p begin="00:39:41.390" end="00:39:43.970">...data...some people and the rates</p>
+      <p begin="00:39:45.140" end="00:39:48.650">...angular controller and I'm going to who crop...with the</p>
+      <p begin="00:39:48.650" end="00:39:53.250">html may also have some variables for this selected people</p>
+      <p begin="00:39:53.250" end="00:39:56.230">...as well as the total number of hours capture from the input</p>
+      <p begin="00:39:56.230" end="00:39:59.430">...and a function is going to calculate the total based on what I</p>
+      <p begin="00:39:59.430" end="00:40:04.840">selector the only thing that I need is a function that allows me to replace the</p>
+      <p begin="00:40:04.840" end="00:40:08.900">...holders with the data the user specifying through the html so I'm</p>
+      <p begin="00:40:08.900" end="00:40:12.970">going to go and do that I'm going to insert dysfunction called</p>
+      <p begin="00:40:12.970" end="00:40:17.830">assign team which is a very simple function is going to receive template</p>
+      <p begin="00:40:17.830" end="00:40:19.770">...in this case and do a</p>
+      <p begin="00:40:19.770" end="00:40:24.440">bunch of replacements just string replacements very simple looking for this string</p>
+      <p begin="00:40:24.440" end="00:40:29.840">lead and replace it with the actual selected lead from the user okay and then the</p>
+      <p begin="00:40:29.840" end="00:40:34.790">last thing is instead of just passing the role...to my</p>
+      <p begin="00:40:34.790" end="00:40:38.900">...data I'm just going to before dab pass</p>
+      <p begin="00:40:38.900" end="00:40:43.530">it through the replacement functions so I'm going to?</p>
+      <p begin="00:40:43.530" end="00:40:45.180">Call assign team here.</p>
+      <p begin="00:40:46.340" end="00:40:51.160">...open-xml and the result of that already replaced is going to</p>
+      <p begin="00:40:51.160" end="00:40:56.520">be what I want to insert so let's see how about works now</p>
+      <p begin="00:40:56.520" end="00:41:01.420">okay so that's going back herereload my</p>
+      <p begin="00:41:01.420" end="00:41:08.230">app to get the changes now I'm going to select these again?</p>
+      <p begin="00:41:08.230" end="00:41:09.590">Whoops.</p>
+      <p begin="00:41:09.590" end="00:41:16.080">The...I'm going to get it and I'm going to inserted.</p>
+      <p begin="00:41:16.080" end="00:41:19.850">...with my said the...so you can see now</p>
+      <p begin="00:41:19.850" end="00:41:23.690">I have the diagram...with the real data now if I want</p>
+      <p begin="00:41:23.690" end="00:41:28.700">to change that I can of course say all this is too much money let'sfind someone else</p>
+      <p begin="00:41:28.700" end="00:41:33.810">those in charge of march those reduce the price groups reduce the price</p>
+      <p begin="00:41:33.810" end="00:41:39.000">on that one and I want to so, the data again all so</p>
+      <p begin="00:41:39.000" end="00:41:43.480">really seems like it reloaded for some reason moi.</p>
+      <p begin="00:41:48.740" end="00:41:52.110">Let me go open selects these worm this is a template.</p>
+      <p begin="00:41:55.840" end="00:42:00.550">There you go so good from selection on a of the xml and I want to</p>
+      <p begin="00:42:00.550" end="00:42:05.060">...these one with...new values...</p>
+      <p begin="00:42:05.060" end="00:42:08.700">worries notes and everything okay there you go so now let's select</p>
+      <p begin="00:42:08.700" end="00:42:12.020">...one...the reduce</p>
+      <p begin="00:42:12.020" end="00:42:16.800">...the price so very powerful now the only thing I don't want the user to be selecting the</p>
+      <p begin="00:42:16.800" end="00:42:21.610">template because that's the point right the user...already have...template so let's just</p>
+      <p begin="00:42:21.610" end="00:42:26.280">...template as part of my project so the users can use all these</p>
+      <p begin="00:42:26.280" end="00:42:33.300">without having to know what the templates so I'm going to our.</p>
+      <p begin="00:42:33.300" end="00:42:39.110">Delete these from...file.</p>
+      <p begin="00:42:39.110" end="00:42:43.590">...even in the original states...it close word and go</p>
+      <p begin="00:42:43.590" end="00:42:50.050">back to visual studio what I'm going to add one file here.</p>
+      <p begin="00:42:50.050" end="00:42:51.920">The existing file.</p>
+      <p begin="00:42:51.920" end="00:42:53.270">...simple text file.</p>
+      <p begin="00:42:54.420" end="00:42:59.750">That basically all it has is that same xml.</p>
+      <p begin="00:42:59.750" end="00:43:04.550">I can open that I showed in the textbooks I basically just copied from the...works putting</p>
+      <p begin="00:43:04.550" end="00:43:07.120">...put it as part of my...and</p>
+      <p begin="00:43:07.120" end="00:43:09.790">...my template so now the only thing I</p>
+      <p begin="00:43:09.790" end="00:43:13.470">...need to do is instead of getting the data from</p>
+      <p begin="00:43:13.470" end="00:43:17.070">the selection I'm just going to get the template.</p>
+      <p begin="00:43:18.310" end="00:43:23.220">So, that change the name of the bottom here and go to my javascript</p>
+      <p begin="00:43:23.220" end="00:43:28.550">and goal to the function that gets the data.</p>
+      <p begin="00:43:28.550" end="00:43:34.630">So, this is get data from selection I'm going to replace these and</p>
+      <p begin="00:43:34.630" end="00:43:39.430">I'm going to put this code and this code basically just loads the</p>
+      <p begin="00:43:39.430" end="00:43:43.540">txt file...to the or some of variables so that said</p>
+      <p begin="00:43:43.540" end="00:43:52.310">will pick it up so very simple let's see it should work.</p>
+      <p begin="00:43:52.310" end="00:43:57.050">Right there's the...now I should be able to come to the end of the document in this</p>
+      <p begin="00:43:57.050" end="00:44:00.100">case without selecting anything get the</p>
+      <p begin="00:44:00.100" end="00:44:04.640">...ki guarded from the web and then the change some.</p>
+      <p begin="00:44:04.640" end="00:44:07.940">People here and then said the data...you</p>
+      <p begin="00:44:07.940" end="00:44:12.850">...so now I have a nab that allows me to automatically generate...and we</p>
+      <p begin="00:44:12.850" end="00:44:15.610">...just in a few minutes now</p>
+      <p begin="00:44:15.610" end="00:44:20.480">this up works rate on the desktop where I have...that support but what I</p>
+      <p begin="00:44:20.480" end="00:44:25.350">...these users may not have...the...me want to use word online so let's</p>
+      <p begin="00:44:25.350" end="00:44:33.320">publish these two are word online so for that I'm going to.</p>
+      <p begin="00:44:33.320" end="00:44:37.240">Use the publishing we start again so bear with me</p>
+      <p begin="00:44:37.240" end="00:44:41.060">...these so I'm going to the same thing aidid create</p>
+      <p begin="00:44:41.060" end="00:44:43.430">...your profile here.</p>
+      <p begin="00:44:43.430" end="00:44:47.240">And, basically deploy this project to...or.</p>
+      <p begin="00:44:47.240" end="00:44:51.670">In this case I'm going to select...for inside here.</p>
+      <p begin="00:44:51.670" end="00:44:57.350">My them...site and, I'm going to.</p>
+      <p begin="00:44:57.350" end="00:44:59.770">Published these or https.</p>
+      <p begin="00:44:59.770" end="00:45:03.050">So, this is going to deploy this project that we just creative</p>
+      <p begin="00:45:03.050" end="00:45:07.860">...washer now the only thing I need for these to work on the word online</p>
+      <p begin="00:45:07.860" end="00:45:10.930">...to now load that manifest into my word online ten</p>
+      <p begin="00:45:10.930" end="00:45:13.440">...the same concept that I...for the</p>
+      <p begin="00:45:13.440" end="00:45:20.660">...silo the money first so again here is the page so.</p>
+      <p begin="00:45:20.660" end="00:45:21.910">Let's see if it's their.</p>
+      <p begin="00:45:22.930" end="00:45:25.370">Their releases obviously it's not doing anything because it's</p>
+      <p begin="00:45:25.370" end="00:45:31.190">not connected to office but the simple data model is working now let's get the manifest for</p>
+      <p begin="00:45:31.190" end="00:45:34.950">...this is the publishing location it's correct</p>
+      <p begin="00:45:34.950" end="00:45:36.960">...finish and that gives me the</p>
+      <p begin="00:45:36.960" end="00:45:42.000">...for...now all I need to do is come hereand,</p>
+      <p begin="00:45:42.000" end="00:45:46.480">navigate to the up catalogue of my...ten and that I'm going to</p>
+      <p begin="00:45:46.480" end="00:45:51.530">use...give axis to my users to this up so I'm</p>
+      <p begin="00:45:51.530" end="00:45:55.560">going-to drag the money first here.</p>
+      <p begin="00:45:55.560" end="00:45:58.930">Okay, so, it's...and now I'm going to...two-one</p>
+      <p begin="00:45:58.930" end="00:46:03.720">grieve for business and let's say now I'm a salespersonI've already</p>
+      <p begin="00:46:03.720" end="00:46:08.430">obtain these because my idea...input into the catalog I'm going to create a new</p>
+      <p begin="00:46:08.430" end="00:46:13.450">projects I have my project template here...arming work online.</p>
+      <p begin="00:46:13.450" end="00:46:20.620">I'm going to say...not edit these documenting work online.</p>
+      <p begin="00:46:20.620" end="00:46:24.630">So, here's my project template you can see there's a bunch of work I need to do</p>
+      <p begin="00:46:24.630" end="00:46:29.440">but when it's time to the team structure I can say hey I want to use</p>
+      <p begin="00:46:29.440" end="00:46:33.510">...to create the team structure section of this document</p>
+      <p begin="00:46:33.510" end="00:46:38.020">...is...this was just published today to productions so you can now goal</p>
+      <p begin="00:46:38.020" end="00:46:39.620">...your tenants and</p>
+      <p begin="00:46:39.620" end="00:46:43.550">...new bottom I apps that will allow you to get access to the</p>
+      <p begin="00:46:43.550" end="00:46:47.740">option the tenant you can see the app is still not showing there...need to</p>
+      <p begin="00:46:47.740" end="00:46:50.070">...and here release-time</p>
+      <p begin="00:46:50.070" end="00:46:57.070">builder is the one that I just of loaded I'm going to insert my team to the...adj.</p>
+      <p begin="00:46:57.070" end="00:47:02.490">My expectation is that these will do the same thing right so let's probe it I'm going to click the</p>
+      <p begin="00:47:02.490" end="00:47:07.740">get template...retrieved the template from the web and now I</p>
+      <p begin="00:47:07.740" end="00:47:12.360">want also leg my team configuration that's a that's go with that and...</p>
+      <p begin="00:47:12.360" end="00:47:17.740">data and realize...doesn't even support smart I'm</p>
+      <p begin="00:47:17.740" end="00:47:22.630">going to insert a chunk of content the user cannot editing word online itself</p>
+      <p begin="00:47:22.630" end="00:47:27.470">but the app cam because the app has the our of open-xml so we...I</p>
+      <p begin="00:47:27.470" end="00:47:32.280">can insert is diagram in word online and save the user a bunch of time</p>
+      <p begin="00:47:32.280" end="00:47:52.350">so this is what I call boosting the productivity of the user...and adding.</p>
+      <p begin="00:47:52.350" end="00:47:57.280">...which...to the presentation ok so.</p>
+      <p begin="00:47:57.280" end="00:48:01.410">I'll show you a few of the capabilities that we just-releasedso,</p>
+      <p begin="00:48:01.410" end="00:48:05.790">let's...just a quick summary of what are all the things that have happened in the last three</p>
+      <p begin="00:48:05.790" end="00:48:09.070">to six months so we saw the simplified</p>
+      <p begin="00:48:09.070" end="00:48:15.070">getting started experience for those people that want to learn more we saw the...so for which are about</p>
+      <p begin="00:48:15.070" end="00:48:19.810">to release in the next couple of weeks we so...word online and</p>
+      <p begin="00:48:19.810" end="00:48:26.760">the whole into an experience of developing...something usefulwe are announcing also</p>
+      <p begin="00:48:26.760" end="00:48:32.250">a simplified offices...version experience of or for those of you already working with the</p>
+      <p begin="00:48:32.250" end="00:48:37.180">...today we have a...scheme that uses to numbers and...was crossing like every time we</p>
+      <p begin="00:48:37.180" end="00:48:42.190">...the...more number even though we're not introducing breaking changes you will need to</p>
+      <p begin="00:48:42.190" end="00:48:45.350">...to the new version so, the your up</p>
+      <p begin="00:48:45.350" end="00:48:50.190">keeps with the latest changes so in order to reduce the friction and simplify these</p>
+      <p begin="00:48:50.190" end="00:48:55.150">were going to just go with one version number and, basically not make</p>
+      <p begin="00:48:55.150" end="00:49:00.370">raking changes until we change that...so now you can reference the javascript</p>
+      <p begin="00:49:00.370" end="00:49:04.610">...of one-point-one you...say one and you will get all the latest</p>
+      <p begin="00:49:04.610" end="00:49:09.020">...these we have having to modify your...every time.</p>
+      <p begin="00:49:09.020" end="00:49:13.180">Now there's a few things that are ...performance improvements have been</p>
+      <p begin="00:49:13.180" end="00:49:18.870">of rolled out a as well as adding for the outlook...you probably so about</p>
+      <p begin="00:49:18.870" end="00:49:26.550">them all in the session of the developer kickoff social.</p>
+      <p begin="00:49:26.550" end="00:49:26.990">The last</p>
+      <p begin="00:49:26.990" end="00:49:31.730">ten minutes I want spends talking about the roadmap what's coming</p>
+      <p begin="00:49:31.730" end="00:49:35.720">...in the future.</p>
+      <p begin="00:49:35.720" end="00:49:41.630">you also probably so, these...someone's going to spend a lot of time here just one</p>
+      <p begin="00:49:41.630" end="00:49:43.960">message we are actively working</p>
+      <p begin="00:49:43.960" end="00:49:48.490">on enabling these to all the platforms one of the highest priority</p>
+      <p begin="00:49:48.490" end="00:49:52.660">...for my team right now is to make sure that are these are available</p>
+      <p begin="00:49:52.660" end="00:49:57.140">and working all the platforms were office works so in the next</p>
+      <p begin="00:49:57.140" end="00:50:02.810">three to six months you should expect to see the orange cells coming up</p>
+      <p begin="00:50:02.810" end="00:50:07.330">and we're going to talk all the rest...first as...so</p>
+      <p begin="00:50:07.330" end="00:50:12.800">ones we're done with the orange we will go after the greening</p>
+      <p begin="00:50:12.800" end="00:50:17.700">deal caller now ...one big priority a</p>
+      <p begin="00:50:17.700" end="00:50:22.950">secondly priority is deeper integration so this is something that's coming a</p>
+      <p begin="00:50:22.950" end="00:50:25.470">...in the user voice so,</p>
+      <p begin="00:50:25.470" end="00:50:28.770">you're not already participating in the user voice please do</p>
+      <p begin="00:50:28.770" end="00:50:33.870">so we look at it and we understand a lot of the things that people</p>
+      <p begin="00:50:33.870" end="00:50:38.160">...to do by looking at the user voice and we have</p>
+      <p begin="00:50:38.160" end="00:50:41.140">sharedvery loudly the people</p>
+      <p begin="00:50:41.140" end="00:50:46.270">want to deeper integration both in terms of the api so we're going to</p>
+      <p begin="00:50:46.270" end="00:50:51.290">...outing and lighting up new deeper api...we're going to start focusing</p>
+      <p begin="00:50:51.290" end="00:50:56.480">on word...and we're going to switch from?</p>
+      <p begin="00:50:56.480" end="00:51:01.610">The common api that we have today which work...seamlessly</p>
+      <p begin="00:51:01.610" end="00:51:05.180">...and powerpoint to deeper specific</p>
+      <p begin="00:51:05.180" end="00:51:08.900">api that are specific to word excel so that you can have</p>
+      <p begin="00:51:08.900" end="00:51:13.780">phi and grain control over the new functionality that we</p>
+      <p begin="00:51:13.780" end="00:51:18.220">will have available and you will of course will be able to use of</p>
+      <p begin="00:51:18.220" end="00:51:22.330">...api along...of the new application-specific api</p>
+      <p begin="00:51:22.330" end="00:51:25.550">is the target scenarios...we have four word</p>
+      <p begin="00:51:25.550" end="00:51:30.710">...document...scenario so basically you everything you need to create these document</p>
+      <p begin="00:51:30.710" end="00:51:35.200">assembly scenarios to...reach functionality for your</p>
+      <p begin="00:51:35.200" end="00:51:40.110">end-users in xcel there's obviously the data import a analyses and</p>
+      <p begin="00:51:40.110" end="00:51:43.560">visualization scenarios that we want to enable a giving access,</p>
+      <p begin="00:51:43.560" end="00:51:48.490">for example, to the charts object model which is something that people have requested a lot I want to create and</p>
+      <p begin="00:51:48.490" end="00:51:51.220">...that optimizes generation...chart okay</p>
+      <p begin="00:51:51.220" end="00:51:57.570">we'll be able to do something like that now the next thing in deeper integration</p>
+      <p begin="00:51:57.570" end="00:52:02.100">is the ux so rubble efforts already mentioned</p>
+      <p begin="00:52:02.100" end="00:52:07.980">that we're starting to integrate allow you to extend the reborn</p>
+      <p begin="00:52:07.980" end="00:52:12.950">we don't see it really one extensibility necessarily we...more</p>
+      <p begin="00:52:12.950" end="00:52:16.860">...this notion of adding, adding commands swore</p>
+      <p begin="00:52:16.860" end="00:52:21.230">common extensibility the idea is that...will be able to surface comments</p>
+      <p begin="00:52:22.820" end="00:52:27.140">...users are already familiar to use those commands so-if is a</p>
+      <p begin="00:52:27.140" end="00:52:31.460">reborn is going to be the reborn but there's going to be a layer of abstraction of your</p>
+      <p begin="00:52:31.460" end="00:52:36.240">app will declare...you want to show we will</p>
+      <p begin="00:52:36.240" end="00:52:41.030">interpret the differently depending on the client so there are...that don't have a reborn</p>
+      <p begin="00:52:41.030" end="00:52:45.430">...for example, are the web axis but you will still be able to project commands and</p>
+      <p begin="00:52:45.430" end="00:52:50.790">we will make sure that we put them in the right place that makes sense for the user?</p>
+      <p begin="00:52:50.790" end="00:52:54.530">So, if you are interested in learning more about these there's a</p>
+      <p begin="00:52:54.530" end="00:52:58.330">decision on wednesday four thirty.</p>
+      <p begin="00:52:58.330" end="00:53:03.500">Three thirty pm so we are releasing adding comments in outlook</p>
+      <p begin="00:53:03.500" end="00:53:08.900">first...we're starting to work on adding...for word excel and powerpoint and,</p>
+      <p begin="00:53:08.900" end="00:53:15.040">expect to have those soon the other thing that we're doing is we're also going to enable different add-in</p>
+      <p begin="00:53:15.040" end="00:53:20.230">types so you have seen the task being the content</p>
+      <p begin="00:53:20.230" end="00:53:23.840">...the case of...we have the reading...and now the new</p>
+      <p begin="00:53:23.840" end="00:53:28.880">pop-pop shape that allows you to have contextuallinks.</p>
+      <p begin="00:53:28.880" end="00:53:32.830">We're going to starting enhancing the number and the types of</p>
+      <p begin="00:53:32.830" end="00:53:37.760">audis that you can create like for some...you want to extend the open</p>
+      <p begin="00:53:37.760" end="00:53:43.050">and save experience we maybe able to give you access to the file open</p>
+      <p begin="00:53:43.050" end="00:53:48.350">save and led you project some...functionality over...so,</p>
+      <p begin="00:53:48.350" end="00:53:53.060">we are still prioritizing what are the first scenario so again user voice will be</p>
+      <p begin="00:53:53.060" end="00:53:58.110">a great way to learn about what is important to you bob this is</p>
+      <p begin="00:53:58.110" end="00:54:03.780">a another interesting area where we will be investing in the near future and lastly</p>
+      <p begin="00:54:03.780" end="00:54:08.710">...to make sure that you have from a developer perspective all the resources</p>
+      <p begin="00:54:08.710" end="00:54:12.920">that you need in order to create high-quality jobs that really helps users</p>
+      <p begin="00:54:12.920" end="00:54:16.550">...be more productive so we're going to start investing</p>
+      <p begin="00:54:16.550" end="00:54:20.340">...things like ...template this is something that has been</p>
+      <p begin="00:54:20.340" end="00:54:25.540">requested quite a bit and let me show you just a quick.</p>
+      <p begin="00:54:25.540" end="00:54:32.400">Blooms ofsome of thinking on that area.</p>
+      <p begin="00:54:32.400" end="00:54:39.770">So, I'm going to open.</p>
+      <p begin="00:54:39.770" end="00:54:44.020">This up so the idea here is hot what can we do to help you</p>
+      <p begin="00:54:44.020" end="00:54:48.980">to create great looking apps...really fill in fifth-grade in the</p>
+      <p begin="00:54:48.980" end="00:54:54.260">society offers uri so we have heard a lot of requests for</p>
+      <p begin="00:54:54.260" end="00:54:57.930">like styling guidance and some help to</p>
+      <p begin="00:54:57.930" end="00:55:02.380">...do a better job in terms of integrating into the office you</p>
+      <p begin="00:55:02.380" end="00:55:07.410">...the office philosophies so we're starting to think about these idea of the office</p>
+      <p begin="00:55:07.410" end="00:55:11.780">...fabric or a set of ui templates that you can use to style your you</p>
+      <p begin="00:55:11.780" end="00:55:16.760">...app if you will...that it looks and feels better inside of his</p>
+      <p begin="00:55:16.760" end="00:55:24.060">are going to have...this case I creative or someone emerging creative these are or</p>
+      <p begin="00:55:24.060" end="00:55:27.190">...wvu basically illustrates a lot of the things that</p>
+      <p begin="00:55:27.190" end="00:55:31.450">we'll be putting out there are resource for developers you will have access to</p>
+      <p begin="00:55:31.450" end="00:55:36.960">...the same phones that we use inside office so, the user can</p>
+      <p begin="00:55:36.960" end="00:55:41.960">see the consistency between your app on the office user experience so the icon</p>
+      <p begin="00:55:41.960" end="00:55:47.280">...griffey is also very important so we will put icons of the you can use them your</p>
+      <p begin="00:55:47.280" end="00:55:52.250">...the users will...cycles branding I goes as well as a function I</p>
+      <p begin="00:55:52.250" end="00:55:55.600">goes there will be definition for the callers that offers uses</p>
+      <p begin="00:55:55.600" end="00:55:58.660">sort of uone you can match the high logical or...</p>
+      <p begin="00:55:58.660" end="00:56:04.070">called or things like that we will also thinking about templates for different things like,</p>
+      <p begin="00:56:04.070" end="00:56:10.510">for example, bottoms?</p>
+      <p begin="00:56:10.510" end="00:56:18.130">Toggle bottoms different types of choices we also have things like</p>
+      <p begin="00:56:18.130" end="00:56:23.190">...you want to create a least in this case we will give you all this</p>
+      <p begin="00:56:23.190" end="00:56:28.520">styling that you need to create something that looks and feels like office and the</p>
+      <p begin="00:56:28.520" end="00:56:34.380">nice thing about these approach and I would love to hear your feedback of these either</p>
+      <p begin="00:56:34.380" end="00:56:39.520">via user voice or you can richard to me directly I can give you</p>
+      <p begin="00:56:39.520" end="00:56:44.470">...contact information...decision is are we are</p>
+      <p begin="00:56:44.470" end="00:56:48.340">plotting to these in a way that we think is going to be</p>
+      <p begin="00:56:48.340" end="00:56:51.370">...to consume so in this case the way you will integrate</p>
+      <p begin="00:56:51.370" end="00:56:55.390">...is just by creating some links to some siosism javascript files in your</p>
+      <p begin="00:56:55.390" end="00:56:59.420">project that's it and then a series of classes that you need to add</p>
+      <p begin="00:56:59.420" end="00:57:05.990">...html elements to basically style them the way office</p>
+      <p begin="00:57:05.990" end="00:57:10.590">...the same the same items and then this</p>
+      <p begin="00:57:10.590" end="00:57:15.280">is really powerful because it really allows you to basically use the look and feel</p>
+      <p begin="00:57:15.280" end="00:57:18.280">but still use any framework image javascript framework</p>
+      <p begin="00:57:18.280" end="00:57:22.280">you can use or you want to use for rendering and creating the controls of the</p>
+      <p begin="00:57:22.280" end="00:57:30.800">ui you can still use so just to demonstrate that let me show you.</p>
+      <p begin="00:57:30.800" end="00:57:36.720">In this case the arby's using angular to...so you can see how</p>
+      <p begin="00:57:36.720" end="00:57:41.600">a I can use both these ui fabric and...layer on top of some other</p>
+      <p begin="00:57:41.600" end="00:57:45.740">existing framework jake...angular or bootstrap or whatever</p>
+      <p begin="00:57:45.740" end="00:57:50.540">framework you're using it still compatible is not going to collide so,</p>
+      <p begin="00:57:50.540" end="00:57:54.680">we want-to make sure you can still leverage any of the frameworks...there</p>
+      <p begin="00:57:54.680" end="00:57:57.150">...the web so in this case, for example,</p>
+      <p begin="00:57:57.150" end="00:58:02.020">if I inserter table here I'm using angular to do some data mining here so I can,</p>
+      <p begin="00:58:02.020" end="00:58:07.540">for example, the...something in these table those...like...</p>
+      <p begin="00:58:07.540" end="00:58:15.370">beyond your lawry's doing the data binding so, it's very easy to who crop.</p>
+      <p begin="00:58:15.370" end="00:58:24.640">And, you can see how the inventing and everything is just being taken care with the office</p>
+      <p begin="00:58:24.640" end="00:58:26.060">...to the presentation.</p>
+      <p begin="00:58:27.770" end="00:58:32.090">So, hopefully these will be an exciting way to our creed the</p>
+      <p begin="00:58:32.090" end="00:58:32.720">ui for.</p>
+      <p begin="00:58:33.810" end="00:58:39.350">For your robs we talked about the developer preview programs so</p>
+      <p begin="00:58:39.350" end="00:58:44.120">please sign up...you can go to the both and sign up and then there's some subscriptions</p>
+      <p begin="00:58:44.120" end="00:58:48.350">...get for free the to get controls from cleric and</p>
+      <p begin="00:58:48.350" end="00:58:51.970">...services allows you to...to</p>
+      <p begin="00:58:51.970" end="00:58:58.170">...campaigns to follow-up with your contacts so those are great benefits of besides the fact that you</p>
+      <p begin="00:58:58.170" end="00:59:05.230">will be able to be in touch with...and give us feedback about the work that we're doing.</p>
+      <p begin="00:59:05.230" end="00:59:09.920">So, with that I just...wrap-up with call-to-action so I have to call to</p>
+      <p begin="00:59:09.920" end="00:59:15.060">auctionsone is a specific to this session.</p>
+      <p begin="00:59:15.060" end="00:59:20.250">Learn more the verbo-visual combs large getting started look,</p>
+      <p begin="00:59:20.250" end="00:59:23.540">at the new page there's a lot of simplified</p>
+      <p begin="00:59:23.540" end="00:59:28.180">...information but also lots of samples new samples</p>
+      <p begin="00:59:28.180" end="00:59:32.040">...testing your audience in word online you can do about to the</p>
+      <p begin="00:59:32.040" end="00:59:34.490">...to production these morning so you can just go and</p>
+      <p begin="00:59:34.490" end="00:59:44.910">...without also test or start this thing on the x so for.</p>
+      <p begin="00:59:44.910" end="00:59:48.120">We released the new version of the manifest</p>
+      <p begin="00:59:48.120" end="00:59:54.340">...one-point-one which is the one...you to jump into the.</p>
+      <p begin="00:59:54.340" end="00:59:56.980">And, we talk about the new versioning for</p>
+      <p begin="00:59:56.980" end="01:00:03.870">...we also release the one version number instead of two please provide those</p>
+      <p begin="01:00:03.870" end="01:00:10.040">...warc on user voice.</p>
+      <p begin="01:00:10.040" end="01:00:16.550">Develop programs.</p>
+      <p begin="01:00:16.550" end="01:00:24.450">There are tones of thoughts...where we will be drilling down into other topics.</p>
+      <p begin="01:00:24.450" end="01:00:32.390">And, then the speakers you want to get to...cool who the.</p>
+      <p begin="01:00:32.390" end="01:00:35.810">That...now I just means one more them</p>
+      <p begin="01:00:35.810" end="01:00:41.410">also I'm out of time but if you guys want to stay I just want to show you are</p>
+      <p begin="01:00:41.410" end="01:00:44.310">...of previews of the work that we're doing in</p>
+      <p begin="01:00:44.310" end="01:00:48.570">...powerpoint I have botch in my...but so if you</p>
+      <p begin="01:00:48.570" end="01:01:01.840">guys have a couple more minutes I can show you that quickly.</p>
+      <p begin="01:01:01.840" end="01:01:05.870">Is...make sure that we went over the</p>
+      <p begin="01:01:07.620" end="01:01:13.530">Okay, there we go so now.</p>
+      <p begin="01:01:13.530" end="01:01:17.460">One of the things I want to show is...that...that we create the project</p>
+      <p begin="01:01:17.460" end="01:01:29.300">...in builder of course it...on the so let's see however, worse here.</p>
+      <p begin="01:01:29.300" end="01:01:32.660">So, I'm going to open a project template here...</p>
+      <p begin="01:01:33.760" end="01:01:34.810">And, I had already</p>
+      <p begin="01:01:34.810" end="01:01:39.940">...loaded the manifest for but up here used in builder.</p>
+      <p begin="01:01:39.940" end="01:01:44.320">...my as you would expect the object...</p>
+      <p begin="01:01:45.720" end="01:01:47.620">In this case already have one</p>
+      <p begin="01:01:47.620" end="01:01:52.330">there what I'm going to insert a new one of the end of the document so</p>
+      <p begin="01:01:52.330" end="01:01:55.210">let's come here and then get the templates.</p>
+      <p begin="01:01:57.080" end="01:02:02.380">It's loaded now I can...as you would...</p>
+      <p begin="01:02:03.510" end="01:02:10.460">The reduce now I can also create these experience on the as we</p>
+      <p begin="01:02:10.460" end="01:02:14.050">start to enable this type of scenarios disease some of the</p>
+      <p begin="01:02:14.050" end="01:02:18.450">new work as you can see were getting really close to a place where we will be able to</p>
+      <p begin="01:02:18.450" end="01:02:22.800">...these...we're not ready yet but it's pretty close</p>
+      <p begin="01:02:22.800" end="01:02:27.320">we're also starting to work with some of our partners like a...your sign which already polish</p>
+      <p begin="01:02:27.320" end="01:02:32.680">...rap and it's already working for the desktop now we're testing</p>
+      <p begin="01:02:32.680" end="01:02:37.940">...with the art but so let me go and show you how from here I can also launch</p>
+      <p begin="01:02:37.940" end="01:02:41.710">...you sign which is available</p>
+      <p begin="01:02:41.710" end="01:02:42.210">there?</p>
+      <p begin="01:02:43.860" end="01:02:47.590">And, I can ...the up.</p>
+      <p begin="01:02:47.590" end="01:02:50.230">With very almost normally education from the</p>
+      <p begin="01:02:50.230" end="01:02:53.070">...your sign guys I have the ob working on the</p>
+      <p begin="01:02:53.070" end="01:02:58.000">...I can say I'm done with this project and from within my...but I can say I want to</p>
+      <p begin="01:02:58.000" end="01:03:03.530">sign this project now this is going to use the same implementation that they</p>
+      <p begin="01:03:03.530" end="01:03:08.230">have that it's working on the desktop that it's also going to work on</p>
+      <p begin="01:03:08.230" end="01:03:13.600">word online here on the so it's reading the file it's going to send...to the</p>
+      <p begin="01:03:13.600" end="01:03:17.530">...loaded here...I can complete dissing...their...</p>
+      <p begin="01:03:19.340" end="01:03:22.050">I can see there's my diagram I</p>
+      <p begin="01:03:22.050" end="01:03:26.140">want to put my signature right there so let's</p>
+      <p begin="01:03:26.140" end="01:03:32.640">...signature one-inchthe...</p>
+      <p begin="01:03:32.640" end="01:03:36.950">...and with that I can just...finish.</p>
+      <p begin="01:03:36.950" end="01:03:40.000">The document is now...so I created</p>
+      <p begin="01:03:40.000" end="01:03:45.340">a projects with nys diagram that contains information from by</p>
+      <p begin="01:03:45.340" end="01:03:49.040">bark and a nice signed it and send it to my client</p>
+      <p begin="01:03:49.040" end="01:03:55.040">all from my within a matter of seconds so thank you very much this is</p>
+      <p begin="01:03:55.040" end="01:04:00.410">it if you want tofollow-up these...and I can give you a...information thank you.</p>
+
+    </div>
+  </body>
+</tt>

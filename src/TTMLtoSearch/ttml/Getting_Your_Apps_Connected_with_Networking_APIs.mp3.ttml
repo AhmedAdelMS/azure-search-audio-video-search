@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.923</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.380" end="00:00:05.260">and, welcome to this session forgetting your apps connected with networking api...my name is</p>
+      <p begin="00:00:05.260" end="00:00:10.080">...and aimee program manager in the wireless and core connectivity group.</p>
+      <p begin="00:00:10.080" end="00:00:13.350">Before we start I'll give you a quick overview of what is going to be covered in</p>
+      <p begin="00:00:13.350" end="00:00:15.630">this session first we'll go over the existing</p>
+      <p begin="00:00:15.630" end="00:00:20.430">problems space and prior solutions to those problems then I'll introduce what is new</p>
+      <p begin="00:00:20.430" end="00:00:24.130">...windows ten show you some sample code and some demos and then</p>
+      <p begin="00:00:24.130" end="00:00:29.830">...you with some next steps for what you could investigate if you're interested in learning more.</p>
+      <p begin="00:00:29.830" end="00:00:33.990">So, what is the problem users are not always connected and when</p>
+      <p begin="00:00:33.990" end="00:00:38.890">your app requires network connectivity to work its magic that could be a problem so you're</p>
+      <p begin="00:00:38.890" end="00:00:43.320">up could...network connectivity for a number of reasons, for example,</p>
+      <p begin="00:00:43.320" end="00:00:48.320">your wireless or bluetooth radios could be off you could be in an area within unknown wi-fi</p>
+      <p begin="00:00:48.320" end="00:00:53.670">network for which you have to which you have not actually connected yet or you could be in an area with</p>
+      <p begin="00:00:53.670" end="00:00:58.390">no wi-fi connectivity at all so prior solutions to this</p>
+      <p begin="00:00:58.390" end="00:01:03.700">have been very cumbersome at best on the desktop you had to actually</p>
+      <p begin="00:01:03.700" end="00:01:07.730">move the user out of app context in order to fix those problems, for example,</p>
+      <p begin="00:01:07.730" end="00:01:11.850">navigating through the settings menu to connect to a wi-fi network or to</p>
+      <p begin="00:01:11.850" end="00:01:17.540">...radios on and off or to start internet connection sharing you can also swipe out from the</p>
+      <p begin="00:01:17.540" end="00:01:22.260">charms bar to manually connector wireless network on the phone this experience</p>
+      <p begin="00:01:22.260" end="00:01:27.010">is somewhat better but it's still not best so on the phone as a windows...one there is the</p>
+      <p begin="00:01:27.010" end="00:01:31.280">quick actions toolbar that you can swept down from the top to toggle on the wi-fi and</p>
+      <p begin="00:01:31.280" end="00:01:35.360">the to produce manually there's also a...sleep settings link</p>
+      <p begin="00:01:35.360" end="00:01:40.120">uri experience where you could go direct the user to another sub page...</p>
+      <p begin="00:01:40.120" end="00:01:45.750">I would still require some user interference so in windows ten...to provide some new</p>
+      <p begin="00:01:45.750" end="00:01:50.670">api that would make this user experience more seamless and give the developer a little more control over</p>
+      <p begin="00:01:50.670" end="00:01:55.480">the user experience so here we have three sets of api is that we are adding</p>
+      <p begin="00:01:55.480" end="00:01:59.930">to understand the first of these is radio management api...which</p>
+      <p begin="00:01:59.930" end="00:02:05.400">allow developers to toggle the wi-fi and bluetooth radios on and off these aps</p>
+      <p begin="00:02:05.400" end="00:02:09.440">...publicly available as long as the developers declare the radios device</p>
+      <p begin="00:02:09.440" end="00:02:13.850">capability is also settings page available for letting users manage</p>
+      <p begin="00:02:13.850" end="00:02:18.130">this capability which I will show later on the second of these api</p>
+      <p begin="00:02:18.130" end="00:02:22.810">is are collectively known as the wi-fi scanned connect api as their name suggest</p>
+      <p begin="00:02:22.810" end="00:02:26.430">...allow devices and apps to scan for wi-fi networks within</p>
+      <p begin="00:02:26.430" end="00:02:31.720">range and retrieve certain properties such as a society and bs id?</p>
+      <p begin="00:02:31.720" end="00:02:35.150">They also allow the apps to connect to common types of wi-fi...</p>
+      <p begin="00:02:36.410" end="00:02:38.800">There are some restrictions on these...for example,</p>
+      <p begin="00:02:38.800" end="00:02:43.670">the cannot run from a background process but again they are publicly available and</p>
+      <p begin="00:02:43.670" end="00:02:48.130">...that which is to use these api is only needs to declare the wi-fi control device</p>
+      <p begin="00:02:48.130" end="00:02:53.140">capability you will find this and the windows devices dot wi-fi namespaces and the previous api</p>
+      <p begin="00:02:53.140" end="00:02:57.730">...the...you can find in the radio windows dot devices dot radios name</p>
+      <p begin="00:02:57.730" end="00:02:59.100">space.</p>
+      <p begin="00:02:59.100" end="00:03:03.730">Finally we have the twittering api is also known as mobile hot spot these aren't</p>
+      <p begin="00:03:03.730" end="00:03:08.500">entirely knew they were actually existed in windows it up one but they were only available second</p>
+      <p begin="00:03:08.500" end="00:03:13.490">party network operators in windows...we're making them publicly available so that any</p>
+      <p begin="00:03:13.490" end="00:03:19.660">person or any up developer can start a mobile hot spot on the users device.</p>
+      <p begin="00:03:19.660" end="00:03:23.630">So, let's step through a bit of sample code for each of these api</p>
+      <p begin="00:03:23.630" end="00:03:28.080">is the first one of these...radio management api...which if we go</p>
+      <p begin="00:03:28.080" end="00:03:33.190">through this allows the user to seamlessly toggle on and off the</p>
+      <p begin="00:03:33.190" end="00:03:36.670">...without having to go to any settings pages so</p>
+      <p begin="00:03:36.670" end="00:03:40.600">two-step to the sample code we first have the request access a</p>
+      <p begin="00:03:40.600" end="00:03:45.420">...call which basically allows the app to have access to the</p>
+      <p begin="00:03:45.420" end="00:03:47.860">radios in general.</p>
+      <p begin="00:03:47.860" end="00:03:48.780">This must be called once</p>
+      <p begin="00:03:48.780" end="00:03:54.680">...the why thread in order to...the app access the next call is the get radios</p>
+      <p begin="00:03:54.680" end="00:03:59.450">...enumeration call which basically gets all the instances of the</p>
+      <p begin="00:03:59.450" end="00:04:02.390">radio's on the system...bluetooth or wi-fi</p>
+      <p begin="00:04:02.390" end="00:04:06.700">radios or other on this will be returned analyst.</p>
+      <p begin="00:04:06.700" end="00:04:11.600">...if I wanted to turn the wi-fi radio on specifically I would first check to see if</p>
+      <p begin="00:04:11.600" end="00:04:16.710">the radio kind was wi-fi and just set state basic to radio state</p>
+      <p begin="00:04:17.760" end="00:04:21.610">And, what kinds of apps could find this useful you first of all any...</p>
+      <p begin="00:04:21.610" end="00:04:26.490">that needs network connectivity in general but doesn't want to ask the user to go through all this actions to</p>
+      <p begin="00:04:26.490" end="00:04:31.450">actually set the radio state on will be useful but they're also certain</p>
+      <p begin="00:04:31.450" end="00:04:36.220">...and task cognition apps, for example, which may find these sets of api is very useful to</p>
+      <p begin="00:04:36.220" end="00:04:41.090">their scenarios indeed so now I'm going to switch over to my demo for the radio manager</p>
+      <p begin="00:04:41.090" end="00:04:46.560">api so here we have the radio manager application to demonstrate the</p>
+      <p begin="00:04:46.560" end="00:04:48.680">radio manager aps?</p>
+      <p begin="00:04:48.680" end="00:04:51.730">For the purposes of this demonstration I'm going to show the wi-fi</p>
+      <p begin="00:04:51.730" end="00:04:56.790">toggle just because you can see the status of it over here in the system...</p>
+      <p begin="00:04:56.790" end="00:04:58.980">...go here and turn the wi-fi radio</p>
+      <p begin="00:04:58.980" end="00:05:02.050">off should see over here the wi-fi radio has</p>
+      <p begin="00:05:02.050" end="00:05:07.570">indeed been turned off I will do the opposite turning it back on and</p>
+      <p begin="00:05:07.570" end="00:05:12.530">voila there it goes and I am automatically connected to a...network.</p>
+      <p begin="00:05:12.530" end="00:05:15.520">I mentioned before that there's a settings page for managing which apps</p>
+      <p begin="00:05:15.520" end="00:05:19.680">have access to this capability if you go to privacy.</p>
+      <p begin="00:05:19.680" end="00:05:24.620">...to radio's you should see that there is both a master switchboard controlling whether</p>
+      <p begin="00:05:24.620" end="00:05:29.980">apps can set the state of your radios at all as well as the per apps settings toggle so, for example,</p>
+      <p begin="00:05:29.980" end="00:05:33.670">if I were to go here toggle the permission off for my radio</p>
+      <p begin="00:05:33.670" end="00:05:37.730">manager sdk sample and then I go back here.</p>
+      <p begin="00:05:37.730" end="00:05:40.920">Not there to here.</p>
+      <p begin="00:05:40.920" end="00:05:41.420">And, I try to</p>
+      <p begin="00:05:41.420" end="00:05:46.260">toggle the wi-fi radio again I just can't I do not have access.</p>
+      <p begin="00:05:46.260" end="00:05:51.520">So, back to the presentation so now I'll go over some sample code for wi-fi scanning</p>
+      <p begin="00:05:51.520" end="00:05:56.150">and wi-fi connecting again we see this request access a...</p>
+      <p begin="00:05:56.150" end="00:06:01.130">pattern which allows the apps have access to the wi-fi adopter for any operation</p>
+      <p begin="00:06:01.130" end="00:06:05.600">and check the access status see if I have the that permission</p>
+      <p begin="00:06:05.600" end="00:06:10.010">...I go through a enumeration pattern this is the windows</p>
+      <p begin="00:06:10.010" end="00:06:10.950">are devices</p>
+      <p begin="00:06:10.950" end="00:06:15.840">...enumeration pattern for find...a...which is a little bit more roundabout for enumerating</p>
+      <p begin="00:06:15.840" end="00:06:20.830">the wi-fi adapters on the system that I'll show simply one later on I say wi-fi</p>
+      <p begin="00:06:20.830" end="00:06:25.280">radio's because it's entirely possible for a device or system to have more than one wi-fi</p>
+      <p begin="00:06:25.280" end="00:06:28.460">...on...at any time.</p>
+      <p begin="00:06:28.460" end="00:06:31.280">So,...here I find a...I</p>
+      <p begin="00:06:31.280" end="00:06:37.130">...us query string which is represented here by the wi-fi...dot get device selector</p>
+      <p begin="00:06:37.130" end="00:06:40.770">call and then I check to see if I have any results it</p>
+      <p begin="00:06:40.770" end="00:06:45.670">turns out if I do have one then I will just take the first...which is returned by this</p>
+      <p begin="00:06:45.670" end="00:06:50.610">call usually just default a doctor and then I can go and</p>
+      <p begin="00:06:50.610" end="00:06:53.020">...operation so if I go</p>
+      <p begin="00:06:53.020" end="00:06:58.460">...the next screen here then you can see some code for actually initiating the scan?</p>
+      <p begin="00:06:58.460" end="00:07:03.420">So, I have first adaptor dot scan asic that initiates the driver</p>
+      <p begin="00:07:03.420" end="00:07:08.210">scan and populate a list of networks that are within range</p>
+      <p begin="00:07:08.210" end="00:07:12.590">...here through the network report attribute so I get a</p>
+      <p begin="00:07:13.670" end="00:07:17.070">...the list of the available networks within range and then I can access</p>
+      <p begin="00:07:17.070" end="00:07:22.140">each available network and retrieve certain properties such as a society</p>
+      <p begin="00:07:22.140" end="00:07:25.860">...signal strength otherwise known as our society and,</p>
+      <p begin="00:07:25.860" end="00:07:30.740">channel center frequency there are a whole number of other properties that</p>
+      <p begin="00:07:30.740" end="00:07:35.630">are available and you can see them later in the documentation...</p>
+      <p begin="00:07:35.630" end="00:07:39.740">So, if you were to use the wi-fi scan api by itself you could use it to</p>
+      <p begin="00:07:39.740" end="00:07:43.650">build such applications as a wi-fi channel analyzer which</p>
+      <p begin="00:07:43.650" end="00:07:48.220">essentially allows people to determine which frequencies and</p>
+      <p begin="00:07:48.220" end="00:07:53.140">...signal strength are best for situated new wireless routers so,</p>
+      <p begin="00:07:53.140" end="00:07:58.420">it's entirely possible to use...pies without the connect dpi so.</p>
+      <p begin="00:07:58.420" end="00:08:02.410">So, now it to go on to the wi-fi connection portion of this</p>
+      <p begin="00:08:02.410" end="00:08:07.450">exercised we have some more sample code using</p>
+      <p begin="00:08:07.450" end="00:08:12.300">the available networks that were returned from the wi-fi scanning portion</p>
+      <p begin="00:08:12.300" end="00:08:16.780">we are just going to take the first one and let's say that it is</p>
+      <p begin="00:08:16.780" end="00:08:22.230">...network that requires a simple password for here for the purposes of this demo I</p>
+      <p begin="00:08:22.230" end="00:08:27.150">have the password actually set to password that I hope you don't actually set your password as that civil</p>
+      <p begin="00:08:27.150" end="00:08:33.370">string and a create password credential using that ...and that is a</p>
+      <p begin="00:08:33.370" end="00:08:35.560">...a well-known class that already exists.</p>
+      <p begin="00:08:37.010" end="00:08:40.770">Then I use a connection...operation</p>
+      <p begin="00:08:40.770" end="00:08:45.680">to pass in both the available network that was retrieved as a result of the scan operation</p>
+      <p begin="00:08:45.680" end="00:08:50.970">the kind of connection that I wanted to be which in this case is permanent not temporary and the</p>
+      <p begin="00:08:50.970" end="00:08:55.790">password credentials and then hopefully I'm successful but if not then I want to display to</p>
+      <p begin="00:08:55.790" end="00:09:01.140">the user that the connection failed so now I'm going to switch over to the wi-fi</p>
+      <p begin="00:09:01.140" end="00:09:05.790">...connect portion of this demo all right so here is the</p>
+      <p begin="00:09:05.790" end="00:09:08.590">...scan demo it has</p>
+      <p begin="00:09:08.590" end="00:09:14.220">four different scenarios and only going to demonstrate the second and fourth one scanning connect respectively</p>
+      <p begin="00:09:14.220" end="00:09:19.410">...over here...the wonderful scan button.</p>
+      <p begin="00:09:19.410" end="00:09:24.710">So, I see...networks that has been returned by the scan.</p>
+      <p begin="00:09:24.710" end="00:09:29.230">Very simple straightforward you can see that it has given me various properties like the...societies</p>
+      <p begin="00:09:29.230" end="00:09:33.950">at the routers that...and frequency and the encryption type also shows me whether I'm</p>
+      <p begin="00:09:33.950" end="00:09:39.930">connected to that specific network you switch over to scenario for here connect.</p>
+      <p begin="00:09:39.930" end="00:09:45.960">To the scan button again and then actually do something with the information that the scan results return so I'm</p>
+      <p begin="00:09:45.960" end="00:09:50.710">going to go and connect to nsf...open.</p>
+      <p begin="00:09:50.710" end="00:09:56.510">And, as you can see here it doesn't require password I can choose whether not to auto reconnect I'm just going to go in</p>
+      <p begin="00:09:56.510" end="00:09:56.900">hadn't</p>
+      <p begin="00:09:56.900" end="00:10:01.640">kicked hit connect see here that I was momentarily without connectivity</p>
+      <p begin="00:10:01.640" end="00:10:06.310">but now I m connected to a wi-fi network which is pretty cool.</p>
+      <p begin="00:10:06.310" end="00:10:10.970">So, I'm going to switch back to the presentation...we have some sample code for the</p>
+      <p begin="00:10:10.970" end="00:10:13.400">...api is also known as mobile hot</p>
+      <p begin="00:10:13.400" end="00:10:18.420">spot I don't have a demo for this but this has existed since windows it...can</p>
+      <p begin="00:10:18.420" end="00:10:22.950">...more sample apps there if necessary the tether api allow</p>
+      <p begin="00:10:22.950" end="00:10:26.740">...app to share its internet connection over so the cellular radio and</p>
+      <p begin="00:10:26.740" end="00:10:30.540">...connection with other devices so the windows ten api</p>
+      <p begin="00:10:30.540" end="00:10:34.600">...will allow apps to seamlessly start sharing their mobile hot spot with other devices</p>
+      <p begin="00:10:35.630" end="00:10:40.050">so the first step in this sequence of calls here is to create a</p>
+      <p begin="00:10:40.050" end="00:10:45.910">...manager we've set want to know because we're not sure if we are connected to sell</p>
+      <p begin="00:10:45.910" end="00:10:50.460">yet that is the first check that proceeds in this bit of sample code here</p>
+      <p begin="00:10:50.460" end="00:10:55.160">so I see if I have a internet connection profile currently and then I check</p>
+      <p begin="00:10:55.160" end="00:10:59.750">to see if it is a w when connection profile another name for the</p>
+      <p begin="00:10:59.750" end="00:11:04.200">...connection so if I am indeed connected and if I do have</p>
+      <p begin="00:11:04.200" end="00:11:08.290">...over cellular than I can retreat a new</p>
+      <p begin="00:11:08.290" end="00:11:14.060">...manager and created from that connection profile the next step in this</p>
+      <p begin="00:11:14.060" end="00:11:18.030">is to try actually connecting where to start...</p>
+      <p begin="00:11:19.060" end="00:11:22.090">So, have...manager dot start covering a</p>
+      <p begin="00:11:22.090" end="00:11:27.950">...and then I can check to see whether that operations fails or succeeded?</p>
+      <p begin="00:11:27.950" end="00:11:31.640">So, that is all the api is that I had to</p>
+      <p begin="00:11:31.640" end="00:11:37.500">show if you're interested in learning more later on you can follow the links within this presentation to find</p>
+      <p begin="00:11:37.500" end="00:11:41.770">some msdn documentation and sample apps for the windows ten</p>
+      <p begin="00:11:41.770" end="00:11:46.410">...and finally if you're interested in learning more about the connectivity and networking</p>
+      <p begin="00:11:46.410" end="00:11:51.260">solutions offered in windows ten then I recommend you check out the wi-fi direct</p>
+      <p begin="00:11:51.260" end="00:11:58.370">and wi-fi direct services talk linked below thank you very much and I hope you enjoyed this presentation.</p>
+
+    </div>
+  </body>
+</tt>

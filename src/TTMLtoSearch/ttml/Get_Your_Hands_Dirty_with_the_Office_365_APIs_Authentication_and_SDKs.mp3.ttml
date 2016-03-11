@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.904</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.390" end="00:00:08.430">Everybody my name's rob howard a program manager on the</p>
+      <p begin="00:00:08.430" end="00:00:12.930">offs extensibility team and today we're going to get our hands dirty with the office three sixty</p>
+      <p begin="00:00:12.930" end="00:00:17.660">five api is a word of warning...will be and exhausting session</p>
+      <p begin="00:00:17.660" end="00:00:22.080">I'll I will be exhausted afterwards or go-fast them to cover a ton of stuff I'm going to</p>
+      <p begin="00:00:22.080" end="00:00:26.920">go through a bunch of stuff...protocol level detail so if you're not quite prepared for that if you will</p>
+      <p begin="00:00:26.920" end="00:00:30.900">...session you may want to find a different one for the our but,</p>
+      <p begin="00:00:30.900" end="00:00:38.760">with that let's go and get started for everybody who's reduce the along fluoride.</p>
+      <p begin="00:00:38.760" end="00:00:41.030">Please submit evaluation afterwards</p>
+      <p begin="00:00:41.030" end="00:00:45.960">the gennifer today we're going to start off with a really brief little bit on why you should integrate with the office</p>
+      <p begin="00:00:45.960" end="00:00:50.200">three sixty-five api is...you should bring office we sixty-five into your app</p>
+      <p begin="00:00:50.200" end="00:00:55.320">they're going to get started on how to do that...to go into a lot of detail about the first step which is</p>
+      <p begin="00:00:55.320" end="00:00:59.910">integrating single sign on so letting people sign into your application...i-device app or</p>
+      <p begin="00:00:59.910" end="00:01:04.910">web app with our office three sixty five identity and the next step with xyz taking</p>
+      <p begin="00:01:04.910" end="00:01:09.530">...office three sixty five api is and bringing them into your application to make it smarter to take the</p>
+      <p begin="00:01:09.530" end="00:01:13.490">users schedule or their files...one drive-in let them pull it directly into your</p>
+      <p begin="00:01:13.490" end="00:01:18.070">application so they don't have to...their service yourselfand,</p>
+      <p begin="00:01:18.070" end="00:01:21.030">then the last is for those first two things were going to focus</p>
+      <p begin="00:01:21.030" end="00:01:25.500">...on the protocol level details and exactly how stuff works under the covers in the nitty-gritty</p>
+      <p begin="00:01:25.500" end="00:01:30.130">rest the different the tokens you need the exchanges between</p>
+      <p begin="00:01:30.130" end="00:01:34.520">...directory and office three sixty five but there's a ton of tools and sdk</p>
+      <p begin="00:01:34.520" end="00:01:39.520">is and I'll show you a bunch of those...can focus on so that well after the session you'll be a great expert</p>
+      <p begin="00:01:39.520" end="00:01:42.710">and how all that stuff works hopefully...day-to-day you won't have to use</p>
+      <p begin="00:01:42.710" end="00:01:48.780">it you actually just be able to use these tools to be much more productive and efficient integrating them so,</p>
+      <p begin="00:01:48.780" end="00:01:52.630">you've probably seen this slide before if you want to...jeremy's</p>
+      <p begin="00:01:52.630" end="00:01:57.260">...just to give you a quick overview of for the office platform we kind of think of...is being</p>
+      <p begin="00:01:57.260" end="00:02:02.060">too big aspects and one is this user...notion that users</p>
+      <p begin="00:02:02.060" end="00:02:05.420">are inside office getting things done and we want you to</p>
+      <p begin="00:02:05.420" end="00:02:09.790">...developers to be able to create custom experiences that extend office with</p>
+      <p begin="00:02:09.790" end="00:02:15.090">your own services with your own capabilities there's a bunch of talks on that...as a talk</p>
+      <p begin="00:02:15.090" end="00:02:19.860">I believe right after this one on all the capabilities we have for extending office and all of its many different forms</p>
+      <p begin="00:02:19.860" end="00:02:24.750">of many different platforms the second piece of it is the ability to connect office three</p>
+      <p begin="00:02:24.750" end="00:02:28.960">sixty-five data into from whatever application your building whether that's a device</p>
+      <p begin="00:02:28.960" end="00:02:33.590">application or a service application or even a web page connect office three</p>
+      <p begin="00:02:33.590" end="00:02:37.980">sixty five data and make your apps richer and this is we're going to focus on this session that second</p>
+      <p begin="00:02:37.980" end="00:02:42.200">piece the office we sixty-five api is that let you get to that data from wherever</p>
+      <p begin="00:02:42.200" end="00:02:47.460">you're building your application you've probably seen the school before or something like if you</p>
+      <p begin="00:02:47.460" end="00:02:51.100">...anybody from the office...over platform team talk we're very happy about such as being</p>
+      <p begin="00:02:51.100" end="00:02:56.520">so this obviously we think it's very strategic for the company as well if you think about it for anybody who's</p>
+      <p begin="00:02:56.520" end="00:03:01.350">in office three sixty five user the identity that the use and office three sixty five is the one that they</p>
+      <p begin="00:03:01.350" end="00:03:04.970">use to get their job done every day so letting you use that as a</p>
+      <p begin="00:03:04.970" end="00:03:08.610">basis the identity your application and then letting you take things like</p>
+      <p begin="00:03:08.610" end="00:03:12.730">...calendar which is the canonical source of where they are and who they're meeting with</p>
+      <p begin="00:03:12.730" end="00:03:17.380">and what they're working on and the files in one drive which is the important projects that</p>
+      <p begin="00:03:17.380" end="00:03:21.440">they're working on...notes in one node and all the other places that we have an office</p>
+      <p begin="00:03:21.440" end="00:03:24.280">...the help people get work done and bringing that</p>
+      <p begin="00:03:24.280" end="00:03:30.210">...your application is what makes this such as strategic api for us?</p>
+      <p begin="00:03:30.210" end="00:03:34.410">...all starts with single sign on that's really the first step is to take</p>
+      <p begin="00:03:34.410" end="00:03:39.120">your application whatever form it is and let people sign into it with our office three sixty five accounts and</p>
+      <p begin="00:03:39.120" end="00:03:43.800">...to go get another use name and password or if they do so they can connect using password</p>
+      <p begin="00:03:43.800" end="00:03:50.840">directly to their office we sixty-five account and get both pieces of functionality and integrated way as</p>
+      <p begin="00:03:50.840" end="00:03:56.180">...active directory is the basis for all of these accounts obviously sixty-five actually uses</p>
+      <p begin="00:03:56.180" end="00:03:58.510">...directory and profile system.</p>
+      <p begin="00:03:58.510" end="00:04:00.950">All the users all the passwords that are native</p>
+      <p begin="00:04:00.950" end="00:04:05.410">...directory...inside of or the native to office...sixty-five users are inside</p>
+      <p begin="00:04:05.410" end="00:04:11.490">...active directory and...active directory is a vibrant identity platform in the...</p>
+      <p begin="00:04:11.490" end="00:04:16.480">sets your like eighty six percent of fortune five hundred companies are using these microsoft services that take advantage</p>
+      <p begin="00:04:16.480" end="00:04:21.250">of resurrected directory...more than five million organizations that use as</p>
+      <p begin="00:04:21.250" end="00:04:25.040">...directory to...denny's in the cloud have more than a billion</p>
+      <p begin="00:04:25.040" end="00:04:29.990">authentication the day so it's a really active and vibrant ecosystem for doing sign in</p>
+      <p begin="00:04:29.990" end="00:04:35.230">as part of an organization so if you want if you have a productivity app and you want people to be able to get work</p>
+      <p begin="00:04:35.230" end="00:04:41.950">done with your application allowing them to assigning with...kind of a no-brainer.</p>
+      <p begin="00:04:41.950" end="00:04:44.850">How does this work in the context of office...sixty-five we use as</p>
+      <p begin="00:04:44.850" end="00:04:49.280">...active directory as that single protocol to do the authentication even</p>
+      <p begin="00:04:49.280" end="00:04:53.870">for on apps but certainly for third-party applications for third-party applications</p>
+      <p begin="00:04:53.870" end="00:04:58.780">...first step is signing a user in and we typically recommend a really simple</p>
+      <p begin="00:04:58.780" end="00:05:03.650">flow that's become the web standard for doing sign in called open id connect it's a close</p>
+      <p begin="00:05:03.650" end="00:05:06.760">...protocol author...of the nitty-gritty details about hope</p>
+      <p begin="00:05:06.760" end="00:05:10.540">and open id connect works this is how you let a user sign in with</p>
+      <p begin="00:05:10.540" end="00:05:15.360">our office we sixty-five account resurrected director account into your application the next step is</p>
+      <p begin="00:05:15.360" end="00:05:19.770">once they've signed in you can ask the user to give you access to their services and office we</p>
+      <p begin="00:05:19.770" end="00:05:24.600">sixty-five on your behalf through...so you can do things like...to their directory to look at</p>
+      <p begin="00:05:24.600" end="00:05:29.330">...management hierarchy see who their direct reports are a stewart groups are member of</p>
+      <p begin="00:05:29.330" end="00:05:33.900">...condo exchange to get their calendar and see if there free are busy at this time rc what meetings</p>
+      <p begin="00:05:33.900" end="00:05:36.380">...or what location are coming from and going to</p>
+      <p begin="00:05:36.380" end="00:05:39.630">...more intelligent apps as result we've had some integration with</p>
+      <p begin="00:05:39.630" end="00:05:43.360">as director directory with exchange was sharepoint with one drive for business for a</p>
+      <p begin="00:05:43.360" end="00:05:48.980">little while we have new integration very recent and I'll talk about all the...run agree with the</p>
+      <p begin="00:05:48.980" end="00:05:53.300">amr and one node api as well so you can now use interactive directly to sign into those api</p>
+      <p begin="00:05:53.300" end="00:05:58.600">...and you can use it from any sort of application whether you're building a device application</p>
+      <p begin="00:05:58.600" end="00:06:02.950">we're building a web application we now support...and the odf implicit flown</p>
+      <p begin="00:06:02.950" end="00:06:08.240">to allow you to build single page apps so directly from html you can call these office three sixty-five api</p>
+      <p begin="00:06:08.240" end="00:06:13.000">...users and we also support service apps all the office we sixty-five api</p>
+      <p begin="00:06:13.000" end="00:06:17.660">measure active directory now support app authentication apple only...</p>
+      <p begin="00:06:17.660" end="00:06:22.170">credentials flow you can have a service application like a demon process that runs</p>
+      <p begin="00:06:22.170" end="00:06:27.000">...does say management operations on everybody'semail mailbox overnight or</p>
+      <p begin="00:06:27.000" end="00:06:31.850">does operations like provisioning that require hire user privileges and wouldnt be doable by an</p>
+      <p begin="00:06:31.850" end="00:06:37.830">end-user typically a and all this stuff is available whether you're connecting directly with a company</p>
+      <p begin="00:06:37.830" end="00:06:40.760">...administrator if you have an application your building that you sell</p>
+      <p begin="00:06:40.760" end="00:06:44.570">...it department and they acquire it they can give your app access to all of the</p>
+      <p begin="00:06:44.570" end="00:06:47.680">organizations content on behalf of all of its users all at once</p>
+      <p begin="00:06:47.680" end="00:06:52.150">throughout and consent or if you actually engage with end-users directly and uone</p>
+      <p begin="00:06:52.150" end="00:06:54.170">...end-user...organization to adopter out</p>
+      <p begin="00:06:54.170" end="00:06:58.840">they can individually consent access to their own services they can let you sign them in</p>
+      <p begin="00:06:58.840" end="00:07:03.480">...their ten admins approval of course tenements can decide they want to turn that feature off</p>
+      <p begin="00:07:03.480" end="00:07:06.590">but the vast majority of tenants do not of the feature off</p>
+      <p begin="00:07:06.590" end="00:07:11.190">and use can turn that on as well and it's all based on secure standard protocols</p>
+      <p begin="00:07:11.190" end="00:07:13.620">open id connector authentication for that single sign</p>
+      <p begin="00:07:13.620" end="00:07:17.800">...peace and o off to for access to those resourcesand,</p>
+      <p begin="00:07:17.800" end="00:07:21.170">this protocol has a ton of advantages I'm sure you're pretty familiar with but just to give</p>
+      <p begin="00:07:21.170" end="00:07:23.540">aac really quick recap it doesn't require</p>
+      <p begin="00:07:23.540" end="00:07:28.290">...application capture user credentials great that you don't have to type in</p>
+      <p begin="00:07:28.290" end="00:07:29.610">...the application and</p>
+      <p begin="00:07:29.610" end="00:07:34.440">your application doesn't have to try and store that securely and gives you fine-grain access so the app</p>
+      <p begin="00:07:34.440" end="00:07:38.290">...ask for exactly what it wants to access and only gets access to adjuster</p>
+      <p begin="00:07:38.290" end="00:07:43.240">calendar not everything of access to so if you're ten administrator can't suddenly start</p>
+      <p begin="00:07:43.240" end="00:07:47.810">leaving your directory or something like that just because you happen to start using this application</p>
+      <p begin="00:07:47.810" end="00:07:51.930">a and supports a bunch of offload...users that are really important for organizations</p>
+      <p begin="00:07:51.930" end="00:07:55.390">in the enterprise so multi factor authentication and federated sign</p>
+      <p begin="00:07:55.390" end="00:07:59.840">...on premises identity providers all that stuff is kind of...transparently as</p>
+      <p begin="00:07:59.840" end="00:08:04.730">parties protocols as you'll see in just a minute then it gives you long-term accesses api is if</p>
+      <p begin="00:08:04.730" end="00:08:08.180">...user hasn't revoke your apps access you can use a</p>
+      <p begin="00:08:08.180" end="00:08:11.670">refresh token to access their services on their behalf even when they're</p>
+      <p begin="00:08:11.670" end="00:08:16.610">not interactively using your app and do smart for smart things for them while they're asleep send them summary</p>
+      <p begin="00:08:16.610" end="00:08:22.850">emails send them intelligent things based on changes in their data so, you've got a ton of features here for how</p>
+      <p begin="00:08:22.850" end="00:08:28.600">...directory ads a ton of value when you're interacting with office we sixty-five api</p>
+      <p begin="00:08:28.600" end="00:08:32.490">So, I'm actually going to do is go through the details of the protocol flow we're going to</p>
+      <p begin="00:08:32.490" end="00:08:36.240">go through how open id connect and off work in the context</p>
+      <p begin="00:08:36.240" end="00:08:40.550">...directory...office we sixty-five...diagram and I'm actually going to go</p>
+      <p begin="00:08:40.550" end="00:08:44.590">through by hand...this is a quick flow diagram on the left-hand side you'll see</p>
+      <p begin="00:08:44.590" end="00:08:49.450">your application on the right-hand side there's an office...sixty-five api want to call so you want to get</p>
+      <p begin="00:08:49.450" end="00:08:54.080">a users exchange calendar the middle there's a couple of endpoints in as</p>
+      <p begin="00:08:54.080" end="00:08:58.960">you're active directory the authorization endpoint...the token...we use a pretty typical author</p>
+      <p begin="00:08:58.960" end="00:09:02.930">...connect flow in order to do this so first thing application does is</p>
+      <p begin="00:09:02.930" end="00:09:07.250">it requests on authorization code from that authorization and point inside</p>
+      <p begin="00:09:07.250" end="00:09:11.860">...directory and the other...employee you can kind of think of as a web page is a</p>
+      <p begin="00:09:11.860" end="00:09:14.470">web page that the app is going to send the user to either</p>
+      <p begin="00:09:14.470" end="00:09:18.810">in a browser window or through a browser redirect or it's going to use a web browser control in</p>
+      <p begin="00:09:18.810" end="00:09:22.200">a native app is going to send the user to that authorization endpoint</p>
+      <p begin="00:09:22.200" end="00:09:27.190">web page and that's where you see that prototypical off-screen that says hey you want to give the app</p>
+      <p begin="00:09:27.190" end="00:09:31.840">access to this stuff you want to let it access your mail you want to let it reader files</p>
+      <p begin="00:09:31.840" end="00:09:37.080">a and the at...user gets an opportunity to say yes or no the user says yes</p>
+      <p begin="00:09:37.080" end="00:09:41.120">the authorization endpoint returns what's called...authorization code to your application</p>
+      <p begin="00:09:41.120" end="00:09:44.650">...authorization code signifies...app has given your app access</p>
+      <p begin="00:09:44.650" end="00:09:48.300">to the user has given europe access to that stuff.</p>
+      <p begin="00:09:48.300" end="00:09:52.850">The application...around and makes a web service call to the token endpoint</p>
+      <p begin="00:09:52.850" end="00:09:58.310">...sends that authorization code...up the user gave me access of this stuff and the token endpoints web</p>
+      <p begin="00:09:58.310" end="00:10:03.180">service returns a bunch of tokens returns...id token</p>
+      <p begin="00:10:03.180" end="00:10:07.510">and access token and a refresh token and if you're doing just single sign on</p>
+      <p begin="00:10:07.510" end="00:10:11.790">an open id connect...token is where you can stop that I d token has</p>
+      <p begin="00:10:11.790" end="00:10:16.750">...identity it'll give you profile information if you've got permission to get their name you can</p>
+      <p begin="00:10:16.750" end="00:10:21.100">tell and hello rob you now sign in with your account we've got your user profile</p>
+      <p begin="00:10:21.100" end="00:10:26.300">...we now understand who you are if you want to continue in access services on their behalf when</p>
+      <p begin="00:10:26.300" end="00:10:30.320">you take that access token and...that access token to call the office</p>
+      <p begin="00:10:30.320" end="00:10:34.560">three sixty-five api just like you would any other web service api</p>
+      <p begin="00:10:34.560" end="00:10:39.810">so a pretty simple straightforward offload...connect flow let's actually go and see</p>
+      <p begin="00:10:39.810" end="00:10:43.540">...action so I'm going to go through and we're going to do the whole thing from scratch without</p>
+      <p begin="00:10:43.540" end="00:10:46.490">any libraries without any code we're just going to do it in the browser</p>
+      <p begin="00:10:46.490" end="00:10:52.430">and with a bunch of kind of tool so you can see the request back and forth.</p>
+      <p begin="00:10:52.430" end="00:10:56.950">This is exhausting for you ready.</p>
+      <p begin="00:10:56.950" end="00:10:57.520">Okay,</p>
+      <p begin="00:10:57.520" end="00:11:02.290">so, actually going to start in office we sixty-five this is the admin portal if you haven't seen it</p>
+      <p begin="00:11:02.290" end="00:11:06.560">of reason I start here is because I am...administrator and office we sixty-five tenant</p>
+      <p begin="00:11:06.560" end="00:11:10.330">it's very creatively called robs developer tenant remember the name it's hard</p>
+      <p begin="00:11:10.330" end="00:11:13.840">to remember a and robs developer tenant is an office</p>
+      <p begin="00:11:13.840" end="00:11:18.760">we sixty-five tenant but when I created it under the covers we created measure active directory</p>
+      <p begin="00:11:18.760" end="00:11:23.230">...to store all of its users in groups and applications as you'll see if I go,</p>
+      <p begin="00:11:23.230" end="00:11:27.090">for example, to this...I look at the active...you can</p>
+      <p begin="00:11:27.090" end="00:11:31.340">see list of users you can see groups here and this allows me</p>
+      <p begin="00:11:31.340" end="00:11:35.950">...create manage the groups inside of my portal and, you also see</p>
+      <p begin="00:11:35.950" end="00:11:39.990">listing here down to a link to adjective directories management portal</p>
+      <p begin="00:11:39.990" end="00:11:44.940">...switch over to that management portal you can see a directory name the same thing as that office</p>
+      <p begin="00:11:44.940" end="00:11:50.590">three sixty five organization robs developer tenet and you can see if I go to the user tab, for example,</p>
+      <p begin="00:11:50.590" end="00:11:55.150">that you'll see the exact same list of users that were in the office them so if I create a</p>
+      <p begin="00:11:55.150" end="00:12:00.010">user here you'll see in office of...create a user and office you'll see it here same for groups</p>
+      <p begin="00:12:00.010" end="00:12:04.470">a so this is really the underlying directory for office even though as an office</p>
+      <p begin="00:12:04.470" end="00:12:09.130">and you may not actually interact with a very often if I want to manage applications</p>
+      <p begin="00:12:09.130" end="00:12:12.230">on experience for that in the office of in portal to go to the...</p>
+      <p begin="00:12:12.230" end="00:12:16.970">active directory portal and go to the applications tab when you start when you first</p>
+      <p begin="00:12:16.970" end="00:12:22.440">...in here with an office we sixty-five...you're probably just see a couple of apps in here</p>
+      <p begin="00:12:22.440" end="00:12:25.510">if filter for office we sixty-five you can see office</p>
+      <p begin="00:12:25.510" end="00:12:29.800">...sixty-five exchange online and office three sixty five sharepoint online those are probably</p>
+      <p begin="00:12:29.800" end="00:12:35.330">be the only to you may have a couple more depending on what you've done...you can see that are actually published by microsoft</p>
+      <p begin="00:12:35.330" end="00:12:40.260">corporation these are the core apps that model sharepoint in exchange for off purposes</p>
+      <p begin="00:12:40.260" end="00:12:45.190">...all the same way...will be you can see is an admin I get to manage not only the apps that</p>
+      <p begin="00:12:45.190" end="00:12:48.570">I'm creating my organization but any apps that have access to data</p>
+      <p begin="00:12:48.570" end="00:12:53.390">inside of my organization or that are being used inside of my...if I want to create a new one</p>
+      <p begin="00:12:53.390" end="00:12:56.660">just go to add can choose to add something from a gallery that somebody</p>
+      <p begin="00:12:56.660" end="00:13:01.870">else is produced but I'm actually at one of my organization is creating...to call</p>
+      <p begin="00:13:01.870" end="00:13:07.720">...demo twenty fifteen I can choose whether I want to do a web</p>
+      <p begin="00:13:07.720" end="00:13:12.840">application or native client application choose web application...requires a couple more...I get to explain</p>
+      <p begin="00:13:12.840" end="00:13:18.170">all more there's the sign on url which is a pretty simple straightforward thing I'm creating</p>
+      <p begin="00:13:18.170" end="00:13:22.910">a web application this is...the url we're going to sign in so I'm just going to do http</p>
+      <p begin="00:13:22.910" end="00:13:28.060">gone slash made up website I used actually say that may...website</p>
+      <p begin="00:13:28.060" end="00:13:33.050">...register domain but then I actually gave its okwesa that and somebody in the audience during my talk one</p>
+      <p begin="00:13:33.050" end="00:13:37.370">registered the domain so it's actually register now we're still no real website there so</p>
+      <p begin="00:13:37.370" end="00:13:42.880">you sears we go...but that's okay a and as I...is app id uri which this one's a little unfortunate</p>
+      <p begin="00:13:42.880" end="00:13:46.370">...you're active directory supports a ton of different protocols like</p>
+      <p begin="00:13:46.370" end="00:13:50.420">...and several p and a whole bunch of things that are much more complicated than often</p>
+      <p begin="00:13:50.420" end="00:13:53.890">...and authors and actually use this but,</p>
+      <p begin="00:13:53.890" end="00:13:59.180">for right now we still ask you for it so policies about that we'll get that fixed very soon but,</p>
+      <p begin="00:13:59.180" end="00:14:03.450">the strategy to use here is you need a unique ui and you need one that's a</p>
+      <p begin="00:14:03.450" end="00:14:04.970">register domain so</p>
+      <p begin="00:14:04.970" end="00:14:09.230">...I created this office...sixty-five ten I called it junction the user names are like junction</p>
+      <p begin="00:14:09.230" end="00:14:13.040">...microsoft-dot-com going to use that as the domain so they get</p>
+      <p begin="00:14:13.040" end="00:14:19.640">a register domain and then I'm just going to put something unique afterwards it doesn't really matter I'm actually going to</p>
+      <p begin="00:14:19.640" end="00:14:27.300">users for off...I'm going to verify that this is actually unique first.</p>
+      <p begin="00:14:27.300" end="00:14:32.610">Surely that's unique.</p>
+      <p begin="00:14:32.610" end="00:14:35.930">Hopefully I didn't lose internet.</p>
+      <p begin="00:14:35.930" end="00:14:43.070">...can impending.</p>
+      <p begin="00:14:43.070" end="00:14:53.720">There...try and change it.</p>
+      <p begin="00:14:53.720" end="00:14:56.630">All right so complete so created this application it's going to go</p>
+      <p begin="00:14:56.630" end="00:15:01.690">...provision a new application inside of my directory.</p>
+      <p begin="00:15:01.690" end="00:15:08.820">Come on, network and even on the wired network.</p>
+      <p begin="00:15:08.820" end="00:15:11.500">We'll see when this comes up is...have a configuration</p>
+      <p begin="00:15:11.500" end="00:15:16.770">tabs so I can look at all the properties my application I can see things like...name for the application</p>
+      <p begin="00:15:16.770" end="00:15:19.830">assign on url I can see a logo for that I can replace.</p>
+      <p begin="00:15:21.070" end="00:15:32.480">I can configure all that stuff from inside...directory open another...in case.</p>
+      <p begin="00:15:32.480" end="00:15:37.270">Very ok so...the configure tab you can see build demo twenty fifteen as</p>
+      <p begin="00:15:37.270" end="00:15:41.860">the name you can see that sign on url you can see the logo that we can replace I can configure whether</p>
+      <p begin="00:15:41.860" end="00:15:46.920">or not the application is multi tenet...leave that as no for right now but I'm actually going to have to come back</p>
+      <p begin="00:15:46.920" end="00:15:51.780">...just a minute I'll explain in more detail you can see clients id this is sort of like the user</p>
+      <p begin="00:15:51.780" end="00:15:56.470">name for the application so that uniquely identifies my application along the protocol</p>
+      <p begin="00:15:56.470" end="00:16:00.470">...you can see keys this is kind of like a password from application and ask</p>
+      <p begin="00:16:00.470" end="00:16:04.790">the create a new one it won't show which means I had save which is a little bit annoying but</p>
+      <p begin="00:16:04.790" end="00:16:08.490">I can deal with it the next thing I'll see is that by</p>
+      <p begin="00:16:08.490" end="00:16:13.380">the uri we already talked about and then the reply url and the reply url is if you think back</p>
+      <p begin="00:16:13.380" end="00:16:18.570">...diagram...to the authorization endpoint the user said yes I want to give you stuff and we sent</p>
+      <p begin="00:16:18.570" end="00:16:21.580">back and off code enough that authorization code</p>
+      <p begin="00:16:21.580" end="00:16:25.565">reply url is where we're going to send that authorization code so I'm going</p>
+      <p begin="00:16:25.565" end="00:16:30.500">to keep this is made up website dot com I could put a path behind...if I want to specific page on meta website dot</p>
+      <p begin="00:16:30.500" end="00:16:34.290">com but the website is made up so it doesn't exist...have a path so we'll just leave it</p>
+      <p begin="00:16:34.290" end="00:16:39.850">is that a and then the most interesting thing down here is permissions to other applications and this is</p>
+      <p begin="00:16:39.850" end="00:16:44.760">where I say that my app wants to do single sign on that once access to...business that</p>
+      <p begin="00:16:44.760" end="00:16:49.770">wants access to exchange online...and I do that by defaultmy permissions</p>
+      <p begin="00:16:49.770" end="00:16:54.500">our to windows...directory just to do single sign on and read the user's profile so basically</p>
+      <p begin="00:16:54.500" end="00:16:59.240">just to do that open id connect part but I can also add applications and you'll see a bunch of</p>
+      <p begin="00:16:59.240" end="00:17:03.810">applications from microsoft here you can see exchange online you can see sharepoint online you can</p>
+      <p begin="00:17:03.810" end="00:17:08.460">cone note now you can see our bytheir bunch more that you'll see depending</p>
+      <p begin="00:17:08.460" end="00:17:12.020">...being used in your tenant you can even create custom applications</p>
+      <p begin="00:17:12.020" end="00:17:16.680">and exposure permissions that way so there's not just microsoft applications for now logistic</p>
+      <p begin="00:17:16.680" end="00:17:19.700">...sharepoint online exchange online for each one of those you</p>
+      <p begin="00:17:19.700" end="00:17:24.310">can configure the delegated permissions user permissions that you want to ask users for so I</p>
+      <p begin="00:17:24.310" end="00:17:29.110">want to say, for example, a I want to be able to read and write contacts or read and write calendars or send</p>
+      <p begin="00:17:29.110" end="00:17:31.460">mails user reading...user</p>
+      <p begin="00:17:32.990" end="00:17:37.280">...there's a bunch...in their around running searches reading and writing their files and</p>
+      <p begin="00:17:37.280" end="00:17:40.130">wonder for business we have a bunch of new scopes that</p>
+      <p begin="00:17:40.130" end="00:17:45.130">actually just ship this week for a bunch of sharepoint workloads like management...and user profiles</p>
+      <p begin="00:17:45.130" end="00:17:51.030">and search...you can add those as well so those are the delegated permissions also explain</p>
+      <p begin="00:17:51.030" end="00:17:55.660">...quick the application permissions application permissions or for those service application</p>
+      <p begin="00:17:55.660" end="00:18:00.440">scenarios I was talking about where I have ca demon app that runs on a regular basis and</p>
+      <p begin="00:18:00.440" end="00:18:05.340">does maintenance tasks are goes and does provisioning or does smart things in the middle-of-the-night for all the users in</p>
+      <p begin="00:18:05.340" end="00:18:06.580">organization</p>
+      <p begin="00:18:06.580" end="00:18:11.580">a and these aren't on behalf of particular user they're not delegated by user they</p>
+      <p begin="00:18:11.580" end="00:18:16.420">are application permissions that are called directly by the application so I can also give applications permission</p>
+      <p begin="00:18:16.420" end="00:18:21.900">that way and exchange and sharepoint measure active directory all now support that right so</p>
+      <p begin="00:18:21.900" end="00:18:25.400">...configure my permissions or go ahead and it...</p>
+      <p begin="00:18:25.400" end="00:18:30.250">It's...a second ago and create that...creating that I'll show you this dialog here if you click</p>
+      <p begin="00:18:30.250" end="00:18:34.370">view endpoints in the bottom you get this handy dialogue...shows you a bunch of different protocol</p>
+      <p begin="00:18:34.370" end="00:18:39.310">I'm points you stuff like...fed and sample p and a bunch of really complicated</p>
+      <p begin="00:18:39.310" end="00:18:44.690">protocols...bottom you'll see two things that hopefully sound familiar off to authorization endpoint and off</p>
+      <p begin="00:18:44.690" end="00:18:50.610">to token endpoint so, you saw those two lines in the first diagram I can take</p>
+      <p begin="00:18:50.610" end="00:18:55.490">those and I can use those as the basis for my protocol flume one thing you'll see here is that</p>
+      <p begin="00:18:55.490" end="00:19:00.180">in the urls they actually have a guid is the second segment for the url that's</p>
+      <p begin="00:19:00.180" end="00:19:05.010">the tenant url this eight nine...ad for thing that's the</p>
+      <p begin="00:19:05.010" end="00:19:09.470">tenant url I actually a little scratched right here where I have authorization...point in the</p>
+      <p begin="00:19:09.470" end="00:19:14.340">token endpoint instead of the guid I'm using common and common works for</p>
+      <p begin="00:19:14.340" end="00:19:19.120">all multi ten application so if I create...app in my robs developer tenant and I want somebody</p>
+      <p begin="00:19:19.120" end="00:19:23.880">...different tend to use it I can use the common and...across all of them.</p>
+      <p begin="00:19:23.880" end="00:19:27.150">All right so this is essentially the same thing I've got authorization</p>
+      <p begin="00:19:27.150" end="00:19:30.980">...commons...go off to slash authorizes the authorization</p>
+      <p begin="00:19:30.980" end="00:19:36.590">...it's got a redirect...which is again the place where...want to send the authorization code</p>
+      <p begin="00:19:36.590" end="00:19:41.340">a response type which tells...what I want back in this case I want to code back there also some flows</p>
+      <p begin="00:19:41.340" end="00:19:46.260">...can ask for token directly if you're doing a web page app a and then I have to tell which clients</p>
+      <p begin="00:19:46.260" end="00:19:51.170">idea...to take that from the...the just saved.</p>
+      <p begin="00:19:51.170" end="00:19:57.230">Copy the client id and come back here and pasted in and then I'm just going to copy and</p>
+      <p begin="00:19:57.230" end="00:20:01.510">paste that into a browser window because remember I said hey this is just a web page authorization</p>
+      <p begin="00:20:01.510" end="00:20:03.600">...just a web page.</p>
+      <p begin="00:20:03.600" end="00:20:08.600">I'm going to encode media window so I'm actually not signed in I actually am signed in</p>
+      <p begin="00:20:08.600" end="00:20:09.100">bummer.</p>
+      <p begin="00:20:10.120" end="00:20:14.310">Me closing coordinator windows.</p>
+      <p begin="00:20:14.310" end="00:20:19.690">Try that again.</p>
+      <p begin="00:20:19.690" end="00:20:23.820">Who not...ok so I'm not sign...it's going to force me to sign in</p>
+      <p begin="00:20:23.820" end="00:20:28.320">first and, I'm actually going to sign in with the user from a different tenant and in fact I'm</p>
+      <p begin="00:20:28.320" end="00:20:32.670">...with my actual microsoft-dot-com account so this is my real microsoft the</p>
+      <p begin="00:20:32.670" end="00:20:37.260">...for work every day...with it for two reasons one because it's in a different</p>
+      <p begin="00:20:37.260" end="00:20:41.930">...from the one...register the app...issue about looks like...because</p>
+      <p begin="00:20:41.930" end="00:20:46.720">msit does this thing that I consider really sadistic annoying which is they require a bunch of extra off</p>
+      <p begin="00:20:46.720" end="00:20:51.520">...I go and sign in a so if I move out of your seo recognizesthis</p>
+      <p begin="00:20:51.520" end="00:20:55.010">tenet requires a whole bunch of extra sign in so they're going to redirect</p>
+      <p begin="00:20:55.010" end="00:20:59.630">...and I have to sign in this is an on premise eighty of us that msit hose</p>
+      <p begin="00:20:59.630" end="00:21:02.950">...sign in with a smart card or if I do a username</p>
+      <p begin="00:21:02.950" end="00:21:08.580">and password like this it's going to tell me a so you actually have to have some</p>
+      <p begin="00:21:08.580" end="00:21:12.890">extra security information and hopefully it's going to call my phone?</p>
+      <p begin="00:21:12.890" end="00:21:17.840">And, then when...my phone after type in a pin in order to finish the authentication</p>
+      <p begin="00:21:17.840" end="00:21:21.440">forget reception here?</p>
+      <p begin="00:21:21.440" end="00:21:23.690">Area hey it's ringing on certain</p>
+      <p begin="00:21:23.690" end="00:21:27.220">...usually don't answer phone calls during my social</p>
+      <p begin="00:21:27.220" end="00:21:30.390">...an exception okay so...my pin there.</p>
+      <p begin="00:21:31.420" end="00:21:33.900">The authentication continues and,</p>
+      <p begin="00:21:33.900" end="00:21:37.340">then...error but years...so I am actually signed in</p>
+      <p begin="00:21:37.340" end="00:21:42.640">...the app actually had no idea that all that other stuff happen all the...redirect all the</p>
+      <p begin="00:21:42.640" end="00:21:47.790">...stuff all that stuff was my it department configured it as an app develop</p>
+      <p begin="00:21:47.790" end="00:21:52.030">...have to do anything to handler so it's one of the great things about often open id connect is</p>
+      <p begin="00:21:52.030" end="00:21:56.250">all that interstitial introduction of all stuff is totally free.</p>
+      <p begin="00:21:56.250" end="00:22:00.370">I didn't get an error though I did...purpose I'll show you a couple of things with this</p>
+      <p begin="00:22:00.370" end="00:22:04.050">...one is that if you try this at home all the copying and pasting and taking</p>
+      <p begin="00:22:04.050" end="00:22:08.770">...from here there you're almost certainly to mess up at least once a I</p>
+      <p begin="00:22:08.770" end="00:22:13.750">will mess up at least once during this demo I'm sure...get an error and the first</p>
+      <p begin="00:22:13.750" end="00:22:18.720">error that you see up here is an end-user facing...and it's not very helpful it says sorry were having trouble saying</p>
+      <p begin="00:22:18.720" end="00:22:22.500">...we received a bad request so it doesn't like the authorization</p>
+      <p begin="00:22:22.500" end="00:22:27.580">endpoint requests I made look down here instead this is the developer facing</p>
+      <p begin="00:22:27.580" end="00:22:31.730">...and this little light great taxed it says application</p>
+      <p begin="00:22:31.730" end="00:22:36.440">with identifier and that guid is the client id for the new app I created</p>
+      <p begin="00:22:36.440" end="00:22:40.600">was not found in the directory and this grid is the grid for the microsoft it</p>
+      <p begin="00:22:40.600" end="00:22:49.330">tenet was telling me I can't find the app that you're trying to sign in within your...</p>
+      <p begin="00:22:49.330" end="00:22:53.670">Multichannel so in when I went back here.</p>
+      <p begin="00:22:53.670" end="00:22:58.330">I can find the page again one here remember I said application is not multi tenant</p>
+      <p begin="00:22:58.330" end="00:23:02.380">...the app in my robs...and I try...be used in microsoft tenant</p>
+      <p begin="00:23:02.380" end="00:23:06.910">...said is not multi tenants...yes and...save to make it multi tenant this</p>
+      <p begin="00:23:06.910" end="00:23:11.770">is a good time to tell you that the adjective directory...eventually consistent model for the directory so</p>
+      <p begin="00:23:11.770" end="00:23:16.700">when you make a change can sometimes take like fifteen twenty seconds...you're doing a demo</p>
+      <p begin="00:23:16.700" end="00:23:21.510">...going to tap dance for a little bit well the whole thing propagates and then we get to make the changes</p>
+      <p begin="00:23:21.510" end="00:23:24.040">...some point you can say okay well it probably is</p>
+      <p begin="00:23:24.040" end="00:23:28.300">...exchanging but if you're doing this and you actually...problem and you try it and make a change</p>
+      <p begin="00:23:28.300" end="00:23:33.100">...doesn't take effect just wait fifteen seconds and try again and, check and see</p>
+      <p begin="00:23:33.100" end="00:23:39.520">...to do this again this time...has we sign then so...should be pretty quick.</p>
+      <p begin="00:23:39.520" end="00:23:43.780">And, hopefully all the changes to make...tenant have propagated.</p>
+      <p begin="00:23:43.780" end="00:23:47.940">Great so now I'm at the actual authorization endpoint this is that consent experience</p>
+      <p begin="00:23:47.940" end="00:23:52.920">were talking about I can see that title my application build demo twenty fifteen I can see the url where</p>
+      <p begin="00:23:52.920" end="00:23:57.330">the applications registered made up website dot com I can see the exact...permissions</p>
+      <p begin="00:23:57.330" end="00:24:01.920">...application is asking for those are all the boxes that I checked out the end user can</p>
+      <p begin="00:24:01.920" end="00:24:06.530">mouse over these boxes to get a little bit more details on what that means I can see who I'm</p>
+      <p begin="00:24:06.530" end="00:24:11.150">sign in as...even more details I can see which organization I'm a part of</p>
+      <p begin="00:24:11.150" end="00:24:16.240">an which organization publish this application that's asking from all this stuff and say well</p>
+      <p begin="00:24:16.240" end="00:24:20.620">robs development and...guy sounds really shady I don't really want to give them access and cancel</p>
+      <p begin="00:24:20.620" end="00:24:24.210">or are...I'm going to in this case...say that...a stand-up guy and I'm</p>
+      <p begin="00:24:24.210" end="00:24:30.440">ahead except first I'm actually going to go over to a tool how many people use fiddler?</p>
+      <p begin="00:24:30.440" end="00:24:33.500">Awesome almost everybody grades so fiddler for the few people</p>
+      <p begin="00:24:33.500" end="00:24:38.310">...use that is a web debugging tool it's spectacular for looking at requests across the wire</p>
+      <p begin="00:24:38.310" end="00:24:41.920">...started capturingbefore I make this except request and I'm going</p>
+      <p begin="00:24:41.920" end="00:24:46.040">to hit except a and remember what's going to happen it's going to create and offload and it's going to</p>
+      <p begin="00:24:46.040" end="00:24:50.440">...to made up website dot com so it looks like a this is a blank website that has</p>
+      <p begin="00:24:50.440" end="00:24:55.740">...register anything I'm going-to go-to for the real quick and stopper capturing the one thing I'll</p>
+      <p begin="00:24:55.740" end="00:25:00.380">point out though is that if you actually look in the query string made up website dot com but you'll see</p>
+      <p begin="00:25:00.380" end="00:25:05.350">this parameter code equals and that's that authorization code this is the thing that says</p>
+      <p begin="00:25:05.350" end="00:25:09.220">...the user just said you can access my office we sixty-five api is</p>
+      <p begin="00:25:09.220" end="00:25:15.660">what authorization code is what I'm going to use...then called the token endpoint right so I'm actually do that</p>
+      <p begin="00:25:15.660" end="00:25:19.010">...back in a fiddler again I can see the request</p>
+      <p begin="00:25:19.010" end="00:25:24.220">...that made up website dot com request here's the code I can look at the so for those</p>
+      <p begin="00:25:24.220" end="00:25:28.350">...these are all the requests that happened while I was in there on the right-hand</p>
+      <p begin="00:25:28.350" end="00:25:32.920">side agency inspectors all kinds of different views on the request and I can see, for example,</p>
+      <p begin="00:25:32.920" end="00:25:34.590">the web forms parameters that were</p>
+      <p begin="00:25:34.590" end="00:25:39.360">sent here's the query string parameter code and its value so I can see that code also sends</p>
+      <p begin="00:25:39.360" end="00:25:44.330">a session state which you can actually round-trip if you send somebody to the authorization and point you can</p>
+      <p begin="00:25:44.330" end="00:25:48.540">set...state and they'll send it back to you so you can keep track and correlate those</p>
+      <p begin="00:25:48.540" end="00:25:54.030">requests if you need to I've got this request...go ahead and remove all the on all of the</p>
+      <p begin="00:25:54.030" end="00:25:57.590">...other sessions in their a anomaly make requests</p>
+      <p begin="00:25:57.590" end="00:26:01.870">...token endpoint to go and get that access token so I've got the token</p>
+      <p begin="00:26:01.870" end="00:26:05.720">endpoint here again the...is bree similarly named instead of common or</p>
+      <p begin="00:26:05.720" end="00:26:10.360">through such authorizes common or to slash token when a copy that guy</p>
+      <p begin="00:26:10.360" end="00:26:15.500">...another feature filler called the composer which lets me create new web trafficand,</p>
+      <p begin="00:26:15.500" end="00:26:16.630">I'm actually going to...in.</p>
+      <p begin="00:26:17.650" end="00:26:21.070">This url for the token endpoint going to get rid of all</p>
+      <p begin="00:26:21.070" end="00:26:25.830">the headers there I'm going to make a post request instead of a get request...I've actually got a post a</p>
+      <p begin="00:26:25.830" end="00:26:31.020">bunch of information about the stuff I have to redeem this token.</p>
+      <p begin="00:26:31.020" end="00:26:32.790">I'm going to take this.</p>
+      <p begin="00:26:32.790" end="00:26:36.520">Placeholder text and show you all the information that I have to sense</p>
+      <p begin="00:26:36.520" end="00:26:40.560">...left the first thing I have to say is what type of proof</p>
+      <p begin="00:26:40.560" end="00:26:45.110">in my showing you that a user gave me a grant the user granted me consent so grant type</p>
+      <p begin="00:26:45.110" end="00:26:50.040">...the first thing in this case I'm going to give it that authorization codes...say authorization code</p>
+      <p begin="00:26:50.040" end="00:26:53.800">after...the redirect...just to make sure that the redirect</p>
+      <p begin="00:26:53.800" end="00:26:59.050">your code was sent to the right uri and that everything matches up from a security perspective I have to give it the</p>
+      <p begin="00:26:59.050" end="00:27:02.680">client id to so which client...go back here.</p>
+      <p begin="00:27:02.680" end="00:27:03.820">And, copy that guy.</p>
+      <p begin="00:27:05.900" end="00:27:08.500">And,...the n.</p>
+      <p begin="00:27:08.500" end="00:27:12.600">And,...I have to go give the client secret one unfortunate thing about the client secret is</p>
+      <p begin="00:27:12.600" end="00:27:16.290">it's not always url safe it's always url encoded</p>
+      <p begin="00:27:16.290" end="00:27:20.940">...you got to do a quick encoding actually one thing I learned preparing for this is that if you just search for url</p>
+      <p begin="00:27:20.940" end="00:27:26.430">encoder on bing actually gives you an inline url encoder...not cool.</p>
+      <p begin="00:27:26.430" end="00:27:30.050">Saw encode this thing grab it can go back to</p>
+      <p begin="00:27:30.050" end="00:27:34.870">...and pace that in as the client secret and then I need that code so go</p>
+      <p begin="00:27:34.870" end="00:27:38.090">back to inspector and copy the code.</p>
+      <p begin="00:27:38.090" end="00:27:42.240">And, pace that guy and then the last thing I need is the resource</p>
+      <p begin="00:27:42.240" end="00:27:47.100">and the resources a little bit special...darker and office we sixty-five that you won't find this in like</p>
+      <p begin="00:27:47.100" end="00:27:51.910">a single service offload like if you're only talking a facebook you don't have the</p>
+      <p begin="00:27:51.910" end="00:27:56.540">...resource...this case we have a bunch of different services that we're talking to</p>
+      <p begin="00:27:56.540" end="00:28:01.200">want to end-user to only cone consent screen...one-off code one</p>
+      <p begin="00:28:01.200" end="00:28:05.970">refresh token we actually have to get different access tokens for the different services want-to talk to-you</p>
+      <p begin="00:28:05.970" end="00:28:10.310">so-if the tell which service I want to go talk to I do that by basically putting a uri</p>
+      <p begin="00:28:10.310" end="00:28:11.820">and here so,</p>
+      <p begin="00:28:11.820" end="00:28:16.250">in this case I'm going to start with a service called the discovery service which I'll talk about just a minute</p>
+      <p begin="00:28:16.250" end="00:28:20.060">it's on api our office dot com slash discovery</p>
+      <p begin="00:28:20.060" end="00:28:23.740">...use that as my resource whether anything right I'm ahead execute?</p>
+      <p begin="00:28:24.850" end="00:28:28.310">...a two hundred response back here and if I look at the</p>
+      <p begin="00:28:28.310" end="00:28:33.120">response I get back a bunch of json...look at the json version of the response I can see a</p>
+      <p begin="00:28:33.120" end="00:28:38.520">little bit cleaner fashion the first I'll talk about is the id token the aidid token is if</p>
+      <p begin="00:28:38.520" end="00:28:42.970">you're doing just doing as a so if you're just doing open id connect this is all you need you describe the</p>
+      <p begin="00:28:42.970" end="00:28:47.940">aidid token you can check the expiration things like that but you grab the id token and you use</p>
+      <p begin="00:28:47.940" end="00:28:53.730">that to sign the user...token is what's called a...token which is how you cj</p>
+      <p begin="00:28:53.730" end="00:28:58.330">...json web token...one of the only...that I know that like the first sentence of the</p>
+      <p begin="00:28:58.330" end="00:29:02.940">...says you pronounce this...guess they're just really didn't want to have like the gift</p>
+      <p begin="00:29:02.940" end="00:29:09.090">version jeff controversies so it's just not swat so I take this gw t token</p>
+      <p begin="00:29:09.090" end="00:29:13.440">...token is a...the foreign coded json string?</p>
+      <p begin="00:29:13.440" end="00:29:16.670">So, if I take this thing and I go and on encode it and,</p>
+      <p begin="00:29:16.670" end="00:29:23.030">there happens to be this handy little draught viewer caleb be dot</p>
+      <p begin="00:29:23.030" end="00:29:24.910">...pace that guy n and</p>
+      <p begin="00:29:24.910" end="00:29:29.140">...remove this id token equals thing from the front they will</p>
+      <p begin="00:29:29.140" end="00:29:33.760">...encode this thing and you'll see inside of it json so very simple</p>
+      <p begin="00:29:33.760" end="00:29:38.580">json like you get back from any other web service that tells me all about who that user is just</p>
+      <p begin="00:29:38.580" end="00:29:40.740">...point out a couple of parameters and caleb be</p>
+      <p begin="00:29:40.740" end="00:29:45.380">net actually will show you all the meaning behind these parameters to if you mouse over them so cool resource</p>
+      <p begin="00:29:45.380" end="00:29:49.820">of audiences the application is tokens intended force is actually the same client</p>
+      <p begin="00:29:49.820" end="00:29:56.230">idea I got back from the measure management portal this is the tenant id that the users from so this is a microsoft</p>
+      <p begin="00:29:56.230" end="00:30:00.970">ten-ninety this is the object id that identifies the user hears my user principle name</p>
+      <p begin="00:30:00.970" end="00:30:05.280">are howard...my given name rob and my family name which is howard</p>
+      <p begin="00:30:05.280" end="00:30:07.130">...actually like a bunch of</p>
+      <p begin="00:30:07.130" end="00:30:11.780">rob howard's at microsoft it's really annoying so I have the specify officeand,</p>
+      <p begin="00:30:11.780" end="00:30:15.910">then you can actually see one other thing that's really cool which is that if I actually have an application that</p>
+      <p begin="00:30:15.910" end="00:30:20.250">...how strong the sign-in was this amr thing is</p>
+      <p begin="00:30:20.250" end="00:30:24.980">the authentication methods reference...a json array of all the methods that were used authenticate</p>
+      <p begin="00:30:24.980" end="00:30:29.860">...so I can cp wd for password and mf a for multi factor off so I can see that</p>
+      <p begin="00:30:29.860" end="00:30:32.230">...user sign in with both of those if I want to do some extra</p>
+      <p begin="00:30:32.230" end="00:30:38.420">authorization say this is a super privilege operation have to be sign in with fa or something all right and,</p>
+      <p begin="00:30:38.420" end="00:30:43.950">I'm done if I'm doing open id connect right I just take the username take the display name and</p>
+      <p begin="00:30:43.950" end="00:30:48.620">...got my application ready to go...open id connect stops</p>
+      <p begin="00:30:49.670" end="00:30:53.500">Just continues on from there we're going to go through that real quick so</p>
+      <p begin="00:30:53.500" end="00:30:57.690">...it uses all the other parameters in here the access token in the refresh...</p>
+      <p begin="00:30:57.690" end="00:31:02.620">in particular and the access token is again the token I take as my app and I send over</p>
+      <p begin="00:31:02.620" end="00:31:08.060">that office we sixty-five api to make a web service call so first...to make as the discovery service and I'm</p>
+      <p begin="00:31:08.060" end="00:31:12.960">going to copy this access token go back to the composer I'm going to make a get requests</p>
+      <p begin="00:31:12.960" end="00:31:15.330">...all this other stuff.</p>
+      <p begin="00:31:15.330" end="00:31:19.220">I'm...to make that get request the discovery service which is that https.</p>
+      <p begin="00:31:19.220" end="00:31:23.110">...slash api dot office dot com slash discovery.</p>
+      <p begin="00:31:24.380" end="00:31:25.820">And, I want to get</p>
+      <p begin="00:31:25.820" end="00:31:30.590">wvu on slash me and all of my services and what this</p>
+      <p begin="00:31:30.590" end="00:31:35.440">endpoint is going to do...going to give me back all of the services that this user</p>
+      <p begin="00:31:35.440" end="00:31:38.220">has the this token gives you access to</p>
+      <p begin="00:31:38.220" end="00:31:43.210">...back all the endpoints all the descriptions of them so things you might have had to do in the past where</p>
+      <p begin="00:31:43.210" end="00:31:47.610">you do things like ask the user where sharepoint site is or where one driver business</p>
+      <p begin="00:31:47.610" end="00:31:51.570">site is you don't have to do that anymore because this discovery services a static url and</p>
+      <p begin="00:31:51.570" end="00:31:56.260">...give you a pointer to all those but I have to give it the access token that I just got</p>
+      <p begin="00:31:56.260" end="00:31:59.920">...the way I do that is an header called authorization I type in the</p>
+      <p begin="00:31:59.920" end="00:32:05.680">string bearer as in this is a bearer token and I give a space and then I just</p>
+      <p begin="00:32:05.680" end="00:32:07.600">...in the access token</p>
+      <p begin="00:32:07.600" end="00:32:12.080">...at home there's this really annoying thing which is every time you copy of the json viewer it will give you the name to</p>
+      <p begin="00:32:12.080" end="00:32:16.070">...to delete access underscore token equals a and I just</p>
+      <p begin="00:32:16.070" end="00:32:20.490">execute and I get a request back from...office dot com and what you'll see</p>
+      <p begin="00:32:20.490" end="00:32:25.390">in here is a bunch of different entries for all the different services that this access token gave me access</p>
+      <p begin="00:32:25.390" end="00:32:30.220">to see capability my files you'll see the service endpoint url as on microsoft</p>
+      <p begin="00:32:30.220" end="00:32:36.030">...my...sharepoint dot...knows me so my application can discover these...runtime</p>
+      <p begin="00:32:36.030" end="00:32:40.470">and doesn't have to know or microsoft tenants here or composers...here...get all</p>
+      <p begin="00:32:40.470" end="00:32:45.520">this stuff at runtime you can see the service and point you are you can see the resource id balance</p>
+      <p begin="00:32:45.520" end="00:32:50.110">from my files here's one for contacts here's one for mail?</p>
+      <p begin="00:32:50.110" end="00:32:54.960">Here's one for calendar of ask for other services like your directory hierarchy then...get one for</p>
+      <p begin="00:32:54.960" end="00:32:58.450">...directory things like that so discovery services probably</p>
+      <p begin="00:32:58.450" end="00:33:03.410">your first stop when you're building a new...signing user in for the first-time to find out world</p>
+      <p begin="00:33:03.410" end="00:33:08.710">their services but actually want to interact with their services in order to go get their data in order</p>
+      <p begin="00:33:08.710" end="00:33:11.430">to go interact with their calendar, for example,</p>
+      <p begin="00:33:11.430" end="00:33:16.670">so, I will instead go back and get a new token remember I have to have</p>
+      <p begin="00:33:16.670" end="00:33:20.230">...an access token that specific to each service of this somehow</p>
+      <p begin="00:33:20.230" end="00:33:24.210">have to ask user for anything I can use the refresh token to go get a new access</p>
+      <p begin="00:33:24.210" end="00:33:29.380">token without asking the user for anything I'm going to start from this token request and I'm going to</p>
+      <p begin="00:33:29.380" end="00:33:34.040">do another feature called replay re issue from composer which just takes that</p>
+      <p begin="00:33:34.040" end="00:33:38.150">request and dumps in the composer...I'm going to make just a little change here</p>
+      <p begin="00:33:38.150" end="00:33:44.440">which is that instead of grants I because authorization code I want refresh token.</p>
+      <p begin="00:33:44.440" end="00:33:49.410">A and instead of the actual code.</p>
+      <p begin="00:33:49.410" end="00:33:50.950">I want.</p>
+      <p begin="00:33:50.950" end="00:33:55.310">To give the refresh tokenso, I can get that from this response</p>
+      <p begin="00:33:55.310" end="00:34:01.140">refresh token equals and just...that right where the code was the last thing I want</p>
+      <p begin="00:34:01.140" end="00:34:04.900">to do is change the resource to point towards the resource,</p>
+      <p begin="00:34:04.900" end="00:34:08.380">resource id for my calendar was outlook the office</p>
+      <p begin="00:34:08.380" end="00:34:11.240">three sixty-five dot com so that</p>
+      <p begin="00:34:11.240" end="00:34:15.690">in a execute again now I'm getting a new access token you can see the access</p>
+      <p begin="00:34:15.690" end="00:34:19.900">token here without asking the user for a new one and I can do that for as long as the</p>
+      <p begin="00:34:19.900" end="00:34:23.300">refresh token is good which is a rolling window of six months so</p>
+      <p begin="00:34:23.300" end="00:34:26.230">...the user is continue using your application you</p>
+      <p begin="00:34:26.230" end="00:34:30.270">can continue to act on their behalf until they say I don't like your app anymore and revoke</p>
+      <p begin="00:34:30.270" end="00:34:36.089">its permission so I think this access token now and start making some calls into office</p>
+      <p begin="00:34:36.089" end="00:34:38.009">we sixty-five...and this is the sort</p>
+      <p begin="00:34:38.009" end="00:34:42.439">of portion when I'm switching from hey we did all the often open id connect stuff now I'm going</p>
+      <p begin="00:34:42.439" end="00:34:46.859">to do a bunch of api stuff but I'm again going to do it at the rest layer I'm just going to show you the</p>
+      <p begin="00:34:46.859" end="00:34:52.859">...directly so I'm going to start off with some basic ones I'm going to do a get requestand,</p>
+      <p begin="00:34:52.859" end="00:34:54.209">I'm going to make it to.</p>
+      <p begin="00:34:55.239" end="00:35:00.179">Outlook dot office we sixty-five dot com which is again where the counter services</p>
+      <p begin="00:35:00.179" end="00:35:05.279">a slash api...I'm going to make the most basic request I can think of</p>
+      <p begin="00:35:05.279" end="00:35:09.789">which is just give me the information about the current user so slash me and</p>
+      <p begin="00:35:09.789" end="00:35:15.599">I'll do authentication authorization bearer.</p>
+      <p begin="00:35:15.599" end="00:35:21.700">And, pace that and again get rid of the actual still going again.</p>
+      <p begin="00:35:21.700" end="00:35:26.100">...execute and...exchanges going to return to me some</p>
+      <p begin="00:35:26.100" end="00:35:29.840">really basic information about the user just through the current user is what...mailbox...</p>
+      <p begin="00:35:29.840" end="00:35:34.730">it is so I have success I have now called my first office we sixty-five api</p>
+      <p begin="00:35:34.730" end="00:35:39.720">and exchange obviously that's kind of a lame one or do some more interesting one so mccall slash</p>
+      <p begin="00:35:39.720" end="00:35:45.170">events me slash events and this is going to give me all of the events on the users default</p>
+      <p begin="00:35:45.170" end="00:35:49.160">...so if I go inside of inspectors you'll see I've</p>
+      <p begin="00:35:49.160" end="00:35:53.560">actually some really simple clean json to get all of the events on the...so you can see</p>
+      <p begin="00:35:53.560" end="00:35:57.630">...event on my calendar here you can see its location here's the display</p>
+      <p begin="00:35:57.630" end="00:36:00.820">...and the conference room you can see the list of attendees</p>
+      <p begin="00:36:00.820" end="00:36:04.100">...their email addresses...you can see the start time and the</p>
+      <p begin="00:36:04.100" end="00:36:09.580">end-time the start time and the subject and</p>
+      <p begin="00:36:09.580" end="00:36:15.030">...so really simple straightforward json the described my calendar I'm in</p>
+      <p begin="00:36:15.030" end="00:36:18.800">an unbounded request so I just ask for all of the events on my calendar so</p>
+      <p begin="00:36:18.800" end="00:36:23.170">...thing you'll see that's also comment all the office...sixty-five api is that if</p>
+      <p begin="00:36:23.170" end="00:36:27.670">we decide hey there's we can give you all the data and one-page you'll see this</p>
+      <p begin="00:36:27.670" end="00:36:32.470">...data dot next link parameter at the top which says there's another page of this data and</p>
+      <p begin="00:36:32.470" end="00:36:37.210">you can continue grabbing more pages if you'd like the rest of the data from the service and all the office</p>
+      <p begin="00:36:37.210" end="00:36:42.810">...sixty-five api behave in that same way so you can count on that same behavior for paging if I want to</p>
+      <p begin="00:36:42.810" end="00:36:47.370">go in here and I want to limit the amount of objects that I get back I can just say I only want</p>
+      <p begin="00:36:47.370" end="00:36:51.660">to top to dollar top equals two and the query string again all the office</p>
+      <p begin="00:36:51.660" end="00:36:55.240">we sixty-five api have the same behavior if I had execute you'll</p>
+      <p begin="00:36:55.240" end="00:37:00.080">...only get back to objects in the response instead of the many objects that I got</p>
+      <p begin="00:37:00.080" end="00:37:05.350">back the other parameters like say I don't really care about all of the metadata there</p>
+      <p begin="00:37:05.350" end="00:37:09.350">was a lot of stuff in...maybe I only care about a few things so</p>
+      <p begin="00:37:09.350" end="00:37:14.120">I can do a dollar select and I can say just give me</p>
+      <p begin="00:37:14.120" end="00:37:17.080">back the id the subject?</p>
+      <p begin="00:37:18.150" end="00:37:22.110">The start and the location...this will actually</p>
+      <p begin="00:37:22.110" end="00:37:26.960">then limit the response to only return all of those fields so</p>
+      <p begin="00:37:26.960" end="00:37:31.290">you see id location start...subject for the two objects that were there so now</p>
+      <p begin="00:37:31.290" end="00:37:35.120">I've limited bites over the wire made it really efficient...the api limited</p>
+      <p begin="00:37:35.120" end="00:37:39.890">the parsing I have to do to pull it back in...and you see those two stack so I have my</p>
+      <p begin="00:37:39.890" end="00:37:45.590">...my dollar top and my dollar select...both as parameters that...going to</p>
+      <p begin="00:37:45.590" end="00:37:51.140">back and I have the selector I can do some more things like that so, for example, a</p>
+      <p begin="00:37:51.140" end="00:37:55.770">say I wanted-to get back only specific objects by filtering them</p>
+      <p begin="00:37:55.770" end="00:38:00.620">so I can do dollar filter and there's a little many filter language that does all kinds of stuff</p>
+      <p begin="00:38:00.620" end="00:38:04.880">like equals greater than less than contains starts with</p>
+      <p begin="00:38:04.880" end="00:38:10.000">...and I'm going to just...do a simple one rama say filter where the subject</p>
+      <p begin="00:38:10.000" end="00:38:14.460">I have to encode this eq for equals and,</p>
+      <p begin="00:38:14.460" end="00:38:16.150">I'll just say.</p>
+      <p begin="00:38:16.150" end="00:38:19.870">Soccer game.</p>
+      <p begin="00:38:19.870" end="00:38:24.720">I'm a lover of soccer so I have a few these on my calendar and all</p>
+      <p begin="00:38:24.720" end="00:38:28.880">...execute there's well...one as the parser a little bit more stuff so it takes a little bit</p>
+      <p begin="00:38:28.880" end="00:38:33.210">more time but then you see I get back just appointments that include the</p>
+      <p begin="00:38:33.210" end="00:38:37.970">have a subject of soccer game and then the last one I'll show you is for this thing is</p>
+      <p begin="00:38:37.970" end="00:38:41.380">...can also order those so if you look at this request a I have a</p>
+      <p begin="00:38:41.380" end="00:38:46.440">soccer game from like last week or actually from monday...a soccer game from</p>
+      <p begin="00:38:46.440" end="00:38:53.100">twenty-nine I actually like them in chronological order so I'll go back to the composer.</p>
+      <p begin="00:38:53.100" end="00:38:59.990">I clicked and inspector that's going to crash no.</p>
+      <p begin="00:38:59.990" end="00:39:10.430">Question fingers everybody hold your breath.</p>
+      <p begin="00:39:10.430" end="00:39:13.500">So, what I'm going to do in this comes back is I'm going to go back to composer and I'm going</p>
+      <p begin="00:39:13.500" end="00:39:18.410">to add dollar order by to the query string parameter...I'm just going to say dollar order by</p>
+      <p begin="00:39:18.410" end="00:39:23.260">equal start and then it will order all the responses by that start field and I can do a common</p>
+      <p begin="00:39:23.260" end="00:39:28.090">delimited list of our or by multiple and I can specify whether I want them to be ascending</p>
+      <p begin="00:39:28.090" end="00:39:35.780">or descending again...back okay so I'll go back here and do?</p>
+      <p begin="00:39:35.780" end="00:39:37.020">Dollar order.</p>
+      <p begin="00:39:38.420" end="00:39:42.150">By equals start and,</p>
+      <p begin="00:39:42.150" end="00:39:46.330">it execute...and then you'll see I get back actually a game from</p>
+      <p begin="00:39:46.330" end="00:39:51.400">twenty-seven again from twenty-nine in the order that they were on my calendar so,</p>
+      <p begin="00:39:51.400" end="00:39:55.700">all of those things all those query string parameters is one of the nice consistent things about all these office</p>
+      <p begin="00:39:55.700" end="00:40:00.840">we sixty-five api if they support that functionality they supported through those same mechanisms</p>
+      <p begin="00:40:00.840" end="00:40:05.600">...or filter dollar order by dollar top use off the same way you access</p>
+      <p begin="00:40:05.600" end="00:40:07.660">...access tokens the same way that</p>
+      <p begin="00:40:07.660" end="00:40:11.700">functionally works across a variety of services just a couple of</p>
+      <p begin="00:40:11.700" end="00:40:16.940">other real quick things I'll show you so these services aren't just for reading data are</p>
+      <p begin="00:40:16.940" end="00:40:22.790">also for writing data so I'm actually going to go and show you my calendar real quick.</p>
+      <p begin="00:40:22.790" end="00:40:25.500">Someone login obviously sixty-five.</p>
+      <p begin="00:40:25.500" end="00:40:35.880">I'm going to switch over.</p>
+      <p begin="00:40:35.880" end="00:40:44.930">Switch over my calendar.</p>
+      <p begin="00:40:44.930" end="00:40:49.920">you can see today so we're on wednesday april nineteenth for those you</p>
+      <p begin="00:40:49.920" end="00:40:54.880">are familiar aren't familiar with our rest api typically work I've been doing a bunch of get requests on</p>
+      <p begin="00:40:54.880" end="00:40:59.380">the events collectionso, get on me slash events and</p>
+      <p begin="00:40:59.380" end="00:41:03.930">...get request on events usually means say get me all the things that are in the events collection</p>
+      <p begin="00:41:03.930" end="00:41:08.740">...another should be verb called post if you post to a collection...usually means</p>
+      <p begin="00:41:08.740" end="00:41:13.060">add another item to this collection so if I want to add a new event</p>
+      <p begin="00:41:13.060" end="00:41:17.490">...I would typically do it by doing a post events after-thought what type of content amount of</p>
+      <p begin="00:41:17.490" end="00:41:21.930">post sources a megabyte just some simple json and,</p>
+      <p begin="00:41:21.930" end="00:41:26.980">then adding to is really simple so I just create a json body or do subject?</p>
+      <p begin="00:41:28.260" end="00:41:30.030">And, I'll do start.</p>
+      <p begin="00:41:30.030" end="00:41:32.740">Of the type this...utc so let's</p>
+      <p begin="00:41:32.740" end="00:41:36.590">...my date math is okay you guys can check me</p>
+      <p begin="00:41:36.590" end="00:41:40.130">...and minus eight so.</p>
+      <p begin="00:41:40.130" end="00:41:44.640">We're in sixteen.</p>
+      <p begin="00:41:44.640" end="00:41:47.190">Yeah, good call start thanks</p>
+      <p begin="00:41:47.190" end="00:41:51.700">and user good you're really paying attention thank you.</p>
+      <p begin="00:41:51.700" end="00:41:56.890">So, somebody somewhere close to this time I think it's a little earlier ...and I'll do</p>
+      <p begin="00:41:56.890" end="00:42:03.080">...just an hour later...twenty-nine...</p>
+      <p begin="00:42:03.080" end="00:42:09.010">Twenty-three fifty-five since I don't think...let me do twenty-four.</p>
+      <p begin="00:42:09.010" end="00:42:09.440">Okay,</p>
+      <p begin="00:42:09.440" end="00:42:14.250">and, then I'll just sit execute...of a format everything right I should get back</p>
+      <p begin="00:42:14.250" end="00:42:18.750">to a one which is a shun figure http response for created a and</p>
+      <p begin="00:42:18.750" end="00:42:20.830">then I should see.</p>
+      <p begin="00:42:20.830" end="00:42:23.950">On this calendar.</p>
+      <p begin="00:42:23.950" end="00:42:28.390">In just a moment a new appointment called test show up...did all the</p>
+      <p begin="00:42:28.390" end="00:42:47.410">...math right.</p>
+      <p begin="00:42:47.410" end="00:42:52.130">So, there's my testappointment so obviously I can do reads I can do</p>
+      <p begin="00:42:52.130" end="00:42:57.230">rights...with a whole bunch of very robust functionality...go back real quick to the</p>
+      <p begin="00:42:57.230" end="00:43:02.230">slides and...a lot of demo hopefully they gave you a good solid idea what's going on</p>
+      <p begin="00:43:02.230" end="00:43:06.980">behind the scenes what's going on in the protocols just a quick review of the stuff you</p>
+      <p begin="00:43:06.980" end="00:43:12.110">saw the first part of discovering services using that discovery service again that's api</p>
+      <p begin="00:43:12.110" end="00:43:16.330">about office dot com slash discovery tells you where all the services you have access</p>
+      <p begin="00:43:16.330" end="00:43:21.570">art uses that same measure direct active directory authenticationyou saw the office</p>
+      <p begin="00:43:21.570" end="00:43:25.350">...sixty-five api is...simple restdata service api is</p>
+      <p begin="00:43:25.350" end="00:43:29.420">...a bunch of consistent behavior they authenticate the same way you use...same sort of</p>
+      <p begin="00:43:29.420" end="00:43:34.100">query string parameters they have the same sort of json encoding across them you can find all of their</p>
+      <p begin="00:43:34.100" end="00:43:37.910">urls to discovery and you can because they're just using standard</p>
+      <p begin="00:43:37.910" end="00:43:41.570">off and open id connect and rest you can use them from any sort</p>
+      <p begin="00:43:41.570" end="00:43:47.150">of application whether it's web advice on any platform or any sort of service application that...building</p>
+      <p begin="00:43:47.150" end="00:43:51.750">...a bunch of different pieces of functionality...sixty-five api is this isn't even</p>
+      <p begin="00:43:51.750" end="00:43:56.020">really super complete but this will give you a good summary and almost all of these on</p>
+      <p begin="00:43:56.020" end="00:43:59.850">the slide actually have a dedicated session this week to talk about them so if you want</p>
+      <p begin="00:43:59.850" end="00:44:03.600">to see the nitty-gritty details of any one of these particular ones got as ready</p>
+      <p begin="00:44:03.600" end="00:44:07.490">...stuff I think that one unfortunate was like last...quan did some stuff on</p>
+      <p begin="00:44:08.530" end="00:44:11.940">...exchange online of...going to do a session</p>
+      <p begin="00:44:11.940" end="00:44:16.520">on outlook dot com api is...counter contact there there's a bunch of</p>
+      <p begin="00:44:16.520" end="00:44:20.330">sessions on sharepoint listen libraries and searching user profile</p>
+      <p begin="00:44:20.330" end="00:44:25.670">...gregg in the back of the rooms doing something on friday about one drive-in</p>
+      <p begin="00:44:25.670" end="00:44:30.370">...for business they even have a conversion api that works the same for consumers and organizations to get</p>
+      <p begin="00:44:30.370" end="00:44:35.000">users files and folders...is doing one-on-one note a so</p>
+      <p begin="00:44:35.000" end="00:44:40.300">you can use the same audrey sixty-five api is to look at people's notes...their notebooks</p>
+      <p begin="00:44:40.300" end="00:44:45.390">the yam are has now support for...directory authentication the video portal api</p>
+      <p begin="00:44:45.390" end="00:44:49.560">...which is new kind of enterprise youtube thing for managing videos...set</p>
+      <p begin="00:44:49.560" end="00:44:54.160">...video api...an this new unify groups infrastructure which you may have started to hear about which is a</p>
+      <p begin="00:44:54.160" end="00:44:59.040">new collaboration infrastructure for collaborating across boundaries with a single group of people in office</p>
+      <p begin="00:44:59.040" end="00:45:02.730">...sixty-five also has a set of api...available through this unify</p>
+      <p begin="00:45:02.730" end="00:45:07.580">...point you may have heard about I'll talk about more...second if you want to know the nitty-gritty</p>
+      <p begin="00:45:07.580" end="00:45:12.430">details I definitely check out our office we sixty-five rest api reference I know in the past a bunch of</p>
+      <p begin="00:45:12.430" end="00:45:17.800">our rest api references been pretty crummy if you actually go and check this out it's pretty good</p>
+      <p begin="00:45:17.800" end="00:45:23.720">there's actually even some things where you can there's always room for us to improve I'm sure but if you go</p>
+      <p begin="00:45:23.720" end="00:45:25.390">and check it out you can actually look at the api</p>
+      <p begin="00:45:25.390" end="00:45:29.270">reference you can go and dive into specific api so say I want to</p>
+      <p begin="00:45:29.270" end="00:45:34.230">look at the outlook mail rest api a I can do things like look at all the different operations</p>
+      <p begin="00:45:34.230" end="00:45:39.040">supports I can click on one like get a message and I can see the urls I can</p>
+      <p begin="00:45:39.040" end="00:45:42.710">see sample requests even change parameters and say hey I want to look at the</p>
+      <p begin="00:45:42.710" end="00:45:47.420">inbox I can hit try and it will in the browser make requests to a sample tenet without</p>
+      <p begin="00:45:47.420" end="00:45:52.080">me even signing in and show you what the requesting response looks like so some pretty saw</p>
+      <p begin="00:45:53.180" end="00:45:57.320">...covers pretty much all of the office we sixty-five...guys that I have...so,</p>
+      <p begin="00:45:57.320" end="00:46:02.010">go back and show you that url again this is definitely the url...any to if you</p>
+      <p begin="00:46:02.010" end="00:46:08.780">want to look at the details of all the different office three sixty five api is that we support.</p>
+      <p begin="00:46:08.780" end="00:46:09.870">Okay, so,</p>
+      <p begin="00:46:09.870" end="00:46:15.210">I showed you I did the demo for the office research vibe api is one thing I want to talk about really quick there</p>
+      <p begin="00:46:15.210" end="00:46:20.180">are a few awkward things in that demo if like I had to go to the as...active directory portal register...application</p>
+      <p begin="00:46:20.180" end="00:46:25.320">or a bunch of non office...sixty or non author related things in there all of these</p>
+      <p begin="00:46:25.320" end="00:46:30.300">obviously sixty-five api...on different url you so like outlook that office we sixty-five dot...you saw</p>
+      <p begin="00:46:30.300" end="00:46:34.700">...might sharepoint dot com and api about discovery dot com I had to do like</p>
+      <p begin="00:46:34.700" end="00:46:39.320">an extra discovery step in order to get it and...to go get multiple different access tokens to act</p>
+      <p begin="00:46:39.320" end="00:46:44.080">with to interact with different services actually gets even a little bit more complicated if you say want</p>
+      <p begin="00:46:44.080" end="00:46:49.010">to go get the user that modified...file and then go to a different api to go find what department</p>
+      <p begin="00:46:49.010" end="00:46:53.930">their or who their manager is so those are kind of complicated scenarios when you cross the boundaries of these</p>
+      <p begin="00:46:53.930" end="00:46:58.750">...or actually announcing this week we've created this unify api you might have seen it</p>
+      <p begin="00:46:58.750" end="00:47:01.320">in...such as demo during the keynote</p>
+      <p begin="00:47:01.320" end="00:47:06.190">...graft microsoft common allows you to get to all these office three sixty five api...unify</p>
+      <p begin="00:47:06.190" end="00:47:11.090">...point exactly to address all those points so...have to deal with any of that stuff anymore</p>
+      <p begin="00:47:11.090" end="00:47:16.030">on this api it's still...preview will certainly continue invests and this and the messes are</p>
+      <p begin="00:47:16.030" end="00:47:19.950">want-to send is that it's really the same but simpler</p>
+      <p begin="00:47:19.950" end="00:47:25.000">...all of the app registrations of the permission...the open id to the open-eyed</p>
+      <p begin="00:47:25.000" end="00:47:29.090">...off to flows are all the same the simpler pieces that you get that one</p>
+      <p begin="00:47:29.090" end="00:47:33.890">...point you only have one access token you don't have to discovery but the api themselves are the</p>
+      <p begin="00:47:33.890" end="00:47:39.190">same and...is going to do a session tomorrow I think it's the second slot like maybe ten</p>
+      <p begin="00:47:39.190" end="00:47:44.050">thirty or something on the unify endpoint should go into a ton of detail so if you want to learn about unify</p>
+      <p begin="00:47:44.050" end="00:47:49.210">...of specifics there go and check it out it's really a very cool infrastructure that were really,</p>
+      <p begin="00:47:49.210" end="00:47:54.940">really excited about being the future these api is I've talked about this one quite a bit but this is just</p>
+      <p begin="00:47:54.940" end="00:47:58.320">...you can see we have a bunch of things that have already been...available</p>
+      <p begin="00:47:58.320" end="00:48:02.600">...launching a bunch of preview things right now on the unify them point the video poorly-paid</p>
+      <p begin="00:48:02.600" end="00:48:06.990">...one node at api is...api is a and work continuing iterate</p>
+      <p begin="00:48:06.990" end="00:48:10.950">...of things that will and soon things like having the same api for consumer properties</p>
+      <p begin="00:48:10.950" end="00:48:14.820">and commercial properties which...talk about for one drive and...we'll talk about for</p>
+      <p begin="00:48:14.820" end="00:48:18.380">our dot com we've got the office graphic api that gives you those insights</p>
+      <p begin="00:48:18.380" end="00:48:23.370">about documents that are interesting to you are people that work with other people across a boundaries</p>
+      <p begin="00:48:23.370" end="00:48:28.070">...tasks api coming we've got lincoln scape api is that are coming up we're going to</p>
+      <p begin="00:48:28.070" end="00:48:32.550">continue to iterate on these things and build more and more very quickly during</p>
+      <p begin="00:48:32.550" end="00:48:35.950">that time okay so next thing is tools and as the case</p>
+      <p begin="00:48:35.950" end="00:48:40.690">so I know that was a ton of work to go through all that but hopefully you guys really</p>
+      <p begin="00:48:40.690" end="00:48:45.260">deeply understand everything that happens in these author question these...requests...</p>
+      <p begin="00:48:46.290" end="00:48:50.560">The good news is that the vast majority of time you don't actually need to know that stuff it's</p>
+      <p begin="00:48:50.560" end="00:48:53.640">good to understand it's, you know, what's going on it's good to understand so</p>
+      <p begin="00:48:53.640" end="00:48:59.000">on something goes wrong you really aren't just using a library but, we've got tools and...case</p>
+      <p begin="00:48:59.000" end="00:49:02.960">...pretty much every platform that you can use in order to be more efficient</p>
+      <p begin="00:49:02.960" end="00:49:08.510">more productive than having to go through fiddler and getting access token for everyone of your customersso,</p>
+      <p begin="00:49:08.510" end="00:49:13.060">all-star with off because...is really the hardest peace and the piece where you want</p>
+      <p begin="00:49:13.060" end="00:49:16.230">to library the most and adjective...guys of</p>
+      <p begin="00:49:16.230" end="00:49:20.640">...awesome job of building a ton of libraries and...open-source libraries if you go to</p>
+      <p begin="00:49:20.640" end="00:49:24.980">...active directories at the adjective directory organs get...you</p>
+      <p begin="00:49:24.980" end="00:49:29.940">can see a ton of their client libraries that handles that entire offload for you don't have to mess with</p>
+      <p begin="00:49:29.940" end="00:49:34.090">off codes or access tokens or open id connect tokens are jobs</p>
+      <p begin="00:49:34.090" end="00:49:38.310">...no any that stuff in order to deal with the off pieces through these libraries</p>
+      <p begin="00:49:38.310" end="00:49:42.850">...really nice for building an application really quickly and I'll show you an example that in just a second</p>
+      <p begin="00:49:42.850" end="00:49:47.350">it's as you can see it there a ton of different platforms that are covered microsoft platforms and</p>
+      <p begin="00:49:47.350" end="00:49:52.150">on microsoft platforms that are cover there in terms of those libraries so definitely check those out and I'll show you an</p>
+      <p begin="00:49:52.150" end="00:49:56.730">example of those right now I'm going to go on build a really simple app and this is</p>
+      <p begin="00:49:56.730" end="00:50:00.040">going-to be you decidedly on the hey, there's nothing</p>
+      <p begin="00:50:00.040" end="00:50:05.000">sort of microsoft specific about these technologies in fact I'm actually going to start in sublime just</p>
+      <p begin="00:50:05.000" end="00:50:09.410">to show you there's no tricks...rice leave I'm just building a text application I've</p>
+      <p begin="00:50:09.410" end="00:50:14.490">got a html and javascript application this is really just a frame for an app it's</p>
+      <p begin="00:50:14.490" end="00:50:21.440">...angular apple...it looks like right now if I go here my node server</p>
+      <p begin="00:50:21.440" end="00:50:21.940">running.</p>
+      <p begin="00:50:22.980" end="00:50:26.360">If I go here and I run it.</p>
+      <p begin="00:50:26.360" end="00:50:28.820">It's basically just a frame for an app called</p>
+      <p begin="00:50:28.820" end="00:50:33.660">...course them with angular and...got a bunch of headings where I would like to have my calendar events my messages my</p>
+      <p begin="00:50:33.660" end="00:50:38.670">wonder for business files all that good stuff but they're not there because they don't have the code written</p>
+      <p begin="00:50:38.670" end="00:50:43.330">...go back in the app if you're not familiar with angular it's a really nice little framework for building</p>
+      <p begin="00:50:43.330" end="00:50:47.310">single page applications I've got a frame page called...html which</p>
+      <p begin="00:50:47.310" end="00:50:52.010">...and angular reference a...angular route reference it's got a reference</p>
+      <p begin="00:50:52.010" end="00:50:55.940">to adjective directories javascript library for doing all this all stuff</p>
+      <p begin="00:50:55.940" end="00:51:00.680">...javascript another library that they...that's really slick...integration between</p>
+      <p begin="00:51:00.680" end="00:51:06.250">eight-hour...angular so if you're building and angular app and you're doing...you should definitely check this thing...and,</p>
+      <p begin="00:51:06.250" end="00:51:07.750">then I've got my app</p>
+      <p begin="00:51:07.750" end="00:51:12.730">js which declares my app and creates a couple of dependencies here and then configures the routes</p>
+      <p begin="00:51:12.730" end="00:51:16.810">...user visits the root of the application I want to invoke this controller called home</p>
+      <p begin="00:51:16.810" end="00:51:20.260">...which is you can see down here is empty right now and,</p>
+      <p begin="00:51:20.260" end="00:51:23.110">I want to use this template home that html as</p>
+      <p begin="00:51:23.110" end="00:51:26.970">...html work-at-home that html that's where all those headings...</p>
+      <p begin="00:51:26.970" end="00:51:32.190">unscom and it's got a list right now that's just not being filled in by dynamic data so</p>
+      <p begin="00:51:32.190" end="00:51:36.960">...going to go and fill those in...see how easy it is compared to all the stuff we just in</p>
+      <p begin="00:51:36.960" end="00:51:41.960">...second so I've got a snippet.</p>
+      <p begin="00:51:41.960" end="00:51:44.020">I've got a snippet for doing the eight-hour</p>
+      <p begin="00:51:44.020" end="00:51:48.830">configured so this is the conflict that a library I have to tele which tenant this</p>
+      <p begin="00:51:48.830" end="00:51:53.090">app works against so I can create a single ten-to-one by giving a specific ten or I can say common</p>
+      <p begin="00:51:53.090" end="00:51:56.260">...excuse me for to work everywhere I think...the</p>
+      <p begin="00:51:56.260" end="00:51:59.070">...id that's just that same glad I got out of the adjective</p>
+      <p begin="00:51:59.070" end="00:52:03.500">...portal I can specify a bunch of extra parameters like if I want admin can sander</p>
+      <p begin="00:52:03.500" end="00:52:09.100">...always want a prompt or if I want in this case the new...instead of the old ux and,</p>
+      <p begin="00:52:09.100" end="00:52:13.070">then I have to give the endpoints...endpoints are just the endpoints that I would like as</p>
+      <p begin="00:52:13.070" end="00:52:17.150">you're active directory to automatically go get me an access token for an attach the</p>
+      <p begin="00:52:17.150" end="00:52:23.760">request yes it automatically goes and gets you in access token if you put them in here which is super cool</p>
+      <p begin="00:52:23.760" end="00:52:28.210">A sharepoint url and here you see outlook that office we sixty-five dot com you'll see one...dot com</p>
+      <p begin="00:52:28.210" end="00:52:32.960">...you'll see graft windows...that was going to make calls to all those guys and it's going to handle all of the</p>
+      <p begin="00:52:32.960" end="00:52:37.570">offices for me the only other asf code that...the right is in these routes I tell that</p>
+      <p begin="00:52:37.570" end="00:52:42.560">...I actually want to require ad login.</p>
+      <p begin="00:52:42.560" end="00:52:46.660">So, I'm assuming require ad login on this home route and that's going to force people to login if they have</p>
+      <p begin="00:52:46.660" end="00:52:51.340">...already logged in I've got my offs code actually done I won't have to write any more often</p>
+      <p begin="00:52:51.340" end="00:52:56.520">which is kind of amazing to meand, then I'm just going to write...a little bit of rusk code some to create a factory</p>
+      <p begin="00:52:56.520" end="00:53:01.150">...angular factories or how you do factories...services or...other things...how you do most of your service</p>
+      <p begin="00:53:01.150" end="00:53:03.800">...you can see I'm just using the angular</p>
+      <p begin="00:53:03.800" end="00:53:08.980">dollar http thing to do a quick get request on all of these me such events</p>
+      <p begin="00:53:08.980" end="00:53:11.730">...messages me such files me slash notes</p>
+      <p begin="00:53:11.730" end="00:53:17.020">...notebooks and me slash member of to get all those things from simple rest</p>
+      <p begin="00:53:17.020" end="00:53:21.850">...json so there's no like parsing the response it's just already javascript object so</p>
+      <p begin="00:53:21.850" end="00:53:26.380">it's really simple and straightforward and the last thing I have to do is actually call those things in my</p>
+      <p begin="00:53:26.380" end="00:53:31.420">controller ...put the controller body in there you see I'm just putting some loading text in</p>
+      <p begin="00:53:31.420" end="00:53:34.970">their to start with and then I'm calling all of those endpoints</p>
+      <p begin="00:53:34.970" end="00:53:39.720">in the factories and inside of a promise I'm setting them on to the scope which</p>
+      <p begin="00:53:39.720" end="00:53:44.200">angular is your model basically so it save...and I go</p>
+      <p begin="00:53:44.200" end="00:53:52.360">back here and I had a five on a actually...run the...tools so you can see things one second?</p>
+      <p begin="00:53:52.360" end="00:53:53.770">So, I hit save and I</p>
+      <p begin="00:53:53.770" end="00:53:58.220">...five you can see that actually is making all of those requests</p>
+      <p begin="00:53:58.220" end="00:54:02.920">directly in the browser you can see they're not coming from a server-side</p>
+      <p begin="00:54:02.920" end="00:54:04.260">peace or not I didn't do any,</p>
+      <p begin="00:54:04.260" end="00:54:08.130">you know, off code in handling access token on that was just</p>
+      <p begin="00:54:08.130" end="00:54:12.580">handle because that plug-in knows I registered all those endpoints and it knows to go</p>
+      <p begin="00:54:12.580" end="00:54:17.510">give-me access tokens for each one of those endpoints when I don't have oneand, then it will go on automatically</p>
+      <p begin="00:54:17.510" end="00:54:23.430">attach them on every...should be request so pretty slick I've integrated with all those different office</p>
+      <p begin="00:54:23.430" end="00:54:28.270">...sixty-five api as you can see my calendar events my messages my wonder for business files by</p>
+      <p begin="00:54:28.270" end="00:54:33.910">one...and my groups the most important one notebook...food and,</p>
+      <p begin="00:54:33.910" end="00:54:38.200">then you can see that they're all coming from if you look at the network trace and chrome you can see that</p>
+      <p begin="00:54:38.200" end="00:54:40.050">...all coming directly from the browser using a</p>
+      <p begin="00:54:40.050" end="00:54:44.740">course requests so pretty slick simple and easy again that's just with...</p>
+      <p begin="00:54:44.740" end="00:54:51.590">libraries I'm just using a library tool for often I'm using whatever framework I'd like for everything else.</p>
+      <p begin="00:54:51.590" end="00:54:55.480">Ok, so, then the last thing I want to show you is a</p>
+      <p begin="00:54:55.480" end="00:55:00.400">hey we also have a bunch of tools that are specific to the office three sixty-five api is not just for</p>
+      <p begin="00:55:00.400" end="00:55:05.610">off and, we have them for a variety of platforms againthey're pretty much all open-source on</p>
+      <p begin="00:55:05.610" end="00:55:10.140">office...organization we have...case for ios we have...sdk for android</p>
+      <p begin="00:55:10.140" end="00:55:14.080">...an add-in for android studio where you can automatically register for a new</p>
+      <p begin="00:55:14.080" end="00:55:17.220">...id from within android studio...your project</p>
+      <p begin="00:55:17.220" end="00:55:22.250">...so for java server and...and we have cordoba plugins nowand, we have</p>
+      <p begin="00:55:22.250" end="00:55:27.060">...sdk and a bunch of tools for visual studio the tools for visual studio really the coolest</p>
+      <p begin="00:55:27.060" end="00:55:32.040">piece all just show you those real quick just give you the kind of tip of the iceberg on that</p>
+      <p begin="00:55:33.780" end="00:55:38.600">...go to visual studio I'll show you the file new project creation...so if I go to</p>
+      <p begin="00:55:38.600" end="00:55:43.410">file new project and I choose sp net web application this is in the rc of</p>
+      <p begin="00:55:43.410" end="00:55:48.010">...visual seo twenty fifteen by the way if I had okay there.</p>
+      <p begin="00:55:48.010" end="00:55:51.230">And, I choose nbc you see there's a dialogue here that</p>
+      <p begin="00:55:51.230" end="00:55:56.030">...me pick the authentication and adjective directories actually integrated directly in the</p>
+      <p begin="00:55:56.030" end="00:56:00.610">founding projects if I choose work in school as my authentication provider</p>
+      <p begin="00:56:00.610" end="00:56:03.570">...then choose directly from here...a single tenet app</p>
+      <p begin="00:56:03.570" end="00:56:09.320">or multichannel app I can choose which domain which directory I want to put into if I have</p>
+      <p begin="00:56:09.320" end="00:56:14.280">multiple I can decide whether or not I want to read directory data in addition to just getting the stuff that's in the open</p>
+      <p begin="00:56:14.280" end="00:56:18.740">...connect token...and I can hit okay and when I hit okay it will actually go</p>
+      <p begin="00:56:18.740" end="00:56:20.590">...create a project and behind-the-scenes</p>
+      <p begin="00:56:20.590" end="00:56:25.050">...go out adjective directory create a new application for me go and get the client id going</p>
+      <p begin="00:56:25.050" end="00:56:29.760">...the secret gone register for all those permissions and just in the interest of time I've got a project</p>
+      <p begin="00:56:29.760" end="00:56:33.500">...did that really nothing else you look...web configure can see here's</p>
+      <p begin="00:56:33.500" end="00:56:37.450">my client id here's my clients secret here's my domain here's</p>
+      <p begin="00:56:37.450" end="00:56:41.560">...id all that stuff is configured for me automatically without me having to write a single line of</p>
+      <p begin="00:56:41.560" end="00:56:46.420">code if I had a five I have an app that autumn...is already running it'll run on local host</p>
+      <p begin="00:56:46.420" end="00:56:51.280">and it will sign the user in a and ask them for permission to access their profile without me writing a</p>
+      <p begin="00:56:51.280" end="00:56:57.160">single line of code so, it's pretty slick you just a second here load?</p>
+      <p begin="00:56:57.160" end="00:57:07.240">And, then also ...I mention this really quickly just in the interest of time.</p>
+      <p begin="00:57:07.240" end="00:57:08.940">This guy...</p>
+      <p begin="00:57:08.940" end="00:57:12.150">One I is express running a time.</p>
+      <p begin="00:57:12.150" end="00:57:14.930">So, we'll see if I actually looking a project...this</p>
+      <p begin="00:57:14.930" end="00:57:19.560">records loading if I look at the project you can see now so it's</p>
+      <p begin="00:57:19.560" end="00:57:23.940">...in assign...with this user.</p>
+      <p begin="00:57:23.940" end="00:57:28.330">Well, that goes back and loads a page I can show you things like if I go into the</p>
+      <p begin="00:57:28.330" end="00:57:30.720">controller you can see there's already user profile</p>
+      <p begin="00:57:30.720" end="00:57:35.400">...that's using all of this can fig in order to go on create and as</p>
+      <p begin="00:57:35.400" end="00:57:38.980">...active directory clients here's...active directory client and</p>
+      <p begin="00:57:38.980" end="00:57:43.040">its making your query for the user a and getting back all of</p>
+      <p begin="00:57:43.040" end="00:57:48.350">their basic information like their name and their first and last name I think in this case</p>
+      <p begin="00:57:48.350" end="00:57:51.740">in the user profile name but...can get other things like the department or their manager</p>
+      <p begin="00:57:51.740" end="00:57:56.520">this is just for the boiler plate code that starting with us if I go to this page</p>
+      <p begin="00:57:56.520" end="00:58:01.440">I click on this I'll go to the user profile controller you'll see that it's already able to call as</p>
+      <p begin="00:58:01.440" end="00:58:07.440">...active directory and pullback information like my displaying the last thing I'll show you real quick in this</p>
+      <p begin="00:58:07.440" end="00:58:10.480">tool is that that's all the single sign on piece so</p>
+      <p begin="00:58:10.480" end="00:58:14.400">...you want to single sign on that founding project thing we'll get you but,</p>
+      <p begin="00:58:14.400" end="00:58:18.260">we also support the ability to go...click on a project and add</p>
+      <p begin="00:58:18.260" end="00:58:22.070">a connected service and this works in almost all project types in</p>
+      <p begin="00:58:22.070" end="00:58:27.050">visual studio by the way so even if you're creating like a command-line app and you want to do single sign on and connect office</p>
+      <p begin="00:58:27.050" end="00:58:31.620">three sixty-five services you can write click an added...service and choose the office</p>
+      <p begin="00:58:31.620" end="00:58:36.780">three sixty-five api is there you can sign in with...that you'd like to develop with source</p>
+      <p begin="00:58:36.780" end="00:58:37.820">...more time.</p>
+      <p begin="00:58:38.830" end="00:58:39.830">They promised me that by</p>
+      <p begin="00:58:39.830" end="00:58:43.460">...tm it's going to use the key chains you want to sign in so many times.</p>
+      <p begin="00:58:44.740" end="00:58:49.870">And, it will automatically make sure that I'm registered inside the directory you can see in this case the project was</p>
+      <p begin="00:58:49.870" end="00:58:54.790">already registered switches using the same one...set whether it's singular multiple tenants can</p>
+      <p begin="00:58:54.790" end="00:58:59.670">...my redirect...my reply urls...and I can request permissions to specific api</p>
+      <p begin="00:58:59.670" end="00:59:04.460">...so say I want to request permission to read and write your files and I had apply when I hit</p>
+      <p begin="00:59:04.460" end="00:59:09.440">ad will actually go and find all the new get packages for all the sdk is that I need</p>
+      <p begin="00:59:09.440" end="00:59:14.160">for whatever I picked so if I chose files or outlook or whatever else will go find</p>
+      <p begin="00:59:14.160" end="00:59:18.860">those new get packages in those new get packages only...add them to my projectso,</p>
+      <p begin="00:59:18.860" end="00:59:23.520">I can immediately start writing...called a files api and everything's configure formula back</p>
+      <p begin="00:59:23.520" end="00:59:29.630">...I don't have to go separately the...management portal ok so that's the that's the quick summary</p>
+      <p begin="00:59:29.630" end="00:59:34.670">of what's in visual studio obviously those are the most complete tools I can do a ton that are just point-and-click and</p>
+      <p begin="00:59:34.670" end="00:59:39.330">...have to go back and forth between portals I'm...go back to powerpoint</p>
+      <p begin="00:59:39.330" end="00:59:44.810">and finish up think of like thirty...the demo visual studio and</p>
+      <p begin="00:59:44.810" end="00:59:48.420">summary of a bring obviously sixty-five into your</p>
+      <p begin="00:59:48.420" end="00:59:53.800">app what do single sign on start there but then to get the next steps</p>
+      <p begin="00:59:53.800" end="00:59:57.030">...in the intelligence that you get from interacting with things like</p>
+      <p begin="00:59:57.030" end="00:59:59.650">...calendar from things like the office...with their</p>
+      <p begin="00:59:59.650" end="01:00:04.450">...using the office we sixty-five rest api and all the tools and</p>
+      <p begin="01:00:04.450" end="01:00:09.090">the sdk is that make it really easy to integrated into your platform there are</p>
+      <p begin="01:00:09.090" end="01:00:14.010">...related sessions in fact there's almost a related session for every different</p>
+      <p begin="01:00:14.010" end="01:00:18.850">service that I talked about and that's in the office we sixty-five and almost one for</p>
+      <p begin="01:00:18.850" end="01:00:23.710">every different platform there's a specific session on integrating office we sixty-five into windows ten apps and</p>
+      <p begin="01:00:23.710" end="01:00:28.660">one on integrating office we sixty-five into a zebra naps and motivates development apps</p>
+      <p begin="01:00:28.660" end="01:00:33.820">and web apps so take a look at those sessions if you want details on those specific platforms</p>
+      <p begin="01:00:33.820" end="01:00:38.100">...do into a ton of detail if there any...already...you-can attend will be online so</p>
+      <p begin="01:00:38.100" end="01:00:43.310">read those...a bunch of resources there you probably already heard about this but we're launching a</p>
+      <p begin="01:00:43.310" end="01:00:48.040">developer program for office developers that includes a bunch of extra benefits in particular</p>
+      <p begin="01:00:48.040" end="01:00:52.940">I'd point out the free developer subscription for a year if you want to go sign up for that thing there's a bunch of</p>
+      <p begin="01:00:52.940" end="01:00:57.820">extra benefits around you get free access like a free professional license for a</p>
+      <p begin="01:00:57.820" end="01:01:02.500">teller css can...controls and a bunch of other cool stuffso, sign up for that program</p>
+      <p begin="01:01:02.500" end="01:01:07.430">will send you newsletters about new releases a new features that are coming out you'll get free access and training all that</p>
+      <p begin="01:01:07.430" end="01:01:12.520">kind of stuff that's part of the called action and I hear they're actually some really cool</p>
+      <p begin="01:01:12.520" end="01:01:15.900">...down at the office three sixty five developer of</p>
+      <p begin="01:01:15.900" end="01:01:21.200">for booth on the first-floor and if you go and get some stickers for</p>
+      <p begin="01:01:21.200" end="01:01:24.790">answering some questions I believe you get your own office three sixty-five</p>
+      <p begin="01:01:24.790" end="01:01:29.900">...which I'm very jealous of at this point apparently you don't get any of the cool stuff like devices or</p>
+      <p begin="01:01:29.900" end="01:01:32.480">...when you actually work for microsoft's</p>
+      <p begin="01:01:32.480" end="01:01:36.340">cetera but okay thanks-very-much guys are really appreciates meantime I</p>
+      <p begin="01:01:36.340" end="01:01:41.190">...a really busy fast session I hope you took a lot away and opie understand</p>
+      <p begin="01:01:41.190" end="01:01:45.300">...much more deeply the office...sixty by rest api...please, please,</p>
+      <p begin="01:01:45.300" end="01:01:50.300">please do take the time send-me some feedback communal valuation let-me know what I can do better next time</p>
+      <p begin="01:01:50.300" end="01:01:54.350">let-me know what was useful for you I hope you have a great...your build conference thanks-very-much.</p>
+
+    </div>
+  </body>
+</tt>

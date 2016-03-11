@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.907</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.860" end="00:00:07.420">My mike...good cool so,</p>
+      <p begin="00:00:07.420" end="00:00:13.230">I'm sousa giuliano I'm going-to be here talking about logic apps and, ...</p>
+      <p begin="00:00:13.230" end="00:00:17.970">find the...microsoft and I'll talk about logic cups too, yeah,</p>
+      <p begin="00:00:17.970" end="00:00:23.580">so, just as a quick reminder and please be shared...submit your valuations it's</p>
+      <p begin="00:00:23.580" end="00:00:29.560">very helpful for us to get feedback about what we can do better so this is a minor so,</p>
+      <p begin="00:00:29.560" end="00:00:32.700">today what I'm going to talk about is I'll give a background</p>
+      <p begin="00:00:32.700" end="00:00:38.090">of the story of integration inside a manager I'll...overview of as your</p>
+      <p begin="00:00:38.090" end="00:00:42.060">app service and what that means for logic gaps and we have a couple demos</p>
+      <p begin="00:00:42.060" end="00:00:46.830">plan as well we're going to give you some background on the architecture of logic</p>
+      <p begin="00:00:46.830" end="00:00:48.800">gaps how they work kind of where they came</p>
+      <p begin="00:00:48.800" end="00:00:53.590">from and what you can do to use them more effectively so?</p>
+      <p begin="00:00:54.740" end="00:00:58.610">Integration inside of as your.</p>
+      <p begin="00:00:58.610" end="00:01:03.590">In march just about a month ago...released asher apps service so hopefully some of</p>
+      <p begin="00:01:03.590" end="00:01:09.120">you had a chance to hear about that to see the talk I think there's actually a couple...and</p>
+      <p begin="00:01:09.120" end="00:01:14.520">address service so I'm going to cover that very briefly but the other things I want to call</p>
+      <p begin="00:01:14.520" end="00:01:19.940">out is today we have api management also in as...as well as</p>
+      <p begin="00:01:19.940" end="00:01:25.060">biztalk services is that jade last year actually and,</p>
+      <p begin="00:01:25.060" end="00:01:28.240">we are working very tightly with the community to</p>
+      <p begin="00:01:28.240" end="00:01:33.320">really hear from you guys as to what the important things to invest in our</p>
+      <p begin="00:01:33.320" end="00:01:37.980">so, all come back to this but really we're trying to be feedback driven in</p>
+      <p begin="00:01:37.980" end="00:01:43.650">...development so, we've reached out through newsletters through blog posts ...to</p>
+      <p begin="00:01:43.650" end="00:01:48.690">hear from you guys about what the most important things to work on are also at w pc</p>
+      <p begin="00:01:48.690" end="00:01:53.870">will be hangout...to add the best partner integration solutions so stay</p>
+      <p begin="00:01:53.870" end="00:01:59.350">tuned for that so building apps inside of microsoft as</p>
+      <p begin="00:01:59.350" end="00:02:03.950">...brings a lot of great capabilities that you wouldn't get from building on</p>
+      <p begin="00:02:03.950" end="00:02:06.250">prime solution so,</p>
+      <p begin="00:02:06.250" end="00:02:11.210">for as your apps service we want to give you ways to deliver applications at</p>
+      <p begin="00:02:11.210" end="00:02:17.540">massive scale with tens of millions of concurrent users at a time as well</p>
+      <p begin="00:02:17.540" end="00:02:23.510">we want to make it easy for you to deliver and read your code very quickly and,</p>
+      <p begin="00:02:23.510" end="00:02:26.820">deliver updates into the running clap at</p>
+      <p begin="00:02:26.820" end="00:02:31.180">the same time we give you insights into exactly what's happening...application</p>
+      <p begin="00:02:31.180" end="00:02:36.020">so all these things would be a bit more difficult if you weren't running on asher but,</p>
+      <p begin="00:02:36.020" end="00:02:40.040">as you're brings us to natively before the release of</p>
+      <p begin="00:02:40.040" end="00:02:44.600">asher app service we had these three services available to you as</p>
+      <p begin="00:02:44.600" end="00:02:47.160">...websites measure mobile services and</p>
+      <p begin="00:02:47.160" end="00:02:52.020">biz talk servicesI'm going to spend just a couple minutes talking about this</p>
+      <p begin="00:02:52.020" end="00:02:56.990">talk services and just by show of hands how many of you are familiar with is</p>
+      <p begin="00:02:56.990" end="00:03:04.340">talk so, I would say at least half so that's good because biz</p>
+      <p begin="00:03:04.340" end="00:03:09.900">talk is in many ways the inspiration for logic apps but,</p>
+      <p begin="00:03:09.900" end="00:03:14.690">it isn't a direct one-to-one translation so we learn a lot of things with</p>
+      <p begin="00:03:14.690" end="00:03:18.770">the biz talk services release that we did last year?</p>
+      <p begin="00:03:18.770" end="00:03:19.380">For example,</p>
+      <p begin="00:03:19.380" end="00:03:24.270">we validated that bringing integration into the cloud is actually a key scenario that you</p>
+      <p begin="00:03:24.270" end="00:03:29.890">care about as well...having hybrid solutions is also very important but</p>
+      <p begin="00:03:29.890" end="00:03:34.770">the same time we found that there were some key feature problems and gaps with</p>
+      <p begin="00:03:34.770" end="00:03:39.540">is talk services so, really what we're going to work on through logic</p>
+      <p begin="00:03:39.540" end="00:03:44.530">apps is to solve these key feature gaps in many cases we have as well</p>
+      <p begin="00:03:44.530" end="00:03:50.740">as to bring new capabilities that would not have impossible with is talk historically.</p>
+      <p begin="00:03:50.740" end="00:03:55.300">One of the biggest challenges with is talk is the learning curve so if</p>
+      <p begin="00:03:55.300" end="00:04:00.520">you come and you try to install biztalk server that alone is going to be</p>
+      <p begin="00:04:00.520" end="00:04:01.550">...pretty steep learning</p>
+      <p begin="00:04:01.550" end="00:04:06.960">curve much less actually using it so this has been a key</p>
+      <p begin="00:04:06.960" end="00:04:11.540">...point and what really resulted in was a sort of wall when you tried</p>
+      <p begin="00:04:11.540" end="00:04:17.840">to develop for biz talkyou had to go through this...of repo over</p>
+      <p begin="00:04:17.840" end="00:04:22.610">it even get anything done and as result what we found was people</p>
+      <p begin="00:04:22.610" end="00:04:25.750">were instead of delivering...simple</p>
+      <p begin="00:04:25.750" end="00:04:30.680">easy-to-use this talk solutions they were doing a lot of hacking and the reason that they</p>
+      <p begin="00:04:30.680" end="00:04:33.640">...doing hacking is because it's really easy to geo just</p>
+      <p begin="00:04:33.640" end="00:04:39.330">...hundred lines of code and orchestrate a couple api is to bring some things together but,</p>
+      <p begin="00:04:39.330" end="00:04:43.330">this is really what you want to be doing with your time you don't want to</p>
+      <p begin="00:04:43.330" end="00:04:47.480">geo just write a couple lines of code and then five weeks later</p>
+      <p begin="00:04:47.480" end="00:04:51.060">some is going to come back and have you add a little more to that code and then, you know,</p>
+      <p begin="00:04:51.060" end="00:04:54.560">somebody else and have to maintain it and...rewrite it...just turns into</p>
+      <p begin="00:04:54.560" end="00:04:59.360">...the snowball so instead of actually using biz talk because</p>
+      <p begin="00:04:59.360" end="00:05:04.900">...was so hard you would end up writing this code yourself that's where we want logic apps...</p>
+      <p begin="00:05:04.900" end="00:05:09.880">comment so instead of learning curve like that red-line...a you'll instead see</p>
+      <p begin="00:05:09.880" end="00:05:14.510">...curve more like this so our goal is that you can very easily</p>
+      <p begin="00:05:14.510" end="00:05:21.410">deliver integration solutions in microsoft manager by using logic</p>
+      <p begin="00:05:21.410" end="00:05:25.970">it starts out very simple and we'll go through some pretty simple demos here today</p>
+      <p begin="00:05:25.970" end="00:05:30.930">but if you need additional more our if you need more our if you need more additional capabilities</p>
+      <p begin="00:05:30.930" end="00:05:35.830">and it does become a little more complex but at a very gradual rate it's not like there's</p>
+      <p begin="00:05:35.830" end="00:05:42.280">this big clip for wall...to jump over in order to understand how to use integration.</p>
+      <p begin="00:05:42.280" end="00:05:43.510">Going hand-in-hand with this</p>
+      <p begin="00:05:43.510" end="00:05:47.520">our vision our road map for large gaps is democratize</p>
+      <p begin="00:05:47.520" end="00:05:51.670">integration that's a very key point because we see</p>
+      <p begin="00:05:51.670" end="00:05:56.460">there been a lot of developers out here there's a lot of people who did not raise their hands when they said they use</p>
+      <p begin="00:05:56.460" end="00:06:01.450">this talk that is who we want to be able to take advantage of logic in the</p>
+      <p begin="00:06:01.450" end="00:06:06.390">cloud because you guys that didn't raise your hands you would never have</p>
+      <p begin="00:06:06.390" end="00:06:09.250">even probably considered setting up of this talk server and, you know,</p>
+      <p begin="00:06:09.250" end="00:06:13.010">using that...the cloud running that both logic apps is very easy if you</p>
+      <p begin="00:06:13.010" end="00:06:18.570">to get started and to be able to use cashmere to run your business processes</p>
+      <p begin="00:06:18.570" end="00:06:23.210">so, that's really what we're going to focus on now another key point is that we</p>
+      <p begin="00:06:23.210" end="00:06:28.230">see ourselves as trying to be a leader in the space so dispel that acronym</p>
+      <p begin="00:06:28.230" end="00:06:32.650">that's integration platform as a service so that means we're going</p>
+      <p begin="00:06:32.650" end="00:06:38.170">...your logic for-you rather than you...server and deploy</p>
+      <p begin="00:06:38.170" end="00:06:42.320">uaw workflow into that server and maintain...a manage yourself</p>
+      <p begin="00:06:42.320" end="00:06:47.700">instead we will manage most everything for you on your behalf and,</p>
+      <p begin="00:06:47.700" end="00:06:53.400">you will only have to worry about managing the code that you actually want to write yourself.</p>
+      <p begin="00:06:53.400" end="00:06:58.010">The third point is we are working on creating a rich ecosystem where</p>
+      <p begin="00:06:58.010" end="00:07:02.490">...where people can bring the...solutions deploy them into</p>
+      <p begin="00:07:02.490" end="00:07:07.420">a gallery inside of asher and other people can take advantage of it so,</p>
+      <p begin="00:07:07.420" end="00:07:10.500">with the various types applications we have api</p>
+      <p begin="00:07:10.500" end="00:07:15.720">...and large-cap you'll be able to submit them and take advantage of them the ones</p>
+      <p begin="00:07:15.720" end="00:07:20.280">...have been submitted by other people so at the end of the day we see this</p>
+      <p begin="00:07:20.280" end="00:07:25.230">as a very exciting time for people who want to develop applications,</p>
+      <p begin="00:07:25.230" end="00:07:30.200">you know, the key for an application is connecting to your customers so,</p>
+      <p begin="00:07:30.200" end="00:07:34.800">you need a way where you can empower your employees both yourselves and other people</p>
+      <p begin="00:07:34.800" end="00:07:39.610">in your organizations to be able to deliver these apps very quickly and</p>
+      <p begin="00:07:39.610" end="00:07:44.470">in agile manner...internet scale so that's our vision for</p>
+      <p begin="00:07:44.470" end="00:07:48.860">logic apps and more broadly for address service so what</p>
+      <p begin="00:07:48.860" end="00:07:53.960">we've done is we've brought together some of the key capabilities that already exists in as</p>
+      <p begin="00:07:53.960" end="00:07:58.620">your added some new ones together for apps service on the for components</p>
+      <p begin="00:07:58.620" end="00:08:01.730">...service are web apps mobile apps logic apps</p>
+      <p begin="00:08:01.730" end="00:08:05.970">and api apps and hopefully some of you had a chance to attend all up</p>
+      <p begin="00:08:05.970" end="00:08:07.720">...talk but,</p>
+      <p begin="00:08:07.720" end="00:08:14.050">in case you didn't I'll just go through these briefly and then we'll spend the rest the talk talking about logic gaps.</p>
+      <p begin="00:08:14.050" end="00:08:18.720">Before I do that I want to actually give a brief overview of some of the</p>
+      <p begin="00:08:18.720" end="00:08:24.180">key new advocate abilities that we've release in the last year that you may not be too familiar</p>
+      <p begin="00:08:24.180" end="00:08:28.530">so the first one is I often get asked do you have auditing inside</p>
+      <p begin="00:08:28.530" end="00:08:33.140">...you actually track all the operations that happen can I go and see that and the</p>
+      <p begin="00:08:33.140" end="00:08:38.380">answer is yes to all of those so any management operation that happens through adj or through the</p>
+      <p begin="00:08:38.380" end="00:08:41.500">...portal through the api through...we actually track</p>
+      <p begin="00:08:41.500" end="00:08:45.780">all of those so you can come back later and you can see who has done what and</p>
+      <p begin="00:08:45.780" end="00:08:50.470">...to your services as the running at the same time you want to be able to</p>
+      <p begin="00:08:50.470" end="00:08:54.170">have more granular control over the services that you've deployed you</p>
+      <p begin="00:08:54.170" end="00:08:58.930">may want one developer to be able to develop one particular solution but not have access to the</p>
+      <p begin="00:08:58.930" end="00:09:02.900">vietnam's that run your businesses core processes you can do that with</p>
+      <p begin="00:09:02.900" end="00:09:04.920">...access control which was also</p>
+      <p begin="00:09:04.920" end="00:09:10.380">released last year at the same time you need to be able to manage the deployments</p>
+      <p begin="00:09:10.380" end="00:09:13.770">lifecycle of your services we do that with as</p>
+      <p begin="00:09:13.770" end="00:09:17.740">resource manager they're so for most of these there are also other</p>
+      <p begin="00:09:17.740" end="00:09:23.120">talk small there have been are the talks in build so, definitely check those out if</p>
+      <p begin="00:09:23.120" end="00:09:27.930">you'd like to learn more as well we have full management api so all</p>
+      <p begin="00:09:27.930" end="00:09:32.360">of the things that we show you today that you can do with logic gaps you can also do via</p>
+      <p begin="00:09:32.360" end="00:09:37.100">...rest api which we fully documented as well as through partial commandments that</p>
+      <p begin="00:09:37.100" end="00:09:42.810">allow you to manage the creation and deletion of measure resources and finally I get asked a</p>
+      <p begin="00:09:42.810" end="00:09:47.950">lot about will this be available on tram and the answer is yes?</p>
+      <p begin="00:09:47.950" end="00:09:49.300">We work to take all</p>
+      <p begin="00:09:49.300" end="00:09:54.070">the capabilities that are available on as your and bring that into each iteration of the asher</p>
+      <p begin="00:09:54.070" end="00:09:58.990">...for those of you...are familiar measure...is basically imagine running a little</p>
+      <p begin="00:09:58.990" end="00:10:03.920">many as you're inside your own data center so everything that you see today</p>
+      <p begin="00:10:03.920" end="00:10:09.050">and any of the other as a...talks will eventually be available inside as your</p>
+      <p begin="00:10:09.050" end="00:10:14.330">...isn't available quite yet but over time we bring those capabilities down it</p>
+      <p begin="00:10:14.330" end="00:10:20.530">does like a little bit behind because it's non-transfer...we have to ship boxes as opposed to code?</p>
+      <p begin="00:10:20.530" end="00:10:24.660">So, as your apps service better together and</p>
+      <p begin="00:10:24.660" end="00:10:28.660">is one low-price for all of these capabilities that we're going to talk about</p>
+      <p begin="00:10:28.660" end="00:10:33.470">today and we have a number of built-in connectors</p>
+      <p begin="00:10:33.470" end="00:10:38.310">even take advantage of so with as your apps service you will want to be able</p>
+      <p begin="00:10:38.310" end="00:10:43.340">to build applications that take dependencies and other services out there so, for example,</p>
+      <p begin="00:10:43.340" end="00:10:48.360">if your consumer facing application you may not may want to be able to talk to twitter or</p>
+      <p begin="00:10:48.360" end="00:10:49.810">dropbox?</p>
+      <p begin="00:10:49.810" end="00:10:50.680">If...its price</p>
+      <p begin="00:10:50.680" end="00:10:55.860">...application you may want to talk to dbtwo or web sphere</p>
+      <p begin="00:10:55.860" end="00:10:59.910">...a probably existed before I was born.</p>
+      <p begin="00:10:59.910" end="00:11:03.990">So, you can take advantage of all of these together through connectors</p>
+      <p begin="00:11:05.090" end="00:11:09.890">in addition we have a number of protocol connectors that you can also take advantage of</p>
+      <p begin="00:11:09.890" end="00:11:11.690">...you want to be able to use ftp</p>
+      <p begin="00:11:12.810" end="00:11:16.430">...whenever process...we actually give you</p>
+      <p begin="00:11:16.430" end="00:11:21.040">clean rest interfaces on top of those to be able to make those calls</p>
+      <p begin="00:11:21.040" end="00:11:25.530">so from app service we give you a bridge into any of these other worlds</p>
+      <p begin="00:11:25.530" end="00:11:29.740">...existed for a long-time you don't have to take all of your logic move...all to the</p>
+      <p begin="00:11:29.740" end="00:11:36.790">cloud all at once they'll...very...if you want...do a bile means try but,</p>
+      <p begin="00:11:36.790" end="00:11:38.810">in the meanwhile if you don't want to if you want</p>
+      <p begin="00:11:38.810" end="00:11:43.730">to a piecemeal definitely you can take advantage of api connectors finally on this</p>
+      <p begin="00:11:43.730" end="00:11:48.120">slidewe have a number of biztalk services you can take advantage of so</p>
+      <p begin="00:11:48.120" end="00:11:53.080">our strategy for biz talk specifically has been to break apart all of</p>
+      <p begin="00:11:53.080" end="00:11:57.390">that giant monolithic you deploy that would take three days just a setup we've actually</p>
+      <p begin="00:11:57.390" end="00:12:02.100">broken apart decomposed into a number of clean api surfaces that you</p>
+      <p begin="00:12:02.100" end="00:12:06.710">can use individually edit only requires you to install what you need so instead of having</p>
+      <p begin="00:12:06.710" end="00:12:10.680">...this massive monolithic you can now take advantage of just say</p>
+      <p begin="00:12:10.680" end="00:12:15.300">that extract functionality that this aac has for ex path or just stwo inside of</p>
+      <p begin="00:12:15.300" end="00:12:21.280">this talk so that's one of the key points there now for the for app types</p>
+      <p begin="00:12:21.280" end="00:12:25.450">we have web apps which allow you to deploy web interfaces directly into</p>
+      <p begin="00:12:25.450" end="00:12:29.950">the cloud and supports a wide variety of applications so everything that we talk about</p>
+      <p begin="00:12:29.950" end="00:12:35.110">...supports these five languages and it means that you don't have to</p>
+      <p begin="00:12:35.110" end="00:12:40.310">use dot net I assume since what build the vast majority of you love dot net but,</p>
+      <p begin="00:12:40.310" end="00:12:43.980">if you don't then you can definitely take advantage of other technologies as</p>
+      <p begin="00:12:43.980" end="00:12:49.730">well mobile applications are great because they allow you to build a mobile back-end</p>
+      <p begin="00:12:49.730" end="00:12:54.450">for your web our for your mobile app so if you want, for example,</p>
+      <p begin="00:12:54.450" end="00:12:57.260">to be able to have a scenario where I can</p>
+      <p begin="00:12:57.260" end="00:13:01.970">write mobile app when something's going to click a button it goes off into the cloud and does something</p>
+      <p begin="00:13:01.970" end="00:13:07.400">I'll show kind of demo that at the end you can do that using mobile apps?</p>
+      <p begin="00:13:07.400" end="00:13:12.190">The third pieces logic apps which is what this talk is mostly going to be about</p>
+      <p begin="00:13:12.190" end="00:13:16.860">and that allows you to without having to write code execute business processes in the</p>
+      <p begin="00:13:16.860" end="00:13:18.080">cloud.</p>
+      <p begin="00:13:18.080" end="00:13:23.040">And, finally the api apps which are those interfaces that I was talking about these are the</p>
+      <p begin="00:13:23.040" end="00:13:28.380">clean rest...all the functionality that unique so if you want to</p>
+      <p begin="00:13:28.380" end="00:13:33.890">be able todo...have a connector to your only api as you can do that using api</p>
+      <p begin="00:13:33.890" end="00:13:38.490">app...great about api apps is they have a consistent standard for how they</p>
+      <p begin="00:13:38.490" end="00:13:43.110">describe themselves so api apps you swagger which is a open-source</p>
+      <p begin="00:13:43.110" end="00:13:47.730">format...a meta data description format describes all of the rest calls</p>
+      <p begin="00:13:47.730" end="00:13:53.120">and api has and all the demos that will show you take advantage of the swagger to be able to</p>
+      <p begin="00:13:53.120" end="00:13:56.060">...ui appropriately?</p>
+      <p begin="00:13:56.060" end="00:13:58.400">Finally the biztalk</p>
+      <p begin="00:13:58.400" end="00:14:01.800">...vone which is the best talk services</p>
+      <p begin="00:14:01.800" end="00:14:05.420">and we've made a lot of improvements upon so those key feature gaps</p>
+      <p begin="00:14:05.420" end="00:14:09.730">us talking about earlier we think we've made a lot of progress on so I don't expect</p>
+      <p begin="00:14:09.730" end="00:14:12.250">you to read all this right now you can look</p>
+      <p begin="00:14:12.250" end="00:14:16.740">the slides later but the point here is all those red boxes that was</p>
+      <p begin="00:14:16.740" end="00:14:18.420">...vone and with</p>
+      <p begin="00:14:18.420" end="00:14:22.730">app services today with both this talk and logic apps we've turned a lot of</p>
+      <p begin="00:14:22.730" end="00:14:27.710">those green there's still a little work left to be done if there wasn't then I probably would have</p>
+      <p begin="00:14:27.710" end="00:14:31.830">a job anymore but it will work on that and based on your feedback</p>
+      <p begin="00:14:31.830" end="00:14:37.670">will take those improvements going forward so before jump into the demo there's one more point I want to</p>
+      <p begin="00:14:37.670" end="00:14:42.620">cover and that is people have come to me and they've asked me who do you expect to be able to use this</p>
+      <p begin="00:14:42.620" end="00:14:47.120">and the answer is anybody who uses azerbaijan so if you're a developer if you're</p>
+      <p begin="00:14:47.120" end="00:14:52.650">...ip pro and you're familiar with as you can come to the portal then you should be able to take advantage of</p>
+      <p begin="00:14:52.650" end="00:14:58.230">logic...to develop and deliver your business processes but and this time we are not</p>
+      <p begin="00:14:58.230" end="00:15:03.020">targeting consumers so we definitely don't expect my mom to go to the</p>
+      <p begin="00:15:03.020" end="00:15:08.510">...portal and to write a simple process that would be kind of crazy because as a</p>
+      <p begin="00:15:08.510" end="00:15:13.500">...you have a subscription...requires you see a bunch of stuff but...that svm and none of that stuff would</p>
+      <p begin="00:15:13.500" end="00:15:17.220">really make sense right so we are thinking about this going</p>
+      <p begin="00:15:17.220" end="00:15:22.080">forward but for today when we talk about logic apps we're talking about the solution as a part</p>
+      <p begin="00:15:22.080" end="00:15:27.550">of as your that is focused on developers ninety process so now I can switch over</p>
+      <p begin="00:15:27.550" end="00:15:36.600">to the demo and...computer hasn't completely gone to sleep.</p>
+      <p begin="00:15:36.600" end="00:15:42.670">So, what you're going to see here is this is the new editor portal just a</p>
+      <p begin="00:15:42.670" end="00:15:47.550">curiosity how many people have actually played with the new portal</p>
+      <p begin="00:15:47.550" end="00:15:52.680">as this thing right here wow most of you that's great so,</p>
+      <p begin="00:15:52.680" end="00:15:57.520">logic apps as well as both the answers capabilities are only available in the new portal</p>
+      <p begin="00:15:57.520" end="00:16:03.660">so, if you went to the full poorly wouldn't be able to see that but so, yeah, so, in order to create a</p>
+      <p begin="00:16:03.660" end="00:16:08.090">logic...you can go to plus new down here this gives you the create experience with</p>
+      <p begin="00:16:08.090" end="00:16:11.860">a number of categories all of the...service is together</p>
+      <p begin="00:16:11.860" end="00:16:16.740">in this unify place called...mobile and you can see here the web apps</p>
+      <p begin="00:16:16.740" end="00:16:19.050">...mobile apps logic gaps and api</p>
+      <p begin="00:16:19.050" end="00:16:25.030">...so you could create all those here together and when you create a logic at all you have to do is</p>
+      <p begin="00:16:25.030" end="00:16:28.470">...a name so, I'll just bill</p>
+      <p begin="00:16:28.470" end="00:16:34.470">large gap and you have to choose the app service plan now the</p>
+      <p begin="00:16:34.470" end="00:16:38.150">...service plan is very important because that represents the thing you're</p>
+      <p begin="00:16:38.150" end="00:16:43.020">paying for the plan is you can kind of think of it as the virtual machine</p>
+      <p begin="00:16:43.020" end="00:16:47.890">that all of your various apps to run on and...great about that is you can deploy as many apps</p>
+      <p begin="00:16:47.890" end="00:16:52.630">...you want into the same plan without having to pay ascent more so,</p>
+      <p begin="00:16:52.630" end="00:16:57.570">that that's a great capability and you can of course scale that independent of the app so if you</p>
+      <p begin="00:16:57.570" end="00:16:59.140">want ten instances of this</p>
+      <p begin="00:16:59.140" end="00:17:07.039">...one instance you can do that in the...here now let's go ahead and click create?</p>
+      <p begin="00:17:07.039" end="00:17:09.769">And, that...go off and take a few</p>
+      <p begin="00:17:09.769" end="00:17:13.819">seconds so instead of using that one I'll just go to a blank one that I</p>
+      <p begin="00:17:13.819" end="00:17:19.049">...created and this then loads up this is</p>
+      <p begin="00:17:19.049" end="00:17:23.459">the blade as we call them for...apps at the top of the</p>
+      <p begin="00:17:23.459" end="00:17:28.359">blade you can see we summarize the most important information about it so you can see,</p>
+      <p begin="00:17:28.359" end="00:17:32.849">for example, the name...state what is endpoint is the</p>
+      <p begin="00:17:32.849" end="00:17:37.149">endpoint is interesting because that allows you to invoke it from a</p>
+      <p begin="00:17:37.149" end="00:17:43.599">say mobile application directly as well as the plan so this is the thing I'm</p>
+      <p begin="00:17:43.599" end="00:17:47.969">...and the number...had etc so I can just come here and click</p>
+      <p begin="00:17:47.969" end="00:17:51.829">edit and this will open up the portal designer so this is</p>
+      <p begin="00:17:51.829" end="00:17:56.669">a simple experience that we've created to make it easy for you without having</p>
+      <p begin="00:17:56.669" end="00:18:00.449">to write code to create a business process.</p>
+      <p begin="00:18:00.449" end="00:18:05.629">Now the first thing that you do inside a logic app is you add a recurrence so,</p>
+      <p begin="00:18:05.629" end="00:18:08.730">I can just click on that here.</p>
+      <p begin="00:18:08.730" end="00:18:12.700">Sorry I misspoke so it isn't necessarily the person you have to do</p>
+      <p begin="00:18:12.700" end="00:18:17.830">because you can actually use many different types of triggers so recurrence is just one type of trigger but,</p>
+      <p begin="00:18:17.830" end="00:18:22.690">you could also, for example, trigger whenever you got a new tweet or whenever somebody...a button</p>
+      <p begin="00:18:22.690" end="00:18:25.860">...application all those are possible but for this purpose</p>
+      <p begin="00:18:25.860" end="00:18:33.040">demo I'll just user occurrence and I'll have this run say every minute.</p>
+      <p begin="00:18:33.040" end="00:18:35.870">And, I will actually click the buttons that</p>
+      <p begin="00:18:35.870" end="00:18:40.570">I try to click on so then I've created so my large-cap</p>
+      <p begin="00:18:40.570" end="00:18:45.230">who run based on this trigger the next thing that you do is you add a</p>
+      <p begin="00:18:45.230" end="00:18:49.980">series of actions into your application so this gallery on the</p>
+      <p begin="00:18:49.980" end="00:18:54.770">right-hand side here this shows you all of the api apps that I've already provision</p>
+      <p begin="00:18:54.770" end="00:19:00.290">into my resource group these api apps could be ones that came from the gallery in this case,</p>
+      <p begin="00:19:00.290" end="00:19:04.620">you know, dropbox and facebook offices sixty-five these are ones that we've already published</p>
+      <p begin="00:19:04.620" end="00:19:09.620">to the gallery that you can take advantage of yourself but they also could be api apps that</p>
+      <p begin="00:19:09.620" end="00:19:13.420">you create yourself that publish your own api from your organization</p>
+      <p begin="00:19:14.530" end="00:19:17.990">but I've added that on so the first thing that I have to do when I</p>
+      <p begin="00:19:17.990" end="00:19:22.560">add a card or certain cards is aft authorized them so this uses the standard</p>
+      <p begin="00:19:22.560" end="00:19:27.510">offload where it takes me to a twitter web page and I click</p>
+      <p begin="00:19:27.510" end="00:19:31.960">authorize and that grant's me a token from twitter to be able to</p>
+      <p begin="00:19:31.960" end="00:19:36.920">use the twitter api so now when I called twitter from this workflow</p>
+      <p begin="00:19:36.920" end="00:19:39.330">...act on behalf of my user identity?</p>
+      <p begin="00:19:40.410" end="00:19:45.290">The next thing that you see here is a list of all the actions that we've exposed as a part of the</p>
+      <p begin="00:19:45.290" end="00:19:51.200">twitter api...you can see I can...these guys and get details on exactly what</p>
+      <p begin="00:19:51.200" end="00:19:55.550">these api czar and in fact we give you a wide variety of api</p>
+      <p begin="00:19:55.550" end="00:20:01.150">as we kind of show you the most important the top you can see here all the other api is that twitter</p>
+      <p begin="00:20:01.150" end="00:20:06.740">has so I can get that information but for the purposes of this demo we're actually going to</p>
+      <p begin="00:20:06.740" end="00:20:11.570">do is we're going to search twitter for tweets about large gaps and</p>
+      <p begin="00:20:11.570" end="00:20:16.100">archive them to my dropbox that way I can come back later and I can do a search on top</p>
+      <p begin="00:20:16.100" end="00:20:20.520">of than I can see what people have been saying about logic apps.</p>
+      <p begin="00:20:20.520" end="00:20:26.930">You can imagine you could very easily do this for your own company in just a few minutes so when I click on</p>
+      <p begin="00:20:26.930" end="00:20:30.910">an action I see the input parameters to that particular action search</p>
+      <p begin="00:20:30.910" end="00:20:34.810">...is simple ones because it just takes one field.</p>
+      <p begin="00:20:34.810" end="00:20:39.340">So, this click logic apps so now this will go off and</p>
+      <p begin="00:20:39.340" end="00:20:44.090">the search for large-cap so the next thing I'm going to do is all add a</p>
+      <p begin="00:20:44.090" end="00:20:49.030">dropbox connector just like the twitter connector this requires authorization with</p>
+      <p begin="00:20:49.030" end="00:20:52.360">the dropbox api so it will show up a button and once I</p>
+      <p begin="00:20:52.360" end="00:21:00.960">...that it will then show me again the list of actions that dropbox has so.</p>
+      <p begin="00:21:00.960" end="00:21:04.540">That I already authorize that so didn't even ask me this time.</p>
+      <p begin="00:21:04.540" end="00:21:08.440">Shows me list of actions and then for the action I want you today</p>
+      <p begin="00:21:08.440" end="00:21:15.190">all upload files so this will upload the tweet content into my dropbox.</p>
+      <p begin="00:21:15.190" end="00:21:17.730">As with the tweet I see the</p>
+      <p begin="00:21:17.730" end="00:21:22.220">list of parameters to this dropbox api now.</p>
+      <p begin="00:21:22.220" end="00:21:26.610">This all is meta data-driven so we have not written a single-line</p>
+      <p begin="00:21:26.610" end="00:21:30.810">of custom ui to work with these api...instead.</p>
+      <p begin="00:21:30.810" end="00:21:32.090">These api is all</p>
+      <p begin="00:21:32.090" end="00:21:36.020">expose swagger which is that common rest metadata documentation</p>
+      <p begin="00:21:36.020" end="00:21:40.760">format inside the swagger they contain all the information needed to draw this so,</p>
+      <p begin="00:21:40.760" end="00:21:45.720">for example, the dropbox swagger says it has an operation called upload file</p>
+      <p begin="00:21:45.720" end="00:21:50.680">the upload file operation has parameters like file path content encoding and whether or not to</p>
+      <p begin="00:21:50.680" end="00:21:51.900">overwrite</p>
+      <p begin="00:21:51.900" end="00:21:56.200">and even this the meta data comes from this description comes from that</p>
+      <p begin="00:21:56.200" end="00:22:02.650">metadata as well so for the file path all this type logic gaps.</p>
+      <p begin="00:22:02.650" end="00:22:03.200">Dot txt.</p>
+      <p begin="00:22:06.010" end="00:22:10.600">for the content now this is where it really the our of logic apps comes in is I</p>
+      <p begin="00:22:10.600" end="00:22:15.480">can flow the data from the first step to the second one rather than having statically</p>
+      <p begin="00:22:15.480" end="00:22:19.390">...I can open this drop down right here it shows me here</p>
+      <p begin="00:22:19.390" end="00:22:24.200">these outputs from that previous steps you can see the twitter connector outputs taxed</p>
+      <p begin="00:22:24.200" end="00:22:29.870">and outputs the treated by so I can select them from here so I'm just going to select</p>
+      <p begin="00:22:29.870" end="00:22:31.760">...drops in a token and,</p>
+      <p begin="00:22:31.760" end="00:22:37.350">we'll talk a bit more about the language in a little while but for now...click...</p>
+      <p begin="00:22:37.350" end="00:22:42.170">Or click the check marketing and then I will click safe.</p>
+      <p begin="00:22:42.170" end="00:22:46.560">So, now it's going to happen is this logic apple run every minute</p>
+      <p begin="00:22:46.560" end="00:22:49.990">you will pull twitter for any new tweets about logic</p>
+      <p begin="00:22:49.990" end="00:22:53.360">gaps and then we'll upload them into a file called logic apps</p>
+      <p begin="00:22:53.360" end="00:22:57.810">...txt in my dropbox so let's switch over to dropbox which I have</p>
+      <p begin="00:22:57.810" end="00:23:02.320">...tab and see so you can see here eleven seconds ago there</p>
+      <p begin="00:23:02.320" end="00:23:06.940">is a new file called logic abstract txt added and as you can</p>
+      <p begin="00:23:06.940" end="00:23:11.740">see somebody here probably treated about outside their...</p>
+      <p begin="00:23:11.740" end="00:23:16.670">app so that's great they haven't even seen the whole demo...excited so,</p>
+      <p begin="00:23:16.670" end="00:23:21.550">all close this so one of the things that you may have notices wrong with this</p>
+      <p begin="00:23:21.550" end="00:23:25.470">flow though is this will actually only take.</p>
+      <p begin="00:23:25.470" end="00:23:29.880">One tweet at a time which isn't very efficient and in fact because</p>
+      <p begin="00:23:29.880" end="00:23:33.570">the file path is the same is going to keep overriding that one file.</p>
+      <p begin="00:23:33.570" end="00:23:39.140">So, instead what you can do design come in and I can edit this action again.</p>
+      <p begin="00:23:39.140" end="00:23:43.320">And, inside the action I'm going to add what we call repeat so that</p>
+      <p begin="00:23:43.320" end="00:23:47.500">will iterate over a list of things so I can come back here and say repeat over</p>
+      <p begin="00:23:47.500" end="00:23:51.600">...and into this field I will pass</p>
+      <p begin="00:23:51.600" end="00:23:57.280">this array from the previous step so I can open this drop down here.</p>
+      <p begin="00:23:57.280" end="00:24:01.220">And, this flows the body from this request into the into</p>
+      <p begin="00:24:01.220" end="00:24:06.010">each iteration of this dropbox nectar so instead of having</p>
+      <p begin="00:24:06.010" end="00:24:11.620">the static filename...I'm going to have it be the</p>
+      <p begin="00:24:11.620" end="00:24:15.370">idea of the tweet so whenever you reference</p>
+      <p begin="00:24:15.370" end="00:24:19.410">and item from that iteration from the repeat it's just a function called</p>
+      <p begin="00:24:19.410" end="00:24:25.000">repeat item and then I'll do tweet id in addition I can, you know,</p>
+      <p begin="00:24:25.000" end="00:24:28.710">a pen things the beginning or the end of this field so for dropbox I want</p>
+      <p begin="00:24:28.710" end="00:24:33.680">actually put everything into a folder so I'll just call this my folder so I'm just constructing a</p>
+      <p begin="00:24:33.680" end="00:24:38.160">path here right and then at the end of the path all do dot txt so this</p>
+      <p begin="00:24:38.160" end="00:24:42.840">...do is we'll put the tweets into a folder called my folder with the idea of the tweet</p>
+      <p begin="00:24:42.840" end="00:24:48.810">...the filename and then for the content you can type these expressions but instead if I just want to be</p>
+      <p begin="00:24:48.810" end="00:24:53.910">able to drop in say the fields directly I can do that you see we've</p>
+      <p begin="00:24:53.910" end="00:24:57.540">...populated...with the expression you need so you don't necessarily need to learn all</p>
+      <p begin="00:24:57.540" end="00:25:03.800">about these languages you can just drop them directly into the fields here.</p>
+      <p begin="00:25:03.800" end="00:25:06.480">And, then you can also of course and other text...site side the</p>
+      <p begin="00:25:06.480" end="00:25:10.960">...I could say was treated by.</p>
+      <p begin="00:25:10.960" end="00:25:16.950">And, then it has the person was treated by I can change any of these other fields.</p>
+      <p begin="00:25:16.950" end="00:25:24.420">...I click okay.</p>
+      <p begin="00:25:24.420" end="00:25:28.480">So, there you go successful so now what's happened is this updated logic</p>
+      <p begin="00:25:28.480" end="00:25:33.270">app has been deployed into the cloud all I've done is I've just modified a few fields</p>
+      <p begin="00:25:33.270" end="00:25:37.520">in the ui and it's already it's up there it's running.</p>
+      <p begin="00:25:37.520" end="00:25:41.670">So, I'm going to close this out real quick and show you one other</p>
+      <p begin="00:25:41.670" end="00:25:45.170">view so this see right here this shows you all of the</p>
+      <p begin="00:25:45.170" end="00:25:48.710">...the...that this logic app is executed so,</p>
+      <p begin="00:25:48.710" end="00:25:51.800">for example, at twelve-fifty for it when often</p>
+      <p begin="00:25:51.800" end="00:25:57.220">it did something so I can click this and I can see all the actions that it took along with each</p>
+      <p begin="00:25:57.220" end="00:26:02.090">action I can see the exact inputs and outputs of that call</p>
+      <p begin="00:26:02.090" end="00:26:07.080">in this case let's look at what the twitter connector returned and I can see here that</p>
+      <p begin="00:26:07.080" end="00:26:10.340">...will have return say list of tweets.</p>
+      <p begin="00:26:10.340" end="00:26:15.230">So, you can see here I can see all of the tweets that people has had about logic</p>
+      <p begin="00:26:15.230" end="00:26:22.060">apps pretty sure I saw my name here that.</p>
+      <p begin="00:26:22.060" end="00:26:26.880">I can close this out and if I go now to my dropbox hopefully by now so you</p>
+      <p begin="00:26:26.880" end="00:26:28.850">see my folder was added</p>
+      <p begin="00:26:28.850" end="00:26:32.300">if I open this up I will see the tweets that have recently</p>
+      <p begin="00:26:32.300" end="00:26:36.790">come in about large gaps thirty seconds ago if I open up one of these.</p>
+      <p begin="00:26:36.790" end="00:26:42.410">You see it has now both the that pretext as well as who treated it so,</p>
+      <p begin="00:26:42.410" end="00:26:47.360">you can definitely combine as many different fields together is you want and you can use this</p>
+      <p begin="00:26:47.360" end="00:26:52.110">...to construct a great business process.</p>
+      <p begin="00:26:52.110" end="00:27:02.560">So, now something failed somewhere we don't need to investigate that right now.</p>
+      <p begin="00:27:02.560" end="00:27:07.430">So, just to recapwhat I've shown is how you can very easily build</p>
+      <p begin="00:27:07.430" end="00:27:13.200">a business process in just a few minutes by using the ui in the portal?</p>
+      <p begin="00:27:13.200" end="00:27:17.080">Now the key concept here was that we are flowing</p>
+      <p begin="00:27:17.080" end="00:27:22.070">data between each of these steps and this creates what we call-in implicit dependency</p>
+      <p begin="00:27:22.070" end="00:27:26.470">so that dropbox step when it executes depends on the twitter step</p>
+      <p begin="00:27:26.470" end="00:27:31.400">successfully executing and because you're using the twitter data inside of the</p>
+      <p begin="00:27:31.400" end="00:27:34.930">dropbox step it knows that the first one</p>
+      <p begin="00:27:34.930" end="00:27:40.270">...execute finish and then dropbox myaccess acute however if you</p>
+      <p begin="00:27:40.270" end="00:27:44.870">prefer to a wire up your dependencies explicitly so you say I want this to</p>
+      <p begin="00:27:44.870" end="00:27:48.080">execute than that than that you can and we give you</p>
+      <p begin="00:27:48.080" end="00:27:52.260">an explicit syntax to do that you can use depends on.</p>
+      <p begin="00:27:52.260" end="00:27:57.160">Finally you can build even more complex expressions which ilya will cover</p>
+      <p begin="00:27:57.160" end="00:28:02.930">and his section the demo to do things like when something fails do an action.</p>
+      <p begin="00:28:02.930" end="00:28:07.180">The other concept that I covered was repeating so this allowed us to</p>
+      <p begin="00:28:07.180" end="00:28:12.140">execute as many times as there was an item in a list is a for each right.</p>
+      <p begin="00:28:12.140" end="00:28:16.690">And, you can also imagine we have a function called range that just returns</p>
+      <p begin="00:28:16.690" end="00:28:20.710">back-end array of numbers so you could do just your old-style</p>
+      <p begin="00:28:20.710" end="00:28:27.350">for into I equals zero et cetera et...inside of a logic app as well.</p>
+      <p begin="00:28:27.350" end="00:28:29.750">Finally I didn't quite cover this earlier</p>
+      <p begin="00:28:29.750" end="00:28:34.620">...as well is we have conditions and what's interesting about conditions is they allow</p>
+      <p begin="00:28:34.620" end="00:28:40.600">you to the either conditionally execute or not execute so</p>
+      <p begin="00:28:40.600" end="00:28:46.880">with that all handed over to ilya and he'll talk about the architecture...gaps.</p>
+      <p begin="00:28:46.880" end="00:28:49.380">Hello, everyone my name is media and I</p>
+      <p begin="00:28:49.380" end="00:28:54.750">am as resource manager architect and logic cops architect and you guys</p>
+      <p begin="00:28:54.750" end="00:28:58.930">short ca grade them of logic...right so every fan beautiful</p>
+      <p begin="00:28:58.930" end="00:29:03.660">lies ui but what we build actually is available the rest api</p>
+      <p begin="00:29:03.660" end="00:29:08.230">we have a concept of a definition you can actually serialized entire workflow you</p>
+      <p begin="00:29:08.230" end="00:29:13.130">build in ui and chicken your source code and use it later so I'm going to show all</p>
+      <p begin="00:29:13.130" end="00:29:18.320">these details about language and about how it can use visual studio to actually...in your</p>
+      <p begin="00:29:18.320" end="00:29:23.650">project but let's step back a little bit and talk about the edge resource manager so</p>
+      <p begin="00:29:23.650" end="00:29:26.950">leisure source manager allow you to artistry deployments</p>
+      <p begin="00:29:26.950" end="00:29:31.580">of various resources in the cloud so you may actually a so</p>
+      <p begin="00:29:31.580" end="00:29:35.640">markers univision demo how easy to create two hundred nodes</p>
+      <p begin="00:29:35.640" end="00:29:40.280">gloucester less than five minutes that's actually...of the iceberg we can actually</p>
+      <p begin="00:29:40.280" end="00:29:45.150">create hundred-thousand offer resources in five minutes as long as</p>
+      <p begin="00:29:45.150" end="00:29:49.400">you have subscription capable called this number of resource based on the what</p>
+      <p begin="00:29:49.400" end="00:29:54.970">...so we have this great engine and then we decide it will be cool</p>
+      <p begin="00:29:54.970" end="00:29:58.260">to actually expose it to all customers and let them run</p>
+      <p begin="00:29:58.260" end="00:30:02.380">...on business logic so that's why we build this logic</p>
+      <p begin="00:30:02.380" end="00:30:07.010">...engine and you can actually find that it's very similar to what</p>
+      <p begin="00:30:07.010" end="00:30:08.090">we explores</p>
+      <p begin="00:30:08.090" end="00:30:12.910">...resource manager as well so if you guys at the use like templates or you try to use like</p>
+      <p begin="00:30:12.910" end="00:30:16.380">rest api that something similar and this is something we</p>
+      <p begin="00:30:16.380" end="00:30:21.840">...actually you guys try as well so...same engine we share most of the</p>
+      <p begin="00:30:21.840" end="00:30:27.710">...it is highly distributed highly available.</p>
+      <p begin="00:30:27.710" end="00:30:32.440">Be try to do as best as possible...no failures and like deliver, for example,</p>
+      <p begin="00:30:32.440" end="00:30:35.230">each action have certain guarantees but</p>
+      <p begin="00:30:35.230" end="00:30:39.990">that's not really exactly the same as the measure source measure, for example,</p>
+      <p begin="00:30:39.990" end="00:30:44.810">the first think of ed...the extend the language to include more</p>
+      <p begin="00:30:44.810" end="00:30:49.670">functions so if you look and editor source manager functions is only eight of them and most</p>
+      <p begin="00:30:49.670" end="00:30:53.500">of them about the stink manipulations for logic up</p>
+      <p begin="00:30:53.500" end="00:30:57.550">...support for logical operations for moffett...be</p>
+      <p begin="00:30:57.550" end="00:31:02.440">...support for json transformations so you can actually use this logic...</p>
+      <p begin="00:31:02.440" end="00:31:07.310">in your workflow definition in order to like pipe information across different</p>
+      <p begin="00:31:07.310" end="00:31:12.070">actions perform transformations summer logic and then it's all in very</p>
+      <p begin="00:31:12.070" end="00:31:18.140">...language what we also did in logic cops</p>
+      <p begin="00:31:18.140" end="00:31:20.350">engine we'll let them speak natively</p>
+      <p begin="00:31:21.760" end="00:31:25.550">...reston points so we...betters</p>
+      <p begin="00:31:27.470" end="00:31:34.270">...is like basic...certificate or both so if you have</p>
+      <p begin="00:31:34.270" end="00:31:36.980">...json address base and point</p>
+      <p begin="00:31:36.980" end="00:31:41.100">right now most likely you can use it within the logic</p>
+      <p begin="00:31:41.100" end="00:31:46.150">...engine already without any modifications and if you have</p>
+      <p begin="00:31:46.150" end="00:31:50.980">like xml based or maybe not very restful api you can create</p>
+      <p begin="00:31:50.980" end="00:31:55.180">an api connector which you can use in order to</p>
+      <p begin="00:31:55.180" end="00:31:58.400">...perform this little bit of like transformation or make</p>
+      <p begin="00:31:58.400" end="00:32:03.990">...like restful so you can immediately start consuming...within the logic ox.</p>
+      <p begin="00:32:03.990" end="00:32:07.940">Logic cops also have unique concept of the triggers so if you look and</p>
+      <p begin="00:32:07.940" end="00:32:10.480">editor resource manager all this deploys</p>
+      <p begin="00:32:10.480" end="00:32:15.530">...manually you can go in ui and click the button or you can use like our</p>
+      <p begin="00:32:15.530" end="00:32:19.860">...submit...new template deployment in logic cops we introduce the concept of</p>
+      <p begin="00:32:19.860" end="00:32:23.180">that triggers, triggers can be very simple is just run this</p>
+      <p begin="00:32:23.180" end="00:32:27.580">thing can every fifteen seconds or is can be complex...like each certain</p>
+      <p begin="00:32:27.580" end="00:32:32.180">endpoint get the output validate certain properties,</p>
+      <p begin="00:32:32.180" end="00:32:32.800">for example,</p>
+      <p begin="00:32:32.800" end="00:32:38.170">you can actually use dieter connector which steven show early</p>
+      <p begin="00:32:38.170" end="00:32:43.140">as...three gear when I can that each at tweet that api search for...find</p>
+      <p begin="00:32:43.140" end="00:32:47.920">someone some negative to be the bite my company using...knowledge is if it's cross</p>
+      <p begin="00:32:47.920" end="00:32:52.700">...threshold then I can execute the rest of my workflow in order, for example,</p>
+      <p begin="00:32:52.700" end="00:33:01.330">like customer support to reach out the person and provide the support?</p>
+      <p begin="00:33:01.330" end="00:33:04.920">So, what we try to do with this language</p>
+      <p begin="00:33:04.920" end="00:33:09.750">is to make it a simple us possible and remover baiter to</p>
+      <p begin="00:33:09.750" end="00:33:12.880">answer and trite these does well this is the simplest?</p>
+      <p begin="00:33:14.160" end="00:33:18.540">Actual logical up workflow definition it is</p>
+      <p begin="00:33:18.540" end="00:33:23.410">only for top-level properties you actually need to know.</p>
+      <p begin="00:33:23.410" end="00:33:25.350">In fact all of them optional.</p>
+      <p begin="00:33:26.410" end="00:33:30.790">You can have workflow...out parameters leaguers options or</p>
+      <p begin="00:33:30.790" end="00:33:37.870">no output...toll and...perfectly valid workflow which do enough and.</p>
+      <p begin="00:33:37.870" end="00:33:40.530">Let's talk about the individual</p>
+      <p begin="00:33:40.530" end="00:33:45.470">...in details so what's the parameters so the idea is basically you have</p>
+      <p begin="00:33:45.470" end="00:33:50.460">the workflow and its execute certain steps and what you want you actually won the</p>
+      <p begin="00:33:50.460" end="00:33:52.860">peep these steps based on your different like</p>
+      <p begin="00:33:52.860" end="00:33:57.610">...environment or uonechange some...is</p>
+      <p begin="00:33:57.610" end="00:34:02.370">...a certain situation that's why we have a parameters so you keep your workflow static and</p>
+      <p begin="00:34:02.370" end="00:34:06.140">you can supply parameters file or like provide parameter</p>
+      <p begin="00:34:06.140" end="00:34:11.000">single-line in a way that you don't actually need to change of workflow definition</p>
+      <p begin="00:34:11.000" end="00:34:14.970">...it's actually very useful if you can consider chicken in your...</p>
+      <p begin="00:34:14.970" end="00:34:19.830">definition two-source control and then you have separate files, for example,...production or...</p>
+      <p begin="00:34:19.830" end="00:34:24.800">environments we also provide in like basic support all of the parameters validation of the</p>
+      <p begin="00:34:24.800" end="00:34:26.920">explores the concept of the type we can</p>
+      <p begin="00:34:26.920" end="00:34:31.730">...like streak integer of an object we also allow you to specify default</p>
+      <p begin="00:34:31.730" end="00:34:35.780">...or list of about allow it well it's?</p>
+      <p begin="00:34:35.780" end="00:34:38.850">The next concept is that the...which I mentioned earlier</p>
+      <p begin="00:34:39.870" end="00:34:44.910">...currents they basically run every fifteen seconds fifty</p>
+      <p begin="00:34:44.910" end="00:34:48.750">...how you configuredyou can actually have multiple</p>
+      <p begin="00:34:48.750" end="00:34:52.160">triggers within the same workload definition right so, for example,</p>
+      <p begin="00:34:52.160" end="00:34:56.160">you may actually can see there are...of workflow</p>
+      <p begin="00:34:56.160" end="00:35:01.310">...is betas factor actually I need to trigger but they actually work</p>
+      <p begin="00:35:02.650" end="00:35:07.770">...the another interesting concept is actually that trigger is a stateful so you can</p>
+      <p begin="00:35:07.770" end="00:35:12.460">use the previous trigger execution in order to make a decision so,</p>
+      <p begin="00:35:12.460" end="00:35:14.480">for example, let's say you have a</p>
+      <p begin="00:35:14.480" end="00:35:20.090">...which fire every time new...sharpen...books and you try to...to,</p>
+      <p begin="00:35:20.090" end="00:35:25.700">for example, one drive three-year fire you have a list of files but unfortunately of workflow can</p>
+      <p begin="00:35:25.700" end="00:35:28.950">...transfer or files it once so you have to do</p>
+      <p begin="00:35:28.950" end="00:35:33.780">it one by one so you can actually use a state within that</p>
+      <p begin="00:35:33.780" end="00:35:38.120">...in order to save...files which you already process and you can actually make it fully</p>
+      <p begin="00:35:38.120" end="00:35:42.270">stateful or another example could be like...time stamp let's</p>
+      <p begin="00:35:42.270" end="00:35:46.690">say a princess chunk of work up to ten am and next execution io</p>
+      <p begin="00:35:46.690" end="00:35:51.960">...says from ten...to eleven I am so trigger stateful it's very it's very</p>
+      <p begin="00:35:51.960" end="00:35:57.000">crucial for certain us scenarios another thing we actually have an...is a concept of</p>
+      <p begin="00:35:57.000" end="00:36:01.250">...conditions, conditions ox does a post condition</p>
+      <p begin="00:36:01.250" end="00:36:05.940">they basically will run off to be perform and the rest http</p>
+      <p begin="00:36:05.940" end="00:36:10.130">call in order to evaluate that...you should be fired or not so,</p>
+      <p begin="00:36:10.130" end="00:36:14.060">for example, previously I mention how you can use to</p>
+      <p begin="00:36:14.060" end="00:36:16.580">...connector in order to reach out to</p>
+      <p begin="00:36:16.580" end="00:36:21.780">...and all...that tweet and see if...a machine negative about your company you can</p>
+      <p begin="00:36:21.780" end="00:36:25.840">actually use conditions in order to say jeopardy gears</p>
+      <p begin="00:36:25.840" end="00:36:30.860">...get two-thirty get the sentiment on elements and then you can use...condition in order</p>
+      <p begin="00:36:30.860" end="00:36:35.830">to compare how negative score is looks like if it's super but then you can use one</p>
+      <p begin="00:36:36.960" end="00:36:40.960">...in negative then you can use another workflow?</p>
+      <p begin="00:36:40.960" end="00:36:46.940">Next...is.</p>
+      <p begin="00:36:46.940" end="00:36:48.840">Options sorry about that so</p>
+      <p begin="00:36:48.840" end="00:36:53.770">...is a set of steps which will be executed each time the workflow</p>
+      <p begin="00:36:53.770" end="00:36:58.370">is workflows...option have a dependencies order</p>
+      <p begin="00:36:58.370" end="00:37:03.890">of execution is infer but this dependencies but if to action</p>
+      <p begin="00:37:03.890" end="00:37:08.500">don't have any dependence is you can assume it's run in parallel in this case the logic</p>
+      <p begin="00:37:08.500" end="00:37:11.250">...engines provide at best effort to</p>
+      <p begin="00:37:11.250" end="00:37:16.190">execute your workflow as fast as possible and in most cases</p>
+      <p begin="00:37:16.190" end="00:37:19.650">...your rest api very...can take up this</p>
+      <p begin="00:37:19.650" end="00:37:25.110">...few seconds likeit...of also conditions</p>
+      <p begin="00:37:25.110" end="00:37:30.550">but this is actually preconditions they will be evaluated each time</p>
+      <p begin="00:37:30.550" end="00:37:35.420">than auction is about the execute in order to decide should this action execute or</p>
+      <p begin="00:37:35.420" end="00:37:40.550">base keep I will show...demo how we can actually use it later in order to perform</p>
+      <p begin="00:37:40.550" end="00:37:44.030">an action...if something fail right so</p>
+      <p begin="00:37:44.030" end="00:37:47.960">they're not necessarily want to execute action of somethin' succeed we can actually use</p>
+      <p begin="00:37:47.960" end="00:37:52.480">...condition in order to compensate or have an action which only run</p>
+      <p begin="00:37:52.480" end="00:37:55.320">...previous step fail?</p>
+      <p begin="00:37:55.320" end="00:37:57.840">Likeit...actions also have a state</p>
+      <p begin="00:37:57.840" end="00:38:02.030">that fully stateful the state he's unique for each is individual...</p>
+      <p begin="00:38:02.030" end="00:38:06.890">for execution and you can use this step so, for example, achieve like scenario</p>
+      <p begin="00:38:06.890" end="00:38:11.750">...a want to use measures source manager deployment I one of</p>
+      <p begin="00:38:11.750" end="00:38:16.260">...when it's completed and I want to send light text message to myself</p>
+      <p begin="00:38:16.260" end="00:38:20.440">...no my deployment them in this case I will create the workflow I'll have to</p>
+      <p begin="00:38:20.440" end="00:38:22.190">...the first action</p>
+      <p begin="00:38:22.190" end="00:38:26.330">...initiate of process of a template deployment the deployment resources</p>
+      <p begin="00:38:26.330" end="00:38:30.170">in larger then I will wait until it's completed by using the stateful</p>
+      <p begin="00:38:30.170" end="00:38:35.110">mcneese and the last step will be just some text message I will actually show it how we can</p>
+      <p begin="00:38:35.110" end="00:38:39.050">send text message out later.</p>
+      <p begin="00:38:39.050" end="00:38:42.440">Steven already mention each actual have a concept</p>
+      <p begin="00:38:42.440" end="00:38:47.550">...repeat items we allow you to the...action for released</p>
+      <p begin="00:38:47.550" end="00:38:52.130">often do you...items like an array but what's interesting that</p>
+      <p begin="00:38:52.130" end="00:38:57.850">an action can be...just http action option can be</p>
+      <p begin="00:38:57.850" end="00:39:02.400">actually three-year another workflow as a result if you have a list of</p>
+      <p begin="00:39:02.400" end="00:39:07.350">items and you have another workflow you...actually combine these two concept together...</p>
+      <p begin="00:39:07.350" end="00:39:12.560">very powerful thing when you opponent...the list of items and</p>
+      <p begin="00:39:12.560" end="00:39:16.950">each...will be processor child workflow and you can have separate diffusion files</p>
+      <p begin="00:39:16.950" end="00:39:22.450">...chicken them source control and them use them independent.</p>
+      <p begin="00:39:22.450" end="00:39:26.980">And, the last thing is that template language expressions you already so some of the</p>
+      <p begin="00:39:26.980" end="00:39:31.790">expressions scene ui don't hide them we actually allowed them user to use</p>
+      <p begin="00:39:31.790" end="00:39:37.070">they basically an extension of the like a json so the basic</p>
+      <p begin="00:39:37.070" end="00:39:39.260">...of the workload definition is</p>
+      <p begin="00:39:39.260" end="00:39:42.660">...file...but...allow you to express</p>
+      <p begin="00:39:42.660" end="00:39:46.640">...and transformations certain conditions certain expressions so the</p>
+      <p begin="00:39:46.640" end="00:39:52.430">add this concept of template language expressions they basically done...sort of</p>
+      <p begin="00:39:52.430" end="00:39:58.200">...start with the symbol...and you can also...of the string interpolation</p>
+      <p begin="00:39:58.200" end="00:40:01.940">...so this little things allow you to perform like math for</p>
+      <p begin="00:40:01.940" end="00:40:05.810">...community and manipulations just like</p>
+      <p begin="00:40:05.810" end="00:40:09.160">in javascript all this template languish expressions looks like a functions</p>
+      <p begin="00:40:09.160" end="00:40:13.020">with a parameters and you can use dot or index in order</p>
+      <p begin="00:40:13.020" end="00:40:18.380">to extract properties so they think it's actually very simple you can actually see a few examples</p>
+      <p begin="00:40:18.380" end="00:40:23.950">...the screen now let me go back to ...them and visual studious so let me tell what's,</p>
+      <p begin="00:40:23.950" end="00:40:26.870">what's going to happen so I have a simple website with currently</p>
+      <p begin="00:40:26.870" end="00:40:30.350">running and measure and I'm going to create a</p>
+      <p begin="00:40:30.350" end="00:40:34.530">...allergic up feature video perform the endpoint</p>
+      <p begin="00:40:34.530" end="00:40:39.810">...each will basically try to being my website every fifteen seconds</p>
+      <p begin="00:40:39.810" end="00:40:44.520">...succeed or fail and if it fails it will actually send-me...message</p>
+      <p begin="00:40:44.520" end="00:40:49.510">because I always want to know that my website is healthy and every time software on I want to see the</p>
+      <p begin="00:40:49.510" end="00:40:54.640">...and that will take some action so I let me go back to</p>
+      <p begin="00:40:55.730" end="00:40:58.420">...ok so here's my</p>
+      <p begin="00:40:58.420" end="00:41:03.520">website is very simple obstinate website is nothing specialas</p>
+      <p begin="00:41:03.520" end="00:41:07.930">a few steps aidid I already provision and api up and</p>
+      <p begin="00:41:07.930" end="00:41:11.550">...group I...to...new api up</p>
+      <p begin="00:41:11.550" end="00:41:16.470">...request a little bit of configuration what's why...that upfront</p>
+      <p begin="00:41:16.470" end="00:41:20.290">...basically allowed me to send a text messages so now if I</p>
+      <p begin="00:41:20.290" end="00:41:25.310">...back to visual studio here's the new instance of...is</p>
+      <p begin="00:41:25.310" end="00:41:32.650">...is...I can't I see itnew project and you can find.</p>
+      <p begin="00:41:32.650" end="00:41:36.400">Measure resource manager template deployment option available</p>
+      <p begin="00:41:36.400" end="00:41:41.050">under visuals csharp and the cloud so let me...ka</p>
+      <p begin="00:41:41.050" end="00:41:45.500">...release meet few options which I can use in order to like bootstrap my</p>
+      <p begin="00:41:45.500" end="00:41:47.880">initial template what is to</p>
+      <p begin="00:41:47.880" end="00:41:52.590">...specific about logic cops one is just logic up and one is</p>
+      <p begin="00:41:52.590" end="00:41:57.700">large-cap is api up for purpose of this them I will use logic of but I encourage</p>
+      <p begin="00:41:57.700" end="00:42:02.460">everyone to chide the second option it will allow you...only create the logic</p>
+      <p begin="00:42:02.460" end="00:42:07.300">offers in the from visual studio but also create and api out</p>
+      <p begin="00:42:07.300" end="00:42:11.280">...before you can create and api to connect your light known</p>
+      <p begin="00:42:11.280" end="00:42:14.040">...json and point-two something we can</p>
+      <p begin="00:42:14.040" end="00:42:17.870">...the logic up so these actually project will show you how</p>
+      <p begin="00:42:17.870" end="00:42:27.230">to create and api and combine them together so let's keep cute on...logical.</p>
+      <p begin="00:42:27.230" end="00:42:31.970">Yes, this is a simple, simple projects only have four files and</p>
+      <p begin="00:42:31.970" end="00:42:36.730">its include measure resource manager template this-is logic</p>
+      <p begin="00:42:36.730" end="00:42:43.410">of the...and its include whoops.</p>
+      <p begin="00:42:43.410" end="00:42:48.000">Whoops okay this is a resource measure template and include the parameter</p>
+      <p begin="00:42:48.000" end="00:42:52.060">file so you can have different prized...I will speech back to</p>
+      <p begin="00:42:52.060" end="00:42:56.640">different insists of visual studio...I complete my applications and then we can look at</p>
+      <p begin="00:42:56.640" end="00:43:01.640">yean details so basically this is same initial logic up's</p>
+      <p begin="00:43:01.640" end="00:43:07.330">application...resource manager template for logic cops I extended to</p>
+      <p begin="00:43:07.330" end="00:43:12.250">add in additional resource so you can see I actually have...of what</p>
+      <p begin="00:43:12.250" end="00:43:15.910">...gateway tokens I need this resource in order to all</p>
+      <p begin="00:43:15.910" end="00:43:18.640">log communication between logic cops and api</p>
+      <p begin="00:43:18.640" end="00:43:22.970">avce they basically I created at tool can inside and</p>
+      <p begin="00:43:22.970" end="00:43:27.470">api a and api...basically saying you-can call me and this is...is just</p>
+      <p begin="00:43:27.470" end="00:43:30.230">...the...to establish these</p>
+      <p begin="00:43:30.230" end="00:43:35.160">connections and then the second resource my actual logic up workflow</p>
+      <p begin="00:43:35.160" end="00:43:40.250">...perform...on the http endpoint and then perform certain validation</p>
+      <p begin="00:43:40.250" end="00:43:46.500">...conditions in order to triggered the text message so we can</p>
+      <p begin="00:43:46.500" end="00:43:50.680">see state some measure source manager parameters but you can also find that</p>
+      <p begin="00:43:50.680" end="00:43:53.920">the have same definition I described earlier</p>
+      <p begin="00:43:54.960" end="00:44:00.170">...have a single parameter gateway token which...secure...because we don't want to</p>
+      <p begin="00:44:00.170" end="00:44:05.820">...ui and...the one them make sure that the...they have a simple</p>
+      <p begin="00:44:05.820" end="00:44:11.060">...typerecurrence which fire every fifteen seconds what this means that but</p>
+      <p begin="00:44:11.060" end="00:44:14.910">now I published this workflow it will start executing and we'll start</p>
+      <p begin="00:44:14.910" end="00:44:18.550">fide in every fifteen minutes fifteen seconds.</p>
+      <p begin="00:44:18.550" end="00:44:21.190">And, have an actions which we have to</p>
+      <p begin="00:44:21.190" end="00:44:24.460">...one of this type of http?</p>
+      <p begin="00:44:24.460" end="00:44:29.580">And,...methods a and the specified and...to...this will</p>
+      <p begin="00:44:29.580" end="00:44:34.080">fire every time it to perform the gap and it's complete and</p>
+      <p begin="00:44:34.080" end="00:44:39.040">...results saying is that succeeded or fail and what's the response</p>
+      <p begin="00:44:39.040" end="00:44:44.290">code we received from the website and they have at video</p>
+      <p begin="00:44:44.290" end="00:44:47.300">...which will fire?</p>
+      <p begin="00:44:47.300" end="00:44:50.170">On the my previous step</p>
+      <p begin="00:44:50.170" end="00:44:55.130">fail this is actually interesting I using this condition expression in order to</p>
+      <p begin="00:44:55.130" end="00:44:59.130">tale I'm only interested in these step</p>
+      <p begin="00:44:59.130" end="00:45:03.030">...this expression...evaluated to true the way</p>
+      <p begin="00:45:03.030" end="00:45:07.610">how I constructed I basically take my action the http being.</p>
+      <p begin="00:45:07.610" end="00:45:12.490">I take this...scored from http request I compare it...all</p>
+      <p begin="00:45:12.490" end="00:45:16.900">k and the only...in efforts not equals.</p>
+      <p begin="00:45:16.900" end="00:45:21.040">What's interesting...workload definition I never tell that</p>
+      <p begin="00:45:21.040" end="00:45:24.060">my auction tweet there is depending on</p>
+      <p begin="00:45:24.060" end="00:45:29.820">...what's the template actually...what's the engine...actually try to</p>
+      <p begin="00:45:29.820" end="00:45:33.860">...and understand and by virtually the fact that I'm using the status</p>
+      <p begin="00:45:33.860" end="00:45:40.880">called from previous option it actually node that these action must execute offer.</p>
+      <p begin="00:45:40.880" end="00:45:46.480">Now look on the input section...include some standard parameters for</p>
+      <p begin="00:45:46.480" end="00:45:50.760">api...I need to express...host basically define</p>
+      <p begin="00:45:50.760" end="00:45:55.070">whereas my api allocated so I can construct like address your in you are in</p>
+      <p begin="00:45:55.070" end="00:46:00.010">...to call it and some...park ba using the gateway token so we can</p>
+      <p begin="00:46:00.010" end="00:46:04.670">communicate...I also tell in that I'm actually interested in the particle</p>
+      <p begin="00:46:04.670" end="00:46:08.740">operations so you so in the ui that we are</p>
+      <p begin="00:46:08.740" end="00:46:13.870">...operations available from the api apps I'm saying I'm interested in</p>
+      <p begin="00:46:13.870" end="00:46:18.730">sem message here's my request parameters for a send message I basically</p>
+      <p begin="00:46:18.730" end="00:46:23.340">put some cell phone numbers and I used in the body of a text message so</p>
+      <p begin="00:46:23.340" end="00:46:26.800">as you can also see I'm using the string interpolation</p>
+      <p begin="00:46:26.800" end="00:46:30.100">so I'm actually curious what's the status</p>
+      <p begin="00:46:30.100" end="00:46:34.400">...my website return because I'm a interested in like if it's internal</p>
+      <p begin="00:46:34.400" end="00:46:38.350">server errors like http not found so I can take a different</p>
+      <p begin="00:46:38.350" end="00:46:43.880">actions right away so let me go back to.</p>
+      <p begin="00:46:43.880" end="00:46:52.360">Portal and draws to my resource group.</p>
+      <p begin="00:46:52.360" end="00:46:59.360">Here's...build them resources which I.</p>
+      <p begin="00:46:59.360" end="00:47:00.610">Ok.</p>
+      <p begin="00:47:00.610" end="00:47:05.540">Here's my resource growth as you can see I have for sources here this is my video</p>
+      <p begin="00:47:05.540" end="00:47:10.190">...share provision previously I also have a gateway which participating</p>
+      <p begin="00:47:10.190" end="00:47:14.860">communications and...secure I also have my logic</p>
+      <p begin="00:47:14.860" end="00:47:17.870">top site being which is currently running and more</p>
+      <p begin="00:47:17.870" end="00:47:27.360">...website and I have website itself let's go check the logic of itself.</p>
+      <p begin="00:47:27.360" end="00:47:30.120">...if it loads.</p>
+      <p begin="00:47:30.120" end="00:47:34.900">as you can see we already have some history of executions one is particularly</p>
+      <p begin="00:47:34.900" end="00:47:39.420">...right now but let's go back and check the previous ones so as you can see</p>
+      <p begin="00:47:39.420" end="00:47:43.660">it so far my http action...and might video</p>
+      <p begin="00:47:43.660" end="00:47:48.970">...step resource...I say I don't want to send a text message if edifice expense</p>
+      <p begin="00:47:48.970" end="00:47:56.270">...successful so let's go back and simulate the fehler I'm going</p>
+      <p begin="00:47:56.270" end="00:48:02.150">My website and I'm going to stop so the minute I stop with my http</p>
+      <p begin="00:48:02.150" end="00:48:06.900">requests should not reach the website and hopefully in fifteen seconds I'll</p>
+      <p begin="00:48:06.900" end="00:48:11.020">get a text message.</p>
+      <p begin="00:48:11.020" end="00:48:15.950">They do show just to help a little bit I can actually try to</p>
+      <p begin="00:48:15.950" end="00:48:20.380">some music writing...I'm keep getting the text messages and that say that</p>
+      <p begin="00:48:20.380" end="00:48:26.690">...website being...start escort these forbidden.</p>
+      <p begin="00:48:26.690" end="00:48:33.190">And, if you scroll to the history ...of the runs I can actually see.</p>
+      <p begin="00:48:33.190" end="00:48:39.520">The...and might video...that because I just get</p>
+      <p begin="00:48:39.520" end="00:48:43.790">the text message so what's interesting as a...mention...actually keep</p>
+      <p begin="00:48:43.790" end="00:48:48.620">...he city of the input and output request you can actually clique on the</p>
+      <p begin="00:48:48.620" end="00:48:53.520">lean can see in order to being...use get...particularly...uri and the</p>
+      <p begin="00:48:53.520" end="00:48:58.510">...output link I can actually see what's happened you cv my website is not available</p>
+      <p begin="00:48:58.510" end="00:49:05.070">and...the...that...so to...I just want to tell you that</p>
+      <p begin="00:49:05.070" end="00:49:11.230">...you see...is currently explores and.</p>
+      <p begin="00:49:11.230" end="00:49:16.200">Available as a restful api you can create your workflow you can...</p>
+      <p begin="00:49:16.200" end="00:49:21.050">into your source code you can deploy it within your application</p>
+      <p begin="00:49:21.050" end="00:49:25.460">other parts of the...template resource manager deployment and</p>
+      <p begin="00:49:25.460" end="00:49:31.430">you can will use all these great capabilities in very simple and declarative</p>
+      <p begin="00:49:31.430" end="00:49:35.880">...form right so you guys don't need to be an expert we call it's</p>
+      <p begin="00:49:35.880" end="00:49:38.850">...familiar is json javascript and you can actually</p>
+      <p begin="00:49:38.850" end="00:49:42.860">connected to things together so I think did</p>
+      <p begin="00:49:42.860" end="00:49:46.920">...you actually cover how to do the deployment...I can show it's one-man</p>
+      <p begin="00:49:46.920" end="00:49:50.270">...basically to deploy of to do is write click go deploy...choose</p>
+      <p begin="00:49:50.270" end="00:49:57.120">to resource group and click deploy so it's that easy from visual studio to just get running.</p>
+      <p begin="00:49:57.120" end="00:50:03.620">Cool so we has one more demo.</p>
+      <p begin="00:50:03.620" end="00:50:06.690">So, this is a app that I made in</p>
+      <p begin="00:50:06.690" end="00:50:10.530">cn actually and what this does is this is</p>
+      <p begin="00:50:10.530" end="00:50:15.430">invoice tracking app so every time that I add a new invoice let's say I want to</p>
+      <p begin="00:50:15.430" end="00:50:19.620">...very pi it goes and</p>
+      <p begin="00:50:19.620" end="00:50:24.720">it will actually send a text message to my phone so,</p>
+      <p begin="00:50:24.720" end="00:50:30.860">what's running back here this is the actual you...see there's the text message so,</p>
+      <p begin="00:50:30.860" end="00:50:35.790">this is the actual logic...this running up in the cloud and</p>
+      <p begin="00:50:35.790" end="00:50:40.610">I can one of the key things there is one via</p>
+      <p begin="00:50:40.610" end="00:50:46.230">a direct interaction mobile app I was able to push to the...to make it run but,</p>
+      <p begin="00:50:46.230" end="00:50:51.050">the other interesting thing here is I can modify this logic at very easily so I could come in</p>
+      <p begin="00:50:51.050" end="00:50:55.760">and I could say instead of just in a text message let's also</p>
+      <p begin="00:50:55.760" end="00:51:00.580">...post when and invoices added so I can come here and I</p>
+      <p begin="00:51:00.580" end="00:51:05.990">can click on the post message action?</p>
+      <p begin="00:51:05.990" end="00:51:08.030">And, let's go and find that the</p>
+      <p begin="00:51:08.030" end="00:51:15.480">amr group so that five four six five...six.</p>
+      <p begin="00:51:15.480" end="00:51:19.620">Six and I can just as before I can flow the data into</p>
+      <p begin="00:51:19.620" end="00:51:22.060">the step and in this case I can flow the</p>
+      <p begin="00:51:22.060" end="00:51:26.650">data not just from the previous step of from any of the previous steps right.</p>
+      <p begin="00:51:26.650" end="00:51:30.070">And, then I can click okay.</p>
+      <p begin="00:51:30.070" end="00:51:34.660">And, now what will happen is not only will the logic app</p>
+      <p begin="00:51:34.660" end="00:51:37.690">...off a text message but it will also</p>
+      <p begin="00:51:37.690" end="00:51:44.550">...amr so I can just come here and I can add one more invoice.</p>
+      <p begin="00:51:44.550" end="00:51:51.390">And, I want to a new laptop as well.</p>
+      <p begin="00:51:51.390" end="00:51:56.090">...and, you can see the...this been approved because I approve the</p>
+      <p begin="00:51:56.090" end="00:52:02.040">text message and there's the second text message I got my laptop if I go over to</p>
+      <p begin="00:52:02.040" end="00:52:08.930">the...now will be able to see there's a laptop that type ten seconds ago from</p>
+      <p begin="00:52:08.930" end="00:52:13.390">...service large gaps so without touching my mobile code that's been deployed</p>
+      <p begin="00:52:13.390" end="00:52:18.120">to my application...able to update that business process so I added more functionality to</p>
+      <p begin="00:52:18.120" end="00:52:21.700">my application very easily by just doing what talk,</p>
+      <p begin="00:52:21.700" end="00:52:26.910">you know, thirty seconds and add...the other interesting point here is this showed</p>
+      <p begin="00:52:26.910" end="00:52:30.730">a human interaction so from my phone I was able to approve that</p>
+      <p begin="00:52:30.730" end="00:52:37.750">...message and then the second step...you can...for approval workflows, for example.</p>
+      <p begin="00:52:37.750" end="00:52:41.460">So, I'll switch back to the slides.</p>
+      <p begin="00:52:41.460" end="00:52:45.660">So, to just recap as your apps services a combination of</p>
+      <p begin="00:52:45.660" end="00:52:50.830">these for things in addition this week we announced apps service</p>
+      <p begin="00:52:50.830" end="00:52:56.280">environment's and absence environments are great because they give you a way to</p>
+      <p begin="00:52:57.970" end="00:53:02.640">...ask all the different code that you have onto a compute cluster that basically you</p>
+      <p begin="00:53:02.640" end="00:53:08.100">...you own but, ...be hosted by asher and that means that you can take</p>
+      <p begin="00:53:08.100" end="00:53:12.620">that you can... to your venus so-if you have private api is that you want to</p>
+      <p begin="00:53:12.620" end="00:53:17.120">use inside your organization you still want to be able to take advantage of api apps</p>
+      <p begin="00:53:17.120" end="00:53:19.910">and web apps mobile apps you can do that by using</p>
+      <p begin="00:53:19.910" end="00:53:24.740">app service environment's...can check that out in the portal?</p>
+      <p begin="00:53:24.740" end="00:53:28.480">And, you can get started it's you can there's a free</p>
+      <p begin="00:53:28.480" end="00:53:34.980">...so you can just play with it yourself as much as you want and.</p>
+      <p begin="00:53:34.980" end="00:53:38.430">The point I want to close on before we moved to qa looks like this</p>
+      <p begin="00:53:38.430" end="00:53:42.400">of five minutes is we want to be very feedback</p>
+      <p begin="00:53:42.400" end="00:53:47.040">resin historically we would come through and we create some three-year roadmap</p>
+      <p begin="00:53:47.040" end="00:53:52.870">in be microsoft sometimes some of those things wouldn't ever actually get done but,</p>
+      <p begin="00:53:52.870" end="00:53:56.200">we're not going to do that this time this time we want to be very agile</p>
+      <p begin="00:53:56.200" end="00:53:59.650">move very quickly so we want your feedback we want to</p>
+      <p begin="00:53:59.650" end="00:54:04.310">hear from you there's a lot of channels that you can do that you can go to forums</p>
+      <p begin="00:54:04.310" end="00:54:09.310">you can email me directly asked for my business card you can go to user voice</p>
+      <p begin="00:54:09.310" end="00:54:13.350">and but we want to hear what features are most important to you and what things you need to</p>
+      <p begin="00:54:13.350" end="00:54:17.190">accomplish your business scenarios in the cloud and based on that</p>
+      <p begin="00:54:17.190" end="00:54:23.240">we will move quickly and within a few weeks or months we will get things delivered you know,</p>
+      <p begin="00:54:23.240" end="00:54:27.750">for example, I was in london two weeks ago at this...it and customer</p>
+      <p begin="00:54:27.750" end="00:54:31.970">asked for the ability to do daytime for many for strings so</p>
+      <p begin="00:54:31.970" end="00:54:37.910">...just two weeks we were able to add that functionalityinto the portal so we want</p>
+      <p begin="00:54:37.910" end="00:54:43.480">...very quickly iterate and deliver functionality...so,</p>
+      <p begin="00:54:43.480" end="00:54:47.310">here is our twitter handles you go...service dot com</p>
+      <p begin="00:54:47.310" end="00:54:52.910">and I think this time open up for questions there are three...</p>
+      <p begin="00:54:52.910" end="00:54:58.670">here so-if you...just walk up to the...that way the recording can pick up your...great?</p>
+      <p begin="00:54:58.670" end="00:55:02.270">So,...you guys showed here is like a</p>
+      <p begin="00:55:02.270" end="00:55:06.800">million times more than you can actually figure out just by using the actual</p>
+      <p begin="00:55:06.800" end="00:55:11.960">...like conditionals it's not important right there's no way to actually so,</p>
+      <p begin="00:55:11.960" end="00:55:17.550">you can actually so there's it's we hide a lot inside year.</p>
+      <p begin="00:55:17.550" end="00:55:19.770">So, yeah, you can go to the gear and you can click and you can</p>
+      <p begin="00:55:19.770" end="00:55:25.130">...condition that comes back to that...want kind...more smooth learning curve so somebody</p>
+      <p begin="00:55:25.130" end="00:55:30.400">doesn't care about conditionals they don't have to worry about it but you're right it could be a bit more discoverable.</p>
+      <p begin="00:55:30.400" end="00:55:32.570">If I can.</p>
+      <p begin="00:55:32.570" end="00:55:35.690">It's awesome that you'll be able to figure out the dependencies and therefore</p>
+      <p begin="00:55:35.690" end="00:55:39.980">there doesn't have to be declarative form of if this then do that and</p>
+      <p begin="00:55:39.980" end="00:55:42.780">conditionals can help you stop going down one path</p>
+      <p begin="00:55:42.780" end="00:55:46.220">or another and even do compensation how you going to</p>
+      <p begin="00:55:46.220" end="00:55:50.560">visualize that because right now it's kinda like a pipeline...I could have something</p>
+      <p begin="00:55:50.560" end="00:55:55.130">although at the end that has something really to do or dependency on something very much of</p>
+      <p begin="00:55:55.130" end="00:56:00.380">the beginning like are you guys working on different ui paradigms yes not only the great things about I'm</p>
+      <p begin="00:56:00.380" end="00:56:05.500">going to say windows workflowwas it was very visual and therefore you could see kind</p>
+      <p begin="00:56:05.500" end="00:56:09.920">how things would flow for all that's absolutely but ...like this yes</p>
+      <p begin="00:56:09.920" end="00:56:14.050">...absolutely I would definitely working on reading the ui so,</p>
+      <p begin="00:56:14.050" end="00:56:18.980">what we have today is kind of the simple as...going to get and, we'll come up with ways to make</p>
+      <p begin="00:56:18.980" end="00:56:25.470">it a bit more powerful and more intuitively visualize what's going on but, ...not</p>
+      <p begin="00:56:25.470" end="00:56:29.400">...appropriate you could you elaborate on the epa</p>
+      <p begin="00:56:29.400" end="00:56:35.300">environment's...thing that's what...means of it was up...on what it was...I needed</p>
+      <p begin="00:56:35.300" end="00:56:40.720">...sure so for details on...environment'sI think there's another session that</p>
+      <p begin="00:56:40.720" end="00:56:44.300">cover that but very briefly basically what that means so when you create and</p>
+      <p begin="00:56:44.300" end="00:56:48.600">...service plan today without answers environment's you basically on that the...and you can</p>
+      <p begin="00:56:48.600" end="00:56:52.670">...player code on to it without service environment's what you do is you own the whole host</p>
+      <p begin="00:56:52.670" end="00:56:55.010">...so you can attach it...venus,</p>
+      <p begin="00:56:55.010" end="00:56:58.490">for example, us that way can use a if you have express route</p>
+      <p begin="00:56:58.490" end="00:57:02.170">set up to talk to your back and service you can use that...net and,</p>
+      <p begin="00:57:02.170" end="00:57:07.640">you can also have more control...scaling so adapters environment's you can go up to far more numbers of</p>
+      <p begin="00:57:07.640" end="00:57:12.470">instances has previously could only go like ten in the portal right but since you on the whole</p>
+      <p begin="00:57:12.470" end="00:57:18.980">...at out basically as big as a hoses service can get them thanks yep hi so,</p>
+      <p begin="00:57:18.980" end="00:57:22.140">you showed earlier the...for?</p>
+      <p begin="00:57:23.190" end="00:57:24.230">Logic...yeah,</p>
+      <p begin="00:57:24.230" end="00:57:30.340">you had the http status code that...you said that was kind of something that...would</p>
+      <p begin="00:57:30.340" end="00:57:35.200">kind of just give them for free so if you're if you're reading your jason know how are you going</p>
+      <p begin="00:57:35.200" end="00:57:39.180">...that without generating it through the engine first</p>
+      <p begin="00:57:40.470" end="00:57:43.820">...aggravate...the actually exposes schema</p>
+      <p begin="00:57:43.820" end="00:57:48.760">...if you'll notice slider is in...in the visual studio</p>
+      <p begin="00:57:48.760" end="00:57:53.250">ways by builder schema section we publish schema for logic jobs</p>
+      <p begin="00:57:53.250" end="00:57:57.370">...basically the standard way how you can actually tell people like, you know,</p>
+      <p begin="00:57:57.370" end="00:57:59.950">if you have action of the type http.</p>
+      <p begin="00:57:59.950" end="00:58:04.740">Please expect that like a property...in fact actually have more probably have like start</p>
+      <p begin="00:58:04.740" end="00:58:08.910">tools we have called...message become error message and other</p>
+      <p begin="00:58:08.910" end="00:58:12.870">style but it's may not be that orbiters but I think the</p>
+      <p begin="00:58:12.870" end="00:58:16.350">jason's schema is the model how we actually out</p>
+      <p begin="00:58:16.350" end="00:58:21.430">...the one point there is if you do have your own custom api that exposes, you know,</p>
+      <p begin="00:58:21.430" end="00:58:22.070">things are not</p>
+      <p begin="00:58:22.070" end="00:58:26.990">part of our can schema and then you can I mean it sounds kind</p>
+      <p begin="00:58:26.990" end="00:58:32.810">of silly but you can just try it out and we show you all the inputs and outputs you can see exactly what your</p>
+      <p begin="00:58:32.810" end="00:58:37.600">...us that also in ui for each api app images a button which allow you to download the</p>
+      <p begin="00:58:37.600" end="00:58:40.860">entire swagger so if you familiar with this migrates declarative</p>
+      <p begin="00:58:40.860" end="00:58:45.680">...not adjacent scheme but some other...base four-month...actually tell which api</p>
+      <p begin="00:58:45.680" end="00:58:50.380">support...and what's the output well is this is how you wise but is build</p>
+      <p begin="00:58:50.380" end="00:58:53.380">a basically dynamics goal extract this information and</p>
+      <p begin="00:58:53.380" end="00:58:58.440">...just build the workload definition on top of thank...</p>
+      <p begin="00:58:58.440" end="00:59:02.870">It seemed like the conditionals were at task base levels of, you know,...failure</p>
+      <p begin="00:59:02.870" end="00:59:08.100">...can that come down to data levels so that you send...good data one-way</p>
+      <p begin="00:59:08.100" end="00:59:12.430">...data yes so basically what you can do let's say you have an action</p>
+      <p begin="00:59:12.430" end="00:59:17.380">...you have multiple dependencies you can actually fired is dependence is but in certain conditions</p>
+      <p begin="00:59:17.380" end="00:59:22.740">so you can say these only fire success is only far if some property equal</p>
+      <p begin="00:59:22.740" end="00:59:27.720">to n and this only fire some property like less than five as a result you don't</p>
+      <p begin="00:59:27.720" end="00:59:32.330">forking an action you actually perform adjoin as I mentioned the conditional</p>
+      <p begin="00:59:32.330" end="00:59:36.580">preconditions so in workload design...you basic...some stuff and you say</p>
+      <p begin="00:59:36.580" end="00:59:40.660">this go this way these go this way in our definition...action you decide,</p>
+      <p begin="00:59:40.660" end="00:59:44.630">decide what's your dependencies and...fire so within the...you make these</p>
+      <p begin="00:59:44.630" end="00:59:49.280">...but you can have like five different actions and they all compensate for different stuff,</p>
+      <p begin="00:59:49.280" end="00:59:52.770">yeah, it can it can be any runtime output that you...you</p>
+      <p begin="00:59:52.770" end="01:00:01.470">can reference anywhere in any input of any subsequent action including the conditions yes.</p>
+      <p begin="01:00:01.470" end="01:00:06.650">So,...about...you cops ...the idea to adding to development</p>
+      <p begin="01:00:06.650" end="01:00:11.270">size teaching...production...the app...we took about conditions and testing and doing</p>
+      <p begin="01:00:11.270" end="01:00:17.250">yet so I don't want to...the post treat about the...the...example,</p>
+      <p begin="01:00:17.250" end="01:00:22.480">yeah, so,...for the development pipeline with the inside visual studio...see how he had the</p>
+      <p begin="01:00:22.480" end="01:00:26.970">definition and...also had the parameter files so the typical workflow is you'd have</p>
+      <p begin="01:00:28.100" end="01:00:32.660">like one set of parameters for your dev environment another set of parameters for your stage and other for</p>
+      <p begin="01:00:32.660" end="01:00:36.780">...and then maybe for your doesn't environment would actually.</p>
+      <p begin="01:00:36.780" end="01:00:41.780">Be a valid twitter token,... or you can actually use private...the condition safe</p>
+      <p begin="01:00:41.780" end="01:00:48.260">...definite...the...so you can definitely do that</p>
+      <p begin="01:00:48.260" end="01:00:50.840">...to atom logic into.</p>
+      <p begin="01:00:50.840" end="01:00:55.950">These two now distinguish the visual studio actually already support if you actually try to deploy what is</p>
+      <p begin="01:00:55.950" end="01:01:00.460">...down you select the definition file and you actually have a list of parameter files each</p>
+      <p begin="01:01:00.460" end="01:01:05.900">parameter files can be specific to environment and then you...stick functionality based on this</p>
+      <p begin="01:01:05.900" end="01:01:09.850">There but...it just goes yes, yeah,...yeah,</p>
+      <p begin="01:01:09.850" end="01:01:17.190">so, it's always it's always running but you don't have to connected to the actual prodi pies.</p>
+      <p begin="01:01:17.190" end="01:01:21.160">Yes, so, yeah, that...question...</p>
+      <p begin="01:01:21.160" end="01:01:28.340">I guess...tests if you really going to symmetry...of the tutsis weif I'm the</p>
+      <p begin="01:01:28.340" end="01:01:33.820">You can probably add some dumb martian and just...the output and, then you can</p>
+      <p begin="01:01:33.820" end="01:01:37.790">media expose all I input output you can...see what's exactly...exactly what</p>
+      <p begin="01:01:37.790" end="01:01:42.500">received so if you replace your twitter something else wide basics save</p>
+      <p begin="01:01:42.500" end="01:01:48.120">jason to like...you can actually see exactly what you would expect thank you cool</p>
+      <p begin="01:01:48.120" end="01:01:49.880">things like guys and,</p>
+      <p begin="01:01:49.880" end="01:01:54.400">feel free to send us e-mail twitter reach out to us love to hear feedback</p>
+      <p begin="01:01:54.400" end="01:01:56.740">and evaluate the session so,</p>
+      <p begin="01:01:56.740" end="01:02:02.360">let us know how we did what we can do to get better that's important please thank you thank you.</p>
+
+    </div>
+  </body>
+</tt>

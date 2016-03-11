@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.872</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.550" end="00:00:08.250">The...going down I think my microphones on</p>
+      <p begin="00:00:08.250" end="00:00:14.460">and we ready to go all right we're ready to go hello, welcome, welcome I'm</p>
+      <p begin="00:00:14.460" end="00:00:18.840">thrilled just absolutely thrilled to be here talking to you about nano server</p>
+      <p begin="00:00:20.050" end="00:00:23.680">...server is by far.</p>
+      <p begin="00:00:23.680" end="00:00:26.670">The most important most significant change we</p>
+      <p begin="00:00:26.670" end="00:00:29.380">have made in server sense windows</p>
+      <p begin="00:00:29.380" end="00:00:33.660">and t so put your seat belts on kind of just show you</p>
+      <p begin="00:00:33.660" end="00:00:38.410">this fantastic new server...is a cloud optimized server on</p>
+      <p begin="00:00:38.410" end="00:00:43.000">...snowbirds I'm a distinguish engineer and I'm the lead architect for windows server</p>
+      <p begin="00:00:43.000" end="00:00:47.750">and system center datacenter and joining me are management same principle pm</p>
+      <p begin="00:00:47.750" end="00:00:52.780">and windows server now here's the thing to realize all this work</p>
+      <p begin="00:00:52.780" end="00:00:57.600">here's the man this guy has been working on this so long you can really how</p>
+      <p begin="00:00:57.600" end="00:01:02.830">...about...years ten years now seriously we've been doing this at</p>
+      <p begin="00:01:02.830" end="00:01:07.790">various stages it's taken the combination of ten years worth of effort</p>
+      <p begin="00:01:07.790" end="00:01:11.450">...the whole thing...</p>
+      <p begin="00:01:11.450" end="00:01:18.350">Is just...been twenty-year okay so ok so let's go ok, so, first of course a</p>
+      <p begin="00:01:18.350" end="00:01:23.310">valuations make sure you fill out your valuations we do pay attention of those things off, you know,</p>
+      <p begin="00:01:23.310" end="00:01:27.170">where that we do we read all the comments and we respond to</p>
+      <p begin="00:01:27.170" end="00:01:30.780">their we react to them...make improve based on</p>
+      <p begin="00:01:30.780" end="00:01:34.230">...so here's what we're...we're going to start off talking about</p>
+      <p begin="00:01:34.230" end="00:01:38.450">what we hear from our customers and we're very customer focused</p>
+      <p begin="00:01:38.450" end="00:01:42.940">...will talk about our server journey and then our cloud journey</p>
+      <p begin="00:01:42.940" end="00:01:48.290">then we'll get into some of the details about nano server show you some very</p>
+      <p begin="00:01:48.290" end="00:01:53.070">preliminary results these a preliminary results some of the numbers we have not which be</p>
+      <p begin="00:01:53.070" end="00:01:56.780">clear...very early days with...server we have not</p>
+      <p begin="00:01:56.780" end="00:02:01.610">done a performance pass ok so some of these numbers</p>
+      <p begin="00:02:01.610" end="00:02:05.610">will get better we're not done refactoring so some of the</p>
+      <p begin="00:02:05.610" end="00:02:10.440">numbers might get a little worse I will also tell you that as we do this we're looking</p>
+      <p begin="00:02:10.440" end="00:02:15.350">and saying hey maybe we should make corresponding changes to the other versions of our</p>
+      <p begin="00:02:16.740" end="00:02:22.100">...persian and the other versions of server as well ...preliminary results</p>
+      <p begin="00:02:22.100" end="00:02:26.550">will tell you about...status our road map and then actions for you guys to go do</p>
+      <p begin="00:02:26.550" end="00:02:31.520">...also point out this talk is the developer focus talk</p>
+      <p begin="00:02:31.520" end="00:02:32.900">ok next week</p>
+      <p begin="00:02:32.900" end="00:02:38.420">...ignite we're doing a similar but different version of this talk focused in</p>
+      <p begin="00:02:38.420" end="00:02:40.080">...there's a bunch</p>
+      <p begin="00:02:40.080" end="00:02:45.480">of additional content that will be released in that talk so, what you want</p>
+      <p begin="00:02:45.480" end="00:02:50.270">to do is you want pay attention that talk in particular we're going to be releasing a lot</p>
+      <p begin="00:02:50.270" end="00:02:54.620">of our demos as videos on channel nine and we'll show you that coming up</p>
+      <p begin="00:02:55.890" end="00:02:59.180">...so what we've been hearing from our customers really there's</p>
+      <p begin="00:02:59.180" end="00:03:03.930">...big buckets three of them are on this slide so...cinepak my business why do I have to</p>
+      <p begin="00:03:03.930" end="00:03:08.340">patching reboot something that's not being used on my servers one of reboot is required I want my</p>
+      <p begin="00:03:08.340" end="00:03:13.060">machines back-up and servicing my customers as fast as possible and server</p>
+      <p begin="00:03:13.060" end="00:03:17.920">images are too big so they take up too much space on the disk it takes a long-time to installing configured</p>
+      <p begin="00:03:17.920" end="00:03:23.120">takes a long-time to reboot takes a long-time to predeployed over the network</p>
+      <p begin="00:03:23.120" end="00:03:27.910">...infrastructure requires to many resources so my server operating system is using a lot of resources</p>
+      <p begin="00:03:27.910" end="00:03:32.320">...I could be on...reselling to my customers</p>
+      <p begin="00:03:32.320" end="00:03:37.200">or could be providing more services within my organization and,</p>
+      <p begin="00:03:37.200" end="00:03:41.270">the by limiting the amount of resources the operating system uses I can also increase my</p>
+      <p begin="00:03:41.270" end="00:03:46.770">vm density or run more containers based on your container functionality?</p>
+      <p begin="00:03:46.770" end="00:03:50.820">The other area where we've really been hearing a...around security having more things</p>
+      <p begin="00:03:50.820" end="00:03:55.730">installed things that I don't need obviously opens up...vectors for attackers and</p>
+      <p begin="00:03:55.730" end="00:03:59.450">...headlines over the last year so all the different attacks that</p>
+      <p begin="00:03:59.450" end="00:04:03.640">...major corporations and the second one from the bottom is pretty interesting,</p>
+      <p begin="00:04:03.640" end="00:04:08.070">you know, someone hackers are attacking manufacturing companies now and actually causing physical damage</p>
+      <p begin="00:04:08.070" end="00:04:13.030">their equipment within their plants...bowie sometimes we kind of customers have this idea of like</p>
+      <p begin="00:04:13.030" end="00:04:18.140">gold image with a install everything on it and then they give it to everyone and say, yeah, just ignore the</p>
+      <p begin="00:04:18.140" end="00:04:22.970">...you'd want...if you're one of those people stop it that's a terrible idea</p>
+      <p begin="00:04:22.970" end="00:04:28.460">don't do that so really what we're hearing is customers want just the components they need</p>
+      <p begin="00:04:28.460" end="00:04:32.230">and nothing more so let me installed just the pieces I need for the services I want to</p>
+      <p begin="00:04:32.230" end="00:04:34.580">run that system don't give me like every sort of big</p>
+      <p begin="00:04:34.580" end="00:04:41.290">gold image that has all of windows server installed on it when I just need a small subset.</p>
+      <p begin="00:04:41.290" end="00:04:46.450">Ok, so, let's talk about our server journey so when we started here windows,</p>
+      <p begin="00:04:46.450" end="00:04:51.420">windows nt, you know, really that we didn't draw distinction between what a desktop was and what a</p>
+      <p begin="00:04:51.420" end="00:04:55.320">server was right and the joke was we took a desktop and kind of</p>
+      <p begin="00:04:55.320" end="00:04:59.020">...flipped over on its side in fact marker</p>
+      <p begin="00:04:59.020" end="00:05:03.570">...you may not have heard of him he's an engineer that works at microsoft anyway, so,</p>
+      <p begin="00:05:03.570" end="00:05:09.180">this guy name micros innovation fact was the guy who was became famous because he was the one</p>
+      <p begin="00:05:09.180" end="00:05:13.430">that discovered hey there's only a different...between server and client</p>
+      <p begin="00:05:13.430" end="00:05:18.120">is a registry key if you change into this you can get a server and...microsoft changed it</p>
+      <p begin="00:05:18.120" end="00:05:22.840">...about hey now is this value so they played cat-and-mouse for a while but markers the guy</p>
+      <p begin="00:05:22.840" end="00:05:27.780">that discovered that at the time that was a great thing when the world was all about I want</p>
+      <p begin="00:05:27.780" end="00:05:32.220">up to this server and...want to manage this server it was great worked</p>
+      <p begin="00:05:32.220" end="00:05:37.840">out fantastically...is nice easy to managing cetera however admin</p>
+      <p begin="00:05:37.840" end="00:05:42.530">...on servers are poison...heroine jan for</p>
+      <p begin="00:05:42.530" end="00:05:46.780">...probably feels pretty good but you do...a bunch you life goes...you do-too-much</p>
+      <p begin="00:05:46.780" end="00:05:51.870">you dad okay now...right so why is it wired admins on</p>
+      <p begin="00:05:51.870" end="00:05:56.260">gooey so horrible and the answers this invariably,</p>
+      <p begin="00:05:56.260" end="00:05:59.480">invariably when you have a local admin gooey</p>
+      <p begin="00:05:59.480" end="00:06:02.690">on a server you put the business logic in the</p>
+      <p begin="00:06:02.690" end="00:06:08.140">gooey and you call private api...now what that really means is you don't</p>
+      <p begin="00:06:08.140" end="00:06:11.830">have a good proper management api and you can't</p>
+      <p begin="00:06:11.830" end="00:06:16.800">do remote management and you can't do automation so as long as the world</p>
+      <p begin="00:06:16.800" end="00:06:21.560">...I have my server I walk up to that server and I do it the</p>
+      <p begin="00:06:21.560" end="00:06:23.380">distinction is fine local gui</p>
+      <p begin="00:06:23.380" end="00:06:28.240">for fantastic but that world was a long-time ago now it's about</p>
+      <p begin="00:06:28.240" end="00:06:33.160">datacenters now it's about agile development in the cloud and these local</p>
+      <p begin="00:06:33.160" end="00:06:36.850">gooey...poison okay so want to get the local</p>
+      <p begin="00:06:36.850" end="00:06:41.730">gooey off so we started that really in server twenty-eight where we said hey now we have the</p>
+      <p begin="00:06:41.730" end="00:06:46.300">...server core it doesn't have...sonnet at that point was separate</p>
+      <p begin="00:06:46.300" end="00:06:50.590">installed server core or full server and we made some mistakes with this</p>
+      <p begin="00:06:50.590" end="00:06:54.790">right warm particularly clear about what scenarios really work well</p>
+      <p begin="00:06:54.790" end="00:06:58.980">...version one we didn't have...full and complete management story we</p>
+      <p begin="00:06:58.980" end="00:07:03.790">didn't have a lot of the features and roles running at when we first started</p>
+      <p begin="00:07:03.790" end="00:07:08.200">of course that got fixed and really nailed it in windows server two thousand and twelve</p>
+      <p begin="00:07:08.200" end="00:07:12.980">and rtwo we had improved our management story all the interesting</p>
+      <p begin="00:07:12.980" end="00:07:17.600">roles and features are running on server core and you can choose server</p>
+      <p begin="00:07:17.600" end="00:07:22.930">core or server with the gooey and if you made a mistake you can go back and forth and</p>
+      <p begin="00:07:22.930" end="00:07:27.690">that was important because some of our ecosystem still had products that required to</p>
+      <p begin="00:07:27.690" end="00:07:31.830">...to install and then you could take the</p>
+      <p begin="00:07:31.830" end="00:07:36.400">...off and it would run just fine?</p>
+      <p begin="00:07:36.400" end="00:07:39.960">So, now that's great now we talk about our cloud journey</p>
+      <p begin="00:07:39.960" end="00:07:44.960">...so with our cloud journey here's the thing the understand in the context of measure.</p>
+      <p begin="00:07:44.960" end="00:07:49.580">Patches are very disruptive right if I have the patch the host in ensure</p>
+      <p begin="00:07:49.580" end="00:07:51.810">...measure doesn't have live migration</p>
+      <p begin="00:07:51.810" end="00:07:54.900">so if you patch the host guess what.</p>
+      <p begin="00:07:54.900" end="00:07:58.880">Every vm needs to be restarted talk about business impact</p>
+      <p begin="00:07:58.880" end="00:08:02.670">that's business impact next is hey you may or may not</p>
+      <p begin="00:08:02.670" end="00:08:06.650">...turns out as you're pretty large really large</p>
+      <p begin="00:08:06.650" end="00:08:11.510">...lots and lots of server's we take a large number servers and you say well</p>
+      <p begin="00:08:11.510" end="00:08:16.260">hey each one of those os is consumes a bunch of resources a bunch of resources times a bunch of</p>
+      <p begin="00:08:16.260" end="00:08:21.170">...that translates to a large number clocks of course taking these large images and moving</p>
+      <p begin="00:08:21.170" end="00:08:24.710">around the network consumes a lot of bandwidth that we'd rather be serving</p>
+      <p begin="00:08:24.710" end="00:08:28.660">further people now as, you know, windows server has something called cloud</p>
+      <p begin="00:08:28.660" end="00:08:34.110">platform solution comp platform solution is...a box one to</p>
+      <p begin="00:08:34.110" end="00:08:38.710">...racks so here we have live migration it's fantastic right so if I have</p>
+      <p begin="00:08:38.710" end="00:08:43.670">the patch the host got no service interruption right you will</p>
+      <p begin="00:08:43.670" end="00:08:48.050">...the m from one machine will patch that host will move them back and,</p>
+      <p begin="00:08:48.050" end="00:08:53.520">iterate...ok button a for...system...thousand vm</p>
+      <p begin="00:08:53.520" end="00:08:58.160">...to gigabytes each that means I'm live migrating sixteen</p>
+      <p begin="00:08:58.160" end="00:09:02.730">terabytes of data sixteen terabytes of data across the network that should</p>
+      <p begin="00:09:02.730" end="00:09:06.560">otherwise be servicing customer needs so even well I don't have</p>
+      <p begin="00:09:06.560" end="00:09:11.200">service interruption I still have a pretty large service impact</p>
+      <p begin="00:09:11.200" end="00:09:15.300">sorting getting at here is that the cloud really can't withstand</p>
+      <p begin="00:09:15.300" end="00:09:20.960">these interruptions right so ultimately what we concluded was that we needed a server</p>
+      <p begin="00:09:20.960" end="00:09:27.800">configuration optimized for the cloud no means literally we</p>
+      <p begin="00:09:27.800" end="00:09:29.650">need server configuration optimize</p>
+      <p begin="00:09:29.650" end="00:09:35.910">...the cloud I'm pretty sure you needed as well but I know that we needed.</p>
+      <p begin="00:09:35.910" end="00:09:40.440">And, that is what...server is yes so now...our next step in</p>
+      <p begin="00:09:40.440" end="00:09:45.390">...journey so what is a new head...sixty four-bit only deployment option for windows</p>
+      <p begin="00:09:45.390" end="00:09:49.380">server so back to jeffries comments about...being poison on</p>
+      <p begin="00:09:49.380" end="00:09:53.480">the server it is have those there is no local log on a local interface to it</p>
+      <p begin="00:09:53.480" end="00:09:57.720">there's no res intuit so you cannot terminal server intuit you have to</p>
+      <p begin="00:09:57.720" end="00:10:02.210">...fully remote we'll talk about that it's more detail is sixty four-bit only again alps</p>
+      <p begin="00:10:02.210" end="00:10:07.530">...the footprint and is part of windows server so there's a deep refactoring focused on a claudio</p>
+      <p begin="00:10:07.530" end="00:10:09.670">...infrastructure and new-born the</p>
+      <p begin="00:10:09.670" end="00:10:13.620">...applications that's worth pausing here would be really precise</p>
+      <p begin="00:10:13.620" end="00:10:17.960">where early days and now server this is version one effectively and</p>
+      <p begin="00:10:17.960" end="00:10:22.730">...focused in on these two scenarios and these two scenarios...</p>
+      <p begin="00:10:22.730" end="00:10:27.010">And, overtime oracle or focusing on these two for now and we're following the</p>
+      <p begin="00:10:27.010" end="00:10:32.390">server core patterns what that means...separate installation option...server core was back in twenty eight and</p>
+      <p begin="00:10:32.390" end="00:10:34.170">...rtwo so you have to make a</p>
+      <p begin="00:10:34.170" end="00:10:40.060">...deployment time if you're going down the...announcer...server core orserver with the</p>
+      <p begin="00:10:40.060" end="00:10:44.280">admin tools of course we're learning some of the lessons we learn from server core</p>
+      <p begin="00:10:44.280" end="00:10:48.920">...being precise about the...were after the benefit of that is I can go to you</p>
+      <p begin="00:10:48.920" end="00:10:53.860">and say hey you're part of scenario I need you to stop what...doin' and do this work and some</p>
+      <p begin="00:10:53.860" end="00:10:58.400">...as...and talk-to-you-later right so it allows us to focus in on that next</p>
+      <p begin="00:10:58.400" end="00:11:03.340">as we dramatically improved our manageability story...about that and,</p>
+      <p begin="00:11:03.340" end="00:11:10.670">we're working with partners and improve the developer story of...core has co-training how could I forget that</p>
+      <p begin="00:11:10.670" end="00:11:14.840">...for-you so, as far as now server rules and features go we've</p>
+      <p begin="00:11:14.840" end="00:11:17.930">moved two-zero footprint model so if you're familiar with windows server windows</p>
+      <p begin="00:11:17.930" end="00:11:22.540">client today when you install it there's a side-by-side folder all the optional rules and features lives</p>
+      <p begin="00:11:22.540" end="00:11:27.360">...all taking of disk space on your servers...your virtual machine images with nano server</p>
+      <p begin="00:11:27.360" end="00:11:32.030">we've removed all that so...packages for the roles that you can install you have to</p>
+      <p begin="00:11:32.030" end="00:11:37.010">install those as part of your deployment process so if you later on go to install role</p>
+      <p begin="00:11:37.010" end="00:11:41.090">on the system you have to go off and find the bits to actually install it is not on the machine</p>
+      <p begin="00:11:41.090" end="00:11:45.670">...does everywhere that right so if you notice you go into a server you say hey I'd like to have</p>
+      <p begin="00:11:45.670" end="00:11:48.140">is installed and it doesn't say please insert the</p>
+      <p begin="00:11:48.140" end="00:11:51.520">media and the reason for it is when you installed</p>
+      <p begin="00:11:51.520" end="00:11:55.580">...stuff we installed everything within install we made everyone put everything</p>
+      <p begin="00:11:55.580" end="00:11:59.010">on-disk and...staff on the side so when you say a</p>
+      <p begin="00:11:59.010" end="00:12:03.920">one install it we just take it from the side and we bring it in gate that is not how</p>
+      <p begin="00:12:03.920" end="00:12:10.320">nano server works that's one of the reasons why the images got so very large?</p>
+      <p begin="00:12:10.320" end="00:12:14.010">To the...and features retiring for the cloud os scenarios and the...the</p>
+      <p begin="00:12:14.010" end="00:12:18.850">...applications or hyper v storage server and clustering to us for your</p>
+      <p begin="00:12:18.850" end="00:12:23.680">host os and then for your app platform dearborn...outfit</p>
+      <p begin="00:12:23.680" end="00:12:30.410">...the course clr which talked a little more...five and the paths framework.</p>
+      <p begin="00:12:30.410" end="00:12:34.960">And, then we do have full windows server driver support so-if you have a piece of hardware that</p>
+      <p begin="00:12:34.960" end="00:12:39.110">you have a windows driver for that same driver works...same...stack same everything</p>
+      <p begin="00:12:40.180" end="00:12:44.440">...so you don't need different drivers for nano...you have entomol were</p>
+      <p begin="00:12:44.440" end="00:12:49.530">built-in so defenders included in announcer image...that's all versions of</p>
+      <p begin="00:12:49.530" end="00:12:54.310">server noun...with...email were on by default.</p>
+      <p begin="00:12:54.310" end="00:12:57.970">And, we are we don't have like...said we're still early days in this</p>
+      <p begin="00:12:57.970" end="00:13:02.930">for making progress here we're still working on bringing in the system center...so we're working on the</p>
+      <p begin="00:13:02.930" end="00:13:05.470">...and operations manager and working to bring</p>
+      <p begin="00:13:05.470" end="00:13:08.800">...abs insight and some of the other agents for the microsoft products as well as</p>
+      <p begin="00:13:08.800" end="00:13:14.640">regional to isv to make sure there software works on nano server.</p>
+      <p begin="00:13:14.640" end="00:13:15.900">All right so now let's talk about</p>
+      <p begin="00:13:15.900" end="00:13:20.860">that management of nano server okay so the model here is we want to</p>
+      <p begin="00:13:20.860" end="00:13:25.630">eliminate the idea of you ever sitting in front of a server managing...</p>
+      <p begin="00:13:25.630" end="00:13:30.640">gone don't do it really have this configuration you do all you configuration</p>
+      <p begin="00:13:30.640" end="00:13:34.730">to desire our shelled desired state configuration and,</p>
+      <p begin="00:13:34.730" end="00:13:39.600">you do all the remote management through core our shell notice that in say our</p>
+      <p begin="00:13:39.600" end="00:13:45.060">shell core our shell much that into wi in</p>
+      <p begin="00:13:45.060" end="00:13:50.220">...you want to integrate into the...apps tool chains in the</p>
+      <p begin="00:13:51.330" end="00:13:54.380">Develops mindset said we want to be able to manage</p>
+      <p begin="00:13:54.380" end="00:13:57.240">servers like cattle not paths.</p>
+      <p begin="00:13:58.410" end="00:14:00.680">And, the old days...me...in all days</p>
+      <p begin="00:14:00.680" end="00:14:05.620">...treat servers like perhaps right you give it a name a precious name and</p>
+      <p begin="00:14:05.620" end="00:14:09.970">you get sick you cared forward...you tended to</p>
+      <p begin="00:14:09.970" end="00:14:13.360">...with cattle you don't give them names so you give them</p>
+      <p begin="00:14:13.360" end="00:14:15.480">numbers when they're sick you fire</p>
+      <p begin="00:14:15.480" end="00:14:21.090">...the barbeque right just a completely different model okay and</p>
+      <p begin="00:14:21.090" end="00:14:25.950">you really focused in on the heard not any individual that's the way you want that's</p>
+      <p begin="00:14:25.950" end="00:14:30.290">really the cloud model okay so you want to develop this dev</p>
+      <p begin="00:14:30.290" end="00:14:31.860">...mind-set net is so if</p>
+      <p begin="00:14:31.860" end="00:14:36.340">you developing products you really want to get that model in focus is</p>
+      <p begin="00:14:36.340" end="00:14:44.370">not about getting a saying up and running and keeping it running it forever.</p>
+      <p begin="00:14:44.370" end="00:14:47.440">Ok, so, now let's talk about visual studio release management</p>
+      <p begin="00:14:48.620" end="00:15:04.860">...for familiar through visual studio release management great dev...tool.</p>
+      <p begin="00:15:04.860" end="00:15:10.010">They can get the audio.</p>
+      <p begin="00:15:10.010" end="00:15:16.850">To bananas of the...having question interesting.</p>
+      <p begin="00:15:16.850" end="00:15:21.990">We...look at the capabilities up...a lead to...and</p>
+      <p begin="00:15:21.990" end="00:15:27.070">...studio on bank tuesday in order to...and you...to</p>
+      <p begin="00:15:27.070" end="00:15:34.780">bananas the ...he...question...coit hardcopy which</p>
+      <p begin="00:15:34.780" end="00:15:39.250">...and take it into videos to the on the thematic is to</p>
+      <p begin="00:15:39.250" end="00:15:42.680">...for this...using the</p>
+      <p begin="00:15:42.680" end="00:15:47.440">...preview feature in julius...you on the team as...the</p>
+      <p begin="00:15:47.440" end="00:15:51.280">...and looking...the same to on.</p>
+      <p begin="00:15:52.320" end="00:15:58.510">The relieve...light...to get environment before hitting the production</p>
+      <p begin="00:15:58.510" end="00:16:00.810">...in each of them are</p>
+      <p begin="00:16:00.810" end="00:16:05.590">...up our...task is use is executing the deployments</p>
+      <p begin="00:16:05.590" end="00:16:13.810">...against the docket...the...the new...and we inspiring to finish.</p>
+      <p begin="00:16:13.810" end="00:16:16.040">The easy to the...environment is now</p>
+      <p begin="00:16:17.610" end="00:16:21.920">...brewer companies manager the...manager...this</p>
+      <p begin="00:16:21.920" end="00:16:26.950">...to rely on the development and...and</p>
+      <p begin="00:16:26.950" end="00:16:31.490">...second day...what...boy that's been created in</p>
+      <p begin="00:16:31.490" end="00:16:34.460">...and lots of bug in the background for the</p>
+      <p begin="00:16:36.230" end="00:16:42.850">...to where...and...to...the currently running</p>
+      <p begin="00:16:42.850" end="00:16:51.970">...debugged...the...input the...that you...</p>
+      <p begin="00:16:51.970" end="00:16:57.830">...the...that and you re he's...</p>
+      <p begin="00:16:57.830" end="00:17:01.660">drink an automatically for this particular...</p>
+      <p begin="00:17:02.780" end="00:17:06.120">This happens...the being...</p>
+      <p begin="00:17:07.500" end="00:17:10.720">Italy's dictation...</p>
+      <p begin="00:17:10.720" end="00:17:14.590">On completion of the being.</p>
+      <p begin="00:17:14.590" end="00:17:18.510">With...dot and making...when I can</p>
+      <p begin="00:17:18.510" end="00:17:20.680">...manager goals and updates the</p>
+      <p begin="00:17:20.680" end="00:17:28.980">...on the...david...and...do now.</p>
+      <p begin="00:17:28.980" end="00:17:31.280">...school.</p>
+      <p begin="00:17:31.280" end="00:17:34.800">...that...one-hour a day on the</p>
+      <p begin="00:17:34.800" end="00:17:41.890">...a...by the...to...</p>
+      <p begin="00:17:41.890" end="00:17:46.850">All rights which you saw there was visual studio release management so it's a dev</p>
+      <p begin="00:17:46.850" end="00:17:51.010">ops mindset right you build your product you put it into a released managing</p>
+      <p begin="00:17:51.010" end="00:17:55.950">pipeline words tested it's deployed through automatic systems use desired</p>
+      <p begin="00:17:55.950" end="00:18:00.820">state configuration management when you have a...you just do that again notice and</p>
+      <p begin="00:18:00.820" end="00:18:06.140">no-point...somebody...dp into a server and, bring up a gooey right now let's think about</p>
+      <p begin="00:18:06.140" end="00:18:11.040">this why is that right so imagine you go and provision a system use say...a</p>
+      <p begin="00:18:11.040" end="00:18:14.570">...like five hundred clicks later you got your system.</p>
+      <p begin="00:18:14.570" end="00:18:16.300">And, now you gotta do it to a hundred more</p>
+      <p begin="00:18:16.300" end="00:18:21.240">servers like are you really going to get five hundred mouse clicks done in the same order</p>
+      <p begin="00:18:21.240" end="00:18:26.120">...hundred times answer no way right so that's why you want</p>
+      <p begin="00:18:26.120" end="00:18:31.120">to automate things you want to script things so that hey if you get it wrong just go change</p>
+      <p begin="00:18:31.120" end="00:18:36.550">the script get it wrong changes script get right great leave descriptive alone</p>
+      <p begin="00:18:36.550" end="00:18:41.220">because you got a right and do it over and over and over and over again high-quality dev</p>
+      <p begin="00:18:41.220" end="00:18:46.110">...operations with visual studio release management so I</p>
+      <p begin="00:18:46.110" end="00:18:50.350">mention to you that...our shell core our shell and not</p>
+      <p begin="00:18:50.350" end="00:18:54.460">our shell what is the difference the differences that our shell</p>
+      <p begin="00:18:54.460" end="00:18:59.120">is based upon dot net and corporate show is based upon the</p>
+      <p begin="00:18:59.120" end="00:19:02.640">...clr so just as we have refactoring full?</p>
+      <p begin="00:19:03.690" end="00:19:06.700">...we are refactoring our shell</p>
+      <p begin="00:19:06.700" end="00:19:11.430">...our shelby to run on the course...it has the full our</p>
+      <p begin="00:19:11.430" end="00:19:15.180">...language right the compatibility remote ing</p>
+      <p begin="00:19:15.180" end="00:19:20.130">so invoke command works expressions work new our shell session new enter</p>
+      <p begin="00:19:20.130" end="00:19:24.880">ps session all that good stuff works most of the engine components are there</p>
+      <p begin="00:19:24.880" end="00:19:29.830">the one significant engine component that's not there is windows workflow that's</p>
+      <p begin="00:19:29.830" end="00:19:30.870">ok because</p>
+      <p begin="00:19:30.870" end="00:19:35.330">windows workflow can run on another machine and still manage</p>
+      <p begin="00:19:35.330" end="00:19:40.540">nano server as a managed element through the magic of our show remote</p>
+      <p begin="00:19:40.540" end="00:19:45.300">...that's directly integrated into the model support all the different our</p>
+      <p begin="00:19:45.300" end="00:19:49.270">...command...types so csharp command loads script command let's and</p>
+      <p begin="00:19:49.270" end="00:19:51.990">...commandments thing to note the</p>
+      <p begin="00:19:51.990" end="00:19:56.770">csharp commandments work if you have the underlying support for</p>
+      <p begin="00:19:56.770" end="00:20:00.800">in dot net remember you do not have the full net you have the</p>
+      <p begin="00:20:00.800" end="00:20:05.120">core clr...dot net core I think we're now calling it so,</p>
+      <p begin="00:20:05.120" end="00:20:09.920">if you're commandments called gooey staff and...to work on...server?</p>
+      <p begin="00:20:09.920" end="00:20:12.840">Most of the manageability commandments don't do that and</p>
+      <p begin="00:20:12.840" end="00:20:20.190">we're starting off with a limited set a command let's and moving very rapidly.</p>
+      <p begin="00:20:20.190" end="00:20:24.680">So, the earlier point about the...being poison and</p>
+      <p begin="00:20:24.680" end="00:20:29.110">server core being a first step at this we heard the feedback on server core that</p>
+      <p begin="00:20:29.110" end="00:20:33.700">there's a lot of things where people still have to...into the server because our tools and only run locally</p>
+      <p begin="00:20:33.700" end="00:20:38.480">there's configuration you can only do locally so we're doing a lot of work to change that go through core our</p>
+      <p begin="00:20:38.480" end="00:20:43.340">shell as well as we're developing a set of remote server management tools so these tools are</p>
+      <p begin="00:20:43.340" end="00:20:45.060">...web-based and the</p>
+      <p begin="00:20:45.060" end="00:20:49.820">designed to replace all the things that you would normally need to login locally or...</p>
+      <p begin="00:20:49.820" end="00:20:54.770">t into a server to do today so everything above-the-line we have working today we have</p>
+      <p begin="00:20:54.770" end="00:20:59.480">...remote task manager...registry editor we have...viewer of device manager we have</p>
+      <p begin="00:20:59.480" end="00:21:04.490">as configure familiar with that that's the initial configuration from server core so</p>
+      <p begin="00:21:04.490" end="00:21:07.370">that sort of overlaps with some of the control panel pieces we have some</p>
+      <p begin="00:21:07.370" end="00:21:12.680">...networking today remotely so all of this is available as a remote...manager</p>
+      <p begin="00:21:12.680" end="00:21:17.450">servers if you...not doing the automation for your herd of cattle yes but</p>
+      <p begin="00:21:17.450" end="00:21:21.580">way you definitely want to see this we're currently don't have there's so</p>
+      <p begin="00:21:21.580" end="00:21:26.320">much talk about we don't have time to show all this stuff this is one of those stunning</p>
+      <p begin="00:21:26.320" end="00:21:30.590">demos because uses the measure portal framework so,</p>
+      <p begin="00:21:30.590" end="00:21:35.580">we're definitely in...that ignite and it's definitely going to be on channel line afterwards you'll want to</p>
+      <p begin="00:21:35.580" end="00:21:39.820">put up bookmark in your calendar and go watch this stuff because you'll be</p>
+      <p begin="00:21:39.820" end="00:21:45.040">stunned is wonderful...you but whenever I think however I hear web...I think...</p>
+      <p begin="00:21:45.040" end="00:21:50.990">compromise now this is not this will blow you away and the great thing about this is</p>
+      <p begin="00:21:50.990" end="00:21:54.530">jeff mentioned earlier running...locally a lot of times you have private api</p>
+      <p begin="00:21:54.530" end="00:21:59.770">is your business logic built into those gary's on this case this is all layered on top of...on w</p>
+      <p begin="00:21:59.770" end="00:22:04.170">...getting additional w my providers put into the product and they're both in nano servers also</p>
+      <p begin="00:22:04.170" end="00:22:07.780">...server so in addition to be able to use this new ui</p>
+      <p begin="00:22:07.780" end="00:22:12.460">...of system you can scripted all using our...you could write your own tools the interface with this and</p>
+      <p begin="00:22:12.460" end="00:22:16.150">...your own gary so we're separating that out and doing</p>
+      <p begin="00:22:16.150" end="00:22:20.070">at the right way doing it the right way.</p>
+      <p begin="00:22:20.070" end="00:22:24.880">Element cloud application platform side of things like I said we're focus on the born in the</p>
+      <p begin="00:22:24.880" end="00:22:27.180">cloud application sports so we do have a subset of</p>
+      <p begin="00:22:27.180" end="00:22:31.770">...thirty two so some existing when thirty-two apple run on...server I'll talk more about</p>
+      <p begin="00:22:31.770" end="00:22:36.520">that server-side the course clr paths asp dot net five.</p>
+      <p begin="00:22:36.520" end="00:22:39.970">And, it will be available everywhere so you can...your host</p>
+      <p begin="00:22:39.970" end="00:22:44.100">...hundred physical...if we go there it's worth just like pausing and letting that</p>
+      <p begin="00:22:44.100" end="00:22:49.420">sink in so nano server is a version of windows server</p>
+      <p begin="00:22:49.420" end="00:22:53.940">okay so it's api compatible all the api is in annals server</p>
+      <p begin="00:22:53.940" end="00:22:58.640">...the same api...and full server...just fewer of them api</p>
+      <p begin="00:22:58.640" end="00:23:02.350">...put things on the desktop they don't exist so</p>
+      <p begin="00:23:02.350" end="00:23:06.430">...we serve replication shouldn't be doing anyway so that's fine</p>
+      <p begin="00:23:06.430" end="00:23:10.940">lesser replications will just run fine sometimes you might have to refactoring</p>
+      <p begin="00:23:10.940" end="00:23:16.590">to use the version that's in nano server versus something that's in the desktop version</p>
+      <p begin="00:23:16.590" end="00:23:23.950">...be clear about this is a version of the windows server, you know, when...</p>
+      <p begin="00:23:23.950" end="00:23:27.420">And, it will be available everywhere so you can deployed...your host os on your physical</p>
+      <p begin="00:23:27.420" end="00:23:30.810">machines for your hyper v host restores...</p>
+      <p begin="00:23:30.810" end="00:23:34.870">It you can run as...os in a virtual machines...is p dot net or course</p>
+      <p begin="00:23:34.870" end="00:23:39.220">...apps it will also be the base os for both flavors of containers</p>
+      <p begin="00:23:39.220" end="00:23:43.630">...windows server containers as well as a high privy containers.</p>
+      <p begin="00:23:43.630" end="00:23:46.940">We are working some futures additions so powerful desired state</p>
+      <p begin="00:23:46.940" end="00:23:51.410">configuration is not actually in the build is going to go out as part of building and working</p>
+      <p begin="00:23:51.410" end="00:23:56.140">package management which used to be called one get and we're also looking at adding additional roles</p>
+      <p begin="00:23:56.140" end="00:24:01.060">application frameworks as we...journey through to releasing windows overview next, yeah, so,</p>
+      <p begin="00:24:01.060" end="00:24:04.020">the desired state configuration will follow shortly just</p>
+      <p begin="00:24:04.020" end="00:24:08.630">a timing issue and if you're not familiar with that this thing we used to call one get</p>
+      <p begin="00:24:08.630" end="00:24:12.860">until some guys decide best...of those okayed...so,</p>
+      <p begin="00:24:12.860" end="00:24:16.620">then we ended up with powerful package manageranyway, so,</p>
+      <p begin="00:24:16.620" end="00:24:21.570">...manages a wonderful tool it allows you to go on any machine and say here the</p>
+      <p begin="00:24:21.570" end="00:24:26.300">here's the software that I would like to get running on this machine and they will find it various</p>
+      <p begin="00:24:26.300" end="00:24:27.890">repository and you can</p>
+      <p begin="00:24:27.890" end="00:24:32.140">just declare which repository you trust and which ones are on trusted and</p>
+      <p begin="00:24:32.140" end="00:24:36.850">...pull something from...repository we ask about it you can set up your own</p>
+      <p begin="00:24:36.850" end="00:24:41.750">repositories with your definitive software libraries and them say put things there and go to</p>
+      <p begin="00:24:41.750" end="00:24:49.120">machines and say install this we just find it...it's wonderful, wonderful stuff?</p>
+      <p begin="00:24:49.120" end="00:24:49.760">Ok,</p>
+      <p begin="00:24:49.760" end="00:24:54.740">so, let's talk about the server application development ok so now the question is...I'm</p>
+      <p begin="00:24:54.740" end="00:24:59.070">...developer and I...get the server thing in focus and now you bring</p>
+      <p begin="00:24:59.070" end="00:25:03.580">up this nano server like how do I think about and then the question get a lot is like so do I</p>
+      <p begin="00:25:03.580" end="00:25:06.560">coda containers are going to source code the...server</p>
+      <p begin="00:25:06.560" end="00:25:11.470">or do I have to choose it's actually a very simple story ok so here's the</p>
+      <p begin="00:25:11.470" end="00:25:16.450">model what we're doing is a deep refactoring of the server</p>
+      <p begin="00:25:16.450" end="00:25:21.050">okay we start off with nano server that's the core elements</p>
+      <p begin="00:25:21.050" end="00:25:25.040">on top of that is server now we call the server core</p>
+      <p begin="00:25:25.040" end="00:25:29.170">...a missteps in this is the server because the other thing we used to say</p>
+      <p begin="00:25:29.170" end="00:25:34.590">usu server core and there was something...call full server that...like a good thing right you</p>
+      <p begin="00:25:34.590" end="00:25:39.030">...a server application services all why require full server you're like wow you</p>
+      <p begin="00:25:39.030" end="00:25:44.440">must be great...create that men we tried to be clear about in the last version we said well</p>
+      <p begin="00:25:44.440" end="00:25:48.990">no it's not full server its server with a gooey...we want</p>
+      <p begin="00:25:48.990" end="00:25:53.110">to get even clearer the future name is going to be client?</p>
+      <p begin="00:25:53.110" end="00:25:59.000">Okay, because that's really what it is a client stack running on a server...that's</p>
+      <p begin="00:25:59.000" end="00:26:04.360">werner's...head that's what is to clients background on a server now there are times when you</p>
+      <p begin="00:26:04.360" end="00:26:09.380">want have a client stack run on a server when are those the...is remote desktop</p>
+      <p begin="00:26:09.380" end="00:26:13.350">raw desktop is a client stack running on a server so they're left definitely</p>
+      <p begin="00:26:13.350" end="00:26:18.160">legitimate cases for this but most server applications should not be used in</p>
+      <p begin="00:26:18.160" end="00:26:23.110">...client stack on a server at all ok so the model is going to be</p>
+      <p begin="00:26:23.110" end="00:26:26.310">that is a developer I code to</p>
+      <p begin="00:26:26.310" end="00:26:31.590">a server or nano server...bring up visual studio and I'm going to pick these, you know,</p>
+      <p begin="00:26:31.590" end="00:26:34.920">...just say I want mail server one full server.</p>
+      <p begin="00:26:34.920" end="00:26:39.680">Your nad...code to the client...not for-you server guys</p>
+      <p begin="00:26:39.680" end="00:26:44.040">...the client guys go put that on a client...server.</p>
+      <p begin="00:26:44.040" end="00:26:48.790">Next so developer targets server for compatibility or nano server for</p>
+      <p begin="00:26:48.790" end="00:26:52.330">...optimization and then they hit f five they get</p>
+      <p begin="00:26:52.330" end="00:26:56.790">...now they have to deploy the expedia run it and here's where it</p>
+      <p begin="00:26:56.790" end="00:27:01.860">becomes very simple you pick which one you wanted server now server you get your</p>
+      <p begin="00:27:01.860" end="00:27:08.000">exes venue deploy it on a physical server</p>
+      <p begin="00:27:08.000" end="00:27:10.900">Or...container windows server</p>
+      <p begin="00:27:10.900" end="00:27:14.850">...hyper v container okay so it's very simple story.</p>
+      <p begin="00:27:14.850" end="00:27:16.790">A server and nano server</p>
+      <p begin="00:27:16.790" end="00:27:21.250">are set of api and components and then they run somewhere they run on a</p>
+      <p begin="00:27:21.250" end="00:27:26.950">physical machine they run out of virtual machine they run a container that's...</p>
+      <p begin="00:27:26.950" end="00:27:30.100">And, one thing to point out there this that the client-server does not run in</p>
+      <p begin="00:27:30.100" end="00:27:35.070">the container neumann physical virtual thank you that's one of a container, yeah,</p>
+      <p begin="00:27:35.070" end="00:27:38.870">so, we've been pretty pointy here so, if you</p>
+      <p begin="00:27:38.870" end="00:27:41.130">get a server application that uses some of those</p>
+      <p begin="00:27:41.130" end="00:27:48.780">client api is the ain't running containers so stop that practice.</p>
+      <p begin="00:27:48.780" end="00:27:54.080">Okay,...now we got a...somehow here we're going to show you is asp dot net five</p>
+      <p begin="00:27:54.080" end="00:27:58.640">running the music store demo running a nano server the key things to point out</p>
+      <p begin="00:27:58.640" end="00:28:03.330">here are how much stuff is running today nano server pretty,</p>
+      <p begin="00:28:03.330" end="00:28:07.290">pretty great and this...also remote debugging basically</p>
+      <p begin="00:28:07.290" end="00:28:12.110">...application running on server...a</p>
+      <p begin="00:28:12.110" end="00:28:15.260">...samples point of information which sales community</p>
+      <p begin="00:28:15.260" end="00:28:19.860">...online...basic site administration user signing and</p>
+      <p begin="00:28:19.860" end="00:28:25.840">showing cut functionality being...below that...framework and</p>
+      <p begin="00:28:25.840" end="00:28:34.950">...stuff on the...modern and response user interface...I'm going to the</p>
+      <p begin="00:28:34.950" end="00:28:41.010">And,...the store see...available albums and...my</p>
+      <p begin="00:28:41.010" end="00:28:43.640">Next I'm going to...another algal.</p>
+      <p begin="00:28:43.640" end="00:28:51.420">Behind-the-scene the...database...using...framework.</p>
+      <p begin="00:28:51.420" end="00:28:52.440">Once they have moi.</p>
+      <p begin="00:28:53.450" end="00:28:56.600">...check-up.</p>
+      <p begin="00:28:56.600" end="00:29:01.080">...bigger...many...providers including microsoft</p>
+      <p begin="00:29:01.080" end="00:29:06.030">leader google and facebook and even though not sure...over ninety</p>
+      <p begin="00:29:06.030" end="00:29:15.350">...directory...demo I'm going to...using...</p>
+      <p begin="00:29:15.350" end="00:29:26.470">One...ask...information.</p>
+      <p begin="00:29:26.470" end="00:29:26.830">Once the</p>
+      <p begin="00:29:26.830" end="00:29:29.970">...information is field in I...</p>
+      <p begin="00:29:31.640" end="00:29:36.540">To not have to advancing...order.</p>
+      <p begin="00:29:36.540" end="00:29:43.100">Builders...the...grossing distort...</p>
+      <p begin="00:29:43.100" end="00:29:47.490">Now I'm going to show...can do by the speedup as five</p>
+      <p begin="00:29:48.610" end="00:29:50.200">Using the video studio debug.</p>
+      <p begin="00:29:51.250" end="00:29:56.030">I have already started...on server machine and overly music</p>
+      <p begin="00:29:56.030" end="00:29:59.990">...solution video studio also...great</p>
+      <p begin="00:29:59.990" end="00:30:03.940">...canticle...method.</p>
+      <p begin="00:30:03.940" end="00:30:05.520">Disabilities executed one</p>
+      <p begin="00:30:05.520" end="00:30:12.010">...register first...anymore process.</p>
+      <p begin="00:30:12.010" end="00:30:16.380">...daisy...environment...process holding</p>
+      <p begin="00:30:16.380" end="00:30:24.780">diminished application on server machine I...imagine question.</p>
+      <p begin="00:30:24.780" end="00:30:27.890">Now the...attached I'll go back</p>
+      <p begin="00:30:27.890" end="00:30:39.530">...start...and try to create and user.</p>
+      <p begin="00:30:39.530" end="00:30:45.140">For...will be eight-and-a-half bashes...visual studio</p>
+      <p begin="00:30:45.140" end="00:30:50.350">...experience thanks is to locals...</p>
+      <p begin="00:30:51.420" end="00:30:54.730">Modules...</p>
+      <p begin="00:30:54.730" end="00:30:57.620">I can samoa.</p>
+      <p begin="00:30:57.620" end="00:31:00.460">I can step in the code.</p>
+      <p begin="00:31:00.460" end="00:31:05.240">And,...change information...fusion point.</p>
+      <p begin="00:31:05.240" end="00:31:07.240">It is shady debugging course</p>
+      <p begin="00:31:07.240" end="00:31:13.540">...application...what is the different and debugging...</p>
+      <p begin="00:31:13.540" end="00:31:17.720">If you'd like to know more...store application you can</p>
+      <p begin="00:31:17.720" end="00:31:25.030">...call...is iness...</p>
+      <p begin="00:31:25.030" end="00:31:30.010">Great so there you saw asp dot net we have we had signal are we at any framework where</p>
+      <p begin="00:31:30.010" end="00:31:32.590">the model view controller access to all sorts</p>
+      <p begin="00:31:32.590" end="00:31:37.550">of authentication systems all running on nano server en a very</p>
+      <p begin="00:31:37.550" end="00:31:42.400">rich graphical remote debugging experience ok so now server doesn't</p>
+      <p begin="00:31:42.400" end="00:31:50.430">mean no gooey now server means remote gooey.</p>
+      <p begin="00:31:50.430" end="00:31:51.350">...talk some about</p>
+      <p begin="00:31:51.350" end="00:31:56.310">the developer experience for now server so for those of you that try to get your code running on server core</p>
+      <p begin="00:31:56.310" end="00:32:01.020">...a great experience there you have to go to a...webpage and msdn that was the api is that</p>
+      <p begin="00:32:01.020" end="00:32:06.130">were supported and it was painful there were some.</p>
+      <p begin="00:32:06.130" end="00:32:07.700">Unclear areas where what was</p>
+      <p begin="00:32:07.700" end="00:32:14.790">...not...really taken a different approach with nano server so we've fully integrated it.</p>
+      <p begin="00:32:14.790" end="00:32:18.640">...the windows sdk...that comes out with windows thing client you'll financial server</p>
+      <p begin="00:32:18.640" end="00:32:23.570">...there we've got...as a target in visual studio twenty fifteen so there's a template in</p>
+      <p begin="00:32:23.570" end="00:32:28.610">the gallery that you can go download that will allow you in visual studio target now server and actually see</p>
+      <p begin="00:32:28.610" end="00:32:32.040">...using is supported on server.</p>
+      <p begin="00:32:32.040" end="00:32:36.540">So, we have a ridge design-time experience fully integrated...the...template you get full</p>
+      <p begin="00:32:36.540" end="00:32:39.850">...so if you're using api that's not sporty you'll get a little</p>
+      <p begin="00:32:39.850" end="00:32:46.470">red errors squiggles underneath it and we have full remote debugging experience...dot net debugging experience there</p>
+      <p begin="00:32:46.470" end="00:32:50.830">you have a full debugging support through visual studio we have</p>
+      <p begin="00:32:50.830" end="00:32:59.860">a demo showing that running as well.</p>
+      <p begin="00:32:59.860" end="00:33:04.080">This is a quick look at the...server developer experience first off</p>
+      <p begin="00:33:04.080" end="00:33:08.970">we're introducing downloadable project template that will pull indirect headers in libraries so</p>
+      <p begin="00:33:08.970" end="00:33:15.300">what you can get first-class and thousands...google support when developing...server application.</p>
+      <p begin="00:33:15.300" end="00:33:15.880">Note that</p>
+      <p begin="00:33:15.880" end="00:33:25.140">any implication that from the server will automatically run inserter core hateful server.</p>
+      <p begin="00:33:25.140" end="00:33:29.490">Once ukraine...server application project you'll see the landing</p>
+      <p begin="00:33:29.490" end="00:33:31.390">...helpful f.</p>
+      <p begin="00:33:32.460" end="00:33:35.360">For example, you see that...rhythm support</p>
+      <p begin="00:33:35.360" end="00:33:43.370">...so you want to select x sixty-four from the...target.</p>
+      <p begin="00:33:43.370" end="00:33:46.900">For this...going to use...existing aman simple and</p>
+      <p begin="00:33:46.900" end="00:33:54.320">...against them the samples called accessing ramon computers.</p>
+      <p begin="00:33:54.320" end="00:33:58.140">Once we copy and paste the gone into the visual studio enter</p>
+      <p begin="00:33:58.140" end="00:34:02.600">...the main function with underscore tv notice the</p>
+      <p begin="00:34:02.600" end="00:34:07.990">cools depends on the wire-tapping library...to our products.</p>
+      <p begin="00:34:07.990" end="00:34:12.940">Right...on the product...solution explore and select property.</p>
+      <p begin="00:34:12.940" end="00:34:17.030">Go-to laker input additional dependencies click edit</p>
+      <p begin="00:34:17.030" end="00:34:20.910">...wiretapping.</p>
+      <p begin="00:34:20.910" end="00:34:26.400">Let's go on locally without any...</p>
+      <p begin="00:34:26.400" end="00:34:29.920">We see a list of register providers.</p>
+      <p begin="00:34:29.920" end="00:34:35.550">Now that's sort of...server she we already have a server machines running</p>
+      <p begin="00:34:35.550" end="00:34:42.490">...vm...prepared the partial...in the partial icy.</p>
+      <p begin="00:34:42.490" end="00:34:46.980">...copywriters to session parameter to copy our executable and symbol</p>
+      <p begin="00:34:46.980" end="00:34:53.840">pharma pd file to remote data server machines see test folder.</p>
+      <p begin="00:34:53.840" end="00:34:59.610">While...comedy ip address before we switch back to visual studio.</p>
+      <p begin="00:34:59.610" end="00:35:03.090">Now we need to teller project about herbal...</p>
+      <p begin="00:35:03.090" end="00:35:07.250">Sabrina product properties again...to debugging remote windows</p>
+      <p begin="00:35:07.250" end="00:35:09.950">debug are and change the working directory</p>
+      <p begin="00:35:11.140" end="00:35:15.240">...working directory using the ip address.</p>
+      <p begin="00:35:15.240" end="00:35:18.370">Change the remote command to randomizer replication</p>
+      <p begin="00:35:18.370" end="00:35:22.500">...see in the working directory.</p>
+      <p begin="00:35:22.500" end="00:35:24.830">Change the connection type to remote with...</p>
+      <p begin="00:35:24.830" end="00:35:32.090">authentication and change...survey to the ip address.</p>
+      <p begin="00:35:32.090" end="00:35:36.880">After we set...reporting...five to start verbal debugging session.</p>
+      <p begin="00:35:36.880" end="00:35:43.780">For the purposes...the demo already started...on...server machine.</p>
+      <p begin="00:35:43.780" end="00:35:50.490">The burger...to...point immediately notice the updated...the locals window you can</p>
+      <p begin="00:35:50.490" end="00:36:01.030">...set watches and continued warming exactly as you would in the...case.</p>
+      <p begin="00:36:01.030" end="00:36:04.740">That's type in get...version in full.</p>
+      <p begin="00:36:04.740" end="00:36:09.260">And, we see that only the x versions of api or support.</p>
+      <p begin="00:36:09.260" end="00:36:12.730">If we try to use...api by removing the x,</p>
+      <p begin="00:36:12.730" end="00:36:14.530">for example.</p>
+      <p begin="00:36:14.530" end="00:36:18.140">We immediately get...quot.</p>
+      <p begin="00:36:18.140" end="00:36:20.470">In this demo we columns of the</p>
+      <p begin="00:36:20.470" end="00:36:24.650">...developer experience started with a project template</p>
+      <p begin="00:36:24.650" end="00:36:29.570">in tennis sense and aris google support all we to a full-fledged remote of</p>
+      <p begin="00:36:29.570" end="00:36:36.080">our...have a first-class developer experience to write some really cool tools</p>
+      <p begin="00:36:36.080" end="00:36:40.610">Thanks for now if you notice that so you start off with...template picked and</p>
+      <p begin="00:36:40.610" end="00:36:45.250">...server project games full support for that when you produce the axes university</p>
+      <p begin="00:36:45.250" end="00:36:50.470">...into our shell and he did copy so we've updated our</p>
+      <p begin="00:36:50.470" end="00:36:53.750">shell so now you can do file copies from and</p>
+      <p begin="00:36:53.750" end="00:36:59.060">to remote computers so that was something use highlighting here.</p>
+      <p begin="00:36:59.060" end="00:37:02.300">I don't know if you pick up on one of...commons early on about piling the</p>
+      <p begin="00:37:02.300" end="00:37:07.300">q if you target nano server your same code will run on server core and,</p>
+      <p begin="00:37:07.300" end="00:37:09.800">server so you can create one executables that</p>
+      <p begin="00:37:09.800" end="00:37:13.550">...run anywhere in the server family.</p>
+      <p begin="00:37:13.550" end="00:37:17.440">So, he talked some...the different versions of the api</p>
+      <p begin="00:37:17.440" end="00:37:20.460">is so as we've talked about you nano</p>
+      <p begin="00:37:20.460" end="00:37:24.440">...deep refactoring so we removed a bunch of dls that provide higher-level</p>
+      <p begin="00:37:24.440" end="00:37:29.730">...needed in...server but we've had to do is pull some a gis...those so there's some</p>
+      <p begin="00:37:29.730" end="00:37:34.380">combination guys are used by a lot of apps when we looked at the varies roles we want to run on</p>
+      <p begin="00:37:34.380" end="00:37:38.920">...some of the applications we want to run on it for api is that lived in some of those things we remove that are needed</p>
+      <p begin="00:37:38.920" end="00:37:44.170">...nano server...pulled those down and put those in the new dls so what we've created are</p>
+      <p begin="00:37:44.170" end="00:37:47.610">set of reverse...so if you already have a set of code that runs</p>
+      <p begin="00:37:47.610" end="00:37:52.240">...record today is that...within the boundary of mammal server that...run today on</p>
+      <p begin="00:37:52.240" end="00:37:57.070">...nano server sort of reverse order does is it puts a version of</p>
+      <p begin="00:37:57.070" end="00:38:00.700">...ll...nano server so when you're code load it looks like that</p>
+      <p begin="00:38:00.700" end="00:38:04.290">dls available now server when the api gets called...for</p>
+      <p begin="00:38:04.290" end="00:38:08.170">...the new location where the api actually lives in nano server you don't have to</p>
+      <p begin="00:38:08.170" end="00:38:13.030">necessarily recompile against nano server if your code is already within the boundary of</p>
+      <p begin="00:38:13.030" end="00:38:19.630">...so this provides a...to get up and running quickly on server with existing code so</p>
+      <p begin="00:38:19.630" end="00:38:24.250">you when you run with reverse order will happen is the api calls are going to succeed if that</p>
+      <p begin="00:38:24.250" end="00:38:27.790">...within...boundary or you'll get a return toto of</p>
+      <p begin="00:38:27.790" end="00:38:32.960">...error not implement so, you know, that a...nano server now we're still doing a lot of</p>
+      <p begin="00:38:32.960" end="00:38:37.020">work with reverse orders so...additional a...we're going to keep pulling down so</p>
+      <p begin="00:38:37.020" end="00:38:42.160">the to build of windows server that's coming out soon doesn't have all the reverse order worked</p>
+      <p begin="00:38:42.160" end="00:38:47.140">on it the next technical preview after this formal have even more of that but if you are working with your</p>
+      <p begin="00:38:47.140" end="00:38:51.270">total national server and you come across some api is that you think would be useful to have</p>
+      <p begin="00:38:51.270" end="00:38:55.520">a reverse order for there's an email address at the end of the presentations send</p>
+      <p begin="00:38:55.520" end="00:39:01.020">us that list of api as we can keep working...factoring getting the right...functionality...server,</p>
+      <p begin="00:39:01.020" end="00:39:05.550">yeah, so, it's worth pointing out how we develop now server so we did was we started</p>
+      <p begin="00:39:05.550" end="00:39:10.130">...the very smallest component that could run and then we did was we</p>
+      <p begin="00:39:10.130" end="00:39:15.090">pick the scenarios that we wanted to run and then we figured out what api need to be re</p>
+      <p begin="00:39:15.090" end="00:39:20.730">factored to support those scenarios and then we did the next scenario and the next</p>
+      <p begin="00:39:20.730" end="00:39:25.410">...next scenario that's why we're so clear about the scenarios</p>
+      <p begin="00:39:25.410" end="00:39:27.100">the version one supports</p>
+      <p begin="00:39:27.100" end="00:39:32.030">clot os infrastructure clustered high provides a cluster storage born in the</p>
+      <p begin="00:39:32.030" end="00:39:35.740">cloud applications esp net etc.</p>
+      <p begin="00:39:35.740" end="00:39:39.940">As you go and take your applications and get them on nano server as you</p>
+      <p begin="00:39:39.940" end="00:39:44.930">encounter problems we'd like to hear about it so we can decide hey are those part of the</p>
+      <p begin="00:39:44.930" end="00:39:49.790">snares we want to focus on version one and if so then we'll find out those api</p>
+      <p begin="00:39:49.790" end="00:39:53.040">...an will refactoring them if those are scenarios that</p>
+      <p begin="00:39:53.040" end="00:39:58.330">were not targeting for version one will say perhaps later put in the backlog</p>
+      <p begin="00:39:58.330" end="00:40:02.760">in the backlog yes so that's one of the big differences with server core announcer</p>
+      <p begin="00:40:02.760" end="00:40:07.610">with server core we try to play and plug into everything that existed out there</p>
+      <p begin="00:40:07.610" end="00:40:12.390">...ecosystem of windows server with nano server with a much harder line say we've got this dividing</p>
+      <p begin="00:40:12.390" end="00:40:15.650">line only certain things are going to be functional...when I'm just going</p>
+      <p begin="00:40:15.650" end="00:40:20.420">...stuff and just to let it play with what exists today.</p>
+      <p begin="00:40:20.420" end="00:40:24.820">So, two-point-one...reversed orders is they do not eliminate the need for to</p>
+      <p begin="00:40:24.820" end="00:40:27.080">refactoring to for nano server</p>
+      <p begin="00:40:27.080" end="00:40:31.290">...hiv doesn't exist in now server and it's not something we can refactoring bring in</p>
+      <p begin="00:40:31.290" end="00:40:35.790">...going to have to adjuster code to jeffries...recalling something that</p>
+      <p begin="00:40:35.790" end="00:40:42.140">parts of a message box that's never going to work nano server and you'll have to changer code.</p>
+      <p begin="00:40:42.140" end="00:40:43.550">...the reversed orders</p>
+      <p begin="00:40:43.550" end="00:40:48.140">...optional package so...not...by default but if you do need to run something that</p>
+      <p begin="00:40:48.140" end="00:40:52.410">...and hasn't been recompile for nano server an adjusted to where the dls</p>
+      <p begin="00:40:52.410" end="00:40:56.300">...now are the...positive now you can installed them in your</p>
+      <p begin="00:40:56.300" end="00:41:01.550">...image when you get national server and upcoming windows...you'll seepackages folder that has</p>
+      <p begin="00:41:01.550" end="00:41:07.080">a reverse orders package in it and what we have today is this list on the screen so...</p>
+      <p begin="00:41:07.080" end="00:41:12.050">higher-level function either often has common api for like file and registry and things like that</p>
+      <p begin="00:41:12.050" end="00:41:17.670">...you may need for your apps even running on a small footprint server like nano server?</p>
+      <p begin="00:41:17.670" end="00:41:20.400">And, we've done a bunch of work.</p>
+      <p begin="00:41:20.400" end="00:41:25.870">And, experimented with a variety of things is...is one of low-rent</p>
+      <p begin="00:41:25.870" end="00:41:31.510">off I know screwed up...you can about all right.</p>
+      <p begin="00:41:31.510" end="00:41:35.300">So, here's the thing we mention...in the...applications we talked about</p>
+      <p begin="00:41:35.300" end="00:41:40.700">...net has et cetera that's just the beginning we want to support</p>
+      <p begin="00:41:40.700" end="00:41:45.550">all the language run...if people are writing...applications in a</p>
+      <p begin="00:41:45.550" end="00:41:50.720">language runtime those the ones that we want to support so we're doing that were actively</p>
+      <p begin="00:41:50.720" end="00:41:55.630">working that so here's what runs today many of these with the reverse...but</p>
+      <p begin="00:41:55.630" end="00:42:01.780">here's what runs once today and we...about...skill...and...dot net five-one</p>
+      <p begin="00:42:01.780" end="00:42:06.200">spar check this out okay so we've got chef.</p>
+      <p begin="00:42:06.200" end="00:42:11.180">Chef...uses ruby...got php we have engine...python</p>
+      <p begin="00:42:11.180" end="00:42:16.170">...js go read this...my sequel open ssl java</p>
+      <p begin="00:42:16.170" end="00:42:21.300">ruby sequel light and we just that list will continue to grow</p>
+      <p begin="00:42:21.300" end="00:42:25.750">this is very exciting very exciting so if you're writing a cloud os</p>
+      <p begin="00:42:25.750" end="00:42:29.550">...application and there's something you...some language...</p>
+      <p begin="00:42:29.550" end="00:42:34.940">not here let us know because we want to support that thanks again this is</p>
+      <p begin="00:42:34.940" end="00:42:39.880">...reverse...install if you just take announcer image and don't include refers folders a lot of these aren't going to</p>
+      <p begin="00:42:39.880" end="00:42:41.340">...okay,</p>
+      <p begin="00:42:41.340" end="00:42:45.100">so, again, I mentioned cloud os applications part of that is the</p>
+      <p begin="00:42:45.100" end="00:42:49.790">...tool chain earlier we showed you a demonstration of visual studio</p>
+      <p begin="00:42:49.790" end="00:42:52.930">release management that microsoft's develops tool</p>
+      <p begin="00:42:52.930" end="00:42:57.770">chaining chef is another great partner that has a develops tool chain so let's</p>
+      <p begin="00:42:57.770" end="00:43:04.350">show you that run nano server each seatbelts on right okay good?</p>
+      <p begin="00:43:09.960" end="00:43:22.390">But, what really...desktop?</p>
+      <p begin="00:43:22.390" end="00:43:25.870">...thanks for...suffer appreciated a what.</p>
+      <p begin="00:43:25.870" end="00:43:31.210">You...I...el servers fast zing</p>
+      <p begin="00:43:31.210" end="00:43:37.610">...awesome aspect of...running on I want to know resumes</p>
+      <p begin="00:43:37.610" end="00:43:42.110">...moi model we can be writing recipes like endemol</p>
+      <p begin="00:43:42.110" end="00:43:47.070">...a open-source...like jingle python and will</p>
+      <p begin="00:43:47.070" end="00:43:50.710">...recipes and make sure we get chef working on answer</p>
+      <p begin="00:43:51.850" end="00:43:56.940">...your support totally candlelight microsoft information for sign</p>
+      <p begin="00:43:56.940" end="00:44:00.600">...excellence...</p>
+      <p begin="00:44:00.600" end="00:44:02.230">Hello, everyone</p>
+      <p begin="00:44:02.230" end="00:44:06.060">...great...shut integration management running...nasser.</p>
+      <p begin="00:44:07.180" end="00:44:11.860">...use your simple build with the jingle...being more than</p>
+      <p begin="00:44:11.860" end="00:44:16.330">using engine acts as a reversed proxy server...recipes</p>
+      <p begin="00:44:16.330" end="00:44:20.430">...jingle engine x and python which as, you know,</p>
+      <p begin="00:44:20.430" end="00:44:28.630">is what jingle runs up we start using partial rewarding...internet server machine?</p>
+      <p begin="00:44:28.630" end="00:44:35.110">What changed...show sixty-four...rama chef client?</p>
+      <p begin="00:44:35.110" end="00:44:43.040">That's just go ahead and ask for this...and...whatever.</p>
+      <p begin="00:44:43.040" end="00:44:53.800">...we do I need...copyright address and thanks...explorer and...</p>
+      <p begin="00:44:53.800" end="00:45:01.420">This is assume ...manage...or integrator sample.</p>
+      <p begin="00:45:01.420" end="00:45:09.680">After entering might potentials...answer carjust because...</p>
+      <p begin="00:45:09.680" end="00:45:14.680">Let me look at the jingle recipe prevent I'm going to leverage archdiocese</p>
+      <p begin="00:45:14.680" end="00:45:19.070">...feature editing...files.</p>
+      <p begin="00:45:19.070" end="00:45:21.580">The same and chef recipe can be used on the</p>
+      <p begin="00:45:21.580" end="00:45:25.440">...systems and within continuous integration workflows to the only</p>
+      <p begin="00:45:25.440" end="00:45:31.260">...to various past and staging environments.</p>
+      <p begin="00:45:31.260" end="00:45:35.080">That's it and...sure early demo you so I'll show and therefore</p>
+      <p begin="00:45:35.080" end="00:45:41.070">ruby general iphone and engine...all-round on them server.</p>
+      <p begin="00:45:41.070" end="00:45:45.980">This server maybe nano...science but certainly notin our thanks for watching</p>
+      <p begin="00:45:47.180" end="00:45:50.800">...you go so now again woody highlighted there was our</p>
+      <p begin="00:45:50.800" end="00:45:54.820">shell has now the ability to do remote script editing</p>
+      <p begin="00:45:54.820" end="00:45:59.730">in remote script debugging again to support well, it where</p>
+      <p begin="00:45:59.730" end="00:46:04.660">you find is that as we modify the system to support nano system</p>
+      <p begin="00:46:04.660" end="00:46:06.960">mail server it makes the rest of our</p>
+      <p begin="00:46:06.960" end="00:46:10.980">system better in the same way that when we went and focused in</p>
+      <p begin="00:46:10.980" end="00:46:16.370">an be decide we've become a great enterprise server that was at a time when, you know,</p>
+      <p begin="00:46:16.370" end="00:46:21.720">somebody said that the defining user experience of the desktop was something called the blue screen of death</p>
+      <p begin="00:46:21.720" end="00:46:24.230">okay but our work on the server</p>
+      <p begin="00:46:24.230" end="00:46:29.200">...last time you saw blue screen a death right they happen but they're pretty rare and why is</p>
+      <p begin="00:46:29.200" end="00:46:33.220">it was because our investments in the server benefited</p>
+      <p begin="00:46:33.220" end="00:46:36.030">...desktop show to our investments</p>
+      <p begin="00:46:36.030" end="00:46:40.340">in the cloud are changing things so that they will benefit I benefit</p>
+      <p begin="00:46:40.340" end="00:46:49.590">the enterprise scenarios as well like full...full remote all right?</p>
+      <p begin="00:46:49.590" end="00:46:54.410">So, before, before we go onto installation...very closely reshuffle</p>
+      <p begin="00:46:54.410" end="00:46:58.090">not demo actually found some api...we moved down from up above into the reverse</p>
+      <p begin="00:46:58.090" end="00:47:02.860">orders to get everything working on there and you may have noticed...on some of the earlier</p>
+      <p begin="00:47:02.860" end="00:47:07.120">...is everything sixty four-bit so...do have to make sure...four-bit to</p>
+      <p begin="00:47:07.120" end="00:47:10.740">...announcer so if you do find things that are sixty</p>
+      <p begin="00:47:10.740" end="00:47:16.540">...api...that...down please let us know and we'll take a look at those so installation</p>
+      <p begin="00:47:16.540" end="00:47:21.060">on server and we saw that cool...but...does not have</p>
+      <p begin="00:47:21.060" end="00:47:25.720">msi support has a lot of...dependencies is not available so in today's builds</p>
+      <p begin="00:47:25.720" end="00:47:30.590">the installation options rx copier files over and manually</p>
+      <p begin="00:47:30.590" end="00:47:35.420">do registration...custom powerful scripts and we are working on installer for</p>
+      <p begin="00:47:35.420" end="00:47:39.760">national server so you can package up your code and be able to install it and we're</p>
+      <p begin="00:47:39.760" end="00:47:46.700">looking at supporting install on install inventory and both online offline installation of code.</p>
+      <p begin="00:47:46.700" end="00:47:49.370">So, the sporty task we're going to have...for files</p>
+      <p begin="00:47:49.370" end="00:47:52.890">...creatively folders...files</p>
+      <p begin="00:47:52.890" end="00:48:03.700">set permissions hormones will have services support...configure start delete.</p>
+      <p begin="00:48:03.700" end="00:48:06.000">...docom register and...register.</p>
+      <p begin="00:48:07.100" end="00:48:11.110">Was for registry so create and delete registry items and will also support integer</p>
+      <p begin="00:48:11.110" end="00:48:16.370">...that registration which is a custom action...today so focused on the</p>
+      <p begin="00:48:16.370" end="00:48:21.370">scenarios we believer needed to install code on nano server but again if there's functional in here that you need to install</p>
+      <p begin="00:48:21.370" end="00:48:24.740">...these for this normal-looking and just be clear</p>
+      <p begin="00:48:24.740" end="00:48:28.720">...distinction between installation configuration turns out</p>
+      <p begin="00:48:28.720" end="00:48:33.120">that a lot of the problem is when you get those two things confused you want</p>
+      <p begin="00:48:33.120" end="00:48:35.220">to install something and then you want to</p>
+      <p begin="00:48:35.220" end="00:48:40.210">...those different things and you can start using this or x copy and then</p>
+      <p begin="00:48:40.210" end="00:48:47.490">you can figure out with things like desired state configuration directly?</p>
+      <p begin="00:48:47.490" end="00:48:50.970">So, talked about a lot of stuff at all sounds very exciting</p>
+      <p begin="00:48:50.970" end="00:48:55.450">...mention we talk about some preliminary results these early numbers again things may change</p>
+      <p begin="00:48:55.450" end="00:48:59.940">as we keep evolving the system and some of the things we refined and make better</p>
+      <p begin="00:48:59.940" end="00:49:04.080">...may make server core better as well which would be...but,</p>
+      <p begin="00:49:04.080" end="00:49:08.160">some of these numbers may change so how are we doing with all this stuff</p>
+      <p begin="00:49:08.160" end="00:49:12.610">we're talking about so first is we're going look at servicing and this is all the patches</p>
+      <p begin="00:49:12.610" end="00:49:15.100">released during twenty fourteen software</p>
+      <p begin="00:49:15.100" end="00:49:19.510">...available throughout the year of two thousand fourteen how to compare with</p>
+      <p begin="00:49:19.510" end="00:49:24.990">server core and the server with aggression just be clear we did decode analysis of every single</p>
+      <p begin="00:49:24.990" end="00:49:29.110">...fourteen and then we...to the code base and said does that code base</p>
+      <p begin="00:49:29.110" end="00:49:33.960">existent nano server so basically we did the right way there's no gamesmanship</p>
+      <p begin="00:49:33.960" end="00:49:39.640">going here so now server would have...nine important bulletins compared to...</p>
+      <p begin="00:49:39.640" end="00:49:44.510">for server core and twenty-six for full server so critical</p>
+      <p begin="00:49:44.510" end="00:49:48.160">bolton is even more interesting it's only two critical bulletins for</p>
+      <p begin="00:49:48.160" end="00:49:52.030">a whole year for nano server so record eight...around...</p>
+      <p begin="00:49:53.070" end="00:49:58.730">To this and...the number of removes three routes holier.</p>
+      <p begin="00:49:58.730" end="00:50:00.740">So, record had six full</p>
+      <p begin="00:50:00.740" end="00:50:05.570">server would have eleven so you would have only been able to skip one month's worth of reboot so you can see that greatly</p>
+      <p begin="00:50:05.570" end="00:50:10.550">increases your up time and we still want to do some more work we really want to get those to a maximum of to reboot</p>
+      <p begin="00:50:10.550" end="00:50:14.580">...year fernando server.</p>
+      <p begin="00:50:14.580" end="00:50:19.970">The security side so the...we haven't done a lot in this area it's slower seventy-three compared</p>
+      <p begin="00:50:19.970" end="00:50:22.190">...ninety-eight.</p>
+      <p begin="00:50:22.190" end="00:50:26.490">...services running twenty-two versus forty-six so a little less than half.</p>
+      <p begin="00:50:26.490" end="00:50:29.600">Ports open twelve versus thirty one's a little more than a third</p>
+      <p begin="00:50:29.600" end="00:50:33.250">...significantly reduce the number of services imports those attack</p>
+      <p begin="00:50:33.250" end="00:50:38.570">vectors that all those hackers we talked about earlier love to try and access.</p>
+      <p begin="00:50:38.570" end="00:50:41.860">Resource utilization so process counts twenty-one versus twenty six</p>
+      <p begin="00:50:42.960" end="00:50:46.810">...hundred-fifty megabytes versus two hundred fifty five megabytes</p>
+      <p begin="00:50:46.810" end="00:50:55.290">we actually have a nano server on old tower machine...booting in fifteen seconds.</p>
+      <p begin="00:50:55.290" end="00:50:57.810">Kernel memory...sixty-one megabytes version hundred</p>
+      <p begin="00:50:57.810" end="00:51:04.870">thirty-nine about half that's less than half my friend I know.</p>
+      <p begin="00:51:04.870" end="00:51:08.340">So, deployment improvements this is very interesting along with</p>
+      <p begin="00:51:08.340" end="00:51:13.120">the patches so from starting the deployment process to fully provisions</p>
+      <p begin="00:51:13.120" end="00:51:17.870">...accessible...the network nano server forty seconds that so in the computer</p>
+      <p begin="00:51:17.870" end="00:51:22.700">and indeed api to address up and running and accessible server core took five</p>
+      <p begin="00:51:22.700" end="00:51:27.560">minutes so we also have a set-up and it's a demo that will get up on channel nine...</p>
+      <p begin="00:51:27.560" end="00:51:32.370">night of...including announcer machine and this onto old tower machines will</p>
+      <p begin="00:51:32.370" end="00:51:37.850">hundred megabyte switch now server takes three minutes to deploy from starting</p>
+      <p begin="00:51:37.850" end="00:51:41.870">...you process to upping fully provisions and that's on...hundred megabytes which</p>
+      <p begin="00:51:41.870" end="00:51:46.620">was some old hardware...a datacenter environment you'll get that even faster.</p>
+      <p begin="00:51:46.620" end="00:51:50.970">We did the same thing with server core the same equipment nineteen minutes so the</p>
+      <p begin="00:51:50.970" end="00:51:55.510">nano server time actually if you we've done some analysis a lot of times actually spent topping</p>
+      <p begin="00:51:55.510" end="00:52:00.570">...over so we gotta do something there but.</p>
+      <p begin="00:52:00.570" end="00:52:03.920">And, this footprints this word is really so now servers</p>
+      <p begin="00:52:03.920" end="00:52:14.240">four hundred megabytes compared to almost five gigabytes for server core.</p>
+      <p begin="00:52:14.240" end="00:52:18.980">Wait for it and then on the bhd five there's a little bit overhead...the</p>
+      <p begin="00:52:18.980" end="00:52:21.010">...you can...goes from four point</p>
+      <p begin="00:52:21.010" end="00:52:26.780">eight six-point-three announcer goes from four hundred four hundred ten so great</p>
+      <p begin="00:52:26.780" end="00:52:31.660">improvement in footprint back to the commons were making earlier about the smaller installation size</p>
+      <p begin="00:52:31.660" end="00:52:34.860">...faster reboot all of that were...there,</p>
+      <p begin="00:52:34.860" end="00:52:39.380">yeah, so, what I like to tell people at this point is you just saw those numbers pretty</p>
+      <p begin="00:52:39.380" end="00:52:45.010">stunning numbers the next time you have somebody and developer and admin say well, you know,</p>
+      <p begin="00:52:45.010" end="00:52:49.830">I really don't want it seen convenient to learn our shell I really don't like local</p>
+      <p begin="00:52:49.830" end="00:52:56.290">remote gooey ways think back at these numbers and then look at that person and say?</p>
+      <p begin="00:52:56.290" end="00:52:59.120">Is that person really worth four times as many</p>
+      <p begin="00:52:59.120" end="00:53:03.630">...that much extra resource consumption and that much extra</p>
+      <p begin="00:53:03.630" end="00:53:12.240">time and...answer might bs?</p>
+      <p begin="00:53:12.240" end="00:53:18.150">So, now server windows overview next will be...installation option much like server core.</p>
+      <p begin="00:53:18.150" end="00:53:22.970">Will not be listed in setup with nano server you do</p>
+      <p begin="00:53:22.970" end="00:53:26.970">while the ways we get so small is you have to put the...and there's no plug-and-play</p>
+      <p begin="00:53:26.970" end="00:53:31.530">are user mode plug-and-play and nano service kernel mode so it's not going to often detect what</p>
+      <p begin="00:53:31.530" end="00:53:36.190">drivers are in our what...required for...particular hardware you have to inject the</p>
+      <p begin="00:53:36.190" end="00:53:40.940">drivers in the image before you...rather than showing up in set-up and if you haven't put the driver</p>
+      <p begin="00:53:40.940" end="00:53:46.200">...basically installing a brick it is a separate image that you have to customize before deploy</p>
+      <p begin="00:53:46.200" end="00:53:51.190">...was in a separate full-grown media and under that there's a packages some folder in</p>
+      <p begin="00:53:51.190" end="00:53:56.140">...there...oem...package so-if you...all the...available server core and just put that big blob</p>
+      <p begin="00:53:56.140" end="00:54:00.500">...you can do that or you can customize and just pick the...specific your hardware and have a</p>
+      <p begin="00:54:00.500" end="00:54:06.270">...small and tight image it will be available next server released been released</p>
+      <p begin="00:54:06.270" end="00:54:08.580">...as part of ignite and build and</p>
+      <p begin="00:54:08.580" end="00:54:14.070">...follow-on technical previews so we're going to get a guide upon technet on how you can work with</p>
+      <p begin="00:54:14.070" end="00:54:18.360">...server how you can do not management through powers overloading and all</p>
+      <p begin="00:54:18.360" end="00:54:22.330">the information on how to inject...and...so...all coming,</p>
+      <p begin="00:54:22.330" end="00:54:25.730">yeah, and, it's worth again remind mining you that were very early days with</p>
+      <p begin="00:54:25.730" end="00:54:29.020">nano server so when you get edge, you know, you're going to have to read the released</p>
+      <p begin="00:54:29.020" end="00:54:34.600">...and have some struggles but we'll have some fa...out there some video demos but,</p>
+      <p begin="00:54:34.600" end="00:54:45.160">obviously each release are become more polished?</p>
+      <p begin="00:54:45.160" end="00:54:49.530">Okay, so, the roadmap so nano server is the future of windows</p>
+      <p begin="00:54:49.530" end="00:54:50.030">server.</p>
+      <p begin="00:54:51.080" end="00:54:52.010">Version one</p>
+      <p begin="00:54:52.010" end="00:54:56.970">we're starting focused in on these cloud scenarios okay and then, you</p>
+      <p begin="00:54:56.970" end="00:55:01.070">know, there's...server and is born in the cloud applications but,</p>
+      <p begin="00:55:01.070" end="00:55:05.140">it's really the foundation for all the components going forward we want</p>
+      <p begin="00:55:05.140" end="00:55:08.530">a model of just enough os so if you</p>
+      <p begin="00:55:08.530" end="00:55:12.860">...an application...you need five gigabytes...a...great</p>
+      <p begin="00:55:12.860" end="00:55:17.820">...of five gigabytes exponents but shouldn't have ten and if you only want</p>
+      <p begin="00:55:17.820" end="00:55:22.690">nine hundred megabytes...have nine hundred megabytes so you'll see that claudio</p>
+      <p begin="00:55:22.690" end="00:55:27.000">and net nano server starting off with the cloud scenarios is a</p>
+      <p begin="00:55:27.000" end="00:55:31.890">first step to a fully compositional factored operating</p>
+      <p begin="00:55:31.890" end="00:55:36.490">system where you get the components that you want and we'll keep moving rolls over to</p>
+      <p begin="00:55:36.490" end="00:55:39.030">...server so if you have particular roles are important,</p>
+      <p begin="00:55:39.030" end="00:55:43.240">... we're collecting feedback...to prioritize what we go after next after hyper</p>
+      <p begin="00:55:43.240" end="00:55:50.230">...and file server so you just the things you want as long as you want the right things?</p>
+      <p begin="00:55:50.230" end="00:55:54.100">That's...don't require during exactly as long as it doesn't require</p>
+      <p begin="00:55:54.100" end="00:55:58.210">...ok so we do have server core and that will run your existing</p>
+      <p begin="00:55:58.210" end="00:56:02.750">enterprise applications for now and again both of these</p>
+      <p begin="00:56:02.750" end="00:56:06.920">your run these you can decide which one you want to target and then you run it</p>
+      <p begin="00:56:06.920" end="00:56:14.240">in a physical in a virtual and container thanks pretty simple storing.</p>
+      <p begin="00:56:14.240" end="00:56:19.090">Okay, so, the actions re target your code for nano server</p>
+      <p begin="00:56:19.090" end="00:56:23.900">it's the future you want to get on this you want to get on this we think people are going to adapt this pretty</p>
+      <p begin="00:56:23.900" end="00:56:28.490">quickly saw the numbers right they are compelling they speak for themselves as I</p>
+      <p begin="00:56:28.490" end="00:56:33.030">mention this is the most significant change we have made to the server</p>
+      <p begin="00:56:33.030" end="00:56:37.440">sense windows nt so you want to get on this bandwagon and help us right tells where we</p>
+      <p begin="00:56:37.440" end="00:56:41.020">...so deployed let us know what encountered any problems that</p>
+      <p begin="00:56:41.020" end="00:56:45.910">you have here's the thing and, you want to shift to</p>
+      <p begin="00:56:45.910" end="00:56:53.540">for remote management...I know some of you have not done this.</p>
+      <p begin="00:56:53.540" end="00:56:56.120">Embraces remote management that</p>
+      <p begin="00:56:56.120" end="00:57:00.990">is the future full stop and you should do both for nano server</p>
+      <p begin="00:57:00.990" end="00:57:04.850">injure other products it's the only way our customers</p>
+      <p begin="00:57:04.850" end="00:57:08.600">are mutual customers can adapt in scale</p>
+      <p begin="00:57:08.600" end="00:57:12.780">right can automate can improve their ip so,</p>
+      <p begin="00:57:12.780" end="00:57:17.510">do that here's a great...resources how we do</p>
+      <p begin="00:57:17.510" end="00:57:24.680">...a...minutes left okay we had we...one demo for the and...</p>
+      <p begin="00:57:24.680" end="00:57:29.230">Because we weren't sure we're going to have enough time so this is our...we</p>
+      <p begin="00:57:29.230" end="00:57:33.030">...nano server running as a vm instance in</p>
+      <p begin="00:57:33.030" end="00:57:36.560">measure and we then robo use remote our shelled</p>
+      <p begin="00:57:36.560" end="00:57:41.590">...this all these videos...on channel...this afternoon and more will come after</p>
+      <p begin="00:57:41.590" end="00:57:47.780">...at the end of the demo will show you the channel...should see it however long</p>
+      <p begin="00:57:47.780" end="00:57:52.020">...server...on the cloud and...this them what I'd like to</p>
+      <p begin="00:57:52.020" end="00:57:56.870">...some overpower shows whom features running on the server once of</p>
+      <p begin="00:57:56.870" end="00:57:59.700">...might be m I use the dashboard to</p>
+      <p begin="00:57:59.700" end="00:58:04.010">locate the public ip address copy the clipboard.</p>
+      <p begin="00:58:04.010" end="00:58:12.650">And, pieces into...powers...less store that...in two-dollar.</p>
+      <p begin="00:58:12.650" end="00:58:17.410">I also need to create a social object using nucleus session and</p>
+      <p begin="00:58:17.410" end="00:58:25.280">...has the computering as well as the administrative credentials.</p>
+      <p begin="00:58:25.280" end="00:58:29.780">This social object is going to come in handy throughout them.</p>
+      <p begin="00:58:29.780" end="00:58:32.500">For starters...remote into the</p>
+      <p begin="00:58:32.500" end="00:58:35.310">...server...using entropy ascension.</p>
+      <p begin="00:58:36.530" end="00:58:41.590">I use their...that we have a social object classroom dollar.</p>
+      <p begin="00:58:41.590" end="00:58:45.710">...change folders to see test and</p>
+      <p begin="00:58:45.710" end="00:58:49.900">mature and find absolutely nothing there so we...are session</p>
+      <p begin="00:58:49.900" end="00:58:55.340">and check out our local partial folder and fining...script</p>
+      <p begin="00:58:55.340" end="00:58:59.560">...obvious one using ps edit to edit.</p>
+      <p begin="00:58:59.560" end="00:59:01.100">We take a look at it doesn't do</p>
+      <p begin="00:59:01.100" end="00:59:04.940">much of its useful but this is just a</p>
+      <p begin="00:59:04.940" end="00:59:09.720">...let's take a look at...feature copy item</p>
+      <p begin="00:59:09.720" end="00:59:14.310">...too numerous to session and from...let's</p>
+      <p begin="00:59:14.310" end="00:59:18.140">use to session to copying that local tests</p>
+      <p begin="00:59:18.140" end="00:59:22.540">group over to the remote...she.</p>
+      <p begin="00:59:22.540" end="00:59:26.460">Saw the path one-point-two local para and destination is a see</p>
+      <p begin="00:59:26.460" end="00:59:31.870">...machine will also copy from session from order</p>
+      <p begin="00:59:31.870" end="00:59:37.620">...session...for that we use the copy of these which is</p>
+      <p begin="00:59:37.620" end="00:59:43.320">...for copywriter and half of this case is actually the remote</p>
+      <p begin="00:59:43.320" end="00:59:48.410">the windows locks doesn't log parable coming to the local folder.</p>
+      <p begin="00:59:48.410" end="00:59:51.840">So, let's...dirt and we actually find that this amar has made this</p>
+      <p begin="00:59:51.840" end="00:59:57.720">journey cthree over let's now entropy ascension again.</p>
+      <p begin="00:59:57.720" end="00:59:58.630">And, see if</p>
+      <p begin="00:59:58.630" end="01:00:03.510">...local...has actually made it safely to the remote</p>
+      <p begin="01:00:03.510" end="01:00:07.360">...and...office.</p>
+      <p begin="01:00:07.360" end="01:00:11.270">Once we run...we actually find that id...but</p>
+      <p begin="01:00:11.270" end="01:00:17.690">...w my object produced error...string.</p>
+      <p begin="01:00:17.690" end="01:00:20.620">Is actually truncated so let's look at the next</p>
+      <p begin="01:00:20.620" end="01:00:24.800">...feature which is editing remote files isp edit credit</p>
+      <p begin="01:00:24.800" end="01:00:28.690">...scrap?</p>
+      <p begin="01:00:28.690" end="01:00:34.220">Not only converters the rules for...we can actually be bomb them</p>
+      <p begin="01:00:34.220" end="01:00:36.880">...variables...set of...by...</p>
+      <p begin="01:00:38.070" end="01:00:40.980">And,...script again using...</p>
+      <p begin="01:00:40.980" end="01:00:45.310">...stop at the break point and I have full access to the command-line</p>
+      <p begin="01:00:45.310" end="01:00:48.740">...the first thing I do is get...</p>
+      <p begin="01:00:48.740" end="01:00:51.230">Get...object and...demean errors not</p>
+      <p begin="01:00:51.230" end="01:00:54.400">...the avi command.</p>
+      <p begin="01:00:54.400" end="01:00:58.230">For that I realized that get w my object is not</p>
+      <p begin="01:00:58.230" end="01:01:04.940">support on server instead I should be using gets.</p>
+      <p begin="01:01:04.940" end="01:01:08.710">So, a press...five to stop the burger.</p>
+      <p begin="01:01:08.710" end="01:01:11.590">And, replace might get the object commended...get</p>
+      <p begin="01:01:11.590" end="01:01:17.830">some instance and press of age to test out a current I.</p>
+      <p begin="01:01:17.830" end="01:01:21.900">Now I turn my attention to the truncated...and I said</p>
+      <p begin="01:01:21.900" end="01:01:26.130">another preprint inside the loop and present five again.</p>
+      <p begin="01:01:26.130" end="01:01:33.540">...actually realized that I should not be adding plus three two-dollar.</p>
+      <p begin="01:01:33.540" end="01:01:36.560">So, I...five.</p>
+      <p begin="01:01:36.560" end="01:01:39.890">Fix that line that was an easy fix.</p>
+      <p begin="01:01:39.890" end="01:01:45.920">And, run...again this...actually ran successfully.</p>
+      <p begin="01:01:45.920" end="01:01:50.820">This than we ran...server...vm...answering the cloud and use partial</p>
+      <p begin="01:01:50.820" end="01:01:55.020">remotely and several partial school new features to copy files from and</p>
+      <p begin="01:01:55.020" end="01:01:59.740">...will machine as well as edit and debug...scripts.</p>
+      <p begin="01:01:59.740" end="01:02:01.350">...for watching all</p>
+      <p begin="01:02:01.350" end="01:02:06.130">right to last items I'm number one is the channel</p>
+      <p begin="01:02:06.130" end="01:02:09.900">line channel nine if you search channel line and</p>
+      <p begin="01:02:09.900" end="01:02:15.380">...nano server you will see the nail server a channel and we have</p>
+      <p begin="01:02:15.380" end="01:02:20.200">four videos up there I think a couple more will show up in a few minutes and you can watch all everything you</p>
+      <p begin="01:02:20.200" end="01:02:24.900">saw here again next week we're going to release a bunch more that are more it pro</p>
+      <p begin="01:02:24.900" end="01:02:29.840">focus will definitely want to watch and some amazing stuff number two if you like</p>
+      <p begin="01:02:29.840" end="01:02:33.790">this session please fill out the evaluations remember my name is</p>
+      <p begin="01:02:33.790" end="01:02:37.060">geoffrey snow over if you didn't like the session please fill</p>
+      <p begin="01:02:37.060" end="01:02:42.120">up the evaluations remember my name is mark...of...just fine my name and</p>
+      <p begin="01:02:42.120" end="01:02:47.710">...all my sessions so thank you very much for your time and ...</p>
+
+    </div>
+  </body>
+</tt>

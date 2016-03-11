@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.921</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:10.860" end="00:00:16.240">Everyone it's three thirty in the afternoon most you guys probably have a lot of fun last night we know we had a few</p>
+      <p begin="00:00:16.240" end="00:00:19.800">...please stand-up.</p>
+      <p begin="00:00:19.800" end="00:00:22.960">...if you can.</p>
+      <p begin="00:00:22.960" end="00:00:26.840">Good afternoon everybody.</p>
+      <p begin="00:00:26.840" end="00:00:30.760">That's better...</p>
+      <p begin="00:00:30.760" end="00:00:34.750">...see we're going to have a lot of fun today all right</p>
+      <p begin="00:00:34.750" end="00:00:40.980">so john sheehan and I'm going to be talking about project centennial and,</p>
+      <p begin="00:00:40.980" end="00:00:46.370">I guess remember submit your valuations told us that.</p>
+      <p begin="00:00:46.370" end="00:00:51.060">...well first of all who...right so why not why my appear</p>
+      <p begin="00:00:51.060" end="00:00:57.420">talk to-you my name's john chien I've been on the windows team for five or</p>
+      <p begin="00:00:57.420" end="00:01:03.460">six years I think and I came into windows during windows eight to do the windows</p>
+      <p begin="00:01:03.460" end="00:01:07.430">...model which now is we...the universal windows</p>
+      <p begin="00:01:07.430" end="00:01:14.040">app platform something ...keeps getting renamed I can't keep up.</p>
+      <p begin="00:01:14.040" end="00:01:18.610">So, actually came to microsoft from a company called softer city</p>
+      <p begin="00:01:18.610" end="00:01:27.730">who microsoft acquired so how many people know softer city...a product called soft grid how many have heard of</p>
+      <p begin="00:01:27.730" end="00:01:33.050">Few more at v was this really cool or is this really cool product</p>
+      <p begin="00:01:33.050" end="00:01:35.050">...enterprises use</p>
+      <p begin="00:01:35.050" end="00:01:38.790">to virtual lies their software and people always wondered what</p>
+      <p begin="00:01:38.790" end="00:01:44.130">...that...and we're going to talk about those kind of things today but, yeah, so,</p>
+      <p begin="00:01:44.130" end="00:01:47.470">now I basically I work on the ...work in the developer</p>
+      <p begin="00:01:47.470" end="00:01:54.720">platform team doing stuff like I do the app model in some other things but,</p>
+      <p begin="00:01:54.720" end="00:01:58.500">anyway, so, let's we talking about today by the way personal</p>
+      <p begin="00:01:58.500" end="00:02:02.800">...disclaimer for-you this project is still under development</p>
+      <p begin="00:02:02.800" end="00:02:07.960">first that means that it's not in the bits that you're getting today so all the stuff</p>
+      <p begin="00:02:07.960" end="00:02:12.920">you see on stage here today you won't be able to do in your builds it will come...some future</p>
+      <p begin="00:02:12.920" end="00:02:17.860">flight of windows and, also I'm working with...bits that were compiled on</p>
+      <p begin="00:02:17.860" end="00:02:21.720">...machine like the other day so you probably?</p>
+      <p begin="00:02:22.750" end="00:02:28.090">Might run into a couple issues if we do just...clapping we'll get through it.</p>
+      <p begin="00:02:28.090" end="00:02:31.820">So, what is project centennial is a bridge</p>
+      <p begin="00:02:31.820" end="00:02:36.930">from the allow you to convert your classic windows apps to universal</p>
+      <p begin="00:02:36.930" end="00:02:41.730">...and it's probably one of the coolest things I think we've done</p>
+      <p begin="00:02:41.730" end="00:02:45.290">...a long-time because it's actually?</p>
+      <p begin="00:02:45.290" end="00:02:51.230">As I'll take you through today you'll see it's almost magical it is very similar to what we did with</p>
+      <p begin="00:02:51.230" end="00:02:56.740">that v which is basically allow you to take an application that</p>
+      <p begin="00:02:56.740" end="00:03:01.870">was written like...those kind of things and actually convert it to be and app</p>
+      <p begin="00:03:01.870" end="00:03:07.030">...app...through the store...all those things so it's very cool</p>
+      <p begin="00:03:08.050" end="00:03:12.120">so what's beget so why do we do project see and for the rest of this thing</p>
+      <p begin="00:03:13.150" end="00:03:19.030">...just obviously way too long first of all there is a huge ecosystem</p>
+      <p begin="00:03:19.030" end="00:03:23.430">of classic windows apps out there I think I...in the keynote...on...we have like</p>
+      <p begin="00:03:23.430" end="00:03:27.720">sixteen million classic windows apps your when thirty-two your dot net apps your</p>
+      <p begin="00:03:27.720" end="00:03:31.470">...formats and we obviously</p>
+      <p begin="00:03:31.470" end="00:03:36.240">knew that all these developers wanted to be on the latest platform they wanted to use all the latest</p>
+      <p begin="00:03:36.240" end="00:03:41.460">features and they had a huge investment in their code but, you know,</p>
+      <p begin="00:03:41.460" end="00:03:45.800">with the universal windows that model there was really know great path for them I mean</p>
+      <p begin="00:03:45.800" end="00:03:50.290">it was basically the story was great rewrite your app</p>
+      <p begin="00:03:50.290" end="00:03:55.440">you'll be fine and that's is obviously a terrible story?</p>
+      <p begin="00:03:55.440" end="00:04:01.150">So, we heard we heard the feedback how about that we heard the feedback so, we started looking at</p>
+      <p begin="00:04:01.150" end="00:04:05.540">what would it look like to really embrace these apps and bring them forward and bring their code</p>
+      <p begin="00:04:05.540" end="00:04:08.660">forward and all the cool things that they do ford.</p>
+      <p begin="00:04:08.660" end="00:04:14.440">And, the first thing we ran into was basically the issue that.</p>
+      <p begin="00:04:14.440" end="00:04:18.540">For windows for when thirty-two...apps there's no such thing as</p>
+      <p begin="00:04:18.540" end="00:04:24.500">...app but there's no definition of it this was my big...this is the thing that accidentally got me into windows for me</p>
+      <p begin="00:04:24.500" end="00:04:29.210">just yelling at the windows team saying you don't have an app model</p>
+      <p begin="00:04:29.210" end="00:04:34.190">...app and you just can't do it it's like well it's we have pe files like...exes in</p>
+      <p begin="00:04:34.190" end="00:04:38.950">the dls so we...files on disks we have registry entries we have</p>
+      <p begin="00:04:38.950" end="00:04:43.540">and si files but the moment that those things get put on the system.</p>
+      <p begin="00:04:43.540" end="00:04:49.030">It's just staff the os doesn't understand anything about it and</p>
+      <p begin="00:04:49.030" end="00:04:52.930">...really can't do anything to help keep the system</p>
+      <p begin="00:04:52.930" end="00:04:56.670">...update the applications on install the application</p>
+      <p begin="00:04:56.670" end="00:05:01.370">nothing so when we did in windows eight when we did the windows</p>
+      <p begin="00:05:01.370" end="00:05:05.910">...that model we knew that we needed to have a very clean-up model that</p>
+      <p begin="00:05:05.910" end="00:05:11.590">apps could very easily be deployed they wouldn't harm the system how many of ever installed</p>
+      <p begin="00:05:11.590" end="00:05:16.060">...msi and your system was never...ever again.</p>
+      <p begin="00:05:16.060" end="00:05:20.970">There...right so that was one of the issues that we had when we started looking at, you know,</p>
+      <p begin="00:05:20.970" end="00:05:24.050">taking these classic windows apps...forward and really</p>
+      <p begin="00:05:24.050" end="00:05:28.020">when we talked about it people always said we really want to...</p>
+      <p begin="00:05:28.020" end="00:05:32.670">...huge feedback from developers saying I have a great app why can I sell</p>
+      <p begin="00:05:32.670" end="00:05:34.900">...in the store and we had the well,</p>
+      <p begin="00:05:34.900" end="00:05:39.420">you can put a link to your website in the store and no one was very happy with that because</p>
+      <p begin="00:05:39.420" end="00:05:44.260">it means you couldn't use...payment methods you couldn't use anything so.</p>
+      <p begin="00:05:44.260" end="00:05:48.750">First we needed that model and we had two options we could create a new</p>
+      <p begin="00:05:48.750" end="00:05:52.980">...model yet another one or we could just use the one that we already have for</p>
+      <p begin="00:05:52.980" end="00:05:59.040">universal windows apps and just bring classic windows apps into that.</p>
+      <p begin="00:05:59.040" end="00:06:03.610">So, we basically decided for the latter obviously and</p>
+      <p begin="00:06:04.810" end="00:06:09.550">...the other really cool thing about the approach that we're taking is that you can start</p>
+      <p begin="00:06:09.550" end="00:06:13.480">...just do a conversion process and your app x you can be in the store</p>
+      <p begin="00:06:13.480" end="00:06:18.470">you're set and then over time you can start to change or you can start to evolve</p>
+      <p begin="00:06:18.470" end="00:06:23.560">it you can start to move more things into the you know, into the app container into the universal</p>
+      <p begin="00:06:23.560" end="00:06:27.820">...platform and at a certain point you won't have any the</p>
+      <p begin="00:06:27.820" end="00:06:32.820">...classic stuff left anymore and now you run everywhere so it's</p>
+      <p begin="00:06:32.820" end="00:06:37.000">really cool story we're going to talk a lot about that today and,</p>
+      <p begin="00:06:37.000" end="00:06:40.970">the end result is going to be a really great user experience right I mean</p>
+      <p begin="00:06:40.970" end="00:06:44.210">devote users for classic windows apps are used to this download</p>
+      <p begin="00:06:44.210" end="00:06:49.850">nemesis I double-click on it get a welcome window that just says hey you're about to install something</p>
+      <p begin="00:06:49.850" end="00:06:54.730">hit next now it starts asking you questions about installing the something...hit next again the</p>
+      <p begin="00:06:54.730" end="00:06:59.590">next again then you wait thirty minutes because it's doing something-or-other god knows what</p>
+      <p begin="00:06:59.590" end="00:07:05.270">and then when you're done hopefully your system still works right that's the old experience?</p>
+      <p begin="00:07:05.270" end="00:07:10.150">No, experience is the same exact experience of people get when they use when they do</p>
+      <p begin="00:07:10.150" end="00:07:13.880">you ws which is I go to store or I can side</p>
+      <p begin="00:07:13.880" end="00:07:19.520">...from side loading and I hit a button undone but the app installs</p>
+      <p begin="00:07:19.520" end="00:07:24.430">...progress when the installs done I have I have shortcuts and tiles and I can launch them</p>
+      <p begin="00:07:24.430" end="00:07:31.390">and things work and, another really cool thing about it is because</p>
+      <p begin="00:07:31.390" end="00:07:36.210">these are just regular apps now you get all the same auto update experience</p>
+      <p begin="00:07:36.210" end="00:07:40.590">and everything three o'clock in the morning system wakes up checks for updates if</p>
+      <p begin="00:07:40.590" end="00:07:43.000">...it pulls them down and, you know, and, they're,</p>
+      <p begin="00:07:43.000" end="00:07:49.300">you know, they get installed and...you get things like all of the great differing stuff that we do you</p>
+      <p begin="00:07:49.300" end="00:07:54.270">have a to gig package but you've only changed...of files...of all any</p>
+      <p begin="00:07:54.270" end="00:07:59.010">files have been change would never download because we already have them even ones that have changed</p>
+      <p begin="00:07:59.010" end="00:08:03.920">if they've only somewhat change we might we still might be able download part of the file and we do all that</p>
+      <p begin="00:08:03.920" end="00:08:07.230">adam automatically you don't have to do anything really,</p>
+      <p begin="00:08:07.230" end="00:08:13.300">really great user experience and, then the other thing is this concept of confidence</p>
+      <p begin="00:08:13.300" end="00:08:17.990">when we started windows eight we always talked about confidence which is, you know,</p>
+      <p begin="00:08:17.990" end="00:08:19.940">if...afraid.</p>
+      <p begin="00:08:19.940" end="00:08:24.130">To install your app what's the likelihood you're going to get their money while.</p>
+      <p begin="00:08:24.130" end="00:08:28.380">Is less than it would be if they weren't afraid right that fear of installing something</p>
+      <p begin="00:08:28.380" end="00:08:31.990">...install something I may have to re I've may have to re image my system</p>
+      <p begin="00:08:31.990" end="00:08:37.660">like that fear just doesn't help anybody so we really want to make sure as part</p>
+      <p begin="00:08:37.660" end="00:08:41.570">of this process that users can feel confident that they can try</p>
+      <p begin="00:08:41.570" end="00:08:45.850">...if they like it great they'll give you money they'll do whatever and if not</p>
+      <p begin="00:08:45.850" end="00:08:53.190">...and install it and also confident that the app is gone away and their system didn't slowly</p>
+      <p begin="00:08:53.190" end="00:08:58.670">So, that's really the experience that we're going for so what is the process look like for</p>
+      <p begin="00:08:58.670" end="00:09:03.130">project see pretty simple we have this tool or we will have this</p>
+      <p begin="00:09:03.130" end="00:09:07.250">to looks again I said this is still under development but,</p>
+      <p begin="00:09:07.250" end="00:09:10.590">you basically take your existing installer you</p>
+      <p begin="00:09:10.590" end="00:09:16.680">run it one last time and you do it witnessed with the tool running that basically sits there and the</p>
+      <p begin="00:09:16.680" end="00:09:20.710">kernel just catches everything bundles adopt turns into</p>
+      <p begin="00:09:20.710" end="00:09:24.070">an app x and you're good.</p>
+      <p begin="00:09:24.070" end="00:09:28.390">All you have to do that point is obviously just tester app just like any other time you change something</p>
+      <p begin="00:09:29.400" end="00:09:35.390">and, at that point you're ready you can...to the store from that point ford you should be able to</p>
+      <p begin="00:09:35.390" end="00:09:40.290">just in visual studio generate those packages directly and never even have to go back to and</p>
+      <p begin="00:09:40.290" end="00:09:44.190">msi ever get unless you need to support windows</p>
+      <p begin="00:09:44.190" end="00:09:49.350">seven or other releases in which case you'll still have to keep your msi around but,</p>
+      <p begin="00:09:49.350" end="00:09:53.950">at least you should be able to have a single binary that will run on seven</p>
+      <p begin="00:09:53.950" end="00:10:01.250">installed...msi and then ten, you know, installed using affects.</p>
+      <p begin="00:10:01.250" end="00:10:03.940">All right so talking great.</p>
+      <p begin="00:10:03.940" end="00:10:12.280">But, I think probably rather see something so let's do let's start looking at map and look at what this looks</p>
+      <p begin="00:10:12.280" end="00:10:16.060">And, in the keynote use that they launched.</p>
+      <p begin="00:10:16.060" end="00:10:21.620">Adobe photoshop elements thirty and you know, we</p>
+      <p begin="00:10:21.620" end="00:10:26.610">kinda did it really quickly so you can see what was happening but this version of</p>
+      <p begin="00:10:26.610" end="00:10:30.940">adobe photoshop elements we just ran through this tool.</p>
+      <p begin="00:10:30.940" end="00:10:35.450">we took their msi installer we ran it through the tool and</p>
+      <p begin="00:10:35.450" end="00:10:40.360">at first it didn't quite work and the only thing that didn't work and this is from all</p>
+      <p begin="00:10:40.360" end="00:10:46.540">my years experience that v is always the same thing it's licensing right</p>
+      <p begin="00:10:46.540" end="00:10:51.210">...your app relies on the fact that...installer, you know,</p>
+      <p begin="00:10:51.210" end="00:10:53.910">as part of installation goes and looks at the system</p>
+      <p begin="00:10:53.910" end="00:10:58.240">...like says all right what's the serial number of the cpu if I can get that let</p>
+      <p begin="00:10:58.240" end="00:11:02.600">me go see what hard-drive they have...what size and basically looks...the network card</p>
+      <p begin="00:11:02.600" end="00:11:07.200">...at a bunch of stuff it takes these measurements of your system of the user system</p>
+      <p begin="00:11:07.200" end="00:11:11.990">packages all up and in some encrypted format does all this crazy stuff so that people want</p>
+      <p begin="00:11:11.990" end="00:11:17.320">...your software and of course with this technique what do we do we go on one machine we</p>
+      <p begin="00:11:17.320" end="00:11:22.110">run the install package...all up...to another machine and of course the install</p>
+      <p begin="00:11:22.110" end="00:11:27.490">code the licensing code falls over...so the adobe...very quickly just</p>
+      <p begin="00:11:27.490" end="00:11:34.590">...great they gave us another they gave us another si this one...turn their licensing stuff off.</p>
+      <p begin="00:11:34.590" end="00:11:38.620">...through the tool and this is literally the version like we read...just...and we were</p>
+      <p begin="00:11:38.620" end="00:11:44.040">dot so it was very easy now that being</p>
+      <p begin="00:11:44.040" end="00:11:48.570">said as I talk about the technical details later it's not always that easy you</p>
+      <p begin="00:11:48.570" end="00:11:52.830">may have to changer code...your code may be doing things that don't work</p>
+      <p begin="00:11:52.830" end="00:11:58.360">well project centennial brought a lot of them but they're definitely some and but,</p>
+      <p begin="00:11:58.360" end="00:12:03.210">luckily if you fix those things that code will also continue to work on, you know,</p>
+      <p begin="00:12:03.210" end="00:12:06.290">windows seven windows a windows eight one so the code</p>
+      <p begin="00:12:06.290" end="00:12:11.080">and the binary will continue to work the same it's just that it might have to do</p>
+      <p begin="00:12:11.080" end="00:12:17.590">something slightly different right so let's quickly let's look at...elements.</p>
+      <p begin="00:12:17.590" end="00:12:23.160">So, we go in here launches it using the network which is always a</p>
+      <p begin="00:12:23.160" end="00:12:28.030">...job all right so, this is adobe elements and</p>
+      <p begin="00:12:29.770" end="00:12:33.640">as you can see as I said things can go wrong and always do and look at my task</p>
+      <p begin="00:12:33.640" end="00:12:37.880">bars gone which is good as I said this is literally a</p>
+      <p begin="00:12:37.880" end="00:12:41.760">build of windows we took off one of our machines so,</p>
+      <p begin="00:12:41.760" end="00:12:46.030">but, as long as all tab still works on find will be fine all</p>
+      <p begin="00:12:46.030" end="00:12:49.900">right so let's first go look and see what happens so if I go in here and look</p>
+      <p begin="00:12:49.900" end="00:12:54.930">at the photoshop elements you'll actually see the command-line that was</p>
+      <p begin="00:12:54.930" end="00:12:59.650">run and you can see it's under program files windows apps</p>
+      <p begin="00:12:59.650" end="00:13:03.920">blah-blah-blah bunch of other stuff by the way some of these perhaps a really long and</p>
+      <p begin="00:13:03.920" end="00:13:08.330">they've got a bunch of goods and stuff that is just an artifact of like where we're at the</p>
+      <p begin="00:13:08.330" end="00:13:10.070">project will finally be like that</p>
+      <p begin="00:13:10.070" end="00:13:17.850">will be much cleaner we are for the prototype we are standing up and using at v.</p>
+      <p begin="00:13:17.850" end="00:13:22.650">To help stand-up but this is not app v is actually one of the things I wanted</p>
+      <p begin="00:13:22.650" end="00:13:26.870">to make abundantly clear in this talk is that.</p>
+      <p begin="00:13:26.870" end="00:13:29.730">While a...the same techniques about</p>
+      <p begin="00:13:29.730" end="00:13:34.570">...v it has a very different goal...v</p>
+      <p begin="00:13:34.570" end="00:13:39.210">...to enterprises, enterprises receive microsoft size and then at</p>
+      <p begin="00:13:39.210" end="00:13:44.550">that point the enterprise was responsible for doing conversion getting the app working and running</p>
+      <p begin="00:13:44.550" end="00:13:48.730">and enterprise doesn't even have access to that code like adobe doesn't give,</p>
+      <p begin="00:13:48.730" end="00:13:50.530">you know, enterprises the</p>
+      <p begin="00:13:50.530" end="00:13:55.120">bits I'm sorry the cplus-plus code for photoshop they give them the binary</p>
+      <p begin="00:13:55.120" end="00:13:59.210">...so they really had no opportunity to ever change any</p>
+      <p begin="00:13:59.210" end="00:14:02.770">of the code so because of that...v has to do</p>
+      <p begin="00:14:02.770" end="00:14:07.740">like really unnatural things like the kinds of things that hey I know it looks</p>
+      <p begin="00:14:07.740" end="00:14:12.640">like a bug but the apps relying on the bug so like it needs to be bug for</p>
+      <p begin="00:14:12.640" end="00:14:17.670">...compatible with anything that happens in windows we don't have to do that right</p>
+      <p begin="00:14:17.670" end="00:14:21.580">so we're, you know, you are target audience your the developer gr</p>
+      <p begin="00:14:21.580" end="00:14:24.960">aperture code if you have a bug in your code.</p>
+      <p begin="00:14:24.960" end="00:14:28.570">Just go fix it.</p>
+      <p begin="00:14:28.570" end="00:14:32.820">Like I do I fix...bug in the...like, you know, we have bugs...code...fix so if...your code please</p>
+      <p begin="00:14:32.820" end="00:14:38.290">...go fix it if you're doing something you're not supposed to like some was asking well, you know,</p>
+      <p begin="00:14:38.290" end="00:14:43.970">I'm using the registry as like a job q and there's different processes</p>
+      <p begin="00:14:43.970" end="00:14:46.860">...out and I'm like well.</p>
+      <p begin="00:14:46.860" end="00:14:50.740">Actually that would work but please stop doing that like it's</p>
+      <p begin="00:14:50.740" end="00:14:57.710">a configuration database it's not your job q...file like that's...files before so,</p>
+      <p begin="00:14:57.710" end="00:15:02.390">you will have to make some code changes I guarantee it but it won't be a lot and again once you</p>
+      <p begin="00:15:02.390" end="00:15:06.820">make those changes those will still continue to work on previous versions of windows cb fine</p>
+      <p begin="00:15:06.820" end="00:15:11.550">so if we look here we have this thing is it has been</p>
+      <p begin="00:15:11.550" end="00:15:16.210">installed the owners I do the install by the way is a to gig package so it takes like a</p>
+      <p begin="00:15:16.210" end="00:15:21.790">minute-and-a-half or something install and you just don't want to sit there and watch install needed iso but,</p>
+      <p begin="00:15:21.790" end="00:15:26.030">I just installed it with the regular...app x package commands.</p>
+      <p begin="00:15:26.030" end="00:15:30.530">Did install and it obviously put it under windows apps because that's where app</p>
+      <p begin="00:15:30.530" end="00:15:35.470">...apps go so we've got nap running with some ridiculously long</p>
+      <p begin="00:15:35.470" end="00:15:40.520">path and it's the photoshop elements editor so,</p>
+      <p begin="00:15:40.520" end="00:15:45.250">that's actually the version developments that's running...down now...</p>
+      <p begin="00:15:45.250" end="00:15:51.470">no explore this is a very immersive experience the shell so in my build?</p>
+      <p begin="00:15:51.470" end="00:15:54.750">So, let's first of all stuck.</p>
+      <p begin="00:15:54.750" end="00:16:01.850">See that...maximized that also.</p>
+      <p begin="00:16:01.850" end="00:16:06.750">Yes, we did a bunch of work on the command prompt by the way and regardless of all this other crazy stuff that we did we</p>
+      <p begin="00:16:06.750" end="00:16:12.440">get so much positive feedback on just thank you for finally fixing the command prompt sorta</p>
+      <p begin="00:16:12.440" end="00:16:17.960">...so we take a quick look here I'm in the I'm in the install directory,</p>
+      <p begin="00:16:17.960" end="00:16:22.310">directory for photoshop elements and you look at it if you've ever belts</p>
+      <p begin="00:16:23.440" end="00:16:29.850">metro sorry metro style lab universal windows app any of those things this will</p>
+      <p begin="00:16:29.850" end="00:16:33.690">are very familiar is going to block map because that's how we do that differential</p>
+      <p begin="00:16:35.540" end="00:16:42.930">streaming of the bits down during install it has an...manifest...supposed to have</p>
+      <p begin="00:16:42.930" end="00:16:47.020">...epics manifests because it's...app it has the metadata</p>
+      <p begin="00:16:47.020" end="00:16:51.830">...has the signature I mean it has all the stuff that is an app...out from</p>
+      <p begin="00:16:51.830" end="00:16:56.850">there's one other thing here too that you're going to see that we'll talk about a bit but just keep</p>
+      <p begin="00:16:56.850" end="00:17:00.700">...that registry dot that because that's something that's kind of interesting that's but most</p>
+      <p begin="00:17:00.700" end="00:17:08.130">...apps don't have but first let's just take a look at the app x manifest.</p>
+      <p begin="00:17:08.130" end="00:17:13.190">By the rambo really quick because I'm expecting that there's going to be a lot of questions so I think I'm</p>
+      <p begin="00:17:13.190" end="00:17:18.700">...try to get as many as I can so there's the epics...looks just like any other app</p>
+      <p begin="00:17:18.700" end="00:17:22.340">...manifest with a couple of differences you'll see in</p>
+      <p begin="00:17:22.340" end="00:17:26.780">there that's referencing a project see name space.</p>
+      <p begin="00:17:26.780" end="00:17:32.190">And, you'll see that.</p>
+      <p begin="00:17:32.190" end="00:17:37.080">The entry point is actually the photoshop elements thirteen oop xthree.</p>
+      <p begin="00:17:37.080" end="00:17:40.610">That's actually a full trust app when we launched...doesn't go to</p>
+      <p begin="00:17:40.610" end="00:17:44.240">and app container it just runs as the user and runs like</p>
+      <p begin="00:17:44.240" end="00:17:49.560">a normally would except for the fact that it's basically it's running in this little</p>
+      <p begin="00:17:49.560" end="00:17:55.360">environment where we where we show at the additional files and registry entries of expects and,</p>
+      <p begin="00:17:55.360" end="00:17:57.020">you can see like it's basically it has</p>
+      <p begin="00:17:57.020" end="00:18:02.270">...file type associations stuff like that.</p>
+      <p begin="00:18:02.270" end="00:18:07.540">It has live tile you can see it actually has a live tile.</p>
+      <p begin="00:18:07.540" end="00:18:11.820">As we talk a little bit more you'll see that these things really are.</p>
+      <p begin="00:18:11.820" end="00:18:16.840">Even though they're running under project see they really are universal</p>
+      <p begin="00:18:16.840" end="00:18:22.500">...you can do just...a not just what you can actually anything you can do with the regular universal.</p>
+      <p begin="00:18:22.500" end="00:18:26.760">All right so that's the manifest so.</p>
+      <p begin="00:18:26.760" end="00:18:28.580">If you look in here under.</p>
+      <p begin="00:18:29.650" end="00:18:31.730">Crazy longview...crazy longwood.</p>
+      <p begin="00:18:34.440" end="00:18:38.670">...go in here so you'll see that there's this directory called via</p>
+      <p begin="00:18:38.670" end="00:18:41.250">...if you look in here.</p>
+      <p begin="00:18:41.250" end="00:18:45.060">There's all this stuff right so there's just a bunch of directories and...you know,</p>
+      <p begin="00:18:45.060" end="00:18:49.870">they're they have somewhat common names like system and system x eighty-six go</p>
+      <p begin="00:18:49.870" end="00:18:50.810">look under system.</p>
+      <p begin="00:18:51.970" end="00:18:54.380">You'll see that there's a whole bunch of dls their.</p>
+      <p begin="00:18:55.460" end="00:18:59.100">Write the see runtime and nfc god they still use of</p>
+      <p begin="00:18:59.100" end="00:19:03.200">see feel so bad for these people.</p>
+      <p begin="00:19:03.200" end="00:19:08.290">But, anyways so this is the.</p>
+      <p begin="00:19:08.290" end="00:19:12.890">What the installer put in the system thirty-two directory right because the</p>
+      <p begin="00:19:12.890" end="00:19:17.880">...I...want you have to go change all your code so that you say all</p>
+      <p begin="00:19:17.880" end="00:19:18.940">well we used to be</p>
+      <p begin="00:19:18.940" end="00:19:23.590">...system thirty-two now I have to go and figure out where it is</p>
+      <p begin="00:19:23.590" end="00:19:31.260">like when you're running it will still look like it's...system thirty-two we'll talk...bit and we just...you?</p>
+      <p begin="00:19:31.260" end="00:19:33.560">Sorry virtual...</p>
+      <p begin="00:19:33.560" end="00:19:37.430">Right which is why you say hey under system thirty-two is that crazy</p>
+      <p begin="00:19:37.430" end="00:19:42.470">nfc dl there were like yup here you go.</p>
+      <p begin="00:19:42.470" end="00:19:46.310">So, basically this is how the file system stuff works is your.</p>
+      <p begin="00:19:46.310" end="00:19:50.440">Installer basically just vomiting files all over the file system.</p>
+      <p begin="00:19:50.440" end="00:19:55.500">We capture all in package it up and we keep it with your app one thing this will fix</p>
+      <p begin="00:19:55.500" end="00:19:57.750">...ever heard of something called...hell.</p>
+      <p begin="00:19:58.780" end="00:20:03.520">Right...running with this version...see some other...gets install</p>
+      <p begin="00:20:03.520" end="00:20:09.030">that has a slightly newer version of them...that's probably way better and,</p>
+      <p begin="00:20:09.030" end="00:20:13.700">...rather app in all of sudden your app that worked yesterday doesn't work today thats detail</p>
+      <p begin="00:20:13.700" end="00:20:20.810">...this is prevents that from happening.</p>
+      <p begin="00:20:20.810" end="00:20:26.310">All right so let's go back...go back down a couple directory use</p>
+      <p begin="00:20:26.310" end="00:20:30.360">doo-doo crazy do increase good.</p>
+      <p begin="00:20:30.360" end="00:20:33.570">All right so let's go in here.</p>
+      <p begin="00:20:33.570" end="00:20:36.830">You can look quickly there's basically.</p>
+      <p begin="00:20:36.830" end="00:20:42.000">The other thing that's in here is things like assets and stuff some very cool things is the moment that you</p>
+      <p begin="00:20:42.000" end="00:20:44.980">...the conversion you now have a lifestyle and you can</p>
+      <p begin="00:20:44.980" end="00:20:48.960">it's a real-live tile you can update your live tile you can do everything you would normally do...the live</p>
+      <p begin="00:20:48.960" end="00:20:54.850">tile you can start using w and immediately all those kind of things.</p>
+      <p begin="00:20:54.850" end="00:20:59.650">But, there's this one other thing that's sitting here which is this is registry dot that file</p>
+      <p begin="00:20:59.650" end="00:21:04.450">let's go okay all right my immersive experience...all I mean do start are so</p>
+      <p begin="00:21:04.450" end="00:21:07.330">...have to do this way so let's</p>
+      <p begin="00:21:07.330" end="00:21:12.410">...let's actually go and take a look and see what that thing is.</p>
+      <p begin="00:21:12.410" end="00:21:17.340">So, if I go and load so first of all that registry dot that file is actually</p>
+      <p begin="00:21:17.340" end="00:21:25.880">a high if it's right here so if I open...given the we'll call it pst.</p>
+      <p begin="00:21:25.880" end="00:21:28.160">And, this is actually.</p>
+      <p begin="00:21:30.020" end="00:21:34.050">The higher the high file that the converter creative.</p>
+      <p begin="00:21:34.050" end="00:21:37.580">So, what it...basically just like your installer like through all those</p>
+      <p begin="00:21:37.580" end="00:21:42.490">files on-disk it also through a ton of stuff in the registry</p>
+      <p begin="00:21:42.490" end="00:21:46.270">and we don't want that stuff there does anyone</p>
+      <p begin="00:21:46.270" end="00:21:51.180">know why when you install lots and lots and lots of apps like your system get slower</p>
+      <p begin="00:21:51.180" end="00:21:54.780">...like boot slower because all that stuff that you guys</p>
+      <p begin="00:21:54.780" end="00:21:59.850">...the registry because we told you to by the way so it's a hundred-percent our fault we told</p>
+      <p begin="00:21:59.850" end="00:22:04.610">you to put their and of our features like com required to be there unless, you know,</p>
+      <p begin="00:22:04.610" end="00:22:07.080">...free commish known does?</p>
+      <p begin="00:22:07.080" end="00:22:11.810">So, we told you put there so you did exactly what we told you put it there but what happens</p>
+      <p begin="00:22:11.810" end="00:22:17.310">is that registry file grows and grows and grows and then every time we</p>
+      <p begin="00:22:17.310" end="00:22:19.820">...the system we have to load the whole thing.</p>
+      <p begin="00:22:19.820" end="00:22:22.930">And, then you also put stuff in each case you.</p>
+      <p begin="00:22:22.930" end="00:22:27.240">And, that grows and every time user logs and we have to load that so that's why</p>
+      <p begin="00:22:27.240" end="00:22:31.450">over time you're like god when I first got this machine...booted really quick I was one of</p>
+      <p begin="00:22:31.450" end="00:22:36.840">the selling points and now year later a year-and-a-half later it boots, you know,</p>
+      <p begin="00:22:36.840" end="00:22:41.720">it's like ten seconds slower...why is that it's just because more stuff getting piled in the</p>
+      <p begin="00:22:41.720" end="00:22:45.550">...loaded so we don't want that and,</p>
+      <p begin="00:22:45.550" end="00:22:49.340">I don't think users do either so anyways when the installer ran.</p>
+      <p begin="00:22:50.370" end="00:22:54.200">Just going to look at something.</p>
+      <p begin="00:22:54.200" end="00:22:58.460">There's one that's ensure organizer go look at the registry the installer</p>
+      <p begin="00:22:58.460" end="00:23:03.190">...all this stuff down now...no idea what this is obviously only the adobe</p>
+      <p begin="00:23:03.190" end="00:23:06.400">engineers know what this stuff is but they obviously must really,</p>
+      <p begin="00:23:06.400" end="00:23:11.130">really rely on max undoable operations and main page file mem</p>
+      <p begin="00:23:11.130" end="00:23:16.190">...right so that's those things are really important to that app but they're really not</p>
+      <p begin="00:23:16.190" end="00:23:20.760">important boot the system so we take all that stuff and we put into this...file.</p>
+      <p begin="00:23:20.760" end="00:23:25.080">And, a little bit I'll talk about how it all actually comes together at the end</p>
+      <p begin="00:23:25.080" end="00:23:30.930">but so far this is basically what the installer did your system.</p>
+      <p begin="00:23:30.930" end="00:23:34.030">Funnily enough when at the first got bought by</p>
+      <p begin="00:23:34.030" end="00:23:40.260">microsoft's...got a call very quickly from the ...it the sequel server</p>
+      <p begin="00:23:40.260" end="00:23:44.870">t ok server stuff where clients stuff.</p>
+      <p begin="00:23:44.870" end="00:23:46.920">Nt service thingy were apps</p>
+      <p begin="00:23:46.920" end="00:23:51.740">and they said can we use the sequence or which is the tool that the has I said,</p>
+      <p begin="00:23:51.740" end="00:23:59.500">yeah, why this...we have no idea what...installer does the system we want to figured out?</p>
+      <p begin="00:23:59.500" end="00:24:00.790">...really they said, yeah,</p>
+      <p begin="00:24:00.790" end="00:24:06.420">so, Inext time...I went in there we sequence it over and they were like just spellbound for</p>
+      <p begin="00:24:06.420" end="00:24:11.340">hours going through what it and it's just stuff that accumulate over-the-air some engineer</p>
+      <p begin="00:24:11.340" end="00:24:15.400">and build some feature fifteen years ago and then updated the emma sided for</p>
+      <p begin="00:24:15.400" end="00:24:19.820">more stuff in there and that code is been sitting there forever and the big problem</p>
+      <p begin="00:24:19.820" end="00:24:25.950">they had by the way was that some time sequel server just kind of stop working.</p>
+      <p begin="00:24:25.950" end="00:24:30.260">And, it turned out it was like installation issues of course because somehow or other the installed</p>
+      <p begin="00:24:30.260" end="00:24:34.150">...work right because...just terrible...</p>
+      <p begin="00:24:34.150" end="00:24:35.050">By the way I owner</p>
+      <p begin="00:24:35.050" end="00:24:42.680">...I'm allowed to say that like it's you're allowed to say that about my product...can.</p>
+      <p begin="00:24:42.680" end="00:24:44.730">All right so that's basically what it looks like</p>
+      <p begin="00:24:44.730" end="00:24:52.060">that's the real running code as of like a couple of days ago it will get better.</p>
+      <p begin="00:24:52.060" end="00:24:57.540">So, let's go back to the dec so what was going on there.</p>
+      <p begin="00:24:58.590" end="00:25:03.170">What we did was we took this msi right and we run it through this</p>
+      <p begin="00:25:03.170" end="00:25:08.890">tool which we're calling the converter because we're really good with names?</p>
+      <p begin="00:25:08.890" end="00:25:12.590">And, what that does is...monitors everything that you're that</p>
+      <p begin="00:25:12.590" end="00:25:17.230">you're installer does to the system all the awful terrible things that does to the system</p>
+      <p begin="00:25:17.230" end="00:25:22.280">it sits there and catches all them it's basically a bunch of...filter drivers sits there</p>
+      <p begin="00:25:22.280" end="00:25:26.600">and kept captures everything and then it turns around...creates</p>
+      <p begin="00:25:26.600" end="00:25:31.360">...app acts but as part of creating the app x it actually needs to figure out what all</p>
+      <p begin="00:25:31.360" end="00:25:36.040">the junk was because some of that stuff's important like</p>
+      <p begin="00:25:36.040" end="00:25:40.400">com write the fact that a bunch of registry keys and dls all</p>
+      <p begin="00:25:40.400" end="00:25:45.680">thrown down on the system that's a come objects and we need to figure that stuff</p>
+      <p begin="00:25:45.680" end="00:25:50.210">up because later when we deploy the application we want to be able to tell...that there's a</p>
+      <p begin="00:25:50.210" end="00:25:54.320">...object there we don't want to do is just have to say hey...</p>
+      <p begin="00:25:54.320" end="00:25:58.980">as a whole bunch of registry stuff over here too so now start...more places to try to find all the</p>
+      <p begin="00:25:58.980" end="00:26:03.790">...stuff want to be able to telecom listen...installing...here some</p>
+      <p begin="00:26:03.790" end="00:26:09.460">com objects, you know, and, now you can know about them and we're actually hopefully we'll be able to do without</p>
+      <p begin="00:26:09.460" end="00:26:15.750">putting anything else in the registry so that the...registers days really small?</p>
+      <p begin="00:26:15.750" end="00:26:20.560">So, once they basically do all the analysis and package you figure all-out then we</p>
+      <p begin="00:26:20.560" end="00:26:25.240">spit it out into and app xfiles so basically the app xfiles going to have</p>
+      <p begin="00:26:25.240" end="00:26:30.760">a very specific format for project centennial there's going to be that</p>
+      <p begin="00:26:30.760" end="00:26:35.540">reads dot that file that basically will hold all your registry stuff.</p>
+      <p begin="00:26:35.540" end="00:26:39.720">Will be that separate will be a separate folder that contains all of the</p>
+      <p begin="00:26:39.720" end="00:26:40.770">things?</p>
+      <p begin="00:26:40.770" end="00:26:46.340">That we need to...you about right so all those files that your installer,</p>
+      <p begin="00:26:46.340" end="00:26:51.140">you know, tried to put in system thirty-two like we just got a very simple format where you say</p>
+      <p begin="00:26:51.140" end="00:26:52.390">if a file is in that</p>
+      <p begin="00:26:52.390" end="00:26:58.760">...in a directory called system we know that's the system thirty-two directory so,</p>
+      <p begin="00:26:58.760" end="00:27:03.750">for some...you might not...want to use the converter obviously you might want to say, you know, what?</p>
+      <p begin="00:27:03.750" end="00:27:08.170">I have an msi or I know what the my installer supposed to do</p>
+      <p begin="00:27:08.170" end="00:27:12.190">if you do you can skip it you can just basically, you know, create the app...</p>
+      <p begin="00:27:12.190" end="00:27:19.530">format yourself and just do it using regular tools and not even go through the converter.</p>
+      <p begin="00:27:19.530" end="00:27:24.100">...actually pretty convenience and as sequel server team taught us most you don't even know</p>
+      <p begin="00:27:24.100" end="00:27:26.790">...installs actually due to our systems.</p>
+      <p begin="00:27:26.790" end="00:27:29.630">So, then the...thing you need to do it as I</p>
+      <p begin="00:27:29.630" end="00:27:34.660">talked before is really you need to test an update now.</p>
+      <p begin="00:27:34.660" end="00:27:40.450">The project centennial like really want to embrace your apps.</p>
+      <p begin="00:27:40.450" end="00:27:44.640">But, not everything that you're at does right I have this talk I get which is called</p>
+      <p begin="00:27:44.640" end="00:27:47.930">...thirty-two the good parts.</p>
+      <p begin="00:27:47.930" end="00:27:50.580">Insinuating there's also when thirty-two the not-so-good</p>
+      <p begin="00:27:50.580" end="00:27:55.730">parts when thirty-two the good parts are things that apps do</p>
+      <p begin="00:27:55.730" end="00:28:01.420">...things that you do...running is the user you're not running in the kernel</p>
+      <p begin="00:28:01.420" end="00:28:06.740">like that's supposed to be for driver stuff that's was before hardware stuff you're not running is</p>
+      <p begin="00:28:06.740" end="00:28:09.970">an nt service that's supposed to be for...stuff?</p>
+      <p begin="00:28:09.970" end="00:28:13.400">Right we really got this we really got it all mixed up with</p>
+      <p begin="00:28:13.400" end="00:28:17.980">when thirty-two in that kind of just let you do anything</p>
+      <p begin="00:28:17.980" end="00:28:22.460">whether not saying hey these kind of things are good things to do these kind of things</p>
+      <p begin="00:28:22.460" end="00:28:27.140">...not so much maybe if maybe if you're and anti-virus better should be doing that because that's like</p>
+      <p begin="00:28:27.140" end="00:28:30.930">system software we're really targeting the apps the</p>
+      <p begin="00:28:30.930" end="00:28:37.080">...that users like interact with an get value out of and,</p>
+      <p begin="00:28:38.170" end="00:28:41.450">We've already way I've already talked privately to some companies and they sort of said ok</p>
+      <p begin="00:28:41.450" end="00:28:47.180">...symbol y and here's the number one reason is you remember that little</p>
+      <p begin="00:28:47.180" end="00:28:52.450">spiel at the beginning about a great user experience I...have at work.</p>
+      <p begin="00:28:52.450" end="00:28:57.210">What...on...is it smart to say hey I'm...admin I hit a</p>
+      <p begin="00:28:57.210" end="00:29:01.970">button and now because I hit the button there's code running is the system?</p>
+      <p begin="00:29:01.970" end="00:29:06.370">Probably not right if you're if you're an enterprise I can tell you</p>
+      <p begin="00:29:06.370" end="00:29:07.060">...group</p>
+      <p begin="00:29:07.060" end="00:29:12.010">will say definitely not and had we done that the very first thing we would have had to do</p>
+      <p begin="00:29:12.010" end="00:29:17.470">would have been add a group policy to turn that off right so rather than do</p>
+      <p begin="00:29:17.470" end="00:29:22.190">that we said hey we want users to feel confident that the software is not going to destroy</p>
+      <p begin="00:29:22.190" end="00:29:25.870">their systems so you only get to run is the user.</p>
+      <p begin="00:29:26.900" end="00:29:31.560">If you like your code running elevated as admin like usc prop style</p>
+      <p begin="00:29:32.660" end="00:29:37.430">So, if you're softwares doing stuff like that that's going to be the real change that you're going to</p>
+      <p begin="00:29:37.430" end="00:29:42.670">have to deal with luckily when we talk to a lot of people we find out why do you even have</p>
+      <p begin="00:29:42.670" end="00:29:46.200">...service...running all the time it</p>
+      <p begin="00:29:46.200" end="00:29:52.120">runs local system why are you doing that the number one reason can anyone guess.</p>
+      <p begin="00:29:52.120" end="00:29:56.490">Although of data is exactly right because I need to check every night to figure out if there's</p>
+      <p begin="00:29:56.490" end="00:30:00.570">new software and...the user intel new install and everything well guess what</p>
+      <p begin="00:30:00.570" end="00:30:08.770">we don't need your stupid auto...anymore we have one.</p>
+      <p begin="00:30:08.770" end="00:30:13.450">So, just take that code and throw it away right and let us</p>
+      <p begin="00:30:13.450" end="00:30:17.930">did let us deal with that mundane stuff all right</p>
+      <p begin="00:30:17.930" end="00:30:21.030">and then when you're done you get to make money right you get to go up to the</p>
+      <p begin="00:30:21.030" end="00:30:27.670">store you get lots of users and you get to sell your software?</p>
+      <p begin="00:30:27.670" end="00:30:31.950">So, I won't talk one more thing about at...at this stage because this diagram</p>
+      <p begin="00:30:31.950" end="00:30:37.360">is basically verbatim if I was up here giving...talk so people have been asking about well</p>
+      <p begin="00:30:37.360" end="00:30:40.240">...the navigate...this project centennial thing</p>
+      <p begin="00:30:40.240" end="00:30:45.130">art explain that they're very difference but one thing that the app the team is going to do</p>
+      <p begin="00:30:45.130" end="00:30:49.830">is if you convert to project centennial they will make sure that they can run</p>
+      <p begin="00:30:49.830" end="00:30:53.680">deploy manager software and potentially</p>
+      <p begin="00:30:53.680" end="00:30:57.740">even windows set now you...developers you probably don't</p>
+      <p begin="00:30:57.740" end="00:31:03.080">realize this but the ip groups in the enterprises that you sell your software</p>
+      <p begin="00:31:03.080" end="00:31:07.730">to they've they absolutely hate your installer...they hate them so much like</p>
+      <p begin="00:31:07.730" end="00:31:12.530">...they...awake at night thinking about them a lot of them spend a lot of money...convert that</p>
+      <p begin="00:31:12.530" end="00:31:17.780">v and if you can offer them packages that they don't have to take your installer</p>
+      <p begin="00:31:17.780" end="00:31:22.410">...once them and re convert them they're going to be really excited you will have some really,</p>
+      <p begin="00:31:22.410" end="00:31:26.250">really happy customers so the...teams...has committed to go off</p>
+      <p begin="00:31:26.250" end="00:31:29.470">...this work and...is really not that much work</p>
+      <p begin="00:31:29.470" end="00:31:34.720">...these two things are very similar but they're going to do that work so,</p>
+      <p begin="00:31:34.720" end="00:31:41.750">if you end up having a project see package you're going to be app be ready.</p>
+      <p begin="00:31:41.750" end="00:31:44.600">So, I'll talk a little bit about lying.</p>
+      <p begin="00:31:44.600" end="00:31:50.310">Sorry virtualization.</p>
+      <p begin="00:31:50.310" end="00:31:54.700">Most people ask how does the you know-how does all this stuff work what do I get to change what</p>
+      <p begin="00:31:54.700" end="00:31:59.430">do I see and it's actually pretty simple we do a</p>
+      <p begin="00:31:59.430" end="00:32:04.470">bunch of registry and file system merging and we do some re direction so</p>
+      <p begin="00:32:04.470" end="00:32:09.420">basically this is kind of what name space merging looks like your app actually</p>
+      <p begin="00:32:09.420" end="00:32:11.480">...emerge view of the world in</p>
+      <p begin="00:32:11.480" end="00:32:15.130">...everything on the local system so if there are, you know,</p>
+      <p begin="00:32:15.130" end="00:32:19.960">if there are...installed that you can load like you'll see all those you'll see all the</p>
+      <p begin="00:32:19.960" end="00:32:25.360">stuff that's normally on the system but then what will also do is we'll take that like those</p>
+      <p begin="00:32:25.360" end="00:32:29.800">see run-time or whatever all those files and we merge them in</p>
+      <p begin="00:32:29.800" end="00:32:32.050">and we create this merge view?</p>
+      <p begin="00:32:32.050" end="00:32:36.330">So, as far as your apps concerned the installer went off and made all kinds of changes to the system</p>
+      <p begin="00:32:36.330" end="00:32:41.030">because it looks exactly as if that happened but it really did one nice thing</p>
+      <p begin="00:32:41.030" end="00:32:47.990">about this is first of all we don't money up the system...up with dl hell</p>
+      <p begin="00:32:47.990" end="00:32:51.660">...the other one is we can actually on install.</p>
+      <p begin="00:32:51.660" end="00:32:54.920">How...you guys realize that it's actually impossible to build safe</p>
+      <p begin="00:32:54.920" end="00:33:01.150">...installer there's no way to do it because the?</p>
+      <p begin="00:33:01.150" end="00:33:04.820">The previous non app model will say it didn't actually</p>
+      <p begin="00:33:04.820" end="00:33:07.770">...there's no way to know whether removing a file with</p>
+      <p begin="00:33:07.770" end="00:33:12.420">safer not you say well but I put the files down of course I can take them away.</p>
+      <p begin="00:33:12.420" end="00:33:16.610">Unless someone else would...also lay down the same file and they said look,</p>
+      <p begin="00:33:16.610" end="00:33:20.790">it's already there great I don't have to put that file down and then you take it away and that</p>
+      <p begin="00:33:20.790" end="00:33:26.790">apparatus right so there's that was one of the things the there's one of the</p>
+      <p begin="00:33:26.790" end="00:33:32.570">financial companies in new york they have this policy they would never ever on</p>
+      <p begin="00:33:32.570" end="00:33:37.330">install and app they had something they called hobbling.</p>
+      <p begin="00:33:37.330" end="00:33:42.330">So, they wouldn't run your own installer but if they...if they need to get rid of and app they would public</p>
+      <p begin="00:33:42.330" end="00:33:45.940">from like what does that mean and they're like basically we render all the exes</p>
+      <p begin="00:33:45.940" end="00:33:51.020">...and just leave it there but like you sears is that we</p>
+      <p begin="00:33:51.020" end="00:33:55.640">had too many times we tried on install something took down our systems we lost money so we don't</p>
+      <p begin="00:33:55.640" end="00:34:00.240">do that anymore with that backs and with the app model we could actually safely</p>
+      <p begin="00:34:00.240" end="00:34:04.740">...stuff because what we don't allow people to do is just randomly take dependencies</p>
+      <p begin="00:34:04.740" end="00:34:13.680">on files in your app and one of the things we actually do is if you saw that big long</p>
+      <p begin="00:34:13.680" end="00:34:17.570">half the path to your app changes constantly every time you</p>
+      <p begin="00:34:17.570" end="00:34:18.920">release new version the</p>
+      <p begin="00:34:18.920" end="00:34:23.140">path changes we do that for a whole bunch of reasons internally</p>
+      <p begin="00:34:23.140" end="00:34:29.900">because it turns out when you're installing never ever edit of</p>
+      <p begin="00:34:29.900" end="00:34:36.020">file everett file we figured out some times our goes up like it</p>
+      <p begin="00:34:36.020" end="00:34:40.990">does happen some times you lose data and if the our goes out</p>
+      <p begin="00:34:40.990" end="00:34:42.470">...in middle bettering a file</p>
+      <p begin="00:34:42.470" end="00:34:46.770">user system is now in some crazy state and they have to basically they have to flatten the</p>
+      <p begin="00:34:46.770" end="00:34:52.120">machine so we never do that so because of this even if someone was really</p>
+      <p begin="00:34:52.120" end="00:34:57.940">tempted to try and go and take some crazy dependency on your files first of all</p>
+      <p begin="00:34:57.940" end="00:35:02.600">...were no be stable path for them to do and then one other thing we're actually doing is</p>
+      <p begin="00:35:02.600" end="00:35:07.320">...going to change the loader so that if someone that's not you tries to</p>
+      <p begin="00:35:07.320" end="00:35:11.210">load your files into their process will fail.</p>
+      <p begin="00:35:11.210" end="00:35:12.840">The reason we have to do this is we</p>
+      <p begin="00:35:12.840" end="00:35:15.120">...installs to be.</p>
+      <p begin="00:35:16.230" end="00:35:22.750">Reliable to not be terrible like there now and,</p>
+      <p begin="00:35:22.750" end="00:35:25.930">it turns out that if you're.</p>
+      <p begin="00:35:25.930" end="00:35:29.220">If you're app starts getting loaded into lots of other processes</p>
+      <p begin="00:35:29.220" end="00:35:32.940">guess what now is really hard to service you because someone's loaded</p>
+      <p begin="00:35:32.940" end="00:35:35.980">your dl we go and we go and installed</p>
+      <p begin="00:35:35.980" end="00:35:41.000">the new version maybe they're trying to...to talk...for some reason you change the,</p>
+      <p begin="00:35:41.000" end="00:35:44.750">you know, you change some com interface everything blows up</p>
+      <p begin="00:35:44.750" end="00:35:51.960">user gets angry so we just don't let it happen so, this is the, you know,</p>
+      <p begin="00:35:51.960" end="00:35:56.800">the wonderful lies that we tell you or tell your code is this nice merging.</p>
+      <p begin="00:35:56.800" end="00:35:59.460">Next thing we do is what happens when.</p>
+      <p begin="00:36:00.540" end="00:36:05.690">Area what happens when you write something to the system</p>
+      <p begin="00:36:05.690" end="00:36:08.940">...first of all if you're writing to the registry we</p>
+      <p begin="00:36:08.940" end="00:36:14.980">...you say I'm going to write to each case...blah-blah-blah we say</p>
+      <p begin="00:36:14.980" end="00:36:19.680">...you totally did a good job we right over here?</p>
+      <p begin="00:36:19.680" end="00:36:21.860">So, that way when we go to...install you we</p>
+      <p begin="00:36:21.860" end="00:36:26.680">...just rip it out and we don't have to worry about the fact that like hey I wonder if I wonder if other people</p>
+      <p begin="00:36:26.680" end="00:36:31.560">are taking dependencies on the crazy thing that you put into the registry which does mean if you</p>
+      <p begin="00:36:31.560" end="00:36:35.860">went road software that try to use the registry to talk to some other piece of software from some</p>
+      <p begin="00:36:35.860" end="00:36:40.860">other company we just broke you...so who so happy that we broke you because</p>
+      <p begin="00:36:40.860" end="00:36:46.360">...terrible when it comes to the file system basically the only thing we</p>
+      <p begin="00:36:46.360" end="00:36:50.780">...is that data write the app data folders just that it's</p>
+      <p begin="00:36:50.780" end="00:36:52.820">...app data users aren't supposed to go in</p>
+      <p begin="00:36:52.820" end="00:36:57.120">poking around there looking at stuff we hide it we market all kinds of ways that users</p>
+      <p begin="00:36:57.120" end="00:37:02.310">on see it that's like your personal little scratch space well,</p>
+      <p begin="00:37:02.310" end="00:37:06.630">we just re-direct that so if you're apps...case...blah-blah-blah app data</p>
+      <p begin="00:37:06.630" end="00:37:12.280">...yup you totally...looks your code looks like it wrote there just redirected somewhere else</p>
+      <p begin="00:37:12.280" end="00:37:17.270">and one really nice side effect about that as a few minutes going to talk about you know,</p>
+      <p begin="00:37:17.270" end="00:37:21.150">building new features we put it in the same app data directory where</p>
+      <p begin="00:37:22.180" end="00:37:26.990">all other universal apps get their app data put in so it actually</p>
+      <p begin="00:37:26.990" end="00:37:31.960">starts future...it starts it starts like automatically moving your code forward to use the</p>
+      <p begin="00:37:31.960" end="00:37:38.440">right model without you even doing anything at the same time you don't like being lied to you can just right</p>
+      <p begin="00:37:38.440" end="00:37:43.630">there directly you don't have to let us lied to you can actually just go to the right thing?</p>
+      <p begin="00:37:43.630" end="00:37:47.320">So, that's how that works a little bit about full trust activation</p>
+      <p begin="00:37:47.320" end="00:37:52.760">...how many people actually even heard the term app container.</p>
+      <p begin="00:37:52.760" end="00:37:54.500">A few view when you</p>
+      <p begin="00:37:54.500" end="00:37:59.290">build universal app it runs in app container it's basically a sandbox we lock</p>
+      <p begin="00:37:59.290" end="00:38:03.640">your code way and then we give you access to the system that for to</p>
+      <p begin="00:38:03.640" end="00:38:10.940">things of user would want your apt access and we don't just give you carte launch to do</p>
+      <p begin="00:38:10.940" end="00:38:16.090">And, this has been a huge success for us because those apps that people get from the</p>
+      <p begin="00:38:16.090" end="00:38:21.870">store I know...everything's twice I...install hey that's great I'll use it</p>
+      <p begin="00:38:21.870" end="00:38:26.830">is not-so-great...install it because it really can't do any damage.</p>
+      <p begin="00:38:26.830" end="00:38:29.720">These apps who we're going to run full trust and full</p>
+      <p begin="00:38:29.720" end="00:38:34.730">trust is outside of the app container full trust means you're running</p>
+      <p begin="00:38:34.730" end="00:38:39.510">as the actual user so because of this like.</p>
+      <p begin="00:38:39.510" end="00:38:43.840">Please be careful right it's, you know, a lot of people</p>
+      <p begin="00:38:43.840" end="00:38:51.140">think well hey it's great I got to do everything it's like the really bad part about it as you can do everything.</p>
+      <p begin="00:38:51.140" end="00:38:55.800">Ever have a bug...bug forever bug your code yet have a bug</p>
+      <p begin="00:38:55.800" end="00:39:00.390">and someone exploits it you just totally...user like I don't know about you</p>
+      <p begin="00:39:00.390" end="00:39:04.880">but I actually don't want that like that's great our yea but I don't want to you know,</p>
+      <p begin="00:39:04.880" end="00:39:08.510">I don't want that responsibility I have my app I have the data that I</p>
+      <p begin="00:39:08.510" end="00:39:13.510">access that's all I really want to...access to well that's not the way the non</p>
+      <p begin="00:39:13.510" end="00:39:17.290">that model worked so we're going to continue to run your stuff full trust so that</p>
+      <p begin="00:39:17.290" end="00:39:22.680">...can work but we hope and we will help you over time start</p>
+      <p begin="00:39:22.680" end="00:39:27.200">migrating your code to the app container so that you can eventually,</p>
+      <p begin="00:39:27.200" end="00:39:32.910">you know, be protect the user...and have a much more secure model so,</p>
+      <p begin="00:39:32.910" end="00:39:37.010">the things right...in vone that were targeting right now like I tap</p>
+      <p begin="00:39:37.010" end="00:39:40.820">on the tile your app kind of like...did with photoshop elements your</p>
+      <p begin="00:39:40.820" end="00:39:45.760">app launches that's all that's running full trust...happy you register file type</p>
+      <p begin="00:39:45.760" end="00:39:49.240">associations are custom your eyes schemes or something great</p>
+      <p begin="00:39:49.240" end="00:39:54.200">well-run that code full trust other than that if you want to do other things like,</p>
+      <p begin="00:39:54.200" end="00:39:54.790">for example,</p>
+      <p begin="00:39:54.790" end="00:40:00.190">had someone say hey can I build one of those I, you know, I saw in the keynote that app to have contract thing</p>
+      <p begin="00:40:00.190" end="00:40:06.410">...apps can call-in to me and like I can provide data back in the band stuff and,</p>
+      <p begin="00:40:06.410" end="00:40:07.310">the answer's,</p>
+      <p begin="00:40:07.310" end="00:40:11.520">yeah, you can and when you write that code you're going to write universal windows</p>
+      <p begin="00:40:11.520" end="00:40:16.960">at code that runs in the app container so but,</p>
+      <p begin="00:40:16.960" end="00:40:19.580">at the same time the big question is</p>
+      <p begin="00:40:19.580" end="00:40:25.330">okay but what if the thing I'm doing actually it's my other is my older</p>
+      <p begin="00:40:25.330" end="00:40:29.060">when thirty-two or dot net code and the answer is we're going to</p>
+      <p begin="00:40:29.060" end="00:40:34.080">let you activate... you're going to have some code were in that scenario running in the app container</p>
+      <p begin="00:40:34.080" end="00:40:38.070">have some running full trust will give you a communication...to talk to each other and</p>
+      <p begin="00:40:38.070" end="00:40:42.360">let-you activate each other so if someone calls your app</p>
+      <p begin="00:40:42.360" end="00:40:49.620">contract and, your full trust code...running at will give you the ability to launch it if</p>
+      <p begin="00:40:49.620" end="00:40:54.460">...full trust codes running and you want to called on interrupt container code we'll let you do that we'll give you</p>
+      <p begin="00:40:54.460" end="00:40:57.950">an efficient communication channel for that?</p>
+      <p begin="00:40:57.950" end="00:41:01.180">And, the reason that we're doing this is because.</p>
+      <p begin="00:41:02.560" end="00:41:07.140">Overall we think most people actually in the feedback we've gotten as most people actually want to</p>
+      <p begin="00:41:07.140" end="00:41:13.530">be a real universal windows app that are run anywhere.</p>
+      <p begin="00:41:13.530" end="00:41:17.560">Right like how many you guys will be called run xbox running hollow</p>
+      <p begin="00:41:17.560" end="00:41:22.490">...running all these cooler devices as long as you have that full trust code you won't run</p>
+      <p begin="00:41:22.490" end="00:41:24.580">on those devices because those</p>
+      <p begin="00:41:24.580" end="00:41:29.390">devices only use the pure universal windows at model.</p>
+      <p begin="00:41:29.390" end="00:41:37.310">...only...app container the only call those set...sets of api is that are supported for that so,</p>
+      <p begin="00:41:37.310" end="00:41:42.280">most people actually want to get...it's just it's just it's a historical artifact their code</p>
+      <p begin="00:41:42.280" end="00:41:47.480">is the way it is you wrote the code that we told you...right to do what you wanted to do</p>
+      <p begin="00:41:47.480" end="00:41:52.830">so...know that people want to get there so the very first thing that</p>
+      <p begin="00:41:52.830" end="00:41:56.660">we did was say hey the moment that you run that conversion process</p>
+      <p begin="00:41:56.660" end="00:42:02.270">your universal windows...which means you can do anything that universal windows</p>
+      <p begin="00:42:02.270" end="00:42:05.730">...seriously anything because.</p>
+      <p begin="00:42:06.830" end="00:42:09.820">Why not you are universals...you want you want to basically</p>
+      <p begin="00:42:09.820" end="00:42:15.150">...contract go in...app contract you want to be you know, a picker target you want to be a</p>
+      <p begin="00:42:15.150" end="00:42:21.900">shared target whatever the stuff you want to do you can do that so,</p>
+      <p begin="00:42:21.900" end="00:42:26.060">I'm going to try to get to the question soon so,</p>
+      <p begin="00:42:26.060" end="00:42:30.490">basically...the process that you'll go through if you actually really want to get</p>
+      <p begin="00:42:30.490" end="00:42:36.390">to universal is that you don't by the way that's fine you can keep running the project see but,</p>
+      <p begin="00:42:36.390" end="00:42:40.570">we internally have been doing this we've got a lot of experience with that so,</p>
+      <p begin="00:42:40.570" end="00:42:43.770">for example, I don't know if you guys been playing</p>
+      <p begin="00:42:43.770" end="00:42:48.610">with windows insider builds but if you have you'll notice that the start menu like parts of the shell of</p>
+      <p begin="00:42:48.610" end="00:42:53.440">the action center all those things those are actually uw ways they?</p>
+      <p begin="00:42:53.440" end="00:42:57.790">Run...app container and how did we get there well we started with we</p>
+      <p begin="00:42:57.790" end="00:42:59.610">have full trust code?</p>
+      <p begin="00:42:59.610" end="00:43:00.260">That was like,</p>
+      <p begin="00:43:00.260" end="00:43:07.200">you know, not nfc but the, you know, our internal equivalent of nfc totally awesome and,</p>
+      <p begin="00:43:07.200" end="00:43:11.800">the very first thing that everyone does is they do...on they put</p>
+      <p begin="00:43:11.800" end="00:43:16.370">...right so they basically so all these teams as a great we want we want</p>
+      <p begin="00:43:16.370" end="00:43:20.970">to new really modern feeling ui so they go and build.</p>
+      <p begin="00:43:20.970" end="00:43:24.160">And, they look at all the stuff that they can do in the app container they just continue to pull</p>
+      <p begin="00:43:24.160" end="00:43:28.710">out stuff n at first not everything can work just because a bunch of its old code</p>
+      <p begin="00:43:28.710" end="00:43:33.290">...did other stuff so they leave that code full trust and they just they basically</p>
+      <p begin="00:43:33.290" end="00:43:38.680">talked to it they have a little piped to it so, you know, and, then over time more</p>
+      <p begin="00:43:38.680" end="00:43:43.130">of those things they keep moving into their app overtime luckily the cool thing is the</p>
+      <p begin="00:43:43.130" end="00:43:47.440">app works the whole time right so you have a working...</p>
+      <p begin="00:43:47.440" end="00:43:49.640">...slowly make changes that whatever paces</p>
+      <p begin="00:43:49.640" end="00:43:52.380">right fear business and then a certain point.</p>
+      <p begin="00:43:53.400" end="00:43:59.240">You don't have any more full trust code left you're done and once you're done there now you can go...you can run</p>
+      <p begin="00:43:59.240" end="00:44:03.330">...xbox can run on, you know, phony koran anywhere you want.</p>
+      <p begin="00:44:03.330" end="00:44:08.160">And, that isyou know, that's our main goal for this project beside, you know,</p>
+      <p begin="00:44:08.160" end="00:44:12.310">yes, we you want...we want traps in the store but we really want</p>
+      <p begin="00:44:12.310" end="00:44:14.320">your code bases to live on for a long-time.</p>
+      <p begin="00:44:15.470" end="00:44:18.470">Other things that we're doing is back in when</p>
+      <p begin="00:44:18.470" end="00:44:21.430">...we have this we have this rule were basically snot rule but</p>
+      <p begin="00:44:21.430" end="00:44:26.420">...was like a guideline we said okay we're...build all these new great api...are much easier to use</p>
+      <p begin="00:44:26.420" end="00:44:31.100">...thirty-two like call us within old pointer and will fail and then we'll tell you the</p>
+      <p begin="00:44:31.100" end="00:44:34.720">...like we most people hated those patterns so we gave them all-new</p>
+      <p begin="00:44:34.720" end="00:44:39.720">aps...we did this thing where we said well if we have a new one then we won't</p>
+      <p begin="00:44:39.720" end="00:44:44.820">bring the old one forward into the into the development platform for</p>
+      <p begin="00:44:44.820" end="00:44:49.550">...you know, universal laps so there are things like hey I have tons of when</p>
+      <p begin="00:44:49.550" end="00:44:55.370">...code we said I see we are...sockets are much easier use those?</p>
+      <p begin="00:44:55.370" end="00:44:57.250">Are like well?</p>
+      <p begin="00:44:57.250" end="00:45:01.590">But, I already have code it's really easy because they're already works that's already been</p>
+      <p begin="00:45:01.590" end="00:45:06.240">the bugs so I think using that's easier so one changes we've made</p>
+      <p begin="00:45:06.240" end="00:45:09.660">in windows ten is we're bringing a ton of those things back so things like</p>
+      <p begin="00:45:11.540" end="00:45:14.730">...create thread all those things I guess we have an awesome</p>
+      <p begin="00:45:14.730" end="00:45:18.900">...pool but if you already have create third code disco...and those things</p>
+      <p begin="00:45:18.900" end="00:45:29.830">will be available inside the app container inside sdk that will just pass the regular whack.</p>
+      <p begin="00:45:29.830" end="00:45:31.740">So, actually moving all that code in</p>
+      <p begin="00:45:31.740" end="00:45:36.020">...container gets much easier the big things that you'll do or things like</p>
+      <p begin="00:45:36.020" end="00:45:41.690">well I used to use the that olds like file open picker</p>
+      <p begin="00:45:41.690" end="00:45:45.890">well change the code to use the new one the new one has a ton more features that</p>
+      <p begin="00:45:45.890" end="00:45:51.280">...lone does and sport like picking from other apps and stuff you make a few changes like that</p>
+      <p begin="00:45:51.280" end="00:45:57.450">...our...been it's actually been quite easy to make the move much easier than we thought I really</p>
+      <p begin="00:45:57.450" end="00:46:02.340">should have...people because I was trying to say...going to be easy and...told me it's...be hard.</p>
+      <p begin="00:46:02.340" end="00:46:06.880">I was right they were wrong.</p>
+      <p begin="00:46:06.880" end="00:46:11.790">All right so ...we should get to the questions like here's the summary right so project seizure bridge</p>
+      <p begin="00:46:11.790" end="00:46:17.490">from...ways to uw is that right good ans will convert, you</p>
+      <p begin="00:46:17.490" end="00:46:21.460">know, and,...well why do you and you can start using</p>
+      <p begin="00:46:21.460" end="00:46:27.800">the wa features so fifty-minute perfect questions.</p>
+      <p begin="00:46:27.800" end="00:46:32.170">...sorry so there's...here I it'd be it'd be more convenient to get to the</p>
+      <p begin="00:46:32.170" end="00:46:37.270">...because then I have to do less work by not repeating a question I'm lazy...a</p>
+      <p begin="00:46:37.270" end="00:46:42.460">ogg developers are so this is cool and I work in the industrial space</p>
+      <p begin="00:46:42.460" end="00:46:47.150">yep and most of our customers don't have access to the windows store so we can we convert</p>
+      <p begin="00:46:47.150" end="00:46:51.270">...at code...still just install without...absolutely, yeah,</p>
+      <p begin="00:46:51.270" end="00:46:56.760">there's, there's like getting into the store is nice and if you don't want to</p>
+      <p begin="00:46:56.760" end="00:47:01.400">adult yes you still uses this is just part of the platform like that app that</p>
+      <p begin="00:47:01.400" end="00:47:06.520">I that I did I just did...fx package so the rules for</p>
+      <p begin="00:47:06.520" end="00:47:10.540">project see apps or the same is for all the other apps right and I</p>
+      <p begin="00:47:10.540" end="00:47:15.430">...if you've seen in the scene and some of the other demos and stuff where now we have a page you</p>
+      <p begin="00:47:15.430" end="00:47:20.350">want to side load apps you flip a switch that switch affects project see exactly the same</p>
+      <p begin="00:47:20.350" end="00:47:21.740">...it does for all other affects.</p>
+      <p begin="00:47:23.040" end="00:47:27.950">...side-to-side so how does this work between single user multi-user apps</p>
+      <p begin="00:47:27.950" end="00:47:31.300">...obvious certain apps are...multiple users on a system.</p>
+      <p begin="00:47:32.390" end="00:47:37.480">Well, so, ...like it works the same way that the does for other app</p>
+      <p begin="00:47:37.480" end="00:47:41.330">...apps which is, you know, it's the installation is per</p>
+      <p begin="00:47:41.330" end="00:47:46.100">user meaning that like if you and I are both running on the same machine and you install</p>
+      <p begin="00:47:46.100" end="00:47:51.320">and app I don't see it unless I also install it under the covers there's</p>
+      <p begin="00:47:51.320" end="00:47:56.720">still only one copy of the app we have a single instance store and everything and, when you're...gets run it</p>
+      <p begin="00:47:56.720" end="00:48:01.300">runs that user if you're on a terminal server there's a hundred a hundred users and they all</p>
+      <p begin="00:48:01.300" end="00:48:03.840">launch the app there's a hundred instances of the app one</p>
+      <p begin="00:48:03.840" end="00:48:08.670">...each session...reading the data to the user directory then is that than roamed like</p>
+      <p begin="00:48:08.670" end="00:48:12.720">...like universal app on one driving all that so it goes</p>
+      <p begin="00:48:12.720" end="00:48:17.730">machine to machine well so what we did is because the</p>
+      <p begin="00:48:17.730" end="00:48:22.540">...model worlds like didn't actually do roaming we had that roaming directorate after</p>
+      <p begin="00:48:22.540" end="00:48:27.710">...data I'm going-to by the way after this talk I'm also going to be...hour and a half thing out and</p>
+      <p begin="00:48:28.790" end="00:48:32.600">experts section or whatever it's called was...</p>
+      <p begin="00:48:32.600" end="00:48:34.840">Insider...I'm...the entire...after this</p>
+      <p begin="00:48:34.840" end="00:48:39.780">and we can have a longer talk about like what was wrong with that but all that stuff we put in the</p>
+      <p begin="00:48:39.780" end="00:48:43.010">non rooming section but your app has a</p>
+      <p begin="00:48:43.010" end="00:48:47.180">roman directory as well and you can call those api is...you can start with</p>
+      <p begin="00:48:47.180" end="00:48:53.490">the moment you do the conversion you start running you can...put stuff in the rowing directory and you will...</p>
+      <p begin="00:48:53.490" end="00:48:56.410">Just to clarify the registry step the hp, you know,</p>
+      <p begin="00:48:56.410" end="00:49:00.330">current user stuff with that automatically...then no</p>
+      <p begin="00:49:00.330" end="00:49:06.180">of it won't know...because actually most apps can't handle that anyway.</p>
+      <p begin="00:49:06.180" end="00:49:11.240">...things like so automatically set up some shares or...he's big guys are ...said</p>
+      <p begin="00:49:11.240" end="00:49:15.640">...does things like automatically setting up some...shares or connecting to</p>
+      <p begin="00:49:15.640" end="00:49:20.360">a certain wireless networks on...is that going to be stuff we could do with this and</p>
+      <p begin="00:49:20.360" end="00:49:26.010">if not is their way...easily suppressing the apps...those kinds of things don't show up well,</p>
+      <p begin="00:49:26.010" end="00:49:28.460">at runtime your app can do whatever it would normally</p>
+      <p begin="00:49:28.460" end="00:49:33.460">do unless it was doing it by like going through you ac...run admin so, yeah,</p>
+      <p begin="00:49:33.460" end="00:49:38.590">you can still do all the say all the same stuff that you would normally do the biggest thing is if you're</p>
+      <p begin="00:49:38.590" end="00:49:44.470">if what...doing was going and editing the registry to change the way the os works nope but,</p>
+      <p begin="00:49:44.470" end="00:49:49.370">other than that, yeah, and, if we do usc things what does that look like if we try to do not</p>
+      <p begin="00:49:49.370" end="00:49:53.000">...fail okay, yeah, we're just going to be like we're just going to block</p>
+      <p begin="00:49:53.000" end="00:49:57.880">...because users like we're like the whole promise of this is you're not going to</p>
+      <p begin="00:49:57.880" end="00:50:02.210">regret at the moment you start going road and running a system and doing fun stuff I</p>
+      <p begin="00:50:02.210" end="00:50:07.710">...have the best of intentions but you might mess up their machine okay thanks.</p>
+      <p begin="00:50:07.710" end="00:50:13.950">Okay, so, what about things that were previously disallow out from store apps,</p>
+      <p begin="00:50:13.950" end="00:50:18.770">for example, accessing custom hardware using I october</p>
+      <p begin="00:50:18.770" end="00:50:22.970">...or doing ipc like using</p>
+      <p begin="00:50:22.970" end="00:50:26.960">named types or things like that well that still work yep that'll all continue</p>
+      <p begin="00:50:26.960" end="00:50:31.830">to work because you are just your app is still does running I mean really mostly what</p>
+      <p begin="00:50:31.830" end="00:50:36.030">we did was just change the underlying installation deployment management stuff</p>
+      <p begin="00:50:36.030" end="00:50:40.940">...code still running you can continue to do whatever you did before so I can use calm and</p>
+      <p begin="00:50:40.940" end="00:50:46.440">...mine all those things as well yes commenting my all that stuff work but,</p>
+      <p begin="00:50:46.440" end="00:50:48.610">the...the big the big like no,</p>
+      <p begin="00:50:48.610" end="00:50:53.280">is where like if you did something that cause some like other app to load your binary</p>
+      <p begin="00:50:53.280" end="00:50:57.970">is into that app or something like were blocking that for now we do what by the</p>
+      <p begin="00:50:57.970" end="00:51:01.620">way we do believe deeply in extensibility we believe deeply in</p>
+      <p begin="00:51:01.620" end="00:51:06.600">plugins and all those things are built we're currently working...all details now</p>
+      <p begin="00:51:06.600" end="00:51:11.910">...we are working on a model to have a nice clean plug-in model but,</p>
+      <p begin="00:51:11.910" end="00:51:16.530">that probably won't be part of eone but, yeah, other than that you're just you're code</p>
+      <p begin="00:51:16.530" end="00:51:23.010">...and how does the desktop activity modulate or how does that affect this</p>
+      <p begin="00:51:23.010" end="00:51:27.320">sorry...the desktop activity moderator...to connected standby</p>
+      <p begin="00:51:27.320" end="00:51:33.390">...how does that affect these type of applications...the same as if you...with...</p>
+      <p begin="00:51:33.390" end="00:51:38.880">So, but, you said that there are apps like there's a portion of the applicant do the same thing as</p>
+      <p begin="00:51:38.880" end="00:51:43.040">all wyatt any of the stuff that you do that that's like so flushes take,</p>
+      <p begin="00:51:43.040" end="00:51:45.710">for example, you say hey background triggers but, yeah,</p>
+      <p begin="00:51:45.710" end="00:51:49.650">I want...background triggers of those all will work like as member the everything,</p>
+      <p begin="00:51:49.650" end="00:51:53.740">everything seriously thing true yes you can do all those things that code</p>
+      <p begin="00:51:53.740" end="00:51:56.320">will run in the app container and that code will be subject appeal</p>
+      <p begin="00:51:56.320" end="00:52:00.520">m as always but yes you can do all those and can call into the</p>
+      <p begin="00:52:00.520" end="00:52:06.400">code that's suspended by the this of activity moderator well actually the way that the way that</p>
+      <p begin="00:52:06.400" end="00:52:11.220">...am works is when we wake up the system?</p>
+      <p begin="00:52:11.220" end="00:52:14.340">We actually do wake those processes for brief period of time so</p>
+      <p begin="00:52:14.340" end="00:52:18.890">yes it actually will work we...the original the original design of it we</p>
+      <p begin="00:52:18.890" end="00:52:25.120">didn't and it turned out that not everything worked out so great so we had a changes so our app uses something</p>
+      <p begin="00:52:25.120" end="00:52:29.900">called code meter that's meant to basically encrypt the binary...keep them tamper</p>
+      <p begin="00:52:29.900" end="00:52:33.760">resistant...us ducks net type of almanac is</p>
+      <p begin="00:52:33.760" end="00:52:36.490">this provide some of that same type of functionality, yeah.</p>
+      <p begin="00:52:37.570" end="00:52:38.760">The same way so,</p>
+      <p begin="00:52:38.760" end="00:52:43.760">what we do for all of the binary...deployed throughout backs is first of all as they come</p>
+      <p begin="00:52:43.760" end="00:52:48.930">down we have like everything's digitally signed we have all of the we have all the</p>
+      <p begin="00:52:48.930" end="00:52:53.460">checks sounds as every block comes off the network we check if it's been tampered with</p>
+      <p begin="00:52:53.460" end="00:52:58.360">roadway once it gets on-disk we lock it down with a whole bunch of different things we have</p>
+      <p begin="00:52:58.360" end="00:53:02.320">we have some...secret stuff that we do we change the colonel</p>
+      <p begin="00:53:02.320" end="00:53:07.240">in the file system we have things we have a thing called a super...like, you know, so, you can't just go and</p>
+      <p begin="00:53:07.240" end="00:53:11.840">...going-to-take privilege and just take over and do stuff all of that also applies</p>
+      <p begin="00:53:11.840" end="00:53:15.980">one other cool thing you can do at any moment your code can we have an api</p>
+      <p begin="00:53:15.980" end="00:53:19.730">zing call say tell me that files been tempered with?</p>
+      <p begin="00:53:19.730" end="00:53:22.180">Goal re-check it right now and tell me</p>
+      <p begin="00:53:22.180" end="00:53:26.040">if it's still passes the digital signature check so yes so</p>
+      <p begin="00:53:26.040" end="00:53:30.260">you get all of that for free as part of the conversion...and second so</p>
+      <p begin="00:53:30.260" end="00:53:34.950">we'll visual studio twenty fifteen the full version use this app</p>
+      <p begin="00:53:36.620" end="00:53:41.590">Formally enough...I've the it was it was support...for years like</p>
+      <p begin="00:53:41.590" end="00:53:46.040">lots of customers doing it and we met we talked to that group many times and we</p>
+      <p begin="00:53:46.040" end="00:53:50.750">had never done it and then they saw the keynote and I immediately got an email so don't</p>
+      <p begin="00:53:50.750" end="00:53:58.030">know but at least I can tell you people are interested now...my app...one...what would be</p>
+      <p begin="00:53:58.030" end="00:54:03.420">...to bring...would still go and run it through the converter you would do the click</p>
+      <p begin="00:54:03.420" end="00:54:10.720">once thing whatever but, I can say right now I know we've tried we've tried</p>
+      <p begin="00:54:10.720" end="00:54:16.110">that the past and we...working but we haven't tested that with project see yet but,</p>
+      <p begin="00:54:16.110" end="00:54:19.630">yeah, we you basically go through the same process but from that point</p>
+      <p begin="00:54:19.630" end="00:54:22.890">forward you wouldn't be a click once app anymore right</p>
+      <p begin="00:54:22.890" end="00:54:28.780">...and all the servicing we're now just come through the app...deployment stack.</p>
+      <p begin="00:54:28.780" end="00:54:33.570">...as a going to ask conses well what about some...features of click once like</p>
+      <p begin="00:54:33.570" end="00:54:38.310">h optional download groups and stuff will be the support for this kind of things in</p>
+      <p begin="00:54:38.310" end="00:54:43.180">rsa optional member groups optional download groups of optional download groups,</p>
+      <p begin="00:54:43.180" end="00:54:47.070">you know,...so, we're not we're not doing anything like we're not taking any of the click</p>
+      <p begin="00:54:47.070" end="00:54:51.240">...technology but at the same time we are doing things like</p>
+      <p begin="00:54:51.240" end="00:54:53.110">we're working on and</p>
+      <p begin="00:54:53.110" end="00:54:58.010">it's not it's not there yet we already know we've got lots of request just even for universal</p>
+      <p begin="00:54:58.010" end="00:55:03.520">apps to say I want to have downloadable content where and we know</p>
+      <p begin="00:55:03.520" end="00:55:08.970">how-to-do-it because if you actually look at app...we actually have a single map x bundle it's made up a bunch of</p>
+      <p begin="00:55:08.970" end="00:55:13.060">app xfiles and we already do things like automatically do language</p>
+      <p begin="00:55:13.060" end="00:55:15.860">...and everything so we are planning on extending it</p>
+      <p begin="00:55:15.860" end="00:55:22.760">to that but we will not be doing it the way that click ones doing it will be doing at the...</p>
+      <p begin="00:55:22.760" end="00:55:26.310">What about merge modules where we have a shared merge module between</p>
+      <p begin="00:55:26.310" end="00:55:30.720">two different applications that gets installed its own directory right now,</p>
+      <p begin="00:55:30.720" end="00:55:37.480">yeah, so, well, first of all two things merge modules are evil?</p>
+      <p begin="00:55:37.480" end="00:55:42.350">And, but, we do is way better which is under the covers what I talked about that</p>
+      <p begin="00:55:42.350" end="00:55:47.040">like differing we'll just...up for between two versions of your app we dipper differ</p>
+      <p begin="00:55:47.040" end="00:55:52.780">cross everything so if you have ten different like apps that all have the same</p>
+      <p begin="00:55:52.780" end="00:55:54.290">dls like, for example,</p>
+      <p begin="00:55:54.290" end="00:55:58.270">sq lights really popular write-in sq light ships aversion that</p>
+      <p begin="00:55:58.270" end="00:56:03.270">supports universal apps like you have a hundred apps are all using sq light there's</p>
+      <p begin="00:56:03.270" end="00:56:07.940">one copy on-disk there's one there's one dl on-disk you get all the same benefits you</p>
+      <p begin="00:56:07.940" end="00:56:13.030">get had you actually use emerge module and try to stuff the same things and into the same actual directory</p>
+      <p begin="00:56:13.030" end="00:56:17.710">...do...convert when we do the conversion do we just let the merge module install and</p>
+      <p begin="00:56:17.710" end="00:56:22.360">...just figured out and then we install the other app it'll just...it's there and, yeah, exactly,</p>
+      <p begin="00:56:22.360" end="00:56:27.290">yeah, you do nothing you just run we'll run the conversion twice let those evil merge</p>
+      <p begin="00:56:27.290" end="00:56:31.280">models do whatever stuff that they did don't worry about it and,</p>
+      <p begin="00:56:31.280" end="00:56:35.240">the deployment stack takes care of everything automatically.</p>
+      <p begin="00:56:35.240" end="00:56:40.940">So, it sounds like project see protects against accidental you know,</p>
+      <p begin="00:56:40.940" end="00:56:45.570">problems with the systemis it also security moreover no so we will</p>
+      <p begin="00:56:45.570" end="00:56:50.520">then be store apps that-you nowcan't really necessarily trust</p>
+      <p begin="00:56:50.520" end="00:56:54.670">apps from the store if there project see apps because...full trust,</p>
+      <p begin="00:56:54.670" end="00:56:57.210">yeah, so, this one thing we talked about</p>
+      <p begin="00:56:57.210" end="00:57:02.680">im by the way I don't work on the store I don't know what store policies are going to be</p>
+      <p begin="00:57:02.680" end="00:57:07.860">in place I don't know what the on boarding is going to look like or whatever but,</p>
+      <p begin="00:57:07.860" end="00:57:12.900">yeah, we definitely know that is absolutely a concern and we are ballot we've been balancing the two</p>
+      <p begin="00:57:12.900" end="00:57:17.880">like early on we aired on the side of we're not going to do it because it might potentially but we</p>
+      <p begin="00:57:17.880" end="00:57:25.960">also trust you guys so we're going to put some trust and you can sort of and,</p>
+      <p begin="00:57:25.960" end="00:57:29.920">you know, but, there will be checks and balances I mean luckily because it's coming through the app</p>
+      <p begin="00:57:29.920" end="00:57:32.670">...stack if we have to we still have like</p>
+      <p begin="00:57:32.670" end="00:57:37.600">kill but mechanisms and stuff like that so if something militias does make it into the store and</p>
+      <p begin="00:57:37.600" end="00:57:43.190">does start harming our users we can turn it off which I hope that doesn't happen often</p>
+      <p begin="00:57:43.190" end="00:57:46.640">...so that would include like if I process dot start something and,</p>
+      <p begin="00:57:46.640" end="00:57:51.660">you know, it would go around perhaps go around the redirects and stuff yeah, absolutely I mean</p>
+      <p begin="00:57:51.660" end="00:57:55.980">if you're evil then you'll be able to get around the stuff I'm not</p>
+      <p begin="00:57:55.980" end="00:58:01.780">...by the way you're not personally...but, yeah, that I mean, you know,</p>
+      <p begin="00:58:01.780" end="00:58:07.240">is one of those things that if we find people coloring outside the lines like we have the rails</p>
+      <p begin="00:58:07.240" end="00:58:12.140">there so for people who mean well like we help them do the right thing without even changing your</p>
+      <p begin="00:58:12.140" end="00:58:17.770">code which I think it's pretty neat other than that like we're just going to have to keep an eye out but, you know,</p>
+      <p begin="00:58:17.770" end="00:58:20.850">we always have the anytime you deploy software, you know,</p>
+      <p begin="00:58:20.850" end="00:58:25.010">even in the browser like there's always that problem so, you know,</p>
+      <p begin="00:58:25.010" end="00:58:31.360">all the all the or other mitigation that we have for this stuff will continue to use so I'm still trying to get my head</p>
+      <p begin="00:58:31.360" end="00:58:33.550">...this full trust and</p>
+      <p begin="00:58:33.550" end="00:58:37.460">...container stuff okay and when</p>
+      <p begin="00:58:37.460" end="00:58:41.540">...native code call-in to the universal windows platform to use</p>
+      <p begin="00:58:41.540" end="00:58:48.940">though you cplus-plus cx or is this some sort of replacement for that I'm not sure I</p>
+      <p begin="00:58:48.940" end="00:58:54.210">understand the question so...so-if let me just let me try to explain</p>
+      <p begin="00:58:54.210" end="00:58:59.210">quickly as I can so you have your full trust code running right and you can have in</p>
+      <p begin="00:58:59.210" end="00:59:04.000">you can activate the code in the app container either through some background task or we will give you</p>
+      <p begin="00:59:04.000" end="00:59:07.640">a called...just say hey run my code okay so you'll have that and then what</p>
+      <p begin="00:59:07.640" end="00:59:11.230">...just give you is we're like we will give you a pipe to communicate now</p>
+      <p begin="00:59:11.230" end="00:59:16.610">your question might be what is the pipe look like and is it...like is ad</p>
+      <p begin="00:59:16.610" end="00:59:21.390">...as...this is that where still actually we're still obsessing that out we've done a</p>
+      <p begin="00:59:21.390" end="00:59:29.490">couple we've been we've been playing with it and we've been doing a few different ones it turns out that?</p>
+      <p begin="00:59:29.490" end="00:59:32.960">...com can be somewhat tricky.</p>
+      <p begin="00:59:32.960" end="00:59:37.220">We'll say especially if you have to processes one of which can be suspended</p>
+      <p begin="00:59:37.220" end="00:59:42.580">...one of which is going to be suspended so we carly been thinking about actually using</p>
+      <p begin="00:59:42.580" end="00:59:47.500">the apt app model that we have to go-between apps are now were you basically pass value sets</p>
+      <p begin="00:59:47.500" end="00:59:53.610">there which is kind of like moral it's basically a glorified jason document and,</p>
+      <p begin="00:59:53.610" end="00:59:58.700">just passing that back and forth so we played around with that sum and it's actually quite promising so my guess is</p>
+      <p begin="00:59:58.700" end="01:00:02.270">we'll probably look something like that I have...more question</p>
+      <p begin="01:00:02.270" end="01:00:09.490">...I'm going to apologize for the...with active-x and it's called.</p>
+      <p begin="01:00:09.490" end="01:00:14.260">And, in the past we had the option to put on manifest the registry so I</p>
+      <p begin="01:00:14.260" end="01:00:20.760">don't need to actually I can run like a portable application...the average regarded.</p>
+      <p begin="01:00:20.760" end="01:00:25.030">So, yeah, so, right now what we do manifests right and that manifest could</p>
+      <p begin="01:00:25.030" end="01:00:30.240">even go to the to the resources of this equitable so it's...get don't know-how</p>
+      <p begin="01:00:30.240" end="01:00:35.280">this process will be able to get it also right now...like so the active-x</p>
+      <p begin="01:00:35.280" end="01:00:40.280">was bunch of different things one of it was like a deployment technology not doing that right so</p>
+      <p begin="01:00:40.280" end="01:00:45.130">you can do that but if you had active-x control you...using it in your app that like</p>
+      <p begin="01:00:45.130" end="01:00:49.550">that'll continue to work whether you were using registry...or you are using regular</p>
+      <p begin="01:00:49.550" end="01:00:57.380">calm those are both work so, I think you'll be fine but if you're talking about that other part which is</p>
+      <p begin="01:00:57.380" end="01:01:01.590">the pt part no like you wouldn't be able to say hey I'm going to take the active-x</p>
+      <p begin="01:01:01.590" end="01:01:07.430">...up on a website and just have...automatically update itself that wouldn't.</p>
+      <p begin="01:01:07.430" end="01:01:10.340">All right I think does that...</p>
+      <p begin="01:01:10.340" end="01:01:14.270">...so but I'm going to but if you still have questions</p>
+      <p begin="01:01:14.270" end="01:01:20.300">we're just going over to the what's called insider lounge around the corner...another hour and a half.</p>
+
+    </div>
+  </body>
+</tt>

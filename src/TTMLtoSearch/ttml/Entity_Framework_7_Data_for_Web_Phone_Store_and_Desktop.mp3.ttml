@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.910</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.070" end="00:00:03.880">All right everybody thank you for coming out</p>
+      <p begin="00:00:03.880" end="00:00:08.490">today had a request if you're sitting in a row if you could screwed into the middle with still</p>
+      <p begin="00:00:08.490" end="00:00:11.710">...people coming in we don't have enough chairs if you can just</p>
+      <p begin="00:00:11.710" end="00:00:14.690">...room I'm sure people would appreciate that.</p>
+      <p begin="00:00:14.690" end="00:00:19.130">My name is ron miller I work as a program manager on the entity framework</p>
+      <p begin="00:00:19.130" end="00:00:28.100">team at microsoft the topic of our session today is entity framework seven.</p>
+      <p begin="00:00:28.100" end="00:00:31.730">So, I just wanted to set expectations about the session before we start</p>
+      <p begin="00:00:31.730" end="00:00:35.310">out first of all this is listed as a level two hundred session</p>
+      <p begin="00:00:35.310" end="00:00:41.130">so that means first of all it's not a one-oh-one introduction to entity framework if you haven't used</p>
+      <p begin="00:00:41.130" end="00:00:45.130">...before hopefully you'll still get a bit of information out of the session</p>
+      <p begin="00:00:45.130" end="00:00:49.730">bad it's not going to be an introduction the...it's probably going to make more sense to you if you use the</p>
+      <p begin="00:00:49.730" end="00:00:55.720">...or at least satin sessions on entity framework before on the flip side of that it's also not</p>
+      <p begin="00:00:55.720" end="00:00:59.820">level four hundred session it's not a deep dive we are going to spend most of the time</p>
+      <p begin="00:00:59.820" end="00:01:05.910">encode but we're not going to be digging into the super technical bits of...seven.</p>
+      <p begin="00:01:05.910" end="00:01:10.610">This may seem obvious but this is a session about aef seven which is in preview at the moment so</p>
+      <p begin="00:01:10.610" end="00:01:15.520">this is afford look at what's coming out in entity framework in the future it's not a look at</p>
+      <p begin="00:01:15.520" end="00:01:18.200">...current stable releases if you want info</p>
+      <p begin="00:01:18.200" end="00:01:23.090">unstable releases there's lots of sessions and videos and documentation online that you can take a</p>
+      <p begin="00:01:23.090" end="00:01:29.140">look at and I've got some links for-you at the end where you can head for stuff like that.</p>
+      <p begin="00:01:29.140" end="00:01:33.960">Our agenda is very simple we're going to spend a couple of minutes in slide's talking about what you</p>
+      <p begin="00:01:33.960" end="00:01:38.160">have seven is if you've been an if seven session before you've probably seen this</p>
+      <p begin="00:01:38.160" end="00:01:43.140">content done stress...on a couple of minutes and I'm going to dig into demos most of the demos</p>
+      <p begin="00:01:43.140" end="00:01:47.960">I'm doing and you things I haven't shown before and then at the end we'll wrap up with</p>
+      <p begin="00:01:47.960" end="00:01:54.670">some places you can head to if you want to learn more about aef seven or get involved in the project.</p>
+      <p begin="00:01:54.670" end="00:01:58.650">So, the tag line we've been using for...seven is new platforms and you data</p>
+      <p begin="00:01:58.650" end="00:02:03.990">stores which sounds great on this slide but let's talk about what that actually means.</p>
+      <p begin="00:02:03.990" end="00:02:07.320">So, in...new platform side historically af ran on the</p>
+      <p begin="00:02:07.320" end="00:02:12.100">full dot net framework that meant you could use it in places such as wpf when</p>
+      <p begin="00:02:12.100" end="00:02:16.360">forms consul applications and isp dot net.</p>
+      <p begin="00:02:16.360" end="00:02:20.190">If you have seven way opening up a whole bunch of different platforms this is the same</p>
+      <p begin="00:02:20.190" end="00:02:25.140">messaging been hearing from a whole bunch of teams at this conference we add to use...on</p>
+      <p begin="00:02:25.140" end="00:02:28.930">...net five now...at five targets the full dot net framework but</p>
+      <p begin="00:02:28.930" end="00:02:34.220">it also targets net core...seven...in both of those scenarios.</p>
+      <p begin="00:02:34.220" end="00:02:38.810">Because we target dot net call you'll be out use...seven against dot net core on</p>
+      <p begin="00:02:38.810" end="00:02:44.140">windows ten universal application platform on mac and linux</p>
+      <p begin="00:02:44.140" end="00:02:50.240">...course mono is also available mac and linux so you can use...seven tagging that as well the point of</p>
+      <p begin="00:02:50.240" end="00:02:55.860">this slide is...that you can use entity framework...you would be writing dot net</p>
+      <p begin="00:02:55.860" end="00:03:00.750">code now of course not every provider is going to work in every situation so</p>
+      <p begin="00:03:00.750" end="00:03:08.050">the specific providers that are available what differ depending on what platform...targeting.</p>
+      <p begin="00:03:08.050" end="00:03:09.560">The other part about tag on</p>
+      <p begin="00:03:09.560" end="00:03:14.770">data stores historically af has just been about targeting relational data</p>
+      <p begin="00:03:14.770" end="00:03:19.530">...seven way opening it up to also target non relational data stores now</p>
+      <p begin="00:03:19.530" end="00:03:22.140">...very clear this is not about building some kind</p>
+      <p begin="00:03:22.140" end="00:03:26.070">of magical framework that hides the type of data store using</p>
+      <p begin="00:03:26.070" end="00:03:31.740">because things demo great and I never work and real applications so our aim is to take</p>
+      <p begin="00:03:31.740" end="00:03:35.860">the common concerns that makes sense on all data stores like having a db</p>
+      <p begin="00:03:35.860" end="00:03:40.830">context that represents a session with the data store tracking the changes and then handing those to the data</p>
+      <p begin="00:03:40.830" end="00:03:43.960">...of assist the concept of having a link query</p>
+      <p begin="00:03:43.960" end="00:03:48.220">provided that is handed off to the data store to translate into native query syntax</p>
+      <p begin="00:03:48.220" end="00:03:53.440">that stuff we baked into the core and then other stuff that does not apply to all data</p>
+      <p begin="00:03:53.440" end="00:03:56.580">stores comes in is a set of extensions when you pick the provide</p>
+      <p begin="00:03:56.580" end="00:04:00.690">audio targeting so the example I normally use for this</p>
+      <p begin="00:04:00.690" end="00:04:05.610">...targeting something non relational like as a table storage I need to do things like</p>
+      <p begin="00:04:05.610" end="00:04:09.100">configuring the...partition...for each entity that would be</p>
+      <p begin="00:04:09.100" end="00:04:13.630">an extension method that comes in one ice target...a table storage if on targeting</p>
+      <p begin="00:04:13.630" end="00:04:17.600">...database than I care about things like configuring cascade delete and</p>
+      <p begin="00:04:17.600" end="00:04:25.440">cullen table mappings...come in as extension methods when I target any relational provider.</p>
+      <p begin="00:04:25.440" end="00:04:29.760">And, just to give you some examples of what we've been working on our team has been working on</p>
+      <p begin="00:04:29.760" end="00:04:34.040">sequel severance...light providers and we've also been working with the mpg sequel</p>
+      <p begin="00:04:34.040" end="00:04:35.740">...some post grass.</p>
+      <p begin="00:04:35.740" end="00:04:39.730">And, then there's a whole bunch of other people who are in the earlier stages of looking at provide</p>
+      <p begin="00:04:39.730" end="00:04:45.210">...seven as well in addition...team has been prototyping as a table storage and</p>
+      <p begin="00:04:45.210" end="00:04:49.670">...providers these are included in a current...releases</p>
+      <p begin="00:04:49.670" end="00:04:56.050">we've just been prototyping them so...ready to ship them yet but we are planning to ship them further down the road.</p>
+      <p begin="00:04:56.050" end="00:05:01.900">And, then we've also...in memory database ...provide...the point of this is not to use</p>
+      <p begin="00:05:01.900" end="00:05:06.700">in a production application but if you have a part of your application that you want to test against</p>
+      <p begin="00:05:06.700" end="00:05:11.630">entity framework...you want your tests to run quickly rather hitting a database all the time you can</p>
+      <p begin="00:05:11.630" end="00:05:16.400">flickr out for the in memory provide a and well-behaved for the most part like a relational provide a</p>
+      <p begin="00:05:16.400" end="00:05:21.930">...you to easily test against entity framework obviously that's not going to be</p>
+      <p begin="00:05:21.930" end="00:05:26.470">what might they would do for a tree unit testing where you want to hone in on one piece of code</p>
+      <p begin="00:05:26.470" end="00:05:31.130">and test that but it would be useful if you want to do something that's a bit more like a scenario test of</p>
+      <p begin="00:05:31.130" end="00:05:38.180">...nbc control or something actually see it hit entity framework can get data back.</p>
+      <p begin="00:05:38.180" end="00:05:42.450">So, in addition to new platforms new data stores have seven we're</p>
+      <p begin="00:05:42.450" end="00:05:45.730">...opportunity to kind of re-invent or</p>
+      <p begin="00:05:45.730" end="00:05:49.920">...the core of entity framework so we want to make the core components that</p>
+      <p begin="00:05:49.920" end="00:05:55.270">...builds over much more lightweight and extensible.</p>
+      <p begin="00:05:55.270" end="00:05:59.370">...of the clear the top-level experience is still entity framework you stole</p>
+      <p begin="00:05:59.370" end="00:06:04.210">derived from a db context you expose db sets you have the same top-level api is that</p>
+      <p begin="00:06:04.210" end="00:06:08.840">you're used to entity framework under the covers though when we talk about the</p>
+      <p begin="00:06:08.840" end="00:06:13.140">core we're talking about things such as the metadata system the object model that</p>
+      <p begin="00:06:13.140" end="00:06:18.070">actually keeps track of what your entities look like how they mapped to your data structure</p>
+      <p begin="00:06:18.070" end="00:06:22.560">...data store and all those things we're talking about the internal components that</p>
+      <p begin="00:06:22.560" end="00:06:26.420">keep track of changes to objects as you manipulate them in memory</p>
+      <p begin="00:06:26.420" end="00:06:31.310">we're talking about the under the covers pipeline that translates your link query into something</p>
+      <p begin="00:06:31.310" end="00:06:37.350">that...be translated into store specific query syntax.</p>
+      <p begin="00:06:37.350" end="00:06:40.720">So, even though things like change tracking...on the list.</p>
+      <p begin="00:06:40.720" end="00:06:45.180">Which changing the core components...but the api from db context</p>
+      <p begin="00:06:45.180" end="00:06:49.720">like db context dot change tracker the api still looks almost identical to what it did in</p>
+      <p begin="00:06:49.720" end="00:06:54.100">...releases even though we're changing metadata the fluent api for configuring</p>
+      <p begin="00:06:54.100" end="00:06:59.800">your model still looks almost identical to what...releases as well?</p>
+      <p begin="00:06:59.800" end="00:07:05.200">So, why redo the core some of the main reasons obviously because it's extensible</p>
+      <p begin="00:07:05.200" end="00:07:10.190">you can replace...extend the components now this could be something you do it also makes it</p>
+      <p begin="00:07:10.190" end="00:07:14.070">easier for third-party frameworks to hook into entity framework and</p>
+      <p begin="00:07:14.070" end="00:07:18.020">add additional value an example of this being glimpse which is</p>
+      <p begin="00:07:18.020" end="00:07:22.500">logging in diagnostics plug-in for sp net they had a really hard time plugging into</p>
+      <p begin="00:07:22.500" end="00:07:27.370">fsix and with the architecture we have any of seven...life a lot easier for them</p>
+      <p begin="00:07:27.370" end="00:07:33.250">which will hopefully help out ecosystem with better tools and plugins available?</p>
+      <p begin="00:07:33.250" end="00:07:37.560">Was also an opportunity to replace confusing...and behavior</p>
+      <p begin="00:07:37.560" end="00:07:43.440">...ip...didn't make any sense I don't know if anyone in the rooms ever used a metadata api</p>
+      <p begin="00:07:43.440" end="00:07:48.090">from previous releases of...if you have I'm sorry but in the have seven</p>
+      <p begin="00:07:48.090" end="00:07:52.410">with making it so it's actually looks like an api that maps</p>
+      <p begin="00:07:52.410" end="00:07:59.020">...classes to a data store.</p>
+      <p begin="00:07:59.020" end="00:08:03.640">Ef six core was built in a very monolithic fashion the code</p>
+      <p begin="00:08:03.640" end="00:08:08.610">vices about twenty-years-old so with squeezed...much better perf out of the</p>
+      <p begin="00:08:08.610" end="00:08:13.460">later releases of entity framework but...wasn't a whole lot...we can go with a...this call that</p>
+      <p begin="00:08:13.460" end="00:08:17.670">we're building is optimized for memory and cpu usage and</p>
+      <p begin="00:08:17.670" end="00:08:21.820">this is particular important as we move to cloud computing and devices on devices</p>
+      <p begin="00:08:21.820" end="00:08:26.720">resources on super abundant in the cloud we pay for the resources we use so let's see</p>
+      <p begin="00:08:26.720" end="00:08:32.530">the you can actually main less billing at the end of the month which is good for you.</p>
+      <p begin="00:08:32.530" end="00:08:37.590">And, then another another concept we tried to embraces we built this is paper plight so if you</p>
+      <p begin="00:08:37.590" end="00:08:42.410">use entity framework to target something that's not a relational database relational</p>
+      <p begin="00:08:42.410" end="00:08:47.250">parts of the stack...separated out into a separate assembly by one get installed into a projects</p>
+      <p begin="00:08:47.250" end="00:08:54.700">...loaded up into memory when you run your application you just pay for the bits of...that you actually use.</p>
+      <p begin="00:08:54.700" end="00:08:59.380">And, of course you call means we can also implements and features that were incredibly difficult first</p>
+      <p begin="00:08:59.380" end="00:09:03.480">implement on the old core so this is just a list of some of the things that a new and</p>
+      <p begin="00:09:03.480" end="00:09:07.270">...seven folks have been asking for a long-time.</p>
+      <p begin="00:09:07.270" end="00:09:11.440">Some highlights of the list so batching...of commands during...changes we</p>
+      <p begin="00:09:11.440" end="00:09:16.830">...one command to the database for every row that you change allowing</p>
+      <p begin="00:09:16.830" end="00:09:25.940">...to be evaluated in memory and some of the other things on the list that too.</p>
+      <p begin="00:09:25.940" end="00:09:30.700">All right so I promise the slide section was going to be shorten that's it I'm going to drop out and start looking</p>
+      <p begin="00:09:30.700" end="00:09:34.070">at some demos now before we actually start digging around</p>
+      <p begin="00:09:34.070" end="00:09:38.900">in the new features I just want to introduce you to the organization we're going to be</p>
+      <p begin="00:09:38.900" end="00:09:47.290">...of following along for the series of demos I have.</p>
+      <p begin="00:09:47.290" end="00:09:52.480">the company...working for is code unicorns store these guys are an online retailer</p>
+      <p begin="00:09:52.480" end="00:09:57.130">they have this public-facing store where you can shop around as you might</p>
+      <p begin="00:09:57.130" end="00:10:04.150">expect unicorns store allows you to purchase everything that has pictures of cute little unicorns on it.</p>
+      <p begin="00:10:04.150" end="00:10:08.560">Ef has a history with unicorns which if you want to know about you can come up and I'll</p>
+      <p begin="00:10:08.560" end="00:10:14.640">explain to you at the end all right so this public-facing website is implemented using sp</p>
+      <p begin="00:10:14.640" end="00:10:20.260">dot net five so let's...studio and we have an sp dot net five</p>
+      <p begin="00:10:20.260" end="00:10:26.930">application if we look at the references for this when you get packages we'll see that.</p>
+      <p begin="00:10:26.930" end="00:10:27.870">We have</p>
+      <p begin="00:10:27.870" end="00:10:32.380">...the installed ones so we have entity framework dot sequel server installed so this is</p>
+      <p begin="00:10:32.380" end="00:10:35.940">the sequel server provider because...application...working with</p>
+      <p begin="00:10:35.940" end="00:10:40.830">target sequel server now this is actually important point because historically the sequel server</p>
+      <p begin="00:10:40.830" end="00:10:45.770">provide was actually built into the core of entity framework so we install the entity framework package even if you</p>
+      <p begin="00:10:45.770" end="00:10:49.200">are going to target oracle you still had the sequel server assembly there was</p>
+      <p begin="00:10:49.200" end="00:10:56.550">loaded into memory now it's split out...sequel...really just another provider.</p>
+      <p begin="00:10:56.550" end="00:11:04.290">So, let's look at the models we have we actually have to models here...bit here so we have the</p>
+      <p begin="00:11:04.290" end="00:11:09.280">...dot net identity model so this is the default model that is there when you</p>
+      <p begin="00:11:09.280" end="00:11:14.020">...application it manages the logins for this application I've actually also extended</p>
+      <p begin="00:11:14.020" end="00:11:17.780">that to include things like addresses for the uses and,</p>
+      <p begin="00:11:17.780" end="00:11:22.470">some other information like that and thena little further down we have the actual unicorns</p>
+      <p begin="00:11:22.470" end="00:11:27.310">store model here and this represents the product catalog the categories that</p>
+      <p begin="00:11:27.310" end="00:11:30.230">the products belong to when people can put stuff in that</p>
+      <p begin="00:11:30.230" end="00:11:36.860">cots and place orders and the shipping details for the orders and everything like that.</p>
+      <p begin="00:11:36.860" end="00:11:40.900">Now just to prove that any framework still looks the same any of seven if we light up one about</p>
+      <p begin="00:11:40.900" end="00:11:44.460">...classes that looks exactly like what we expect just a simple</p>
+      <p begin="00:11:44.460" end="00:11:45.130">...class.</p>
+      <p begin="00:11:46.180" end="00:11:49.910">Has properties with get doesn't settles on it?</p>
+      <p begin="00:11:49.910" end="00:11:52.490">And, then if we look at context say that</p>
+      <p begin="00:11:52.490" end="00:11:56.460">we still inheriting from db context were still exposing a db set for each</p>
+      <p begin="00:11:56.460" end="00:12:01.290">type and model and we're still overriding on model creating to provide</p>
+      <p begin="00:12:01.290" end="00:12:10.130">some additional configuration based on what was discovered by convention.</p>
+      <p begin="00:12:10.130" end="00:12:14.190">I play that gives you a brief intro to.</p>
+      <p begin="00:12:14.190" end="00:12:17.090">The...be working with what start digging into some features</p>
+      <p begin="00:12:17.090" end="00:12:21.870">of ewf so the first thing I want to do is look at logging in entity framework seven it's</p>
+      <p begin="00:12:21.870" end="00:12:25.320">probably not the most exciting demo to start with but I want to show you some of the</p>
+      <p begin="00:12:25.320" end="00:12:27.700">sequel improvements that we've made in the best way to do that is to</p>
+      <p begin="00:12:27.700" end="00:12:34.810">start by implementing logging so we can actually see what's happening in the database.</p>
+      <p begin="00:12:34.810" end="00:12:40.180">So, I was...back to visual studio I've made a start on the logging code I have the sequel</p>
+      <p begin="00:12:40.180" end="00:12:44.940">logo the intent of this component is to log any interaction with the database so I want to</p>
+      <p begin="00:12:44.940" end="00:12:50.200">find any sequel statements being executed...them out to a file you can see...I</p>
+      <p begin="00:12:50.200" end="00:12:55.210">...now one important thing I...not an entity framework specific type this comes</p>
+      <p begin="00:12:55.210" end="00:13:00.210">from the microsoft framework dot logging package and its use by entity framework</p>
+      <p begin="00:13:00.210" end="00:13:04.780">its used by sp dot net five and all of its components and hopefully used by</p>
+      <p begin="00:13:04.780" end="00:13:08.840">...frameworks in the future too.</p>
+      <p begin="00:13:08.840" end="00:13:11.540">The core of the log interfaces the log method.</p>
+      <p begin="00:13:12.640" end="00:13:16.970">Now in the past in a log method you might have expected just to get a string to log.</p>
+      <p begin="00:13:16.970" end="00:13:20.720">Out log here is actually a bit better than that we have the ability to...state so this gives</p>
+      <p begin="00:13:20.720" end="00:13:25.690">...called structured logging so if I'm about to send a command to the database I don't just have to send you</p>
+      <p begin="00:13:25.690" end="00:13:29.440">a string with the sequel in it I can actually give you the db command and then your</p>
+      <p begin="00:13:29.440" end="00:13:34.760">...can do something intelligent based on what's passed in now rather giving the db command would probably</p>
+      <p begin="00:13:34.760" end="00:13:39.600">actually just give you a detail object with some of the information copied out of the command</p>
+      <p begin="00:13:39.600" end="00:13:43.750">cannot really wanna-be manipulating stuff from the logging framework but you get the idea</p>
+      <p begin="00:13:43.750" end="00:13:48.520">are not just getting strings I can actually get real information but in some cases</p>
+      <p begin="00:13:48.520" end="00:13:53.760">like my scenario actually do just want to string so the last parameter we give you as a...</p>
+      <p begin="00:13:53.760" end="00:13:59.970">which takes all the information I just talked about and turns it into a human readable string.</p>
+      <p begin="00:13:59.970" end="00:14:04.080">I should also mention the exception comes in here so another example of what I</p>
+      <p begin="00:14:04.080" end="00:14:08.000">can do if I could check and see if the exceptions not now and maybe it's a</p>
+      <p begin="00:14:08.000" end="00:14:11.320">sequel exception I can run some extra logic to log the fact that a</p>
+      <p begin="00:14:11.320" end="00:14:15.400">sequel exception happened and I can actually gets the properties that are specific to a</p>
+      <p begin="00:14:15.400" end="00:14:21.410">sequel exception we don't want to do that I...going to run the formatted to get the message</p>
+      <p begin="00:14:21.410" end="00:14:26.070">musing a string...format to turn it into something a little more pretty and then we're just going to go on</p>
+      <p begin="00:14:26.070" end="00:14:31.610">write that out to a file in my see temp directory called database dialogue.</p>
+      <p begin="00:14:31.610" end="00:14:33.030">Now logging doesn't stop with the</p>
+      <p begin="00:14:33.030" end="00:14:37.630">...is actually one more level above that there's what's called a logging provider so</p>
+      <p begin="00:14:37.630" end="00:14:41.920">if I open this...happens is that every component in entity framework and I</p>
+      <p begin="00:14:41.920" end="00:14:46.020">mention that entity frameworks much more modular now every component asks the</p>
+      <p begin="00:14:46.020" end="00:14:50.290">...for the logarithm should use so this gives me the opportunity to give a different</p>
+      <p begin="00:14:50.290" end="00:14:54.260">...each component so in my case I'm only interested in giving the sequel</p>
+      <p begin="00:14:54.260" end="00:14:56.820">...to components that actually going to produce</p>
+      <p begin="00:14:56.820" end="00:15:00.870">equal so I've got a list where I've store the names of lies the batch</p>
+      <p begin="00:15:00.870" end="00:15:06.630">...the query context factory the two things that produce equal any of seven so I'm going to check</p>
+      <p begin="00:15:06.630" end="00:15:13.550">give the component requesting this belongs in that list.</p>
+      <p begin="00:15:13.550" end="00:15:19.560">So, the name of the components requesting a logo and if it is I'm going to return.</p>
+      <p begin="00:15:19.560" end="00:15:25.010">One about...logan's.</p>
+      <p begin="00:15:25.010" end="00:15:32.220">Like and if it's not I'm just going to return a now logo and this is just something that's not going...do anything...logs no way.</p>
+      <p begin="00:15:32.220" end="00:15:37.050">All right so I could go ahead and register this logging stuff directly with entity framework but I'm working</p>
+      <p begin="00:15:37.050" end="00:15:41.920">and isp dot net five application and isp dot net five has a concept of dependency injection bike</p>
+      <p begin="00:15:41.920" end="00:15:46.880">...into it so instead of registering my provided directly with...many</p>
+      <p begin="00:15:46.880" end="00:15:52.640">...startup well all my services setup we just go down a bit we'll see.</p>
+      <p begin="00:15:52.640" end="00:15:56.110">That my db contexts...being registered with the dependency injection</p>
+      <p begin="00:15:56.110" end="00:16:00.790">container now this is important means if I have a controller that needs to use one of the</p>
+      <p begin="00:16:00.790" end="00:16:04.590">context of new adopt in the controller I can just ask the dependency injection</p>
+      <p begin="00:16:04.590" end="00:16:09.270">...for the context it...give it to me the other thing that's important with this</p>
+      <p begin="00:16:09.270" end="00:16:12.190">...also means a context can make use of any services from the</p>
+      <p begin="00:16:12.190" end="00:16:16.680">...so I'm going to register my logo with the di container and then all of that would take care of</p>
+      <p begin="00:16:16.680" end="00:16:20.410">...that into entity framework now of course evolves running in</p>
+      <p begin="00:16:20.410" end="00:16:25.200">a wpf application I didn't want to use dependency injection and have to do it this way if I</p>
+      <p begin="00:16:25.200" end="00:16:31.040">don't use adi contain af we'll just take care of viewing up the services that needs?</p>
+      <p begin="00:16:31.040" end="00:16:35.250">So, we...down a little further and.</p>
+      <p begin="00:16:35.250" end="00:16:47.320">Come down to where actually setting up the loggers so we're going to add a provider.</p>
+      <p begin="00:16:47.320" end="00:16:52.540">Finish this been a...obvious because I think of lost intelligence so will...now...</p>
+      <p begin="00:16:52.540" end="00:17:00.180">there ...run application nouns what happens so you notice I can register multiple provided so if I</p>
+      <p begin="00:17:00.180" end="00:17:05.710">run this application from the command-line then I would get I would get</p>
+      <p begin="00:17:05.710" end="00:17:10.720">output from the log streaming straight out to the consul but I also have my</p>
+      <p begin="00:17:10.720" end="00:17:14.410">sql log in register to so let's just browser store.</p>
+      <p begin="00:17:14.410" end="00:17:15.970">And, great everything's</p>
+      <p begin="00:17:15.970" end="00:17:21.870">reworking and...just going to open up that log and</p>
+      <p begin="00:17:21.870" end="00:17:26.310">...the language the sql because that would give us a nice syntax highlighting and.</p>
+      <p begin="00:17:26.310" end="00:17:30.300">Zoom if you guys because...the screens not great so you can see that</p>
+      <p begin="00:17:30.300" end="00:17:37.990">we're now getting all of the sequel statements odf is running logged out to this file.</p>
+      <p begin="00:17:37.990" end="00:17:44.120">...just give me a sector close-ups and then I'll...back to the...</p>
+      <p begin="00:17:44.120" end="00:17:48.820">So, if we get our intelligence back.</p>
+      <p begin="00:17:48.820" end="00:17:55.870">All right well that's three loading let's go back over here.</p>
+      <p begin="00:17:55.870" end="00:17:58.950">Right so the next demo we're going to look at is some of the</p>
+      <p begin="00:17:58.950" end="00:18:18.920">sequel generation improvements we've done so we want to look at some improvements we've made in the save changes pipeline.</p>
+      <p begin="00:18:18.920" end="00:18:27.030">Get...online to...on a to...back into the application.</p>
+      <p begin="00:18:27.030" end="00:18:30.270">All right so let's just run our app.</p>
+      <p begin="00:18:30.270" end="00:18:35.370">And, I want to show you a part of the application that I'll get when I login.</p>
+      <p begin="00:18:35.370" end="00:18:40.850">All...so I'm going to login.</p>
+      <p begin="00:18:40.850" end="00:18:45.810">All right so the credentials I just log in with happen to be an administrator in the unicorns store so I get</p>
+      <p begin="00:18:45.810" end="00:18:50.520">this section of the application where I can do things like managing the products and the other thing I can do here is a</p>
+      <p begin="00:18:50.520" end="00:18:54.130">bulk process update so I can pick a category in-store let's</p>
+      <p begin="00:18:54.130" end="00:18:58.740">say kitchen and dining and I can say we want to give like a twenty five percent discount across all products</p>
+      <p begin="00:18:58.740" end="00:19:01.530">and the application of press save and we'll see at the</p>
+      <p begin="00:19:01.530" end="00:19:05.430">moment doesn't do anything we can see listed on the screen here that the current</p>
+      <p begin="00:19:05.430" end="00:19:09.840">process is still the same...up at the moment so let's go ahead and implement</p>
+      <p begin="00:19:09.840" end="00:19:14.320">this functionality...back to visual studio.</p>
+      <p begin="00:19:14.320" end="00:19:18.340">And, going to go into my control is an open up the manage products...so this is a</p>
+      <p begin="00:19:18.340" end="00:19:22.650">control that drives that admin section that I was just looking at we have an action on here</p>
+      <p begin="00:19:22.650" end="00:19:27.150">cobalt price reduction you can say we're going ahead with loading up all the products from</p>
+      <p begin="00:19:27.150" end="00:19:31.960">the database that in the category that was selected calculating the discount within the to go</p>
+      <p begin="00:19:31.960" end="00:19:36.190">...apply...so I'm going to say product current price and we're</p>
+      <p begin="00:19:36.190" end="00:19:43.820">...to set that to the recommended retail price.</p>
+      <p begin="00:19:43.820" end="00:19:50.310">So, we're going to...through all the products and do that and once we finish setting that for all the product...go ahead and call save changes?</p>
+      <p begin="00:19:50.310" end="00:19:59.280">...run the application.</p>
+      <p begin="00:19:59.280" end="00:20:01.610">...price reduction I'm going to pick on kitchen and</p>
+      <p begin="00:20:01.610" end="00:20:04.240">...again let's give a bigger discount let's make everything half-price.</p>
+      <p begin="00:20:05.450" end="00:20:09.320">Hit save...worked this time now in entity framework six what</p>
+      <p begin="00:20:09.320" end="00:20:13.480">would've happened is I would've changed the current price always for products I would've</p>
+      <p begin="00:20:13.480" end="00:20:20.190">called save and we would have sent for round trips to the database what we'll see if we go back to our log.</p>
+      <p begin="00:20:20.190" end="00:20:21.980">Is if I zoom in for</p>
+      <p begin="00:20:21.980" end="00:20:26.390">...probably have a guy will see that everything is kind of patched up into a single round-trip</p>
+      <p begin="00:20:26.390" end="00:20:30.450">to the database now you might be looking at this with an update and saying well that's great</p>
+      <p begin="00:20:30.450" end="00:20:34.550">you just always append all the actions together and if I do for inserts my just going to</p>
+      <p begin="00:20:34.550" end="00:20:37.740">say like insert into blah insight into blah...not</p>
+      <p begin="00:20:37.740" end="00:20:42.680">actually quite smart and how we build the batch so if I was inserting ten products I would</p>
+      <p begin="00:20:42.680" end="00:20:46.150">...insert into product columns I'm going to insight into and then I</p>
+      <p begin="00:20:46.150" end="00:20:52.340">...just say for value line underneath that list the values to...we also have a lot of smarts and</p>
+      <p begin="00:20:52.340" end="00:20:56.530">...obviously do topological sought to make sure that the parent objects get instead</p>
+      <p begin="00:20:56.530" end="00:21:01.160">of before children and in some situations where we need to we break it up into separate batches as</p>
+      <p begin="00:21:01.160" end="00:21:06.140">well that could be based on either the need to get values from the database before we can insert</p>
+      <p begin="00:21:06.140" end="00:21:08.420">...child records or even just the batch</p>
+      <p begin="00:21:08.420" end="00:21:16.210">sizes an optimal batch size to run for different database providers?</p>
+      <p begin="00:21:16.210" end="00:21:18.890">Now that's a feature that people have been asking for a long-time</p>
+      <p begin="00:21:18.890" end="00:21:23.480">on entity framework six it would've been very expensive for us to do their but it was easy for us to</p>
+      <p begin="00:21:23.480" end="00:21:28.720">...can from the start with a much more extensible core.</p>
+      <p begin="00:21:28.720" end="00:21:31.790">All right so the next mi want to show you is actually</p>
+      <p begin="00:21:31.790" end="00:21:38.820">...sequel improvement as well and that's when I run role sql queries against the database.</p>
+      <p begin="00:21:38.820" end="00:21:42.830">So,...what back to visual studio.</p>
+      <p begin="00:21:42.830" end="00:21:47.810">...application and I'm going to search by here or search box on the top</p>
+      <p begin="00:21:47.810" end="00:21:50.790">I might want to search for shirts.</p>
+      <p begin="00:21:50.790" end="00:21:51.890">If I search for show</p>
+      <p begin="00:21:51.890" end="00:21:56.610">...get any results back of the moment so let's go look at the action driving this.</p>
+      <p begin="00:21:56.610" end="00:22:02.910">That would be on the shop...an action...search.</p>
+      <p begin="00:22:02.910" end="00:22:06.870">We'll say the moment we're not actually returning anything from the results.</p>
+      <p begin="00:22:06.870" end="00:22:11.160">So, from my db context...could look at the products db set and then I</p>
+      <p begin="00:22:11.160" end="00:22:15.420">could write a link query here I could say where the title contains the term</p>
+      <p begin="00:22:15.420" end="00:22:19.750">or the description contains a term or it has a picture with the tag</p>
+      <p begin="00:22:19.750" end="00:22:25.650">or caption that mentions the term...probably not going to be the most efficient to do it I probably want to use</p>
+      <p begin="00:22:25.650" end="00:22:31.430">something like full-text search or some other database optimized feature to do</p>
+      <p begin="00:22:31.430" end="00:22:35.150">the search and that's actually exactly what I've got if we go to server explorer.</p>
+      <p begin="00:22:36.420" end="00:22:41.550">And, we look at the database...targeting.</p>
+      <p begin="00:22:41.550" end="00:22:44.200">You see I have a table valued function here it</p>
+      <p begin="00:22:44.200" end="00:22:51.840">accepts the search term and then the result set is just the columns out of the product table.</p>
+      <p begin="00:22:51.840" end="00:22:56.810">Now entity framework doesn't have the native building ability at this stage to call it tv</p>
+      <p begin="00:22:56.810" end="00:23:01.730">p so instead of using link I'm going to use this from sequel method</p>
+      <p begin="00:23:01.730" end="00:23:09.970">...a similar to what we had any fsix I would just punch in some sequel here.</p>
+      <p begin="00:23:09.970" end="00:23:12.420">Or call out tv...we need to</p>
+      <p begin="00:23:12.420" end="00:23:16.980">...a parameter now I'm not going to do string concatenation here because that would make me...the sequence</p>
+      <p begin="00:23:16.980" end="00:23:21.620">action tax so many...a parameter and then we make things nice</p>
+      <p begin="00:23:21.620" end="00:23:25.560">...you can just...the actual value and we'll take care of wrapping it up in a...parameter</p>
+      <p begin="00:23:25.560" end="00:23:38.110">for you so run this and this is an earth-shattering you could whoops.</p>
+      <p begin="00:23:38.110" end="00:23:42.380">I...just make sure the basic functionality as work and then we'll take a step further so I should be able</p>
+      <p begin="00:23:42.380" end="00:23:46.600">to search for shirt now and I can in the shirts come back okay.</p>
+      <p begin="00:23:46.600" end="00:23:51.120">Now what's interesting is the stuff is just coming back and whatever order it came from the database</p>
+      <p begin="00:23:51.120" end="00:23:55.820">...tv pay doesn't do any sorting in it so maybe I want to display</p>
+      <p begin="00:23:55.820" end="00:23:58.910">...the cheapest items first because I know in the context of the store</p>
+      <p begin="00:23:58.910" end="00:24:03.610">...the items that people in most likely to...</p>
+      <p begin="00:24:03.610" end="00:24:08.490">Now I could go to sequel and I could say okay or by but I'm using</p>
+      <p begin="00:24:08.490" end="00:24:12.500">rm for reason I don't really want to be writing...all the time.</p>
+      <p begin="00:24:12.500" end="00:24:21.060">So,...be nice if I could just dot composing on top of this using link.</p>
+      <p begin="00:24:21.060" end="00:24:25.370">Like that now this is across strongly taught divide change the names of the properties</p>
+      <p begin="00:24:25.370" end="00:24:34.980">avoiding all the pitfalls that would come with writing sequel let's run this.</p>
+      <p begin="00:24:34.980" end="00:24:35.530">Search for</p>
+      <p begin="00:24:35.530" end="00:24:43.460">shuts again and we'll see that now they order let's go look at the sequence running.</p>
+      <p begin="00:24:43.460" end="00:24:47.510">Zooming here you'll see the piece of sequel that I specified in the middle there and</p>
+      <p begin="00:24:47.510" end="00:24:51.810">then because it's something that's...were able to rapid an add extra sequel around it so</p>
+      <p begin="00:24:51.810" end="00:25:07.660">way selecting out the cones we expect and ordering by the current price.</p>
+      <p begin="00:25:07.660" end="00:25:11.600">All right so the last thing that I wanted to show you.</p>
+      <p begin="00:25:11.600" end="00:25:15.190">With something code what's on the last...stress the last bit of this</p>
+      <p begin="00:25:15.190" end="00:25:19.330">...demos want to show you something called shadow state...</p>
+      <p begin="00:25:19.330" end="00:25:24.280">...six if you want something to be part of your model what had to...class.</p>
+      <p begin="00:25:24.280" end="00:25:28.110">And, had to have properties everything that you...model the concept</p>
+      <p begin="00:25:28.110" end="00:25:32.450">of shadow state is the ability to have stuffing a model that's not actually represented in you'll see a</p>
+      <p begin="00:25:32.450" end="00:25:37.320">...classes now this can be useful in a number of different scenarios that may be that the</p>
+      <p begin="00:25:37.320" end="00:25:41.520">classic using is your...something un comes from a library that's just an</p>
+      <p begin="00:25:41.520" end="00:25:45.020">assembly you therefore can't add stuff to it.</p>
+      <p begin="00:25:45.020" end="00:25:49.340">Or it could be that stuff that you want to kind of reason about with the...we don't really want to</p>
+      <p begin="00:25:49.340" end="00:25:54.390">...you see a lot classes that the rest of your application is built over.</p>
+      <p begin="00:25:54.390" end="00:25:58.280">So, we're actually looking at one that second scenario what we</p>
+      <p begin="00:25:58.280" end="00:26:02.990">want to do is add some information to the</p>
+      <p begin="00:26:02.990" end="00:26:05.950">cops items that people can add so when I'm shopping around</p>
+      <p begin="00:26:05.950" end="00:26:09.220">...item to my cot we want to track the time that each</p>
+      <p begin="00:26:09.220" end="00:26:14.070">...item was last updated now the reason we want to do that is...just been sitting in somebody's</p>
+      <p begin="00:26:14.070" end="00:26:18.000">cot for year haven't touched we want to both...it out of</p>
+      <p begin="00:26:18.000" end="00:26:22.980">the cut because chances are...don't want to if I come back to the...and also we just want to free up the space</p>
+      <p begin="00:26:22.980" end="00:26:27.520">...the database now what I would traditionally do here.</p>
+      <p begin="00:26:27.520" end="00:26:31.690">Obviously is...my model.</p>
+      <p begin="00:26:31.690" end="00:26:34.860">I would light up the...class and I would add a property</p>
+      <p begin="00:26:34.860" end="00:26:38.250">code last updated...really want to do that though because I don't want</p>
+      <p begin="00:26:38.250" end="00:26:46.080">developers exposing it somewhere in the ui so instead I'm going to go to my context.</p>
+      <p begin="00:26:46.080" end="00:26:52.490">We're going to pull out the configuration for the...item.</p>
+      <p begin="00:26:52.490" end="00:26:56.300">...to...dot property now this is traditionally where I would have put in some lambda,</p>
+      <p begin="00:26:56.300" end="00:27:01.020">lambda that says which property on my cdl-class want to talk about instead I'm going to use and</p>
+      <p begin="00:27:01.020" end="00:27:04.420">overlaid where specified type.</p>
+      <p begin="00:27:04.420" end="00:27:08.970">...last updated and then at this point I could chain on some additional configuration</p>
+      <p begin="00:27:08.970" end="00:27:13.270">to do things like setting the column that should map to in the database same as...accessing</p>
+      <p begin="00:27:13.270" end="00:27:19.660">...allow property from the class I'm happy with all the defaults...leave it like that for the moment.</p>
+      <p begin="00:27:19.660" end="00:27:21.030">Now in this case I'm using a</p>
+      <p begin="00:27:21.030" end="00:27:25.890">seven to create and maintain the database for me so this is</p>
+      <p begin="00:27:25.890" end="00:27:30.870">...what this is where I write code and then I have the database generated make changes to the code and I push</p>
+      <p begin="00:27:30.870" end="00:27:35.240">...changes to the database and of course the scenario can do things like getting a sequel script to</p>
+      <p begin="00:27:35.240" end="00:27:40.500">...my db a and production I just want to call it out because sometimes when we demo</p>
+      <p begin="00:27:40.500" end="00:27:45.490">this workflow people are under the impression that that's kind of the recommended way of using entity framework</p>
+      <p begin="00:27:45.490" end="00:27:49.520">is one of the to options you can use ef to create your model and then</p>
+      <p begin="00:27:49.520" end="00:27:54.500">...update your database from it or it's also equally valid and equally important</p>
+      <p begin="00:27:54.500" end="00:28:01.600">of a scenario to have an existing database that you generate a model from so that's just a point of clarification?</p>
+      <p begin="00:28:01.600" end="00:28:02.000">Anyway,</p>
+      <p begin="00:28:02.000" end="00:28:06.640">like I said at this point my model is a source of truth and I want to push these changes to my database so</p>
+      <p begin="00:28:06.640" end="00:28:11.570">I would use code first migrations for that now what I would be used to doing here is</p>
+      <p begin="00:28:11.570" end="00:28:16.350">I would go ahead and run something like ad migration from package manager consul.</p>
+      <p begin="00:28:16.350" end="00:28:18.930">But, I'm in the context of...dot net five.</p>
+      <p begin="00:28:20.060" end="00:28:22.520">So, I...on...five also have the concept of</p>
+      <p begin="00:28:22.520" end="00:28:28.330">building commands so...I go and look at project jason file you'll see that I have a reference to the entity</p>
+      <p begin="00:28:28.330" end="00:28:29.830">framework dot commands package.</p>
+      <p begin="00:28:31.470" end="00:28:36.490">And, then in my command section I have...ef command registered.</p>
+      <p begin="00:28:36.490" end="00:28:41.900">So, that gives me another option of dropping out to the command prompt.</p>
+      <p begin="00:28:41.900" end="00:28:46.870">And, I can do dn x which is kind of the entry point when I'm working with isp dot net five and I can say I want to called</p>
+      <p begin="00:28:46.870" end="00:28:48.590">...command.</p>
+      <p begin="00:28:48.590" end="00:28:52.790">So, this gives me a consul alternative for the commands related to</p>
+      <p begin="00:28:52.790" end="00:28:56.350">...now at the moment this command-line is specific...to sp</p>
+      <p begin="00:28:56.350" end="00:29:00.960">dot net five we do want to have a similar command-line and other project types as well but if</p>
+      <p begin="00:29:00.960" end="00:29:07.740">...working in like a consul lap...informs app you would still use the package manager...and the.</p>
+      <p begin="00:29:07.740" end="00:29:10.420">I should also clarify this is like an alternative to the package</p>
+      <p begin="00:29:10.420" end="00:29:14.460">manage consult it doesn't actually work in sp...five at the moment but we do plan to</p>
+      <p begin="00:29:14.460" end="00:29:17.800">...that up by the time we ship so anyway let's start</p>
+      <p begin="00:29:17.800" end="00:29:21.010">using a migrations command so you probably notice the</p>
+      <p begin="00:29:21.010" end="00:29:25.870">...unicode come up to dimension unicorns a precious to us so in</p>
+      <p begin="00:29:25.870" end="00:29:30.350">...migration we'll call the migration last updated you remember too that I have</p>
+      <p begin="00:29:30.350" end="00:29:35.210">to context so I need to let f no which context I want to generate the migration for</p>
+      <p begin="00:29:35.210" end="00:29:39.150">...with...still context.</p>
+      <p begin="00:29:39.150" end="00:29:43.360">So, it's going to look at my model...going to look at what the model look like last time I</p>
+      <p begin="00:29:43.360" end="00:29:45.480">scaffold and migration and create the changes in</p>
+      <p begin="00:29:45.480" end="00:29:51.790">immigration for me so let's go to the migration photo we'll see what scaffold.</p>
+      <p begin="00:29:51.790" end="00:29:55.880">That's pretty good to me it's just going to add a column code last updated that is of type...to</p>
+      <p begin="00:29:55.880" end="00:29:59.350">...non-null sounds great.</p>
+      <p begin="00:29:59.350" end="00:30:00.800">We want to apply that to the database.</p>
+      <p begin="00:30:02.000" end="00:30:10.070">Some...run a similar command but instead of migration ad will say migration apply.</p>
+      <p begin="00:30:10.070" end="00:30:13.310">Okay, so, when this finishes we now have the last updated property</p>
+      <p begin="00:30:13.310" end="00:30:16.760">...model as shadow state we have a last updated column</p>
+      <p begin="00:30:16.760" end="00:30:20.820">in our database...not actually using it anywhere now code?</p>
+      <p begin="00:30:20.820" end="00:30:25.020">So, let's go back to the context of what I want to do is automatically set that property when</p>
+      <p begin="00:30:25.020" end="00:30:28.650">save changes call so I...out some code here</p>
+      <p begin="00:30:28.650" end="00:30:33.650">...the tech changes so detect changes are going to look for stuff that has changed my</p>
+      <p begin="00:30:33.650" end="00:30:37.240">...classes since the last time db context check for changes.</p>
+      <p begin="00:30:38.410" end="00:30:43.080">Normally this runs automatically as part of save changes but I actually want to run my logic before I</p>
+      <p begin="00:30:43.080" end="00:30:46.870">...by save changes I need to call it explicitly.</p>
+      <p begin="00:30:46.870" end="00:30:50.040">And, then get a final the change tracking entries for</p>
+      <p begin="00:30:50.040" end="00:30:52.780">...items and I'm interested in the ones where the</p>
+      <p begin="00:30:52.780" end="00:30:54.470">entry that added or modified.</p>
+      <p begin="00:30:55.560" end="00:30:59.820">...allude through those and we'll say entry.</p>
+      <p begin="00:30:59.820" end="00:31:01.590">For access one of the properties.</p>
+      <p begin="00:31:02.830" end="00:31:06.480">This could be a property that's a shatter property or it could be a property that's part of my</p>
+      <p begin="00:31:06.480" end="00:31:22.750">clr class and I can set the current value.</p>
+      <p begin="00:31:22.750" end="00:31:25.750">...looking for a new shoot so by this one.</p>
+      <p begin="00:31:25.750" end="00:31:32.310">Gets added to my car all right let's just dropped out to add database log.</p>
+      <p begin="00:31:32.310" end="00:31:34.870">Zooming for your again.</p>
+      <p begin="00:31:34.870" end="00:31:39.800">Right so here's the inset command so we can see that last updated is just included along with inset</p>
+      <p begin="00:31:39.800" end="00:31:44.570">commandos if it was any other property in my model and you can also see when we select</p>
+      <p begin="00:31:44.570" end="00:31:52.140">...also selecting the last updated column again the same as if it was just a property my</p>
+      <p begin="00:31:52.140" end="00:31:59.190">All right so you in a minute we're actually going to need some...database so...here let's just finish this order off.</p>
+      <p begin="00:31:59.190" end="00:32:04.020">I want that can ship it to me here that's not my real address stein's and...as a.</p>
+      <p begin="00:32:04.020" end="00:32:05.510">Place my what.</p>
+      <p begin="00:32:05.510" end="00:32:09.860">...at another order quickly...here.</p>
+      <p begin="00:32:09.860" end="00:32:11.810">My wife and I both love coffee</p>
+      <p begin="00:32:11.810" end="00:32:17.770">...set of matching unicode...for us because way that cool.</p>
+      <p begin="00:32:17.770" end="00:32:20.600">Ship...to the same address.</p>
+      <p begin="00:32:20.600" end="00:32:28.910">...us now we have a couple of what is in the database to.</p>
+      <p begin="00:32:28.910" end="00:32:33.800">All right so hopefully those few demo is gave the idea that you have seven has some</p>
+      <p begin="00:32:33.800" end="00:32:38.840">coney features coming...to...spending the whole time rewriting the core actually adding you stuff...seven as well</p>
+      <p begin="00:32:40.110" end="00:32:44.800">...switch gears a bit now and talk about the other part of the tag line the while.</p>
+      <p begin="00:32:44.800" end="00:32:48.150">One of my...tag line which was the new platforms</p>
+      <p begin="00:32:48.150" end="00:32:50.460">...so to a couple demos</p>
+      <p begin="00:32:50.460" end="00:32:55.120">...about you platforms so in the context of unicorns store.</p>
+      <p begin="00:32:55.120" end="00:32:57.710">They have a...responsible for.</p>
+      <p begin="00:32:58.730" end="00:33:01.170">Getting...the...come in packing them into boxes</p>
+      <p begin="00:33:01.170" end="00:33:06.410">putting ship a label on them and then shipping them out to customers hopefully in a timely manner the problem is that the moment</p>
+      <p begin="00:33:06.410" end="00:33:10.400">...a paper-based system lots of mistakes get made and it's not very efficient so we want to write</p>
+      <p begin="00:33:10.400" end="00:33:13.820">...application to help with that now warehouse is a</p>
+      <p begin="00:33:13.820" end="00:33:18.530">window shop we have windows desktops we have a few tablets around and we</p>
+      <p begin="00:33:18.530" end="00:33:21.330">give a lot of our employees windows find to use so we want to write</p>
+      <p begin="00:33:21.330" end="00:33:26.270">...application is useable across platforms so of course what we want to do is</p>
+      <p begin="00:33:26.270" end="00:33:42.500">write...ten universal application platform.</p>
+      <p begin="00:33:42.500" end="00:33:45.980">I've already might start on the application.</p>
+      <p begin="00:33:45.980" end="00:33:47.930">So, the first thing I'm going to do well</p>
+      <p begin="00:33:47.930" end="00:33:52.180">...before we start on it let's just talk about how this applications going to work the application is going</p>
+      <p begin="00:33:52.180" end="00:33:55.370">to talk to a central web api service.</p>
+      <p begin="00:33:56.530" end="00:34:01.260">It's going to ask that web api for all of the current orders that need to be</p>
+      <p begin="00:34:01.260" end="00:34:03.970">...shipped out the customers.</p>
+      <p begin="00:34:03.970" end="00:34:09.550">When it does that is going to...screen in the warehouse...I can go through...the...to fail and assign them to</p>
+      <p begin="00:34:09.550" end="00:34:13.050">...it...talk back to the service...in the central database</p>
+      <p begin="00:34:13.050" end="00:34:17.740">...these orders are currently being packed that point so that no other employee</p>
+      <p begin="00:34:17.740" end="00:34:23.550">tries to pack them as well now that point we want to take a copy of the order information and store it</p>
+      <p begin="00:34:23.550" end="00:34:28.510">locally on the desktop the tablet all the fine whatever we happen to be working on because</p>
+      <p begin="00:34:28.510" end="00:34:33.540">I warehouse is a big building...so full of metal and a whole bunch of other stuff and as dead spots</p>
+      <p begin="00:34:33.540" end="00:34:39.800">...so network a wi-fi or whatever so we need to be able to work offline...the orders?</p>
+      <p begin="00:34:39.800" end="00:34:43.640">And, then once the order has been shipped at some point we need to record</p>
+      <p begin="00:34:43.640" end="00:34:50.870">...the central service when we're online that the...has been shipped.</p>
+      <p begin="00:34:50.870" end="00:34:55.420">So, the communication with that web api services done through this unicorns store service</p>
+      <p begin="00:34:55.420" end="00:35:00.300">...thing that I've implemented here so we have a few things here we can get the pending orders which will give us back</p>
+      <p begin="00:35:00.300" end="00:35:04.940">a list of orders you say I'm just hitting has simple web api</p>
+      <p begin="00:35:04.940" end="00:35:06.880">and point here.</p>
+      <p begin="00:35:06.880" end="00:35:09.220">We can record the fact that I'm packing orders again just</p>
+      <p begin="00:35:09.220" end="00:35:13.060">hitting a different part of the web api and then I can also talk back to the</p>
+      <p begin="00:35:13.060" end="00:35:17.800">service and record when I've shipped in order moment this services just running on my local machine because</p>
+      <p begin="00:35:17.800" end="00:35:23.980">on developing at...it's here hosted on localized.</p>
+      <p begin="00:35:23.980" end="00:35:28.540">All right and the if we go look at the model I have here you see I have some simple</p>
+      <p begin="00:35:28.540" end="00:35:32.580">...classes that are return from the service I have this order and I</p>
+      <p begin="00:35:32.580" end="00:35:36.760">haven't order line as well now what I want to do is when I get that information back want to be a</p>
+      <p begin="00:35:36.760" end="00:35:42.060">distort somewhere locally on the device now obviously the default database of choice</p>
+      <p begin="00:35:42.060" end="00:35:47.910">when I'm talking about devices is sql...so let's go out and you get package we're going</p>
+      <p begin="00:35:47.910" end="00:35:59.100">to install entity framework dot sequel light so this is a sql lack provide of entity framework.</p>
+      <p begin="00:35:59.100" end="00:36:04.280">And, then I've got...start of a context you...got notice context inherits</p>
+      <p begin="00:36:04.280" end="00:36:08.740">...has a db set for the orders or lines I'm just reusing the same dt</p>
+      <p begin="00:36:08.740" end="00:36:10.420">...that were return from the service.</p>
+      <p begin="00:36:11.480" end="00:36:15.010">And, now that I have...light installed I can just go ahead and say options.</p>
+      <p begin="00:36:16.180" end="00:36:21.260">You...what you...and extension method that's now available because I have the sequel</p>
+      <p begin="00:36:21.260" end="00:36:27.060">...provider installed now I need to provide a connection string.</p>
+      <p begin="00:36:27.060" end="00:36:35.100">And, I've already got a bit of code on the line above that will find...appropriate filename to use.</p>
+      <p begin="00:36:35.100" end="00:36:39.130">Now the choose orders form is a section of the application where the users can choose the</p>
+      <p begin="00:36:39.130" end="00:36:43.850">...that I want to work on so it's mostly implemented but all I need to do is taken offline</p>
+      <p begin="00:36:43.850" end="00:36:48.790">copy of the data once...selected the orders so I knew that my context.</p>
+      <p begin="00:36:48.790" end="00:36:50.500">I'm liping through the orders I'm</p>
+      <p begin="00:36:50.500" end="00:36:57.100">going-to go ahead and on the orders db set adage...that.</p>
+      <p begin="00:36:57.100" end="00:37:07.750">Also interested in the order line information...each of the...lines.</p>
+      <p begin="00:37:07.750" end="00:37:11.280">...and then once I've added all of that I'm going to go ahead and call save changes to</p>
+      <p begin="00:37:11.280" end="00:37:15.200">flush those changes out to the database.</p>
+      <p begin="00:37:15.200" end="00:37:20.660">All right let's run it and see what happens.</p>
+      <p begin="00:37:20.660" end="00:37:27.120">you notice to start with I've got the target set to the local machine so this is going to be the desktop version of the application.</p>
+      <p begin="00:37:27.120" end="00:37:29.770">I can click on choose...it talks to the service I</p>
+      <p begin="00:37:29.770" end="00:37:33.540">get the orders back and say I want to fill that one.</p>
+      <p begin="00:37:33.540" end="00:37:36.980">Is going to tell me that the autos assigned to me?</p>
+      <p begin="00:37:36.980" end="00:37:42.360">And, then walking around the warehouse this one's an easy one so I say...the</p>
+      <p begin="00:37:42.360" end="00:37:49.250">Right...shipping label stick it on and then record the fact that I've ship the package.</p>
+      <p begin="00:37:49.250" end="00:37:53.220">All right if we go look at website.</p>
+      <p begin="00:37:53.220" end="00:37:55.930">And, my account I can go look at my orders.</p>
+      <p begin="00:37:55.930" end="00:37:59.130">And, we'll see that indeed the first-order there.</p>
+      <p begin="00:37:59.130" end="00:38:01.960">Is now...to shift?</p>
+      <p begin="00:38:01.960" end="00:38:06.680">And, of course because this is a universal application.</p>
+      <p begin="00:38:06.680" end="00:38:11.480">I can switch my target too.</p>
+      <p begin="00:38:11.480" end="00:38:25.830">Go ahead and run the application deployed off to the find emulator.</p>
+      <p begin="00:38:25.830" end="00:38:30.780">...one order there are many I'm going to select that one...it to me now the nice thing about the find emulator</p>
+      <p begin="00:38:30.780" end="00:38:35.650">as I can actually simulate offline so let's go take the emulate offline.</p>
+      <p begin="00:38:35.650" end="00:38:38.870">Just...than offline outcry and request the orders again.</p>
+      <p begin="00:38:39.950" end="00:38:43.280">...here it's telling me that could not connect...offline account talk</p>
+      <p begin="00:38:43.280" end="00:38:49.120">to local hosts machine but we can still go through and...the order so</p>
+      <p begin="00:38:49.120" end="00:38:55.020">plot the order we're going to...the think mug write the label and ship it.</p>
+      <p begin="00:38:55.020" end="00:38:58.810">...see I get a notification telling me that I'm not to the</p>
+      <p begin="00:38:58.810" end="00:39:04.700">...locally but I couldn't think that with the central service so I could do that later.</p>
+      <p begin="00:39:04.700" end="00:39:09.760">So, let's just bring the emulated back online.</p>
+      <p begin="00:39:09.760" end="00:39:20.690">we...the...button and...orders...now...recording the central database.</p>
+      <p begin="00:39:20.690" end="00:39:23.180">And,...describe refresh this page.</p>
+      <p begin="00:39:23.180" end="00:39:27.800">And, again, we'll see that by that what is...ship now so we're using entity framework with sequel</p>
+      <p begin="00:39:27.800" end="00:39:28.550">wyatt</p>
+      <p begin="00:39:28.550" end="00:39:43.570">on the phone desktop and tablet to take care of storing local data.</p>
+      <p begin="00:39:43.570" end="00:39:49.810">Let's keep going with the new platforms one.</p>
+      <p begin="00:39:49.810" end="00:39:53.200">So, there's another part of our business.</p>
+      <p begin="00:39:53.200" end="00:39:57.630">At unicorns store and that's a graphic design department now they have this really old system that</p>
+      <p begin="00:39:57.630" end="00:39:59.050">...use for tracking work</p>
+      <p begin="00:39:59.050" end="00:40:03.720">order so when someone in the unicorns store organization once and you piece like a</p>
+      <p begin="00:40:03.720" end="00:40:08.550">...ad for the website or something like...graphic design department I go into the work order</p>
+      <p begin="00:40:08.550" end="00:40:16.490">into this system and the designers can take...against that work order is like...</p>
+      <p begin="00:40:16.490" end="00:40:22.050">Now the graphic design department doesn't use windows they're running on os</p>
+      <p begin="00:40:22.050" end="00:40:28.030">So, as you might expect the original application was developed using os x.</p>
+      <p begin="00:40:28.030" end="00:40:32.700">Now we want to write dot net because where dot net development shop but,</p>
+      <p begin="00:40:32.700" end="00:40:36.850">the idea of going putting a windows machine on the desk just run this application</p>
+      <p begin="00:40:36.850" end="00:40:41.720">doesn't really appeal to the graphic design as it also doesn't appeal to the cfo of</p>
+      <p begin="00:40:41.720" end="00:40:45.990">...so we're going to use dot net on amac now you also might expect</p>
+      <p begin="00:40:45.990" end="00:40:47.840">...existing application has</p>
+      <p begin="00:40:47.840" end="00:40:52.560">an existing database not existing database is probably not going to be sequel</p>
+      <p begin="00:40:52.560" end="00:40:57.180">server if I'm talking about a microsystems so it's actually price...</p>
+      <p begin="00:40:57.180" end="00:41:01.550">so I will look here I have progressed instance that has a very simple schema</p>
+      <p begin="00:41:02.610" end="00:41:04.720">a little how to...on-screen...we have work orders and</p>
+      <p begin="00:41:04.720" end="00:41:10.890">...of courses has existing data in it because it's an existing application I can't just go</p>
+      <p begin="00:41:10.890" end="00:41:14.020">on move this database to a sequel server because we're going to do</p>
+      <p begin="00:41:14.020" end="00:41:18.230">and incremental roll-out of the new application so we need to have the existing are</p>
+      <p begin="00:41:18.230" end="00:41:23.780">...application talking to the existing database and down you want talking as well.</p>
+      <p begin="00:41:23.780" end="00:41:28.180">So, this point I want to start writing dot net code on amac using ef to talk to this</p>
+      <p begin="00:41:28.180" end="00:41:30.830">...chris database now the tool I choose here</p>
+      <p begin="00:41:30.830" end="00:41:35.320">is not important the point of this demo is that I can use any framework</p>
+      <p begin="00:41:35.320" end="00:41:40.230">anywhere that I write dot net code I could use visual studio code could be and targeting dot net</p>
+      <p begin="00:41:40.230" end="00:41:45.040">core for me I've actually chosen to use mono develop I'm going to write a</p>
+      <p begin="00:41:45.040" end="00:41:51.470">...front-end that uses the f to talk to that postscript database.</p>
+      <p begin="00:41:51.470" end="00:41:55.120">...the mono develop...which is now...</p>
+      <p begin="00:41:55.120" end="00:42:00.060">you'll see that I've made some progress on this application now obviously need to</p>
+      <p begin="00:42:00.060" end="00:42:04.600">...to talk to high-stress so the guys from the mpg sequel project</p>
+      <p begin="00:42:04.600" end="00:42:09.180">have very...work with this on a very short time frame to build-out or to</p>
+      <p begin="00:42:09.180" end="00:42:13.920">pull the mpg sequel provider across the...seven...now this isn't a demo</p>
+      <p begin="00:42:13.920" end="00:42:18.600">you-can tried home because you notice if...look at my packages.</p>
+      <p begin="00:42:18.600" end="00:42:22.710">A program...to say that on-screen...packages I don't have the entity framework dot mpg</p>
+      <p begin="00:42:22.710" end="00:42:27.210">sequel package installed what I actually have some binary is that the guys on the project</p>
+      <p begin="00:42:27.210" end="00:42:31.790">...provided to me that a link directly into my applications so the package will be coming</p>
+      <p begin="00:42:31.790" end="00:42:37.870">...for the moment just treat this is a preview of what you will be able to do...</p>
+      <p begin="00:42:37.870" end="00:42:41.610">All right so I've got some polka classes here I've got a note I have a work</p>
+      <p begin="00:42:41.610" end="00:42:44.970">...class and I've got the start of a context.</p>
+      <p begin="00:42:46.190" end="00:42:50.240">...this code by now the only thing I have to do is wire up the context</p>
+      <p begin="00:42:50.240" end="00:42:51.250">...my database.</p>
+      <p begin="00:42:52.470" end="00:43:00.070">So, obviously I'm using mpg...provide us so I can do build.</p>
+      <p begin="00:43:00.070" end="00:43:02.000">...this is an extension method I have</p>
+      <p begin="00:43:02.000" end="00:43:09.090">because I have that provider installed I already have my connection string stabbed out there.</p>
+      <p begin="00:43:09.090" end="00:43:09.460">So, now</p>
+      <p begin="00:43:09.460" end="00:43:14.240">...context is hooked up to our postscript database let's just go.</p>
+      <p begin="00:43:14.240" end="00:43:19.230">Look, at some of the code we have in the controller for the main window.</p>
+      <p begin="00:43:19.230" end="00:43:23.900">I guess I should point out at the top I'm creating an instance of the context it's going to live for the duration of the</p>
+      <p begin="00:43:23.900" end="00:43:27.720">window.</p>
+      <p begin="00:43:27.720" end="00:43:30.070">Here I'm using a link query to pullback</p>
+      <p begin="00:43:30.070" end="00:43:36.130">...orders for the user that's currently logged in...is going to be jeff that's login.</p>
+      <p begin="00:43:36.130" end="00:43:41.120">When they...a selects...jeff selects a particular work order</p>
+      <p begin="00:43:41.120" end="00:43:47.130">when...go ahead and use another link query to load the notes flat worker from the database?</p>
+      <p begin="00:43:47.130" end="00:43:52.020">then when the user tries to add another note when they do at another note will create an instance of the note</p>
+      <p begin="00:43:52.020" end="00:44:02.720">class who added to the notes db set and then go ahead and push that out to the database?</p>
+      <p begin="00:44:02.720" end="00:44:07.720">So, we see the...coming up on the screen one of the work...here.</p>
+      <p begin="00:44:07.720" end="00:44:09.320">Is an...una...</p>
+      <p begin="00:44:10.410" end="00:44:13.650">Will say there's a few nights here jeff discussing with</p>
+      <p begin="00:44:13.650" end="00:44:23.100">...suggested that we should just still the...coin that...jeff thinks that's a stupid idea?</p>
+      <p begin="00:44:23.100" end="00:44:29.100">And, then just to...actually working let's go back...quest database.</p>
+      <p begin="00:44:29.100" end="00:44:32.660">Will look at the notes?</p>
+      <p begin="00:44:32.660" end="00:44:39.000">And, we'll see that new comment that I just...written out to the postscript sequel database.</p>
+      <p begin="00:44:39.000" end="00:44:40.130">Yeah, you got samoa.</p>
+      <p begin="00:44:46.960" end="00:44:51.430">Just give me a second I'm going to do something to get...demo.</p>
+      <p begin="00:44:51.430" end="00:44:57.850">Taking over while I talk.</p>
+      <p begin="00:44:57.850" end="00:45:02.130">How many people in the room have seen the unicode click a demo that I've done before</p>
+      <p begin="00:45:02.130" end="00:45:04.090">for af seven?</p>
+      <p begin="00:45:04.090" end="00:45:07.110">...okay you've been missing out</p>
+      <p begin="00:45:07.110" end="00:45:11.920">unique unicode click is this very cool application that unicorns store does because</p>
+      <p begin="00:45:11.920" end="00:45:15.610">...constable wants to cash in on this whole craze of having?</p>
+      <p begin="00:45:15.610" end="00:45:18.880">Very simple not very sophisticated games on...in that</p>
+      <p begin="00:45:18.880" end="00:45:24.210">...occupy quite a lot about time what they want to do is have this picture vienna...flashes up and you click</p>
+      <p begin="00:45:24.210" end="00:45:29.150">as many times as you can in the a lot of time and it keeps track of your scores and it sounds really lame</p>
+      <p begin="00:45:29.150" end="00:45:33.540">...people are going to spend hours when they should be sleeping...picture the unicode</p>
+      <p begin="00:45:33.540" end="00:45:36.710">...and of course when you open the app is going to have some not</p>
+      <p begin="00:45:36.710" end="00:45:44.670">so subtle advertising that says hey like unicorns you should come to our website and check it out.</p>
+      <p begin="00:45:44.670" end="00:45:48.160">Now...department wants to run all platforms so they have</p>
+      <p begin="00:45:48.160" end="00:45:52.240">...heard about this cool product called salmon studio and</p>
+      <p begin="00:45:52.240" end="00:45:54.880">...phones which.</p>
+      <p begin="00:45:54.880" end="00:46:00.130">Should allow us to do just that that's not the one I...this one?</p>
+      <p begin="00:46:00.130" end="00:46:05.470">All right so here is...informs application I'm going to stick on our sex for the moment.</p>
+      <p begin="00:46:05.470" end="00:46:10.520">Just because that seems like the cool thing to do.</p>
+      <p begin="00:46:10.520" end="00:46:14.950">So, I've got unicode click here I have a model I have a game class</p>
+      <p begin="00:46:14.950" end="00:46:16.430">that's.</p>
+      <p begin="00:46:16.430" end="00:46:18.880">A simple game have a context.</p>
+      <p begin="00:46:18.880" end="00:46:23.050">And, then if I go look at the implementation the game pages where actually click the picture of the pretty</p>
+      <p begin="00:46:23.050" end="00:46:24.780">unique on.</p>
+      <p begin="00:46:24.780" end="00:46:27.650">So, if I look through this and...when the game finishes.</p>
+      <p begin="00:46:28.880" end="00:46:33.210">We create...instance of the game object we added to the db</p>
+      <p begin="00:46:33.210" end="00:46:36.200">sedona context and we call save changes.</p>
+      <p begin="00:46:36.200" end="00:46:40.010">And, then we have a school history page here.</p>
+      <p begin="00:46:40.010" end="00:46:43.360">So, I light up the games I want to get the ones with the highest scores</p>
+      <p begin="00:46:43.360" end="00:46:51.240">...to take up to the top five of them and then I go and...to...</p>
+      <p begin="00:46:51.240" end="00:46:59.510">It's kind of fire up in.</p>
+      <p begin="00:46:59.510" end="00:47:03.690">...you why with...not so subtle advertising to visit the unicorns store.</p>
+      <p begin="00:47:03.690" end="00:47:09.910">Will click play we have five seconds to...the unicorns many times as we can twenty-five is</p>
+      <p begin="00:47:09.910" end="00:47:13.920">...code twenty-five was my...school.</p>
+      <p begin="00:47:13.920" end="00:47:18.890">And, of course we can go to the...page in...the data coming back ...entity framework</p>
+      <p begin="00:47:18.890" end="00:47:34.290">sites entity framework running on ios in a dot net app written with them</p>
+      <p begin="00:47:34.290" end="00:47:53.960">Cool all right let's come back online with this guy.</p>
+      <p begin="00:47:53.960" end="00:47:58.590">So, we've got a few minutes left I just want to wrap up by showing you some resources that you can head</p>
+      <p begin="00:47:58.590" end="00:48:03.730">to if you want to learn more about...seven so let's actually</p>
+      <p begin="00:48:03.730" end="00:48:05.830">...and I'll show you some of them...</p>
+      <p begin="00:48:06.910" end="00:48:10.390">We'll look back over to my desktop...so entity framework</p>
+      <p begin="00:48:10.390" end="00:48:15.130">seventies opensource any framework is opensource in six as well used to be on</p>
+      <p begin="00:48:15.130" end="00:48:20.220">...lex the of seventies now and get hub now we're not just open sources and you can look</p>
+      <p begin="00:48:20.220" end="00:48:25.870">at source code but where properly opensource how issue track is public if you</p>
+      <p begin="00:48:25.870" end="00:48:30.640">go out wiki one of the interesting things you'll see here is we actually have design meeting nights?</p>
+      <p begin="00:48:30.640" end="00:48:34.580">Now we've had a bit of a period where we've been pretty light on the design meetings I guess we had one here</p>
+      <p begin="00:48:34.580" end="00:48:36.240">recently.</p>
+      <p begin="00:48:36.240" end="00:48:40.590">When we have design meetings we take notes and we published</p>
+      <p begin="00:48:40.590" end="00:48:42.940">...for people to give feedback on so</p>
+      <p begin="00:48:42.940" end="00:48:47.480">we're kind of inviting you into the development cycle before we even get to writing any code so,</p>
+      <p begin="00:48:47.480" end="00:48:55.030">here we're talking about layout of code when we do reverse engineering from existing database?</p>
+      <p begin="00:48:55.030" end="00:48:57.740">At this stage this is also the place you want to go to for</p>
+      <p begin="00:48:57.740" end="00:49:01.230">getting started information on have seven so you want to get started using the</p>
+      <p begin="00:49:01.230" end="00:49:05.730">...seven in a traditional dot application you would come here and tell you what</p>
+      <p begin="00:49:05.730" end="00:49:11.570">release you should use and how to get started and all those things too?</p>
+      <p begin="00:49:11.570" end="00:49:16.750">Should also mention way open-source and we do except contributions obviously we have a</p>
+      <p begin="00:49:16.750" end="00:49:21.690">fairly stringent process for code reviews and we expect you to write unit test and everything too so we're not just</p>
+      <p begin="00:49:21.690" end="00:49:24.760">accept any change that people want to give us what we are</p>
+      <p begin="00:49:24.760" end="00:49:31.230">open-source we do except contributions into the product and we have had a few great contributions from the community?</p>
+      <p begin="00:49:31.230" end="00:49:35.290">If you're not quite so interested in getting involved at that level but you want</p>
+      <p begin="00:49:35.290" end="00:49:39.800">...I more about aef seven than this link is on the slide but it's</p>
+      <p begin="00:49:39.800" end="00:49:46.040">...dot microsoft slash about aef seven.</p>
+      <p begin="00:49:46.040" end="00:49:49.730">...that one.</p>
+      <p begin="00:49:49.730" end="00:49:53.160">Which...to a page?</p>
+      <p begin="00:49:53.160" end="00:49:57.260">We have a link to have seven is but then also a series of blog</p>
+      <p begin="00:49:57.260" end="00:50:01.330">posts and other information we've done what you can dig into the new features that are coming</p>
+      <p begin="00:50:01.330" end="00:50:07.350">...seven and changes to the core analyze types of things there.</p>
+      <p begin="00:50:07.350" end="00:50:13.190">Don't worry about remembering all these urls are in the powerpoint for the dec</p>
+      <p begin="00:50:13.190" end="00:50:17.700">The other thing that you might be interested in is the demos I show looking at the code actually use to do</p>
+      <p begin="00:50:17.700" end="00:50:19.640">than so.</p>
+      <p begin="00:50:19.640" end="00:50:23.990">...minded have account.</p>
+      <p begin="00:50:23.990" end="00:50:25.620">Zooming for your again so you can see roughly</p>
+      <p begin="00:50:25.620" end="00:50:29.430">...again links in the decks that are about eating at the dec online afterwards</p>
+      <p begin="00:50:29.430" end="00:50:32.340">but my get have account has the unicorns still code on</p>
+      <p begin="00:50:32.340" end="00:50:36.770">it and you'll see here I have the completed source from the demo we have</p>
+      <p begin="00:50:36.770" end="00:50:48.460">the source code for everything we looked at here online.</p>
+      <p begin="00:50:48.460" end="00:50:53.320">All right there's everything I just showed you link on the slide so actually wrapped up with a few minutes</p>
+      <p begin="00:50:53.320" end="00:50:57.510">...space about time to take a couple of questions if you have questions and...just a step up to</p>
+      <p begin="00:50:57.510" end="00:51:00.030">the mike and probably just time to take</p>
+      <p begin="00:51:00.030" end="00:51:09.990">to questions so if someone wants to jump up and ask a question please go ahead.</p>
+      <p begin="00:51:09.990" end="00:51:16.450">You can ask...repay, yeah.</p>
+      <p begin="00:51:16.450" end="00:51:18.280">Question was is doesn't make any sense to have an</p>
+      <p begin="00:51:18.280" end="00:51:21.910">...data...for entity framework seven.</p>
+      <p begin="00:51:21.910" end="00:51:26.780">Not short something we've actually talked about it is interesting because often with our data you're getting data from a</p>
+      <p begin="00:51:26.780" end="00:51:31.720">database using any framework anyway so...provide on top of it it's not something up team is probably going to</p>
+      <p begin="00:51:31.720" end="00:51:43.450">implement but it is something that somebody else I could say outside about team working on in the future.</p>
+      <p begin="00:51:43.450" end="00:51:48.160">Our question was...to support inheritance folks may have seen...now announcement</p>
+      <p begin="00:51:48.160" end="00:51:53.620">...up until now we've said things like inheritance is not supported we had a stage where</p>
+      <p begin="00:51:53.620" end="00:51:58.460">transactions once supported but they are now supported so yes inheritance is actually a work-in-progress</p>
+      <p begin="00:51:58.460" end="00:52:01.000">...current code base actually some of the api</p>
+      <p begin="00:52:01.000" end="00:52:05.340">...data in the beta for bits that are available online now but,</p>
+      <p begin="00:52:05.340" end="00:52:12.600">it's not wide...throughout the stack so inheritance is coming it's just not...quiet.</p>
+      <p begin="00:52:12.600" end="00:52:16.750">What we implementing at the moment is a subset of what was in fsix I'm not sure that we're</p>
+      <p begin="00:52:16.750" end="00:52:21.750">going to build everything that was there and fsix into the stack because one of the things we don't want to do</p>
+      <p begin="00:52:21.750" end="00:52:24.940">support although like insanely crazy mappings you could</p>
+      <p begin="00:52:24.940" end="00:52:28.300">...but certainly a lot of the patents you can do any of six will be</p>
+      <p begin="00:52:28.300" end="00:52:33.020">supported gone is their way to generate models and different projects is...what sorry</p>
+      <p begin="00:52:33.020" end="00:52:37.500">...way to generate models and different projects to make models of different if</p>
+      <p begin="00:52:37.500" end="00:52:40.240">...firsts yep and if...generate the models</p>
+      <p begin="00:52:40.240" end="00:52:44.950">...right...yet so can ef make models for you projects</p>
+      <p begin="00:52:44.950" end="00:52:50.040">in different projects so do you want to classes spread throughout different projects...just one of</p>
+      <p begin="00:52:50.040" end="00:52:55.440">...for example, if...them and...the attributes yep whatever...them...windows</p>
+      <p begin="00:52:55.440" end="00:52:59.740">phone windows...I...use the attributes ride so you could put your</p>
+      <p begin="00:52:59.740" end="00:53:04.910">model your model can be in a different assembly if that's what you're asking...different projects you can do</p>
+      <p begin="00:53:04.910" end="00:53:11.570">...portable class library that has your project in it your model in it you could also across</p>
+      <p begin="00:53:11.570" end="00:53:15.210">...want to have attributes and you could put attributes and put some</p>
+      <p begin="00:53:15.210" end="00:53:19.460">compiler logic around them to strip them out what I would recommend doing that if you want to</p>
+      <p begin="00:53:19.460" end="00:53:23.660">have your model available on a platform that doesn't support attributes is just to you configuration using the</p>
+      <p begin="00:53:23.660" end="00:53:30.260">...api because that is available everywhere yep?</p>
+      <p begin="00:53:30.260" end="00:53:35.080">In app database first approach in the entity framework serving</p>
+      <p begin="00:53:35.080" end="00:53:38.900">...and will be will support abuse?</p>
+      <p begin="00:53:38.900" end="00:53:40.390">Question is will database</p>
+      <p begin="00:53:40.390" end="00:53:43.860">...generating from existing database support views in...seven.</p>
+      <p begin="00:53:44.880" end="00:53:49.700">It doesn't at the moment it would be extremely easy...in we're still.</p>
+      <p begin="00:53:49.700" end="00:53:51.770">We're still playing around the process at the moment it's just a</p>
+      <p begin="00:53:51.770" end="00:53:56.350">command line process and it's kind of an all-or-nothing thing you point of the database that generates for your</p>
+      <p begin="00:53:56.350" end="00:54:00.730">tables we're going to buildyou wireless kind of like what you're used to</p>
+      <p begin="00:54:00.730" end="00:54:05.270">...six-point-one...you can like pointed existing database pick the views and tables you</p>
+      <p begin="00:54:05.270" end="00:54:10.950">want I can't see any reason we would not include views in that dialogue and the ability to select</p>
+      <p begin="00:54:10.950" end="00:54:13.650">them...to take one more question, yeah.</p>
+      <p begin="00:54:14.790" end="00:54:16.600">You can select the view</p>
+      <p begin="00:54:16.600" end="00:54:21.220">the each has some problems that detecting the primary key</p>
+      <p begin="00:54:21.220" end="00:54:25.300">...so the question was it has when you selective view at the moment</p>
+      <p begin="00:54:25.300" end="00:54:28.990">in reverse engineer we generally just make every property in the view the primary</p>
+      <p begin="00:54:28.990" end="00:54:32.420">...we...be doing that when we do reverse engineering</p>
+      <p begin="00:54:32.420" end="00:54:38.060">...seven happen the reverse engineer processes completely new thing and we'll do something sensible</p>
+      <p begin="00:54:38.060" end="00:54:41.840">...seven that fsix is great but.</p>
+      <p begin="00:54:41.840" end="00:54:51.800">All right I mean the thank you very much free time I'm going to ask you to.</p>
+      <p begin="00:54:51.800" end="00:54:55.570">Filling out session evaluations is extremely useful to us it helps us get better</p>
+      <p begin="00:54:55.570" end="00:55:00.650">it's because so please take the time to fill went out for this and the other session to attend thanks.</p>
+
+    </div>
+  </body>
+</tt>

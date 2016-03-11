@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.915</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.420" end="00:00:06.790">All right so I guess we're going to goes five o'clock</p>
+      <p begin="00:00:06.790" end="00:00:12.190">and I know there's a free beverages after this so I'm sure everybody is</p>
+      <p begin="00:00:12.190" end="00:00:17.180">had a long day lots of interesting sessions and is that you to kinda get on to</p>
+      <p begin="00:00:17.180" end="00:00:24.220">something more fun so I'll try to make this hopefully as interesting as possible?</p>
+      <p begin="00:00:24.220" end="00:00:26.140">So, my name is chris patterson and</p>
+      <p begin="00:00:26.140" end="00:00:30.980">...the program manager on the visual studio cloud services team which is kind of</p>
+      <p begin="00:00:30.980" end="00:00:36.460">fancy name for all of the various developer services plus t fs that we work</p>
+      <p begin="00:00:36.460" end="00:00:41.480">in the developer division at microsoft and I look after team build and the build</p>
+      <p begin="00:00:41.480" end="00:00:45.950">service on a visual studio online and I've been doing that for about.</p>
+      <p begin="00:00:47.010" end="00:00:52.380">Two-and-a-half years now so, before we get started on a quick show</p>
+      <p begin="00:00:52.380" end="00:00:57.060">of hands of who uses team build today anybody used to</p>
+      <p begin="00:00:57.060" end="00:01:04.330">...while a lot of people okay how many lovett.</p>
+      <p begin="00:01:04.330" end="00:01:06.460">Awesome that's good so.</p>
+      <p begin="00:01:07.850" end="00:01:11.360">Hopefully what I have to show you will make you like it a lot more than</p>
+      <p begin="00:01:11.360" end="00:01:21.000">you currently do and then over time we can make you actually enjoy working with it.</p>
+      <p begin="00:01:21.000" end="00:01:24.980">I do ask that you submit a.</p>
+      <p begin="00:01:24.980" end="00:01:29.840">...evaluation of the session afterwards so there's a price drawing in their</p>
+      <p begin="00:01:29.840" end="00:01:36.850">secure code and I'm sure you can find in your build apple where to go submit the evaluations.</p>
+      <p begin="00:01:36.850" end="00:01:39.660">All right so.</p>
+      <p begin="00:01:39.660" end="00:01:43.230">...quick...so I've got some kind of a</p>
+      <p begin="00:01:43.230" end="00:01:47.980">real quick intro and, we're talking about why we've done a lot of stuff</p>
+      <p begin="00:01:47.980" end="00:01:51.920">we've done I've got a whole bunch of demos and then some sort</p>
+      <p begin="00:01:51.920" end="00:01:56.710">of nitty-gritty details on architecture and things like that and if we finish up and,</p>
+      <p begin="00:01:56.710" end="00:02:07.960">have time obviously some queuing?</p>
+      <p begin="00:02:07.960" end="00:02:13.210">All right...with my big reveal all right so this is</p>
+      <p begin="00:02:13.210" end="00:02:18.200">visual studio online I'll be doing all my demos there and this is what's listed as the</p>
+      <p begin="00:02:18.200" end="00:02:23.110">build-up preview tab if...download the rc yet which you probably habits</p>
+      <p begin="00:02:23.110" end="00:02:29.150">of just came out you'll see this in the on from...just list of this way and then</p>
+      <p begin="00:02:29.150" end="00:02:33.360">in a couple of weeks you will see this also in your accounts envisions to</p>
+      <p begin="00:02:33.360" end="00:02:38.300">do online so one of the bigger differences obviously as I can now create a</p>
+      <p begin="00:02:38.300" end="00:02:40.370">build definition of the web.</p>
+      <p begin="00:02:40.370" end="00:02:45.170">Which is so, I no longer have to go and open up visual</p>
+      <p begin="00:02:45.170" end="00:02:49.480">studio...just going to build definition and for certainly cross platform developers</p>
+      <p begin="00:02:49.480" end="00:02:54.740">...a big deal additionally you'll notice that the build definition is a lot simpler than</p>
+      <p begin="00:02:54.740" end="00:02:59.870">it used to be so what I'm going to do is go and grab my?</p>
+      <p begin="00:02:59.870" end="00:03:05.630">Little consul application here and we'll just stick to build that solution</p>
+      <p begin="00:03:05.630" end="00:03:09.150">will save it or my cool.</p>
+      <p begin="00:03:09.150" end="00:03:14.160">Stuff.</p>
+      <p begin="00:03:14.160" end="00:03:19.050">You'll notice...actually popped up and ask me for commentwhich is a nice thing that we</p>
+      <p begin="00:03:19.050" end="00:03:23.920">did used to have dedicated to it and we're presented with</p>
+      <p begin="00:03:23.920" end="00:03:26.730">...quite different screen than we used to</p>
+      <p begin="00:03:26.730" end="00:03:32.040">...so one thing that is hopefully obvious years them was is gone?</p>
+      <p begin="00:03:32.040" end="00:03:34.890">Within this system so there's no windows workflow there's no</p>
+      <p begin="00:03:34.890" end="00:03:40.790">giant's able template to edit just...set up a build definition you put</p>
+      <p begin="00:03:40.790" end="00:03:45.390">together pretty simple sequential list of steps that just run various tools and</p>
+      <p begin="00:03:45.390" end="00:03:49.270">...and go from there so now we see the agents picked up the building</p>
+      <p begin="00:03:49.270" end="00:03:53.120">we're actually getting real time live consul output</p>
+      <p begin="00:03:53.120" end="00:03:58.790">from the agent running on a machine somewhere manager at this point.</p>
+      <p begin="00:03:58.790" end="00:04:04.330">So, anyway, so, there's a quick and dirty how you create a new build definition.</p>
+      <p begin="00:04:04.330" end="00:04:05.140">All right so.</p>
+      <p begin="00:04:07.930" end="00:04:09.250">There are lots of other questions</p>
+      <p begin="00:04:09.250" end="00:04:18.050">I'm sure later so that's a quick intro to the new experience.</p>
+      <p begin="00:04:18.050" end="00:04:24.660">So, one of the things that you it's obviously there is it's completely new</p>
+      <p begin="00:04:24.660" end="00:04:29.780">there is no shared code with the current system ...side-by-side with the current</p>
+      <p begin="00:04:29.780" end="00:04:34.380">ammo based ...in fact you see the language in the...you'll see</p>
+      <p begin="00:04:34.380" end="00:04:37.100">...build for what was currently</p>
+      <p begin="00:04:37.100" end="00:04:41.160">...build the current as of well yesterday and then</p>
+      <p begin="00:04:41.160" end="00:04:45.470">just build definitions for what we have going forward and</p>
+      <p begin="00:04:45.470" end="00:04:51.640">is a big change what we had a lot of reasons as to why we have to go that way so?</p>
+      <p begin="00:04:51.640" end="00:04:54.580">...like I said I've been doing this...a while now</p>
+      <p begin="00:04:54.580" end="00:04:58.960">...a lot of conversations with a lot of different customers and these are sort of some of the, you know,</p>
+      <p begin="00:04:58.960" end="00:05:03.950">things I get on a regular basis so like so I just...run a script after I run</p>
+      <p begin="00:05:03.950" end="00:05:07.560">...build how hard could that possibly be</p>
+      <p begin="00:05:07.560" end="00:05:12.620">...who's customized example template knows it's very difficult so that's we</p>
+      <p begin="00:05:12.620" end="00:05:19.470">...fix that next one is hey you have integration with insert tool or service here whatever</p>
+      <p begin="00:05:19.470" end="00:05:23.500">your tool of the day scripting language build tool...your</p>
+      <p begin="00:05:23.500" end="00:05:28.040">cloud service whatever and the answer almost always was no because that</p>
+      <p begin="00:05:28.040" end="00:05:32.950">company who wanted to do that had to go learn very specific domain specific language</p>
+      <p begin="00:05:32.950" end="00:05:37.890">and build the ll that hopefully was...to give the right...of assemblies and then</p>
+      <p begin="00:05:37.890" end="00:05:42.470">ship that to you somehow and then give you an explanation of here's how you go insert that</p>
+      <p begin="00:05:42.470" end="00:05:44.480">in your workflow template and some</p>
+      <p begin="00:05:44.480" end="00:05:51.910">did are certainly some companies of the but it was very difficult and we wanted to make that process a lot better.</p>
+      <p begin="00:05:51.910" end="00:05:55.910">Can I build my ios and android apps...dvs anybody struggling with</p>
+      <p begin="00:05:55.910" end="00:06:00.370">this now anybody doing ios android development and actually needs to build on say</p>
+      <p begin="00:06:00.370" end="00:06:05.680">...can't do it ok so we wanted to fix that?</p>
+      <p begin="00:06:05.680" end="00:06:09.800">The next one was what about my java app...a lot of the customers...lot of people who</p>
+      <p begin="00:06:09.800" end="00:06:14.600">...to fs they write big enterprise java apps or something</p>
+      <p begin="00:06:14.600" end="00:06:15.100">yeltsin.</p>
+      <p begin="00:06:16.250" end="00:06:19.600">You I could say well so golan microsoft build.</p>
+      <p begin="00:06:19.600" end="00:06:20.920">First.</p>
+      <p begin="00:06:20.920" end="00:06:25.260">And, then...integrate adding kind of a strange way and then,</p>
+      <p begin="00:06:25.260" end="00:06:29.750">yeah, you can kind of build your job...but it's not native right it doesn't feel right to them</p>
+      <p begin="00:06:29.750" end="00:06:40.240">...of this weird tool that if your java developer you don't want to go...misspelled it's not something you work on.</p>
+      <p begin="00:06:40.240" end="00:06:43.870">This is always a fun one so I get this every single release</p>
+      <p begin="00:06:43.870" end="00:06:49.930">it's also I created a new build definition based on that new template.</p>
+      <p begin="00:06:49.930" end="00:06:54.920">we still use twenty twelve or twenty ten or whatever was so I've got a make sure everybody has the latest release</p>
+      <p begin="00:06:54.920" end="00:06:58.240">of visual studio just at the build template.</p>
+      <p begin="00:06:58.240" end="00:07:04.030">Yep, sorry what happens when you serialized...object...and stored on a server than</p>
+      <p begin="00:07:04.030" end="00:07:08.590">try to do serialized later and maybe some of those types aren't there.</p>
+      <p begin="00:07:08.590" end="00:07:10.740">So, we had to fix that.</p>
+      <p begin="00:07:10.740" end="00:07:15.710">And, then this one this one's actually kind of close to my heart because as you saw we have a nice</p>
+      <p begin="00:07:15.710" end="00:07:17.910">...consul view right that</p>
+      <p begin="00:07:17.910" end="00:07:22.350">...build blog it's exactly the same thing you would see if you ran that to on the</p>
+      <p begin="00:07:22.350" end="00:07:27.070">command line or...know...the output of your tool into a text document</p>
+      <p begin="00:07:27.070" end="00:07:32.030">right it is the log you would expect to see it isn't sort of a weird mash up of</p>
+      <p begin="00:07:32.030" end="00:07:36.990">an xml tree which has bits and pieces of the output you expect to see which makes it</p>
+      <p begin="00:07:36.990" end="00:07:43.080">very difficult to debug when something goes wrong and that happens and build a lot.</p>
+      <p begin="00:07:43.080" end="00:07:46.370">And, then the final one which is</p>
+      <p begin="00:07:46.370" end="00:07:50.160">...sure somebody said this experience open example simple for the first-time.</p>
+      <p begin="00:07:51.200" end="00:07:53.430">You're kidding right.</p>
+      <p begin="00:07:53.430" end="00:07:55.040">So, anyway, so,</p>
+      <p begin="00:07:55.040" end="00:08:00.610">there's a lot of just the interactions that I've had personally with customers and</p>
+      <p begin="00:08:00.610" end="00:08:05.250">internal folks etc on using team build and.</p>
+      <p begin="00:08:05.250" end="00:08:08.960">For better for some people do like it obviously is very powerful but</p>
+      <p begin="00:08:08.960" end="00:08:14.780">are certainly going forward it is something we wanted to improve on as we set out to</p>
+      <p begin="00:08:14.780" end="00:08:19.540">kind of build this new version I put some pretty strong principles of</p>
+      <p begin="00:08:19.540" end="00:08:23.760">...the team one of the big ones my number one was I don't want to create another</p>
+      <p begin="00:08:23.760" end="00:08:29.110">build dsl there's lots of them out there they're great ones out there is</p>
+      <p begin="00:08:29.110" end="00:08:34.210">...build might be great but is there our shell people single like writing builds</p>
+      <p begin="00:08:34.210" end="00:08:41.010">empower shell on the across platforms side you might use grail for android development or</p>
+      <p begin="00:08:41.010" end="00:08:44.710">x code build for ios development or enter maven or any</p>
+      <p begin="00:08:44.710" end="00:08:50.670">one of a dozen others but the point is that is your...that should be your</p>
+      <p begin="00:08:50.670" end="00:08:55.620">build you can run that on your machine you can open up a command prompt you could open up your</p>
+      <p begin="00:08:55.620" end="00:09:01.390">id...you can run your build when you sort of abstract away from that which is kind of what happens with the same</p>
+      <p begin="00:09:01.390" end="00:09:06.030">...have this other dsl now this windows workflow example language that you</p>
+      <p begin="00:09:06.030" end="00:09:10.950">have to learn which abstracts you away in makes it very difficult to run your build on your</p>
+      <p begin="00:09:10.950" end="00:09:12.550">machineso,</p>
+      <p begin="00:09:12.550" end="00:09:16.280">I wanted to change that sort of overall premise we have to</p>
+      <p begin="00:09:16.280" end="00:09:21.700">support on windows platforms natively we must have a native across platforms story and we have that and</p>
+      <p begin="00:09:21.700" end="00:09:25.100">we will take a look at that I want to have</p>
+      <p begin="00:09:25.100" end="00:09:30.080">...intentional extensibility model meaning some very straightforward way for</p>
+      <p begin="00:09:30.080" end="00:09:34.720">you or some tool vendor or the community to create</p>
+      <p begin="00:09:34.720" end="00:09:39.150">a new tool run or task for the system and deliberate</p>
+      <p begin="00:09:39.150" end="00:09:45.160">...a way that you can install into your server...make use of very easily and then that last one</p>
+      <p begin="00:09:45.160" end="00:09:49.370">is my little pet peeves about the log.</p>
+      <p begin="00:09:49.370" end="00:09:53.550">So, anyway, those are some of the basics of why we started in how we</p>
+      <p begin="00:09:53.550" end="00:10:00.190">went about it so before I kinda go in and.</p>
+      <p begin="00:10:00.190" end="00:10:06.070">And, talk about the details of how...some of the more interesting ones I'm going-to.</p>
+      <p begin="00:10:06.070" end="00:10:11.560">Just go through some demos.</p>
+      <p begin="00:10:11.560" end="00:10:15.920">We kind of already saw the file new build my solution...state will take a little bit of a deeper</p>
+      <p begin="00:10:15.920" end="00:10:20.710">look at...what we did there so I said I my basic consul out</p>
+      <p begin="00:10:20.710" end="00:10:26.870">...go back and look at the build summary nothing particularly interesting on this one.</p>
+      <p begin="00:10:26.870" end="00:10:32.130">But, let's just go at...add something to it so that script example I gave well I</p>
+      <p begin="00:10:32.130" end="00:10:35.540">want to add running a batch script so on-the-go and pull</p>
+      <p begin="00:10:35.540" end="00:10:40.430">up this gallery of plug-in that we have a lot of interesting ones there.</p>
+      <p begin="00:10:40.430" end="00:10:42.580">Will pick the batch script?</p>
+      <p begin="00:10:42.580" end="00:10:44.490">One here close.</p>
+      <p begin="00:10:44.490" end="00:10:46.980">Simply move that up and say you...to run that just after</p>
+      <p begin="00:10:46.980" end="00:10:50.470">tess run and then I want to go pick.</p>
+      <p begin="00:10:50.470" end="00:10:55.650">The subscript that I've got in here.</p>
+      <p begin="00:10:55.650" end="00:11:00.550">again, very simple easy to set up I could add additional arguments there is a fair</p>
+      <p begin="00:11:00.550" end="00:11:06.950">bit of inline help here so, hopefully it's easy for you guys to get going and,</p>
+      <p begin="00:11:06.950" end="00:11:12.910">work with and there's a few other tabs we can walk through just to kinda get an idea of experience so that's</p>
+      <p begin="00:11:12.910" end="00:11:17.800">kind of adding a new step to your build click over</p>
+      <p begin="00:11:17.800" end="00:11:22.180">there is repository so here</p>
+      <p begin="00:11:22.180" end="00:11:26.250">there's a few interesting things listed so there's get obviously because</p>
+      <p begin="00:11:26.250" end="00:11:30.480">this is a get team project within visual studio online if you...in atf</p>
+      <p begin="00:11:30.480" end="00:11:34.700">...project you would see appropriate options there we also have</p>
+      <p begin="00:11:34.700" end="00:11:39.740">...support built-in forget hub that...will see when this goes live on the service</p>
+      <p begin="00:11:39.740" end="00:11:44.580">that's pretty cool because actually integrates with the web books and get hub so you get ci</p>
+      <p begin="00:11:44.580" end="00:11:52.940">for projects on get hub in visual studio online so that's something that's interesting to you.</p>
+      <p begin="00:11:52.940" end="00:11:56.620">Variables so this is another kind of one of those nice things</p>
+      <p begin="00:11:56.620" end="00:12:00.410">I've lots of times...I have this variable or this</p>
+      <p begin="00:12:00.410" end="00:12:05.340">password where this password we need to use during the build but what I put it so,</p>
+      <p begin="00:12:05.340" end="00:12:07.420">we fix that problem.</p>
+      <p begin="00:12:07.420" end="00:12:08.880">So, you say my password.</p>
+      <p begin="00:12:10.190" end="00:12:16.440">And, then we'll just puta few whatever here...icon enroll market out as a</p>
+      <p begin="00:12:16.440" end="00:12:22.900">lapses and now that is stored encrypted at rest on the server so,</p>
+      <p begin="00:12:22.900" end="00:12:25.850">you don't have to worry about...by getting it and when it's actually running</p>
+      <p begin="00:12:25.850" end="00:12:28.810">and decrepit runtime we do everything we can to mask</p>
+      <p begin="00:12:28.810" end="00:12:33.180">...log so it shouldn't be so somebody could always there's always a way to</p>
+      <p begin="00:12:33.180" end="00:12:36.500">copy a file somewhere but at least in the normal course of usage</p>
+      <p begin="00:12:36.500" end="00:12:39.770">...these things are well reasonably well secured?</p>
+      <p begin="00:12:41.520" end="00:12:46.780">Another big interesting change that people vast for...is, you know,</p>
+      <p begin="00:12:46.780" end="00:12:50.450">I've got to build definition set-up and I wanted</p>
+      <p begin="00:12:50.450" end="00:12:54.770">to have multiple triggers who has a problem you've got like at least two different</p>
+      <p begin="00:12:54.770" end="00:12:59.200">build definitions that do exactly the same thing that you need to keep in sake but one is scheduled in</p>
+      <p begin="00:12:59.200" end="00:13:03.860">...ci raise your hand right, yeah, that's a huge...so we</p>
+      <p begin="00:13:03.860" end="00:13:09.810">fix that and now I can set up and say because this is get I so we know what I want</p>
+      <p begin="00:13:09.810" end="00:13:14.750">include master and then I'm going to include everything that is like rafts.</p>
+      <p begin="00:13:14.750" end="00:13:16.250">Heads.</p>
+      <p begin="00:13:16.250" end="00:13:20.290">Star or feature.</p>
+      <p begin="00:13:20.290" end="00:13:23.740">Star so I want to make sure that.</p>
+      <p begin="00:13:23.740" end="00:13:26.560">Every time a feature branches...and gets the same</p>
+      <p begin="00:13:26.560" end="00:13:31.080">build definition just starts getting built obvious ci so that's kinda nice and, you know,</p>
+      <p begin="00:13:31.080" end="00:13:32.490">what I want to build to go off it</p>
+      <p begin="00:13:32.490" end="00:13:37.600">three-m let's say eastern standard time for master and then, you know,</p>
+      <p begin="00:13:37.600" end="00:13:40.420">...the fleet the and</p>
+      <p begin="00:13:40.420" end="00:13:46.880">then I'd also like one to go off at three am ...on top</p>
+      <p begin="00:13:46.880" end="00:13:51.350">one I don't know tokyo standard time whatever so with</p>
+      <p begin="00:13:51.350" end="00:13:54.530">the new flexibility here I can have ci on multiple branches</p>
+      <p begin="00:13:54.530" end="00:13:57.570">in the same definition I can also have multiple trigger set</p>
+      <p begin="00:13:57.570" end="00:14:02.390">up for multiple different timezones schedules on the same definition</p>
+      <p begin="00:14:02.390" end="00:14:10.090">so gives a huge amount of flexibility capability to your organization into your developers?</p>
+      <p begin="00:14:10.090" end="00:14:15.170">And, of course popping up asking for comment.</p>
+      <p begin="00:14:15.170" end="00:14:20.400">Donovan favorite feature.</p>
+      <p begin="00:14:20.400" end="00:14:24.020">All right so but, that save.</p>
+      <p begin="00:14:24.020" end="00:14:29.800">Go over to the next...so other general information here.</p>
+      <p begin="00:14:29.800" end="00:14:34.800">This is kind of what you...sort of just kind of hold all for settings but there's some other so</p>
+      <p begin="00:14:34.800" end="00:14:37.780">nice things here so listed here I actually have to</p>
+      <p begin="00:14:37.780" end="00:14:42.710">...other listed we'll get into what pools are here a little bit later</p>
+      <p begin="00:14:42.710" end="00:14:46.230">...which fool I want my build qtwo I put some descriptions</p>
+      <p begin="00:14:46.230" end="00:14:50.960">build number format used to that this thing here is really</p>
+      <p begin="00:14:50.960" end="00:14:55.940">interesting so does anybody work in an organization where they sort</p>
+      <p begin="00:14:55.940" end="00:15:00.720">of worry about the fact that the build agent is running...a process that</p>
+      <p begin="00:15:00.720" end="00:15:05.000">has pretty broad access to your...service right you run unit</p>
+      <p begin="00:15:05.000" end="00:15:09.770">test and that it can connect up so we fix that.</p>
+      <p begin="00:15:09.770" end="00:15:11.710">So, the way this works is</p>
+      <p begin="00:15:11.710" end="00:15:16.790">the build agent connects to your pool and on the server</p>
+      <p begin="00:15:16.790" end="00:15:20.920">...a credential the whatever the service account is running as only has to</p>
+      <p begin="00:15:20.920" end="00:15:26.190">permissions to listen to that pool that's it so it's a very low set and then we generate a</p>
+      <p begin="00:15:26.190" end="00:15:30.100">time bomb token at runtime that is either project</p>
+      <p begin="00:15:30.100" end="00:15:34.960">collection scoped meaning that token has access to all of the sort of data within the</p>
+      <p begin="00:15:34.960" end="00:15:39.250">project collection or project scoped so you can actually say hey this token can only read</p>
+      <p begin="00:15:39.250" end="00:15:44.200">stuff rewrites of out of this team project and it's not available generally</p>
+      <p begin="00:15:44.200" end="00:15:46.540">...environment for processes that are executing</p>
+      <p begin="00:15:46.540" end="00:15:51.670">so there's really no straightforward way for somebody to say write a unit test that then</p>
+      <p begin="00:15:51.670" end="00:15:56.510">...connection goes back into something of various so we've really tried to sandbox a lot of things</p>
+      <p begin="00:15:56.510" end="00:16:02.460">there to make that just better for you overall.</p>
+      <p begin="00:16:02.460" end="00:16:07.150">Timeouts pretty straightforward...infinite you can set this is a for hung builds</p>
+      <p begin="00:16:07.150" end="00:16:13.900">right if you want to say hey if the build ever runs more than an hour something's wrong to join killer for me.</p>
+      <p begin="00:16:13.900" end="00:16:18.780">Badge enabled this kinda goes with the get...thing...so you can get that little badge like if</p>
+      <p begin="00:16:18.780" end="00:16:22.760">you're doing ci from via so you have been...a little badge there and then the list of</p>
+      <p begin="00:16:22.760" end="00:16:27.710">demands, demands are there are two let-you control</p>
+      <p begin="00:16:27.710" end="00:16:32.520">which agents in your system can run particular build definition</p>
+      <p begin="00:16:32.520" end="00:16:37.700">so you might be from the tags...my use agent tags kind of in the system the, yeah,</p>
+      <p begin="00:16:37.700" end="00:16:42.300">there they've got some interesting problems because of the way the controller potentially schedules work on the</p>
+      <p begin="00:16:42.300" end="00:16:43.620">agents?</p>
+      <p begin="00:16:43.620" end="00:16:48.620">...the nice thing here is all this is handle by the server...much more complex you can say hey</p>
+      <p begin="00:16:48.620" end="00:16:53.310">...a value exist orders a name exist or doesn't even equal value so you have</p>
+      <p begin="00:16:53.310" end="00:16:57.980">more flexibility and you can use these demands to make sure like certain sets build</p>
+      <p begin="00:16:57.980" end="00:17:02.890">definitions are built on certain agents this is kind of useful if you want to say you have a pool of</p>
+      <p begin="00:17:02.890" end="00:17:08.580">ten agents and you want to...of say you keep a set of them hot for a particular</p>
+      <p begin="00:17:08.580" end="00:17:13.750">...of definitions so you want to make sure that one definition always runs on one set of</p>
+      <p begin="00:17:13.750" end="00:17:17.490">agent so the work spaces or the repositories already synched...</p>
+      <p begin="00:17:18.510" end="00:17:20.890">For you so it's kinda...</p>
+      <p begin="00:17:21.970" end="00:17:28.340">Retention policies we we've heard a lot of people that struggle</p>
+      <p begin="00:17:28.340" end="00:17:33.520">with the number based retention policy...have that problem.</p>
+      <p begin="00:17:33.520" end="00:17:34.230">The fact like</p>
+      <p begin="00:17:34.230" end="00:17:39.100">...my builds after ten kind of a pain so we changed it in this</p>
+      <p begin="00:17:39.100" end="00:17:43.440">one-on-one obvious to be here broad feedback on this one people start using it but now it's database so</p>
+      <p begin="00:17:43.440" end="00:17:47.100">you basically say hey I want to delete builds that are</p>
+      <p begin="00:17:47.100" end="00:17:52.390">older the next days again you have the same sort of filtering capability for branches you</p>
+      <p begin="00:17:52.390" end="00:17:56.990">can say hey branches that are feature branches I...to keep those around for like two</p>
+      <p begin="00:17:56.990" end="00:18:01.220">days for master we want ten for release maybe we want.</p>
+      <p begin="00:18:01.220" end="00:18:04.110">Whatever right.</p>
+      <p begin="00:18:04.110" end="00:18:08.890">The other thing you can do is the administrator on your server can sort of set of total maximum retention</p>
+      <p begin="00:18:08.890" end="00:18:15.670">policy that helps and keep it clean so this make sure that drops are cleaned up in the server data</p>
+      <p begin="00:18:15.670" end="00:18:19.920">...cleaned up so you don't have people retaining builds forever unless they mark</p>
+      <p begin="00:18:19.920" end="00:18:24.410">...explicitly mark them as retain forever.</p>
+      <p begin="00:18:24.410" end="00:18:28.100">That's retention policies and then the last one here.</p>
+      <p begin="00:18:28.100" end="00:18:32.230">Is auditing history so it's</p>
+      <p begin="00:18:32.230" end="00:18:35.440">been a common request to be able to see what changed your build definition</p>
+      <p begin="00:18:36.460" end="00:18:41.440">so-if you want-to see what changed you can just click on it and, sort of see the</p>
+      <p begin="00:18:41.440" end="00:18:50.020">...view of what change the who change that?</p>
+      <p begin="00:18:50.020" end="00:18:54.170">So, anyway, so, those are some of the...the</p>
+      <p begin="00:18:54.170" end="00:19:00.490">...lights we...some more interesting stuff just of like how to.</p>
+      <p begin="00:19:00.490" end="00:19:05.160">We've taken looked a lot of these come from the user...so I think six or</p>
+      <p begin="00:19:05.160" end="00:19:10.360">seven of the features we added are very high on the user voice request for team build so I think</p>
+      <p begin="00:19:10.360" end="00:19:16.470">we've done a lot to improve that all right so that's kind of the basic</p>
+      <p begin="00:19:16.470" end="00:19:21.280">build my solution basic definition.</p>
+      <p begin="00:19:21.280" end="00:19:24.380">The next one I want to talk about is deployment.</p>
+      <p begin="00:19:25.670" end="00:19:31.270">So, I have this ...in the forget...</p>
+      <p begin="00:19:31.270" end="00:19:36.260">And, measure real quick.</p>
+      <p begin="00:19:36.260" end="00:19:42.490">How many of you try to use the current sort-of continuous deployment stuff from via so?</p>
+      <p begin="00:19:42.490" end="00:19:48.560">Yeah, it's works nice for small stuff but quickly.</p>
+      <p begin="00:19:48.560" end="00:19:55.160">Runs into problems if you have anything more complicated so earlier today I have this app</p>
+      <p begin="00:19:55.160" end="00:20:00.270">that I deployed and it's a it's a really simple wanted not terribly interesting but it does</p>
+      <p begin="00:20:00.270" end="00:20:04.590">have to websites try to deploy to websites from the same repository in the</p>
+      <p begin="00:20:04.590" end="00:20:09.660">build definition the by successfully done that?</p>
+      <p begin="00:20:09.660" end="00:20:11.340">Anyway, so,</p>
+      <p begin="00:20:11.340" end="00:20:16.440">this morning or I set up a build definition does exactly that.</p>
+      <p begin="00:20:16.440" end="00:20:20.460">So, right here I've got a normal build solution we just</p>
+      <p begin="00:20:20.460" end="00:20:23.850">built my solution and then I just added another invocation of</p>
+      <p begin="00:20:23.850" end="00:20:27.670">microsoft build to just package up the website...it puts the command lines</p>
+      <p begin="00:20:27.670" end="00:20:33.730">...say hey generate a web deploys that forming and put it in this location so if you.</p>
+      <p begin="00:20:33.730" end="00:20:37.910">...a zoom...maybe in this a little bit.</p>
+      <p begin="00:20:37.910" end="00:20:40.160">So, I go here and look at the end.</p>
+      <p begin="00:20:41.180" end="00:20:45.500">There is a just a variable package location this variable we call</p>
+      <p begin="00:20:45.500" end="00:20:49.560">build staging directory which is well-known variable...system can also web so that puts</p>
+      <p begin="00:20:49.560" end="00:20:52.640">it there and then can...so api?</p>
+      <p begin="00:20:53.680" end="00:20:57.300">Puts it into different location which is which is kinda nice</p>
+      <p begin="00:20:57.300" end="00:21:01.540">...was really simple to go setups and I have to websites well how do I want to</p>
+      <p begin="00:21:01.540" end="00:21:04.870">...that...nice thing is you have.</p>
+      <p begin="00:21:04.870" end="00:21:08.600">...different options so.</p>
+      <p begin="00:21:08.600" end="00:21:13.360">Right here you'll see I've added the as your website deployment task is one of these tasks</p>
+      <p begin="00:21:13.360" end="00:21:15.850">that's built in and.</p>
+      <p begin="00:21:15.850" end="00:21:18.400">Here list the as your subscription</p>
+      <p begin="00:21:18.400" end="00:21:23.670">that I want to use for it and I give it some other parameters well one of the other</p>
+      <p begin="00:21:23.670" end="00:21:28.210">sort of challenges we had with the previous system was in people generally had</p>
+      <p begin="00:21:28.210" end="00:21:30.910">...to...your from an automated system is how do I do</p>
+      <p begin="00:21:30.910" end="00:21:34.910">with the credentials right I've got either the certificate file I need to</p>
+      <p begin="00:21:34.910" end="00:21:38.930">deal with or if you're kind of more forward your using</p>
+      <p begin="00:21:38.930" end="00:21:42.220">...or the staff and you've got like a user that</p>
+      <p begin="00:21:42.220" end="00:21:47.160">you created a service principle you created your...active directory to handle automated stuff how do I</p>
+      <p begin="00:21:47.160" end="00:21:50.930">do with that so we actually added support.</p>
+      <p begin="00:21:50.930" end="00:21:55.480">Into the system for something which is called service connections and there's a few different</p>
+      <p begin="00:21:55.480" end="00:21:57.660">ones so right now there's as</p>
+      <p begin="00:21:57.660" end="00:22:01.830">your chef and then generic what the as you're one when you</p>
+      <p begin="00:22:01.830" end="00:22:06.660">break it up you just give it some information you can get your subscription id the</p>
+      <p begin="00:22:06.660" end="00:22:11.560">subscription name the certificate or credentials right,</p>
+      <p begin="00:22:11.560" end="00:22:12.680">you know, you use the ad as</p>
+      <p begin="00:22:12.680" end="00:22:18.270">your account you can put in the credentials this does that exact same thing in fact.</p>
+      <p begin="00:22:18.270" end="00:22:21.510">What this task that's here does?</p>
+      <p begin="00:22:21.510" end="00:22:24.130">Is it just runs our shell?</p>
+      <p begin="00:22:24.130" end="00:22:28.830">So, is anybody using the as your our shell...for managing their</p>
+      <p begin="00:22:30.220" end="00:22:35.080">I love it I think it's great it's easy to automate it's easy to work with.</p>
+      <p begin="00:22:35.080" end="00:22:38.670">So, what we've done is this as your</p>
+      <p begin="00:22:38.670" end="00:22:42.520">service connection feature what it does in the system is it just simply registers that</p>
+      <p begin="00:22:42.520" end="00:22:47.360">...subscription on the machine as part of the automation then you can just run whatever our</p>
+      <p begin="00:22:47.360" end="00:22:51.780">shell you want to in this case we've got a canned our shell script</p>
+      <p begin="00:22:52.880" end="00:22:57.290">that is actually you can see it because all of the tasks that are listed here or on</p>
+      <p begin="00:22:57.290" end="00:23:00.660">...hub and...open-source you can see them</p>
+      <p begin="00:23:00.660" end="00:23:06.460">we should make it much easier to debug or to...the future</p>
+      <p begin="00:23:06.460" end="00:23:10.730">...just a camtasia our shell script right there?</p>
+      <p begin="00:23:10.730" end="00:23:14.910">That sets up the connection you pick the website location website name which</p>
+      <p begin="00:23:14.910" end="00:23:21.200">package and go it runs the deployment and then I just a second one right there.</p>
+      <p begin="00:23:21.200" end="00:23:24.990">In fact if you wanted to go a little more complicated for not complicated but a little</p>
+      <p begin="00:23:24.990" end="00:23:29.660">more full featured and you had your own deployment script.</p>
+      <p begin="00:23:29.660" end="00:23:33.890">That-you, that-you would written empower show you can simply just drop on the casual our</p>
+      <p begin="00:23:33.890" end="00:23:35.040">...task and.</p>
+      <p begin="00:23:36.080" end="00:23:40.720">Again, pick your subscription that you want to use that's register with the system and</p>
+      <p begin="00:23:40.720" end="00:23:46.090">then whatever scripts checked...source control so if you've already developed your app whatever it is</p>
+      <p begin="00:23:46.090" end="00:23:51.690">and you have a our shell script that deploys your application it's very easy to integrate those</p>
+      <p begin="00:23:51.690" end="00:23:57.620">for sort of this nice continuous deployment system.</p>
+      <p begin="00:23:57.620" end="00:23:59.370">All right.</p>
+      <p begin="00:23:59.370" end="00:24:04.500">So, that's how we're trying to make continuous deployment ...little more awesome</p>
+      <p begin="00:24:04.500" end="00:24:11.420">would go run these...take like three minutes four minutes to run...not as interesting.</p>
+      <p begin="00:24:11.420" end="00:24:14.090">So, the next thing that everybody asks me is</p>
+      <p begin="00:24:14.090" end="00:24:18.040">so I deployed my app and I would really love to smoke...</p>
+      <p begin="00:24:18.040" end="00:24:22.990">Right I want to do some sort of...it with a web...just...web and point to make sure</p>
+      <p begin="00:24:22.990" end="00:24:27.820">it up and running right now the problem so.</p>
+      <p begin="00:24:27.820" end="00:24:31.130">We've added into the system.</p>
+      <p begin="00:24:31.130" end="00:24:36.310">...so the by...with the...testing service and visually online...by use it</p>
+      <p begin="00:24:36.310" end="00:24:40.460">...ok so we actually have great integration without as well.</p>
+      <p begin="00:24:40.460" end="00:24:45.270">So, coming here with the system or task for just running cloud load tests</p>
+      <p begin="00:24:45.270" end="00:24:51.180">in this particular case just go ahead and q this guy real quick.</p>
+      <p begin="00:24:51.180" end="00:24:55.590">This is a cloud mode test the just what they call it</p>
+      <p begin="00:24:56.670" end="00:25:03.000">...quick protest and basically all it does.</p>
+      <p begin="00:25:03.000" end="00:25:07.890">You give it a url that you want the...tessa hit you give the user load and</p>
+      <p begin="00:25:07.890" end="00:25:12.280">...duration and they'll just kind of generate a web...low test on-the-fly in their system</p>
+      <p begin="00:25:12.280" end="00:25:19.160">for you but just...that url so you can see here it's...got sources and</p>
+      <p begin="00:25:19.160" end="00:25:25.510">it's now streaming data back and eventually it will finish up and</p>
+      <p begin="00:25:25.510" end="00:25:28.570">we'll be able to see the results we take a look at</p>
+      <p begin="00:25:28.570" end="00:25:33.410">minute so I could have taken this task pretty easily just...it to the end of</p>
+      <p begin="00:25:33.410" end="00:25:37.690">my build and I would have the ability to run a load test</p>
+      <p begin="00:25:37.690" end="00:25:44.090">...very straightforward as part of my continuous deployment build.</p>
+      <p begin="00:25:44.090" end="00:25:51.930">All right so that's continuous deployment becoming more awesome.</p>
+      <p begin="00:25:51.930" end="00:25:54.460">And, if you...donovan...your have...</p>
+      <p begin="00:25:55.620" end="00:26:02.210">Ok, so, there's a session not was a...</p>
+      <p begin="00:26:02.210" end="00:26:05.470">So, there's session cross platform...deliver if you didn't go to that you</p>
+      <p begin="00:26:05.470" end="00:26:09.400">watch the video there's stuff that's going to make it even better and</p>
+      <p begin="00:26:09.400" end="00:26:14.230">...future updates coming to via so into...</p>
+      <p begin="00:26:14.230" end="00:26:16.050">So, I was basically</p>
+      <p begin="00:26:16.050" end="00:26:20.920">...one-x the other thing I wanted to show you that's pretty cool about this is so,</p>
+      <p begin="00:26:20.920" end="00:26:25.770">by default this task is going to look and say okay I know I'm attached to a</p>
+      <p begin="00:26:25.770" end="00:26:30.640">via so account so I know I can just run a...low test right because it's part of my via so account what if</p>
+      <p begin="00:26:30.640" end="00:26:35.550">you're using dvs right you've got to have us on from would be nice to potentially take advantage of the</p>
+      <p begin="00:26:35.550" end="00:26:38.750">clobbered testing service integrated in will so you see here</p>
+      <p begin="00:26:38.750" end="00:26:42.590">this advanced section in there which is poorly name within...fix that but</p>
+      <p begin="00:26:42.590" end="00:26:47.820">basically what you could do here is you can give it a url for your via so account and</p>
+      <p begin="00:26:47.820" end="00:26:52.880">some credentials and it will use that to connect up in q upper cloud</p>
+      <p begin="00:26:52.880" end="00:26:56.900">...whatever up so even if you're on param you can use the cloud low</p>
+      <p begin="00:26:56.900" end="00:27:00.300">testy service to test your...from your on from server are</p>
+      <p begin="00:27:00.300" end="00:27:04.810">all integrates together really nicely there's a bunch of other stuff so if I kinda go</p>
+      <p begin="00:27:04.810" end="00:27:07.060">look here.</p>
+      <p begin="00:27:07.060" end="00:27:09.640">...some of the other test tasks so,</p>
+      <p begin="00:27:09.640" end="00:27:13.590">there's ones for actually deploying the test...</p>
+      <p begin="00:27:13.590" end="00:27:18.590">multiple boxes and running distributed tests obviously regular visual studio test</p>
+      <p begin="00:27:18.590" end="00:27:21.650">...test carbon which will get here in a minute and,</p>
+      <p begin="00:27:21.650" end="00:27:25.020">more will show up over time so this system is really extensible</p>
+      <p begin="00:27:25.020" end="00:27:32.330">is very easy for us to add features to it in help you take advantage...</p>
+      <p begin="00:27:32.330" end="00:27:36.040">All right so what's next.</p>
+      <p begin="00:27:36.040" end="00:27:48.670">What's go over here and take a look at.</p>
+      <p begin="00:27:48.670" end="00:27:50.970">Okay, so.</p>
+      <p begin="00:27:50.970" end="00:27:54.600">Here I have my...</p>
+      <p begin="00:27:54.600" end="00:27:56.140">And, I've got the cross</p>
+      <p begin="00:27:56.140" end="00:28:01.650">platform agent running as part of our commitment to</p>
+      <p begin="00:28:01.650" end="00:28:05.660">making sure we can build everything you need to we have an agent that is written</p>
+      <p begin="00:28:05.660" end="00:28:11.550">...node js that is also open-source that runs on other platforms</p>
+      <p begin="00:28:11.550" end="00:28:16.460">non windows platforms so we actually I had a guy set one up on raspberry</p>
+      <p begin="00:28:16.460" end="00:28:20.810">pi I thought that was really interesting not sure raspberry...be the best villager but</p>
+      <p begin="00:28:20.810" end="00:28:25.860">...I've seen we've got some people that deployment doctor containers but one of the things</p>
+      <p begin="00:28:25.860" end="00:28:29.480">we want to do and we'll do coastguard...is actually put out a</p>
+      <p begin="00:28:29.480" end="00:28:34.060">doctor container imager base image with our agent on it so if you're using</p>
+      <p begin="00:28:34.060" end="00:28:39.130">doctor you can easily spin up agents on your linux machines of course it runs</p>
+      <p begin="00:28:39.130" end="00:28:44.170">fine automatic which is what I have it running here and that's also available and get up there.</p>
+      <p begin="00:28:44.170" end="00:28:48.720">But, anyway, Iusing the new template just the vary basic right here x</p>
+      <p begin="00:28:48.720" end="00:28:53.790">code build template that we ship out-of-the-box I set of my</p>
+      <p begin="00:28:53.790" end="00:28:57.650">build for this little ios application and,</p>
+      <p begin="00:28:57.650" end="00:29:05.860">the tests as well now in this particular deployment test publishing is not there.</p>
+      <p begin="00:29:05.860" end="00:29:10.130">Oops sorry honey to pick the.</p>
+      <p begin="00:29:10.130" end="00:29:12.230">Pick the right pool are the hosted</p>
+      <p begin="00:29:12.230" end="00:29:18.220">pool does not all so that was actually interesting that I should have shown that to you will show it later.</p>
+      <p begin="00:29:18.220" end="00:29:23.250">It actually the pop-up came up...from...this build to a</p>
+      <p begin="00:29:23.250" end="00:29:28.160">pool that didn't have any machines that was that were available had no maxim apple...just the hosted</p>
+      <p begin="00:29:28.160" end="00:29:33.000">...that only has windows machines currently so, that's kinda how the demands work so this particular</p>
+      <p begin="00:29:33.000" end="00:29:37.470">...definition demands x code all of the agents...a bunch of capabilities</p>
+      <p begin="00:29:37.470" end="00:29:41.960">of what they can do so the system tries to make sure that you don't inadvertently</p>
+      <p begin="00:29:41.960" end="00:29:48.510">...a build to an agent that can't handle it so-if iq this guy up.</p>
+      <p begin="00:29:48.510" end="00:29:50.620">Can bring up the?</p>
+      <p begin="00:29:50.620" end="00:29:52.640">Low-energy here just to show it's real and</p>
+      <p begin="00:29:52.640" end="00:29:55.930">you can see the agent running starting the build.</p>
+      <p begin="00:29:55.930" end="00:30:00.860">Running through building rx code project next code test</p>
+      <p begin="00:30:00.860" end="00:30:06.930">what we decided to do and now tester probably up in launching of course on the simulator?</p>
+      <p begin="00:30:06.930" end="00:30:10.200">So, that was my testnot super interesting behave</p>
+      <p begin="00:30:10.200" end="00:30:15.660">there we actually by default...you...exes tool which is</p>
+      <p begin="00:30:15.660" end="00:30:19.270">...utility that actually facebook develops it gives</p>
+      <p begin="00:30:19.270" end="00:30:24.430">you much prettier consul output and also will publish your</p>
+      <p begin="00:30:24.430" end="00:30:26.400">x code test results to...</p>
+      <p begin="00:30:26.400" end="00:30:31.280">a format which we now natively understanding can import into the test</p>
+      <p begin="00:30:31.280" end="00:30:35.880">just results system so you get...complete integration of that build run unit</p>
+      <p begin="00:30:35.880" end="00:30:42.870">tasks with your iowa's builds now as well.</p>
+      <p begin="00:30:42.870" end="00:30:47.310">So,...moving through pretty quick.</p>
+      <p begin="00:30:47.310" end="00:30:53.710">All right so let's go back to here.</p>
+      <p begin="00:30:53.710" end="00:30:57.320">Right so...okay so what do we do we've got.</p>
+      <p begin="00:30:57.320" end="00:31:01.270">Building a solution we've taken care of a bunch of the difficulties hey you</p>
+      <p begin="00:31:01.270" end="00:31:04.330">want to run a script you want to add something...bill that's easy</p>
+      <p begin="00:31:04.330" end="00:31:08.110">your multiple schedules multiple triggers your history.</p>
+      <p begin="00:31:08.110" end="00:31:13.480">Better retention policies lots of significant improvements.</p>
+      <p begin="00:31:13.480" end="00:31:20.440">So, that should that should make things really nice but what if you want to sort of take full</p>
+      <p begin="00:31:20.440" end="00:31:25.660">advantage of other services remember I talked about a...have integration with service</p>
+      <p begin="00:31:25.660" end="00:31:31.090">x well one of the things that you will see that's not sure if it's been announced</p>
+      <p begin="00:31:31.090" end="00:31:33.980">by...or not but.</p>
+      <p begin="00:31:33.980" end="00:31:38.060">We have done work with salmon and, they did a lot of work to integrate</p>
+      <p begin="00:31:38.060" end="00:31:42.520">...make building examine base steps really easy and this new system so this is</p>
+      <p begin="00:31:42.520" end="00:31:47.270">an example of examine android app and it actually there's,</p>
+      <p begin="00:31:47.270" end="00:31:53.280">there's also a template zimmer dot android zimmer dot ios right here for setting</p>
+      <p begin="00:31:53.280" end="00:31:56.680">up and it just sets up in builds my basic solution</p>
+      <p begin="00:31:57.690" end="00:32:01.560">it takes care of things like...nicely...actually will work with our hosted build</p>
+      <p begin="00:32:01.560" end="00:32:06.010">services well so when you use the...build system with the hosted pool you can</p>
+      <p begin="00:32:06.010" end="00:32:10.910">...did all of this...tools are pre installed there and we will keep them up to date along with</p>
+      <p begin="00:32:10.910" end="00:32:15.850">...so you can actually start taking advantage of even that service with your examine windows</p>
+      <p begin="00:32:15.850" end="00:32:20.560">android apps we don't have maxima hosted...pool yet we'll see</p>
+      <p begin="00:32:20.560" end="00:32:26.920">over time if that happens but really simply you set up...your salmon license you have to</p>
+      <p begin="00:32:26.920" end="00:32:31.390">activates...license activation is right there integrated...you don't have to do any funky stuff on</p>
+      <p begin="00:32:31.390" end="00:32:35.590">the build machine you just put in whatever the account appropriate account is for license</p>
+      <p begin="00:32:35.590" end="00:32:40.350">activation we build restore new get packages</p>
+      <p begin="00:32:40.350" end="00:32:41.990">...imis build.</p>
+      <p begin="00:32:41.990" end="00:32:48.470">And, then the salmon test cloud and here it here are actually win up</p>
+      <p begin="00:32:48.470" end="00:32:52.690">all I had to do was go up in this...test crowding create</p>
+      <p begin="00:32:52.690" end="00:32:57.300">...right how to create and app and, it gives me all of the information</p>
+      <p begin="00:32:57.300" end="00:33:00.470">will be a tutorial coming out on thisbut,</p>
+      <p begin="00:33:00.470" end="00:33:05.310">I just put in my api key which again is nicely stored here</p>
+      <p begin="00:33:05.310" end="00:33:10.040">as a hidden secret variables so we don't see that?</p>
+      <p begin="00:33:10.040" end="00:33:14.230">Given the device I...which...tell where the test assemblies</p>
+      <p begin="00:33:14.230" end="00:33:18.740">are and, it's going to go ahead and take care that for me so I can go</p>
+      <p begin="00:33:18.740" end="00:33:23.310">...this build and this one does really take a little while because.</p>
+      <p begin="00:33:23.310" end="00:33:26.930">It's doing a bunch of stuff but...it's done.</p>
+      <p begin="00:33:28.320" end="00:33:31.420">And, you go up and look at.</p>
+      <p begin="00:33:31.420" end="00:33:33.710">...test...account you can</p>
+      <p begin="00:33:33.710" end="00:33:38.100">see right here all of the nice test details I can look at this particular</p>
+      <p begin="00:33:38.100" end="00:33:42.840">...which are ran early this morning gives me this really nice kind of</p>
+      <p begin="00:33:42.840" end="00:33:48.850">view as to what failed I can click in here and I can see that ok so I</p>
+      <p begin="00:33:48.850" end="00:33:57.100">had a failed step here so...want to do is...and via so.</p>
+      <p begin="00:33:57.100" end="00:33:59.880">For my.</p>
+      <p begin="00:33:59.880" end="00:34:02.880">For my failure so.</p>
+      <p begin="00:34:02.880" end="00:34:07.400">Complete integration into nc we set up and run we can run your</p>
+      <p begin="00:34:07.400" end="00:34:10.810">...we can run your tests by integrating well with the</p>
+      <p begin="00:34:10.810" end="00:34:15.410">salmon test cloud on multiple different devices of different types different form factors</p>
+      <p begin="00:34:15.410" end="00:34:19.200">different west versions and then when you get failures is really easy to</p>
+      <p begin="00:34:19.200" end="00:34:24.980">pipe that data back into your software development process and via so by just simply logging a bug so,</p>
+      <p begin="00:34:24.980" end="00:34:32.920">really trying...build-out that ecosystem in and make your tools easier for you to use?</p>
+      <p begin="00:34:32.920" end="00:34:36.850">So, that's our...integration so current is going through</p>
+      <p begin="00:34:36.850" end="00:34:42.890">and activating license and will finish that up at some point?</p>
+      <p begin="00:34:42.890" end="00:34:46.430">And, then finally.</p>
+      <p begin="00:34:46.430" end="00:34:48.280">Are we talked a bit about the</p>
+      <p begin="00:34:48.280" end="00:34:53.190">java so in here I've got a little to do list which is a java app</p>
+      <p begin="00:34:53.190" end="00:34:57.750">it just runs maven because that's what I used to build this java app but the other thing</p>
+      <p begin="00:34:57.750" end="00:35:03.580">here listed is published results and currently and</p>
+      <p begin="00:35:03.580" end="00:35:08.220">...was animal if I want to run some other unit test framework right I've got</p>
+      <p begin="00:35:08.220" end="00:35:12.540">to...either...for the visual studio test runner system</p>
+      <p begin="00:35:12.540" end="00:35:15.900">are kinda somehow get it jerry rigged in and then I've got</p>
+      <p begin="00:35:15.900" end="00:35:19.900">to figure out how to turn the xml from that test framework into this</p>
+      <p begin="00:35:19.900" end="00:35:24.620">...thing which is a very interesting format as well to get it kind of published up so I get</p>
+      <p begin="00:35:24.620" end="00:35:29.400">...nice integration well with this new extensibility model system</p>
+      <p begin="00:35:29.400" end="00:35:33.960">we actually were opening that up to make it a lot easier so here?</p>
+      <p begin="00:35:33.960" end="00:35:36.180">You can see I've got support for easily publishing</p>
+      <p begin="00:35:36.180" end="00:35:41.610">...test results from a...xml and unit xml vs</p>
+      <p begin="00:35:41.610" end="00:35:46.610">test tr x of course and then x unit...is coming up shortly so it</p>
+      <p begin="00:35:46.610" end="00:35:50.590">makes it very easy for you to basically take enron whatever test framework you</p>
+      <p begin="00:35:50.590" end="00:35:57.200">wantbecause almost all of them whether it's mocha or I don't know what cucumber</p>
+      <p begin="00:35:57.200" end="00:36:02.720">or some other sort of interesting test framework for some other platform.</p>
+      <p begin="00:36:02.720" end="00:36:08.680">All of them pretty much boil down to generating j unit and unit actually</p>
+      <p begin="00:36:08.680" end="00:36:14.730">for us it's crx but it makes it very easy to integrate those things in so you can</p>
+      <p begin="00:36:14.730" end="00:36:21.280">publish those test results and of course when they run if I go back and actually look at one of these builds.</p>
+      <p begin="00:36:21.280" end="00:36:24.280">Right on the summary page I...list of all of the test results</p>
+      <p begin="00:36:24.280" end="00:36:28.160">there I see of course the commits I...click on that it's going to open</p>
+      <p begin="00:36:28.160" end="00:36:31.490">...this test run for me and the test</p>
+      <p begin="00:36:31.490" end="00:36:36.230">run explore in via so now instead of having...visual studio and...actually give</p>
+      <p begin="00:36:36.230" end="00:36:41.060">me some nice analysis and details of what happened in that test run and what</p>
+      <p begin="00:36:41.060" end="00:36:46.480">...what failed etc very easily?</p>
+      <p begin="00:36:46.480" end="00:36:50.890">All right so that is.</p>
+      <p begin="00:36:50.890" end="00:36:55.520">Kind of the just of what we built right it's</p>
+      <p begin="00:36:55.520" end="00:36:59.950">much more extensible it's much more open should be much simpler and</p>
+      <p begin="00:36:59.950" end="00:37:04.550">should be very leave the our in your hands to work with largely</p>
+      <p begin="00:37:04.550" end="00:37:12.020">the tools the frameworks languages you want to work with but we're just going to run it?</p>
+      <p begin="00:37:12.020" end="00:37:16.300">All right so.</p>
+      <p begin="00:37:16.300" end="00:37:22.260">Go back to powerpoint and talk about some of the details.</p>
+      <p begin="00:37:22.260" end="00:37:26.710">We already talked about node to build dsl.</p>
+      <p begin="00:37:26.710" end="00:37:31.320">Right so this is kind of this is actually you'll notice the...today's a little bit different than this</p>
+      <p begin="00:37:31.320" end="00:37:35.650">one I took the screenshot a couple months ago but</p>
+      <p begin="00:37:35.650" end="00:37:40.450">it is broad set of various different technologies...will continue to grow</p>
+      <p begin="00:37:40.450" end="00:37:44.280">from both from us I don't know if you saw when I had it up there was one</p>
+      <p begin="00:37:44.280" end="00:37:47.810">for deploying to chef there's a darker task in there so,</p>
+      <p begin="00:37:47.810" end="00:37:53.740">really making...available to integrate with the tools that you use today.</p>
+      <p begin="00:37:53.740" end="00:38:00.430">So, by tag line...don't make me learn yours just run mine.</p>
+      <p begin="00:38:00.430" end="00:38:03.710">Native cross platform.</p>
+      <p begin="00:38:03.710" end="00:38:07.800">...js based the agent that runs on macro</p>
+      <p begin="00:38:07.800" end="00:38:12.380">...linux...primarily retested on a...to so...over</p>
+      <p begin="00:38:12.380" end="00:38:17.310">time will keep testing on other frameworks but basically runs wherever node runs.</p>
+      <p begin="00:38:17.310" end="00:38:21.260">So, far we that's been pretty good we have lots out-of-the-box</p>
+      <p begin="00:38:21.260" end="00:38:25.350">sport for common technologies that you use on various different</p>
+      <p begin="00:38:26.850" end="00:38:31.640">...platform frameworks of course it's open-source so you can go see it</p>
+      <p begin="00:38:31.640" end="00:38:35.400">...will be taking contributions if you sofeel</p>
+      <p begin="00:38:35.400" end="00:38:42.740">...to fix a barbour implement a feature.</p>
+      <p begin="00:38:42.740" end="00:38:45.940">...extensibility...first thing</p>
+      <p begin="00:38:45.940" end="00:38:50.930">...first-place I focus on extensibility is you saw it really easy to add a task to say</p>
+      <p begin="00:38:50.930" end="00:38:52.280">run a script.</p>
+      <p begin="00:38:52.280" end="00:38:56.480">Right hey run our shell script...command script run some random</p>
+      <p begin="00:38:56.480" end="00:39:00.860">...that integrate with we set a whole bunch of environment variables for</p>
+      <p begin="00:39:00.860" end="00:39:06.220">you to make it easy to get information like what's the build number what's the what's the</p>
+      <p begin="00:39:06.220" end="00:39:10.700">agent name what is the...the...fs url if that's something you want</p>
+      <p begin="00:39:10.700" end="00:39:15.530">to know...a lot of those things are set...environment variables so makes easy to</p>
+      <p begin="00:39:15.530" end="00:39:20.700">grab from your script we monitor exit codes and we even have</p>
+      <p begin="00:39:20.700" end="00:39:26.670">some formats that you can use to send other information the system to update the build number</p>
+      <p begin="00:39:26.670" end="00:39:29.810">two log progress to write...</p>
+      <p begin="00:39:29.810" end="00:39:34.670">order to publishing artifact so-if you want-to say run a script that create some file</p>
+      <p begin="00:39:34.670" end="00:39:38.130">that-you...then have uploaded to the drop for...there's a</p>
+      <p begin="00:39:38.130" end="00:39:43.020">very easy command we call it that you can which is just a standard out string</p>
+      <p begin="00:39:43.020" end="00:39:49.610">...you can pass to say hey publish this file as part of the drop for me will take care of it?</p>
+      <p begin="00:39:49.610" end="00:39:55.170">However, if you do want to do some extensibility or integrate some service</p>
+      <p begin="00:39:55.170" end="00:39:59.650">the model is basically a json file with a script that</p>
+      <p begin="00:39:59.650" end="00:40:04.610">you create a zip from...upload it to the server and that's automatically distributed to</p>
+      <p begin="00:40:04.610" end="00:40:09.100">all the agents right so it's very straightforward in fact the</p>
+      <p begin="00:40:09.100" end="00:40:14.640">agents themselves sort of auto update...same mechanism so as...agent</p>
+      <p begin="00:40:14.640" end="00:40:19.580">...get published to the service or your server the updates all the agency your build</p>
+      <p begin="00:40:19.580" end="00:40:24.030">lab automatically restart themselves and update themselves to the latest bits</p>
+      <p begin="00:40:24.030" end="00:40:30.580">...you from having to go out to a hundred build machines and go install them.</p>
+      <p begin="00:40:30.580" end="00:40:35.080">All of our tasks or open-source out there we</p>
+      <p begin="00:40:35.080" end="00:40:40.070">figured out the contribution model for that yet because sort of the list in the get have repo as</p>
+      <p begin="00:40:40.070" end="00:40:45.650">or shipping in the box there's talk on obvious</p>
+      <p begin="00:40:45.650" end="00:40:52.300">so extensibility...extensibility as well coming up that will smith is doing.</p>
+      <p begin="00:40:52.300" end="00:40:56.740">I think you should if you're interested in that you should go to that because while</p>
+      <p begin="00:40:56.740" end="00:40:59.760">...specific extensibility for the tasks</p>
+      <p begin="00:40:59.760" end="00:41:04.360">are is what it is the way you packaging deliver those</p>
+      <p begin="00:41:04.360" end="00:41:09.250">for consumption will be very heavily obviously based on that whole extensibility model so that will be interesting for</p>
+      <p begin="00:41:09.250" end="00:41:14.050">...as that comes around...as I mentioned the implementation</p>
+      <p begin="00:41:15.330" end="00:41:19.960">right now is on the windows side you implement your task is partial...</p>
+      <p begin="00:41:19.960" end="00:41:23.970">So, you can you can just you throw our...script maybe have some command let's in a</p>
+      <p begin="00:41:23.970" end="00:41:27.050">...just put those in the zip file and there</p>
+      <p begin="00:41:27.050" end="00:41:32.290">you go and you can run that you havewe give you access to something called the</p>
+      <p begin="00:41:32.290" end="00:41:36.020">distribute task context which has a bunch of other data and methods on</p>
+      <p begin="00:41:36.020" end="00:41:41.170">it you can use for doing sort of more interesting integrations and you can do from just a...script and,</p>
+      <p begin="00:41:41.170" end="00:41:46.220">then on the job on the across platforms size actually javascript.</p>
+      <p begin="00:41:46.220" end="00:41:50.630">Some interesting ...about whether or not we kind of sort of unify</p>
+      <p begin="00:41:50.630" end="00:41:56.720">all that around probably javascript but we'll see over time.</p>
+      <p begin="00:41:56.720" end="00:42:01.580">Of course don't hide your log look I just want to see what out what the output is there so,</p>
+      <p begin="00:42:01.580" end="00:42:07.470">I can I can be but my problem.</p>
+      <p begin="00:42:07.470" end="00:42:11.170">So, z...actually try to...for...controllers.</p>
+      <p begin="00:42:12.290" end="00:42:16.000">Anybody have problems the fact that...control only...collection,</p>
+      <p begin="00:42:17.310" end="00:42:20.790">yeah, so, we fix that.</p>
+      <p begin="00:42:20.790" end="00:42:25.700">So, architecturally new build stuff run side-by-side was able builds that means when you upgrade</p>
+      <p begin="00:42:25.700" end="00:42:30.370">to...fs twenty fifteen all your controllers keep on working even your twenty ten</p>
+      <p begin="00:42:30.370" end="00:42:34.290">controllers keep working so, those are there if you happen to have some twenty ten</p>
+      <p begin="00:42:34.290" end="00:42:38.930">controllers force building on windows xp which is primarily why people have those departing</p>
+      <p begin="00:42:38.930" end="00:42:43.160">you're twenty twelve controllers keep working and the...twenty thirteen</p>
+      <p begin="00:42:43.160" end="00:42:47.550">...keep working and then of course you can add new twenty fifteen ones...twenty fifteen</p>
+      <p begin="00:42:47.550" end="00:42:55.000">ones if you like to but they're still there so we didn't break anything from that perspective.</p>
+      <p begin="00:42:55.000" end="00:42:57.980">However, with the new system.</p>
+      <p begin="00:42:57.980" end="00:43:02.070">We significantly change the way it works we got rid of that physical</p>
+      <p begin="00:43:02.070" end="00:43:06.310">comptroller agent model on the surface that's kind of</p>
+      <p begin="00:43:06.310" end="00:43:10.570">a nice model for certain things but it brings up a lot of problems like if I have the single</p>
+      <p begin="00:43:10.570" end="00:43:15.510">controller in the primary way I connect to tf sss of the collection you sort end up</p>
+      <p begin="00:43:15.510" end="00:43:20.330">with one-to-one mapping you also...problem of the controller's not highly...anybody</p>
+      <p begin="00:43:20.330" end="00:43:25.940">lost controller that's got like fifty agents on it a whole bunch of builds running and they all get killed,</p>
+      <p begin="00:43:25.940" end="00:43:29.680">yeah, that's a huge pay so we fix that problem.</p>
+      <p begin="00:43:29.680" end="00:43:31.490">So, agents work.</p>
+      <p begin="00:43:31.490" end="00:43:35.820">In pool's pools are defined at the deployment level so</p>
+      <p begin="00:43:35.820" end="00:43:40.160">...to fs server with a bunch of applications years if you're using...highly available</p>
+      <p begin="00:43:40.160" end="00:43:44.510">...you can go to the server control panel and all pop over to</p>
+      <p begin="00:43:44.510" end="00:43:49.970">machine and show you that you can define multiple pools administrator can by the</p>
+      <p begin="00:43:49.970" end="00:43:56.530">fault the team foundation administrators the sort of server admins have access to create</p>
+      <p begin="00:43:56.530" end="00:44:01.470">pools there's a group you can be added to that gives you the ability to create</p>
+      <p begin="00:44:01.470" end="00:44:05.810">pools at the server level but nothing else so, you know,</p>
+      <p begin="00:44:05.810" end="00:44:09.160">longer have to give somebody kind of pretty high privileges just to manage the</p>
+      <p begin="00:44:09.160" end="00:44:12.740">build machines further once you create a...you</p>
+      <p begin="00:44:12.740" end="00:44:18.420">could actually assign administrators at the pool level so you if you're work on</p>
+      <p begin="00:44:18.420" end="00:44:22.030">...adamantly fs and you've got a bunch of different teams you want to give them different</p>
+      <p begin="00:44:22.030" end="00:44:26.980">pools you can assign somebody from that team the ability to administer that pool and only that</p>
+      <p begin="00:44:26.980" end="00:44:32.420">pool so they can add agents...move edge to it manage that but they can't do anything else with it so the</p>
+      <p begin="00:44:32.420" end="00:44:38.630">security...for the management a whole lot better and the x as I mentioned the agents rx copy deployed</p>
+      <p begin="00:44:38.630" end="00:44:43.380">...auto updated from the server so basically you there's a button on the</p>
+      <p begin="00:44:43.380" end="00:44:47.050">adnan page where you download the agent uns of the file you run a</p>
+      <p begin="00:44:47.050" end="00:44:51.120">...script configure it it's up and running and from then on</p>
+      <p begin="00:44:51.120" end="00:44:55.930">...just auto updates itself as a server updates.</p>
+      <p begin="00:44:55.930" end="00:44:58.520">There's a picture...like this.</p>
+      <p begin="00:44:58.520" end="00:45:01.720">This is a really crazy one where I've got machines that I'm sharing with</p>
+      <p begin="00:45:01.720" end="00:45:06.650">they work side-by-side so I can have a machine with...agent control running on I can add one</p>
+      <p begin="00:45:06.650" end="00:45:12.620">the noob new...same machine no problem there's no interaction so,</p>
+      <p begin="00:45:12.620" end="00:45:18.290">I have a lot of different lot of different capabilities there.</p>
+      <p begin="00:45:18.290" end="00:45:22.030">Security so, I mention that scoping on the</p>
+      <p begin="00:45:22.030" end="00:45:25.580">build definition each build when we run runs</p>
+      <p begin="00:45:25.580" end="00:45:29.660">...its own process as anybody run into a fun phenomenon with</p>
+      <p begin="00:45:29.660" end="00:45:33.990">the current agent where file handle gets left open for some reason</p>
+      <p begin="00:45:33.990" end="00:45:38.380">...the build host process and you have no idea why, yeah,</p>
+      <p begin="00:45:38.380" end="00:45:43.380">that's a problem too because builds do a lot of things I mean they write files they read files they create</p>
+      <p begin="00:45:43.380" end="00:45:48.740">...for files I mean they're really interesting operation so what we do is every</p>
+      <p begin="00:45:48.740" end="00:45:53.300">build...gets run gets a new worker process that the agent spends up.</p>
+      <p begin="00:45:53.300" end="00:45:58.100">And, it runs that build and when it when it's done it kills that worker process and creates a new</p>
+      <p begin="00:45:58.100" end="00:46:02.010">would for the next one so any state any environment variable set any</p>
+      <p begin="00:46:02.010" end="00:46:06.900">file handles open anything like that or completely contained that worker process so</p>
+      <p begin="00:46:06.900" end="00:46:12.890">things should be much more robust from that perspective and we've seen that internally...our own usage and,</p>
+      <p begin="00:46:12.890" end="00:46:17.610">then of course I mention the...administration delegation and then each</p>
+      <p begin="00:46:17.610" end="00:46:21.980">...also gets its own unique access token this time limited</p>
+      <p begin="00:46:21.980" end="00:46:27.160">so the build starts up we create a connection back to the server for writing logs</p>
+      <p begin="00:46:27.160" end="00:46:32.080">and drops and things like that back-up that is only held within that worker process that's not available</p>
+      <p begin="00:46:32.080" end="00:46:36.160">as an environment variable is available to tasks so-if you have a task</p>
+      <p begin="00:46:36.160" end="00:46:40.430">you've created you can you can get access to that connection we sort of</p>
+      <p begin="00:46:40.430" end="00:46:45.380">view that as a trusted part of the system but just somebody running some eggs the running so</p>
+      <p begin="00:46:45.380" end="00:46:50.370">...our...script or whatever doesn't have the ability to easily create a connection back to</p>
+      <p begin="00:46:50.370" end="00:46:55.720">...get access to those credentials so we think we significantly improved the overall</p>
+      <p begin="00:46:55.720" end="00:47:05.770">...so really quick ...part back here?</p>
+      <p begin="00:47:18.680" end="00:47:24.320">We have and I'll show you sort of the administration.</p>
+      <p begin="00:47:24.320" end="00:47:28.390">So, as I mentioned so this is actually is a...so instance I have I</p>
+      <p begin="00:47:28.390" end="00:47:32.910">...to pool's listed so one of them is the hosted pool.</p>
+      <p begin="00:47:32.910" end="00:47:37.900">And, it's so, this is...sort of a special pool because it's one we provide...are...provision via</p>
+      <p begin="00:47:37.900" end="00:47:41.180">...and while you won't see this feature</p>
+      <p begin="00:47:41.180" end="00:47:45.300">right away later on a year will enable us that you actually</p>
+      <p begin="00:47:45.300" end="00:47:50.670">to agents I happen to have to ages listed here so currently today and hosted service</p>
+      <p begin="00:47:50.670" end="00:47:55.110">it's a little difficult to run builds multiple builds because you get serialized behind each other</p>
+      <p begin="00:47:55.110" end="00:47:58.490">with the new architecture we're going to be able to enable feature where you can</p>
+      <p begin="00:47:58.490" end="00:48:01.600">...multiple agents in your in hosted</p>
+      <p begin="00:48:01.600" end="00:48:06.910">...you can actually potential uses a much more real a solution.</p>
+      <p begin="00:48:06.910" end="00:48:11.540">But, my default pool here that I created for expand that I can see I've got an agent</p>
+      <p begin="00:48:11.540" end="00:48:17.060">pool administration group and an agent full-service accounts group which I happen to be</p>
+      <p begin="00:48:17.060" end="00:48:22.040">in both of those but that's fine but, I can then go and I could create additional</p>
+      <p begin="00:48:22.040" end="00:48:26.280">...I could do new pool here because I happen to be global admin I</p>
+      <p begin="00:48:26.280" end="00:48:30.190">could delegate administration and if I want to install the age and I can just click on that and</p>
+      <p begin="00:48:30.190" end="00:48:36.460">download the agent and configured on my machine and I'm off and running?</p>
+      <p begin="00:48:36.460" end="00:48:40.830">And, then once I've done that so if you think about...instance</p>
+      <p begin="00:48:40.830" end="00:48:45.600">you probably have multiple collections...creative pool at the deployment level</p>
+      <p begin="00:48:45.600" end="00:48:49.480">at the server level you can then say which collections can use that</p>
+      <p begin="00:48:49.480" end="00:48:51.540">...so not every collection can use every</p>
+      <p begin="00:48:51.540" end="00:48:56.430">pool by default so once you go do that if you go to the</p>
+      <p begin="00:48:56.430" end="00:49:01.210">are collection administration page there's a build tab here.</p>
+      <p begin="00:49:01.210" end="00:49:05.710">And, I can see a list of we call them...at the collection levels...they are this is where the</p>
+      <p begin="00:49:05.710" end="00:49:10.300">builds q but I can see that in this collection I actually happen to have both</p>
+      <p begin="00:49:10.300" end="00:49:14.980">...but, I can only have one and somebody else might have a different one</p>
+      <p begin="00:49:14.980" end="00:49:17.600">so you actually so the ability to manager build</p>
+      <p begin="00:49:17.600" end="00:49:22.510">resources to balance your build resources across many different machine many different teams</p>
+      <p begin="00:49:22.510" end="00:49:35.240">reader collections is significantly are improved under this new architecture.</p>
+      <p begin="00:49:35.240" end="00:49:39.420">That is kind of the end of the overview so.</p>
+      <p begin="00:49:39.420" end="00:49:41.850">Download the...take it for...</p>
+      <p begin="00:49:41.850" end="00:49:46.570">The your via so accounts will get the new build.</p>
+      <p begin="00:49:46.570" end="00:49:51.130">Probably will still be build preview when you first see it but shortly thereafter</p>
+      <p begin="00:49:51.130" end="00:49:55.290">will switch just be the build tab so the build tab will be the</p>
+      <p begin="00:49:55.290" end="00:49:58.100">do experience with both new builds able builds all the</p>
+      <p begin="00:49:58.100" end="00:50:04.850">web editing everything in your accounts and a couple of weeks so we have a deployment coming up.</p>
+      <p begin="00:50:04.850" end="00:50:10.900">In two weeks so shortly thereafter you will see...all these new features of course you can</p>
+      <p begin="00:50:10.900" end="00:50:15.740">see the rc so-if that's it there.</p>
+      <p begin="00:50:15.740" end="00:50:20.310">The questions.</p>
+      <p begin="00:50:20.310" end="00:50:28.140">...the mic please or...sorrowful so they can get...the video.</p>
+      <p begin="00:50:28.140" end="00:50:33.370">I didn't see but I was hoping...of gated builds.</p>
+      <p begin="00:50:33.370" end="00:50:38.740">gated that's an interesting question so obviously the...system had actual gated</p>
+      <p begin="00:50:38.740" end="00:50:44.390">builds for...with the new one of the new features coming with</p>
+      <p begin="00:50:44.390" end="00:50:49.560">...pptx twenty fifteen so what we call this lease...get this...requests and then as part of</p>
+      <p begin="00:50:49.560" end="00:50:53.730">...requests we have policies and one of those policies is build</p>
+      <p begin="00:50:53.730" end="00:50:59.290">so in the same feature will eventually come for...right so with the</p>
+      <p begin="00:50:59.290" end="00:51:02.550">...request you can set up of say hey from branch feature</p>
+      <p begin="00:51:02.550" end="00:51:07.100">...a master nobody can push the master right you push...feature bridge to get</p>
+      <p begin="00:51:07.100" end="00:51:11.280">...master you have to open up a poorer question that has to be code reviewed and then I have a</p>
+      <p begin="00:51:11.280" end="00:51:15.250">build definition has to be running past before that could be let through so</p>
+      <p begin="00:51:15.250" end="00:51:20.550">that is the same kind of thing is gated though a little bit different because gated as you think about it...</p>
+      <p begin="00:51:20.550" end="00:51:25.640">of ec does not really work forget at all we currently do not have traditional gated for</p>
+      <p begin="00:51:25.640" end="00:51:29.790">...vc yet but a very similar policy method probably based around</p>
+      <p begin="00:51:29.790" end="00:51:34.740">shelves sets which is actually how gated works will be coming and that's how we're going to implement gated</p>
+      <p begin="00:51:34.740" end="00:51:39.050">in this new system versus the way we do it today is a little bit strange because</p>
+      <p begin="00:51:39.050" end="00:51:43.980">...kind of reject the check in and then you shelving create some interesting problem so this new extensible</p>
+      <p begin="00:51:43.980" end="00:51:48.790">system will mean that instead of just having potentially one gate on any</p>
+      <p begin="00:51:48.790" end="00:51:55.260">checking you can have multiple gates I think which will be as much more flexible for you.</p>
+      <p begin="00:51:55.260" end="00:52:01.750">Other questions...</p>
+      <p begin="00:52:01.750" end="00:52:05.190">Is it still possible to get code coverage data yes okay, yeah,</p>
+      <p begin="00:52:05.190" end="00:52:09.420">so, I mean the same the same data exists for tessa code coverage</p>
+      <p begin="00:52:09.420" end="00:52:13.450">...run it's pushed up you just don't see it there because</p>
+      <p begin="00:52:13.450" end="00:52:18.290">as part of at the point of this deployment the api...rest api forgetting code coverage data</p>
+      <p begin="00:52:18.290" end="00:52:22.360">what complete yetthey're actually checked in yesterday I think so,</p>
+      <p begin="00:52:22.360" end="00:52:25.810">you'll see that so cinco coverage okay is that just csharp resents</p>
+      <p begin="00:52:25.810" end="00:52:30.770">...like cobertura a coverage reports so currently it is just based on the</p>
+      <p begin="00:52:30.770" end="00:52:34.060">are code coverage but we I have a very</p>
+      <p begin="00:52:34.060" end="00:52:39.640">...given strong feedback to the team that sort of that coverage xml or the cobertura sort of</p>
+      <p begin="00:52:39.640" end="00:52:46.560">rough standard needs to be supported as well so I expect to see that at some point?</p>
+      <p begin="00:52:46.560" end="00:52:49.840">The question about retention policies yes with their</p>
+      <p begin="00:52:49.840" end="00:52:53.290">...add a feature of retention by size.</p>
+      <p begin="00:52:53.290" end="00:52:57.260">Potential by size like I've got a...space</p>
+      <p begin="00:52:57.260" end="00:53:01.870">okay keep it up until that point I see that's interesting that's</p>
+      <p begin="00:53:01.870" end="00:53:06.520">...I've thought about it but thanks for that I'll take that...redskins like, you know,</p>
+      <p begin="00:53:06.520" end="00:53:14.010">you do a lot more...closer...makes sense...</p>
+      <p begin="00:53:14.010" end="00:53:17.070">Does the cross platform a tools you demoed on the</p>
+      <p begin="00:53:17.070" end="00:53:19.860">...support patrick sort of?</p>
+      <p begin="00:53:19.860" end="00:53:26.100">Yes, so, we can...a couple different ways they're actually the so the</p>
+      <p begin="00:53:26.100" end="00:53:30.310">cordova tools for visual studio there'swhen all of this goes</p>
+      <p begin="00:53:30.310" end="00:53:35.180">out live we have a really great tutorial and how to...and yes you can build your one</p>
+      <p begin="00:53:35.180" end="00:53:39.180">app with that cordova platform on windows in on</p>
+      <p begin="00:53:39.180" end="00:53:42.610">...one package...for each platform?</p>
+      <p begin="00:53:43.620" end="00:53:48.860">...it's actually really cool so I work I work pretty closely with the guys who worked on that and we</p>
+      <p begin="00:53:48.860" end="00:53:52.590">...sure that was a good experience if we need to use</p>
+      <p begin="00:53:52.590" end="00:53:57.550">a compiler that's not supported by one of the tasks, for example, tci firmware</p>
+      <p begin="00:53:57.550" end="00:54:01.630">compiler something along those lines how difficult is it to get that</p>
+      <p begin="00:54:01.630" end="00:54:06.160">...and it will be possible to do that in a hosted pool.</p>
+      <p begin="00:54:06.160" end="00:54:08.880">So, it depends how do you what your makes so mean you have</p>
+      <p begin="00:54:08.880" end="00:54:14.040">the compiler the make system what makes system the used to run that compiler I don't know.</p>
+      <p begin="00:54:14.040" end="00:54:18.990">So, ... there's lots of different ones msi...build a make system</p>
+      <p begin="00:54:18.990" end="00:54:23.270">...maven those kinds of things are make system so typically compilers</p>
+      <p begin="00:54:23.270" end="00:54:25.480">...via some sort of make system and then</p>
+      <p begin="00:54:25.480" end="00:54:29.820">...integrating that is very easy because all of our stuff if you look at the</p>
+      <p begin="00:54:29.820" end="00:54:33.860">opensource repositories basically...boils down to taking some parameters building up a</p>
+      <p begin="00:54:33.860" end="00:54:38.460">command line and launching that command line and from the standpoint the hosted pool if</p>
+      <p begin="00:54:38.460" end="00:54:43.450">your compiler is deployable via some for ex copy mechanism then yes</p>
+      <p begin="00:54:43.450" end="00:54:47.290">that would work we don't have current support for</p>
+      <p begin="00:54:47.290" end="00:54:59.280">like installing custom software that requires elevated privileges or anything like that.</p>
+      <p begin="00:54:59.280" end="00:55:10.480">Is there still the two-hundred-and-fifty five character path...samoa?</p>
+      <p begin="00:55:10.480" end="00:55:16.370">yes, I there's not a lot...there's really nothing I can do about that we do have some interesting we actually there</p>
+      <p begin="00:55:16.370" end="00:55:21.810">was a very interesting bug that came across a couple weeks back because ...</p>
+      <p begin="00:55:21.810" end="00:55:26.730">dash which is a node module create some very interesting very long very</p>
+      <p begin="00:55:26.730" end="00:55:31.790">deep paths so we've done work to make sure we can at least delete those</p>
+      <p begin="00:55:31.790" end="00:55:37.310">via the native windows api is but we can't support, you know, really building more than</p>
+      <p begin="00:55:37.310" end="00:55:41.000">to fifty-five because so many tools just don't supported on windows.</p>
+      <p begin="00:55:42.170" end="00:55:46.140">Yes, so, I saw with...deploy it</p>
+      <p begin="00:55:46.140" end="00:55:51.110">had the capability for what looked like web deploy and running of arbitrary commands on the target</p>
+      <p begin="00:55:51.110" end="00:55:54.640">...are any build tasks available for say if we</p>
+      <p begin="00:55:54.640" end="00:55:58.070">reproducing msi packages or even</p>
+      <p begin="00:55:58.070" end="00:56:02.530">...based installs or anything else like that so we don't have anything out-of-the-box but if you</p>
+      <p begin="00:56:02.530" end="00:56:07.520">go to if you go look at the video the diamond session that those some of the new deployment stuff coming there's</p>
+      <p begin="00:56:07.520" end="00:56:13.790">better I mean in the end...can you get on to the box to run that msi</p>
+      <p begin="00:56:13.790" end="00:56:17.210">it's really just msi exec against that...</p>
+      <p begin="00:56:17.210" end="00:56:21.050">So, there's no reason there couldn't be it would be very easy to write something that does that</p>
+      <p begin="00:56:21.050" end="00:56:31.540">but it's not something we've done...yet out-of-the-box but it's a good idea.</p>
+      <p begin="00:56:31.540" end="00:56:33.140">Exactly, yeah.</p>
+      <p begin="00:56:33.140" end="00:56:36.780">So,...the example was...our...script that just does start process</p>
+      <p begin="00:56:36.780" end="00:56:41.470">and goes so we use extensively could you...</p>
+      <p begin="00:56:41.470" end="00:56:47.490">hand lab management zero it test build the...how does that has</p>
+      <p begin="00:56:47.490" end="00:56:51.250">...so are you so which part</p>
+      <p begin="00:56:51.250" end="00:56:58.630">specifically well there's a traditional test build the case that in the</p>
+      <p begin="00:56:58.630" end="00:57:03.380">old visual studio with this one how does that has that correlate ok sothe ok,</p>
+      <p begin="00:57:03.380" end="00:57:06.080">the old the example template there</p>
+      <p begin="00:57:06.080" end="00:57:10.770">is loudly time of the lab template that we're talking about that's correct, yeah,</p>
+      <p begin="00:57:10.770" end="00:57:16.290">so, we at this point there's not a direct correlation some of the</p>
+      <p begin="00:57:16.290" end="00:57:21.110">release management stuff that's coming in the future actually is the future of doing those sorts of</p>
+      <p begin="00:57:21.110" end="00:57:25.940">operations that will be much better for that the one thing you did see is we have</p>
+      <p begin="00:57:25.940" end="00:57:31.220">the distributed test running so you can sort of point that a bunch of machines</p>
+      <p begin="00:57:31.220" end="00:57:35.760">...go run these tests on that machines but the exact equivalent to</p>
+      <p begin="00:57:35.760" end="00:57:41.490">lab management is not fully integrated yet but it is on the train that's coming great?</p>
+
+    </div>
+  </body>
+</tt>

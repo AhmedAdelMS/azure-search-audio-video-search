@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.917</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.600" end="00:00:03.210">Hello, welcome to build my name is steve right-hand</p>
+      <p begin="00:00:03.210" end="00:00:08.060">machine your program manager with microsoft I've been here about twenty years now and...that time</p>
+      <p begin="00:00:08.060" end="00:00:12.940">I worked on display technologies input technologies over the last three years in particular I</p>
+      <p begin="00:00:12.940" end="00:00:17.820">...a lot of time looking at...high dpi displays and how we can make windows work better</p>
+      <p begin="00:00:17.820" end="00:00:21.890">with those devices so here today I'm going to talk about windows</p>
+      <p begin="00:00:21.890" end="00:00:24.690">ten display scaling what that is and,</p>
+      <p begin="00:00:24.690" end="00:00:30.090">...important to you so what it is just very briefly...hear a lot more about this of course</p>
+      <p begin="00:00:30.090" end="00:00:35.340">the discussion is...platform technology its baked into our low-level frameworks</p>
+      <p begin="00:00:35.340" end="00:00:39.200">...is available to all applications and</p>
+      <p begin="00:00:39.200" end="00:00:43.160">...matters to you is this technology takes a great deal of a burden off of</p>
+      <p begin="00:00:43.160" end="00:00:46.110">use individual developers...spend a lot of time</p>
+      <p begin="00:00:46.110" end="00:00:54.010">explain how that works why it works the way it does and then what's left over for you guys to do?</p>
+      <p begin="00:00:54.010" end="00:00:59.350">We're kind of a quick run-down agenda with the talks going to look like.</p>
+      <p begin="00:00:59.350" end="00:01:03.110">Just like hardware displays inform factors are an evolving technology scaling</p>
+      <p begin="00:01:03.110" end="00:01:08.530">...windows is also been evolving over the last several years and...really new stuff in windows</p>
+      <p begin="00:01:08.530" end="00:01:13.120">...to learn about so I will be spending some time talking about that and how we have</p>
+      <p begin="00:01:13.120" end="00:01:16.310">overhauled scaling system for windows ten?</p>
+      <p begin="00:01:16.310" end="00:01:18.410">...in a nutshell and forecaster</p>
+      <p begin="00:01:18.410" end="00:01:22.510">...saying later we provided...scaling system that now works the same for all</p>
+      <p begin="00:01:22.510" end="00:01:27.370">applications in windows and which works the same across all displays and</p>
+      <p begin="00:01:27.370" end="00:01:33.410">mobile and desktop skews as well...great deal uniformity and simplicity?</p>
+      <p begin="00:01:33.410" end="00:01:37.960">As a result of that work windows platform now takes a large amount of work off the back of</p>
+      <p begin="00:01:37.960" end="00:01:38.690">...developers.</p>
+      <p begin="00:01:40.320" end="00:01:45.230">It frees you up focus on something that you hear talked about a lot of this conference today...called effective pixels</p>
+      <p begin="00:01:45.230" end="00:01:48.910">and effective resolution and adaptive scaling and layout.</p>
+      <p begin="00:01:48.910" end="00:01:51.150">So, we're going to define exactly what these meeting just a moment</p>
+      <p begin="00:01:51.150" end="00:01:54.840">but they're very important subjects you'll find discussed here andprovides an...</p>
+      <p begin="00:01:54.840" end="00:02:00.420">to that later on but the purpose of this talk is kind of lay the groundwork for that by taking the hood off</p>
+      <p begin="00:02:00.420" end="00:02:03.510">...the scaling system showing you how it works why we</p>
+      <p begin="00:02:03.510" end="00:02:06.830">built the way we did and we can kind of call that display scaling</p>
+      <p begin="00:02:06.830" end="00:02:10.510">one-oh-one some of this may be familiar with some parts of maybe new</p>
+      <p begin="00:02:10.510" end="00:02:14.530">will start there and then we'll go into the changes for windows ten and</p>
+      <p begin="00:02:14.530" end="00:02:21.620">from there will kind of go back into the developer story for display scaling...windows ten.</p>
+      <p begin="00:02:21.620" end="00:02:26.730">So, just to motivate the entire discussion...more concrete terms.</p>
+      <p begin="00:02:26.730" end="00:02:29.400">Why scaling is important to you is that your application is</p>
+      <p begin="00:02:29.400" end="00:02:34.780">going to be running on a lot of diverse screens I mean a huge number of them and</p>
+      <p begin="00:02:34.780" end="00:02:38.010">...different ways different sizes different resolutions densities</p>
+      <p begin="00:02:38.010" end="00:02:39.790">in doing distances,</p>
+      <p begin="00:02:39.790" end="00:02:43.320">for example, here to screens with very different sizes?</p>
+      <p begin="00:02:43.320" end="00:02:47.240">The little one below could be a small...four-inch...the one above could be as large as</p>
+      <p begin="00:02:47.240" end="00:02:52.080">an eighty four-inch surface probe or even larger screens in the future that's</p>
+      <p begin="00:02:52.080" end="00:02:53.790">...to one ratio and size.</p>
+      <p begin="00:02:54.950" end="00:02:59.890">In terms of resolution you could be looking at a similar...very low resolution</p>
+      <p begin="00:02:59.890" end="00:03:04.770">and up to like a four-k or even a five k monitor and we know that people are starting to think about</p>
+      <p begin="00:03:04.770" end="00:03:06.900">ak devices coming soon.</p>
+      <p begin="00:03:06.900" end="00:03:13.320">So, there you're looking at what a sixty-one ratio right now and, capable growing in the future different</p>
+      <p begin="00:03:13.320" end="00:03:18.360">densitieshere things are kind of oddly inverted that surface hub device actually</p>
+      <p begin="00:03:18.360" end="00:03:23.010">is very low density about fifty dpi but a phone the high info might have</p>
+      <p begin="00:03:23.010" end="00:03:27.230">...high as five hundred dpi today and maybe that could be going as well so there's a ten-to-one</p>
+      <p begin="00:03:27.230" end="00:03:28.540">range.</p>
+      <p begin="00:03:28.540" end="00:03:32.410">Find the same to devices could be viewed very different viewing distances eighteen inches for</p>
+      <p begin="00:03:32.410" end="00:03:35.520">handheld device hundred-twenty...are more for</p>
+      <p begin="00:03:35.520" end="00:03:38.850">...unit so there's another sixty-one ratio this is</p>
+      <p begin="00:03:38.850" end="00:03:43.280">an insane diversity if you think about it from a developers perspective there's</p>
+      <p begin="00:03:43.280" end="00:03:51.140">knowing the world you want to have to target each one of these different gamut and the entire range of each one.</p>
+      <p begin="00:03:51.140" end="00:03:54.630">We provided dpi scaling or density scaling or display scaling</p>
+      <p begin="00:03:54.630" end="00:03:56.150">and abstracts much of this complexity.</p>
+      <p begin="00:03:57.410" end="00:03:58.440">For example,</p>
+      <p begin="00:03:58.440" end="00:04:03.140">one thing that you get out of it is something we called device independent or effective pixels</p>
+      <p begin="00:04:03.140" end="00:04:07.560">and these are common across all the different devices that means if you</p>
+      <p begin="00:04:07.560" end="00:04:11.100">developed those huge promise your customers will get content that</p>
+      <p begin="00:04:11.100" end="00:04:15.170">looks reasonably the same on all devices.</p>
+      <p begin="00:04:15.170" end="00:04:18.180">And, there's even a benefit here for the hardware developers in that</p>
+      <p begin="00:04:18.180" end="00:04:24.900">there's an extensible scaling solution that will support them as a build bigger or made it more dense displays in the future.</p>
+      <p begin="00:04:24.900" end="00:04:29.610">So, what does that leave for you well...really big message I've already for this once and</p>
+      <p begin="00:04:29.610" end="00:04:34.480">I'll point to some other talks on this later is it let you start thinking about doing your layout in</p>
+      <p begin="00:04:34.480" end="00:04:37.810">these effective resolutions much simpler story?</p>
+      <p begin="00:04:37.810" end="00:04:42.720">The other thing that I want to talk about in this talk is...design your bitmap assets to</p>
+      <p begin="00:04:42.720" end="00:04:48.320">so you can support these different scale factors and we'll see why you have to do that.</p>
+      <p begin="00:04:48.320" end="00:04:53.200">it's time for what I call scaling one-oh-one we have to define some of these terms I've been throwing around terms like effective</p>
+      <p begin="00:04:53.200" end="00:04:59.540">resolution and pixels and density and viewing distance let's take a look at what they actually are.</p>
+      <p begin="00:04:59.540" end="00:05:04.420">Screen resolution everybody sees if...look at...for devices on the web is how many physical,</p>
+      <p begin="00:05:04.420" end="00:05:08.750">physical pixels across or higher devices you make me talk about four-k monitor</p>
+      <p begin="00:05:08.750" end="00:05:13.280">thirty-eight forty by twenty-one sixty or low-end phone which might be four-eighty by eight</p>
+      <p begin="00:05:13.280" end="00:05:17.580">hundredthat's the screen resolution.</p>
+      <p begin="00:05:17.580" end="00:05:20.280">Usually people talk about the size not with the to dimensions</p>
+      <p begin="00:05:20.280" end="00:05:25.090">...just with the diagonal that's kind of common coming from the video industry and we all use that so here's a</p>
+      <p begin="00:05:25.090" end="00:05:32.190">diagonal five-inch phone the density is how many pixels actually fit into a niche and in the</p>
+      <p begin="00:05:32.190" end="00:05:36.150">example here we have one hundred sixty dpi...inch that would be kind of typical for</p>
+      <p begin="00:05:36.150" end="00:05:40.710">...and...higher than you...in a desktop.</p>
+      <p begin="00:05:40.710" end="00:05:44.560">So, that leads to the physical pixel that's the smallest unit on the screen</p>
+      <p begin="00:05:44.560" end="00:05:47.600">...smallest little...can be let up at a time.</p>
+      <p begin="00:05:47.600" end="00:05:50.880">And, we have here three different screens of some of them are much density</p>
+      <p begin="00:05:50.880" end="00:05:52.890">...and they have smaller.</p>
+      <p begin="00:05:52.890" end="00:05:56.320">...physical pixels this is exactly the kind of chaos we're trying to</p>
+      <p begin="00:05:56.320" end="00:05:58.370">take you away from.</p>
+      <p begin="00:05:58.370" end="00:06:03.350">And, we can do that providing by providing something we call effective pixel which is device independent and you can see this</p>
+      <p begin="00:06:03.350" end="00:06:07.710">picture is...same-size on the screen now one thing that happens along with that</p>
+      <p begin="00:06:07.710" end="00:06:12.740">...we go from the physical resolution we already talked about the screen resolution which ranges from</p>
+      <p begin="00:06:12.740" end="00:06:15.770">...fifty-four here all we have to attend yappy.</p>
+      <p begin="00:06:15.770" end="00:06:18.300">And, when we take into account the scaling any</p>
+      <p begin="00:06:18.300" end="00:06:23.070">effective pixels then those resolutions become expressed as...resolutions</p>
+      <p begin="00:06:23.070" end="00:06:27.370">...much more...range and...kind of grow as you go</p>
+      <p begin="00:06:27.370" end="00:06:32.240">...forage to five-inch...six-inch phone and kind of rational way that doesn't depend upon the density of the pickles</p>
+      <p begin="00:06:32.240" end="00:06:39.430">anymore I think you can begin to see from this y is going to be a really great thing for you when you're doing your design and layout work?</p>
+      <p begin="00:06:39.430" end="00:06:43.340">So, the...resolution is just the size of the screen...pixels</p>
+      <p begin="00:06:43.340" end="00:06:47.190">...display scaling is just that underline technology that maps</p>
+      <p begin="00:06:47.190" end="00:06:53.300">...the effective pixels into thephysical pixels.</p>
+      <p begin="00:06:53.300" end="00:06:57.560">All right so that's actually kind of a lot of overhead in order to try to make all the content look</p>
+      <p begin="00:06:57.560" end="00:06:59.770">about the same why is content size</p>
+      <p begin="00:06:59.770" end="00:07:03.050">...important let's talk about that.</p>
+      <p begin="00:07:03.050" end="00:07:07.470">So, there's a cardinal sin when you...representations that you never presented I...</p>
+      <p begin="00:07:07.470" end="00:07:11.580">But, I wanted actually present and I chart here and the relied chart can you would senior</p>
+      <p begin="00:07:11.580" end="00:07:16.430">...office and it's perfect for this because it explains exactly why content sizes</p>
+      <p begin="00:07:16.430" end="00:07:22.240">so important you can look at this and everybody can easily read the content at the top of the screen that biggie the</p>
+      <p begin="00:07:22.240" end="00:07:26.840">fp the...z so forth but by the time you get down to that.</p>
+      <p begin="00:07:26.840" end="00:07:33.380">Bottom line even without my glasses on having trouble with it so.</p>
+      <p begin="00:07:33.380" end="00:07:37.930">This is an I chart and basically shows that content sizes very important if content gets</p>
+      <p begin="00:07:37.930" end="00:07:42.990">to small your users your customers our customers can't you can't read it can't interact</p>
+      <p begin="00:07:42.990" end="00:07:47.740">with it so just as the opposition gives you this chart and then provide you with</p>
+      <p begin="00:07:47.740" end="00:07:51.640">lenz's that basically normalize the acuity your eyes to what we think kind of</p>
+      <p begin="00:07:51.640" end="00:07:55.690">the norm is for most people one thing we do in windows is we use a</p>
+      <p begin="00:07:55.690" end="00:08:02.810">dpi scaling to normalize a content so that it looks the right size for people as well.</p>
+      <p begin="00:08:02.810" end="00:08:06.020">Now the question is how big we can start</p>
+      <p begin="00:08:06.020" end="00:08:09.580">...the top the chart highly readable you only get one</p>
+      <p begin="00:08:09.580" end="00:08:13.520">were to time could slow you down a little bit so clearly you want something a</p>
+      <p begin="00:08:13.520" end="00:08:18.430">little bit smaller now we only have a complete sense now we've got a complete sentence but things are starting to</p>
+      <p begin="00:08:18.430" end="00:08:23.420">get a little bit hard-to-read so we've gained in terms of context but we've lost in terms of size</p>
+      <p begin="00:08:23.420" end="00:08:29.100">...this can go absolutely crazy if we keep going smaller and smaller sizes so in that gamut there's a</p>
+      <p begin="00:08:29.100" end="00:08:34.050">kind of tradeoff between a size it's easy-to-read and a...permit should</p>
+      <p begin="00:08:34.050" end="00:08:40.420">have enough content so you can actually read a conceptual...of information and understand it.</p>
+      <p begin="00:08:40.420" end="00:08:42.520">How do we find the right size?</p>
+      <p begin="00:08:42.520" end="00:08:47.200">Between the one extreme and the other where's the right place to tradeoff and here we have great</p>
+      <p begin="00:08:47.200" end="00:08:54.400">data from reading people in studying reading speed and, font-size is for a long-time.</p>
+      <p begin="00:08:54.400" end="00:08:59.320">And, if you take their...you graphic you can see that they're kind of two different regimes there's an</p>
+      <p begin="00:08:59.320" end="00:09:03.580">area above a certain type size in which basically reading speed is very high</p>
+      <p begin="00:09:03.580" end="00:09:08.110">in fairly consistent level clearly, you know, buy anything by increasing the</p>
+      <p begin="00:09:08.110" end="00:09:12.910">size of the...above that point on the other side of that is a regime</p>
+      <p begin="00:09:12.910" end="00:09:18.790">were reading speed falls off pretty quickly as you make type gets smaller and smaller so, for example,</p>
+      <p begin="00:09:18.790" end="00:09:23.150">a person with twenty, twenty vision can make out roughly three-point text from sixteen inches</p>
+      <p begin="00:09:23.150" end="00:09:27.030">away but that would be very slowly on this chart</p>
+      <p begin="00:09:27.030" end="00:09:29.080">that comes down to about forty words.</p>
+      <p begin="00:09:30.250" end="00:09:34.290">Per minute instead of the four hundred so that should be capable to</p>
+      <p begin="00:09:34.290" end="00:09:39.410">...a good reading size so...about ten percent of your reading speed and usually that</p>
+      <p begin="00:09:39.410" end="00:09:45.610">inflection point where we passed from one regime into the others about three times that minimum level of acuity so</p>
+      <p begin="00:09:45.610" end="00:09:48.600">what happens if we error too much in the size of sm you get</p>
+      <p begin="00:09:48.600" end="00:09:52.990">a more content but people will tend to squared they will keep their eyes open these</p>
+      <p begin="00:09:52.990" end="00:09:57.610">are just kind of involuntary responses to dealing with small things so your eyes dry out the</p>
+      <p begin="00:09:57.610" end="00:10:02.910">conference and you start having fatigue headaches so small text not only</p>
+      <p begin="00:10:02.910" end="00:10:04.420">slows you down.</p>
+      <p begin="00:10:04.420" end="00:10:08.010">But, it also increases your visual fatigue and both of these are issues for both the comfort</p>
+      <p begin="00:10:08.010" end="00:10:11.920">...the productivity of our customers.</p>
+      <p begin="00:10:11.920" end="00:10:14.650">So, we want to keep it well out of that range.</p>
+      <p begin="00:10:14.650" end="00:10:17.660">Now that's an important point here not</p>
+      <p begin="00:10:17.660" end="00:10:20.410">everybody's the same individual users have to be in control</p>
+      <p begin="00:10:20.410" end="00:10:25.130">of things for one thing as we age that curve traditionally</p>
+      <p begin="00:10:25.130" end="00:10:29.230">dress a little bit to the towards the right we begin to lose the ability to read is</p>
+      <p begin="00:10:29.230" end="00:10:33.970">quickly even with...just because our eyes are aging and even</p>
+      <p begin="00:10:33.970" end="00:10:38.190">...given age group there are different kinds of reading that people do somebody who's</p>
+      <p begin="00:10:38.190" end="00:10:41.890">just reading fictionit probably is going for speed</p>
+      <p begin="00:10:43.360" end="00:10:47.320">coder however speed is not so important it's really more import for somebody who's</p>
+      <p begin="00:10:47.320" end="00:10:52.270">doing code development to get a lot of context on the screen and he's not going to be reading coded at four hundred words</p>
+      <p begin="00:10:52.270" end="00:10:54.680">...he's going to be studying small pieces of it</p>
+      <p begin="00:10:54.680" end="00:10:58.940">so for somebody like that actually getting down on the other side of the curve where you</p>
+      <p begin="00:10:58.940" end="00:11:05.670">want to move very slowly could be an appropriate thing so we have to provide away for users to control this.</p>
+      <p begin="00:11:07.150" end="00:11:10.780">I said several times things about viewing distance I mention sixteen inches</p>
+      <p begin="00:11:10.780" end="00:11:15.640">and different distances so on why is viewing distance important this is really critical to our</p>
+      <p begin="00:11:15.640" end="00:11:20.380">platform nobody else seems to take this into account the way we try to do clearly the optimal</p>
+      <p begin="00:11:20.380" end="00:11:23.470">...well-put on-screen is going to depend upon how far away that</p>
+      <p begin="00:11:23.470" end="00:11:29.560">screeners from you remember the ietf chart if you...in the...office and he has to read aligning you</p>
+      <p begin="00:11:29.560" end="00:11:34.430">could just say excuse me and it doctor let me go check and you stood up and walked up to it I can be the</p>
+      <p begin="00:11:34.430" end="00:11:40.440">bottom line no problem the clearly you're getting around the whole point of his test and</p>
+      <p begin="00:11:40.440" end="00:11:44.840">for similar reasons when we have screens a great distance we need to make things bigger...screens that</p>
+      <p begin="00:11:44.840" end="00:11:51.880">are very close we need to make a smaller so scaling depends upon viewing distance.</p>
+      <p begin="00:11:51.880" end="00:11:56.010">As we said earlier we have a range of about eighteen two hundred twenty inches in our devices just</p>
+      <p begin="00:11:56.010" end="00:12:02.680">today sixty-one range query that's too big a range not to pay some attention too and we do a scaling.</p>
+      <p begin="00:12:02.680" end="00:12:07.740">So, our goal is the content...scale larger and...screens large and less so on closer screen</p>
+      <p begin="00:12:07.740" end="00:12:12.620">so...appears roughly the same sizes in this picture now you're going to say</p>
+      <p begin="00:12:12.620" end="00:12:18.390">yes but users still have to be able control this because perhaps I is a phone user tend to...my</p>
+      <p begin="00:12:18.390" end="00:12:23.210">phone farther away or as a desktop user maybe I tend to lean a little bit closer my screen and</p>
+      <p begin="00:12:23.210" end="00:12:28.590">that's absolutely true there's a lot of individual variation here so our solution has to also provide the way for the</p>
+      <p begin="00:12:28.590" end="00:12:33.510">individual user to change the sales scaling on each display so here are three different screens</p>
+      <p begin="00:12:33.510" end="00:12:38.510">with the same content on them and you can see that the content is actually using different scaling factors two hundred fifteen one</p>
+      <p begin="00:12:38.510" end="00:12:43.470">hundred and the content is not look the same size but that's because these devices are meant to be seen a different</p>
+      <p begin="00:12:43.470" end="00:12:48.850">viewing distances if you take that into account you can see they're starting to look like the same-size</p>
+      <p begin="00:12:48.850" end="00:12:52.330">...you actually get that vantage point you can see visually</p>
+      <p begin="00:12:52.330" end="00:12:57.360">...the same angle for everybody so that's what we're going for with this</p>
+      <p begin="00:12:59.130" end="00:13:07.250">...come back to my presentation.</p>
+      <p begin="00:13:07.250" end="00:13:09.670">So, we talked about viewing distance and why that matters which</p>
+      <p begin="00:13:09.670" end="00:13:13.720">...pretty obvious that display density has much the same impact?</p>
+      <p begin="00:13:13.720" end="00:13:16.610">If we always rented a particular fun cliff like the sm I</p>
+      <p begin="00:13:16.610" end="00:13:21.580">here to a fixed number of pixels...on devices with smaller pixels content</p>
+      <p begin="00:13:21.580" end="00:13:26.310">get smaller and here over like a roughly a five-to-one ratio if it's important</p>
+      <p begin="00:13:26.310" end="00:13:32.710">content be a certain size then we have to do something to adjust...as a number of pixels gets greater.</p>
+      <p begin="00:13:32.710" end="00:13:37.300">So, what we really want to see is a benefit that comes out of the at...height hired dpi</p>
+      <p begin="00:13:37.300" end="00:13:41.350">screens where we keep the same-size but as a number</p>
+      <p begin="00:13:41.350" end="00:13:45.200">of pixels increases we can use more pixels to render the shape more</p>
+      <p begin="00:13:45.200" end="00:13:48.920">and more precisely and this actually becomes easier to read is that as</p>
+      <p begin="00:13:48.920" end="00:13:53.330">a density goes up now in this case going past</p>
+      <p begin="00:13:53.330" end="00:13:59.090">about maybe two hundred dpi so is probably just a nice to have but another scripts</p>
+      <p begin="00:13:59.090" end="00:14:03.710">the problems can be far more severe here we have a character which has I think I</p>
+      <p begin="00:14:03.710" end="00:14:10.130">...on the order twenty-three twenty-four white and black horizontal bands just define it?</p>
+      <p begin="00:14:10.130" end="00:14:11.850">...at eleven points on a</p>
+      <p begin="00:14:11.850" end="00:14:15.930">windows desktop machine ninety-six dpi you only have fifteen pixels to work with</p>
+      <p begin="00:14:15.930" end="00:14:20.230">...vertically and there's just no way you can bring out that level of detail even</p>
+      <p begin="00:14:20.230" end="00:14:24.140">...three hundred dpi you can see look very closely that.</p>
+      <p begin="00:14:24.140" end="00:14:25.810">Some of the horizontal lines are not</p>
+      <p begin="00:14:25.810" end="00:14:30.520">define quite is crispy as others are and this just has to do with still not even if</p>
+      <p begin="00:14:30.520" end="00:14:34.600">...dpi having enough resolution to actually describe this</p>
+      <p begin="00:14:34.600" end="00:14:39.480">gift perfectly so we think there's actually quite a bit head room for...</p>
+      <p begin="00:14:39.480" end="00:14:47.030">Particularly when dealing with these kinds of far eastern fonts and, scripts.</p>
+      <p begin="00:14:47.030" end="00:14:51.410">So, this is a good time to step back and just take a look mathematically how we take all this</p>
+      <p begin="00:14:51.410" end="00:14:55.420">into account we've said we need to take account the density we need to take into account</p>
+      <p begin="00:14:55.420" end="00:15:01.040">doing distance and it's really not very complicated first we have to find out how many</p>
+      <p begin="00:15:01.040" end="00:15:05.190">pixels there are per inch...do that would just be take the resolution divided by the</p>
+      <p begin="00:15:05.190" end="00:15:10.430">with but since most people...size of the device in terms the diagonal we have to come up with an</p>
+      <p begin="00:15:10.430" end="00:15:15.890">approximate diagonal representation of the number of pixels and we can just do that using the factory and theorem so we take</p>
+      <p begin="00:15:15.890" end="00:15:21.500">the resolution the x direction and the y direction came of that first screenshot several</p>
+      <p begin="00:15:21.500" end="00:15:26.500">slides back we square then we'd add then we take the square root and we divide that by the size and that gives the density</p>
+      <p begin="00:15:26.500" end="00:15:29.690">...comes out in the dots per inch because the resolution</p>
+      <p begin="00:15:29.690" end="00:15:34.210">in x and resolution wire both dots...divide that by a size.</p>
+      <p begin="00:15:34.210" end="00:15:40.140">So, this all comes to the screen geometry we can get...information as soon as we see in display plugged in.</p>
+      <p begin="00:15:40.140" end="00:15:44.500">Now from that we extract what we call the scale factor and basically it's scale just like the</p>
+      <p begin="00:15:44.500" end="00:15:49.430">density but also scales like the viewing distance so are kind of goal standard</p>
+      <p begin="00:15:49.430" end="00:15:51.830">...reference machine is a classic windows box</p>
+      <p begin="00:15:51.830" end="00:15:55.120">running ninety-six dpi sitting on a desktop roughly twenty</p>
+      <p begin="00:15:55.120" end="00:15:58.520">eight inches away so based on that.</p>
+      <p begin="00:15:58.520" end="00:16:01.030">If we know the density and it's not ninety-six we know the viewing</p>
+      <p begin="00:16:01.030" end="00:16:04.010">distances not twenty-eight we can just take those ratios and scale</p>
+      <p begin="00:16:04.010" end="00:16:09.300">at hundred-percent by that so hundred-percent is that reference device another devices then get</p>
+      <p begin="00:16:09.300" end="00:16:14.230">larger and larger values we don't really see very many devices that fall below that even the surface hub with</p>
+      <p begin="00:16:14.230" end="00:16:17.810">...fifty...dot four-inch because it's being seen...such a large viewing</p>
+      <p begin="00:16:17.810" end="00:16:22.390">distance...up having a twenty percent scale factor.</p>
+      <p begin="00:16:22.390" end="00:16:27.470">So, you see we factor that interviewing distance and then we can go to the effective resolution which</p>
+      <p begin="00:16:27.470" end="00:16:34.490">is just the screen resolution in x and y scale down by the scale factor.</p>
+      <p begin="00:16:34.490" end="00:16:39.550">So, once again screen geometry comes in...the scale factor from the...calculation so this is how we do the work to figure out</p>
+      <p begin="00:16:39.550" end="00:16:44.270">what the scale factor should be except this is just the first step.</p>
+      <p begin="00:16:44.270" end="00:16:48.220">The...at this point is we've come up with a number which is going to be different for every display</p>
+      <p begin="00:16:48.220" end="00:16:52.370">and there are hundreds of different displays out there they don't all fall</p>
+      <p begin="00:16:52.370" end="00:16:57.280">into feature you would end up as a developer seeing dozens at least of different scale factors</p>
+      <p begin="00:16:57.280" end="00:17:02.600">...to support and dozens of different effective resolutions we haven't really solve the problem for</p>
+      <p begin="00:17:02.600" end="00:17:08.630">...if we just give it to this way we've taken away some of the degrees of freedom but we still</p>
+      <p begin="00:17:08.630" end="00:17:12.120">give you an enormous gamut stuff to try to consider so.</p>
+      <p begin="00:17:13.240" end="00:17:16.220">At the end is calculation within snap these results to what we call</p>
+      <p begin="00:17:16.220" end="00:17:21.060">...toes or buckets or...just...scale factors and even though there might be</p>
+      <p begin="00:17:21.060" end="00:17:24.370">hundreds of different percentage values between a hundred and four</p>
+      <p begin="00:17:24.370" end="00:17:30.070">hundred-percent we're only going to have a few buckets in there and everybody falls into one bucket or another it's</p>
+      <p begin="00:17:30.070" end="00:17:34.480">a rounding kind of thing so we take that computed scale factor from the previous slide we just</p>
+      <p begin="00:17:34.480" end="00:17:38.020">rounded to one of the...scale factors we can do that up or down we have</p>
+      <p begin="00:17:38.020" end="00:17:41.510">...in place where we make a decision to go either up or down.</p>
+      <p begin="00:17:41.510" end="00:17:47.450">And, then there's one last thing we also guarantee us developers a certain minimum resolution</p>
+      <p begin="00:17:47.450" end="00:17:52.270">that you, for example, on a mobile device we say you resolution never be below three twenty by</p>
+      <p begin="00:17:52.270" end="00:17:57.120">four-eighty so in order to enforce that we have to look at the result of this</p>
+      <p begin="00:17:57.120" end="00:18:02.110">computed scale factor after we bucket we look at and we say okay what is the effective resolution and</p>
+      <p begin="00:18:02.110" end="00:18:07.850">if it's less than the guarantee then we say up we got a lower the scale factor and make go for</p>
+      <p begin="00:18:07.850" end="00:18:11.070">...effective resolution so in pseudo code we</p>
+      <p begin="00:18:11.070" end="00:18:15.740">basically do a little while loop you can think of this is iterating that will just keep generating going-to</p>
+      <p begin="00:18:15.740" end="00:18:22.340">lower scale factors until we get to an effective resolution...is actually greater than or equal to the minimum guarantee.</p>
+      <p begin="00:18:22.340" end="00:18:24.300">And, those are the values we now support for windows</p>
+      <p begin="00:18:24.300" end="00:18:27.930">...this is new eight hundred six hundred is a step down from we</p>
+      <p begin="00:18:27.930" end="00:18:33.610">support for desktop but we've found this is really important for a number of sm tablets in</p>
+      <p begin="00:18:33.610" end="00:18:38.390">the seven eight-inch range that want to support desktop this gives a better experience and</p>
+      <p begin="00:18:38.390" end="00:18:43.110">phones also we're seeing on some of the smaller founded important have a smaller resolution there</p>
+      <p begin="00:18:43.110" end="00:18:49.150">...we had passed as well so the end of this means...the...scale faq you actually see on...not going to</p>
+      <p begin="00:18:49.150" end="00:18:53.320">be exactly...but the physical geometry would lead you to their</p>
+      <p begin="00:18:53.320" end="00:18:57.160">be surrounding differences this variation can be a small amount up or down.</p>
+      <p begin="00:18:57.160" end="00:19:00.590">The good news is if we have enough buckets and each</p>
+      <p begin="00:19:00.590" end="00:19:03.540">buck is not too big and the amount of variation you can have</p>
+      <p begin="00:19:03.540" end="00:19:07.800">...that buck is constrained so the size doesn't get too far out of whack and that's really been</p>
+      <p begin="00:19:07.800" end="00:19:10.470">an important goal so.</p>
+      <p begin="00:19:11.660" end="00:19:16.270">How does this really work as...I've been talking a lot here's an example?</p>
+      <p begin="00:19:16.270" end="00:19:19.930">...devices there's actually some of the same devices I showed the very beginning</p>
+      <p begin="00:19:19.930" end="00:19:24.430">the talk you can see all the diversity in terms of their size their density</p>
+      <p begin="00:19:24.430" end="00:19:31.150">thereresolution but when we had scaling to the picture this is what you see</p>
+      <p begin="00:19:31.150" end="00:19:34.810">...to the visual size of the effective pixel as measured in a kind</p>
+      <p begin="00:19:34.810" end="00:19:35.420">of a degrees.</p>
+      <p begin="00:19:36.480" end="00:19:42.120">Is amazingly close we've...within basically a ten percent up or down range more at</p>
+      <p begin="00:19:42.120" end="00:19:45.420">And, the effective resolutions are now in a much tighter gamut</p>
+      <p begin="00:19:45.420" end="00:19:50.580">than the physical resolutions are and then we have very scale factors...picked out of</p>
+      <p begin="00:19:50.580" end="00:19:53.220">...set of plato's so at the end</p>
+      <p begin="00:19:53.220" end="00:19:56.620">the scaling process we can give you an effective resolution you can use</p>
+      <p begin="00:19:56.620" end="00:19:59.660">...layout we have a scale factor that we usually get the</p>
+      <p begin="00:19:59.660" end="00:20:04.530">...framework and it does the magic scaling for you and you end up being able to</p>
+      <p begin="00:20:04.530" end="00:20:09.100">code your designed to these effective pixels and the very confident that the experience</p>
+      <p begin="00:20:09.100" end="00:20:16.230">your provide is going to look recently the same across all these devices and will work well for your customers?</p>
+      <p begin="00:20:16.230" end="00:20:21.980">Now this is scaling one-to-one we could say this about almost about any of our releases what are we done differently</p>
+      <p begin="00:20:21.980" end="00:20:25.920">in windows ten well there's one big huge thing we've unify</p>
+      <p begin="00:20:25.920" end="00:20:29.660">our scale factors for all classes of applications...platform.</p>
+      <p begin="00:20:29.660" end="00:20:31.670">We've come to a fairly simple set of</p>
+      <p begin="00:20:31.670" end="00:20:38.340">upscale factors one hundred-percent one twenty five one fifty two hundred fifty three hundred four hundred.</p>
+      <p begin="00:20:38.340" end="00:20:41.350">And, this replaces quite a bit of complexity we've had in the past.</p>
+      <p begin="00:20:42.460" end="00:20:46.790">So, there are some that exemptions there are existing apps out there for eight</p>
+      <p begin="00:20:46.790" end="00:20:52.070">...windows phone...that expect other scale factors and we have...so they will actually run as</p>
+      <p begin="00:20:52.070" end="00:20:56.700">they used to on a particular device but moving forward with all the universe</p>
+      <p begin="00:20:56.700" end="00:21:03.180">...we expect people to be coding to these up-scale factors.</p>
+      <p begin="00:21:03.180" end="00:21:06.190">Why those...a number of reasons for one thing they</p>
+      <p begin="00:21:06.190" end="00:21:10.450">rely on really well with some other app platforms that are out there in particular android</p>
+      <p begin="00:21:10.450" end="00:21:15.200">ios we thought this was really helpful...you were kind target multiple platforms</p>
+      <p begin="00:21:15.200" end="00:21:18.770">...particular application at least we should make it possible for-you to</p>
+      <p begin="00:21:18.770" end="00:21:24.810">use your assets back and forth across the different ones so are if you've already sporty android</p>
+      <p begin="00:21:24.810" end="00:21:28.710">you're already sporting most of...if...if you sporting ios even just one hundred two hundred</p>
+      <p begin="00:21:28.710" end="00:21:34.010">you've got a really good start on what you need to do for windows and I will say and we'll talk about this more</p>
+      <p begin="00:21:34.010" end="00:21:38.850">detail you don't actually have to support all of these in fact I put in bold face the ones</p>
+      <p begin="00:21:38.850" end="00:21:44.610">that we think are most important sporting we think that that's all you support...pretty good story?</p>
+      <p begin="00:21:44.610" end="00:21:48.130">So, there's the industry alignment...other issues these</p>
+      <p begin="00:21:48.130" end="00:21:54.100">...granular certainly more granular than the competition we actually think this is a good thing</p>
+      <p begin="00:21:54.100" end="00:21:58.650">especially if you don't have to provide assets these intermediate values are ability to set the platform</p>
+      <p begin="00:21:58.650" end="00:22:03.340">at the means the content size can be more tightly contain I remember I said earlier about keeping the bucket</p>
+      <p begin="00:22:03.340" end="00:22:07.140">small and close together if you look at the distance between two hundred three hundred,</p>
+      <p begin="00:22:07.140" end="00:22:09.690">for example, if you...advice fell right</p>
+      <p begin="00:22:09.690" end="00:22:14.290">...should be credit two-fifty then it's either going to be what twenty percent to</p>
+      <p begin="00:22:14.290" end="00:22:17.280">small almost twenty percent to big</p>
+      <p begin="00:22:17.280" end="00:22:19.380">...be the only options if we didn't have a two-fifty.</p>
+      <p begin="00:22:21.310" end="00:22:27.000">We have the same michigan here for the one twenty-five between one hundred and one fifty it's even conceivable in the</p>
+      <p begin="00:22:27.000" end="00:22:31.970">future that we might decide that we need to have some additional scale factors in here that we would add at some</p>
+      <p begin="00:22:31.970" end="00:22:37.540">point in the future again, it's the with the goal of keeping the content size remarkably consistent for</p>
+      <p begin="00:22:37.540" end="00:22:41.330">all your...and also with the goal for use developers you still only</p>
+      <p begin="00:22:41.330" end="00:22:44.690">have support eye-hand full-scale factors so we think</p>
+      <p begin="00:22:44.690" end="00:22:50.320">this granularity is a really good thing another big change in the past I think all of our scale factor systems top</p>
+      <p begin="00:22:50.320" end="00:22:53.900">...around two-fifty but we know four-k devices are coming and we know</p>
+      <p begin="00:22:53.900" end="00:22:58.770">...need for hundred-percent scaling within the next couple of years for some of those devices so we've built that all</p>
+      <p begin="00:22:58.770" end="00:23:01.870">we at four hundred of course we can see how that would extend</p>
+      <p begin="00:23:01.870" end="00:23:08.640">for the future when people start throwing ak devices atis.</p>
+      <p begin="00:23:08.640" end="00:23:13.880">What does this mean for you as a developer well I always like to draw that when I call appear</p>
+      <p begin="00:23:13.880" end="00:23:15.230">may chart?</p>
+      <p begin="00:23:15.230" end="00:23:19.700">We provide something in the platform this kind of a base for everything and we've already talked about that so I'm not going to go into</p>
+      <p begin="00:23:19.700" end="00:23:26.160">it anymore we give you this we come up with a scale factor effective resolution we give that to you and use a developer fall</p>
+      <p begin="00:23:26.160" end="00:23:31.030">into one of several classes...where the application pyramid most developers just</p>
+      <p begin="00:23:31.030" end="00:23:35.890">fall into the bottom area these are things that every application should be doing...a mainstream at,</p>
+      <p begin="00:23:35.890" end="00:23:40.150">for example, one thing is...the effective resolution your design and</p>
+      <p begin="00:23:40.150" end="00:23:44.250">layout this is the whole subject and I said before we got multiple talks on elsewhere again</p>
+      <p begin="00:23:44.250" end="00:23:48.700">...provide pointers on that later but for purposes of this talk we...to talk about</p>
+      <p begin="00:23:48.700" end="00:23:53.410">providing these assets for as I've already said some of the scale factors.</p>
+      <p begin="00:23:53.410" end="00:23:55.560">Now where do you go beyond that.</p>
+      <p begin="00:23:55.560" end="00:23:59.460">There are few apps...have very exacting visuals they may want provides more...the scale</p>
+      <p begin="00:23:59.460" end="00:24:04.180">factors themselves rather than relying upon the system to do scaling for them.</p>
+      <p begin="00:24:04.180" end="00:24:09.020">And, then finally there are a few applications that actually...a little bit about physical pixels I want to go into that</p>
+      <p begin="00:24:09.020" end="00:24:13.980">many detail here but just to give you an example if you...an application had put a ruler on the screen,</p>
+      <p begin="00:24:13.980" end="00:24:19.470">for example, so, you could measure things you need actually know-how big physical pixels were in order to</p>
+      <p begin="00:24:19.470" end="00:24:24.640">...how far apart space lines in the ruler there are api for that we have those api</p>
+      <p begin="00:24:24.640" end="00:24:29.390">...that onethey still exist used to use them I don't need spending more time talking about them</p>
+      <p begin="00:24:29.390" end="00:24:34.540">now but this is a relatively small case this is the big case a few developers</p>
+      <p begin="00:24:34.540" end="00:24:38.030">...more higher-quality needs around, around their assets</p>
+      <p begin="00:24:38.030" end="00:24:42.700">...have more detailed assets they can go with this and then again for just a small</p>
+      <p begin="00:24:42.700" end="00:24:47.390">handful of scenarios you might need those aps.</p>
+      <p begin="00:24:47.390" end="00:24:53.120">So, let's talk about those bitmap assets.</p>
+      <p begin="00:24:53.120" end="00:24:57.560">At this point you may be remembering if you...to some of the previous bills we had similar issues when we talk about</p>
+      <p begin="00:24:57.560" end="00:25:00.390">...phone apps in windows phone</p>
+      <p begin="00:25:00.390" end="00:25:05.390">blue and in-store apps are a lot of questions come up around bitmap assets</p>
+      <p begin="00:25:05.390" end="00:25:11.260">we have a lot of scale factors how can you support them all which scale factor should you support</p>
+      <p begin="00:25:11.260" end="00:25:14.680">directly...why not just support all of them.</p>
+      <p begin="00:25:14.680" end="00:25:19.580">What happens if the platform has to scale these...different displays...haven't provided them how can</p>
+      <p begin="00:25:19.580" end="00:25:23.130">you control which assets go to which devices and displays?</p>
+      <p begin="00:25:24.510" end="00:25:28.610">These are all really important questions and fortunately the answers is a very similar to...what</p>
+      <p begin="00:25:28.610" end="00:25:33.290">we had before so I want to go...is go into it in detail and show how to applies to the windows</p>
+      <p begin="00:25:33.290" end="00:25:36.560">timescale factors.</p>
+      <p begin="00:25:36.560" end="00:25:38.210">So, let's talk about bitmap assets.</p>
+      <p begin="00:25:39.320" end="00:25:44.610">If you only provide say one hundred-percent asset and I have to tell you about half of the</p>
+      <p begin="00:25:44.610" end="00:25:48.420">you out there are doing that today are telemetry says only fifty percent</p>
+      <p begin="00:25:48.420" end="00:25:51.250">fifty six percent of our developers...supplying more than</p>
+      <p begin="00:25:51.250" end="00:25:55.840">a hundred-percent asset what that means is that...runtime on any other devices</p>
+      <p begin="00:25:55.840" end="00:25:59.890">any of the scale factor we will do our best to stretch that</p>
+      <p begin="00:25:59.890" end="00:26:03.810">...to fit in boob give you the right size because that's our number</p>
+      <p begin="00:26:03.810" end="00:26:09.190">one goal but the quality of the scaling maybe pretty poor.</p>
+      <p begin="00:26:09.190" end="00:26:13.190">You can it's not too surprisingthis is like a thirty two by thirty two so you've only</p>
+      <p begin="00:26:13.190" end="00:26:18.510">got a thousand twenty four bits of information you're trying to stretch that out to a hundred-twenty</p>
+      <p begin="00:26:18.510" end="00:26:23.280">...you don't have the information provide a nice crispy image you just</p>
+      <p begin="00:26:23.280" end="00:26:28.310">out so this is the...can be done with in the system now I'll give you a caveat</p>
+      <p begin="00:26:28.310" end="00:26:31.280">if you actually display this on a very high-density screen</p>
+      <p begin="00:26:31.280" end="00:26:34.750">...would not be as bad as this because the pixels that are blurry</p>
+      <p begin="00:26:34.750" end="00:26:41.290">...really small but you can see the difference between this and this onto screen side-by-side.</p>
+      <p begin="00:26:41.290" end="00:26:43.840">And, what I'm telling you...half of you out there</p>
+      <p begin="00:26:43.840" end="00:26:50.230">are basically letting you develop your customers live with this kind of experience instead of crisper one?</p>
+      <p begin="00:26:50.230" end="00:26:54.950">Ok, scaling up is not really good and...sense we all understand that theoretically what</p>
+      <p begin="00:26:54.950" end="00:26:59.610">about scaling down what...beautiful if you do the same experiment you start with a</p>
+      <p begin="00:26:59.610" end="00:27:01.740">forty percent...down.</p>
+      <p begin="00:27:01.740" end="00:27:04.000">It's much better at every stage.</p>
+      <p begin="00:27:05.020" end="00:27:08.720">If you get these guys right next to each other you can sometimes see this is a</p>
+      <p begin="00:27:08.720" end="00:27:16.780">little bit better depending on the art but, in general it's a great story.</p>
+      <p begin="00:27:16.780" end="00:27:19.040">You just do that well.</p>
+      <p begin="00:27:19.040" end="00:27:23.490">The answer is we don't...you just provide big assets and there's a good reason for</p>
+      <p begin="00:27:25.210" end="00:27:27.470">Your apps maybe running on very low</p>
+      <p begin="00:27:27.470" end="00:27:30.740">...devices that don't have room for a lot of big assets.</p>
+      <p begin="00:27:30.740" end="00:27:33.480">Don't forget that...in memory?</p>
+      <p begin="00:27:33.480" end="00:27:38.310">The size of the asset...the square of the scale factor so if you're doing one hundred versus fourteen</p>
+      <p begin="00:27:38.310" end="00:27:43.680">hundred you're talking about sixteen to one ratio now in...footprint it may not be that bad</p>
+      <p begin="00:27:43.680" end="00:27:48.350">because at least this icon content tends to compress pretty well you can see you only got about</p>
+      <p begin="00:27:48.350" end="00:27:52.620">a four-to-one ratio but in order to render to on-screen you are going to have to expand</p>
+      <p begin="00:27:52.620" end="00:27:56.710">...memory so this strained eat a lot of memory at runtime.</p>
+      <p begin="00:27:56.710" end="00:28:01.010">And, this is just one very small.</p>
+      <p begin="00:28:01.010" end="00:28:04.730">...what if you had like a hundred of them.</p>
+      <p begin="00:28:04.730" end="00:28:06.030">And, what if you lead needed larger</p>
+      <p begin="00:28:06.030" end="00:28:10.670">ones you could end up with easily with ten megabytes of memory footprint</p>
+      <p begin="00:28:10.670" end="00:28:15.410">at runtime which would be fine on a very high-end device like a desktop machine or even</p>
+      <p begin="00:28:15.410" end="00:28:19.380">...in phone that's got a lot of...but you don't want to be burdening</p>
+      <p begin="00:28:19.380" end="00:28:22.630">...low-end customers have five hundred megabyte</p>
+      <p begin="00:28:22.630" end="00:28:27.490">phones with ten megabytes of data that they really don't need because...devices probably only running</p>
+      <p begin="00:28:27.490" end="00:28:30.540">...hundred-percent?</p>
+      <p begin="00:28:30.540" end="00:28:35.210">we have a solution for that the first step is you do need to provide more than one asset</p>
+      <p begin="00:28:35.210" end="00:28:37.670">...to four hundred for the...devices media one</p>
+      <p begin="00:28:37.670" end="00:28:43.320">...low-end and we found out and practice having one in the middle is a good idea too.</p>
+      <p begin="00:28:43.320" end="00:28:46.230">...by itself is still not enough because you're still now you're</p>
+      <p begin="00:28:46.230" end="00:28:50.560">...people hundred two hundred four hundred all the time so the other part of it is use</p>
+      <p begin="00:28:50.560" end="00:28:55.300">asset packages and this is a technology that means that your users only download</p>
+      <p begin="00:28:55.300" end="00:29:01.400">scale factors they actually neo their devices that's not a new technology but</p>
+      <p begin="00:29:01.400" end="00:29:06.250">right now telemetry says only about nineteen percent of our developers are using this.</p>
+      <p begin="00:29:06.250" end="00:29:14.270">So, this is a really important thing we want people to...and study...how to use properly.</p>
+      <p begin="00:29:14.270" end="00:29:19.730">let's talk a little bit about the runtime how that's manage asset selection and where these asset</p>
+      <p begin="00:29:19.730" end="00:29:24.120">...fall into it so there's a technology called mit</p>
+      <p begin="00:29:24.120" end="00:29:28.840">modern resource technology I think it's what it stands for and it's basically a technology that</p>
+      <p begin="00:29:28.840" end="00:29:33.570">manages assets...various kinds...strings but,</p>
+      <p begin="00:29:33.570" end="00:29:36.150">maps that kind of thing?</p>
+      <p begin="00:29:36.150" end="00:29:37.460">As a selection mechanism</p>
+      <p begin="00:29:37.460" end="00:29:41.920">is driven by resource naming so in the case of scaling if you</p>
+      <p begin="00:29:41.920" end="00:29:46.890">had an asset lined friendly, friendly name dot ping you would just generate versions names</p>
+      <p begin="00:29:46.890" end="00:29:51.020">...the name scale dash one hundred scale dash two hundred so forth and just</p>
+      <p begin="00:29:51.020" end="00:29:54.500">named in that way and that is enough for the windows runtime to pick them out</p>
+      <p begin="00:29:54.500" end="00:29:59.450">and treat them as different variance different scale factors for the same asset and in</p>
+      <p begin="00:29:59.450" end="00:30:04.390">your code you just use the friendly name dot ping you don't have to address the scale factor at all.</p>
+      <p begin="00:30:04.390" end="00:30:09.050">And, that runtime the runtime will pick the best available version look in your assets folder</p>
+      <p begin="00:30:09.050" end="00:30:13.690">...I see a one and two and a four hundred and I'm running at say</p>
+      <p begin="00:30:13.690" end="00:30:17.470">...I will pick the two hundred and that's the best one is</p>
+      <p begin="00:30:17.470" end="00:30:22.170">available and I will if I need to our bitmap scale it down to fit and results should be pretty good</p>
+      <p begin="00:30:23.480" end="00:30:28.180">what is best actually mean here well I don't want to go into the exact heuristics,</p>
+      <p begin="00:30:28.180" end="00:30:31.720">heuristics do favor down scaling over udp scaling as they should and they do</p>
+      <p begin="00:30:31.720" end="00:30:35.020">...being closer over farther the upshot is that</p>
+      <p begin="00:30:35.020" end="00:30:39.970">if you actually specify the one hundred two hundred four hundred this is what will happen at runtime</p>
+      <p begin="00:30:39.970" end="00:30:45.390">...use the four hundred down scaled two-fifty and maybe up to the future we use a two hundred</p>
+      <p begin="00:30:45.390" end="00:30:54.230">down scaled one twenty-five...use the one hundred for one hundred and results of that look very good.</p>
+      <p begin="00:30:54.230" end="00:30:58.440">Okay, so, you generated your one hundred two hundred four hundred what is this asset</p>
+      <p begin="00:30:58.440" end="00:31:01.900">...thing this is what's really important and asset</p>
+      <p begin="00:31:01.900" end="00:31:03.540">...is just a way of building your</p>
+      <p begin="00:31:03.540" end="00:31:08.140">...your application in visual studio that generates the application and it</p>
+      <p begin="00:31:08.140" end="00:31:10.940">also makes available to the store asset</p>
+      <p begin="00:31:10.940" end="00:31:15.100">...that each contain the assets for particular scale factor now this</p>
+      <p begin="00:31:15.100" end="00:31:19.100">mit technology is not as I said earlier just about scale...is a great way to manage</p>
+      <p begin="00:31:19.100" end="00:31:24.010">...localize will strings as well you can have you different locales...in different</p>
+      <p begin="00:31:24.010" end="00:31:28.900">...and the nice thing about that is that at runtime or at</p>
+      <p begin="00:31:28.900" end="00:31:32.960">...time when I when I have an app and I get from the store to store basically</p>
+      <p begin="00:31:32.960" end="00:31:37.650">looked at my client machine it says something like your english.</p>
+      <p begin="00:31:37.650" end="00:31:41.490">You don't need high contrast names ...you're</p>
+      <p begin="00:31:41.490" end="00:31:43.730">...the normal theme.</p>
+      <p begin="00:31:43.730" end="00:31:49.990">you've got a hundred fifty percent scaling so I'll give you any hundred-fifty percent assets I can</p>
+      <p begin="00:31:49.990" end="00:31:52.600">Failing that I'll give you two hundred failing</p>
+      <p begin="00:31:52.600" end="00:31:57.350">...four...give you one hundred...give you the best selection and...can</p>
+      <p begin="00:31:57.350" end="00:32:02.690">find out of whatever the developer...provided and it will download those to my machine.</p>
+      <p begin="00:32:02.690" end="00:32:07.590">Now you may ask well when I multiply on I've got a one hundred-percent display</p>
+      <p begin="00:32:07.590" end="00:32:09.150">...display.</p>
+      <p begin="00:32:09.150" end="00:32:10.650">The answers very simple</p>
+      <p begin="00:32:10.650" end="00:32:15.220">...detect both of those let's build send you all of those.</p>
+      <p begin="00:32:15.220" end="00:32:18.130">Here the skeptical voices what about if I had a display later on the</p>
+      <p begin="00:32:18.130" end="00:32:24.130">different scale factor that's actually covered too let's say that I've only got</p>
+      <p begin="00:32:24.130" end="00:32:28.420">...percent asset on my machine here and I end up</p>
+      <p begin="00:32:28.420" end="00:32:33.410">...that to a low density monitor...hundred-percent would be more appropriate or the other way around which</p>
+      <p begin="00:32:33.410" end="00:32:38.340">be even more important I only had one percent asset I connected high-density monitor I would really like</p>
+      <p begin="00:32:38.340" end="00:32:43.400">...nice chris presentation what will happen at that instant you'll just have you</p>
+      <p begin="00:32:43.400" end="00:32:47.820">one hundred-percent asset the system will scale it up...hundred-percent but</p>
+      <p begin="00:32:47.820" end="00:32:52.460">...will also kind of put check mark...there saying well you've,</p>
+      <p begin="00:32:52.460" end="00:32:57.820">you've got a...hundred-percent scale factor you could use now and, they're actually is one of the store</p>
+      <p begin="00:32:57.820" end="00:33:02.490">I see it so let me mark your application is suitable for update.</p>
+      <p begin="00:33:02.490" end="00:33:05.650">And, the next time you go to update your application which you may notice right away</p>
+      <p begin="00:33:05.650" end="00:33:11.310">...notification center what you'll get is actually not a code update but you'll get the new asset you need not</p>
+      <p begin="00:33:11.310" end="00:33:16.680">have a crisper experience and that device in the future.</p>
+      <p begin="00:33:16.680" end="00:33:18.330">That's the asset...technology that's the</p>
+      <p begin="00:33:18.330" end="00:33:23.250">...only twenty percent of our developers...today we really everybody picking up on this</p>
+      <p begin="00:33:23.250" end="00:33:25.910">and taking advantage of it so</p>
+      <p begin="00:33:25.910" end="00:33:32.080">...might come back to now that question of one hundred two hundred four hundred tell you what that buys you we think one</p>
+      <p begin="00:33:32.080" end="00:33:36.920">hundred-percent is definitely the starting point is in fact the default so if you don't do</p>
+      <p begin="00:33:36.920" end="00:33:41.860">something extraordinary visual studio when it goes to build your application will say wait you don't have a one</p>
+      <p begin="00:33:41.860" end="00:33:46.820">hundred-percent for this and you have to actually go into the manifest make changes if you don't want to provide one</p>
+      <p begin="00:33:46.820" end="00:33:51.230">hundred-percent and it makes sense because eighty five percent of our desktop devices are still</p>
+      <p begin="00:33:51.230" end="00:33:55.570">running hundred-percent today even with the high dpi devices that are coming there's a lot of</p>
+      <p begin="00:33:55.570" end="00:34:00.160">legacy hardware out there and they're still the low-end the cheapest thing you can...</p>
+      <p begin="00:34:01.220" end="00:34:05.060">Some of the new low-end tablets are also falling into that space phones are not</p>
+      <p begin="00:34:05.060" end="00:34:08.520">...that space phone started around hundred-fifty maybe a few hundred</p>
+      <p begin="00:34:08.520" end="00:34:14.030">...five but this you can see is going to be a huge number of devices.</p>
+      <p begin="00:34:14.030" end="00:34:19.660">Number two I think priorities twenty percent because then that gives you great down scaling coverage</p>
+      <p begin="00:34:19.660" end="00:34:23.110">...dpi desktops...traditionally or hundred-twenty five.</p>
+      <p begin="00:34:23.110" end="00:34:24.540">Two-fifty.</p>
+      <p begin="00:34:24.540" end="00:34:27.370">Of...one fifty two hundred maybe even</p>
+      <p begin="00:34:27.370" end="00:34:31.090">...two hundred...be pretty good results.</p>
+      <p begin="00:34:31.090" end="00:34:36.060">also by the same token give you really good coverage for most of the phones are likely to run on that are...higher</p>
+      <p begin="00:34:36.060" end="00:34:41.840">meet the running...hundred-twenty five alway...percent but then we think the third one forty percent</p>
+      <p begin="00:34:41.840" end="00:34:47.030">is really important for future proofing because we already know acuity phones are here.</p>
+      <p begin="00:34:47.030" end="00:34:49.420">And, the four-k tablets are coming and they'll be down</p>
+      <p begin="00:34:49.420" end="00:34:53.180">...fairly small sizes and by the way when you do that it also</p>
+      <p begin="00:34:53.180" end="00:34:58.100">improve some of these high-end devices that are already out there it's better than the...hundred-percent for those.</p>
+      <p begin="00:34:58.100" end="00:35:03.250">So, we really think these are the three importance and to nail and get right.</p>
+      <p begin="00:35:03.250" end="00:35:04.180">And, by the way if you</p>
+      <p begin="00:35:04.180" end="00:35:09.030">porting from and ios app you've already got these two.</p>
+      <p begin="00:35:09.030" end="00:35:12.690">And, if you reporting from android you probably have all three.</p>
+      <p begin="00:35:12.690" end="00:35:16.920">That is unless you...only delivering ios and android one hundred-percent assets so</p>
+      <p begin="00:35:16.920" end="00:35:21.510">now's the time to get out of that fifty-six percent of our developers and,</p>
+      <p begin="00:35:21.510" end="00:35:25.340">start providing better assets we also have telemetry data that says about forty three percent</p>
+      <p begin="00:35:25.340" end="00:35:30.410">of our users notice scale-up assets in use and find them ugly</p>
+      <p begin="00:35:30.410" end="00:35:35.510">not a good look at so as a huge number of users that</p>
+      <p begin="00:35:35.510" end="00:35:39.820">you could be making quite a bit happier by providing these higher levels of assets.</p>
+      <p begin="00:35:39.820" end="00:35:44.790">And, this would be saying...up your after success against your competitors if you're</p>
+      <p begin="00:35:44.790" end="00:35:49.730">reluctant to do that first at least keep an eye out for feedback and see if people are complaining about</p>
+      <p begin="00:35:49.730" end="00:35:56.410">...visuals and if you start to see that take...a as assigned you need upgrade your assets.</p>
+      <p begin="00:35:56.410" end="00:36:00.260">Here's an interesting table just tells you kind of some sample...examples of</p>
+      <p begin="00:36:00.260" end="00:36:04.000">...devices that would actually follies various categories and kind of</p>
+      <p begin="00:36:04.000" end="00:36:08.080">a sense and how they how they look abstractly I won't talk to that...a good thing</p>
+      <p begin="00:36:08.080" end="00:36:13.030">to look at what's kind of nice is if you stick with our one hundred twenty percent for hundred-percent device</p>
+      <p begin="00:36:13.030" end="00:36:22.100">advice you can see how what kind of coverage you get from each one of the scale factors?</p>
+      <p begin="00:36:22.100" end="00:36:23.750">Okay, so.</p>
+      <p begin="00:36:23.750" end="00:36:27.560">We want you to make one hundred twenty four percent assets.</p>
+      <p begin="00:36:27.560" end="00:36:32.490">How do you know-how big to make them I mean if you're going to author asset you're probably working in some kind of</p>
+      <p begin="00:36:32.490" end="00:36:37.080">...physical pixel space you really want to make you want the what the twitter and</p>
+      <p begin="00:36:37.080" end="00:36:41.860">...for example, exactly the right physical size to take up that</p>
+      <p begin="00:36:41.860" end="00:36:47.280">many pixels so it doesn't have any stretching by the runtime so this</p>
+      <p begin="00:36:47.280" end="00:36:49.470">...now even though we've sort of told you do everything</p>
+      <p begin="00:36:49.470" end="00:36:54.580">...pixels you have to worry about actual pixels not really</p>
+      <p begin="00:36:54.580" end="00:36:57.150">...as a designer you should still be starting with your effective pixel</p>
+      <p begin="00:36:57.150" end="00:37:01.840">ui layout because the size and effective pixels is actually the one</p>
+      <p begin="00:37:01.840" end="00:37:04.740">hundred-percent physical size you need to target so if</p>
+      <p begin="00:37:04.740" end="00:37:08.850">...if you if you wanted have a three hundred...effective pixel</p>
+      <p begin="00:37:10.060" end="00:37:15.350">icahn or picture of some kind then that you want...size?</p>
+      <p begin="00:37:15.350" end="00:37:20.180">And, due to represent size is going to double that you forty percent size quadruple that so the</p>
+      <p begin="00:37:20.180" end="00:37:25.170">math is very easy nothing hard to worry about you don't need to know about what the actual size are going-to be at runtime</p>
+      <p begin="00:37:25.170" end="00:37:31.700">you just need to know I...to be three-by-three...effective pixels and these are the size you need author.</p>
+      <p begin="00:37:31.700" end="00:37:37.540">...a quick moment here to skip over and just show.</p>
+      <p begin="00:37:37.540" end="00:37:39.490">...and bs.</p>
+      <p begin="00:37:39.490" end="00:37:42.710">And, use different machine for this is almost</p>
+      <p begin="00:37:42.710" end="00:37:46.530">a no-brainer of an app I basically took a new project</p>
+      <p begin="00:37:46.530" end="00:37:50.480">system that bs study new project I went into the</p>
+      <p begin="00:37:50.480" end="00:37:55.380">main panel and you can see where the where the default grid was I just</p>
+      <p begin="00:37:55.380" end="00:37:57.040">...image.</p>
+      <p begin="00:37:57.040" end="00:38:01.920">And, I gave it a source name assets sampled...bing.</p>
+      <p begin="00:38:01.920" end="00:38:06.700">And, I moved around a little bit...where I wanted it and then over here</p>
+      <p begin="00:38:06.700" end="00:38:10.840">in the assets file you can see I've got sample that scaled dash one hundred scale gestures</p>
+      <p begin="00:38:10.840" end="00:38:14.450">...four hundred so I created those offline just using a bitmap</p>
+      <p begin="00:38:14.450" end="00:38:20.170">editors really and dumping here and immediately bs knows</p>
+      <p begin="00:38:20.170" end="00:38:23.860">...knows how to connect those because it's got the mit technology built-in</p>
+      <p begin="00:38:23.860" end="00:38:28.900">...collecting into that so you're seeing actually the for hundred-percent scale now why we...community</p>
+      <p begin="00:38:28.900" end="00:38:34.020">...answer is that in my designer I...to pick this particular capability for</p>
+      <p begin="00:38:34.020" end="00:38:38.750">the drop down so this would be a five-inch phone tend earphone which will default to three</p>
+      <p begin="00:38:38.750" end="00:38:44.690">percent scaling so since I'm providing one-two and for the best twitter three hundred is</p>
+      <p begin="00:38:44.690" end="00:38:49.480">...down scale from four hundred that's what I...would do it runtime and that's what...showing here.</p>
+      <p begin="00:38:49.480" end="00:38:52.610">And, you can see very easily that if I were to switches to...</p>
+      <p begin="00:38:53.800" end="00:38:58.550">...hundred-percent scale device that what...not</p>
+      <p begin="00:38:58.550" end="00:39:02.590">...one hundred scaling so.</p>
+      <p begin="00:39:02.590" end="00:39:06.580">It's kind of interesting actually you can just as further proof that you don't need to have all these scale</p>
+      <p begin="00:39:06.580" end="00:39:07.080">factors.</p>
+      <p begin="00:39:08.870" end="00:39:12.600">Two-fifty I still using the four hundred.</p>
+      <p begin="00:39:12.600" end="00:39:19.060">You really can't tell visually that's being down scale but it is on-the-fly so.</p>
+      <p begin="00:39:19.060" end="00:39:22.440">So, that's really all there is to this it's very easy the</p>
+      <p begin="00:39:22.440" end="00:39:27.360">it's almost a intuitive in terms of dumping things and having the named appropriately</p>
+      <p begin="00:39:27.360" end="00:39:31.420">connecting them up and again the only connective tissue there was having.</p>
+      <p begin="00:39:31.420" end="00:39:33.360">Having the source name.</p>
+      <p begin="00:39:33.360" end="00:39:35.160">Assets...slash sample...</p>
+      <p begin="00:39:37.060" end="00:39:42.950">please study this make sure you get this into all your applications the word about asset authoring</p>
+      <p begin="00:39:42.950" end="00:39:47.450">in the demo I just showed you I just used to bitmap editor the...</p>
+      <p begin="00:39:47.450" end="00:39:50.710">Open-source kind of thing that anybody can get their hands-on didn't do a</p>
+      <p begin="00:39:50.710" end="00:39:55.200">lot of work in real-life course you probably have more...higher artistic</p>
+      <p begin="00:39:55.200" end="00:40:01.420">...you're striving for with your assets we would ask you to use vector assets whenever possible there</p>
+      <p begin="00:40:01.420" end="00:40:03.380">are number reasons why.</p>
+      <p begin="00:40:03.380" end="00:40:07.980">They give you a...quality artwork at any scale factor so if you got something looks really good.</p>
+      <p begin="00:40:07.980" end="00:40:11.810">It's probably going to...any scale fact...out and it's very</p>
+      <p begin="00:40:11.810" end="00:40:15.690">easy to do that so in fact you may want to just go ahead and support all the scale factor</p>
+      <p begin="00:40:15.690" end="00:40:21.400">you a at the very beginning it gives you the most control over the way things look if you</p>
+      <p begin="00:40:21.400" end="00:40:25.210">...do that...you sort of fitted that second-stage on the pyramid.</p>
+      <p begin="00:40:25.210" end="00:40:27.870">It's also easy to come back to later on</p>
+      <p begin="00:40:27.870" end="00:40:32.090">you just imagine you put your app it's selling well.</p>
+      <p begin="00:40:32.090" end="00:40:35.950">But, there's a barrier towards in europe because you need...versions and unfortunately</p>
+      <p begin="00:40:35.950" end="00:40:39.290">your art work has some that localize text.</p>
+      <p begin="00:40:39.290" end="00:40:43.200">Well, if you use decked design tools you just go back in there and you at the strings and</p>
+      <p begin="00:40:43.200" end="00:40:48.010">you put them out and use them...organize them as both scale factor and</p>
+      <p begin="00:40:48.010" end="00:40:52.740">language depended assets and you're done so that's a lot easier than having to work with bitmap</p>
+      <p begin="00:40:52.740" end="00:40:56.580">editors if you are using bitmap art tooling them</p>
+      <p begin="00:40:56.580" end="00:41:00.620">our recommendation be start with a hundred-percent because it's a lot easier to scale that down and</p>
+      <p begin="00:41:01.790" end="00:41:09.700">...blow it up and try to crisper up you'll end up catching a lot more pixels if you do with the other way around.</p>
+      <p begin="00:41:09.700" end="00:41:13.390">And, if by using vector design tools like adobe illustrator like they're</p>
+      <p begin="00:41:13.390" end="00:41:18.150">already all kinds of scripts out there for android and like that...you just</p>
+      <p begin="00:41:18.150" end="00:41:25.090">...base spit out all the scale effect you need support.</p>
+      <p begin="00:41:25.090" end="00:41:29.160">Let me sum up here you kind of the call the action.</p>
+      <p begin="00:41:29.160" end="00:41:33.180">We want to see assets at a hundred two hundred forty percent in</p>
+      <p begin="00:41:33.180" end="00:41:38.350">all applications not just fifty-six percent we think this is the right way going forward</p>
+      <p begin="00:41:38.350" end="00:41:42.820">...put you in a great place to be future proof for future devices and</p>
+      <p begin="00:41:42.820" end="00:41:47.500">it'll give you a great experience on all the existing devices we also want to users asset</p>
+      <p begin="00:41:47.500" end="00:41:51.460">...because really important to be taking up a minimal footprint specially on</p>
+      <p begin="00:41:51.460" end="00:41:54.030">lower and devices it's easy to do</p>
+      <p begin="00:41:54.030" end="00:41:58.870">and only twenty percent of use or using it now so learn more about that.</p>
+      <p begin="00:41:58.870" end="00:42:01.430">That will take care of all the asset work.</p>
+      <p begin="00:42:01.430" end="00:42:06.770">Then the bigger thing is go often...of these are the talks because we're going to spend a lot of time talking about now</p>
+      <p begin="00:42:06.770" end="00:42:10.370">...doing scaling for you and we're getting these effective pixels effective</p>
+      <p begin="00:42:10.370" end="00:42:14.920">resolutions how do you do your layout how do you handle changes</p>
+      <p begin="00:42:14.920" end="00:42:19.670">...resolution as...as an application moves from one display to another or is</p>
+      <p begin="00:42:19.670" end="00:42:24.820">deploys on different devices and there's a whole set of talks here with different</p>
+      <p begin="00:42:24.820" end="00:42:30.490">levels of detail about this...very-high-level some are very design focused but I think they're all excellent</p>
+      <p begin="00:42:30.490" end="00:42:33.670">and...more information...that there?</p>
+      <p begin="00:42:33.670" end="00:42:38.170">So, that's what we're asking for take off-beat this big bite with the effective resolution</p>
+      <p begin="00:42:38.170" end="00:42:43.490">effective pixel work and do us take a step up here in the bitmap</p>
+      <p begin="00:42:43.490" end="00:42:47.620">...getting a better experience...our customers all right</p>
+      <p begin="00:42:47.620" end="00:42:51.360">thanks very much I hope this is helpful to you and look for the...you again?</p>
+
+    </div>
+  </body>
+</tt>

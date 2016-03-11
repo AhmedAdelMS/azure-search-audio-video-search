@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.908</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.470" end="00:00:03.020">Well, hello,...I'm andrew white...I'm going to</p>
+      <p begin="00:00:03.020" end="00:00:08.490">talk to-you about resource management primarily memory and cpu.</p>
+      <p begin="00:00:08.490" end="00:00:11.670">And, how it affects your app and how your</p>
+      <p begin="00:00:11.670" end="00:00:17.500">app can take advantage of memory and cpu policies?</p>
+      <p begin="00:00:17.500" end="00:00:23.980">So, first we'll look at why you should even pay any attention to this tool why does it matter to</p>
+      <p begin="00:00:23.980" end="00:00:27.670">you and why do you actually have to do anything about it?</p>
+      <p begin="00:00:27.670" end="00:00:33.150">And, I'll look at all of the things that policy covers it mainly covers memory...cpu all memory and cpu the</p>
+      <p begin="00:00:33.150" end="00:00:36.730">most critical things that covers...lots of other things as well.</p>
+      <p begin="00:00:37.800" end="00:00:41.720">And,...look at the rationale behind this why the system does this and what</p>
+      <p begin="00:00:41.720" end="00:00:47.340">is trying to do in policing these resources and look at the structure of</p>
+      <p begin="00:00:47.340" end="00:00:52.140">how it's implemented so you can see how it's trying to achieve the goals</p>
+      <p begin="00:00:52.140" end="00:00:56.610">of resource policy, policy does very it's</p>
+      <p begin="00:00:56.610" end="00:01:01.940">...a single resource manager on the system across all of windows ten and,</p>
+      <p begin="00:01:01.940" end="00:01:05.630">there's a single policy but the policy values change?</p>
+      <p begin="00:01:05.630" end="00:01:08.920">According to the skew and according to the device and,</p>
+      <p begin="00:01:08.920" end="00:01:15.030">I can also change dynamically according to the conditions the arise that runtime.</p>
+      <p begin="00:01:15.030" end="00:01:18.080">And,...at some code because this isn't just something that's</p>
+      <p begin="00:01:18.080" end="00:01:22.880">and imposed externally on your app it's something that you're at can</p>
+      <p begin="00:01:22.880" end="00:01:28.580">take advantage of or not you can take part in this and you can cooperation</p>
+      <p begin="00:01:28.580" end="00:01:30.790">you can use it to...</p>
+      <p begin="00:01:31.840" end="00:01:35.700">Or you can completely ignore it which tends to be</p>
+      <p begin="00:01:35.700" end="00:01:43.210">the less good choice and look at...look at the code options you have any api?</p>
+      <p begin="00:01:43.210" end="00:01:47.180">So, why should your...attention to this?</p>
+      <p begin="00:01:47.180" end="00:01:49.180">We making some assumptions here my first</p>
+      <p begin="00:01:49.180" end="00:01:53.280">assumption is that you want to target...</p>
+      <p begin="00:01:53.280" end="00:01:57.910">of a sensible range of different devices so it's possible that you actually</p>
+      <p begin="00:01:57.910" end="00:02:01.710">want target all possible windows ten devices</p>
+      <p begin="00:02:01.710" end="00:02:05.640">across all possible skews across mobile and desktop and</p>
+      <p begin="00:02:05.640" end="00:02:10.740">coyote and xbox and holler...and,</p>
+      <p begin="00:02:10.740" end="00:02:14.140">every single device within the skews.</p>
+      <p begin="00:02:14.140" end="00:02:16.270">That's somewhat unlikely</p>
+      <p begin="00:02:16.270" end="00:02:21.770">...heavily possible for some types of apps but for most steps you probably targeting</p>
+      <p begin="00:02:21.770" end="00:02:26.800">a subset of that-you might target like all of desktop every single desktop</p>
+      <p begin="00:02:26.800" end="00:02:32.070">device that runs windows ten what might be a combination it all of desktop and all of</p>
+      <p begin="00:02:32.070" end="00:02:37.900">...people desktop plus xbox or...some permutation the</p>
+      <p begin="00:02:37.900" end="00:02:41.170">point is that these this is a very wide range of devices.</p>
+      <p begin="00:02:42.220" end="00:02:47.160">Even within one skew is a wide range of devices you can imagine a desktop pc there isn't</p>
+      <p begin="00:02:47.160" end="00:02:52.130">a single thing it's it ranges from a pc that might have only.</p>
+      <p begin="00:02:52.130" end="00:02:54.210">One gig of physical ram</p>
+      <p begin="00:02:54.210" end="00:02:59.670">and a tiny page file and really slow disk and...screen</p>
+      <p begin="00:02:59.670" end="00:03:04.560">although up to something that has maybe hundred-twenty aching of physical ram and</p>
+      <p begin="00:03:04.560" end="00:03:07.720">a huge fast disclose lots of page file</p>
+      <p begin="00:03:07.720" end="00:03:14.990">the queries dynamically and the and multiple...screens.</p>
+      <p begin="00:03:14.990" end="00:03:23.860">there's a big range even within one skewed and if you go across skews the range gets even bigger.</p>
+      <p begin="00:03:23.860" end="00:03:28.160">The assumption is that you want you to targets more than just one single device and therefore you</p>
+      <p begin="00:03:28.160" end="00:03:31.050">can have to accommodate different device configurations</p>
+      <p begin="00:03:31.050" end="00:03:35.340">different memory different screen resolution different networking capabilities</p>
+      <p begin="00:03:35.340" end="00:03:42.760">different keyboard mouse hardware so on.</p>
+      <p begin="00:03:42.760" end="00:03:48.230">And, it's not just something that you plan up-front for a particular device</p>
+      <p begin="00:03:48.230" end="00:03:51.940">and once installed that says because things change</p>
+      <p begin="00:03:51.940" end="00:03:54.200">the runtime as well.</p>
+      <p begin="00:03:54.200" end="00:03:58.510">So, even though you say well I'm targeting this...devices with have and minimum memory</p>
+      <p begin="00:03:58.510" end="00:04:01.200">...of x and a minimum screen resolution of y</p>
+      <p begin="00:04:01.200" end="00:04:04.120">...it must have a mouse and it must have wi-fi it must have whatever</p>
+      <p begin="00:04:05.300" end="00:04:11.350">...these things can change even within the things that you consider important to around.</p>
+      <p begin="00:04:11.350" end="00:04:15.090">And, the changes fall into three.</p>
+      <p begin="00:04:15.090" end="00:04:19.020">Broad buckets what I'm what I'm calling hardware changes so you</p>
+      <p begin="00:04:19.020" end="00:04:24.360">install your app on a devices got to giga of physical ram and then the user instill</p>
+      <p begin="00:04:24.360" end="00:04:29.680">...memory...they had more memory and they take some out will they install an additional</p>
+      <p begin="00:04:29.680" end="00:04:34.150">...or...external screen oryou know,</p>
+      <p begin="00:04:34.150" end="00:04:39.050">so, those things can change and you would want to take advantage of more memory and equally you</p>
+      <p begin="00:04:39.050" end="00:04:45.600">would want to adjust yourself in the face of memory going away...</p>
+      <p begin="00:04:45.600" end="00:04:49.520">You wouldn't want to just fall over and stop working.</p>
+      <p begin="00:04:49.520" end="00:04:54.260">And, then the second bucket encoding connectivity because it includes things like</p>
+      <p begin="00:04:54.260" end="00:05:00.120">network connectivity on the strength of the connection the speed of the connection but</p>
+      <p begin="00:05:00.120" end="00:05:06.430">also things like can a cellular data and ...my in a roaming the.</p>
+      <p begin="00:05:06.430" end="00:05:11.850">And, then state changes...changes that a particular to the windows platform</p>
+      <p begin="00:05:11.850" end="00:05:12.350">where.</p>
+      <p begin="00:05:13.420" end="00:05:16.700">Things can change depending on what you're doing.</p>
+      <p begin="00:05:16.700" end="00:05:20.330">So, for example, if you're if you're.</p>
+      <p begin="00:05:20.330" end="00:05:24.780">Foreground app with you why the uses interacting with actively in the foreground</p>
+      <p begin="00:05:24.780" end="00:05:30.050">then resource policy says that you'll get a certain amount of memory or up to a certain</p>
+      <p begin="00:05:30.050" end="00:05:36.010">amount of memory...use a switches away and navigate to some other app than the previous</p>
+      <p begin="00:05:36.010" end="00:05:41.390">up is no longer the foreground app is no longer being interactively is so,</p>
+      <p begin="00:05:41.390" end="00:05:43.530">it's resource.</p>
+      <p begin="00:05:43.530" end="00:05:47.120">Grunts change it...less memory might get less</p>
+      <p begin="00:05:47.120" end="00:05:52.420">cpu it might not have the same access to critical the</p>
+      <p begin="00:05:52.420" end="00:05:56.310">...on the device that it would have otherwise so things can change</p>
+      <p begin="00:05:56.310" end="00:06:00.160">...runtime according to the state of the art and then use</p>
+      <p begin="00:06:00.160" end="00:06:04.110">...switch back again and, dual previous up not comes back into the</p>
+      <p begin="00:06:04.110" end="00:06:11.710">...and then it gets again the change mike and the other direction like it more memory you might get more cpu.</p>
+      <p begin="00:06:11.710" end="00:06:17.060">So, you're up it pays you to pay attention to the conditions that you</p>
+      <p begin="00:06:17.060" end="00:06:23.270">find on the device and to continue to pay attention as these conditions change.</p>
+      <p begin="00:06:23.270" end="00:06:27.830">...a couple of fairly obvious things as well that the consequences of</p>
+      <p begin="00:06:27.830" end="00:06:31.950">...paying attention or not paying attention one is the battery the</p>
+      <p begin="00:06:31.950" end="00:06:38.700">wall of shame so the system reports in the y to the user so they</p>
+      <p begin="00:06:38.700" end="00:06:43.570">can see the energy consumption of the each...particular when apps</p>
+      <p begin="00:06:43.570" end="00:06:49.870">go above certain critical thresholds we consider them to be.</p>
+      <p begin="00:06:49.870" end="00:06:55.780">Very energy conservative apps very energy intensive apps so you</p>
+      <p begin="00:06:55.780" end="00:07:01.040">generally you prefer your out not to show up on that list a tool for at least if it</p>
+      <p begin="00:07:01.040" end="00:07:05.620">does show up to show up with a very small bar saying it's not using very much energy</p>
+      <p begin="00:07:05.620" end="00:07:09.990">because if it does show up on that list...it uses a lot of energy there's</p>
+      <p begin="00:07:09.990" end="00:07:14.000">...the risk that the user will turn off your apple toward on installed</p>
+      <p begin="00:07:14.000" end="00:07:19.820">it because they may have a preference for battery lifetime score.</p>
+      <p begin="00:07:19.820" end="00:07:28.720">Reduce energy consumption over whatever features your app is providing.</p>
+      <p begin="00:07:28.720" end="00:07:31.460">And,...would want to pay attention so that you</p>
+      <p begin="00:07:31.460" end="00:07:35.980">don't you don't do one of the to extremely that crash.</p>
+      <p begin="00:07:35.980" end="00:07:40.910">So, for example, if you're if you're making excessive memory allocations you will eventually</p>
+      <p begin="00:07:40.910" end="00:07:44.860">get...out of memory exception if you handle that is propagated</p>
+      <p begin="00:07:44.860" end="00:07:50.160">too and you can handle and then you can continue on if you don't if you just ignore it</p>
+      <p begin="00:07:50.160" end="00:07:57.640">...you apple be terminated and from the uses perspective that looks like...crash.</p>
+      <p begin="00:07:57.640" end="00:08:02.700">The other end of the...the flip side of the bad behavior is where you</p>
+      <p begin="00:08:02.700" end="00:08:07.160">...crash but...consuming so much in terms of resources</p>
+      <p begin="00:08:07.160" end="00:08:12.250">so much memory so much cpu so much network bandwidth this guy the</p>
+      <p begin="00:08:12.250" end="00:08:15.870">...rest of the system slows down.</p>
+      <p begin="00:08:15.870" end="00:08:19.790">And, again, the user...see that eventually they'll figure out that your app is</p>
+      <p begin="00:08:19.790" end="00:08:27.290">his badly behaved and they will in a there is a...that they will on install it.</p>
+      <p begin="00:08:27.290" end="00:08:30.070">So, what you want to do is to take full advantage the system</p>
+      <p begin="00:08:30.070" end="00:08:34.660">is all the features that has available to without negatively</p>
+      <p begin="00:08:34.660" end="00:08:44.930">affecting the system without negatively affecting the overall user experience?</p>
+      <p begin="00:08:44.930" end="00:08:49.450">So, the system polices resource constraints</p>
+      <p begin="00:08:50.980" end="00:08:53.910">the on most devices resources well,</p>
+      <p begin="00:08:53.910" end="00:08:59.710">...all devices resources a finite even if you consider a huge desktop</p>
+      <p begin="00:08:59.710" end="00:09:02.670">Hundred-twenty eight gig of ram and massive hottest</p>
+      <p begin="00:09:02.670" end="00:09:07.010">...still in limit to how much is actually available and the user can</p>
+      <p begin="00:09:07.010" end="00:09:11.200">keep on installing additional physical ram up to a point...still</p>
+      <p begin="00:09:11.200" end="00:09:16.610">...limit somewhat and certainly at the bottom into the scale the constraints</p>
+      <p begin="00:09:16.610" end="00:09:22.120">...very severe so if you...the five twelve make.</p>
+      <p begin="00:09:22.120" end="00:09:26.430">Mobile device it's got very little memory to start ways it's got a very</p>
+      <p begin="00:09:26.430" end="00:09:28.710">small very slow page file typically.</p>
+      <p begin="00:09:30.730" end="00:09:33.660">And, then...everything in between.</p>
+      <p begin="00:09:33.660" end="00:09:37.900">So, we have to manage these finite resources in the face of</p>
+      <p begin="00:09:37.900" end="00:09:44.620">multiple apps multiple background tasks wanting to run concurrently so,</p>
+      <p begin="00:09:44.620" end="00:09:50.720">there's associate resource contention and what we try to do is to maintain</p>
+      <p begin="00:09:50.720" end="00:09:53.570">a balance in the user experience say that we</p>
+      <p begin="00:09:53.570" end="00:09:57.570">dainty ground full resources to any one</p>
+      <p begin="00:09:57.570" end="00:10:02.200">apple anyone task it's not a single tasking systems even though the</p>
+      <p begin="00:10:02.200" end="00:10:08.050">users interacting with some app in the foreground we don't give that</p>
+      <p begin="00:10:08.050" end="00:10:12.240">foreground up everything on the system because that would mean other things that</p>
+      <p begin="00:10:12.240" end="00:10:16.770">the uses expecting...be happening so they expect to be able</p>
+      <p begin="00:10:16.770" end="00:10:23.250">to receive incoming...or skunk vote...they expect the</p>
+      <p begin="00:10:23.250" end="00:10:28.840">email to sink in the background if they if they...a download or...expect that to continue</p>
+      <p begin="00:10:28.840" end="00:10:32.990">and to make progress in the background even the they might be doing something else in the</p>
+      <p begin="00:10:32.990" end="00:10:38.700">photographed so we try to balance all of the things that could be happening and we</p>
+      <p begin="00:10:38.700" end="00:10:40.860">give we...more resources to some things</p>
+      <p begin="00:10:40.860" end="00:10:47.080">in some situations and bless resources to other things in other situations and things change?</p>
+      <p begin="00:10:47.080" end="00:10:51.710">Depends on the type of task that it is and how it fits into the balance of</p>
+      <p begin="00:10:51.710" end="00:10:55.610">the user experience what is actually doing for the user whether,</p>
+      <p begin="00:10:55.610" end="00:11:00.600">whether the user is aware of is?</p>
+      <p begin="00:11:00.600" end="00:11:04.260">And,...he's interacting with...directly or is simply aware of it is not necessarily</p>
+      <p begin="00:11:04.260" end="00:11:08.970">directly interacting with it and then things...other...scale which they know happen sometimes but</p>
+      <p begin="00:11:08.970" end="00:11:14.590">...not quite sure when...even away and they didn't they didn't see it happening?</p>
+      <p begin="00:11:14.590" end="00:11:17.400">And, in balancing all of these</p>
+      <p begin="00:11:17.400" end="00:11:24.190">different competing resource requirements we want to achieve predictability so that</p>
+      <p begin="00:11:24.190" end="00:11:27.480">the user can expect things to happen even though they're not directly</p>
+      <p begin="00:11:27.480" end="00:11:32.790">interacting with them and say that the app knows what to expect the</p>
+      <p begin="00:11:32.790" end="00:11:37.500">...we provide enough api surface say that the app can icy figure out</p>
+      <p begin="00:11:37.500" end="00:11:42.850">what's going on can respond to changes can get notifications when things that</p>
+      <p begin="00:11:42.850" end="00:11:44.710">affect change.</p>
+      <p begin="00:11:44.710" end="00:11:45.850">And, can react accordingly?</p>
+      <p begin="00:11:46.950" end="00:11:55.350">Instead of just falling over unexpectedly.</p>
+      <p begin="00:11:55.350" end="00:11:56.910">So, I mentioned already that's the</p>
+      <p begin="00:11:56.910" end="00:12:03.540">main things that policy covers is memory and cpu?</p>
+      <p begin="00:12:03.540" end="00:12:06.840">But, we also police task lifetime so different types of</p>
+      <p begin="00:12:06.840" end="00:12:12.000">task get to run for different length of time.</p>
+      <p begin="00:12:12.000" end="00:12:16.600">And, we also police access to certain device sensors like the microphone and the</p>
+      <p begin="00:12:16.600" end="00:12:21.270">camera and the speech synthesis so on</p>
+      <p begin="00:12:21.270" end="00:12:26.390">...a few other things that we police as well as all passive providing</p>
+      <p begin="00:12:26.390" end="00:12:31.570">this holistic experience where we balance the competing requirements of different tasks</p>
+      <p begin="00:12:31.570" end="00:12:33.750">...view to maintaining the</p>
+      <p begin="00:12:33.750" end="00:12:40.230">...expectations and meeting uses expectations.</p>
+      <p begin="00:12:40.230" end="00:12:44.110">So, memory first of all this is just an example and</p>
+      <p begin="00:12:44.110" end="00:12:48.370">...don't pay too much attention to the specific numbers you can imagine</p>
+      <p begin="00:12:48.370" end="00:12:53.430">...since we covermultiple skews and all of the devices within,</p>
+      <p begin="00:12:53.430" end="00:12:57.570">within that skew the matrix of possible values huge.</p>
+      <p begin="00:12:59.170" end="00:13:05.660">So, don't worry too much about the specific values just look at the example math that's going on here?</p>
+      <p begin="00:13:05.660" end="00:13:08.010">If we take the.</p>
+      <p begin="00:13:08.010" end="00:13:12.230">The first column the five twelve make phone example...follow</p>
+      <p begin="00:13:12.230" end="00:13:16.890">...down so you can see what the math is that we using this is obviously very simplified but</p>
+      <p begin="00:13:18.200" end="00:13:23.170">we look at the device starts with five hundred twelve mega physical...</p>
+      <p begin="00:13:23.170" end="00:13:27.820">We look at the paging level on the device known this device it's going to supporter two</p>
+      <p begin="00:13:27.820" end="00:13:30.280">...fifty six make page file</p>
+      <p begin="00:13:30.280" end="00:13:37.070">but typically on these devices the storage devices slow.</p>
+      <p begin="00:13:37.070" end="00:13:42.440">So, we can't use all of the page file we can generally use up to...eighty percent of</p>
+      <p begin="00:13:42.440" end="00:13:45.620">...before the system is thrashing so</p>
+      <p begin="00:13:45.620" end="00:13:50.880">badly that performances is actually worse than if we use less of the page file.</p>
+      <p begin="00:13:50.880" end="00:13:55.920">we assumearound about eighty percent of that to fifty-six to give us two hundred we</p>
+      <p begin="00:13:55.920" end="00:13:59.380">...that off and that's a base that's what was that the...</p>
+      <p begin="00:13:59.380" end="00:14:07.430">physical constraints we have no more resource than that that's a finite resources in memory.</p>
+      <p begin="00:14:07.430" end="00:14:13.170">And, then we look at the things which are pretty much guaranteed reservations</p>
+      <p begin="00:14:13.170" end="00:14:18.050">...of...package if there is one the operating system itself the drive is the</p>
+      <p begin="00:14:18.050" end="00:14:23.600">system services all of these things are effectively on pennies but they take</p>
+      <p begin="00:14:23.600" end="00:14:25.470">up memory?</p>
+      <p begin="00:14:25.470" end="00:14:29.140">So, we allow for those...we allow for some things that we do</p>
+      <p begin="00:14:29.140" end="00:14:32.920">...but we have to pretty much guarantee says if the oem</p>
+      <p begin="00:14:32.920" end="00:14:36.010">all the mobile operator has deployed</p>
+      <p begin="00:14:36.010" end="00:14:38.810">...service agent on the device then that has</p>
+      <p begin="00:14:38.810" end="00:14:46.520">...has to run if you've got...from...has to run you have to be able to taken incoming call.</p>
+      <p begin="00:14:46.520" end="00:14:51.150">...that the tasks managing the incoming call has to run because otherwise by the</p>
+      <p begin="00:14:51.150" end="00:14:56.500">time we is not running the time we started up the other end the serve all of drop the</p>
+      <p begin="00:14:56.500" end="00:15:03.040">...because the delays too long so we have to keep this thing running the...again if you have...and</p>
+      <p begin="00:15:03.040" end="00:15:08.000">that everything has to go through...and therefore that has to be running so there's some critical carve</p>
+      <p begin="00:15:08.000" end="00:15:09.520">out so that.</p>
+      <p begin="00:15:09.520" end="00:15:13.910">The subtract from the available memory.</p>
+      <p begin="00:15:13.910" end="00:15:17.760">...take the physical...page file we subtract all of the guaranteed...</p>
+      <p begin="00:15:20.080" end="00:15:23.720">What we have left is what we use for everything else?</p>
+      <p begin="00:15:23.720" end="00:15:28.200">...the foreground...for all of the background tasks.</p>
+      <p begin="00:15:28.200" end="00:15:30.860">For the back stack for things like task completion so</p>
+      <p begin="00:15:30.860" end="00:15:35.240">...you can see in this example and remember I said that way too much about</p>
+      <p begin="00:15:35.240" end="00:15:39.890">specific numbers but this is a fairly typical example on a five twelve make</p>
+      <p begin="00:15:39.890" end="00:15:45.250">mobile device that reese's we had seven twelve to start we've...five and</p>
+      <p begin="00:15:45.250" end="00:15:50.100">twenty-three that leases with a hundred and eighty nine we've given a hundred and eighty five to the for</p>
+      <p begin="00:15:50.100" end="00:15:55.060">when up which means is format ogg if we're lucky for.</p>
+      <p begin="00:15:55.060" end="00:15:59.890">Apps in the back stack apps doing task completion in the background any background tasks of</p>
+      <p begin="00:15:59.890" end="00:16:07.220">any kind ...critical ones which isn't a lot so,</p>
+      <p begin="00:16:07.220" end="00:16:12.910">you think this is not a not a sustainable the matrix</p>
+      <p begin="00:16:12.910" end="00:16:18.110">of memory usage and, it isn't generally but then also generally this</p>
+      <p begin="00:16:18.110" end="00:16:22.850">is worse-case scenario...if everything on this list</p>
+      <p begin="00:16:22.850" end="00:16:27.310">was using the maximum that we know it normally uses all the time</p>
+      <p begin="00:16:28.560" end="00:16:33.120">some of these things we have pretty good numbers on like the</p>
+      <p begin="00:16:33.120" end="00:16:35.430">...os the drives and services those...those</p>
+      <p begin="00:16:35.430" end="00:16:40.920">a policed prior to ship so we know how big those thingswe know how much they...when they spike</p>
+      <p begin="00:16:40.920" end="00:16:45.850">and under what conditions so we've got a pretty good handle on the size of those things?</p>
+      <p begin="00:16:45.850" end="00:16:50.340">We've also got a pretty good handle...sizes acoustical manage services like</p>
+      <p begin="00:16:50.340" end="00:16:56.750">the service agents and voip and vp n and, those do have caps imposed on them so we know they can't go above</p>
+      <p begin="00:16:56.750" end="00:17:01.400">the caps and they typically actually approach...caps...the time.</p>
+      <p begin="00:17:01.400" end="00:17:03.230">So, we the what coming out for</p>
+      <p begin="00:17:03.230" end="00:17:09.509">them is very tight fit to what they're actually using most of the time.</p>
+      <p begin="00:17:09.509" end="00:17:13.739">It's the things that...that we that we have a little more leeway with give the for</p>
+      <p begin="00:17:13.739" end="00:17:17.959">...hundred...meg as a cap but,</p>
+      <p begin="00:17:17.959" end="00:17:22.619">most steps don't use that most...use half of that most of the time so it's really</p>
+      <p begin="00:17:22.619" end="00:17:27.219">a percentages game we assume that some high percentage of the time</p>
+      <p begin="00:17:27.219" end="00:17:31.820">...the user experience will be protected because most of...time the app</p>
+      <p begin="00:17:31.820" end="00:17:36.570">...running is not can be consuming up to is maximum cap and therefore</p>
+      <p begin="00:17:36.570" end="00:17:42.950">the will be something left over for the less critical background tasks.</p>
+      <p begin="00:17:42.950" end="00:17:46.790">The running in the background the and typically they will have a lot more than</p>
+      <p begin="00:17:46.790" end="00:17:50.760">...meg most the time.</p>
+      <p begin="00:17:50.760" end="00:17:53.020">And, then if you look at the other examples</p>
+      <p begin="00:17:53.020" end="00:17:57.990">...one gig tabitha things free...a little...have a little more memories play with.</p>
+      <p begin="00:17:57.990" end="00:18:02.820">After everything has been carved out reserved but then again the...not companies bigger...is partly it's</p>
+      <p begin="00:18:02.820" end="00:18:09.650">...it's almost a circular calculation but we look at telemetry data</p>
+      <p begin="00:18:09.650" end="00:18:13.890">...apps that have been deployed and, see how much they actually consume</p>
+      <p begin="00:18:13.890" end="00:18:19.800">in the wild to figure out what would be a reasonable cap for a for foreground...and what would be a</p>
+      <p begin="00:18:19.800" end="00:18:23.110">reasonable cap for every different us time?</p>
+      <p begin="00:18:23.110" end="00:18:25.240">And, then if you look at the last column the to</p>
+      <p begin="00:18:25.240" end="00:18:30.680">gig desktop we seem to have lots of extra memory floating around despite a huge.</p>
+      <p begin="00:18:30.680" end="00:18:34.600">Cap on the for...but don't forget that on this social device the</p>
+      <p begin="00:18:34.600" end="00:18:38.870">uses going to expect be running multiple...apps at the same time.</p>
+      <p begin="00:18:38.870" end="00:18:44.670">...on a small mobile they went they know that they switch from one to the next and they</p>
+      <p begin="00:18:44.670" end="00:18:48.070">...the appearance the perception of multiple apps</p>
+      <p begin="00:18:48.070" end="00:18:54.490">running at the same time but typically there aren't whereas on a desktop typically there are.</p>
+      <p begin="00:18:54.490" end="00:18:57.630">So, we have to balance all of those different user</p>
+      <p begin="00:18:57.630" end="00:19:09.250">expectations across different devices with the physical characteristics of those devices.</p>
+      <p begin="00:19:09.250" end="00:19:14.080">So, memory is the main thing but we also police cpu usage and</p>
+      <p begin="00:19:14.080" end="00:19:16.960">life-time and a few other things I mentioned so</p>
+      <p begin="00:19:16.960" end="00:19:22.320">here's again just a few simple examplesthe default background task</p>
+      <p begin="00:19:22.320" end="00:19:26.510">...not doing anything very much might be updating alive tile...</p>
+      <p begin="00:19:26.510" end="00:19:31.970">Sixteen meg memory cap it any gets to run for thirty seconds at a time...to complete all</p>
+      <p begin="00:19:31.970" end="00:19:37.450">...working thirty seconds which if you think in cpu time terms is an awfully long-time</p>
+      <p begin="00:19:37.450" end="00:19:40.120">...thirty seconds wall...</p>
+      <p begin="00:19:40.120" end="00:19:42.830">At innovative ten percent cpu usage.</p>
+      <p begin="00:19:45.070" end="00:19:53.690">So, it can do an awful lot of work in that time and,...be more than one running at the same time.</p>
+      <p begin="00:19:53.690" end="00:19:59.430">other things we penny...blocked in...service if the if the uses turned on the battery...</p>
+      <p begin="00:19:59.430" end="00:20:04.530">the feature they can disable enable disable most background</p>
+      <p begin="00:20:04.530" end="00:20:07.880">...times ...on a pair up basis.</p>
+      <p begin="00:20:09.760" end="00:20:12.540">Whereas some things like voip</p>
+      <p begin="00:20:13.810" end="00:20:20.700">...these things are not...if the if the battery savers enabled these things continue to run.</p>
+      <p begin="00:20:20.700" end="00:20:26.090">And, also the lifetime cap for these things is infinite there is no</p>
+      <p begin="00:20:26.090" end="00:20:29.690">...so...koran forever for as long as a user wants to run for that</p>
+      <p begin="00:20:29.690" end="00:20:37.100">can run unlike most background tasks...which have some kind of limits on them.</p>
+      <p begin="00:20:37.100" end="00:20:41.350">And, this is just a small set of the different tasks types on one particular</p>
+      <p begin="00:20:41.350" end="00:20:47.020">device configuration you can imagine the matrix of different tasks types with the</p>
+      <p begin="00:20:47.020" end="00:20:51.980">different memory caps the different life-time the different cpu closures and</p>
+      <p begin="00:20:51.980" end="00:21:00.250">other constraints the...is very large.</p>
+      <p begin="00:21:00.250" end="00:21:05.360">Another aspect to how we police policy is...priorities</p>
+      <p begin="00:21:05.360" end="00:21:12.030">so we look all the different scenarios in a situation where there is no contention where,</p>
+      <p begin="00:21:12.030" end="00:21:14.250">you know, there's just a few things running or maybe any</p>
+      <p begin="00:21:14.250" end="00:21:19.310">one thing running there's plenty of resources then the priorities and</p>
+      <p begin="00:21:19.310" end="00:21:26.190">the relevant the any come into play when there is contention so, if we have multiple things</p>
+      <p begin="00:21:26.190" end="00:21:30.500">running at the same time we have...up we have maybe background audio playing maybe</p>
+      <p begin="00:21:30.500" end="00:21:35.380">there's vp and running and couple of other background tasks and...bluetooth.</p>
+      <p begin="00:21:35.380" end="00:21:37.830">Or sense a task running.</p>
+      <p begin="00:21:37.830" end="00:21:41.540">And, then we get a request to act face another task.</p>
+      <p begin="00:21:41.540" end="00:21:43.780">Of some kind.</p>
+      <p begin="00:21:43.780" end="00:21:46.650">What we do is we look at that task</p>
+      <p begin="00:21:46.650" end="00:21:50.520">...look at the priority...been assigned to that task?</p>
+      <p begin="00:21:50.520" end="00:21:53.890">And, we look at the priorities of everything that's running.</p>
+      <p begin="00:21:53.890" end="00:21:58.850">So, if we don't have the resources...typically the memory for the memory for this new</p>
+      <p begin="00:21:58.850" end="00:22:03.530">activation we look at everything that's running and if we see things running that</p>
+      <p begin="00:22:03.530" end="00:22:07.510">of lower priority then the incoming...type.</p>
+      <p begin="00:22:08.530" end="00:22:13.420">Then we will terminate those things of low priority in order to meet the requirements</p>
+      <p begin="00:22:13.420" end="00:22:17.650">of the incoming activation request and we'll.</p>
+      <p begin="00:22:17.650" end="00:22:24.850">Terminate just enough of them to free up just enough resources so this new thing can run.</p>
+      <p begin="00:22:24.850" end="00:22:29.420">And, this is wide that there's, there's kinda to categories is all of the important stuff at the</p>
+      <p begin="00:22:29.420" end="00:22:33.960">top which also tend to have the to permanent memory carve...but these things</p>
+      <p begin="00:22:33.960" end="00:22:36.870">are guaranteed so those things won't get...</p>
+      <p begin="00:22:38.800" end="00:22:43.620">But, things the bottom will things with any lower priority than two and,</p>
+      <p begin="00:22:43.620" end="00:22:46.410">the number again is arbitrary and this is a this is a</p>
+      <p begin="00:22:46.410" end="00:22:50.870">sub-set again so there's a lot more priorities but,</p>
+      <p begin="00:22:50.870" end="00:22:55.650">we'll terminate things that are not quizzical so that the opportunistic tasks types</p>
+      <p begin="00:22:55.650" end="00:23:03.850">will be terminated if we need to for a higher priority incoming request.</p>
+      <p begin="00:23:03.850" end="00:23:06.750">If we get a request for...and there</p>
+      <p begin="00:23:06.750" end="00:23:11.180">is nothing currently running that's of lower priority.</p>
+      <p begin="00:23:11.180" end="00:23:12.360">Then we bouncer</p>
+      <p begin="00:23:12.360" end="00:23:17.210">request back to the whoever hospice to launch this thing which is typically the</p>
+      <p begin="00:23:18.440" end="00:23:23.310">...in the...or companion the foreground same...launch this thing...could be a background,</p>
+      <p begin="00:23:23.310" end="00:23:27.500">background task manager we say well we can't give you resources nowdo you want to</p>
+      <p begin="00:23:27.500" end="00:23:33.030">wait and it's up to the...for this task type to decide whether wants to wait</p>
+      <p begin="00:23:33.030" end="00:23:38.010">...some sometimes times it makes sense to...if it's a periodic background</p>
+      <p begin="00:23:38.010" end="00:23:42.870">tasks that files every thirty minutes and we asked to wait for</p>
+      <p begin="00:23:42.870" end="00:23:48.990">a few minutes tweet resources that's probably fine it can wait if it's some super critical</p>
+      <p begin="00:23:48.990" end="00:23:53.830">thing...must be activated right now like maybe even something</p>
+      <p begin="00:23:53.830" end="00:23:58.790">of middling importance like a like a geo fence trigger if we</p>
+      <p begin="00:23:58.790" end="00:24:03.760">don't respond to this within some period of time if we can...the task within reasonable period of time</p>
+      <p begin="00:24:03.760" end="00:24:07.840">...probably not useful anymore so again it's up to the different tasks type</p>
+      <p begin="00:24:07.840" end="00:24:12.120">is to whether the request is his queued...</p>
+      <p begin="00:24:12.120" end="00:24:20.730">deferred until there are resources...on the floor?</p>
+      <p begin="00:24:20.730" end="00:24:25.020">As a note here I mentioned that some things change dynamically so priorities actually one of</p>
+      <p begin="00:24:25.020" end="00:24:29.080">the things that mostly doesn't change but sometimes it does.</p>
+      <p begin="00:24:29.080" end="00:24:34.840">So, for example, background transfer if you have ...running and it kicks off a background</p>
+      <p begin="00:24:34.840" end="00:24:38.630">...the background transfer will run in the background that because it's positive</p>
+      <p begin="00:24:38.630" end="00:24:45.950">for ground-up experience will be given...so that can complete sooner.</p>
+      <p begin="00:24:45.950" end="00:24:50.140">If on the other hand is running as part of it background operation ...is given a</p>
+      <p begin="00:24:50.140" end="00:24:53.330">much lower priority so it depends on the context</p>
+      <p begin="00:24:53.330" end="00:25:03.190">...civil tasks like this square...priority actually there is.</p>
+      <p begin="00:25:03.190" end="00:25:06.310">Another thing I mention the policy controls is</p>
+      <p begin="00:25:06.310" end="00:25:11.250">access to certain sensitive device resources like the microphone</p>
+      <p begin="00:25:11.250" end="00:25:16.890">the camera speech synthesis and speech recognition and most of these</p>
+      <p begin="00:25:16.890" end="00:25:23.730">are privacy issues so if you're running in the background this is an example of a background</p>
+      <p begin="00:25:23.730" end="00:25:28.660">agent...audio agent during the background you typically a not allowed to use microphone</p>
+      <p begin="00:25:28.660" end="00:25:32.260">all the camera because that would be a privacy issue if you if you</p>
+      <p begin="00:25:32.260" end="00:25:35.000">were recording sounds.</p>
+      <p begin="00:25:35.000" end="00:25:38.360">In the background or taking photos in the background which the user</p>
+      <p begin="00:25:38.360" end="00:25:42.070">wouldn't necessarily be aware off me they know when it's happening if...in a</p>
+      <p begin="00:25:42.070" end="00:25:47.610">...and that's the choice but, if it's running in the background late necessary no</p>
+      <p begin="00:25:47.610" end="00:25:52.380">the thing is happening a tool so we wouldn't want to be able to.</p>
+      <p begin="00:25:52.380" end="00:25:58.940">Use critical resources like that without their knowledge so these thingsa gated by the resource manager</p>
+      <p begin="00:25:58.940" end="00:26:00.330">...remember this can change.</p>
+      <p begin="00:26:01.490" end="00:26:09.570">Depending on whether...has in the for under the background.</p>
+      <p begin="00:26:09.570" end="00:26:16.020">Ok, let's look at some code.</p>
+      <p begin="00:26:16.020" end="00:26:22.590">...look at the codes to use the protected resources is pretty straightforward there's a</p>
+      <p begin="00:26:22.590" end="00:26:27.630">lot of different api is for each of the different resource types.</p>
+      <p begin="00:26:27.630" end="00:26:34.330">then the memory management energy manager api is a very similar to each other delivery and,</p>
+      <p begin="00:26:34.330" end="00:26:38.950">they provide enough information enough finer-grained information</p>
+      <p begin="00:26:38.950" end="00:26:42.870">few to make sensible choices either during development as part of your</p>
+      <p begin="00:26:42.870" end="00:26:47.250">and diagnostics or is part of diagnostics house in the</p>
+      <p begin="00:26:47.250" end="00:26:53.250">wild in production as part of your in telemetry or just to react</p>
+      <p begin="00:26:53.250" end="00:27:00.360">in a less finer-grained way to changing conditions?</p>
+      <p begin="00:27:00.360" end="00:27:03.460">...them so here's some examples of deliveries</p>
+      <p begin="00:27:03.460" end="00:27:08.400">put everything or a lot of things all-in-one one slide here this is</p>
+      <p begin="00:27:08.400" end="00:27:14.180">examples of api is that you would use to check whether you have access</p>
+      <p begin="00:27:14.180" end="00:27:16.760">to particular resource and remember these things can change.</p>
+      <p begin="00:27:17.830" end="00:27:24.500">So, the top there's an example of some events that you might want to listen to.</p>
+      <p begin="00:27:24.500" end="00:27:26.300">Like when the network status changes.</p>
+      <p begin="00:27:27.810" end="00:27:29.610">...don't have a to actually</p>
+      <p begin="00:27:29.610" end="00:27:37.290">have any connectivity tool and if so what kind of connectivity what speed of I got.</p>
+      <p begin="00:27:37.290" end="00:27:42.420">The battery the state of the battery is it you don't have a battery if I have a battery in what</p>
+      <p begin="00:27:42.420" end="00:27:45.590">state is what state of charges that</p>
+      <p begin="00:27:45.590" end="00:27:49.390">...charging depleting and then there's a whole range</p>
+      <p begin="00:27:49.390" end="00:27:54.800">...is again it's just a small subset of different classes that represent senses</p>
+      <p begin="00:27:54.800" end="00:28:00.080">like the jerome itu and accelerometer and the compass and the camera and various other things you</p>
+      <p begin="00:28:00.080" end="00:28:03.940">would typically get hold of the thing and then check to see if it's now</p>
+      <p begin="00:28:03.940" end="00:28:04.440">because.</p>
+      <p begin="00:28:06.020" end="00:28:09.220">It might be no either because...isn't one on the device which you will</p>
+      <p begin="00:28:09.220" end="00:28:17.590">...want to know all because you don't have access to that saying at this particular point in time.</p>
+      <p begin="00:28:17.590" end="00:28:22.850">In some cases you might want to even though you've got hold of the thing in the first-place you might want to continue to</p>
+      <p begin="00:28:22.850" end="00:28:27.990">work with it surrounded by try catches because you might have got it while you were</p>
+      <p begin="00:28:27.990" end="00:28:32.830">in the foreground and...transition to the background and you continue to try and use this thing but you won't be</p>
+      <p begin="00:28:32.830" end="00:28:37.040">able to necessarily once you've gone to the background so you should</p>
+      <p begin="00:28:37.040" end="00:28:42.590">even though you've got hold of it successfully in the first and,...the foreground in the first-place</p>
+      <p begin="00:28:42.590" end="00:28:50.740">you should check periodically check if you get notifications to say things have changed.</p>
+      <p begin="00:28:50.740" end="00:28:55.010">Battery has another example get the battery reports it could be the</p>
+      <p begin="00:28:55.010" end="00:28:56.910">...battery which case we're not going to get</p>
+      <p begin="00:28:56.910" end="00:29:00.990">...capacity but if there is a battery we might want to look at the</p>
+      <p begin="00:29:00.990" end="00:29:05.810">...see how much charge we have left and then we can use that to decide whether or not we</p>
+      <p begin="00:29:05.810" end="00:29:14.850">want to do some operation that we know is very energy intensive.</p>
+      <p begin="00:29:14.850" end="00:29:15.890">Network connectivity.</p>
+      <p begin="00:29:17.280" end="00:29:20.910">You can get the user's profile and you can check things like,</p>
+      <p begin="00:29:20.910" end="00:29:25.790">you know, is...how we roaming how are we in relation to</p>
+      <p begin="00:29:25.790" end="00:29:30.170">a data limit...the data over the days image and</p>
+      <p begin="00:29:30.170" end="00:29:34.790">...behavior in accordance you would not want to do things that are</p>
+      <p begin="00:29:34.790" end="00:29:41.780">going to use more bandwidth if you're approaching or even if you're over the data limit?</p>
+      <p begin="00:29:41.780" end="00:29:44.640">All of these things you just have to check</p>
+      <p begin="00:29:44.640" end="00:29:47.760">...at the first-place check when things change listen for change</p>
+      <p begin="00:29:47.760" end="00:29:52.710">notifications thank just assume that you've you have access to</p>
+      <p begin="00:29:52.710" end="00:29:59.950">...of these things I may not even be physically present on the device.</p>
+      <p begin="00:29:59.950" end="00:30:04.530">Memory api who had memory api is in prev releases of</p>
+      <p begin="00:30:04.530" end="00:30:08.080">...windows phone.</p>
+      <p begin="00:30:08.080" end="00:30:12.240">These are been brought forward and extended so there's more things that you can get more properties and</p>
+      <p begin="00:30:12.240" end="00:30:15.140">methods on the on the api this is</p>
+      <p begin="00:30:15.140" end="00:30:22.150">the windows system windows dot system dot memory manager class.</p>
+      <p begin="00:30:22.150" end="00:30:27.740">So, there's some events we'll tell you when your memory usage is increasing and</p>
+      <p begin="00:30:27.740" end="00:30:32.540">we'll tell you when it's decreased so you can track that you can see where the old memories growing</p>
+      <p begin="00:30:32.540" end="00:30:37.250">...can each time you're told that it's growing you can check to see what it is and see whether you</p>
+      <p begin="00:30:37.250" end="00:30:42.330">want to do anything about it or not...you want to new behavior.</p>
+      <p begin="00:30:42.330" end="00:30:43.160">You can find out what</p>
+      <p begin="00:30:43.160" end="00:30:46.960">your campaigns the app memory usage limits you can find your current usage.</p>
+      <p begin="00:30:48.030" end="00:30:54.460">Or see subtracting one of the other gives you the amount of bedroom you have to play with.</p>
+      <p begin="00:30:54.460" end="00:31:00.360">you might want to do this on a on a period of time particularly during development you want to</p>
+      <p begin="00:31:00.360" end="00:31:02.010">track.</p>
+      <p begin="00:31:02.010" end="00:31:06.540">The memory consumption of certain operations and the memory trends to see if</p>
+      <p begin="00:31:06.540" end="00:31:14.640">you're continually increasing which suggests that might be a leak somewhere perhaps.</p>
+      <p begin="00:31:14.640" end="00:31:19.060">So, there there's some very simple properties you can access from the memory</p>
+      <p begin="00:31:19.060" end="00:31:23.270">manager is also a method get up and we reports which qc even</p>
+      <p begin="00:31:23.270" end="00:31:28.390">more detailed information it breaks down the usage.</p>
+      <p begin="00:31:28.390" end="00:31:30.220">And, the limit both relate to a</p>
+      <p begin="00:31:30.220" end="00:31:34.690">combination of privates plus shared commit.</p>
+      <p begin="00:31:34.690" end="00:31:38.620">But, you can get the private commit on its own if you want.</p>
+      <p begin="00:31:40.840" end="00:31:46.390">The total commit usage is going to be the same as the app...usage.</p>
+      <p begin="00:31:46.390" end="00:31:48.860">The title...going to be the same as the</p>
+      <p begin="00:31:48.860" end="00:31:54.560">...memory usage from it but this you can...either if you any interest in those</p>
+      <p begin="00:31:54.560" end="00:31:59.100">...query those properties directly if you want to get all of these things all at once</p>
+      <p begin="00:31:59.100" end="00:32:03.730">in an atomic way, you know, that this thing is taking a snapshot</p>
+      <p begin="00:32:03.730" end="00:32:12.450">...exactly the same time is this...them...cola method.</p>
+      <p begin="00:32:12.450" end="00:32:17.860">And, there are more this isn't actually an exhaustive list of the</p>
+      <p begin="00:32:17.860" end="00:32:23.590">methods and properties are a few more and, here as well this just to give an example of the sorts of things that you can get</p>
+      <p begin="00:32:23.590" end="00:32:27.120">sorts information you can get some of them will be more useful</p>
+      <p begin="00:32:27.120" end="00:32:32.530">during development to back-up your memory profiling works</p>
+      <p begin="00:32:32.530" end="00:32:43.440">a doing some of them will be directly useful hat runtime in production and.</p>
+      <p begin="00:32:43.440" end="00:32:45.880">The energy manager has a similar</p>
+      <p begin="00:32:45.880" end="00:32:48.110">...similar design.</p>
+      <p begin="00:32:49.320" end="00:32:53.240">There's actually two there's a background energy manager which I'm</p>
+      <p begin="00:32:53.240" end="00:32:57.810">illustrating here...program energy manager so you use</p>
+      <p begin="00:32:57.810" end="00:33:04.900">the background energy manager in a background task and use...manager...up.</p>
+      <p begin="00:33:04.900" end="00:33:07.570">And, again, we will give you a notifications when</p>
+      <p begin="00:33:07.570" end="00:33:12.000">your energy usage crosses certain interesting thresholds.</p>
+      <p begin="00:33:12.000" end="00:33:13.220">You can see there are</p>
+      <p begin="00:33:13.220" end="00:33:19.370">...hopefully meaningfully named values here.</p>
+      <p begin="00:33:19.370" end="00:33:22.240">Like your usage is aloe</p>
+      <p begin="00:33:22.240" end="00:33:26.220">...usage level you're near...acceptable europe...except tools and</p>
+      <p begin="00:33:26.220" end="00:33:31.750">...acceptable is level that we consider to be reasonable for</p>
+      <p begin="00:33:31.750" end="00:33:38.100">a task under normal circumstances so...point.</p>
+      <p begin="00:33:38.100" end="00:33:44.170">...that level will be just below that level...to the time but,</p>
+      <p begin="00:33:44.170" end="00:33:47.860">you can go above that level...the.</p>
+      <p begin="00:33:47.860" end="00:33:51.940">Assuming that or other resources still available to...memory and</p>
+      <p begin="00:33:51.940" end="00:33:57.310">lifetime and cpu and you could go above that what we consider to be an acceptable level</p>
+      <p begin="00:33:57.310" end="00:34:00.100">...it's a fairly arbitrary level of what</p>
+      <p begin="00:34:00.100" end="00:34:04.740">makes tasks do most of the time but you can go above it...tell you when</p>
+      <p begin="00:34:04.740" end="00:34:10.110">you've gone about it and you cross the next interesting threshold and you can continue to go above it but</p>
+      <p begin="00:34:10.110" end="00:34:14.240">...comes a point where you're going to reach and what we call</p>
+      <p begin="00:34:14.240" end="00:34:17.660">determination level and when...nearly at determination level this is</p>
+      <p begin="00:34:17.660" end="00:34:21.390">your last chance this is your last notification before we terminate?</p>
+      <p begin="00:34:23.020" end="00:34:28.180">It's very unlikely that most tasks...going to get to that level because this is</p>
+      <p begin="00:34:28.180" end="00:34:35.580">set such a high-level that you would have to be training the battery at a very fast</p>
+      <p begin="00:34:35.580" end="00:34:39.340">But, we put this in place so that if you are draining the battery it very fast rate</p>
+      <p begin="00:34:39.340" end="00:34:41.920">you can mitigate your behavior you can</p>
+      <p begin="00:34:41.920" end="00:34:54.290">tone it down if you want to if you don't then will terminate?</p>
+      <p begin="00:34:54.290" end="00:34:59.680">Well, I should I should call out that any certain types of background task</p>
+      <p begin="00:34:59.680" end="00:35:04.040">...terminated foreground...energy manager doesn't have a</p>
+      <p begin="00:35:04.040" end="00:35:09.040">termination level because we don't terminate full...up you can use much energy like in the foreground</p>
+      <p begin="00:35:09.040" end="00:35:13.660">obviously you...a good citizen it's still up to you to tuner behavior so that</p>
+      <p begin="00:35:13.660" end="00:35:17.640">you don't use lots of energy if you can avoid it but, you know,</p>
+      <p begin="00:35:17.640" end="00:35:22.180">the for run-up so we will allow you to consumes...like whereas in the background</p>
+      <p begin="00:35:22.180" end="00:35:26.420">...it will only be filled long-running background tasks as well</p>
+      <p begin="00:35:26.420" end="00:35:30.970">short running tasks cannot reach the excessive levels</p>
+      <p begin="00:35:30.970" end="00:35:36.890">is just not physically possible but, a long-running task could</p>
+      <p begin="00:35:36.890" end="00:35:42.240">...doing something that's that significantly degrading battery usage over a long</p>
+      <p begin="00:35:42.240" end="00:35:46.640">period of time then we'll consider terminating but, again,</p>
+      <p begin="00:35:46.640" end="00:35:55.030">as I say it's unlikely that may...get to that level.</p>
+      <p begin="00:35:55.030" end="00:35:59.840">Mention before that policy varies...in multiple dimensions varies by skew</p>
+      <p begin="00:35:59.840" end="00:36:04.530">so if you consider windows ten covers mobile desktop pollens</p>
+      <p begin="00:36:04.530" end="00:36:10.120">coyote xbox the physical characteristics of the devices that support a</p>
+      <p begin="00:36:10.120" end="00:36:15.630">skews on different so, mobile devices run from five twelve</p>
+      <p begin="00:36:15.630" end="00:36:20.310">make device with very small storage and low-resolution screen</p>
+      <p begin="00:36:20.310" end="00:36:25.240">up to the tablets that could have sixteen giga physical rum</p>
+      <p begin="00:36:25.240" end="00:36:32.130">...kind of a large fast page file it could have much high-resolution screen.</p>
+      <p begin="00:36:32.130" end="00:36:36.070">The desktop range overlaps that because destitute desktops in theory you</p>
+      <p begin="00:36:36.070" end="00:36:39.380">can have a desktop device that has one giga physical.</p>
+      <p begin="00:36:39.380" end="00:36:42.840">But, you could also have a desktop...has two hundred twenty eight</p>
+      <p begin="00:36:42.840" end="00:36:48.400">...giga physical and all the permutations in-between of physical</p>
+      <p begin="00:36:48.400" end="00:36:55.400">memory and page file size and speed of disk and screen resolution so on.</p>
+      <p begin="00:36:55.400" end="00:37:01.020">And, then devices like ...and xbox currents sit in the middle in the sense that</p>
+      <p begin="00:37:01.020" end="00:37:06.800">there is...one gig...answer is no one gig xbox.</p>
+      <p begin="00:37:06.800" end="00:37:11.160">... five twelve gig xbox so they come into some sort of middle of</p>
+      <p begin="00:37:11.160" end="00:37:17.510">the range decree there's no two-hundred-and-fifty six gig xbox.</p>
+      <p begin="00:37:17.510" end="00:37:22.250">Download the bottom from my perspective with my resource manager hat on</p>
+      <p begin="00:37:24.140" end="00:37:26.880">...the bottom of the scale all devices that</p>
+      <p begin="00:37:26.880" end="00:37:31.300">pretty much the same to me so a...one</p>
+      <p begin="00:37:31.300" end="00:37:35.980">getting phone...one gig tablet and a one gig desktop device</p>
+      <p begin="00:37:35.980" end="00:37:40.180">...one-k coyote device in terms of the available memory the</p>
+      <p begin="00:37:40.180" end="00:37:45.710">availability of page file...the performance that page file the screen resolution so, on</p>
+      <p begin="00:37:45.710" end="00:37:50.900">...pretty much the same to me so the resource policies is almost</p>
+      <p begin="00:37:50.900" end="00:37:53.800">identical down at that level across all skews.</p>
+      <p begin="00:37:54.900" end="00:37:58.160">But, then it starts to diverges you got the scale is to get more resources</p>
+      <p begin="00:37:58.160" end="00:38:04.030">available and better resources available on bigger devices then the</p>
+      <p begin="00:38:04.030" end="00:38:12.550">policies diverge across the different scales.</p>
+      <p begin="00:38:12.550" end="00:38:17.240">The key factor in deciding policy is the amount of available</p>
+      <p begin="00:38:17.240" end="00:38:22.170">commit which means physical plus page file but, we also</p>
+      <p begin="00:38:22.170" end="00:38:26.920">look at the screen resolution we look at other things to decide what kind of devices</p>
+      <p begin="00:38:26.920" end="00:38:32.860">is screen resolutions important because the higher-resolution the more</p>
+      <p begin="00:38:32.860" end="00:38:37.150">memories tied up in graphics buffers which are allocated on your behalf</p>
+      <p begin="00:38:37.150" end="00:38:42.210">in europe and...perhaps tend to if...running this exact same up on a device that has the</p>
+      <p begin="00:38:42.210" end="00:38:46.120">exact same memory but has a different screen resolution</p>
+      <p begin="00:38:46.120" end="00:38:54.250">...graphics memory usage will be different we have to factor that intocalculations.</p>
+      <p begin="00:38:54.250" end="00:38:57.820">We also very policy by of technology so there's,</p>
+      <p begin="00:38:57.820" end="00:39:01.400">there's existing policy in place that has been in the past for windows phone and</p>
+      <p begin="00:39:01.400" end="00:39:06.470">...windows...and...one.</p>
+      <p begin="00:39:06.470" end="00:39:12.500">And, then this policy for universe...windows ten universe...</p>
+      <p begin="00:39:12.500" end="00:39:14.780">And, twenty-two up so ...</p>
+      <p begin="00:39:15.860" end="00:39:19.660">A simple level all of the pri windows ten</p>
+      <p begin="00:39:19.660" end="00:39:21.050">...types.</p>
+      <p begin="00:39:21.050" end="00:39:23.000">So, all of the.</p>
+      <p begin="00:39:23.000" end="00:39:25.950">Windows h x xhtml</p>
+      <p begin="00:39:25.950" end="00:39:30.090">...the silverlight types and xna and native hybrids so on and we had</p>
+      <p begin="00:39:30.090" end="00:39:35.090">...windows phone for windows ten they have the same policy they've always had this is an</p>
+      <p begin="00:39:35.090" end="00:39:39.910">app compact issue we don't change their policy they stay as they were they get all</p>
+      <p begin="00:39:39.910" end="00:39:45.350">the same behaviors is...before universal...</p>
+      <p begin="00:39:45.350" end="00:39:49.510">Of different policy in some cases any very slightly different</p>
+      <p begin="00:39:49.510" end="00:39:52.560">...based on the old.</p>
+      <p begin="00:39:52.560" end="00:39:56.710">Build windows phone...policies and, but,</p>
+      <p begin="00:39:56.710" end="00:40:01.010">extended and brought forward for the range of different skews.</p>
+      <p begin="00:40:01.010" end="00:40:04.910">So, the policies are...if you build a wmv windows</p>
+      <p begin="00:40:04.910" end="00:40:07.370">...up...build a windows ten</p>
+      <p begin="00:40:07.370" end="00:40:12.920">app universe labs they hope they will have slightly different policy on most devices</p>
+      <p begin="00:40:12.920" end="00:40:19.170">any slightly different in some cases is not some cases same and...we don't</p>
+      <p begin="00:40:19.170" end="00:40:21.250">...at all so there's no policy.</p>
+      <p begin="00:40:23.220" end="00:40:26.250">Pre windows ten desktop up so</p>
+      <p begin="00:40:26.250" end="00:40:29.740">...windows ten immersive apps for windows eight and</p>
+      <p begin="00:40:29.740" end="00:40:34.900">...point one they didn't have any memory caps example so they continue not have any memory</p>
+      <p begin="00:40:34.900" end="00:40:41.320">cams...when thirty-two apps they do not have any memory caps?</p>
+      <p begin="00:40:41.320" end="00:40:42.970">Because again we want to maintain</p>
+      <p begin="00:40:42.970" end="00:40:48.590">...components we didn't break any of those things just because we have a new model.</p>
+      <p begin="00:40:48.590" end="00:40:54.440">So, policy...across these different dimensions.</p>
+      <p begin="00:40:54.440" end="00:40:57.130">And, finally.</p>
+      <p begin="00:40:57.130" end="00:41:03.920">What's the take away from this hyper...enough information and,</p>
+      <p begin="00:41:03.920" end="00:41:07.630">reading between the lines hopefully you've got the message that there</p>
+      <p begin="00:41:07.630" end="00:41:12.650">is a very large matrix of...resource</p>
+      <p begin="00:41:12.650" end="00:41:18.420">constraints memory caps cpu quotas lifetime</p>
+      <p begin="00:41:18.420" end="00:41:23.210">quotas access to device resources so on it's a very large matrix</p>
+      <p begin="00:41:23.210" end="00:41:27.570">varies across multiple dimensions the device configuration the skew.</p>
+      <p begin="00:41:27.570" end="00:41:32.960">So, on if you want to...reasonable obsessive different devices</p>
+      <p begin="00:41:32.960" end="00:41:38.190">and different skews you need to pay attention you need to query the system find out what</p>
+      <p begin="00:41:38.190" end="00:41:43.320">you actually running...my running on a desktop hundred-twenty...mi running on a mobile</p>
+      <p begin="00:41:43.320" end="00:41:46.510">device size and type of or mi running on t device.</p>
+      <p begin="00:41:48.750" end="00:41:50.600">So,...the system find out what's,</p>
+      <p begin="00:41:50.600" end="00:41:55.540">what's available to you to...behavior accordingly and,</p>
+      <p begin="00:41:55.540" end="00:42:00.760">then also listen foot change notifications when your memory</p>
+      <p begin="00:42:00.760" end="00:42:06.000">...changes all the network connectivity changes or cpu</p>
+      <p begin="00:42:06.000" end="00:42:09.890">...changes new energy consumption changes</p>
+      <p begin="00:42:09.890" end="00:42:13.700">listen for notifications and again act accordingly</p>
+      <p begin="00:42:14.750" end="00:42:18.780">...behavior thoughtful downhill behavior...core</p>
+      <p begin="00:42:18.780" end="00:42:25.150">...depending on the notification so in this way you will be able to target the</p>
+      <p begin="00:42:25.150" end="00:42:30.510">...possible range in a way that seamless to the users that you'll</p>
+      <p begin="00:42:30.510" end="00:42:35.420">behave appropriate on each device without being horribly slow...one device and</p>
+      <p begin="00:42:35.420" end="00:42:40.330">super-fast on another device you continue behavior which might mean in a tuning the feature</p>
+      <p begin="00:42:40.330" end="00:42:45.870">...play might mean chaining the resolution of your graphics images or, you know,...</p>
+      <p begin="00:42:45.870" end="00:42:52.740">also medications you can take once you've...the system to find out what you're running on.</p>
+      <p begin="00:42:52.740" end="00:42:54.220">Well, and, thank you for watching.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.918</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.620" end="00:00:05.780">So, what do we talk about...there we go</p>
+      <p begin="00:00:05.780" end="00:00:10.010">so what we want to talk about today is what exactly are</p>
+      <p begin="00:00:10.010" end="00:00:15.620">...what we refer to these modern services there's quite a lot ofand,</p>
+      <p begin="00:00:15.620" end="00:00:20.540">then we want pretty much just jumping to demos and show you what we've been working on so</p>
+      <p begin="00:00:20.540" end="00:00:26.590">that we can improve the collection and connection to those services so first</p>
+      <p begin="00:00:26.590" end="00:00:32.190">of all what exactly are modern services now maybe you're probably</p>
+      <p begin="00:00:32.190" end="00:00:35.690">using things like sequel server or some kind of caching technologies?</p>
+      <p begin="00:00:37.160" end="00:00:38.190">Those are services.</p>
+      <p begin="00:00:39.270" end="00:00:44.180">So, in many ways we're not talking about a fundamental change.</p>
+      <p begin="00:00:44.180" end="00:00:48.780">It's really an evolution of those technical services that you</p>
+      <p begin="00:00:48.780" end="00:00:54.480">may be using which you guys probably have a lot of choice in but what's happening is the</p>
+      <p begin="00:00:54.480" end="00:00:59.420">levels of expectations for what people can deliver for instance like</p>
+      <p begin="00:00:59.420" end="00:01:03.920">a serum system and something I might install of like quickbooks or something of</p>
+      <p begin="00:01:03.920" end="00:01:08.100">the years past a greatly and improved greatly</p>
+      <p begin="00:01:08.100" end="00:01:12.800">...expectations are higher...companies like sales force that just come in</p>
+      <p begin="00:01:12.800" end="00:01:17.820">and just blow away all the expectations of what you think you might be</p>
+      <p begin="00:01:17.820" end="00:01:21.970">...and you now you want to be able to connect to that.</p>
+      <p begin="00:01:21.970" end="00:01:27.510">So, there's an evolution of the business services as well</p>
+      <p begin="00:01:27.510" end="00:01:31.080">Customer to resource to other management of</p>
+      <p begin="00:01:31.080" end="00:01:34.870">...of materials and that's what we want to be</p>
+      <p begin="00:01:34.870" end="00:01:39.180">able to support what we're seeing...is you know,</p>
+      <p begin="00:01:39.180" end="00:01:43.510">a lot of these services on here...kind of business-oriented it used to be</p>
+      <p begin="00:01:43.510" end="00:01:50.430">the most active services on the web or kind of consumer focus.</p>
+      <p begin="00:01:50.430" end="00:01:55.340">Using sales force or api is really important to us how important we</p>
+      <p begin="00:01:55.340" end="00:01:59.470">do seventy five billion transactions a month overall on the</p>
+      <p begin="00:01:59.470" end="00:02:04.380">...first platform six fifty five percent of those are through our api</p>
+      <p begin="00:02:04.380" end="00:02:10.440">...services through integration now and for historically too long</p>
+      <p begin="00:02:10.440" end="00:02:16.330">period of time there hasn't been some really great tooling in the first-class id</p>
+      <p begin="00:02:16.330" end="00:02:22.650">...to make that samples so this is an important thing for businesses to be able to</p>
+      <p begin="00:02:22.650" end="00:02:28.250">bring this and make it simple for developers to use and one of the challenges</p>
+      <p begin="00:02:28.250" end="00:02:32.710">...if you remember years ago because we've actually been around for a wildness tooling space</p>
+      <p begin="00:02:32.710" end="00:02:37.620">there was this, you know, xml web service idea and if everybody would just</p>
+      <p begin="00:02:37.620" end="00:02:42.550">builder services the same we would have this common tooling paradigm and you'd be able to connect to them</p>
+      <p begin="00:02:42.550" end="00:02:48.110">it was really easy, yeah, right but, unfortunately things don't stay still.</p>
+      <p begin="00:02:48.110" end="00:02:51.100">Things are continually evolving and the idea that</p>
+      <p begin="00:02:51.100" end="00:02:55.280">we could continually keep up with that is just an unrealistic expectation</p>
+      <p begin="00:02:55.280" end="00:03:00.260">I was joke about chasing rabbits are chickens I'm not so what you're supposed to chase but whatever it</p>
+      <p begin="00:03:00.260" end="00:03:04.890">is that complicated so when we were challenge to come up with a better tool</p>
+      <p begin="00:03:04.890" end="00:03:08.610">you experience what things we...just not worth trying</p>
+      <p begin="00:03:08.610" end="00:03:13.700">to get everybody to abide by a single standard because whenever a standard is complete it</p>
+      <p begin="00:03:13.700" end="00:03:18.460">is now legacy so we thought about all these different technologies that are</p>
+      <p begin="00:03:18.460" end="00:03:22.970">out there and sales...you know,...new as a relatively new as a company</p>
+      <p begin="00:03:22.970" end="00:03:27.680">...the service businesses even they've got a quick evolution I mean</p>
+      <p begin="00:03:27.680" end="00:03:32.320">you've got what...services you guys support now what kind of service letting the technologies</p>
+      <p begin="00:03:32.320" end="00:03:37.730">right well since, you know, sales forces as a platform has you know,</p>
+      <p begin="00:03:37.730" end="00:03:42.290">web presentation services we've got business logic services</p>
+      <p begin="00:03:42.290" end="00:03:46.930">we've got consumer facing website services with her roku right but,</p>
+      <p begin="00:03:46.930" end="00:03:51.950">the technologies so the technologies behind them from a developer standpoint,</p>
+      <p begin="00:03:51.950" end="00:03:55.780">you know, we have you're going to...actually you want</p>
+      <p begin="00:03:55.780" end="00:04:01.100">see something different so we used to be on and we kept this part of our demo and what I would</p>
+      <p begin="00:04:01.100" end="00:04:06.040">do is show you are whittle generation page and there's probably a dozen different was</p>
+      <p begin="00:04:06.040" end="00:04:10.150">those in there and that doesn't even represent all the soap and points that we have</p>
+      <p begin="00:04:10.150" end="00:04:14.290">or sorry rest endpoints that we have things like metadata api</p>
+      <p begin="00:04:14.290" end="00:04:18.630">stood discover what you built on the platform what we've got</p>
+      <p begin="00:04:18.630" end="00:04:23.810">streaming api so that you can do real-time integrations with the data</p>
+      <p begin="00:04:23.810" end="00:04:28.520">what we've got a streaming api metadata api</p>
+      <p begin="00:04:28.520" end="00:04:30.790">...bulk data api so</p>
+      <p begin="00:04:30.790" end="00:04:36.730">you can transfer millions of rows of data in and out of the platform it goes on and on</p>
+      <p begin="00:04:36.730" end="00:04:41.510">an average of these are going to be the same technology they just they can't they can't because,</p>
+      <p begin="00:04:41.510" end="00:04:43.490">because today</p>
+      <p begin="00:04:43.490" end="00:04:48.460">soap doesn't work because we're talking mobile and we're talking about like very much smaller</p>
+      <p begin="00:04:48.460" end="00:04:54.210">interactions so it's great for bowl but today rest is become more important but even arrest</p>
+      <p begin="00:04:54.210" end="00:04:59.010">there's variations and then there's authentication variations that go in there and yes there's</p>
+      <p begin="00:04:59.010" end="00:05:01.050">all off standard but,</p>
+      <p begin="00:05:01.050" end="00:05:04.460">you know, for two people have been working in this and trying to</p>
+      <p begin="00:05:04.460" end="00:05:09.110">implemented there are so many variations that it just becomes</p>
+      <p begin="00:05:09.110" end="00:05:14.400">very difficult so when you are consuming one of these modern services</p>
+      <p begin="00:05:14.400" end="00:05:18.090">is a multi-step process first of all just to</p>
+      <p begin="00:05:18.090" end="00:05:21.510">...this service if I want to consumes sales force</p>
+      <p begin="00:05:21.510" end="00:05:26.630">someone just send-me the url user name and password I had to go to sales</p>
+      <p begin="00:05:26.630" end="00:05:31.420">...and say I would like to consumer service I need to configure</p>
+      <p begin="00:05:31.420" end="00:05:34.990">this service to be able to do that sales force has to...any services</p>
+      <p begin="00:05:34.990" end="00:05:39.780">...you go create an app on facebook you do the same thing on sales...you get consumer key all that kind</p>
+      <p begin="00:05:39.780" end="00:05:43.710">of stuff so there's that first step right?</p>
+      <p begin="00:05:43.710" end="00:05:48.650">There is the next step of once I consume it what is the url right we had</p>
+      <p begin="00:05:48.650" end="00:05:51.140">...the one notes...the...and the</p>
+      <p begin="00:05:51.140" end="00:05:55.870">...notes of all urls...maybe you have to of remember what they are but...</p>
+      <p begin="00:05:55.870" end="00:05:59.790">inverted the concept now instead of having to know url.</p>
+      <p begin="00:06:00.810" end="00:06:04.550">But, if I just use my identity discover.</p>
+      <p begin="00:06:04.550" end="00:06:08.980">Active consumed it if you remember with ad service reference and the</p>
+      <p begin="00:06:08.980" end="00:06:12.360">...single file generator technologies that we had what.</p>
+      <p begin="00:06:12.360" end="00:06:14.440">Was the code what is the code that I...</p>
+      <p begin="00:06:15.610" end="00:06:20.280">...david kind of go through a little bit as well and how much of that should I have to</p>
+      <p begin="00:06:20.280" end="00:06:20.780">consume?</p>
+      <p begin="00:06:21.790" end="00:06:26.070">...after I've consumed at all well then why you've gotten</p>
+      <p begin="00:06:26.070" end="00:06:31.430">this ad service reference you've done was experiences you...code your project...now I go to the</p>
+      <p begin="00:06:31.430" end="00:06:35.680">worldwide web to go find eighteen different ways of people's opinion around how to</p>
+      <p begin="00:06:35.680" end="00:06:41.030">...so these are some of the problems that we want to undertake?</p>
+      <p begin="00:06:41.030" end="00:06:46.120">So, we went out and we talked to some of our customers around who's using</p>
+      <p begin="00:06:46.120" end="00:06:50.420">this was asking earlier and we have a customer land desk</p>
+      <p begin="00:06:50.420" end="00:06:54.930">...been a great customer that been willing to share their code of what they've gone through the</p>
+      <p begin="00:06:54.930" end="00:06:58.490">pains they've gone through and they've got a pretty cool scenario so</p>
+      <p begin="00:06:58.490" end="00:07:02.110">...desk is basicallya systems management company they do</p>
+      <p begin="00:07:02.110" end="00:07:08.770">device management they've got lots of different software solutions as well and,</p>
+      <p begin="00:07:08.770" end="00:07:12.070">they are software company turns out they have some bugs like the rest</p>
+      <p begin="00:07:12.070" end="00:07:16.050">of us a linear way to triage those bugs.</p>
+      <p begin="00:07:16.050" end="00:07:19.460">So, that turns out they also use sales force.</p>
+      <p begin="00:07:19.460" end="00:07:23.020">So, they've got their bugs and t fs and they can go and</p>
+      <p begin="00:07:23.020" end="00:07:26.640">buy qb triage team and described and all you know, the</p>
+      <p begin="00:07:26.640" end="00:07:31.550">new modern ways of managing bugs but the end of the day it's a wall</p>
+      <p begin="00:07:31.550" end="00:07:37.070">of bugs and somebody has to decide what's the...one in pry to...you know,</p>
+      <p begin="00:07:37.070" end="00:07:41.880">becomes the argument of the one I really like to work on or whatever it turns out that's not</p>
+      <p begin="00:07:41.880" end="00:07:44.640">exactly the most productive way to actually...customers.</p>
+      <p begin="00:07:45.760" end="00:07:50.270">So, they happen to use sales force and turns out they have some pretty important</p>
+      <p begin="00:07:50.270" end="00:07:53.700">dated sales words that actually works for them so,</p>
+      <p begin="00:07:53.700" end="00:08:00.460">what land ask is doing is they're using ...our customer support</p>
+      <p begin="00:08:00.460" end="00:08:04.780">offering which has a case object so cases like a customer support</p>
+      <p begin="00:08:04.780" end="00:08:06.800">instance and their time</p>
+      <p begin="00:08:06.800" end="00:08:12.820">vt fs bugs to sales force cases are naturally connected</p>
+      <p begin="00:08:12.820" end="00:08:17.940">to contacts and accounts so now they have more information about that bug</p>
+      <p begin="00:08:17.940" end="00:08:22.330">right at their fingertips...sales...so they will know?</p>
+      <p begin="00:08:22.330" end="00:08:26.260">How many customers are affected by a particular bug?</p>
+      <p begin="00:08:26.260" end="00:08:29.880">The big customers are spending lots of money with them maybe it's a deal</p>
+      <p begin="00:08:29.880" end="00:08:34.670">that's pending they will know what bugs are affected by them so they can utilize all</p>
+      <p begin="00:08:34.670" end="00:08:39.510">that information so now they can prioritize that and</p>
+      <p begin="00:08:39.510" end="00:08:44.680">...this is crazy right so they were trying to figure out how</p>
+      <p begin="00:08:44.680" end="00:08:50.510">do they visualize that so this is that give credit to the of a tanner from</p>
+      <p begin="00:08:50.510" end="00:08:55.490">...as they were basically use this population growth formula and what they were</p>
+      <p begin="00:08:55.490" end="00:08:58.720">trying to do is not just have this linear scale but try to make sure</p>
+      <p begin="00:08:58.720" end="00:09:03.490">that the important bugs got the top...didn't bury the medium bugs so it turns out to be</p>
+      <p begin="00:09:03.490" end="00:09:09.590">an interesting formula that they implemented the sample will be out on I get have</p>
+      <p begin="00:09:09.590" end="00:09:13.580">repo so be able to get access to this as well but it's pretty cool about what they're</p>
+      <p begin="00:09:13.580" end="00:09:18.090">doing is they're using the to data sources and creating what they call and</p>
+      <p begin="00:09:18.090" end="00:09:21.640">...score or unify metric priority?</p>
+      <p begin="00:09:22.730" end="00:09:24.820">We'll see this...place.</p>
+      <p begin="00:09:24.820" end="00:09:25.780">So, now</p>
+      <p begin="00:09:25.780" end="00:09:30.220">that they can do this calculation now they can get a visualization you</p>
+      <p begin="00:09:30.220" end="00:09:34.440">can see that curve going on there looking at their bugs.</p>
+      <p begin="00:09:34.440" end="00:09:39.880">They can drill into the bugs to see what customers are affected by the cases and</p>
+      <p begin="00:09:39.880" end="00:09:41.480">now the triage team</p>
+      <p begin="00:09:41.480" end="00:09:45.610">is off having a good old-time having their own party maybe having some</p>
+      <p begin="00:09:45.610" end="00:09:48.530">...because they're actually celebrating their...right</p>
+      <p begin="00:09:48.530" end="00:09:53.340">there developers for happy I'm happy developers happy developers make happy</p>
+      <p begin="00:09:53.340" end="00:09:58.340">customers so that's the case that we will walk through here so with vat</p>
+      <p begin="00:09:58.340" end="00:10:05.050">we will switch over to our demos this one here.</p>
+      <p begin="00:10:05.050" end="00:10:09.450">And, let's see so but, so, here we have the</p>
+      <p begin="00:10:09.450" end="00:10:16.110">...desk...of what they...they use is just...if we click</p>
+      <p begin="00:10:16.110" end="00:10:21.130">...anything it will not have much functionality because that quite honestly is</p>
+      <p begin="00:10:21.130" end="00:10:25.720">are demo is to put the services behind the functionality, yeah, so,</p>
+      <p begin="00:10:25.720" end="00:10:30.040">this is basically of the outline or</p>
+      <p begin="00:10:30.040" end="00:10:34.670">the user interface that we might have gotten from our ux the neighbor,</p>
+      <p begin="00:10:34.670" end="00:10:38.740">you know, one are you access trust so it's our job then to plumb this thing up</p>
+      <p begin="00:10:38.740" end="00:10:43.450">...plumbing in it to make it all work so let's start with adding sales force</p>
+      <p begin="00:10:43.450" end="00:10:47.960">...jump right into it so,</p>
+      <p begin="00:10:47.960" end="00:10:50.190">here we are in side of visual</p>
+      <p begin="00:10:50.190" end="00:10:56.220">studio and as a dot net developer or somebody who's unfamiliar sales</p>
+      <p begin="00:10:56.220" end="00:10:58.950">force the challenge that first</p>
+      <p begin="00:10:58.950" end="00:11:04.170">...is where do I start how do I do this what's available to me</p>
+      <p begin="00:11:04.170" end="00:11:09.700">so we know that within visual studio we've got a couple options around ad service reference so,</p>
+      <p begin="00:11:09.700" end="00:11:14.220">on sales force does have whittle definition</p>
+      <p begin="00:11:14.220" end="00:11:18.660">so may not be your first choice but like if it's the only thing available maybe</p>
+      <p begin="00:11:18.660" end="00:11:23.250">you go there so let me just show you what that's like?</p>
+      <p begin="00:11:23.250" end="00:11:28.250">So, I'm going-to go ahead and add service reference now one thing I understand about the</p>
+      <p begin="00:11:28.250" end="00:11:33.030">...first platform is that everything including your was though which is actually valuable data</p>
+      <p begin="00:11:33.030" end="00:11:39.370">because it describes the data that your storing is behind a login so it turns out that</p>
+      <p begin="00:11:39.370" end="00:11:42.450">...service reference actually doesn't work very well with</p>
+      <p begin="00:11:42.450" end="00:11:49.270">...to begin with all off...really the private loses the...so, it turns</p>
+      <p begin="00:11:49.270" end="00:11:54.140">out I happen to know that the next thing you want to do is go to advance?</p>
+      <p begin="00:11:54.140" end="00:12:00.200">Because service isn't going to work for me so I'll go to advanced and</p>
+      <p begin="00:12:00.200" end="00:12:05.140">...adam web reference now notice that were already like three dialogues</p>
+      <p begin="00:12:05.140" end="00:12:10.300">and at this point and, again, it's asking over a url times</p>
+      <p begin="00:12:10.300" end="00:12:15.050">...and maybe it's a spiral of death but so,</p>
+      <p begin="00:12:15.050" end="00:12:19.810">I could inner url here but then I'd be required...authenticate log in a salesperson there's</p>
+      <p begin="00:12:19.810" end="00:12:25.150">no mechanism for that in here luckily I found out that you can actually download</p>
+      <p begin="00:12:25.150" end="00:12:29.740">the whistles of file put it on your file system and then go ahead and</p>
+      <p begin="00:12:29.740" end="00:12:34.260">...that way so this is one of the first examples of even if we</p>
+      <p begin="00:12:34.260" end="00:12:37.690">support the technology for in this case open was</p>
+      <p begin="00:12:37.690" end="00:12:42.710">dol the authentication of evolved and we thought about</p>
+      <p begin="00:12:42.710" end="00:12:47.410">evolving this dialog and continuing to figure audio off patterns we just couldn't it</p>
+      <p begin="00:12:47.410" end="00:12:52.300">...we maintain able to this is one of the challenges okay so it was able to parse my was</p>
+      <p begin="00:12:52.300" end="00:12:57.420">they'll and is now generating a nice proxy class for me</p>
+      <p begin="00:12:57.420" end="00:13:00.940">I'm going-to go ahead and?</p>
+      <p begin="00:13:00.940" end="00:13:04.680">Show hidden files and what I want to do is I want to show you the</p>
+      <p begin="00:13:04.680" end="00:13:09.560">result of this I think you're probably already kind of getting the gist just by my</p>
+      <p begin="00:13:09.560" end="00:13:13.470">scrolling there if I open this reference about cs?</p>
+      <p begin="00:13:15.630" end="00:13:18.930">This is my clients this is what I'm supposed</p>
+      <p begin="00:13:18.930" end="00:13:25.140">to use to get those cases in contacts for land desk.</p>
+      <p begin="00:13:25.140" end="00:13:28.890">There's a couple of interesting things about it one</p>
+      <p begin="00:13:28.890" end="00:13:33.950">it doesn't allow you to step through with the debug so if you do have some kind of weird connectivity</p>
+      <p begin="00:13:33.950" end="00:13:38.850">...you have to know that this is there and remove it another,</p>
+      <p begin="00:13:38.850" end="00:13:43.730">another issue with this is you see this little slider...slider thing because kind of</p>
+      <p begin="00:13:43.730" end="00:13:48.080">...rarely grab it that's because there are</p>
+      <p begin="00:13:48.080" end="00:13:52.340">one hundred eighteen thousand lines of code in this</p>
+      <p begin="00:13:52.340" end="00:13:55.450">wisdom to get to contacts in cases.</p>
+      <p begin="00:13:56.530" end="00:13:58.970">Which I think is?</p>
+      <p begin="00:13:58.970" end="00:14:03.110">Just like as a proud developer you don't need all that</p>
+      <p begin="00:14:03.110" end="00:14:07.930">...who gets caught who gets paid the amount of code that they right.</p>
+      <p begin="00:14:07.930" end="00:14:12.070">Now this is a feature...trying to get you more money.</p>
+      <p begin="00:14:12.070" end="00:14:16.640">... one final negative of this also this is a generated file so if I did go in</p>
+      <p begin="00:14:16.640" end="00:14:21.330">and make some changes the next time that I had to refresh the whittle from</p>
+      <p begin="00:14:21.330" end="00:14:26.530">the service my changes would be lost we told you at the top donate don't touch this,</p>
+      <p begin="00:14:26.530" end="00:14:32.770">it says is...the very top-down texas and, there's a good reason for that so we're not going to go that way</p>
+      <p begin="00:14:32.770" end="00:14:38.650">...just delete that and then clean-up this web references folder.</p>
+      <p begin="00:14:38.650" end="00:14:43.100">So, there's another way to do this is I'm sure, you know,</p>
+      <p begin="00:14:43.100" end="00:14:48.030">being developers we could certainly create an http request we could figure out the</p>
+      <p begin="00:14:48.030" end="00:14:50.760">...off...rest it's easy it's rest</p>
+      <p begin="00:14:50.760" end="00:14:56.260">rated solvable rest and points and then go find the documentation and see what</p>
+      <p begin="00:14:56.260" end="00:15:01.880">the resulting shape of the data looks like the graph if you will</p>
+      <p begin="00:15:01.880" end="00:15:10.690">or I could go and see if I can find something on new get where's my.</p>
+      <p begin="00:15:10.690" end="00:15:15.640">I could go out and...do a search for sales force that seems reasonable new get is the new hot</p>
+      <p begin="00:15:15.640" end="00:15:17.770">...right everybody's got a new get</p>
+      <p begin="00:15:17.770" end="00:15:22.910">...the new in pm or the olympian of windows so anyways so,</p>
+      <p begin="00:15:22.910" end="00:15:28.000">that returns some results but there's a problem with this if I'm not familiar I don't want</p>
+      <p begin="00:15:28.000" end="00:15:29.600">to teach you guys to be the sales</p>
+      <p begin="00:15:29.600" end="00:15:34.550">force developer experts I just want to help you get your job done you don't know which one of these</p>
+      <p begin="00:15:34.550" end="00:15:37.070">...appropriate right this one right here</p>
+      <p begin="00:15:37.070" end="00:15:41.460">...pointing at that's actually only for universal lapse.</p>
+      <p begin="00:15:41.460" end="00:15:45.800">This one here says something about soap helpers I'm not sure it's exactly</p>
+      <p begin="00:15:45.800" end="00:15:50.990">right but then if I scroll down then I really start to get lost right I'm not sure what to</p>
+      <p begin="00:15:50.990" end="00:15:53.660">use so we're not going to do that either so it's nice</p>
+      <p begin="00:15:53.660" end="00:15:56.900">...you get has all these packages but there's no context.</p>
+      <p begin="00:15:56.900" end="00:16:00.930">...we've got a project open here there's no filtering to be able to support you</p>
+      <p begin="00:16:00.930" end="00:16:05.550">to give you context of...right so instead we're going to go to</p>
+      <p begin="00:16:05.550" end="00:16:10.060">add connected service is right there in the middle between the two and it turns out that</p>
+      <p begin="00:16:10.060" end="00:16:15.910">...in between those two other options that we didn't want and,</p>
+      <p begin="00:16:15.910" end="00:16:20.090">The connected service brings up this dialog of various services that you can connect</p>
+      <p begin="00:16:20.090" end="00:16:24.970">...explain a little bit more about this so this is what we've...envisioned on how we want to</p>
+      <p begin="00:16:24.970" end="00:16:30.610">connect to services rather than expect the world to come to us new world we kind of</p>
+      <p begin="00:16:30.610" end="00:16:35.670">taken this true and now we want to do is provide a cure rated list of</p>
+      <p begin="00:16:35.670" end="00:16:39.500">services instead of having have a one-size-fits-all we want to be able to</p>
+      <p begin="00:16:39.500" end="00:16:43.320">allow the uniqueness of each service and including</p>
+      <p begin="00:16:43.320" end="00:16:48.270">the ability to build on this over time so you see in the bottom left is</p>
+      <p begin="00:16:48.270" end="00:16:51.820">find more services you can go...the gallery and get more and will</p>
+      <p begin="00:16:51.820" end="00:16:56.640">...some of that moment in fact we have our friends at data logics that are building</p>
+      <p begin="00:16:56.640" end="00:17:00.610">pdf service as well so we want to provide</p>
+      <p begin="00:17:00.610" end="00:17:02.890">...extensibility model that would be</p>
+      <p begin="00:17:02.890" end="00:17:07.890">cater to those services and then you could consume those in that fashion like we'll see</p>
+      <p begin="00:17:07.890" end="00:17:12.550">what sales force...we get one thing I wanted to point out about, you know, whether it's appropriate for</p>
+      <p begin="00:17:12.550" end="00:17:16.920">what you're doing is you can see that...service has this download</p>
+      <p begin="00:17:16.920" end="00:17:20.090">cloud and says project support this project is currently</p>
+      <p begin="00:17:20.090" end="00:17:23.700">supported where this one is an obviously that one's for mobile and</p>
+      <p begin="00:17:23.700" end="00:17:29.010">...nbc web out so let's go ahead and we have that extra context</p>
+      <p begin="00:17:29.010" end="00:17:33.900">...provide here so let's walk through this now the process for connecting to the</p>
+      <p begin="00:17:33.900" end="00:17:38.510">...is first of all we gotta figure out or establish a</p>
+      <p begin="00:17:39.580" end="00:17:44.580">Credential authentication because what's going to happen is as we go through this we're</p>
+      <p begin="00:17:44.580" end="00:17:48.150">going to want to query the sales force a platform</p>
+      <p begin="00:17:48.150" end="00:17:53.050">for information at design-time so that means that basically what we're going</p>
+      <p begin="00:17:53.050" end="00:17:57.580">to do is going to turn visual studio into an api client for sales</p>
+      <p begin="00:17:57.580" end="00:18:02.460">...using these credentials and, you know, if you look at this is</p>
+      <p begin="00:18:02.460" end="00:18:06.190">not a generic dialogue write the very much is sales forces</p>
+      <p begin="00:18:06.190" end="00:18:10.990">got the sales was logo it's going to sales force layout it happens to be a wizard</p>
+      <p begin="00:18:10.990" end="00:18:16.010">flow...there's actually a very good point as soon as I selected</p>
+      <p begin="00:18:16.010" end="00:18:20.000">...configure that the code transferred over to sales force</p>
+      <p begin="00:18:20.000" end="00:18:21.790">developed code now this was developed</p>
+      <p begin="00:18:21.790" end="00:18:28.190">in conjunction with sales force we partnered on this big-shot out to the guys in fargo but,</p>
+      <p begin="00:18:28.190" end="00:18:31.850">this is that this is code where responsible for that's plugging in to</p>
+      <p begin="00:18:31.850" end="00:18:37.130">the connected services framework so I'm going to select the user account and,</p>
+      <p begin="00:18:37.130" end="00:18:39.040">environment I'm using a</p>
+      <p begin="00:18:39.040" end="00:18:45.050">custom domain name which will understand the reason for later on in the talk.</p>
+      <p begin="00:18:45.050" end="00:18:49.740">Once I once I've put that information and now we want to know what kind of</p>
+      <p begin="00:18:49.740" end="00:18:53.730">application you building we might assume that</p>
+      <p begin="00:18:53.730" end="00:18:59.230">it's web server flow but it doesn't have to work that way and, the two that we support right now for</p>
+      <p begin="00:18:59.230" end="00:19:02.740">...web server and...and password flow</p>
+      <p begin="00:19:02.740" end="00:19:07.470">off to has four or five different types of...depending on where your codes</p>
+      <p begin="00:19:07.470" end="00:19:12.420">running so you wouldn't use either of these if you're on a device for instance</p>
+      <p begin="00:19:12.420" end="00:19:16.470">the reason is there's no call back url on a device so there's</p>
+      <p begin="00:19:16.470" end="00:19:22.480">other mechanisms for that so we're going to go with a web server flow and then again,</p>
+      <p begin="00:19:22.480" end="00:19:27.160">very custom the sales forces the question about a branded sign in a</p>
+      <p begin="00:19:27.160" end="00:19:32.760">sign in page so our customers really do a lot of customizations</p>
+      <p begin="00:19:32.760" end="00:19:37.320">sometimes they like to completely wipe sales force the word off of</p>
+      <p begin="00:19:37.320" end="00:19:42.290">everything that they've implemented which is fine with us and one way they want to do that is in</p>
+      <p begin="00:19:42.290" end="00:19:47.650">the url so they can create a custom domain and then if they have a</p>
+      <p begin="00:19:47.650" end="00:19:52.320">...name they can do some mapping there and it just disappears completely so we're</p>
+      <p begin="00:19:52.320" end="00:19:56.180">...go ahead and do one of these...so I just another point is what</p>
+      <p begin="00:19:56.180" end="00:20:00.260">...see there's were remembering previous selections we've got mr use and</p>
+      <p begin="00:20:00.260" end="00:20:04.320">...this is a principle that we like for people building connected services because</p>
+      <p begin="00:20:04.320" end="00:20:09.010">we want use developers to not hacker remember and copy and paste in all...really want</p>
+      <p begin="00:20:09.010" end="00:20:13.510">to be able to select from for instance the list of objects that are available</p>
+      <p begin="00:20:13.510" end="00:20:17.070">...violators, you know, I've configured my design-time</p>
+      <p begin="00:20:17.070" end="00:20:21.250">...my runtime authentication and now what objects do I</p>
+      <p begin="00:20:21.250" end="00:20:26.860">want to have available to me and my projects and uninvolved</p>
+      <p begin="00:20:26.860" end="00:20:32.640">...you can see that no we don't want them all that was though but that...we'll?</p>
+      <p begin="00:20:32.640" end="00:20:37.380">...just in case you wanted them no, they don't have to worry about that so I want to contact and I want</p>
+      <p begin="00:20:37.380" end="00:20:41.620">to case so I can select those and then click finish.</p>
+      <p begin="00:20:42.710" end="00:20:46.820">Now what's interesting is this is still acting as a</p>
+      <p begin="00:20:46.820" end="00:20:50.300">...api client for sales force in that</p>
+      <p begin="00:20:50.300" end="00:20:53.420">...creating that configuration piece so instead of going</p>
+      <p begin="00:20:53.420" end="00:20:58.980">this sales force and saying hey I want to create a new all...off app and,</p>
+      <p begin="00:20:58.980" end="00:21:04.020">get my client id and secret were able to do that through the api at this point</p>
+      <p begin="00:21:04.020" end="00:21:11.460">so creates a new connected app which is the or configuration?</p>
+      <p begin="00:21:11.460" end="00:21:12.500">So, you never know moi.</p>
+      <p begin="00:21:13.750" end="00:21:18.870">Creates...and then leverages that the next thing it</p>
+      <p begin="00:21:18.870" end="00:21:23.220">does a scaffold up a bunch of stuff in there and will point out some more that?</p>
+      <p begin="00:21:23.220" end="00:21:29.780">So, this is part of being a connected service provider sorry,</p>
+      <p begin="00:21:29.780" end="00:21:35.900">... like that...is microsoft has some suggestions about</p>
+      <p begin="00:21:35.900" end="00:21:38.210">the flow and one of the philosophy</p>
+      <p begin="00:21:38.210" end="00:21:43.240">is of course is okay I've added your service one-way might</p>
+      <p begin="00:21:43.240" end="00:21:46.990">...what you do my project priority one but what do I do next priority</p>
+      <p begin="00:21:46.990" end="00:21:51.180">too so here's the things that have happened to this particular project</p>
+      <p begin="00:21:51.180" end="00:21:56.200">what we've added in web can fig the name of the connected app where the</p>
+      <p begin="00:21:56.200" end="00:21:59.110">off stuff that we created on the sales for side so that</p>
+      <p begin="00:21:59.110" end="00:22:04.270">you can reference that if you ever need to and, then we added some new get</p>
+      <p begin="00:22:04.270" end="00:22:09.190">the package references source still using new...so we're still using new get but we're using</p>
+      <p begin="00:22:09.190" end="00:22:14.740">were following the instructions of the service the...</p>
+      <p begin="00:22:14.740" end="00:22:20.420">prescriptive guidance to get you started some dot net references so that we can speak to the</p>
+      <p begin="00:22:20.420" end="00:22:25.830">speak to an external service and then the connection class the other thing that we</p>
+      <p begin="00:22:25.830" end="00:22:30.260">did was we took all that co-author information we stuck that and the web</p>
+      <p begin="00:22:30.260" end="00:22:34.760">...for-you so, that's already to go one of the</p>
+      <p begin="00:22:34.760" end="00:22:40.250">great things that I like about this is we created this thing missive...scroll</p>
+      <p begin="00:22:40.250" end="00:22:45.790">in here zooming and is this part here that says sales force</p>
+      <p begin="00:22:45.790" end="00:22:49.520">co-author redirect handler so this thing is awesome</p>
+      <p begin="00:22:49.520" end="00:22:54.620">because what that does now is it means that we've already given you all that off</p>
+      <p begin="00:22:54.620" end="00:22:59.210">stuff so that you don't have to worry about any of it you just exercise the</p>
+      <p begin="00:22:59.210" end="00:23:04.250">references in the toolkits we put in there and the whole dance is taken care</p>
+      <p begin="00:23:04.250" end="00:23:06.240">...saving of tokens obtaining</p>
+      <p begin="00:23:06.240" end="00:23:14.280">refresh tokens handling the scope all of that stuff is there for you so that's kinda cool?</p>
+      <p begin="00:23:14.280" end="00:23:16.640">Right so.</p>
+      <p begin="00:23:16.640" end="00:23:19.630">Let's go back to...</p>
+      <p begin="00:23:19.630" end="00:23:23.940">Right yeah,...the getting started that's the next thing that...so once you've</p>
+      <p begin="00:23:23.940" end="00:23:28.740">done this especially if it's the first-time it's like well okay I'm in my nbc app how do</p>
+      <p begin="00:23:28.740" end="00:23:33.480">I use this so we've got to walk throughs one for an nbc app and one for consul</p>
+      <p begin="00:23:33.480" end="00:23:38.130">...and I'm just going to start building this and I'm going to do it by selecting all the</p>
+      <p begin="00:23:38.130" end="00:23:43.430">code in here and creating a controller.</p>
+      <p begin="00:23:43.430" end="00:23:47.650">So, this was one...other principles that we have is we didn't want to pollute your project</p>
+      <p begin="00:23:47.650" end="00:23:49.240">was sample code.</p>
+      <p begin="00:23:49.240" end="00:23:55.800">Active use this for the fourth or fifth time we didn't want the first thing you do is delete class...</p>
+      <p begin="00:23:55.800" end="00:24:00.700">We wanted to be productive over time so instead of putting sample</p>
+      <p begin="00:24:00.700" end="00:24:05.820">code in the project we put it on a web page so next time you do this you</p>
+      <p begin="00:24:05.820" end="00:24:12.840">probably don't want that so here's the...empty controller that I'm going to create I'm going to color contacts.</p>
+      <p begin="00:24:12.840" end="00:24:15.170">And, then go ahead and add...</p>
+      <p begin="00:24:15.170" end="00:24:16.340">...standard nbc stuff</p>
+      <p begin="00:24:16.340" end="00:24:20.800">...standard nbc's stuff I'm going to just delete that because I'm going to use what</p>
+      <p begin="00:24:20.800" end="00:24:23.740">I copied from the getting started.</p>
+      <p begin="00:24:23.740" end="00:24:28.730">And, then and, you'll notice a whole bunch of red here well that's because I'm copying and pasting this</p>
+      <p begin="00:24:28.730" end="00:24:34.400">is a part of the scaffolding otherwise we know the context a little bit better the point here</p>
+      <p begin="00:24:34.400" end="00:24:40.150">is that my namespaces different so my name space should be the land...so,</p>
+      <p begin="00:24:40.150" end="00:24:44.490">I'm going to see if I have a fancier automatic it's awesome like...of</p>
+      <p begin="00:24:44.490" end="00:24:48.330">...strokes right so I'll see that now I've got a working</p>
+      <p begin="00:24:48.330" end="00:24:52.350">...now with in this controller are all</p>
+      <p begin="00:24:52.350" end="00:24:55.970">the methods for getting a list of contacts?</p>
+      <p begin="00:24:55.970" end="00:24:58.540">Creating contact updating contacts in the</p>
+      <p begin="00:24:58.540" end="00:25:02.990">leading contact so it's all represented in that piece of sample code and</p>
+      <p begin="00:25:02.990" end="00:25:08.820">it really doesn't change no matter what kind of object that you're dealing with...basic</p>
+      <p begin="00:25:08.820" end="00:25:13.820">...really representative...mapped into the mdc actions so that's pretty cool though for instance,</p>
+      <p begin="00:25:13.820" end="00:25:19.410">you know, there's, there's the index which will return a list of stuff ok so,</p>
+      <p begin="00:25:19.410" end="00:25:21.300">the next thing I'm going to do is</p>
+      <p begin="00:25:21.300" end="00:25:26.550">start creating the user interface for the contacts and I'm going to do that and,</p>
+      <p begin="00:25:26.550" end="00:25:31.120">this is one of my favorite parts of visual studio is...contextual...</p>
+      <p begin="00:25:31.120" end="00:25:36.510">Enough that's a word...made them up before goingtechnologies michael make-up words but, just,</p>
+      <p begin="00:25:36.510" end="00:25:36.760">you know,</p>
+      <p begin="00:25:36.760" end="00:25:42.040">the way that it handles the right click...to modifier for where you are and what you're doing</p>
+      <p begin="00:25:42.040" end="00:25:46.660">is really cool I think but anyways so, what to do is I'm going to create a list use the</p>
+      <p begin="00:25:46.660" end="00:25:51.460">list template and then for the model class?</p>
+      <p begin="00:25:51.460" end="00:25:54.310">I'm going to use the contact model that was scaffold inform</p>
+      <p begin="00:25:54.310" end="00:25:59.390">me so it's hard to see on the screen but there's a case there and then there's a contact</p>
+      <p begin="00:25:59.390" end="00:26:02.560">there and those were part of the connected</p>
+      <p begin="00:26:02.560" end="00:26:10.680">service wizard that we went through so select contact an ad that guy.</p>
+      <p begin="00:26:10.680" end="00:26:15.220">So, there's my view one thing I do want to do a little bit differently</p>
+      <p begin="00:26:15.220" end="00:26:18.750">is you'll notice that I've got every single.</p>
+      <p begin="00:26:18.750" end="00:26:23.480">In field that's on that contact in here I don't want that I really only</p>
+      <p begin="00:26:23.480" end="00:26:27.010">want like a half a dozen so what I'm going to do is cheap.</p>
+      <p begin="00:26:28.220" end="00:26:34.650">come over here and ...some views that are pre created there's nothing magic about these is</p>
+      <p begin="00:26:34.650" end="00:26:38.110">...the same as the ones in the walk through.</p>
+      <p begin="00:26:38.110" end="00:26:42.430">...down the field just to make the demo...all grab this and drop it</p>
+      <p begin="00:26:42.430" end="00:26:46.510">into my contacts views folder I'm going to replace and</p>
+      <p begin="00:26:46.510" end="00:26:51.830">update my window so there's, there's a half-dozen fields otherwise it's the same.</p>
+      <p begin="00:26:51.830" end="00:26:55.000">So, at this point and we're going to go I think I'm</p>
+      <p begin="00:26:55.000" end="00:27:02.510">going to go so we'll do a control f five.</p>
+      <p begin="00:27:02.510" end="00:27:07.000">To keep our fingers crossed.</p>
+      <p begin="00:27:07.000" end="00:27:09.370">Actually I'm pretty confident this is going to work you'll.</p>
+      <p begin="00:27:11.680" end="00:27:15.240">Throw stuff...a that these ok sales</p>
+      <p begin="00:27:15.240" end="00:27:19.950">first contacts and boom instantly ...authenticate using o</p>
+      <p begin="00:27:19.950" end="00:27:25.080">off is that off dance and we've...scaffold the code into your project</p>
+      <p begin="00:27:25.080" end="00:27:29.500">...libraries that we use but there's also scaffolding because while we have</p>
+      <p begin="00:27:29.500" end="00:27:36.340">some default code that we put in there we know depending on your scenario you might need to tweak a little bit.</p>
+      <p begin="00:27:36.340" end="00:27:39.470">Ok, so, as part of...off...assed were</p>
+      <p begin="00:27:39.470" end="00:27:44.360">presented with a we think you're this person here's the access that</p>
+      <p begin="00:27:44.360" end="00:27:49.260">your granting this application to on your service side you want to let that happen or not</p>
+      <p begin="00:27:49.260" end="00:27:53.100">so we'll say allow and sure enough we have</p>
+      <p begin="00:27:53.100" end="00:27:53.940">...contacts.</p>
+      <p begin="00:27:55.160" end="00:27:56.610">Now that didn't</p>
+      <p begin="00:27:56.610" end="00:28:01.875">require a really deep knowledge of exercising the sales force rest api and that's what I</p>
+      <p begin="00:28:01.875" end="00:28:06.570">think the real our of connected services comes in so let's go ahead and take a look</p>
+      <p begin="00:28:06.570" end="00:28:11.250">at there's a lot in that we created the connected app we consume did I</p>
+      <p begin="00:28:11.250" end="00:28:14.980">mean right there was that was far too long for me to figure out the first</p>
+      <p begin="00:28:14.980" end="00:28:19.960">...the connected service did that all for mathematical ok so if I click in...details I</p>
+      <p begin="00:28:19.960" end="00:28:25.070">can see the details of this of my details views working I can go ahead and try to edit this</p>
+      <p begin="00:28:25.070" end="00:28:29.980">guy I shouldn't be a problem but, one thing I want to point out which is kind</p>
+      <p begin="00:28:29.980" end="00:28:35.920">of cool is I'm going to make...first name ridiculously long and,</p>
+      <p begin="00:28:35.920" end="00:28:39.330">then when I tab added this...wasn't too happy</p>
+      <p begin="00:28:39.330" end="00:28:43.340">...comic jack so when I tab added this I've got a</p>
+      <p begin="00:28:43.340" end="00:28:48.200">field validation error it's telling me that the maximum amount for this field is forty</p>
+      <p begin="00:28:48.200" end="00:28:53.720">characters...saved that happy...code up any validation</p>
+      <p begin="00:28:53.720" end="00:28:59.010">rolla in of it is modern...you could do anything on a...click event okay well so,</p>
+      <p begin="00:28:59.010" end="00:29:05.230">what about an email for instance that's not a valid email again I've got a</p>
+      <p begin="00:29:05.230" end="00:29:10.100">school a validation all that says well that doesn't look like...email I'm not going...let you try to</p>
+      <p begin="00:29:10.100" end="00:29:15.100">say that so how...you do that okay well so I mentioned</p>
+      <p begin="00:29:15.100" end="00:29:19.540">that again I mention that thevisual studio is in itself</p>
+      <p begin="00:29:21.270" end="00:29:26.050">a client of our api in one of our api is called describe and</p>
+      <p begin="00:29:26.050" end="00:29:30.590">described says what is a request to get all</p>
+      <p begin="00:29:30.590" end="00:29:35.430">the information about that particular object and I should I should just pause for a</p>
+      <p begin="00:29:35.430" end="00:29:40.390">site when I talk about objects and you can think of them is tables the traditionally we don't call them</p>
+      <p begin="00:29:40.390" end="00:29:44.990">tables...a sales...idiosyncrasies but...any rate you can see that this</p>
+      <p begin="00:29:46.520" end="00:29:51.510">first object her first field here id it's been annotated with</p>
+      <p begin="00:29:51.510" end="00:29:56.340">...a display name and also that it's not create</p>
+      <p begin="00:29:56.340" end="00:30:01.080">able and not...data will because id user mutable on our platform</p>
+      <p begin="00:30:01.080" end="00:30:04.310">...ideas should be and all this information came from that</p>
+      <p begin="00:30:04.310" end="00:30:10.090">described now we happen to be able to do that but other services will have other</p>
+      <p begin="00:30:10.090" end="00:30:14.690">kind of special sauce that they can put on top so this was another example when we</p>
+      <p begin="00:30:14.690" end="00:30:18.330">were doing tooling around services we were working with</p>
+      <p begin="00:30:18.330" end="00:30:21.320">dynamic crm and we were trying to get their metadata</p>
+      <p begin="00:30:21.320" end="00:30:26.110">was working with sap were transfer how to get their meta data...was using o data</p>
+      <p begin="00:30:26.110" end="00:30:31.000">...part audio data board using custom annotations before data for was out and</p>
+      <p begin="00:30:31.000" end="00:30:34.990">what we realizes every service has this information but they have</p>
+      <p begin="00:30:34.990" end="00:30:39.880">...unique places and the...again the idea to get everybody to put in the same place</p>
+      <p begin="00:30:39.880" end="00:30:44.430">was unattainable so we decided to if it's and costs almost like a</p>
+      <p begin="00:30:44.430" end="00:30:48.770">...almost like taking a step back and going okay you guys start here rather than</p>
+      <p begin="00:30:48.770" end="00:30:54.710">start here and the way...service connected service can if you...all that it's in the</p>
+      <p begin="00:30:54.710" end="00:30:56.980">...so now in the you can sales</p>
+      <p begin="00:30:56.980" end="00:31:01.760">...the ui they can control where they go get their meta data sap can get their</p>
+      <p begin="00:31:01.760" end="00:31:05.950">meta data dynamic serum can get their meta data so here?</p>
+      <p begin="00:31:05.950" end="00:31:07.370">We've.</p>
+      <p begin="00:31:07.370" end="00:31:11.170">Generate the attributes just to be able based on that metadata we have a really nice</p>
+      <p begin="00:31:11.170" end="00:31:16.460">poker class yep so, yeah, and, in the interesting thing is the reason why we're able to get that</p>
+      <p begin="00:31:16.460" end="00:31:21.140">described data is the sales...types are not just primitives like you would see in</p>
+      <p begin="00:31:21.140" end="00:31:26.300">a standard database...types like phone email address url</p>
+      <p begin="00:31:26.300" end="00:31:31.370">so on which allows you to have this kind of rich represent meant</p>
+      <p begin="00:31:31.370" end="00:31:37.130">of the data outside of the sales...ui so we got sales...data yet we get sales</p>
+      <p begin="00:31:37.130" end="00:31:42.420">...data so what's the next so let's go get some bugs from visual studio online</p>
+      <p begin="00:31:42.420" end="00:31:46.790">...all right so the next service we want to get from</p>
+      <p begin="00:31:46.790" end="00:31:49.460">...so I'm going-to go over and say</p>
+      <p begin="00:31:49.460" end="00:31:53.930">...connect service now turns out we actually don't have one for</p>
+      <p begin="00:31:53.930" end="00:31:57.800">via vs online yet they're working on improving with</p>
+      <p begin="00:31:57.800" end="00:32:01.980">their rest api but I was working with the team and I was able to go and create a</p>
+      <p begin="00:32:01.980" end="00:32:08.190">...for this what you code...program all program manager</p>
+      <p begin="00:32:08.190" end="00:32:12.810">...a developer tools so we'd like to know our customers do so, anyway, so,</p>
+      <p begin="00:32:12.810" end="00:32:18.340">I did write this sample it again be on my repo you can get it by just going out</p>
+      <p begin="00:32:18.340" end="00:32:23.080">to the gallery and you can see the...online one I built there's the</p>
+      <p begin="00:32:23.080" end="00:32:28.480">...service that data logics is building so what we'll do is we will</p>
+      <p begin="00:32:28.480" end="00:32:31.210">...that one and again</p>
+      <p begin="00:32:31.210" end="00:32:35.620">or musical wizard here again but notice the wizard is slightly different it's</p>
+      <p begin="00:32:35.620" end="00:32:39.990">not just branding the pages are different from using the handy dandy</p>
+      <p begin="00:32:39.990" end="00:32:43.480">...selector so that's a user control and you</p>
+      <p begin="00:32:43.480" end="00:32:48.160">didn't even after that I didn't have to write this part of the controls able to...leverage it because it comes with the tty</p>
+      <p begin="00:32:48.160" end="00:32:50.960">...client so now I've got my</p>
+      <p begin="00:32:50.960" end="00:32:55.180">vs online project I can go in again I'm choosing</p>
+      <p begin="00:32:55.180" end="00:33:01.630">one-time author options in this case it's unique to...online?</p>
+      <p begin="00:33:01.630" end="00:33:05.080">I can name the thing that gets added to my project...I might actually consume</p>
+      <p begin="00:33:05.080" end="00:33:06.910">...multiple times.</p>
+      <p begin="00:33:06.910" end="00:33:10.220">And, now when I finish will do the same new get thing</p>
+      <p begin="00:33:10.220" end="00:33:15.410">we'll give you a same getting started...what happened what...projectand,</p>
+      <p begin="00:33:15.410" end="00:33:20.670">then some samples for some next steps so the next steps our to create a</p>
+      <p begin="00:33:20.670" end="00:33:28.490">controller...come over here and create a controller.</p>
+      <p begin="00:33:28.490" end="00:33:32.330">For work items.</p>
+      <p begin="00:33:32.330" end="00:33:35.130">To work items work item...</p>
+      <p begin="00:33:35.130" end="00:33:38.240">...singular...be my first break.</p>
+      <p begin="00:33:38.240" end="00:33:46.430">Right and, we will...to the fix-up.</p>
+      <p begin="00:33:46.430" end="00:33:50.150">And, I'll remove my little warning about that so now</p>
+      <p begin="00:33:50.150" end="00:33:54.920">you're seeing here is I've got a standard nbc comptroller but if we notice I've got a</p>
+      <p begin="00:33:54.920" end="00:33:59.610">select statement here and this is o data select because that's</p>
+      <p begin="00:33:59.610" end="00:34:02.900">what the hdf-eos online team is doing and was</p>
+      <p begin="00:34:02.900" end="00:34:07.920">...foresee use...use cycles so ...or</p>
+      <p begin="00:34:07.920" end="00:34:13.240">...one...since we have api for creating inserting data we</p>
+      <p begin="00:34:13.240" end="00:34:17.910">had we created a sql like language called...it's very much like</p>
+      <p begin="00:34:17.910" end="00:34:23.129">sequel there's only a select but, you know, that's what we call it soccer.</p>
+      <p begin="00:34:23.129" end="00:34:26.109">So, now...our view.</p>
+      <p begin="00:34:26.109" end="00:34:28.809">And, we'll make it a list view again.</p>
+      <p begin="00:34:28.809" end="00:34:33.069">And, it's on our work item type because we scaffold that in as well and you hear me</p>
+      <p begin="00:34:33.069" end="00:34:36.759">using the word scaffolding as opposed to generating we'll see that</p>
+      <p begin="00:34:36.759" end="00:34:40.909">...in a second here all right so at this point will</p>
+      <p begin="00:34:40.909" end="00:34:45.589">run this again so now we should be building up our services</p>
+      <p begin="00:34:45.589" end="00:34:48.979">...service consumption faq we're also building upper list of pages so</p>
+      <p begin="00:34:48.979" end="00:34:51.979">...clear little room here so we've got</p>
+      <p begin="00:34:51.979" end="00:34:55.049">...sales force contacts now we're going to get some work items</p>
+      <p begin="00:34:56.170" end="00:35:00.020">...to do and I didn't take the time that you did to clean-up</p>
+      <p begin="00:35:00.020" end="00:35:04.870">the list but you get the idea so now I've got data from sales</p>
+      <p begin="00:35:04.870" end="00:35:09.760">force get data from vs online now we want national</p>
+      <p begin="00:35:09.760" end="00:35:12.800">...and actually it's kinda funny</p>
+      <p begin="00:35:12.800" end="00:35:17.850">...talking about massive swim ajax first came out I don't know many years ago and</p>
+      <p begin="00:35:17.850" end="00:35:23.390">now we're talking about like serious business use case...line-of-business</p>
+      <p begin="00:35:24.490" end="00:35:28.980">...big mash potato all right so what I've got here is I've just</p>
+      <p begin="00:35:28.980" end="00:35:32.780">...speed things up a little bit...dragon some files and walk who's a little</p>
+      <p begin="00:35:32.780" end="00:35:37.230">bit groups not the whole thing just the one so, what</p>
+      <p begin="00:35:37.230" end="00:35:44.000">...mirrors my controllers folder...and, in here</p>
+      <p begin="00:35:44.000" end="00:35:48.970">what we see is they've got this boomed calculator which is what they're using so we need</p>
+      <p begin="00:35:48.970" end="00:35:58.060">to bring that in some ego grab that?</p>
+      <p begin="00:35:58.060" end="00:36:03.240">And, in our business folder what we'll see is?</p>
+      <p begin="00:36:03.240" end="00:36:13.260">That it's going to return a un p score result...just another model.</p>
+      <p begin="00:36:13.260" end="00:36:15.580">And, what's nice about this is.</p>
+      <p begin="00:36:16.730" end="00:36:20.050">Were grabbing this rest data we years</p>
+      <p begin="00:36:20.050" end="00:36:24.560">we're using the services to generate these models so that once I get the</p>
+      <p begin="00:36:24.560" end="00:36:28.140">services top populate models I get to take advantage of ala dot</p>
+      <p begin="00:36:28.140" end="00:36:33.140">net technologies so I can use link I can move these objects around I can select</p>
+      <p begin="00:36:33.140" end="00:36:39.410">and join and this is the shape of the object that I want to actually return.</p>
+      <p begin="00:36:39.410" end="00:36:44.220">Okay, so, let's actually want to do is close this up and we're going to build.</p>
+      <p begin="00:36:44.220" end="00:36:48.480">And, we get a list of errors and the first one is a</p>
+      <p begin="00:36:48.480" end="00:36:53.330">vs online ideas missing but I'm pretty sure sales forced I've we've got that custom field</p>
+      <p begin="00:36:53.330" end="00:36:56.240">in...object we created a custom field on</p>
+      <p begin="00:36:56.240" end="00:37:02.420">a case object specifically to hold the via some online id and there it is so,</p>
+      <p begin="00:37:02.420" end="00:37:07.020">we have a that rate but notice the field in or the</p>
+      <p begin="00:37:07.020" end="00:37:15.110">property name is underscore, underscore c okay so underscore, underscore</p>
+      <p begin="00:37:15.110" end="00:37:19.520">Idiosyncratic city of sales force it represents something that's custom in your</p>
+      <p begin="00:37:19.520" end="00:37:23.390">schema so could be a custom object...custom field we put</p>
+      <p begin="00:37:23.390" end="00:37:27.150">...see in their to prevent collisions with any</p>
+      <p begin="00:37:27.150" end="00:37:32.380">kind of sales force objects are fields that might be created later so really good way to</p>
+      <p begin="00:37:32.380" end="00:37:35.930">abstract but remember I mention scaffolding not</p>
+      <p begin="00:37:35.930" end="00:37:40.760">generating instead of having to do some magic which we invented all kinds</p>
+      <p begin="00:37:40.760" end="00:37:44.220">of great technologies in the languages to deal with generated code and how to</p>
+      <p begin="00:37:44.220" end="00:37:47.650">extend it partial classes and all kinds of stuff I</p>
+      <p begin="00:37:47.650" end="00:37:50.370">...able edit the code because we scaffold</p>
+      <p begin="00:37:50.370" end="00:37:55.250">it's yours to own so there's no magic its code that we...project with</p>
+      <p begin="00:37:55.250" end="00:37:59.740">its yours I just added a json property attribute and now I can clean-up so</p>
+      <p begin="00:37:59.740" end="00:38:04.430">in my code I can actually use a property that I want to use without having to create</p>
+      <p begin="00:38:04.430" end="00:38:09.120">yet another model object to copied and really the only way that you'll lose that</p>
+      <p begin="00:38:09.120" end="00:38:13.670">...is a view delete that file is no warning at the top</p>
+      <p begin="00:38:13.670" end="00:38:15.790">...can't touch this matter</p>
+      <p begin="00:38:15.790" end="00:38:20.060">ok so work on does not taken have a definition for case?</p>
+      <p begin="00:38:20.060" end="00:38:24.250">Ok, so, where does work item come from?</p>
+      <p begin="00:38:24.250" end="00:38:28.850">Vs online, yeah, so, a case comes from sales force</p>
+      <p begin="00:38:28.850" end="00:38:33.310">so here's another place where what I'm going to do is</p>
+      <p begin="00:38:33.310" end="00:38:38.030">...instead of having get other objects I'm just going to put the case property</p>
+      <p begin="00:38:38.030" end="00:38:42.640">...the work item object again...changing the</p>
+      <p begin="00:38:42.640" end="00:38:48.090">...code because it's my code and this is really cool because you're actually changing</p>
+      <p begin="00:38:48.090" end="00:38:52.790">or enhancing the schema where these things are not naturally related</p>
+      <p begin="00:38:52.790" end="00:38:57.640">write your creating relationship between and which is very and I also do like eighty thousand</p>
+      <p begin="00:38:57.640" end="00:39:03.320">lines of code and classes to do it so now it's asking for account you were you're supposed</p>
+      <p begin="00:39:03.320" end="00:39:09.840">at account you didn't tell me that I can fix that easily...okay, you want to do yeah,</p>
+      <p begin="00:39:09.840" end="00:39:17.050">I'm going to do it all right you broken you fix it it's the sales for side so yeah, what</p>
+      <p begin="00:39:17.050" end="00:39:22.040">I don't want to do is go through the whole connected services process again because</p>
+      <p begin="00:39:22.040" end="00:39:26.860">it does a lot more than I really want but what I want to do instead is update the</p>
+      <p begin="00:39:26.860" end="00:39:30.870">sales force data service and this was another key attributes that</p>
+      <p begin="00:39:30.870" end="00:39:35.870">we want to build we didn't want this to be demo fodder for pm stand-up behind going look at this great</p>
+      <p begin="00:39:35.870" end="00:39:40.700">feature we wanted you to be able to build on over time and that</p>
+      <p begin="00:39:40.700" end="00:39:45.710">iterative fashions so here's an example of we've implemented update on the sales</p>
+      <p begin="00:39:45.710" end="00:39:49.910">...connected service and, yeah, and, it actually runs through the same wizard but you can see</p>
+      <p begin="00:39:49.910" end="00:39:53.660">there's, there's things that I can't change what I can change is</p>
+      <p begin="00:39:53.660" end="00:39:58.110">when I get to the list of objects that I want to include and you can see</p>
+      <p begin="00:39:58.110" end="00:40:02.760">...visual studio magically knows that I've got a case</p>
+      <p begin="00:40:02.760" end="00:40:06.730">in the contact already inherits magic...and that's the thing is</p>
+      <p begin="00:40:06.730" end="00:40:11.870">...again tooling we used to store special...files which I</p>
+      <p begin="00:40:11.870" end="00:40:17.810">won't tell you what we actually column to remember this but in this case we want to look at your</p>
+      <p begin="00:40:17.810" end="00:40:21.110">code so we just use features like roslyn to look</p>
+      <p begin="00:40:21.110" end="00:40:24.960">in your project and if you have a type that matches the thing we're looking</p>
+      <p begin="00:40:24.960" end="00:40:29.910">at sales force go that's it so we just we're going to work over your</p>
+      <p begin="00:40:29.910" end="00:40:33.210">curfew deleted the case it would show up and you could re</p>
+      <p begin="00:40:33.210" end="00:40:38.930">added in other words or if you hand added it yourself or...and then and, finally</p>
+      <p begin="00:40:38.930" end="00:40:44.460">what happened there was all it did was scaffold that object for me because of area...service reference</p>
+      <p begin="00:40:44.460" end="00:40:51.190">...had a lot handler and the connected out so now I'm going to add the case sorry</p>
+      <p begin="00:40:51.190" end="00:40:56.520">the account object to case so now I have a</p>
+      <p begin="00:40:56.520" end="00:40:59.770">app that's a good all together I was able to</p>
+      <p begin="00:40:59.770" end="00:41:04.220">consume the service and I was able to scaffold the code</p>
+      <p begin="00:41:04.220" end="00:41:08.190">...able to enhance that code as relevant to meet for this particular</p>
+      <p begin="00:41:08.190" end="00:41:18.660">project so now I've got sales force contacts and will login here?</p>
+      <p begin="00:41:18.660" end="00:41:23.240">So, go get the contacts and for via so work items now</p>
+      <p begin="00:41:23.240" end="00:41:29.350">we'll get the work items and now we can make mash potatoes.</p>
+      <p begin="00:41:29.350" end="00:41:35.630">So, now what I'm seeing is the bugs from the sl.</p>
+      <p begin="00:41:35.630" end="00:41:36.290">Oops score</p>
+      <p begin="00:41:36.290" end="00:41:41.280">is calculated in this business class that goes and takes a look at the cases and figures</p>
+      <p begin="00:41:41.280" end="00:41:49.480">are all these cool calculations and gives us this score so.</p>
+      <p begin="00:41:49.480" end="00:41:51.350">So, for...</p>
+      <p begin="00:41:51.350" end="00:41:53.770">Now you're command-line guy</p>
+      <p begin="00:41:53.770" end="00:41:59.980">is that helpful the way it looks and just because I'm a command-line...I don't like pretty...so,</p>
+      <p begin="00:41:59.980" end="00:42:04.900">let's go fix that we have one more thing I want to do is I'm going to</p>
+      <p begin="00:42:06.040" end="00:42:10.000">A little api controller in here.</p>
+      <p begin="00:42:10.000" end="00:42:12.620">And, all this does is</p>
+      <p begin="00:42:12.620" end="00:42:17.330">...that same room calculation but it doesn't from and api web api</p>
+      <p begin="00:42:17.330" end="00:42:21.810">controller because in this case what I want to do is I want to take advantage of</p>
+      <p begin="00:42:21.810" end="00:42:24.610">candles controls orlando's to can</p>
+      <p begin="00:42:24.610" end="00:42:27.310">took advantage of condos controls to be fair.</p>
+      <p begin="00:42:27.310" end="00:42:29.430">And, now I can get and</p>
+      <p begin="00:42:29.430" end="00:42:34.630">...and what it we'll do is from the client?</p>
+      <p begin="00:42:34.630" end="00:42:37.930">Make a call to that same service and now I'm getting</p>
+      <p begin="00:42:37.930" end="00:42:42.270">a better visualization of my data and if I'm looking here</p>
+      <p begin="00:42:42.270" end="00:42:45.760">where's are we have that special outpost six</p>
+      <p begin="00:42:45.760" end="00:42:50.020">okay so if I look at this...a bug.</p>
+      <p begin="00:42:50.020" end="00:42:52.540">And, I can look at the bug in</p>
+      <p begin="00:42:52.540" end="00:42:57.670">...online I've got a login so here's an example of where</p>
+      <p begin="00:42:57.670" end="00:43:02.010">we're taking advantage of authentication but and</p>
+      <p begin="00:43:02.010" end="00:43:06.990">it's cool in fact it's somewhat cool but you'll notice I actually have...it doesn't it's a</p>
+      <p begin="00:43:06.990" end="00:43:11.960">...not click once if anybody knows what that means but anyway so,</p>
+      <p begin="00:43:11.960" end="00:43:16.060">now I can see my bug in various online and</p>
+      <p begin="00:43:16.060" end="00:43:20.470">I can also whoops we can also look at the case.</p>
+      <p begin="00:43:20.470" end="00:43:25.410">In sales force...in a sales force.</p>
+      <p begin="00:43:25.410" end="00:43:29.710">So, what's wrong with this...way let's enjoy the</p>
+      <p begin="00:43:29.710" end="00:43:32.940">goodness part first talon I got bugs</p>
+      <p begin="00:43:32.940" end="00:43:37.780">in vs online I got work cases in sales...I can see</p>
+      <p begin="00:43:37.780" end="00:43:42.770">them all apparently somebody's trying to open a datacenter and mars I</p>
+      <p begin="00:43:42.770" end="00:43:47.050">mean you talk about advancement...about chance and l so.</p>
+      <p begin="00:43:48.410" end="00:43:52.540">So, what is wrong with this application at this point?</p>
+      <p begin="00:43:52.540" end="00:43:55.750">Come on, evaluate what.</p>
+      <p begin="00:43:55.750" end="00:43:56.900">There's a lot of logins.</p>
+      <p begin="00:43:58.400" end="00:44:03.950">There's a lot of logins that's no good no that's not sticky.</p>
+      <p begin="00:44:03.950" end="00:44:06.750">Let's get out of this per second.</p>
+      <p begin="00:44:06.750" end="00:44:10.990">And,...close one...this one and now ...this</p>
+      <p begin="00:44:10.990" end="00:44:15.710">in again and you'll notice that well, actually I'm jumping...I'm not</p>
+      <p begin="00:44:15.710" end="00:44:20.670">going to do that for so the first part is what you may not have noticed is</p>
+      <p begin="00:44:20.670" end="00:44:25.160">the app itself is not actually...secure.</p>
+      <p begin="00:44:25.160" end="00:44:30.090">Actually was able to get to it wasn't until we started querying bugs and work</p>
+      <p begin="00:44:30.090" end="00:44:35.300">...from sales was that we got challenge for login now for those you that are implementing</p>
+      <p begin="00:44:35.300" end="00:44:40.010">off on your appshow you guys doing it you doing</p>
+      <p begin="00:44:40.010" end="00:44:45.230">it with sequel server as your authentication scheme having</p>
+      <p begin="00:44:45.230" end="00:44:50.220">get another copy of users somewhere and because that is the easy way of doing it and</p>
+      <p begin="00:44:50.220" end="00:44:53.860">franchises some...that there have always going to admit to it but we now</p>
+      <p begin="00:44:53.860" end="00:44:56.550">...know so it turns out to</p>
+      <p begin="00:44:56.550" end="00:45:03.360">...actually tried to use as your ad to...log authenticate...apps?</p>
+      <p begin="00:45:03.360" end="00:45:07.080">...anybody's been successful with it.</p>
+      <p begin="00:45:07.080" end="00:45:10.590">So, maybe it is difficult you need like the</p>
+      <p begin="00:45:10.590" end="00:45:14.110">...by your side and he so he was by our</p>
+      <p begin="00:45:14.110" end="00:45:17.590">side and we've worked through improving that experience</p>
+      <p begin="00:45:18.620" end="00:45:23.450">so now I don't want yet another sequel database of users land</p>
+      <p begin="00:45:23.450" end="00:45:29.680">desk has ad that's where...employees are logging in...take advantage of that so I'm going to</p>
+      <p begin="00:45:29.680" end="00:45:33.650">...here and the configure as your ad</p>
+      <p begin="00:45:33.650" end="00:45:38.050">connected service lets me configure my project it's</p>
+      <p begin="00:45:38.050" end="00:45:41.780">not just consuming data services and this case we're</p>
+      <p begin="00:45:41.780" end="00:45:46.380">...consume authentication services so we'll go off and we will</p>
+      <p begin="00:45:46.380" end="00:45:51.110">finish configuring this and what this one's going to do</p>
+      <p begin="00:45:51.110" end="00:45:56.280">is go out to as your ad very similar to what we did in sales...we...to create</p>
+      <p begin="00:45:56.280" end="00:46:00.000">a connected app it's going to create and as your...</p>
+      <p begin="00:46:01.030" end="00:46:04.540">And, that's the thing that manages the permissions for all the</p>
+      <p begin="00:46:04.540" end="00:46:05.040">resources.</p>
+      <p begin="00:46:06.480" end="00:46:10.780">Does this web app have permission to access as</p>
+      <p begin="00:46:10.780" end="00:46:13.510">your ad can I use my as</p>
+      <p begin="00:46:13.510" end="00:46:17.990">your ad identity's to authenticate users and what we've also</p>
+      <p begin="00:46:17.990" end="00:46:22.060">done and this is the one thing we did behind-the-scenes is we set</p>
+      <p begin="00:46:22.060" end="00:46:25.040">up single sign on between as your</p>
+      <p begin="00:46:25.040" end="00:46:29.240">...and sales force now I just...say one thing,</p>
+      <p begin="00:46:29.240" end="00:46:34.590">you know, you guys are watching the screen is he was talking and you saw a</p>
+      <p begin="00:46:34.590" end="00:46:42.310">lot of stuff going on in their array that represents kind of?</p>
+      <p begin="00:46:42.310" end="00:46:45.110">Knowledge base that you get to tap into</p>
+      <p begin="00:46:45.110" end="00:46:50.090">and completely leverage right so that's one of my favorite ones...because there's just</p>
+      <p begin="00:46:50.090" end="00:46:53.860">...launching configured for-you in the back-end we have this kind of feeling</p>
+      <p begin="00:46:53.860" end="00:46:59.350">that if you understand authentication...we've done wrong that's not secure right that's a that's</p>
+      <p begin="00:46:59.350" end="00:47:03.270">a breach so right so we have the same mott pattern here we have what happened</p>
+      <p begin="00:47:03.270" end="00:47:07.290">to your project next steps getting started we follows</p>
+      <p begin="00:47:07.290" end="00:47:11.880">principles again but now if we run this again and I'm just going to</p>
+      <p begin="00:47:11.880" end="00:47:16.810">do one little thing here.</p>
+      <p begin="00:47:16.810" end="00:47:20.120">Going to run this again and now what</p>
+      <p begin="00:47:20.120" end="00:47:24.820">esri the configure audrey d did was it knowledge consume the new</p>
+      <p begin="00:47:24.820" end="00:47:29.660">gets and scaffold stuff...my project and wed and added to</p>
+      <p begin="00:47:29.660" end="00:47:32.830">in using roslyn because it's your code.</p>
+      <p begin="00:47:32.830" end="00:47:36.460">We...found on your controllers and we added the authorize attribute to it</p>
+      <p begin="00:47:37.680" end="00:47:44.520">so now everything in the app is now secure.</p>
+      <p begin="00:47:44.520" end="00:47:47.880">Of course it was scaffolds you can go changed if...parts of the site that you</p>
+      <p begin="00:47:47.880" end="00:47:50.960">want make publicly visible.</p>
+      <p begin="00:47:50.960" end="00:47:56.200">now everything's been a secured entourage grady and now when I go off to sales</p>
+      <p begin="00:47:56.200" end="00:47:56.920">...contacts.</p>
+      <p begin="00:47:57.970" end="00:48:05.060">I can still login to sales force but notice I get this as your alien</p>
+      <p begin="00:48:05.060" end="00:48:09.970">We get this forgot your password or I can use as your...</p>
+      <p begin="00:48:09.970" end="00:48:14.170">Now because I'm...to add your ad</p>
+      <p begin="00:48:14.170" end="00:48:18.470">it will do a little bit of the dance if we watch the urls where it's going to go okay</p>
+      <p begin="00:48:18.470" end="00:48:25.030">you're logged in legal...sales force how tenet.</p>
+      <p begin="00:48:25.030" end="00:48:29.060">Provides your resume then I told you don't be don't be</p>
+      <p begin="00:48:29.060" end="00:48:31.050">dismayed demos with.</p>
+      <p begin="00:48:31.050" end="00:48:33.990">Thankful chasing dissing jinx...whatever.</p>
+      <p begin="00:48:35.190" end="00:48:40.330">Can't dance yes okay I...you we don't support click once</p>
+      <p begin="00:48:40.330" end="00:48:44.800">in the web that was another technology so it's click twice right so</p>
+      <p begin="00:48:44.800" end="00:48:49.080">I was able to do that dance with single sign on and it went off to measure</p>
+      <p begin="00:48:49.080" end="00:48:53.970">...found it and now...back...now?</p>
+      <p begin="00:48:53.970" end="00:48:55.450">There's one.</p>
+      <p begin="00:48:55.450" end="00:49:00.100">Thing there though I don't really want to be asked about the single signed the other thing...</p>
+      <p begin="00:49:00.100" end="00:49:08.170">I got single sign...fix let me solve that for so, you know, it's kind of weird to throw up a.</p>
+      <p begin="00:49:08.170" end="00:49:12.690">Throw up a login page and leave a button at the bottom for single sign</p>
+      <p begin="00:49:12.690" end="00:49:17.210">up it's not really that weird but it might be redundant in some cases so what</p>
+      <p begin="00:49:17.210" end="00:49:23.780">we're going to do is we're going to configure sales force to remove that.</p>
+      <p begin="00:49:23.780" end="00:49:27.660">So, this log into sales force.</p>
+      <p begin="00:49:27.660" end="00:49:33.830">That's probably microsoft online.</p>
+      <p begin="00:49:33.830" end="00:49:36.570">It's up there and it's.</p>
+      <p begin="00:49:36.570" end="00:49:44.180">Okay, and, I'm going to the select...the room, yeah.</p>
+      <p begin="00:49:44.180" end="00:49:48.450">Okay, and, now we're going to go into the setup area and</p>
+      <p begin="00:49:48.450" end="00:49:51.960">...area is where all the configuration inside of sales</p>
+      <p begin="00:49:51.960" end="00:49:55.220">...platform takes place you can see it's</p>
+      <p begin="00:49:55.220" end="00:49:59.910">pretty pretty complicated kind of old-fashioned but it works.</p>
+      <p begin="00:50:01.070" end="00:50:06.140">I'm going to configure that might domain thing we talked about earlier that had to do</p>
+      <p begin="00:50:06.140" end="00:50:11.140">with branding in my custom domain and I've got a setting down here at</p>
+      <p begin="00:50:11.140" end="00:50:16.070">the bottom for my authentication service that we've set up and simply unclear</p>
+      <p begin="00:50:16.070" end="00:50:20.130">king that login page check box saving</p>
+      <p begin="00:50:20.130" end="00:50:25.750">will now prevent that login page from showing up so what is log out here.</p>
+      <p begin="00:50:25.750" end="00:50:27.920">And, then steve.</p>
+      <p begin="00:50:27.920" end="00:50:34.620">Since the land we...the pleasure of have this blow up again sure why</p>
+      <p begin="00:50:35.650" end="00:50:41.010">It's not going to blow up modern technology.</p>
+      <p begin="00:50:41.010" end="00:50:46.120">All right so we'll go in here will click for a bug will go and,</p>
+      <p begin="00:50:46.120" end="00:50:48.610">actually...that happen that happen to quick</p>
+      <p begin="00:50:48.610" end="00:50:54.280">...in...that quick I was happy with that...</p>
+      <p begin="00:50:54.280" end="00:50:58.300">Right so you can kinda see...the slowdown phone time and</p>
+      <p begin="00:50:58.300" end="00:51:02.450">you can see on the top of did the redirects and the single sign having as the in</p>
+      <p begin="00:51:02.450" end="00:51:06.840">this case we're saying for this particular app we don't necessarily</p>
+      <p begin="00:51:06.840" end="00:51:12.390">...throw up the login page so, that's pretty cool I mean think about all the services we just consumed</p>
+      <p begin="00:51:12.390" end="00:51:16.530">here the productivity on how you were able to consume all of that and</p>
+      <p begin="00:51:16.530" end="00:51:21.370">the customizations we did with sales force so let me jump</p>
+      <p begin="00:51:21.370" end="00:51:28.480">out he gets a pretty cool demo anything there's a lot of stuff consumed in there there's,</p>
+      <p begin="00:51:28.480" end="00:51:31.730">there's some stuff that we didn't show you...the single sign...set up you know,</p>
+      <p begin="00:51:31.730" end="00:51:35.250">once you get that setup you can bang these things out like crazy.</p>
+      <p begin="00:51:35.250" end="00:51:40.210">And, we'll show you some links at the end so just...quickly because it is build you</p>
+      <p begin="00:51:40.210" end="00:51:45.310">are developers you might want to build one of these own connected services and I just want</p>
+      <p begin="00:51:45.310" end="00:51:50.270">to do a quick teaser into these so-if you want-to author them well that's</p>
+      <p begin="00:51:50.270" end="00:51:54.660">...sdk that we made available today that you can download and work with</p>
+      <p begin="00:51:54.660" end="00:51:58.160">a visual studio twenty fifteen rc to be able to build your own</p>
+      <p begin="00:51:58.160" end="00:52:01.070">connect services who would build one</p>
+      <p begin="00:52:01.070" end="00:52:06.050">...any service that has unique configurations any service that you want to</p>
+      <p begin="00:52:06.050" end="00:52:10.440">be able to have developers consume very easily just like we did was sales</p>
+      <p begin="00:52:10.440" end="00:52:14.250">...it was rocket science...first to be fair I mean they've a lot of</p>
+      <p begin="00:52:14.250" end="00:52:17.550">...features out so we don't know anything about it I didn't want to know anything about</p>
+      <p begin="00:52:17.550" end="00:52:22.780">...I just wanted to work and we learned it was very cool the</p>
+      <p begin="00:52:22.780" end="00:52:27.830">more we learn the more we looked back going wow that's actually pretty elegant pretty coolbut,</p>
+      <p begin="00:52:27.830" end="00:52:28.370">the learning curve</p>
+      <p begin="00:52:28.370" end="00:52:32.960">was pretty steep to get to the first point we want to</p>
+      <p begin="00:52:32.960" end="00:52:37.450">have developers have this per guests progressive learning experience</p>
+      <p begin="00:52:37.450" end="00:52:42.180">...first thing is shut off authentication just get to the good stuff now go back and</p>
+      <p begin="00:52:42.180" end="00:52:46.950">secure which we don't get to here because we have features like</p>
+      <p begin="00:52:46.950" end="00:52:51.490">connected services you can actually get a secure app up-front and then go back</p>
+      <p begin="00:52:51.490" end="00:52:54.050">investigative and,</p>
+      <p begin="00:52:54.050" end="00:52:58.910">by the way if you are interested the sales force connect others is</p>
+      <p begin="00:52:58.910" end="00:53:03.850">open-source so you can look at the code...how we did certain things see,</p>
+      <p begin="00:53:03.850" end="00:53:08.980">you know, what you might be able to steal from that I think we're pretty generous license on it so those</p>
+      <p begin="00:53:08.980" end="00:53:13.860">...you instill...borrower...would use leveraged and this is one of the things that</p>
+      <p begin="00:53:13.860" end="00:53:18.840">we worked early on is when we wanted to do this we want to use the salesperson implementation as</p>
+      <p begin="00:53:18.840" end="00:53:23.620">a reference implementation so again the kudos to our guys and fargo</p>
+      <p begin="00:53:23.620" end="00:53:28.520">they've been doing this work I it's very cool be able to see and very easy to</p>
+      <p begin="00:53:28.520" end="00:53:34.240">...a lot of functionality...easy but it's very clear what it's doing anyway so you can build</p>
+      <p begin="00:53:34.240" end="00:53:41.200">these just wrapping up we certainly want have connected services to enabled</p>
+      <p begin="00:53:41.200" end="00:53:46.720">the breadth and services that are out there we didn't want to be a one-size-fits-all we</p>
+      <p begin="00:53:46.720" end="00:53:48.470">wanted to support configuring</p>
+      <p begin="00:53:48.470" end="00:53:52.610">the service and the project which is what modern services required</p>
+      <p begin="00:53:52.610" end="00:53:57.830">...we wanted to help guide you with the next steps give you ownership</p>
+      <p begin="00:53:57.830" end="00:54:02.810">of the code we want to retire I like to joke retire mc hammer and they can't touch</p>
+      <p begin="00:54:02.810" end="00:54:07.760">this style coding we want to work with your code and this is what we want to be</p>
+      <p begin="00:54:07.760" end="00:54:12.120">doing more so in visual studio tooling and in fact I'd love to talk</p>
+      <p begin="00:54:12.120" end="00:54:16.680">to more about the kind of projects that you're doing and, of course we didn't want this to be</p>
+      <p begin="00:54:16.680" end="00:54:21.130">...to microsoft want to embrace third parties and there's no better third-party to embrace</p>
+      <p begin="00:54:21.130" end="00:54:26.330">than sales force so big hug?</p>
+      <p begin="00:54:26.330" end="00:54:34.120">And, for references ...references on the connected services information</p>
+      <p begin="00:54:34.120" end="00:54:38.750">And, of course information on developers sales force.</p>
+      <p begin="00:54:38.750" end="00:54:43.350">And, there's some info-on us...do again want to give out in addition to our</p>
+      <p begin="00:54:43.350" end="00:54:47.960">...development team...built this connected service and,</p>
+      <p begin="00:54:47.960" end="00:54:49.800">the correct service extension by the sales was going</p>
+      <p begin="00:54:49.800" end="00:54:54.800">...is tanner lindsay and land desk for letting us have their code</p>
+      <p begin="00:54:54.800" end="00:54:59.480">literally have their code understand what they were doing see the challenges that they were having</p>
+      <p begin="00:54:59.480" end="00:55:03.670">...be able to use that to figure out how do we make better tooling and,</p>
+      <p begin="00:55:03.670" end="00:55:07.490">there's some info...for tanner and I gotta say he was he</p>
+      <p begin="00:55:07.490" end="00:55:11.390">...he saw the video he was like I wish I had this months</p>
+      <p begin="00:55:11.390" end="00:55:16.710">...quick plugs so come downstairs...on the first-floor you'll see</p>
+      <p begin="00:55:16.710" end="00:55:20.740">...you're going for food we have these little things called quick starts.</p>
+      <p begin="00:55:20.740" end="00:55:24.800">And, if you finish the quick start which is basically just kind of walking through</p>
+      <p begin="00:55:24.800" end="00:55:29.670">the walk through that is part of the connected service you'll get this cool</p>
+      <p begin="00:55:29.670" end="00:55:33.240">...that is like so is apollo docking with sales force</p>
+      <p begin="00:55:33.240" end="00:55:39.050">and microsoft clo and...saying on the back that's pretty cool so come on,</p>
+      <p begin="00:55:39.050" end="00:55:41.520">down and try that out there's always one so that</p>
+      <p begin="00:55:41.520" end="00:55:48.960">we will say thank you and I appreciate you guys coming...was to graphs and questions and slot.</p>
+      <p begin="00:55:48.960" end="00:55:52.200">...get...consumer services and of course there's</p>
+      <p begin="00:55:52.200" end="00:55:57.870">...evaluate please yes please we do we those we appreciate them and,</p>
+      <p begin="00:55:57.870" end="00:55:58.300">thanks.</p>
+
+    </div>
+  </body>
+</tt>

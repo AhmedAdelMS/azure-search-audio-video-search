@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.886</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:02.680" end="00:00:07.170">...right we're back build two thousand fifteen.</p>
+      <p begin="00:00:07.170" end="00:00:10.630">We're going to talk about windows some really interesting announcements</p>
+      <p begin="00:00:10.630" end="00:00:15.390">...great work coming down john she hands with us...some of you remember</p>
+      <p begin="00:00:15.390" end="00:00:17.640">him for several years ago talking about</p>
+      <p begin="00:00:17.640" end="00:00:21.880">...your also with us add...two thousand twelve with a lash</p>
+      <p begin="00:00:21.880" end="00:00:26.400">...fun so let's...talk about the universal windows</p>
+      <p begin="00:00:26.400" end="00:00:32.340">platform to tell us a little bit about we've been working on so, for windows ten we decided</p>
+      <p begin="00:00:32.340" end="00:00:37.950">to take a step back and look,...assets we had</p>
+      <p begin="00:00:37.950" end="00:00:42.650">for windows we have what we had was a whole bunch of operating systems a whole bunch of</p>
+      <p begin="00:00:42.650" end="00:00:47.350">platforms that were similar but they works the same and</p>
+      <p begin="00:00:47.350" end="00:00:53.690">developers were obviously unhappy with...so we decided to take these all these</p>
+      <p begin="00:00:53.690" end="00:00:59.690">separate operating systems that were on the same basic code base and actually make one</p>
+      <p begin="00:00:59.690" end="00:01:03.750">That is one operating system to be clear let's talk about the build.</p>
+      <p begin="00:01:03.750" end="00:01:05.470">...like you made a lot of</p>
+      <p begin="00:01:05.470" end="00:01:10.470">tremendous changes in building these skews of the operating system and talk about that,</p>
+      <p begin="00:01:10.470" end="00:01:16.150">yeah, so, I mean the build seems amazingin windows they had to go intake all these</p>
+      <p begin="00:01:16.150" end="00:01:20.050">different build systems all these different ways of doing everything because when you build</p>
+      <p begin="00:01:20.050" end="00:01:25.030">the telephone you have to go make images one-way when you build windows make a different way</p>
+      <p begin="00:01:25.030" end="00:01:29.840">and...do xbox make a different way and, they had to basically combine all of that</p>
+      <p begin="00:01:29.840" end="00:01:34.040">...so really we have a start the bottom of the build system and,</p>
+      <p begin="00:01:34.040" end="00:01:40.110">get that...common...so then we could build one operating system so then we could,</p>
+      <p begin="00:01:40.110" end="00:01:43.330">you know, in the same way go and make xbox make windows</p>
+      <p begin="00:01:43.330" end="00:01:46.470">...awesome so this is live as, you know,</p>
+      <p begin="00:01:46.470" end="00:01:51.260">ask questions anything windows related one of the things that wasn't really talked about</p>
+      <p begin="00:01:51.260" end="00:01:53.110">here gold's what is interesting</p>
+      <p begin="00:01:53.110" end="00:01:58.270">the people who are interested in operating systems are sort of, you know,</p>
+      <p begin="00:01:58.270" end="00:02:02.440">at the operating system level underneath the platform the</p>
+      <p begin="00:02:02.440" end="00:02:07.730">changes that have been made to enable ...just talked about windows I...want to</p>
+      <p begin="00:02:07.730" end="00:02:12.340">get a little bit about how windows itself as evolved right kernels probably gotten</p>
+      <p begin="00:02:12.340" end="00:02:16.750">what smaller or different media actually so...</p>
+      <p begin="00:02:16.750" end="00:02:20.820">As part of that process of trying to build one thing the first thing we had to do was work</p>
+      <p begin="00:02:20.820" end="00:02:26.220">on factoring so we had some guys that did great work refactoring the components</p>
+      <p begin="00:02:26.220" end="00:02:29.140">in the operating system so that we have a much more and</p>
+      <p begin="00:02:29.140" end="00:02:34.120">much nicely layered platform so that we could start small.</p>
+      <p begin="00:02:34.120" end="00:02:37.190">And, then add components on top of it so, you know,</p>
+      <p begin="00:02:37.190" end="00:02:41.320">we had like multiple bluetooth stacks so now we have one booted stack we</p>
+      <p begin="00:02:41.320" end="00:02:46.290">are multiple audio steps now we have one...so all those teams how</p>
+      <p begin="00:02:46.290" end="00:02:50.920">...do just a ton of work because you have to run on,</p>
+      <p begin="00:02:50.920" end="00:02:55.910">you know, a raspberry pie you know, five hundred twelve...phone.</p>
+      <p begin="00:02:55.910" end="00:03:00.500">And, you're also run a huge desktop you...run on xbox and you're going to run on a ppi</p>
+      <p begin="00:03:00.500" end="00:03:03.910">neuron pollen...so but,</p>
+      <p begin="00:03:03.910" end="00:03:08.080">one great thing about it is that as the teams sort of slim down so</p>
+      <p begin="00:03:08.080" end="00:03:13.180">...a great we need to run onyou know, one of five-fold my phone well we need to get smaller we need to get</p>
+      <p begin="00:03:13.180" end="00:03:17.900">leader we need to go faster as they did that everyone...because, you know,</p>
+      <p begin="00:03:17.900" end="00:03:21.530">so, at a windows is slowly taking up, you know,</p>
+      <p begin="00:03:21.530" end="00:03:25.300">less memory getting leaner it's getting faster and,</p>
+      <p begin="00:03:25.300" end="00:03:29.660">overtime that will just continue to happen awesome all right so nike</p>
+      <p begin="00:03:29.660" end="00:03:33.360">wants to know this is actually great tell us more about the classic windows</p>
+      <p begin="00:03:33.360" end="00:03:38.290">...desktop apps and windows store those announced yesterday that imagery to...</p>
+      <p begin="00:03:38.290" end="00:03:43.500">talk later at three thirty on this what we're doing is we're taking we have we have this product called</p>
+      <p begin="00:03:43.500" end="00:03:48.870">...its application virtualization a ends what let you do is basically</p>
+      <p begin="00:03:48.870" end="00:03:52.670">run install like on ibm...</p>
+      <p begin="00:03:52.670" end="00:03:57.330">and it captures all the changes that were made to the system by the installer and then</p>
+      <p begin="00:03:57.330" end="00:03:59.900">a packages up and...you can deploy it to millions</p>
+      <p begin="00:03:59.900" end="00:04:05.920">of machines and there's no more install it's just declared it just gets laid down and just</p>
+      <p begin="00:04:05.920" end="00:04:09.920">Were taken that same technique and we're using it to take these</p>
+      <p begin="00:04:09.920" end="00:04:12.550">classic windows apps and convert them into</p>
+      <p begin="00:04:12.550" end="00:04:17.440">...windows apps nights and I think the thing that people don't realize...going to take a little while</p>
+      <p begin="00:04:17.440" end="00:04:20.890">...again is that once you do that conversion you</p>
+      <p begin="00:04:20.890" end="00:04:24.960">are now universal windows at right now you still only run desktop for all your</p>
+      <p begin="00:04:24.960" end="00:04:29.260">when thirty-two components but over time you can start to add features to your</p>
+      <p begin="00:04:29.260" end="00:04:34.230">to your app that are full universe window out features so you can add</p>
+      <p begin="00:04:34.230" end="00:04:37.350">...app background task or something and you</p>
+      <p begin="00:04:37.350" end="00:04:40.270">could do anything that a universal windows...</p>
+      <p begin="00:04:40.270" end="00:04:44.710">and do because you are amazing now in terms of being one</p>
+      <p begin="00:04:45.760" end="00:04:50.420">...to apps and jet have obviously...have a different sort of</p>
+      <p begin="00:04:50.420" end="00:04:54.790">...process lifetime management infrastructure so it's not like you're</p>
+      <p begin="00:04:54.790" end="00:04:59.040">going to get the modern pln or are you when</p>
+      <p begin="00:04:59.040" end="00:05:05.330">that would be so for your for your wintry to components your classic components you</p>
+      <p begin="00:05:05.330" end="00:05:09.050">...because we're still we're still learning your code run the way it always</p>
+      <p begin="00:05:09.050" end="00:05:12.210">debt you're right but if you builds like an</p>
+      <p begin="00:05:12.210" end="00:05:17.030">...services a great I...visual studio as I want...mapped out service that's actually</p>
+      <p begin="00:05:17.030" end="00:05:21.060">...run in the app container and that's going to have the modern pln and</p>
+      <p begin="00:05:21.060" end="00:05:23.680">...what like what we have a lot of experience and doing even</p>
+      <p begin="00:05:23.680" end="00:05:28.170">in windows is taking these classic desktop things that we</p>
+      <p begin="00:05:28.170" end="00:05:32.470">had and slowly moving them into making the maps so if you look on windows</p>
+      <p begin="00:05:32.470" end="00:05:36.100">...the start menu is actually?</p>
+      <p begin="00:05:36.100" end="00:05:40.140">And, the way that most people...with the way that we've learned to do it is we start actually</p>
+      <p begin="00:05:40.140" end="00:05:44.520">by put building the...sample and running in the app container</p>
+      <p begin="00:05:44.520" end="00:05:48.640">and only for things that don't work in the app container do we kind of shell out</p>
+      <p begin="00:05:48.640" end="00:05:52.350">...desktop to the full trust...then over time we slowly</p>
+      <p begin="00:05:52.350" end="00:05:57.150">evolve it and the mono stuff that's running full trust gets let-you...</p>
+      <p begin="00:05:57.150" end="00:06:01.870">lasts until it's gone and then once it's gone now you are just a regular</p>
+      <p begin="00:06:01.870" end="00:06:06.590">...awesome...right eric want to know is universal...platform a new</p>
+      <p begin="00:06:06.590" end="00:06:10.830">combine runtime for all languages or...multiple...down</p>
+      <p begin="00:06:10.830" end="00:06:17.230">...still separatemonetary completely understand the question from that standpoint</p>
+      <p begin="00:06:18.290" end="00:06:23.100">it's just like it was a windows...so we have the windows runtime and,</p>
+      <p begin="00:06:23.100" end="00:06:25.940">that gets projected into all of the difference</p>
+      <p begin="00:06:25.940" end="00:06:30.260">...so right now we support cplus-plus more javascript</p>
+      <p begin="00:06:30.260" end="00:06:36.960">me support all of the manage code languages so.</p>
+      <p begin="00:06:36.960" end="00:06:42.000">You know, so, that's what that's we still have...that were just pushing it further I think the</p>
+      <p begin="00:06:42.000" end="00:06:46.930">...interesting thing is now what we've done is we've combined and we...defined</p>
+      <p begin="00:06:46.930" end="00:06:51.480">...api surface that is for an runs everywhere else so if</p>
+      <p begin="00:06:51.480" end="00:06:56.460">you're code is only programming to that-you run everywhere and almost all the apps racine built</p>
+      <p begin="00:06:56.460" end="00:06:59.990">...do that what some people do...is on top of that say</p>
+      <p begin="00:06:59.990" end="00:07:04.100">hey when I'm running on phone rone I'm running on xbox.</p>
+      <p begin="00:07:04.100" end="00:07:06.500">There are extra features and...api</p>
+      <p begin="00:07:06.500" end="00:07:11.390">...exist there and you can dynamically light up and use those things when you're running,</p>
+      <p begin="00:07:11.390" end="00:07:15.880">for example, xbox absolutely so can you explain more about the continuing</p>
+      <p begin="00:07:15.880" end="00:07:17.330">feature.</p>
+      <p begin="00:07:17.330" end="00:07:19.810">Patrick...now it has all windows</p>
+      <p begin="00:07:20.850" end="00:07:25.460">welts I'm not sure I understand that question either so what is the continued</p>
+      <p begin="00:07:25.460" end="00:07:31.360">...on what continuum is really the it's what we call the ability to</p>
+      <p begin="00:07:31.360" end="00:07:35.600">morph your user experience from saying hey I'm sitting I'm</p>
+      <p begin="00:07:35.600" end="00:07:39.490">...a laptop and laptop mode so I've got a mouse and</p>
+      <p begin="00:07:39.490" end="00:07:44.350">keyboard I've overlapping windows and then maybe I either detached the keyboard or</p>
+      <p begin="00:07:44.350" end="00:07:49.790">islip keyboard backwards and now I'm really intact wanna-be and tablet mode and</p>
+      <p begin="00:07:49.790" end="00:07:54.690">the experience can seamlessly more...now what's a great tablet experience no</p>
+      <p begin="00:07:54.690" end="00:08:04.350">...windows you have kind of the one-d a model that we had a windows</p>
+      <p begin="00:08:04.350" end="00:08:06.660">So, you know, and, then you decide you</p>
+      <p begin="00:08:06.660" end="00:08:12.750">...back...into desktop mode from a developer experience there's the only there's</p>
+      <p begin="00:08:12.750" end="00:08:17.820">a lot you don't really have to do anything because you always have to support</p>
+      <p begin="00:08:17.820" end="00:08:22.780">that you window can resize anyway for so when you going to...you just</p>
+      <p begin="00:08:22.780" end="00:08:27.540">...resize command now you're just bigger if you want to you can also say hey</p>
+      <p begin="00:08:27.540" end="00:08:32.280">...in tablet mode and if I...tabloid I'll change my buttons</p>
+      <p begin="00:08:32.280" end="00:08:37.650">all change location of them...do something to customize it for tablet mode but most</p>
+      <p begin="00:08:37.650" end="00:08:42.500">apps usually don't they just they have their experience and that they paint a size</p>
+      <p begin="00:08:42.500" end="00:08:47.120">...already works well both for...imacs and that's partially due to the fact that</p>
+      <p begin="00:08:47.120" end="00:08:49.950">...writing for platform that was full immersive</p>
+      <p begin="00:08:49.950" end="00:08:55.410">...unlike...windows ten where you now have apps running...thirty-two containers I can call them</p>
+      <p begin="00:08:55.410" end="00:08:59.770">...running in windows yet and overlapping windows so all right so nike</p>
+      <p begin="00:08:59.770" end="00:09:02.330">...think we already talked about this but</p>
+      <p begin="00:09:03.580" end="00:09:07.270">...performance good enough to run something like games well,</p>
+      <p begin="00:09:07.270" end="00:09:11.040">so, we'll to things I'll say first of all project centennial isn't</p>
+      <p begin="00:09:11.040" end="00:09:16.910">abby we use the techniques about the</p>
+      <p begin="00:09:16.910" end="00:09:21.900">...part of standing up the project we've been using...is kind of a starting point</p>
+      <p begin="00:09:21.900" end="00:09:26.880">but...actually is a separate it's a it's a wholly separate thing and...different goals</p>
+      <p begin="00:09:26.880" end="00:09:30.910">...so...these purpose was really and they're selling to</p>
+      <p begin="00:09:30.910" end="00:09:33.630">...verbs the id group didn't own the software</p>
+      <p begin="00:09:33.630" end="00:09:38.410">...on the code the code was already compiled in some build lab was already burned to a dvd or,</p>
+      <p begin="00:09:38.410" end="00:09:43.920">you know, you know copy to...so they can actually change any the code so...has</p>
+      <p begin="00:09:43.920" end="00:09:48.830">...has to be like bug for bug compatible has to do any crazy thing that any random</p>
+      <p begin="00:09:48.830" end="00:09:53.630">map would might take a dependency on and we're not taking that approach for projects</p>
+      <p begin="00:09:53.630" end="00:09:56.800">on because we're targeting the developers we're saying is,</p>
+      <p begin="00:09:56.800" end="00:10:00.310">you know, your codes great and we want to use it you might have to make some</p>
+      <p begin="00:10:00.310" end="00:10:05.730">...agents like maybe hopefully not a lot of inman all the epsy seen so far like, for example,</p>
+      <p begin="00:10:05.730" end="00:10:13.390">if you look to the keynote we had photoshop elements the only thing that they change their was they just change your license</p>
+      <p begin="00:10:13.390" end="00:10:16.660">...because they're all licensing code was expecting microsoft side</p>
+      <p begin="00:10:16.660" end="00:10:21.640">of basically back to the system for licensing reasons and when they were deployed...</p>
+      <p begin="00:10:21.640" end="00:10:26.780">affects they worked at now from a performance standpoint interestingly enough</p>
+      <p begin="00:10:28.120" end="00:10:33.030">games are the easiest thing to verbalize or to you know,</p>
+      <p begin="00:10:33.030" end="00:10:36.910">to do...environment's games tend to be very much, you know,</p>
+      <p begin="00:10:36.910" end="00:10:43.180">they don't...integrate lots of parts of the system and, the code paths that actually have, you know,</p>
+      <p begin="00:10:43.180" end="00:10:47.050">that at the or projects...touch?</p>
+      <p begin="00:10:47.050" end="00:10:51.450">Are actually the code pass that arts critical path from performance anyway and it's the create</p>
+      <p begin="00:10:51.450" end="00:10:56.080">...when you like when you're reading and writing to the file like that's just happening without</p>
+      <p begin="00:10:56.080" end="00:11:02.830">...there's, there's no, participation by the by the runtime and when you're opening a file there's a little</p>
+      <p begin="00:11:02.830" end="00:11:07.430">bit of participation but that that's not critical right so, yeah, so,</p>
+      <p begin="00:11:07.430" end="00:11:09.850">it's easily performance enough for games and,</p>
+      <p begin="00:11:09.850" end="00:11:13.590">...and we always end up because we have to test the software</p>
+      <p begin="00:11:13.590" end="00:11:18.480">and we always tend to do games first so that when we were testing we...</p>
+      <p begin="00:11:18.480" end="00:11:21.530">Awesome man so are...wants to know</p>
+      <p begin="00:11:21.530" end="00:11:26.230">rebuild windows ten kernel does this mean there's a new windows driver</p>
+      <p begin="00:11:26.230" end="00:11:32.410">model new driver sdk for windows so an interesting question I mean clearly there's been</p>
+      <p begin="00:11:32.410" end="00:11:36.700">...in the driver model windows with colonel...user mode sure well,</p>
+      <p begin="00:11:36.700" end="00:11:41.610">so, the most interesting thing in that area is that there's now a single universal</p>
+      <p begin="00:11:41.610" end="00:11:45.960">driver what you builds a driver and it</p>
+      <p begin="00:11:45.960" end="00:11:50.940">can run on anywhere where the hardware it's like you don't have to build one for phone and</p>
+      <p begin="00:11:50.940" end="00:11:54.790">then you have to build a separate one for desktop and you have to build a third one for, you know,</p>
+      <p begin="00:11:54.790" end="00:11:59.770">for some other device amazing you just build a single driver so if you look, for example,</p>
+      <p begin="00:11:59.770" end="00:12:05.610">at the graphics...which are some of those complicated...the graphics driver that runs on</p>
+      <p begin="00:12:05.610" end="00:12:09.330">phoning runs it runs on pc the same driver</p>
+      <p begin="00:12:09.330" end="00:12:14.600">while awesome and universal...all right we'll...vb used by all</p>
+      <p begin="00:12:14.600" end="00:12:20.230">lapse not just absence or I think they probably...on...so,</p>
+      <p begin="00:12:20.230" end="00:12:25.250">let's be clear about that project centennial is the thing that's part of windows</p>
+      <p begin="00:12:25.250" end="00:12:31.100">bad that will allow you to put your when thirty-two...great</p>
+      <p begin="00:12:31.100" end="00:12:35.710">and v is an enterprise technology that has a ton of features that we...</p>
+      <p begin="00:12:35.710" end="00:12:40.800">and has a ton of manageability as I said it will do a ton of things that projects antenna</p>
+      <p begin="00:12:40.800" end="00:12:45.830">would never do for to get apps marking but, the store</p>
+      <p begin="00:12:45.830" end="00:12:50.320">...the like the platform the store are obviously very closely related but they're still</p>
+      <p begin="00:12:50.320" end="00:12:53.490">they're still a level of distinction there so these are just</p>
+      <p begin="00:12:53.490" end="00:12:57.790">...so even if windows...one you could side load apps and you could install your</p>
+      <p begin="00:12:57.790" end="00:13:03.600">own apps in windows ten we made it easier...you've seen the demos with the</p>
+      <p begin="00:13:03.600" end="00:13:08.510">...of unlock now yes just go into a control panel you flip a switch and now you</p>
+      <p begin="00:13:08.510" end="00:13:11.730">could install whatever you want awesome and that that's true</p>
+      <p begin="00:13:11.730" end="00:13:15.760">...for uw ways and obviously first</p>
+      <p begin="00:13:15.760" end="00:13:22.360">...apps because as I said they are...some very interesting?</p>
+      <p begin="00:13:22.360" end="00:13:27.340">Can you share more about everything that...tunnel will be able to do?</p>
+      <p begin="00:13:27.340" end="00:13:31.020">Hey, you're on the...to, yeah, not on the...soI</p>
+      <p begin="00:13:31.020" end="00:13:36.220">would you I hope you have a separate session...I work very close to them they do...amazing</p>
+      <p begin="00:13:36.220" end="00:13:41.120">stop and I know they have amazing things coming...I would never ever want to accidentally...announce</p>
+      <p begin="00:13:41.120" end="00:13:45.740">and for them excellent that thank you so thanks josh.</p>
+      <p begin="00:13:46.900" end="00:13:49.890">I like you sure along subplot</p>
+      <p begin="00:13:49.890" end="00:13:54.910">old-school seattle right on man ...on both platforms pc</p>
+      <p begin="00:13:54.910" end="00:13:59.720">...will be possible to...pc and phone tiles in the start</p>
+      <p begin="00:13:59.720" end="00:14:04.470">...start experience.</p>
+      <p begin="00:14:04.470" end="00:14:05.070">I think</p>
+      <p begin="00:14:05.070" end="00:14:09.910">...layout and we actually don't think the layout on purpose because normally I</p>
+      <p begin="00:14:09.910" end="00:14:14.330">like I know about you but I like when my phone I'm really I...a perfect layout</p>
+      <p begin="00:14:14.330" end="00:14:19.090">...all this all the information exactly where I want yet and that works great</p>
+      <p begin="00:14:19.090" end="00:14:24.930">for my...pc I have a perfect one but they are difference I...of real estate</p>
+      <p begin="00:14:24.930" end="00:14:30.470">...you know, I tend to be doing different things with my phone my bc so we actually don't</p>
+      <p begin="00:14:30.470" end="00:14:34.850">...it's perfectly reasonable to do it ...</p>
+      <p begin="00:14:35.940" end="00:14:40.780">or, you know, it would can be a...feature builds but, you know, my understanding from</p>
+      <p begin="00:14:40.780" end="00:14:45.490">...research that they did is that actually...something most people want to look at so</p>
+      <p begin="00:14:45.490" end="00:14:50.250">...when thirty-two...that are distributed view the store also updated by the store was</p>
+      <p begin="00:14:50.250" end="00:14:54.110">...sort of deployment models change as the update change</p>
+      <p begin="00:14:54.110" end="00:14:58.510">...difference update exactly yeah, they're absolutely updated by the store</p>
+      <p begin="00:14:58.510" end="00:15:03.480">there installed updated exactly the same way...know I can't stress enough</p>
+      <p begin="00:15:03.480" end="00:15:07.450">...it is uw it right so it's universal windows out</p>
+      <p begin="00:15:07.450" end="00:15:12.800">...to package and map acts got all exactly the same format you know,</p>
+      <p begin="00:15:12.800" end="00:15:17.220">we you...really think project centennial as we really took the you know,</p>
+      <p begin="00:15:17.220" end="00:15:22.160">universal window platform and app acts and we added some features to enable the</p>
+      <p begin="00:15:22.160" end="00:15:25.470">...thirty-two extensions and if you think about that we</p>
+      <p begin="00:15:25.470" end="00:15:27.230">realized that yes it absolutely</p>
+      <p begin="00:15:27.230" end="00:15:31.850">is updated exactly the same way so all the great differential stuff that we do where we only,</p>
+      <p begin="00:15:31.850" end="00:15:36.820">you know, we only download the blocks of the files of changed on-disk we, you know,</p>
+      <p begin="00:15:36.820" end="00:15:41.080">we hardly everything's...only one copy of a file on-disk at any one-time it's a</p>
+      <p begin="00:15:41.080" end="00:15:47.540">it's a very efficient pipeline and yes the projects internally projects</p>
+      <p begin="00:15:47.540" end="00:15:53.260">...use exactly the same excellence when Iso,</p>
+      <p begin="00:15:53.260" end="00:15:58.250">I know that you keep saying...over and over again it's a uw...it's a</p>
+      <p begin="00:15:58.250" end="00:16:01.360">...however when you</p>
+      <p begin="00:16:01.360" end="00:16:04.960">...out sometimes have complex installation so I'm</p>
+      <p begin="00:16:04.960" end="00:16:10.480">going to install my app minimum as part of inflation process...install something else</p>
+      <p begin="00:16:10.480" end="00:16:15.120">...service I installed apples and stuff down whatever and then of course I have a complex</p>
+      <p begin="00:16:15.120" end="00:16:19.600">the insulation on...so we uw</p>
+      <p begin="00:16:19.600" end="00:16:24.360">...to say remove that's gone it's the same for one-thirty to the same for</p>
+      <p begin="00:16:24.360" end="00:16:29.820">...to write on rather, yeah, so,...thing and actually the thing that's very magical and I think</p>
+      <p begin="00:16:29.820" end="00:16:34.020">you're really going to get people excited is the process for getting rid of your</p>
+      <p begin="00:16:34.020" end="00:16:38.120">si forever is you run it one last time I guess you're right you're right</p>
+      <p begin="00:16:38.120" end="00:16:42.820">...last time and...no matter how complex it is the you know,</p>
+      <p begin="00:16:42.820" end="00:16:45.420">the tool just captures everything and then it</p>
+      <p begin="00:16:45.420" end="00:16:49.270">bundles up so it's declarative so there's no more like crazy.</p>
+      <p begin="00:16:49.270" end="00:16:53.260">Install anymore and...it just deploys awesome and really,</p>
+      <p begin="00:16:53.260" end="00:16:56.020">really xone so is there new media player</p>
+      <p begin="00:16:56.020" end="00:17:03.450">...ten the current looks old well we had in starting windows a we created the</p>
+      <p begin="00:17:03.450" end="00:17:07.010">video on the video app music app those are continuing to</p>
+      <p begin="00:17:07.010" end="00:17:11.090">...get better so, that's really the you know,</p>
+      <p begin="00:17:11.090" end="00:17:16.070">that is the new media app but media player but it's been around for years</p>
+      <p begin="00:17:16.070" end="00:17:18.620">awesome one wants to know will universe</p>
+      <p begin="00:17:18.620" end="00:17:24.580">...support...cf windows communication foundation...a great question so</p>
+      <p begin="00:17:24.580" end="00:17:29.260">I believe it's back in now so one thing we've been doing is part of windows...remember windows</p>
+      <p begin="00:17:29.260" end="00:17:34.240">...we had all these great new api...and at the time we basically said</p>
+      <p begin="00:17:34.240" end="00:17:39.450">if there's an api the does something that we won't bring the...two one four so you think, for example,</p>
+      <p begin="00:17:39.450" end="00:17:44.300">about like network so we built a new when rt socket api that was really</p>
+      <p begin="00:17:44.300" end="00:17:47.550">...use really performance great api there are</p>
+      <p begin="00:17:47.550" end="00:17:52.270">some people out there that said well that's great but I have winsoft code and the answer was</p>
+      <p begin="00:17:52.270" end="00:17:58.360">well great I've taken...code intern...rt sockets code windows ten we've gone back and said,</p>
+      <p begin="00:17:58.360" end="00:17:59.780">you know, what?</p>
+      <p begin="00:17:59.780" end="00:18:02.240">When...a perfectly great api surface</p>
+      <p begin="00:18:02.240" end="00:18:07.290">already works inside of the inside of the app container so why do we just...back and we</p>
+      <p begin="00:18:07.290" end="00:18:12.560">...and things like create threat like we didn't allow create bread and...we have the, you know,</p>
+      <p begin="00:18:12.560" end="00:18:17.310">create bread can be dangerous and great...you can get it wrong and...do all the work for use a</p>
+      <p begin="00:18:17.310" end="00:18:21.900">...use the...well but I have a lot of...that are uses great...so we brought that back were</p>
+      <p begin="00:18:21.900" end="00:18:25.000">...back tons of api is both...dot net and</p>
+      <p begin="00:18:25.000" end="00:18:29.730">in when thirty-two so that'll make it easier and easier to take your existing code base</p>
+      <p begin="00:18:31.350" end="00:18:35.830">and, converted to make it a...and of course you had to do that to support the</p>
+      <p begin="00:18:35.830" end="00:18:38.830">one-thirty to model in the first-place...the one-thirty to</p>
+      <p begin="00:18:38.830" end="00:18:43.610">...runs full trust so insert so it is already using all the same code right</p>
+      <p begin="00:18:44.710" end="00:18:49.570">the thing that makes a really interesting and what we've been doing internally as you start with</p>
+      <p begin="00:18:49.570" end="00:18:54.490">that conversion process but that's literally step one after that now you say great</p>
+      <p begin="00:18:54.490" end="00:18:59.820">well my e kind of like media player my ui kinda looks old and, kind of antiquated,</p>
+      <p begin="00:18:59.820" end="00:19:04.090">yeah, let me go build a new you build it using example you run</p>
+      <p begin="00:19:04.090" end="00:19:08.480">in the app container...level bunch of other code that doesn't quite work in the app container yet</p>
+      <p begin="00:19:08.480" end="00:19:14.500">great that stuff runs full trust over time you basically get your stuff into</p>
+      <p begin="00:19:14.500" end="00:19:19.440">the app container and once you...you throw that away now you on xbox?</p>
+      <p begin="00:19:19.440" end="00:19:24.500">Now...on hollow what's now you run everyone nice so it's really...great progression</p>
+      <p begin="00:19:24.500" end="00:19:29.030">that you can get your...get your stuff in there but, you know, what we didn't want to do</p>
+      <p begin="00:19:29.030" end="00:19:33.090">...say part of that is get where your winsoft or get rid of create</p>
+      <p begin="00:19:33.090" end="00:19:36.070">...as we added all that so inside the app container for</p>
+      <p begin="00:19:36.070" end="00:19:39.790">all the universal apps they can all use those</p>
+      <p begin="00:19:39.790" end="00:19:43.890">...beautiful so can universal apps be...and</p>
+      <p begin="00:19:43.890" end="00:19:48.430">ran from outside the store not just protesting debugging yes well I mean that was already</p>
+      <p begin="00:19:48.430" end="00:19:53.660">...to that was already today but with it was more complicated windows</p>
+      <p begin="00:19:53.660" end="00:20:00.730">...one if you look at what we've done now for windows ten now we have</p>
+      <p begin="00:20:00.730" end="00:20:06.090">the control panel so you go to the control panel you flip and say okay I want to be able to install</p>
+      <p begin="00:20:06.090" end="00:20:10.670">...from outside the store and yes you can call prob in</p>
+      <p begin="00:20:10.670" end="00:20:15.560">...thirty-two...run on phones they want and,</p>
+      <p begin="00:20:15.560" end="00:20:19.340">the reason being is that the phone doesn't have all of the</p>
+      <p begin="00:20:19.340" end="00:20:21.850">...there to actually have all those aps</p>
+      <p begin="00:20:21.850" end="00:20:26.720">continue to work so you look at the size of like the</p>
+      <p begin="00:20:26.720" end="00:20:31.440">kernel the size of what we call one for the size of the core the operating system</p>
+      <p begin="00:20:31.440" end="00:20:35.850">...pretty sweat natural runs...and phone...runs on desktop,</p>
+      <p begin="00:20:35.850" end="00:20:39.960">desktop ads just a ton of stuff tons of api</p>
+      <p begin="00:20:39.960" end="00:20:44.780">...of things that were built twenty years ago that people still use them and we didn't</p>
+      <p begin="00:20:44.780" end="00:20:50.000">...we actually can put that everywhere like that's not going to fit on a tiny little...others,</p>
+      <p begin="00:20:50.000" end="00:20:51.950">you know, that has bible mega ram,</p>
+      <p begin="00:20:51.950" end="00:20:56.180">you know, and, you know, a gigs of storage space for so because we</p>
+      <p begin="00:20:56.180" end="00:21:00.200">...those api aren't there but once you go through that, you know,</p>
+      <p begin="00:21:00.200" end="00:21:06.400">you go through that migration progress process and get you get all your stuff into the</p>
+      <p begin="00:21:06.400" end="00:21:10.330">app container now you're using the subset of the api surface that will</p>
+      <p begin="00:21:10.330" end="00:21:15.120">run on phone that will run on xbox or run everywhere cool?</p>
+      <p begin="00:21:15.120" end="00:21:19.700">Can you please explain more about the windows store affiliate program I'm not</p>
+      <p begin="00:21:19.700" end="00:21:24.290">...the store team...know-nothing about the windows...fully pronounce art the do you manage</p>
+      <p begin="00:21:24.290" end="00:21:29.130">dependency so that you do not have a bunch of different cplus-plus runtime installed for each when he went through</p>
+      <p begin="00:21:29.130" end="00:21:32.630">...application or all those bundled and each uw</p>
+      <p begin="00:21:32.630" end="00:21:38.000">it also another thing that we did windows...was we actually now have</p>
+      <p begin="00:21:38.000" end="00:21:43.110">the see runtime in the platform like a stable version see runtime in the platform</p>
+      <p begin="00:21:43.110" end="00:21:47.910">but as probably all you cplus-plus developers now you are often end up with</p>
+      <p begin="00:21:47.910" end="00:21:52.740">the dependency on some random flavor of some cplus-plus runtime the one that</p>
+      <p begin="00:21:52.740" end="00:21:57.060">your build system uses the one that your...team tests and,</p>
+      <p begin="00:21:57.060" end="00:21:59.770">that whole dl health thing where...</p>
+      <p begin="00:21:59.770" end="00:22:04.730">apple refine today someone else install...they'd replace your crt with something yes</p>
+      <p begin="00:22:04.730" end="00:22:09.430">and you break because of that we have to allow the we have to allow those apps</p>
+      <p begin="00:22:09.430" end="00:22:13.950">who have their own instance of it luckily the</p>
+      <p begin="00:22:13.950" end="00:22:19.360">when I talked about that deployment technology one of the things it does...single instance so</p>
+      <p begin="00:22:19.360" end="00:22:23.830">when it goes the download the app for each file its as well before I download this file and</p>
+      <p begin="00:22:23.830" end="00:22:27.630">...bandwidth and ways dissipates wired have this exact file</p>
+      <p begin="00:22:27.630" end="00:22:33.480">in this exact same ones and zerosif I do is hardly the file move on so if you</p>
+      <p begin="00:22:33.480" end="00:22:37.750">...apps and they all had, you know, like the latest version of the,</p>
+      <p begin="00:22:37.750" end="00:22:43.950">you know,...two thousand eight see...bone copy of the file and this</p>
+      <p begin="00:22:43.950" end="00:22:50.650">...looked...all directories use it look like every time copies they use nt fs are...actually one</p>
+      <p begin="00:22:50.650" end="00:22:52.500">...smart?</p>
+      <p begin="00:22:52.500" end="00:22:56.780">Does windows...support transaction on file system by default memory transaction</p>
+      <p begin="00:22:57.860" end="00:22:59.180">question?</p>
+      <p begin="00:22:59.180" end="00:23:02.390">So, I'm on the file system save I know that</p>
+      <p begin="00:23:02.390" end="00:23:08.390">...fs always had that transaction support I also know that it</p>
+      <p begin="00:23:09.450" end="00:23:13.440">Wasn't the best feature we ever shipped a and,</p>
+      <p begin="00:23:13.440" end="00:23:18.810">actually it's funny because it's no-fault of the file system team the biggest problem we actually have...the hardware in order to</p>
+      <p begin="00:23:18.810" end="00:23:23.000">make cheap hardware and still make it run fast and the hardware sometimes wise to</p>
+      <p begin="00:23:23.000" end="00:23:27.850">the file system ok so the file system says are those bits on-disk and,</p>
+      <p begin="00:23:27.850" end="00:23:32.290">the file and the disk will say yes they are they're really not yet but they're just a</p>
+      <p begin="00:23:32.290" end="00:23:37.420">cash but they want they want they want the system run fast so one of the problems we had with</p>
+      <p begin="00:23:37.420" end="00:23:40.360">transaction stuff was just that the hardware relied</p>
+      <p begin="00:23:40.360" end="00:23:45.260">...and there's really...the file system good no was line so we I know we've</p>
+      <p begin="00:23:45.260" end="00:23:49.990">been general we discourage people from using those api as we didn't put them in the m sdk</p>
+      <p begin="00:23:49.990" end="00:23:55.710">...not going to put those ems okay because it's really not something most apps never attempted</p>
+      <p begin="00:23:55.710" end="00:24:00.630">...on so let's see you're not on the xbox team</p>
+      <p begin="00:24:00.630" end="00:24:04.800">...on the xbox so we're not thanks for us...question john if I have an</p>
+      <p begin="00:24:04.800" end="00:24:09.050">...device the talk I ot...can I choose what parse the os</p>
+      <p begin="00:24:09.050" end="00:24:13.590">...include...size limits...my stuck using the entire os</p>
+      <p begin="00:24:13.590" end="00:24:17.990">core some devices...less space and others can the os run a megabytes</p>
+      <p begin="00:24:19.190" end="00:24:24.690">so as right now no you can't like take pieces of it.</p>
+      <p begin="00:24:24.690" end="00:24:29.540">Other than that...you know, I'm not going to speak for what the outings plans are for like eight meg devices</p>
+      <p begin="00:24:29.540" end="00:24:33.530">...they're they on that story they can great right on...so windows</p>
+      <p begin="00:24:33.530" end="00:24:38.200">...saws very old absent windows faxes scanned vista will these be</p>
+      <p begin="00:24:38.200" end="00:24:43.350">...the final version I don't believe removing anything I'd, you know, we laugh sometimes</p>
+      <p begin="00:24:43.350" end="00:24:48.250">we'd love to see that stuff removed because would make our lives easier but there's probably still someone</p>
+      <p begin="00:24:48.250" end="00:24:54.350">that using it somewhere and as we've learned before every time we are every</p>
+      <p begin="00:24:54.350" end="00:24:57.790">...something someone subsets absolutely well that's what happens when</p>
+      <p begin="00:24:57.790" end="00:25:02.410">you have almost a billion users right so...you...install...to</p>
+      <p begin="00:25:02.410" end="00:25:07.150">...from the store will remove the only dependencies and regimented info.</p>
+      <p begin="00:25:07.150" end="00:25:12.180">Involvebasically what happens is ...remove the app and all the stuff that came down in the app</p>
+      <p begin="00:25:12.180" end="00:25:16.720">acts and then additionally we do two things all registry rights</p>
+      <p begin="00:25:16.720" end="00:25:21.350">recapture we store...a separate app I that's how we prevent the system from getting slow and</p>
+      <p begin="00:25:21.350" end="00:25:26.700">unreliable over time and then any rights that it does to the app data directory we redirect into</p>
+      <p begin="00:25:26.700" end="00:25:32.120">its you...updated directory when it gets unsolved those get removed so,</p>
+      <p begin="00:25:32.120" end="00:25:36.070">that cleans up the app but if you store if you create a bunch of documents and saved</p>
+      <p begin="00:25:36.070" end="00:25:42.010">...in my documents those...still be cool well hey it looks like it's a...</p>
+      <p begin="00:25:42.010" end="00:25:47.230">Thank you for asking questions are we couldn't get them all john thank you for coming on always...with you</p>
+      <p begin="00:25:47.230" end="00:25:51.780">...we'll be back with the...</p>
+
+    </div>
+  </body>
+</tt>

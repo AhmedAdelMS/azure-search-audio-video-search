@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.890</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.960" end="00:00:09.480">...let's begin welcome this is a</p>
+      <p begin="00:00:09.480" end="00:00:14.260">session on visualizing business data on any device with bing maps my name is</p>
+      <p begin="00:00:14.260" end="00:00:20.820">...broader I'm on the bing maps at customer advisory team.</p>
+      <p begin="00:00:20.820" end="00:00:24.140">...a little formality here with all sessions</p>
+      <p begin="00:00:24.140" end="00:00:28.310">at build and every other microsoft conference we like the gather for your feedback</p>
+      <p begin="00:00:28.310" end="00:00:33.160">...very important to us both were improving our sessions in the future and also as a speaker</p>
+      <p begin="00:00:33.160" end="00:00:39.640">helped me...become a better speaker...please fill this out at the into the session.</p>
+      <p begin="00:00:39.640" end="00:00:45.570">A quick agenda of the things I'll be going through today so I'll do a quick overview of</p>
+      <p begin="00:00:45.570" end="00:00:49.480">bing as a platform from there I'll be going into visualizing data on</p>
+      <p begin="00:00:49.480" end="00:00:51.470">...maps that writing code.</p>
+      <p begin="00:00:51.470" end="00:00:57.400">Then we'll talk about different techniques for visualizing business data on being maps and then finally talk about</p>
+      <p begin="00:00:57.400" end="00:01:03.380">cross platform development with the...maps using html five.</p>
+      <p begin="00:01:03.380" end="00:01:07.230">So, bing is more than a search engine there's a whole bunch</p>
+      <p begin="00:01:07.230" end="00:01:11.400">of developer api is available today...that you can use the start integrating that in</p>
+      <p begin="00:01:11.400" end="00:01:16.110">adding smart logic to your own application and in fact microsoft uses</p>
+      <p begin="00:01:16.110" end="00:01:20.280">it in nearly every single product today that we have everything from core</p>
+      <p begin="00:01:20.280" end="00:01:26.310">...office to windows and even xbox it can use bing in a number of different</p>
+      <p begin="00:01:26.310" end="00:01:30.500">ad devices and platforms and then not only do we use it</p>
+      <p begin="00:01:30.500" end="00:01:34.850">...at microsoft we have a lot of customers out there that use it has been see listed here just a few</p>
+      <p begin="00:01:34.850" end="00:01:42.300">of them but, you can use it as well and there's nothing stopping you getting access to those api swf.</p>
+      <p begin="00:01:42.300" end="00:01:46.660">So, that's going on into the visualization...side of things without having...code</p>
+      <p begin="00:01:47.710" end="00:01:52.830">just a quick little trivia question here what percentage of business data is often thought</p>
+      <p begin="00:01:52.830" end="00:01:59.550">of the have some kind of spatial reference the any ideas.</p>
+      <p begin="00:01:59.550" end="00:02:04.020">So, the approximately eighty percent of all business data that the estimate has some kind</p>
+      <p begin="00:02:04.020" end="00:02:08.450">of spatial relevance or spatial sense to it, you know, you can imagine all right</p>
+      <p begin="00:02:08.450" end="00:02:12.380">you go when you have your customers will every customer has an address for</p>
+      <p begin="00:02:12.380" end="00:02:15.380">...they're office or for what.</p>
+      <p begin="00:02:15.380" end="00:02:17.580">Where...stores are and</p>
+      <p begin="00:02:17.580" end="00:02:22.740">...so that just one of many different types of business data as we there's a lot of potential</p>
+      <p begin="00:02:22.740" end="00:02:28.430">...of what you can do with that data when it comes to mapping?</p>
+      <p begin="00:02:28.430" end="00:02:29.870">One great tool that's available,</p>
+      <p begin="00:02:29.870" end="00:02:34.950">available inexcel twenty thirteen is called our maps allows you to do some really rich</p>
+      <p begin="00:02:34.950" end="00:02:40.130">ed deep analytics of data on a map without having...a single...</p>
+      <p begin="00:02:40.130" end="00:02:44.570">...can view your data on either a two-d or three-d map</p>
+      <p begin="00:02:44.570" end="00:02:49.290">that said the three-d map isn't like what we saw with windows ten maps there it's actually just</p>
+      <p begin="00:02:49.290" end="00:02:54.580">a globe with no elevations in at the only elevations you can create would-be three-d</p>
+      <p begin="00:02:54.580" end="00:02:59.580">...charts and kind of make sense of any want to analyzer data you don't really need to know</p>
+      <p begin="00:02:59.580" end="00:03:06.880">mounds in buildings unless you're doing something about utilities or something inside of a city.</p>
+      <p begin="00:03:06.880" end="00:03:11.160">What they can be this in addition to three-d...charge there's heat maps and there</p>
+      <p begin="00:03:11.160" end="00:03:16.000">are clustering you can view data as administrative boundary so polygons for</p>
+      <p begin="00:03:16.000" end="00:03:21.050">states countries and...even zip code in some areas?</p>
+      <p begin="00:03:21.050" end="00:03:24.840">Another really cool features the...the...capability to have storyboards</p>
+      <p begin="00:03:24.840" end="00:03:29.760">and timelines and I'll show that the in a little bit in that actually</p>
+      <p begin="00:03:29.760" end="00:03:34.250">really makes it for a powerful presentation...need to go through and show data it's a</p>
+      <p begin="00:03:34.250" end="00:03:40.020">lot richer than just using a simple powerpoint one other really cool thing with the our maps you can</p>
+      <p begin="00:03:40.020" end="00:03:44.760">actually have a custom map so you might have situations where, you know.</p>
+      <p begin="00:03:44.760" end="00:03:48.460">The map of the world isn't exactly what you're interested in maybe your</p>
+      <p begin="00:03:48.460" end="00:03:53.400">an airport and you have all the data for where people are walking through...the flow data well one</p>
+      <p begin="00:03:53.400" end="00:03:58.130">I take a blueprint of your airport make that your custom mapped intern it</p>
+      <p begin="00:03:58.130" end="00:04:05.530">journal that data into heat maps you can see where, you know, the congestion is within your airport.</p>
+      <p begin="00:04:05.530" end="00:04:10.120">Another really cool things...our maps as part of the big our by stack</p>
+      <p begin="00:04:10.120" end="00:04:12.950">...but really cool thing about our be eyes it's not only</p>
+      <p begin="00:04:12.950" end="00:04:17.520">a available through excel now it's also available on the web so you can go through</p>
+      <p begin="00:04:17.520" end="00:04:21.390">start creating powerful presentations in amp and powerful</p>
+      <p begin="00:04:21.390" end="00:04:29.380">reports directly on the web and share them securely without having rate any code as well.</p>
+      <p begin="00:04:29.380" end="00:04:32.420">So, let's jump into a demo here.</p>
+      <p begin="00:04:32.420" end="00:04:37.270">We'll start off with the...as before...start off the demo...you know,</p>
+      <p begin="00:04:37.270" end="00:04:41.120">you guys all have time you don't have to leave right away with the ho everyone's in a</p>
+      <p begin="00:04:41.120" end="00:04:45.540">hurry to get to the airport we got a clear traffic alway there.</p>
+      <p begin="00:04:45.540" end="00:04:49.620">But,...the jump into a demo here so we're going to start off with a bunch of data that</p>
+      <p begin="00:04:49.620" end="00:04:56.010">a found online so this is the nine-one-one incident reports for seattle so,</p>
+      <p begin="00:04:56.010" end="00:04:58.950">it's a fairly decent dataset...already has latitude</p>
+      <p begin="00:04:58.950" end="00:05:04.480">and longitude which kind of makes things a little bit simpler for me so in if you have our maps</p>
+      <p begin="00:05:04.480" end="00:05:10.990">installed...simply go to insert map and launch our maps.</p>
+      <p begin="00:05:10.990" end="00:05:21.780">And, hopefully they don't have too many things running the background.</p>
+      <p begin="00:05:21.780" end="00:05:29.180">And, there we go...now we get a simple map and if we zoom nbc.</p>
+      <p begin="00:05:29.180" end="00:05:34.030">...mouse rather...my finger here we see a whole bunch of blobs points which</p>
+      <p begin="00:05:34.030" end="00:05:36.850">don't make a whole lot of sense to us one need thing is</p>
+      <p begin="00:05:36.850" end="00:05:40.800">it already automatically identified the latitude longitude columns we don't have to do anything</p>
+      <p begin="00:05:40.800" end="00:05:45.430">their however fight had a different call my want to be used as the spatial point of reference I could</p>
+      <p begin="00:05:45.430" end="00:05:49.700">set it here but we'll just leave it as that is we want to make</p>
+      <p begin="00:05:49.700" end="00:05:53.170">these blob points make a little bit more sense so, you know,</p>
+      <p begin="00:05:53.170" end="00:05:58.520">maybe let's take a look at actually...leave it as a what we have...here...add-in</p>
+      <p begin="00:05:58.520" end="00:06:02.870">some dave's if...take a look back at what the table actually look like we have this</p>
+      <p begin="00:06:02.870" end="00:06:07.840">com called event clearance description so what they different types of a events or</p>
+      <p begin="00:06:07.840" end="00:06:12.560">...nine-one-one situation actually was so let's find that...and,</p>
+      <p begin="00:06:12.560" end="00:06:19.000">the regal and that's true and other...so now that...data trends</p>
+      <p begin="00:06:19.000" end="00:06:23.750">in do still from a somewhat of a blood agar so much of it but we can see it as</p>
+      <p begin="00:06:23.750" end="00:06:28.740">a larger and we can actually interact with that so we can start hovering over pieces of</p>
+      <p begin="00:06:28.740" end="00:06:33.730">that information and see what it is we can see the different colors for all the different types incidences are different</p>
+      <p begin="00:06:33.730" end="00:06:40.660">types of information so this is ok...depending on the...this might make...</p>
+      <p begin="00:06:40.660" end="00:06:45.490">sense but the let's do something a little bit more richer there's other situation where you might,</p>
+      <p begin="00:06:45.490" end="00:06:51.940">you know, want to create little circles but...this doesn't really work for this data set is just too dense.</p>
+      <p begin="00:06:51.940" end="00:06:56.840">Now another option here is a heat maps and others looks pretty pretty cool so</p>
+      <p begin="00:06:56.840" end="00:07:00.050">it's a close that we get...this a little bit clear.</p>
+      <p begin="00:07:00.050" end="00:07:04.360">And, let's change the...a little bit better.</p>
+      <p begin="00:07:04.360" end="00:07:08.080">So, you know, looks very cool but we have one issue here there's</p>
+      <p begin="00:07:08.080" end="00:07:13.810">so much density in the center of the seattle we can't really make sense of that either...</p>
+      <p begin="00:07:13.810" end="00:07:18.870">can't get too much detail so there's actually a really easy way to handle that so if we go to</p>
+      <p begin="00:07:18.870" end="00:07:21.300">the...little settings...</p>
+      <p begin="00:07:21.300" end="00:07:26.250">...you have all kinds of different settings for the heap map so we'll change the radius and make it a little bit</p>
+      <p begin="00:07:26.250" end="00:07:30.720">smaller...now we can start seeing all the individual locations and let's go</p>
+      <p begin="00:07:30.720" end="00:07:32.800">something like that so now we start</p>
+      <p begin="00:07:32.800" end="00:07:37.040">seeing some key hot spots in that data and now we know, you know,</p>
+      <p begin="00:07:37.040" end="00:07:44.110">really where are the hotspots and...rather than just known that downtown has a lot of nine-one-one calls.</p>
+      <p begin="00:07:44.110" end="00:07:48.400">...another really cool thing so I, you know, we go through here and see the</p>
+      <p begin="00:07:48.400" end="00:07:50.130">scene so let's do a new</p>
+      <p begin="00:07:50.130" end="00:07:54.800">scene and we'll go back to one of the other data tapes they had here.</p>
+      <p begin="00:07:54.800" end="00:07:58.240">Or other tables will go back to that table their the blob</p>
+      <p begin="00:07:59.550" end="00:08:03.520">...the way review...the data I can quickly click back on to my other</p>
+      <p begin="00:08:03.520" end="00:08:08.960">scene and now have that same view same data in even if I go through and,</p>
+      <p begin="00:08:08.960" end="00:08:13.310">I move that in a do another new seen a I can.</p>
+      <p begin="00:08:13.310" end="00:08:17.760">You come back to this one...view of recur xtwo what it was</p>
+      <p begin="00:08:17.760" end="00:08:22.740">before see it it's almost like creating a powerpoint...sense you have all these different</p>
+      <p begin="00:08:22.740" end="00:08:27.100">...all the data is interactive so you can imagine if</p>
+      <p begin="00:08:27.100" end="00:08:31.480">you're trying to use the your presentation at work and someone says hey</p>
+      <p begin="00:08:31.480" end="00:08:35.370">no what's that really big spike in that data and you can say well, actually</p>
+      <p begin="00:08:35.370" end="00:08:41.879">...this find out you don't actually have to go through...digging through the data it's just there.</p>
+      <p begin="00:08:41.879" end="00:08:45.869">The next...take a look at the...close directions here is if you</p>
+      <p begin="00:08:45.869" end="00:08:53.780">...a our by dot com...sign-in and...signing quickly.</p>
+      <p begin="00:08:53.780" end="00:08:56.310">We can then the start doing a creating.</p>
+      <p begin="00:09:01.760" end="00:09:04.380">They didn't bring my smarter.</p>
+      <p begin="00:09:04.380" end="00:09:08.600">...morgan at the scratch that demo.</p>
+      <p begin="00:09:08.600" end="00:09:16.170">You can actually go into rbi upload...but it's not limited to excel you</p>
+      <p begin="00:09:16.170" end="00:09:18.440">...into other to...sources the</p>
+      <p begin="00:09:18.440" end="00:09:23.020">...even connected to a database we have data in a cs v format or another</p>
+      <p begin="00:09:23.020" end="00:09:25.000">...can upload it that way you can</p>
+      <p begin="00:09:25.000" end="00:09:29.650">...to a file that's on one drive or one of the other a</p>
+      <p begin="00:09:29.650" end="00:09:34.550">cloud storage services and it'll automatically pull that in and then you can start building reports which</p>
+      <p begin="00:09:34.550" end="00:09:39.390">are very similar to the...pivot charts and pivot tables you would have inside of excel</p>
+      <p begin="00:09:39.390" end="00:09:43.860">but all available inside of a web browser and can be shared with your colleagues in a secure</p>
+      <p begin="00:09:43.860" end="00:09:49.320">manner so the data in...isn't shared with the world but all of the people you want to share with?</p>
+      <p begin="00:09:49.320" end="00:09:54.570">...jump back to the slide deck here.</p>
+      <p begin="00:09:54.570" end="00:09:59.520">So, our maps our be...is just some of the ways we're being maps is available</p>
+      <p begin="00:09:59.520" end="00:10:03.520">we can start visualizing data without having rate any code there's a lot of other tools</p>
+      <p begin="00:10:03.520" end="00:10:08.550">available today so our views also built into a number of different platforms</p>
+      <p begin="00:10:08.550" end="00:10:13.160">...excel twenty thirteen it's in sharepoint twenty thirteen and then it's part of our</p>
+      <p begin="00:10:13.160" end="00:10:17.290">by it it's actually the same kind of maps that you can get</p>
+      <p begin="00:10:17.290" end="00:10:21.980">the in the web version up rbi as well which is the at two-d map where you can</p>
+      <p begin="00:10:21.980" end="00:10:26.220">you do that all little circles for the data or you can even create</p>
+      <p begin="00:10:26.220" end="00:10:31.300">...polygons for the for the data as well for the if the regions</p>
+      <p begin="00:10:32.560" end="00:10:36.170">...crm also has a map integration in it and the different versions of dynamics</p>
+      <p begin="00:10:36.170" end="00:10:40.830">...am sharepoint thirteen again there's some additional functionality other than our</p>
+      <p begin="00:10:40.830" end="00:10:45.700">view that also allows you to map data of the already any code and then one of the</p>
+      <p begin="00:10:45.700" end="00:10:51.220">...one of the first-place of reset...upload data...data on a map that have already coda</p>
+      <p begin="00:10:51.220" end="00:10:54.610">sequel porting services back in twenty-eight rtwo</p>
+      <p begin="00:10:54.610" end="00:11:00.140">we made that available and it's a very common feature that people use and for</p>
+      <p begin="00:11:00.140" end="00:11:05.070">pretty much all these there might be one or two versions of some of the some of these platform</p>
+      <p begin="00:11:05.070" end="00:11:10.570">where all the mapping functionality being that it's built into those different pieces up software</p>
+      <p begin="00:11:10.570" end="00:11:16.430">those different products there's no licensing required it's just there and made available to you know,</p>
+      <p begin="00:11:16.430" end="00:11:18.560">for the our by stuff you definitely need the our</p>
+      <p begin="00:11:18.560" end="00:11:24.880">by license but then you get access to our maps and all the other tools that are...our by.</p>
+      <p begin="00:11:24.880" end="00:11:27.940">Right moving...take a look at a at visualizing</p>
+      <p begin="00:11:27.940" end="00:11:32.370">in business intelligence data on being maps and some very common techniques for doing that</p>
+      <p begin="00:11:32.370" end="00:11:36.470">we start off the basics push pins poly lines and polygons</p>
+      <p begin="00:11:36.470" end="00:11:38.900">...pre-war the number actually the number</p>
+      <p begin="00:11:38.900" end="00:11:44.400">...use of maps today is putting a single push pin on a map and the</p>
+      <p begin="00:11:44.400" end="00:11:47.540">yean google go through all the different apps on all your</p>
+      <p begin="00:11:47.540" end="00:11:50.250">...devices or on your tablets you'll</p>
+      <p begin="00:11:50.250" end="00:11:56.380">find that probably nine-out-of-ten times there's a map with one point on...and that's about it.</p>
+      <p begin="00:11:56.380" end="00:11:59.450">That said when it comes to business data it changes drastically people</p>
+      <p begin="00:11:59.450" end="00:12:04.360">want to visualize a lot more interesting data and the in the can do that very simply with</p>
+      <p begin="00:12:04.360" end="00:12:09.050">pipelines and polygons now when it comes to visualizing that data using these different shapes</p>
+      <p begin="00:12:09.050" end="00:12:13.910">there's some cool different techniques you can use to make sense...make better data sets that data</p>
+      <p begin="00:12:13.910" end="00:12:18.680">...you know, have a simple icon is nice but you might want to have different types of icons</p>
+      <p begin="00:12:18.680" end="00:12:23.560">or customize...are unique to use of situation so if you're showing your customers on a</p>
+      <p begin="00:12:23.560" end="00:12:27.820">map you could show the logo all of their company on the map instead of just</p>
+      <p begin="00:12:27.820" end="00:12:32.950">... a genera generic push pin on the map that where you can look at the map and instantly know</p>
+      <p begin="00:12:32.950" end="00:12:37.940">...that's who that customers I don't even have to click on the push pin to find out the size of an</p>
+      <p begin="00:12:37.940" end="00:12:42.450">icon to make sense here so here in the screenshotwe have some circles that are all</p>
+      <p begin="00:12:42.450" end="00:12:46.270">scaled based on the size of the data that I've passed...some metric</p>
+      <p begin="00:12:46.270" end="00:12:50.770">of that data and then we have no documentation how to do that very easily</p>
+      <p begin="00:12:50.770" end="00:12:56.940">in big maps and then of course there's also the color of the icon...the shape of the icon so I</p>
+      <p begin="00:12:56.940" end="00:13:01.440">mentioned before you could be logos but if let's say...the some common keep</p>
+      <p begin="00:13:02.650" end="00:13:07.250">...you aiff is stuff...used in other things other than maps</p>
+      <p begin="00:13:07.250" end="00:13:11.930">...is huge often use like a squares triangles and circles and then also using the</p>
+      <p begin="00:13:11.930" end="00:13:16.190">colors green yellow and red of course you can use any color in any</p>
+      <p begin="00:13:16.190" end="00:13:21.670">shape the want those are just some common the examples another thing that a lot of people</p>
+      <p begin="00:13:21.670" end="00:13:26.130">are aware of is a you can actually chains align style...might if you're drawing a...</p>
+      <p begin="00:13:26.130" end="00:13:31.080">liner polygonyou might have a situational let's say you're drawing utility lines on a</p>
+      <p begin="00:13:31.080" end="00:13:36.280">map well if all the utility lines are...utility lines that are above ground you might want to</p>
+      <p begin="00:13:36.280" end="00:13:40.490">dramas a solid line but if there's some lines that are underground make sense that</p>
+      <p begin="00:13:40.490" end="00:13:45.350">...as a...that...you can identify the differences by visually looking at it</p>
+      <p begin="00:13:45.350" end="00:13:52.980">and no okay I don't need latter to go work on that line I need to bring a shovel?</p>
+      <p begin="00:13:52.980" end="00:13:57.950">When it...with push pins it's great, you know, the visualization but if you start visualizing too many push pins it</p>
+      <p begin="00:13:57.950" end="00:14:04.690">gets really cluttered so we take a look on the map there on the last?</p>
+      <p begin="00:14:04.690" end="00:14:10.290">And, I think...about what over a thousand push pins on the map you can imagine the more</p>
+      <p begin="00:14:10.290" end="00:14:15.900">push pins you put on the less of the map ec and...just doesn't make sense having the</p>
+      <p begin="00:14:15.900" end="00:14:21.370">map there because you're not making any sense of the data one way to kind of take care that is</p>
+      <p begin="00:14:21.370" end="00:14:25.820">...what's called page...a push...which then takes a</p>
+      <p begin="00:14:25.820" end="00:14:29.900">...does a quick analysis of the data on the map in real-time and says okay</p>
+      <p begin="00:14:29.900" end="00:14:34.700">these three pins...overlapping or very close to each other this group them together make</p>
+      <p begin="00:14:34.700" end="00:14:40.780">...a cluster and let's uniquely identify them and the image on the right all the red circles</p>
+      <p begin="00:14:40.780" end="00:14:45.400">are the clusters but if you look closely you'll still see a couple blue circles in there and those are ones</p>
+      <p begin="00:14:45.400" end="00:14:50.360">that didn't fall within an existing cluster so as you zoom in these clusters</p>
+      <p begin="00:14:50.360" end="00:14:53.600">...breaking apart you start seeing more and more push pins but only for the</p>
+      <p begin="00:14:53.600" end="00:14:58.480">or you're looking in so it makes a lot easier to navigate through the data</p>
+      <p begin="00:14:58.480" end="00:15:03.210">are also allows you to render a lot more data on the map so instead of hitting performance issues</p>
+      <p begin="00:15:03.210" end="00:15:06.850">...javascript once...get up around five thousand push pins you can start</p>
+      <p begin="00:15:08.170" end="00:15:12.120">...to hundreds of thousands of push pins on the map and if you start-one</p>
+      <p begin="00:15:12.120" end="00:15:17.090">...actually if you take it even a step further and start doing all the algorithms on the server-side or</p>
+      <p begin="00:15:17.090" end="00:15:25.010">in the database have I've seen example they've done it with hundreds of millions of push pins?</p>
+      <p begin="00:15:25.010" end="00:15:30.220">Density he maps is that...similar to the idea of clustering where you start group</p>
+      <p begin="00:15:30.220" end="00:15:34.710">...data and then...uniquely than fighting at based on...the data</p>
+      <p begin="00:15:34.710" end="00:15:37.240">...close closely related push pins.</p>
+      <p begin="00:15:37.240" end="00:15:42.080">The way the heat maps work here is you start taking every data point give it</p>
+      <p begin="00:15:42.080" end="00:15:46.800">a little of gradient circle on as that those circles overlap they start creating darker,</p>
+      <p begin="00:15:46.800" end="00:15:50.450">darker areas within map that gradient color or</p>
+      <p begin="00:15:50.450" end="00:15:55.350">that transparency that gradient to another color gradient and</p>
+      <p begin="00:15:55.350" end="00:15:59.210">...that generates that nicely map like that.</p>
+      <p begin="00:15:59.210" end="00:16:03.000">So, clustering heat maps and we have all kinds of</p>
+      <p begin="00:16:03.000" end="00:16:06.360">...source code available where you can actually get that functionality into bing</p>
+      <p begin="00:16:06.360" end="00:16:09.160">...only two or three lines of code at in the most...</p>
+      <p begin="00:16:09.160" end="00:16:14.100">version of course there's tons of customizations you might want to change the color change the</p>
+      <p begin="00:16:14.100" end="00:16:19.050">...the intensity and stuff like that and all that's available...of course it's going to the more customize</p>
+      <p begin="00:16:19.050" end="00:16:26.900">...make it more lines of code you'll need but...as an example two three lines of code you get to go.</p>
+      <p begin="00:16:26.900" end="00:16:31.630">The building is a fairly and it's been around for a while but something I haven't really seen</p>
+      <p begin="00:16:31.630" end="00:16:36.510">...to...recently and it's a pretty interesting idea it again it's</p>
+      <p begin="00:16:36.510" end="00:16:41.610">similar to clustering...maps...what it does is a breaks the map up into</p>
+      <p begin="00:16:42.690" end="00:16:46.730">...evenly spaced or evenly fitted</p>
+      <p begin="00:16:46.730" end="00:16:50.710">geometric shape so you might use the over the square triangles</p>
+      <p begin="00:16:50.710" end="00:16:55.560">...hexagons like we see in these examples here...you know, all the shapes fit in</p>
+      <p begin="00:16:55.560" end="00:16:57.500">all together nicely but, you know,</p>
+      <p begin="00:16:57.500" end="00:17:02.260">spatially they're not really all it's not an zip code it's not a city but it's</p>
+      <p begin="00:17:02.260" end="00:17:08.410">it evenly size area and then based on that within find out all the data points that</p>
+      <p begin="00:17:08.410" end="00:17:14.720">are inside of that ending change the color based on either them some kind of metric or the number of points in there.</p>
+      <p begin="00:17:14.720" end="00:17:17.280">...really good example I've seen this there's a</p>
+      <p begin="00:17:17.280" end="00:17:21.460">real-estate site in the uk that I've worked with the web and they've</p>
+      <p begin="00:17:21.460" end="00:17:26.170">did this for every single property in the uk and they change the color based on the</p>
+      <p begin="00:17:26.170" end="00:17:31.160">cell or the last sold the price of that property so now you have rather than trying to show,</p>
+      <p begin="00:17:31.160" end="00:17:36.150">you know, like a push pin for each property and...that push pin you have this map of squares that</p>
+      <p begin="00:17:36.150" end="00:17:39.080">kind of fits together really nicely and the</p>
+      <p begin="00:17:39.080" end="00:17:42.440">or does fitness he hasn't really nicely and you can see this have</p>
+      <p begin="00:17:42.440" end="00:17:46.990">...map basically but it's a little bit more in-depth than the gradient</p>
+      <p begin="00:17:46.990" end="00:17:52.450">...map of...the density based level we just saw before?</p>
+      <p begin="00:17:52.450" end="00:17:56.910">Going a step further another type visualization that...a lot of people like to do</p>
+      <p begin="00:17:56.910" end="00:18:00.650">systematic mapping of this type of mappings been around for ages and</p>
+      <p begin="00:18:00.650" end="00:18:06.200">...one of the most common ways of visualizing data in sharing data from a</p>
+      <p begin="00:18:06.200" end="00:18:10.480">business sense of lot of people when they think of...mapping who</p>
+      <p begin="00:18:10.480" end="00:18:15.960">are familiar with that term or this is often confuses...mapping is the web</p>
+      <p begin="00:18:15.960" end="00:18:20.900">I think of maybe okay all the country boundaries are all the countries color-coded to based on some kind of, you know,</p>
+      <p begin="00:18:20.900" end="00:18:25.350">metric could be like you know, senses data or some other and,</p>
+      <p begin="00:18:25.350" end="00:18:28.990">information could be the population ...</p>
+      <p begin="00:18:28.990" end="00:18:33.340">very similar to the image we see there in the bottom right.</p>
+      <p begin="00:18:33.340" end="00:18:37.710">But, another type of mathematic map it doesn't necessarily have to be a polygon you can start</p>
+      <p begin="00:18:37.710" end="00:18:42.560">using poly lines so a great example that is the traffic data inside a bing maps where,</p>
+      <p begin="00:18:42.560" end="00:18:47.740">you know, the actual data is the road and we change the color the road based on the flow of</p>
+      <p begin="00:18:47.740" end="00:18:52.970">traffic a or could be any kind of metric if we wanted to know the number of</p>
+      <p begin="00:18:52.970" end="00:18:57.930">cars for instance or something like that one quick tip if you start doing kind of mapping</p>
+      <p begin="00:18:57.930" end="00:19:02.630">like this as you zoom out make sure you focus on larger areas as easy</p>
+      <p begin="00:19:02.630" end="00:19:07.150">many can and star breaking into smaller so this screenshot here at the bottom</p>
+      <p begin="00:19:07.150" end="00:19:10.670">right with the where actually visualizing the unemployment rates in</p>
+      <p begin="00:19:10.670" end="00:19:15.940">the us based on each county in the us...mass of, you know,</p>
+      <p begin="00:19:15.940" end="00:19:20.920">dataset and at this zoom level looks...right but you can imagine you can't really</p>
+      <p begin="00:19:20.920" end="00:19:25.420">see the smaller polygons or the on the east coast so maybe at this level here might</p>
+      <p begin="00:19:25.420" end="00:19:28.700">...made better sense of we were visualizing this as a state</p>
+      <p begin="00:19:28.700" end="00:19:33.180">at the state boundaries rather than the county boundaries and if I zoomed in a couple levels then start</p>
+      <p begin="00:19:33.180" end="00:19:39.070">showing the county data one benefit of doing that as well as by limiting the view when you're</p>
+      <p begin="00:19:39.070" end="00:19:45.870">looking at higher or density data is it reduces the amount of data you actually have to load?</p>
+      <p begin="00:19:45.870" end="00:19:53.850">...get better performance so let'sjump in this more demos here.</p>
+      <p begin="00:19:53.850" end="00:19:54.350">Okay.</p>
+      <p begin="00:19:56.060" end="00:19:58.350">Okay, we're...this will closes up.</p>
+      <p begin="00:19:59.380" end="00:20:04.980">Unsavory.</p>
+      <p begin="00:20:06.290" end="00:20:10.410">So, we get clients a clustering here so this is a really basic example what's</p>
+      <p begin="00:20:10.410" end="00:20:13.670">throw of five thousand push pins on the map.</p>
+      <p begin="00:20:14.700" end="00:20:19.620">And, there we go what I've done here is we have a little plus on top of the default push</p>
+      <p begin="00:20:19.620" end="00:20:23.360">...indicate that it's a cluster...not click on I</p>
+      <p begin="00:20:23.360" end="00:20:27.950">...zoom in so now let's zoom in and we see the cluster</p>
+      <p begin="00:20:27.950" end="00:20:32.370">...breaking apart we start seeing some that aren't...see the individual pins</p>
+      <p begin="00:20:32.370" end="00:20:37.200">...click on one we see okay this is a single location click on a cluster we see okay this is a</p>
+      <p begin="00:20:37.200" end="00:20:38.960">...well that's one that's in</p>
+      <p begin="00:20:38.960" end="00:20:43.400">view that's a cluster and there's seventy-seven</p>
+      <p begin="00:20:43.400" end="00:20:49.020">a or that's the...but there's five other push pins in that cluster and may</p>
+      <p begin="00:20:49.020" end="00:20:52.440">...researching more detail so let's zoom in some more and</p>
+      <p begin="00:20:52.440" end="00:20:57.490">...search breaking apart here...get a lot more data so you can imagine if you're</p>
+      <p begin="00:20:57.490" end="00:21:02.630">...is the lot easier way to go through navigate that data.</p>
+      <p begin="00:21:02.630" end="00:21:07.140">Now let's take a look at the...map once again what we'll do a little bit larger data</p>
+      <p begin="00:21:07.140" end="00:21:11.780">...with the twenty five thousand and what update the heat map</p>
+      <p begin="00:21:11.780" end="00:21:15.110">...maybe it's...bit bigger here...go fifty thousand?</p>
+      <p begin="00:21:16.210" end="00:21:21.450">Ok, so, now we have lots of data on the map the as a he map.</p>
+      <p begin="00:21:21.450" end="00:21:26.570">And, we go through...of different settings with that day but this is all based on the number of web points</p>
+      <p begin="00:21:26.570" end="00:21:28.750">that are overlapping and it creates</p>
+      <p begin="00:21:28.750" end="00:21:33.090">...state gradient we change the radius very similar to the excels demo</p>
+      <p begin="00:21:33.090" end="00:21:37.780">edit earlier you can we can change the radius of each single data points so that it uploads</p>
+      <p begin="00:21:37.780" end="00:21:41.230">...updates...the map accordingly and</p>
+      <p begin="00:21:42.650" end="00:21:56.260">...astray smaller radius all of the best update.</p>
+      <p begin="00:21:56.260" end="00:21:58.160">...that again.</p>
+      <p begin="00:21:58.160" end="00:22:00.010">...now we have a smaller guy</p>
+      <p begin="00:22:00.010" end="00:22:05.610">...he mapper density map ads of resume...here.</p>
+      <p begin="00:22:05.610" end="00:22:10.250">Givens you start seeing...a little bit clear and this might make a little bit more sense so this</p>
+      <p begin="00:22:10.250" end="00:22:15.720">radius of your data for when you're doing your...mapping would really very depending on the type</p>
+      <p begin="00:22:15.720" end="00:22:20.010">...your visualizing so if you're doing keep map based off of, you know, cities your</p>
+      <p begin="00:22:20.010" end="00:22:24.040">...radius is that are at least the size of the city but if you're doing</p>
+      <p begin="00:22:24.040" end="00:22:28.470">...a heat maps based off of individual incidences like the nine-one-one</p>
+      <p begin="00:22:28.470" end="00:22:35.020">incidences we're looking at you only need a small circle for that because that's a small area we can change some</p>
+      <p begin="00:22:35.020" end="00:22:39.550">other things like the intensity of...but we won't worry about...also change the colors will</p>
+      <p begin="00:22:39.550" end="00:22:44.260">...instead of having no the green yellow and red there...change...something that looks like it's</p>
+      <p begin="00:22:44.260" end="00:22:49.610">on a little bit hotter that type thing and there's a number of other options for that as well.</p>
+      <p begin="00:22:49.610" end="00:22:54.400">So, next thing or a shows this is a nice little example here with the thematic map that's nice and</p>
+      <p begin="00:22:54.400" end="00:22:59.870">interactive and it's all rendered in javascriptas anyone here heard of</p>
+      <p begin="00:22:59.870" end="00:23:01.090">...three js.</p>
+      <p begin="00:23:02.220" end="00:23:06.970">Yeah, case if you...so for those not familiar with that it's a data-driven</p>
+      <p begin="00:23:06.970" end="00:23:10.590">that javascript library for visualizing and rendering nice</p>
+      <p begin="00:23:10.590" end="00:23:13.400">uri on maps or non-map on</p>
+      <p begin="00:23:13.400" end="00:23:17.850">webpages so it could be charts and a number of other things but it makes it very easy</p>
+      <p begin="00:23:17.850" end="00:23:24.640">to visualize data and make it data bounded so a while ago...I say well a couple months ago</p>
+      <p begin="00:23:24.640" end="00:23:30.170">made a module for integrating that with being map so that as if...in my zoom</p>
+      <p begin="00:23:30.170" end="00:23:36.930">all the data stays within, you know, the right location on the map if we take a quick look at the source code.</p>
+      <p begin="00:23:36.930" end="00:23:39.260">So, have a...some styles here but</p>
+      <p begin="00:23:39.260" end="00:23:43.790">we skip that here's the whole search go-to it's fairly short</p>
+      <p begin="00:23:43.790" end="00:23:47.470">the get the high load up the map?</p>
+      <p begin="00:23:47.470" end="00:23:51.650">Actually that's jump individuals due to they...zoomed in there.</p>
+      <p begin="00:23:53.060" end="00:23:56.230">...and actually is really simple want version so</p>
+      <p begin="00:23:56.230" end="00:24:01.620">...were up the map here initially and then after redo that we load in the register and</p>
+      <p begin="00:24:01.620" end="00:24:04.100">...the three module.</p>
+      <p begin="00:24:05.170" end="00:24:08.540">For being maps and then once you go to do that</p>
+      <p begin="00:24:08.540" end="00:24:13.580">...then create eighty-three layer for...map and then we specify</p>
+      <p begin="00:24:13.580" end="00:24:18.760">were data is so I'm using a data type called topple json...a fairly new data</p>
+      <p begin="00:24:18.760" end="00:24:24.380">type if you're if you work...spatial data files before there's a...one called</p>
+      <p begin="00:24:24.380" end="00:24:30.510">...json which is ...way of...storing the geis</p>
+      <p begin="00:24:30.510" end="00:24:34.070">...spatial data as json and,</p>
+      <p begin="00:24:34.070" end="00:24:38.370">the top of jason's basically compressed version of that...makes it a little bit our</p>
+      <p begin="00:24:38.370" end="00:24:45.070">matrix significantly smaller...megabyte file turns into about two hundred kilobyte file so I'm</p>
+      <p begin="00:24:45.070" end="00:24:49.590">using that just for performance reason for the loading but then I'm able to pull that data in</p>
+      <p begin="00:24:49.590" end="00:24:54.660">an water that data pulled in...basically just using sb...to them</p>
+      <p begin="00:24:54.660" end="00:24:59.140">...that data on the map and...and, the map itself or</p>
+      <p begin="00:24:59.140" end="00:25:03.550">the module itself actually take care of the updating of the data on the map so that it's always position in the</p>
+      <p begin="00:25:03.550" end="00:25:06.860">crack place if we take a look at the ad the literacy one much of</p>
+      <p begin="00:25:06.860" end="00:25:12.080">...showing it's a little bit more advance because they've...now I'm pulling in at to</p>
+      <p begin="00:25:12.080" end="00:25:17.860">file some pulling in both the topple json file for the county data</p>
+      <p begin="00:25:17.860" end="00:25:21.930">...for the via that the states but I'm also pulling in tab</p>
+      <p begin="00:25:21.930" end="00:25:26.840">spaced deb data file that has all the literacy data so I'm the</p>
+      <p begin="00:25:26.840" end="00:25:31.180">merging that data together and then rendering on the map so.</p>
+      <p begin="00:25:31.180" end="00:25:33.090">I also have a little bit of code here for</p>
+      <p begin="00:25:33.090" end="00:25:37.270">...sky...legend there but if we dis focus on the code that was used to</p>
+      <p begin="00:25:37.270" end="00:25:41.290">render that map we're looking at maybe twenty,</p>
+      <p begin="00:25:41.290" end="00:25:43.950">twenty five lines of code that total which,</p>
+      <p begin="00:25:43.950" end="00:25:50.440">you know, if you try to create the heap map like that but in the...have taken quite a long-time and,</p>
+      <p begin="00:25:50.440" end="00:25:56.940">it works very well you...screenshot I showed earlier with the at county datacan't</p>
+      <p begin="00:25:56.940" end="00:26:03.780">visualizing...hit on a map is very hard...with javascript because there's so much data?</p>
+      <p begin="00:26:03.780" end="00:26:05.090">All right so,</p>
+      <p begin="00:26:05.090" end="00:26:09.550">I mentioned a lot of these the modules like the clustering he map</p>
+      <p begin="00:26:09.550" end="00:26:14.210">...three modules there's a lot of module built into being mapped there's also a</p>
+      <p begin="00:26:14.210" end="00:26:19.460">locked let's zoom in here available online so we have a pretty big</p>
+      <p begin="00:26:19.460" end="00:26:23.430">...developer community around being maps and then over the years</p>
+      <p begin="00:26:23.430" end="00:26:27.330">you been developing modules are basically take...something really...want to make</p>
+      <p begin="00:26:27.330" end="00:26:31.840">...reusable so we turn it into a...so they can be added in very easily so there's</p>
+      <p begin="00:26:31.840" end="00:26:34.920">I've created a number of model but there's a lot of other models...have been created by some of</p>
+      <p begin="00:26:34.920" end="00:26:39.530">...being maps and vp so things from like drawing tools clustering</p>
+      <p begin="00:26:39.530" end="00:26:43.930">heat maps and being able to actually another interesting</p>
+      <p begin="00:26:43.930" end="00:26:48.350">one bottom is well-known text if you work with any the spatial data</p>
+      <p begin="00:26:48.350" end="00:26:50.690">and sequel server well-known text is a way</p>
+      <p begin="00:26:50.690" end="00:26:56.630">to represent spatial data as a string so there's a module that allows you to easily take that string</p>
+      <p begin="00:26:56.630" end="00:27:01.070">...on being maps take...data on bing maps and a and turn it into a string that</p>
+      <p begin="00:27:01.070" end="00:27:03.890">...you can easily take that data from sequel server</p>
+      <p begin="00:27:03.890" end="00:27:08.840">and connected up to bing maps and having your own custom application.</p>
+      <p begin="00:27:08.840" end="00:27:14.930">All right let's the jump back to the slide deck.</p>
+      <p begin="00:27:14.930" end="00:27:18.750">Right trivia question number two and how big would</p>
+      <p begin="00:27:18.750" end="00:27:23.610">a single jpeg of the role be at zoom level nineteen so at zoom of nineteen</p>
+      <p begin="00:27:23.610" end="00:27:28.670">...got thirty centimeter resolutionimagery the anyone get a guests?</p>
+      <p begin="00:27:29.690" end="00:27:33.880">Now it's a really big.</p>
+      <p begin="00:27:33.880" end="00:27:37.440">The image would be, you know, hundreds of millions pixels</p>
+      <p begin="00:27:38.640" end="00:27:43.370">...pixels and...are actually...a lot more than that but it that it's a massive image</p>
+      <p begin="00:27:43.370" end="00:27:48.640">just a road map would be an image of just the road data would be while over</p>
+      <p begin="00:27:48.640" end="00:27:53.660">...hundred terabites and the era aerial imagery be overhang...</p>
+      <p begin="00:27:53.660" end="00:27:58.890">to half a petabyte if not more and that's just the flat two-d maps you can imagine the maps</p>
+      <p begin="00:27:58.890" end="00:28:04.660">we have now and windows tim the three-d data how much bigger that data is gets.</p>
+      <p begin="00:28:04.660" end="00:28:07.850">But, we're using bing maps today in javascript</p>
+      <p begin="00:28:07.850" end="00:28:12.820">...have been for a long-time so how do we actually get that much data visualized on a map.</p>
+      <p begin="00:28:12.820" end="00:28:18.640">And, that brings us to tyler is which is another really common way...visualizing data on maps and,</p>
+      <p begin="00:28:18.640" end="00:28:21.120">allows you to visualized large data sets as well.</p>
+      <p begin="00:28:22.140" end="00:28:26.740">The basic idea is we take this giant image me cut it up into a bunch of</p>
+      <p begin="00:28:26.740" end="00:28:32.120">evenly even size squares ...which are two-hundred-and-fifty six pixels by</p>
+      <p begin="00:28:32.120" end="00:28:39.180">...six pixels inferring maps and most other major mapping providers?</p>
+      <p begin="00:28:39.180" end="00:28:42.940">And, then we give them all unique...naming conventionswe use what's called</p>
+      <p begin="00:28:42.940" end="00:28:46.690">...quad key naming convention so the idea here if you take a look at level</p>
+      <p begin="00:28:46.690" end="00:28:49.840">...the top left images, you know,</p>
+      <p begin="00:28:49.840" end="00:28:52.390">we give it zero then the next one's one-two-three</p>
+      <p begin="00:28:53.420" end="00:28:58.230">resume into the next level...let's say resume into the you know,</p>
+      <p begin="00:28:58.230" end="00:29:04.680">the area of tile to we keep that number twoid and</p>
+      <p begin="00:29:04.680" end="00:29:08.740">...we start doing zero one-two-three a again and keep appending that</p>
+      <p begin="00:29:08.740" end="00:29:13.920">autonomy end up creating this unique string that points to that exact tile.</p>
+      <p begin="00:29:13.920" end="00:29:17.130">Another common method is using what's called xyz soul</p>
+      <p begin="00:29:17.130" end="00:29:21.590">...we might say okay it's three tiles to the right at for tiles to</p>
+      <p begin="00:29:21.590" end="00:29:26.370">our down and then zoom level ten and that would basically it just</p>
+      <p begin="00:29:26.370" end="00:29:30.630">...you storing three variables instead of one but at the day it takes to the</p>
+      <p begin="00:29:30.630" end="00:29:35.490">exact same data and I can all be dumping maps another method that's</p>
+      <p begin="00:29:35.490" end="00:29:40.470">use sometimes is bounding boxes where people say okay I have my tile is within</p>
+      <p begin="00:29:40.470" end="00:29:43.920">this...square of coordinates and then load that up</p>
+      <p begin="00:29:43.920" end="00:29:48.600">...added again can also be the visualize...being that's very easily.</p>
+      <p begin="00:29:48.600" end="00:29:50.980">Now there's a couple different types of tile layers</p>
+      <p begin="00:29:50.980" end="00:29:55.950">...their static taylor's and dynamic taylor's to static ones basically</p>
+      <p begin="00:29:55.950" end="00:30:01.810">that's a I have an image of...the blueprint for a mall and</p>
+      <p begin="00:30:01.810" end="00:30:06.140">I want to visualize that on top of bing maps and make it so I can zoom in zoom out and</p>
+      <p begin="00:30:06.140" end="00:30:11.180">panned so what static and tiles butsince...data is really changing sacked</p>
+      <p begin="00:30:11.180" end="00:30:16.270">as a greater approach for that and basically...there's a lot of ways to go about this but</p>
+      <p begin="00:30:16.270" end="00:30:20.790">one great tools called microsoft mapcruncher...allows...load up either...image or</p>
+      <p begin="00:30:20.790" end="00:30:23.780">...file and cross-referenced</p>
+      <p begin="00:30:23.780" end="00:30:28.140">a minimum of three data points on your image to physical points on the maps of, you know,</p>
+      <p begin="00:30:28.140" end="00:30:33.960">you the four corners of the building is usually pretty good...way to go and then it you press a single</p>
+      <p begin="00:30:33.960" end="00:30:36.390">... create your or mash up your tiles</p>
+      <p begin="00:30:36.390" end="00:30:41.550">and it actually goes through and generates all these images free which...match are naming conventions for maps</p>
+      <p begin="00:30:41.550" end="00:30:45.720">...then just upload these up to your web server and axes</p>
+      <p begin="00:30:45.720" end="00:30:49.980">...just like any other image...in this case...it to be...just</p>
+      <p begin="00:30:49.980" end="00:30:56.090">...url to where stored and the map control go through and request them as needed so</p>
+      <p begin="00:30:56.090" end="00:31:00.980">extremely simple to do you don't need to know rate a whole lot of code...actually the</p>
+      <p begin="00:31:00.980" end="00:31:05.890">...in a tile layer again is about two lines of code one to create the tyler and one to</p>
+      <p begin="00:31:05.890" end="00:31:11.790">added to the map but one of the downsides this approach is very hard to maintain you can imagine ok</p>
+      <p begin="00:31:11.790" end="00:31:16.340">...blueprints changed and I go through do this cross referencing again and,</p>
+      <p begin="00:31:16.340" end="00:31:19.940">re upload in...the data.</p>
+      <p begin="00:31:19.940" end="00:31:22.570">So, you the pros and cons to that approach</p>
+      <p begin="00:31:22.570" end="00:31:27.380">you trading simplicity for a little bit harder management another the other type</p>
+      <p begin="00:31:27.380" end="00:31:32.590">your dynamic tellers is the ideal for when you have constantly changing data are really big</p>
+      <p begin="00:31:32.590" end="00:31:39.920">datasets...you know, storage limitations on...you know, and, server look at a</p>
+      <p begin="00:31:39.920" end="00:31:44.660">...at the whole worldwe just saw a single image of</p>
+      <p begin="00:31:44.660" end="00:31:51.020">...maps is five hundred terabytes if you do the whole world but you can imagine trying to store all</p>
+      <p begin="00:31:51.020" end="00:31:55.000">that data on...just isn't that manageable we can do is you</p>
+      <p begin="00:31:55.000" end="00:31:59.050">can actually cut that image on-the-fly using a web service or you can even take</p>
+      <p begin="00:31:59.050" end="00:32:03.780">...data from say sequel server and render it on-the-fly as a tile and rent an overlay</p>
+      <p begin="00:32:03.780" end="00:32:08.550">that on top the map so it's a little bit more complicated in terms the architecture but we actually have all the</p>
+      <p begin="00:32:08.550" end="00:32:13.210">source code available if you...one of our demos for it you can actually change it</p>
+      <p begin="00:32:13.210" end="00:32:17.610">two-point-one your datasets and if you have the right call name for the spatial data</p>
+      <p begin="00:32:17.610" end="00:32:23.080">in your database the or update decode...point to the same name you'll be able to get on the</p>
+      <p begin="00:32:23.080" end="00:32:26.370">map in about ten minutes or less and start visualizing large data</p>
+      <p begin="00:32:26.370" end="00:32:31.800">sets I gave a presentation two-week herb two months ago on visualizing big data one my</p>
+      <p begin="00:32:31.800" end="00:32:36.320">partner's uses...exact same technique...visualizing a half a million</p>
+      <p begin="00:32:37.530" end="00:32:42.760">complex polygons on the map and that the dataset was about sixty four gigabytes</p>
+      <p begin="00:32:42.760" end="00:32:47.580">...six-four gigabytes raw data on the map and being able to interact with it as well</p>
+      <p begin="00:32:47.580" end="00:32:52.070">so, you know, taylor's even though it's an image on the map being that your data stored in</p>
+      <p begin="00:32:52.070" end="00:32:55.340">the spatial database you can actually find out what people of clicked on bison</p>
+      <p begin="00:32:55.340" end="00:32:59.920">...a quick request against the database so it's very useful for, you know,</p>
+      <p begin="00:32:59.920" end="00:33:03.290">constantly changing large data sets so here's an idea of</p>
+      <p begin="00:33:03.290" end="00:33:06.610">...a typical architecture for that might look like the</p>
+      <p begin="00:33:06.610" end="00:33:10.880">...your data your vector data somewhere or your spatial data some marceleo sequel</p>
+      <p begin="00:33:10.880" end="00:33:14.890">...a great place for that another great place if you're using bing maps is</p>
+      <p begin="00:33:14.890" end="00:33:19.840">...map spatial data services...the spatial data services essentially of</p>
+      <p begin="00:33:19.840" end="00:33:21.970">wrapper around a single table inside of</p>
+      <p begin="00:33:21.970" end="00:33:25.160">sql larger and exposes that table as a</p>
+      <p begin="00:33:25.160" end="00:33:30.050">spatial rest service so you can imagine okay...uploaded on</p>
+      <p begin="00:33:30.050" end="00:33:34.820">or maybe a cs v file or something like that to a database table.</p>
+      <p begin="00:33:34.820" end="00:33:39.340">And, now you have to go through and...all that kind of code to expose it to do a...</p>
+      <p begin="00:33:39.340" end="00:33:44.260">I want to radius certain stuff like that the spatial data services takes away all that complexity</p>
+      <p begin="00:33:44.260" end="00:33:49.340">you basically upload your file and now you have a restaurants in the rest services can allow you to do</p>
+      <p begin="00:33:49.340" end="00:33:50.750">...searches,</p>
+      <p begin="00:33:50.750" end="00:33:55.300">searches along a route within a polygon you can do even</p>
+      <p begin="00:33:55.300" end="00:34:00.180">...complex we went out and...for complex data types you can start, you know, doing intersection</p>
+      <p begin="00:34:00.180" end="00:34:02.660">...not now I've got all my boundaries from my sales</p>
+      <p begin="00:34:02.660" end="00:34:10.030">...show me all the boundaries that the user just...all the ones that intersect with that.</p>
+      <p begin="00:34:10.030" end="00:34:13.820">From there,...we have an all simple service inside of asher that we can then</p>
+      <p begin="00:34:13.820" end="00:34:18.390">...take that data and rendered as a tile and we have all that code available is a lot of partners</p>
+      <p begin="00:34:18.390" end="00:34:22.790">...solutions for that as well and the one nice thing to use also the cache</p>
+      <p begin="00:34:22.790" end="00:34:27.690">the data if it's not changing that frequently it is changing frequently...you can still get away</p>
+      <p begin="00:34:27.690" end="00:34:33.470">with...one-minute or five-minute cash and that can make a huge difference...of users so</p>
+      <p begin="00:34:33.470" end="00:34:37.980">...using something like the blobs verge is a great simple way to do that I</p>
+      <p begin="00:34:37.980" end="00:34:42.760">get the example be doing here's just using the local stored but we do have code sample that</p>
+      <p begin="00:34:42.760" end="00:34:48.660">you in blob storage and then finally take all that data we overlay that service over top the map</p>
+      <p begin="00:34:48.660" end="00:34:52.800">is a tile they're using that to lines of code I mentioned and we get a map that</p>
+      <p begin="00:34:52.800" end="00:34:54.860">looks something like that?</p>
+      <p begin="00:34:54.860" end="00:35:02.050">So, let's take a look at that.</p>
+      <p begin="00:35:02.050" end="00:35:07.120">So, ...can map so here's the project</p>
+      <p begin="00:35:07.120" end="00:35:11.790">that we put together this code samples part of white papers we have a way people who just put together that</p>
+      <p begin="00:35:11.790" end="00:35:17.120">goes step-by-step how to do this and a lot more and if we show how-to-do-it both</p>
+      <p begin="00:35:17.120" end="00:35:20.940">the sequel server and also the being spatial data services and using local cash and</p>
+      <p begin="00:35:20.940" end="00:35:25.260">measure cash and things like that so if we take a quick look at the</p>
+      <p begin="00:35:25.260" end="00:35:27.940">...the sequel server approach.</p>
+      <p begin="00:35:27.940" end="00:35:32.150">Or...we have to do is.</p>
+      <p begin="00:35:32.150" end="00:35:37.060">That's why we want to have the cash...it goes through and.</p>
+      <p begin="00:35:37.060" end="00:35:41.110">...zoom in a little bit here.</p>
+      <p begin="00:35:41.110" end="00:35:44.010">So, we go through here and we disclose down here we go through which,</p>
+      <p begin="00:35:44.010" end="00:35:48.210">you know, do a little bit math years we...use the...map style system?</p>
+      <p begin="00:35:48.210" end="00:35:50.300">The figure out what.</p>
+      <p begin="00:35:50.300" end="00:35:53.640">What how they actually requested may and figure out what data is</p>
+      <p begin="00:35:53.640" end="00:35:58.160">in that in that tiles we basically calculate the bounding box of that tile and say give me all the data</p>
+      <p begin="00:35:58.160" end="00:36:02.940">...that rebounding box and then we have a little tool here that allows us to</p>
+      <p begin="00:36:02.940" end="00:36:06.740">...all this data or a sql geometry or sequel spatial</p>
+      <p begin="00:36:06.740" end="00:36:13.450">type on image using a system that drawing scifi...school down here...take a quick</p>
+      <p begin="00:36:13.450" end="00:36:17.930">look at a polygon and we basically go through in the</p>
+      <p begin="00:36:17.930" end="00:36:23.140">we basically take create an array ofpoint...objects and pass it to the</p>
+      <p begin="00:36:23.140" end="00:36:29.410">...to a graphics path insistent drawing and rendered on top of an image so seeing that</p>
+      <p begin="00:36:29.410" end="00:36:29.910">inaction?</p>
+      <p begin="00:36:31.150" end="00:36:34.180">...the jump back over here so I've already loaded</p>
+      <p begin="00:36:34.180" end="00:36:39.700">it up so recently I was in the market for buying a new house I just moved</p>
+      <p begin="00:36:39.700" end="00:36:43.900">from the uk to the us and the one of the things I was interested</p>
+      <p begin="00:36:43.900" end="00:36:48.620">in doing was finding out okay were the property boundaries of these houses I'm looking at and</p>
+      <p begin="00:36:48.620" end="00:36:51.210">...this property boundary data is often called the</p>
+      <p begin="00:36:51.210" end="00:36:55.670">...off...known as partial data and there's a couple real-estate sites that</p>
+      <p begin="00:36:55.670" end="00:36:59.790">do show you that data but I found that the often limit the zoom level you can go to so</p>
+      <p begin="00:36:59.790" end="00:37:04.180">...I can see the property boundary of just that house but I can't really see the neighborhood that</p>
+      <p begin="00:37:04.180" end="00:37:08.620">well so this example here.</p>
+      <p begin="00:37:08.620" end="00:37:14.280">We're now strong all that data up in the spatial data services a big maps and then taken</p>
+      <p begin="00:37:14.280" end="00:37:19.140">that down rendering as a tile overlaying it on the map so I'll change the style your</p>
+      <p begin="00:37:19.140" end="00:37:24.490">...libby clear with the aerial imagery so now we have all these different polygons I can zoom around</p>
+      <p begin="00:37:24.490" end="00:37:28.190">...searching the neighborhood...all the property boundaries for everyone</p>
+      <p begin="00:37:28.190" end="00:37:32.140">in the area so this data said I have here's for king county</p>
+      <p begin="00:37:32.140" end="00:37:35.720">in washington it's about four hundred megabytes and size and</p>
+      <p begin="00:37:35.720" end="00:37:40.040">able to navigate or around it very easily...start zooming</p>
+      <p begin="00:37:40.040" end="00:37:44.480">on start seeing quite large areas of all the properties of course the further</p>
+      <p begin="00:37:44.480" end="00:37:49.300">you zoom out the harder it gets the see in some areas because these such a small areas or</p>
+      <p begin="00:37:49.300" end="00:38:01.400">small properties in some areas and as resume and we can start seeing more and more data.</p>
+      <p begin="00:38:01.400" end="00:38:04.430">They're going to go back to the...slide deck.</p>
+      <p begin="00:38:04.430" end="00:38:08.260">And, move on to our next topic.</p>
+      <p begin="00:38:08.260" end="00:38:13.010">Which is the using being maps and cross platform maps using html five</p>
+      <p begin="00:38:13.010" end="00:38:16.880">so when it comes using maps across platform a apps there's a lot of different</p>
+      <p begin="00:38:16.880" end="00:38:21.500">approaches the...a native dot net code in it's great for</p>
+      <p begin="00:38:21.500" end="00:38:26.620">good performance and if you need offline maps but, we're kind of limited at the moment</p>
+      <p begin="00:38:26.620" end="00:38:31.330">...platforms that's available to use we have offline maps available in windows store apps</p>
+      <p begin="00:38:31.330" end="00:38:36.330">in windows phone so, you know, you can do this for windows phone eight-point...have offline maps</p>
+      <p begin="00:38:36.330" end="00:38:41.660">...any windows ten apps of for phone in both the and pc?</p>
+      <p begin="00:38:41.660" end="00:38:45.030">What hybrid apps the using javascript html?</p>
+      <p begin="00:38:45.030" end="00:38:46.800">Is a nice appropriate</p>
+      <p begin="00:38:46.800" end="00:38:51.040">...target all the different mobile browsers out there you can target all the pc</p>
+      <p begin="00:38:51.040" end="00:38:56.330">browsers and pretty much any other device that can render a web page?</p>
+      <p begin="00:38:56.330" end="00:39:01.280">One down possible downside is if you're on a and oslo wireless connection it could be a little bit slow loading the data</p>
+      <p begin="00:39:01.280" end="00:39:06.500">because you can't store locally or you can't, you know, download the...the maps offline so you</p>
+      <p begin="00:39:06.500" end="00:39:11.010">gotta make all these request for the map images so that,... there's a tradeoff their for simplicity</p>
+      <p begin="00:39:11.010" end="00:39:15.010">for per performance but if you're just doing a single push pin on a map</p>
+      <p begin="00:39:15.010" end="00:39:18.310">it's pretty straightforward pretty easy to do.</p>
+      <p begin="00:39:18.310" end="00:39:21.560">One thing that a lot of people overlook is another approach is</p>
+      <p begin="00:39:21.560" end="00:39:25.650">actually use web services you may have a situation where you don't actually need an interactive</p>
+      <p begin="00:39:26.660" end="00:39:29.550">...you just need an image of a map or maybe want to do some kind of</p>
+      <p begin="00:39:29.550" end="00:39:33.780">...calculation so great examples core tom have you ever you set up</p>
+      <p begin="00:39:33.780" end="00:39:36.620">...set up a meeting you put in the location...for all</p>
+      <p begin="00:39:36.620" end="00:39:41.720">the office location that you can have it or the building and have your meeting and then, you know,</p>
+      <p begin="00:39:41.720" end="00:39:45.110">an hour before half-hour...tells you all need to start</p>
+      <p begin="00:39:45.110" end="00:39:49.710">...meeting now because a lot...current traffic conditions you get</p>
+      <p begin="00:39:49.710" end="00:39:55.040">...just make it and it shows you a little map with the road on it will all that's using being maps</p>
+      <p begin="00:39:55.040" end="00:39:58.590">...the back-end...you know, the image of the map of courses coming from</p>
+      <p begin="00:39:58.590" end="00:40:02.880">a or imagery service and it's just a static image but the calculation</p>
+      <p begin="00:40:02.880" end="00:40:06.900">of the travel time is just using a routing service so using something as simple as,</p>
+      <p begin="00:40:06.900" end="00:40:09.970">you know, calculate calculating direction from point a to point b</p>
+      <p begin="00:40:09.970" end="00:40:15.690">three do a simple calculation ahead of time and say okay well if...the at the meeting is, you know,</p>
+      <p begin="00:40:15.690" end="00:40:17.040">an hour away and</p>
+      <p begin="00:40:17.040" end="00:40:21.900">...usually so let's, you know, an hour and a half before duke routing calculation and see what</p>
+      <p begin="00:40:21.900" end="00:40:26.960">kind of time it is with current traffic conditions and then that tell the user ok at</p>
+      <p begin="00:40:26.960" end="00:40:31.280">...time to go now or hey you...another ten minutes...then you get start going and that's what</p>
+      <p begin="00:40:31.280" end="00:40:36.480">...is doing in the back and it's basically just using our existing services for doing that?</p>
+      <p begin="00:40:36.480" end="00:40:41.930">So, one thing...as I said before...to focus on that mainly html five</p>
+      <p begin="00:40:41.930" end="00:40:47.250">staff however if I highly recommend take a look at session seven-five seven which was the</p>
+      <p begin="00:40:47.250" end="00:40:52.640">ad the universal windows apps or maps in apps the session that was</p>
+      <p begin="00:40:52.640" end="00:40:56.490">a presented on wednesday and that's a great weighty</p>
+      <p begin="00:40:56.490" end="00:40:59.290">...get an introduction to the new maps and windows ten</p>
+      <p begin="00:40:59.290" end="00:41:05.400">and all the three-d capabilities that are in there and the offline maps as well.</p>
+      <p begin="00:41:05.400" end="00:41:09.990">hybrid apps...using html five javascript we heard a lot about that at the conference</p>
+      <p begin="00:41:09.990" end="00:41:15.080">this week and it has been around for quite a while and the general idea is you...once and use</p>
+      <p begin="00:41:15.080" end="00:41:19.790">it everywhere so there's a lot of different development...you can take to get</p>
+      <p begin="00:41:19.790" end="00:41:25.050">to that you know, to do this by...the hard-core core</p>
+      <p begin="00:41:25.050" end="00:41:29.940">will method would be do they create a mobile website and algal through and create an individual</p>
+      <p begin="00:41:29.940" end="00:41:35.090">apps for each platform that then ...the web browser control or the web</p>
+      <p begin="00:41:35.090" end="00:41:38.820">...control depending on the platform and just loads your web page or your map</p>
+      <p begin="00:41:38.820" end="00:41:44.040">up inside there that's a good approach if you already have an existing app that's already written for</p>
+      <p begin="00:41:44.040" end="00:41:48.580">an individual platform but if you're starting from scratch...you might be want to use, you know,</p>
+      <p begin="00:41:48.580" end="00:41:52.820">something like apache cordova which we seen a lot today especially with all the new functionality inside of</p>
+      <p begin="00:41:52.820" end="00:41:55.270">...studio twenty fifteen and it being built in there</p>
+      <p begin="00:41:55.270" end="00:41:59.660">and it makes it a lot easier but another approaches well if</p>
+      <p begin="00:41:59.660" end="00:42:04.840">you're creating examine based app you can easily use what's called the hybrid a web</p>
+      <p begin="00:42:04.840" end="00:42:10.420">view control which is available...get into the exact same thing that we seen here but with the other</p>
+      <p begin="00:42:10.420" end="00:42:14.040">two approaches to take your html five map in</p>
+      <p begin="00:42:14.040" end="00:42:18.930">...it very easily into your examine app that said for examine</p>
+      <p begin="00:42:18.930" end="00:42:24.310">the another interesting thing is a...a saddam one of the other...for maps and someone</p>
+      <p begin="00:42:24.310" end="00:42:28.740">...a little experiment and they actually created a wrapper on one of our native controls to actually work examined</p>
+      <p begin="00:42:28.740" end="00:42:34.900">as well so...a little bit more information on...will be sure to share that are blog couple tips when you do</p>
+      <p begin="00:42:34.900" end="00:42:38.900">used html five the javascript controls for a for being maps</p>
+      <p begin="00:42:38.900" end="00:42:42.750">...retiring cross platform it is that enable</p>
+      <p begin="00:42:42.750" end="00:42:47.720">high dpi of...inside the maps there's a one-line...say use</p>
+      <p begin="00:42:48.910" end="00:42:53.280">...high dpi maps that way...like a mobile screen which has hide</p>
+      <p begin="00:42:53.280" end="00:42:57.620">...ansi get the higher-quality maps that data that have bigger labels</p>
+      <p begin="00:42:57.620" end="00:43:03.440">are easier to read otherwise you end up with a small labels and you can't really assume that well the cool thing</p>
+      <p begin="00:43:03.440" end="00:43:04.480">about enabling that</p>
+      <p begin="00:43:04.480" end="00:43:09.490">is map control smart enough to know if it's not on a high pixel density screen and</p>
+      <p begin="00:43:09.490" end="00:43:14.540">...will go back to the standard maps so that way there if you are using</p>
+      <p begin="00:43:14.540" end="00:43:19.470">...desktop that or that doesn't have a high-density screen you...have end up</p>
+      <p begin="00:43:19.470" end="00:43:26.970">these massive labels on the map e it's all come back and is a relative experience?</p>
+      <p begin="00:43:26.970" end="00:43:32.110">Another useful tips so if you try to access an external...javascript file for</p>
+      <p begin="00:43:32.110" end="00:43:36.190">...that posted on the web the in a windows that, you know, when to store app or windows</p>
+      <p begin="00:43:36.190" end="00:43:41.030">...app you'll likely end up with some headaches with the security issues</p>
+      <p begin="00:43:41.030" end="00:43:45.730">...reason for that is the deal it's just part of the architecture windows a</p>
+      <p begin="00:43:45.730" end="00:43:50.210">...logic call-in external files very easily there's some work-arounds for that</p>
+      <p begin="00:43:50.210" end="00:43:54.550">...there's a very are very easy way to get around that would bing maps we have</p>
+      <p begin="00:43:54.550" end="00:43:59.440">an sdk for windows eight that works in javascript it's about ninety nine-point nine percent</p>
+      <p begin="00:43:59.440" end="00:44:04.580">identical to our web control there's only one difference in there and it's so minor</p>
+      <p begin="00:44:04.580" end="00:44:10.530">that I'm not even bother going into the to the explaining up so, if you actually install that into</p>
+      <p begin="00:44:12.370" end="00:44:16.630">yourapache could of app you can then simply just?</p>
+      <p begin="00:44:16.630" end="00:44:19.170">Update descriptive reference for when you goaded</p>
+      <p begin="00:44:19.170" end="00:44:24.340">...the employer windows store up and it'll use that local copy of</p>
+      <p begin="00:44:24.340" end="00:44:28.630">being maps now another great benefit of doing that is bringing that it's local</p>
+      <p begin="00:44:28.630" end="00:44:32.820">...end up in the byte code caching which means it's going to load a large fast because they...have to</p>
+      <p begin="00:44:32.820" end="00:44:36.200">...to web grab that map control.</p>
+      <p begin="00:44:36.200" end="00:44:41.000">So, simple, you know, architecture of how...apache could overlaps...with</p>
+      <p begin="00:44:41.000" end="00:44:44.910">...your...you know, you with your html javascript</p>
+      <p begin="00:44:44.910" end="00:44:48.560">somebody's port pushing bing maps and then in a loaded on the map.</p>
+      <p begin="00:44:49.720" end="00:44:54.700">Zimmer app a little bit different they these approaches mentioned earlier would use the hybrid a web</p>
+      <p begin="00:44:54.700" end="00:45:01.640">you control and then pass that into a csharp app inside examine?</p>
+      <p begin="00:45:01.640" end="00:45:05.580">So, you had the session I was talking about with the native wrapper around</p>
+      <p begin="00:45:05.580" end="00:45:10.080">...for examine was session sixty-seven so you might want to check that out as well</p>
+      <p begin="00:45:10.080" end="00:45:15.680">...contact the speaker deceiving get a copy of their code so let's take a look at the</p>
+      <p begin="00:45:16.810" end="00:45:21.930">...samples here and demos.</p>
+      <p begin="00:45:21.930" end="00:45:26.730">so, first they wanted to start off with is the...interactive sdk if</p>
+      <p begin="00:45:26.730" end="00:45:32.010">you're developing an app web using being maps and javascript this is a great place...start</p>
+      <p begin="00:45:32.010" end="00:45:36.880">so, if we go in here let's say we want to loaded...it gives us the code we need to load that</p>
+      <p begin="00:45:36.880" end="00:45:41.130">...that map...want to make a couple change...say we want to push pin</p>
+      <p begin="00:45:41.130" end="00:45:44.990">...at the default push pin and we see how easy it is to</p>
+      <p begin="00:45:44.990" end="00:45:48.000">...into the map so.</p>
+      <p begin="00:45:48.000" end="00:45:53.930">Let's go through in create a basic cordova app.</p>
+      <p begin="00:45:53.930" end="00:46:00.340">And, that's here.</p>
+      <p begin="00:46:00.340" end="00:46:06.950">And, whoa that's see that's your that's a good name.</p>
+      <p begin="00:46:06.950" end="00:46:10.050">So, as that loads up we're going to do here is that</p>
+      <p begin="00:46:10.050" end="00:46:15.090">find one that actually this push pin one looks good to express the view html</p>
+      <p begin="00:46:15.090" end="00:46:17.830">...it gives us all the html that makes up that</p>
+      <p begin="00:46:17.830" end="00:46:24.110">...that map view and we'll just copy and paste this over.</p>
+      <p begin="00:46:24.110" end="00:46:28.070">The to our app so let's close that</p>
+      <p begin="00:46:28.070" end="00:46:34.500">...just open up the index file.</p>
+      <p begin="00:46:34.500" end="00:46:41.750">Ariel...set the zero.</p>
+      <p begin="00:46:41.750" end="00:46:44.720">All right so now we've added...map that's very simple and, you know,</p>
+      <p begin="00:46:44.720" end="00:46:48.680">we get...is load up a map control and then add a pushed into it and actually</p>
+      <p begin="00:46:48.680" end="00:46:55.270">it's move get rid of this function years we don't have the press a button...now...that button.</p>
+      <p begin="00:46:55.270" end="00:46:58.550">And, then if we deploy that app...see</p>
+      <p begin="00:46:58.550" end="00:47:02.130">being maps inside the android emulator or.</p>
+      <p begin="00:47:03.230" end="00:47:07.480">...am using the emulator that's inside of it google chrome</p>
+      <p begin="00:47:07.480" end="00:47:14.440">several yet deploy to their to start seeing the map loaded up very easily.</p>
+      <p begin="00:47:14.440" end="00:47:17.880">...stigma bit longer so as that loads</p>
+      <p begin="00:47:17.880" end="00:47:22.460">and I'll talk about another echoed sample I have so while ago as the</p>
+      <p begin="00:47:22.460" end="00:47:25.160">...several years ago we had people want to</p>
+      <p begin="00:47:25.160" end="00:47:29.730">cost platform developing maps and the reason html five so I download the code samples we</p>
+      <p begin="00:47:29.730" end="00:47:33.850">...and on msdn and just for fun I tossed them into and apache could</p>
+      <p begin="00:47:33.850" end="00:47:39.190">...so we'll come back to the second...could overlap</p>
+      <p begin="00:47:39.190" end="00:47:43.390">and it just worked so this is the.</p>
+      <p begin="00:47:43.390" end="00:47:47.470">This one here is the demos this was an app that was created several years ago</p>
+      <p begin="00:47:47.470" end="00:47:51.500">didn't make any code changes simply just drop the code into and apache cordova app</p>
+      <p begin="00:47:51.500" end="00:47:55.240">...visual studios and now we have this map here that we can</p>
+      <p begin="00:47:55.240" end="00:48:06.010">zoom in has a bunch of different buns so we can...that's...some traffic on top of the map.</p>
+      <p begin="00:48:06.010" end="00:48:07.920">And, of course of the work...doing.</p>
+      <p begin="00:48:09.870" end="00:48:15.370">But, any case there's one there's all that and it's just...do any changes to its if...done</p>
+      <p begin="00:48:15.370" end="00:48:20.170">...now going back to the other demo that we're starting put together all right we got...</p>
+      <p begin="00:48:20.170" end="00:48:25.170">map the put canonical we see a couple issues here first one is we got this little message</p>
+      <p begin="00:48:25.170" end="00:48:31.130">crossed map saying that, you know, you have some issues with credential this...the other thing another issue we have is</p>
+      <p begin="00:48:31.130" end="00:48:35.890">you know, the map is pretty small we want to fill the whole screen and maybe that navigation</p>
+      <p begin="00:48:35.890" end="00:48:39.560">but we don't really need the zoom...only the panned on we just want to see the</p>
+      <p begin="00:48:39.560" end="00:48:43.450">...the at the drop down for changing the map view.</p>
+      <p begin="00:48:43.450" end="00:48:54.340">So, let's go back to our code sample here.</p>
+      <p begin="00:48:59.180" end="00:49:03.900">...so now we're back well that's the old one.</p>
+      <p begin="00:49:03.900" end="00:49:10.940">Let's close that.</p>
+      <p begin="00:49:10.940" end="00:49:18.980">That's a good of my back up here.</p>
+      <p begin="00:49:18.980" end="00:49:26.040">I jordan real to...the matter.</p>
+      <p begin="00:49:26.040" end="00:49:27.670">So, this one here now this is</p>
+      <p begin="00:49:27.670" end="00:49:36.680">basically the almost the same app I made a few key changes.</p>
+      <p begin="00:49:36.680" end="00:49:39.620">First changes...the very top.</p>
+      <p begin="00:49:39.620" end="00:49:43.940">And, what I've done is I've added the view port information that way there</p>
+      <p begin="00:49:43.940" end="00:49:47.430">that when I my am web apple take up the full-screen?</p>
+      <p begin="00:49:48.440" end="00:49:52.720">The next thing I've done is in of added my credentials to get rid of that error message across the screen and</p>
+      <p begin="00:49:52.720" end="00:49:57.390">...settings the first one is a enabled high dpi...set that...true that way there I get the</p>
+      <p begin="00:49:57.390" end="00:50:00.260">higher-resolution...the tiles when I'm using a high pixel</p>
+      <p begin="00:50:00.260" end="00:50:04.470">density screen of change the, you know, the navigation...the scale barley</p>
+      <p begin="00:50:04.470" end="00:50:09.340">we don't need the scale bar on the map because it takes up some room don't need the at the dashboard we only want</p>
+      <p begin="00:50:09.340" end="00:50:14.610">the little drop down and...a couple other different settings that I've changed as well.</p>
+      <p begin="00:50:14.610" end="00:50:16.460">We still end up just adding a simple put</p>
+      <p begin="00:50:16.460" end="00:50:21.310">...map one others the difference between this code on the other code is they got rid of all the style settings</p>
+      <p begin="00:50:21.310" end="00:50:45.660">to be automatic the full thing I...to a certain pixel size now we run that.</p>
+      <p begin="00:50:45.660" end="00:50:55.800">Actually get the latest version visual students little bit faster...this part.</p>
+      <p begin="00:50:55.800" end="00:51:00.450">What's up.</p>
+      <p begin="00:51:00.450" end="00:51:07.230">So, ...as loads up here a couple key things that...a couple cool things...checkout if you have</p>
+      <p begin="00:51:07.230" end="00:51:11.710">...check...the bing booth on this third-floor...rate kill that</p>
+      <p begin="00:51:11.710" end="00:51:17.730">in reload on the third-floor we've been there for the last couple of days</p>
+      <p begin="00:51:17.730" end="00:51:22.080">...a lot of people come by we want hear from you get your feedback</p>
+      <p begin="00:51:22.080" end="00:51:25.170">...cool thing to check out in if you go to bing listens</p>
+      <p begin="00:51:25.170" end="00:51:30.960">...user voice dot com you can that provide feedback on all of are different being products</p>
+      <p begin="00:51:30.960" end="00:51:34.950">...you know, bing maps or any of the other be maps api and we want</p>
+      <p begin="00:51:34.950" end="00:51:43.360">...what your ideas are what your features are what you'd love to have all right now why is this loading.</p>
+      <p begin="00:51:43.360" end="00:51:48.600">Now let's try this again.</p>
+      <p begin="00:52:08.180" end="00:52:11.170">...so now we got our map it takes up</p>
+      <p begin="00:52:11.170" end="00:52:14.150">the full-screen no more error message...</p>
+      <p begin="00:52:14.150" end="00:52:19.020">actually got rid of the drop down as well but we're going to go through we can pan zoom the map and</p>
+      <p begin="00:52:19.020" end="00:52:24.600">...looks very nice because I'm doing this on my laptop and art on actual device the it's not using the</p>
+      <p begin="00:52:24.600" end="00:52:29.480">hide that pixel density at...tiles because it doesn't need it for this screen but if I was</p>
+      <p begin="00:52:29.480" end="00:52:34.920">using mobile devices would change the tile sets to the labels are a little bit bigger.</p>
+      <p begin="00:52:34.920" end="00:52:37.050">The very simple.</p>
+      <p begin="00:52:37.050" end="00:52:39.850">To get started, you know, anyone can do this like.</p>
+      <p begin="00:52:39.850" end="00:52:42.440">The initial example I showed you had...for...</p>
+      <p begin="00:52:42.440" end="00:52:47.430">javascript one real main the...line of html.</p>
+      <p begin="00:52:47.430" end="00:52:49.550">But, you can do this yourself and get started</p>
+      <p begin="00:52:49.550" end="00:52:56.520">...today right so let's the back to the powerpoint here.</p>
+      <p begin="00:52:56.520" end="00:52:59.190">And, we...trivia question number three.</p>
+      <p begin="00:52:59.190" end="00:53:04.040">What-you online the microsoft tool to...to visualize your data on a map without having</p>
+      <p begin="00:53:04.040" end="00:53:05.920">...code and the ideas.</p>
+      <p begin="00:53:07.030" end="00:53:09.500">Re sp and attention to...</p>
+      <p begin="00:53:10.540" end="00:53:14.520">All right the microsoft our rbi public previous if you go to the...dot</p>
+      <p begin="00:53:14.520" end="00:53:19.650">...give that a tried either today or network next week and the easily</p>
+      <p begin="00:53:19.650" end="00:53:23.370">uploading visualize your data on top of a map.</p>
+      <p begin="00:53:23.370" end="00:53:27.480">So, now we get to the call of actions from the session here the first one of course</p>
+      <p begin="00:53:27.480" end="00:53:32.140">...rbi in try visualized media map...you but I often get</p>
+      <p begin="00:53:32.140" end="00:53:36.880">...situation...customers want to see their data on a map, you know, they don't need it to be a custom app</p>
+      <p begin="00:53:36.880" end="00:53:41.100">...one and see what it looks like...a great way to do that.</p>
+      <p begin="00:53:41.100" end="00:53:45.440">...use being maps in your apps a lot of different api...a lot of different tools so we can</p>
+      <p begin="00:53:45.440" end="00:53:51.740">...with that check out session seven-five seven as I said the learn more about the maps</p>
+      <p begin="00:53:51.740" end="00:53:55.930">and windows ten and you know, false on twitter area at bing</p>
+      <p begin="00:53:55.930" end="00:54:01.380">maps I what monitor that along with a number of the people on our team...you got any kind of feedback</p>
+      <p begin="00:54:01.380" end="00:54:06.330">...if you just love us...a tweet in a...love to hear from and also check out</p>
+      <p begin="00:54:06.330" end="00:54:10.370">...blogs that...dot com slash maps...go get to get stay</p>
+      <p begin="00:54:10.370" end="00:54:14.660">...on what's what's do with being maps...the make...announcements there.</p>
+      <p begin="00:54:14.660" end="00:54:19.860">Will be...to three blog posts a week and we also do a lot of technical blogs on</p>
+      <p begin="00:54:19.860" end="00:54:23.470">there as well so, you know, if you want to figure out how to do all this cross platform stuff with the</p>
+      <p begin="00:54:23.470" end="00:54:28.370">...over we have a couple blog post...there the same thing with the dynamic</p>
+      <p begin="00:54:28.370" end="00:54:33.100">tile...and actually everything I've shown here we have blog posts for but,</p>
+      <p begin="00:54:33.100" end="00:54:38.440">you can also use the comments...to get reach out to us we don't use the twitter you can also</p>
+      <p begin="00:54:38.440" end="00:54:42.080">use that reaches on the forums of use msdn for armor stack</p>
+      <p begin="00:54:42.080" end="00:54:46.880">overflow either go to the bing maps forms and msdn or tag your stack overflow</p>
+      <p begin="00:54:46.880" end="00:54:51.690">...that with bing maps are being dash maps and then we'll be sure to see it in</p>
+      <p begin="00:54:51.690" end="00:54:55.680">...help you out whether...a simple question or if you need</p>
+      <p begin="00:54:55.680" end="00:54:58.830">...the information about being maps or you know,</p>
+      <p begin="00:54:58.830" end="00:55:08.300">you...possibly want us to come and talk to your company more about what...maps can do?</p>
+      <p begin="00:55:08.300" end="00:55:12.680">...stop but that...thank you for attending the session please</p>
+      <p begin="00:55:12.680" end="00:55:18.130">deal go through your evaluations...the...</p>
+      <p begin="00:55:18.130" end="00:55:19.490">The thank you very much.</p>
+
+    </div>
+  </body>
+</tt>

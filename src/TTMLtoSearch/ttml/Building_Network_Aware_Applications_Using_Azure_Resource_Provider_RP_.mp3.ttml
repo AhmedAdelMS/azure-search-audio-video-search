@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.855</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:06.040" end="00:00:08.090">...microphone working yes.</p>
+      <p begin="00:00:08.090" end="00:00:11.920">So, how everybody I know the...big and audience not that big so if you guys</p>
+      <p begin="00:00:11.920" end="00:00:12.780">...come closer?</p>
+      <p begin="00:00:13.790" end="00:00:17.220">Organized...to...to see each other my name is</p>
+      <p begin="00:00:17.220" end="00:00:20.810">yusef here steven who going to give you a talk about</p>
+      <p begin="00:00:22.380" end="00:00:28.390">how to effectively manage the network to meet the needs of your application so as,</p>
+      <p begin="00:00:28.390" end="00:00:32.710">you know, we have introduce something called the measure resource make</p>
+      <p begin="00:00:32.710" end="00:00:35.290">...infrastructure for as</p>
+      <p begin="00:00:35.290" end="00:00:39.610">...which you can describe through templates what they</p>
+      <p begin="00:00:39.610" end="00:00:42.610">...are in terms of the resources and</p>
+      <p begin="00:00:42.610" end="00:00:49.370">hardware composed and in the system will...for you today's talk is about how you can</p>
+      <p begin="00:00:49.370" end="00:00:53.640">describe the needs of view of the apps with respect to network how</p>
+      <p begin="00:00:53.640" end="00:00:58.600">...should look like how structured and how you can change it either imperative re also</p>
+      <p begin="00:00:58.600" end="00:01:02.980">a template basically okay so I'll give you a bit of setup of</p>
+      <p begin="00:01:02.980" end="00:01:06.520">...the basic model what you can do for the network on the like and why with</p>
+      <p begin="00:01:06.520" end="00:01:10.610">...developer and then see will come up and show you</p>
+      <p begin="00:01:10.610" end="00:01:14.340">the object model the restful api is</p>
+      <p begin="00:01:14.340" end="00:01:25.380">...the dishonor in their csharp portion how...can actually use the model?</p>
+      <p begin="00:01:25.380" end="00:01:30.890">Reminder please do submit evaluation please?</p>
+      <p begin="00:01:30.890" end="00:01:35.260">So, quick agenda will not...on this much tell you a bit more why would</p>
+      <p begin="00:01:35.260" end="00:01:41.580">...a value proposition for you why would you...developer to be able to control the network.</p>
+      <p begin="00:01:41.580" end="00:01:45.750">Give you a very quick view what about arm which is a as</p>
+      <p begin="00:01:45.750" end="00:01:50.680">a resource manager the way you which you describe that you replication and the way</p>
+      <p begin="00:01:50.680" end="00:01:57.700">the system orchestrate...and effectively is lifecycle management.</p>
+      <p begin="00:01:57.700" end="00:02:00.490">We'll tell you...more about...specific topic</p>
+      <p begin="00:02:00.490" end="00:02:05.410">for today which is the network resource provider which is the resource manager</p>
+      <p begin="00:02:05.410" end="00:02:09.020">...api in question here then we're going to go</p>
+      <p begin="00:02:09.020" end="00:02:12.860">through hands-on api assure demos cheer code.</p>
+      <p begin="00:02:12.860" end="00:02:19.860">And, we're...in the...your questions as well.</p>
+      <p begin="00:02:19.860" end="00:02:22.630">So, why should you care I mean we're here</p>
+      <p begin="00:02:22.630" end="00:02:27.720">...build...the reason for this talk if you remember anything here we want to</p>
+      <p begin="00:02:27.720" end="00:02:33.340">empower developers to control their own destiny?</p>
+      <p begin="00:02:33.340" end="00:02:38.110">To write the code quickly and to configured environment for the code quickly.</p>
+      <p begin="00:02:38.110" end="00:02:42.190">This could be in a...cycle or even production.</p>
+      <p begin="00:02:42.190" end="00:02:47.810">So, as, you know,...alright what I services...develops model we</p>
+      <p begin="00:02:47.810" end="00:02:52.550">...we tested we deploy it we monitored and we</p>
+      <p begin="00:02:52.550" end="00:02:58.710">fix it...something goes wrong or repeat in effect, effect we are solve removing other folks who</p>
+      <p begin="00:02:58.710" end="00:03:01.590">lisa depend on...applications done.</p>
+      <p begin="00:03:01.590" end="00:03:03.380">We have tooling.</p>
+      <p begin="00:03:03.380" end="00:03:08.560">And, now we also have a way for you to define the network of your application in all</p>
+      <p begin="00:03:08.560" end="00:03:11.340">...days you meaning how be able to</p>
+      <p begin="00:03:11.340" end="00:03:15.220">...some code testament aside but if you want something real.</p>
+      <p begin="00:03:15.220" end="00:03:19.360">...talked to somebody get your network manage</p>
+      <p begin="00:03:19.360" end="00:03:23.130">the network configured load balance, you know, the story.</p>
+      <p begin="00:03:23.130" end="00:03:26.900">With this system now everything is virtual...everything's software</p>
+      <p begin="00:03:28.090" end="00:03:31.900">...not only can you write the...your application but you can also</p>
+      <p begin="00:03:31.900" end="00:03:40.460">configured the network to replications needs or...software basically.</p>
+      <p begin="00:03:40.460" end="00:03:46.230">Lesley I want to emphasize that the in the plumbing underneath the cover</p>
+      <p begin="00:03:46.230" end="00:03:50.970">...for networking which can be quite extensive you don't have to do or</p>
+      <p begin="00:03:50.970" end="00:03:53.440">know everything about.</p>
+      <p begin="00:03:53.440" end="00:03:56.840">You can write application with the...as you're</p>
+      <p begin="00:03:56.840" end="00:04:01.410">in a very simple network flat network what every virtual machine for every into</p>
+      <p begin="00:04:01.410" end="00:04:06.380">talk to each other very simple crichton application that requires...a simple</p>
+      <p begin="00:04:06.380" end="00:04:12.450">load balance or as you will see in the gory details of the model</p>
+      <p begin="00:04:12.450" end="00:04:17.140">...can go down to defining networks a subbed that's and tackles and some stuff</p>
+      <p begin="00:04:17.140" end="00:04:23.810">frankly you only need to for very sophisticated applications so again</p>
+      <p begin="00:04:23.810" end="00:04:27.550">splice spectrum here disappears eagle.</p>
+      <p begin="00:04:27.550" end="00:04:28.990">Enables you to have a</p>
+      <p begin="00:04:28.990" end="00:04:33.090">...the ops model where you are in control your destiny.</p>
+      <p begin="00:04:33.090" end="00:04:37.640">You can write the...quickly and you can deployed quickly and you can change it</p>
+      <p begin="00:04:37.640" end="00:04:41.820">and environment around quickly to effectively software.</p>
+      <p begin="00:04:41.820" end="00:04:45.070">No, hardware needed here and no...</p>
+      <p begin="00:04:46.150" end="00:04:51.650">Heavy expertise rookies needed to get your applications the done.</p>
+      <p begin="00:04:51.650" end="00:04:58.720">So, we have discussed before the agile resource manager.</p>
+      <p begin="00:04:58.720" end="00:05:03.650">At the highest level...the very top you have the service...api is...effectively</p>
+      <p begin="00:05:03.650" end="00:05:08.260">every resources manager has something called a resource provider</p>
+      <p begin="00:05:08.260" end="00:05:10.980">and entity that export a bunch of api is.</p>
+      <p begin="00:05:12.170" end="00:05:12.960">And, what's...</p>
+      <p begin="00:05:14.080" end="00:05:16.750">It could be an ip.</p>
+      <p begin="00:05:16.750" end="00:05:22.630">Address for your network could be load better in point it could be virtual machine.</p>
+      <p begin="00:05:22.630" end="00:05:25.470">Could be a storage table, for example, these...resources</p>
+      <p begin="00:05:26.750" end="00:05:31.010">...basically is a way to uniformly describe?</p>
+      <p begin="00:05:31.010" end="00:05:36.010">In through templates and imperative api is how you can compose application</p>
+      <p begin="00:05:36.010" end="00:05:39.880">opted resources how they relate to each other and how should they be deployed</p>
+      <p begin="00:05:39.880" end="00:05:45.570">cohesiveness does orchestration for you for your resources?</p>
+      <p begin="00:05:45.570" end="00:05:46.200">And, you</p>
+      <p begin="00:05:46.200" end="00:05:50.730">...effectively every resources badger the exports through</p>
+      <p begin="00:05:50.730" end="00:05:55.170">our through the same uniform fashion and the constituted</p>
+      <p begin="00:05:55.170" end="00:05:58.220">the for networking effectively apply...resource providers.</p>
+      <p begin="00:05:59.400" end="00:06:04.530">The restful api is the language bindings over them so forth.</p>
+      <p begin="00:06:04.530" end="00:06:07.260">So, the consistency is important and</p>
+      <p begin="00:06:07.260" end="00:06:11.990">the flexibility is very important and note gets to arm you'd</p>
+      <p begin="00:06:11.990" end="00:06:15.970">be will find templates we get a publish...</p>
+      <p begin="00:06:15.970" end="00:06:20.770">those templates a template described...the topology of the application or</p>
+      <p begin="00:06:20.770" end="00:06:26.590">...resources that you need to make the application to actually come to existence you can start with</p>
+      <p begin="00:06:26.590" end="00:06:29.680">an existing template modify to your needs</p>
+      <p begin="00:06:29.680" end="00:06:33.710">...me have some of the gory details that you can forget or</p>
+      <p begin="00:06:33.710" end="00:06:36.730">become modify...so within this</p>
+      <p begin="00:06:36.730" end="00:06:45.280">model we can also do the same now for once...of resources are the network resources.</p>
+      <p begin="00:06:45.280" end="00:06:49.840">One more thing...before...networking per say once you buy into</p>
+      <p begin="00:06:49.840" end="00:06:53.680">our model you get a bunch of benefits that accrue to all resources</p>
+      <p begin="00:06:53.680" end="00:06:58.270">...adj I mention the grouping function moments...so</p>
+      <p begin="00:06:58.270" end="00:07:03.220">you can manage collection of diverse resources basically has units.</p>
+      <p begin="00:07:03.220" end="00:07:07.890">...template with say this how the...other this how they should be configured when you</p>
+      <p begin="00:07:07.890" end="00:07:13.320">...one configured that one so forth so does a groupie function.</p>
+      <p begin="00:07:13.320" end="00:07:18.630">And, you end up with ecosystem interface the same architecture will apply both and...the public</p>
+      <p begin="00:07:18.630" end="00:07:24.680">klout and on premises as...and the other talks here in other forms</p>
+      <p begin="00:07:24.680" end="00:07:31.380">...show you how effective the same model the same concepts apply to interface.</p>
+      <p begin="00:07:31.380" end="00:07:36.190">You also have ...of we end up with features</p>
+      <p begin="00:07:36.190" end="00:07:38.110">...come in for all resource providers,</p>
+      <p begin="00:07:39.120" end="00:07:41.910">for example, are back broad-base x control what he can</p>
+      <p begin="00:07:41.910" end="00:07:46.440">dissed described for each resource who can do what do it who can</p>
+      <p begin="00:07:46.440" end="00:07:51.130">modify token just monitored so forth you get tagging resources we can</p>
+      <p begin="00:07:51.130" end="00:07:55.900">at attach tags to resource...that way?</p>
+      <p begin="00:07:55.900" end="00:08:00.170">And, of course has with other resources and as you can decide in which</p>
+      <p begin="00:08:00.170" end="00:08:03.530">...or location they have to live.</p>
+      <p begin="00:08:03.530" end="00:08:11.970">On the your...</p>
+      <p begin="00:08:11.970" end="00:08:16.680">They are really three core resource providers that are very close to each other and which showed object</p>
+      <p begin="00:08:16.680" end="00:08:21.190">modern how...to each other the second is a compute resource provider which</p>
+      <p begin="00:08:21.190" end="00:08:24.860">describes applications basically virtual machines so</p>
+      <p begin="00:08:24.860" end="00:08:29.780">forth distortions source provider...storage dependencies of the application and this</p>
+      <p begin="00:08:29.780" end="00:08:35.410">would now there is a network resource...which describes the network topology of your</p>
+      <p begin="00:08:35.410" end="00:08:39.240">application and things like load balancing in points</p>
+      <p begin="00:08:39.240" end="00:08:46.580">aac olsen subnet...as I mentioned more details and perhaps...beginning?</p>
+      <p begin="00:08:46.580" end="00:08:51.400">...they are the...between these and you can put them in a very much</p>
+      <p begin="00:08:51.400" end="00:08:57.870">...declarative model...these templates you see examples as what...</p>
+      <p begin="00:08:57.870" end="00:09:01.530">In addition to be able to describe them to our declarative model...template</p>
+      <p begin="00:09:01.530" end="00:09:06.460">you-can comparatively manipulator resources at the very bottom like</p>
+      <p begin="00:09:06.460" end="00:09:10.940">everything else and arm these are restful...api is the</p>
+      <p begin="00:09:10.940" end="00:09:15.610">...rest resources were restful...against them.</p>
+      <p begin="00:09:15.610" end="00:09:20.120">And, we have csharp bindings we have java bindings</p>
+      <p begin="00:09:20.120" end="00:09:27.990">we have our shows...which can manipulate this...guys.</p>
+      <p begin="00:09:27.990" end="00:09:29.230">Now I give you</p>
+      <p begin="00:09:29.230" end="00:09:34.070">...the high-level...resources are haiti page other so forth and how you can do it with</p>
+      <p begin="00:09:34.070" end="00:09:38.940">a network let's talk about this is one slide?</p>
+      <p begin="00:09:38.940" end="00:09:42.480">Very quick solve the what features you can do to</p>
+      <p begin="00:09:42.480" end="00:09:44.860">...network in asher.</p>
+      <p begin="00:09:44.860" end="00:09:49.960">And, this light predates the are model by the way so I tore the existence but simplistic</p>
+      <p begin="00:09:49.960" end="00:09:55.720">...apps live in virtual networks optima cloud somewhere.</p>
+      <p begin="00:09:55.720" end="00:09:59.910">You decide the location and a virtual network think of it...an envelope</p>
+      <p begin="00:09:59.910" end="00:10:02.220">...your app just talk and talk to each...</p>
+      <p begin="00:10:03.550" end="00:10:09.460">As...everybody else's is isolation boundary if you...if you want to into the</p>
+      <p begin="00:10:09.460" end="00:10:13.800">does session boundary you have to effectively have...ip addresses which can</p>
+      <p begin="00:10:13.800" end="00:10:19.930">goal and...inter the applications and those ip addresses can do also</p>
+      <p begin="00:10:19.930" end="00:10:25.950">thinks he can be load balanced you can put to access control list on them.</p>
+      <p begin="00:10:25.950" end="00:10:30.360">You can do global load balancing through dns</p>
+      <p begin="00:10:30.360" end="00:10:32.240">base system.</p>
+      <p begin="00:10:32.240" end="00:10:34.850">We...to the internet come through our infrastructure which or</p>
+      <p begin="00:10:34.850" end="00:10:40.490">...protection so forth so you have virtual network up in the cloud your app runs in</p>
+      <p begin="00:10:40.490" end="00:10:44.180">there and you can.</p>
+      <p begin="00:10:44.180" end="00:10:50.240">Preacher application through public ip addresses...sophisticates.</p>
+      <p begin="00:10:50.240" end="00:10:52.910">You can do a lot by the way within the virtual network</p>
+      <p begin="00:10:52.910" end="00:10:56.140">...can if you applications sophisticated that you</p>
+      <p begin="00:10:56.140" end="00:11:03.860">...subnet teeing or multiple...or frontier talk...can do so...between them.</p>
+      <p begin="00:11:03.860" end="00:11:10.180">the template...mentioning earlier the on-base templates can...topology in a declarative.</p>
+      <p begin="00:11:10.180" end="00:11:15.930">How can have a library of these so...you don't have to start from scratch?</p>
+      <p begin="00:11:15.930" end="00:11:20.440">In addition by the way you can connect to your this advance now if you can</p>
+      <p begin="00:11:20.440" end="00:11:25.340">connect your resource in the klout through backing connectivity either through</p>
+      <p begin="00:11:25.340" end="00:11:29.910">vp and services and...are services they are scenarios for that offer</p>
+      <p begin="00:11:29.910" end="00:11:32.880">truly advanced scenarios you can go through private connectivity.</p>
+      <p begin="00:11:34.190" end="00:11:36.870">Which you can use a service from...called express</p>
+      <p begin="00:11:36.870" end="00:11:41.910">...to connect your customers all premises the cloud that's a bit too much perhaps</p>
+      <p begin="00:11:41.910" end="00:11:46.660">for today but the point is everything behind me here can</p>
+      <p begin="00:11:46.660" end="00:11:49.110">be now manipulated through software?</p>
+      <p begin="00:11:50.160" end="00:11:56.050">Through, through the representation fc behind me here can be declared in a simple template where you</p>
+      <p begin="00:11:56.050" end="00:11:59.850">...have to worry about much of complexity all the way down</p>
+      <p begin="00:11:59.850" end="00:12:06.400">although down to declaring and managing subnet...details as well.</p>
+      <p begin="00:12:06.400" end="00:12:09.550">And, leslie...you basic templates to get to</p>
+      <p begin="00:12:09.550" end="00:12:13.920">oper running and then as you get more sophisticated applications that they can go</p>
+      <p begin="00:12:13.920" end="00:12:15.320">define more details.</p>
+      <p begin="00:12:17.520" end="00:12:21.390">So, the whole the rest of the talk is what api is what</p>
+      <p begin="00:12:21.390" end="00:12:24.950">formats to use to actually you</p>
+      <p begin="00:12:24.950" end="00:12:33.150">...distinct for the needs of your application.</p>
+      <p begin="00:12:33.150" end="00:12:39.080">So, using the network...provider which fits the basic our model.</p>
+      <p begin="00:12:39.080" end="00:12:41.920">You can wire application as</p>
+      <p begin="00:12:41.920" end="00:12:46.100">...the network to meet applications you can do things like,</p>
+      <p begin="00:12:46.100" end="00:12:50.990">for example, have simple bunch of e m running levine at?</p>
+      <p begin="00:12:50.990" end="00:12:53.760">Media with the public ip address that.</p>
+      <p begin="00:12:53.760" end="00:12:57.640">Already can say I whenever load balance or...virtual.</p>
+      <p begin="00:12:57.640" end="00:13:03.570">That balances through, through some policy a bunch of e m all down the all the way down to</p>
+      <p begin="00:13:03.570" end="00:13:07.800">heavy multitude applications what ankles so forth.</p>
+      <p begin="00:13:07.800" end="00:13:11.560">And, I keep...I mentioned all the properties have mentioned earlier</p>
+      <p begin="00:13:11.560" end="00:13:17.910">...being the declarative so forth applies to hit as well.</p>
+      <p begin="00:13:17.910" end="00:13:21.210">Ok, let's...some details now.</p>
+      <p begin="00:13:21.210" end="00:13:25.170">He's a basic object model and this is simplified version of it of the</p>
+      <p begin="00:13:25.170" end="00:13:29.790">objects resources if you are in our model here.</p>
+      <p begin="00:13:29.790" end="00:13:35.140">And, there are...relationship between the storage site</p>
+      <p begin="00:13:35.140" end="00:13:40.540">...but look at the to decipher a second the basic concept is</p>
+      <p begin="00:13:40.540" end="00:13:43.760">in the right-hand side you see the virtual network.</p>
+      <p begin="00:13:43.760" end="00:13:45.630">This is the resource in which are applications</p>
+      <p begin="00:13:45.630" end="00:13:49.150">on-base basically and you can have</p>
+      <p begin="00:13:49.150" end="00:13:51.320">...within.</p>
+      <p begin="00:13:51.320" end="00:13:53.510">The virtual network if you want to</p>
+      <p begin="00:13:53.510" end="00:13:58.230">...segmented depending replication needs.</p>
+      <p begin="00:13:58.230" end="00:14:02.940">If security's a very high priority within your applications set you can apply something called the...</p>
+      <p begin="00:14:02.940" end="00:14:07.800">security group and to show examples of this what you can apply policies</p>
+      <p begin="00:14:07.800" end="00:14:14.200">...submits tackles on the submits order ibm's even.</p>
+      <p begin="00:14:14.200" end="00:14:17.290">You can declare load balances which you</p>
+      <p begin="00:14:17.290" end="00:14:23.510">can have public ip addresses that are load balance among a bunch of lms.</p>
+      <p begin="00:14:23.510" end="00:14:27.380">And, you could go down even lower if you want to have the notional over network interface</p>
+      <p begin="00:14:28.690" end="00:14:34.800">...multiple them to privy m their scenarios like that this one...more details as one.</p>
+      <p begin="00:14:34.800" end="00:14:39.020">Okay,...come over...even will now go through next level</p>
+      <p begin="00:14:39.020" end="00:14:43.920">of detail here we'll talk about the object models in some detail and which would exactly as</p>
+      <p begin="00:14:43.920" end="00:14:56.960">...thank you?</p>
+      <p begin="00:14:56.960" end="00:15:03.370">So, unfortunate nobody laptops giveaway today but this it's very interesting so we</p>
+      <p begin="00:15:03.370" end="00:15:08.790">start working...the optimal reps and here is...model for</p>
+      <p begin="00:15:08.790" end="00:15:13.620">to new core or...within arm those of you are familiar with the</p>
+      <p begin="00:15:13.620" end="00:15:18.440">current service much interface for as your...no that we've got</p>
+      <p begin="00:15:18.440" end="00:15:23.890">to general flavors we have paths and we have ios and for paths if you want to create below</p>
+      <p begin="00:15:23.890" end="00:15:27.760">...for example,...you get automatically when you create a</p>
+      <p begin="00:15:27.760" end="00:15:31.530">pass cloud service you create the cloud service you get your</p>
+      <p begin="00:15:31.530" end="00:15:35.730">gm's you get your lower bouncer you get your public ip...package.</p>
+      <p begin="00:15:36.780" end="00:15:40.900">With ios there's a little bit more control you get your gm's you get</p>
+      <p begin="00:15:40.900" end="00:15:46.190">...groups and you get a cloud service still ...can specify that dns on the</p>
+      <p begin="00:15:46.190" end="00:15:51.220">cloud service what that doesn't really allowed to do very well is to</p>
+      <p begin="00:15:51.220" end="00:15:54.830">decompose that and only create what you want great.</p>
+      <p begin="00:15:54.830" end="00:15:56.900">So, with this with this new model</p>
+      <p begin="00:15:56.900" end="00:16:00.270">we decomposed all of these relationships into a</p>
+      <p begin="00:16:00.270" end="00:16:02.890">...modular framework so here</p>
+      <p begin="00:16:02.890" end="00:16:06.280">we're representing storage computer network also</p>
+      <p begin="00:16:06.280" end="00:16:10.670">...ecosystem not represented here are like websites the sequel</p>
+      <p begin="00:16:10.670" end="00:16:16.000">leisure a and various others in the growing ecosystem of resource providers all</p>
+      <p begin="00:16:16.000" end="00:16:19.020">which have interdependencies all of which are modular</p>
+      <p begin="00:16:19.020" end="00:16:23.560">all of which allow you to create the applications institutions where you want to create.</p>
+      <p begin="00:16:23.560" end="00:16:30.160">Which is also ...dimension...for to...submits and</p>
+      <p begin="00:16:30.160" end="00:16:39.860">...bouncers...likes as...the same...bones</p>
+      <p begin="00:16:39.860" end="00:16:45.210">...can be made internal by just having no public ip or</p>
+      <p begin="00:16:45.210" end="00:16:49.500">...becomes...external low-pass come to public low bouncer does no change to</p>
+      <p begin="00:16:49.500" end="00:16:52.390">lower bound to itself all of this is used on the</p>
+      <p begin="00:16:52.390" end="00:16:55.080">...front-end side of low bouncer so</p>
+      <p begin="00:16:55.080" end="00:17:00.210">...you're testing something then you have your application there you have your preempts ready</p>
+      <p begin="00:17:00.210" end="00:17:05.190">lower bound to running your validating internally and then you were to go live with it</p>
+      <p begin="00:17:05.190" end="00:17:10.940">...a public ip exposed the internet...some network security groups to as network</p>
+      <p begin="00:17:10.940" end="00:17:14.390">tackles accident access control lists and then you're going to</p>
+      <p begin="00:17:14.390" end="00:17:17.600">go course person hit that endpoint straight away so,</p>
+      <p begin="00:17:17.600" end="00:17:22.280">it doesn't require new deployment doesn't require any huge musc</p>
+      <p begin="00:17:22.280" end="00:17:25.560">...works scope on the compute</p>
+      <p begin="00:17:25.560" end="00:17:32.260">...this briefly the virtual machines they'll have a extensions so you</p>
+      <p begin="00:17:32.260" end="00:17:35.300">can have extensions...to create papon jeff and</p>
+      <p begin="00:17:35.300" end="00:17:38.350">...extensions so these were wrong when the</p>
+      <p begin="00:17:38.350" end="00:17:45.180">pm is created so it's not just about getting a...orf virtual</p>
+      <p begin="00:17:45.180" end="00:17:50.810">...with nothing on it you can complete your solutions you can have your deployments</p>
+      <p begin="00:17:50.810" end="00:17:52.910">...into your vm into new</p>
+      <p begin="00:17:52.910" end="00:17:57.420">...using papon chef so on to get</p>
+      <p begin="00:17:57.420" end="00:18:02.060">your application get to configure to build it so that you can model your</p>
+      <p begin="00:18:02.060" end="00:18:10.700">complete end-to-end application so...low-power here...we've taken some water?</p>
+      <p begin="00:18:10.700" end="00:18:12.770">Ok, so, in terms of mouth interfaces</p>
+      <p begin="00:18:13.980" end="00:18:19.920">d formation of everything we're doing here is to rest api all of your</p>
+      <p begin="00:18:19.920" end="00:18:21.980">...implement vest api</p>
+      <p begin="00:18:21.980" end="00:18:27.790">...use json for request responses rest semantics and,</p>
+      <p begin="00:18:27.790" end="00:18:31.120">everything else is built on top of that we have x</p>
+      <p begin="00:18:31.120" end="00:18:36.460">...we have our show that talk directly to diversity api</p>
+      <p begin="00:18:36.460" end="00:18:41.680">...essentially and then we have the adverse st case we've got no</p>
+      <p begin="00:18:41.680" end="00:18:46.580">gs dot net sdk job sdk others there's like as</p>
+      <p begin="00:18:46.580" end="00:18:50.680">your has a commitment to other communities such as.</p>
+      <p begin="00:18:50.680" end="00:18:55.360">Python will be and remember...them but...and...burp</p>
+      <p begin="00:18:55.360" end="00:18:59.740">...implementing the support for these new or</p>
+      <p begin="00:18:59.740" end="00:19:01.000">...in all of</p>
+      <p begin="00:19:01.000" end="00:19:09.100">this so it's going to be whichever way you want to manage we've got to cover.</p>
+      <p begin="00:19:09.100" end="00:19:09.790">Okay,</p>
+      <p begin="00:19:09.790" end="00:19:14.660">so, did...a...more detail of take one example</p>
+      <p begin="00:19:14.660" end="00:19:19.400">of one through a few examples of how we use</p>
+      <p begin="00:19:19.400" end="00:19:21.400">this rather than look at everything and try to</p>
+      <p begin="00:19:21.400" end="00:19:26.880">...to a very...level...discotheque...very deep?</p>
+      <p begin="00:19:26.880" end="00:19:29.560">So, what I'm looking at here is network</p>
+      <p begin="00:19:29.560" end="00:19:34.530">...groups as you mention in the last couple of slides network steered</p>
+      <p begin="00:19:34.530" end="00:19:37.730">group...software firewall allowing you to</p>
+      <p begin="00:19:37.730" end="00:19:41.550">configure articles the access control lists within your</p>
+      <p begin="00:19:41.550" end="00:19:45.920">virtual networks to allow or disallow traffic great?</p>
+      <p begin="00:19:45.920" end="00:19:49.810">The demonstrate group is de-couple from network security rules so you can</p>
+      <p begin="00:19:49.810" end="00:19:52.470">of individual rules to allow</p>
+      <p begin="00:19:52.470" end="00:19:55.870">...traffic point if any of you version firewall</p>
+      <p begin="00:19:55.870" end="00:20:00.680">...four-wheel you're used to describe interface withhaving policies</p>
+      <p begin="00:20:02.190" end="00:20:06.390">in applied in priority order to...allow or restrict</p>
+      <p begin="00:20:06.390" end="00:20:10.070">...which great the.</p>
+      <p begin="00:20:10.070" end="00:20:13.780">Properties of these...but...properties here for the</p>
+      <p begin="00:20:13.780" end="00:20:18.240">obscured rule are the ones you expect they are...going through this</p>
+      <p begin="00:20:18.240" end="00:20:23.900">...detail because you can be used...over and over again and I'm sure that...ordering.</p>
+      <p begin="00:20:23.900" end="00:20:28.330">So,...for rule our protocol tcp udp source</p>
+      <p begin="00:20:28.330" end="00:20:33.150">short-range destination port range...as a visit weepy is</p>
+      <p begin="00:20:33.150" end="00:20:38.290">that sh is that whatever address and destination prefix is</p>
+      <p begin="00:20:38.290" end="00:20:43.180">deacon specified source traffic destination traffic...for example,</p>
+      <p begin="00:20:43.180" end="00:20:45.940">you can black hole countries and say</p>
+      <p begin="00:20:45.940" end="00:20:50.900">dot to develop a or you can open up to individual people individual</p>
+      <p begin="00:20:50.900" end="00:20:54.690">...and say I want that person to be able to...to use my service on the</p>
+      <p begin="00:20:54.690" end="00:21:00.650">upward...our tonight priority is...sit in the rules</p>
+      <p begin="00:21:00.650" end="00:21:06.830">...and then direction is whether inbound or...</p>
+      <p begin="00:21:06.830" end="00:21:07.820">Now we have that.</p>
+      <p begin="00:21:08.940" end="00:21:12.100">So, looking at how we do this rest.</p>
+      <p begin="00:21:12.100" end="00:21:15.750">So, up here...</p>
+      <p begin="00:21:15.750" end="00:21:17.680">Let me zoom...</p>
+      <p begin="00:21:17.680" end="00:21:19.100">The thing that's.</p>
+      <p begin="00:21:19.100" end="00:21:22.800">Udp so...that top of this screen.</p>
+      <p begin="00:21:22.800" end="00:21:27.710">We have the method dogma port here with rest of this put</p>
+      <p begin="00:21:27.710" end="00:21:34.030">post we support...to...for each object it is item</p>
+      <p begin="00:21:34.030" end="00:21:36.380">...it can be overridden if you</p>
+      <p begin="00:21:36.380" end="00:21:40.950">wish by the use of header which is if match?</p>
+      <p begin="00:21:40.950" end="00:21:45.140">And, I thought works with the tags to allow you...use</p>
+      <p begin="00:21:45.140" end="00:21:48.970">it in either create or update...for.</p>
+      <p begin="00:21:50.030" end="00:21:52.300">Don't care it works neither?</p>
+      <p begin="00:21:52.300" end="00:21:56.320">So, look, at url we see that everything is stop-off.</p>
+      <p begin="00:21:57.350" end="00:22:00.840">Https management...dot com subscriptions</p>
+      <p begin="00:22:00.840" end="00:22:05.360">your so by the resource groups which we saw in the</p>
+      <p begin="00:22:05.360" end="00:22:11.760">...earlier these are containers that we used to manage resources within the our model.</p>
+      <p begin="00:22:11.760" end="00:22:15.290">And, then we have the namespaces which mix of</p>
+      <p begin="00:22:15.290" end="00:22:19.950">the network and then we talking about the next...groups.</p>
+      <p begin="00:22:19.950" end="00:22:23.420">Here and it was...name and then</p>
+      <p begin="00:22:23.420" end="00:22:27.860">diversion work of the...using right.</p>
+      <p begin="00:22:27.860" end="00:22:32.350">So, if we look at the request we see is...it's.</p>
+      <p begin="00:22:32.350" end="00:22:38.150">Simple...easy-to-understand there's a defined</p>
+      <p begin="00:22:38.150" end="00:22:41.110">schema for this so you can validated quite easily</p>
+      <p begin="00:22:41.110" end="00:22:45.420">the parameters are pretty much as you'd expect all down here of</p>
+      <p begin="00:22:45.420" end="00:22:50.510">...using their for allowing sh.</p>
+      <p begin="00:22:50.510" end="00:22:55.400">The...protocol...tcp udp port ranges</p>
+      <p begin="00:22:55.400" end="00:22:58.920">...destination port range because...document</p>
+      <p begin="00:22:58.920" end="00:23:06.430">inbound rule that means anybody from the internet commune deport is...but this rule.</p>
+      <p begin="00:23:06.430" end="00:23:09.910">And, then on the destinations...on response side</p>
+      <p begin="00:23:09.910" end="00:23:13.410">...back after we send...over...server.</p>
+      <p begin="00:23:13.410" end="00:23:16.870">We see a couple things one the...is known in the payload</p>
+      <p begin="00:23:16.870" end="00:23:20.690">of response because this object exists this object now has</p>
+      <p begin="00:23:20.690" end="00:23:25.680">a unique yuri and yuri is this will appear management</p>
+      <p begin="00:23:25.680" end="00:23:28.790">...calm blah-blah-blah until</p>
+      <p begin="00:23:29.930" end="00:23:33.300">...and...tag allows us to use to do</p>
+      <p begin="00:23:33.300" end="00:23:38.270">concurrent control convert access to this resource sowe want to update</p>
+      <p begin="00:23:38.270" end="00:23:44.590">...we specified...tag in the if match header and then we</p>
+      <p begin="00:23:44.590" end="00:23:52.070">if it doesn't matter exactly request fails so that symbiosis modifying the same resources same time.</p>
+      <p begin="00:23:52.070" end="00:23:56.330">And,...we have this dirigibles down here...</p>
+      <p begin="00:23:56.330" end="00:23:58.390">...the...rules...a</p>
+      <p begin="00:23:58.390" end="00:24:00.870">...collection of the...we created.</p>
+      <p begin="00:24:02.000" end="00:24:06.940">It's the exact same with specified with one addition which is the</p>
+      <p begin="00:24:06.940" end="00:24:14.070">...appear which is unique your...for this obscurity rule within the...</p>
+      <p begin="00:24:14.070" end="00:24:17.620">Also the bottom we have default security rules and this is</p>
+      <p begin="00:24:17.620" end="00:24:20.400">...mentioned because this wasn't</p>
+      <p begin="00:24:20.400" end="00:24:25.310">in the request this is added automatically as the default property of</p>
+      <p begin="00:24:25.310" end="00:24:30.010">...security rules about the security group is secure</p>
+      <p begin="00:24:30.010" end="00:24:34.900">by default so when you apply this your subnet when you apply to your network interface card</p>
+      <p begin="00:24:34.900" end="00:24:39.030">...prevents traffic coming in from the internet unless you explicitly</p>
+      <p begin="00:24:39.030" end="00:24:43.970">...so this goes to...any concerns you might have about having</p>
+      <p begin="00:24:43.970" end="00:24:48.010">...test environment creature security group apply to your subnet</p>
+      <p begin="00:24:48.010" end="00:24:54.640">your secure unless you open it up does not traffic getting in there.</p>
+      <p begin="00:24:54.640" end="00:24:57.170">...so, I'll.</p>
+      <p begin="00:24:57.170" end="00:24:58.410">Move the next one</p>
+      <p begin="00:24:58.410" end="00:25:02.550">...see the exact same thing but csharp.</p>
+      <p begin="00:25:02.550" end="00:25:07.940">And, here musing museum-an here I'm using the</p>
+      <p begin="00:25:09.350" end="00:25:14.070">I'm...I'm doing this here is that I'm getting a authentication token</p>
+      <p begin="00:25:14.070" end="00:25:20.330">I'm adding a token cloud credential down-and-out here's work it's interesting.</p>
+      <p begin="00:25:20.330" end="00:25:22.830">Microsoft as your dot network.</p>
+      <p begin="00:25:22.830" end="00:25:28.650">The...as your management of network dot resource provider client applied</p>
+      <p begin="00:25:30.180" end="00:25:31.810">Very long...</p>
+      <p begin="00:25:31.810" end="00:25:38.190">But, this is the dot sdk...can use to manage my.</p>
+      <p begin="00:25:38.190" end="00:25:42.450">...network resource...</p>
+      <p begin="00:25:43.570" end="00:25:45.570">...exactly added expect</p>
+      <p begin="00:25:45.570" end="00:25:49.610">...create a new security rule by itself and the adding</p>
+      <p begin="00:25:49.610" end="00:25:54.440">a twenty-fifth moment specify all the same properties all happy.</p>
+      <p begin="00:25:54.440" end="00:25:56.740">...then down here.</p>
+      <p begin="00:25:56.740" end="00:26:02.130">I create a new security group ...location here.</p>
+      <p begin="00:26:02.130" end="00:26:06.270">And, a new list of security...and,</p>
+      <p begin="00:26:06.270" end="00:26:09.230">district rule toward...does not security...</p>
+      <p begin="00:26:10.550" end="00:26:15.390">And, then I possible over to the entropy client and saying creek this erp</p>
+      <p begin="00:26:15.390" end="00:26:22.650">data or whatever and it was...that as...take for my operation.</p>
+      <p begin="00:26:22.650" end="00:26:28.150">So, I think this the dev here is resource group description wonder</p>
+      <p begin="00:26:28.150" end="00:26:34.730">...sg is the name of the and...security rules I want to create.</p>
+      <p begin="00:26:34.730" end="00:26:38.250">...or update.</p>
+      <p begin="00:26:38.250" end="00:26:45.510">And, no, current the next one we see partial is actually think I'm not good well in</p>
+      <p begin="00:26:45.510" end="00:26:47.530">...example but now so,</p>
+      <p begin="00:26:47.530" end="00:26:56.070">over...this side we have museum-an excuse me.</p>
+      <p begin="00:26:56.070" end="00:26:58.460">Ok, over this...have a partial</p>
+      <p begin="00:26:58.460" end="00:27:04.820">...great new measure network security will conflict we have all the same farms we have</p>
+      <p begin="00:27:04.820" end="00:27:09.190">...there and what is creating an object in memory here is does not I should persist can</p>
+      <p begin="00:27:09.190" end="00:27:11.840">you can to the to serbia?</p>
+      <p begin="00:27:11.840" end="00:27:18.270">And, then underneath we have...network security group.</p>
+      <p begin="00:27:18.270" end="00:27:22.850">Specified resource group namely...in location and then pass in this</p>
+      <p begin="00:27:22.850" end="00:27:30.190">object as a ...say...group have these rules.</p>
+      <p begin="00:27:30.190" end="00:27:36.840">...the output side which is kind of interesting.</p>
+      <p begin="00:27:36.840" end="00:27:41.220">Ok, the name of the network...group creative great the location</p>
+      <p begin="00:27:41.220" end="00:27:45.140">...unique identifier this is the big long management</p>
+      <p begin="00:27:45.140" end="00:27:49.000">...so on this can be used in for the rotates</p>
+      <p begin="00:27:49.000" end="00:27:53.470">...in the dependencies laptop will about them later</p>
+      <p begin="00:27:53.470" end="00:28:00.080">each tags and schedules and here we notice that this is jason.</p>
+      <p begin="00:28:00.080" end="00:28:04.890">So, other saying earlier everything about the interfaces you're going to use to</p>
+      <p begin="00:28:04.890" end="00:28:10.030">talk to arm is about rest ...you can talk you can do with</p>
+      <p begin="00:28:10.030" end="00:28:18.190">...can do with ...case underneath the organ translate over to json.</p>
+      <p begin="00:28:18.190" end="00:28:20.910">Okay, and, then at the end</p>
+      <p begin="00:28:20.910" end="00:28:25.670">receivable of references their this dimension the default security rules mention that network</p>
+      <p begin="00:28:25.670" end="00:28:30.190">interface and submits these are any network interfaces...so that's the</p>
+      <p begin="00:28:30.190" end="00:28:44.540">...to use this particular group and we have not yet sort of like.</p>
+      <p begin="00:28:44.540" end="00:28:48.530">Versed operations...are supported again just using this example.</p>
+      <p begin="00:28:48.530" end="00:28:49.440">For network,</p>
+      <p begin="00:28:49.440" end="00:28:54.310">network security groups we support creating rotating throughput.</p>
+      <p begin="00:28:54.310" end="00:28:57.600">...getting through get obviously listings work as</p>
+      <p begin="00:28:57.600" end="00:29:00.630">...and then deleting through delete</p>
+      <p begin="00:29:00.630" end="00:29:06.960">the relative urls these all relative to the management of measure...</p>
+      <p begin="00:29:06.960" end="00:29:11.660">these are for...we leave a blank slate we put...and</p>
+      <p begin="00:29:11.660" end="00:29:18.060">...name into the ...were posting to for putting to...and for</p>
+      <p begin="00:29:18.060" end="00:29:23.050">...the same thing for listing reliever blank we just get all that security</p>
+      <p begin="00:29:23.050" end="00:29:28.300">represent...we can filter and...of contour or get that collection and,</p>
+      <p begin="00:29:28.300" end="00:29:33.030">then deleting as...as well predictably then jason request response for</p>
+      <p begin="00:29:33.030" end="00:29:37.910">...we don't...anything forgetting or listing is only</p>
+      <p begin="00:29:37.910" end="00:29:43.650">...and then we get...response ...at least we have no</p>
+      <p begin="00:29:43.650" end="00:29:48.460">...looking...in the body and then we got status...like two hundred four hundred</p>
+      <p begin="00:29:48.460" end="00:29:54.000">four depending...whether the object plus deleted or what are the object</p>
+      <p begin="00:29:54.000" end="00:29:58.570">was that can be found didn't exist in...</p>
+      <p begin="00:29:58.570" end="00:30:03.780">And, then just briefly touch on this which is that the bottom of the table here</p>
+      <p begin="00:30:03.780" end="00:30:08.290">...groups is an object or resource that contains network security</p>
+      <p begin="00:30:08.290" end="00:30:11.400">rules so how about semantic works with</p>
+      <p begin="00:30:11.400" end="00:30:17.290">in the arm framework is that when using these verbs.</p>
+      <p begin="00:30:17.290" end="00:30:22.930">To access charles resources essentially then we just append the name of charger</p>
+      <p begin="00:30:22.930" end="00:30:28.350">title charles security rules...to create or update get.</p>
+      <p begin="00:30:28.350" end="00:30:31.010">Or listthat gives all obscured</p>
+      <p begin="00:30:31.010" end="00:30:36.890">...we have configured for this network security ...</p>
+      <p begin="00:30:36.890" end="00:30:44.730">that's...so predictable what...completeness make sure us there.</p>
+      <p begin="00:30:44.730" end="00:30:49.490">Okay, so.</p>
+      <p begin="00:30:49.490" end="00:30:56.510">A number of items are provided ...wide as use...for.</p>
+      <p begin="00:30:56.510" end="00:31:00.640">...resource porters...better arm one of the things that's implemented</p>
+      <p begin="00:31:02.230" end="00:31:07.170">...so this is an example of how we can use this</p>
+      <p begin="00:31:07.170" end="00:31:11.010">feature that's...to get audit logs from</p>
+      <p begin="00:31:12.160" end="00:31:15.470">a particular scope and scope we have here is a network</p>
+      <p begin="00:31:15.470" end="00:31:18.810">security group so then we go off and say well</p>
+      <p begin="00:31:18.810" end="00:31:24.250">who's modify this security group who's...leader to use whatever and,</p>
+      <p begin="00:31:24.250" end="00:31:28.890">this allows them to get the detail similar functionality is</p>
+      <p begin="00:31:28.890" end="00:31:32.950">there for back attacking as well...the same</p>
+      <p begin="00:31:32.950" end="00:31:38.570">are provided structure we can specify that we have.</p>
+      <p begin="00:31:38.570" end="00:31:41.610">...back is we can specify that certain user</p>
+      <p begin="00:31:41.610" end="00:31:45.710">groups have access to certain resources for certain paths.</p>
+      <p begin="00:31:45.710" end="00:31:49.040">Uncertain...dot so that if you wanted to</p>
+      <p begin="00:31:51.070" end="00:32:00.260">...yourself make sure nobody else messed with it or whatever then or back is way to</p>
+      <p begin="00:32:00.260" end="00:32:06.610">templates template...do we just right now so please...zoom into little bits in</p>
+      <p begin="00:32:06.610" end="00:32:11.460">a second templates are realism templates are allow you</p>
+      <p begin="00:32:11.460" end="00:32:16.450">to specify multiple resources in one file with dependencies</p>
+      <p begin="00:32:16.450" end="00:32:21.080">which support for parameters which support for variables</p>
+      <p begin="00:32:21.080" end="00:32:26.270">which support for looping within the...so, for example,</p>
+      <p begin="00:32:26.270" end="00:32:31.300">you can have one temple file which was a totally but, the...one</p>
+      <p begin="00:32:31.300" end="00:32:38.090">...file that will have your virtual network your submits...group all the</p>
+      <p begin="00:32:38.090" end="00:32:41.460">things talked about plus...bouncer svm.</p>
+      <p begin="00:32:43.060" end="00:32:46.190">Virtual machine extensions that would deploy replication</p>
+      <p begin="00:32:46.190" end="00:32:50.960">injure ibm's and also.</p>
+      <p begin="00:32:50.960" end="00:32:56.310">Public ip to expose that ...bouncer to the public and how all the</p>
+      <p begin="00:32:56.310" end="00:33:00.440">...between them and all dependencies that-you might have between</p>
+      <p begin="00:33:00.440" end="00:33:03.730">...website and them as well?</p>
+      <p begin="00:33:03.730" end="00:33:09.510">So, the critical things to look at here.</p>
+      <p begin="00:33:09.510" end="00:33:12.860">That is what is jason point define schema.</p>
+      <p begin="00:33:14.180" end="00:33:17.910">Then we have parameters variables and resources parameters</p>
+      <p begin="00:33:17.910" end="00:33:22.600">are user provided we have support for the...we support for</p>
+      <p begin="00:33:22.600" end="00:33:29.020">input masking in terms of rejects so on native types as well.</p>
+      <p begin="00:33:29.020" end="00:33:34.490">...resources, resources are as you said collection of.</p>
+      <p begin="00:33:34.490" end="00:33:37.850">Resources from across to resource voters not to talk...networking</p>
+      <p begin="00:33:39.590" end="00:33:43.990">the other interesting things we have...here to have any yes here's what we</p>
+      <p begin="00:33:43.990" end="00:33:48.910">see depends on that's interesting so we have a network interface</p>
+      <p begin="00:33:48.910" end="00:33:54.580">we're saying well this depends on the virtual network so...network.</p>
+      <p begin="00:33:54.580" end="00:33:59.070">Therefore conceptually must be created before grated for network within the</p>
+      <p begin="00:33:59.070" end="00:34:03.530">virtual network these are...arm...so</p>
+      <p begin="00:34:03.530" end="00:34:10.659">it can deconstruct...template into a dependency...and then.</p>
+      <p begin="00:34:10.659" end="00:34:15.639">...those requests to various resource providers to make sure that</p>
+      <p begin="00:34:15.639" end="00:34:20.319">...don't get ahead of ourselves and try to instantiate something we can't just entry yet because the</p>
+      <p begin="00:34:20.319" end="00:34:25.219">parent doesn't exist or depends...exist and suited to maximize efficiency so we</p>
+      <p begin="00:34:25.219" end="00:34:29.139">...maximum throughput minimum timex student...</p>
+      <p begin="00:34:29.139" end="00:34:34.699">and all the parallelization...but the arm level as opposed to you</p>
+      <p begin="00:34:34.699" end="00:34:41.310">...to figure out what's the best most often way to do-it-yourself which is...</p>
+      <p begin="00:34:41.310" end="00:34:42.950">Okay, so.</p>
+      <p begin="00:34:44.070" end="00:34:46.180">We have lots of things that are...spend too much time</p>
+      <p begin="00:34:46.180" end="00:34:51.120">...this because we're going to go through a bigger example in a second but just</p>
+      <p begin="00:34:51.120" end="00:34:55.280">to call your attention down on the partial to use this template is</p>
+      <p begin="00:34:55.280" end="00:34:58.620">...do we have partial</p>
+      <p begin="00:34:58.620" end="00:35:04.080">...resource group we also have support to do...an expert so on and,</p>
+      <p begin="00:35:04.080" end="00:35:07.270">specified name typify we want to use.</p>
+      <p begin="00:35:07.270" end="00:35:15.130">What reading want to depose into...then the name parameters that we want to</p>
+      <p begin="00:35:15.130" end="00:35:18.930">...dimension one quick thing and that is.</p>
+      <p begin="00:35:18.930" end="00:35:24.310">How you create amplifies...to one template for here and it's got...</p>
+      <p begin="00:35:24.310" end="00:35:29.740">to networks and submits and security groups...virtual things and?</p>
+      <p begin="00:35:29.740" end="00:35:34.650">That might be find might be to purposes fine both you might want to separate out and</p>
+      <p begin="00:35:34.650" end="00:35:36.290">...want to keep</p>
+      <p begin="00:35:36.290" end="00:35:42.770">...my dmv...one template I...to have might back-end a separate...so,</p>
+      <p begin="00:35:42.770" end="00:35:49.240">you don't have like a single files that are really big...very difficult to see what's going on and,</p>
+      <p begin="00:35:49.240" end="00:35:53.900">you can put all of them the same resource group you can then manage those particular</p>
+      <p begin="00:35:53.900" end="00:35:59.000">layers of...us as atomic...by...updating</p>
+      <p begin="00:35:59.000" end="00:36:03.730">...readability applying to template and then the goes tickets reset</p>
+      <p begin="00:36:03.730" end="00:36:08.040">...for of resources contained within...template but,</p>
+      <p begin="00:36:08.040" end="00:36:12.610">if you specify something in a template.</p>
+      <p begin="00:36:12.610" end="00:36:13.570">Sometime later you</p>
+      <p begin="00:36:13.570" end="00:36:17.960">removed from the template doesn't get over it it's still there.</p>
+      <p begin="00:36:17.960" end="00:36:22.930">So, it tempt doesn't precept the whole thing...we set the whole</p>
+      <p begin="00:36:22.930" end="00:36:24.550">...only reset what knows about what</p>
+      <p begin="00:36:24.550" end="00:36:29.370">you specifying template so-if you you're not going to accidentally wipe out</p>
+      <p begin="00:36:29.370" end="00:36:37.460">...resources by applying a template to resource group.</p>
+      <p begin="00:36:37.460" end="00:36:38.630">Okay,I think</p>
+      <p begin="00:36:38.630" end="00:36:58.390">...pretty talked enough about the powerpoint so that's a look at thissome of the connection.</p>
+      <p begin="00:36:58.390" end="00:36:58.950">...better.</p>
+      <p begin="00:37:00.430" end="00:37:06.080">So, switching over so you can see...doing...</p>
+      <p begin="00:37:06.080" end="00:37:09.550">...so, here we have a template.</p>
+      <p begin="00:37:09.550" end="00:37:13.210">So, we have...same construction result second ago</p>
+      <p begin="00:37:13.210" end="00:37:23.120">we have parameters variables resources...by the way is to small...okay.</p>
+      <p begin="00:37:23.120" end="00:37:26.590">And, we have types we have names locations we</p>
+      <p begin="00:37:26.590" end="00:37:28.990">...so indus</p>
+      <p begin="00:37:28.990" end="00:37:33.810">...I'm trying to create a virtual network</p>
+      <p begin="00:37:33.810" end="00:37:39.490">that security group submits ...bouncer couple of e m</p>
+      <p begin="00:37:39.490" end="00:37:44.600">...public ip underflow bouncer some of the</p>
+      <p begin="00:37:44.600" end="00:37:50.020">...some interesting things on the network level down...the end.</p>
+      <p begin="00:37:50.020" end="00:37:54.940">So, look, at expend that the...bouncer...here.</p>
+      <p begin="00:37:54.940" end="00:37:57.150">We see a lot of things here for low bouncers</p>
+      <p begin="00:37:57.150" end="00:38:02.810">we see front-end ip can fix we see back-end address pools...the</p>
+      <p begin="00:38:02.810" end="00:38:07.200">...blow bouncing rules probes and in by not rules so this really very configured</p>
+      <p begin="00:38:07.200" end="00:38:14.810">...bouncer that allows us to control the traffic as it goes through ...back-end</p>
+      <p begin="00:38:14.810" end="00:38:19.260">an interesting thing as well is this...rules.</p>
+      <p begin="00:38:19.260" end="00:38:24.130">This allows you to specify tunnels basically through your.</p>
+      <p begin="00:38:24.130" end="00:38:29.640">Low bouncer using pork address translation to have</p>
+      <p begin="00:38:29.640" end="00:38:37.640">...outside pork that thing...here, for example, apes uses in</p>
+      <p begin="00:38:37.640" end="00:38:43.280">...to for traffic ...dp three nine into a particular</p>
+      <p begin="00:38:43.280" end="00:38:47.980">...back-end all the ways of doing the same thing will be to have a</p>
+      <p begin="00:38:47.980" end="00:38:51.860">virtual network...vp end on your virtual network so that you can</p>
+      <p begin="00:38:51.860" end="00:38:57.680">access everything privately or having a public ip directly on your via</p>
+      <p begin="00:38:57.680" end="00:39:04.430">...don't have to do...that...the...bouncer?</p>
+      <p begin="00:39:04.430" end="00:39:09.390">one other thing dented...attention to here is dependencies so this</p>
+      <p begin="00:39:09.390" end="00:39:16.280">low bouncers dependent virtual network that's also depend on photocopy.</p>
+      <p begin="00:39:16.280" end="00:39:20.060">Okay, so, what I want to do here we have</p>
+      <p begin="00:39:20.060" end="00:39:27.670">a template so that's just have look and see if we can get deployed?</p>
+      <p begin="00:39:27.670" end="00:39:31.180">Excuse me okay.</p>
+      <p begin="00:39:31.180" end="00:39:33.020">So, here I have.</p>
+      <p begin="00:39:34.080" end="00:39:37.010">A our shell.</p>
+      <p begin="00:39:37.010" end="00:39:41.040">The most make sure that just doesn't exist fine.</p>
+      <p begin="00:39:41.040" end="00:39:45.710">And, I have all the parameters required to ruled this.</p>
+      <p begin="00:39:45.710" end="00:39:46.880">Template</p>
+      <p begin="00:39:46.880" end="00:39:53.790">unscripted password for the p it's random and,</p>
+      <p begin="00:39:53.790" end="00:39:58.590">then specifying the resource group name I want to use...is sample out dev</p>
+      <p begin="00:39:58.590" end="00:40:03.910">...follow want use as well...description idname prefix of this</p>
+      <p begin="00:40:03.910" end="00:40:09.150">from this to make sure that...have to repeat the same thing over and over again using variables in the</p>
+      <p begin="00:40:09.150" end="00:40:13.470">...to than...the names of all the resource I want to use so that</p>
+      <p begin="00:40:13.470" end="00:40:19.730">...all prefix...us hyphen dev hyphen bm...for example.</p>
+      <p begin="00:40:19.730" end="00:40:26.660">And, storage count name...pretty...be stored...the public ip address</p>
+      <p begin="00:40:26.660" end="00:40:33.230">name...interesting we look at...second and then the have been...password that...</p>
+      <p begin="00:40:33.230" end="00:40:38.620">So, where is my course about machine?</p>
+      <p begin="00:40:38.620" end="00:40:53.200">Ok, so, let's just run this see what happens.</p>
+      <p begin="00:40:53.200" end="00:40:55.570">But, you so.</p>
+      <p begin="00:40:55.570" end="00:40:59.840">Here we see vested create this application</p>
+      <p begin="00:40:59.840" end="00:41:04.630">...excepted template sense valid great ones do now is it's breaking down</p>
+      <p begin="00:41:04.630" end="00:41:09.130">...for the resources...is figure</p>
+      <p begin="00:41:09.130" end="00:41:14.560">...best way to do this is then going to go off to...or...as</p>
+      <p begin="00:41:14.560" end="00:41:18.880">...with as much parallelization as a can so that it's not just about well,</p>
+      <p begin="00:41:18.880" end="00:41:23.240">these are network these compute these storage and encoding this and this and parallel</p>
+      <p begin="00:41:23.240" end="00:41:27.620">saying well okay look at to the answer I would call that in parallel</p>
+      <p begin="00:41:27.620" end="00:41:32.400">...the compute resource provider twice and parallels to create my to</p>
+      <p begin="00:41:32.400" end="00:41:35.780">...in parallel instead of having to do...then</p>
+      <p begin="00:41:35.780" end="00:41:41.790">...the other one so on which could quickly and easily get very onerous and the point of view</p>
+      <p begin="00:41:41.790" end="00:41:45.090">...environment so that's all running</p>
+      <p begin="00:41:45.090" end="00:41:49.590">...seeing a lot of success here all these things are fine.</p>
+      <p begin="00:41:49.590" end="00:41:51.820">...there.</p>
+      <p begin="00:41:51.820" end="00:41:57.880">Now I want to switch over...before go-there believe this...</p>
+      <p begin="00:41:57.880" end="00:42:04.950">And, switch back to top again switch back to the...</p>
+      <p begin="00:42:04.950" end="00:42:09.290">Templates are great the reactor...both</p>
+      <p begin="00:42:09.290" end="00:42:17.980">to love text and, a lot of different resources on different schemas so on.</p>
+      <p begin="00:42:17.980" end="00:42:20.870">This could be...problem but from...challenge from the</p>
+      <p begin="00:42:20.870" end="00:42:24.960">point managing point of view been creating these initially and,</p>
+      <p begin="00:42:24.960" end="00:42:28.630">then the editing as you go up.</p>
+      <p begin="00:42:28.630" end="00:42:30.690">We already saw the our</p>
+      <p begin="00:42:30.690" end="00:42:35.120">...response was...and we'll see</p>
+      <p begin="00:42:35.120" end="00:42:39.550">later that the objects are jason as well everything</p>
+      <p begin="00:42:39.550" end="00:42:43.250">...so there's nothing to stop you going in creating</p>
+      <p begin="00:42:43.250" end="00:42:50.440">your objects using a...partial or.</p>
+      <p begin="00:42:50.440" end="00:42:55.070">Or done sdk and then using the...you get back in those</p>
+      <p begin="00:42:55.070" end="00:43:04.630">questions to create...a different way.</p>
+      <p begin="00:43:04.630" end="00:43:15.150">...is to use can templates we've created...</p>
+      <p begin="00:43:15.150" end="00:43:20.080">Thanks-giving is template canned tempest we've created this command</p>
+      <p begin="00:43:20.080" end="00:43:22.570">will go to...</p>
+      <p begin="00:43:22.570" end="00:43:27.180">The as your resource manager template library and will list out the</p>
+      <p begin="00:43:27.180" end="00:43:32.050">...we've created in this library that you can use and they range from</p>
+      <p begin="00:43:32.050" end="00:43:38.000">sequel leisure to processing their websites networking</p>
+      <p begin="00:43:38.000" end="00:43:40.900">and very sort of things to give you a headstart into</p>
+      <p begin="00:43:42.240" end="00:43:47.900">...applications to...you what creative?</p>
+      <p begin="00:43:47.900" end="00:43:52.790">And, let me just to open...one of these...action.</p>
+      <p begin="00:43:52.790" end="00:43:57.730">Excuse me...</p>
+      <p begin="00:43:57.730" end="00:44:08.650">This will just take one second apologies.</p>
+      <p begin="00:44:08.650" end="00:44:13.570">Okay,...first commando...executed there is to switch</p>
+      <p begin="00:44:13.570" end="00:44:19.160">...as your mode of the partial...and...which is the our</p>
+      <p begin="00:44:20.190" end="00:44:21.320">Using the.</p>
+      <p begin="00:44:22.650" end="00:44:26.700">The service...api...using now to.</p>
+      <p begin="00:44:26.700" end="00:44:35.430">The...temps as well...</p>
+      <p begin="00:44:35.430" end="00:44:36.760">Okay.</p>
+      <p begin="00:44:36.760" end="00:44:37.260">Okay.</p>
+      <p begin="00:44:38.430" end="00:44:51.840">There.</p>
+      <p begin="00:44:51.840" end="00:44:54.490">So, what's doing that's.</p>
+      <p begin="00:44:54.490" end="00:45:04.140">Going to go back here I want to show you these templates.</p>
+      <p begin="00:45:04.140" end="00:45:11.830">So,...segment subscription and then show you the campus of air.</p>
+      <p begin="00:45:11.830" end="00:45:13.960">So, over the left-hand side.</p>
+      <p begin="00:45:13.960" end="00:45:18.590">Should then stressing list so love temperature already user there to give you</p>
+      <p begin="00:45:18.590" end="00:45:23.520">headstart on the on your application templates and in addition to</p>
+      <p begin="00:45:23.520" end="00:45:29.650">that is also quite large library of template available?</p>
+      <p begin="00:45:29.650" end="00:45:32.410">These are created by either microsoft internal</p>
+      <p begin="00:45:32.410" end="00:45:38.260">a and, vp and we expect this to grow quite rapidly as people start creating</p>
+      <p begin="00:45:38.260" end="00:45:43.070">templates the cover different scenarios we have templates you're ready for</p>
+      <p begin="00:45:43.070" end="00:45:48.900">obvious pre-law bouncers but also creating your v m with papon jeff and,</p>
+      <p begin="00:45:48.900" end="00:45:54.590">all these little things opted to install things after the image creative.</p>
+      <p begin="00:45:54.590" end="00:45:58.100">Saucepan so switching back then to</p>
+      <p begin="00:45:58.100" end="00:46:01.930">...point we have going so we've got this going already</p>
+      <p begin="00:46:01.930" end="00:46:06.830">...for...both of them and earlier so,</p>
+      <p begin="00:46:06.830" end="00:46:12.390">I'm going to show you what looks like.</p>
+      <p begin="00:46:12.390" end="00:46:16.240">I've created one of these already earlier on today and it's for</p>
+      <p begin="00:46:16.240" end="00:46:20.630">a stage application is the same template it's got the same.</p>
+      <p begin="00:46:20.630" end="00:46:28.390">Resources all of the...change parameters so, here we have virtual machines.</p>
+      <p begin="00:46:28.390" end="00:46:31.810">...showed...what to virtual machines</p>
+      <p begin="00:46:31.810" end="00:46:38.520">...w what hyphen stage...and vm they one of the able...</p>
+      <p begin="00:46:38.520" end="00:46:44.900">here we have the full jason...we have.</p>
+      <p begin="00:46:44.900" end="00:46:49.770">Variability...belongs to the storage profile...phd these</p>
+      <p begin="00:46:49.770" end="00:46:53.090">and we have the network profile which is network interface.</p>
+      <p begin="00:46:54.260" end="00:46:58.730">As we saw earlier with the object model network interfaces no,</p>
+      <p begin="00:46:58.730" end="00:47:02.940">longer automatically created as part of the virtual network...you can manager separate</p>
+      <p begin="00:47:02.940" end="00:47:06.800">...move network interface to different bm noob.</p>
+      <p begin="00:47:08.430" end="00:47:11.420">...then we have.</p>
+      <p begin="00:47:11.420" end="00:47:16.300">The other one which is the same disco different a looping is</p>
+      <p begin="00:47:16.300" end="00:47:19.050">a is a way of within templates haven't</p>
+      <p begin="00:47:19.050" end="00:47:23.470">on this position example puts away free to create multiple objects at the same</p>
+      <p begin="00:47:23.470" end="00:47:29.270">...variances just...name so you have like...to...mthree so looping is</p>
+      <p begin="00:47:29.270" end="00:47:33.530">...you that and you can...for example,...fifty...in</p>
+      <p begin="00:47:33.530" end="00:47:39.930">your lobe onset in the space of a few minutes...then we have the microsoft's</p>
+      <p begin="00:47:39.930" end="00:47:42.820">networks names base with all the objects in here.</p>
+      <p begin="00:47:42.820" end="00:47:45.180">Visual great.</p>
+      <p begin="00:47:45.180" end="00:47:48.960">So, in here we have network security group.</p>
+      <p begin="00:47:48.960" end="00:47:52.510">And, we have never...with no security holes so</p>
+      <p begin="00:47:52.510" end="00:47:56.860">we seen earlier that network security group no security rules will.</p>
+      <p begin="00:47:56.860" end="00:48:04.460">Block everything however,...stage environment and them kind of thinking that I want to open up</p>
+      <p begin="00:48:04.460" end="00:48:07.050">to state environment to...</p>
+      <p begin="00:48:07.050" end="00:48:14.270">To let them have local and...so if I switch back to here.</p>
+      <p begin="00:48:14.270" end="00:48:15.950">Excuse me.</p>
+      <p begin="00:48:15.950" end="00:48:21.600">Well, actually that's all finished that's awesome so the template we run who started when</p>
+      <p begin="00:48:21.600" end="00:48:26.590">...install this...environment is there...preempt...bouncer the</p>
+      <p begin="00:48:26.590" end="00:48:29.890">...of staff which is pretty awesome</p>
+      <p begin="00:48:30.990" end="00:48:35.190">...looking at ti.</p>
+      <p begin="00:48:35.190" end="00:48:40.010">Looking at the stage environment we created earlier.</p>
+      <p begin="00:48:40.010" end="00:48:42.930">I want to have a look at the public ip because I</p>
+      <p begin="00:48:42.930" end="00:48:46.770">won't be able to give this public ip to a customer and have them</p>
+      <p begin="00:48:46.770" end="00:48:54.370">or dp into this into one of these...tableau...doing?</p>
+      <p begin="00:48:54.370" end="00:48:56.020">And, I see.</p>
+      <p begin="00:48:56.020" end="00:49:00.180">That are specified...school over I've specified...main</p>
+      <p begin="00:49:00.180" end="00:49:05.060">...here as entropy website stage...</p>
+      <p begin="00:49:05.060" end="00:49:07.590">Arm then translate this network</p>
+      <p begin="00:49:07.590" end="00:49:10.990">...than translate this into this dns</p>
+      <p begin="00:49:10.990" end="00:49:17.030">...entropy website stage...deployed in the...</p>
+      <p begin="00:49:17.030" end="00:49:18.350">Dns optional on</p>
+      <p begin="00:49:18.350" end="00:49:23.140">this using here for convenience you don't have to use dns of public herpes</p>
+      <p begin="00:49:23.140" end="00:49:29.550">...you can use the ip and, we don't.</p>
+      <p begin="00:49:29.550" end="00:49:31.960">Fourth-grade reverse...dn is interest</p>
+      <p begin="00:49:31.960" end="00:49:35.830">...as well public...support the creation of</p>
+      <p begin="00:49:35.830" end="00:49:41.290">...your records to a label you toast male servers and things like that might require</p>
+      <p begin="00:49:41.290" end="00:49:43.570">a peter service of your records.</p>
+      <p begin="00:49:44.790" end="00:49:48.410">So, of copy that so I want to have a look and see</p>
+      <p begin="00:49:48.410" end="00:49:52.910">...is...open is three nine open so</p>
+      <p begin="00:49:52.910" end="00:49:56.990">...using a tool here that is the tooling this develop interning microsoft</p>
+      <p begin="00:49:56.990" end="00:50:01.920">...basically those ping using tcp it makes a connection and then twice</p>
+      <p begin="00:50:01.920" end="00:50:04.160">connecting udp port very similar</p>
+      <p begin="00:50:04.160" end="00:50:12.140">...tool both I didn't want to get ping to work from here look, so,</p>
+      <p begin="00:50:12.140" end="00:50:17.090">we...and destination name important...hit is three nine.</p>
+      <p begin="00:50:17.090" end="00:50:19.770">...we'll go with that.</p>
+      <p begin="00:50:19.770" end="00:50:22.890">...that's a problem.</p>
+      <p begin="00:50:22.890" end="00:50:26.460">So, I won't give this a customer but...connector.</p>
+      <p begin="00:50:27.940" end="00:50:31.970">So,...do about this look at the thing...great earlier</p>
+      <p begin="00:50:31.970" end="00:50:36.660">okay no security rules...security...so everything we</p>
+      <p begin="00:50:36.660" end="00:50:44.530">look at so far in terms of templates has been declarative.</p>
+      <p begin="00:50:44.530" end="00:50:49.050">...resources we model the dependencies we've scented</p>
+      <p begin="00:50:49.050" end="00:50:51.090">...arm of create everything all the</p>
+      <p begin="00:50:51.090" end="00:50:55.240">...of which is also...sometimes you want to do imperative</p>
+      <p begin="00:50:55.240" end="00:50:58.690">as well sometimes you want to all this stuff is great...to do</p>
+      <p begin="00:50:58.690" end="00:51:03.400">...digital thing and that's where you can...comparatively you</p>
+      <p begin="00:51:03.400" end="00:51:08.200">don't have to use declarative you can do everything comparatively if you want to or you can do everything declarative and</p>
+      <p begin="00:51:08.200" end="00:51:16.610">never...imperative...whichever way you want to do it whatever works view.</p>
+      <p begin="00:51:16.610" end="00:51:19.740">I've got a visual studio application and,</p>
+      <p begin="00:51:19.740" end="00:51:22.520">I'm going to go and creek that's...rule that</p>
+      <p begin="00:51:22.520" end="00:51:27.670">...missing to allow three eight nine inbound to allow me to connect</p>
+      <p begin="00:51:27.670" end="00:51:31.150">all the what I'm doing that I'm going to...</p>
+      <p begin="00:51:32.160" end="00:51:35.610">...discriminant this is constantly probing</p>
+      <p begin="00:51:35.610" end="00:51:41.610">...point twenty connect twenty connect...connect so all going well when</p>
+      <p begin="00:51:41.610" end="00:51:48.270">I actually discovered this was...so...looking...field.</p>
+      <p begin="00:51:48.270" end="00:51:51.530">...so, that's what...looked a bit of this I'm</p>
+      <p begin="00:51:51.530" end="00:51:56.750">...make this little bit bigger so we can see it same...looked at a</p>
+      <p begin="00:51:56.750" end="00:52:01.550">couple seconds go on the csharp slide where instantiating</p>
+      <p begin="00:52:01.550" end="00:52:04.390">...the algebra network client</p>
+      <p begin="00:52:04.390" end="00:52:09.160">...to execute this...doing some different here we're not creating</p>
+      <p begin="00:52:09.160" end="00:52:14.680">rotating you were getting some that's already there surpassing in the resource</p>
+      <p begin="00:52:14.680" end="00:52:18.720">...passing in the object I want to manage which is</p>
+      <p begin="00:52:18.720" end="00:52:21.990">the ws stage industry is the name of</p>
+      <p begin="00:52:21.990" end="00:52:26.810">...getting the name updated resource group...the...security group I want to</p>
+      <p begin="00:52:26.810" end="00:52:30.080">...so let's.</p>
+      <p begin="00:52:30.080" end="00:52:31.010">Start with...</p>
+      <p begin="00:52:32.430" end="00:52:34.180">...to this.</p>
+      <p begin="00:52:34.180" end="00:52:40.610">The authentication model amusing force me to do this so.</p>
+      <p begin="00:52:40.610" end="00:52:53.760">...a second.</p>
+      <p begin="00:52:53.760" end="00:52:54.720">Step over this.</p>
+      <p begin="00:52:56.140" end="00:52:59.120">Didn't...good?</p>
+      <p begin="00:52:59.120" end="00:53:02.150">...I've got to come up with this to...</p>
+      <p begin="00:53:02.150" end="00:53:05.760">So, now we retrieved...group</p>
+      <p begin="00:53:05.760" end="00:53:10.410">...collection is the object that we created by...of</p>
+      <p begin="00:53:10.410" end="00:53:15.240">...the containing the execute group...rules.</p>
+      <p begin="00:53:15.240" end="00:53:20.410">Rules are...so, we need to rectify that...over this.</p>
+      <p begin="00:53:20.410" end="00:53:26.860">Creating new security rule same structure we saw before we</p>
+      <p begin="00:53:26.860" end="00:53:29.200">We have for all these</p>
+      <p begin="00:53:29.200" end="00:53:32.830">properties set specified normally fine specifying portrays...</p>
+      <p begin="00:53:33.900" end="00:53:40.710">The between...three-ninety stepping over this ...adding a to collection of rules</p>
+      <p begin="00:53:40.710" end="00:53:41.840">...group...</p>
+      <p begin="00:53:42.930" end="00:53:53.050">And, mobile truth we're going to put this back and server we're going to put this back to...</p>
+      <p begin="00:53:53.050" end="00:54:01.210">...second.</p>
+      <p begin="00:54:01.210" end="00:54:05.460">Okay, ...response...okay.</p>
+      <p begin="00:54:05.460" end="00:54:06.960">...worked.</p>
+      <p begin="00:54:06.960" end="00:54:12.330">...then we stepped into the...to return true...</p>
+      <p begin="00:54:12.330" end="00:54:17.660">What effect...here we expect to see that of a switch back to</p>
+      <p begin="00:54:17.660" end="00:54:21.550">the...resource explore sorry didn't introduce this is</p>
+      <p begin="00:54:21.550" end="00:54:26.600">a preview to that allows you to like look, at all your resources</p>
+      <p begin="00:54:26.600" end="00:54:31.700">...for creating ...it's phasing so on it allows you to</p>
+      <p begin="00:54:31.700" end="00:54:35.290">...of...here you can create new ones through the</p>
+      <p begin="00:54:35.290" end="00:54:40.330">actions you-can delete them and you can experiment with your...you-can</p>
+      <p begin="00:54:40.330" end="00:54:45.720">...resources...use this as a have very handy helper for create your own</p>
+      <p begin="00:54:45.720" end="00:54:50.550">...creating object creating resource going here looking to json copy of your</p>
+      <p begin="00:54:50.550" end="00:54:52.840">template?</p>
+      <p begin="00:54:52.840" end="00:54:58.220">Gotten there so I go here...refresh this.</p>
+      <p begin="00:54:58.220" end="00:55:04.100">One expectancy history role.</p>
+      <p begin="00:55:04.100" end="00:55:13.670">Okay,...go back.</p>
+      <p begin="00:55:13.670" end="00:55:15.410">Didn't like that?</p>
+      <p begin="00:55:15.410" end="00:55:19.290">So, expand this one...groups.</p>
+      <p begin="00:55:20.500" end="00:55:25.220">Not askew things in here stage stages when we did earlier</p>
+      <p begin="00:55:25.220" end="00:55:31.280">and we look at network and we look at security groups.</p>
+      <p begin="00:55:31.280" end="00:55:37.310">There...awesome we switch back here</p>
+      <p begin="00:55:37.310" end="00:55:40.100">he is the command-line does been constantly</p>
+      <p begin="00:55:40.100" end="00:55:42.380">pinging this endpoint and we see.</p>
+      <p begin="00:55:43.530" end="00:55:45.380">That as of.</p>
+      <p begin="00:55:45.380" end="00:55:49.200">Around mineral goal is connecting...working it's.</p>
+      <p begin="00:55:49.200" end="00:55:54.040">The rules been deployed the network firewalls essentially has been updated to do</p>
+      <p begin="00:55:54.040" end="00:55:58.320">...traffic...node to connect...I can give this my customer</p>
+      <p begin="00:55:58.320" end="00:56:05.010">...connect you can have a look that's all fine so that's all as we expect.</p>
+      <p begin="00:56:05.010" end="00:56:12.750">So, the switch back then to...</p>
+      <p begin="00:56:12.750" end="00:56:15.470">Okay.</p>
+      <p begin="00:56:15.470" end="00:56:22.910">We started with what...care about this and, just to recap.</p>
+      <p begin="00:56:22.910" end="00:56:27.190">We want you to liberate your development tested experiences by</p>
+      <p begin="00:56:27.190" end="00:56:33.100">enabling you to manage these resources and create these into...applications in a very lightweight</p>
+      <p begin="00:56:33.100" end="00:56:37.090">...way you can use the same interfaces to manage resources</p>
+      <p begin="00:56:38.950" end="00:56:43.750">in storage of networking computing websites at the same type of</p>
+      <p begin="00:56:43.750" end="00:56:47.540">interface reston jason is consistent across all of</p>
+      <p begin="00:56:47.540" end="00:56:54.750">these and delivers value ad such as all back...tagging so, on the</p>
+      <p begin="00:56:54.750" end="00:57:01.270">...sentry on the on the...platform enabling you to have a better experience.</p>
+      <p begin="00:57:01.270" end="00:57:05.840">...enables you very easily to have repeatable experiences</p>
+      <p begin="00:57:05.840" end="00:57:10.830">...repeatable deployments for your...test important...and</p>
+      <p begin="00:57:10.830" end="00:57:15.310">it's represents the best classroom structure existing interfaces fast versioning and</p>
+      <p begin="00:57:15.310" end="00:57:17.870">...course.</p>
+      <p begin="00:57:17.870" end="00:57:23.260">Basically allows you turner code into networks if you want in whichever ways</p>
+      <p begin="00:57:23.260" end="00:57:26.940">...working...code if you want to use.</p>
+      <p begin="00:57:26.940" end="00:57:30.920">Experts...if you want to use jobs sdk what use know the gs.</p>
+      <p begin="00:57:32.110" end="00:57:35.540">Solvent it's whatever works you and,</p>
+      <p begin="00:57:35.540" end="00:57:40.280">you can have this in your realtime...configured exactly as you want.</p>
+      <p begin="00:57:40.280" end="00:57:46.190">Without energy onerous process associate with those changes.</p>
+      <p begin="00:57:46.190" end="00:57:47.690">Okay, so, we're comical</p>
+      <p begin="00:57:47.690" end="00:57:52.460">one-time-only commits for questions so call-to-action there's a number</p>
+      <p begin="00:57:52.460" end="00:57:57.410">talks on today that are...of an expert data really also markus in</p>
+      <p begin="00:57:57.410" end="00:58:03.140">this talk is virtual for dislodged so you can obviously tent...I advise</p>
+      <p begin="00:58:03.140" end="00:58:09.410">you have look about if you-get-a-chance employed online then we have a</p>
+      <p begin="00:58:09.410" end="00:58:14.150">...seeming which is introduction what's new...a is I'll talk a</p>
+      <p begin="00:58:14.150" end="00:58:19.840">lot more about the compute side of the...resource...</p>
+      <p begin="00:58:19.840" end="00:58:24.040">...talk tomorrow with...in which ...some scale</p>
+      <p begin="00:58:24.040" end="00:58:29.150">...application...on friday...machines deep...</p>
+      <p begin="00:58:29.150" end="00:58:35.080">can be pretty cool talk ...compute...one of look at compute extensions so on</p>
+      <p begin="00:58:35.080" end="00:58:39.350">...compute ox are certainly worth checking out and</p>
+      <p begin="00:58:39.350" end="00:58:43.670">try to like as of today were public review so these are freely available to</p>
+      <p begin="00:58:43.670" end="00:58:48.680">...there's no sign of required to resources underneath our</p>
+      <p begin="00:58:48.680" end="00:58:53.660">ga resources so...will pay for resources...so you have microsoft</p>
+      <p begin="00:58:55.610" end="00:58:58.470">...to pay around and,</p>
+      <p begin="00:58:58.470" end="00:59:09.120">...of those credits for getting...with this.</p>
+      <p begin="00:59:09.120" end="00:59:11.660">Okay, so,...</p>
+      <p begin="00:59:11.660" end="00:59:15.830">But, the resources underneath our...network</p>
+      <p begin="00:59:15.830" end="00:59:19.030">...r ga but the resource provider these</p>
+      <p begin="00:59:19.030" end="00:59:23.960">...of a...public review today ...</p>
+      <p begin="00:59:23.960" end="00:59:28.470">amount interface sitting over these resources but resource themselves...</p>
+      <p begin="00:59:28.470" end="00:59:30.630">Loxels and,</p>
+      <p begin="00:59:30.630" end="00:59:36.940">take control your networks and do it as you want to do...couple of</p>
+      <p begin="00:59:36.940" end="00:59:43.610">...slides and resources there if you want to...microsoft measure?</p>
+      <p begin="00:59:43.610" end="00:59:45.320">...school.</p>
+      <p begin="00:59:45.320" end="00:59:51.850">And, then piece evaluate ...get better so any comments appreciated.</p>
+      <p begin="00:59:51.850" end="01:00:26.360">So, thank you...your time any questions.</p>
+      <p begin="01:00:26.360" end="01:00:27.370">Distribute</p>
+      <p begin="01:00:27.370" end="01:00:33.250">...feedback item more suggestion is to when we're using</p>
+      <p begin="01:00:33.250" end="01:00:38.010">declarative and templates when we create a bunch of objects and then we imperative</p>
+      <p begin="01:00:38.010" end="01:00:43.250">...delete something then potentially that changes then lost so ...</p>
+      <p begin="01:00:43.250" end="01:00:49.730">justin is that we somehow tractor change...impaired to change to template are</p>
+      <p begin="01:00:49.730" end="01:00:54.700">...server-side assume or somewhere and then give the option to replay those...changes</p>
+      <p begin="01:00:54.700" end="01:00:59.600">...happen to...template...at some point out that it's an interesting suggestion</p>
+      <p begin="01:00:59.600" end="01:01:14.050">...certainly...team unseen what makes sense?</p>
+      <p begin="01:01:14.050" end="01:01:21.350">Yes,...to follow author...of would be...</p>
+      <p begin="01:01:21.350" end="01:01:26.130">...everything which...what execute your imperative changes</p>
+      <p begin="01:01:26.130" end="01:01:30.920">model everything back then again to a template...and your source control and then</p>
+      <p begin="01:01:30.920" end="01:01:35.490">your source control that as most of data but not another...me go...pointy</p>
+      <p begin="01:01:35.490" end="01:01:42.660">...iterative model is much better...is useful if you control...</p>
+      <p begin="01:01:42.660" end="01:01:46.150">Yes, I agree.</p>
+      <p begin="01:01:46.150" end="01:01:50.670">Thank you very value feedback...else.</p>
+      <p begin="01:01:50.670" end="01:01:54.040">Okay, I can see anybody those kinds of okay,</p>
+      <p begin="01:01:54.040" end="01:02:01.230">well, thank you all your time was represented here have great build...laptops.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.868</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:05.440" end="00:00:10.360">Right you can start...everybody thanks for coming.</p>
+      <p begin="00:00:10.360" end="00:00:14.890">...in the session I wanted to</p>
+      <p begin="00:00:14.890" end="00:00:19.440">...a little bit of washer search one of the services in the actual platform my name is</p>
+      <p begin="00:00:19.440" end="00:00:24.610">...asteroid work on the on...search team and my goal</p>
+      <p begin="00:00:24.610" end="00:00:28.590">...today is to cover both laude</p>
+      <p begin="00:00:28.590" end="00:00:33.780">...search...and also called to integrated into applications bulls mobile, mobile and</p>
+      <p begin="00:00:33.780" end="00:00:38.450">applications and I'm going to these us...as possible we build a couple of...</p>
+      <p begin="00:00:38.450" end="00:00:42.820">encourage everybody to ask questions on-the-spot as much as I can edges answer them as we</p>
+      <p begin="00:00:42.820" end="00:00:49.970">go we can...answer them in context so, thinking about why</p>
+      <p begin="00:00:49.970" end="00:00:54.780">...if you...applications you run your phone or you use in</p>
+      <p begin="00:00:54.780" end="00:01:01.090">your computer most of apps that have any sort of content from tweets</p>
+      <p begin="00:01:01.090" end="00:01:05.560">to documents to customer relationship management entries to your contact to</p>
+      <p begin="00:01:05.560" end="00:01:09.010">recipes or restaurants the weighing you interact with</p>
+      <p begin="00:01:09.010" end="00:01:13.690">...this in of reasonable volume...consumer is usually search</p>
+      <p begin="00:01:13.690" end="00:01:18.300">...bing google and others attentions has shown that we can actually</p>
+      <p begin="00:01:18.300" end="00:01:23.860">find anything across the whole web using just a quick search so it's only not to take the</p>
+      <p begin="00:01:23.860" end="00:01:27.120">...for to applications as well where data may not</p>
+      <p begin="00:01:27.120" end="00:01:31.640">be publicly surface so you can actually be index with being google or</p>
+      <p begin="00:01:31.640" end="00:01:36.460">it may need to be presenting ways...is not appropriate for a public search engine or for any other reason you want your</p>
+      <p begin="00:01:36.460" end="00:01:40.730">own local the search solution so as research</p>
+      <p begin="00:01:40.730" end="00:01:44.390">...offering in the asher platform that allows you to create a</p>
+      <p begin="00:01:44.390" end="00:01:48.630">...great search experiences in your applications.</p>
+      <p begin="00:01:48.630" end="00:01:53.530">So, we want to do today is I have three goals I want to give you a sense of what</p>
+      <p begin="00:01:53.530" end="00:01:58.360">it takes to get search...and running...research.</p>
+      <p begin="00:01:58.360" end="00:02:02.650">I talk about some of the specifics of web obscene mobile apps give</p>
+      <p begin="00:02:02.650" end="00:02:07.580">you like show you a few things running give you a few ideas and how to leverage...these</p>
+      <p begin="00:02:07.580" end="00:02:13.320">are different mediums have different interesting things and also different constraintsI also want to talk a little bit</p>
+      <p begin="00:02:13.320" end="00:02:17.020">about personalization and tuning how you can use search to create</p>
+      <p begin="00:02:17.020" end="00:02:22.340">better experience experiences for...and also to drive your business objectives</p>
+      <p begin="00:02:22.340" end="00:02:25.180">...ranking so,</p>
+      <p begin="00:02:25.180" end="00:02:30.770">let's start by talking about how do we get search off the ground how do we start?</p>
+      <p begin="00:02:30.770" end="00:02:33.990">So, typical flow for search is</p>
+      <p begin="00:02:33.990" end="00:02:39.950">...isolation you usually do it...the rest of your job but you need to provisions</p>
+      <p begin="00:02:39.950" end="00:02:44.830">search capacity provision assert service this is through for most of the are asher services as well you go to the</p>
+      <p begin="00:02:44.830" end="00:02:48.850">port earlier use api for that once you have it into create...</p>
+      <p begin="00:02:48.850" end="00:02:53.760">an index and tell us a little bit about what you want to index then you get need to get data into a thing</p>
+      <p begin="00:02:53.760" end="00:02:59.490">I'm finally you get to do searches usually integrated into your application so,</p>
+      <p begin="00:02:59.490" end="00:03:01.280">let's...into the steps and,</p>
+      <p begin="00:03:01.280" end="00:03:06.130">also how do we think about build...application around these very rarely you...and isolation you'll</p>
+      <p begin="00:03:06.130" end="00:03:10.370">...you...storesyou have buckets components another pieces</p>
+      <p begin="00:03:10.370" end="00:03:16.500">...make-up the whole thing rather than walk-in walk into these...isolated piece.</p>
+      <p begin="00:03:16.500" end="00:03:20.580">So, let's start by talking about provisioning.</p>
+      <p begin="00:03:20.580" end="00:03:25.060">The top-level resource that you create when you start working with</p>
+      <p begin="00:03:25.060" end="00:03:28.030">asher search is a search service such services that uses</p>
+      <p begin="00:03:28.030" end="00:03:32.860">global capacities these when you probation how much search capacity you want in terms of</p>
+      <p begin="00:03:32.860" end="00:03:37.610">course per second in terms of document...and things in terms of storage and,</p>
+      <p begin="00:03:37.610" end="00:03:42.600">you select a region so you say where in which in which of all the...we support you</p>
+      <p begin="00:03:42.600" end="00:03:47.100">...your data and sometimes if you multiple of them you can define multiple of them across,</p>
+      <p begin="00:03:47.100" end="00:03:52.210">across many...services inside have a number of things...have keys and index says and</p>
+      <p begin="00:03:52.210" end="00:03:59.520">data sources and a few other things we'll discuss later supervision one of these things usually</p>
+      <p begin="00:03:59.520" end="00:04:03.600">during exploratory phases when you go to a portal just do new there...walk</p>
+      <p begin="00:04:03.600" end="00:04:08.000">...minute and, these things also records function...exposed</p>
+      <p begin="00:04:08.000" end="00:04:13.530">to the through the...management api so often for production</p>
+      <p begin="00:04:13.530" end="00:04:18.270">...into bw use the management api to...</p>
+      <p begin="00:04:18.270" end="00:04:23.140">provision search capacity you can just call them directly or have arm templates and use them templates to</p>
+      <p begin="00:04:23.140" end="00:04:31.170">probation maybe search along with a number of all...you might have...part of your deployment?</p>
+      <p begin="00:04:31.170" end="00:04:36.380">The search service is also this called since...of capacity is what you used to manage...</p>
+      <p begin="00:04:36.380" end="00:04:41.300">of the service you can start small and then ask maybe document size increases or maybe</p>
+      <p begin="00:04:41.300" end="00:04:47.200">have a...workload where there's these some weeks in the year where you how like very high queries</p>
+      <p begin="00:04:47.200" end="00:04:52.200">per second number and then other times a year with these things slows down so then you can</p>
+      <p begin="00:04:52.200" end="00:04:56.940">dial the capacity you have on your on you provision...your service to copier</p>
+      <p begin="00:04:56.940" end="00:05:02.150">...to follow your capacity needs so-you...continue to get</p>
+      <p begin="00:05:02.150" end="00:05:07.400">could latency when you needed but you need to pay extra when you when you don't?</p>
+      <p begin="00:05:07.400" end="00:05:16.960">So, let me switch over real quick and let's take a quick look at what provisioning looks like the portal?</p>
+      <p begin="00:05:16.960" end="00:05:22.110">So, I have a provision service here but let me show you how we looks like when you start from scratch</p>
+      <p begin="00:05:22.110" end="00:05:27.910">so, if you go...new portal to ...</p>
+      <p begin="00:05:27.910" end="00:05:29.160">In storage you'll see the</p>
+      <p begin="00:05:29.160" end="00:05:36.590">research into their supervision you services you can go there big...</p>
+      <p begin="00:05:36.590" end="00:05:41.850">Conceive...to get excellent so, we offer two-tier is a free</p>
+      <p begin="00:05:41.850" end="00:05:47.360">...here fortitude is great for experimentation allows you to</p>
+      <p begin="00:05:47.360" end="00:05:51.660">has all the same capabilities in terms of functionality ...the</p>
+      <p begin="00:05:51.660" end="00:05:58.510">...here but I you get there's one in every subscription but you have to you have to pay for it you can pick</p>
+      <p begin="00:05:58.510" end="00:06:03.880">all usually you because I research group and then you need to because it was a solution where</p>
+      <p begin="00:06:03.880" end="00:06:05.920">...it and finally you get</p>
+      <p begin="00:06:05.920" end="00:06:13.940">typical location where you want where you want to service located...is?</p>
+      <p begin="00:06:13.940" end="00:06:18.900">these are all this so all these decisions are static decisions everything else you can change later but</p>
+      <p begin="00:06:18.900" end="00:06:21.570">...research group so on your make it here and</p>
+      <p begin="00:06:21.570" end="00:06:38.220">...here until you're done with service so, into one more thing.</p>
+      <p begin="00:06:38.220" end="00:06:41.050">The...second so,</p>
+      <p begin="00:06:41.050" end="00:06:46.500">right now we support a...for us to in europe and to in asia and</p>
+      <p begin="00:06:46.500" end="00:06:50.260">...in...so, you know, go over time we have we have better region</p>
+      <p begin="00:06:50.260" end="00:07:03.170">coverage once you have...provisions and them this would come...the open on one england.</p>
+      <p begin="00:07:03.170" end="00:07:07.300">Once you...provision would you get to do is if it's a free service then you can manage the rest of</p>
+      <p begin="00:07:07.300" end="00:07:12.760">...configuration there's not much to do service itself is a standard service then you get to manage</p>
+      <p begin="00:07:12.760" end="00:07:17.030">the scale so in this case the free service by for</p>
+      <p begin="00:07:17.030" end="00:07:21.290">...services I can get sorry for standard services I get to go here and,</p>
+      <p begin="00:07:21.290" end="00:07:24.200">dial-up and down the capacity of the service we</p>
+      <p begin="00:07:24.200" end="00:07:29.730">surface capacity in two dimensions replicas on partitions as you can see there think of...says</p>
+      <p begin="00:07:29.730" end="00:07:33.060">...search units that you can use into ways you can...them</p>
+      <p begin="00:07:33.060" end="00:07:38.270">come from one next to the other and create more capacity for documents so each unit</p>
+      <p begin="00:07:38.270" end="00:07:43.220">...fifty million documents and, they and they grow linearly so if you need thirty million you get to</p>
+      <p begin="00:07:43.220" end="00:07:46.890">you produce even sixty you can put...so on you get between one and twelve</p>
+      <p begin="00:07:46.890" end="00:07:51.630">of those and then if you need more replicas for-you if you more</p>
+      <p begin="00:07:51.630" end="00:07:55.270">queries per second you can use more replicas for that so read think of replicas</p>
+      <p begin="00:07:55.270" end="00:07:59.900">effectiveness copies of your data so we may take a little bit longer to write the doin'</p>
+      <p begin="00:07:59.900" end="00:08:06.380">updates but doing reads we only into bright...from one of them so we can...them in the end</p>
+      <p begin="00:08:06.380" end="00:08:10.500">...you get is this rectangle of replicas times petitions and these your total</p>
+      <p begin="00:08:10.500" end="00:08:15.900">capacity and this is completely elastic you can change these at any point and you can</p>
+      <p begin="00:08:15.900" end="00:08:21.020">change these online while we're doing written rights to your data ...</p>
+      <p begin="00:08:21.020" end="00:08:22.610">If you want knee-high availability</p>
+      <p begin="00:08:22.610" end="00:08:28.340">nalyze to replicas to get read availability and these three if you want...readability so,</p>
+      <p begin="00:08:28.340" end="00:08:33.200">you get to choose maybe...smaller app or in your dev environment you can say</p>
+      <p begin="00:08:33.200" end="00:08:38.430">...don't care about availability oceans I...something that is more affordable and it</p>
+      <p begin="00:08:38.430" end="00:08:41.090">...have a big deployment...I may say no I want</p>
+      <p begin="00:08:41.090" end="00:08:56.010">...per seconds on by the way I...one-eighteen...I may one more capacity.</p>
+      <p begin="00:08:56.010" end="00:08:57.770">So, great so once you</p>
+      <p begin="00:08:57.770" end="00:09:03.700">...once you...you have a starting point and then either now later you can</p>
+      <p begin="00:09:03.700" end="00:09:08.100">to in the capacity you get you get for the system.</p>
+      <p begin="00:09:08.100" end="00:09:11.300">So, now we have...servicing...a search servicing</p>
+      <p begin="00:09:11.300" end="00:09:15.920">place next thing that we have to think about these the shape of our index</p>
+      <p begin="00:09:15.920" end="00:09:19.830">...each search service can have one or more indexes and think of index like</p>
+      <p begin="00:09:19.830" end="00:09:26.430">a table is the thing where you put data and, the has many of the elements of a table like if we</p>
+      <p begin="00:09:26.430" end="00:09:29.820">...schema...the...I...things that relate to</p>
+      <p begin="00:09:29.820" end="00:09:35.040">...index like whether or not courses enabled what are the search...search options</p>
+      <p begin="00:09:35.040" end="00:09:40.560">...to index so on and I'll drill into a details of that in a minute the scheme itself I go to</p>
+      <p begin="00:09:40.560" end="00:09:45.740">an example immediately after these but it's a pretty usual stuff, you know,</p>
+      <p begin="00:09:45.740" end="00:09:52.440">feel this...fields have data types have names one of...key so on and,</p>
+      <p begin="00:09:52.440" end="00:09:54.240">then they have a bunch of search specific</p>
+      <p begin="00:09:54.240" end="00:10:00.010">information the reason why we have a schema is because when it comes to...is not the</p>
+      <p begin="00:10:00.010" end="00:10:04.840">kind of functionality what which is kind of hold your data give us a date and you...</p>
+      <p begin="00:10:04.840" end="00:10:09.760">more like we need to understand how you expect us to process you information,</p>
+      <p begin="00:10:09.760" end="00:10:15.230">for example, what attributes of the document...given as you want us to break apart so we</p>
+      <p begin="00:10:15.230" end="00:10:20.420">search we can search on later or what attributes uone do...has which are going to do structure</p>
+      <p begin="00:10:20.420" end="00:10:23.840">...filtering later that way we can create appropriate</p>
+      <p begin="00:10:23.840" end="00:10:27.940">underline data structures to dual of these fast?</p>
+      <p begin="00:10:27.940" end="00:10:30.310">There are also specific the specifics of search that</p>
+      <p begin="00:10:30.310" end="00:10:35.740">are beyond indexing their things like linguistics and, I'll talk more about linguistics in a minute but</p>
+      <p begin="00:10:35.740" end="00:10:38.760">...comes to search we kind of need to understand the specifics</p>
+      <p begin="00:10:38.760" end="00:10:43.890">of the language of the content on the languages of the content and same thing with things like the</p>
+      <p begin="00:10:43.890" end="00:10:48.760">gestures and scoring profiles which are very specific to surgeon we need to know so these are things you</p>
+      <p begin="00:10:48.760" end="00:10:52.250">define schema time and you use a different pointing</p>
+      <p begin="00:10:52.250" end="00:10:56.830">in your application so let's work on what it looks like</p>
+      <p begin="00:10:56.830" end="00:11:02.360">to define schema and, we'll explore a couple of options for this so usually</p>
+      <p begin="00:11:02.360" end="00:11:07.290">...exploratory face you often want...these important because it's a great way to this...what</p>
+      <p begin="00:11:07.290" end="00:11:20.360">you can do well before you commit to write a bunch of called in search would you can do in the portal.</p>
+      <p begin="00:11:20.360" end="00:11:25.620">So, there ...so you can create new indexes.</p>
+      <p begin="00:11:25.620" end="00:11:29.120">The first usually first thing...which fields you want</p>
+      <p begin="00:11:29.120" end="00:11:34.090">defining that index you need to have at least...field you can change the name but you need to have one fielded</p>
+      <p begin="00:11:34.090" end="00:11:42.370">will used to identify each one of the documents and then you can are you can add more.</p>
+      <p begin="00:11:42.370" end="00:11:46.210">More feels to...index is usual stuff there's been a basic types</p>
+      <p begin="00:11:47.290" end="00:11:51.510">...to interesting types nation to the usual suspects like numbers and the and dates and</p>
+      <p begin="00:11:51.510" end="00:11:56.730">strengths is we support collection of strings this is very common using search for things like</p>
+      <p begin="00:11:56.730" end="00:12:02.860">tags or anything that looks like a structure list of things you want to collect and,</p>
+      <p begin="00:12:02.860" end="00:12:06.910">the rone is we have first-class support for geospatial information</p>
+      <p begin="00:12:06.910" end="00:12:12.190">...these little more detail later but in terms of index definition you can say that something is</p>
+      <p begin="00:12:12.190" end="00:12:19.010">a geo point and then we'll...appropriately what...index you want to tell us things like us I</p>
+      <p begin="00:12:19.010" end="00:12:22.960">...before like is this field retrieval low you want to...it to</p>
+      <p begin="00:12:22.960" end="00:12:28.040">the want to facets on it and, take a couple of these so I can show you a couple</p>
+      <p begin="00:12:28.040" end="00:12:35.170">of options solicit...and...the woman...everything so,</p>
+      <p begin="00:12:35.170" end="00:12:39.570">you can you can configure what kind of language you want I'll get back to language in a minute and you can also</p>
+      <p begin="00:12:39.570" end="00:12:43.990">...suggest there's so-if you want-to havel to complete you can you can configured data complete options</p>
+      <p begin="00:12:43.990" end="00:12:50.580">...here so...creating indexes like this is very convenient and expiration again because</p>
+      <p begin="00:12:50.580" end="00:12:54.900">...you can create one of these maybe...use fiddler any other of this http</p>
+      <p begin="00:12:54.900" end="00:12:59.070">...tools to explore the functionality...get a sense of what you want</p>
+      <p begin="00:12:59.070" end="00:13:03.940">...we did with the search service once you're ready to create and up often you want more</p>
+      <p begin="00:13:03.940" end="00:13:07.980">...process and often you'll just use the api to create the services what</p>
+      <p begin="00:13:07.980" end="00:13:11.950">...index as well as you can just do it as part of your application deployment so,</p>
+      <p begin="00:13:11.950" end="00:13:15.060">let me let me start by doing one of those so what I do is</p>
+      <p begin="00:13:16.700" end="00:13:21.730">...the rest of the talk I'll have a couple of applications running puddle as, you know,</p>
+      <p begin="00:13:21.730" end="00:13:27.680">reproduce heard these so,...national we now have...offering and up service includes why</p>
+      <p begin="00:13:27.680" end="00:13:30.900">...mobile apps different ways to supportdifferent,</p>
+      <p begin="00:13:30.900" end="00:13:36.040">different front-ends for your app and one of the great things and...of these unification is at the bach</p>
+      <p begin="00:13:36.040" end="00:13:40.900">...are very similar so we get to reuse the same patterns and same functionality in both the</p>
+      <p begin="00:13:40.900" end="00:13:48.060">mobile app backhand ...ops so, I'll do a little bit of back and forth between these so you can</p>
+      <p begin="00:13:48.060" end="00:13:52.180">...of convex...let's start with the web...</p>
+      <p begin="00:13:52.180" end="00:13:57.130">So, let's say that as part of my web application I want to create indexes easily</p>
+      <p begin="00:13:57.130" end="00:14:00.030">...exist...on start...check everything and if it's not</p>
+      <p begin="00:14:00.030" end="00:14:06.630">there I'm going to create them so the way you start like if you're writing</p>
+      <p begin="00:14:06.630" end="00:14:10.620">application dot net like I'm doing here the best way to interact with</p>
+      <p begin="00:14:10.620" end="00:14:13.500">...search is we have.</p>
+      <p begin="00:14:13.500" end="00:14:17.070">A...library...you can find in the</p>
+      <p begin="00:14:17.070" end="00:14:19.680">...get ripple so just go grab the new</p>
+      <p begin="00:14:19.680" end="00:14:22.780">...from the aerial make your life significantly easier in our</p>
+      <p begin="00:14:22.780" end="00:14:29.310">...you can just use the rest api you'd find the right packages from the ones that are available in this case</p>
+      <p begin="00:14:29.310" end="00:14:34.950">every have the library here so what I want to do is first want...myself like an</p>
+      <p begin="00:14:34.950" end="00:14:41.580">entry pointing...xmpp more real application you probably do...injection framework something like this and create you</p>
+      <p begin="00:14:41.580" end="00:14:49.290">and...yourself an entry point...the search index client.</p>
+      <p begin="00:14:49.290" end="00:14:52.520">Search client and what I want to do is</p>
+      <p begin="00:14:52.520" end="00:14:57.430">...initialization...and if needed to create and index so let me go</p>
+      <p begin="00:14:57.430" end="00:15:05.960">grab ventricle home here so you have to which me type whole bunch?</p>
+      <p begin="00:15:05.960" end="00:15:09.210">So, of decently support a little bit what I want...do is version</p>
+      <p begin="00:15:09.210" end="00:15:13.950">when I create the entry point to api which is a search service client and grab some settings like</p>
+      <p begin="00:15:13.950" end="00:15:18.310">this service name and the keys from configure then I'm going to create and index</p>
+      <p begin="00:15:18.310" end="00:15:27.370">get to indexes in a minute and implement that out.</p>
+      <p begin="00:15:27.370" end="00:15:31.380">And, then I want to grab a client specific that just kind of</p>
+      <p begin="00:15:31.380" end="00:15:35.200">...to...index and then...that...my singled and I'm going to using the rest of the</p>
+      <p begin="00:15:35.200" end="00:15:39.130">app the way the rest of my application doesn't carry-over convex and keys</p>
+      <p begin="00:15:39.130" end="00:15:43.940">or things like that all of these capturing initialization set up a dependency that you can use a</p>
+      <p begin="00:15:43.940" end="00:15:49.000">proper injection framework to use later and you have to worry about what are you indexes so on that</p>
+      <p begin="00:15:49.000" end="00:15:50.660">...that knowledge is confined to</p>
+      <p begin="00:15:50.660" end="00:16:01.660">...initialization phase so now let's create and index...bring the...then I walk through it.</p>
+      <p begin="00:16:01.660" end="00:16:06.240">So, what this does is it says I have a I want to have an index...sessions that like if you</p>
+      <p begin="00:16:06.240" end="00:16:11.180">...who here minutes ago like I have a couple of other indexes but we'll have that one yet</p>
+      <p begin="00:16:11.180" end="00:16:13.970">so, if...not there they want to create...index</p>
+      <p begin="00:16:13.970" end="00:16:18.830">...create api about a bunch of fields and these correspond to what we saw in the</p>
+      <p begin="00:16:18.830" end="00:16:21.210">portal minutes ago and the data said that</p>
+      <p begin="00:16:21.210" end="00:16:24.860">...have is I have I took the all...from build</p>
+      <p begin="00:16:26.030" end="00:16:30.730">...interesting to due to build something where you can probably correct to these like you have</p>
+      <p begin="00:16:30.730" end="00:16:34.970">...session to build conference and how bunch of sessions and somebody can come over and say</p>
+      <p begin="00:16:34.970" end="00:16:42.240">okay build-up for build and one of the pieces that we load expected...have good search so,</p>
+      <p begin="00:16:42.240" end="00:16:46.580">you can see that some of these I said this field troubles of them are solvable...a mix of types so</p>
+      <p begin="00:16:46.580" end="00:16:50.890">on uci set up a suggested so,</p>
+      <p begin="00:16:50.890" end="00:16:55.660">this is a suggests there is the building-block to use for...you know-how you go to</p>
+      <p begin="00:16:55.660" end="00:17:00.360">being google start typing and we all kind of wait for a second see what see what happens so,</p>
+      <p begin="00:17:00.360" end="00:17:04.590">that's something that everybody out kind of has been trained to expect so we provide</p>
+      <p begin="00:17:04.590" end="00:17:09.970">building blogs the make...for you to build...your application as what?</p>
+      <p begin="00:17:09.970" end="00:17:15.370">Great so, now we have ...any solicitation will what's going to happen is going to runs</p>
+      <p begin="00:17:15.370" end="00:17:20.810">...and if there's no index going-to go ahead and create...one question.</p>
+      <p begin="00:17:20.810" end="00:17:26.220">Great...question is covered what about scheme updates so, we allow you to</p>
+      <p begin="00:17:26.220" end="00:17:31.270">add fields within allow you to change fields the reason for that is like</p>
+      <p begin="00:17:31.270" end="00:17:36.100">search indexes and index and...optimized for retrieval so,</p>
+      <p begin="00:17:36.100" end="00:17:39.520">changing, changing the options of existing...usually means we</p>
+      <p begin="00:17:39.520" end="00:17:46.540">...everything we debate often whether or not we should do every index you should...in...</p>
+      <p begin="00:17:46.540" end="00:17:51.430">I think we would make people's life...here if we did some maybe...we'll do it right now we don't so</p>
+      <p begin="00:17:51.430" end="00:17:56.510">...you need to...field then or change and option that you have to of the index and recreated if you need to</p>
+      <p begin="00:17:56.510" end="00:18:00.080">...fields at any time and...they'll just default to</p>
+      <p begin="00:18:00.080" end="00:18:06.850">...and you can add information later the other thing is these...do very well and sparse,</p>
+      <p begin="00:18:06.850" end="00:18:09.820">sparse data so you can...no...thanks</p>
+      <p begin="00:18:09.820" end="00:18:18.710">over time if you don't want to...the index and still just...information from a column.</p>
+      <p begin="00:18:18.710" end="00:18:22.250">I guess this will work much better when we actually call it so let's do</p>
+      <p begin="00:18:22.250" end="00:18:32.250">it upsurge here right so we have we have an index set up so.</p>
+      <p begin="00:18:32.250" end="00:18:37.830">...have an index I want to point out one line-item here and really into it a</p>
+      <p begin="00:18:37.830" end="00:18:42.420">little bit there's a choice...the and talk about which is linguistics like one of the items</p>
+      <p begin="00:18:42.420" end="00:18:45.360">in these linguistic is an aspect that you</p>
+      <p begin="00:18:45.360" end="00:18:49.710">maybe another convex may or may not important but in the context of search.</p>
+      <p begin="00:18:49.710" end="00:18:55.010">We need to understand what's going on and this is something we can make very few assumptions like I'm sure there's many</p>
+      <p begin="00:18:55.010" end="00:19:01.770">folks in this room that build applications a...run on english or done right...at all so,</p>
+      <p begin="00:19:01.770" end="00:19:06.770">then let me...double-click...a little bit and look at more details if you think about</p>
+      <p begin="00:19:06.770" end="00:19:12.170">how even the most basic functionality of search the first thing we have to do when...search</p>
+      <p begin="00:19:12.170" end="00:19:16.980">is break words apart and that's it sounds like piece of cake until you realize</p>
+      <p begin="00:19:16.980" end="00:19:22.380">that languages have...pieces and, then is not so piece of cake and,</p>
+      <p begin="00:19:22.380" end="00:19:27.630">then there is there are some languages like this...a little bit in english but there are...for example,</p>
+      <p begin="00:19:27.630" end="00:19:28.390">romans languages</p>
+      <p begin="00:19:28.390" end="00:19:34.080">are heavily inflicted languages as a fuzzy way of saying...just too many ways to say things ...you know,</p>
+      <p begin="00:19:34.080" end="00:19:40.810">for example, romans language includes the in spanish french...for someone spanish</p>
+      <p begin="00:19:40.810" end="00:19:45.740">...for goal has like maybe fifteen inflections sixteen fiction some ridiculous number</p>
+      <p begin="00:19:45.740" end="00:19:50.510">they're very regular so...hard to catch-all the forms of it and they body we things</p>
+      <p begin="00:19:50.510" end="00:19:54.400">...gender and...and combinations of them so,</p>
+      <p begin="00:19:54.400" end="00:20:00.500">these things are tricky even...in english there are things like do not all the verb not all the...announcer</p>
+      <p begin="00:20:00.500" end="00:20:05.350">...regular with respect to...some form so, you have to have awareness of</p>
+      <p begin="00:20:05.350" end="00:20:11.080">all these details so,...search include support for fifty languages</p>
+      <p begin="00:20:11.080" end="00:20:16.230">out-of-the-box where you can just use a default very general-purpose</p>
+      <p begin="00:20:16.230" end="00:20:19.700">and, that we call them analyzers because they do more than just</p>
+      <p begin="00:20:19.700" end="00:20:25.280">...breaking the process the do a number of things with the input and this is terminology borrow...from</p>
+      <p begin="00:20:25.280" end="00:20:32.280">...scene which is ...open-source ...of...the search library so,</p>
+      <p begin="00:20:32.280" end="00:20:36.510">we offer standard analyzer just worse like uses genetic,</p>
+      <p begin="00:20:36.510" end="00:20:41.960">genetic I'll functionality to deal with language and that's okay that's pretty...western languages not so much and</p>
+      <p begin="00:20:41.960" end="00:20:43.750">...then we ledges</p>
+      <p begin="00:20:43.750" end="00:20:49.350">to specific languages we are surface to sets we...seen analyzer</p>
+      <p begin="00:20:49.350" end="00:20:53.800">said this is a well-known in the industry we surface m asses so that if</p>
+      <p begin="00:20:53.800" end="00:21:00.070">you already have investments in the area or if, you know, them well and you want...function...can get the</p>
+      <p begin="00:21:00.070" end="00:21:04.450">...also do many of them when appropriate for the language they do stemming,</p>
+      <p begin="00:21:04.450" end="00:21:10.340">stemming is way to get the...and...the words of up a prefix of the word that</p>
+      <p begin="00:21:10.340" end="00:21:17.170">...the same across variations of the word, for example, when you have variations in number?</p>
+      <p begin="00:21:17.170" end="00:21:23.060">...languages like english is really effective we also went and took like</p>
+      <p begin="00:21:23.060" end="00:21:27.820">a we when we working on building search we were looking around to see how we</p>
+      <p begin="00:21:27.820" end="00:21:32.820">could get more language coverage and...out that the office guys know a bunch of all these to have the word</p>
+      <p begin="00:21:32.820" end="00:21:38.020">grammar backhand and...colors and things like that for many languages the bing...also</p>
+      <p begin="00:21:38.020" end="00:21:43.430">noble a bunch of these and...how the thing that we went and, into...into search so,</p>
+      <p begin="00:21:43.430" end="00:21:47.210">this allows us to a have more language coverage but,</p>
+      <p begin="00:21:47.210" end="00:21:52.530">also give you a different options on certain languages depending on what you want</p>
+      <p begin="00:21:52.530" end="00:21:56.980">to optimize for like...one concrete example of dc the microsoft analyzers</p>
+      <p begin="00:21:56.980" end="00:22:04.010">...this limitation for a number of languages...and it's a little bit on the details</p>
+      <p begin="00:22:04.010" end="00:22:09.450">...but it actually has an effect on...apps where sometimes</p>
+      <p begin="00:22:09.450" end="00:22:14.850">...good volume of data and then snuff vocabulary...people which is fine with the looking for</p>
+      <p begin="00:22:14.850" end="00:22:21.090">using the words in the dataset when they search but sometimes either is a dataset smaller you</p>
+      <p begin="00:22:21.090" end="00:22:25.950">have...regal problems like you usually don't find the documents are looking for within the</p>
+      <p begin="00:22:25.950" end="00:22:29.330">...then you want to be more aggressive about finding</p>
+      <p begin="00:22:29.330" end="00:22:34.840">were variations and things like that limitation is a way to find all word variations</p>
+      <p begin="00:22:34.840" end="00:22:39.470">understanding language so you can you catch things like variations intense that are not regular so</p>
+      <p begin="00:22:39.470" end="00:22:46.380">you can't...to understand...we're talking about there's no there's no obvious choice here there's no one</p>
+      <p begin="00:22:46.380" end="00:22:51.510">...better than the other this are different so, again, this is the...you choose through,</p>
+      <p begin="00:22:51.510" end="00:22:53.060">through experimentation</p>
+      <p begin="00:22:53.060" end="00:22:57.720">we show you a couple of examples to illustrate the difference between these...</p>
+      <p begin="00:22:57.720" end="00:23:01.510">first to show you these...for so you would.</p>
+      <p begin="00:23:01.510" end="00:23:06.660">The index I'm going to use to demonstrated so I have this index</p>
+      <p begin="00:23:06.660" end="00:23:13.140">that is simplified version of what we're going to use for the rest of the app that what it does</p>
+      <p begin="00:23:13.140" end="00:23:17.800">is these...not like me today so,what it does</p>
+      <p begin="00:23:17.800" end="00:23:22.640">is I took all the session abstracts and I index them three times or</p>
+      <p begin="00:23:22.640" end="00:23:26.400">...three fields one of them using standard analyzer node</p>
+      <p begin="00:23:26.400" end="00:23:32.260">language aware the other one using ...you seen english analyzer after one</p>
+      <p begin="00:23:32.260" end="00:23:37.210">...microsoft...that's the way we can have contrast the...run the</p>
+      <p begin="00:23:37.210" end="00:23:39.820">...while we wait for these and then what I do</p>
+      <p begin="00:23:39.820" end="00:23:43.320">...I wrote the sketchy ist ever web page</p>
+      <p begin="00:23:43.320" end="00:23:49.910">...to just try this out so you're not going to impressed by the visuals but let me</p>
+      <p begin="00:23:49.910" end="00:23:54.380">...few things so if I said for something like web then we'll</p>
+      <p begin="00:23:54.380" end="00:23:57.090">...bunch of service all is just a wall of</p>
+      <p begin="00:23:57.090" end="00:24:01.770">...across-the-board and there's not a lot about the ability to that but let me pick on something more specific like,</p>
+      <p begin="00:24:01.770" end="00:24:07.070">for example, the word find so, you can see there is a little bit of variation and part of</p>
+      <p begin="00:24:07.070" end="00:24:11.940">it is for things like inflections and one thing I can do is</p>
+      <p begin="00:24:11.940" end="00:24:15.600">I'm using highlight there's which is one of the features that we have where you can</p>
+      <p begin="00:24:15.600" end="00:24:20.340">ask the system why do we much particular thing so if I hover over these things you can see</p>
+      <p begin="00:24:20.340" end="00:24:25.310">that pound you can choose what separator you want the cy do-too-much</p>
+      <p begin="00:24:25.310" end="00:24:30.610">particular a particular document so this for example, this</p>
+      <p begin="00:24:30.610" end="00:24:35.920">...an instance where...fragile if you should say tight fines</p>
+      <p begin="00:24:35.920" end="00:24:38.830">...to find then find is</p>
+      <p begin="00:24:38.830" end="00:24:43.620">like even if we don't do this but we don't do prefix search by default but even if</p>
+      <p begin="00:24:43.620" end="00:24:47.340">...not a prefix of...you just don't find...stuff so,</p>
+      <p begin="00:24:47.340" end="00:24:52.920">tiny things like that variations number and these case reasons on who you're</p>
+      <p begin="00:24:52.920" end="00:24:57.300">talking about which is getting the way of recall and this may or may not be a problem in some cases</p>
+      <p begin="00:24:57.300" end="00:25:01.820">find has another problem which is any regular verbs?</p>
+      <p begin="00:25:01.820" end="00:25:03.590">So, if you want to say found</p>
+      <p begin="00:25:03.590" end="00:25:06.900">define even though probably none of these guys say found anywhere</p>
+      <p begin="00:25:08.130" end="00:25:14.900">...say find we still we still can locate them so, this...in</p>
+      <p begin="00:25:14.900" end="00:25:20.000">mostly in verbs in most languages but you see happening now in...sometimes</p>
+      <p begin="00:25:20.000" end="00:25:25.130">...a very contrived scenario turns out that is one talk...a word...in it so,</p>
+      <p begin="00:25:25.130" end="00:25:29.760">if you if I say miles that I've I...everywhere here's one thing you can see out of</p>
+      <p begin="00:25:29.760" end="00:25:35.390">what mechanical streaming does so...doesn't exist.</p>
+      <p begin="00:25:35.390" end="00:25:42.100">But, ... state...usually what they do is they chop off the front of the...sometimes just a little bit</p>
+      <p begin="00:25:42.100" end="00:25:48.140">...still find it and, then if you say my eyes which is a plural form then...only find if you do</p>
+      <p begin="00:25:48.140" end="00:25:53.150">...this is not...a good thing is usually good if you have</p>
+      <p begin="00:25:53.150" end="00:25:58.140">regal problems but again it means you'll find a lot of stuff so sometimes you may just</p>
+      <p begin="00:25:58.140" end="00:26:02.270">get...of...and if you have good polarizing ranking then</p>
+      <p begin="00:26:02.270" end="00:26:04.450">this is counterproductive you have good ranking</p>
+      <p begin="00:26:04.450" end="00:26:14.700">...is good stuff because you get good recall and the same time would ranking to get the...it.</p>
+      <p begin="00:26:14.700" end="00:26:19.340">All right so that's languages so now we have an index we picked languages for some of the columns we might have left</p>
+      <p begin="00:26:19.340" end="00:26:25.430">the default for others and, the next step is how do we get data into the index.</p>
+      <p begin="00:26:25.430" end="00:26:30.010">There are two main options to the get data into the index you can push data into</p>
+      <p begin="00:26:30.010" end="00:26:33.420">...or you can let us pull into the index.</p>
+      <p begin="00:26:33.420" end="00:26:36.990">So, the first option is ...offer and api the same</p>
+      <p begin="00:26:36.990" end="00:26:41.070">rest api where you can define indexes and who gets to you should searches cuss</p>
+      <p begin="00:26:41.070" end="00:26:45.270">...point where you can send us barge...requests...up to a thousand</p>
+      <p begin="00:26:46.440" end="00:26:50.090">...like action seen them what actions can be...or</p>
+      <p begin="00:26:50.090" end="00:26:56.060">upload the lead so on you can send them at any time we process them...synchronous</p>
+      <p begin="00:26:56.060" end="00:27:01.650">...not...is not a...assistant models so once we acknowledge back</p>
+      <p begin="00:27:01.650" end="00:27:05.780">to you that we took it doesn't mean that...right away we may take a few seconds to</p>
+      <p begin="00:27:05.780" end="00:27:11.010">re index because we have to modify welcoming them to the section...to modify the of the</p>
+      <p begin="00:27:11.010" end="00:27:15.940">underline indexes to make it searchable may take a few seconds and then you'll see it but you can do this</p>
+      <p begin="00:27:15.940" end="00:27:23.510">...your cadence ...things happen your application this question?</p>
+      <p begin="00:27:23.510" end="00:27:27.650">The question is a way to know...data has been index null and,</p>
+      <p begin="00:27:27.650" end="00:27:30.080">...I guess yes you can search for it but</p>
+      <p begin="00:27:30.080" end="00:27:35.810">...like you have to know like a unique thing that especially</p>
+      <p begin="00:27:35.810" end="00:27:37.310">...record is particularly</p>
+      <p begin="00:27:37.310" end="00:27:43.320">tricky because you have to search for the difference which is hard to identify we</p>
+      <p begin="00:27:43.320" end="00:27:48.380">...currently provide a way to this we thought about providing like tracking values the challenge</p>
+      <p begin="00:27:48.380" end="00:27:53.140">with that is that you may like in the time you turn around from the update and go to check if</p>
+      <p begin="00:27:53.140" end="00:27:58.540">it completed you may have...interleaved update so, it's unclear what state are</p>
+      <p begin="00:27:58.540" end="00:28:09.160">...so, we haven't done we haven't done anything about that yet?</p>
+      <p begin="00:28:09.160" end="00:28:15.340">When it comes to push indexing...is ...a couple of ways you...approach these one is</p>
+      <p begin="00:28:15.340" end="00:28:17.930">...happen you can goal turn-around and</p>
+      <p begin="00:28:17.930" end="00:28:22.910">...index an example of these maybe replication back-end you get the update you push them into</p>
+      <p begin="00:28:22.910" end="00:28:27.800">the database at the same time you will push them into the index or you put them in a q and you have a worker</p>
+      <p begin="00:28:27.800" end="00:28:33.190">the picks up from the...updating index...I...about that is that changes in the</p>
+      <p begin="00:28:33.190" end="00:28:36.840">index happen...less...hopping in the application so for things that</p>
+      <p begin="00:28:36.840" end="00:28:41.560">where the user may make a change and immediately turn around and see the changes there that's a good</p>
+      <p begin="00:28:41.560" end="00:28:45.120">potter this otherwise people think the update dion work or something so you</p>
+      <p begin="00:28:45.120" end="00:28:50.600">...do something where you do it relatively quickly it also means that since you</p>
+      <p begin="00:28:50.600" end="00:28:54.160">were calling us the data can be anywhere so they</p>
+      <p begin="00:28:54.160" end="00:28:59.050">it has to make it into index but we don't care if you got it from some other asher service if you</p>
+      <p begin="00:28:59.050" end="00:29:04.280">buy it from unknown premise piece of code that actually even the called indexing goes not running on</p>
+      <p begin="00:29:04.280" end="00:29:07.920">ashes running on your own servers or even smaller cloud thing</p>
+      <p begin="00:29:07.920" end="00:29:12.210">we'd like as soon as you manage to called us we don't care where you're coming from...music</p>
+      <p begin="00:29:12.210" end="00:29:18.340">and index anything in terms of patterns wanting the fits really well here if you want more of a periodic thing</p>
+      <p begin="00:29:18.340" end="00:29:23.070">...if you're pulling from a...is so, web apps and nownext thanks to the</p>
+      <p begin="00:29:23.070" end="00:29:30.130">up service integration storymobile apps as well...thing called web jobs for those</p>
+      <p begin="00:29:30.130" end="00:29:34.490">...media we what jobs...great way to run arbitrary background code</p>
+      <p begin="00:29:34.490" end="00:29:41.420">...application in addition to the interactive directed called so...you?</p>
+      <p begin="00:29:41.420" end="00:29:44.970">If you want...</p>
+      <p begin="00:29:44.970" end="00:29:49.110">Indexing web jobs would you can do is in any roller.</p>
+      <p begin="00:29:49.110" end="00:29:57.190">Mobile or web application you can go to the...and then there is a way to...</p>
+      <p begin="00:29:57.190" end="00:30:02.120">A...you web job project usually web jobs are simple consul apps ditches</p>
+      <p begin="00:30:02.120" end="00:30:07.110">deployed in a way that get running the background and then you can choose to use the</p>
+      <p begin="00:30:07.110" end="00:30:12.030">...more integration whenever you can just run on your own a simple example have a simple</p>
+      <p begin="00:30:12.030" end="00:30:14.990">example recreated here where.</p>
+      <p begin="00:30:14.990" end="00:30:20.610">order is to program...just new in the host waiting for it and then I have a simple function</p>
+      <p begin="00:30:20.610" end="00:30:25.670">where during initialization I get my own client and have a see the different index here they</p>
+      <p begin="00:30:25.670" end="00:30:29.650">...has had set up and then what you can annotate</p>
+      <p begin="00:30:29.650" end="00:30:33.130">methods we particular three years and then triggers just do a lot</p>
+      <p begin="00:30:33.130" end="00:30:37.660">of work for you in this case how this three-year that says...new blobs in these</p>
+      <p begin="00:30:37.660" end="00:30:42.050">...storage blog container just...me and here you can use a</p>
+      <p begin="00:30:42.050" end="00:30:46.720">blog type and then you get all information about the blob or in the case in the similar case where,</p>
+      <p begin="00:30:46.720" end="00:30:51.200">you know, it's just some text you can just have a string and then they'll just extract the text and then pass you</p>
+      <p begin="00:30:51.200" end="00:30:55.540">...dexter function ...actually pretty completed like if you</p>
+      <p begin="00:30:55.540" end="00:31:00.180">...exceptional retry later they do place message handling is actually really good solution we've been</p>
+      <p begin="00:31:00.180" end="00:31:05.400">...work...the awesome thing that...locally as what because it's just a consul apps it's very easy to</p>
+      <p begin="00:31:05.400" end="00:31:10.560">debug and...and you can deployed as part of your application so,</p>
+      <p begin="00:31:10.560" end="00:31:13.790">what we are actually doing here is?</p>
+      <p begin="00:31:13.790" end="00:31:18.380">Whenever we get a new blading will catch blob will build a batch...case</p>
+      <p begin="00:31:18.380" end="00:31:20.650">...one document batch.</p>
+      <p begin="00:31:20.650" end="00:31:24.490">When we create a new id we take the content and we make-up a</p>
+      <p begin="00:31:24.490" end="00:31:28.740">new field called date and them which is called index and that which is</p>
+      <p begin="00:31:28.740" end="00:31:32.760">...two-story from succeeds...a few seconds later you can search it and,</p>
+      <p begin="00:31:32.760" end="00:31:38.470">this is I mean you should an example of how this looks like when runs storage</p>
+      <p begin="00:31:38.470" end="00:31:43.080">explorer I have a container here with a couple of blobs the also keep track of what blogs they</p>
+      <p begin="00:31:43.080" end="00:31:52.240">...went through and call-you foresee...to your and...staff?</p>
+      <p begin="00:31:52.240" end="00:31:55.090">Let's create a new blog here.</p>
+      <p begin="00:31:55.090" end="00:32:05.550">And, then sort...pinpoint here so if I run this guy.</p>
+      <p begin="00:32:05.550" end="00:32:10.660">Then on start-up the risk...detect changes and then what they do is every few minutes I think</p>
+      <p begin="00:32:10.660" end="00:32:15.330">the windows incoming up-to-the-minute so it's...real-time thing but it's pretty regular then they'll detect</p>
+      <p begin="00:32:15.330" end="00:32:21.380">changes and then call your function to kind of catch up the one thing to think</p>
+      <p begin="00:32:21.380" end="00:32:27.220">to think about is in this case if you have something where...added maybe a few a minute or a few</p>
+      <p begin="00:32:27.220" end="00:32:31.980">...then you can do something like this because the permeability so cling linking...you can see</p>
+      <p begin="00:32:31.980" end="00:32:36.900">...a content of...blob...build a badge and then we'll call index to</p>
+      <p begin="00:32:36.900" end="00:32:41.460">...bunch in the client...if we didn't get any exceptions ...</p>
+      <p begin="00:32:41.460" end="00:32:49.650">just give five and if I go here now?</p>
+      <p begin="00:32:49.650" end="00:32:54.560">If a few minutes or a few seconds we check again statistics are not updated real-time once</p>
+      <p begin="00:32:54.560" end="00:33:00.740">the updated the here which...see like...document here like a document...the three because we</p>
+      <p begin="00:33:00.740" end="00:33:03.810">...documents as they happen.</p>
+      <p begin="00:33:03.810" end="00:33:10.330">I...the portal...up a little bit.</p>
+      <p begin="00:33:10.330" end="00:33:14.550">So, anyway, so, the great...push then is you can get</p>
+      <p begin="00:33:14.550" end="00:33:18.060">data from anywhere you can push data...your own pace and you can</p>
+      <p begin="00:33:18.060" end="00:33:22.610">...things together and, if you have something like this one did regularly you can use web jobs if</p>
+      <p begin="00:33:22.610" end="00:33:28.440">you want to attractively you can...with the rest of europe so how the...what if you don't want to do</p>
+      <p begin="00:33:28.440" end="00:33:32.550">this work and you want us to do it for you so we have this other thing</p>
+      <p begin="00:33:32.550" end="00:33:34.220">...indexes...</p>
+      <p begin="00:33:34.220" end="00:33:39.020">index serves our mechanism that allows us to do the bulk of the work for indexing</p>
+      <p begin="00:33:39.020" end="00:33:43.630">for-you so the way...work is we have a set of specific data sources we support</p>
+      <p begin="00:33:43.630" end="00:33:47.130">...support the sequel database and asher nash's...</p>
+      <p begin="00:33:47.130" end="00:33:52.870">be you can also do it without from the m if you set up the if I was right and,</p>
+      <p begin="00:33:52.870" end="00:33:58.900">we also support document db out-of-the-box when you create...would usually point</p>
+      <p begin="00:33:58.900" end="00:34:02.140">...this tour you give us specific data container like</p>
+      <p begin="00:34:02.140" end="00:34:05.540">a table recollection review and then you give us a policy</p>
+      <p begin="00:34:05.540" end="00:34:10.670">a policy includes things like how often to check for changes and how</p>
+      <p begin="00:34:10.670" end="00:34:16.220">to change detection and deletion detection and, we...information will do everything else so you can</p>
+      <p begin="00:34:16.220" end="00:34:20.720">set up and just fight it off and then we'll regularly execute these and,</p>
+      <p begin="00:34:20.720" end="00:34:25.810">put information...there are ...indexes and indexes of</p>
+      <p begin="00:34:25.810" end="00:34:30.740">these separate things that are a number of interesting scenarios a come out of these ...so,</p>
+      <p begin="00:34:30.740" end="00:34:31.890">for example, like the trivial</p>
+      <p begin="00:34:31.890" end="00:34:36.940">...you have...index you have a data source let's...have a document db database and have a collection</p>
+      <p begin="00:34:36.940" end="00:34:41.060">in it so you can pulled from there and set it up on the index and then you set it up</p>
+      <p begin="00:34:41.060" end="00:34:47.840">...forget...go watch it to make sure it's in good shape and you can monitor into portal?</p>
+      <p begin="00:34:47.840" end="00:34:51.930">But,...you can do all combinations like, for example, you can have to data sources to</p>
+      <p begin="00:34:51.930" end="00:34:56.900">indexes same index so...an example of...maybe you have your dayton</p>
+      <p begin="00:34:56.900" end="00:35:01.800">documentaries you push from there but then maybe you have these analytics loop that maybe</p>
+      <p begin="00:35:01.800" end="00:35:06.540">gobs the laws and things like that computes interesting signals are tags of this classification for your</p>
+      <p begin="00:35:06.540" end="00:35:11.330">users and then you turn around and that after all that analyses put that</p>
+      <p begin="00:35:11.330" end="00:35:15.040">...a...table and periodically pulled from...table...</p>
+      <p begin="00:35:15.040" end="00:35:20.760">into the same index we use merge operations for these so as long as the keys line-up maybe, you know,</p>
+      <p begin="00:35:20.760" end="00:35:25.030">one of them of...the first by columns and the one of the second two columns or</p>
+      <p begin="00:35:25.030" end="00:35:29.630">...so there's a way of consolidating multiple data streams into a search</p>
+      <p begin="00:35:29.630" end="00:35:34.390">...index to construct the whole experience the opposite also works you can</p>
+      <p begin="00:35:34.390" end="00:35:40.660">have multiple indexes with multiple indexes...the same data...of these let's say one multiple</p>
+      <p begin="00:35:40.660" end="00:35:44.210">sub services in multiple regions around the globe either for redundancy</p>
+      <p begin="00:35:44.210" end="00:35:47.460">...for latency optimization you can do is you can</p>
+      <p begin="00:35:47.460" end="00:35:51.880">...your primary storing a single place what they have multiple search services each one</p>
+      <p begin="00:35:51.880" end="00:35:56.070">...index appointing all of the same data store so they all follow the changes</p>
+      <p begin="00:35:56.070" end="00:35:59.250">...hub in the primary store il independently</p>
+      <p begin="00:35:59.250" end="00:36:06.940">populate their own indexes so there are many ways you can kind of a range these into workable scenario.</p>
+      <p begin="00:36:06.940" end="00:36:15.780">Let me show you...how do we set this up and what this look like...portal?</p>
+      <p begin="00:36:15.780" end="00:36:20.800">So, first of all I mentioned if you have this is...a different service I...what</p>
+      <p begin="00:36:20.800" end="00:36:26.030">...set-up and a run for a while so when you have...you can monitor the indexes index...</p>
+      <p begin="00:36:26.030" end="00:36:30.960">the...you can see success and failure rate because these things running the background so you need to find a way to know</p>
+      <p begin="00:36:30.960" end="00:36:35.810">know-how to how they're doing you can monitor them through the api or you can come to the portal and you can</p>
+      <p begin="00:36:35.810" end="00:36:40.750">see execution times and frequency and if...errors you can go here and see the</p>
+      <p begin="00:36:40.750" end="00:36:46.760">adverse...happened in the last execution or the last few executions.</p>
+      <p begin="00:36:46.760" end="00:36:50.740">So, following the pattern that we had before it's actually as part of treating the</p>
+      <p begin="00:36:50.740" end="00:36:56.870">...create and index are.</p>
+      <p begin="00:36:56.870" end="00:36:58.500">So, let's...</p>
+      <p begin="00:37:03.150" end="00:37:08.120">I'm bringing this piece of code this does is it creates to pieces and index are</p>
+      <p begin="00:37:08.120" end="00:37:12.030">...there's three moving parts...index and we already have one of those</p>
+      <p begin="00:37:12.030" end="00:37:15.830">...source the defines how do we get to...source of the data and then there's the index</p>
+      <p begin="00:37:15.830" end="00:37:21.500">which is the policies and the connection point between the source and...you create and</p>
+      <p begin="00:37:21.500" end="00:37:25.520">a data source the things you say to give a name so we can mention it in</p>
+      <p begin="00:37:25.520" end="00:37:30.440">thein other parts of the system...type today you can...say two things here you can say</p>
+      <p begin="00:37:30.440" end="00:37:34.770">documentary or...can...asher sequel as we are more sources you'll see them show up</p>
+      <p begin="00:37:34.770" end="00:37:39.460">here you can...container in this case the...in the context of...to be the</p>
+      <p begin="00:37:39.460" end="00:37:43.890">...a collection name in sql it could be like a table or view.</p>
+      <p begin="00:37:43.890" end="00:37:47.130">The other thing we support is if you don't say anything which is</p>
+      <p begin="00:37:47.130" end="00:37:49.790">...pulled from the table or in this case</p>
+      <p begin="00:37:49.790" end="00:37:54.570">the collection but you can also give us an arbitrary query which means you can do things like</p>
+      <p begin="00:37:54.570" end="00:37:58.160">filter's stuff before...makes it less maybe you have a thing a column that says, you know,</p>
+      <p begin="00:37:58.160" end="00:38:03.080">search radius null or you can transform let's say you're input it's</p>
+      <p begin="00:38:03.080" end="00:38:07.690">needs and it's in the case of...we may need some flattening in the case of sql you may want to do some</p>
+      <p begin="00:38:07.690" end="00:38:13.160">...normalization often use these...but if you want you...you enlightened here</p>
+      <p begin="00:38:13.160" end="00:38:16.720">and...encapsulate the whole thing on the on the data source definition</p>
+      <p begin="00:38:18.300" end="00:38:22.800">...of course and then we'll ob movie to policies</p>
+      <p begin="00:38:22.800" end="00:38:27.330">we need to know how to detect the things changed and we need to know how to...the things</p>
+      <p begin="00:38:27.330" end="00:38:34.100">got deleted for change detection it depends on the data source we have if you targeting</p>
+      <p begin="00:38:34.100" end="00:38:35.580">...asher and</p>
+      <p begin="00:38:35.580" end="00:38:39.950">...tables we can usechange...mechanism that's built into</p>
+      <p begin="00:38:39.950" end="00:38:45.910">sequel there is very efficient it allows us to track inserts updates on the</p>
+      <p begin="00:38:45.910" end="00:38:52.420">...as well...works so, it's very convenient for these ...other thing we can do is going to high</p>
+      <p begin="00:38:52.420" end="00:38:57.410">...both in sql you can do role version...the...column</p>
+      <p begin="00:38:57.410" end="00:39:02.390">underscore ts the...decide that then we'll use that as way to detect when things</p>
+      <p begin="00:39:02.390" end="00:39:06.660">were new...modified and for...you can give a dumb stones you can give us a</p>
+      <p begin="00:39:06.660" end="00:39:11.220">field say called deleted or something like that you can say when they feel has these value then</p>
+      <p begin="00:39:11.220" end="00:39:15.250">conceded deleted from the next and then you can garbage collect them from your additional source ones,</p>
+      <p begin="00:39:15.250" end="00:39:21.800">you know, the we caught up and, finally the index are has name has a data serves...and</p>
+      <p begin="00:39:21.800" end="00:39:26.820">index so...brings all the parts together and has...in this case and saying, you know,</p>
+      <p begin="00:39:26.820" end="00:39:28.880">every ten minutes?</p>
+      <p begin="00:39:28.880" end="00:39:32.640">So, great so we have an index and we have an index are.</p>
+      <p begin="00:39:32.640" end="00:39:40.450">Let me update these pieces.</p>
+      <p begin="00:39:40.450" end="00:39:45.340">There so what we do during...then is we create an index create and index are</p>
+      <p begin="00:39:45.340" end="00:39:50.130">...don't...your...I'm resetting here because I did one before and</p>
+      <p begin="00:39:50.130" end="00:39:55.090">I want to make sure...said the state of index are if you re said that what that means is forget about your change</p>
+      <p begin="00:39:55.090" end="00:40:00.880">...information and start over and then...right here just because if not...have to wait you know,</p>
+      <p begin="00:40:00.880" end="00:40:05.410">for five minutes this is very convenient during iteration and dividing you can</p>
+      <p begin="00:40:05.410" end="00:40:10.540">...to schedule you can run index interactively?</p>
+      <p begin="00:40:10.540" end="00:40:15.610">at this point we have enough million...doing start-up this application should</p>
+      <p begin="00:40:15.610" end="00:40:23.880">not do anything interesting on the search side but you will it will.</p>
+      <p begin="00:40:23.880" end="00:40:26.850">...index and I would index...support</p>
+      <p begin="00:40:26.850" end="00:40:32.450">the really doesn't like me today but if you maybe you get into a better mood.</p>
+      <p begin="00:40:32.450" end="00:40:40.570">Let's see if I can show you the index.</p>
+      <p begin="00:40:40.570" end="00:40:48.020">...is going to index...minute so, the other thing I'm going to...one so,</p>
+      <p begin="00:40:48.020" end="00:40:55.070">what I'm doing here is...have a document...collection</p>
+      <p begin="00:40:55.070" end="00:40:59.420">That has ...sessions so my index are going-to-take</p>
+      <p begin="00:40:59.420" end="00:41:05.640">...from documentary...push into a index so let me quickly show you</p>
+      <p begin="00:41:05.640" end="00:41:11.580">the dogma explorer let me show you an example of a document so</p>
+      <p begin="00:41:11.580" end="00:41:14.310">these what a document looks like has like codec has a title</p>
+      <p begin="00:41:14.310" end="00:41:18.080">has an abstract a few tags speakers and an start time</p>
+      <p begin="00:41:18.080" end="00:41:25.400">...pm standard priest on their stuff so now all of that is in the search index.</p>
+      <p begin="00:41:25.400" end="00:41:30.530">So, what we want to do now is actually search for stuff we have the...index either we push</p>
+      <p begin="00:41:30.530" end="00:41:34.870">...we pulled ...index...and the next steps to search?</p>
+      <p begin="00:41:35.980" end="00:41:41.440">So, ...mechanics of search tend to be pretty simple because once you manage to get the</p>
+      <p begin="00:41:41.440" end="00:41:46.250">data in place then all you into...collect...requests and push them into...</p>
+      <p begin="00:41:46.250" end="00:41:51.670">research will if you...sayings specific about ranking...talk about ranking in a minute then was</p>
+      <p begin="00:41:51.670" end="00:41:55.840">just default ranking...use the frequencies of the words and things like that to find with</p>
+      <p begin="00:41:55.840" end="00:42:02.030">the most interesting documents and then return a set of matching...ranking order we support</p>
+      <p begin="00:42:02.030" end="00:42:07.860">simple primitives like plus-minus to take the search a little bit think of it does and</p>
+      <p begin="00:42:07.860" end="00:42:11.720">...query options kind of thing more than a</p>
+      <p begin="00:42:11.720" end="00:42:16.230">developers not query language is we have separately from these we have filters</p>
+      <p begin="00:42:16.230" end="00:42:20.720">and projections and sorting so one that is more like now would you would exposed to the user but</p>
+      <p begin="00:42:20.720" end="00:42:26.580">...would you use in addition to the user input if you want to filter sort things so,</p>
+      <p begin="00:42:26.580" end="00:42:32.440">what interesting...you have to make when you're searching is going to such from the client or even search from the</p>
+      <p begin="00:42:32.440" end="00:42:37.190">in the data you have needs to be secure is not public then the options clear you</p>
+      <p begin="00:42:37.190" end="00:42:41.980">...from...of...have to hide the keys you can't...if you can access from the client say</p>
+      <p begin="00:42:41.980" end="00:42:45.210">from the browser phone you can access index directly than everybody else</p>
+      <p begin="00:42:45.210" end="00:42:51.080">...in some cases turns out...your search indexes are very exposing all information...the</p>
+      <p begin="00:42:51.080" end="00:42:54.730">...there's nothing internal there in that case you may choose to do</p>
+      <p begin="00:42:54.730" end="00:43:00.540">it from the client you save a latency...so you...latency there and, you can do everything</p>
+      <p begin="00:43:00.540" end="00:43:06.950">like javascript or in case of the phone you can do...directly from a phone or more device the</p>
+      <p begin="00:43:06.950" end="00:43:11.310">other thing you can think about here is when you rendered search results</p>
+      <p begin="00:43:11.310" end="00:43:16.670">what you can choose what to pulled from the index and you can also choose to stashed things in...not searchable you can</p>
+      <p begin="00:43:16.670" end="00:43:21.430">...everything...allows you to do is you can stash information in the index</p>
+      <p begin="00:43:21.430" end="00:43:25.570">...rendering purposes even though it's not about search this says you</p>
+      <p begin="00:43:25.570" end="00:43:28.140">...primary store so for example,</p>
+      <p begin="00:43:28.140" end="00:43:32.940">if...search results uone maybe a picture and some description...you that you're not searching you can</p>
+      <p begin="00:43:32.940" end="00:43:36.730">...the url to it in a fielding search</p>
+      <p begin="00:43:36.730" end="00:43:41.950">...doing the in the search results and then...the...you can do full rendering without touching your primary</p>
+      <p begin="00:43:41.950" end="00:43:43.830">...and much is going to be much faster?</p>
+      <p begin="00:43:44.940" end="00:43:53.100">So, let's very quickly hook up hook up search here.</p>
+      <p begin="00:43:53.100" end="00:43:57.000">So, what I do for search is?</p>
+      <p begin="00:43:57.000" end="00:44:03.150">I have this very simple the page and this bring in a kind of a couple of building blocks to.</p>
+      <p begin="00:44:03.150" end="00:44:07.320">And, I walk you through each part that I'm bringing.</p>
+      <p begin="00:44:07.320" end="00:44:09.900">So, first thing I...a simple least.</p>
+      <p begin="00:44:09.900" end="00:44:12.000">We can...the results so let's put</p>
+      <p begin="00:44:12.000" end="00:44:16.400">this in here so what I do this is a small for this...amusing</p>
+      <p begin="00:44:16.400" end="00:44:21.140">...so I get to type I...a title...for review I'm just using what they</p>
+      <p begin="00:44:21.140" end="00:44:26.220">search the search primitive in the asher...returns which is a very</p>
+      <p begin="00:44:26.220" end="00:44:29.900">convenient molly has...for the hits on the documents...so on</p>
+      <p begin="00:44:31.100" end="00:44:35.110">so, what I'm doing here is for each kid gets...the title of the talk</p>
+      <p begin="00:44:35.110" end="00:44:42.530">...is the...talks and then the start time on the room?</p>
+      <p begin="00:44:42.530" end="00:44:47.220">The other thing that...have to think about isthere's a contest between where</p>
+      <p begin="00:44:47.220" end="00:44:52.040">it would be doing you rent new rendering these in big-screen for small screens say a mobile app</p>
+      <p begin="00:44:52.040" end="00:44:57.290">versus a web...in...tend to have especially if you're targeting the desktop you tend to have a lot more</p>
+      <p begin="00:44:57.290" end="00:45:01.510">real state and you want to use that to make navigation easier on the phone</p>
+      <p begin="00:45:01.510" end="00:45:05.420">or more devices you especially in the for your more...and,</p>
+      <p begin="00:45:05.420" end="00:45:10.950">usually a better off getting fancier...tell you process input rather than trying to get...on what</p>
+      <p begin="00:45:10.950" end="00:45:15.960">...display and make people navigate because there's just no real-estate for that so let's start with</p>
+      <p begin="00:45:15.960" end="00:45:20.250">the web version amid and for the web version of it what unless you might have some good real-estate</p>
+      <p begin="00:45:20.250" end="00:45:22.830">...to facets and I'm going to show you what...thirty-minute</p>
+      <p begin="00:45:24.650" end="00:45:28.830">so,do facets you'll see how the all of these comes together...that I'm going</p>
+      <p begin="00:45:28.830" end="00:45:30.790">to facets and speaker's tags?</p>
+      <p begin="00:45:31.870" end="00:45:34.220">On start time.</p>
+      <p begin="00:45:34.220" end="00:45:36.040">So, now they have some html here.</p>
+      <p begin="00:45:37.110" end="00:45:40.450">Let me bring in the method that would actually do a search so what I'll do is</p>
+      <p begin="00:45:40.450" end="00:45:46.690">I'll go to the default controller the have anything interesting there yet.</p>
+      <p begin="00:45:46.690" end="00:45:51.350">And,...I'll say is...a search parameter and if there is a search in</p>
+      <p begin="00:45:51.350" end="00:45:54.120">a input then I construct</p>
+      <p begin="00:45:54.120" end="00:45:58.890">such parameters options whereas say I want to top twenty.</p>
+      <p begin="00:45:58.890" end="00:46:01.150">I want to total count as well and also include</p>
+      <p begin="00:46:01.150" end="00:46:06.090">...filter a filter's usually not surface...I'm doing is here so we get so I can illustrate</p>
+      <p begin="00:46:06.090" end="00:46:11.070">...point but these are things like imagine you have documents...for publishing yes null or you have the</p>
+      <p begin="00:46:11.070" end="00:46:15.530">...you want to say only a documents...have these user may minute so, fingers</p>
+      <p begin="00:46:15.530" end="00:46:22.450">...structure...separate from search...kind of the soft thing what is this is like...classing</p>
+      <p begin="00:46:22.450" end="00:46:28.310">...statement and then what I'm doing is I'm just calling remember that we stashed out the index client</p>
+      <p begin="00:46:28.310" end="00:46:31.530">in nbc up so I'm calling documents that so chasing</p>
+      <p begin="00:46:31.530" end="00:46:38.510">...the search...that I got from the...the parameters and...token?</p>
+      <p begin="00:46:38.510" end="00:46:43.530">So, let me...guy who actually forgot to detail ...remember</p>
+      <p begin="00:46:43.530" end="00:46:48.190">I mention facets so facets out a way of calculating subtitles of things that matched</p>
+      <p begin="00:46:48.190" end="00:46:51.850">...a very common construct using in search navigation so,</p>
+      <p begin="00:46:51.850" end="00:46:56.690">what I can do is here I can indicate the list of fields that</p>
+      <p begin="00:46:56.690" end="00:47:00.700">I'll when they need to be enables for...doing index definition that I</p>
+      <p begin="00:47:00.700" end="00:47:06.400">...facet on for this particular requests I can change these from request, request?</p>
+      <p begin="00:47:06.400" end="00:47:09.800">...do speakers whoops tags.</p>
+      <p begin="00:47:09.800" end="00:47:21.980">And, ...time.</p>
+      <p begin="00:47:21.980" end="00:47:25.710">Right so if now I go here and do a</p>
+      <p begin="00:47:25.710" end="00:47:30.630">web then I get results for web so what that means is the data made it so we</p>
+      <p begin="00:47:30.630" end="00:47:35.360">create...index data made from the documentaries tore into the asher search index</p>
+      <p begin="00:47:35.360" end="00:47:39.990">and now we get the search results ranked by relevance web...words the relevance</p>
+      <p begin="00:47:39.990" end="00:47:45.860">...awash and, also all these things I've been calling facets so this is the hid count by</p>
+      <p begin="00:47:45.860" end="00:47:49.820">categories very commenting things like e-commerce websites...things like that and there's a</p>
+      <p begin="00:47:49.820" end="00:47:55.910">very effective navigation metaphor because you can get a sense of in this case and all the speakers and all the tags</p>
+      <p begin="00:47:55.910" end="00:48:01.960">...timesyou can do like if we get more specific on the content of these like</p>
+      <p begin="00:48:01.960" end="00:48:06.570">...say like linux then we get a few lest hits but</p>
+      <p begin="00:48:06.570" end="00:48:13.520">you can still see...tags...a few start and timeswho get even more specific?</p>
+      <p begin="00:48:13.520" end="00:48:16.670">Then you'll see...is...research these</p>
+      <p begin="00:48:16.670" end="00:48:20.750">...cussing description and then the rest start to rank less and less probably because how the</p>
+      <p begin="00:48:20.750" end="00:48:24.150">...should or search some...in their.</p>
+      <p begin="00:48:24.150" end="00:48:31.410">In...content and, in addition...research again in addition to these I can</p>
+      <p begin="00:48:31.410" end="00:48:35.930">...very common thing is to the real allow people to drill into these...almost...mystic</p>
+      <p begin="00:48:35.930" end="00:48:40.870">before you talk and when you...you get only the ones there is a combination of search plus</p>
+      <p begin="00:48:40.870" end="00:48:45.530">a filter to create these experience what I can...down and things and,</p>
+      <p begin="00:48:45.530" end="00:48:47.730">then come back up and then I can do the same I</p>
+      <p begin="00:48:47.730" end="00:48:53.370">can see these five that much of this time...only three of these time maybe a big this one so on?</p>
+      <p begin="00:48:53.370" end="00:48:57.190">So, these an example where the mechanics of</p>
+      <p begin="00:48:57.190" end="00:49:02.310">...upsurge...a couple of lines of code you get how...you come to have the...there on the by</p>
+      <p begin="00:49:02.310" end="00:49:06.600">...to do it.</p>
+      <p begin="00:49:06.600" end="00:49:09.360">So, similar to these.</p>
+      <p begin="00:49:09.360" end="00:49:12.100">If you want to have all the complete and these.</p>
+      <p begin="00:49:12.100" end="00:49:17.150">Mechanics are very similar so I already indicated which feel...complete what I can do is</p>
+      <p begin="00:49:17.150" end="00:49:22.120">...entry...my controller for called suggest api to of the search api</p>
+      <p begin="00:49:22.120" end="00:49:26.200">bus would the input the use of bustle far a few options like in this case enabled</p>
+      <p begin="00:49:26.200" end="00:49:30.560">fussing merging and return these down to the client this case and return</p>
+      <p begin="00:49:32.180" end="00:49:35.840">...and this allows me to use j queries</p>
+      <p begin="00:49:35.840" end="00:49:41.990">...complete we just ...how do you I depends on, you know,</p>
+      <p begin="00:49:41.990" end="00:49:49.720">depends on your app and what you're doing in this case I'm doing something very simple where I'm just doing the default</p>
+      <p begin="00:49:49.720" end="00:49:52.600">...experience?</p>
+      <p begin="00:49:52.600" end="00:49:56.870">And, ...to load so now when I start typing?</p>
+      <p begin="00:49:56.870" end="00:50:00.180">I get times I get suggestions and what is the I may be looking</p>
+      <p begin="00:50:00.180" end="00:50:03.870">...if I get more specific then I'll get more specific on the suggestions as</p>
+      <p begin="00:50:03.870" end="00:50:06.830">well so this is a way to be and these are thanks people tend to</p>
+      <p begin="00:50:06.830" end="00:50:14.570">expect surgeon we make sure...easy to wired them up?</p>
+      <p begin="00:50:14.570" end="00:50:18.600">So, at this point we got the basics of searching place.</p>
+      <p begin="00:50:18.600" end="00:50:23.100">Like I want to highlight some specifics though there's a lot in common when you</p>
+      <p begin="00:50:23.100" end="00:50:27.870">build meanwhile mobile apps...if you sign up...because a lot of the back-end...common you can use the same</p>
+      <p begin="00:50:27.870" end="00:50:35.320">comptroller model you can use you can use web jobs...use is...duties and...so on but,</p>
+      <p begin="00:50:35.320" end="00:50:37.640">there are some differences that you want you want acknowledge if you're</p>
+      <p begin="00:50:37.640" end="00:50:42.630">...targeting one or the other in web...different the amount of real</p>
+      <p begin="00:50:42.630" end="00:50:47.500">...and you can depend on the use of giving more input in general because...only have more space but input</p>
+      <p begin="00:50:47.500" end="00:50:51.590">is easier to do...keyboard so on mobile apps</p>
+      <p begin="00:50:52.830" end="00:50:58.300">...because the input is trickier ...less you have</p>
+      <p begin="00:50:58.300" end="00:51:03.110">...are less ...to operate so on so usually you're best bet for</p>
+      <p begin="00:51:03.110" end="00:51:08.410">...context take us few words as you can then use the context for the</p>
+      <p begin="00:51:08.410" end="00:51:12.700">...sometimes you-know-who...use threes, you know, what time is it, you know, where the user u</p>
+      <p begin="00:51:13.750" end="00:51:18.520">...you application ask for all these options when you created then you get access to all these convex and you</p>
+      <p begin="00:51:18.520" end="00:51:22.380">can use this context to make such better without making your and use at work</p>
+      <p begin="00:51:23.840" end="00:51:27.860">...also like one kind of...I just demonstrated</p>
+      <p begin="00:51:27.860" end="00:51:32.600">...suggestions in the phone that doesn't always work...like usually predictive word input</p>
+      <p begin="00:51:32.600" end="00:51:36.830">...very effective a and these things are different you kinda have to explore which one you</p>
+      <p begin="00:51:36.830" end="00:51:44.180">...depended on context so one option for input is to use voice and,</p>
+      <p begin="00:51:44.180" end="00:51:48.490">depending on your platform there's different, different levels of support for voice in the case of</p>
+      <p begin="00:51:48.490" end="00:51:53.840">windows we have proton out...has a great extensibility model and this is a great</p>
+      <p begin="00:51:53.840" end="00:51:59.620">march with search because in the end if you think about...even today windows phone inputting one the</p>
+      <p begin="00:51:59.620" end="00:52:06.970">...and extensibility infrastructure for it and gets much better in windows ten and,</p>
+      <p begin="00:52:06.970" end="00:52:10.960">you think about interactions with an agent like rotunda usually you to get</p>
+      <p begin="00:52:10.960" end="00:52:15.870">it somehow and then you say a bunch of words and that's when you have to work with a bunch of words</p>
+      <p begin="00:52:15.870" end="00:52:20.850">so...are not...natural target for that unless you really the restrictive cover you</p>
+      <p begin="00:52:20.850" end="00:52:23.810">...you can say if you want to take arbitrary input</p>
+      <p begin="00:52:23.810" end="00:52:28.560">then what you're looking for use what is a thing that I can give it a bunch of words</p>
+      <p begin="00:52:28.560" end="00:52:33.100">...with the realities of language variation and give-me-a-buzz sense of ranked</p>
+      <p begin="00:52:33.100" end="00:52:40.350">...number...search does so this very natural was kind of integration point between</p>
+      <p begin="00:52:40.350" end="00:52:45.620">doing voice input...things they could turn out and doing and, doing search a</p>
+      <p begin="00:52:45.620" end="00:52:52.230">...like I can and quickly show this working so I have an</p>
+      <p begin="00:52:52.230" end="00:52:57.140">example and show you and this is based on action example willing to put out there that has just a different data</p>
+      <p begin="00:52:57.140" end="00:53:01.460">sets so you can you-can pick it up if you if you're interested so you</p>
+      <p begin="00:53:01.460" end="00:53:03.460">...phone up?</p>
+      <p begin="00:53:03.460" end="00:53:11.560">To have a from here's and projected.</p>
+      <p begin="00:53:11.560" end="00:53:17.400">There and, this is a windows phone project and</p>
+      <p begin="00:53:17.400" end="00:53:21.260">in my data semis would have used the same search primitives were using before</p>
+      <p begin="00:53:21.260" end="00:53:26.550">...semis...an on the server also runs in windows apps</p>
+      <p begin="00:53:26.550" end="00:53:30.000">...I'm using to create a couple of search</p>
+      <p begin="00:53:30.000" end="00:53:34.690">experiences here one that takes a query I'm one that uses the context in this case time who</p>
+      <p begin="00:53:34.690" end="00:53:41.160">...person needs and, thenas part of the core...extensibility infrastructure when you can do is you can</p>
+      <p begin="00:53:41.160" end="00:53:46.180">define set of rules that...say what are the prefix is a</p>
+      <p begin="00:53:46.180" end="00:53:51.470">content should react to...application and once you have your in the context of application</p>
+      <p begin="00:53:51.470" end="00:53:57.210">then you can you can say what patterns you want to recognize so, if</p>
+      <p begin="00:53:57.210" end="00:53:59.530">we execute this guy.</p>
+      <p begin="00:53:59.530" end="00:54:01.960">Then...get deployed to the phone.</p>
+      <p begin="00:54:01.960" end="00:54:04.540">And, there's a couple of things we can do here.</p>
+      <p begin="00:54:04.540" end="00:54:09.620">And, this will be or...given a second.</p>
+      <p begin="00:54:09.620" end="00:54:12.830">So, one is you can just say find session and</p>
+      <p begin="00:54:12.830" end="00:54:18.070">tag something fine sure.</p>
+      <p begin="00:54:18.070" end="00:54:24.800">then we'll go find decisions and index and come back but, then we can do other things like,</p>
+      <p begin="00:54:24.800" end="00:54:29.310">you know, coming next is a very simple way to just give me sessions that are coming in the next tower</p>
+      <p begin="00:54:29.310" end="00:54:34.130">...a great way of not having to do a bunch of inputs and then if you are...would content you can do a good</p>
+      <p begin="00:54:34.130" end="00:54:43.400">...of thing I'm going to give it why...have this...accent so we'll see how that goes?</p>
+      <p begin="00:54:43.400" end="00:54:51.230">Build whiny sessions what...search.</p>
+      <p begin="00:54:51.230" end="00:54:57.220">nonsense but this involved with the build application so they actually could</p>
+      <p begin="00:54:57.220" end="00:55:03.250">...I'm sure the other ones similar but the...they have is actually pretty impressive and,</p>
+      <p begin="00:55:03.250" end="00:55:08.030">...a great way to do search input...now you can have an application that you invoked without</p>
+      <p begin="00:55:08.030" end="00:55:12.380">even running uses...present...and retire than say that word for your app</p>
+      <p begin="00:55:12.380" end="00:55:16.730">the belcher up and you say if you words and boom you have you have a search and sometimes</p>
+      <p begin="00:55:16.730" end="00:55:21.340">...searches no search you can do see you can say things like.</p>
+      <p begin="00:55:21.340" end="00:55:26.440">Build and what's coming next.</p>
+      <p begin="00:55:26.440" end="00:55:29.150">And, that's quite...contains...contains no...of the main is</p>
+      <p begin="00:55:29.150" end="00:55:35.720">just invoking the what's coming next you know, queries against query by time.</p>
+      <p begin="00:55:35.720" end="00:55:37.960">This is a great way to provide a and</p>
+      <p begin="00:55:37.960" end="00:55:44.280">...experience on a more devices the interesting thing about this is that</p>
+      <p begin="00:55:44.280" end="00:55:48.390">decomposes really well with good relevance because you want minimal input like in this case I</p>
+      <p begin="00:55:48.390" end="00:55:54.240">...what's next so how can we do things like what's next better so,</p>
+      <p begin="00:55:54.240" end="00:55:59.940">this is all sorry I forgot to mentioned nation to voice input location input</p>
+      <p begin="00:55:59.940" end="00:56:03.330">this just as important so, you know,</p>
+      <p begin="00:56:03.330" end="00:56:05.930">what you...the case of the build example is not</p>
+      <p begin="00:56:05.930" end="00:56:11.250">...compelling but if you're looking for a trailer or a shop or something like that then</p>
+      <p begin="00:56:11.250" end="00:56:17.080">...geospatial...is just as important?</p>
+      <p begin="00:56:17.080" end="00:56:20.760">So, this is a context were the same before</p>
+      <p begin="00:56:20.760" end="00:56:23.430">...to location and time and,</p>
+      <p begin="00:56:23.430" end="00:56:28.780">...having custom ranking to make a huge difference and there are a few</p>
+      <p begin="00:56:28.780" end="00:56:33.810">...see for this one is just data...in the files...we have a thing called</p>
+      <p begin="00:56:33.810" end="00:56:38.900">...profiles that allows you to...the...a couple of steps to builds I'm not going to</p>
+      <p begin="00:56:38.900" end="00:56:44.340">live here but ...coding provides a way to connect the dots you can say, for example,</p>
+      <p begin="00:56:44.340" end="00:56:50.170">things are happening soonermore relevant and things that...happening later on you can say by how much and,</p>
+      <p begin="00:56:50.170" end="00:56:53.240">these are based on data in the documents because</p>
+      <p begin="00:56:53.240" end="00:56:58.060">...personalize we have a thing called tag boosting that allows you to do is let's use build</p>
+      <p begin="00:56:58.060" end="00:57:03.160">ascended to describe these by example let's say every session has a has a set of times</p>
+      <p begin="00:57:03.160" end="00:57:08.210">...every user has tags and you can help...user because you pick them</p>
+      <p begin="00:57:08.210" end="00:57:13.150">or because using clustering and some machine learning technique we drive them out of your</p>
+      <p begin="00:57:13.150" end="00:57:16.510">prior conferences with...well or not well so on so</p>
+      <p begin="00:57:16.510" end="00:57:21.490">now we have them so that boosting allows you to boost documents when you</p>
+      <p begin="00:57:21.490" end="00:57:26.180">pass the search buses the types of the user and whatever wi-fi non empty intersection we like</p>
+      <p begin="00:57:26.180" end="00:57:31.230">...documents better that doesn't mean we're not going to offer documents don't have the tags means that we skewed towards</p>
+      <p begin="00:57:31.230" end="00:57:36.810">ones have the tag all the things being equal so, these are really powerful way to current to</p>
+      <p begin="00:57:36.810" end="00:57:40.500">...kind of a personalized experience for it</p>
+      <p begin="00:57:40.500" end="00:57:46.140">and finally you can do analytics where you can compute signals like, for example,</p>
+      <p begin="00:57:46.140" end="00:57:49.200">tags or popularity and feed that bucking to index and uses</p>
+      <p begin="00:57:49.200" end="00:57:54.630">...with all these things combined next time I'll pick up my phone and say what's coming</p>
+      <p begin="00:57:54.630" end="00:57:59.030">next our will do is based on the time based in the popularity of the session based</p>
+      <p begin="00:57:59.030" end="00:58:01.020">...my pry on my past history using</p>
+      <p begin="00:58:01.020" end="00:58:06.210">...boosting and give me a very kind of custom experience for my specific preferences and this is</p>
+      <p begin="00:58:06.210" end="00:58:11.980">what you expect from search very little input great very compelling answers so,</p>
+      <p begin="00:58:11.980" end="00:58:17.800">users will be can surprised by...suggest in the right thing in the right context.</p>
+      <p begin="00:58:17.800" end="00:58:23.320">just...quick walk through what these things look like...usually when you have a full</p>
+      <p begin="00:58:23.320" end="00:58:27.020">...me to look like that you start by having traditional text in something like</p>
+      <p begin="00:58:27.020" end="00:58:32.310">...degree...generate a bunch of traffic that...your search index</p>
+      <p begin="00:58:32.310" end="00:58:37.570">but you also grab those logs and you can put them in something like whooping in asher</p>
+      <p begin="00:58:37.570" end="00:58:42.220">br hd...is a very non-threatening thing I know like...sounds like you had a deploy</p>
+      <p begin="00:58:42.220" end="00:58:47.590">whole cluster so on but it's actually very straightforward to do because they manage all the</p>
+      <p begin="00:58:47.590" end="00:58:49.780">deployment and the you can even use</p>
+      <p begin="00:58:50.990" end="00:58:56.870">...data factory to spin the cluster up announce you have to pay for it all the time so</p>
+      <p begin="00:58:56.870" end="00:59:01.660">there's very well thought out story where you can do heavy analytics without</p>
+      <p begin="00:59:01.660" end="00:59:06.190">becoming an expert...infrastructure and...a fortune and once you have these data you can</p>
+      <p begin="00:59:06.190" end="00:59:10.570">feed back into the index using the...model that we talked about before I make it</p>
+      <p begin="00:59:10.570" end="00:59:16.290">increasingly more relevant ossie application...more intense martyr.</p>
+      <p begin="00:59:16.290" end="00:59:19.000">So, with...recap so we</p>
+      <p begin="00:59:19.000" end="00:59:23.330">...provision services created indexes for those services then we...pushed or pulled</p>
+      <p begin="00:59:23.330" end="00:59:28.130">models to automatically bring the data or...bring data into index</p>
+      <p begin="00:59:28.130" end="00:59:32.440">defined a bunch of linguistics options that allows us to have better experiences for the language of</p>
+      <p begin="00:59:32.440" end="00:59:36.730">...targeting and then we created uri is...and</p>
+      <p begin="00:59:36.730" end="00:59:41.690">...drug research both in desktop a mobile devices including rotunda input to get have</p>
+      <p begin="00:59:41.690" end="00:59:46.230">...experiences and then...scoring profiles...and things like</p>
+      <p begin="00:59:46.230" end="00:59:50.510">that boosting analytics we created more relevant six more relevant experiences</p>
+      <p begin="00:59:50.510" end="00:59:54.140">...by understanding what they need...personalizing results for</p>
+      <p begin="00:59:54.140" end="00:59:58.930">...particular scenario so...that...a few resources here</p>
+      <p begin="00:59:58.930" end="01:00:03.630">...out here for question but before...for questions but first I want to say</p>
+      <p begin="01:00:03.630" end="01:00:08.510">thanks-very-much for listening and here on the rest of...cover great...of the bentley.</p>
+
+    </div>
+  </body>
+</tt>

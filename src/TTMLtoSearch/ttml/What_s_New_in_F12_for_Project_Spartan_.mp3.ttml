@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.847</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:04.810" end="00:00:10.340">All right...is...to liaisons I'm hopefully...time.</p>
+      <p begin="00:00:10.340" end="00:00:15.730">So, good...I...everyone's recovered from this wave announcers this morning so,</p>
+      <p begin="00:00:15.730" end="00:00:20.820">I'm nothing this exciting finances evil has this morning about all the cool stuff we doing the universe when</p>
+      <p begin="00:00:20.820" end="00:00:24.060">...making sure you apps can run everywhere and all sorts of different</p>
+      <p begin="00:00:24.060" end="00:00:29.580">flavors and devices today I'm going to be talking about microsoft edge...as...</p>
+      <p begin="00:00:29.580" end="00:00:35.380">spots and...what we've been doing a tooling space there and how you can hopefully my goal</p>
+      <p begin="00:00:35.380" end="00:00:39.770">...guys to walk away of a few things that you'll see...the new and</p>
+      <p begin="00:00:39.770" end="00:00:44.850">it's all so next time you're fixing a bug in a website, you know, fuel...internet,</p>
+      <p begin="00:00:44.850" end="00:00:49.050">internet...hopefully you can go like hacked there's this little feature hidden somewhere</p>
+      <p begin="00:00:49.050" end="00:00:55.130">...twelve...can make my life a teeny bit easier unsanitary a lot of cool stuff they hopefully?</p>
+      <p begin="00:00:55.130" end="00:01:00.400">So, firstly I guess a public service announcement...sessions...evaluated I will put up the</p>
+      <p begin="00:01:00.400" end="00:01:04.660">q r...the end of the session please scan it your feedback feedbacks</p>
+      <p begin="00:01:05.810" end="00:01:10.760">...need a little better next time round so please provide feedback.</p>
+      <p begin="00:01:10.760" end="00:01:12.310">So, firstly.</p>
+      <p begin="00:01:12.310" end="00:01:15.950">And, the most important thing if you...is one thing at this entitled to a</p>
+      <p begin="00:01:15.950" end="00:01:21.280">...ok job is the we have the developer tools you got brand-new...and demos</p>
+      <p begin="00:01:21.280" end="00:01:26.800">...can...and stuff and some to talk about extensibility for it but,</p>
+      <p begin="00:01:26.800" end="00:01:29.460">we realize this part of...browser key part of that is</p>
+      <p begin="00:01:29.460" end="00:01:34.160">...tools...brand new engine the edge engine a highly</p>
+      <p begin="00:01:34.160" end="00:01:39.150">trouble engine lots of features like new hl five-one not features are clearly</p>
+      <p begin="00:01:39.150" end="00:01:44.310">tooling to take advantage of those features to use the latest the...stuff or whatever basically</p>
+      <p begin="00:01:44.310" end="00:01:48.150">...looking at we need to have some great tooling so we committed obviously to making...</p>
+      <p begin="00:01:48.150" end="00:01:54.160">the toolsmicrosoft edge confusing analytics watson the best tools we have an</p>
+      <p begin="00:01:54.160" end="00:01:57.640">...platform so ok so now...my toll...one</p>
+      <p begin="00:01:57.640" end="00:02:04.880">things conveyed...back to the pool has been...or you can...mourn season demos.</p>
+      <p begin="00:02:04.880" end="00:02:08.920">So, one thing I think esri attending point for us</p>
+      <p begin="00:02:08.920" end="00:02:13.680">with a tools so-if many...use the tools before I eleven here's use the developer tools</p>
+      <p begin="00:02:13.680" end="00:02:19.750">and explore before I eleven quite a few people you remember how painful they were like going back</p>
+      <p begin="00:02:19.750" end="00:02:23.630">...hilarious things that you have to refresh the dom...updates and stuff like that</p>
+      <p begin="00:02:23.630" end="00:02:28.770">...would really build for different generation...browsers like...browsers the</p>
+      <p begin="00:02:28.770" end="00:02:33.240">world's moved on a lot of nine eleven we got to turn this amazingly big ship that was</p>
+      <p begin="00:02:33.240" end="00:02:37.850">the tools around and...a lot of the tools that we had so you soar new debug a</p>
+      <p begin="00:02:37.850" end="00:02:42.030">new dom explore didn't...you of nt text node everywhere and updated</p>
+      <p begin="00:02:42.030" end="00:02:47.160">is the page updated but we didn't quite finish taking what we had a ninety-nine nights</p>
+      <p begin="00:02:47.160" end="00:02:51.760">...before even and revamping...this new world so we microsoft</p>
+      <p begin="00:02:51.760" end="00:02:56.690">edge one much like have a platform is now...you've got your internet explorer would you can use</p>
+      <p begin="00:02:56.690" end="00:03:01.200">...enterprise applications it supports active-x and everything you have known and loved about</p>
+      <p begin="00:03:01.200" end="00:03:05.890">ie for the longest time and you also have microsoft edge which is almost a new beginning for the browser</p>
+      <p begin="00:03:05.890" end="00:03:09.210">...interop interoperable engine fast perform</p>
+      <p begin="00:03:09.210" end="00:03:13.810">...into the latest features so within the same thing the tools web essentially...</p>
+      <p begin="00:03:13.810" end="00:03:19.870">a tools and going forward like after windows ten what you'll see is the tools</p>
+      <p begin="00:03:19.870" end="00:03:23.410">getting better interact microsoft edge</p>
+      <p begin="00:03:23.410" end="00:03:28.290">and the same time the ones that we have...eleven windows ten going to say the same</p>
+      <p begin="00:03:29.410" end="00:03:32.600">...a bad analogy but they're going to be frozen.</p>
+      <p begin="00:03:32.600" end="00:03:36.030">By...then I'm going to saying they're not going to get any worse.</p>
+      <p begin="00:03:36.030" end="00:03:42.580">They're just not going to be...I'll go anywhere so the ships can-we cough...have here...iraq on the</p>
+      <p begin="00:03:42.580" end="00:03:47.540">way but, we're not focusing on those tools the tools that you have...eleven on windows tenets</p>
+      <p begin="00:03:47.540" end="00:03:50.810">...you'll always have along that for as long as that</p>
+      <p begin="00:03:50.810" end="00:03:54.480">browsers supported all-new features are going to be...</p>
+      <p begin="00:03:54.480" end="00:03:59.740">edge microsoft edge by browser so we add new features the...a latest standards or</p>
+      <p begin="00:03:59.740" end="00:04:03.720">...features that support existing standards is going to happen microsoft edge so</p>
+      <p begin="00:04:03.720" end="00:04:10.410">...like web development the tools and edge...keeping in mind when you switch</p>
+      <p begin="00:04:10.410" end="00:04:16.669">between perhaps we transitioning app from my eleven moving it forward?</p>
+      <p begin="00:04:16.669" end="00:04:21.199">So, the next thing time-sensitive context before I go to demos...been most</p>
+      <p begin="00:04:21.199" end="00:04:24.799">...told during demos...on-the-spot but,</p>
+      <p begin="00:04:24.799" end="00:04:27.879">I've got to most lines to have...context.</p>
+      <p begin="00:04:27.879" end="00:04:33.159">So, you...mine's back a long-time ago perhaps the ...to thousand's developing tools</p>
+      <p begin="00:04:33.159" end="00:04:37.959">...but...really just coming into existence...are moving away from musing essentially</p>
+      <p begin="00:04:37.959" end="00:04:41.319">...everyone ...all of you today still use...double</p>
+      <p begin="00:04:41.319" end="00:04:46.449">...code...so that was the only way of doing in the past times</p>
+      <p begin="00:04:46.449" end="00:04:50.289">...moved on and browser tools and got ever more sophisticated, you know,</p>
+      <p begin="00:04:50.289" end="00:04:54.939">things...the old I'd have to while the words high sakes to five bug of course the</p>
+      <p begin="00:04:54.939" end="00:04:59.939">...of developer tools the expanse...the richness in those tools is ballooned</p>
+      <p begin="00:04:59.939" end="00:05:04.629">they become from simple...the can log messages by use...stuff like that set</p>
+      <p begin="00:05:04.629" end="00:05:10.099">...points inspect styles very complicated...tools the habits how to features...to</p>
+      <p begin="00:05:10.099" end="00:05:15.259">profile application...analysis everything the whole shebang...take memory snapshots</p>
+      <p begin="00:05:15.259" end="00:05:20.129">...the entire dom and...an accurate representation...running application they've gone from</p>
+      <p begin="00:05:20.129" end="00:05:24.269">the sm relatively simple tools to this huge...of tools</p>
+      <p begin="00:05:24.269" end="00:05:28.159">...what is very competitive if you look at even like full-blown</p>
+      <p begin="00:05:28.159" end="00:05:32.969">debugged like visual studio in fact in the javascript space the...tools have more features</p>
+      <p begin="00:05:32.969" end="00:05:38.089">than they have in the javascript of the debugging...boost...things like trace points event</p>
+      <p begin="00:05:38.089" end="00:05:43.299">great points...very points...features that simply don't and source maps as well and</p>
+      <p begin="00:05:43.299" end="00:05:47.079">...script don't exist in the visual...gaussian...do in the at</p>
+      <p begin="00:05:47.079" end="00:05:50.749">...because ultimately only the browsers have investing in</p>
+      <p begin="00:05:50.749" end="00:05:53.979">...tools and every browser look as get this every expanding</p>
+      <p begin="00:05:53.979" end="00:05:58.749">ever richer set of api set of features says developer</p>
+      <p begin="00:05:58.749" end="00:06:03.579">...m of burgeoning expectation of what you get from your tools like it's not like people</p>
+      <p begin="00:06:03.579" end="00:06:07.169">...painted of others the not you pay for high-end profiling tools</p>
+      <p begin="00:06:07.169" end="00:06:11.169">...ensure awhile ago so when we think about tools and we think about what we do and</p>
+      <p begin="00:06:11.169" end="00:06:15.319">...twelve we have this in mind the head this huge set of almost</p>
+      <p begin="00:06:15.319" end="00:06:20.689">...interoperable or expected features the cover everything from some examples up here and that's</p>
+      <p begin="00:06:20.689" end="00:06:24.199">...exhausted the pretty much shared by all the browsers</p>
+      <p begin="00:06:24.199" end="00:06:28.939">many those features represent the eighty percent...most the time things to say you're probably looking</p>
+      <p begin="00:06:28.939" end="00:06:33.889">...tracing styles debugging javascript...probably...keeps...your time and memory tool unless you're</p>
+      <p begin="00:06:33.889" end="00:06:41.200">very specifically...looking for leaks and which...verified very sorry for you?</p>
+      <p begin="00:06:41.200" end="00:06:43.840">There's also...into the vendors differentiate</p>
+      <p begin="00:06:43.840" end="00:06:47.870">...but unique so when we do features we think about it this way does</p>
+      <p begin="00:06:47.870" end="00:06:51.170">these common set is basically this ever expanding set of</p>
+      <p begin="00:06:51.170" end="00:06:55.350">tooling features that people expect...browsers and point first-level</p>
+      <p begin="00:06:55.350" end="00:06:59.650">there's also place...unique features that are only in some browsers so</p>
+      <p begin="00:06:59.650" end="00:07:04.530">...a fantastic job advice emulation we can...network changes resize all that</p>
+      <p begin="00:07:04.530" end="00:07:10.700">sort of stuff...free...for some time has...and whatnot so they're also</p>
+      <p begin="00:07:10.700" end="00:07:14.700">...features on our side the unique features that we think about are often around</p>
+      <p begin="00:07:14.700" end="00:07:18.640">...I guess real key problems one is trying to find ways for</p>
+      <p begin="00:07:18.640" end="00:07:23.160">you to identify your problem and the second one is trying to find</p>
+      <p begin="00:07:23.160" end="00:07:27.580">a ways to get your code out of your at...the browse</p>
+      <p begin="00:07:27.580" end="00:07:32.700">...and into your editor license ultimately like showman you done this use</p>
+      <p begin="00:07:32.700" end="00:07:37.170">...element is miss positions between the style of it and have to copy and paste it back in your</p>
+      <p begin="00:07:37.170" end="00:07:40.340">answer right...sublime brackets whatever</p>
+      <p begin="00:07:40.340" end="00:07:44.640">...using to make the change more...so things like if you see the</p>
+      <p begin="00:07:44.640" end="00:07:49.560">...changes evans interact changes here hardly anyone okay</p>
+      <p begin="00:07:49.560" end="00:07:53.170">...people also...also never that feature free is not millions bond</p>
+      <p begin="00:07:53.170" end="00:07:56.080">...married for sometime is really handy?</p>
+      <p begin="00:07:56.080" end="00:08:01.290">So, we've also like...that tries to help you get your...the browser the other thing we want to is make</p>
+      <p begin="00:08:01.290" end="00:08:04.170">...your problems so one features we added nine eleven</p>
+      <p begin="00:08:04.170" end="00:08:08.260">...the updates was just my code...the just...definite apples</p>
+      <p begin="00:08:09.280" end="00:08:13.300">a few people so if you're familiar with it the basic idea is that your website is</p>
+      <p begin="00:08:13.300" end="00:08:17.460">...of tons of different libraries and frameworks and things like that but</p>
+      <p begin="00:08:17.460" end="00:08:22.420">...isn't going to help you like this probably very few problems that you encountering a website</p>
+      <p begin="00:08:22.420" end="00:08:27.030">...integrate the...happen...not liking even if it isn't jake or you're not likely to be fixing the bug</p>
+      <p begin="00:08:27.030" end="00:08:29.750">...query so you want to work around those issues you</p>
+      <p begin="00:08:29.750" end="00:08:34.280">...we stepping...j query be confuse compressing staff and step...for your...</p>
+      <p begin="00:08:34.280" end="00:08:39.240">code so things I just my code racially only step in things the your code</p>
+      <p begin="00:08:39.240" end="00:08:44.650">and not library code and you can tell us was library code by mocking the file.</p>
+      <p begin="00:08:44.650" end="00:08:48.270">So, wisconsin's and demos so firstly.</p>
+      <p begin="00:08:48.270" end="00:08:52.000">A big caveat this may be dragons lots of...dragons have</p>
+      <p begin="00:08:52.000" end="00:08:58.220">...dragons general dragons and arises...so,</p>
+      <p begin="00:08:58.220" end="00:09:02.750">I'm doing whole serve demos on project sorry microsoft edge</p>
+      <p begin="00:09:02.750" end="00:09:09.990">...just switched my demo machine to do?</p>
+      <p begin="00:09:09.990" end="00:09:12.810">So, the first thing I'm actually daring isn't something in the</p>
+      <p begin="00:09:12.810" end="00:09:17.700">...themselves but it's like about the tools...enterprise application</p>
+      <p begin="00:09:17.700" end="00:09:21.350">any applications imbedded ie so you've got like a</p>
+      <p begin="00:09:21.350" end="00:09:26.400">...rpf application...imbedded inside...number application is in...us haitian</p>
+      <p begin="00:09:26.400" end="00:09:30.680">...javascript...a locally on a...and a few</p>
+      <p begin="00:09:30.680" end="00:09:35.870">...a pretty comments...expression and prizes so one of the things that can be a challenge is it can be a bit of</p>
+      <p begin="00:09:35.870" end="00:09:39.470">...those things...obviously if you've got a visual...projects and...</p>
+      <p begin="00:09:39.470" end="00:09:44.740">app and host the web browser control...csharp brilliantly but you can't really types</p>
+      <p begin="00:09:44.740" end="00:09:49.350">...easily in touch the dom the consul that the your css so</p>
+      <p begin="00:09:49.350" end="00:09:53.670">what we've done is made it so that twelve...we collateral choose</p>
+      <p begin="00:09:53.670" end="00:09:58.670">...anything is running id on your machine so if it's in a dot...</p>
+      <p begin="00:09:58.670" end="00:10:04.210">app if it's...old-school...app...bay and things like that so I've got this</p>
+      <p begin="00:10:04.210" end="00:10:08.890">awesome app which is my version of a browser.</p>
+      <p begin="00:10:08.890" end="00:10:10.930">...got resize...that bonding click stuff</p>
+      <p begin="00:10:13.330" end="00:10:17.160">...this...obviously windows format and if you use the single</p>
+      <p begin="00:10:17.160" end="00:10:21.700">...choose a which will conveniently find windows system...to see</p>
+      <p begin="00:10:21.700" end="00:10:26.310">also search for...and...system...which is the follow the everyone knows and</p>
+      <p begin="00:10:26.310" end="00:10:31.440">loves over...while...easily actually</p>
+      <p begin="00:10:31.440" end="00:10:36.250">so launching this was going to do is going to enumerate all the instances of</p>
+      <p begin="00:10:36.250" end="00:10:41.470">...regardless of whether...informs app web apple whatever and show you them so you can</p>
+      <p begin="00:10:41.470" end="00:10:46.870">connect them from here and this works response and, the first tip of the day is that this releases spots</p>
+      <p begin="00:10:46.870" end="00:10:52.920">and microsoft edge that because...user...the best bet for debugging is actually going to</p>
+      <p begin="00:10:52.920" end="00:11:00.930">use...twelve choose...just because right now is...need more stable than the.</p>
+      <p begin="00:11:00.930" end="00:11:02.300">As...really</p>
+      <p begin="00:11:02.300" end="00:11:06.750">...videos running let me just kill that two-bone what's that area.</p>
+      <p begin="00:11:06.750" end="00:11:11.620">Okay, so, here you can see I've got my demo page open legislative metro</p>
+      <p begin="00:11:11.620" end="00:11:17.720">choose of...from the list and I'm going to kill this area so one of</p>
+      <p begin="00:11:17.720" end="00:11:22.470">the first tools that we've been working on there was a difference my eleven is from when we had</p>
+      <p begin="00:11:22.470" end="00:11:26.830">a eleven those two tools that we haven't really touched one of them was the network tool and...have one was</p>
+      <p begin="00:11:26.830" end="00:11:31.720">...profiler so the network tool and I eleven was essentially the same one...always been since I</p>
+      <p begin="00:11:32.970" end="00:11:38.700">...change the colors minimal white and...and three-d effects but now we've got a brand-new tool.</p>
+      <p begin="00:11:38.700" end="00:11:40.750">So, if you go to.</p>
+      <p begin="00:11:40.750" end="00:11:46.040">In fact...you page and this new tools...is with note mention that</p>
+      <p begin="00:11:46.040" end="00:11:51.730">...who's run...tools we build built-in tag scripps we compile</p>
+      <p begin="00:11:51.730" end="00:11:55.630">...javascript which is really handy because as developers...google</p>
+      <p begin="00:11:55.630" end="00:12:00.900">...in science and bugging a javascript the tool will also eventually be in visual studio</p>
+      <p begin="00:12:00.900" end="00:12:05.730">so-if...you builds their own...the...jobs...applications...as</p>
+      <p begin="00:12:05.730" end="00:12:10.320">...that ratio you did build those you'll see the same tools and that</p>
+      <p begin="00:12:10.320" end="00:12:15.180">eventually hopefully network tool is generally applicable to the network stack like http traffic</p>
+      <p begin="00:12:15.180" end="00:12:17.070">...traffic will also be available,</p>
+      <p begin="00:12:17.070" end="00:12:23.250">for example,...as you can see how you some fun navigating so let's just</p>
+      <p begin="00:12:23.250" end="00:12:26.690">go to the page is already running...one thing downloaded.</p>
+      <p begin="00:12:29.910" end="00:12:31.890">What happens to me sorry?</p>
+      <p begin="00:12:32.920" end="00:12:37.750">Such...responsive so the network too.</p>
+      <p begin="00:12:37.750" end="00:12:40.580">This was marginalize catches up what we've got here is a very</p>
+      <p begin="00:12:40.580" end="00:12:44.880">...firstly most of this tool is in that category of tooling that I think most</p>
+      <p begin="00:12:44.880" end="00:12:49.010">you be familiar with which is the hey that's like my expectation is you have a</p>
+      <p begin="00:12:49.010" end="00:12:52.810">network tool captures data has visualize is has like</p>
+      <p begin="00:12:52.810" end="00:12:55.410">timings and stuff like that and that's exactly what this tool</p>
+      <p begin="00:12:55.410" end="00:13:02.890">is so you can see here the eventually we'll have is a list of.</p>
+      <p begin="00:13:02.890" end="00:13:03.890">Please work now.</p>
+      <p begin="00:13:04.940" end="00:13:07.170">We'll have is a you start again.</p>
+      <p begin="00:13:08.250" end="00:13:13.140">Service we haven't had...two different views so we have a some...</p>
+      <p begin="00:13:13.140" end="00:13:18.110">great scifi familiar with many tools have a single pattern...an overview of all network traffic</p>
+      <p begin="00:13:18.110" end="00:13:22.890">and we have a way to inspect each individual item and that traffic so you can look at</p>
+      <p begin="00:13:22.890" end="00:13:27.170">obviously details...the all the information response and request bodies and</p>
+      <p begin="00:13:27.170" end="00:13:33.130">headers and from enough in this particular build you can also debugged twelve you can see all these tools down</p>
+      <p begin="00:13:33.130" end="00:13:39.180">here for okay but when the nicest things about the network tool that's different is always on</p>
+      <p begin="00:13:39.180" end="00:13:41.750">my default so if you go to a page.</p>
+      <p begin="00:13:41.750" end="00:13:45.940">We started seeing geology twelve so before if you use the actual</p>
+      <p begin="00:13:45.940" end="00:13:50.270">to you might have to go to the network to classic scenario...you spotted...network</p>
+      <p begin="00:13:50.270" end="00:13:55.510">...download trouble...that...networks was not back because you...on according</p>
+      <p begin="00:13:55.510" end="00:14:02.590">...rerun your scenario so now the tools always on which is awesome because it saves you extra step.</p>
+      <p begin="00:14:02.590" end="00:14:05.420">...go who.</p>
+      <p begin="00:14:05.420" end="00:14:09.890">So, you can see pretty much as you'd expect new modern new I want to things you</p>
+      <p begin="00:14:09.890" end="00:14:15.820">try to do is improve upon ...quite a bit as easy to get...</p>
+      <p begin="00:14:15.820" end="00:14:20.440">and less time navigating around the tools themselves on the right-hand side you can see we try to show</p>
+      <p begin="00:14:20.440" end="00:14:25.080">the detailed information so left-hand outside is always the some review it also contains a pretty</p>
+      <p begin="00:14:25.080" end="00:14:27.990">...along here which is the timings and,</p>
+      <p begin="00:14:27.990" end="00:14:33.330">the detail each of the types of network data like bid head is all the body</p>
+      <p begin="00:14:33.330" end="00:14:37.950">...visualize is obviously hey you can see like the head is you can also see specifically</p>
+      <p begin="00:14:37.950" end="00:14:40.940">cookies so if you cookies they also</p>
+      <p begin="00:14:40.940" end="00:14:45.810">...one big long string and they all have...encoded</p>
+      <p begin="00:14:45.810" end="00:14:51.190">...we...them...different things...can easily see them...the future also looking adding a</p>
+      <p begin="00:14:51.190" end="00:14:56.470">...inspector to the debugged south of the tools themselves you can modify these cookies this is just read-only view</p>
+      <p begin="00:14:56.470" end="00:15:00.270">...just showing the network traffic is not language temperate have</p>
+      <p begin="00:15:00.270" end="00:15:04.030">timing's...this stuff should be...to use a basic network tool you've come to</p>
+      <p begin="00:15:04.030" end="00:15:07.480">expect from every pretty much every browser right.</p>
+      <p begin="00:15:07.480" end="00:15:12.090">There's a couple nice things that we do like we have some way visualize is if I filter</p>
+      <p begin="00:15:12.090" end="00:15:17.160">down to documents...new thing we...have...tools you can see that</p>
+      <p begin="00:15:17.160" end="00:15:20.070">...using the same visualize is as we used in the debugged</p>
+      <p begin="00:15:20.070" end="00:15:24.950">...means you can preprint so you can pretty print html javascript css</p>
+      <p begin="00:15:24.950" end="00:15:28.100">...even json so...thing we get...log</p>
+      <p begin="00:15:28.100" end="00:15:33.180">...came back is pretty printing so...much...network traffic so, for example,</p>
+      <p begin="00:15:33.180" end="00:15:37.540">if you're interacting with a json and rest api understanding</p>
+      <p begin="00:15:37.540" end="00:15:45.850">magnify data use preprint in...looks something like this is...we see...probably.</p>
+      <p begin="00:15:45.850" end="00:15:51.130">So, it's at...the same features from the previous version say things like</p>
+      <p begin="00:15:51.130" end="00:15:55.910">...always refreshment server is...handy feature because basically what...from</p>
+      <p begin="00:15:55.910" end="00:16:00.710">...does is passing along alway for the network stack like hey get me new data so if you have</p>
+      <p begin="00:16:00.710" end="00:16:05.410">a...frustration bug where you may fix you...but</p>
+      <p begin="00:16:05.410" end="00:16:10.590">that browser still see the previous version...fix because for whatever reason the cash information hasn't</p>
+      <p begin="00:16:10.590" end="00:16:15.260">...each tag hasn't changed it's still being valid than ten this button which is on</p>
+      <p begin="00:16:15.260" end="00:16:19.780">by default...and you get the latest information.</p>
+      <p begin="00:16:19.780" end="00:16:24.710">One of the things that we've done...tool is new is we've added a support for the...format so you</p>
+      <p begin="00:16:24.710" end="00:16:29.610">get...archive format is way of saving network traffic.</p>
+      <p begin="00:16:29.610" end="00:16:33.580">So, one of the nice things about this is a...persisting all the data is capture the</p>
+      <p begin="00:16:33.580" end="00:16:37.240">...disc so that's useful because you can...to bugs you can attach</p>
+      <p begin="00:16:37.240" end="00:16:41.240">...everything's is also of a tools built around this format so,</p>
+      <p begin="00:16:41.240" end="00:16:42.780">for example.</p>
+      <p begin="00:16:42.780" end="00:16:48.020">If I go save this file to the semi disk and click-through.</p>
+      <p begin="00:16:48.020" end="00:16:53.740">I can open up another is...michael edges and find?</p>
+      <p begin="00:16:53.740" end="00:16:55.280">An example.</p>
+      <p begin="00:16:55.280" end="00:16:59.340">And, people in the community have built ...is the...run things that</p>
+      <p begin="00:16:59.340" end="00:17:04.250">...slow against it or like a simple...visualize it so this case if we open up as a</p>
+      <p begin="00:17:04.250" end="00:17:08.130">textile because this app just takes rule...but...a</p>
+      <p begin="00:17:08.130" end="00:17:13.320">...form format let me show you at so this is one-half format looks file looks like it's just</p>
+      <p begin="00:17:13.320" end="00:17:17.470">...very simple json and in captures all that recording traffic's if you</p>
+      <p begin="00:17:17.470" end="00:17:22.020">have network bug you attach it to your repo and stuff like that you can also...these back-up in</p>
+      <p begin="00:17:22.020" end="00:17:26.770">...itself...open unsurprisingly you can also use tools like this and</p>
+      <p begin="00:17:26.770" end="00:17:32.190">we can see here is this is just another visualize...data...some people and you can do</p>
+      <p begin="00:17:33.530" end="00:17:38.980">...got like plug-in...and stuff like that...basically perform operations on the...look at</p>
+      <p begin="00:17:38.980" end="00:17:44.150">it for like common patterns like okay you may...request the same domain...not magnified you'll</p>
+      <p begin="00:17:44.150" end="00:17:49.780">css etc...handy features and the network to another and,</p>
+      <p begin="00:17:49.780" end="00:17:51.250">also kind of useful thing to</p>
+      <p begin="00:17:51.250" end="00:17:55.330">have some time is a download initiated zone use the download</p>
+      <p begin="00:17:55.330" end="00:18:00.140">...stuff on a roughly what it is so the one of the...not many no one was the</p>
+      <p begin="00:18:00.140" end="00:18:05.100">...of the key problems about the network is try to figure out way of data comes from so like say in this</p>
+      <p begin="00:18:05.100" end="00:18:09.180">case we've got this page which has a broken image we try to figure</p>
+      <p begin="00:18:09.180" end="00:18:15.510">...would that come from what we can do as we can go to the right version of ftwenty yosemite</p>
+      <p begin="00:18:15.510" end="00:18:22.280">...and...that...that's network to the downside of cooling network</p>
+      <p begin="00:18:22.280" end="00:18:27.090">...the same time on network tools ingenious legal network html.</p>
+      <p begin="00:18:27.090" end="00:18:30.470">So, what you can see is...this is the right things</p>
+      <p begin="00:18:30.470" end="00:18:33.450">... it is you can see that like heretofore</p>
+      <p begin="00:18:33.450" end="00:18:37.350">...as prohibit discreet but...color-coded and what happens in</p>
+      <p begin="00:18:37.350" end="00:18:39.840">...column if you scholes the right?</p>
+      <p begin="00:18:41.380" end="00:18:42.410">Is this as where comes</p>
+      <p begin="00:18:42.410" end="00:18:51.230">...of hassd element so if I go...my demo properly measures closes down?</p>
+      <p begin="00:18:51.230" end="00:18:56.580">It'll tell you why this line information in this case what I've got is an image like I said</p>
+      <p begin="00:18:56.580" end="00:19:01.270">there's been an image source tag...the source tag as wrong as pointing to the</p>
+      <p begin="00:19:01.270" end="00:19:06.660">as miss typed so now when I...page about tending on the was recording?</p>
+      <p begin="00:19:06.660" end="00:19:11.940">What you'll see is there's a bunch of extra information and ...this...this</p>
+      <p begin="00:19:11.940" end="00:19:16.890">...column...the...if I...for savy find website</p>
+      <p begin="00:19:16.890" end="00:19:21.150">...for four or five hundred or something like that you can...the...outwards</p>
+      <p begin="00:19:21.150" end="00:19:26.120">whereas being requested and that took me back to...which is pointing</p>
+      <p begin="00:19:26.120" end="00:19:32.560">...you can see from this little arrow here this...new thing we added is a bit of how...coming from</p>
+      <p begin="00:19:32.560" end="00:19:37.330">...microsoft...logo very simple thing that exists in the tools to help you get</p>
+      <p begin="00:19:37.330" end="00:19:42.160">...your network traffic information which is like a read-only view the datas coming down to your</p>
+      <p begin="00:19:42.160" end="00:19:49.310">source code where you hopefully can make your change you know, and,...the issue we deploy?</p>
+      <p begin="00:19:49.310" end="00:19:53.970">The other thing in the network to an issue...you go...</p>
+      <p begin="00:19:53.970" end="00:20:00.310">Is that we've been working as well on the possum and stuff...that?</p>
+      <p begin="00:20:00.310" end="00:20:04.450">There's a bunch of...get out copy and paste things like that if we just</p>
+      <p begin="00:20:04.450" end="00:20:07.750">...json thing one-minute hopefully be...sure you pretty printing</p>
+      <p begin="00:20:07.750" end="00:20:12.970">...so again pretty printing...now javascript css</p>
+      <p begin="00:20:12.970" end="00:20:18.500">json and everything like that really simple to use this cryptic icon and the.</p>
+      <p begin="00:20:18.500" end="00:20:20.120">And, that's another feature by the way if you have</p>
+      <p begin="00:20:20.120" end="00:20:25.330">actual today you can do control plus and control minus zoom in and stuff so if you have a findings too little to</p>
+      <p begin="00:20:25.330" end="00:20:29.530">...you can do stages...you browsing use control plus-minus which</p>
+      <p begin="00:20:29.530" end="00:20:33.630">...easier sometimes...magnify so this cryptic...a...and what</p>
+      <p begin="00:20:33.630" end="00:20:39.850">...so useful features if...need to try to find and data another thing that's really handy finding</p>
+      <p begin="00:20:39.850" end="00:20:43.500">...we have search and the search is across all</p>
+      <p begin="00:20:43.500" end="00:20:45.600">...so search looking head is looking</p>
+      <p begin="00:20:45.600" end="00:20:49.290">bodies does highlight matching so if you type in my query straying?</p>
+      <p begin="00:20:50.390" end="00:20:54.870">Whoops...type you can see it's got...here and...next but</p>
+      <p begin="00:20:54.870" end="00:20:58.520">the thing is often envelopes is the matches was on the</p>
+      <p begin="00:20:58.520" end="00:21:01.020">...highlight bas here is all blue</p>
+      <p begin="00:21:01.020" end="00:21:04.810">...you can jump around and find a separate easy that's useful</p>
+      <p begin="00:21:04.810" end="00:21:10.820">volatiles have as ability to sej all contents which makes it much easier find stuff obviously.</p>
+      <p begin="00:21:10.820" end="00:21:15.660">So, the next set of demos washing to the...so one of the things that</p>
+      <p begin="00:21:15.660" end="00:21:22.360">...skip to the these two...about will look at what is really that core set of features the local</p>
+      <p begin="00:21:22.360" end="00:21:26.140">...expect and the other stuff is an innovative things we're adding.</p>
+      <p begin="00:21:26.140" end="00:21:31.100">the first one is simple feature...exchange operate points so</p>
+      <p begin="00:21:31.100" end="00:21:37.700">...promising the...window...by when what the hell is cryptic...top right so,</p>
+      <p begin="00:21:37.700" end="00:21:42.120">there's tool champs...accessible right this...a new...added this</p>
+      <p begin="00:21:42.120" end="00:21:47.580">...operate points charges demo...add one this is the trace points for events</p>
+      <p begin="00:21:47.580" end="00:21:51.720">...been using coding you've got like a click handlers and like that you want to log something for you can use that a</p>
+      <p begin="00:21:51.720" end="00:21:57.320">...point...like consulate long by modifying your...and that one's event</p>
+      <p begin="00:21:57.320" end="00:22:02.430">...points if you want to break...a click and stuff like that you...demo in this but since you're</p>
+      <p begin="00:22:02.430" end="00:22:08.180">...it...a bunch of events you-can break on is also conditions which you can apply</p>
+      <p begin="00:22:08.180" end="00:22:12.590">...nash to just enable and lethal so anyway we add index...</p>
+      <p begin="00:22:12.590" end="00:22:17.460">operate point which is this one here and surprisingly enough well that's going to do.</p>
+      <p begin="00:22:17.460" end="00:22:22.750">Is going to break the code this handling x hr...so you want to use this and other tools where if</p>
+      <p begin="00:22:22.750" end="00:22:26.950">...the response essentially...changed for</p>
+      <p begin="00:22:26.950" end="00:22:31.140">...how you do is the nice thing here that's different...a</p>
+      <p begin="00:22:32.220" end="00:22:36.460">...and on-scene days...featuring...much?</p>
+      <p begin="00:22:36.460" end="00:22:38.480">...unfamiliar by the general a single</p>
+      <p begin="00:22:38.480" end="00:22:42.360">stack stuff probably not ok so I have a</p>
+      <p begin="00:22:42.360" end="00:22:49.940">speech perhaps the presentation and I'll show you a bit of water what this means.</p>
+      <p begin="00:22:49.940" end="00:22:54.250">...so, one of the problems we try to help you in the debugged and,</p>
+      <p begin="00:22:54.250" end="00:22:58.120">we've added a lot more...in microsoft edge is that you probably buy a lot of</p>
+      <p begin="00:22:58.120" end="00:23:02.190">asynchronous code like you probably have like ex hr time as or event</p>
+      <p begin="00:23:02.190" end="00:23:06.900">business so the problem is that something that, you know, you might you might think that</p>
+      <p begin="00:23:06.900" end="00:23:11.990">...like a synchronous code...is a really simple example of using x hr is actually a set</p>
+      <p begin="00:23:11.990" end="00:23:16.660">a very disperse operations is...awaiting the user input or waiting for interaction from</p>
+      <p begin="00:23:16.660" end="00:23:21.770">an external provider so we try to the debug...is not just show you the whole stack of your current</p>
+      <p begin="00:23:21.770" end="00:23:26.910">point of execution and...led to that but we want to also show you all the logical</p>
+      <p begin="00:23:26.910" end="00:23:30.560">...so you want to show you...like...way</p>
+      <p begin="00:23:30.560" end="00:23:34.880">...x hr was sent and stuff like that to help you solve problems like perhaps</p>
+      <p begin="00:23:34.880" end="00:23:39.830">ranks hr is wrong because the url was wrong it might be the case and probably the case that</p>
+      <p begin="00:23:39.830" end="00:23:44.470">...in the code this handling the response...not constructing url so you can't obviously look at that and</p>
+      <p begin="00:23:44.470" end="00:23:48.320">fact-finding that...application might take a bit of time to figure out so we try to show this</p>
+      <p begin="00:23:48.320" end="00:23:52.850">all linked together instead go over this and the awesome...point animation</p>
+      <p begin="00:23:52.850" end="00:23:58.260">system you can imagine that this is your applications the enticed and miles application we start</p>
+      <p begin="00:23:58.260" end="00:24:02.830">...is global code and have a first asic operational ready vehicle adamantly</p>
+      <p begin="00:24:02.830" end="00:24:07.530">...so I have been listeners going-to...obviously on dom content loads happens...nothing else</p>
+      <p begin="00:24:07.530" end="00:24:11.840">...execute right now until dumb content...happens?</p>
+      <p begin="00:24:11.840" end="00:24:16.990">So, this is the first point that we've...is instrumentation microsoft edge will basically logged</p>
+      <p begin="00:24:16.990" end="00:24:21.550">has a...this fact will take the cool stack which...this case is just global code</p>
+      <p begin="00:24:21.550" end="00:24:26.080">and it and put a stash somewhere and then sometime later</p>
+      <p begin="00:24:26.080" end="00:24:30.240">...come back and say hey...content loaded happened to the next stuff the to</p>
+      <p begin="00:24:30.240" end="00:24:35.230">do so in this case what I'm doing is I'm taking my buttons has now been in the tree and why</p>
+      <p begin="00:24:35.230" end="00:24:39.820">...a click handler again nothing's going to happen with this button just yet and we're going to</p>
+      <p begin="00:24:39.820" end="00:24:43.980">...like...operation has been started again is adamant listener has been</p>
+      <p begin="00:24:43.980" end="00:24:49.180">wide up and this was the stack...stack now is also global code on the</p>
+      <p begin="00:24:49.180" end="00:24:52.620">...event fide which shouldn't be on yet?</p>
+      <p begin="00:24:52.620" end="00:24:54.830">So, now we skip ahead and the user</p>
+      <p begin="00:24:54.830" end="00:24:59.020">clicks the button and this alzheimer's anybody application so...x hr</p>
+      <p begin="00:24:59.020" end="00:25:05.030">...buttons...the affection data executes these things synchronous lee and then again we</p>
+      <p begin="00:25:05.030" end="00:25:09.160">...up another event...this time is already say change it could have been at</p>
+      <p begin="00:25:09.160" end="00:25:14.130">event listener restate change that both...the same thing in the browser and they get</p>
+      <p begin="00:25:14.130" end="00:25:18.920">wide of the same again we take the stack so this...the on click handler communion global since</p>
+      <p begin="00:25:18.920" end="00:25:23.820">everything was comes from global at some point later and we now send request a</p>
+      <p begin="00:25:23.820" end="00:25:28.580">...point later we actually breaking the debugged so...job...point this is the point where we break</p>
+      <p begin="00:25:28.580" end="00:25:32.910">the actual response already there's been three or four steps enveloped this applicator</p>
+      <p begin="00:25:32.910" end="00:25:38.700">...up to this hamming so those steps can be very important when it comes to debugging since</p>
+      <p begin="00:25:38.700" end="00:25:43.530">for example, might be thinking like how I'd go back and see whether the exchange object was constructed to</p>
+      <p begin="00:25:43.530" end="00:25:49.420">...url was...the right parameters and whatnot...that's exactly what you see here.</p>
+      <p begin="00:25:49.420" end="00:25:54.160">Is that entire trace so we do this other things not just x...this</p>
+      <p begin="00:25:54.160" end="00:25:57.540">...time is so wherever you building an application</p>
+      <p begin="00:25:57.540" end="00:26:00.790">...using...events which is probably everywhere there's a javascript</p>
+      <p begin="00:26:00.790" end="00:26:05.500">...solves event-driven you should be...the logical stacks these...</p>
+      <p begin="00:26:05.500" end="00:26:10.360">stacks is the ability to see these things happen in the past...a long-time ago</p>
+      <p begin="00:26:10.360" end="00:26:16.930">not too long ago but certainly didn't happen with the same execution stream so</p>
+      <p begin="00:26:16.930" end="00:26:21.250">...a handy feature so in microsoft edge of extended that add more segmentations</p>
+      <p begin="00:26:21.250" end="00:26:24.450">and now buttons and...dom is basically fire adamant list</p>
+      <p begin="00:26:24.450" end="00:26:27.620">...wide up...much...much more easily</p>
+      <p begin="00:26:27.620" end="00:26:32.910">...trace back for your application define what happened?</p>
+      <p begin="00:26:32.910" end="00:26:37.570">All right so the next of stuff we've done that about the is really about improving</p>
+      <p begin="00:26:37.570" end="00:26:44.980">the source navigation so many people use time...okay if you will coffee scripts.</p>
+      <p begin="00:26:44.980" end="00:26:49.730">No, one okay any other like compiled...familiar the idea that hey that javascript</p>
+      <p begin="00:26:49.730" end="00:26:52.400">...also language great for a lot of things one thing is almost, you know,</p>
+      <p begin="00:26:52.400" end="00:26:56.240">good is typed it has no results from...I was</p>
+      <p begin="00:26:56.240" end="00:27:01.180">rehash that the downside of that is a commune very hard to create like clear objects have clear</p>
+      <p begin="00:27:01.180" end="00:27:05.750">contracts between different components and things so many people choose to use a language like type</p>
+      <p begin="00:27:05.750" end="00:27:10.840">...that allow you to have rich strong typing...a compiler...simple mistakes so if you fat</p>
+      <p begin="00:27:10.840" end="00:27:15.000">...it's an...time allows you check for those of things now</p>
+      <p begin="00:27:15.000" end="00:27:18.750">...compiling and editing...talking about the debugging side now and</p>
+      <p begin="00:27:18.750" end="00:27:22.980">...only the passes...just show you source maps so this is a little</p>
+      <p begin="00:27:22.980" end="00:27:26.940">...tracey thing and if I go to you can see in the file</p>
+      <p begin="00:27:26.940" end="00:27:31.930">becca I've got my ts file...also logo of course I get all</p>
+      <p begin="00:27:31.930" end="00:27:35.470">the syntax classification if I separate points...all expressed</p>
+      <p begin="00:27:35.470" end="00:27:41.220">...type script but we haven't taken advantages some of the things that we get...strongly...language so,</p>
+      <p begin="00:27:41.220" end="00:27:45.490">the some of the biggest ones we get right now all of added is the ability to</p>
+      <p begin="00:27:45.490" end="00:27:50.130">go to definition so here if you use the context menu you'll see two things one is that</p>
+      <p begin="00:27:50.130" end="00:27:54.520">...definition find references so go-to definition...so the</p>
+      <p begin="00:27:54.520" end="00:27:59.570">...to the...was defined in the case I just one from a type vector...gone to the</p>
+      <p begin="00:27:59.570" end="00:28:05.880">instructor but, also means if I go from something like that we find is...here.</p>
+      <p begin="00:28:05.880" end="00:28:10.720">And, if I go to definition...jump...is so in that case that was just by two things apart</p>
+      <p begin="00:28:10.720" end="00:28:14.840">but what it takes is means is you've got this application got lots of object lots of classes</p>
+      <p begin="00:28:14.840" end="00:28:19.840">you done the right thing you've got a strongly type language...at language output...your source maps</p>
+      <p begin="00:28:19.840" end="00:28:24.430">...compiled code and you can now the...the used to go to a definition and find</p>
+      <p begin="00:28:24.430" end="00:28:29.420">...to navigate so like when you're stuck in a bright point you try to figure out what was this object</p>
+      <p begin="00:28:29.420" end="00:28:30.540">...equated</p>
+      <p begin="00:28:30.540" end="00:28:35.610">...definition but the reverse thing is also very handy and that's fine references...you</p>
+      <p begin="00:28:35.610" end="00:28:39.770">...references it's...better example second what that</p>
+      <p begin="00:28:39.770" end="00:28:43.340">...bring up is this little window the bottom...twelve.</p>
+      <p begin="00:28:43.340" end="00:28:47.950">Which shows you all the places in which an object is referenced so anywhere where someone said that</p>
+      <p begin="00:28:47.950" end="00:28:50.310">valuable use that value?</p>
+      <p begin="00:28:50.310" end="00:28:52.510">...I'm giving.</p>
+      <p begin="00:28:52.510" end="00:28:54.710">You can easily navigate through.</p>
+      <p begin="00:28:54.710" end="00:28:57.620">...application to find out why it's used so...if you</p>
+      <p begin="00:28:57.620" end="00:29:01.950">...application like this one is and if you underlines...we have a much larger application that's</p>
+      <p begin="00:29:01.950" end="00:29:06.820">really useful allows you to...do some of the things...used to if you use visual studio</p>
+      <p begin="00:29:06.820" end="00:29:12.500">by jump around and navigate your source code without a lot of effort.</p>
+      <p begin="00:29:12.500" end="00:29:15.750">So, pretty handy feature.</p>
+      <p begin="00:29:15.750" end="00:29:20.800">And, again, is trying to take some of the things the of a existed for strongly...languages...</p>
+      <p begin="00:29:20.800" end="00:29:26.550">relatives and try to bring them into the in browser tool experience so that when...debugging...</p>
+      <p begin="00:29:26.550" end="00:29:32.390">you have a much better time is also was...javascript but find...javascript is a bit flaky</p>
+      <p begin="00:29:32.390" end="00:29:37.710">...not strongly typed so, you results will vary depending upon the application if</p>
+      <p begin="00:29:37.710" end="00:29:42.120">application is just...one big strengths can be very hard for to work absences working</p>
+      <p begin="00:29:42.120" end="00:29:46.090">nod the execution level but it looks your source code sector source code is one</p>
+      <p begin="00:29:47.470" end="00:29:50.750">...but then you having so many problems that you probably outlook anyway?</p>
+      <p begin="00:29:53.060" end="00:29:57.440">So, yes, the next of things the kind of new for the tool we can quickly do</p>
+      <p begin="00:29:57.440" end="00:30:01.210">the consul so one of the useful things...the consul as we</p>
+      <p begin="00:30:01.210" end="00:30:04.550">...very simple which is why...key if you press</p>
+      <p begin="00:30:04.550" end="00:30:09.970">...we can system of a browsers again like one thing we don't want to is the different...and things like</p>
+      <p begin="00:30:09.970" end="00:30:15.110">...been no good reason so in places like for example,...scape</p>
+      <p begin="00:30:15.110" end="00:30:18.360">...the consul you can also use the same shortcuts you...like from</p>
+      <p begin="00:30:18.360" end="00:30:23.050">if the continue gaussian ff twelve...five is continue but fa</p>
+      <p begin="00:30:23.050" end="00:30:27.120">also works so we try to keep...short has the same so when you go-between</p>
+      <p begin="00:30:27.120" end="00:30:33.690">different browsers in-between entering browser tools you might have to...many shortcuts which can handy.</p>
+      <p begin="00:30:33.690" end="00:30:38.770">But, one of the biggest things we added was betta...have...to code so again this is</p>
+      <p begin="00:30:38.770" end="00:30:43.320">...of those common features...browsers...simple code if I just open up is going to the</p>
+      <p begin="00:30:43.320" end="00:30:48.250">world's symbolism...application you can see we've just got a simple log statement hours</p>
+      <p begin="00:30:48.250" end="00:30:53.540">ago down here and now we have the source location...a...emitting for a long-time</p>
+      <p begin="00:30:53.540" end="00:30:57.400">...just say...web message came from so using application your</p>
+      <p begin="00:30:57.400" end="00:31:01.450">...the confluence stuff you can now does have a simple lightening they'll take you back to place with a</p>
+      <p begin="00:31:01.450" end="00:31:07.500">long came from very straightforward the next thing we also added was not just logging</p>
+      <p begin="00:31:07.500" end="00:31:12.890">...just source locations for javascript but if you're using a source...</p>
+      <p begin="00:31:12.890" end="00:31:17.810">...on one second and also works for that so in this case I'm also going to type script file and</p>
+      <p begin="00:31:17.810" end="00:31:22.990">...making use of ...log...you can see here just about...also comes</p>
+      <p begin="00:31:22.990" end="00:31:27.780">the ts...click it and I'll take you to the ts file version of it start ts which has</p>
+      <p begin="00:31:27.780" end="00:31:30.820">...class and stuff like that so trying to pervasively use</p>
+      <p begin="00:31:30.820" end="00:31:35.950">source maps across all the tools so realizing that one of the things...really help is using these</p>
+      <p begin="00:31:35.950" end="00:31:40.100">bridge languages do static compilation stuff like that and try to bring some of the handing</p>
+      <p begin="00:31:40.100" end="00:31:47.290">us back into the tools the...debugging.</p>
+      <p begin="00:31:47.290" end="00:31:52.500">All right so what when...a similar vein one of things we also did was to added</p>
+      <p begin="00:31:52.500" end="00:31:56.260">the dom explore several long-time we've had in debugged source maps</p>
+      <p begin="00:31:56.260" end="00:32:00.950">...types...whatever we've always had that for the dom so in</p>
+      <p begin="00:32:00.950" end="00:32:05.520">the dom if you if we just inspects and reaganomics...</p>
+      <p begin="00:32:05.520" end="00:32:10.840">I've got this button in the middle of...just fantastic but the interesting thing about this button isn't</p>
+      <p begin="00:32:10.840" end="00:32:14.870">that amazing it's the used sas so,</p>
+      <p begin="00:32:14.870" end="00:32:20.090">you click on this and...file what you see is the sas file.</p>
+      <p begin="00:32:20.090" end="00:32:24.910">So, we've got ...you have support for source maps so-if using source...like lasso</p>
+      <p begin="00:32:24.910" end="00:32:30.570">...whatever you're using geragos is that's now in the dom explorer and there's these visualize is</p>
+      <p begin="00:32:30.570" end="00:32:36.060">you can see the colorized for each language another nice thing is that stuff I mentioned before find references</p>
+      <p begin="00:32:36.060" end="00:32:40.490">...also works here so I've got these buttons and this color here and you can...</p>
+      <p begin="00:32:40.490" end="00:32:45.430">find references and if I zoom out we that will show you is</p>
+      <p begin="00:32:45.430" end="00:32:49.310">that just the bottom is listed all the place that those variables and used</p>
+      <p begin="00:32:49.310" end="00:32:55.400">...of may...things allows you do is defined variables...things like colors or anything really and then you can</p>
+      <p begin="00:32:55.400" end="00:32:58.440">...application so rather than having to look for ff</p>
+      <p begin="00:32:58.440" end="00:33:02.650">...application changing manually to some slightly off white-colored the might be using you</p>
+      <p begin="00:33:02.650" end="00:33:07.140">can declare variable the nice thing that allows us to do the tools is a link</p>
+      <p begin="00:33:07.140" end="00:33:11.350">those things together so you can do things like you can find references but also if</p>
+      <p begin="00:33:11.350" end="00:33:15.600">...a much bigger style sheet you can just do like go-to definition and you can jump back and see ways</p>
+      <p begin="00:33:15.600" end="00:33:20.220">...in the code so you can navigate around not just type...a and</p>
+      <p begin="00:33:20.220" end="00:33:24.210">...execution like...languages but also around css soaps</p>
+      <p begin="00:33:24.210" end="00:33:30.560">fasten mess specifically is a great...using some of...politicians to make better use...</p>
+      <p begin="00:33:30.560" end="00:33:38.170">to develop a tools rather than having to your manually...and stuff which is...fullback.</p>
+      <p begin="00:33:38.170" end="00:33:41.400">Yeah, and, the other thing if I turned off source maps for this one show</p>
+      <p begin="00:33:41.400" end="00:33:45.560">a demo something which is this one here we also added pretty printing</p>
+      <p begin="00:33:45.560" end="00:33:49.900">...so now pretty much everywhere...fr...preprint stuff...is</p>
+      <p begin="00:33:49.900" end="00:33:58.950">...html or even if I css...html digital pretty...</p>
+      <p begin="00:34:00.030" end="00:34:04.580">That's handy of courses you come to use these compile language because sometimes you probably, you know,</p>
+      <p begin="00:34:04.580" end="00:34:07.280">we modifying stuff that isn't from a source maps language.</p>
+      <p begin="00:34:08.350" end="00:34:13.960">So, the last with...real big change do we made in the tools</p>
+      <p begin="00:34:13.960" end="00:34:18.620">was like I mentioned was for the old script profiler we talked about how we changed</p>
+      <p begin="00:34:18.620" end="00:34:23.410">the network tool for the last one we did we also changed the</p>
+      <p begin="00:34:23.410" end="00:34:29.300">start generating close this we also combines the javascript...into the</p>
+      <p begin="00:34:29.300" end="00:34:34.450">...tool so we used to have to tools we have the responsiveness toolwhich is also</p>
+      <p begin="00:34:34.450" end="00:34:37.980">...and we also have descrip profiler tool so one of them would profile</p>
+      <p begin="00:34:37.980" end="00:34:42.720">h mario css and stuff like that but it wouldn't profile script execution so if you</p>
+      <p begin="00:34:42.720" end="00:34:46.790">...execution...see this big...in media...they just said like</p>
+      <p begin="00:34:46.790" end="00:34:52.800">scope execution you...to see what really happened...to see the event...it you have...a script</p>
+      <p begin="00:34:52.800" end="00:34:57.320">profiler to profile javascript so what we did as we move both the tools...the same</p>
+      <p begin="00:34:57.320" end="00:35:02.260">thing as a you can see done this tab here is also your javascript</p>
+      <p begin="00:35:02.260" end="00:35:03.920">...stacks?</p>
+      <p begin="00:35:03.920" end="00:35:05.880">Which is pretty useful so</p>
+      <p begin="00:35:05.880" end="00:35:09.230">...all-in-one place now so like if you want to see anything application</p>
+      <p begin="00:35:09.230" end="00:35:14.530">...any profiling just use the performance tool and you get both the javascript</p>
+      <p begin="00:35:14.530" end="00:35:19.340">who stacks and of course the...before...analysis and stuff like that?</p>
+      <p begin="00:35:19.340" end="00:35:23.350">One thing that's also been added that is usefulto show is that we</p>
+      <p begin="00:35:23.350" end="00:35:28.250">added feature one of the problems...tools but you profiling provides</p>
+      <p begin="00:35:28.250" end="00:35:32.000">...a couple problems one is they have lots of data have an awful lot of</p>
+      <p begin="00:35:32.000" end="00:35:36.910">data and it's very hard to think like what the of actually is this data like between these two</p>
+      <p begin="00:35:36.910" end="00:35:41.370">points in time what happened because ultimately...probably profiling a scenario like</p>
+      <p begin="00:35:41.370" end="00:35:46.160">writing email playing a game or something some...driven of course the...didn't really understand</p>
+      <p begin="00:35:46.160" end="00:35:51.180">user driven concepts understands what platform understands so what we did is</p>
+      <p begin="00:35:51.180" end="00:35:54.830">...to common...to standard really api is</p>
+      <p begin="00:35:54.830" end="00:36:00.910">...measure the you can use...not seen is before already there and all the...browsers</p>
+      <p begin="00:36:00.910" end="00:36:06.100">...basic idea is you instrument your code and you create this array of timings so,</p>
+      <p begin="00:36:06.100" end="00:36:08.060">what you can see here is that you say like performance</p>
+      <p begin="00:36:08.060" end="00:36:12.990">...mark the start of your scenario so say in this case it's going to do stuff but it</p>
+      <p begin="00:36:12.990" end="00:36:17.980">could be anything it could be not just in the same stack but it could happen minutes later doesn't matter you just</p>
+      <p begin="00:36:17.980" end="00:36:24.250">a...scenario...someone...when that snares ended you go examples scenario</p>
+      <p begin="00:36:24.250" end="00:36:29.280">so...you two points in time you probably want to measure the time between those two things and the</p>
+      <p begin="00:36:29.280" end="00:36:35.150">...so-you that's...performance...comes in and in that you just passing the name of it the name</p>
+      <p begin="00:36:35.150" end="00:36:40.590">is...and the starts and, measures so you can we use measures this way and have multiple scenarios</p>
+      <p begin="00:36:40.590" end="00:36:44.890">multiplemeasures that uses emacs of thing so that's great and</p>
+      <p begin="00:36:44.890" end="00:36:50.170">the purpose of this api...you can then logged that your server you take all the data...performance</p>
+      <p begin="00:36:50.170" end="00:36:54.800">...you send it back fragile x hr...you can see how while the applications doing</p>
+      <p begin="00:36:54.800" end="00:36:59.400">and that's fantastic but we also in the tools of changes so that will also</p>
+      <p begin="00:36:59.400" end="00:37:04.660">appear here so you can see the tools you'll start to have a...section and</p>
+      <p begin="00:37:04.660" end="00:37:09.570">...you can do you can...just this event and I'll show you what's happening just</p>
+      <p begin="00:37:09.570" end="00:37:14.420">...that time so hey you can see the...click which is an event and this is all</p>
+      <p begin="00:37:14.420" end="00:37:18.710">the things happen just for that particular scenario you can filter out all the data that was up</p>
+      <p begin="00:37:18.710" end="00:37:21.940">...selfless for this particular profile and focus</p>
+      <p begin="00:37:21.940" end="00:37:26.690">...just what you one which is useful especially if you have a story that has tons and tons of data</p>
+      <p begin="00:37:26.690" end="00:37:30.500">are looking for a specific set of sequence of events?</p>
+      <p begin="00:37:30.500" end="00:37:34.620">And, again, also for this is javascript...stack you can see only the things that</p>
+      <p begin="00:37:34.620" end="00:37:38.820">happening the javascript world...relevant that particular time</p>
+      <p begin="00:37:38.820" end="00:37:43.330">...have a nice thing that we've done to the tools is we've had some integration the dom you can see here</p>
+      <p begin="00:37:43.330" end="00:37:47.990">...as I click over things that happen on the dom I have we highlights over in</p>
+      <p begin="00:37:47.990" end="00:37:52.940">the page so-if you have a ch meta elements or node in the pef tools</p>
+      <p begin="00:37:52.940" end="00:37:57.160">...highlighted if it's...on the page and also have.</p>
+      <p begin="00:37:57.160" end="00:38:01.850">Shown comics for button to take you back to the individual thing so you can verify your</p>
+      <p begin="00:38:01.850" end="00:38:05.990">perf tool way of tracing...this information and go back to atomic score</p>
+      <p begin="00:38:05.990" end="00:38:09.650">...the time you might want to tweak something over the dom side we'll just see with</p>
+      <p begin="00:38:09.650" end="00:38:15.610">...was so some better integration between the two different tools get backwards and forwards</p>
+      <p begin="00:38:15.610" end="00:38:20.510">the useful things remembers that when you do profiling do try to</p>
+      <p begin="00:38:20.510" end="00:38:23.960">...code because that really helps the profiler tailor the information...you</p>
+      <p begin="00:38:24.980" end="00:38:28.630">...looking at thousands of reams of events but more just</p>
+      <p begin="00:38:28.630" end="00:38:34.080">...meticulous at the other big change in the profiler we moved away from</p>
+      <p begin="00:38:34.080" end="00:38:40.200">being...profiler so for this on a step back...eleven for...and,</p>
+      <p begin="00:38:40.200" end="00:38:43.460">I eleven one things we had has been has...is weekly</p>
+      <p begin="00:38:43.460" end="00:38:48.260">instrumented profiler so the way it works pretty simple every single time you enter function every time you</p>
+      <p begin="00:38:48.260" end="00:38:53.090">exit a function we record something and we have this huge...stuff which we aggregate and stuff and present</p>
+      <p begin="00:38:53.090" end="00:38:57.890">you data is...in terms of it tells you exactly what happened to the individual</p>
+      <p begin="00:38:57.890" end="00:39:03.080">...individual functions the downside is a huge overhead so like you take this is</p>
+      <p begin="00:39:03.080" end="00:39:08.000">just a regular page...I eleven...a few times and see what data we get</p>
+      <p begin="00:39:08.000" end="00:39:14.500">...the first one to the first ones were slow to the jacked them?</p>
+      <p begin="00:39:14.500" end="00:39:16.340">And,...on the open...rtwelve.</p>
+      <p begin="00:39:17.440" end="00:39:19.490">We'll see is the perfect goes down drastically.</p>
+      <p begin="00:39:20.680" end="00:39:25.610">Ok, so, try again because one of things we do in rtwelve is we turn on debugging so</p>
+      <p begin="00:39:25.610" end="00:39:28.760">...at twelve we tell the injure hey...in debug mode now</p>
+      <p begin="00:39:28.760" end="00:39:33.630">fallacy impact perf because which highly engine keep...extra information...make for things they</p>
+      <p begin="00:39:33.630" end="00:39:39.790">would normally do so to get around this if you turn on the profiler we turn that back off.</p>
+      <p begin="00:39:39.790" end="00:39:42.540">But,...can see the downside here is the way</p>
+      <p begin="00:39:42.540" end="00:39:46.660">that this application works is the instrumentation which is what this profile</p>
+      <p begin="00:39:46.660" end="00:39:50.000">...does is actually much more impacting and even just being</p>
+      <p begin="00:39:50.000" end="00:39:54.470">able to debugging so you can see the last result...is when you recording profile data</p>
+      <p begin="00:39:55.700" end="00:40:04.290">...thank you magnify and you could break.</p>
+      <p begin="00:40:04.290" end="00:40:06.270">Yes.</p>
+      <p begin="00:40:06.270" end="00:40:09.420">Okay, so, we can see here the last one with their profile intend on</p>
+      <p begin="00:40:09.420" end="00:40:12.610">was two-point-six which is almost double the time while</p>
+      <p begin="00:40:12.610" end="00:40:17.580">...was over double-time...with debugging enabled and almost what for</p>
+      <p begin="00:40:17.580" end="00:40:22.350">...for times four times slower than we've just regular page the point here is the</p>
+      <p begin="00:40:22.350" end="00:40:27.490">...a...profiling has a huge impact on the actual data you collect so</p>
+      <p begin="00:40:27.490" end="00:40:34.060">the downside of that is if you're profiling your profile...slower...can lead you to all sorts of weird places</p>
+      <p begin="00:40:34.060" end="00:40:39.060">...never looked because especially things that...function has been call-up</p>
+      <p begin="00:40:39.060" end="00:40:42.840">...of profiling is pretty bad because they'll just say likethis is your</p>
+      <p begin="00:40:42.840" end="00:40:47.480">problem...actually what it means is the way I...the problem sorry so,</p>
+      <p begin="00:40:47.480" end="00:40:52.890">what we changed is over naive for microsoft edge...ten we</p>
+      <p begin="00:40:52.890" end="00:40:58.870">...cpu sampling...cpu sampling was enough layers that...like every</p>
+      <p begin="00:40:58.870" end="00:41:03.570">x milliseconds...every microsecond what does it takes everything's on the stack...you</p>
+      <p begin="00:41:03.570" end="00:41:08.060">...a cpu walks everything...on the stack right now logs that so the idea here</p>
+      <p begin="00:41:08.060" end="00:41:12.850">is that if things to be statistically relevant they should be on the stack in the sampling interval so the</p>
+      <p begin="00:41:12.850" end="00:41:16.610">smaller functions small things that are exist one-b so impacted does</p>
+      <p begin="00:41:16.610" end="00:41:20.300">...less overhead so now if I try the same thing?</p>
+      <p begin="00:41:20.300" end="00:41:28.280">First...page...doesn't have debugging enabled because that's can...</p>
+      <p begin="00:41:28.280" end="00:41:33.580">And,...same time...about the same time so now let me turn on profiling</p>
+      <p begin="00:41:33.580" end="00:41:42.410">...the...roughly the same there was never going to be the same and which...on profiling?</p>
+      <p begin="00:41:42.410" end="00:41:45.050">...six is about the same so the point here is the</p>
+      <p begin="00:41:45.050" end="00:41:49.570">...profiling doesn't have an impact the used to have on application which is</p>
+      <p begin="00:41:49.570" end="00:41:55.190">...useful the other things keep in...would in this is that if you are ever doing...data like</p>
+      <p begin="00:41:55.190" end="00:41:58.610">...tracing...outputting to the page that I am...outputting comes</p>
+      <p begin="00:41:58.610" end="00:42:03.390">about log turn on the profiler anyway even if you're not using the profiler if you turn it on you'll see</p>
+      <p begin="00:42:03.390" end="00:42:08.070">...even results will be more representative of what your customers doing because again</p>
+      <p begin="00:42:08.070" end="00:42:11.850">...on debugging which have your customers don't do so,</p>
+      <p begin="00:42:11.850" end="00:42:16.100">that...impact the trace and the future we adding a...disconnect button</p>
+      <p begin="00:42:16.100" end="00:42:20.600">...can disconnected tools and debugging which was at the engine back into his normal mode see</p>
+      <p begin="00:42:20.600" end="00:42:26.770">...impacted by this yes that's the first...cool thing about the new profiler says</p>
+      <p begin="00:42:26.770" end="00:42:30.690">all-in-one...to be cpu sampled we have user measures so that</p>
+      <p begin="00:42:31.740" end="00:42:35.560">...code...specify...points in time.</p>
+      <p begin="00:42:35.560" end="00:42:38.770">So, the.</p>
+      <p begin="00:42:38.770" end="00:42:43.450">Last...quickly look at the memory tool.</p>
+      <p begin="00:42:43.450" end="00:42:46.180">So, the...of tool you use when you have to use</p>
+      <p begin="00:42:46.180" end="00:42:50.200">...a...spend much time looking at memory leaks.</p>
+      <p begin="00:42:50.200" end="00:42:55.140">Anyone a few people so they can be really painful memory leaks are often this...things the</p>
+      <p begin="00:42:55.140" end="00:42:59.600">...by things like...references or stuff like that and they can take a lot of times</p>
+      <p begin="00:42:59.600" end="00:43:04.440">analyze and the tools themselves again contain a lot of data we usually take every single object</p>
+      <p begin="00:43:04.440" end="00:43:09.190">you've got so if you...complicate action application that's hundreds of thousands of objects which is</p>
+      <p begin="00:43:09.190" end="00:43:14.940">ridiculous amount of data so what we try to do andwe've improved in microsoft edge</p>
+      <p begin="00:43:14.940" end="00:43:19.700">...more obvious is the ability to the take snapshots so what I've</p>
+      <p begin="00:43:19.700" end="00:43:21.030">got I've got a button.</p>
+      <p begin="00:43:22.050" end="00:43:26.850">And, I was encode if I go to this code look in the debugged it's a really canonical example of a</p>
+      <p begin="00:43:26.850" end="00:43:31.300">...pretty simple leak viewpoint...do...often node.</p>
+      <p begin="00:43:31.300" end="00:43:34.420">So, in...try to do is to highlight things that are</p>
+      <p begin="00:43:34.420" end="00:43:38.920">potential problems so in this case the problem is that we've got a reference to a node</p>
+      <p begin="00:43:40.050" end="00:43:44.240">...the dom so we've got element whatever that...is...it from the...and every</p>
+      <p begin="00:43:44.240" end="00:43:49.010">...we still got a javascript reference to it so essentially often from mock-up so,</p>
+      <p begin="00:43:49.010" end="00:43:53.270">...you encode have code looks just like...you do is we take a snapshot</p>
+      <p begin="00:43:53.270" end="00:43:57.940">...bb press the button to get fest we go back to the memory tool.</p>
+      <p begin="00:43:57.940" end="00:44:03.390">Which is running take a snapshot and we should see is a little</p>
+      <p begin="00:44:03.390" end="00:44:08.080">button notting that again they should be...highlight...that shows you</p>
+      <p begin="00:44:08.080" end="00:44:14.010">cassette ...in this left-hand side botulism...working on left-hand side is</p>
+      <p begin="00:44:14.010" end="00:44:18.370">...nation...they'll show you when...lead to node...see those?</p>
+      <p begin="00:44:18.370" end="00:44:21.530">That's a good indicative...looks if you use libraries, libraries have like</p>
+      <p begin="00:44:21.530" end="00:44:27.090">...fragments they keep off the side and you buy one...if you do have your...code and you can see</p>
+      <p begin="00:44:27.090" end="00:44:32.870">...reference...here looked a little like information icon on the left-hand side the other thing that's really handing</p>
+      <p begin="00:44:32.870" end="00:44:39.240">the tools do we do is again along the lines of... founder on my</p>
+      <p begin="00:44:39.240" end="00:44:42.920">...application the typical again</p>
+      <p begin="00:44:42.920" end="00:44:48.960">...the other thing we do is we've got a consul method to try to where you can</p>
+      <p begin="00:44:48.960" end="00:44:54.330">...code taken memory snapshot so...for...profiling memory is to</p>
+      <p begin="00:44:54.330" end="00:44:59.240">...because you're looking between...from for leaks specifically you take a point in time technical point in time</p>
+      <p begin="00:44:59.240" end="00:45:03.360">comparison was different the problem is the ui like you just use the</p>
+      <p begin="00:45:03.360" end="00:45:08.210">of tools you have to press a button like the same time you're running application and doing whatever</p>
+      <p begin="00:45:08.210" end="00:45:12.120">...to switch the tool press a button to do that so it's obviously not quite as high-fidelity</p>
+      <p begin="00:45:12.120" end="00:45:14.740">you might like so we've got this thing called consulate</p>
+      <p begin="00:45:14.740" end="00:45:19.820">...stature so you and your code is again when you're scenarios dot you take a snapshot your scenario</p>
+      <p begin="00:45:19.820" end="00:45:27.520">ends you techno snapshot then you can...those so if we go use this?</p>
+      <p begin="00:45:27.520" end="00:45:32.730">And, if we look at the summary utilize in other places we'll see.</p>
+      <p begin="00:45:32.730" end="00:45:37.250">Separate...there is you take snapshots and they appear in this list here so then you can go ahead and</p>
+      <p begin="00:45:37.250" end="00:45:38.920">...them the idea here is the</p>
+      <p begin="00:45:38.920" end="00:45:42.890">...spaniel code this problem most important tips in terms of profiling is if you</p>
+      <p begin="00:45:42.890" end="00:45:46.200">...your code providing much better information into the tools</p>
+      <p begin="00:45:46.200" end="00:45:51.300">...spend less time...around and trying to figure out what time</p>
+      <p begin="00:45:51.300" end="00:45:56.960">...what time stamping application and how...to measure the end-to-end the scenario?</p>
+      <p begin="00:45:56.960" end="00:46:01.210">The other thing we've done the tools sizes open of one of snapshots is much like the performance</p>
+      <p begin="00:46:01.210" end="00:46:05.410">to we've tried to...with the dom explore so if I find</p>
+      <p begin="00:46:05.410" end="00:46:10.070">html...which I have as many this application you can see...things like</p>
+      <p begin="00:46:10.070" end="00:46:14.740">there's the highlighting again so you can see religiously but this object in the object</p>
+      <p begin="00:46:14.740" end="00:46:16.840">...memory is this object</p>
+      <p begin="00:46:16.840" end="00:46:21.250">over the dom which is pretty nifty again just the other things you can write click shown</p>
+      <p begin="00:46:21.250" end="00:46:25.500">...explore go back to the element inspection tool so again</p>
+      <p begin="00:46:25.500" end="00:46:29.350">that's probably more the common set...be...those...seen that but it's really nice</p>
+      <p begin="00:46:29.350" end="00:46:32.990">...you get from one place your code which is object...backtrack</p>
+      <p begin="00:46:32.990" end="00:46:37.480">...application so you can see where the node is your tree rather than just looking at it from the</p>
+      <p begin="00:46:37.480" end="00:46:40.540">object graphs side of the house which is funnel.</p>
+      <p begin="00:46:41.630" end="00:46:42.580">Scenario back.</p>
+      <p begin="00:46:44.300" end="00:46:48.790">Okay, so, I think we're going to few minutes left...yeah.</p>
+      <p begin="00:46:48.790" end="00:46:53.430">So, I think but pretty much covers the demos from switch back.</p>
+      <p begin="00:46:53.430" end="00:46:56.640">To the slides.</p>
+      <p begin="00:46:56.640" end="00:46:59.820">Yet so there's a few things that we haven't done yet we're hoping</p>
+      <p begin="00:46:59.820" end="00:47:03.710">to doing future versions of the tools and when...to do this</p>
+      <p begin="00:47:03.710" end="00:47:08.620">...an experimental set of features so this will be a separate thing</p>
+      <p begin="00:47:08.620" end="00:47:12.020">...separate tab it might just look like something like?</p>
+      <p begin="00:47:12.020" end="00:47:16.040">The ads that say where you can enables and features and features</p>
+      <p begin="00:47:16.040" end="00:47:22.300">looking enabling is a...jobs...we don't have yet the tools but from enough</p>
+      <p begin="00:47:22.300" end="00:47:27.150">...you sort of icio get codes days the same page on...that we use net twelve of</p>
+      <p begin="00:47:27.150" end="00:47:32.770">the day off the same common code base so, you want...jobs editing so you can not just fine</p>
+      <p begin="00:47:32.770" end="00:47:38.030">and debug issues but hopefully fix them so typos and...by that you can easily fix</p>
+      <p begin="00:47:38.030" end="00:47:43.710">...so like today...we have the ability to edit styles by the</p>
+      <p begin="00:47:43.710" end="00:47:46.560">...styles views you get this ridge object graph</p>
+      <p begin="00:47:46.560" end="00:47:51.490">...can...stuff and stuff but sometimes you just want to edit text and that's really what the edits</p>
+      <p begin="00:47:51.490" end="00:47:57.390">is feature is...the edit...the last two things are really abouts inspecting</p>
+      <p begin="00:47:57.390" end="00:48:01.850">stated application so today if you use cookies there's no real way of often able</p>
+      <p begin="00:48:01.850" end="00:48:06.930">to see what's in your website so what we've done and, this is...five you'll see future</p>
+      <p begin="00:48:06.930" end="00:48:11.530">flights don't know what exactly...it feature...selected review way you can edit</p>
+      <p begin="00:48:11.530" end="00:48:16.110">...you can change the values to lead them play them...sort of stuff...you know,</p>
+      <p begin="00:48:16.110" end="00:48:20.850">you basic...same those...storage today if you having to</p>
+      <p begin="00:48:20.850" end="00:48:26.360">catch data and persisted form like an open session of the dom you can</p>
+      <p begin="00:48:26.360" end="00:48:31.860">...debug...consul but that's not the most...so what we've got is view is for those again, so,</p>
+      <p begin="00:48:31.860" end="00:48:37.420">you can edit immigrate and hopefully...is add more experimental features</p>
+      <p begin="00:48:37.420" end="00:48:39.630">...is window-shopping faster and constantly</p>
+      <p begin="00:48:39.630" end="00:48:44.590">...faster but you also have things that we're working on actively looking at feedback</p>
+      <p begin="00:48:44.590" end="00:48:49.000">is the key thing that really helps us drive what we do esri getting feedback of what you</p>
+      <p begin="00:48:49.000" end="00:48:53.110">...you guys need to be more effective more productive and debugging</p>
+      <p begin="00:48:53.110" end="00:48:58.210">your websites especially microsoft ad on...on that point the last real</p>
+      <p begin="00:48:58.210" end="00:49:02.460">thing...before your time is questions is that we have a bunch of ways to give feedback</p>
+      <p begin="00:49:02.460" end="00:49:05.130">...really appreciate any feedback you have...bugs</p>
+      <p begin="00:49:05.130" end="00:49:10.580">you see features you'd like to see all just problems we're having even if you don't know what the solution is I would</p>
+      <p begin="00:49:10.580" end="00:49:16.730">love...chicken...make sure the...build the best tools for-you right now the</p>
+      <p begin="00:49:16.730" end="00:49:21.550">...reach addresses the user voice so...don't see how use voice a</p>
+      <p begin="00:49:21.550" end="00:49:25.950">few people vote their like backhoes whenever we do like product planning and stuff</p>
+      <p begin="00:49:25.950" end="00:49:31.130">...looking user voice and...where...to the...of things we do next and stuff like that solves</p>
+      <p begin="00:49:31.130" end="00:49:33.750">...go-there for bugs for now you still</p>
+      <p begin="00:49:33.750" end="00:49:39.620">commando microsoft-dot-com which is where you folly bugs we also have a bunch of stuff the isn't just</p>
+      <p begin="00:49:39.620" end="00:49:45.320">...twelve the on gab some of the other things I...do it things like allowing you to</p>
+      <p begin="00:49:45.320" end="00:49:50.380">...tools of...and stuff...of course...twitter and...dev tools</p>
+      <p begin="00:49:50.380" end="00:49:55.140">to do reach out to us and obviously like just-in-time questions now and then I'll be around</p>
+      <p begin="00:49:55.140" end="00:50:00.000">the proof which is on the second-floor just by the cool three-d scanning thing</p>
+      <p begin="00:50:00.000" end="00:50:05.040">...that...getting if you printing one-x that if you do...your</p>
+      <p begin="00:50:05.040" end="00:50:10.580">...image scanned imprinted...why but the come talk to us?</p>
+      <p begin="00:50:10.580" end="00:50:15.650">So, yeah, on that ...and the session evaluation stuff.</p>
+      <p begin="00:50:15.650" end="00:50:37.940">So, okay, so, the question.</p>
+      <p begin="00:50:37.940" end="00:50:43.170">...the question was you've got...ten machine has microsoft edge has a whole bunch of new stuff like using the</p>
+      <p begin="00:50:43.170" end="00:50:48.170">...which has like a buildings...essentially is...how you set up well first</p>
+      <p begin="00:50:48.170" end="00:50:53.740">thing is the...ten the vs twenty fifteen ossie was just announced so that's the version visual studio</p>
+      <p begin="00:50:53.740" end="00:50:59.990">it has a set of...ten tools for this version ave at the browsers of edge we</p>
+      <p begin="00:50:59.990" end="00:51:05.960">doze target debugging from visual studio so if you happen to be using visual studio to build...application</p>
+      <p begin="00:51:05.960" end="00:51:11.640">and launch it right now and like the previewing be able to do that without some work-arounds and,</p>
+      <p begin="00:51:11.640" end="00:51:24.730">...go see what that's why...launch microsoft...future version you should be able to do that.</p>
+      <p begin="00:51:32.000" end="00:51:38.220">So, the question was the asic stuff just...answers no it's for anything the uses</p>
+      <p begin="00:51:38.220" end="00:51:43.110">...interval or any the time...like imis...frame if anything use adamant</p>
+      <p begin="00:51:43.110" end="00:51:48.720">listener by anything I...in the dom this...and things the on that...of</p>
+      <p begin="00:51:48.720" end="00:51:54.060">...those and, then also you can...your own code so there is...that</p>
+      <p begin="00:51:54.060" end="00:51:59.690">...show here called debug dime...and you can if you have a library you can</p>
+      <p begin="00:51:59.690" end="00:52:03.750">...code to be say like hey I'm starting asynchronous operation...here so if you building</p>
+      <p begin="00:52:03.750" end="00:52:06.320">...js we building...you have a</p>
+      <p begin="00:52:06.320" end="00:52:10.520">...loop is going and you but your customers just using a promised say</p>
+      <p begin="00:52:10.520" end="00:52:15.460">...understand...message...task thing you can...manual library such that will bases the</p>
+      <p begin="00:52:15.460" end="00:52:21.750">promise chain they don't see the tasks looping chain which is probably set timeouts...the doing.</p>
+      <p begin="00:52:21.750" end="00:52:24.540">I was debug ims facing start operation</p>
+      <p begin="00:52:24.540" end="00:52:29.600">and operation in fact we just open up we can find it by...consul.</p>
+      <p begin="00:52:29.600" end="00:52:34.630">It's...like it's a microsoft only api.</p>
+      <p begin="00:52:34.630" end="00:52:44.430">...use these ones here tracing and our sorry.</p>
+      <p begin="00:52:44.430" end="00:53:00.910">Those ones yet...msn augmentation...are use them.</p>
+      <p begin="00:53:00.910" end="00:53:05.790">Yes, the question...we...get rid of the major releases we've had like nine ten eleven and,</p>
+      <p begin="00:53:05.790" end="00:53:09.920">have twelve I don't know definite my space I do</p>
+      <p begin="00:53:09.920" end="00:53:14.330">the for the tools we times just do like incremental updates like in general</p>
+      <p begin="00:53:14.330" end="00:53:18.880">apart from the big versions support...change...eleven microsoft edge its</p>
+      <p begin="00:53:18.880" end="00:53:23.650">movies like incremental this point so I can't say for...borrow microsoft edge with</p>
+      <p begin="00:53:23.650" end="00:53:37.550">a vision pies...says we...them frequently by the windows inside a programming stuff like that?</p>
+      <p begin="00:53:37.550" end="00:53:43.920">As a possibly...actually the funny thing is...you...on high contrast</p>
+      <p begin="00:53:43.920" end="00:53:48.480">And, then...the tools themselves on...barley implantation is basically you have</p>
+      <p begin="00:53:48.480" end="00:53:54.380">alyssa tokens and css it's just not...convertible right now the only way you can get</p>
+      <p begin="00:53:54.380" end="00:54:10.800">...high...opt which is pretty extreme if you have...in...windows.</p>
+      <p begin="00:54:10.800" end="00:54:14.590">The question was with edge coming to...of debugging that so-you...</p>
+      <p begin="00:54:14.590" end="00:54:19.320">game so there aren't going to be the...tools on the phone obviously and these tools one carney</p>
+      <p begin="00:54:19.320" end="00:54:23.560">...work remotely so, you abilities visual studio like you can today with</p>
+      <p begin="00:54:23.560" end="00:54:28.630">...so today images geo since twenty thirteen...the</p>
+      <p begin="00:54:28.630" end="00:54:33.120">...windows phone is a explore it's about essentially the same</p>
+      <p begin="00:54:33.120" end="00:54:38.180">it's not in the ossie...nine-a bits that shipped...will be hopefully rem</p>
+      <p begin="00:54:38.180" end="00:54:42.640">...be able to debug adj on the...get the same tools</p>
+      <p begin="00:54:42.640" end="00:54:54.320">...mention briefly all these tools are actually and I visual seo...which for obvious reasons is not visually.</p>
+      <p begin="00:54:54.320" end="00:55:00.200">All right...five-minute early I said I'm going to movement has anymore...questions...thank you.</p>
+
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.894</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:07.420" end="00:00:10.480">Okay, it's exactly two o'clock.</p>
+      <p begin="00:00:10.480" end="00:00:13.020">On the last day of build so I can't really say</p>
+      <p begin="00:00:13.020" end="00:00:17.650">welcome to build what I'll say thanks for coming to build.</p>
+      <p begin="00:00:17.650" end="00:00:19.520">I know a bunch of viewer watching this on</p>
+      <p begin="00:00:19.520" end="00:00:24.670">...others...probably in a cab to the airport right now but for those of you</p>
+      <p begin="00:00:24.670" end="00:00:31.060">...come who did make the timeI promise you I'm going to try and make it worthwhile.</p>
+      <p begin="00:00:31.060" end="00:00:31.880">Okay, so,</p>
+      <p begin="00:00:31.880" end="00:00:37.270">my name is...saying I work on the windows developer platform team of</p>
+      <p begin="00:00:37.270" end="00:00:40.910">...where the people who put together the api is...you use</p>
+      <p begin="00:00:40.910" end="00:00:44.250">...writer apps and thank you for all the apps?</p>
+      <p begin="00:00:44.250" end="00:00:49.260">Of my twitter handles up there my blogs up there and all of the code that you</p>
+      <p begin="00:00:49.260" end="00:00:54.080">see in this session today all of the demo code is up in that a get hub</p>
+      <p begin="00:00:54.080" end="00:01:00.610">a repository up there I can't...I can take credit for most that code because most of</p>
+      <p begin="00:01:00.610" end="00:01:04.230">that code was written by sandeep washear ...or most</p>
+      <p begin="00:01:04.230" end="00:01:08.750">...and I keep repeating that because all of the bugs in...code</p>
+      <p begin="00:01:08.750" end="00:01:14.590">those who is if the ui pretty his fault.</p>
+      <p begin="00:01:14.590" end="00:01:16.010">But, you know, the api</p>
+      <p begin="00:01:16.010" end="00:01:23.490">...there and we're not the whitey just to emphasize before we get to the ui.</p>
+      <p begin="00:01:23.490" end="00:01:26.940">Please give me feedback where very competitive and our team if you went to</p>
+      <p begin="00:01:26.940" end="00:01:29.980">thomas's session he-he-he aasl feedback on the</p>
+      <p begin="00:01:29.980" end="00:01:34.360">...for feedback too because I want to win and yeah,</p>
+      <p begin="00:01:34.360" end="00:01:41.670">that's it andrew clinic talked about a bunch of application model features that</p>
+      <p begin="00:01:41.670" end="00:01:48.240">...to this conference on his talk in on the first a this is very learn about</p>
+      <p begin="00:01:48.240" end="00:01:53.230">the app services hopefully we've been able to attend some of the other sessions and have</p>
+      <p begin="00:01:53.230" end="00:02:02.640">more of an idea of the app model improvements other bringing in with windows...</p>
+      <p begin="00:02:02.640" end="00:02:07.180">And, the clicker just stop work ok works it works.</p>
+      <p begin="00:02:07.180" end="00:02:13.940">Maybe more than one-click so, as you walked into the session you might have seen that we have a new</p>
+      <p begin="00:02:13.940" end="00:02:17.300">by line this year I did the same apple</p>
+      <p begin="00:02:17.300" end="00:02:22.240">app communication session last year as well for those of you were here and the by</p>
+      <p begin="00:02:22.240" end="00:02:27.750">line this year is the web of apps and andrew talked about this briefly so,</p>
+      <p begin="00:02:27.750" end="00:02:30.600">...is keynote and.</p>
+      <p begin="00:02:30.600" end="00:02:36.430">We're inspired by the web it is the biggest platform known to man</p>
+      <p begin="00:02:36.430" end="00:02:41.180">it is there's, there's hundreds of millions of websites possibly a billion plus.</p>
+      <p begin="00:02:41.180" end="00:02:43.250">And, the work together great.</p>
+      <p begin="00:02:43.250" end="00:02:44.580">And, that works for apps</p>
+      <p begin="00:02:44.580" end="00:02:49.270">...today an app on pretty much any device can reach out to a</p>
+      <p begin="00:02:49.270" end="00:02:54.660">website hundreds if not thousands of miles away get some data from a display</p>
+      <p begin="00:02:54.660" end="00:02:58.750">to you...the make transactions happen send</p>
+      <p begin="00:02:58.750" end="00:03:02.290">the user to the website you can do all these wonderful things but</p>
+      <p begin="00:03:02.290" end="00:03:07.020">...app tries to talk to another app on the same device we don't see</p>
+      <p begin="00:03:07.020" end="00:03:11.800">that often enough so our goal is to effectively</p>
+      <p begin="00:03:11.800" end="00:03:15.380">help you build a web of apps on your</p>
+      <p begin="00:03:15.380" end="00:03:20.310">users devices where abstract to each other as often as they...websites I mean they</p>
+      <p begin="00:03:20.310" end="00:03:26.250">...stop talking websites because that's great but they should also talk to each other so</p>
+      <p begin="00:03:26.250" end="00:03:32.370">that's the rationale behind that...by line.</p>
+      <p begin="00:03:32.370" end="00:03:35.490">So, the first thing you want to do</p>
+      <p begin="00:03:35.490" end="00:03:40.260">when you want to build this web of apps is a you want to be able to link to other apps</p>
+      <p begin="00:03:40.260" end="00:03:46.230">on the same device now we wouldn't api called the launch uri</p>
+      <p begin="00:03:46.230" end="00:03:52.060">...does what it says entertaind exactly what it sounds like</p>
+      <p begin="00:03:52.060" end="00:03:56.760">you can launch...uri but not only can you launch web style http</p>
+      <p begin="00:03:56.760" end="00:04:01.310">...where you can also launch you arise that are based on</p>
+      <p begin="00:04:01.310" end="00:04:07.180">custom schemes so here's an example the...starts out in app</p>
+      <p begin="00:04:07.180" end="00:04:11.950">the click a button somewhere do some interaction and apathy uses the launch</p>
+      <p begin="00:04:11.950" end="00:04:16.000">uri spacing api to launch this uri which is</p>
+      <p begin="00:04:16.000" end="00:04:19.120">an http ori it's my app colon</p>
+      <p begin="00:04:19.120" end="00:04:23.650">question mark or equals yes just read-out something on my slide?</p>
+      <p begin="00:04:23.650" end="00:04:26.800">Anyway.</p>
+      <p begin="00:04:26.800" end="00:04:32.520">Ok, so, let's assume...which is also on the does on the same device signed up for that</p>
+      <p begin="00:04:32.520" end="00:04:36.740">custom scheme the custom scheme called miami what's going to happen here is that</p>
+      <p begin="00:04:36.740" end="00:04:40.470">...gets launched it gets given that uri and all</p>
+      <p begin="00:04:40.470" end="00:04:45.160">is well with the world and you just manage to be playing into that and it's</p>
+      <p begin="00:04:45.160" end="00:04:51.120">pretty straightforward and all of this staffworks today this is available on windows,</p>
+      <p begin="00:04:51.120" end="00:04:55.320">windows phone xbox pretty much all our platforms it works</p>
+      <p begin="00:04:55.320" end="00:04:58.640">or android and ios too.</p>
+      <p begin="00:04:58.640" end="00:05:03.190">So, why am I talking about custom schemes in the context of a</p>
+      <p begin="00:05:03.190" end="00:05:05.690">web of apps well?</p>
+      <p begin="00:05:05.690" end="00:05:10.280">One nice thing about custom schemes is that they've been around a very long</p>
+      <p begin="00:05:10.280" end="00:05:15.170">times pretty much since nineteen ninety six in fact they were introduced right here in the most coney</p>
+      <p begin="00:05:15.170" end="00:05:20.720">center by the internet explorer team so never said that never say that internet</p>
+      <p begin="00:05:20.720" end="00:05:23.990">...give you anything.</p>
+      <p begin="00:05:23.990" end="00:05:26.880">And, they're so popular that they made the</p>
+      <p begin="00:05:26.880" end="00:05:31.650">...across to android and ios and most labels of unix as well so that's</p>
+      <p begin="00:05:31.650" end="00:05:34.890">awesome the reason that's awesome is that you can do</p>
+      <p begin="00:05:34.890" end="00:05:39.250">accustom scheme and habit light up on pretty much any platform out there in the</p>
+      <p begin="00:05:39.250" end="00:05:45.500">work the third interesting thing that's happened over the lastalso</p>
+      <p begin="00:05:45.500" end="00:05:50.470">is that a lot of our partners in the text tech industry a lot of the big</p>
+      <p begin="00:05:50.470" end="00:05:53.990">...guys, you know, your facebook your google.</p>
+      <p begin="00:05:53.990" end="00:05:58.560">Or microsoft have become very interested in the idea of this web</p>
+      <p begin="00:05:58.560" end="00:06:04.620">of apps and there's these initiatives the first one is you know, facebook</p>
+      <p begin="00:06:04.620" end="00:06:09.500">sap links not the first initiative but in no particular order</p>
+      <p begin="00:06:09.500" end="00:06:11.140">facebook has initiative called app</p>
+      <p begin="00:06:11.140" end="00:06:16.610">...bing also has an initiative called confusing enough app</p>
+      <p begin="00:06:16.610" end="00:06:20.560">link google has app indexing and basic idea of it all</p>
+      <p begin="00:06:20.560" end="00:06:25.440">of these initiatives is to take an http uri of web</p>
+      <p begin="00:06:25.440" end="00:06:29.000">ui and transform it into a custom scheme</p>
+      <p begin="00:06:29.000" end="00:06:33.900">that somebody can use to launch an...a device so there's industry momentum behind this idea new</p>
+      <p begin="00:06:33.900" end="00:06:38.950">...more people talk about it.</p>
+      <p begin="00:06:38.950" end="00:06:42.540">So, that staff that works today and it's quick.</p>
+      <p begin="00:06:42.540" end="00:06:45.140">But, we're talking about windows stent and we've been working</p>
+      <p begin="00:06:45.140" end="00:06:48.170">...the past year making sure that windows</p>
+      <p begin="00:06:48.170" end="00:06:53.140">is ready as a platform for all of these initiatives then you want to build a web of</p>
+      <p begin="00:06:53.140" end="00:06:55.690">apps we want windows to be first-class.</p>
+      <p begin="00:06:56.800" end="00:06:58.450">So, what are we done...first</p>
+      <p begin="00:06:58.450" end="00:07:03.720">...problem event after was what I'm calling the evil twin problem and I'm coining</p>
+      <p begin="00:07:03.720" end="00:07:06.210">...I haven't heard before</p>
+      <p begin="00:07:06.210" end="00:07:12.350">...anyway the...problem goes like so?</p>
+      <p begin="00:07:12.350" end="00:07:15.490">...starts out...a they click a button do something</p>
+      <p begin="00:07:15.490" end="00:07:17.480">...to launch...again</p>
+      <p begin="00:07:18.800" end="00:07:22.180">...my app colon custom uri a custom scheme uri.</p>
+      <p begin="00:07:23.290" end="00:07:24.520">Except in this case.</p>
+      <p begin="00:07:25.660" end="00:07:28.800">You've got...be installed on the device but you've also got</p>
+      <p begin="00:07:28.800" end="00:07:32.040">...evil twin on the device now</p>
+      <p begin="00:07:32.040" end="00:07:36.220">the evil twin happens to sign up for the same scheme now it's not always evil maybe</p>
+      <p begin="00:07:36.220" end="00:07:42.460">...chose a scheme like my app colon like guided and, it's so common somebody else</p>
+      <p begin="00:07:42.460" end="00:07:46.580">what's the session and chose the same scheme and you ended up in this place.</p>
+      <p begin="00:07:46.580" end="00:07:48.230">...happens when this...</p>
+      <p begin="00:07:49.400" end="00:07:53.880">The user gets to see a picker and now based on</p>
+      <p begin="00:07:53.880" end="00:07:58.610">the little information that they have about what your apps are and what they can do they need to</p>
+      <p begin="00:07:58.610" end="00:08:03.170">make a choice and then we need to make the right choice?</p>
+      <p begin="00:08:03.170" end="00:08:08.160">Are to make the meta information flow correctly and to make the scenario work</p>
+      <p begin="00:08:08.160" end="00:08:11.960">but that's not great because now there's a big potential that</p>
+      <p begin="00:08:11.960" end="00:08:17.020">you might end up breaking your scenario so what did we do about this problem let's</p>
+      <p begin="00:08:17.020" end="00:08:23.650">...quick demo to find out?</p>
+      <p begin="00:08:23.650" end="00:08:29.340">...to my laptop.</p>
+      <p begin="00:08:29.340" end="00:08:34.709">And, I'm going to test phone up here you see it ok...</p>
+      <p begin="00:08:34.709" end="00:08:38.369">And, I'm just using a windows phone...and for the next demo I'll be using</p>
+      <p begin="00:08:38.369" end="00:08:44.009">a desktop device just because we can get some variety here.</p>
+      <p begin="00:08:44.009" end="00:08:45.629">And, what...is I've got</p>
+      <p begin="00:08:45.629" end="00:08:50.950">a apple are build twenty fourteen for the blog that's this up here?</p>
+      <p begin="00:08:50.950" end="00:08:54.960">And, we brought this up for demo last year and,</p>
+      <p begin="00:08:54.960" end="00:08:58.840">all it does is it lets you post pictures from well I guess</p>
+      <p begin="00:08:58.840" end="00:09:03.810">...twenty fifteen for to obtain the title but it lets you post</p>
+      <p begin="00:09:03.810" end="00:09:08.530">pictures from...twenty fifty into a tumblr blog that we set up last year and I'm not going to</p>
+      <p begin="00:09:08.530" end="00:09:13.610">go into details of this app other than say that I launch uri enabled...I</p>
+      <p begin="00:09:13.610" end="00:09:18.480">...this app up for a custom scheme and the internal name of this app is a</p>
+      <p begin="00:09:18.480" end="00:09:21.190">...because we're talking...</p>
+      <p begin="00:09:21.190" end="00:09:21.680">We've also</p>
+      <p begin="00:09:21.680" end="00:09:26.290">...another app called sake...we which is which will play the role of</p>
+      <p begin="00:09:26.290" end="00:09:31.400">equal to n and it's signs up for the same custom scheme as</p>
+      <p begin="00:09:31.400" end="00:09:34.260">you'd expect and then we'll go to third app</p>
+      <p begin="00:09:34.260" end="00:09:38.070">...launcher and all it does is it tries to launch</p>
+      <p begin="00:09:38.070" end="00:09:42.750">...tries to launch to build twenty fourteen for the blog app but</p>
+      <p begin="00:09:42.750" end="00:09:47.680">what happens you get a picker and depending upon what choice</p>
+      <p begin="00:09:47.680" end="00:09:55.270">the user makes the may might end up in the right place or they might not end up in the right place.</p>
+      <p begin="00:09:55.270" end="00:10:00.830">Let's switch back and figure out how we might fix this problem.</p>
+      <p begin="00:10:00.830" end="00:10:01.880">So, here's the</p>
+      <p begin="00:10:01.880" end="00:10:06.160">...for tumble me launcher it has only one-button on-screen as we just</p>
+      <p begin="00:10:06.160" end="00:10:14.930">...saw and that wharton literally.</p>
+      <p begin="00:10:14.930" end="00:10:19.570">Ok, literally launches a uri skip noggin a little bit more smart with this</p>
+      <p begin="00:10:19.570" end="00:10:23.750">app and I've used the reversed domain naming convention for</p>
+      <p begin="00:10:23.750" end="00:10:29.030">mycustom scheme which is a nice thing to do because that way because I on our</p>
+      <p begin="00:10:29.030" end="00:10:32.540">own talks tech dot com I have a reasonable I can make</p>
+      <p begin="00:10:32.540" end="00:10:35.570">a reasonable assumption that another non malicious app</p>
+      <p begin="00:10:35.570" end="00:10:39.770">...to take over my custom scheme so I've done that but what if the other app</p>
+      <p begin="00:10:39.770" end="00:10:44.980">is in fact malicious what if it wants to steal my user so.</p>
+      <p begin="00:10:44.980" end="00:10:47.610">We did was.</p>
+      <p begin="00:10:47.610" end="00:10:51.780">We now allow you when launching another app using</p>
+      <p begin="00:10:51.780" end="00:10:56.190">...to specify an option.</p>
+      <p begin="00:10:56.190" end="00:11:01.610">And, the options called target application package family name that's...we</p>
+      <p begin="00:11:01.610" end="00:11:10.590">love long property names as...see you know, somebody's got a cell intelligence guys.</p>
+      <p begin="00:11:10.590" end="00:11:15.000">My god visual studio team is going to kill me but.</p>
+      <p begin="00:11:15.000" end="00:11:22.810">Okay, so, I love...I love visual studio I have it on video.</p>
+      <p begin="00:11:23.820" end="00:11:27.560">So, what where do we get this package family name from I'm going to come back to that question</p>
+      <p begin="00:11:27.560" end="00:11:34.650">a little bit but here's this long ish value?</p>
+      <p begin="00:11:34.650" end="00:11:37.760">Which all it does is basically it identifies the</p>
+      <p begin="00:11:37.760" end="00:11:41.270">...it says I want to launch this scheme yes but I</p>
+      <p begin="00:11:41.270" end="00:11:45.880">want to make sure that the app that handles this scheme is this one and this is my</p>
+      <p begin="00:11:45.880" end="00:11:50.480">trumbull me app this is the right app and we're just going to plug those options</p>
+      <p begin="00:11:50.480" end="00:11:53.140">in and that's it that's all the code I need okay?</p>
+      <p begin="00:11:54.290" end="00:12:01.540">Let's deployed bumble...launcher down-to-the-wire device.</p>
+      <p begin="00:12:01.540" end="00:12:06.340">Incidentally this is a real device...is an emulator because,</p>
+      <p begin="00:12:06.340" end="00:12:07.670">you know.</p>
+      <p begin="00:12:07.670" end="00:12:12.710">I like to live with...</p>
+      <p begin="00:12:12.710" end="00:12:17.740">Predeployed...please work.</p>
+      <p begin="00:12:17.740" end="00:12:19.610">Ok,...nice</p>
+      <p begin="00:12:19.610" end="00:12:26.910">...axle surprised all right so you remember what happened the last time we...launcher</p>
+      <p begin="00:12:26.910" end="00:12:31.790">Looking at this spartan and we...well this time the press the button</p>
+      <p begin="00:12:31.790" end="00:12:39.280">again and that's it that's all it took so it's a small addition yes.</p>
+      <p begin="00:12:39.280" end="00:12:40.690">But, it's.</p>
+      <p begin="00:12:40.690" end="00:12:44.380">It enables you to make your users go</p>
+      <p begin="00:12:44.380" end="00:12:49.240">down the road that you want them to go down and I'm sorry I'm spending more time on this side of</p>
+      <p begin="00:12:49.240" end="00:12:53.630">the stage incidentally because they've got this giant table over here and I</p>
+      <p begin="00:12:53.630" end="00:12:58.530">don't like hiding behind a table.</p>
+      <p begin="00:12:58.530" end="00:13:05.670">that's how you launch a specific app and...a nice animation showing...</p>
+      <p begin="00:13:05.670" end="00:13:10.190">And, that's how you get a package family name now the package family name is</p>
+      <p begin="00:13:10.190" end="00:13:12.100">...some secret piece of information that</p>
+      <p begin="00:13:12.100" end="00:13:16.440">you supposed to keep yourself all it is a unique identifier</p>
+      <p begin="00:13:16.440" end="00:13:21.540">for your app in the windows store you don't necessarily have to put your app</p>
+      <p begin="00:13:21.540" end="00:13:26.130">...windows store to get a package family name you literally call this api windows</p>
+      <p begin="00:13:26.130" end="00:13:31.390">application...package current id family remember what I said about long api is</p>
+      <p begin="00:13:31.390" end="00:13:36.600">what you call this api and you get a family name back one of those a strings that I</p>
+      <p begin="00:13:36.600" end="00:13:41.510">just showed you and you handed to whoever needs to...app and they can do what I just it is</p>
+      <p begin="00:13:41.510" end="00:13:45.550">not straightforward and the packets family name is something that</p>
+      <p begin="00:13:45.550" end="00:13:50.830">is a generated by visual studio when you go file new app you can actually go into the</p>
+      <p begin="00:13:50.830" end="00:13:56.090">store and resolve a package identity name and use that as well and then use</p>
+      <p begin="00:13:56.090" end="00:14:01.020">...that nobody else is going to take it also part of the package family name is a hash of</p>
+      <p begin="00:14:01.020" end="00:14:05.920">the certificate that your app assigned...it so unless you lose your name reservation</p>
+      <p begin="00:14:05.920" end="00:14:08.620">and your certificate in which case you been very</p>
+      <p begin="00:14:08.620" end="00:14:15.710">careless you're not going to user lose your package family name so it's pretty secure.</p>
+      <p begin="00:14:15.710" end="00:14:19.900">We made some other improvements sometimes you want to launch another app and you</p>
+      <p begin="00:14:19.900" end="00:14:23.850">...a file because you don't want to take a gigantic file and serialized</p>
+      <p begin="00:14:23.850" end="00:14:27.280">into a strict ok reasonable asks.</p>
+      <p begin="00:14:27.280" end="00:14:29.580">You can do that now there's a new api</p>
+      <p begin="00:14:29.580" end="00:14:33.890">core shared storage access manager it has a method called</p>
+      <p begin="00:14:33.890" end="00:14:38.660">ad file gives you backer token that organism...and the</p>
+      <p begin="00:14:38.660" end="00:14:42.820">good is a string that you can stick on anything and send it to another out the other</p>
+      <p begin="00:14:42.820" end="00:14:47.770">...can take that string put it into redeem token for file and get a</p>
+      <p begin="00:14:47.770" end="00:14:52.310">storage file back is that simple and it doesn't have to be used with launch you</p>
+      <p begin="00:14:52.310" end="00:15:00.390">...literally you can literally use any mechanism to get the string across to the other</p>
+      <p begin="00:15:00.390" end="00:15:02.650">The other side of things we added.</p>
+      <p begin="00:15:02.650" end="00:15:07.510">Was the ability to query for support the you have a scenario that involves</p>
+      <p begin="00:15:07.510" end="00:15:12.090">multiple apps maybe or app and your friends up and you want to figure out whether you're</p>
+      <p begin="00:15:12.090" end="00:15:16.030">friends app is installed on the device well query uri support a</p>
+      <p begin="00:15:16.030" end="00:15:22.860">...is the answer it lets you do that.</p>
+      <p begin="00:15:22.860" end="00:15:27.100">Another improvement...was the ability to enable</p>
+      <p begin="00:15:27.100" end="00:15:31.640">extension like scenarios when you say hey I'm this popular</p>
+      <p begin="00:15:31.640" end="00:15:34.410">...you want to show up inside of my</p>
+      <p begin="00:15:34.410" end="00:15:39.120">app you will implement my app dash extension custom scheme</p>
+      <p begin="00:15:39.120" end="00:15:43.610">in your app at runtime I'm going to ask the device are there any</p>
+      <p begin="00:15:43.610" end="00:15:48.180">apps that support my apache extension we're going to give you a list back and the api</p>
+      <p begin="00:15:48.180" end="00:15:52.860">is called find uri scheme handles...so I'm not going to go into demos for</p>
+      <p begin="00:15:52.860" end="00:15:57.590">these because...kind of self-explanatory but if you if you would like sample</p>
+      <p begin="00:15:57.590" end="00:16:00.010">...I'll be putting up more sample...on</p>
+      <p begin="00:16:00.010" end="00:16:07.550">...hub...people that I talked about before and I'll be blogging about it as well.</p>
+      <p begin="00:16:07.550" end="00:16:11.550">The last improvement that we made to deep linking is</p>
+      <p begin="00:16:11.550" end="00:16:16.360">called launching for results so now there are times when you've got the scenarios where you do</p>
+      <p begin="00:16:16.360" end="00:16:21.250">want to send your user to another app but you want the user to</p>
+      <p begin="00:16:21.250" end="00:16:26.190">do something in there and come back a good example is your game</p>
+      <p begin="00:16:26.190" end="00:16:31.270">and you want...user to tell their friends about this great game that just played</p>
+      <p begin="00:16:31.270" end="00:16:36.320">okay our except the users friends live in another social networking</p>
+      <p begin="00:16:36.320" end="00:16:40.570">app substitute your favorite social networking...here and you launch that</p>
+      <p begin="00:16:40.570" end="00:16:44.230">...for results have the use...select their friends?</p>
+      <p begin="00:16:44.230" end="00:16:47.760">And, have godsend absent send the list of friends back</p>
+      <p begin="00:16:47.760" end="00:16:51.540">...as a result so you launching the other app except</p>
+      <p begin="00:16:51.540" end="00:16:57.710">with the expectation that the other app is going to send the user back and possibly some results back?</p>
+      <p begin="00:16:57.710" end="00:17:02.500">So,...does that work well is pretty straightforward again we start out in</p>
+      <p begin="00:17:02.500" end="00:17:04.190">up a and?</p>
+      <p begin="00:17:05.230" end="00:17:08.920">The only thing different in this piece of code is that third line</p>
+      <p begin="00:17:08.920" end="00:17:13.460">there instead of calling launch...recalling launch uri for</p>
+      <p begin="00:17:13.460" end="00:17:19.950">results facing incidentally this is how I...names get longer and longer but okay launch</p>
+      <p begin="00:17:19.950" end="00:17:24.570">...results you send in a uri the same kind of options because you want to identify</p>
+      <p begin="00:17:24.570" end="00:17:25.210">...launching.</p>
+      <p begin="00:17:26.250" end="00:17:30.520">And, that's it and that is an available method for you csharp fans</p>
+      <p begin="00:17:30.520" end="00:17:34.650">...one as well that's unavailable method which brings back a result when the</p>
+      <p begin="00:17:34.650" end="00:17:39.700">method completes and it's also you can also use it with the javascript</p>
+      <p begin="00:17:39.700" end="00:17:41.990">and cplus-plus promises for those of</p>
+      <p begin="00:17:41.990" end="00:17:46.700">...this different persuasion and that works too so the results</p>
+      <p begin="00:17:46.700" end="00:17:53.840">and actually a structure called...a value set so thisthe code at the bottom is</p>
+      <p begin="00:17:53.840" end="00:17:58.050">what the what...would due to return...results so it sets up a value</p>
+      <p begin="00:17:58.050" end="00:18:01.900">...and the values...is a new is it's type</p>
+      <p begin="00:18:01.900" end="00:18:08.060">...last year with windows phone eight-point one and it's...simple property</p>
+      <p begin="00:18:08.060" end="00:18:12.960">bag slash...it can carry integers a strings?</p>
+      <p begin="00:18:12.960" end="00:18:15.330">...numbers by buffers biter</p>
+      <p begin="00:18:15.330" end="00:18:19.860">is what have you so think of it think of value said as</p>
+      <p begin="00:18:19.860" end="00:18:25.280">...if...you pretty much serialized anything down to...</p>
+      <p begin="00:18:25.280" end="00:18:33.350">Okay, ...demo.</p>
+      <p begin="00:18:33.350" end="00:18:38.530">Switching back to my laptop and this time we're going to try and do this with the</p>
+      <p begin="00:18:38.530" end="00:18:44.590">desktop out so what I've got is an app or the controls...let's just see...also</p>
+      <p begin="00:18:44.590" end="00:18:50.790">...learning?</p>
+      <p begin="00:18:50.790" end="00:18:52.710">And, sort of those of you haven't heard</p>
+      <p begin="00:18:52.710" end="00:18:59.360">...is this great e-commerce site that you will not find online.</p>
+      <p begin="00:18:59.360" end="00:19:02.410">And, it's great I buy everything I want</p>
+      <p begin="00:19:02.410" end="00:19:09.070">...shop it says for things and those are the four things I need it so,</p>
+      <p begin="00:19:09.070" end="00:19:13.570">let's go ahead and the by one of these laptops they didn't give lab speakers</p>
+      <p begin="00:19:13.570" end="00:19:18.500">laptops they give you all those awesome laptops they didn't give any to us so I need</p>
+      <p begin="00:19:18.500" end="00:19:25.630">to buy a laptop and click on the by burton and nothing happens...happens because there's no</p>
+      <p begin="00:19:25.630" end="00:19:31.850">...ok so let's take a look at the code we want to do here.</p>
+      <p begin="00:19:31.850" end="00:19:37.640">Is we want to use a this other app here called</p>
+      <p begin="00:19:37.640" end="00:19:40.510">Which is also very famous spank?</p>
+      <p begin="00:19:40.510" end="00:19:44.060">To try and authorize the payment so</p>
+      <p begin="00:19:44.060" end="00:19:48.670">...shop does not understand how to...payments...going to try and</p>
+      <p begin="00:19:48.670" end="00:19:53.570">launched would grow bank to authorize the payment because presumably the user has an account in would</p>
+      <p begin="00:19:53.570" end="00:19:56.860">go bank and if they approve of the payment because</p>
+      <p begin="00:19:56.860" end="00:20:01.300">would go bank will be launch for results in say, yeah, they use a...and, you know,</p>
+      <p begin="00:20:01.300" end="00:20:06.430">everything's good with the world oral say the user in by sorry try again so,</p>
+      <p begin="00:20:06.430" end="00:20:08.790">this is obviously a contrived scenario</p>
+      <p begin="00:20:10.520" end="00:20:15.370">please don't treat this as a starting point for e-commerce scenario because, you know,</p>
+      <p begin="00:20:15.370" end="00:20:20.340">what...bankrolled summa but bank of america might?</p>
+      <p begin="00:20:20.340" end="00:20:27.290">So, let's going-to...and try calling would grow bank for result so that's the main page we were looking at.</p>
+      <p begin="00:20:27.290" end="00:20:29.140">Get in there.</p>
+      <p begin="00:20:29.140" end="00:20:31.980">And,...this.</p>
+      <p begin="00:20:33.530" end="00:20:38.520">So, you know, buy monitor goes here by laptop goes here by</p>
+      <p begin="00:20:38.520" end="00:20:44.370">phone goes here so on so forth this discord is obviously not production ready because there's</p>
+      <p begin="00:20:44.370" end="00:20:48.570">no nb vietnam on your view models in here but I wanted to keep it simple so that we</p>
+      <p begin="00:20:48.570" end="00:20:53.350">...focus on the api is and I'm going to be lazy and I'm going to use</p>
+      <p begin="00:20:53.350" end="00:20:57.690">code snippets instead of typing code because I didn't tell you this but I'm</p>
+      <p begin="00:20:57.690" end="00:21:00.720">a program manager don't...article.</p>
+      <p begin="00:21:01.760" end="00:21:07.700">I wrote called for eleven years but now I program...now tell other people to write code.</p>
+      <p begin="00:21:07.700" end="00:21:11.280">And, then pretended to.</p>
+      <p begin="00:21:11.280" end="00:21:15.440">we launch would rove...pay we set the target application family</p>
+      <p begin="00:21:15.440" end="00:21:20.520">...we've already seen this what we're also doing is we're taking we're taking the product</p>
+      <p begin="00:21:20.520" end="00:21:25.350">information the product that the user selected for taking the product name</p>
+      <p begin="00:21:25.350" end="00:21:28.570">...the amount that the user needs to authorized and...that</p>
+      <p begin="00:21:28.570" end="00:21:33.440">in a values are not only can you get a value said back when you do a launch uri you can also</p>
+      <p begin="00:21:33.440" end="00:21:38.450">send...right and we could have stuck all this information on the uri if we wanted to but this is</p>
+      <p begin="00:21:38.450" end="00:21:41.030">just I want to show of this feature.</p>
+      <p begin="00:21:41.030" end="00:21:45.480">Also we want to send a picture of the would what the users trying to buy into</p>
+      <p begin="00:21:45.480" end="00:21:49.560">woodrow bank as well so we take that picture we turn it into a token</p>
+      <p begin="00:21:49.560" end="00:21:55.270">...stick the google values...okay.</p>
+      <p begin="00:21:55.270" end="00:21:56.910">We launch for grow bank...for</p>
+      <p begin="00:21:56.910" end="00:22:01.750">results so paradis and three pieces the uri</p>
+      <p begin="00:22:01.750" end="00:22:08.390">the options contain the target package family name and that's the input data.</p>
+      <p begin="00:22:08.390" end="00:22:12.390">And, then we await the result and then the result comes back</p>
+      <p begin="00:22:12.390" end="00:22:17.190">we inspector result which the result that's coming back is from would grow bank</p>
+      <p begin="00:22:17.190" end="00:22:22.180">...to see if the user actually said status success and this is how,</p>
+      <p begin="00:22:22.180" end="00:22:25.000">you know, this is a naive contrived scenario because</p>
+      <p begin="00:22:25.000" end="00:22:46.930">...be a lot more stuff in there in realize and then we go to order place page.</p>
+      <p begin="00:22:46.930" end="00:22:50.510">Ok, so, this time I'm going by my laptop so you see</p>
+      <p begin="00:22:50.510" end="00:22:57.280">...bank came up that's a separate app that's not part of the same map so,</p>
+      <p begin="00:22:57.280" end="00:23:02.270">because it was launch for results it came up in a modal fashion I cannot interact with would</p>
+      <p begin="00:23:02.270" end="00:23:05.760">go back control so sharp until I'm done interacting</p>
+      <p begin="00:23:05.760" end="00:23:11.110">...grow bank because condos...waiting for results so.</p>
+      <p begin="00:23:11.110" end="00:23:15.390">Here's a little except but now we switch over to.</p>
+      <p begin="00:23:15.390" end="00:23:20.070">The would grow bank cap.</p>
+      <p begin="00:23:20.070" end="00:23:24.760">And, we look at the payment page because that's where we are the moment.</p>
+      <p begin="00:23:24.760" end="00:23:31.200">Let's go in here and look at what the except button actually does.</p>
+      <p begin="00:23:31.200" end="00:23:34.830">There's a click...for the except pardon.</p>
+      <p begin="00:23:34.830" end="00:23:38.260">And, what it does is it actually?</p>
+      <p begin="00:23:38.260" end="00:23:38.980">Sets a value</p>
+      <p begin="00:23:38.980" end="00:23:46.230">...several sensible value said puts a success innate and...report completed.</p>
+      <p begin="00:23:46.230" end="00:23:47.940">They switch back to</p>
+      <p begin="00:23:47.940" end="00:23:54.930">...cs that's it that is the order placed page.</p>
+      <p begin="00:23:54.930" end="00:23:55.870">Okay, so,</p>
+      <p begin="00:23:55.870" end="00:23:59.420">how does woodrow bank actually sign up to be launch for results?</p>
+      <p begin="00:24:00.680" end="00:24:03.130">Will apps have been able to?</p>
+      <p begin="00:24:03.130" end="00:24:07.630">Sign up to relaunch for results through them app...to be launched of with</p>
+      <p begin="00:24:07.630" end="00:24:12.960">...custom scheme...aproximately fest in the past but to be launch for</p>
+      <p begin="00:24:12.960" end="00:24:16.170">results you have to do slot something slightly different so he</p>
+      <p begin="00:24:16.170" end="00:24:21.070">here's the epics manifest for the would go back up and in</p>
+      <p begin="00:24:21.070" end="00:24:25.730">...we've got this thing but here's an interesting new thing.</p>
+      <p begin="00:24:25.730" end="00:24:30.480">Called return result and what would row bank is saying here is you</p>
+      <p begin="00:24:30.480" end="00:24:35.200">need to always launch me for...so we tried to launch would</p>
+      <p begin="00:24:35.200" end="00:24:37.860">...using that custom scheme?</p>
+      <p begin="00:24:37.860" end="00:24:41.620">This custom scheme would grove...and we use launch</p>
+      <p begin="00:24:41.620" end="00:24:46.220">...it would work because would go bank has said I can only be launch for results now it</p>
+      <p begin="00:24:46.220" end="00:24:49.620">would also say optional in here and that would mean that would</p>
+      <p begin="00:24:49.620" end="00:24:53.250">...understands what to do if it's launch for results but</p>
+      <p begin="00:24:53.250" end="00:25:04.920">...can do also do something useful when it's launched straight up using launcher icing.</p>
+      <p begin="00:25:04.920" end="00:25:05.540">Tractable</p>
+      <p begin="00:25:05.540" end="00:25:11.760">slides so that's launching for results is not that different from.</p>
+      <p begin="00:25:11.760" end="00:25:16.740">Launching an app straight up the provider the apple launching has to do a little bit of extra</p>
+      <p begin="00:25:16.740" end="00:25:21.050">work they have to say they want to be...for results and then when they are launch they</p>
+      <p begin="00:25:21.050" end="00:25:24.420">have to detect whether they were launch for results and then they have to</p>
+      <p begin="00:25:24.420" end="00:25:31.280">send results back but again as you saw is not that much more code?</p>
+      <p begin="00:25:31.280" end="00:25:36.720">The second big piece of the web of apps puzzle.</p>
+      <p begin="00:25:36.720" end="00:25:40.990">Is what recalling...services now I know as you're also as has a thing</p>
+      <p begin="00:25:40.990" end="00:25:45.910">...calling app services...I hate that...I don't actually</p>
+      <p begin="00:25:45.910" end="00:25:48.020">...very maps great because</p>
+      <p begin="00:25:48.020" end="00:25:53.050">...app services actually live in the cloud and the absolute...is I'm going to talk about</p>
+      <p begin="00:25:53.050" end="00:25:58.910">here live on the device there's a lot of web concepts here</p>
+      <p begin="00:25:58.910" end="00:26:03.300">but there's no actual web server involved and that's important to understand because we didn't want to put</p>
+      <p begin="00:26:03.300" end="00:26:09.950">a whole web server on the device you're carrying around in your pocket for obvious reasons and,</p>
+      <p begin="00:26:09.950" end="00:26:14.070">the idea is apps provide services to other apps you need a little</p>
+      <p begin="00:26:14.070" end="00:26:18.190">bit piece of data from another app you call it sap service and...</p>
+      <p begin="00:26:18.190" end="00:26:23.300">the app you need to send something to the other app you call-in sam service and asti get</p>
+      <p begin="00:26:23.300" end="00:26:28.080">...send it to the other...and you could do all that stuff...launch uri and</p>
+      <p begin="00:26:28.080" end="00:26:33.740">launcher eiffel results as well but sometimes you want to do that stuff without actually</p>
+      <p begin="00:26:33.740" end="00:26:37.390">bringing up the other app and here's a great analog on the web when you go</p>
+      <p begin="00:26:37.390" end="00:26:40.590">to a new website that somebody came up with some</p>
+      <p begin="00:26:40.590" end="00:26:44.660">...you start-up and they're like you need to sign up and</p>
+      <p begin="00:26:44.660" end="00:26:49.530">you like another giant formed of...except then you see a button that says</p>
+      <p begin="00:26:49.530" end="00:26:53.100">sign in with microsoft sign in the google sign in with facebook and you're like</p>
+      <p begin="00:26:53.100" end="00:26:56.150">...that's what I'm going to do because I'm going to say my sense of</p>
+      <p begin="00:26:56.150" end="00:26:59.060">...so what's going on there all the website</p>
+      <p begin="00:26:59.060" end="00:27:04.010">is doing is using a web service in this case probably and what web service</p>
+      <p begin="00:27:04.010" end="00:27:08.640">that's provided by google facebook microsoft and leveraging that to provide</p>
+      <p begin="00:27:08.640" end="00:27:13.700">you functionality that it doesn't necessarily have and that's what app services</p>
+      <p begin="00:27:13.700" end="00:27:17.800">...apps to on device?</p>
+      <p begin="00:27:17.800" end="00:27:21.960">So, how does the nap service work well?</p>
+      <p begin="00:27:21.960" end="00:27:26.660">If you...chord for the modern windows platform before</p>
+      <p begin="00:27:26.660" end="00:27:30.700">you probably know the way to execute code without showing ui</p>
+      <p begin="00:27:30.700" end="00:27:36.250">is falls under the general umbrella of what we called background tasks.</p>
+      <p begin="00:27:36.250" end="00:27:40.930">And, app within app service is nothing but a package with a bunch of background tasks</p>
+      <p begin="00:27:40.930" end="00:27:45.860">right and all you do is you say this background bosco washear is actually an</p>
+      <p begin="00:27:45.860" end="00:27:49.890">app service you put some stuff in the manifest and you say this one over here is an absolute</p>
+      <p begin="00:27:49.890" end="00:27:53.710">was the name of that...services...and the other...says</p>
+      <p begin="00:27:53.710" end="00:27:58.500">okay I need to access fu and that's how they...so how does it work client app</p>
+      <p begin="00:27:58.500" end="00:28:05.120">a comes along it needs to talk to an absolute their lives in the package on the right.</p>
+      <p begin="00:28:05.120" end="00:28:10.290">It creates a new app service connection.</p>
+      <p begin="00:28:10.290" end="00:28:15.620">...gives us an absolute misnamed this is the name that the owner of the app service defined in</p>
+      <p begin="00:28:15.620" end="00:28:17.920">the manifest.</p>
+      <p begin="00:28:17.920" end="00:28:23.430">It gives us a package family name because we need to know which app the app service lives and,</p>
+      <p begin="00:28:23.430" end="00:28:24.210">opens connection.</p>
+      <p begin="00:28:25.300" end="00:28:26.770">And, if everything went well.</p>
+      <p begin="00:28:27.790" end="00:28:30.260">We...background task.</p>
+      <p begin="00:28:30.260" end="00:28:33.390">In the app that provides the absolute.</p>
+      <p begin="00:28:33.390" end="00:28:37.380">At this point this becomes approving connection the client app can</p>
+      <p begin="00:28:37.380" end="00:28:43.890">talk to the app service and the app service can...back to the client...so full two-way channel.</p>
+      <p begin="00:28:43.890" end="00:28:47.960">So, how do you send messages well our old friend value search?</p>
+      <p begin="00:28:47.960" end="00:28:51.560">You put together...set you staff some data into it you</p>
+      <p begin="00:28:51.560" end="00:28:54.520">say sign message asic and...</p>
+      <p begin="00:28:54.520" end="00:28:59.370">saying is a simple request response api you...request and the web service</p>
+      <p begin="00:28:59.370" end="00:29:03.670">responds of the web service the app service responds...</p>
+      <p begin="00:29:03.670" end="00:29:08.060">You hey I got that message...the app service wants to send your message back</p>
+      <p begin="00:29:08.060" end="00:29:14.080">it can do that as well when you're done with the app service as the client up you just dispose the</p>
+      <p begin="00:29:14.080" end="00:29:19.020">app service connection now I'm a csharp lower so I'll dispose but those of you</p>
+      <p begin="00:29:19.020" end="00:29:25.620">will using cplus-plus will want to close so work slightly differently but not that different.</p>
+      <p begin="00:29:25.620" end="00:29:30.380">Ok, so, that's great what is another app comes along the same time and...for the same</p>
+      <p begin="00:29:30.380" end="00:29:34.290">app service what happens then well we do exactly what</p>
+      <p begin="00:29:34.290" end="00:29:39.210">the web does we spin up another instance of the same background task and</p>
+      <p begin="00:29:39.210" end="00:29:42.660">that serves client mp so that if client that h chooses to</p>
+      <p begin="00:29:42.660" end="00:29:51.970">tear down its app service connection there is no side effect of client happy.</p>
+      <p begin="00:29:51.970" end="00:29:56.700">Where do we use app services because all of these features are just for you guys</p>
+      <p begin="00:29:56.700" end="00:30:01.250">have been a little bit selfish we've been using these features the whole time so</p>
+      <p begin="00:30:01.250" end="00:30:06.800">the people app for those of you who use windows phones is kind of</p>
+      <p begin="00:30:06.800" end="00:30:11.430">our address book up but it's so much more than that it can also boolean...feeds for your</p>
+      <p begin="00:30:11.430" end="00:30:16.160">contacts are provided you have facebook or twitter or whenever you contacts</p>
+      <p begin="00:30:16.160" end="00:30:21.120">live installed and the way that works is that the people app invokes</p>
+      <p begin="00:30:21.120" end="00:30:24.730">an absence of is that twitter or facebook provide and pulls in</p>
+      <p begin="00:30:24.730" end="00:30:29.640">that data and you can also...another stuff like contact...tile updates and all</p>
+      <p begin="00:30:29.640" end="00:30:36.880">that stuff in the past your apps have not been able to do what the people...they can now?</p>
+      <p begin="00:30:36.880" end="00:30:42.780">The other interesting scenario that we're exploring right now is about sharing</p>
+      <p begin="00:30:42.780" end="00:30:43.880">cash data so.</p>
+      <p begin="00:30:44.930" end="00:30:48.580">Here's the scenario we dreamed up say you're writing</p>
+      <p begin="00:30:48.580" end="00:30:53.480">of windows phone app or windows app and...using a map control that map control is</p>
+      <p begin="00:30:53.480" end="00:30:58.330">probably going up to the being maps web service and pulling down tiles for</p>
+      <p begin="00:30:58.330" end="00:31:02.440">the local area except it doesn't really need to do that those</p>
+      <p begin="00:31:02.440" end="00:31:07.010">styles probably already live on the device because the user has use the maps app</p>
+      <p begin="00:31:07.010" end="00:31:10.710">on the device at least once so there's no reason to actually go up to</p>
+      <p begin="00:31:10.710" end="00:31:15.680">the cloud for this so when envisioning a map control that actually talks to and app service</p>
+      <p begin="00:31:15.680" end="00:31:20.660">...lives inside the being maps up and just pulls that data and</p>
+      <p begin="00:31:20.660" end="00:31:26.100">now this isn't part of windows...yet but we're looking at it.</p>
+      <p begin="00:31:26.100" end="00:31:29.330">The other interesting scenario is a hardwood access and the</p>
+      <p begin="00:31:29.330" end="00:31:33.670">bank team is actually working on this right now we've been we've been working with them</p>
+      <p begin="00:31:33.670" end="00:31:36.920">and looking at it and hopefully at some point in the feature they can do</p>
+      <p begin="00:31:36.920" end="00:31:41.130">...sdk that actually uses app services and the idea is simple your</p>
+      <p begin="00:31:41.130" end="00:31:45.770">...app that can talk to a hardware...device like this one why heart rate is</p>
+      <p begin="00:31:45.770" end="00:31:51.980">way up guys you are making me nervous...</p>
+      <p begin="00:31:51.980" end="00:31:57.600">So, small regulation but the band up can talk to the</p>
+      <p begin="00:31:57.600" end="00:32:02.110">bank it has historical data on what your...been doing what your heart</p>
+      <p begin="00:32:02.110" end="00:32:07.040">rate spain overall this time and other apps client apps instead of talking to the</p>
+      <p begin="00:32:07.040" end="00:32:12.160">band directly in which case all the get is the data right now they can actually talk to</p>
+      <p begin="00:32:13.360" end="00:32:18.180">...provides and the band up can effectively arbitrary to access to</p>
+      <p begin="00:32:18.180" end="00:32:24.000">the data is the band...actually around...moment maybe it can provide historical</p>
+      <p begin="00:32:24.000" end="00:32:28.460">data maybe you can also provide observations based on the data that the</p>
+      <p begin="00:32:28.460" end="00:32:34.660">band obviously can provide because it doesn't have a whole lot of processing our.</p>
+      <p begin="00:32:34.660" end="00:32:38.100">The last scenario want to talk about is really, really close to my heart</p>
+      <p begin="00:32:38.100" end="00:32:42.160">guys because I spent four years as an enterprise consulting</p>
+      <p begin="00:32:42.160" end="00:32:45.720">some-odd actually doing sharepoint...a lot of that doing mobile app...</p>
+      <p begin="00:32:45.720" end="00:32:51.970">as well and if you been...interpret enterprise you realize that most</p>
+      <p begin="00:32:51.970" end="00:32:54.880">employers don't just get all their worked on through the</p>
+      <p begin="00:32:54.880" end="00:32:59.840">day using one app then likely using a suite of apps some of it which are custom</p>
+      <p begin="00:32:59.840" end="00:33:04.270">app some of which are, you know, coming from other third parties and those</p>
+      <p begin="00:33:04.270" end="00:33:09.980">...talk to each other to get stuff done absolute offices and the deep linking api is</p>
+      <p begin="00:33:09.980" end="00:33:13.180">a great free for that to work so the scenario here</p>
+      <p begin="00:33:13.180" end="00:33:18.080">is relatively straightforward possibly a store where you've got...check out</p>
+      <p begin="00:33:18.080" end="00:33:23.040">...the knows how to talk...payment gateway and inventory app technology knows how to talk</p>
+      <p begin="00:33:23.040" end="00:33:28.040">to...inventory service product scanning app that knows how to talk bluetooth or nfc</p>
+      <p begin="00:33:28.040" end="00:33:33.030">or rfid suite can scan products and all of them can work together to do all</p>
+      <p begin="00:33:33.030" end="00:33:39.720">sorts of scenarios that aren't possible with the waste...today.</p>
+      <p begin="00:33:39.720" end="00:33:43.420">And, the clicker...</p>
+      <p begin="00:33:43.420" end="00:33:49.210">Okay, so, enough talk let's look at some code.</p>
+      <p begin="00:33:49.210" end="00:33:55.900">So, I'm going to bring you guys back to the same shopping them over the viva looking are just now.</p>
+      <p begin="00:33:55.900" end="00:34:00.370">So, we've gone and board to the teeing...laptop</p>
+      <p begin="00:34:00.370" end="00:34:04.260">...about the laptop on control social so what happens next well the</p>
+      <p begin="00:34:04.260" end="00:34:06.940">adapt all probably gets handed to some sort of</p>
+      <p begin="00:34:06.940" end="00:34:11.090">a chipper like fedex or ups or whoever and gets shipped to</p>
+      <p begin="00:34:11.090" end="00:34:15.230">me and I packet...since way to however</p>
+      <p begin="00:34:15.230" end="00:34:22.510">it is that shipping services work which I've never been able to understand but that's okay.</p>
+      <p begin="00:34:22.510" end="00:34:24.550">What could also...does is</p>
+      <p begin="00:34:24.550" end="00:34:29.470">that it provides the ability to see very or packages</p>
+      <p begin="00:34:29.470" end="00:34:34.700">right within the control so shop app rather than having to go to the ship track apple the ship</p>
+      <p begin="00:34:34.700" end="00:34:41.879">...website...track is...chipper by the way fabric and ship...to be exact?</p>
+      <p begin="00:34:41.879" end="00:34:44.869">And, the way that books is that fabric I'm has</p>
+      <p begin="00:34:44.869" end="00:34:48.329">an app that presumably the user has installed on the device and</p>
+      <p begin="00:34:48.329" end="00:34:51.659">...provides an app service which lets another</p>
+      <p begin="00:34:51.659" end="00:34:56.429">...a tracking number and get the status...shipping request</p>
+      <p begin="00:34:56.429" end="00:34:59.599">...now obviously the user can also go directly into the fabric</p>
+      <p begin="00:34:59.599" end="00:35:04.769">...app and do that but again somewhat contrived scenario but it shows</p>
+      <p begin="00:35:04.769" end="00:35:09.040">of very nicely what I'm talking trying, trying to say?</p>
+      <p begin="00:35:09.040" end="00:35:16.070">Ok, so, if this startup can also...again.</p>
+      <p begin="00:35:16.070" end="00:35:22.410">...fact fabric...which does nothing only provides and observers.</p>
+      <p begin="00:35:22.410" end="00:35:25.710">It has an order history page and that's where you goal.</p>
+      <p begin="00:35:25.710" end="00:35:29.080">To see where your order is in the shipment...</p>
+      <p begin="00:35:30.520" end="00:35:33.080">And, it doesn't do much at the moment.</p>
+      <p begin="00:35:34.130" end="00:35:38.950">Because we have an added any code so here's the order history page here's there where</p>
+      <p begin="00:35:38.950" end="00:35:42.550">...buttoned...and in the order history pages on</p>
+      <p begin="00:35:42.550" end="00:35:47.470">...to method I retrieved the order information which</p>
+      <p begin="00:35:47.470" end="00:35:51.260">I've got serialized to a file including the tracking number and once I have</p>
+      <p begin="00:35:51.260" end="00:35:55.460">the tracking number I get the shipping status from the fabric and</p>
+      <p begin="00:35:55.460" end="00:36:00.510">...crack-up which provides that...I need to use.</p>
+      <p begin="00:36:00.510" end="00:36:05.290">So, again, code snippets.</p>
+      <p begin="00:36:05.290" end="00:36:09.450">So, here's our...connection I create a new apps service</p>
+      <p begin="00:36:09.450" end="00:36:14.170">connection we can solve this code already I give it an app service name.</p>
+      <p begin="00:36:14.170" end="00:36:19.030">This is the name of the app service that lives inside the fabric...crack-up.</p>
+      <p begin="00:36:19.030" end="00:36:23.710">I give it a package family name which is the piped package family name for the pact fabric m ship</p>
+      <p begin="00:36:23.710" end="00:36:28.570">crack-up and don't worry about that package family name because I haven't submitted fabric I'm ship</p>
+      <p begin="00:36:28.570" end="00:36:35.310">track to the store and that's just a generated name that are visual studio made up for me?</p>
+      <p begin="00:36:35.310" end="00:36:40.530">And, then if everything went well.</p>
+      <p begin="00:36:40.530" end="00:36:45.050">I send fabric am ship tracks service my tracking number I put it in a value</p>
+      <p begin="00:36:45.050" end="00:36:50.280">...I...as a message I get a response back and then I take the response and</p>
+      <p begin="00:36:50.280" end="00:36:52.300">just stick it on the screen.</p>
+      <p begin="00:36:52.300" end="00:36:56.840">That's all they do so before we actually run this...</p>
+      <p begin="00:36:56.840" end="00:37:09.530">We need to make sure that fabric and...track is actually deployed...so on...</p>
+      <p begin="00:37:09.530" end="00:37:10.390">Done to start.</p>
+      <p begin="00:37:11.720" end="00:37:16.330">Okay, there we go and that's what let's put a.</p>
+      <p begin="00:37:16.330" end="00:37:20.280">Little break point in here.</p>
+      <p begin="00:37:20.280" end="00:37:27.720">we can...through the whole process okay so...the laptop that's going to the order history.</p>
+      <p begin="00:37:27.720" end="00:37:29.650">We go in here.</p>
+      <p begin="00:37:29.650" end="00:37:33.080">And, we create the app service connection the open-end everything went</p>
+      <p begin="00:37:33.080" end="00:37:38.430">...status...access.</p>
+      <p begin="00:37:38.430" end="00:37:45.290">Send in the tracking number response comes back not-so-fast...service.</p>
+      <p begin="00:37:45.290" end="00:37:51.220">And, the standards is wma processing order...doesn't shipyard.</p>
+      <p begin="00:37:51.220" end="00:37:55.390">Ok, so, that's a that's how you call-in app service but how do you build</p>
+      <p begin="00:37:55.390" end="00:37:57.990">an app service let's go take a look at the</p>
+      <p begin="00:37:57.990" end="00:38:03.250">...for the fabric...ship crack-up service.</p>
+      <p begin="00:38:03.250" end="00:38:06.630">So, here's the ship tracks service...lives in a separate vin</p>
+      <p begin="00:38:06.630" end="00:38:10.520">...component that I put together.</p>
+      <p begin="00:38:10.520" end="00:38:15.470">And,...need to dual to build a background task because remember I said absences...background</p>
+      <p begin="00:38:15.470" end="00:38:20.270">tasks the first thing you need to do to build a background task is implement the</p>
+      <p begin="00:38:20.270" end="00:38:24.860">I background task interface that's how we know it's a background task.</p>
+      <p begin="00:38:24.860" end="00:38:27.310">Because it's and I background task.</p>
+      <p begin="00:38:27.310" end="00:38:32.740">And, it only comes with one method really the method called run and this is the</p>
+      <p begin="00:38:32.740" end="00:38:37.250">method recall when we bring up the background task so what does this background</p>
+      <p begin="00:38:37.250" end="00:38:38.420">...it takes</p>
+      <p begin="00:38:38.420" end="00:38:42.330">a different now why is it doing that the reason it's doing that.</p>
+      <p begin="00:38:42.330" end="00:38:46.420">Is because unlike other background tasks which start-up do something and</p>
+      <p begin="00:38:46.420" end="00:38:51.170">then go away in this case we want this background task the app service to keep</p>
+      <p begin="00:38:51.170" end="00:38:55.430">...so that it can service requests from the client so we're saying the platform</p>
+      <p begin="00:38:55.430" end="00:39:00.640">...they'll just kill me once I'm done with the run method you want to keep me around because I have</p>
+      <p begin="00:39:00.640" end="00:39:05.160">request to...okay and the other thing we do is that we take</p>
+      <p begin="00:39:05.160" end="00:39:09.740">out the trigger details not trigger details come in as part of an argument to the</p>
+      <p begin="00:39:09.740" end="00:39:13.950">...method and this is...the background task this is what</p>
+      <p begin="00:39:13.950" end="00:39:18.000">...gives the background...details on what it's supposed to do so in this case</p>
+      <p begin="00:39:18.000" end="00:39:23.320">...app service trigger details because it was launch as...service and it has a request</p>
+      <p begin="00:39:23.320" end="00:39:27.170">receive parallel and that's where the requests from the client come in</p>
+      <p begin="00:39:27.170" end="00:39:30.760">when the client says send message?</p>
+      <p begin="00:39:30.760" end="00:39:33.390">This method here gets...</p>
+      <p begin="00:39:33.390" end="00:39:36.330">And, it gets the message and we take out the dragging</p>
+      <p begin="00:39:36.330" end="00:39:41.120">number we fetch the tracking status and I won't go into that it might be a web service and might be some</p>
+      <p begin="00:39:41.120" end="00:39:46.300">other mechanism and we put together result and we say send response.</p>
+      <p begin="00:39:47.330" end="00:39:52.880">And, that's it that's the whole app service it so.</p>
+      <p begin="00:39:52.880" end="00:39:56.160">Sixty-seven lines of code.</p>
+      <p begin="00:39:56.160" end="00:40:01.200">But, there's one more thing that the app service author needs to do before somebody else can call</p>
+      <p begin="00:40:01.200" end="00:40:03.440">...service which is that</p>
+      <p begin="00:40:03.440" end="00:40:08.330">...app this is the fabric...ship track app and as you can see it has a reference to the</p>
+      <p begin="00:40:08.330" end="00:40:11.650">ship tracks service we just looked into they have to tell the</p>
+      <p begin="00:40:11.650" end="00:40:16.570">world that my app provides and observers so they do that in</p>
+      <p begin="00:40:16.570" end="00:40:23.800">the manifest so here's the epics manifest for fabric m ship track.</p>
+      <p begin="00:40:23.800" end="00:40:28.940">And, you know, this is all boiler plate stuff but down here is the interesting stuff?</p>
+      <p begin="00:40:28.940" end="00:40:31.990">They're saying this up provides...app service the</p>
+      <p begin="00:40:31.990" end="00:40:36.580">...for that app service lives in this background task ship tracks</p>
+      <p begin="00:40:36.580" end="00:40:38.970">...tracking service and the name of</p>
+      <p begin="00:40:38.970" end="00:40:44.080">...service is tracking service endpoint.</p>
+      <p begin="00:40:44.080" end="00:40:48.880">Now if we quickly circle back to composer shop and look at the court will recall the</p>
+      <p begin="00:40:48.880" end="00:40:54.230">app service will see that's the same name views here.</p>
+      <p begin="00:40:54.230" end="00:41:04.910">And, that's it that's an absolute provider and...consumer.</p>
+      <p begin="00:41:04.910" end="00:41:09.580">So, before we move away from apps services there's one more thing I'd like to talk about</p>
+      <p begin="00:41:09.580" end="00:41:14.740">debugging app service because it's going to be hard because visual studio</p>
+      <p begin="00:41:14.740" end="00:41:18.070">...your app service with the debugged connected your</p>
+      <p begin="00:41:18.070" end="00:41:21.210">...will be launched by another app.</p>
+      <p begin="00:41:21.210" end="00:41:23.400">And, you want to debug the app service not the other</p>
+      <p begin="00:41:23.400" end="00:41:27.710">app so this is how you do it you go rightly the project in my case fabric</p>
+      <p begin="00:41:27.710" end="00:41:32.560">...ship tracks and you tell the debug...do not launch this up but</p>
+      <p begin="00:41:32.560" end="00:41:37.000">...wait for when the app launches and then pounce on...and...debug and</p>
+      <p begin="00:41:37.000" end="00:41:41.730">...do that for-you I promise you we did a lot of work on this we did a lot of work to make this</p>
+      <p begin="00:41:41.730" end="00:41:47.160">simple to do so you can do this.</p>
+      <p begin="00:41:47.160" end="00:41:50.610">I also like to talk about apps service lifetime.</p>
+      <p begin="00:41:50.610" end="00:41:55.000">No, absolute this is our launched by client apps.</p>
+      <p begin="00:41:55.000" end="00:41:58.890">So, in our minds we think of them as something that is sponsored by the client</p>
+      <p begin="00:41:58.890" end="00:42:03.460">app the reason we think of it that way is because this is a device with</p>
+      <p begin="00:42:03.460" end="00:42:04.860">a battery.</p>
+      <p begin="00:42:04.860" end="00:42:07.150">That is going to run out.</p>
+      <p begin="00:42:07.150" end="00:42:12.040">And, we don't want to run out any faster than it usually with so as soon as the client goes</p>
+      <p begin="00:42:12.040" end="00:42:16.940">away v will terminate any app services it might have laws but as long as the client</p>
+      <p begin="00:42:16.940" end="00:42:21.470">...around the users using it your app service will run now if</p>
+      <p begin="00:42:21.470" end="00:42:26.120">...launching a whole bunch of apps services concurrently if you launching like five or six</p>
+      <p begin="00:42:26.120" end="00:42:31.120">different observances of five or six apps you also need to think about the amount of memory each</p>
+      <p begin="00:42:31.120" end="00:42:36.440">of those app services uses up and we'll tell you if you try to launch observers and we have no memory for you</p>
+      <p begin="00:42:36.440" end="00:42:40.820">will come back and say you can launch rone.</p>
+      <p begin="00:42:40.820" end="00:42:41.890">And,...tell you</p>
+      <p begin="00:42:41.890" end="00:42:46.570">resource limit exceeded or something like that which value that okay,</p>
+      <p begin="00:42:46.570" end="00:42:50.720">there's not enough resources here and those resources almost always</p>
+      <p begin="00:42:50.720" end="00:42:59.050">...memory because we've got quad core...now and cpu is aren't a big problem.</p>
+      <p begin="00:42:59.050" end="00:43:04.550">...let's wrap up.</p>
+      <p begin="00:43:04.550" end="00:43:08.340">There's some best practices that you should keep in mind and that's why this is</p>
+      <p begin="00:43:08.340" end="00:43:12.120">...the wrap-up sanctioned I don't want we don't want to impose anything new but these</p>
+      <p begin="00:43:12.120" end="00:43:16.760">are good guidelines which we've observed sometimes on other platforms</p>
+      <p begin="00:43:16.760" end="00:43:20.830">sometimes from the way people have been doing things internally</p>
+      <p begin="00:43:20.830" end="00:43:24.670">...you want other people are...you know,...into your app or</p>
+      <p begin="00:43:24.670" end="00:43:28.370">call app services in your app it's a good idea to wrap all that</p>
+      <p begin="00:43:28.370" end="00:43:33.180">...that opens the app service connection and sends messages and receives messages</p>
+      <p begin="00:43:33.180" end="00:43:37.620">or core dart launches an...for results it's a good idea to wrap all that</p>
+      <p begin="00:43:37.620" end="00:43:42.690">chord in sdk which could just be or dl that you</p>
+      <p begin="00:43:42.690" end="00:43:46.450">hand other people or you could use know get.</p>
+      <p begin="00:43:46.450" end="00:43:48.920">Anybody who uses visual studio has new</p>
+      <p begin="00:43:48.920" end="00:43:53.900">get already it's a package management feature that's part of visual studio although you can also use</p>
+      <p begin="00:43:53.900" end="00:43:58.350">it separately which lets people get a hold of packages like</p>
+      <p begin="00:43:58.350" end="00:44:03.350">pst case so that's a great way to distribute them and also gives you some notion of control over the</p>
+      <p begin="00:44:03.350" end="00:44:09.470">kind of...people are using to access your apps services annual custom schemes.</p>
+      <p begin="00:44:09.470" end="00:44:10.490">Lastly versioning</p>
+      <p begin="00:44:11.910" end="00:44:16.680">...is always one of those things are no already thinks about when you start a project because</p>
+      <p begin="00:44:16.680" end="00:44:21.530">...all like yes it's going to have all the features all of that and then</p>
+      <p begin="00:44:21.530" end="00:44:26.500">days go by you release your first version answers somebody says it doesn't have that feature</p>
+      <p begin="00:44:26.500" end="00:44:31.510">...how can add or why doesn't that feature work that way</p>
+      <p begin="00:44:31.510" end="00:44:36.650">...breaking change so if you're making a...change do a new version of your</p>
+      <p begin="00:44:36.650" end="00:44:42.270">app service or custom scheme if you're making a non breaking change just added on because you're not actually exchanging</p>
+      <p begin="00:44:42.270" end="00:44:51.610">...types you just exchange value search is very json like it's very</p>
+      <p begin="00:44:51.610" end="00:44:56.920">So, recap we talked about the launcher enhancements the deep linking enhancements you</p>
+      <p begin="00:44:56.920" end="00:45:00.570">can launch...specific app you can send over files</p>
+      <p begin="00:45:00.570" end="00:45:05.930">you can launch other apps for results we also talked about absolute...where</p>
+      <p begin="00:45:05.930" end="00:45:12.640">apps can provide services to other apps and of course all apps can consume those services.</p>
+      <p begin="00:45:12.640" end="00:45:15.400">...using these api is if you</p>
+      <p begin="00:45:15.400" end="00:45:20.340">been attending some of the core donnaintegration sessions how does your app sign up to</p>
+      <p begin="00:45:20.340" end="00:45:23.350">...from caught on that.</p>
+      <p begin="00:45:23.350" end="00:45:27.390">They've been using our api is the photos app the cameras app</p>
+      <p begin="00:45:27.390" end="00:45:32.660">camera app in that...inside...windows have been using our api is</p>
+      <p begin="00:45:32.660" end="00:45:37.260">the interactive post folks have been using custom schemes to drive interactivity</p>
+      <p begin="00:45:38.790" end="00:45:42.920">and of course...really, really hoping that all of you will user api</p>
+      <p begin="00:45:42.920" end="00:45:46.660">...and give us feedback about what's great what's</p>
+      <p begin="00:45:46.660" end="00:45:53.850">not-so-great and what we can do to come back next year and have...some most of to show you?</p>
+      <p begin="00:45:53.850" end="00:45:59.980">These are some sessions that...related or talk about similar things they've all</p>
+      <p begin="00:45:59.980" end="00:46:02.930">happened by now because this is the</p>
+      <p begin="00:46:02.930" end="00:46:06.620">last session on the last visible and go out and look for them please.</p>
+      <p begin="00:46:06.620" end="00:46:11.610">Go home boot-up channel line...xbox one there's an app on here on</p>
+      <p begin="00:46:11.610" end="00:46:15.950">there and use that to watch all those sessions.</p>
+      <p begin="00:46:15.950" end="00:46:17.720">This is the.</p>
+      <p begin="00:46:17.720" end="00:46:21.150">I stand up here and talk about all this stuff yet I</p>
+      <p begin="00:46:21.150" end="00:46:23.820">...a very small part of the set of people who</p>
+      <p begin="00:46:23.820" end="00:46:28.720">actually did anything to make this complies so these are the people who contributed</p>
+      <p begin="00:46:28.720" end="00:46:33.700">...samples documentation lots of other stuff to make all this code</p>
+      <p begin="00:46:34.850" end="00:46:44.910">That's a good please give us feedback and thank you for coming.</p>
+      <p begin="00:46:44.910" end="00:46:48.340">And, I'll take questions but I'm going to be in the insider</p>
+      <p begin="00:46:48.340" end="00:46:52.050">...of the three so if you've got more questions and eigen</p>
+      <p begin="00:46:52.050" end="00:46:57.350">answer these come over...use the mikes if you want because that</p>
+      <p begin="00:46:57.350" end="00:47:07.780">...questions get recorded for folks, you know, watching this on video.</p>
+      <p begin="00:47:07.780" end="00:47:10.200">Bunch nap for results does the second</p>
+      <p begin="00:47:10.200" end="00:47:17.990">app close down as soon as it returns baggage results yes, it is.</p>
+      <p begin="00:47:17.990" end="00:47:24.110">So, the question at first of all I'd like to say thank you for adding</p>
+      <p begin="00:47:24.110" end="00:47:29.580">...mechanisms to in...that's great.</p>
+      <p begin="00:47:29.580" end="00:47:34.510">Now the question I have is us so you have an app that provides an</p>
+      <p begin="00:47:34.510" end="00:47:39.370">...a service in some cases like the one you showed that</p>
+      <p begin="00:47:39.370" end="00:47:45.150">app doesn't really need to have any ui at all so,</p>
+      <p begin="00:47:45.150" end="00:47:47.480">it doesn't really need to be and app it can be just a</p>
+      <p begin="00:47:47.480" end="00:47:54.380">service so do you have anything of that sort or do we really have to have an app?</p>
+      <p begin="00:47:54.380" end="00:47:56.570">That doesn't do anything just has a blank screen</p>
+      <p begin="00:47:56.570" end="00:48:02.030">like you showed just to provide a service to another app they can use it so,</p>
+      <p begin="00:48:02.030" end="00:48:05.490">yeah, we have a name for that scenario it's kind of an</p>
+      <p begin="00:48:05.490" end="00:48:09.880">...because we call them head...apps bush...yeah,</p>
+      <p begin="00:48:09.880" end="00:48:15.250">that's a scenario...I am somebody's working on it I'm not sure weathered</p>
+      <p begin="00:48:15.250" end="00:48:17.950">made windows stand but somebody's working on</p>
+      <p begin="00:48:17.950" end="00:48:22.500">so if it's not shown up already to show up in one of the subsequent flights</p>
+      <p begin="00:48:22.500" end="00:48:26.230">so why don't you send-me an e-mail or</p>
+      <p begin="00:48:26.230" end="00:48:37.280">...me and I'll make sure I connectives whoever's working on...k thanks and?</p>
+      <p begin="00:48:38.430" end="00:48:39.250">Okay,</p>
+      <p begin="00:48:39.250" end="00:48:43.670">I see so I'll I'm not sure...is available from mobile or desktop part</p>
+      <p begin="00:48:43.670" end="00:48:49.210">...find out okay and, is there any way to communicate not just between</p>
+      <p begin="00:48:49.210" end="00:48:53.230">apps but also between apps and say...thirty-two apps</p>
+      <p begin="00:48:53.230" end="00:48:59.040">or services ...so I don't know whether you saw</p>
+      <p begin="00:48:59.040" end="00:49:04.760">...keynote on the who...he short offer wpf app that actually</p>
+      <p begin="00:49:04.760" end="00:49:10.210">...service in a more now so yes?</p>
+      <p begin="00:49:10.210" end="00:49:10.710">Okay.</p>
+      <p begin="00:49:15.430" end="00:49:18.410">...things that can you talk</p>
+      <p begin="00:49:18.410" end="00:49:24.100">about the performance of this ipc mechanism sure ...services on</p>
+      <p begin="00:49:24.100" end="00:49:30.850">launching one of basically I'm just curious what kind of latency...pc,</p>
+      <p begin="00:49:30.850" end="00:49:35.390">you know, speed or what's going on here so the</p>
+      <p begin="00:49:35.390" end="00:49:40.430">...api is a literally launching another app so it's going to have whatever cost that is</p>
+      <p begin="00:49:40.430" end="00:49:42.670">for launching...sure so, you know,</p>
+      <p begin="00:49:42.670" end="00:49:48.520">...established cost and it's not going to...are under the government actually</p>
+      <p begin="00:49:49.820" end="00:49:53.640">...so they're pretty fast you got a good numbers on that</p>
+      <p begin="00:49:54.850" end="00:49:59.450">...goal was to at least and I know this is a little...least...faster than</p>
+      <p begin="00:49:59.450" end="00:50:03.520">pocket program service...the...as.</p>
+      <p begin="00:50:04.730" end="00:50:11.900">So, we...much better than that as...talking.</p>
+      <p begin="00:50:11.900" end="00:50:16.570">Bandage of milliseconds pluses we put a lot also depends upon hundred sort</p>
+      <p begin="00:50:16.570" end="00:50:22.570">of divisive...latency is quite goodthe other thing we do that because</p>
+      <p begin="00:50:22.570" end="00:50:27.150">we really care about performance is once we...excellence the connections between</p>
+      <p begin="00:50:27.150" end="00:50:30.970">established we get out of the way so when you're standing sending</p>
+      <p begin="00:50:30.970" end="00:50:34.220">...another...dwi.</p>
+      <p begin="00:50:34.220" end="00:50:43.080">One of the process...not...and that's very limited because we wanted to be file.</p>
+      <p begin="00:50:43.080" end="00:50:47.570">All...a website.</p>
+      <p begin="00:50:47.570" end="00:50:50.470">If you have a hansen experience on your app</p>
+      <p begin="00:50:50.470" end="00:50:54.610">and the person visits that websites through another link yuan to launch</p>
+      <p begin="00:50:54.610" end="00:50:59.700">the app automatically and you can't use custom.</p>
+      <p begin="00:50:59.700" end="00:51:03.510">Protocols because you need...fall back to http so</p>
+      <p begin="00:51:03.510" end="00:51:08.900">can you register for http and filter on the domain.</p>
+      <p begin="00:51:08.900" end="00:51:11.770">Let me just say not yet.</p>
+      <p begin="00:51:11.770" end="00:51:15.680">On this because that thing because that's what endure does was</p>
+      <p begin="00:51:15.680" end="00:51:16.180">samoa.</p>
+      <p begin="00:51:26.580" end="00:51:31.740">...on things.</p>
+      <p begin="00:51:31.740" end="00:51:36.340">So, is...is limit on the size of the...that</p>
+      <p begin="00:51:36.340" end="00:51:41.960">...app can returnthere's a limit on the sizeable values</p>
+      <p begin="00:51:41.960" end="00:51:45.800">...arguments and services</p>
+      <p begin="00:51:45.800" end="00:51:51.530">...launching...arts on the...a as has a one hundred?</p>
+      <p begin="00:51:51.530" end="00:51:53.840">Opendocument does not of library science</p>
+      <p begin="00:52:01.290" end="00:52:05.050">Okay, I have a couple more questions.</p>
+      <p begin="00:52:05.050" end="00:52:09.320">The question is when you send files to a fight open</p>
+      <p begin="00:52:09.320" end="00:52:17.620">...protocol you are in that case how long is...valid.</p>
+      <p begin="00:52:17.620" end="00:52:25.030">Okay, is a documentation for the this link to meet the samoa?</p>
+      <p begin="00:52:25.030" end="00:52:28.900">Because...usually of...moi.</p>
+      <p begin="00:52:36.200" end="00:52:38.370">We don't want...</p>
+      <p begin="00:52:38.370" end="00:52:43.370">All focus if you want...the...once...the</p>
+      <p begin="00:52:44.800" end="00:52:46.580">...access this moi.</p>
+      <p begin="00:52:48.620" end="00:52:51.940">Mazzola goal the zach moi.</p>
+      <p begin="00:52:56.400" end="00:53:01.690">the last question I had was...guarding the package family name so,</p>
+      <p begin="00:53:01.690" end="00:53:04.420">if I dayton app that I published</p>
+      <p begin="00:53:04.420" end="00:53:08.150">...I also argued to enterprises where they can</p>
+      <p begin="00:53:08.150" end="00:53:09.980">...in the app and install the</p>
+      <p begin="00:53:09.980" end="00:53:15.560">app the name would be different in both the scenarios yes because...</p>
+      <p begin="00:53:15.560" end="00:53:21.340">Depends on...sign in...</p>
+      <p begin="00:53:21.340" end="00:53:25.460">So, in that case how can the how can we</p>
+      <p begin="00:53:25.460" end="00:53:31.350">write available apps the package family name is going to be different</p>
+      <p begin="00:53:31.350" end="00:53:34.290">Different scenarios like.</p>
+      <p begin="00:53:34.290" end="00:53:39.120">For enterprises will not be able to code correctly one-on-one instead</p>
+      <p begin="00:53:40.650" end="00:53:45.030">...the use of the day.</p>
+      <p begin="00:53:45.030" end="00:53:51.160">All that's happened here it is now there will be...results app...</p>
+      <p begin="00:53:51.160" end="00:53:54.290">on...quite easy you can say twenty-four moi.</p>
+      <p begin="00:53:57.190" end="00:54:00.720">Yeah, but, the question is say if app an</p>
+      <p begin="00:54:00.720" end="00:54:03.310">...want to communicate and</p>
+      <p begin="00:54:05.260" end="00:54:09.310">at a at when it wants to communicate to...doesn't</p>
+      <p begin="00:54:09.310" end="00:54:13.980">notice family name of heb and how wooded null</p>
+      <p begin="00:54:15.070" end="00:54:18.630">...confined...family and embody a whatever is available?</p>
+      <p begin="00:54:19.720" end="00:54:25.050">...can add...app a that this is my family...use this to communicate to me</p>
+      <p begin="00:54:34.190" end="00:54:34.820">Focus moi.</p>
+      <p begin="00:54:37.570" end="00:54:41.470">You may and that's how a lot of these.</p>
+      <p begin="00:54:41.470" end="00:54:44.390">By you know, moi.</p>
+      <p begin="00:54:49.790" end="00:54:54.210">So, what about streaming large amounts large amounts of a binary data between apps</p>
+      <p begin="00:54:54.210" end="00:55:00.640">...sharing memory between appsif you can split up into...sets you can see?</p>
+      <p begin="00:55:00.640" end="00:55:05.110">But, you can you can just and send a stream handle.</p>
+      <p begin="00:55:05.110" end="00:55:07.980">Ok.</p>
+      <p begin="00:55:07.980" end="00:55:13.610">the specifically like project see program taking a bunch of data that you're using in memory like</p>
+      <p begin="00:55:13.610" end="00:55:18.090">in a cplus-plus one-thirty to...and shooting across to a,</p>
+      <p begin="00:55:18.090" end="00:55:23.250">you know, universal app for display purposes so there's a lot of data going across like signature</p>
+      <p begin="00:55:23.250" end="00:55:28.640">...in a designed...over...create</p>
+      <p begin="00:55:28.640" end="00:55:42.380">...of dynamically in the other...you're not...at any...</p>
+      <p begin="00:55:42.380" end="00:55:46.730">So,a question about packaging up that services components</p>
+      <p begin="00:55:46.730" end="00:55:50.220">so I actually looked at your demo code a little bit since you put it up on get</p>
+      <p begin="00:55:50.220" end="00:55:53.480">hub so the output of the app services project is a dot</p>
+      <p begin="00:55:53.480" end="00:56:00.720">...md file I believe moi thing and then the solution you have everything is</p>
+      <p begin="00:56:00.720" end="00:56:04.750">all one solution for simplicity but if you were actually going to take that...distributed</p>
+      <p begin="00:56:04.750" end="00:56:09.200">...different...to at least a different mobile app those outside the solution is the dot</p>
+      <p begin="00:56:09.200" end="00:56:12.310">...file how you would reference it because I'm wondering how the universal</p>
+      <p begin="00:56:12.310" end="00:56:14.590">...knows about the.</p>
+      <p begin="00:56:14.590" end="00:56:19.830">Knows about the component.</p>
+      <p begin="00:56:19.830" end="00:56:21.460">Gadolinium beatified is</p>
+      <p begin="00:56:22.480" end="00:56:30.270">...is just and it's a it's a bunch of windows...right</p>
+      <p begin="00:56:30.270" end="00:56:34.220">...like so I was working with broker components previously</p>
+      <p begin="00:56:34.220" end="00:56:38.300">...capone had like a file reference to the dot...the file so I</p>
+      <p begin="00:56:38.300" end="00:56:44.170">notice in the demo project it doesn't have the main after its associated with the</p>
+      <p begin="00:56:44.170" end="00:56:49.630">universal...doesn't have a reference to the app services component.</p>
+      <p begin="00:56:49.630" end="00:56:57.080">And,...under the visual see references...you mean all that stuff</p>
+      <p begin="00:56:57.080" end="00:56:59.530">I mean fabric m...like the one that's hosted...</p>
+      <p begin="00:57:00.880" end="00:57:02.910">Ok, iso...</p>
+      <p begin="00:57:08.210" end="00:57:13.250">Ok, so, say you have app a launches at the</p>
+      <p begin="00:57:13.250" end="00:57:17.330">...waiting for result and then at the launches that...which is also rating</p>
+      <p begin="00:57:17.330" end="00:57:21.110">...and then somehow the user terminate app</p>
+      <p begin="00:57:21.110" end="00:57:25.840">...what would happen ...access...</p>
+      <p begin="00:57:26.860" end="00:57:34.880">When...a dosesthey...in the...can...a</p>
+      <p begin="00:57:34.880" end="00:57:40.760">...comes of orderly...a and the same also applies to but happy vases</p>
+      <p begin="00:57:40.760" end="00:57:43.200">...weapons if they open up a task</p>
+      <p begin="00:57:43.200" end="00:57:48.730">managers some third-party application that would close...or what happens if apps</p>
+      <p begin="00:57:48.730" end="00:57:55.180">...crashes audis yeah, or...that...themor some</p>
+      <p begin="00:57:55.180" end="00:58:01.900">monkey's scenario...the crashes in...indeo in the</p>
+      <p begin="00:58:01.900" end="00:58:08.340">...avce...so you get...the result is not?</p>
+      <p begin="00:58:08.340" end="00:58:11.890">Okay, and, then what about the scenario where the initial</p>
+      <p begin="00:58:11.890" end="00:58:17.620">app a is the one that would have this...everything else just goes</p>
+      <p begin="00:58:17.620" end="00:58:26.620">away connection...automatic yeah, ok,...a?</p>
+      <p begin="00:58:26.620" end="00:58:30.890">So, my question is do a...certification of apps the contain or, you know,</p>
+      <p begin="00:58:30.890" end="00:58:35.280">either are only about...services or primarily about them so whether it's head lesser it's got a</p>
+      <p begin="00:58:35.280" end="00:58:39.810">blank wide-screen because we can't do...there's an awful lot of code in there that isn't</p>
+      <p begin="00:58:39.810" end="00:58:44.700">going to be exercise of all by anyone reviewing that app so what</p>
+      <p begin="00:58:44.700" end="00:58:49.680">...thinking about requirements for submitting test harness or second apt exercises the</p>
+      <p begin="00:58:49.680" end="00:58:54.360">...services based api or anything along those lines and I bet that's for you</p>
+      <p begin="00:58:54.360" end="00:59:01.620">...I personally am not looking at the head this apps problem but I bet that's...people when.</p>
+      <p begin="00:59:01.620" end="00:59:07.910">...I'm going to I'm going to find...is a...feedback okay...</p>
+      <p begin="00:59:07.910" end="00:59:12.320">The company and ...I work for microsoft so I get it yet I</p>
+      <p begin="00:59:14.390" end="00:59:17.360">Would talk to either which is one of your moi?</p>
+      <p begin="00:59:17.360" end="00:59:24.460">I think I know that the so I'll then...probably on that.</p>
+      <p begin="00:59:24.460" end="00:59:29.190">...perfect thanks.</p>
+      <p begin="00:59:29.190" end="00:59:33.050">Ok, so, let's say you have and...services app that is also foreground</p>
+      <p begin="00:59:33.050" end="00:59:37.640">map so it executes in the foreground and then at some point the get suspended so it's</p>
+      <p begin="00:59:37.640" end="00:59:41.500">...memory but suspended and then client app calls the</p>
+      <p begin="00:59:41.500" end="00:59:47.230">servicewould that service get executed in the process that</p>
+      <p begin="00:59:47.230" end="00:59:51.510">was previously suspended or would be a separate background task process they will</p>
+      <p begin="00:59:51.510" end="00:59:55.380">handle the request and the reason I'm asking is about state sharing between</p>
+      <p begin="00:59:55.380" end="00:59:58.820">potentially new background task process versus the original suspended</p>
+      <p begin="00:59:58.820" end="01:00:03.410">process so here's the thing so normally when you</p>
+      <p begin="01:00:03.410" end="01:00:06.030">provide a background tuscan at this applies to other sorts of</p>
+      <p begin="01:00:06.030" end="01:00:12.050">...as well it actually executes in a host process...background...closed-door</p>
+      <p begin="01:00:12.050" end="01:00:16.900">...which is which has nothing to do with your girl sure it's the same hap</p>
+      <p begin="01:00:16.900" end="01:00:20.930">...so it has access to the same thing but it's a separate process</p>
+      <p begin="01:00:20.930" end="01:00:25.340">so if you got one of those setups the app services runs</p>
+      <p begin="01:00:25.340" end="01:00:29.490">...it runs inside of background articles text now?</p>
+      <p begin="01:00:29.490" end="01:00:32.990">We've introduced this model varying now you can</p>
+      <p begin="01:00:32.990" end="01:00:38.330">...background costly dot video foreground app and I encourage you to go what's the</p>
+      <p begin="01:00:38.330" end="01:00:43.630">...that the...a couple of days ago and, that</p>
+      <p begin="01:00:43.630" end="01:00:48.060">...you can do is you can have the...run in your full-grown</p>
+      <p begin="01:00:48.060" end="01:00:52.410">execute okay in that case will happen is even if the executable</p>
+      <p begin="01:00:52.410" end="01:00:58.160">...the suspending all...the...frozen it's not getting any cpu</p>
+      <p begin="01:00:58.160" end="01:01:02.140">...we will start another thread within that process and</p>
+      <p begin="01:01:02.140" end="01:01:07.150">...get cpu and...able to do things but the moment...into the...things</p>
+      <p begin="01:01:07.150" end="01:01:10.860">just...heart ok so the ui threads are still not active but</p>
+      <p begin="01:01:10.860" end="01:01:14.810">...be separate threads but within the same process okay that's great possible</p>
+      <p begin="01:01:14.810" end="01:01:18.070">at the exact details of how to...the at</p>
+      <p begin="01:01:18.070" end="01:01:23.360">a background in process that's...that's all that's great that's exactly what I needed</p>
+      <p begin="01:01:23.360" end="01:01:27.000">...other any additional concerns about security</p>
+      <p begin="01:01:27.000" end="01:01:31.760">...needs to endpoint their ways that man the middle tax can happen</p>
+      <p begin="01:01:31.760" end="01:01:36.030">meaning of...and are very concerned about...attacks</p>
+      <p begin="01:01:36.030" end="01:01:40.660">...we are the big security concern because like I said it's literally</p>
+      <p begin="01:01:42.180" end="01:01:46.480">...and v set-up and the google the setup of the main pipes the</p>
+      <p begin="01:01:46.480" end="01:01:51.460">somebody you...and we use strong identity's on...google</p>
+      <p begin="01:01:51.460" end="01:01:56.790">...so...I...someone what I would worry about and, this is</p>
+      <p begin="01:01:56.790" end="01:02:04.570">more something that ...perspective of users is I'm in app I'm</p>
+      <p begin="01:02:04.570" end="01:02:09.670">...anotherwhich has capabilities that...maybe...location of the</p>
+      <p begin="01:02:09.670" end="01:02:15.570">user...and that's something we're going to be looking very closely</p>
+      <p begin="01:02:15.570" end="01:02:20.490">...the moment internal restrictions but that's something we do that's something that</p>
+      <p begin="01:02:20.490" end="01:02:25.080">was ...important...and we've got a lot of dimitri</p>
+      <p begin="01:02:25.080" end="01:02:27.940">...that are going to be watching it?</p>
+
+    </div>
+  </body>
+</tt>

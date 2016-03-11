@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.915</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:03.700" end="00:00:06.070">Great thank you also much for coming I'm</p>
+      <p begin="00:00:06.070" end="00:00:10.960">...this is...and liz and from the window shell engineering team</p>
+      <p begin="00:00:10.960" end="00:00:16.920">...like to welcome those in the audience are webcast viewers energy channel nine viewers.</p>
+      <p begin="00:00:16.920" end="00:00:22.190">So, we help you had a chance to see continuum in the keynote yesterday all the buzz and</p>
+      <p begin="00:00:22.190" end="00:00:26.940">everything just making as getty and hearing the feedback from use really wonderful our team</p>
+      <p begin="00:00:26.940" end="00:00:30.150">feels just incredibly lucky to be working on what you think is a</p>
+      <p begin="00:00:30.150" end="00:00:36.000">gain changing experience for phones we've worked incredibly hard.</p>
+      <p begin="00:00:36.000" end="00:00:39.630">To put to pull together and some demos today the your</p>
+      <p begin="00:00:39.630" end="00:00:43.550">...to get to see...the first...showing live code.</p>
+      <p begin="00:00:43.550" end="00:00:50.680">today we're going to give you an overview of continuum and then some consideration for use developers.</p>
+      <p begin="00:00:50.680" end="00:00:54.520">So, I know there's one thing in here that we all share and that's our love for</p>
+      <p begin="00:00:54.520" end="00:00:59.540">phones I never it's always at my side.</p>
+      <p begin="00:00:59.540" end="00:01:04.480">We sleet nested then we take...to the bathroom their favorite dinner date.</p>
+      <p begin="00:01:04.480" end="00:01:06.670">In japan...they</p>
+      <p begin="00:01:06.670" end="00:01:15.770">...to create waterproof phones because ninety percent of teens would not take a shower without their phone.</p>
+      <p begin="00:01:15.770" end="00:01:19.320">And, phones are very powerful the processing our</p>
+      <p begin="00:01:19.320" end="00:01:22.590">of a phone is reveling that of a desktop pc.</p>
+      <p begin="00:01:23.710" end="00:01:28.560">But, even with this processing our sometimes...just not enough...are great</p>
+      <p begin="00:01:28.560" end="00:01:36.040">when you're on-the-go but the foreign foam form factor can...limiting.</p>
+      <p begin="00:01:36.040" end="00:01:40.790">here and excel you can see my reporting spreadsheet and I can panorama and I can see</p>
+      <p begin="00:01:40.790" end="00:01:49.750">the details but because of the screen size is difficult to get the whole picture.</p>
+      <p begin="00:01:49.750" end="00:01:51.860">And, we've all had times where we had a</p>
+      <p begin="00:01:51.860" end="00:01:57.900">...along email or edit a document and we wish we had a...</p>
+      <p begin="00:01:57.900" end="00:02:00.770">So, this is why we created continuum,</p>
+      <p begin="00:02:00.770" end="00:02:04.410">continuum is part of the windows operating system enables</p>
+      <p begin="00:02:04.410" end="00:02:12.130">a windows phone to power-pc like experience for windows apps.</p>
+      <p begin="00:02:12.130" end="00:02:14.720">So, you can imagine walking into a dorm.</p>
+      <p begin="00:02:14.720" end="00:02:19.230">Or hook home office and docking your windows phone to display</p>
+      <p begin="00:02:19.230" end="00:02:22.070">keyboard and mouse.</p>
+      <p begin="00:02:22.070" end="00:02:26.290">So, what you see here this is not a pc but the phone is powering both of</p>
+      <p begin="00:02:26.290" end="00:02:26.960">these screens?</p>
+      <p begin="00:02:28.150" end="00:02:30.030">And, excel here is a windows app that</p>
+      <p begin="00:02:30.030" end="00:02:37.180">...scaling for to the screen size and showings adaptive layout.</p>
+      <p begin="00:02:37.180" end="00:02:41.810">One of the things that we love is that the phone continue to be a phone so even when</p>
+      <p begin="00:02:41.810" end="00:02:45.620">I'm using excel I can still use my phone for other applications for</p>
+      <p begin="00:02:45.620" end="00:02:47.760">...for phone calls.</p>
+      <p begin="00:02:47.760" end="00:02:54.410">Whatever.</p>
+      <p begin="00:02:54.410" end="00:02:58.850">Continuum it allows you to have to apps one-half on your phone one</p>
+      <p begin="00:02:58.850" end="00:03:02.280">of unconnected screen both being powered by your phone</p>
+      <p begin="00:03:03.450" end="00:03:09.780">windows apps scale beautifully among these screens and when you want to input with then you can use</p>
+      <p begin="00:03:09.780" end="00:03:19.650">...mouse or controller app that we designed to be a software touch pad?</p>
+      <p begin="00:03:19.650" end="00:03:23.970">So, if you build a windows app it runs on windows mobile and</p>
+      <p begin="00:03:23.970" end="00:03:27.380">...designed to adapt and respond to any size in many</p>
+      <p begin="00:03:27.380" end="00:03:33.740">case your apps are just going to work and...get the value of this for free.</p>
+      <p begin="00:03:33.740" end="00:03:36.690">So, now I'm very...come up and</p>
+      <p begin="00:03:36.690" end="00:03:41.450">...through demo this is the first-time ever...showcasing our life code.</p>
+      <p begin="00:03:41.450" end="00:03:47.370">Thank you.</p>
+      <p begin="00:03:47.370" end="00:03:51.310">Thanks...thanks to all of you in the room and those of you online it's a privilege to be able</p>
+      <p begin="00:03:51.310" end="00:03:55.920">to presented today so if you watched the keynote yesterday you saw</p>
+      <p begin="00:03:55.920" end="00:04:00.080">...present a simulation of continuum for phone and to be</p>
+      <p begin="00:04:00.080" end="00:04:04.840">quite honest with you over the past week has been a couple of days where we thought we might be showing you that same simulation</p>
+      <p begin="00:04:04.840" end="00:04:09.760">in here but ...and redman work really hard to put together a</p>
+      <p begin="00:04:09.760" end="00:04:14.940">good solid build and we're really excited to share that with you today keep in mind though</p>
+      <p begin="00:04:14.940" end="00:04:19.830">this is live code this is a work-in-progress there's some rough edges that you'll see there's some glitches that</p>
+      <p begin="00:04:19.830" end="00:04:24.680">I'm sure we'll come up during the demo so keep in mind bear with us a little bit.</p>
+      <p begin="00:04:24.680" end="00:04:27.230">Now before I get started.</p>
+      <p begin="00:04:27.230" end="00:04:33.270">I've got...of questions online over the past twenty four hours about the accessories</p>
+      <p begin="00:04:33.270" end="00:04:37.720">this feature require any specific hardware or accessories in order to enable it and the</p>
+      <p begin="00:04:37.720" end="00:04:43.890">answer is no as a matter-of-fact for this presentation what I have here is a wireless setup</p>
+      <p begin="00:04:43.890" end="00:04:48.370">them doing and I have a windows phone obviously running windows ten on it I have a</p>
+      <p begin="00:04:48.370" end="00:04:53.620">bluetooth keyboard and mouse on that are paired with the phone and I have a mirror</p>
+      <p begin="00:04:53.620" end="00:04:58.480">...receiver this is an action tech screaming pro america receiver?</p>
+      <p begin="00:04:58.480" end="00:05:00.250">Ok, so, let's get started.</p>
+      <p begin="00:05:01.270" end="00:05:04.780">Let's say I get a text message from a colleague.</p>
+      <p begin="00:05:04.780" end="00:05:10.450">And, they want to me to update the number in our budget spreadsheet.</p>
+      <p begin="00:05:10.450" end="00:05:13.140">So, no, problem I'm actually going to copy that number to the</p>
+      <p begin="00:05:13.140" end="00:05:20.530">clipboard because I'll use it later now I have excel on the phone of course.</p>
+      <p begin="00:05:20.530" end="00:05:25.840">And, I can go ahead and there's a file.</p>
+      <p begin="00:05:25.840" end="00:05:34.690">Not easy when you get fat fingers all right wait a minute let's try that again.</p>
+      <p begin="00:05:34.690" end="00:05:46.180">...device.</p>
+      <p begin="00:05:46.180" end="00:05:49.280">Actually the area sorry about that</p>
+      <p begin="00:05:49.280" end="00:05:54.480">...I weren't ok so this is excel on the phone now</p>
+      <p begin="00:05:54.480" end="00:06:00.010">it's universal windows app so it scales down this is a small this is the small-screen the phone form</p>
+      <p begin="00:06:00.010" end="00:06:02.250">factor and layout of course but as</p>
+      <p begin="00:06:02.250" end="00:06:06.040">...said...is kind of a dens file and be a little bit difficult to work with</p>
+      <p begin="00:06:06.040" end="00:06:11.540">this on the phone you much easier work with it on the big-screen...keyboard and mouse.</p>
+      <p begin="00:06:11.540" end="00:06:19.650">So, let's go ahead I'm...get to...for you guys let's get connected...my phone here.</p>
+      <p begin="00:06:19.650" end="00:06:29.240">By opening up action center clicking our new connect button.</p>
+      <p begin="00:06:29.240" end="00:06:34.860">Click that and.</p>
+      <p begin="00:06:40.900" end="00:06:46.600">Welcome to continuum analytically sound really cheesy that welcome to the future.</p>
+      <p begin="00:06:46.600" end="00:06:50.980">So, this is my phone start screen right it's exactly as I've customizing my apps</p>
+      <p begin="00:06:50.980" end="00:06:55.360">...familiar location and it works great with mouse.</p>
+      <p begin="00:06:55.360" end="00:06:58.690">Bring my...over here I can scroll up and down.</p>
+      <p begin="00:06:58.690" end="00:07:01.530">Can use...clicked customize it there we go into</p>
+      <p begin="00:07:01.530" end="00:07:05.090">...the things that I'm used to doing on my phone with start?</p>
+      <p begin="00:07:05.090" end="00:07:10.070">Look, at the upper left-hand corner here there's my network strings icon over on the right is</p>
+      <p begin="00:07:10.070" end="00:07:15.950">my battery icon in the clock this is my phone and, this is my phone powering</p>
+      <p begin="00:07:15.950" end="00:07:20.940">second...but over here if you bring attention to the phone part of the picture</p>
+      <p begin="00:07:20.940" end="00:07:26.290">and picture I can go back and there's excel still running there.</p>
+      <p begin="00:07:26.290" end="00:07:28.570">Ok, so, let's have a little fun here.</p>
+      <p begin="00:07:28.570" end="00:07:32.690">Let's open excel we're going to bring it over to the big-screen simply go to start.</p>
+      <p begin="00:07:32.690" end="00:07:34.500">Quick that.</p>
+      <p begin="00:07:34.500" end="00:07:41.130">...flows.</p>
+      <p begin="00:07:41.130" end="00:07:45.720">Father happen there was excel received a window resize event and reload for the second screen and</p>
+      <p begin="00:07:45.720" end="00:07:50.600">look this is excel as I'm used to using in on the universal windows</p>
+      <p begin="00:07:50.600" end="00:07:53.130">...on the big-screen.</p>
+      <p begin="00:07:53.130" end="00:07:57.290">It looks great it works great with keyboard and mouse.</p>
+      <p begin="00:07:57.290" end="00:08:00.760">And, let's see I want to go ahead and make that change so keep</p>
+      <p begin="00:08:00.760" end="00:08:03.760">...the charts here I write clicked...a</p>
+      <p begin="00:08:03.760" end="00:08:08.760">...in their everything refresh is it works just like excel this is a great thing about</p>
+      <p begin="00:08:08.760" end="00:08:13.520">continuum about windows apps is I have one</p>
+      <p begin="00:08:13.520" end="00:08:18.480">binary and I can design that to flow in re scale for different form factors</p>
+      <p begin="00:08:18.480" end="00:08:23.340">what is one binary across of form factors all right so.</p>
+      <p begin="00:08:23.340" end="00:08:25.410">Now I can be I can continue to be productive here at</p>
+      <p begin="00:08:25.410" end="00:08:30.580">my keyboard mouse but let's say I'm done working and now I want to</p>
+      <p begin="00:08:30.580" end="00:08:35.600">go downstairs and watch a movie on my tv of america receiver connected to the tv</p>
+      <p begin="00:08:35.600" end="00:08:40.420">in my living room...I can sit back and my couch and I can stream from my phone but I don't have a</p>
+      <p begin="00:08:40.420" end="00:08:46.430">keyboard and have a mouse down there so...mention for that we built is the continuum</p>
+      <p begin="00:08:46.430" end="00:08:51.280">comptroller app now if you look at this blue bar across the top of the phone says I'm connected</p>
+      <p begin="00:08:51.280" end="00:08:55.830">...says...control go ahead and do that and this is...control</p>
+      <p begin="00:08:55.830" end="00:09:00.450">...we're still working on this still work-in-progress here?</p>
+      <p begin="00:09:00.450" end="00:09:04.700">But, this operates just like a track pad so I'm</p>
+      <p begin="00:09:04.700" end="00:09:09.180">going-to go ahead here and if I if I move my finger around on the screen what you'll see is the</p>
+      <p begin="00:09:09.180" end="00:09:14.320">...should move should move I said we're...working on this ...move on the external screen.</p>
+      <p begin="00:09:14.320" end="00:09:17.120">I can tap on icons to open</p>
+      <p begin="00:09:17.120" end="00:09:21.370">then I can tap on items within applications if I taped in a text field</p>
+      <p begin="00:09:21.370" end="00:09:25.540">...application the keyboard on the phone will come up and I can inter text</p>
+      <p begin="00:09:25.540" end="00:09:32.030">...that will then be routed directly into the application running on the external screen.</p>
+      <p begin="00:09:32.030" end="00:09:33.280">So, last thing I'll</p>
+      <p begin="00:09:33.280" end="00:09:37.650">leave you with is let's take that movie watching scenario</p>
+      <p begin="00:09:37.650" end="00:09:44.570">...run all the way through and go to open are video app.</p>
+      <p begin="00:09:44.570" end="00:09:48.890">And, I have a video and here.</p>
+      <p begin="00:09:48.890" end="00:09:55.820">...we, yeah, we just posted this online yesterday let's do that on external screen.</p>
+      <p begin="00:09:55.820" end="00:09:57.340">Ok, there we go</p>
+      <p begin="00:09:57.340" end="00:10:00.780">...get sound turn down on this joe had his chance to speak yesterday</p>
+      <p begin="00:10:01.890" end="00:10:05.450">...great look at this is an http video...really</p>
+      <p begin="00:10:05.450" end="00:10:10.410">...external screen...looks awesome and now let's see what I can do on the phone.</p>
+      <p begin="00:10:10.410" end="00:10:12.130">...a start.</p>
+      <p begin="00:10:12.130" end="00:10:18.170">I might want to check my calendar.</p>
+      <p begin="00:10:18.170" end="00:10:22.940">Outlook mail app...the video...external screen is still running if this were a</p>
+      <p begin="00:10:22.940" end="00:10:26.370">...video and if you have kids you've probably seen those the videos</p>
+      <p begin="00:10:26.370" end="00:10:47.100">...kids like about fifty times so it's great to be able to strain that video check your email.</p>
+      <p begin="00:10:47.100" end="00:10:51.320">Now I know what you're thinking and I want to say we've actually we can do this with streaming video</p>
+      <p begin="00:10:51.320" end="00:10:54.510">for the web and it's still just as rocks...great.</p>
+      <p begin="00:10:54.510" end="00:11:02.030">Art folks that's a little brief overview of continuum thanksgiving.</p>
+      <p begin="00:11:02.030" end="00:11:05.120">...great thank you so my studio we did it</p>
+      <p begin="00:11:06.150" end="00:11:09.080">...that superfund for all of our team out watching of</p>
+      <p begin="00:11:09.080" end="00:11:11.820">...fun to show all right so</p>
+      <p begin="00:11:11.820" end="00:11:16.760">continuous a really important featurefor windows ten our vision is to enable</p>
+      <p begin="00:11:16.760" end="00:11:21.590">a pc experience for everyone on every screen in.</p>
+      <p begin="00:11:21.590" end="00:11:25.970">Develop markets where people have pc's is much more around flexibility</p>
+      <p begin="00:11:25.970" end="00:11:32.450">and convenience if you leave your laptop at work or you're just too lazy to bring</p>
+      <p begin="00:11:32.450" end="00:11:36.070">You can be confident that you can get your work done if you need to</p>
+      <p begin="00:11:36.070" end="00:11:40.700">and this is what we're delivering for windows ten.</p>
+      <p begin="00:11:40.700" end="00:11:43.620">Emerging markets like china and india the</p>
+      <p begin="00:11:43.620" end="00:11:49.880">smartphones the first and only computing device for many people you can imagine if</p>
+      <p begin="00:11:49.880" end="00:11:54.510">...student and you have just one computing device it will be a phone.</p>
+      <p begin="00:11:54.510" end="00:11:58.400">And, you know, what likely you also have a tv?</p>
+      <p begin="00:11:58.400" end="00:12:02.010">So, now you can imagine taking your windows phone connecting</p>
+      <p begin="00:12:02.010" end="00:12:04.500">...existing television adding a</p>
+      <p begin="00:12:04.500" end="00:12:10.810">keyboard and mouse and having a pc experience maybe for the first-time.</p>
+      <p begin="00:12:10.810" end="00:12:14.720">We know from our research...this is really a game changer</p>
+      <p begin="00:12:14.720" end="00:12:18.920">...really impactful when we brought this scenarios to those markets.</p>
+      <p begin="00:12:18.920" end="00:12:24.270">And, this is the roadmap for continuum.</p>
+      <p begin="00:12:24.270" end="00:12:28.520">So, we talk today about how continuum can light up a</p>
+      <p begin="00:12:28.520" end="00:12:31.280">display and keyboard and mouse.</p>
+      <p begin="00:12:31.280" end="00:12:35.640">But, we actually do the envision a world where the phone powers many more screens</p>
+      <p begin="00:12:35.640" end="00:12:43.050">...experiences where every screen can become a pc.</p>
+      <p begin="00:12:43.050" end="00:12:50.100">So, continuum enables a new class of low-cost flexible hardware.</p>
+      <p begin="00:12:50.100" end="00:12:53.440">That can be powered by the phone.</p>
+      <p begin="00:12:53.440" end="00:12:55.470">So, what you're seeing here this is</p>
+      <p begin="00:12:55.470" end="00:12:59.260">not a laptop this is a display and keyboard?</p>
+      <p begin="00:13:00.310" end="00:13:02.390">And, there's no processor inside the</p>
+      <p begin="00:13:02.390" end="00:13:06.860">phone is powering this device to be just like a laptop.</p>
+      <p begin="00:13:06.860" end="00:13:08.650">And, here you can imagine taking away that</p>
+      <p begin="00:13:08.650" end="00:13:15.010">does the keyboard and having a tablet there's so many other ideas that we have.</p>
+      <p begin="00:13:15.010" end="00:13:19.120">So, what are the other great things about these devices that they can be shared so, for example,</p>
+      <p begin="00:13:19.120" end="00:13:23.760">in my household I can be using this device and then my husband can pick it</p>
+      <p begin="00:13:23.760" end="00:13:26.430">up and can use his...our and have a</p>
+      <p begin="00:13:26.430" end="00:13:31.420">personalize experience with his apps his data his services and my</p>
+      <p begin="00:13:31.420" end="00:13:35.990">phone my son can pick it up and use it for homework so we're really,</p>
+      <p begin="00:13:35.990" end="00:13:40.750">really excited to talk about how the continuum scenarios might light up your windows apps</p>
+      <p begin="00:13:40.750" end="00:13:49.880">and then invite liz to come in and talk about the considerations for use...</p>
+      <p begin="00:13:49.880" end="00:13:54.370">Thanks everyone really awesome to be here I'm so happy that are demo actually works for you</p>
+      <p begin="00:13:54.370" end="00:14:00.560">moi so, now and take of the rest the time to talk about what</p>
+      <p begin="00:14:00.560" end="00:14:06.940">you as developers actually need to think about when developing apps that run on continuum.</p>
+      <p begin="00:14:06.940" end="00:14:12.530">So, we have a bunch of developer considerations only about three of them are really integral</p>
+      <p begin="00:14:12.530" end="00:14:16.150">to your success and then we have a couple other topics we just want to show</p>
+      <p begin="00:14:16.150" end="00:14:21.840">off and get you thinking about but before we talk about those I...make sure everyone's grounded in the</p>
+      <p begin="00:14:21.840" end="00:14:28.060">three hardware configurations that will be available in windows ten.</p>
+      <p begin="00:14:28.060" end="00:14:30.990">So, the first configuration of the wired...</p>
+      <p begin="00:14:30.990" end="00:14:35.600">You could think of someone going home sitting at a desk in front of a monitor keyboard and</p>
+      <p begin="00:14:35.600" end="00:14:41.460">mouse to be productive now in this configuration there's a docked serves as a hub for these</p>
+      <p begin="00:14:41.460" end="00:14:45.340">four accessories the monitor keyboard mouse and phone the</p>
+      <p begin="00:14:45.340" end="00:14:48.380">...mouse are plugged in we are us beat the</p>
+      <p begin="00:14:48.380" end="00:14:53.510">doc or they can be paired via bluetooth to the phone itself.</p>
+      <p begin="00:14:53.510" end="00:14:58.420">Now the big benefit of this scenario is that because the phone is actually plugged into the</p>
+      <p begin="00:14:58.420" end="00:15:02.780">...your phone will be charging while using the external screen.</p>
+      <p begin="00:15:02.780" end="00:15:07.160">...get the best performance possible.</p>
+      <p begin="00:15:07.160" end="00:15:10.240">Now I know a lot of people prefer wireless configurations</p>
+      <p begin="00:15:10.240" end="00:15:14.430">so you can also have the same productivity centric scenario with the wireless</p>
+      <p begin="00:15:14.430" end="00:15:18.720">...main difference between this and the previous scenario being that instead of</p>
+      <p begin="00:15:18.720" end="00:15:25.600">plugging your phone and you just connect we are cast.</p>
+      <p begin="00:15:25.600" end="00:15:29.120">So, our final configuration is a wireless dangle.</p>
+      <p begin="00:15:29.120" end="00:15:32.370">You can think of someone going home and lounging back on the couch with friends</p>
+      <p begin="00:15:32.370" end="00:15:37.810">and family and instead of using a keyboard and asked to...small-screen we</p>
+      <p begin="00:15:37.810" end="00:15:42.660">actually expect people to use the phone with the continuum controller here you can enjoy</p>
+      <p begin="00:15:42.660" end="00:15:48.480">videos music photos any other windows...that you want on the big-screen.</p>
+      <p begin="00:15:48.480" end="00:15:51.870">The big benefit of this is flexibility you could take your phone</p>
+      <p begin="00:15:51.870" end="00:15:59.340">and our any screen on-the-go and navigate with our application.</p>
+      <p begin="00:15:59.340" end="00:16:04.060">...the most important thing for us...developer to remember is that users will</p>
+      <p begin="00:16:04.060" end="00:16:16.000">interact with your windows apps on big screens with the keyboard and mouse powered by a phone.</p>
+      <p begin="00:16:16.000" end="00:16:23.420">All right so the one thing that's really going to help you be successful on continuum is building adaptive apps.</p>
+      <p begin="00:16:23.420" end="00:16:26.770">No, I'm not going to go into a bunch of detail on our windows scaling model</p>
+      <p begin="00:16:26.770" end="00:16:32.250">and effective pixels but it is integral to your understanding of building adaptive apps.</p>
+      <p begin="00:16:32.250" end="00:16:35.990">Megapixels...virtual you a virtual unit of measurements that we use</p>
+      <p begin="00:16:35.990" end="00:16:40.100">in windows to give describe the size of any display.</p>
+      <p begin="00:16:41.210" end="00:16:43.890">Effective resolution of a device is determined by</p>
+      <p begin="00:16:43.890" end="00:16:47.700">combination of the actual theoretical physical pencil pixel density of</p>
+      <p begin="00:16:47.700" end="00:16:53.010">the device and theoretical viewing distant that the user...standing from it.</p>
+      <p begin="00:16:53.010" end="00:16:57.680">The big benefit of using effective pixels...you is developers can design and build your</p>
+      <p begin="00:16:57.680" end="00:17:02.320">ui one-time and we windows system actually does a lot of work on your behalf to make sure that</p>
+      <p begin="00:17:02.320" end="00:17:04.060">you I looks great on any screen.</p>
+      <p begin="00:17:05.060" end="00:17:12.140">I would make sure that...and reference and sessions on effective pixels after this.</p>
+      <p begin="00:17:12.140" end="00:17:15.220">So, developing for continuum really means making sure</p>
+      <p begin="00:17:15.220" end="00:17:22.250">your windows app adapt dynamically to any screen from a phone.</p>
+      <p begin="00:17:22.250" end="00:17:25.850">In our configurations we really expect to for users to see</p>
+      <p begin="00:17:25.850" end="00:17:33.540">...optimize you iphone and big-screen optimized...on the big-screen.</p>
+      <p begin="00:17:33.540" end="00:17:38.290">Now when we think about adaptation we think about nthree kind of building principals the first</p>
+      <p begin="00:17:38.290" end="00:17:43.130">of which is called fluid ui that flutie why is all about</p>
+      <p begin="00:17:43.130" end="00:17:46.540">the building ui elements...effective pixels and positioning</p>
+      <p begin="00:17:46.540" end="00:17:52.570">...elements relative to each other and container that...on a screen.</p>
+      <p begin="00:17:52.570" end="00:17:57.260">This is kind of the foundation of building adaptive app and if you do this you should get some default</p>
+      <p begin="00:17:57.260" end="00:18:02.530">behavior for adaptation on continuum.</p>
+      <p begin="00:18:02.530" end="00:18:07.510">So, given a window size change your app should be able to resize to any screen.</p>
+      <p begin="00:18:07.510" end="00:18:12.440">You can see that as a screens I shrinks the content in this green actually resize is to better</p>
+      <p begin="00:18:12.440" end="00:18:18.180">...space but it's n.</p>
+      <p begin="00:18:18.180" end="00:18:21.030">You can also use rapid...controls to reef low and</p>
+      <p begin="00:18:21.030" end="00:18:24.380">...content-based on the with that's available you could</p>
+      <p begin="00:18:24.380" end="00:18:31.460">wrap text images tiles or any other kind of grid like structure.</p>
+      <p begin="00:18:31.460" end="00:18:34.120">So, let's look at a more concrete example.</p>
+      <p begin="00:18:34.120" end="00:18:39.070">...this view we have three main ui elements the first one on top is just a</p>
+      <p begin="00:18:39.070" end="00:18:42.140">...always spanned one hundred-percent of the with the screen.</p>
+      <p begin="00:18:42.140" end="00:18:45.900">Then there's an element in the bottom left that spend third of the screen.</p>
+      <p begin="00:18:45.900" end="00:18:49.970">And, element in the bottom right that...two-thirds so this view</p>
+      <p begin="00:18:49.970" end="00:18:54.870">is designed with only with percentage base layouts and the content is either</p>
+      <p begin="00:18:54.870" end="00:19:01.450">right justified or left justified the container itself or to other ui elements.</p>
+      <p begin="00:19:01.450" end="00:19:02.580">This means that when the</p>
+      <p begin="00:19:02.580" end="00:19:11.310">...size shrinks this captain adapt really...naturally any screen size.</p>
+      <p begin="00:19:11.310" end="00:19:16.760">So, ...do this on your own you should reference the relative panel class this class will help</p>
+      <p begin="00:19:16.760" end="00:19:20.000">position ui elements on any screen relative to each other</p>
+      <p begin="00:19:20.000" end="00:19:24.990">and container using this class with percentage base layouts and things like</p>
+      <p begin="00:19:24.990" end="00:19:33.810">...controls will give you a fundamental scaling experience on any screen.</p>
+      <p begin="00:19:33.810" end="00:19:38.460">All right so the secondif you want to do a little bit more work than just that basically</p>
+      <p begin="00:19:38.460" end="00:19:43.370">...you can use responsive ui and this is all about revealing and morphing and</p>
+      <p begin="00:19:43.370" end="00:19:48.350">...ui at specific snap points.</p>
+      <p begin="00:19:48.350" end="00:19:52.920">Now...point is a triggered the you use to actually snap between two different</p>
+      <p begin="00:19:52.920" end="00:19:58.800">...layouts for continuum we should just that you use is not point of seven hundred sixty eight</p>
+      <p begin="00:19:58.800" end="00:20:03.690">effective pixels this seems kind of arbitrary but it's actually kind of the line between</p>
+      <p begin="00:20:03.690" end="00:20:08.310">what devices we consider to be a phone what devices we consider to be larger displays</p>
+      <p begin="00:20:08.310" end="00:20:14.300">of not phones so pretty device that's lessons on hundred sixty-eight effective pixels</p>
+      <p begin="00:20:14.300" end="00:20:22.930">...user should see phone centric ui...bigger screens large-screen you are.</p>
+      <p begin="00:20:22.930" end="00:20:26.070">So, responsive ui is all about using adaptive triggers</p>
+      <p begin="00:20:26.070" end="00:20:31.020">...can use adaptive triggers to reveal content...specific snap points.</p>
+      <p begin="00:20:31.020" end="00:20:32.830">You can see that as the screen shrinks a</p>
+      <p begin="00:20:32.830" end="00:20:40.830">button emerges that's very custom for the phone and only relevant on phones.</p>
+      <p begin="00:20:40.830" end="00:20:43.780">You can also reposition new so in this example</p>
+      <p begin="00:20:43.780" end="00:20:48.050">as a screen shrinks ui element a and b convince a little bit but</p>
+      <p begin="00:20:48.050" end="00:20:51.840">...specific point...to narrow so at this point you are</p>
+      <p begin="00:20:51.840" end="00:21:00.410">ailment be actually snaps of the side and moves down below ui element a.</p>
+      <p begin="00:21:00.410" end="00:21:04.380">Let's look at the same example so at some point if I screen</p>
+      <p begin="00:21:04.380" end="00:21:07.440">...screen a little bit too much what's going to happen is this is</p>
+      <p begin="00:21:07.440" end="00:21:11.050">...become...the two columns are going to have weird one-line</p>
+      <p begin="00:21:11.050" end="00:21:16.340">text fields so instead of just shrinking it that point it's actually beneficial</p>
+      <p begin="00:21:16.340" end="00:21:20.990">for the developer just break off that right-hand bottom ui element and</p>
+      <p begin="00:21:20.990" end="00:21:26.560">...along the bottom.</p>
+      <p begin="00:21:26.560" end="00:21:30.560">So, let's take a look at an example of using...trigger.</p>
+      <p begin="00:21:30.560" end="00:21:32.600">This example...developer wants to show a</p>
+      <p begin="00:21:32.600" end="00:21:38.780">wide button on big screens and actually exchange that button for a narrow button on small screens.</p>
+      <p begin="00:21:38.780" end="00:21:43.000">We focus on the top developers using the adaptor trigger of minimum window</p>
+      <p begin="00:21:43.000" end="00:21:46.720">wits to say okay if the screen is greater than seven hundred sixty</p>
+      <p begin="00:21:46.720" end="00:21:51.060">...effective pixels show wide button.</p>
+      <p begin="00:21:51.060" end="00:21:58.750">And, if it's less than seven hundred sixty a pixels show narrow buttoned optimized for the phone.</p>
+      <p begin="00:21:58.750" end="00:22:03.150">So, this adaptive...the...triggers can be used in many ways and with many different</p>
+      <p begin="00:22:03.150" end="00:22:07.210">types of triggers this is an example of using minimum window width but you</p>
+      <p begin="00:22:07.210" end="00:22:15.900">can also imagine using input type or device family or some other custom trigger.</p>
+      <p begin="00:22:15.900" end="00:22:22.160">finally if you really want to optimize your application for any screen you can use...ui.</p>
+      <p begin="00:22:22.160" end="00:22:25.810">Tiller ui is reallytiller utilizes the same adaptive triggers we</p>
+      <p begin="00:22:25.810" end="00:22:27.880">just discussed but more complex scenarios.</p>
+      <p begin="00:22:29.050" end="00:22:33.550">We generally expect developers really want to tailor experience to actually tear down and</p>
+      <p begin="00:22:33.550" end="00:22:40.610">reconstruct their app either with new views or new navigation models across screen sizes.</p>
+      <p begin="00:22:40.610" end="00:22:44.790">For example, you can replace controls are ui elements as a screen at</p>
+      <p begin="00:22:44.790" end="00:22:49.520">a specifics that point in this example the big-screen view is pretty</p>
+      <p begin="00:22:49.520" end="00:22:53.280">desktop centric you can think about it as being pretty dense and...a keyboard and</p>
+      <p begin="00:22:53.280" end="00:22:59.460">...navigate but below sets that point you really want to optimize for touch on a phone or tablet</p>
+      <p begin="00:22:59.460" end="00:23:08.970">...actually...themselves that by...into a scrollable list.</p>
+      <p begin="00:23:08.970" end="00:23:12.030">You can also just re architect the entire navigation model and</p>
+      <p begin="00:23:12.030" end="00:23:16.540">...of your application this example on the big-screen application has a two-column</p>
+      <p begin="00:23:16.540" end="00:23:21.150">view column with a list...call with a reading...and as a screen</p>
+      <p begin="00:23:21.150" end="00:23:28.800">shrinks that actually switches to a single column view to optimize for screen size.</p>
+      <p begin="00:23:28.800" end="00:23:32.100">As I said you can use what are the exact same adaptive triggers to build</p>
+      <p begin="00:23:32.100" end="00:23:37.270">...ui just a growing complexity.</p>
+      <p begin="00:23:37.270" end="00:23:40.760">Right so I'm actually going to switch over and show you guys a couple of adaptive apps</p>
+      <p begin="00:23:40.760" end="00:23:47.410">...action hopefully we will have some demoing abilities again.</p>
+      <p begin="00:23:47.410" end="00:23:50.000">Ok, so, I'm actually...take a look at the weather</p>
+      <p begin="00:23:50.000" end="00:23:54.790">...whether app is a really good example of an application that uses vary basic fluid</p>
+      <p begin="00:23:54.790" end="00:24:00.020">...principles to make sure that they adapt to any screen size so here you can see that</p>
+      <p begin="00:24:00.020" end="00:24:04.890">...two degrees I'm kind...not outside there's a weekly preview of the</p>
+      <p begin="00:24:04.890" end="00:24:07.010">whether some charts and then details.</p>
+      <p begin="00:24:08.090" end="00:24:15.780">...going-to go ahead and move this app to the big-screen.</p>
+      <p begin="00:24:15.780" end="00:24:16.280">Lovely</p>
+      <p begin="00:24:16.280" end="00:24:21.360">okay so you can see that actually re flows really nicely on the big-screen pretty sweet.</p>
+      <p begin="00:24:21.360" end="00:24:23.280">So, I can show you guys side-by-side actually going to pull</p>
+      <p begin="00:24:23.280" end="00:24:29.940">up another phone and with the weather app already on it so I can show you what's going on.</p>
+      <p begin="00:24:29.940" end="00:24:34.570">So, if you look at these two devices the...looks essentially the same and</p>
+      <p begin="00:24:34.570" end="00:24:37.700">it appears to be the same-size on both screens.</p>
+      <p begin="00:24:37.700" end="00:24:39.460">Appears to be the same-size because</p>
+      <p begin="00:24:39.460" end="00:24:43.900">developers use effective pixels to actually build ui elements and the fonts</p>
+      <p begin="00:24:43.900" end="00:24:49.960">so the system on their behalf does work to make sure that...I looks great across all screens.</p>
+      <p begin="00:24:49.960" end="00:24:56.070">They do a lot of good stuff with reciting ui elements so they resize this window where they</p>
+      <p begin="00:24:56.070" end="00:25:02.700">so that on a big-screen you can see more days saved eight or ten on the small-screen you have to scroll.</p>
+      <p begin="00:25:02.700" end="00:25:09.580">Identify navigate...details list go over here.</p>
+      <p begin="00:25:09.580" end="00:25:14.060">You can see that on the phone it's just a simple list of details but on the big-screen where the</p>
+      <p begin="00:25:14.060" end="00:25:15.680">screens much wider they actually</p>
+      <p begin="00:25:15.680" end="00:25:23.380">...those details to be...details horizontally using a rapid style control.</p>
+      <p begin="00:25:23.380" end="00:25:29.240">Let's take a look at a couple more apps hopeful up outlook mail.</p>
+      <p begin="00:25:29.240" end="00:25:32.630">Outlook mail as a good example of an app that actually changes</p>
+      <p begin="00:25:32.630" end="00:25:36.550">...navigation model as specific snap point.</p>
+      <p begin="00:25:36.550" end="00:25:40.290">Reminder the forum showing is not the phone powering external screen</p>
+      <p begin="00:25:40.290" end="00:25:48.400">...another...I'm just using...I can show you guys the app side-by-side.</p>
+      <p begin="00:25:48.400" end="00:25:51.800">Lovely so perfect.</p>
+      <p begin="00:25:51.800" end="00:25:55.420">So, this is alec on the big-screen very similar</p>
+      <p begin="00:25:55.420" end="00:26:00.230">be identical to what you would see on desktop so you can see on the phone outlook has this single</p>
+      <p begin="00:26:00.230" end="00:26:05.120">column view where they actually just have either the reading list may lists</p>
+      <p begin="00:26:06.560" end="00:26:11.150">...go in and will...just that mail?</p>
+      <p begin="00:26:11.150" end="00:26:16.090">You can see on the big-screen...have that same mail open it actually raf...and you can see the three</p>
+      <p begin="00:26:16.090" end="00:26:19.090">column view so outlook uses specific</p>
+      <p begin="00:26:19.090" end="00:26:24.840">stat points determine when they should show one versus...views.</p>
+      <p begin="00:26:24.840" end="00:26:26.240">For one must demo switch over</p>
+      <p begin="00:26:26.240" end="00:26:35.600">to outlook calendar within outlook hopefully this work for us.</p>
+      <p begin="00:26:35.600" end="00:26:39.960">...calendar on the phone is really optimized for just checking</p>
+      <p begin="00:26:39.960" end="00:26:44.770">...what you're doing today or what you're doing next...kind of assume people are on-the-go and just want to see with the next appointment</p>
+      <p begin="00:26:44.770" end="00:26:49.600">is so here I basically can either look at my gender I can look at my day?</p>
+      <p begin="00:26:49.600" end="00:26:57.920">Now on the big-screen they actually have well, hang on...again.</p>
+      <p begin="00:26:57.920" end="00:27:03.060">Bug...on the big-screen...available.</p>
+      <p begin="00:27:03.060" end="00:27:07.860">They theoretical make available the month-to-month few weeks view</p>
+      <p begin="00:27:07.860" end="00:27:13.540">...because they really want you to be able to take advantage of that big-screen and the best way possible.</p>
+      <p begin="00:27:13.540" end="00:27:24.920">So, we'll go ahead and switch back over to that.</p>
+      <p begin="00:27:24.920" end="00:27:27.120">Great so now</p>
+      <p begin="00:27:27.120" end="00:27:30.480">...about building adaptive apps let's talk about the different ways that you can</p>
+      <p begin="00:27:30.480" end="00:27:36.770">package windows apps such that they work well...continuum.</p>
+      <p begin="00:27:36.770" end="00:27:41.700">If you will need adaptive windows app that runs on windows mobile your apple have some default behavior</p>
+      <p begin="00:27:41.700" end="00:27:43.840">on continuum.</p>
+      <p begin="00:27:43.840" end="00:27:49.270">Now there's three main ways that you can package...such that it works.</p>
+      <p begin="00:27:49.270" end="00:27:53.010">The best thing you can do is just building universal windows up with a universal windows</p>
+      <p begin="00:27:53.010" end="00:27:53.650">...package.</p>
+      <p begin="00:27:54.790" end="00:27:59.470">If you do this we're generally assuming that you're building and app that's going to adapt across all screens</p>
+      <p begin="00:27:59.470" end="00:28:04.230">and device families so you're already doing everything you need to do to work on continuum</p>
+      <p begin="00:28:04.230" end="00:28:06.090">rapture just work.</p>
+      <p begin="00:28:06.090" end="00:28:08.900">The...that I showed is a really good example of nap that</p>
+      <p begin="00:28:08.900" end="00:28:11.510">...universal up and it just works</p>
+      <p begin="00:28:11.510" end="00:28:19.600">...our scenario they had no idea continuum was even a feature when they were building...application.</p>
+      <p begin="00:28:19.600" end="00:28:20.670">Second type of...package</p>
+      <p begin="00:28:20.670" end="00:28:25.230">that compatible continuum is mobile only apps so we know a lot of developers</p>
+      <p begin="00:28:25.230" end="00:28:28.500">...mobile only developers and they really focused on the phone and</p>
+      <p begin="00:28:28.500" end="00:28:33.370">...phone app and that's totally fine now the thing that we do ask you</p>
+      <p begin="00:28:33.370" end="00:28:38.450">to do...that you've built your the...your mobile apps with fluid responsive and</p>
+      <p begin="00:28:38.450" end="00:28:43.670">tailored ui such that they actually do have some dynamic...lab.</p>
+      <p begin="00:28:43.670" end="00:28:47.960">So, if you want to do a little bit of work you can use...adaptive principles to further optimize</p>
+      <p begin="00:28:49.060" end="00:28:53.680">...optimizations are things you have to do anyway just to make sure that when the orientation of a phone</p>
+      <p begin="00:28:53.680" end="00:29:01.170">changes that...in the right way so the benefit you both on the phone and on continuum.</p>
+      <p begin="00:29:01.170" end="00:29:05.620">Now if you discover that you really want to optimize...mobile app for continuum you might</p>
+      <p begin="00:29:05.620" end="00:29:10.230">as well just think about building universal windows up because you're already doing a lot of work to optimize</p>
+      <p begin="00:29:10.230" end="00:29:18.050">...big-screen views and they that work could be seen across all windows device families.</p>
+      <p begin="00:29:18.050" end="00:29:21.760">let's take a look at a couple of mobile only windows absentee what they look like on the big-screen.</p>
+      <p begin="00:29:22.910" end="00:29:26.600">And, switch over to my phone.</p>
+      <p begin="00:29:26.600" end="00:29:30.920">Leveling or it's almost phone I have the photos application and this is</p>
+      <p begin="00:29:30.920" end="00:29:31.720">a mobile only</p>
+      <p begin="00:29:31.720" end="00:29:36.740">...not universal windows application and you can see here that I have my</p>
+      <p begin="00:29:36.740" end="00:29:45.480">photos they look leveling so I'm going-to go ahead and move this over the big-screen.</p>
+      <p begin="00:29:45.480" end="00:29:48.870">Sewers lovely so.</p>
+      <p begin="00:29:48.870" end="00:29:51.320">You can see here that the photos that actually has</p>
+      <p begin="00:29:51.320" end="00:29:55.690">...use rapid style controls to ensure that the photos...learn nicely</p>
+      <p begin="00:29:55.690" end="00:30:00.860">and both orientations on the phone and network paid off on the big-screen because the apps now</p>
+      <p begin="00:30:00.860" end="00:30:03.660">...properly to that screen with as well.</p>
+      <p begin="00:30:03.660" end="00:30:06.910">So, I can also go ahead and open app here just for fun</p>
+      <p begin="00:30:06.910" end="00:30:15.070">...photo see full-screen image we're having one of those I hope you guys are too.</p>
+      <p begin="00:30:15.070" end="00:30:17.490">Ok, so, now...show you one more apt to actually did</p>
+      <p begin="00:30:17.490" end="00:30:21.040">...little a couple of very small tweaks that make a big difference on the big-screen.</p>
+      <p begin="00:30:22.160" end="00:30:23.260">So, file scores another</p>
+      <p begin="00:30:23.260" end="00:30:28.580">mobile only application and it's basically there's two options you can see my</p>
+      <p begin="00:30:28.580" end="00:30:32.880">...documents or I can see all the documents on this device this is very</p>
+      <p begin="00:30:32.880" end="00:30:45.130">similar kind of information I would...on the desktop so I'm going-to go ahead and move this the big-screen as well.</p>
+      <p begin="00:30:45.130" end="00:30:50.370">Bubbling so ...moves the folders actually just use</p>
+      <p begin="00:30:50.370" end="00:30:55.110">a similar rapid style control so they re for nicely to the big-screen.</p>
+      <p begin="00:30:55.110" end="00:30:57.860">Now the thing I want to point out is that on the phone the</p>
+      <p begin="00:30:57.860" end="00:31:02.710">file explore actually had a tab menu that was hiding that recent and this device those</p>
+      <p begin="00:31:02.710" end="00:31:05.650">reason and this device options...big-screen</p>
+      <p begin="00:31:05.650" end="00:31:13.960">they ops just leave this open permanently which is much nicer for desktop...user.</p>
+      <p begin="00:31:13.960" end="00:31:17.350">Kill switch back to slides.</p>
+      <p begin="00:31:17.350" end="00:31:20.440">So, we've talked about.</p>
+      <p begin="00:31:20.440" end="00:31:25.150">Developers have universe what packages developers...mobile only app packages</p>
+      <p begin="00:31:25.150" end="00:31:27.960">...talk about developers who have both</p>
+      <p begin="00:31:27.960" end="00:31:32.990">mobile separate but both mobile and pc app packages</p>
+      <p begin="00:31:32.990" end="00:31:37.980">now but default we won't have any concept of your pc...package on continuum</p>
+      <p begin="00:31:37.980" end="00:31:42.810">...won't even be on the phone so generally if you do no work for continuum what is</p>
+      <p begin="00:31:42.810" end="00:31:49.020">see your mobile experience on the big-screen just as if you had a mobile...application.</p>
+      <p begin="00:31:49.020" end="00:31:51.790">Now if you want to do a little bit more work and leverage the work you've done</p>
+      <p begin="00:31:51.790" end="00:31:54.720">...the desktop it's up to...actually pull assets</p>
+      <p begin="00:31:54.720" end="00:32:02.920">or views from your pc application in your mobile app package and do the work to switch between them?</p>
+      <p begin="00:32:02.920" end="00:32:07.830">He's really simple example basically you could think of it and</p>
+      <p begin="00:32:07.830" end="00:32:12.760">...logic as hey if the screen sizes smaller than a phone use my phone view if you are pull</p>
+      <p begin="00:32:12.760" end="00:32:16.560">your pc viewing you can use that pc wvu on large screens.</p>
+      <p begin="00:32:16.560" end="00:32:20.800">The obviously this is very simplistic and you probably would...do things like savior</p>
+      <p begin="00:32:20.800" end="00:32:26.420">...states and make sure your refreshing content correctly whenever you switch views.</p>
+      <p begin="00:32:26.420" end="00:32:36.730">So,...phone and look at another example of an example of what this could look like.</p>
+      <p begin="00:32:36.730" end="00:32:43.450">All right so here have microsoft word on the phone you can see I have my...documents.</p>
+      <p begin="00:32:43.450" end="00:32:46.650">Thanks...samoa.</p>
+      <p begin="00:32:46.650" end="00:32:50.010">I have my word document I could edit here if I wanted to and</p>
+      <p begin="00:32:50.010" end="00:32:54.480">the main difference between office on the phone and office on the big-screen...</p>
+      <p begin="00:32:54.480" end="00:32:59.320">over the controls so instead of the traditional desktop ribbon that everyone's used</p>
+      <p begin="00:32:59.320" end="00:33:04.610">to I can actually use this bottom control to change things like my fonts my</p>
+      <p begin="00:33:04.610" end="00:33:08.690">...insert images or do anything else this control</p>
+      <p begin="00:33:08.690" end="00:33:14.770">is really optimized for touch and thumbs and doing things on the phone so I</p>
+      <p begin="00:33:14.770" end="00:33:23.180">want actually move word over to the big-screen?</p>
+      <p begin="00:33:23.180" end="00:33:28.710">...offices on the big-screen so, what office...between</p>
+      <p begin="00:33:28.710" end="00:33:34.310">screens is basically the first thing happens is office get the window resize events and</p>
+      <p begin="00:33:34.310" end="00:33:39.250">when it gets out events they have to make a decision if they're going to keep showing the phone new or if they're</p>
+      <p begin="00:33:39.250" end="00:33:44.020">going to actually exchange...those asked that those assets with the more desktop friendly</p>
+      <p begin="00:33:44.020" end="00:33:49.920">ui so if they decide actually exchange those than they need to tear down</p>
+      <p begin="00:33:49.920" end="00:33:52.870">...they're all controls save state and reconstruct</p>
+      <p begin="00:33:52.870" end="00:33:58.320">...with the new controls just like they did here?</p>
+      <p begin="00:33:58.320" end="00:34:02.260">The offices really good example of an app that uses both</p>
+      <p begin="00:34:02.260" end="00:34:06.000">tailored ui and vary basic resize principles the document itself</p>
+      <p begin="00:34:06.000" end="00:34:12.740">actually just resize is to some percentage based on screen width there's nothing really fancy happening with it.</p>
+      <p begin="00:34:12.740" end="00:34:21.500">So, we'll go back to this slide please.</p>
+      <p begin="00:34:21.500" end="00:34:26.460">All right so how do you test your applications on continuum so,</p>
+      <p begin="00:34:26.460" end="00:34:31.340">generally we expect that your applications will respond and adapts given only when</p>
+      <p begin="00:34:31.340" end="00:34:34.590">a resize events and knowing and based on the width of the screen</p>
+      <p begin="00:34:34.590" end="00:34:38.510">...on so really what you could do is just tested on</p>
+      <p begin="00:34:38.510" end="00:34:43.490">the desktop because if you resize...window on a desktop then you'll see</p>
+      <p begin="00:34:43.490" end="00:34:47.400">you'll get exactly the same events the same things will happen as if it was moving between</p>
+      <p begin="00:34:47.400" end="00:34:52.650">...continuum if your successful when you resize a window on desktop you should be successful in</p>
+      <p begin="00:34:52.650" end="00:34:56.340">our scenario now this is a bit nuance obviously if you're</p>
+      <p begin="00:34:56.340" end="00:35:06.700">using more complex triggers you'd have to developed has tocs to actually tester application.</p>
+      <p begin="00:35:06.700" end="00:35:11.090">Ok, so, let's talk a little bit about scaling by scaling I mean how do you make sure that</p>
+      <p begin="00:35:11.090" end="00:35:18.080">you have the right assets to make your...pixel perfect on any given screen.</p>
+      <p begin="00:35:18.080" end="00:35:23.160">The reason this...integral to your success...is because of</p>
+      <p begin="00:35:23.160" end="00:35:28.110">our phones today have very high resolutions so any assets the provided for the</p>
+      <p begin="00:35:28.110" end="00:35:34.890">phone will actually look pretty good across any display size also driving a detail.</p>
+      <p begin="00:35:34.890" end="00:35:38.350">So, as a developer you need to think about...up-scale to the big-screen.</p>
+      <p begin="00:35:39.440" end="00:35:45.120">Again, a background effective pixels in the scaling model as key to truly understanding this.</p>
+      <p begin="00:35:45.120" end="00:35:49.670">You should...sessions.</p>
+      <p begin="00:35:49.670" end="00:35:54.620">everyone does device every device in the windows platforms associated with a specific scale.</p>
+      <p begin="00:35:54.620" end="00:35:58.400">And, this scale is derived from the effective resolution of the device</p>
+      <p begin="00:35:58.400" end="00:36:02.160">...remember the effective resolution is computed from a combination of the physical</p>
+      <p begin="00:36:02.160" end="00:36:06.460">...pixel density...theoretical viewing distance of...device.</p>
+      <p begin="00:36:06.460" end="00:36:09.880">So, in our scenario most common kind of scale going to be a</p>
+      <p begin="00:36:09.880" end="00:36:15.110">full have a scale about three hundred monitor typically has a scale of one hundred</p>
+      <p begin="00:36:15.110" end="00:36:17.300">...television-type we have a...hundred-fifty.</p>
+      <p begin="00:36:18.620" end="00:36:21.630">So, you can see that there's not really necessarily a direct</p>
+      <p begin="00:36:21.630" end="00:36:25.490">core not does not necessarily direct correlation between screen size</p>
+      <p begin="00:36:25.490" end="00:36:28.760">...form factor and scale it really does depend on that</p>
+      <p begin="00:36:28.760" end="00:36:37.870">physical resolution and the theoretical viewing distance or how far experience from the user?</p>
+      <p begin="00:36:37.870" end="00:36:41.870">And, also these skills are used by the resource management system</p>
+      <p begin="00:36:41.870" end="00:36:44.930">...management system basically looked at all the assets you provided</p>
+      <p begin="00:36:44.930" end="00:36:48.770">...package...the right once for any screen.</p>
+      <p begin="00:36:48.770" end="00:36:53.130">Let's take a look at how scales working continuum.</p>
+      <p begin="00:36:53.130" end="00:36:59.480">As I said a...is probably usually about two hundred four hundred three hundred a good number.</p>
+      <p begin="00:36:59.480" end="00:37:08.800">And, the actual screen...the...into will typically have a scale between one hundred...fifty.</p>
+      <p begin="00:37:08.800" end="00:37:11.890">Default only scale...for the phone will actually be deployed</p>
+      <p begin="00:37:11.890" end="00:37:15.680">...phone even if you made more assets available in your...package it first</p>
+      <p begin="00:37:15.680" end="00:37:20.290">resource management system tries to minimize the number of assets that go on any given device but also</p>
+      <p begin="00:37:20.290" end="00:37:22.560">optimized for whatever screens are actually</p>
+      <p begin="00:37:22.560" end="00:37:27.590">...device so if the phone has a scale factor of three hundred</p>
+      <p begin="00:37:27.590" end="00:37:34.860">then by default only scale three hundred assets will ever be deployed that device.</p>
+      <p begin="00:37:34.860" end="00:37:37.930">Yeah, that's all problematic at first because monitors really want to</p>
+      <p begin="00:37:37.930" end="00:37:42.000">...a...one hundred or scale one fifty.</p>
+      <p begin="00:37:42.000" end="00:37:46.460">It at first connection or quite a full you kind of get this experience where such as say three hundred</p>
+      <p begin="00:37:46.460" end="00:37:52.920">sorry where the phone and the big-screen are both scale three hundred?</p>
+      <p begin="00:37:52.920" end="00:37:55.140">But, if you do work to make assets available in your</p>
+      <p begin="00:37:55.140" end="00:37:59.900">...package for say scale one hundred and scale one fifty and the resource management system washer</p>
+      <p begin="00:37:59.900" end="00:38:04.880">do all of the work for you to make sure that those correct assets wind up on the right screen at</p>
+      <p begin="00:38:04.880" end="00:38:06.490">the right time.</p>
+      <p begin="00:38:06.490" end="00:38:11.000">You don't have to do anything but provide the assets for it.</p>
+      <p begin="00:38:11.000" end="00:38:15.890">And, all note to save space if the user doesn't...the screen within thirty days</p>
+      <p begin="00:38:15.890" end="00:38:23.130">...those assets will be removed from the phone and re downloaded if needed.</p>
+      <p begin="00:38:23.130" end="00:38:28.010">if you don't provide assets you basically run the risk of your app of your assets not scaling frankly are</p>
+      <p begin="00:38:28.010" end="00:38:31.260">not being pixel perfect on...screen.</p>
+      <p begin="00:38:31.260" end="00:38:35.750">the worst-case scenario for continuum is that your asked redone scaled we can basically</p>
+      <p begin="00:38:35.750" end="00:38:39.840">...because we know our phones have very high-resolution screens and all the</p>
+      <p begin="00:38:39.840" end="00:38:44.220">...and tv's that your connecting to what most likely be either the same</p>
+      <p begin="00:38:44.220" end="00:38:47.640">resolution or lower-resolution.</p>
+      <p begin="00:38:47.640" end="00:38:52.870">So, whenever...down...the system is essentially taking one of the high-resolution images you provided</p>
+      <p begin="00:38:52.870" end="00:39:00.300">for the phone and scale it down to the lower-resolution of the connected monitor or tv.</p>
+      <p begin="00:39:00.300" end="00:39:05.490">when this happens the icons basically become not pixel perfect they're</p>
+      <p begin="00:39:05.490" end="00:39:11.860">compressed but reality they won't really look that bad the average person probably</p>
+      <p begin="00:39:11.860" end="00:39:16.680">can't really tell the difference between this compressed image and the pixel perfect image?</p>
+      <p begin="00:39:16.680" end="00:39:21.640">So, that's why it's not really integral to your success...our scenario.</p>
+      <p begin="00:39:21.640" end="00:39:26.140">But, in case you do...pixel perfect here's how you actually go about adding and referencing scaling</p>
+      <p begin="00:39:26.140" end="00:39:30.360">resources...asking resources in one of two ways first.</p>
+      <p begin="00:39:32.080" end="00:39:36.970">You can add new assets to an...folder in your absolution you add them</p>
+      <p begin="00:39:36.970" end="00:39:40.070">...the nomenclature of name dot scaled as</p>
+      <p begin="00:39:40.070" end="00:39:45.600">xxx whatever scale you're using you can just throw all of your assets in this one folder and</p>
+      <p begin="00:39:45.600" end="00:39:53.230">if you use this nomenclature the system will find the right...right time and put them on the right screens.</p>
+      <p begin="00:39:53.230" end="00:39:57.900">You can also have skills specific folders so rather than paying all your assets in one</p>
+      <p begin="00:39:57.900" end="00:39:58.430">folder</p>
+      <p begin="00:39:58.430" end="00:40:03.310">you can actually just put individual are the same set of assets and different scaling folders</p>
+      <p begin="00:40:03.310" end="00:40:07.830">and again the system will do the right thing to grab the right once on the right screens.</p>
+      <p begin="00:40:07.830" end="00:40:12.160">I will know that you can actually mix and match this organization system...skill folders</p>
+      <p begin="00:40:12.160" end="00:40:18.460">...assets folder and the system hunt the role of them.</p>
+      <p begin="00:40:18.460" end="00:40:21.770">You can reference resources with url living</p>
+      <p begin="00:40:21.770" end="00:40:26.390">...xxx again the system knows what...looking for knows how to find it</p>
+      <p begin="00:40:28.790" end="00:40:29.370">An example.</p>
+      <p begin="00:40:30.710" end="00:40:34.020">An image tag and...look something like this.</p>
+      <p begin="00:40:34.020" end="00:40:38.920">And, this is really your referencing the logo image that in your asset folder and based on whatever</p>
+      <p begin="00:40:38.920" end="00:40:49.140">screener on the system will go and find the best the best scaled image for that screen.</p>
+      <p begin="00:40:49.140" end="00:40:53.530">Right so we want to leave you with one final scenario.</p>
+      <p begin="00:40:53.530" end="00:40:56.840">You developers have the ability to take advantage of both screens in</p>
+      <p begin="00:40:56.840" end="00:41:01.510">the scenarios simultaneously there's a handful of api for this and,</p>
+      <p begin="00:41:01.510" end="00:41:07.360">there's actually a session later this evening called screen...that you should tend if you're interested in less.</p>
+      <p begin="00:41:07.360" end="00:41:08.190">But, the voltage create</p>
+      <p begin="00:41:08.190" end="00:41:12.450">...essentially allow you to take advantage about the phone natural display simultaneously</p>
+      <p begin="00:41:13.500" end="00:41:18.350">for basically creating any sort of robust multi-stream experience you want.</p>
+      <p begin="00:41:18.350" end="00:41:26.150">Going to highlight to api here that work really well continuum again I encourage you to go to their session.</p>
+      <p begin="00:41:26.150" end="00:41:29.170">The first api that's available...the cast dpi.</p>
+      <p begin="00:41:29.170" end="00:41:30.990">This api allows you to take a media</p>
+      <p begin="00:41:30.990" end="00:41:35.890">elements from your application on the phone and put it on the external screen.</p>
+      <p begin="00:41:35.890" end="00:41:40.070">Now what's happening we call this api...the system is to operating a</p>
+      <p begin="00:41:40.070" end="00:41:45.010">wvu on that screen on your behalf taking your media elements and just putting it there.</p>
+      <p begin="00:41:45.010" end="00:41:48.930">This is the easiest thing for you to do as a developer if you have a media app and,</p>
+      <p begin="00:41:48.930" end="00:41:54.170">just want get media on external screen.</p>
+      <p begin="00:41:54.170" end="00:41:54.870">Now if you're not</p>
+      <p begin="00:41:54.870" end="00:42:00.070">a media developer you can use the projection manager api this will allow you to create</p>
+      <p begin="00:42:00.070" end="00:42:03.400">to completely customized views...on the phone</p>
+      <p begin="00:42:03.400" end="00:42:09.390">one on the big-screen and basically do whatever you want to do with those views note that if you</p>
+      <p begin="00:42:09.390" end="00:42:14.350">use this api you have to remember that you are the only form of control the user...on</p>
+      <p begin="00:42:14.350" end="00:42:19.060">...screen so whatever view you have on your phone needs to be able to provide input to</p>
+      <p begin="00:42:19.060" end="00:42:23.820">the external screen yes we'll have our continuum comptroller but we don't the user to have to leave your</p>
+      <p begin="00:42:23.820" end="00:42:28.700">apt navigate what...ve put out on...screen.</p>
+      <p begin="00:42:28.700" end="00:42:33.290">So, let's take a look at how you actually go about using...manager at a high-level</p>
+      <p begin="00:42:34.630" end="00:42:39.620">so the first thing you do is just start by checking whether or not there's even a device</p>
+      <p begin="00:42:39.620" end="00:42:46.390">connected if there's not you'd have to handle it as a single screen but if there is.</p>
+      <p begin="00:42:46.390" end="00:42:51.140">You can go ahead and create the view that you want to put both on the external screen.</p>
+      <p begin="00:42:51.140" end="00:42:55.980">And, on the phone.</p>
+      <p begin="00:42:55.980" end="00:42:58.130">...point and then once of</p>
+      <p begin="00:42:58.130" end="00:43:02.680">...created you-can call production manager dot start production asic to show your new</p>
+      <p begin="00:43:02.680" end="00:43:06.780">just your needed wvu on the display and then once you're done with</p>
+      <p begin="00:43:06.780" end="00:43:11.710">...session you-can call stop rejection is inc.</p>
+      <p begin="00:43:11.710" end="00:43:18.710">...as well and...your apple returned the screen that originated on.</p>
+      <p begin="00:43:18.710" end="00:43:23.600">All right so one last demo for you guys hopefully it will be just a successful before</p>
+      <p begin="00:43:23.600" end="00:43:29.180">...which are the phone rates so here I have</p>
+      <p begin="00:43:29.180" end="00:43:34.150">historically whenever people have done slide shows from their phones they...of the state where the</p>
+      <p begin="00:43:34.150" end="00:43:39.640">...shows actually mirrored across the to screens...my slide their ansi my slides here so</p>
+      <p begin="00:43:39.640" end="00:43:47.290">powerpoint actually utilized to projection manager in a new...windows phone go ahead and start my presentation.</p>
+      <p begin="00:43:47.290" end="00:43:52.270">Awesome so now you can see that instead of seeing the myriad thing where I see the</p>
+      <p begin="00:43:52.270" end="00:43:54.730">...on the screens actually see not only the</p>
+      <p begin="00:43:54.730" end="00:43:58.360">slides on my phone but also my notes and the...</p>
+      <p begin="00:43:59.480" end="00:44:07.130">I can really easily just slide between these...new going back because obviously that animation.</p>
+      <p begin="00:44:07.130" end="00:44:08.370">So, you guys</p>
+      <p begin="00:44:08.370" end="00:44:13.300">...can really easily go through here you can see that the animations are crisp and clean.</p>
+      <p begin="00:44:13.300" end="00:44:22.630">It looks great on the big-screen and my notes are readily available for me on the phone.</p>
+      <p begin="00:44:22.630" end="00:44:32.180">...expert biochemistry moi.</p>
+      <p begin="00:44:32.180" end="00:44:35.630">All right so I'm...go ahead and finish up the presentation from my</p>
+      <p begin="00:44:35.630" end="00:44:43.490">phone calls already connected with just some calls...action for you guys...developers.</p>
+      <p begin="00:44:43.490" end="00:44:48.240">Now...mingled action is just that we really are asking you to build</p>
+      <p begin="00:44:48.240" end="00:44:52.540">...apps or optimize your mobile apps for continuum if you are ready or don't want to</p>
+      <p begin="00:44:52.540" end="00:44:54.510">...universal up?</p>
+      <p begin="00:44:54.510" end="00:44:57.840">Now there's a couple ways you can optimize are mobile applications</p>
+      <p begin="00:44:57.840" end="00:45:02.720">...you can just use the adaptive principles we discussed to make sure your ui</p>
+      <p begin="00:45:02.720" end="00:45:06.850">...nicely to any screen or...if you have pcs</p>
+      <p begin="00:45:06.850" end="00:45:14.320">...you can actually do the work to pull those assets and your mobile app package.</p>
+      <p begin="00:45:14.320" end="00:45:18.740">Once you actually have not package you should validate that you I looks good on the small-screen</p>
+      <p begin="00:45:18.740" end="00:45:22.950">and the big-screen we don't really care how you implement it how you switch what shows</p>
+      <p begin="00:45:22.950" end="00:45:26.840">on each screen...you just be able to interact with it and enjoy their experience.</p>
+      <p begin="00:45:27.910" end="00:45:29.250">Also make sure it works with...</p>
+      <p begin="00:45:29.250" end="00:45:35.850">mouse as that will be supported not only on continuum but on phones in general now.</p>
+      <p begin="00:45:35.850" end="00:45:39.830">Now if you want to be picture-perfect you should also think about including additional scaling</p>
+      <p begin="00:45:39.830" end="00:45:43.570">asses for the external screen for continuum there's really two scales</p>
+      <p begin="00:45:43.570" end="00:45:49.650">that are important scale one hundred scale one fifty for the monitors and tvs.</p>
+      <p begin="00:45:49.650" end="00:45:53.600">And, finally if you want already have applicable applications</p>
+      <p begin="00:45:53.600" end="00:46:06.900">...leverage these multi screen api...actually create robust multi...experiences.</p>
+      <p begin="00:46:06.900" end="00:46:11.960">we just wanted to say thank you so much for coming we are just super excited about continuum and the</p>
+      <p begin="00:46:11.960" end="00:46:13.770">scenarios...it's going to drive in the</p>
+      <p begin="00:46:13.770" end="00:46:17.900">...we will be here for questions afterwards and</p>
+      <p begin="00:46:17.900" end="00:46:19.660">...thank you very much...</p>
+
+    </div>
+  </body>
+</tt>

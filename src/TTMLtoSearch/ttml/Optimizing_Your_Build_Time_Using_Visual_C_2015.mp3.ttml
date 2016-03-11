@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tt xml:lang="en-us" xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+  <head>
+    <metadata>
+      <ttm:title>Media.wvx.aib</ttm:title>
+      <ttm:copyright>Copyright (c) 2013 Microsoft Corporation.  All rights reserved.</ttm:copyright>
+    </metadata>
+    <styling>
+      <style xml:id="Style1" tts:fontFamily="proportionalSansSerif" tts:fontSize="0.8c" tts:textAlign="center" tts:color="white" />
+    </styling>
+    <layout>
+      <region style="Style1" xml:id="CaptionArea" tts:origin="0c 12.6c" tts:extent="32c 2.4c" tts:backgroundColor="rgba(0,0,0,160)" tts:displayAlign="center" tts:padding="0.3c 0.5c" />
+    </layout>
+    <recognizability>0.912</recognizability>
+  </head>
+  <body region="CaptionArea">
+    <div>
+      <p begin="00:00:00.150" end="00:00:03.830">Welcome to the...conference I am...other degree I'm a principle</p>
+      <p begin="00:00:03.830" end="00:00:08.750">develop on the visual cplus-plus team in visual studio I'm here today</p>
+      <p begin="00:00:08.750" end="00:00:12.540">to talk about optimizing your...</p>
+      <p begin="00:00:12.540" end="00:00:17.460">Using visual studio cpluscplus-plus two thousand fifteen.</p>
+      <p begin="00:00:17.460" end="00:00:22.230">So, let's talk about too brigade sone is</p>
+      <p begin="00:00:22.230" end="00:00:26.910">let's talk about developer productivity for cplus...projects...to relates to</p>
+      <p begin="00:00:26.910" end="00:00:31.460">...times and then we'll go...some of the features we have in</p>
+      <p begin="00:00:31.460" end="00:00:38.560">visual studio two thousand fifteen to speed up the ...</p>
+      <p begin="00:00:38.560" end="00:00:42.260">So,...productivity ski as a developer...go</p>
+      <p begin="00:00:42.260" end="00:00:48.930">...the edit build and debug cycles multiple times a day and the</p>
+      <p begin="00:00:48.930" end="00:00:51.750">...during these cycles</p>
+      <p begin="00:00:51.750" end="00:00:57.510">is pretty significant for cplus-plus projects and a key goal for us during</p>
+      <p begin="00:00:57.510" end="00:01:01.950">vision studio two thousand fifteen was to try to reduce this...</p>
+      <p begin="00:01:01.950" end="00:01:06.430">tax in the cycle so that developers of...and you can</p>
+      <p begin="00:01:06.430" end="00:01:13.550">...large developer gains across...teams so let's go and</p>
+      <p begin="00:01:13.550" end="00:01:17.660">talk about some of the features we have for visual studio</p>
+      <p begin="00:01:17.660" end="00:01:22.530">twenty fifty the...feature I want to talk about is incremental link there's a</p>
+      <p begin="00:01:22.530" end="00:01:28.270">feature that's been there for quite a few versions in visual studio.</p>
+      <p begin="00:01:28.270" end="00:01:34.060">we have made some expert enhancements to this feature did they were.</p>
+      <p begin="00:01:34.060" end="00:01:36.460">We analyzed the failures using telemetry</p>
+      <p begin="00:01:36.460" end="00:01:41.540">data and we notice that we're missing a few...cases which we have gone and,</p>
+      <p begin="00:01:41.540" end="00:01:44.740">fixed so that when you hit...makes changes that could these</p>
+      <p begin="00:01:44.740" end="00:01:49.530">...cases you don't need to do a full-length you can get increment link.</p>
+      <p begin="00:01:49.530" end="00:01:56.050">The largest costs the largest failure was due to static</p>
+      <p begin="00:01:57.140" end="00:02:00.710">Large projects typically have.</p>
+      <p begin="00:02:00.710" end="00:02:03.320">Multiple static clips that they...and then the very</p>
+      <p begin="00:02:03.320" end="00:02:08.890">the binary using the static lips as a part of daily activity when the data but</p>
+      <p begin="00:02:08.890" end="00:02:13.620">...touches a static lip we would give up on incremental</p>
+      <p begin="00:02:13.620" end="00:02:16.310">...can go to...link.</p>
+      <p begin="00:02:16.310" end="00:02:20.910">And, the difference between us incremental lincoln full-length for these projects</p>
+      <p begin="00:02:20.910" end="00:02:25.010">with quite significant we saw some projects that take for minutes the link for</p>
+      <p begin="00:02:25.010" end="00:02:29.650">full-length what incremental link was thirty seconds so if you</p>
+      <p begin="00:02:29.650" end="00:02:33.650">...static lab although the change that you may to the</p>
+      <p begin="00:02:33.650" end="00:02:39.440">statically would not require full-length just because you're change the statically we</p>
+      <p begin="00:02:39.440" end="00:02:44.280">...we just gave up on...linking so we have</p>
+      <p begin="00:02:44.280" end="00:02:48.410">fixed stack so if you make any changes to a static</p>
+      <p begin="00:02:48.410" end="00:02:53.290">lab we can now try to do incremental link and we have</p>
+      <p begin="00:02:53.290" end="00:02:57.080">seen quite a few internal games projects</p>
+      <p begin="00:02:57.080" end="00:03:01.670">that are now linking in thirty seconds whereas...that...for</p>
+      <p begin="00:03:01.670" end="00:03:07.010">...more to link so that's incremental link enhancements</p>
+      <p begin="00:03:07.010" end="00:03:10.610">...existing features the next one is template processing.</p>
+      <p begin="00:03:11.680" end="00:03:16.250">With modern code the use of templates has</p>
+      <p begin="00:03:16.250" end="00:03:20.620">increased quite a...and we expect that in the future that's going to increase</p>
+      <p begin="00:03:20.620" end="00:03:26.810">significantly and as we are working through conformance features for templates</p>
+      <p begin="00:03:26.810" end="00:03:30.700">no compiler we also looked at how we process template code and</p>
+      <p begin="00:03:30.700" end="00:03:34.490">made significant changes in the way we deal with that.</p>
+      <p begin="00:03:34.490" end="00:03:38.850">As a result of all of these changes we see some.</p>
+      <p begin="00:03:38.850" end="00:03:43.310">...big speedup...template crossing based on the</p>
+      <p begin="00:03:43.310" end="00:03:49.130">project size and the contents of the projects we...seen anywhere from.</p>
+      <p begin="00:03:49.130" end="00:03:53.940">Fifty percent speedup to ten-x speedup in those extreme cases where</p>
+      <p begin="00:03:53.940" end="00:03:58.200">...source file has a lot of templates.</p>
+      <p begin="00:03:58.200" end="00:04:00.370">The third feature is</p>
+      <p begin="00:04:00.370" end="00:04:02.730">...processing pbs.</p>
+      <p begin="00:04:03.980" end="00:04:07.170">Contain debug information and.</p>
+      <p begin="00:04:07.170" end="00:04:12.260">For any good debugging experience in need to have the pb available</p>
+      <p begin="00:04:12.260" end="00:04:17.010">And, up-to-date so that you get your if you are productive during the debugging,</p>
+      <p begin="00:04:17.010" end="00:04:17.870">debugging</p>
+      <p begin="00:04:17.870" end="00:04:23.450">experience what we noticed as we analyzed are build systems.</p>
+      <p begin="00:04:23.450" end="00:04:25.630">Build cycles where</p>
+      <p begin="00:04:25.630" end="00:04:31.680">pb processing took some significant time both during compiling link.</p>
+      <p begin="00:04:31.680" end="00:04:38.040">And, we the...caught...cost the reasons for this</p>
+      <p begin="00:04:38.040" end="00:04:44.450">slow down and we have fix those issues so all these the first three.</p>
+      <p begin="00:04:44.450" end="00:04:49.470">Features I'm talking about you get automatically as soon as upgrade...to</p>
+      <p begin="00:04:49.470" end="00:04:50.950">...fifteen.</p>
+      <p begin="00:04:50.950" end="00:04:56.770">...project is already using incremental link you should see some speedup you...of template</p>
+      <p begin="00:04:56.770" end="00:05:00.920">...code automatically you should see some speedup data as well and</p>
+      <p begin="00:05:00.920" end="00:05:06.030">pb processing is across-the-board the next for features</p>
+      <p begin="00:05:06.030" end="00:05:08.640">are features that are new to visions</p>
+      <p begin="00:05:08.640" end="00:05:13.090">...thousand fifteen and you have to change...project settings to make use</p>
+      <p begin="00:05:13.090" end="00:05:18.020">of them the first one is still related to pbs something that we</p>
+      <p begin="00:05:18.020" end="00:05:20.810">...debug fast link.</p>
+      <p begin="00:05:20.810" end="00:05:25.100">The way let's talk a little bit about how we generate</p>
+      <p begin="00:05:25.100" end="00:05:27.570">...pbs when the compiler</p>
+      <p begin="00:05:27.570" end="00:05:31.480">...coded generates a pb which we call the compiler generated</p>
+      <p begin="00:05:31.480" end="00:05:36.430">...are if you use the z seven switch it puts the debug information into the</p>
+      <p begin="00:05:36.430" end="00:05:41.440">object files and then we link all of these object files</p>
+      <p begin="00:05:41.440" end="00:05:44.540">...linking is happening the link color is</p>
+      <p begin="00:05:44.540" end="00:05:47.890">...extracting all the debug information that.</p>
+      <p begin="00:05:47.890" end="00:05:54.380">Is required for the final binary and putting into a lincoln...</p>
+      <p begin="00:05:54.380" end="00:05:57.830">When we analyzed the time that...spend?</p>
+      <p begin="00:05:57.830" end="00:05:59.680">Processing pbs.</p>
+      <p begin="00:05:59.680" end="00:06:03.170">During linking it was all related to extracting this information from</p>
+      <p begin="00:06:03.170" end="00:06:09.600">this various sources and putting into one five for large projects that can be quite a bit of</p>
+      <p begin="00:06:09.600" end="00:06:12.970">data we have seen games with more than one gigabyte</p>
+      <p begin="00:06:12.970" end="00:06:14.800">pb files.</p>
+      <p begin="00:06:14.800" end="00:06:17.570">And, all that takes quite a bit process.</p>
+      <p begin="00:06:17.570" end="00:06:21.810">So, we came up with this new feature that.</p>
+      <p begin="00:06:21.810" end="00:06:25.040">Allows you to speedup links significantly</p>
+      <p begin="00:06:25.040" end="00:06:31.290">without affecting your debug experience with so the change here is that when</p>
+      <p begin="00:06:31.290" end="00:06:35.880">link-up starts and you have this...new specified new switch specified the</p>
+      <p begin="00:06:35.880" end="00:06:40.700">...keeps the debug information in the compiler generated</p>
+      <p begin="00:06:40.700" end="00:06:46.350">...object files it then generates a pb that has links to these.</p>
+      <p begin="00:06:46.350" end="00:06:48.470">Pbs and object files</p>
+      <p begin="00:06:48.470" end="00:06:53.500">and then puts and information that only it can generate</p>
+      <p begin="00:06:53.500" end="00:06:58.450">so the pb processing is now significantly split up in some</p>
+      <p begin="00:06:58.450" end="00:07:03.390">ling curve situated some linking situations we have seen...we take up to fifty percent of the link</p>
+      <p begin="00:07:03.390" end="00:07:08.230">time and for those projects it's now the pb</p>
+      <p begin="00:07:08.230" end="00:07:13.050">crossing is very small it's more it's more like five percent of the...</p>
+      <p begin="00:07:13.050" end="00:07:19.050">time so you get some significant speedup and then when the neighbor?</p>
+      <p begin="00:07:19.050" end="00:07:23.410">When you start your debugging sections session debug are knows that this is a different type of</p>
+      <p begin="00:07:23.410" end="00:07:27.750">...it can go get the by information from the?</p>
+      <p begin="00:07:27.750" end="00:07:29.630">Location where that.</p>
+      <p begin="00:07:29.630" end="00:07:32.750">Is available at either the compiler generated...the</p>
+      <p begin="00:07:32.750" end="00:07:36.480">...js and then ...give</p>
+      <p begin="00:07:36.480" end="00:07:41.270">you all the debug information you don't have any loss of fidelity during debugging neither</p>
+      <p begin="00:07:41.270" end="00:07:46.300">...data any performance impact in the debug?</p>
+      <p begin="00:07:46.300" end="00:07:50.430">So, that's the first feature that you can use by changing</p>
+      <p begin="00:07:50.430" end="00:07:52.510">...project settings the next one</p>
+      <p begin="00:07:52.510" end="00:07:59.310">is the switch to the compiler called cc knowing line.</p>
+      <p begin="00:07:59.310" end="00:08:03.590">...results in the compiler generating fewer symbols and</p>
+      <p begin="00:08:05.610" end="00:08:08.970">essentially than the link are has less to deal with and can speedup</p>
+      <p begin="00:08:08.970" end="00:08:13.190">ling significantly so, what happens when this switch</p>
+      <p begin="00:08:13.190" end="00:08:17.840">is any function that's mongers inline but not reference</p>
+      <p begin="00:08:17.840" end="00:08:20.280">in the compilation unique is?</p>
+      <p begin="00:08:21.330" end="00:08:23.830">Essentially there's no code generated for it</p>
+      <p begin="00:08:23.830" end="00:08:28.930">and it's as if the code wasn't present as a result we have seen that static lipton</p>
+      <p begin="00:08:28.930" end="00:08:31.140">...days are about thirty percent smaller.</p>
+      <p begin="00:08:32.180" end="00:08:34.940">And, the speedup we get from.</p>
+      <p begin="00:08:34.940" end="00:08:38.920">The in the...is due to reasons less io because of the smaller size</p>
+      <p begin="00:08:38.920" end="00:08:43.200">...js and then our static lips and</p>
+      <p begin="00:08:43.200" end="00:08:47.460">...is...because it doesn't need to deal with all of the symbols that are not referenced</p>
+      <p begin="00:08:47.460" end="00:08:50.170">and then hand doesn't need to worry about throwing those symbols of</p>
+      <p begin="00:08:50.170" end="00:08:55.580">it so that's a speedup that you can see with the switch.</p>
+      <p begin="00:08:55.580" end="00:09:00.520">There is a potential for breaking some of exist some of the existing</p>
+      <p begin="00:09:00.520" end="00:09:05.240">sources as a result of using the switch but using the switch gives you more conformance</p>
+      <p begin="00:09:05.240" end="00:09:10.640">code and fixing the issues is trivial we have some</p>
+      <p begin="00:09:10.640" end="00:09:19.080">...talk about how to address these on...I'll talk about the location of...cyclical.</p>
+      <p begin="00:09:19.080" end="00:09:23.670">The next feature is ling time-code generation...generation has been there for multiple</p>
+      <p begin="00:09:23.670" end="00:09:28.600">versions and some people user and complain about the</p>
+      <p begin="00:09:28.600" end="00:09:32.670">...times other people have stopped using it because of the productivity,</p>
+      <p begin="00:09:32.670" end="00:09:39.780">productivity hit in the...we added a new.</p>
+      <p begin="00:09:39.780" end="00:09:43.690">New feature here which we call this fast...time-code</p>
+      <p begin="00:09:43.690" end="00:09:49.160">...and the idea here being on the first.</p>
+      <p begin="00:09:49.160" end="00:09:53.110">Optimize...says of a information about the analysis</p>
+      <p begin="00:09:53.110" end="00:09:56.690">...perform as well as the cody generated into a database</p>
+      <p begin="00:09:57.990" end="00:10:02.190">...next varied after your made some changes...code.</p>
+      <p begin="00:10:02.190" end="00:10:04.810">When you start the...the?</p>
+      <p begin="00:10:04.810" end="00:10:06.940">Compiler and figure out the</p>
+      <p begin="00:10:06.940" end="00:10:09.830">...the database from previous big.</p>
+      <p begin="00:10:09.830" end="00:10:14.640">Picks up all information from there doesn't analysis to figure out the delta of</p>
+      <p begin="00:10:14.640" end="00:10:18.760">what needs to be regenerated it regenerate score only for the</p>
+      <p begin="00:10:18.760" end="00:10:24.330">...only for the parts of the binding that are impacted gets the</p>
+      <p begin="00:10:24.330" end="00:10:29.150">rest of the code from the database queries the database for all information from the previous</p>
+      <p begin="00:10:29.150" end="00:10:31.680">built and then generates the binary</p>
+      <p begin="00:10:31.680" end="00:10:35.420">then result is a binary that has the same.</p>
+      <p begin="00:10:35.420" end="00:10:39.250">Optimization level...the as a binary that your created if you</p>
+      <p begin="00:10:39.250" end="00:10:43.660">...clean...and the binary is also a</p>
+      <p begin="00:10:43.660" end="00:10:48.200">...binary that is a does not have any artifacts in</p>
+      <p begin="00:10:48.200" end="00:10:54.210">it that would sort of more debug information on some...additional</p>
+      <p begin="00:10:54.210" end="00:11:00.120">...in the in this binary or any such artifacts are not present in the</p>
+      <p begin="00:11:00.120" end="00:11:04.040">...so it is achievable binary we have been using this</p>
+      <p begin="00:11:04.040" end="00:11:08.040">feature internally from the time it's come online for about six</p>
+      <p begin="00:11:08.040" end="00:11:09.810">to nine months.</p>
+      <p begin="00:11:09.810" end="00:11:11.470">And, we see about</p>
+      <p begin="00:11:11.470" end="00:11:16.700">for x improvement in our base times because we use link</p>
+      <p begin="00:11:16.700" end="00:11:22.120">time-code generation on our binary and every developer when...typically they use the</p>
+      <p begin="00:11:22.120" end="00:11:26.330">ling time-code generation to build the binary is a</p>
+      <p begin="00:11:26.330" end="00:11:32.640">for x improvement in for most of the changes that we make is a significant developer</p>
+      <p begin="00:11:32.640" end="00:11:34.950">So, the new fast</p>
+      <p begin="00:11:34.950" end="00:11:40.030">...time-code...switch not only now allows you to get the performance gain</p>
+      <p begin="00:11:40.030" end="00:11:46.190">...application also but also brings the productivity in this area the</p>
+      <p begin="00:11:46.190" end="00:11:51.510">last topic I want to talk about is an extension to the id to analyze</p>
+      <p begin="00:11:51.510" end="00:11:56.510">...so pc...is a mechanism by which we can speedup</p>
+      <p begin="00:11:56.510" end="00:11:58.880">compile times this mechanism is used</p>
+      <p begin="00:11:58.880" end="00:12:03.310">by different compilers not just visual studio and.</p>
+      <p begin="00:12:03.310" end="00:12:06.690">Vc significant speedup in break times as a result of using</p>
+      <p begin="00:12:06.690" end="00:12:12.700">...one of the things we noticed was that pc h go up</p>
+      <p begin="00:12:12.700" end="00:12:16.280">...very quickly as changes are made to</p>
+      <p begin="00:12:16.280" end="00:12:20.400">the project new headers are required to build</p>
+      <p begin="00:12:20.400" end="00:12:25.500">a project and typically those header don't end up in the pc</p>
+      <p begin="00:12:25.500" end="00:12:27.320">h that could</p>
+      <p begin="00:12:27.320" end="00:12:32.830">when it's quite possible to put them there so this extension is</p>
+      <p begin="00:12:32.830" end="00:12:37.790">...first step and sort of analyzing your code during design-time and start giving</p>
+      <p begin="00:12:37.790" end="00:12:42.850">you hints about making changes steer code to improve...times.</p>
+      <p begin="00:12:42.850" end="00:12:48.800">Yes, there are other analysis tools that give you...details about your code</p>
+      <p begin="00:12:48.800" end="00:12:52.840">of how to improve your code but this one is the first-time we are trying to do</p>
+      <p begin="00:12:52.840" end="00:12:56.800">something that can help analyzer project to speed up your</p>
+      <p begin="00:12:56.800" end="00:13:02.540">...so the way to use this is go to the visual studio gallery</p>
+      <p begin="00:13:02.540" end="00:13:07.040">the search for the...it analysis extension and then download and install</p>
+      <p begin="00:13:07.040" end="00:13:09.460">it once you have it there.</p>
+      <p begin="00:13:09.460" end="00:13:13.900">You should start getting hints about changes you can make</p>
+      <p begin="00:13:13.900" end="00:13:17.820">the pc h to speed up your break times currently the</p>
+      <p begin="00:13:17.820" end="00:13:20.880">...only this...only analysis</p>
+      <p begin="00:13:20.880" end="00:13:26.080">...to pc edge for files that could be included in it but I can definitely</p>
+      <p begin="00:13:26.080" end="00:13:29.970">for see us making enhancements to also detect cases where</p>
+      <p begin="00:13:29.970" end="00:13:32.800">...file that should not be included in the pc it is into</p>
+      <p begin="00:13:32.800" end="00:13:36.480">...are files that are only required for a certain configuration</p>
+      <p begin="00:13:37.490" end="00:13:42.720">end up in a defy in if deaf blog that can be used only for the</p>
+      <p begin="00:13:42.720" end="00:13:48.730">configuration and not have to slowdown other configurations so these are some of</p>
+      <p begin="00:13:48.730" end="00:13:53.370">the great features some of these features...get for free as soon as you up a</p>
+      <p begin="00:13:53.370" end="00:13:57.930">great to visual studio two thousand fifteen others you had to make some changes to</p>
+      <p begin="00:13:57.930" end="00:14:01.530">...projects to get those features we are updating are</p>
+      <p begin="00:14:01.530" end="00:14:06.890">visual studio templates to sort of give you the best very time for</p>
+      <p begin="00:14:06.890" end="00:14:14.220">that configuration but if you have for the existing projects you have to go and apply some of these manually.</p>
+      <p begin="00:14:14.220" end="00:14:17.610">Let's talk a little bit about future.</p>
+      <p begin="00:14:17.610" end="00:14:21.740">Yes, we have done some analysis right now we have split up a few things but what</p>
+      <p begin="00:14:21.740" end="00:14:27.050">are the key things that we think in the future are going to help with speeding up the</p>
+      <p begin="00:14:27.050" end="00:14:31.860">...for cplus-plus projects the first one is the cplus-plus</p>
+      <p begin="00:14:31.860" end="00:14:36.470">modules proposal that the cplus...standards committee is</p>
+      <p begin="00:14:36.470" end="00:14:43.590">looking at right now this proposal has multipleadvantages</p>
+      <p begin="00:14:43.590" end="00:14:48.220">one of them that I'm going to focus on here is the potential for this.</p>
+      <p begin="00:14:48.220" end="00:14:53.310">Modules featured to speed abate times today when you include</p>
+      <p begin="00:14:53.310" end="00:14:57.040">...header file we had to transit daily include all the...files</p>
+      <p begin="00:14:57.040" end="00:15:01.660">that are required in every compilation unit...it</p>
+      <p begin="00:15:01.660" end="00:15:06.550">helps with that a little bit but you have to into all of them even for types that</p>
+      <p begin="00:15:06.550" end="00:15:11.530">are internal implementation details of a...let's say you</p>
+      <p begin="00:15:11.530" end="00:15:15.840">need to include headers that satisfied that types so.</p>
+      <p begin="00:15:17.210" end="00:15:20.970">...the cplus-plus...model is requires us to include</p>
+      <p begin="00:15:20.970" end="00:15:25.280">...more head of the necessary modules can help us because</p>
+      <p begin="00:15:25.280" end="00:15:30.070">it's encapsulates helps us encapsulate implementation details</p>
+      <p begin="00:15:30.070" end="00:15:35.200">away from the enduser in a much better way we think it</p>
+      <p begin="00:15:35.200" end="00:15:40.130">also has now the potential of speeding of base significantly and</p>
+      <p begin="00:15:40.130" end="00:15:44.750">...multiplecompiler windows are looking at this feature and they're</p>
+      <p begin="00:15:44.750" end="00:15:46.670">also discussing this actively in</p>
+      <p begin="00:15:46.670" end="00:15:51.160">cplus-plus standards committee so that's one of the features that we think</p>
+      <p begin="00:15:51.160" end="00:15:55.720">will make a big impact the other thing that we notice was.</p>
+      <p begin="00:15:56.800" end="00:15:58.460">The build analysis tools.</p>
+      <p begin="00:15:59.520" end="00:16:00.530">We have tools to do</p>
+      <p begin="00:16:00.530" end="00:16:05.510">static analysis but we don't have many tools to help you figure out</p>
+      <p begin="00:16:05.510" end="00:16:09.810">...time spent a number of changes that can make to</p>
+      <p begin="00:16:09.810" end="00:16:15.840">...project improbable...analysis...first step we expect to add more</p>
+      <p begin="00:16:15.840" end="00:16:21.850">he in this area to help you find those bottlenecks and start addressing them.</p>
+      <p begin="00:16:21.850" end="00:16:24.920">So, in basically visual studio two</p>
+      <p begin="00:16:24.920" end="00:16:30.370">thousand fifteen gives you a lot of these features and...</p>
+      <p begin="00:16:30.370" end="00:16:34.550">Fasting out says gold download two thousand fifteen install it</p>
+      <p begin="00:16:34.550" end="00:16:39.290">tryout these features some of them we get for free others you have to make changes to</p>
+      <p begin="00:16:40.510" end="00:16:44.950">For a lot of this information we have blog posts.</p>
+      <p begin="00:16:44.950" end="00:16:49.890">For some of these features already on our blog psych either features we're going to</p>
+      <p begin="00:16:49.890" end="00:16:56.300">talk about and future blocks so definitely visit the vc...</p>
+      <p begin="00:16:56.300" end="00:17:01.210">Site to get more information about these features and as well as other features that we have</p>
+      <p begin="00:17:01.210" end="00:17:04.600">...studio two thousand fifteen.</p>
+      <p begin="00:17:04.600" end="00:17:07.850">So, thanks for listening to my talk and</p>
+      <p begin="00:17:07.850" end="00:17:11.900">...you have faster belts using visual studio two thousand fifty.</p>
+
+    </div>
+  </body>
+</tt>
