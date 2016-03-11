@@ -2,6 +2,8 @@
 
 This sample shows how to perform full text search over the spoken words within audio and video files.  This sample will leverage Azure Media Services to transcribe the text from the audio and video files and Azure Search to enable the full text search over this text.  
 
+<img src="https://raw.githubusercontent.com/liamca/azure-search-audio-video-search/master/fulltext_search_audio_video.png">
+
 ## The Demo
 
 For this sample we will use the Channel9 videos that were created at the [2015 Build Conference](https://channel9.msdn.com/events/build/2015).  This sample is split into 3 sections:
