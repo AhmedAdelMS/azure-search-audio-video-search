@@ -70,6 +70,12 @@ Once this completes, the same search with the text 'Azure Search' is executed.  
 
 <img src="https://raw.githubusercontent.com/liamca/azure-search-audio-video-search/master/search_metadata_and_transcribed_text.png">
 
+One thing you might notice about this sample is that the entire transcribed text for a video is uploaded to a sigle documents within Azure Search.  This is convenient because it allows you to find sessions that relates closely to the searched terms.  The downside to this method is that I am not making use of the time included with each snippet of text which would allow me to send users directly to the point in time this text was spoken.
+
+``<p begin="00:00:21.289" end="00:00:24.769">It's exciting to be here at...san francisco.</p>``<br>
+
+In order to do this, you might want to consider creating two indexes.  One index for the session metadata and another index that contains all of the text snippets along with the timeframe that text was spoken.
+
 ## How to Make This Even Better
 
 One of the things that I did not cover here is the ability of Azure Search to support Phonetic Search.  This is done by creating a field in the Azure Search index that uses a custom analyzer.  To learn more about how to create a field of this type, please visit the following <a href="https://azure.microsoft.com/en-us/blog/custom-analyzers-in-azure-search/">Azure Blog post</a>.
