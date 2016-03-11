@@ -198,11 +198,6 @@ namespace TTMLtoSearch
         {
             List<IndexAction> indexOperations = new List<IndexAction>();
 
-            //Data provided by http://download.geonames.org/export/zip/
-            //This work is licensed under a Creative Commons Attribution 3.0 License.
-            //This means you can use the dump as long as you give credit to geonames (a link on your website to www.geonames.org is ok)
-            //see http://creativecommons.org/licenses/by/3.0/
-
             using (OleDbConnection cn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Directory.GetCurrentDirectory() + ";" + "Extended Properties=\"Text;HDR=No;FMT=Delimited;\""))
             {
                 cn.Open();
