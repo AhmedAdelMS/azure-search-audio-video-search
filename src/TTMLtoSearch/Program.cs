@@ -87,8 +87,6 @@ namespace TTMLtoSearch
                         new Field("session_title",  DataType.String)         { IsKey = false, IsSearchable = true,  IsFilterable = true,  IsSortable = true,  IsFacetable = false, IsRetrievable = true, Analyzer = AnalyzerName.EnMicrosoft},
                         new Field("tags",           DataType.String)         { IsKey = false, IsSearchable = true,  IsFilterable = true,  IsSortable = true,  IsFacetable = false, IsRetrievable = true, Analyzer = AnalyzerName.EnMicrosoft},
                         new Field("speakers",       DataType.String)         { IsKey = false, IsSearchable = true,  IsFilterable = true,  IsSortable = true,  IsFacetable = false, IsRetrievable = true, Analyzer = AnalyzerName.EnMicrosoft},
-                        //new Field("tags",           DataType.Collection(DataType.String))     { IsSearchable = true, IsFilterable = true, IsFacetable = true },
-                        //new Field("speakers",       DataType.Collection(DataType.String))     { IsSearchable = true, IsFilterable = true, IsFacetable = true },
                         new Field("date",           DataType.String)         { IsKey = false, IsSearchable = true,  IsFilterable = true,  IsSortable = true,  IsFacetable = false, IsRetrievable = true},
                         new Field("url",            DataType.String)         { IsKey = false, IsSearchable = false, IsFilterable = false, IsSortable = false, IsFacetable = false, IsRetrievable = true},
                         new Field("transcribed_text",DataType.String)        { IsKey = false, IsSearchable = true,  IsFilterable = false,  IsSortable = false,  IsFacetable = false, IsRetrievable = true, Analyzer = AnalyzerName.EnMicrosoft},
