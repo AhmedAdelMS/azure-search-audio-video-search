@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace TTMLtoSearch
 {
@@ -21,6 +22,7 @@ namespace TTMLtoSearch
         private static SearchServiceClient _searchClient;
         private static SearchIndexClient _indexClient;
         private static string AzureSearchIndex = "buildsessions";
+        private static readonly XNamespace ttmlns = "http://www.w3.org/ns/ttml";
 
         static void Main(string[] args)
         {
@@ -229,39 +231,16 @@ namespace TTMLtoSearch
             Regex rgx = new Regex("[^a-zA-Z0-9 -]");
             return rgx.Replace(plainText, "");
         }
-        static string ParseTTML(string ttmlFile)
+        private static string ParseTTML(string ttmlFile)
         {
             // This will extract all the spoken text from a TTML file into a single string
-            string content = string.Empty;
-            string parsedLine;
-            try
-            {
-                // Read line by line starting to get content after <body region="CaptionArea"><div>
-                string line;
-                bool foundContent = false;
-                System.IO.StreamReader file = new System.IO.StreamReader(ttmlFile);
-                while ((line = file.ReadLine()) != null)
-                {
-                    if (line.IndexOf("<body region=\"CaptionArea\">") > -1)
-                        foundContent = true;
-                    else if (line.IndexOf("</body>") > -1)
-                        foundContent = false;
-                    else if ((foundContent) && (line.IndexOf("<p begin") > -1))
-                    {
-                        parsedLine = line.Substring(line.IndexOf(">") + 1);
-                        parsedLine = parsedLine.Substring(0, parsedLine.IndexOf("</p>")) + " ";
-                        content += parsedLine;
-                    }
-                }
-                file.Close();
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error: {0}", ex.Message.ToString());
-            }
-
-            return content;
+            return string.Join("\r\n", XDocument.Load(ttmlFile)
+                                                .Element(ttmlns + "tt")
+                                                .Element(ttmlns + "body")
+                                                .Element(ttmlns + "div")
+                                                .Elements(ttmlns + "p")
+                                                .Select(snippet => snippet.Value));
         }
+
     }
 }
