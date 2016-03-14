@@ -3,13 +3,9 @@ using Microsoft.Azure.Search;
 using Microsoft.Azure.Search.Models;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Data.OleDb;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Xml;
 using System.Linq;
 using System.Xml.Linq;
 
@@ -42,7 +38,7 @@ namespace TTMLtoSearch
             }
 
             Console.WriteLine("{0}", "Uploading video metadata...\n");
-            UploadMetadata(_indexClient);
+            UploadMetadata();
 
             // Execute a search for the term 'Azure Search' which will only return one result
             Console.WriteLine("{0}", "Searching for videos about 'Azure Search'...\n");
@@ -51,7 +47,7 @@ namespace TTMLtoSearch
                 Console.WriteLine("Found Session: {0}", doc.Document["session_title"]);
 
             Console.WriteLine("{0}", "\nMerging in transcribed text from videos...\n");
-            MergeTranscribedText(_indexClient);
+            MergeTranscribedText();
 
             // Execute a search for the term 'Azure Search' which will return multiple results
             Console.WriteLine("{0}", "Searching for videos about 'Azure Search'...\n");
@@ -74,7 +70,7 @@ namespace TTMLtoSearch
             catch (Exception ex)
             {
                 Console.WriteLine("Error deleting index: {0}\r\n", ex.Message);
-                Console.WriteLine("Did you remember to add your SearchServiceName and SearchServiceApiKey to the app.config?\r\n");
+                Console.WriteLine("Did you remember to set your SearchServiceName and SearchServiceApiKey?\r\n");
                 return false;
             }
 
@@ -110,14 +106,14 @@ namespace TTMLtoSearch
 
         }
 
-        private static void UploadMetadata(SearchIndexClient indexClient)
+        private static void UploadMetadata()
         {
             // Upload metadata on Build Sessions from a CSV file
             List<IndexAction> indexOperations = GetSessionsFromCSV(); 
 
             try
             {
-                indexClient.Documents.Index(new IndexBatch(indexOperations));
+                _indexClient.Documents.Index(new IndexBatch(indexOperations));
             }
             catch (IndexBatchException e)
             {
@@ -134,35 +130,31 @@ namespace TTMLtoSearch
             Thread.Sleep(5000);
         }
 
-        private static void MergeTranscribedText(SearchIndexClient indexClient)
+        private static void MergeTranscribedText()
         {
             // Upload metadata on Build Sessions from a CSV file
             List<IndexAction> indexOperations = new List<IndexAction>();
             string[] files = Directory.GetFiles(@"ttml");
-            int counter = 0;
             try
             {
                 foreach (var file in files)
                 {
-                    Document doc = new Document();
-
+                    var doc = new Document();
                     string session_id = file.Substring(file.IndexOf("\\") + 1).Replace(".mp3.ttml", "").ToLower();
                     doc.Add("session_id", ConvertToAlphaNumeric(session_id));
                     doc.Add("transcribed_text", ParseTTML(file));
                     indexOperations.Add(IndexAction.MergeOrUpload(doc));
-                    counter++;
-                    if (counter >= 100)
+                    if (indexOperations.Count >= 100)
                     {
-                        Console.WriteLine("Indexing {0} transcriptions...\n", counter);
-                        indexClient.Documents.Index(new IndexBatch(indexOperations));
+                        Console.WriteLine("Indexing {0} transcriptions...\n", indexOperations.Count);
+                        _indexClient.Documents.Index(new IndexBatch(indexOperations));
                         indexOperations.Clear();
-                        counter = 0;
                     }
                 }
-                if (counter > 0)
+                if (indexOperations.Count > 0)
                 {
-                    Console.WriteLine("Indexing {0} transcriptions...\n", counter);
-                    indexClient.Documents.Index(new IndexBatch(indexOperations));
+                    Console.WriteLine("Indexing {0} transcriptions...\n", indexOperations.Count);
+                    _indexClient.Documents.Index(new IndexBatch(indexOperations));
                 }
 
             }
