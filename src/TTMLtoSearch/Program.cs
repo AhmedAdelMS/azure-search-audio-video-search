@@ -13,8 +13,8 @@ namespace TTMLtoSearch
 {
     class Program
     {
-        private static string searchServiceName = [azure search service];
-        private static string apiKey = [azure search service api key];
+        private static string searchServiceName;
+        private static string apiKey;
         private static SearchServiceClient _searchClient;
         private static SearchIndexClient _indexClient;
         private static string AzureSearchIndex = "buildsessions";
@@ -22,10 +22,17 @@ namespace TTMLtoSearch
 
         static void Main(string[] args)
         {
+            // Get User service name and Key
+            Console.WriteLine("{0}", "Pls enter your Azure Search Service Name: \n");
+            searchServiceName = Console.ReadLine();
+            Console.WriteLine("{0}", "Pls enter your Azure Search Service primary admin key: \n");
+            apiKey = Console.ReadLine();
 
             // Create an HTTP reference to the catalog index
             _searchClient = new SearchServiceClient(searchServiceName, new SearchCredentials(apiKey));
             _indexClient = _searchClient.Indexes.GetClient(AzureSearchIndex);
+
+            
 
             Console.WriteLine("{0}", "Deleting index...\n");
             DeleteIndex();
